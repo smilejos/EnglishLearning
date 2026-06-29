@@ -3,6 +3,8 @@
 
 export { normalizeWord } from "./normalizeWord";
 
+export { createPool, ping } from "./db";
+
 export { loadConfig } from "./config";
 export type {
   Config,

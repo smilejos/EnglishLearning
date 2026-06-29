@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Read",
+      "Bash(cat:*)",
       "Bash(git:*)",
       "Bash(npm:*)",
       "Bash(docker:*)",
