@@ -225,13 +225,13 @@
 
 ---
 
-## Phase 7 — 整合與端對端驗證 🔴 未開始
+## Phase 7 — 整合與端對端驗證 🟡 進行中
 
-### Task 7.1：Docker Compose 全組裝
-- [ ] **Targets：** `docker-compose.yml`（`db`、`api`、`worker` + 共用 `AUDIO_DIR` volume；兩個前端 build 後由 `api` 或 nginx 靜態服務）、各服務 `Dockerfile`
-- [ ] **Depends on：** Phase 4、5、6
-- [ ] **Produces：** 一鍵啟動的完整環境
-- [ ] **Verify：** `docker compose up` 後所有服務健康；`api` 與 `worker` 共用同一 volume 能互相讀寫音檔
+### Task 7.1：Docker Compose 全組裝 ✅ 完成
+- [x] **Targets：** workspace-aware `api/Dockerfile`、`worker/Dockerfile`（複製各 workspace package.json + lockfile，`npm ci --omit=dev`，再帶 shared+服務 src，以 tsx 執行）；新增 `Dockerfile.migrate`（含 dev 的一次性 `migrate:up`）；`docker-compose.yml`（YAML anchor 帶 Gemini/CF/voice/admin/dev 環境且具預設值、新增 `migrate` 一次性服務、api/worker `depends_on` db healthy + migrate completed_successfully、前端 `depends_on` api healthy）；`web-*/nginx.conf` 反向代理 `/articles`、`/words`、`/lookups`、`/audio`、`/healthz` → `api:8080`
+- [x] **Depends on：** Phase 4、5、6
+- [x] **Produces：** 一鍵啟動的完整環境
+- [x] **Verify：**（2026-06-30 本機 arm64 實測）`docker compose build` 五個 image 全部成功；`docker compose up -d` 後 db/api/worker/web-admin/web-learner **五個皆 healthy**、`migrate` 成功退出（schema 就緒）；host `curl :8080/healthz` 回 `{"ok":true}`；兩前端首頁 200；經 web-admin nginx proxy `GET /articles` 回 200（dev bypass）；worker 寫入共用 `audio` volume 之檔案由 api 容器與 `GET /audio/...`（含經前端 nginx proxy）皆讀回成功
 
 ### Task 7.2：端對端驗證（最終把關）
 - [ ] **Targets：** `e2e/` 腳本或文件化的手動清單

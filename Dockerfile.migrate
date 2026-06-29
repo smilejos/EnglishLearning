@@ -1,0 +1,16 @@
+# 一次性 migration runner：安裝（含 dev 的 node-pg-migrate）並執行 migrate:up。
+# 由 docker-compose 的 migrate 服務使用，api/worker 依其 completed_successfully 啟動。
+FROM node:20-alpine
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+COPY shared/package.json ./shared/package.json
+COPY api/package.json ./api/package.json
+COPY worker/package.json ./worker/package.json
+COPY web-admin/package.json ./web-admin/package.json
+COPY web-learner/package.json ./web-learner/package.json
+RUN npm ci --no-audit --no-fund
+
+COPY migrations ./migrations
+
+CMD ["npm", "run", "migrate:up"]
