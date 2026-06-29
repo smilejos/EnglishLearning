@@ -12,6 +12,13 @@
   "scripts": {
     "typecheck": "npm run typecheck --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present"
+    "build": "npm run build --workspaces --if-present",
+    "migrate": "node-pg-migrate -m migrations",
+    "migrate:up": "node-pg-migrate -m migrations up",
+    "migrate:down": "node-pg-migrate -m migrations down"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^7.9.1",
+    "pg": "^8.22.0"
   }
 }

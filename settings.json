@@ -5,6 +5,7 @@
       "Bash(cat:*)",
       "Bash(git:*)",
       "Bash(npm:*)",
+      "Bash(npx:*)",
       "Bash(docker:*)",
       "Bash(curl:*)"
     ],

@@ -11,7 +11,7 @@
 | --- | --- | --- |
 | Phase 0 基礎設施 | ✅ 完成 | 0.1–0.5 全部完成；config 載入器 + 測試、各服務 healthcheck 皆就位；`docker compose build` / `up` 實機全綠 |
 | Phase 1 shared | ✅ 完成 | Task 1.1（`schemas.ts`）+ 1.2（`normalizeWord.ts`）完成；共 36 項測試全綠 |
-| Phase 2 資料庫 | 🟡 進行中 | Task 2.1（`db.ts`）完成並通過實機 SELECT 1；2.2 migrations、2.3 repo 未開始 |
+| Phase 2 資料庫 | 🟡 進行中 | Task 2.1（`db.ts`）、2.2（migration）完成並通過實機驗證；2.3 repo 未開始 |
 | Phase 3 LLM | 🔴 未開始 | 無 `shared/src/llm/*` |
 | Phase 4 api | 🔴 未開始 | 僅 `/healthz` 骨架，無 auth、路由 |
 | Phase 5 worker | 🔴 未開始 | 僅 heartbeat 骨架，無佇列處理 |
@@ -111,11 +111,11 @@
 - [x] **Produces：** 可重用的 DB 連線（不持全域單例，由各服務啟動時建立並注入 repo 層）
 - [x] **Verify：** 單元測試 `db.test.ts`（createPool 設定 connectionString／overrides、ping 判讀 SELECT 1 結果）全綠；實機 `docker compose up -d db`（healthy）後以 `shared` 的 `createPool`+`ping` 對 `postgres://app:app@localhost:5432/english_learning` 執行 `SELECT 1` 回傳 true（2026-06-29 實測）。全 workspace `npm test`（39 passed）、`npm run typecheck` 全綠
 
-### Task 2.2：建立 schema 的 migration
-- [ ] **Targets：** `migrations/*`（`node-pg-migrate`，內容對齊 `docs/schema-reference.sql`）：`users`、`categories`、`articles`、`paragraphs`、`jobs`、`words`、`word_explanations`、`tags`、`article_tags`；列舉型別 `material_type`（`school`/`extracurricular`）；含外鍵、`words.normalized_word` 唯一、`word_explanations (word_id, article_id)` 唯一、`categories (parent_id, label)` 唯一、`tags (kind, label)` 唯一；必要索引（`jobs.status`、`paragraphs.article_id`、`articles.material_type`、`articles.category_id`、`categories.parent_id`、`tags.kind`、`article_tags.tag_id`）
-- [ ] **Depends on：** 2.1；設計 §4；`docs/schema-reference.sql`
-- [ ] **Produces：** 完整資料結構
-- [ ] **Verify：** `migrate up` 成功；查 `information_schema` 確認 `word_explanations` 的 10 個內容欄位名稱與設計完全一致；上述唯一約束存在；`categories` 自我參照可建立 `category ▸ sub-category`；`migrate down` 可回滾
+### Task 2.2：建立 schema 的 migration ✅ 完成
+- [x] **Targets：** `migrations/1782740846925_init-schema.sql`（`node-pg-migrate`，內容對齊 `docs/schema-reference.sql`）：`users`、`categories`、`articles`、`paragraphs`、`jobs`、`words`、`word_explanations`、`tags`、`article_tags`；列舉型別 `processing_status`／`user_role`／`material_type`；含外鍵、`words.normalized_word` 唯一、`word_explanations (word_id, article_id)` 唯一、`categories (parent_id, label)` 唯一、`tags (kind, label)` 唯一；必要索引（`jobs.status`、`paragraphs.article_id`、`articles.material_type`、`articles.category_id`、`categories.parent_id`、`tags.kind`、`article_tags.tag_id`、`word_explanations` 雙索引）。root `package.json` 新增 `migrate`／`migrate:up`／`migrate:down` 腳本
+- [x] **Depends on：** 2.1；設計 §4；`docs/schema-reference.sql`
+- [x] **Produces：** 完整資料結構
+- [x] **Verify：**（2026-06-29 對 compose db 實測）`migrate:up` 成功（9 業務表 + `pgmigrations`）；`information_schema` 確認 `word_explanations` 10 個內容欄位名稱與順序與設計完全一致（en_explanation→…→zh_example_audio_path）；四個唯一約束存在（words/word_explanations/categories/tags）；`categories` 自我參照成功建立 `故事 ▸ 童話`；`migrate:down` 回滾乾淨（僅剩 `pgmigrations`、列舉型別移除），再 `migrate:up` 回到就緒狀態
 
 ### Task 2.3：Repository 資料存取層
 - [ ] **Targets：** `shared/src/repo/`（articles、categories、tags、paragraphs、jobs、words、wordExplanations 的 CRUD / 查詢）
