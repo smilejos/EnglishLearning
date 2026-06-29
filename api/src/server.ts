@@ -1,14 +1,14 @@
-import Fastify from "fastify";
+// api 進入點：載入環境設定、建立 DB pool 與 app，開始監聽。
+import { loadConfig, createPool } from "@el/shared";
+import { buildApp } from "./app";
+
+const config = loadConfig();
+const pool = createPool(config.databaseUrl);
+
+const app = buildApp({ config, pool, logger: true });
 
 const port = Number(process.env.API_PORT ?? 8080);
 const host = "0.0.0.0";
-
-const app = Fastify({ logger: true });
-
-// Liveness / readiness probe used by docker-compose healthcheck.
-app.get("/healthz", async () => ({ ok: true, service: "api" }));
-
-app.get("/", async () => ({ service: "english-learning api", status: "skeleton" }));
 
 app
   .listen({ port, host })

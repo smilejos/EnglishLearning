@@ -13,7 +13,7 @@
 | Phase 1 shared | ✅ 完成 | Task 1.1（`schemas.ts`）+ 1.2（`normalizeWord.ts`）完成；共 36 項測試全綠 |
 | Phase 2 資料庫 | ✅ 完成 | 2.1（`db.ts`）、2.2（migration）、2.3（repo + 8 整合測試）全部完成並通過實機驗證 |
 | Phase 3 LLM | ✅ 完成 | 3.1 genai/wav/auth、3.2 tts（雙 voice）、3.3 translate、3.4 explainWord 全部完成並測試全綠 |
-| Phase 4 api | 🔴 未開始 | 僅 `/healthz` 骨架，無 auth、路由 |
+| Phase 4 api | 🟡 進行中 | Task 4.1（auth 中介層 + buildApp）完成；4.2–4.7 未開始 |
 | Phase 5 worker | 🔴 未開始 | 僅 heartbeat 骨架，無佇列處理 |
 | Phase 6 前端 | 🔴 未開始 | 僅顯示服務名稱的最小頁面 |
 | Phase 7 整合 | 🔴 未開始 | — |
@@ -155,11 +155,11 @@
 
 ## Phase 4 — api 服務 🔴 未開始
 
-### Task 4.1：Fastify 骨架 + Cloudflare Access 驗證中介層
-- [ ] **Targets：** `api/src/server.ts`、`api/src/auth.ts`（驗證 `Cf-Access-Jwt-Assertion`：以 `CF_ACCESS_TEAM_DOMAIN` 取公鑰、驗 `aud`、取 email、upsert `users`、附 `role`）、健康檢查 `GET /healthz`
-- [ ] **Depends on：** 2.3、0.2
-- [ ] **Produces：** 受保護的 Fastify app；`request.user`（email、role）
-- [ ] **Verify：** 整合測試：無／偽 token → 403；合法 token（測試金鑰）→ 建立 user 並通過；`DEV_AUTH_BYPASS=1` 注入假身分可用
+### Task 4.1：Fastify 骨架 + Cloudflare Access 驗證中介層 ✅ 完成
+- [x] **Targets：** `api/src/auth.ts`（`verifyAccessJwt`/`resolveRole`/`buildKeyResolver`/`registerAuth` 全域 preHandler/`requireAdmin` 守衛）、`api/src/app.ts`（`buildApp` 工廠，與 env 分離以利測試）、`api/src/server.ts`（loadConfig + createPool + listen）、健康檢查 `GET /healthz`。新增 `shared/src/repo/users.ts`（`upsertUser`/`getUserByEmail`）與 config `adminEmails`（`ADMIN_EMAILS` allowlist，設計 §9.6）；api 依賴加 `@el/shared`、`jose`、`vitest`
+- [x] **Depends on：** 2.3、0.2
+- [x] **Produces：** 受保護的 Fastify app；`request.user`（id、email、role）；公開路徑 `/healthz`、`/audio/`
+- [x] **Verify：** `api/src/auth.test.ts` 7 項全綠（以本地 RSA 金鑰簽測試 JWT，Fastify inject + 測試 DB）：healthz 公開、無 token→403、偽 token→403、aud 不符→403、合法 token→200 並建立 user（reader）、allowlist email→admin、`DEV_AUTH_BYPASS=1` 無 token 注入假身分。新增 config 測試（ADMIN_EMAILS 解析）與 repo 測試（upsertUser 冪等）。全 workspace `npm test`（80 passed）、`npm run typecheck` 全綠
 
 ### Task 4.2：靜態音檔服務
 - [ ] **Targets：** `api/src/static.ts`（從 `AUDIO_DIR` 提供 `/audio/*`）

@@ -97,6 +97,17 @@ describe("loadConfig", () => {
     expect(cfg.devUserEmail).toBe("dev@example.com");
   });
 
+  it("解析 ADMIN_EMAILS 為小寫去空白的清單；未設定時為空陣列", () => {
+    const env = fullEnv();
+    env.ADMIN_EMAILS = " Admin@Example.com , owner@example.com ";
+    expect(loadConfig(env).adminEmails).toEqual([
+      "admin@example.com",
+      "owner@example.com",
+    ]);
+    delete env.ADMIN_EMAILS;
+    expect(loadConfig(env).adminEmails).toEqual([]);
+  });
+
   it("一次回報所有缺漏的必填變數", () => {
     expect(() => loadConfig({})).toThrow(/DATABASE_URL[\s\S]*VOICE_EN/);
   });

@@ -27,6 +27,7 @@ import {
   listExplanationsByWord,
 } from "./wordExplanations";
 import { createCategory } from "./categories";
+import { upsertUser, getUserByEmail } from "./users";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
@@ -143,6 +144,24 @@ describe("唯一鍵衝突被擋", () => {
     // 頂層 parent_id 為 NULL，SQL 視 NULL 相異，故同名不違反唯一鍵（設計刻意保留彈性）
     const top2 = await createCategory(pool, { label: "故事" });
     expect(top2.id).not.toBe(top.id);
+  });
+});
+
+describe("upsertUser", () => {
+  it("首次建立後 email 衝突時更新而非重複，回傳最新 role", async () => {
+    const u1 = await upsertUser(pool, { email: "a@example.com" });
+    expect(u1.role).toBe("reader");
+
+    const u2 = await upsertUser(pool, {
+      email: "a@example.com",
+      name: "Alice",
+      role: "admin",
+    });
+    expect(u2.id).toBe(u1.id);
+    expect(u2.role).toBe("admin");
+    expect(u2.name).toBe("Alice");
+
+    expect((await getUserByEmail(pool, "a@example.com"))!.id).toBe(u1.id);
   });
 });
 

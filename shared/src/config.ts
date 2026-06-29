@@ -30,6 +30,8 @@ export interface Config {
   devAuthBypass: boolean;
   /** 僅在 devAuthBypass 時使用的假身分 email。 */
   devUserEmail: string;
+  /** admin 角色允許清單（email，小寫）；命中者於登入時授予 admin（設計 §9.6 app 內 allowlist）。 */
+  adminEmails: string[];
 }
 
 /** 預設值（與 `.env.example` 一致），缺漏時採用。 */
@@ -121,5 +123,15 @@ export function loadConfig(env: Env = process.env): Config {
     cfAccess,
     devAuthBypass,
     devUserEmail: trimmed(env, "DEV_USER_EMAIL") ?? DEFAULTS.devUserEmail,
+    adminEmails: parseEmailList(trimmed(env, "ADMIN_EMAILS")),
   };
+}
+
+/** 解析逗號分隔的 email 清單，去空白並轉小寫。 */
+function parseEmailList(value: string | undefined): string[] {
+  if (!value) return [];
+  return value
+    .split(",")
+    .map((e) => e.trim().toLowerCase())
+    .filter((e) => e !== "");
 }
