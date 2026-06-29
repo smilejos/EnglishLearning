@@ -17,7 +17,14 @@ export function createPool(
   connectionString: string,
   overrides?: PoolConfig,
 ): Pool {
-  return new Pool({ connectionString, ...overrides });
+  const pool = new Pool({ connectionString, ...overrides });
+  // pg 會在閒置 client 發生錯誤時於 Pool 觸發 'error'（例如 db 重啟、連線被中斷）。
+  // 未掛處理器會讓未處理的 'error' 事件使整個行程崩潰；此處記錄並吞掉，
+  // 由後續查詢自動重新取得連線。
+  pool.on("error", (err) => {
+    console.error(`[db] idle client error: ${err.message}`);
+  });
+  return pool;
 }
 
 /** 連線健康檢查：執行 `SELECT 1`，成功回 true。 */

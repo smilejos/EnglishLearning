@@ -26,6 +26,12 @@ describe("createPool", () => {
     pools.push(pool);
     expect(pool.options.max).toBe(3);
   });
+
+  it("掛上 Pool 'error' 處理器，避免閒置連線錯誤使行程崩潰", () => {
+    const pool = createPool("postgres://app:app@localhost:5432/english_learning");
+    pools.push(pool);
+    expect(pool.listenerCount("error")).toBeGreaterThanOrEqual(1);
+  });
 });
 
 describe("ping", () => {
