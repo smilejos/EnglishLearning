@@ -7,6 +7,10 @@ import {
   createArticle,
   createParagraph,
   updateParagraphResult,
+  setParagraphStatus,
+  setArticleStatus,
+  createJob,
+  markJobFailed,
   ArticleSchema,
   ParagraphSchema,
 } from "@el/shared";
@@ -180,6 +184,70 @@ describe("GET /articles, GET /articles/:id", () => {
     expect(
       (await app.inject({ method: "GET", url: "/articles/abc" })).statusCode,
     ).toBe(400);
+    await app.close();
+  });
+});
+
+describe("POST /articles/:id/retry", () => {
+  async function seedFailed(): Promise<number> {
+    const article = await createArticle(pool, { title: "Retry me" });
+    const p = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "t",
+    });
+    const job = await createJob(pool, article.id, p.id);
+    await setParagraphStatus(pool, p.id, "failed");
+    await markJobFailed(pool, job.id, "boom");
+    await setArticleStatus(pool, article.id, "failed");
+    return article.id;
+  }
+
+  async function jobStatus(articleId: number): Promise<string> {
+    const r = await pool.query(
+      `SELECT status FROM jobs WHERE article_id = $1 LIMIT 1`,
+      [articleId],
+    );
+    return r.rows[0].status;
+  }
+
+  it("admin 重試 → failed 段落與 job 轉 pending、文章轉 processing", async () => {
+    const id = await seedFailed();
+    const app = buildApp({ config: adminConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${id}/retry`,
+    });
+    expect(res.statusCode).toBe(200);
+    expect(res.json().reset).toEqual({ paragraphs: 1, jobs: 1 });
+
+    const paras = await listParagraphsByArticle(pool, id);
+    expect(paras[0].status).toBe("pending");
+    expect(await jobStatus(id)).toBe("pending");
+    expect((await getArticleById(pool, id))!.status).toBe("processing");
+    await app.close();
+  });
+
+  it("reader → 403", async () => {
+    const id = await seedFailed();
+    const app = buildApp({ config: readerConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${id}/retry`,
+    });
+    expect(res.statusCode).toBe(403);
+    // 未變更
+    expect((await getArticleById(pool, id))!.status).toBe("failed");
+    await app.close();
+  });
+
+  it("不存在的文章 → 404", async () => {
+    const app = buildApp({ config: adminConfig, pool });
+    expect(
+      (
+        await app.inject({ method: "POST", url: "/articles/999999/retry" })
+      ).statusCode,
+    ).toBe(404);
     await app.close();
   });
 });

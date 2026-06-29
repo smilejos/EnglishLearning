@@ -9,6 +9,9 @@ import {
   listArticles,
   getArticleById,
   listParagraphsByArticle,
+  setArticleStatus,
+  resetFailedParagraphsByArticle,
+  resetFailedJobsByArticle,
   type DbPool,
 } from "@el/shared";
 import { requireAdmin } from "../auth";
@@ -88,4 +91,27 @@ export function registerArticleRoutes(app: FastifyInstance, pool: DbPool): void 
     const paragraphs = await listParagraphsByArticle(pool, id);
     return { article, paragraphs };
   });
+
+  // 重試（admin only）：將該文章 failed 的段落／jobs 重設為 pending，文章轉 processing。
+  app.post(
+    "/articles/:id/retry",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      if (!Number.isInteger(id) || id <= 0) {
+        return reply.code(400).send({ error: "invalid article id" });
+      }
+      const article = await getArticleById(pool, id);
+      if (!article) {
+        return reply.code(404).send({ error: "article not found" });
+      }
+      const reset = await withTransaction(pool, async (tx) => {
+        const paragraphs = await resetFailedParagraphsByArticle(tx, id);
+        const jobs = await resetFailedJobsByArticle(tx, id);
+        await setArticleStatus(tx, id, "processing");
+        return { paragraphs, jobs };
+      });
+      return { ok: true, reset };
+    },
+  );
 }

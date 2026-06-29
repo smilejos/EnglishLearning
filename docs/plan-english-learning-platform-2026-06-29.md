@@ -179,11 +179,11 @@
 - [x] **Produces：** admin 輪詢狀態、learner 讀取內容的資料來源
 - [x] **Verify：** `routes/articles.test.ts` 新增 3 項全綠：清單以 `z.array(ArticleSchema)` 驗證回 2 筆；詳情 `ArticleSchema`/`ParagraphSchema` 驗證、p0 status=done 且帶 translation 與中英音檔路徑、p1 pending；不存在→404、非法 id→400。api `npm test`（20 passed）、`npm run typecheck` 全綠
 
-### Task 4.5：重試 `POST /articles/:id/retry`（admin only）
-- [ ] **Targets：** 同檔新增路由（將該文章 `failed` 段落／jobs 重設為 `pending`）
-- [ ] **Depends on：** 4.3
-- [ ] **Produces：** 失敗可重新處理
-- [ ] **Verify：** 整合測試：先標一段 failed，呼叫後該段→pending、文章→processing
+### Task 4.5：重試 `POST /articles/:id/retry`（admin only）✅ 完成
+- [x] **Targets：** `routes/articles.ts` 新增路由（於 `withTransaction` 內 `resetFailedParagraphsByArticle` + `resetFailedJobsByArticle` + 文章轉 `processing`，回 reset 筆數）；shared 新增 `resetFailedParagraphsByArticle`
+- [x] **Depends on：** 4.3
+- [x] **Produces：** 失敗可重新處理
+- [x] **Verify：** `routes/articles.test.ts` 新增 3 項全綠：admin 重試→200、reset `{paragraphs:1,jobs:1}`、段落與 job 轉 pending、文章轉 processing；reader→403 且狀態不變；不存在→404。api `npm test`（23 passed）、`npm run typecheck` 全綠
 
 ### Task 4.6：單字解釋查詢 `GET /words/:word/explanations`
 - [ ] **Targets：** `api/src/routes/lookups.ts`（用 `normalizeWord`，回該單字所有解釋＋各自來源文章，依 `created_at` 排序）

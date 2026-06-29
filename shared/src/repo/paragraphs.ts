@@ -91,3 +91,16 @@ export async function setParagraphStatus(
     [id, status],
   );
 }
+
+/** 重試：將某文章的 failed 段落重設回 pending。回傳重設筆數。 */
+export async function resetFailedParagraphsByArticle(
+  db: Queryable,
+  articleId: number,
+): Promise<number> {
+  const res = await db.query(
+    `UPDATE paragraphs SET status = 'pending'
+     WHERE article_id = $1 AND status = 'failed'`,
+    [articleId],
+  );
+  return res.rowCount ?? 0;
+}
