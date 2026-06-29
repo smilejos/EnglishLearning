@@ -12,7 +12,7 @@
 | Phase 0 基礎設施 | ✅ 完成 | 0.1–0.5 全部完成；config 載入器 + 測試、各服務 healthcheck 皆就位；`docker compose build` / `up` 實機全綠 |
 | Phase 1 shared | ✅ 完成 | Task 1.1（`schemas.ts`）+ 1.2（`normalizeWord.ts`）完成；共 36 項測試全綠 |
 | Phase 2 資料庫 | ✅ 完成 | 2.1（`db.ts`）、2.2（migration）、2.3（repo + 8 整合測試）全部完成並通過實機驗證 |
-| Phase 3 LLM | 🟡 進行中 | Task 3.1（genai/wav/auth 移植 + 測試）完成；3.2–3.4 未開始 |
+| Phase 3 LLM | ✅ 完成 | 3.1 genai/wav/auth、3.2 tts（雙 voice）、3.3 translate、3.4 explainWord 全部完成並測試全綠 |
 | Phase 4 api | 🔴 未開始 | 僅 `/healthz` 骨架，無 auth、路由 |
 | Phase 5 worker | 🔴 未開始 | 僅 heartbeat 骨架，無佇列處理 |
 | Phase 6 前端 | 🔴 未開始 | 僅顯示服務名稱的最小頁面 |
@@ -125,7 +125,7 @@
 
 ---
 
-## Phase 3 — LLM 服務（移植並擴充 article2speech）🔴 未開始
+## Phase 3 — LLM 服務（移植並擴充 article2speech）✅ 完成
 
 ### Task 3.1：移植底層 genai / wav / auth ✅ 完成
 - [x] **Targets：** `shared/src/llm/genai.ts`、`wav.ts`、`auth.ts`（自 `article2speech/builder/src` 移植，內容不變、僅 doc 註解轉繁中）+ 測試（移植 `wav.test.ts`；新增 `genai.test.ts` mock fetch、`auth.test.ts`）。安裝 `google-auth-library`
@@ -145,11 +145,11 @@
 - [x] **Produces：** `translateParagraph(text, client)` → 繁中字串；`generateTranslations` 批次；皆由 `index.ts` 匯出
 - [x] **Verify：** `llm/translate.test.ts` 6 項全綠（mock client）：回傳同序對齊翻譯、去除程式碼圍欄、長度不符重試後成功、用盡重試拋錯、無段落不呼叫 client、單段 `translateParagraph` 回繁中字串。全 workspace `npm test`（66 passed）、`npm run typecheck` 全綠
 
-### Task 3.4：單字解釋產生器（新增）
-- [ ] **Targets：** `shared/src/llm/explainWord.ts` + 測試
-- [ ] **Depends on：** 3.1、1.1
-- [ ] **Produces：** `explainWord(word, contextParagraph)` → `{ en_explanation, zh_translation, zh_explanation, en_example, zh_example }`（Zod 驗證的 JSON）
-- [ ] **Verify：** 測試（mock）：回傳通過 schema；缺欄位時重試／報錯
+### Task 3.4：單字解釋產生器（新增）✅ 完成
+- [x] **Targets：** `shared/src/llm/explainWord.ts`（`explainWord`、`GeminiExplainClient`、`WordExplanationContentSchema`）+ 測試
+- [x] **Depends on：** 3.1、1.1
+- [x] **Produces：** `explainWord(word, contextParagraph, client)` → `{ en_explanation, zh_translation, zh_explanation, en_example, zh_example }`（Zod 驗證、各欄非空）；由 `index.ts` 匯出
+- [x] **Verify：** `llm/explainWord.test.ts` 5 項全綠（mock client）：合法回傳通過 schema、去除程式碼圍欄、缺欄位重試後成功、持續缺欄位用盡重試拋錯（failed after 3 attempts）、空字串欄位視為不合法。全 workspace `npm test`（71 passed）、`npm run typecheck` 全綠
 
 ---
 

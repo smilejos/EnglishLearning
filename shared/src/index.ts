@@ -43,6 +43,17 @@ export type {
   GeminiTranslateOptions,
 } from "./llm/translate";
 export { stripFences } from "./llm/json";
+export {
+  explainWord,
+  GeminiExplainClient,
+  WordExplanationContentSchema,
+} from "./llm/explainWord";
+export type {
+  ExplainClient,
+  ExplainOpts,
+  GeminiExplainOptions,
+  WordExplanationContent,
+} from "./llm/explainWord";
 
 export { loadConfig } from "./config";
 export type {
