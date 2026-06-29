@@ -92,6 +92,19 @@ export async function setParagraphStatus(
   );
 }
 
+/** 某文章尚未 done 的段落數（worker 判斷是否全段完成）。 */
+export async function countUnfinishedParagraphs(
+  db: Queryable,
+  articleId: number,
+): Promise<number> {
+  const res = await db.query<{ n: number }>(
+    `SELECT count(*)::int AS n FROM paragraphs
+     WHERE article_id = $1 AND status <> 'done'`,
+    [articleId],
+  );
+  return res.rows[0]?.n ?? 0;
+}
+
 /** 重試：將某文章的 failed 段落重設回 pending。回傳重設筆數。 */
 export async function resetFailedParagraphsByArticle(
   db: Queryable,

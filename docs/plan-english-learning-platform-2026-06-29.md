@@ -14,7 +14,7 @@
 | Phase 2 資料庫 | ✅ 完成 | 2.1（`db.ts`）、2.2（migration）、2.3（repo + 8 整合測試）全部完成並通過實機驗證 |
 | Phase 3 LLM | ✅ 完成 | 3.1 genai/wav/auth、3.2 tts（雙 voice）、3.3 translate、3.4 explainWord 全部完成並測試全綠 |
 | Phase 4 api | ✅ 完成 | 4.1 auth、4.2 靜態音檔、4.3 上傳、4.4 查詢、4.5 重試、4.6 解釋清單、4.7 重新解釋 全部完成（api 28 測試全綠）|
-| Phase 5 worker | 🔴 未開始 | 僅 heartbeat 骨架，無佇列處理 |
+| Phase 5 worker | ✅ 完成 | Task 5.1（佇列迴圈 + 段落處理）完成，3 整合測試全綠 |
 | Phase 6 前端 | 🔴 未開始 | 僅顯示服務名稱的最小頁面 |
 | Phase 7 整合 | 🔴 未開始 | — |
 
@@ -103,7 +103,7 @@
 
 ---
 
-## Phase 2 — 資料庫 🔴 未開始
+## Phase 2 — 資料庫 ✅ 完成
 
 ### Task 2.1：DB 連線模組 + compose 的 db 服務 ✅ 完成
 - [x] **Targets：** `shared/src/db.ts`（`createPool` 建立 `pg` Pool、`ping` 健康檢查）；`docker-compose.yml` 的 `db` 服務 + `pgdata` named volume（Phase 0 已建立）
@@ -199,13 +199,13 @@
 
 ---
 
-## Phase 5 — worker 服務 🔴 未開始
+## Phase 5 — worker 服務 ✅ 完成
 
-### Task 5.1：worker 佇列迴圈與段落處理
-- [ ] **Targets：** `worker/src/index.ts`（輪詢；以 `SELECT … FOR UPDATE SKIP LOCKED` 取 job → 翻譯 → 英文 TTS + 中文 TTS → 寫兩個 `.wav` → 段落 `done`；全段完成→文章 `done`；錯誤→`failed`、`attempts++`、寫 `error`）
-- [ ] **Depends on：** 2.3、3.2、3.3、0.2
-- [ ] **Produces：** 文章逐段非同步處理
-- [ ] **Verify：** 整合測試（mock LLM）：種一篇兩段文章的 jobs，跑一輪後 → 兩段各有 `en_audio_path`/`zh_audio_path` 檔案、`translation` 已填、文章 `done`；令 TTS 拋錯一次 → 該段 `failed` 且 `attempts` 增加
+### Task 5.1：worker 佇列迴圈與段落處理 ✅ 完成
+- [x] **Targets：** `worker/src/processor.ts`（`processNextJob`/`drainQueue`：`claimNextJob`（FOR UPDATE SKIP LOCKED）→ 文章 processing → `translateParagraph` → 英文 TTS（念原文）+ 中文 TTS（念翻譯）→ `writeAudio` 兩個 wav → `updateParagraphResult` 段落 done + `markJobDone`；`countUnfinishedParagraphs`==0 → 文章 done；錯誤→段落／文章 failed、`markJobFailed`（attempts++、寫 error））、`worker/src/index.ts`（輪詢迴圈 + 保留 heartbeat 檔供 healthcheck）、`worker/src/audio.ts`；shared 新增 `countUnfinishedParagraphs`；worker 依賴加 `@el/shared`、`vitest`
+- [x] **Depends on：** 2.3、3.2、3.3、0.2
+- [x] **Produces：** 文章逐段非同步處理
+- [x] **Verify：** `worker/src/processor.test.ts` 3 項全綠（mock LLM/TTS）：兩段文章 `drainQueue` 處理 2 筆 → 兩段 done、`translation` 已填、中英 `audio_path` 設定且檔案實際寫入、文章 done；TTS 拋錯 → 段落 failed、job status=failed 且 attempts=1、文章 failed；空佇列回 0。全 workspace `npm test`（104 passed）、`npm run typecheck` 全綠
 
 ---
 
