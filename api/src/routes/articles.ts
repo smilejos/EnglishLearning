@@ -6,6 +6,9 @@ import {
   createArticle,
   createParagraph,
   createJob,
+  listArticles,
+  getArticleById,
+  listParagraphsByArticle,
   type DbPool,
 } from "@el/shared";
 import { requireAdmin } from "../auth";
@@ -68,4 +71,21 @@ export function registerArticleRoutes(app: FastifyInstance, pool: DbPool): void 
       return reply.code(202).send({ id });
     },
   );
+
+  // 文章清單（任何已驗證身分；admin 輪詢狀態、learner 瀏覽）。
+  app.get("/articles", async () => ({ articles: await listArticles(pool) }));
+
+  // 文章詳情：含逐段文字、翻譯、狀態與音檔路徑。
+  app.get("/articles/:id", async (request, reply) => {
+    const id = Number((request.params as { id: string }).id);
+    if (!Number.isInteger(id) || id <= 0) {
+      return reply.code(400).send({ error: "invalid article id" });
+    }
+    const article = await getArticleById(pool, id);
+    if (!article) {
+      return reply.code(404).send({ error: "article not found" });
+    }
+    const paragraphs = await listParagraphsByArticle(pool, id);
+    return { article, paragraphs };
+  });
 }

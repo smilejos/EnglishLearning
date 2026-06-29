@@ -173,11 +173,11 @@
 - [x] **Produces：** 文章與待處理 jobs（皆 pending）
 - [x] **Verify：** `api/src/routes/articles.test.ts` 3 項 + `articleText.test.ts` 4 項全綠：admin 上傳 2 段 → 202+id、article status=pending、2 paragraphs（pending、文字／idx 正確）、2 jobs；reader→403 且未建立文章；缺 text／空白內容→400。api `npm test`（17 passed）、全 workspace `npm run typecheck` 全綠
 
-### Task 4.4：文章查詢 `GET /articles`、`GET /articles/:id`
-- [ ] **Targets：** 同檔新增兩路由（清單 + 含段落與狀態的詳情）
-- [ ] **Depends on：** 4.3
-- [ ] **Produces：** admin 輪詢狀態、learner 讀取內容的資料來源
-- [ ] **Verify：** 整合測試：回傳形狀符合 `shared` schema；含逐段 status 與音檔路徑
+### Task 4.4：文章查詢 `GET /articles`、`GET /articles/:id` ✅ 完成
+- [x] **Targets：** `routes/articles.ts` 新增 `GET /articles`（清單）與 `GET /articles/:id`（`{ article, paragraphs }` 詳情，含逐段狀態與音檔路徑）；任何已驗證身分可讀。新增 `api/vitest.config.ts`（`fileParallelism:false`，序列化共用 DB 的整合測試，避免 `TRUNCATE users CASCADE` 跨檔清掉 articles）
+- [x] **Depends on：** 4.3
+- [x] **Produces：** admin 輪詢狀態、learner 讀取內容的資料來源
+- [x] **Verify：** `routes/articles.test.ts` 新增 3 項全綠：清單以 `z.array(ArticleSchema)` 驗證回 2 筆；詳情 `ArticleSchema`/`ParagraphSchema` 驗證、p0 status=done 且帶 translation 與中英音檔路徑、p1 pending；不存在→404、非法 id→400。api `npm test`（20 passed）、`npm run typecheck` 全綠
 
 ### Task 4.5：重試 `POST /articles/:id/retry`（admin only）
 - [ ] **Targets：** 同檔新增路由（將該文章 `failed` 段落／jobs 重設為 `pending`）

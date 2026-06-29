@@ -4,7 +4,13 @@ import {
   createPool,
   getArticleById,
   listParagraphsByArticle,
+  createArticle,
+  createParagraph,
+  updateParagraphResult,
+  ArticleSchema,
+  ParagraphSchema,
 } from "@el/shared";
+import { z } from "zod";
 import { buildApp } from "../app";
 import type { AuthConfig } from "../auth";
 
@@ -110,6 +116,69 @@ describe("POST /articles", () => {
           payload: { title: "X", text: "   \n\n  " },
         })
       ).statusCode,
+    ).toBe(400);
+    await app.close();
+  });
+});
+
+describe("GET /articles, GET /articles/:id", () => {
+  it("清單回傳符合 ArticleSchema 的文章陣列", async () => {
+    await createArticle(pool, { title: "One" });
+    await createArticle(pool, { title: "Two" });
+    const app = buildApp({ config: readerConfig, pool });
+    const res = await app.inject({ method: "GET", url: "/articles" });
+    expect(res.statusCode).toBe(200);
+    const articles = z.array(ArticleSchema).parse(res.json().articles);
+    expect(articles).toHaveLength(2);
+    await app.close();
+  });
+
+  it("詳情含逐段 status 與音檔路徑，形狀符合 shared schema", async () => {
+    const article = await createArticle(pool, { title: "Detail" });
+    const p0 = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "Hello.",
+    });
+    await createParagraph(pool, {
+      articleId: article.id,
+      idx: 1,
+      text: "World.",
+    });
+    await updateParagraphResult(pool, p0.id, {
+      translation: "你好。",
+      enAudioPath: "articles/1/p0.en.wav",
+      zhAudioPath: "articles/1/p0.zh.wav",
+      status: "done",
+    });
+
+    const app = buildApp({ config: readerConfig, pool });
+    const res = await app.inject({
+      method: "GET",
+      url: `/articles/${article.id}`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    ArticleSchema.parse(body.article);
+    const paras = z.array(ParagraphSchema).parse(body.paragraphs);
+    expect(paras).toHaveLength(2);
+    expect(paras[0]).toMatchObject({
+      status: "done",
+      translation: "你好。",
+      enAudioPath: "articles/1/p0.en.wav",
+      zhAudioPath: "articles/1/p0.zh.wav",
+    });
+    expect(paras[1].status).toBe("pending");
+    await app.close();
+  });
+
+  it("不存在的文章 → 404；非法 id → 400", async () => {
+    const app = buildApp({ config: readerConfig, pool });
+    expect(
+      (await app.inject({ method: "GET", url: "/articles/999999" })).statusCode,
+    ).toBe(404);
+    expect(
+      (await app.inject({ method: "GET", url: "/articles/abc" })).statusCode,
     ).toBe(400);
     await app.close();
   });
