@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { Article, Paragraph, Word, WordExplanation } from "./types";
 import * as api from "./api";
 
-/** 播放單一音檔的小按鈕（無路徑時禁用）。 */
+/** 播放單一音檔的小按鈕，含載入／播放／錯誤狀態（無路徑時禁用）。 */
 function AudioButton({
   path,
   label,
@@ -10,10 +10,39 @@ function AudioButton({
   path: string | null | undefined;
   label: string;
 }) {
+  const [state, setState] = useState<"idle" | "loading" | "playing" | "error">(
+    "idle",
+  );
   if (!path) return <button disabled>{label}（無）</button>;
+
+  async function play() {
+    setState("loading");
+    try {
+      const audio = new Audio(api.audioUrl(path!));
+      audio.onended = () => setState("idle");
+      audio.onerror = () => setState("error");
+      await audio.play();
+      setState("playing");
+    } catch {
+      setState("error");
+    }
+  }
+
+  const icon =
+    state === "loading"
+      ? "⏳"
+      : state === "playing"
+        ? "♪"
+        : state === "error"
+          ? "⚠"
+          : "▶";
   return (
-    <button onClick={() => void new Audio(api.audioUrl(path)).play()}>
-      ▶ {label}
+    <button
+      onClick={play}
+      disabled={state === "loading"}
+      title={state === "error" ? "播放失敗" : undefined}
+    >
+      {icon} {label}
     </button>
   );
 }
@@ -172,9 +201,17 @@ function WordPopup({
           <h2 style={{ margin: 0 }}>{word}</h2>
           <button onClick={onClose}>關閉 ✕</button>
         </div>
-        <button onClick={reexplain} disabled={busy} style={{ margin: "12px 0" }}>
-          {busy ? "解釋中…" : "用本篇重新解釋"}
-        </button>
+        {explanations.some((e) => e.articleId === articleId) ? (
+          <p style={{ color: "#16a34a", margin: "12px 0" }}>✓ 本篇已解釋</p>
+        ) : (
+          <button
+            onClick={reexplain}
+            disabled={busy}
+            style={{ margin: "12px 0" }}
+          >
+            {busy ? "解釋中…" : "用本篇重新解釋"}
+          </button>
+        )}
         {error && <p style={{ color: "#dc2626" }}>{error}</p>}
         {explanations.length === 0 && !busy && (
           <p style={{ color: "#666" }}>尚無解釋，點上方按鈕用本篇產生。</p>
