@@ -15,7 +15,7 @@
 | Phase 3 LLM | ✅ 完成 | 3.1 genai/wav/auth、3.2 tts（雙 voice）、3.3 translate、3.4 explainWord 全部完成並測試全綠 |
 | Phase 4 api | ✅ 完成 | 4.1 auth、4.2 靜態音檔、4.3 上傳、4.4 查詢、4.5 重試、4.6 解釋清單、4.7 重新解釋 全部完成（api 28 測試全綠）|
 | Phase 5 worker | ✅ 完成 | Task 5.1（佇列迴圈 + 段落處理）完成，3 整合測試全綠 |
-| Phase 6 前端 | 🔴 未開始 | 僅顯示服務名稱的最小頁面 |
+| Phase 6 前端 | ✅ 完成 | 6.1 web-admin、6.2 web-learner 完成，typecheck 與 vite build 皆過 |
 | Phase 7 整合 | 🔴 未開始 | — |
 
 已驗證證據（2026-06-29 實機）：
@@ -209,7 +209,7 @@
 
 ---
 
-## Phase 6 — 前端 🔴 未開始
+## Phase 6 — 前端 ✅ 完成
 
 ### Task 6.1：web-admin（管理介面）✅ 完成
 - [x] **Targets：** `web-admin/src/`：`types.ts`（前端輕量 DTO，不 import 伺服器端 shared）、`api.ts`（fetch 封裝 + `audioUrl`）、`App.tsx`（文章清單 3 秒輪詢、上傳表單、詳情含逐段狀態／翻譯／中英 audio 播放與重試鈕）、`main.tsx`；`vite.config.ts` 加 dev proxy（/articles、/words、/lookups、/audio → 本機 api）
@@ -217,11 +217,11 @@
 - [x] **Produces：** 管理者操作介面（登入由 Cloudflare Access 處理，無自建登入頁）
 - [x] **Verify：** `npm run typecheck` 與 `npm run build`（vite，31 modules、dist 產出）皆成功。對本機 api 的互動式煙霧測試列入 Phase 7 端對端驗證
 
-### Task 6.2：web-learner（學習者前台）
-- [ ] **Targets：** `web-learner/`（Vite + React）：文章列表、閱讀頁（逐段英／中音檔播放 + 翻譯顯示切換）、單字彈窗（既有解釋清單＋來源連結、解釋與例句中英文字、「用本篇重新解釋」、6 個語音播放鈕：單字英/中、解釋英/中、例句英/中）；呼叫 4.4、4.6、4.7
-- [ ] **Depends on：** 4.4、4.6、4.7、1.1
-- [ ] **Produces：** 學習者閱讀與單字查詢介面
-- [ ] **Verify：** `npm run build` 成功；煙霧測試：閱讀頁可播兩種語音；點字顯示既有解釋；重新解釋後新增一筆且可播 6 種語音；來源連結可跳文章
+### Task 6.2：web-learner（學習者前台）✅ 完成
+- [x] **Targets：** `web-learner/src/`：`types.ts`、`api.ts`（listArticles/getArticle/getExplanations/reexplain/audioUrl）、`App.tsx`（文章列表、閱讀頁 `ClickableText` 可點單字 + 翻譯顯示切換 + 逐段中英朗讀、`WordPopup` 既有解釋清單＋來源連結跳轉、「用本篇重新解釋」、`ExplanationCard` 解釋／例句中英文字 + 6 個語音鈕：單字英/中、解釋英/中、例句英/中）、`main.tsx`；`vite.config.ts` dev proxy
+- [x] **Depends on：** 4.4、4.6、4.7、1.1
+- [x] **Produces：** 學習者閱讀與單字查詢介面
+- [x] **Verify：** `npm run typecheck` 與 `npm run build`（vite，31 modules、dist 產出）皆成功。互動式煙霧測試（播音／點字／重新解釋／跳文章）列入 Phase 7 端對端驗證
 
 ---
 
