@@ -13,7 +13,7 @@
 | Phase 1 shared | ✅ 完成 | Task 1.1（`schemas.ts`）+ 1.2（`normalizeWord.ts`）完成；共 36 項測試全綠 |
 | Phase 2 資料庫 | ✅ 完成 | 2.1（`db.ts`）、2.2（migration）、2.3（repo + 8 整合測試）全部完成並通過實機驗證 |
 | Phase 3 LLM | ✅ 完成 | 3.1 genai/wav/auth、3.2 tts（雙 voice）、3.3 translate、3.4 explainWord 全部完成並測試全綠 |
-| Phase 4 api | 🟡 進行中 | Task 4.1（auth 中介層 + buildApp）完成；4.2–4.7 未開始 |
+| Phase 4 api | ✅ 完成 | 4.1 auth、4.2 靜態音檔、4.3 上傳、4.4 查詢、4.5 重試、4.6 解釋清單、4.7 重新解釋 全部完成（api 28 測試全綠）|
 | Phase 5 worker | 🔴 未開始 | 僅 heartbeat 骨架，無佇列處理 |
 | Phase 6 前端 | 🔴 未開始 | 僅顯示服務名稱的最小頁面 |
 | Phase 7 整合 | 🔴 未開始 | — |
@@ -153,7 +153,7 @@
 
 ---
 
-## Phase 4 — api 服務 🔴 未開始
+## Phase 4 — api 服務 ✅ 完成
 
 ### Task 4.1：Fastify 骨架 + Cloudflare Access 驗證中介層 ✅ 完成
 - [x] **Targets：** `api/src/auth.ts`（`verifyAccessJwt`/`resolveRole`/`buildKeyResolver`/`registerAuth` 全域 preHandler/`requireAdmin` 守衛）、`api/src/app.ts`（`buildApp` 工廠，與 env 分離以利測試）、`api/src/server.ts`（loadConfig + createPool + listen）、健康檢查 `GET /healthz`。新增 `shared/src/repo/users.ts`（`upsertUser`/`getUserByEmail`）與 config `adminEmails`（`ADMIN_EMAILS` allowlist，設計 §9.6）；api 依賴加 `@el/shared`、`jose`、`vitest`
@@ -191,11 +191,11 @@
 - [x] **Produces：** 前端彈窗的「既有解釋清單」
 - [x] **Verify：** `routes/lookups.test.ts` 2 項全綠：兩篇文章各一份解釋，查詢（含大小寫／空白 `%20Habit%20`）以 `WordLookupResponseSchema` 驗證回兩筆、依序、各含 `article {id,title}`；未知單字回 `{ word:null, explanations:[] }`。api `npm test`（25 passed）、`npm run typecheck` 全綠
 
-### Task 4.7：重新解釋 `POST /lookups`
-- [ ] **Targets：** 同檔新增路由：`{ articleId, paragraphId, word }` → 快取查 `(word, article)`；命中即回，未命中由後端呼叫 `explainWord` + 各項 TTS（英文發音若 `words.en_audio_path` 缺則補）→ 寫 `words`/`word_explanations` → 回傳
-- [ ] **Depends on：** 3.2、3.4、2.3、1.2、4.2
-- [ ] **Produces：** 互動式即時解釋與音檔
-- [ ] **Verify：** 整合測試（mock LLM）：首呼產生並寫入 6 個音檔欄位（翻譯／解釋中英／例句中英）+ word `en_audio_path`；二次同 `(word, article)` 命中快取且 **LLM mock 呼叫次數為 0**
+### Task 4.7：重新解釋 `POST /lookups` ✅ 完成
+- [x] **Targets：** `routes/lookups.ts` 新增 POST：Zod 驗證 `{ articleId, paragraphId, word }` → `normalizeWord` + `getOrCreateWord` → `findExplanation(word, article)` 命中即回（不呼叫 LLM）；未命中則 `explainWord(段落脈絡)` + 各項 TTS（word 英文發音若缺則補、5 項解釋音檔並行）→ `writeAudio` 寫 AUDIO_DIR → 交易內 `setWordEnAudioPath` + `createExplanation` → 回傳。依賴以 `LookupDeps` 注入（`buildApp.lookupDeps`），`server.ts` 用 `GeminiExplainClient`/`GeminiTtsClient` + `apiKeyAuthorizer`/`serviceAccountAuthorizer`。新增 `api/src/audio.ts`
+- [x] **Depends on：** 3.2、3.4、2.3、1.2、4.2
+- [x] **Produces：** 互動式即時解釋與音檔
+- [x] **Verify：** `routes/lookups.test.ts` POST 3 項全綠（mock LLM/TTS）：首呼 explain×1、TTS×6（word 發音 + 5 解釋音檔），回傳含 5 音檔路徑且檔案實際寫入磁碟、word `en_audio_path` 寫入、DB 有解釋；二次同 `(word, article)` 命中快取回 200 且 **explain×0、TTS×0**；文章／段落不存在→404、body 非法→400。api `npm test`（28 passed）、`npm run typecheck` 全綠
 
 ---
 

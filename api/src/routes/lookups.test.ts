@@ -1,15 +1,24 @@
 // Task 4.6 整合測試：GET /words/:word/explanations。
-import { describe, it, expect, beforeAll, afterAll, beforeEach } from "vitest";
+import { describe, it, expect, beforeAll, afterAll, beforeEach, vi } from "vitest";
+import { mkdtemp, rm, stat } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import {
   createPool,
   createArticle,
+  createParagraph,
   getOrCreateWord,
   setWordEnAudioPath,
   createExplanation,
+  findExplanation,
+  findWordByNormalized,
   WordLookupResponseSchema,
+  type ExplainClient,
+  type TtsClient,
 } from "@el/shared";
 import { buildApp } from "../app";
 import type { AuthConfig } from "../auth";
+import type { LookupDeps } from "./lookups";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
@@ -82,6 +91,156 @@ describe("GET /words/:word/explanations", () => {
     });
     expect(res.statusCode).toBe(200);
     expect(res.json()).toEqual({ word: null, explanations: [] });
+    await app.close();
+  });
+});
+
+describe("POST /lookups（重新解釋）", () => {
+  let audioDir: string;
+  const content = {
+    en_explanation: "a regular practice",
+    zh_translation: "習慣",
+    zh_explanation: "經常重複的行為",
+    en_example: "Reading is a good habit.",
+    zh_example: "閱讀是個好習慣。",
+  };
+
+  // mock LLM／TTS，計數呼叫次數。
+  let explainSpy: ReturnType<typeof vi.fn>;
+  let synthSpy: ReturnType<typeof vi.fn>;
+  function makeDeps(): LookupDeps {
+    explainSpy = vi.fn(async () => JSON.stringify(content));
+    synthSpy = vi.fn(async () => ({
+      wav: Buffer.from([0x52, 0x49, 0x46, 0x46]),
+      pcm: Buffer.from([1, 2]),
+    }));
+    const explainClient: ExplainClient = { complete: explainSpy };
+    const ttsClient: TtsClient = {
+      synthesize: synthSpy as unknown as TtsClient["synthesize"],
+    };
+    return {
+      explainClient,
+      ttsClient,
+      voiceEn: "VoiceEn",
+      voiceZh: "VoiceZh",
+      audioDir,
+    };
+  }
+
+  async function fileExists(rel: string): Promise<boolean> {
+    try {
+      await stat(join(audioDir, rel));
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  beforeAll(async () => {
+    audioDir = await mkdtemp(join(tmpdir(), "el-lookup-"));
+  });
+  afterAll(async () => {
+    await rm(audioDir, { recursive: true, force: true });
+  });
+
+  async function seedArticleParagraph(): Promise<{
+    articleId: number;
+    paragraphId: number;
+  }> {
+    const article = await createArticle(pool, { title: "Habits" });
+    const p = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "Reading is a good habit.",
+    });
+    return { articleId: article.id, paragraphId: p.id };
+  }
+
+  it("首呼產生 6 個音檔（5 解釋 + word 英文發音）並寫入解釋", async () => {
+    const { articleId, paragraphId } = await seedArticleParagraph();
+    const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
+
+    const res = await app.inject({
+      method: "POST",
+      url: "/lookups",
+      payload: { articleId, paragraphId, word: "Habit " },
+    });
+    expect(res.statusCode).toBe(201);
+    const body = res.json();
+
+    // LLM：解釋 1 次、TTS 6 次（en 發音 + 5 解釋音檔）。
+    expect(explainSpy).toHaveBeenCalledTimes(1);
+    expect(synthSpy).toHaveBeenCalledTimes(6);
+
+    // 回傳解釋含 5 個音檔欄位 + 文字。
+    const e = body.explanation;
+    expect(e.enExplanation).toBe("a regular practice");
+    for (const f of [
+      "enExplanationAudioPath",
+      "enExampleAudioPath",
+      "zhTranslationAudioPath",
+      "zhExplanationAudioPath",
+      "zhExampleAudioPath",
+    ]) {
+      expect(e[f]).toBeTruthy();
+      expect(await fileExists(e[f])).toBe(true);
+    }
+    // word 英文發音
+    expect(body.word.enAudioPath).toBeTruthy();
+    expect(await fileExists(body.word.enAudioPath)).toBe(true);
+
+    // DB 已寫入
+    const word = await findWordByNormalized(pool, "habit");
+    expect(word?.enAudioPath).toBe(body.word.enAudioPath);
+    expect(await findExplanation(pool, word!.id, articleId)).not.toBeNull();
+
+    await app.close();
+  });
+
+  it("二次同 (word, article) 命中快取，LLM/TTS 呼叫次數為 0", async () => {
+    const { articleId, paragraphId } = await seedArticleParagraph();
+    const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
+
+    await app.inject({
+      method: "POST",
+      url: "/lookups",
+      payload: { articleId, paragraphId, word: "habit" },
+    });
+    explainSpy.mockClear();
+    synthSpy.mockClear();
+
+    const res2 = await app.inject({
+      method: "POST",
+      url: "/lookups",
+      payload: { articleId, paragraphId, word: "habit" },
+    });
+    expect(res2.statusCode).toBe(200);
+    expect(explainSpy).toHaveBeenCalledTimes(0);
+    expect(synthSpy).toHaveBeenCalledTimes(0);
+    expect(res2.json().explanation.zhTranslation).toBe("習慣");
+    await app.close();
+  });
+
+  it("文章或段落不存在 → 404；body 非法 → 400", async () => {
+    const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
+    expect(
+      (
+        await app.inject({
+          method: "POST",
+          url: "/lookups",
+          payload: { articleId: 999, paragraphId: 999, word: "x" },
+        })
+      ).statusCode,
+    ).toBe(404);
+    expect(
+      (
+        await app.inject({
+          method: "POST",
+          url: "/lookups",
+          payload: { articleId: 1, word: "" },
+        })
+      ).statusCode,
+    ).toBe(400);
     await app.close();
   });
 });

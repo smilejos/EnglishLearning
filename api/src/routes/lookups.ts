@@ -1,13 +1,38 @@
-// 單字查詢路由。GET 既有解釋清單；POST 重新解釋（Task 4.7）。
+// 單字查詢路由。GET 既有解釋清單；POST 重新解釋（即時、互動式）。
 import type { FastifyInstance } from "fastify";
 import {
   normalizeWord,
   findWordByNormalized,
   listExplanationsByWord,
+  getOrCreateWord,
+  setWordEnAudioPath,
+  findExplanation,
+  createExplanation,
+  getParagraphById,
+  getArticleById,
+  withTransaction,
+  explainWord,
+  WordLookupRequestSchema,
   type DbPool,
+  type ExplainClient,
+  type TtsClient,
 } from "@el/shared";
+import { writeAudio } from "../audio";
 
-export function registerLookupRoutes(app: FastifyInstance, pool: DbPool): void {
+/** 重新解釋所需的 LLM／TTS 依賴與音檔設定（注入以利測試 mock）。 */
+export interface LookupDeps {
+  explainClient: ExplainClient;
+  ttsClient: TtsClient;
+  voiceEn: string;
+  voiceZh: string;
+  audioDir: string;
+}
+
+export function registerLookupRoutes(
+  app: FastifyInstance,
+  pool: DbPool,
+  deps?: LookupDeps,
+): void {
   // 某單字的所有既有解釋（含各自來源文章，依 created_at 排序）。
   app.get("/words/:word/explanations", async (request) => {
     const normalized = normalizeWord((request.params as { word: string }).word);
@@ -15,5 +40,102 @@ export function registerLookupRoutes(app: FastifyInstance, pool: DbPool): void {
     if (!word) return { word: null, explanations: [] };
     const explanations = await listExplanationsByWord(pool, word.id);
     return { word, explanations };
+  });
+
+  // 重新解釋：{ articleId, paragraphId, word } → 快取命中即回；未命中則
+  // 呼叫 LLM 產生解釋與例句、各項 TTS（含 word 英文發音若缺），寫入後回傳。
+  if (!deps) return;
+
+  app.post("/lookups", async (request, reply) => {
+    const parsed = WordLookupRequestSchema.safeParse(request.body);
+    if (!parsed.success) {
+      return reply
+        .code(400)
+        .send({ error: "invalid body", details: parsed.error.flatten() });
+    }
+    const { articleId, paragraphId, word: rawWord } = parsed.data;
+
+    const article = await getArticleById(pool, articleId);
+    if (!article) return reply.code(404).send({ error: "article not found" });
+    const paragraph = await getParagraphById(pool, paragraphId);
+    if (!paragraph) {
+      return reply.code(404).send({ error: "paragraph not found" });
+    }
+
+    const normalized = normalizeWord(rawWord);
+    const word = await getOrCreateWord(pool, normalized);
+
+    // 快取命中：直接回該文章既有解釋（不呼叫任何 LLM）。
+    const cached = await findExplanation(pool, word.id, articleId);
+    if (cached) {
+      return {
+        word,
+        explanation: { ...cached, article: { id: article.id, title: article.title } },
+      };
+    }
+
+    // 未命中：產生解釋文字。
+    const content = await explainWord(
+      normalized,
+      paragraph.text,
+      deps.explainClient,
+    );
+
+    // word 英文發音（跨解釋共用，缺則補）。
+    let enAudioPath = word.enAudioPath;
+    if (!enAudioPath) {
+      const { wav } = await deps.ttsClient.synthesize(normalized, deps.voiceEn);
+      enAudioPath = await writeAudio(
+        deps.audioDir,
+        `words/${word.id}/en.wav`,
+        wav,
+      );
+    }
+
+    // 解釋／例句各項 TTS（英文用 voiceEn、中文用 voiceZh）。
+    const base = `words/${word.id}/a${articleId}`;
+    const synth = async (text: string, voice: string, name: string) => {
+      const { wav } = await deps.ttsClient.synthesize(text, voice);
+      return writeAudio(deps.audioDir, `${base}/${name}.wav`, wav);
+    };
+    const [
+      enExplanationAudioPath,
+      enExampleAudioPath,
+      zhTranslationAudioPath,
+      zhExplanationAudioPath,
+      zhExampleAudioPath,
+    ] = await Promise.all([
+      synth(content.en_explanation, deps.voiceEn, "en_explanation"),
+      synth(content.en_example, deps.voiceEn, "en_example"),
+      synth(content.zh_translation, deps.voiceZh, "zh_translation"),
+      synth(content.zh_explanation, deps.voiceZh, "zh_explanation"),
+      synth(content.zh_example, deps.voiceZh, "zh_example"),
+    ]);
+
+    const explanation = await withTransaction(pool, async (tx) => {
+      if (!word.enAudioPath && enAudioPath) {
+        await setWordEnAudioPath(tx, word.id, enAudioPath);
+      }
+      return createExplanation(tx, {
+        wordId: word.id,
+        articleId,
+        paragraphId,
+        enExplanation: content.en_explanation,
+        enExplanationAudioPath,
+        enExample: content.en_example,
+        enExampleAudioPath,
+        zhTranslation: content.zh_translation,
+        zhTranslationAudioPath,
+        zhExplanation: content.zh_explanation,
+        zhExplanationAudioPath,
+        zhExample: content.zh_example,
+        zhExampleAudioPath,
+      });
+    });
+
+    return reply.code(201).send({
+      word: { ...word, enAudioPath },
+      explanation: { ...explanation, article: { id: article.id, title: article.title } },
+    });
   });
 }

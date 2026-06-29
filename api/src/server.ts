@@ -1,14 +1,36 @@
-// api 進入點：載入環境設定、建立 DB pool 與 app，開始監聽。
-import { loadConfig, createPool } from "@el/shared";
+// api 進入點：載入環境設定、建立 DB pool、LLM/TTS client 與 app，開始監聽。
+import {
+  loadConfig,
+  createPool,
+  apiKeyAuthorizer,
+  serviceAccountAuthorizer,
+  GeminiExplainClient,
+  GeminiTtsClient,
+} from "@el/shared";
 import { buildApp } from "./app";
 
 const config = loadConfig();
 const pool = createPool(config.databaseUrl);
 
+// LLM 授權：優先用 API key，否則用 service account（兩者擇一已於 config 驗證）。
+const auth = config.gemini.apiKey
+  ? apiKeyAuthorizer(config.gemini.apiKey)
+  : serviceAccountAuthorizer();
+
 const app = buildApp({
   config,
   pool,
   audioDir: config.audioDir,
+  lookupDeps: {
+    explainClient: new GeminiExplainClient({
+      auth,
+      model: config.gemini.explainModel,
+    }),
+    ttsClient: new GeminiTtsClient({ auth, model: config.gemini.ttsModel }),
+    voiceEn: config.gemini.voiceEn,
+    voiceZh: config.gemini.voiceZh,
+    audioDir: config.audioDir,
+  },
   logger: true,
 });
 

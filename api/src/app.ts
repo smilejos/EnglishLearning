@@ -5,13 +5,15 @@ import type { DbPool } from "@el/shared";
 import { registerAuth, type AuthConfig, type KeyInput } from "./auth";
 import { registerStatic } from "./static";
 import { registerArticleRoutes } from "./routes/articles";
-import { registerLookupRoutes } from "./routes/lookups";
+import { registerLookupRoutes, type LookupDeps } from "./routes/lookups";
 
 export interface BuildAppOpts {
   config: AuthConfig;
   pool: DbPool;
   /** 靜態音檔來源目錄（AUDIO_DIR）；提供時掛載 /audio/*。 */
   audioDir?: string;
+  /** 重新解釋（POST /lookups）的 LLM／TTS 依賴；未提供時不掛載該路由。 */
+  lookupDeps?: LookupDeps;
   getKey?: KeyInput;
   logger?: boolean;
 }
@@ -36,7 +38,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
 
   // 業務路由。
   registerArticleRoutes(app, opts.pool);
-  registerLookupRoutes(app, opts.pool);
+  registerLookupRoutes(app, opts.pool, opts.lookupDeps);
 
   return app;
 }
