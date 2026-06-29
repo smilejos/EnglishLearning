@@ -1,0 +1,17 @@
+{
+  "name": "english-learning",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "shared",
+    "api",
+    "worker",
+    "web-admin",
+    "web-learner"
+  ],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  }
+}
