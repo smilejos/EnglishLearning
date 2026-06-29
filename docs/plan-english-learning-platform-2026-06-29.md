@@ -185,11 +185,11 @@
 - [x] **Produces：** 失敗可重新處理
 - [x] **Verify：** `routes/articles.test.ts` 新增 3 項全綠：admin 重試→200、reset `{paragraphs:1,jobs:1}`、段落與 job 轉 pending、文章轉 processing；reader→403 且狀態不變；不存在→404。api `npm test`（23 passed）、`npm run typecheck` 全綠
 
-### Task 4.6：單字解釋查詢 `GET /words/:word/explanations`
-- [ ] **Targets：** `api/src/routes/lookups.ts`（用 `normalizeWord`，回該單字所有解釋＋各自來源文章，依 `created_at` 排序）
-- [ ] **Depends on：** 2.3、1.2
-- [ ] **Produces：** 前端彈窗的「既有解釋清單」
-- [ ] **Verify：** 整合測試：建兩篇文章各一份解釋，查詢回兩筆且含 article 連結資訊
+### Task 4.6：單字解釋查詢 `GET /words/:word/explanations` ✅ 完成
+- [x] **Targets：** `api/src/routes/lookups.ts`（`normalizeWord` 正規化、`findWordByNormalized` + `listExplanationsByWord`，回 `{ word, explanations }`，各解釋含來源文章、依 created_at 排序）
+- [x] **Depends on：** 2.3、1.2
+- [x] **Produces：** 前端彈窗的「既有解釋清單」
+- [x] **Verify：** `routes/lookups.test.ts` 2 項全綠：兩篇文章各一份解釋，查詢（含大小寫／空白 `%20Habit%20`）以 `WordLookupResponseSchema` 驗證回兩筆、依序、各含 `article {id,title}`；未知單字回 `{ word:null, explanations:[] }`。api `npm test`（25 passed）、`npm run typecheck` 全綠
 
 ### Task 4.7：重新解釋 `POST /lookups`
 - [ ] **Targets：** 同檔新增路由：`{ articleId, paragraphId, word }` → 快取查 `(word, article)`；命中即回，未命中由後端呼叫 `explainWord` + 各項 TTS（英文發音若 `words.en_audio_path` 缺則補）→ 寫 `words`/`word_explanations` → 回傳

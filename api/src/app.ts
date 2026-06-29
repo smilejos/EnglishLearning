@@ -5,6 +5,7 @@ import type { DbPool } from "@el/shared";
 import { registerAuth, type AuthConfig, type KeyInput } from "./auth";
 import { registerStatic } from "./static";
 import { registerArticleRoutes } from "./routes/articles";
+import { registerLookupRoutes } from "./routes/lookups";
 
 export interface BuildAppOpts {
   config: AuthConfig;
@@ -35,6 +36,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
 
   // 業務路由。
   registerArticleRoutes(app, opts.pool);
+  registerLookupRoutes(app, opts.pool);
 
   return app;
 }
