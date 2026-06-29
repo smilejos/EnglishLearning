@@ -2,9 +2,7 @@
   "permissions": {
     "allow": [
       "Read",
-      "Bash(git status)",
-      "Bash(git commit:*)",
-      "Bash(npm run test:*)",
+      "Bash(git:*)",
       "Bash(npm:*)",
       "Bash(docker:*)",
       "Bash(curl:*)"
