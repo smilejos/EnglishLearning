@@ -1,7 +1,5 @@
 // @el/shared — 共用契約與工具。
-// schemas、db pool、repositories 於 Phase 1+ 陸續加入。
-
-export type Status = "pending" | "processing" | "done" | "failed";
+// db pool、repositories 於 Phase 2+ 陸續加入。
 
 export { loadConfig } from "./config";
 export type {
@@ -9,3 +7,28 @@ export type {
   GeminiConfig,
   CfAccessConfig,
 } from "./config";
+
+export {
+  StatusSchema,
+  MaterialTypeSchema,
+  UserRoleSchema,
+  ArticleSchema,
+  ParagraphSchema,
+  WordSchema,
+  WordExplanationSchema,
+  WordExplanationWithSourceSchema,
+  WordLookupRequestSchema,
+  WordLookupResponseSchema,
+} from "./schemas";
+export type {
+  Status,
+  MaterialType,
+  UserRole,
+  Article,
+  Paragraph,
+  Word,
+  WordExplanation,
+  WordExplanationWithSource,
+  WordLookupRequest,
+  WordLookupResponse,
+} from "./schemas";

@@ -10,7 +10,7 @@
 | Phase | 狀態 | 說明 |
 | --- | --- | --- |
 | Phase 0 基礎設施 | ✅ 完成 | 0.1–0.5 全部完成；config 載入器 + 測試、各服務 healthcheck 皆就位；`docker compose build` / `up` 實機全綠 |
-| Phase 1 shared | 🔴 未開始 | 無 `schemas.ts`、`normalizeWord.ts` |
+| Phase 1 shared | 🟡 進行中 | Task 1.1 完成（`schemas.ts` + 22 項測試）；Task 1.2 `normalizeWord.ts` 未開始 |
 | Phase 2 資料庫 | 🔴 未開始 | 無 `db.ts`、migrations、repo |
 | Phase 3 LLM | 🔴 未開始 | 無 `shared/src/llm/*` |
 | Phase 4 api | 🔴 未開始 | 僅 `/healthz` 骨架，無 auth、路由 |
@@ -89,11 +89,11 @@
 
 ## Phase 1 — shared（資料契約）🔴 未開始
 
-### Task 1.1：型別、Zod schema 與列舉
-- [ ] **Targets：** `shared/src/schemas.ts`（`Status` 列舉、`Article`、`Paragraph`、`WordExplanation`、`WordLookupRequest/Response` DTO）、`shared/src/index.ts`
-- [ ] **Depends on：** 0.1
-- [ ] **Produces：** 前後端共用的型別與驗證 schema
-- [ ] **Verify：** Vitest：合法／非法物件的 parse 結果符合預期
+### Task 1.1：型別、Zod schema 與列舉 ✅ 完成
+- [x] **Targets：** `shared/src/schemas.ts`（`Status`/`MaterialType`/`UserRole` 列舉、`Article`、`Paragraph`、`Word`、`WordExplanation`、`WordExplanationWithSource`、`WordLookupRequest/Response` DTO）、`shared/src/index.ts`（重新匯出；`Status` 改由 schemas 推導）
+- [x] **Depends on：** 0.1
+- [x] **Produces：** 前後端共用的型別與驗證 schema（DTO 採 camelCase，對應設計 §4 snake_case 欄位；`word_explanations` 10 欄一一對應）
+- [x] **Verify：** Vitest `shared/src/schemas.test.ts` 22 項全綠：各列舉接受合法值／拒絕未知值；Article/Paragraph 可空欄位為 null、缺必填欄位被拒；WordExplanation 含全部 10 內容欄位；WordLookupRequest 拒絕空字串單字與缺 articleId；WordLookupResponse 解析含來源文章的多份解釋與空清單。全 workspace `npm test`（32 passed）、`npm run typecheck` 全綠
 
 ### Task 1.2：`normalizeWord` 工具
 - [ ] **Targets：** `shared/src/normalizeWord.ts` + 測試
