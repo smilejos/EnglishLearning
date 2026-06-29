@@ -3,7 +3,8 @@
 
 export { normalizeWord } from "./normalizeWord";
 
-export { createPool, ping } from "./db";
+export { createPool, ping, withTransaction } from "./db";
+export type { DbPool } from "./db";
 
 export * from "./repo";
 

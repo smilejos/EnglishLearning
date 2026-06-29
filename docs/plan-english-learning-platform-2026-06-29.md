@@ -167,11 +167,11 @@
 - [x] **Produces：** 可由前端播放的音檔 URL（`/audio/...`，auth 中介層已放行）
 - [x] **Verify：** `api/src/static.test.ts` 3 項全綠：寫檔至臨時 `AUDIO_DIR` 後 `GET /audio/articles/1/p0.en.wav` 回 200 且 bytes 一致；不存在回 404；多種 `../`／URL-encoded 穿越皆非 200。api `npm test`（10 passed）、`npm run typecheck` 全綠
 
-### Task 4.3：上傳文章 `POST /articles`（admin only）
-- [ ] **Targets：** `api/src/routes/articles.ts`（切段落、寫 `articles`+`paragraphs(pending)`+每段一筆 `jobs`、回 202 + id）
-- [ ] **Depends on：** 4.1、2.3；段落切分沿用參考 `markdown.ts` 規則
-- [ ] **Produces：** 文章與待處理 jobs
-- [ ] **Verify：** 整合測試：admin 上傳 → article/paragraphs/jobs 列數正確、status=pending；reader 角色 → 403
+### Task 4.3：上傳文章 `POST /articles`（admin only）✅ 完成
+- [x] **Targets：** `api/src/routes/articles.ts`（Zod 驗證 body、`splitParagraphs` 切段落、於 `withTransaction` 內寫 `articles`+`paragraphs(pending)`+每段一筆 `jobs`、回 202 + id）；`api/src/articleText.ts`（段落切分，沿用 `markdown.ts` 空白行規則）+ 測試；shared 新增 `withTransaction`／`DbPool`
+- [x] **Depends on：** 4.1、2.3
+- [x] **Produces：** 文章與待處理 jobs（皆 pending）
+- [x] **Verify：** `api/src/routes/articles.test.ts` 3 項 + `articleText.test.ts` 4 項全綠：admin 上傳 2 段 → 202+id、article status=pending、2 paragraphs（pending、文字／idx 正確）、2 jobs；reader→403 且未建立文章；缺 text／空白內容→400。api `npm test`（17 passed）、全 workspace `npm run typecheck` 全綠
 
 ### Task 4.4：文章查詢 `GET /articles`、`GET /articles/:id`
 - [ ] **Targets：** 同檔新增兩路由（清單 + 含段落與狀態的詳情）

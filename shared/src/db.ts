@@ -3,7 +3,10 @@
 // 不在模組層持有全域單例，便於測試與明確的生命週期管理。
 
 import { Pool } from "pg";
-import type { PoolConfig } from "pg";
+import type { PoolConfig, PoolClient } from "pg";
+
+/** pg Pool 的對外型別別名，讓服務不必直接 import pg。 */
+export type DbPool = Pool;
 
 /**
  * 以連線字串建立 Pool。
@@ -21,4 +24,26 @@ export function createPool(
 export async function ping(pool: Pool): Promise<boolean> {
   const result = await pool.query<{ ok: number }>("SELECT 1 AS ok");
   return result.rows[0]?.ok === 1;
+}
+
+/**
+ * 在單一交易中執行 fn：BEGIN → fn(client) → COMMIT；
+ * 拋錯則 ROLLBACK 後重拋。client 滿足 Queryable，可直接傳給 repo 函式。
+ */
+export async function withTransaction<T>(
+  pool: Pool,
+  fn: (tx: PoolClient) => Promise<T>,
+): Promise<T> {
+  const client = await pool.connect();
+  try {
+    await client.query("BEGIN");
+    const result = await fn(client);
+    await client.query("COMMIT");
+    return result;
+  } catch (err) {
+    await client.query("ROLLBACK").catch(() => {});
+    throw err;
+  } finally {
+    client.release();
+  }
 }
