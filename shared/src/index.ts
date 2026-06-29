@@ -1,6 +1,8 @@
 // @el/shared — 共用契約與工具。
 // db pool、repositories 於 Phase 2+ 陸續加入。
 
+export { normalizeWord } from "./normalizeWord";
+
 export { loadConfig } from "./config";
 export type {
   Config,
