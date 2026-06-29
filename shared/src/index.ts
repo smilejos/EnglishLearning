@@ -7,6 +7,21 @@ export { createPool, ping } from "./db";
 
 export * from "./repo";
 
+export { generateContent, firstText } from "./llm/genai";
+export type {
+  GenRequest,
+  GenResponse,
+  GenPart,
+  GenCandidate,
+} from "./llm/genai";
+export {
+  apiKeyAuthorizer,
+  serviceAccountAuthorizer,
+} from "./llm/auth";
+export type { Authorizer } from "./llm/auth";
+export { pcmToWav, pcmDurationSec, TTS_FORMAT } from "./llm/wav";
+export type { WavFormat } from "./llm/wav";
+
 export { loadConfig } from "./config";
 export type {
   Config,

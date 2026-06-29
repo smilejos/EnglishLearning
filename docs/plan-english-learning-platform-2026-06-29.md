@@ -12,7 +12,7 @@
 | Phase 0 基礎設施 | ✅ 完成 | 0.1–0.5 全部完成；config 載入器 + 測試、各服務 healthcheck 皆就位；`docker compose build` / `up` 實機全綠 |
 | Phase 1 shared | ✅ 完成 | Task 1.1（`schemas.ts`）+ 1.2（`normalizeWord.ts`）完成；共 36 項測試全綠 |
 | Phase 2 資料庫 | ✅ 完成 | 2.1（`db.ts`）、2.2（migration）、2.3（repo + 8 整合測試）全部完成並通過實機驗證 |
-| Phase 3 LLM | 🔴 未開始 | 無 `shared/src/llm/*` |
+| Phase 3 LLM | 🟡 進行中 | Task 3.1（genai/wav/auth 移植 + 測試）完成；3.2–3.4 未開始 |
 | Phase 4 api | 🔴 未開始 | 僅 `/healthz` 骨架，無 auth、路由 |
 | Phase 5 worker | 🔴 未開始 | 僅 heartbeat 骨架，無佇列處理 |
 | Phase 6 前端 | 🔴 未開始 | 僅顯示服務名稱的最小頁面 |
@@ -127,11 +127,11 @@
 
 ## Phase 3 — LLM 服務（移植並擴充 article2speech）🔴 未開始
 
-### Task 3.1：移植底層 genai / wav / auth
-- [ ] **Targets：** `shared/src/llm/genai.ts`、`wav.ts`、`auth.ts`（自 `article2speech/builder/src` 移植）+ 既有測試
-- [ ] **Depends on：** 0.2
-- [ ] **Produces：** `generateContent`、`firstText`、`pcmToWav`、`Authorizer`（移植來源測試一併帶入）
-- [ ] **Verify：** 移植的單元測試（mock fetch）全綠
+### Task 3.1：移植底層 genai / wav / auth ✅ 完成
+- [x] **Targets：** `shared/src/llm/genai.ts`、`wav.ts`、`auth.ts`（自 `article2speech/builder/src` 移植，內容不變、僅 doc 註解轉繁中）+ 測試（移植 `wav.test.ts`；新增 `genai.test.ts` mock fetch、`auth.test.ts`）。安裝 `google-auth-library`
+- [x] **Depends on：** 0.2
+- [x] **Produces：** `generateContent`、`firstText`、`pcmToWav`／`pcmDurationSec`／`TTS_FORMAT`、`apiKeyAuthorizer`／`serviceAccountAuthorizer`／`Authorizer`，皆由 `index.ts` 匯出
+- [x] **Verify：** `llm/*.test.ts` 全綠：wav 標頭欄位正確；generateContent 以正確 endpoint／`x-goog-api-key`／JSON body 發請求並解析、非 2xx 拋含狀態碼錯誤；firstText 取首段文字／空輸入回空字串；apiKeyAuthorizer 標頭正確。全 workspace `npm test`（53 passed）、`npm run typecheck` 全綠
 
 ### Task 3.2：TTS client（中英雙 voice）
 - [ ] **Targets：** `shared/src/llm/tts.ts`（自參考移植，支援以參數選 voice）+ 測試
