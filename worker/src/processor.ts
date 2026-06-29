@@ -9,6 +9,7 @@ import {
   markArticleProcessingIfPending,
   markJobDone,
   markJobFailed,
+  requeueJob,
   countParagraphsByStatus,
   withTransaction,
   translateParagraph,
@@ -44,6 +45,10 @@ export interface WorkerDeps {
   voiceEn: string;
   voiceZh: string;
   audioDir: string;
+  /** 達此嘗試次數仍失敗才標 failed；未達則自動退回 pending 重試。 */
+  maxAttempts: number;
+  /** processing 超過此毫秒數視為崩潰並回收（visibility timeout）。 */
+  staleMs: number;
 }
 
 /**
@@ -51,7 +56,7 @@ export interface WorkerDeps {
  * @returns 有處理（成功或失敗）回 true；佇列為空回 false。
  */
 export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
-  const job = await claimNextJob(deps.pool);
+  const job = await claimNextJob(deps.pool, deps.staleMs);
   if (!job) return false;
 
   try {
@@ -94,10 +99,16 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
     return true;
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
-    // 失敗路徑同樣交易化：job failed + 段落 failed + 重算文章狀態。
+    const terminal = job.attempts >= deps.maxAttempts;
+    // 失敗路徑交易化。未達上限 → 退回 pending 自動重試；達上限 → 終態 failed。
     await withTransaction(deps.pool, async (tx) => {
-      await markJobFailed(tx, job.id, message);
-      await setParagraphStatus(tx, job.paragraphId, "failed");
+      if (terminal) {
+        await markJobFailed(tx, job.id, message);
+        await setParagraphStatus(tx, job.paragraphId, "failed");
+      } else {
+        await requeueJob(tx, job.id, message);
+        await setParagraphStatus(tx, job.paragraphId, "pending");
+      }
       await recomputeArticleStatus(tx, job.articleId);
     });
     return true;

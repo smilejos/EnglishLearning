@@ -178,12 +178,13 @@ describe("claimNextJob", () => {
     const claimed = await claimNextJob(pool);
     expect(claimed?.id).toBe(job.id);
     expect(claimed?.status).toBe("processing");
+    expect(claimed?.attempts).toBe(1); // 認領即計一次嘗試
 
     // 已無 pending
     expect(await claimNextJob(pool)).toBeNull();
   });
 
-  it("markJobFailed 增加 attempts、記錄錯誤；resetFailedJobsByArticle 重設回 pending", async () => {
+  it("markJobFailed 記錄錯誤轉 failed；resetFailedJobsByArticle 重設回 pending 並歸零 attempts", async () => {
     const article = await createArticle(pool, { title: "A" });
     const p = await createParagraph(pool, {
       articleId: article.id,
@@ -191,14 +192,40 @@ describe("claimNextJob", () => {
       text: "t",
     });
     const job = await createJob(pool, article.id, p.id);
+
+    // 認領一次（attempts→1）後標終態失敗。
+    await claimNextJob(pool);
     await markJobFailed(pool, job.id, "boom");
 
     const reset = await resetFailedJobsByArticle(pool, article.id);
     expect(reset).toBe(1);
 
+    // 手動重設後 attempts 歸零；再認領 attempts→1。
     const claimed = await claimNextJob(pool);
     expect(claimed?.id).toBe(job.id);
-    expect(claimed?.attempts).toBe(1); // attempts 在重設後仍保留
+    expect(claimed?.attempts).toBe(1);
+  });
+
+  it("回收 stuck job：processing 超過 staleMs 者重新認領，新鮮者不動", async () => {
+    const article = await createArticle(pool, { title: "Stuck" });
+    const p = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "t",
+    });
+    const job = await createJob(pool, article.id, p.id);
+    await pool.query(
+      `UPDATE jobs SET status='processing', updated_at = now() - interval '10 minutes' WHERE id=$1`,
+      [job.id],
+    );
+
+    // staleMs=5 分鐘：10 分鐘前的 processing 視為崩潰，重新認領（attempts++ → 1）。
+    const reclaimed = await claimNextJob(pool, 5 * 60 * 1000);
+    expect(reclaimed?.id).toBe(job.id);
+    expect(reclaimed?.attempts).toBe(1);
+
+    // 此時 job 剛被更新（新鮮 processing），不會再被回收。
+    expect(await claimNextJob(pool, 5 * 60 * 1000)).toBeNull();
   });
 });
 

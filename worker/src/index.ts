@@ -12,6 +12,8 @@ import {
 import { drainQueue, type WorkerDeps } from "./processor";
 
 const POLL_MS = Number(process.env.WORKER_POLL_MS ?? 3000);
+const MAX_ATTEMPTS = Number(process.env.WORKER_MAX_ATTEMPTS ?? 3);
+const STALE_MS = Number(process.env.WORKER_STALE_MS ?? 5 * 60 * 1000);
 const HEARTBEAT_FILE =
   process.env.WORKER_HEARTBEAT_FILE ?? "/tmp/worker-heartbeat";
 
@@ -32,6 +34,8 @@ const deps: WorkerDeps = {
   voiceEn: config.gemini.voiceEn,
   voiceZh: config.gemini.voiceZh,
   audioDir: config.audioDir,
+  maxAttempts: MAX_ATTEMPTS,
+  staleMs: STALE_MS,
 };
 
 async function touchHeartbeat(): Promise<void> {
