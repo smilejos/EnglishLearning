@@ -40,6 +40,18 @@ export function deleteArticle(id: number): Promise<{ ok: boolean }> {
   return req(`/articles/${id}`, { method: "DELETE" });
 }
 
+export interface Stats {
+  articles: Record<string, number>;
+  paragraphs: Record<string, number>;
+  jobs: Record<string, number>;
+  words: number;
+  explanations: number;
+}
+
+export function getStats(): Promise<Stats> {
+  return req("/stats");
+}
+
 /** 音檔 URL（同源 /audio/ 靜態服務）。 */
 export function audioUrl(relPath: string): string {
   return `${BASE}/audio/${relPath}`;

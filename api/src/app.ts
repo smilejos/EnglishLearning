@@ -6,6 +6,7 @@ import { registerAuth, type AuthConfig, type KeyInput } from "./auth";
 import { registerStatic } from "./static";
 import { registerArticleRoutes } from "./routes/articles";
 import { registerLookupRoutes, type LookupDeps } from "./routes/lookups";
+import { registerStatsRoutes } from "./routes/stats";
 
 export interface BuildAppOpts {
   config: AuthConfig;
@@ -47,6 +48,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   // 業務路由。
   registerArticleRoutes(app, opts.pool, opts.audioDir);
   registerLookupRoutes(app, opts.pool, opts.lookupDeps);
+  registerStatsRoutes(app, opts.pool);
 
   return app;
 }

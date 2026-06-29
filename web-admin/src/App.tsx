@@ -178,6 +178,30 @@ function ArticleDetail({
   );
 }
 
+function StatsBar() {
+  const [stats, setStats] = useState<api.Stats | null>(null);
+  useEffect(() => {
+    const load = () =>
+      api
+        .getStats()
+        .then(setStats)
+        .catch(() => setStats(null));
+    void load();
+    const t = setInterval(load, 5000);
+    return () => clearInterval(t);
+  }, []);
+  if (!stats) return null;
+  const j = stats.jobs;
+  return (
+    <p style={{ color: "#555", fontSize: 13 }}>
+      文章 {Object.values(stats.articles).reduce((a, b) => a + b, 0)}｜jobs
+      pending {j.pending ?? 0} / processing {j.processing ?? 0} / done{" "}
+      {j.done ?? 0} / failed {j.failed ?? 0}｜單字 {stats.words}／解釋{" "}
+      {stats.explanations}
+    </p>
+  );
+}
+
 function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
   const [articles, setArticles] = useState<Article[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -210,6 +234,7 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
     <div>
       <UploadForm onCreated={load} />
       <h2>文章清單</h2>
+      <StatsBar />
       {error && <p style={{ color: "#dc2626" }}>{error}</p>}
       <table style={{ borderCollapse: "collapse", width: "100%" }}>
         <thead>

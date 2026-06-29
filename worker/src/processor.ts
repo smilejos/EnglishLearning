@@ -55,9 +55,15 @@ export interface WorkerDeps {
  * 認領並處理下一個 pending job。
  * @returns 有處理（成功或失敗）回 true；佇列為空回 false。
  */
+/** 結構化計時日誌（單行 JSON，便於聚合）。 */
+function logJob(fields: Record<string, unknown>): void {
+  console.log(JSON.stringify({ evt: "job", ...fields }));
+}
+
 export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
   const job = await claimNextJob(deps.pool, deps.staleMs);
   if (!job) return false;
+  const startedAt = Date.now();
 
   try {
     const paragraph = await getParagraphById(deps.pool, job.paragraphId);
@@ -96,6 +102,14 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
       await markJobDone(tx, job.id);
       await recomputeArticleStatus(tx, job.articleId);
     });
+    logJob({
+      jobId: job.id,
+      articleId: job.articleId,
+      paragraphId: job.paragraphId,
+      attempt: job.attempts,
+      outcome: "done",
+      ms: Date.now() - startedAt,
+    });
     return true;
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
@@ -110,6 +124,15 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
         await setParagraphStatus(tx, job.paragraphId, "pending");
       }
       await recomputeArticleStatus(tx, job.articleId);
+    });
+    logJob({
+      jobId: job.id,
+      articleId: job.articleId,
+      paragraphId: job.paragraphId,
+      attempt: job.attempts,
+      outcome: terminal ? "failed" : "retry",
+      ms: Date.now() - startedAt,
+      error: message,
     });
     return true;
   }

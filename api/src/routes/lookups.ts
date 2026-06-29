@@ -62,12 +62,20 @@ export function registerLookupRoutes(
       return reply.code(404).send({ error: "paragraph not found" });
     }
 
+    const startedAt = Date.now();
     const normalized = normalizeWord(rawWord);
     const word = await getOrCreateWord(pool, normalized);
 
     // 快取命中：直接回該文章既有解釋（不呼叫任何 LLM）。
     const cached = await findExplanation(pool, word.id, articleId);
     if (cached) {
+      request.log.info({
+        evt: "lookup",
+        word: normalized,
+        articleId,
+        cache: true,
+        ms: Date.now() - startedAt,
+      });
       return {
         word,
         explanation: { ...cached, article: { id: article.id, title: article.title } },
@@ -152,6 +160,13 @@ export function registerLookupRoutes(
       throw err;
     }
 
+    request.log.info({
+      evt: "lookup",
+      word: normalized,
+      articleId,
+      cache: false,
+      ms: Date.now() - startedAt,
+    });
     return reply.code(201).send({
       word: { ...word, enAudioPath },
       explanation: { ...explanation, article: { id: article.id, title: article.title } },
