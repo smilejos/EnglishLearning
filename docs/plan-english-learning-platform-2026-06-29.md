@@ -139,11 +139,11 @@
 - [x] **Produces：** `GeminiTtsClient.synthesize(text, voice)` → `{ wav, pcm }`（wav buffer），由 `index.ts` 匯出
 - [x] **Verify：** `llm/tts.test.ts` 7 項全綠：以 Puck／Kore 呼叫時 request 的 `prebuiltVoiceConfig.voiceName` 對應正確、回傳 wav 帶 RIFF/WAVE 標頭；無音訊資料拋錯；withRetry 重試／用盡拋錯／配額快速失敗；isQuotaError 判別。全 workspace `npm test`（60 passed）、`npm run typecheck` 全綠
 
-### Task 3.3：段落翻譯 client
-- [ ] **Targets：** `shared/src/llm/translate.ts`（移植）+ 測試
-- [ ] **Depends on：** 3.1
-- [ ] **Produces：** `translateParagraph(text)` → 繁中字串
-- [ ] **Verify：** 測試（mock）：回傳繁中、長度／格式驗證
+### Task 3.3：段落翻譯 client ✅ 完成
+- [x] **Targets：** `shared/src/llm/translate.ts`（移植 `generateTranslations`／`GeminiTranslateClient`，新增單段 `translateParagraph`）+ 測試；`shared/src/llm/json.ts`（`stripFences`，自 vocab 抽出供翻譯與解釋共用）
+- [x] **Depends on：** 3.1
+- [x] **Produces：** `translateParagraph(text, client)` → 繁中字串；`generateTranslations` 批次；皆由 `index.ts` 匯出
+- [x] **Verify：** `llm/translate.test.ts` 6 項全綠（mock client）：回傳同序對齊翻譯、去除程式碼圍欄、長度不符重試後成功、用盡重試拋錯、無段落不呼叫 client、單段 `translateParagraph` 回繁中字串。全 workspace `npm test`（66 passed）、`npm run typecheck` 全綠
 
 ### Task 3.4：單字解釋產生器（新增）
 - [ ] **Targets：** `shared/src/llm/explainWord.ts` + 測試

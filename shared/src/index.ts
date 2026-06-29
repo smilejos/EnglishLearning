@@ -32,6 +32,17 @@ export type {
   GeminiTtsOptions,
   RetryOpts,
 } from "./llm/tts";
+export {
+  GeminiTranslateClient,
+  generateTranslations,
+  translateParagraph,
+} from "./llm/translate";
+export type {
+  TranslateClient,
+  TranslateOpts,
+  GeminiTranslateOptions,
+} from "./llm/translate";
+export { stripFences } from "./llm/json";
 
 export { loadConfig } from "./config";
 export type {
