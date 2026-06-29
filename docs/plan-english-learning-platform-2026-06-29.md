@@ -133,11 +133,11 @@
 - [x] **Produces：** `generateContent`、`firstText`、`pcmToWav`／`pcmDurationSec`／`TTS_FORMAT`、`apiKeyAuthorizer`／`serviceAccountAuthorizer`／`Authorizer`，皆由 `index.ts` 匯出
 - [x] **Verify：** `llm/*.test.ts` 全綠：wav 標頭欄位正確；generateContent 以正確 endpoint／`x-goog-api-key`／JSON body 發請求並解析、非 2xx 拋含狀態碼錯誤；firstText 取首段文字／空輸入回空字串；apiKeyAuthorizer 標頭正確。全 workspace `npm test`（53 passed）、`npm run typecheck` 全綠
 
-### Task 3.2：TTS client（中英雙 voice）
-- [ ] **Targets：** `shared/src/llm/tts.ts`（自參考移植，支援以參數選 voice）+ 測試
-- [ ] **Depends on：** 3.1
-- [ ] **Produces：** `synthesize(text, voice)` → wav buffer
-- [ ] **Verify：** 測試：以不同 voice 呼叫，組出的 request 帶正確 `voiceName`；回傳可解析為 wav
+### Task 3.2：TTS client（中英雙 voice）✅ 完成
+- [x] **Targets：** `shared/src/llm/tts.ts`（移植 `GeminiTtsClient`／`withRetry`／`isQuotaError`；synthesize 改 `(text, voiceName)` 以參數選 voice，同一 client 產中英）+ 測試
+- [x] **Depends on：** 3.1
+- [x] **Produces：** `GeminiTtsClient.synthesize(text, voice)` → `{ wav, pcm }`（wav buffer），由 `index.ts` 匯出
+- [x] **Verify：** `llm/tts.test.ts` 7 項全綠：以 Puck／Kore 呼叫時 request 的 `prebuiltVoiceConfig.voiceName` 對應正確、回傳 wav 帶 RIFF/WAVE 標頭；無音訊資料拋錯；withRetry 重試／用盡拋錯／配額快速失敗；isQuotaError 判別。全 workspace `npm test`（60 passed）、`npm run typecheck` 全綠
 
 ### Task 3.3：段落翻譯 client
 - [ ] **Targets：** `shared/src/llm/translate.ts`（移植）+ 測試

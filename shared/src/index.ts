@@ -21,6 +21,17 @@ export {
 export type { Authorizer } from "./llm/auth";
 export { pcmToWav, pcmDurationSec, TTS_FORMAT } from "./llm/wav";
 export type { WavFormat } from "./llm/wav";
+export {
+  GeminiTtsClient,
+  withRetry,
+  isQuotaError,
+} from "./llm/tts";
+export type {
+  TtsClient,
+  TtsResult,
+  GeminiTtsOptions,
+  RetryOpts,
+} from "./llm/tts";
 
 export { loadConfig } from "./config";
 export type {
