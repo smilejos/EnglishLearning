@@ -45,7 +45,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   app.get("/me", async (request) => ({ user: request.user }));
 
   // 業務路由。
-  registerArticleRoutes(app, opts.pool);
+  registerArticleRoutes(app, opts.pool, opts.audioDir);
   registerLookupRoutes(app, opts.pool, opts.lookupDeps);
 
   return app;

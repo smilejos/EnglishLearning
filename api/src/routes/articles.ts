@@ -12,10 +12,13 @@ import {
   setArticleStatus,
   resetFailedParagraphsByArticle,
   resetFailedJobsByArticle,
+  deleteArticle,
+  listWordIdsByArticle,
   type DbPool,
 } from "@el/shared";
 import { requireAdmin } from "../auth";
 import { splitParagraphs } from "../articleText";
+import { removeAudioDir } from "../audio";
 
 const CreateArticleBody = z.object({
   title: z.string().min(1),
@@ -29,7 +32,11 @@ const CreateArticleBody = z.object({
   level: z.string().optional(),
 });
 
-export function registerArticleRoutes(app: FastifyInstance, pool: DbPool): void {
+export function registerArticleRoutes(
+  app: FastifyInstance,
+  pool: DbPool,
+  audioDir?: string,
+): void {
   // 上傳文章：切段落、寫 article + paragraphs(pending) + 每段一筆 job，回 202 + id。
   app.post(
     "/articles",
@@ -112,6 +119,33 @@ export function registerArticleRoutes(app: FastifyInstance, pool: DbPool): void 
         return { paragraphs, jobs };
       });
       return { ok: true, reset };
+    },
+  );
+
+  // 刪除文章（admin only）：DB cascade + 清理該文章相關音檔。
+  app.delete(
+    "/articles/:id",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      if (!Number.isInteger(id) || id <= 0) {
+        return reply.code(400).send({ error: "invalid article id" });
+      }
+      // 先取涉及的 word id（cascade 刪除前），以便清理 words/<id>/a<articleId> 音檔。
+      const wordIds = await listWordIdsByArticle(pool, id);
+      const deleted = await deleteArticle(pool, id);
+      if (!deleted) {
+        return reply.code(404).send({ error: "article not found" });
+      }
+      if (audioDir) {
+        // 段落音檔整個 articles/<id> 目錄。
+        await removeAudioDir(audioDir, `articles/${id}`);
+        // 各單字在本文章的解釋音檔 words/<wordId>/a<articleId>（單字共用發音 en.wav 保留）。
+        for (const wordId of wordIds) {
+          await removeAudioDir(audioDir, `words/${wordId}/a${id}`);
+        }
+      }
+      return { ok: true };
     },
   );
 }

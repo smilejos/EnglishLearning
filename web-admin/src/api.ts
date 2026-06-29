@@ -36,6 +36,10 @@ export function retryArticle(id: number): Promise<{ ok: boolean }> {
   return req(`/articles/${id}/retry`, { method: "POST" });
 }
 
+export function deleteArticle(id: number): Promise<{ ok: boolean }> {
+  return req(`/articles/${id}`, { method: "DELETE" });
+}
+
 /** 音檔 URL（同源 /audio/ 靜態服務）。 */
 export function audioUrl(relPath: string): string {
   return `${BASE}/audio/${relPath}`;

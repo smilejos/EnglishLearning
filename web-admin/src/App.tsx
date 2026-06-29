@@ -196,6 +196,16 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
     return () => clearInterval(t);
   }, [load]);
 
+  async function remove(a: Article) {
+    if (!window.confirm(`確定刪除「${a.title}」？此操作無法復原。`)) return;
+    try {
+      await api.deleteArticle(a.id);
+      await load();
+    } catch (err) {
+      setError((err as Error).message);
+    }
+  }
+
   return (
     <div>
       <UploadForm onCreated={load} />
@@ -217,7 +227,13 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
                 <StatusBadge status={a.status} />
               </td>
               <td>
-                <button onClick={() => onOpen(a.id)}>檢視</button>
+                <button onClick={() => onOpen(a.id)}>檢視</button>{" "}
+                <button
+                  onClick={() => remove(a)}
+                  style={{ color: "#dc2626" }}
+                >
+                  刪除
+                </button>
               </td>
             </tr>
           ))}

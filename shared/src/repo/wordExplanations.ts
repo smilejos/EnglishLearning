@@ -71,6 +71,18 @@ export async function createExplanation(
   return mapExplanation(res.rows[0]);
 }
 
+/** 列出某文章底下所有解釋涉及的 word id（刪文章時據此清理對應音檔目錄）。 */
+export async function listWordIdsByArticle(
+  db: Queryable,
+  articleId: number,
+): Promise<number[]> {
+  const res = await db.query<{ word_id: string | number }>(
+    `SELECT DISTINCT word_id FROM word_explanations WHERE article_id = $1`,
+    [articleId],
+  );
+  return res.rows.map((r) => toNum(r.word_id));
+}
+
 /** 快取鍵查詢：某單字在某文章是否已有解釋。 */
 export async function findExplanation(
   db: Queryable,

@@ -11,10 +11,15 @@ import {
   setArticleStatus,
   createJob,
   markJobFailed,
+  getOrCreateWord,
+  createExplanation,
   ArticleSchema,
   ParagraphSchema,
 } from "@el/shared";
 import { z } from "zod";
+import { mkdtemp, mkdir, writeFile, rm, stat } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { buildApp } from "../app";
 import type { AuthConfig } from "../auth";
 
@@ -249,5 +254,93 @@ describe("POST /articles/:id/retry", () => {
       ).statusCode,
     ).toBe(404);
     await app.close();
+  });
+});
+
+describe("DELETE /articles/:id", () => {
+  let audioDir: string;
+  beforeAll(async () => {
+    audioDir = await mkdtemp(join(tmpdir(), "el-del-"));
+  });
+  afterAll(async () => {
+    await rm(audioDir, { recursive: true, force: true });
+  });
+
+  async function exists(rel: string): Promise<boolean> {
+    try {
+      await stat(join(audioDir, rel));
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  it("admin 刪除 → DB cascade 清除、段落音檔與解釋音檔移除、單字共用發音保留", async () => {
+    const article = await createArticle(pool, { title: "Del" });
+    const p0 = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "t",
+    });
+    await createJob(pool, article.id, p0.id);
+    const word = await getOrCreateWord(pool, "habit");
+    await createExplanation(pool, { wordId: word.id, articleId: article.id });
+
+    // 佈置音檔：段落、單字本文章解釋、單字共用發音。
+    await mkdir(join(audioDir, `articles/${article.id}`), { recursive: true });
+    await writeFile(join(audioDir, `articles/${article.id}/p0.en.wav`), "x");
+    await mkdir(join(audioDir, `words/${word.id}/a${article.id}`), {
+      recursive: true,
+    });
+    await writeFile(
+      join(audioDir, `words/${word.id}/a${article.id}/zh_translation.wav`),
+      "x",
+    );
+    await writeFile(join(audioDir, `words/${word.id}/en.wav`), "shared");
+
+    const app = buildApp({ config: adminConfig, pool, audioDir });
+    const res = await app.inject({
+      method: "DELETE",
+      url: `/articles/${article.id}`,
+    });
+    expect(res.statusCode).toBe(200);
+
+    // DB：文章與 cascade 子表清空。
+    expect(await getArticleById(pool, article.id)).toBeNull();
+    expect(
+      (await pool.query(`SELECT count(*)::int n FROM paragraphs`)).rows[0].n,
+    ).toBe(0);
+    expect(
+      (await pool.query(`SELECT count(*)::int n FROM word_explanations`)).rows[0]
+        .n,
+    ).toBe(0);
+
+    // 音檔：段落目錄與本文章解釋目錄移除，單字共用發音保留。
+    expect(await exists(`articles/${article.id}`)).toBe(false);
+    expect(await exists(`words/${word.id}/a${article.id}`)).toBe(false);
+    expect(await exists(`words/${word.id}/en.wav`)).toBe(true);
+    await app.close();
+  });
+
+  it("reader → 403、不存在 → 404", async () => {
+    const article = await createArticle(pool, { title: "Keep" });
+    const readerApp = buildApp({ config: readerConfig, pool, audioDir });
+    expect(
+      (
+        await readerApp.inject({
+          method: "DELETE",
+          url: `/articles/${article.id}`,
+        })
+      ).statusCode,
+    ).toBe(403);
+    expect(await getArticleById(pool, article.id)).not.toBeNull();
+    await readerApp.close();
+
+    const adminApp = buildApp({ config: adminConfig, pool, audioDir });
+    expect(
+      (await adminApp.inject({ method: "DELETE", url: "/articles/999999" }))
+        .statusCode,
+    ).toBe(404);
+    await adminApp.close();
   });
 });

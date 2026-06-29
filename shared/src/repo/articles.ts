@@ -81,6 +81,17 @@ export async function setArticleStatus(
   );
 }
 
+/** 刪除文章（外鍵 cascade 連帶刪 paragraphs/jobs/word_explanations）。回傳是否刪到。 */
+export async function deleteArticle(
+  db: Queryable,
+  id: number,
+): Promise<boolean> {
+  const res = await db.query(`DELETE FROM articles WHERE id = $1 RETURNING id`, [
+    id,
+  ]);
+  return (res.rowCount ?? 0) > 0;
+}
+
 /**
  * 僅在文章目前為 pending 時轉為 processing（worker 認領 job 時呼叫）。
  * 避免覆寫 sibling 段落已造成的 failed 終態（見併發一致性）。
