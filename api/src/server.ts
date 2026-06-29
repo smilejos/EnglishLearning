@@ -5,7 +5,12 @@ import { buildApp } from "./app";
 const config = loadConfig();
 const pool = createPool(config.databaseUrl);
 
-const app = buildApp({ config, pool, logger: true });
+const app = buildApp({
+  config,
+  pool,
+  audioDir: config.audioDir,
+  logger: true,
+});
 
 const port = Number(process.env.API_PORT ?? 8080);
 const host = "0.0.0.0";

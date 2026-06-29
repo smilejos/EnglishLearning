@@ -3,10 +3,13 @@
 import Fastify, { type FastifyInstance } from "fastify";
 import type { Queryable } from "@el/shared";
 import { registerAuth, type AuthConfig, type KeyInput } from "./auth";
+import { registerStatic } from "./static";
 
 export interface BuildAppOpts {
   config: AuthConfig;
   pool: Queryable;
+  /** 靜態音檔來源目錄（AUDIO_DIR）；提供時掛載 /audio/*。 */
+  audioDir?: string;
   getKey?: KeyInput;
   logger?: boolean;
 }
@@ -22,6 +25,9 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
     config: opts.config,
     getKey: opts.getKey,
   });
+
+  // 靜態音檔（公開路徑 /audio/，已於 auth 中介層放行）。
+  if (opts.audioDir) registerStatic(app, opts.audioDir);
 
   // 受保護的範例路由：回傳目前身分，供驗證中介層煙霧測試。
   app.get("/me", async (request) => ({ user: request.user }));

@@ -161,11 +161,11 @@
 - [x] **Produces：** 受保護的 Fastify app；`request.user`（id、email、role）；公開路徑 `/healthz`、`/audio/`
 - [x] **Verify：** `api/src/auth.test.ts` 7 項全綠（以本地 RSA 金鑰簽測試 JWT，Fastify inject + 測試 DB）：healthz 公開、無 token→403、偽 token→403、aud 不符→403、合法 token→200 並建立 user（reader）、allowlist email→admin、`DEV_AUTH_BYPASS=1` 無 token 注入假身分。新增 config 測試（ADMIN_EMAILS 解析）與 repo 測試（upsertUser 冪等）。全 workspace `npm test`（80 passed）、`npm run typecheck` 全綠
 
-### Task 4.2：靜態音檔服務
-- [ ] **Targets：** `api/src/static.ts`（從 `AUDIO_DIR` 提供 `/audio/*`）
-- [ ] **Depends on：** 4.1
-- [ ] **Produces：** 可由前端播放的音檔 URL
-- [ ] **Verify：** 放一個檔到 `AUDIO_DIR`，`GET /audio/<path>` 回 200 與正確 bytes；路徑穿越被擋
+### Task 4.2：靜態音檔服務 ✅ 完成
+- [x] **Targets：** `api/src/static.ts`（`@fastify/static` 從 `AUDIO_DIR` 提供 `/audio/*`，內建路徑穿越防護）；`buildApp` 接受 `audioDir`、`server.ts` 帶入 `config.audioDir`
+- [x] **Depends on：** 4.1
+- [x] **Produces：** 可由前端播放的音檔 URL（`/audio/...`，auth 中介層已放行）
+- [x] **Verify：** `api/src/static.test.ts` 3 項全綠：寫檔至臨時 `AUDIO_DIR` 後 `GET /audio/articles/1/p0.en.wav` 回 200 且 bytes 一致；不存在回 404；多種 `../`／URL-encoded 穿越皆非 200。api `npm test`（10 passed）、`npm run typecheck` 全綠
 
 ### Task 4.3：上傳文章 `POST /articles`（admin only）
 - [ ] **Targets：** `api/src/routes/articles.ts`（切段落、寫 `articles`+`paragraphs(pending)`+每段一筆 `jobs`、回 202 + id）
