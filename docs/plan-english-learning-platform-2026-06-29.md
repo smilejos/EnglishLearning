@@ -11,7 +11,7 @@
 | --- | --- | --- |
 | Phase 0 基礎設施 | ✅ 完成 | 0.1–0.5 全部完成；config 載入器 + 測試、各服務 healthcheck 皆就位；`docker compose build` / `up` 實機全綠 |
 | Phase 1 shared | ✅ 完成 | Task 1.1（`schemas.ts`）+ 1.2（`normalizeWord.ts`）完成；共 36 項測試全綠 |
-| Phase 2 資料庫 | 🟡 進行中 | Task 2.1（`db.ts`）、2.2（migration）完成並通過實機驗證；2.3 repo 未開始 |
+| Phase 2 資料庫 | ✅ 完成 | 2.1（`db.ts`）、2.2（migration）、2.3（repo + 8 整合測試）全部完成並通過實機驗證 |
 | Phase 3 LLM | 🔴 未開始 | 無 `shared/src/llm/*` |
 | Phase 4 api | 🔴 未開始 | 僅 `/healthz` 骨架，無 auth、路由 |
 | Phase 5 worker | 🔴 未開始 | 僅 heartbeat 骨架，無佇列處理 |
@@ -117,11 +117,11 @@
 - [x] **Produces：** 完整資料結構
 - [x] **Verify：**（2026-06-29 對 compose db 實測）`migrate:up` 成功（9 業務表 + `pgmigrations`）；`information_schema` 確認 `word_explanations` 10 個內容欄位名稱與順序與設計完全一致（en_explanation→…→zh_example_audio_path）；四個唯一約束存在（words/word_explanations/categories/tags）；`categories` 自我參照成功建立 `故事 ▸ 童話`；`migrate:down` 回滾乾淨（僅剩 `pgmigrations`、列舉型別移除），再 `migrate:up` 回到就緒狀態
 
-### Task 2.3：Repository 資料存取層
-- [ ] **Targets：** `shared/src/repo/`（articles、categories、tags、paragraphs、jobs、words、wordExplanations 的 CRUD / 查詢）
-- [ ] **Depends on：** 2.2、1.1
-- [ ] **Produces：** 各服務共用、型別安全的查詢函式（含 `claimNextJob`、`findExplanation(wordId, articleId)`、`listExplanationsByWord`）
-- [ ] **Verify：** 對測試資料庫的整合測試：插入文章＋段落＋job、查詢回讀一致；唯一鍵衝突被擋
+### Task 2.3：Repository 資料存取層 ✅ 完成
+- [x] **Targets：** `shared/src/repo/`：`types.ts`（`Queryable` + row→DTO mapper）、`articles.ts`、`paragraphs.ts`、`jobs.ts`、`words.ts`、`wordExplanations.ts`、`categories.ts`、`tags.ts`、`index.ts`。函式皆接受 `Queryable`（Pool/PoolClient）以利交易與注入；row（snake_case、BIGINT 字串、Date）映射為 schemas DTO（camelCase、number、ISO 字串）
+- [x] **Depends on：** 2.2、1.1
+- [x] **Produces：** 各服務共用、型別安全的查詢函式（含 `claimNextJob`（FOR UPDATE SKIP LOCKED 原子認領）、`findExplanation(wordId, articleId)`、`listExplanationsByWord`（join 來源文章、依 created_at）、`getOrCreateWord`、`markJobFailed`/`resetFailedJobsByArticle` 等）
+- [x] **Verify：** `shared/src/repo/repo.test.ts` 對 compose db 整合測試 8 項全綠（需先 `migrate:up`，連線取 `DATABASE_URL`）：插入文章＋段落＋job 回讀一致、段落結果／文章狀態更新回讀正確、`getOrCreateWord` 冪等、`(word, article)` 與「同父層 categories」唯一鍵衝突被擋（並驗證頂層 NULL 父層語意可同名）、`claimNextJob` 認領後標 processing 且無 pending 回 null、失敗 attempts++ 與重試重設、`listExplanationsByWord` 依序回兩篇來源解釋。全 workspace `npm test`（47 passed）、`npm run typecheck` 全綠
 
 ---
 
