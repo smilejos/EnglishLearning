@@ -41,6 +41,10 @@ export async function createJob(
 /**
  * 原子地認領下一個 pending job：以 FOR UPDATE SKIP LOCKED 取單筆並就地標為 processing。
  * 多個 worker 併發呼叫不會取到同一筆。無待處理 job 時回 null。
+ *
+ * 已知限制（對齊計畫 §9.4，退避策略延後）：本函式只認領 `pending`，
+ * 不回收 worker 崩潰後卡在 `processing` 的 job。日後可加 visibility timeout
+ * （一併認領 `processing AND updated_at < now() - interval 'N min'`）+ attempts 上限。
  */
 export async function claimNextJob(db: Queryable): Promise<Job | null> {
   const res = await db.query(

@@ -21,6 +21,14 @@ export interface BuildAppOpts {
 export function buildApp(opts: BuildAppOpts): FastifyInstance {
   const app = Fastify({ logger: opts.logger ?? false });
 
+  // 全域錯誤處理：詳情只記在 server 端 log，對外回一般訊息，
+  // 避免把上游（如 Gemini）的錯誤內文或實作細節暴露給呼叫端。
+  app.setErrorHandler((error, request, reply) => {
+    request.log.error(error);
+    const status = error.statusCode && error.statusCode >= 400 ? error.statusCode : 500;
+    reply.status(status).send({ error: status >= 500 ? "internal server error" : error.message });
+  });
+
   // 健康檢查（公開，供 docker healthcheck）。
   app.get("/healthz", async () => ({ ok: true, service: "api" }));
 

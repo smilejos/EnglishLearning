@@ -6,15 +6,36 @@ import {
   updateParagraphResult,
   setParagraphStatus,
   setArticleStatus,
+  markArticleProcessingIfPending,
   markJobDone,
   markJobFailed,
-  countUnfinishedParagraphs,
+  countParagraphsByStatus,
+  withTransaction,
   translateParagraph,
+  type Queryable,
   type DbPool,
   type TranslateClient,
   type TtsClient,
 } from "@el/shared";
 import { writeAudio } from "./audio";
+
+/**
+ * 依段落狀態重算並寫入文章終態（冪等，併發安全）：
+ * 尚有 pending/processing → processing；否則有 failed → failed；全 done → done。
+ */
+async function recomputeArticleStatus(
+  db: Queryable,
+  articleId: number,
+): Promise<void> {
+  const c = await countParagraphsByStatus(db, articleId);
+  const status =
+    c.pending + c.processing > 0
+      ? "processing"
+      : c.failed > 0
+        ? "failed"
+        : "done";
+  await setArticleStatus(db, articleId, status);
+}
 
 export interface WorkerDeps {
   pool: DbPool;
@@ -37,15 +58,15 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
     const paragraph = await getParagraphById(deps.pool, job.paragraphId);
     if (!paragraph) throw new Error(`paragraph ${job.paragraphId} not found`);
 
-    // 認領後文章進入 processing。
-    await setArticleStatus(deps.pool, job.articleId, "processing");
+    // 認領後文章進入 processing（僅當仍為 pending，不覆寫 sibling 造成的終態）。
+    await markArticleProcessingIfPending(deps.pool, job.articleId);
 
     const translation = await translateParagraph(
       paragraph.text,
       deps.translateClient,
     );
 
-    // 英文語音念原文、中文語音念翻譯。
+    // 英文語音念原文、中文語音念翻譯。音檔寫盤在交易外（與 lookups 一致）。
     const en = await deps.ttsClient.synthesize(paragraph.text, deps.voiceEn);
     const zh = await deps.ttsClient.synthesize(translation, deps.voiceZh);
     const enAudioPath = await writeAudio(
@@ -59,24 +80,26 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
       zh.wav,
     );
 
-    await updateParagraphResult(deps.pool, paragraph.id, {
-      translation,
-      enAudioPath,
-      zhAudioPath,
-      status: "done",
+    // DB 寫入於單一交易內：段落 done + job done + 重算文章狀態。
+    await withTransaction(deps.pool, async (tx) => {
+      await updateParagraphResult(tx, paragraph.id, {
+        translation,
+        enAudioPath,
+        zhAudioPath,
+        status: "done",
+      });
+      await markJobDone(tx, job.id);
+      await recomputeArticleStatus(tx, job.articleId);
     });
-    await markJobDone(deps.pool, job.id);
-
-    // 全段完成 → 文章 done。
-    if ((await countUnfinishedParagraphs(deps.pool, job.articleId)) === 0) {
-      await setArticleStatus(deps.pool, job.articleId, "done");
-    }
     return true;
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
-    await markJobFailed(deps.pool, job.id, message);
-    await setParagraphStatus(deps.pool, job.paragraphId, "failed");
-    await setArticleStatus(deps.pool, job.articleId, "failed");
+    // 失敗路徑同樣交易化：job failed + 段落 failed + 重算文章狀態。
+    await withTransaction(deps.pool, async (tx) => {
+      await markJobFailed(tx, job.id, message);
+      await setParagraphStatus(tx, job.paragraphId, "failed");
+      await recomputeArticleStatus(tx, job.articleId);
+    });
     return true;
   }
 }

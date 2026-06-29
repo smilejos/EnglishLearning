@@ -112,26 +112,45 @@ export function registerLookupRoutes(
       synth(content.zh_example, deps.voiceZh, "zh_example"),
     ]);
 
-    const explanation = await withTransaction(pool, async (tx) => {
-      if (!word.enAudioPath && enAudioPath) {
-        await setWordEnAudioPath(tx, word.id, enAudioPath);
-      }
-      return createExplanation(tx, {
-        wordId: word.id,
-        articleId,
-        paragraphId,
-        enExplanation: content.en_explanation,
-        enExplanationAudioPath,
-        enExample: content.en_example,
-        enExampleAudioPath,
-        zhTranslation: content.zh_translation,
-        zhTranslationAudioPath,
-        zhExplanation: content.zh_explanation,
-        zhExplanationAudioPath,
-        zhExample: content.zh_example,
-        zhExampleAudioPath,
+    let explanation;
+    try {
+      explanation = await withTransaction(pool, async (tx) => {
+        if (!word.enAudioPath && enAudioPath) {
+          await setWordEnAudioPath(tx, word.id, enAudioPath);
+        }
+        return createExplanation(tx, {
+          wordId: word.id,
+          articleId,
+          paragraphId,
+          enExplanation: content.en_explanation,
+          enExplanationAudioPath,
+          enExample: content.en_example,
+          enExampleAudioPath,
+          zhTranslation: content.zh_translation,
+          zhTranslationAudioPath,
+          zhExplanation: content.zh_explanation,
+          zhExplanationAudioPath,
+          zhExample: content.zh_example,
+          zhExampleAudioPath,
+        });
       });
-    });
+    } catch (err) {
+      // 併發首查同 (word, article)：另一請求已先寫入（唯一鍵 23505）。
+      // 視為快取命中，回既有解釋而非 500。
+      if ((err as { code?: string }).code === "23505") {
+        const existing = await findExplanation(pool, word.id, articleId);
+        if (existing) {
+          return {
+            word: { ...word, enAudioPath },
+            explanation: {
+              ...existing,
+              article: { id: article.id, title: article.title },
+            },
+          };
+        }
+      }
+      throw err;
+    }
 
     return reply.code(201).send({
       word: { ...word, enAudioPath },

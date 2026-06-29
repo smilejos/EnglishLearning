@@ -221,6 +221,30 @@ describe("POST /lookups（重新解釋）", () => {
     await app.close();
   });
 
+  it("併發首查同 (word, article)：皆非 500、DB 只留一筆解釋", async () => {
+    const { articleId, paragraphId } = await seedArticleParagraph();
+    const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
+
+    const payload = { articleId, paragraphId, word: "habit" };
+    const [r1, r2] = await Promise.all([
+      app.inject({ method: "POST", url: "/lookups", payload }),
+      app.inject({ method: "POST", url: "/lookups", payload }),
+    ]);
+
+    // 不得有 500（唯一鍵衝突須被視為快取命中處理）。
+    expect([200, 201]).toContain(r1.statusCode);
+    expect([200, 201]).toContain(r2.statusCode);
+    expect(r1.json().explanation.zhTranslation).toBe("習慣");
+    expect(r2.json().explanation.zhTranslation).toBe("習慣");
+
+    // DB 只應有一筆解釋。
+    const n = await pool.query(
+      `SELECT count(*)::int AS n FROM word_explanations`,
+    );
+    expect(n.rows[0].n).toBe(1);
+    await app.close();
+  });
+
   it("文章或段落不存在 → 404；body 非法 → 400", async () => {
     const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
     expect(

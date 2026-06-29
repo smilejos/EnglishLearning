@@ -80,3 +80,18 @@ export async function setArticleStatus(
     [id, status],
   );
 }
+
+/**
+ * 僅在文章目前為 pending 時轉為 processing（worker 認領 job 時呼叫）。
+ * 避免覆寫 sibling 段落已造成的 failed 終態（見併發一致性）。
+ */
+export async function markArticleProcessingIfPending(
+  db: Queryable,
+  id: number,
+): Promise<void> {
+  await db.query(
+    `UPDATE articles SET status = 'processing', updated_at = now()
+     WHERE id = $1 AND status = 'pending'`,
+    [id],
+  );
+}

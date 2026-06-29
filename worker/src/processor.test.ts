@@ -13,7 +13,7 @@ import {
   type TranslateClient,
   type TtsClient,
 } from "@el/shared";
-import { drainQueue, type WorkerDeps } from "./processor";
+import { drainQueue, processNextJob, type WorkerDeps } from "./processor";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
@@ -132,6 +132,59 @@ describe("worker 段落處理", () => {
     expect(job.status).toBe("failed");
     expect(job.attempts).toBe(1);
     expect((await getArticleById(pool, article.id))!.status).toBe("failed");
+  });
+
+  it("某段失敗、另一段成功時，文章終態為 failed（不卡在 processing）", async () => {
+    const article = await createArticle(pool, { title: "Mixed" });
+    const p0 = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "First.",
+    });
+    const p1 = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 1,
+      text: "Boom.",
+    });
+    await createJob(pool, article.id, p0.id);
+    await createJob(pool, article.id, p1.id);
+
+    // 對 "Boom." 的英文 TTS 拋錯，使 p1 失敗、p0 成功。
+    const selectiveTts: TtsClient = {
+      synthesize: vi.fn(async (text: string) => {
+        if (text === "Boom.") throw new Error("tts down");
+        return {
+          wav: Buffer.from([0x52, 0x49, 0x46, 0x46]),
+          pcm: Buffer.from([1, 2]),
+        };
+      }),
+    };
+    const processed = await drainQueue(makeDeps({ ttsClient: selectiveTts }));
+    expect(processed).toBe(2);
+
+    const paras = await listParagraphsByArticle(pool, article.id);
+    expect(paras.find((p) => p.idx === 0)!.status).toBe("done");
+    expect(paras.find((p) => p.idx === 1)!.status).toBe("failed");
+    // 關鍵：文章終態為 failed，不會卡在 processing。
+    expect((await getArticleById(pool, article.id))!.status).toBe("failed");
+  });
+
+  it("僅完成部分段落時，文章為 processing", async () => {
+    const article = await createArticle(pool, { title: "Partial" });
+    const p0 = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "First.",
+    });
+    await createParagraph(pool, {
+      articleId: article.id,
+      idx: 1,
+      text: "Second.",
+    });
+    await createJob(pool, article.id, p0.id); // 僅第一段有 job
+
+    expect(await processNextJob(makeDeps())).toBe(true);
+    expect((await getArticleById(pool, article.id))!.status).toBe("processing");
   });
 
   it("佇列為空時 drainQueue 回 0", async () => {

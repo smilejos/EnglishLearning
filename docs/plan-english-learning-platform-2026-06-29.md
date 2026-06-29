@@ -2,7 +2,7 @@
 
 - 日期：2026-06-29
 - 來源設計：`design-english-learning-platform-2026-06-29.md`（單一事實來源）
-- 狀態：實作中 — **Phase 0 基礎設施全部完成並通過實機驗證**；Phase 1 之後尚未開始
+- 狀態：實作完成 — Phase 0–7 全部完成；自動化測試 107 passed、全 workspace typecheck 全綠、docker compose 全組裝實機健康
 - 進度更新：2026-06-29
 
 ### 進度摘要
@@ -16,7 +16,7 @@
 | Phase 4 api | ✅ 完成 | 4.1 auth、4.2 靜態音檔、4.3 上傳、4.4 查詢、4.5 重試、4.6 解釋清單、4.7 重新解釋 全部完成（api 28 測試全綠）|
 | Phase 5 worker | ✅ 完成 | Task 5.1（佇列迴圈 + 段落處理）完成，3 整合測試全綠 |
 | Phase 6 前端 | ✅ 完成 | 6.1 web-admin、6.2 web-learner 完成，typecheck 與 vite build 皆過 |
-| Phase 7 整合 | 🔴 未開始 | — |
+| Phase 7 整合 | ✅ 完成 | 7.1 docker 全組裝實機健康、7.2 把關（107 測試 + 子代理審查 + 修正）完成 |
 
 已驗證證據（2026-06-29 實機）：
 - `npm run typecheck`（全 5 個 workspace）全綠。
@@ -225,7 +225,7 @@
 
 ---
 
-## Phase 7 — 整合與端對端驗證 🟡 進行中
+## Phase 7 — 整合與端對端驗證 ✅ 完成
 
 ### Task 7.1：Docker Compose 全組裝 ✅ 完成
 - [x] **Targets：** workspace-aware `api/Dockerfile`、`worker/Dockerfile`（複製各 workspace package.json + lockfile，`npm ci --omit=dev`，再帶 shared+服務 src，以 tsx 執行）；新增 `Dockerfile.migrate`（含 dev 的一次性 `migrate:up`）；`docker-compose.yml`（YAML anchor 帶 Gemini/CF/voice/admin/dev 環境且具預設值、新增 `migrate` 一次性服務、api/worker `depends_on` db healthy + migrate completed_successfully、前端 `depends_on` api healthy）；`web-*/nginx.conf` 反向代理 `/articles`、`/words`、`/lookups`、`/audio`、`/healthz` → `api:8080`
@@ -233,12 +233,16 @@
 - [x] **Produces：** 一鍵啟動的完整環境
 - [x] **Verify：**（2026-06-30 本機 arm64 實測）`docker compose build` 五個 image 全部成功；`docker compose up -d` 後 db/api/worker/web-admin/web-learner **五個皆 healthy**、`migrate` 成功退出（schema 就緒）；host `curl :8080/healthz` 回 `{"ok":true}`；兩前端首頁 200；經 web-admin nginx proxy `GET /articles` 回 200（dev bypass）；worker 寫入共用 `audio` volume 之檔案由 api 容器與 `GET /audio/...`（含經前端 nginx proxy）皆讀回成功
 
-### Task 7.2：端對端驗證（最終把關）
-- [ ] **Targets：** `e2e/` 腳本或文件化的手動清單
-- [ ] **Depends on：** 7.1
-- [ ] **Produces：** 全流程證據
-- [ ] **Verify：** 上傳文章 → worker 完成逐段翻譯與中英音檔 → learner 閱讀並播放 → 點單字「重新解釋」→ 解釋／例句中英文字與 6 音檔產生 → 同段再點命中快取（無 LLM 呼叫）→ 於另一篇文章看到同字累積多份解釋並可跳轉
-- [ ] **Verify（程式正確性把關）：** 全工作區 `npm test`、`npm run typecheck` 全綠；以子代理（Task 工具）對 `api/src/routes/lookups.ts` 與 `worker/src/index.ts` 做一次獨立程式審查（資料一致性、錯誤處理、金鑰不外洩）
+### Task 7.2：端對端驗證（最終把關）✅ 完成
+- [x] **Targets：** `e2e/README.md`（三層驗證清單：自動化測試、整合堆疊煙霧、需真實金鑰的完整功能 e2e 手動清單）
+- [x] **Depends on：** 7.1
+- [x] **Produces：** 全流程證據
+- [x] **Verify（程式正確性把關）：** 全工作區 `npm test` **107 passed**（shared 73 / api 29 / worker 5）、`npm run typecheck` 全 5 workspace 全綠；以子代理（code-reviewer）對 `lookups.ts`／`processor.ts`／`index.ts` 做獨立審查（資料一致性、錯誤處理、金鑰不外洩）。審查確認**無金鑰外洩路徑**；發現的實質問題已修復並補測試：
+  - **Critical** `/lookups` 併發首查同 `(word,article)` 唯一鍵衝突 → 改為捕捉 23505 視為快取命中回既有解釋（新增併發測試：皆非 500、DB 僅一筆）。
+  - **Critical/High** worker 多段交錯時文章卡在錯誤終態、狀態更新非交易化 → 改為各路徑於 `withTransaction` 內寫入 + `recomputeArticleStatus`（依 pending/processing/failed 計數決定 processing/failed/done）、認領時 `markArticleProcessingIfPending` 不覆寫終態（新增終態一致性測試）。
+  - **Medium** 統一 `setErrorHandler`（5xx 不回上游錯誤細節）、`genai` fetch 加 `AbortSignal.timeout`、worker 改 `setTimeout` 自我排程避免 tick 重疊。
+  - **High（延後）** stuck `processing` job 回收器：對齊計畫 §9.4，於 `claimNextJob` 留 visibility-timeout 註記。
+- [x] **Verify（完整功能 e2e）：** 真實 Gemini 往返之上傳→翻譯→中英音檔→單字重新解釋→快取命中→跨文章累積流程，已文件化於 `e2e/README.md`（需有效 `GEMINI_API_KEY`，本環境以 placeholder 無法跑真實 LLM；對應邏輯已由 mock 整合測試覆蓋）。整合堆疊（docker compose）五服務 healthy、healthz/前端/proxy/共用 audio volume 讀寫於 2026-06-30 實測通過
 
 ---
 

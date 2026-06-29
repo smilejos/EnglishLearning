@@ -54,8 +54,11 @@ async function tick(): Promise<void> {
   await touchHeartbeat();
 }
 
+// 自我排程：tick 完成後才排下一次，避免 LLM 呼叫耗時超過 POLL_MS 時 tick 重疊。
+async function loop(): Promise<void> {
+  await tick();
+  setTimeout(() => void loop(), POLL_MS);
+}
+
 console.log("[worker] starting — polling for paragraph jobs");
-await tick();
-setInterval(() => {
-  void tick();
-}, POLL_MS);
+void loop();

@@ -4,6 +4,9 @@ import type { Authorizer } from "./auth";
 const ENDPOINT = (model: string) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
+// 單次 LLM 呼叫的逾時上界，避免連線卡死導致 worker tick 永不返回。
+const TIMEOUT_MS = Number(process.env.GEMINI_TIMEOUT_MS ?? 60000);
+
 export interface GenPart {
   text?: string;
   inlineData?: { data?: string; mimeType?: string };
@@ -31,6 +34,7 @@ export async function generateContent(
     method: "POST",
     headers: { "Content-Type": "application/json", ...(await auth.headers()) },
     body: JSON.stringify(request),
+    signal: AbortSignal.timeout(TIMEOUT_MS),
   });
   if (!res.ok) {
     const text = await res.text().catch(() => "");
