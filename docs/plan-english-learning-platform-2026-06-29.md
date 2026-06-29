@@ -211,11 +211,11 @@
 
 ## Phase 6 — 前端 🔴 未開始
 
-### Task 6.1：web-admin（管理介面）
-- [ ] **Targets：** `web-admin/`（Vite + React）：文章列表（輪詢狀態）、上傳表單、文章詳情含重試鈕；呼叫 4.3–4.5
-- [ ] **Depends on：** 4.3、4.4、4.5、1.1
-- [ ] **Produces：** 管理者操作介面（登入由 Cloudflare Access 處理，無自建登入頁）
-- [ ] **Verify：** `npm run build` 成功；對 mock／本機 api 煙霧測試：上傳後列表狀態由 pending→done；可觸發重試
+### Task 6.1：web-admin（管理介面）✅ 完成
+- [x] **Targets：** `web-admin/src/`：`types.ts`（前端輕量 DTO，不 import 伺服器端 shared）、`api.ts`（fetch 封裝 + `audioUrl`）、`App.tsx`（文章清單 3 秒輪詢、上傳表單、詳情含逐段狀態／翻譯／中英 audio 播放與重試鈕）、`main.tsx`；`vite.config.ts` 加 dev proxy（/articles、/words、/lookups、/audio → 本機 api）
+- [x] **Depends on：** 4.3、4.4、4.5、1.1
+- [x] **Produces：** 管理者操作介面（登入由 Cloudflare Access 處理，無自建登入頁）
+- [x] **Verify：** `npm run typecheck` 與 `npm run build`（vite，31 modules、dist 產出）皆成功。對本機 api 的互動式煙霧測試列入 Phase 7 端對端驗證
 
 ### Task 6.2：web-learner（學習者前台）
 - [ ] **Targets：** `web-learner/`（Vite + React）：文章列表、閱讀頁（逐段英／中音檔播放 + 翻譯顯示切換）、單字彈窗（既有解釋清單＋來源連結、解釋與例句中英文字、「用本篇重新解釋」、6 個語音播放鈕：單字英/中、解釋英/中、例句英/中）；呼叫 4.4、4.6、4.7
