@@ -73,15 +73,32 @@ Docker Compose 下三個容器：
 ## 4. 資料模型（PostgreSQL）
 
 > 欄位為示意，實作時再補齊型別、索引、外鍵與時間戳。
+> 可執行的完整版本見 `schema-reference.sql`（與本節一致，並含型別／索引／外鍵）。
 
 ### `users`
 授權者帳號（身分來自 Cloudflare Access 的 JWT，首次存取時建立）。
 - `id`、`email`（來自 Access）、`name`、`role`（`admin` / `reader`，決定能否上傳）、`created_at`
 
 ### `articles`
-- `id`、`title`、`grade`、`unit`、`week`、`page`、`level`
+- `id`、`title`
+- `material_type`（`school` / `extracurricular`）：教材性質判別欄，決定下列哪組分類欄位生效
+- 課業內（school）：`grade`（年級）、`unit`（單元）、`week`（週別，數字）、`page`（頁數，數字）
+- 課外（extracurricular）：`category_id`（FK → categories，指向葉節點）、搭配 `article_tags`
+- `level`（難度程度，兩種教材皆可用）
 - `status`（`pending` / `processing` / `done` / `failed`）
 - `created_by`（FK → users）、`created_at`、`updated_at`
+- 註：不加跨欄位 CHECK 約束，欄位填法由應用層決定，保持彈性
+
+### `categories`
+課外教材的分類樹（自我參照），`category ▸ sub-category`，層數彈性。
+- `id`、`parent_id`（FK → categories，NULL = 頂層 category；否則為 sub-category）
+- `label`（顯示名稱）、`sort_order`（同層排序）
+- 唯一鍵：`(parent_id, label)`
+
+### `tags` / `article_tags`
+開放、可多值的分類（兩種教材皆可用，課外為主）。新增分類維度 = 新增資料列，不必改 schema。
+- `tags`：`id`、`kind`（命名空間，如 `topic` / `grammar` / `skill`）、`label`；唯一鍵 `(kind, label)`
+- `article_tags`：`article_id`（FK → articles）、`tag_id`（FK → tags）；主鍵 `(article_id, tag_id)`
 
 ### `paragraphs`
 - `id`、`article_id`（FK）、`idx`（段落順序）

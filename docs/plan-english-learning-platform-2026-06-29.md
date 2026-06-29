@@ -43,7 +43,8 @@
 - **多份解釋顯示**（設計 §9.3 預設）：列出全部，依 `created_at` 排序。
 - **語音 voice**（設計 §9.5）：英文／中文 voice 各以環境變數設定（`GEMINI_TTS_VOICE_EN`、`GEMINI_TTS_VOICE_ZH`），不寫死。
 - **狀態列舉**：`pending` / `processing` / `done` / `failed`，集中於 `shared`。
-- **資料模型**以設計 §4 為準，欄位名稱（尤其 `word_explanations` 10 欄）必須完全一致。
+- **資料模型**以設計 §4 為準（可執行版本見 `docs/schema-reference.sql`，內容須與設計一致），欄位名稱（尤其 `word_explanations` 10 欄）必須完全一致。
+- **文章分類**：`articles.material_type`（`school` / `extracurricular`）判別教材性質；課業內用 `grade`/`unit`/`week`/`page`，課外用 `categories`（自我參照樹）+ `tags`；不加跨欄位 CHECK 約束以保持彈性。
 - 每個任務完成才勾選；`verify` 未通過不得標記完成。
 
 ---
@@ -111,13 +112,13 @@
 - [ ] **Verify：** `docker compose up db` 後，連線並執行 `SELECT 1` 成功
 
 ### Task 2.2：建立 schema 的 migration
-- [ ] **Targets：** `migrations/*`（`node-pg-migrate`）：`users`、`articles`、`paragraphs`、`jobs`、`words`、`word_explanations`，含外鍵、`words.normalized_word` 唯一、`word_explanations (word_id, article_id)` 唯一、必要索引（`jobs.status`、`paragraphs.article_id`）
-- [ ] **Depends on：** 2.1；設計 §4
+- [ ] **Targets：** `migrations/*`（`node-pg-migrate`，內容對齊 `docs/schema-reference.sql`）：`users`、`categories`、`articles`、`paragraphs`、`jobs`、`words`、`word_explanations`、`tags`、`article_tags`；列舉型別 `material_type`（`school`/`extracurricular`）；含外鍵、`words.normalized_word` 唯一、`word_explanations (word_id, article_id)` 唯一、`categories (parent_id, label)` 唯一、`tags (kind, label)` 唯一；必要索引（`jobs.status`、`paragraphs.article_id`、`articles.material_type`、`articles.category_id`、`categories.parent_id`、`tags.kind`、`article_tags.tag_id`）
+- [ ] **Depends on：** 2.1；設計 §4；`docs/schema-reference.sql`
 - [ ] **Produces：** 完整資料結構
-- [ ] **Verify：** `migrate up` 成功；查 `information_schema` 確認 `word_explanations` 的 10 個內容欄位名稱與設計完全一致；唯一約束存在；`migrate down` 可回滾
+- [ ] **Verify：** `migrate up` 成功；查 `information_schema` 確認 `word_explanations` 的 10 個內容欄位名稱與設計完全一致；上述唯一約束存在；`categories` 自我參照可建立 `category ▸ sub-category`；`migrate down` 可回滾
 
 ### Task 2.3：Repository 資料存取層
-- [ ] **Targets：** `shared/src/repo/`（articles、paragraphs、jobs、words、wordExplanations 的 CRUD / 查詢）
+- [ ] **Targets：** `shared/src/repo/`（articles、categories、tags、paragraphs、jobs、words、wordExplanations 的 CRUD / 查詢）
 - [ ] **Depends on：** 2.2、1.1
 - [ ] **Produces：** 各服務共用、型別安全的查詢函式（含 `claimNextJob`、`findExplanation(wordId, articleId)`、`listExplanationsByWord`）
 - [ ] **Verify：** 對測試資料庫的整合測試：插入文章＋段落＋job、查詢回讀一致；唯一鍵衝突被擋
