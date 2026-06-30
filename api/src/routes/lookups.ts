@@ -89,23 +89,38 @@ export function registerLookupRoutes(
       deps.explainClient,
     );
 
-    // word 英文發音（跨解釋共用，缺則補）。
+    // 各段 TTS 盡力而為：單段失敗（例如 Gemini 對極短文字回 finishReason OTHER）
+    // 不應使整個查詢失敗——記錄並以 null 帶過，解釋文字照存、之後可補。
+    const trySynth = async (
+      text: string,
+      voice: string,
+      rel: string,
+    ): Promise<string | null> => {
+      try {
+        const { wav } = await deps.ttsClient.synthesize(text, voice);
+        return await writeAudio(deps.audioDir, `${rel}.wav`, wav);
+      } catch (err) {
+        request.log.warn({
+          evt: "tts_failed",
+          rel,
+          err: (err as Error).message,
+        });
+        return null;
+      }
+    };
+
+    // word 英文發音（跨解釋共用，缺則補；失敗則維持 null）。
     let enAudioPath = word.enAudioPath;
     if (!enAudioPath) {
-      const { wav } = await deps.ttsClient.synthesize(normalized, deps.voiceEn);
-      enAudioPath = await writeAudio(
-        deps.audioDir,
-        `words/${word.id}/en.wav`,
-        wav,
+      enAudioPath = await trySynth(
+        normalized,
+        deps.voiceEn,
+        `words/${word.id}/en`,
       );
     }
 
     // 解釋／例句各項 TTS（英文用 voiceEn、中文用 voiceZh）。
     const base = `words/${word.id}/a${articleId}`;
-    const synth = async (text: string, voice: string, name: string) => {
-      const { wav } = await deps.ttsClient.synthesize(text, voice);
-      return writeAudio(deps.audioDir, `${base}/${name}.wav`, wav);
-    };
     const [
       enExplanationAudioPath,
       enExampleAudioPath,
@@ -113,11 +128,11 @@ export function registerLookupRoutes(
       zhExplanationAudioPath,
       zhExampleAudioPath,
     ] = await Promise.all([
-      synth(content.en_explanation, deps.voiceEn, "en_explanation"),
-      synth(content.en_example, deps.voiceEn, "en_example"),
-      synth(content.zh_translation, deps.voiceZh, "zh_translation"),
-      synth(content.zh_explanation, deps.voiceZh, "zh_explanation"),
-      synth(content.zh_example, deps.voiceZh, "zh_example"),
+      trySynth(content.en_explanation, deps.voiceEn, `${base}/en_explanation`),
+      trySynth(content.en_example, deps.voiceEn, `${base}/en_example`),
+      trySynth(content.zh_translation, deps.voiceZh, `${base}/zh_translation`),
+      trySynth(content.zh_explanation, deps.voiceZh, `${base}/zh_explanation`),
+      trySynth(content.zh_example, deps.voiceZh, `${base}/zh_example`),
     ]);
 
     let explanation;

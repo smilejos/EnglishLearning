@@ -245,6 +245,44 @@ describe("POST /lookups（重新解釋）", () => {
     await app.close();
   });
 
+  it("單段 TTS 失敗時仍存解釋、該音檔為 null、回 201", async () => {
+    const { articleId, paragraphId } = await seedArticleParagraph();
+    // 對中文翻譯 "習慣" 的 TTS 拋錯（模擬 Gemini finishReason OTHER）。
+    const failingSynth = vi.fn(async (text: string) => {
+      if (text === "習慣") throw new Error("no audio data");
+      return {
+        wav: Buffer.from([0x52, 0x49, 0x46, 0x46]),
+        pcm: Buffer.from([1, 2]),
+      };
+    });
+    const deps: LookupDeps = {
+      explainClient: { complete: vi.fn(async () => JSON.stringify(content)) },
+      ttsClient: {
+        synthesize: failingSynth as unknown as TtsClient["synthesize"],
+      },
+      voiceEn: "VoiceEn",
+      voiceZh: "VoiceZh",
+      audioDir,
+    };
+    const app = buildApp({ config, pool, audioDir, lookupDeps: deps });
+    const res = await app.inject({
+      method: "POST",
+      url: "/lookups",
+      payload: { articleId, paragraphId, word: "habit" },
+    });
+    expect(res.statusCode).toBe(201);
+    const e = res.json().explanation;
+    expect(e.zhTranslation).toBe("習慣"); // 文字仍寫入
+    expect(e.zhTranslationAudioPath).toBeNull(); // 失敗段音檔為 null
+    expect(e.enExplanationAudioPath).toBeTruthy(); // 其他段音檔正常
+    // DB 確有一筆解釋
+    const n = await pool.query(
+      `SELECT count(*)::int AS n FROM word_explanations`,
+    );
+    expect(n.rows[0].n).toBe(1);
+    await app.close();
+  });
+
   it("文章或段落不存在 → 404；body 非法 → 400", async () => {
     const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
     expect(
