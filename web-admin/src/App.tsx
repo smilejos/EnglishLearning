@@ -460,6 +460,9 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
             <StatusBadge status={p.status} />
           </div>
           <p className="para-item__text">{p.text}</p>
+          {p.jobError && (
+            <p className="para-item__error">最近錯誤：{p.jobError}</p>
+          )}
           {p.translation && <p className="para-item__tr">譯：{p.translation}</p>}
           {(p.enAudioPath || p.zhAudioPath) && (
             <div className="para-item__audio">
@@ -493,7 +496,7 @@ function StatsBar() {
       <span className="stat">
         文章 <b>{articleTotal}</b>
       </span>
-      <span className="stat">
+      <span className={"stat" + ((j.failed ?? 0) > 0 ? " stat--alert" : "")}>
         jobs · 待處理 <b>{j.pending ?? 0}</b> · 處理中 <b>{j.processing ?? 0}</b>{" "}
         · 完成 <b>{j.done ?? 0}</b> · 失敗 <b>{j.failed ?? 0}</b>
       </span>

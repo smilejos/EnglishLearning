@@ -228,3 +228,7 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .status-line { padding: 2rem 1rem; text-align: center; color: var(--text-muted); font-weight: 600; }
 .status-line.is-error { color: var(--danger); }
 .error-text { color: var(--danger); font-weight: 600; }
+
+/* 失敗可視性（Task 3） */
+.para-item__error { color: var(--danger); font-size: .85rem; margin: 6px 0 0; word-break: break-word; }
+.stat--alert { color: var(--danger); font-weight: 700; }

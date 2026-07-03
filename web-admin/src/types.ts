@@ -34,6 +34,8 @@ export interface Paragraph {
   enAudioPath: string | null;
   zhAudioPath: string | null;
   status: Status;
+  /** 該段對應 job 的最近錯誤（無則 null）。 */
+  jobError?: string | null;
 }
 
 export interface CreateArticleInput {

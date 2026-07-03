@@ -12,6 +12,7 @@ import {
   setArticleStatus,
   resetFailedParagraphsByArticle,
   resetFailedJobsByArticle,
+  listJobErrorsByArticle,
   deleteArticle,
   listWordIdsByArticle,
   getOrCreateCategoryByLabel,
@@ -146,13 +147,19 @@ export function registerArticleRoutes(
       ? await getCategoryById(pool, article.categoryId)
       : null;
     const paragraphs = await listParagraphsByArticle(pool, id);
+    const errByParagraph = new Map(
+      (await listJobErrorsByArticle(pool, id)).map((e) => [e.paragraphId, e.error]),
+    );
     return {
       article: {
         ...article,
         category: category ? { id: category.id, label: category.label } : null,
         tags: tags.map((t) => ({ kind: t.kind, label: t.label })),
       },
-      paragraphs,
+      paragraphs: paragraphs.map((p) => ({
+        ...p,
+        jobError: errByParagraph.get(p.id) ?? null,
+      })),
     };
   });
 

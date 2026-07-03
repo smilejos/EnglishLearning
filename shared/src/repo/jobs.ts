@@ -102,6 +102,31 @@ export async function requeueJob(
   );
 }
 
+export interface JobErrorInfo {
+  paragraphId: number;
+  error: string;
+  attempts: number;
+}
+
+/** 某文章各段落對應 job 的最近錯誤（無錯誤的段落不在結果內）。 */
+export async function listJobErrorsByArticle(
+  db: Queryable,
+  articleId: number,
+): Promise<JobErrorInfo[]> {
+  const res = await db.query(
+    `SELECT DISTINCT ON (paragraph_id) paragraph_id, error, attempts
+       FROM jobs
+      WHERE article_id = $1 AND error IS NOT NULL
+      ORDER BY paragraph_id, updated_at DESC`,
+    [articleId],
+  );
+  return res.rows.map((r: any) => ({
+    paragraphId: toNum(r.paragraph_id),
+    error: r.error,
+    attempts: toNum(r.attempts),
+  }));
+}
+
 /** 手動重試：將某文章的 failed jobs 重設回 pending（清除 error、attempts 歸零）。回傳重設筆數。 */
 export async function resetFailedJobsByArticle(
   db: Queryable,

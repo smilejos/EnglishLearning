@@ -437,3 +437,31 @@ describe("DELETE /articles/:id", () => {
     await adminApp.close();
   });
 });
+
+describe("GET /articles/:id 失敗原因", () => {
+  it("段落對應 job 有 error 時回傳 jobError", async () => {
+    const article = await createArticle(pool, { title: "ErrCase" });
+    const p = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "Boom.",
+    });
+    const job = await createJob(pool, article.id, p.id);
+    await markJobFailed(pool, job.id, "tts down");
+
+    const app = buildApp({ config: readerConfig, pool });
+    const res = await app.inject({ method: "GET", url: `/articles/${article.id}` });
+    expect(res.statusCode).toBe(200);
+    expect(res.json().paragraphs[0].jobError).toBe("tts down");
+    await app.close();
+  });
+
+  it("無錯誤時 jobError 為 null", async () => {
+    const article = await createArticle(pool, { title: "OkCase" });
+    await createParagraph(pool, { articleId: article.id, idx: 0, text: "Fine." });
+    const app = buildApp({ config: readerConfig, pool });
+    const res = await app.inject({ method: "GET", url: `/articles/${article.id}` });
+    expect(res.json().paragraphs[0].jobError).toBeNull();
+    await app.close();
+  });
+});
