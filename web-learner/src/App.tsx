@@ -6,6 +6,7 @@ import { AudioBar } from "./AudioBar";
 import { uniqSorted } from "./lib/facets";
 import { readyArticles } from "./lib/articles";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
+import { articleIdFromHash, hashForArticle } from "./lib/route";
 import {
   PlayIcon,
   PauseIcon,
@@ -779,12 +780,27 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
 }
 
 export default function App() {
-  const [openId, setOpenId] = useState<number | null>(null);
+  const [openId, setOpenId] = useState<number | null>(() =>
+    articleIdFromHash(window.location.hash),
+  );
+
+  // hash 是唯一事實來源：返回鍵／前進鍵經 hashchange 更新畫面。
+  useEffect(() => {
+    const onHash = () => setOpenId(articleIdFromHash(window.location.hash));
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  const navigate = (id: number | null) => {
+    if (articleIdFromHash(window.location.hash) === id) return;
+    window.location.hash = hashForArticle(id);
+  };
+
   return (
     <div className="app-root">
       <header className="topbar">
         <div className="topbar__in">
-          <div className="brand" onClick={() => setOpenId(null)}>
+          <div className="brand" onClick={() => navigate(null)}>
             <span className="brand__mark">
               <HeadphonesIcon size={20} />
             </span>
@@ -793,12 +809,12 @@ export default function App() {
         </div>
       </header>
       {openId === null ? (
-        <ArticleList onOpen={setOpenId} />
+        <ArticleList onOpen={navigate} />
       ) : (
         <Reader
           articleId={openId}
-          onBack={() => setOpenId(null)}
-          onJump={setOpenId}
+          onBack={() => navigate(null)}
+          onJump={navigate}
         />
       )}
     </div>
