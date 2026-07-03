@@ -544,6 +544,9 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
   const [page, setPage] = useState(0);
   const tableRef = useRef<HTMLDivElement>(null);
   const pageSize = useHeightPageSize(tableRef);
+  const [search, setSearch] = useState("");
+  const LEARNER_URL: string =
+    (import.meta.env.VITE_LEARNER_URL as string | undefined) ?? "http://localhost:8082";
 
   const load = useCallback(async () => {
     try {
@@ -569,9 +572,12 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
     }
   }
 
-  const pageCount = Math.max(1, Math.ceil(articles.length / pageSize));
+  const visible = articles.filter(
+    (a) => !search.trim() || a.title.toLowerCase().includes(search.trim().toLowerCase()),
+  );
+  const pageCount = Math.max(1, Math.ceil(visible.length / pageSize));
   const curPage = Math.min(page, pageCount - 1);
-  const shown = articles.slice(curPage * pageSize, curPage * pageSize + pageSize);
+  const shown = visible.slice(curPage * pageSize, curPage * pageSize + pageSize);
 
   return (
     <div>
@@ -579,6 +585,15 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
         <div className="section-eyebrow" style={{ margin: 0 }}>
           文章清單 · 共 {articles.length} 篇
         </div>
+        <input
+          className="field field--mini"
+          placeholder="搜尋標題…"
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+            setPage(0);
+          }}
+        />
         <StatsBar />
       </div>
       {error && <p className="error-text">{error}</p>}
@@ -618,6 +633,14 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
                 </td>
                 <td>
                   <div className="table__actions">
+                    <a
+                      className="btn btn--ghost btn--sm"
+                      href={`${LEARNER_URL}/#/a/${a.id}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      前台
+                    </a>
                     <button
                       className="btn btn--ghost btn--sm"
                       onClick={() => onOpen(a.id)}

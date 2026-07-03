@@ -5,6 +5,8 @@ WORKDIR /app
 COPY tsconfig.base.json ./tsconfig.base.json
 COPY web-admin ./web-admin
 WORKDIR /app/web-admin
+ARG VITE_LEARNER_URL=http://localhost:8082
+ENV VITE_LEARNER_URL=$VITE_LEARNER_URL
 RUN npm install --no-audit --no-fund && npm run build
 
 FROM nginx:alpine

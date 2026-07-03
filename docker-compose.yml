@@ -88,6 +88,8 @@ services:
     build:
       context: .
       dockerfile: web-admin/Dockerfile
+      args:
+        VITE_LEARNER_URL: ${LEARNER_URL_PUBLIC:-http://localhost:8082}
     ports:
       - "${WEB_ADMIN_PORT:-8081}:80"
     depends_on:
