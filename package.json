@@ -11,7 +11,10 @@
   ],
   "scripts": {
     "typecheck": "npm run typecheck --workspaces --if-present",
+    "pretest": "npm run test:db:up",
     "test": "npm run test --workspaces --if-present",
+    "test:db:up": "docker compose -f docker-compose.test.yml up -d --wait db-test && docker compose -f docker-compose.test.yml run --rm migrate-test",
+    "test:db:down": "docker compose -f docker-compose.test.yml down -v",
     "build": "npm run build --workspaces --if-present",
     "migrate": "node-pg-migrate -m migrations",
     "migrate:up": "node-pg-migrate -m migrations up",

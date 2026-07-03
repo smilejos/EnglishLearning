@@ -12,15 +12,15 @@ afterEach(async () => {
 
 describe("createPool", () => {
   it("回傳設定了 connectionString 的 Pool", () => {
-    const pool = createPool("postgres://app:app@localhost:5432/english_learning");
+    const pool = createPool("postgres://app:app@localhost:5433/english_learning_test");
     pools.push(pool);
     expect(pool.options.connectionString).toBe(
-      "postgres://app:app@localhost:5432/english_learning",
+      "postgres://app:app@localhost:5433/english_learning_test",
     );
   });
 
   it("允許以 overrides 覆寫設定（如 max）", () => {
-    const pool = createPool("postgres://app:app@localhost:5432/english_learning", {
+    const pool = createPool("postgres://app:app@localhost:5433/english_learning_test", {
       max: 3,
     });
     pools.push(pool);
@@ -28,7 +28,7 @@ describe("createPool", () => {
   });
 
   it("掛上 Pool 'error' 處理器，避免閒置連線錯誤使行程崩潰", () => {
-    const pool = createPool("postgres://app:app@localhost:5432/english_learning");
+    const pool = createPool("postgres://app:app@localhost:5433/english_learning_test");
     pools.push(pool);
     expect(pool.listenerCount("error")).toBeGreaterThanOrEqual(1);
   });

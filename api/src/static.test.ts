@@ -9,7 +9,7 @@ import type { AuthConfig } from "./auth";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5432/english_learning";
+  "postgres://app:app@localhost:5433/english_learning_test";
 
 // devAuthBypass 讓我們專注測試靜態服務本身（/audio/ 本就是公開路徑）。
 const config: AuthConfig = {

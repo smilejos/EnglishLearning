@@ -22,7 +22,7 @@ import type { LookupDeps } from "./lookups";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5432/english_learning";
+  "postgres://app:app@localhost:5433/english_learning_test";
 
 const config: AuthConfig = {
   cfAccess: null,

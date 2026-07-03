@@ -1,0 +1,40 @@
+# 測試專用堆疊：獨立的一次性 PostgreSQL（tmpfs、即用即棄），
+# 與正式 compose（docker-compose.yml）完全隔離，避免整合測試清掉正式機資料。
+#
+# 用法：
+#   npm run test:db:up     # 起 db-test（5433）並套用 migration
+#   npm test               # 測試預設連 5433/english_learning_test
+#   npm run test:db:down   # 收掉並清除
+#
+# 以獨立 project name 隔離，不會混進正式堆疊的 `docker compose ps`。
+name: englishlearning-test
+
+services:
+  db-test:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+      POSTGRES_DB: english_learning_test
+    # 資料放 tmpfs：跑得快、容器結束即消失，天生不留髒資料。
+    tmpfs:
+      - /var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d english_learning_test"]
+      interval: 3s
+      timeout: 3s
+      retries: 15
+
+  # 一次性套用 migration 到測試庫（已套用者為 no-op，可重複執行）。
+  migrate-test:
+    build:
+      context: .
+      dockerfile: Dockerfile.migrate
+    environment:
+      DATABASE_URL: postgres://app:app@db-test:5432/english_learning_test
+    depends_on:
+      db-test:
+        condition: service_healthy
+    restart: "no"
