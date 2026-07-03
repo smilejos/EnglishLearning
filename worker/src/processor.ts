@@ -77,9 +77,12 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
       deps.translateClient,
     );
 
-    // 英文語音念原文、中文語音念翻譯。音檔寫盤在交易外（與 lookups 一致）。
-    const en = await deps.ttsClient.synthesize(paragraph.text, deps.voiceEn);
-    const zh = await deps.ttsClient.synthesize(translation, deps.voiceZh);
+    // 英文語音念原文、中文語音念翻譯；兩者互不依賴，並行以縮短單段處理時間。
+    // 音檔寫盤在交易外（與 lookups 一致）。
+    const [en, zh] = await Promise.all([
+      deps.ttsClient.synthesize(paragraph.text, deps.voiceEn),
+      deps.ttsClient.synthesize(translation, deps.voiceZh),
+    ]);
     const enAudioPath = await writeAudio(
       deps.audioDir,
       `articles/${job.articleId}/p${paragraph.idx}.en.wav`,

@@ -278,4 +278,31 @@ describe("worker 段落處理", () => {
   it("佇列為空時 drainQueue 回 0", async () => {
     expect(await drainQueue(makeDeps())).toBe(0);
   });
+
+  it("同段的中英 TTS 並行執行（重疊在途數 ≥ 2）", async () => {
+    const article = await createArticle(pool, { title: "Parallel" });
+    const p0 = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "First.",
+    });
+    await createJob(pool, article.id, p0.id);
+
+    let inFlight = 0;
+    let maxInFlight = 0;
+    const slowTts: TtsClient = {
+      synthesize: vi.fn(async () => {
+        inFlight += 1;
+        maxInFlight = Math.max(maxInFlight, inFlight);
+        await new Promise((r) => setTimeout(r, 25));
+        inFlight -= 1;
+        return {
+          wav: Buffer.from([0x52, 0x49, 0x46, 0x46]),
+          pcm: Buffer.from([1, 2]),
+        };
+      }),
+    };
+    await drainQueue(makeDeps({ ttsClient: slowTts }));
+    expect(maxInFlight).toBeGreaterThanOrEqual(2);
+  });
 });
