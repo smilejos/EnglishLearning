@@ -4,6 +4,7 @@ import {
   normalizeWord,
   findWordByNormalized,
   listExplanationsByWord,
+  listExplainedWordsByArticle,
   getOrCreateWord,
   setWordEnAudioPath,
   findExplanation,
@@ -44,6 +45,15 @@ export function registerLookupRoutes(
     if (!word) return { word: null, explanations: [] };
     const explanations = await listExplanationsByWord(pool, word.id);
     return { word, explanations };
+  });
+
+  // 某文章已解釋過的單字清單（前台標示已查單字用）。
+  app.get("/articles/:id/lookups", async (request, reply) => {
+    const id = Number((request.params as { id: string }).id);
+    if (!Number.isInteger(id) || id <= 0) {
+      return reply.code(400).send({ error: "invalid article id" });
+    }
+    return { words: await listExplainedWordsByArticle(pool, id) };
   });
 
   // 重新解釋：{ articleId, paragraphId, word } → 快取命中即回；未命中則

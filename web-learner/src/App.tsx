@@ -76,9 +76,11 @@ function AudioChip({
 /** 把段落文字渲染為可點擊的單字。 */
 function ClickableText({
   text,
+  known,
   onWordClick,
 }: {
   text: string;
+  known: Set<string>;
   onWordClick: (word: string) => void;
 }) {
   const tokens = text.split(/(\s+)/);
@@ -87,11 +89,12 @@ function ClickableText({
       {tokens.map((tok, i) => {
         const clean = tok.replace(/^[^A-Za-z'-]+|[^A-Za-z'-]+$/g, "");
         if (!clean) return <span key={i}>{tok}</span>;
+        const isKnown = known.has(clean.toLowerCase());
         return (
           <button
             type="button"
             key={i}
-            className="vocab"
+            className={"vocab" + (isKnown ? " vocab--known" : "")}
             onClick={() => onWordClick(clean)}
           >
             {tok}
@@ -164,12 +167,14 @@ function WordPopup({
   paragraphId,
   onClose,
   onJump,
+  onExplained,
 }: {
   word: string;
   articleId: number;
   paragraphId: number;
   onClose: () => void;
   onJump: (articleId: number) => void;
+  onExplained?: () => void;
 }) {
   const [wordInfo, setWordInfo] = useState<Word | null>(null);
   const [explanations, setExplanations] = useState<WordExplanation[]>([]);
@@ -211,6 +216,7 @@ function WordPopup({
     try {
       await api.reexplain({ articleId, paragraphId, word });
       await load();
+      onExplained?.();
     } catch (err) {
       setError((err as Error).message);
     } finally {
@@ -285,6 +291,18 @@ function Reader({
       setError((err as Error).message);
     }
   }, [articleId]);
+
+  const [known, setKnown] = useState<Set<string>>(new Set());
+  const loadKnown = useCallback(() => {
+    api
+      .getArticleLookups(articleId)
+      .then((d) => setKnown(new Set(d.words)))
+      .catch(() => {});
+  }, [articleId]);
+
+  useEffect(() => {
+    loadKnown();
+  }, [loadKnown]);
 
   useEffect(() => {
     void load();
@@ -418,6 +436,7 @@ function Reader({
                       <p className="para__text">
                         <ClickableText
                           text={p.text}
+                          known={known}
                           onWordClick={(word) =>
                             setPopup({ word, paragraphId: p.id })
                           }
@@ -488,6 +507,7 @@ function Reader({
           paragraphId={popup.paragraphId}
           onClose={() => setPopup(null)}
           onJump={onJump}
+          onExplained={loadKnown}
         />
       )}
     </>

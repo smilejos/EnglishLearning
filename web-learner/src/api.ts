@@ -49,6 +49,10 @@ export function getExplanations(word: string): Promise<WordLookupResponse> {
   return req(`/words/${encodeURIComponent(word)}/explanations`);
 }
 
+export function getArticleLookups(id: number): Promise<{ words: string[] }> {
+  return req(`/articles/${id}/lookups`);
+}
+
 export function reexplain(input: {
   articleId: number;
   paragraphId: number;

@@ -118,6 +118,22 @@ export async function listExplanationsByWord(
   }));
 }
 
+/** 某文章已解釋過的單字（normalized）清單，前台據此標示已查單字。 */
+export async function listExplainedWordsByArticle(
+  db: Queryable,
+  articleId: number,
+): Promise<string[]> {
+  const res = await db.query<{ normalized_word: string }>(
+    `SELECT w.normalized_word
+       FROM word_explanations we
+       JOIN words w ON w.id = we.word_id
+      WHERE we.article_id = $1
+      ORDER BY w.normalized_word`,
+    [articleId],
+  );
+  return res.rows.map((r) => r.normalized_word);
+}
+
 export interface ExplanationAudioPaths {
   enExplanationAudioPath?: string | null;
   enExampleAudioPath?: string | null;

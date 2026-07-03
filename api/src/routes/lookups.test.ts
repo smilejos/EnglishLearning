@@ -372,3 +372,28 @@ describe("POST /lookups（重新解釋）", () => {
     });
   });
 });
+
+describe("GET /articles/:id/lookups（已查單字清單）", () => {
+  it("回本文章已解釋單字（normalized、排序）", async () => {
+    const article = await createArticle(pool, { title: "Known" });
+    await createParagraph(pool, { articleId: article.id, idx: 0, text: "A habit." });
+    const w1 = await getOrCreateWord(pool, "habit");
+    const w2 = await getOrCreateWord(pool, "apple");
+    await createExplanation(pool, { wordId: w1.id, articleId: article.id, zhTranslation: "習慣" });
+    await createExplanation(pool, { wordId: w2.id, articleId: article.id, zhTranslation: "蘋果" });
+
+    const app = buildApp({ config, pool });
+    const res = await app.inject({ method: "GET", url: `/articles/${article.id}/lookups` });
+    expect(res.statusCode).toBe(200);
+    expect(res.json()).toEqual({ words: ["apple", "habit"] });
+    await app.close();
+  });
+
+  it("無解釋時回空清單", async () => {
+    const article = await createArticle(pool, { title: "Empty" });
+    const app = buildApp({ config, pool });
+    const res = await app.inject({ method: "GET", url: `/articles/${article.id}/lookups` });
+    expect(res.json()).toEqual({ words: [] });
+    await app.close();
+  });
+});
