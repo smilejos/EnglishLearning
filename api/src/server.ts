@@ -34,6 +34,7 @@ const app = buildApp({
     voiceEn: config.gemini.voiceEn,
     voiceZh: config.gemini.voiceZh,
     audioDir: config.audioDir,
+    audioFormat: config.audioFormat,
   },
   logger: true,
 });

@@ -17,6 +17,7 @@ x-app-env: &app-env
   DEV_USER_EMAIL: ${DEV_USER_EMAIL:-dev@example.com}
   LOOKUP_USER_PER_MIN: ${LOOKUP_USER_PER_MIN:-10}
   LOOKUP_GLOBAL_PER_DAY: ${LOOKUP_GLOBAL_PER_DAY:-200}
+  AUDIO_FORMAT: ${AUDIO_FORMAT:-m4a}
 
 services:
   db:

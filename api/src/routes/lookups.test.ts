@@ -125,6 +125,7 @@ describe("POST /lookups（重新解釋）", () => {
       voiceEn: "VoiceEn",
       voiceZh: "VoiceZh",
       audioDir,
+      audioFormat: "wav",
     };
   }
 
@@ -264,6 +265,7 @@ describe("POST /lookups（重新解釋）", () => {
       voiceEn: "VoiceEn",
       voiceZh: "VoiceZh",
       audioDir,
+      audioFormat: "wav",
     };
     const app = buildApp({ config, pool, audioDir, lookupDeps: deps });
     const res = await app.inject({

@@ -15,11 +15,12 @@ import {
   translateParagraph,
   listParagraphsByArticle,
   generateTranslations,
-  writeAudio,
+  writeAudioEncoded,
   type Queryable,
   type DbPool,
   type TranslateClient,
   type TtsClient,
+  type AudioFormat,
 } from "@el/shared";
 
 /**
@@ -47,6 +48,7 @@ export interface WorkerDeps {
   voiceEn: string;
   voiceZh: string;
   audioDir: string;
+  audioFormat: AudioFormat;
   /** 達此嘗試次數仍失敗才標 failed；未達則自動退回 pending 重試。 */
   maxAttempts: number;
   /** processing 超過此毫秒數視為崩潰並回收（visibility timeout）。 */
@@ -120,15 +122,17 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
       deps.ttsClient.synthesize(paragraph.text, deps.voiceEn),
       deps.ttsClient.synthesize(translation, deps.voiceZh),
     ]);
-    const enAudioPath = await writeAudio(
+    const enAudioPath = await writeAudioEncoded(
       deps.audioDir,
-      `articles/${job.articleId}/p${paragraph.idx}.en.wav`,
+      `articles/${job.articleId}/p${paragraph.idx}.en`,
       en.wav,
+      { format: deps.audioFormat },
     );
-    const zhAudioPath = await writeAudio(
+    const zhAudioPath = await writeAudioEncoded(
       deps.audioDir,
-      `articles/${job.articleId}/p${paragraph.idx}.zh.wav`,
+      `articles/${job.articleId}/p${paragraph.idx}.zh`,
       zh.wav,
+      { format: deps.audioFormat },
     );
 
     // DB 寫入於單一交易內：段落 done + job done + 重算文章狀態。

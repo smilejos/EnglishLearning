@@ -141,3 +141,18 @@ describe("lookupLimits", () => {
     );
   });
 });
+
+describe("audioFormat", () => {
+  const BASE = {
+    DATABASE_URL: "postgres://x",
+    GEMINI_API_KEY: "k",
+    GEMINI_TTS_VOICE_EN: "Kore",
+    GEMINI_TTS_VOICE_ZH: "Kore",
+    DEV_AUTH_BYPASS: "1",
+  };
+  it("預設 m4a、可覆寫為 wav、非法值報錯", () => {
+    expect(loadConfig(BASE).audioFormat).toBe("m4a");
+    expect(loadConfig({ ...BASE, AUDIO_FORMAT: "wav" }).audioFormat).toBe("wav");
+    expect(() => loadConfig({ ...BASE, AUDIO_FORMAT: "mp3" })).toThrow(/AUDIO_FORMAT/);
+  });
+});

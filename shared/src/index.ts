@@ -6,7 +6,9 @@ export { normalizeWord } from "./normalizeWord";
 export { createPool, ping, withTransaction } from "./db";
 export type { DbPool } from "./db";
 
-export { writeAudio, removeAudioDir } from "./audioFiles";
+export { writeAudio, removeAudioDir, writeAudioEncoded } from "./audioFiles";
+export type { AudioFormat, WriteEncodedOpts } from "./audioFiles";
+export { ffmpegAvailable, encodeWavToM4aFile } from "./audioEncode";
 
 export * from "./repo";
 

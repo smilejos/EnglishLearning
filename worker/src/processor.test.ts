@@ -55,6 +55,7 @@ function makeDeps(over?: Partial<WorkerDeps>): WorkerDeps {
     voiceEn: "VoiceEn",
     voiceZh: "VoiceZh",
     audioDir,
+    audioFormat: "wav",
     maxAttempts: 3,
     staleMs: 5 * 60 * 1000,
     ...over,

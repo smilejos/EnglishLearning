@@ -2,6 +2,7 @@
 # Workspace-aware：worker 依賴 @el/shared，需在 monorepo 內安裝並以 tsx 執行。
 FROM node:20-alpine
 WORKDIR /app
+RUN apk add --no-cache ffmpeg
 
 # 先複製 lockfile 與各 workspace 的 package.json 以利快取。
 COPY package.json package-lock.json tsconfig.base.json ./

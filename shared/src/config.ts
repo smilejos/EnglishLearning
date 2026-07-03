@@ -41,6 +41,8 @@ export interface Config {
   adminEmails: string[];
   /** POST /lookups 快取未命中的用量韁繩（設計文件 §6 Phase 1.2）。 */
   lookupLimits: LookupLimitsConfig;
+  /** 新產出音檔格式：m4a（AAC，預設）或 wav；既有音檔不受影響。 */
+  audioFormat: "m4a" | "wav";
 }
 
 /** 預設值（與 `.env.example` 一致），缺漏時採用。 */
@@ -126,6 +128,11 @@ export function loadConfig(env: Env = process.env): Config {
     globalPerDay: intEnv(env, "LOOKUP_GLOBAL_PER_DAY", 200, errors),
   };
 
+  const audioFormatRaw = trimmed(env, "AUDIO_FORMAT") ?? "m4a";
+  if (audioFormatRaw !== "m4a" && audioFormatRaw !== "wav") {
+    errors.push("AUDIO_FORMAT must be 'm4a' or 'wav'");
+  }
+
   if (errors.length > 0) {
     throw new Error(
       `Invalid environment configuration:\n  - ${errors.join("\n  - ")}`,
@@ -150,6 +157,7 @@ export function loadConfig(env: Env = process.env): Config {
     devUserEmail: trimmed(env, "DEV_USER_EMAIL") ?? DEFAULTS.devUserEmail,
     adminEmails: parseEmailList(trimmed(env, "ADMIN_EMAILS")),
     lookupLimits,
+    audioFormat: audioFormatRaw as "m4a" | "wav",
   };
 }
 

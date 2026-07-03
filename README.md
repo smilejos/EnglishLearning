@@ -40,6 +40,7 @@ open http://localhost:8082    # 前台
 ```
 
 `.env` 由 `.env.example` 自動建立；正式環境需填 `GEMINI_API_KEY` 並看「上線前檢查清單」。
+`AUDIO_FORMAT=m4a`（預設）——新音檔以 AAC 儲存，舊音檔照舊可播。
 
 ## 測試
 

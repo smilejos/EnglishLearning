@@ -13,10 +13,11 @@ import {
   withTransaction,
   explainWord,
   WordLookupRequestSchema,
-  writeAudio,
+  writeAudioEncoded,
   type DbPool,
   type ExplainClient,
   type TtsClient,
+  type AudioFormat,
 } from "@el/shared";
 import type { LookupLimiter } from "../rateLimit";
 
@@ -27,6 +28,7 @@ export interface LookupDeps {
   voiceEn: string;
   voiceZh: string;
   audioDir: string;
+  audioFormat: AudioFormat;
 }
 
 export function registerLookupRoutes(
@@ -111,15 +113,17 @@ export function registerLookupRoutes(
     const trySynth = async (
       text: string,
       voice: string,
-      rel: string,
+      relBase: string,
     ): Promise<string | null> => {
       try {
         const { wav } = await deps.ttsClient.synthesize(text, voice);
-        return await writeAudio(deps.audioDir, `${rel}.wav`, wav);
+        return await writeAudioEncoded(deps.audioDir, relBase, wav, {
+          format: deps.audioFormat,
+        });
       } catch (err) {
         request.log.warn({
           evt: "tts_failed",
-          rel,
+          rel: relBase,
           err: (err as Error).message,
         });
         return null;
