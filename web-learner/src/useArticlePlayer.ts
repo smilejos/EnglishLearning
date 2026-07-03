@@ -1,5 +1,6 @@
 // 把整篇文章的逐段音檔串成一條可拖曳的連續時間軸（沿用 article2speech 設計）。
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { claimAudio } from "./lib/audioBus";
 
 export interface PlayerItem {
   paragraphId: number;
@@ -46,6 +47,14 @@ export function useArticlePlayer(
   const repeatRef = useRef(false);
   repeatRef.current = repeat;
 
+  // 全域單音源：被其他音源搶走時暫停自己（stopper 引用必須穩定）。
+  const stopRef = useRef<() => void>(() => {});
+  stopRef.current = () => {
+    audio.pause();
+    setPlaying(false);
+  };
+  const busStop = useMemo(() => () => stopRef.current(), []);
+
   // 預載 metadata 取得各段真實長度，組出時間軸。
   useEffect(() => {
     setDurations(items.map(() => 0));
@@ -89,10 +98,11 @@ export function useArticlePlayer(
       audio.currentTime = 0;
       audio.playbackRate = speed;
       setPosInPara(0);
+      claimAudio(busStop);
       void audio.play();
       setPlaying(true);
     },
-    [audio, items, speed],
+    [audio, items, speed, busStop],
   );
 
   useEffect(() => {
@@ -138,9 +148,10 @@ export function useArticlePlayer(
       playParagraph(0);
       return;
     }
+    claimAudio(busStop);
     void audio.play();
     setPlaying(true);
-  }, [audio, playing, index, playParagraph]);
+  }, [audio, playing, index, playParagraph, busStop]);
 
   const prev = useCallback(
     () =>

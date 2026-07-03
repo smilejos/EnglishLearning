@@ -5,6 +5,7 @@ import { useArticlePlayer } from "./useArticlePlayer";
 import { AudioBar } from "./AudioBar";
 import { uniqSorted } from "./lib/facets";
 import { readyArticles } from "./lib/articles";
+import { claimAudio, releaseAudio } from "./lib/audioBus";
 import {
   PlayIcon,
   PauseIcon,
@@ -36,8 +37,19 @@ function AudioChip({
     setState("loading");
     try {
       const audio = new Audio(api.audioUrl(path!));
-      audio.onended = () => setState("idle");
-      audio.onerror = () => setState("error");
+      const stop = () => {
+        audio.pause();
+        setState("idle");
+      };
+      claimAudio(stop);
+      audio.onended = () => {
+        releaseAudio(stop);
+        setState("idle");
+      };
+      audio.onerror = () => {
+        releaseAudio(stop);
+        setState("error");
+      };
       await audio.play();
       setState("playing");
     } catch {
