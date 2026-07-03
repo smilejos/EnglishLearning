@@ -96,6 +96,17 @@ rm -rf /tmp/audio
 </dict></plist>
 ```
 
+## 上線前檢查清單（正式對外前逐項確認）
+
+1. `.env` 中 `DEV_AUTH_BYPASS=0`（api 會強制要求 CF_ACCESS_* 設定，缺少即啟動失敗）。
+2. `CF_ACCESS_TEAM_DOMAIN` 與 `CF_ACCESS_AUD` 已填；前後台網域都在 Cloudflare Access 政策內。
+3. `ADMIN_EMAILS` 只含真正的管理者。
+4. **對外流量一律經 Cloudflare Tunnel／Access**；不要把 8080/8081/8082 直接 port-forward 上網
+   （`/audio/` 與 `/healthz` 在 app 層為免驗證路徑，設計上依賴邊緣驗證）。
+5. db 埠僅綁 127.0.0.1（本 repo 預設如此）；不需本機直連時可整段移除 ports。
+6. 每日備份已排程（見「備份與還原」），且做過一次還原演練。
+7. `POSTGRES_PASSWORD` 已改掉預設值 `app`。
+
 ### 啟動後的逐項驗證
 
 ```bash
