@@ -1,9 +1,22 @@
 // 前端輕量型別（對應 api DTO；前端不直接 import 伺服器端 @el/shared）。
 export type Status = "pending" | "processing" | "done" | "failed";
+export type MaterialType = "school" | "extracurricular";
+
+export interface ArticleTag {
+  kind: string;
+  label: string;
+}
 
 export interface Article {
   id: number;
   title: string;
+  materialType: MaterialType;
+  grade: string | null;
+  unit: string | null;
+  week: number | null;
+  level: string | null;
+  category: { id: number; label: string } | null;
+  tags: ArticleTag[];
   status: Status;
   createdAt: string;
 }
