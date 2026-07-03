@@ -4,6 +4,7 @@ import * as api from "./api";
 import { useArticlePlayer } from "./useArticlePlayer";
 import { AudioBar } from "./AudioBar";
 import { uniqSorted } from "./lib/facets";
+import { readyArticles } from "./lib/articles";
 import {
   PlayIcon,
   PauseIcon,
@@ -11,11 +12,6 @@ import {
   TranslateIcon,
   SoundIcon,
 } from "./icons";
-
-/** 狀態徽章。 */
-function StatusBadge({ status }: { status: string }) {
-  return <span className={`badge-status is-${status}`}>{status}</span>;
-}
 
 /** 播放單一音檔的膠囊按鈕（給單字解釋用），含載入／播放／錯誤狀態。 */
 function AudioChip({
@@ -443,10 +439,13 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
       .catch((err) => setError((err as Error).message));
   }, []);
 
+  const ready = useMemo(() => readyArticles(articles), [articles]);
+  const processingCount = articles.length - ready.length;
+
   // 篩選選項：先依教材別收斂，再萃取年級/單元/難度/分類/標籤。
   const byMaterial = useMemo(
-    () => articles.filter((a) => a.materialType === material),
-    [articles, material],
+    () => ready.filter((a) => a.materialType === material),
+    [ready, material],
   );
   const grades = useMemo(() => uniqSorted(byMaterial.map((a) => a.grade)), [byMaterial]);
   const units = useMemo(
@@ -644,10 +643,15 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
       <div className="section-eyebrow" style={{ marginTop: 18 }}>
         {filtered.length} 篇{hasAnyFacet ? "（已篩選）" : ""}
       </div>
+      {processingCount > 0 && (
+        <p className="status-line">
+          另有 {processingCount} 篇文章處理中，完成後會自動出現。
+        </p>
+      )}
       {error && <p className="status-line is-error">{error}</p>}
       {!error && filtered.length === 0 && (
         <p className="status-line">
-          {articles.length === 0 ? "尚無文章。" : "沒有符合條件的文章。"}
+          {ready.length === 0 ? "尚無可閱讀的文章。" : "沒有符合條件的文章。"}
         </p>
       )}
       <div className="cards">
@@ -665,7 +669,6 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
                   </span>
                 ))}
               </div>
-              <StatusBadge status={a.status} />
             </div>
           </button>
         ))}
