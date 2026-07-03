@@ -15,12 +15,12 @@ import {
   translateParagraph,
   listParagraphsByArticle,
   generateTranslations,
+  writeAudio,
   type Queryable,
   type DbPool,
   type TranslateClient,
   type TtsClient,
 } from "@el/shared";
-import { writeAudio } from "./audio";
 
 /**
  * 依段落狀態重算並寫入文章終態（冪等，併發安全）：

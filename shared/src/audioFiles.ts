@@ -1,4 +1,5 @@
-// 將音檔寫入 AUDIO_DIR 的相對路徑（自動建立父目錄）。DB 只存相對路徑。
+// 音檔檔案工具：寫入 AUDIO_DIR 相對路徑（DB 只存相對路徑）、移除相對目錄。
+// 原分別位於 api/src/audio.ts 與 worker/src/audio.ts，整併於此消除重複。
 import { mkdir, writeFile, rm } from "node:fs/promises";
 import { dirname, join } from "node:path";
 

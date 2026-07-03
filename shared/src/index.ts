@@ -6,6 +6,8 @@ export { normalizeWord } from "./normalizeWord";
 export { createPool, ping, withTransaction } from "./db";
 export type { DbPool } from "./db";
 
+export { writeAudio, removeAudioDir } from "./audioFiles";
+
 export * from "./repo";
 
 export { generateContent, firstText } from "./llm/genai";

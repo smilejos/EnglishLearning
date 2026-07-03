@@ -13,11 +13,11 @@ import {
   withTransaction,
   explainWord,
   WordLookupRequestSchema,
+  writeAudio,
   type DbPool,
   type ExplainClient,
   type TtsClient,
 } from "@el/shared";
-import { writeAudio } from "../audio";
 import type { LookupLimiter } from "../rateLimit";
 
 /** 重新解釋所需的 LLM／TTS 依賴與音檔設定（注入以利測試 mock）。 */

@@ -13,6 +13,7 @@ import {
   resetFailedParagraphsByArticle,
   resetFailedJobsByArticle,
   listJobErrorsByArticle,
+  removeAudioDir,
   deleteArticle,
   listWordIdsByArticle,
   getOrCreateCategoryByLabel,
@@ -26,7 +27,6 @@ import {
 } from "@el/shared";
 import { requireAdmin } from "../auth";
 import { splitParagraphs } from "../articleText";
-import { removeAudioDir } from "../audio";
 
 const CreateArticleBody = z.object({
   title: z.string().min(1),
