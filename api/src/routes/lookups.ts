@@ -18,6 +18,7 @@ import {
   type TtsClient,
 } from "@el/shared";
 import { writeAudio } from "../audio";
+import type { LookupLimiter } from "../rateLimit";
 
 /** 重新解釋所需的 LLM／TTS 依賴與音檔設定（注入以利測試 mock）。 */
 export interface LookupDeps {
@@ -32,6 +33,7 @@ export function registerLookupRoutes(
   app: FastifyInstance,
   pool: DbPool,
   deps?: LookupDeps,
+  limiter?: LookupLimiter,
 ): void {
   // 某單字的所有既有解釋（含各自來源文章，依 created_at 排序）。
   app.get("/words/:word/explanations", async (request) => {
@@ -80,6 +82,21 @@ export function registerLookupRoutes(
         word,
         explanation: { ...cached, article: { id: article.id, title: article.title } },
       };
+    }
+
+    // 快取未命中將呼叫 LLM/TTS：先過用量韁繩（per-user／全站每日）。
+    if (limiter) {
+      const scope = limiter.tryAcquire(request.user!.id);
+      if (scope !== null) {
+        request.log.warn({ evt: "lookup_limited", scope, word: normalized, articleId });
+        return reply.code(429).send({
+          error:
+            scope === "user"
+              ? "查詢太頻繁了，休息一下再試。"
+              : "今日全站查詢額度已用完，明天再來吧。",
+          scope,
+        });
+      }
     }
 
     // 未命中：產生解釋文字。

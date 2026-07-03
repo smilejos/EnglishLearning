@@ -118,3 +118,26 @@ describe("loadConfig", () => {
     expect(() => loadConfig(env)).toThrow(/DATABASE_URL is required/);
   });
 });
+
+describe("lookupLimits", () => {
+  const BASE = {
+    DATABASE_URL: "postgres://x",
+    GEMINI_API_KEY: "k",
+    GEMINI_TTS_VOICE_EN: "Kore",
+    GEMINI_TTS_VOICE_ZH: "Kore",
+    DEV_AUTH_BYPASS: "1",
+  };
+  it("預設 10/分、200/日", () => {
+    const c = loadConfig(BASE);
+    expect(c.lookupLimits).toEqual({ userPerMin: 10, globalPerDay: 200 });
+  });
+  it("可由環境變數覆寫", () => {
+    const c = loadConfig({ ...BASE, LOOKUP_USER_PER_MIN: "3", LOOKUP_GLOBAL_PER_DAY: "50" });
+    expect(c.lookupLimits).toEqual({ userPerMin: 3, globalPerDay: 50 });
+  });
+  it("非法值列入錯誤清單", () => {
+    expect(() => loadConfig({ ...BASE, LOOKUP_USER_PER_MIN: "abc" })).toThrow(
+      /LOOKUP_USER_PER_MIN/,
+    );
+  });
+});

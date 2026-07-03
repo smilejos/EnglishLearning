@@ -8,14 +8,29 @@ import type {
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
+export class ApiError extends Error {
+  constructor(
+    public status: number,
+    message: string,
+  ) {
+    super(message);
+  }
+}
+
 async function req<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {
     headers: { "Content-Type": "application/json" },
     ...init,
   });
   if (!res.ok) {
-    const body = await res.text().catch(() => "");
-    throw new Error(`${res.status} ${res.statusText}: ${body.slice(0, 200)}`);
+    let message = `${res.status} ${res.statusText}`;
+    try {
+      const body = (await res.json()) as { error?: string };
+      if (body?.error) message = body.error;
+    } catch {
+      // 非 JSON 錯誤內容：保留狀態碼訊息。
+    }
+    throw new ApiError(res.status, message);
   }
   return (await res.json()) as T;
 }

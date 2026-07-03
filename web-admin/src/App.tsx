@@ -503,6 +503,11 @@ function StatsBar() {
       <span className="stat">
         解釋 <b>{stats.explanations}</b>
       </span>
+      {stats.lookupsToday && (
+        <span className="stat">
+          今日查詢 <b>{stats.lookupsToday.llmCalls}</b> / {stats.lookupsToday.globalPerDay}
+        </span>
+      )}
     </div>
   );
 }

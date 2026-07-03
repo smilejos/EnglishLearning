@@ -21,6 +21,13 @@ export interface CfAccessConfig {
   aud: string;
 }
 
+export interface LookupLimitsConfig {
+  /** 每位使用者每分鐘可觸發的 LLM 查詢數。 */
+  userPerMin: number;
+  /** 全站每日可觸發的 LLM 查詢數。 */
+  globalPerDay: number;
+}
+
 export interface Config {
   databaseUrl: string;
   audioDir: string;
@@ -32,6 +39,8 @@ export interface Config {
   devUserEmail: string;
   /** admin 角色允許清單（email，小寫）；命中者於登入時授予 admin（設計 §9.6 app 內 allowlist）。 */
   adminEmails: string[];
+  /** POST /lookups 快取未命中的用量韁繩（設計文件 §6 Phase 1.2）。 */
+  lookupLimits: LookupLimitsConfig;
 }
 
 /** 預設值（與 `.env.example` 一致），缺漏時採用。 */
@@ -55,6 +64,17 @@ function trimmed(env: Env, key: string): string | undefined {
 function isTruthy(value: string | undefined): boolean {
   if (value === undefined) return false;
   return ["1", "true", "yes", "on"].includes(value.trim().toLowerCase());
+}
+
+function intEnv(env: Env, key: string, dflt: number, errors: string[]): number {
+  const raw = trimmed(env, key);
+  if (raw === undefined) return dflt;
+  const n = Number(raw);
+  if (!Number.isInteger(n) || n < 0) {
+    errors.push(`${key} must be a non-negative integer`);
+    return dflt;
+  }
+  return n;
 }
 
 /**
@@ -101,6 +121,11 @@ export function loadConfig(env: Env = process.env): Config {
     cfAccess = { teamDomain: cfTeamDomain, aud: cfAud };
   }
 
+  const lookupLimits: LookupLimitsConfig = {
+    userPerMin: intEnv(env, "LOOKUP_USER_PER_MIN", 10, errors),
+    globalPerDay: intEnv(env, "LOOKUP_GLOBAL_PER_DAY", 200, errors),
+  };
+
   if (errors.length > 0) {
     throw new Error(
       `Invalid environment configuration:\n  - ${errors.join("\n  - ")}`,
@@ -124,6 +149,7 @@ export function loadConfig(env: Env = process.env): Config {
     devAuthBypass,
     devUserEmail: trimmed(env, "DEV_USER_EMAIL") ?? DEFAULTS.devUserEmail,
     adminEmails: parseEmailList(trimmed(env, "ADMIN_EMAILS")),
+    lookupLimits,
   };
 }
 

@@ -19,6 +19,7 @@ import {
 import { buildApp } from "../app";
 import type { AuthConfig } from "../auth";
 import type { LookupDeps } from "./lookups";
+import { LookupLimiter } from "../rateLimit";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
@@ -304,5 +305,68 @@ describe("POST /lookups（重新解釋）", () => {
       ).statusCode,
     ).toBe(400);
     await app.close();
+  });
+
+  describe("用量韁繩", () => {
+    async function seed(): Promise<{ articleId: number; paragraphId: number }> {
+      const article = await createArticle(pool, { title: "Limits" });
+      const p = await createParagraph(pool, {
+        articleId: article.id,
+        idx: 0,
+        text: "Reading is a good habit.",
+      });
+      return { articleId: article.id, paragraphId: p.id };
+    }
+
+    it("超過 per-user 每分鐘上限 → 429 scope=user，且不呼叫任何 LLM/TTS", async () => {
+      const { articleId, paragraphId } = await seed();
+      const limiter = new LookupLimiter({ userPerMin: 0, globalPerDay: 100 });
+      const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps(), lookupLimiter: limiter });
+      const res = await app.inject({
+        method: "POST",
+        url: "/lookups",
+        payload: { articleId, paragraphId, word: "habit" },
+      });
+      expect(res.statusCode).toBe(429);
+      expect(res.json().scope).toBe("user");
+      expect(explainSpy).toHaveBeenCalledTimes(0);
+      expect(synthSpy).toHaveBeenCalledTimes(0);
+      await app.close();
+    });
+
+    it("全站每日上限 → 429 scope=global", async () => {
+      const { articleId, paragraphId } = await seed();
+      const limiter = new LookupLimiter({ userPerMin: 100, globalPerDay: 0 });
+      const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps(), lookupLimiter: limiter });
+      const res = await app.inject({
+        method: "POST",
+        url: "/lookups",
+        payload: { articleId, paragraphId, word: "habit" },
+      });
+      expect(res.statusCode).toBe(429);
+      expect(res.json().scope).toBe("global");
+      await app.close();
+    });
+
+    it("快取命中不受限流影響（上限 0 仍回 200）", async () => {
+      const { articleId, paragraphId } = await seed();
+      const app1 = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
+      await app1.inject({
+        method: "POST",
+        url: "/lookups",
+        payload: { articleId, paragraphId, word: "habit" },
+      });
+      await app1.close();
+
+      const limiter = new LookupLimiter({ userPerMin: 0, globalPerDay: 0 });
+      const app2 = buildApp({ config, pool, audioDir, lookupDeps: makeDeps(), lookupLimiter: limiter });
+      const res = await app2.inject({
+        method: "POST",
+        url: "/lookups",
+        payload: { articleId, paragraphId, word: "habit" },
+      });
+      expect(res.statusCode).toBe(200);
+      await app2.close();
+    });
   });
 });

@@ -8,6 +8,7 @@ import { registerArticleRoutes } from "./routes/articles";
 import { registerTaxonomyRoutes } from "./routes/taxonomy";
 import { registerLookupRoutes, type LookupDeps } from "./routes/lookups";
 import { registerStatsRoutes } from "./routes/stats";
+import type { LookupLimiter } from "./rateLimit";
 
 export interface BuildAppOpts {
   config: AuthConfig;
@@ -16,6 +17,8 @@ export interface BuildAppOpts {
   audioDir?: string;
   /** 重新解釋（POST /lookups）的 LLM／TTS 依賴；未提供時不掛載該路由。 */
   lookupDeps?: LookupDeps;
+  /** lookups 用量韁繩；未提供時不限流（測試預設行為不變）。 */
+  lookupLimiter?: LookupLimiter;
   getKey?: KeyInput;
   logger?: boolean;
 }
@@ -49,8 +52,8 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   // 業務路由。
   registerArticleRoutes(app, opts.pool, opts.audioDir);
   registerTaxonomyRoutes(app, opts.pool);
-  registerLookupRoutes(app, opts.pool, opts.lookupDeps);
-  registerStatsRoutes(app, opts.pool);
+  registerLookupRoutes(app, opts.pool, opts.lookupDeps, opts.lookupLimiter);
+  registerStatsRoutes(app, opts.pool, opts.lookupLimiter);
 
   return app;
 }

@@ -66,6 +66,7 @@ export interface Stats {
   jobs: Record<string, number>;
   words: number;
   explanations: number;
+  lookupsToday: { llmCalls: number; globalPerDay: number } | null;
 }
 
 export function getStats(): Promise<Stats> {

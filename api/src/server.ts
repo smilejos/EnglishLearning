@@ -8,6 +8,7 @@ import {
   GeminiTtsClient,
 } from "@el/shared";
 import { buildApp } from "./app";
+import { LookupLimiter } from "./rateLimit";
 
 const config = loadConfig();
 const pool = createPool(config.databaseUrl);
@@ -17,10 +18,13 @@ const auth = config.gemini.apiKey
   ? apiKeyAuthorizer(config.gemini.apiKey)
   : serviceAccountAuthorizer();
 
+const lookupLimiter = new LookupLimiter(config.lookupLimits);
+
 const app = buildApp({
   config,
   pool,
   audioDir: config.audioDir,
+  lookupLimiter,
   lookupDeps: {
     explainClient: new GeminiExplainClient({
       auth,
