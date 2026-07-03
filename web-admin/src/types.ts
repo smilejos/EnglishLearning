@@ -2,6 +2,11 @@
 export type Status = "pending" | "processing" | "done" | "failed";
 export type MaterialType = "school" | "extracurricular";
 
+export interface ArticleTag {
+  kind: string;
+  label: string;
+}
+
 export interface Article {
   id: number;
   title: string;
@@ -11,6 +16,8 @@ export interface Article {
   week: number | null;
   page: number | null;
   categoryId: number | null;
+  category: { id: number; label: string } | null;
+  tags: ArticleTag[];
   level: string | null;
   status: Status;
   createdBy: number | null;
@@ -38,4 +45,6 @@ export interface CreateArticleInput {
   week?: number;
   page?: number;
   level?: string;
+  categoryId?: number;
+  tags?: string[];
 }
