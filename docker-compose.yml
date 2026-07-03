@@ -101,6 +101,25 @@ services:
       api:
         condition: service_healthy
 
+  # 一次性示範資料匯入（免 LLM，從 fixtures 還原翻譯與音檔）。
+  # 僅在指定 profile 時啟用：`docker compose --profile seed run --rm seed`（見 npm run seed）。
+  seed:
+    profiles: ["seed"]
+    build:
+      context: .
+      dockerfile: Dockerfile.seed
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD:-app}@db:5432/${POSTGRES_DB:-english_learning}
+      AUDIO_DIR: /data/audio
+    volumes:
+      - audio:/data/audio
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    restart: "no"
+
 volumes:
   pgdata:
   audio:

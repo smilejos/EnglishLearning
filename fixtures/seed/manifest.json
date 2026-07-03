@@ -1,0 +1,594 @@
+{
+  "_comment": "預錄 seed 資料：翻譯與音檔皆為既有產物，供重置資料庫後免呼叫 LLM 直接還原。音檔路徑相對於本檔所在目錄的 audio/。",
+  "categories": [
+    {
+      "label": "動物",
+      "children": [
+        "貓科",
+        "鳥類"
+      ]
+    },
+    {
+      "label": "自然科學",
+      "children": []
+    }
+  ],
+  "tags": [
+    {
+      "kind": "題材",
+      "label": "動物"
+    },
+    {
+      "kind": "題材",
+      "label": "植物"
+    },
+    {
+      "kind": "題材",
+      "label": "日常"
+    },
+    {
+      "kind": "文體",
+      "label": "故事"
+    },
+    {
+      "kind": "文體",
+      "label": "科普"
+    },
+    {
+      "kind": "情境",
+      "label": "校園"
+    },
+    {
+      "kind": "題材",
+      "label": "季節"
+    },
+    {
+      "kind": "題材",
+      "label": "文化"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "brave-little-cat",
+      "title": "Brave Little Cat",
+      "materialType": "extracurricular",
+      "grade": null,
+      "unit": null,
+      "level": "A1",
+      "category": "貓科",
+      "tags": [
+        "文體:故事",
+        "題材:動物",
+        "題材:植物"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "A little cat was very brave.",
+          "translation": "一隻小貓非常勇敢。",
+          "enAudio": "brave-little-cat/p0.en.wav",
+          "zhAudio": "brave-little-cat/p0.zh.wav"
+        }
+      ]
+    },
+    {
+      "slug": "my-school-day",
+      "title": "My School Day",
+      "materialType": "school",
+      "grade": "三年級",
+      "unit": "Unit 1",
+      "level": "A1",
+      "category": null,
+      "tags": [
+        "題材:日常",
+        "情境:校園"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "I go to school every day.",
+          "translation": "我每天都上學。",
+          "enAudio": "my-school-day/p0.en.wav",
+          "zhAudio": "my-school-day/p0.zh.wav"
+        }
+      ]
+    },
+    {
+      "slug": "what-is-the-story-of-our-flag",
+      "title": "What is the story of our flag",
+      "materialType": "school",
+      "grade": "一年級",
+      "unit": "Unit 4",
+      "level": "intermediate",
+      "category": null,
+      "tags": [
+        "題材:文化"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "Our flag is red, white, and blue. It has stars and stripes. But did you know that the American flag has not always looked the same? When our country was new, the leaders decided we needed a flag. Back then, there were only 13 states. The first flag had a star and a stripe for each state.",
+          "translation": "我們的國旗是紅白藍三色的。它有星星和條紋。但你知道美國國旗並非一直都是這個樣子嗎？當我們國家剛成立時，領導人決定我們需要一面國旗。那時候，全國只有13個州。第一面國旗為每個州設計了一顆星和一條紋。",
+          "enAudio": "what-is-the-story-of-our-flag/p0.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 1,
+          "text": "The first flag had 13 stars and 13 stripes, like this one. Count them! Who made the first flag? No one knows for sure. Some people think it was a seamstress who lived in Philadelphia. Her name was Betsy Ross.",
+          "translation": "第一面國旗有13顆星和13條紋，就像這面一樣。數數看！是誰製作了第一面國旗呢？沒有人能確定。有些人認為是一位住在費城的裁縫師製作的，她的名字是貝琪·羅斯。",
+          "enAudio": "what-is-the-story-of-our-flag/p1.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 2,
+          "text": "Over the years, new states joined the country. Stars were added to the blue field. Sometimes the stars were in a circle. Other times they were in rows. Sometimes stripes were added too. Our flag today has 50 stars. There is one for each state. It has 13 stripes, for the first 13 states. When people see the flag, they think of our country.",
+          "translation": "多年來，新的州陸續加入這個國家。藍色背景上增加了星星。有時星星排列成圓圈，有時則排成一排排。有時也增加了條紋。我們今天的國旗有50顆星，每個州都有一顆。它有13條紋，代表最初的13個州。當人們看到這面國旗時，他們會想到我們的國家。",
+          "enAudio": "what-is-the-story-of-our-flag/p2.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 3,
+          "text": "Many people believe a man named Francis Hopkinson designed the first U.S. flag. His flag had 13 red and white stripes. The corner had 13 six- pointed stars on a patch of blue. On June 14, 1777, “Hopkinson’s flag” became the first flag of the United States. It was called the Stars and Stripes.",
+          "translation": "許多人認為一位名叫法蘭西斯·霍普金森（Francis Hopkinson）的人設計了第一面美國國旗。他的國旗有13條紅白相間的條紋。旗幟的一角在藍色背景上鑲有13顆六角星。在1777年6月14日，「霍普金森的國旗」成為美國的第一面國旗。它被稱為「星條旗」。",
+          "enAudio": "what-is-the-story-of-our-flag/p3.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 4,
+          "text": "As states were added to the country, stars and stripes were added to the flag. By 1795, the flag had 15 stars and 15 stripes. By 1818, there were 20 states.",
+          "translation": "隨著新的州陸續加入國家，國旗上也增加了星星和條紋。到1795年，國旗有15顆星和15條紋。到1818年，已經有20個州了。",
+          "enAudio": "what-is-the-story-of-our-flag/p4.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 5,
+          "text": "Adding a new stripe for each new state would mean very small stripes or a very tall flag! So, the country went back to a flag with 13 stripes. A star was added for each new state.",
+          "translation": "為每個新州增加一條新條紋，將意味著條紋會變得非常窄，或者國旗會變得非常高！因此，國家又回到了只有13條紋的國旗。而每當有新州加入時，就只增加一顆星。",
+          "enAudio": "what-is-the-story-of-our-flag/p5.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 6,
+          "text": "By 1959, there were 50 states. The flag got its 50th star on July 4, 1960. The star stands for the state of Hawaii. The flag of the United States has come a long way.",
+          "translation": "到1959年，全國共有50個州。國旗在1960年7月4日獲得了它的第50顆星。這顆星代表夏威夷州。美國國旗一路走來，意義深遠。",
+          "enAudio": "what-is-the-story-of-our-flag/p6.en.wav",
+          "zhAudio": null
+        }
+      ]
+    },
+    {
+      "slug": "every-season",
+      "title": "Every Season",
+      "materialType": "school",
+      "grade": "一年級",
+      "unit": "Unit 5",
+      "level": "intermediate",
+      "category": null,
+      "tags": [
+        "題材:季節"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "I Love Spring when grass grows green.\nSpeckled eggs fill woven nests. Showers soak. Seeds sprout. Flowers bloom.",
+          "translation": "我愛春天，當草地變綠時。斑點蛋裝滿了編織的鳥巢。陣雨淋濕大地。種子發芽。花朵盛開。",
+          "enAudio": "every-season/p0.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 1,
+          "text": "Crocuses pop. Daffodils open, then lilacs spread their sweet smell. Salamanders slither out from under mossy rocks. Ducklings follow, all in a row.",
+          "translation": "番紅花綻放。水仙花開，接著丁香花散發出甜美的芬芳。蠑螈從長滿青苔的岩石下爬出來。小鴨子一排排地跟著。",
+          "enAudio": "every-season/p1.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 2,
+          "text": "We hold rabbits, lambs, kittens, and chicks. Spring is the time to dig and plant. But then summer comes, and ...  I Love Summer Too",
+          "translation": "我們抱著兔子、小羊、小貓和小雞。春天是挖土和種植的季節。但夏天來了，而...我也愛夏天。",
+          "enAudio": "every-season/p2.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 3,
+          "text": "The sun shines strong and hot. You can wear a straw hat, or go barefoot in the grass.\nBees sip, frogs hop, butterflies flutter, and land. We taste strawberries, lemonade, watermelon, ice cream.",
+          "translation": "陽光強烈又炎熱。你可以戴上草帽，或赤腳走在草地上。蜜蜂啜飲，青蛙跳躍，蝴蝶翩翩飛舞，然後停下。我們品嚐草莓、檸檬水、西瓜、冰淇淋。",
+          "enAudio": "every-season/p3.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 4,
+          "text": "Shorebirds scurry and peck. I hear the roar of ocean waves. Summer is the time to splash and swim. But then autumn comes and ... I Love Autumn Too",
+          "translation": "岸邊的鳥兒跑來跑去，啄食著。我聽到海浪的咆哮聲。夏天是玩水和游泳的季節。但秋天來了，而...我也愛秋天。",
+          "enAudio": "every-season/p4.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 5,
+          "text": "Wind whips, seeds scatter.\nWe pull up our hoods and zip up our jackets. Leaves turn and fall.\nOrange maple, red oak, yellow ash. We pick pumpkins, taste apples, pears, and pies.",
+          "translation": "風呼嘯而過，種子隨風散落。我們拉起帽子，拉上夾克的拉鍊。樹葉變色並飄落。橘色的楓樹、紅色的橡樹、黃色的白蠟樹。我們採摘南瓜，品嚐蘋果、梨子和派。",
+          "enAudio": "every-season/p5.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 6,
+          "text": "Geese honk and head south. Chipmunks store acorns in a secret spot. Autumn is the time to rake and jump. But then winter comes, and ... I Love Winter Too",
+          "translation": "鵝鳴叫著，飛向南方。花栗鼠將橡子藏在隱密的地方。秋天是耙樹葉和跳躍的季節。但冬天來了，而...我也愛冬天。",
+          "enAudio": "every-season/p6.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 7,
+          "text": "The cold brings icicles and snowflakes that swirl.",
+          "translation": "寒冷帶來了冰柱和旋轉的雪花。",
+          "enAudio": "every-season/p7.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 8,
+          "text": "We make snow angels then sip hot chocolate. Mmmm ... Horses grow thick coats to keep warm. Chickadees search for seeds.",
+          "translation": "我們堆雪天使，然後啜飲熱巧克力。嗯...馬兒長出厚厚的皮毛來保暖。山雀尋找種子。",
+          "enAudio": "every-season/p8.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 9,
+          "text": "Snow blankets branches and buds. Animals leave their tracks.",
+          "translation": "白雪覆蓋著樹枝和花苞。動物留下牠們的足跡。",
+          "enAudio": "every-season/p9.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 10,
+          "text": "We wear hats, mittens, scarves, and skates. Winter is the time to coast and slide. But then spring comes, and ... I Love Spring",
+          "translation": "我們戴上帽子、手套、圍巾和溜冰鞋。冬天是滑行和溜冰的季節。但春天來了，而...我又愛春天。",
+          "enAudio": "every-season/p10.en.wav",
+          "zhAudio": null
+        }
+      ]
+    },
+    {
+      "slug": "in-spring",
+      "title": "In Spring",
+      "materialType": "school",
+      "grade": "一年級",
+      "unit": "Unit 5",
+      "level": "intermediate",
+      "category": null,
+      "tags": [
+        "題材:季節"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "Why is spring the best season? There are so many reasons. Just ask me!",
+          "translation": "為什麼春天是最好的季節？原因可多了。你問我就對了！",
+          "enAudio": "in-spring/p0.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 1,
+          "text": "In spring, days get warmer. You can feel breezes blow hints of hotter days. You can feel the sun’s warmth on your neck.",
+          "translation": "春天時，白晝漸暖。你可以感覺到微風吹來，帶著夏日即將到來的氣息。你可以感受到陽光灑在頸項上的溫暖。",
+          "enAudio": "in-spring/p1.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 2,
+          "text": "In spring, days get longer. You can run outside after dinner without a coat. You can watch squirrels dart around.",
+          "translation": "春天時，白晝漸長。你可以在晚餐後不穿外套就在外面跑步。你可以看到松鼠四處竄動。",
+          "enAudio": "in-spring/p2.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 3,
+          "text": "In spring, plants start growing again. You can walk in the woods and spy flowers hiding behind trees.",
+          "translation": "春天時，植物重新生長。你可以在樹林裡散步，發現藏在樹後的花朵。",
+          "enAudio": "in-spring/p3.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 4,
+          "text": "In spring, you can see worms coil up from underneath the wet ground. You can wear boots and splash through puddles.",
+          "translation": "春天時，你可以看到蚯蚓從濕潤的泥土下鑽出來。你可以穿著靴子，在水窪裡踩水花。",
+          "enAudio": "in-spring/p4.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 5,
+          "text": "In spring, animals have babies. You can see tadpoles swimming beneath the pond’s melting ice. You can see fawns struggling to walk on their young legs.",
+          "translation": "春天時，動物們誕生了寶寶。你可以看到蝌蚪在融化的池塘冰面下游泳。你可以看到小鹿努力用牠們稚嫩的腿學習走路。",
+          "enAudio": "in-spring/p5.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 6,
+          "text": "Spring is the best season. It links the cold of winter with the heat of summer. It waves good-bye to one season and welcomes another. There are so many reasons to like spring. Don’t you think so too?",
+          "translation": "春天是最好的季節。它連結了冬日的嚴寒與夏日的酷熱。它告別了一個季節，並迎接了另一個。喜歡春天的理由實在太多了。你是不是也這麼覺得呢？",
+          "enAudio": "in-spring/p6.en.wav",
+          "zhAudio": null
+        }
+      ]
+    },
+    {
+      "slug": "my-autumn-book",
+      "title": "My autumn book",
+      "materialType": "school",
+      "grade": "一年級",
+      "unit": "Unit 5",
+      "level": "intermediate",
+      "category": null,
+      "tags": [
+        "題材:季節"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "The air is crisp. The sky turns gray. Is autumn really on the way? Downstairs I rush. I can hardly wait, To go outside and investigate.",
+          "translation": "空氣清爽，天空轉灰。秋天真的要來了嗎？我衝下樓，迫不及待地想出去一探究竟。",
+          "enAudio": "my-autumn-book/p0.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 1,
+          "text": "In a corner of the garden shed, Spider spins a silken thread. Hello, Spider! What are you weaving? Is it true that summer Is leaving? Crickets chirruping in the clover ... Another sign that warm days are over.",
+          "translation": "在花園小屋的一角，蜘蛛正在吐絲結網。哈囉，蜘蛛！你在織什麼呢？夏天真的要走了嗎？苜蓿叢中傳來蟋蟀的唧唧聲……這是溫暖日子已逝的另一個徵兆。",
+          "enAudio": "my-autumn-book/p1.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 2,
+          "text": "A chilly wind blows. I zip my jacket. From the treetops I hear a racket. The buzzing gets louder. It fills the air. Cicada is warning us: Better beware! Summer is leaving! Autumn coming! Woodpecker agrees, rap-a-tap drumming.",
+          "translation": "一陣涼風吹來。我拉上外套拉鍊。樹頂傳來喧鬧聲。嗡嗡聲漸響，瀰漫空中。蟬在警告著我們：最好提防！夏天要走了！秋天來了！啄木鳥也「叩叩」地敲擊著，表示贊同。",
+          "enAudio": "my-autumn-book/p2.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 3,
+          "text": "Chipmunk scampers past, Seeds packed in its cheeks, Finding food for the upcoming weeks. Squirrel digs a hole to bury its treasure. Squirrel is expecting a change in the weather.",
+          "translation": "花栗鼠一溜煙跑過，兩頰鼓鼓地塞滿種子，為未來幾週覓食。松鼠挖洞埋下牠的寶藏，預期天氣將有變化。",
+          "enAudio": "my-autumn-book/p3.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 4,
+          "text": "Caterpillar knows it's time to cocoon. Ker-YAK! Blue Jay cries. Autumn so soon? Geese honk above, Fly south in formation. Trees dressing up for the fall celebration.",
+          "translation": "毛毛蟲知道該結繭了。「喀呀！」藍鵲叫道。秋天這麼早就來了？雁群在空中鳴叫，排成隊形向南飛去。樹木為秋日慶典盛裝打扮。",
+          "enAudio": "my-autumn-book/p4.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 5,
+          "text": "Dogwood shows off a new crimson gown. Oak changes into a  suit of rust brown. Ash cloaked in yellow. Maple wears red. Aspen, a crown of gold on its head.",
+          "translation": "山茱萸換上深紅色的新禮服。橡樹穿上鏽褐色的外衣。白蠟樹披著黃袍。楓樹一身紅。白楊樹頭戴金色皇冠。",
+          "enAudio": "my-autumn-book/p5.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 6,
+          "text": "Together they whisper and sway in the breeze, Shaking loose acorns and batches of leaves.\nSwirling and twirling, leaves spinning round, A whirlwind of color that blankets the ground.",
+          "translation": "它們一同在微風中低語搖曳，抖落橡實和成批的樹葉。樹葉旋轉飛舞，四處打轉，一片色彩的旋風，鋪滿大地。",
+          "enAudio": "my-autumn-book/p6.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 7,
+          "text": "I search high and low, Find one of each— A ginkgo, a willow, An elm, birch, and beech. Summer is leaving, fall's on its way. The seasons are changing, No time to delay.",
+          "translation": "我東找西尋，找到每種各一片——銀杏、柳樹、榆樹、樺樹和山毛櫸的葉子。夏日將逝，秋意漸濃。季節更迭，不容遲緩。",
+          "enAudio": "my-autumn-book/p7.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 8,
+          "text": "I dash up to my room And open the door. Empty my pack, Spread things on the floor.",
+          "translation": "我衝上房間，打開房門。倒出背包裡的東西，把東西攤在地板上。",
+          "enAudio": "my-autumn-book/p8.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 9,
+          "text": "I find a jar for the acorns... Fetch scissors and glue. A pad of paper, and crayons, too.",
+          "translation": "我找到一個裝橡實的玻璃罐……拿出剪刀和膠水。還有，一疊紙和蠟筆。",
+          "enAudio": "my-autumn-book/p9.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 10,
+          "text": "I decorate pages, Arrange to make space ... There, it's all done! Everything is in place.",
+          "translation": "我裝飾頁面，整理好空間……看，大功告成！一切都到位了。",
+          "enAudio": "my-autumn-book/p10.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 11,
+          "text": "When crickets no longer sing late at night And the world outside Has turned cold, black and white... I'll lie by the fire. With my book and remember, until autumn returns. Once more in September.",
+          "translation": "當蟋蟀不再深夜鳴唱，而外面的世界變得寒冷、黑白一片時……我將會躺在爐火旁，翻著我的書，回憶著，直到秋天再次在九月歸來。",
+          "enAudio": "my-autumn-book/p11.en.wav",
+          "zhAudio": null
+        }
+      ]
+    },
+    {
+      "slug": "season-around-the-world",
+      "title": "Season around the world",
+      "materialType": "school",
+      "grade": "一年級",
+      "unit": "Unit 5",
+      "level": "intermediate",
+      "category": null,
+      "tags": [
+        "題材:季節"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "WINTER! During winter, the days are shorter than they are during other seasons. In many places, the air gets cold and it snows. Most plants and trees stop growing. Some die. Some animals hibernate.",
+          "translation": "冬天！冬天時，白晝比其他季節短。在許多地方，空氣變冷並下雪。大多數植物和樹木停止生長，有些會死亡。有些動物會冬眠。",
+          "enAudio": "season-around-the-world/p0.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 1,
+          "text": "Did You Know? When it is winter in the northern part of the world, it is summer in the southern part! Near the North Pole, the sun never shines in winter. It is dark all day!",
+          "translation": "你知道嗎？當地球北半球是冬天時，南半球就是夏天！在北極附近，冬天太陽從不露臉，整天都是黑夜！",
+          "enAudio": "season-around-the-world/p1.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 2,
+          "text": "SPRING! Spring comes after winter. In many places, baby animals are born. Flowers bloom and leaves appear on the trees. It can rain a lot during spring. The rain and warmer weather help plants grow.",
+          "translation": "春天！春天在冬天之後來臨。在許多地方，動物幼崽誕生，花朵盛開，樹木長出新葉。春天經常下雨，雨水和溫暖的天氣有助於植物生長。",
+          "enAudio": "season-around-the-world/p2.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 3,
+          "text": "Did You Know? In some parts of the world, there are only two seasons: a rainy season and a dry season! The seasons don't change much near the equator. Spring is like all the other seasons.",
+          "translation": "你知道嗎？在世界某些地方，只有兩個季節：雨季和旱季！赤道附近的季節變化不大，春天就像其他所有季節一樣。",
+          "enAudio": "season-around-the-world/p3.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 4,
+          "text": "SUMMER! During summer, the days are longer than they are during other seasons. The sunlight helps plants grow in the summer. People like to spend time in the sun too.",
+          "translation": "夏天！夏天時，白晝比其他季節長。夏天的陽光有助於植物生長。人們也喜歡在陽光下活動。",
+          "enAudio": "season-around-the-world/p4.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 5,
+          "text": "Did You Know? In summer, the sun never sets in Antarctica! This is the coldest place on Earth. Even in summer, it never gets warm here.",
+          "translation": "你知道嗎？夏天時，南極洲的太陽永不落下！這是地球上最冷的地方。即使在夏天，這裡也從不變暖。",
+          "enAudio": "season-around-the-world/p5.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 6,
+          "text": "FALL During fall, the days start to get shorter again. The leaves on some trees change colors and drop to the ground. Animals start getting ready for winter too. They eat a lot. Some animals store food.",
+          "translation": "秋天！秋天時，白晝又開始變短。有些樹木的葉子變色並掉落到地上。動物也開始為冬天做準備，牠們吃很多東西，有些動物會儲存食物。",
+          "enAudio": "season-around-the-world/p6.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 7,
+          "text": "Did You Know? Some butterflies travel all the way from the United States to Mexico in the fall so they can stay warm in winter! In fall, many birds and animals move to warmer places where they can find food.",
+          "translation": "你知道嗎？有些蝴蝶會在秋天從美國一路遷徙到墨西哥，以便在冬天保持溫暖！秋天時，許多鳥類和動物會遷徙到比較溫暖且能找到食物的地方。",
+          "enAudio": "season-around-the-world/p7.en.wav",
+          "zhAudio": null
+        }
+      ]
+    },
+    {
+      "slug": "signs-of-winter",
+      "title": "Signs of Winter",
+      "materialType": "school",
+      "grade": "一年級",
+      "unit": "Unit 5",
+      "level": "intermediate",
+      "category": null,
+      "tags": [
+        "題材:季節"
+      ],
+      "paragraphs": [
+        {
+          "idx": 0,
+          "text": "There are four seasons during the year. They are called spring, summer, autumn, and winter. The weather, plants, animals, and daylight hours change during each season.",
+          "translation": "一年有四個季節，分別是春、夏、秋、冬。每個季節的天氣、植物、動物和日照時間都會改變。",
+          "enAudio": "signs-of-winter/p0.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 1,
+          "text": "Did You Know? In France it is winter in December. In New Zealand it is winter in July.",
+          "translation": "你知道嗎？法國在十二月是冬天。紐西蘭在七月是冬天。",
+          "enAudio": "signs-of-winter/p1.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 2,
+          "text": "During the year, Earth travels around the sun. This brings some parts of Earth closer to the sun. Other parts of Earth get farther from the sun. Winter happens in the parts farthest from the sun.",
+          "translation": "一年之中，地球繞著太陽公轉。這使得地球的某些部分離太陽更近，而另一些部分則離太陽更遠。冬天發生在離太陽最遠的部分。",
+          "enAudio": "signs-of-winter/p2.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 3,
+          "text": "In the winter, there are many clouds in the sky. Instead of raining, it snows. Vanessa and Tom are building a snowman. They start by making a huge snowball.",
+          "translation": "冬天時，天空中有很多雲。下雪代替了下雨。凡妮莎和湯姆正在堆雪人。他們先從滾一個巨大的雪球開始。",
+          "enAudio": "signs-of-winter/p3.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 4,
+          "text": "There is very little daylight in winter. It gets dark out early in the evening.",
+          "translation": "冬天時，白晝時間很短。晚上很早就天黑了。",
+          "enAudio": "signs-of-winter/p4.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 5,
+          "text": "Did You Know? Pine and fir trees have needles. The needles stay on the trees during winter.",
+          "translation": "你知道嗎？松樹和杉樹都有針狀葉。這些針狀葉在冬天會留在樹上。",
+          "enAudio": "signs-of-winter/p5.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 6,
+          "text": "In winter many trees are bare. Their branches don't have any leaves.",
+          "translation": "冬天時，許多樹木都光禿禿的。它們的樹枝上沒有任何葉子。",
+          "enAudio": "signs-of-winter/p6.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 7,
+          "text": "The temperature can get very cold during the winter. People need to wear extra clothes to\nkeep warm. James is making a snow angel. His coat and snow pants keep him from getting cold.",
+          "translation": "冬天的氣溫會變得非常寒冷。人們需要穿更多的衣服來保暖。詹姆斯正在玩雪天使。他的外套和雪褲使他不會感到寒冷。",
+          "enAudio": "signs-of-winter/p7.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 8,
+          "text": "Did You Know? An American bison's coat grows extra long and thick in the winter.",
+          "translation": "你知道嗎？北美野牛的毛皮在冬天會長得特別長和厚。",
+          "enAudio": "signs-of-winter/p8.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 9,
+          "text": "The temperature is cold for animals too. Some move to warmer places for the winter. Animals that have a lot of fur stay during the winter. Their fur keeps them warm.",
+          "translation": "對動物來說，氣溫也很冷。有些動物會遷徙到比較溫暖的地方過冬。毛髮多的動物則會留在原地過冬。牠們的毛皮可以保暖。",
+          "enAudio": "signs-of-winter/p9.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 10,
+          "text": "It is hard for animals to find food in the winter. In autumn, beavers collect extra sticks and logs. They keep them in the water near their lodges. They eat the bark during the winter.",
+          "translation": "動物在冬天很難找到食物。秋天時，海狸會收集額外的樹枝和圓木。牠們將這些儲存在窩附近的水中。冬天時，牠們會吃樹皮。",
+          "enAudio": "signs-of-winter/p10.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 11,
+          "text": "Did You Know? Winter comes after autumn and before spring.",
+          "translation": "你知道嗎？冬天在秋天之後，春天之前。",
+          "enAudio": "signs-of-winter/p11.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 12,
+          "text": "Bobby likes to go sledding in the winter. What do you do in the winter?",
+          "translation": "巴比喜歡在冬天玩雪橇。你冬天會做些什麼呢？",
+          "enAudio": "signs-of-winter/p12.en.wav",
+          "zhAudio": null
+        },
+        {
+          "idx": 13,
+          "text": "Glossary\n- change — to be altered or become different.\n- collect — to pick up or gather things from different places.\n- needle — a thin, pointy leaf on a pine or fir tree.\n- sled — a wooden or plastic vehicle that you sit on to ride down a snowy hill. Doing this is called sledding.\n- temperature — a measure of how hot or cold something is.",
+          "translation": "詞彙表\n- 改變 — 被修改或變得不同。\n- 收集 — 從不同地方撿起或聚集東西。\n- 針狀葉 — 松樹或杉樹上細長尖尖的葉子。\n- 雪橇 — 一種木製或塑膠製的交通工具，人們坐在上面從雪坡滑下。做這件事稱為玩雪橇。\n- 溫度 — 衡量某物有多熱或多冷。",
+          "enAudio": "signs-of-winter/p13.en.wav",
+          "zhAudio": null
+        }
+      ]
+    }
+  ]
+}

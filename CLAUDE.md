@@ -11,3 +11,9 @@
 - **LLM 相關的真實 API 測試只在明確需要時才手動執行**，避免產生不必要的費用；不得掛在預設 `npm test` 或 CI 例行流程。若新增此類測試，須以環境變數旗標明確 opt-in 並在說明中標註會產生費用。
 - **測試範疇要明確**：不需要 LLM 的邏輯就用固定輸入／mock 驗證，不重新產生內容。
 - 整合測試一律跑在獨立測試庫（`docker-compose.test.yml`，5433/`english_learning_test`，tmpfs 即用即棄），不碰正式機資料。
+
+## 示範資料還原（免 LLM）
+- 重置資料庫後，**用預錄 fixtures 還原，不要重新 `POST /articles` 讓 worker 再呼叫 Gemini**。
+- Fixtures 位於 `fixtures/seed/`：`manifest.json`（文章／分類／標籤／段落＋翻譯）與 `audio/`（預錄音檔）。
+- 匯入指令：`npm run seed`（透過 `docker compose --profile seed`，直接寫入 DB 並把音檔複製進 audio volume，狀態直接為 done）。
+- 若新增了想長期保留的示範內容，將其翻譯與音檔補進 `fixtures/seed/` 後再提交。

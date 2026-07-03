@@ -1,0 +1,17 @@
+# 一次性示範資料匯入器：安裝 pg，帶入 seed 腳本與 fixtures（含預錄音檔），
+# 由 docker-compose 的 seed 服務（profile: seed）使用，掛載 audio volume 寫入音檔。
+FROM node:20-alpine
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+COPY shared/package.json ./shared/package.json
+COPY api/package.json ./api/package.json
+COPY worker/package.json ./worker/package.json
+COPY web-admin/package.json ./web-admin/package.json
+COPY web-learner/package.json ./web-learner/package.json
+RUN npm ci --no-audit --no-fund
+
+COPY scripts ./scripts
+COPY fixtures ./fixtures
+
+CMD ["node", "scripts/seed.mjs"]
