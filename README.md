@@ -44,6 +44,58 @@
 | `./scripts/deploy.sh clean` | 連同 volume 一併清除（**會清空 DB**，需輸入 `yes` 確認） |
 | `./scripts/deploy.sh help` | 顯示用法 |
 
+## 備份與還原
+
+備份內容：PostgreSQL 全庫（`pg_dump --format=custom`）＋ audio volume（tar.gz）。
+**備份檔含使用者 email，請存放於私人空間；異地備份建議先加密（age/gpg）。**
+
+```bash
+# 手動備份（預設到 ~/EnglishLearningBackups，保留最近 7 份）
+./scripts/backup.sh
+# 指定目的地與保留份數
+BACKUP_DIR=/Volumes/NAS/elb BACKUP_KEEP=14 ./scripts/backup.sh
+```
+
+### 還原
+
+```bash
+# 1) 還原資料庫（覆蓋現有資料，操作前務必確認！）
+docker compose up -d db
+docker compose exec -T db pg_restore -U app -d english_learning \
+  --clean --if-exists --no-owner < /path/to/backup/db.dump
+
+# 2) 還原音檔到 audio volume
+tar -xzf /path/to/backup/audio.tgz -C /tmp
+docker compose cp /tmp/audio/. api:/data/audio
+rm -rf /tmp/audio
+
+# 3) 重啟服務
+./scripts/deploy.sh restart
+```
+
+### 每日自動備份（macOS launchd）
+
+存成 `~/Library/LaunchAgents/com.englishlearning.backup.plist` 後
+`launchctl load ~/Library/LaunchAgents/com.englishlearning.backup.plist`：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.englishlearning.backup</string>
+  <key>ProgramArguments</key><array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>cd 〈repo 絕對路徑〉 && ./scripts/backup.sh >> /tmp/el-backup.log 2>&1</string>
+  </array>
+  <key>StartCalendarInterval</key><dict>
+    <key>Hour</key><integer>3</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+</dict></plist>
+```
+
 ### 啟動後的逐項驗證
 
 ```bash
