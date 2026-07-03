@@ -1,5 +1,5 @@
-// 單字查詢路由。GET 既有解釋清單；POST 重新解釋（即時、互動式）。
-import type { FastifyInstance } from "fastify";
+// 單字查詢路由。GET 既有解釋清單；POST 重新解釋（即時、互動式）；POST 補缺音檔（admin）。
+import type { FastifyInstance, FastifyBaseLogger } from "fastify";
 import {
   normalizeWord,
   findWordByNormalized,
@@ -15,11 +15,16 @@ import {
   explainWord,
   WordLookupRequestSchema,
   writeAudioEncoded,
+  listWordsMissingEnAudio,
+  listExplanationsMissingAudio,
+  updateExplanationAudioPaths,
   type DbPool,
   type ExplainClient,
   type TtsClient,
   type AudioFormat,
+  type ExplanationAudioPaths,
 } from "@el/shared";
+import { requireAdmin } from "../auth";
 import type { LookupLimiter } from "../rateLimit";
 
 /** 重新解釋所需的 LLM／TTS 依賴與音檔設定（注入以利測試 mock）。 */
@@ -59,6 +64,24 @@ export function registerLookupRoutes(
   // 重新解釋：{ articleId, paragraphId, word } → 快取命中即回；未命中則
   // 呼叫 LLM 產生解釋與例句、各項 TTS（含 word 英文發音若缺），寫入後回傳。
   if (!deps) return;
+
+  // TTS 盡力而為：單項失敗記 log 回 null（文字照存，之後可用 backfill 補齊）。
+  const trySynth = async (
+    log: FastifyBaseLogger,
+    text: string,
+    voice: string,
+    relBase: string,
+  ): Promise<string | null> => {
+    try {
+      const { wav } = await deps.ttsClient.synthesize(text, voice);
+      return await writeAudioEncoded(deps.audioDir, relBase, wav, {
+        format: deps.audioFormat,
+      });
+    } catch (err) {
+      log.warn({ evt: "tts_failed", rel: relBase, err: (err as Error).message });
+      return null;
+    }
+  };
 
   app.post("/lookups", async (request, reply) => {
     const parsed = WordLookupRequestSchema.safeParse(request.body);
@@ -118,32 +141,11 @@ export function registerLookupRoutes(
       deps.explainClient,
     );
 
-    // 各段 TTS 盡力而為：單段失敗（例如 Gemini 對極短文字回 finishReason OTHER）
-    // 不應使整個查詢失敗——記錄並以 null 帶過，解釋文字照存、之後可補。
-    const trySynth = async (
-      text: string,
-      voice: string,
-      relBase: string,
-    ): Promise<string | null> => {
-      try {
-        const { wav } = await deps.ttsClient.synthesize(text, voice);
-        return await writeAudioEncoded(deps.audioDir, relBase, wav, {
-          format: deps.audioFormat,
-        });
-      } catch (err) {
-        request.log.warn({
-          evt: "tts_failed",
-          rel: relBase,
-          err: (err as Error).message,
-        });
-        return null;
-      }
-    };
-
     // word 英文發音（跨解釋共用，缺則補；失敗則維持 null）。
     let enAudioPath = word.enAudioPath;
     if (!enAudioPath) {
       enAudioPath = await trySynth(
+        request.log,
         normalized,
         deps.voiceEn,
         `words/${word.id}/en`,
@@ -159,11 +161,11 @@ export function registerLookupRoutes(
       zhExplanationAudioPath,
       zhExampleAudioPath,
     ] = await Promise.all([
-      trySynth(content.en_explanation, deps.voiceEn, `${base}/en_explanation`),
-      trySynth(content.en_example, deps.voiceEn, `${base}/en_example`),
-      trySynth(content.zh_translation, deps.voiceZh, `${base}/zh_translation`),
-      trySynth(content.zh_explanation, deps.voiceZh, `${base}/zh_explanation`),
-      trySynth(content.zh_example, deps.voiceZh, `${base}/zh_example`),
+      trySynth(request.log, content.en_explanation, deps.voiceEn, `${base}/en_explanation`),
+      trySynth(request.log, content.en_example, deps.voiceEn, `${base}/en_example`),
+      trySynth(request.log, content.zh_translation, deps.voiceZh, `${base}/zh_translation`),
+      trySynth(request.log, content.zh_explanation, deps.voiceZh, `${base}/zh_explanation`),
+      trySynth(request.log, content.zh_example, deps.voiceZh, `${base}/zh_example`),
     ]);
 
     let explanation;
@@ -218,4 +220,47 @@ export function registerLookupRoutes(
       explanation: { ...explanation, article: { id: article.id, title: article.title } },
     });
   });
+
+  // 補齊缺失音檔（admin）：掃描缺英文發音的單字與缺音的解釋，逐項補產。
+  app.post(
+    "/lookups/backfill-audio",
+    { preHandler: requireAdmin },
+    async (request) => {
+      const words = await listWordsMissingEnAudio(pool, 10);
+      const explanations = await listExplanationsMissingAudio(pool, 10);
+      let fixed = 0;
+
+      for (const w of words) {
+        const p = await trySynth(request.log, w.normalizedWord, deps.voiceEn, `words/${w.id}/en`);
+        if (p) {
+          await setWordEnAudioPath(pool, w.id, p);
+          fixed += 1;
+        }
+      }
+
+      for (const e of explanations) {
+        const base = `words/${e.wordId}/a${e.articleId}`;
+        const patch: ExplanationAudioPaths = {};
+        if (e.enExplanation && !e.enExplanationAudioPath)
+          patch.enExplanationAudioPath = await trySynth(request.log, e.enExplanation, deps.voiceEn, `${base}/en_explanation`);
+        if (e.enExample && !e.enExampleAudioPath)
+          patch.enExampleAudioPath = await trySynth(request.log, e.enExample, deps.voiceEn, `${base}/en_example`);
+        if (e.zhTranslation && !e.zhTranslationAudioPath)
+          patch.zhTranslationAudioPath = await trySynth(request.log, e.zhTranslation, deps.voiceZh, `${base}/zh_translation`);
+        if (e.zhExplanation && !e.zhExplanationAudioPath)
+          patch.zhExplanationAudioPath = await trySynth(request.log, e.zhExplanation, deps.voiceZh, `${base}/zh_explanation`);
+        if (e.zhExample && !e.zhExampleAudioPath)
+          patch.zhExampleAudioPath = await trySynth(request.log, e.zhExample, deps.voiceZh, `${base}/zh_example`);
+        const got = Object.values(patch).filter(Boolean).length;
+        if (got > 0) await updateExplanationAudioPaths(pool, e.id, patch);
+        fixed += got;
+      }
+
+      return {
+        fixedAudio: fixed,
+        scannedWords: words.length,
+        scannedExplanations: explanations.length,
+      };
+    },
+  );
 }

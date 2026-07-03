@@ -371,6 +371,54 @@ describe("POST /lookups（重新解釋）", () => {
       await app2.close();
     });
   });
+
+  describe("POST /lookups/backfill-audio", () => {
+    const adminConfig: AuthConfig = {
+      cfAccess: null,
+      devAuthBypass: true,
+      devUserEmail: "admin@example.com",
+      adminEmails: ["admin@example.com"],
+    };
+
+    it("補齊缺失的 word 發音與解釋音檔", async () => {
+      const article = await createArticle(pool, { title: "Backfill" });
+      const w = await getOrCreateWord(pool, "habit"); // enAudioPath 為 null
+      await createExplanation(pool, {
+        wordId: w.id,
+        articleId: article.id,
+        zhTranslation: "習慣",
+        enExplanation: "a regular practice",
+        // 其餘文字欄位與所有音檔皆 null
+      });
+
+      const app = buildApp({
+        config: adminConfig,
+        pool,
+        audioDir,
+        lookupDeps: makeDeps(),
+      });
+      const res = await app.inject({ method: "POST", url: "/lookups/backfill-audio" });
+      expect(res.statusCode).toBe(200);
+      // word 英文發音 + zh_translation + en_explanation 共 3 個。
+      expect(res.json().fixedAudio).toBe(3);
+
+      const word = await findWordByNormalized(pool, "habit");
+      expect(word!.enAudioPath).toBeTruthy();
+      const exp = await findExplanation(pool, w.id, article.id);
+      expect(exp!.zhTranslationAudioPath).toBeTruthy();
+      expect(exp!.enExplanationAudioPath).toBeTruthy();
+      expect(exp!.enExampleAudioPath).toBeNull(); // 無文字者不補
+      await app.close();
+    });
+
+    it("reader 身分 → 403 且不呼叫 TTS", async () => {
+      const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
+      const res = await app.inject({ method: "POST", url: "/lookups/backfill-audio" });
+      expect(res.statusCode).toBe(403);
+      expect(synthSpy).toHaveBeenCalledTimes(0);
+      await app.close();
+    });
+  });
 });
 
 describe("GET /articles/:id/lookups（已查單字清單）", () => {

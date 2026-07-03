@@ -611,6 +611,20 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
           }}
         />
         <StatsBar />
+        <button
+          className="btn btn--ghost btn--sm"
+          title="重新產生缺失的單字/解釋語音（會呼叫 TTS API）"
+          onClick={async () => {
+            if (!window.confirm("補齊缺失音檔？將呼叫語音 API（產生費用）。")) return;
+            const r = await api.backfillAudio();
+            window.alert(
+              `已補 ${r.fixedAudio} 個音檔（掃描 ${r.scannedWords} 個單字、${r.scannedExplanations} 筆解釋）`,
+            );
+            void load();
+          }}
+        >
+          補缺音檔
+        </button>
       </div>
       {error && <p className="error-text">{error}</p>}
       <div

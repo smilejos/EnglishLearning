@@ -65,6 +65,14 @@ export function regenerateParagraph(
   });
 }
 
+export function backfillAudio(): Promise<{
+  fixedAudio: number;
+  scannedWords: number;
+  scannedExplanations: number;
+}> {
+  return req("/lookups/backfill-audio", { method: "POST" });
+}
+
 export function deleteArticle(id: number): Promise<{ ok: boolean }> {
   return req(`/articles/${id}`, { method: "DELETE" });
 }

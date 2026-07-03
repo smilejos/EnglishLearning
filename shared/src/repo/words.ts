@@ -50,3 +50,19 @@ export async function setWordEnAudioPath(
     enAudioPath,
   ]);
 }
+
+/** 缺英文發音、且至少有一筆解釋的單字（補產音檔用）。 */
+export async function listWordsMissingEnAudio(
+  db: Queryable,
+  limit: number,
+): Promise<Word[]> {
+  const res = await db.query(
+    `SELECT * FROM words w
+      WHERE w.en_audio_path IS NULL
+        AND EXISTS (SELECT 1 FROM word_explanations we WHERE we.word_id = w.id)
+      ORDER BY w.id
+      LIMIT $1`,
+    [limit],
+  );
+  return res.rows.map(mapWord);
+}
