@@ -139,3 +139,22 @@ export async function resetFailedJobsByArticle(
   );
   return res.rowCount ?? 0;
 }
+
+/** 單段重新產生：該段 job 重設回 pending（attempts 歸零、error 清空）；不存在則建立。 */
+export async function resetJobForParagraph(
+  db: Queryable,
+  articleId: number,
+  paragraphId: number,
+): Promise<void> {
+  const res = await db.query(
+    `UPDATE jobs SET status = 'pending', attempts = 0, error = NULL, updated_at = now()
+      WHERE article_id = $1 AND paragraph_id = $2`,
+    [articleId, paragraphId],
+  );
+  if ((res.rowCount ?? 0) === 0) {
+    await db.query(`INSERT INTO jobs (article_id, paragraph_id) VALUES ($1, $2)`, [
+      articleId,
+      paragraphId,
+    ]);
+  }
+}

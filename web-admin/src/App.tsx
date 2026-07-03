@@ -353,6 +353,17 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
     void load();
   }
 
+  async function regen(p: Paragraph) {
+    if (
+      !window.confirm(
+        `重新產生第 ${p.idx + 1} 段？將重新呼叫翻譯與語音 API（產生費用）。`,
+      )
+    )
+      return;
+    await api.regenerateParagraph(id, p.id);
+    void load();
+  }
+
   async function save() {
     if (!draft) return;
     setSaving(true);
@@ -458,6 +469,11 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
           <div className="para-item__head">
             <span className="para-item__idx">#{p.idx + 1}</span>
             <StatusBadge status={p.status} />
+            {(p.status === "done" || p.status === "failed") && (
+              <button className="btn btn--ghost btn--sm" onClick={() => void regen(p)}>
+                重新產生
+              </button>
+            )}
           </div>
           <p className="para-item__text">{p.text}</p>
           {p.jobError && (

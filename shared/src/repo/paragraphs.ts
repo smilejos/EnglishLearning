@@ -124,3 +124,17 @@ export async function resetFailedParagraphsByArticle(
   );
   return res.rowCount ?? 0;
 }
+
+/** 單段重新產生前的清空：翻譯與音檔路徑歸 null、狀態回 pending。 */
+export async function clearParagraphResult(
+  db: Queryable,
+  id: number,
+): Promise<void> {
+  await db.query(
+    `UPDATE paragraphs
+        SET translation = NULL, en_audio_path = NULL, zh_audio_path = NULL,
+            status = 'pending'
+      WHERE id = $1`,
+    [id],
+  );
+}

@@ -465,3 +465,54 @@ describe("GET /articles/:id 失敗原因", () => {
     await app.close();
   });
 });
+
+describe("POST /articles/:id/paragraphs/:pid/regenerate", () => {
+  it("done 段落重設為 pending（翻譯清空）、job 歸零、文章 processing", async () => {
+    const article = await createArticle(pool, { title: "Regen" });
+    const p = await createParagraph(pool, { articleId: article.id, idx: 0, text: "T." });
+    const job = await createJob(pool, article.id, p.id);
+    await pool.query(`UPDATE paragraphs SET status='done', translation='舊譯' WHERE id=$1`, [p.id]);
+    await pool.query(`UPDATE jobs SET status='done', attempts=2 WHERE id=$1`, [job.id]);
+    await pool.query(`UPDATE articles SET status='done' WHERE id=$1`, [article.id]);
+
+    const app = buildApp({ config: adminConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${article.id}/paragraphs/${p.id}/regenerate`,
+    });
+    expect(res.statusCode).toBe(200);
+
+    const para = (await listParagraphsByArticle(pool, article.id))[0];
+    expect(para.status).toBe("pending");
+    expect(para.translation).toBeNull();
+    const j = await pool.query(`SELECT status, attempts, error FROM jobs WHERE id=$1`, [job.id]);
+    expect(j.rows[0]).toMatchObject({ status: "pending", attempts: 0, error: null });
+    expect((await getArticleById(pool, article.id))!.status).toBe("processing");
+    await app.close();
+  });
+
+  it("段落不屬於該文章 → 404", async () => {
+    const a1 = await createArticle(pool, { title: "A1" });
+    const a2 = await createArticle(pool, { title: "A2" });
+    const p2 = await createParagraph(pool, { articleId: a2.id, idx: 0, text: "X." });
+    const app = buildApp({ config: adminConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${a1.id}/paragraphs/${p2.id}/regenerate`,
+    });
+    expect(res.statusCode).toBe(404);
+    await app.close();
+  });
+
+  it("reader 身分 → 403", async () => {
+    const article = await createArticle(pool, { title: "NoAuth" });
+    const p = await createParagraph(pool, { articleId: article.id, idx: 0, text: "X." });
+    const app = buildApp({ config: readerConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${article.id}/paragraphs/${p.id}/regenerate`,
+    });
+    expect(res.statusCode).toBe(403);
+    await app.close();
+  });
+});

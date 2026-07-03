@@ -16,6 +16,9 @@ import {
   removeAudioDir,
   deleteArticle,
   listWordIdsByArticle,
+  getParagraphById,
+  clearParagraphResult,
+  resetJobForParagraph,
   getOrCreateCategoryByLabel,
   getOrCreateTag,
   addTagToArticle,
@@ -236,6 +239,30 @@ export function registerArticleRoutes(
         return { paragraphs, jobs };
       });
       return { ok: true, reset };
+    },
+  );
+
+  // 單段重新產生（admin only）：清空翻譯/音檔路徑、job 重排，交由 worker 重做。
+  app.post(
+    "/articles/:id/paragraphs/:pid/regenerate",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const params = request.params as { id: string; pid: string };
+      const id = Number(params.id);
+      const pid = Number(params.pid);
+      if (!Number.isInteger(id) || id <= 0 || !Number.isInteger(pid) || pid <= 0) {
+        return reply.code(400).send({ error: "invalid id" });
+      }
+      const paragraph = await getParagraphById(pool, pid);
+      if (!paragraph || paragraph.articleId !== id) {
+        return reply.code(404).send({ error: "paragraph not found" });
+      }
+      await withTransaction(pool, async (tx) => {
+        await clearParagraphResult(tx, pid);
+        await resetJobForParagraph(tx, id, pid);
+        await setArticleStatus(tx, id, "processing");
+      });
+      return { ok: true };
     },
   );
 
