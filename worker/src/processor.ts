@@ -13,6 +13,8 @@ import {
   countParagraphsByStatus,
   withTransaction,
   translateParagraph,
+  listParagraphsByArticle,
+  generateTranslations,
   type Queryable,
   type DbPool,
   type TranslateClient,
@@ -60,6 +62,34 @@ function logJob(fields: Record<string, unknown>): void {
   console.log(JSON.stringify({ evt: "job", ...fields }));
 }
 
+/**
+ * 確保整篇文章的段落翻譯就緒（文章級批次）：
+ * 跨段脈絡一致、LLM 呼叫由 N 次降為 1 次。
+ * 批次失敗時靜默返回，由呼叫端逐段翻譯自行重試（粒度退回單段）。
+ */
+export async function ensureArticleTranslations(
+  db: Queryable,
+  translateClient: TranslateClient,
+  articleId: number,
+): Promise<void> {
+  const paragraphs = await listParagraphsByArticle(db, articleId);
+  const missing = paragraphs.filter((p) => p.translation == null);
+  if (missing.length <= 1) return; // 單段直接走逐段路徑，不多花一次批次呼叫
+  try {
+    const translations = await generateTranslations(
+      missing.map((p) => p.text),
+      translateClient,
+    );
+    for (let i = 0; i < missing.length; i++) {
+      await updateParagraphResult(db, missing[i].id, {
+        translation: translations[i],
+      });
+    }
+  } catch {
+    // 批次失敗（格式錯誤／額度等）：不拋錯，讓各 job 的單段翻譯自行重試。
+  }
+}
+
 export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
   const job = await claimNextJob(deps.pool, deps.staleMs);
   if (!job) return false;
@@ -72,10 +102,17 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
     // 認領後文章進入 processing（僅當仍為 pending，不覆寫 sibling 造成的終態）。
     await markArticleProcessingIfPending(deps.pool, job.articleId);
 
-    const translation = await translateParagraph(
-      paragraph.text,
-      deps.translateClient,
-    );
+    // 翻譯三段式：已有翻譯直接用（單段重做除外，見 clearParagraphResult）；
+    // 缺翻譯先嘗試文章級批次；批次未涵蓋（單段文章／批次失敗）退回單段。
+    let translation = paragraph.translation;
+    if (translation == null) {
+      await ensureArticleTranslations(deps.pool, deps.translateClient, job.articleId);
+      translation =
+        (await getParagraphById(deps.pool, job.paragraphId))?.translation ?? null;
+    }
+    if (translation == null) {
+      translation = await translateParagraph(paragraph.text, deps.translateClient);
+    }
 
     // 英文語音念原文、中文語音念翻譯；兩者互不依賴，並行以縮短單段處理時間。
     // 音檔寫盤在交易外（與 lookups 一致）。

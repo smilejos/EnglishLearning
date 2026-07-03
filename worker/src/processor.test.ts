@@ -306,3 +306,49 @@ describe("worker 段落處理", () => {
     expect(maxInFlight).toBeGreaterThanOrEqual(2);
   });
 });
+
+/** 解析 PROMPT 內嵌段落 JSON、等長回傳「譯:<原文>」的批次 mock。 */
+function echoTranslate(failOnBatch = false): TranslateClient {
+  return {
+    complete: vi.fn(async (prompt: string) => {
+      const json = prompt.split("Paragraphs (JSON):\n")[1];
+      const paragraphs = JSON.parse(json) as string[];
+      if (failOnBatch && paragraphs.length > 1) throw new Error("batch down");
+      return JSON.stringify(paragraphs.map((t) => `譯:${t}`));
+    }),
+  };
+}
+
+describe("文章級批次翻譯", () => {
+  it("兩段文章：翻譯只呼叫 LLM 1 次，各段譯文正確落位", async () => {
+    const article = await createArticle(pool, { title: "Batch" });
+    const p0 = await createParagraph(pool, { articleId: article.id, idx: 0, text: "First." });
+    const p1 = await createParagraph(pool, { articleId: article.id, idx: 1, text: "Second." });
+    await createJob(pool, article.id, p0.id);
+    await createJob(pool, article.id, p1.id);
+
+    const translate = echoTranslate();
+    await drainQueue(makeDeps({ translateClient: translate }));
+
+    expect(translate.complete).toHaveBeenCalledTimes(1);
+    const paras = await listParagraphsByArticle(pool, article.id);
+    expect(paras.find((p) => p.idx === 0)!.translation).toBe("譯:First.");
+    expect(paras.find((p) => p.idx === 1)!.translation).toBe("譯:Second.");
+    expect((await getArticleById(pool, article.id))!.status).toBe("done");
+  });
+
+  it("批次失敗時退回逐段翻譯，文章仍完成", async () => {
+    const article = await createArticle(pool, { title: "Fallback" });
+    const p0 = await createParagraph(pool, { articleId: article.id, idx: 0, text: "First." });
+    const p1 = await createParagraph(pool, { articleId: article.id, idx: 1, text: "Second." });
+    await createJob(pool, article.id, p0.id);
+    await createJob(pool, article.id, p1.id);
+
+    await drainQueue(makeDeps({ translateClient: echoTranslate(true) }));
+
+    const paras = await listParagraphsByArticle(pool, article.id);
+    expect(paras.find((p) => p.idx === 0)!.translation).toBe("譯:First.");
+    expect(paras.find((p) => p.idx === 1)!.translation).toBe("譯:Second.");
+    expect((await getArticleById(pool, article.id))!.status).toBe("done");
+  });
+});
