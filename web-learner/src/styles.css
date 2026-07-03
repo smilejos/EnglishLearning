@@ -381,3 +381,22 @@ a { color: inherit; text-decoration: none; }
   .ab-mid { min-width: 0; }
   .ab-now, .ab-right { justify-content: center; }
 }
+
+/* 無障礙（Task 13）：可點字 button 化後的外觀重設與焦點可視。
+   button.vocab 的 `border: 0` 特異度高於 .vocab 的 border-bottom，
+   故在同一規則內重新宣告 border-bottom，避免蓋掉底線視覺提示。 */
+button.vocab {
+  background: none;
+  border: 0;
+  padding: 0 1px;
+  margin: 0 -1px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 38%, transparent);
+}
+.vocab:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

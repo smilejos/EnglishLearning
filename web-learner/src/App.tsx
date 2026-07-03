@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Article, Paragraph, Word, WordExplanation } from "./types";
 import * as api from "./api";
 import { useArticlePlayer } from "./useArticlePlayer";
@@ -27,7 +27,7 @@ function AudioChip({
   );
   if (!path) {
     return (
-      <button className="audio-chip" disabled>
+      <button className="audio-chip" disabled aria-label={label}>
         <SoundIcon /> {label}（無）
       </button>
     );
@@ -66,6 +66,7 @@ function AudioChip({
       onClick={play}
       disabled={state === "loading"}
       title={state === "error" ? "播放失敗" : undefined}
+      aria-label={label}
     >
       <SoundIcon /> {label}
     </button>
@@ -87,9 +88,14 @@ function ClickableText({
         const clean = tok.replace(/^[^A-Za-z'-]+|[^A-Za-z'-]+$/g, "");
         if (!clean) return <span key={i}>{tok}</span>;
         return (
-          <span key={i} className="vocab" onClick={() => onWordClick(clean)}>
+          <button
+            type="button"
+            key={i}
+            className="vocab"
+            onClick={() => onWordClick(clean)}
+          >
             {tok}
-          </span>
+          </button>
         );
       })}
     </>
@@ -169,6 +175,21 @@ function WordPopup({
   const [explanations, setExplanations] = useState<WordExplanation[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  // 開啟時聚焦關閉鈕、ESC 關閉；關閉時把焦點還給觸發元素。
+  useEffect(() => {
+    const prev = document.activeElement as HTMLElement | null;
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      prev?.focus?.();
+    };
+  }, [onClose]);
 
   const load = useCallback(async () => {
     try {
@@ -199,10 +220,16 @@ function WordPopup({
 
   return (
     <div className="sheet-overlay" onClick={onClose}>
-      <div className="sheet" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="sheet"
+        role="dialog"
+        aria-modal="true"
+        aria-label={`單字 ${word}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="sheet__head">
           <h2 className="sheet__word">{word}</h2>
-          <button className="sheet__close" onClick={onClose} aria-label="關閉">
+          <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
             ✕
           </button>
         </div>
@@ -359,6 +386,7 @@ function Reader({
                         <>
                           <button
                             className="tr-toggle"
+                            aria-expanded={open}
                             onClick={() =>
                               setShowTranslation((s) => ({
                                 ...s,
