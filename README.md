@@ -1,23 +1,56 @@
 # 英文知識學習平台
 
-從無打造的英文學習平台。後台上傳英文文章 → 逐段產生繁中翻譯與中英語音；前台閱讀／聆聽，點擊單字查詢「帶文章脈絡、全站共享、跨文章累積」的中英解釋與例句。
+後台上傳英文文章 → worker 逐段產生繁中翻譯與中英語音；前台閱讀／聆聽、
+點擊單字查詢「帶文章脈絡、全站共享、跨文章累積」的中英解釋與例句（各附語音）。
 
-- 設計：`design-english-learning-platform-2026-06-29.md`
-- 計畫：`plan-english-learning-platform-2026-06-29.md`
+- 原始設計：`docs/design-english-learning-platform-2026-06-29.md`
+- 改善計畫：`docs/design-improvements-2026-07-04.md`（評估）與 `docs/plan-improvements-2026-07-04.md`（實作計畫）
 
-> 目前處於 **Phase 0 — 基礎設施骨架**：每個服務只有最小可執行內容，目的在於先確認所有 Docker image 能 build 且容器能正常起來。業務邏輯尚未實作。
+## 功能現況
+
+- 後台（web-admin）：上傳文章（自動切段）、輪詢處理狀態、重試失敗段落、刪除文章、
+  編輯文章資訊（教材別／年級單元難度／分類／標籤）、分類與標籤管理、平台統計。
+- 前台（web-learner）：文章清單（教材別＋年級／單元／難度／分類／標籤篩選、標題搜尋）、
+  逐段連續播放（時間軸拖曳／倍速／循環）、逐段翻譯切換、點字彈窗（跨文章累積解釋、六組語音）。
+- 佇列：DB-backed（`jobs` 表），原子認領、自動重試（上限可調）、stuck-job 回收。
+- 驗證：Cloudflare Access（邊緣）＋ app 內 `ADMIN_EMAILS` allowlist 決定 admin。
+- 單字查詢：`POST /lookups` 具用量韁繩（per-user 每分鐘／全站每日，可由環境變數調整）。
 
 ## 架構（Docker Compose）
 
 | 服務 | 內容 | 對外埠（預設） |
 |------|------|------|
-| `db` | PostgreSQL 16（`pgdata` volume） | 5432 |
-| `api` | Fastify（目前只有 `/healthz`），掛載共用 `audio` volume | 8080 |
-| `worker` | 背景處理（目前為 heartbeat + DB 連線檢查），掛載同一 `audio` volume | — |
-| `web-admin` | React + Vite（nginx 靜態服務） | 8081 |
-| `web-learner` | React + Vite（nginx 靜態服務） | 8082 |
+| `db` | PostgreSQL 16（`pgdata` volume） | 127.0.0.1:5432 |
+| `migrate` | 一次性建表（node-pg-migrate），完成即退出 | — |
+| `api` | Fastify REST API＋靜態音檔（共用 `audio` volume） | 8080 |
+| `worker` | 佇列輪詢：逐段翻譯＋中英 TTS | — |
+| `web-admin` | React + Vite（nginx 反代 api，同源） | 8081 |
+| `web-learner` | React + Vite（nginx 反代 api，同源） | 8082 |
+| `seed` | 示範資料匯入（profile 限定、免 LLM） | — |
 
 `api` 與 `worker` 共用同一個 `audio` named volume。
+
+## 快速開始
+
+```bash
+./scripts/deploy.sh up        # build（如需）→ 啟動 → 等待全部 healthy
+npm run seed                  # 匯入示範資料（fixtures，免 LLM 費用）
+open http://localhost:8081    # 後台
+open http://localhost:8082    # 前台
+```
+
+`.env` 由 `.env.example` 自動建立；正式環境需填 `GEMINI_API_KEY` 並看「上線前檢查清單」。
+
+## 測試
+
+```bash
+npm test            # 全 workspace；pretest 會自動啟動獨立測試庫（5433/tmpfs）
+npm run typecheck   # 全 workspace tsc --noEmit
+npm run test:db:down  # 收掉測試庫
+```
+
+測試紀律：**絕不呼叫真實 LLM／TTS**（一律 mock）；整合測試只連 5433 測試庫，
+不碰正式資料。完整 e2e 手動清單見 `e2e/README.md`。
 
 ## 在 Mac Mini 上啟動與驗證（Apple Silicon / arm64）
 
@@ -119,8 +152,6 @@ open http://localhost:8082                   # web-learner 首頁
 docker compose exec worker sh -c 'echo hi > /data/audio/ping.txt'
 docker compose exec api cat /data/audio/ping.txt   # → hi
 ```
-
-全部通過代表 Phase 0 完成，可進入 Phase 1（`shared` 資料契約）。
 
 ## 本機開發（不經 Docker）
 
