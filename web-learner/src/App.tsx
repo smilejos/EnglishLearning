@@ -3,6 +3,7 @@ import type { Article, Paragraph, Word, WordExplanation } from "./types";
 import * as api from "./api";
 import { useArticlePlayer } from "./useArticlePlayer";
 import { AudioBar } from "./AudioBar";
+import { uniqSorted } from "./lib/facets";
 import {
   PlayIcon,
   PauseIcon,
@@ -416,10 +417,6 @@ function Reader({
   );
 }
 
-/** 由文章集合萃取唯一且已排序的某欄位值。 */
-function uniqSorted<T>(values: (T | null | undefined)[]): T[] {
-  return [...new Set(values.filter((v): v is T => v != null))].sort();
-}
 
 const MATERIALS = [
   { key: "school", label: "課業內" },
