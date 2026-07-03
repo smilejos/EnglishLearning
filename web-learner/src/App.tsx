@@ -300,6 +300,33 @@ function Reader({
   );
   const player = useArticlePlayer(items);
 
+  // 連續播放時視窗跟隨目前段落。
+  useEffect(() => {
+    if (!player.playing || player.currentParagraphId == null) return;
+    document
+      .getElementById(`para-${player.currentParagraphId}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [player.playing, player.currentParagraphId]);
+
+  // 快捷鍵：空白鍵播放/暫停、← → 上一段/下一段（彈窗開啟或焦點在控制元件上時不攔截）。
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (popup) return;
+      const t = e.target as HTMLElement;
+      if (t.closest("input, textarea, select, button")) return;
+      if (e.key === " ") {
+        e.preventDefault();
+        player.toggle();
+      } else if (e.key === "ArrowRight") {
+        player.next();
+      } else if (e.key === "ArrowLeft") {
+        player.prev();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [player, popup]);
+
   const onPlayPara = (paragraphId: number) => {
     const i = items.findIndex((it) => it.paragraphId === paragraphId);
     if (i < 0) return;
@@ -311,6 +338,14 @@ function Reader({
     1,
     Math.round((player.duration || items.length * 12) / 60),
   );
+
+  const translatable = paragraphs.filter((p) => p.translation);
+  const allOpen =
+    translatable.length > 0 && translatable.every((p) => showTranslation[p.id]);
+  const toggleAllTranslations = () =>
+    setShowTranslation(
+      Object.fromEntries(translatable.map((p) => [p.id, !allOpen])),
+    );
 
   return (
     <>
@@ -341,6 +376,11 @@ function Reader({
                       <HeadphonesIcon /> 聆聽全文
                     </button>
                   )}
+                  {translatable.length > 0 && (
+                    <button className="btn btn--ghost" onClick={toggleAllTranslations}>
+                      <TranslateIcon /> {allOpen ? "隱藏全部翻譯" : "顯示全部翻譯"}
+                    </button>
+                  )}
                   <div className="reader-hero__meta">
                     <span>{paragraphs.length} 段</span>
                     {items.length > 0 && (
@@ -362,6 +402,7 @@ function Reader({
                 return (
                   <div
                     key={p.id}
+                    id={`para-${p.id}`}
                     className={"para" + (isPlaying ? " is-playing" : "")}
                   >
                     <button
