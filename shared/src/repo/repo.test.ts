@@ -26,12 +26,27 @@ import {
   findExplanation,
   listExplanationsByWord,
 } from "./wordExplanations";
-import { createCategory } from "./categories";
+import {
+  createCategory,
+  getOrCreateCategoryByLabel,
+  updateCategory,
+  deleteCategory,
+  listCategories,
+} from "./categories";
+import {
+  getOrCreateTag,
+  addTagToArticle,
+  listTags,
+  updateTag,
+  deleteTag,
+  renameTagKind,
+} from "./tags";
+import { listArticlesWithMeta } from "./articles";
 import { upsertUser, getUserByEmail } from "./users";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5432/english_learning";
+  "postgres://app:app@localhost:5433/english_learning_test";
 
 let pool: Pool;
 
@@ -260,5 +275,85 @@ describe("findExplanation / listExplanationsByWord", () => {
     expect(all.map((x) => x.id)).toEqual([e1.id, e2.id]); // 依 created_at
     expect(all[0].article).toEqual({ id: a1.id, title: "Article One" });
     expect(all[1].article).toEqual({ id: a2.id, title: "Article Two" });
+  });
+});
+
+describe("文章分類 meta：category 與 tags", () => {
+  it("getOrCreateCategoryByLabel 同 label 回同一筆", async () => {
+    const c1 = await getOrCreateCategoryByLabel(pool, "自然科學");
+    const c2 = await getOrCreateCategoryByLabel(pool, "自然科學");
+    expect(c2.id).toBe(c1.id);
+    expect(c1.parentId).toBeNull();
+  });
+
+  it("listArticlesWithMeta 帶出分類與多維標籤", async () => {
+    const cat = await getOrCreateCategoryByLabel(pool, "動物");
+    const a1 = await createArticle(pool, {
+      title: "Cats",
+      materialType: "extracurricular",
+      categoryId: cat.id,
+      level: "A1",
+    });
+    await createArticle(pool, { title: "Plain", materialType: "school" });
+
+    const t1 = await getOrCreateTag(pool, "題材", "動物");
+    const t2 = await getOrCreateTag(pool, "文體", "故事");
+    await addTagToArticle(pool, a1.id, t1.id);
+    await addTagToArticle(pool, a1.id, t2.id);
+
+    const list = await listArticlesWithMeta(pool);
+    expect(list).toHaveLength(2);
+    const cats = list.find((a) => a.id === a1.id)!;
+    const plain = list.find((a) => a.title === "Plain")!;
+
+    expect(cats.category).toEqual({ id: cat.id, label: "動物" });
+    expect(cats.level).toBe("A1");
+    expect(cats.tags).toEqual([
+      { kind: "文體", label: "故事" },
+      { kind: "題材", label: "動物" },
+    ]);
+    expect(plain.category).toBeNull();
+    expect(plain.tags).toEqual([]);
+
+    // listTags 列出全部標籤
+    const all = await listTags(pool);
+    expect(all.map((t) => `${t.kind}:${t.label}`)).toEqual([
+      "文體:故事",
+      "題材:動物",
+    ]);
+  });
+});
+
+describe("分類與標籤管理：CRUD", () => {
+  it("分類：母/子建立、改名、刪除（子 cascade）", async () => {
+    const parent = await createCategory(pool, { label: "動物" });
+    const child = await createCategory(pool, {
+      label: "貓科",
+      parentId: parent.id,
+    });
+    expect(child.parentId).toBe(parent.id);
+
+    const renamed = await updateCategory(pool, child.id, { label: "貓科動物" });
+    expect(renamed?.label).toBe("貓科動物");
+
+    // 刪母 → 子一併消失（ON DELETE CASCADE）。
+    expect(await deleteCategory(pool, parent.id)).toBe(true);
+    expect(await listCategories(pool)).toHaveLength(0);
+  });
+
+  it("標籤：改 value、刪除、整批改維度名", async () => {
+    const t1 = await getOrCreateTag(pool, "題材", "動物");
+    await getOrCreateTag(pool, "題材", "植物");
+
+    const renamed = await updateTag(pool, t1.id, { label: "貓" });
+    expect(renamed?.label).toBe("貓");
+
+    // 整批把維度 題材 → 主題分類
+    const n = await renameTagKind(pool, "題材", "主題分類");
+    expect(n).toBe(2);
+    expect((await listTags(pool)).every((t) => t.kind === "主題分類")).toBe(true);
+
+    expect(await deleteTag(pool, t1.id)).toBe(true);
+    expect(await listTags(pool)).toHaveLength(1);
   });
 });

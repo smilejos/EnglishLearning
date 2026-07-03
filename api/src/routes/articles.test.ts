@@ -25,7 +25,7 @@ import type { AuthConfig } from "../auth";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5432/english_learning";
+  "postgres://app:app@localhost:5433/english_learning_test";
 
 let pool: ReturnType<typeof createPool>;
 
@@ -51,7 +51,7 @@ afterAll(async () => {
 });
 beforeEach(async () => {
   await pool.query(
-    `TRUNCATE jobs, paragraphs, articles, users RESTART IDENTITY CASCADE`,
+    `TRUNCATE article_tags, tags, jobs, paragraphs, articles, categories, users RESTART IDENTITY CASCADE`,
   );
 });
 
@@ -90,6 +90,37 @@ describe("POST /articles", () => {
     expect(paras.every((p) => p.status === "pending")).toBe(true);
     expect(await jobCount(id)).toBe(2);
 
+    await app.close();
+  });
+
+  it("帶 category 與 tags 上傳 → 建立分類/標籤並掛載，清單帶回 meta", async () => {
+    const app = buildApp({ config: adminConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: "/articles",
+      payload: {
+        title: "Cats",
+        materialType: "extracurricular",
+        level: "A1",
+        category: "動物",
+        tags: ["題材:動物", "文體:故事", "可愛"], // 末項無 kind → 預設「主題」
+        text: "Cats are cute.",
+      },
+    });
+    expect(res.statusCode).toBe(202);
+    const { id } = res.json();
+
+    const list = await app.inject({ method: "GET", url: "/articles" });
+    const article = list
+      .json()
+      .articles.find((a: { id: number }) => a.id === id);
+    expect(article.category).toMatchObject({ label: "動物" });
+    expect(article.level).toBe("A1");
+    expect(article.tags).toEqual([
+      { kind: "主題", label: "可愛" },
+      { kind: "文體", label: "故事" },
+      { kind: "題材", label: "動物" },
+    ]);
     await app.close();
   });
 
@@ -190,6 +221,68 @@ describe("GET /articles, GET /articles/:id", () => {
       (await app.inject({ method: "GET", url: "/articles/abc" })).statusCode,
     ).toBe(400);
     await app.close();
+  });
+});
+
+describe("PATCH /articles/:id（編輯 metadata）", () => {
+  it("admin 更新分類/標籤/難度，清單回讀新 meta；reader → 403", async () => {
+    const article = await createArticle(pool, {
+      title: "Old",
+      materialType: "school",
+    });
+    const app = buildApp({ config: adminConfig, pool });
+
+    const res = await app.inject({
+      method: "PATCH",
+      url: `/articles/${article.id}`,
+      payload: {
+        title: "New Title",
+        materialType: "extracurricular",
+        level: "B1",
+        grade: null,
+        tags: ["題材:動物", "文體:故事"],
+      },
+    });
+    expect(res.statusCode).toBe(200);
+
+    const got = (await app.inject({ method: "GET", url: "/articles" }))
+      .json()
+      .articles.find((a: { id: number }) => a.id === article.id);
+    expect(got.title).toBe("New Title");
+    expect(got.materialType).toBe("extracurricular");
+    expect(got.level).toBe("B1");
+    expect(got.tags).toEqual([
+      { kind: "文體", label: "故事" },
+      { kind: "題材", label: "動物" },
+    ]);
+
+    // 再次更新為較少標籤 → 整組覆寫。
+    await app.inject({
+      method: "PATCH",
+      url: `/articles/${article.id}`,
+      payload: {
+        title: "New Title",
+        materialType: "extracurricular",
+        tags: ["題材:動物"],
+      },
+    });
+    const got2 = (await app.inject({ method: "GET", url: "/articles" }))
+      .json()
+      .articles.find((a: { id: number }) => a.id === article.id);
+    expect(got2.tags).toEqual([{ kind: "題材", label: "動物" }]);
+    await app.close();
+
+    const readerApp = buildApp({ config: readerConfig, pool });
+    expect(
+      (
+        await readerApp.inject({
+          method: "PATCH",
+          url: `/articles/${article.id}`,
+          payload: { title: "X", materialType: "school" },
+        })
+      ).statusCode,
+    ).toBe(403);
+    await readerApp.close();
   });
 });
 

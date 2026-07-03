@@ -69,6 +69,71 @@ export async function listArticles(db: Queryable): Promise<Article[]> {
   return res.rows.map(mapArticle);
 }
 
+/** 文章 + 分類標籤（供清單分類/篩選；單次查詢避免 N+1）。 */
+export interface ArticleWithMeta extends Article {
+  category: { id: number; label: string } | null;
+  tags: { kind: string; label: string }[];
+}
+
+export async function listArticlesWithMeta(
+  db: Queryable,
+): Promise<ArticleWithMeta[]> {
+  const res = await db.query(
+    `SELECT a.*,
+            c.label AS category_label,
+            COALESCE(
+              (SELECT json_agg(json_build_object('kind', t.kind, 'label', t.label)
+                               ORDER BY t.kind, t.label)
+                 FROM article_tags at
+                 JOIN tags t ON t.id = at.tag_id
+                WHERE at.article_id = a.id),
+              '[]'::json) AS tags
+       FROM articles a
+       LEFT JOIN categories c ON c.id = a.category_id
+      ORDER BY a.created_at DESC, a.id DESC`,
+  );
+  return res.rows.map((row: any) => ({
+    ...mapArticle(row),
+    category:
+      row.category_id != null
+        ? { id: toNum(row.category_id), label: row.category_label }
+        : null,
+    tags: row.tags ?? [],
+  }));
+}
+
+/**
+ * 更新文章 metadata（後台編輯用）。scalar 欄位直接覆寫（grade/unit/level/categoryId
+ * 傳 null 代表清空）。回傳是否更新到。標籤另由 article_tags 處理。
+ */
+export async function updateArticleMeta(
+  db: Queryable,
+  id: number,
+  f: {
+    title: string;
+    materialType: MaterialType;
+    grade: string | null;
+    unit: string | null;
+    level: string | null;
+    categoryId: number | null;
+  },
+): Promise<boolean> {
+  const res = await db.query(
+    `UPDATE articles SET
+       title = $2,
+       material_type = $3::material_type,
+       grade = $4,
+       unit = $5,
+       level = $6,
+       category_id = $7,
+       updated_at = now()
+     WHERE id = $1
+     RETURNING id`,
+    [id, f.title, f.materialType, f.grade, f.unit, f.level, f.categoryId],
+  );
+  return (res.rowCount ?? 0) > 0;
+}
+
 /** 更新文章狀態並刷新 updated_at。 */
 export async function setArticleStatus(
   db: Queryable,

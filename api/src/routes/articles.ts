@@ -6,7 +6,7 @@ import {
   createArticle,
   createParagraph,
   createJob,
-  listArticles,
+  listArticlesWithMeta,
   getArticleById,
   listParagraphsByArticle,
   setArticleStatus,
@@ -14,6 +14,13 @@ import {
   resetFailedJobsByArticle,
   deleteArticle,
   listWordIdsByArticle,
+  getOrCreateCategoryByLabel,
+  getOrCreateTag,
+  addTagToArticle,
+  clearArticleTags,
+  updateArticleMeta,
+  getCategoryById,
+  listTagsByArticle,
   type DbPool,
 } from "@el/shared";
 import { requireAdmin } from "../auth";
@@ -29,8 +36,27 @@ const CreateArticleBody = z.object({
   week: z.number().int().optional(),
   page: z.number().int().optional(),
   categoryId: z.number().int().optional(),
+  // 以 label 字串指派分類（不存在則建立頂層分類）。
+  category: z.string().optional(),
   level: z.string().optional(),
+  // 標籤：每項為 "label" 或 "kind:label"（未帶 kind 預設「主題」）。
+  tags: z.array(z.string()).optional(),
 });
+
+const DEFAULT_TAG_KIND = "主題";
+
+/** 解析標籤字串為 (kind, label)；空白會被去除。 */
+function parseTag(raw: string): { kind: string; label: string } | null {
+  const s = raw.trim();
+  if (!s) return null;
+  const idx = s.indexOf(":");
+  if (idx > 0) {
+    const kind = s.slice(0, idx).trim();
+    const label = s.slice(idx + 1).trim();
+    if (kind && label) return { kind, label };
+  }
+  return { kind: DEFAULT_TAG_KIND, label: s };
+}
 
 export function registerArticleRoutes(
   app: FastifyInstance,
@@ -55,6 +81,14 @@ export function registerArticleRoutes(
       }
 
       const id = await withTransaction(pool, async (tx) => {
+        // 分類：優先用 categoryId，否則以 category label 取得/建立。
+        let categoryId = body.categoryId ?? null;
+        if (categoryId == null && body.category?.trim()) {
+          categoryId = (
+            await getOrCreateCategoryByLabel(tx, body.category.trim())
+          ).id;
+        }
+
         const article = await createArticle(tx, {
           title: body.title,
           materialType: body.materialType,
@@ -62,10 +96,19 @@ export function registerArticleRoutes(
           unit: body.unit ?? null,
           week: body.week ?? null,
           page: body.page ?? null,
-          categoryId: body.categoryId ?? null,
+          categoryId,
           level: body.level ?? null,
           createdBy: request.user!.id,
         });
+
+        // 標籤：解析後取得/建立並掛到文章。
+        for (const raw of body.tags ?? []) {
+          const parsed = parseTag(raw);
+          if (!parsed) continue;
+          const tag = await getOrCreateTag(tx, parsed.kind, parsed.label);
+          await addTagToArticle(tx, article.id, tag.id);
+        }
+
         for (let i = 0; i < paragraphs.length; i++) {
           const paragraph = await createParagraph(tx, {
             articleId: article.id,
@@ -82,8 +125,10 @@ export function registerArticleRoutes(
     },
   );
 
-  // 文章清單（任何已驗證身分；admin 輪詢狀態、learner 瀏覽）。
-  app.get("/articles", async () => ({ articles: await listArticles(pool) }));
+  // 文章清單（任何已驗證身分；admin 輪詢狀態、learner 瀏覽）。含分類/標籤 meta。
+  app.get("/articles", async () => ({
+    articles: await listArticlesWithMeta(pool),
+  }));
 
   // 文章詳情：含逐段文字、翻譯、狀態與音檔路徑。
   app.get("/articles/:id", async (request, reply) => {
@@ -95,9 +140,74 @@ export function registerArticleRoutes(
     if (!article) {
       return reply.code(404).send({ error: "article not found" });
     }
+    // 附上分類/標籤 meta，供後台編輯頁還原目前設定。
+    const tags = await listTagsByArticle(pool, id);
+    const category = article.categoryId
+      ? await getCategoryById(pool, article.categoryId)
+      : null;
     const paragraphs = await listParagraphsByArticle(pool, id);
-    return { article, paragraphs };
+    return {
+      article: {
+        ...article,
+        category: category ? { id: category.id, label: category.label } : null,
+        tags: tags.map((t) => ({ kind: t.kind, label: t.label })),
+      },
+      paragraphs,
+    };
   });
+
+  // 編輯文章 metadata（admin only）：標題／教材別／年級單元難度／分類／標籤。
+  // 段落內文不在此更動。tags 提供時整組覆寫。
+  const UpdateArticleBody = z.object({
+    title: z.string().min(1),
+    materialType: z.enum(["school", "extracurricular"]),
+    grade: z.string().nullable().optional(),
+    unit: z.string().nullable().optional(),
+    level: z.string().nullable().optional(),
+    categoryId: z.number().int().nullable().optional(),
+    tags: z.array(z.string()).optional(),
+  });
+
+  app.patch(
+    "/articles/:id",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      if (!Number.isInteger(id) || id <= 0) {
+        return reply.code(400).send({ error: "invalid article id" });
+      }
+      const parsed = UpdateArticleBody.safeParse(request.body);
+      if (!parsed.success) {
+        return reply
+          .code(400)
+          .send({ error: "invalid body", details: parsed.error.flatten() });
+      }
+      const body = parsed.data;
+      const existing = await getArticleById(pool, id);
+      if (!existing) return reply.code(404).send({ error: "article not found" });
+
+      await withTransaction(pool, async (tx) => {
+        await updateArticleMeta(tx, id, {
+          title: body.title,
+          materialType: body.materialType,
+          grade: body.grade ?? null,
+          unit: body.unit ?? null,
+          level: body.level ?? null,
+          categoryId: body.categoryId ?? null,
+        });
+        if (body.tags !== undefined) {
+          await clearArticleTags(tx, id);
+          for (const raw of body.tags) {
+            const p = parseTag(raw);
+            if (!p) continue;
+            const tag = await getOrCreateTag(tx, p.kind, p.label);
+            await addTagToArticle(tx, id, tag.id);
+          }
+        }
+      });
+      return { ok: true };
+    },
+  );
 
   // 重試（admin only）：將該文章 failed 的段落／jobs 重設為 pending，文章轉 processing。
   app.post(
