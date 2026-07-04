@@ -20,17 +20,27 @@ import {
 function AudioChip({
   path,
   label,
+  iconOnly = false,
+  pending = false,
 }: {
   path: string | null | undefined;
   label: string;
+  iconOnly?: boolean;
+  pending?: boolean;
 }) {
   const [state, setState] = useState<"idle" | "loading" | "playing" | "error">(
     "idle",
   );
   if (!path) {
     return (
-      <button className="audio-chip" disabled aria-label={label}>
-        <SoundIcon /> {label}（無）
+      <button
+        className={"audio-chip" + (iconOnly ? " audio-chip--icon" : "")}
+        disabled
+        aria-label={`${label}（${pending ? "產生中" : "無"}）`}
+        title={pending ? "產生中…" : "尚無語音"}
+      >
+        <SoundIcon />
+        {!iconOnly && ` ${label}（${pending ? "產生中…" : "無"}）`}
       </button>
     );
   }
@@ -61,16 +71,18 @@ function AudioChip({
 
   const cls =
     "audio-chip" +
+    (iconOnly ? " audio-chip--icon" : "") +
     (state === "playing" ? " is-playing" : state === "error" ? " is-error" : "");
   return (
     <button
       className={cls}
       onClick={play}
       disabled={state === "loading"}
-      title={state === "error" ? "播放失敗" : undefined}
+      title={state === "error" ? "播放失敗" : label}
       aria-label={label}
     >
-      <SoundIcon /> {label}
+      <SoundIcon />
+      {!iconOnly && ` ${label}`}
     </button>
   );
 }
@@ -111,10 +123,12 @@ function ExplanationCard({
   exp,
   word,
   onJump,
+  pending = false,
 }: {
   exp: WordExplanation;
   word: Word | null;
   onJump: (articleId: number) => void;
+  pending?: boolean;
 }) {
   return (
     <div className="exp">
@@ -142,27 +156,43 @@ function ExplanationCard({
       <p className="exp__row">
         <b>解釋（英）：</b>
         {exp.enExplanation}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.enExplanationAudioPath}
+          label="播放解釋（英）"
+        />
       </p>
       <p className="exp__row">
         <b>解釋（中）：</b>
         {exp.zhExplanation}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.zhExplanationAudioPath}
+          label="播放解釋（中）"
+        />
       </p>
       <p className="exp__row exp__ex">
         <b>例句（英）：</b>
         {exp.enExample}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.enExampleAudioPath}
+          label="播放例句（英）"
+        />
       </p>
       <p className="exp__row exp__ex">
         <b>例句（中）：</b>
         {exp.zhExample}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.zhExampleAudioPath}
+          label="播放例句（中）"
+        />
       </p>
-      <div className="exp__audio">
-        <AudioChip path={word?.enAudioPath} label="單字英" />
-        <AudioChip path={exp.zhTranslationAudioPath} label="單字中" />
-        <AudioChip path={exp.enExplanationAudioPath} label="解釋英" />
-        <AudioChip path={exp.zhExplanationAudioPath} label="解釋中" />
-        <AudioChip path={exp.enExampleAudioPath} label="例句英" />
-        <AudioChip path={exp.zhExampleAudioPath} label="例句中" />
-      </div>
     </div>
   );
 }
@@ -243,6 +273,9 @@ function WordPopup({
       >
         <div className="sheet__head">
           <h2 className="sheet__word">{title}</h2>
+          {wordInfo && (
+            <AudioChip iconOnly path={wordInfo.enAudioPath} label="播放單字發音" />
+          )}
           <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
             ✕
           </button>
