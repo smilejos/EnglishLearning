@@ -420,5 +420,5 @@ button.vocab {
 }
 .audiobar { padding-bottom: calc(8px + env(safe-area-inset-bottom)); }
 
-/* 已查單字標示（Task 16） */
-.vocab--known { border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); }
+/* 已查單字標示（Task 16）。特異性須高過 button.vocab 的 border:0，否則底線被蓋掉。 */
+.vocab.vocab--known { border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); }
