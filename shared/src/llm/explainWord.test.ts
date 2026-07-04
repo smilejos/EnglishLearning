@@ -13,6 +13,7 @@ const valid = {
   zh_explanation: "經常重複、難以改變的行為",
   en_example: "Reading every night is a good habit.",
   zh_example: "每晚閱讀是個好習慣。",
+  headword: "habit",
 };
 
 describe("explainWord", () => {
@@ -21,6 +22,13 @@ describe("explainWord", () => {
     const out = await explainWord("habit", "Reading is a good habit.", c);
     expect(out).toEqual(valid);
     expect(c.complete).toHaveBeenCalledTimes(1);
+  });
+
+  it("回傳片語 headword", async () => {
+    const phrase = { ...valid, headword: "added to" };
+    const c = client([JSON.stringify(phrase)]);
+    const out = await explainWord("added", "Stars were added to the field.", c);
+    expect(out.headword).toBe("added to");
   });
 
   it("解析前去除程式碼圍欄", async () => {

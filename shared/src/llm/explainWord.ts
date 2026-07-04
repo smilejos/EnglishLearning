@@ -12,6 +12,7 @@ export const WordExplanationContentSchema = z.object({
   zh_explanation: z.string().min(1),
   en_example: z.string().min(1),
   zh_example: z.string().min(1),
+  headword: z.string().min(1),
 });
 export type WordExplanationContent = z.infer<typeof WordExplanationContentSchema>;
 
@@ -27,11 +28,12 @@ The reader clicked the word "${word}" while reading this paragraph:
 ${context}
 """
 
-Explain the word AS USED IN THIS PARAGRAPH. Return ONLY a JSON object with exactly these string fields:
-- "en_explanation": a concise English explanation of the word's meaning in this context.
-- "zh_translation": the Traditional Chinese (zh-TW) translation of the word in this context.
-- "zh_explanation": a concise Traditional Chinese (zh-TW) explanation of the word's meaning.
-- "en_example": one natural English example sentence using the word.
+First decide whether the clicked word is part of a larger meaningful unit in THIS context — a phrasal verb, idiom, or compound (e.g. "added to", "six-pointed"). If so, explain the whole phrase; otherwise explain just the clicked word. Return ONLY a JSON object with exactly these string fields:
+- "headword": the exact word or phrase (as it appears in the paragraph) that you are explaining. Use the full phrase when the clicked word is part of one; otherwise use the clicked word.
+- "en_explanation": a concise English explanation of the headword's meaning in this context.
+- "zh_translation": the Traditional Chinese (zh-TW) translation of the headword in this context.
+- "zh_explanation": a concise Traditional Chinese (zh-TW) explanation of the headword's meaning.
+- "en_example": one natural English example sentence using the headword.
 - "zh_example": the Traditional Chinese (zh-TW) translation of that example sentence.
 
 Do not add notes or any text outside the JSON object.`;

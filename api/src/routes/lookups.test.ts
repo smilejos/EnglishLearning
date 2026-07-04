@@ -104,6 +104,7 @@ describe("POST /lookups（重新解釋）", () => {
     zh_explanation: "經常重複的行為",
     en_example: "Reading is a good habit.",
     zh_example: "閱讀是個好習慣。",
+    headword: "habit",
   };
 
   // mock LLM／TTS，計數呼叫次數。
