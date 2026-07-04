@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
 
@@ -946,11 +946,151 @@ function TaxonomyManager() {
   );
 }
 
-type View = "list" | "new" | "detail" | "taxonomy";
+type View = "list" | "new" | "detail" | "taxonomy" | "words";
+
+function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
+  const [q, setQ] = useState(initialQuery);
+  const [words, setWords] = useState<api.WordRow[]>([]);
+  const [openWord, setOpenWord] = useState<string | null>(null);
+  const [exps, setExps] = useState<api.Explanation[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  const search = useCallback(async (term: string) => {
+    try {
+      setWords((await api.searchWords(term)).words);
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }, []);
+
+  useEffect(() => {
+    void search(initialQuery);
+  }, [search, initialQuery]);
+
+  const expand = useCallback(
+    async (word: string) => {
+      if (openWord === word) {
+        setOpenWord(null);
+        return;
+      }
+      setOpenWord(word);
+      setExps((await api.getWordExplanations(word)).explanations);
+    },
+    [openWord],
+  );
+
+  // initialQuery 帶入時自動展開對應單字（深連結）。
+  useEffect(() => {
+    if (initialQuery) void expand(initialQuery);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialQuery]);
+
+  async function removeExp(id: number, word: string) {
+    if (!confirm("刪除這筆解釋？")) return;
+    await api.deleteExplanation(id);
+    setExps((await api.getWordExplanations(word)).explanations);
+    await search(q);
+  }
+  async function removeWord(row: api.WordRow) {
+    if (!confirm(`刪除整個單字「${row.normalizedWord}」及其所有解釋？`)) return;
+    await api.deleteWord(row.id);
+    if (openWord === row.normalizedWord) setOpenWord(null);
+    await search(q);
+  }
+
+  return (
+    <div>
+      <div className="section-eyebrow" style={{ marginTop: 0 }}>
+        單字解釋管理
+      </div>
+      <div style={{ display: "flex", gap: 8, margin: "10px 0 16px" }}>
+        <input
+          className="field"
+          placeholder="搜尋單字…"
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && void search(q)}
+        />
+        <button className="btn btn--primary" onClick={() => void search(q)}>
+          搜尋
+        </button>
+      </div>
+      {error && <p className="error-text">{error}</p>}
+      <table className="table">
+        <tbody>
+          {words.map((row) => (
+            <Fragment key={row.id}>
+              <tr>
+                <td>
+                  <button
+                    className="link-btn"
+                    onClick={() => void expand(row.normalizedWord)}
+                  >
+                    {openWord === row.normalizedWord ? "▾ " : "▸ "}
+                    {row.normalizedWord}
+                  </button>
+                </td>
+                <td>{row.explanationCount} 筆解釋</td>
+                <td className="table__actions">
+                  <button
+                    className="btn btn--ghost btn--sm"
+                    onClick={() => void removeWord(row)}
+                  >
+                    刪除單字
+                  </button>
+                </td>
+              </tr>
+              {openWord === row.normalizedWord && (
+                <tr>
+                  <td colSpan={3}>
+                    {exps.length === 0 && (
+                      <p className="picker__hint">尚無解釋。</p>
+                    )}
+                    {exps.map((e) => (
+                      <div key={e.id} className="panel" style={{ marginBottom: 8 }}>
+                        <div style={{ fontWeight: 700 }}>
+                          來源：{e.article?.title ?? `#${e.articleId}`}
+                        </div>
+                        {e.zhTranslation && <div>翻譯：{e.zhTranslation}</div>}
+                        {e.zhExplanation && <div>解釋（中）：{e.zhExplanation}</div>}
+                        <button
+                          className="btn btn--ghost btn--sm"
+                          style={{ marginTop: 6 }}
+                          onClick={() => void removeExp(e.id, row.normalizedWord)}
+                        >
+                          刪除這筆解釋
+                        </button>
+                      </div>
+                    ))}
+                  </td>
+                </tr>
+              )}
+            </Fragment>
+          ))}
+          {words.length === 0 && (
+            <tr>
+              <td className="picker__hint">查無單字。</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  );
+}
 
 export default function App() {
   const [view, setView] = useState<View>("list");
   const [openId, setOpenId] = useState<number | null>(null);
+  const [wordQuery, setWordQuery] = useState("");
+
+  // 深連結：#/w/<word> 進站帶入單字頁並自動展開。
+  useEffect(() => {
+    const m = location.hash.match(/^#\/w\/(.+)$/);
+    if (m) {
+      setWordQuery(decodeURIComponent(m[1]));
+      setView("words");
+    }
+  }, []);
 
   const goList = () => {
     setView("list");
@@ -985,6 +1125,12 @@ export default function App() {
             >
               分類 / 標籤
             </button>
+            <button
+              className={"topnav__btn" + (view === "words" ? " on" : "")}
+              onClick={() => setView("words")}
+            >
+              單字
+            </button>
           </nav>
           {/* 右上角：新增文章。 */}
           {inArticles && (
@@ -1002,6 +1148,8 @@ export default function App() {
       <main className="wrap" style={{ paddingTop: 24, paddingBottom: 60 }}>
         {view === "taxonomy" ? (
           <TaxonomyManager />
+        ) : view === "words" ? (
+          <WordManager initialQuery={wordQuery} />
         ) : view === "new" ? (
           <div>
             <button className="link-btn" onClick={goList} style={{ marginBottom: 10 }}>
