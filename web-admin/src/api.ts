@@ -156,3 +156,49 @@ export function renameTagKind(
 export function audioUrl(relPath: string): string {
   return `${BASE}/audio/${relPath}`;
 }
+
+export interface WordRow {
+  id: number;
+  normalizedWord: string;
+  enAudioPath: string | null;
+  explanationCount: number;
+}
+export interface WordInfo {
+  id: number;
+  normalizedWord: string;
+  enAudioPath: string | null;
+  createdAt: string;
+}
+export interface Explanation {
+  id: number;
+  wordId: number;
+  articleId: number;
+  enExplanation: string | null;
+  enExample: string | null;
+  zhTranslation: string | null;
+  zhExplanation: string | null;
+  zhExample: string | null;
+  headword: string | null;
+  article?: { id: number; title: string };
+  word?: { id: number; normalizedWord: string };
+}
+
+export function searchWords(q: string): Promise<{ words: WordRow[] }> {
+  return req(`/words?q=${encodeURIComponent(q)}`);
+}
+export function getWordExplanations(
+  word: string,
+): Promise<{ word: WordInfo | null; explanations: Explanation[] }> {
+  return req(`/words/${encodeURIComponent(word)}/explanations`);
+}
+export function listArticleExplanations(
+  articleId: number,
+): Promise<{ explanations: Explanation[] }> {
+  return req(`/articles/${articleId}/explanations`);
+}
+export function deleteExplanation(id: number): Promise<{ ok: true }> {
+  return req(`/explanations/${id}`, { method: "DELETE" });
+}
+export function deleteWord(id: number): Promise<{ ok: true }> {
+  return req(`/words/${id}`, { method: "DELETE" });
+}
