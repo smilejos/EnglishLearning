@@ -340,6 +340,21 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
     return () => clearInterval(t);
   }, [load]);
 
+  // 本篇單字解釋（可就地刪除）。
+  const [artExps, setArtExps] = useState<api.Explanation[]>([]);
+  const loadExps = useCallback(async () => {
+    setArtExps((await api.listArticleExplanations(id)).explanations);
+  }, [id]);
+  useEffect(() => {
+    void loadExps();
+  }, [loadExps]);
+
+  async function removeArtExp(expId: number) {
+    if (!confirm("刪除這筆單字解釋？")) return;
+    await api.deleteExplanation(expId);
+    await loadExps();
+  }
+
   // 待文章載入且受控詞彙抓取完成後，初始化一次編輯草稿。
   useEffect(() => {
     if (inited.current || !article || !ready) return;
@@ -485,6 +500,30 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
               <AudioGroup label="英文朗讀" path={p.enAudioPath} />
               <AudioGroup label="中文朗讀" path={p.zhAudioPath} />
             </div>
+          )}
+        </div>
+      ))}
+
+      <div className="section-eyebrow">本篇單字解釋（{artExps.length}）</div>
+      {artExps.length === 0 && (
+        <p className="picker__hint">本篇尚無單字解釋。</p>
+      )}
+      {artExps.map((e) => (
+        <div key={e.id} className="para-item">
+          <div className="para-item__head">
+            <span className="para-item__idx">
+              {e.word?.normalizedWord ?? `#${e.wordId}`}
+            </span>
+            <button
+              className="btn btn--ghost btn--sm"
+              onClick={() => void removeArtExp(e.id)}
+            >
+              刪除
+            </button>
+          </div>
+          {e.zhTranslation && <p className="para-item__tr">翻譯：{e.zhTranslation}</p>}
+          {e.zhExplanation && (
+            <p className="para-item__tr">解釋（中）：{e.zhExplanation}</p>
           )}
         </div>
       ))}
