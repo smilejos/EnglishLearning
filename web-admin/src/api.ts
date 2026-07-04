@@ -56,12 +56,16 @@ export function retryArticle(id: number): Promise<{ ok: boolean }> {
   return req(`/articles/${id}/retry`, { method: "POST" });
 }
 
+export type RegenScope = "translation" | "audio-en" | "audio-zh";
+
 export function regenerateParagraph(
   articleId: number,
   paragraphId: number,
+  scope: RegenScope,
 ): Promise<{ ok: boolean }> {
   return req(`/articles/${articleId}/paragraphs/${paragraphId}/regenerate`, {
     method: "POST",
+    body: JSON.stringify({ scope }),
   });
 }
 
