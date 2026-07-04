@@ -2,6 +2,7 @@
 // db pool、repositories 於 Phase 2+ 陸續加入。
 
 export { normalizeWord } from "./normalizeWord";
+export { extractVocabWords } from "./tokenizeWords";
 
 export { createPool, ping, withTransaction } from "./db";
 export type { DbPool } from "./db";
