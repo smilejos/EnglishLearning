@@ -434,18 +434,10 @@ function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
   );
 }
 
-function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
+function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
   const [article, setArticle] = useState<Article | null>(null);
   const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const { categories, tags, ready } = useTaxonomy();
-
-  // 編輯草稿：僅在首次載入時由文章 meta 初始化，之後的輪詢不覆寫使用者編輯。
-  const [title, setTitle] = useState("");
-  const [draft, setDraft] = useState<MetaDraft | null>(null);
-  const [saving, setSaving] = useState(false);
-  const [saved, setSaved] = useState(false);
-  const inited = useRef(false);
 
   const load = useCallback(async () => {
     try {
@@ -478,14 +470,6 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
     await loadExps();
   }
 
-  // 待文章載入且受控詞彙抓取完成後，初始化一次編輯草稿。
-  useEffect(() => {
-    if (inited.current || !article || !ready) return;
-    setTitle(article.title);
-    setDraft(draftFromArticle(article, categories, tags));
-    inited.current = true;
-  }, [article, ready, categories, tags]);
-
   async function retry() {
     await api.retryArticle(id);
     void load();
@@ -503,31 +487,6 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
       return;
     await api.regenerateParagraph(id, p.id, scope);
     void load();
-  }
-
-  async function save() {
-    if (!draft) return;
-    setSaving(true);
-    setSaved(false);
-    setError(null);
-    try {
-      const { categoryId, tagList } = draftToPayload(draft, tags);
-      await api.updateArticle(id, {
-        title,
-        materialType: draft.materialType,
-        grade: draft.grade || null,
-        unit: draft.unit || null,
-        level: draft.level || null,
-        categoryId: categoryId ?? null,
-        tags: tagList,
-      });
-      setSaved(true);
-      await load();
-    } catch (err) {
-      setError((err as Error).message);
-    } finally {
-      setSaving(false);
-    }
   }
 
   if (error && !article)
@@ -557,48 +516,6 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
           <button className="btn btn--ghost btn--sm" onClick={retry}>
             重試失敗段落
           </button>
-        )}
-      </div>
-
-      {/* 可編輯的文章資訊（不含內文）。 */}
-      <div className="panel" style={{ marginBottom: 18 }}>
-        <h3 className="h-title" style={{ fontSize: "1.1rem", marginBottom: 12 }}>
-          文章資訊
-        </h3>
-        {draft ? (
-          <div className="form">
-            <input
-              className="field"
-              placeholder="標題"
-              value={title}
-              onChange={(e) => {
-                setTitle(e.target.value);
-                setSaved(false);
-              }}
-            />
-            <MetaFields
-              draft={draft}
-              patch={(p) => {
-                setDraft((d) => (d ? { ...d, ...p } : d));
-                setSaved(false);
-              }}
-              categories={categories}
-              tags={tags}
-            />
-            {error && <p className="error-text">{error}</p>}
-            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-              <button
-                className="btn btn--primary"
-                onClick={save}
-                disabled={saving || !title.trim()}
-              >
-                {saving ? "儲存中…" : "儲存變更"}
-              </button>
-              {saved && <span style={{ color: "var(--positive)", fontWeight: 700 }}>已儲存 ✓</span>}
-            </div>
-          </div>
-        ) : (
-          <p className="picker__hint">載入中…</p>
         )}
       </div>
 
@@ -1350,7 +1267,7 @@ export default function App() {
         ) : view === "edit" && openId !== null ? (
           <ArticleEdit id={openId} onBack={goList} />
         ) : view === "detail" && openId !== null ? (
-          <ArticleDetail id={openId} onBack={goList} />
+          <ArticleView id={openId} onBack={goList} />
         ) : (
           <ArticleList onOpen={openDetail} onEdit={openEdit} />
         )}
