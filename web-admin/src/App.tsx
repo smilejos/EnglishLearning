@@ -368,14 +368,17 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
     void load();
   }
 
-  async function regen(p: Paragraph) {
+  async function regen(p: Paragraph, scope: api.RegenScope) {
+    const label = {
+      translation: "重新翻譯（連帶重生中文音檔）",
+      "audio-zh": "重新產生中文音檔",
+      "audio-en": "重新產生英文音檔",
+    }[scope];
     if (
-      !window.confirm(
-        `重新產生第 ${p.idx + 1} 段？將重新呼叫翻譯與語音 API（產生費用）。`,
-      )
+      !window.confirm(`第 ${p.idx + 1} 段：${label}？將呼叫對應 API（產生費用）。`)
     )
       return;
-    await api.regenerateParagraph(id, p.id);
+    await api.regenerateParagraph(id, p.id, scope);
     void load();
   }
 
@@ -485,9 +488,17 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
             <span className="para-item__idx">#{p.idx + 1}</span>
             <StatusBadge status={p.status} />
             {(p.status === "done" || p.status === "failed") && (
-              <button className="btn btn--ghost btn--sm" onClick={() => void regen(p)}>
-                重新產生
-              </button>
+              <>
+                <button className="btn btn--ghost btn--sm" onClick={() => void regen(p, "translation")}>
+                  重新翻譯
+                </button>
+                <button className="btn btn--ghost btn--sm" onClick={() => void regen(p, "audio-zh")}>
+                  產生中文音檔
+                </button>
+                <button className="btn btn--ghost btn--sm" onClick={() => void regen(p, "audio-en")}>
+                  產生英文音檔
+                </button>
+              </>
             )}
           </div>
           <p className="para-item__text">{p.text}</p>
