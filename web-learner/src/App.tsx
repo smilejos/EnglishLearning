@@ -8,6 +8,7 @@ import { readyArticles } from "./lib/articles";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { articleIdFromHash, hashForArticle } from "./lib/route";
 import { popupTitle } from "./lib/vocab";
+import { explanationAudioReady } from "./lib/explanation";
 import {
   PlayIcon,
   PauseIcon,
@@ -216,6 +217,7 @@ function WordPopup({
   const [explanations, setExplanations] = useState<WordExplanation[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [pendingArticleId, setPendingArticleId] = useState<number | null>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
 
   // 開啟時聚焦關閉鈕、ESC 關閉；關閉時把焦點還給觸發元素。
@@ -253,12 +255,38 @@ function WordPopup({
       await api.reexplain({ articleId, paragraphId, word });
       await load();
       onExplained?.();
+      setPendingArticleId(articleId); // 觸發背景音檔輪詢
     } catch (err) {
       setError((err as Error).message);
     } finally {
       setBusy(false);
     }
   }
+
+  // 重新解釋後音檔為背景補產：每 5 秒重抓一次、最多 4 次；音檔備齊或次數用盡即停。
+  useEffect(() => {
+    if (pendingArticleId === null) return;
+    let tries = 0;
+    const timer = setInterval(async () => {
+      tries += 1;
+      const data = await api.getExplanations(word).catch(() => null);
+      if (data) {
+        setWordInfo(data.word);
+        setExplanations(data.explanations);
+        const exp = data.explanations.find((e) => e.articleId === pendingArticleId);
+        if (exp && explanationAudioReady(exp)) {
+          clearInterval(timer);
+          setPendingArticleId(null);
+          return;
+        }
+      }
+      if (tries >= 4) {
+        clearInterval(timer);
+        setPendingArticleId(null);
+      }
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [pendingArticleId, word]);
 
   const title = popupTitle(word, explanations, articleId);
 
@@ -297,7 +325,13 @@ function WordPopup({
           <p className="sheet__empty">尚無解釋，點上方按鈕用本篇產生。</p>
         )}
         {explanations.map((exp) => (
-          <ExplanationCard key={exp.id} exp={exp} word={wordInfo} onJump={onJump} />
+          <ExplanationCard
+            key={exp.id}
+            exp={exp}
+            word={wordInfo}
+            onJump={onJump}
+            pending={exp.articleId === pendingArticleId}
+          />
         ))}
       </div>
     </div>
