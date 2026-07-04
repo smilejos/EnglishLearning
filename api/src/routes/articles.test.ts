@@ -467,27 +467,81 @@ describe("GET /articles/:id 失敗原因", () => {
 });
 
 describe("POST /articles/:id/paragraphs/:pid/regenerate", () => {
-  it("done 段落重設為 pending（翻譯清空）、job 歸零、文章 processing", async () => {
-    const article = await createArticle(pool, { title: "Regen" });
+  async function seedDone(title: string) {
+    const article = await createArticle(pool, { title });
     const p = await createParagraph(pool, { articleId: article.id, idx: 0, text: "T." });
     const job = await createJob(pool, article.id, p.id);
-    await pool.query(`UPDATE paragraphs SET status='done', translation='舊譯' WHERE id=$1`, [p.id]);
+    await updateParagraphResult(pool, p.id, {
+      translation: "舊譯",
+      enAudioPath: "articles/1/p0.en.wav",
+      zhAudioPath: "articles/1/p0.zh.wav",
+      status: "done",
+    });
     await pool.query(`UPDATE jobs SET status='done', attempts=2 WHERE id=$1`, [job.id]);
     await pool.query(`UPDATE articles SET status='done' WHERE id=$1`, [article.id]);
+    return { article, p, job };
+  }
 
+  it("scope=translation：清翻譯與中文音檔、保留英文、job 歸零、文章 processing", async () => {
+    const { article, p, job } = await seedDone("Retrans");
     const app = buildApp({ config: adminConfig, pool });
     const res = await app.inject({
       method: "POST",
       url: `/articles/${article.id}/paragraphs/${p.id}/regenerate`,
+      payload: { scope: "translation" },
     });
     expect(res.statusCode).toBe(200);
-
     const para = (await listParagraphsByArticle(pool, article.id))[0];
     expect(para.status).toBe("pending");
     expect(para.translation).toBeNull();
+    expect(para.zhAudioPath).toBeNull();
+    expect(para.enAudioPath).toBe("articles/1/p0.en.wav");
     const j = await pool.query(`SELECT status, attempts, error FROM jobs WHERE id=$1`, [job.id]);
     expect(j.rows[0]).toMatchObject({ status: "pending", attempts: 0, error: null });
     expect((await getArticleById(pool, article.id))!.status).toBe("processing");
+    await app.close();
+  });
+
+  it("scope=audio-zh：只清中文音檔，保留翻譯與英文", async () => {
+    const { article, p } = await seedDone("Zh");
+    const app = buildApp({ config: adminConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${article.id}/paragraphs/${p.id}/regenerate`,
+      payload: { scope: "audio-zh" },
+    });
+    expect(res.statusCode).toBe(200);
+    const para = (await listParagraphsByArticle(pool, article.id))[0];
+    expect(para.translation).toBe("舊譯");
+    expect(para.zhAudioPath).toBeNull();
+    expect(para.enAudioPath).toBe("articles/1/p0.en.wav");
+    await app.close();
+  });
+
+  it("scope=audio-en：只清英文音檔，保留翻譯與中文", async () => {
+    const { article, p } = await seedDone("En");
+    const app = buildApp({ config: adminConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${article.id}/paragraphs/${p.id}/regenerate`,
+      payload: { scope: "audio-en" },
+    });
+    expect(res.statusCode).toBe(200);
+    const para = (await listParagraphsByArticle(pool, article.id))[0];
+    expect(para.enAudioPath).toBeNull();
+    expect(para.zhAudioPath).toBe("articles/1/p0.zh.wav");
+    await app.close();
+  });
+
+  it("scope 非法 → 400", async () => {
+    const { article, p } = await seedDone("Bad");
+    const app = buildApp({ config: adminConfig, pool });
+    const res = await app.inject({
+      method: "POST",
+      url: `/articles/${article.id}/paragraphs/${p.id}/regenerate`,
+      payload: { scope: "nope" },
+    });
+    expect(res.statusCode).toBe(400);
     await app.close();
   });
 
@@ -499,6 +553,7 @@ describe("POST /articles/:id/paragraphs/:pid/regenerate", () => {
     const res = await app.inject({
       method: "POST",
       url: `/articles/${a1.id}/paragraphs/${p2.id}/regenerate`,
+      payload: { scope: "translation" },
     });
     expect(res.statusCode).toBe(404);
     await app.close();
@@ -511,6 +566,7 @@ describe("POST /articles/:id/paragraphs/:pid/regenerate", () => {
     const res = await app.inject({
       method: "POST",
       url: `/articles/${article.id}/paragraphs/${p.id}/regenerate`,
+      payload: { scope: "translation" },
     });
     expect(res.statusCode).toBe(403);
     await app.close();

@@ -242,7 +242,7 @@ export function registerArticleRoutes(
     },
   );
 
-  // 單段重新產生（admin only）：清空翻譯/音檔路徑、job 重排，交由 worker 重做。
+  // 單段重新產生（admin only）：依 scope 清對應欄位、job 重排，交由 worker 重做。
   app.post(
     "/articles/:id/paragraphs/:pid/regenerate",
     { preHandler: requireAdmin },
@@ -253,12 +253,16 @@ export function registerArticleRoutes(
       if (!Number.isInteger(id) || id <= 0 || !Number.isInteger(pid) || pid <= 0) {
         return reply.code(400).send({ error: "invalid id" });
       }
+      const scope = (request.body as { scope?: string } | null)?.scope;
+      if (scope !== "translation" && scope !== "audio-en" && scope !== "audio-zh") {
+        return reply.code(400).send({ error: "invalid scope" });
+      }
       const paragraph = await getParagraphById(pool, pid);
       if (!paragraph || paragraph.articleId !== id) {
         return reply.code(404).send({ error: "paragraph not found" });
       }
       await withTransaction(pool, async (tx) => {
-        await clearParagraphResult(tx, pid);
+        await clearParagraphResult(tx, pid, scope);
         await resetJobForParagraph(tx, id, pid);
         await setArticleStatus(tx, id, "processing");
       });
