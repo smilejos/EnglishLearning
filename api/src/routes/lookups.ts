@@ -18,6 +18,11 @@ import {
   listWordsMissingEnAudio,
   listExplanationsMissingAudio,
   updateExplanationAudioPaths,
+  searchWords,
+  deleteWord,
+  listExplanationsByArticle,
+  deleteExplanation,
+  removeAudioDir,
   type DbPool,
   type ExplainClient,
   type TtsClient,
@@ -40,6 +45,7 @@ export interface LookupDeps {
 export function registerLookupRoutes(
   app: FastifyInstance,
   pool: DbPool,
+  audioDir?: string,
   deps?: LookupDeps,
   limiter?: LookupLimiter,
 ): void {
@@ -60,6 +66,57 @@ export function registerLookupRoutes(
     }
     return { words: await listGloballyExplainedWordsInArticle(pool, id) };
   });
+
+  // 後台：單字搜尋（含各字解釋數）。
+  app.get("/words", { preHandler: requireAdmin }, async (request) => {
+    const { q, limit } = request.query as { q?: string; limit?: string };
+    const n = Math.min(Math.max(Number(limit) || 50, 1), 200);
+    return { words: await searchWords(pool, q ?? "", n) };
+  });
+
+  // 後台：某文章產生過的解釋（含單字），文章內清單用。
+  app.get(
+    "/articles/:id/explanations",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      if (!Number.isInteger(id) || id <= 0) {
+        return reply.code(400).send({ error: "invalid article id" });
+      }
+      return { explanations: await listExplanationsByArticle(pool, id) };
+    },
+  );
+
+  // 後台：刪除單一解釋（並盡力清該解釋音檔目錄）。
+  app.delete(
+    "/explanations/:id",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      const removed = await deleteExplanation(pool, id);
+      if (!removed) return reply.code(404).send({ error: "explanation not found" });
+      if (audioDir) {
+        await removeAudioDir(
+          audioDir,
+          `words/${removed.wordId}/a${removed.articleId}`,
+        );
+      }
+      return { ok: true };
+    },
+  );
+
+  // 後台：刪除整個單字（cascade 解釋；並盡力清該單字整包音檔）。
+  app.delete(
+    "/words/:id",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      const removed = await deleteWord(pool, id);
+      if (removed === null) return reply.code(404).send({ error: "word not found" });
+      if (audioDir) await removeAudioDir(audioDir, `words/${id}`);
+      return { ok: true };
+    },
+  );
 
   // 重新解釋：{ articleId, paragraphId, word } → 快取命中即回；未命中則
   // 呼叫 LLM 產生解釋與例句、各項 TTS（含 word 英文發音若缺），寫入後回傳。

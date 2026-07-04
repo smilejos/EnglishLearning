@@ -483,3 +483,73 @@ describe("GET /articles/:id/lookups（本篇出現且全站有解釋）", () => 
     await app.close();
   });
 });
+
+const adminConfig: AuthConfig = {
+  cfAccess: null,
+  devAuthBypass: true,
+  devUserEmail: "admin@example.com",
+  adminEmails: ["admin@example.com"],
+};
+
+describe("後台單字 CRUD", () => {
+  it("GET /words 搜尋、GET /articles/:id/explanations、DELETE 解釋/單字", async () => {
+    const a = await createArticle(pool, { title: "Signs of Winter" });
+    const w = await getOrCreateWord(pool, "thick");
+    const e = await createExplanation(pool, {
+      wordId: w.id,
+      articleId: a.id,
+      zhTranslation: "厚",
+    });
+    const app = buildApp({ config: adminConfig, pool });
+
+    const search = await app.inject({ method: "GET", url: "/words?q=thi" });
+    expect(search.statusCode).toBe(200);
+    expect(search.json().words[0]).toMatchObject({
+      normalizedWord: "thick",
+      explanationCount: 1,
+    });
+
+    const byArticle = await app.inject({
+      method: "GET",
+      url: `/articles/${a.id}/explanations`,
+    });
+    expect(byArticle.json().explanations[0].word.normalizedWord).toBe("thick");
+
+    const delExp = await app.inject({
+      method: "DELETE",
+      url: `/explanations/${e.id}`,
+    });
+    expect(delExp.statusCode).toBe(200);
+    expect(await findExplanation(pool, w.id, a.id)).toBeNull();
+
+    const delWord = await app.inject({ method: "DELETE", url: `/words/${w.id}` });
+    expect(delWord.statusCode).toBe(200);
+    expect(await findWordByNormalized(pool, "thick")).toBeNull();
+    await app.close();
+  });
+
+  it("DELETE 不存在的解釋/單字 → 404", async () => {
+    const app = buildApp({ config: adminConfig, pool });
+    expect(
+      (await app.inject({ method: "DELETE", url: "/explanations/999" })).statusCode,
+    ).toBe(404);
+    expect(
+      (await app.inject({ method: "DELETE", url: "/words/999" })).statusCode,
+    ).toBe(404);
+    await app.close();
+  });
+
+  it("reader 角色刪除 → 403", async () => {
+    const a = await createArticle(pool, { title: "A" });
+    const w = await getOrCreateWord(pool, "thick");
+    const e = await createExplanation(pool, { wordId: w.id, articleId: a.id });
+    const app = buildApp({ config, pool }); // reader
+    expect(
+      (await app.inject({ method: "DELETE", url: `/explanations/${e.id}` })).statusCode,
+    ).toBe(403);
+    expect(
+      (await app.inject({ method: "DELETE", url: `/words/${w.id}` })).statusCode,
+    ).toBe(403);
+    await app.close();
+  });
+});
