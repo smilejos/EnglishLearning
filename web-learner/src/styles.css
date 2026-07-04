@@ -257,7 +257,6 @@ a { color: inherit; text-decoration: none; }
 }
 .vocab {
   color: var(--accent-strong); cursor: pointer; border-radius: 3px; padding: 0 1px; margin: 0 -1px;
-  border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 38%, transparent);
   transition: background .12s, border-color .12s;
 }
 .vocab:hover { background: var(--accent-soft); border-bottom-color: var(--accent); }
@@ -382,9 +381,7 @@ a { color: inherit; text-decoration: none; }
   .ab-now, .ab-right { justify-content: center; }
 }
 
-/* 無障礙（Task 13）：可點字 button 化後的外觀重設與焦點可視。
-   button.vocab 的 `border: 0` 特異度高於 .vocab 的 border-bottom，
-   故在同一規則內重新宣告 border-bottom，避免蓋掉底線視覺提示。 */
+/* 可點字 button 化的外觀重設；底線僅保留給「已有解釋」的 .vocab--known。 */
 button.vocab {
   background: none;
   border: 0;
@@ -393,7 +390,6 @@ button.vocab {
   font: inherit;
   color: inherit;
   cursor: pointer;
-  border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 38%, transparent);
 }
 .vocab:focus-visible {
   outline: 2px solid var(--accent);
@@ -412,4 +408,4 @@ button.vocab {
 .audiobar { padding-bottom: calc(8px + env(safe-area-inset-bottom)); }
 
 /* 已查單字標示（Task 16） */
-.vocab--known { border-bottom: 2px dotted var(--accent); }
+.vocab--known { border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); }
