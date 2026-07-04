@@ -65,3 +65,12 @@ export function reexplain(input: {
 export function audioUrl(relPath: string): string {
   return `${BASE}/audio/${relPath}`;
 }
+
+/** 後台網址（build 期注入；未設則本機預設）。 */
+export const ADMIN_URL =
+  (import.meta.env.VITE_ADMIN_URL as string | undefined) ?? "http://localhost:8081";
+
+/** 某單字的後台管理深連結。 */
+export function adminWordUrl(word: string): string {
+  return `${ADMIN_URL}/#/w/${encodeURIComponent(word)}`;
+}

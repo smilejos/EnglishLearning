@@ -304,6 +304,15 @@ function WordPopup({
           {wordInfo && (
             <AudioChip iconOnly path={wordInfo.enAudioPath} label="播放單字發音" />
           )}
+          <a
+            className="sheet__admin"
+            href={api.adminWordUrl(word)}
+            target="_blank"
+            rel="noreferrer"
+            title="在後台管理此單字"
+          >
+            ⚙ 後台管理
+          </a>
           <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
             ✕
           </button>
