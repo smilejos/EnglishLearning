@@ -159,6 +159,32 @@ describe("POST /lookups（重新解釋）", () => {
     return { articleId: article.id, paragraphId: p.id };
   }
 
+  it("寫入 LLM 回傳的 headword，快取命中亦回傳同 headword", async () => {
+    const { articleId, paragraphId } = await seedArticleParagraph();
+    const phraseDeps = makeDeps();
+    phraseDeps.explainClient.complete = vi.fn(async () =>
+      JSON.stringify({ ...content, headword: "good habit" }),
+    );
+    const app = buildApp({ config, pool, audioDir, lookupDeps: phraseDeps });
+
+    const res1 = await app.inject({
+      method: "POST",
+      url: "/lookups",
+      payload: { articleId, paragraphId, word: "habit" },
+    });
+    expect(res1.statusCode).toBe(201);
+    expect(res1.json().explanation.headword).toBe("good habit");
+
+    const res2 = await app.inject({
+      method: "POST",
+      url: "/lookups",
+      payload: { articleId, paragraphId, word: "habit" },
+    });
+    expect(res2.statusCode).toBe(200); // 快取命中
+    expect(res2.json().explanation.headword).toBe("good habit");
+    await app.close();
+  });
+
   it("首呼產生 6 個音檔（5 解釋 + word 英文發音）並寫入解釋", async () => {
     const { articleId, paragraphId } = await seedArticleParagraph();
     const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });

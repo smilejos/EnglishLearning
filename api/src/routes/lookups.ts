@@ -188,6 +188,7 @@ export function registerLookupRoutes(
           zhExplanationAudioPath,
           zhExample: content.zh_example,
           zhExampleAudioPath,
+          headword: content.headword,
         });
       });
     } catch (err) {

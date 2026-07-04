@@ -20,6 +20,7 @@ function mapExplanation(row: any): WordExplanation {
     zhExplanationAudioPath: row.zh_explanation_audio_path,
     zhExample: row.zh_example,
     zhExampleAudioPath: row.zh_example_audio_path,
+    headword: row.headword,
     createdAt: toIso(row.created_at),
   };
 }
@@ -38,6 +39,7 @@ export interface CreateExplanationInput {
   zhExplanationAudioPath?: string | null;
   zhExample?: string | null;
   zhExampleAudioPath?: string | null;
+  headword?: string | null;
 }
 
 export async function createExplanation(
@@ -51,8 +53,8 @@ export async function createExplanation(
        en_example, en_example_audio_path,
        zh_translation, zh_translation_audio_path,
        zh_explanation, zh_explanation_audio_path,
-       zh_example, zh_example_audio_path
-     ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)
+       zh_example, zh_example_audio_path, headword
+     ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)
      RETURNING *`,
     [
       input.wordId,
@@ -68,6 +70,7 @@ export async function createExplanation(
       input.zhExplanationAudioPath ?? null,
       input.zhExample ?? null,
       input.zhExampleAudioPath ?? null,
+      input.headword ?? null,
     ],
   );
   return mapExplanation(res.rows[0]);

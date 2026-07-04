@@ -91,6 +91,7 @@ export const WordExplanationSchema = z.object({
   // 9–10 中文例句
   zhExample: z.string().nullable(),
   zhExampleAudioPath: z.string().nullable(),
+  headword: z.string().nullable(),
   createdAt: z.string(),
 });
 export type WordExplanation = z.infer<typeof WordExplanationSchema>;

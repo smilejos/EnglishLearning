@@ -161,6 +161,7 @@ describe("WordExplanationSchema", () => {
     zhExplanationAudioPath: null,
     zhExample: "閱讀是個好習慣。",
     zhExampleAudioPath: null,
+    headword: "habit",
     createdAt: "2026-06-29T00:00:00.000Z",
   };
 
@@ -235,6 +236,7 @@ describe("WordLookupResponseSchema", () => {
           zhExplanationAudioPath: null,
           zhExample: "閱讀是個好習慣。",
           zhExampleAudioPath: null,
+          headword: "habit",
           createdAt: "2026-06-29T00:00:00.000Z",
           article: { id: 3, title: "Source Article" },
         },
