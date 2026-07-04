@@ -311,6 +311,129 @@ function AudioGroup({
   );
 }
 
+function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
+  const [article, setArticle] = useState<Article | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const { categories, tags, ready } = useTaxonomy();
+
+  const [title, setTitle] = useState("");
+  const [draft, setDraft] = useState<MetaDraft | null>(null);
+  const [saving, setSaving] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const inited = useRef(false);
+
+  const load = useCallback(async () => {
+    try {
+      const data = await api.getArticle(id);
+      setArticle(data.article);
+    } catch (err) {
+      setError((err as Error).message);
+    }
+  }, [id]);
+
+  useEffect(() => {
+    void load();
+  }, [load]);
+
+  // 待文章載入且受控詞彙抓取完成後，初始化一次編輯草稿。
+  useEffect(() => {
+    if (inited.current || !article || !ready) return;
+    setTitle(article.title);
+    setDraft(draftFromArticle(article, categories, tags));
+    inited.current = true;
+  }, [article, ready, categories, tags]);
+
+  async function save() {
+    if (!draft) return;
+    setSaving(true);
+    setSaved(false);
+    setError(null);
+    try {
+      const { categoryId, tagList } = draftToPayload(draft, tags);
+      await api.updateArticle(id, {
+        title,
+        materialType: draft.materialType,
+        grade: draft.grade || null,
+        unit: draft.unit || null,
+        level: draft.level || null,
+        categoryId: categoryId ?? null,
+        tags: tagList,
+      });
+      setSaved(true);
+      await load();
+    } catch (err) {
+      setError((err as Error).message);
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  if (error && !article)
+    return <p className="status-line is-error">{error}</p>;
+  if (!article) return <p className="status-line">載入中…</p>;
+
+  return (
+    <div>
+      <button className="link-btn" onClick={onBack}>
+        ← 返回清單
+      </button>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 12,
+          margin: "10px 0 14px",
+          flexWrap: "wrap",
+        }}
+      >
+        <h2 className="h-title">{article.title}</h2>
+        <StatusBadge status={article.status} />
+      </div>
+
+      <div className="panel" style={{ marginBottom: 18 }}>
+        <h3 className="h-title" style={{ fontSize: "1.1rem", marginBottom: 12 }}>
+          文章資訊
+        </h3>
+        {draft ? (
+          <div className="form">
+            <input
+              className="field"
+              placeholder="標題"
+              value={title}
+              onChange={(e) => {
+                setTitle(e.target.value);
+                setSaved(false);
+              }}
+            />
+            <MetaFields
+              draft={draft}
+              patch={(p) => {
+                setDraft((d) => (d ? { ...d, ...p } : d));
+                setSaved(false);
+              }}
+              categories={categories}
+              tags={tags}
+            />
+            {error && <p className="error-text">{error}</p>}
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+              <button
+                className="btn btn--primary"
+                onClick={save}
+                disabled={saving || !title.trim()}
+              >
+                {saving ? "儲存中…" : "儲存變更"}
+              </button>
+              {saved && <span style={{ color: "var(--positive)", fontWeight: 700 }}>已儲存 ✓</span>}
+            </div>
+          </div>
+        ) : (
+          <p className="picker__hint">載入中…</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
   const [article, setArticle] = useState<Article | null>(null);
   const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
@@ -604,7 +727,13 @@ function useHeightPageSize(ref: React.RefObject<HTMLElement>): number {
   return size;
 }
 
-function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
+function ArticleList({
+  onOpen,
+  onEdit,
+}: {
+  onOpen: (id: number) => void;
+  onEdit: (id: number) => void;
+}) {
   const [articles, setArticles] = useState<Article[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [page, setPage] = useState(0);
@@ -726,6 +855,12 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
                       onClick={() => onOpen(a.id)}
                     >
                       檢視
+                    </button>
+                    <button
+                      className="btn btn--ghost btn--sm"
+                      onClick={() => onEdit(a.id)}
+                    >
+                      修改
                     </button>
                     <button
                       className="btn btn--danger btn--sm"
@@ -996,7 +1131,7 @@ function TaxonomyManager() {
   );
 }
 
-type View = "list" | "new" | "detail" | "taxonomy" | "words";
+type View = "list" | "new" | "detail" | "edit" | "taxonomy" | "words";
 
 function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
   const [q, setQ] = useState(initialQuery);
@@ -1150,8 +1285,13 @@ export default function App() {
     setOpenId(id);
     setView("detail");
   };
+  const openEdit = (id: number) => {
+    setOpenId(id);
+    setView("edit");
+  };
 
-  const inArticles = view === "list" || view === "new" || view === "detail";
+  const inArticles =
+    view === "list" || view === "new" || view === "detail" || view === "edit";
 
   return (
     <div className="app-root">
@@ -1207,10 +1347,12 @@ export default function App() {
             </button>
             <UploadForm onCreated={goList} />
           </div>
+        ) : view === "edit" && openId !== null ? (
+          <ArticleEdit id={openId} onBack={goList} />
         ) : view === "detail" && openId !== null ? (
           <ArticleDetail id={openId} onBack={goList} />
         ) : (
-          <ArticleList onOpen={openDetail} />
+          <ArticleList onOpen={openDetail} onEdit={openEdit} />
         )}
       </main>
     </div>
