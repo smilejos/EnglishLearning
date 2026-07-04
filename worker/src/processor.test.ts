@@ -8,6 +8,7 @@ import {
   createArticle,
   createParagraph,
   createJob,
+  updateParagraphResult,
   listParagraphsByArticle,
   getArticleById,
   type TranslateClient,
@@ -305,6 +306,67 @@ describe("worker 段落處理", () => {
     };
     await drainQueue(makeDeps({ ttsClient: slowTts }));
     expect(maxInFlight).toBeGreaterThanOrEqual(2);
+  });
+
+  it("只清中文音檔：僅合成一次中文，英文不重合成、不翻譯", async () => {
+    const article = await createArticle(pool, { title: "ZhOnly" });
+    const p = await createParagraph(pool, { articleId: article.id, idx: 0, text: "Hi." });
+    await updateParagraphResult(pool, p.id, {
+      translation: "嗨。",
+      enAudioPath: "articles/1/p0.en.wav",
+      status: "pending",
+    });
+    await createJob(pool, article.id, p.id);
+    const deps = makeDeps();
+    await processNextJob(deps);
+
+    expect(deps.ttsClient.synthesize).toHaveBeenCalledTimes(1);
+    expect(deps.ttsClient.synthesize).toHaveBeenCalledWith("嗨。", "VoiceZh");
+    expect(deps.translateClient.complete).not.toHaveBeenCalled();
+    const para = (await listParagraphsByArticle(pool, article.id))[0];
+    expect(para.enAudioPath).toBe("articles/1/p0.en.wav");
+    expect(para.zhAudioPath).toBe("articles/1/p0.zh.wav");
+    expect(para.status).toBe("done");
+  });
+
+  it("只清英文音檔：僅合成一次英文，中文不重合成、不翻譯", async () => {
+    const article = await createArticle(pool, { title: "EnOnly" });
+    const p = await createParagraph(pool, { articleId: article.id, idx: 0, text: "Hi." });
+    await updateParagraphResult(pool, p.id, {
+      translation: "嗨。",
+      zhAudioPath: "articles/1/p0.zh.wav",
+      status: "pending",
+    });
+    await createJob(pool, article.id, p.id);
+    const deps = makeDeps();
+    await processNextJob(deps);
+
+    expect(deps.ttsClient.synthesize).toHaveBeenCalledTimes(1);
+    expect(deps.ttsClient.synthesize).toHaveBeenCalledWith("Hi.", "VoiceEn");
+    expect(deps.translateClient.complete).not.toHaveBeenCalled();
+    const para = (await listParagraphsByArticle(pool, article.id))[0];
+    expect(para.zhAudioPath).toBe("articles/1/p0.zh.wav");
+    expect(para.status).toBe("done");
+  });
+
+  it("翻譯與中文音檔皆 null（重新翻譯後）：翻譯＋只合成中文，英文沿用", async () => {
+    const article = await createArticle(pool, { title: "Retrans" });
+    const p = await createParagraph(pool, { articleId: article.id, idx: 0, text: "Hi." });
+    await updateParagraphResult(pool, p.id, {
+      enAudioPath: "articles/1/p0.en.wav",
+      status: "pending",
+    });
+    await createJob(pool, article.id, p.id);
+    const deps = makeDeps();
+    await processNextJob(deps);
+
+    expect(deps.translateClient.complete).toHaveBeenCalled();
+    expect(deps.ttsClient.synthesize).toHaveBeenCalledTimes(1);
+    expect(deps.ttsClient.synthesize).toHaveBeenCalledWith("這是翻譯。", "VoiceZh");
+    const para = (await listParagraphsByArticle(pool, article.id))[0];
+    expect(para.translation).toBe("這是翻譯。");
+    expect(para.enAudioPath).toBe("articles/1/p0.en.wav");
+    expect(para.status).toBe("done");
   });
 });
 
