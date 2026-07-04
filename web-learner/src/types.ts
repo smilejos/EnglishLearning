@@ -59,6 +59,7 @@ export interface WordExplanation {
   zhExplanationAudioPath: string | null;
   zhExample: string | null;
   zhExampleAudioPath: string | null;
+  headword: string | null;
   createdAt: string;
   article: ExplanationSource;
 }

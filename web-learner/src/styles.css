@@ -315,6 +315,7 @@ a { color: inherit; text-decoration: none; }
 }
 .exp__src { font-size: 0.74rem; font-weight: 800; letter-spacing: var(--kicker-spacing); text-transform: uppercase; color: var(--text-muted); }
 .exp__src a { color: var(--accent-strong); }
+.exp__phrase { margin-top: 8px; font-weight: 800; font-size: 0.9rem; color: var(--accent-strong); }
 .exp__tr {
   margin: 10px 0; padding: 9px 12px; border-radius: var(--radius-sm);
   background: var(--positive-soft); color: var(--positive); font-weight: 800; font-size: 1.12rem;

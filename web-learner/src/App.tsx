@@ -7,6 +7,7 @@ import { uniqSorted } from "./lib/facets";
 import { readyArticles } from "./lib/articles";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { articleIdFromHash, hashForArticle } from "./lib/route";
+import { popupTitle } from "./lib/vocab";
 import {
   PlayIcon,
   PauseIcon,
@@ -129,6 +130,10 @@ function ExplanationCard({
           {exp.article.title}
         </a>
       </div>
+      {exp.headword &&
+        exp.headword.toLowerCase() !== word?.normalizedWord && (
+          <div className="exp__phrase">片語：{exp.headword}</div>
+        )}
       {exp.zhTranslation && (
         <div className="exp__tr" lang="zh-Hant">
           {exp.zhTranslation}
@@ -225,17 +230,19 @@ function WordPopup({
     }
   }
 
+  const title = popupTitle(word, explanations, articleId);
+
   return (
     <div className="sheet-overlay" onClick={onClose}>
       <div
         className="sheet"
         role="dialog"
         aria-modal="true"
-        aria-label={`單字 ${word}`}
+        aria-label={`單字 ${title}`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="sheet__head">
-          <h2 className="sheet__word">{word}</h2>
+          <h2 className="sheet__word">{title}</h2>
           <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
             ✕
           </button>
