@@ -1,6 +1,8 @@
 // word_explanations 資料存取（單字解釋變體）。
 import type { WordExplanation, WordExplanationWithSource } from "../schemas";
 import { type Queryable, toNum, toNumOrNull, toIso } from "./types";
+import { extractVocabWords } from "../tokenizeWords";
+import { listParagraphsByArticle } from "./paragraphs";
 
 function mapExplanation(row: any): WordExplanation {
   return {
@@ -130,6 +132,30 @@ export async function listExplainedWordsByArticle(
       WHERE we.article_id = $1
       ORDER BY w.normalized_word`,
     [articleId],
+  );
+  return res.rows.map((r) => r.normalized_word);
+}
+
+/**
+ * 前台底線用：本篇段落文字中出現、且該 normalized 單字在「全站任一文章」有解釋的清單。
+ * 斷詞規則與前端一致（見 extractVocabWords）。
+ */
+export async function listGloballyExplainedWordsInArticle(
+  db: Queryable,
+  articleId: number,
+): Promise<string[]> {
+  const paragraphs = await listParagraphsByArticle(db, articleId);
+  const words = new Set<string>();
+  for (const p of paragraphs)
+    for (const w of extractVocabWords(p.text)) words.add(w);
+  if (words.size === 0) return [];
+  const res = await db.query<{ normalized_word: string }>(
+    `SELECT DISTINCT w.normalized_word
+       FROM words w
+       JOIN word_explanations we ON we.word_id = w.id
+      WHERE w.normalized_word = ANY($1::text[])
+      ORDER BY w.normalized_word`,
+    [[...words]],
   );
   return res.rows.map((r) => r.normalized_word);
 }

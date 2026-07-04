@@ -421,24 +421,35 @@ describe("POST /lookups（重新解釋）", () => {
   });
 });
 
-describe("GET /articles/:id/lookups（已查單字清單）", () => {
-  it("回本文章已解釋單字（normalized、排序）", async () => {
-    const article = await createArticle(pool, { title: "Known" });
-    await createParagraph(pool, { articleId: article.id, idx: 0, text: "A habit." });
-    const w1 = await getOrCreateWord(pool, "habit");
-    const w2 = await getOrCreateWord(pool, "apple");
-    await createExplanation(pool, { wordId: w1.id, articleId: article.id, zhTranslation: "習慣" });
-    await createExplanation(pool, { wordId: w2.id, articleId: article.id, zhTranslation: "蘋果" });
+describe("GET /articles/:id/lookups（本篇出現且全站有解釋）", () => {
+  it("回本篇出現且全站任一文章有解釋的單字（normalized、排序）", async () => {
+    const a1 = await createArticle(pool, { title: "Current" });
+    const a2 = await createArticle(pool, { title: "Other" });
+    await createParagraph(pool, {
+      articleId: a1.id,
+      idx: 0,
+      text: "A habit and an apple.",
+    });
+    const wHabit = await getOrCreateWord(pool, "habit");
+    const wApple = await getOrCreateWord(pool, "apple");
+    const wStar = await getOrCreateWord(pool, "star");
+    // habit：他篇有解釋且本篇出現 → 應列入
+    await createExplanation(pool, { wordId: wHabit.id, articleId: a2.id, zhTranslation: "習慣" });
+    // apple：本篇有解釋且本篇出現 → 應列入
+    await createExplanation(pool, { wordId: wApple.id, articleId: a1.id, zhTranslation: "蘋果" });
+    // star：有解釋但本篇文字沒出現 → 不列入
+    await createExplanation(pool, { wordId: wStar.id, articleId: a2.id, zhTranslation: "星" });
 
     const app = buildApp({ config, pool });
-    const res = await app.inject({ method: "GET", url: `/articles/${article.id}/lookups` });
+    const res = await app.inject({ method: "GET", url: `/articles/${a1.id}/lookups` });
     expect(res.statusCode).toBe(200);
     expect(res.json()).toEqual({ words: ["apple", "habit"] });
     await app.close();
   });
 
-  it("無解釋時回空清單", async () => {
+  it("本篇出現但全站無解釋 → 不列入（回空清單）", async () => {
     const article = await createArticle(pool, { title: "Empty" });
+    await createParagraph(pool, { articleId: article.id, idx: 0, text: "A habit." });
     const app = buildApp({ config, pool });
     const res = await app.inject({ method: "GET", url: `/articles/${article.id}/lookups` });
     expect(res.json()).toEqual({ words: [] });

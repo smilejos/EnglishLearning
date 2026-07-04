@@ -4,7 +4,7 @@ import {
   normalizeWord,
   findWordByNormalized,
   listExplanationsByWord,
-  listExplainedWordsByArticle,
+  listGloballyExplainedWordsInArticle,
   getOrCreateWord,
   setWordEnAudioPath,
   findExplanation,
@@ -58,7 +58,7 @@ export function registerLookupRoutes(
     if (!Number.isInteger(id) || id <= 0) {
       return reply.code(400).send({ error: "invalid article id" });
     }
-    return { words: await listExplainedWordsByArticle(pool, id) };
+    return { words: await listGloballyExplainedWordsInArticle(pool, id) };
   });
 
   // 重新解釋：{ articleId, paragraphId, word } → 快取命中即回；未命中則
