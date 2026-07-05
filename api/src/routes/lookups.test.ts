@@ -12,6 +12,7 @@ import {
   createExplanation,
   findExplanation,
   findWordByNormalized,
+  preprovisionUser,
   WordLookupResponseSchema,
   type ExplainClient,
   type TtsClient,
@@ -145,6 +146,10 @@ describe("POST /lookups（重新解釋）", () => {
   afterAll(async () => {
     await rm(audioDir, { recursive: true, force: true });
   });
+  // 重新解釋限審稿者以上：讓預設 dev 使用者具 reviewer 角色（於父層 truncate 之後）。
+  beforeEach(async () => {
+    await preprovisionUser(pool, "reader@example.com", "reviewer");
+  });
 
   async function seedArticleParagraph(): Promise<{
     articleId: number;
@@ -158,6 +163,30 @@ describe("POST /lookups（重新解釋）", () => {
     });
     return { articleId: article.id, paragraphId: p.id };
   }
+
+  it("reader 呼叫 POST /lookups → 403", async () => {
+    const { articleId, paragraphId } = await seedArticleParagraph();
+    // 使用未被指派角色的 email → 預設 reader。
+    const readerConfig: AuthConfig = {
+      cfAccess: null,
+      devAuthBypass: true,
+      devUserEmail: "plain@example.com",
+      adminEmails: [],
+    };
+    const app = buildApp({
+      config: readerConfig,
+      pool,
+      audioDir,
+      lookupDeps: makeDeps(),
+    });
+    const res = await app.inject({
+      method: "POST",
+      url: "/lookups",
+      payload: { articleId, paragraphId, word: "habit" },
+    });
+    expect(res.statusCode).toBe(403);
+    await app.close();
+  });
 
   it("寫入 LLM 回傳的 headword，快取命中亦回傳同 headword", async () => {
     const { articleId, paragraphId } = await seedArticleParagraph();
@@ -212,8 +241,8 @@ describe("POST /lookups（重新解釋）", () => {
         "zhExplanationAudioPath",
         "zhExampleAudioPath",
       ] as const) {
-        expect((stored as Record<string, unknown>)?.[f]).toBeTruthy();
-        expect(await fileExists((stored as Record<string, string>)[f])).toBe(true);
+        expect(stored?.[f]).toBeTruthy();
+        expect(await fileExists(stored![f]!)).toBe(true);
       }
       const w = await findWordByNormalized(pool, "habit");
       expect(w?.enAudioPath).toBeTruthy();

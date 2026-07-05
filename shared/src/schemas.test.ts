@@ -3,6 +3,8 @@ import {
   StatusSchema,
   MaterialTypeSchema,
   UserRoleSchema,
+  ManageableRoleSchema,
+  PreprovisionUserRequestSchema,
   ArticleSchema,
   ParagraphSchema,
   WordSchema,
@@ -35,9 +37,34 @@ describe("MaterialTypeSchema", () => {
 });
 
 describe("UserRoleSchema", () => {
-  it("接受 admin / reader", () => {
-    expect(UserRoleSchema.parse("admin")).toBe("admin");
-    expect(UserRoleSchema.parse("reader")).toBe("reader");
+  it("接受 admin / reader / reviewer", () => {
+    for (const r of ["admin", "reader", "reviewer"]) {
+      expect(UserRoleSchema.parse(r)).toBe(r);
+    }
+  });
+});
+
+describe("ManageableRoleSchema", () => {
+  it("只接受 reviewer / reader，拒絕 admin", () => {
+    expect(ManageableRoleSchema.parse("reviewer")).toBe("reviewer");
+    expect(ManageableRoleSchema.parse("reader")).toBe("reader");
+    expect(ManageableRoleSchema.safeParse("admin").success).toBe(false);
+  });
+});
+
+describe("PreprovisionUserRequestSchema", () => {
+  it("拒絕非法 email", () => {
+    expect(
+      PreprovisionUserRequestSchema.safeParse({ email: "x", role: "reviewer" })
+        .success,
+    ).toBe(false);
+  });
+  it("接受合法 email + reviewer", () => {
+    const r = PreprovisionUserRequestSchema.parse({
+      email: "a@b.com",
+      role: "reviewer",
+    });
+    expect(r.email).toBe("a@b.com");
   });
 });
 

@@ -3,9 +3,9 @@
 import { describe, it, expect, beforeAll, afterAll, beforeEach } from "vitest";
 import { SignJWT, generateKeyPair, exportJWK } from "jose";
 import type { KeyLike } from "jose";
-import { createPool, getUserByEmail } from "@el/shared";
+import { createPool, getUserByEmail, preprovisionUser } from "@el/shared";
 import { buildApp } from "./app";
-import type { AuthConfig } from "./auth";
+import { resolveEffectiveRole, type AuthConfig } from "./auth";
 
 const DATABASE_URL =
   process.env.DATABASE_URL ??
@@ -131,5 +131,35 @@ describe("Cloudflare Access 驗證中介層", () => {
       role: "reader",
     });
     await app.close();
+  });
+
+  it("DB 為 reviewer 的使用者登入後 /me 回 reviewer，且 last_seen_at 被更新", async () => {
+    await preprovisionUser(pool, "rev@example.com", "reviewer");
+    const app = buildApp({ config: baseConfig, pool, getKey: publicKey });
+    const token = await signToken({ email: "rev@example.com" });
+    const res = await app.inject({
+      method: "GET",
+      url: "/me",
+      headers: { "cf-access-jwt-assertion": token },
+    });
+    expect(res.json().user.role).toBe("reviewer");
+    expect(
+      (await getUserByEmail(pool, "rev@example.com"))?.lastSeenAt,
+    ).not.toBeNull();
+    await app.close();
+  });
+});
+
+describe("resolveEffectiveRole", () => {
+  it("命中 ADMIN_EMAILS（不分大小寫）回 admin", () => {
+    expect(
+      resolveEffectiveRole("Owner@Example.com", ["owner@example.com"], "reader"),
+    ).toBe("admin");
+  });
+  it("未命中則回 DB 角色", () => {
+    expect(resolveEffectiveRole("rev@example.com", [], "reviewer")).toBe(
+      "reviewer",
+    );
+    expect(resolveEffectiveRole("r@example.com", [], "reader")).toBe("reader");
   });
 });

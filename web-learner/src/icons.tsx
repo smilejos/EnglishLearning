@@ -55,6 +55,17 @@ export const TranslateIcon = ({ size = 16 }: P) =>
       <path d="M13 21l4-9 4 9M14.5 18h5" />
     </>,
   );
+export const ShareIcon = ({ size = 16 }: P) =>
+  svg(
+    size,
+    <>
+      <circle cx="18" cy="5" r="3" />
+      <circle cx="6" cy="12" r="3" />
+      <circle cx="18" cy="19" r="3" />
+      <line x1="8.6" y1="10.5" x2="15.4" y2="6.5" />
+      <line x1="8.6" y1="13.5" x2="15.4" y2="17.5" />
+    </>,
+  );
 export const SoundIcon = ({ size = 15 }: P) =>
   svg(
     size,

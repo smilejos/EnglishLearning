@@ -8,6 +8,7 @@ import { registerArticleRoutes } from "./routes/articles";
 import { registerTaxonomyRoutes } from "./routes/taxonomy";
 import { registerLookupRoutes, type LookupDeps } from "./routes/lookups";
 import { registerStatsRoutes } from "./routes/stats";
+import { registerUserRoutes } from "./routes/users";
 import type { LookupLimiter } from "./rateLimit";
 
 export interface BuildAppOpts {
@@ -54,6 +55,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   registerTaxonomyRoutes(app, opts.pool);
   registerLookupRoutes(app, opts.pool, opts.audioDir, opts.lookupDeps, opts.lookupLimiter);
   registerStatsRoutes(app, opts.pool, opts.lookupLimiter);
+  registerUserRoutes(app, opts.pool, opts.config.adminEmails);
 
   return app;
 }

@@ -22,6 +22,7 @@
   --radius-lg: 14px;
   --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05), 0 1px 3px rgba(16, 24, 40, 0.07);
   --shadow-md: 0 8px 22px rgba(16, 24, 40, 0.10);
+  --shadow-lg: 0 20px 48px rgba(16, 24, 40, 0.16);
   --font-display: "Spectral", Georgia, serif;
   --font-ui: "Schibsted Grotesk", system-ui, sans-serif;
   --display-weight: 600;
@@ -105,8 +106,8 @@ textarea.field { resize: vertical; line-height: 1.5; }
 /* ---------------- buttons ---------------- */
 .btn {
   display: inline-flex; align-items: center; gap: 8px; border: none;
-  font-family: var(--font-ui); font-weight: 800; font-size: 0.9rem;
-  padding: 10px 18px; border-radius: 999px; white-space: nowrap;
+  font-family: var(--font-ui); font-weight: 800; font-size: 0.92rem;
+  padding: 11px 18px; border-radius: 999px; white-space: nowrap;
   transition: transform .12s ease, background .15s, box-shadow .15s, border-color .15s, color .15s;
 }
 .btn:active { transform: translateY(1px) scale(0.99); }
@@ -117,7 +118,7 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .btn--ghost:hover:not(:disabled) { background: var(--surface); border-color: var(--border-strong); }
 .btn--danger { background: none; color: var(--danger); border: 1px solid color-mix(in srgb, var(--danger) 30%, transparent); }
 .btn--danger:hover:not(:disabled) { background: var(--danger-soft); }
-.btn--sm { padding: 7px 13px; font-size: 0.82rem; }
+.btn--sm { padding: 8px 14px; font-size: 0.84rem; }
 .link-btn {
   display: inline-flex; align-items: center; gap: 7px; background: none; border: none;
   color: var(--text-soft); font-weight: 800; font-size: 0.88rem; padding: 6px 8px; border-radius: 9px;
@@ -145,6 +146,51 @@ textarea.field { resize: vertical; line-height: 1.5; }
   font-size: 0.82rem; color: var(--text-soft); font-weight: 700;
 }
 .stat b { font-size: 1rem; color: var(--text); font-variant-numeric: tabular-nums; }
+
+/* ---------------- filter bar（與前台同款） ---------------- */
+.filterbar { margin: 4px 0 14px; display: flex; flex-direction: column; gap: 12px; }
+.filterbar__top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.seg {
+  display: inline-flex; gap: 4px; background: var(--surface-2); padding: 4px;
+  border-radius: 999px; border: 1px solid var(--border); align-self: flex-start;
+}
+.seg__btn {
+  padding: 7px 16px; border-radius: 999px; border: none; font-weight: 800; font-size: 0.84rem;
+  background: transparent; color: var(--text-soft); transition: background .15s, color .15s;
+}
+.seg__btn.on { background: var(--accent); color: var(--accent-ink); box-shadow: var(--shadow-sm); }
+/* display:contents 讓搜尋框與各下拉直接參與 .filterbar__top 的排版，
+   得以與分段控制項同列（其右側），空間不足時才逐項換行。 */
+.filters { display: contents; }
+.filter__search {
+  font-family: var(--font-ui); font-size: 0.88rem; color: var(--text);
+  background: var(--surface); border: 1px solid var(--border); border-radius: 999px;
+  padding: 8px 15px; min-width: 180px;
+}
+.filter__search:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.filter__select {
+  font-family: var(--font-ui); font-weight: 700; font-size: 0.86rem; color: var(--text);
+  background: var(--surface); border: 1px solid var(--border); border-radius: 999px;
+  padding: 8px 30px 8px 14px; cursor: pointer; appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237a8494' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 10px center; background-size: 14px;
+}
+.filter__select:hover { border-color: var(--border-strong); background-color: var(--surface-2); }
+.filter__select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.tagtoggle {
+  position: relative; margin-left: auto; flex-shrink: 0;
+  width: 40px; height: 40px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text-soft); font-size: 1.3rem; line-height: 1;
+  display: grid; place-items: center; transition: background .15s, color .15s, border-color .15s;
+}
+.tagtoggle:hover { background: var(--surface-2); color: var(--text); border-color: var(--border-strong); }
+.tagtoggle.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.tagtoggle__badge {
+  position: absolute; top: -4px; right: -4px; min-width: 18px; height: 18px; padding: 0 4px;
+  border-radius: 999px; background: var(--accent-strong); color: #fff; font-size: 0.68rem;
+  font-weight: 800; display: grid; place-items: center; box-shadow: 0 0 0 2px var(--bg);
+}
+.tagtoggle.on .tagtoggle__badge { background: #fff; color: var(--accent-strong); box-shadow: 0 0 0 2px var(--accent); }
 
 /* ---------------- table ---------------- */
 .table { width: 100%; border-collapse: collapse; }
@@ -228,6 +274,32 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .status-line { padding: 2rem 1rem; text-align: center; color: var(--text-muted); font-weight: 600; }
 .status-line.is-error { color: var(--danger); }
 .error-text { color: var(--danger); font-weight: 600; }
+
+/* ---------------- page head（標題＋徽章＋動作列） ---------------- */
+.page-head { display: flex; align-items: center; gap: 12px; margin: 10px 0 14px; flex-wrap: wrap; }
+.page-head__aside { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+
+/* ---------------- inline form（搜尋、預先新增等） ---------------- */
+.form-inline { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 16px; }
+.form-inline .field { width: auto; }
+.form-inline .field--grow { flex: 1; min-width: 200px; }
+.field--round { border-radius: 999px; padding: 8px 15px; font-size: 0.88rem; }
+
+/* ---------------- role badge ---------------- */
+.badge-role {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em;
+  padding: 3px 10px; border-radius: 999px; border: 1px solid transparent;
+  background: var(--surface-2); color: var(--text-soft); border-color: var(--border);
+}
+.badge-role--admin { background: var(--accent-soft); color: var(--accent-strong); border-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+
+/* ---------------- muted cell text ---------------- */
+.cell-muted { color: var(--text-muted); font-size: 0.86rem; }
+
+/* ---------------- form actions（儲存列） ---------------- */
+.form__actions { display: flex; align-items: center; gap: 12px; }
+.save-note { color: var(--positive); font-weight: 700; }
 
 /* 失敗可視性（Task 3） */
 .para-item__error { color: var(--danger); font-size: .85rem; margin: 6px 0 0; word-break: break-word; }

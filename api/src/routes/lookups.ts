@@ -28,7 +28,7 @@ import {
   type AudioFormat,
   type ExplanationAudioPaths,
 } from "@el/shared";
-import { requireAdmin } from "../auth";
+import { requireAdmin, requireReviewer } from "../auth";
 import type { LookupLimiter } from "../rateLimit";
 
 /** 重新解釋所需的 LLM／TTS 依賴與音檔設定（注入以利測試 mock）。 */
@@ -188,7 +188,7 @@ export function registerLookupRoutes(
     }
   };
 
-  app.post("/lookups", async (request, reply) => {
+  app.post("/lookups", { preHandler: requireReviewer }, async (request, reply) => {
     const parsed = WordLookupRequestSchema.safeParse(request.body);
     if (!parsed.success) {
       return reply

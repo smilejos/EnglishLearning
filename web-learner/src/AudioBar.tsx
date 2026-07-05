@@ -17,6 +17,8 @@ function fmt(sec: number): string {
 
 export interface AudioBarProps {
   show: boolean;
+  /** 封面 emoji＋漸層（與文章卡片一致）；未提供時用預設。 */
+  cover?: { emoji: string; gradient: string };
   title: string;
   index: number;
   total: number;
@@ -50,7 +52,12 @@ export function AudioBar(props: AudioBarProps) {
     <div className={"audiobar" + (show ? " show" : "")}>
       <div className="audiobar__in">
         <div className="ab-now">
-          <div className="ab-now__art">🌱</div>
+          <div
+            className="ab-now__art"
+            style={props.cover ? { background: props.cover.gradient } : undefined}
+          >
+            {props.cover?.emoji ?? "🌱"}
+          </div>
           <div className="ab-now__txt">
             <div className="ab-now__t">{title}</div>
             <div className="ab-now__s">

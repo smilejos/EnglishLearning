@@ -1,6 +1,12 @@
 // api 呼叫封裝。同源部署（SPA 與 api 同網域，置於 Cloudflare Access 之後）；
 // 開發時由 Vite proxy 轉發到本機 api。
-import type { Article, Paragraph, CreateArticleInput } from "./types";
+import type {
+  Article,
+  Paragraph,
+  CreateArticleInput,
+  AdminUser,
+  ManageableRole,
+} from "./types";
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
@@ -205,4 +211,31 @@ export function deleteExplanation(id: number): Promise<{ ok: true }> {
 }
 export function deleteWord(id: number): Promise<{ ok: true }> {
   return req(`/words/${id}`, { method: "DELETE" });
+}
+
+// 使用者管理 ---------------------------------------------------------------
+export type { AdminUser, ManageableRole };
+
+export function listUsers(): Promise<{ users: AdminUser[] }> {
+  return req("/users");
+}
+
+export function setUserRole(
+  email: string,
+  role: ManageableRole,
+): Promise<{ user: AdminUser }> {
+  return req(`/users/${encodeURIComponent(email)}/role`, {
+    method: "PUT",
+    body: JSON.stringify({ role }),
+  });
+}
+
+export function preprovisionUser(
+  email: string,
+  role: ManageableRole,
+): Promise<{ user: AdminUser }> {
+  return req("/users", {
+    method: "POST",
+    body: JSON.stringify({ email, role }),
+  });
 }

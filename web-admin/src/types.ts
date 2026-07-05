@@ -38,6 +38,16 @@ export interface Paragraph {
   jobError?: string | null;
 }
 
+export type ManageableRole = "reviewer" | "reader";
+
+export interface AdminUser {
+  id: number;
+  email: string;
+  role: "admin" | "reviewer" | "reader";
+  lastSeenAt: string | null;
+  isEnvAdmin: boolean;
+}
+
 export interface CreateArticleInput {
   title: string;
   text: string;

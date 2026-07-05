@@ -5,6 +5,14 @@
 > 方案：Cloudflare Tunnel（cloudflared，outbound 連線）+ Cloudflare Access（邊緣身分驗證）。
 > 建立日期：2026-07-05
 
+> **⚠ 2026-07-05 更新：改為「單一網域＋路徑分流」。**
+> 原規劃的兩個子網域中，後台若為**兩層子網域**（如 `admin.e-learning.example.com`）
+> 會超出 Cloudflare Universal SSL 憑證涵蓋範圍（只涵蓋一層 `*.example.com`），TLS 握手直接失敗。
+> 現行做法：對外只掛**一個**一層子網域，由 repo 新增的 `proxy` 服務（nginx）用路徑分流 —
+> `/admin/*` → `web-admin`（SPA 以 `/admin/` 為 base 打包）、API 路徑 → `api`、其餘 → `web-learner`。
+> Tunnel 的 Public Hostname 只需一條，指向 `http://proxy:80`；Access 以「網域＋路徑 `/admin`」保護後台。
+> 下文子網域相關段落以更新後的表格與範例為準。
+
 ---
 
 ## 0. 背景與原則
@@ -53,9 +61,9 @@
 正式機的前後台互連按鈕要指向正式子網域。於 `.env`（正式機）設定：
 
 ```dotenv
-# 前後台互連（build 時注入 SPA）
-ADMIN_URL_PUBLIC=https://admin.example.com
-LEARNER_URL_PUBLIC=https://learn.example.com
+# 前後台互連（build 時注入 SPA；單一網域＋路徑分流）
+ADMIN_URL_PUBLIC=learn.example.com/admin
+LEARNER_URL_PUBLIC=learn.example.com
 
 # 關閉本機用的驗證繞道（正式機務必為 0）
 DEV_AUTH_BYPASS=0
@@ -89,29 +97,31 @@ CLOUDFLARE_TUNNEL_TOKEN=<在步驟 3 取得>
 
 ### 3.2 設定 Public Hostname（ingress 路由）
 
-在同一個 Tunnel 的 **Public Hostname** 分頁，新增兩條：
+在同一個 Tunnel 的 **Public Hostname** 分頁，只需**一條**（單一網域＋路徑分流）：
 
 | Subdomain | Domain | Service（Type / URL） |
 |---|---|---|
-| `admin` | `example.com` | `HTTP` / `web-admin:80` |
-| `learn` | `example.com` | `HTTP` / `web-learner:80` |
+| `learn` | `example.com` | `HTTP` / `proxy:80` |
 
-> - Service URL 直接填容器服務名 `web-admin:80` / `web-learner:80`（cloudflared 與前端在同一 docker network）。
-> - Type 用 `HTTP`（前端 nginx 聽 80，非 TLS；對外 TLS 由 Cloudflare 邊緣負責）。
+> - Service URL 直接填容器服務名 `proxy:80`（cloudflared 與 proxy 在同一 docker network）；
+>   由 proxy 依路徑分流到 `web-admin` / `web-learner` / `api`。
+> - **Subdomain 只能一層**（`learn.example.com` 可以、`admin.learn.example.com` 不行）——
+>   Universal SSL 憑證只涵蓋一層萬用子網域，兩層會 TLS 握手失敗。
+> - Type 用 `HTTP`（proxy nginx 聽 80，非 TLS；對外 TLS 由 Cloudflare 邊緣負責）。
 > - DNS 的 CNAME 會由 Cloudflare 自動建立，不需手動加。
 
 ### 3.3 建立 Access Application（後台白名單）
 
 1. **Access → Applications → Add an application → Self-hosted**。
 2. Application name：`English Learning Admin`。
-3. Application domain：`admin.example.com`（**只綁後台**）。
+3. Application domain：`learn.example.com`、Path：`admin`（**以路徑只綁後台**）。
 4. **Policies** 新增一條：
    - Action：`Allow`
    - Rule：`Emails` → 填入你的白名單 Gmail（可多個）。
 5. 儲存。
-6. **前台 `learn.example.com` 不要建 Access Application** → 保持公開。
+6. 前台（`learn.example.com` 根路徑）要不要保護另建一個 Application 決定，互不影響。
 
-> 若之後要讓前台也需登入，再為 `learn.example.com` 建一個 Application 即可，互不影響。
+> 若之後要讓前台也需登入，再為 `learn.example.com`（不填 Path）建一個 Application 即可。
 
 ---
 

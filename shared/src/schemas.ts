@@ -17,8 +17,21 @@ export const MaterialTypeSchema = z.enum(["school", "extracurricular"]);
 export type MaterialType = z.infer<typeof MaterialTypeSchema>;
 
 /** 使用者角色：對應 DB `user_role`。 */
-export const UserRoleSchema = z.enum(["admin", "reader"]);
+export const UserRoleSchema = z.enum(["admin", "reader", "reviewer"]);
 export type UserRole = z.infer<typeof UserRoleSchema>;
+
+/** 後台可指派的角色（管理者身分只由 ADMIN_EMAILS 決定，不可經後台指派）。 */
+export const ManageableRoleSchema = z.enum(["reviewer", "reader"]);
+export type ManageableRole = z.infer<typeof ManageableRoleSchema>;
+
+/** PUT /users/:email/role 的 body。 */
+export const SetUserRoleRequestSchema = z.object({ role: ManageableRoleSchema });
+
+/** POST /users（預先指派）的 body。 */
+export const PreprovisionUserRequestSchema = z.object({
+  email: z.string().email(),
+  role: ManageableRoleSchema,
+});
 
 // -----------------------------------------------------------------------------
 // 實體

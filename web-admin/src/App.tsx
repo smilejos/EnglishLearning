@@ -1,6 +1,8 @@
-import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
+import { normalizeBaseUrl } from "./urls";
+import { uniqSorted } from "./facets";
 
 function StatusBadge({ status }: { status: string }) {
   return <span className={`badge-status is-${status}`}>{status}</span>;
@@ -377,15 +379,7 @@ function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
       <button className="link-btn" onClick={onBack}>
         ← 返回清單
       </button>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          margin: "10px 0 14px",
-          flexWrap: "wrap",
-        }}
-      >
+      <div className="page-head">
         <h2 className="h-title">{article.title}</h2>
         <StatusBadge status={article.status} />
       </div>
@@ -415,7 +409,7 @@ function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
               tags={tags}
             />
             {error && <p className="error-text">{error}</p>}
-            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <div className="form__actions">
               <button
                 className="btn btn--primary"
                 onClick={save}
@@ -423,7 +417,7 @@ function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
               >
                 {saving ? "儲存中…" : "儲存變更"}
               </button>
-              {saved && <span style={{ color: "var(--positive)", fontWeight: 700 }}>已儲存 ✓</span>}
+              {saved && <span className="save-note">已儲存 ✓</span>}
             </div>
           </div>
         ) : (
@@ -501,15 +495,7 @@ function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
       <button className="link-btn" onClick={onBack}>
         ← 返回清單
       </button>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          margin: "10px 0 14px",
-          flexWrap: "wrap",
-        }}
-      >
+      <div className="page-head">
         <h2 className="h-title">{article.title}</h2>
         <StatusBadge status={article.status} />
         {hasFailed && (
@@ -566,7 +552,7 @@ function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
               {e.word?.normalizedWord ?? `#${e.wordId}`}
             </span>
             <button
-              className="btn btn--ghost btn--sm"
+              className="btn btn--danger btn--sm"
               onClick={() => void removeArtExp(e.id)}
             >
               刪除
@@ -644,6 +630,13 @@ function useHeightPageSize(ref: React.RefObject<HTMLElement>): number {
   return size;
 }
 
+// 教材別分段（後台管理需求：預設「全部」不隱藏任何文章）。
+const MATERIALS = [
+  { key: "all", label: "全部" },
+  { key: "school", label: "課業內" },
+  { key: "extracurricular", label: "課外" },
+] as const;
+
 function ArticleList({
   onOpen,
   onEdit,
@@ -657,8 +650,18 @@ function ArticleList({
   const tableRef = useRef<HTMLDivElement>(null);
   const pageSize = useHeightPageSize(tableRef);
   const [search, setSearch] = useState("");
-  const LEARNER_URL: string =
-    (import.meta.env.VITE_LEARNER_URL as string | undefined) ?? "http://localhost:8082";
+  const [material, setMaterial] = useState<string>("all");
+  const [grade, setGrade] = useState("");
+  const [unit, setUnit] = useState("");
+  const [level, setLevel] = useState("");
+  const [category, setCategory] = useState("");
+  const [activeTags, setActiveTags] = useState<Set<string>>(new Set());
+  const [showTags, setShowTags] = useState(false);
+  // 前台網址（build 期注入；未設則本機預設）。容忍 .env 只填網域，會補 https://。
+  const LEARNER_URL: string = normalizeBaseUrl(
+    (import.meta.env.VITE_LEARNER_URL as string | undefined) ??
+      "http://localhost:8082",
+  );
 
   const load = useCallback(async () => {
     try {
@@ -684,9 +687,75 @@ function ArticleList({
     }
   }
 
-  const visible = articles.filter(
-    (a) => !search.trim() || a.title.toLowerCase().includes(search.trim().toLowerCase()),
+  // 篩選選項：先依教材別收斂，再萃取年級/單元/難度/分類/標籤（與前台同模式，
+  // 但後台包含處理中／失敗的文章）。
+  const byMaterial = useMemo(
+    () => (material === "all" ? articles : articles.filter((a) => a.materialType === material)),
+    [articles, material],
   );
+  const grades = useMemo(() => uniqSorted(byMaterial.map((a) => a.grade)), [byMaterial]);
+  const units = useMemo(
+    () =>
+      uniqSorted(
+        byMaterial.filter((a) => !grade || a.grade === grade).map((a) => a.unit),
+      ),
+    [byMaterial, grade],
+  );
+  const levels = useMemo(() => uniqSorted(byMaterial.map((a) => a.level)), [byMaterial]);
+  const categories = useMemo(
+    () => uniqSorted(byMaterial.map((a) => a.category?.label ?? null)),
+    [byMaterial],
+  );
+  const tagsByKind = useMemo(() => {
+    const m = new Map<string, Set<string>>();
+    for (const a of byMaterial)
+      for (const t of a.tags ?? []) {
+        if (!m.has(t.kind)) m.set(t.kind, new Set());
+        m.get(t.kind)!.add(t.label);
+      }
+    return [...m.entries()]
+      .sort((x, y) => x[0].localeCompare(y[0]))
+      .map(([kind, labels]) => ({ kind, labels: [...labels].sort() }));
+  }, [byMaterial]);
+
+  const visible = useMemo(
+    () =>
+      byMaterial.filter((a) => {
+        if (grade && a.grade !== grade) return false;
+        if (unit && a.unit !== unit) return false;
+        if (level && a.level !== level) return false;
+        if (category && a.category?.label !== category) return false;
+        if (activeTags.size > 0) {
+          const own = new Set((a.tags ?? []).map((t) => `${t.kind}:${t.label}`));
+          for (const want of activeTags) if (!own.has(want)) return false;
+        }
+        if (search.trim() && !a.title.toLowerCase().includes(search.trim().toLowerCase()))
+          return false;
+        return true;
+      }),
+    [byMaterial, grade, unit, level, category, activeTags, search],
+  );
+
+  const toggleTag = (key: string) => {
+    setActiveTags((prev) => {
+      const next = new Set(prev);
+      next.has(key) ? next.delete(key) : next.add(key);
+      return next;
+    });
+    setPage(0);
+  };
+
+  const onMaterial = (key: string) => {
+    setMaterial(key);
+    setGrade("");
+    setUnit("");
+    setLevel("");
+    setCategory("");
+    setActiveTags(new Set());
+    setPage(0);
+  };
+
+  const isFiltered = visible.length !== articles.length;
   const pageCount = Math.max(1, Math.ceil(visible.length / pageSize));
   const curPage = Math.min(page, pageCount - 1);
   const shown = visible.slice(curPage * pageSize, curPage * pageSize + pageSize);
@@ -696,32 +765,155 @@ function ArticleList({
       <div className="list-head">
         <div className="section-eyebrow" style={{ margin: 0 }}>
           文章清單 · 共 {articles.length} 篇
+          {isFiltered && `（符合 ${visible.length} 篇）`}
         </div>
-        <input
-          className="field field--mini"
-          placeholder="搜尋標題…"
-          value={search}
-          onChange={(e) => {
-            setSearch(e.target.value);
-            setPage(0);
-          }}
-        />
-        <StatsBar />
-        <button
-          className="btn btn--ghost btn--sm"
-          title="重新產生缺失的單字/解釋語音（會呼叫 TTS API）"
-          onClick={async () => {
-            if (!window.confirm("補齊缺失音檔？將呼叫語音 API（產生費用）。")) return;
-            const r = await api.backfillAudio();
-            window.alert(
-              `已補 ${r.fixedAudio} 個音檔（掃描 ${r.scannedWords} 個單字、${r.scannedExplanations} 筆解釋）`,
-            );
-            void load();
-          }}
-        >
-          補缺音檔
-        </button>
+        <div className="page-head__aside">
+          <button
+            className="btn btn--ghost btn--sm"
+            title="重新產生缺失的單字/解釋語音（會呼叫 TTS API）"
+            onClick={async () => {
+              if (!window.confirm("補齊缺失音檔？將呼叫語音 API（產生費用）。")) return;
+              const r = await api.backfillAudio();
+              window.alert(
+                `已補 ${r.fixedAudio} 個音檔（掃描 ${r.scannedWords} 個單字、${r.scannedExplanations} 筆解釋）`,
+              );
+              void load();
+            }}
+          >
+            補缺音檔
+          </button>
+        </div>
       </div>
+      <div className="filterbar">
+        <div className="filterbar__top">
+          <div className="seg">
+            {MATERIALS.map((m) => (
+              <button
+                key={m.key}
+                className={"seg__btn" + (material === m.key ? " on" : "")}
+                onClick={() => onMaterial(m.key)}
+              >
+                {m.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="filters">
+            <input
+              className="filter__search"
+              placeholder="搜尋標題…"
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+                setPage(0);
+              }}
+            />
+            {grades.length > 0 && (
+              <select
+                className="filter__select"
+                value={grade}
+                onChange={(e) => {
+                  setGrade(e.target.value);
+                  setUnit("");
+                  setPage(0);
+                }}
+              >
+                <option value="">全部年級</option>
+                {grades.map((g) => (
+                  <option key={g} value={g}>
+                    {g}
+                  </option>
+                ))}
+              </select>
+            )}
+            {units.length > 0 && (
+              <select
+                className="filter__select"
+                value={unit}
+                onChange={(e) => {
+                  setUnit(e.target.value);
+                  setPage(0);
+                }}
+              >
+                <option value="">全部單元</option>
+                {units.map((u) => (
+                  <option key={u} value={u}>
+                    {u}
+                  </option>
+                ))}
+              </select>
+            )}
+            {levels.length > 0 && (
+              <select
+                className="filter__select"
+                value={level}
+                onChange={(e) => {
+                  setLevel(e.target.value);
+                  setPage(0);
+                }}
+              >
+                <option value="">全部難度</option>
+                {levels.map((l) => (
+                  <option key={l} value={l}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            )}
+            {categories.length > 0 && (
+              <select
+                className="filter__select"
+                value={category}
+                onChange={(e) => {
+                  setCategory(e.target.value);
+                  setPage(0);
+                }}
+              >
+                <option value="">全部主題</option>
+                {categories.map((c) => (
+                  <option key={c} value={c}>
+                    {c}
+                  </option>
+                ))}
+              </select>
+            )}
+          </div>
+
+          {tagsByKind.length > 0 && (
+            <button
+              className={"tagtoggle" + (showTags ? " on" : "")}
+              onClick={() => setShowTags((v) => !v)}
+              aria-expanded={showTags}
+              title="標籤篩選"
+            >
+              {showTags ? "×" : "＋"}
+              {activeTags.size > 0 && (
+                <span className="tagtoggle__badge">{activeTags.size}</span>
+              )}
+            </button>
+          )}
+        </div>
+
+        {showTags &&
+          tagsByKind.map(({ kind, labels }) => (
+            <div key={kind} className="tagrow">
+              <span className="tagrow__kind">{kind}</span>
+              {labels.map((label) => {
+                const key = `${kind}:${label}`;
+                return (
+                  <button
+                    key={key}
+                    className={"tagchip" + (activeTags.has(key) ? " on" : "")}
+                    onClick={() => toggleTag(key)}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+          ))}
+      </div>
+      <StatsBar />
       {error && <p className="error-text">{error}</p>}
       <div
         className="panel"
@@ -792,7 +984,9 @@ function ArticleList({
             {shown.length === 0 && (
               <tr>
                 <td colSpan={3} className="status-line">
-                  尚無文章，點右上角「＋」新增。
+                  {articles.length === 0
+                    ? "尚無文章，點右上角「＋」新增。"
+                    : "沒有符合條件的文章。"}
                 </td>
               </tr>
             )}
@@ -1048,7 +1242,141 @@ function TaxonomyManager() {
   );
 }
 
-type View = "list" | "new" | "detail" | "edit" | "taxonomy" | "words";
+function UserManager() {
+  const [users, setUsers] = useState<api.AdminUser[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [newEmail, setNewEmail] = useState("");
+  const [newRole, setNewRole] = useState<api.ManageableRole>("reviewer");
+
+  const load = useCallback(async () => {
+    try {
+      setUsers((await api.listUsers()).users);
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }, []);
+  useEffect(() => {
+    void load();
+  }, [load]);
+
+  async function changeRole(email: string, role: api.ManageableRole) {
+    try {
+      await api.setUserRole(email, role);
+      await load();
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }
+  async function addUser(e: React.FormEvent) {
+    e.preventDefault();
+    try {
+      await api.preprovisionUser(newEmail.trim(), newRole);
+      setNewEmail("");
+      await load();
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }
+
+  return (
+    <div>
+      <div className="section-eyebrow" style={{ marginTop: 0 }}>
+        使用者管理
+      </div>
+      <form onSubmit={addUser} className="form-inline">
+        <input
+          className="field field--grow"
+          type="email"
+          placeholder="預先新增 email…"
+          required
+          value={newEmail}
+          onChange={(e) => setNewEmail(e.target.value)}
+        />
+        <select
+          className="field"
+          value={newRole}
+          onChange={(e) => setNewRole(e.target.value as api.ManageableRole)}
+        >
+          <option value="reviewer">審稿者</option>
+          <option value="reader">使用者</option>
+        </select>
+        <button className="btn btn--primary" type="submit">
+          新增
+        </button>
+      </form>
+      {error && <p className="error-text">{error}</p>}
+      <div className="panel" style={{ padding: 0, overflow: "hidden" }}>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>角色</th>
+              <th>最近登入</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((u) => (
+              <tr key={u.id}>
+                <td>
+                  <span className="table__title">{u.email}</span>
+                </td>
+                <td>
+                  {u.isEnvAdmin ? (
+                    <span className="badge-role badge-role--admin">
+                      管理者（env）
+                    </span>
+                  ) : (
+                    <select
+                      className="field field--mini"
+                      value={u.role === "admin" ? "reader" : u.role}
+                      onChange={(e) =>
+                        void changeRole(
+                          u.email,
+                          e.target.value as api.ManageableRole,
+                        )
+                      }
+                    >
+                      <option value="reviewer">審稿者</option>
+                      <option value="reader">使用者</option>
+                    </select>
+                  )}
+                </td>
+                <td>
+                  {u.lastSeenAt ? (
+                    <span className="cell-muted">
+                      {new Date(u.lastSeenAt).toLocaleString("zh-TW", {
+                        dateStyle: "medium",
+                        timeStyle: "short",
+                      })}
+                    </span>
+                  ) : (
+                    <span className="badge-role">未登入過（預先指派）</span>
+                  )}
+                </td>
+              </tr>
+            ))}
+            {users.length === 0 && (
+              <tr>
+                <td colSpan={3} className="status-line">
+                  尚無使用者，於上方預先新增 email。
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+type View =
+  | "list"
+  | "new"
+  | "detail"
+  | "edit"
+  | "taxonomy"
+  | "words"
+  | "users";
 
 function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
   const [q, setQ] = useState(initialQuery);
@@ -1105,9 +1433,9 @@ function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
       <div className="section-eyebrow" style={{ marginTop: 0 }}>
         單字解釋管理
       </div>
-      <div style={{ display: "flex", gap: 8, margin: "10px 0 16px" }}>
+      <div className="form-inline">
         <input
-          className="field"
+          className="field field--grow"
           placeholder="搜尋單字…"
           value={q}
           onChange={(e) => setQ(e.target.value)}
@@ -1118,64 +1446,86 @@ function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
         </button>
       </div>
       {error && <p className="error-text">{error}</p>}
-      <table className="table">
-        <tbody>
-          {words.map((row) => (
-            <Fragment key={row.id}>
-              <tr>
-                <td>
-                  <button
-                    className="link-btn"
-                    onClick={() => void expand(row.normalizedWord)}
-                  >
-                    {openWord === row.normalizedWord ? "▾ " : "▸ "}
-                    {row.normalizedWord}
-                  </button>
-                </td>
-                <td>{row.explanationCount} 筆解釋</td>
-                <td className="table__actions">
-                  <button
-                    className="btn btn--ghost btn--sm"
-                    onClick={() => void removeWord(row)}
-                  >
-                    刪除單字
-                  </button>
-                </td>
-              </tr>
-              {openWord === row.normalizedWord && (
+      <div className="panel" style={{ padding: 0, overflow: "hidden" }}>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>單字</th>
+              <th>解釋</th>
+              <th style={{ textAlign: "right" }}>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            {words.map((row) => (
+              <Fragment key={row.id}>
                 <tr>
-                  <td colSpan={3}>
-                    {exps.length === 0 && (
-                      <p className="picker__hint">尚無解釋。</p>
-                    )}
-                    {exps.map((e) => (
-                      <div key={e.id} className="panel" style={{ marginBottom: 8 }}>
-                        <div style={{ fontWeight: 700 }}>
-                          來源：{e.article?.title ?? `#${e.articleId}`}
-                        </div>
-                        {e.zhTranslation && <div>翻譯：{e.zhTranslation}</div>}
-                        {e.zhExplanation && <div>解釋（中）：{e.zhExplanation}</div>}
-                        <button
-                          className="btn btn--ghost btn--sm"
-                          style={{ marginTop: 6 }}
-                          onClick={() => void removeExp(e.id, row.normalizedWord)}
-                        >
-                          刪除這筆解釋
-                        </button>
-                      </div>
-                    ))}
+                  <td>
+                    <button
+                      className="link-btn"
+                      onClick={() => void expand(row.normalizedWord)}
+                    >
+                      {openWord === row.normalizedWord ? "▾ " : "▸ "}
+                      {row.normalizedWord}
+                    </button>
+                  </td>
+                  <td className="cell-muted">{row.explanationCount} 筆</td>
+                  <td>
+                    <div className="table__actions">
+                      <button
+                        className="btn btn--danger btn--sm"
+                        onClick={() => void removeWord(row)}
+                      >
+                        刪除單字
+                      </button>
+                    </div>
                   </td>
                 </tr>
-              )}
-            </Fragment>
-          ))}
-          {words.length === 0 && (
-            <tr>
-              <td className="picker__hint">查無單字。</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
+                {openWord === row.normalizedWord && (
+                  <tr>
+                    <td colSpan={3}>
+                      {exps.length === 0 && (
+                        <p className="picker__hint">尚無解釋。</p>
+                      )}
+                      {exps.map((e) => (
+                        <div key={e.id} className="para-item">
+                          <div className="para-item__head">
+                            <span className="para-item__idx">
+                              來源：{e.article?.title ?? `#${e.articleId}`}
+                            </span>
+                            <button
+                              className="btn btn--danger btn--sm"
+                              onClick={() =>
+                                void removeExp(e.id, row.normalizedWord)
+                              }
+                            >
+                              刪除這筆解釋
+                            </button>
+                          </div>
+                          {e.zhTranslation && (
+                            <p className="para-item__tr">翻譯：{e.zhTranslation}</p>
+                          )}
+                          {e.zhExplanation && (
+                            <p className="para-item__tr">
+                              解釋（中）：{e.zhExplanation}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                    </td>
+                  </tr>
+                )}
+              </Fragment>
+            ))}
+            {words.length === 0 && (
+              <tr>
+                <td colSpan={3} className="status-line">
+                  查無單字。
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
@@ -1238,6 +1588,12 @@ export default function App() {
             >
               單字
             </button>
+            <button
+              className={"topnav__btn" + (view === "users" ? " on" : "")}
+              onClick={() => setView("users")}
+            >
+              使用者
+            </button>
           </nav>
           {/* 右上角：新增文章。 */}
           {inArticles && (
@@ -1255,6 +1611,8 @@ export default function App() {
       <main className="wrap" style={{ paddingTop: 24, paddingBottom: 60 }}>
         {view === "taxonomy" ? (
           <TaxonomyManager />
+        ) : view === "users" ? (
+          <UserManager />
         ) : view === "words" ? (
           <WordManager initialQuery={wordQuery} />
         ) : view === "new" ? (

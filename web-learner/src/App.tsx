@@ -5,6 +5,7 @@ import { useArticlePlayer } from "./useArticlePlayer";
 import { AudioBar } from "./AudioBar";
 import { uniqSorted } from "./lib/facets";
 import { readyArticles } from "./lib/articles";
+import { coverFor } from "./lib/cover";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { articleIdFromHash, hashForArticle } from "./lib/route";
 import { popupTitle } from "./lib/vocab";
@@ -15,7 +16,9 @@ import {
   HeadphonesIcon,
   TranslateIcon,
   SoundIcon,
+  ShareIcon,
 } from "./icons";
+import { shareLink } from "./lib/share";
 
 /** 播放單一音檔的膠囊按鈕（給單字解釋用），含載入／播放／錯誤狀態。 */
 function AudioChip({
@@ -205,6 +208,7 @@ function WordPopup({
   onClose,
   onJump,
   onExplained,
+  canReexplain,
 }: {
   word: string;
   articleId: number;
@@ -212,6 +216,7 @@ function WordPopup({
   onClose: () => void;
   onJump: (articleId: number) => void;
   onExplained?: () => void;
+  canReexplain: boolean;
 }) {
   const [wordInfo, setWordInfo] = useState<Word | null>(null);
   const [explanations, setExplanations] = useState<WordExplanation[]>([]);
@@ -257,7 +262,12 @@ function WordPopup({
       onExplained?.();
       setPendingArticleId(articleId); // 觸發背景音檔輪詢
     } catch (err) {
-      setError((err as Error).message);
+      const e = err as { status?: number; message?: string };
+      setError(
+        e.status === 403
+          ? "此功能限審稿者以上使用"
+          : (e.message ?? "解釋失敗"),
+      );
     } finally {
       setBusy(false);
     }
@@ -304,22 +314,24 @@ function WordPopup({
           {wordInfo && (
             <AudioChip iconOnly path={wordInfo.enAudioPath} label="播放單字發音" />
           )}
-          <a
-            className="sheet__admin"
-            href={api.adminWordUrl(word)}
-            target="_blank"
-            rel="noreferrer"
-            title="在後台管理此單字"
-          >
-            ⚙ 後台管理
-          </a>
+          {canReexplain && (
+            <a
+              className="sheet__admin"
+              href={api.adminWordUrl(word)}
+              target="_blank"
+              rel="noreferrer"
+              title="在後台管理此單字"
+            >
+              ⚙ 後台管理
+            </a>
+          )}
           <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
             ✕
           </button>
         </div>
         {explanations.some((e) => e.articleId === articleId) ? (
           <p className="sheet__note">✓ 本篇已解釋</p>
-        ) : (
+        ) : canReexplain ? (
           <button
             className="btn btn--primary btn--sm"
             onClick={reexplain}
@@ -328,10 +340,14 @@ function WordPopup({
           >
             {busy ? "解釋中…" : "用本篇重新解釋"}
           </button>
-        )}
+        ) : null}
         {error && <p className="sheet__error">{error}</p>}
         {explanations.length === 0 && !busy && (
-          <p className="sheet__empty">尚無解釋，點上方按鈕用本篇產生。</p>
+          <p className="sheet__empty">
+            {canReexplain
+              ? "尚無解釋，點上方按鈕用本篇產生。"
+              : "尚無解釋。"}
+          </p>
         )}
         {explanations.map((exp) => (
           <ExplanationCard
@@ -351,10 +367,12 @@ function Reader({
   articleId,
   onBack,
   onJump,
+  canReexplain,
 }: {
   articleId: number;
   onBack: () => void;
   onJump: (articleId: number) => void;
+  canReexplain: boolean;
 }) {
   const [article, setArticle] = useState<Article | null>(null);
   const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
@@ -371,6 +389,7 @@ function Reader({
       const data = await api.getArticle(articleId);
       setArticle(data.article);
       setParagraphs(data.paragraphs);
+      setError(null);
     } catch (err) {
       setError((err as Error).message);
     }
@@ -441,6 +460,27 @@ function Reader({
     Math.round((player.duration || items.length * 12) / 60),
   );
 
+  // 分享目前文章：系統分享面板優先、退回複製連結；短暫提示結果。
+  const [shareTip, setShareTip] = useState<string | null>(null);
+  const shareTipTimer = useRef<number | undefined>(undefined);
+  const onShare = async () => {
+    const outcome = await shareLink(
+      article?.title ?? document.title,
+      window.location.href,
+    );
+    const tip =
+      outcome === "copied"
+        ? "已複製連結"
+        : outcome === "failed"
+          ? "無法分享，請手動複製網址"
+          : null;
+    if (!tip) return;
+    setShareTip(tip);
+    window.clearTimeout(shareTipTimer.current);
+    shareTipTimer.current = window.setTimeout(() => setShareTip(null), 2000);
+  };
+  useEffect(() => () => window.clearTimeout(shareTipTimer.current), []);
+
   const translatable = paragraphs.filter((p) => p.translation);
   const allOpen =
     translatable.length > 0 && translatable.every((p) => showTranslation[p.id]);
@@ -457,7 +497,12 @@ function Reader({
             ← 文章
           </button>
           <div className="backbar__crumb">{article?.title ?? ""}</div>
-          <span style={{ width: 40 }} />
+          <div className="backbar__share">
+            <button className="link-btn" onClick={onShare} title="分享這篇文章">
+              <ShareIcon /> 分享
+            </button>
+            {shareTip && <span className="share-tip">{shareTip}</span>}
+          </div>
         </div>
       </header>
       <main className="wrap wrap--reader">
@@ -466,7 +511,12 @@ function Reader({
         {article && (
           <>
             <article className="reader-hero">
-              <div className="reader-hero__cover">🌱</div>
+              <div
+                className="reader-hero__cover"
+                style={{ background: coverFor(article).gradient }}
+              >
+                {coverFor(article).emoji}
+              </div>
               <div className="reader-hero__body">
                 <h1 className="reader-hero__title">{article.title}</h1>
                 <div className="reader-hero__row">
@@ -568,6 +618,7 @@ function Reader({
 
       <AudioBar
         show={player.active}
+        cover={article ? coverFor(article) : undefined}
         title={article?.title ?? ""}
         index={player.index}
         total={items.length}
@@ -592,6 +643,7 @@ function Reader({
           onClose={() => setPopup(null)}
           onJump={onJump}
           onExplained={loadKnown}
+          canReexplain={canReexplain}
         />
       )}
     </>
@@ -606,6 +658,7 @@ const MATERIALS = [
 
 function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
   const [articles, setArticles] = useState<Article[]>([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const [material, setMaterial] = useState<string>("school");
@@ -621,7 +674,8 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
     api
       .listArticles()
       .then((d) => setArticles(d.articles))
-      .catch((err) => setError((err as Error).message));
+      .catch((err) => setError((err as Error).message))
+      .finally(() => setLoading(false));
   }, []);
 
   const ready = useMemo(() => readyArticles(articles), [articles]);
@@ -834,15 +888,20 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
         </p>
       )}
       {error && <p className="status-line is-error">{error}</p>}
-      {!error && filtered.length === 0 && (
+      {loading && !error && <p className="status-line">載入中…</p>}
+      {!loading && !error && filtered.length === 0 && (
         <p className="status-line">
           {ready.length === 0 ? "尚無可閱讀的文章。" : "沒有符合條件的文章。"}
         </p>
       )}
       <div className="cards">
-        {filtered.map((a) => (
+        {filtered.map((a) => {
+          const cover = coverFor(a);
+          return (
           <button key={a.id} className="card" onClick={() => onOpen(a.id)}>
-            <div className="card__cover">🌱</div>
+            <div className="card__cover" style={{ background: cover.gradient }}>
+              {cover.emoji}
+            </div>
             <div className="card__body">
               <h2 className="card__title">{a.title}</h2>
               <div className="card__meta">
@@ -856,7 +915,8 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
               </div>
             </div>
           </button>
-        ))}
+          );
+        })}
       </div>
     </main>
   );
@@ -866,6 +926,14 @@ export default function App() {
   const [openId, setOpenId] = useState<number | null>(() =>
     articleIdFromHash(window.location.hash),
   );
+  // 角色決定是否能用即時重新翻譯（admin／reviewer）；後端仍會縱深防禦。
+  const [canReexplain, setCanReexplain] = useState(false);
+  useEffect(() => {
+    void api.getMe().then((r) => {
+      const role = r.user?.role;
+      setCanReexplain(role === "admin" || role === "reviewer");
+    });
+  }, []);
 
   // hash 是唯一事實來源：返回鍵／前進鍵經 hashchange 更新畫面。
   useEffect(() => {
@@ -895,9 +963,11 @@ export default function App() {
         <ArticleList onOpen={navigate} />
       ) : (
         <Reader
+          key={openId}
           articleId={openId}
           onBack={() => navigate(null)}
           onJump={navigate}
+          canReexplain={canReexplain}
         />
       )}
     </div>
