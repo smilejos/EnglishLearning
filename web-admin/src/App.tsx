@@ -1,7 +1,8 @@
-import { Fragment, useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
 import { normalizeBaseUrl } from "./urls";
+import { uniqSorted } from "./facets";
 
 function StatusBadge({ status }: { status: string }) {
   return <span className={`badge-status is-${status}`}>{status}</span>;
@@ -629,6 +630,13 @@ function useHeightPageSize(ref: React.RefObject<HTMLElement>): number {
   return size;
 }
 
+// 教材別分段（後台管理需求：預設「全部」不隱藏任何文章）。
+const MATERIALS = [
+  { key: "all", label: "全部" },
+  { key: "school", label: "課業內" },
+  { key: "extracurricular", label: "課外" },
+] as const;
+
 function ArticleList({
   onOpen,
   onEdit,
@@ -642,6 +650,13 @@ function ArticleList({
   const tableRef = useRef<HTMLDivElement>(null);
   const pageSize = useHeightPageSize(tableRef);
   const [search, setSearch] = useState("");
+  const [material, setMaterial] = useState<string>("all");
+  const [grade, setGrade] = useState("");
+  const [unit, setUnit] = useState("");
+  const [level, setLevel] = useState("");
+  const [category, setCategory] = useState("");
+  const [activeTags, setActiveTags] = useState<Set<string>>(new Set());
+  const [showTags, setShowTags] = useState(false);
   // 前台網址（build 期注入；未設則本機預設）。容忍 .env 只填網域，會補 https://。
   const LEARNER_URL: string = normalizeBaseUrl(
     (import.meta.env.VITE_LEARNER_URL as string | undefined) ??
@@ -672,9 +687,75 @@ function ArticleList({
     }
   }
 
-  const visible = articles.filter(
-    (a) => !search.trim() || a.title.toLowerCase().includes(search.trim().toLowerCase()),
+  // 篩選選項：先依教材別收斂，再萃取年級/單元/難度/分類/標籤（與前台同模式，
+  // 但後台包含處理中／失敗的文章）。
+  const byMaterial = useMemo(
+    () => (material === "all" ? articles : articles.filter((a) => a.materialType === material)),
+    [articles, material],
   );
+  const grades = useMemo(() => uniqSorted(byMaterial.map((a) => a.grade)), [byMaterial]);
+  const units = useMemo(
+    () =>
+      uniqSorted(
+        byMaterial.filter((a) => !grade || a.grade === grade).map((a) => a.unit),
+      ),
+    [byMaterial, grade],
+  );
+  const levels = useMemo(() => uniqSorted(byMaterial.map((a) => a.level)), [byMaterial]);
+  const categories = useMemo(
+    () => uniqSorted(byMaterial.map((a) => a.category?.label ?? null)),
+    [byMaterial],
+  );
+  const tagsByKind = useMemo(() => {
+    const m = new Map<string, Set<string>>();
+    for (const a of byMaterial)
+      for (const t of a.tags ?? []) {
+        if (!m.has(t.kind)) m.set(t.kind, new Set());
+        m.get(t.kind)!.add(t.label);
+      }
+    return [...m.entries()]
+      .sort((x, y) => x[0].localeCompare(y[0]))
+      .map(([kind, labels]) => ({ kind, labels: [...labels].sort() }));
+  }, [byMaterial]);
+
+  const visible = useMemo(
+    () =>
+      byMaterial.filter((a) => {
+        if (grade && a.grade !== grade) return false;
+        if (unit && a.unit !== unit) return false;
+        if (level && a.level !== level) return false;
+        if (category && a.category?.label !== category) return false;
+        if (activeTags.size > 0) {
+          const own = new Set((a.tags ?? []).map((t) => `${t.kind}:${t.label}`));
+          for (const want of activeTags) if (!own.has(want)) return false;
+        }
+        if (search.trim() && !a.title.toLowerCase().includes(search.trim().toLowerCase()))
+          return false;
+        return true;
+      }),
+    [byMaterial, grade, unit, level, category, activeTags, search],
+  );
+
+  const toggleTag = (key: string) => {
+    setActiveTags((prev) => {
+      const next = new Set(prev);
+      next.has(key) ? next.delete(key) : next.add(key);
+      return next;
+    });
+    setPage(0);
+  };
+
+  const onMaterial = (key: string) => {
+    setMaterial(key);
+    setGrade("");
+    setUnit("");
+    setLevel("");
+    setCategory("");
+    setActiveTags(new Set());
+    setPage(0);
+  };
+
+  const isFiltered = visible.length !== articles.length;
   const pageCount = Math.max(1, Math.ceil(visible.length / pageSize));
   const curPage = Math.min(page, pageCount - 1);
   const shown = visible.slice(curPage * pageSize, curPage * pageSize + pageSize);
@@ -684,17 +765,9 @@ function ArticleList({
       <div className="list-head">
         <div className="section-eyebrow" style={{ margin: 0 }}>
           文章清單 · 共 {articles.length} 篇
+          {isFiltered && `（符合 ${visible.length} 篇）`}
         </div>
         <div className="page-head__aside">
-          <input
-            className="field field--mini field--round"
-            placeholder="搜尋標題…"
-            value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-              setPage(0);
-            }}
-          />
           <button
             className="btn btn--ghost btn--sm"
             title="重新產生缺失的單字/解釋語音（會呼叫 TTS API）"
@@ -710,6 +783,135 @@ function ArticleList({
             補缺音檔
           </button>
         </div>
+      </div>
+      <div className="filterbar">
+        <div className="filterbar__top">
+          <div className="seg">
+            {MATERIALS.map((m) => (
+              <button
+                key={m.key}
+                className={"seg__btn" + (material === m.key ? " on" : "")}
+                onClick={() => onMaterial(m.key)}
+              >
+                {m.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="filters">
+            <input
+              className="filter__search"
+              placeholder="搜尋標題…"
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+                setPage(0);
+              }}
+            />
+            {grades.length > 0 && (
+              <select
+                className="filter__select"
+                value={grade}
+                onChange={(e) => {
+                  setGrade(e.target.value);
+                  setUnit("");
+                  setPage(0);
+                }}
+              >
+                <option value="">全部年級</option>
+                {grades.map((g) => (
+                  <option key={g} value={g}>
+                    {g}
+                  </option>
+                ))}
+              </select>
+            )}
+            {units.length > 0 && (
+              <select
+                className="filter__select"
+                value={unit}
+                onChange={(e) => {
+                  setUnit(e.target.value);
+                  setPage(0);
+                }}
+              >
+                <option value="">全部單元</option>
+                {units.map((u) => (
+                  <option key={u} value={u}>
+                    {u}
+                  </option>
+                ))}
+              </select>
+            )}
+            {levels.length > 0 && (
+              <select
+                className="filter__select"
+                value={level}
+                onChange={(e) => {
+                  setLevel(e.target.value);
+                  setPage(0);
+                }}
+              >
+                <option value="">全部難度</option>
+                {levels.map((l) => (
+                  <option key={l} value={l}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            )}
+            {categories.length > 0 && (
+              <select
+                className="filter__select"
+                value={category}
+                onChange={(e) => {
+                  setCategory(e.target.value);
+                  setPage(0);
+                }}
+              >
+                <option value="">全部主題</option>
+                {categories.map((c) => (
+                  <option key={c} value={c}>
+                    {c}
+                  </option>
+                ))}
+              </select>
+            )}
+          </div>
+
+          {tagsByKind.length > 0 && (
+            <button
+              className={"tagtoggle" + (showTags ? " on" : "")}
+              onClick={() => setShowTags((v) => !v)}
+              aria-expanded={showTags}
+              title="標籤篩選"
+            >
+              {showTags ? "×" : "＋"}
+              {activeTags.size > 0 && (
+                <span className="tagtoggle__badge">{activeTags.size}</span>
+              )}
+            </button>
+          )}
+        </div>
+
+        {showTags &&
+          tagsByKind.map(({ kind, labels }) => (
+            <div key={kind} className="tagrow">
+              <span className="tagrow__kind">{kind}</span>
+              {labels.map((label) => {
+                const key = `${kind}:${label}`;
+                return (
+                  <button
+                    key={key}
+                    className={"tagchip" + (activeTags.has(key) ? " on" : "")}
+                    onClick={() => toggleTag(key)}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+          ))}
       </div>
       <StatsBar />
       {error && <p className="error-text">{error}</p>}
@@ -782,7 +984,9 @@ function ArticleList({
             {shown.length === 0 && (
               <tr>
                 <td colSpan={3} className="status-line">
-                  尚無文章，點右上角「＋」新增。
+                  {articles.length === 0
+                    ? "尚無文章，點右上角「＋」新增。"
+                    : "沒有符合條件的文章。"}
                 </td>
               </tr>
             )}
