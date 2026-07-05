@@ -1048,7 +1048,122 @@ function TaxonomyManager() {
   );
 }
 
-type View = "list" | "new" | "detail" | "edit" | "taxonomy" | "words";
+function UserManager() {
+  const [users, setUsers] = useState<api.AdminUser[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [newEmail, setNewEmail] = useState("");
+  const [newRole, setNewRole] = useState<api.ManageableRole>("reviewer");
+
+  const load = useCallback(async () => {
+    try {
+      setUsers((await api.listUsers()).users);
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }, []);
+  useEffect(() => {
+    void load();
+  }, [load]);
+
+  async function changeRole(email: string, role: api.ManageableRole) {
+    try {
+      await api.setUserRole(email, role);
+      await load();
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }
+  async function addUser(e: React.FormEvent) {
+    e.preventDefault();
+    try {
+      await api.preprovisionUser(newEmail.trim(), newRole);
+      setNewEmail("");
+      await load();
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }
+
+  return (
+    <div>
+      <div className="section-eyebrow" style={{ marginTop: 0 }}>
+        使用者管理
+      </div>
+      <form
+        onSubmit={addUser}
+        style={{ display: "flex", gap: 8, margin: "10px 0 16px" }}
+      >
+        <input
+          className="field"
+          placeholder="預先新增 email…"
+          value={newEmail}
+          onChange={(e) => setNewEmail(e.target.value)}
+        />
+        <select
+          className="field"
+          value={newRole}
+          onChange={(e) => setNewRole(e.target.value as api.ManageableRole)}
+        >
+          <option value="reviewer">審稿者</option>
+          <option value="reader">使用者</option>
+        </select>
+        <button className="btn btn--primary" type="submit">
+          新增
+        </button>
+      </form>
+      {error && <p className="error-text">{error}</p>}
+      <table style={{ width: "100%", borderCollapse: "collapse" }}>
+        <thead>
+          <tr>
+            <th style={{ textAlign: "left" }}>Email</th>
+            <th style={{ textAlign: "left" }}>角色</th>
+            <th style={{ textAlign: "left" }}>狀態</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((u) => (
+            <tr key={u.id}>
+              <td>{u.email}</td>
+              <td>
+                {u.isEnvAdmin ? (
+                  <span className="brand__tag">管理者（env）</span>
+                ) : (
+                  <select
+                    className="field"
+                    value={u.role === "admin" ? "reader" : u.role}
+                    onChange={(e) =>
+                      void changeRole(
+                        u.email,
+                        e.target.value as api.ManageableRole,
+                      )
+                    }
+                  >
+                    <option value="reviewer">審稿者</option>
+                    <option value="reader">使用者</option>
+                  </select>
+                )}
+              </td>
+              <td>
+                {u.lastSeenAt
+                  ? new Date(u.lastSeenAt).toLocaleString()
+                  : "未登入過（預先指派）"}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+type View =
+  | "list"
+  | "new"
+  | "detail"
+  | "edit"
+  | "taxonomy"
+  | "words"
+  | "users";
 
 function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
   const [q, setQ] = useState(initialQuery);
@@ -1238,6 +1353,12 @@ export default function App() {
             >
               單字
             </button>
+            <button
+              className={"topnav__btn" + (view === "users" ? " on" : "")}
+              onClick={() => setView("users")}
+            >
+              使用者
+            </button>
           </nav>
           {/* 右上角：新增文章。 */}
           {inArticles && (
@@ -1255,6 +1376,8 @@ export default function App() {
       <main className="wrap" style={{ paddingTop: 24, paddingBottom: 60 }}>
         {view === "taxonomy" ? (
           <TaxonomyManager />
+        ) : view === "users" ? (
+          <UserManager />
         ) : view === "words" ? (
           <WordManager initialQuery={wordQuery} />
         ) : view === "new" ? (
