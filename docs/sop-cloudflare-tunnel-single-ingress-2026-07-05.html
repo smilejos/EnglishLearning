@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOP：Cloudflare Tunnel + Access 對外單一入口</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1c2430; --muted:#5b6675; --line:#e3e7ec;
+    --accent:#f6821f; --accent-ink:#7a3d00; --code-bg:#0f1622; --code-ink:#e6edf3;
+    --ok:#1a8a4a; --warn:#b45309; --chip:#eef1f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e1116; --card:#161b22; --ink:#e6edf3; --muted:#9aa5b1; --line:#2a313c;
+      --accent:#f6821f; --accent-ink:#ffd9a8; --code-bg:#0b0f16; --code-ink:#e6edf3;
+      --ok:#3fb950; --warn:#e3a008; --chip:#222933;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:32px 20px 96px}
+  header.hero{
+    background:linear-gradient(135deg,#f6821f 0%,#e35d00 100%);
+    color:#fff; border-radius:16px; padding:28px 26px; margin-bottom:22px;
+    box-shadow:0 8px 30px rgba(227,93,0,.25);
+  }
+  header.hero h1{margin:0 0 8px; font-size:1.5rem; line-height:1.35}
+  header.hero p{margin:4px 0; opacity:.95; font-size:.95rem}
+  .meta-chips{margin-top:14px; display:flex; flex-wrap:wrap; gap:8px}
+  .meta-chips span{background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.3); padding:3px 10px; border-radius:999px; font-size:.8rem}
+
+  .toolbar{display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:0 0 20px}
+  .toolbar button{
+    background:var(--card); color:var(--ink); border:1px solid var(--line);
+    padding:7px 14px; border-radius:9px; cursor:pointer; font-size:.85rem; font-weight:600;
+  }
+  .toolbar button:hover{border-color:var(--accent)}
+  .progress{flex:1; min-width:180px; display:flex; align-items:center; gap:10px}
+  .bar{flex:1; height:9px; background:var(--chip); border-radius:999px; overflow:hidden}
+  .bar > i{display:block; height:100%; width:0; background:linear-gradient(90deg,#f6821f,#e35d00); transition:width .3s}
+  .progress b{font-variant-numeric:tabular-nums; font-size:.85rem; color:var(--muted)}
+
+  details.sec{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    margin:0 0 14px; overflow:hidden;
+  }
+  details.sec > summary{
+    cursor:pointer; list-style:none; padding:16px 20px; font-weight:700; font-size:1.05rem;
+    display:flex; align-items:center; gap:12px; user-select:none;
+  }
+  details.sec > summary::-webkit-details-marker{display:none}
+  details.sec > summary .num{
+    flex:none; width:30px; height:30px; border-radius:8px; background:var(--chip); color:var(--accent-ink);
+    display:grid; place-items:center; font-size:.9rem; font-weight:800;
+  }
+  details.sec[open] > summary{border-bottom:1px solid var(--line)}
+  details.sec > summary .caret{margin-left:auto; color:var(--muted); transition:transform .2s}
+  details.sec[open] > summary .caret{transform:rotate(90deg)}
+  .body{padding:6px 20px 20px}
+  .body h4{margin:20px 0 8px; font-size:1rem}
+  .body p{margin:8px 0}
+  .body ul{margin:8px 0; padding-left:22px}
+  .body li{margin:5px 0}
+  code{background:var(--chip); padding:1.5px 6px; border-radius:6px; font-size:.85em;
+    font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+
+  .codeblock{position:relative; margin:12px 0}
+  .codeblock pre{
+    background:var(--code-bg); color:var(--code-ink); border-radius:11px; padding:16px 16px; margin:0;
+    overflow-x:auto; font-size:.84rem; line-height:1.6;
+    font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  }
+  .codeblock .lang{position:absolute; top:8px; left:14px; font-size:.68rem; letter-spacing:.05em; text-transform:uppercase; color:#8b98a5}
+  .codeblock pre{padding-top:30px}
+  .copy{
+    position:absolute; top:7px; right:8px; background:rgba(255,255,255,.08); color:#cbd5e1;
+    border:1px solid rgba(255,255,255,.15); border-radius:7px; padding:4px 10px; cursor:pointer; font-size:.72rem; font-weight:600;
+  }
+  .copy:hover{background:rgba(255,255,255,.16)}
+  .copy.done{background:var(--ok); color:#fff; border-color:transparent}
+
+  .check{display:flex; gap:11px; align-items:flex-start; padding:9px 12px; border:1px solid var(--line);
+    border-radius:10px; margin:8px 0; background:var(--bg); cursor:pointer; transition:background .15s}
+  .check:hover{border-color:var(--accent)}
+  .check input{margin-top:4px; width:18px; height:18px; accent-color:var(--accent); flex:none; cursor:pointer}
+  .check.done{opacity:.62}
+  .check.done .ctext{text-decoration:line-through}
+  .ctext{font-size:.92rem}
+
+  .callout{border-left:4px solid var(--accent); background:var(--chip); padding:11px 15px; border-radius:0 10px 10px 0; margin:12px 0; font-size:.9rem}
+  .callout.warn{border-left-color:var(--warn)}
+  .callout b{color:var(--accent-ink)}
+
+  .tbl{overflow-x:auto; margin:12px 0}
+  table{border-collapse:collapse; width:100%; font-size:.86rem; min-width:520px}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top}
+  th{background:var(--chip); font-weight:700}
+
+  footer{text-align:center; color:var(--muted); font-size:.8rem; margin-top:30px}
+  .diagram{background:var(--code-bg); color:var(--code-ink); border-radius:11px; padding:16px; overflow-x:auto;
+    font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace; font-size:.78rem; line-height:1.5; white-space:pre; margin:12px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>SOP：以 Cloudflare Tunnel + Access 對外發布前台／後台</h1>
+    <p>家用 Mac Mini <b>零對外 port</b> 對外服務，後台子網域套用<b>白名單 Gmail</b> 存取控制。</p>
+    <p>方案：Cloudflare Tunnel（cloudflared，outbound）＋ Cloudflare Access（邊緣身分驗證）。</p>
+    <div class="meta-chips">
+      <span>建立日期 2026-07-05</span>
+      <span>子網域區分</span>
+      <span>Token 託管（A1）</span>
+      <span>不需 port forwarding</span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <button id="expandAll">全部展開</button>
+    <button id="collapseAll">全部收合</button>
+    <button id="resetChecks">重設勾選</button>
+    <div class="progress">
+      <div class="bar"><i id="barFill"></i></div>
+      <b id="progText">0 / 0</b>
+    </div>
+  </div>
+
+  <!-- 0 -->
+  <details class="sec" open>
+    <summary><span class="num">0</span>背景與原則<span class="caret">▶</span></summary>
+    <div class="body">
+      <div class="diagram">使用者瀏覽器
+   │  https://admin.example.com / https://learn.example.com
+   ▼
+Cloudflare 邊緣
+   ├─ Access 政策（只在 admin.*：白名單 Gmail）→ 注入 Cf-Access-Jwt-Assertion
+   ▼  （outbound tunnel，家裡不開任何 port）
+cloudflared 容器（Mac Mini 內）
+   ├─ admin.example.com → web-admin:80
+   └─ learn.example.com → web-learner:80
+   ▼
+web-admin / web-learner（nginx，不動）
+   └─ /articles /words /audio … 反代 → api:8080（同源，不變）</div>
+      <ul>
+        <li>兩個前端映像、nginx、<code>api</code>、<code>worker</code> <b>全部維持不動</b>；本 SOP 只是「在最前面加一層對外入口」。</li>
+        <li><code>api</code> <b>不對外</b>；前端 nginx 內部反代 <code>/articles</code>、<code>/words</code>、<code>/audio</code>… 到 <code>api:8080</code> 照舊。</li>
+        <li>邊緣注入的 <code>Cf-Access-Jwt-Assertion</code> 一路穿過 cloudflared → nginx → api，沿用現有 <code>CF_ACCESS_AUD</code> / <code>CF_ACCESS_TEAM_DOMAIN</code> / <code>ADMIN_EMAILS</code> 驗證鏈。</li>
+        <li>Tunnel 是 Mac Mini <b>主動 outbound</b>，家用路由器<b>不需開任何 port</b>。</li>
+        <li>路由與 Access 政策皆採 <b>Dashboard 託管（Token 模式）</b>，repo 只多一個容器與一個 <code>.env</code> 變數。</li>
+      </ul>
+      <div class="callout"><b>命名慣例：</b>以下用 <code>admin.example.com</code>（後台）、<code>learn.example.com</code>（前台）為例，實作時請替換成你的網域。</div>
+    </div>
+  </details>
+
+  <!-- 1 -->
+  <details class="sec">
+    <summary><span class="num">1</span>前置需求<span class="caret">▶</span></summary>
+    <div class="body">
+      <label class="check"><input type="checkbox"><span class="ctext">一個網域已加入 Cloudflare（Nameserver 已指向 Cloudflare、狀態 Active）。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext">Cloudflare 帳號已啟用 <b>Zero Trust</b>（免費方案即可）。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext">Mac Mini 已可正常 <code>docker compose up -d</code> 跑起現有服務。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext">已備妥要放行的 Gmail 清單（後台白名單）。</span></label>
+    </div>
+  </details>
+
+  <!-- 2 -->
+  <details class="sec">
+    <summary><span class="num">2</span>程式碼異動（已進 repo）<span class="caret">▶</span></summary>
+    <div class="body">
+      <div class="callout"><b>提示：</b>本節異動已在 commit <code>3f966e8</code> 進版控，正式機 <code>git pull</code> 後即有。以下列出內容供對照。</div>
+
+      <h4>2.1 <code>docker-compose.yml</code> 新增 <code>cloudflared</code> 服務（<code>tunnel</code> profile）</h4>
+      <div class="codeblock"><span class="lang">yaml</span><button class="copy">複製</button><pre>  cloudflared:
+    image: cloudflare/cloudflared:latest
+    profiles: ["tunnel"]
+    command: tunnel run
+    restart: unless-stopped
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      - web-admin
+      - web-learner</pre></div>
+
+      <h4>2.2 正式機 <code>.env</code> 設定</h4>
+      <div class="codeblock"><span class="lang">dotenv</span><button class="copy">複製</button><pre># 前後台互連（build 時注入 SPA）
+ADMIN_URL_PUBLIC=https://admin.example.com
+LEARNER_URL_PUBLIC=https://learn.example.com
+
+# 關閉本機用的驗證繞道（正式機務必為 0）
+DEV_AUTH_BYPASS=0
+
+# Cloudflare Tunnel Token（見第 3 步取得；敏感值，勿進 repo）
+CLOUDFLARE_TUNNEL_TOKEN=&lt;在步驟 3 取得&gt;</pre></div>
+      <div class="callout"><code>VITE_ADMIN_URL</code> / <code>VITE_LEARNER_URL</code> 會自動吃到這些值。改了互連網址後前端需<b>重新 build</b>（見第 4 步）。</div>
+
+      <label class="check"><input type="checkbox"><span class="ctext">正式機已 <code>git pull</code> 取得含 <code>cloudflared</code> 服務的 compose。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext"><code>.env</code> 已填正式子網域、<code>DEV_AUTH_BYPASS=0</code>（Token 待第 3 步）。</span></label>
+    </div>
+  </details>
+
+  <!-- 3 -->
+  <details class="sec">
+    <summary><span class="num">3</span>Cloudflare 後台一次性設定<span class="caret">▶</span></summary>
+    <div class="body">
+      <div class="callout">位置：Cloudflare Dashboard → <b>Zero Trust</b> → 左側選單。</div>
+
+      <h4>3.1 建立 Tunnel 並取得 Token</h4>
+      <ul>
+        <li><b>Networks → Tunnels → Create a tunnel</b>。</li>
+        <li>類型選 <b>Cloudflared</b>，命名（如 <code>english-learning</code>）。</li>
+        <li>建立後畫面顯示的安裝指令裡，<code>--token</code> 後那串就是 <b>Tunnel Token</b> → 複製貼到正式機 <code>.env</code> 的 <code>CLOUDFLARE_TUNNEL_TOKEN</code>。（我們不用它的安裝指令，容器會用 Token 自己連。）</li>
+      </ul>
+      <label class="check"><input type="checkbox"><span class="ctext">已建立 Tunnel 並把 Token 填入 <code>.env</code>。</span></label>
+
+      <h4>3.2 設定 Public Hostname（ingress 路由）</h4>
+      <p>在該 Tunnel 的 <b>Public Hostname</b> 分頁新增兩條：</p>
+      <div class="tbl"><table>
+        <tr><th>Subdomain</th><th>Domain</th><th>Type</th><th>Service URL</th></tr>
+        <tr><td><code>admin</code></td><td><code>example.com</code></td><td><code>HTTP</code></td><td><code>web-admin:80</code></td></tr>
+        <tr><td><code>learn</code></td><td><code>example.com</code></td><td><code>HTTP</code></td><td><code>web-learner:80</code></td></tr>
+      </table></div>
+      <ul>
+        <li>Service URL 直接填容器服務名（cloudflared 與前端在同一 docker network）。</li>
+        <li>Type 用 <code>HTTP</code>（前端 nginx 聽 80；對外 TLS 由 Cloudflare 邊緣負責）。</li>
+        <li>DNS 的 CNAME 由 Cloudflare 自動建立，不需手動加。</li>
+      </ul>
+      <label class="check"><input type="checkbox"><span class="ctext">已新增 <code>admin</code>、<code>learn</code> 兩條 Public Hostname。</span></label>
+
+      <h4>3.3 建立 Access Application（後台白名單）</h4>
+      <ul>
+        <li><b>Access → Applications → Add an application → Self-hosted</b>。</li>
+        <li>Application name：<code>English Learning Admin</code>。</li>
+        <li>Application domain：<code>admin.example.com</code>（<b>只綁後台</b>）。</li>
+        <li><b>Policies</b> 新增一條：Action = <code>Allow</code>，Rule = <code>Emails</code> → 你的白名單 Gmail（可多個）。</li>
+        <li><b>前台 <code>learn.example.com</code> 不要建 Application</b> → 保持公開。</li>
+      </ul>
+      <div class="callout">若之後要讓前台也需登入，再為 <code>learn.example.com</code> 建一個 Application 即可，互不影響。</div>
+      <label class="check"><input type="checkbox"><span class="ctext">已為 <code>admin.example.com</code> 建 Access Application 並設白名單 Emails 政策。</span></label>
+    </div>
+  </details>
+
+  <!-- 4 -->
+  <details class="sec">
+    <summary><span class="num">4</span>部署（正式機 Mac Mini）<span class="caret">▶</span></summary>
+    <div class="body">
+      <div class="codeblock"><span class="lang">bash</span><button class="copy">複製</button><pre># 1. 取得最新程式碼與 .env（含 Token、正式子網域、DEV_AUTH_BYPASS=0）
+git pull
+
+# 2. 重新 build 前端（互連網址是 build 時注入，改了就要重建）
+docker compose build web-admin web-learner
+
+# 3. 啟動所有服務 + tunnel（--profile tunnel 才會帶起 cloudflared）
+docker compose --profile tunnel up -d
+
+# 4. 確認 cloudflared 已連上（看到 "Registered tunnel connection" 即成功）
+docker compose logs -f cloudflared</pre></div>
+      <div class="callout">本機開發不加 <code>--profile tunnel</code>，cloudflared 不會啟動，開發不受影響。</div>
+      <label class="check"><input type="checkbox"><span class="ctext">已 build 前端並以 <code>--profile tunnel up -d</code> 啟動。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext"><code>logs cloudflared</code> 出現 <code>Registered tunnel connection</code>。</span></label>
+    </div>
+  </details>
+
+  <!-- 5 -->
+  <details class="sec">
+    <summary><span class="num">5</span>驗證（Deploy 後必做）<span class="caret">▶</span></summary>
+    <div class="body">
+      <label class="check"><input type="checkbox"><span class="ctext">瀏覽 <code>https://learn.example.com</code> → <b>直接</b>看到前台（不需登入）。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext">瀏覽 <code>https://admin.example.com</code> → 先被 Cloudflare 攔截、要求 Gmail 登入。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext"><b>白名單內</b>的 Gmail 登入 → 成功進入後台。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext"><b>白名單外</b>的信箱 → 被拒（確認白名單有效）。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext">後台操作打 <code>/articles</code>、<code>/categories</code> → 正常回應（代表 JWT 有穿透到 api）。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext">前台／後台互連按鈕 → 正確跳轉到對方子網域（非 <code>localhost</code>）。</span></label>
+      <label class="check"><input type="checkbox"><span class="ctext"><code>logs cloudflared</code> 無持續錯誤、連線維持。</span></label>
+    </div>
+  </details>
+
+  <!-- 6 -->
+  <details class="sec">
+    <summary><span class="num">6</span>回滾（Rollback）<span class="caret">▶</span></summary>
+    <div class="body">
+      <p>Tunnel 是「附加層」，回滾很單純：</p>
+      <div class="codeblock"><span class="lang">bash</span><button class="copy">複製</button><pre># 只停掉對外入口，內部服務照跑
+docker compose stop cloudflared</pre></div>
+      <ul>
+        <li>停掉 cloudflared 後，子網域會 502／無法連線，但內部服務與資料完全不受影響。</li>
+        <li>要完全撤除：於 Cloudflare 後台刪除該 Tunnel 與 Access Application，並移除 <code>.env</code> 的 Token。</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- 7 -->
+  <details class="sec">
+    <summary><span class="num">7</span>疑難排解<span class="caret">▶</span></summary>
+    <div class="body">
+      <div class="tbl"><table>
+        <tr><th>症狀</th><th>可能原因</th><th>處理</th></tr>
+        <tr><td>子網域回 <b>502</b></td><td>cloudflared 連得上，但接不到前端容器</td><td>確認 Public Hostname 的 Service 填 <code>web-admin:80</code> / <code>web-learner:80</code>；確認前端容器 healthy</td></tr>
+        <tr><td>子網域<b>一直轉圈</b></td><td>cloudflared 沒起來或 Token 錯</td><td><code>docker compose logs cloudflared</code>；檢查 <code>.env</code> 的 Token</td></tr>
+        <tr><td>後台打 API 得 <b>401/403</b></td><td>JWT 沒穿透或 <code>DEV_AUTH_BYPASS</code> 設錯</td><td>確認正式機 <code>DEV_AUTH_BYPASS=0</code>、<code>CF_ACCESS_AUD</code>/<code>CF_ACCESS_TEAM_DOMAIN</code>/<code>ADMIN_EMAILS</code> 正確</td></tr>
+        <tr><td>後台<b>不用登入就進得去</b></td><td>Access Application 沒綁對 domain</td><td>確認 domain 為 <code>admin.example.com</code> 且政策 Allow→Emails</td></tr>
+        <tr><td>互連按鈕跳到 <b>localhost</b></td><td>前端沒用正式網址重 build</td><td>設好 <code>ADMIN_URL_PUBLIC</code>/<code>LEARNER_URL_PUBLIC</code> 後 <code>docker compose build web-admin web-learner</code></td></tr>
+        <tr><td>白名單外<b>也進得去</b></td><td>政策 Action 設成 Bypass 或規則過寬</td><td>檢查 Access Policy：Action=Allow、Rule=Emails 精確清單</td></tr>
+      </table></div>
+    </div>
+  </details>
+
+  <!-- 8 -->
+  <details class="sec">
+    <summary><span class="num">8</span>日常維運備忘<span class="caret">▶</span></summary>
+    <div class="body">
+      <ul>
+        <li><b>新增／移除白名單 Gmail：</b>Cloudflare 後台改 Access Policy 即可，<b>不需重部署</b>。</li>
+        <li><b>改路由目標：</b>Cloudflare 後台改 Public Hostname 即可，<b>不需重部署</b>。</li>
+        <li><b>cloudflared 升級：</b><code>docker compose pull cloudflared &amp;&amp; docker compose --profile tunnel up -d cloudflared</code>。</li>
+        <li><b>Token 外洩：</b>後台刪除該 Tunnel 重建、換新 Token、更新 <code>.env</code> 後重啟 cloudflared。</li>
+      </ul>
+    </div>
+  </details>
+
+  <footer>English Learning · Cloudflare Tunnel 對外單一入口 SOP · 對照 Markdown 版本 sop-cloudflare-tunnel-single-ingress-2026-07-05.md</footer>
+</div>
+
+<script>
+(function(){
+  var KEY = "sop-cf-tunnel-2026-07-05";
+  var checks = Array.prototype.slice.call(document.querySelectorAll('.check input'));
+
+  // 給每個 checkbox 穩定 index，載入 localStorage
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch(e){ saved = {}; }
+
+  function persist(){
+    var state = {};
+    checks.forEach(function(cb,i){ if(cb.checked) state[i]=1; });
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){}
+  }
+  function refreshRow(cb){ cb.closest('.check').classList.toggle('done', cb.checked); }
+  function refreshProgress(){
+    var total = checks.length, done = checks.filter(function(c){return c.checked;}).length;
+    document.getElementById('progText').textContent = done + ' / ' + total;
+    document.getElementById('barFill').style.width = total ? (done/total*100)+'%' : '0';
+  }
+
+  checks.forEach(function(cb,i){
+    if(saved[i]) cb.checked = true;
+    refreshRow(cb);
+    cb.addEventListener('change', function(){ refreshRow(cb); persist(); refreshProgress(); });
+  });
+  refreshProgress();
+
+  document.getElementById('expandAll').addEventListener('click', function(){
+    document.querySelectorAll('details.sec').forEach(function(d){ d.open = true; });
+  });
+  document.getElementById('collapseAll').addEventListener('click', function(){
+    document.querySelectorAll('details.sec').forEach(function(d){ d.open = false; });
+  });
+  document.getElementById('resetChecks').addEventListener('click', function(){
+    if(!confirm('確定要清除所有勾選進度？')) return;
+    checks.forEach(function(cb){ cb.checked = false; refreshRow(cb); });
+    try { localStorage.removeItem(KEY); } catch(e){}
+    refreshProgress();
+  });
+
+  // 一鍵複製程式碼
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var code = btn.parentElement.querySelector('pre').innerText;
+      navigator.clipboard.writeText(code).then(function(){
+        var t = btn.textContent; btn.textContent = '已複製 ✓'; btn.classList.add('done');
+        setTimeout(function(){ btn.textContent = t; btn.classList.remove('done'); }, 1400);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
