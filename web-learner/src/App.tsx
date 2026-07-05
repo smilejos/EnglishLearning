@@ -205,6 +205,7 @@ function WordPopup({
   onClose,
   onJump,
   onExplained,
+  canReexplain,
 }: {
   word: string;
   articleId: number;
@@ -212,6 +213,7 @@ function WordPopup({
   onClose: () => void;
   onJump: (articleId: number) => void;
   onExplained?: () => void;
+  canReexplain: boolean;
 }) {
   const [wordInfo, setWordInfo] = useState<Word | null>(null);
   const [explanations, setExplanations] = useState<WordExplanation[]>([]);
@@ -257,7 +259,12 @@ function WordPopup({
       onExplained?.();
       setPendingArticleId(articleId); // 觸發背景音檔輪詢
     } catch (err) {
-      setError((err as Error).message);
+      const e = err as { status?: number; message?: string };
+      setError(
+        e.status === 403
+          ? "此功能限審稿者以上使用"
+          : (e.message ?? "解釋失敗"),
+      );
     } finally {
       setBusy(false);
     }
@@ -319,7 +326,7 @@ function WordPopup({
         </div>
         {explanations.some((e) => e.articleId === articleId) ? (
           <p className="sheet__note">✓ 本篇已解釋</p>
-        ) : (
+        ) : canReexplain ? (
           <button
             className="btn btn--primary btn--sm"
             onClick={reexplain}
@@ -328,10 +335,14 @@ function WordPopup({
           >
             {busy ? "解釋中…" : "用本篇重新解釋"}
           </button>
-        )}
+        ) : null}
         {error && <p className="sheet__error">{error}</p>}
         {explanations.length === 0 && !busy && (
-          <p className="sheet__empty">尚無解釋，點上方按鈕用本篇產生。</p>
+          <p className="sheet__empty">
+            {canReexplain
+              ? "尚無解釋，點上方按鈕用本篇產生。"
+              : "尚無解釋。"}
+          </p>
         )}
         {explanations.map((exp) => (
           <ExplanationCard
@@ -351,10 +362,12 @@ function Reader({
   articleId,
   onBack,
   onJump,
+  canReexplain,
 }: {
   articleId: number;
   onBack: () => void;
   onJump: (articleId: number) => void;
+  canReexplain: boolean;
 }) {
   const [article, setArticle] = useState<Article | null>(null);
   const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
@@ -592,6 +605,7 @@ function Reader({
           onClose={() => setPopup(null)}
           onJump={onJump}
           onExplained={loadKnown}
+          canReexplain={canReexplain}
         />
       )}
     </>
@@ -866,6 +880,14 @@ export default function App() {
   const [openId, setOpenId] = useState<number | null>(() =>
     articleIdFromHash(window.location.hash),
   );
+  // 角色決定是否能用即時重新翻譯（admin／reviewer）；後端仍會縱深防禦。
+  const [canReexplain, setCanReexplain] = useState(false);
+  useEffect(() => {
+    void api.getMe().then((r) => {
+      const role = r.user?.role;
+      setCanReexplain(role === "admin" || role === "reviewer");
+    });
+  }, []);
 
   // hash 是唯一事實來源：返回鍵／前進鍵經 hashchange 更新畫面。
   useEffect(() => {
@@ -898,6 +920,7 @@ export default function App() {
           articleId={openId}
           onBack={() => navigate(null)}
           onJump={navigate}
+          canReexplain={canReexplain}
         />
       )}
     </div>

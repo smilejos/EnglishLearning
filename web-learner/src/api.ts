@@ -61,6 +61,17 @@ export function reexplain(input: {
   return req("/lookups", { method: "POST", body: JSON.stringify(input) });
 }
 
+export interface Me {
+  id: number;
+  email: string;
+  role: "admin" | "reviewer" | "reader";
+}
+
+/** 目前登入者身分（Cloudflare Access 之後同源）。 */
+export function getMe(): Promise<{ user: Me | null }> {
+  return req("/me");
+}
+
 /** 音檔 URL（同源 /audio/ 靜態服務）。 */
 export function audioUrl(relPath: string): string {
   return `${BASE}/audio/${relPath}`;
