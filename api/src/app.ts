@@ -52,7 +52,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   // 業務路由。
   registerArticleRoutes(app, opts.pool, opts.audioDir);
   registerTaxonomyRoutes(app, opts.pool);
-  registerLookupRoutes(app, opts.pool, opts.lookupDeps, opts.lookupLimiter);
+  registerLookupRoutes(app, opts.pool, opts.audioDir, opts.lookupDeps, opts.lookupLimiter);
   registerStatsRoutes(app, opts.pool, opts.lookupLimiter);
 
   return app;

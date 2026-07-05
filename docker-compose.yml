@@ -100,6 +100,8 @@ services:
     build:
       context: .
       dockerfile: web-learner/Dockerfile
+      args:
+        VITE_ADMIN_URL: ${ADMIN_URL_PUBLIC:-http://localhost:8081}
     ports:
       - "${WEB_LEARNER_PORT:-8082}:80"
     depends_on:

@@ -116,24 +116,31 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
       translation = await translateParagraph(paragraph.text, deps.translateClient);
     }
 
-    // 英文語音念原文、中文語音念翻譯；兩者互不依賴，並行以縮短單段處理時間。
+    // 只重做目前為 null 的音檔（單段部分重生：見 clearParagraphResult）。
+    // 英文語音念原文、中文語音念翻譯；互不依賴，並行以縮短處理時間。
     // 音檔寫盤在交易外（與 lookups 一致）。
+    const needEn = paragraph.enAudioPath == null;
+    const needZh = paragraph.zhAudioPath == null;
     const [en, zh] = await Promise.all([
-      deps.ttsClient.synthesize(paragraph.text, deps.voiceEn),
-      deps.ttsClient.synthesize(translation, deps.voiceZh),
+      needEn ? deps.ttsClient.synthesize(paragraph.text, deps.voiceEn) : null,
+      needZh ? deps.ttsClient.synthesize(translation, deps.voiceZh) : null,
     ]);
-    const enAudioPath = await writeAudioEncoded(
-      deps.audioDir,
-      `articles/${job.articleId}/p${paragraph.idx}.en`,
-      en.wav,
-      { format: deps.audioFormat },
-    );
-    const zhAudioPath = await writeAudioEncoded(
-      deps.audioDir,
-      `articles/${job.articleId}/p${paragraph.idx}.zh`,
-      zh.wav,
-      { format: deps.audioFormat },
-    );
+    const enAudioPath = en
+      ? await writeAudioEncoded(
+          deps.audioDir,
+          `articles/${job.articleId}/p${paragraph.idx}.en`,
+          en.wav,
+          { format: deps.audioFormat },
+        )
+      : paragraph.enAudioPath;
+    const zhAudioPath = zh
+      ? await writeAudioEncoded(
+          deps.audioDir,
+          `articles/${job.articleId}/p${paragraph.idx}.zh`,
+          zh.wav,
+          { format: deps.audioFormat },
+        )
+      : paragraph.zhAudioPath;
 
     // DB 寫入於單一交易內：段落 done + job done + 重算文章狀態。
     await withTransaction(deps.pool, async (tx) => {

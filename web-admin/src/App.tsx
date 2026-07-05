@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
 
@@ -311,13 +311,11 @@ function AudioGroup({
   );
 }
 
-function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
+function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
   const [article, setArticle] = useState<Article | null>(null);
-  const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
   const [error, setError] = useState<string | null>(null);
   const { categories, tags, ready } = useTaxonomy();
 
-  // 編輯草稿：僅在首次載入時由文章 meta 初始化，之後的輪詢不覆寫使用者編輯。
   const [title, setTitle] = useState("");
   const [draft, setDraft] = useState<MetaDraft | null>(null);
   const [saving, setSaving] = useState(false);
@@ -328,7 +326,6 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
     try {
       const data = await api.getArticle(id);
       setArticle(data.article);
-      setParagraphs(data.paragraphs);
     } catch (err) {
       setError((err as Error).message);
     }
@@ -336,8 +333,6 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
 
   useEffect(() => {
     void load();
-    const t = setInterval(load, 3000);
-    return () => clearInterval(t);
   }, [load]);
 
   // 待文章載入且受控詞彙抓取完成後，初始化一次編輯草稿。
@@ -347,22 +342,6 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
     setDraft(draftFromArticle(article, categories, tags));
     inited.current = true;
   }, [article, ready, categories, tags]);
-
-  async function retry() {
-    await api.retryArticle(id);
-    void load();
-  }
-
-  async function regen(p: Paragraph) {
-    if (
-      !window.confirm(
-        `重新產生第 ${p.idx + 1} 段？將重新呼叫翻譯與語音 API（產生費用）。`,
-      )
-    )
-      return;
-    await api.regenerateParagraph(id, p.id);
-    void load();
-  }
 
   async function save() {
     if (!draft) return;
@@ -393,9 +372,6 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
     return <p className="status-line is-error">{error}</p>;
   if (!article) return <p className="status-line">載入中…</p>;
 
-  const hasFailed =
-    article.status === "failed" || paragraphs.some((p) => p.status === "failed");
-
   return (
     <div>
       <button className="link-btn" onClick={onBack}>
@@ -412,14 +388,8 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
       >
         <h2 className="h-title">{article.title}</h2>
         <StatusBadge status={article.status} />
-        {hasFailed && (
-          <button className="btn btn--ghost btn--sm" onClick={retry}>
-            重試失敗段落
-          </button>
-        )}
       </div>
 
-      {/* 可編輯的文章資訊（不含內文）。 */}
       <div className="panel" style={{ marginBottom: 18 }}>
         <h3 className="h-title" style={{ fontSize: "1.1rem", marginBottom: 12 }}>
           文章資訊
@@ -460,6 +430,94 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
           <p className="picker__hint">載入中…</p>
         )}
       </div>
+    </div>
+  );
+}
+
+function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
+  const [article, setArticle] = useState<Article | null>(null);
+  const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  const load = useCallback(async () => {
+    try {
+      const data = await api.getArticle(id);
+      setArticle(data.article);
+      setParagraphs(data.paragraphs);
+    } catch (err) {
+      setError((err as Error).message);
+    }
+  }, [id]);
+
+  useEffect(() => {
+    void load();
+    const t = setInterval(load, 3000);
+    return () => clearInterval(t);
+  }, [load]);
+
+  // 本篇單字解釋（可就地刪除）。
+  const [artExps, setArtExps] = useState<api.Explanation[]>([]);
+  const loadExps = useCallback(async () => {
+    setArtExps((await api.listArticleExplanations(id)).explanations);
+  }, [id]);
+  useEffect(() => {
+    void loadExps();
+  }, [loadExps]);
+
+  async function removeArtExp(expId: number) {
+    if (!confirm("刪除這筆單字解釋？")) return;
+    await api.deleteExplanation(expId);
+    await loadExps();
+  }
+
+  async function retry() {
+    await api.retryArticle(id);
+    void load();
+  }
+
+  async function regen(p: Paragraph, scope: api.RegenScope) {
+    const label = {
+      translation: "重新翻譯（連帶重生中文音檔）",
+      "audio-zh": "重新產生中文音檔",
+      "audio-en": "重新產生英文音檔",
+    }[scope];
+    if (
+      !window.confirm(`第 ${p.idx + 1} 段：${label}？將呼叫對應 API（產生費用）。`)
+    )
+      return;
+    await api.regenerateParagraph(id, p.id, scope);
+    void load();
+  }
+
+  if (error && !article)
+    return <p className="status-line is-error">{error}</p>;
+  if (!article) return <p className="status-line">載入中…</p>;
+
+  const hasFailed =
+    article.status === "failed" || paragraphs.some((p) => p.status === "failed");
+
+  return (
+    <div>
+      <button className="link-btn" onClick={onBack}>
+        ← 返回清單
+      </button>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 12,
+          margin: "10px 0 14px",
+          flexWrap: "wrap",
+        }}
+      >
+        <h2 className="h-title">{article.title}</h2>
+        <StatusBadge status={article.status} />
+        {hasFailed && (
+          <button className="btn btn--ghost btn--sm" onClick={retry}>
+            重試失敗段落
+          </button>
+        )}
+      </div>
 
       <div className="section-eyebrow" style={{ marginTop: 0 }}>
         段落內文（於「重試」處理，此處不可編輯）
@@ -470,9 +528,17 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
             <span className="para-item__idx">#{p.idx + 1}</span>
             <StatusBadge status={p.status} />
             {(p.status === "done" || p.status === "failed") && (
-              <button className="btn btn--ghost btn--sm" onClick={() => void regen(p)}>
-                重新產生
-              </button>
+              <>
+                <button className="btn btn--ghost btn--sm" onClick={() => void regen(p, "translation")}>
+                  重新翻譯
+                </button>
+                <button className="btn btn--ghost btn--sm" onClick={() => void regen(p, "audio-zh")}>
+                  產生中文音檔
+                </button>
+                <button className="btn btn--ghost btn--sm" onClick={() => void regen(p, "audio-en")}>
+                  產生英文音檔
+                </button>
+              </>
             )}
           </div>
           <p className="para-item__text">{p.text}</p>
@@ -485,6 +551,30 @@ function ArticleDetail({ id, onBack }: { id: number; onBack: () => void }) {
               <AudioGroup label="英文朗讀" path={p.enAudioPath} />
               <AudioGroup label="中文朗讀" path={p.zhAudioPath} />
             </div>
+          )}
+        </div>
+      ))}
+
+      <div className="section-eyebrow">本篇單字解釋（{artExps.length}）</div>
+      {artExps.length === 0 && (
+        <p className="picker__hint">本篇尚無單字解釋。</p>
+      )}
+      {artExps.map((e) => (
+        <div key={e.id} className="para-item">
+          <div className="para-item__head">
+            <span className="para-item__idx">
+              {e.word?.normalizedWord ?? `#${e.wordId}`}
+            </span>
+            <button
+              className="btn btn--ghost btn--sm"
+              onClick={() => void removeArtExp(e.id)}
+            >
+              刪除
+            </button>
+          </div>
+          {e.zhTranslation && <p className="para-item__tr">翻譯：{e.zhTranslation}</p>}
+          {e.zhExplanation && (
+            <p className="para-item__tr">解釋（中）：{e.zhExplanation}</p>
           )}
         </div>
       ))}
@@ -554,7 +644,13 @@ function useHeightPageSize(ref: React.RefObject<HTMLElement>): number {
   return size;
 }
 
-function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
+function ArticleList({
+  onOpen,
+  onEdit,
+}: {
+  onOpen: (id: number) => void;
+  onEdit: (id: number) => void;
+}) {
   const [articles, setArticles] = useState<Article[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [page, setPage] = useState(0);
@@ -676,6 +772,12 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
                       onClick={() => onOpen(a.id)}
                     >
                       檢視
+                    </button>
+                    <button
+                      className="btn btn--ghost btn--sm"
+                      onClick={() => onEdit(a.id)}
+                    >
+                      修改
                     </button>
                     <button
                       className="btn btn--danger btn--sm"
@@ -946,11 +1048,151 @@ function TaxonomyManager() {
   );
 }
 
-type View = "list" | "new" | "detail" | "taxonomy";
+type View = "list" | "new" | "detail" | "edit" | "taxonomy" | "words";
+
+function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
+  const [q, setQ] = useState(initialQuery);
+  const [words, setWords] = useState<api.WordRow[]>([]);
+  const [openWord, setOpenWord] = useState<string | null>(null);
+  const [exps, setExps] = useState<api.Explanation[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  const search = useCallback(async (term: string) => {
+    try {
+      setWords((await api.searchWords(term)).words);
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  }, []);
+
+  useEffect(() => {
+    void search(initialQuery);
+  }, [search, initialQuery]);
+
+  const expand = useCallback(
+    async (word: string) => {
+      if (openWord === word) {
+        setOpenWord(null);
+        return;
+      }
+      setOpenWord(word);
+      setExps((await api.getWordExplanations(word)).explanations);
+    },
+    [openWord],
+  );
+
+  // initialQuery 帶入時自動展開對應單字（深連結）。
+  useEffect(() => {
+    if (initialQuery) void expand(initialQuery);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialQuery]);
+
+  async function removeExp(id: number, word: string) {
+    if (!confirm("刪除這筆解釋？")) return;
+    await api.deleteExplanation(id);
+    setExps((await api.getWordExplanations(word)).explanations);
+    await search(q);
+  }
+  async function removeWord(row: api.WordRow) {
+    if (!confirm(`刪除整個單字「${row.normalizedWord}」及其所有解釋？`)) return;
+    await api.deleteWord(row.id);
+    if (openWord === row.normalizedWord) setOpenWord(null);
+    await search(q);
+  }
+
+  return (
+    <div>
+      <div className="section-eyebrow" style={{ marginTop: 0 }}>
+        單字解釋管理
+      </div>
+      <div style={{ display: "flex", gap: 8, margin: "10px 0 16px" }}>
+        <input
+          className="field"
+          placeholder="搜尋單字…"
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && void search(q)}
+        />
+        <button className="btn btn--primary" onClick={() => void search(q)}>
+          搜尋
+        </button>
+      </div>
+      {error && <p className="error-text">{error}</p>}
+      <table className="table">
+        <tbody>
+          {words.map((row) => (
+            <Fragment key={row.id}>
+              <tr>
+                <td>
+                  <button
+                    className="link-btn"
+                    onClick={() => void expand(row.normalizedWord)}
+                  >
+                    {openWord === row.normalizedWord ? "▾ " : "▸ "}
+                    {row.normalizedWord}
+                  </button>
+                </td>
+                <td>{row.explanationCount} 筆解釋</td>
+                <td className="table__actions">
+                  <button
+                    className="btn btn--ghost btn--sm"
+                    onClick={() => void removeWord(row)}
+                  >
+                    刪除單字
+                  </button>
+                </td>
+              </tr>
+              {openWord === row.normalizedWord && (
+                <tr>
+                  <td colSpan={3}>
+                    {exps.length === 0 && (
+                      <p className="picker__hint">尚無解釋。</p>
+                    )}
+                    {exps.map((e) => (
+                      <div key={e.id} className="panel" style={{ marginBottom: 8 }}>
+                        <div style={{ fontWeight: 700 }}>
+                          來源：{e.article?.title ?? `#${e.articleId}`}
+                        </div>
+                        {e.zhTranslation && <div>翻譯：{e.zhTranslation}</div>}
+                        {e.zhExplanation && <div>解釋（中）：{e.zhExplanation}</div>}
+                        <button
+                          className="btn btn--ghost btn--sm"
+                          style={{ marginTop: 6 }}
+                          onClick={() => void removeExp(e.id, row.normalizedWord)}
+                        >
+                          刪除這筆解釋
+                        </button>
+                      </div>
+                    ))}
+                  </td>
+                </tr>
+              )}
+            </Fragment>
+          ))}
+          {words.length === 0 && (
+            <tr>
+              <td className="picker__hint">查無單字。</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  );
+}
 
 export default function App() {
   const [view, setView] = useState<View>("list");
   const [openId, setOpenId] = useState<number | null>(null);
+  const [wordQuery, setWordQuery] = useState("");
+
+  // 深連結：#/w/<word> 進站帶入單字頁並自動展開。
+  useEffect(() => {
+    const m = location.hash.match(/^#\/w\/(.+)$/);
+    if (m) {
+      setWordQuery(decodeURIComponent(m[1]));
+      setView("words");
+    }
+  }, []);
 
   const goList = () => {
     setView("list");
@@ -960,8 +1202,13 @@ export default function App() {
     setOpenId(id);
     setView("detail");
   };
+  const openEdit = (id: number) => {
+    setOpenId(id);
+    setView("edit");
+  };
 
-  const inArticles = view === "list" || view === "new" || view === "detail";
+  const inArticles =
+    view === "list" || view === "new" || view === "detail" || view === "edit";
 
   return (
     <div className="app-root">
@@ -985,6 +1232,12 @@ export default function App() {
             >
               分類 / 標籤
             </button>
+            <button
+              className={"topnav__btn" + (view === "words" ? " on" : "")}
+              onClick={() => setView("words")}
+            >
+              單字
+            </button>
           </nav>
           {/* 右上角：新增文章。 */}
           {inArticles && (
@@ -1002,6 +1255,8 @@ export default function App() {
       <main className="wrap" style={{ paddingTop: 24, paddingBottom: 60 }}>
         {view === "taxonomy" ? (
           <TaxonomyManager />
+        ) : view === "words" ? (
+          <WordManager initialQuery={wordQuery} />
         ) : view === "new" ? (
           <div>
             <button className="link-btn" onClick={goList} style={{ marginBottom: 10 }}>
@@ -1009,10 +1264,12 @@ export default function App() {
             </button>
             <UploadForm onCreated={goList} />
           </div>
+        ) : view === "edit" && openId !== null ? (
+          <ArticleEdit id={openId} onBack={goList} />
         ) : view === "detail" && openId !== null ? (
-          <ArticleDetail id={openId} onBack={goList} />
+          <ArticleView id={openId} onBack={goList} />
         ) : (
-          <ArticleList onOpen={openDetail} />
+          <ArticleList onOpen={openDetail} onEdit={openEdit} />
         )}
       </main>
     </div>

@@ -8,6 +8,7 @@ import { readyArticles } from "./lib/articles";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { articleIdFromHash, hashForArticle } from "./lib/route";
 import { popupTitle } from "./lib/vocab";
+import { explanationAudioReady } from "./lib/explanation";
 import {
   PlayIcon,
   PauseIcon,
@@ -20,17 +21,27 @@ import {
 function AudioChip({
   path,
   label,
+  iconOnly = false,
+  pending = false,
 }: {
   path: string | null | undefined;
   label: string;
+  iconOnly?: boolean;
+  pending?: boolean;
 }) {
   const [state, setState] = useState<"idle" | "loading" | "playing" | "error">(
     "idle",
   );
   if (!path) {
     return (
-      <button className="audio-chip" disabled aria-label={label}>
-        <SoundIcon /> {label}（無）
+      <button
+        className={"audio-chip" + (iconOnly ? " audio-chip--icon" : "")}
+        disabled
+        aria-label={`${label}（${pending ? "產生中" : "無"}）`}
+        title={pending ? "產生中…" : "尚無語音"}
+      >
+        <SoundIcon />
+        {!iconOnly && ` ${label}（${pending ? "產生中…" : "無"}）`}
       </button>
     );
   }
@@ -61,16 +72,18 @@ function AudioChip({
 
   const cls =
     "audio-chip" +
+    (iconOnly ? " audio-chip--icon" : "") +
     (state === "playing" ? " is-playing" : state === "error" ? " is-error" : "");
   return (
     <button
       className={cls}
       onClick={play}
       disabled={state === "loading"}
-      title={state === "error" ? "播放失敗" : undefined}
+      title={state === "error" ? "播放失敗" : label}
       aria-label={label}
     >
-      <SoundIcon /> {label}
+      <SoundIcon />
+      {!iconOnly && ` ${label}`}
     </button>
   );
 }
@@ -111,10 +124,12 @@ function ExplanationCard({
   exp,
   word,
   onJump,
+  pending = false,
 }: {
   exp: WordExplanation;
   word: Word | null;
   onJump: (articleId: number) => void;
+  pending?: boolean;
 }) {
   return (
     <div className="exp">
@@ -142,27 +157,43 @@ function ExplanationCard({
       <p className="exp__row">
         <b>解釋（英）：</b>
         {exp.enExplanation}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.enExplanationAudioPath}
+          label="播放解釋（英）"
+        />
       </p>
       <p className="exp__row">
         <b>解釋（中）：</b>
         {exp.zhExplanation}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.zhExplanationAudioPath}
+          label="播放解釋（中）"
+        />
       </p>
       <p className="exp__row exp__ex">
         <b>例句（英）：</b>
         {exp.enExample}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.enExampleAudioPath}
+          label="播放例句（英）"
+        />
       </p>
       <p className="exp__row exp__ex">
         <b>例句（中）：</b>
         {exp.zhExample}
+        <AudioChip
+          iconOnly
+          pending={pending}
+          path={exp.zhExampleAudioPath}
+          label="播放例句（中）"
+        />
       </p>
-      <div className="exp__audio">
-        <AudioChip path={word?.enAudioPath} label="單字英" />
-        <AudioChip path={exp.zhTranslationAudioPath} label="單字中" />
-        <AudioChip path={exp.enExplanationAudioPath} label="解釋英" />
-        <AudioChip path={exp.zhExplanationAudioPath} label="解釋中" />
-        <AudioChip path={exp.enExampleAudioPath} label="例句英" />
-        <AudioChip path={exp.zhExampleAudioPath} label="例句中" />
-      </div>
     </div>
   );
 }
@@ -186,6 +217,7 @@ function WordPopup({
   const [explanations, setExplanations] = useState<WordExplanation[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [pendingArticleId, setPendingArticleId] = useState<number | null>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
 
   // 開啟時聚焦關閉鈕、ESC 關閉；關閉時把焦點還給觸發元素。
@@ -223,12 +255,38 @@ function WordPopup({
       await api.reexplain({ articleId, paragraphId, word });
       await load();
       onExplained?.();
+      setPendingArticleId(articleId); // 觸發背景音檔輪詢
     } catch (err) {
       setError((err as Error).message);
     } finally {
       setBusy(false);
     }
   }
+
+  // 重新解釋後音檔為背景補產：每 5 秒重抓一次、最多 4 次；音檔備齊或次數用盡即停。
+  useEffect(() => {
+    if (pendingArticleId === null) return;
+    let tries = 0;
+    const timer = setInterval(async () => {
+      tries += 1;
+      const data = await api.getExplanations(word).catch(() => null);
+      if (data) {
+        setWordInfo(data.word);
+        setExplanations(data.explanations);
+        const exp = data.explanations.find((e) => e.articleId === pendingArticleId);
+        if (exp && explanationAudioReady(exp)) {
+          clearInterval(timer);
+          setPendingArticleId(null);
+          return;
+        }
+      }
+      if (tries >= 4) {
+        clearInterval(timer);
+        setPendingArticleId(null);
+      }
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [pendingArticleId, word]);
 
   const title = popupTitle(word, explanations, articleId);
 
@@ -243,6 +301,18 @@ function WordPopup({
       >
         <div className="sheet__head">
           <h2 className="sheet__word">{title}</h2>
+          {wordInfo && (
+            <AudioChip iconOnly path={wordInfo.enAudioPath} label="播放單字發音" />
+          )}
+          <a
+            className="sheet__admin"
+            href={api.adminWordUrl(word)}
+            target="_blank"
+            rel="noreferrer"
+            title="在後台管理此單字"
+          >
+            ⚙ 後台管理
+          </a>
           <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
             ✕
           </button>
@@ -264,7 +334,13 @@ function WordPopup({
           <p className="sheet__empty">尚無解釋，點上方按鈕用本篇產生。</p>
         )}
         {explanations.map((exp) => (
-          <ExplanationCard key={exp.id} exp={exp} word={wordInfo} onJump={onJump} />
+          <ExplanationCard
+            key={exp.id}
+            exp={exp}
+            word={wordInfo}
+            onJump={onJump}
+            pending={exp.articleId === pendingArticleId}
+          />
         ))}
       </div>
     </div>

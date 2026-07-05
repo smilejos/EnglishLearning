@@ -125,16 +125,22 @@ export async function resetFailedParagraphsByArticle(
   return res.rowCount ?? 0;
 }
 
-/** 單段重新產生前的清空：翻譯與音檔路徑歸 null、狀態回 pending。 */
+export type RegenScope = "translation" | "audio-en" | "audio-zh";
+
+/** 單段重新產生前的清空：依 scope 清對應欄位、狀態回 pending。
+ *  translation 連帶清中文音檔（音檔照翻譯念，重譯後需重生）。 */
 export async function clearParagraphResult(
   db: Queryable,
   id: number,
+  scope: RegenScope,
 ): Promise<void> {
+  const sets: Record<RegenScope, string> = {
+    translation: "translation = NULL, zh_audio_path = NULL",
+    "audio-zh": "zh_audio_path = NULL",
+    "audio-en": "en_audio_path = NULL",
+  };
   await db.query(
-    `UPDATE paragraphs
-        SET translation = NULL, en_audio_path = NULL, zh_audio_path = NULL,
-            status = 'pending'
-      WHERE id = $1`,
+    `UPDATE paragraphs SET ${sets[scope]}, status = 'pending' WHERE id = $1`,
     [id],
   );
 }

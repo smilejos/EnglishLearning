@@ -284,6 +284,13 @@ a { color: inherit; text-decoration: none; }
 .audio-chip:disabled { opacity: 0.45; cursor: default; }
 .audio-chip.is-playing { background: var(--accent-soft); color: var(--accent-strong); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
 .audio-chip.is-error { background: #fdecea; color: var(--danger); border-color: color-mix(in srgb, var(--danger) 30%, transparent); }
+/* 純圖示播放鈕：貼在句末或標題旁的圓形小鈕。 */
+.audio-chip--icon {
+  gap: 0; width: 1.9em; height: 1.9em; padding: 0;
+  margin-left: 6px; border-radius: 999px; vertical-align: middle;
+  justify-content: center;
+}
+.audio-chip--icon svg { margin: 0; }
 
 /* ---------------- popup (sheet) ---------------- */
 .sheet-overlay {
@@ -295,7 +302,12 @@ a { color: inherit; text-decoration: none; }
   width: 100%; max-width: 640px; background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 22px 22px 24px; position: relative;
 }
-.sheet__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.sheet__head { display: flex; align-items: center; justify-content: flex-start; gap: 10px; }
+.sheet__admin {
+  margin-left: auto; font-family: var(--font-ui); font-size: 0.8rem; font-weight: 700;
+  color: var(--text-muted); text-decoration: none; white-space: nowrap;
+}
+.sheet__admin:hover { color: var(--accent-strong); text-decoration: underline; }
 .sheet__word {
   font-family: var(--font-display); font-weight: var(--display-weight);
   font-size: 1.7rem; letter-spacing: var(--display-tracking); margin: 0;
@@ -408,5 +420,5 @@ button.vocab {
 }
 .audiobar { padding-bottom: calc(8px + env(safe-area-inset-bottom)); }
 
-/* 已查單字標示（Task 16） */
-.vocab--known { border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); }
+/* 已查單字標示（Task 16）。特異性須高過 button.vocab 的 border:0，否則底線被蓋掉。 */
+.vocab.vocab--known { border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); }

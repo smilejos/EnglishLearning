@@ -66,3 +66,44 @@ export async function listWordsMissingEnAudio(
   );
   return res.rows.map(mapWord);
 }
+
+export interface WordSearchRow {
+  id: number;
+  normalizedWord: string;
+  enAudioPath: string | null;
+  explanationCount: number;
+}
+
+/** 後台單字管理搜尋：依 normalized_word 子字串比對，附各字解釋數。 */
+export async function searchWords(
+  db: Queryable,
+  q: string,
+  limit: number,
+): Promise<WordSearchRow[]> {
+  const res = await db.query(
+    `SELECT w.id, w.normalized_word, w.en_audio_path,
+            COUNT(we.id)::int AS explanation_count
+       FROM words w
+       LEFT JOIN word_explanations we ON we.word_id = w.id
+      WHERE $1 = '' OR w.normalized_word LIKE '%' || $1 || '%'
+      GROUP BY w.id
+      ORDER BY w.normalized_word
+      LIMIT $2`,
+    [q.toLowerCase(), limit],
+  );
+  return res.rows.map((r: any) => ({
+    id: toNum(r.id),
+    normalizedWord: r.normalized_word,
+    enAudioPath: r.en_audio_path,
+    explanationCount: toNum(r.explanation_count),
+  }));
+}
+
+/** 刪除整個單字（word_explanations 經 FK ON DELETE CASCADE 連帶刪除）。 */
+export async function deleteWord(
+  db: Queryable,
+  id: number,
+): Promise<number | null> {
+  const res = await db.query(`DELETE FROM words WHERE id = $1 RETURNING id`, [id]);
+  return res.rows[0] ? toNum(res.rows[0].id) : null;
+}

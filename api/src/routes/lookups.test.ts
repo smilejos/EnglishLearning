@@ -185,7 +185,7 @@ describe("POST /lookups（重新解釋）", () => {
     await app.close();
   });
 
-  it("首呼產生 6 個音檔（5 解釋 + word 英文發音）並寫入解釋", async () => {
+  it("首呼：先回文字（音檔為 null），背景補 6 個音檔後 DB/檔案就緒", async () => {
     const { articleId, paragraphId } = await seedArticleParagraph();
     const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
 
@@ -195,33 +195,33 @@ describe("POST /lookups（重新解釋）", () => {
       payload: { articleId, paragraphId, word: "Habit " },
     });
     expect(res.statusCode).toBe(201);
-    const body = res.json();
+    const e = res.json().explanation;
+    // 立即回傳：文字已在，音檔欄位與 word 發音皆為 null。
+    expect(e.enExplanation).toBe("a regular practice");
+    expect(e.zhExplanationAudioPath).toBeNull();
+    expect(res.json().word.enAudioPath).toBeNull();
 
-    // LLM：解釋 1 次、TTS 6 次（en 發音 + 5 解釋音檔）。
+    // 背景：DB 與檔案最終就緒（含 word 英文發音）。
+    const word = await findWordByNormalized(pool, "habit");
+    await vi.waitFor(async () => {
+      const stored = await findExplanation(pool, word!.id, articleId);
+      for (const f of [
+        "enExplanationAudioPath",
+        "enExampleAudioPath",
+        "zhTranslationAudioPath",
+        "zhExplanationAudioPath",
+        "zhExampleAudioPath",
+      ] as const) {
+        expect((stored as Record<string, unknown>)?.[f]).toBeTruthy();
+        expect(await fileExists((stored as Record<string, string>)[f])).toBe(true);
+      }
+      const w = await findWordByNormalized(pool, "habit");
+      expect(w?.enAudioPath).toBeTruthy();
+      expect(await fileExists(w!.enAudioPath!)).toBe(true);
+    });
+    // LLM 1 次、TTS 6 次（en 發音 + 5 解釋音檔）。
     expect(explainSpy).toHaveBeenCalledTimes(1);
     expect(synthSpy).toHaveBeenCalledTimes(6);
-
-    // 回傳解釋含 5 個音檔欄位 + 文字。
-    const e = body.explanation;
-    expect(e.enExplanation).toBe("a regular practice");
-    for (const f of [
-      "enExplanationAudioPath",
-      "enExampleAudioPath",
-      "zhTranslationAudioPath",
-      "zhExplanationAudioPath",
-      "zhExampleAudioPath",
-    ]) {
-      expect(e[f]).toBeTruthy();
-      expect(await fileExists(e[f])).toBe(true);
-    }
-    // word 英文發音
-    expect(body.word.enAudioPath).toBeTruthy();
-    expect(await fileExists(body.word.enAudioPath)).toBe(true);
-
-    // DB 已寫入
-    const word = await findWordByNormalized(pool, "habit");
-    expect(word?.enAudioPath).toBe(body.word.enAudioPath);
-    expect(await findExplanation(pool, word!.id, articleId)).not.toBeNull();
 
     await app.close();
   });
@@ -234,6 +234,12 @@ describe("POST /lookups（重新解釋）", () => {
       method: "POST",
       url: "/lookups",
       payload: { articleId, paragraphId, word: "habit" },
+    });
+    // 等首查的背景音檔補產完成，再清 spy，避免背景呼叫混入第二次斷言。
+    const word = await findWordByNormalized(pool, "habit");
+    await vi.waitFor(async () => {
+      const stored = await findExplanation(pool, word!.id, articleId);
+      expect(stored?.zhExampleAudioPath).toBeTruthy();
     });
     explainSpy.mockClear();
     synthSpy.mockClear();
@@ -274,7 +280,7 @@ describe("POST /lookups（重新解釋）", () => {
     await app.close();
   });
 
-  it("單段 TTS 失敗時仍存解釋、該音檔為 null、回 201", async () => {
+  it("單段 TTS 失敗時仍存解釋、該音檔為 null、其餘背景補齊、回 201", async () => {
     const { articleId, paragraphId } = await seedArticleParagraph();
     // 對中文翻譯 "習慣" 的 TTS 拋錯（模擬 Gemini finishReason OTHER）。
     const failingSynth = vi.fn(async (text: string) => {
@@ -301,15 +307,20 @@ describe("POST /lookups（重新解釋）", () => {
       payload: { articleId, paragraphId, word: "habit" },
     });
     expect(res.statusCode).toBe(201);
-    const e = res.json().explanation;
-    expect(e.zhTranslation).toBe("習慣"); // 文字仍寫入
-    expect(e.zhTranslationAudioPath).toBeNull(); // 失敗段音檔為 null
-    expect(e.enExplanationAudioPath).toBeTruthy(); // 其他段音檔正常
-    // DB 確有一筆解釋
+    expect(res.json().explanation.zhTranslation).toBe("習慣"); // 文字仍寫入
+    // DB 只一筆解釋。
     const n = await pool.query(
       `SELECT count(*)::int AS n FROM word_explanations`,
     );
     expect(n.rows[0].n).toBe(1);
+
+    // 背景就緒後：失敗段音檔為 null、其他段正常。
+    const word = await findWordByNormalized(pool, "habit");
+    await vi.waitFor(async () => {
+      const stored = await findExplanation(pool, word!.id, articleId);
+      expect(stored?.enExplanationAudioPath).toBeTruthy();
+      expect(stored?.zhTranslationAudioPath).toBeNull();
+    });
     await app.close();
   });
 
@@ -480,6 +491,76 @@ describe("GET /articles/:id/lookups（本篇出現且全站有解釋）", () => 
     const app = buildApp({ config, pool });
     const res = await app.inject({ method: "GET", url: `/articles/${article.id}/lookups` });
     expect(res.json()).toEqual({ words: [] });
+    await app.close();
+  });
+});
+
+const adminConfig: AuthConfig = {
+  cfAccess: null,
+  devAuthBypass: true,
+  devUserEmail: "admin@example.com",
+  adminEmails: ["admin@example.com"],
+};
+
+describe("後台單字 CRUD", () => {
+  it("GET /words 搜尋、GET /articles/:id/explanations、DELETE 解釋/單字", async () => {
+    const a = await createArticle(pool, { title: "Signs of Winter" });
+    const w = await getOrCreateWord(pool, "thick");
+    const e = await createExplanation(pool, {
+      wordId: w.id,
+      articleId: a.id,
+      zhTranslation: "厚",
+    });
+    const app = buildApp({ config: adminConfig, pool });
+
+    const search = await app.inject({ method: "GET", url: "/words?q=thi" });
+    expect(search.statusCode).toBe(200);
+    expect(search.json().words[0]).toMatchObject({
+      normalizedWord: "thick",
+      explanationCount: 1,
+    });
+
+    const byArticle = await app.inject({
+      method: "GET",
+      url: `/articles/${a.id}/explanations`,
+    });
+    expect(byArticle.json().explanations[0].word.normalizedWord).toBe("thick");
+
+    const delExp = await app.inject({
+      method: "DELETE",
+      url: `/explanations/${e.id}`,
+    });
+    expect(delExp.statusCode).toBe(200);
+    expect(await findExplanation(pool, w.id, a.id)).toBeNull();
+
+    const delWord = await app.inject({ method: "DELETE", url: `/words/${w.id}` });
+    expect(delWord.statusCode).toBe(200);
+    expect(await findWordByNormalized(pool, "thick")).toBeNull();
+    await app.close();
+  });
+
+  it("DELETE 不存在的解釋/單字 → 404", async () => {
+    const app = buildApp({ config: adminConfig, pool });
+    expect(
+      (await app.inject({ method: "DELETE", url: "/explanations/999" })).statusCode,
+    ).toBe(404);
+    expect(
+      (await app.inject({ method: "DELETE", url: "/words/999" })).statusCode,
+    ).toBe(404);
+    await app.close();
+  });
+
+  it("reader 角色刪除 → 403", async () => {
+    const a = await createArticle(pool, { title: "A" });
+    const w = await getOrCreateWord(pool, "thick");
+    const e = await createExplanation(pool, { wordId: w.id, articleId: a.id });
+    const app = buildApp({ config, pool }); // reader
+    expect(
+      (await app.inject({ method: "DELETE", url: `/explanations/${e.id}` })).statusCode,
+    ).toBe(403);
+    expect(
+      (await app.inject({ method: "DELETE", url: `/words/${w.id}` })).statusCode,
+    ).toBe(403);
     await app.close();
   });
 });

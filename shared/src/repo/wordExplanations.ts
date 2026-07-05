@@ -214,3 +214,49 @@ export async function listExplanationsMissingAudio(
   );
   return res.rows.map(mapExplanation);
 }
+
+export interface ExplanationWithWord extends WordExplanation {
+  word: { id: number; normalizedWord: string };
+}
+
+/** 某文章產生過的所有解釋（含單字），後台文章內清單用。 */
+export async function listExplanationsByArticle(
+  db: Queryable,
+  articleId: number,
+): Promise<ExplanationWithWord[]> {
+  const res = await db.query(
+    `SELECT we.*, w.normalized_word
+       FROM word_explanations we
+       JOIN words w ON w.id = we.word_id
+      WHERE we.article_id = $1
+      ORDER BY w.normalized_word ASC, we.id ASC`,
+    [articleId],
+  );
+  return res.rows.map((row: any) => ({
+    ...mapExplanation(row),
+    word: { id: toNum(row.word_id), normalizedWord: row.normalized_word },
+  }));
+}
+
+/** 依 id 取單一解釋（刪除前用來得知 word/article 以清音檔）。 */
+export async function getExplanationById(
+  db: Queryable,
+  id: number,
+): Promise<WordExplanation | null> {
+  const res = await db.query(`SELECT * FROM word_explanations WHERE id = $1`, [id]);
+  return res.rows[0] ? mapExplanation(res.rows[0]) : null;
+}
+
+/** 刪除單一解釋，回其 word/article（供音檔清理）。 */
+export async function deleteExplanation(
+  db: Queryable,
+  id: number,
+): Promise<{ wordId: number; articleId: number } | null> {
+  const res = await db.query(
+    `DELETE FROM word_explanations WHERE id = $1 RETURNING word_id, article_id`,
+    [id],
+  );
+  return res.rows[0]
+    ? { wordId: toNum(res.rows[0].word_id), articleId: toNum(res.rows[0].article_id) }
+    : null;
+}

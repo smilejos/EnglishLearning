@@ -11,13 +11,17 @@ import {
   createExplanation,
   getParagraphById,
   getArticleById,
-  withTransaction,
   explainWord,
   WordLookupRequestSchema,
   writeAudioEncoded,
   listWordsMissingEnAudio,
   listExplanationsMissingAudio,
   updateExplanationAudioPaths,
+  searchWords,
+  deleteWord,
+  listExplanationsByArticle,
+  deleteExplanation,
+  removeAudioDir,
   type DbPool,
   type ExplainClient,
   type TtsClient,
@@ -40,6 +44,7 @@ export interface LookupDeps {
 export function registerLookupRoutes(
   app: FastifyInstance,
   pool: DbPool,
+  audioDir?: string,
   deps?: LookupDeps,
   limiter?: LookupLimiter,
 ): void {
@@ -61,6 +66,57 @@ export function registerLookupRoutes(
     return { words: await listGloballyExplainedWordsInArticle(pool, id) };
   });
 
+  // 後台：單字搜尋（含各字解釋數）。
+  app.get("/words", { preHandler: requireAdmin }, async (request) => {
+    const { q, limit } = request.query as { q?: string; limit?: string };
+    const n = Math.min(Math.max(Number(limit) || 50, 1), 200);
+    return { words: await searchWords(pool, q ?? "", n) };
+  });
+
+  // 後台：某文章產生過的解釋（含單字），文章內清單用。
+  app.get(
+    "/articles/:id/explanations",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      if (!Number.isInteger(id) || id <= 0) {
+        return reply.code(400).send({ error: "invalid article id" });
+      }
+      return { explanations: await listExplanationsByArticle(pool, id) };
+    },
+  );
+
+  // 後台：刪除單一解釋（並盡力清該解釋音檔目錄）。
+  app.delete(
+    "/explanations/:id",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      const removed = await deleteExplanation(pool, id);
+      if (!removed) return reply.code(404).send({ error: "explanation not found" });
+      if (audioDir) {
+        await removeAudioDir(
+          audioDir,
+          `words/${removed.wordId}/a${removed.articleId}`,
+        );
+      }
+      return { ok: true };
+    },
+  );
+
+  // 後台：刪除整個單字（cascade 解釋；並盡力清該單字整包音檔）。
+  app.delete(
+    "/words/:id",
+    { preHandler: requireAdmin },
+    async (request, reply) => {
+      const id = Number((request.params as { id: string }).id);
+      const removed = await deleteWord(pool, id);
+      if (removed === null) return reply.code(404).send({ error: "word not found" });
+      if (audioDir) await removeAudioDir(audioDir, `words/${id}`);
+      return { ok: true };
+    },
+  );
+
   // 重新解釋：{ articleId, paragraphId, word } → 快取命中即回；未命中則
   // 呼叫 LLM 產生解釋與例句、各項 TTS（含 word 英文發音若缺），寫入後回傳。
   if (!deps) return;
@@ -80,6 +136,55 @@ export function registerLookupRoutes(
     } catch (err) {
       log.warn({ evt: "tts_failed", rel: relBase, err: (err as Error).message });
       return null;
+    }
+  };
+
+  // 背景補產某解釋的音檔（fire-and-forget）：先寫文字、回應後才跑，不阻塞互動。
+  const synthesizeExplanationAudio = async (
+    log: FastifyBaseLogger,
+    word: { id: number; normalizedWord: string; enAudioPath: string | null },
+    articleId: number,
+    explanationId: number,
+    content: {
+      en_explanation: string;
+      en_example: string;
+      zh_translation: string;
+      zh_explanation: string;
+      zh_example: string;
+    },
+  ): Promise<void> => {
+    try {
+      if (!word.enAudioPath) {
+        const p = await trySynth(log, word.normalizedWord, deps.voiceEn, `words/${word.id}/en`);
+        if (p) await setWordEnAudioPath(pool, word.id, p);
+      }
+      const base = `words/${word.id}/a${articleId}`;
+      const [
+        enExplanationAudioPath,
+        enExampleAudioPath,
+        zhTranslationAudioPath,
+        zhExplanationAudioPath,
+        zhExampleAudioPath,
+      ] = await Promise.all([
+        trySynth(log, content.en_explanation, deps.voiceEn, `${base}/en_explanation`),
+        trySynth(log, content.en_example, deps.voiceEn, `${base}/en_example`),
+        trySynth(log, content.zh_translation, deps.voiceZh, `${base}/zh_translation`),
+        trySynth(log, content.zh_explanation, deps.voiceZh, `${base}/zh_explanation`),
+        trySynth(log, content.zh_example, deps.voiceZh, `${base}/zh_example`),
+      ]);
+      await updateExplanationAudioPaths(pool, explanationId, {
+        enExplanationAudioPath,
+        enExampleAudioPath,
+        zhTranslationAudioPath,
+        zhExplanationAudioPath,
+        zhExampleAudioPath,
+      });
+    } catch (err) {
+      log.error({
+        evt: "lookup_audio_bg_failed",
+        explanationId,
+        err: (err as Error).message,
+      });
     }
   };
 
@@ -134,62 +239,25 @@ export function registerLookupRoutes(
       }
     }
 
-    // 未命中：產生解釋文字。
+    // 未命中：產生解釋文字，先寫入（音檔欄位 null）→ 立即回傳；音檔背景補產。
     const content = await explainWord(
       normalized,
       paragraph.text,
       deps.explainClient,
     );
 
-    // word 英文發音（跨解釋共用，缺則補；失敗則維持 null）。
-    let enAudioPath = word.enAudioPath;
-    if (!enAudioPath) {
-      enAudioPath = await trySynth(
-        request.log,
-        normalized,
-        deps.voiceEn,
-        `words/${word.id}/en`,
-      );
-    }
-
-    // 解釋／例句各項 TTS（英文用 voiceEn、中文用 voiceZh）。
-    const base = `words/${word.id}/a${articleId}`;
-    const [
-      enExplanationAudioPath,
-      enExampleAudioPath,
-      zhTranslationAudioPath,
-      zhExplanationAudioPath,
-      zhExampleAudioPath,
-    ] = await Promise.all([
-      trySynth(request.log, content.en_explanation, deps.voiceEn, `${base}/en_explanation`),
-      trySynth(request.log, content.en_example, deps.voiceEn, `${base}/en_example`),
-      trySynth(request.log, content.zh_translation, deps.voiceZh, `${base}/zh_translation`),
-      trySynth(request.log, content.zh_explanation, deps.voiceZh, `${base}/zh_explanation`),
-      trySynth(request.log, content.zh_example, deps.voiceZh, `${base}/zh_example`),
-    ]);
-
     let explanation;
     try {
-      explanation = await withTransaction(pool, async (tx) => {
-        if (!word.enAudioPath && enAudioPath) {
-          await setWordEnAudioPath(tx, word.id, enAudioPath);
-        }
-        return createExplanation(tx, {
-          wordId: word.id,
-          articleId,
-          paragraphId,
-          enExplanation: content.en_explanation,
-          enExplanationAudioPath,
-          enExample: content.en_example,
-          enExampleAudioPath,
-          zhTranslation: content.zh_translation,
-          zhTranslationAudioPath,
-          zhExplanation: content.zh_explanation,
-          zhExplanationAudioPath,
-          zhExample: content.zh_example,
-          zhExampleAudioPath,
-          headword: content.headword,
-        });
+      explanation = await createExplanation(pool, {
+        wordId: word.id,
+        articleId,
+        paragraphId,
+        enExplanation: content.en_explanation,
+        enExample: content.en_example,
+        zhTranslation: content.zh_translation,
+        zhExplanation: content.zh_explanation,
+        zhExample: content.zh_example,
+        headword: content.headword,
       });
     } catch (err) {
       // 併發首查同 (word, article)：另一請求已先寫入（唯一鍵 23505）。
@@ -198,7 +266,7 @@ export function registerLookupRoutes(
         const existing = await findExplanation(pool, word.id, articleId);
         if (existing) {
           return {
-            word: { ...word, enAudioPath },
+            word,
             explanation: {
               ...existing,
               article: { id: article.id, title: article.title },
@@ -209,6 +277,15 @@ export function registerLookupRoutes(
       throw err;
     }
 
+    // 音檔背景補產，不阻塞回應。
+    void synthesizeExplanationAudio(
+      request.log,
+      word,
+      articleId,
+      explanation.id,
+      content,
+    );
+
     request.log.info({
       evt: "lookup",
       word: normalized,
@@ -217,7 +294,7 @@ export function registerLookupRoutes(
       ms: Date.now() - startedAt,
     });
     return reply.code(201).send({
-      word: { ...word, enAudioPath },
+      word,
       explanation: { ...explanation, article: { id: article.id, title: article.title } },
     });
   });
