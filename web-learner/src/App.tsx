@@ -16,7 +16,9 @@ import {
   HeadphonesIcon,
   TranslateIcon,
   SoundIcon,
+  ShareIcon,
 } from "./icons";
+import { shareLink } from "./lib/share";
 
 /** 播放單一音檔的膠囊按鈕（給單字解釋用），含載入／播放／錯誤狀態。 */
 function AudioChip({
@@ -458,6 +460,27 @@ function Reader({
     Math.round((player.duration || items.length * 12) / 60),
   );
 
+  // 分享目前文章：系統分享面板優先、退回複製連結；短暫提示結果。
+  const [shareTip, setShareTip] = useState<string | null>(null);
+  const shareTipTimer = useRef<number | undefined>(undefined);
+  const onShare = async () => {
+    const outcome = await shareLink(
+      article?.title ?? document.title,
+      window.location.href,
+    );
+    const tip =
+      outcome === "copied"
+        ? "已複製連結"
+        : outcome === "failed"
+          ? "無法分享，請手動複製網址"
+          : null;
+    if (!tip) return;
+    setShareTip(tip);
+    window.clearTimeout(shareTipTimer.current);
+    shareTipTimer.current = window.setTimeout(() => setShareTip(null), 2000);
+  };
+  useEffect(() => () => window.clearTimeout(shareTipTimer.current), []);
+
   const translatable = paragraphs.filter((p) => p.translation);
   const allOpen =
     translatable.length > 0 && translatable.every((p) => showTranslation[p.id]);
@@ -474,7 +497,12 @@ function Reader({
             ← 文章
           </button>
           <div className="backbar__crumb">{article?.title ?? ""}</div>
-          <span style={{ width: 40 }} />
+          <div className="backbar__share">
+            <button className="link-btn" onClick={onShare} title="分享這篇文章">
+              <ShareIcon /> 分享
+            </button>
+            {shareTip && <span className="share-tip">{shareTip}</span>}
+          </div>
         </div>
       </header>
       <main className="wrap wrap--reader">
