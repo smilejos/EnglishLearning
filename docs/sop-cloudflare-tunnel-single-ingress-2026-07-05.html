@@ -120,6 +120,12 @@
       <span>Token 託管（A1）</span>
       <span>不需 port forwarding</span>
     </div>
+    <div class="callout warn"><b>⚠ 2026-07-05 更新（本頁部分內容已過時）：</b>改為<b>單一網域＋路徑分流</b>。
+      兩層子網域（如 <code>admin.e-learning.example.com</code>）超出 Universal SSL 憑證涵蓋範圍，TLS 會握手失敗。
+      現行做法：Public Hostname 只掛一條一層子網域 → <code>http://proxy:80</code>（repo 新增的 nginx 反代），
+      <code>/admin/*</code> → web-admin、API 路徑 → api、其餘 → web-learner；
+      Access Application 以「網域＋Path <code>admin</code>」保護後台。
+      詳見同名 Markdown 版（已更新）。</div>
   </header>
 
   <div class="toolbar">

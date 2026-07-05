@@ -7,6 +7,9 @@ COPY web-admin ./web-admin
 WORKDIR /app/web-admin
 ARG VITE_LEARNER_URL=http://localhost:8082
 ENV VITE_LEARNER_URL=$VITE_LEARNER_URL
+# 單一網域路徑分流：SPA 以 /admin/ 為 base 打包。
+ARG VITE_BASE=/admin/
+ENV VITE_BASE=$VITE_BASE
 RUN npm install --no-audit --no-fund && npm run build
 
 FROM nginx:alpine
