@@ -9,7 +9,7 @@ import {
   type KeyLike,
   type JWTVerifyGetKey,
 } from "jose";
-import { upsertUser, type Queryable, type UserRole } from "@el/shared";
+import { ensureUser, type Queryable, type UserRole } from "@el/shared";
 
 export interface AuthUser {
   id: number;
@@ -26,9 +26,13 @@ declare module "fastify" {
 /** jwtVerify 第二參數可為金鑰或 getKey 函式；測試可注入本地公鑰。 */
 export type KeyInput = KeyLike | Uint8Array | JWTVerifyGetKey;
 
-/** admin 角色判定：email 命中允許清單則為 admin，否則 reader（設計 §9.6）。 */
-export function resolveRole(email: string, adminEmails: string[]): UserRole {
-  return adminEmails.includes(email.toLowerCase()) ? "admin" : "reader";
+/** effective role：email 命中允許清單則 admin（env 說了算），否則回 DB 角色。 */
+export function resolveEffectiveRole(
+  email: string,
+  adminEmails: string[],
+  dbRole: UserRole,
+): UserRole {
+  return adminEmails.includes(email.toLowerCase()) ? "admin" : dbRole;
 }
 
 /** 由 team domain 建立遠端 JWKS 解析器。 */
@@ -118,9 +122,9 @@ export function registerAuth(
       }
     }
 
-    const role = resolveRole(email, config.adminEmails);
-    const user = await upsertUser(opts.pool, { email, role });
-    request.user = { id: user.id, email: user.email, role: user.role };
+    const dbUser = await ensureUser(opts.pool, email);
+    const role = resolveEffectiveRole(email, config.adminEmails, dbUser.role);
+    request.user = { id: dbUser.id, email: dbUser.email, role };
   });
 }
 
@@ -128,5 +132,13 @@ export function registerAuth(
 export const requireAdmin: preHandlerHookHandler = async (request, reply) => {
   if (!request.user || request.user.role !== "admin") {
     return reply.code(403).send({ error: "admin only" });
+  }
+};
+
+/** 路由層守衛：限 admin 或 reviewer（即時單字重新翻譯用）。 */
+export const requireReviewer: preHandlerHookHandler = async (request, reply) => {
+  const role = request.user?.role;
+  if (role !== "admin" && role !== "reviewer") {
+    return reply.code(403).send({ error: "reviewer only" });
   }
 };
