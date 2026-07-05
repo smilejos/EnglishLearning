@@ -108,6 +108,21 @@ services:
       api:
         condition: service_healthy
 
+  # 對外單一入口：Cloudflare Tunnel（outbound，家裡零對外 port）。
+  # ingress 路由與 Access 白名單皆在 Cloudflare Zero Trust 後台設定（Token 託管）。
+  # 僅在指定 profile 時啟用：`docker compose --profile tunnel up -d`。
+  # 詳見 docs/sop-cloudflare-tunnel-single-ingress-2026-07-05.md。
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    profiles: ["tunnel"]
+    command: tunnel run
+    restart: unless-stopped
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      - web-admin
+      - web-learner
+
   # 一次性示範資料匯入（免 LLM，從 fixtures 還原翻譯與音檔）。
   # 僅在指定 profile 時啟用：`docker compose --profile seed run --rm seed`（見 npm run seed）。
   seed:
