@@ -5,6 +5,7 @@ import type {
   WordExplanation,
   WordLookupResponse,
 } from "./types";
+import { normalizeBaseUrl } from "./lib/urls";
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
@@ -77,9 +78,10 @@ export function audioUrl(relPath: string): string {
   return `${BASE}/audio/${relPath}`;
 }
 
-/** 後台網址（build 期注入；未設則本機預設）。 */
-export const ADMIN_URL =
-  (import.meta.env.VITE_ADMIN_URL as string | undefined) ?? "http://localhost:8081";
+/** 後台網址（build 期注入；未設則本機預設）。容忍 .env 只填網域，會補 https://。 */
+export const ADMIN_URL = normalizeBaseUrl(
+  (import.meta.env.VITE_ADMIN_URL as string | undefined) ?? "http://localhost:8081",
+);
 
 /** 某單字的後台管理深連結。 */
 export function adminWordUrl(word: string): string {

@@ -241,8 +241,8 @@ describe("POST /lookups（重新解釋）", () => {
         "zhExplanationAudioPath",
         "zhExampleAudioPath",
       ] as const) {
-        expect((stored as Record<string, unknown>)?.[f]).toBeTruthy();
-        expect(await fileExists((stored as Record<string, string>)[f])).toBe(true);
+        expect(stored?.[f]).toBeTruthy();
+        expect(await fileExists(stored![f]!)).toBe(true);
       }
       const w = await findWordByNormalized(pool, "habit");
       expect(w?.enAudioPath).toBeTruthy();

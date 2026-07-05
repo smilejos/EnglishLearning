@@ -22,6 +22,7 @@
   --radius-lg: 14px;
   --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05), 0 1px 3px rgba(16, 24, 40, 0.07);
   --shadow-md: 0 8px 22px rgba(16, 24, 40, 0.10);
+  --shadow-lg: 0 20px 48px rgba(16, 24, 40, 0.16);
   --font-display: "Spectral", Georgia, serif;
   --font-ui: "Schibsted Grotesk", system-ui, sans-serif;
   --display-weight: 600;
@@ -105,8 +106,8 @@ textarea.field { resize: vertical; line-height: 1.5; }
 /* ---------------- buttons ---------------- */
 .btn {
   display: inline-flex; align-items: center; gap: 8px; border: none;
-  font-family: var(--font-ui); font-weight: 800; font-size: 0.9rem;
-  padding: 10px 18px; border-radius: 999px; white-space: nowrap;
+  font-family: var(--font-ui); font-weight: 800; font-size: 0.92rem;
+  padding: 11px 18px; border-radius: 999px; white-space: nowrap;
   transition: transform .12s ease, background .15s, box-shadow .15s, border-color .15s, color .15s;
 }
 .btn:active { transform: translateY(1px) scale(0.99); }
@@ -117,7 +118,7 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .btn--ghost:hover:not(:disabled) { background: var(--surface); border-color: var(--border-strong); }
 .btn--danger { background: none; color: var(--danger); border: 1px solid color-mix(in srgb, var(--danger) 30%, transparent); }
 .btn--danger:hover:not(:disabled) { background: var(--danger-soft); }
-.btn--sm { padding: 7px 13px; font-size: 0.82rem; }
+.btn--sm { padding: 8px 14px; font-size: 0.84rem; }
 .link-btn {
   display: inline-flex; align-items: center; gap: 7px; background: none; border: none;
   color: var(--text-soft); font-weight: 800; font-size: 0.88rem; padding: 6px 8px; border-radius: 9px;
@@ -228,6 +229,32 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .status-line { padding: 2rem 1rem; text-align: center; color: var(--text-muted); font-weight: 600; }
 .status-line.is-error { color: var(--danger); }
 .error-text { color: var(--danger); font-weight: 600; }
+
+/* ---------------- page head（標題＋徽章＋動作列） ---------------- */
+.page-head { display: flex; align-items: center; gap: 12px; margin: 10px 0 14px; flex-wrap: wrap; }
+.page-head__aside { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+
+/* ---------------- inline form（搜尋、預先新增等） ---------------- */
+.form-inline { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 16px; }
+.form-inline .field { width: auto; }
+.form-inline .field--grow { flex: 1; min-width: 200px; }
+.field--round { border-radius: 999px; padding: 8px 15px; font-size: 0.88rem; }
+
+/* ---------------- role badge ---------------- */
+.badge-role {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em;
+  padding: 3px 10px; border-radius: 999px; border: 1px solid transparent;
+  background: var(--surface-2); color: var(--text-soft); border-color: var(--border);
+}
+.badge-role--admin { background: var(--accent-soft); color: var(--accent-strong); border-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+
+/* ---------------- muted cell text ---------------- */
+.cell-muted { color: var(--text-muted); font-size: 0.86rem; }
+
+/* ---------------- form actions（儲存列） ---------------- */
+.form__actions { display: flex; align-items: center; gap: 12px; }
+.save-note { color: var(--positive); font-weight: 700; }
 
 /* 失敗可視性（Task 3） */
 .para-item__error { color: var(--danger); font-size: .85rem; margin: 6px 0 0; word-break: break-word; }

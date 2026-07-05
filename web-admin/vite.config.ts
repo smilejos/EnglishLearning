@@ -14,6 +14,11 @@ export default defineConfig({
       "/words": apiTarget,
       "/lookups": apiTarget,
       "/audio": apiTarget,
+      "/stats": apiTarget,
+      "/categories": apiTarget,
+      "/tags": apiTarget,
+      "/users": apiTarget,
+      "/me": apiTarget,
     },
   },
 });

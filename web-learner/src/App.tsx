@@ -5,6 +5,7 @@ import { useArticlePlayer } from "./useArticlePlayer";
 import { AudioBar } from "./AudioBar";
 import { uniqSorted } from "./lib/facets";
 import { readyArticles } from "./lib/articles";
+import { coverFor } from "./lib/cover";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { articleIdFromHash, hashForArticle } from "./lib/route";
 import { popupTitle } from "./lib/vocab";
@@ -311,15 +312,17 @@ function WordPopup({
           {wordInfo && (
             <AudioChip iconOnly path={wordInfo.enAudioPath} label="播放單字發音" />
           )}
-          <a
-            className="sheet__admin"
-            href={api.adminWordUrl(word)}
-            target="_blank"
-            rel="noreferrer"
-            title="在後台管理此單字"
-          >
-            ⚙ 後台管理
-          </a>
+          {canReexplain && (
+            <a
+              className="sheet__admin"
+              href={api.adminWordUrl(word)}
+              target="_blank"
+              rel="noreferrer"
+              title="在後台管理此單字"
+            >
+              ⚙ 後台管理
+            </a>
+          )}
           <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
             ✕
           </button>
@@ -384,6 +387,7 @@ function Reader({
       const data = await api.getArticle(articleId);
       setArticle(data.article);
       setParagraphs(data.paragraphs);
+      setError(null);
     } catch (err) {
       setError((err as Error).message);
     }
@@ -479,7 +483,12 @@ function Reader({
         {article && (
           <>
             <article className="reader-hero">
-              <div className="reader-hero__cover">🌱</div>
+              <div
+                className="reader-hero__cover"
+                style={{ background: coverFor(article).gradient }}
+              >
+                {coverFor(article).emoji}
+              </div>
               <div className="reader-hero__body">
                 <h1 className="reader-hero__title">{article.title}</h1>
                 <div className="reader-hero__row">
@@ -581,6 +590,7 @@ function Reader({
 
       <AudioBar
         show={player.active}
+        cover={article ? coverFor(article) : undefined}
         title={article?.title ?? ""}
         index={player.index}
         total={items.length}
@@ -620,6 +630,7 @@ const MATERIALS = [
 
 function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
   const [articles, setArticles] = useState<Article[]>([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const [material, setMaterial] = useState<string>("school");
@@ -635,7 +646,8 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
     api
       .listArticles()
       .then((d) => setArticles(d.articles))
-      .catch((err) => setError((err as Error).message));
+      .catch((err) => setError((err as Error).message))
+      .finally(() => setLoading(false));
   }, []);
 
   const ready = useMemo(() => readyArticles(articles), [articles]);
@@ -848,15 +860,20 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
         </p>
       )}
       {error && <p className="status-line is-error">{error}</p>}
-      {!error && filtered.length === 0 && (
+      {loading && !error && <p className="status-line">載入中…</p>}
+      {!loading && !error && filtered.length === 0 && (
         <p className="status-line">
           {ready.length === 0 ? "尚無可閱讀的文章。" : "沒有符合條件的文章。"}
         </p>
       )}
       <div className="cards">
-        {filtered.map((a) => (
+        {filtered.map((a) => {
+          const cover = coverFor(a);
+          return (
           <button key={a.id} className="card" onClick={() => onOpen(a.id)}>
-            <div className="card__cover">🌱</div>
+            <div className="card__cover" style={{ background: cover.gradient }}>
+              {cover.emoji}
+            </div>
             <div className="card__body">
               <h2 className="card__title">{a.title}</h2>
               <div className="card__meta">
@@ -870,7 +887,8 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
               </div>
             </div>
           </button>
-        ))}
+          );
+        })}
       </div>
     </main>
   );
@@ -917,6 +935,7 @@ export default function App() {
         <ArticleList onOpen={navigate} />
       ) : (
         <Reader
+          key={openId}
           articleId={openId}
           onBack={() => navigate(null)}
           onJump={navigate}
