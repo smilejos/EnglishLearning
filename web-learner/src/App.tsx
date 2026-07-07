@@ -17,6 +17,8 @@ import {
   TranslateIcon,
   SoundIcon,
   ShareIcon,
+  ImageIcon,
+  GearIcon,
 } from "./icons";
 import { shareLink } from "./lib/share";
 
@@ -314,15 +316,26 @@ function WordPopup({
           {wordInfo && (
             <AudioChip iconOnly path={wordInfo.enAudioPath} label="播放單字發音" />
           )}
+          <a
+            className="audio-chip audio-chip--icon"
+            href={`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(title)}`}
+            target="_blank"
+            rel="noreferrer"
+            title="用 Google 圖片搜尋這個單字"
+            aria-label={`用 Google 圖片搜尋 ${title}`}
+          >
+            <ImageIcon />
+          </a>
           {canReexplain && (
             <a
-              className="sheet__admin"
+              className="audio-chip audio-chip--icon"
               href={api.adminWordUrl(word)}
               target="_blank"
               rel="noreferrer"
               title="在後台管理此單字"
+              aria-label={`在後台管理 ${title}`}
             >
-              ⚙ 後台管理
+              <GearIcon />
             </a>
           )}
           <button ref={closeRef} className="sheet__close" onClick={onClose} aria-label="關閉">
