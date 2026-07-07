@@ -9,9 +9,10 @@
 #   - 啟動後等待所有服務變成 healthy 才回報成功
 #
 # 用法：
-#   ./scripts/deploy.sh up        # 建置（如有需要）並啟動所有服務，等待 healthy
-#   ./scripts/deploy.sh deploy    # 重新拉取最新 image / 重建並啟動（部署用）
-#   ./scripts/deploy.sh rebuild   # 強制不使用快取重建後啟動
+#   ./scripts/deploy.sh up [svc…]      # 建置（如有需要）並啟動服務，等待 healthy
+#   ./scripts/deploy.sh deploy         # 重新拉取最新 image / 重建並啟動（部署用）
+#   ./scripts/deploy.sh rebuild [svc…] # 強制不使用快取重建後啟動；可指定服務
+#                                      # 例：./scripts/deploy.sh rebuild api web-learner
 #   ./scripts/deploy.sh down      # 停止並移除容器（保留資料 volume）
 #   ./scripts/deploy.sh restart   # 重啟所有服務
 #   ./scripts/deploy.sh status    # 顯示各服務狀態
@@ -116,8 +117,12 @@ wait_healthy() {
 
 cmd_up() {
   ensure_docker; ensure_env
-  log "建置（如有需要）並啟動所有服務…"
-  "${COMPOSE[@]}" up -d --build
+  if [ $# -gt 0 ]; then
+    log "建置（如有需要）並啟動服務：$*…"
+  else
+    log "建置（如有需要）並啟動所有服務…"
+  fi
+  "${COMPOSE[@]}" up -d --build "$@"
   wait_healthy
   cmd_status
 }
@@ -133,9 +138,13 @@ cmd_deploy() {
 
 cmd_rebuild() {
   ensure_docker; ensure_env
-  log "強制不使用快取重建…"
-  "${COMPOSE[@]}" build --no-cache
-  "${COMPOSE[@]}" up -d
+  if [ $# -gt 0 ]; then
+    log "強制不使用快取重建：$*…"
+  else
+    log "強制不使用快取重建所有服務…"
+  fi
+  "${COMPOSE[@]}" build --no-cache "$@"
+  "${COMPOSE[@]}" up -d "$@"
   wait_healthy
   cmd_status
 }
