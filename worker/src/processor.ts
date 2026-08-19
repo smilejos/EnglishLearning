@@ -21,6 +21,7 @@ import {
   type TranslateClient,
   type TtsClient,
   type AudioFormat,
+  type BackoffOpts,
 } from "@el/shared";
 
 /**
@@ -53,6 +54,8 @@ export interface WorkerDeps {
   maxAttempts: number;
   /** processing 超過此毫秒數視為崩潰並回收（visibility timeout）。 */
   staleMs: number;
+  /** 重試退避參數；未提供時用 DEFAULT_BACKOFF。 */
+  backoff?: BackoffOpts;
 }
 
 /**
@@ -171,7 +174,7 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
         await markJobFailed(tx, job.id, message);
         await setParagraphStatus(tx, job.paragraphId, "failed");
       } else {
-        await requeueJob(tx, job.id, message);
+        await requeueJob(tx, job.id, message, deps.backoff);
         await setParagraphStatus(tx, job.paragraphId, "pending");
       }
       await recomputeArticleStatus(tx, job.articleId);

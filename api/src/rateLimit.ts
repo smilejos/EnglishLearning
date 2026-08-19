@@ -40,6 +40,7 @@ export class LookupLimiter {
     this.rollDay();
     if (this.dayCount >= this.opts.globalPerDay) return "global";
     const nowMs = this.now().getTime();
+    this.sweep(nowMs);
     const w = this.windows.get(userId);
     if (!w || nowMs - w.start >= 60_000) {
       this.windows.set(userId, { start: nowMs, count: 0 });
@@ -49,6 +50,16 @@ export class LookupLimiter {
     cur.count += 1;
     this.dayCount += 1;
     return null;
+  }
+
+  /**
+   * 清掉已過期的分鐘窗，避免 Map 累積一整天才隨跨日一次清空。
+   * O(n) 但 n 是「今日曾查詢過的使用者數」，家用規模可忽略。
+   */
+  private sweep(nowMs: number): void {
+    for (const [id, w] of this.windows) {
+      if (nowMs - w.start >= 60_000) this.windows.delete(id);
+    }
   }
 
   /** 今日已放行的 LLM 查詢數（/stats 用）。 */

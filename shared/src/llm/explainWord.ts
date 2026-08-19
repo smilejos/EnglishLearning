@@ -4,6 +4,7 @@ import { z } from "zod";
 import { stripFences } from "./json";
 import { generateContent, firstText } from "./genai";
 import type { Authorizer } from "./auth";
+import { withRetry } from "./retry";
 
 /** explainWord 的輸出契約（欄位名與設計 §4 word_explanations 文字欄位對應）。 */
 export const WordExplanationContentSchema = z.object({
@@ -40,10 +41,14 @@ Do not add notes or any text outside the JSON object.`;
 
 export interface ExplainOpts {
   retries?: number;
+  /** 重試間隔基數（測試可設 0）；實際等待為 base × 2^attempt。 */
+  baseDelayMs?: number;
 }
 
 /**
  * 為單字（帶段落脈絡）產生中英解釋與例句。
+ * 呼叫與解析都在重試範圍內（同 generateTranslations：先前 complete() 在 try
+ * 之外，網路錯誤不會重試）。配額錯誤由 withRetry 快速失敗。
  * @returns 通過 schema 的 5 欄內容；多次嘗試後仍失敗則拋錯。
  */
 export async function explainWord(
@@ -53,18 +58,19 @@ export async function explainWord(
   opts: ExplainOpts = {},
 ): Promise<WordExplanationContent> {
   const retries = opts.retries ?? 2;
-  let lastErr: unknown;
-  for (let attempt = 0; attempt <= retries; attempt++) {
-    const raw = await client.complete(PROMPT(word, contextParagraph));
-    try {
-      return WordExplanationContentSchema.parse(JSON.parse(stripFences(raw)));
-    } catch (err) {
-      lastErr = err;
-    }
+  try {
+    return await withRetry(
+      async () => {
+        const raw = await client.complete(PROMPT(word, contextParagraph));
+        return WordExplanationContentSchema.parse(JSON.parse(stripFences(raw)));
+      },
+      { retries, baseDelayMs: opts.baseDelayMs ?? 500 },
+    );
+  } catch (err) {
+    throw new Error(
+      `Word explanation failed after ${retries + 1} attempts: ${String(err)}`,
+    );
   }
-  throw new Error(
-    `Word explanation failed after ${retries + 1} attempts: ${String(lastErr)}`,
-  );
 }
 
 export interface GeminiExplainOptions {

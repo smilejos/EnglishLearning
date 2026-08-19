@@ -19,6 +19,8 @@ export default defineConfig({
       "/stats": apiTarget,
       "/categories": apiTarget,
       "/tags": apiTarget,
+      "/tag-kinds": apiTarget,
+      "/explanations": apiTarget,
       "/users": apiTarget,
       "/me": apiTarget,
     },

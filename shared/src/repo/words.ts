@@ -74,22 +74,27 @@ export interface WordSearchRow {
   explanationCount: number;
 }
 
-/** 後台單字管理搜尋：依 normalized_word 子字串比對，附各字解釋數。 */
+/**
+ * 後台單字管理搜尋：依 normalized_word 子字串比對，附各字解釋數。
+ * 查詢字中的 LIKE 萬用字元（% _ \）會被跳脫，讓 `a_b` 就是字面上的 `a_b`。
+ */
 export async function searchWords(
   db: Queryable,
   q: string,
   limit: number,
 ): Promise<WordSearchRow[]> {
+  const term = q.toLowerCase();
+  const escaped = term.replace(/[\\%_]/g, (c) => `\\${c}`);
   const res = await db.query(
     `SELECT w.id, w.normalized_word, w.en_audio_path,
             COUNT(we.id)::int AS explanation_count
        FROM words w
        LEFT JOIN word_explanations we ON we.word_id = w.id
-      WHERE $1 = '' OR w.normalized_word LIKE '%' || $1 || '%'
+      WHERE $1 = '' OR w.normalized_word LIKE '%' || $2 || '%' ESCAPE '\\'
       GROUP BY w.id
       ORDER BY w.normalized_word
-      LIMIT $2`,
-    [q.toLowerCase(), limit],
+      LIMIT $3`,
+    [term, escaped, limit],
   );
   return res.rows.map((r: any) => ({
     id: toNum(r.id),

@@ -92,6 +92,9 @@ export function registerLookupRoutes(
     { preHandler: requireAdmin },
     async (request, reply) => {
       const id = Number((request.params as { id: string }).id);
+      if (!Number.isInteger(id) || id <= 0) {
+        return reply.code(400).send({ error: "invalid explanation id" });
+      }
       const removed = await deleteExplanation(pool, id);
       if (!removed) return reply.code(404).send({ error: "explanation not found" });
       if (audioDir) {
@@ -110,6 +113,9 @@ export function registerLookupRoutes(
     { preHandler: requireAdmin },
     async (request, reply) => {
       const id = Number((request.params as { id: string }).id);
+      if (!Number.isInteger(id) || id <= 0) {
+        return reply.code(400).send({ error: "invalid word id" });
+      }
       const removed = await deleteWord(pool, id);
       if (removed === null) return reply.code(404).send({ error: "word not found" });
       if (audioDir) await removeAudioDir(audioDir, `words/${id}`);

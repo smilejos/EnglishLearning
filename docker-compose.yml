@@ -75,7 +75,11 @@ services:
       <<: *app-env
       DATABASE_URL: postgres://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD:-app}@db:5432/${POSTGRES_DB:-english_learning}
       AUDIO_DIR: /data/audio
-      WORKER_POLL_MS: 3000
+      WORKER_POLL_MS: ${WORKER_POLL_MS:-3000}
+      WORKER_MAX_ATTEMPTS: ${WORKER_MAX_ATTEMPTS:-3}
+      WORKER_STALE_MS: ${WORKER_STALE_MS:-300000}
+      WORKER_BACKOFF_BASE_SEC: ${WORKER_BACKOFF_BASE_SEC:-30}
+      WORKER_BACKOFF_MAX_SEC: ${WORKER_BACKOFF_MAX_SEC:-900}
     volumes:
       - audio:/data/audio
     depends_on:

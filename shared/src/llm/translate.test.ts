@@ -29,7 +29,7 @@ describe("generateTranslations", () => {
       JSON.stringify(["only-one"]),
       JSON.stringify(["一", "二"]),
     ]);
-    const out = await generateTranslations(["A", "B"], c);
+    const out = await generateTranslations(["A", "B"], c, { baseDelayMs: 0 });
     expect(out).toEqual(["一", "二"]);
     expect(c.complete).toHaveBeenCalledTimes(2);
   });
@@ -40,7 +40,30 @@ describe("generateTranslations", () => {
       JSON.stringify(["x"]),
       JSON.stringify(["x"]),
     ]);
-    await expect(generateTranslations(["A", "B"], c)).rejects.toThrow();
+    await expect(
+      generateTranslations(["A", "B"], c, { baseDelayMs: 0 }),
+    ).rejects.toThrow();
+  });
+
+  it("網路／逾時錯誤也會重試（修正前只有格式錯誤才重試）", async () => {
+    const fn = vi.fn();
+    fn.mockRejectedValueOnce(new Error("fetch failed"));
+    fn.mockResolvedValueOnce(JSON.stringify(["你好"]));
+    const out = await generateTranslations(["Hello"], { complete: fn }, {
+      baseDelayMs: 0,
+    });
+    expect(out).toEqual(["你好"]);
+    expect(fn).toHaveBeenCalledTimes(2);
+  });
+
+  it("配額錯誤（429）不重試，立即失敗以免白燒配額", async () => {
+    const fn = vi.fn().mockRejectedValue(
+      Object.assign(new Error("Too Many Requests"), { status: 429 }),
+    );
+    await expect(
+      generateTranslations(["Hello"], { complete: fn }, { baseDelayMs: 0 }),
+    ).rejects.toThrow();
+    expect(fn).toHaveBeenCalledTimes(1);
   });
 
   it("無段落時不呼叫 client、回空陣列", async () => {

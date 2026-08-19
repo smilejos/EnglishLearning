@@ -4,6 +4,7 @@ import { z } from "zod";
 import { stripFences } from "./json";
 import { generateContent, firstText } from "./genai";
 import type { Authorizer } from "./auth";
+import { withRetry } from "./retry";
 
 /** 低階文字完成 client，回傳原始字串（預期為 JSON 陣列）。 */
 export interface TranslateClient {
@@ -22,9 +23,16 @@ const TranslationList = z.array(z.string());
 
 export interface TranslateOpts {
   retries?: number;
+  /** 重試間隔基數（測試可設 0）；實際等待為 base × 2^attempt。 */
+  baseDelayMs?: number;
 }
 
-/** 批次翻譯多段，回傳與輸入同序、同長度的繁中字串陣列。 */
+/**
+ * 批次翻譯多段，回傳與輸入同序、同長度的繁中字串陣列。
+ * 呼叫與解析都在重試範圍內：先前 client.complete() 在 try 之外，
+ * 導致網路／逾時錯誤直接拋出而不重試，只有格式錯誤才會重試。
+ * 配額錯誤（429）由 withRetry 快速失敗，交給上層的 job 退避處理。
+ */
 export async function generateTranslations(
   paragraphs: string[],
   client: TranslateClient,
@@ -32,24 +40,25 @@ export async function generateTranslations(
 ): Promise<string[]> {
   if (paragraphs.length === 0) return [];
   const retries = opts.retries ?? 2;
-  let lastErr: unknown;
-  for (let attempt = 0; attempt <= retries; attempt++) {
-    const raw = await client.complete(PROMPT(paragraphs));
-    try {
-      const parsed = TranslationList.parse(JSON.parse(stripFences(raw)));
-      if (parsed.length !== paragraphs.length) {
-        throw new Error(
-          `expected ${paragraphs.length} translations, got ${parsed.length}`,
-        );
-      }
-      return parsed;
-    } catch (err) {
-      lastErr = err;
-    }
+  try {
+    return await withRetry(
+      async () => {
+        const raw = await client.complete(PROMPT(paragraphs));
+        const parsed = TranslationList.parse(JSON.parse(stripFences(raw)));
+        if (parsed.length !== paragraphs.length) {
+          throw new Error(
+            `expected ${paragraphs.length} translations, got ${parsed.length}`,
+          );
+        }
+        return parsed;
+      },
+      { retries, baseDelayMs: opts.baseDelayMs ?? 500 },
+    );
+  } catch (err) {
+    throw new Error(
+      `Translation failed after ${retries + 1} attempts: ${String(err)}`,
+    );
   }
-  throw new Error(
-    `Translation failed after ${retries + 1} attempts: ${String(lastErr)}`,
-  );
 }
 
 /** 翻譯單一段落，回傳繁中字串（worker 逐段處理用）。 */

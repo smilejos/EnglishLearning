@@ -942,10 +942,14 @@ export default function App() {
   // 角色決定是否能用即時重新翻譯（admin／reviewer）；後端仍會縱深防禦。
   const [canReexplain, setCanReexplain] = useState(false);
   useEffect(() => {
-    void api.getMe().then((r) => {
-      const role = r.user?.role;
-      setCanReexplain(role === "admin" || role === "reviewer");
-    });
+    // 取不到身分（未登入／api 暫時失敗）就維持不可重新解釋，不讓 promise 未捕捉。
+    void api
+      .getMe()
+      .then((r) => {
+        const role = r.user?.role;
+        setCanReexplain(role === "admin" || role === "reviewer");
+      })
+      .catch(() => setCanReexplain(false));
   }, []);
 
   // hash 是唯一事實來源：返回鍵／前進鍵經 hashchange 更新畫面。

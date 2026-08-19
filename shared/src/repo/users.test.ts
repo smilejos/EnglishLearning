@@ -8,10 +8,9 @@ import {
   preprovisionUser,
   getUserByEmail,
 } from "./users";
+import { resolveTestDatabaseUrl } from "../testing";
 
-const DATABASE_URL =
-  process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5433/english_learning_test";
+const DATABASE_URL = resolveTestDatabaseUrl();
 
 let pool: ReturnType<typeof createPool>;
 

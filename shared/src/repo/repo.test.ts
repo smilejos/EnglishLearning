@@ -1,5 +1,6 @@
-// repo 層整合測試：對 compose 的 db 實機驗證（需先 `npm run migrate:up`）。
-// 連線取自 DATABASE_URL，預設為本機 compose db。
+// repo 層整合測試：對實機 PostgreSQL 驗證。
+// 連線由 resolveTestDatabaseUrl() 解析（只認 TEST_DATABASE_URL，預設 5433 測試庫）；
+// 測試庫由 `npm test` 的 pretest 自動起，見 shared/src/testing.ts。
 import { describe, it, expect, beforeAll, afterAll, beforeEach } from "vitest";
 import type { Pool } from "pg";
 import { createPool } from "../db";
@@ -18,9 +19,11 @@ import {
   createJob,
   claimNextJob,
   markJobFailed,
+  requeueJob,
   resetFailedJobsByArticle,
+  resetJobForParagraph,
 } from "./jobs";
-import { getOrCreateWord, setWordEnAudioPath } from "./words";
+import { getOrCreateWord, setWordEnAudioPath, searchWords } from "./words";
 import {
   createExplanation,
   findExplanation,
@@ -43,10 +46,9 @@ import {
 } from "./tags";
 import { listArticlesWithMeta } from "./articles";
 import { upsertUser, getUserByEmail } from "./users";
+import { resolveTestDatabaseUrl } from "../testing";
 
-const DATABASE_URL =
-  process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5433/english_learning_test";
+const DATABASE_URL = resolveTestDatabaseUrl();
 
 let pool: Pool;
 
@@ -241,6 +243,149 @@ describe("claimNextJob", () => {
 
     // 此時 job 剛被更新（新鮮 processing），不會再被回收。
     expect(await claimNextJob(pool, 5 * 60 * 1000)).toBeNull();
+  });
+});
+
+describe("searchWords 子字串比對", () => {
+  beforeEach(async () => {
+    for (const w of ["habit", "rabbit", "a_b", "a%b", "axb"]) {
+      await getOrCreateWord(pool, w);
+    }
+  });
+
+  it("一般子字串比對", async () => {
+    const rows = await searchWords(pool, "bit", 50);
+    expect(rows.map((r) => r.normalizedWord).sort()).toEqual(["habit", "rabbit"]);
+  });
+
+  it("底線視為字面字元，不當作 LIKE 的單字元萬用符", async () => {
+    const rows = await searchWords(pool, "a_b", 50);
+    expect(rows.map((r) => r.normalizedWord)).toEqual(["a_b"]);
+  });
+
+  it("百分比視為字面字元，不當作 LIKE 的萬用符", async () => {
+    const rows = await searchWords(pool, "a%b", 50);
+    expect(rows.map((r) => r.normalizedWord)).toEqual(["a%b"]);
+  });
+
+  it("空字串回全部（不做過濾）", async () => {
+    const rows = await searchWords(pool, "", 50);
+    expect(rows.length).toBe(5);
+  });
+});
+
+describe("requeueJob 重試退避", () => {
+  /** 建一篇單段文章與其 job。 */
+  async function seedJob(title = "A") {
+    const article = await createArticle(pool, { title });
+    const p = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "t",
+    });
+    const job = await createJob(pool, article.id, p.id);
+    return { article, paragraph: p, job };
+  }
+
+  it("退避中的 job 不會被立刻重新認領（原本會在同一輪燒完所有 attempts）", async () => {
+    const { job } = await seedJob();
+    await claimNextJob(pool); // attempts → 1
+    await requeueJob(pool, job.id, "boom", { baseSec: 30, maxSec: 900 });
+
+    // 狀態已回 pending，但 available_at 在未來 → 認領不到。
+    const row = await pool.query("SELECT status FROM jobs WHERE id=$1", [job.id]);
+    expect(row.rows[0].status).toBe("pending");
+    expect(await claimNextJob(pool)).toBeNull();
+  });
+
+  it("退避時間到期後可再認領，attempts 累加不歸零", async () => {
+    const { job } = await seedJob();
+    await claimNextJob(pool);
+    await requeueJob(pool, job.id, "boom");
+
+    // 快轉：把 available_at 拉到過去，模擬等待期滿。
+    await pool.query("UPDATE jobs SET available_at = now() - interval '1 second' WHERE id=$1", [job.id]);
+
+    const claimed = await claimNextJob(pool);
+    expect(claimed?.id).toBe(job.id);
+    expect(claimed?.attempts).toBe(2);
+  });
+
+  it("退避呈指數成長並受 maxSec 上限拘束", async () => {
+    const { job } = await seedJob();
+    const waitSec = async () => {
+      const r = await pool.query(
+        "SELECT EXTRACT(EPOCH FROM (available_at - now()))::float AS s FROM jobs WHERE id=$1",
+        [job.id],
+      );
+      return Number(r.rows[0].s);
+    };
+
+    // attempts=1 → base × 2^0 = 10s
+    await pool.query("UPDATE jobs SET attempts = 1 WHERE id=$1", [job.id]);
+    await requeueJob(pool, job.id, "e", { baseSec: 10, maxSec: 100 });
+    expect(await waitSec()).toBeGreaterThan(8);
+    expect(await waitSec()).toBeLessThanOrEqual(10);
+
+    // attempts=3 → 10 × 2^2 = 40s
+    await pool.query("UPDATE jobs SET attempts = 3 WHERE id=$1", [job.id]);
+    await requeueJob(pool, job.id, "e", { baseSec: 10, maxSec: 100 });
+    expect(await waitSec()).toBeGreaterThan(38);
+    expect(await waitSec()).toBeLessThanOrEqual(40);
+
+    // attempts=10 → 10 × 2^9 遠超上限，取 maxSec=100s
+    await pool.query("UPDATE jobs SET attempts = 10 WHERE id=$1", [job.id]);
+    await requeueJob(pool, job.id, "e", { baseSec: 10, maxSec: 100 });
+    expect(await waitSec()).toBeGreaterThan(98);
+    expect(await waitSec()).toBeLessThanOrEqual(100);
+  });
+
+  it("退避中的 job 不會擋住其他 job（無 head-of-line blocking）", async () => {
+    const first = await seedJob("先失敗的");
+    const second = await seedJob("後面的");
+
+    await claimNextJob(pool); // 認領 first（id 較小）
+    await requeueJob(pool, first.job.id, "boom");
+
+    // 下一次認領應該跳過退避中的 first，直接處理 second。
+    const claimed = await claimNextJob(pool);
+    expect(claimed?.id).toBe(second.job.id);
+  });
+
+  it("手動重試（resetFailedJobsByArticle）清掉退避，立即可認領", async () => {
+    const { article, job } = await seedJob();
+    await claimNextJob(pool);
+    await requeueJob(pool, job.id, "boom", { baseSec: 3600, maxSec: 3600 });
+    await pool.query("UPDATE jobs SET status='failed' WHERE id=$1", [job.id]);
+
+    expect(await resetFailedJobsByArticle(pool, article.id)).toBe(1);
+    const claimed = await claimNextJob(pool);
+    expect(claimed?.id).toBe(job.id);
+    expect(claimed?.attempts).toBe(1); // attempts 已歸零，認領後為 1
+  });
+
+  it("單段重新產生（resetJobForParagraph）清掉退避，立即可認領", async () => {
+    const { article, paragraph, job } = await seedJob();
+    await claimNextJob(pool);
+    await requeueJob(pool, job.id, "boom", { baseSec: 3600, maxSec: 3600 });
+
+    await resetJobForParagraph(pool, article.id, paragraph.id);
+    const claimed = await claimNextJob(pool);
+    expect(claimed?.id).toBe(job.id);
+    expect(claimed?.attempts).toBe(1);
+  });
+
+  it("崩潰回收不受退避影響：stuck processing 仍會被回收", async () => {
+    const { job } = await seedJob();
+    await pool.query(
+      `UPDATE jobs SET status='processing',
+              updated_at = now() - interval '10 minutes',
+              available_at = now() + interval '1 hour'
+        WHERE id=$1`,
+      [job.id],
+    );
+    const reclaimed = await claimNextJob(pool, 5 * 60 * 1000);
+    expect(reclaimed?.id).toBe(job.id);
   });
 });
 

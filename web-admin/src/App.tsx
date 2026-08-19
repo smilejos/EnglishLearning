@@ -3,45 +3,17 @@ import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
 import { normalizeBaseUrl } from "./urls";
 import { uniqSorted } from "./facets";
+import {
+  type MetaDraft,
+  emptyDraft,
+  groupTags,
+  draftToPayload,
+  draftFromArticle,
+} from "./lib/meta";
 
 function StatusBadge({ status }: { status: string }) {
   return <span className={`badge-status is-${status}`}>{status}</span>;
 }
-
-/** 將標籤依 kind 分組。 */
-function groupTags(tags: api.Tag[]): { kind: string; items: api.Tag[] }[] {
-  const m = new Map<string, api.Tag[]>();
-  for (const t of tags) {
-    if (!m.has(t.kind)) m.set(t.kind, []);
-    m.get(t.kind)!.push(t);
-  }
-  return [...m.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([kind, items]) => ({
-      kind,
-      items: items.sort((a, b) => a.label.localeCompare(b.label)),
-    }));
-}
-
-/** 文章 metadata 的編輯草稿（上傳與編輯共用）。 */
-interface MetaDraft {
-  materialType: MaterialType;
-  grade: string;
-  unit: string;
-  level: string;
-  parentCat: string;
-  childCat: string;
-  selTags: Set<number>;
-}
-const emptyDraft = (): MetaDraft => ({
-  materialType: "school",
-  grade: "",
-  unit: "",
-  level: "",
-  parentCat: "",
-  childCat: "",
-  selTags: new Set(),
-});
 
 /** 載入受控詞彙（分類 + 標籤）。ready 於兩者皆抓取完成後為 true（避免初始化競態）。 */
 function useTaxonomy() {
@@ -58,53 +30,6 @@ function useTaxonomy() {
       .finally(() => setReady(true));
   }, []);
   return { categories, tags, ready };
-}
-
-/** 由 draft 導出送出用的 categoryId 與標籤字串。 */
-function draftToPayload(draft: MetaDraft, tags: api.Tag[]) {
-  const categoryId = draft.childCat
-    ? Number(draft.childCat)
-    : draft.parentCat
-      ? Number(draft.parentCat)
-      : undefined;
-  const tagList = tags
-    .filter((t) => draft.selTags.has(t.id))
-    .map((t) => `${t.kind}:${t.label}`);
-  return { categoryId, tagList };
-}
-
-/** 由現有文章 meta 初始化編輯草稿（分類還原成母/子、標籤還原成 id 集合）。 */
-function draftFromArticle(
-  a: Article,
-  categories: api.Category[],
-  tags: api.Tag[],
-): MetaDraft {
-  let parentCat = "";
-  let childCat = "";
-  if (a.category) {
-    const cat = categories.find((c) => c.id === a.category!.id);
-    if (cat) {
-      if (cat.parentId === null) parentCat = String(cat.id);
-      else {
-        parentCat = String(cat.parentId);
-        childCat = String(cat.id);
-      }
-    }
-  }
-  const selTags = new Set<number>();
-  for (const at of a.tags ?? []) {
-    const t = tags.find((x) => x.kind === at.kind && x.label === at.label);
-    if (t) selTags.add(t.id);
-  }
-  return {
-    materialType: a.materialType,
-    grade: a.grade ?? "",
-    unit: a.unit ?? "",
-    level: a.level ?? "",
-    parentCat,
-    childCat,
-    selTags,
-  };
 }
 
 /** 教材別／年級單元難度／分類／標籤的共用編輯欄位。 */
@@ -428,7 +353,7 @@ function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
   );
 }
 
-function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
+export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
   const [article, setArticle] = useState<Article | null>(null);
   const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -452,7 +377,11 @@ function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
   // 本篇單字解釋（可就地刪除）。
   const [artExps, setArtExps] = useState<api.Explanation[]>([]);
   const loadExps = useCallback(async () => {
-    setArtExps((await api.listArticleExplanations(id)).explanations);
+    try {
+      setArtExps((await api.listArticleExplanations(id)).explanations);
+    } catch (err) {
+      setError((err as Error).message);
+    }
   }, [id]);
   useEffect(() => {
     void loadExps();
@@ -460,13 +389,21 @@ function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
 
   async function removeArtExp(expId: number) {
     if (!confirm("刪除這筆單字解釋？")) return;
-    await api.deleteExplanation(expId);
-    await loadExps();
+    try {
+      await api.deleteExplanation(expId);
+      await loadExps();
+    } catch (err) {
+      setError((err as Error).message);
+    }
   }
 
   async function retry() {
-    await api.retryArticle(id);
-    void load();
+    try {
+      await api.retryArticle(id);
+      await load();
+    } catch (err) {
+      setError((err as Error).message);
+    }
   }
 
   async function regen(p: Paragraph, scope: api.RegenScope) {
@@ -479,8 +416,12 @@ function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
       !window.confirm(`第 ${p.idx + 1} 段：${label}？將呼叫對應 API（產生費用）。`)
     )
       return;
-    await api.regenerateParagraph(id, p.id, scope);
-    void load();
+    try {
+      await api.regenerateParagraph(id, p.id, scope);
+      await load();
+    } catch (err) {
+      setError((err as Error).message);
+    }
   }
 
   if (error && !article)
@@ -504,6 +445,8 @@ function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
           </button>
         )}
       </div>
+      {/* 文章已載入後的操作錯誤（刪除解釋／重試／重新產生）也要看得見。 */}
+      {error && <p className="error-text">{error}</p>}
 
       <div className="section-eyebrow" style={{ marginTop: 0 }}>
         段落內文（於「重試」處理，此處不可編輯）
@@ -773,11 +716,15 @@ function ArticleList({
             title="重新產生缺失的單字/解釋語音（會呼叫 TTS API）"
             onClick={async () => {
               if (!window.confirm("補齊缺失音檔？將呼叫語音 API（產生費用）。")) return;
-              const r = await api.backfillAudio();
-              window.alert(
-                `已補 ${r.fixedAudio} 個音檔（掃描 ${r.scannedWords} 個單字、${r.scannedExplanations} 筆解釋）`,
-              );
-              void load();
+              try {
+                const r = await api.backfillAudio();
+                window.alert(
+                  `已補 ${r.fixedAudio} 個音檔（掃描 ${r.scannedWords} 個單字、${r.scannedExplanations} 筆解釋）`,
+                );
+                await load();
+              } catch (err) {
+                setError((err as Error).message);
+              }
             }}
           >
             補缺音檔
@@ -1378,7 +1325,7 @@ type View =
   | "words"
   | "users";
 
-function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
+export function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
   const [q, setQ] = useState(initialQuery);
   const [words, setWords] = useState<api.WordRow[]>([]);
   const [openWord, setOpenWord] = useState<string | null>(null);
@@ -1404,7 +1351,11 @@ function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
         return;
       }
       setOpenWord(word);
-      setExps((await api.getWordExplanations(word)).explanations);
+      try {
+        setExps((await api.getWordExplanations(word)).explanations);
+      } catch (e) {
+        setError((e as Error).message);
+      }
     },
     [openWord],
   );
@@ -1417,15 +1368,23 @@ function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
 
   async function removeExp(id: number, word: string) {
     if (!confirm("刪除這筆解釋？")) return;
-    await api.deleteExplanation(id);
-    setExps((await api.getWordExplanations(word)).explanations);
-    await search(q);
+    try {
+      await api.deleteExplanation(id);
+      setExps((await api.getWordExplanations(word)).explanations);
+      await search(q);
+    } catch (e) {
+      setError((e as Error).message);
+    }
   }
   async function removeWord(row: api.WordRow) {
     if (!confirm(`刪除整個單字「${row.normalizedWord}」及其所有解釋？`)) return;
-    await api.deleteWord(row.id);
-    if (openWord === row.normalizedWord) setOpenWord(null);
-    await search(q);
+    try {
+      await api.deleteWord(row.id);
+      if (openWord === row.normalizedWord) setOpenWord(null);
+      await search(q);
+    } catch (e) {
+      setError((e as Error).message);
+    }
   }
 
   return (

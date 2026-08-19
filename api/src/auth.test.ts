@@ -6,10 +6,9 @@ import type { KeyLike } from "jose";
 import { createPool, getUserByEmail, preprovisionUser } from "@el/shared";
 import { buildApp } from "./app";
 import { resolveEffectiveRole, type AuthConfig } from "./auth";
+import { resolveTestDatabaseUrl } from "@el/shared/testing";
 
-const DATABASE_URL =
-  process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5433/english_learning_test";
+const DATABASE_URL = resolveTestDatabaseUrl();
 
 const AUD = "test-aud-tag";
 let pool: ReturnType<typeof createPool>;

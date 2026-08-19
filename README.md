@@ -51,7 +51,9 @@ npm run test:db:down  # 收掉測試庫
 ```
 
 測試紀律：**絕不呼叫真實 LLM／TTS**（一律 mock）；整合測試只連 5433 測試庫，
-不碰正式資料。完整 e2e 手動清單見 `e2e/README.md`。
+不碰正式資料——連線由 `shared/src/testing.ts` 的 `resolveTestDatabaseUrl()` 解析，
+只認 `TEST_DATABASE_URL`、不讀 `DATABASE_URL`，且資料庫名須以 `_test` 結尾才肯啟動。
+完整 e2e 手動清單見 `e2e/README.md`。
 
 ## 在 Mac Mini 上啟動與驗證（Apple Silicon / arm64）
 
