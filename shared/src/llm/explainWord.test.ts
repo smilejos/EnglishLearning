@@ -41,7 +41,7 @@ describe("explainWord", () => {
     const missing = { ...valid } as Partial<typeof valid>;
     delete missing.en_example;
     const c = client([JSON.stringify(missing), JSON.stringify(valid)]);
-    const out = await explainWord("habit", "ctx", c);
+    const out = await explainWord("habit", "ctx", c, { baseDelayMs: 0 });
     expect(out).toEqual(valid);
     expect(c.complete).toHaveBeenCalledTimes(2);
   });
@@ -54,9 +54,30 @@ describe("explainWord", () => {
       JSON.stringify(missing),
       JSON.stringify(missing),
     ]);
-    await expect(explainWord("habit", "ctx", c)).rejects.toThrow(
-      /failed after 3 attempts/,
+    await expect(
+      explainWord("habit", "ctx", c, { baseDelayMs: 0 }),
+    ).rejects.toThrow(/failed after 3 attempts/);
+  });
+
+  it("網路／逾時錯誤也會重試（修正前只有格式錯誤才重試）", async () => {
+    const fn = vi.fn();
+    fn.mockRejectedValueOnce(new Error("fetch failed"));
+    fn.mockResolvedValueOnce(JSON.stringify(valid));
+    const out = await explainWord("habit", "ctx", { complete: fn }, {
+      baseDelayMs: 0,
+    });
+    expect(out).toEqual(valid);
+    expect(fn).toHaveBeenCalledTimes(2);
+  });
+
+  it("配額錯誤（429）不重試，立即失敗以免白燒配額", async () => {
+    const fn = vi.fn().mockRejectedValue(
+      Object.assign(new Error("Too Many Requests"), { status: 429 }),
     );
+    await expect(
+      explainWord("habit", "ctx", { complete: fn }, { baseDelayMs: 0 }),
+    ).rejects.toThrow();
+    expect(fn).toHaveBeenCalledTimes(1);
   });
 
   it("空字串欄位視為不合法而重試／報錯", async () => {

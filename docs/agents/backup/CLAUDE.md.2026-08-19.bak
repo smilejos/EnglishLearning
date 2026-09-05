@@ -17,9 +17,6 @@ npm workspaces monorepo，Docker Compose 部署：
 
 ## 指令速查（唯一正典，不要用其他變體）
 
-測試連線只認 `TEST_DATABASE_URL`、不讀 `DATABASE_URL`，且資料庫名須以 `_test`
-結尾否則拒絕啟動（`shared/src/testing.ts`），故不必再擔心測試誤打正式庫。
-
 ```bash
 npm test              # 全部測試。pretest 自動起 5433 tmpfs 測試庫，用完 npm run test:db:down
 npm run typecheck     # 全 workspace tsc --noEmit
@@ -29,12 +26,15 @@ npm run seed          # 匯入示範資料（fixtures，免 LLM 費用）
 
 ## 紅線（違反會造成真實損害，絕不例外）
 
-1. **絕不在測試或日常流程呼叫真實 LLM／TTS（Gemini）API**。一律 mock（api/worker 注入假
+1. **跑測試時絕不設定 `DATABASE_URL`**。測試檔的連線是 `DATABASE_URL ?? 5433測試庫`，
+   外部一設就會打正式庫。舊文件（含 `e2e/README.md` 第一節）示範的
+   `DATABASE_URL=...5432... npm test` 是過時的危險寫法，不要模仿。
+2. **絕不在測試或日常流程呼叫真實 LLM／TTS（Gemini）API**。一律 mock（api/worker 注入假
    client；LLM 單元測試 mock `fetch`）。真實 API 測試只在使用者明確要求時手動跑，
    且須以環境變數旗標 opt-in 並註明會產生費用。
-2. **重置資料庫後用 `npm run seed` 還原示範資料**，不要重新 `POST /articles` 讓 worker
+3. **重置資料庫後用 `npm run seed` 還原示範資料**，不要重新 `POST /articles` 讓 worker
    呼叫 Gemini。新的長期示範內容要把翻譯與音檔補進 `fixtures/seed/` 再提交。
-3. 對正式庫（5432）的寫入操作（migrate、DELETE、UPDATE、restore）先向使用者確認。
+4. 對正式庫（5432）的寫入操作（migrate、DELETE、UPDATE、restore）先向使用者確認。
 
 ## Git 流程
 
@@ -61,7 +61,7 @@ npm run seed          # 匯入示範資料（fixtures，免 LLM 費用）
 ## 文件路由
 
 - `README.md` — 架構、服務拓撲、部署、上線檢查清單（最完整、最新）
-- `e2e/README.md` — 人工驗收清單
+- `e2e/README.md` — 人工驗收清單（注意其第一節測試指令已過時，見紅線 1）
 - `docs/design-*.md`、`docs/plan-*.md`、`docs/superpowers/` — 歷史設計與計畫文件，
   是產物不是待辦；除非使用者提及，不要主動依它們行動
 - `docs/schema-reference.sql` — DB schema 快照；`fixtures/seed/` — 示範資料

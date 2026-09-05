@@ -22,10 +22,9 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { buildApp } from "../app";
 import type { AuthConfig } from "../auth";
+import { resolveTestDatabaseUrl } from "@el/shared/testing";
 
-const DATABASE_URL =
-  process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5433/english_learning_test";
+const DATABASE_URL = resolveTestDatabaseUrl();
 
 let pool: ReturnType<typeof createPool>;
 

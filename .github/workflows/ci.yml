@@ -1,0 +1,45 @@
+# 型別檢查 + 全工作區測試。
+#
+# 刻意直接用 repo 既有的 `npm test`：它的 pretest 會以 docker-compose.test.yml
+# 起 5433/tmpfs 測試庫並套 migration，與本機流程完全一致——CI 綠代表本機也綠，
+# 不需要在這裡另外維護一份資料庫設定（那正是最容易和本機漂移的地方）。
+#
+# 測試絕不呼叫真實 Gemini（一律 mock），故不需要任何金鑰。
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: 安裝相依
+        run: npm ci
+
+      - name: 型別檢查
+        run: npm run typecheck
+
+      - name: 測試（pretest 會自動起 5433 測試庫）
+        run: npm test
+
+      - name: 前端 build（確認正式打包不會壞）
+        run: npm run build
+
+      - name: 收掉測試庫
+        if: always()
+        run: npm run test:db:down

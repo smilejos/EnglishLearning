@@ -15,10 +15,9 @@ import {
   type TtsClient,
 } from "@el/shared";
 import { drainQueue, processNextJob, type WorkerDeps } from "./processor";
+import { resolveTestDatabaseUrl } from "@el/shared/testing";
 
-const DATABASE_URL =
-  process.env.DATABASE_URL ??
-  "postgres://app:app@localhost:5433/english_learning_test";
+const DATABASE_URL = resolveTestDatabaseUrl();
 
 let pool: ReturnType<typeof createPool>;
 let audioDir: string;
@@ -59,6 +58,9 @@ function makeDeps(over?: Partial<WorkerDeps>): WorkerDeps {
     audioFormat: "wav",
     maxAttempts: 3,
     staleMs: 5 * 60 * 1000,
+    // 預設關閉退避：多數測試驗的是嘗試次數與狀態轉移，不是重試的排程時機。
+    // 驗退避行為的測試會自行覆寫 backoff（見「重試退避」）。
+    backoff: { baseSec: 0, maxSec: 0 },
     ...over,
   };
 }
@@ -381,6 +383,70 @@ function echoTranslate(failOnBatch = false): TranslateClient {
     }),
   };
 }
+
+describe("重試退避", () => {
+  const failingTts = (): TtsClient => ({
+    synthesize: vi.fn(async () => {
+      throw new Error("tts down");
+    }),
+  });
+
+  /** 建一篇單段、必定失敗的文章。 */
+  async function seedFailing(title: string) {
+    const article = await createArticle(pool, { title });
+    const p = await createParagraph(pool, {
+      articleId: article.id,
+      idx: 0,
+      text: "Boom.",
+    });
+    await createJob(pool, article.id, p.id);
+    return article;
+  }
+
+  it("一輪 drainQueue 只燒掉一次 attempt，不會把重試次數一次用完", async () => {
+    const article = await seedFailing("Backoff");
+    const tts = failingTts();
+    const deps = makeDeps({
+      ttsClient: tts,
+      maxAttempts: 3,
+      backoff: { baseSec: 30, maxSec: 900 },
+    });
+
+    // 修正前：requeue 後同一輪迴圈立刻重撿，attempts 在數秒內衝到 3、段落終態 failed。
+    await drainQueue(deps);
+
+    const job = await jobRow(article.id);
+    expect(job.attempts).toBe(1);
+    expect(job.status).toBe("pending"); // 仍可重試，不是終態
+    expect((await listParagraphsByArticle(pool, article.id))[0].status).toBe(
+      "pending",
+    );
+    // 英文 + 中文各嘗試一次，沒有連續重打。
+    expect(tts.synthesize).toHaveBeenCalledTimes(2);
+  });
+
+  it("退避期滿後的下一輪才會再試一次", async () => {
+    const article = await seedFailing("Backoff2");
+    const deps = makeDeps({
+      ttsClient: failingTts(),
+      maxAttempts: 3,
+      backoff: { baseSec: 30, maxSec: 900 },
+    });
+
+    await drainQueue(deps);
+    // 退避未到期：這一輪撿不到任何 job。
+    expect(await drainQueue(deps)).toBe(0);
+    expect((await jobRow(article.id)).attempts).toBe(1);
+
+    // 快轉到期滿。
+    await pool.query(
+      "UPDATE jobs SET available_at = now() - interval '1 second' WHERE article_id = $1",
+      [article.id],
+    );
+    expect(await drainQueue(deps)).toBe(1);
+    expect((await jobRow(article.id)).attempts).toBe(2);
+  });
+});
 
 describe("文章級批次翻譯", () => {
   it("兩段文章：翻譯只呼叫 LLM 1 次，各段譯文正確落位", async () => {

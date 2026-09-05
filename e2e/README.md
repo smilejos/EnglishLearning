@@ -10,16 +10,22 @@
 
 ## 1. 自動化測試覆蓋（程式正確性把關）
 
-全工作區測試與型別檢查（需先啟動 db 並 `npm run migrate:up`）：
+全工作區測試與型別檢查：
 
 ```bash
-docker compose up -d db
-DATABASE_URL="postgres://app:app@localhost:5432/english_learning" npm run migrate:up
-DATABASE_URL="postgres://app:app@localhost:5432/english_learning" npm test
+npm test              # pretest 會自動起 5433/tmpfs 測試庫並套 migration
 npm run typecheck
+npm run test:db:down  # 用完收掉測試庫
 ```
 
-最後一次結果：**104 passed**（shared 73 / api 28 / worker 3）、typecheck 全 5 workspace 全綠。
+> **不要自己設 `DATABASE_URL` 來跑測試。** 那是 api / worker 連正式庫用的變數，
+> 整合測試會 `TRUNCATE ... CASCADE`。測試連線由 `resolveTestDatabaseUrl()`
+> （`shared/src/testing.ts`）解析：只認 `TEST_DATABASE_URL`、完全不讀
+> `DATABASE_URL`，且資料庫名必須以 `_test` 結尾，否則拒絕啟動。
+> 要指向別的測試庫時用 `TEST_DATABASE_URL=...`。
+
+最後一次結果：**280 passed**（shared 133 / api 78 / worker 16 / web-admin 20 / web-learner 33）、
+typecheck 全 5 workspace 全綠。
 
 關鍵邏輯已由整合測試以 **mock LLM/TTS** 覆蓋：
 

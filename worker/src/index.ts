@@ -14,6 +14,9 @@ import { drainQueue, type WorkerDeps } from "./processor";
 const POLL_MS = Number(process.env.WORKER_POLL_MS ?? 3000);
 const MAX_ATTEMPTS = Number(process.env.WORKER_MAX_ATTEMPTS ?? 3);
 const STALE_MS = Number(process.env.WORKER_STALE_MS ?? 5 * 60 * 1000);
+// 重試退避：第 n 次失敗後等 BASE × 2^(n-1) 秒，上限 MAX 秒。
+const BACKOFF_BASE_SEC = Number(process.env.WORKER_BACKOFF_BASE_SEC ?? 30);
+const BACKOFF_MAX_SEC = Number(process.env.WORKER_BACKOFF_MAX_SEC ?? 900);
 const HEARTBEAT_FILE =
   process.env.WORKER_HEARTBEAT_FILE ?? "/tmp/worker-heartbeat";
 
@@ -37,6 +40,7 @@ const deps: WorkerDeps = {
   audioFormat: config.audioFormat,
   maxAttempts: MAX_ATTEMPTS,
   staleMs: STALE_MS,
+  backoff: { baseSec: BACKOFF_BASE_SEC, maxSec: BACKOFF_MAX_SEC },
 };
 
 async function touchHeartbeat(): Promise<void> {

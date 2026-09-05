@@ -115,6 +115,22 @@ wait_healthy() {
   done
 }
 
+# --- 讓 proxy 重讀 nginx 設定 ---
+# proxy/nginx.conf 是 bind-mount：改了檔案 compose 不認為服務有變動，容器不會被重建，
+# 而 nginx 只在啟動時讀設定——結果就是「設定改了卻靜默不生效」（新增 API 路徑時踩過）。
+# 故每次啟動後一律 reload；設定有語法錯誤時只警告，不讓整個部署失敗（舊設定仍在跑）。
+reload_proxy() {
+  "${COMPOSE[@]}" ps -q proxy 2>/dev/null | grep -q . || return 0
+  if "${COMPOSE[@]}" exec -T proxy nginx -t >/dev/null 2>&1; then
+    "${COMPOSE[@]}" exec -T proxy nginx -s reload >/dev/null 2>&1 \
+      && ok "proxy 已重讀 nginx 設定" \
+      || warn "proxy reload 失敗（沿用舊設定）"
+  else
+    warn "proxy/nginx.conf 語法有誤，跳過 reload（沿用舊設定）："
+    "${COMPOSE[@]}" exec -T proxy nginx -t 2>&1 | tail -3
+  fi
+}
+
 cmd_up() {
   ensure_docker; ensure_env
   if [ $# -gt 0 ]; then
@@ -124,6 +140,7 @@ cmd_up() {
   fi
   "${COMPOSE[@]}" up -d --build "$@"
   wait_healthy
+  reload_proxy
   cmd_status
 }
 
@@ -133,6 +150,7 @@ cmd_deploy() {
   "${COMPOSE[@]}" pull --ignore-buildable-images 2>/dev/null || true
   "${COMPOSE[@]}" up -d --build
   wait_healthy
+  reload_proxy
   cmd_status
 }
 
@@ -146,11 +164,12 @@ cmd_rebuild() {
   "${COMPOSE[@]}" build --no-cache "$@"
   "${COMPOSE[@]}" up -d "$@"
   wait_healthy
+  reload_proxy
   cmd_status
 }
 
 cmd_down()    { ensure_docker; log "停止並移除容器（保留資料）…"; "${COMPOSE[@]}" down; ok "已停止。"; }
-cmd_restart() { ensure_docker; log "重啟所有服務…"; "${COMPOSE[@]}" restart; wait_healthy; cmd_status; }
+cmd_restart() { ensure_docker; log "重啟所有服務…"; "${COMPOSE[@]}" restart; wait_healthy; reload_proxy; cmd_status; }
 cmd_status()  { ensure_docker; "${COMPOSE[@]}" ps; }
 cmd_ps()      { cmd_status; }
 cmd_health()  { ensure_docker; wait_healthy; }
