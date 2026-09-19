@@ -7,12 +7,14 @@
 #   - 自動從 .env.example 建立 .env（若不存在）
 #   - 確認 Docker daemon 有啟動
 #   - 啟動後等待所有服務變成 healthy 才回報成功
+#   - 預設啟用 images profile，完整部署包含 image-worker（需設定模型憑證）
 #
 # 用法：
 #   ./scripts/deploy.sh up [svc…]      # 建置（如有需要）並啟動服務，等待 healthy
 #   ./scripts/deploy.sh deploy         # 重新拉取最新 image / 重建並啟動（部署用）
 #   ./scripts/deploy.sh rebuild [svc…] # 強制不使用快取重建後啟動；可指定服務
 #                                      # 例：./scripts/deploy.sh rebuild api web-learner
+#                                      # 只重建圖片服務：./scripts/deploy.sh rebuild image-worker
 #   ./scripts/deploy.sh down      # 停止並移除容器（保留資料 volume）
 #   ./scripts/deploy.sh restart   # 重啟所有服務
 #   ./scripts/deploy.sh status    # 顯示各服務狀態
@@ -47,6 +49,10 @@ elif command -v docker-compose >/dev/null 2>&1; then
 else
   die "找不到 docker compose，請先安裝 Docker Desktop / Docker Engine。"
 fi
+
+# 圖片服務納入腳本的完整部署與生命週期操作；指定服務時仍只操作該服務。
+# 不啟用 seed / tunnel 等其他選用 profiles。
+COMPOSE+=(--profile images)
 
 # --- 前置檢查：Docker daemon 是否在線 ---
 ensure_docker() {

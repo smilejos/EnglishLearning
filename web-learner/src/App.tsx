@@ -6,6 +6,7 @@ import { AudioBar } from "./AudioBar";
 import { uniqSorted } from "./lib/facets";
 import { readyArticles } from "./lib/articles";
 import { coverFor } from "./lib/cover";
+import { CoverImage, Illustration } from "./Illustration";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { articleIdFromHash, hashForArticle } from "./lib/route";
 import { popupTitle } from "./lib/vocab";
@@ -528,7 +529,7 @@ function Reader({
                 className="reader-hero__cover"
                 style={{ background: coverFor(article).gradient }}
               >
-                {coverFor(article).emoji}
+                <CoverImage image={article.cover} fallback={coverFor(article).emoji} />
               </div>
               <div className="reader-hero__body">
                 <h1 className="reader-hero__title">{article.title}</h1>
@@ -567,7 +568,6 @@ function Reader({
                 return (
                   <div
                     key={p.id}
-                    id={`para-${p.id}`}
                     className={"para" + (isPlaying ? " is-playing" : "")}
                   >
                     <button
@@ -580,7 +580,8 @@ function Reader({
                       {isPlaying ? <PauseIcon /> : <PlayIcon />}
                     </button>
                     <div>
-                      <p className="para__text">
+                      <Illustration image={p.illustration} onWord={word => setPopup({word, paragraphId:p.id})} />
+                      <p id={`para-${p.id}`} className="para__text">
                         <ClickableText
                           text={p.text}
                           known={known}
@@ -632,6 +633,7 @@ function Reader({
       <AudioBar
         show={player.active}
         cover={article ? coverFor(article) : undefined}
+        image={article?.cover}
         title={article?.title ?? ""}
         index={player.index}
         total={items.length}
@@ -913,7 +915,7 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
           return (
           <button key={a.id} className="card" onClick={() => onOpen(a.id)}>
             <div className="card__cover" style={{ background: cover.gradient }}>
-              {cover.emoji}
+              <CoverImage image={a.cover} variant="card" fallback={cover.emoji} />
             </div>
             <div className="card__body">
               <h2 className="card__title">{a.title}</h2>

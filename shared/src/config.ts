@@ -29,6 +29,7 @@ export interface LookupLimitsConfig {
 }
 
 export interface Config {
+  images: { directory: string; modelsFile?: string; pricingFile: string };
   databaseUrl: string;
   audioDir: string;
   gemini: GeminiConfig;
@@ -140,6 +141,11 @@ export function loadConfig(env: Env = process.env): Config {
   }
 
   return {
+    images: {
+      directory: trimmed(env, "IMAGE_DIR") ?? "/data/images",
+      modelsFile: trimmed(env, "IMAGE_MODELS_FILE"),
+      pricingFile: trimmed(env, "IMAGE_PRICING_FILE") ?? "/app/config/image-pricing.json",
+    },
     databaseUrl: databaseUrl!,
     audioDir: trimmed(env, "AUDIO_DIR") ?? DEFAULTS.audioDir,
     gemini: {

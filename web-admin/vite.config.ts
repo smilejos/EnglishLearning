@@ -12,6 +12,8 @@ export default defineConfig({
     host: true,
     port: 5173,
     proxy: {
+      "/images": apiTarget,
+      "/image-models": apiTarget,
       "/articles": apiTarget,
       "/words": apiTarget,
       "/lookups": apiTarget,

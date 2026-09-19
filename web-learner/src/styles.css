@@ -181,30 +181,42 @@ a { color: inherit; text-decoration: none; }
 .tagchip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 
 /* ---------------- article cards ---------------- */
-.card__meta { display: flex; flex-wrap: wrap; gap: 5px; }
+.card__meta { display: flex; flex-wrap: wrap; gap: 5px; max-width: 100%; }
+.card__meta .chip { overflow-wrap: anywhere; }
 .chip {
   font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 999px;
   background: var(--surface-2); color: var(--text-soft); border: 1px solid var(--border);
 }
 .chip--cat { background: var(--accent-soft); color: var(--accent-strong); border-color: color-mix(in srgb, var(--accent) 25%, transparent); }
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 @media (max-width: 620px) { .cards { grid-template-columns: 1fr; } }
 .card {
+  appearance: none; padding: 0; min-width: 0; width: 100%; font: inherit;
   text-align: left; background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm);
   display: flex; flex-direction: column; cursor: pointer;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--border-strong); }
+.card:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 .card__cover {
-  height: 92px; position: relative; background: var(--cover-grad);
-  display: grid; place-items: center; font-size: 2rem;
+  width: 100%; aspect-ratio: 16 / 9; flex: none; min-width: 0;
+  position: relative; overflow: hidden; background: var(--cover-grad);
+  display: grid; place-items: center; font-size: 3rem;
+  border-bottom: 1px solid var(--border);
 }
-.card__body { padding: 14px 16px 16px; display: flex; flex-direction: column; align-items: flex-start; gap: 9px; flex: 1; }
+.card__cover .ai-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card__body {
+  position: relative; background: var(--surface); width: 100%; min-width: 0;
+  padding: 18px 18px 20px; display: flex; flex-direction: column;
+  align-items: flex-start; gap: 12px; flex: 1 0 auto;
+}
 .card__title {
   font-family: var(--font-display); font-weight: var(--display-weight);
-  font-size: 1.2rem; letter-spacing: var(--display-tracking); margin: 0; line-height: 1.14; color: var(--text);
+  font-size: 1.2rem; letter-spacing: var(--display-tracking); margin: 0; line-height: 1.35; color: var(--text);
+  overflow-wrap: anywhere;
 }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
 
 /* ---------------- reader ---------------- */
 .backbar {
@@ -229,17 +241,21 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border); box-shadow: var(--shadow-md); background: var(--surface);
 }
 .reader-hero__cover {
-  height: 150px; background: var(--cover-grad);
+  width: 100%; aspect-ratio: 16 / 9; position: relative; overflow: hidden;
+  background: var(--cover-grad); border-bottom: 1px solid var(--border);
   display: grid; place-items: center; font-size: 3.4rem;
 }
-.reader-hero__body { padding: 20px 24px 22px; }
+.reader-hero__cover .ai-cover {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.reader-hero__body { position: relative; background: var(--surface); padding: 20px 24px 22px; }
 .reader-hero__title {
   font-family: var(--font-display); font-weight: var(--display-weight);
   font-size: clamp(1.7rem, 4vw, 2.3rem); letter-spacing: var(--display-tracking);
-  margin: 0 0 14px; line-height: 1.08;
+  margin: 0 0 14px; line-height: 1.2; overflow-wrap: anywhere;
 }
 .reader-hero__row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.reader-hero__meta { display: flex; align-items: center; gap: 12px; color: var(--text-muted); font-size: 0.86rem; font-weight: 700; }
+.reader-hero__meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; color: var(--text-soft); font-size: 0.86rem; font-weight: 700; }
 .reader-hero__meta .dot { width: 3px; height: 3px; border-radius: 999px; background: currentColor; opacity: .5; }
 
 /* ---------------- paragraphs ---------------- */
@@ -425,3 +441,9 @@ button.vocab {
 
 /* 已查單字標示（Task 16）。特異性須高過 button.vocab 的 border:0，否則底線被蓋掉。 */
 .vocab.vocab--known { border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); }
+.ai-cover { width: 100%; height: 100%; object-fit: cover; display: block; }
+.paragraph-illustration { margin: 0 0 18px; max-width: 720px; }
+.paragraph-illustration__image { position: relative; }
+.paragraph-illustration img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.illustration-word { position: absolute; transform: translate(-50%,-50%); color: #143d33; background: white; border: 2px solid #287469; border-radius: 8px; padding: 4px 8px; font-size: clamp(12px,2vw,18px); font-weight: 700; cursor: pointer; }
+.illustration-word:focus-visible { outline: 3px solid #d88600; outline-offset: 2px; }

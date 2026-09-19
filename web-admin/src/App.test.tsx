@@ -8,6 +8,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, waitFor, cleanup } from "@testing-library/react";
 import { ArticleView, WordManager } from "./App";
 import * as api from "./api";
+vi.mock("./Illustrations", () => ({ Illustrations: () => null }));
 
 vi.mock("./api", () => ({
   getArticle: vi.fn(),

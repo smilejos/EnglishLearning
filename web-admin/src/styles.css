@@ -304,3 +304,51 @@ textarea.field { resize: vertical; line-height: 1.5; }
 /* 失敗可視性（Task 3） */
 .para-item__error { color: var(--danger); font-size: .85rem; margin: 6px 0 0; word-break: break-word; }
 .stat--alert { color: var(--danger); font-weight: 700; }
+/* Article visual revisions */
+.visual-panel { margin: 24px 0; min-width: 0; }
+.visual-panel p { font-size: 0.9rem; line-height: 1.7; color: var(--text-soft); }
+.visual-panel .error-text { color: var(--danger); }
+.visual-intro { margin: 10px 0 24px; }
+.visual-setup { display: grid; grid-template-columns: minmax(0, 1fr) minmax(150px, 190px); gap: 16px; align-items: end; }
+.visual-setup > .btn { grid-column: 1 / -1; justify-self: start; }
+.visual-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 14px 0; }
+.visual-panel label { display: block; min-width: 0; margin: 0; font-size: 0.84rem; font-weight: 700; color: var(--text-soft); }
+.visual-panel label > .field { display: block; margin-top: 8px; }
+.visual-panel .visual-select { width: 100%; min-width: 0; padding-top: 10px; padding-bottom: 10px; text-overflow: ellipsis; }
+.visual-panel .field:disabled, .visual-panel fieldset:disabled .field { background-color: var(--surface-2); color: var(--text-muted); }
+.visual-panel .visual-note { display: block; color: var(--text-muted); font-size: 0.78rem; line-height: 1.7; margin: 12px 0; }
+.visual-panel textarea { min-height: 80px; }
+.visual-panel > label { margin-top: 24px; }
+.visual-quote { padding: 20px; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); margin: 20px 0; }
+.visual-quote .section-eyebrow { margin: 0 0 8px; }
+.visual-quote > p { margin: 8px 0 16px; }
+.visual-breakdown, .visual-totals { display: grid; gap: 16px; margin: 20px 0; }
+.visual-breakdown { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.visual-totals { grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--border); padding-top: 20px; align-items: center; }
+.visual-panel dt { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 6px; }
+.visual-panel dd { margin: 0; font-size: 1rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text); }
+.visual-total { background: var(--accent-soft); border-radius: var(--radius-sm); padding: 12px; }
+.visual-total dt { color: var(--accent-strong); }
+.visual-total dd { color: var(--accent-strong); font-size: 1.3rem; }
+.visual-slot { margin-top: 24px; border-top: 1px solid var(--border); padding-top: 16px; }
+.visual-slot h4 { margin: 0 0 12px; }
+.visual-candidate { margin: 16px 0; padding: 16px; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); min-width: 0; }
+.visual-candidate fieldset { display: grid; gap: 16px; border: 0; padding: 0; margin: 20px 0 0; min-width: 0; }
+.visual-candidate details { margin: 14px 0; color: var(--text-muted); font-size: 0.8rem; }
+.visual-candidate summary { cursor: pointer; }
+.visual-candidate pre { overflow-wrap: anywhere; line-height: 1.6; }
+.visual-panel .visual-coordinate { width: 82px; }
+.visual-panel input[type=checkbox], .visual-panel input[type=radio] { accent-color: var(--accent); width: 16px; height: 16px; vertical-align: middle; }
+.visual-panel .visual-check { display: flex; align-items: flex-start; gap: 8px; line-height: 1.6; }
+.visual-check input { flex-shrink: 0; }
+.visual-image { position: relative; max-width: 720px; cursor: crosshair; }
+.visual-image img { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); }
+.visual-image span { position: absolute; transform: translate(-50%,-50%); background: var(--surface); color: var(--accent-strong); border: 2px solid var(--accent); border-radius: var(--radius-sm); padding: 2px 6px; pointer-events: none; }
+@media (max-width: 600px) {
+  .visual-setup { grid-template-columns: minmax(0, 1fr); }
+  .visual-breakdown { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .visual-totals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .visual-total { grid-column: 1 / -1; }
+  .visual-panel .btn { white-space: normal; justify-content: center; }
+  .visual-quote { padding: 16px; }
+}

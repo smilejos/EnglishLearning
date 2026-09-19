@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "planner": {
+    "apiModel": "gemini-2.5-flash",
+    "inputUsdPerMillion": 0.3,
+    "outputUsdPerMillion": 2.5,
+    "maxOutputTokens": 16384,
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+    "lastVerifiedAt": "2026-09-06T00:00:00.000Z"
+  },
+  "profiles": [
+    {
+      "id": "openai-image-2-v1",
+      "version": 1,
+      "provider": "openai",
+      "adapter": "openai-images-v1",
+      "currency": "USD",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+      "effectiveAt": "2026-09-06T00:00:00.000Z",
+      "lastVerifiedAt": "2026-09-06T00:00:00.000Z",
+      "billingModel": "token-based",
+      "rates": {
+        "textInput": 5,
+        "cachedTextInput": 1.25,
+        "imageInput": 8,
+        "cachedImageInput": 2,
+        "textOutput": 0,
+        "imageOutput": 30
+      },
+      "outputs": [
+        {
+          "options": {
+            "size": "1536x1024",
+            "quality": "medium"
+          },
+          "outputTokens": 8192,
+          "imageUsdMicros": 245760
+        }
+      ]
+    },
+    {
+      "id": "gemini-lite-image-v1",
+      "version": 1,
+      "provider": "google-gemini",
+      "adapter": "gemini-generate-content-v1beta",
+      "currency": "USD",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+      "effectiveAt": "2026-09-06T00:00:00.000Z",
+      "lastVerifiedAt": "2026-09-06T00:00:00.000Z",
+      "billingModel": "token-based",
+      "rates": {
+        "textInput": 0.25,
+        "cachedTextInput": 0.25,
+        "imageInput": 0.25,
+        "cachedImageInput": 0.25,
+        "textOutput": 1.5,
+        "imageOutput": 30
+      },
+      "outputs": [
+        {
+          "options": {
+            "aspectRatio": "16:9",
+            "imageSize": "1K"
+          },
+          "outputTokens": 1120,
+          "imageUsdMicros": 33600
+        },
+        {
+          "options": {
+            "aspectRatio": "4:3",
+            "imageSize": "1K"
+          },
+          "outputTokens": 1120,
+          "imageUsdMicros": 33600
+        }
+      ]
+    }
+  ]
+}

@@ -37,8 +37,8 @@ function covers(config: string, seg: string): boolean {
   );
 }
 
-const ADMIN_PATHS = apiPathsUsedBy(read("web-admin/src/api.ts"));
-const LEARNER_PATHS = apiPathsUsedBy(read("web-learner/src/api.ts"));
+const ADMIN_PATHS = [...apiPathsUsedBy(read("web-admin/src/api.ts")), "images", "image-models"];
+const LEARNER_PATHS = [...apiPathsUsedBy(read("web-learner/src/api.ts")), "images"];
 
 describe("api client 用到的路徑抽取", () => {
   it("認得 req() 的字串與樣板字串，並去掉 query string", () => {

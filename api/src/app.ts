@@ -10,8 +10,10 @@ import { registerLookupRoutes, type LookupDeps } from "./routes/lookups";
 import { registerStatsRoutes } from "./routes/stats";
 import { registerUserRoutes } from "./routes/users";
 import type { LookupLimiter } from "./rateLimit";
+import { registerIllustrationRoutes, type IllustrationDeps } from "./routes/illustrations";
 
 export interface BuildAppOpts {
+  illustrations?: IllustrationDeps;
   config: AuthConfig;
   pool: DbPool;
   /** 靜態音檔來源目錄（AUDIO_DIR）；提供時掛載 /audio/*。 */
@@ -52,6 +54,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
 
   // 業務路由。
   registerArticleRoutes(app, opts.pool, opts.audioDir);
+  if (opts.illustrations) registerIllustrationRoutes(app, opts.pool, opts.illustrations);
   registerTaxonomyRoutes(app, opts.pool);
   registerLookupRoutes(app, opts.pool, opts.audioDir, opts.lookupDeps, opts.lookupLimiter);
   registerStatsRoutes(app, opts.pool, opts.lookupLimiter);

@@ -1,6 +1,7 @@
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
+import { Illustrations } from "./Illustrations";
 import { normalizeBaseUrl } from "./urls";
 import { uniqSorted } from "./facets";
 import {
@@ -447,6 +448,8 @@ export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) 
       </div>
       {/* 文章已載入後的操作錯誤（刪除解釋／重試／重新產生）也要看得見。 */}
       {error && <p className="error-text">{error}</p>}
+
+      {article.status === "done" && <Illustrations key={id} articleId={id} />}
 
       <div className="section-eyebrow" style={{ marginTop: 0 }}>
         段落內文（於「重試」處理，此處不可編輯）

@@ -10,7 +10,7 @@ import type {
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
-async function req<T>(path: string, init?: RequestInit): Promise<T> {
+export async function req<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {
     headers: { "Content-Type": "application/json" },
     ...init,

@@ -1,5 +1,7 @@
 // 底部貼齊播放列（沿用 article2speech）：重複、上/下一段、播放/暫停、進度拖曳、速度。
 import { useRef } from "react";
+import { CoverImage } from "./Illustration";
+import type { PublishedImage } from "./types";
 import { SPEEDS } from "./useArticlePlayer";
 import {
   PlayIcon,
@@ -16,6 +18,7 @@ function fmt(sec: number): string {
 }
 
 export interface AudioBarProps {
+  image?: PublishedImage | null;
   show: boolean;
   /** 封面 emoji＋漸層（與文章卡片一致）；未提供時用預設。 */
   cover?: { emoji: string; gradient: string };
@@ -56,7 +59,7 @@ export function AudioBar(props: AudioBarProps) {
             className="ab-now__art"
             style={props.cover ? { background: props.cover.gradient } : undefined}
           >
-            {props.cover?.emoji ?? "🌱"}
+            <CoverImage image={props.image} variant="player" fallback={props.cover?.emoji ?? "🌱"} />
           </div>
           <div className="ab-now__txt">
             <div className="ab-now__t">{title}</div>

@@ -8,6 +8,7 @@ export interface ArticleTag {
 }
 
 export interface Article {
+  cover?: PublishedImage | null;
   id: number;
   title: string;
   materialType: MaterialType;
@@ -22,6 +23,7 @@ export interface Article {
 }
 
 export interface Paragraph {
+  illustration?: PublishedImage | null;
   id: number;
   articleId: number;
   idx: number;
@@ -37,6 +39,12 @@ export interface Word {
   normalizedWord: string;
   enAudioPath: string | null;
   createdAt: string;
+}
+
+export interface PublishedImage {
+  id: number; url: string; thumbnailUrl: string; playerUrl: string; altText: string;
+  width: number; height: number; focalX: number; focalY: number; revision: number;
+  teachingTargets: Array<{word: string; normalizedWord: string; reason: string; visualObject: string; anchor: {x: number; y: number}; confidence: number; placementSource: "manual"}>;
 }
 
 export interface ExplanationSource {
