@@ -8,7 +8,9 @@ import { readyArticles } from "./lib/articles";
 import { coverFor } from "./lib/cover";
 import { CoverImage, Illustration } from "./Illustration";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
-import { articleIdFromHash, hashForArticle } from "./lib/route";
+import { articleIdFromHash, hashForArticle, readArticleTarget } from "./lib/route";
+import { VocabularySaveButton } from "./VocabularySaveButton";
+import { VocabularyReview } from "./VocabularyReview";
 import { popupTitle } from "./lib/vocab";
 import { explanationAudioReady } from "./lib/explanation";
 import {
@@ -99,10 +101,12 @@ function ClickableText({
   text,
   known,
   onWordClick,
+  highlightWord,
 }: {
   text: string;
   known: Set<string>;
   onWordClick: (word: string) => void;
+  highlightWord?: string;
 }) {
   const tokens = text.split(/(\s+)/);
   return (
@@ -115,7 +119,8 @@ function ClickableText({
           <button
             type="button"
             key={i}
-            className={"vocab" + (isKnown ? " vocab--known" : "")}
+            className={"vocab" + (isKnown ? " vocab--known" : "") +
+              (highlightWord?.toLowerCase() === clean.toLowerCase() ? " vocab--target" : "")}
             onClick={() => onWordClick(clean)}
           >
             {tok}
@@ -343,6 +348,7 @@ function WordPopup({
             ✕
           </button>
         </div>
+        <VocabularySaveButton key={`${word}:${paragraphId}`} word={word} articleId={articleId} paragraphId={paragraphId} />
         {explanations.some((e) => e.articleId === articleId) ? (
           <p className="sheet__note">✓ 本篇已解釋</p>
         ) : canReexplain ? (
@@ -382,11 +388,17 @@ function Reader({
   onBack,
   onJump,
   canReexplain,
+  targetParagraphId,
+  targetWord,
+  fromReview = false,
 }: {
   articleId: number;
   onBack: () => void;
   onJump: (articleId: number) => void;
   canReexplain: boolean;
+  targetParagraphId?: number | null;
+  targetWord?: string;
+  fromReview?: boolean;
 }) {
   const [article, setArticle] = useState<Article | null>(null);
   const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
@@ -424,6 +436,11 @@ function Reader({
   useEffect(() => {
     void load();
   }, [load]);
+
+  useEffect(() => {
+    if (targetParagraphId == null || paragraphs.length === 0) return;
+    document.getElementById(`para-${targetParagraphId}`)?.scrollIntoView?.({ behavior: "smooth", block: "center" });
+  }, [paragraphs, targetParagraphId]);
 
   // 以各段英文朗讀組成連續播放時間軸（容忍缺音檔的段落）。
   const items = useMemo(
@@ -508,7 +525,7 @@ function Reader({
       <header className="backbar">
         <div className="backbar__in">
           <button className="link-btn" onClick={onBack}>
-            ← 文章
+            {fromReview ? "← 單字複習" : "← 文章"}
           </button>
           <div className="backbar__crumb">{article?.title ?? ""}</div>
           <div className="backbar__share">
@@ -585,6 +602,7 @@ function Reader({
                         <ClickableText
                           text={p.text}
                           known={known}
+                          highlightWord={p.id === targetParagraphId ? targetWord : undefined}
                           onWordClick={(word) =>
                             setPopup({ word, paragraphId: p.id })
                           }
@@ -938,9 +956,10 @@ function ArticleList({ onOpen }: { onOpen: (id: number) => void }) {
 }
 
 export default function App() {
-  const [openId, setOpenId] = useState<number | null>(() =>
-    articleIdFromHash(window.location.hash),
-  );
+  const [hash, setHash] = useState(() => window.location.hash);
+  const openId = articleIdFromHash(hash);
+  const reviewOpen = hash === "#/review";
+  const target = readArticleTarget(hash);
   // 角色決定是否能用即時重新翻譯（admin／reviewer）；後端仍會縱深防禦。
   const [canReexplain, setCanReexplain] = useState(false);
   useEffect(() => {
@@ -956,13 +975,12 @@ export default function App() {
 
   // hash 是唯一事實來源：返回鍵／前進鍵經 hashchange 更新畫面。
   useEffect(() => {
-    const onHash = () => setOpenId(articleIdFromHash(window.location.hash));
+    const onHash = () => setHash(window.location.hash);
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
   const navigate = (id: number | null) => {
-    if (articleIdFromHash(window.location.hash) === id) return;
     window.location.hash = hashForArticle(id);
   };
 
@@ -970,23 +988,31 @@ export default function App() {
     <div className="app-root">
       <header className="topbar">
         <div className="topbar__in">
-          <div className="brand" onClick={() => navigate(null)}>
+          <button className="brand brand--button" onClick={() => navigate(null)} aria-label="回課文列表">
             <span className="brand__mark">
               <HeadphonesIcon size={20} />
             </span>
             <span className="brand__name">英文學習平台</span>
-          </div>
+          </button>
+          <a className="btn btn--sm" href="#/review" aria-current={reviewOpen ? "page" : undefined}>單字複習</a>
         </div>
       </header>
-      {openId === null ? (
+      {reviewOpen ? (
+        <VocabularyReview onJump={(id, paragraphId, word) => {
+          window.location.hash = hashForArticle(id, { paragraphId, word, fromReview: true });
+        }} />
+      ) : openId === null ? (
         <ArticleList onOpen={navigate} />
       ) : (
         <Reader
           key={openId}
           articleId={openId}
-          onBack={() => navigate(null)}
+          onBack={() => target.fromReview ? window.location.hash = "#/review" : navigate(null)}
           onJump={navigate}
           canReexplain={canReexplain}
+          targetParagraphId={target.paragraphId}
+          targetWord={target.word}
+          fromReview={target.fromReview}
         />
       )}
     </div>

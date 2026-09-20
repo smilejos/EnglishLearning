@@ -102,3 +102,5 @@ export type {
   WordLookupRequest,
   WordLookupResponse,
 } from "./schemas";
+
+export * from "./repo/vocabulary";

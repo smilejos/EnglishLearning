@@ -1,7 +1,7 @@
 # 專案架構與功能導覽（以程式碼為準）
 
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 分析日期：2026-09-20；程式碼基準：`a1f32ea`。
+> 分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；已同步本次單字收藏與複習實作，並於本機 Docker 套用 migration、重建啟動供試用。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理，未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 ## 1. 先讀這裡：專案目的與全貌
@@ -10,16 +10,17 @@
 
 產品有兩個介面：**學習前台**與**管理後台**。後端由一個 API、文章 worker、圖片 worker 組成，共用 PostgreSQL；音檔與圖片存放在檔案 volume，DB 保存路徑及 metadata。
 
-三條主流程：
+四條主流程：
 
 1. **文章教材**：後台輸入標題／英文內文 → API 依空白行切段、建立 DB jobs → worker 翻譯與合成語音 → 前台閱讀、聆聽。
 2. **語境單字**：點單字先讀既有解釋 → admin／reviewer 可用本篇脈絡產生解釋 → API 先回文字，再於 API 行程內背景補音檔 → 全站共用。
-3. **文章插圖**：admin 估價並建立版本 → image-worker 全文規劃、必要時先產生角色參考圖 → 人工審核 → 生成封面與段落圖 → 人工核准、整版發布 → 前台顯示。
+3. **收藏複習**：單字卡主動收藏 → 保存單字與來源快照 → 快速複習／自行判斷的快速挑戰 → 標熟悉後移出待複習，可重新收藏。
+4. **文章插圖**：admin 估價並建立版本 → image-worker 全文規劃、必要時先產生角色參考圖 → 人工審核 → 生成封面與段落圖 → 人工核准、整版發布 → 前台顯示。
 
 新 agent 必須先知道的邊界：
 
 - `done` 是文章翻譯／語音流程的完成狀態，**不代表插圖已發布**；沒有插圖也能閱讀。
-- 單字解釋與「已解釋」標記是全站共用資料，**不是個人背單字或學習進度**。
+- 單字解釋與「已解釋」標記是全站共用資料，**不是個人背單字或學習進度**；主動收藏與熟悉狀態另存於 `vocabulary_items`／`vocabulary_sources`。
 - 文章 job、圖片 job、單字背景 TTS 是三種不同機制，不可直接套用同一套重試方式。
 - 前後台各有本地型別與 API client；瀏覽器程式沒有直接依賴 `@el/shared`。
 - API 沒有統一 `/api` 前綴，使用 `/articles`、`/words` 等頂層路徑，新增路徑要一起檢查反向代理。
@@ -54,7 +55,7 @@ flowchart TD
 | `package.json` | npm workspaces 與跨 workspace 指令；共五個 workspace |
 | `api/src/server.ts` | 組裝正式 config、DB、LLM client、限流與圖片模型可用性；啟動 HTTP |
 | `api/src/app.ts` | 可注入依賴的 Fastify 工廠；組裝 auth、路由、音檔服務、錯誤處理 |
-| `api/src/routes/` | articles、lookups、taxonomy、users、stats、illustrations 的 HTTP 邊界 |
+| `api/src/routes/` | articles、lookups、vocabulary、taxonomy、users、stats、illustrations 的 HTTP 邊界 |
 | `worker/src/index.ts`、`processor.ts` | 文章 jobs 輪詢與處理流程 |
 | `worker/src/image-index.ts` | 圖片服務獨立入口；和文章 worker 使用同一 Docker image，但為另一個行程／服務 |
 | `shared/src/repo/` | 核心實體的參數化 SQL、查詢、camelCase 映射 |
@@ -82,6 +83,7 @@ flowchart TD
 | 能力 | reader | reviewer | admin |
 | --- | --- | --- | --- |
 | 讀文章、既有單字解釋與已發布圖片 | 可 | 可 | 可 |
+| 收藏、複習、熟悉狀態與取消收藏 | 可 | 可 | 可 |
 | 以本篇脈絡產生單字解釋 | 不可 | 可 | 可 |
 | 文章新增／修改 metadata／刪除／重試／重生 | 不可 | 不可 | 可 |
 | 分類標籤異動、單字解釋刪除、補音檔 | 不可 | 不可 | 可 |
@@ -99,7 +101,7 @@ flowchart TD
 
 ## 4. 學習前台功能
 
-依據：`web-learner/src/App.tsx`、`lib/`、`useArticlePlayer.ts`、`Illustration.tsx`。
+依據：`web-learner/src/App.tsx`、`VocabularyReview.tsx`、`lib/`、`useArticlePlayer.ts`、`Illustration.tsx`。
 
 ### 文章瀏覽與閱讀
 
@@ -122,7 +124,17 @@ flowchart TD
 
 顯示全站該字的多篇來源解釋、中英解釋與例句、英文發音、片語 `headword`，可跳回來源文章及開啟 Google 圖片搜尋。admin／reviewer 額外看到「用本篇重新解釋」及後台單字連結；後台管理操作本身仍限 admin。
 
-畫面標為「本篇已解釋」後不提供直接強制覆寫按鈕。前台篩選、播放器位置、翻譯展開等主要保存在 React state；目前沒有持久化的個人閱讀進度或生字本。
+畫面標為「本篇已解釋」後不提供直接強制覆寫按鈕。單字卡提供主動收藏；開啟彈窗本身不收藏，沒有解釋仍能收藏，不呼叫 AI 產生內容。播放器位置與翻譯展開等主要保存在 React state，尚無持久化的閱讀進度。
+
+### 收藏與複習
+
+- `#/review` 開啟 `VocabularyReview.tsx`。同字合併呈現並保留多篇／多段來源，熟悉狀態作用於整個單字。
+- 可同時篩選課業內／課外、單元、課文、年級、類別及收藏日期；來源條件必須由同一筆來源全部符合，分類採收藏時快照。
+- 收藏日期依 item 的 `savedAt` 換算 `Asia/Taipei` 日，區間含起迄日；來源日期僅供資訊。篩選存於 sessionStorage，回課文再返回複習可保留。
+- 快速複習直接顯示原文與既有解釋，優先所選來源課文的解釋；快速挑戰先隱藏原文與答案，揭曉後自行選「記得／忘記」。記得或手動已熟悉將單字移出待複習，忘記保留並換下一張。
+- `mastered` 紀錄保留且可重新收藏；取消收藏只刪收藏及其來源，不刪共用單字、解釋或課文。
+- 回原文使用 `#/a/<id>?paragraph=<id>&word=<word>&from=review` 定位段落／標字；課文刪除後仍保留來源快照，但不提供返回該課文的按鈕。
+- 複習音訊沿用 audioBus；切換卡片／模式時停止音訊，挑戰揭曉狀態重設。API 載入或異動失敗會顯示錯誤，不先移除收藏。
 
 ## 5. 管理後台功能
 
@@ -186,6 +198,12 @@ LLM 層另有短期重試與 HTTP timeout；它和 DB job 重試是兩層，不�
 
 限流資料只存在單一 API 行程記憶體，重啟歸零，按伺服器本地日期換日。統計 `lookupsToday.llmCalls` 是放行次數，並不是含所有重試／TTS／圖片的完整 API 費用帳。
 
+### 收藏資料流
+
+入口：`api/src/routes/vocabulary.ts` → `shared/src/repo/vocabulary.ts`。沿用登入身分，reader 亦可操作自己的收藏；服務端取 `request.user.id`，不接受任意 owner。
+
+`POST /vocabulary` 驗證文章與段落歸屬，再以交易儲存正規化字面與文章標題、原文、分類快照。既有 active 字加入來源不改 item 收藏日期；mastered 字從課文重新收藏會恢復 active，更新 item 與指定來源日期。`PATCH /vocabulary/:id` 從 mastered 恢復 active 時只更新 item 日期，保留來源原日期。重複收藏同一 active 來源不更新快照／日期；收藏異動透過 owner row lock 序列化。
+
 ## 8. 圖片子系統
 
 入口：`web-admin/src/Illustrations.tsx` → `api/src/routes/illustrations.ts` → `shared/src/illustrations/` → `worker/src/image-index.ts`。
@@ -246,6 +264,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | 分類 | `categories.parent_id` 自我參照樹；文章至多一個 category，刪分類時文章關聯 SET NULL，子分類 CASCADE |
 | 標籤 | `tags(kind,label)` unique；`article_tags` 多對多 |
 | 單字 | `words.normalized_word` unique；`word_explanations(word_id,article_id)` unique，保存 paragraph 脈絡及五組產物 |
+| 收藏 | `vocabulary_items(user_id,word)` unique，保存 active／mastered 與 saved_at；`vocabulary_sources` 保存來源／分類快照，來源 unique `(item_id,article_id,paragraph_id)`；文章／段落刪除時 FK SET NULL，收藏刪除時來源 CASCADE；不依賴共用 words FK |
 | 圖片估價／版本 | `illustration_estimates`、`article_visual_runs`、`article_visual_publications`；每篇只有一個目前發布指標 |
 | 圖片內容 | `illustration_slots` 表示 cover／paragraph／reference；每 slot 多個 candidates，selected candidate 有歸屬約束 |
 | 圖片檔案 | `illustration_assets` 與 `illustration_asset_files` 一對多；variant、object key、尺寸、MIME、bytes |
@@ -272,7 +291,8 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | `POST /articles`、`PATCH /articles/:id`、`DELETE /articles/:id` | admin 文章管理 | 同上 |
 | `POST /articles/:id/retry`、`POST /articles/:id/paragraphs/:pid/regenerate` | admin 重試／指定產物重生 | 同上 |
 | `GET /words/:word/explanations`、`GET /articles/:id/lookups` | 既有解釋／全站已解釋字標記 | `api/src/routes/lookups.ts` |
-| `POST /lookups` | admin／reviewer 語境解釋 | 同上 |
+| `GET/POST /vocabulary`、`PATCH/DELETE /vocabulary/:id` | 已登入使用者列出／收藏／改熟悉狀態／取消收藏；不產生 AI 內容 | `api/src/routes/vocabulary.ts` |
+| `POST /lookups` | admin／reviewer 語境解釋 | `api/src/routes/lookups.ts` |
 | `GET /words`、`GET /articles/:id/explanations` | admin 搜尋／文章來源解釋 | 同上 |
 | `DELETE /words/:id`、`DELETE /explanations/:id`、`POST /lookups/backfill-audio` | admin 刪除／補音檔 | 同上 |
 | `GET/POST /categories`、`PATCH/DELETE /categories/:id` | 讀取需登入；異動限 admin | `api/src/routes/taxonomy.ts` |
@@ -327,10 +347,11 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 - `api/src/routes/*.test.ts`、`auth.test.ts`：以 Fastify inject、測試 DB、fake client 驗證權限、CRUD、快取、TTS 背景補齊、圖片全生命週期。
 - `worker/src/processor.test.ts`：批次翻譯／回退、部分重生、退避、stale 回收、狀態聚合。
 - 前端 `*.test.ts(x)`：純函式、路由、分享、音源仲裁、播放器、圖片 fallback／單字操作、後台錯誤與圖片審核操作。
+- 收藏測試：`api/src/routes/vocabulary.test.ts` 驗證 CRUD、日期／來源語意及權限；`web-learner/src/VocabularyReview.test.tsx` 驗證篩選、挑戰、失敗保留、來源失效與音訊停止；App 與 route 測試涵蓋收藏入口及返回定位。
 - `api/src/routeConfig.test.ts`：檢查兩前端使用的 API 頂層路徑是否被 nginx／Vite 正確轉發。
 - 現有 `e2e/` 未提供自動瀏覽器測試程式；不要把 Vitest 全綠宣稱為完整線上端到端驗收。
 
-本次只做架構分析與文件異動，未啟動服務、呼叫供應商、遷移／改寫 DB 或執行完整應用測試。測試章節描述現有測試設計，不宣稱本次重新驗證其全綠。
+本章列出測試設計與入口；本次實際執行結果以任務交付回報為準，不代表正式部署或完整線上端到端驗收。
 
 ## 12. 維護時要辨識的現況限制
 
@@ -348,7 +369,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 音檔寫入與 DB transaction 分離、清理 best-effort | 失敗可能留下檔案；不要把資料交易當成檔案系統原子交易 |
 | 圖片有預算保留／估算／unknown billing | `actual` 為依 usage／設定計算的值，不是完整帳單同步；unknown 不應當零元或自動重送 |
 | 已發布圖片讀取沒有每次重比來源 hash | metadata 變更會影響新 run／發布的來源驗證，但既有圖片不會因此自動撤下 |
-| 沒有個人進度、測驗評分、SRS、生字收藏、多人班級或付費訂閱模型 | 不應從「英文學習平台」名稱推論這些功能已存在 |
+| 已有收藏與熟悉狀態，但沒有閱讀進度、測驗自動評分、SRS、多人班級或付費訂閱模型 | 快速挑戰為自行判斷；產品目前以單一使用者為前提 |
 
 ## 13. 未來 agent 的任務定位與文件維護
 
@@ -359,6 +380,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 清單、閱讀、翻譯顯示、分享 | `web-learner/src/App.tsx`、`lib/`，必要時 `api/src/routes/articles.ts` |
 | 朗讀、跳段、速度、疊音 | `web-learner/src/useArticlePlayer.ts`、`AudioBar.tsx`、`lib/audioBus.ts` |
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
+| 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
 | 文章上傳、分類、標籤 | admin `App.tsx`／`lib/meta.ts`、API articles／taxonomy、相關 repo |
 | 角色、登入、403 | `api/src/auth.ts`、users routes／repo、`shared/src/config.ts` |

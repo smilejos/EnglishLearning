@@ -14,6 +14,7 @@ export default defineConfig({
       "/image-models": apiTarget,
       "/articles": apiTarget,
       "/words": apiTarget,
+      "/vocabulary": apiTarget,
       "/lookups": apiTarget,
       "/audio": apiTarget,
       "/me": apiTarget,

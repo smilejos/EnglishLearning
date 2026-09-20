@@ -447,3 +447,8 @@ button.vocab {
 .paragraph-illustration img { width: 100%; height: auto; display: block; border-radius: 10px; }
 .illustration-word { position: absolute; transform: translate(-50%,-50%); color: #143d33; background: white; border: 2px solid #287469; border-radius: 8px; padding: 4px 8px; font-size: clamp(12px,2vw,18px); font-weight: 700; cursor: pointer; }
 .illustration-word:focus-visible { outline: 3px solid #d88600; outline-offset: 2px; }
+/* 收藏與複習入口，以及從複習返回課文的單字定位。 */
+.brand--button { border: 0; background: transparent; color: inherit; font: inherit; padding: 0; cursor: pointer; }
+.topbar__in { gap: 12px; justify-content: space-between; }
+.vocabulary-save { margin: 14px 0; }
+.vocab--target { background: #fff0a8; outline: 2px solid #b47a09; border-radius: 4px; }
