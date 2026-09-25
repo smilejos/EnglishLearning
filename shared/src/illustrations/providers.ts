@@ -190,7 +190,7 @@ export class GeminiImageAdapter implements ImageAdapter {
     if (model.provider !== "google-gemini")
       throw new Error("incompatible adapter");
     const result = await call(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model.apiModel}:generateContent`,
+      this.auth.endpoint(model.apiModel),
       {
         method: "POST",
         headers: {
@@ -257,7 +257,7 @@ export class GeminiVisualPlanner implements VisualPlanner {
   ) {}
   async plan(config: PlannerConfig, prompt: string, signal?: AbortSignal) {
     const result = await call(
-      `https://generativelanguage.googleapis.com/v1beta/models/${config.apiModel}:generateContent`,
+      this.auth.endpoint(config.apiModel),
       {
         method: "POST",
         headers: {
@@ -271,7 +271,9 @@ export class GeminiVisualPlanner implements VisualPlanner {
             responseMimeType: "application/json",
             responseJsonSchema: visualPlanJsonSchema,
             maxOutputTokens: config.maxOutputTokens,
-            thinkingConfig: { thinkingBudget: 0 },
+            thinkingConfig: config.apiModel.startsWith("gemini-3.")
+              ? { thinkingLevel: "LOW" }
+              : { thinkingBudget: 0 },
           },
         }),
       },
@@ -299,5 +301,68 @@ export class GeminiVisualPlanner implements VisualPlanner {
       validationError,
       usage: result.body.usageMetadata,
     };
+  }
+}
+
+export class OpenAIVisualPlanner implements VisualPlanner {
+  constructor(
+    private key: string,
+    private fetcher: typeof fetch = fetch,
+  ) {}
+
+  async plan(config: PlannerConfig, prompt: string, signal?: AbortSignal) {
+    const result = await call(
+      "https://api.openai.com/v1/responses",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${this.key}`,
+        },
+        signal,
+        body: JSON.stringify({
+          model: config.apiModel,
+          input: prompt,
+          max_output_tokens: config.maxOutputTokens,
+          text: {
+            format: {
+              type: "json_schema",
+              name: "visual_plan",
+              strict: true,
+              schema: visualPlanJsonSchema,
+            },
+          },
+        }),
+      },
+      this.fetcher,
+    );
+    const body = result.body;
+    const text = (Array.isArray(body.output) ? body.output : [])
+      .filter((item: any) => item.type === "message")
+      .flatMap((item: any) => Array.isArray(item.content) ? item.content : [])
+      .filter((part: any) => part.type === "output_text")
+      .map((part: any) => part.text ?? "")
+      .join("");
+    let value: unknown = null;
+    let validationError: string | undefined;
+    if (body.status === "incomplete")
+      validationError = "規劃輸出達到 token 上限，可能遭截斷；請檢查規劃輸出長度設定";
+    else if (body.status && body.status !== "completed")
+      validationError = `規劃未完成（${String(body.status)}）`;
+    else if (!text.trim())
+      validationError = "規劃未回傳文字（可能被安全機制攔截或回應為空）";
+    try {
+      value = JSON.parse(stripFences(text));
+    } catch {
+      validationError ??= "規劃回應不是有效 JSON；請檢查輸出格式或長度限制";
+    }
+    const rawUsage = body.usage;
+    const usage = rawUsage && typeof rawUsage === "object" ? {
+      ...rawUsage,
+      promptTokenCount: rawUsage.input_tokens,
+      candidatesTokenCount: rawUsage.output_tokens,
+      thoughtsTokenCount: 0,
+    } : undefined;
+    return { value, validationError, usage };
   }
 }

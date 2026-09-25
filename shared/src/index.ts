@@ -18,6 +18,9 @@ export type { AudioFormat, WriteEncodedOpts } from "./audioFiles";
 export { ffmpegAvailable, encodeWavToM4aFile } from "./audioEncode";
 
 export * from "./repo";
+export * from "./generationSettings";
+export * from "./repo/generationSettings";
+export * from "./generationClients";
 
 export { generateContent, firstText } from "./llm/genai";
 export type {
@@ -29,6 +32,7 @@ export type {
 export {
   apiKeyAuthorizer,
   serviceAccountAuthorizer,
+  createVertexAuthorizer,
 } from "./llm/auth";
 export type { Authorizer } from "./llm/auth";
 export { pcmToWav, pcmDurationSec, TTS_FORMAT } from "./llm/wav";

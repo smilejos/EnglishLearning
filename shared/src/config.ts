@@ -3,16 +3,20 @@
 // 任何服務（api / worker）都應透過 `loadConfig()` 取得設定，而非直接讀 process.env。
 
 export interface GeminiConfig {
-  /** API key（與 credentialsPath 至少擇一）。 */
+  /** Vertex AI 所屬 Google Cloud 專案。 */
+  project?: string;
+  /** Vertex AI 推論地點，預設 global。 */
+  location: string;
+  /** 選用 Google 供應商時使用的 API key。 */
   apiKey?: string;
-  /** Service account 憑證路徑（與 apiKey 至少擇一）。 */
+  /** 選用 Google 供應商時可改用 service account。 */
   credentialsPath?: string;
   ttsModel: string;
   translateModel: string;
   explainModel: string;
-  /** 英文語音 voice（不寫死，必填）。 */
+  /** 舊環境變數的預設英文語音；正式生成設定存於 DB。 */
   voiceEn: string;
-  /** 中文語音 voice（不寫死，必填）。 */
+  /** 舊環境變數的預設中文語音；正式生成設定存於 DB。 */
   voiceZh: string;
 }
 
@@ -49,9 +53,11 @@ export interface Config {
 /** 預設值（與 `.env.example` 一致），缺漏時採用。 */
 const DEFAULTS = {
   audioDir: "/data/audio",
-  ttsModel: "gemini-2.5-flash-preview-tts",
+  ttsModel: "gemini-2.5-flash-tts",
   translateModel: "gemini-2.5-flash",
   explainModel: "gemini-2.5-flash",
+  voiceEn: "Kore",
+  voiceZh: "Kore",
   devUserEmail: "dev@example.com",
 } as const;
 
@@ -92,17 +98,14 @@ export function loadConfig(env: Env = process.env): Config {
 
   const apiKey = trimmed(env, "GEMINI_API_KEY");
   const credentialsPath = trimmed(env, "GOOGLE_APPLICATION_CREDENTIALS");
-  if (!apiKey && !credentialsPath) {
-    errors.push(
-      "one of GEMINI_API_KEY or GOOGLE_APPLICATION_CREDENTIALS is required",
-    );
-  }
-
-  const voiceEn = trimmed(env, "GEMINI_TTS_VOICE_EN");
-  if (!voiceEn) errors.push("GEMINI_TTS_VOICE_EN is required");
-
-  const voiceZh = trimmed(env, "GEMINI_TTS_VOICE_ZH");
-  if (!voiceZh) errors.push("GEMINI_TTS_VOICE_ZH is required");
+  const project = trimmed(env, "GOOGLE_CLOUD_PROJECT");
+  const location = trimmed(env, "GOOGLE_CLOUD_LOCATION") ?? "global";
+  if ((apiKey && apiKey !== "dev-placeholder" || credentialsPath) && !project)
+    errors.push("GOOGLE_CLOUD_PROJECT is required when Google credentials are configured");
+  if (!/^[a-z][a-z0-9-]*$/.test(location))
+    errors.push("GOOGLE_CLOUD_LOCATION must be a valid Vertex AI location");
+  const voiceEn = trimmed(env, "GEMINI_TTS_VOICE_EN") ?? DEFAULTS.voiceEn;
+  const voiceZh = trimmed(env, "GEMINI_TTS_VOICE_ZH") ?? DEFAULTS.voiceZh;
 
   const devAuthBypass = isTruthy(trimmed(env, "DEV_AUTH_BYPASS"));
 
@@ -149,6 +152,8 @@ export function loadConfig(env: Env = process.env): Config {
     databaseUrl: databaseUrl!,
     audioDir: trimmed(env, "AUDIO_DIR") ?? DEFAULTS.audioDir,
     gemini: {
+      project,
+      location,
       apiKey,
       credentialsPath,
       ttsModel: trimmed(env, "GEMINI_TTS_MODEL") ?? DEFAULTS.ttsModel,

@@ -2,10 +2,15 @@
 # Target: Docker on a home Mac Mini (Apple Silicon / arm64).
 # db → migrate（一次性建表）→ api / worker（共用 audio volume）→ 兩個前端 nginx。
 
-# api 與 worker 共用的 Gemini / auth 環境（dev 預設可直接起，正式以 .env 覆寫）。
+# API、文章 worker 與圖片 worker 共用的供應商／驗證環境（正式以 .env 覆寫）。
 x-app-env: &app-env
+  GENERATION_MODELS_FILE: /app/config/generation-models.json
   GEMINI_API_KEY: ${GEMINI_API_KEY:-dev-placeholder}
-  GEMINI_TTS_MODEL: ${GEMINI_TTS_MODEL:-gemini-2.5-flash-preview-tts}
+  GOOGLE_CLOUD_PROJECT: ${GOOGLE_CLOUD_PROJECT:-}
+  GOOGLE_CLOUD_LOCATION: ${GOOGLE_CLOUD_LOCATION:-global}
+  GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS:-}
+  OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+  GEMINI_TTS_MODEL: ${GEMINI_TTS_MODEL:-gemini-2.5-flash-tts}
   GEMINI_TRANSLATE_MODEL: ${GEMINI_TRANSLATE_MODEL:-gemini-2.5-flash}
   GEMINI_EXPLAIN_MODEL: ${GEMINI_EXPLAIN_MODEL:-gemini-2.5-flash}
   GEMINI_TTS_VOICE_EN: ${GEMINI_TTS_VOICE_EN:-Kore}
@@ -63,8 +68,7 @@ services:
     volumes:
       - audio:/data/audio
       - images:/data/images:ro
-      - ./config/image-models.json:/app/config/image-models.json:ro
-      - ./config/image-pricing.json:/app/config/image-pricing.json:ro
+      - ./config:/app/config:ro
     ports:
       - "127.0.0.1:${API_PORT:-8080}:8080"
     depends_on:
@@ -88,6 +92,7 @@ services:
       WORKER_BACKOFF_MAX_SEC: ${WORKER_BACKOFF_MAX_SEC:-900}
     volumes:
       - audio:/data/audio
+      - ./config:/app/config:ro
     depends_on:
       db:
         condition: service_healthy
@@ -108,11 +113,9 @@ services:
       IMAGE_DIR: /data/images
       IMAGE_MODELS_FILE: /app/config/image-models.json
       IMAGE_PRICING_FILE: /app/config/image-pricing.json
-      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
     volumes:
       - images:/data/images
-      - ./config/image-models.json:/app/config/image-models.json:ro
-      - ./config/image-pricing.json:/app/config/image-pricing.json:ro
+      - ./config:/app/config:ro
     depends_on:
       db:
         condition: service_healthy

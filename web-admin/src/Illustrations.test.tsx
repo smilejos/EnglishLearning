@@ -28,6 +28,8 @@ beforeEach(() => {
           },
         ],
       } as never;
+    if (path === "/generation-settings")
+      return { settings: { image: { provider: "google", model: "test-model" } } } as never;
     if (path.endsWith("/illustration-runs")) return { runs: [] } as never;
     if (path.endsWith("/illustration-estimates"))
       return {
@@ -50,9 +52,11 @@ beforeEach(() => {
 it("loads server models and requires explicit cost confirmation before creating work", async () => {
   const confirmation = vi.spyOn(window, "confirm").mockReturnValue(false);
   render(<Illustrations articleId={1} />);
-  await screen.findByRole("option", { name: "Mock Model" });
+  await screen.findByText("Mock Model");
   fireEvent.click(screen.getByRole("button", { name: "估算完整文章費用" }));
   await screen.findByRole("button", { name: "確認費用並建立新版本" });
+  const estimate = vi.mocked(req).mock.calls.find(([path]) => path.endsWith("/illustration-estimates"));
+  expect(JSON.parse(String(estimate?.[1]?.body)).modelId).toBe("test-model");
   fireEvent.click(screen.getByRole("button", { name: "確認費用並建立新版本" }));
   expect(confirmation).toHaveBeenCalled();
   expect(
@@ -63,6 +67,34 @@ it("loads server models and requires explicit cost confirmation before creating 
           p.endsWith("/illustration-runs") && opts?.method === "POST",
       ),
   ).toHaveLength(0);
+});
+it("blocks estimation when the globally configured image model is unavailable", async () => {
+  const original = vi.mocked(req).getMockImplementation()!;
+  vi.mocked(req).mockImplementation(async (path, init) => {
+    if (path === "/generation-settings")
+      return { settings: { image: { provider: "openai", model: "unavailable-model" } } } as never;
+    return original(path, init);
+  });
+  render(<Illustrations articleId={1} />);
+  await screen.findByText("unavailable-model");
+  expect(screen.getByRole("button", { name: "估算完整文章費用" }).hasAttribute("disabled")).toBe(true);
+  expect(screen.getByRole("alert").textContent).toContain("無法使用");
+});
+it("rechecks the global image model before estimating", async () => {
+  const original = vi.mocked(req).getMockImplementation()!;
+  let reads = 0;
+  vi.mocked(req).mockImplementation(async (path, init) => {
+    if (path === "/generation-settings") {
+      reads += 1;
+      return { settings: { image: { provider: "google", model: reads === 1 ? "test-model" : "new-model" } } } as never;
+    }
+    return original(path, init);
+  });
+  render(<Illustrations articleId={1} />);
+  await screen.findByText("Mock Model");
+  fireEvent.click(screen.getByRole("button", { name: "估算完整文章費用" }));
+  await screen.findByText("全站圖片模型已更新，請確認後重新估價。");
+  expect(vi.mocked(req).mock.calls.some(([path]) => path.endsWith("/illustration-estimates"))).toBe(false);
 });
 it("shows failures instead of silently swallowing them", async () => {
   vi.mocked(req).mockRejectedValue(new Error("圖片服務暫時無法使用"));

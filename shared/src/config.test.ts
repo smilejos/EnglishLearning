@@ -7,6 +7,7 @@ function fullEnv(): Record<string, string> {
     DATABASE_URL: "postgres://app:app@db:5432/english_learning",
     AUDIO_DIR: "/data/audio",
     GEMINI_API_KEY: "test-key",
+    GOOGLE_CLOUD_PROJECT: "test-project",
     GEMINI_TTS_MODEL: "tts-model",
     GEMINI_TRANSLATE_MODEL: "translate-model",
     GEMINI_EXPLAIN_MODEL: "explain-model",
@@ -45,12 +46,12 @@ describe("loadConfig", () => {
     expect(() => loadConfig(env)).toThrow(/DATABASE_URL is required/);
   });
 
-  it("同時缺 API key 與憑證路徑時拋錯", () => {
+  it("未設定 Google 憑證時仍可啟動並選用 OpenAI", () => {
     const env = fullEnv();
     delete env.GEMINI_API_KEY;
-    expect(() => loadConfig(env)).toThrow(
-      /GEMINI_API_KEY or GOOGLE_APPLICATION_CREDENTIALS/,
-    );
+    delete env.GOOGLE_CLOUD_PROJECT;
+    expect(loadConfig(env).gemini.apiKey).toBeUndefined();
+    expect(loadConfig(env).gemini.project).toBeUndefined();
   });
 
   it("只提供憑證路徑亦視為合法", () => {
@@ -62,10 +63,32 @@ describe("loadConfig", () => {
     expect(cfg.gemini.apiKey).toBeUndefined();
   });
 
-  it("缺少英文或中文 voice 時拋錯（voice 不可寫死）", () => {
+  it("Google key 或 ADC 憑證路徑需要 Vertex 專案", () => {
+    const env = fullEnv();
+    delete env.GOOGLE_CLOUD_PROJECT;
+    expect(() => loadConfig(env)).toThrow(/GOOGLE_CLOUD_PROJECT is required/);
+    delete env.GEMINI_API_KEY;
+    env.GOOGLE_APPLICATION_CREDENTIALS = "/run/secrets/sa.json";
+    expect(() => loadConfig(env)).toThrow(/GOOGLE_CLOUD_PROJECT is required/);
+    env.GEMINI_API_KEY = "dev-placeholder";
+    delete env.GOOGLE_APPLICATION_CREDENTIALS;
+    expect(loadConfig(env).gemini.project).toBeUndefined();
+  });
+
+  it("Vertex location 預設 global，並可設定區域", () => {
+    const env = fullEnv();
+    expect(loadConfig(env).gemini.location).toBe("global");
+    env.GOOGLE_CLOUD_LOCATION = "us-central1";
+    expect(loadConfig(env).gemini.location).toBe("us-central1");
+    env.GOOGLE_CLOUD_LOCATION = "https://evil.example";
+    expect(() => loadConfig(env)).toThrow(/GOOGLE_CLOUD_LOCATION/);
+  });
+
+  it("缺少舊式語音環境變數時使用資料庫預設聲線", () => {
     const env = fullEnv();
     delete env.GEMINI_TTS_VOICE_EN;
-    expect(() => loadConfig(env)).toThrow(/GEMINI_TTS_VOICE_EN is required/);
+    delete env.GEMINI_TTS_VOICE_ZH;
+    expect(loadConfig(env).gemini).toMatchObject({ voiceEn: "Kore", voiceZh: "Kore" });
   });
 
   it("非 dev 繞過時，缺 Cloudflare Access 設定會拋錯", () => {
@@ -93,7 +116,7 @@ describe("loadConfig", () => {
     delete env.DEV_USER_EMAIL;
     const cfg = loadConfig(env);
     expect(cfg.audioDir).toBe("/data/audio");
-    expect(cfg.gemini.ttsModel).toBe("gemini-2.5-flash-preview-tts");
+    expect(cfg.gemini.ttsModel).toBe("gemini-2.5-flash-tts");
     expect(cfg.devUserEmail).toBe("dev@example.com");
   });
 
@@ -109,7 +132,7 @@ describe("loadConfig", () => {
   });
 
   it("一次回報所有缺漏的必填變數", () => {
-    expect(() => loadConfig({})).toThrow(/DATABASE_URL[\s\S]*VOICE_EN/);
+    expect(() => loadConfig({})).toThrow(/DATABASE_URL[\s\S]*CF_ACCESS_TEAM_DOMAIN/);
   });
 
   it("空字串或全空白視為未設定", () => {
@@ -123,6 +146,7 @@ describe("lookupLimits", () => {
   const BASE = {
     DATABASE_URL: "postgres://x",
     GEMINI_API_KEY: "k",
+    GOOGLE_CLOUD_PROJECT: "test-project",
     GEMINI_TTS_VOICE_EN: "Kore",
     GEMINI_TTS_VOICE_ZH: "Kore",
     DEV_AUTH_BYPASS: "1",
@@ -146,6 +170,7 @@ describe("audioFormat", () => {
   const BASE = {
     DATABASE_URL: "postgres://x",
     GEMINI_API_KEY: "k",
+    GOOGLE_CLOUD_PROJECT: "test-project",
     GEMINI_TTS_VOICE_EN: "Kore",
     GEMINI_TTS_VOICE_ZH: "Kore",
     DEV_AUTH_BYPASS: "1",

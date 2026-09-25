@@ -14,6 +14,7 @@ export default defineConfig({
     proxy: {
       "/images": apiTarget,
       "/image-models": apiTarget,
+      "/generation-settings": apiTarget,
       "/articles": apiTarget,
       "/words": apiTarget,
       "/lookups": apiTarget,

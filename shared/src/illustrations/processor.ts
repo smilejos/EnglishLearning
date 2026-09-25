@@ -29,6 +29,7 @@ import { audit, lockedRun, VisualError } from "./repository";
 export interface ImageWorkerDeps {
   pool: DbPool;
   planner: VisualPlanner;
+  plannerFor?: (config: PlannerConfig) => VisualPlanner;
   adapters: Record<string, ImageAdapter>;
   storage: ImageStorage;
 }
@@ -265,8 +266,9 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
   }, 15000);
   try {
     if (job.kind === "plan") {
-      const result = await deps.planner.plan(
-        run.planner_snapshot as PlannerConfig,
+      const plannerConfig = run.planner_snapshot as PlannerConfig;
+      const result = await (deps.plannerFor?.(plannerConfig) ?? deps.planner).plan(
+        plannerConfig,
         prompt,
         AbortSignal.timeout(180000),
       );

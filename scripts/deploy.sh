@@ -140,29 +140,33 @@ reload_proxy() {
 
 cmd_up() {
   ensure_docker; ensure_env
+  # 既有 proxy 先載入新 API 路由，避免新版前端啟動後仍被舊設定導回 SPA。
+  reload_proxy
   if [ $# -gt 0 ]; then
     log "建置（如有需要）並啟動服務：$*…"
   else
     log "建置（如有需要）並啟動所有服務…"
   fi
   "${COMPOSE[@]}" up -d --build "$@"
-  wait_healthy
   reload_proxy
+  wait_healthy
   cmd_status
 }
 
 cmd_deploy() {
   ensure_docker; ensure_env
+  reload_proxy
   log "部署：拉取 base image 並重建後啟動…"
   "${COMPOSE[@]}" pull --ignore-buildable-images 2>/dev/null || true
   "${COMPOSE[@]}" up -d --build
-  wait_healthy
   reload_proxy
+  wait_healthy
   cmd_status
 }
 
 cmd_rebuild() {
   ensure_docker; ensure_env
+  reload_proxy
   if [ $# -gt 0 ]; then
     log "強制不使用快取重建：$*…"
   else
@@ -170,13 +174,13 @@ cmd_rebuild() {
   fi
   "${COMPOSE[@]}" build --no-cache "$@"
   "${COMPOSE[@]}" up -d "$@"
-  wait_healthy
   reload_proxy
+  wait_healthy
   cmd_status
 }
 
 cmd_down()    { ensure_docker; log "停止並移除容器（保留資料）…"; "${COMPOSE[@]}" down; ok "已停止。"; }
-cmd_restart() { ensure_docker; log "重啟所有服務…"; "${COMPOSE[@]}" restart; wait_healthy; reload_proxy; cmd_status; }
+cmd_restart() { ensure_docker; reload_proxy; log "重啟所有服務…"; "${COMPOSE[@]}" restart; reload_proxy; wait_healthy; cmd_status; }
 cmd_status()  { ensure_docker; "${COMPOSE[@]}" ps; }
 cmd_ps()      { cmd_status; }
 cmd_health()  { ensure_docker; wait_healthy; }

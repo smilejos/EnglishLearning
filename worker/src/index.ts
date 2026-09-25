@@ -4,10 +4,13 @@ import { writeFile } from "node:fs/promises";
 import {
   loadConfig,
   createPool,
-  apiKeyAuthorizer,
+  createVertexAuthorizer,
   serviceAccountAuthorizer,
   GeminiTranslateClient,
   GeminiTtsClient,
+  getGenerationSettings,
+  createTranslateClient,
+  createTtsClient,
 } from "@el/shared";
 import { drainQueue, type WorkerDeps } from "./processor";
 
@@ -23,19 +26,31 @@ const HEARTBEAT_FILE =
 const config = loadConfig();
 const pool = createPool(config.databaseUrl);
 
-const auth = config.gemini.apiKey
-  ? apiKeyAuthorizer(config.gemini.apiKey)
-  : serviceAccountAuthorizer();
+const auth = createVertexAuthorizer(config.gemini);
+const googleAuth = auth ?? serviceAccountAuthorizer(config.gemini.project, config.gemini.location);
+const openaiKey = process.env.OPENAI_API_KEY?.trim();
+const credentials = { googleAuth: auth, openaiApiKey: openaiKey === "dev-placeholder" ? undefined : openaiKey };
 
 const deps: WorkerDeps = {
   pool,
   translateClient: new GeminiTranslateClient({
-    auth,
+    auth: googleAuth,
     model: config.gemini.translateModel,
   }),
-  ttsClient: new GeminiTtsClient({ auth, model: config.gemini.ttsModel }),
+  ttsClient: new GeminiTtsClient({ auth: googleAuth, model: config.gemini.ttsModel }),
   voiceEn: config.gemini.voiceEn,
   voiceZh: config.gemini.voiceZh,
+  resolveGeneration: async (job) => {
+    const settings = job.generationSnapshot ? null : (await getGenerationSettings(pool)).settings;
+    const text = job.generationSnapshot?.translation ?? settings!.text;
+    const speech = job.generationSnapshot?.speech ?? settings!.speech;
+    return {
+      translateClient: createTranslateClient(text, credentials),
+      ttsClient: createTtsClient(speech, credentials),
+      voiceEn: speech.voiceEn,
+      voiceZh: speech.voiceZh,
+    };
+  },
   audioDir: config.audioDir,
   audioFormat: config.audioFormat,
   maxAttempts: MAX_ATTEMPTS,

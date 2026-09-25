@@ -17,7 +17,7 @@ beforeEach(() => {
   vi.stubGlobal("confirm", vi.fn(() => true));
   vi.mocked(api.listMissingAudio).mockResolvedValue({ items });
 });
-afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
+afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 it("顯示逐檔清單並只補所選音檔", async () => {
   vi.mocked(api.backfillAudioTarget).mockResolvedValue({ fixedAudio: 1, alreadyComplete: false });
@@ -46,6 +46,44 @@ it("全部補檔逐檔執行，失敗後仍繼續並顯示結果", async () => {
     .toEqual(["word", "enExplanation", "enExample"]);
   expect(window.confirm).toHaveBeenCalledWith(expect.stringContaining("3 個音檔"));
   await screen.findByText("待補 1 個音檔");
+});
+
+it("全部補檔遇配額限制時等待後重試同一筆", async () => {
+  const realSetTimeout = globalThis.setTimeout;
+  vi.spyOn(globalThis, "setTimeout").mockImplementation((handler, delay, ...args) =>
+    realSetTimeout(handler, delay === 60_000 ? 0 : delay, ...args));
+  vi.mocked(api.backfillAudioTarget)
+    .mockRejectedValueOnce(Object.assign(new Error("Too Many Requests"), { status: 429 }))
+    .mockResolvedValue({ fixedAudio: 1, alreadyComplete: false });
+  render(<AudioBackfillPanel onBack={vi.fn()} />);
+  await screen.findByText("待補 3 個音檔");
+  fireEvent.click(screen.getByRole("button", { name: "全部補檔" }));
+  await screen.findByText("補檔完成。成功 3、已補齊 0、失敗 0。");
+  expect(vi.mocked(api.backfillAudioTarget).mock.calls.map(([item]) => item.kind))
+    .toEqual(["word", "word", "enExplanation", "enExample"]);
+});
+
+it("配額等待後仍受限便停止，保留剩餘項目", async () => {
+  const realSetTimeout = globalThis.setTimeout;
+  vi.spyOn(globalThis, "setTimeout").mockImplementation((handler, delay, ...args) =>
+    realSetTimeout(handler, delay === 60_000 ? 0 : delay, ...args));
+  vi.mocked(api.backfillAudioTarget).mockRejectedValue(Object.assign(new Error("Too Many Requests"), { status: 429 }));
+  render(<AudioBackfillPanel onBack={vi.fn()} />);
+  await screen.findByText("待補 3 個音檔");
+  fireEvent.click(screen.getByRole("button", { name: "全部補檔" }));
+  await screen.findByText("配額仍不足，已停止；稍後可再補剩餘音檔。成功 0、已補齊 0、失敗 1。");
+  expect(api.backfillAudioTarget).toHaveBeenCalledTimes(2);
+});
+
+it("配額等待期間可停止，不再送出重試", async () => {
+  vi.mocked(api.backfillAudioTarget).mockRejectedValueOnce(Object.assign(new Error("Too Many Requests"), { status: 429 }));
+  render(<AudioBackfillPanel onBack={vi.fn()} />);
+  await screen.findByText("待補 3 個音檔");
+  fireEvent.click(screen.getByRole("button", { name: "全部補檔" }));
+  await screen.findByText("處理進度：0 / 3；配額已滿，60 秒後重試");
+  fireEvent.click(screen.getByRole("button", { name: "停止" }));
+  await screen.findByText("已停止。成功 0、已補齊 0、失敗 0。");
+  expect(api.backfillAudioTarget).toHaveBeenCalledTimes(1);
 });
 
 it("停止全部補檔後不再送出下一筆", async () => {

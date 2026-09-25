@@ -1,6 +1,13 @@
 // jobs 資料存取（worker 佇列）。
 import type { Status } from "../schemas";
+import type { GenerationSettings } from "../generationSettings";
 import { type Queryable, toNum, toIso } from "./types";
+
+export type ArticleGenerationSnapshot = {
+  /** 沿用既有快照欄位名，讓遷移前排隊與重試的工作繼續使用原模型。 */
+  translation: GenerationSettings["text"];
+  speech: GenerationSettings["speech"];
+};
 
 export interface Job {
   id: number;
@@ -13,6 +20,7 @@ export interface Job {
   updatedAt: string;
   /** 最早可被再次認領的時間（重試退避用）。 */
   availableAt: string;
+  generationSnapshot: ArticleGenerationSnapshot | null;
 }
 
 function mapJob(row: any): Job {
@@ -26,6 +34,7 @@ function mapJob(row: any): Job {
     createdAt: toIso(row.created_at),
     updatedAt: toIso(row.updated_at),
     availableAt: toIso(row.available_at),
+    generationSnapshot: row.generation_snapshot ?? null,
   };
 }
 
@@ -33,10 +42,12 @@ export async function createJob(
   db: Queryable,
   articleId: number,
   paragraphId: number,
+  generationSnapshot?: ArticleGenerationSnapshot,
 ): Promise<Job> {
   const res = await db.query(
-    `INSERT INTO jobs (article_id, paragraph_id) VALUES ($1, $2) RETURNING *`,
-    [articleId, paragraphId],
+    `INSERT INTO jobs (article_id, paragraph_id, generation_snapshot)
+     VALUES ($1, $2, $3::jsonb) RETURNING *`,
+    [articleId, paragraphId, generationSnapshot ? JSON.stringify(generationSnapshot) : null],
   );
   return mapJob(res.rows[0]);
 }
@@ -179,17 +190,22 @@ export async function resetJobForParagraph(
   db: Queryable,
   articleId: number,
   paragraphId: number,
+  generationSnapshot?: ArticleGenerationSnapshot,
 ): Promise<void> {
+  const snapshot = generationSnapshot ? JSON.stringify(generationSnapshot) : null;
   const res = await db.query(
     `UPDATE jobs SET status = 'pending', attempts = 0, error = NULL,
-            updated_at = now(), available_at = now()
+            updated_at = now(), available_at = now(),
+            generation_snapshot = COALESCE($3::jsonb, generation_snapshot)
       WHERE article_id = $1 AND paragraph_id = $2`,
-    [articleId, paragraphId],
+    [articleId, paragraphId, snapshot],
   );
   if ((res.rowCount ?? 0) === 0) {
-    await db.query(`INSERT INTO jobs (article_id, paragraph_id) VALUES ($1, $2)`, [
+    await db.query(`INSERT INTO jobs (article_id, paragraph_id, generation_snapshot)
+      VALUES ($1, $2, $3::jsonb)`, [
       articleId,
       paragraphId,
+      snapshot,
     ]);
   }
 }

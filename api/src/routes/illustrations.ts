@@ -24,6 +24,7 @@ export interface IllustrationDeps {
   catalog: ImageCatalog;
   imageDir: string;
   availableModelIds: () => Promise<string[]>;
+  resolveCatalog?: () => Promise<ImageCatalog>;
 }
 export function registerIllustrationRoutes(
   app: FastifyInstance,
@@ -43,9 +44,10 @@ export function registerIllustrationRoutes(
   const admin = { preHandler: requireAdmin };
   const availableCatalog = async () => {
     const ids = await deps.availableModelIds();
+    const selected = deps.resolveCatalog ? await deps.resolveCatalog() : deps.catalog;
     return {
-      ...deps.catalog,
-      models: deps.catalog.models.filter((m) => ids.includes(m.id)),
+      ...selected,
+      models: selected.models.filter((m) => ids.includes(m.id)),
     };
   };
   app.get("/image-models", admin, async () => {
@@ -79,9 +81,12 @@ export function registerIllustrationRoutes(
         "invalid estimate request; Phase 1 supports scope=all",
         400,
       );
+    const catalog = await availableCatalog();
+    if (deps.resolveCatalog && body.data.modelId !== catalog.defaultModelId)
+      throw new VisualError("image model changed; request a new estimate", 409);
     return createVisualEstimate(
       pool,
-      await availableCatalog(),
+      catalog,
       ids(request.params).id,
       request.user!.id,
       body.data.modelId,

@@ -37,7 +37,7 @@ function covers(config: string, seg: string): boolean {
   );
 }
 
-const ADMIN_PATHS = [...apiPathsUsedBy(read("web-admin/src/api.ts")), "images", "image-models"];
+const ADMIN_PATHS = [...apiPathsUsedBy(read("web-admin/src/api.ts")), "images", "image-models", "generation-settings"];
 const LEARNER_PATHS = [...apiPathsUsedBy(read("web-learner/src/api.ts")), "images"];
 
 describe("api client 用到的路徑抽取", () => {

@@ -22,6 +22,8 @@ import {
   type TtsClient,
   type AudioFormat,
   type BackoffOpts,
+  type Job,
+  type ArticleGenerationSnapshot,
 } from "@el/shared";
 
 /**
@@ -48,6 +50,8 @@ export interface WorkerDeps {
   ttsClient: TtsClient;
   voiceEn: string;
   voiceZh: string;
+  /** 正式環境依 job 的設定快照建立 client；未提供時保留測試注入。 */
+  resolveGeneration?: (job: Job) => Promise<Pick<WorkerDeps, "translateClient" | "ttsClient" | "voiceEn" | "voiceZh">>;
   audioDir: string;
   audioFormat: AudioFormat;
   /** 達此嘗試次數仍失敗才標 failed；未達則自動退回 pending 重試。 */
@@ -76,10 +80,23 @@ export async function ensureArticleTranslations(
   db: Queryable,
   translateClient: TranslateClient,
   articleId: number,
+  generationSnapshot?: ArticleGenerationSnapshot | null,
 ): Promise<void> {
   const paragraphs = await listParagraphsByArticle(db, articleId);
   const missing = paragraphs.filter((p) => p.translation == null);
   if (missing.length <= 1) return; // 單段直接走逐段路徑，不多花一次批次呼叫
+  // 手動重生可能讓同篇待譯段落使用不同模型；批次只能涵蓋相同設定。
+  if (generationSnapshot !== undefined) {
+    const incompatible = await db.query(
+      `SELECT 1 FROM jobs
+        WHERE article_id = $1 AND paragraph_id = ANY($2::bigint[])
+          AND generation_snapshot->'translation' IS DISTINCT FROM $3::jsonb
+        LIMIT 1`,
+      [articleId, missing.map((p) => p.id), generationSnapshot
+        ? JSON.stringify(generationSnapshot.translation) : null],
+    );
+    if (incompatible.rows.length > 0) return;
+  }
   try {
     const translations = await generateTranslations(
       missing.map((p) => p.text),
@@ -103,6 +120,7 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
   try {
     const paragraph = await getParagraphById(deps.pool, job.paragraphId);
     if (!paragraph) throw new Error(`paragraph ${job.paragraphId} not found`);
+    const generation = deps.resolveGeneration ? await deps.resolveGeneration(job) : deps;
 
     // 認領後文章進入 processing（僅當仍為 pending，不覆寫 sibling 造成的終態）。
     await markArticleProcessingIfPending(deps.pool, job.articleId);
@@ -111,12 +129,12 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
     // 缺翻譯先嘗試文章級批次；批次未涵蓋（單段文章／批次失敗）退回單段。
     let translation = paragraph.translation;
     if (translation == null) {
-      await ensureArticleTranslations(deps.pool, deps.translateClient, job.articleId);
+      await ensureArticleTranslations(deps.pool, generation.translateClient, job.articleId, job.generationSnapshot);
       translation =
         (await getParagraphById(deps.pool, job.paragraphId))?.translation ?? null;
     }
     if (translation == null) {
-      translation = await translateParagraph(paragraph.text, deps.translateClient);
+      translation = await translateParagraph(paragraph.text, generation.translateClient);
     }
 
     // 只重做目前為 null 的音檔（單段部分重生：見 clearParagraphResult）。
@@ -125,8 +143,8 @@ export async function processNextJob(deps: WorkerDeps): Promise<boolean> {
     const needEn = paragraph.enAudioPath == null;
     const needZh = paragraph.zhAudioPath == null;
     const [en, zh] = await Promise.all([
-      needEn ? deps.ttsClient.synthesize(paragraph.text, deps.voiceEn) : null,
-      needZh ? deps.ttsClient.synthesize(translation, deps.voiceZh) : null,
+      needEn ? generation.ttsClient.synthesize(paragraph.text, generation.voiceEn) : null,
+      needZh ? generation.ttsClient.synthesize(translation, generation.voiceZh) : null,
     ]);
     const enAudioPath = en
       ? await writeAudioEncoded(

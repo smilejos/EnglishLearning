@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "text": [
+    { "provider": "google", "model": "gemini-3.8-flash", "label": "Gemini 3.8 Flash" },
+    { "provider": "google", "model": "gemini-2.5-flash", "label": "Gemini 2.5 Flash" },
+    { "provider": "google", "model": "gemini-2.5-pro", "label": "Gemini 2.5 Pro" },
+    { "provider": "openai", "model": "gpt-4.1-mini", "label": "GPT-4.1 mini" },
+    { "provider": "openai", "model": "gpt-4.1", "label": "GPT-4.1" }
+  ],
+  "speech": [
+    { "provider": "google", "model": "gemini-2.5-flash-tts", "label": "Gemini 2.5 Flash TTS" },
+    { "provider": "google", "model": "gemini-2.5-pro-tts", "label": "Gemini 2.5 Pro TTS" },
+    { "provider": "openai", "model": "gpt-4o-mini-tts", "label": "GPT-4o mini TTS" }
+  ],
+  "voices": {
+    "google": ["Achernar", "Achird", "Algenib", "Algieba", "Alnilam", "Aoede", "Autonoe", "Callirrhoe", "Charon", "Despina", "Enceladus", "Erinome", "Fenrir", "Gacrux", "Iapetus", "Kore", "Laomedeia", "Leda", "Orus", "Puck", "Pulcherrima", "Rasalgethi", "Sadachbia", "Sadaltager", "Schedar", "Sulafat", "Umbriel", "Vindemiatrix", "Zephyr", "Zubenelgenubi"],
+    "openai": ["alloy", "ash", "ballad", "coral", "echo", "fable", "nova", "onyx", "sage", "shimmer", "verse", "marin", "cedar"]
+  },
+  "defaults": {
+    "text": { "provider": "google", "model": "gemini-2.5-flash" },
+    "speech": { "provider": "google", "model": "gemini-2.5-flash-tts", "voiceEn": "Kore", "voiceZh": "Kore" }
+  }
+}

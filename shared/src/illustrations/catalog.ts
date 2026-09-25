@@ -114,6 +114,7 @@ export const PricingSchema = z.discriminatedUnion("billingModel", [
 ]);
 export const PlannerConfigSchema = z
   .object({
+    provider: z.enum(["google", "openai"]).optional(),
     apiModel: z.string().regex(/^[a-zA-Z0-9._-]+$/),
     inputUsdPerMillion: positive,
     outputUsdPerMillion: positive,
@@ -131,6 +132,20 @@ export interface ImageCatalog {
   models: ImageModel[];
   pricing: ImagePricing[];
   planner: PlannerConfig;
+  plannerProfiles?: PlannerConfig[];
+}
+
+/** 估價與執行版本共用同一份規劃器費率快照。 */
+export function plannerForSelection(
+  base: PlannerConfig,
+  selection: { provider: "google" | "openai"; model: string },
+  alternates: PlannerConfig[] = [],
+): PlannerConfig {
+  const profile = [base, ...alternates].find((row) =>
+    (row.provider ?? "google") === selection.provider && row.apiModel === selection.model,
+  );
+  if (profile) return { ...profile, provider: selection.provider };
+  throw new Error("image planner model has no verified pricing profile");
 }
 export function parseImageCatalog(
   modelsInput: unknown,
@@ -149,6 +164,7 @@ export function parseImageCatalog(
       schemaVersion: z.literal(1),
       profiles: z.array(PricingSchema).min(1),
       planner: PlannerConfigSchema,
+      plannerProfiles: z.array(PlannerConfigSchema).optional(),
     })
     .strict()
     .safeParse(pricingInput);
@@ -161,6 +177,9 @@ export function parseImageCatalog(
     errors.push("duplicate model ID");
   if (new Set(p.data.profiles.map((v) => v.id)).size !== p.data.profiles.length)
     errors.push("duplicate pricing ID");
+  const planners = [p.data.planner, ...(p.data.plannerProfiles ?? [])];
+  if (new Set(planners.map((v) => `${v.provider ?? "google"}:${v.apiModel}`)).size !== planners.length)
+    errors.push("duplicate planner pricing profile");
   if (!m.data.models.some((v) => v.id === m.data.defaultModelId && v.enabled))
     errors.push("default model must exist and be enabled");
   for (const model of m.data.models) {
@@ -190,6 +209,7 @@ export function parseImageCatalog(
     models: m.data.models,
     pricing: p.data.profiles,
     planner: p.data.planner,
+    plannerProfiles: p.data.plannerProfiles ?? [],
   };
 }
 export function loadImageModelCatalog(

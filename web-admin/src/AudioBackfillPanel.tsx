@@ -18,6 +18,7 @@ export function AudioBackfillPanel({ onBack }: { onBack: () => void }) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const stopRef = useRef(false);
+  const cancelQuotaWaitRef = useRef<(() => void) | null>(null);
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -33,7 +34,7 @@ export function AudioBackfillPanel({ onBack }: { onBack: () => void }) {
 
   useEffect(() => {
     void reload();
-    return () => { stopRef.current = true; };
+    return () => { stopRef.current = true; cancelQuotaWaitRef.current?.(); };
   }, [reload]);
 
   async function fillOne(item: api.MissingAudioTarget) {
@@ -59,20 +60,49 @@ export function AudioBackfillPanel({ onBack }: { onBack: () => void }) {
     let failed = 0;
     let skipped = 0;
     let done = 0;
+    let quotaStopped = false;
+    const waitForQuota = () => new Promise<boolean>(resolve => {
+      const timeout = setTimeout(() => {
+        cancelQuotaWaitRef.current = null;
+        resolve(true);
+      }, 60_000);
+      cancelQuotaWaitRef.current = () => {
+        clearTimeout(timeout);
+        cancelQuotaWaitRef.current = null;
+        resolve(false);
+      };
+    });
     for (const item of items) {
       if (stopRef.current) break;
-      try {
-        const result = await api.backfillAudioTarget(item);
-        if (result.fixedAudio === 1) filled += 1;
-        else if (result.alreadyComplete) skipped += 1;
-        else failed += 1;
-      } catch {
-        failed += 1;
+      let retriedQuota = false;
+      while (!stopRef.current) {
+        try {
+          const result = await api.backfillAudioTarget(item);
+          if (result.fixedAudio === 1) filled += 1;
+          else if (result.alreadyComplete) skipped += 1;
+          else failed += 1;
+          break;
+        } catch (err) {
+          if ((err as Error & { status?: number }).status === 429) {
+            if (!retriedQuota) {
+              retriedQuota = true;
+              setProgress(`${done} / ${items.length}；配額已滿，60 秒後重試`);
+              if (await waitForQuota()) continue;
+              break;
+            }
+            quotaStopped = true;
+            stopRef.current = true;
+          }
+          failed += 1;
+          break;
+        }
       }
+      if (stopRef.current && !quotaStopped) break;
       done += 1;
       setProgress(`${done} / ${items.length}`);
+      if (quotaStopped) break;
     }
-    setMessage(`${stopRef.current ? "已停止。" : "補檔完成。"}成功 ${filled}、已補齊 ${skipped}、失敗 ${failed}。`);
+    setMessage(`${quotaStopped ? "配額仍不足，已停止；稍後可再補剩餘音檔。" : stopRef.current ? "已停止。" : "補檔完成。"}成功 ${filled}、已補齊 ${skipped}、失敗 ${failed}。`);
     setProgress("");
     await reload();
     setBusy(false); setBulk(false);
@@ -95,7 +125,7 @@ export function AudioBackfillPanel({ onBack }: { onBack: () => void }) {
       <span role="status">{loading ? "載入中…" : `待補 ${items.length} 個音檔`}</span>
       <button className="btn btn--ghost btn--sm" onClick={() => void reload()} disabled={busy || loading}>重新整理</button>
       <button className="btn btn--primary btn--sm" onClick={() => void fillAll()} disabled={busy || loading || items.length === 0}>全部補檔</button>
-      {bulk && <button className="btn btn--ghost btn--sm" onClick={() => { stopRef.current = true; }}>停止</button>}
+      {bulk && <button className="btn btn--ghost btn--sm" onClick={() => { stopRef.current = true; cancelQuotaWaitRef.current?.(); }}>停止</button>}
     </div>
     {progress && <p role="status">處理進度：{progress}</p>}
     {message && <p role="status">{message}</p>}

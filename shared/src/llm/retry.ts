@@ -1,6 +1,6 @@
 // LLM 呼叫的共用重試策略（原位於 tts.ts，抽出供 translate／explainWord 共用）。
-// 指數退避 + 配額錯誤快速失敗：429／RESOURCE_EXHAUSTED 在一輪內不會恢復，
-// 重試只是白花時間與配額，直接讓上層（worker 的 job 退避）接手。
+// 指數退避；配額錯誤與永久性的 HTTP 4xx 快速失敗，
+// 避免無效重試耗盡配額，上層（如 worker job）可依情況接手。
 
 export interface RetryOpts {
   retries: number;
@@ -14,6 +14,11 @@ export function isQuotaError(err: unknown): boolean {
   return s.includes("429") || s.includes("RESOURCE_EXHAUSTED");
 }
 
+function isPermanentClientError(err: unknown): boolean {
+  const status = (err as { status?: number } | null)?.status;
+  return typeof status === "number" && status >= 400 && status < 500 && status !== 408;
+}
+
 export async function withRetry<T>(
   fn: () => Promise<T>,
   opts: RetryOpts,
@@ -24,7 +29,7 @@ export async function withRetry<T>(
       return await fn();
     } catch (err) {
       lastErr = err;
-      if (isQuotaError(err)) throw err; // 配額錯誤快速失敗，重試無益
+      if (isQuotaError(err) || isPermanentClientError(err)) throw err;
       if (attempt < opts.retries) {
         const delay = opts.baseDelayMs * Math.pow(2, attempt);
         await new Promise((r) => setTimeout(r, delay));

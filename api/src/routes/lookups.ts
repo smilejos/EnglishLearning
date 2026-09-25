@@ -24,6 +24,7 @@ import {
   listExplanationsByArticle,
   deleteExplanation,
   removeAudioDir,
+  isQuotaError,
   type DbPool,
   type ExplainClient,
   type TtsClient,
@@ -41,6 +42,8 @@ export interface LookupDeps {
   voiceEn: string;
   audioDir: string;
   audioFormat: AudioFormat;
+  /** 正式環境於每次新操作取得全站設定；測試可保留固定 mock client。 */
+  resolveGeneration?: () => Promise<Pick<LookupDeps, "explainClient" | "ttsClient" | "voiceEn">>;
 }
 
 export function registerLookupRoutes(
@@ -140,14 +143,17 @@ export function registerLookupRoutes(
     text: string,
     voice: string,
     relBase: string,
+    generation: Pick<LookupDeps, "ttsClient"> = deps,
+    throwOnError = false,
   ): Promise<string | null> => {
     try {
-      const { wav } = await deps.ttsClient.synthesize(text, voice);
+      const { wav } = await generation.ttsClient.synthesize(text, voice);
       return await writeAudioEncoded(deps.audioDir, relBase, wav, {
         format: deps.audioFormat,
       });
     } catch (err) {
       log.warn({ evt: "tts_failed", rel: relBase, err: (err as Error).message });
+      if (throwOnError) throw err;
       return null;
     }
   };
@@ -162,10 +168,11 @@ export function registerLookupRoutes(
       en_explanation: string;
       en_example: string;
     },
+    generation: Pick<LookupDeps, "ttsClient" | "voiceEn">,
   ): Promise<void> => {
     try {
       if (!word.enAudioPath) {
-        const p = await trySynth(log, word.normalizedWord, deps.voiceEn, `words/${word.id}/en`);
+        const p = await trySynth(log, word.normalizedWord, generation.voiceEn, `words/${word.id}/en`, generation);
         if (p) await setWordEnAudioPath(pool, word.id, p);
       }
       const base = `words/${word.id}/a${articleId}`;
@@ -173,8 +180,8 @@ export function registerLookupRoutes(
         enExplanationAudioPath,
         enExampleAudioPath,
       ] = await Promise.all([
-        trySynth(log, content.en_explanation, deps.voiceEn, `${base}/en_explanation`),
-        trySynth(log, content.en_example, deps.voiceEn, `${base}/en_example`),
+        trySynth(log, content.en_explanation, generation.voiceEn, `${base}/en_explanation`, generation),
+        trySynth(log, content.en_example, generation.voiceEn, `${base}/en_example`, generation),
       ]);
       await updateExplanationAudioPaths(pool, explanationId, {
         enExplanationAudioPath,
@@ -241,10 +248,11 @@ export function registerLookupRoutes(
     }
 
     // 未命中：產生解釋文字，先寫入（音檔欄位 null）→ 立即回傳；音檔背景補產。
+    const generation = deps.resolveGeneration ? await deps.resolveGeneration() : deps;
     const content = await explainWord(
       normalized,
       paragraph.text,
-      deps.explainClient,
+      generation.explainClient,
     );
 
     let explanation;
@@ -285,6 +293,7 @@ export function registerLookupRoutes(
       articleId,
       explanation.id,
       content,
+      generation,
     );
 
     request.log.info({
@@ -305,6 +314,7 @@ export function registerLookupRoutes(
     "/lookups/backfill-audio",
     { preHandler: requireAdmin },
     async (request, reply) => {
+      const generation = deps.resolveGeneration ? await deps.resolveGeneration() : deps;
       if (request.body !== undefined) {
         const body = request.body as { kind?: unknown; id?: unknown } | null;
         const kind = body?.kind;
@@ -318,8 +328,13 @@ export function registerLookupRoutes(
         const relBase = target.kind === "word"
           ? `words/${target.wordId}/en`
           : `words/${target.wordId}/a${target.articleId}/${target.kind === "enExplanation" ? "en_explanation" : "en_example"}`;
-        const path = await trySynth(request.log, target.text, deps.voiceEn, relBase);
-        if (!path) return { fixedAudio: 0, alreadyComplete: false };
+        let path: string;
+        try {
+          path = (await trySynth(request.log, target.text, generation.voiceEn, relBase, generation, true))!;
+        } catch (err) {
+          if (isQuotaError(err)) return reply.code(429).send({ error: "語音服務每分鐘配額已滿" });
+          return reply.code(502).send({ error: "語音服務或音檔儲存失敗，請查看 API 日誌" });
+        }
         if (target.kind === "word") await setWordEnAudioPath(pool, target.id, path);
         else await updateExplanationAudioPaths(pool, target.id,
           target.kind === "enExplanation"
@@ -332,7 +347,7 @@ export function registerLookupRoutes(
       let fixed = 0;
 
       for (const w of words) {
-        const p = await trySynth(request.log, w.normalizedWord, deps.voiceEn, `words/${w.id}/en`);
+        const p = await trySynth(request.log, w.normalizedWord, generation.voiceEn, `words/${w.id}/en`, generation);
         if (p) {
           await setWordEnAudioPath(pool, w.id, p);
           fixed += 1;
@@ -343,9 +358,9 @@ export function registerLookupRoutes(
         const base = `words/${e.wordId}/a${e.articleId}`;
         const patch: ExplanationAudioPaths = {};
         if (e.enExplanation && !e.enExplanationAudioPath)
-          patch.enExplanationAudioPath = await trySynth(request.log, e.enExplanation, deps.voiceEn, `${base}/en_explanation`);
+          patch.enExplanationAudioPath = await trySynth(request.log, e.enExplanation, generation.voiceEn, `${base}/en_explanation`, generation);
         if (e.enExample && !e.enExampleAudioPath)
-          patch.enExampleAudioPath = await trySynth(request.log, e.enExample, deps.voiceEn, `${base}/en_example`);
+          patch.enExampleAudioPath = await trySynth(request.log, e.enExample, generation.voiceEn, `${base}/en_example`, generation);
         const got = Object.values(patch).filter(Boolean).length;
         if (got > 0) await updateExplanationAudioPaths(pool, e.id, patch);
         fixed += got;

@@ -9,7 +9,7 @@
 ## 功能現況
 
 - 後台（web-admin）：上傳文章（自動切段）、輪詢處理狀態、重試失敗段落、刪除文章、
-  編輯文章資訊（教材別／年級單元難度／分類／標籤）、分類與標籤管理、平台統計。
+  編輯文章資訊（教材別／年級單元難度／分類／標籤）、分類與標籤管理、平台統計、生成設定。
 - 前台（web-learner）：文章清單（教材別＋年級／單元／難度／分類／標籤篩選、標題搜尋）、
   逐段連續播放（時間軸拖曳／倍速／循環）、逐段翻譯切換、點字彈窗（跨文章累積解釋、六組語音）。
 - 佇列：DB-backed（`jobs` 表），原子認領、自動重試（上限可調）、stuck-job 回收。
@@ -40,11 +40,37 @@ open http://localhost:8082    # 前台
 ```
 
 部署腳本預設啟用 `images` profile，完整 `up`／`deploy`／`rebuild` 會包含 `image-worker`；
-也可用 `./scripts/deploy.sh up image-worker` 單獨啟動。請先設定已啟用圖片模型所需的憑證
-（預設為 `OPENAI_API_KEY` 與 `GEMINI_API_KEY`）。
+也可用 `./scripts/deploy.sh up image-worker` 單獨啟動。Compose 請設定選用供應商的
+`OPENAI_API_KEY` 或 Google Vertex AI 憑證。使用 Google 時設定 `GOOGLE_CLOUD_PROJECT=myview-498623`、
+`GOOGLE_CLOUD_LOCATION=global`，並提供綁定 service account 且允許 Agent Platform API 的
+`GEMINI_API_KEY`；也可掛載 ADC 憑證並以 `GOOGLE_APPLICATION_CREDENTIALS` 指向容器內路徑。
+Google 的文字、語音、圖片規劃與圖檔請求皆送往 `aiplatform.googleapis.com`。正式呼叫前須確認
+專案已啟用 API、service account 具有 Vertex AI 呼叫權限；一般測試不會驗證實際雲端權限。
 
-`.env` 由 `.env.example` 自動建立；正式環境需填 `GEMINI_API_KEY` 並看「上線前檢查清單」。
+`.env` 由 `.env.example` 自動建立；正式環境至少設定要使用的供應商憑證，並看「上線前檢查清單」。
 `AUDIO_FORMAT=m4a`（預設）——新音檔以 AAC 儲存，舊音檔照舊可播。
+初始設定使用 Google 處理翻譯、解釋、規劃與語音，使用 OpenAI 產圖；若只設定一方憑證，
+先在後台將三項設定都改選該供應商，再開始建立文章或插圖。
+
+管理後台「生成設定」分為文字、語音、圖片三項，分別選擇 Google／OpenAI 供應商及模型；
+語音另可選中英文聲線。文字設定共用於文章翻譯、單字解釋及圖片全文規劃。
+設定儲存在資料庫，API、文章 worker、圖片 worker 共用。新增文章時將文字模型與音檔設定存入 job 快照；自動重試沿用快照，
+手動重生改用當下設定。新單字解釋與補檔讀取當下設定；插圖估價與版本使用選定模型和
+規劃器快照。設定更新不會自動重生既有內容。
+
+可選模型維護在 `config/`：`generation-models.json` 管共用文字、語音模型與聲線；
+`image-models.json` 管圖檔模型。新增文字模型時，還須在
+`image-pricing.json` 加入對應的圖片規劃費率，否則後台拒絕儲存該選項。
+Gemini 2.5 Pro 的規劃估價採官方較高用量級距，供預算保守估算。
+文字清單另提供 Vertex AI `gemini-3.8-flash`；其規劃費率目前採 Google 公布的優惠價，
+2027-01-01 起價格會調整，屆時須更新 `image-pricing.json`。`gemini-3.8-flash-lite-tts`
+目前只有 Gemini API 文件可確認，Vertex AI `global` 未列為可用語音模型，因此未放入語音清單。
+三個後端行程啟動時讀取設定檔；修改後需重啟服務，已儲存的模型選擇不會自動改變。
+上述設定檔可為既有 Google／OpenAI 供應商加模型；新增第三方供應商仍須實作相應 client。
+
+此功能新增 `generation_settings` 表與 `jobs.generation_snapshot` 欄位。正式資料庫套用
+migration 屬正式庫寫入，執行部署或 migration 前先確認目標與授權；一般驗證使用測試庫。
+由舊版五項設定升級時，migration 以原「文章翻譯」模型作為新的共用文字模型；既有文章工作快照仍沿用原本模型。
 
 ## 測試
 
@@ -70,7 +96,7 @@ npm run test:db:down  # 收掉測試庫
 ```
 
 proxy 將整個 `proxy/` 目錄唯讀掛載到 nginx 的 `conf.d/`，修改 `proxy/nginx.conf`
-後由部署腳本檢查並 reload。若從舊版的**單檔掛載**升級，需只重建一次 proxy
+後由部署腳本在新前端啟動前先檢查並 reload，啟動後再重讀一次。若從舊版的**單檔掛載**升級，需只重建一次 proxy
 容器以套用新掛載；單純 `restart` 不會更換掛載：
 
 ```bash

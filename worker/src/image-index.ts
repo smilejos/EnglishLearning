@@ -4,11 +4,12 @@ import {
   loadConfig,
   loadImageModelCatalog,
   createPool,
-  apiKeyAuthorizer,
+  createVertexAuthorizer,
   serviceAccountAuthorizer,
   OpenAIImageAdapter,
   GeminiImageAdapter,
   GeminiVisualPlanner,
+  OpenAIVisualPlanner,
   LocalImageStorage,
   processImageJob,
   recoverImageJobs,
@@ -25,27 +26,16 @@ const catalog = loadImageModelCatalog(
 const key = process.env.OPENAI_API_KEY_FILE
   ? readFileSync(process.env.OPENAI_API_KEY_FILE, "utf8").trim()
   : process.env.OPENAI_API_KEY?.trim();
-const auth = config.gemini.apiKey
-  ? apiKeyAuthorizer(config.gemini.apiKey)
-  : serviceAccountAuthorizer();
+const vertexAuth = createVertexAuthorizer(config.gemini);
+const auth = vertexAuth ?? serviceAccountAuthorizer(config.gemini.project, config.gemini.location);
 const adapters: Record<string, ImageAdapter> = {};
 if (key && key !== "dev-placeholder")
   adapters["openai-images-v1"] = new OpenAIImageAdapter(key);
-if (
-  (config.gemini.apiKey && config.gemini.apiKey !== "dev-placeholder") ||
-  config.gemini.credentialsPath
-)
+if (vertexAuth)
   adapters["gemini-generate-content-v1beta"] = new GeminiImageAdapter(auth);
 const enabled = catalog.models.filter((m) => m.enabled);
-const missing = enabled.filter((m) => !adapters[m.adapter]);
-if (!adapters["gemini-generate-content-v1beta"])
-  throw new Error(
-    "Gemini planner requires a real API key or service-account credentials",
-  );
-if (missing.length)
-  throw new Error(
-    `Missing image-worker credentials for enabled models: ${missing.map((m) => m.id).join(", ")}. Configure credentials or disable those catalog entries.`,
-  );
+const available = enabled.filter((m) => Boolean(adapters[m.adapter]));
+if (available.length === 0) throw new Error("No configured image provider credentials");
 const pool = createPool(config.databaseUrl);
 const storage = new LocalImageStorage(config.images.directory, pool);
 const deps = {
@@ -53,6 +43,15 @@ const deps = {
   storage,
   adapters,
   planner: new GeminiVisualPlanner(auth),
+  plannerFor: (snapshot: { provider?: "google" | "openai" }) => {
+    if (snapshot.provider === "openai") {
+      if (!key || key === "dev-placeholder") throw new Error("OpenAI planner credentials unavailable");
+      return new OpenAIVisualPlanner(key);
+    }
+    if (!vertexAuth)
+      throw new Error("Google planner credentials unavailable");
+    return new GeminiVisualPlanner(auth);
+  },
 };
 const workerId = randomUUID();
 let stopped = false;
@@ -67,7 +66,7 @@ const announce = () =>
     "INSERT INTO image_worker_heartbeats(id,models) VALUES($1,$2) ON CONFLICT(id) DO UPDATE SET models=excluded.models,updated_at=now()",
     [
       workerId,
-      JSON.stringify(enabled.map((m) => ({ id: m.id, hash: visualHash(m) }))),
+      JSON.stringify(available.map((m) => ({ id: m.id, hash: visualHash(m) }))),
     ],
   );
 await announce();

@@ -12,9 +12,11 @@ import { registerVocabularyRoutes } from "./routes/vocabulary";
 import { registerUserRoutes } from "./routes/users";
 import type { LookupLimiter } from "./rateLimit";
 import { registerIllustrationRoutes, type IllustrationDeps } from "./routes/illustrations";
+import { registerGenerationSettingsRoutes, type GenerationSettingsRouteDeps } from "./routes/generationSettings";
 
 export interface BuildAppOpts {
   illustrations?: IllustrationDeps;
+  generationSettings?: GenerationSettingsRouteDeps;
   config: AuthConfig;
   pool: DbPool;
   /** 靜態音檔來源目錄（AUDIO_DIR）；提供時掛載 /audio/*。 */
@@ -56,6 +58,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   // 業務路由。
   registerArticleRoutes(app, opts.pool, opts.audioDir);
   if (opts.illustrations) registerIllustrationRoutes(app, opts.pool, opts.illustrations);
+  if (opts.generationSettings) registerGenerationSettingsRoutes(app, opts.pool, opts.generationSettings);
   registerTaxonomyRoutes(app, opts.pool);
   registerVocabularyRoutes(app, opts.pool);
   registerLookupRoutes(app, opts.pool, opts.audioDir, opts.lookupDeps, opts.lookupLimiter);

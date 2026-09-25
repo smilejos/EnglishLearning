@@ -449,6 +449,28 @@ describe("重試退避", () => {
 });
 
 describe("文章級批次翻譯", () => {
+  it("同篇段落的模型快照不同時分別翻譯", async () => {
+    const article = await createArticle(pool, { title: "Mixed models" });
+    const p0 = await createParagraph(pool, { articleId: article.id, idx: 0, text: "First." });
+    const p1 = await createParagraph(pool, { articleId: article.id, idx: 1, text: "Second." });
+    const speech = { provider: "google" as const, model: "gemini-2.5-flash-preview-tts", voiceEn: "Kore", voiceZh: "Kore" };
+    await createJob(pool, article.id, p0.id, { translation: { provider: "google", model: "gemini-2.5-flash" }, speech });
+    await createJob(pool, article.id, p1.id, { translation: { provider: "openai", model: "gpt-4.1-mini" }, speech });
+    const google = echoTranslate();
+    const openai = echoTranslate();
+    const deps = makeDeps({ resolveGeneration: async (job) => ({
+      translateClient: job.generationSnapshot?.translation.provider === "openai" ? openai : google,
+      ttsClient: okTts(), voiceEn: "Kore", voiceZh: "Kore",
+    }) });
+
+    await drainQueue(deps);
+
+    expect(google.complete).toHaveBeenCalledTimes(1);
+    expect(openai.complete).toHaveBeenCalledTimes(1);
+    const paragraphs = await listParagraphsByArticle(pool, article.id);
+    expect(paragraphs.map((p) => p.translation)).toEqual(["譯:First.", "譯:Second."]);
+  });
+
   it("兩段文章：翻譯只呼叫 LLM 1 次，各段譯文正確落位", async () => {
     const article = await createArticle(pool, { title: "Batch" });
     const p0 = await createParagraph(pool, { articleId: article.id, idx: 0, text: "First." });

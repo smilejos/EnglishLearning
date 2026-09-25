@@ -33,7 +33,7 @@ export class GeminiTtsClient implements TtsClient {
 
   constructor(opts: GeminiTtsOptions) {
     this.auth = opts.auth;
-    this.model = opts.model ?? "gemini-2.5-flash-preview-tts";
+    this.model = opts.model ?? "gemini-2.5-flash-tts";
     this.retries = opts.retries ?? 5;
   }
 
@@ -43,7 +43,7 @@ export class GeminiTtsClient implements TtsClient {
         const res = await generateContent(
           this.model,
           {
-            contents: [{ parts: [{ text }] }],
+            contents: [{ role: "user", parts: [{ text }] }],
             generationConfig: {
               responseModalities: ["AUDIO"],
               speechConfig: {

@@ -1,7 +1,7 @@
 # 專案架構與功能導覽（以程式碼為準）
 
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-09-25（單字音訊、後台補檔清單與單字複習介面）。原始分析時已於本機 Docker 套用 migration、重建啟動供試用。
+> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-09-26（Google Vertex AI 語音請求與補檔配額處理）。原始分析時已於本機 Docker 套用 migration、重建啟動供試用；本次生成設定與 Vertex AI 變更尚未套用正式資料庫或部署。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理，未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 ## 1. 先讀這裡：專案目的與全貌
@@ -40,10 +40,10 @@ flowchart TD
     API --> DB[(PostgreSQL 16)]
     Worker[文章 worker] --> DB
     ImageWorker[image-worker] --> DB
-    Worker --> Gemini[Gemini 翻譯／TTS]
-    API --> Explain[Gemini 單字解釋／TTS]
-    ImageWorker --> Planner[Gemini 全文圖片規劃]
-    ImageWorker --> ImageAPI[OpenAI／Gemini 圖片 API]
+    Worker --> TextSpeech[Vertex AI／OpenAI 翻譯與 TTS]
+    API --> Explain[Vertex AI／OpenAI 單字解釋與 TTS]
+    ImageWorker --> Planner[Vertex AI／OpenAI 全文圖片規劃]
+    ImageWorker --> ImageAPI[Vertex AI／OpenAI 圖片 API]
     Worker --> Audio[(audio volume)]
     API --> Audio
     ImageWorker --> Images[(images volume)]
@@ -60,13 +60,13 @@ flowchart TD
 | `worker/src/image-index.ts` | 圖片服務獨立入口；和文章 worker 使用同一 Docker image，但為另一個行程／服務 |
 | `shared/src/repo/` | 核心實體的參數化 SQL、查詢、camelCase 映射 |
 | `shared/src/db.ts`、`config.ts`、`schemas.ts` | DB pool／交易、環境設定驗證、核心 Zod 契約 |
-| `shared/src/llm/` | Gemini 授權、HTTP、翻譯、單字解釋、TTS、重試與 PCM/WAV |
+| `shared/src/llm/`、`generationSettings.ts`、`generationClients.ts` | Google／OpenAI 文字與語音 client、載入 config 模型清單／驗證及依工作設定建立 client |
 | `shared/src/audioFiles.ts`、`audioEncode.ts` | 共用音檔寫入／刪除與 ffmpeg 編碼 |
 | `shared/src/illustrations/` | 圖片契約、模型／價格目錄、版本與審核、佇列、供應商、檔案儲存 |
 | `web-learner/src/` | React 學習前台；`App.tsx`、`useArticlePlayer.ts`、`AudioBar.tsx`、`Illustration.tsx` |
-| `web-admin/src/` | React 後台；`App.tsx` 管主要頁面，`AudioBackfillPanel.tsx` 管缺失音檔清單與補檔，`Illustrations.tsx` 管圖片生命週期 |
+| `web-admin/src/` | React 後台；`App.tsx` 管主要頁面，`GenerationSettings.tsx` 管文字／語音／圖片三項生成設定，`AudioBackfillPanel.tsx` 管缺失音檔，`Illustrations.tsx` 管圖片生命週期 |
 | `migrations/` | DB 結構的可執行演進；不能只讀初始 migration 判定現況 |
-| `config/image-models.json`、`image-pricing.json` | 圖片模型、生成參數、價格與 planner 設定 |
+| `config/generation-models.json`、`image-models.json`、`image-pricing.json` | 共用文字／語音模型與聲線、圖檔模型與參數、圖片及規劃費率 |
 | `docker-compose.yml`、各 Dockerfile | 部署服務、相依啟動順序、掛載、ports、healthcheck |
 | `proxy/nginx.conf`、兩個前端 nginx／Vite 設定 | 正式與開發環境的路徑轉發 |
 | `scripts/`、`fixtures/seed/` | 部署、備份、免 LLM 示範資料匯入 |
@@ -88,6 +88,7 @@ flowchart TD
 | 文章新增／修改 metadata／刪除／重試／重生 | 不可 | 不可 | 可 |
 | 分類標籤異動、單字解釋刪除、補音檔 | 不可 | 不可 | 可 |
 | 插圖估價／生成／審核／發布、查看草稿圖 | 不可 | 不可 | 可 |
+| 讀寫生成供應商與模型設定 | 不可 | 不可 | 可 |
 | 統計、使用者角色管理 | 不可 | 不可 | 可 |
 
 `reviewer` 是單字內容產生權限；名稱不表示具有圖片審核權限。後台介面不是最終安全邊界，權限由 API `requireAdmin`／`requireReviewer` 判斷。
@@ -152,6 +153,7 @@ flowchart TD
 | 使用者 | 列表、最後出現時間、reader／reviewer 指派及預先指派 |
 | 統計 | 文章／段落／文章 jobs 狀態數、單字／解釋數、當日受限流計數；不是個人學習分析 |
 | AI 圖片 | 可用模型、估價／預算、版本清單、生成狀態、候選 prompt、圖片與教學詞位置審核、重生／略過、取消／刪除／發布 |
+| 生成設定 | 文字、語音、圖片各自選 Google／OpenAI 與模型；文字共用於翻譯、單字解釋與圖片全文規劃，語音可選中英文聲線。顯示憑證可用狀態，儲存採版本檢查 |
 
 文章列表與詳情每 3 秒輪詢，統計每 5 秒，圖片面板每 3 秒。沒有 WebSocket／SSE。後台主要用 `view` state 換頁，沒有完整的 React Router 路由表。
 
@@ -160,9 +162,9 @@ flowchart TD
 入口：`api/src/routes/articles.ts` → `shared/src/repo/{articles,paragraphs,jobs}.ts` → `worker/src/processor.ts`。
 
 1. `POST /articles` 驗證 JSON，`splitParagraphs` 以空白行切段並去除空段。
-2. 同一 DB transaction 建立文章、分類／標籤關聯、依序 `idx` 的段落，以及每段一個 job；回 `202 { id }`，不等待 AI 完成。
+2. 同一 DB transaction 讀取生成設定，建立文章、分類／標籤關聯、依序 `idx` 的段落，以及每段一個帶翻譯與音檔設定快照的 job；回 `202 { id }`，不等待 AI 完成。
 3. worker 用 `claimNextJob` 原子認領一筆到期 pending job，或回收超過期限的 processing job；使用 `FOR UPDATE SKIP LOCKED`，認領時增加 attempts。
-4. 缺翻譯且同篇有多個缺譯段落時，先嘗試批次翻譯；批次失敗回退逐段。已有翻譯沿用。
+4. 缺翻譯且同篇有多個缺譯段落、其翻譯模型快照相同時，先嘗試批次翻譯；批次失敗或快照不同時回退逐段。已有翻譯沿用。
 5. 缺英文／中文音檔才呼叫 TTS；同段的兩種語言並行。檔案在 DB transaction 外寫入。
 6. 成功後以 transaction 更新段落與 job 為 done，重算文章狀態。
 
@@ -173,11 +175,12 @@ flowchart TD
 手動處理：
 
 - 整篇 retry 只重設 failed 段落／jobs，attempts 歸零、立即可取，文章設為 processing。
+- 自動重試與整篇 failed retry 沿用原 job 設定快照；單段手動重生改取當下生成設定。遷移前沒有快照的舊 job 在處理時取當下設定。
 - `scope=translation` 清翻譯及中文音檔，保留英文音檔。
 - `scope=audio-en` 或 `audio-zh` 只清指定音檔；worker 依 null 欄位決定重做內容。
 - 刪文章由 DB cascade 清段落、jobs、文章解釋與圖片版本等；API 盡力刪文章／解釋音檔目錄，保留跨文章共用單字發音。圖片檔案由獨立 cleanup queue 處理。
 
-LLM 層另有短期重試與 HTTP timeout；它和 DB job 重試是兩層，不能把 attempts 當作實際供應商呼叫次數。一般 Gemini 請求 timeout 預設 60 秒；429／RESOURCE_EXHAUSTED 在 LLM 層快速失敗，交由上層處理。
+LLM 層另有短期重試與 HTTP timeout；它和 DB job 重試是兩層，不能把 attempts 當作實際供應商呼叫次數。一般 Gemini 請求 timeout 預設 60 秒；429／RESOURCE_EXHAUSTED 與不可重試的 HTTP 4xx 在 LLM 層快速失敗，交由上層處理。Vertex AI 語音請求明確帶 `contents.role = "user"`。
 
 ## 7. 語境單字資料流
 
@@ -188,9 +191,9 @@ LLM 層另有短期重試與 HTTP timeout；它和 DB job 重試是兩層，不�
 3. `normalizeWord` 只 trim＋轉小寫，**不做詞形還原**；`run` 與 `running` 是不同 key。
 4. `words` 全站唯一；解釋唯一鍵是 `(word_id, article_id)`，不是 paragraph 或 user。paragraph 提供首次生成的上下文。
 5. 快取命中直接回既有結果，不消耗本次限流額度、不重生音訊。「重新解釋」表示換本篇語境，並非強制覆寫本篇快取。
-6. 未命中先通過 per-user 每分鐘與全站每日限額，預設 10／200，再產生五種文字內容及 `headword`。
+6. 未命中先通過 per-user 每分鐘與全站每日限額，預設 10／200，再讀取當下單字解釋與音檔設定，產生五種文字內容及 `headword`。
 7. 先存文字、回 `201`；API 行程以 fire-and-forget 補單字英文發音、英文解釋與英文例句音檔。中文內容只存文字，不再產生或補齊中文音檔。各 TTS 失敗可留下 null，文字仍可使用。
-8. 前台提交後每 5 秒重抓、最多 4 次；admin 可由缺檔清單逐檔或全部補齊。清單與單檔操作執行時重新檢查缺漏，全部補檔由前台依清單逐列呼叫 API，避免單次請求過長，失敗項保留供重試。並行首查時靠唯一鍵避免重複資料，衝突請求回既有解釋；不保證首查併發只打一次 LLM。
+8. 前台提交後每 5 秒重抓、最多 4 次；admin 可由缺檔清單逐檔或全部補齊。清單與單檔操作執行時重新檢查缺漏，全部補檔由前台依清單逐列呼叫 API，避免單次請求過長；遇供應商 429 配額限制會等待 60 秒後重試同一筆，若仍受限就停止並保留剩餘清單。其他失敗項保留供重試。並行首查時靠唯一鍵避免重複資料，衝突請求回既有解釋；不保證首查併發只打一次 LLM。
 
 五組文字內容是：英文解釋、英文例句、繁中翻譯、中文解釋、中文例句。資料庫仍保留舊中文音檔欄位與檔案以相容既有資料，前台不播放；無需清理正式庫。`headword` 可以是原文片語，但快取 key 仍為使用者點的 normalized word。
 
@@ -211,7 +214,7 @@ LLM 層另有短期重試與 HTTP timeout；它和 DB job 重試是兩層，不�
 ### 模型、估價與版本
 
 - `catalog.ts` 驗證模型 provider、adapter、用途參數及對應價格；設定從兩個 JSON 載入，沒有線上自動查價。
-- 程式庫目前設定包含 OpenAI 與 Gemini 圖片模型，planner 使用 Gemini；這只描述 repo 設定，不代表已驗證供應商當日型號、價格或線上可用性。
+- 程式庫目前設定包含 OpenAI 與 Gemini 圖片模型；後台生成設定決定圖檔模型與 Google／OpenAI 全文規劃模型。估價與生成版本保存模型及規劃器快照。這只描述 repo 設定，不代表已驗證供應商當日型號、價格或線上可用性。
 - image-worker 每 15 秒在 DB 宣告模型 ID／設定 hash；API 僅列出最近 60 秒心跳且 hash 相符的模型。
 - 圖片入口要求文章 done、1–200 段；新 run 的 scope 只接受 `{ kind: "all" }`。既有 run 中可針對 slot 重生，不等於支援任意新 run scope。
 - estimate 保存來源／模型／價格 hash 及 snapshot，10 分鐘有效，綁文章與建立者。預估包含 planner、封面、各段插圖及最多一張角色參考圖；預設最高預算為基礎估價兩倍，目前上限 USD 100。
@@ -263,6 +266,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | --- | --- |
 | 使用者 | `users`：email unique，role、last_seen_at；文章／圖片建立及審核者引用 user |
 | 教材 | `articles` 一對多 `paragraphs`；段落 `(article_id, idx)` unique；`jobs` 引用 article 與 paragraph |
+| 生成設定 | `generation_settings` 單筆保存文字、語音、圖片三項設定與版本；`jobs.generation_snapshot` 保存文章翻譯／音檔在建立時的選擇，舊快照仍可沿用 |
 | 分類 | `categories.parent_id` 自我參照樹；文章至多一個 category，刪分類時文章關聯 SET NULL，子分類 CASCADE |
 | 標籤 | `tags(kind,label)` unique；`article_tags` 多對多 |
 | 單字 | `words.normalized_word` unique；`word_explanations(word_id,article_id)` unique，保存 paragraph 脈絡及五組產物 |
@@ -301,6 +305,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | `GET/POST /tags`、`PATCH/DELETE /tags/:id`、`POST /tag-kinds/rename` | 同上 | 同上 |
 | `GET/POST /users`、`PUT /users/:email/role` | admin 使用者管理 | `api/src/routes/users.ts` |
 | `GET /stats` | admin 統計 | `api/src/routes/stats.ts` |
+| `GET/PUT /generation-settings` | admin 讀取可選模型、憑證狀態及更新三項設定；PUT 帶版本避免覆寫 | `api/src/routes/generationSettings.ts` |
 | `GET /image-models`、`POST /articles/:id/illustration-estimates` | admin 可用模型／估價 | `api/src/routes/illustrations.ts` |
 | `GET/POST /articles/:id/illustration-runs` | admin 版本列表／建立 | 同上 |
 | `GET/DELETE /articles/:id/illustration-runs/:runId` | admin 詳情／刪除 | 同上 |
@@ -317,12 +322,14 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 
 Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前端。主入口預設 `8090`；API 綁 `127.0.0.1:8080`，DB 綁 `127.0.0.1:5432`，兩前端另開 `8081`／`8082`。Vite dev 預設為 admin `5173`、learner `5174`。
 
-- 核心設定讀 `shared/src/config.ts`：`DATABASE_URL`、`AUDIO_DIR`、Gemini key／ADC、模型與 voices、Access、admin emails、lookup limits、音訊格式、圖片路徑及 catalog。
-- 一般 LLM 模型與語音由環境變數指定；圖片模型及 planner 設定由 catalog JSON 指定，兩者不是同一個設定來源。
+- 環境設定由 `shared/src/config.ts` 讀取：DB、音檔、選用供應商的憑證、Access、admin emails、lookup limits、音訊格式、圖片路徑及 catalog。Google 與 OpenAI 憑證可擇一或並存。Google 各工作共用 Vertex AI `generateContent`，`GOOGLE_CLOUD_PROJECT` 與 `GOOGLE_CLOUD_LOCATION` 組成端點；`global` 使用 `aiplatform.googleapis.com`。授權優先使用可呼叫 Agent Platform API 的 `GEMINI_API_KEY`，其次使用 `GOOGLE_APPLICATION_CREDENTIALS` 指定的 ADC；無憑證時不列為可用供應商。
+- 文字、語音、圖片三項生成設定存於 DB `generation_settings`，由 admin 的 `/generation-settings` 讀寫。共用文字設定供翻譯、單字解釋與圖片全文規劃使用；可選文字／語音模型與聲線由 `config/generation-models.json` 載入，圖檔模型由 `config/image-models.json` 載入。圖片與規劃費率由 `config/image-pricing.json` 定義，新增文字模型須有規劃費率才可儲存。設定檔在後端行程啟動時讀取，修改後需重啟相關服務；既有工作快照不會自動變更。舊五項設定升級時以「文章翻譯」模型作為共用文字模型。Vertex AI TTS 使用 `gemini-2.5-flash-tts`／`gemini-2.5-pro-tts`；migration 更新目前後台設定中的舊 preview 型號，舊 job 快照在送出時映射，已生成音檔不重做。
+- 文字選項包含 Vertex AI `gemini-3.8-flash`，圖片規劃對此模型使用 `thinkingLevel=LOW`；其規劃費率目前採官方截至 2026-12-31 的優惠價，2027-01-01 須更新價格。`gemini-3.8-flash-lite-tts` 未列入 Vertex AI `global` 可用模型清單，因此語音選項尚未加入它。
 - `VITE_*` 是前端建置設定。Compose 用 `LEARNER_URL_PUBLIC`／`ADMIN_URL_PUBLIC` 轉為 build args；改連結通常要重新 build，不能只重啟舊前端映像。
 - 裸 `docker compose up` 不會啟用 images profile；**`scripts/deploy.sh` 預設加 `--profile images`**，因此完整部署包含 image-worker。tunnel、seed 仍各自為選用 profile。
 - proxy 以 `proxy/` 目錄掛載 nginx 設定，避免單檔掛載在原子替換後指向已刪除 inode；從舊版單檔掛載升級需只重建 proxy 容器，單純 restart 不會更新掛載。
-- image-worker 要有 Gemini planner 憑證，且所有 enabled 模型對應 adapter 都要有憑證，否則啟動失敗；開啟 profile 就可能開始處理既有待辦。
+- 三個後端服務以 `config/` 目錄掛載模型與價格清單，避免編輯器原子替換 JSON 後容器仍讀到舊 inode；從單檔掛載升級需重建相關容器，之後修改清單重啟服務即可讀取。
+- image-worker 至少要有一種可用圖片供應商憑證；只宣告可執行的模型。選定的圖片規劃供應商也要有對應憑證，否則該工作會失敗；開啟 profile 就可能開始處理既有待辦。
 - `/healthz` 只回 API 存活，不查 DB／供應商；文章 worker healthcheck 看 heartbeat 檔，image-worker 的容器 healthcheck 被停用，另以 DB 心跳判斷模型可用性。不能把容器 healthy 等同所有業務流程正常。
 - `scripts/backup.sh` 實際備份 DB custom dump、audio.tgz、images.tgz，預設保留最近 7 份；檔頭註解未完整反映圖片備份，應以執行段落為準。
 
@@ -385,6 +392,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
+| 生成供應商、模型、聲線設定或 Google Vertex AI 端點 | admin `GenerationSettings.tsx`、API `generationSettings.ts`、`shared/src/{generationSettings,generationClients}.ts`、`shared/src/llm/{auth,genai}.ts`、repo、migration、API／worker 入口 |
 | 缺失單字音檔清單／逐檔或全部補檔 | admin `App.tsx`／`AudioBackfillPanel.tsx`、`api/src/routes/lookups.ts`、`shared/src/repo/audioBackfill.ts`、相關測試 |
 | 文章上傳、分類、標籤 | admin `App.tsx`／`lib/meta.ts`、API articles／taxonomy、相關 repo |
 | 角色、登入、403 | `api/src/auth.ts`、users routes／repo、`shared/src/config.ts` |

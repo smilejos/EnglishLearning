@@ -115,15 +115,15 @@ export function Illustrations({ articleId }: { articleId: number }) {
   }, [base, selected]);
   useEffect(() => {
     let active = true;
-    void req<{ models: Model[]; defaultModelId: string }>("/image-models")
-      .then((d) => {
+    void Promise.all([
+      req<{ models: Model[] }>("/image-models"),
+      req<{ settings: { image: { model: string } } }>("/generation-settings"),
+    ])
+      .then(([d, configured]) => {
         if (active) {
           setModels(d.models);
-          setModel(
-            d.models.some((m) => m.id === d.defaultModelId)
-              ? d.defaultModelId
-              : (d.models[0]?.id ?? ""),
-          );
+          setModel(configured.settings.image.model);
+          setQuote(null);
         }
       })
       .catch((e) => {
@@ -170,23 +170,11 @@ export function Illustrations({ articleId }: { articleId: number }) {
         </p>
       )}
       <div className="visual-setup">
-        <label>
-          圖片模型{" "}
-          <select
-            className="field filter__select visual-select"
-            value={model}
-            onChange={(e) => {
-              setModel(e.target.value);
-              setQuote(null);
-            }}
-          >
-            {models.map((m) => (
-              <option key={m.id} value={m.id}>
-                {m.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <div className="visual-model-summary">
+          <strong>全站圖片模型</strong>
+          <span>{models.find((m) => m.id === model)?.label ?? (model || "設定載入中")}</span>
+          <small>可在「生成設定」調整，新的估價會使用當前設定。</small>
+        </div>
         <label>
           最高預算（USD）
           <input
@@ -204,9 +192,15 @@ export function Illustrations({ articleId }: { articleId: number }) {
           />
         </label>
         <button className="btn btn--ghost"
-          disabled={!model || busy}
+          disabled={!model || !models.some((m) => m.id === model) || busy}
           onClick={() =>
             void act(async () => {
+              const current = await req<{ settings: { image: { model: string } } }>("/generation-settings");
+              if (current.settings.image.model !== model) {
+                setModel(current.settings.image.model);
+                setQuote(null);
+                throw new Error("全站圖片模型已更新，請確認後重新估價。");
+              }
               key.current = crypto.randomUUID();
               setQuote(
                 await req<Quote>(
@@ -233,8 +227,8 @@ export function Illustrations({ articleId }: { articleId: number }) {
           估算完整文章費用
         </button>
       </div>
-      {!models.length && (
-        <p>沒有可用模型。請確認圖片 worker 已啟動、模型已啟用且憑證已設定。</p>
+      {!error && model && !models.some((m) => m.id === model) && (
+        <p role="alert" className="error-text">目前設定的圖片模型無法使用。請確認圖片 worker、模型及憑證設定。</p>
       )}
       {models.find((m) => m.id === model) && (
         <small className="visual-note">

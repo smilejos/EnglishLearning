@@ -17,7 +17,12 @@ export async function req<T>(path: string, init?: RequestInit): Promise<T> {
   });
   if (!res.ok) {
     const body = await res.text().catch(() => "");
-    throw new Error(`${res.status} ${res.statusText}: ${body.slice(0, 200)}`);
+    throw Object.assign(new Error(`${res.status} ${res.statusText}: ${body.slice(0, 200)}`), {
+      status: res.status,
+    });
+  }
+  if (res.headers.get("content-type")?.includes("text/html")) {
+    throw new Error("伺服器目前回傳網頁而非設定資料，請稍後重新載入；若持續發生，請檢查 proxy 路由。");
   }
   return (await res.json()) as T;
 }

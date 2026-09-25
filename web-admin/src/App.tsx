@@ -3,6 +3,7 @@ import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
 import { Illustrations } from "./Illustrations";
 import { AudioBackfillPanel } from "./AudioBackfillPanel";
+import { GenerationSettings } from "./GenerationSettings";
 import { normalizeBaseUrl } from "./urls";
 import { uniqSorted } from "./facets";
 import {
@@ -588,10 +589,12 @@ function ArticleList({
   onOpen,
   onEdit,
   onAudioBackfill,
+  onNew,
 }: {
   onOpen: (id: number) => void;
   onEdit: (id: number) => void;
   onAudioBackfill: () => void;
+  onNew: () => void;
 }) {
   const [articles, setArticles] = useState<Article[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -723,6 +726,12 @@ function ArticleList({
             onClick={onAudioBackfill}
           >
             補缺音檔
+          </button>
+          <button
+            className="btn btn--ghost btn--sm"
+            onClick={onNew}
+          >
+            新增文章
           </button>
         </div>
       </div>
@@ -1319,7 +1328,8 @@ type View =
   | "taxonomy"
   | "audio"
   | "words"
-  | "users";
+  | "users"
+  | "settings";
 
 export function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
   const [q, setQ] = useState(initialQuery);
@@ -1549,23 +1559,20 @@ export default function App() {
             >
               使用者
             </button>
-          </nav>
-          {/* 右上角：新增文章。 */}
-          {inArticles && (
             <button
-              className="fab-add"
-              title="新增文章"
-              aria-label="新增文章"
-              onClick={() => setView("new")}
+              className={"topnav__btn" + (view === "settings" ? " on" : "")}
+              onClick={() => setView("settings")}
             >
-              ＋
+              生成設定
             </button>
-          )}
+          </nav>
         </div>
       </header>
       <main className="wrap" style={{ paddingTop: 24, paddingBottom: 60 }}>
         {view === "taxonomy" ? (
           <TaxonomyManager />
+        ) : view === "settings" ? (
+          <GenerationSettings />
         ) : view === "audio" ? (
           <AudioBackfillPanel onBack={goList} />
         ) : view === "users" ? (
@@ -1584,7 +1591,7 @@ export default function App() {
         ) : view === "detail" && openId !== null ? (
           <ArticleView id={openId} onBack={goList} />
         ) : (
-          <ArticleList onOpen={openDetail} onEdit={openEdit} onAudioBackfill={() => setView("audio")} />
+          <ArticleList onOpen={openDetail} onEdit={openEdit} onAudioBackfill={() => setView("audio")} onNew={() => setView("new")} />
         )}
       </main>
     </div>

@@ -491,6 +491,21 @@ describe("POST /lookups（重新解釋）", () => {
       await app.close();
     });
 
+    it("逐檔補齊遇語音配額時回 429 並保留缺失項目", async () => {
+      const article = await createArticle(pool, { title: "Quota" });
+      const word = await getOrCreateWord(pool, "habit");
+      await createExplanation(pool, { wordId: word.id, articleId: article.id, enExplanation: "habit" });
+      const deps = makeDeps();
+      synthSpy.mockRejectedValueOnce(Object.assign(new Error("quota exceeded"), { status: 429 }));
+      const app = buildApp({ config: adminConfig, pool, audioDir, lookupDeps: deps });
+      const res = await app.inject({ method: "POST", url: "/lookups/backfill-audio",
+        payload: { kind: "word", id: word.id } });
+      expect(res.statusCode).toBe(429);
+      expect(res.json().error).toMatch(/配額/);
+      expect((await findWordByNormalized(pool, "habit"))?.enAudioPath).toBeNull();
+      await app.close();
+    });
+
     it("只補齊缺失的單字與英文解釋音檔", async () => {
       const article = await createArticle(pool, { title: "Backfill" });
       const w = await getOrCreateWord(pool, "habit"); // enAudioPath 為 null

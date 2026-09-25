@@ -5,10 +5,12 @@ import {
   OpenAIImageAdapter,
   GeminiImageAdapter,
   GeminiVisualPlanner,
+  OpenAIVisualPlanner,
   ImageProviderError,
 } from "./providers";
-import { apiKeyAuthorizer } from "../llm/auth";
+import type { Authorizer } from "../llm/auth";
 import { examplePlan } from "./testFixtures";
+import { visualPlanJsonSchema } from "./plan-schema";
 const catalog = loadImageModelCatalog(
   new URL("../../../config/image-models.json", import.meta.url).pathname,
   new URL("../../../config/image-pricing.json", import.meta.url).pathname,
@@ -19,14 +21,68 @@ const request = {
   references: [],
   idempotencyKey: "test",
 };
+const vertexEndpoint = (model: string) =>
+  `https://aiplatform.googleapis.com/v1/projects/test-project/locations/global/publishers/google/models/${model}:generateContent`;
+const vertexAuthForKey = (key: string): Authorizer => ({
+  endpoint: vertexEndpoint,
+  headers: async () => ({ "x-goog-api-key": key }),
+  describe: () => "test key",
+});
 describe("image adapters use mocked transport only", () => {
+  it("uses OpenAI structured Responses and preserves planner usage", async () => {
+    const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({
+      status: "completed",
+      output: [{ type: "message", content: [{ type: "output_text", text: JSON.stringify(examplePlan) }] }],
+      usage: { input_tokens: 42, output_tokens: 28, total_tokens: 70 },
+    })));
+    const result = await new OpenAIVisualPlanner("secret", fetcher).plan(catalog.planner, "plan");
+    expect(result.value).toEqual(examplePlan);
+    expect(result.usage).toMatchObject({
+      input_tokens: 42, output_tokens: 28,
+      promptTokenCount: 42, candidatesTokenCount: 28, thoughtsTokenCount: 0,
+    });
+    expect(fetcher.mock.calls[0][0]).toBe("https://api.openai.com/v1/responses");
+    const init = fetcher.mock.calls[0][1];
+    expect(init.headers.Authorization).toBe("Bearer secret");
+    const body = JSON.parse(init.body);
+    expect(body).toMatchObject({
+      model: catalog.planner.apiModel,
+      input: "plan",
+      max_output_tokens: catalog.planner.maxOutputTokens,
+      text: { format: { type: "json_schema", name: "visual_plan", strict: true } },
+    });
+    expect(body.text.format.schema).toEqual(visualPlanJsonSchema);
+  });
+
+  it("returns validation error with usage for incomplete or malformed OpenAI plans", async () => {
+    const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({
+      status: "incomplete", incomplete_details: { reason: "max_output_tokens" },
+      output: [{ type: "message", content: [{ type: "output_text", text: "{" }] }],
+      usage: { input_tokens: 12, output_tokens: 34 },
+    })));
+    const result = await new OpenAIVisualPlanner("secret", fetcher).plan(catalog.planner, "plan");
+    expect(result.value).toBeNull();
+    expect(result.validationError).toContain("token 上限");
+    expect(result.usage).toMatchObject({ promptTokenCount: 12, candidatesTokenCount: 34 });
+  });
+
+  it("keeps OpenAI planner HTTP errors in the existing provider error contract", async () => {
+    const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({
+      error: { message: "bad schema with sk-secret and https://example.com/internal" },
+    }), { status: 400 }));
+    await expect(new OpenAIVisualPlanner("sk-secret", fetcher).plan(catalog.planner, "plan"))
+      .rejects.toMatchObject({ status: 400, retryable: false });
+  });
+
   it("sends a structural planner schema without nested count or numeric bounds", async () => {
     const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({
       candidates: [{ content: { parts: [{ text: JSON.stringify(examplePlan) }] } }],
     })));
-    const result = await new GeminiVisualPlanner(apiKeyAuthorizer("secret"), fetcher)
+    const result = await new GeminiVisualPlanner(vertexAuthForKey("secret"), fetcher)
       .plan(catalog.planner, "plan");
     expect(result.value).toEqual(examplePlan);
+    expect(fetcher.mock.calls[0][0]).toBe(vertexEndpoint(catalog.planner.apiModel));
+    expect(fetcher.mock.calls[0][0]).not.toContain("generativelanguage.googleapis.com");
     const config = JSON.parse(fetcher.mock.calls[0][1].body).generationConfig;
     expect(config.responseMimeType).toBe("application/json");
     const schema = config.responseJsonSchema;
@@ -51,6 +107,16 @@ describe("image adapters use mocked transport only", () => {
       teachingTargets: { type: "array", items: { type: "object" } },
     });
   });
+  it("Gemini 3.8 Flash planning uses thinkingLevel on the Vertex endpoint", async () => {
+    const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({
+      candidates: [{ content: { parts: [{ text: JSON.stringify(examplePlan) }] } }],
+    })));
+    const profile = catalog.plannerProfiles?.find((item) => item.apiModel === "gemini-3.8-flash");
+    expect(profile).toBeDefined();
+    await new GeminiVisualPlanner(vertexAuthForKey("secret"), fetcher).plan(profile!, "plan");
+    expect(fetcher.mock.calls[0][0]).toBe(vertexEndpoint("gemini-3.8-flash"));
+    expect(JSON.parse(fetcher.mock.calls[0][1].body).generationConfig.thinkingConfig).toEqual({ thinkingLevel: "LOW" });
+  });
   it("retains 400 field diagnostics while redacting credentials and URLs", async () => {
     const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({ error: {
       status: "INVALID_ARGUMENT",
@@ -59,7 +125,7 @@ describe("image adapters use mocked transport only", () => {
       unrelated: "must-not-be-persisted",
     } }), { status: 400 }));
     try {
-      await new GeminiVisualPlanner(apiKeyAuthorizer("my-private-key"), fetcher).plan(catalog.planner, "plan");
+      await new GeminiVisualPlanner(vertexAuthForKey("my-private-key"), fetcher).plan(catalog.planner, "plan");
       expect.fail("expected rejection");
     } catch (error) {
       expect(error).toBeInstanceOf(ImageProviderError);
@@ -74,7 +140,7 @@ describe("image adapters use mocked transport only", () => {
   });
   it.each([401, 403, 429, 500])("keeps HTTP %s even when the error response is HTML", async (status) => {
     const fetcher = vi.fn().mockResolvedValue(new Response("<html>upstream error</html>", { status }));
-    await expect(new GeminiVisualPlanner(apiKeyAuthorizer("secret"), fetcher).plan(catalog.planner, "plan"))
+    await expect(new GeminiVisualPlanner(vertexAuthForKey("secret"), fetcher).plan(catalog.planner, "plan"))
       .rejects.toThrow(`(${status})`);
   });
   it("preserves usage for malformed planner JSON so validation can retry safely", async () => {
@@ -89,7 +155,7 @@ describe("image adapters use mocked transport only", () => {
         ),
       );
     const result = await new GeminiVisualPlanner(
-      apiKeyAuthorizer("secret"),
+      vertexAuthForKey("secret"),
       fetcher,
     ).plan(catalog.planner, "plan");
     expect(result.value).toBeNull();
@@ -111,7 +177,7 @@ describe("image adapters use mocked transport only", () => {
       candidates: [{ finishReason, content: { parts: [{ text }] } }],
       usageMetadata: { promptTokenCount: 12 },
     })));
-    const result = await new GeminiVisualPlanner(apiKeyAuthorizer("secret"), fetcher).plan(catalog.planner, "plan");
+    const result = await new GeminiVisualPlanner(vertexAuthForKey("secret"), fetcher).plan(catalog.planner, "plan");
     expect(result.validationError).toContain(message);
     expect(result.usage).toEqual({ promptTokenCount: 12 });
   });
@@ -173,10 +239,12 @@ describe("image adapters use mocked transport only", () => {
       ),
     );
     const result = await new GeminiImageAdapter(
-      apiKeyAuthorizer("secret"),
+      vertexAuthForKey("secret"),
       fetcher,
     ).generate(catalog.models[1], request);
     expect(result.mimeType).toBe("image/webp");
+    expect(fetcher.mock.calls[0][0]).toBe(vertexEndpoint(catalog.models[1].apiModel));
+    expect(fetcher.mock.calls[0][0]).not.toContain("generativelanguage.googleapis.com");
     expect(
       JSON.parse(fetcher.mock.calls[0][1].body).generationConfig.imageConfig
         .imageSize,

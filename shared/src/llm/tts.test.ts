@@ -34,6 +34,13 @@ describe("withRetry", () => {
     ).rejects.toThrow(/429/);
     expect(fn).toHaveBeenCalledTimes(1);
   });
+
+  it("遇請求格式錯誤不重試", async () => {
+    const error = Object.assign(new Error("invalid role"), { status: 400 });
+    const fn = vi.fn().mockRejectedValue(error);
+    await expect(withRetry(fn, { retries: 5, baseDelayMs: 0 })).rejects.toThrow("invalid role");
+    expect(fn).toHaveBeenCalledTimes(1);
+  });
 });
 
 describe("isQuotaError", () => {
@@ -47,7 +54,7 @@ describe("isQuotaError", () => {
 });
 
 describe("GeminiTtsClient.synthesize", () => {
-  const auth = apiKeyAuthorizer("test-key");
+  const auth = apiKeyAuthorizer("test-key", "test-project", "global");
   // 以一段 PCM bytes 的 base64 模擬 Gemini 回傳的音訊。
   const audioResponse = () =>
     new Response(
@@ -83,6 +90,7 @@ describe("GeminiTtsClient.synthesize", () => {
     const body = JSON.parse(
       (fetchMock.mock.calls[0][1] as RequestInit).body as string,
     );
+    expect(body.contents).toEqual([{ role: "user", parts: [{ text: "Hello" }] }]);
     expect(
       body.generationConfig.speechConfig.voiceConfig.prebuiltVoiceConfig
         .voiceName,

@@ -2,12 +2,16 @@
 import {
   loadConfig,
   createPool,
-  apiKeyAuthorizer,
+  createVertexAuthorizer,
   serviceAccountAuthorizer,
   GeminiExplainClient,
   GeminiTtsClient,
   loadImageModelCatalog,
   visualHash,
+  getGenerationSettings,
+  createExplainClient,
+  createTtsClient,
+  plannerForSelection,
 } from "@el/shared";
 import { buildApp } from "./app";
 import { LookupLimiter } from "./rateLimit";
@@ -16,10 +20,15 @@ const config = loadConfig();
 const pool = createPool(config.databaseUrl);
 const imageCatalog = config.images.modelsFile ? loadImageModelCatalog(config.images.modelsFile, config.images.pricingFile) : null;
 
-// LLM 授權：優先用 API key，否則用 service account（兩者擇一已於 config 驗證）。
-const auth = config.gemini.apiKey
-  ? apiKeyAuthorizer(config.gemini.apiKey)
-  : serviceAccountAuthorizer();
+const auth = createVertexAuthorizer(config.gemini);
+const googleAuth = auth ?? serviceAccountAuthorizer(config.gemini.project, config.gemini.location);
+const openaiApiKey = process.env.OPENAI_API_KEY?.trim();
+const credentials = { googleAuth: auth, openaiApiKey: openaiApiKey === "dev-placeholder" ? undefined : openaiApiKey };
+const availableModelIds = async () => {
+  if (!imageCatalog) return [];
+  const rows = (await pool.query("SELECT models FROM image_worker_heartbeats WHERE updated_at > now()-interval '60 seconds'")).rows;
+  return imageCatalog.models.filter(m => rows.some(r => r.models.some((v: {id: string; hash: string}) => v.id === m.id && v.hash === visualHash(m)))).map(m => m.id);
+};
 
 const lookupLimiter = new LookupLimiter(config.lookupLimits);
 
@@ -29,22 +38,43 @@ const app = buildApp({
   illustrations: imageCatalog ? {
     catalog: imageCatalog,
     imageDir: config.images.directory,
-    availableModelIds: async () => {
-      const rows = (await pool.query("SELECT models FROM image_worker_heartbeats WHERE updated_at > now()-interval '60 seconds'")).rows;
-      return imageCatalog.models.filter(m => rows.some(r => r.models.some((v: {id: string; hash: string}) => v.id === m.id && v.hash === visualHash(m)))).map(m => m.id);
+    availableModelIds,
+    resolveCatalog: async () => {
+      const { settings } = await getGenerationSettings(pool);
+      return {
+        ...imageCatalog,
+        defaultModelId: settings.image.model,
+        planner: plannerForSelection(imageCatalog.planner, settings.text, imageCatalog.plannerProfiles),
+      };
     },
+  } : undefined,
+  generationSettings: imageCatalog ? {
+    catalog: imageCatalog,
+    availableModelIds,
+    getAvailability: () => ({
+      google: Boolean(auth),
+      openai: Boolean(credentials.openaiApiKey),
+    }),
   } : undefined,
   audioDir: config.audioDir,
   lookupLimiter,
   lookupDeps: {
     explainClient: new GeminiExplainClient({
-      auth,
+      auth: googleAuth,
       model: config.gemini.explainModel,
     }),
-    ttsClient: new GeminiTtsClient({ auth, model: config.gemini.ttsModel }),
+    ttsClient: new GeminiTtsClient({ auth: googleAuth, model: config.gemini.ttsModel }),
     voiceEn: config.gemini.voiceEn,
     audioDir: config.audioDir,
     audioFormat: config.audioFormat,
+    resolveGeneration: async () => {
+      const { settings } = await getGenerationSettings(pool);
+      return {
+        explainClient: createExplainClient(settings.text, credentials),
+        ttsClient: createTtsClient(settings.speech, credentials),
+        voiceEn: settings.speech.voiceEn,
+      };
+    },
   },
   logger: true,
 });

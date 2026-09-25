@@ -6,6 +6,7 @@ import {
   createArticle,
   createParagraph,
   createJob,
+  getGenerationSettings,
   listArticlesWithMeta,
   getArticleById,
   listParagraphsByArticle,
@@ -86,6 +87,8 @@ export function registerArticleRoutes(
       }
 
       const id = await withTransaction(pool, async (tx) => {
+        const { settings } = await getGenerationSettings(tx);
+        const generationSnapshot = { translation: settings.text, speech: settings.speech };
         // 分類：優先用 categoryId，否則以 category label 取得/建立。
         let categoryId = body.categoryId ?? null;
         if (categoryId == null && body.category?.trim()) {
@@ -120,7 +123,7 @@ export function registerArticleRoutes(
             idx: i,
             text: paragraphs[i],
           });
-          await createJob(tx, article.id, paragraph.id);
+          await createJob(tx, article.id, paragraph.id, generationSnapshot);
         }
         return article.id;
       });
@@ -268,8 +271,9 @@ export function registerArticleRoutes(
         return reply.code(404).send({ error: "paragraph not found" });
       }
       await withTransaction(pool, async (tx) => {
+        const { settings } = await getGenerationSettings(tx);
         await clearParagraphResult(tx, pid, scope);
-        await resetJobForParagraph(tx, id, pid);
+        await resetJobForParagraph(tx, id, pid, { translation: settings.text, speech: settings.speech });
         await setArticleStatus(tx, id, "processing");
       });
       return { ok: true };

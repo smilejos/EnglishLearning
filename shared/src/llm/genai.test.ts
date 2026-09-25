@@ -1,8 +1,14 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { generateContent, firstText } from "./genai";
-import { apiKeyAuthorizer } from "./auth";
+import type { Authorizer } from "./auth";
 
-const auth = apiKeyAuthorizer("test-key");
+const endpoint = (model: string) =>
+  `https://aiplatform.googleapis.com/v1/projects/test-project/locations/global/publishers/google/models/${model}:generateContent`;
+const auth: Authorizer = {
+  endpoint,
+  headers: async () => ({ "x-goog-api-key": "test-key" }),
+  describe: () => "test key",
+};
 
 afterEach(() => {
   vi.restoreAllMocks();
@@ -24,7 +30,8 @@ describe("generateContent", () => {
 
     expect(res).toEqual(responseBody);
     const [url, init] = fetchMock.mock.calls[0];
-    expect(url).toContain("/models/gemini-2.5-flash:generateContent");
+    expect(url).toBe(endpoint("gemini-2.5-flash"));
+    expect(String(url)).not.toContain("generativelanguage.googleapis.com");
     expect((init as RequestInit).method).toBe("POST");
     const headers = (init as RequestInit).headers as Record<string, string>;
     expect(headers["x-goog-api-key"]).toBe("test-key");

@@ -211,16 +211,6 @@ textarea.field { resize: vertical; line-height: 1.5; }
 }
 .chip--cat { background: var(--accent-soft); color: var(--accent-strong); border-color: color-mix(in srgb, var(--accent) 25%, transparent); }
 
-/* ---------------- add button (corner) ---------------- */
-.fab-add {
-  width: 40px; height: 40px; border-radius: 999px; border: none; flex-shrink: 0;
-  background: var(--accent); color: var(--accent-ink); font-size: 1.5rem; line-height: 1;
-  display: grid; place-items: center; box-shadow: var(--shadow-sm);
-  transition: background .15s, transform .12s, box-shadow .15s;
-}
-.fab-add:hover { background: var(--accent-strong); box-shadow: var(--shadow-md); }
-.fab-add:active { transform: scale(0.94); }
-
 /* ---------------- list header + pager ---------------- */
 .list-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
 .pager { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 16px; }
@@ -372,7 +362,6 @@ body { accent-color: var(--accent); }
 .topnav__btn { border-radius: 8px; padding: 10px 15px; font-size: .9rem; }
 .topnav__btn:hover { background: var(--surface-2); color: var(--text); }
 .topnav__btn.on { background: var(--accent-soft); color: var(--accent-strong); box-shadow: inset 0 -2px var(--accent); }
-.fab-add { border-radius: 12px; width: 42px; height: 42px; }
 .section-eyebrow { color: var(--text); font-size: .95rem; font-weight: 750; letter-spacing: 0; text-transform: none; margin-top: 24px; }
 .h-title { font-size: clamp(1.35rem, 2.4vw, 1.9rem); line-height: 1.3; }
 .panel { box-shadow: none; border-color: var(--border); }
@@ -415,7 +404,6 @@ body { accent-color: var(--accent); }
   .topnav { order: 3; width: 100%; overflow-x: auto; scrollbar-width: thin; }
   .topnav__btn { flex: 0 0 auto; }
   .brand__tag { margin-left: auto; }
-  .fab-add { margin-left: 0; }
   .stats { flex-wrap: wrap; }
   .stat { border-bottom: 1px solid var(--border); }
   .panel:has(> .table) { overflow-x: auto; }
@@ -426,7 +414,6 @@ body { accent-color: var(--accent); }
   .topbar__in { padding: 10px 16px; gap: 8px; }
   .brand__name { font-size: 1rem; }
   .brand__tag { display: none; }
-  .fab-add { margin-left: auto; }
   .topnav__btn { padding: 9px 12px; }
   .filterbar { padding: 14px; }
   .filter__search { flex: 1 1 100%; }
@@ -452,5 +439,5 @@ body { accent-color: var(--accent); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .btn, .fab-add, .topnav__btn { transition: none; }
+  .btn, .topnav__btn { transition: none; }
 }

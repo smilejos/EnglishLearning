@@ -1,13 +1,52 @@
 {
   "schemaVersion": 1,
   "planner": {
+    "provider": "google",
     "apiModel": "gemini-2.5-flash",
     "inputUsdPerMillion": 0.3,
     "outputUsdPerMillion": 2.5,
     "maxOutputTokens": 16384,
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
-    "lastVerifiedAt": "2026-09-06T00:00:00.000Z"
+    "sourceUrl": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "lastVerifiedAt": "2026-09-25T00:00:00.000Z"
   },
+  "plannerProfiles": [
+    {
+      "provider": "google",
+      "apiModel": "gemini-3.8-flash",
+      "inputUsdPerMillion": 0.75,
+      "outputUsdPerMillion": 3.75,
+      "maxOutputTokens": 16384,
+      "sourceUrl": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "lastVerifiedAt": "2026-09-26T00:00:00.000Z"
+    },
+    {
+      "provider": "google",
+      "apiModel": "gemini-2.5-pro",
+      "inputUsdPerMillion": 2.5,
+      "outputUsdPerMillion": 15,
+      "maxOutputTokens": 16384,
+      "sourceUrl": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "lastVerifiedAt": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "provider": "openai",
+      "apiModel": "gpt-4.1-mini",
+      "inputUsdPerMillion": 0.4,
+      "outputUsdPerMillion": 1.6,
+      "maxOutputTokens": 16384,
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+      "lastVerifiedAt": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "provider": "openai",
+      "apiModel": "gpt-4.1",
+      "inputUsdPerMillion": 2,
+      "outputUsdPerMillion": 8,
+      "maxOutputTokens": 16384,
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-4.1",
+      "lastVerifiedAt": "2026-09-25T00:00:00.000Z"
+    }
+  ],
   "profiles": [
     {
       "id": "openai-image-2-v1",
@@ -40,13 +79,13 @@
     },
     {
       "id": "gemini-lite-image-v1",
-      "version": 1,
+      "version": 2,
       "provider": "google-gemini",
       "adapter": "gemini-generate-content-v1beta",
       "currency": "USD",
-      "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+      "sourceUrl": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "effectiveAt": "2026-09-06T00:00:00.000Z",
-      "lastVerifiedAt": "2026-09-06T00:00:00.000Z",
+      "lastVerifiedAt": "2026-09-25T00:00:00.000Z",
       "billingModel": "token-based",
       "rates": {
         "textInput": 0.25,
