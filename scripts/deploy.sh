@@ -122,18 +122,19 @@ wait_healthy() {
 }
 
 # --- 讓 proxy 重讀 nginx 設定 ---
-# proxy/nginx.conf 是 bind-mount：改了檔案 compose 不認為服務有變動，容器不會被重建，
+# proxy/ 是目錄 bind-mount：改了檔案 compose 不認為服務有變動，容器不會被重建，
 # 而 nginx 只在啟動時讀設定——結果就是「設定改了卻靜默不生效」（新增 API 路徑時踩過）。
-# 故每次啟動後一律 reload；設定有語法錯誤時只警告，不讓整個部署失敗（舊設定仍在跑）。
+# 故每次啟動後一律 reload；設定檢查失敗時保留實際錯誤，並提示檢查容器狀態。
 reload_proxy() {
+  local check_output
   "${COMPOSE[@]}" ps -q proxy 2>/dev/null | grep -q . || return 0
-  if "${COMPOSE[@]}" exec -T proxy nginx -t >/dev/null 2>&1; then
+  if check_output="$("${COMPOSE[@]}" exec -T proxy nginx -t 2>&1)"; then
     "${COMPOSE[@]}" exec -T proxy nginx -s reload >/dev/null 2>&1 \
       && ok "proxy 已重讀 nginx 設定" \
-      || warn "proxy reload 失敗（沿用舊設定）"
+      || warn "proxy reload 失敗；請檢查容器狀態與設定是否生效"
   else
-    warn "proxy/nginx.conf 語法有誤，跳過 reload（沿用舊設定）："
-    "${COMPOSE[@]}" exec -T proxy nginx -t 2>&1 | tail -3
+    warn "proxy nginx 設定檢查失敗，跳過 reload；請檢查容器狀態與設定："
+    printf '%s\n' "$check_output" | tail -3
   fi
 }
 

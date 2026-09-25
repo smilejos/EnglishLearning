@@ -140,7 +140,10 @@ export function VocabularyReview({ onJump, refreshKey = 0 }: {
     filters.to && `迄：${filters.to}`,
   ].filter(Boolean).join(" · ");
   return <main className="wrap vocabulary-review">
-    <h1>我的單字複習</h1><p>從主動收藏的單字開始，依自己的步調複習。</p>
+    <div className="greet">
+      <h1 className="greet__hi">我的單字複習</h1>
+      <p className="greet__sub">從主動收藏的單字開始，依自己的步調複習。</p>
+    </div>
     <div className="vocabulary-filter-heading">
       <button className="btn" type="button" aria-expanded={filtersExpanded} aria-controls="vocabulary-filters" onClick={() => setFiltersExpanded(value => !value)}>{filtersExpanded ? "收合篩選" : "展開篩選"}</button>
       {!filtersExpanded && <span className="vocabulary-filter-summary">{filterSummary}</span>}

@@ -150,7 +150,8 @@ services:
   proxy:
     image: nginx:alpine
     volumes:
-      - ./proxy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      # 掛目錄而非單檔：編輯器原子替換 nginx.conf 時，容器仍能讀到新檔案。
+      - ./proxy:/etc/nginx/conf.d:ro
     ports:
       - "${PROXY_PORT:-8090}:80"
     depends_on:

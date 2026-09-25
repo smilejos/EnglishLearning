@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T00:00:00.000Z",
+  "title": "Design System: 英文學習平台",
+  "extensions": {
+    "colorMeta": {
+      "canvas": { "role": "neutral", "displayName": "淡藍灰背景" },
+      "surface": { "role": "neutral", "displayName": "白色內容面" },
+      "indigo": { "role": "primary", "displayName": "靛藍" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "標題", "purpose": "頁面標題與教材名稱" },
+      "reading": { "displayName": "閱讀", "purpose": "英文課文段落" },
+      "body": { "displayName": "介面", "purpose": "控制元件及繁中說明" }
+    },
+    "shadows": [
+      { "name": "small", "value": "0 3px 10px rgba(16, 24, 40, 0.06)", "purpose": "輕微抬起的卡片與按鈕" },
+      { "name": "medium", "value": "0 10px 28px rgba(16, 24, 40, 0.10)", "purpose": "懸停與固定介面分層" }
+    ],
+    "motion": [
+      { "name": "interface", "value": "150ms ease-out", "purpose": "選取、懸停與焦點轉換" }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "620px" },
+      { "name": "compact-workspace", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "前台主要按鈕",
+      "kind": "button",
+      "refersTo": "button-learner-primary",
+      "description": "前台主要閱讀或複習動作的展示範例。",
+      "html": "<button class=\"ds-btn-primary\">開始閱讀</button>",
+      "css": ".ds-btn-primary{background:#4f46e5;color:#fff;border:0;border-radius:999px;padding:11px 18px;font:700 15px system-ui;cursor:pointer;transition:background .15s}.ds-btn-primary:hover{background:#4338ca}.ds-btn-primary:focus-visible{outline:3px solid #4f46e5;outline-offset:3px}"
+    },
+    {
+      "name": "前台次要按鈕",
+      "kind": "button",
+      "refersTo": "button-learner-ghost",
+      "description": "前台返回與次要操作的展示範例。",
+      "html": "<button class=\"ds-btn-ghost\">檢視</button>",
+      "css": ".ds-btn-ghost{background:#f7f8fa;color:#1b2330;border:1px solid #e4e7ec;border-radius:999px;padding:11px 18px;font:700 15px system-ui;cursor:pointer}.ds-btn-ghost:hover{background:#fff}.ds-btn-ghost:focus-visible{outline:3px solid #4f46e5;outline-offset:3px}"
+    },
+    {
+      "name": "後台主要按鈕",
+      "kind": "button",
+      "refersTo": "button-admin-primary",
+      "description": "教材管理的主要動作展示範例。",
+      "html": "<button class=\"ds-btn-admin\">新增文章</button>",
+      "css": ".ds-btn-admin{background:#4f46e5;color:#fff;border:0;border-radius:9px;padding:11px 18px;font:700 15px system-ui;cursor:pointer}.ds-btn-admin:hover{background:#4338ca}.ds-btn-admin:focus-visible{outline:3px solid #4f46e5;outline-offset:3px}"
+    },
+    {
+      "name": "輸入框",
+      "kind": "input",
+      "description": "篩選與編輯表單共用的欄位。",
+      "html": "<input class=\"ds-input\" placeholder=\"搜尋標題…\" />",
+      "css": ".ds-input{background:#fff;color:#1b2330;border:1px solid #cbd1dc;border-radius:8px;padding:10px 12px;font:15px system-ui}.ds-input:hover{border-color:#4f46e5}.ds-input:focus-visible{border-color:#4f46e5;box-shadow:0 0 0 3px #eef2ff;outline:0}"
+    },
+    {
+      "name": "文章卡片",
+      "kind": "card",
+      "description": "有圖與無圖教材的清單容器。",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-image\"></div><h3>Ocean Treasures</h3></article>",
+      "css": ".ds-card{width:100%;background:#fff;border:1px solid #e4e7ec;border-radius:12px;overflow:hidden;color:#1b2330}.ds-card-image{aspect-ratio:16/8.3;background:linear-gradient(135deg,#e0e7ff,#c7d2fe,#a5b4fc)}.ds-card h3{margin:16px;font:600 22px Georgia,serif}.ds-card:hover{box-shadow:0 10px 28px rgba(16,24,40,.1)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "靛藍閱讀室與編輯工作台",
+    "overview": "前台像一本持續使用的閱讀手帳；後台像整理教材的工作台。兩端延續原有靛藍、淡藍灰與白色的色彩印象。",
+    "keyCharacteristics": ["淡藍灰背景與白色內容面", "襯線閱讀文字與清楚的介面字", "細邊框與留白建立層級", "手機版直接呈現關鍵操作"],
+    "rules": [{ "name": "The Quiet Accent Rule", "body": "靛藍標出當前狀態與主要動作；大量教材內容保持白色與深色文字。", "section": "colors" }],
+    "dos": ["讓教材文字與圖片優先於裝飾。", "在手機版直接露出主要動作與狀態。", "為無圖、載入中、錯誤及停用狀態保留清楚表現。"],
+    "donts": ["用背景色代替足夠的文字對比。", "在閱讀區堆疊多層卡片或與內容無關的視覺效果。"]
+  }
+}

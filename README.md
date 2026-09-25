@@ -69,6 +69,17 @@ npm run test:db:down  # 收掉測試庫
 ./scripts/deploy.sh up
 ```
 
+proxy 將整個 `proxy/` 目錄唯讀掛載到 nginx 的 `conf.d/`，修改 `proxy/nginx.conf`
+後由部署腳本檢查並 reload。若從舊版的**單檔掛載**升級，需只重建一次 proxy
+容器以套用新掛載；單純 `restart` 不會更換掛載：
+
+```bash
+docker compose up -d --no-deps --force-recreate proxy
+docker compose exec -T proxy nginx -t
+```
+
+此操作只重建 proxy，入口會短暫中斷；不會啟動 image-worker。
+
 ### 子命令一覽
 
 | 命令 | 用途 |

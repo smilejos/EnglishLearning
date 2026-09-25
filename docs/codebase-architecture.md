@@ -321,6 +321,7 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 - 一般 LLM 模型與語音由環境變數指定；圖片模型及 planner 設定由 catalog JSON 指定，兩者不是同一個設定來源。
 - `VITE_*` 是前端建置設定。Compose 用 `LEARNER_URL_PUBLIC`／`ADMIN_URL_PUBLIC` 轉為 build args；改連結通常要重新 build，不能只重啟舊前端映像。
 - 裸 `docker compose up` 不會啟用 images profile；**`scripts/deploy.sh` 預設加 `--profile images`**，因此完整部署包含 image-worker。tunnel、seed 仍各自為選用 profile。
+- proxy 以 `proxy/` 目錄掛載 nginx 設定，避免單檔掛載在原子替換後指向已刪除 inode；從舊版單檔掛載升級需只重建 proxy 容器，單純 restart 不會更新掛載。
 - image-worker 要有 Gemini planner 憑證，且所有 enabled 模型對應 adapter 都要有憑證，否則啟動失敗；開啟 profile 就可能開始處理既有待辦。
 - `/healthz` 只回 API 存活，不查 DB／供應商；文章 worker healthcheck 看 heartbeat 檔，image-worker 的容器 healthcheck 被停用，另以 DB 心跳判斷模型可用性。不能把容器 healthy 等同所有業務流程正常。
 - `scripts/backup.sh` 實際備份 DB custom dump、audio.tgz、images.tgz，預設保留最近 7 份；檔頭註解未完整反映圖片備份，應以執行段落為準。

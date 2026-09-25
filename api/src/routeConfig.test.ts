@@ -58,6 +58,12 @@ describe("api client 用到的路徑抽取", () => {
 });
 
 describe("部署路由設定涵蓋前端呼叫的所有路徑", () => {
+  it("proxy 以目錄而非單檔掛載 nginx 設定", () => {
+    const compose = read("docker-compose.yml");
+    expect(compose).toMatch(/-\s+\.\/proxy:\/etc\/nginx\/conf\.d:ro/);
+    expect(compose).not.toMatch(/\.\/proxy\/nginx\.conf:\/etc\/nginx\/conf\.d/);
+  });
+
   // 單一網域入口：兩個 SPA 的請求都會經過 proxy，故需涵蓋兩者的聯集。
   it("proxy/nginx.conf 涵蓋後台與前台的全部 api 路徑", () => {
     const conf = read("proxy/nginx.conf");

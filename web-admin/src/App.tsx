@@ -858,8 +858,8 @@ function ArticleList({
       <StatsBar />
       {error && <p className="error-text">{error}</p>}
       <div
-        className="panel"
-        style={{ padding: 0, overflow: "hidden" }}
+        className="panel article-list-panel"
+        style={{ padding: 0 }}
         ref={tableRef}
       >
         <table className="table">
@@ -875,7 +875,7 @@ function ArticleList({
               <tr key={a.id}>
                 <td>
                   <div className="table__title">{a.title}</div>
-                  {(a.category || a.tags?.length) && (
+                  {Boolean(a.category || a.tags?.length) && (
                     <div className="meta-chips">
                       {a.category && (
                         <span className="chip chip--cat">{a.category.label}</span>
@@ -1519,10 +1519,10 @@ export default function App() {
     <div className="app-root">
       <header className="topbar">
         <div className="topbar__in">
-          <div className="brand" onClick={goList}>
-            <span className="brand__mark">📖</span>
+          <button className="brand brand--button" onClick={goList} aria-label="返回文章清單">
+            <span className="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5.5c-2.5-1.5-5-1.7-8-.8v13.7c3-.9 5.5-.7 8 .8 2.5-1.5 5-1.7 8-.8V4.7c-3-.9-5.5-.7-8 .8Z"/><path d="M12 5.5v13.7"/></svg></span>
             <span className="brand__name">英文學習平台</span>
-          </div>
+          </button>
           <span className="brand__tag">管理後台</span>
           <nav className="topnav">
             <button

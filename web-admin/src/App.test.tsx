@@ -172,3 +172,14 @@ it("補缺音檔開啟獨立頁面，返回後才顯示文章搜尋", async () =
   fireEvent.click(screen.getByRole("button", { name: "← 返回文章" }));
   expect(screen.getByText("文章清單 · 共 0 篇")).toBeTruthy();
 });
+
+it("文章沒有分類與標籤時不顯示多餘的 0", async () => {
+  window.history.replaceState(null, "", "#/");
+  mocked.listArticles.mockResolvedValue({
+    articles: [{ ...ARTICLE, category: null, tags: [] }] as never,
+  });
+  mocked.getStats.mockRejectedValue(new Error("stats unavailable"));
+  render(<App />);
+  const title = await screen.findByText("測試文章");
+  expect(title.closest("tr")?.textContent).not.toContain("0");
+});
