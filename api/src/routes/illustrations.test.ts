@@ -357,6 +357,87 @@ describe("AI visual lifecycle (mock providers, isolated test DB)", () => {
     expect(v.slots.every((s: any) => s.candidates.length === 0)).toBe(true);
     expect(await processImageJob(d)).toBe(false); // Planner retry respects backoff.
   });
+  it("repairs planner word normalization and duplicates before storing image candidates", async () => {
+    const r = await createRun();
+    const d = deps();
+    const response = plan();
+    const target = response.paragraphs[0].teachingTargets[0];
+    response.paragraphs[0].teachingTargets = [
+      { ...target, normalizedWord: "CATS" },
+      { ...target, normalizedWord: "wrong", reason: "duplicate reason" },
+    ];
+    d.planner.plan.mockResolvedValue({ value: response });
+    for (let i = 0; i < 3; i++) expect(await processImageJob(d)).toBe(true);
+    expect(d.planner.plan).toHaveBeenCalledTimes(1);
+    expect(d.generate).toHaveBeenCalledTimes(2);
+    const v = await detail(r.id);
+    expect(v.run.status).toBe("review");
+    expect(v.run.plan_json.paragraphs[0].teachingTargets).toEqual([target]);
+    const paragraph = v.slots.find((s: any) => s.kind === "paragraph");
+    expect(paragraph.candidates[0].teaching_targets).toEqual([target]);
+    expect(v.attempts.every((a: any) => a.state === "succeeded")).toBe(true);
+  });
+  it("adds a manual source word to an existing unlabeled image and publishes it without regeneration", async () => {
+    const r = await createRun();
+    const d = deps();
+    const response = plan();
+    response.paragraphs[0].teachingTargets = [];
+    d.planner.plan.mockResolvedValue({ value: response });
+    for (let i = 0; i < 3; i++) expect(await processImageJob(d)).toBe(true);
+    const v = await detail(r.id);
+    const candidate = v.slots.find((s: any) => s.kind === "paragraph").candidates[0];
+    expect(candidate.teaching_targets).toEqual([]);
+    const target = {
+      word: "cat", normalizedWord: "cat", reason: "辨認原文中的貓",
+      visualObject: "坐在草地上的貓", anchor: { x: 0.25, y: 0.75 },
+      confidence: 1, placementSource: "manual",
+    };
+    const reviewPath = `${base()}/${r.id}/candidates/${candidate.id}/review`;
+    const review = {
+      decision: "approved", altText: candidate.alt_text,
+      teachingTargets: [target], confirmed: true,
+    };
+    const result = await post(reviewPath, review);
+    expect(result.statusCode, result.body).toBe(200);
+    const updated = await detail(r.id);
+    const saved = updated.slots.find((s: any) => s.kind === "paragraph").candidates[0];
+    expect(saved.teaching_targets).toEqual([target]);
+    expect(saved.asset_id).toBe(candidate.asset_id);
+    expect(saved.url).toBe(candidate.url);
+    await approve(r.id);
+    expect((await post(`${base()}/${r.id}/publish`)).statusCode).toBe(200);
+    const published = (await reader.inject(`/articles/${articleId}`)).json();
+    expect(published.paragraphs[0].illustration.teachingTargets).toEqual([target]);
+    expect((await post(reviewPath, review)).statusCode).toBe(409);
+    expect(await processImageJob(d)).toBe(false);
+    expect(d.planner.plan).toHaveBeenCalledTimes(1);
+    expect(d.generate).toHaveBeenCalledTimes(2);
+  });
+  it.each([true, false])("continues images after skipping invalid teaching words (keep valid: %s)", async (keepValid) => {
+    const r = await createRun();
+    const d = deps();
+    const response = plan();
+    const target = response.paragraphs[0].teachingTargets[0];
+    response.paragraphs[0].teachingTargets = [
+      ...(keepValid ? [target] : []),
+      { ...target, word: "window box" },
+      { ...target, word: "cats" },
+    ];
+    d.planner.plan.mockResolvedValue({ value: response });
+    for (let i = 0; i < 3; i++) expect(await processImageJob(d)).toBe(true);
+    expect(d.planner.plan).toHaveBeenCalledTimes(1);
+    expect(d.generate).toHaveBeenCalledTimes(2);
+    const v = await detail(r.id);
+    expect(v.run.status).toBe("review");
+    expect(v.attempts.every((a: any) => a.state === "succeeded" && a.error === null)).toBe(true);
+    const expected = keepValid ? [target] : [];
+    expect(v.run.plan_json.paragraphs[0].teachingTargets).toEqual(expected);
+    expect(v.slots.find((s: any) => s.kind === "paragraph").candidates[0].teaching_targets).toEqual(expected);
+    expect(v.run.plan_json.validationWarnings).toHaveLength(2);
+    expect(v.run.plan_json.validationWarnings[0]).toContain(String(paragraphId));
+    expect(v.run.plan_json.validationWarnings[0]).toContain('"window box"');
+    expect(v.run.plan_json.validationWarnings[1]).toContain('"cats"');
+  });
   it("cleans assets via outbox when an article is deleted", async () => {
     const r = await createRun();
     const d = deps();

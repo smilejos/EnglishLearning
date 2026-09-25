@@ -178,14 +178,8 @@ function ExplanationCard({
       <p className="exp__row">
         <b>解釋（中）：</b>
         {exp.zhExplanation}
-        <AudioChip
-          iconOnly
-          pending={pending}
-          path={exp.zhExplanationAudioPath}
-          label="播放解釋（中）"
-        />
       </p>
-      <p className="exp__row exp__ex">
+      <p className="exp__row">
         <b>例句（英）：</b>
         {exp.enExample}
         <AudioChip
@@ -195,15 +189,9 @@ function ExplanationCard({
           label="播放例句（英）"
         />
       </p>
-      <p className="exp__row exp__ex">
+      <p className="exp__row">
         <b>例句（中）：</b>
         {exp.zhExample}
-        <AudioChip
-          iconOnly
-          pending={pending}
-          path={exp.zhExampleAudioPath}
-          label="播放例句（中）"
-        />
       </p>
     </div>
   );

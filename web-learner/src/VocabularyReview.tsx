@@ -47,6 +47,14 @@ function ReviewCard({ item, mode, filters, busy, onStatus, onRemove, onNext, onJ
   const explanation = data?.explanations.find(e => e.articleId === source?.articleId) ?? data?.explanations[0];
   const ready = !!data && !error;
   return <article className="vocabulary-card">
+    <div className="vocabulary-actions">
+      {item.status === "mastered" ? <button className="btn btn--primary" disabled={busy} onClick={() => onStatus("active")}>重新收藏</button> : answerVisible && <>
+        <button className="btn btn--primary" disabled={busy || !ready} onClick={() => onStatus("mastered")}>{mode === "challenge" ? "記得" : "已熟悉"}</button>
+        {mode === "challenge" && <button className="btn" disabled={busy || !ready} onClick={onNext}>忘記</button>}
+      </>}
+      <button className="btn" disabled={busy} onClick={onNext}>下一個</button>
+      <button className="btn" disabled={busy} onClick={onRemove}>取消收藏</button>
+    </div>
     <p className="vocabulary-date">收藏日期：{taipeiDay(item.savedAt)}（台北時間）</p>
     <h2>{item.word}</h2>
     <ReviewAudio path={data?.word?.enAudioPath} label="單字發音" />
@@ -65,21 +73,12 @@ function ReviewCard({ item, mode, filters, busy, onStatus, onRemove, onNext, onJ
         <p className="vocabulary-definition">{explanation.zhTranslation}</p>
         {explanation.headword && explanation.headword !== item.word && <p>片語：{explanation.headword}</p>}
         {explanation.articleId !== source?.articleId && <p>參考其他課文解釋：{explanation.article.title}</p>}
-        <ReviewAudio path={explanation.zhTranslationAudioPath} label="中文意思語音" />
         <p>{explanation.enExplanation}</p><p>{explanation.zhExplanation}</p>
         <ReviewAudio path={explanation.enExplanationAudioPath} label="英文解釋語音" />
         <p>{explanation.enExample}</p><p>{explanation.zhExample}</p>
         <ReviewAudio path={explanation.enExampleAudioPath} label="英文例句語音" />
       </section>}
     </div>}
-    <div className="vocabulary-actions">
-      {item.status === "mastered" ? <button className="btn btn--primary" disabled={busy} onClick={() => onStatus("active")}>重新收藏</button> : answerVisible && <>
-        <button className="btn btn--primary" disabled={busy || !ready} onClick={() => onStatus("mastered")}>{mode === "challenge" ? "記得" : "已熟悉"}</button>
-        {mode === "challenge" && <button className="btn" disabled={busy || !ready} onClick={onNext}>忘記</button>}
-      </>}
-      <button className="btn" disabled={busy} onClick={onNext}>下一個</button>
-      <button className="btn" disabled={busy} onClick={onRemove}>取消收藏</button>
-    </div>
   </article>;
 }
 
@@ -90,6 +89,7 @@ export function VocabularyReview({ onJump, refreshKey = 0 }: {
   const [items, setItems] = useState<VocabularyItem[]>([]);
   const [filters, setFilters] = useState(readVocabularyFilters);
   const [mode, setMode] = useState<"review" | "challenge">("review");
+  const [filtersExpanded, setFiltersExpanded] = useState(true);
   const [index, setIndex] = useState(0);
   const [turn, setTurn] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -129,9 +129,23 @@ export function VocabularyReview({ onJump, refreshKey = 0 }: {
   }
   const select = (key: "unit" | "grade" | "category", label: string) => <label>{label}<select value={filters[key]} onChange={e => updateFilter(key, e.target.value)}><option value="">全部</option>{[...new Set(sources.map(s => s[key]).filter((v): v is string => !!v))].sort().map(v => <option key={v}>{v}</option>)}</select></label>;
   const articleOptions = [...new Map(sources.map(s => [String(s.articleId ?? `deleted-${s.id}`), s.title])).entries()];
+  const filterSummary = [
+    filters.status === "mastered" ? "已熟悉" : "待複習",
+    filters.materialType === "school" ? "課業內" : filters.materialType === "extracurricular" ? "課外" : null,
+    filters.grade && `年級：${filters.grade}`,
+    filters.unit && `單元：${filters.unit}`,
+    filters.category && `類別：${filters.category}`,
+    filters.article && `課文：${articleOptions.find(([value]) => value === filters.article)?.[1] ?? filters.article}`,
+    filters.from && `起：${filters.from}`,
+    filters.to && `迄：${filters.to}`,
+  ].filter(Boolean).join(" · ");
   return <main className="wrap vocabulary-review">
     <h1>我的單字複習</h1><p>從主動收藏的單字開始，依自己的步調複習。</p>
-    <div className="vocabulary-filters">
+    <div className="vocabulary-filter-heading">
+      <button className="btn" type="button" aria-expanded={filtersExpanded} aria-controls="vocabulary-filters" onClick={() => setFiltersExpanded(value => !value)}>{filtersExpanded ? "收合篩選" : "展開篩選"}</button>
+      {!filtersExpanded && <span className="vocabulary-filter-summary">{filterSummary}</span>}
+    </div>
+    {filtersExpanded && <div className="vocabulary-filters" id="vocabulary-filters">
       <label>收藏狀態<select value={filters.status} onChange={e => updateFilter("status", e.target.value)}><option value="active">待複習</option><option value="mastered">已熟悉</option></select></label>
       <label>教材別<select value={filters.materialType} onChange={e => updateFilter("materialType", e.target.value)}><option value="">全部</option><option value="school">課業內</option><option value="extracurricular">課外</option></select></label>
       {select("grade", "年級")}{select("unit", "單元")}{select("category", "類別")}
@@ -139,7 +153,7 @@ export function VocabularyReview({ onJump, refreshKey = 0 }: {
       <label>收藏日期起<input type="date" value={filters.from} onChange={e => updateFilter("from", e.target.value)} /></label>
       <label>收藏日期迄<input type="date" value={filters.to} onChange={e => updateFilter("to", e.target.value)} /></label>
       <button className="btn" onClick={() => { setFilters({ ...emptyVocabularyFilters }); setIndex(0); setTurn(v => v + 1); }}>清除篩選</button>
-    </div>
+    </div>}
     <div className="vocabulary-modes" role="group" aria-label="複習模式">
       <button className="btn" aria-pressed={mode === "review"} onClick={() => setMode("review")}>快速複習</button>
       <button className="btn" aria-pressed={mode === "challenge"} onClick={() => setMode("challenge")}>快速挑戰</button>

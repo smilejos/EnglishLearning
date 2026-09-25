@@ -28,6 +28,7 @@ interface Candidate {
 interface Slot {
   id: string;
   kind: string;
+  paragraph_id: string | number | null;
   idx: number | null;
   text: string | null;
   required: boolean;
@@ -43,6 +44,8 @@ interface Run {
   reserved_cost_usd_micros: string;
   actual_cost_usd_micros: string;
   max_cost_usd_micros: string;
+  plan_json?: { validationWarnings?: string[] } | null;
+  source_json?: { paragraphs: Array<{ id: number; text: string }> } | null;
 }
 interface Detail {
   run: Run;
@@ -329,6 +332,17 @@ export function Illustrations({ articleId }: { articleId: number }) {
             }{" "}
             / {detail.slots.length}
           </p>
+          {!!detail.run.plan_json?.validationWarnings?.length && (
+            <details className="notice" open>
+              <summary>教學單字調整</summary>
+              <p>不合規的教學單字已略過，其餘單字與圖片規劃仍會繼續處理。</p>
+              <ul>
+                {detail.run.plan_json.validationWarnings.map((warning, index) => (
+                  <li key={index}>{warning}</li>
+                ))}
+              </ul>
+            </details>
+          )}
           {detail.attempts
             .filter((a) => a.state === "uncertain")
             .map((a) => (
@@ -459,8 +473,13 @@ export function Illustrations({ articleId }: { articleId: number }) {
               )}
               {slot.candidates.map((c) => (
                 <CandidateReview
-                  key={c.id}
+                  key={`${articleId}-${detail.run.id}-${slot.id}-${c.id}`}
                   candidate={c}
+                  sourceText={slot.kind === "paragraph"
+                    ? detail.run.source_json?.paragraphs.find(
+                        (p) => p.id === Number(slot.paragraph_id),
+                      )?.text
+                    : undefined}
                   disabled={busy || immutable}
                   onReview={(body) =>
                     act(() =>
@@ -482,10 +501,12 @@ export function Illustrations({ articleId }: { articleId: number }) {
 
 function CandidateReview({
   candidate: c,
+  sourceText,
   disabled,
   onReview,
 }: {
   candidate: Candidate;
+  sourceText?: string;
   disabled: boolean;
   onReview: (body: unknown) => Promise<void>;
 }) {
@@ -494,8 +515,27 @@ function CandidateReview({
   const [activeTarget, setActiveTarget] = useState(0);
   const [confirmed, setConfirmed] = useState(false);
   const [reason, setReason] = useState("");
+  const [newWord, setNewWord] = useState("");
+  const [visualObject, setVisualObject] = useState("");
+  const [learningReason, setLearningReason] = useState("");
+  const savedTargets = JSON.stringify(c.teaching_targets);
+  useEffect(() => {
+    setAlt(c.alt_text);
+    setTargets(JSON.parse(savedTargets) as Target[]);
+    setActiveTarget(0);
+    setConfirmed(false);
+    setNewWord("");
+    setVisualObject("");
+    setLearningReason("");
+  }, [c.alt_text, savedTargets]);
   const reviewable =
     c.url && ["ready", "approved", "rejected"].includes(c.status);
+  // 與審核 API 的完整單字規則一致，保留原文大小寫。
+  const sourceWords = [...new Set(sourceText?.match(/[A-Za-z]+(?:['’\-][A-Za-z]+)*/g) ?? [])]
+    .filter((word) => word.length <= 80);
+  const alreadyAdded = (word: string) => targets.some(
+    (target) => target.normalizedWord === word.trim().toLowerCase(),
+  );
   return (
     <div className="visual-candidate">
       <p>
@@ -505,16 +545,17 @@ function CandidateReview({
         <div
           className="visual-image"
           onClick={(e) => {
-            if (disabled || !targets[activeTarget]) return;
+            if (disabled || !reviewable || !targets[activeTarget]) return;
             const r = e.currentTarget.getBoundingClientRect();
+            if (!r.width || !r.height) return;
             setTargets((ts) =>
               ts.map((t, i) =>
                 i === activeTarget
                   ? {
                       ...t,
                       anchor: {
-                        x: (e.clientX - r.left) / r.width,
-                        y: (e.clientY - r.top) / r.height,
+                        x: Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)),
+                        y: Math.max(0, Math.min(1, (e.clientY - r.top) / r.height)),
                       },
                       confidence: 1,
                       placementSource: "manual",
@@ -558,6 +599,65 @@ function CandidateReview({
               }}
             />
           </label>
+          {!disabled && sourceWords.length > 0 && (
+            <div className="visual-add-target" style={{ display: "grid", gap: 12 }}>
+              <h5>新增教學單字（{targets.length} / 3）</h5>
+              <p>從本段原文選字，填寫對應的圖中物件，再點圖片放置標示。完成後按「核准並選用」儲存，無須重新產圖。</p>
+              <p className="visual-note">本版本原文：{sourceText}</p>
+              <label>
+                原文單字{" "}
+                <select
+                  className="field"
+                  value={newWord}
+                  disabled={targets.length >= 3}
+                  onChange={(e) => {
+                    setNewWord(e.target.value);
+                    setVisualObject(e.target.value);
+                    setLearningReason(e.target.value ? `辨認圖中的 ${e.target.value}` : "");
+                  }}
+                >
+                  <option value="">請選擇單字</option>
+                  {sourceWords.map((word) => (
+                    <option key={word} value={word} disabled={alreadyAdded(word)}>
+                      {word}{alreadyAdded(word) ? "（已加入）" : ""}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                圖中物件{" "}
+                <input className="field" maxLength={4000} value={visualObject}
+                  disabled={targets.length >= 3}
+                  onChange={(e) => setVisualObject(e.target.value)} />
+              </label>
+              <label>
+                學習說明{" "}
+                <input className="field" maxLength={4000} value={learningReason}
+                  disabled={targets.length >= 3}
+                  onChange={(e) => setLearningReason(e.target.value)} />
+              </label>
+              <button className="btn btn--ghost btn--sm"
+                disabled={targets.length >= 3 || !sourceWords.includes(newWord)
+                  || alreadyAdded(newWord) || !visualObject.trim() || !learningReason.trim()}
+                onClick={() => {
+                  if (targets.length >= 3 || !sourceWords.includes(newWord) || alreadyAdded(newWord)
+                    || !visualObject.trim() || !learningReason.trim()) return;
+                  setTargets([...targets, {
+                    word: newWord,
+                    normalizedWord: newWord.trim().toLowerCase(),
+                    visualObject: visualObject.trim(),
+                    reason: learningReason.trim(),
+                  }]);
+                  setActiveTarget(targets.length);
+                  setConfirmed(false);
+                  setNewWord("");
+                  setVisualObject("");
+                  setLearningReason("");
+                }}
+              >新增單字</button>
+              {targets.length >= 3 && <p>每張圖片最多 3 個單字；可先移除標示再新增。</p>}
+            </div>
+          )}
           {targets.map((t, i) => (
             <div key={t.word} className="visual-controls">
               <label>
@@ -568,6 +668,7 @@ function CandidateReview({
                   onChange={() => setActiveTarget(i)}
                 />{" "}
                 {t.word} → {t.visualObject}
+                {!t.anchor && "（待定位：請點圖片或輸入 X／Y）"}
               </label>
               {(["x", "y"] as const).map((axis) => (
                 <label key={axis}>
@@ -582,7 +683,7 @@ function CandidateReview({
                     value={t.anchor?.[axis] ?? ""}
                     onChange={(e) => {
                       const value = Number(e.target.value);
-                      if (value < 0 || value > 1) return;
+                      if (!e.target.value || !Number.isFinite(value) || value < 0 || value > 1) return;
                       setTargets((ts) =>
                         ts.map((v, j) =>
                           j === i
@@ -607,6 +708,7 @@ function CandidateReview({
               <button className="btn btn--danger btn--sm"
                 onClick={() => {
                   setTargets((ts) => ts.filter((_, j) => i !== j));
+                  setActiveTarget((current) => current > i ? current - 1 : current === i ? 0 : current);
                   setConfirmed(false);
                 }}
               >

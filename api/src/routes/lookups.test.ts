@@ -124,7 +124,6 @@ describe("POST /lookups（重新解釋）", () => {
       explainClient,
       ttsClient,
       voiceEn: "VoiceEn",
-      voiceZh: "VoiceZh",
       audioDir,
       audioFormat: "wav",
     };
@@ -213,7 +212,7 @@ describe("POST /lookups（重新解釋）", () => {
     await app.close();
   });
 
-  it("首呼：先回文字（音檔為 null），背景補 6 個音檔後 DB/檔案就緒", async () => {
+  it("首呼：先回文字，背景只補單字與兩個英文音檔", async () => {
     const { articleId, paragraphId } = await seedArticleParagraph();
     const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
 
@@ -233,13 +232,7 @@ describe("POST /lookups（重新解釋）", () => {
     const word = await findWordByNormalized(pool, "habit");
     await vi.waitFor(async () => {
       const stored = await findExplanation(pool, word!.id, articleId);
-      for (const f of [
-        "enExplanationAudioPath",
-        "enExampleAudioPath",
-        "zhTranslationAudioPath",
-        "zhExplanationAudioPath",
-        "zhExampleAudioPath",
-      ] as const) {
+      for (const f of ["enExplanationAudioPath", "enExampleAudioPath"] as const) {
         expect(stored?.[f]).toBeTruthy();
         expect(await fileExists(stored![f]!)).toBe(true);
       }
@@ -247,9 +240,13 @@ describe("POST /lookups（重新解釋）", () => {
       expect(w?.enAudioPath).toBeTruthy();
       expect(await fileExists(w!.enAudioPath!)).toBe(true);
     });
-    // LLM 1 次、TTS 6 次（en 發音 + 5 解釋音檔）。
+    const stored = await findExplanation(pool, word!.id, articleId);
+    expect(stored?.zhTranslationAudioPath).toBeNull();
+    expect(stored?.zhExplanationAudioPath).toBeNull();
+    expect(stored?.zhExampleAudioPath).toBeNull();
+    // LLM 1 次、TTS 3 次（單字、英文解釋、英文例句）。
     expect(explainSpy).toHaveBeenCalledTimes(1);
-    expect(synthSpy).toHaveBeenCalledTimes(6);
+    expect(synthSpy).toHaveBeenCalledTimes(3);
 
     await app.close();
   });
@@ -267,7 +264,7 @@ describe("POST /lookups（重新解釋）", () => {
     const word = await findWordByNormalized(pool, "habit");
     await vi.waitFor(async () => {
       const stored = await findExplanation(pool, word!.id, articleId);
-      expect(stored?.zhExampleAudioPath).toBeTruthy();
+      expect(stored?.enExampleAudioPath).toBeTruthy();
     });
     explainSpy.mockClear();
     synthSpy.mockClear();
@@ -310,9 +307,9 @@ describe("POST /lookups（重新解釋）", () => {
 
   it("單段 TTS 失敗時仍存解釋、該音檔為 null、其餘背景補齊、回 201", async () => {
     const { articleId, paragraphId } = await seedArticleParagraph();
-    // 對中文翻譯 "習慣" 的 TTS 拋錯（模擬 Gemini finishReason OTHER）。
+    // 對英文解釋的 TTS 拋錯（模擬 Gemini finishReason OTHER）。
     const failingSynth = vi.fn(async (text: string) => {
-      if (text === "習慣") throw new Error("no audio data");
+      if (text === "a regular practice") throw new Error("no audio data");
       return {
         wav: Buffer.from([0x52, 0x49, 0x46, 0x46]),
         pcm: Buffer.from([1, 2]),
@@ -324,7 +321,6 @@ describe("POST /lookups（重新解釋）", () => {
         synthesize: failingSynth as unknown as TtsClient["synthesize"],
       },
       voiceEn: "VoiceEn",
-      voiceZh: "VoiceZh",
       audioDir,
       audioFormat: "wav",
     };
@@ -346,7 +342,8 @@ describe("POST /lookups（重新解釋）", () => {
     const word = await findWordByNormalized(pool, "habit");
     await vi.waitFor(async () => {
       const stored = await findExplanation(pool, word!.id, articleId);
-      expect(stored?.enExplanationAudioPath).toBeTruthy();
+      expect(stored?.enExampleAudioPath).toBeTruthy();
+      expect(stored?.enExplanationAudioPath).toBeNull();
       expect(stored?.zhTranslationAudioPath).toBeNull();
     });
     await app.close();
@@ -446,7 +443,55 @@ describe("POST /lookups（重新解釋）", () => {
       adminEmails: ["admin@example.com"],
     };
 
-    it("補齊缺失的 word 發音與解釋音檔", async () => {
+    it("清單逐檔列出缺失項目，單字跨來源只列一次且忽略中文音檔", async () => {
+      const a1 = await createArticle(pool, { title: "Lesson A" });
+      const a2 = await createArticle(pool, { title: "Lesson B" });
+      const w = await getOrCreateWord(pool, "habit");
+      const exp = await createExplanation(pool, {
+        wordId: w.id, articleId: a1.id,
+        enExplanation: "a regular practice", enExample: "A good habit helps.",
+        zhTranslation: "習慣",
+      });
+      await createExplanation(pool, { wordId: w.id, articleId: a2.id, zhTranslation: "習慣" });
+      const app = buildApp({ config: adminConfig, pool, audioDir, lookupDeps: makeDeps() });
+      const res = await app.inject({ method: "GET", url: "/lookups/missing-audio" });
+      expect(res.statusCode).toBe(200);
+      expect(res.json().items).toEqual(expect.arrayContaining([
+        expect.objectContaining({ kind: "word", id: w.id, word: "habit", articleTitle: null, text: "habit" }),
+        expect.objectContaining({ kind: "enExplanation", id: exp.id, articleTitle: "Lesson A", text: "a regular practice" }),
+        expect.objectContaining({ kind: "enExample", id: exp.id, articleTitle: "Lesson A", text: "A good habit helps." }),
+      ]));
+      expect(res.json().items).toHaveLength(3);
+      await app.close();
+    });
+
+    it("逐檔補齊只合成所選音檔；重複點擊不再呼叫 TTS", async () => {
+      const article = await createArticle(pool, { title: "Backfill one" });
+      const w = await getOrCreateWord(pool, "habit");
+      const exp = await createExplanation(pool, {
+        wordId: w.id, articleId: article.id,
+        enExplanation: "a regular practice", enExample: "A good habit helps.",
+      });
+      const app = buildApp({ config: adminConfig, pool, audioDir, lookupDeps: makeDeps() });
+      const one = await app.inject({ method: "POST", url: "/lookups/backfill-audio",
+        payload: { kind: "enExample", id: exp.id } });
+      expect(one.json()).toMatchObject({ fixedAudio: 1, alreadyComplete: false });
+      expect(synthSpy).toHaveBeenCalledTimes(1);
+      expect(synthSpy).toHaveBeenCalledWith("A good habit helps.", "VoiceEn");
+      expect((await findExplanation(pool, w.id, article.id))?.enExampleAudioPath).toBeTruthy();
+      expect((await findExplanation(pool, w.id, article.id))?.enExplanationAudioPath).toBeNull();
+      expect((await findWordByNormalized(pool, "habit"))?.enAudioPath).toBeNull();
+      const again = await app.inject({ method: "POST", url: "/lookups/backfill-audio",
+        payload: { kind: "enExample", id: exp.id } });
+      expect(again.json()).toMatchObject({ fixedAudio: 0, alreadyComplete: true });
+      expect(synthSpy).toHaveBeenCalledTimes(1);
+      const invalid = await app.inject({ method: "POST", url: "/lookups/backfill-audio",
+        payload: { kind: "zhExample", id: exp.id } });
+      expect(invalid.statusCode).toBe(400);
+      await app.close();
+    });
+
+    it("只補齊缺失的單字與英文解釋音檔", async () => {
       const article = await createArticle(pool, { title: "Backfill" });
       const w = await getOrCreateWord(pool, "habit"); // enAudioPath 為 null
       await createExplanation(pool, {
@@ -465,15 +510,17 @@ describe("POST /lookups（重新解釋）", () => {
       });
       const res = await app.inject({ method: "POST", url: "/lookups/backfill-audio" });
       expect(res.statusCode).toBe(200);
-      // word 英文發音 + zh_translation + en_explanation 共 3 個。
-      expect(res.json().fixedAudio).toBe(3);
+      // word 英文發音 + en_explanation 共 2 個；中文音檔不補。
+      expect(res.json().fixedAudio).toBe(2);
 
       const word = await findWordByNormalized(pool, "habit");
       expect(word!.enAudioPath).toBeTruthy();
       const exp = await findExplanation(pool, w.id, article.id);
-      expect(exp!.zhTranslationAudioPath).toBeTruthy();
+      expect(exp!.zhTranslationAudioPath).toBeNull();
       expect(exp!.enExplanationAudioPath).toBeTruthy();
       expect(exp!.enExampleAudioPath).toBeNull(); // 無文字者不補
+      const again = await app.inject({ method: "POST", url: "/lookups/backfill-audio" });
+      expect(again.json()).toMatchObject({ fixedAudio: 0, scannedWords: 0, scannedExplanations: 0 });
       await app.close();
     });
 
@@ -481,6 +528,7 @@ describe("POST /lookups（重新解釋）", () => {
       const app = buildApp({ config, pool, audioDir, lookupDeps: makeDeps() });
       const res = await app.inject({ method: "POST", url: "/lookups/backfill-audio" });
       expect(res.statusCode).toBe(403);
+      expect((await app.inject({ method: "GET", url: "/lookups/missing-audio" })).statusCode).toBe(403);
       expect(synthSpy).toHaveBeenCalledTimes(0);
       await app.close();
     });

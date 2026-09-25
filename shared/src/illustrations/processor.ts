@@ -74,13 +74,13 @@ export async function enqueueCandidate(
   );
   return candidate;
 }
-async function storePlan(db: Queryable, run: any, plan: VisualPlan) {
+async function storePlan(db: Queryable, run: any, plan: VisualPlan, validationWarnings: string[]) {
   const model = run.model_config_snapshot as ImageModel;
   await db.query(
     "UPDATE article_visual_runs SET plan_json=$2,status=$3,updated_at=now() WHERE id=$1",
     [
       run.id,
-      plan,
+      validationWarnings.length ? { ...plan, validationWarnings } : plan,
       plan.characterBible.length ? "waiting_reference_review" : "generating",
     ],
   );
@@ -252,6 +252,7 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
   let usage: Record<string, unknown> | undefined;
   let requestId: string | undefined;
   let plan: VisualPlan | undefined;
+  const validationWarnings: string[] = [];
   let failure: unknown;
   let received = false;
   const heartbeat = setInterval(() => {
@@ -272,7 +273,9 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
       received = true;
       usage = result.usage;
       if (result.validationError) throw new VisualPlanError(result.validationError);
-      plan = validateVisualPlan(result.value, run.source_json as VisualSource);
+      plan = validateVisualPlan(result.value, run.source_json as VisualSource, (warning) => {
+        validationWarnings.push(warning);
+      });
     } else {
       const model = run.model_config_snapshot as ImageModel;
       const adapter = deps.adapters[model.adapter];
@@ -408,7 +411,7 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
             [job.candidate_id, asset.id, cancelled ? "cancelled" : "ready"],
           );
         }
-        if (plan && !cancelled) await storePlan(tx, run, plan);
+        if (plan && !cancelled) await storePlan(tx, run, plan, validationWarnings);
         await tx.query(
           "UPDATE illustration_jobs SET status=$2,updated_at=now() WHERE id=$1",
           [job.id, cancelled ? "cancelled" : "done"],

@@ -8,6 +8,7 @@ import {
   ImageProviderError,
 } from "./providers";
 import { apiKeyAuthorizer } from "../llm/auth";
+import { examplePlan } from "./testFixtures";
 const catalog = loadImageModelCatalog(
   new URL("../../../config/image-models.json", import.meta.url).pathname,
   new URL("../../../config/image-pricing.json", import.meta.url).pathname,
@@ -19,6 +20,37 @@ const request = {
   idempotencyKey: "test",
 };
 describe("image adapters use mocked transport only", () => {
+  it("sends a structural planner schema without nested count or numeric bounds", async () => {
+    const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({
+      candidates: [{ content: { parts: [{ text: JSON.stringify(examplePlan) }] } }],
+    })));
+    const result = await new GeminiVisualPlanner(apiKeyAuthorizer("secret"), fetcher)
+      .plan(catalog.planner, "plan");
+    expect(result.value).toEqual(examplePlan);
+    const config = JSON.parse(fetcher.mock.calls[0][1].body).generationConfig;
+    expect(config.responseMimeType).toBe("application/json");
+    const schema = config.responseJsonSchema;
+    const assertStructural = (node: any): void => {
+      for (const key of ["minItems", "maxItems", "minimum", "maximum", "minLength", "maxLength"])
+        expect(node).not.toHaveProperty(key);
+      if (node.type === "object") {
+        expect(node.required).toEqual(Object.keys(node.properties));
+        expect(node.additionalProperties).toBe(false);
+        Object.values(node.properties).forEach(assertStructural);
+      } else if (node.type === "array") {
+        expect(node.items).toBeDefined();
+        assertStructural(node.items);
+      }
+      node.anyOf?.forEach(assertStructural);
+    };
+    assertStructural(schema);
+    expect(schema.properties.paragraphs.items.properties).toMatchObject({
+      paragraphId: { type: "integer" }, idx: { type: "integer" },
+      required: { type: "boolean" },
+      scene: { anyOf: [{ type: "object" }, { type: "null" }] },
+      teachingTargets: { type: "array", items: { type: "object" } },
+    });
+  });
   it("retains 400 field diagnostics while redacting credentials and URLs", async () => {
     const fetcher = vi.fn().mockResolvedValue(new Response(JSON.stringify({ error: {
       status: "INVALID_ARGUMENT",

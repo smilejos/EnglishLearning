@@ -7,6 +7,7 @@ export * from "./paragraphs";
 export * from "./jobs";
 export * from "./words";
 export * from "./wordExplanations";
+export * from "./audioBackfill";
 export * from "./categories";
 export * from "./tags";
 export * from "./stats";

@@ -353,7 +353,6 @@ a { color: inherit; text-decoration: none; }
 }
 .exp__row { margin: 7px 0; color: var(--text-soft); line-height: 1.55; font-size: 0.96rem; }
 .exp__row b { color: var(--text); font-weight: 800; }
-.exp__ex { font-family: var(--font-body); font-style: italic; }
 .exp__audio { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 7px; }
 
 /* ---------------- status text ---------------- */

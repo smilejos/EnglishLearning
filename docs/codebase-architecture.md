@@ -1,7 +1,7 @@
 # 專案架構與功能導覽（以程式碼為準）
 
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；已同步本次單字收藏與複習實作，並於本機 Docker 套用 migration、重建啟動供試用。
+> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-09-25（單字音訊、後台補檔清單與單字複習介面）。原始分析時已於本機 Docker 套用 migration、重建啟動供試用。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理，未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 ## 1. 先讀這裡：專案目的與全貌
@@ -64,7 +64,7 @@ flowchart TD
 | `shared/src/audioFiles.ts`、`audioEncode.ts` | 共用音檔寫入／刪除與 ffmpeg 編碼 |
 | `shared/src/illustrations/` | 圖片契約、模型／價格目錄、版本與審核、佇列、供應商、檔案儲存 |
 | `web-learner/src/` | React 學習前台；`App.tsx`、`useArticlePlayer.ts`、`AudioBar.tsx`、`Illustration.tsx` |
-| `web-admin/src/` | React 後台；`App.tsx` 管主要頁面，`Illustrations.tsx` 管圖片生命週期 |
+| `web-admin/src/` | React 後台；`App.tsx` 管主要頁面，`AudioBackfillPanel.tsx` 管缺失音檔清單與補檔，`Illustrations.tsx` 管圖片生命週期 |
 | `migrations/` | DB 結構的可執行演進；不能只讀初始 migration 判定現況 |
 | `config/image-models.json`、`image-pricing.json` | 圖片模型、生成參數、價格與 planner 設定 |
 | `docker-compose.yml`、各 Dockerfile | 部署服務、相依啟動順序、掛載、ports、healthcheck |
@@ -122,19 +122,19 @@ flowchart TD
 
 ### 單字彈窗
 
-顯示全站該字的多篇來源解釋、中英解釋與例句、英文發音、片語 `headword`，可跳回來源文章及開啟 Google 圖片搜尋。admin／reviewer 額外看到「用本篇重新解釋」及後台單字連結；後台管理操作本身仍限 admin。
+顯示全站該字的多篇來源解釋、中英解釋與例句、英文發音、片語 `headword`，可跳回來源文章及開啟 Google 圖片搜尋。例句與解釋使用相同文字樣式；只提供單字、英文解釋與英文例句的播放按鈕。admin／reviewer 額外看到「用本篇重新解釋」及後台單字連結；後台管理操作本身仍限 admin。
 
 畫面標為「本篇已解釋」後不提供直接強制覆寫按鈕。單字卡提供主動收藏；開啟彈窗本身不收藏，沒有解釋仍能收藏，不呼叫 AI 產生內容。播放器位置與翻譯展開等主要保存在 React state，尚無持久化的閱讀進度。
 
 ### 收藏與複習
 
 - `#/review` 開啟 `VocabularyReview.tsx`。同字合併呈現並保留多篇／多段來源，熟悉狀態作用於整個單字。
-- 可同時篩選課業內／課外、單元、課文、年級、類別及收藏日期；來源條件必須由同一筆來源全部符合，分類採收藏時快照。
+- 可同時篩選課業內／課外、單元、課文、年級、類別及收藏日期；來源條件必須由同一筆來源全部符合，分類採收藏時快照。篩選區可收合，收合後顯示目前範圍摘要，不清除條件。
 - 收藏日期依 item 的 `savedAt` 換算 `Asia/Taipei` 日，區間含起迄日；來源日期僅供資訊。篩選存於 sessionStorage，回課文再返回複習可保留。
-- 快速複習直接顯示原文與既有解釋，優先所選來源課文的解釋；快速挑戰先隱藏原文與答案，揭曉後自行選「記得／忘記」。記得或手動已熟悉將單字移出待複習，忘記保留並換下一張。
+- 快速複習直接顯示原文與既有解釋，優先所選來源課文的解釋；快速挑戰先隱藏原文與答案，揭曉後自行選「記得／忘記」。每張卡片的熟悉狀態、下一個及取消收藏操作位於內容上方。記得或手動已熟悉將單字移出待複習，忘記保留並換下一張。
 - `mastered` 紀錄保留且可重新收藏；取消收藏只刪收藏及其來源，不刪共用單字、解釋或課文。
 - 回原文使用 `#/a/<id>?paragraph=<id>&word=<word>&from=review` 定位段落／標字；課文刪除後仍保留來源快照，但不提供返回該課文的按鈕。
-- 複習音訊沿用 audioBus；切換卡片／模式時停止音訊，挑戰揭曉狀態重設。API 載入或異動失敗會顯示錯誤，不先移除收藏。
+- 複習音訊沿用 audioBus，提供單字與英文解釋、英文例句音訊；切換卡片／模式時停止音訊，挑戰揭曉狀態重設。API 載入或異動失敗會顯示錯誤，不先移除收藏。
 
 ## 5. 管理後台功能
 
@@ -148,7 +148,7 @@ flowchart TD
 | 文章詳情 | 各段原文、翻譯、狀態、最近 job 錯誤及中英音檔；重試失敗段落與指定產物重生 |
 | 分類／標籤 | 分類建立、改名、刪除；UI 提供母／子分類；標籤依 kind 分組，支援單項編輯及整組 kind 改名 |
 | 單字管理 | 搜尋、展開來源解釋、刪單筆解釋或整個單字；支援進站 `#/w/<word>` 深連結 |
-| 補缺音檔 | 每次最多掃描 10 個缺發音單字與 10 筆缺音解釋；只補缺項，回報本次補齊數 |
+| 補缺音檔 | 文章清單按鈕切換到獨立的缺檔頁，與文章搜尋／篩選分開；一個待補音檔一列（單字發音跨來源只列一次、英文解釋、英文例句）。可逐檔補齊，或補齊完整清單並查看進度、失敗數；頁內搜尋只影響顯示，不縮小全部補檔範圍。可返回文章清單。舊批次 API 每次仍最多掃描 10 個單字與 10 筆解釋 |
 | 使用者 | 列表、最後出現時間、reader／reviewer 指派及預先指派 |
 | 統計 | 文章／段落／文章 jobs 狀態數、單字／解釋數、當日受限流計數；不是個人學習分析 |
 | AI 圖片 | 可用模型、估價／預算、版本清單、生成狀態、候選 prompt、圖片與教學詞位置審核、重生／略過、取消／刪除／發布 |
@@ -189,10 +189,10 @@ LLM 層另有短期重試與 HTTP timeout；它和 DB job 重試是兩層，不�
 4. `words` 全站唯一；解釋唯一鍵是 `(word_id, article_id)`，不是 paragraph 或 user。paragraph 提供首次生成的上下文。
 5. 快取命中直接回既有結果，不消耗本次限流額度、不重生音訊。「重新解釋」表示換本篇語境，並非強制覆寫本篇快取。
 6. 未命中先通過 per-user 每分鐘與全站每日限額，預設 10／200，再產生五種文字內容及 `headword`。
-7. 先存文字、回 `201`；API 行程以 fire-and-forget 補單字英文發音與五組內容語音。各 TTS 失敗可留下 null，文字仍可使用。
-8. 前台提交後每 5 秒重抓、最多 4 次；admin 可之後補缺音檔。並行首查時靠唯一鍵避免重複資料，衝突請求回既有解釋；不保證首查併發只打一次 LLM。
+7. 先存文字、回 `201`；API 行程以 fire-and-forget 補單字英文發音、英文解釋與英文例句音檔。中文內容只存文字，不再產生或補齊中文音檔。各 TTS 失敗可留下 null，文字仍可使用。
+8. 前台提交後每 5 秒重抓、最多 4 次；admin 可由缺檔清單逐檔或全部補齊。清單與單檔操作執行時重新檢查缺漏，全部補檔由前台依清單逐列呼叫 API，避免單次請求過長，失敗項保留供重試。並行首查時靠唯一鍵避免重複資料，衝突請求回既有解釋；不保證首查併發只打一次 LLM。
 
-五組內容是：英文解釋、英文例句、繁中翻譯、中文解釋、中文例句；每組有文字與音檔欄位。`headword` 可以是原文片語，但快取 key 仍為使用者點的 normalized word。
+五組文字內容是：英文解釋、英文例句、繁中翻譯、中文解釋、中文例句。資料庫仍保留舊中文音檔欄位與檔案以相容既有資料，前台不播放；無需清理正式庫。`headword` 可以是原文片語，但快取 key 仍為使用者點的 normalized word。
 
 `GET /articles/:id/lookups` 的意思是「本篇出現、且全站任何來源已有解釋的字」；不是「本篇產生的解釋」或「我查過的字」。後台 `/articles/:id/explanations` 才列出本篇來源的解釋。
 
@@ -236,11 +236,13 @@ flowchart LR
 這是主要成功路徑；取消、重試、結果不明另由狀態守衛處理。
 
 - planner 產出全文摘要、風格／角色設定、封面 brief，以及完整段落計畫；檢查 ID／idx 與原文一致，教學詞必須是原文完整 token，每段至多 3 個。
+- 規劃回應的教學詞由程式計算 `normalizedWord`，逐筆核對原文（含大小寫）後，依正規化單字合併重複項目並保留第一筆，合併後仍須符合每段至多 3 個的限制。不猜測單複數或改寫原文字詞；詞組或不符合原文的教學詞會略過，全部略過時仍可用空標籤清單繼續產圖，原因存於 `plan_json.validationWarnings` 並在後台「教學單字調整」顯示。提示包含段落 ID、教學詞位置與可安全顯示的錯字，異常字元僅顯示位置；核心規劃結構、其他標籤欄位格式、數量上限與人工審核仍採嚴格驗證。
+- Gemini 規劃請求的 JSON Schema 僅約束欄位、型別與必填結構，避免巢狀陣列長度及數值上下界造成供應商 `too many states` 拒絕；數量限制由 prompt 提示，回應仍經 `contracts.ts` 的 Zod 與原文一致性驗證後才可生成圖片。
 - 有 recurring characters 才建立 reference slot。參考圖未核准前，封面與正文 job 雖已建立，仍不能送出生成。
 - 每次供應商工作在 run lock 下預留預算，並記錄 attempt、lease token、prompt／request fingerprint、usage 與計費狀態。
 - `providers.ts` 隔離 OpenAI Images 與 Gemini transport；有參考圖時 OpenAI 使用 edits。內部冪等 key 不等於供應商保證不重複計費。
 - 圖片回來後 sharp 產生 master、web；封面另有 card 640×360、hero 1280×720、player 160×160。段落 web 保持完整構圖，單字座標以此為準。
-- 管理者審核 alt text、內容／安全、教學詞位置；位置支援點圖或輸入 X／Y。核准後選用候選；拒絕必須給原因。reference 一旦進入正文生成就不可任意替換。
+- 管理者審核 alt text、內容／安全、教學詞位置；段落圖可從該版本保存的原文選字，填寫圖中物件與學習說明後新增標籤（每圖最多 3 個、不重複，移除後可再加）。新增標籤須點圖或輸入 X／Y 完成定位，再以「核准並選用」儲存，不重新產圖。封面、角色參考圖、不可審核的候選與唯讀版本不提供新增；沒有原文快照也不提供新增。伺服器已存內容未變時，輪詢保留尚未儲存的審核草稿；候選身分或版本改變時重設。拒絕必須給原因；reference 一旦進入正文生成就不可任意替換。
 - 只可略過段落 slot 且須原因；封面不能略過。發布要求 run 在 review、來源 hash 未變、必要圖皆已核准且有 alt text／asset。
 - 發布以 transaction 切換 `article_visual_publications`，前一版標為 superseded；前台只拿發布資料，不接收草稿 prompt、模型成本或候選歷史。
 - 已發布／被取代／取消版本不可原地編輯；新版生成期間舊發布版仍可閱讀。
@@ -294,7 +296,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | `GET/POST /vocabulary`、`PATCH/DELETE /vocabulary/:id` | 已登入使用者列出／收藏／改熟悉狀態／取消收藏；不產生 AI 內容 | `api/src/routes/vocabulary.ts` |
 | `POST /lookups` | admin／reviewer 語境解釋 | `api/src/routes/lookups.ts` |
 | `GET /words`、`GET /articles/:id/explanations` | admin 搜尋／文章來源解釋 | 同上 |
-| `DELETE /words/:id`、`DELETE /explanations/:id`、`POST /lookups/backfill-audio` | admin 刪除／補音檔 | 同上 |
+| `DELETE /words/:id`、`DELETE /explanations/:id`、`GET /lookups/missing-audio`、`POST /lookups/backfill-audio` | admin 刪除／列出缺檔／補音檔；POST 帶 `{kind,id}` 補單檔，無 body 沿用舊批次模式 | 同上 |
 | `GET/POST /categories`、`PATCH/DELETE /categories/:id` | 讀取需登入；異動限 admin | `api/src/routes/taxonomy.ts` |
 | `GET/POST /tags`、`PATCH/DELETE /tags/:id`、`POST /tag-kinds/rename` | 同上 | 同上 |
 | `GET/POST /users`、`PUT /users/:email/role` | admin 使用者管理 | `api/src/routes/users.ts` |
@@ -382,6 +384,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
+| 缺失單字音檔清單／逐檔或全部補檔 | admin `App.tsx`／`AudioBackfillPanel.tsx`、`api/src/routes/lookups.ts`、`shared/src/repo/audioBackfill.ts`、相關測試 |
 | 文章上傳、分類、標籤 | admin `App.tsx`／`lib/meta.ts`、API articles／taxonomy、相關 repo |
 | 角色、登入、403 | `api/src/auth.ts`、users routes／repo、`shared/src/config.ts` |
 | 圖片規劃／生成／費用 | `shared/src/illustrations/{contracts,plan-schema,catalog,providers,processor}.ts`、config JSON、`worker/src/image-index.ts` |

@@ -5,8 +5,8 @@
 // try/catch，失敗變成 unhandled rejection——使用者按下去只看到「什麼都沒發生」。
 // 路由設定本身由 api/src/routeConfig.test.ts 守；此處守的是「失敗一定要被看見」。
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { render, screen, waitFor, cleanup } from "@testing-library/react";
-import { ArticleView, WordManager } from "./App";
+import { render, screen, waitFor, cleanup, fireEvent } from "@testing-library/react";
+import App, { ArticleView, WordManager } from "./App";
 import * as api from "./api";
 vi.mock("./Illustrations", () => ({ Illustrations: () => null }));
 
@@ -20,6 +20,9 @@ vi.mock("./api", () => ({
   getWordExplanations: vi.fn(),
   deleteWord: vi.fn(),
   audioUrl: (p: string) => `/audio/${p}`,
+  listArticles: vi.fn(),
+  listMissingAudio: vi.fn(),
+  getStats: vi.fn(),
 }));
 
 const mocked = vi.mocked(api);
@@ -154,4 +157,18 @@ describe("WordManager：刪除單字／解釋", () => {
       ),
     );
   });
+});
+
+it("補缺音檔開啟獨立頁面，返回後才顯示文章搜尋", async () => {
+  window.history.replaceState(null, "", "#/");
+  mocked.listArticles.mockResolvedValue({ articles: [] });
+  mocked.listMissingAudio.mockResolvedValue({ items: [] });
+  mocked.getStats.mockRejectedValue(new Error("stats unavailable"));
+  render(<App />);
+  fireEvent.click(screen.getByRole("button", { name: "補缺音檔" }));
+  await screen.findByRole("heading", { name: "缺失音檔清單" });
+  expect(screen.queryByText(/文章清單 · 共/)).toBeNull();
+  expect(screen.getByRole("textbox", { name: "搜尋缺失音檔" })).toBeTruthy();
+  fireEvent.click(screen.getByRole("button", { name: "← 返回文章" }));
+  expect(screen.getByText("文章清單 · 共 0 篇")).toBeTruthy();
 });

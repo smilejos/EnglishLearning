@@ -64,4 +64,28 @@ describe("收藏到原課文的完整導航", () => {
     await waitFor(() => expect(api.saveVocabulary).toHaveBeenCalledWith({ word: "habit", articleId: 20, paragraphId: 30 }));
     await screen.findByRole("button", { name: "已收藏本篇單字" });
   });
+  it("例句與解釋使用相同排版，中文只顯示文字", async () => {
+    window.history.replaceState(null, "", "#/a/20");
+    vi.mocked(api.getExplanations).mockResolvedValue({
+      word: { id: 1, normalizedWord: "habit", enAudioPath: "word.wav", createdAt: article.createdAt },
+      explanations: [{
+        id: 1, wordId: 1, articleId: 20, paragraphId: 30,
+        article: { id: 20, title: article.title }, createdAt: article.createdAt,
+        headword: null, zhTranslation: "習慣", zhTranslationAudioPath: "old-zh.wav",
+        enExplanation: "a regular practice", enExplanationAudioPath: "en-definition.wav",
+        zhExplanation: "定期做的事", zhExplanationAudioPath: "old-zh-definition.wav",
+        enExample: "A good habit helps.", enExampleAudioPath: "en-example.wav",
+        zhExample: "好習慣有幫助。", zhExampleAudioPath: "old-zh-example.wav",
+      }],
+    });
+    render(<App />);
+    fireEvent.click(await screen.findByRole("button", { name: "habit." }));
+    await screen.findByText("A good habit helps.");
+    const definition = screen.getByText("解釋（英）：").closest("p");
+    const example = screen.getByText("例句（英）：").closest("p");
+    expect(example?.className).toBe(definition?.className);
+    expect(screen.queryByRole("button", { name: "播放解釋（中）" })).toBeNull();
+    expect(screen.queryByRole("button", { name: "播放例句（中）" })).toBeNull();
+    expect(screen.getByRole("button", { name: "播放例句（英）" })).toBeTruthy();
+  });
 });

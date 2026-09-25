@@ -43,7 +43,6 @@ const app = buildApp({
     }),
     ttsClient: new GeminiTtsClient({ auth, model: config.gemini.ttsModel }),
     voiceEn: config.gemini.voiceEn,
-    voiceZh: config.gemini.voiceZh,
     audioDir: config.audioDir,
     audioFormat: config.audioFormat,
   },

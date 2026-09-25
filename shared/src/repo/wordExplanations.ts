@@ -196,7 +196,7 @@ export async function updateExplanationAudioPaths(
   );
 }
 
-/** 缺音檔的解釋（任一組「有文字但音檔為 null」即入列），補產音檔用。 */
+/** 缺英文音檔的解釋（有英文文字但音檔為 null），補產音檔用。 */
 export async function listExplanationsMissingAudio(
   db: Queryable,
   limit: number,
@@ -205,9 +205,6 @@ export async function listExplanationsMissingAudio(
     `SELECT * FROM word_explanations
       WHERE (en_explanation IS NOT NULL AND en_explanation_audio_path IS NULL)
          OR (en_example     IS NOT NULL AND en_example_audio_path     IS NULL)
-         OR (zh_translation IS NOT NULL AND zh_translation_audio_path IS NULL)
-         OR (zh_explanation IS NOT NULL AND zh_explanation_audio_path IS NULL)
-         OR (zh_example     IS NOT NULL AND zh_example_audio_path     IS NULL)
       ORDER BY id
       LIMIT $1`,
     [limit],

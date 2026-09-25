@@ -28,12 +28,26 @@ describe("收藏篩選", () => {
 });
 
 describe("單字複習", () => {
+  it("篩選可收合並保留條件，單字操作位於內容上方", async () => {
+    render(<VocabularyReview onJump={vi.fn()} />);
+    await screen.findByText("A good habit.");
+    fireEvent.change(screen.getByLabelText("年級"), { target: { value: "三年級" } });
+    const next = screen.getByRole("button", { name: "下一個" });
+    const word = screen.getByRole("heading", { name: "habit" });
+    expect(next.compareDocumentPosition(word) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "收合篩選" }));
+    expect(screen.queryByLabelText("年級")).toBeNull();
+    expect(screen.getByText(/年級：三年級/)).toBeTruthy();
+    expect(screen.getByText("1 個單字 · 第 1 個")).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "展開篩選" }));
+    expect((screen.getByLabelText("年級") as HTMLSelectElement).value).toBe("三年級");
+  });
   it("優先所選課文的解釋，切换挑戰停止音訊並隱藏答案", async () => {
     const explanation = (id: number, articleId: number, zhTranslation: string): WordExplanation => ({
       id, articleId, wordId: 1, paragraphId: 30, zhTranslation, headword: null, createdAt: item.savedAt,
       article: { id: articleId, title: `課文 ${articleId}` },
-      enExplanation: null, zhExplanation: null, enExample: null, zhExample: null,
-      enExplanationAudioPath: null, zhExplanationAudioPath: null, enExampleAudioPath: null,
+      enExplanation: "a regular practice", zhExplanation: null, enExample: null, zhExample: null,
+      enExplanationAudioPath: "meaning.wav", zhExplanationAudioPath: null, enExampleAudioPath: null,
       zhExampleAudioPath: null, zhTranslationAudioPath: "meaning.wav",
     });
     const pause = vi.fn();
@@ -42,7 +56,8 @@ describe("單字複習", () => {
     render(<VocabularyReview onJump={vi.fn()} />);
     await screen.findByText("習慣");
     expect(screen.queryByText("其他意思")).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "中文意思語音" }));
+    expect(screen.queryByRole("button", { name: "中文意思語音" })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "英文解釋語音" }));
     fireEvent.click(screen.getByRole("button", { name: "快速挑戰" }));
     expect(pause).toHaveBeenCalled();
     expect(screen.queryByText("習慣")).toBeNull();

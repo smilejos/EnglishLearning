@@ -2,6 +2,7 @@ import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "rea
 import type { Article, Paragraph, MaterialType } from "./types";
 import * as api from "./api";
 import { Illustrations } from "./Illustrations";
+import { AudioBackfillPanel } from "./AudioBackfillPanel";
 import { normalizeBaseUrl } from "./urls";
 import { uniqSorted } from "./facets";
 import {
@@ -586,9 +587,11 @@ const MATERIALS = [
 function ArticleList({
   onOpen,
   onEdit,
+  onAudioBackfill,
 }: {
   onOpen: (id: number) => void;
   onEdit: (id: number) => void;
+  onAudioBackfill: () => void;
 }) {
   const [articles, setArticles] = useState<Article[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -716,19 +719,8 @@ function ArticleList({
         <div className="page-head__aside">
           <button
             className="btn btn--ghost btn--sm"
-            title="重新產生缺失的單字/解釋語音（會呼叫 TTS API）"
-            onClick={async () => {
-              if (!window.confirm("補齊缺失音檔？將呼叫語音 API（產生費用）。")) return;
-              try {
-                const r = await api.backfillAudio();
-                window.alert(
-                  `已補 ${r.fixedAudio} 個音檔（掃描 ${r.scannedWords} 個單字、${r.scannedExplanations} 筆解釋）`,
-                );
-                await load();
-              } catch (err) {
-                setError((err as Error).message);
-              }
-            }}
+            title="檢視待補的單字、英文解釋與英文例句音檔"
+            onClick={onAudioBackfill}
           >
             補缺音檔
           </button>
@@ -1325,6 +1317,7 @@ type View =
   | "detail"
   | "edit"
   | "taxonomy"
+  | "audio"
   | "words"
   | "users";
 
@@ -1573,6 +1566,8 @@ export default function App() {
       <main className="wrap" style={{ paddingTop: 24, paddingBottom: 60 }}>
         {view === "taxonomy" ? (
           <TaxonomyManager />
+        ) : view === "audio" ? (
+          <AudioBackfillPanel onBack={goList} />
         ) : view === "users" ? (
           <UserManager />
         ) : view === "words" ? (
@@ -1589,7 +1584,7 @@ export default function App() {
         ) : view === "detail" && openId !== null ? (
           <ArticleView id={openId} onBack={goList} />
         ) : (
-          <ArticleList onOpen={openDetail} onEdit={openEdit} />
+          <ArticleList onOpen={openDetail} onEdit={openEdit} onAudioBackfill={() => setView("audio")} />
         )}
       </main>
     </div>
