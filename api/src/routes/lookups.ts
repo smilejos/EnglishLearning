@@ -16,6 +16,8 @@ import {
   writeAudioEncoded,
   listWordsMissingEnAudio,
   listExplanationsMissingAudio,
+  listMissingAudioTargets,
+  findMissingAudioTarget,
   updateExplanationAudioPaths,
   searchWords,
   deleteWord,
@@ -27,6 +29,7 @@ import {
   type TtsClient,
   type AudioFormat,
   type ExplanationAudioPaths,
+  type MissingAudioKind,
 } from "@el/shared";
 import { requireAdmin, requireReviewer } from "../auth";
 import type { LookupLimiter } from "../rateLimit";
@@ -36,7 +39,6 @@ export interface LookupDeps {
   explainClient: ExplainClient;
   ttsClient: TtsClient;
   voiceEn: string;
-  voiceZh: string;
   audioDir: string;
   audioFormat: AudioFormat;
 }
@@ -107,6 +109,11 @@ export function registerLookupRoutes(
     },
   );
 
+  // 後台補音清單：每個缺失的英文音檔列為獨立目標。
+  app.get("/lookups/missing-audio", { preHandler: requireAdmin }, async () => ({
+    items: await listMissingAudioTargets(pool),
+  }));
+
   // 後台：刪除整個單字（cascade 解釋；並盡力清該單字整包音檔）。
   app.delete(
     "/words/:id",
@@ -154,9 +161,6 @@ export function registerLookupRoutes(
     content: {
       en_explanation: string;
       en_example: string;
-      zh_translation: string;
-      zh_explanation: string;
-      zh_example: string;
     },
   ): Promise<void> => {
     try {
@@ -168,22 +172,13 @@ export function registerLookupRoutes(
       const [
         enExplanationAudioPath,
         enExampleAudioPath,
-        zhTranslationAudioPath,
-        zhExplanationAudioPath,
-        zhExampleAudioPath,
       ] = await Promise.all([
         trySynth(log, content.en_explanation, deps.voiceEn, `${base}/en_explanation`),
         trySynth(log, content.en_example, deps.voiceEn, `${base}/en_example`),
-        trySynth(log, content.zh_translation, deps.voiceZh, `${base}/zh_translation`),
-        trySynth(log, content.zh_explanation, deps.voiceZh, `${base}/zh_explanation`),
-        trySynth(log, content.zh_example, deps.voiceZh, `${base}/zh_example`),
       ]);
       await updateExplanationAudioPaths(pool, explanationId, {
         enExplanationAudioPath,
         enExampleAudioPath,
-        zhTranslationAudioPath,
-        zhExplanationAudioPath,
-        zhExampleAudioPath,
       });
     } catch (err) {
       log.error({
@@ -309,7 +304,29 @@ export function registerLookupRoutes(
   app.post(
     "/lookups/backfill-audio",
     { preHandler: requireAdmin },
-    async (request) => {
+    async (request, reply) => {
+      if (request.body !== undefined) {
+        const body = request.body as { kind?: unknown; id?: unknown } | null;
+        const kind = body?.kind;
+        const id = body?.id;
+        if ((kind !== "word" && kind !== "enExplanation" && kind !== "enExample") ||
+            !Number.isInteger(id) || Number(id) <= 0) {
+          return reply.code(400).send({ error: "invalid audio target" });
+        }
+        const target = await findMissingAudioTarget(pool, kind as MissingAudioKind, Number(id));
+        if (!target) return { fixedAudio: 0, alreadyComplete: true };
+        const relBase = target.kind === "word"
+          ? `words/${target.wordId}/en`
+          : `words/${target.wordId}/a${target.articleId}/${target.kind === "enExplanation" ? "en_explanation" : "en_example"}`;
+        const path = await trySynth(request.log, target.text, deps.voiceEn, relBase);
+        if (!path) return { fixedAudio: 0, alreadyComplete: false };
+        if (target.kind === "word") await setWordEnAudioPath(pool, target.id, path);
+        else await updateExplanationAudioPaths(pool, target.id,
+          target.kind === "enExplanation"
+            ? { enExplanationAudioPath: path }
+            : { enExampleAudioPath: path });
+        return { fixedAudio: 1, alreadyComplete: false };
+      }
       const words = await listWordsMissingEnAudio(pool, 10);
       const explanations = await listExplanationsMissingAudio(pool, 10);
       let fixed = 0;
@@ -329,12 +346,6 @@ export function registerLookupRoutes(
           patch.enExplanationAudioPath = await trySynth(request.log, e.enExplanation, deps.voiceEn, `${base}/en_explanation`);
         if (e.enExample && !e.enExampleAudioPath)
           patch.enExampleAudioPath = await trySynth(request.log, e.enExample, deps.voiceEn, `${base}/en_example`);
-        if (e.zhTranslation && !e.zhTranslationAudioPath)
-          patch.zhTranslationAudioPath = await trySynth(request.log, e.zhTranslation, deps.voiceZh, `${base}/zh_translation`);
-        if (e.zhExplanation && !e.zhExplanationAudioPath)
-          patch.zhExplanationAudioPath = await trySynth(request.log, e.zhExplanation, deps.voiceZh, `${base}/zh_explanation`);
-        if (e.zhExample && !e.zhExampleAudioPath)
-          patch.zhExampleAudioPath = await trySynth(request.log, e.zhExample, deps.voiceZh, `${base}/zh_example`);
         const got = Object.values(patch).filter(Boolean).length;
         if (got > 0) await updateExplanationAudioPaths(pool, e.id, patch);
         fixed += got;

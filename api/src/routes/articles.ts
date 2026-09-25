@@ -27,6 +27,7 @@ import {
   getCategoryById,
   listTagsByArticle,
   type DbPool,
+  publishedVisuals,
 } from "@el/shared";
 import { requireAdmin } from "../auth";
 import { splitParagraphs } from "../articleText";
@@ -130,9 +131,11 @@ export function registerArticleRoutes(
   );
 
   // 文章清單（任何已驗證身分；admin 輪詢狀態、learner 瀏覽）。含分類/標籤 meta。
-  app.get("/articles", async () => ({
-    articles: await listArticlesWithMeta(pool),
-  }));
+  app.get("/articles", async () => {
+    const articles = await listArticlesWithMeta(pool);
+    const visuals = await publishedVisuals(pool, articles.map(a => a.id));
+    return { articles: articles.map(a => ({ ...a, cover: visuals.find(v => v.articleId === a.id && v.kind === "cover")?.image ?? null })) };
+  });
 
   // 文章詳情：含逐段文字、翻譯、狀態與音檔路徑。
   app.get("/articles/:id", async (request, reply) => {
@@ -150,17 +153,20 @@ export function registerArticleRoutes(
       ? await getCategoryById(pool, article.categoryId)
       : null;
     const paragraphs = await listParagraphsByArticle(pool, id);
+    const visuals = await publishedVisuals(pool, [id]);
     const errByParagraph = new Map(
       (await listJobErrorsByArticle(pool, id)).map((e) => [e.paragraphId, e.error]),
     );
     return {
       article: {
         ...article,
+        cover: visuals.find(v => v.kind === "cover")?.image ?? null,
         category: category ? { id: category.id, label: category.label } : null,
         tags: tags.map((t) => ({ kind: t.kind, label: t.label })),
       },
       paragraphs: paragraphs.map((p) => ({
         ...p,
+        illustration: visuals.find(v => v.paragraphId === p.id)?.image ?? null,
         jobError: errByParagraph.get(p.id) ?? null,
       })),
     };

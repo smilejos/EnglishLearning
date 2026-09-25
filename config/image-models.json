@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "defaultModelId": "openai-gpt-image-2",
+  "models": [
+    {
+      "id": "openai-gpt-image-2",
+      "label": "OpenAI GPT Image 2",
+      "provider": "openai",
+      "adapter": "openai-images-v1",
+      "apiModel": "gpt-image-2-2026-04-21",
+      "enabled": true,
+      "pricingProfileId": "openai-image-2-v1",
+      "profiles": {
+        "cover": {
+          "deliveryAspectRatio": "16:9",
+          "providerOptions": {
+            "size": "1536x1024",
+            "quality": "medium"
+          }
+        },
+        "paragraph": {
+          "deliveryAspectRatio": "4:3",
+          "providerOptions": {
+            "size": "1536x1024",
+            "quality": "medium"
+          }
+        },
+        "reference": {
+          "deliveryAspectRatio": "4:3",
+          "providerOptions": {
+            "size": "1536x1024",
+            "quality": "medium"
+          }
+        }
+      }
+    },
+    {
+      "id": "google-gemini-3-1-flash-lite-image",
+      "label": "Google Gemini 3.1 Flash Lite Image",
+      "provider": "google-gemini",
+      "adapter": "gemini-generate-content-v1beta",
+      "apiModel": "gemini-3.1-flash-lite-image",
+      "enabled": true,
+      "pricingProfileId": "gemini-lite-image-v1",
+      "profiles": {
+        "cover": {
+          "deliveryAspectRatio": "16:9",
+          "providerOptions": {
+            "aspectRatio": "16:9",
+            "imageSize": "1K"
+          }
+        },
+        "paragraph": {
+          "deliveryAspectRatio": "4:3",
+          "providerOptions": {
+            "aspectRatio": "4:3",
+            "imageSize": "1K"
+          }
+        },
+        "reference": {
+          "deliveryAspectRatio": "4:3",
+          "providerOptions": {
+            "aspectRatio": "4:3",
+            "imageSize": "1K"
+          }
+        }
+      }
+    }
+  ]
+}

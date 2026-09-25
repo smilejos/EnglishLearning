@@ -39,6 +39,10 @@ open http://localhost:8081    # 後台
 open http://localhost:8082    # 前台
 ```
 
+部署腳本預設啟用 `images` profile，完整 `up`／`deploy`／`rebuild` 會包含 `image-worker`；
+也可用 `./scripts/deploy.sh up image-worker` 單獨啟動。請先設定已啟用圖片模型所需的憑證
+（預設為 `OPENAI_API_KEY` 與 `GEMINI_API_KEY`）。
+
 `.env` 由 `.env.example` 自動建立；正式環境需填 `GEMINI_API_KEY` 並看「上線前檢查清單」。
 `AUDIO_FORMAT=m4a`（預設）——新音檔以 AAC 儲存，舊音檔照舊可播。
 
@@ -82,7 +86,16 @@ npm run test:db:down  # 收掉測試庫
 
 ## 備份與還原
 
-備份內容：PostgreSQL 全庫（`pg_dump --format=custom`）＋ audio volume（tar.gz）。
+AI 圖片版本也會備份至 `images.tgz`。還原時先停止 `image-worker`，使用新的暫存目錄解壓，將 `images/.` 複製至 `/data/images` 的可寫 volume（API 掛載為唯讀）：
+
+```bash
+docker compose stop image-worker
+docker compose --profile images run --rm --no-deps -v /path/to/backup:/backup:ro image-worker sh -c 'tar -xzf /backup/images.tgz -C /data'
+```
+
+資料庫與圖片應取自同一次備份；正式還原會改動資料，操作前需確認並保留現有備份。
+
+備份內容：PostgreSQL 全庫（`pg_dump --format=custom`）＋ audio、images volumes（tar.gz）。
 **備份檔含使用者 email，請存放於私人空間；異地備份建議先加密（age/gpg）。**
 
 ```bash

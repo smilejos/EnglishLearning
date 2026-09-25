@@ -2,6 +2,12 @@
 // db pool、repositories 於 Phase 2+ 陸續加入。
 
 export { normalizeWord } from "./normalizeWord";
+export * from "./illustrations/contracts";
+export * from "./illustrations/catalog";
+export * from "./illustrations/providers";
+export * from "./illustrations/repository";
+export * from "./illustrations/storage";
+export * from "./illustrations/processor";
 export { extractVocabWords } from "./tokenizeWords";
 
 export { createPool, ping, withTransaction } from "./db";
@@ -96,3 +102,5 @@ export type {
   WordLookupRequest,
   WordLookupResponse,
 } from "./schemas";
+
+export * from "./repo/vocabulary";

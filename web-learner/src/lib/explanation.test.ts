@@ -26,15 +26,12 @@ describe("explanationAudioReady", () => {
   it("音檔皆缺 → false", () => {
     expect(explanationAudioReady(base)).toBe(false);
   });
-  it("五個音檔皆備 → true", () => {
+  it("兩個英文音檔皆備即可停止輪詢", () => {
     expect(
       explanationAudioReady({
         ...base,
         enExplanationAudioPath: "a",
         enExampleAudioPath: "b",
-        zhTranslationAudioPath: "c",
-        zhExplanationAudioPath: "d",
-        zhExampleAudioPath: "e",
       }),
     ).toBe(true);
   });

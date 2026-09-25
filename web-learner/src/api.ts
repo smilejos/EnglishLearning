@@ -6,6 +6,7 @@ import type {
   WordLookupResponse,
 } from "./types";
 import { normalizeBaseUrl } from "./lib/urls";
+import type { VocabularyItem } from "./vocabularyTypes";
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
@@ -33,7 +34,27 @@ async function req<T>(path: string, init?: RequestInit): Promise<T> {
     }
     throw new ApiError(res.status, message);
   }
-  return (await res.json()) as T;
+  return res.status === 204 ? undefined as T : (await res.json()) as T;
+}
+
+export function listVocabulary(): Promise<VocabularyItem[]> {
+  return req("/vocabulary");
+}
+
+export function saveVocabulary(input: {
+  word: string;
+  articleId: number;
+  paragraphId: number;
+}): Promise<VocabularyItem> {
+  return req("/vocabulary", { method: "POST", body: JSON.stringify(input) });
+}
+
+export function setVocabularyStatus(id: number, status: "active" | "mastered"): Promise<VocabularyItem> {
+  return req(`/vocabulary/${id}`, { method: "PATCH", body: JSON.stringify({ status }) });
+}
+
+export function removeVocabulary(id: number): Promise<void> {
+  return req(`/vocabulary/${id}`, { method: "DELETE" });
 }
 
 export function listArticles(): Promise<{ articles: Article[] }> {

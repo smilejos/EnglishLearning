@@ -10,7 +10,7 @@ import type {
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
-async function req<T>(path: string, init?: RequestInit): Promise<T> {
+export async function req<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {
     headers: { "Content-Type": "application/json" },
     ...init,
@@ -81,6 +81,31 @@ export function backfillAudio(): Promise<{
   scannedExplanations: number;
 }> {
   return req("/lookups/backfill-audio", { method: "POST" });
+}
+
+export type MissingAudioKind = "word" | "enExplanation" | "enExample";
+export interface MissingAudioTarget {
+  kind: MissingAudioKind;
+  id: number;
+  wordId: number;
+  articleId: number | null;
+  word: string;
+  articleTitle: string | null;
+  text: string;
+}
+
+export function listMissingAudio(): Promise<{ items: MissingAudioTarget[] }> {
+  return req("/lookups/missing-audio");
+}
+
+export function backfillAudioTarget(target: Pick<MissingAudioTarget, "kind" | "id">): Promise<{
+  fixedAudio: number;
+  alreadyComplete: boolean;
+}> {
+  return req("/lookups/backfill-audio", {
+    method: "POST",
+    body: JSON.stringify(target),
+  });
 }
 
 export function deleteArticle(id: number): Promise<{ ok: boolean }> {

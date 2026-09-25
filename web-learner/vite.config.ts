@@ -10,8 +10,11 @@ export default defineConfig({
     host: true,
     port: 5174,
     proxy: {
+      "/images": apiTarget,
+      "/image-models": apiTarget,
       "/articles": apiTarget,
       "/words": apiTarget,
+      "/vocabulary": apiTarget,
       "/lookups": apiTarget,
       "/audio": apiTarget,
       "/me": apiTarget,

@@ -1,0 +1,14 @@
+.audio-backfill { margin: 0 0 24px; }
+.audio-backfill__head, .audio-backfill__tools { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.audio-backfill__head { justify-content: space-between; margin-bottom: 16px; }
+.audio-backfill__head h2 { margin: 0 0 4px; font-size: 1.1rem; }
+.audio-backfill__head p { margin: 0; color: var(--text-muted); font-size: 0.84rem; }
+.audio-backfill__tools { margin-bottom: 14px; }
+.audio-backfill__tools .field { flex: 1; min-width: 190px; max-width: 330px; }
+.audio-backfill__tools span { color: var(--text-soft); font-size: 0.86rem; font-weight: 700; }
+.audio-backfill__list { max-height: calc(100vh - 320px); min-height: 220px; overflow: auto; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.audio-backfill__list table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.audio-backfill__list th, .audio-backfill__list td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.audio-backfill__list th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-soft); }
+.audio-backfill__list tr:last-child td { border-bottom: 0; }
+.audio-backfill__text { min-width: 180px; max-width: 380px; overflow-wrap: anywhere; }

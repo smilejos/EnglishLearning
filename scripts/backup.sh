@@ -40,6 +40,11 @@ docker compose cp api:/data/audio "$OUT/audio"
 tar -czf "$OUT/audio.tgz" -C "$OUT" audio
 rm -rf "$OUT/audio"
 
+echo "▶ images volume → $OUT/images.tgz"
+docker compose cp api:/data/images "$OUT/images"
+tar -czf "$OUT/images.tgz" -C "$OUT" images
+rm -rf "$OUT/images"
+
 # 輪替：僅保留最近 BACKUP_KEEP 份（目錄名以數字時間戳開頭）。
 ls -1d "$BACKUP_DIR"/[0-9]* 2>/dev/null | sort -r \
   | awk -v keep="$BACKUP_KEEP" 'NR > keep' \
@@ -48,4 +53,4 @@ ls -1d "$BACKUP_DIR"/[0-9]* 2>/dev/null | sort -r \
       rm -rf "$old"
     done
 
-echo "✔ 備份完成：${OUT}（db.dump + audio.tgz）"
+echo "✔ 備份完成：${OUT}（db.dump + audio.tgz + images.tgz）"

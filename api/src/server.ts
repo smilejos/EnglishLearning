@@ -6,12 +6,15 @@ import {
   serviceAccountAuthorizer,
   GeminiExplainClient,
   GeminiTtsClient,
+  loadImageModelCatalog,
+  visualHash,
 } from "@el/shared";
 import { buildApp } from "./app";
 import { LookupLimiter } from "./rateLimit";
 
 const config = loadConfig();
 const pool = createPool(config.databaseUrl);
+const imageCatalog = config.images.modelsFile ? loadImageModelCatalog(config.images.modelsFile, config.images.pricingFile) : null;
 
 // LLM 授權：優先用 API key，否則用 service account（兩者擇一已於 config 驗證）。
 const auth = config.gemini.apiKey
@@ -23,6 +26,14 @@ const lookupLimiter = new LookupLimiter(config.lookupLimits);
 const app = buildApp({
   config,
   pool,
+  illustrations: imageCatalog ? {
+    catalog: imageCatalog,
+    imageDir: config.images.directory,
+    availableModelIds: async () => {
+      const rows = (await pool.query("SELECT models FROM image_worker_heartbeats WHERE updated_at > now()-interval '60 seconds'")).rows;
+      return imageCatalog.models.filter(m => rows.some(r => r.models.some((v: {id: string; hash: string}) => v.id === m.id && v.hash === visualHash(m)))).map(m => m.id);
+    },
+  } : undefined,
   audioDir: config.audioDir,
   lookupLimiter,
   lookupDeps: {
@@ -32,7 +43,6 @@ const app = buildApp({
     }),
     ttsClient: new GeminiTtsClient({ auth, model: config.gemini.ttsModel }),
     voiceEn: config.gemini.voiceEn,
-    voiceZh: config.gemini.voiceZh,
     audioDir: config.audioDir,
     audioFormat: config.audioFormat,
   },
