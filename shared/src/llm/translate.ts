@@ -89,7 +89,7 @@ export class GeminiTranslateClient implements TranslateClient {
     const res = await generateContent(
       this.model,
       {
-        contents: [{ parts: [{ text: prompt }] }],
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
         generationConfig: { responseMimeType: "application/json" },
       },
       this.auth,

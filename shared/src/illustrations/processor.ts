@@ -1,4 +1,5 @@
 import { randomUUID } from "node:crypto";
+import { z } from "zod";
 import { withTransaction, type DbPool } from "../db";
 import type { Queryable } from "../repo/types";
 import {
@@ -20,11 +21,12 @@ import {
 import {
   ImageProviderError,
   plannerPrompt,
+  stagedPlannerPrompt,
   type ImageAdapter,
   type VisualPlanner,
 } from "./providers";
 import { recordAsset, type ImageStorage, type StoredAsset } from "./storage";
-import { audit, lockedRun, VisualError } from "./repository";
+import { audit, assertStagedSlot, lockedRun, VisualError } from "./repository";
 
 export interface ImageWorkerDeps {
   pool: DbPool;
@@ -34,6 +36,25 @@ export interface ImageWorkerDeps {
   storage: ImageStorage;
 }
 async function refreshRun(db: Queryable, runId: number) {
+  const staged = (await db.query("SELECT workflow_version,status FROM article_visual_runs WHERE id=$1", [runId])).rows[0];
+  if (staged?.workflow_version === 2) {
+    if (["cancelled","published","superseded"].includes(staged.status)) return;
+    const slots = (await db.query(
+      `SELECT s.kind,s.required,s.prompt_status,c.status AS selected_status
+       FROM illustration_slots s LEFT JOIN illustration_candidates c ON c.id=s.selected_candidate_id
+       WHERE s.run_id=$1`, [runId],
+    )).rows;
+    const active = (await db.query("SELECT kind FROM illustration_jobs WHERE run_id=$1 AND status IN ('pending','processing') LIMIT 1", [runId])).rows[0];
+    const ready = slots.every((s) => !s.required || s.selected_status === "approved");
+    const reference = slots.find((s) => s.kind === "reference");
+    const status = active ? (active.kind === "plan" ? "planning" : "generating")
+      : ready ? "review"
+      : reference?.selected_status !== "approved" && reference?.selected_status === "ready" ? "waiting_reference_review"
+      : slots.some((s) => s.selected_status === "failed" || s.selected_status === "uncertain" || s.prompt_status === "failed") ? "partial_failed"
+      : "pending";
+    await db.query("UPDATE article_visual_runs SET status=$2,updated_at=now() WHERE id=$1", [runId,status]);
+    return;
+  }
   await db.query(
     `UPDATE article_visual_runs r SET status=CASE
     WHEN EXISTS(SELECT 1 FROM illustration_slots s JOIN illustration_candidates c ON c.id=s.selected_candidate_id WHERE s.run_id=r.id AND s.kind='reference' AND c.status!='approved') THEN 'waiting_reference_review'
@@ -51,6 +72,7 @@ export async function enqueueCandidate(
   prompt: string,
   alt: string,
   targets: unknown,
+  jobKey?: string,
 ) {
   const candidate = (
     await db.query(
@@ -71,7 +93,7 @@ export async function enqueueCandidate(
   );
   await db.query(
     "INSERT INTO illustration_jobs(kind,run_id,slot_id,candidate_id,idempotency_key) VALUES('generate',$1,$2,$3,$4)",
-    [run.id, slot.id, candidate.id, `generate:${candidate.id}`],
+    [run.id, slot.id, candidate.id, jobKey ?? `generate:${candidate.id}`],
   );
   return candidate;
 }
@@ -143,14 +165,14 @@ async function storePlan(db: Queryable, run: any, plan: VisualPlan, validationWa
 async function claim(deps: ImageWorkerDeps) {
   return withTransaction(deps.pool, async (tx) => {
     const run = (
-      await tx.query(`SELECT r.* FROM article_visual_runs r WHERE r.status IN ('pending','planning','generating','waiting_reference_review') AND EXISTS (
+      await tx.query(`SELECT r.* FROM article_visual_runs r WHERE r.status IN ('pending','planning','generating','waiting_reference_review','partial_failed','review') AND EXISTS (
       SELECT 1 FROM illustration_jobs j LEFT JOIN illustration_slots s ON s.id=j.slot_id WHERE j.run_id=r.id AND j.status='pending' AND j.available_at<=now()
       AND (r.status!='waiting_reference_review' OR s.kind='reference')) ORDER BY r.id FOR UPDATE OF r SKIP LOCKED LIMIT 1`)
     ).rows[0];
     if (!run) return null;
     const job = (
       await tx.query(
-        `SELECT j.*,s.kind AS purpose FROM illustration_jobs j LEFT JOIN illustration_slots s ON s.id=j.slot_id WHERE j.run_id=$1 AND j.status='pending' AND j.available_at<=now()
+        `SELECT j.*,s.kind AS purpose,s.paragraph_id FROM illustration_jobs j LEFT JOIN illustration_slots s ON s.id=j.slot_id WHERE j.run_id=$1 AND j.status='pending' AND j.available_at<=now()
       AND ($2!='waiting_reference_review' OR s.kind='reference') ORDER BY j.id FOR UPDATE OF j SKIP LOCKED LIMIT 1`,
         [run.id, run.status],
       )
@@ -164,10 +186,11 @@ async function claim(deps: ImageWorkerDeps) {
           ])
         ).rows[0]
       : null;
-    const prompt =
-      job.kind === "plan"
-        ? plannerPrompt(run.source_json as VisualSource)
-        : (candidate.prompt_json.prompt as string);
+    const prompt = job.kind === "plan"
+      ? run.workflow_version === 2
+        ? stagedPlannerPrompt(run.source_json as VisualSource, job.purpose, run.visual_bible, Number(job.paragraph_id))
+        : plannerPrompt(run.source_json as VisualSource)
+      : (candidate.prompt_json.prompt as string);
     const reference = (
       await tx.query(
         "SELECT f.object_key,f.mime_type FROM illustration_slots s JOIN illustration_candidates c ON c.id=s.selected_candidate_id JOIN illustration_asset_files f ON f.asset_id=c.asset_id AND f.variant='web' WHERE s.run_id=$1 AND s.kind='reference' AND c.status='approved'",
@@ -225,7 +248,7 @@ async function claim(deps: ImageWorkerDeps) {
           job.id,
           job.candidate_id,
           job.kind,
-          job.kind === "plan" ? "google-gemini" : model.provider,
+          job.kind === "plan" ? ((run.planner_snapshot as PlannerConfig).provider ?? "google") : model.provider,
           job.kind === "plan" ? run.planner_snapshot.apiModel : model.apiModel,
           visualHash({ model, prompt, reference }),
           visualHash(prompt),
@@ -253,6 +276,7 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
   let usage: Record<string, unknown> | undefined;
   let requestId: string | undefined;
   let plan: VisualPlan | undefined;
+  let stagedResult: { prompt: string; altText: string; visualBible: string } | undefined;
   const validationWarnings: string[] = [];
   let failure: unknown;
   let received = false;
@@ -271,13 +295,24 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
         plannerConfig,
         prompt,
         AbortSignal.timeout(180000),
+        run.workflow_version === 2,
       );
       received = true;
       usage = result.usage;
       if (result.validationError) throw new VisualPlanError(result.validationError);
-      plan = validateVisualPlan(result.value, run.source_json as VisualSource, (warning) => {
-        validationWarnings.push(warning);
-      });
+      if (run.workflow_version === 2) {
+        const parsed = z.object({
+          prompt: z.string().trim().min(1).max(24000),
+          altText: z.string().trim().min(1).max(2000),
+          visualBible: z.string().max(16000),
+        }).strict().safeParse(result.value);
+        if (!parsed.success) throw new VisualPlanError("規劃格式不符：需要 prompt、altText 與 visualBible");
+        stagedResult = parsed.data;
+      } else {
+        plan = validateVisualPlan(result.value, run.source_json as VisualSource, (warning) => {
+          validationWarnings.push(warning);
+        });
+      }
     } else {
       const model = run.model_config_snapshot as ImageModel;
       const adapter = deps.adapters[model.adapter];
@@ -401,10 +436,10 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
             ],
           );
         if (job.kind === "plan" && !retry && !cancelled)
-          await tx.query(
-            "UPDATE article_visual_runs SET status='failed',updated_at=now() WHERE id=$1",
-            [run.id],
-          );
+          if (run.workflow_version === 2 && job.slot_id)
+            await tx.query("UPDATE illustration_slots SET prompt_status='failed' WHERE id=$1", [job.slot_id]);
+          else
+            await tx.query("UPDATE article_visual_runs SET status='failed',updated_at=now() WHERE id=$1", [run.id]);
       } else {
         if (asset) {
           await recordAsset(tx, asset);
@@ -414,12 +449,20 @@ export async function processImageJob(deps: ImageWorkerDeps): Promise<boolean> {
           );
         }
         if (plan && !cancelled) await storePlan(tx, run, plan, validationWarnings);
+        if (stagedResult && !cancelled) {
+          await tx.query(
+            "UPDATE illustration_slots SET prompt_draft=$2,prompt_alt_text=$3,prompt_revision=prompt_revision+1,prompt_status='ready' WHERE id=$1",
+            [job.slot_id, stagedResult.prompt, stagedResult.altText],
+          );
+          if (job.purpose === "reference")
+            await tx.query("UPDATE article_visual_runs SET visual_bible=$2 WHERE id=$1", [run.id, stagedResult.visualBible]);
+        }
         await tx.query(
           "UPDATE illustration_jobs SET status=$2,updated_at=now() WHERE id=$1",
           [job.id, cancelled ? "cancelled" : "done"],
         );
       }
-      if (job.kind !== "plan") await refreshRun(tx, Number(run.id));
+      if (job.kind !== "plan" || run.workflow_version === 2) await refreshRun(tx, Number(run.id));
     });
   } catch (error) {
     // Recovery owns any sending attempt. Queue uncommitted files for durable cleanup.
@@ -566,6 +609,8 @@ export async function regenerateVisualSlot(
 ) {
   await withTransaction(pool, async (tx) => {
     const run = await lockedRun(tx, articleId, runId);
+    if (run.workflow_version === 2)
+      throw new VisualError("use the saved prompt to generate a staged image");
     if (
       !["review", "partial_failed", "waiting_reference_review"].includes(
         run.status,
@@ -676,11 +721,17 @@ export async function skipVisualSlot(
 ) {
   await withTransaction(pool, async (tx) => {
     const run = await lockedRun(tx, articleId, runId);
-    if (!["review", "partial_failed"].includes(run.status))
+    if (!(["review", "partial_failed"].includes(run.status) ||
+      (run.workflow_version === 2 && ["pending","planning","waiting_reference_review"].includes(run.status))))
       throw new VisualError("wait for run to finish before skipping");
+    if (run.workflow_version === 2) {
+      await assertStagedSlot(tx,run,slotId);
+      if ((await tx.query("SELECT 1 FROM illustration_jobs WHERE slot_id=$1 AND status IN ('pending','processing')",[slotId])).rowCount)
+        throw new VisualError("wait for current work before skipping");
+    }
     const result = await tx.query(
       "UPDATE illustration_slots SET required=false,skip_reason=$3 WHERE run_id=$1 AND id=$2 AND kind='paragraph' RETURNING id",
-      [runId, slotId, reason],
+      [runId, slotId, reason || "已略過"],
     );
     if (!result.rowCount)
       throw new VisualError("only paragraph slots may be skipped");
@@ -690,5 +741,73 @@ export async function skipVisualSlot(
     );
     await refreshRun(tx, runId);
     await audit(tx, runId, actor, "skip", reason, { slotId });
+  });
+}
+
+export async function planStagedSlot(pool: DbPool, articleId: number, runId: number, slotId: number, actor: number, key: string, acceptUnknown = false) {
+  return withTransaction(pool, async (tx) => {
+    const run = await lockedRun(tx, articleId, runId);
+    const jobKey = `plan-request:${runId}:${slotId}:${key}`;
+    const existing = (await tx.query("SELECT id FROM illustration_jobs WHERE idempotency_key=$1 AND run_id=$2 AND slot_id=$3 AND kind='plan'",[jobKey,runId,slotId])).rows[0];
+    if (existing) return {jobId:Number(existing.id)};
+    const slot = await assertStagedSlot(tx, run, slotId);
+    const active = (await tx.query("SELECT 1 FROM illustration_jobs WHERE slot_id=$1 AND status IN ('pending','processing')", [slotId])).rowCount;
+    if (active) throw new VisualError("slot already has active work");
+    const unknown = (await tx.query(
+      "SELECT 1 FROM illustration_jobs WHERE run_id=$1 AND kind='plan' AND status='uncertain' AND (slot_id=$2 OR ($3 AND slot_id IS NULL))",
+      [runId,slotId,run.legacy_imported],
+    )).rowCount;
+    if (unknown && !acceptUnknown) throw new VisualError("explicitly acknowledge possible duplicate provider charges");
+    if (slot.kind === "reference") {
+      const later = (await tx.query("SELECT 1 FROM illustration_slots s JOIN illustration_candidates c ON c.slot_id=s.id WHERE s.run_id=$1 AND s.kind!='reference' AND c.status='approved' AND c.derived_from_candidate_id IS NULL", [runId])).rowCount;
+      if (later) throw new VisualError("reference is locked; create a new revision");
+    }
+    await tx.query("UPDATE illustration_slots SET prompt_status='planning' WHERE id=$1", [slotId]);
+    const job = (await tx.query("INSERT INTO illustration_jobs(kind,run_id,slot_id,idempotency_key) VALUES('plan',$1,$2,$3) RETURNING id", [runId,slotId,jobKey])).rows[0];
+    await refreshRun(tx,runId);
+    await audit(tx,runId,actor,"prompt_plan",undefined,{slotId});
+    return {jobId:Number(job.id)};
+  });
+}
+
+export async function saveStagedPrompt(pool: DbPool, articleId: number, runId: number, slotId: number, actor: number, prompt: string, revision: number) {
+  return withTransaction(pool, async (tx) => {
+    const run = await lockedRun(tx, articleId, runId);
+    const slot = await assertStagedSlot(tx,run,slotId);
+    if (slot.prompt_status === "planning") throw new VisualError("wait for prompt planning");
+    if (slot.prompt_revision !== revision) throw new VisualError("prompt was updated elsewhere; reload before saving");
+    const next = revision + 1;
+    await tx.query("UPDATE illustration_slots SET prompt_draft=$2,prompt_revision=$3,prompt_status='ready' WHERE id=$1", [slotId,prompt,next]);
+    await audit(tx,runId,actor,"prompt_save",undefined,{slotId});
+    return { revision: next };
+  });
+}
+
+export async function generateStagedSlot(pool: DbPool, articleId: number, runId: number, slotId: number, actor: number, prompt: string, revision: number, key: string, acceptUnknown: boolean) {
+  return withTransaction(pool, async (tx) => {
+    const run = await lockedRun(tx,articleId,runId);
+    const jobKey = `generate-request:${runId}:${slotId}:${key}`;
+    const existing = (await tx.query("SELECT j.candidate_id,c.prompt_json FROM illustration_jobs j JOIN illustration_candidates c ON c.id=j.candidate_id WHERE j.idempotency_key=$1 AND j.run_id=$2 AND j.slot_id=$3 AND j.kind='generate'",[jobKey,runId,slotId])).rows[0];
+    if (existing) {
+      if (existing.prompt_json.prompt !== prompt) throw new VisualError("idempotency key already used with a different prompt");
+      return {candidateId:Number(existing.candidate_id)};
+    }
+    const slot = await assertStagedSlot(tx,run,slotId);
+    if (slot.prompt_status !== "ready" || slot.prompt_revision !== revision || slot.prompt_draft !== prompt)
+      throw new VisualError("save the current prompt before generating");
+    const active = (await tx.query("SELECT 1 FROM illustration_jobs WHERE slot_id=$1 AND status IN ('pending','processing')",[slotId])).rowCount;
+    if (active) throw new VisualError("slot already has active work");
+    const unknown = (await tx.query("SELECT 1 FROM illustration_jobs WHERE slot_id=$1 AND status='uncertain'",[slotId])).rowCount;
+    if (unknown && !acceptUnknown) throw new VisualError("explicitly acknowledge possible duplicate provider charges");
+    if (slot.kind === "reference") {
+      const later = (await tx.query("SELECT 1 FROM illustration_slots s JOIN illustration_candidates c ON c.slot_id=s.id WHERE s.run_id=$1 AND s.kind!='reference' AND c.status='approved' AND c.derived_from_candidate_id IS NULL",[runId])).rowCount;
+      if (later) throw new VisualError("reference is locked; create a new revision");
+    }
+    const alt = slot.prompt_alt_text || (slot.kind === "reference" ? "Article visual reference sheet" : slot.kind === "cover" ? "Article cover illustration" : "Paragraph illustration");
+    const candidate = await enqueueCandidate(tx,run,slot,prompt,alt,[],jobKey);
+    await tx.query("UPDATE illustration_slots SET required=true,skip_reason=NULL,selected_candidate_id=$2 WHERE id=$1",[slotId,candidate.id]);
+    await refreshRun(tx,runId);
+    await audit(tx,runId,actor,"generate",undefined,{slotId,candidateId:Number(candidate.id)});
+    return {candidateId:Number(candidate.id)};
   });
 }

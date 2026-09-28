@@ -14,7 +14,7 @@ const items: api.MissingAudioTarget[] = [
 
 beforeEach(() => {
   vi.resetAllMocks();
-  vi.stubGlobal("confirm", vi.fn(() => true));
+  vi.stubGlobal("confirm", vi.fn(() => false));
   vi.mocked(api.listMissingAudio).mockResolvedValue({ items });
 });
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
@@ -28,6 +28,7 @@ it("顯示逐檔清單並只補所選音檔", async () => {
   expect(screen.getAllByRole("button", { name: /補齊 habit 的/ })).toHaveLength(3);
   fireEvent.click(screen.getByRole("button", { name: "補齊 habit 的單字發音" }));
   await waitFor(() => expect(api.backfillAudioTarget).toHaveBeenCalledWith(items[0]));
+  expect(window.confirm).not.toHaveBeenCalled();
   await screen.findByText("待補 2 個音檔");
 });
 
@@ -44,7 +45,7 @@ it("全部補檔逐檔執行，失敗後仍繼續並顯示結果", async () => {
   await screen.findByText("補檔完成。成功 2、已補齊 0、失敗 1。");
   expect(vi.mocked(api.backfillAudioTarget).mock.calls.map(([item]) => item.kind))
     .toEqual(["word", "enExplanation", "enExample"]);
-  expect(window.confirm).toHaveBeenCalledWith(expect.stringContaining("3 個音檔"));
+  expect(window.confirm).not.toHaveBeenCalled();
   await screen.findByText("待補 1 個音檔");
 });
 

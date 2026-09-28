@@ -8,7 +8,11 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, waitFor, cleanup, fireEvent } from "@testing-library/react";
 import App, { ArticleView, WordManager } from "./App";
 import * as api from "./api";
-vi.mock("./Illustrations", () => ({ Illustrations: () => null }));
+vi.mock("./Illustrations", () => ({
+  Illustrations: ({ onValidationWarningsChange }: { onValidationWarningsChange: (warnings: string[]) => void }) => (
+    <button onClick={() => onValidationWarningsChange(["段落 67：已略過不合規教學單字"])}>模擬圖片警告</button>
+  ),
+}));
 
 vi.mock("./api", () => ({
   getArticle: vi.fn(),
@@ -58,7 +62,6 @@ const EXPLANATION = {
 
 beforeEach(() => {
   vi.clearAllMocks();
-  vi.spyOn(window, "confirm").mockReturnValue(true);
 });
 
 afterEach(() => {
@@ -83,6 +86,7 @@ describe("ArticleView：刪除單字解釋", () => {
     );
 
     const { container } = render(<ArticleView id={1} onBack={() => {}} />);
+    fireEvent.click(await screen.findByRole("tab", { name: /單字/ }));
     const btn = await screen.findByRole("button", { name: "刪除" });
     btn.click();
 
@@ -102,6 +106,7 @@ describe("ArticleView：刪除單字解釋", () => {
       .mockResolvedValueOnce({ explanations: [] });
 
     const { container } = render(<ArticleView id={1} onBack={() => {}} />);
+    fireEvent.click(await screen.findByRole("tab", { name: /單字/ }));
     (await screen.findByRole("button", { name: "刪除" })).click();
 
     await waitFor(() => expect(mocked.deleteExplanation).toHaveBeenCalledWith(7));
@@ -111,12 +116,44 @@ describe("ArticleView：刪除單字解釋", () => {
     expect(container.querySelector(".error-text")).toBeNull();
   });
 
-  it("使用者在確認框按取消時不送出刪除", async () => {
-    vi.spyOn(window, "confirm").mockReturnValue(false);
+  it("按刪除後直接送出，不跳確認視窗", async () => {
+    const confirmation = vi.spyOn(window, "confirm").mockReturnValue(false);
+    mocked.deleteExplanation.mockResolvedValue({ ok: true });
     render(<ArticleView id={1} onBack={() => {}} />);
+    fireEvent.click(await screen.findByRole("tab", { name: /單字/ }));
     (await screen.findByRole("button", { name: "刪除" })).click();
-    await waitFor(() => expect(mocked.deleteExplanation).not.toHaveBeenCalled());
+    await waitFor(() => expect(mocked.deleteExplanation).toHaveBeenCalledWith(7));
+    expect(confirmation).not.toHaveBeenCalled();
   });
+});
+
+it("文章詳情預設顯示音檔，切換分頁只呈現所選內容", async () => {
+  mocked.getArticle.mockResolvedValue({
+    article: ARTICLE as never,
+    paragraphs: [{ id: 9, idx: 0, text: "A short paragraph.", status: "done", translation: "簡短的段落。", enAudioPath: null, zhAudioPath: null }] as never,
+  });
+  mocked.listArticleExplanations.mockResolvedValue({ explanations: [EXPLANATION as never] });
+  render(<ArticleView id={1} onBack={() => {}} />);
+  const audioTab = await screen.findByRole("tab", { name: /音檔/ });
+  expect(screen.getByRole("heading", { name: "測試文章" }).parentElement?.contains(screen.getByRole("button", { name: /返回清單/ }))).toBe(true);
+  expect(audioTab.getAttribute("aria-selected")).toBe("true");
+  expect(screen.getByRole("tabpanel").textContent).toContain("A short paragraph.");
+  fireEvent.click(screen.getByRole("tab", { name: /單字/ }));
+  expect(screen.getByRole("tabpanel").textContent).toContain("habit");
+  expect(screen.getByRole("tabpanel").textContent).not.toContain("A short paragraph.");
+  fireEvent.keyDown(screen.getByRole("tab", { name: /單字/ }), { key: "ArrowLeft" });
+  expect(screen.getByRole("tab", { name: /音檔/ }).getAttribute("aria-selected")).toBe("true");
+});
+
+it("將所選圖片版本的教學單字警告顯示在單字頁籤", async () => {
+  mocked.getArticle.mockResolvedValue({ article: ARTICLE as never, paragraphs: [] });
+  mocked.listArticleExplanations.mockResolvedValue({ explanations: [] });
+  render(<ArticleView id={1} onBack={() => {}} />);
+  fireEvent.click(await screen.findByRole("tab", { name: "圖片" }));
+  fireEvent.click(screen.getByRole("button", { name: "模擬圖片警告" }));
+  expect(screen.getByRole("tabpanel").textContent).not.toContain("段落 67");
+  fireEvent.click(screen.getByRole("tab", { name: /單字/ }));
+  expect(screen.getByRole("tabpanel").textContent).toContain("段落 67：已略過不合規教學單字");
 });
 
 describe("WordManager：刪除單字／解釋", () => {
@@ -136,7 +173,7 @@ describe("WordManager：刪除單字／解釋", () => {
     mocked.deleteWord.mockRejectedValue(new Error("500 internal server error"));
 
     const { container } = render(<WordManager />);
-    (await screen.findByRole("button", { name: "刪除單字" })).click();
+    (await screen.findByRole("button", { name: "刪除單字與全部解釋" })).click();
 
     await waitFor(() =>
       expect(container.querySelector(".error-text")?.textContent).toContain(

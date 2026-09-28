@@ -38,7 +38,6 @@ export function AudioBackfillPanel({ onBack }: { onBack: () => void }) {
   }, [reload]);
 
   async function fillOne(item: api.MissingAudioTarget) {
-    if (!window.confirm(`補齊「${item.word}」的${kindLabel[item.kind]}？將呼叫語音 API（產生費用）。`)) return;
     setBusy(true); setError(""); setMessage("");
     try {
       const result = await api.backfillAudioTarget(item);
@@ -53,7 +52,6 @@ export function AudioBackfillPanel({ onBack }: { onBack: () => void }) {
   }
 
   async function fillAll() {
-    if (!window.confirm(`補齊清單中的 ${items.length} 個音檔？每個音檔都會呼叫語音 API（產生費用）。`)) return;
     stopRef.current = false;
     setBusy(true); setBulk(true); setError(""); setMessage("");
     let filled = 0;
@@ -115,7 +113,7 @@ export function AudioBackfillPanel({ onBack }: { onBack: () => void }) {
     <div className="audio-backfill__head">
       <div>
         <h2>缺失音檔清單</h2>
-        <p>單字發音、英文解釋與英文例句；每列代表一個待補音檔。</p>
+        <p>單字發音、英文解釋與英文例句；每列代表一個待補音檔。補檔會呼叫語音 API 並產生費用。</p>
       </div>
       <button className="btn btn--ghost btn--sm" onClick={onBack} disabled={busy}>← 返回文章</button>
     </div>

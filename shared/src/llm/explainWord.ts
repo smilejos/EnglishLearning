@@ -91,7 +91,7 @@ export class GeminiExplainClient implements ExplainClient {
     const res = await generateContent(
       this.model,
       {
-        contents: [{ parts: [{ text: prompt }] }],
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
         generationConfig: { responseMimeType: "application/json" },
       },
       this.auth,

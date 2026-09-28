@@ -304,10 +304,10 @@ function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
 
   return (
     <div>
-      <button className="link-btn" onClick={onBack}>
-        ← 返回清單
-      </button>
-      <div className="page-head">
+      <div className="page-head article-view-head">
+        <button className="link-btn" onClick={onBack}>
+          ← 返回清單
+        </button>
         <h2 className="h-title">{article.title}</h2>
         <StatusBadge status={article.status} />
       </div>
@@ -357,9 +357,13 @@ function ArticleEdit({ id, onBack }: { id: number; onBack: () => void }) {
 }
 
 export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) {
+  const [activeTab, setActiveTab] = useState<"images" | "audio" | "words">("audio");
   const [article, setArticle] = useState<Article | null>(null);
   const [paragraphs, setParagraphs] = useState<Paragraph[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [visualWarnings, setVisualWarnings] = useState<string[]>([]);
+
+  useEffect(() => setVisualWarnings([]), [id]);
 
   const load = useCallback(async () => {
     try {
@@ -391,7 +395,6 @@ export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) 
   }, [loadExps]);
 
   async function removeArtExp(expId: number) {
-    if (!confirm("刪除這筆單字解釋？")) return;
     try {
       await api.deleteExplanation(expId);
       await loadExps();
@@ -410,15 +413,6 @@ export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) 
   }
 
   async function regen(p: Paragraph, scope: api.RegenScope) {
-    const label = {
-      translation: "重新翻譯（連帶重生中文音檔）",
-      "audio-zh": "重新產生中文音檔",
-      "audio-en": "重新產生英文音檔",
-    }[scope];
-    if (
-      !window.confirm(`第 ${p.idx + 1} 段：${label}？將呼叫對應 API（產生費用）。`)
-    )
-      return;
     try {
       await api.regenerateParagraph(id, p.id, scope);
       await load();
@@ -436,10 +430,10 @@ export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) 
 
   return (
     <div>
-      <button className="link-btn" onClick={onBack}>
-        ← 返回清單
-      </button>
-      <div className="page-head">
+      <div className="page-head article-view-head">
+        <button className="link-btn" onClick={onBack}>
+          ← 返回清單
+        </button>
         <h2 className="h-title">{article.title}</h2>
         <StatusBadge status={article.status} />
         {hasFailed && (
@@ -451,11 +445,28 @@ export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) 
       {/* 文章已載入後的操作錯誤（刪除解釋／重試／重新產生）也要看得見。 */}
       {error && <p className="error-text">{error}</p>}
 
-      {article.status === "done" && <Illustrations key={id} articleId={id} />}
-
-      <div className="section-eyebrow" style={{ marginTop: 0 }}>
-        段落內文（於「重試」處理，此處不可編輯）
+      <div className="article-tabs" role="tablist" aria-label="文章內容" onKeyDown={(event) => {
+        const tabs = ["images", "audio", "words"] as const;
+        const current = tabs.indexOf(activeTab);
+        const next = event.key === "ArrowRight" ? (current + 1) % tabs.length
+          : event.key === "ArrowLeft" ? (current + tabs.length - 1) % tabs.length
+          : event.key === "Home" ? 0 : event.key === "End" ? tabs.length - 1 : -1;
+        if (next < 0) return;
+        event.preventDefault();
+        setActiveTab(tabs[next]);
+        document.getElementById(`article-tab-${tabs[next]}`)?.focus();
+      }}>
+        <button id="article-tab-images" type="button" role="tab" tabIndex={activeTab === "images" ? 0 : -1} aria-selected={activeTab === "images"} aria-controls="article-panel-images" className={activeTab === "images" ? "article-tabs__tab is-active" : "article-tabs__tab"} onClick={() => setActiveTab("images")}>圖片</button>
+        <button id="article-tab-audio" type="button" role="tab" tabIndex={activeTab === "audio" ? 0 : -1} aria-selected={activeTab === "audio"} aria-controls="article-panel-audio" className={activeTab === "audio" ? "article-tabs__tab is-active" : "article-tabs__tab"} onClick={() => setActiveTab("audio")}>音檔</button>
+        <button id="article-tab-words" type="button" role="tab" tabIndex={activeTab === "words" ? 0 : -1} aria-selected={activeTab === "words"} aria-controls="article-panel-words" className={activeTab === "words" ? "article-tabs__tab is-active" : "article-tabs__tab"} onClick={() => setActiveTab("words")}>單字 <span className="article-tabs__count">{artExps.length}</span></button>
       </div>
+
+      <section id="article-panel-images" role="tabpanel" aria-labelledby="article-tab-images" hidden={activeTab !== "images"}>
+        {article.status === "done" ? <Illustrations key={id} articleId={id} onValidationWarningsChange={setVisualWarnings} /> : <p className="picker__hint">文章處理完成後即可管理圖片。</p>}
+      </section>
+      <section id="article-panel-audio" role="tabpanel" aria-labelledby="article-tab-audio" hidden={activeTab !== "audio"}>
+      <p className="article-tabs__hint">段落內文於「重試」處理，此處不可編輯。</p>
+      <p className="article-tabs__hint">重新翻譯與產生音檔會呼叫生成 API，可能產生費用。</p>
       {paragraphs.map((p) => (
         <div key={p.id} className="para-item">
           <div className="para-item__head">
@@ -488,8 +499,18 @@ export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) 
           )}
         </div>
       ))}
+      </section>
 
-      <div className="section-eyebrow">本篇單字解釋（{artExps.length}）</div>
+      <section id="article-panel-words" role="tabpanel" aria-labelledby="article-tab-words" hidden={activeTab !== "words"}>
+      {visualWarnings.length > 0 && (
+        <details className="notice" open>
+          <summary>教學單字調整</summary>
+          <p>不合規的教學單字已略過，其餘單字與圖片規劃仍會繼續處理。</p>
+          <ul>
+            {visualWarnings.map((warning, index) => <li key={index}>{warning}</li>)}
+          </ul>
+        </details>
+      )}
       {artExps.length === 0 && (
         <p className="picker__hint">本篇尚無單字解釋。</p>
       )}
@@ -512,6 +533,7 @@ export function ArticleView({ id, onBack }: { id: number; onBack: () => void }) 
           )}
         </div>
       ))}
+      </section>
     </div>
   );
 }
@@ -630,7 +652,6 @@ function ArticleList({
   }, [load]);
 
   async function remove(a: Article) {
-    if (!window.confirm(`確定刪除「${a.title}」？此操作無法復原。`)) return;
     try {
       await api.deleteArticle(a.id);
       await load();
@@ -1035,11 +1056,10 @@ function TaxonomyManager() {
                 <button
                   className="link-btn link-btn--danger"
                   onClick={guard(async () => {
-                    if (window.confirm(`刪除「${top.label}」及其子分類？`))
-                      await api.deleteCategory(top.id);
+                    await api.deleteCategory(top.id);
                   })}
                 >
-                  刪除
+                  刪除含子分類
                 </button>
               </div>
             </div>
@@ -1373,7 +1393,6 @@ export function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
   }, [initialQuery]);
 
   async function removeExp(id: number, word: string) {
-    if (!confirm("刪除這筆解釋？")) return;
     try {
       await api.deleteExplanation(id);
       setExps((await api.getWordExplanations(word)).explanations);
@@ -1383,7 +1402,6 @@ export function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
     }
   }
   async function removeWord(row: api.WordRow) {
-    if (!confirm(`刪除整個單字「${row.normalizedWord}」及其所有解釋？`)) return;
     try {
       await api.deleteWord(row.id);
       if (openWord === row.normalizedWord) setOpenWord(null);
@@ -1440,7 +1458,7 @@ export function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
                         className="btn btn--danger btn--sm"
                         onClick={() => void removeWord(row)}
                       >
-                        刪除單字
+                        刪除單字與全部解釋
                       </button>
                     </div>
                   </td>

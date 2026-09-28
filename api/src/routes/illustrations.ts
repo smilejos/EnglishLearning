@@ -2,7 +2,7 @@ import type { FastifyInstance } from "fastify";
 import { createReadStream } from "node:fs";
 import { resolve, sep } from "node:path";
 import { z } from "zod";
-import { regenerateVisualSlot, skipVisualSlot } from "@el/shared";
+import { regenerateVisualSlot, skipVisualSlot, planStagedSlot, saveStagedPrompt, generateStagedSlot, forkVisualRun } from "@el/shared";
 import { requireAdmin } from "../auth";
 import {
   createVisualEstimate,
@@ -13,6 +13,9 @@ import {
   deleteVisualRun,
   listVisualRuns,
   visualRunDetail,
+  dismissVisualFailures,
+  saveVisualBible,
+  stagedSlotQuote,
   GenerationScopeSchema,
   ReviewSchema,
   type DbPool,
@@ -75,7 +78,7 @@ export function registerIllustrationRoutes(
         maxCostUsdMicros: z.number().int().positive().optional(),
       })
       .strict()
-      .safeParse(request.body);
+      .safeParse(request.body ?? {});
     if (!body.success)
       throw new VisualError(
         "invalid estimate request; Phase 1 supports scope=all",
@@ -119,6 +122,50 @@ export function registerIllustrationRoutes(
     const p = ids(request.params);
     return visualRunDetail(pool, p.id, p.runId);
   });
+  app.post(`${base}/:runId/dismiss-failures`, admin, async (request) => {
+    const p = ids(request.params);
+    return dismissVisualFailures(pool, p.id, p.runId, request.user!.id);
+  });
+  app.post(`${base}/:runId/fork`,admin,async(request,reply)=>{
+    const p=ids(request.params);
+    const body=z.object({estimateId:z.string().uuid(),idempotencyKey:z.string().uuid()}).strict().safeParse(request.body);
+    if(!body.success) throw new VisualError("invalid fork request",400);
+    const run=await forkVisualRun(pool,await availableCatalog(),p.id,p.runId,request.user!.id,body.data.estimateId,body.data.idempotencyKey);
+    return reply.code(202).send({run});
+  });
+  app.put(`${base}/:runId/visual-bible`,admin,async(request)=>{
+    const p=ids(request.params);
+    const body=z.object({visualBible:z.string().trim().min(1).max(16000)}).strict().safeParse(request.body);
+    if(!body.success) throw new VisualError("invalid visual bible",400);
+    await saveVisualBible(pool,p.id,p.runId,request.user!.id,body.data.visualBible);
+    return {ok:true};
+  });
+  app.post(`${base}/:runId/slots/:slotId/quote`,admin,async(request)=>{
+    const p=ids(request.params);
+    const body=z.object({prompt:z.string().max(24000).optional()}).strict().safeParse(request.body ?? {});
+    if(!body.success) throw new VisualError("invalid quote request",400);
+    return stagedSlotQuote(pool,p.id,p.runId,p.slotId,body.data.prompt);
+  });
+  app.post(`${base}/:runId/slots/:slotId/plan`,admin,async(request)=>{
+    const p=ids(request.params);
+    const body=z.object({idempotencyKey:z.string().uuid(),acceptUnknownCharge:z.boolean().optional()}).strict().safeParse(request.body ?? {});
+    if(!body.success) throw new VisualError("invalid prompt planning request",400);
+    const result=await planStagedSlot(pool,p.id,p.runId,p.slotId,request.user!.id,body.data.idempotencyKey,body.data.acceptUnknownCharge ?? false);
+    return {ok:true,...result};
+  });
+  app.put(`${base}/:runId/slots/:slotId/prompt`,admin,async(request)=>{
+    const p=ids(request.params);
+    const body=z.object({prompt:z.string().trim().min(1).max(24000),revision:z.number().int().nonnegative()}).strict().safeParse(request.body);
+    if(!body.success) throw new VisualError("invalid prompt",400);
+    return saveStagedPrompt(pool,p.id,p.runId,p.slotId,request.user!.id,body.data.prompt,body.data.revision);
+  });
+  app.post(`${base}/:runId/slots/:slotId/generate`,admin,async(request)=>{
+    const p=ids(request.params);
+    const body=z.object({prompt:z.string().trim().min(1).max(24000),revision:z.number().int().nonnegative(),idempotencyKey:z.string().uuid(),acceptUnknownCharge:z.boolean().optional()}).strict().safeParse(request.body);
+    if(!body.success) throw new VisualError("invalid generation request",400);
+    const result=await generateStagedSlot(pool,p.id,p.runId,p.slotId,request.user!.id,body.data.prompt,body.data.revision,body.data.idempotencyKey,body.data.acceptUnknownCharge ?? false);
+    return {ok:true,...result};
+  });
   for (const [action, fn] of Object.entries({
     cancel: cancelVisualRun,
     publish: publishVisualRun,
@@ -137,7 +184,7 @@ export function registerIllustrationRoutes(
       const body = ReviewSchema.safeParse(request.body);
       if (!body.success)
         throw new VisualError(
-          "confirm image safety, alt text and word positions",
+          "invalid image review: check alt text, word positions or rejection reason",
           400,
         );
       await reviewVisualCandidate(
@@ -180,17 +227,17 @@ export function registerIllustrationRoutes(
   app.post(`${base}/:runId/slots/:slotId/skip`, admin, async (request) => {
     const p = ids(request.params);
     const body = z
-      .object({ reason: z.string().trim().min(1).max(2000) })
+      .object({ reason: z.string().trim().max(2000).optional() })
       .strict()
-      .safeParse(request.body);
-    if (!body.success) throw new VisualError("skip reason required", 400);
+      .safeParse(request.body ?? {});
+    if (!body.success) throw new VisualError("invalid skip request", 400);
     await skipVisualSlot(
       pool,
       p.id,
       p.runId,
       p.slotId,
       request.user!.id,
-      body.data.reason,
+      body.data.reason ?? "",
     );
     return { ok: true };
   });

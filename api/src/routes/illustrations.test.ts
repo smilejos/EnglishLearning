@@ -22,6 +22,7 @@ import {
   cleanupImageFiles,
   ImageProviderError,
   estimateImageCost,
+  createVisualRun,
   type VisualPlan,
   type VisualSource,
 } from "@el/shared";
@@ -101,7 +102,7 @@ function plan(character = false): VisualPlan {
   };
 }
 const post = (path: string, payload: Record<string, unknown> = {}) =>
-  app.inject({ method: "POST", url: path, payload });
+  app.inject({ method: "POST", url: path, payload: /\/slots\/\d+\/(plan|generate)$/.test(path) && !payload.idempotencyKey ? {...payload,idempotencyKey:randomUUID()} : payload });
 const base = () => `/articles/${articleId}/illustration-runs`;
 async function createRun() {
   const q = await post(`/articles/${articleId}/illustration-estimates`, {
@@ -113,9 +114,9 @@ async function createRun() {
     estimateId: q.json().estimateId,
     idempotencyKey: randomUUID(),
   };
-  const response = await post(base(), body);
-  expect(response.statusCode, response.body).toBe(202);
-  return { id: Number(response.json().run.id), body, quote: q.json() };
+  const actor = Number((await pool.query("SELECT id FROM users WHERE email='admin@example.com'")).rows[0].id);
+  const run = await createVisualRun(pool,catalog,articleId,actor,body.estimateId,body.idempotencyKey,1);
+  return { id: Number(run.id), body, quote: q.json() };
 }
 const detail = async (id: number) =>
   (await app.inject(`${base()}/${id}`)).json();
@@ -357,6 +358,28 @@ describe("AI visual lifecycle (mock providers, isolated test DB)", () => {
     expect(v.slots.every((s: any) => s.candidates.length === 0)).toBe(true);
     expect(await processImageJob(d)).toBe(false); // Planner retry respects backoff.
   });
+  it("dismisses displayed failures while preserving attempts and showing later failures", async () => {
+    const r = await createRun();
+    const d = deps();
+    d.planner.plan.mockResolvedValue({ value: null });
+    await processImageJob(d);
+    const first = await detail(r.id);
+    const firstFailure = first.attempts.find((attempt: any) => attempt.state === "failed");
+    expect(firstFailure?.error).toBeTruthy();
+    expect((await reader.inject({ method: "POST", url: `${base()}/${r.id}/dismiss-failures` })).statusCode).toBe(403);
+    const dismissed = await post(`${base()}/${r.id}/dismiss-failures`);
+    expect(dismissed.statusCode).toBe(200);
+    expect(dismissed.json().dismissedFailedAttemptId).toBe(String(firstFailure.id));
+    const afterDismissal = await detail(r.id);
+    expect(afterDismissal.dismissedFailedAttemptId).toBe(String(firstFailure.id));
+    expect(afterDismissal.attempts[0].error).toBe(firstFailure.error);
+
+    await pool.query("UPDATE illustration_jobs SET available_at=now()-interval '1 second' WHERE run_id=$1 AND status='pending'", [r.id]);
+    await processImageJob(d);
+    const later = await detail(r.id);
+    expect(later.attempts.filter((attempt: any) => attempt.state === "failed")).toHaveLength(2);
+    expect(BigInt(later.attempts[1].id)).toBeGreaterThan(BigInt(later.dismissedFailedAttemptId));
+  });
   it("repairs planner word normalization and duplicates before storing image candidates", async () => {
     const r = await createRun();
     const d = deps();
@@ -460,5 +483,182 @@ describe("AI visual lifecycle (mock providers, isolated test DB)", () => {
     await cleanupImageFiles(pool, d.storage);
     for (const f of files)
       await expect(d.storage.read(f.object_key)).rejects.toThrow();
+  });
+});
+
+describe("逐步圖片製作", () => {
+  it("舊版仍有待處理工作時拒絕轉換；工作結束後保留空白 Prompt", async () => {
+    const legacy = await createRun();
+    await expect(pool.query("SELECT import_legacy_illustration_runs()"))
+      .rejects.toThrow("Legacy illustration jobs are still active");
+    expect((await detail(legacy.id)).run.workflow_version).toBe(1);
+    await pool.query("UPDATE illustration_jobs SET status='failed' WHERE run_id=$1", [legacy.id]);
+    expect((await pool.query("SELECT import_legacy_illustration_runs() AS count")).rows[0].count).toBe(1);
+    const view = await detail(legacy.id);
+    expect(view.run.workflow_version).toBe(2);
+    expect(view.run.legacy_imported).toBe(true);
+    expect(view.slots.map((slot: any) => slot.kind).sort()).toEqual(["cover", "paragraph", "reference"]);
+    expect(view.slots.every((slot: any) => slot.prompt_draft === null)).toBe(true);
+    expect(view.slots.find((slot: any) => slot.kind === "reference").required).toBe(false);
+    expect((await pool.query("SELECT import_legacy_illustration_runs() AS count")).rows[0].count).toBe(0);
+  });
+  it("舊發布版無參考圖時保留空白，繼承封面並直接補略過段落", async () => {
+    const legacy = await createRun();
+    const d = deps();
+    const legacyPlan = plan();
+    legacyPlan.paragraphs[0].required = false;
+    legacyPlan.paragraphs[0].skipReason = "no image needed";
+    legacyPlan.paragraphs[0].scene = null;
+    d.planner.plan.mockResolvedValueOnce({value:legacyPlan});
+    expect(await processImageJob(d)).toBe(true);
+    expect(await processImageJob(d)).toBe(true);
+    await approve(legacy.id);
+    expect((await post(`${base()}/${legacy.id}/publish`)).statusCode).toBe(200);
+    const before = await detail(legacy.id);
+    const legacyCover = before.slots.find((s:any)=>s.kind === "cover").candidates[0].asset_id;
+    const originalPrompt = before.slots.find((s:any)=>s.kind === "cover").candidates[0].prompt_json.prompt;
+    const coverSlot = before.slots.find((s:any)=>s.kind === "cover");
+    const teachingTargets = [{word:"crisp",normalizedWord:"crisp",reason:"Autumn detail",visualObject:"leaf",placementSource:"manual"}];
+    await pool.query("UPDATE illustration_candidates SET teaching_targets=$2::jsonb WHERE id=$1", [coverSlot.selected_candidate_id,JSON.stringify(teachingTargets)]);
+    await pool.query(
+      `INSERT INTO illustration_candidates(slot_id,candidate_no,status,prompt_json,model_snapshot,asset_id,alt_text)
+       SELECT slot_id,2,'rejected',jsonb_set(prompt_json,'{prompt}',to_jsonb('Unused later prompt'::text)),model_snapshot,asset_id,alt_text
+       FROM illustration_candidates WHERE id=$1`,
+      [coverSlot.selected_candidate_id],
+    );
+    expect((await pool.query("SELECT import_legacy_illustration_runs() AS count")).rows[0].count).toBe(1);
+    const imported = await detail(legacy.id);
+    expect(imported.run.status).toBe("published");
+    expect(imported.run.legacy_imported).toBe(true);
+    expect(imported.slots.find((s:any)=>s.kind === "cover").prompt_draft).toBe(originalPrompt);
+    expect(imported.slots.find((s:any)=>s.kind === "reference").prompt_draft).toBeNull();
+    expect((await pool.query("SELECT run_id FROM article_visual_publications WHERE article_id=$1", [articleId])).rows[0].run_id).toBe(String(legacy.id));
+    const estimate = await post(`/articles/${articleId}/illustration-estimates`,{modelId:catalog.models[1].id,scope:{kind:"all"}});
+    const fork = await post(`${base()}/${legacy.id}/fork`,{estimateId:estimate.json().estimateId,idempotencyKey:randomUUID()});
+    expect(fork.statusCode,fork.body).toBe(202);
+    const forkId=Number(fork.json().run.id);
+    let view=await detail(forkId);
+    expect(view.run.workflow_version).toBe(2);
+    expect(view.run.model_id).toBe(catalog.models[1].id);
+    expect(view.run.visual_bible).toContain("watercolor");
+    expect(view.slots.find((s:any)=>s.kind === "cover").candidates[0].asset_id).toBe(legacyCover);
+    expect(view.slots.find((s:any)=>s.kind === "cover").candidates[0].teaching_targets).toEqual(teachingTargets);
+    expect(view.slots.find((s:any)=>s.kind === "cover").candidates[0].model_snapshot.id).toBe(catalog.models[0].id);
+    const ref=view.slots.find((s:any)=>s.kind === "reference");
+    const para=view.slots.find((s:any)=>s.kind === "paragraph");
+    expect(view.run.legacy_imported).toBe(true);
+    expect(ref.prompt_status).toBe("empty");
+    expect(ref.required).toBe(false);
+    expect(ref.candidates).toHaveLength(0);
+    expect(await processImageJob(d)).toBe(false);
+    expect((await post(`${base()}/${forkId}/slots/${ref.id}/plan`)).statusCode).toBe(409);
+    d.planner.plan.mockResolvedValue({value:{prompt:"Watercolor cat in the garden, no text",altText:"An orange cat in a garden",visualBible:""}});
+    (d.adapters as Record<string,unknown>)[catalog.models[1].adapter]={generate:d.generate};
+    expect((await post(`${base()}/${forkId}/slots/${para.id}/plan`)).statusCode).toBe(200);
+    expect(await processImageJob(d)).toBe(true);
+    view=await detail(forkId);
+    const paraDraft=view.slots.find((s:any)=>s.kind === "paragraph");
+    expect((await post(`${base()}/${forkId}/slots/${para.id}/generate`,{prompt:paraDraft.prompt_draft,revision:paraDraft.prompt_revision})).statusCode).toBe(200);
+    expect(await processImageJob(d)).toBe(true);
+    await approve(forkId);
+    expect((await post(`${base()}/${forkId}/publish`)).statusCode).toBe(200);
+    expect(d.generate).toHaveBeenCalledTimes(2);
+  });
+  it("結果不明時標示部分失敗，重試須承認可能重複計費", async () => {
+    const estimate = await post(`/articles/${articleId}/illustration-estimates`,{modelId:catalog.models[0].id,scope:{kind:"all"}});
+    const created = await post(base(),{estimateId:estimate.json().estimateId,idempotencyKey:randomUUID()});
+    const runId = Number(created.json().run.id);
+    const reference = (await detail(runId)).slots.find((s:any)=>s.kind === "reference");
+    const d = deps();
+    d.planner.plan.mockResolvedValue({value:{prompt:"A garden reference, no text",altText:"Garden",visualBible:"Garden"}});
+    expect(await processImageJob(d)).toBe(true);
+    d.generate.mockRejectedValueOnce(new ImageProviderError(0,true));
+    const draft = (await detail(runId)).slots.find((s:any)=>s.kind === "reference");
+    expect((await post(`${base()}/${runId}/slots/${reference.id}/generate`,{prompt:draft.prompt_draft,revision:draft.prompt_revision})).statusCode).toBe(200);
+    expect(await processImageJob(d)).toBe(true);
+    expect((await detail(runId)).run.status).toBe("partial_failed");
+    expect((await post(`${base()}/${runId}/slots/${reference.id}/generate`,{prompt:draft.prompt_draft,revision:draft.prompt_revision})).statusCode).toBe(409);
+    expect((await post(`${base()}/${runId}/slots/${reference.id}/generate`,{prompt:draft.prompt_draft,revision:draft.prompt_revision,acceptUnknownCharge:true})).statusCode).toBe(200);
+  });
+  it("只在按下生成後生圖、略過可發布，fork 繼承圖片後補段落", async () => {
+    const estimate = await post(`/articles/${articleId}/illustration-estimates`, {
+      modelId: catalog.models[0].id, scope: { kind: "all" },
+    });
+    expect(estimate.statusCode).toBe(200);
+    const created = await post(base(), { estimateId: estimate.json().estimateId, idempotencyKey: randomUUID() });
+    expect(created.statusCode,created.body).toBe(202);
+    const runId = Number(created.json().run.id);
+    let view = await detail(runId);
+    expect(view.run.workflow_version).toBe(2);
+    const reference = view.slots.find((s: any) => s.kind === "reference");
+    const cover = view.slots.find((s: any) => s.kind === "cover");
+    const paragraph = view.slots.find((s: any) => s.kind === "paragraph");
+    expect(view.slots.flatMap((s: any) => s.candidates)).toHaveLength(0);
+    expect((await post(`${base()}/${runId}/slots/${cover.id}/plan`)).statusCode).toBe(409);
+    const d = deps();
+    d.planner.plan.mockResolvedValue({ value: { prompt: "Draw a consistent green garden scene, no text", altText: "Garden style sheet", visualBible: "Green garden, watercolor, orange cat" } });
+    expect(await processImageJob(d)).toBe(true);
+    expect(d.generate).not.toHaveBeenCalled();
+    view = await detail(runId);
+    expect(view.slots.find((s: any) => s.kind === "reference").prompt_draft).toContain("green garden");
+    expect(view.slots.find((s: any) => s.kind === "reference").prompt_alt_text).toBe("Garden style sheet");
+    expect((await app.inject({method:"PUT",url:`${base()}/${runId}/visual-bible`,payload:{visualBible:"Blue garden, watercolor, orange cat"}})).statusCode).toBe(200);
+    const quote = await post(`${base()}/${runId}/slots/${reference.id}/quote`,{prompt:"Draw a blue garden reference"});
+    expect(quote.json().generateCostUsdMicros).toBeGreaterThan(0);
+    const saved = await app.inject({method:"PUT",url:`${base()}/${runId}/slots/${reference.id}/prompt`,payload:{prompt:"Draw a blue garden reference",revision:1}});
+    expect(saved.statusCode,saved.body).toBe(200);
+    const refGenerateKey=randomUUID();
+    const generated=await post(`${base()}/${runId}/slots/${reference.id}/generate`,{prompt:"Draw a blue garden reference",revision:saved.json().revision,idempotencyKey:refGenerateKey});
+    expect(generated.statusCode).toBe(200);
+    const repeated=await post(`${base()}/${runId}/slots/${reference.id}/generate`,{prompt:"Draw a blue garden reference",revision:saved.json().revision,idempotencyKey:refGenerateKey});
+    expect(repeated.json().candidateId).toBe(generated.json().candidateId);
+    expect((await detail(runId)).slots.find((s:any)=>s.kind === "reference").candidates).toHaveLength(1);
+    expect(await processImageJob(d)).toBe(true);
+    expect(d.generate).toHaveBeenCalledTimes(1);
+    expect((await detail(runId)).slots.find((s:any)=>s.kind === "reference").candidates[0].prompt_json.prompt).toBe("Draw a blue garden reference");
+    expect((await detail(runId)).slots.find((s:any)=>s.kind === "reference").candidates[0].alt_text).toBe("Garden style sheet");
+    await approve(runId);
+    view = await detail(runId);
+    expect(view.run.visual_bible).toContain("Blue garden");
+    expect((await post(`${base()}/${runId}/slots/${reference.id}/plan`)).statusCode).toBe(409);
+    const coverPlanKey=randomUUID();
+    const planned=await post(`${base()}/${runId}/slots/${cover.id}/plan`,{idempotencyKey:coverPlanKey});
+    expect(planned.statusCode).toBe(200);
+    expect((await post(`${base()}/${runId}/slots/${cover.id}/plan`,{idempotencyKey:coverPlanKey})).json().jobId).toBe(planned.json().jobId);
+    expect(await processImageJob(d)).toBe(true);
+    expect(d.planner.plan.mock.calls.at(-1)?.[1]).toContain("Blue garden, watercolor, orange cat");
+    view = await detail(runId);
+    const coverDraft = view.slots.find((s: any) => s.kind === "cover");
+    expect(coverDraft.prompt_draft).toContain("green garden");
+    expect(coverDraft.prompt_alt_text).toBe("Garden style sheet");
+    expect((await post(`${base()}/${runId}/slots/${cover.id}/generate`,{prompt:coverDraft.prompt_draft,revision:coverDraft.prompt_revision})).statusCode).toBe(200);
+    expect(await processImageJob(d)).toBe(true);
+    await approve(runId);
+    expect((await app.inject({method:"POST",url:`${base()}/${runId}/slots/${paragraph.id}/skip`})).statusCode).toBe(200);
+    view = await detail(runId);
+    expect(view.run.status).toBe("review");
+    expect((await post(`${base()}/${runId}/publish`)).statusCode).toBe(200);
+    const originalCoverAsset = (await detail(runId)).slots.find((s: any) => s.kind === "cover").candidates[0].asset_id;
+
+    const forkEstimate = await post(`/articles/${articleId}/illustration-estimates`,{modelId:catalog.models[0].id,scope:{kind:"all"}});
+    const forked = await post(`${base()}/${runId}/fork`,{estimateId:forkEstimate.json().estimateId,idempotencyKey:randomUUID()});
+    expect(forked.statusCode,forked.body).toBe(202);
+    const forkId = Number(forked.json().run.id);
+    view = await detail(forkId);
+    expect(view.run.actual_cost_usd_micros).toBe("0");
+    expect(view.slots.find((s: any) => s.kind === "cover").candidates[0].asset_id).toBe(originalCoverAsset);
+    const missing = view.slots.find((s: any) => s.kind === "paragraph");
+    expect(missing.required).toBe(false);
+    expect((await post(`${base()}/${forkId}/slots/${missing.id}/plan`)).statusCode).toBe(200);
+    expect(await processImageJob(d)).toBe(true);
+    view = await detail(forkId);
+    const draft = view.slots.find((s: any) => s.kind === "paragraph");
+    expect((await post(`${base()}/${forkId}/slots/${missing.id}/generate`,{prompt:draft.prompt_draft,revision:draft.prompt_revision})).statusCode).toBe(200);
+    expect(await processImageJob(d)).toBe(true);
+    await approve(forkId);
+    expect((await detail(forkId)).run.status).toBe("review");
+    expect((await post(`${base()}/${forkId}/publish`)).statusCode).toBe(200);
+    expect((await detail(runId)).run.status).toBe("superseded");
+    expect(d.generate).toHaveBeenCalledTimes(3);
   });
 });

@@ -1,0 +1,3175 @@
+{
+  "source": "isolated english_learning_test database after all migrations",
+  "tables": [
+    {
+      "name": "article_tags",
+      "columns": [
+        {
+          "position": 1,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 2,
+          "name": "tag_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "article_tags_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "article_tags_tag_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE",
+          "columns": [
+            "tag_id"
+          ]
+        },
+        {
+          "name": "article_tags_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (article_id, tag_id)",
+          "columns": [
+            "article_id",
+            "tag_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "article_tags_pkey",
+          "definition": "CREATE UNIQUE INDEX article_tags_pkey ON public.article_tags USING btree (article_id, tag_id)"
+        },
+        {
+          "name": "idx_article_tags_tag_id",
+          "definition": "CREATE INDEX idx_article_tags_tag_id ON public.article_tags USING btree (tag_id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "article_visual_publications",
+      "columns": [
+        {
+          "position": 1,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 2,
+          "name": "run_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "article_visual_publications_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "article_visual_publications_article_id_run_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id, run_id) REFERENCES article_visual_runs(article_id, id) ON DELETE CASCADE",
+          "columns": [
+            "article_id",
+            "run_id"
+          ]
+        },
+        {
+          "name": "article_visual_publications_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (article_id)",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "article_visual_publications_run_id_key",
+          "kind": "u",
+          "definition": "UNIQUE (run_id)",
+          "columns": [
+            "run_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "article_visual_publications_pkey",
+          "definition": "CREATE UNIQUE INDEX article_visual_publications_pkey ON public.article_visual_publications USING btree (article_id)"
+        },
+        {
+          "name": "article_visual_publications_run_id_key",
+          "definition": "CREATE UNIQUE INDEX article_visual_publications_run_id_key ON public.article_visual_publications USING btree (run_id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "article_visual_runs",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "revision",
+          "type": "integer",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "parent_run_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "estimate_id",
+          "type": "uuid",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "request_idempotency_key",
+          "type": "uuid",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "source_hash",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "source_json",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "status",
+          "type": "text",
+          "not_null": true,
+          "default": "'pending'::text",
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "model_id",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "provider",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "api_model",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 13,
+          "name": "model_config_snapshot",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 14,
+          "name": "pricing_profile_snapshot",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 15,
+          "name": "planner_snapshot",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 16,
+          "name": "prompt_template_version",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 17,
+          "name": "plan_json",
+          "type": "jsonb",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 18,
+          "name": "estimated_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 19,
+          "name": "reserved_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": "0",
+          "identity": ""
+        },
+        {
+          "position": 20,
+          "name": "actual_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": "0",
+          "identity": ""
+        },
+        {
+          "position": 21,
+          "name": "max_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 22,
+          "name": "created_by",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 23,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 24,
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 25,
+          "name": "completed_at",
+          "type": "timestamp with time zone",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 26,
+          "name": "workflow_version",
+          "type": "integer",
+          "not_null": true,
+          "default": "1",
+          "identity": ""
+        },
+        {
+          "position": 27,
+          "name": "visual_bible",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 28,
+          "name": "legacy_imported",
+          "type": "boolean",
+          "not_null": true,
+          "default": "false",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "article_visual_runs_actual_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (actual_cost_usd_micros >= 0)",
+          "columns": [
+            "actual_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "article_visual_runs_estimated_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (estimated_cost_usd_micros > 0)",
+          "columns": [
+            "estimated_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "article_visual_runs_max_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (max_cost_usd_micros > 0)",
+          "columns": [
+            "max_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "article_visual_runs_reserved_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (reserved_cost_usd_micros >= 0)",
+          "columns": [
+            "reserved_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "article_visual_runs_revision_check",
+          "kind": "c",
+          "definition": "CHECK (revision > 0)",
+          "columns": [
+            "revision"
+          ]
+        },
+        {
+          "name": "article_visual_runs_status_check",
+          "kind": "c",
+          "definition": "CHECK (status = ANY (ARRAY['pending'::text, 'planning'::text, 'waiting_reference_review'::text, 'generating'::text, 'review'::text, 'partial_failed'::text, 'failed'::text, 'cancelled'::text, 'published'::text, 'superseded'::text]))",
+          "columns": [
+            "status"
+          ]
+        },
+        {
+          "name": "article_visual_runs_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "article_visual_runs_created_by_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (created_by) REFERENCES users(id)",
+          "columns": [
+            "created_by"
+          ]
+        },
+        {
+          "name": "article_visual_runs_estimate_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (estimate_id) REFERENCES illustration_estimates(id) ON DELETE SET NULL",
+          "columns": [
+            "estimate_id"
+          ]
+        },
+        {
+          "name": "article_visual_runs_parent_run_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (parent_run_id) REFERENCES article_visual_runs(id) ON DELETE SET NULL",
+          "columns": [
+            "parent_run_id"
+          ]
+        },
+        {
+          "name": "article_visual_runs_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "article_visual_runs_article_id_created_by_request_idempoten_key",
+          "kind": "u",
+          "definition": "UNIQUE (article_id, created_by, request_idempotency_key)",
+          "columns": [
+            "article_id",
+            "created_by",
+            "request_idempotency_key"
+          ]
+        },
+        {
+          "name": "article_visual_runs_article_id_id_key",
+          "kind": "u",
+          "definition": "UNIQUE (article_id, id)",
+          "columns": [
+            "article_id",
+            "id"
+          ]
+        },
+        {
+          "name": "article_visual_runs_article_id_revision_key",
+          "kind": "u",
+          "definition": "UNIQUE (article_id, revision)",
+          "columns": [
+            "article_id",
+            "revision"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "article_visual_runs_article_id_created_by_request_idempoten_key",
+          "definition": "CREATE UNIQUE INDEX article_visual_runs_article_id_created_by_request_idempoten_key ON public.article_visual_runs USING btree (article_id, created_by, request_idempotency_key)"
+        },
+        {
+          "name": "article_visual_runs_article_id_id_key",
+          "definition": "CREATE UNIQUE INDEX article_visual_runs_article_id_id_key ON public.article_visual_runs USING btree (article_id, id)"
+        },
+        {
+          "name": "article_visual_runs_article_id_revision_key",
+          "definition": "CREATE UNIQUE INDEX article_visual_runs_article_id_revision_key ON public.article_visual_runs USING btree (article_id, revision)"
+        },
+        {
+          "name": "article_visual_runs_pkey",
+          "definition": "CREATE UNIQUE INDEX article_visual_runs_pkey ON public.article_visual_runs USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "articles",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "title",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "material_type",
+          "type": "material_type",
+          "not_null": true,
+          "default": "'school'::material_type",
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "grade",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "unit",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "week",
+          "type": "smallint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "page",
+          "type": "smallint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "category_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "level",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "status",
+          "type": "processing_status",
+          "not_null": true,
+          "default": "'pending'::processing_status",
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "created_by",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 13,
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "articles_category_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL",
+          "columns": [
+            "category_id"
+          ]
+        },
+        {
+          "name": "articles_created_by_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (created_by) REFERENCES users(id)",
+          "columns": [
+            "created_by"
+          ]
+        },
+        {
+          "name": "articles_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "articles_pkey",
+          "definition": "CREATE UNIQUE INDEX articles_pkey ON public.articles USING btree (id)"
+        },
+        {
+          "name": "idx_articles_category_id",
+          "definition": "CREATE INDEX idx_articles_category_id ON public.articles USING btree (category_id)"
+        },
+        {
+          "name": "idx_articles_material_type",
+          "definition": "CREATE INDEX idx_articles_material_type ON public.articles USING btree (material_type)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "categories",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "parent_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "label",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "sort_order",
+          "type": "smallint",
+          "not_null": true,
+          "default": "0",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "categories_parent_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (parent_id) REFERENCES categories(id) ON DELETE CASCADE",
+          "columns": [
+            "parent_id"
+          ]
+        },
+        {
+          "name": "categories_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "categories_parent_id_label_key",
+          "kind": "u",
+          "definition": "UNIQUE (parent_id, label)",
+          "columns": [
+            "parent_id",
+            "label"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "categories_parent_id_label_key",
+          "definition": "CREATE UNIQUE INDEX categories_parent_id_label_key ON public.categories USING btree (parent_id, label)"
+        },
+        {
+          "name": "categories_pkey",
+          "definition": "CREATE UNIQUE INDEX categories_pkey ON public.categories USING btree (id)"
+        },
+        {
+          "name": "idx_categories_parent_id",
+          "definition": "CREATE INDEX idx_categories_parent_id ON public.categories USING btree (parent_id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "generation_settings",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "integer",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 2,
+          "name": "settings",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "version",
+          "type": "integer",
+          "not_null": true,
+          "default": "1",
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "generation_settings_id_check",
+          "kind": "c",
+          "definition": "CHECK (id = 1)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "generation_settings_version_check",
+          "kind": "c",
+          "definition": "CHECK (version > 0)",
+          "columns": [
+            "version"
+          ]
+        },
+        {
+          "name": "generation_settings_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "generation_settings_pkey",
+          "definition": "CREATE UNIQUE INDEX generation_settings_pkey ON public.generation_settings USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "illustration_asset_files",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "asset_id",
+          "type": "uuid",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "variant",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "object_key",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "mime_type",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "width",
+          "type": "integer",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "height",
+          "type": "integer",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "byte_size",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_asset_files_byte_size_check",
+          "kind": "c",
+          "definition": "CHECK (byte_size > 0)",
+          "columns": [
+            "byte_size"
+          ]
+        },
+        {
+          "name": "illustration_asset_files_height_check",
+          "kind": "c",
+          "definition": "CHECK (height > 0)",
+          "columns": [
+            "height"
+          ]
+        },
+        {
+          "name": "illustration_asset_files_variant_check",
+          "kind": "c",
+          "definition": "CHECK (variant = ANY (ARRAY['master'::text, 'web'::text, 'cover-card'::text, 'cover-hero'::text, 'cover-player'::text]))",
+          "columns": [
+            "variant"
+          ]
+        },
+        {
+          "name": "illustration_asset_files_width_check",
+          "kind": "c",
+          "definition": "CHECK (width > 0)",
+          "columns": [
+            "width"
+          ]
+        },
+        {
+          "name": "illustration_asset_files_asset_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (asset_id) REFERENCES illustration_assets(id) ON DELETE CASCADE",
+          "columns": [
+            "asset_id"
+          ]
+        },
+        {
+          "name": "illustration_asset_files_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "illustration_asset_files_asset_id_variant_key",
+          "kind": "u",
+          "definition": "UNIQUE (asset_id, variant)",
+          "columns": [
+            "asset_id",
+            "variant"
+          ]
+        },
+        {
+          "name": "illustration_asset_files_object_key_key",
+          "kind": "u",
+          "definition": "UNIQUE (object_key)",
+          "columns": [
+            "object_key"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_asset_files_asset_id_variant_key",
+          "definition": "CREATE UNIQUE INDEX illustration_asset_files_asset_id_variant_key ON public.illustration_asset_files USING btree (asset_id, variant)"
+        },
+        {
+          "name": "illustration_asset_files_object_key_key",
+          "definition": "CREATE UNIQUE INDEX illustration_asset_files_object_key_key ON public.illustration_asset_files USING btree (object_key)"
+        },
+        {
+          "name": "illustration_asset_files_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_asset_files_pkey ON public.illustration_asset_files USING btree (id)"
+        }
+      ],
+      "triggers": [
+        {
+          "name": "illustration_file_cleanup",
+          "definition": "CREATE TRIGGER illustration_file_cleanup BEFORE DELETE ON illustration_asset_files FOR EACH ROW EXECUTE FUNCTION illustration_queue_asset_cleanup()"
+        }
+      ]
+    },
+    {
+      "name": "illustration_assets",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "uuid",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 2,
+          "name": "sha256",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_assets_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_assets_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_assets_pkey ON public.illustration_assets USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "illustration_attempts",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "run_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "job_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "candidate_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "operation_kind",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "provider",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "api_model",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "request_fingerprint",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "prompt_fingerprint",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "state",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "provider_request_id",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "estimated_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 13,
+          "name": "reserved_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 14,
+          "name": "billing_status",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 15,
+          "name": "actual_cost_usd_micros",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 16,
+          "name": "usage_json",
+          "type": "jsonb",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 17,
+          "name": "error",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 18,
+          "name": "started_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 19,
+          "name": "finished_at",
+          "type": "timestamp with time zone",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_attempts_actual_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (actual_cost_usd_micros >= 0)",
+          "columns": [
+            "actual_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "illustration_attempts_billing_status_check",
+          "kind": "c",
+          "definition": "CHECK (billing_status = ANY (ARRAY['estimated'::text, 'actual'::text, 'not_charged'::text, 'unknown'::text]))",
+          "columns": [
+            "billing_status"
+          ]
+        },
+        {
+          "name": "illustration_attempts_estimated_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (estimated_cost_usd_micros > 0)",
+          "columns": [
+            "estimated_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "illustration_attempts_reserved_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (reserved_cost_usd_micros >= 0)",
+          "columns": [
+            "reserved_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "illustration_attempts_state_check",
+          "kind": "c",
+          "definition": "CHECK (state = ANY (ARRAY['reserved'::text, 'sending'::text, 'succeeded'::text, 'failed'::text, 'uncertain'::text]))",
+          "columns": [
+            "state"
+          ]
+        },
+        {
+          "name": "illustration_attempts_candidate_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (candidate_id) REFERENCES illustration_candidates(id) ON DELETE CASCADE",
+          "columns": [
+            "candidate_id"
+          ]
+        },
+        {
+          "name": "illustration_attempts_job_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (job_id) REFERENCES illustration_jobs(id) ON DELETE CASCADE",
+          "columns": [
+            "job_id"
+          ]
+        },
+        {
+          "name": "illustration_attempts_run_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE CASCADE",
+          "columns": [
+            "run_id"
+          ]
+        },
+        {
+          "name": "illustration_attempts_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_attempts_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_attempts_pkey ON public.illustration_attempts USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "illustration_audit_events",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "run_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "slot_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "candidate_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "event_kind",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "actor_user_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "reason",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "metadata_json",
+          "type": "jsonb",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_audit_events_actor_user_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (actor_user_id) REFERENCES users(id)",
+          "columns": [
+            "actor_user_id"
+          ]
+        },
+        {
+          "name": "illustration_audit_events_run_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE SET NULL",
+          "columns": [
+            "run_id"
+          ]
+        },
+        {
+          "name": "illustration_audit_events_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_audit_events_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_audit_events_pkey ON public.illustration_audit_events USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "illustration_candidates",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "slot_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "candidate_no",
+          "type": "integer",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "status",
+          "type": "text",
+          "not_null": true,
+          "default": "'pending'::text",
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "derived_from_candidate_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "prompt_json",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "model_snapshot",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "asset_id",
+          "type": "uuid",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "focal_x",
+          "type": "real",
+          "not_null": true,
+          "default": "0.5",
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "focal_y",
+          "type": "real",
+          "not_null": true,
+          "default": "0.5",
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "alt_text",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "teaching_targets",
+          "type": "jsonb",
+          "not_null": true,
+          "default": "'[]'::jsonb",
+          "identity": ""
+        },
+        {
+          "position": 13,
+          "name": "latest_error",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 14,
+          "name": "reviewed_by",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 15,
+          "name": "reviewed_at",
+          "type": "timestamp with time zone",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 16,
+          "name": "review_reason",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 17,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_candidates_focal_x_check",
+          "kind": "c",
+          "definition": "CHECK (focal_x >= 0::double precision AND focal_x <= 1::double precision)",
+          "columns": [
+            "focal_x"
+          ]
+        },
+        {
+          "name": "illustration_candidates_focal_y_check",
+          "kind": "c",
+          "definition": "CHECK (focal_y >= 0::double precision AND focal_y <= 1::double precision)",
+          "columns": [
+            "focal_y"
+          ]
+        },
+        {
+          "name": "illustration_candidates_status_check",
+          "kind": "c",
+          "definition": "CHECK (status = ANY (ARRAY['pending'::text, 'processing'::text, 'ready'::text, 'approved'::text, 'rejected'::text, 'failed'::text, 'uncertain'::text, 'cancelled'::text]))",
+          "columns": [
+            "status"
+          ]
+        },
+        {
+          "name": "illustration_candidates_asset_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (asset_id) REFERENCES illustration_assets(id)",
+          "columns": [
+            "asset_id"
+          ]
+        },
+        {
+          "name": "illustration_candidates_derived_from_candidate_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (derived_from_candidate_id) REFERENCES illustration_candidates(id) ON DELETE SET NULL",
+          "columns": [
+            "derived_from_candidate_id"
+          ]
+        },
+        {
+          "name": "illustration_candidates_reviewed_by_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (reviewed_by) REFERENCES users(id)",
+          "columns": [
+            "reviewed_by"
+          ]
+        },
+        {
+          "name": "illustration_candidates_slot_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (slot_id) REFERENCES illustration_slots(id) ON DELETE CASCADE",
+          "columns": [
+            "slot_id"
+          ]
+        },
+        {
+          "name": "illustration_candidates_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "illustration_candidates_slot_id_candidate_no_key",
+          "kind": "u",
+          "definition": "UNIQUE (slot_id, candidate_no)",
+          "columns": [
+            "slot_id",
+            "candidate_no"
+          ]
+        },
+        {
+          "name": "illustration_candidates_slot_id_id_key",
+          "kind": "u",
+          "definition": "UNIQUE (slot_id, id)",
+          "columns": [
+            "slot_id",
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_candidates_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_candidates_pkey ON public.illustration_candidates USING btree (id)"
+        },
+        {
+          "name": "illustration_candidates_slot_id_candidate_no_key",
+          "definition": "CREATE UNIQUE INDEX illustration_candidates_slot_id_candidate_no_key ON public.illustration_candidates USING btree (slot_id, candidate_no)"
+        },
+        {
+          "name": "illustration_candidates_slot_id_id_key",
+          "definition": "CREATE UNIQUE INDEX illustration_candidates_slot_id_id_key ON public.illustration_candidates USING btree (slot_id, id)"
+        }
+      ],
+      "triggers": [
+        {
+          "name": "illustration_candidate_cleanup",
+          "definition": "CREATE TRIGGER illustration_candidate_cleanup AFTER DELETE ON illustration_candidates FOR EACH ROW EXECUTE FUNCTION illustration_release_asset()"
+        }
+      ]
+    },
+    {
+      "name": "illustration_cleanup_jobs",
+      "columns": [
+        {
+          "position": 1,
+          "name": "object_key",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 2,
+          "name": "attempts",
+          "type": "integer",
+          "not_null": true,
+          "default": "0",
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "available_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "error",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_cleanup_jobs_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (object_key)",
+          "columns": [
+            "object_key"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_cleanup_jobs_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_cleanup_jobs_pkey ON public.illustration_cleanup_jobs USING btree (object_key)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "illustration_estimates",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "uuid",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 2,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "source_hash",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "model_config_hash",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "pricing_config_hash",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "snapshot",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "base_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "max_cost_usd_micros",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "created_by",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "expires_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "consumed_at",
+          "type": "timestamp with time zone",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 13,
+          "name": "consumed_by_run_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_estimates_base_cost_usd_micros_check",
+          "kind": "c",
+          "definition": "CHECK (base_cost_usd_micros > 0)",
+          "columns": [
+            "base_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "illustration_estimates_check",
+          "kind": "c",
+          "definition": "CHECK (max_cost_usd_micros >= base_cost_usd_micros)",
+          "columns": [
+            "max_cost_usd_micros",
+            "base_cost_usd_micros"
+          ]
+        },
+        {
+          "name": "illustration_estimates_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "illustration_estimates_consumed_by_run_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (consumed_by_run_id) REFERENCES article_visual_runs(id) ON DELETE SET NULL",
+          "columns": [
+            "consumed_by_run_id"
+          ]
+        },
+        {
+          "name": "illustration_estimates_created_by_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (created_by) REFERENCES users(id)",
+          "columns": [
+            "created_by"
+          ]
+        },
+        {
+          "name": "illustration_estimates_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_estimates_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_estimates_pkey ON public.illustration_estimates USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "illustration_jobs",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "kind",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "run_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "slot_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "candidate_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "status",
+          "type": "text",
+          "not_null": true,
+          "default": "'pending'::text",
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "attempts",
+          "type": "integer",
+          "not_null": true,
+          "default": "0",
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "available_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "idempotency_key",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "error",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "lease_token",
+          "type": "uuid",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 13,
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_jobs_kind_check",
+          "kind": "c",
+          "definition": "CHECK (kind = ANY (ARRAY['plan'::text, 'generate'::text, 'derive'::text, 'qa'::text]))",
+          "columns": [
+            "kind"
+          ]
+        },
+        {
+          "name": "illustration_jobs_status_check",
+          "kind": "c",
+          "definition": "CHECK (status = ANY (ARRAY['pending'::text, 'processing'::text, 'done'::text, 'failed'::text, 'uncertain'::text, 'cancelled'::text]))",
+          "columns": [
+            "status"
+          ]
+        },
+        {
+          "name": "illustration_jobs_candidate_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (candidate_id) REFERENCES illustration_candidates(id) ON DELETE CASCADE",
+          "columns": [
+            "candidate_id"
+          ]
+        },
+        {
+          "name": "illustration_jobs_run_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE CASCADE",
+          "columns": [
+            "run_id"
+          ]
+        },
+        {
+          "name": "illustration_jobs_slot_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (slot_id) REFERENCES illustration_slots(id) ON DELETE CASCADE",
+          "columns": [
+            "slot_id"
+          ]
+        },
+        {
+          "name": "illustration_jobs_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "illustration_jobs_idempotency_key_key",
+          "kind": "u",
+          "definition": "UNIQUE (idempotency_key)",
+          "columns": [
+            "idempotency_key"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_jobs_idempotency_key_key",
+          "definition": "CREATE UNIQUE INDEX illustration_jobs_idempotency_key_key ON public.illustration_jobs USING btree (idempotency_key)"
+        },
+        {
+          "name": "illustration_jobs_pending",
+          "definition": "CREATE INDEX illustration_jobs_pending ON public.illustration_jobs USING btree (available_at, id) WHERE (status = 'pending'::text)"
+        },
+        {
+          "name": "illustration_jobs_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_jobs_pkey ON public.illustration_jobs USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "illustration_slots",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "run_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "kind",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "paragraph_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "required",
+          "type": "boolean",
+          "not_null": true,
+          "default": "true",
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "skip_reason",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "selected_candidate_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "prompt_draft",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "prompt_revision",
+          "type": "integer",
+          "not_null": true,
+          "default": "0",
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "prompt_status",
+          "type": "text",
+          "not_null": true,
+          "default": "'empty'::text",
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "prompt_alt_text",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "illustration_slots_check",
+          "kind": "c",
+          "definition": "CHECK ((kind = 'paragraph'::text) = (paragraph_id IS NOT NULL))",
+          "columns": [
+            "kind",
+            "paragraph_id"
+          ]
+        },
+        {
+          "name": "illustration_slots_check1",
+          "kind": "c",
+          "definition": "CHECK (required OR skip_reason IS NOT NULL AND length(TRIM(BOTH FROM skip_reason)) > 0)",
+          "columns": [
+            "required",
+            "skip_reason"
+          ]
+        },
+        {
+          "name": "illustration_slots_kind_check",
+          "kind": "c",
+          "definition": "CHECK (kind = ANY (ARRAY['cover'::text, 'paragraph'::text, 'reference'::text]))",
+          "columns": [
+            "kind"
+          ]
+        },
+        {
+          "name": "illustration_slots_prompt_status_check",
+          "kind": "c",
+          "definition": "CHECK (prompt_status = ANY (ARRAY['empty'::text, 'planning'::text, 'ready'::text, 'failed'::text]))",
+          "columns": [
+            "prompt_status"
+          ]
+        },
+        {
+          "name": "illustration_slots_paragraph_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE CASCADE",
+          "columns": [
+            "paragraph_id"
+          ]
+        },
+        {
+          "name": "illustration_slots_run_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE CASCADE",
+          "columns": [
+            "run_id"
+          ]
+        },
+        {
+          "name": "selected_candidate_owns_slot",
+          "kind": "f",
+          "definition": "FOREIGN KEY (id, selected_candidate_id) REFERENCES illustration_candidates(slot_id, id) DEFERRABLE INITIALLY DEFERRED",
+          "columns": [
+            "id",
+            "selected_candidate_id"
+          ]
+        },
+        {
+          "name": "illustration_slots_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "illustration_slots_run_id_id_key",
+          "kind": "u",
+          "definition": "UNIQUE (run_id, id)",
+          "columns": [
+            "run_id",
+            "id"
+          ]
+        },
+        {
+          "name": "illustration_slots_run_id_paragraph_id_key",
+          "kind": "u",
+          "definition": "UNIQUE (run_id, paragraph_id)",
+          "columns": [
+            "run_id",
+            "paragraph_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "illustration_cover_unique",
+          "definition": "CREATE UNIQUE INDEX illustration_cover_unique ON public.illustration_slots USING btree (run_id) WHERE (kind = 'cover'::text)"
+        },
+        {
+          "name": "illustration_reference_unique",
+          "definition": "CREATE UNIQUE INDEX illustration_reference_unique ON public.illustration_slots USING btree (run_id) WHERE (kind = 'reference'::text)"
+        },
+        {
+          "name": "illustration_slots_pkey",
+          "definition": "CREATE UNIQUE INDEX illustration_slots_pkey ON public.illustration_slots USING btree (id)"
+        },
+        {
+          "name": "illustration_slots_run_id_id_key",
+          "definition": "CREATE UNIQUE INDEX illustration_slots_run_id_id_key ON public.illustration_slots USING btree (run_id, id)"
+        },
+        {
+          "name": "illustration_slots_run_id_paragraph_id_key",
+          "definition": "CREATE UNIQUE INDEX illustration_slots_run_id_paragraph_id_key ON public.illustration_slots USING btree (run_id, paragraph_id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "image_worker_heartbeats",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "uuid",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 2,
+          "name": "models",
+          "type": "jsonb",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "image_worker_heartbeats_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "image_worker_heartbeats_pkey",
+          "definition": "CREATE UNIQUE INDEX image_worker_heartbeats_pkey ON public.image_worker_heartbeats USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "jobs",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "paragraph_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "status",
+          "type": "processing_status",
+          "not_null": true,
+          "default": "'pending'::processing_status",
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "attempts",
+          "type": "integer",
+          "not_null": true,
+          "default": "0",
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "error",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "available_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "generation_snapshot",
+          "type": "jsonb",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "jobs_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "jobs_paragraph_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE CASCADE",
+          "columns": [
+            "paragraph_id"
+          ]
+        },
+        {
+          "name": "jobs_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_jobs_claim",
+          "definition": "CREATE INDEX idx_jobs_claim ON public.jobs USING btree (status, available_at, id)"
+        },
+        {
+          "name": "idx_jobs_status",
+          "definition": "CREATE INDEX idx_jobs_status ON public.jobs USING btree (status)"
+        },
+        {
+          "name": "jobs_pkey",
+          "definition": "CREATE UNIQUE INDEX jobs_pkey ON public.jobs USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "paragraphs",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "idx",
+          "type": "integer",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "text",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "translation",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "en_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "zh_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "status",
+          "type": "processing_status",
+          "not_null": true,
+          "default": "'pending'::processing_status",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "paragraphs_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "paragraphs_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "paragraphs_article_id_idx_key",
+          "kind": "u",
+          "definition": "UNIQUE (article_id, idx)",
+          "columns": [
+            "article_id",
+            "idx"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_paragraphs_article_id",
+          "definition": "CREATE INDEX idx_paragraphs_article_id ON public.paragraphs USING btree (article_id)"
+        },
+        {
+          "name": "paragraphs_article_id_idx_key",
+          "definition": "CREATE UNIQUE INDEX paragraphs_article_id_idx_key ON public.paragraphs USING btree (article_id, idx)"
+        },
+        {
+          "name": "paragraphs_pkey",
+          "definition": "CREATE UNIQUE INDEX paragraphs_pkey ON public.paragraphs USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "tags",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "kind",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "label",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "tags_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "tags_kind_label_key",
+          "kind": "u",
+          "definition": "UNIQUE (kind, label)",
+          "columns": [
+            "kind",
+            "label"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_tags_kind",
+          "definition": "CREATE INDEX idx_tags_kind ON public.tags USING btree (kind)"
+        },
+        {
+          "name": "tags_kind_label_key",
+          "definition": "CREATE UNIQUE INDEX tags_kind_label_key ON public.tags USING btree (kind, label)"
+        },
+        {
+          "name": "tags_pkey",
+          "definition": "CREATE UNIQUE INDEX tags_pkey ON public.tags USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "users",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "email",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "name",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "role",
+          "type": "user_role",
+          "not_null": true,
+          "default": "'reader'::user_role",
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "last_seen_at",
+          "type": "timestamp with time zone",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "users_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "users_email_key",
+          "kind": "u",
+          "definition": "UNIQUE (email)",
+          "columns": [
+            "email"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "users_email_key",
+          "definition": "CREATE UNIQUE INDEX users_email_key ON public.users USING btree (email)"
+        },
+        {
+          "name": "users_pkey",
+          "definition": "CREATE UNIQUE INDEX users_pkey ON public.users USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "vocabulary_items",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "user_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "word",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "status",
+          "type": "text",
+          "not_null": true,
+          "default": "'active'::text",
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "saved_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "vocabulary_items_status_check",
+          "kind": "c",
+          "definition": "CHECK (status = ANY (ARRAY['active'::text, 'mastered'::text]))",
+          "columns": [
+            "status"
+          ]
+        },
+        {
+          "name": "vocabulary_items_word_check",
+          "kind": "c",
+          "definition": "CHECK (length(word) >= 1 AND length(word) <= 200 AND word = lower(btrim(word)))",
+          "columns": [
+            "word"
+          ]
+        },
+        {
+          "name": "vocabulary_items_user_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+          "columns": [
+            "user_id"
+          ]
+        },
+        {
+          "name": "vocabulary_items_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "vocabulary_items_user_id_word_key",
+          "kind": "u",
+          "definition": "UNIQUE (user_id, word)",
+          "columns": [
+            "user_id",
+            "word"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "vocabulary_items_pkey",
+          "definition": "CREATE UNIQUE INDEX vocabulary_items_pkey ON public.vocabulary_items USING btree (id)"
+        },
+        {
+          "name": "vocabulary_items_user_id_word_key",
+          "definition": "CREATE UNIQUE INDEX vocabulary_items_user_id_word_key ON public.vocabulary_items USING btree (user_id, word)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "vocabulary_sources",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "item_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "paragraph_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "title",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "text",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "material_type",
+          "type": "material_type",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "grade",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "unit",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "category",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "saved_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "vocabulary_sources_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE SET NULL",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "vocabulary_sources_item_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (item_id) REFERENCES vocabulary_items(id) ON DELETE CASCADE",
+          "columns": [
+            "item_id"
+          ]
+        },
+        {
+          "name": "vocabulary_sources_paragraph_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE SET NULL",
+          "columns": [
+            "paragraph_id"
+          ]
+        },
+        {
+          "name": "vocabulary_sources_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "vocabulary_sources_item_id_article_id_paragraph_id_key",
+          "kind": "u",
+          "definition": "UNIQUE (item_id, article_id, paragraph_id)",
+          "columns": [
+            "item_id",
+            "article_id",
+            "paragraph_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "vocabulary_sources_article_idx",
+          "definition": "CREATE INDEX vocabulary_sources_article_idx ON public.vocabulary_sources USING btree (article_id)"
+        },
+        {
+          "name": "vocabulary_sources_item_id_article_id_paragraph_id_key",
+          "definition": "CREATE UNIQUE INDEX vocabulary_sources_item_id_article_id_paragraph_id_key ON public.vocabulary_sources USING btree (item_id, article_id, paragraph_id)"
+        },
+        {
+          "name": "vocabulary_sources_paragraph_idx",
+          "definition": "CREATE INDEX vocabulary_sources_paragraph_idx ON public.vocabulary_sources USING btree (paragraph_id)"
+        },
+        {
+          "name": "vocabulary_sources_pkey",
+          "definition": "CREATE UNIQUE INDEX vocabulary_sources_pkey ON public.vocabulary_sources USING btree (id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "word_explanations",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "word_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "article_id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "paragraph_id",
+          "type": "bigint",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 5,
+          "name": "en_explanation",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 6,
+          "name": "en_explanation_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 7,
+          "name": "en_example",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 8,
+          "name": "en_example_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 9,
+          "name": "zh_translation",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 10,
+          "name": "zh_translation_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 11,
+          "name": "zh_explanation",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 12,
+          "name": "zh_explanation_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 13,
+          "name": "zh_example",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 14,
+          "name": "zh_example_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 15,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        },
+        {
+          "position": 16,
+          "name": "headword",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "word_explanations_article_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE",
+          "columns": [
+            "article_id"
+          ]
+        },
+        {
+          "name": "word_explanations_paragraph_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE SET NULL",
+          "columns": [
+            "paragraph_id"
+          ]
+        },
+        {
+          "name": "word_explanations_word_id_fkey",
+          "kind": "f",
+          "definition": "FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE",
+          "columns": [
+            "word_id"
+          ]
+        },
+        {
+          "name": "word_explanations_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "word_explanations_word_id_article_id_key",
+          "kind": "u",
+          "definition": "UNIQUE (word_id, article_id)",
+          "columns": [
+            "word_id",
+            "article_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_word_explanations_article_id",
+          "definition": "CREATE INDEX idx_word_explanations_article_id ON public.word_explanations USING btree (article_id)"
+        },
+        {
+          "name": "idx_word_explanations_word_id",
+          "definition": "CREATE INDEX idx_word_explanations_word_id ON public.word_explanations USING btree (word_id, created_at)"
+        },
+        {
+          "name": "word_explanations_pkey",
+          "definition": "CREATE UNIQUE INDEX word_explanations_pkey ON public.word_explanations USING btree (id)"
+        },
+        {
+          "name": "word_explanations_word_id_article_id_key",
+          "definition": "CREATE UNIQUE INDEX word_explanations_word_id_article_id_key ON public.word_explanations USING btree (word_id, article_id)"
+        }
+      ],
+      "triggers": []
+    },
+    {
+      "name": "words",
+      "columns": [
+        {
+          "position": 1,
+          "name": "id",
+          "type": "bigint",
+          "not_null": true,
+          "default": null,
+          "identity": "a"
+        },
+        {
+          "position": 2,
+          "name": "normalized_word",
+          "type": "text",
+          "not_null": true,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 3,
+          "name": "en_audio_path",
+          "type": "text",
+          "not_null": false,
+          "default": null,
+          "identity": ""
+        },
+        {
+          "position": 4,
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "not_null": true,
+          "default": "now()",
+          "identity": ""
+        }
+      ],
+      "constraints": [
+        {
+          "name": "words_pkey",
+          "kind": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "words_normalized_word_key",
+          "kind": "u",
+          "definition": "UNIQUE (normalized_word)",
+          "columns": [
+            "normalized_word"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "words_normalized_word_key",
+          "definition": "CREATE UNIQUE INDEX words_normalized_word_key ON public.words USING btree (normalized_word)"
+        },
+        {
+          "name": "words_pkey",
+          "definition": "CREATE UNIQUE INDEX words_pkey ON public.words USING btree (id)"
+        }
+      ],
+      "triggers": []
+    }
+  ],
+  "enums": [
+    {
+      "name": "material_type",
+      "values": [
+        "school",
+        "extracurricular"
+      ]
+    },
+    {
+      "name": "processing_status",
+      "values": [
+        "pending",
+        "processing",
+        "done",
+        "failed"
+      ]
+    },
+    {
+      "name": "user_role",
+      "values": [
+        "admin",
+        "reader",
+        "reviewer"
+      ]
+    }
+  ]
+}

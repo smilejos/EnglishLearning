@@ -7,9 +7,10 @@ import {
   GeminiVisualPlanner,
   OpenAIVisualPlanner,
   ImageProviderError,
+  stagedPlannerPrompt,
 } from "./providers";
 import type { Authorizer } from "../llm/auth";
-import { examplePlan } from "./testFixtures";
+import { examplePlan, exampleSource } from "./testFixtures";
 import { visualPlanJsonSchema } from "./plan-schema";
 const catalog = loadImageModelCatalog(
   new URL("../../../config/image-models.json", import.meta.url).pathname,
@@ -27,6 +28,37 @@ const vertexAuthForKey = (key: string): Authorizer => ({
   endpoint: vertexEndpoint,
   headers: async () => ({ "x-goog-api-key": key }),
   describe: () => "test key",
+});
+describe("staged visual planning guidance", () => {
+  const source = {
+    ...exampleSource,
+    title: "Mia, Leo and the lighthouse",
+    paragraphs: [
+      { id: 1, idx: 0, text: "Mia and Leo walk to the old lighthouse with their spotted dog." },
+      { id: 2, idx: 1, text: "The dog waits beside the lighthouse while Mia looks at the bay." },
+    ],
+  };
+
+  it("asks for separate stable traits of every relevant subject type in one reference sheet", () => {
+    const prompt = stagedPlannerPrompt(source, "reference", null);
+    expect(prompt).toContain("several people, animals, buildings, places, or a mixture");
+    expect(prompt).toContain("Do not invent subjects");
+    expect(prompt).toContain("hair color, skin tone");
+    expect(prompt).toContain("coat or surface color, markings");
+    expect(prompt).toContain("roof, windows, entrance");
+    expect(prompt).toContain("layout, fixed landmarks");
+    expect(prompt).toContain("clearly separated neutral studies");
+    expect(prompt).toContain("Mia and Leo walk to the old lighthouse");
+  });
+
+  it("uses each scene's subjects and actions while preserving matching identities", () => {
+    const prompt = stagedPlannerPrompt(source, "paragraph", "Mia: red coat; Leo: blue coat; lighthouse: stone tower", 2);
+    expect(prompt).toContain("Match every recurring subject to its own identity and traits");
+    expect(prompt).toContain("include only subjects present in the requested scene");
+    expect(prompt).toContain("The dog waits beside the lighthouse");
+    expect(prompt).toContain("Mia: red coat; Leo: blue coat; lighthouse: stone tower");
+    expect(prompt).toContain("Set visualBible to an empty string");
+  });
 });
 describe("image adapters use mocked transport only", () => {
   it("uses OpenAI structured Responses and preserves planner usage", async () => {
@@ -83,7 +115,9 @@ describe("image adapters use mocked transport only", () => {
     expect(result.value).toEqual(examplePlan);
     expect(fetcher.mock.calls[0][0]).toBe(vertexEndpoint(catalog.planner.apiModel));
     expect(fetcher.mock.calls[0][0]).not.toContain("generativelanguage.googleapis.com");
-    const config = JSON.parse(fetcher.mock.calls[0][1].body).generationConfig;
+    const body = JSON.parse(fetcher.mock.calls[0][1].body);
+    expect(body.contents).toEqual([{ role: "user", parts: [{ text: "plan" }] }]);
+    const config = body.generationConfig;
     expect(config.responseMimeType).toBe("application/json");
     const schema = config.responseJsonSchema;
     const assertStructural = (node: any): void => {
@@ -245,6 +279,9 @@ describe("image adapters use mocked transport only", () => {
     expect(result.mimeType).toBe("image/webp");
     expect(fetcher.mock.calls[0][0]).toBe(vertexEndpoint(catalog.models[1].apiModel));
     expect(fetcher.mock.calls[0][0]).not.toContain("generativelanguage.googleapis.com");
+    expect(JSON.parse(fetcher.mock.calls[0][1].body).contents).toEqual([
+      { role: "user", parts: [{ text: request.prompt }] },
+    ]);
     expect(
       JSON.parse(fetcher.mock.calls[0][1].body).generationConfig.imageConfig
         .imageSize,

@@ -17,7 +17,7 @@ export interface GenResponse {
 }
 
 export interface GenRequest {
-  contents: { role?: "user" | "model"; parts: { text: string }[] }[];
+  contents: { role: "user" | "model"; parts: { text: string }[] }[];
   generationConfig?: Record<string, unknown>;
 }
 

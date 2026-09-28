@@ -31,3 +31,8 @@ export const visualPlanJsonSchema = object({
     teachingTargets: array(object({ word, normalizedWord: word, reason: string, visualObject: string })),
   })),
 });
+export const stagedPromptJsonSchema = object({
+  prompt: string,
+  altText: string,
+  visualBible: string,
+});

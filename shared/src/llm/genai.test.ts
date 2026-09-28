@@ -1,5 +1,7 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { generateContent, firstText } from "./genai";
+import { GeminiTranslateClient } from "./translate";
+import { GeminiExplainClient } from "./explainWord";
 import type { Authorizer } from "./auth";
 
 const endpoint = (model: string) =>
@@ -25,7 +27,7 @@ describe("generateContent", () => {
         new Response(JSON.stringify(responseBody), { status: 200 }),
       );
 
-    const req = { contents: [{ parts: [{ text: "hi" }] }] };
+    const req = { contents: [{ role: "user" as const, parts: [{ text: "hi" }] }] };
     const res = await generateContent("gemini-2.5-flash", req, auth);
 
     expect(res).toEqual(responseBody);
@@ -43,10 +45,25 @@ describe("generateContent", () => {
     vi.spyOn(globalThis, "fetch").mockResolvedValue(
       new Response("quota exceeded", { status: 429 }),
     );
-    const req = { contents: [{ parts: [{ text: "hi" }] }] };
+    const req = { contents: [{ role: "user" as const, parts: [{ text: "hi" }] }] };
     await expect(
       generateContent("gemini-2.5-flash", req, auth),
     ).rejects.toThrow(/429/);
+  });
+});
+
+describe("Vertex AI text clients", () => {
+  it.each([
+    ["translation", (prompt: string) => new GeminiTranslateClient({ auth }).complete(prompt)],
+    ["word explanation", (prompt: string) => new GeminiExplainClient({ auth }).complete(prompt)],
+  ])("%s sends an explicit user role", async (_name, complete) => {
+    const fetchMock = vi.spyOn(globalThis, "fetch").mockResolvedValue(
+      new Response(JSON.stringify({ candidates: [{ content: { parts: [{ text: "ok" }] } }] })),
+    );
+    expect(await complete("prompt")).toBe("ok");
+    const body = JSON.parse(String((fetchMock.mock.calls[0][1] as RequestInit).body));
+    expect(body.contents).toEqual([{ role: "user", parts: [{ text: "prompt" }] }]);
+    expect(body.generationConfig).toEqual({ responseMimeType: "application/json" });
   });
 });
 

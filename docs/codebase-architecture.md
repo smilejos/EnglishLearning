@@ -1,7 +1,7 @@
 # 專案架構與功能導覽（以程式碼為準）
 
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-09-26（Google Vertex AI 語音請求與補檔配額處理）。原始分析時已於本機 Docker 套用 migration、重建啟動供試用；本次生成設定與 Vertex AI 變更尚未套用正式資料庫或部署。
+> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-09-28（視覺參考圖支援多個故事主體）。原始分析時已於本機 Docker 套用 migration、重建啟動供試用；舊圖片轉換 migration 已於 2026-09-27 套用正式資料庫，相關程式碼尚未部署。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理，未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 ## 1. 先讀這裡：專案目的與全貌
@@ -15,7 +15,7 @@
 1. **文章教材**：後台輸入標題／英文內文 → API 依空白行切段、建立 DB jobs → worker 翻譯與合成語音 → 前台閱讀、聆聽。
 2. **語境單字**：點單字先讀既有解釋 → admin／reviewer 可用本篇脈絡產生解釋 → API 先回文字，再於 API 行程內背景補音檔 → 全站共用。
 3. **收藏複習**：單字卡主動收藏 → 保存單字與來源快照 → 快速複習／自行判斷的快速挑戰 → 標熟悉後移出待複習，可重新收藏。
-4. **文章插圖**：admin 估價並建立版本 → image-worker 全文規劃、必要時先產生角色參考圖 → 人工審核 → 生成封面與段落圖 → 人工核准、整版發布 → 前台顯示。
+4. **文章插圖**：admin 估價並建立版本 → 文字模型提出視覺設定與可編輯 Prompt → 人工逐步生成、審核參考圖與封面 → 逐段生圖或略過 → 整版發布 → 前台顯示。
 
 新 agent 必須先知道的邊界：
 
@@ -42,7 +42,7 @@ flowchart TD
     ImageWorker[image-worker] --> DB
     Worker --> TextSpeech[Vertex AI／OpenAI 翻譯與 TTS]
     API --> Explain[Vertex AI／OpenAI 單字解釋與 TTS]
-    ImageWorker --> Planner[Vertex AI／OpenAI 全文圖片規劃]
+    ImageWorker --> Planner[Vertex AI／OpenAI 圖片 Prompt 規劃：v1 全文／v2 分階段]
     ImageWorker --> ImageAPI[Vertex AI／OpenAI 圖片 API]
     Worker --> Audio[(audio volume)]
     API --> Audio
@@ -146,16 +146,22 @@ flowchart TD
 | 文章清單 | 含所有處理狀態；標題／教材／分類標籤篩選；依畫面高度計算每頁筆數；前台閱讀連結；刪除 |
 | 新增文章 | 表單貼入英文純文字與 metadata；不是 PDF／Word 檔案解析上傳 |
 | metadata 編輯 | 標題、教材別、年級、單元、難度、分類、標籤；內文不在此修改 |
-| 文章詳情 | 各段原文、翻譯、狀態、最近 job 錯誤及中英音檔；重試失敗段落與指定產物重生 |
+| 文章詳情 | 圖片／音檔／單字分頁，預設音檔；音檔頁保留各段原文、翻譯、狀態、最近 job 錯誤及中英音檔，可重試失敗段落與重生指定產物 |
 | 分類／標籤 | 分類建立、改名、刪除；UI 提供母／子分類；標籤依 kind 分組，支援單項編輯及整組 kind 改名 |
 | 單字管理 | 搜尋、展開來源解釋、刪單筆解釋或整個單字；支援進站 `#/w/<word>` 深連結 |
 | 補缺音檔 | 文章清單按鈕切換到獨立的缺檔頁，與文章搜尋／篩選分開；一個待補音檔一列（單字發音跨來源只列一次、英文解釋、英文例句）。可逐檔補齊，或補齊完整清單並查看進度、失敗數；頁內搜尋只影響顯示，不縮小全部補檔範圍。可返回文章清單。舊批次 API 每次仍最多掃描 10 個單字與 10 筆解釋 |
 | 使用者 | 列表、最後出現時間、reader／reviewer 指派及預先指派 |
 | 統計 | 文章／段落／文章 jobs 狀態數、單字／解釋數、當日受限流計數；不是個人學習分析 |
-| AI 圖片 | 可用模型、估價／預算、版本清單、生成狀態、候選 prompt、圖片與教學詞位置審核、重生／略過、取消／刪除／發布 |
-| 生成設定 | 文字、語音、圖片各自選 Google／OpenAI 與模型；文字共用於翻譯、單字解釋與圖片全文規劃，語音可選中英文聲線。顯示憑證可用狀態，儲存採版本檢查 |
+| AI 圖片 | 以單一建立按鈕自動估價並建立版本、選擇版本、分階段 Prompt 編輯與逐張生成、候選圖實際 Prompt、圖片與教學詞位置審核、段落略過／日後補圖、取消／刪除／發布 |
+| 生成設定 | 文字、語音、圖片各自選 Google／OpenAI 與模型；文字共用於翻譯、單字解釋與圖片 Prompt 規劃（舊版全文、新版分階段），語音可選中英文聲線。顯示憑證可用狀態，儲存採版本檢查 |
 
 文章列表與詳情每 3 秒輪詢，統計每 5 秒，圖片面板每 3 秒。沒有 WebSocket／SSE。後台主要用 `view` state 換頁，沒有完整的 React Router 路由表。
+
+圖片候選排程中或生成中時，候選卡顯示等待提示與讀取狀態；若前次請求失敗但已排定自動重試，提示原因並將詳細錯誤收在可展開區。圖片工作尚未完成時，該步驟的生圖按鈕停用，避免重複建立候選；輪詢取得可審核圖片後恢復操作。
+
+文章詳情把返回清單、標題與狀態排在同一標題列。圖片版本的失敗請求以摘要呈現，詳細紀錄預設收合；管理者可清除目前已顯示的失敗提示，之後的新失敗仍會出現。清除進度記在 `illustration_audit_events`，原始 `illustration_attempts`、候選狀態與費用資料不刪除；結果不明的請求另行顯示。圖片介面的 Prompt 用語在畫面上統一寫作「提示詞」，API／DB 欄位名稱維持不變。
+
+後台的刪除文章／分類／單字／解釋、段落重生、缺檔補音，以及圖片工作操作，點擊按鈕後直接送出，不再跳瀏覽器二次確認。分類／標籤改名、舊版圖片略過原因與圖片拒絕原因使用文字輸入視窗；圖片核准不另設內容確認勾選或審核原因欄位。
 
 ## 6. 文章處理資料流與狀態
 
@@ -214,45 +220,52 @@ LLM 層另有短期重試與 HTTP timeout；它和 DB job 重試是兩層，不�
 ### 模型、估價與版本
 
 - `catalog.ts` 驗證模型 provider、adapter、用途參數及對應價格；設定從兩個 JSON 載入，沒有線上自動查價。
-- 程式庫目前設定包含 OpenAI 與 Gemini 圖片模型；後台生成設定決定圖檔模型與 Google／OpenAI 全文規劃模型。估價與生成版本保存模型及規劃器快照。這只描述 repo 設定，不代表已驗證供應商當日型號、價格或線上可用性。
+- 程式庫目前設定包含 OpenAI 與 Gemini 圖片模型；後台生成設定決定圖檔模型與 Google／OpenAI 圖片 Prompt 規劃模型。估價與生成版本保存模型及規劃器快照。這只描述 repo 設定，不代表已驗證供應商當日型號、價格或線上可用性。
 - image-worker 每 15 秒在 DB 宣告模型 ID／設定 hash；API 僅列出最近 60 秒心跳且 hash 相符的模型。
-- 圖片入口要求文章 done、1–200 段；新 run 的 scope 只接受 `{ kind: "all" }`。既有 run 中可針對 slot 重生，不等於支援任意新 run scope。
-- estimate 保存來源／模型／價格 hash 及 snapshot，10 分鐘有效，綁文章與建立者。預估包含 planner、封面、各段插圖及最多一張角色參考圖；預設最高預算為基礎估價兩倍，目前上限 USD 100。
+- 圖片入口要求文章 done、1–200 段；新 run 的 scope 仍只接受 `{ kind: "all" }`，段落是否實際生圖由版本內的逐段操作決定。
+- estimate 保存來源／模型／價格 hash 及 snapshot，10 分鐘有效，綁文章與建立者。整篇預估以每段各生圖一次為參考，包含必做的參考圖、封面及分階段文字規劃；略過段落不會送出生圖請求。預設最高預算為基礎估價兩倍，目前上限 USD 100。
 - 金額以 `usd_micros` 整數保存（1 USD = 1,000,000 micros）。估價是程式內預算依據，不是供應商帳單保證。
-- 建 run 再核對來源與設定、消耗 estimate，使用 idempotency key 防重複建立，保存 revision 與當時所有設定。
+- 建 run 再核對來源與設定、消耗 estimate，使用 idempotency key 防重複建立，保存 revision 與當時所有設定。新版本使用 `workflow_version=2`。`1789862400006_import-legacy-illustrations.sql` 將既有 v1 版本原地轉入 v2，並以 `legacy_imported` 標記；若仍有 v1 工作在等待或執行，migration 會拒絕套用，須先處理工作狀態。
 
 ### 規劃、生成、審核、發布
 
 ```mermaid
 flowchart LR
-    E[估價] --> P[pending / planning]
-    P --> C{有固定角色？}
-    C -->|有| R[角色參考圖／waiting_reference_review]
-    R -->|admin 核准| G[generating]
-    C -->|無| G
-    G --> V[review]
-    V -->|必要圖片核准且來源一致| U[published]
+    E[估價並建立版本] --> P[全文視覺設定與參考 Prompt]
+    P --> R[編輯／生成／核准參考圖]
+    R --> C[編輯／生成／核准封面]
+    C --> G[逐段編輯 Prompt、生圖或略過]
+    G --> V[全部段落已核准或已略過]
+    V -->|來源一致| U[published]
     U -->|新版發布| S[superseded]
-    G --> F[partial_failed / failed]
+    U -->|日後修改或補圖| N[繼承已核准圖片的新版本]
+    N --> G
 ```
 
-這是主要成功路徑；取消、重試、結果不明另由狀態守衛處理。
+這是全新版本的主要成功路徑；取消、重試、結果不明另由狀態守衛處理。已發布版本不原地修改；所有已發布或被取代的版本都在版本下拉右側顯示「修改圖片」，按下後建立承接已核准圖片的新 revision，可修改承接的封面／段落圖片或補先前略過的段落，完成後再整版發布。已核准的參考圖仍鎖定；若須重做參考圖，應另建全新圖片版本。轉入的舊版若沒有已核准參考圖，補圖版本將參考圖視為可選，可直接補段落；不會自動安排參考圖規劃或生圖。承接的候選圖保留原模型快照與檔案，新補圖片使用新版本選定的模型，兩者可能有風格差異。
 
-- planner 產出全文摘要、風格／角色設定、封面 brief，以及完整段落計畫；檢查 ID／idx 與原文一致，教學詞必須是原文完整 token，每段至多 3 個。
-- 規劃回應的教學詞由程式計算 `normalizedWord`，逐筆核對原文（含大小寫）後，依正規化單字合併重複項目並保留第一筆，合併後仍須符合每段至多 3 個的限制。不猜測單複數或改寫原文字詞；詞組或不符合原文的教學詞會略過，全部略過時仍可用空標籤清單繼續產圖，原因存於 `plan_json.validationWarnings` 並在後台「教學單字調整」顯示。提示包含段落 ID、教學詞位置與可安全顯示的錯字，異常字元僅顯示位置；核心規劃結構、其他標籤欄位格式、數量上限與人工審核仍採嚴格驗證。
+管理後台圖片版本使用同一套分階段 UI。migration 從舊版已保存的候選圖取回實際 Prompt 與替代文字；沒有資料就留空，既有圖片、審核、發布與費用紀錄原地保留。全文規劃未完成而缺少 slot 的版本，依來源建立空白封面及段落 slot。從未建立參考 slot 的轉入版補可選的空白 slot；曾有但未核准的參考圖則保留歷史候選與 Prompt，並將參考圖設為可選。兩者都不會自動觸發供應商請求。導覽的已核准狀態與解鎖依目前選用候選圖判定。
+
+- 全新 v2 版本建立後只排參考圖的文字規劃；承接已發布版本補圖時沿用既有已核准參考圖，若舊版沒有已核准參考圖則將該欄設為可選，保留已有歷史資料。規劃 Prompt 要求文字模型從全文辨識需要跨圖保持一致的多個故事主體，可為人物、動物、建物、地點或其組合；逐一記錄人物的年齡、髮型、膚色、表情、穿著、體型，動物的物種、大小、毛色與斑紋，建物的形狀、材質與建築細節，地點的地形、布局與固定地標，以及共用畫風。單張參考圖以分開的中性視覺研究呈現這些主體，不在圖片中加入文字標籤，也不把故事動作或暫時道具固定在參考圖或視覺設定；若主體是建物或地點，可用簡單環境呈現其固定特徵。沒有反覆出現的角色時依文章核心主體建立參考設定，不虛構人物或事件。封面與段落規劃依各自場景取用相關主體的穩定特徵與畫風，動作與場景由文章內容決定。全新版本仍須製作一張參考圖。管理者可修改視覺設定與 Prompt。新版本參考圖核准後才可要求封面 Prompt；轉入的舊版若缺已核准參考圖，可直接規劃封面及段落。文字規劃與生圖是不同的明確操作，未按生圖不建立該圖片 job。既有已核准參考圖不會因規劃指示更新而自動重做。
+- `illustration_slots` 保存目前可編輯的 Prompt 草稿與修訂號；每張候選圖的 `prompt_json` 固定記錄該候選生成工作所用的最終 Prompt，不另存 LLM 初稿或編輯歷史。後台輪詢不應覆蓋正在編輯的草稿。逐次估價可查文字規劃／目前 Prompt 生圖的預估費用與版本剩餘預算；建立版本、產生／重新建議 Prompt、生圖、取消、發布、刪除、舊版重新生成與略過段落都由按鈕直接送出，不彈出瀏覽器二次確認。
+- 每段可直接標記「已略過」而不輸入原因，也可在草稿版本中回來補圖。發布時全新版本的參考圖及所有版本的封面必須核准，每段須已核准或已明確略過；轉入版本可保留缺少的參考圖。無圖段落在學習前台省略圖片。
+- 下列舊版全文規劃契約只用於解讀轉入前的歷史資料；新流程不會在規劃完成時一次排入封面與所有段落生圖工作。
+
+- 舊版 planner 一次產出全文摘要、風格／角色設定、封面 brief，以及完整段落計畫；檢查 ID／idx 與原文一致，教學詞必須是原文完整 token，每段至多 3 個。
+- 規劃回應的教學詞由程式計算 `normalizedWord`，逐筆核對原文（含大小寫）後，依正規化單字合併重複項目並保留第一筆，合併後仍須符合每段至多 3 個的限制。不猜測單複數或改寫原文字詞；詞組或不符合原文的教學詞會略過，全部略過時仍可用空標籤清單繼續產圖，原因存於 `plan_json.validationWarnings`，並依圖片頁目前選取的版本在文章詳情「單字」頁籤的「教學單字調整」顯示。提示包含段落 ID、教學詞位置與可安全顯示的錯字，異常字元僅顯示位置；核心規劃結構、其他標籤欄位格式、數量上限與人工審核仍採嚴格驗證。
 - Gemini 規劃請求的 JSON Schema 僅約束欄位、型別與必填結構，避免巢狀陣列長度及數值上下界造成供應商 `too many states` 拒絕；數量限制由 prompt 提示，回應仍經 `contracts.ts` 的 Zod 與原文一致性驗證後才可生成圖片。
-- 有 recurring characters 才建立 reference slot。參考圖未核准前，封面與正文 job 雖已建立，仍不能送出生成。
+- 轉入前的舊版只有 recurring characters 才建立 reference slot；migration 會替缺少者建立可選的空白 slot。全新版本每篇都建立必做的 reference slot，後續 job 不會提前建立。
 - 每次供應商工作在 run lock 下預留預算，並記錄 attempt、lease token、prompt／request fingerprint、usage 與計費狀態。
 - `providers.ts` 隔離 OpenAI Images 與 Gemini transport；有參考圖時 OpenAI 使用 edits。內部冪等 key 不等於供應商保證不重複計費。
 - 圖片回來後 sharp 產生 master、web；封面另有 card 640×360、hero 1280×720、player 160×160。段落 web 保持完整構圖，單字座標以此為準。
-- 管理者審核 alt text、內容／安全、教學詞位置；段落圖可從該版本保存的原文選字，填寫圖中物件與學習說明後新增標籤（每圖最多 3 個、不重複，移除後可再加）。新增標籤須點圖或輸入 X／Y 完成定位，再以「核准並選用」儲存，不重新產圖。封面、角色參考圖、不可審核的候選與唯讀版本不提供新增；沒有原文快照也不提供新增。伺服器已存內容未變時，輪詢保留尚未儲存的審核草稿；候選身分或版本改變時重設。拒絕必須給原因；reference 一旦進入正文生成就不可任意替換。
-- 只可略過段落 slot 且須原因；封面不能略過。發布要求 run 在 review、來源 hash 未變、必要圖皆已核准且有 alt text／asset。
+- 管理者審核 alt text、內容／安全、教學詞位置；段落圖可從該版本保存的原文選字，填寫圖中物件與學習說明後新增標籤（每圖最多 3 個、不重複，移除後可再加）。新增標籤須點圖或輸入 X／Y 完成定位，再以「核准並選用」儲存，不重新產圖；核准按鈕須有替代文字，且所有教學詞已定位。封面、參考圖、不可審核的候選與唯讀版本不提供新增；沒有原文快照也不提供新增。伺服器已存內容未變時，輪詢保留尚未儲存的審核草稿；候選身分或版本改變時重設。拒絕時才要求原因；新版參考圖核准後若要更換，須建立新版本。
+- 只可略過段落 slot；不要求使用者填原因。封面不能略過。發布要求 run 在 review、來源 hash 未變、必要圖皆已核准且有 alt text／asset；段落須已核准或明確略過。轉入版的空白可選參考圖不妨礙發布。
 - 發布以 transaction 切換 `article_visual_publications`，前一版標為 superseded；前台只拿發布資料，不接收草稿 prompt、模型成本或候選歷史。
 - 已發布／被取代／取消版本不可原地編輯；新版生成期間舊發布版仍可閱讀。
 
 ### 故障與儲存
 
-明確可重試的 provider 錯誤有有限重試與退避；網路中斷或已送出但結果未知時標為 `uncertain`，保留可能費用、不自動重送。job 每 15 秒續期，超過 10 分鐘沒有更新的 processing job 由 recovery 保守標為 uncertain；人工重生需明確接受可能重複費用。
+明確可重試的 provider 錯誤有有限重試與退避；網路中斷或已送出但結果未知時標為 `uncertain`，保留可能費用、不自動重送。後台顯示最近一筆結果不明請求的操作、模型與結束時間；起訖紀錄相差至少一分鐘時另顯示約略經過時間，舊請求收在詳細紀錄中。Prompt 規劃與圖片生成分別說明未取得的結果及後續操作；若後續已取得 Prompt，提示可直接檢查並繼續。供應商是否完成舊請求或計費仍無法從本系統確認。job 每 15 秒續期，超過 10 分鐘沒有更新的 processing job 由 recovery 保守標為 uncertain。同一 slot 再次規劃時，若有歷史 `uncertain` 規劃工作；同一 slot 生圖時，若有任一歷史 `uncertain` 工作，前端會自動附上 `acceptUnknownCharge` 費用風險旗標，與後端的拒絕條件一致；不另彈二次確認。
 
 `LocalImageStorage` 把檔案寫到 `articles/<articleId>/runs/<runId>/<assetUuid>/`，API 將 images volume 唯讀掛載。刪版本／文章透過 DB trigger 釋放無引用 asset，將檔案加入 `illustration_cleanup_jobs`；image-worker 執行實體清理並重試。圖片 worker 沒開時，即使 DB 刪除完成，檔案清理仍可能等待。
 
@@ -272,7 +285,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | 單字 | `words.normalized_word` unique；`word_explanations(word_id,article_id)` unique，保存 paragraph 脈絡及五組產物 |
 | 收藏 | `vocabulary_items(user_id,word)` unique，保存 active／mastered 與 saved_at；`vocabulary_sources` 保存來源／分類快照，來源 unique `(item_id,article_id,paragraph_id)`；文章／段落刪除時 FK SET NULL，收藏刪除時來源 CASCADE；不依賴共用 words FK |
 | 圖片估價／版本 | `illustration_estimates`、`article_visual_runs`、`article_visual_publications`；每篇只有一個目前發布指標 |
-| 圖片內容 | `illustration_slots` 表示 cover／paragraph／reference；每 slot 多個 candidates，selected candidate 有歸屬約束 |
+| 圖片內容 | `illustration_slots` 表示 cover／paragraph／reference；新版 slot 保存可編輯 Prompt 草稿及修訂號，每 slot 多個 candidates，candidate 保存當次實際生圖 Prompt，selected candidate 有歸屬約束 |
 | 圖片檔案 | `illustration_assets` 與 `illustration_asset_files` 一對多；variant、object key、尺寸、MIME、bytes |
 | 圖片執行紀錄 | `illustration_jobs`、`illustration_attempts`、`illustration_audit_events`、`image_worker_heartbeats`、`illustration_cleanup_jobs` |
 
@@ -309,6 +322,9 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | `GET /image-models`、`POST /articles/:id/illustration-estimates` | admin 可用模型／估價 | `api/src/routes/illustrations.ts` |
 | `GET/POST /articles/:id/illustration-runs` | admin 版本列表／建立 | 同上 |
 | `GET/DELETE /articles/:id/illustration-runs/:runId` | admin 詳情／刪除 | 同上 |
+| `POST .../:runId/dismiss-failures` | admin 清除目前已顯示的失敗提示，保留請求紀錄與費用 | 同上 |
+| `POST .../:runId/fork`、`PUT .../:runId/visual-bible` | admin 承接已發布或被取代版本的圖片供修改／補圖，或編輯參考圖前的視覺設定 | 同上 |
+| `POST .../:runId/slots/:slotId/quote`、`POST .../plan`、`PUT .../prompt`、`POST .../generate` | admin 查本次費用、產生分階段 Prompt、保存草稿及手動生圖 | 同上 |
 | `POST .../:runId/cancel`、`POST .../:runId/publish` | admin 取消／發布 | 同上 |
 | `POST .../:runId/candidates/:candidateId/review` | admin 候選審核 | 同上 |
 | `POST .../:runId/slots/:slotId/regenerate`、`POST .../:runId/slots/:slotId/skip` | admin 重生／略過 | 同上 |
@@ -323,7 +339,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前端。主入口預設 `8090`；API 綁 `127.0.0.1:8080`，DB 綁 `127.0.0.1:5432`，兩前端另開 `8081`／`8082`。Vite dev 預設為 admin `5173`、learner `5174`。
 
 - 環境設定由 `shared/src/config.ts` 讀取：DB、音檔、選用供應商的憑證、Access、admin emails、lookup limits、音訊格式、圖片路徑及 catalog。Google 與 OpenAI 憑證可擇一或並存。Google 各工作共用 Vertex AI `generateContent`，`GOOGLE_CLOUD_PROJECT` 與 `GOOGLE_CLOUD_LOCATION` 組成端點；`global` 使用 `aiplatform.googleapis.com`。授權優先使用可呼叫 Agent Platform API 的 `GEMINI_API_KEY`，其次使用 `GOOGLE_APPLICATION_CREDENTIALS` 指定的 ADC；無憑證時不列為可用供應商。
-- 文字、語音、圖片三項生成設定存於 DB `generation_settings`，由 admin 的 `/generation-settings` 讀寫。共用文字設定供翻譯、單字解釋與圖片全文規劃使用；可選文字／語音模型與聲線由 `config/generation-models.json` 載入，圖檔模型由 `config/image-models.json` 載入。圖片與規劃費率由 `config/image-pricing.json` 定義，新增文字模型須有規劃費率才可儲存。設定檔在後端行程啟動時讀取，修改後需重啟相關服務；既有工作快照不會自動變更。舊五項設定升級時以「文章翻譯」模型作為共用文字模型。Vertex AI TTS 使用 `gemini-2.5-flash-tts`／`gemini-2.5-pro-tts`；migration 更新目前後台設定中的舊 preview 型號，舊 job 快照在送出時映射，已生成音檔不重做。
+- 文字、語音、圖片三項生成設定存於 DB `generation_settings`，由 admin 的 `/generation-settings` 讀寫。共用文字設定供翻譯、單字解釋與圖片分階段 Prompt 規劃使用；可選文字／語音模型與聲線由 `config/generation-models.json` 載入，圖檔模型由 `config/image-models.json` 載入。圖片與規劃費率由 `config/image-pricing.json` 定義，新增文字模型須有規劃費率才可儲存。設定檔在後端行程啟動時讀取，修改後需重啟相關服務；既有工作快照不會自動變更。舊五項設定升級時以「文章翻譯」模型作為共用文字模型。Vertex AI TTS 使用 `gemini-2.5-flash-tts`／`gemini-2.5-pro-tts`；migration 更新目前後台設定中的舊 preview 型號，舊 job 快照在送出時映射，已生成音檔不重做。
 - 文字選項包含 Vertex AI `gemini-3.8-flash`，圖片規劃對此模型使用 `thinkingLevel=LOW`；其規劃費率目前採官方截至 2026-12-31 的優惠價，2027-01-01 須更新價格。`gemini-3.8-flash-lite-tts` 未列入 Vertex AI `global` 可用模型清單，因此語音選項尚未加入它。
 - `VITE_*` 是前端建置設定。Compose 用 `LEARNER_URL_PUBLIC`／`ADMIN_URL_PUBLIC` 轉為 build args；改連結通常要重新 build，不能只重啟舊前端映像。
 - 裸 `docker compose up` 不會啟用 images profile；**`scripts/deploy.sh` 預設加 `--profile images`**，因此完整部署包含 image-worker。tunnel、seed 仍各自為選用 profile。

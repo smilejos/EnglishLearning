@@ -1,0 +1,1065 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>目前資料模型</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;family=Noto+Serif+TC:wght@400&amp;family=Noto+Sans+TC:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f5f5;--ink:#2d3142;--muted:#4f5d75;--soft:#7a8399;--accent:#eb6c36;--link:#2e5aa8}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:'Geist','Noto Sans TC','PingFang TC',sans-serif;line-height:1.55}
+.wrap{max-width:1260px;margin:auto;padding:44px 32px 76px} .eyebrow{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.17em;color:var(--muted);text-transform:uppercase}
+h1{font-family:'Instrument Serif','Noto Serif TC',serif;font-size:clamp(31px,4vw,48px);font-weight:400;line-height:1.18;margin:10px 0 14px} .lead{max-width:920px;color:var(--muted);font-size:15px;margin:0 0 36px}
+.section-head{display:flex;align-items:baseline;gap:16px;margin-top:56px;margin-bottom:18px} .index{font:12px 'Geist Mono',monospace;color:var(--accent)} h2{font-size:21px;font-weight:600;margin:0} .section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.canvas{overflow-x:auto;border-top:1px solid rgba(45,49,66,.13);border-bottom:1px solid rgba(45,49,66,.13)} svg{display:block;width:100%;min-width:860px;height:auto} svg .name{font-family:'Geist','Noto Sans TC','PingFang TC',sans-serif;font-weight:600;fill:var(--ink)} svg .sub,svg .tag{font-family:'Geist Mono',monospace;fill:var(--muted);font-size:10px} svg .tag{font-size:8px;letter-spacing:.14em} svg .group-label{font:600 12px 'Geist','Noto Sans TC',sans-serif;fill:var(--muted)}
+details{margin:18px 0 0;border:1px solid rgba(45,49,66,.13);background:#fff;border-radius:6px} summary{cursor:pointer;padding:12px 16px;font-size:13px;font-weight:600} table{border-collapse:collapse;width:100%;font-size:12px} th,td{text-align:left;vertical-align:top;padding:9px 14px;border-top:1px solid rgba(45,49,66,.1)} th{color:var(--muted);font-weight:500} code{font-family:'Geist Mono',monospace;font-size:11px} .note{font-size:13px;color:var(--muted);margin-top:16px} .legend{display:flex;flex-wrap:wrap;gap:20px;border-top:1px solid rgba(45,49,66,.13);padding-top:15px;margin-top:18px;font-size:12px;color:var(--muted)} .swatch{display:inline-block;width:16px;height:2px;margin:0 7px 3px 0;background:var(--muted)} .swatch.accent{background:var(--accent)} .swatch.link{background:var(--link)} footer{border-top:1px solid rgba(45,49,66,.13);margin-top:64px;padding-top:18px;color:var(--muted);font:11px/1.7 'Geist Mono','Noto Sans TC',monospace}
+.physical-intro{border-top:2px solid var(--ink);margin-top:72px;padding-top:26px} .physical-intro h2{font-family:'Instrument Serif','Noto Serif TC',serif;font-size:30px;font-weight:400} .physical-intro p{max-width:930px;color:var(--muted);font-size:14px}
+svg .schema-col{font:12px 'Geist',sans-serif;fill:var(--ink)} svg .schema-type{font:9px 'Geist Mono',monospace;fill:var(--muted)} svg .schema-flag{font:8px 'Geist Mono',monospace;fill:var(--accent)}
+.table-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px} .table-detail-grid details{margin:0} .table-detail summary{display:flex;justify-content:space-between;gap:12px;align-items:center} .table-detail summary span{font-size:11px;color:var(--muted);font-weight:400} .table-detail .table-scroll{overflow-x:auto} .table-detail h4{font-size:12px;margin:16px 16px 6px} .schema-list{margin:0 16px 16px;padding-left:20px;color:var(--muted);font-size:11px;overflow-wrap:anywhere} .schema-list li{margin:5px 0} .schema-list code{font-size:10px}
+@media(max-width:700px){.wrap{padding:28px 18px 52px}.section-head{margin-top:42px}}
+@media(max-width:900px){.table-detail-grid{grid-template-columns:1fr}}
+</style></head><body><main class="wrap"><div class="eyebrow">EnglishLearning / current state / data-model</div><h1>目前資料模型</h1><p class="lead">以 migrations 中的 Up 結構整理；這是程式庫 schema 現況，不代表尚未部署的 migration 已套入正式資料庫。</p><section><div class="section-head"><span class="index">01</span><div><h2>教材與分類</h2><p>7 張表；文章是段落、處理工作與標籤關聯的中心。</p></div></div><div class="canvas"><svg viewBox="0 0 1120 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="er-core-title er-core-desc">
+<title id="er-core-title">教材、分類與處理工作</title>
+<desc id="er-core-desc">users、categories、articles、paragraphs、jobs、tags 和 article_tags 的主要外鍵關係。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M158,140 H247 Q255,140 255,148 V216 Q255,224 263,224 H352" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M446,140 V188" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M540,224 H640" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M734,140 H863 Q871,140 871,148 V180 Q871,188 879,188 H1008" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M828,224 H928" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M734,260 V300" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M540,240 H582 Q590,240 590,248 V316 Q590,324 598,324 H640" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<g class="node"><rect x="64" y="68" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="64" y="68" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="76" y="85" class="tag">TABLE</text>
+<text x="76" y="107" class="name" font-size="13">users</text>
+<text x="76" y="126" class="sub">id · email · role</text></g>
+<g class="node"><rect x="352" y="68" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="352" y="68" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="364" y="85" class="tag">TABLE</text>
+<text x="364" y="107" class="name" font-size="13">categories</text>
+<text x="364" y="126" class="sub">id · parent_id</text></g>
+<g class="node"><rect x="640" y="68" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="640" y="68" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="652" y="85" class="tag">TABLE</text>
+<text x="652" y="107" class="name" font-size="13">tags</text>
+<text x="652" y="126" class="sub">id · kind · label</text></g>
+<g class="node"><rect x="352" y="188" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="352" y="188" width="188" height="72" rx="6" fill="#fff3ed" stroke="#eb6c36"/>
+<text x="364" y="205" class="tag">TABLE</text>
+<text x="364" y="227" class="name" font-size="13">articles</text>
+<text x="364" y="246" class="sub">id · category_id · created_by</text></g>
+<g class="node"><rect x="640" y="188" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="640" y="188" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="652" y="205" class="tag">TABLE</text>
+<text x="652" y="227" class="name" font-size="13">paragraphs</text>
+<text x="652" y="246" class="sub">id · article_id · idx</text></g>
+<g class="node"><rect x="928" y="188" width="160" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="928" y="188" width="160" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="940" y="205" class="tag">JOIN</text>
+<text x="940" y="227" class="name" font-size="13">article_tags</text>
+<text x="940" y="246" class="sub">article_id · tag_id</text></g>
+<g class="node"><rect x="640" y="300" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="640" y="300" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="652" y="317" class="tag">TABLE</text>
+<text x="652" y="339" class="name" font-size="13">jobs</text>
+<text x="652" y="358" class="sub">article_id · paragraph_id</text></g>
+<line x1="32" y1="372" x2="1088" y2="372" stroke="rgba(45,49,66,.12)"/>
+<text x="32" y="395" class="sub">線條為主要 FK 走向；完整 FK、複合 FK 與無 FK 的邏輯關聯見下方清單</text>
+</svg></div><details><summary>展開外鍵／關聯清單（8 筆）</summary><table><thead><tr><th>來源欄位</th><th>目標／說明</th></tr></thead><tbody><tr><td><code>categories.parent_id</code></td><td>categories.id（自我參照，刪除母分類會連帶刪子分類）</td></tr><tr><td><code>articles.category_id</code></td><td>categories.id；ON DELETE SET NULL</td></tr><tr><td><code>articles.created_by</code></td><td>users.id</td></tr><tr><td><code>paragraphs.article_id</code></td><td>articles.id；ON DELETE CASCADE</td></tr><tr><td><code>jobs.article_id</code></td><td>articles.id；ON DELETE CASCADE</td></tr><tr><td><code>jobs.paragraph_id</code></td><td>paragraphs.id；ON DELETE CASCADE</td></tr><tr><td><code>article_tags.article_id</code></td><td>articles.id；複合主鍵一部分</td></tr><tr><td><code>article_tags.tag_id</code></td><td>tags.id；複合主鍵一部分</td></tr></tbody></table></details></section><section><div class="section-head"><span class="index">02</span><div><h2>單字與收藏</h2><p>4 張本群組表；users、articles、paragraphs 在圖中重複作為參照。</p></div></div><div class="canvas"><svg viewBox="0 0 1120 388" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="er-vocab-title er-vocab-desc">
+<title id="er-vocab-title">共用單字與個人收藏</title>
+<desc id="er-vocab-desc">words 和 word_explanations 保存共用內容；vocabulary_items 與 vocabulary_sources 保存主動收藏及來源快照。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M158,136 V224" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M446,136 V224" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M828,100 H928" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M734,136 V224" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M928,116 H886 Q878,116 878,124 V240 Q878,248 870,248 H828" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<g class="node"><rect x="64" y="64" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="64" y="64" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="76" y="81" class="tag">REF</text>
+<text x="76" y="103" class="name" font-size="13">users</text>
+<text x="76" y="122" class="sub">id · role</text></g>
+<g class="node"><rect x="352" y="64" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="352" y="64" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="364" y="81" class="tag">TABLE</text>
+<text x="364" y="103" class="name" font-size="13">words</text>
+<text x="364" y="122" class="sub">id · normalized_word</text></g>
+<g class="node"><rect x="640" y="64" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="640" y="64" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="652" y="81" class="tag">REF</text>
+<text x="652" y="103" class="name" font-size="13">articles</text>
+<text x="652" y="122" class="sub">id · title</text></g>
+<g class="node"><rect x="928" y="64" width="160" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="928" y="64" width="160" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="940" y="81" class="tag">REF</text>
+<text x="940" y="103" class="name" font-size="13">paragraphs</text>
+<text x="940" y="122" class="sub">id · article_id</text></g>
+<g class="node"><rect x="64" y="224" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="64" y="224" width="188" height="72" rx="6" fill="#fff3ed" stroke="#eb6c36"/>
+<text x="76" y="241" class="tag">TABLE</text>
+<text x="76" y="263" class="name" font-size="13">vocabulary_items</text>
+<text x="76" y="282" class="sub">user_id · word · status</text></g>
+<g class="node"><rect x="352" y="224" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="352" y="224" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="364" y="241" class="tag">TABLE</text>
+<text x="364" y="263" class="name" font-size="13">word_explanations</text>
+<text x="364" y="282" class="sub">word_id · article_id</text></g>
+<g class="node"><rect x="640" y="224" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="640" y="224" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="652" y="241" class="tag">TABLE</text>
+<text x="652" y="263" class="name" font-size="13">vocabulary_sources</text>
+<text x="652" y="282" class="sub">item_id · source snapshot</text></g>
+<line x1="32" y1="340" x2="1088" y2="340" stroke="rgba(45,49,66,.12)"/>
+<text x="32" y="363" class="sub">線條為主要 FK 走向；完整 FK、複合 FK 與無 FK 的邏輯關聯見下方清單</text>
+</svg></div><details><summary>展開外鍵／關聯清單（8 筆）</summary><table><thead><tr><th>來源欄位</th><th>目標／說明</th></tr></thead><tbody><tr><td><code>word_explanations.word_id</code></td><td>words.id；同字可有多篇語境解釋</td></tr><tr><td><code>word_explanations.article_id</code></td><td>articles.id</td></tr><tr><td><code>word_explanations.paragraph_id</code></td><td>paragraphs.id；可為 NULL</td></tr><tr><td><code>vocabulary_items.user_id</code></td><td>users.id；UNIQUE(user_id, word)</td></tr><tr><td><code>vocabulary_sources.item_id</code></td><td>vocabulary_items.id；ON DELETE CASCADE</td></tr><tr><td><code>vocabulary_sources.article_id</code></td><td>articles.id；文章刪除時 SET NULL，保留來源快照</td></tr><tr><td><code>vocabulary_sources.paragraph_id</code></td><td>paragraphs.id；段落刪除時 SET NULL，保留來源快照</td></tr><tr><td><code>vocabulary_items.word → words.normalized_word</code></td><td>文字對應，沒有資料庫 FK；不可當作實線外鍵</td></tr></tbody></table></details></section><section><div class="section-head"><span class="index">03</span><div><h2>插圖版本與內容</h2><p>版本、發布指標、槽位、候選圖與估價；跨圖表以 REF 標示。</p></div></div><div class="canvas"><svg viewBox="0 0 1120 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="er-visual-title er-visual-desc">
+<title id="er-visual-title">插圖版本、槽位與候選圖</title>
+<desc id="er-visual-desc">文章可有多個視覺版本，發布指標選定版本；每個槽位可有多張候選圖。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M252,104 H294 Q302,104 302,112 V224 Q302,232 310,232 H352" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M446,140 V196" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M540,232 H640" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M828,232 H928" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M734,268 V308" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M540,212 H642 Q650,212 650,204 V112 Q650,104 658,104 H760" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<g class="node"><rect x="64" y="68" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="64" y="68" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="76" y="85" class="tag">REF</text>
+<text x="76" y="107" class="name" font-size="13">articles</text>
+<text x="76" y="126" class="sub">id · title</text></g>
+<g class="node"><rect x="352" y="68" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="352" y="68" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="364" y="85" class="tag">TABLE</text>
+<text x="364" y="107" class="name" font-size="13">illustration_estimates</text>
+<text x="364" y="126" class="sub">id · consumed_by_run_id</text></g>
+<g class="node"><rect x="760" y="68" width="280" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="760" y="68" width="280" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="772" y="85" class="tag">TABLE</text>
+<text x="772" y="107" class="name" font-size="13">article_visual_publications</text>
+<text x="772" y="126" class="sub">article_id · run_id</text></g>
+<g class="node"><rect x="352" y="196" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="352" y="196" width="188" height="72" rx="6" fill="#fff3ed" stroke="#eb6c36"/>
+<text x="364" y="213" class="tag">TABLE</text>
+<text x="364" y="235" class="name" font-size="13">article_visual_runs</text>
+<text x="364" y="254" class="sub">id · article_id · revision</text></g>
+<g class="node"><rect x="640" y="196" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="640" y="196" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="652" y="213" class="tag">TABLE</text>
+<text x="652" y="235" class="name" font-size="13">illustration_slots</text>
+<text x="652" y="254" class="sub">id · run_id · paragraph_id</text></g>
+<g class="node"><rect x="928" y="196" width="160" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="928" y="196" width="160" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="940" y="213" class="tag">TABLE</text>
+<text x="940" y="235" class="name" font-size="13">illustration_candidates</text>
+<text x="940" y="254" class="sub">id · slot_id · asset_id</text></g>
+<g class="node"><rect x="640" y="308" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="640" y="308" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="652" y="325" class="tag">REF</text>
+<text x="652" y="347" class="name" font-size="13">paragraphs</text>
+<text x="652" y="366" class="sub">id · article_id</text></g>
+<line x1="32" y1="372" x2="1088" y2="372" stroke="rgba(45,49,66,.12)"/>
+<text x="32" y="395" class="sub">線條為主要 FK 走向；完整 FK、複合 FK 與無 FK 的邏輯關聯見下方清單</text>
+</svg></div><details><summary>展開外鍵／關聯清單（12 筆）</summary><table><thead><tr><th>來源欄位</th><th>目標／說明</th></tr></thead><tbody><tr><td><code>illustration_estimates.article_id / created_by</code></td><td>articles.id / users.id</td></tr><tr><td><code>illustration_estimates.consumed_by_run_id</code></td><td>article_visual_runs.id；估價與版本間的反向 FK</td></tr><tr><td><code>article_visual_runs.article_id / created_by</code></td><td>articles.id / users.id</td></tr><tr><td><code>article_visual_runs.parent_run_id</code></td><td>article_visual_runs.id（自我參照）</td></tr><tr><td><code>article_visual_runs.estimate_id</code></td><td>illustration_estimates.id；與 consumed_by_run_id 形成雙向 FK</td></tr><tr><td><code>article_visual_publications.article_id</code></td><td>articles.id；同時為 PK</td></tr><tr><td><code>article_visual_publications.(article_id,run_id)</code></td><td>article_visual_runs.(article_id,id)；複合 FK 保證發布版本屬同篇</td></tr><tr><td><code>illustration_slots.run_id / paragraph_id</code></td><td>article_visual_runs.id / paragraphs.id</td></tr><tr><td><code>illustration_slots.(id,selected_candidate_id)</code></td><td>illustration_candidates.(slot_id,id)；可延遲複合 FK</td></tr><tr><td><code>illustration_candidates.slot_id</code></td><td>illustration_slots.id；候選圖歸屬</td></tr><tr><td><code>illustration_candidates.derived_from_candidate_id</code></td><td>illustration_candidates.id（自我參照）</td></tr><tr><td><code>illustration_candidates.reviewed_by</code></td><td>users.id</td></tr></tbody></table></details></section><section><div class="section-head"><span class="index">04</span><div><h2>插圖資產與工作</h2><p>候選圖引用資產；工作與嘗試紀錄引用版本／槽位／候選圖。</p></div></div><div class="canvas"><svg viewBox="0 0 1120 348" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="er-ops-title er-ops-desc">
+<title id="er-ops-title">插圖資產、工作與稽核</title>
+<desc id="er-ops-desc">圖片資產和工作紀錄透過版本、槽位與候選圖相連；清理和心跳表獨立。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M236,100 H274 Q282,100 282,108 V220 Q282,228 290,228 H328" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M422,136 V192" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M516,228 H608" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M702,136 V192" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M796,100 H888" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<path d="M982,136 V192" fill="none" stroke="#4f5d75" stroke-width="1.3"/>
+<g class="node"><rect x="48" y="64" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="64" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="60" y="81" class="tag">REF</text>
+<text x="60" y="103" class="name" font-size="13">article_visual_runs</text>
+<text x="60" y="122" class="sub">id · article_id</text></g>
+<g class="node"><rect x="328" y="64" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="328" y="64" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="340" y="81" class="tag">REF</text>
+<text x="340" y="103" class="name" font-size="13">illustration_slots</text>
+<text x="340" y="122" class="sub">id · run_id</text></g>
+<g class="node"><rect x="608" y="64" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="608" y="64" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="620" y="81" class="tag">REF</text>
+<text x="620" y="103" class="name" font-size="13">illustration_candidates</text>
+<text x="620" y="122" class="sub">id · slot_id</text></g>
+<g class="node"><rect x="888" y="64" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="888" y="64" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="900" y="81" class="tag">TABLE</text>
+<text x="900" y="103" class="name" font-size="13">illustration_assets</text>
+<text x="900" y="122" class="sub">id · metadata</text></g>
+<g class="node"><rect x="328" y="192" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="328" y="192" width="188" height="72" rx="6" fill="#fff3ed" stroke="#eb6c36"/>
+<text x="340" y="209" class="tag">TABLE</text>
+<text x="340" y="231" class="name" font-size="13">illustration_jobs</text>
+<text x="340" y="250" class="sub">id · run_id · slot_id</text></g>
+<g class="node"><rect x="608" y="192" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="608" y="192" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="620" y="209" class="tag">TABLE</text>
+<text x="620" y="231" class="name" font-size="13">illustration_attempts</text>
+<text x="620" y="250" class="sub">id · job_id</text></g>
+<g class="node"><rect x="888" y="192" width="188" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="888" y="192" width="188" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="900" y="209" class="tag">TABLE</text>
+<text x="900" y="231" class="name" font-size="13">illustration_asset_files</text>
+<text x="900" y="250" class="sub">asset_id · object_key</text></g>
+<line x1="32" y1="300" x2="1088" y2="300" stroke="rgba(45,49,66,.12)"/>
+<text x="32" y="323" class="sub">線條為主要 FK 走向；完整 FK、複合 FK 與無 FK 的邏輯關聯見下方清單</text>
+</svg></div><details><summary>展開外鍵／關聯清單（8 筆）</summary><table><thead><tr><th>來源欄位</th><th>目標／說明</th></tr></thead><tbody><tr><td><code>illustration_asset_files.asset_id</code></td><td>illustration_assets.id；一份資產可有多個檔案變體</td></tr><tr><td><code>illustration_candidates.asset_id</code></td><td>illustration_assets.id；候選圖可引用資產</td></tr><tr><td><code>illustration_jobs.run_id / slot_id / candidate_id</code></td><td>article_visual_runs.id / illustration_slots.id / illustration_candidates.id</td></tr><tr><td><code>illustration_attempts.run_id / job_id / candidate_id</code></td><td>article_visual_runs.id / illustration_jobs.id / illustration_candidates.id</td></tr><tr><td><code>illustration_audit_events.run_id / actor_user_id</code></td><td>article_visual_runs.id / users.id</td></tr><tr><td><code>illustration_audit_events.slot_id / candidate_id</code></td><td>保留識別值，沒有資料庫 FK</td></tr><tr><td><code>illustration_cleanup_jobs.object_key</code></td><td>待刪檔路徑，沒有指向 illustration_asset_files 的 FK</td></tr><tr><td><code>image_worker_heartbeats</code></td><td>獨立狀態表，沒有 FK</td></tr></tbody></table></details></section><section><div class="section-head"><span class="index">05</span><div><h2>設定與維護</h2><p>列出沒有 FK 的獨立表，並補足稽核事件的實際外鍵。</p></div></div><div class="canvas"><svg viewBox="0 0 1120 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="er-aux-title er-aux-desc">
+<title id="er-aux-title">設定與維護表</title>
+<desc id="er-aux-desc">設定、稽核、圖片 worker 心跳和檔案清理工作表的外鍵狀態。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<g class="node"><rect x="72" y="84" width="224" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="72" y="84" width="224" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="84" y="101" class="tag">TABLE</text>
+<text x="84" y="123" class="name" font-size="13">generation_settings</text>
+<text x="84" y="142" class="sub">id=1 · settings · version</text></g>
+<g class="node"><rect x="344" y="84" width="224" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="344" y="84" width="224" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="356" y="101" class="tag">TABLE</text>
+<text x="356" y="123" class="name" font-size="13">illustration_audit_events</text>
+<text x="356" y="142" class="sub">run_id · actor_user_id</text></g>
+<g class="node"><rect x="616" y="84" width="224" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="616" y="84" width="224" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="628" y="101" class="tag">TABLE</text>
+<text x="628" y="123" class="name" font-size="13">image_worker_heartbeats</text>
+<text x="628" y="142" class="sub">id · seen_at</text></g>
+<g class="node"><rect x="888" y="84" width="224" height="72" rx="6" fill="#f5f5f5"/>
+<rect x="888" y="84" width="224" height="72" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<text x="900" y="101" class="tag">TABLE</text>
+<text x="900" y="123" class="name" font-size="13">illustration_cleanup_jobs</text>
+<text x="900" y="142" class="sub">object_key · attempts</text></g>
+<line x1="32" y1="188" x2="1088" y2="188" stroke="rgba(45,49,66,.12)"/>
+<text x="32" y="211" class="sub">線條為主要 FK 走向；完整 FK、複合 FK 與無 FK 的邏輯關聯見下方清單</text>
+</svg></div><details><summary>展開外鍵／關聯清單（4 筆）</summary><table><thead><tr><th>來源欄位</th><th>目標／說明</th></tr></thead><tbody><tr><td><code>generation_settings</code></td><td>單筆設定表；settings JSONB、version；沒有 FK</td></tr><tr><td><code>illustration_audit_events.run_id / actor_user_id</code></td><td>article_visual_runs.id / users.id</td></tr><tr><td><code>image_worker_heartbeats</code></td><td>圖片 worker 心跳表，沒有 FK</td></tr><tr><td><code>illustration_cleanup_jobs</code></td><td>待清理 object_key 佇列，沒有 FK</td></tr></tbody></table></details></section><p class="note">共 24 張相異應用資料表。標為 REF 的卡片是跨群組重複出現的表，不另計入總數。圖中直線／折線僅呈現主要關係；展開每節清單可核對全部實際 FK 與明確沒有 FK 的文字關聯。資料庫 migration 紀錄表不計入。</p><div class="physical-intro"><h2>每張表的實體 schema</h2><p>從隔離測試庫套用所有 migrations 後擷取，共 24 張表、217 個欄位。圖中每表最多顯示 8 欄，優先保留 PK／FK；展開表名可查閱完整欄位、SQL 型別、預設值、CHECK、UNIQUE、外鍵動作及索引。</p></div><section><div class="section-head"><span class="index">S01</span><div><h2>身分、分類與標籤</h2><p>5 張表；完整欄位及約束於圖下展開。</p></div></div><div class="canvas"><svg viewBox="0 0 1160 972" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="physical-1-title physical-1-desc">
+<title id="physical-1-title">身分、分類與標籤</title>
+<desc id="physical-1-desc">身分、分類與標籤的實體資料表欄位、SQL 型別與主要欄位層級外鍵；完整欄位與約束見下方展開區。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M656,432 H588 Q580,432 580,424 V416 Q580,408 572,408 H504" fill="none" stroke="#eb6c36" stroke-width="1.3" marker-end="url(#arrow-accent)"/>
+<rect x="590" y="404" width="64" height="12" rx="2" fill="#f5f5f5"/>
+<text x="592" y="413" class="schema-type">CASCADE</text>
+<g class="schema-table"><rect x="48" y="56" width="456" height="188" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="56" width="456" height="188" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="100" x2="504" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="90" class="name" font-size="12">users</text>
+<text x="60" y="116" class="schema-col">id</text>
+<text x="390" y="116" class="schema-flag">PK</text>
+<text x="492" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="140" class="schema-col">email</text>
+<text x="390" y="140" class="schema-flag">UQ NN</text>
+<text x="492" y="140" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="164" class="schema-col">name</text>
+<text x="390" y="164" class="schema-flag"></text>
+<text x="492" y="164" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="188" class="schema-col">role</text>
+<text x="390" y="188" class="schema-flag">NN</text>
+<text x="492" y="188" class="schema-type" text-anchor="end">user_role</text>
+<text x="60" y="212" class="schema-col">created_at</text>
+<text x="390" y="212" class="schema-flag">NN</text>
+<text x="492" y="212" class="schema-type" text-anchor="end">timestamptz</text>
+<rect x="49" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="236" class="schema-col">last_seen_at</text>
+<text x="390" y="236" class="schema-flag"></text>
+<text x="492" y="236" class="schema-type" text-anchor="end">timestamptz</text></g>
+<g class="schema-table"><rect x="656" y="56" width="456" height="140" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="56" width="456" height="140" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="100" x2="1112" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="90" class="name" font-size="12">categories</text>
+<text x="668" y="116" class="schema-col">id</text>
+<text x="998" y="116" class="schema-flag">PK</text>
+<text x="1100" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="140" class="schema-col">parent_id</text>
+<text x="998" y="140" class="schema-flag">FK UQ</text>
+<text x="1100" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="164" class="schema-col">label</text>
+<text x="998" y="164" class="schema-flag">UQ NN</text>
+<text x="1100" y="164" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="188" class="schema-col">sort_order</text>
+<text x="998" y="188" class="schema-flag">NN</text>
+<text x="1100" y="188" class="schema-type" text-anchor="end">smallint</text></g>
+<g class="schema-table"><rect x="48" y="352" width="456" height="116" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="352" width="456" height="116" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="396" x2="504" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="386" class="name" font-size="12">tags</text>
+<text x="60" y="412" class="schema-col">id</text>
+<text x="390" y="412" class="schema-flag">PK</text>
+<text x="492" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="436" class="schema-col">kind</text>
+<text x="390" y="436" class="schema-flag">UQ NN</text>
+<text x="492" y="436" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="460" class="schema-col">label</text>
+<text x="390" y="460" class="schema-flag">UQ NN</text>
+<text x="492" y="460" class="schema-type" text-anchor="end">text</text></g>
+<g class="schema-table"><rect x="656" y="352" width="456" height="92" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="352" width="456" height="92" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="396" x2="1112" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="386" class="name" font-size="12">article_tags</text>
+<text x="668" y="412" class="schema-col">article_id</text>
+<text x="998" y="412" class="schema-flag">FK PK</text>
+<text x="1100" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="436" class="schema-col">tag_id</text>
+<text x="998" y="436" class="schema-flag">FK PK</text>
+<text x="1100" y="436" class="schema-type" text-anchor="end">bigint</text></g>
+<g class="schema-table"><rect x="48" y="648" width="456" height="140" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="648" width="456" height="140" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="648" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="686" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="692" x2="504" y2="692" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="665" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="682" class="name" font-size="12">generation_settings</text>
+<text x="60" y="708" class="schema-col">id</text>
+<text x="390" y="708" class="schema-flag">PK</text>
+<text x="492" y="708" class="schema-type" text-anchor="end">integer</text>
+<rect x="49" y="716" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="732" class="schema-col">settings</text>
+<text x="390" y="732" class="schema-flag">NN</text>
+<text x="492" y="732" class="schema-type" text-anchor="end">jsonb</text>
+<text x="60" y="756" class="schema-col">version</text>
+<text x="390" y="756" class="schema-flag">NN</text>
+<text x="492" y="756" class="schema-type" text-anchor="end">integer</text>
+<rect x="49" y="764" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="780" class="schema-col">updated_at</text>
+<text x="390" y="780" class="schema-flag">NN</text>
+<text x="492" y="780" class="schema-type" text-anchor="end">timestamptz</text></g>
+<line x1="32" y1="944" x2="1128" y2="944" stroke="rgba(45,49,66,.12)"/>
+</svg></div></section><div class="table-detail-grid"><details class="table-detail" id="table-users"><summary><code>users</code><span>6 欄 · 2 約束 · 2 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>email</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>name</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>role</code></td><td><code>user_role</code></td><td>NOT NULL</td><td><code>&#x27;reader&#x27;::user_role</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>last_seen_at</code></td><td><code>timestamp with time zone</code></td><td></td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>users_pkey</code> · PRIMARY KEY (id)</li><li><code>users_email_key</code> · UNIQUE (email)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>users_email_key</code> · <code>CREATE UNIQUE INDEX users_email_key ON public.users USING btree (email)</code></li><li><code>users_pkey</code> · <code>CREATE UNIQUE INDEX users_pkey ON public.users USING btree (id)</code></li></ul></details><details class="table-detail" id="table-categories"><summary><code>categories</code><span>4 欄 · 3 約束 · 3 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>parent_id</code></td><td><code>bigint</code></td><td>FK, UQ</td><td><code>—</code></td></tr><tr><td><code>label</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>sort_order</code></td><td><code>smallint</code></td><td>NOT NULL</td><td><code>0</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>categories_parent_id_fkey</code> · FOREIGN KEY (parent_id) REFERENCES categories(id) ON DELETE CASCADE</li><li><code>categories_pkey</code> · PRIMARY KEY (id)</li><li><code>categories_parent_id_label_key</code> · UNIQUE (parent_id, label)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>categories_parent_id_label_key</code> · <code>CREATE UNIQUE INDEX categories_parent_id_label_key ON public.categories USING btree (parent_id, label)</code></li><li><code>categories_pkey</code> · <code>CREATE UNIQUE INDEX categories_pkey ON public.categories USING btree (id)</code></li><li><code>idx_categories_parent_id</code> · <code>CREATE INDEX idx_categories_parent_id ON public.categories USING btree (parent_id)</code></li></ul></details><details class="table-detail" id="table-tags"><summary><code>tags</code><span>3 欄 · 2 約束 · 3 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>kind</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>label</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>tags_pkey</code> · PRIMARY KEY (id)</li><li><code>tags_kind_label_key</code> · UNIQUE (kind, label)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>idx_tags_kind</code> · <code>CREATE INDEX idx_tags_kind ON public.tags USING btree (kind)</code></li><li><code>tags_kind_label_key</code> · <code>CREATE UNIQUE INDEX tags_kind_label_key ON public.tags USING btree (kind, label)</code></li><li><code>tags_pkey</code> · <code>CREATE UNIQUE INDEX tags_pkey ON public.tags USING btree (id)</code></li></ul></details><details class="table-detail" id="table-article_tags"><summary><code>article_tags</code><span>2 欄 · 3 約束 · 2 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, PK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>tag_id</code></td><td><code>bigint</code></td><td>FK, PK, NOT NULL</td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>article_tags_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE</li><li><code>article_tags_tag_id_fkey</code> · FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE</li><li><code>article_tags_pkey</code> · PRIMARY KEY (article_id, tag_id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>article_tags_pkey</code> · <code>CREATE UNIQUE INDEX article_tags_pkey ON public.article_tags USING btree (article_id, tag_id)</code></li><li><code>idx_article_tags_tag_id</code> · <code>CREATE INDEX idx_article_tags_tag_id ON public.article_tags USING btree (tag_id)</code></li></ul></details><details class="table-detail" id="table-generation_settings"><summary><code>generation_settings</code><span>4 欄 · 3 約束 · 1 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>integer</code></td><td>PK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>settings</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>version</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>1</code></td></tr><tr><td><code>updated_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>generation_settings_id_check</code> · CHECK (id = 1)</li><li><code>generation_settings_version_check</code> · CHECK (version &gt; 0)</li><li><code>generation_settings_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>generation_settings_pkey</code> · <code>CREATE UNIQUE INDEX generation_settings_pkey ON public.generation_settings USING btree (id)</code></li></ul></details></div><section><div class="section-head"><span class="index">S02</span><div><h2>文章與處理工作</h2><p>3 張表；完整欄位及約束於圖下展開。</p></div></div><div class="canvas"><svg viewBox="0 0 1160 676" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="physical-2-title physical-2-desc">
+<title id="physical-2-title">文章與處理工作</title>
+<desc id="physical-2-desc">文章與處理工作的實體資料表欄位、SQL 型別與主要欄位層級外鍵；完整欄位與約束見下方展開區。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M656,136 H588 Q580,136 580,128 V120 Q580,112 572,112 H504" fill="none" stroke="#eb6c36" stroke-width="1.3" marker-end="url(#arrow-accent)"/>
+<rect x="590" y="108" width="64" height="12" rx="2" fill="#f5f5f5"/>
+<text x="592" y="117" class="schema-type">CASCADE</text>
+<g class="schema-table"><rect x="48" y="56" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="56" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="100" x2="504" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="90" class="name" font-size="12">articles</text>
+<text x="60" y="116" class="schema-col">id</text>
+<text x="390" y="116" class="schema-flag">PK</text>
+<text x="492" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="140" class="schema-col">category_id</text>
+<text x="390" y="140" class="schema-flag">FK</text>
+<text x="492" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="164" class="schema-col">created_by</text>
+<text x="390" y="164" class="schema-flag">FK</text>
+<text x="492" y="164" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="188" class="schema-col">title</text>
+<text x="390" y="188" class="schema-flag">NN</text>
+<text x="492" y="188" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="212" class="schema-col">material_type</text>
+<text x="390" y="212" class="schema-flag">NN</text>
+<text x="492" y="212" class="schema-type" text-anchor="end">material_type</text>
+<rect x="49" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="236" class="schema-col">grade</text>
+<text x="390" y="236" class="schema-flag"></text>
+<text x="492" y="236" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="260" class="schema-col">unit</text>
+<text x="390" y="260" class="schema-flag"></text>
+<text x="492" y="260" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="284" class="schema-col">week</text>
+<text x="390" y="284" class="schema-flag"></text>
+<text x="492" y="284" class="schema-type" text-anchor="end">smallint</text>
+<text x="60" y="308" class="schema-type">+ 5 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="656" y="56" width="456" height="236" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="56" width="456" height="236" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="100" x2="1112" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="90" class="name" font-size="12">paragraphs</text>
+<text x="668" y="116" class="schema-col">id</text>
+<text x="998" y="116" class="schema-flag">PK</text>
+<text x="1100" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="140" class="schema-col">article_id</text>
+<text x="998" y="140" class="schema-flag">FK UQ NN</text>
+<text x="1100" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="164" class="schema-col">idx</text>
+<text x="998" y="164" class="schema-flag">UQ NN</text>
+<text x="1100" y="164" class="schema-type" text-anchor="end">integer</text>
+<rect x="657" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="188" class="schema-col">text</text>
+<text x="998" y="188" class="schema-flag">NN</text>
+<text x="1100" y="188" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="212" class="schema-col">translation</text>
+<text x="998" y="212" class="schema-flag"></text>
+<text x="1100" y="212" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="236" class="schema-col">en_audio_path</text>
+<text x="998" y="236" class="schema-flag"></text>
+<text x="1100" y="236" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="260" class="schema-col">zh_audio_path</text>
+<text x="998" y="260" class="schema-flag"></text>
+<text x="1100" y="260" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="284" class="schema-col">status</text>
+<text x="998" y="284" class="schema-flag">NN</text>
+<text x="1100" y="284" class="schema-type" text-anchor="end">processing_status</text></g>
+<g class="schema-table"><rect x="48" y="352" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="352" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="396" x2="504" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="386" class="name" font-size="12">jobs</text>
+<text x="60" y="412" class="schema-col">id</text>
+<text x="390" y="412" class="schema-flag">PK</text>
+<text x="492" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="436" class="schema-col">article_id</text>
+<text x="390" y="436" class="schema-flag">FK NN</text>
+<text x="492" y="436" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="460" class="schema-col">paragraph_id</text>
+<text x="390" y="460" class="schema-flag">FK NN</text>
+<text x="492" y="460" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="468" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="484" class="schema-col">status</text>
+<text x="390" y="484" class="schema-flag">NN</text>
+<text x="492" y="484" class="schema-type" text-anchor="end">processing_status</text>
+<text x="60" y="508" class="schema-col">attempts</text>
+<text x="390" y="508" class="schema-flag">NN</text>
+<text x="492" y="508" class="schema-type" text-anchor="end">integer</text>
+<rect x="49" y="516" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="532" class="schema-col">error</text>
+<text x="390" y="532" class="schema-flag"></text>
+<text x="492" y="532" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="556" class="schema-col">created_at</text>
+<text x="390" y="556" class="schema-flag">NN</text>
+<text x="492" y="556" class="schema-type" text-anchor="end">timestamptz</text>
+<rect x="49" y="564" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="580" class="schema-col">updated_at</text>
+<text x="390" y="580" class="schema-flag">NN</text>
+<text x="492" y="580" class="schema-type" text-anchor="end">timestamptz</text>
+<text x="60" y="604" class="schema-type">+ 2 個欄位；下方可展開完整 schema</text></g>
+<line x1="32" y1="648" x2="1128" y2="648" stroke="rgba(45,49,66,.12)"/>
+</svg></div></section><div class="table-detail-grid"><details class="table-detail" id="table-articles"><summary><code>articles</code><span>13 欄 · 3 約束 · 3 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>title</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>material_type</code></td><td><code>material_type</code></td><td>NOT NULL</td><td><code>&#x27;school&#x27;::material_type</code></td></tr><tr><td><code>grade</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>unit</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>week</code></td><td><code>smallint</code></td><td></td><td><code>—</code></td></tr><tr><td><code>page</code></td><td><code>smallint</code></td><td></td><td><code>—</code></td></tr><tr><td><code>category_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>level</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>status</code></td><td><code>processing_status</code></td><td>NOT NULL</td><td><code>&#x27;pending&#x27;::processing_status</code></td></tr><tr><td><code>created_by</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>updated_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>articles_category_id_fkey</code> · FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL</li><li><code>articles_created_by_fkey</code> · FOREIGN KEY (created_by) REFERENCES users(id)</li><li><code>articles_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>articles_pkey</code> · <code>CREATE UNIQUE INDEX articles_pkey ON public.articles USING btree (id)</code></li><li><code>idx_articles_category_id</code> · <code>CREATE INDEX idx_articles_category_id ON public.articles USING btree (category_id)</code></li><li><code>idx_articles_material_type</code> · <code>CREATE INDEX idx_articles_material_type ON public.articles USING btree (material_type)</code></li></ul></details><details class="table-detail" id="table-paragraphs"><summary><code>paragraphs</code><span>8 欄 · 3 約束 · 3 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>idx</code></td><td><code>integer</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>text</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>translation</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>en_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>zh_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>status</code></td><td><code>processing_status</code></td><td>NOT NULL</td><td><code>&#x27;pending&#x27;::processing_status</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>paragraphs_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE</li><li><code>paragraphs_pkey</code> · PRIMARY KEY (id)</li><li><code>paragraphs_article_id_idx_key</code> · UNIQUE (article_id, idx)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>idx_paragraphs_article_id</code> · <code>CREATE INDEX idx_paragraphs_article_id ON public.paragraphs USING btree (article_id)</code></li><li><code>paragraphs_article_id_idx_key</code> · <code>CREATE UNIQUE INDEX paragraphs_article_id_idx_key ON public.paragraphs USING btree (article_id, idx)</code></li><li><code>paragraphs_pkey</code> · <code>CREATE UNIQUE INDEX paragraphs_pkey ON public.paragraphs USING btree (id)</code></li></ul></details><details class="table-detail" id="table-jobs"><summary><code>jobs</code><span>10 欄 · 3 約束 · 3 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>paragraph_id</code></td><td><code>bigint</code></td><td>FK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>status</code></td><td><code>processing_status</code></td><td>NOT NULL</td><td><code>&#x27;pending&#x27;::processing_status</code></td></tr><tr><td><code>attempts</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>0</code></td></tr><tr><td><code>error</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>updated_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>available_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>generation_snapshot</code></td><td><code>jsonb</code></td><td></td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>jobs_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE</li><li><code>jobs_paragraph_id_fkey</code> · FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE CASCADE</li><li><code>jobs_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>idx_jobs_claim</code> · <code>CREATE INDEX idx_jobs_claim ON public.jobs USING btree (status, available_at, id)</code></li><li><code>idx_jobs_status</code> · <code>CREATE INDEX idx_jobs_status ON public.jobs USING btree (status)</code></li><li><code>jobs_pkey</code> · <code>CREATE UNIQUE INDEX jobs_pkey ON public.jobs USING btree (id)</code></li></ul></details></div><section><div class="section-head"><span class="index">S03</span><div><h2>單字與收藏</h2><p>4 張表；完整欄位及約束於圖下展開。</p></div></div><div class="canvas"><svg viewBox="0 0 1160 676" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="physical-3-title physical-3-desc">
+<title id="physical-3-title">單字與收藏</title>
+<desc id="physical-3-desc">單字與收藏的實體資料表欄位、SQL 型別與主要欄位層級外鍵；完整欄位與約束見下方展開區。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M656,136 H588 Q580,136 580,128 V120 Q580,112 572,112 H504" fill="none" stroke="#eb6c36" stroke-width="1.3" marker-end="url(#arrow-accent)"/>
+<rect x="590" y="108" width="64" height="12" rx="2" fill="#f5f5f5"/>
+<text x="592" y="117" class="schema-type">CASCADE</text>
+<path d="M656,432 H588 Q580,432 580,424 V416 Q580,408 572,408 H504" fill="none" stroke="#eb6c36" stroke-width="1.3" marker-end="url(#arrow-accent)"/>
+<rect x="590" y="404" width="64" height="12" rx="2" fill="#f5f5f5"/>
+<text x="592" y="413" class="schema-type">CASCADE</text>
+<g class="schema-table"><rect x="48" y="56" width="456" height="140" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="56" width="456" height="140" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="100" x2="504" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="90" class="name" font-size="12">words</text>
+<text x="60" y="116" class="schema-col">id</text>
+<text x="390" y="116" class="schema-flag">PK</text>
+<text x="492" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="140" class="schema-col">normalized_word</text>
+<text x="390" y="140" class="schema-flag">UQ NN</text>
+<text x="492" y="140" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="164" class="schema-col">en_audio_path</text>
+<text x="390" y="164" class="schema-flag"></text>
+<text x="492" y="164" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="188" class="schema-col">created_at</text>
+<text x="390" y="188" class="schema-flag">NN</text>
+<text x="492" y="188" class="schema-type" text-anchor="end">timestamptz</text></g>
+<g class="schema-table"><rect x="656" y="56" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="56" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="100" x2="1112" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="90" class="name" font-size="12">word_explanations</text>
+<text x="668" y="116" class="schema-col">id</text>
+<text x="998" y="116" class="schema-flag">PK</text>
+<text x="1100" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="140" class="schema-col">word_id</text>
+<text x="998" y="140" class="schema-flag">FK UQ NN</text>
+<text x="1100" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="164" class="schema-col">article_id</text>
+<text x="998" y="164" class="schema-flag">FK UQ NN</text>
+<text x="1100" y="164" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="188" class="schema-col">paragraph_id</text>
+<text x="998" y="188" class="schema-flag">FK</text>
+<text x="1100" y="188" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="212" class="schema-col">en_explanation</text>
+<text x="998" y="212" class="schema-flag"></text>
+<text x="1100" y="212" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="236" class="schema-col">en_explanation_audio_path</text>
+<text x="998" y="236" class="schema-flag"></text>
+<text x="1100" y="236" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="260" class="schema-col">en_example</text>
+<text x="998" y="260" class="schema-flag"></text>
+<text x="1100" y="260" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="284" class="schema-col">en_example_audio_path</text>
+<text x="998" y="284" class="schema-flag"></text>
+<text x="1100" y="284" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="308" class="schema-type">+ 8 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="48" y="352" width="456" height="164" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="352" width="456" height="164" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="396" x2="504" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="386" class="name" font-size="12">vocabulary_items</text>
+<text x="60" y="412" class="schema-col">id</text>
+<text x="390" y="412" class="schema-flag">PK</text>
+<text x="492" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="436" class="schema-col">user_id</text>
+<text x="390" y="436" class="schema-flag">FK UQ NN</text>
+<text x="492" y="436" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="460" class="schema-col">word</text>
+<text x="390" y="460" class="schema-flag">UQ NN</text>
+<text x="492" y="460" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="468" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="484" class="schema-col">status</text>
+<text x="390" y="484" class="schema-flag">NN</text>
+<text x="492" y="484" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="508" class="schema-col">saved_at</text>
+<text x="390" y="508" class="schema-flag">NN</text>
+<text x="492" y="508" class="schema-type" text-anchor="end">timestamptz</text></g>
+<g class="schema-table"><rect x="656" y="352" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="352" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="396" x2="1112" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="386" class="name" font-size="12">vocabulary_sources</text>
+<text x="668" y="412" class="schema-col">id</text>
+<text x="998" y="412" class="schema-flag">PK</text>
+<text x="1100" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="436" class="schema-col">item_id</text>
+<text x="998" y="436" class="schema-flag">FK UQ NN</text>
+<text x="1100" y="436" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="460" class="schema-col">article_id</text>
+<text x="998" y="460" class="schema-flag">FK UQ</text>
+<text x="1100" y="460" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="468" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="484" class="schema-col">paragraph_id</text>
+<text x="998" y="484" class="schema-flag">FK UQ</text>
+<text x="1100" y="484" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="508" class="schema-col">title</text>
+<text x="998" y="508" class="schema-flag">NN</text>
+<text x="1100" y="508" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="516" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="532" class="schema-col">text</text>
+<text x="998" y="532" class="schema-flag">NN</text>
+<text x="1100" y="532" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="556" class="schema-col">material_type</text>
+<text x="998" y="556" class="schema-flag">NN</text>
+<text x="1100" y="556" class="schema-type" text-anchor="end">material_type</text>
+<rect x="657" y="564" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="580" class="schema-col">grade</text>
+<text x="998" y="580" class="schema-flag"></text>
+<text x="1100" y="580" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="604" class="schema-type">+ 3 個欄位；下方可展開完整 schema</text></g>
+<line x1="32" y1="648" x2="1128" y2="648" stroke="rgba(45,49,66,.12)"/>
+</svg></div></section><div class="table-detail-grid"><details class="table-detail" id="table-words"><summary><code>words</code><span>4 欄 · 2 約束 · 2 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>normalized_word</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>en_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>words_pkey</code> · PRIMARY KEY (id)</li><li><code>words_normalized_word_key</code> · UNIQUE (normalized_word)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>words_normalized_word_key</code> · <code>CREATE UNIQUE INDEX words_normalized_word_key ON public.words USING btree (normalized_word)</code></li><li><code>words_pkey</code> · <code>CREATE UNIQUE INDEX words_pkey ON public.words USING btree (id)</code></li></ul></details><details class="table-detail" id="table-word_explanations"><summary><code>word_explanations</code><span>16 欄 · 5 約束 · 4 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>word_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>paragraph_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>en_explanation</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>en_explanation_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>en_example</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>en_example_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>zh_translation</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>zh_translation_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>zh_explanation</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>zh_explanation_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>zh_example</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>zh_example_audio_path</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>headword</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>word_explanations_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE</li><li><code>word_explanations_paragraph_id_fkey</code> · FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE SET NULL</li><li><code>word_explanations_word_id_fkey</code> · FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE</li><li><code>word_explanations_pkey</code> · PRIMARY KEY (id)</li><li><code>word_explanations_word_id_article_id_key</code> · UNIQUE (word_id, article_id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>idx_word_explanations_article_id</code> · <code>CREATE INDEX idx_word_explanations_article_id ON public.word_explanations USING btree (article_id)</code></li><li><code>idx_word_explanations_word_id</code> · <code>CREATE INDEX idx_word_explanations_word_id ON public.word_explanations USING btree (word_id, created_at)</code></li><li><code>word_explanations_pkey</code> · <code>CREATE UNIQUE INDEX word_explanations_pkey ON public.word_explanations USING btree (id)</code></li><li><code>word_explanations_word_id_article_id_key</code> · <code>CREATE UNIQUE INDEX word_explanations_word_id_article_id_key ON public.word_explanations USING btree (word_id, article_id)</code></li></ul></details><details class="table-detail" id="table-vocabulary_items"><summary><code>vocabulary_items</code><span>5 欄 · 5 約束 · 2 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>user_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>word</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>status</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>&#x27;active&#x27;::text</code></td></tr><tr><td><code>saved_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>vocabulary_items_status_check</code> · CHECK (status = ANY (ARRAY[&#x27;active&#x27;::text, &#x27;mastered&#x27;::text]))</li><li><code>vocabulary_items_word_check</code> · CHECK (length(word) &gt;= 1 AND length(word) &lt;= 200 AND word = lower(btrim(word)))</li><li><code>vocabulary_items_user_id_fkey</code> · FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE</li><li><code>vocabulary_items_pkey</code> · PRIMARY KEY (id)</li><li><code>vocabulary_items_user_id_word_key</code> · UNIQUE (user_id, word)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>vocabulary_items_pkey</code> · <code>CREATE UNIQUE INDEX vocabulary_items_pkey ON public.vocabulary_items USING btree (id)</code></li><li><code>vocabulary_items_user_id_word_key</code> · <code>CREATE UNIQUE INDEX vocabulary_items_user_id_word_key ON public.vocabulary_items USING btree (user_id, word)</code></li></ul></details><details class="table-detail" id="table-vocabulary_sources"><summary><code>vocabulary_sources</code><span>11 欄 · 5 約束 · 4 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>item_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, UQ</td><td><code>—</code></td></tr><tr><td><code>paragraph_id</code></td><td><code>bigint</code></td><td>FK, UQ</td><td><code>—</code></td></tr><tr><td><code>title</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>text</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>material_type</code></td><td><code>material_type</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>grade</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>unit</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>category</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>saved_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>vocabulary_sources_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE SET NULL</li><li><code>vocabulary_sources_item_id_fkey</code> · FOREIGN KEY (item_id) REFERENCES vocabulary_items(id) ON DELETE CASCADE</li><li><code>vocabulary_sources_paragraph_id_fkey</code> · FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE SET NULL</li><li><code>vocabulary_sources_pkey</code> · PRIMARY KEY (id)</li><li><code>vocabulary_sources_item_id_article_id_paragraph_id_key</code> · UNIQUE (item_id, article_id, paragraph_id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>vocabulary_sources_article_idx</code> · <code>CREATE INDEX vocabulary_sources_article_idx ON public.vocabulary_sources USING btree (article_id)</code></li><li><code>vocabulary_sources_item_id_article_id_paragraph_id_key</code> · <code>CREATE UNIQUE INDEX vocabulary_sources_item_id_article_id_paragraph_id_key ON public.vocabulary_sources USING btree (item_id, article_id, paragraph_id)</code></li><li><code>vocabulary_sources_paragraph_idx</code> · <code>CREATE INDEX vocabulary_sources_paragraph_idx ON public.vocabulary_sources USING btree (paragraph_id)</code></li><li><code>vocabulary_sources_pkey</code> · <code>CREATE UNIQUE INDEX vocabulary_sources_pkey ON public.vocabulary_sources USING btree (id)</code></li></ul></details></div><section><div class="section-head"><span class="index">S04</span><div><h2>插圖版本與發布</h2><p>4 張表；完整欄位及約束於圖下展開。</p></div></div><div class="canvas"><svg viewBox="0 0 1160 676" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="physical-4-title physical-4-desc">
+<title id="physical-4-title">插圖版本與發布</title>
+<desc id="physical-4-desc">插圖版本與發布的實體資料表欄位、SQL 型別與主要欄位層級外鍵；完整欄位與約束見下方展開區。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M656,184 H588 Q580,184 580,176 V120 Q580,112 572,112 H504" fill="none" stroke="#4f5d75" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="590" y="132" width="64" height="12" rx="2" fill="#f5f5f5"/>
+<text x="592" y="141" class="schema-type">SET NULL</text>
+<g class="schema-table"><rect x="48" y="56" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="56" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="100" x2="504" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="90" class="name" font-size="12">illustration_estimates</text>
+<text x="60" y="116" class="schema-col">id</text>
+<text x="390" y="116" class="schema-flag">PK</text>
+<text x="492" y="116" class="schema-type" text-anchor="end">uuid</text>
+<rect x="49" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="140" class="schema-col">article_id</text>
+<text x="390" y="140" class="schema-flag">FK NN</text>
+<text x="492" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="164" class="schema-col">created_by</text>
+<text x="390" y="164" class="schema-flag">FK NN</text>
+<text x="492" y="164" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="188" class="schema-col">consumed_by_run_id</text>
+<text x="390" y="188" class="schema-flag">FK</text>
+<text x="492" y="188" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="212" class="schema-col">source_hash</text>
+<text x="390" y="212" class="schema-flag">NN</text>
+<text x="492" y="212" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="236" class="schema-col">model_config_hash</text>
+<text x="390" y="236" class="schema-flag">NN</text>
+<text x="492" y="236" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="260" class="schema-col">pricing_config_hash</text>
+<text x="390" y="260" class="schema-flag">NN</text>
+<text x="492" y="260" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="284" class="schema-col">snapshot</text>
+<text x="390" y="284" class="schema-flag">NN</text>
+<text x="492" y="284" class="schema-type" text-anchor="end">jsonb</text>
+<text x="60" y="308" class="schema-type">+ 5 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="656" y="56" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="56" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="100" x2="1112" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="90" class="name" font-size="12">article_visual_runs</text>
+<text x="668" y="116" class="schema-col">id</text>
+<text x="998" y="116" class="schema-flag">PK UQ</text>
+<text x="1100" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="140" class="schema-col">article_id</text>
+<text x="998" y="140" class="schema-flag">FK UQ NN</text>
+<text x="1100" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="164" class="schema-col">parent_run_id</text>
+<text x="998" y="164" class="schema-flag">FK</text>
+<text x="1100" y="164" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="188" class="schema-col">estimate_id</text>
+<text x="998" y="188" class="schema-flag">FK</text>
+<text x="1100" y="188" class="schema-type" text-anchor="end">uuid</text>
+<text x="668" y="212" class="schema-col">created_by</text>
+<text x="998" y="212" class="schema-flag">FK UQ NN</text>
+<text x="1100" y="212" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="236" class="schema-col">revision</text>
+<text x="998" y="236" class="schema-flag">UQ NN</text>
+<text x="1100" y="236" class="schema-type" text-anchor="end">integer</text>
+<text x="668" y="260" class="schema-col">request_idempotency_key</text>
+<text x="998" y="260" class="schema-flag">UQ NN</text>
+<text x="1100" y="260" class="schema-type" text-anchor="end">uuid</text>
+<rect x="657" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="284" class="schema-col">source_hash</text>
+<text x="998" y="284" class="schema-flag">NN</text>
+<text x="1100" y="284" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="308" class="schema-type">+ 20 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="48" y="352" width="456" height="92" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="352" width="456" height="92" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="396" x2="504" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="386" class="name" font-size="12">article_visual_publications</text>
+<text x="60" y="412" class="schema-col">article_id</text>
+<text x="390" y="412" class="schema-flag">FK PK</text>
+<text x="492" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="436" class="schema-col">run_id</text>
+<text x="390" y="436" class="schema-flag">FK UQ NN</text>
+<text x="492" y="436" class="schema-type" text-anchor="end">bigint</text></g>
+<g class="schema-table"><rect x="656" y="352" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="352" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="396" x2="1112" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="386" class="name" font-size="12">illustration_slots</text>
+<text x="668" y="412" class="schema-col">id</text>
+<text x="998" y="412" class="schema-flag">FK PK UQ</text>
+<text x="1100" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="436" class="schema-col">run_id</text>
+<text x="998" y="436" class="schema-flag">FK UQ NN</text>
+<text x="1100" y="436" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="460" class="schema-col">paragraph_id</text>
+<text x="998" y="460" class="schema-flag">FK UQ</text>
+<text x="1100" y="460" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="468" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="484" class="schema-col">selected_candidate_id</text>
+<text x="998" y="484" class="schema-flag">FK</text>
+<text x="1100" y="484" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="508" class="schema-col">kind</text>
+<text x="998" y="508" class="schema-flag">NN</text>
+<text x="1100" y="508" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="516" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="532" class="schema-col">required</text>
+<text x="998" y="532" class="schema-flag">NN</text>
+<text x="1100" y="532" class="schema-type" text-anchor="end">boolean</text>
+<text x="668" y="556" class="schema-col">skip_reason</text>
+<text x="998" y="556" class="schema-flag"></text>
+<text x="1100" y="556" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="564" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="580" class="schema-col">created_at</text>
+<text x="998" y="580" class="schema-flag">NN</text>
+<text x="1100" y="580" class="schema-type" text-anchor="end">timestamptz</text>
+<text x="668" y="604" class="schema-type">+ 4 個欄位；下方可展開完整 schema</text></g>
+<line x1="32" y1="648" x2="1128" y2="648" stroke="rgba(45,49,66,.12)"/>
+</svg></div></section><div class="table-detail-grid"><details class="table-detail" id="table-illustration_estimates"><summary><code>illustration_estimates</code><span>13 欄 · 6 約束 · 1 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>uuid</code></td><td>PK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>source_hash</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>model_config_hash</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>pricing_config_hash</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>snapshot</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>base_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>max_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>created_by</code></td><td><code>bigint</code></td><td>FK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>expires_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>consumed_at</code></td><td><code>timestamp with time zone</code></td><td></td><td><code>—</code></td></tr><tr><td><code>consumed_by_run_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_estimates_base_cost_usd_micros_check</code> · CHECK (base_cost_usd_micros &gt; 0)</li><li><code>illustration_estimates_check</code> · CHECK (max_cost_usd_micros &gt;= base_cost_usd_micros)</li><li><code>illustration_estimates_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE</li><li><code>illustration_estimates_consumed_by_run_id_fkey</code> · FOREIGN KEY (consumed_by_run_id) REFERENCES article_visual_runs(id) ON DELETE SET NULL</li><li><code>illustration_estimates_created_by_fkey</code> · FOREIGN KEY (created_by) REFERENCES users(id)</li><li><code>illustration_estimates_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_estimates_pkey</code> · <code>CREATE UNIQUE INDEX illustration_estimates_pkey ON public.illustration_estimates USING btree (id)</code></li></ul></details><details class="table-detail" id="table-article_visual_runs"><summary><code>article_visual_runs</code><span>28 欄 · 14 約束 · 4 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, UQ, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>revision</code></td><td><code>integer</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>parent_run_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>estimate_id</code></td><td><code>uuid</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>request_idempotency_key</code></td><td><code>uuid</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>source_hash</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>source_json</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>status</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>&#x27;pending&#x27;::text</code></td></tr><tr><td><code>model_id</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>provider</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>api_model</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>model_config_snapshot</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>pricing_profile_snapshot</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>planner_snapshot</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>prompt_template_version</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>plan_json</code></td><td><code>jsonb</code></td><td></td><td><code>—</code></td></tr><tr><td><code>estimated_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>reserved_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>0</code></td></tr><tr><td><code>actual_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>0</code></td></tr><tr><td><code>max_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>created_by</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>updated_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>completed_at</code></td><td><code>timestamp with time zone</code></td><td></td><td><code>—</code></td></tr><tr><td><code>workflow_version</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>1</code></td></tr><tr><td><code>visual_bible</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>legacy_imported</code></td><td><code>boolean</code></td><td>NOT NULL</td><td><code>false</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>article_visual_runs_actual_cost_usd_micros_check</code> · CHECK (actual_cost_usd_micros &gt;= 0)</li><li><code>article_visual_runs_estimated_cost_usd_micros_check</code> · CHECK (estimated_cost_usd_micros &gt; 0)</li><li><code>article_visual_runs_max_cost_usd_micros_check</code> · CHECK (max_cost_usd_micros &gt; 0)</li><li><code>article_visual_runs_reserved_cost_usd_micros_check</code> · CHECK (reserved_cost_usd_micros &gt;= 0)</li><li><code>article_visual_runs_revision_check</code> · CHECK (revision &gt; 0)</li><li><code>article_visual_runs_status_check</code> · CHECK (status = ANY (ARRAY[&#x27;pending&#x27;::text, &#x27;planning&#x27;::text, &#x27;waiting_reference_review&#x27;::text, &#x27;generating&#x27;::text, &#x27;review&#x27;::text, &#x27;partial_failed&#x27;::text, &#x27;failed&#x27;::text, &#x27;cancelled&#x27;::text, &#x27;published&#x27;::text, &#x27;superseded&#x27;::text]))</li><li><code>article_visual_runs_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE</li><li><code>article_visual_runs_created_by_fkey</code> · FOREIGN KEY (created_by) REFERENCES users(id)</li><li><code>article_visual_runs_estimate_id_fkey</code> · FOREIGN KEY (estimate_id) REFERENCES illustration_estimates(id) ON DELETE SET NULL</li><li><code>article_visual_runs_parent_run_id_fkey</code> · FOREIGN KEY (parent_run_id) REFERENCES article_visual_runs(id) ON DELETE SET NULL</li><li><code>article_visual_runs_pkey</code> · PRIMARY KEY (id)</li><li><code>article_visual_runs_article_id_created_by_request_idempoten_key</code> · UNIQUE (article_id, created_by, request_idempotency_key)</li><li><code>article_visual_runs_article_id_id_key</code> · UNIQUE (article_id, id)</li><li><code>article_visual_runs_article_id_revision_key</code> · UNIQUE (article_id, revision)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>article_visual_runs_article_id_created_by_request_idempoten_key</code> · <code>CREATE UNIQUE INDEX article_visual_runs_article_id_created_by_request_idempoten_key ON public.article_visual_runs USING btree (article_id, created_by, request_idempotency_key)</code></li><li><code>article_visual_runs_article_id_id_key</code> · <code>CREATE UNIQUE INDEX article_visual_runs_article_id_id_key ON public.article_visual_runs USING btree (article_id, id)</code></li><li><code>article_visual_runs_article_id_revision_key</code> · <code>CREATE UNIQUE INDEX article_visual_runs_article_id_revision_key ON public.article_visual_runs USING btree (article_id, revision)</code></li><li><code>article_visual_runs_pkey</code> · <code>CREATE UNIQUE INDEX article_visual_runs_pkey ON public.article_visual_runs USING btree (id)</code></li></ul></details><details class="table-detail" id="table-article_visual_publications"><summary><code>article_visual_publications</code><span>2 欄 · 4 約束 · 2 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>article_id</code></td><td><code>bigint</code></td><td>FK, PK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>run_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>article_visual_publications_article_id_fkey</code> · FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE</li><li><code>article_visual_publications_article_id_run_id_fkey</code> · FOREIGN KEY (article_id, run_id) REFERENCES article_visual_runs(article_id, id) ON DELETE CASCADE</li><li><code>article_visual_publications_pkey</code> · PRIMARY KEY (article_id)</li><li><code>article_visual_publications_run_id_key</code> · UNIQUE (run_id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>article_visual_publications_pkey</code> · <code>CREATE UNIQUE INDEX article_visual_publications_pkey ON public.article_visual_publications USING btree (article_id)</code></li><li><code>article_visual_publications_run_id_key</code> · <code>CREATE UNIQUE INDEX article_visual_publications_run_id_key ON public.article_visual_publications USING btree (run_id)</code></li></ul></details><details class="table-detail" id="table-illustration_slots"><summary><code>illustration_slots</code><span>12 欄 · 10 約束 · 5 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>FK, PK, UQ, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>run_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>kind</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>paragraph_id</code></td><td><code>bigint</code></td><td>FK, UQ</td><td><code>—</code></td></tr><tr><td><code>required</code></td><td><code>boolean</code></td><td>NOT NULL</td><td><code>true</code></td></tr><tr><td><code>skip_reason</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>selected_candidate_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>prompt_draft</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>prompt_revision</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>0</code></td></tr><tr><td><code>prompt_status</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>&#x27;empty&#x27;::text</code></td></tr><tr><td><code>prompt_alt_text</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_slots_check</code> · CHECK ((kind = &#x27;paragraph&#x27;::text) = (paragraph_id IS NOT NULL))</li><li><code>illustration_slots_check1</code> · CHECK (required OR skip_reason IS NOT NULL AND length(TRIM(BOTH FROM skip_reason)) &gt; 0)</li><li><code>illustration_slots_kind_check</code> · CHECK (kind = ANY (ARRAY[&#x27;cover&#x27;::text, &#x27;paragraph&#x27;::text, &#x27;reference&#x27;::text]))</li><li><code>illustration_slots_prompt_status_check</code> · CHECK (prompt_status = ANY (ARRAY[&#x27;empty&#x27;::text, &#x27;planning&#x27;::text, &#x27;ready&#x27;::text, &#x27;failed&#x27;::text]))</li><li><code>illustration_slots_paragraph_id_fkey</code> · FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id) ON DELETE CASCADE</li><li><code>illustration_slots_run_id_fkey</code> · FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE CASCADE</li><li><code>selected_candidate_owns_slot</code> · FOREIGN KEY (id, selected_candidate_id) REFERENCES illustration_candidates(slot_id, id) DEFERRABLE INITIALLY DEFERRED</li><li><code>illustration_slots_pkey</code> · PRIMARY KEY (id)</li><li><code>illustration_slots_run_id_id_key</code> · UNIQUE (run_id, id)</li><li><code>illustration_slots_run_id_paragraph_id_key</code> · UNIQUE (run_id, paragraph_id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_cover_unique</code> · <code>CREATE UNIQUE INDEX illustration_cover_unique ON public.illustration_slots USING btree (run_id) WHERE (kind = &#x27;cover&#x27;::text)</code></li><li><code>illustration_reference_unique</code> · <code>CREATE UNIQUE INDEX illustration_reference_unique ON public.illustration_slots USING btree (run_id) WHERE (kind = &#x27;reference&#x27;::text)</code></li><li><code>illustration_slots_pkey</code> · <code>CREATE UNIQUE INDEX illustration_slots_pkey ON public.illustration_slots USING btree (id)</code></li><li><code>illustration_slots_run_id_id_key</code> · <code>CREATE UNIQUE INDEX illustration_slots_run_id_id_key ON public.illustration_slots USING btree (run_id, id)</code></li><li><code>illustration_slots_run_id_paragraph_id_key</code> · <code>CREATE UNIQUE INDEX illustration_slots_run_id_paragraph_id_key ON public.illustration_slots USING btree (run_id, paragraph_id)</code></li></ul></details></div><section><div class="section-head"><span class="index">S05</span><div><h2>圖片候選與資產</h2><p>3 張表；完整欄位及約束於圖下展開。</p></div></div><div class="canvas"><svg viewBox="0 0 1160 676" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="physical-5-title physical-5-desc">
+<title id="physical-5-title">圖片候選與資產</title>
+<desc id="physical-5-desc">圖片候選與資產的實體資料表欄位、SQL 型別與主要欄位層級外鍵；完整欄位與約束見下方展開區。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M504,184 H572 Q580,184 580,176 V120 Q580,112 588,112 H656" fill="none" stroke="#4f5d75" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="590" y="132" width="64" height="12" rx="2" fill="#f5f5f5"/>
+<text x="592" y="141" class="schema-type">NO ACTION</text>
+<g class="schema-table"><rect x="48" y="56" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="56" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="100" x2="504" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="90" class="name" font-size="12">illustration_candidates</text>
+<text x="60" y="116" class="schema-col">id</text>
+<text x="390" y="116" class="schema-flag">PK UQ</text>
+<text x="492" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="140" class="schema-col">slot_id</text>
+<text x="390" y="140" class="schema-flag">FK UQ NN</text>
+<text x="492" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="164" class="schema-col">derived_from_candidate_id</text>
+<text x="390" y="164" class="schema-flag">FK</text>
+<text x="492" y="164" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="188" class="schema-col">asset_id</text>
+<text x="390" y="188" class="schema-flag">FK</text>
+<text x="492" y="188" class="schema-type" text-anchor="end">uuid</text>
+<text x="60" y="212" class="schema-col">reviewed_by</text>
+<text x="390" y="212" class="schema-flag">FK</text>
+<text x="492" y="212" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="236" class="schema-col">candidate_no</text>
+<text x="390" y="236" class="schema-flag">UQ NN</text>
+<text x="492" y="236" class="schema-type" text-anchor="end">integer</text>
+<text x="60" y="260" class="schema-col">status</text>
+<text x="390" y="260" class="schema-flag">NN</text>
+<text x="492" y="260" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="284" class="schema-col">prompt_json</text>
+<text x="390" y="284" class="schema-flag">NN</text>
+<text x="492" y="284" class="schema-type" text-anchor="end">jsonb</text>
+<text x="60" y="308" class="schema-type">+ 9 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="656" y="56" width="456" height="116" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="56" width="456" height="116" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="100" x2="1112" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="90" class="name" font-size="12">illustration_assets</text>
+<text x="668" y="116" class="schema-col">id</text>
+<text x="998" y="116" class="schema-flag">PK</text>
+<text x="1100" y="116" class="schema-type" text-anchor="end">uuid</text>
+<rect x="657" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="140" class="schema-col">sha256</text>
+<text x="998" y="140" class="schema-flag">NN</text>
+<text x="1100" y="140" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="164" class="schema-col">created_at</text>
+<text x="998" y="164" class="schema-flag">NN</text>
+<text x="1100" y="164" class="schema-type" text-anchor="end">timestamptz</text></g>
+<g class="schema-table"><rect x="48" y="352" width="456" height="236" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="352" width="456" height="236" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="396" x2="504" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="386" class="name" font-size="12">illustration_asset_files</text>
+<text x="60" y="412" class="schema-col">id</text>
+<text x="390" y="412" class="schema-flag">PK</text>
+<text x="492" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="436" class="schema-col">asset_id</text>
+<text x="390" y="436" class="schema-flag">FK UQ NN</text>
+<text x="492" y="436" class="schema-type" text-anchor="end">uuid</text>
+<text x="60" y="460" class="schema-col">variant</text>
+<text x="390" y="460" class="schema-flag">UQ NN</text>
+<text x="492" y="460" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="468" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="484" class="schema-col">object_key</text>
+<text x="390" y="484" class="schema-flag">UQ NN</text>
+<text x="492" y="484" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="508" class="schema-col">mime_type</text>
+<text x="390" y="508" class="schema-flag">NN</text>
+<text x="492" y="508" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="516" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="532" class="schema-col">width</text>
+<text x="390" y="532" class="schema-flag">NN</text>
+<text x="492" y="532" class="schema-type" text-anchor="end">integer</text>
+<text x="60" y="556" class="schema-col">height</text>
+<text x="390" y="556" class="schema-flag">NN</text>
+<text x="492" y="556" class="schema-type" text-anchor="end">integer</text>
+<rect x="49" y="564" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="580" class="schema-col">byte_size</text>
+<text x="390" y="580" class="schema-flag">NN</text>
+<text x="492" y="580" class="schema-type" text-anchor="end">bigint</text></g>
+<line x1="32" y1="648" x2="1128" y2="648" stroke="rgba(45,49,66,.12)"/>
+</svg></div></section><div class="table-detail-grid"><details class="table-detail" id="table-illustration_candidates"><summary><code>illustration_candidates</code><span>17 欄 · 10 約束 · 3 索引 · 1 觸發器</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, UQ, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>slot_id</code></td><td><code>bigint</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>candidate_no</code></td><td><code>integer</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>status</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>&#x27;pending&#x27;::text</code></td></tr><tr><td><code>derived_from_candidate_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>prompt_json</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>model_snapshot</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>asset_id</code></td><td><code>uuid</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>focal_x</code></td><td><code>real</code></td><td>NOT NULL</td><td><code>0.5</code></td></tr><tr><td><code>focal_y</code></td><td><code>real</code></td><td>NOT NULL</td><td><code>0.5</code></td></tr><tr><td><code>alt_text</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>teaching_targets</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>&#x27;[]&#x27;::jsonb</code></td></tr><tr><td><code>latest_error</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>reviewed_by</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>reviewed_at</code></td><td><code>timestamp with time zone</code></td><td></td><td><code>—</code></td></tr><tr><td><code>review_reason</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_candidates_focal_x_check</code> · CHECK (focal_x &gt;= 0::double precision AND focal_x &lt;= 1::double precision)</li><li><code>illustration_candidates_focal_y_check</code> · CHECK (focal_y &gt;= 0::double precision AND focal_y &lt;= 1::double precision)</li><li><code>illustration_candidates_status_check</code> · CHECK (status = ANY (ARRAY[&#x27;pending&#x27;::text, &#x27;processing&#x27;::text, &#x27;ready&#x27;::text, &#x27;approved&#x27;::text, &#x27;rejected&#x27;::text, &#x27;failed&#x27;::text, &#x27;uncertain&#x27;::text, &#x27;cancelled&#x27;::text]))</li><li><code>illustration_candidates_asset_id_fkey</code> · FOREIGN KEY (asset_id) REFERENCES illustration_assets(id)</li><li><code>illustration_candidates_derived_from_candidate_id_fkey</code> · FOREIGN KEY (derived_from_candidate_id) REFERENCES illustration_candidates(id) ON DELETE SET NULL</li><li><code>illustration_candidates_reviewed_by_fkey</code> · FOREIGN KEY (reviewed_by) REFERENCES users(id)</li><li><code>illustration_candidates_slot_id_fkey</code> · FOREIGN KEY (slot_id) REFERENCES illustration_slots(id) ON DELETE CASCADE</li><li><code>illustration_candidates_pkey</code> · PRIMARY KEY (id)</li><li><code>illustration_candidates_slot_id_candidate_no_key</code> · UNIQUE (slot_id, candidate_no)</li><li><code>illustration_candidates_slot_id_id_key</code> · UNIQUE (slot_id, id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_candidates_pkey</code> · <code>CREATE UNIQUE INDEX illustration_candidates_pkey ON public.illustration_candidates USING btree (id)</code></li><li><code>illustration_candidates_slot_id_candidate_no_key</code> · <code>CREATE UNIQUE INDEX illustration_candidates_slot_id_candidate_no_key ON public.illustration_candidates USING btree (slot_id, candidate_no)</code></li><li><code>illustration_candidates_slot_id_id_key</code> · <code>CREATE UNIQUE INDEX illustration_candidates_slot_id_id_key ON public.illustration_candidates USING btree (slot_id, id)</code></li></ul><h4>觸發器</h4><ul class="schema-list"><li><code>illustration_candidate_cleanup</code> · <code>CREATE TRIGGER illustration_candidate_cleanup AFTER DELETE ON illustration_candidates FOR EACH ROW EXECUTE FUNCTION illustration_release_asset()</code></li></ul></details><details class="table-detail" id="table-illustration_assets"><summary><code>illustration_assets</code><span>3 欄 · 1 約束 · 1 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>uuid</code></td><td>PK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>sha256</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_assets_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_assets_pkey</code> · <code>CREATE UNIQUE INDEX illustration_assets_pkey ON public.illustration_assets USING btree (id)</code></li></ul></details><details class="table-detail" id="table-illustration_asset_files"><summary><code>illustration_asset_files</code><span>8 欄 · 8 約束 · 3 索引 · 1 觸發器</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>asset_id</code></td><td><code>uuid</code></td><td>FK, UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>variant</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>object_key</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>mime_type</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>width</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>height</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>byte_size</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_asset_files_byte_size_check</code> · CHECK (byte_size &gt; 0)</li><li><code>illustration_asset_files_height_check</code> · CHECK (height &gt; 0)</li><li><code>illustration_asset_files_variant_check</code> · CHECK (variant = ANY (ARRAY[&#x27;master&#x27;::text, &#x27;web&#x27;::text, &#x27;cover-card&#x27;::text, &#x27;cover-hero&#x27;::text, &#x27;cover-player&#x27;::text]))</li><li><code>illustration_asset_files_width_check</code> · CHECK (width &gt; 0)</li><li><code>illustration_asset_files_asset_id_fkey</code> · FOREIGN KEY (asset_id) REFERENCES illustration_assets(id) ON DELETE CASCADE</li><li><code>illustration_asset_files_pkey</code> · PRIMARY KEY (id)</li><li><code>illustration_asset_files_asset_id_variant_key</code> · UNIQUE (asset_id, variant)</li><li><code>illustration_asset_files_object_key_key</code> · UNIQUE (object_key)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_asset_files_asset_id_variant_key</code> · <code>CREATE UNIQUE INDEX illustration_asset_files_asset_id_variant_key ON public.illustration_asset_files USING btree (asset_id, variant)</code></li><li><code>illustration_asset_files_object_key_key</code> · <code>CREATE UNIQUE INDEX illustration_asset_files_object_key_key ON public.illustration_asset_files USING btree (object_key)</code></li><li><code>illustration_asset_files_pkey</code> · <code>CREATE UNIQUE INDEX illustration_asset_files_pkey ON public.illustration_asset_files USING btree (id)</code></li></ul><h4>觸發器</h4><ul class="schema-list"><li><code>illustration_file_cleanup</code> · <code>CREATE TRIGGER illustration_file_cleanup BEFORE DELETE ON illustration_asset_files FOR EACH ROW EXECUTE FUNCTION illustration_queue_asset_cleanup()</code></li></ul></details></div><section><div class="section-head"><span class="index">S06</span><div><h2>圖片工作與維護</h2><p>5 張表；完整欄位及約束於圖下展開。</p></div></div><div class="canvas"><svg viewBox="0 0 1160 972" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="physical-6-title physical-6-desc">
+<title id="physical-6-title">圖片工作與維護</title>
+<desc id="physical-6-desc">圖片工作與維護的實體資料表欄位、SQL 型別與主要欄位層級外鍵；完整欄位與約束見下方展開區。</desc>
+<defs>
+<marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4f5d75"/></marker>
+<marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#eb6c36"/></marker>
+<marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e5aa8"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#f5f5f5"/>
+<path d="M656,160 H588 Q580,160 580,152 V120 Q580,112 572,112 H504" fill="none" stroke="#eb6c36" stroke-width="1.3" marker-end="url(#arrow-accent)"/>
+<rect x="590" y="120" width="64" height="12" rx="2" fill="#f5f5f5"/>
+<text x="592" y="129" class="schema-type">CASCADE</text>
+<g class="schema-table"><rect x="48" y="56" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="56" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="100" x2="504" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="90" class="name" font-size="12">illustration_jobs</text>
+<text x="60" y="116" class="schema-col">id</text>
+<text x="390" y="116" class="schema-flag">PK</text>
+<text x="492" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="140" class="schema-col">run_id</text>
+<text x="390" y="140" class="schema-flag">FK NN</text>
+<text x="492" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="164" class="schema-col">slot_id</text>
+<text x="390" y="164" class="schema-flag">FK</text>
+<text x="492" y="164" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="188" class="schema-col">candidate_id</text>
+<text x="390" y="188" class="schema-flag">FK</text>
+<text x="492" y="188" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="212" class="schema-col">kind</text>
+<text x="390" y="212" class="schema-flag">NN</text>
+<text x="492" y="212" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="236" class="schema-col">status</text>
+<text x="390" y="236" class="schema-flag">NN</text>
+<text x="492" y="236" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="260" class="schema-col">attempts</text>
+<text x="390" y="260" class="schema-flag">NN</text>
+<text x="492" y="260" class="schema-type" text-anchor="end">integer</text>
+<rect x="49" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="284" class="schema-col">available_at</text>
+<text x="390" y="284" class="schema-flag">NN</text>
+<text x="492" y="284" class="schema-type" text-anchor="end">timestamptz</text>
+<text x="60" y="308" class="schema-type">+ 5 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="656" y="56" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="56" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="56" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="94" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="100" x2="1112" y2="100" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="73" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="90" class="name" font-size="12">illustration_attempts</text>
+<text x="668" y="116" class="schema-col">id</text>
+<text x="998" y="116" class="schema-flag">PK</text>
+<text x="1100" y="116" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="124" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="140" class="schema-col">run_id</text>
+<text x="998" y="140" class="schema-flag">FK NN</text>
+<text x="1100" y="140" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="164" class="schema-col">job_id</text>
+<text x="998" y="164" class="schema-flag">FK NN</text>
+<text x="1100" y="164" class="schema-type" text-anchor="end">bigint</text>
+<rect x="657" y="172" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="188" class="schema-col">candidate_id</text>
+<text x="998" y="188" class="schema-flag">FK</text>
+<text x="1100" y="188" class="schema-type" text-anchor="end">bigint</text>
+<text x="668" y="212" class="schema-col">operation_kind</text>
+<text x="998" y="212" class="schema-flag">NN</text>
+<text x="1100" y="212" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="220" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="236" class="schema-col">provider</text>
+<text x="998" y="236" class="schema-flag">NN</text>
+<text x="1100" y="236" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="260" class="schema-col">api_model</text>
+<text x="998" y="260" class="schema-flag">NN</text>
+<text x="1100" y="260" class="schema-type" text-anchor="end">text</text>
+<rect x="657" y="268" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="284" class="schema-col">request_fingerprint</text>
+<text x="998" y="284" class="schema-flag">NN</text>
+<text x="1100" y="284" class="schema-type" text-anchor="end">text</text>
+<text x="668" y="308" class="schema-type">+ 11 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="48" y="352" width="456" height="260" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="352" width="456" height="260" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="396" x2="504" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="386" class="name" font-size="12">illustration_audit_events</text>
+<text x="60" y="412" class="schema-col">id</text>
+<text x="390" y="412" class="schema-flag">PK</text>
+<text x="492" y="412" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="436" class="schema-col">run_id</text>
+<text x="390" y="436" class="schema-flag">FK</text>
+<text x="492" y="436" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="460" class="schema-col">actor_user_id</text>
+<text x="390" y="460" class="schema-flag">FK</text>
+<text x="492" y="460" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="468" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="484" class="schema-col">slot_id</text>
+<text x="390" y="484" class="schema-flag"></text>
+<text x="492" y="484" class="schema-type" text-anchor="end">bigint</text>
+<text x="60" y="508" class="schema-col">candidate_id</text>
+<text x="390" y="508" class="schema-flag"></text>
+<text x="492" y="508" class="schema-type" text-anchor="end">bigint</text>
+<rect x="49" y="516" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="532" class="schema-col">event_kind</text>
+<text x="390" y="532" class="schema-flag">NN</text>
+<text x="492" y="532" class="schema-type" text-anchor="end">text</text>
+<text x="60" y="556" class="schema-col">reason</text>
+<text x="390" y="556" class="schema-flag"></text>
+<text x="492" y="556" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="564" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="580" class="schema-col">metadata_json</text>
+<text x="390" y="580" class="schema-flag"></text>
+<text x="492" y="580" class="schema-type" text-anchor="end">jsonb</text>
+<text x="60" y="604" class="schema-type">+ 1 個欄位；下方可展開完整 schema</text></g>
+<g class="schema-table"><rect x="656" y="352" width="456" height="116" rx="6" fill="#f5f5f5"/>
+<rect x="656" y="352" width="456" height="116" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="656" y="352" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="656" y="390" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="656" y1="396" x2="1112" y2="396" stroke="rgba(45,49,66,.24)"/>
+<text x="668" y="369" class="tag">PUBLIC · TABLE</text>
+<text x="668" y="386" class="name" font-size="12">image_worker_heartbeats</text>
+<text x="668" y="412" class="schema-col">id</text>
+<text x="998" y="412" class="schema-flag">PK</text>
+<text x="1100" y="412" class="schema-type" text-anchor="end">uuid</text>
+<rect x="657" y="420" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="668" y="436" class="schema-col">models</text>
+<text x="998" y="436" class="schema-flag">NN</text>
+<text x="1100" y="436" class="schema-type" text-anchor="end">jsonb</text>
+<text x="668" y="460" class="schema-col">updated_at</text>
+<text x="998" y="460" class="schema-flag">NN</text>
+<text x="1100" y="460" class="schema-type" text-anchor="end">timestamptz</text></g>
+<g class="schema-table"><rect x="48" y="648" width="456" height="140" rx="6" fill="#f5f5f5"/>
+<rect x="48" y="648" width="456" height="140" rx="6" fill="#ffffff" stroke="#2d3142"/>
+<rect x="48" y="648" width="456" height="44" rx="6" fill="rgba(45,49,66,.05)"/>
+<rect x="48" y="686" width="456" height="6" fill="rgba(45,49,66,.05)"/>
+<line x1="48" y1="692" x2="504" y2="692" stroke="rgba(45,49,66,.24)"/>
+<text x="60" y="665" class="tag">PUBLIC · TABLE</text>
+<text x="60" y="682" class="name" font-size="12">illustration_cleanup_jobs</text>
+<text x="60" y="708" class="schema-col">object_key</text>
+<text x="390" y="708" class="schema-flag">PK</text>
+<text x="492" y="708" class="schema-type" text-anchor="end">text</text>
+<rect x="49" y="716" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="732" class="schema-col">attempts</text>
+<text x="390" y="732" class="schema-flag">NN</text>
+<text x="492" y="732" class="schema-type" text-anchor="end">integer</text>
+<text x="60" y="756" class="schema-col">available_at</text>
+<text x="390" y="756" class="schema-flag">NN</text>
+<text x="492" y="756" class="schema-type" text-anchor="end">timestamptz</text>
+<rect x="49" y="764" width="454" height="24" fill="rgba(45,49,66,.025)"/>
+<text x="60" y="780" class="schema-col">error</text>
+<text x="390" y="780" class="schema-flag"></text>
+<text x="492" y="780" class="schema-type" text-anchor="end">text</text></g>
+<line x1="32" y1="944" x2="1128" y2="944" stroke="rgba(45,49,66,.12)"/>
+</svg></div></section><div class="table-detail-grid"><details class="table-detail" id="table-illustration_jobs"><summary><code>illustration_jobs</code><span>13 欄 · 7 約束 · 3 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>kind</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>run_id</code></td><td><code>bigint</code></td><td>FK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>slot_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>candidate_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>status</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>&#x27;pending&#x27;::text</code></td></tr><tr><td><code>attempts</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>0</code></td></tr><tr><td><code>available_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>idempotency_key</code></td><td><code>text</code></td><td>UQ, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>error</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>lease_token</code></td><td><code>uuid</code></td><td></td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>updated_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_jobs_kind_check</code> · CHECK (kind = ANY (ARRAY[&#x27;plan&#x27;::text, &#x27;generate&#x27;::text, &#x27;derive&#x27;::text, &#x27;qa&#x27;::text]))</li><li><code>illustration_jobs_status_check</code> · CHECK (status = ANY (ARRAY[&#x27;pending&#x27;::text, &#x27;processing&#x27;::text, &#x27;done&#x27;::text, &#x27;failed&#x27;::text, &#x27;uncertain&#x27;::text, &#x27;cancelled&#x27;::text]))</li><li><code>illustration_jobs_candidate_id_fkey</code> · FOREIGN KEY (candidate_id) REFERENCES illustration_candidates(id) ON DELETE CASCADE</li><li><code>illustration_jobs_run_id_fkey</code> · FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE CASCADE</li><li><code>illustration_jobs_slot_id_fkey</code> · FOREIGN KEY (slot_id) REFERENCES illustration_slots(id) ON DELETE CASCADE</li><li><code>illustration_jobs_pkey</code> · PRIMARY KEY (id)</li><li><code>illustration_jobs_idempotency_key_key</code> · UNIQUE (idempotency_key)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_jobs_idempotency_key_key</code> · <code>CREATE UNIQUE INDEX illustration_jobs_idempotency_key_key ON public.illustration_jobs USING btree (idempotency_key)</code></li><li><code>illustration_jobs_pending</code> · <code>CREATE INDEX illustration_jobs_pending ON public.illustration_jobs USING btree (available_at, id) WHERE (status = &#x27;pending&#x27;::text)</code></li><li><code>illustration_jobs_pkey</code> · <code>CREATE UNIQUE INDEX illustration_jobs_pkey ON public.illustration_jobs USING btree (id)</code></li></ul></details><details class="table-detail" id="table-illustration_attempts"><summary><code>illustration_attempts</code><span>19 欄 · 9 約束 · 1 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>run_id</code></td><td><code>bigint</code></td><td>FK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>job_id</code></td><td><code>bigint</code></td><td>FK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>candidate_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>operation_kind</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>provider</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>api_model</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>request_fingerprint</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>prompt_fingerprint</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>state</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>provider_request_id</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>estimated_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>reserved_cost_usd_micros</code></td><td><code>bigint</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>billing_status</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>actual_cost_usd_micros</code></td><td><code>bigint</code></td><td></td><td><code>—</code></td></tr><tr><td><code>usage_json</code></td><td><code>jsonb</code></td><td></td><td><code>—</code></td></tr><tr><td><code>error</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>started_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>finished_at</code></td><td><code>timestamp with time zone</code></td><td></td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_attempts_actual_cost_usd_micros_check</code> · CHECK (actual_cost_usd_micros &gt;= 0)</li><li><code>illustration_attempts_billing_status_check</code> · CHECK (billing_status = ANY (ARRAY[&#x27;estimated&#x27;::text, &#x27;actual&#x27;::text, &#x27;not_charged&#x27;::text, &#x27;unknown&#x27;::text]))</li><li><code>illustration_attempts_estimated_cost_usd_micros_check</code> · CHECK (estimated_cost_usd_micros &gt; 0)</li><li><code>illustration_attempts_reserved_cost_usd_micros_check</code> · CHECK (reserved_cost_usd_micros &gt;= 0)</li><li><code>illustration_attempts_state_check</code> · CHECK (state = ANY (ARRAY[&#x27;reserved&#x27;::text, &#x27;sending&#x27;::text, &#x27;succeeded&#x27;::text, &#x27;failed&#x27;::text, &#x27;uncertain&#x27;::text]))</li><li><code>illustration_attempts_candidate_id_fkey</code> · FOREIGN KEY (candidate_id) REFERENCES illustration_candidates(id) ON DELETE CASCADE</li><li><code>illustration_attempts_job_id_fkey</code> · FOREIGN KEY (job_id) REFERENCES illustration_jobs(id) ON DELETE CASCADE</li><li><code>illustration_attempts_run_id_fkey</code> · FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE CASCADE</li><li><code>illustration_attempts_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_attempts_pkey</code> · <code>CREATE UNIQUE INDEX illustration_attempts_pkey ON public.illustration_attempts USING btree (id)</code></li></ul></details><details class="table-detail" id="table-illustration_audit_events"><summary><code>illustration_audit_events</code><span>9 欄 · 3 約束 · 1 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>bigint</code></td><td>PK, NOT NULL, IDENTITY</td><td><code>—</code></td></tr><tr><td><code>run_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>slot_id</code></td><td><code>bigint</code></td><td></td><td><code>—</code></td></tr><tr><td><code>candidate_id</code></td><td><code>bigint</code></td><td></td><td><code>—</code></td></tr><tr><td><code>event_kind</code></td><td><code>text</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>actor_user_id</code></td><td><code>bigint</code></td><td>FK</td><td><code>—</code></td></tr><tr><td><code>reason</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr><tr><td><code>metadata_json</code></td><td><code>jsonb</code></td><td></td><td><code>—</code></td></tr><tr><td><code>created_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_audit_events_actor_user_id_fkey</code> · FOREIGN KEY (actor_user_id) REFERENCES users(id)</li><li><code>illustration_audit_events_run_id_fkey</code> · FOREIGN KEY (run_id) REFERENCES article_visual_runs(id) ON DELETE SET NULL</li><li><code>illustration_audit_events_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_audit_events_pkey</code> · <code>CREATE UNIQUE INDEX illustration_audit_events_pkey ON public.illustration_audit_events USING btree (id)</code></li></ul></details><details class="table-detail" id="table-image_worker_heartbeats"><summary><code>image_worker_heartbeats</code><span>3 欄 · 1 約束 · 1 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>uuid</code></td><td>PK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>models</code></td><td><code>jsonb</code></td><td>NOT NULL</td><td><code>—</code></td></tr><tr><td><code>updated_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>image_worker_heartbeats_pkey</code> · PRIMARY KEY (id)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>image_worker_heartbeats_pkey</code> · <code>CREATE UNIQUE INDEX image_worker_heartbeats_pkey ON public.image_worker_heartbeats USING btree (id)</code></li></ul></details><details class="table-detail" id="table-illustration_cleanup_jobs"><summary><code>illustration_cleanup_jobs</code><span>4 欄 · 1 約束 · 1 索引</span></summary>
+<div class="table-scroll"><table><thead><tr><th>欄位</th><th>SQL 型別</th><th>鍵／非空</th><th>預設值</th></tr></thead><tbody><tr><td><code>object_key</code></td><td><code>text</code></td><td>PK, NOT NULL</td><td><code>—</code></td></tr><tr><td><code>attempts</code></td><td><code>integer</code></td><td>NOT NULL</td><td><code>0</code></td></tr><tr><td><code>available_at</code></td><td><code>timestamp with time zone</code></td><td>NOT NULL</td><td><code>now()</code></td></tr><tr><td><code>error</code></td><td><code>text</code></td><td></td><td><code>—</code></td></tr></tbody></table></div>
+<h4>約束</h4><ul class="schema-list"><li><code>illustration_cleanup_jobs_pkey</code> · PRIMARY KEY (object_key)</li></ul><h4>索引</h4><ul class="schema-list"><li><code>illustration_cleanup_jobs_pkey</code> · <code>CREATE UNIQUE INDEX illustration_cleanup_jobs_pkey ON public.illustration_cleanup_jobs USING btree (object_key)</code></li></ul></details></div><div class="note"><strong>Enum 型別</strong><ul><li><code>material_type</code>：school, extracurricular</li><li><code>processing_status</code>：pending, processing, done, failed</li><li><code>user_role</code>：admin, reader, reviewer</li></ul>獨立擷取指令：<code>npm run test:db:up</code> → <code>node docs/diagrams/extract-schema-catalog.mjs</code> → <code>npm run test:db:down</code>。此流程僅使用名稱以 <code>_test</code> 結尾的測試庫。</div><footer>來源：migrations/1782740846925_init-schema.sql、1788652800000_article-illustrations.sql、1789862400000_vocabulary-review.sql、1789862400001_generation-settings.sql、1789862400004–0006。盤點日期：2026-09-27。</footer></main></body></html>
