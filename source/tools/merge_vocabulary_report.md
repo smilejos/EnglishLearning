@@ -1,0 +1,3454 @@
+# 單字庫合併與 CEFR 分級整合報告
+
+## 統計
+
+```json
+{
+  "total_entries": 9166,
+  "original_entries": 6012,
+  "original_entries_split": 168,
+  "entries_from_split_forms": 189,
+  "entries_new_from_7000_list": 2974,
+  "merged_duplicate_forms": 13,
+  "entries_by_list": {
+    "advance": 774,
+    "basic": 1193,
+    "expert": 4225,
+    "null": 2974
+  },
+  "entries_by_tw_7000": {
+    "1": 1056,
+    "2": 1047,
+    "3": 1020,
+    "4": 1026,
+    "5": 1009,
+    "6": 1034,
+    "null": 2974
+  },
+  "entries_by_cefr": {
+    "A1": 1451,
+    "A2": 1584,
+    "B1": 4204,
+    "B2": 963,
+    "C1": 314,
+    "C2": 19,
+    "null": 631
+  },
+  "entries_without_definition": 3839,
+  "entries_supplemented_examples": 133,
+  "total_supplemented_examples": 204,
+  "entries_with_fewer_than_3_examples": 0,
+  "total_examples": 32866,
+  "total_explains": 18615
+}
+```
+
+## 拆分的原詞條（168）
+
+- `a/an` → a, an
+- `actor/actress` → actor, actress
+- `agree(ment)` → agree, agreement
+- `airplane/plane` → airplane, plane
+- `am/a.m.` → am, a.m.
+- `anybody/anyone` → anybody, anyone
+- `bicycle/bike` → bicycle, bike
+- `doctor/doc` → doctor, doc
+- `enjoy(ment)` → enjoy, enjoyment
+- `everyone/everybody` → everyone, everybody
+- `glove(s)` → glove, gloves
+- `god/goddess` → god, goddess
+- `he (him, his, himself)` → he, him, his, himself
+- `I (me, my, mine, myself)` → I, me, my, mine, myself
+- `it (its, itself)` → it, its, itself
+- `mathematics/math` → mathematics, math
+- `move(ment)` → move, movement
+- `movie/film` → movie, film
+- `Mr./Mister` → Mr., Mister
+- `no/nope` → no, nope
+- `O.K./OK/okay` → O.K., OK, okay
+- `parent(s)` → parent, parents
+- `pay(ment)` → pay, payment
+- `photograph/photo` → photograph, photo
+- `pm/p.m.` → pm, p.m.
+- `she (her, hers, herself)` → she, her, hers, herself
+- `shoe(s)` → shoe, shoes
+- `someone/somebody` → someone, somebody
+- `taxicab/taxi/cab` → taxicab, taxi, cab
+- `telephone/phone` → telephone, phone
+- `television/TV` → television, TV
+- `they (them, their, theirs, themselves)` → they, them, their, theirs, themselves
+- `treat(ment)` → treat, treatment
+- `we (us, our, ours, ourselves)` → we, us, our, ours, ourselves
+- `yes/yeah` → yes, yeah
+- `you (your, yours, yourself, yourselves)` → you, your, yours, yourself, yourselves
+- `anywhere/anyplace` → anywhere, anyplace
+- `argue(argument)` → argue, argument
+- `arrange(ment)` → arrange, arrangement
+- `backward/backwards` → backward, backwards
+- `café/cafe` → café, cafe
+- `chopstick(s)` → chopstick, chopsticks
+- `cockroach/roach` → cockroach, roach
+- `cola/Coke` → cola, Coke
+- `comic(s)` → comic, comics
+- `congratulation(s)` → congratulation, congratulations
+- `develop(ment)` → develop, development
+- `disagree(ment)` → disagree, disagreement
+- `earring(s)` → earring, earrings
+- `employ(ment)` → employ, employment
+- `encourage(ment)` → encourage, encouragement
+- `examination/exam` → examination, exam
+- `excite(ment)` → excite, excitement
+- `eyebrow/brow` → eyebrow, brow
+- `fireman/firewoman` → fireman, firewoman
+- `forward/forwards` → forward, forwards
+- `gymnasium/gym` → gymnasium, gym
+- `hamburger/burger` → hamburger, burger
+- `hero/heroine` → hero, heroine
+- `hippopotamus/hippo` → hippopotamus, hippo
+- `host/hostess` → host, hostess
+- `improve(ment)` → improve, improvement
+- `Internet/internet` → Internet, internet
+- `judgment/judgement` → judgment, judgement
+- `manage(ment)` → manage, management
+- `measure(ment)` → measure, measurement
+- `policeman/cop` → policeman, cop
+- `prince/princess` → prince, princess
+- `punish(ment)` → punish, punishment
+- `railroad/railway` → railroad, railway
+- `refrigerator/fridge` → refrigerator, fridge
+- `require(ment)` → require, requirement
+- `salesperson/salesman/saleswoman` → salesperson, salesman, saleswoman
+- `settle(ment)` → settle, settlement
+- `slipper(s)` → slipper, slippers
+- `sock(s)` → sock, socks
+- `state(ment)` → state, statement
+- `subway/underground/metro` → subway, underground, metro
+- `toward/towards` → toward, towards
+- `waiter/waitress` → waiter, waitress
+- `wood(s)` → wood, woods
+- `achieve(ment)` → achieve, achievement
+- `advertise(ment)/ad` → advertise, advertisement, ad
+- `adviser/advisor` → adviser, advisor
+- `afterward/afterwards` → afterward, afterwards
+- `amaze(ment)` → amaze, amazement
+- `announce(ment)` → announce, announcement
+- `automobile/auto` → automobile, auto
+- `disk/disc` → disk, disc
+- `engage(ment)` → engage, engagement
+- `gasoline/gas` → gasoline, gas
+- `mankind/humankind` → mankind, humankind
+- `medium/media` → medium, media
+- `microphone/mike` → microphone, mike
+- `pave(ment)` → pave, pavement
+- `postpone(ment)` → postpone, postponement
+- `replace(ment)` → replace, replacement
+- `saving(s)` → saving, savings
+- `scale(s)` → scale, scales
+- `wage(s)` → wage, wages
+- `accomplish(ment)` → accomplish, accomplishment
+- `adjust(ment)` → adjust, adjustment
+- `amuse(ment)` → amuse, amusement
+- `appoint(ment)` → appoint, appointment
+- `assign(ment)` → assign, assignment
+- `attach(ment)` → attach, attachment
+- `bridegroom/groom` → bridegroom, groom
+- `capital(ism)` → capital, capitalism
+- `content(ment)` → content, contentment
+- `disappoint(ment)` → disappoint, disappointment
+- `discourage(ment)` → discourage, discouragement
+- `embarrass(ment)` → embarrass, embarrassment
+- `enforce(ment)` → enforce, enforcement
+- `enlarge(ment)` → enlarge, enlargement
+- `entertain(ment)` → entertain, entertainment
+- `equip(ment)` → equip, equipment
+- `establish(ment)` → establish, establishment
+- `fulfill(ment)` → fulfill, fulfillment
+- `greeting(s)` → greeting, greetings
+- `invest(ment)` → invest, investment
+- `involve(ment)` → involve, involvement
+- `laboratory/lab` → laboratory, lab
+- `measure(s)` → measure, measures
+- `retire(ment)` → retire, retirement
+- `statistic(s)` → statistic, statistics
+- `stocking(s)` → stocking, stockings
+- `witch/wizard` → witch, wizard
+- `acknowledge(ment)` → acknowledge, acknowledgement
+- `assess(ment)` → assess, assessment
+- `astonish(ment)` → astonish, astonishment
+- `criterion/criteria` → criterion, criteria
+- `endorse(ment)` → endorse, endorsement
+- `ethic(s)` → ethic, ethics
+- `tactic(s)` → tactic, tactics
+- `administer/administrate` → administer, administrate
+- `amid/amidst` → amid, amidst
+- `attain(ment)` → attain, attainment
+- `blond/blonde` → blond, blonde
+- `brassiere/bra` → brassiere, bra
+- `chairperson/chair/chairman/chairwoman` → chairperson, chair, chairman, chairwoman
+- `congressman/congresswoman` → congressman, congresswoman
+- `dormitory/dorm` → dormitory, dorm
+- `downward/downwards` → downward, downwards
+- `enhance(ment)` → enhance, enhancement
+- `enlighten(ment)` → enlighten, enlightenment
+- `enrich(ment)` → enrich, enrichment
+- `enroll(ment)` → enroll, enrollment
+- `eyelash/lash` → eyelash, lash
+- `fiancé/fiance` → fiancé, fiance
+- `harass(ment)` → harass, harassment
+- `headphone(s)` → headphone, headphones
+- `imprison(ment)` → imprison, imprisonment
+- `madam/ma’am` → madam, ma’am
+- `nourish(ment)` → nourish, nourishment
+- `outward/outwards` → outward, outwards
+- `refine(ment)` → refine, refinement
+- `refresh(ment)` → refresh, refreshment
+- `refreshment(s)` → refreshment, refreshments
+- `resent(ment)` → resent, resentment
+- `seagull/gull` → seagull, gull
+- `sneaker(s)` → sneaker, sneakers
+- `spacecraft/spaceship` → spacecraft, spaceship
+- `spokesperson/spokesman/spokeswoman` → spokesperson, spokesman, spokeswoman
+- `sportsman/sportswoman` → sportsman, sportswoman
+- `upward/upwards` → upward, upwards
+- `veterinarian/vet` → veterinarian, vet
+- `whiskey/whisky` → whiskey, whisky
+- `widow/widower` → widow, widower
+
+## 分不到例句、改複製全部例句的字形（92）
+
+- `actor/actress` → actress
+- `am/a.m.` → am
+- `anybody/anyone` → anybody
+- `doctor/doc` → doc
+- `enjoy(ment)` → enjoyment
+- `everyone/everybody` → everybody
+- `glove(s)` → glove
+- `god/goddess` → god
+- `he (him, his, himself)` → him
+- `I (me, my, mine, myself)` → me
+- `I (me, my, mine, myself)` → my
+- `it (its, itself)` → its
+- `mathematics/math` → mathematics
+- `Mr./Mister` → Mister
+- `O.K./OK/okay` → O.K.
+- `O.K./OK/okay` → OK
+- `photograph/photo` → photograph
+- `pm/p.m.` → pm
+- `she (her, hers, herself)` → her
+- `she (her, hers, herself)` → hers
+- `shoe(s)` → shoe
+- `someone/somebody` → somebody
+- `taxicab/taxi/cab` → taxicab
+- `telephone/phone` → telephone
+- `television/TV` → TV
+- `they (them, their, theirs, themselves)` → them
+- `they (them, their, theirs, themselves)` → theirs
+- `treat(ment)` → treat
+- `we (us, our, ours, ourselves)` → us
+- `we (us, our, ours, ourselves)` → our
+- `we (us, our, ours, ourselves)` → ours
+- `yes/yeah` → yeah
+- `you (your, yours, yourself, yourselves)` → yours
+- `anywhere/anyplace` → anyplace
+- `arrange(ment)` → arrangement
+- `café/cafe` → café
+- `chopstick(s)` → chopstick
+- `congratulation(s)` → congratulation
+- `develop(ment)` → develop
+- `disagree(ment)` → disagreement
+- `earring(s)` → earring
+- `forward/forwards` → forwards
+- `host/hostess` → hostess
+- `judgment/judgement` → judgement
+- `refrigerator/fridge` → fridge
+- `require(ment)` → require
+- `settle(ment)` → settlement
+- `slipper(s)` → slipper
+- `sock(s)` → sock
+- `state(ment)` → state
+- `toward/towards` → towards
+- `waiter/waitress` → waitress
+- `achieve(ment)` → achieve
+- `advertise(ment)/ad` → ad
+- `adviser/advisor` → adviser
+- `engage(ment)` → engage
+- `gasoline/gas` → gasoline
+- `microphone/mike` → mike
+- `replace(ment)` → replacement
+- `accomplish(ment)` → accomplishment
+- `adjust(ment)` → adjustment
+- `appoint(ment)` → appoint
+- `capital(ism)` → capitalism
+- `discourage(ment)` → discouragement
+- `entertain(ment)` → entertain
+- `fulfill(ment)` → fulfill
+- `retire(ment)` → retirement
+- `statistic(s)` → statistics
+- `stocking(s)` → stocking
+- `acknowledge(ment)` → acknowledgement
+- `astonish(ment)` → astonishment
+- `administer/administrate` → administrate
+- `chairperson/chair/chairman/chairwoman` → chairperson
+- `chairperson/chair/chairman/chairwoman` → chairman
+- `chairperson/chair/chairman/chairwoman` → chairwoman
+- `dormitory/dorm` → dorm
+- `downward/downwards` → downwards
+- `enhance(ment)` → enhancement
+- `enlighten(ment)` → enlighten
+- `enrich(ment)` → enrich
+- `eyelash/lash` → lash
+- `fiancé/fiance` → fiance
+- `madam/ma’am` → ma’am
+- `nourish(ment)` → nourish
+- `refresh(ment)` → refreshment
+- `refreshment(s)` → refreshment
+- `sneaker(s)` → sneaker
+- `spacecraft/spaceship` → spaceship
+- `spokesperson/spokesman/spokeswoman` → spokesman
+- `spokesperson/spokesman/spokeswoman` → spokeswoman
+- `upward/upwards` → upwards
+- `veterinarian/vet` → vet
+
+## 同名合併（13）
+
+- `chair` ← chair ｜ chairperson/chair/chairman/chairwoman
+- `mine` ← I (me, my, mine, myself) ｜ mine
+- `media` ← media ｜ medium/media
+- `medium` ← medium ｜ medium/media
+- `backward` ← backward ｜ backward/backwards
+- `capital` ← capital ｜ capital(ism)
+- `forward` ← forward ｜ forward/forwards
+- `measure` ← measure(ment) ｜ measure(s)
+- `content` ← content ｜ content(ment)
+- `downward` ← downward ｜ downward/downwards
+- `outward` ← outward ｜ outward/outwards
+- `refreshment` ← refresh(ment) ｜ refreshment(s)
+- `upward` ← upward ｜ upward/upwards
+
+## 少於 3 筆例句並由補充檔補足的單字（133）
+
+- `a`（+2 筆）
+- `an`（+1 筆）
+- `airplane`（+1 筆）
+- `bicycle`（+1 筆）
+- `bike`（+2 筆）
+- `move`（+2 筆）
+- `movement`（+1 筆）
+- `no`（+1 筆）
+- `nope`（+2 筆）
+- `parent`（+2 筆）
+- `parents`（+1 筆）
+- `payment`（+2 筆）
+- `their`（+2 筆）
+- `your`（+2 筆）
+- `backwards`（+2 筆）
+- `cockroach`（+2 筆）
+- `roach`（+1 筆）
+- `cola`（+1 筆）
+- `Coke`（+2 筆）
+- `comic`（+1 筆）
+- `comics`（+2 筆）
+- `employ`（+1 筆）
+- `employment`（+2 筆）
+- `examination`（+1 筆）
+- `exam`（+2 筆）
+- `excite`（+1 筆）
+- `excitement`（+2 筆）
+- `eyebrow`（+1 筆）
+- `brow`（+2 筆）
+- `fireman`（+1 筆）
+- `firewoman`（+2 筆）
+- `hamburger`（+1 筆）
+- `burger`（+2 筆）
+- `hero`（+1 筆）
+- `heroine`（+2 筆）
+- `hippopotamus`（+2 筆）
+- `hippo`（+1 筆）
+- `improve`（+1 筆）
+- `improvement`（+2 筆）
+- `measure`（+1 筆）
+- `policeman`（+1 筆）
+- `cop`（+2 筆）
+- `prince`（+2 筆）
+- `princess`（+1 筆）
+- `punish`（+2 筆）
+- `punishment`（+1 筆）
+- `railroad`（+1 筆）
+- `railway`（+2 筆）
+- `salesperson`（+2 筆）
+- `salesman`（+2 筆）
+- `saleswoman`（+2 筆）
+- `subway`（+2 筆）
+- `underground`（+2 筆）
+- `metro`（+2 筆）
+- `wood`（+1 筆）
+- `woods`（+2 筆）
+- `afterward`（+1 筆）
+- `afterwards`（+2 筆）
+- `amaze`（+1 筆）
+- `amazement`（+2 筆）
+- `announce`（+1 筆）
+- `announcement`（+2 筆）
+- `automobile`（+1 筆）
+- `auto`（+2 筆）
+- `disk`（+1 筆）
+- `disc`（+2 筆）
+- `mankind`（+2 筆）
+- `humankind`（+1 筆）
+- `pave`（+1 筆）
+- `pavement`（+2 筆）
+- `postpone`（+1 筆）
+- `postponement`（+2 筆）
+- `saving`（+2 筆）
+- `savings`（+1 筆）
+- `scales`（+2 筆）
+- `wage`（+2 筆）
+- `wages`（+1 筆）
+- `amuse`（+1 筆）
+- `amusement`（+2 筆）
+- `bridegroom`（+1 筆）
+- `groom`（+2 筆）
+- `disappoint`（+1 筆）
+- `disappointment`（+2 筆）
+- `embarrass`（+1 筆）
+- `embarrassment`（+2 筆）
+- `enforce`（+1 筆）
+- `enforcement`（+2 筆）
+- `enlarge`（+1 筆）
+- `enlargement`（+2 筆）
+- `equip`（+2 筆）
+- `equipment`（+1 筆）
+- `establish`（+1 筆）
+- `establishment`（+2 筆）
+- `greeting`（+1 筆）
+- `greetings`（+2 筆）
+- `involve`（+1 筆）
+- `involvement`（+2 筆）
+- `lab`（+2 筆）
+- `measures`（+2 筆）
+- `witch`（+1 筆）
+- `wizard`（+1 筆）
+- `tactic`（+2 筆）
+- `tactics`（+1 筆）
+- `amid`（+1 筆）
+- `amidst`（+2 筆）
+- `attain`（+1 筆）
+- `attainment`（+2 筆）
+- `blond`（+1 筆）
+- `blonde`（+2 筆）
+- `brassiere`（+2 筆）
+- `bra`（+1 筆）
+- `congressman`（+1 筆）
+- `congresswoman`（+2 筆）
+- `enroll`（+1 筆）
+- `enrollment`（+2 筆）
+- `harass`（+2 筆）
+- `harassment`（+1 筆）
+- `headphone`（+2 筆）
+- `imprison`（+1 筆）
+- `imprisonment`（+2 筆）
+- `outwards`（+1 筆）
+- `refine`（+1 筆）
+- `refinement`（+2 筆）
+- `resent`（+1 筆）
+- `resentment`（+2 筆）
+- `seagull`（+1 筆）
+- `gull`（+2 筆）
+- `sportsman`（+1 筆）
+- `sportswoman`（+2 筆）
+- `whiskey`（+1 筆）
+- `whisky`（+2 筆）
+- `widow`（+1 筆）
+- `widower`（+2 筆）
+
+## 合併後不再使用的原 id（9）
+
+- 1063
+- 1381
+- 2532
+- 3127
+- 3208
+- 3627
+- 5289
+- 5644
+- 5960
+
+## 既有詞條補入定義（0）
+
+
+## 7,000 字表新增詞條（2974）
+
+- Miss
+- classroom
+- MRT
+- grey
+- colour
+- put on
+- take off
+- one
+- two
+- three
+- four
+- five
+- six
+- seven
+- eight
+- nine
+- ten
+- next to
+- in front of
+- post office
+- cell phone
+- Monday
+- Tuesday
+- Wednesday
+- Thursday
+- Friday
+- Saturday
+- Sunday
+- January
+- February
+- March
+- April
+- May
+- June
+- July
+- August
+- September
+- October
+- November
+- December
+- summer
+- winter
+- stop by
+- candy
+- ice cream
+- English
+- Chinese
+- music class
+- PE
+- whiteboard
+- living room
+- dining room
+- air conditioner
+- trash can
+- phone call
+- table tennis
+- swimming pool
+- police officer
+- should
+- toothpaste
+- comic book
+- video game
+- birthday
+- camping
+- hiking
+- hot dog
+- French fries
+- fried chicken
+- donut
+- wax apple
+- dragon fruit
+- night market
+- shopping mall
+- try on
+- pick up
+- stairs
+- pencil case
+- app
+- mouse pad
+- turn on
+- turn off
+- turn up
+- turn down
+- plug in
+- charger
+- Wi-Fi
+- sleep well
+- cut oneself
+- band-aid
+- test result
+- take care of
+- look after
+- grow up
+- get ready
+- crosswalk
+- traffic light
+- police station
+- fire station
+- gas station
+- parking lot
+- department store
+- window seat
+- aisle seat
+- boarding pass
+- selfie
+- careless
+- impolite
+- impatient
+- hardworking
+- relaxed
+- out of
+- no one
+- everywhere
+- lots of
+- darkness
+- change one's mind
+- agree with
+- depend on
+- belong to
+- take place
+- never mind
+- cheer up
+- calm down
+- hurry up
+- slow down
+- watch out
+- hold on
+- hang out
+- give up
+- keep going
+- work out
+- figure out
+- find out
+- look for
+- look up
+- turn around
+- go ahead
+- come on
+- no problem
+- of course
+- by the way
+- for example
+- as well
+- in fact
+- at least
+- at most
+- so far
+- all the best
+- thank you
+- divorced
+- programmer
+- flight attendant
+- scanner
+- folder
+- paper clip
+- stapler
+- laptop
+- desktop
+- log in
+- log out
+- subject line
+- business card
+- steering wheel
+- speed limit
+- driver's license
+- parking space
+- traffic jam
+- express train
+- High Speed Rail
+- luggage rack
+- check-in
+- baggage claim
+- booking
+- receptionist
+- single room
+- double room
+- twin room
+- key card
+- room service
+- wake-up call
+- appetizer
+- main course
+- service charge
+- stir-fry
+- deep-fry
+- frying pan
+- wok
+- toaster
+- blender
+- boutique
+- grocery store
+- shopping cart
+- shopping basket
+- checkout
+- barcode
+- on sale
+- for sale
+- uniform invoice
+- credit card
+- debit card
+- mobile payment
+- EasyCard
+- price tag
+- fitting room
+- ATM
+- withdrawal
+- savings account
+- remittance
+- interest rate
+- pay back
+- affordable
+- banknote
+- mailbox
+- parcel locker
+- express delivery
+- tracking number
+- postman
+- postal code
+- online shopping
+- shipping fee
+- free shipping
+- emergency room
+- National Health Insurance
+- health insurance card
+- backache
+- sore throat
+- runny nose
+- stuffy nose
+- nauseous
+- diarrhea
+- blood pressure
+- ointment
+- side effect
+- teammate
+- track and field
+- jogging
+- cycling
+- swimming
+- goggles
+- racket
+- shuttlecock
+- dodgeball
+- baseball glove
+- home run
+- strikeout
+- warm up
+- cool down
+- push-up
+- sit-up
+- pull-up
+- dumbbell
+- National Palace Museum
+- box office
+- live band
+- lyrics
+- acoustic guitar
+- electric guitar
+- animation
+- sci-fi
+- action movie
+- horror movie
+- subtitle
+- soundtrack
+- smartphone
+- touchscreen
+- notification
+- settings
+- hotspot
+- Bluetooth
+- battery life
+- power bank
+- flash drive
+- earbuds
+- swipe
+- zoom in
+- zoom out
+- hyperlink
+- browser
+- search engine
+- keyword
+- social media
+- live stream
+- viral
+- influencer
+- elementary school
+- junior high school
+- senior high school
+- vocational school
+- graduate school
+- bachelor's degree
+- master's degree
+- PhD
+- dean
+- syllabus
+- elective
+- skip class
+- take notes
+- midterm exam
+- final exam
+- oral exam
+- passing grade
+- alumni
+- residential area
+- security deposit
+- utilities
+- electricity bill
+- water bill
+- gas bill
+- maintenance fee
+- security guard
+- real estate agent
+- furnished
+- unfurnished
+- rooftop
+- community center
+- public library
+- sports center
+- recycling
+- garbage truck
+- waste separation
+- food waste
+- clogged
+- light bulb
+- dehumidifier
+- air purifier
+- water heater
+- climate change
+- global warming
+- greenhouse effect
+- carbon footprint
+- environmental protection
+- eco-friendly
+- reusable
+- reusable bag
+- tumbler
+- solar energy
+- wind power
+- renewable energy
+- air pollution
+- water pollution
+- noise pollution
+- air quality
+- endangered species
+- Formosan black bear
+- leopard cat
+- national park
+- nature reserve
+- wetland
+- mountain range
+- gorge
+- coral reef
+- ocean current
+- hot spring
+- cold spring
+- rainforest
+- natural resource
+- Lunar New Year
+- red envelope
+- reunion dinner
+- Lantern Festival
+- sky lantern
+- Tomb Sweeping Day
+- incense
+- temple fair
+- pilgrimage
+- Dragon Boat Festival
+- dragon boat
+- rice dumpling
+- Moon Festival
+- mooncake
+- pomelo
+- full moon
+- Ghost Festival
+- fortune-telling
+- fortune teller
+- taboo
+- deity
+- cultural heritage
+- press conference
+- the public
+- illegal
+- semiconductor
+- manufacturing
+- customer service
+- investor
+- stock market
+- marketing
+- terms
+- shipment
+- retailer
+- wholesaler
+- distributor
+- quality control
+- rating
+- empathy
+- forgiveness
+- misunderstanding
+- composed
+- definitely
+- possibly
+- absolutely
+- certainly
+- actually
+- generally
+- frequently
+- rarely
+- eventually
+- immediately
+- recently
+- in addition
+- as a result
+- for instance
+- instead of
+- due to
+- because of
+- thanks to
+- in spite of
+- according to
+- as long as
+- as soon as
+- as well as
+- whichever
+- look forward to
+- put off
+- carry out
+- run out of
+- get along with
+- come up with
+- show up
+- break down
+- call off
+- catch up with
+- keep up with
+- look into
+- look up to
+- look down on
+- make up for
+- make sense
+- pay attention to
+- put up with
+- set up
+- stand out
+- take part in
+- take advantage of
+- turn out
+- watch out for
+- as a matter of fact
+- by accident
+- on purpose
+- in general
+- in particular
+- in advance
+- at once
+- once in a while
+- all of a sudden
+- step by step
+- so far so good
+- day after day
+- sooner or later
+- upside down
+- safe and sound
+- give someone a hand
+- keep in mind
+- make up one's mind
+- have nothing to do with
+- Congratulations!
+- interviewer
+- interviewee
+- qualified
+- skillset
+- recruitment
+- headhunter
+- layoff
+- probation
+- full-time
+- part-time
+- freelancer
+- internship
+- human resources
+- workload
+- overtime
+- burnout
+- work-life balance
+- remote work
+- hybrid work
+- flexible hours
+- annual leave
+- project manager
+- coordination
+- collaborate
+- cross-functional
+- stakeholder
+- KPI
+- minutes
+- brainstorm
+- presenter
+- bullet point
+- visual aid
+- pie chart
+- bar chart
+- fluctuate
+- prioritize
+- deliverable
+- progress report
+- status update
+- follow up
+- follow-up
+- feedback loop
+- bottleneck
+- contingency plan
+- streamline
+- implementation
+- benchmark
+- artificial intelligence
+- machine learning
+- algorithm
+- developer
+- programming
+- cloud storage
+- cloud computing
+- cybersecurity
+- malware
+- ransomware
+- phishing
+- firewall
+- encrypt
+- encryption
+- two-factor authentication
+- biometric
+- fingerprint recognition
+- facial recognition
+- operating system
+- interface
+- user experience
+- bandwidth
+- broadband
+- connectivity
+- glitch
+- debug
+- backup
+- reboot
+- incompatible
+- peripheral
+- tech-savvy
+- digital transformation
+- content creator
+- subscriber
+- trending
+- livestream
+- streamer
+- repost
+- hashtag
+- thumbnail
+- vlog
+- podcast
+- monetize
+- monetization
+- unboxing
+- tutorial
+- streaming platform
+- binge-watch
+- cliffhanger
+- spoiler
+- dub
+- voice actor
+- visual effects
+- virtual reality
+- augmented reality
+- metaverse
+- esports
+- livestream shopping
+- itinerary
+- backpacker
+- tourist attraction
+- scenic spot
+- visa-free
+- validity
+- duty-free shop
+- tax refund
+- quarantine
+- boarding gate
+- luggage allowance
+- carry-on bag
+- checked baggage
+- carousel
+- shuttle bus
+- layover
+- connecting flight
+- direct flight
+- jet lag
+- turbulence
+- seatbelt
+- emergency exit
+- in-flight meal
+- youth hostel
+- bunk bed
+- guesthouse
+- homestay
+- front desk
+- check in
+- check out
+- confirmation
+- cancellation
+- complimentary
+- guided tour
+- tour guide
+- local delicacy
+- bank account
+- checking account
+- compound interest
+- credit score
+- credit limit
+- contactless payment
+- mobile banking
+- foreign exchange
+- exchange rate
+- passive income
+- financial freedom
+- mutual fund
+- ETF
+- capital gain
+- deflation
+- purchasing power
+- life insurance
+- real estate
+- homeowner
+- down payment
+- installment
+- mental health
+- counseling
+- panic attack
+- insomnia
+- wellness
+- balanced diet
+- immune system
+- immunity
+- vaccination
+- hypertension
+- obesity
+- blood test
+- X-ray
+- ultrasound
+- anesthesia
+- intensive care unit
+- first aid
+- first aid kit
+- CPR
+- defibrillator
+- gauze
+- disinfectant
+- blister
+- sprain
+- rehabilitation
+- physical therapy
+- higher education
+- postgraduate
+- doctorate
+- entrance exam
+- major in
+- minor in
+- prerequisite
+- GPA
+- dissertation
+- research paper
+- academic journal
+- peer review
+- citation
+- bibliography
+- plagiarism
+- methodology
+- empirical
+- quantitative
+- qualitative
+- sample size
+- exchange student
+- study abroad
+- commencement
+- aesthetics
+- contemporary art
+- modern art
+- curator
+- landscape painting
+- calligrapher
+- ceramics
+- artisan
+- cultural and creative
+- non-fiction
+- concert hall
+- onstage
+- glove puppetry
+- dance troupe
+- choreographer
+- choreography
+- standing ovation
+- encore
+- architectural
+- civil engineering
+- civil engineer
+- construction site
+- blueprint
+- reinforced concrete
+- earthquake-resistant
+- seismic damper
+- facade
+- interior design
+- interior designer
+- renovate
+- renovation
+- urban renewal
+- zoning
+- green building
+- certification
+- energy-efficient
+- insulation
+- ventilation
+- rooftop garden
+- rainwater harvesting
+- smart home
+- automation
+- digital lock
+- accessibility
+- wheelchair ramp
+- tactile paving
+- soundproofing
+- aesthetic appeal
+- smart farming
+- hydroponics
+- organic farming
+- pesticide
+- pesticide-free
+- irrigation
+- tea plantation
+- tea picking
+- fermentation
+- roasted
+- High Mountain Tea
+- Oolong tea
+- Oriental Beauty
+- Baozhong tea
+- Black tea
+- connoisseur
+- tea ceremony
+- aroma
+- aftertaste
+- brew
+- teacup
+- gastronomy
+- culinary
+- Michelin star
+- street food
+- farm-to-table
+- organic produce
+- food safety
+- traceability
+- food processing
+- preservative
+- additive
+- seasonal
+- specialty dish
+- braise
+- mouthfeel
+- flavor profile
+- supply chain
+- logistics
+- port of entry
+- tariff
+- customs clearance
+- customs broker
+- bill of lading
+- commercial invoice
+- packing list
+- certificate of origin
+- trade barrier
+- free trade agreement
+- World Trade Organization
+- cross-border
+- fulfillment center
+- distribution center
+- last-mile delivery
+- courier
+- in transit
+- out for delivery
+- delivered
+- procurement
+- supplier
+- disruption
+- raw materials
+- assembly line
+- lead time
+- out of stock
+- backorder
+- bulk order
+- minimum order quantity
+- unit price
+- payment terms
+- letter of credit
+- wire transfer
+- fluctuation
+- hedging
+- arbitration
+- sustainability
+- carbon neutral
+- net-zero
+- greenhouse gas
+- circular economy
+- solar power
+- wind turbine
+- geothermal energy
+- hydroelectric
+- fossil fuel
+- single-use
+- plastic ban
+- biodegradable
+- compostable
+- decompose
+- eco-bag
+- zero waste
+- upcycling
+- waste sorting
+- general waste
+- recyclable
+- landfill
+- incinerator
+- electric vehicle
+- battery swapping
+- charging station
+- biodiversity
+- endangered
+- reforestation
+- coral bleaching
+- microplastics
+- green consumerism
+- energy conservation
+- pollutant
+- digital marketing
+- marketing campaign
+- brand identity
+- brand awareness
+- brand loyalty
+- public relations
+- press release
+- target audience
+- consumer behavior
+- segmentation
+- demographic
+- content marketing
+- copywriting
+- copywriter
+- tagline
+- call to action
+- landing page
+- bounce rate
+- conversion rate
+- funnel
+- SEO
+- keyword research
+- organic traffic
+- paid traffic
+- PPC
+- cost per click
+- return on investment
+- return on ad spend
+- micro-influencer
+- sponsored
+- engagement rate
+- click-through rate
+- newsletter
+- open rate
+- unsubscribe
+- customer journey
+- retention
+- churn rate
+- lifetime value
+- A/B testing
+- user persona
+- intellectual property
+- trade secret
+- infringement
+- infringe
+- counterfeit
+- piracy
+- fair use
+- public domain
+- license agreement
+- NDA
+- confidentiality
+- terms and conditions
+- privacy policy
+- breach
+- terminate
+- null and void
+- legally binding
+- plaintiff
+- prosecutor
+- hearing
+- testimony
+- civil rights
+- human rights
+- freedom of speech
+- airline carrier
+- low-cost carrier
+- cockpit
+- priority boarding
+- overhead bin
+- tray table
+- fasten seatbelt
+- oxygen mask
+- life vest
+- cruising altitude
+- in-flight
+- special meal
+- duty-free
+- customs declaration
+- arrival card
+- stopover
+- transfer desk
+- lost and found
+- car rental
+- international driving permit
+- license translation
+- waiver
+- mileage
+- navigation system
+- toll road
+- ETC
+- refuel
+- unleaded
+- roadside assistance
+- flat tire
+- spare tire
+- road trip
+- scenic drive
+- roundabout
+- pedestrian crossing
+- scoreboard
+- halftime
+- triumphant
+- runner-up
+- podium
+- free throw
+- triathlon
+- cardio
+- strength training
+- warm-up
+- cool-down
+- core muscles
+- soreness
+- hydration
+- electrolyte
+- protein shake
+- metabolism
+- body fat
+- personal trainer
+- gym membership
+- treadmill
+- barbell
+- mountaineering
+- hiking trail
+- altitude sickness
+- river tracing
+- scuba diving
+- snorkeling
+- surfing
+- paddleboarding
+- life jacket
+- carabiner
+- headlamp
+- adventurous
+- filmmaking
+- screenplay
+- screenwriter
+- storyboard
+- audition
+- protagonist
+- antagonist
+- supporting actor
+- cameo
+- stunt double
+- cinematography
+- close-up
+- wide shot
+- tracking shot
+- aerial shot
+- lighting
+- soundstage
+- location scouting
+- clapperboard
+- blooper
+- post-production
+- video editing
+- timeline
+- color grading
+- CGI
+- green screen
+- motion capture
+- Foley
+- film score
+- voiceover
+- film festival
+- Golden Horse Awards
+- blockbuster
+- movie review
+- cinematography award
+- meteorology
+- weather forecast
+- atmospheric
+- typhoon warning
+- eye of the typhoon
+- torrential
+- rainstorm
+- monsoon
+- gust
+- storm surge
+- flash flood
+- earthquake drill
+- epicenter
+- magnitude
+- tsunami
+- heatwave
+- cold surge
+- snowfall
+- observatory
+- solar system
+- constellation
+- Milky Way
+- solar eclipse
+- lunar eclipse
+- meteor shower
+- asteroid
+- black hole
+- light-year
+- aerospace
+- space station
+- spacewalk
+- zero gravity
+- ozone layer
+- robotics
+- robotic arm
+- humanoid
+- autonomous
+- self-driving
+- autopilot
+- LiDAR
+- drone
+- drone swarm
+- teleoperation
+- AGV
+- AMR
+- sortation
+- conveyor belt
+- smart city
+- governance
+- smart traffic light
+- congestion
+- surveillance camera
+- smart grid
+- smart meter
+- power outage
+- digitalization
+- open data
+- digital citizen
+- digital twin
+- simulation
+- predictive
+- uptime
+- downtime
+- troubleshoot
+- fault tolerance
+- edge computing
+- latency
+- public safety
+- dispatch
+- civil defense
+- resilient
+- smart nation
+- vulnerability
+- spyware
+- Trojan horse
+- antivirus
+- decryption
+- end-to-end
+- authentication
+- multi-factor authentication
+- one-time password
+- smishing
+- scam
+- scammer
+- anti-fraud
+- impersonate
+- spoofing
+- social engineering
+- data breach
+- identity theft
+- brute force
+- DDoS
+- botnet
+- zero-day
+- penetration testing
+- access control
+- VPN
+- HTTPS
+- incognito mode
+- password manager
+- complex password
+- suspicious link
+- cyber awareness
+- networking
+- elevator pitch
+- small talk
+- icebreaker
+- rapport
+- mutual trust
+- body language
+- eye contact
+- handshake
+- etiquette
+- protocol
+- punctuality
+- dress code
+- attire
+- cross-cultural
+- win-win
+- leverage
+- bargaining power
+- bottom line
+- deadlock
+- tactful
+- active listening
+- thank-you note
+- MOU
+- joint venture
+- alignment
+- conflict resolution
+- mediation
+- assertive
+- personal brand
+- career growth
+- introvert
+- extrovert
+- ambivert
+- resilience
+- self-esteem
+- self-awareness
+- self-discipline
+- intrinsic
+- growth mindset
+- emotional intelligence
+- mindful
+- overwhelmed
+- insecurity
+- imposter syndrome
+- perfectionism
+- procrastination
+- coping mechanism
+- psychological safety
+- peer pressure
+- loneliness
+- compassion fatigue
+- non-judgmental
+- validate
+- validation
+- affirmation
+- self-compassion
+- flow state
+- peak experience
+- subjective well-being
+- altruism
+- altruistic
+- prosocial
+- healing
+- catharsis
+- inner peace
+- tranquility
+- breaking news
+- off the record
+- sensational
+- clickbait
+- misinformation
+- disinformation
+- hoax
+- debunk
+- fact-checking
+- verify
+- media literacy
+- press freedom
+- censorship
+- whistleblower
+- defamation
+- retraction
+- objectivity
+- news anchor
+- live broadcast
+- teleprompter
+- news agency
+- paparazzi
+- public interest
+- deepfake
+- algorithmic
+- echo chamber
+- filter bubble
+- polarization
+- public opinion
+- civic engagement
+- empowerment
+- gourmet
+- Michelin Guide
+- Bib Gourmand
+- signature dish
+- delicacy
+- braised
+- omelet
+- sweet potato ball
+- popcorn chicken
+- bubble tea
+- shaved ice
+- food tour
+- food court
+- queue
+- crave
+- mouth-watering
+- savor
+- chewy
+- savory
+- umami
+- marinate
+- seasoning
+- condiment
+- cilantro
+- star anise
+- tasting menu
+- entrée
+- palate cleanser
+- sommelier
+- food critic
+- culinary heritage
+- automotive
+- lithium-ion
+- range anxiety
+- charging pile
+- fast charging
+- connector
+- regenerative braking
+- kilowatt-hour
+- zero-emission
+- decarbonization
+- powertrain
+- horsepower
+- torque
+- acceleration
+- cruising speed
+- handling
+- chassis
+- aerodynamics
+- sunroof
+- infotainment
+- dashboard
+- heads-up display
+- OTA
+- keyless entry
+- remote start
+- blind spot
+- lane keeping
+- cruise control
+- automated
+- surround view
+- tire pressure
+- electric scooter
+- swapping
+- shared mobility
+- YouBike
+- carpool
+- electronic toll
+- traffic flow
+- electric bus
+- volunteering
+- non-profit
+- philanthropy
+- fundraising
+- gala
+- food bank
+- soup kitchen
+- blood drive
+- homeless
+- underprivileged
+- marginalized
+- nursing home
+- guide dog
+- sign language
+- social worker
+- social enterprise
+- social impact
+- humanitarian
+- disaster relief
+- Red Cross
+- rescue center
+- outreach
+- pro bono
+- mentorship
+- tutoring
+- grassroots
+- civic duty
+- alleviation
+- microfinance
+- fair trade
+- consumerism
+- ripple effect
+- Olympics
+- personal best
+- stamina
+- aerobic
+- anaerobic
+- weightlifting
+- deadlift
+- stretching
+- trainer
+- pacer
+- finish line
+- runner's high
+- trail running
+- bouldering
+- martial arts
+- gymnastics
+- affordable housing
+- studio apartment
+- condominium
+- townhouse
+- realtor
+- viewing
+- ping
+- demolition
+- partition
+- flooring
+- repainting
+- plumbing
+- waterproofing
+- leakage
+- cabinetry
+- countertop
+- range hood
+- induction cooker
+- dishwasher
+- bidet
+- property management
+- sorting
+- amenities
+- title deed
+- property tax
+- valuation
+- homebuyer
+- homeownership
+- co-host
+- condenser mic
+- pop filter
+- BGM
+- RSS feed
+- webcam
+- overlay
+- chroma key
+- super chat
+- moderator
+- CTR
+- CTA
+- crowdfunding
+- royalty-free
+- multi-camera
+- bitrate
+- buffering
+- mastering
+- syncing
+- niche
+- VTuber
+- creative freedom
+- companion animal
+- microchip
+- neuter
+- spay
+- deworming
+- parasite
+- heartworm
+- kibble
+- raw diet
+- probiotics
+- grooming
+- groomer
+- clipping
+- deshedding
+- litter box
+- scratching post
+- catnip
+- leash
+- dog park
+- stroller
+- pet-friendly
+- boarding
+- sitter
+- reinforcement
+- clicker
+- separation anxiety
+- purr
+- knead
+- shedding
+- hypoallergenic
+- mixed breed
+- purebred
+- geriatric
+- arthritis
+- companionship
+- barista
+- espresso
+- pour-over
+- dripper
+- grinder
+- single-origin
+- roaster
+- cupping
+- acidity
+- microfoam
+- latte art
+- cold brew
+- decaf
+- tea leaves
+- high-mountain tea
+- black tea
+- green tea
+- plucking
+- withering
+- oxidation
+- rolling
+- charcoal
+- Gongfu tea
+- Gaiwan
+- infusion
+- floral
+- Huigan
+- astringency
+- teahouse
+- appraisal
+- loose-leaf
+- sachet
+- serenity
+- manga
+- doujinshi
+- fan art
+- cosplay
+- cosplayer
+- photo shoot
+- gaming
+- gamer
+- graphics card
+- handheld
+- gacha
+- RPG
+- open-world
+- sandbox
+- battle royale
+- MOBA
+- shooter
+- dungeon
+- loot
+- skill tree
+- checkpoint
+- speedrun
+- Easter egg
+- cutscene
+- OST
+- concept art
+- figurine
+- blind box
+- gachapon
+- light novel
+- isekai
+- plot twist
+- spin-off
+- fandom
+- indie game
+- mirrorless
+- focal length
+- aperture
+- bokeh
+- shutter speed
+- histogram
+- dynamic range
+- autofocus
+- manual focus
+- leading lines
+- framing
+- negative space
+- golden hour
+- blue hour
+- diffused
+- silhouette
+- tripod
+- gimbal
+- SD card
+- RAW
+- white balance
+- grading
+- preset
+- retouching
+- saturation
+- full-frame
+- shutter count
+- telephoto
+- macro
+- astrophotography
+- aerial
+- photojournalism
+- photobook
+- storytelling
+- healthcare
+- outpatient
+- inpatient
+- triage
+- pediatrician
+- dermatologist
+- ophthalmologist
+- vital signs
+- stethoscope
+- inflammation
+- migraine
+- insulin
+- dosage
+- over-the-counter
+- painkiller
+- antihistamine
+- dizziness
+- nausea
+- stitches
+- urinalysis
+- telemedicine
+- carry-on
+- detector
+- prohibited
+- lithium
+- airbridge
+- purser
+- briefing
+- takeoff
+- landing
+- airplane mode
+- e-Gate
+- sniffer dog
+- damaged
+- connecting
+- nonstop
+- bon voyage
+- checking
+- passbook
+- overdraft
+- floating
+- cash flow
+- emergency fund
+- allocation
+- equities
+- averaging
+- Treasury
+- ROI
+- bull market
+- bear market
+- volatility
+- liquidity
+- amortization
+- revolving
+- cash back
+- payout
+- deductible
+- FIRE
+- filing
+- exemption
+- bracket
+- prudent
+- kettlebell
+- pulley
+- foam roller
+- rep
+- overload
+- hypertrophy
+- spotter
+- bench press
+- plank
+- glutes
+- hamstrings
+- quadriceps
+- biceps
+- triceps
+- abs
+- spinning
+- rower
+- HIIT
+- heart rate
+- metabolic
+- whey
+- creatine
+- bulking
+- cutting
+- consistency
+- organic cotton
+- cashmere
+- denim
+- recycled
+- vintage
+- thrift
+- consignment
+- minimalist
+- layering
+- tailored
+- timeless
+- trench coat
+- blazer
+- cardigan
+- hoodie
+- turtleneck
+- culottes
+- overalls
+- loafers
+- Chelsea boots
+- tote
+- crossbody
+- embroidery
+- stitching
+- alteration
+- seamstress
+- dry cleaning
+- steamer
+- gardening
+- enthusiast
+- houseplant
+- foliage
+- variegation
+- succulent
+- cactus
+- caudex
+- fern
+- mounting
+- moss
+- substrate
+- pumice
+- drainage
+- terracotta
+- repotting
+- root-bound
+- overwatering
+- droopy
+- indirect
+- grow light
+- photosynthesis
+- slow-release
+- mealybug
+- mite
+- propagation
+- node
+- pruning
+- shears
+- sprout
+- seedling
+- raised bed
+- compost
+- worm casting
+- self-sufficient
+- terrarium
+- bonsai
+- botanical
+- patissier
+- sourdough
+- starter
+- gluten
+- banneton
+- autolyse
+- crust
+- crumb
+- scoring
+- baguette
+- croissant
+- cultured butter
+- lamination
+- brioche
+- bagel
+- Shokupan
+- cinnamon roll
+- canele
+- macaron
+- madeleine
+- financier
+- tart
+- eclair
+- custard
+- meringue
+- tempering
+- chiffon
+- whipping cream
+- piping
+- spatula
+- cheesecake
+- mascarpone
+- molten
+- mixer
+- parchment
+- mold
+- preheat
+- caramelization
+- Maillard
+- craftsmanship
+- filmmaker
+- ensemble
+- supporting
+- scouting
+- key light
+- montage
+- rough cut
+- colorist
+- VFX
+- mocap
+- dubbing
+- red carpet
+- indie
+- art-house
+- rom-com
+- stunt
+- monologue
+- subtext
+- symbolism
+- panning
+- streaming
+- ovation
+- grower
+- microclimate
+- residue
+- bio-fertilizer
+- pollination
+- cover crop
+- erosion
+- sourcing
+- food miles
+- farmers market
+- cold chain
+- pre-cooling
+- shelf life
+- experiential
+- paddy
+- transplanting
+- passion fruit
+- sweet potato
+- bamboo shoot
+- stewardship
+- cirque
+- elevation
+- contour
+- acclimatization
+- Diamox
+- trekking
+- gaiter
+- wicking
+- fleece
+- hardshell
+- hypothermia
+- freestanding
+- canister
+- freeze-dried
+- trail mix
+- filtration
+- purification
+- principles
+- pouch
+- bivvy
+- multi-tool
+- communicator
+- beacon
+- hoist
+- thunderstorm
+- inversion
+- panorama
+- sunrise
+- camaraderie
+- humility
+- reverence
+- spatial
+- reinforced
+- seismic
+- damper
+- photovoltaic
+- harvesting
+- daylighting
+- curtain wall
+- cantilever
+- atrium
+- skylight
+- hardwood
+- terrazzo
+- plaster
+- ambient
+- downlight
+- chandelier
+- palette
+- Japandi
+- fixture
+- ramp
+- remodel
+- renewal
+- regeneration
+- reuse
+- skyline
+- walkable
+- pocket park
+- sanctuary
+- rabies
+- scaling
+- preventative
+- pate
+- probiotic
+- scratching
+- dematting
+- balm
+- hydrotherapy
+- behaviorist
+- socialization
+- guarding
+- wagging
+- purring
+- off-leash
+- adoption
+- subcutaneous
+- reimbursement
+- revitalization
+- placemaking
+- depopulation
+- intangible
+- craftsperson
+- apprenticeship
+- weaving
+- indigo
+- lacquerware
+- glassblowing
+- tinplate
+- hub
+- retro
+- shophouse
+- kiln
+- grille
+- packaging
+- pop-up
+- maker
+- residency
+- fireworks
+- ramie
+- totem
+- fieldwork
+- mapping
+- docent
+- symbiosis
+- coexistence
+- retrieval
+- stockout
+- overstock
+- inbound
+- outbound
+- picking
+- cushioning
+- tracking
+- pallet
+- forklift
+- cross-docking
+- EzWay
+- contraband
+- refrigerated
+- logger
+- last-mile
+- doorstep
+- COD
+- dropshipping
+- on-time
+- optimization
+- consolidation
+- velocity
+- conveyor
+- reliability
+- upskilling
+- reskilling
+- credential
+- accreditation
+- asynchronous
+- bootcamp
+- webinar
+- adaptability
+- agility
+- Pomodoro
+- cover letter
+- behavioral
+- pivot
+- mindfulness
+- TOEIC
+- IELTS
+- TOEFL
+- GEPT
+- mock test
+- flashcard
+- shadowing
+- immersion
+- mindset
+- perseverance
+- circadian
+- melatonin
+- cortisol
+- non-REM
+- REM
+- deprivation
+- apnea
+- CPAP
+- variability
+- wind-down
+- blackout
+- earplug
+- white noise
+- optimal
+- aromatherapy
+- chamomile
+- magnesium
+- memory foam
+- latex
+- firmness
+- cervical
+- Egyptian
+- thread count
+- Tencel
+- duvet
+- weighted
+- half-life
+- inertia
+- chronotype
+- refreshed
+- restorative
+- rejuvenation
+- tranquil
+- slumber
+- oceanography
+- scuba
+- regulator
+- buoyancy
+- neoprene
+- decompression
+- snorkel
+- bleaching
+- sunscreen
+- manta
+- plankton
+- anemone
+- nudibranch
+- shipwreck
+- strobe
+- visibility
+- Kuroshio
+- overfishing
+- cleanup
+- aquaculture
+- grouper
+- seabed
+- optical
+- subsea
+- remotely
+- sonar
+- turbine
+- mitigation
+- spinner
+- intertidal
+- mangrove
+- fiddler
+- desalination
+- abyss
+- boundless
+- biotechnology
+- genome
+- editing
+- mutation
+- chromosome
+- biomarker
+- targeted
+- oncology
+- immunotherapy
+- antibody
+- antigen
+- regenerative
+- sterile
+- bioreactor
+- screening
+- pharmacology
+- efficacy
+- toxicity
+- placebo
+- regulatory
+- exclusivity
+- generic
+- biosimilar
+- nanoparticle
+- adjuvant
+- booster
+- enzyme
+- biofuel
+- bioplastic
+- bioethics
+- diagnostic
+- biobank
+- bioinformatics
+- incubator
+- eradication
+- Fintech
+- neobank
+- branchless
+- contactless
+- interoperability
+- onboarding
+- aggregation
+- microloan
+- underwriting
+- fractional
+- robo-advisor
+- rebalance
+- inclusion
+- laundering
+- anomaly
+- invoice
+- cashback
+- redemption
+- compounding
+- accrual
+- sub-account
+- deduction
+- transparency
+- intuitive
+- cashless
+- budgeting
+- tokenization
+- seamless
+- antenna
+- launchpad
+- payload
+- propulsion
+- trajectory
+- microgravity
+- spacesuit
+- rover
+- habitability
+- terraform
+- exoplanet
+- Goldilocks
+- infrared
+- gravitational
+- nebula
+- supernova
+- Mercury
+- Venus
+- Jupiter
+- Saturn
+- meteor
+- corona
+- flare
+- aurora
+- dark matter
+- cosmos
+- stargazing
+- celestial
+- artifact
+- jadeite
+- celadon
+- conservator
+- archival
+- provenance
+- forgery
+- avant-garde
+- immersive
+- biennale
+- pavilion
+- minimalism
+- surrealism
+- impressionism
+- watercolor
+- printmaking
+- fusion
+- adaptive
+- avoidance
+- HUD
+- telemetry
+- over-the-air
+- solid-state
+- degradation
+- supercharger
+- SOC
+- TPMS
+- crash test
+- airbag
+- rigidity
+- valet
+- dashcam
+- fatality
+- mobility
+- braking
+- streamlined
+- performing
+- acoustics
+- proscenium
+- turntable
+- backstage
+- dressing room
+- prop
+- soundboard
+- overture
+- ballad
+- duet
+- puppetry
+- Gezai
+- acrobatic
+- intermission
+- foyer
+- matinee
+- improvisation
+- resonance
+- unforgettable
+- transcendence
+- living
+- oolong
+- leafhopper
+- hand-picked
+- tossing
+- fixation
+- roasting
+- gaiwan
+- steeping
+- muscatel
+- theanine
+- catechin
+- pairing
+- elegance
+- palate
+- infuse
+- unfurl
+- mellow
+- crisp
+- urbanization
+- permeable
+- cistern
+- louver
+- circularity
+- microgrid
+- shaving
+- geothermal
+- chiller
+- footprint
+- embodied
+- dimming
+- non-toxic
+- acoustic
+- walkability
+- canopy
+- composting
+- compactor
+- greywater
+- livability
+- thriving
+- transformer
+- parameter
+- multimodal
+- reasoning
+- hallucination
+- tuning
+- vector
+- workflow
+- orchestration
+- actuator
+- bipedal
+- dexterity
+- inference
+- accelerator
+- copilot
+- synthesis
+- diffusion
+- watermark
+- democratization
+- augmented
+- synergy
+- exponential
+- paradigm
+- empower
+- foundry
+- cleanroom
+- lithography
+- ultraviolet
+- plasma
+- photomask
+- etching
+- deposition
+- planarization
+- implantation
+- transistor
+- nanosheet
+- wafer
+- CoWoS
+- interposer
+- dissipation
+- fabless
+- EDA
+- tape-out
+- upstream
+- photoresist
+- grid
+- utilization
+- ASIC
+- chiplet
+- powerhouse
+- supremacy
+- cornerstone
+- CBAM
+- offset
+- baseline
+- additionality
+- permanence
+- afforestation
+- sequestration
+- materiality
+- greenwashing
+- verification
+- neutrality
+- feedstock
+- electrification
+- taxonomy
+- divestment
+- accountability
+- invasive
+- robotic
+- tremor
+- endoscope
+- incision
+- bleeding
+- imaging
+- radiography
+- nodule
+- lesion
+- aneurysm
+- wearable
+- oximeter
+- sphygmomanometer
+- pathology
+- profiling
+- sepsis
+- exoskeleton
+- prosthesis
+- implant
+- holistic
+- epistemology
+- deductive
+- fallacy
+- utilitarianism
+- fairness
+- inalienable
+- determinism
+- consciousness
+- existentialism
+- absurdity
+- nihilism
+- stoicism
+- dichotomy
+- skepticism
+- dialectic
+- nuance
+- deliberation
+- introspection
+- moderation
+- flourishing
+- maritime
+- seaport
+- containerization
+- megaship
+- gantry
+- stevedoring
+- tugboat
+- berth
+- dredging
+- bunkering
+- cobia
+- seaweed
+- mariculture
+- cetacean
+- stranding
+- seagrass
+- hydrothermal
+- bathymetry
+- submersible
+- wayfinding
+- archipelago
+- basalt
+- weir
+- eco-tourism
+- aging
+- gerontology
+- respite
+- dementia
+- reminisce
+- wandering
+- detection
+- assistive
+- rollator
+- railing
+- stairlift
+- ulcer
+- repositioning
+- dysphagia
+- thickener
+- pureed
+- sarcopenia
+- hearing aid
+- cataract
+- multifocal
+- incontinence
+- intergenerational
+- barrier-free
+- cherished
+- commercialization
+- fairing
+- countdown
+- liftoff
+- supersonic
+- staging
+- apogee
+- thruster
+- maneuver
+- deorbit
+- visor
+- tether
+- airlock
+- docking
+- module
+- cupola
+- overview
+- curvature
+- regolith
+- gateway
+- martian
+- explorer
+- woodworking
+- joinery
+- mortise
+- tenon
+- dovetail
+- miter
+- cypress
+- aromatic
+- warp
+- chisel
+- gouge
+- sandpaper
+- sanding
+- lathe
+- workbench
+- clamp
+- veneer
+- inlay
+- resin
+- slab
+- beeswax
+- lacquer
+- forestry
+- spruce
+- mahogany
+- ebony
+- tactile
+- imperfection
+- heirloom
+- bespoke
+- neuroscience
+- neuron
+- synapse
+- neurotransmitter
+- dopamine
+- serotonin
+- endorphin
+- oxytocin
+- cortex
+- amygdala
+- hippocampus
+- plasticity
+- myelination
+- spindle
+- glymphatic
+- amyloid
+- coherence
+- biofeedback
+- cognition
+- recharge
+- awakening
+- agroecology
+- apiculture
+- pollinator
+- honeycomb
+- nectar
+- longan
+- propolis
+- pheromone
+- herbicide
+- sod
+- microorganism
+- humus
+- loam
+- tillage
+- biochar
+- legume
+- germination
+- seasonality
+- terroir
+- threshing
+- milling
+- freshness
+- symbiotic
+- decibel
+- condenser
+- cardioid
+- shockmount
+- baffle
+- diffuser
+- workstation
+- multitrack
+- mixing
+- equalizer
+- compressor
+- limiter
+- reverb
+- episodic
+- narration
+- Dolby
+- vinyl
+- tonearm
+- cartridge
+- stylus
+- preamp
+- analog
+- fidelity
+- lossless
+- timbre
+- distortion
+- bliss
+- sprue
+- nipper
+- nub
+- putty
+- seam
+- primer
+- airbrush
+- respirator
+- acrylic
+- enamel
+- thinner
+- sable
+- basecoat
+- drybrushing
+- glazing
+- non-metallic
+- weathering
+- chipping
+- diorama
+- static
+- flocking
+- photoreactive
+- ultrasonic
+- curing
+- etched
+- decal
+- topcoat
+- magnifying
+- microcosm
+- acclimation
+- hypoxia
+- acetazolamide
+- scree
+- ultralight
+- footwear
+- crampon
+- axe
+- merino
+- bivy
+- geodesic
+- mummy
+- offline
+- trowel
+- serow
+- pheasant
+- juniper
+- rhododendron
+- mossy
+- authenticity
+- reversible
+- documentation
+- interlocking
+- carving
+- polychrome
+- gilding
+- pigment
+- varnish
+- flaking
+- consolidate
+- shard
+- armature
+- mortar
+- swallowtail
+- glaze
+- masonry
+- eave
+- termite
+- micro-climate
+- immortality
+- boulangerie
+- levain
+- kneading
+- proofing
+- lame
+- viennoiserie
+- patisserie
+- ganache
+- praline
+- choux
+- mille-feuille
+- sablée
+- mousse
+- entremets
+- coulis
+- pipette
+- yeast
+- decadence
+- trench
+- bathyscaphe
+- unmanned
+- manipulator
+- hydrostatic
+- hull
+- smoker
+- chemosynthesis
+- vent
+- sulfide
+- seep
+- tubeworm
+- amphipod
+- snailfish
+- bioluminescence
+- photophore
+- seismology
+- subduction
+- magma
+- spreading
+- benthic
+- pelagic
+- pristine
+- expanse
+- cross-laminated
+- glulam
+- platinum
+- graywater
+- bioswale
+- biophilia
+- modular
+- prefabrication
+- forensics
+- latent
+- fingerprint
+- luminol
+- splatter
+- ballistics
+- casing
+- autopsy
+- toxicology
+- swab
+- genealogy
+- cybercrime
+- seizure
+- blocker
+- hash
+- volatile
+- metadata
+- geotag
+- brute-force
+- subpoena
+- admissible
+- exoneration
+- vigilance
+- quay
+- stacking
+- throughput
+- intermodal
+- lading
+- demurrage
+- forwarder
+- reefer
+- perishable
+- racking
+- shore-power
+- lifeline
+- heartbeat
+- nacelle
+- monopile
+- scour
+- substation
+- laying
+- gangway
+- curtailment
+- intermittency
+- inverter
+- decentralization
+- renewable
+- localization
+- quantum
+- mechanics
+- qubit
+- superposition
+- entanglement
+- decoherence
+- cryostat
+- Kelvin
+- superconducting
+- ion
+- photonic
+- processor
+- fault-tolerant
+- factoring
+- eigensolver
+- cryptography
+- lattice
+- hardness
+- eavesdropping
+- teleportation
+- repeater
+- compilation
+- toolkit
+- scalability
+- cultivar
+- micro-lot
+- processing
+- washed
+- degassing
+- burr
+- uniformity
+- pourover
+- extraction
+- refractometer
+- portafilter
+- tamping
+- channeling
+- crema
+- latte
+- sweetness
+- euphoria
+- astrobiology
+- habitable
+- biosignature
+- extremophile
+- terraforming
+- perchlorate
+- reactor
+- electrolysis
+- distillation
+- shielding
+- jetpack
+- atrophy
+- centrifuge
+- aerobraking
+- heatshield
+- retro-rocket
+- touchdown
+- spectroscopy
+- plume
+- interstellar
+- overpass
+- roadkill
+- nocturnal
+- camera trap
+- deployment
+- footage
+- thermal
+- metabarcoding
+- assay
+- non-invasive
+- bioacoustics
+- soundscape
+- spectrogram
+- classifier
+- poaching
+- snare
+- endemic
+- flagship
+- awareness
+- guardianship
+- sunshield
+- redshift
+- Lagrange
+- cryocooler
+- accretion
+- singularity
+- interferometer
+- relativity
+- spacetime
+- merger
+- kilonova
+- nucleosynthesis
+- pulsar
+- neutron
+- magnetar
+- quasar
+- cosmic
+- photon
+- calibration
+- astrophysics
+- cosmology
+- infinity
+- epiphany
+- inhibitor
+- receptor
+- chimeric
+- leukapheresis
+- transduction
+- proliferation
+- conjugate
+- linker
+- internalization
+- specificity
+- cohort
+- blinded
+- endpoint
+- remission
+- sequencing
+- biopsy
+- cytokine
+- escalation
+- tolerated
+- husbandry
+- fractionator
+- biofilter
+- ammonia
+- nitrite
+- nitrate
+- salinity
+- zooxanthellae
+- fragmentation
+- spawning
+- larva
+- diver
+- feeding
+- conditioning
+- veterinary
+- jellyfish
+- pulsating
+- kelp
+- lutherie
+- luthier
+- tonewood
+- rosewood
+- bracing
+- strut
+- rosette
+- soundhole
+- purfling
+- binding
+- kerfing
+- bending
+- truss
+- fret
+- fretboard
+- peg
+- fingerboard
+- soundpost
+- tailpiece
+- chinrest
+- shellac
+- horology
+- horologist
+- tourbillon
+- escapement
+- hairspring
+- chime
+- gong
+- perpetual
+- moonphase
+- lazuli
+- bluing
+- pinion
+- perlage
+- anglage
+- rotor
+- winding
+- chronometer
+- loupe
+- tweezers
+- sapphire
+- caseback
+- baseload
+- gradient
+- borehole
+- rig
+- cementation
+- enhanced
+- fracturing
+- granite
+- permeability
+- reinjection
+- depletion
+- brine
+- corrosion
+- separator
+- binary
+- exchanger
+- supercritical
+- emissions
+- resiliency
+- drilling
+- computing
+- headset
+- passthrough
+- waveguide
+- foveated
+- sickness
+- mesh
+- occlusion
+- avatar
+- telepresence
+- raytracing
+- haptic
+- electromyography
+- ergonomics
+- mixed
+- hologram
+- volumetric
+- photogrammetry
+- training
+- circulator
+- searing
+- spherification
+- alginate
+- membrane
+- nitrogen
+- freezing
+- siphon
+- emulsion
+- emulsifier
+- lecithin
+- hydrocolloid
+- xanthan
+- agar
+- gelification
+- clarification
+- consommé
+- rotary
+- evaporator
+- tasting
+- plating
+- ecstasy
+- precipitate
+- sulfur
+- manganese
+- cobalt
+- seamount
+- crawler
+- sediment
+- turbidity
+- smothering
+- exploitation
+- moratorium
+- titanium
+- biofouling
+- precautionary
+- endonuclease
+- cleavage
+- nickase
+- off-target
+- knockout
+- knockin
+- transcription
+- epigenetics
+- methylation
+- lysate
+- dispenser
+- pathway
+- flux
+- codon
+- biocontainment
+- biosecurity
+- ingenuity
+- high-speed
+- precast
+- viaduct
+- hood
+- pantograph
+- catenary
+- traction
+- bogie
+- oscillation
+- wheelset
+- welding
+- turnout
+- signaling
+- headway
+- depot
+- overhaul
+- grinding
+- seismometer
+- subsidence
+- artery
+- reverberation
+- shoebox
+- envelopment
+- reflector
+- convex
+- absorption
+- coefficient
+- decoupling
+- duct
+- silencer
+- cladding
+- seating
+- occupancy
+- ray-tracing
+- ephemeris
+- trilateration
+- pseudorange
+- ionosphere
+- troposphere
+- multipath
+- kinematic
+- correction
+- positioning
+- convergence
+- augmentation
+- inertial
+- coupling
+- dead-reckoning
+- jamming
+- heading
+- waypoint
+- tractor
+- geofencing
+- datum
+- crustal
+- timing
+- prospecting
+- equilibrium
+- halo
+- propellant
+- slingshot
+- flyby
+- rendezvous
+- proximity
+- sampling
+- re-entry
+- ablative
+- curation
+- amino
+- refinery
+- deflection
+- impactor
+- parabolic
+- electrolyzer
+- catalyst
+- dehydration
+- compression
+- composite
+- embrittlement
+- permeation
+- precooling
+- hydride
+- desorption
+- liquefaction
+- cryogenic
+- byproduct
+- heavy-duty
+- locomotive
+- steelmaking
+- cavern
+- roadmap
+- dispersion
+- articulation
+- collocation
+- versatility
+- wings

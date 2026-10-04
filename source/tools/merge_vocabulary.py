@@ -26,17 +26,19 @@
      level 取最小、list 取最基礎（basic > advance > expert）。
   3. id：每個原詞條的第一字形沿用原 id；同名合併時保留最小原 id；
      其餘拆出字形自 6013 起依序編號，之後才是批次檔新詞條。
-  4. CEFR 分級整合規則（選項 A）：
-     - 整合 7,000 實用單字批次、Oxford 3000/5000、CEFR-J 1.5、Octanove C1/C2 等公開權威字表。
-     - 若單字在單一或多個來源中有多個分級，一律取最低／最基礎級別（A1 < A2 < B1 < B2 < C1 < C2）。
-     - 支持基礎屈折字形對齊（如單複數拆出的 gloves 對齊 glove）。
-     - 所有來源皆無收錄者維持 null。
+  4. 分級整合為 level 物件：
+     - cefr: 整合 7,000 實用單字批次、Oxford 3000/5000、CEFR-J 1.5、Octanove C1/C2 等公開權威字表。
+       若單字在單一或多個來源中有多個分級，一律取最低／最基礎級別（A1 < A2 < B1 < B2 < C1 < C2）。
+       支持基礎屈折字形對齊（如單複數拆出的 gloves 對齊 glove）；所有來源皆無收錄者維持 null。
+     - tw_7000: 台灣大考中心高中 7,000 單字 1–6 級（7,000 新詞為 null）。
+     - list: 國中小基礎／進階／挑戰字表 basic / advance / expert（7,000 新詞為 null）。
   5. 批次檔單字：
      - 已存在：若 definition 為空則補入批次檔定義；不補例句。
-     - 不存在：新增詞條，level／list 為 null，category／explains 為空陣列，
+     - 不存在：新增詞條，level 物件中 tw_7000／list 為 null，category／explains 為空陣列，
        topic 去重放入 scenario，例句去重保留，pos 轉為 parts_of_speech 陣列。
   6. GUID 使用 UUID v5（固定命名空間），單字依「word」、例句依「word＋en＋zh」、
      explain 依「word＋en」計算，全檔不重複且重跑結果相同。
+  7. 例句補齊：少於 3 筆例句者由 tools/supplementary_examples.json 依序補足至至少 3 筆。
 """
 
 from __future__ import annotations
@@ -57,6 +59,7 @@ BATCH_GLOB = os.path.join(SOURCE_DIR, "vocabulary_*.json")
 OUT_PATH = os.path.join(SOURCE_DIR, "child-review-vocabulary-database-merged.json")
 DEFAULT_REPORT = os.path.join(SOURCE_DIR, "tools", "merge_vocabulary_report.md")
 CEFR_SOURCES_DIR = os.path.join(SOURCE_DIR, "tools", "cefr_sources")
+SUPPLEMENTARY_EXAMPLES_PATH = os.path.join(SOURCE_DIR, "tools", "supplementary_examples.json")
 
 GUID_NAMESPACE = uuid.uuid5(uuid.NAMESPACE_URL, "englishlearning/child-review-vocabulary")
 CEFR_ORDER = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5, "C2": 6}
@@ -256,6 +259,7 @@ def main() -> None:
         "batch_matched_def_filled": [],
         "cefr_resolution_sample": [], # 記錄多來源等級取低者的範例
         "new_from_batch": [],
+        "supplemented_examples": [],  # (word, 補充筆數)
     }
 
     # 1. 拆分 DB 詞條 ------------------------------------------------------
@@ -395,6 +399,17 @@ def main() -> None:
     for form, item in words.items():
         item["cefr"] = resolve_cefr(form)
 
+    # 補齊少於 3 筆例句的單字（依據 tools/supplementary_examples.json）
+    if os.path.exists(SUPPLEMENTARY_EXAMPLES_PATH):
+        with open(SUPPLEMENTARY_EXAMPLES_PATH, encoding="utf-8") as f:
+            supp_data = json.load(f)
+        for form, item in words.items():
+            if len(item["examples"]) < 3 and form in supp_data:
+                needed = 3 - len(item["examples"])
+                supp_list = supp_data[form][:needed]
+                item["examples"] = union_examples(item["examples"], supp_list)
+                report["supplemented_examples"].append((form, len(supp_list)))
+
     # 6. 編 id（先 DB 拆出字形，再批次新詞） -------------------------------
     next_id = max_original_id + 1
     for group in (False, True):
@@ -409,9 +424,11 @@ def main() -> None:
         entries.append({
             "id": item["orig_id"],
             "guid": guid("word", form),
-            "level": item["level"],
-            "list": item["list"],
-            "cefr": item["cefr"],
+            "level": {
+                "cefr": item["cefr"],
+                "tw_7000": item["level"],
+                "list": item["list"],
+            },
             "category": item["category"],
             "scenario": item["scenario"],
             "word": form,
@@ -457,6 +474,15 @@ def main() -> None:
         f"guid 為 UUID v5，命名空間 {GUID_NAMESPACE}；單字以 word、例句以 word＋en＋zh、"
         "explain 以 word＋en 計算，內容不變則重跑結果相同，可作為音檔檔名。"
     )
+    meta["example_supplement_rule_zh_tw"] = (
+        "少於 3 筆例句的單字詞條（因複合詞拆分導致），由 tools/supplementary_examples.json 依序補足至至少 3 筆例句；"
+        f"例句以 word＋en＋zh 生成唯一 UUID v5 GUID（命名空間 {GUID_NAMESPACE}）。"
+    )
+    meta["level_rule_zh_tw"] = (
+        "level 物件整合三種分級維度：cefr（歐洲語言共同架構 A1–C2）、"
+        "tw_7000（台灣大考中心高中 7,000 單字 1–6 級）、"
+        "list（國中小基礎／進階／挑戰字表 basic / advance / expert）。"
+    )
 
     def count(key_fn):
         c = Counter(key_fn(e) for e in entries)
@@ -469,10 +495,13 @@ def main() -> None:
         "entries_from_split_forms": sum(1 for e in entries if max_original_id < e["id"] and e["word"] not in report["new_from_batch"]),
         "entries_new_from_7000_list": len(report["new_from_batch"]),
         "merged_duplicate_forms": len(report["collisions"]),
-        "entries_by_list": count(lambda e: e["list"]),
-        "entries_by_level": count(lambda e: e["level"]),
-        "entries_by_cefr": count(lambda e: e["cefr"]),
+        "entries_by_list": count(lambda e: e["level"]["list"]),
+        "entries_by_tw_7000": count(lambda e: e["level"]["tw_7000"]),
+        "entries_by_cefr": count(lambda e: e["level"]["cefr"]),
         "entries_without_definition": sum(1 for e in entries if not e["definition"]),
+        "entries_supplemented_examples": len(report["supplemented_examples"]),
+        "total_supplemented_examples": sum(x[1] for x in report["supplemented_examples"]),
+        "entries_with_fewer_than_3_examples": sum(1 for e in entries if len(e["examples"]) < 3),
         "total_examples": sum(len(e["examples"]) for e in entries),
         "total_explains": sum(len(e["explains"]) for e in entries),
     }
@@ -499,6 +528,7 @@ def write_report(path, r, stats):
     section("拆分的原詞條", r["split_entries"], lambda x: f"`{x[0]}` → {', '.join(x[1])}")
     section("分不到例句、改複製全部例句的字形", r["fallback_examples"], lambda x: f"`{x[0]}` → {x[1]}")
     section("同名合併", r["collisions"], lambda x: f"`{x[0]}` ← {' ｜ '.join(x[1])}")
+    section("少於 3 筆例句並由補充檔補足的單字", r["supplemented_examples"], lambda x: f"`{x[0]}`（+{x[1]} 筆）")
     section("合併後不再使用的原 id", r["dropped_ids"], str)
     section("既有詞條補入定義", r["batch_matched_def_filled"], str)
     section("7,000 字表新增詞條", r["new_from_batch"], str)

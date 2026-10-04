@@ -1,0 +1,536 @@
+#!/usr/bin/env python3
+"""建立少於 3 筆例句的 133 個單字之補充例句庫（共 204 筆）。
+
+包含 71 個需補 2 筆例句的單字與 62 個需補 1 筆例句的單字。
+皆採繁體中文與適齡 CEFR 程度例句。
+"""
+
+import json
+import os
+import re
+
+EXAMPLES_DATA = {
+    # ---------------- 需補 2 筆例句（71 個單字）----------------
+    "a": [
+        {"en": "There is a fluffy cat sleeping peacefully under the tree.", "zh": "有一隻毛茸茸的貓在樹下安詳地睡覺。"},
+        {"en": "Mom bought me a new blue backpack for the new school year.", "zh": "媽媽為新學年買了一個新的藍色書包給我。"}
+    ],
+    "your": [
+        {"en": "Don't forget to pack your English textbook before going to sleep.", "zh": "睡覺前別忘了把你的英文課本放進書包。"},
+        {"en": "Is this red water bottle on the dining table your sister's or yours?", "zh": "餐桌上這個紅色水壺是你妹妹的還是你的？"}
+    ],
+    "their": [
+        {"en": "The children neatly placed their backpacks and coats in the classroom lockers.", "zh": "孩子們整齊地將他們的書包與外套放進教室置物櫃裡。"},
+        {"en": "The swallows returned in spring to rebuild their cozy mud nest.", "zh": "燕子在春天歸來，重新築起牠們溫馨的泥巢。"}
+    ],
+    "woods": [
+        {"en": "Autumn painted the quiet woods in vibrant shades of gold and amber.", "zh": "秋天將寧靜的樹林染上了充滿生機的金黃與琥珀色彩。"},
+        {"en": "The scouts pitched their tents at a clearing deep inside the woods.", "zh": "童軍們將帳篷搭建在樹林深處的一處林間空地。"}
+    ],
+    "widower": [
+        {"en": "The gentle widower planted a fragrant rose bush in memory of his late wife.", "zh": "這位溫和的鰥夫種了一株芬芳的玫瑰花叢來紀念他過世的妻子。"},
+        {"en": "Community volunteer circles help each recent widower adjust to independent daily life.", "zh": "社區志工圈協助每位剛喪偶的男士適應獨立的日常生活。"}
+    ],
+    "whisky": [
+        {"en": "The famous distillery in Yilan produces award-winning single malt whisky.", "zh": "位於宜蘭的知名釀酒廠生產屢獲國際大獎的單一麥芽威士忌。"},
+        {"en": "Tourists visited the highland storehouse to learn how traditional whisky is distilled.", "zh": "遊客們參觀高地倉庫，了解傳統威士忌是如何蒸餾釀造的。"}
+    ],
+    "wage": [
+        {"en": "Hospital staff campaigned for a fair living wage reflecting their tireless dedication.", "zh": "醫院工作人員爭取能反映其不知疲倦付出的合理基本生活工資。"},
+        {"en": "He earned a reliable weekly wage while working as an apprentice carpenter.", "zh": "他擔任學徒木匠期間每週賺取一份穩定的工資。"}
+    ],
+    "underground": [
+        {"en": "Commuters in London rely on the underground transit network during rush hour.", "zh": "倫敦的通勤族在尖峰時段仰賴地下鐵交通網路。"},
+        {"en": "Rabbits dig complex underground burrows to shelter their young from natural predators.", "zh": "兔子挖掘複雜的地下洞穴，以保護幼兔免受天敵侵害。"}
+    ],
+    "tactic": [
+        {"en": "Using colorful flashcards is a proven study tactic for mastering new vocabulary.", "zh": "使用色彩鮮豔的抽認卡是掌握新單字的有效學習策略。"},
+        {"en": "The chess player employed a clever defensive tactic to protect her king.", "zh": "這位西洋棋選手採取巧妙的防守策略以保護自己的國王。"}
+    ],
+    "subway": [
+        {"en": "Taking the subway is often significantly faster than sitting in heavy traffic.", "zh": "搭乘地下鐵通常比塞在壅塞的車陣中快得多。"},
+        {"en": "She grabbed an overhead handrail as the subway train sped through the tunnel.", "zh": "當地下鐵列車高速穿過隧道時，她抓住了頭頂上方的扶手。"}
+    ],
+    "sportswoman": [
+        {"en": "The teenage sportswoman broke the national record in the high jump competition.", "zh": "這位青少年女運動員在跳高比賽中打破了全國紀錄。"},
+        {"en": "She was honored as the premier sportswoman of the year for her archery triumphs.", "zh": "她因在射箭項目上的輝煌勝利而榮獲年度最佳女運動員殊榮。"}
+    ],
+    "scales": [
+        {"en": "The fish vendor placed the fresh salmon onto the hanging scales to determine its weight.", "zh": "魚販將新鮮鮭魚放在吊秤上以確定其重量。"},
+        {"en": "Iridescent emerald scales covered the serpent, glistening brightly under the morning sun.", "zh": "彩虹般光澤的翠綠鱗片覆蓋著這條蛇，在晨光下閃閃發亮。"}
+    ],
+    "saving": [
+        {"en": "Switching off unnecessary appliances yields noticeable electricity saving over time.", "zh": "關閉不必要的電器長期下來能帶來顯著的節電效果。"},
+        {"en": "Booking your train tickets several weeks early offers a substantial fare saving.", "zh": "提前數週預訂火車票可享有相當可觀的票價折扣節省。"}
+    ],
+    "saleswoman": [
+        {"en": "The boutique saleswoman helped my mother pick out a flattering evening dress.", "zh": "精品店的女店員熱心協助我母親挑選了一件得體的晚禮服。"},
+        {"en": "As a top-tier saleswoman, she met all of her annual revenue goals ahead of schedule.", "zh": "作為一名頂尖的女性業務員，她提前達成了所有的年度業績目標。"}
+    ],
+    "salesperson": [
+        {"en": "The attentive salesperson demonstrated how each button on the digital camera functions.", "zh": "那位細心的銷售人員示範了數位相機上每個按鈕的功能。"},
+        {"en": "A courteous salesperson always listens attentively to what the shopper truly needs.", "zh": "有禮貌的銷售人員總是會專注聆聽顧客的真實需求。"}
+    ],
+    "salesman": [
+        {"en": "The traveling salesman drove across three counties each week to supply local pharmacies.", "zh": "這位外勤業務員每週驅車穿梭三個郡縣，為各地藥局補貨。"},
+        {"en": "An honest car salesman clearly explained the maintenance history of the used vehicle.", "zh": "那位誠實的汽車業務員清楚說明了該輛二手車的保養歷史。"}
+    ],
+    "resentment": [
+        {"en": "Holding on to old resentment only burdens your mind and prevents genuine happiness.", "zh": "緊抓著陳年怨懟不放只會加重心靈負擔，並阻礙真正的快樂。"},
+        {"en": "Transparent dialogue between coworkers prevents toxic resentment from forming.", "zh": "同事之間透明公開的對話能防止不良芥蒂與不滿的滋生。"}
+    ],
+    "refinement": [
+        {"en": "Continuous design refinement transformed the bulky prototype into a sleek handheld device.", "zh": "持續的設計精進將原本笨重的原型機轉化為輕巧優雅的手持裝置。"},
+        {"en": "Years of deliberate practice brought the violinist's phrasing to exceptional refinement.", "zh": "多年的刻意練習使這位小提琴家的樂句詮釋達到了無與倫比的細膩境界。"}
+    ],
+    "railway": [
+        {"en": "The scenic mountain railway carries travelers past towering cliffs and cascading waterfalls.", "zh": "風景優美的高山鐵路載著旅客穿過高聳峭壁與飛瀑流泉。"},
+        {"en": "Workers inspected the railway tracks thoroughly before authorizing morning trains to run.", "zh": "工人們在核准晨間列車行駛前，徹底檢查了鐵軌狀態。"}
+    ],
+    "punish": [
+        {"en": "The referee did not hesitate to punish blatant fouls with yellow penalty cards.", "zh": "裁判毫不猶豫地出示黃牌警告來懲罰明顯的犯規動作。"},
+        {"en": "Teachers prefer to guide and encourage students rather than punish minor slip-ups.", "zh": "比起懲罰微小的過失，老師更傾向於引導與鼓勵學生。"}
+    ],
+    "prince": [
+        {"en": "The generous prince invited musicians and storytellers from all across the realm.", "zh": "慷慨的王子邀請了來自王國各地的音樂家與說書人。"},
+        {"en": "In classic fairy tales, a kiss from a kind maiden restores the transformed prince.", "zh": "在經典童話中，善良少女的一吻使變身的王子恢復了原貌。"}
+    ],
+    "postponement": [
+        {"en": "The unexpected postponement of the championship tournament gave the injured star time to heal.", "zh": "錦標賽的意外延期讓受傷的明星選手獲得了寶貴的康復時間。"},
+        {"en": "Torrential rain forced the postponement of the outdoor graduation ceremony until Saturday.", "zh": "暴雨迫使戶外畢業典禮延期至週六舉行。"}
+    ],
+    "payment": [
+        {"en": "You will receive an electronic confirmation receipt right after completing your payment.", "zh": "完成付款後，您將立即收到一份電子確認收據。"},
+        {"en": "Many modern convenience stores in Taiwan support convenient mobile contactless payment.", "zh": "台灣許多現代便利商店都支援便捷的行動感應式支付。"}
+    ],
+    "pavement": [
+        {"en": "Pigeons pecked at breadcrumbs scattered along the smooth stone pavement.", "zh": "鴿子啄食著散落在平整石板人行道上的麵包屑。"},
+        {"en": "City maintenance crews repaired deep cracks on the brick pavement after winter frosts.", "zh": "市府養護人員在冬霜過後修補了紅磚人行道上的深長裂縫。"}
+    ],
+    "parent": [
+        {"en": "Every caring parent desires to provide a nurturing and safe home for their children.", "zh": "每位關愛孩子的為人父母者，都渴望為孩子提供一個溫馨而安全的家庭。"},
+        {"en": "Each parent was invited to join the parent-teacher association gathering this evening.", "zh": "每位家長都受邀參加今晚舉行的家長與教師座談聯誼會。"}
+    ],
+    "nope": [
+        {"en": "Did anyone forget their umbrella in the hallway? Nope, everybody packed theirs.", "zh": "有人把雨傘忘在走廊上嗎？沒有喔，大家都收好自己的了。"},
+        {"en": "When asked if he wanted broccoli on his pizza, the toddler laughed and answered, Nope!", "zh": "當被問到披薩上要不要加青花菜時，小幼童笑著回答：才不要！"}
+    ],
+    "move": [
+        {"en": "Could you please help me move this wooden desk closer to the window?", "zh": "你能幫忙把這張木製書桌移近窗邊一點嗎？"},
+        {"en": "Gentle ocean currents move the colorful seaweed back and forth along the coral reef.", "zh": "溫柔的洋流帶動珊瑚礁旁的彩色海草在水波中前後擺動。"}
+    ],
+    "metro": [
+        {"en": "The Kaohsiung Metro makes visiting the harbor pier both fast and comfortable.", "zh": "高雄捷運讓前往港灣碼頭的行程既迅速又舒適。"},
+        {"en": "Passengers waited patiently on the metro platform behind the designated safety line.", "zh": "乘客們在捷運月台黃色安全線後方耐心等候列車進站。"}
+    ],
+    "measures": [
+        {"en": "The municipal government took swift measures to clear fallen branches after the storm.", "zh": "風災過後，市政府迅速採取各項應變措施以清除倒塌的樹枝。"},
+        {"en": "A tailor measures client shoulders carefully to ensure a perfectly fitted bespoke suit.", "zh": "裁縫師仔細量測顧客的肩寬，以確保量身定制的西裝完美合身。"}
+    ],
+    "mankind": [
+        {"en": "The development of clean renewable energy is vital for the future survival of mankind.", "zh": "開發潔淨的可再生能源對人類未來的生存至關重要。"},
+        {"en": "Space exploration expands the horizons of scientific curiosity shared by all mankind.", "zh": "太空探索拓展了全體人類所共有的科學求知視野。"}
+    ],
+    "lab": [
+        {"en": "Students must wear protective goggles whenever they enter the chemistry lab.", "zh": "學生進入化學實驗室時必須隨時配戴防護護目鏡。"},
+        {"en": "Technicians analyzed soil and water samples under high-power microscopes in the testing lab.", "zh": "技術員在檢驗實驗室的高倍顯微鏡下分析土壤與水質樣本。"}
+    ],
+    "involvement": [
+        {"en": "Active parental involvement in reading programs significantly boosts early childhood literacy.", "zh": "家長積極參與閱讀計畫能顯著提升幼兒的讀寫能力。"},
+        {"en": "Her long-standing involvement with the wildlife sanctuary helped protect numerous bird species.", "zh": "她長年對野生動物庇護所的投入參與，協助保護了無數鳥類物種。"}
+    ],
+    "improvement": [
+        {"en": "The teacher commended David on his remarkable improvement in English speaking fluency.", "zh": "老師讚許 David 在英語口說流暢度上的顯著進步。"},
+        {"en": "Installing solar panels on the community center roof marked a major energy improvement.", "zh": "在社區中心屋頂安裝太陽能板標誌著一項重大的能源改善成就。"}
+    ],
+    "imprisonment": [
+        {"en": "The convicted embezzler was sentenced to seven years of strict imprisonment.", "zh": "被定罪的公款侵占犯被判處七年嚴格監禁刑期。"},
+        {"en": "The historical novel depicts the brave dissident's prolonged political imprisonment.", "zh": "這部歷史小說描繪了那位勇敢異議人士漫長的政治監禁歲月。"}
+    ],
+    "hippopotamus": [
+        {"en": "A massive hippopotamus submerged its entire body in the river, showing only its nostrils.", "zh": "一隻巨大的河馬將整個身軀浸入河水中，只露出鼻孔在水面上。"},
+        {"en": "During our African safari tour, we observed a family of hippopotamus resting along the muddy bank.", "zh": "在非洲荒野遊獵之旅中，我們觀察到一窩河馬家族在泥濘的河岸邊休憩。"}
+    ],
+    "heroine": [
+        {"en": "Marie Curie remains an iconic scientific heroine whose pioneering discoveries changed medicine.", "zh": "居禮夫人始終是一位標誌性的科學女英雄，她的開創性發現改變了醫學。"},
+        {"en": "The intrepid heroine of the fantasy epic rallied the villagers to defend their ancestral valley.", "zh": "這部奇幻史詩中勇猛的女主角號召村民們共同保衛祖傳山谷。"}
+    ],
+    "headphone": [
+        {"en": "A lightweight headphone with noise cancellation lets you study quietly in a bustling library.", "zh": "具備降噪功能的輕巧耳機能讓你在熱鬧的圖書館中安靜自修。"},
+        {"en": "Please plug the headphone cable firmly into the audio jack before testing sound volume.", "zh": "在測試音量大小前，請將耳機連接線穩固地插入音訊插孔。"}
+    ],
+    "harass": [
+        {"en": "School counselors reminded pupils that it is unacceptable to harass or tease any classmate.", "zh": "學校輔導老師告誡學童，騷擾或嘲弄任何同學都是不可接受的行為。"},
+        {"en": "Rangers monitor tourists closely to ensure nobody attempts to harass nesting birds.", "zh": "巡護員密切監視遊客，以確保無人企圖騷擾正在築巢育雛的鳥類。"}
+    ],
+    "gull": [
+        {"en": "A solitary sea gull glided effortlessly across the windy harbor entrance.", "zh": "一隻孤單的海鷗在海風徐徐的港口入口處輕鬆滑翔。"},
+        {"en": "We watched a curious gull swoop down to scoop up a floating piece of biscuit.", "zh": "我們看著一隻好奇的海鷗俯衝而下，叼起漂浮在水面的餅乾碎屑。"}
+    ],
+    "groom": [
+        {"en": "The handsome groom waited patiently at the altar, beaming with happiness as music played.", "zh": "英俊的新郎在聖壇前耐心等候，伴隨著樂聲洋溢著幸福的笑容。"},
+        {"en": "Volunteers at the rescue shelter regularly groom and brush rescued golden retrievers.", "zh": "救援收容所的志工定期為獲救的黃金獵犬進行梳洗與刷毛。"}
+    ],
+    "greetings": [
+        {"en": "Students exchanged warm holiday greetings before departing for the winter break.", "zh": "學生們在出發放寒假前彼此互道溫馨的節日問候。"},
+        {"en": "The mayor extended formal greetings to visiting cultural ambassadors from abroad.", "zh": "市長向來自海外參訪的文化親善大使致上正式的熱烈問候。"}
+    ],
+    "firewoman": [
+        {"en": "The courageous firewoman operated the high-pressure water hose during the emergency drill.", "zh": "英勇的女消防員在緊急防災演習中操作高壓消防水帶。"},
+        {"en": "Inspired by her mother, Lily dreams of becoming a certified firewoman in the future.", "zh": "受到母親的啟發，Lily 夢想將來也能成為一名合格的女消防員。"}
+    ],
+    "excitement": [
+        {"en": "The festive music in the town square stirred immense excitement among the gathered crowds.", "zh": "城鎮廣場上的節慶樂聲在聚集的人群中激起無比熱烈的興奮情緒。"},
+        {"en": "Eyes sparkling with excitement, the twins unwrapped their birthday mystery boxes.", "zh": "雙胞胎雙眼閃爍著興奮的光芒，迫不及待地拆開他們的生日驚喜禮物盒。"}
+    ],
+    "exam": [
+        {"en": "Preparing thorough study summaries helped Emily feel calm and confident before her biology exam.", "zh": "準備詳盡的複習摘要幫助 Emily 在生物考試前感到平靜且充滿自信。"},
+        {"en": "The teacher announced that our midterm math exam will cover fractions and decimals.", "zh": "老師宣布我們的期中數學考試範圍將涵蓋分數與小數。"}
+    ],
+    "establishment": [
+        {"en": "The historical plaque marks the official establishment of the elementary school in 1895.", "zh": "這座歷史紀念牌匾標註著該小學於1895年正式創立建校的里程碑。"},
+        {"en": "This neighborhood dining establishment has been serving hearty home-style soups for decades.", "zh": "這家社區餐飲店家數十年來一直供應著豐盛道地的家常熱湯。"}
+    ],
+    "equip": [
+        {"en": "The wilderness expedition team must equip each member with waterproof gear and navigation beacons.", "zh": "荒野探險隊必須為每位隊員配備防水裝備與衛星導航信標。"},
+        {"en": "Modern educational foundations strive to equip rural classrooms with digital smartboards.", "zh": "現代教育基金會致力於為偏鄉教室配備數位智慧互動電子白板。"}
+    ],
+    "enrollment": [
+        {"en": "Record student enrollment prompted the university to construct a brand new dormitory complex.", "zh": "創紀錄的學生註冊入學人數促使大學興建了一座全新的學生宿舍園區。"},
+        {"en": "Fall enrollment for after-school music and pottery classes begins next Monday morning.", "zh": "秋季課後音樂與陶藝課程的報名註冊作業將於下週一早晨開始受理。"}
+    ],
+    "enlargement": [
+        {"en": "The museum commissioned an architectural enlargement to house its expanding sculpture collection.", "zh": "博物館委託進行建築擴建工程，以容納其日益增長的雕塑典藏品。"},
+        {"en": "A framed photographic enlargement of our mountain summit trek hangs in the living room.", "zh": "一張我們登山攻頂健行的高畫質放大裝框照片掛在客廳牆上。"}
+    ],
+    "enforcement": [
+        {"en": "Rigorous enforcement of environmental protection statutes prevents industrial pollution in lakes.", "zh": "嚴格執行環境保護法規能有效防範工業廢水對湖泊造成污染。"},
+        {"en": "Community leaders commended the police department for fair and consistent traffic enforcement.", "zh": "社區領袖稱讚警察局在交通執法上維持公正與始終如一的原則。"}
+    ],
+    "employment": [
+        {"en": "The newly established industrial park generated thousands of local employment opportunities.", "zh": "新設立的科學工業園區為當地創造了數千個就業工作機會。"},
+        {"en": "Career counselors assist graduates in finding fulfilling full-time employment matched to their talents.", "zh": "就業輔導顧問協助畢業生找到能發揮其天賦的充實正職工作。"}
+    ],
+    "embarrassment": [
+        {"en": "To spare his little brother any embarrassment, Kevin pretended not to notice the minor spelling error.", "zh": "為了避免讓小老弟感到尷尬，Kevin 假裝沒注意到那個微小的拼字錯誤。"},
+        {"en": "She felt a wave of fleeting embarrassment when her mobile phone rang during the concert prelude.", "zh": "當她的手機在音樂會序曲中響起時，她感到一陣短暫難耐的尷尬與難堪。"}
+    ],
+    "disc": [
+        {"en": "My uncle owns an impressive archive of classic jazz vinyl disc albums.", "zh": "我叔叔收藏了令人印象深刻的經典爵士黑膠唱片黑膠盤專輯。"},
+        {"en": "The physical therapist explained that proper posture relieves excessive pressure on each spinal disc.", "zh": "物理治療師解釋維持正確體態能減輕施加在每一節脊椎椎間盤上的過度壓力。"}
+    ],
+    "disappointment": [
+        {"en": "Although missing first place brought initial disappointment, the runner was proud of his personal best.", "zh": "儘管錯失第一名帶來了最初的失落，這位跑者仍為刷新個人最佳成績感到驕傲。"},
+        {"en": "Missing the final train home was a bitter disappointment on an otherwise wonderful evening.", "zh": "錯過末班回家的火車為原本美好的夜晚帶來了一絲遺憾與失望。"}
+    ],
+    "cop": [
+        {"en": "A vigilant neighborhood cop helped pedestrians safely cross the busy four-way intersection.", "zh": "一位警覺性高的社區警察協助行人們安全通過繁忙的十字路口。"},
+        {"en": "The school invited a friendly local cop to present an informative lecture on bicycle road safety.", "zh": "學校邀請了一位友善的在地警官發表一場生動實用的腳踏車道路安全演講。"}
+    ],
+    "congresswoman": [
+        {"en": "The congresswoman introduced legislation to expand green energy subsidies for public schools.", "zh": "這位女性國會議員提出了擴大公立學校綠色能源補助的立法法案。"},
+        {"en": "Constituents gathered at the auditorium to discuss municipal healthcare issues with their congresswoman.", "zh": "選區選民齊聚在大禮堂，與他們的女國會議員研商地方基層醫療保健議題。"}
+    ],
+    "comics": [
+        {"en": "Every Sunday after breakfast, Ben immerses himself in funny Sunday newspaper comics.", "zh": "每週日早餐過後，Ben 都沉浸在週日報紙刊載的逗趣連環漫畫中。"},
+        {"en": "Illustrated comics can spark a lifelong passion for reading among elementary students.", "zh": "生動精彩的插圖漫畫能激發國小學童對於閱讀維持一生的濃厚熱情。"}
+    ],
+    "cockroach": [
+        {"en": "Store flour, cereal, and sugar in airtight containers to avoid attracting any unwanted cockroach.", "zh": "將麵粉、穀片與糖存放在密封容器中，以免引來令人不快的蟑螂。"},
+        {"en": "Biologists admire the astonishing evolutionary resilience of the common cockroach.", "zh": "生物學家十分驚嘆於一般常見蟑螂那令人難以置信的進化適應韌性。"}
+    ],
+    "burger": [
+        {"en": "Dad prepared a succulent handmade beef burger sizzling over hot charcoal on the patio.", "zh": "爸爸在戶外庭院熱騰騰的炭火上準備了一個滋滋作響的多汁手工牛肉漢堡。"},
+        {"en": "Would you care for a grilled mushroom burger accompanied by seasoned baked potato wedges?", "zh": "你要不要試試烤蘑菇漢堡搭配特調香料烘烤薯瓣？"}
+    ],
+    "brow": [
+        {"en": "The marathon runner paused briefly at the hydration station to wipe sweat from his brow.", "zh": "馬拉松跑者在補水站稍作停留，擦去額頭上不斷滑落的汗珠。"},
+        {"en": "The artisan furrowed his brow in deep concentration while carving intricate wooden ornaments.", "zh": "工匠在雕刻繁複精巧的木質飾品時，專注深思地微微皺起了眉頭。"}
+    ],
+    "brassiere": [
+        {"en": "Modern textile engineers design each brassiere using seamless microfiber fabrics for optimal comfort.", "zh": "現代紡織工程師採用無縫超細纖維面料設計每款胸罩，以達成最佳舒適度。"},
+        {"en": "The costume curator cataloged a delicate vintage silk brassiere dating back to the Edwardian era.", "zh": "服飾策展人為一件可追溯至愛德華時代的精緻復古真絲胸罩編目存檔。"}
+    ],
+    "blonde": [
+        {"en": "A cheerful blonde girl with bright hazel eyes waved enthusiastically across the school playground.", "zh": "一位有著明亮淡褐色眼眸的開朗金髮女孩在學校操場對面熱情地揮手。"},
+        {"en": "The portrait depicts a noble European lady with braided blonde locks crowned by wildflowers.", "zh": "這幅肖像畫描繪了一位編著金色髮辮、頭戴野花花冠的高貴歐洲貴婦。"}
+    ],
+    "bike": [
+        {"en": "Always remember to strap your safety helmet securely before riding your mountain bike.", "zh": "在騎乘你的登山腳踏車之前，務必記得將安全帽繫緊扣好。"},
+        {"en": "She pedaled her vintage city bike along the tree-lined avenue toward the central market.", "zh": "她沿著綠樹成蔭的大道踩著她的復古城市腳踏車前往中央市集。"}
+    ],
+    "backwards": [
+        {"en": "The coach demonstrated how to skate smoothly backwards across the ice rink without stumbling.", "zh": "教練示範了如何在滑冰場上流暢倒滑而不致踉蹌失足。"},
+        {"en": "Can you count backwards from twenty down to zero without hesitation?", "zh": "你能毫不猶豫地從二十倒數回零嗎？"}
+    ],
+    "auto": [
+        {"en": "The national auto racing championship attracted thousands of enthusiastic motorsport fans.", "zh": "全國汽車拉力賽錦標賽吸引了成千上萬熱情澎湃的賽車運動迷。"},
+        {"en": "A hybrid auto seamlessly switches between gasoline and electric battery power to conserve energy.", "zh": "油電混合汽車能在汽油與電池電力間流暢切換以節省能源。"}
+    ],
+    "attainment": [
+        {"en": "Fluency in multiple languages is an admirable cultural attainment earned through persistence.", "zh": "流利掌握多種語言是透過持之以恆的努力所獲得令人欽佩的文化修養成就。"},
+        {"en": "The diploma ceremony honored high levels of academic attainment and leadership across all faculties.", "zh": "畢業典禮表揚了各院系學生卓越的學術成就與傑出的領導能力。"}
+    ],
+    "announcement": [
+        {"en": "The railway conductor made an urgent announcement informing commuters of track signal repairs.", "zh": "鐵路列車長廣播發布緊急通告，告知通勤族鐵路號誌正在進行搶修。"},
+        {"en": "Students listened with rapt attention to the exciting announcement regarding the upcoming science fair.", "zh": "學生們全神貫注地聆聽著有關即將舉行的科學展覽競賽的振奮人心的公告。"}
+    ],
+    "amusement": [
+        {"en": "Our weekend visit to the seaside amusement park was brimming with roller coaster thrills and laughter.", "zh": "我們週末參訪海濱遊樂園的行程充滿了雲霄飛車的驚險刺激與歡聲笑語。"},
+        {"en": "A twinkle of lighthearted amusement sparkled in grandfather's eyes as he shared childhood tales.", "zh": "祖父分享童年趣事時，雙眼閃爍著風趣幽默的愉快笑意。"}
+    ],
+    "amidst": [
+        {"en": "A lone snowdrop flower bloomed bravely amidst the lingering patches of late winter frost.", "zh": "一朵孤單的雪花蓮在殘存的晚冬積霜寒氣中傲然綻放。"},
+        {"en": "The seasoned diplomat kept her calm composure amidst heated political negotiations.", "zh": "經驗豐富的外交官在氣氛劍拔弩張的政治交涉談判中始終保持從容沉著。"}
+    ],
+    "amazement": [
+        {"en": "The audience watched in utter amazement as the illusionist vanished into thin air on stage.", "zh": "全場觀眾無比驚奇地看著魔術師在舞台上憑空消失無蹤。"},
+        {"en": "To the young botanist's amazement, the rare night-blooming orchid opened its pristine petals.", "zh": "令年輕植物學家驚喜萬分的是，那株罕見的夜開蘭花緩緩展開了它潔白純淨的花瓣。"}
+    ],
+    "afterwards": [
+        {"en": "Let us finish tidying our study desks now so we may play soccer outdoors afterwards.", "zh": "讓我們現在先把書桌收拾整齊，這樣待會兒就能到戶外盡情踢足球了。"},
+        {"en": "The guest lecturer cordially answered student inquiries during a tea reception held afterwards.", "zh": "客座講師在隨後舉行的茶會交流時段親切地回答了學生們提出的問題。"}
+    ],
+    "Coke": [
+        {"en": "A chilled bottle of classic Coke paired delightfully with our barbecue lunch.", "zh": "一瓶冰透的經典可口可樂與我們的戶外烤肉午餐搭配得相得益彰。"},
+        {"en": "Would you prefer a regular Coke or a refreshing lemon iced tea with your meal?", "zh": "用餐時你想要來杯原味可口可樂，還是清爽解膩的檸檬冰紅茶？"}
+    ],
+
+    # ---------------- 需補 1 筆例句（62 個單字）----------------
+    "wood": [
+        {"en": "Skilled carpenters choose seasoned cedar wood to construct long-lasting outdoor benches.", "zh": "技術純熟的木匠挑選風乾雪松木材來打造持久耐用的戶外長凳。"}
+    ],
+    "wizard": [
+        {"en": "The mystical wizard carried an ancient wooden staff adorned with glowing runic crystals.", "zh": "神秘的巫師手持一根飾有發光盧恩符文水晶的古老木杖。"}
+    ],
+    "witch": [
+        {"en": "In Celtic legends, the wise forest witch cultivated medicinal herbs deep within the enchanted glade.", "zh": "在塞爾特傳奇中，聰慧的森林女巫在受魔法庇護的林間深處栽種草藥。"}
+    ],
+    "widow": [
+        {"en": "The kindhearted widow dedicated her retirement years to tending the neighborhood community garden.", "zh": "那位心地善良的寡婦將退休歲月全心投入在照料社區花園上。"}
+    ],
+    "whiskey": [
+        {"en": "Aged barrels of oak infuse traditional whiskey with rich caramel and smoky flavors.", "zh": "陳年橡木桶為傳統威士忌注入了濃郁的焦糖與煙燻風味。"}
+    ],
+    "wages": [
+        {"en": "Labour regulations guarantee that overtime wages must be paid promptly and accurately.", "zh": "勞動法規保障加班工資必須準時且正確無誤地發放給勞工。"}
+    ],
+    "tactics": [
+        {"en": "The basketball coach devised innovative offensive tactics to outmaneuver the taller defending team.", "zh": "籃球教練設計了創新的進攻戰術，以克敵制勝身材更為高大的防守隊伍。"}
+    ],
+    "sportsman": [
+        {"en": "As a consummate sportsman, he bowed respectfully to his challenger after concluding the fencing duel.", "zh": "作為一名優秀的運動員，他在擊劍決鬥結束後滿懷敬意地向對手鞠躬致敬。"}
+    ],
+    "seagull": [
+        {"en": "A graceful seagull glided effortlessly over rolling ocean swells along the rocky shoreline.", "zh": "一隻姿態優美的海鷗在岩石海岸翻滾起伏的海浪上方輕鬆滑翔。"}
+    ],
+    "savings": [
+        {"en": "Prudent students deposit a fraction of their part-time earnings into high-yield savings accounts.", "zh": "精打細算的學生會將打工所得的一部分存入高收益儲蓄帳戶中。"}
+    ],
+    "roach": [
+        {"en": "Thorough sanitation in restaurant kitchens ensures no invasive roach can ever find nourishment.", "zh": "餐廳廚房徹底的環境衛生清潔能確保侵入性蟑螂無處覓食。"}
+    ],
+    "resent": [
+        {"en": "Mature leaders do not resent constructive criticism, but instead welcome opportunities to improve.", "zh": "成熟的領導者不會對建設性的批評心生怨懟，反而將其視為改進自我契機。"}
+    ],
+    "refine": [
+        {"en": "Master authors meticulously review and refine their manuscripts before submitting them to publishers.", "zh": "寫作大師在將書稿提交給出版商之前，會細緻地審查並精修文稿語句。"}
+    ],
+    "railroad": [
+        {"en": "The historic transcontinental railroad transformed commerce by connecting oceanside trading ports.", "zh": "這條深具歷史意義的橫貫大陸鐵路透過串聯沿海貿易港口徹底變革了商業模式。"}
+    ],
+    "punishment": [
+        {"en": "Modern educational philosophy views restorative dialogue as far superior to retributive punishment.", "zh": "現代教育哲學認為修復式對話遠勝於單純報復性的處罰懲戒。"}
+    ],
+    "princess": [
+        {"en": "The benevolent princess funded new academies so children across the realm could learn science.", "zh": "仁慈的公主資助興建了新學院，讓王國各地的孩童都能學習科學知識。"}
+    ],
+    "postpone": [
+        {"en": "Due to impending typhoon warnings, school administrators decided to postpone sports day to next weekend.", "zh": "鑑於即將來襲的颱風警報，學校行政單位決定將運動會延期至下週末。"}
+    ],
+    "policeman": [
+        {"en": "The courteous policeman guided disoriented travelers back to the central metro concourse.", "zh": "有禮貌的警察引導迷途的旅客順利返回捷運中央穿堂大廳。"}
+    ],
+    "pave": [
+        {"en": "Diligence, intellectual curiosity, and empathy pave the royal road to meaningful achievement.", "zh": "勤勉、求知慾與同理心將為通往有意義的人生非凡成就鋪平康莊大道。"}
+    ],
+    "parents": [
+        {"en": "Supportive parents play an indispensable role in shaping their children's emotional resilience.", "zh": "給予支持與陪伴的父母在塑造孩子的情感心理韌性方面扮演不可或缺的角色。"}
+    ],
+    "outwards": [
+        {"en": "Ripples on the tranquil mountain lake expanded steadily outwards after a pebble broke the calm surface.", "zh": "一顆鵝卵石打破平靜水面後，寧靜高山湖泊上的漣漪穩步向外擴散開來。"}
+    ],
+    "no": [
+        {"en": "There is no doubt that daily language practice yields remarkable gains in communicative fluency.", "zh": "毫無疑問，每日堅持語言練習能為人際溝通流暢度帶來令人驚嘆的長足進步。"}
+    ],
+    "movement": [
+        {"en": "The synchronized movement of the rowing crew propelled the slender racing boat swiftly across the water.", "zh": "划船隊員整齊劃一的動作驅使纖細的賽艇在水面上風馳電掣般前進。"}
+    ],
+    "measure": [
+        {"en": "Prudent master carpenters always measure twice meticulously before executing any single saw cut.", "zh": "深思熟慮的資深木匠在進行任何單一鋸切動作前，總是會細心測量兩次。"}
+    ],
+    "involve": [
+        {"en": "The community science festival will involve interactive workshops hosted by university researchers.", "zh": "社區科學節將包含由大學研究人員主持的生動互動式工作坊體驗。"}
+    ],
+    "improve": [
+        {"en": "Adopting structured bedtime habits will significantly improve both sleep quality and daytime mental focus.", "zh": "養成規律的睡前習慣將大幅改善並提升睡眠品質與白天的專注力。"}
+    ],
+    "imprison": [
+        {"en": "Independent constitutional courts ensure the state cannot arbitrarily imprison citizens without due process.", "zh": "獨立的憲法法院確保國家未經正當法律程序不得任意將公民監禁入獄。"}
+    ],
+    "humankind": [
+        {"en": "Safeguarding planetary biodiversity and pristine oceans remains the shared moral duty of all humankind.", "zh": "維護地球生物多樣性與原始蔚藍海洋是全人類共同肩負的崇高道德責任。"}
+    ],
+    "hippo": [
+        {"en": "The playful young hippo splashed cooling river water over its back using its small flat ears.", "zh": "頑皮的小河馬用牠扁平的小耳朵將清涼的河水潑灑在自己的背上嬉戲。"}
+    ],
+    "hero": [
+        {"en": "The brave firefighter who ventured into the burning building to save a puppy was hailed as a true hero.", "zh": "冒險衝入著火建築物救出小狗的英勇消防員被譽為真正的英雄。"}
+    ],
+    "harassment": [
+        {"en": "Educational institutions enforce strict anti-bullying policies to shield every learner from digital harassment.", "zh": "各級教育機構嚴格執行防霸凌規範，以保護每位學習者免受網路霸凌騷擾。"}
+    ],
+    "hamburger": [
+        {"en": "The cozy gourmet bistro serves a succulent handmade hamburger stacked high with grilled onions and cheese.", "zh": "這家溫馨的美食小館供應夾滿烤洋蔥與切達起司的多汁手工特製漢堡。"}
+    ],
+    "greeting": [
+        {"en": "A warm handshake accompanied by a polite verbal greeting sets an inviting tone for any meeting.", "zh": "熱情的握手搭配禮貌得體的口頭問候，能為任何商務會面奠定融洽的良好基調。"}
+    ],
+    "fireman": [
+        {"en": "The vigilant fireman inspected all neighborhood hydrants to verify adequate water pressure for emergencies.", "zh": "機警的消防員巡檢社區內所有消防栓，以確認緊急時刻具備充足的水壓。"}
+    ],
+    "eyebrow": [
+        {"en": "The inquisitive scientist arched a single skeptical eyebrow upon reviewing the anomalous laboratory data.", "zh": "這位好學深思的科學家在審視異常實驗數據時，帶著懷疑的神情挑起了一邊眉毛。"}
+    ],
+    "excite": [
+        {"en": "Interactive planetary exhibits at the science observatory never fail to excite young budding astronomers.", "zh": "天文科學館裡的互動式行星展覽總是能讓新露頭角的年輕小小天文學家興奮不已。"}
+    ],
+    "examination": [
+        {"en": "An exhaustive engineering examination confirmed that the suspension bridge met all earthquake safety codes.", "zh": "一次詳盡周密的工程體檢證實該吊橋完全符合所有的防震抗災安全規範。"}
+    ],
+    "establish": [
+        {"en": "Civic leaders united to establish a comprehensive bilingual public library in the heart of downtown.", "zh": "民間熱心人士齊心協力在市中心繁華地帶創立了一座全方位的雙語公共圖書館。"}
+    ],
+    "equipment": [
+        {"en": "Before embarking on the alpine glacier hike, double-check all specialized climbing equipment.", "zh": "在啟程踏上高山冰河健行之前，請務必再三複查所有專業登山裝備。"}
+    ],
+    "enroll": [
+        {"en": "Enthusiastic amateurs are encouraged to enroll in introductory oil painting courses at the civic arts center.", "zh": "主辦單位鼓勵熱心業餘藝術愛好者報名註冊市民藝術中心的基礎油畫課程。"}
+    ],
+    "enlarge": [
+        {"en": "High-magnification camera lenses enlarge minute microscopic insect features for detailed biological analysis.", "zh": "高倍率相機微距鏡頭能放大細小的昆蟲微觀特徵，以利進行深入的生物學分析。"}
+    ],
+    "enforce": [
+        {"en": "Campus security officers strictly enforce speed regulations near student crosswalks to ensure pedestrian safety.", "zh": "校園駐衛警嚴格執行學生斑馬線周邊的行車速限管制，以確保行人穿越安全。"}
+    ],
+    "employ": [
+        {"en": "Reputable design firms often employ cross-disciplinary specialists to pioneer groundbreaking consumer products.", "zh": "享負盛名的設計事務所經常延聘跨領域專家，以開創具劃時代意義的消費產品。"}
+    ],
+    "embarrass": [
+        {"en": "True friends never deliberately attempt to embarrass one another during public social gatherings.", "zh": "真正的知己好友在公共社交聚會場合中，絕不會刻意企圖讓彼此感到難堪尷尬。"}
+    ],
+    "disk": [
+        {"en": "Always maintain an encrypted secondary backup on an external solid-state storage disk.", "zh": "務必在外接式固態硬碟儲存裝置上保留一份經過加密的次要備份檔案。"}
+    ],
+    "disappoint": [
+        {"en": "The dedicated actors rehearsed tirelessly every weekend so they would not disappoint the opening night audience.", "zh": "這群敬業的演員每個週末不知疲倦地排練，就是為了在首演之夜不辜負台下觀眾。"}
+    ],
+    "congressman": [
+        {"en": "The veteran congressman sponsored an agricultural bipartisan relief bill to support family farms.", "zh": "這位資深國會議員發起了一項兩黨聯合支持的農業紓困救助法案，以支持家庭農場。"}
+    ],
+    "comic": [
+        {"en": "The whimsical Sunday newspaper comic strip brightened up an otherwise gloomy rainy morning.", "zh": "週日早報刊登的異想天開趣味漫畫專欄為原本陰鬱綿綿的雨天早晨帶來了一抹亮色。"}
+    ],
+    "cola": [
+        {"en": "Chilled sparkling cola served with crushed ice cubes is a perennial summer thirst quencher.", "zh": "搭配碎冰塊飲用的冰涼氣泡可樂是一道長盛不衰的盛夏消暑解渴良伴。"}
+    ],
+    "bridegroom": [
+        {"en": "The joyous bridegroom greeted wedding guests with genuine warmth throughout the reception.", "zh": "沉浸在幸福喜悅中的新郎在整個婚宴會場中以真摯溫暖的熱情款待每位賓客。"}
+    ],
+    "bra": [
+        {"en": "A properly fitted sports bra minimizes strain and maximizes athletic mobility during vigorous workouts.", "zh": "尺寸合身剪裁的運動內衣能最大程度減少運動拉傷，並在劇烈鍛鍊中提供最佳活動度。"}
+    ],
+    "blond": [
+        {"en": "Sunlight filtered through the curtains, illuminating his light blond hair with a gentle sheen.", "zh": "陽光穿透薄紗窗簾，在他那一頭淺金色的柔亮短髮上灑下一層溫煦的光芒。"}
+    ],
+    "bicycle": [
+        {"en": "Commuting on an electric bicycle lowers personal carbon footprints while fostering active cardiovascular health.", "zh": "騎乘電動輔助自行車通勤能在促進心血管健康的同時，顯著降低個人碳足跡。"}
+    ],
+    "automobile": [
+        {"en": "Rigorous laboratory collision tests evaluate structural automobile integrity to maximize passenger survival.", "zh": "嚴苛的實驗室碰撞測試評估車輛結構耐撞完整性，以將乘客生存機率提升至最高。"}
+    ],
+    "attain": [
+        {"en": "With steady perseverance and strategic planning, anyone can attain their long-cherished educational dreams.", "zh": "只要懷抱堅定的毅力與周詳的規劃，任何人都能實現長久以來珍視的求學夢想。"}
+    ],
+    "announce": [
+        {"en": "The flight attendant will announce clear safety instructions prior to taxiing onto the active runway.", "zh": "空服人員將在班機滑行進入運作中跑道之前，廣播宣布各項明確的飛行安全須知。"}
+    ],
+    "an": [
+        {"en": "Carrying an umbrella is wise whenever overcast skies suggest an impending afternoon shower.", "zh": "每當密布的陰雲暗示即將落下午後雷陣雨時，隨身攜帶一把雨傘總是明智的。"}
+    ],
+    "amuse": [
+        {"en": "Street buskers playfully juggle colorful batons to amuse curious passersby in the shopping promenade.", "zh": "街頭藝人在行人徒步商圈逗趣地雜耍拋接彩色手棒，以博得圍觀路人的莞爾一笑。"}
+    ],
+    "amid": [
+        {"en": "A peaceful Zen stone garden flourished amid the bustling skyscrapers of the financial district.", "zh": "一座靜謐禪意的日式枯山水石庭在金融商業區高聳林立的摩天大樓群中鬧中取靜。"}
+    ],
+    "amaze": [
+        {"en": "The dazzling northern lights never fail to amaze intrepid stargazers braving subzero arctic nights.", "zh": "璀璨奪目的北極光總能讓冒著零下嚴寒極地夜晚的勇敢觀星者們驚嘆折服。"}
+    ],
+    "airplane": [
+        {"en": "A supersonic research airplane crossed the horizon, leaving behind a faint white contrail in the stratosphere.", "zh": "一架超音速科研飛機穿過天際線，在平流層中留下了一道淡淡的白色凝結雲尾跡。"}
+    ],
+    "afterward": [
+        {"en": "They enjoyed an inspiring symphony performance and strolled along the illuminated riverside boulevard afterward.", "zh": "他們欣賞了一場激勵人心的交響樂盛會，隨後漫步在燈火輝煌的河岸大道上。"}
+    ]
+}
+
+
+def validate_and_save():
+    source_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    target_needed_file = os.path.join(source_dir, "tools", "target_words_needed.json")
+    out_file = os.path.join(source_dir, "tools", "supplementary_examples.json")
+
+    with open(target_needed_file, "r", encoding="utf-8") as f:
+        target_needed = json.load(f)
+
+    target_map = {item["word"]: item for item in target_needed}
+
+    print(f"Total target words needed: {len(target_needed)}")
+    print(f"Total words in EXAMPLES_DATA: {len(EXAMPLES_DATA)}")
+
+    missing_words = set(target_map.keys()) - set(EXAMPLES_DATA.keys())
+    if missing_words:
+        raise ValueError(f"Missing words in EXAMPLES_DATA: {missing_words}")
+
+    extra_words = set(EXAMPLES_DATA.keys()) - set(target_map.keys())
+    if extra_words:
+        raise ValueError(f"Unexpected extra words in EXAMPLES_DATA: {extra_words}")
+
+    total_examples = 0
+    for word, examples in EXAMPLES_DATA.items():
+        needed = target_map[word]["needed"]
+        if len(examples) != needed:
+            raise ValueError(f"Word '{word}' has {len(examples)} examples, but needed {needed}!")
+        total_examples += len(examples)
+
+        # 檢查例句是否確實包含該單字
+        # 對於 short words 或一般單字，使用詞邊界或大小寫檢查
+        pattern = re.compile(r"(?<![A-Za-z])" + re.escape(word) + r"(?![A-Za-z])", re.IGNORECASE)
+        for ex in examples:
+            if not ex.get("en") or not ex.get("zh"):
+                raise ValueError(f"Empty en or zh in {word}: {ex}")
+            if not pattern.search(ex["en"]):
+                # 部分字形允許變體檢視
+                print(f"WARNING: word '{word}' not matched exactly in '{ex['en']}'")
+
+    print(f"All 133 words validated! Total supplementary examples: {total_examples}")
+
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(EXAMPLES_DATA, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    print(f"Successfully saved to {out_file}")
+
+
+if __name__ == "__main__":
+    validate_and_save()
