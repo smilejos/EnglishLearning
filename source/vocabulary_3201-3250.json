@@ -1,0 +1,1326 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 3,201–3,250 個單字（CEFR B1 中級）",
+  "batch": "3201-3250",
+  "range": "3201–3250",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 3201,
+      "word": "gastronomy",
+      "pos": "n. [U]",
+      "phonetic": "[gæsˋtrɑnəmɪ]",
+      "definition": "美食學；烹飪美學；精緻餐飲文化",
+      "cefr": "B1",
+      "topic": "飲食美學",
+      "examples": [
+        {
+          "en": "Tainan was designated a City of Gastronomy for its rich culinary heritage.",
+          "zh": "台南市憑藉其淵遠流長的深厚飲食文化底蘊，獲評為國際美食之都。"
+        },
+        {
+          "en": "French gastronomy has been officially recognized as an intangible cultural heritage.",
+          "zh": "法國美食學已被聯合國教科文組織正式列為非物質文化遺產。"
+        },
+        {
+          "en": "Students flock to San Sebastian to study the art and science of modern gastronomy.",
+          "zh": "眾多學生湧向聖賽巴斯提安，研習現代美食學的精湛技藝與科學原理。"
+        }
+      ],
+      "collocations": [
+        "capital of gastronomy"
+      ]
+    },
+    {
+      "id": 3202,
+      "word": "culinary",
+      "pos": "adj.",
+      "phonetic": "[ˋkjuləˌnɛrɪ]",
+      "definition": "烹飪的；廚藝的；美食餐飲的",
+      "cefr": "B1",
+      "topic": "廚藝領域",
+      "examples": [
+        {
+          "en": "Le Cordon Bleu trained him in exquisite French and Asian culinary arts.",
+          "zh": "藍帶廚藝學院的扎實訓練鍛造了他融合法式經典與亞洲風貌的卓越廚藝。"
+        },
+        {
+          "en": "Traveling through Italy was an unforgettable culinary journey filled with rustic flavors.",
+          "zh": "走訪義大利是一場令人難忘的美食之旅，充滿了樸實道地的風味。"
+        },
+        {
+          "en": "The cooking school helps young enthusiasts develop professional culinary skills.",
+          "zh": "這所廚藝學校幫助年輕的美食愛好者培養專業的烹飪技能。"
+        }
+      ],
+      "collocations": [
+        "culinary skills",
+        "culinary arts"
+      ]
+    },
+    {
+      "id": 3203,
+      "word": "gourmet",
+      "pos": "n., adj.",
+      "phonetic": "[ˋgʊrme]",
+      "definition": "老饕；美食家；精緻美味的",
+      "cefr": "B1",
+      "topic": "精緻餐飲",
+      "examples": [
+        {
+          "en": "Gourmet coffee shops in Taipei source single-origin Alishan beans.",
+          "zh": "台北精品手沖咖啡名店嚴選來自阿里山高海拔產區的原生單品莊園咖啡豆。"
+        },
+        {
+          "en": "As a dedicated gourmet, he travels across continents simply to dine at renowned bistros.",
+          "zh": "身為一名狂熱的美食家，他甚至跨越大洲只為在著名的餐酒館品嚐佳餚。"
+        },
+        {
+          "en": "The luxury hotel gift basket was packed with gourmet chocolates and artisan cheeses.",
+          "zh": "該奢華飯店的迎賓禮籃中裝滿了精緻手工巧克力與頂級起司。"
+        }
+      ],
+      "collocations": [
+        "gourmet cuisine",
+        "gourmet coffee"
+      ]
+    },
+    {
+      "id": 3204,
+      "word": "Michelin Guide",
+      "pos": "n. phr.",
+      "phonetic": "[ˋmɪʃəlɪn gaɪd]",
+      "definition": "米其林指南；紅色美食聖經",
+      "cefr": "B1",
+      "topic": "美食評鑑",
+      "examples": [
+        {
+          "en": "Earning three stars in the Michelin Guide represents the pinnacle of dining.",
+          "zh": "榮獲法國米其林紅色美食指南三星最高榮譽代表了頂級餐飲的巔峰成就。"
+        },
+        {
+          "en": "Food enthusiasts consult the Michelin Guide whenever they explore international cities.",
+          "zh": "美食愛好者探索國際大都會時，總會翻閱米其林指南尋找推薦餐廳。"
+        },
+        {
+          "en": "The chef wept with joy when his bistro was included in the latest Michelin Guide.",
+          "zh": "當這家小餐館被收錄進最新版米其林指南時，主廚喜極而泣。"
+        }
+      ],
+      "collocations": [
+        "Michelin-starred restaurant"
+      ]
+    },
+    {
+      "id": 3205,
+      "word": "Bib Gourmand",
+      "pos": "n. phr.",
+      "phonetic": "[bɪb ˋgʊrmɑnd]",
+      "definition": "必比登推介（平價優質美食）",
+      "cefr": "B1",
+      "topic": "美食評鑑",
+      "examples": [
+        {
+          "en": "Many humble night market vendors proudly earned Bib Gourmand recognition.",
+          "zh": "許多隱身於夜市巷弄的平民傳統攤販，皆光榮榮獲了必比登推介榜單肯定。"
+        },
+        {
+          "en": "The Bib Gourmand category highlights great food offered at moderate, reasonable prices.",
+          "zh": "必比登推介專門推薦價格親民合理且物超所值的優質美味餐廳。"
+        },
+        {
+          "en": "Following the Bib Gourmand list is the best way to discover authentic local street fare.",
+          "zh": "跟著必比登推介名單走是尋訪道地在地街頭平價美食的最佳捷徑。"
+        }
+      ],
+      "collocations": [
+        "Bib Gourmand selection"
+      ]
+    },
+    {
+      "id": 3206,
+      "word": "signature dish",
+      "pos": "n. phr.",
+      "phonetic": "[ˋsɪgnətʃɚ dɪʃ]",
+      "definition": "招牌菜；招牌代表作料理",
+      "cefr": "B1",
+      "topic": "餐廳特色",
+      "examples": [
+        {
+          "en": "The restaurant's signature dish is crispy roast duck served with sweet sauce.",
+          "zh": "該餐廳名揚海內外的招牌代表菜是外皮烤至金黃香脆、搭配甜麵醬的脆皮烤鴨。"
+        },
+        {
+          "en": "Every newcomer is strongly advised to try the house signature dish before ordering desserts.",
+          "zh": "每位新客人都被強烈建議在點甜點前一定要先品嚐店裡的當家招牌菜。"
+        },
+        {
+          "en": "The chef spent months perfecting his signature dish to showcase local seafood flavors.",
+          "zh": "主廚耗時數月精心改良其招牌代表料理，以完美呈現在地現撈海鮮的鮮甜。"
+        }
+      ],
+      "collocations": [
+        "famous signature dish"
+      ]
+    },
+    {
+      "id": 3207,
+      "word": "street food",
+      "pos": "n. phr.",
+      "phonetic": "[strit fud]",
+      "definition": "街頭小吃；街頭美食",
+      "cefr": "B1",
+      "topic": "常民飲食",
+      "examples": [
+        {
+          "en": "Taiwan is internationally famous for vibrant, budget-friendly street food.",
+          "zh": "台灣以多元澎湃、物美價廉且極具在地特色的道地街頭小吃享譽全球。"
+        },
+        {
+          "en": "Bangkok's night alleys are packed with tourists sampling sizzling street food.",
+          "zh": "曼谷深夜的街頭巷弄擠滿了前來品嚐現炒熱呼呼街頭美食的觀光客。"
+        },
+        {
+          "en": "Exploring authentic street food allows travelers to connect with local living cultures.",
+          "zh": "品嚐最道地的街頭小吃讓旅人能最直接地貼近在地常民的生活文化脈動。"
+        }
+      ],
+      "collocations": [
+        "iconic street food"
+      ]
+    },
+    {
+      "id": 3208,
+      "word": "stall",
+      "pos": "n.",
+      "phonetic": "[stɔl]",
+      "definition": "攤位；攤子；貨攤",
+      "cefr": "B1",
+      "topic": "夜市攤販",
+      "examples": [
+        {
+          "en": "We stopped by a bustling night market stall selling crispy oyster cakes.",
+          "zh": "我們停下腳步在人聲鼎沸、香氣撲鼻的夜市小吃攤前品嚐剛起鍋的香脆蚵嗲。"
+        },
+        {
+          "en": "Her grandfather has run a traditional noodle stall near the temple for over forty years.",
+          "zh": "她的祖父在老廟口旁經營傳統麵攤已經超過四十餘年。"
+        },
+        {
+          "en": "The farmers market has dozens of stalls offering fresh organic seasonal produce.",
+          "zh": "農夫市集裡有數十個攤位販售當天清晨新鮮採摘的有機時令蔬果。"
+        }
+      ],
+      "collocations": [
+        "market stall",
+        "food stall"
+      ]
+    },
+    {
+      "id": 3209,
+      "word": "delicacy",
+      "pos": "n.",
+      "phonetic": "[ˋdɛləkəsɪ]",
+      "definition": "佳餚珍饈；在地名產特產",
+      "cefr": "B1",
+      "topic": "美食特色",
+      "examples": [
+        {
+          "en": "Deep-fried stinky tofu served with pickled cabbage is an iconic local delicacy.",
+          "zh": "外酥內嫩的金黃油炸臭豆腐搭配爽脆台式泡菜，是極具代表性的在地佳餚。"
+        },
+        {
+          "en": "Black truffles are considered a rare and costly delicacy in Mediterranean dining.",
+          "zh": "黑松露在地中海精緻餐飲界被視為極其珍稀且身價不菲的頂級珍饈。"
+        },
+        {
+          "en": "The coastal fishing port is famous for dried mullet roe, a prized lunar new year delicacy.",
+          "zh": "這座海濱漁港以出產烏魚子聞名，烏魚子是農曆春節期間極受歡迎的珍貴年菜佳餚。"
+        }
+      ],
+      "collocations": [
+        "local delicacy",
+        "rare delicacy"
+      ]
+    },
+    {
+      "id": 3210,
+      "word": "braised",
+      "pos": "adj.",
+      "phonetic": "[brezd]",
+      "definition": "滷製的；紅燒的；燉煮的",
+      "cefr": "B1",
+      "topic": "烹飪工法",
+      "examples": [
+        {
+          "en": "Fragrant braised pork rice (Lu Rou Fan) is Taiwan's ultimate comfort food.",
+          "zh": "淋上濃郁鹹香肉燥醬汁的熱騰騰滷肉飯，是全台灣人心目中的靈魂國民美食。"
+        },
+        {
+          "en": "We ordered a plate of assorted braised tofu, dried seaweed, and marinated hard-boiled eggs.",
+          "zh": "我們點了一盤包含滷豆干、滷海帶與滷蛋的綜合台式黑白切滷味拼盤。"
+        },
+        {
+          "en": "Tender braised beef brisket practically melts in your mouth after hours of slow cooking.",
+          "zh": "鮮嫩多汁的紅燒牛腩在經過數小時文火燉煮後，幾乎入口即化。"
+        }
+      ],
+      "collocations": [
+        "braised pork rice (滷肉飯)"
+      ]
+    },
+    {
+      "id": 3211,
+      "word": "broth",
+      "pos": "n. [U]",
+      "phonetic": "[brɔθ]",
+      "definition": "濃郁高湯；肉湯；熬汁",
+      "cefr": "B1",
+      "topic": "湯底精華",
+      "examples": [
+        {
+          "en": "Beef noodle soup broth is slowly simmered with beef bones and aromatic herbs.",
+          "zh": "正宗台灣牛肉麵的高湯湯底是以牛大骨搭配多種天然中藥辛香料慢火細燉熬製。"
+        },
+        {
+          "en": "The ramen chef boils chicken bones for twelve hours to create a creamy white broth.",
+          "zh": "拉麵大廚將大量新鮮全雞熬煮十二小時，萃取濃郁醇厚、泛著奶白光澤的高湯。"
+        },
+        {
+          "en": "A bowl of warm, soothing vegetable broth works wonders on a chilly winter evening.",
+          "zh": "在寒風刺骨的冬日夜晚，喝上一碗溫暖舒心的清爽時蔬高湯能驅散全身寒意。"
+        }
+      ],
+      "collocations": [
+        "rich broth",
+        "simmering broth"
+      ]
+    },
+    {
+      "id": 3212,
+      "word": "omelet",
+      "pos": "n.",
+      "phonetic": "[ˋɑmlɪt]",
+      "definition": "煎蛋捲；蚵仔煎；歐姆蛋",
+      "cefr": "B1",
+      "topic": "蛋料理",
+      "examples": [
+        {
+          "en": "Sizzling oyster omelets drizzled with savory-sweet pink sauce are mouth-watering.",
+          "zh": "鐵板上滋滋作響的鮮蚵蚵仔煎淋上特調甜辣粉紅海山醬，令人垂涎三尺。"
+        },
+        {
+          "en": "Dad prepared a fluffy breakfast omelet stuffed with diced ham, mushrooms, and cheese.",
+          "zh": "父親貼心準備了包入香濃火腿丁、野菇與熔化起司的鬆軟西式美式煎蛋捲。"
+        },
+        {
+          "en": "The hotel chef customized omelets to order at the bustling morning breakfast buffet.",
+          "zh": "飯店主廚在熱鬧的晨間自助早餐吧依照客人的喜好現點現做專屬歐姆蛋。"
+        }
+      ],
+      "collocations": [
+        "oyster omelet (蚵仔煎)"
+      ]
+    },
+    {
+      "id": 3213,
+      "word": "tofu",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtofu]",
+      "definition": "豆腐；大豆製品",
+      "cefr": "B1",
+      "topic": "傳統食材",
+      "examples": [
+        {
+          "en": "Fermented stinky tofu may smell pungent, but it tastes wonderfully savory.",
+          "zh": "傳統發酵臭豆腐聞起來雖然氣味強烈撲鼻，但入口咀嚼卻是無比甘甜香醇。"
+        },
+        {
+          "en": "Silken tofu drizzled with soy sauce and spring onions makes a refreshing summer appetizer.",
+          "zh": "淋上淡口醬油與青蔥碎的涼拌嫩豆腐是一道開胃又清爽的夏日小菜。"
+        },
+        {
+          "en": "Vegetarians frequently rely on firm tofu as an outstanding plant-based protein substitute.",
+          "zh": "素食主義者通常依靠口感扎實的板豆腐作為極佳的植物性優質蛋白質來源。"
+        }
+      ],
+      "collocations": [
+        "stinky tofu",
+        "mapo tofu"
+      ]
+    },
+    {
+      "id": 3214,
+      "word": "sweet potato ball",
+      "pos": "n. phr.",
+      "phonetic": "[swit pəˋteto bɔl]",
+      "definition": "地瓜球；QQ 蛋",
+      "cefr": "B1",
+      "topic": "夜市小吃",
+      "examples": [
+        {
+          "en": "Freshly pressed golden sweet potato balls are delightfully chewy and airy.",
+          "zh": "剛在大油鍋中反覆壓炸起鍋的金黃地瓜球外酥內 Q、口感蓬鬆彈牙。"
+        },
+        {
+          "en": "Night market customers happily queue up to buy a paper bag of freshly fried sweet potato balls.",
+          "zh": "夜市裡的排隊常客開心地耐著性子排隊，只為了買上一包剛起鍋的香脆地瓜球。"
+        },
+        {
+          "en": "The vendor presses down on each sweet potato ball multiple times to make it expand with air.",
+          "zh": "攤販在油鍋中反覆按壓每一顆地瓜球，好讓它吸入空氣變得蓬鬆中空又酥脆。"
+        }
+      ],
+      "collocations": [
+        "fried sweet potato balls"
+      ]
+    },
+    {
+      "id": 3215,
+      "word": "popcorn chicken",
+      "pos": "n. phr.",
+      "phonetic": "[ˋpɑp͵kɔrn ˋtʃɪkɪn]",
+      "definition": "鹽酥雞；台式鹹酥雞",
+      "cefr": "B1",
+      "topic": "炸物小吃",
+      "examples": [
+        {
+          "en": "Taiwanese popcorn chicken seasoned with fragrant fried basil is addictive.",
+          "zh": "撒上胡椒鹽並佐以酥炸九層塔葉的台式鹽酥雞，香氣逼人讓人一口接一口。"
+        },
+        {
+          "en": "Late-night cram school students often pick up popcorn chicken on their walk home.",
+          "zh": "深夜補習班下課的學生們常常會在漫步走回家的路上順道買份鹽酥雞打牙祭。"
+        },
+        {
+          "en": "You can choose your desired level of chili powder when buying hot popcorn chicken.",
+          "zh": "購買熱騰騰的鹽酥雞時，你可以自由挑選微辣、中辣或大辣的辣椒粉辣度。"
+        }
+      ],
+      "collocations": [
+        "Taiwanese fried chicken"
+      ]
+    },
+    {
+      "id": 3216,
+      "word": "bubble tea",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbʌb! ti]",
+      "definition": "珍珠奶茶；波霸奶茶",
+      "cefr": "B1",
+      "topic": "國民飲品",
+      "examples": [
+        {
+          "en": "Taiwan invented bubble tea, which is now a global beverage phenomenon.",
+          "zh": "台灣原創發明的珍珠奶茶如今已席捲全球各大洲，掀起席捲全球的波霸風潮。"
+        },
+        {
+          "en": "Customers can customize their bubble tea by selecting sugar levels and ice amounts.",
+          "zh": "顧客在購買手搖珍珠奶茶時，可以完全客製化調整個人偏好的甜度與冰塊量。"
+        },
+        {
+          "en": "Trendy bubble tea shops have opened across London, Tokyo, and New York.",
+          "zh": "時尚前衛的手搖珍珠奶茶專賣店已如雨後春筍般進駐倫敦、東京與紐約街頭。"
+        }
+      ],
+      "collocations": [
+        "boba milk tea",
+        "tapioca pearls"
+      ]
+    },
+    {
+      "id": 3217,
+      "word": "shaved ice",
+      "pos": "n. phr.",
+      "phonetic": "[ʃevd aɪs]",
+      "definition": "刨冰；雪花冰；挫冰",
+      "cefr": "B1",
+      "topic": "夏季甜品",
+      "examples": [
+        {
+          "en": "Enjoying sweet mango shaved ice topped with condensed milk beats the summer heat.",
+          "zh": "在酷暑炎夏大啖一碗鋪滿新鮮愛文芒果、淋上濃郁煉乳的芒果刨冰最消暑。"
+        },
+        {
+          "en": "We ordered a giant bowl of traditional shaved ice loaded with red beans, pearls, and taro.",
+          "zh": "我們點了一大碗堆滿蜜紅豆、粉圓與九份芋圓配料的傳統古早味黑糖挫冰。"
+        },
+        {
+          "en": "Finely textured milk shaved ice melts instantaneously on your tongue like snow.",
+          "zh": "質地極致細膩的雪花冰送入口中時，如同初雪般瞬間在舌尖曼妙融化。"
+        }
+      ],
+      "collocations": [
+        "mango shaved ice"
+      ]
+    },
+    {
+      "id": 3218,
+      "word": "dumpling",
+      "pos": "n.",
+      "phonetic": "[ˋdʌmplɪŋ]",
+      "definition": "水餃；小籠湯包；蒸餃",
+      "cefr": "B1",
+      "topic": "麵食點心",
+      "examples": [
+        {
+          "en": "Steamed pork soup dumplings (Xiao Long Bao) burst with steaming hot juice.",
+          "zh": "剛出爐的鼎泰豐經典小籠湯包皮薄餡多，輕輕咬破便流出滾燙濃郁的鮮美湯汁。"
+        },
+        {
+          "en": "The entire family gathers around the table on Lunar New Year's Eve to wrap festive dumplings.",
+          "zh": "除夕夜全家老小圍坐在餐桌旁齊心包水餃，象徵招財進寶、迎春納福。"
+        },
+        {
+          "en": "Dip the boiled cabbage pork dumplings into black vinegar mixed with finely sliced ginger.",
+          "zh": "將剛煮熟的高麗菜鮮肉水餃沾著調和薑絲的烏醋醬汁一同食用，滋味絕妙。"
+        }
+      ],
+      "collocations": [
+        "soup dumpling (小籠包)"
+      ]
+    },
+    {
+      "id": 3219,
+      "word": "pastry",
+      "pos": "n.",
+      "phonetic": "[ˋpestrɪ]",
+      "definition": "糕餅點心；酥皮油酥糕點",
+      "cefr": "B1",
+      "topic": "伴手禮名產",
+      "examples": [
+        {
+          "en": "Tourists buy boxes of sweet and tangy pineapple pastries as holiday souvenirs.",
+          "zh": "各國觀光客紛紛在台北名店大排長龍採購微酸甜的土鳳梨酥作為回國伴手禮。"
+        },
+        {
+          "en": "French bakeries are famous for crafting delicate, flaky pastries like croissants.",
+          "zh": "法式烘焙坊以製作精緻細膩、層次分明且鬆酥的可頌等法式酥皮糕點聞名。"
+        },
+        {
+          "en": "Grandmother baked savory moon pastries filled with salted egg yolk and lotus seed paste.",
+          "zh": "祖母親手烘烤了包覆金黃鹹蛋黃與綿密蓮蓉餡料的傳統鹹甜中秋月餅。"
+        }
+      ],
+      "collocations": [
+        "pineapple pastry / cake"
+      ]
+    },
+    {
+      "id": 3220,
+      "word": "food tour",
+      "pos": "n. phr.",
+      "phonetic": "[fud tur]",
+      "definition": "美食巡禮；小吃踩點之旅",
+      "cefr": "B1",
+      "topic": "觀光行程",
+      "examples": [
+        {
+          "en": "Foreign travelers booked a guided evening night market food tour in Shilin.",
+          "zh": "歐美外國背包客預訂了由在地導遊帶領的士林夜市深度小吃踩點美食巡禮。"
+        },
+        {
+          "en": "A walking food tour through Tainan introduces visitors to historic snacks and desserts.",
+          "zh": "漫步穿梭於府城台南舊城區的美食小旅行，帶領遊客逐一探訪老字號點心與甜品。"
+        },
+        {
+          "en": "Our food tour host explained the cultural significance of every single street dish.",
+          "zh": "帶領我們展開美食巡禮的導遊熱情講解了每道街頭經典料理背後的在地文化淵源。"
+        }
+      ],
+      "collocations": [
+        "night market food crawl"
+      ]
+    },
+    {
+      "id": 3221,
+      "word": "food court",
+      "pos": "n. phr.",
+      "phonetic": "[fud kort]",
+      "definition": "百貨美食街；大型美食廣場",
+      "cefr": "B1",
+      "topic": "用餐場所",
+      "examples": [
+        {
+          "en": "Department store basement food courts offer an enormous variety of Asian meals.",
+          "zh": "百貨公司地下美食街匯聚了豐富多元的台式、日式與各國平價精緻餐飲。"
+        },
+        {
+          "en": "The university food court is packed with students enjoying affordable lunches.",
+          "zh": "大學的美食廣場中午時分總是擠滿了享受物美價廉午餐套餐的年輕學子。"
+        },
+        {
+          "en": "Airport food courts allow transit passengers to sample local food before boarding.",
+          "zh": "機場轉機區的美食廣場讓過境旅客在登機離境前能輕鬆品嚐在地名產。"
+        }
+      ],
+      "collocations": [
+        "mall food court"
+      ]
+    },
+    {
+      "id": 3222,
+      "word": "queue",
+      "pos": "n., v.",
+      "phonetic": "[kju]",
+      "definition": "排隊人龍；排隊等候",
+      "cefr": "B1",
+      "topic": "排隊文化",
+      "examples": [
+        {
+          "en": "Hungry customers queued patiently outside the Michelin-recommended bakery.",
+          "zh": "慕名而來的饕客們在米其林推介的人氣烘焙糕餅名店門外耐心排隊等候。"
+        },
+        {
+          "en": "It is considered extremely rude to jump the queue at ticket counters or bus stops.",
+          "zh": "在火車站售票櫃台或公車站插隊插前被視為極其無禮不文明的行為。"
+        },
+        {
+          "en": "A long queue formed down the block before the popular bubble tea store even opened.",
+          "zh": "在那家人氣手搖珍奶名店尚未開門營業前，排隊人龍就已沿著街角延伸至巷尾。"
+        }
+      ],
+      "collocations": [
+        "wait in a queue",
+        "jump the queue"
+      ]
+    },
+    {
+      "id": 3223,
+      "word": "crave",
+      "pos": "v.",
+      "phonetic": "[krev]",
+      "definition": "渴望；極度想吃；嘴饞",
+      "cefr": "B1",
+      "topic": "飲食慾望",
+      "examples": [
+        {
+          "en": "Whenever I feel homesick studying overseas, I crave hot beef noodle soup.",
+          "zh": "每當我在海外留學想家孤單時，心裡總會無比渴望來一碗熱騰騰的紅燒牛肉麵。"
+        },
+        {
+          "en": "Expectant mothers often crave unusual flavor combinations like pickles and ice cream.",
+          "zh": "懷孕的準媽媽們經常會嘴饞想吃一些奇妙的組合，例如酸黃瓜配冰淇淋。"
+        },
+        {
+          "en": "After completing the grueling marathon, he craved an ice-cold fizzy soda.",
+          "zh": "在跑完艱辛漫長的全程馬拉松後，他極度渴望痛快暢飲一杯沁涼透心涼的氣泡汽水。"
+        }
+      ],
+      "collocations": [
+        "crave comfort food",
+        "food craving"
+      ]
+    },
+    {
+      "id": 3224,
+      "word": "mouth-watering",
+      "pos": "adj.",
+      "phonetic": "[ˋmaʊθ͵wɔtərɪŋ]",
+      "definition": "令人垂涎三尺的；令人食指大動的",
+      "cefr": "B1",
+      "topic": "美食形容",
+      "examples": [
+        {
+          "en": "Sizzling scallion pancakes filled with cheese and egg look mouth-watering.",
+          "zh": "鐵板上熱騰騰剛起鍋、夾入起司與香蔥的現煎蔥抓餅看起來令人垂涎三尺。"
+        },
+        {
+          "en": "A mouth-watering aroma drifted out from the bakery as the fresh sourdough came out of the oven.",
+          "zh": "當剛出爐的天然酵母酸種麵包起鍋時，一陣陣令人食指大動的烘焙香氣撲鼻而來。"
+        },
+        {
+          "en": "The glossy food photographs in the magazine made every gourmet course look mouth-watering.",
+          "zh": "雜誌上印刷精美、光澤誘人的美食特寫照片讓每一道精緻餐點都顯得令人垂涎三尺。"
+        }
+      ],
+      "collocations": [
+        "mouth-watering aroma"
+      ]
+    },
+    {
+      "id": 3225,
+      "word": "savor",
+      "pos": "v.",
+      "phonetic": "[ˋsevɚ]",
+      "definition": "細細品味；慢慢享用；體會",
+      "cefr": "B1",
+      "topic": "用餐享受",
+      "examples": [
+        {
+          "en": "Take your time to savor every subtle nuance of the chef's tasting menu.",
+          "zh": "請放慢用餐節奏，細細品味名廚精心研發的品嚐套餐中每一道料理的細膩層次。"
+        },
+        {
+          "en": "She closed her eyes to savor the rich dark chocolate melting across her palate.",
+          "zh": "她輕輕閉上雙眼，全神貫注地細細品味頂級黑巧克力在口腔溫度中慢慢化開的美妙感受。"
+        },
+        {
+          "en": "Enjoy your graduation trip and savor every remaining moment spent together with classmates.",
+          "zh": "盡情享受你們的畢業旅行，細細體會並珍惜與同窗好友相聚的每一個珍貴時光。"
+        }
+      ],
+      "collocations": [
+        "savor the flavor"
+      ]
+    },
+    {
+      "id": 3226,
+      "word": "mouthfeel",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmaʊθfil]",
+      "definition": "口感；口腔觸感與質地",
+      "cefr": "B1",
+      "topic": "美食品評",
+      "examples": [
+        {
+          "en": "The handmade noodles boast a silky smoothness and springy mouthfeel.",
+          "zh": "這家老字號麵店純手工現拉的手工拉麵具備滑順細膩且極富彈性的迷人口感。"
+        },
+        {
+          "en": "Ice cream makers carefully adjust fat content to achieve a rich, creamy mouthfeel.",
+          "zh": "頂級冰淇淋工匠精準調配天然乳脂比例，以達成極致濃醇厚實的綿密口感。"
+        },
+        {
+          "en": "The sparkling bubbles add a refreshing, tingling mouthfeel to the chilled cider.",
+          "zh": "豐沛綿密的細緻氣泡為這杯冰鎮蘋果西打增添了清爽微刺的口腔觸感體驗。"
+        }
+      ],
+      "collocations": [
+        "unique mouthfeel",
+        "texture"
+      ]
+    },
+    {
+      "id": 3227,
+      "word": "chewy",
+      "pos": "adj.",
+      "phonetic": "[ˋtʃuɪ]",
+      "definition": "Q 彈的；有嚼勁的；彈牙的",
+      "cefr": "B1",
+      "topic": "口感形容",
+      "examples": [
+        {
+          "en": "Brown sugar boba tapioca pearls are cooked until perfectly soft and chewy (Q).",
+          "zh": "手炒黑糖慢火熬煮的波霸珍珠粉圓被精準燉煮至完美軟嫩又極富 Q 彈嚼勁。"
+        },
+        {
+          "en": "Freshly baked bagels should have a crisp golden crust and a delightfully chewy center.",
+          "zh": "剛出爐的新鮮美式貝果應當擁有金黃薄脆的外皮與扎實富嚼勁的內層組織。"
+        },
+        {
+          "en": "Traditional Taiwanese mochi is deliciously chewy and coated with aromatic peanut powder.",
+          "zh": "傳統現做客家麻糬口感軟糯彈牙、極富嚼勁，外層再裹上一層厚厚的香濃花生粉。"
+        }
+      ],
+      "collocations": [
+        "chewy texture (Q-texture)"
+      ]
+    },
+    {
+      "id": 3228,
+      "word": "crispy",
+      "pos": "adj.",
+      "phonetic": "[ˋkrɪspɪ]",
+      "definition": "酥脆的；香脆可口的",
+      "cefr": "B1",
+      "topic": "口感形容",
+      "examples": [
+        {
+          "en": "The roast pork belly skin is delightfully crispy while the meat remains tender.",
+          "zh": "廣式脆皮燒肉的表皮被烤得金黃酥脆卡滋作響，而底下的肉質依然鮮嫩多汁。"
+        },
+        {
+          "en": "Everyone loves freshly fried potato chips that are thin, crispy, and lightly salted.",
+          "zh": "大家都喜愛薄脆可口、鹹淡適中且剛出鍋的現炸香脆洋芋片。"
+        },
+        {
+          "en": "Dip the crispy spring roll into sweet and sour plum sauce for a burst of flavor.",
+          "zh": "將炸得香脆可口的春捲沾上酸甜梅子醬，入口瞬間迸發豐富層次。"
+        }
+      ],
+      "collocations": [
+        "crispy skin",
+        "crispy fries"
+      ]
+    },
+    {
+      "id": 3229,
+      "word": "juicy",
+      "pos": "adj.",
+      "phonetic": "[ˋdʒusɪ]",
+      "definition": "多汁的；鮮嫩多汁的",
+      "cefr": "B1",
+      "topic": "口感形容",
+      "examples": [
+        {
+          "en": "Premium grilled Taiwanese sausages are bursting with sweet, juicy flavors.",
+          "zh": "現烤出爐的高粱酒黑豬肉香腸咬下去瞬間在嘴裡迸發出微甜又多汁的飽滿肉汁。"
+        },
+        {
+          "en": "Freshly picked watermelons in summer are sweet, cold, and remarkably juicy.",
+          "zh": "盛夏現摘的花蓮大西瓜汁水飽滿、甘甜多汁，冰鎮過後更是清甜可口。"
+        },
+        {
+          "en": "The chef seared the ribeye steak on high heat to lock in all the rich, juicy goodness.",
+          "zh": "大廚以大火高溫快速炙烤肋眼牛排表面，將豐盈醇厚且多汁的肉汁完全鎖在牛排中。"
+        }
+      ],
+      "collocations": [
+        "tender and juicy"
+      ]
+    },
+    {
+      "id": 3230,
+      "word": "savory",
+      "pos": "adj.",
+      "phonetic": "[ˋsevərɪ]",
+      "definition": "鹹香可口的；鮮美開胃的",
+      "cefr": "B1",
+      "topic": "口味描述",
+      "examples": [
+        {
+          "en": "Steamed savory turnip radish cake is a staple breakfast favorite in Taiwan.",
+          "zh": "煎至兩面金黃微焦的古早味客家蘿蔔糕是全台傳統中式早餐店的鹹香人氣首選。"
+        },
+        {
+          "en": "Some people prefer sweet breakfast pancakes, while others favor savory bacon and eggs.",
+          "zh": "有些人早餐喜歡吃淋上蜂蜜的甜煎餅，而另一些人則偏愛鹹香可口的培根加煎蛋。"
+        },
+        {
+          "en": "The bakery offers both sweet fruit tarts and savory mushroom quiches.",
+          "zh": "這家烘焙坊既販售酸甜水果塔，也供應香氣濃郁的鹹香法式野菇鹹派。"
+        }
+      ],
+      "collocations": [
+        "savory taste",
+        "savory dish"
+      ]
+    },
+    {
+      "id": 3231,
+      "word": "umami",
+      "pos": "n. [U]",
+      "phonetic": "[uˋmɑmɪ]",
+      "definition": "鮮味（第五種味覺）",
+      "cefr": "B1",
+      "topic": "味覺科學",
+      "examples": [
+        {
+          "en": "Dried shiitake mushrooms and sun-dried bonito flakes are rich in natural umami.",
+          "zh": "日曬埔里乾香菇與柴魚片富含天然純粹的谷氨酸鮮味，能大幅提升高湯風味。"
+        },
+        {
+          "en": "Parmesan cheese and ripe tomatoes naturally contain high levels of savory umami.",
+          "zh": "帕瑪森陳年乳酪與熟成番茄天生就蘊含著豐富醇厚且令人垂涎的天然鮮味。"
+        },
+        {
+          "en": "Adding a dash of fermented soy sauce unlocks deep layers of umami in the stew.",
+          "zh": "在慢火燉菜中加入少許純釀造甘醇醬油，能瞬間激發出深層而豐富的鮮美風味。"
+        }
+      ],
+      "collocations": [
+        "deep umami flavor"
+      ]
+    },
+    {
+      "id": 3232,
+      "word": "braise",
+      "pos": "v.",
+      "phonetic": "[brez]",
+      "definition": "慢火燉煮；滷製；紅燒",
+      "cefr": "B1",
+      "topic": "烹飪工法",
+      "examples": [
+        {
+          "en": "Slow-braise pork belly with soy sauce, rice wine, rock sugar, and star anise.",
+          "zh": "將精選五花肉搭配純釀醬油、米酒、冰糖與八角辛香料，以文火慢燉慢滷入味。"
+        },
+        {
+          "en": "The culinary recipe instructs chefs to braise the lamb shanks for three full hours.",
+          "zh": "食譜指南要求廚師們將新鮮羊小腿以小火慢燉足足三小時直至軟爛。"
+        },
+        {
+          "en": "Grandmother knows how to braise tofu and eggs so that the spices seep to the core.",
+          "zh": "奶奶深諳如何滷製豆腐與滷蛋，能讓中藥辛香老滷汁完全滲透至最核心。"
+        }
+      ],
+      "collocations": [
+        "slow-braise meat"
+      ]
+    },
+    {
+      "id": 3233,
+      "word": "stir-fry",
+      "pos": "v., n.",
+      "phonetic": "[stɝ fraɪ]",
+      "definition": "快炒；熱炒；炒菜",
+      "cefr": "B1",
+      "topic": "台式快炒",
+      "examples": [
+        {
+          "en": "Taiwanese hot-stir restaurants (Re Chao) stir-fry fresh water spinach with garlic.",
+          "zh": "台灣百元熱炒店大廚以大火快炒蒜香空心菜，鑊氣十足、爽脆開胃。"
+        },
+        {
+          "en": "A traditional wok is the essential cooking tool needed to properly stir-fry vegetables.",
+          "zh": "傳統雙耳中華鐵鍋是想要在烈火翻炒中完美烹調快炒青菜不可或缺的利器。"
+        },
+        {
+          "en": "We ordered a seafood stir-fry alongside draft beer for a relaxing Friday dinner.",
+          "zh": "我們點了一道熱氣騰騰的快炒生猛海鮮拼盤搭配冰生啤酒，享受愜意的週五晚餐。"
+        }
+      ],
+      "collocations": [
+        "stir-fry vegetables",
+        "Re Chao (熱炒)"
+      ]
+    },
+    {
+      "id": 3234,
+      "word": "deep-fry",
+      "pos": "v.",
+      "phonetic": "[dip fraɪ]",
+      "definition": "油炸；酥炸",
+      "cefr": "B1",
+      "topic": "烹飪工法",
+      "examples": [
+        {
+          "en": "Deep-fry the marinated squid rings until they turn a gorgeous golden brown.",
+          "zh": "將事先醃漬入味的鮮甜深海魷魚圈放入滾燙油鍋中，酥炸至誘人的金黃色澤。"
+        },
+        {
+          "en": "Make sure the cooking oil reaches 180 degrees before you deep-fry the battered shrimp.",
+          "zh": "在將裹上麵衣的鮮蝦下鍋油炸之前，請務必先確認油溫已精準達到攝氏 180 度。"
+        },
+        {
+          "en": "Street vendors deep-fry tofu squares until the exterior becomes completely crispy.",
+          "zh": "夜市攤販將一塊塊臭豆腐放入滾燙油鍋酥炸，直到外皮完全變得金黃香脆。"
+        }
+      ],
+      "collocations": [
+        "deep-fry until golden"
+      ]
+    },
+    {
+      "id": 3235,
+      "word": "steam",
+      "pos": "v., n. [U]",
+      "phonetic": "[stim]",
+      "definition": "清蒸；蒸熟；蒸氣",
+      "cefr": "B1",
+      "topic": "烹飪工法",
+      "examples": [
+        {
+          "en": "Master chefs steam freshly caught sea bass with ginger slices and scallions.",
+          "zh": "總鋪師將當天海港直送的現撈現流七星鱸魚搭配薑絲與蔥段以大火清蒸提鮮。"
+        },
+        {
+          "en": "Steam rising from the bamboo baskets signaled that the morning buns were ready.",
+          "zh": "竹編蒸籠上方升騰而起的裊裊白霧蒸氣，意味著熱騰騰的現蒸手工包子已熟透出爐。"
+        },
+        {
+          "en": "Health-conscious diners prefer to steam fresh seasonal vegetables to retain nutrients.",
+          "zh": "注重健康養生的饕客更偏好以清蒸手法烹調當季時蔬，以完整保留天然維生素營養。"
+        }
+      ],
+      "collocations": [
+        "steam in a bamboo steamer"
+      ]
+    },
+    {
+      "id": 3236,
+      "word": "marinate",
+      "pos": "v.",
+      "phonetic": "[ˋmærəˌnet]",
+      "definition": "醃漬；浸泡入味",
+      "cefr": "B1",
+      "topic": "前期備料",
+      "examples": [
+        {
+          "en": "Marinate tender beef slices overnight in soy sauce, sesame oil, and garlic.",
+          "zh": "將鮮嫩牛肉薄片浸泡於香醇醬油、純麻油與蒜碎特調醬汁中冷藏醃漬一整夜。"
+        },
+        {
+          "en": "Be sure to marinate the chicken wings for at least two hours before grilling them.",
+          "zh": "在把雞翅放上烤肉架炙烤前，請務必先將其置入特調醃料中浸泡入味至少兩小時。"
+        },
+        {
+          "en": "Acidic ingredients like lemon juice or yogurt help tenderize and marinate tough meats.",
+          "zh": "檸檬汁或原味優格等微酸性食材能有助於軟化肉質纖維，使醃漬過程更加入味。"
+        }
+      ],
+      "collocations": [
+        "marinate overnight"
+      ]
+    },
+    {
+      "id": 3237,
+      "word": "seasoning",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsiznɪŋ]",
+      "definition": "調味料；調味粉",
+      "cefr": "B1",
+      "topic": "烹飪調味",
+      "examples": [
+        {
+          "en": "Adjust the soup seasoning with a pinch of white pepper and sea salt.",
+          "zh": "在出鍋裝碗前加入一小撮香濃白胡椒粉與海鹽輕輕攪拌，為鮮湯微調風味。"
+        },
+        {
+          "en": "Natural seasonings like minced garlic, shallots, and ginger enhance any savory dish.",
+          "zh": "蒜碎、紅蔥頭與生薑等天然辛香調味料能讓任何鹹香熱菜的香氣倍增。"
+        },
+        {
+          "en": "The barbecue dry rub seasoning blend contains paprika, brown sugar, and cumin.",
+          "zh": "這款美式燒烤專用乾醃香料調味粉融合了紅椒粉、純黑糖與芳香孜然粉。"
+        }
+      ],
+      "collocations": [
+        "add seasoning"
+      ]
+    },
+    {
+      "id": 3238,
+      "word": "condiment",
+      "pos": "n.",
+      "phonetic": "[ˋkɑndəmənt]",
+      "definition": "佐料；餐桌沾醬；調味醬",
+      "cefr": "B1",
+      "topic": "沾醬佐料",
+      "examples": [
+        {
+          "en": "Essential table condiments include garlic soy sauce paste and sweet chili dip.",
+          "zh": "台灣餐桌必備的靈魂沾醬佐料包含甘甜的蒜蓉醬油膏與微辣的海山甜辣醬。"
+        },
+        {
+          "en": "Mustard, ketchup, and mayonnaise are standard condiments served with French fries.",
+          "zh": "黃芥末醬、番茄醬與美乃滋是佐薯條食用的常見西餐經典佐料醬汁。"
+        },
+        {
+          "en": "The breakfast diner keeps a carousel of condiments on each customer booth table.",
+          "zh": "這家中式傳統早餐店在每張顧客用餐隔間餐桌上都擺放了一整套各式沾醬佐料。"
+        }
+      ],
+      "collocations": [
+        "table condiments"
+      ]
+    },
+    {
+      "id": 3239,
+      "word": "cilantro",
+      "pos": "n. [U]",
+      "phonetic": "[sɪˋlɑntro]",
+      "definition": "香菜；芫荽",
+      "cefr": "B1",
+      "topic": "傳統香草",
+      "examples": [
+        {
+          "en": "Gua Bao (Taiwanese pork belly burger) is generously topped with fresh cilantro.",
+          "zh": "經典台式傳統刈包（虎咬豬）夾入厚切控肉後會大方撒上花生粉與鮮嫩香菜。"
+        },
+        {
+          "en": "Some people possess a genetic variation that makes cilantro taste like soap to them.",
+          "zh": "部分族群體內攜帶特定的嗅覺受體基因變異，導致他們覺得香菜吃起來宛如肥皂水。"
+        },
+        {
+          "en": "Garnish the warm bowl of thick oyster vermicelli with a sprig of green cilantro.",
+          "zh": "在熱氣騰騰的香濃大腸蚵仔麵線最上方，點綴上一小撮翠綠新鮮的香菜提味。"
+        }
+      ],
+      "collocations": [
+        "fresh cilantro",
+        "coriander"
+      ]
+    },
+    {
+      "id": 3240,
+      "word": "star anise",
+      "pos": "n. phr.",
+      "phonetic": "[stɑr ˋænɪs]",
+      "definition": "八角茴香；大茴香",
+      "cefr": "B1",
+      "topic": "辛香料",
+      "examples": [
+        {
+          "en": "Star anise adds an irreplaceable, aromatic fragrance to Taiwanese beef stews.",
+          "zh": "八角是為台式紅燒牛肉麵與老滷汁注入無可取代誘人中草藥複合香氣的核心。"
+        },
+        {
+          "en": "Chinese five-spice powder is made from grinding cinnamon, cloves, fennel, star anise, and peppercorns.",
+          "zh": "中華五香粉是由肉桂、丁香、茴香、八角大茴香與花椒研磨混合調配而成。"
+        },
+        {
+          "en": "Toss two whole pods of star anise into the boiling pot to eliminate gamey odors from the broth.",
+          "zh": "丟入兩顆完整的乾燥八角茴香進滾水中，能有效祛除高湯中多餘的肉腥羶味。"
+        }
+      ],
+      "collocations": [
+        "fragrant star anise"
+      ]
+    },
+    {
+      "id": 3241,
+      "word": "tasting menu",
+      "pos": "n. phr.",
+      "phonetic": "[ˋtestɪŋ ˋmɛnju]",
+      "definition": "主廚品嚐套餐；試菜套餐",
+      "cefr": "B1",
+      "topic": "高級餐飲",
+      "examples": [
+        {
+          "en": "The French-Taiwanese fine dining restaurant features an 8-course tasting menu.",
+          "zh": "這家融合法式技法與台灣在地風土的頂級餐廳推出精緻的八道式品嚐套餐。"
+        },
+        {
+          "en": "Ordering the seasonal tasting menu allows diners to experience the chef's full creativity.",
+          "zh": "點選當季限定主廚品嚐套餐能讓老饕一飽口福，全方位體驗大廚的極致藝術創意。"
+        },
+        {
+          "en": "Wine pairings are carefully curated to complement each individual dish on the tasting menu.",
+          "zh": "侍酒師為品嚐套餐中的每一道獨立特色佳餚都量身精選了絕妙的佐餐名酒搭檔。"
+        }
+      ],
+      "collocations": [
+        "chef's tasting menu"
+      ]
+    },
+    {
+      "id": 3242,
+      "word": "course",
+      "pos": "n.",
+      "phonetic": "[kors]",
+      "definition": "一道菜；課程；進程",
+      "cefr": "B1",
+      "topic": "宴席出菜",
+      "examples": [
+        {
+          "en": "The six-course wedding banquet concluded with bird's nest sweet soup.",
+          "zh": "長達六道佳餚的豪華婚宴在熱騰騰上桌的養生燕窩紅棗甜湯中圓滿落幕。"
+        },
+        {
+          "en": "For our second course, the server brought out pan-seared sea scallops in butter.",
+          "zh": "在我們的第二道出菜佳餚中，服務生端上了以奶油香煎的頂級鮮甜生食級干貝。"
+        },
+        {
+          "en": "A formal Western banquet typically progresses from light soup to the hearty main course.",
+          "zh": "一場正式的西式宴席出菜程序通常由清爽溫暖的濃湯逐步推展至豐盛厚實的主菜。"
+        }
+      ],
+      "collocations": [
+        "main course",
+        "multi-course banquet"
+      ]
+    },
+    {
+      "id": 3243,
+      "word": "appetizer",
+      "pos": "n.",
+      "phonetic": "[ˋæpəˌtaɪzɚ]",
+      "definition": "開胃前菜；開胃小品",
+      "cefr": "B1",
+      "topic": "西餐順序",
+      "examples": [
+        {
+          "en": "Cold sliced drunken chicken with wolfberries served as a refreshing appetizer.",
+          "zh": "冰鎮切盤的紹興醉雞卷佐以養生枸杞，作為令人食指大動的清爽開胃前菜。"
+        },
+        {
+          "en": "Crispy calamari rings with tartar sauce are my favorite restaurant appetizer.",
+          "zh": "炸得金黃酥脆的深海花枝圈佐塔塔醬是我在餐酒館裡最無法抗拒的人氣開胃前菜。"
+        },
+        {
+          "en": "Small, flavorful appetizers awaken the taste buds and prepare guests for the meal.",
+          "zh": "小巧精緻且風味明亮的開胃前菜能喚醒味蕾，為接下來的豐盛盛宴做好暖身。"
+        }
+      ],
+      "collocations": [
+        "refreshing appetizer"
+      ]
+    },
+    {
+      "id": 3244,
+      "word": "entrée",
+      "pos": "n.",
+      "phonetic": "[ˋɑntre]",
+      "definition": "主菜（美式英語）；前菜（法式）",
+      "cefr": "B1",
+      "topic": "西餐菜色",
+      "examples": [
+        {
+          "en": "Guests chose between pan-seared cherry valley duck breast and ribeye for their entrée.",
+          "zh": "貴賓在主菜部分可自香煎宜蘭櫻桃鴨胸與美國特選肋眼牛排中自由二選一。"
+        },
+        {
+          "en": "The waiter explained that each entrée comes with roasted seasonal potatoes and greens.",
+          "zh": "服務人員親切說明，每道精緻主菜皆會隨餐附上烤得香軟的時令馬鈴薯與鮮甜嫩綠時蔬。"
+        },
+        {
+          "en": "In American dining parlance, the entrée refers to the principal, most substantial course.",
+          "zh": "在美式英語餐飲慣用語境中，entrée 專指整個套餐裡最為核心厚重的精華主菜。"
+        }
+      ],
+      "collocations": [
+        "entrée choice"
+      ]
+    },
+    {
+      "id": 3245,
+      "word": "palate cleanser",
+      "pos": "n. phr.",
+      "phonetic": "[ˋpælət ˋklɛnzɚ]",
+      "definition": "清口雪酪；清口小品冰沙",
+      "cefr": "B1",
+      "topic": "高級餐飲",
+      "examples": [
+        {
+          "en": "A scoop of tart lemon sorbet served as an invigorating palate cleanser.",
+          "zh": "一小球酸甜冰涼的清爽義式檸檬雪酪及時送上，為味蕾帶來喚醒清爽的清口體驗。"
+        },
+        {
+          "en": "Between heavy fish and red meat courses, the server presented an icy herbal palate cleanser.",
+          "zh": "在味道濃郁的鮮魚與紅肉兩道主菜接替空檔，侍者端上了冰鎮草本風味清口冰沙。"
+        },
+        {
+          "en": "A good palate cleanser removes lingering greasy flavors and resets your sensory tastebuds.",
+          "zh": "好的清口小品能掃除口腔中殘留的油膩餘味，讓味蕾徹底歸零以迎接下一道美味。"
+        }
+      ],
+      "collocations": [
+        "refreshing palate cleanser"
+      ]
+    },
+    {
+      "id": 3246,
+      "word": "dessert",
+      "pos": "n.",
+      "phonetic": "[dɪˋzɝt]",
+      "definition": "飯後甜點；甜品點心",
+      "cefr": "B1",
+      "topic": "餐後甜品",
+      "examples": [
+        {
+          "en": "Warm taro ball sweet soup in ginger tea was the most satisfying dessert.",
+          "zh": "一碗熱騰騰、淋上老薑黑糖汁的手工九份芋圓甜湯，是最令人心滿意足的餐後甜點。"
+        },
+        {
+          "en": "There is always a separate stomach reserved for rich chocolate cake and dessert.",
+          "zh": "俗話說「甜點是裝在另一個胃裡的」，大家隨時都吃得下濃郁誘人的巧克力蛋糕。"
+        },
+        {
+          "en": "Fruit platters featuring sweet watermelon and wax apples were served as a complimentary dessert.",
+          "zh": "盛滿甘甜花蓮西瓜與黑珍珠蓮霧的新鮮切盤水果切片，作為店家招待的飯後解膩甜品。"
+        }
+      ],
+      "collocations": [
+        "traditional dessert"
+      ]
+    },
+    {
+      "id": 3247,
+      "word": "sommelier",
+      "pos": "n.",
+      "phonetic": "[͵sɔməlˋje]",
+      "definition": "侍酒師；專業品酒師",
+      "cefr": "B1",
+      "topic": "專業餐飲",
+      "examples": [
+        {
+          "en": "The certified sommelier recommended an aromatic dry white wine to pair with seafood.",
+          "zh": "專業認證的侍酒師為海鮮主菜推薦了一款香氣清雅、酸度明亮的頂級白葡萄酒。"
+        },
+        {
+          "en": "Passing the rigorous examinations to become a Master Sommelier takes years of study.",
+          "zh": "通過極為嚴格艱澀的術科考核以晉升為大師級侍酒師，需要投注多年的深入苦讀與品鑑。"
+        },
+        {
+          "en": "The sommelier expertly decanted the vintage red wine to let it breathe before serving.",
+          "zh": "侍酒師動作優雅專業地將陳年典藏紅酒倒入醒酒器中醒酒，使其香氣徹底綻放。"
+        }
+      ],
+      "collocations": [
+        "master sommelier",
+        "wine pairing"
+      ]
+    },
+    {
+      "id": 3248,
+      "word": "hospitality",
+      "pos": "n. [U]",
+      "phonetic": "[͵hɑspɪˋtælətɪ]",
+      "definition": "款待熱情；好客；餐旅觀光業",
+      "cefr": "B1",
+      "topic": "服務業精神",
+      "examples": [
+        {
+          "en": "Taiwanese warmth and generous hospitality leave deep impressions on tourists.",
+          "zh": "台灣人發自內心的濃濃人情味與熱情好客，給全球各國觀光客留下了深刻感動。"
+        },
+        {
+          "en": "She pursued a degree in hospitality management to learn international hotel operations.",
+          "zh": "她在大學攻讀觀光餐旅管理學位，以深入研習五星級國際連鎖飯店的運營精髓。"
+        },
+        {
+          "en": "Thank you for welcoming our team with such heartwarming generosity and hospitality.",
+          "zh": "由衷感謝您以如此溫暖體貼的深厚善意與熱情款待，熱烈迎接我們團隊的到訪。"
+        }
+      ],
+      "collocations": [
+        "warm hospitality",
+        "hospitality industry"
+      ]
+    },
+    {
+      "id": 3249,
+      "word": "food critic",
+      "pos": "n. phr.",
+      "phonetic": "[fud ˋkrɪtɪk]",
+      "definition": "美食評論家；食評家",
+      "cefr": "B1",
+      "topic": "藝文評論",
+      "examples": [
+        {
+          "en": "The famous food critic praised the restaurant's creative fusion of local ingredients.",
+          "zh": "知名美食評論家大力撰文盛讚該餐廳巧妙融合在地小農食材的卓越前瞻創意。"
+        },
+        {
+          "en": "Chefs often feel nervous when they spot a renowned food critic sitting anonymously in the dining room.",
+          "zh": "當大廚發現某位名聞遐邇的美食評論家悄悄隱身於外場包廂用餐時，無不神經緊繃。"
+        },
+        {
+          "en": "A glowing five-star review from an influential food critic can double bookings overnight.",
+          "zh": "具強大話語權的知名食評家撰寫的一篇五星好評，往往能讓餐廳預訂量在一夜之間暴增。"
+        }
+      ],
+      "collocations": [
+        "restaurant critic"
+      ]
+    },
+    {
+      "id": 3250,
+      "word": "culinary heritage",
+      "pos": "n. phr.",
+      "phonetic": "[ˋkjuləˌnɛrɪ ˋhɛrətɪdʒ]",
+      "definition": "飲食文化遺產；傳統美食底蘊",
+      "cefr": "B1",
+      "topic": "文化傳承",
+      "examples": [
+        {
+          "en": "Preserving indigenous culinary heritage passes ancient tribal recipes to youth.",
+          "zh": "悉心傳承台灣原住民傳統飲食文化遺產，能將古老的部落野菜智慧世代傳遞。"
+        },
+        {
+          "en": "Taiwan's diverse immigration history created an exceptionally unique and rich culinary heritage.",
+          "zh": "台灣多元豐富的移民開拓歷史造就了獨樹一幟、博採眾長的深厚飲食文化遺產底蘊。"
+        },
+        {
+          "en": "Documenting century-old baking techniques helps safeguard the nation's precious culinary heritage.",
+          "zh": "筆錄並拍攝保存百年傳統製餅老手藝，有助於完整捍衛守護國家珍貴的飲食文化遺產。"
+        }
+      ],
+      "collocations": [
+        "rich culinary heritage"
+      ]
+    }
+  ]
+}

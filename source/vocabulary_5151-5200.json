@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,151–5,200 個單字（CEFR B1 中級）",
+  "batch": "5151-5200",
+  "range": "5151–5200",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5151,
+      "word": "philosophy",
+      "pos": "n. [U]",
+      "phonetic": "[fəˋlɑsəfɪ]",
+      "definition": "哲學；人生處世哲學；思辨",
+      "cefr": "B1",
+      "topic": "哲學思辨",
+      "examples": [
+        {
+          "en": "Studying philosophy trains students to question unexamined assumptions and seek fundamental truths.",
+          "zh": "修讀哲學能訓練青年學子勇於質疑未經檢驗的成見假設，並執著探尋事物背後的根本真理。"
+        },
+        {
+          "en": "Her personal business philosophy centers on honesty, customer satisfaction, and employee well-being.",
+          "zh": "她個人的創業經營哲學始終圍繞著誠實守信、顧客第一以及細心呵護員工身心健康的三大核心。"
+        },
+        {
+          "en": "Eastern philosophy encourages inner stillness, humility, and mindful alignment with nature's flow.",
+          "zh": "東方哲學崇尚內心靜謐定力、虛懷若谷的謙遜，以及順應天地大自然生生不息的運行律動。"
+        }
+      ],
+      "collocations": [
+        "moral and political philosophy"
+      ]
+    },
+    {
+      "id": 5152,
+      "word": "critical",
+      "pos": "adj.",
+      "phonetic": "[ˋkrɪtɪk!]",
+      "definition": "批判性獨立思考的；關鍵的",
+      "cefr": "B1",
+      "topic": "思辨能力",
+      "examples": [
+        {
+          "en": "Developing sharp critical thinking skills shields young minds from online misinformation and scams.",
+          "zh": "培養敏銳犀利的批判性思考能力（Critical Thinking），是抵禦網路假訊息與詐騙手法的最佳心智護盾。"
+        },
+        {
+          "en": "Timely delivery of pediatric vaccines is critical for preventing infectious outbreaks in schools.",
+          "zh": "準時安全地將小兒常規疫苗冷鏈配送至各級校園，是徹底杜絕傳染病群聚感染不可或缺的關鍵要務。"
+        },
+        {
+          "en": "Film critics gave mostly critical reviews of the big-budget action blockbuster for its predictable plot.",
+          "zh": "國內外權威影評人對這部耗資數億美元的商業動作大片給予了相當嚴厲尖銳的負面批判，直指其劇情老套可預測。"
+        }
+      ],
+      "collocations": [
+        "critical thinking skills"
+      ]
+    },
+    {
+      "id": 5153,
+      "word": "epistemology",
+      "pos": "n. [U]",
+      "phonetic": "[ɪ͵pɪstəˋmɑlədʒɪ]",
+      "definition": "認識論（探討知識本質與真理）",
+      "cefr": "B1",
+      "topic": "哲學分支",
+      "examples": [
+        {
+          "en": "Epistemology investigates how humans justify true beliefs versus mere subjective opinions.",
+          "zh": "「認識論」（Epistemology）深入探討人類如何驗證真正的客觀真理，並將其與個人主觀偏見劃清界線。"
+        },
+        {
+          "en": "In our graduate seminar, we explored the epistemology of scientific discovery and empirical observation.",
+          "zh": "在這門研究所專題研討課中，我們深入剖析了科學假說驗證與實證觀察背後深刻的認識論意涵。"
+        },
+        {
+          "en": "Modern philosophers debate the epistemology of artificial intelligence and machine-generated knowledge.",
+          "zh": "當代哲學界熱烈思辨人工智慧大模型自我學習所生成的知識體系，是否具備獨立且可靠的認識論合法性。"
+        }
+      ],
+      "collocations": [
+        "branch of epistemology"
+      ]
+    },
+    {
+      "id": 5154,
+      "word": "deductive",
+      "pos": "adj.",
+      "phonetic": "[dɪˋdʌktɪv]",
+      "definition": "邏輯演繹法的；推論的",
+      "cefr": "B1",
+      "topic": "邏輯推論",
+      "examples": [
+        {
+          "en": "Deductive reasoning derives guaranteed logical conclusions from sound, verified universal premises.",
+          "zh": "演繹推理（Deductive Reasoning）從經過嚴密驗證的真實大前提中，必然推導出分毫不差的邏輯結論。"
+        },
+        {
+          "en": "Sherlock Holmes famously used sharp deductive logic to solve baffling murder mysteries.",
+          "zh": "名偵探福爾摩斯以其招牌的犀利邏輯演繹法聞名，能從微小的蛛絲馬跡中破獲離奇棘手的凶殺懸案。"
+        },
+        {
+          "en": "Unlike inductive guesswork, pure mathematical proofs rely entirely on airtight deductive steps.",
+          "zh": "有別於從個別經驗出發的歸納猜想，純數學定理的嚴格推導證明，百分之百仰賴滴水不漏的演繹步驟。"
+        }
+      ],
+      "collocations": [
+        "deductive reasoning logic"
+      ]
+    },
+    {
+      "id": 5155,
+      "word": "premise",
+      "pos": "n.",
+      "phonetic": "[ˋprɛmɪs]",
+      "definition": "邏輯前提；假定前提",
+      "cefr": "B1",
+      "topic": "邏輯結構",
+      "examples": [
+        {
+          "en": "If the starting premise is flawed, even the most sophisticated argument collapses into error.",
+          "zh": "如果開頭立論的前提（Premise）本身存在根本謬誤，即便後續論證再如何精巧也難逃錯誤命運。"
+        },
+        {
+          "en": "The gripping sci-fi thriller is built on the intriguing premise that human memories can be traded as digital currency.",
+          "zh": "這部扣人心弦的科幻驚悚小說構築在一個極具創意的假定前提上：人類記憶能像虛擬貨幣般被自由買賣。"
+        },
+        {
+          "en": "Smoking is strictly prohibited anywhere on school premises, including outdoor athletic fields.",
+          "zh": "學校校園建物基地與全體附屬場域範圍內全面嚴禁吸菸，包括戶外操場田徑場與籃球場在內。"
+        }
+      ],
+      "collocations": [
+        "sound logical premise"
+      ]
+    },
+    {
+      "id": 5156,
+      "word": "fallacy",
+      "pos": "n.",
+      "phonetic": "[ˋfæləsɪ]",
+      "definition": "邏輯謬誤；荒謬錯誤觀念",
+      "cefr": "B1",
+      "topic": "邏輯陷阱",
+      "examples": [
+        {
+          "en": "Pointing out a logical fallacy in a debate dismantles faulty reasoning without resorting to insults.",
+          "zh": "在公共政策辯論中清楚指出對方的邏輯謬誤（Fallacy），能文明拆解錯誤論述而無需淪為人身攻擊。"
+        },
+        {
+          "en": "Believing that luck must change after a series of coin tosses is a classic example of the gambler’s fallacy.",
+          "zh": "盲目深信在連續擲出多次反面後下次必定出現正面，是統計機率學中極為經典的賭徒謬誤（Gambler's Fallacy）。"
+        },
+        {
+          "en": "It is a dangerous fallacy to assume that technological wealth automatically guarantees human happiness.",
+          "zh": "盲目認定科技進步與物質財富的累積必然能自動等同於人類心靈的真正幸福，是一種危險而膚淺的荒謬觀念。"
+        }
+      ],
+      "collocations": [
+        "informal logical fallacy"
+      ]
+    },
+    {
+      "id": 5157,
+      "word": "dilemma",
+      "pos": "n.",
+      "phonetic": "[dɪˋlɛmə]",
+      "definition": "道德兩難困境；進退維谷",
+      "cefr": "B1",
+      "topic": "倫理抉擇",
+      "examples": [
+        {
+          "en": "The famous runaway trolley problem presents a heart-wrenching ethical dilemma about saving lives.",
+          "zh": "著名的失控電車難題呈現了一個扣人心弦的道德兩難困境（Dilemma），拷問人性在生命抉擇時的取捨。"
+        },
+        {
+          "en": "Rising housing prices and low starting salaries place young college graduates in a severe economic dilemma.",
+          "zh": "居高不下的都會房價與初出茅廬的起薪水準，讓無數剛踏入社會的年輕大學畢業生陷入嚴峻的經濟兩難困局。"
+        },
+        {
+          "en": "The hospital ethics board met urgently to resolve a complex life-support treatment dilemma for the patient.",
+          "zh": "醫學中心臨床倫理委員會緊急召開特別會議，就病患是否繼續維持侵入性維生設備展開審慎的兩難抉擇研商。"
+        }
+      ],
+      "collocations": [
+        "ethical and moral dilemma"
+      ]
+    },
+    {
+      "id": 5158,
+      "word": "bias",
+      "pos": "n., v.",
+      "phonetic": "[ˋbaɪəs]",
+      "definition": "認知偏誤；確認偏誤；偏見",
+      "cefr": "B1",
+      "topic": "心理盲點",
+      "examples": [
+        {
+          "en": "Confirmation bias leads internet users to only read news articles matching their pre-existing beliefs.",
+          "zh": "「確認偏誤」（Confirmation Bias）促使網友往往只熱衷點閱符合自身既定政治立場的文章，強化盲點。"
+        },
+        {
+          "en": "Judges take a solemn oath to preside over courtroom proceedings fairly without personal bias or prejudice.",
+          "zh": "法官在就職時莊嚴宣誓，誓言在法庭審理案件過程中秉持客觀超然，絕不受個人任何主觀偏見左右。"
+        },
+        {
+          "en": "Artificial intelligence training datasets must be carefully audited to prevent algorithmic gender and racial bias.",
+          "zh": "人工智慧訓練資料庫必須經過嚴密的獨立資安與倫理審查，以徹底消除演算法潛藏的性別與種族偏誤。"
+        }
+      ],
+      "collocations": [
+        "cognitive confirmation bias"
+      ]
+    },
+    {
+      "id": 5159,
+      "word": "ethics",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋɛθɪks]",
+      "definition": "道德倫理學；職業道德準則",
+      "cefr": "B1",
+      "topic": "倫理規範",
+      "examples": [
+        {
+          "en": "Professional journalism ethics mandate verifying sources with three independent witnesses before publishing.",
+          "zh": "專業新聞從業人員的崇高新聞倫理（Ethics），嚴格要求在頭條報導刊出前必須向三位獨立消息來源查證。"
+        },
+        {
+          "en": "The engineering curriculum requires all undergraduates to pass a course in professional engineering ethics.",
+          "zh": "國立大學工學院明文規定，所有工程系學生在畢業前皆必須修習並通過專業工程師職業倫理必修學分。"
+        },
+        {
+          "en": "Bioethics committees establish clear boundaries to prevent unauthorized cloning and genetic tampering.",
+          "zh": "國家生醫倫理委員會制定了嚴格的紅線邊界，嚴厲禁止任何未經核准的人類生殖性複製與基因編輯濫用。"
+        }
+      ],
+      "collocations": [
+        "code of professional ethics"
+      ]
+    },
+    {
+      "id": 5160,
+      "word": "utilitarianism",
+      "pos": "n. [U]",
+      "phonetic": "[͵jutəlɪˋtɛrɪənˌɪzəm]",
+      "definition": "功利主義效益主義 (最大幸福原則)",
+      "cefr": "B1",
+      "topic": "倫理學派",
+      "examples": [
+        {
+          "en": "Utilitarianism judges the morality of actions based on maximizing happiness for the greatest number.",
+          "zh": "功利主義效益主義（Utilitarianism）主張以「為最大多數人創造最大福祉與幸福」作為衡量行為善惡的標準。"
+        },
+        {
+          "en": "Critics of pure utilitarianism point out that it can sometimes justify trampling on individual human rights.",
+          "zh": "純粹效益主義的批判者犀利指出，若一味追求群體最大多數利益，有時恐將淪為踐踏少數個人基本人權的藉口。"
+        },
+        {
+          "en": "British philosophers Jeremy Bentham and John Stuart Mill formulated the foundational tenets of utilitarianism.",
+          "zh": "英國思想大師邊沁與約翰·史都華·彌爾，共同奠定了近現代效益主義哲學體系最核心的理論支柱。"
+        }
+      ],
+      "collocations": [
+        "philosophical utilitarianism"
+      ]
+    },
+    {
+      "id": 5161,
+      "word": "imperative",
+      "pos": "n., adj.",
+      "phonetic": "[ɪmˋpɛrətɪv]",
+      "definition": "康德絕對命令道德義務；迫切的",
+      "cefr": "B1",
+      "topic": "義務哲學",
+      "examples": [
+        {
+          "en": "Kant’s categorical imperative commands humans to never treat fellow persons merely as a means.",
+          "zh": "康德哲學中的「絕對命令」（Categorical Imperative）告誡世人：永遠要將他人視為目的本身，而非獲利工具。"
+        },
+        {
+          "en": "Immediate global climate action is an urgent humanitarian imperative to save low-lying island nations.",
+          "zh": "立即採取全球跨國氣候行動，是一項刻不容緩的人道主義迫切使命，以拯救面臨滅頂之災的海島國家。"
+        },
+        {
+          "en": "In grammar, imperative sentences are used to issue direct commands, friendly requests, or firm warnings.",
+          "zh": "在英語文法結構中，「祈使句」（Imperative Sentence）通常用於發出直接的行動命令、委婉請求或嚴肅警示。"
+        }
+      ],
+      "collocations": [
+        "categorical moral imperative"
+      ]
+    },
+    {
+      "id": 5162,
+      "word": "virtue",
+      "pos": "n. [U]",
+      "phonetic": "[ˋvɝtʃu]",
+      "definition": "德性倫理學之崇高品格；美德",
+      "cefr": "B1",
+      "topic": "德行修養",
+      "examples": [
+        {
+          "en": "Aristotle taught that cultivating virtue requires daily practice of courage, justice, and temperance.",
+          "zh": "亞里斯多德倡導「德性倫理學」，強調高尚的美德（Virtue）必須透過每日在勇氣、正義與節制中身體力行。"
+        },
+        {
+          "en": "Patience is universally hailed as an invaluable virtue in times of trial and personal hardship.",
+          "zh": "在面對突如其來的艱難考驗與人生命運挫折時，耐心與沉著始終被普世公認為最難能可貴的高尚美德。"
+        },
+        {
+          "en": "By virtue of her outstanding research achievements, the young scientist won early tenure at the university.",
+          "zh": "憑藉著（By virtue of）在半導體材料領域極為突出的世界級頂尖研發成就，這位年輕女科學家破格提早獲得終身教職。"
+        }
+      ],
+      "collocations": [
+        "virtue ethics tradition"
+      ]
+    },
+    {
+      "id": 5163,
+      "word": "conscience",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɑnʃəns]",
+      "definition": "內在良心良知；道德自覺",
+      "cefr": "B1",
+      "topic": "內在指引",
+      "examples": [
+        {
+          "en": "Guided by a clear conscience, the whistleblower exposed corporate corruption despite immense personal risk.",
+          "zh": "在清明無愧的內在良心（Conscience）指引下，吹哨者無懼龐大壓力毅然揭發企業高層的貪腐黑幕。"
+        },
+        {
+          "en": "He tossed and turned in bed, unable to sleep because a guilty conscience weighed heavily on his chest.",
+          "zh": "他整夜在床上輾轉反側無法入眠，因為內心深處那份因說謊而產生的沉重內疚良知折磨著他的良心。"
+        },
+        {
+          "en": "Prisoners of conscience are non-violent individuals jailed simply for expressing their peaceful beliefs.",
+          "zh": "所謂「良心犯」（Prisoners of Conscience），是指僅因和平表達自身政治理念或信仰而無辜遭極權黑牢監禁的公民。"
+        }
+      ],
+      "collocations": [
+        "clear moral conscience"
+      ]
+    },
+    {
+      "id": 5164,
+      "word": "justice",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdʒʌstɪs]",
+      "definition": "羅爾斯正義論（公平即正義）；正義",
+      "cefr": "B1",
+      "topic": "社會正義",
+      "examples": [
+        {
+          "en": "John Rawls argued that true social justice protects the basic rights of the most disadvantaged citizens.",
+          "zh": "政治哲學家羅爾斯在《正義論》中深刻闡述：真正的社會正義（Justice），必須優先捍衛最弱勢族群的基本人權。"
+        },
+        {
+          "en": "The dedicated detective spent a decade pursuing cold case clues to deliver justice for the murder victim.",
+          "zh": "熱血刑警長達十年如一日鍥而不捨追查陳年冷案懸案線索，終為含冤九泉的受害者家屬伸張遲來的公道與正義。"
+        },
+        {
+          "en": "Lady Justice is traditionally portrayed blindfolded, holding a balanced scale and a double-edged sword.",
+          "zh": "在西方雕塑傳統中，正義女神通常雙眼蒙布象徵不徇私情，左手平端天平衡量曲直，右手緊握正義雙刃利劍。"
+        }
+      ],
+      "collocations": [
+        "social and legal justice"
+      ]
+    },
+    {
+      "id": 5165,
+      "word": "fairness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfɛrnɪs]",
+      "definition": "程序與實質公平公正；公正",
+      "cefr": "B1",
+      "topic": "核心價值",
+      "examples": [
+        {
+          "en": "Procedural fairness ensures all courtroom participants receive equal opportunity to present evidence.",
+          "zh": "嚴格落實「程序公正」（Fairness），能確保法庭上每一位當事人享有完全均等的陳述與舉證權利。"
+        },
+        {
+          "en": "Referees must enforce tournament rules strictly to maintain competitive fairness for every athlete.",
+          "zh": "賽事裁判長必須公正無私地嚴格執行大會各項比賽規章，堅決維護每位在場運動健兒公平競爭的體育精神。"
+        },
+        {
+          "en": "In all fairness to the junior analyst, she was given an impossible deadline to complete the market study.",
+          "zh": "平心而論（In all fairness），指派給這位剛入職的菜鳥市場分析師的調研期限實在過於苛刻，根本是不可能的任務。"
+        }
+      ],
+      "collocations": [
+        "procedural legal fairness"
+      ]
+    },
+    {
+      "id": 5166,
+      "word": "inalienable",
+      "pos": "adj.",
+      "phonetic": "[ɪnˋelɪənəb!]",
+      "definition": "天賦不可剝奪的人權",
+      "cefr": "B1",
+      "topic": "人權價值",
+      "examples": [
+        {
+          "en": "Universal human rights are inalienable, belonging to every newborn baby regardless of nationality.",
+          "zh": "普世基本人權是天賦「不可剝奪的」（Inalienable），無論國籍、性別與膚色，每個人生而平等享有。"
+        },
+        {
+          "en": "The Declaration of Independence famously proclaims the inalienable rights to life, liberty, and the pursuit of happiness.",
+          "zh": "美國《獨立宣言》在開篇便莊嚴宣告：人人享有由造物主所賦予的生存、自由與追求幸福等不可剝奪的神聖權利。"
+        },
+        {
+          "en": "Democratic constitutions protect citizens' inalienable freedom of conscience and peaceful assembly from government overreach.",
+          "zh": "現代民主自由憲法嚴格捍衛全體國民不可剝奪的心靈思想自由與和平集會結社自由，堅決阻遏政府公權力侵害。"
+        }
+      ],
+      "collocations": [
+        "inalienable human rights"
+      ]
+    },
+    {
+      "id": 5167,
+      "word": "determinism",
+      "pos": "n. [U]",
+      "phonetic": "[dɪˋtɝmənˌɪzəm]",
+      "definition": "宇宙因果決定論；宿命觀點",
+      "cefr": "B1",
+      "topic": "自由意志",
+      "examples": [
+        {
+          "en": "Hard determinism claims every human choice is purely the physical result of past molecular events.",
+          "zh": "嚴格的物理「決定論」（Determinism）主張，人類的一切思考與抉擇皆受宇宙過往物理因果法則所注定。"
+        },
+        {
+          "en": "Compatibilists argue that moral responsibility remains meaningful even if determinism holds true in nature.",
+          "zh": "相容論哲學家深入辯證指出，即便自然界物理因果決定論確實成立，人類應承擔的道德責任與自律依舊充滿意義。"
+        },
+        {
+          "en": "Rejecting biological determinism, educators emphasize that human potential blossoms through education and nurture.",
+          "zh": "堅決摒棄將一切歸咎於先天基因的生物決定論，現代進步教育家堅信人類的無窮潛力完全能透過後天教育與溫柔引導綻放。"
+        }
+      ],
+      "collocations": [
+        "physical determinism"
+      ]
+    },
+    {
+      "id": 5168,
+      "word": "consciousness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɑnʃəsnɪs]",
+      "definition": "人類主觀心智意識感知 (Qualia)",
+      "cefr": "B1",
+      "topic": "心靈哲學",
+      "examples": [
+        {
+          "en": "The 'hard problem' of consciousness asks why brain neural firings create rich subjective feelings of love or red colors.",
+          "zh": "心靈哲學中最深奧的「意識難題」（Consciousness），探討為何大腦神經放電能轉化為人體豐富的主觀情感。"
+        },
+        {
+          "en": "The injured football player briefly lost consciousness after a helmet collision, prompting a concussion protocol.",
+          "zh": "這位美式足球員在頭盔猛烈衝撞後一度陷入短暫意識喪失，場邊隊醫第一時間啟動腦震盪安全醫療評估處置。"
+        },
+        {
+          "en": "Environmental consciousness has become widespread among young consumers, driving demand for reusable tumblers.",
+          "zh": "環保永續意識在當代年輕消費族群中已深入人心，帶動了自備環保隨行杯與環保餐具的日常綠色生活浪潮。"
+        }
+      ],
+      "collocations": [
+        "human subjective consciousness"
+      ]
+    },
+    {
+      "id": 5169,
+      "word": "existentialism",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɛgzɪsˋtɛnʃəlˌɪzəm]",
+      "definition": "存在主義（存在先於本質）",
+      "cefr": "B1",
+      "topic": "現代哲學",
+      "examples": [
+        {
+          "en": "Existentialism proclaims that existence precedes essence, empowering us to define our own meaning.",
+          "zh": "存在主義（Existentialism）高呼「存在先於本質」，賦予每個人在荒謬世界中主動定義自我生命意義的自由。"
+        },
+        {
+          "en": "French philosophers Jean-Paul Sartre and Simone de Beauvoir became the intellectual faces of existentialism.",
+          "zh": "法國思想泰斗沙特與西蒙·波娃，在二次大戰後成為風靡整個歐洲大陸的存在主義哲學思想代言人。"
+        },
+        {
+          "en": "Rather than surrendering to despair, existentialism calls on each person to take radical responsibility for choices.",
+          "zh": "有別於向虛無與絕望繳械投降，存在主義強烈呼籲每一個人必須為自己當下做出的每一個人生抉擇承擔終極責任。"
+        }
+      ],
+      "collocations": [
+        "existentialism philosophy"
+      ]
+    },
+    {
+      "id": 5170,
+      "word": "absurdity",
+      "pos": "n. [U]",
+      "phonetic": "[əbˋsɝdətɪ]",
+      "definition": "卡繆荒謬哲學；荒謬不合理",
+      "cefr": "B1",
+      "topic": "生命叩問",
+      "examples": [
+        {
+          "en": "Albert Camus embraced the absurdity of life, urging humanity to live passionately like Sisyphus rolling his stone.",
+          "zh": "卡繆勇敢直面世界的「荒謬性」（Absurdity），勉勵世人如薛西弗斯推石上山般，在抗爭中活出燃燒的熱情。"
+        },
+        {
+          "en": "The sheer absurdity of waiting in line for three hours just to buy a box of egg tarts left him shaking his head.",
+          "zh": "光是為了一盒網美葡式蛋塔就頂著大太陽排隊三個小時，這種盲從跟風的荒謬不合理讓他忍不住直搖頭。"
+        },
+        {
+          "en": "Theater of the Absurd uses nonsensical dialogue to mirror the chaotic nature of the human condition.",
+          "zh": "西方「荒謬劇場」（Theater of the Absurd）巧妙藉由前言不對後語的荒誕對白，深刻映照出人類生存處境的混亂與迷惘。"
+        }
+      ],
+      "collocations": [
+        "philosophical absurdity"
+      ]
+    },
+    {
+      "id": 5171,
+      "word": "nihilism",
+      "pos": "n. [U]",
+      "phonetic": "[ˋnaɪəlˌɪzəm]",
+      "definition": "克服虛無主義；虛無主義",
+      "cefr": "B1",
+      "topic": "心靈危機",
+      "examples": [
+        {
+          "en": "Nietzsche urged humanity to overcome passive nihilism by courageously creating new life-affirming values.",
+          "zh": "尼采深刻告誡世人必須奮起克服吞噬心靈的「虛無主義」（Nihilism），勇敢創造肯定生命價值的嶄新意義。"
+        },
+        {
+          "en": "Despairing over social injustice, some alienated youths fall prey to cynical, destructive political nihilism.",
+          "zh": "由於對社會不公感到幻滅與孤立無援，少數失落青年容易淪為冷嘲熱諷、甚至具破壞傾向的政治虛無主義俘虜。"
+        },
+        {
+          "en": "Optimistic nihilism suggests that if the universe has no inherent meaning, we are completely free to invent our own joy.",
+          "zh": "「樂觀虛無主義」提出了豁達的視角：既然宇宙浩瀚本就毫無預設意義，我們反而擁有完全的自由為自己創造快樂。"
+        }
+      ],
+      "collocations": [
+        "overcome existential nihilism"
+      ]
+    },
+    {
+      "id": 5172,
+      "word": "stoicism",
+      "pos": "n. [U]",
+      "phonetic": "[ˋstoəˌsɪzəm]",
+      "definition": "斯多葛哲學（內心平靜波瀾不驚）",
+      "cefr": "B1",
+      "topic": "處世智慧",
+      "examples": [
+        {
+          "en": "Practicing daily stoicism trains the mind to remain calm and steadfast during turbulent external crises.",
+          "zh": "每日修練古羅馬「斯多葛哲學」（Stoicism），能訓練心智在外界狂風暴雨中依然維持內心堅定與波瀾不驚。"
+        },
+        {
+          "en": "Roman Emperor Marcus Aurelius recorded personal reflections on stoicism in his famous Meditations.",
+          "zh": "古羅馬哲學家皇帝馬可·奧理略在轉戰邊陲的行軍帳篷中，於傳世名著《沉思錄》中記錄下對斯多葛處世之道的深沉體悟。"
+        },
+        {
+          "en": "His remarkable stoicism in the face of painful chemotherapy inspired all the oncologists and nurses.",
+          "zh": "在面對化療帶來強烈噁心與劇烈疼痛的折磨時，他所展現出的從容堅定與平靜豁達深深感動了全體醫護人員。"
+        }
+      ],
+      "collocations": [
+        "ancient Roman stoicism"
+      ]
+    },
+    {
+      "id": 5173,
+      "word": "dichotomy",
+      "pos": "n.",
+      "phonetic": "[daɪˋkɑtəmɪ]",
+      "definition": "斯多葛控制二分法；二分法",
+      "cefr": "B1",
+      "topic": "掌控原則",
+      "examples": [
+        {
+          "en": "The dichotomy of control teaches us to focus entirely on our own reactions while letting go of what we cannot change.",
+          "zh": "斯多葛「控制二分法」（Dichotomy of Control）啟發我們：全然專注於自身能決定的態度，泰然放下無法改變的外在。"
+        },
+        {
+          "en": "Sociologists critique the false dichotomy between economic development and environmental preservation.",
+          "zh": "社會學者嚴厲抨擊那種將經濟繁榮與環境保育非此即彼、截然對立起來的「虛假二分法」（False Dichotomy）。"
+        },
+        {
+          "en": "There is often a jarring dichotomy between a celebrity's glamorous public persona and their troubled private life.",
+          "zh": "聚光燈下巨星光鮮亮麗的公眾形象與其私底下孤獨掙扎的真實生活之間，往往存在著令人唏噓的巨大反差與二分斷裂。"
+        }
+      ],
+      "collocations": [
+        "dichotomy of control"
+      ]
+    },
+    {
+      "id": 5174,
+      "word": "skepticism",
+      "pos": "n. [U]",
+      "phonetic": "[ˋskɛptəˌsɪzəm]",
+      "definition": "笛卡兒方法論懷疑論；懷疑態度",
+      "cefr": "B1",
+      "topic": "科學精神",
+      "examples": [
+        {
+          "en": "Healthy scientific skepticism demands robust empirical proof before accepting sensational claims.",
+          "zh": "保持健康的「科學懷疑論」（Skepticism）精神，在接受任何聳動言論前，堅持要求具備扎實客觀的實驗證據。"
+        },
+        {
+          "en": "Financial analysts greeted the corporate turnaround claims with deep skepticism given past earnings shortfalls.",
+          "zh": "鑑於該公司過去連續數季財報預測皆嚴重跳票，外資分析師對管理階層聲稱即將轉虧為盈的說法抱持高度懷疑態度。"
+        },
+        {
+          "en": "René Descartes used radical philosophical skepticism to arrive at his foundational truth: 'I think, therefore I am.'",
+          "zh": "法國哲學泰斗笛卡兒透過徹底的「方法論懷疑」，推導出近代哲學不可撼動的阿基米德支點：「我思，故我在」。"
+        }
+      ],
+      "collocations": [
+        "healthy scientific skepticism"
+      ]
+    },
+    {
+      "id": 5175,
+      "word": "dialectic",
+      "pos": "n. [U], adj.",
+      "phonetic": "[͵daɪəˋlɛktɪk]",
+      "definition": "辯證法 (正反合辯證過程)；辯證的",
+      "cefr": "B1",
+      "topic": "思維模式",
+      "examples": [
+        {
+          "en": "Hegelian dialectic demonstrates how opposing ideas clash and synthesize into higher levels of truth.",
+          "zh": "黑格爾「辯證法」（Dialectic）揭示了正反兩種相互對立的觀點如何在激烈碰撞中「揚棄與合一」，昇華為更高層次真理。"
+        },
+        {
+          "en": "Socratic dialogue uses dialectic questioning to expose hidden contradictions in everyday common sense.",
+          "zh": "蘇格拉底經典對話錄巧妙運用層層遞進的辯證詰問法，一步步揭露出世人自以為是的日常常識背後潛藏的自我矛盾。"
+        },
+        {
+          "en": "The dynamic dialectic between individual liberty and public safety shapes modern democratic legislation.",
+          "zh": "個人自由權利與公共安全福祉之間動態發展的辯證拉鋸與折衝，深刻塑造了當代民主法治國家的各項核心立法精神。"
+        }
+      ],
+      "collocations": [
+        "Hegelian dialectic process"
+      ]
+    },
+    {
+      "id": 5176,
+      "word": "discourse",
+      "pos": "n. [U]",
+      "phonetic": "[dɪsˋkors]",
+      "definition": "公民理性公共論辯；論述",
+      "cefr": "B1",
+      "topic": "公共領域",
+      "examples": [
+        {
+          "en": "Civil public discourse thrives when opposing sides listen respectfully without personal hostility.",
+          "zh": "唯有當不同立場的公民皆能摒棄敵意、互相傾聽與講理時，成熟健康的「公民公共論辯」（Discourse）方能開花結果。"
+        },
+        {
+          "en": "University campuses should be safe havens for open intellectual discourse, intellectual debate, and free inquiry.",
+          "zh": "大學校園理應成為包容多元思想、鼓勵自由探索、以及展開健康學術公共論述的崇高精神避風港。"
+        },
+        {
+          "en": "Online social networks have regrettably coarsened political discourse, turning nuanced issues into crude slogans.",
+          "zh": "令人遺憾的是，現代社群平台演算法大幅粗鄙化了嚴肅的公共論述，將原本需要細膩探討的公共議題簡化為粗暴口號。"
+        }
+      ],
+      "collocations": [
+        "civil democratic discourse"
+      ]
+    },
+    {
+      "id": 5177,
+      "word": "polarization",
+      "pos": "n. [U]",
+      "phonetic": "[͵polərəˋzeʃən]",
+      "definition": "社會政治意識形態極化對立",
+      "cefr": "B1",
+      "topic": "社會現象",
+      "examples": [
+        {
+          "en": "Bridging political polarization requires breaking out of social media algorithm bubbles.",
+          "zh": "化解日益嚴重的政治「意識形態極化」（Polarization），亟需大家勇敢走出社群媒體演算法所構築的同溫層。"
+        },
+        {
+          "en": "Polarized sunglasses reduce harsh glare reflecting off open water surfaces on sunny boat outings.",
+          "zh": "在豔陽天出海垂釣時配戴高階偏光太陽眼鏡，能大幅過濾並消除來自波光粼粼水面所反射出的刺眼眩光。"
+        },
+        {
+          "en": "Growing wealth inequality deepens social polarization, eroding mutual trust between different socioeconomic classes.",
+          "zh": "日益擴大的貧富貧富差距正不斷加劇社會階層的極化對立，逐步侵蝕不同社經群體之間長久建立的互信基礎。"
+        }
+      ],
+      "collocations": [
+        "political and social polarization"
+      ]
+    },
+    {
+      "id": 5178,
+      "word": "humility",
+      "pos": "n. [U]",
+      "phonetic": "[hjuˋmɪlətɪ]",
+      "definition": "虛懷若谷的知識謙遜；謙虛",
+      "cefr": "B1",
+      "topic": "學者美德",
+      "examples": [
+        {
+          "en": "Intellectual humility is acknowledging that our current knowledge is always partial and open to correction.",
+          "zh": "具備「知識謙遜」（Humility）的大學者始終銘記：自身所知永遠只是浩瀚真理的一小部分，隨時虛心受教。"
+        },
+        {
+          "en": "Despite winning the prestigious Nobel Prize in Chemistry, the humble professor treated every freshman with warmth and humility.",
+          "zh": "儘管榮獲全球學術界最高榮譽諾貝爾化學獎，這位老教授在面對大一新鮮人提問時依然無比親切謙遜、虛懷若谷。"
+        },
+        {
+          "en": "Facing a devastating clinical diagnosis taught the arrogant surgeon a profound personal lesson in humility.",
+          "zh": "在自己不幸親身遭遇重症的沉重打擊後，這位昔日自命不凡的名醫徹底上了一堂震撼靈魂的謙卑人生必修課。"
+        }
+      ],
+      "collocations": [
+        "intellectual humility"
+      ]
+    },
+    {
+      "id": 5179,
+      "word": "perspective",
+      "pos": "n.",
+      "phonetic": "[pɚˋspɛktɪv]",
+      "definition": "換位思考多元觀點；視角",
+      "cefr": "B1",
+      "topic": "思考維度",
+      "examples": [
+        {
+          "en": "Embracing multiple perspectives enriches problem-solving, revealing creative angles hidden from single minds.",
+          "zh": "主動換位思考並包容多元視角（Perspective），能為棘手問題帶來單一思維所無法看見的開創性解方。"
+        },
+        {
+          "en": "Walking through the quiet hospital ward gave the stressed executive a healthier perspective on what truly matters in life.",
+          "zh": "漫步在寂靜的安寧病房長廊，讓這位平日被業績壓得喘不過氣的高階主管頓悟，重新找回審視人生真正重要之事的健康視角。"
+        },
+        {
+          "en": "From an evolutionary perspective, fear is an adaptive survival mechanism that kept our ancestors alive.",
+          "zh": "從生物演化生物學的宏觀視角來看，恐懼感是一種極具適應性的求生本能機制，曾在險惡荒野中保護我們的祖先繁衍存活。"
+        }
+      ],
+      "collocations": [
+        "diverse cultural perspective"
+      ]
+    },
+    {
+      "id": 5180,
+      "word": "nuance",
+      "pos": "n.",
+      "phonetic": "[njuˋɑns]",
+      "definition": "體察微妙細膩層次；細微差別",
+      "cefr": "B1",
+      "topic": "細膩思維",
+      "examples": [
+        {
+          "en": "Mature thinkers appreciate nuance and complexity instead of settling for simplistic black-and-white answers.",
+          "zh": "成熟睿智的思想家懂得體察事物的「細膩層次」（Nuance）與複雜度，絕不輕易落入非黑即白的粗暴簡化。"
+        },
+        {
+          "en": "Professional literary translators must capture cultural nuances that cannot be translated word-for-word.",
+          "zh": "專業文學翻譯大師必須深刻捕捉文字背後所隱含的文化細微語境差別，而這些絕非呆板的字面直譯所能傳達。"
+        },
+        {
+          "en": "The seasoned diplomat skillfully navigated the subtle political nuances of the international treaty negotiations.",
+          "zh": "這位經驗豐富的資深外交家遊刃有餘地穿梭於國際公約談判中，巧妙化解各國代表在措辭細節上的微妙政治算計。"
+        }
+      ],
+      "collocations": [
+        "subtle philosophical nuance"
+      ]
+    },
+    {
+      "id": 5181,
+      "word": "deliberation",
+      "pos": "n. [U]",
+      "phonetic": "[dɪ͵lɪbəˋreʃən]",
+      "definition": "審議民主深度理性思辨；審慎深思",
+      "cefr": "B1",
+      "topic": "民主機制",
+      "examples": [
+        {
+          "en": "Thoughtful democratic deliberation among citizens produces durable, fair policies that stand the test of time.",
+          "zh": "全體公民在「審議民主」（Deliberation）中展開深入理性對話，能凝聚出最禁得起時間考驗的公平公共政策。"
+        },
+        {
+          "en": "After three days of intense deliberation, the trial jury reached a unanimous verdict of not guilty.",
+          "zh": "歷經長達整整三天閉門激辯與審慎深思（Deliberation），刑事審判陪審團最終達成了全體一致判決無罪的共識。"
+        },
+        {
+          "en": "The board made the acquisition decision only after months of prudent financial deliberation.",
+          "zh": "董事會是在歷經長達數月針對各項財務模型與併購綜效展開謹慎審議後，方才拍板定案這起跨國併購案。"
+        }
+      ],
+      "collocations": [
+        "thoughtful public deliberation"
+      ]
+    },
+    {
+      "id": 5182,
+      "word": "consensus",
+      "pos": "n. [U]",
+      "phonetic": "[kənˋsɛnsəs]",
+      "definition": "跨黨派凝聚社會廣泛共識",
+      "cefr": "B1",
+      "topic": "社會共識",
+      "examples": [
+        {
+          "en": "Building broad societal consensus on renewable energy requires patient dialogue across all sectors.",
+          "zh": "在推動能源轉型等重大國家政策上凝聚廣泛的「社會共識」（Consensus），需要政府與民間展開耐心的長期對話。"
+        },
+        {
+          "en": "The scientific consensus is overwhelming: human activities are driving accelerated changes in the global climate.",
+          "zh": "全球頂尖科學界已達成壓倒性的壓倒性科學共識：人類頻繁的化石燃料活動正是驅動全球氣候急遽變遷的罪魁禍首。"
+        },
+        {
+          "en": "Reaching an amicable family consensus regarding holiday travel plans took several lively dinner discussions.",
+          "zh": "全家人在餐桌上經過幾番熱烈愉快的討論後，終於就今年過年全家出遊行程達成了其樂融融的家庭共識。"
+        }
+      ],
+      "collocations": [
+        "build societal consensus"
+      ]
+    },
+    {
+      "id": 5183,
+      "word": "tolerance",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtɑlərəns]",
+      "definition": "多元開放社會包容寬容度",
+      "cefr": "B1",
+      "topic": "公民素養",
+      "examples": [
+        {
+          "en": "Mutual tolerance and respect are the foundational bedrock of any thriving pluralistic democracy.",
+          "zh": "相互包容寬容（Tolerance）與由衷尊重彼此差異，是支撐多元開放民主社會繁榮穩定的最堅實基石。"
+        },
+        {
+          "en": "Patients with chronic pain often build up a bodily drug tolerance to pain medications over time.",
+          "zh": "長期受慢性神經痛折磨的病患，隨著用藥時間拉長，體內對特定鎮痛止痛藥物往往會逐漸產生生理耐受性耐藥性。"
+        },
+        {
+          "en": "Precision aerospace manufacturing machines operate with microscopic dimensional tolerances under five microns.",
+          "zh": "航太精密機械零組件車削加工機床，其工件加工尺寸公差容許值（Tolerance）嚴格控制在小於五微米以內。"
+        }
+      ],
+      "collocations": [
+        "mutual cultural tolerance"
+      ]
+    },
+    {
+      "id": 5184,
+      "word": "empathy",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɛmpəθɪ]",
+      "definition": "跨越立場同理共情能力",
+      "cefr": "B1",
+      "topic": "人際智慧",
+      "examples": [
+        {
+          "en": "Practicing cognitive empathy allows us to understand why people hold beliefs radically different from our own.",
+          "zh": "實踐認知「同理心」（Empathy），能讓我們深刻理解他人為何會做出與我們截然不同的價值抉擇與生命詮釋。"
+        },
+        {
+          "en": "A great pediatric nurse listens with patience and genuine emotional empathy to anxious young parents.",
+          "zh": "一位優秀的小兒科護理師，總能以無比的耐心與真摯的同理心，溫柔傾聽焦慮新手爸媽的擔憂並給予專業指引。"
+        },
+        {
+          "en": "Fictional storytelling fosters interpersonal empathy by inviting readers to walk in the shoes of diverse protagonists.",
+          "zh": "優秀的小說文學創作能極大地拓展跨越族群的人際同理心，引領讀者設身處地體驗不同背景主角的悲歡離合。"
+        }
+      ],
+      "collocations": [
+        "deep cognitive empathy"
+      ]
+    },
+    {
+      "id": 5185,
+      "word": "integrity",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋtɛgrətɪ]",
+      "definition": "追求真理之知識誠實正直",
+      "cefr": "B1",
+      "topic": "道德操守",
+      "examples": [
+        {
+          "en": "Upholding intellectual integrity means revising your hypothesis when experimental data proves you wrong.",
+          "zh": "恪守「知識誠實與正直」（Integrity），意味著當客觀實驗數據證明假設錯誤時，能坦然承認並修正論點。"
+        },
+        {
+          "en": "The structural integrity of the suspension bridge was thoroughly inspected by engineers after the earthquake.",
+          "zh": "在大地震劇烈搖晃過後，公路局結構技師第一時間對跨海大橋鋼纜與橋墩的整體結構完整性展開了地毯式安檢。"
+        },
+        {
+          "en": "A public official of unimpeachable integrity will never accept illegal kickbacks or solicit favors.",
+          "zh": "一位品格端正、廉潔自守且具備無可指摘崇高操守的公職人員，永遠堅決拒絕任何非法利益輸送或關說請託。"
+        }
+      ],
+      "collocations": [
+        "intellectual and moral integrity"
+      ]
+    },
+    {
+      "id": 5186,
+      "word": "courage",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɝɪdʒ]",
+      "definition": "勇於捍衛正義的道德勇氣",
+      "cefr": "B1",
+      "topic": "勇者風範",
+      "examples": [
+        {
+          "en": "Standing up against injustice demands immense moral courage in the face of public disapproval.",
+          "zh": "在眾人盲從退縮的艱難時刻挺身捍衛公平正義，需要內心具備無比強大的「道德勇氣」（Moral Courage）。"
+        },
+        {
+          "en": "Firefighters displayed breathtaking physical courage as they charged into the burning warehouse to rescue victims.",
+          "zh": "消防隊員在面對滾滾濃煙與熊熊烈火的危急關頭，展現出令人肅然起敬的無畏肉體勇氣，毅然衝入火場搜救受困民眾。"
+        },
+        {
+          "en": "Admitting your own mistakes openly to your team takes emotional maturity and genuine personal courage.",
+          "zh": "勇於在團隊同仁面前坦然承認自己的決策失誤與盲點，需要極高的心智成熟度與令人信服的個人真誠勇氣。"
+        }
+      ],
+      "collocations": [
+        "moral and physical courage"
+      ]
+    },
+    {
+      "id": 5187,
+      "word": "introspection",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪntrəˋspɛkʃən]",
+      "definition": "每日內省自省檢討人生；內省",
+      "cefr": "B1",
+      "topic": "自我覺察",
+      "examples": [
+        {
+          "en": "Socrates declared that the unexamined life is not worth living, championing rigorous daily introspection.",
+          "zh": "蘇格拉底名言「未經審視的人生不值得活」，大力倡導每個人每日皆應撥出時間向內展開深沉的自我內省（Introspection）。"
+        },
+        {
+          "en": "After a difficult year of business setbacks, he spent a quiet week of silent mountain introspection.",
+          "zh": "在經歷了充滿波折與挫敗的一年後，他獨自遠赴靜謐清幽的高山林野，展開了一整週閉關沉澱的心靈自我反思省思。"
+        },
+        {
+          "en": "Meaningful personal growth requires honest introspection to identify recurring blind spots in our relationships.",
+          "zh": "想要獲得實質的心智成長與自我突破，必須對自身展開毫不留情的誠實內省，正視自己在人際互動中一再重蹈的盲點。"
+        }
+      ],
+      "collocations": [
+        "quiet daily introspection"
+      ]
+    },
+    {
+      "id": 5188,
+      "word": "moderation",
+      "pos": "n. [U]",
+      "phonetic": "[͵mɑdəˋreʃən]",
+      "definition": "亞里斯多德中庸之道；節制適度",
+      "cefr": "B1",
+      "topic": "平衡智慧",
+      "examples": [
+        {
+          "en": "Finding the golden mean through moderation avoids the destructive pitfalls of both deficiency and excess.",
+          "zh": "遵循不偏不倚的「中庸之道」（Moderation），能巧妙避開不及與過度兩端的極端陷阱，行穩致遠。"
+        },
+        {
+          "en": "Traditional dietitians advise enjoying all foods, including desserts, in thoughtful moderation.",
+          "zh": "現代營養學家建議，任何美食——包括精緻甜點在內——皆應秉持適度節制（Moderation）的原則享用，過猶不及。"
+        },
+        {
+          "en": "The internet forum relies on firm community moderation to remove abusive comments and harassment.",
+          "zh": "這座大型專業網路技術論壇，仰賴志工版主群嚴謹公正的內容審核管理（Moderation），以徹底杜絕惡意謾罵與騷擾。"
+        }
+      ],
+      "collocations": [
+        "golden mean moderation"
+      ]
+    },
+    {
+      "id": 5189,
+      "word": "mindfulness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmaɪndfʊlnɪs]",
+      "definition": "正念覺察活在當下；正念",
+      "cefr": "B1",
+      "topic": "心靈定力",
+      "examples": [
+        {
+          "en": "Practicing mindfulness allows the racing mind to settle gently into the quiet stillness of the present breath.",
+          "zh": "修練「正念覺察」（Mindfulness），能讓平日奔波焦慮的心念溫柔沉澱下來，安住在當下這一刻的悠長呼吸中。"
+        },
+        {
+          "en": "Many hospitals now offer 8-week mindfulness-based stress reduction courses for oncology patients.",
+          "zh": "國內外各大醫學中心廣泛為癌症患者開辦為期八週的正念減壓（MBSR）療程，有效緩解化療期間的焦慮與身心疼痛。"
+        },
+        {
+          "en": "Mindful walking through forest trails encourages us to tune our senses into birdsong, pine scents, and sunlight.",
+          "zh": "帶著正念漫步於阿里山巨木森林步道間，引導我們的五感徹底甦醒，專注聆聽清脆鳥鳴、呼吸檜木芳香並感受林間暖陽。"
+        }
+      ],
+      "collocations": [
+        "present-moment mindfulness"
+      ]
+    },
+    {
+      "id": 5190,
+      "word": "gratitude",
+      "pos": "n. [U]",
+      "phonetic": "[ˋgrætə͵tjud]",
+      "definition": "感恩惜福知足常樂的感恩之心",
+      "cefr": "B1",
+      "topic": "幸福密碼",
+      "examples": [
+        {
+          "en": "Cultivating daily gratitude transforms ordinary moments into profound sources of joy and contentment.",
+          "zh": "每天在心中涵養常懷「感恩之心」（Gratitude），能將看似平凡微小的日常片刻轉化為源源不絕的幸福與富足。"
+        },
+        {
+          "en": "The rescued mountaineers held a press conference to express profound gratitude to the brave search crews.",
+          "zh": "歷劫歸來的受困登山客在康復出院之際特別召開記者會，由衷向冒險搜救的空勤總隊與高山搜救隊員表達由衷的深深謝意。"
+        },
+        {
+          "en": "A handwritten note of gratitude often means far more to a mentor than an expensive store-bought gift.",
+          "zh": "一封發自肺腑、真情流露的手寫感謝信箋，對恩師而言往往遠比任何昂貴奢華的現成禮物更具千金難買的珍貴心意。"
+        }
+      ],
+      "collocations": [
+        "cultivate daily gratitude"
+      ]
+    },
+    {
+      "id": 5191,
+      "word": "enlightenment",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋlaɪtnmənt]",
+      "definition": "十八世紀啟蒙思潮心智覺醒；啟蒙",
+      "cefr": "B1",
+      "topic": "思想解放",
+      "examples": [
+        {
+          "en": "The historical Enlightenment era championed scientific reason, individual freedom, and democratic equality.",
+          "zh": "橫掃歐洲的十八世紀「啟蒙運動」（Enlightenment），大舉確立了科學理性、個人自由與民主平等的思想燈塔。"
+        },
+        {
+          "en": "Decades of disciplined meditation under ancient bodhi trees brought the sage to a state of spiritual enlightenment.",
+          "zh": "在古老菩提樹下歷經數十年如一日的嚴格打坐參禪與內觀，引導這位高僧最終證悟抵達精神心靈大徹大悟的超脫境界。"
+        },
+        {
+          "en": "Reading global history from non-Western viewpoints provided university students with immense intellectual enlightenment.",
+          "zh": "跳脫西方中心主義、從多元南方視角研讀全球通史，為這群大學歷史系學子帶來了豁然開朗的知識啟蒙心智覺醒。"
+        }
+      ],
+      "collocations": [
+        "intellectual Enlightenment era"
+      ]
+    },
+    {
+      "id": 5192,
+      "word": "flourishing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋflɝɪʃɪŋ]",
+      "definition": "人生極致幸福與自我實現 (Eudaimonia)",
+      "cefr": "B1",
+      "topic": "終極目標",
+      "examples": [
+        {
+          "en": "True human flourishing encompasses physical health, loving relationships, and the purposeful exercise of virtue.",
+          "zh": "古希臘先哲追求的「極致幸福與自我實現」（Human Flourishing），涵蓋了健康體魄、真摯情誼與德行實踐。"
+        },
+        {
+          "en": "Positive psychology investigates the environmental conditions that support individual and community flourishing.",
+          "zh": "當代正向心理學致力於深入探究能夠孕育個人心靈富足與社區群體繁榮共好（Flourishing）的最佳社會環境條件。"
+        },
+        {
+          "en": "The vibrant harbor city is witnessing a flourishing of innovative art collectives, indie theatres, and design studios.",
+          "zh": "這座充滿生命力的美麗海港都市，正見證著前衛藝術聚落、獨立實驗劇場與手作設計工坊如雨後春筍般蓬勃發展繁盛興盛。"
+        }
+      ],
+      "collocations": [
+        "true human flourishing"
+      ]
+    },
+    {
+      "id": 5193,
+      "word": "transcendence",
+      "pos": "n. [U]",
+      "phonetic": "[trænˋsɛndəns]",
+      "definition": "昇華利他超越小我之境界",
+      "cefr": "B1",
+      "topic": "精神昇華",
+      "examples": [
+        {
+          "en": "Dedicating one's life to humanitarian service offers a sublime sense of spiritual transcendence.",
+          "zh": "將有限的生命全心奉獻於人道救援與公共福祉，能獲得昇華超越小我（Transcendence）的崇高精神體驗。"
+        },
+        {
+          "en": "The breathtaking choral symphony finale lifted listeners into a realm of pure emotional transcendence.",
+          "zh": "當氣勢磅礡的合唱交響曲演奏至最神聖壯麗的終章樂段，將全場愛樂聽眾引領進純粹情感昇華超脫的非凡意境。"
+        },
+        {
+          "en": "Through profound selfless love and sacrifice, parents experience a transformative form of personal transcendence.",
+          "zh": "透過毫無保留的無私大愛與默默奉獻，天下為人父母者在撫育新生命的歲月中經歷了一場深刻的心靈自我超越與昇華。"
+        }
+      ],
+      "collocations": [
+        "spiritual and moral transcendence"
+      ]
+    },
+    {
+      "id": 5194,
+      "word": "harmony",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhɑrmənɪ]",
+      "definition": "與天地自然宇宙和諧共鳴",
+      "cefr": "B1",
+      "topic": "東方哲學",
+      "examples": [
+        {
+          "en": "Eastern philosophy emphasizes living in serene harmony with the rhythms and cycles of nature.",
+          "zh": "東方道家與儒家哲學強調「天人合一」，引導人們順應大自然四季晨昏的運行節奏，活出安詳的和諧。"
+        },
+        {
+          "en": "The vocal ensemble rehearsed diligently to perfect their four-part harmonic chord progressions.",
+          "zh": "人聲無伴奏合唱重唱團日以繼夜反覆練習，期盼將四個聲部交織的和弦進程磨礪至天衣無縫的純淨和聲之美。"
+        },
+        {
+          "en": "A sustainable community architecture design balances human convenience in gentle harmony with surrounding ecosystems.",
+          "zh": "卓越的永續綠建築規劃，巧妙在當代便利生活機能與周遭自然山林水文生態之間取得了溫柔而平衡的和諧。"
+        }
+      ],
+      "collocations": [
+        "live in perfect harmony"
+      ]
+    },
+    {
+      "id": 5195,
+      "word": "destiny",
+      "pos": "n.",
+      "phonetic": "[ˋdɛstənɪ]",
+      "definition": "主宰自我人生命運；命運",
+      "cefr": "B1",
+      "topic": "人生自主",
+      "examples": [
+        {
+          "en": "We may not choose our starting conditions, but through persistent choices, we become the authors of our own destiny.",
+          "zh": "我們或許無法選擇原生出身的起點，但透過每一次堅定而清醒的抉擇，我們終將成為自己命運（Destiny）的主宰者。"
+        },
+        {
+          "en": "The young athlete was convinced that standing atop the podium at the Olympic Games was her ultimate destiny.",
+          "zh": "這位天才型短跑少女深信不疑，在四年一度的奧運最高殿堂披金戴銀奪冠，是上天賦予她這一生最神聖的宿命與命運。"
+        },
+        {
+          "en": "Courageous democratic movements proved that determined citizens can reshape the collective political destiny of their nation.",
+          "zh": "壯烈的民主歷史運動充分證明：只要全體國民團結一心、無畏強權，我們完全有能力親手改寫整個國家的政治集體命運。"
+        }
+      ],
+      "collocations": [
+        "shape one's own destiny"
+      ]
+    },
+    {
+      "id": 5196,
+      "word": "clarity",
+      "pos": "n. [U]",
+      "phonetic": "[ˋklærətɪ]",
+      "definition": "思緒清明透徹；清晰度",
+      "cefr": "B1",
+      "topic": "智慧心境",
+      "examples": [
+        {
+          "en": "Rigorous philosophical inquiry cuts through emotional fog, bringing diamond-sharp clarity to difficult decisions.",
+          "zh": "嚴密的哲學思辨能如利刃般切開迷惘的情緒迷霧，為人生的重大關鍵抉擇帶來如鑽石般澄澈明亮的定見（Clarity）。"
+        },
+        {
+          "en": "The CEO articulated the company’s five-year expansion roadmap with impressive strategic clarity.",
+          "zh": "執行長在全體員工大會上條理分明、言簡意賅地闡述了企業未來五年的全球擴張戰略藍圖，思路極其清晰明確。"
+        },
+        {
+          "en": "A gemologist grades precious emeralds based on their vivid green saturation, cut symmetry, and internal clarity.",
+          "zh": "國際珠寶鑑定大師依據濃郁正綠色飽和度、精準切割對稱比例以及寶石內部純淨無瑕的透亮淨度（Clarity）為頂級祖母綠評級。"
+        }
+      ],
+      "collocations": [
+        "diamond-sharp mental clarity"
+      ]
+    },
+    {
+      "id": 5197,
+      "word": "purpose",
+      "pos": "n. [U]",
+      "phonetic": "[ˋpɝpəs]",
+      "definition": "崇高人生使命與存在意義",
+      "cefr": "B1",
+      "topic": "生命價值",
+      "examples": [
+        {
+          "en": "Living with a clear sense of noble purpose infuses every daily struggle with courage and joy.",
+          "zh": "懷抱著清晰堅定的崇高人生使命（Purpose）而活，能讓生命中的每一場艱辛奮鬥皆化為滿懷勇氣與喜悅的試煉。"
+        },
+        {
+          "en": "The non-profit foundation was established with the explicit purpose of building libraries in underserved rural schools.",
+          "zh": "這家民間非營利慈善基金會自創立之初，其最明確純粹的宗旨使命就在於為偏鄉教育資源匱乏的小學打造現代化圖書館。"
+        },
+        {
+          "en": "Finding meaningful life purpose often begins with identifying how your unique strengths can serve others.",
+          "zh": "探尋人生的真正意義與崇高使命，往往始於沉靜覺察自己獨一無二的才能如何能為這個世界與他人帶來實質貢獻。"
+        }
+      ],
+      "collocations": [
+        "noble sense of purpose"
+      ]
+    },
+    {
+      "id": 5198,
+      "word": "compassion",
+      "pos": "n. [U]",
+      "phonetic": "[kəmˋpæʃən]",
+      "definition": "慈悲為懷廣大同情心；憐憫",
+      "cefr": "B1",
+      "topic": "崇高美德",
+      "examples": [
+        {
+          "en": "Boundless compassion prompts us to alleviate the suffering of all sentient living beings on Earth.",
+          "zh": "廣大無私的慈悲心（Compassion），驅使著我們以溫柔的雙手撫慰世間所有生命承受的苦難與創痛。"
+        },
+        {
+          "en": "The dedicated social worker listened to the homeless veteran’s story with genuine warmth, dignity, and compassion.",
+          "zh": "這位資深社工師以真誠溫暖、平等待人與深沉的慈悲同理心，耐心傾聽流浪街頭的榮民老伯伯訴說滄桑過往。"
+        },
+        {
+          "en": "Buddhist and Christian spiritual traditions share a foundational commitment to unconditional compassion and mercy.",
+          "zh": "無論是東方佛家的普度眾生大悲願力，還是基督信仰中的神愛世人，皆在精神核心上崇尚無條件的慈悲、博愛與憐憫。"
+        }
+      ],
+      "collocations": [
+        "boundless universal compassion"
+      ]
+    },
+    {
+      "id": 5199,
+      "word": "legacy",
+      "pos": "n.",
+      "phonetic": "[ˋlɛgəsɪ]",
+      "definition": "留給後世的崇高精神遺產；遺產",
+      "cefr": "B1",
+      "topic": "永恆價值",
+      "examples": [
+        {
+          "en": "The greatest legacy one can leave behind is a kinder, wiser, and more enlightened world.",
+          "zh": "一個人能留給這個世界最偉大、最不朽的遺產（Legacy），莫過於讓這個世界因自己的存在而變得更加善良、睿智與光明。"
+        },
+        {
+          "en": "The visionary founder left behind an enduring corporate legacy of scientific innovation and philanthropic giving.",
+          "zh": "這位具備宏大遠見的企業創辦人，為後人留下了以科技創新造福社會、長年慷慨捐助教育公益的不朽企業精神遺產。"
+        },
+        {
+          "en": "Taiwan’s peaceful transition from martial law to vibrant democracy is a proud historical legacy for all generations.",
+          "zh": "台灣由威權戒嚴時期和平過渡蛻變為生機勃勃的成熟民主自由社會，是留給跨世代全體台灣人民最引以為傲的歷史文化遺產。"
+        }
+      ],
+      "collocations": [
+        "enduring spiritual legacy"
+      ]
+    },
+    {
+      "id": 5200,
+      "word": "wisdom",
+      "pos": "n. [U]",
+      "phonetic": "[ˋwɪzdəm]",
+      "definition": "洞悉世事之崇高生命智慧",
+      "cefr": "B1",
+      "topic": "終極追求",
+      "examples": [
+        {
+          "en": "Philosophy is the eternal love of wisdom—a lifelong journey guiding us toward truth, beauty, and goodness.",
+          "zh": "哲學乃是「對智慧（Wisdom）的永恆熱愛」——這是一場引領我們一生不斷追求真、善、美的光輝心靈旅程。"
+        },
+        {
+          "en": "Life experience teaches the quiet wisdom of choosing peace over the futile need to win petty arguments.",
+          "zh": "豐富的生命閱歷賦予人一份沉著洞達的深邃智慧：學會在紛擾世事中選擇內心安詳，放下無謂爭辯對錯的執念。"
+        },
+        {
+          "en": "Ancient proverbs distill centuries of accumulated human observation into timeless, practical wisdom for daily living.",
+          "zh": "流傳千百年的民間古老諺語，將歷代祖先觀察天地運行的智慧結晶，濃縮提煉為指引我們日常處世立身的永恆人生智慧。"
+        }
+      ],
+      "collocations": [
+        "pursuit of eternal wisdom"
+      ]
+    }
+  ]
+}

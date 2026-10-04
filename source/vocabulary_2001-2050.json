@@ -1,0 +1,1353 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 2,001–2,050 個單字（CEFR B1 中級）",
+  "batch": "2001-2050",
+  "range": "2001–2050",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 2001,
+      "word": "resume",
+      "pos": "n., v.",
+      "phonetic": "[ˋrɛzjʊˌme] / [rɪˋzjum]",
+      "definition": "履歷表；重新開始",
+      "cefr": "B1",
+      "topic": "求職與職場",
+      "examples": [
+        {
+          "en": "Tailor your resume to highlight relevant work experience and skills.",
+          "zh": "量身打造你的履歷表以凸顯相關的工作經驗與專業技能。"
+        },
+        {
+          "en": "Keep your one-page resume concise, error-free, and well-organized.",
+          "zh": "保持一頁長度的求職履歷簡潔扼要、零錯別字且排版美觀大方。"
+        },
+        {
+          "en": "After the power outage ended, normal subway train services will resume shortly.",
+          "zh": "停電故障排除之後，捷運各線列車的日常正常營運將於短時間內恢復運行。"
+        }
+      ],
+      "collocations": [
+        "CV",
+        "send a resume"
+      ]
+    },
+    {
+      "id": 2002,
+      "word": "career",
+      "pos": "n.",
+      "phonetic": "[kəˋrɪr]",
+      "definition": "職業生涯；事業",
+      "cefr": "B1",
+      "topic": "職涯發展",
+      "examples": [
+        {
+          "en": "She built a successful career in digital marketing and branding.",
+          "zh": "她在數位行銷與品牌經營領域開創了成功的事業。"
+        },
+        {
+          "en": "Choosing a fulfilling career path requires reflecting on your core personal strengths.",
+          "zh": "挑選一條能帶來成就感的職涯道路，需要深刻反思審視個人的核心優勢。"
+        },
+        {
+          "en": "Internships provide college graduates with a strong launching pad for their careers.",
+          "zh": "實習經歷為剛踏出校門的大學畢業生提供了邁向未來璀璨職業生涯的堅實起跑點。"
+        }
+      ],
+      "collocations": [
+        "career path",
+        "career goal"
+      ]
+    },
+    {
+      "id": 2003,
+      "word": "profession",
+      "pos": "n.",
+      "phonetic": "[prəˋfɛʃən]",
+      "definition": "專業；專門職業（如醫事、法律）",
+      "cefr": "B1",
+      "topic": "職業身分",
+      "examples": [
+        {
+          "en": "Teaching is a highly respected profession in society.",
+          "zh": "教書在社會上是一項深受尊重的崇高專門職業。"
+        },
+        {
+          "en": "Entering the medical profession demands years of rigorous study and clinical training.",
+          "zh": "投身神聖的醫療專門領域，需要歷經數年刻苦專注的專業修習與臨床養成訓練。"
+        },
+        {
+          "en": "Certified public accountants uphold the highest standards of ethics in their profession.",
+          "zh": "國家執業會計師在各自的專業執業範疇中，始終恪守最嚴格的最高道德倫理準則。"
+        }
+      ],
+      "collocations": [
+        "medical profession",
+        "legal profession"
+      ]
+    },
+    {
+      "id": 2004,
+      "word": "applicant",
+      "pos": "n.",
+      "phonetic": "[ˋæpləkənt]",
+      "definition": "申請人；求職應徵者",
+      "cefr": "B1",
+      "topic": "求職與徵才",
+      "examples": [
+        {
+          "en": "Over one hundred qualified applicants applied for the managerial position.",
+          "zh": "超過一百位符合資格的應徵者投遞了該主管職缺。"
+        },
+        {
+          "en": "Each shortlisted applicant was invited for a technical whiteboard coding challenge.",
+          "zh": "每一位通過初審篩選進入決選名單的應徵者，均受邀參加白板現場編程技術測驗。"
+        },
+        {
+          "en": "Successful applicants will receive an official written offer letter via email next week.",
+          "zh": "順利通過各輪考核錄取的應徵者，將於下週透過電子郵件收到正式書面聘書。"
+        }
+      ],
+      "collocations": [
+        "job applicant",
+        "successful applicant"
+      ]
+    },
+    {
+      "id": 2005,
+      "word": "application",
+      "pos": "n.",
+      "phonetic": "[͵æpləˋkeʃən]",
+      "definition": "申請；應徵表格；應用程式 (App)",
+      "cefr": "B1",
+      "topic": "求職與科技",
+      "examples": [
+        {
+          "en": "Please submit your job application letter along with your portfolio.",
+          "zh": "請將您的求職應徵信與個人作品集一併寄送提交。"
+        },
+        {
+          "en": "Fill out every mandatory field on the online passport renewal application form.",
+          "zh": "在線上護照換發申請表單上，請務必逐一完整填寫每一欄必填欄位。"
+        },
+        {
+          "en": "Millions of smartphone users downloaded the mobile banking application this year.",
+          "zh": "今年有數百萬名智慧手機用戶下載安裝並註冊了這款行動網銀應用程式。"
+        }
+      ],
+      "collocations": [
+        "job application",
+        "fill out an application"
+      ]
+    },
+    {
+      "id": 2006,
+      "word": "apply",
+      "pos": "v.",
+      "phonetic": "[əˋplaɪ]",
+      "definition": "應徵；申請；應用；塗抹",
+      "cefr": "B1",
+      "topic": "求職動作",
+      "examples": [
+        {
+          "en": "He decided to apply for the overseas software engineer position.",
+          "zh": "他決定應徵這份海外軟體工程師的工作職缺。"
+        },
+        {
+          "en": "Apply theoretical classroom knowledge to practical everyday engineering problems.",
+          "zh": "將課堂上學得的各項抽象理論知識，靈活應用於解決日常工程實務難題之中。"
+        },
+        {
+          "en": "Apply sunscreen lotion evenly across exposed skin thirty minutes before swimming.",
+          "zh": "在下水游泳嬉戲的三十分鐘前，先將防曬乳均勻塗抹在曝露於陽光下的肌膚上。"
+        }
+      ],
+      "collocations": [
+        "apply for a job",
+        "apply to college"
+      ]
+    },
+    {
+      "id": 2007,
+      "word": "interview",
+      "pos": "n., v.",
+      "phonetic": "[ˋɪntɚˌvju]",
+      "definition": "面試；採訪；會見",
+      "cefr": "B1",
+      "topic": "求職與媒體",
+      "examples": [
+        {
+          "en": "Wear neat professional business attire for the job interview.",
+          "zh": "參加求職面試時請穿著整潔得體的專業商務正裝。"
+        },
+        {
+          "en": "The tech journalist interviewed the visionary CEO about the company's electric car plans.",
+          "zh": "科技線記者就該公司未來的智慧電動車全球布局藍圖，深度專訪了極具遠見的執行長。"
+        },
+        {
+          "en": "Practicing common behavioral questions builds great confidence before any interview.",
+          "zh": "面試前反覆模擬練習常見的行為面試經典提問，能為你在應試時建立莫大信心。"
+        }
+      ],
+      "collocations": [
+        "job interview",
+        "conduct an interview"
+      ]
+    },
+    {
+      "id": 2008,
+      "word": "interviewer",
+      "pos": "n.",
+      "phonetic": "[ˋɪntɚˌvjuɚ]",
+      "definition": "面試官；主考官；採訪者",
+      "cefr": "B1",
+      "topic": "求職角色",
+      "examples": [
+        {
+          "en": "The interviewer asked insightful questions about my problem-solving ability.",
+          "zh": "面試官就我的解決問題能力提出了深刻有見地的提問。"
+        },
+        {
+          "en": "Make friendly eye contact and nod attentively when the interviewer is speaking.",
+          "zh": "當主考面試官發言時，保持親切眼神交會並專注點頭致意是極具教養的展現。"
+        },
+        {
+          "en": "A skilled interviewer creates a relaxed, conversational atmosphere to evaluate candidates.",
+          "zh": "經驗老到的面試官懂得營造輕鬆自然的對話氛圍，藉以全面客觀評估應試者素質。"
+        }
+      ],
+      "collocations": [
+        "tough interviewer"
+      ]
+    },
+    {
+      "id": 2009,
+      "word": "interviewee",
+      "pos": "n.",
+      "phonetic": "[͵ɪntɚvjuˋi]",
+      "definition": "受訪者；應試者",
+      "cefr": "B1",
+      "topic": "求職角色",
+      "examples": [
+        {
+          "en": "The interviewee answered each question calmly and confidently.",
+          "zh": "應試者從容自信地回答了每一道問題。"
+        },
+        {
+          "en": "The television host thanked the renowned documentary filmmaker interviewee warmly.",
+          "zh": "電視訪談節目主持人熱情誠摯地向身旁的重量級紀錄片名導受訪者致謝道賀。"
+        },
+        {
+          "en": "The nervous interviewee took a sip of mineral water to collect her racing thoughts.",
+          "zh": "緊張的應試者輕輕啜飲了一小口礦泉水，努力撫平內心起伏、重整紛亂的思緒。"
+        }
+      ],
+      "collocations": [
+        "nervous interviewee"
+      ]
+    },
+    {
+      "id": 2010,
+      "word": "qualification",
+      "pos": "n.",
+      "phonetic": "[͵kwɑləfəˋkeʃən]",
+      "definition": "資格；執照；必備條件",
+      "cefr": "B1",
+      "topic": "職能與條件",
+      "examples": [
+        {
+          "en": "A bachelor's degree in engineering is a minimum qualification for this role.",
+          "zh": "工程學系學士學位是該職位的基本必備資格條件。"
+        },
+        {
+          "en": "She acquired advanced cloud certification qualifications while working full-time.",
+          "zh": "她在全職工作的忙碌之餘，利用公餘時間成功考取了多項高階雲端專業證照資格。"
+        },
+        {
+          "en": "Outstanding interpersonal and leadership skills are vital qualifications for management.",
+          "zh": "出色卓越的人際溝通手腕與團隊領導統御魅力，是晉升管理階層不可或缺的資格。"
+        }
+      ],
+      "collocations": [
+        "academic qualification",
+        "professional qualification"
+      ]
+    },
+    {
+      "id": 2011,
+      "word": "qualified",
+      "pos": "adj.",
+      "phonetic": "[ˋkwɑləˌfaɪd]",
+      "definition": "合格的；具備資格的；稱職的",
+      "cefr": "B1",
+      "topic": "能力與評估",
+      "examples": [
+        {
+          "en": "She is highly qualified to lead the international marketing team.",
+          "zh": "她具備卓越資格，非常稱職帶領國際行銷團隊。"
+        },
+        {
+          "en": "Only qualified medical professionals should administer prescription vaccinations.",
+          "zh": "唯有經過嚴格專業考試合格的註冊醫事專業人員，方具資格施打處方疫苗針劑。"
+        },
+        {
+          "en": "The inspector declared the newly renovated kindergarten completely safe and fully qualified.",
+          "zh": "消防安全檢查員正式簽署報告，宣布這座全面整修完工的幼兒園安全驗收完全合格。"
+        }
+      ],
+      "collocations": [
+        "well-qualified",
+        "qualified for"
+      ]
+    },
+    {
+      "id": 2012,
+      "word": "skillset",
+      "pos": "n.",
+      "phonetic": "[ˋskɪlˌsɛt]",
+      "definition": "技能組合；專長範疇",
+      "cefr": "B1",
+      "topic": "職能評估",
+      "examples": [
+        {
+          "en": "Data analysis and bilingual communication are valuable modern skillsets.",
+          "zh": "數據分析與雙語溝通是現代極具價值的實用技能組合。"
+        },
+        {
+          "en": "Learning Python and SQL expanded his technical skillset significantly.",
+          "zh": "深入掌握 Python 與 SQL 資料庫查詢語言，大幅拓展了他個人的硬實力技術專長。"
+        },
+        {
+          "en": "Graphic design, video editing, and copywriting form a versatile digital skillset.",
+          "zh": "平面設計排版、影音後製剪輯與行銷文案撰寫，構成了一套無往不利的數位多功能技能。"
+        }
+      ],
+      "collocations": [
+        "diverse skillset",
+        "develop skillset"
+      ]
+    },
+    {
+      "id": 2013,
+      "word": "requirement",
+      "pos": "n.",
+      "phonetic": "[rɪˋkwaɪrmənt]",
+      "definition": "必要條件；要求；規定",
+      "cefr": "B1",
+      "topic": "規則與標準",
+      "examples": [
+        {
+          "en": "Fluent English communication is an essential job requirement.",
+          "zh": "流利的英語溝通能力是一項必要的基本職務要求。"
+        },
+        {
+          "en": "Fulfilling ninety credit hours is a mandatory academic requirement for graduation.",
+          "zh": "修畢取得九十個學分，是這所大學取得學士學位必備的核心修業規章要求。"
+        },
+        {
+          "en": "Wearing non-slip shoes and ear protection is a strict factory safety requirement.",
+          "zh": "進入廠區工作時穿戴防滑安全鞋與抗噪防護耳罩，是一項不可妥協的工安強制規定。"
+        }
+      ],
+      "collocations": [
+        "meet requirements",
+        "entry requirements"
+      ]
+    },
+    {
+      "id": 2014,
+      "word": "vacancy",
+      "pos": "n.",
+      "phonetic": "[ˋvekənsɪ]",
+      "definition": "職缺；空缺；空房",
+      "cefr": "B1",
+      "topic": "徵才與旅宿",
+      "examples": [
+        {
+          "en": "The semiconductor company posted several engineering job vacancies online.",
+          "zh": "半導體大廠在網路上公布了數個工程師職缺。"
+        },
+        {
+          "en": "The flashing neon sign outside the motel indicated 'No Vacancy' during the festival.",
+          "zh": "連假旅遊旺季期間，汽車旅館外牆閃爍的霓虹燈牌無奈亮起了「客滿無空房」字樣。"
+        },
+        {
+          "en": "When the senior editor retired, a coveted promotional vacancy opened up in the department.",
+          "zh": "當資深責任編輯屆齡榮退後，該編輯部內部立刻釋出了一個令人稱羨的晉升空缺。"
+        }
+      ],
+      "collocations": [
+        "job vacancy",
+        "no vacancy"
+      ]
+    },
+    {
+      "id": 2015,
+      "word": "recruit",
+      "pos": "v., n.",
+      "phonetic": "[rɪˋkrut]",
+      "definition": "招募；徵聘；新進人員",
+      "cefr": "B1",
+      "topic": "企業徵才",
+      "examples": [
+        {
+          "en": "Tech firms actively recruit talented university graduates every spring.",
+          "zh": "科技公司每年春天都會在各大學積極招募優秀畢業生。"
+        },
+        {
+          "en": "The startup launched an international campaign to recruit senior AI researchers.",
+          "zh": "這家潛力新創團隊啟動了全球海外獵才計畫，大舉招募各國頂尖資深 AI 研發科學家。"
+        },
+        {
+          "en": "Senior team members patiently mentor the enthusiastic new recruits in the office.",
+          "zh": "辦公室裡的資深同仁耐心地手把手帶領剛入職、滿懷衝勁的社會新鮮人新進人員。"
+        }
+      ],
+      "collocations": [
+        "recruit talent",
+        "new recruit"
+      ]
+    },
+    {
+      "id": 2016,
+      "word": "recruitment",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋkrutmənt]",
+      "definition": "招募；徵才活動",
+      "cefr": "B1",
+      "topic": "企業人資",
+      "examples": [
+        {
+          "en": "Campus recruitment drives offer fresh graduates direct interview chances.",
+          "zh": "校園徵才博覽會為應屆畢業生提供了直接面試的良機。"
+        },
+        {
+          "en": "The human resources department improved its online recruitment portal for applicants.",
+          "zh": "企業人資部門全面重構優化了線上徵才入口網站，提供應徵者更友善的投遞體驗。"
+        },
+        {
+          "en": "Early summer is a peak recruitment season for hospitality and tourism businesses.",
+          "zh": "初夏畢業季前後向來是觀光餐飲與精品旅宿產業招兵買馬的黃金徵才高峰期。"
+        }
+      ],
+      "collocations": [
+        "recruitment drive",
+        "recruitment agency"
+      ]
+    },
+    {
+      "id": 2017,
+      "word": "headhunter",
+      "pos": "n.",
+      "phonetic": "[ˋhɛdˌhʌntɚ]",
+      "definition": "獵人頭顧問；高階獵頭",
+      "cefr": "B1",
+      "topic": "職場媒介",
+      "examples": [
+        {
+          "en": "An executive headhunter contacted him regarding a VP position.",
+          "zh": "一位高階獵頭顧問主動與他聯繫洽談副總經理職缺。"
+        },
+        {
+          "en": "Corporate tech giants hire professional headhunters to scout rare semiconductor talent.",
+          "zh": "跨國科技巨擘不惜重金聘請高階獵頭顧問，替公司在市場上延攬炙手可熱的半導體英才。"
+        },
+        {
+          "en": "Keep your LinkedIn profile polished and up-to-date so headhunters can find you easily.",
+          "zh": "隨時精心維護更新個人 LinkedIn 領英職場檔案，能讓尋覓良才的獵頭顧問輕鬆找到你。"
+        }
+      ],
+      "collocations": [
+        "hire a headhunter"
+      ]
+    },
+    {
+      "id": 2018,
+      "word": "hire",
+      "pos": "v., n.",
+      "phonetic": "[haɪr]",
+      "definition": "雇用；聘用；新員工",
+      "cefr": "B1",
+      "topic": "職場任用",
+      "examples": [
+        {
+          "en": "The startup decided to hire three full-stack developers.",
+          "zh": "這家新創公司決定聘請三位全端工程師。"
+        },
+        {
+          "en": "Tourists can hire bicycles near the lake shore for a scenic cycling ride.",
+          "zh": "造訪湖畔的觀光遊客可以在環湖步道起點租賃自行車，享受沿途愜意的湖光山色。"
+        },
+        {
+          "en": "Our newest hire in the accounting department demonstrated exceptional financial modeling skills.",
+          "zh": "會計財務部剛報到的新員工展現了令人驚豔的高水準財務建模與數據分析實力。"
+        }
+      ],
+      "collocations": [
+        "new hire",
+        "hire staff"
+      ]
+    },
+    {
+      "id": 2019,
+      "word": "dismiss",
+      "pos": "v.",
+      "phonetic": "[dɪsˋmɪs]",
+      "definition": "解雇；開除；不予理會",
+      "cefr": "B1",
+      "topic": "職場處分",
+      "examples": [
+        {
+          "en": "The manager was dismissed due to serious policy violations.",
+          "zh": "該名經理因嚴重違反公司規範而遭到解職開除。"
+        },
+        {
+          "en": "The school bell rang and the teacher cheerfully dismissed the class for lunch.",
+          "zh": "當下課鐘聲響起，老師帶著滿面笑容宣布全班下課，放大家開心地享用午餐。"
+        },
+        {
+          "en": "Don't simply dismiss constructive user feedback without testing their suggestions.",
+          "zh": "在沒有親手實測驗證對方的建議前，絕不能對忠實使用者提出的建設性回饋不屑一顧。"
+        }
+      ],
+      "collocations": [
+        "fire",
+        "dismiss an employee"
+      ]
+    },
+    {
+      "id": 2020,
+      "word": "layoff",
+      "pos": "n., v. phr.",
+      "phonetic": "[ˋleˌɔf]",
+      "definition": "裁員；遣散",
+      "cefr": "B1",
+      "topic": "經濟與企業",
+      "examples": [
+        {
+          "en": "Economic downturns often result in unexpected corporate layoffs.",
+          "zh": "景氣低迷衰退往往會導致企業無預警的裁員。"
+        },
+        {
+          "en": "The struggling retail company laid off twenty percent of its workforce to avoid bankruptcy.",
+          "zh": "這家苦苦苦撐的實體零售連鎖大廠裁減了兩成員工，以極力避免走上破產清算絕路。"
+        },
+        {
+          "en": "Severance packages and job placement counseling were offered to workers affected by the layoff.",
+          "zh": "公司為受到本次結構性裁員衝擊影響的離職員工，提供了優渥的資遣補償與轉職諮詢。"
+        }
+      ],
+      "collocations": [
+        "lay off employees",
+        "mass layoff"
+      ]
+    },
+    {
+      "id": 2021,
+      "word": "probation",
+      "pos": "n. [U]",
+      "phonetic": "[proˋbeʃən]",
+      "definition": "試用期；見習期；緩刑",
+      "cefr": "B1",
+      "topic": "職場階段",
+      "examples": [
+        {
+          "en": "New employees undergo a three-month probation period before permanent hiring.",
+          "zh": "新進員工在轉正為正式職員前需經歷三個月的試用期。"
+        },
+        {
+          "en": "She passed her ninety-day probation with flying colors and received a pay adjustment.",
+          "zh": "她以全體主管一致讚賞的優異表現順利通過九十天考核試用期，並獲得了正式調薪。"
+        },
+        {
+          "en": "The first-time minor offender was placed on one-year probation by the presiding judge.",
+          "zh": "承審法官依法對這位初犯且深具悔意的微罪年輕被告宣告一年的緩刑觀察處分。"
+        }
+      ],
+      "collocations": [
+        "probation period",
+        "pass probation"
+      ]
+    },
+    {
+      "id": 2022,
+      "word": "full-time",
+      "pos": "adj., adv.",
+      "phonetic": "[ˋfʊlˋtaɪm]",
+      "definition": "全職的；專職的",
+      "cefr": "B1",
+      "topic": "工作型態",
+      "examples": [
+        {
+          "en": "He landed a full-time position as a UI designer in Neihu Tech Park.",
+          "zh": "他在內湖科技園區找到了一份 UI 設計師的全職工作。"
+        },
+        {
+          "en": "Working full-time while studying for evening graduate school tests one's endurance.",
+          "zh": "白天從事全職工作、夜間還要挑燈攻讀在職在職專班碩士學位，極度考驗一個人的耐力。"
+        },
+        {
+          "en": "Full-time corporate employees are legally entitled to comprehensive health and labor insurance.",
+          "zh": "依法規保障，企業內部的正職專任全職員工全面享有健全的勞工保險與全民健保保障。"
+        }
+      ],
+      "collocations": [
+        "full-time job",
+        "work full-time"
+      ]
+    },
+    {
+      "id": 2023,
+      "word": "part-time",
+      "pos": "adj., adv.",
+      "phonetic": "[ˋpɑrtˋtaɪm]",
+      "definition": "兼職的；打工的",
+      "cefr": "B1",
+      "topic": "工作型態",
+      "examples": [
+        {
+          "en": "College students often work part-time at boba tea shops.",
+          "zh": "大學生經常在手搖飲料店從事兼職打工。"
+        },
+        {
+          "en": "She took a part-time job as an English tutor to earn extra spending money.",
+          "zh": "她在課餘時間兼職接案擔任英語家教老師，替自己賺取充裕的零用錢與生活費。"
+        },
+        {
+          "en": "Many retirees enjoy working part-time in bookstores to stay socially active and engaged.",
+          "zh": "許多步入晚年的退休人士熱愛在獨立書店打工兼差，保持與社會人群的熱絡互動交流。"
+        }
+      ],
+      "collocations": [
+        "part-time job",
+        "work part-time"
+      ]
+    },
+    {
+      "id": 2024,
+      "word": "freelancer",
+      "pos": "n.",
+      "phonetic": "[ˋfriˌlænsɚ]",
+      "definition": "自由工作者；接案者",
+      "cefr": "B1",
+      "topic": "工作型態",
+      "examples": [
+        {
+          "en": "As a freelance graphic designer, she manages her own schedule flexible.",
+          "zh": "作為一名自由平面設計師，她能彈性自由安排自己的工作時程。"
+        },
+        {
+          "en": "Freelancers must budget carefully for their own insurance, taxes, and retirement savings.",
+          "zh": "接案自由工作者必須極其自律地為自己的健保費、年度所得稅及退休老本精打細算。"
+        },
+        {
+          "en": "The digital agency collaborates with a trusted network of skilled freelance copywriters.",
+          "zh": "這家數位行銷代理商與一群深具文案功底且合作默契極佳的自由撰稿人保持長期配合。"
+        }
+      ],
+      "collocations": [
+        "freelance work",
+        "freelance writer"
+      ]
+    },
+    {
+      "id": 2025,
+      "word": "internship",
+      "pos": "n.",
+      "phonetic": "[ˋɪntɝnˌʃɪp]",
+      "definition": "實習；實習期",
+      "cefr": "B1",
+      "topic": "學業與職場",
+      "examples": [
+        {
+          "en": "Summer internships provide valuable hands-on corporate work experience.",
+          "zh": "暑期實習為在校生提供了寶貴的企業實務工作經驗。"
+        },
+        {
+          "en": "His outstanding performance during the three-month internship earned him a permanent job offer.",
+          "zh": "他在為期三個月的實習期間表現卓越奪目，畢業前夕便順利提前拿下了全職正式聘約。"
+        },
+        {
+          "en": "Students can earn university course credits by completing an approved summer corporate internship.",
+          "zh": "學生凡至經過校方嚴格審核認證的知名企業完成暑期實習，即可抵免大學專業選修學分。"
+        }
+      ],
+      "collocations": [
+        "summer internship",
+        "paid internship"
+      ]
+    },
+    {
+      "id": 2026,
+      "word": "salary",
+      "pos": "n.",
+      "phonetic": "[ˋsælərɪ]",
+      "definition": "薪水；月薪（固定薪資）",
+      "cefr": "B1",
+      "topic": "薪酬福利",
+      "examples": [
+        {
+          "en": "The company offers a competitive starting salary and annual bonuses.",
+          "zh": "該公司提供具競爭力的起薪與優渥的年終獎金。"
+        },
+        {
+          "en": "Salaries are transferred directly into employee bank accounts on the fifth of every month.",
+          "zh": "員工每月固定月薪均於每個月五號準時電匯入帳至個人薪轉銀行帳戶之中。"
+        },
+        {
+          "en": "She negotiated a higher monthly salary based on her seven years of specialized experience.",
+          "zh": "憑藉個人長達七年的頂尖專業實務歷練，她在二面時成功爭取到了更高的核敘月薪。"
+        }
+      ],
+      "collocations": [
+        "base salary",
+        "monthly salary"
+      ]
+    },
+    {
+      "id": 2027,
+      "word": "wage",
+      "pos": "n.",
+      "phonetic": "[wedʒ]",
+      "definition": "工資；時薪；日薪",
+      "cefr": "B1",
+      "topic": "薪酬福利",
+      "examples": [
+        {
+          "en": "The statutory minimum hourly wage was adjusted upwards this January.",
+          "zh": "法定最低基本時薪於今年一月起正式調漲。"
+        },
+        {
+          "en": "Construction day laborers receive their wages at the end of each physical workday.",
+          "zh": "營建工地的日薪作業勞工，通常在每日揮汗辛勤工作結束收工時現場領取工資。"
+        },
+        {
+          "en": "Fair living wages empower workers to support their households with dignity and security.",
+          "zh": "具備尊嚴的合理維生工資，能賦予基層勞動者充足底氣，體面且安定地撫育整個家庭。"
+        }
+      ],
+      "collocations": [
+        "minimum wage",
+        "hourly wage"
+      ]
+    },
+    {
+      "id": 2028,
+      "word": "bonus",
+      "pos": "n.",
+      "phonetic": "[ˋbonəs]",
+      "definition": "獎金；紅利；額外好處",
+      "cefr": "B1",
+      "topic": "薪酬福利",
+      "examples": [
+        {
+          "en": "Tech employees rejoiced over generous year-end performance bonuses.",
+          "zh": "科技業員工為領到豐厚的年終績效獎金而雀躍不已。"
+        },
+        {
+          "en": "The sales executive earned a lucrative quarterly commission bonus for breaking targets.",
+          "zh": "業務經理因超額達成季度業績指標，領取了一筆極為豐厚可觀的季度分紅抽成獎金。"
+        },
+        {
+          "en": "As an added bonus, the boutique hotel offers all guests complimentary afternoon tea.",
+          "zh": "作為一項令人驚喜的額外貼心款待，這家精品設計酒店為所有房客提供免費精緻下午茶。"
+        }
+      ],
+      "collocations": [
+        "year-end bonus",
+        "performance bonus"
+      ]
+    },
+    {
+      "id": 2029,
+      "word": "raise",
+      "pos": "n., v.",
+      "phonetic": "[rez]",
+      "definition": "加薪；提高；扶養",
+      "cefr": "B1",
+      "topic": "薪酬與動作",
+      "examples": [
+        {
+          "en": "Hardworking employees negotiated a 5% salary raise during appraisal.",
+          "zh": "辛勤付出的員工在年度績效考核時爭取到了 5% 的調薪幅度。"
+        },
+        {
+          "en": "Raise your hand politely if you have a question during the presentation.",
+          "zh": "簡報發表進行期間若有任何疑問，請先禮貌性地舉手示意提問。"
+        },
+        {
+          "en": "My loving grandparents worked tirelessly on the tea farm to raise four children.",
+          "zh": "慈祥辛勞的祖父母早年在茶山茶園裡日曬雨淋、揮汗勞作，拉拔撫養了四個子女成才。"
+        }
+      ],
+      "collocations": [
+        "pay raise",
+        "give a raise"
+      ]
+    },
+    {
+      "id": 2030,
+      "word": "benefit",
+      "pos": "n.",
+      "phonetic": "[ˋbɛnəfɪt]",
+      "definition": "員工福利；利益；益處",
+      "cefr": "B1",
+      "topic": "職場制度",
+      "examples": [
+        {
+          "en": "Company benefits include free gym memberships, health checks, and snacks.",
+          "zh": "公司的員工福利包含免費健身房會籍、定期健檢與零食無限供應。"
+        },
+        {
+          "en": "Regular aerobic exercise offers countless physical and mental health benefits.",
+          "zh": "維持規律的有氧慢跑運動，能為人體身心靈帶來數不勝數的健康益處。"
+        },
+        {
+          "en": "The new mass transit line will greatly benefit residents living in suburban districts.",
+          "zh": "全新捷運大眾運輸路網的盛大通車，將為廣大居住在郊區市鎮的居民帶來巨大便利。"
+        }
+      ],
+      "collocations": [
+        "employee benefits",
+        "health benefits"
+      ]
+    },
+    {
+      "id": 2031,
+      "word": "insurance",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋʃʊrəns]",
+      "definition": "保險；勞健保",
+      "cefr": "B1",
+      "topic": "社會福利",
+      "examples": [
+        {
+          "en": "National Health Insurance (NHI) guarantees affordable healthcare in Taiwan.",
+          "zh": "全民健康保險（健保）保障了台灣民眾享有實惠便捷的醫療照護。"
+        },
+        {
+          "en": "Always purchase comprehensive travel insurance covering flight delays and medical emergencies.",
+          "zh": "出國遠遊前務必投保涵蓋班機延誤理賠與海外突發疾病醫療的全方位旅遊平安險。"
+        },
+        {
+          "en": "Employers are required by law to enroll workers in labor and employment insurance.",
+          "zh": "勞基法等相關法規嚴格規定，雇主依法必須在到職當日為全體勞工投保勞工保險。"
+        }
+      ],
+      "collocations": [
+        "health insurance",
+        "labor insurance"
+      ]
+    },
+    {
+      "id": 2032,
+      "word": "pension",
+      "pos": "n.",
+      "phonetic": "[ˋpɛnʃən]",
+      "definition": "退休金；撫卹金",
+      "cefr": "B1",
+      "topic": "退休保障",
+      "examples": [
+        {
+          "en": "The government labor pension scheme secures stable post-retirement income.",
+          "zh": "勞工退休金制度保障了長者退休後穩定的生活收入來源。"
+        },
+        {
+          "en": "She contributed voluntary monthly savings into her personal labor pension fund.",
+          "zh": "她每個月固定從薪資中提繳自願提撥金至個人的勞工退休金專戶，為晚年累積老本。"
+        },
+        {
+          "en": "Retired teachers receive a stable monthly government pension to cover their living costs.",
+          "zh": "退休教職人員每月領取穩定的公務退休撫卹年金，從容支應晚年各項日常養老開銷。"
+        }
+      ],
+      "collocations": [
+        "retirement pension",
+        "pension plan"
+      ]
+    },
+    {
+      "id": 2033,
+      "word": "retire",
+      "pos": "v.",
+      "phonetic": "[rɪˋtaɪr]",
+      "definition": "退休；退役",
+      "cefr": "B1",
+      "topic": "人生階段",
+      "examples": [
+        {
+          "en": "My father plans to retire at sixty-five and take up gardening.",
+          "zh": "我父親計畫在六十五歲退休並開始投入園藝愛好。"
+        },
+        {
+          "en": "The veteran baseball pitcher decided to retire after eighteen stellar seasons.",
+          "zh": "在征戰賽場整整十八個戰功彪炳的輝煌賽季後，這位傳奇老將投手正式決定引退。"
+        },
+        {
+          "en": "Building an emergency nest egg enables individuals to retire comfortably with peace of mind.",
+          "zh": "及早規劃存妥一筆充足的應急養老金，能讓每個人在晚年無憂無慮、體面舒適地退休。"
+        }
+      ],
+      "collocations": [
+        "retire from",
+        "retirement age"
+      ]
+    },
+    {
+      "id": 2034,
+      "word": "resign",
+      "pos": "v.",
+      "phonetic": "[rɪˋzaɪn]",
+      "definition": "辭職；離職；順從",
+      "cefr": "B1",
+      "topic": "職場動態",
+      "examples": [
+        {
+          "en": "She decided to resign to pursue a master's degree in the UK.",
+          "zh": "她決定辭職前往英國攻讀碩士學位。"
+        },
+        {
+          "en": "The government minister chose to resign to take full political responsibility.",
+          "zh": "該名內閣部會首長為表示承擔全部政治責任，毅然決然主動請辭下台。"
+        },
+        {
+          "en": "After months of unresolved workplace disagreements, he chose to resign gracefully.",
+          "zh": "經歷了數個月始終無法化解的職場理念歧異之後，他選擇體面優雅地遞出辭呈離職。"
+        }
+      ],
+      "collocations": [
+        "resign from a job",
+        "quit"
+      ]
+    },
+    {
+      "id": 2035,
+      "word": "resignation",
+      "pos": "n.",
+      "phonetic": "[͵rɛzɪgˋneʃən]",
+      "definition": "辭職；辭呈",
+      "cefr": "B1",
+      "topic": "職場程序",
+      "examples": [
+        {
+          "en": "He handed in his formal letter of resignation two weeks in advance.",
+          "zh": "他提前兩週向上級遞交了正式的離職辭呈。"
+        },
+        {
+          "en": "The board of directors reluctantly accepted the founding CEO's resignation.",
+          "zh": "公司董事會深思熟慮後，萬分不捨地依依接受了創始執行長提出的離職辭呈。"
+        },
+        {
+          "en": "News of the star director's sudden resignation surprised everyone in the tech community.",
+          "zh": "這位明星技術長突然拋出震撼請辭辭職的消息，令整個科技創投圈深感錯愕震驚。"
+        }
+      ],
+      "collocations": [
+        "letter of resignation",
+        "hand in resignation"
+      ]
+    },
+    {
+      "id": 2036,
+      "word": "promotion",
+      "pos": "n.",
+      "phonetic": "[prəˋmoʃən]",
+      "definition": "升遷；晉升；促銷推廣",
+      "cefr": "B1",
+      "topic": "職涯成長",
+      "examples": [
+        {
+          "en": "His dedication earned him a well-deserved promotion to senior manager.",
+          "zh": "他的敬業專注為他贏得了實至名歸的資深經理晉升。"
+        },
+        {
+          "en": "Outstanding sales performance opened the door to rapid career promotions.",
+          "zh": "拔尖過人的卓越銷售業績，為她在公司內部開啟了連連快速升遷的璀璨職涯大道。"
+        },
+        {
+          "en": "The cosmetic brand launched a limited-time buy-one-get-one promotion for Mother's Day.",
+          "zh": "這家知名美妝保養品牌在母親節檔期祭出了震撼業界的限時買一送一促銷特惠活動。"
+        }
+      ],
+      "collocations": [
+        "get a promotion",
+        "promotion opportunity"
+      ]
+    },
+    {
+      "id": 2037,
+      "word": "supervisor",
+      "pos": "n.",
+      "phonetic": "[ˋsupɚˌvaɪzɚ]",
+      "definition": "直屬主管；督導者",
+      "cefr": "B1",
+      "topic": "職場職位",
+      "examples": [
+        {
+          "en": "Always keep your direct supervisor updated on project milestones.",
+          "zh": "請務必讓您的直屬主管隨時掌握專案最新里程碑進度。"
+        },
+        {
+          "en": "A supportive workplace supervisor gives clear guidance and constructive praise.",
+          "zh": "一位優秀暖心的職場主管，總是能給予下屬清晰明確的指引與發自內心的真摯肯定。"
+        },
+        {
+          "en": "Her graduate thesis supervisor provided insightful revisions on her research methodology.",
+          "zh": "她的研究所碩士論文指導教授，針對其研究方法論章節提出了精闢深刻的修改建議。"
+        }
+      ],
+      "collocations": [
+        "direct supervisor",
+        "thesis supervisor"
+      ]
+    },
+    {
+      "id": 2038,
+      "word": "subordinate",
+      "pos": "n., adj.",
+      "phonetic": "[səˋbɔrdnɪt]",
+      "definition": "下屬；部屬；從屬的",
+      "cefr": "B1",
+      "topic": "職場關係",
+      "examples": [
+        {
+          "en": "A great leader listens attentively and empowers all subordinates.",
+          "zh": "一位卓越的領導者懂得耐心傾聽並充分賦能每位部屬。"
+        },
+        {
+          "en": "Treat subordinates with courtesy and dignity rather than harsh criticism.",
+          "zh": "應當始終以客氣尊重與平等尊嚴對待所有部屬，而非動輒施以尖酸苛刻的指責。"
+        },
+        {
+          "en": "Individual interests are sometimes considered subordinate to overall team harmony.",
+          "zh": "在某些特殊團隊攻堅情境下，個人的微小偏好有時應當自願從屬於整體團隊的大局和諧。"
+        }
+      ],
+      "collocations": [
+        "manager and subordinate"
+      ]
+    },
+    {
+      "id": 2039,
+      "word": "executive",
+      "pos": "n., adj.",
+      "phonetic": "[ɪgˋzɛkjətɪv]",
+      "definition": "高階主管；執行長；執行的",
+      "cefr": "B1",
+      "topic": "企業管理",
+      "examples": [
+        {
+          "en": "The chief executive officer (CEO) announced a bold expansion roadmap.",
+          "zh": "執行長（CEO）宣布了一項雄心勃勃的全球擴張藍圖。"
+        },
+        {
+          "en": "Top corporate executives meet quarterly to review balance sheets and expansion plans.",
+          "zh": "公司最高決策層的高階管理團隊每季定期會晤，嚴格審視財務資產負債表與擴張目標。"
+        },
+        {
+          "en": "The president exercised his constitutional executive power to pardon non-violent offenders.",
+          "zh": "國家元首依法行使其憲法賦予的最高行政特赦權力，特赦了數名非暴力微罪服刑犯人。"
+        }
+      ],
+      "collocations": [
+        "senior executive",
+        "executive director"
+      ]
+    },
+    {
+      "id": 2040,
+      "word": "human resources",
+      "pos": "n. phr.",
+      "phonetic": "[ˋhjumən ˋriˌsorsɪz]",
+      "definition": "人力資源部；人資 (HR)",
+      "cefr": "B1",
+      "topic": "企業部門",
+      "examples": [
+        {
+          "en": "Contact Human Resources if you have inquiries regarding paternity leave.",
+          "zh": "若您對陪產假規定有任何疑問，請聯繫人資部門。"
+        },
+        {
+          "en": "Human Resources organized a weekend outdoor team-building workshop in Yilan.",
+          "zh": "人力資源部門特別在宜蘭幽靜的度假莊園籌辦了一場豐富多彩的週末戶外員工向心力工作坊。"
+        },
+        {
+          "en": "The Human Resources department oversees recruitment, employee benefits, and workplace training.",
+          "zh": "企業人資部門總括負責掌管全公司的人才招聘徵選、員工各項福利以及在職專業培訓。"
+        }
+      ],
+      "collocations": [
+        "HR department",
+        "HR manager"
+      ]
+    },
+    {
+      "id": 2041,
+      "word": "workload",
+      "pos": "n.",
+      "phonetic": "[ˋwɝkˌlod]",
+      "definition": "工作量；工作負荷",
+      "cefr": "B1",
+      "topic": "職場生活",
+      "examples": [
+        {
+          "en": "Delegating tasks helps balance the heavy team workload evenly.",
+          "zh": "適度分派任務有助於合理平衡團隊繁重的工作負荷。"
+        },
+        {
+          "en": "An overwhelming workload during audit season left employees utterly exhausted.",
+          "zh": "每逢年度查帳審計旺季排山倒海而來的巨大工作量，往往讓全體審計人員精疲力竭。"
+        },
+        {
+          "en": "Automated digital tools helped streamline tasks and cut down the administrative workload.",
+          "zh": "引進智慧化數位自動化工具，大幅精簡了瑣碎繁雜的流程，減輕了第一線行政工作負荷。"
+        }
+      ],
+      "collocations": [
+        "heavy workload",
+        "manage workload"
+      ]
+    },
+    {
+      "id": 2042,
+      "word": "overtime",
+      "pos": "n., adv., v. phr.",
+      "phonetic": "[ˋovɚˌtaɪm]",
+      "definition": "加班；超時工作；加班費",
+      "cefr": "B1",
+      "topic": "職場工時",
+      "examples": [
+        {
+          "en": "Working excessive overtime harms physical health and productivity.",
+          "zh": "長期過度超時加班會損害身體健康並降低工作效率。"
+        },
+        {
+          "en": "Employees are entitled to statutory overtime compensation according to the labor law.",
+          "zh": "依勞動基準法明文規定，員工依法加班均享有領取法定加成加班費補償的正當權利。"
+        },
+        {
+          "en": "The exciting basketball finals went into thrilling overtime after a buzzer-beater tie.",
+          "zh": "在讀秒絕殺追平比數之後，這場萬眾矚目的籃球總決賽被逼入了扣人心弦的延長加時賽。"
+        }
+      ],
+      "collocations": [
+        "work overtime",
+        "overtime pay"
+      ]
+    },
+    {
+      "id": 2043,
+      "word": "burnout",
+      "pos": "n. [U]",
+      "phonetic": "[ˋbɝnˌaʊt]",
+      "definition": "職業倦怠；身心耗竭",
+      "cefr": "B1",
+      "topic": "心理與健康",
+      "examples": [
+        {
+          "en": "Taking regular vacations prevents professional burnout and stress.",
+          "zh": "定期休假放鬆能有效預防職業倦怠與過度工作壓力。"
+        },
+        {
+          "en": "Symptoms of burnout include chronic fatigue, cynicism, and loss of enthusiasm.",
+          "zh": "職業倦怠身心耗竭的典型徵兆包括長期揮之不去的慢性疲勞、消極憤世以及熱情全失。"
+        },
+        {
+          "en": "Hospitals introduced wellness programs to combat emotional burnout among frontline doctors.",
+          "zh": "各大醫學中心陸續推展身心舒壓輔導方案，積極防止第一線臨床醫師產生情緒耗竭。"
+        }
+      ],
+      "collocations": [
+        "suffer from burnout",
+        "job burnout"
+      ]
+    },
+    {
+      "id": 2044,
+      "word": "work-life balance",
+      "pos": "n. phr.",
+      "phonetic": "[wɝk laɪf ˋbæləns]",
+      "definition": "工作與生活平衡",
+      "cefr": "B1",
+      "topic": "生活型態",
+      "examples": [
+        {
+          "en": "Modern professionals prioritize healthy work-life balance and mental wellbeing.",
+          "zh": "現代上班族格外重視健康良好的工作與生活平衡及心靈福祉。"
+        },
+        {
+          "en": "Companies that respect work-life balance experience much lower employee turnover rates.",
+          "zh": "凡是能充分體諒並尊重同仁工作與生活平衡的良心企業，其員工離職率普遍低得多。"
+        },
+        {
+          "en": "Setting clear boundaries after working hours is essential to preserve your work-life balance.",
+          "zh": "下班後為公務通訊軟體設立明確的界限邊界，是守護個人工作生活平衡的關鍵之道。"
+        }
+      ],
+      "collocations": [
+        "achieve work-life balance"
+      ]
+    },
+    {
+      "id": 2045,
+      "word": "remote work",
+      "pos": "n. phr.",
+      "phonetic": "[rɪˋmot wɝk]",
+      "definition": "遠端辦公；居家工作",
+      "cefr": "B1",
+      "topic": "工作模式",
+      "examples": [
+        {
+          "en": "Cloud software enables seamless remote work from anywhere on Earth.",
+          "zh": "雲端軟體使得從世界任何角落進行遠端辦公都能無縫銜接。"
+        },
+        {
+          "en": "Many software engineers prefer remote work because it eliminates long daily commutes.",
+          "zh": "許多軟體工程師極力崇尚遠端辦公模式，因為這徹底免除了每日冗長折磨的舟車勞頓。"
+        },
+        {
+          "en": "Strong self-discipline and asynchronous messaging tools are essential for successful remote work.",
+          "zh": "高度的個人自律精神以及高效的非同步溝通協作工具，是落實成功遠端辦公的基石。"
+        }
+      ],
+      "collocations": [
+        "telecommuting",
+        "work from home (WFH)"
+      ]
+    },
+    {
+      "id": 2046,
+      "word": "hybrid work",
+      "pos": "n. phr.",
+      "phonetic": "[ˋhaɪbrɪd wɝk]",
+      "definition": "混合辦公模式",
+      "cefr": "B1",
+      "topic": "工作模式",
+      "examples": [
+        {
+          "en": "Our company adopted a flexible hybrid work model: three office days, two home days.",
+          "zh": "我們公司採取彈性混合辦公：三天進辦公室、兩天居家上班。"
+        },
+        {
+          "en": "A hybrid work arrangement offers the best of both worlds: collaboration and quiet focus.",
+          "zh": "混合辦公模式兼具兩全其美之效：既保有面對面團隊激盪交流，又能享有居家專注時光。"
+        },
+        {
+          "en": "Surveys show that a majority of tech workers favor hybrid work over mandatory five-day office rules.",
+          "zh": "調查研究顯示，絕大多數科技業工程師相比於強制五天到班，更壓倒性青睞混合辦公。"
+        }
+      ],
+      "collocations": [
+        "hybrid working model"
+      ]
+    },
+    {
+      "id": 2047,
+      "word": "commute",
+      "pos": "v., n.",
+      "phonetic": "[kəˋmjut]",
+      "definition": "通勤；通學；通勤路程",
+      "cefr": "B1",
+      "topic": "交通與生活",
+      "examples": [
+        {
+          "en": "I commute thirty minutes by MRT from New Taipei City to Taipei downtown.",
+          "zh": "我每天搭乘捷運從新北市通勤三十分鐘至台北市中心。"
+        },
+        {
+          "en": "Listening to English podcasts turns an otherwise boring daily commute into study time.",
+          "zh": "每天戴上耳機收聽英文播客節目，能將原本枯燥乏味的通勤路程轉化為充實學習時光。"
+        },
+        {
+          "en": "Traffic jams during the morning rush hour extended his car commute to over an hour.",
+          "zh": "早晨上班尖峰時段慘烈的大塞車，讓他開車通勤的單程耗時一口氣拉長到一個多小時。"
+        }
+      ],
+      "collocations": [
+        "daily commute",
+        "commute to work"
+      ]
+    },
+    {
+      "id": 2048,
+      "word": "commuter",
+      "pos": "n.",
+      "phonetic": "[kəˋmjutɚ]",
+      "definition": "通勤者；通勤族",
+      "cefr": "B1",
+      "topic": "人物身分",
+      "examples": [
+        {
+          "en": "Thousands of busy commuters pass through Taipei Main Station every morning.",
+          "zh": "每天早晨數以萬計忙碌的通勤族穿梭於台北車站大廳。"
+        },
+        {
+          "en": "Commuters tapped their EasyCards swiftly at the subway turnstile gates.",
+          "zh": "步履匆匆的通勤族在捷運驗票閘門前俐落地輕觸感應悠遊卡，依序迅速進站。"
+        },
+        {
+          "en": "Rainy morning weather caused long lines of wet commuters waiting at city bus stops.",
+          "zh": "陰雨綿綿的濕冷早晨，市區各主要公車站牌前排滿了撐著雨傘耐心候車的通勤人群。"
+        }
+      ],
+      "collocations": [
+        "MRT commuter",
+        "daily commuters"
+      ]
+    },
+    {
+      "id": 2049,
+      "word": "flexible hours",
+      "pos": "n. phr.",
+      "phonetic": "[ˋflɛksəb! aʊrz]",
+      "definition": "彈性工時；彈性上下班",
+      "cefr": "B1",
+      "topic": "職場制度",
+      "examples": [
+        {
+          "en": "Flexible hours allow working parents to pick up children after school.",
+          "zh": "彈性上下班工時讓雙薪父母能方便在放學時間接送孩子。"
+        },
+        {
+          "en": "Thanks to flexible hours, early risers can start at seven and finish work by mid-afternoon.",
+          "zh": "拜彈性工時所賜，習慣早起的同仁可於清晨七點便開始上工，並於午後早早打卡下班。"
+        },
+        {
+          "en": "Offering flexible hours boosts employee morale and drastically reduces morning tardiness.",
+          "zh": "企業推展彈性上下班制度能大幅鼓舞員工士氣，同時立竿見影地降低早晨遲到現象。"
+        }
+      ],
+      "collocations": [
+        "flextime",
+        "flexible schedule"
+      ]
+    },
+    {
+      "id": 2050,
+      "word": "annual leave",
+      "pos": "n. phr.",
+      "phonetic": "[ˋænjʊəl liv]",
+      "definition": "特休假；年假；有薪年假",
+      "cefr": "B1",
+      "topic": "休假制度",
+      "examples": [
+        {
+          "en": "I used my remaining annual leave days to travel around Hualien and Taitung.",
+          "zh": "我用掉了剩餘的特休年假天數到花蓮與台東環島旅遊。"
+        },
+        {
+          "en": "Employees accumulate additional days of statutory annual leave with every year of seniority.",
+          "zh": "隨著在公司任職服務年資的增長，勞工依法享有累積更多天數的法定帶薪特休年假。"
+        },
+        {
+          "en": "Submit your annual leave request to your direct manager at least two weeks beforehand.",
+          "zh": "若規劃請特休年假出遊，請務必至少提前兩週前向您的直屬主管正式遞出假單申請。"
+        }
+      ],
+      "collocations": [
+        "paid time off (PTO)",
+        "take annual leave"
+      ]
+    }
+  ]
+}

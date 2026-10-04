@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,301–5,350 個單字（CEFR B1 中級）",
+  "batch": "5301-5350",
+  "range": "5301–5350",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5301,
+      "word": "aerospace",
+      "pos": "n. [U], adj.",
+      "phonetic": "[ˋɛro͵spes]",
+      "definition": "太空航太工業；航空航太的",
+      "cefr": "B1",
+      "topic": "太空科技",
+      "examples": [
+        {
+          "en": "Taiwan’s precision electronics suppliers produce critical radiation-hardened components for the global aerospace industry.",
+          "zh": "台灣精密電子大廠為全球太空航太工業提供關鍵的抗輻射高階衛星晶片組件。"
+        },
+        {
+          "en": "She decided to pursue a degree in aerospace engineering to design reusable launch vehicles.",
+          "zh": "她決定攻讀航太工程學位，以便未來從事可重複使用運載火箭的設計工作。"
+        },
+        {
+          "en": "Strict quality audits are required for all composite materials used in commercial aerospace manufacturing.",
+          "zh": "商用航太製造所使用的所有複合材料，都必須通過極為嚴格的品質稽核檢驗。"
+        }
+      ],
+      "collocations": [
+        "aerospace industry"
+      ]
+    },
+    {
+      "id": 5302,
+      "word": "commercialization",
+      "pos": "n. [U]",
+      "phonetic": "[kə͵mɝʃələˋzeʃən]",
+      "definition": "商業化太空飛行發射發展",
+      "cefr": "B1",
+      "topic": "商業太空",
+      "examples": [
+        {
+          "en": "The rapid commercialization of orbital launches slashed the cost of sending payloads into orbit by 90%.",
+          "zh": "軌道火箭發射的快速商業化，將發射有效載荷進入太空的成本直接砍掉九成。"
+        },
+        {
+          "en": "Researchers are exploring the commercialization of seaweed extracts in organic skincare products.",
+          "zh": "研究人員正在積極探索將海藻萃取物商業化應用於有機護膚產品中的可行性。"
+        },
+        {
+          "en": "The university established an incubation center to accelerate the commercialization of academic patents.",
+          "zh": "這所大學設立了育成中心，以加速各項學術專利技術的商業化市場應用進程。"
+        }
+      ],
+      "collocations": [
+        "commercialization of space"
+      ]
+    },
+    {
+      "id": 5303,
+      "word": "constellation",
+      "pos": "n.",
+      "phonetic": "[͵kɑnstəˋleʃən]",
+      "definition": "低軌衛星巨型星系；星座",
+      "cefr": "B1",
+      "topic": "衛星通訊",
+      "examples": [
+        {
+          "en": "Thousands of low-orbit satellites form a synchronized mesh constellation providing continuous internet access.",
+          "zh": "數千顆低軌衛星在太空編織成相互串聯的巨型衛星星系，提供全球不中斷寬頻網路。"
+        },
+        {
+          "en": "On clear summer nights in the mountains, you can easily identify the famous constellation Orion.",
+          "zh": "在無光害的夏季高山晴朗夜空下，你可以輕易用肉眼辨識出著名的獵戶座星座。"
+        },
+        {
+          "en": "Ground stations across several continents maintain constant telemetry contact with the new satellite constellation.",
+          "zh": "分布在各大洲的地面接收站隨時與這組嶄新的衛星星系保持不間斷的遙測通訊。"
+        }
+      ],
+      "collocations": [
+        "LEO satellite constellation"
+      ]
+    },
+    {
+      "id": 5304,
+      "word": "orbit",
+      "pos": "n., v.",
+      "phonetic": "[ˋɔrbɪt]",
+      "definition": "低地球軌道 (LEO)；環繞軌道運行",
+      "cefr": "B1",
+      "topic": "太空軌道",
+      "examples": [
+        {
+          "en": "Communication satellites circulate in Low Earth Orbit (LEO) at an altitude of 550 kilometers.",
+          "zh": "現代商業通訊衛星在距離地表五百五十公里的低地球軌道高速環繞地球運行。"
+        },
+        {
+          "en": "The Earth takes approximately 365 days to complete one full orbit around the Sun.",
+          "zh": "地球大約需要三百六十五天的時間，才能完成環繞太陽公轉一圈的完整軌道運行。"
+        },
+        {
+          "en": "Space agencies are tracking thousands of defunct rocket stages that continue to orbit the globe.",
+          "zh": "各國太空機構正密切追蹤數千個依然持續在地球軌道上飛行的退役廢棄火箭級段。"
+        }
+      ],
+      "collocations": [
+        "Low Earth Orbit (LEO)"
+      ]
+    },
+    {
+      "id": 5305,
+      "word": "propulsion",
+      "pos": "n. [U]",
+      "phonetic": "[prəˋpʌlʃən]",
+      "definition": "液態甲烷火箭發動機推進力；推進",
+      "cefr": "B1",
+      "topic": "火箭動力",
+      "examples": [
+        {
+          "en": "Next-generation rocket propulsion systems burn clean liquid methane and oxygen to generate immense thrust.",
+          "zh": "新一代火箭推進系統燃燒純淨液態甲烷與液氧，在點火瞬間爆發出驚天動地的推力。"
+        },
+        {
+          "en": "Electric ion propulsion allows interplanetary probes to travel vast cosmic distances with minimal fuel consumption.",
+          "zh": "電離子推進技術讓深空行星探測器能以極少的燃料消耗，橫跨浩瀚遙遠的宇宙星際距離。"
+        },
+        {
+          "en": "Submarines rely on advanced acoustic propulsion designs to glide silently through deep ocean waters.",
+          "zh": "潛艇仰賴先進的靜音聲學推進動力設計，在幽暗的深海大洋中悄無聲息地潛航。"
+        }
+      ],
+      "collocations": [
+        "rocket propulsion system"
+      ]
+    },
+    {
+      "id": 5306,
+      "word": "reusable",
+      "pos": "adj.",
+      "phonetic": "[riˋjuzəb!]",
+      "definition": "可重複回收使用火箭推進器的",
+      "cefr": "B1",
+      "topic": "循環火箭",
+      "examples": [
+        {
+          "en": "Reusable orbital boosters land smoothly on autonomous sea barges, transforming space economics.",
+          "zh": "可重複使用的第一節火箭推進器平穩降落在海上無人自動駁船上，徹底重塑了太空經濟學。"
+        },
+        {
+          "en": "Customers bring their own reusable canvas bags and beverage cups to reduce single-use plastic waste.",
+          "zh": "顧客主動自備環保帆布袋與環保隨行杯，以減少日常生活中一次性塑膠垃圾的產生。"
+        },
+        {
+          "en": "The launch service provider plans to introduce a fully reusable upper stage within five years.",
+          "zh": "這家商業太空發射業者計劃在五年內推出完全可重複使用的第二節火箭太空艙。"
+        }
+      ],
+      "collocations": [
+        "reusable rocket booster"
+      ]
+    },
+    {
+      "id": 5307,
+      "word": "booster",
+      "pos": "n.",
+      "phonetic": "[ˋbustɚ]",
+      "definition": "火箭第一節助推火箭推進器",
+      "cefr": "B1",
+      "topic": "發射結構",
+      "examples": [
+        {
+          "en": "The nine-engine first-stage booster propels the spacecraft past the stratosphere before performing a back-flip.",
+          "zh": "搭載九具猛禽引擎的第一節助推火箭，將太空船全力推破平流層後在空中華麗調頭返航。"
+        },
+        {
+          "en": "Health authorities recommend an annual booster shot to maintain immunity against emerging virus variants.",
+          "zh": "衛生主管機關建議民眾每年施打追加劑疫苗，以維持對抗新興變異株病毒的足夠保護力。"
+        },
+        {
+          "en": "The announcement of major infrastructure investments served as a powerful confidence booster for the market.",
+          "zh": "政府宣布擴大公共基礎建設計畫的利多消息，為整體金融市場注入了一劑強勁的信心強心針。"
+        }
+      ],
+      "collocations": [
+        "first-stage rocket booster"
+      ]
+    },
+    {
+      "id": 5308,
+      "word": "payload",
+      "pos": "n.",
+      "phonetic": "[ˋpe͵lod]",
+      "definition": "火箭有效承載酬載；酬載",
+      "cefr": "B1",
+      "topic": "運載能量",
+      "examples": [
+        {
+          "en": "The heavy-lift rocket carried a massive sixty-satellite payload packed securely under its nose fairing.",
+          "zh": "這枚重型運載火箭在頭部整流罩內緊密裝載了多達六十顆通訊衛星的龐大有效酬載。"
+        },
+        {
+          "en": "Technicians checked the payload bay carefully to ensure that every scientific instrument was calibrated.",
+          "zh": "技師們仔細檢查了火箭的酬載艙，確保每一台搭載的科學觀測儀器皆已精準校正完成。"
+        },
+        {
+          "en": "The cargo aircraft has a maximum payload capacity of forty tons for transpacific shipping.",
+          "zh": "這架大型貨運運輸機具備高達四十公噸的最大有效酬載載重量，專門執飛跨太平洋航線。"
+        }
+      ],
+      "collocations": [
+        "commercial satellite payload"
+      ]
+    },
+    {
+      "id": 5309,
+      "word": "fairing",
+      "pos": "n.",
+      "phonetic": "[ˋfɛrɪŋ]",
+      "definition": "火箭頂部氣動防護整流罩",
+      "cefr": "B1",
+      "topic": "火箭外殼",
+      "examples": [
+        {
+          "en": "Carbon-composite payload fairings shield delicate scientific telescopes from aerodynamic friction during launch.",
+          "zh": "碳纖維複合材料製成的火箭整流罩，在火箭穿破大氣層時為精密太空望遠鏡阻擋高溫氣動摩擦。"
+        },
+        {
+          "en": "Recovery boats equipped with giant nets attempt to catch descending rocket fairings before they touch seawater.",
+          "zh": "配備巨型安全張網的海上回收船，嘗試在下墜的火箭整流罩接觸海水前將其精準攔截回收。"
+        },
+        {
+          "en": "The motorcycle fairing was aerodynamically contoured to minimize wind resistance at high track speeds.",
+          "zh": "重型機車的導流罩經過流線型空氣動力學塑形，以在賽道高速馳騁時將風阻降至最低。"
+        }
+      ],
+      "collocations": [
+        "payload nose fairing"
+      ]
+    },
+    {
+      "id": 5310,
+      "word": "telemetry",
+      "pos": "n. [U]",
+      "phonetic": "[təˋlɛmətrɪ]",
+      "definition": "火箭飛行速度軌跡即時遙測數據",
+      "cefr": "B1",
+      "topic": "航行監控",
+      "examples": [
+        {
+          "en": "Mission control engineers monitor live telemetry dashboards displaying velocity, altitude, and chamber pressure.",
+          "zh": "太空發射任務控制中心的工程師全神貫注盯著即時遙測儀表板，監控火箭速度與燃燒室壓力。"
+        },
+        {
+          "en": "The race car transmits wireless telemetry data to pit-stop engineers to monitor tire wear and engine heat.",
+          "zh": "頂級賽車在賽道奔馳時將無線遙測數據傳回維修站，供工程師即時監控輪胎磨損與引擎溫度。"
+        },
+        {
+          "en": "Wildlife biologists use radio telemetry collars to track the seasonal migration paths of Formosan black bears.",
+          "zh": "野生動物學家利用無線電追蹤遙測項圈，精確掌握台灣黑熊在山林間的季節性遷徙路線。"
+        }
+      ],
+      "collocations": [
+        "flight telemetry data"
+      ]
+    },
+    {
+      "id": 5311,
+      "word": "countdown",
+      "pos": "n.",
+      "phonetic": "[ˋkaʊnt͵daʊn]",
+      "definition": "太空火箭發射最後倒數計時",
+      "cefr": "B1",
+      "topic": "發射時刻",
+      "examples": [
+        {
+          "en": "Millions held their breath as the launch countdown ticked down: three, two, one, ignition!",
+          "zh": "當發射倒數計時數到最後的三、二、點火時，全球數百萬觀眾屏息凝神見證歷史時刻。"
+        },
+        {
+          "en": "The festive New Year countdown in front of Taipei 101 concluded with a breathtaking fireworks extravaganza.",
+          "zh": "台北 101 大樓前熱鬧非凡的跨年倒數計時晚會，在璀璨壯麗的萬丈煙火秀中達到最高潮。"
+        },
+        {
+          "en": "The project manager initiated a final thirty-day countdown leading up to the official software launch.",
+          "zh": "專案經理啟動了距離新軟體系統正式上線發表前的最後三十天倒數計時緊鑼密鼓衝刺。"
+        }
+      ],
+      "collocations": [
+        "launch countdown sequence"
+      ]
+    },
+    {
+      "id": 5312,
+      "word": "liftoff",
+      "pos": "n. [U]",
+      "phonetic": "[ˋlɪft͵ɔf]",
+      "definition": "轟鳴升空火箭離開發射台起飛",
+      "cefr": "B1",
+      "topic": "升空震撼",
+      "examples": [
+        {
+          "en": "We have liftoff as the giant rocket roars off the pad, lighting up the midnight sky with blinding flames.",
+          "zh": "「火箭正式升空！」巨大火箭伴隨著震耳欲聾的轟鳴離開發射台，耀眼的烈焰照亮了漆黑夜空。"
+        },
+        {
+          "en": "Spectators cheering on nearby beaches cheered loudly at the dramatic moment of morning rocket liftoff.",
+          "zh": "聚集在鄰近沙灘觀景區的成千上萬民眾，在清晨火箭離開發射台升空的震撼瞬間爆發出歡呼。"
+        },
+        {
+          "en": "Launch controllers aborted the countdown only three seconds prior to scheduled liftoff due to a sensor glitch.",
+          "zh": "由於感測器突然出現微小異常讀數，發射指揮中心在預定升空前三秒緊急中止了倒數程序。"
+        }
+      ],
+      "collocations": [
+        "successful rocket liftoff"
+      ]
+    },
+    {
+      "id": 5313,
+      "word": "supersonic",
+      "pos": "adj.",
+      "phonetic": "[͵supɚˋsɑnɪk]",
+      "definition": "超音速破音障高速飛行的",
+      "cefr": "B1",
+      "topic": "高速空氣動力",
+      "examples": [
+        {
+          "en": "The rocket breached the sound barrier, traveling at supersonic speeds within seventy seconds after liftoff.",
+          "zh": "火箭在升空後短短七十秒內迅速突破音障，以超越音速的超音速速度劃破雲霄。"
+        },
+        {
+          "en": "Concorde was a famous passenger airliner that flew at supersonic speeds across the Atlantic Ocean.",
+          "zh": "協和式客機是歷史上著名的超音速民航客機，能以超音速呼嘯飛越廣袤的大西洋。"
+        },
+        {
+          "en": "Engineers conduct extensive wind tunnel testing to analyze supersonic shock waves on aircraft wings.",
+          "zh": "航太工程師在大型風洞中進行大規模風阻測試，以深入分析機翼在超音速飛行時所產生的震波。"
+        }
+      ],
+      "collocations": [
+        "supersonic flight velocity"
+      ]
+    },
+    {
+      "id": 5314,
+      "word": "staging",
+      "pos": "n. [U]",
+      "phonetic": "[ˋstedʒɪŋ]",
+      "definition": "火箭多節高空分離作業；分級",
+      "cefr": "B1",
+      "topic": "級段分離",
+      "examples": [
+        {
+          "en": "Stage separation was confirmed as the second-stage vacuum engine ignited smoothly in the vacuum of space.",
+          "zh": "任務控制中心確認火箭多節分離順利完成，第二節真空專用引擎在太空無重力真空環境下精準點火。"
+        },
+        {
+          "en": "The theater director spent hours perfecting the intricate staging and lighting for the opening scene.",
+          "zh": "舞台劇導演耗費數小時反覆琢磨開場大戲的走位舞台編排與燈光佈置，力求完美。"
+        },
+        {
+          "en": "Doctors use clinical staging guidelines to determine the exact extent and progression of a tumor.",
+          "zh": "臨床醫師根據專業的腫瘤臨床分期指南，精準判定惡性腫瘤在體內的擴散程度與病程進展。"
+        }
+      ],
+      "collocations": [
+        "rocket stage separation"
+      ]
+    },
+    {
+      "id": 5315,
+      "word": "apogee",
+      "pos": "n.",
+      "phonetic": "[ˋæpədʒi]",
+      "definition": "衛星橢圓軌道最高遠地點",
+      "cefr": "B1",
+      "topic": "軌道幾何",
+      "examples": [
+        {
+          "en": "The communication satellite fired its onboard thrusters at orbital apogee to circularize its path.",
+          "zh": "通訊衛星在環繞地球橢圓軌道的最高遠地點點燃自帶微型推力器，將運行軌跡修整為正圓形。"
+        },
+        {
+          "en": "Reaching the prestigious post of supreme court justice was the absolute apogee of her legal career.",
+          "zh": "榮任大法官的崇高職位，無疑是她長達數十年璀璨法律生涯中的最高巔峰遠地點。"
+        },
+        {
+          "en": "At its orbital apogee, the probe reaches its highest altitude and slowest relative orbital speed.",
+          "zh": "當探測器航行至其軌道最高遠地點時，飛行高度達到最高峰，而相對公轉速度則降至最低。"
+        }
+      ],
+      "collocations": [
+        "highest orbital apogee"
+      ]
+    },
+    {
+      "id": 5316,
+      "word": "thruster",
+      "pos": "n.",
+      "phonetic": "[ˋθrʌstɚ]",
+      "definition": "衛星微調微型推力發動機",
+      "cefr": "B1",
+      "topic": "姿態控制",
+      "examples": [
+        {
+          "en": "Cold-gas attitude thrusters pulse gently to orient the satellite's solar arrays toward the morning sun.",
+          "zh": "衛星上的冷氣體微型推力器輕微噴射點火，精準調整姿態讓大型太陽能電池板正對朝陽。"
+        },
+        {
+          "en": "The lunar lander fired its descent thrusters to cushion its touchdown onto the dusty crater floor.",
+          "zh": "登月小艇點燃下降逆向推力器以減速緩衝，穩健降落在滿是月塵的隕石坑平原表面。"
+        },
+        {
+          "en": "Modern luxury cruise ships use directional bow thrusters to maneuver smoothly inside cramped harbor basins.",
+          "zh": "現代豪華郵輪配備靈活轉向的船艏側推推力器，能在狹小的港池水域內輕鬆靈巧調頭靠泊。"
+        }
+      ],
+      "collocations": [
+        "attitude control thruster"
+      ]
+    },
+    {
+      "id": 5317,
+      "word": "maneuver",
+      "pos": "n., v.",
+      "phonetic": "[məˋnuvɚ]",
+      "definition": "衛星太空精準變軌機動調整",
+      "cefr": "B1",
+      "topic": "軌道調整",
+      "examples": [
+        {
+          "en": "Autonomous collision avoidance maneuvers steer satellites away from passing defunct rocket fragments.",
+          "zh": "衛星搭載的 AI 自動避碰系統自主執行軌道機動變換，靈巧躲避呼嘯而過的太空垃圾碎片。"
+        },
+        {
+          "en": "The skilled driver executed a flawless parallel parking maneuver in the narrow street.",
+          "zh": "技術純熟的駕駛在狹窄擁擠的單行道街邊，俐落完成了一次完美的倒車路邊停車動作。"
+        },
+        {
+          "en": "The military unit performed complex tactical maneuvers across rugged mountainous terrain during training.",
+          "zh": "陸軍特戰部隊在演訓期間於險峻崎嶇的高山叢林地形中，展現了複雜多變的戰術機動演練。"
+        }
+      ],
+      "collocations": [
+        "orbital collision avoidance maneuver"
+      ]
+    },
+    {
+      "id": 5318,
+      "word": "laser",
+      "pos": "n., adj.",
+      "phonetic": "[ˋlezɚ]",
+      "definition": "衛星間高速光學雷射傳輸鏈路",
+      "cefr": "B1",
+      "topic": "星際通訊",
+      "examples": [
+        {
+          "en": "Inter-satellite optical laser links transfer petabytes of data across the orbital constellation at light speed.",
+          "zh": "衛星之間搭載的高速光學雷射鏈路，以光速在太空軌道星系間跨洲傳輸海量數據。"
+        },
+        {
+          "en": "Ophthalmologists perform quick laser surgery to correct myopia and astigmatism in outpatients.",
+          "zh": "眼科醫師為門診患者進行快速便捷的近視雷射屈光手術，矯正長年困擾的近視與散光。"
+        },
+        {
+          "en": "High-precision laser cutters slice through thick sheets of stainless steel with razor-sharp accuracy.",
+          "zh": "工業級高精度雷射切割機以刀切豆腐般的極致精準度，利落裁切厚重的金屬不鏽鋼板。"
+        }
+      ],
+      "collocations": [
+        "inter-satellite laser link"
+      ]
+    },
+    {
+      "id": 5319,
+      "word": "array",
+      "pos": "n.",
+      "phonetic": "[əˋre]",
+      "definition": "電子相位陣列波束成形天線；陣列",
+      "cefr": "B1",
+      "topic": "天線科技",
+      "examples": [
+        {
+          "en": "Advanced phased array antennas steer radio beams electronically without moving physical mechanical parts.",
+          "zh": "先進的電子相位陣列天線，無需任何機械齒輪轉動即可利用電磁波束毫秒級精準追蹤衛星。"
+        },
+        {
+          "en": "The modern solar farm features a sprawling array of photovoltaic panels tilted toward the southern sky.",
+          "zh": "這座現代化太陽能電廠設有一望無際整齊排列的太陽能光電陣列板，朝向南方天空傾斜蓄能。"
+        },
+        {
+          "en": "The computer programmer declared a multi-dimensional array to store weekly temperature logs efficiently.",
+          "zh": "電腦軟體工程師宣告了一個多維陣列資料結構，以高效儲存與處理每週的氣溫變化記錄。"
+        }
+      ],
+      "collocations": [
+        "phased array antenna"
+      ]
+    },
+    {
+      "id": 5320,
+      "word": "latency",
+      "pos": "n. [U]",
+      "phonetic": "[ˋletnsɪ]",
+      "definition": "低軌衛星超低延遲極速傳輸；延遲",
+      "cefr": "B1",
+      "topic": "網路效能",
+      "examples": [
+        {
+          "en": "Low Earth orbit architectures achieve latency under thirty milliseconds, ideal for high-definition video calls.",
+          "zh": "距離地面極近的低軌衛星架構創造出低於三十毫秒的超低延遲，視訊通話與線上對戰流暢無比。"
+        },
+        {
+          "en": "Hardcore competitive gamers invest in ultra-fast fiber internet to minimize ping latency during tournaments.",
+          "zh": "電競職業選手投資申裝超高速光纖網路，以在緊張激烈的電競錦標賽中將網路延遲壓至極低。"
+        },
+        {
+          "en": "High-frequency trading algorithms depend on sub-millisecond network latency to execute orders ahead of rivals.",
+          "zh": "華爾街高頻交易演算法高度依賴亞毫秒級的極低網路延遲，以便在競爭對手前幾微秒搶先下單。"
+        }
+      ],
+      "collocations": [
+        "ultra-low network latency"
+      ]
+    },
+    {
+      "id": 5321,
+      "word": "coverage",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkʌvərɪdʒ]",
+      "definition": "全球極地偏鄉無死角通訊覆蓋",
+      "cefr": "B1",
+      "topic": "涵蓋範圍",
+      "examples": [
+        {
+          "en": "Satellite broadband ensures 100% broadband coverage for remote Pacific fishing boats and mountain villages.",
+          "zh": "低軌衛星寬頻為偏遠南太平洋遠洋漁船與崇山峻嶺間的原鄉部落，帶來百分之百無死角的通訊覆蓋。"
+        },
+        {
+          "en": "The mobile telecom operator expanded its 5G network coverage to include underground subway tunnels.",
+          "zh": "行動電信業者大幅擴建 5G 基地台訊號涵蓋範圍，甚至延伸至地底捷運隧道各線路。"
+        },
+        {
+          "en": "Before traveling abroad, purchase travel insurance that provides comprehensive medical emergency coverage.",
+          "zh": "在出國自助旅行前，務必購買提供完善海外突發疾病與緊急醫療全方位涵蓋的旅遊保險。"
+        }
+      ],
+      "collocations": [
+        "global broadband coverage"
+      ]
+    },
+    {
+      "id": 5322,
+      "word": "redundancy",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋdʌndənsɪ]",
+      "definition": "雙重備援多重容錯冗餘設計",
+      "cefr": "B1",
+      "topic": "系統可靠",
+      "examples": [
+        {
+          "en": "Triple hardware redundancy guarantees that critical guidance computers keep operating if one chip fails.",
+          "zh": "三重硬體備援冗餘設計，確保導航控制電腦即便在單一晶片損壞時依然能無縫接管運作。"
+        },
+        {
+          "en": "The data center installed backup diesel generators to provide electrical power redundancy during outages.",
+          "zh": "雲端資料中心安裝了大型備用柴油發電機組，在台電跳電停電期間提供無縫的電力備援。"
+        },
+        {
+          "en": "Streamlining the corporate workflow eliminated administrative redundancy and cut operating costs.",
+          "zh": "重新梳理與精簡企業日常工作流程，成功消除了行政層面的冗贅重複並降低了營運支出。"
+        }
+      ],
+      "collocations": [
+        "triple hardware redundancy"
+      ]
+    },
+    {
+      "id": 5323,
+      "word": "debris",
+      "pos": "n. [U]",
+      "phonetic": "[dəˋbri]",
+      "definition": "太空垃圾高速廢棄物殘骸",
+      "cefr": "B1",
+      "topic": "太空環保",
+      "examples": [
+        {
+          "en": "International radar networks track over thirty thousand pieces of tracked space debris larger than a softball.",
+          "zh": "國際太空雷達監測網絡日夜追蹤超過三萬件大於壘球、在軌道上以數十倍音速狂飆的太空垃圾殘骸。"
+        },
+        {
+          "en": "City sanitation workers cleared broken glass and tree debris from roads following the fierce typhoon.",
+          "zh": "清潔隊環保人員在強颱過境後，迅速清除倒塌在市區幹道上的殘破碎玻璃與斷裂樹枝殘骸。"
+        },
+        {
+          "en": "Forensic investigators sifted through the burnt debris of the warehouse to pinpoint the origin of the fire.",
+          "zh": "鑑識火調專家細心篩檢燒毀倉庫現場焦黑的火災殘骸碎片，以精確鎖定最初的起火點。"
+        }
+      ],
+      "collocations": [
+        "orbital space debris"
+      ]
+    },
+    {
+      "id": 5324,
+      "word": "deorbit",
+      "pos": "v., n. [U]",
+      "phonetic": "[diˋɔrbɪt]",
+      "definition": "衛星退役主動脫軌焚毀；脫離軌道",
+      "cefr": "B1",
+      "topic": "永續太空",
+      "examples": [
+        {
+          "en": "Retired satellites fire residual propellant to safely deorbit and vaporize completely in the upper atmosphere.",
+          "zh": "服役期滿退役的衛星點燃剩餘燃料主動脫離軌道，墜入高空大氣層完全高溫汽化焚毀。"
+        },
+        {
+          "en": "Space sustainability guidelines recommend that spacecraft deorbit within five years of completing their mission.",
+          "zh": "太空永續環保規範嚴格建議，所有商用人造衛星在結束任務後的五年內必須脫軌墜毀。"
+        },
+        {
+          "en": "The decommissioned cargo capsule executed a controlled deorbit burn targeted over the uninhabited South Pacific Ocean.",
+          "zh": "退役的無人太空補給貨運艙執行了受控的脫軌反向點火推進，精準墜入人跡罕至的南太平洋無人區。"
+        }
+      ],
+      "collocations": [
+        "safely deorbit satellite"
+      ]
+    },
+    {
+      "id": 5325,
+      "word": "syndrome",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɪndrom]",
+      "definition": "凱斯勒連鎖碰撞症候群（太空災難）",
+      "cefr": "B1",
+      "topic": "碰撞連鎖",
+      "examples": [
+        {
+          "en": "The Kessler syndrome warns that cascading orbital collisions could render low Earth orbit unusable for generations.",
+          "zh": "凱斯勒現象示警：軌道碎片連鎖撞擊引發的惡性循環，恐使近地軌道數百年無法使用。"
+        },
+        {
+          "en": "Chronic fatigue syndrome can cause severe muscle aches and prolonged cognitive exhaustion.",
+          "zh": "慢性疲勞症候群會引發長期全身肌肉酸痛、無力感以及揮之不去的大腦認知遲鈍疲勞。"
+        },
+        {
+          "en": "Carpal tunnel syndrome is an occupational condition often affecting typists and assembly line workers.",
+          "zh": "腕隧道症候群是一種常見的職場職業病，經常困擾著打字員、電腦工程師與產線組裝作業員。"
+        }
+      ],
+      "collocations": [
+        "Kessler syndrome cascade"
+      ]
+    },
+    {
+      "id": 5326,
+      "word": "radiation",
+      "pos": "n. [U]",
+      "phonetic": "[͵redɪˋeʃən]",
+      "definition": "宇宙游離輻射；放射線",
+      "cefr": "B1",
+      "topic": "太空環境",
+      "examples": [
+        {
+          "en": "Heavy lead and polyethylene shielding protects sensitive satellite microelectronics from harsh solar cosmic radiation.",
+          "zh": "採用多層防護材料能有效抵禦嚴苛的太陽風暴高能質子與深空宇宙輻射，防止晶片故障。"
+        },
+        {
+          "en": "Oncologists use targeted radiation therapy to destroy malignant tumor cells while sparing healthy tissue.",
+          "zh": "腫瘤放射科醫師運用標靶精準放射線治療照射惡性癌細胞，同時最大程度保護周遭正常組織。"
+        },
+        {
+          "en": "Wearable dosimeters measure cumulative occupational radiation exposure for workers in nuclear power plants.",
+          "zh": "核能發電廠的技術人員隨身佩戴微型劑量佩章，以精確記錄並監控日常累積的職業游離輻射劑量。"
+        }
+      ],
+      "collocations": [
+        "cosmic space radiation"
+      ]
+    },
+    {
+      "id": 5327,
+      "word": "microgravity",
+      "pos": "n. [U]",
+      "phonetic": "[͵maɪkroˋgrævətɪ]",
+      "definition": "太空無重力微重力實驗環境",
+      "cefr": "B1",
+      "topic": "軌道科研",
+      "examples": [
+        {
+          "en": "Growing protein crystals in microgravity produces pure structures impossible to synthesize on Earth.",
+          "zh": "在太空站微重力環境下培育藥物蛋白質結晶，能合成出地球重力下無法複製的超純結構。"
+        },
+        {
+          "en": "Astronauts must exercise two hours each day to prevent rapid loss of bone density in microgravity.",
+          "zh": "太空人在軌道生活期間每天必須強制運動兩小時，以防止骨質在微重力環境下快速流失。"
+        },
+        {
+          "en": "Fluid behavior changes dramatically under conditions of microgravity, where liquids form floating spheres.",
+          "zh": "流體在太空微重力環境下的物理特性會發生驚人變化，水滴會自然凝聚成一顆顆懸浮的球體。"
+        }
+      ],
+      "collocations": [
+        "microgravity science laboratory"
+      ]
+    },
+    {
+      "id": 5328,
+      "word": "habitat",
+      "pos": "n.",
+      "phonetic": "[ˋhæbəˌtæt]",
+      "definition": "膨脹式充氣太空居住艙；棲地",
+      "cefr": "B1",
+      "topic": "軌道太空艙",
+      "examples": [
+        {
+          "en": "Inflatable fabric orbital habitats provide astronauts with expansive living and exercise quarters in space.",
+          "zh": "採用超高強度防彈纖維打造的充氣膨脹式太空居住艙，為太空人提供寬敞舒適的生活與健身空間。"
+        },
+        {
+          "en": "Destroying mangrove wetlands wipes out the natural coastal habitat of endangered migratory birds.",
+          "zh": "破壞沿海紅樹林濕地，會徹底摧毀黑面琵鷺等眾多瀕危候鳥賴以繁衍覓食的天然生態棲地。"
+        },
+        {
+          "en": "Engineers are developing autonomous modules to serve as human habitat units on the lunar surface.",
+          "zh": "航太工程師正在研發全自動自給自足模組，預計在不久的將來作為月球表面的常設人類居留生活艙。"
+        }
+      ],
+      "collocations": [
+        "inflatable space habitat"
+      ]
+    },
+    {
+      "id": 5329,
+      "word": "spacewalk",
+      "pos": "n., v.",
+      "phonetic": "[ˋspes͵wɔk]",
+      "definition": "太空人走出艙門太空漫步 (EVA)",
+      "cefr": "B1",
+      "topic": "艙外任務",
+      "examples": [
+        {
+          "en": "Two astronauts conducted a seven-hour spacewalk to replace failing solar array cooling pumps on the station.",
+          "zh": "兩位太空人執行了長達七小時的太空漫步，在無重力外太空為太空站更換冷卻泵浦。"
+        },
+        {
+          "en": "During her first spacewalk, she felt a profound sense of awe looking down at the swirling storms on Earth.",
+          "zh": "在她人生第一次走出太空艙門進行太空漫步時，低頭俯瞰地球上翻騰的白色氣旋，心中無比震撼。"
+        },
+        {
+          "en": "Extensive training inside an enormous underwater neutral buoyancy tank prepares astronauts for each spacewalk.",
+          "zh": "太空人在巨大的室內中性浮力水槽深水池中接受數百小時的模擬演練，為每一次太空漫步做足準備。"
+        }
+      ],
+      "collocations": [
+        "extravehicular spacewalk (EVA)"
+      ]
+    },
+    {
+      "id": 5330,
+      "word": "spacesuit",
+      "pos": "n.",
+      "phonetic": "[ˋspes͵sut]",
+      "definition": "艙外全加壓生命維持太空衣",
+      "cefr": "B1",
+      "topic": "防護裝備",
+      "examples": [
+        {
+          "en": "The extravehicular spacesuit serves as a personal miniature spacecraft, providing oxygen, heating, and radio.",
+          "zh": "現代艙外太空衣本質上就是一套個人微型加壓太空船，供應純氧、抗極端溫差並保持通訊。"
+        },
+        {
+          "en": "Modern spacesuit designs incorporate flexible joints that allow astronauts to bend their fingers and knees easily.",
+          "zh": "新一代航太太空衣採用了創新的軟式關節結構設計，讓太空人在外太空能輕鬆彎曲手指與膝蓋。"
+        },
+        {
+          "en": "Donning and pressurizing a heavy spacesuit requires systematic assistance from fellow crew members.",
+          "zh": "穿戴並加壓一套沉重的艙外航太太空衣，需要由太空站內的隨行隊友提供多道標準作業程序協助。"
+        }
+      ],
+      "collocations": [
+        "pressurized EVA spacesuit"
+      ]
+    },
+    {
+      "id": 5331,
+      "word": "visor",
+      "pos": "n.",
+      "phonetic": "[ˋvaɪzɚ]",
+      "definition": "太空頭盔鍍金抗強光護目遮光鏡",
+      "cefr": "B1",
+      "topic": "頭盔組件",
+      "examples": [
+        {
+          "en": "The gold-coated helmet visor reflects intense unshielded sunlight, protecting the astronaut's eyesight.",
+          "zh": "太空頭盔面罩外層鍍上微米級純金護目遮光鏡，能反射未受大氣過濾的強烈太陽光與紫外線。"
+        },
+        {
+          "en": "Motorcycle riders flip down their anti-fog helmet visor when driving through sudden highway rainstorms.",
+          "zh": "摩托車騎士在國道快速道路上遭遇突發暴雨時，立即拉下防霧全罩安全帽護目鏡遮風擋雨。"
+        },
+        {
+          "en": "She pulled down the visor in her car to block the glaring afternoon sun while driving westward.",
+          "zh": "她向下拉下汽車駕駛座上方的遮陽遮光板，以遮擋午後向西行駛時迎面直射的刺眼夕陽。"
+        }
+      ],
+      "collocations": [
+        "gold-coated helmet visor"
+      ]
+    },
+    {
+      "id": 5332,
+      "word": "tether",
+      "pos": "n., v.",
+      "phonetic": "[ˋtɛðɚ]",
+      "definition": "太空漫步安全鋼索繫繩；繫住",
+      "cefr": "B1",
+      "topic": "安全繩索",
+      "examples": [
+        {
+          "en": "A braided steel safety tether firmly secures the spacewalker to the station airlock handrails at all times.",
+          "zh": "一條高強度編織鋼絲安全繫繩，隨時將太空漫步的太空人牢牢鎖在太空站外壁扶手上以防漂走。"
+        },
+        {
+          "en": "Dog owners must keep their pets on a leash or tether in public parks to avoid disturbing joggers.",
+          "zh": "飼主帶毛小孩到市立公園散步時必須全程繫上牽繩繫帶，以免狗狗奔跑打擾其他慢跑民眾。"
+        },
+        {
+          "en": "You can tether your laptop to your smartphone's mobile hotspot when Wi-Fi is unavailable in the cafe.",
+          "zh": "當咖啡廳沒有提供無線網路時，你可以將筆記型電腦透過行動熱點與智慧型手機繫結連線。"
+        }
+      ],
+      "collocations": [
+        "safety lifeline tether"
+      ]
+    },
+    {
+      "id": 5333,
+      "word": "airlock",
+      "pos": "n.",
+      "phonetic": "[ˋɛrˌlɑk]",
+      "definition": "太空出入艙氣閘艙 (減壓出入艙)",
+      "cefr": "B1",
+      "topic": "艙門設施",
+      "examples": [
+        {
+          "en": "Astronauts equalize atmospheric pressure in the airlock chamber before opening the outer hatch into space.",
+          "zh": "太空人在打開通往外太空的外艙門前，必須先在氣閘艙內緩慢完成減壓並穿戴呼吸裝備。"
+        },
+        {
+          "en": "Pharmaceutical cleanrooms utilize an interlocked airlock system to prevent airborne contamination.",
+          "zh": "高規格生技製藥無塵室設置有互鎖氣閘艙過渡門，以徹底防止外部懸浮微粒與粉塵污染。"
+        },
+        {
+          "en": "The submarine's rescue airlock allows divers to enter and exit safely while submerged at great depths.",
+          "zh": "救援潛艇配備有深水氣閘艙，使潛水員在深海潛航狀態下依然能夠安全自如地進出艇外。"
+        }
+      ],
+      "collocations": [
+        "space station airlock"
+      ]
+    },
+    {
+      "id": 5334,
+      "word": "docking",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdɑkɪŋ]",
+      "definition": "太空船全自動雷射導引對接",
+      "cefr": "B1",
+      "topic": "軌道對接",
+      "examples": [
+        {
+          "en": "Autonomous optical sensors guided the cargo capsule through millimeter-precise automated docking with the station.",
+          "zh": "搭載高精度光學雷達的無人補給太空船，以毫米級精準度完成與國際太空站的全自動軌道對接。"
+        },
+        {
+          "en": "Ferry passengers felt a slight jolt as the ship finished docking against the harbor wooden pilings.",
+          "zh": "當客輪緩緩完成靠泊碼頭並輕碰防撞木樁時，坐在甲板上的乘客感受到了一陣輕微的晃動。"
+        },
+        {
+          "en": "The laptop plugs seamlessly into the desktop docking station to connect multiple monitors and keyboards.",
+          "zh": "筆記型電腦只要插入多功能桌面擴充基座對接槽，即可瞬間外接多個高解析螢幕與滑鼠鍵盤。"
+        }
+      ],
+      "collocations": [
+        "automated spacecraft docking"
+      ]
+    },
+    {
+      "id": 5335,
+      "word": "module",
+      "pos": "n.",
+      "phonetic": "[ˋmɑdʒul]",
+      "definition": "太空站加壓核心實驗艙段；模組",
+      "cefr": "B1",
+      "topic": "太空站結構",
+      "examples": [
+        {
+          "en": "The pressurized laboratory module contains racks of scientific experiments exploring plant growth in orbit.",
+          "zh": "太空站內的實驗艙模組內部充滿舒適的一大氣壓空氣，排列著研究太空植物生長的水耕實驗架。"
+        },
+        {
+          "en": "The university course consists of five distinct learning modules covering database design and web development.",
+          "zh": "這門大學資工專業課程由五個相互獨立的教學單元模組組成，涵蓋資料庫設計與前後端開發。"
+        },
+        {
+          "en": "Engineers replaced the faulty battery module in the electric car within twenty minutes at the service station.",
+          "zh": "維修服務中心的專業技師在短短二十分鐘內，就為這台純電動車順利更換了故障的電池模組。"
+        }
+      ],
+      "collocations": [
+        "pressurized research module"
+      ]
+    },
+    {
+      "id": 5336,
+      "word": "cupola",
+      "pos": "n.",
+      "phonetic": "[ˋkjupələ]",
+      "definition": "太空站七面全景觀景穹頂窗",
+      "cefr": "B1",
+      "topic": "觀景舷窗",
+      "examples": [
+        {
+          "en": "Astronauts gather inside the seven-window cupola to marvel at majestic sunrises occurring every 90 minutes.",
+          "zh": "太空人在工作之餘齊聚在七面全景觀景穹頂舷窗前，讚嘆每九十分鐘即迎來一次的壯麗地球日出。"
+        },
+        {
+          "en": "The neoclassical government hall is crowned by an elegant white cupola visible across the city skyline.",
+          "zh": "這座古典新古典主義風格的市政大廳頂部，聳立著一座在整座都會天際線上清晰可見的優雅圓頂穹頂。"
+        },
+        {
+          "en": "Gazing through the observation cupola allows crew members to take breathtaking photos of typhoons and auroras.",
+          "zh": "透過太空站的觀景穹頂舷窗向外眺望，太空人得以拍攝到地球上超級颱風與極光交織的壯觀空拍照。"
+        }
+      ],
+      "collocations": [
+        "observatory panoramic cupola"
+      ]
+    },
+    {
+      "id": 5337,
+      "word": "overview",
+      "pos": "n. [U]",
+      "phonetic": "[ˋovɚˌvju]",
+      "definition": "「總觀效應」（俯瞰地球帶來的震撼與心靈昇華）",
+      "cefr": "B1",
+      "topic": "心理震撼",
+      "examples": [
+        {
+          "en": "Experiencing the overview effect transforms astronauts, instilling an urgent desire to protect our fragile blue home.",
+          "zh": "親身感受從外太空俯瞰地球的總觀效應，讓太空人心靈深受洗禮，立誓守護脆弱的地球。"
+        },
+        {
+          "en": "The CEO delivered a concise executive overview of the company's annual financial performance and future goals.",
+          "zh": "執行長在股東大會上發表了一份精簡扼要的高階概況綜述，報告公司全年的財務營運與未來戰略。"
+        },
+        {
+          "en": "Before diving into the details of the contract, let's take a quick overview of the key terms.",
+          "zh": "在深入逐條檢視這份商業合約的各項細節之前，讓我們先快速瀏覽掌握其核心關鍵條款。"
+        }
+      ],
+      "collocations": [
+        "psychological overview effect"
+      ]
+    },
+    {
+      "id": 5338,
+      "word": "curvature",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɝvətʃɚ]",
+      "definition": "眺望地球蔚藍弧線曲率；曲度",
+      "cefr": "B1",
+      "topic": "地球景觀",
+      "examples": [
+        {
+          "en": "From four hundred kilometers above, the breathtaking glowing blue curvature of planet Earth fills the view.",
+          "zh": "佇立在四百公里高的軌道上遠眺，地球大氣層在陽光下勾勒出一道璀璨湛藍的優美弧線曲率。"
+        },
+        {
+          "en": "The civil engineer adjusted the highway road curvature to allow vehicles to corner safely at higher speeds.",
+          "zh": "道路土木工程師重新計算並調整了高速公路彎道曲度，以讓車輛在高速行駛過彎時更加平穩安全。"
+        },
+        {
+          "en": "Special optical lenses are designed with slight curvature to minimize image distortion across wide angles.",
+          "zh": "特殊光學相機鏡頭表面被研磨出微小的精準曲率，以在拍攝超廣角視野時將邊緣變形降至最低。"
+        }
+      ],
+      "collocations": [
+        "curvature of the Earth"
+      ]
+    },
+    {
+      "id": 5339,
+      "word": "lunar",
+      "pos": "adj.",
+      "phonetic": "[ˋlunɚ]",
+      "definition": "月球探勘阿提米絲登月計畫的",
+      "cefr": "B1",
+      "topic": "月球探索",
+      "examples": [
+        {
+          "en": "The Artemis program aims to establish a permanent human outpost near the ice-rich lunar south pole.",
+          "zh": "跨國合作的阿提米絲登月計畫，志在蘊藏豐富水冰資源的月球南極建立人類首座永久科研基地。"
+        },
+        {
+          "en": "The Mid-Autumn Festival is celebrated across Asian cultures in accordance with the traditional lunar calendar.",
+          "zh": "中秋節是東亞各國依照傳統農曆陰曆月曆時令，全家團圓賞月品嚐月餅的重要傳統民俗節慶。"
+        },
+        {
+          "en": "High-powered optical telescopes can distinguish thousands of craters across the rocky lunar surface.",
+          "zh": "天文愛好者使用高倍率天文望遠鏡，能清晰分辨月球岩石表面上星羅棋布的數千座大小隕石坑。"
+        }
+      ],
+      "collocations": [
+        "lunar south pole exploration"
+      ]
+    },
+    {
+      "id": 5340,
+      "word": "rover",
+      "pos": "n.",
+      "phonetic": "[ˋrovɚ]",
+      "definition": "月球與火星表面自動探勘採樣無人車",
+      "cefr": "B1",
+      "topic": "探勘機器人",
+      "examples": [
+        {
+          "en": "The robotic rover drilled deep into ancient craters, collecting core soil samples to search for ancient microbial life.",
+          "zh": "六輪獨立驅動的智慧無人探勘車鑽入古老隕石坑深處，採集岩芯土壤樣本以尋找古微生物化石。"
+        },
+        {
+          "en": "Solar panels on the planetary rover must be cleaned periodically to prevent red dust from blocking sunlight.",
+          "zh": "行星表面探測無人車上的太陽能電池板必須定期拂去灰塵，以防止紅色沙塵遮蔽陽光影響充電。"
+        },
+        {
+          "en": "Autonomous navigation software enables the Mars rover to steer around sharp boulders without operator assistance.",
+          "zh": "搭載先進自主導航演算軟體，讓火星探測車無需等待地球遠端指令即可靈巧繞開尖銳巨石障礙。"
+        }
+      ],
+      "collocations": [
+        "autonomous planetary rover"
+      ]
+    },
+    {
+      "id": 5341,
+      "word": "regolith",
+      "pos": "n. [U]",
+      "phonetic": "[ˋrɛgəlɪθ]",
+      "definition": "月球表面粉塵月壤 (風化層)",
+      "cefr": "B1",
+      "topic": "地質資源",
+      "examples": [
+        {
+          "en": "Autonomous 3D printers sinter powdered lunar regolith to construct radiation-proof protective domes for astronauts.",
+          "zh": "月面全自動 3D 列印機器人將富含矽酸鹽的月球土壤風化層高溫燒結，建造出抗輻射庇護圓頂。"
+        },
+        {
+          "en": "Microscopic shards inside jagged lunar regolith pose significant abrasion hazards to spacesuit joints and seals.",
+          "zh": "月球表面風化層土壤中如刀刃般微小尖銳的岩石碎屑，對太空衣的各關節密封圈構成嚴重磨耗威脅。"
+        },
+        {
+          "en": "Scientists are testing chemical processes to extract oxygen gas directly from silicate-rich moon regolith.",
+          "zh": "科學家正在實驗室測試嶄新的化學提煉製程，希望能直接從富含矽酸鹽的月壤中分解提取純氧。"
+        }
+      ],
+      "collocations": [
+        "lunar surface regolith"
+      ]
+    },
+    {
+      "id": 5342,
+      "word": "ice",
+      "pos": "n. [U]",
+      "phonetic": "[aɪs]",
+      "definition": "月球永久陰影坑深處珍貴水冰資源",
+      "cefr": "B1",
+      "topic": "水資源",
+      "examples": [
+        {
+          "en": "Water ice trapped in permanently shadowed polar craters can be split into hydrogen and oxygen rocket propellant.",
+          "zh": "隱藏在月球極地永久陰影坑深處的水冰資源，可透過電解製造出火箭急需的液氫與液氧燃料。"
+        },
+        {
+          "en": "After twisting her ankle while playing basketball, she applied an ice pack to reduce the swelling.",
+          "zh": "在打籃球不慎扭傷腳踝後，她立即拿冰敷袋冰敷患部，以迅速消腫並減輕疼痛。"
+        },
+        {
+          "en": "Salt is routinely spread over frosty roads in cold northern regions to melt winter road ice quickly.",
+          "zh": "在寒冷的北方雪國地區，工務單位常在結霜結冰的柏油路面上撒鹽，以加速融化路面結冰。"
+        }
+      ],
+      "collocations": [
+        "shadowed crater water ice"
+      ]
+    },
+    {
+      "id": 5343,
+      "word": "gateway",
+      "pos": "n. prop.",
+      "phonetic": "[ˋget͵we]",
+      "definition": "月球軌道門戶太空站 (Gateway)；門戶",
+      "cefr": "B1",
+      "topic": "中繼基地",
+      "examples": [
+        {
+          "en": "The Lunar Gateway space station will serve as a staging post for astronaut descents to the lunar surface.",
+          "zh": "繞月運行的月球門戶太空站，將作為太空人登陸月球表面與未來遠征火星的關鍵中繼站。"
+        },
+        {
+          "en": "The historic mountain pass served as a crucial strategic gateway connecting northern and southern trading towns.",
+          "zh": "這條貫穿險峻山脈的歷史隘口，曾是串聯南北商旅與物資流通極為重要的戰略要道與交通門戶。"
+        },
+        {
+          "en": "This introductory undergraduate course provides a gateway to deeper research into artificial intelligence.",
+          "zh": "這門大學部入門通識課程，為有志於深入探索人工智慧前沿科技的大學生打開了一扇智慧門戶。"
+        }
+      ],
+      "collocations": [
+        "Lunar Gateway outpost"
+      ]
+    },
+    {
+      "id": 5344,
+      "word": "martian",
+      "pos": "adj., n.",
+      "phonetic": "[ˋmɑrʃən]",
+      "definition": "火星環境的；火星拓荒開拓者",
+      "cefr": "B1",
+      "topic": "火星探索",
+      "examples": [
+        {
+          "en": "Surviving in the thin, frigid Martian atmosphere requires advanced greenhouse domes and oxygen generators.",
+          "zh": "在稀薄寒冷、充斥二氧化碳的火星嚴苛環境中生存，必須依賴全密閉溫室穹頂與氧氣製造機。"
+        },
+        {
+          "en": "Space scientists analyze Martian rock compositions to determine whether liquid water flowed across the red planet.",
+          "zh": "太空科學家詳盡分析火星表面岩石成分與地質結構，以推斷這顆紅色星球遠古是否曾有液態水奔流。"
+        },
+        {
+          "en": "The sci-fi blockbuster depicted the harrowing struggle of an astronaut stranded alone on the Martian surface.",
+          "zh": "這部暢銷科幻大片生動描繪了一名孤立無援的太空人，獨自被遺留在荒涼火星地表時的求生掙扎。"
+        }
+      ],
+      "collocations": [
+        "martian atmospheric pressure"
+      ]
+    },
+    {
+      "id": 5345,
+      "word": "terraform",
+      "pos": "v.",
+      "phonetic": "[ˋtɛrə͵fɔrm]",
+      "definition": "行星改造工程（將異星改造成宜居地球）",
+      "cefr": "B1",
+      "topic": "未來科技",
+      "examples": [
+        {
+          "en": "Science visionaries dream of using atmospheric processors to terraform Mars into a green living biosphere.",
+          "zh": "太空遠見家夢想在火星釋放溫室氣體並增厚大氣層，將荒涼的紅色星球一步步地球化改造為宜居綠洲。"
+        },
+        {
+          "en": "In many futuristic video games, players gather resources to terraform barren alien moons into thriving colonies.",
+          "zh": "在許多未來太空科幻模擬遊戲中，玩家蒐集宇宙資源將荒蕪的異星衛星逐步改造成繁榮的外星殖民地。"
+        },
+        {
+          "en": "Ethical philosophers debate whether humanity has the moral right to terraform other celestial bodies.",
+          "zh": "倫理學家與科學哲學家熱烈辯論：人類究竟是否有道德權利擅自將其他太陽系天體進行大規模地球化改造。"
+        }
+      ],
+      "collocations": [
+        "terraform a barren planet"
+      ]
+    },
+    {
+      "id": 5346,
+      "word": "cosmos",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɑzməs]",
+      "definition": "浩瀚神秘深邃的無垠宇宙",
+      "cefr": "B1",
+      "topic": "宇宙觀",
+      "examples": [
+        {
+          "en": "Space telescopes peer billions of light-years into the deep cosmos, capturing the birth of the earliest galaxies.",
+          "zh": "太空望遠鏡凝望百億光年外的深邃宇宙，捕捉宇宙大爆炸初期第一代星系誕生時的古老星光。"
+        },
+        {
+          "en": "Contemplating the unfathomable vastness of the cosmos often evokes deep humility about our tiny place in it.",
+          "zh": "靜心沉思浩瀚無垠且深不見底的神秘宇宙，常讓人對人類在滄海一粟中的渺小地位由衷心生謙卑。"
+        },
+        {
+          "en": "Renowned astrophysicist Carl Sagan inspired millions to explore the poetry and scientific wonder of the cosmos.",
+          "zh": "享譽全球的天體物理學大師卡爾·薩根，啟發了無數年輕心靈去探索壯闊宇宙中的科學奇蹟與詩意。"
+        }
+      ],
+      "collocations": [
+        "boundless mysterious cosmos"
+      ]
+    },
+    {
+      "id": 5347,
+      "word": "explorer",
+      "pos": "n.",
+      "phonetic": "[ɪkˋsplorɚ]",
+      "definition": "勇往直前無懼未知的太空探險家",
+      "cefr": "B1",
+      "topic": "開拓精神",
+      "examples": [
+        {
+          "en": "Intrepid space explorers risk everything to push human presence beyond the cradle of our home planet.",
+          "zh": "無所畏懼的太空探險家甘冒奇險，勇敢將人類文明的足跡延伸至孕育我們的地球搖籃之外。"
+        },
+        {
+          "en": "The sixteenth-century Portuguese explorer mapped trade routes around Africa toward the spice ports of Asia.",
+          "zh": "十六世紀無懼滔天巨浪的葡萄牙探險家，繞過非洲好望角開闢通往亞洲香料大港的新航線。"
+        },
+        {
+          "en": "Early Antarctic explorers had to endure months of subzero blizzards and total darkness in wooden huts.",
+          "zh": "早期遠征南極點的極地探險家們，必須在簡陋的木造避難小屋中熬過長達數月零下低溫的暴風雪與極夜。"
+        }
+      ],
+      "collocations": [
+        "intrepid deep-space explorer"
+      ]
+    },
+    {
+      "id": 5348,
+      "word": "destiny",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdɛstənɪ]",
+      "definition": "探索星辰大海之全人類共同命運",
+      "cefr": "B1",
+      "topic": "崇高使命",
+      "examples": [
+        {
+          "en": "Becoming a multi-planetary species ensures that human consciousness and destiny endure forever among the stars.",
+          "zh": "跨出地球成為跨行星文明物種，能確保人類的意識火種與共同命運在繁星浩瀚宇宙中永恆延續。"
+        },
+        {
+          "en": "She firmly believed that dedication and continuous hard work, not blind luck, would shape her destiny.",
+          "zh": "她堅定不移地相信：唯有一步一腳印的踏實努力與恆心毅力，才能真正掌握並開創自己的命運。"
+        },
+        {
+          "en": "Historical decisions made by world leaders often alter the destiny of entire nations for centuries.",
+          "zh": "歷史關鍵轉折點上各國領袖所做出的抉擇，往往會在長達數個世紀的時間裡徹底改寫整個國家的命運。"
+        }
+      ],
+      "collocations": [
+        "cosmic human destiny"
+      ]
+    },
+    {
+      "id": 5349,
+      "word": "wonder",
+      "pos": "n. [U]",
+      "phonetic": "[ˋwʌndɚ]",
+      "definition": "仰望浩瀚夜空星辰之無比讚嘆驚奇",
+      "cefr": "B1",
+      "topic": "心靈體驗",
+      "examples": [
+        {
+          "en": "Gazing through giant observatories fills human hearts with overwhelming awe, humility, and poetic wonder.",
+          "zh": "透過巨型天文台望遠鏡仰望無垠銀河，讓每個人心中油然而生無比的敬畏、謙遜與由衷的讚嘆驚奇。"
+        },
+        {
+          "en": "The ancient pyramids of Giza have stood as an architectural wonder of the world for millennia.",
+          "zh": "巍然屹立於埃及沙漠邊緣的吉薩大金字塔，歷經數千年歲月洗禮依然是世界公認的建築奇蹟。"
+        },
+        {
+          "en": "Children look at falling snow with wide-eyed wonder, rushing outside to build their first snowmen.",
+          "zh": "小朋友們睜大好奇純真的雙眼驚喜地望著漫天飛舞的初雪，迫不及待地衝到院子裡堆起可愛的雪人。"
+        }
+      ],
+      "collocations": [
+        "boundless cosmic wonder"
+      ]
+    },
+    {
+      "id": 5350,
+      "word": "frontier",
+      "pos": "n.",
+      "phonetic": "[frʌnˋtɪr]",
+      "definition": "人類好奇心探索之終極最後疆界",
+      "cefr": "B1",
+      "topic": "終極疆界",
+      "examples": [
+        {
+          "en": "Outer space is the final frontier calling on bold dreamers to unite under one sky in peaceful discovery.",
+          "zh": "浩瀚無垠的太空是等待我們勇敢探索的最後疆界，召喚全人類在同一片星空下攜手開創未來。"
+        },
+        {
+          "en": "Deep oceanic trenches represent an unexplored biological frontier harboring unknown hydrothermal species.",
+          "zh": "深不見底的深海大溝是地球上尚未被充分探索的生物學前沿疆界，孕育著許多未知的熱泉深海生物。"
+        },
+        {
+          "en": "Artificial intelligence and quantum computing are pushing the outer frontier of human technological capability.",
+          "zh": "人工智慧與量子運算的突飛猛進，正將人類科技能力推向一個前所未有的前沿邊界。"
+        }
+      ],
+      "collocations": [
+        "final frontier of space"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1346 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 1,501–1,550 個單字（CEFR A2 初級）",
+  "batch": "1501-1550",
+  "range": "1501–1550",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 1501,
+      "word": "elementary school",
+      "pos": "n. phr.",
+      "phonetic": "[͵ɛləˋmɛntrɪ skul]",
+      "definition": "國民小學；國小",
+      "cefr": "A2",
+      "topic": "教育體制",
+      "examples": [
+        {
+          "en": "Compulsory education in Taiwan begins in elementary school.",
+          "zh": "台灣的義務教育始於國民小學。"
+        },
+        {
+          "en": "She has been my closest friend since our elementary school days.",
+          "zh": "她從小學時期開始就一直是我最要好的朋友。"
+        },
+        {
+          "en": "The local elementary school is hosting a charity spring fair on the playground.",
+          "zh": "當地的小學正在操場上舉辦一場春季慈善義賣園遊會。"
+        }
+      ],
+      "collocations": [
+        "primary school (英式)"
+      ]
+    },
+    {
+      "id": 1502,
+      "word": "junior high school",
+      "pos": "n. phr.",
+      "phonetic": "[ˋdʒunjɚ haɪ skul]",
+      "definition": "國民中學；國中",
+      "cefr": "A2",
+      "topic": "教育體制",
+      "examples": [
+        {
+          "en": "Students study diverse subjects during junior high school years.",
+          "zh": "學生在國中階段研習多樣化的學科領域。"
+        },
+        {
+          "en": "He joined the track team during his first semester of junior high school.",
+          "zh": "他在國中一年級第一學期加入了田徑隊。"
+        },
+        {
+          "en": "Junior high school teachers help teenagers navigate key developmental years.",
+          "zh": "國中老師引導青少年順利度過關鍵的成長發育期。"
+        }
+      ],
+      "collocations": [
+        "middle school"
+      ]
+    },
+    {
+      "id": 1503,
+      "word": "senior high school",
+      "pos": "n. phr.",
+      "phonetic": "[ˋsinjɚ haɪ skul]",
+      "definition": "高級中學；高中",
+      "cefr": "A2",
+      "topic": "教育體制",
+      "examples": [
+        {
+          "en": "Senior high school students prepare diligently for college entrance exams.",
+          "zh": "高中生為大學學科能力測驗勤奮備戰。"
+        },
+        {
+          "en": "Taipei First Girls' High School is a renowned senior high school in Taiwan.",
+          "zh": "台北市立第一女子高級中學是台灣極負盛名的高級中學。"
+        },
+        {
+          "en": "Participating in extracurricular clubs is an unforgettable part of senior high school life.",
+          "zh": "參加課外社團活動是高中生活中難以忘懷的重要一頁。"
+        }
+      ],
+      "collocations": [
+        "high school student"
+      ]
+    },
+    {
+      "id": 1504,
+      "word": "vocational school",
+      "pos": "n. phr.",
+      "phonetic": "[voˋkeʃən! skul]",
+      "definition": "高級職業學校；高職",
+      "cefr": "A2",
+      "topic": "教育體制",
+      "examples": [
+        {
+          "en": "Vocational schools provide specialized technical and practical training.",
+          "zh": "技職高職提供專業技術與實務技能培訓。"
+        },
+        {
+          "en": "Graduates from vocational schools often possess hands-on skills favored by industry employers.",
+          "zh": "技職學校的畢業生通常擁有深獲業界雇主青睞的實作技能。"
+        },
+        {
+          "en": "He enrolled in a vocational school to master automotive repair and mechanics.",
+          "zh": "他進入一所技職學校就讀以專精汽車修護與機械原理。"
+        }
+      ],
+      "collocations": [
+        "vocational training"
+      ]
+    },
+    {
+      "id": 1505,
+      "word": "university",
+      "pos": "n.",
+      "phonetic": "[͵junəˋvɝsətɪ]",
+      "definition": "大學；綜合大學",
+      "cefr": "A2",
+      "topic": "高等教育",
+      "examples": [
+        {
+          "en": "National Taiwan University is located in the Daan District of Taipei.",
+          "zh": "台灣大學位於台北市大安區。"
+        },
+        {
+          "en": "Going to university offers students opportunities to explore diverse career pathways.",
+          "zh": "進入大學就讀為學生提供了探索多元職業發展路徑的機會。"
+        },
+        {
+          "en": "The university library stays open twenty-four hours during final exam week.",
+          "zh": "大學圖書館在期末考週期間全天二十四小時對外開放。"
+        }
+      ],
+      "collocations": [
+        "college",
+        "enter university"
+      ]
+    },
+    {
+      "id": 1506,
+      "word": "graduate school",
+      "pos": "n. phr.",
+      "phonetic": "[ˋgrædʒuɪt skul]",
+      "definition": "研究所",
+      "cefr": "A2",
+      "topic": "高等教育",
+      "examples": [
+        {
+          "en": "She decided to apply for graduate school to pursue AI research.",
+          "zh": "她決定申請研究所深造以進行人工智慧研究。"
+        },
+        {
+          "en": "Graduate school requires self-motivated independent research and critical thinking.",
+          "zh": "研究所需要高度自律的主動獨立研究與批判性思維能力。"
+        },
+        {
+          "en": "Funding through research assistantships helps graduate school students pay expenses.",
+          "zh": "研究助理獎助學金的資助有助於研究生支付生活開銷。"
+        }
+      ],
+      "collocations": [
+        "attend graduate school"
+      ]
+    },
+    {
+      "id": 1507,
+      "word": "bachelor's degree",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbætʃəlɚz dɪˋgri]",
+      "definition": "學士學位",
+      "cefr": "A2",
+      "topic": "學位與資格",
+      "examples": [
+        {
+          "en": "It typically takes four years to complete a bachelor's degree.",
+          "zh": "修畢學士學位通常需要花費四年時間。"
+        },
+        {
+          "en": "Having a bachelor's degree opens doors to numerous entry-level professional jobs.",
+          "zh": "擁有學士學位能為眾多基層專業職缺敞開就業大門。"
+        },
+        {
+          "en": "She earned a bachelor's degree in computer science with highest honors.",
+          "zh": "她以最優異的頂尖成績獲得了資訊工程學士學位。"
+        }
+      ],
+      "collocations": [
+        "earn a bachelor's degree"
+      ]
+    },
+    {
+      "id": 1508,
+      "word": "master's degree",
+      "pos": "n. phr.",
+      "phonetic": "[ˋmæstɚz dɪˋgri]",
+      "definition": "碩士學位",
+      "cefr": "A2",
+      "topic": "學位與資格",
+      "examples": [
+        {
+          "en": "He holds a master's degree in electrical engineering.",
+          "zh": "他擁有電機工程碩士學位。"
+        },
+        {
+          "en": "Pursuing a master's degree allows professionals to specialize in their chosen field.",
+          "zh": "攻讀碩士學位能讓專業人士在所選領域進行深造專精。"
+        },
+        {
+          "en": "She defended her master's degree thesis before a panel of distinguished scholars.",
+          "zh": "她在傑出學者評審委員會面前順利完成了碩士學位論文答辯。"
+        }
+      ],
+      "collocations": [
+        "master's thesis"
+      ]
+    },
+    {
+      "id": 1509,
+      "word": "PhD",
+      "pos": "n.",
+      "phonetic": "[ˋpiˋetʃˋdi]",
+      "definition": "博士學位",
+      "cefr": "A2",
+      "topic": "學位與資格",
+      "examples": [
+        {
+          "en": "Professor Lin received her PhD from Oxford University.",
+          "zh": "林教授在牛津大學取得了博士學位。"
+        },
+        {
+          "en": "Completing a PhD demands years of rigorous academic publication and original inquiry.",
+          "zh": "完成博士學位需要多年嚴謹的學術論文發表與原創研究探索。"
+        },
+        {
+          "en": "He is currently a PhD candidate conducting cutting-edge biotechnology research.",
+          "zh": "他目前是一名正在進行頂尖生物科技研究的博士候選人。"
+        }
+      ],
+      "collocations": [
+        "doctorate",
+        "PhD student"
+      ]
+    },
+    {
+      "id": 1510,
+      "word": "campus",
+      "pos": "n.",
+      "phonetic": "[ˋkæmpəs]",
+      "definition": "校園；校區",
+      "cefr": "A2",
+      "topic": "學校場所",
+      "examples": [
+        {
+          "en": "The lush green campus is shaded by tall historic banyan trees.",
+          "zh": "綠意盎然的校園內綠樹成蔭，遍植歷史悠久的古榕。"
+        },
+        {
+          "en": "Electric rental bikes are convenient for traveling across the large university campus.",
+          "zh": "租賃電動腳踏車在遼闊的大學校園內穿梭代步非常便利。"
+        },
+        {
+          "en": "Safety emergency phones are positioned strategically throughout the college campus.",
+          "zh": "緊急求救電話在大學校園各處皆設有妥善規劃的求助據點。"
+        }
+      ],
+      "collocations": [
+        "on campus",
+        "campus life"
+      ]
+    },
+    {
+      "id": 1511,
+      "word": "dormitory",
+      "pos": "n.",
+      "phonetic": "[ˋdɔrməˌtorɪ]",
+      "definition": "學生宿舍",
+      "cefr": "A2",
+      "topic": "學校生活",
+      "examples": [
+        {
+          "en": "Living in the university dormitory is a great way to make lifelong friends.",
+          "zh": "住在大學宿舍是結交終生好友的極佳途徑。"
+        },
+        {
+          "en": "Each dormitory room accommodates four students with study desks and bunk beds.",
+          "zh": "每一間學生宿舍寢室配有書桌與上下鋪，供四位學生同住。"
+        },
+        {
+          "en": "The resident advisor oversees building safety rules within the dormitory.",
+          "zh": "舍監督導負責維護宿舍大樓內部的各項安全公約守則。"
+        }
+      ],
+      "collocations": [
+        "dorm",
+        "student dormitory"
+      ]
+    },
+    {
+      "id": 1512,
+      "word": "cafeteria",
+      "pos": "n.",
+      "phonetic": "[͵kæfəˋtɪrɪə]",
+      "definition": "學生餐廳；自助食堂",
+      "cefr": "A2",
+      "topic": "學校場所",
+      "examples": [
+        {
+          "en": "The campus cafeteria serves affordable and nutritious set lunches.",
+          "zh": "校園學生餐廳供應平價且營養均衡的套餐午餐。"
+        },
+        {
+          "en": "We met up at the central cafeteria to grab a quick coffee between classes.",
+          "zh": "我們下課空檔在中央學生餐廳碰面喝杯咖啡。"
+        },
+        {
+          "en": "Vegetarian and halal dietary options are clearly labeled in the cafeteria.",
+          "zh": "學生餐廳內對素食與清真飲食選項皆有清楚標註。"
+        }
+      ],
+      "collocations": [
+        "canteen",
+        "school cafeteria"
+      ]
+    },
+    {
+      "id": 1513,
+      "word": "auditorium",
+      "pos": "n.",
+      "phonetic": "[͵ɔdəˋtorɪəm]",
+      "definition": "禮堂；大禮堂",
+      "cefr": "A2",
+      "topic": "學校場所",
+      "examples": [
+        {
+          "en": "The graduation ceremony was held in the school auditorium.",
+          "zh": "畢業典禮在學校大禮堂隆重舉行。"
+        },
+        {
+          "en": "The guest speaker stood at the podium in the center of the vast auditorium.",
+          "zh": "客座演講貴賓佇立在宏偉大禮堂中央的演講台前。"
+        },
+        {
+          "en": "Hundreds of freshmen gathered in the auditorium for orientation day briefings.",
+          "zh": "數百名大一新生齊聚在禮堂聽取新生開學宣導說明。"
+        }
+      ],
+      "collocations": [
+        "school auditorium",
+        "assembly hall"
+      ]
+    },
+    {
+      "id": 1514,
+      "word": "laboratory",
+      "pos": "n.",
+      "phonetic": "[ˋlæbrəˌtorɪ]",
+      "definition": "實驗室",
+      "cefr": "A2",
+      "topic": "學校場所",
+      "examples": [
+        {
+          "en": "Put on safety goggles before conducting chemistry experiments in the lab.",
+          "zh": "在實驗室進行化學實驗前請戴上護目鏡。"
+        },
+        {
+          "en": "The advanced research laboratory is equipped with state-of-the-art instruments.",
+          "zh": "這座尖端研究實驗室配備了最先進的一流儀器設備。"
+        },
+        {
+          "en": "Unauthorized personnel are strictly forbidden from entering the biohazard laboratory.",
+          "zh": "未經授權的人員嚴禁擅自進入生物危害管制實驗室。"
+        }
+      ],
+      "collocations": [
+        "lab",
+        "science laboratory"
+      ]
+    },
+    {
+      "id": 1515,
+      "word": "gymnasium",
+      "pos": "n.",
+      "phonetic": "[dʒɪmˋnezɪəm]",
+      "definition": "體育館",
+      "cefr": "A2",
+      "topic": "學校場所",
+      "examples": [
+        {
+          "en": "School basketball finals will be played inside the main gymnasium.",
+          "zh": "全校籃球決賽將在主體育館內進行。"
+        },
+        {
+          "en": "The multi-purpose gymnasium accommodates both volleyball and badminton matches.",
+          "zh": "這座多功能體育館可容納排球與羽毛球比賽進行。"
+        },
+        {
+          "en": "Rain forced the annual athletic sports meet into the indoor gymnasium.",
+          "zh": "降雨迫使年度體育運動大會移師至室內體育館舉行。"
+        }
+      ],
+      "collocations": [
+        "gym",
+        "school gymnasium"
+      ]
+    },
+    {
+      "id": 1516,
+      "word": "lecture",
+      "pos": "n., v.",
+      "phonetic": "[ˋlɛktʃɚ]",
+      "definition": "大堂課；授課；演講",
+      "cefr": "A2",
+      "topic": "大學教學",
+      "examples": [
+        {
+          "en": "Professor Wang delivered an insightful lecture on environmental science.",
+          "zh": "王教授發表了一場關於環境科學的精闢專題演講。"
+        },
+        {
+          "en": "Don't be late for the 9 AM economics lecture in the main hall.",
+          "zh": "早上九點在大講堂進行的經濟學大堂課切勿遲到。"
+        },
+        {
+          "en": "My parents gave me a stern lecture about managing my personal finances wisely.",
+          "zh": "父母親嚴肅地對我訓誡了一頓，告誡我務必明智管理個人財務。"
+        }
+      ],
+      "collocations": [
+        "attend a lecture",
+        "lecture hall"
+      ]
+    },
+    {
+      "id": 1517,
+      "word": "professor",
+      "pos": "n.",
+      "phonetic": "[prəˋfɛsɚ]",
+      "definition": "大學教授",
+      "cefr": "A2",
+      "topic": "職業與教育",
+      "examples": [
+        {
+          "en": "The professor encouraged students to ask challenging questions.",
+          "zh": "教授鼓勵學生勇於提出具挑戰性的問題。"
+        },
+        {
+          "en": "You can visit the professor during her scheduled weekly office hours.",
+          "zh": "您可以在教授每週排定的諮詢時間前往研究室拜訪討論。"
+        },
+        {
+          "en": "The associate professor published an influential paper in an international journal.",
+          "zh": "這位副教授在國際頂尖期刊上發表了一篇極具影響力的論文。"
+        }
+      ],
+      "collocations": [
+        "assistant professor",
+        "full professor"
+      ]
+    },
+    {
+      "id": 1518,
+      "word": "principal",
+      "pos": "n.",
+      "phonetic": "[ˋprɪnsəp!]",
+      "definition": "中小學校長",
+      "cefr": "A2",
+      "topic": "職業與教育",
+      "examples": [
+        {
+          "en": "The principal gave an inspiring welcome speech on the opening day.",
+          "zh": "校長在開學典禮當天發表了激勵人心的致詞。"
+        },
+        {
+          "en": "The school principal met with concerned parents to discuss campus renovations.",
+          "zh": "學校校長與關心校務的家長會面，共同研商校園整修工程。"
+        },
+        {
+          "en": "Lack of adequate investment was the principal cause of project failure.",
+          "zh": "缺乏充足的資金挹注是專案最終遭遇失敗的首要主要原因。"
+        }
+      ],
+      "collocations": [
+        "school principal",
+        "headmaster (英式)"
+      ]
+    },
+    {
+      "id": 1519,
+      "word": "dean",
+      "pos": "n.",
+      "phonetic": "[din]",
+      "definition": "（大學）院長；系主任；教務長",
+      "cefr": "A2",
+      "topic": "學校行政",
+      "examples": [
+        {
+          "en": "The dean of academic affairs announced next year's new curriculum.",
+          "zh": "教務長公布了明年度的全新課程規劃。"
+        },
+        {
+          "en": "Students with exceptional grade point averages are honored on the Dean's List.",
+          "zh": "學業平均成績出類拔萃的學生榮獲列入學院優秀名譽榜單。"
+        },
+        {
+          "en": "The college dean approved funding for the new scientific research laboratory.",
+          "zh": "學院院長核准了興建新科學研究實驗室的專案補助經費。"
+        }
+      ],
+      "collocations": [
+        "dean's list",
+        "college dean"
+      ]
+    },
+    {
+      "id": 1520,
+      "word": "syllabus",
+      "pos": "n.",
+      "phonetic": "[ˋsɪləbəs]",
+      "definition": "課程大綱",
+      "cefr": "A2",
+      "topic": "學校與學習",
+      "examples": [
+        {
+          "en": "Download the English course syllabus from the university portal.",
+          "zh": "從大學入口網站下載英語課程大綱。"
+        },
+        {
+          "en": "The syllabus clearly outlines assignment due dates and grading criteria.",
+          "zh": "課程大綱詳細清楚列出了作業繳交截止日期與評分評核標準。"
+        },
+        {
+          "en": "Check the syllabus carefully before emailing the professor about exam schedules.",
+          "zh": "在寄信向教授詢問考試日程前，請先仔細查閱課程大綱。"
+        }
+      ],
+      "collocations": [
+        "course syllabus",
+        "exam syllabus"
+      ]
+    },
+    {
+      "id": 1521,
+      "word": "semester",
+      "pos": "n.",
+      "phonetic": "[səˋmɛstɚ]",
+      "definition": "學期（通常半年）",
+      "cefr": "A2",
+      "topic": "學校時間",
+      "examples": [
+        {
+          "en": "The fall semester in Taiwan usually begins in early September.",
+          "zh": "台灣的大學秋季學期通常在九月初開學。"
+        },
+        {
+          "en": "She decided to study abroad in Germany for one exchange semester.",
+          "zh": "她決定前往德國進行為期一個學期的海外交換研習。"
+        },
+        {
+          "en": "Students often feel intense stress during the final weeks of the semester.",
+          "zh": "學生在學期最後幾週通常會感受到沉重巨大的學業壓力。"
+        }
+      ],
+      "collocations": [
+        "term",
+        "spring semester"
+      ]
+    },
+    {
+      "id": 1522,
+      "word": "credit",
+      "pos": "n.",
+      "phonetic": "[ˋkrɛdɪt]",
+      "definition": "學分；信用；讚譽",
+      "cefr": "A2",
+      "topic": "學業與評量",
+      "examples": [
+        {
+          "en": "You need at least 128 course credits to qualify for graduation.",
+          "zh": "你需要修滿至少 128 個課程學分方具備畢業資格。"
+        },
+        {
+          "en": "Give credit where credit is due when working in cooperative teams.",
+          "zh": "在團隊合作時，凡是有所貢獻者都應給予其應得的肯定與讚譽。"
+        },
+        {
+          "en": "Do you accept international credit cards for course registration fees?",
+          "zh": "請問繳納課程註冊學費時接受國際信用卡刷卡嗎？"
+        }
+      ],
+      "collocations": [
+        "course credit",
+        "earn credits"
+      ]
+    },
+    {
+      "id": 1523,
+      "word": "major",
+      "pos": "n., v., adj.",
+      "phonetic": "[ˋmedʒɚ]",
+      "definition": "主修；主修科目；主要的",
+      "cefr": "A2",
+      "topic": "大學學業",
+      "examples": [
+        {
+          "en": "She decided to major in international business administration.",
+          "zh": "她決定主修國際企業管理。"
+        },
+        {
+          "en": "Climate change is one of the major global challenges of our era.",
+          "zh": "氣候變遷是我們這個時代所面臨的最主要全球挑戰之一。"
+        },
+        {
+          "en": "He decided to switch his college major from biology to software engineering.",
+          "zh": "他決定將大學主修學系從生物學轉為主修軟體工程。"
+        }
+      ],
+      "collocations": [
+        "major in",
+        "double major"
+      ]
+    },
+    {
+      "id": 1524,
+      "word": "minor",
+      "pos": "n., v., adj.",
+      "phonetic": "[ˋmaɪnɚ]",
+      "definition": "輔修；次要的；未成年人",
+      "cefr": "A2",
+      "topic": "大學學業",
+      "examples": [
+        {
+          "en": "He chose Japanese as his academic minor subject.",
+          "zh": "他選擇日語作為他的輔修學科。"
+        },
+        {
+          "en": "The car sustained only minor surface scratches in the parking lot mishap.",
+          "zh": "這輛汽車在停車場小擦撞中僅受到表面輕微刮痕。"
+        },
+        {
+          "en": "In many countries, individuals under age eighteen are legally considered minors.",
+          "zh": "在許多國家，未滿十八歲的個人在法律上均被視為未成年人。"
+        }
+      ],
+      "collocations": [
+        "minor in",
+        "minor detail"
+      ]
+    },
+    {
+      "id": 1525,
+      "word": "compulsory",
+      "pos": "adj.",
+      "phonetic": "[kəmˋpʌlsərɪ]",
+      "definition": "必修的；強制的",
+      "cefr": "A2",
+      "topic": "課程與規定",
+      "examples": [
+        {
+          "en": "Freshman English is a compulsory course for all university freshmen.",
+          "zh": "大一英文是所有大學新鮮人的必修課程。"
+        },
+        {
+          "en": "Nine years of compulsory education is guaranteed by national law.",
+          "zh": "國家法律保障國民享有九年義務強制的基礎教育。"
+        },
+        {
+          "en": "Wearing safety helmets on motorcycles is compulsory in Taiwan.",
+          "zh": "在台灣騎乘機車強制規定必須佩戴安全帽。"
+        }
+      ],
+      "collocations": [
+        "required course",
+        "compulsory education"
+      ]
+    },
+    {
+      "id": 1526,
+      "word": "elective",
+      "pos": "adj., n.",
+      "phonetic": "[ɪˋlɛktɪv]",
+      "definition": "選修的；選修課",
+      "cefr": "A2",
+      "topic": "課程與學習",
+      "examples": [
+        {
+          "en": "Students can choose between music and art as an elective subject.",
+          "zh": "學生可在音樂與美術之間選擇一門作為選修科目。"
+        },
+        {
+          "en": "Taking diverse elective courses broadens your academic and career perspectives.",
+          "zh": "修習多樣化的選修課程能開拓你的學術涵養與職涯視野。"
+        },
+        {
+          "en": "She enrolled in a digital photography elective class to learn image editing.",
+          "zh": "她選修了一門數位攝影選修課以學習影像後製修圖技能。"
+        }
+      ],
+      "collocations": [
+        "elective course",
+        "optional"
+      ]
+    },
+    {
+      "id": 1527,
+      "word": "attendance",
+      "pos": "n. [U]",
+      "phonetic": "[əˋtɛndəns]",
+      "definition": "出席；出席率",
+      "cefr": "A2",
+      "topic": "學校常規",
+      "examples": [
+        {
+          "en": "Regular class attendance is factored into your final semester grade.",
+          "zh": "平常課堂出席率會計入您的學期總成績。"
+        },
+        {
+          "en": "Overall attendance at the annual technology exhibition set a new record.",
+          "zh": "年度科技博覽會的整體參觀出席人數創下了嶄新歷史紀錄。"
+        },
+        {
+          "en": "The teacher calls roll every morning to take daily student attendance.",
+          "zh": "老師每天早晨點名以確實記錄學生的每日出勤狀況。"
+        }
+      ],
+      "collocations": [
+        "attendance rate",
+        "take attendance"
+      ]
+    },
+    {
+      "id": 1528,
+      "word": "absent",
+      "pos": "adj.",
+      "phonetic": "[ˋæbsnt]",
+      "definition": "缺席的；不在的",
+      "cefr": "A2",
+      "topic": "學校常規",
+      "examples": [
+        {
+          "en": "Why were you absent from English class yesterday morning?",
+          "zh": "你昨天早上英文課為什麼缺席沒來？"
+        },
+        {
+          "en": "He had an absent look on his face while lost in deep thought.",
+          "zh": "他陷入沉思時臉上帶著若有所思、心不在焉的神情。"
+        },
+        {
+          "en": "Students who are absent more than three times cannot take the final exam.",
+          "zh": "曠課缺席超過三次以上的學生將不得參加期末考試。"
+        }
+      ],
+      "collocations": [
+        "absent from",
+        "leave of absence"
+      ]
+    },
+    {
+      "id": 1529,
+      "word": "skip class",
+      "pos": "phr.",
+      "phonetic": "[skɪp klæs]",
+      "definition": "翹課；曠課",
+      "cefr": "A2",
+      "topic": "學校生活",
+      "examples": [
+        {
+          "en": "Do not skip class, or you will fail the midterm exam.",
+          "zh": "不要翹課，否則期中考會考不及格。"
+        },
+        {
+          "en": "He skipped class to play video games with friends and got reprimanded.",
+          "zh": "他為了跟朋友打電玩而翹課，結果遭到了嚴厲訓誡。"
+        },
+        {
+          "en": "Skipping classes repeatedly will lower your semester participation points.",
+          "zh": "屢次曠課翹課將會大幅拉低你的學期課堂參與分數。"
+        }
+      ],
+      "collocations": [
+        "cut class",
+        "play truant"
+      ]
+    },
+    {
+      "id": 1530,
+      "word": "take notes",
+      "pos": "phr.",
+      "phonetic": "[tek nots]",
+      "definition": "做筆記",
+      "cefr": "A2",
+      "topic": "學習方法",
+      "examples": [
+        {
+          "en": "Take detailed notes during lectures to help with exam revision.",
+          "zh": "上課時隨手做詳細筆記有助於考前溫習複習。"
+        },
+        {
+          "en": "It is effective to take notes using colored pens and mind maps.",
+          "zh": "使用彩色原子筆和心智圖來做筆記是非常高效的學習法。"
+        },
+        {
+          "en": "The secretary took careful notes throughout the confidential executive meeting.",
+          "zh": "秘書在整場高層機密會議中仔細做下了會議記錄筆記。"
+        }
+      ],
+      "collocations": [
+        "take down notes"
+      ]
+    },
+    {
+      "id": 1531,
+      "word": "midterm exam",
+      "pos": "n. phr.",
+      "phonetic": "[ˋmɪdˌtɝm ɪgˋzæm]",
+      "definition": "期中考",
+      "cefr": "A2",
+      "topic": "考試與評量",
+      "examples": [
+        {
+          "en": "The midterm exam will cover chapters one through six.",
+          "zh": "期中考試範圍將涵蓋第一章至第六章。"
+        },
+        {
+          "en": "Library study rooms are fully booked during the midterm exam period.",
+          "zh": "圖書館自習室在期中考期間全部被預約客滿。"
+        },
+        {
+          "en": "She scored ninety-five on her organic chemistry midterm exam.",
+          "zh": "她在有機化學期中考中考取了九十五分的高分。"
+        }
+      ],
+      "collocations": [
+        "midterm test"
+      ]
+    },
+    {
+      "id": 1532,
+      "word": "final exam",
+      "pos": "n. phr.",
+      "phonetic": "[ˋfaɪn! ɪgˋzæm]",
+      "definition": "期末考",
+      "cefr": "A2",
+      "topic": "考試與評量",
+      "examples": [
+        {
+          "en": "Good luck to everyone on your upcoming final exams next week!",
+          "zh": "祝大家下週即將到來的期末考一切順利！"
+        },
+        {
+          "en": "The comprehensive final exam accounts for forty percent of the course grade.",
+          "zh": "綜合期末考占全門課程總評分權重的百分之四十。"
+        },
+        {
+          "en": "Students cheered in relief after walking out of their last final exam.",
+          "zh": "走出最後一場期末考考場後，學生們如釋重負地放聲歡呼。"
+        }
+      ],
+      "collocations": [
+        "finals",
+        "final examination"
+      ]
+    },
+    {
+      "id": 1533,
+      "word": "quiz",
+      "pos": "n., v.",
+      "phonetic": "[kwɪz]",
+      "definition": "小考；隨堂測驗；抽問",
+      "cefr": "A2",
+      "topic": "考試與評量",
+      "examples": [
+        {
+          "en": "The teacher gave us a ten-word vocabulary pop quiz today.",
+          "zh": "老師今天給我們考了十個單字的隨堂單字小考。"
+        },
+        {
+          "en": "You can take an online interactive quiz to test your grammar proficiency.",
+          "zh": "您可以參加線上互動測驗以檢測自身的文法精熟度。"
+        },
+        {
+          "en": "The pub hosts a lively trivia quiz night every Wednesday evening.",
+          "zh": "這家酒館每週三晚上都會舉辦氣氛熱烈的常識問答測驗之夜。"
+        }
+      ],
+      "collocations": [
+        "pop quiz",
+        "weekly quiz"
+      ]
+    },
+    {
+      "id": 1534,
+      "word": "oral exam",
+      "pos": "n. phr.",
+      "phonetic": "[ˋorəl ɪgˋzæm]",
+      "definition": "口試；口語測驗",
+      "cefr": "A2",
+      "topic": "考試形式",
+      "examples": [
+        {
+          "en": "Practice speaking English fluently for the speaking oral exam.",
+          "zh": "多多練習流利開口說英語以備戰英語口試。"
+        },
+        {
+          "en": "Candidates faced a panel of three native professors during the oral exam.",
+          "zh": "應試考生在口試期間面對由三位母語教授組成的考官評審團。"
+        },
+        {
+          "en": "Preparing short cue cards helps reduce nervousness during an oral exam.",
+          "zh": "準備簡要的小提示卡有助於減輕口試時的緊張焦慮感。"
+        }
+      ],
+      "collocations": [
+        "oral presentation"
+      ]
+    },
+    {
+      "id": 1535,
+      "word": "cheat",
+      "pos": "v., n.",
+      "phonetic": "[tʃit]",
+      "definition": "作弊；欺騙；騙子",
+      "cefr": "A2",
+      "topic": "道德與校規",
+      "examples": [
+        {
+          "en": "Cheating during examinations results in immediate zero marks and disciplinary action.",
+          "zh": "考試作弊將導致該科零分並遭受校規懲處。"
+        },
+        {
+          "en": "Some athletes use banned substances to cheat in competitive tournaments.",
+          "zh": "部分運動員使用違禁藥物在競爭賽事中弄虛作假不法作弊。"
+        },
+        {
+          "en": "He felt cheated after discovering the luxury handbag was a counterfeit replica.",
+          "zh": "在發現那個名牌精品包只是仿冒贗品後，他深感遭到欺騙。"
+        }
+      ],
+      "collocations": [
+        "cheat on exams"
+      ]
+    },
+    {
+      "id": 1536,
+      "word": "grade",
+      "pos": "n., v.",
+      "phonetic": "[gred]",
+      "definition": "成績；年級；給…評分",
+      "cefr": "A2",
+      "topic": "學校與評量",
+      "examples": [
+        {
+          "en": "She worked hard and earned straight-A grades this semester.",
+          "zh": "她用功讀書，這學期拿下了全科滿分 A 的優異成績。"
+        },
+        {
+          "en": "The teacher spent all weekend grading history essay assignments.",
+          "zh": "老師花了一整個週末為歷史申論題作業批改評分。"
+        },
+        {
+          "en": "Grade school students are eager to participate in science fairs.",
+          "zh": "小學年級的小學生們熱切期盼參加自然科學展覽會。"
+        }
+      ],
+      "collocations": [
+        "good grades",
+        "grade papers"
+      ]
+    },
+    {
+      "id": 1537,
+      "word": "transcript",
+      "pos": "n.",
+      "phonetic": "[ˋtræn͵skrɪpt]",
+      "definition": "成績單；成績證明書",
+      "cefr": "A2",
+      "topic": "學校文書",
+      "examples": [
+        {
+          "en": "You must submit your official academic transcript when applying for colleges.",
+          "zh": "申請大學時必須檢附官方正式成績單。"
+        },
+        {
+          "en": "Request a sealed copy of your university transcript from the registrar.",
+          "zh": "向教務處註冊組申請一份加蓋密封章的大學成績單正本。"
+        },
+        {
+          "en": "The court reporter provided an accurate transcript of the legal trial proceedings.",
+          "zh": "法庭書記官提供了法庭訴訟審訊過程的精準速記謄本記錄。"
+        }
+      ],
+      "collocations": [
+        "official transcript",
+        "report card"
+      ]
+    },
+    {
+      "id": 1538,
+      "word": "pass",
+      "pos": "v., n.",
+      "phonetic": "[pæs]",
+      "definition": "通過；及格；通行證",
+      "cefr": "A2",
+      "topic": "考試與評量",
+      "examples": [
+        {
+          "en": "I studied late every night and finally passed the GEPT test!",
+          "zh": "我每晚苦讀，終於通過了全民英檢（GEPT）！"
+        },
+        {
+          "en": "Show your security pass at the entrance gate before entering the premises.",
+          "zh": "進入廠區前請在大門警衛處出示您的安全通行證識別證。"
+        },
+        {
+          "en": "Time passes remarkably fast when you are immersed in engaging work.",
+          "zh": "當你全神貫注沉浸在引人入勝的工作中時，時間過得飛快。"
+        }
+      ],
+      "collocations": [
+        "pass an exam",
+        "boarding pass"
+      ]
+    },
+    {
+      "id": 1539,
+      "word": "fail",
+      "pos": "v., n.",
+      "phonetic": "[fel]",
+      "definition": "不及格；當掉；失敗",
+      "cefr": "A2",
+      "topic": "考試與結果",
+      "examples": [
+        {
+          "en": "Anyone scoring below sixty points will fail the course.",
+          "zh": "任何得分低於六十分者該課程將被評為不及格。"
+        },
+        {
+          "en": "Don't be afraid to fail, because failure is a valuable stepping stone to success.",
+          "zh": "不要害怕遭遇挫敗，因為失敗是通往成功的寶貴墊腳石。"
+        },
+        {
+          "en": "The old water pump failed during the coldest night of winter.",
+          "zh": "那台老舊抽水馬達在寒冬最冷的一夜徹底停止運轉故障了。"
+        }
+      ],
+      "collocations": [
+        "fail a test",
+        "flunk"
+      ]
+    },
+    {
+      "id": 1540,
+      "word": "passing grade",
+      "pos": "n. phr.",
+      "phonetic": "[ˋpæsɪŋ gred]",
+      "definition": "及格分數；及格標準",
+      "cefr": "A2",
+      "topic": "學校標準",
+      "examples": [
+        {
+          "en": "Sixty is the minimum passing grade in most Taiwanese schools.",
+          "zh": "六十分是台灣多數學校規定的最低及格標準。"
+        },
+        {
+          "en": "You must achieve a passing grade on the certification exam to get the license.",
+          "zh": "您必須在專業證照考試中取得及格分數才能順利獲頒執照。"
+        },
+        {
+          "en": "He worked tirelessly to raise his test scores comfortably above the passing grade.",
+          "zh": "他堅持不懈地苦讀，將測驗分數遠遠提升至及格標準以上。"
+        }
+      ],
+      "collocations": [
+        "pass mark"
+      ]
+    },
+    {
+      "id": 1541,
+      "word": "scholarship",
+      "pos": "n.",
+      "phonetic": "[ˋskɑlɚˌʃɪp]",
+      "definition": "獎學金",
+      "cefr": "A2",
+      "topic": "金融與教育",
+      "examples": [
+        {
+          "en": "Outstanding students are awarded academic merit scholarships.",
+          "zh": "品學兼優的傑出學生獲頒優秀學業獎學金。"
+        },
+        {
+          "en": "Winning a full scholarship enabled her to study abroad without financial burdens.",
+          "zh": "榮獲全額獎學金使她得以毫無財務負擔地赴海外深造留學。"
+        },
+        {
+          "en": "The corporate foundation funds dozens of university research scholarships annually.",
+          "zh": "該企業基金會每年資助數十項大學學術研究獎學金。"
+        }
+      ],
+      "collocations": [
+        "win a scholarship",
+        "full scholarship"
+      ]
+    },
+    {
+      "id": 1542,
+      "word": "tuition",
+      "pos": "n. [U]",
+      "phonetic": "[tjuˋɪʃən]",
+      "definition": "學費（常用 tuition fees）",
+      "cefr": "A2",
+      "topic": "金融與教育",
+      "examples": [
+        {
+          "en": "Public university tuition in Taiwan is relatively affordable.",
+          "zh": "台灣國立公立大學的學費相對親民實惠。"
+        },
+        {
+          "en": "Private universities often charge much higher tuition fees for undergraduate programs.",
+          "zh": "私立大學的大學部學程通常收取高出許多的學費開銷。"
+        },
+        {
+          "en": "He worked part-time as a tutor to help pay for his tuition and living expenses.",
+          "zh": "他兼職擔任家教以賺取自己的大學學費與日常生活開銷。"
+        }
+      ],
+      "collocations": [
+        "tuition fee",
+        "pay tuition"
+      ]
+    },
+    {
+      "id": 1543,
+      "word": "graduate",
+      "pos": "v., n.",
+      "phonetic": "[ˋgrædʒuˌet] / [ˋgrædʒuɪt]",
+      "definition": "畢業；畢業生",
+      "cefr": "A2",
+      "topic": "成長與學業",
+      "examples": [
+        {
+          "en": "My elder sister will graduate from high school this coming June.",
+          "zh": "我姐姐即將在今年六月自高中畢業。"
+        },
+        {
+          "en": "Recent university graduates often seek internship opportunities to gain work experience.",
+          "zh": "應屆大學畢業生往往透過尋求實習機會來累積實務工作經驗。"
+        },
+        {
+          "en": "She graduated with top honors in international relations from National Taiwan University.",
+          "zh": "她以最優異頂尖的成績自台灣大學國際關係學系畢業。"
+        }
+      ],
+      "collocations": [
+        "graduate from",
+        "university graduate"
+      ]
+    },
+    {
+      "id": 1544,
+      "word": "graduation",
+      "pos": "n.",
+      "phonetic": "[͵grædʒuˋeʃən]",
+      "definition": "畢業；畢業典禮",
+      "cefr": "A2",
+      "topic": "活動與成長",
+      "examples": [
+        {
+          "en": "We took many joyful photos in our caps and gowns at graduation.",
+          "zh": "我們在畢業典禮上穿著學士袍開心地拍了許多合照。"
+        },
+        {
+          "en": "My grandparents flew across the country to attend my college graduation ceremony.",
+          "zh": "我的祖父母搭機橫跨國境專程前來參加我的大學畢業典禮。"
+        },
+        {
+          "en": "After graduation, he plans to backpack across South America for three months.",
+          "zh": "畢業之後，他計畫前往南美洲進行為期三個月的背包自助旅行。"
+        }
+      ],
+      "collocations": [
+        "graduation ceremony",
+        "commencement"
+      ]
+    },
+    {
+      "id": 1545,
+      "word": "diploma",
+      "pos": "n.",
+      "phonetic": "[dɪˋplomə]",
+      "definition": "畢業證書；文憑",
+      "cefr": "A2",
+      "topic": "學歷證明",
+      "examples": [
+        {
+          "en": "Frame your high school diploma and hang it proudly on the wall.",
+          "zh": "將高中畢業證書裝框，自豪地掛在牆上。"
+        },
+        {
+          "en": "You must present your original university diploma when signing the employment contract.",
+          "zh": "簽訂正式聘僱合約時，必須出示大學畢業證書正本。"
+        },
+        {
+          "en": "The culinary academy awards an internationally certified diploma upon program completion.",
+          "zh": "完成專業烹飪培訓課程後，該學院會頒發國際認證文憑證書。"
+        }
+      ],
+      "collocations": [
+        "high school diploma",
+        "certificate"
+      ]
+    },
+    {
+      "id": 1546,
+      "word": "alumni",
+      "pos": "n. [pl.]",
+      "phonetic": "[əˋlʌmnaɪ]",
+      "definition": "校友；畢業生們",
+      "cefr": "A2",
+      "topic": "學校社群",
+      "examples": [
+        {
+          "en": "Famous alumni contributed funds to build the new library.",
+          "zh": "知名傑出校友捐資興建了全新的圖書館。"
+        },
+        {
+          "en": "The annual university alumni reunion brings former classmates together from around the globe.",
+          "zh": "一年一度的大學校友重聚會將來自全球各地的昔日同窗齊聚一堂。"
+        },
+        {
+          "en": "Many successful alumni mentor current undergraduate students entering job markets.",
+          "zh": "許多卓有成就的優秀校友擔任即將邁入職場的大學生的職涯導師。"
+        }
+      ],
+      "collocations": [
+        "alumni association"
+      ]
+    },
+    {
+      "id": 1547,
+      "word": "research",
+      "pos": "n. [U], v.",
+      "phonetic": "[rɪˋsɝtʃ]",
+      "definition": "研究；調查；探究",
+      "cefr": "A2",
+      "topic": "學術與探索",
+      "examples": [
+        {
+          "en": "Scientists are conducting groundbreaking research on clean green energy.",
+          "zh": "科學家們正在對乾淨綠色能源進行開創性研究。"
+        },
+        {
+          "en": "Carry out extensive market research before launching a new product line.",
+          "zh": "在推出全新產品線之前，務必先進行廣泛深入的市場研究調查。"
+        },
+        {
+          "en": "The university library provides access to thousands of peer-reviewed research databases.",
+          "zh": "大學圖書館提供了檢索數千個同儕審查學術研究資料庫的權限。"
+        }
+      ],
+      "collocations": [
+        "do research",
+        "scientific research"
+      ]
+    },
+    {
+      "id": 1548,
+      "word": "thesis",
+      "pos": "n.",
+      "phonetic": "[ˋθisɪs]",
+      "definition": "（碩士）學位論文；論點",
+      "cefr": "A2",
+      "topic": "學術寫作",
+      "examples": [
+        {
+          "en": "Graduate students spend months writing their master's thesis.",
+          "zh": "碩士研究生花費數月撰寫其碩士學位論文。"
+        },
+        {
+          "en": "The central thesis of the essay argues that biodiversity is critical to planetary health.",
+          "zh": "這篇文章的核心論點主張生物多樣性對地球整體健康至關重要。"
+        },
+        {
+          "en": "She submitted the final bound copy of her doctoral thesis to the academic committee.",
+          "zh": "她將精裝裝訂完成的博士學位論文正式提交給學位學術委員會。"
+        }
+      ],
+      "collocations": [
+        "master's thesis",
+        "doctoral dissertation"
+      ]
+    },
+    {
+      "id": 1549,
+      "word": "revise",
+      "pos": "v., n.",
+      "phonetic": "[rɪˋvaɪz]",
+      "definition": "溫習；複習；修訂",
+      "cefr": "A2",
+      "topic": "學習方法",
+      "examples": [
+        {
+          "en": "Revise your vocabulary notes every evening before going to bed.",
+          "zh": "每天晚上睡前把單字筆記重新溫習一遍。"
+        },
+        {
+          "en": "The editor asked the author to revise the final three chapters of the novel.",
+          "zh": "責任編輯要求作者修改小說的最後三個章節。"
+        },
+        {
+          "en": "The economic agency revised its gross domestic product forecast upward.",
+          "zh": "經濟評估主管機關將年度國內生產毛額預估值向上進行修正。"
+        }
+      ],
+      "collocations": [
+        "revise for an exam",
+        "review"
+      ]
+    },
+    {
+      "id": 1550,
+      "word": "knowledge",
+      "pos": "n. [U]",
+      "phonetic": "[ˋnɑlɪdʒ]",
+      "definition": "知識；學問；見識",
+      "cefr": "A2",
+      "topic": "學習與心智",
+      "examples": [
+        {
+          "en": "Reading good books enriches our minds and broadens our knowledge.",
+          "zh": "閱讀好書能豐富我們的心靈並拓寬我們的知識見聞。"
+        },
+        {
+          "en": "Practical hands-on experience transforms textbook theory into applicable real-world knowledge.",
+          "zh": "實務操作經驗能將教科書理論轉化為切實可行的實務知識。"
+        },
+        {
+          "en": "To the best of my knowledge, the project deadline has not been altered.",
+          "zh": "據我所知，該專案的最後截止期限並未遭到任何修改變動。"
+        }
+      ],
+      "collocations": [
+        "gain knowledge",
+        "general knowledge"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1312 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 3,851–3,900 個單字（CEFR B1 中級）",
+  "batch": "3851-3900",
+  "range": "3851–3900",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 3851,
+      "word": "gym",
+      "pos": "n.",
+      "phonetic": "[dʒɪm]",
+      "definition": "健身房；體育館；健身俱樂部",
+      "cefr": "B1",
+      "topic": "健身場所",
+      "examples": [
+        {
+          "en": "Many office workers hit the local gym after work to lift weights and destress.",
+          "zh": "許多上班族下班後習慣前往社區連鎖健身房重訓流汗、釋放整天的工作壓力。"
+        },
+        {
+          "en": "She signed up for an annual gym membership to access the swimming pool and sauna.",
+          "zh": "她報名了一年的健身房會員，以便隨時使用游泳池和桑拿設施。"
+        },
+        {
+          "en": "The new gym downtown is equipped with top-of-the-line strength machines and free weights.",
+          "zh": "市中心新開的健身房配備了最頂級的重量訓練器材和自由重量區。"
+        }
+      ],
+      "collocations": [
+        "hit the gym",
+        "gym membership"
+      ]
+    },
+    {
+      "id": 3852,
+      "word": "trainer",
+      "pos": "n.",
+      "phonetic": "[ˋtrenɚ]",
+      "definition": "私人健身教練 (PT)；訓練員",
+      "cefr": "B1",
+      "topic": "專業指導",
+      "examples": [
+        {
+          "en": "A certified personal trainer ensures correct exercise form to prevent sports injuries.",
+          "zh": "擁有國際四大證照的私人健身教練能全程指導標準動作，確保安全無傷訓練。"
+        },
+        {
+          "en": "Working with a trainer helped him break through a plateau and set a new personal record.",
+          "zh": "與教練合作幫助他突破了訓練瓶頸，並創下了新的個人最佳紀錄。"
+        },
+        {
+          "en": "The gym trainer designed a customized four-day split routine tailored to her fitness goals.",
+          "zh": "健身房教練為她量身打造了一套四天分化訓練計畫，以達成她的健身目標。"
+        }
+      ],
+      "collocations": [
+        "personal trainer (PT)"
+      ]
+    },
+    {
+      "id": 3853,
+      "word": "warm-up",
+      "pos": "n., adj.",
+      "phonetic": "[wɔrm ʌp]",
+      "definition": "暖身熱身運動；熱身的",
+      "cefr": "B1",
+      "topic": "訓練流程",
+      "examples": [
+        {
+          "en": "Perform ten minutes of dynamic warm-up drills before starting heavy squats.",
+          "zh": "在進行大重量槓鈴深蹲訓練之前，請務必先落實十分鐘全身動態伸展暖身。"
+        },
+        {
+          "en": "A dynamic warm-up elevates your core body temperature and primes your nervous system.",
+          "zh": "動態暖身能提高身體核心溫度，並活化你的神經系統做好運動準備。"
+        },
+        {
+          "en": "Skipping your warm-up significantly increases the risk of pulled muscles and joint sprains.",
+          "zh": "跳過暖身步驟會大幅增加肌肉拉傷和關節扭傷的風險。"
+        }
+      ],
+      "collocations": [
+        "dynamic warm-up"
+      ]
+    },
+    {
+      "id": 3854,
+      "word": "cool-down",
+      "pos": "n., adj.",
+      "phonetic": "[kul daʊn]",
+      "definition": "緩和收操運動；冷卻的",
+      "cefr": "B1",
+      "topic": "訓練流程",
+      "examples": [
+        {
+          "en": "A proper post-workout cool-down gradually lowers elevated heart rates safely.",
+          "zh": "訓練結束後落實充分的靜態伸展緩和收操運動，能讓劇烈飆升的心率安全漸進回落。"
+        },
+        {
+          "en": "Incorporating static stretching into your cool-down can alleviate post-exercise tightness.",
+          "zh": "在收操時加入靜態伸展，有助於緩解運動後的肌肉緊繃感。"
+        },
+        {
+          "en": "Take five minutes for a light jog and deep breathing as a cool-down after your sprint workout.",
+          "zh": "衝刺訓練結束後，花五分鐘慢跑並深呼吸來作為緩和收操。"
+        }
+      ],
+      "collocations": [
+        "cool-down routine"
+      ]
+    },
+    {
+      "id": 3855,
+      "word": "resistance",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋzɪstəns]",
+      "definition": "阻力訓練；抵抗阻力",
+      "cefr": "B1",
+      "topic": "訓練模式",
+      "examples": [
+        {
+          "en": "Progressive resistance training strengthens skeletal bones and builds lean muscle.",
+          "zh": "循序漸進的漸進式阻力訓練能有效強化骨質密度並刺激骨骼肌肌肉合成生長。"
+        },
+        {
+          "en": "Elastic bands create variable resistance that peaks at the top of each movement.",
+          "zh": "彈力帶能產生變動阻力，在動作頂峰收縮時提供最大的阻抗力。"
+        },
+        {
+          "en": "Regular resistance exercise helps older adults preserve mobility and prevent muscle loss.",
+          "zh": "規律進行阻力運動有助於年長者維持行動力並預防肌肉流失。"
+        }
+      ],
+      "collocations": [
+        "resistance training"
+      ]
+    },
+    {
+      "id": 3856,
+      "word": "barbell",
+      "pos": "n.",
+      "phonetic": "[ˋbɑrˌbɛl]",
+      "definition": "槓鈴；奧林匹克標準大槓",
+      "cefr": "B1",
+      "topic": "重訓器材",
+      "examples": [
+        {
+          "en": "Olympic barbells weigh twenty kilograms and hold cast-iron weight plates.",
+          "zh": "健身房標準奧林匹克長槓鈴空槓淨重二十公斤，兩側可自由加掛鑄鐵槓片。"
+        },
+        {
+          "en": "He loaded two heavy plates on each side of the barbell for his next deadlift set.",
+          "zh": "他在槓鈴兩側各加掛了兩片大槓片，準備進行下一組硬舉。"
+        },
+        {
+          "en": "Always secure collar clamps onto the barbell to prevent plates from sliding off during lifts.",
+          "zh": "訓練時請務必在槓鈴兩側鎖上槓夾，以防槓片在舉起時晃動滑落。"
+        }
+      ],
+      "collocations": [
+        "Olympic barbell"
+      ]
+    },
+    {
+      "id": 3857,
+      "word": "dumbbell",
+      "pos": "n.",
+      "phonetic": "[ˋdʌmˌbɛl]",
+      "definition": "啞鈴",
+      "cefr": "B1",
+      "topic": "重訓器材",
+      "examples": [
+        {
+          "en": "Adjustable dumbbells allow efficient upper-body shoulder presses at home.",
+          "zh": "一組可快速調整重量的快調啞鈴讓居家健身族在家也能高效率完成肩推與二頭彎舉。"
+        },
+        {
+          "en": "She selected a pair of light dumbbells to perform lateral raises for shoulder isolation.",
+          "zh": "她挑選了一對輕量啞鈴進行側平舉，以精準孤立鍛鍊肩膀側三角肌。"
+        },
+        {
+          "en": "Dumbbells allow a greater range of motion than fixed barbells during chest exercises.",
+          "zh": "在胸部訓練中，啞鈴比起固定槓鈴能提供更深、更完整的動作行程。"
+        }
+      ],
+      "collocations": [
+        "adjustable dumbbell"
+      ]
+    },
+    {
+      "id": 3858,
+      "word": "kettlebell",
+      "pos": "n.",
+      "phonetic": "[ˋkɛt!ˌbɛl]",
+      "definition": "壺鈴",
+      "cefr": "B1",
+      "topic": "功能性器材",
+      "examples": [
+        {
+          "en": "Explosive kettlebell swings develop powerful hip drive and core stability.",
+          "zh": "爆發力十足的壺鈴擺盪動作能強力鍛鍊臀部髖關節爆發力與核心肌群穩定度。"
+        },
+        {
+          "en": "Practicing the Turkish get-up with a kettlebell builds exceptional whole-body shoulder stability.",
+          "zh": "使用壺鈴練習土耳其起立動作能建立非凡的全身協調性與肩部穩定度。"
+        },
+        {
+          "en": "Kettlebell training blends cardiovascular conditioning with functional strength development.",
+          "zh": "壺鈴訓練將心肺耐力訓練與功能性肌力發展完美融合在一起。"
+        }
+      ],
+      "collocations": [
+        "kettlebell swing"
+      ]
+    },
+    {
+      "id": 3859,
+      "word": "pulley",
+      "pos": "n.",
+      "phonetic": "[ˋpʊlɪ]",
+      "definition": "滑輪；滑輪纜繩訓練機 (Cable)",
+      "cefr": "B1",
+      "topic": "重訓器材",
+      "examples": [
+        {
+          "en": "Cable pulley machines provide continuous constant tension throughout the entire lift.",
+          "zh": "滑輪纜繩多功能訓練機（Cable 機）能在整個動作行程中提供持續恆定的抗阻拉力。"
+        },
+        {
+          "en": "Adjust the pulley height to perform triceps pushdowns and face pulls safely.",
+          "zh": "調整滑輪的高度可以安全地進行三頭肌下壓和繩索面拉動作。"
+        },
+        {
+          "en": "Dual pulley functional trainers are among the most versatile apparatus in modern gyms.",
+          "zh": "雙滑輪功能性訓練機是現代健身房中最靈活多用途的器械之一。"
+        }
+      ],
+      "collocations": [
+        "cable pulley machine"
+      ]
+    },
+    {
+      "id": 3860,
+      "word": "foam roller",
+      "pos": "n. phr.",
+      "phonetic": "[fom ˋrolɚ]",
+      "definition": "筋膜放鬆滾筒",
+      "cefr": "B1",
+      "topic": "肌肉恢復",
+      "examples": [
+        {
+          "en": "Rolling on a dense foam roller releases tight knots in sore quadriceps muscles.",
+          "zh": "使用高密度 EVA 筋膜放鬆滾筒滾壓大腿前側股四頭肌，能及時舒緩深層筋膜緊繃結節。"
+        },
+        {
+          "en": "Spend a few minutes on the foam roller every evening to improve joint mobility.",
+          "zh": "每天晚上花幾分鐘使用筋膜滾筒放鬆，能有效提升關節活動度。"
+        },
+        {
+          "en": "Although using a foam roller can be uncomfortable at first, it significantly reduces soreness.",
+          "zh": "雖然一開始滾筋膜滾筒可能有些酸痛，但它能顯著減輕隔天的肌肉僵硬。"
+        }
+      ],
+      "collocations": [
+        "use a foam roller"
+      ]
+    },
+    {
+      "id": 3861,
+      "word": "rep",
+      "pos": "n.",
+      "phonetic": "[rɛp]",
+      "definition": "反覆次數 (Repetition)",
+      "cefr": "B1",
+      "topic": "訓練術語",
+      "examples": [
+        {
+          "en": "Complete 12 controlled reps per set with a two-second lowering tempo.",
+          "zh": "每一組動作請以兩秒離心慢放的節奏穩定完成十二下標準反覆次數（Reps）。"
+        },
+        {
+          "en": "He struggled on the final rep of the bench press but locked it out successfully.",
+          "zh": "他在臥推最後一下反覆時咬牙苦撐，最終成功將槓鈴鎖定打直。"
+        },
+        {
+          "en": "High reps with moderate weight are great for building muscular endurance and pumping blood.",
+          "zh": "中等重量搭配高反覆次數非常適合建立肌耐力並達到充血泵感。"
+        }
+      ],
+      "collocations": [
+        "do 10 reps"
+      ]
+    },
+    {
+      "id": 3862,
+      "word": "set",
+      "pos": "n.",
+      "phonetic": "[sɛt]",
+      "definition": "組數；一套；設定",
+      "cefr": "B1",
+      "topic": "訓練術語",
+      "examples": [
+        {
+          "en": "Rest for ninety seconds between each heavy compound exercise set.",
+          "zh": "在進行高強度大重量複合動作的每一組（Set）之間，建議充分休息九十秒鐘。"
+        },
+        {
+          "en": "The workout protocol calls for four sets of ten repetitions for each core exercise.",
+          "zh": "該訓練課表要求每項核心動作都要完成四組、每組十次反覆。"
+        },
+        {
+          "en": "On his final set, he performed a drop set by instantly reducing the resistance by twenty percent.",
+          "zh": "在最後一組時，他透過立即將重量減輕兩成的方式進行了遞減組訓練。"
+        }
+      ],
+      "collocations": [
+        "do 4 sets"
+      ]
+    },
+    {
+      "id": 3863,
+      "word": "interval",
+      "pos": "n.",
+      "phonetic": "[ˋɪntɚv!]",
+      "definition": "間歇時間；間隔區間",
+      "cefr": "B1",
+      "topic": "訓練節奏",
+      "examples": [
+        {
+          "en": "Strict rest intervals keep training intensity high during circuit workouts.",
+          "zh": "在循環訓練中嚴格掐準組間休息間歇時間，能全程維持極高的心肺與肌耐力強度。"
+        },
+        {
+          "en": "Short intervals of thirty seconds between sets create substantial cardiovascular fatigue.",
+          "zh": "組間只有三十秒的短暫間歇時間會帶來相當顯著的心肺疲勞。"
+        },
+        {
+          "en": "Extending your rest interval to three minutes allows full ATP restoration for max effort lifts.",
+          "zh": "將休息間隔拉長至三分鐘，能讓 ATP 完全恢復以應付極限重量的試舉。"
+        }
+      ],
+      "collocations": [
+        "rest interval"
+      ]
+    },
+    {
+      "id": 3864,
+      "word": "failure",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfeljɚ]",
+      "definition": "肌力力竭；失敗",
+      "cefr": "B1",
+      "topic": "訓練極限",
+      "examples": [
+        {
+          "en": "Training to complete muscular failure on the final set maximizes muscle stimulation.",
+          "zh": "在最後一組動作中全力拚搏推進至肌肉全然力竭狀態，能帶給肌纖維最大化機械張力刺激。"
+        },
+        {
+          "en": "Going to failure on every single set can lead to overtraining and nervous system exhaustion.",
+          "zh": "每組都做到徹底力竭可能會導致過度訓練與中樞神經系統衰竭。"
+        },
+        {
+          "en": "Stop one or two reps shy of technical failure to preserve pristine movement biomechanics.",
+          "zh": "在達到動作變形的力竭前保留一到兩下反覆，能確保動作生物力學的標準完整。"
+        }
+      ],
+      "collocations": [
+        "muscular failure"
+      ]
+    },
+    {
+      "id": 3865,
+      "word": "overload",
+      "pos": "n. [U], v.",
+      "phonetic": "[͵ovɚˋlod]",
+      "definition": "漸進式超負荷；超載",
+      "cefr": "B1",
+      "topic": "增肌原則",
+      "examples": [
+        {
+          "en": "Progressive overload by adding small weight weekly drives continuous hypertrophy.",
+          "zh": "每週有系統地微幅增加槓鈴重量落實「漸進式超負荷」原則，是持續增肌的核心推動力。"
+        },
+        {
+          "en": "You can achieve overload by increasing resistance, adding repetitions, or shortening rest times.",
+          "zh": "你可以透過增加重量、增加反覆次數或縮短休息時間來達成超負荷刺激。"
+        },
+        {
+          "en": "Without progressive overload, your muscles will adapt and progress will eventually stall.",
+          "zh": "若缺乏漸進式超負荷，肌肉會逐漸適應而導致重訓成果陷入停滯。"
+        }
+      ],
+      "collocations": [
+        "progressive overload"
+      ]
+    },
+    {
+      "id": 3866,
+      "word": "hypertrophy",
+      "pos": "n. [U]",
+      "phonetic": "[haɪˋpɝtrəfɪ]",
+      "definition": "肌肥大（肌肉體積增大）",
+      "cefr": "B1",
+      "topic": "訓練目標",
+      "examples": [
+        {
+          "en": "An 8 to 12 rep range is optimal for stimulating hypertrophy and muscle growth.",
+          "zh": "每組八至十二下（8-12 Reps）的中高反覆次數區間被證實是刺激肌肥大的最佳甜蜜點。"
+        },
+        {
+          "en": "Mechanical tension and metabolic stress are two primary drivers of skeletal muscle hypertrophy.",
+          "zh": "機械張力與代謝壓力是驅動骨骼肌肌肥大生長的兩大核心機制。"
+        },
+        {
+          "en": "Eating sufficient protein while targeting hypertrophy ensures that repaired muscle fibers grow thicker.",
+          "zh": "在追求肌肥大目標時攝取足量蛋白質，能確保修復後的肌纖維變得更加粗壯。"
+        }
+      ],
+      "collocations": [
+        "muscle hypertrophy"
+      ]
+    },
+    {
+      "id": 3867,
+      "word": "posture",
+      "pos": "n. [U]",
+      "phonetic": "[ˋpɑstʃɚ]",
+      "definition": "體態姿勢；站姿坐姿",
+      "cefr": "B1",
+      "topic": "動作規範",
+      "examples": [
+        {
+          "en": "Maintain a neutral spine posture to protect your lower back when deadlifting.",
+          "zh": "在進行重訓硬舉時請全程維持脊椎中立挺胸體態，以保護下背腰椎免受剪力壓迫。"
+        },
+        {
+          "en": "Poor desk posture can lead to rounded shoulders and forward head posture over time.",
+          "zh": "長期不良的久坐辦公姿勢會逐漸導致圓肩駝背與烏龜頸等體態問題。"
+        },
+        {
+          "en": "Strengthening your upper back and core will naturally improve your standing posture.",
+          "zh": "強化上背部與核心肌群能自然而然地改善你日常站立時的挺拔體態。"
+        }
+      ],
+      "collocations": [
+        "correct posture",
+        "good form"
+      ]
+    },
+    {
+      "id": 3868,
+      "word": "spotter",
+      "pos": "n.",
+      "phonetic": "[ˋspɑtɚ]",
+      "definition": "重訓補位員；補槓防護員",
+      "cefr": "B1",
+      "topic": "健身安全",
+      "examples": [
+        {
+          "en": "Always ask an attentive gym buddy to serve as your bench press spotter.",
+          "zh": "當嘗試挑戰大重量平板臥推個人最佳紀錄（PR）時，請務必請熱心巨巨擔任補槓員。"
+        },
+        {
+          "en": "A skilled spotter only provides assistance when you begin to stall on the lift.",
+          "zh": "一位經驗豐富的補位員只會在槓鈴真正卡住停滯時才出手適度輔助。"
+        },
+        {
+          "en": "Having a reliable spotter gives you the psychological confidence to push beyond your limits.",
+          "zh": "身邊有可靠的補槓防護員能帶給你充足的心理安全感，敢於突破自身極限。"
+        }
+      ],
+      "collocations": [
+        "bench press spotter"
+      ]
+    },
+    {
+      "id": 3869,
+      "word": "compound",
+      "pos": "adj.",
+      "phonetic": "[ˋkɑmpaʊnd]",
+      "definition": "多關節複合的；複合式的",
+      "cefr": "B1",
+      "topic": "動作分類",
+      "examples": [
+        {
+          "en": "Compound movements recruit multiple muscle groups simultaneously for maximum efficiency.",
+          "zh": "包含深蹲、硬舉與臥推在內的多關節複合動作能同時動員全身多組大肌群，燃脂效率極高。"
+        },
+        {
+          "en": "Prioritize heavy compound exercises at the beginning of your training session.",
+          "zh": "建議在重訓一開始體力最充沛時，優先進行大重量的多關節複合動作。"
+        },
+        {
+          "en": "Exercises like pull-ups and squats are compound movements that burn more calories per set.",
+          "zh": "像是引體向上與深蹲等複合動作，每組能燃燒消耗的熱量遠高於單關節孤立動作。"
+        }
+      ],
+      "collocations": [
+        "compound exercise"
+      ]
+    },
+    {
+      "id": 3870,
+      "word": "squat",
+      "pos": "n., v.",
+      "phonetic": "[skwɑt]",
+      "definition": "深蹲；蹲下；槓鈴深蹲",
+      "cefr": "B1",
+      "topic": "動作之王",
+      "examples": [
+        {
+          "en": "The barbell back squat is widely regarded as the king of lower-body exercises.",
+          "zh": "槓鈴後背深蹲被全球健身界公認為鍛鍊大腿、臀部與下半身爆發力的動作之王。"
+        },
+        {
+          "en": "Ensure your knees track in line with your toes throughout the depth of the squat.",
+          "zh": "進行深蹲下沉時，務必確保雙膝行進方向始終與腳尖朝向保持一致。"
+        },
+        {
+          "en": "He decided to squat below parallel to fully activate his quadriceps and glutes.",
+          "zh": "他決定深蹲至髖關節低於膝蓋平行線，以充分動員並刺激股四頭肌與臀大肌。"
+        }
+      ],
+      "collocations": [
+        "barbell squat"
+      ]
+    },
+    {
+      "id": 3871,
+      "word": "deadlift",
+      "pos": "n., v.",
+      "phonetic": "[ˋdɛdˌlɪft]",
+      "definition": "硬舉；拉起地面槓鈴",
+      "cefr": "B1",
+      "topic": "核心動作",
+      "examples": [
+        {
+          "en": "Conventional deadlifts build unmatched posterior chain strength in the back and glutes.",
+          "zh": "傳統硬舉動作能全方位建構無比強大的後側動力鏈，深層強化整個背部肌群與臀大肌。"
+        },
+        {
+          "en": "Brace your abdomen and keep the bar close to your shins when you deadlift.",
+          "zh": "硬舉拉起槓鈴時，腹部應全力繃緊閉氣，並讓槓鈴緊貼小腿迎面骨而上。"
+        },
+        {
+          "en": "He set a personal record by pulling a 200-kilogram deadlift without straps.",
+          "zh": "他在不使用拉力帶的情況下拉起了兩百公斤的硬舉，打破了個人紀錄。"
+        }
+      ],
+      "collocations": [
+        "conventional deadlift"
+      ]
+    },
+    {
+      "id": 3872,
+      "word": "bench press",
+      "pos": "n. phr.",
+      "phonetic": "[bɛntʃ prɛs]",
+      "definition": "平板臥推；槓鈴臥推",
+      "cefr": "B1",
+      "topic": "上肢推力",
+      "examples": [
+        {
+          "en": "The barbell bench press effectively develops chest pectoral thickness and triceps.",
+          "zh": "槓鈴平板臥推能極為顯著地增厚胸大肌厚度，並同步強化前三角肌與手臂三頭肌力量。"
+        },
+        {
+          "en": "Retract and depress your scapulae before unclipping the bar on the bench press.",
+          "zh": "進行臥推起槓之前，請先將後背肩胛骨後收並下沉以保護肩膀。"
+        },
+        {
+          "en": "She warmed up thoroughly before testing her one-rep max on the bench press.",
+          "zh": "在測試臥推一組最大反覆重量（1RM）之前，她進行了非常充分的熱身。"
+        }
+      ],
+      "collocations": [
+        "barbell bench press"
+      ]
+    },
+    {
+      "id": 3873,
+      "word": "pull-up",
+      "pos": "n.",
+      "phonetic": "[ˋpʊl͵ʌp]",
+      "definition": "引體向上（正手上拉）",
+      "cefr": "B1",
+      "topic": "上肢拉力",
+      "examples": [
+        {
+          "en": "Strict bodyweight pull-ups create a broad, athletic V-taper back silhouette.",
+          "zh": "標准無借力的自重引體向上是雕塑寬闊厚實、充滿力與美的倒三角背肌最佳王牌動作。"
+        },
+        {
+          "en": "He struggled to complete his first pull-up, but now he can do twelve in a row.",
+          "zh": "他起初連一下標準引體向上都拉不上去，但現在已經能輕鬆連做十二下了。"
+        },
+        {
+          "en": "Adding weight with a dip belt turns regular pull-ups into a powerful strength builder.",
+          "zh": "使用負重腰帶加掛槓片進行引體向上，能大幅提升上肢拉力與背肌維度。"
+        }
+      ],
+      "collocations": [
+        "wide-grip pull-up"
+      ]
+    },
+    {
+      "id": 3874,
+      "word": "push-up",
+      "pos": "n.",
+      "phonetic": "[ˋpʊʃ͵ʌp]",
+      "definition": "伏地挺身；掌上壓",
+      "cefr": "B1",
+      "topic": "基礎自重",
+      "examples": [
+        {
+          "en": "Standard daily push-ups maintain upper-body pressing endurance anywhere without gear.",
+          "zh": "每天堅持做五十下標準伏地挺身，無需任何器械輔助即可隨時隨地維持充沛的上肢推力耐力。"
+        },
+        {
+          "en": "Keep your body in a straight line from head to heels during every push-up.",
+          "zh": "做伏地挺身時，從頭部到腳後跟應全程維持呈一直線的中立收緊狀態。"
+        },
+        {
+          "en": "Diamond push-ups place extra emphasis on triceps development compared to regular push-ups.",
+          "zh": "相較於標準伏地挺身，鑽石式伏地挺身能給予手臂三頭肌更強烈的孤立刺激。"
+        }
+      ],
+      "collocations": [
+        "daily push-ups"
+      ]
+    },
+    {
+      "id": 3875,
+      "word": "plank",
+      "pos": "n.",
+      "phonetic": "[plæŋk]",
+      "definition": "棒式撐體；平板撐；厚木板",
+      "cefr": "B1",
+      "topic": "核心肌群",
+      "examples": [
+        {
+          "en": "Holding a two-minute isometric plank activates deep transverse abdominal core muscles.",
+          "zh": "維持兩分鐘標準棒式撐體（Plank）等長收縮，能深層激活腹橫肌等深層核心穩定肌群。"
+        },
+        {
+          "en": "Squeeze your glutes and pull your belly button inward while maintaining the plank position.",
+          "zh": "在撐棒式時夾緊臀大肌並將肚臍向脊椎內收，能獲得最佳的核心緊縮張力。"
+        },
+        {
+          "en": "Side planks are fantastic for targeting the oblique muscles and enhancing lateral stability.",
+          "zh": "側向棒式撐體是精準強化腹側斜肌與增強人體側向穩定度的極佳動作。"
+        }
+      ],
+      "collocations": [
+        "core plank"
+      ]
+    },
+    {
+      "id": 3876,
+      "word": "glutes",
+      "pos": "n. [pl.]",
+      "phonetic": "[gluts]",
+      "definition": "臀大肌；臀部肌群 (Gluteus Maximus)",
+      "cefr": "B1",
+      "topic": "解剖肌群",
+      "examples": [
+        {
+          "en": "Hip thrusts and lunges isolate the glutes to build power and sculpt shape.",
+          "zh": "槓鈴臀推（Hip Thrust）與箭步蹲動作能精準孤立刺激臀大肌，打造飽滿挺翹的臀部線條。"
+        },
+        {
+          "en": "Strong glutes protect your lumbar spine and improve your sprint acceleration.",
+          "zh": "強而有力的臀大肌能有效保護腰椎免於代償，並提升跑步衝刺時的加速度。"
+        },
+        {
+          "en": "Squeeze your glutes hard at the top lockout of every deadlift repetition.",
+          "zh": "在每次硬舉拉起到頂峰鎖定時，用力夾緊臀部能發揮最大的髖伸力量。"
+        }
+      ],
+      "collocations": [
+        "glute muscles",
+        "glutes"
+      ]
+    },
+    {
+      "id": 3877,
+      "word": "hamstrings",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋhæm͵strɪŋz]",
+      "definition": "大腿後側肌群；膕旁肌",
+      "cefr": "B1",
+      "topic": "解剖肌群",
+      "examples": [
+        {
+          "en": "Romanian deadlifts stretch and strengthen the hamstrings under heavy tension.",
+          "zh": "羅馬尼亞硬舉（RDL）能在強大離心張力下拉伸並顯著強化大腿後側膕旁肌群。"
+        },
+        {
+          "en": "Tight hamstrings can tilt your pelvis and contribute to chronic lower back discomfort.",
+          "zh": "緊繃僵硬的大腿後側肌群會牽拉骨盆傾斜，進而引發慢性的腰酸背痛問題。"
+        },
+        {
+          "en": "Hamstring curl machines allow targeted knee flexion to build thickness in the rear legs.",
+          "zh": "腿後勾訓練機透過膝關節彎曲孤立做功，能精準加厚大腿後側的肌肉維度。"
+        }
+      ],
+      "collocations": [
+        "hamstring curl"
+      ]
+    },
+    {
+      "id": 3878,
+      "word": "quadriceps",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋkwɑdrəˌsɛps]",
+      "definition": "股四頭肌；大腿前側大肌群",
+      "cefr": "B1",
+      "topic": "解剖肌群",
+      "examples": [
+        {
+          "en": "Leg presses and front squats blast the front quadriceps for leg size.",
+          "zh": "斜板腿推機與槓鈴前蹲舉能針對大腿前側股四頭肌進行深度轟炸，打造結實腿部維度。"
+        },
+        {
+          "en": "Cycling uphill places immense mechanical stress on your quadriceps muscles.",
+          "zh": "騎乘自行車爬上陡峭斜坡會為大腿前側的股四頭肌帶來巨大的機械阻抗負荷。"
+        },
+        {
+          "en": "Stretching your quadriceps after a heavy leg workout helps restore normal knee flexibility.",
+          "zh": "在重度練腿日結束後伸展股四頭肌，有助於恢復膝蓋正常的柔軟度與伸展性。"
+        }
+      ],
+      "collocations": [
+        "quadriceps (quads)"
+      ]
+    },
+    {
+      "id": 3879,
+      "word": "biceps",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋbaɪsɛps]",
+      "definition": "二頭肌；手臂前側肌群",
+      "cefr": "B1",
+      "topic": "解剖肌群",
+      "examples": [
+        {
+          "en": "Concentration curls isolate the biceps peak for pronounced arm definition.",
+          "zh": "專注的單臂啞鈴集中彎舉能精準孤立雕塑二頭肌峰，勾勒出手臂清晰分明的線條感。"
+        },
+        {
+          "en": "Avoid swinging your shoulders back and forth when doing heavy biceps barbell curls.",
+          "zh": "進行大重量槓鈴二頭彎舉時，切忌前後晃動肩膀借力以避免訓練效果打折。"
+        },
+        {
+          "en": "Underhand chin-ups recruit the biceps heavily alongside the lats.",
+          "zh": "反手引體向上除了能鍛鍊闊背肌外，也能對手臂二頭肌產生極大的刺激。"
+        }
+      ],
+      "collocations": [
+        "biceps curl"
+      ]
+    },
+    {
+      "id": 3880,
+      "word": "triceps",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋtraɪsɛps]",
+      "definition": "三頭肌；手臂後側肌群",
+      "cefr": "B1",
+      "topic": "解剖肌群",
+      "examples": [
+        {
+          "en": "Overhead cable extensions target the long head of the triceps effectively.",
+          "zh": "繩索過頂三頭肌伸展動作能高效拉伸並精準刺激手臂三頭肌長頭，消除拜拜肉。"
+        },
+        {
+          "en": "The triceps make up approximately sixty percent of the total muscle mass of your upper arm.",
+          "zh": "手臂三頭肌約佔了整個上手臂總肌肉體積的百分之六十。"
+        },
+        {
+          "en": "Dips and close-grip bench presses are compound movements that build massive triceps.",
+          "zh": "雙槓臂屈伸與窄握臥推是能打造厚實粗壯三頭肌的極佳複合訓練動作。"
+        }
+      ],
+      "collocations": [
+        "triceps pushdown"
+      ]
+    },
+    {
+      "id": 3881,
+      "word": "abs",
+      "pos": "n. [pl.]",
+      "phonetic": "[æbz]",
+      "definition": "腹部肌群；腹肌 (Abdominals)",
+      "cefr": "B1",
+      "topic": "核心線條",
+      "examples": [
+        {
+          "en": "Lowering body fat reveals defined abdominal abs and sculpted obliques.",
+          "zh": "唯有將全身整體體脂肪率降至精實區間，雕刻般的立體六塊腹肌與人魚線才會清晰浮現。"
+        },
+        {
+          "en": "You cannot spot-reduce fat around your abs simply by performing hundreds of crunches.",
+          "zh": "你不可能單純透過每天狂做幾百下捲腹就局部消除腹部周圍堆積的脂肪。"
+        },
+        {
+          "en": "Hanging leg raises are an outstanding exercise for developing powerful lower abs.",
+          "zh": "懸垂舉腿是一項能夠高效鍛鍊下腹部肌群與核心強度的絕佳進階動作。"
+        }
+      ],
+      "collocations": [
+        "six-pack abs"
+      ]
+    },
+    {
+      "id": 3882,
+      "word": "cardio",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɑrdɪˌo]",
+      "definition": "有氧運動；心肺耐力訓練",
+      "cefr": "B1",
+      "topic": "心肺訓練",
+      "examples": [
+        {
+          "en": "Combining weight training with twenty minutes of steady-state cardio optimizes fat loss.",
+          "zh": "將大重量重訓與二十分鐘中低強度心肺有氧運動相結合，能達成極致高效的燃脂效果。"
+        },
+        {
+          "en": "Doing excessive cardio without proper nutrition can cause unwanted muscle loss.",
+          "zh": "在營養不足的情況下進行過量有氧運動，可能會導致寶貴的肌肉流失。"
+        },
+        {
+          "en": "Low-intensity steady-state cardio is easy on the joints and aids active recovery.",
+          "zh": "低強度恆速有氧運動對關節衝擊極小，並且有助於重訓後的動態主動恢復。"
+        }
+      ],
+      "collocations": [
+        "cardiovascular cardio"
+      ]
+    },
+    {
+      "id": 3883,
+      "word": "treadmill",
+      "pos": "n.",
+      "phonetic": "[ˋtrɛdˌmɪl]",
+      "definition": "跑步機；單調繁重的工作",
+      "cefr": "B1",
+      "topic": "有氧器材",
+      "examples": [
+        {
+          "en": "Setting the treadmill incline to 12% delivers an intense low-impact fat burn.",
+          "zh": "將室內跑步機坡度調高至百分之十二並進行快走，能提供高燃脂且低關節衝擊的有氧體驗。"
+        },
+        {
+          "en": "She walked at a brisk pace on the treadmill while catching up on an informative podcast.",
+          "zh": "她在跑步機上快步健走，一邊收聽充滿知識性的 Podcast 節目充電。"
+        },
+        {
+          "en": "When outdoor weather is rainy and cold, running on an indoor treadmill is a great alternative.",
+          "zh": "當室外天氣陰雨寒冷時，在室內的跑步機上慢跑是個絕佳的替代訓練方案。"
+        }
+      ],
+      "collocations": [
+        "treadmill walk"
+      ]
+    },
+    {
+      "id": 3884,
+      "word": "spinning",
+      "pos": "n. [U]",
+      "phonetic": "[ˋspɪnɪŋ]",
+      "definition": "飛輪有氧運動；室內單車課",
+      "cefr": "B1",
+      "topic": "團體課程",
+      "examples": [
+        {
+          "en": "High-energy spinning classes feature pumping music and high-calorie sweat sessions.",
+          "zh": "搭配重低音動感電音節奏的室內飛輪有氧團體課程，是一場汗水狂飆的超級燃脂派對。"
+        },
+        {
+          "en": "She attends a spinning session twice a week to improve her aerobic stamina.",
+          "zh": "她每週參加兩次飛輪有氧課程，以顯著提升自己的有氧心肺耐力。"
+        },
+        {
+          "en": "The spinning instructor urged everyone to crank up the resistance knob for the final climb.",
+          "zh": "飛輪教練在最後爬坡階段號召所有學員轉緊阻力旋鈕，全力站姿抽車衝刺。"
+        }
+      ],
+      "collocations": [
+        "spinning class"
+      ]
+    },
+    {
+      "id": 3885,
+      "word": "rower",
+      "pos": "n.",
+      "phonetic": "[ˋroɚ]",
+      "definition": "划船機；划船手 (Rowing Machine)",
+      "cefr": "B1",
+      "topic": "全身有氧",
+      "examples": [
+        {
+          "en": "The water rower engages 85% of total body musculature per stroke.",
+          "zh": "水阻划船機每一次拉槳划行動作皆能同時動員全身超過百分之八十五的肌肉參與做功。"
+        },
+        {
+          "en": "Using an indoor rower requires continuous leg drive, core engagement, and back pulling.",
+          "zh": "使用室內划船機需要連續的雙腿蹬夾、核心收緊與背部順勢拉回協調配合。"
+        },
+        {
+          "en": "Five sets of 500-meter sprints on the rower will challenge even the fittest athletes.",
+          "zh": "在划船機上進行五組五百公尺全力衝刺，即便是體能頂尖的運動員也會感到極度挑戰。"
+        }
+      ],
+      "collocations": [
+        "indoor rower"
+      ]
+    },
+    {
+      "id": 3886,
+      "word": "HIIT",
+      "pos": "n. phr.",
+      "phonetic": "[hɪt]",
+      "definition": "高強度間歇訓練 (High-Intensity Interval Training)",
+      "cefr": "B1",
+      "topic": "極速燃脂",
+      "examples": [
+        {
+          "en": "A 20-minute HIIT workout burns calories and triggers the post-exercise afterburn effect.",
+          "zh": "短短二十分鐘的 Tabata 高強度間歇訓練（HIIT）能持續引發長達數小時的運動後後燃效應。"
+        },
+        {
+          "en": "Because HIIT is so demanding on the central nervous system, limit it to three days per week.",
+          "zh": "由於高強度間歇訓練對中樞神經系統負擔極重，建議每週安排不超過三次。"
+        },
+        {
+          "en": "Sprinting all-out for thirty seconds followed by walking for thirty seconds is a classic HIIT routine.",
+          "zh": "全力衝刺三十秒緊接著慢步走三十秒，是最經典的高強度間歇訓練模式之一。"
+        }
+      ],
+      "collocations": [
+        "HIIT session"
+      ]
+    },
+    {
+      "id": 3887,
+      "word": "heart rate",
+      "pos": "n. phr.",
+      "phonetic": "[hɑrt ret]",
+      "definition": "心跳速率；心率 (BPM)",
+      "cefr": "B1",
+      "topic": "生理數據",
+      "examples": [
+        {
+          "en": "Smart fitness watches monitor real-time heart rate zones during high-intensity sprints.",
+          "zh": "智慧運動手錶能在高強度間歇衝刺過程中即時精準監控心率區間，避免心臟過度負荷。"
+        },
+        {
+          "en": "Your resting heart rate tends to drop significantly as your cardiovascular fitness improves.",
+          "zh": "隨著你的心肺健康與耐力體能大幅進步，靜止心率通常會顯著下降。"
+        },
+        {
+          "en": "Maintain your heart rate in zone two to optimize mitochondrial endurance and fat oxidation.",
+          "zh": "將心率維持在第二區間（Zone 2）能最大化粒線體耐力與脂肪氧化代謝效率。"
+        }
+      ],
+      "collocations": [
+        "target heart rate"
+      ]
+    },
+    {
+      "id": 3888,
+      "word": "deficit",
+      "pos": "n.",
+      "phonetic": "[ˋdɛfəsɪt]",
+      "definition": "熱量赤字；赤字缺口；虧損",
+      "cefr": "B1",
+      "topic": "減重原理",
+      "examples": [
+        {
+          "en": "Maintaining a modest 300-calorie daily deficit results in sustainable fat loss.",
+          "zh": "每天維持約三百大卡的溫和熱量赤字（Calorie Deficit），能達成健康不掉肌肉的減脂目標。"
+        },
+        {
+          "en": "Creating too severe a caloric deficit will slow your metabolism and lead to muscle atrophy.",
+          "zh": "製造過度極端的熱量赤字會導致基礎代謝率驟降，並引發不必要的肌肉流失。"
+        },
+        {
+          "en": "Tracking food intake diligently makes it much easier to sustain a consistent calorie deficit.",
+          "zh": "認真記錄每日飲食熱量攝取，能讓你更輕鬆且精準地維持穩定的熱量赤字。"
+        }
+      ],
+      "collocations": [
+        "calorie deficit"
+      ]
+    },
+    {
+      "id": 3889,
+      "word": "metabolic",
+      "pos": "adj.",
+      "phonetic": "[͵mɛtəˋbɑlɪk]",
+      "definition": "代謝的；新陳代謝的",
+      "cefr": "B1",
+      "topic": "生理機能",
+      "examples": [
+        {
+          "en": "Building muscle raises your basal metabolic rate (BMR) so you burn more calories resting.",
+          "zh": "增加全身骨骼肌含量能有效提升人體基礎代謝率（BMR），讓您即使在靜態休息時也能消耗更多熱量。"
+        },
+        {
+          "en": "Regular strength training provides significant long-term metabolic health benefits.",
+          "zh": "規律進行肌力重量訓練能為身體的新陳代謝健康帶來顯著的長遠益處。"
+        },
+        {
+          "en": "Chronic sleep deprivation negatively impacts metabolic hormones like leptin and ghrelin.",
+          "zh": "長期睡眠不足會對體內的瘦素與飢餓素等各類代謝荷爾蒙造成嚴重的負面干擾。"
+        }
+      ],
+      "collocations": [
+        "basal metabolic rate (BMR)"
+      ]
+    },
+    {
+      "id": 3890,
+      "word": "composition",
+      "pos": "n. [U]",
+      "phonetic": "[͵kɑmpəˋzɪʃən]",
+      "definition": "身體組成分析 (InBody)；成分構圖",
+      "cefr": "B1",
+      "topic": "體態檢測",
+      "examples": [
+        {
+          "en": "Monthly InBody scans track body composition changes in visceral fat and muscle mass.",
+          "zh": "每個月定期站上 InBody 身體組成分析儀檢測，能精準掌握內臟脂肪等級與肌肉增長趨勢。"
+        },
+        {
+          "en": "Tracking body composition is far more informative than simply staring at numbers on a bathroom scale.",
+          "zh": "追蹤身體組成比例的實質變化，遠比每天死盯著體重計上的單純數字更有參考價值。"
+        },
+        {
+          "en": "Body recomposition allows beginners to lose stubborn fat while building new muscle tissue at the same time.",
+          "zh": "身體組成重組（Recomp）讓重訓新手能夠在減去頑固脂肪的同時同步合成增長新肌肉。"
+        }
+      ],
+      "collocations": [
+        "body composition analysis"
+      ]
+    },
+    {
+      "id": 3891,
+      "word": "whey",
+      "pos": "n. [U]",
+      "phonetic": "[hwe]",
+      "definition": "乳清；乳清蛋白 (Whey Protein)",
+      "cefr": "B1",
+      "topic": "運動補品",
+      "examples": [
+        {
+          "en": "Consuming whey protein isolate post-workout provides fast-absorbing branch-chain amino acids.",
+          "zh": "訓練後立即飲用一杯好吸收的水解分離乳清蛋白粉搖搖杯，能即刻為肌肉修復補充原料。"
+        },
+        {
+          "en": "He mixes a scoop of chocolate whey powder with chilled almond milk after every workout.",
+          "zh": "每次重訓結束後，他習慣將一匙巧克力口味乳清蛋白粉加入冰杏仁奶中搖勻飲用。"
+        },
+        {
+          "en": "Whey is derived naturally from milk during the cheese-making filtration process.",
+          "zh": "乳清是在製作起司的加工過濾過程中，從牛奶中自然提煉分離出來的天然產物。"
+        }
+      ],
+      "collocations": [
+        "whey protein powder"
+      ]
+    },
+    {
+      "id": 3892,
+      "word": "isolate",
+      "pos": "n. [U], v.",
+      "phonetic": "[ˋaɪsəˌlet]",
+      "definition": "分離乳清蛋白粉；隔離孤立",
+      "cefr": "B1",
+      "topic": "補品等級",
+      "examples": [
+        {
+          "en": "Lactose-intolerant athletes choose whey isolate for pure protein without stomach bloating.",
+          "zh": "患有乳糖不耐症的健友特別偏好選用零乳糖的分離乳清蛋白（Whey Isolate），完全不脹氣。"
+        },
+        {
+          "en": "Whey isolate undergoes extra cross-flow microfiltration to remove almost all fats and carbohydrates.",
+          "zh": "分離乳清蛋白經過了額外的交叉微濾處理，幾乎除淨了所有的脂肪與乳糖碳水化合物。"
+        },
+        {
+          "en": "Try to isolate the target muscle group by eliminating momentum and keeping strict form.",
+          "zh": "試著透過消除身體借力並保持嚴格動作規範，來充分孤立刺激目標肌群。"
+        }
+      ],
+      "collocations": [
+        "whey isolate"
+      ]
+    },
+    {
+      "id": 3893,
+      "word": "creatine",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkriətɪn]",
+      "definition": "肌酸；一水肌酸（增強爆發力）",
+      "cefr": "B1",
+      "topic": "運動補品",
+      "examples": [
+        {
+          "en": "Daily supplementation with five grams of pure creatine monohydrate boosts explosive power.",
+          "zh": "每天規律補充五公克一水肌酸粉能顯著提升肌肉細胞內磷酸肌酸儲備，大幅拉升爆發力與推力。"
+        },
+        {
+          "en": "Creatine saturates muscle cells with water, promoting cellular hydration and faster recovery.",
+          "zh": "肌酸能增加肌肉細胞內的水分保水度，促進細胞水合作用並加快肌力恢復速度。"
+        },
+        {
+          "en": "You do not need an aggressive loading phase when beginning to take creatine consistently.",
+          "zh": "長期規律服用肌酸其實不需要進行高劑量的填充期（Loading Phase），每天定量即可。"
+        }
+      ],
+      "collocations": [
+        "creatine monohydrate"
+      ]
+    },
+    {
+      "id": 3894,
+      "word": "electrolyte",
+      "pos": "n.",
+      "phonetic": "[ɪˋlɛktrəˌlaɪt]",
+      "definition": "電解質（鈉、鉀、鎂離子）",
+      "cefr": "B1",
+      "topic": "水分補充",
+      "examples": [
+        {
+          "en": "Drink electrolyte beverages during long summer runs to prevent painful muscle cramping.",
+          "zh": "在炎炎夏日戶外長跑時適度補充電解質運動飲料，能有效預防因大量排汗流失鈉離子引發的抽筋。"
+        },
+        {
+          "en": "Sweating excessively during hot yoga depletes vital electrolyte stores in the body.",
+          "zh": "在熱瑜珈課程中瘋狂大汗淋漓會迅速耗盡體內儲存的重要電解質礦物質。"
+        },
+        {
+          "en": "Replenishing sodium and potassium with electrolyte tablets quickly restores proper muscle contractions.",
+          "zh": "透過電解質發泡錠及時補充鈉離子與鉀離子，能迅速恢復肌肉神經的正常收縮傳導。"
+        }
+      ],
+      "collocations": [
+        "electrolyte balance"
+      ]
+    },
+    {
+      "id": 3895,
+      "word": "intake",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɪnˌtek]",
+      "definition": "攝取量；吸收；進氣口",
+      "cefr": "B1",
+      "topic": "飲食營養",
+      "examples": [
+        {
+          "en": "Active weightlifters aim for daily protein intake of 1.6 to 2.2 grams per kilogram.",
+          "zh": "規律進行高強度重訓的巨巨每日建議蛋白質攝取量為每公斤體重一至兩倍以上。"
+        },
+        {
+          "en": "Keep a food diary to make sure your daily caloric intake aligns with your weight targets.",
+          "zh": "記錄飲食日記能確保你每日的總熱量攝取量與設定的減重或增肌目標保持一致。"
+        },
+        {
+          "en": "Increasing your dietary fiber and water intake helps keep you satiated throughout the day.",
+          "zh": "增加日常飲食中的膳食纖維與飲水量攝取，能幫助你整天維持良好的飽足感。"
+        }
+      ],
+      "collocations": [
+        "daily protein intake"
+      ]
+    },
+    {
+      "id": 3896,
+      "word": "bulking",
+      "pos": "n. [U]",
+      "phonetic": "[ˋbʌlkɪŋ]",
+      "definition": "增肌期；增重增肌飲食",
+      "cefr": "B1",
+      "topic": "體態週期",
+      "examples": [
+        {
+          "en": "Clean bulking focuses on slight caloric surpluses with whole foods rather than junk food.",
+          "zh": "乾淨增肌期（Clean Bulking）強調透過原型優質食物維持微幅熱量盈餘，而非暴飲暴食垃圾食物。"
+        },
+        {
+          "en": "During his winter bulking phase, he gained five kilograms of solid muscle mass.",
+          "zh": "在冬季增肌期期間，他透過紮實重訓與充足營養成功增長了五公斤純肌肉維度。"
+        },
+        {
+          "en": "Dirty bulking often results in unnecessary fat gain that requires months of cutting later.",
+          "zh": "暴飲暴食式的骯髒增肌往往只會堆積大量多餘贅肉，日後必須耗費數月辛苦減脂。"
+        }
+      ],
+      "collocations": [
+        "clean bulking phase"
+      ]
+    },
+    {
+      "id": 3897,
+      "word": "cutting",
+      "pos": "n. [U], adj.",
+      "phonetic": "[ˋkʌtɪŋ]",
+      "definition": "減脂期；刷脂刷線條；銳利的",
+      "cefr": "B1",
+      "topic": "體態週期",
+      "examples": [
+        {
+          "en": "During the summer cutting phase, cardio volume increases to shred body fat.",
+          "zh": "在迎接夏日海灘的刷脂減脂期（Cutting），適度拉高有氧比例以刻畫出鋼鐵般的分明線條。"
+        },
+        {
+          "en": "Cutting requires patience and self-discipline to maintain lean muscle while losing stubborn fat.",
+          "zh": "減脂期需要極大的耐心與自律，才能在盡可能保留肌肉量的同時減掉頑固贅肉。"
+        },
+        {
+          "en": "She dropped her caloric intake by fifteen percent to initiate her pre-contest cutting protocol.",
+          "zh": "她將每日熱量攝取減少了百分之十五，正式啟動了健美賽前備賽減脂計畫。"
+        }
+      ],
+      "collocations": [
+        "cutting phase"
+      ]
+    },
+    {
+      "id": 3898,
+      "word": "soreness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsornɪs]",
+      "definition": "肌肉痠痛；疼痛",
+      "cefr": "B1",
+      "topic": "練後生理",
+      "examples": [
+        {
+          "en": "Delayed onset muscle soreness (DOMS) peaked 48 hours after heavy leg day.",
+          "zh": "瘋狂練腿日結束四十八小時後，強烈的延遲性肌肉酸痛（DOMS）達到高峰，連下樓梯都腿軟。"
+        },
+        {
+          "en": "Mild muscle soreness indicates that muscle tissue has experienced new micro-tears and stimulation.",
+          "zh": "適度的肌肉微酸感代表肌纖維組織經歷了全新的微小撕裂刺激並準備成長。"
+        },
+        {
+          "en": "Light swimming and contrast showers can help ease intense leg soreness after long workouts.",
+          "zh": "進行輕鬆的水中漫遊與冷熱水交替浴，能顯著舒緩重訓後雙腿劇烈的痠痛不適。"
+        }
+      ],
+      "collocations": [
+        "muscle soreness (DOMS)"
+      ]
+    },
+    {
+      "id": 3899,
+      "word": "consistency",
+      "pos": "n. [U]",
+      "phonetic": "[kənˋsɪstənsɪ]",
+      "definition": "持之以恆；一致性；黏稠度",
+      "cefr": "B1",
+      "topic": "成功心法",
+      "examples": [
+        {
+          "en": "Long-term workout consistency always triumphs over short-lived extreme motivation.",
+          "zh": "數年如一日持之以恆的規律訓練習慣，遠勝過三分鐘熱度、曇花一現的短暫狂熱。"
+        },
+        {
+          "en": "Building an impressive physique requires unwavering consistency in the gym and kitchen.",
+          "zh": "想要打造令人稱羨的健美體態，需要重訓房訓練與廚房飲食雙重自律的一貫堅持。"
+        },
+        {
+          "en": "Even on busy days, maintaining workout consistency by doing a twenty-minute session keeps habits alive.",
+          "zh": "即使在最忙碌的日子裡，抽出二十分鐘快練維持運動習慣的連貫性也能讓節奏不中斷。"
+        }
+      ],
+      "collocations": [
+        "workout consistency"
+      ]
+    },
+    {
+      "id": 3900,
+      "word": "discipline",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdɪsəplɪn]",
+      "definition": "自律；紀律約束；學科",
+      "cefr": "B1",
+      "topic": "精神意志",
+      "examples": [
+        {
+          "en": "Self-discipline turns fitness habits into a rewarding, lifelong lifestyle transformation.",
+          "zh": "強大的自律精神將枯燥的健身流汗昇華為一種讓人受用終身、身心蛻變的頂級生活方式。"
+        },
+        {
+          "en": "Motivation gets you started, but iron discipline keeps you showing up when you do not feel like it.",
+          "zh": "熱情衝動能讓你踏出第一步，但唯有鋼鐵般的自律能讓你在不想出門時依然風雨無阻。"
+        },
+        {
+          "en": "Practicing nutritional discipline when dining out prevents you from exceeding your macronutrient macros.",
+          "zh": "在外食聚餐時保持飲食紀律與份量克制，能防止三大營養素攝取超標脫軌。"
+        }
+      ],
+      "collocations": [
+        "self-discipline"
+      ]
+    }
+  ]
+}

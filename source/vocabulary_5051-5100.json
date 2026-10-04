@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,051–5,100 個單字（CEFR B1 中級）",
+  "batch": "5051-5100",
+  "range": "5051–5100",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5051,
+      "word": "diplomacy",
+      "pos": "n. [U]",
+      "phonetic": "[dɪˋploməsɪ]",
+      "definition": "全球國際氣候外交；外交斡旋",
+      "cefr": "B1",
+      "topic": "國際氣候",
+      "examples": [
+        {
+          "en": "International climate diplomacy at annual COP summits unites 190 nations to cap global warming.",
+          "zh": "每年聯合國氣候變遷大會（COP）上的跨國氣候外交斡旋，匯聚一百九十國攜手守護升溫防線。"
+        },
+        {
+          "en": "Skilled multilateral diplomacy resolved tense fishing boundary disputes between the neighboring states.",
+          "zh": "嫻熟專業的多邊外交協商斡旋，化解了鄰國之間因重疊專屬經濟海域漁權引發的劍拔弩張危機。"
+        },
+        {
+          "en": "Handled with patience and tact, quiet diplomacy often achieves far better breakthroughs than public threats.",
+          "zh": "只要秉持耐心與高超手腕，低調檯面下的靜默外交折衝往往能取得比公開威脅喊話更加深遠的實質突破。"
+        }
+      ],
+      "collocations": [
+        "climate diplomacy"
+      ]
+    },
+    {
+      "id": 5052,
+      "word": "treaty",
+      "pos": "n.",
+      "phonetic": "[ˋtritɪ]",
+      "definition": "巴黎氣候協定國際條約；協定",
+      "cefr": "B1",
+      "topic": "國際法規",
+      "examples": [
+        {
+          "en": "The historic Paris Agreement treaty legally binds signatories to limit temperature rise to 1.5°C.",
+          "zh": "具里程碑意義的《巴黎氣候協定》國際公約條約，在法律上約束各簽約國全力將升溫壓制在攝氏1.5度內。"
+        },
+        {
+          "en": "Both nations signed a bilateral extradition treaty to combat cross-border cybercrime syndicates.",
+          "zh": "兩國司法部長正式簽署雙邊引渡條約協定，全面聯手打擊猖獗的跨國電信網路詐騙與洗錢犯罪集團。"
+        },
+        {
+          "en": "Ratifying the international non-proliferation treaty required approval by a two-thirds senate majority.",
+          "zh": "正式批准這項國際限武條約，依法必須在國會參議院贏得超過三分之二絕對多數議員的贊成票。"
+        }
+      ],
+      "collocations": [
+        "international climate treaty"
+      ]
+    },
+    {
+      "id": 5053,
+      "word": "inventory",
+      "pos": "n.",
+      "phonetic": "[ˋɪnvən͵torɪ]",
+      "definition": "企業溫室氣體排碳盤查；庫存清單",
+      "cefr": "B1",
+      "topic": "碳盤查",
+      "examples": [
+        {
+          "en": "Listed enterprises conduct annual greenhouse gas inventories adhering strictly to ISO 14064 standards.",
+          "zh": "台灣全體上市櫃企業每年皆需遵循 ISO 14064 國際標準，嚴謹完成組織型溫室氣體碳排盤查。"
+        },
+        {
+          "en": "Store managers conducted a thorough physical inventory check before the annual clearance sale.",
+          "zh": "門市店長在年終換季出清特賣會前夕，帶領全體同仁連夜進行了徹底的實體門市庫存盤點造冊。"
+        },
+        {
+          "en": "The warehouse implemented barcode scanners to track electronic component inventory in real time.",
+          "zh": "物流倉儲全面導入手持式條碼雷射掃描槍，以即時掌控數萬項電子零組件的精準進出庫庫存清冊。"
+        }
+      ],
+      "collocations": [
+        "greenhouse gas inventory"
+      ]
+    },
+    {
+      "id": 5054,
+      "word": "scope",
+      "pos": "n. [U]",
+      "phonetic": "[skop]",
+      "definition": "溫室氣體排放範疇 (Scope 1/2/3)；範圍",
+      "cefr": "B1",
+      "topic": "盤查分類",
+      "examples": [
+        {
+          "en": "Companies must measure direct factory emissions in Scope 1 and supply chain transport in Scope 3.",
+          "zh": "企業在碳盤查時，必須精準計算範疇一（廠內直接排碳）與範疇三（龐大供應鏈運輸）的全部碳足跡。"
+        },
+        {
+          "en": "The project scope was expanded to include mobile app integration and bilingual support.",
+          "zh": "專案執行範圍在期中審查後獲得進一步擴充，納入了原生智慧型手機 App 介接與雙語介面開發。"
+        },
+        {
+          "en": "Investigating systemic public housing safety violations fell strictly within the regulatory scope of the inquiry.",
+          "zh": "針對全國社會住宅結構安全隱患展開全面調查，完全落在該獨立調查委員會法定被賦予的管轄職權範圍內。"
+        }
+      ],
+      "collocations": [
+        "Scope 1 2 3 emissions"
+      ]
+    },
+    {
+      "id": 5055,
+      "word": "CBAM",
+      "pos": "n. prop.",
+      "phonetic": "[si bæm]",
+      "definition": "歐盟碳邊境調整機制 (碳關稅 CBAM)",
+      "cefr": "B1",
+      "topic": "貿易壁壘",
+      "examples": [
+        {
+          "en": "The EU's CBAM regulation requires exporters to declare embedded carbon in imported steel and aluminum.",
+          "zh": "歐盟正式啟動「碳邊境調整機制」（CBAM），嚴格要求進口鋼鐵、水泥與鋁製品申報產品蘊含碳排。"
+        },
+        {
+          "en": "Taiwanese metal fastener manufacturers upgraded furnaces to comply with strict CBAM reporting guidelines.",
+          "zh": "台灣外銷歐洲的高階螺絲螺栓扣件製造廠，紛紛砸重金升級低碳節能電爐以符合嚴格的 CBAM 碳含量申報規範。"
+        },
+        {
+          "en": "Under CBAM rules, importers must purchase digital certificates corresponding to emissions in producing countries.",
+          "zh": "依照歐盟 CBAM 施行細則，歐盟進口商必須為進口產品在原產國所產生的碳排放量依規定購買數位碳憑證。"
+        }
+      ],
+      "collocations": [
+        "European Union CBAM"
+      ]
+    },
+    {
+      "id": 5056,
+      "word": "tariff",
+      "pos": "n.",
+      "phonetic": "[ˋtærɪf]",
+      "definition": "邊境碳關稅課徵；關稅",
+      "cefr": "B1",
+      "topic": "跨國經貿",
+      "examples": [
+        {
+          "en": "Carbon tariffs penalize high-polluting foreign goods to prevent domestic manufacturing carbon leakage.",
+          "zh": "課徵邊境「碳關稅」（Carbon Tariff）能防範高碳排商品傾銷，並避免本土傳統重工業外移產生碳洩漏。"
+        },
+        {
+          "en": "The government imposed a temporary 15% tariff on imported automobiles to shield local assembly jobs.",
+          "zh": "經濟部對進口外國整車課徵百分之十五的臨時保護性關稅，以捍衛本土汽車組裝廠數萬名基層工人的飯碗。"
+        },
+        {
+          "en": "Lowering international trade tariffs fosters cross-border commerce and lowers consumer retail prices.",
+          "zh": "透過雙邊貿易談判大幅調降國際進出口關稅，能顯著活絡跨國經貿往來並有效壓低一般民眾的消費物價。"
+        }
+      ],
+      "collocations": [
+        "carbon border tariff"
+      ]
+    },
+    {
+      "id": 5057,
+      "word": "fee",
+      "pos": "n.",
+      "phonetic": "[fi]",
+      "definition": "環境部企業排碳徵收碳費；費用",
+      "cefr": "B1",
+      "topic": "台灣政策",
+      "examples": [
+        {
+          "en": "Taiwan will levy carbon fees on large industrial emitters, offering discounted rates for rapid decarbonization.",
+          "zh": "台灣環境部正式向年排碳大戶徵收「碳費」（Carbon Fee），並對提出自主減量計畫之企業給予優惠費率。"
+        },
+        {
+          "en": "University students must pay tuition and registration fees before attending the semester's first lecture.",
+          "zh": "大學新鮮人必須在各學期第一堂正式授課開始前，依規定完成學雜費與學生平安保險等各項註冊費繳納。"
+        },
+        {
+          "en": "The ATM charged a nominal fifteen-dollar processing fee for out-of-network interbank cash withdrawals.",
+          "zh": "這台便利商店自動提款機在執行跨行提款作業時，依金融規章向持卡人扣取新台幣十五元手續費。"
+        }
+      ],
+      "collocations": [
+        "industrial carbon fee"
+      ]
+    },
+    {
+      "id": 5058,
+      "word": "tax",
+      "pos": "n., v.",
+      "phonetic": "[tæks]",
+      "definition": "國家總量管制碳稅；徵稅",
+      "cefr": "B1",
+      "topic": "碳定價",
+      "examples": [
+        {
+          "en": "Carbon tax revenues are reinvested into subsidizing community solar installations and electric buses.",
+          "zh": "政府將課徵碳稅（Carbon Tax）所得的公帑專款專用，全力用於補貼偏鄉社區太陽能與電動公車普及。"
+        },
+        {
+          "en": "Working citizens file their annual personal income tax returns online before the end of May.",
+          "zh": "辛苦打拼的全體納稅義務人，依法於每年五月三十一日截止日前透過網路報稅系統申報綜合所得稅。"
+        },
+        {
+          "en": "Preparing for three challenging final exams in a single week heavily taxed the tired student's stamina.",
+          "zh": "在短短一週內連續應付三場長達三小時的硬核期末考，極大考驗並消耗了這位疲憊學子最後的體能與意志極限。"
+        }
+      ],
+      "collocations": [
+        "national carbon tax"
+      ]
+    },
+    {
+      "id": 5059,
+      "word": "exchange",
+      "pos": "n.",
+      "phonetic": "[ɪksˋtʃendʒ]",
+      "definition": "臺灣碳權交易所 (TCX)；交換",
+      "cefr": "B1",
+      "topic": "碳權交易",
+      "examples": [
+        {
+          "en": "The Taiwan Carbon Solution Exchange (TCX) allows certified corporations to trade verified carbon credits.",
+          "zh": "臺灣碳權交易所（TCX）正式開市營運，提供經國際認證的高品質碳權在透明平台上公開合法交易。"
+        },
+        {
+          "en": "She visited the local currency exchange desk at the airport to convert leftover yen back into dollars.",
+          "zh": "她在抵達機場出境大廳後前往外幣兌換水單櫃檯，將出國旅遊花剩的多餘日圓現鈔換回新台幣。"
+        },
+        {
+          "en": "High school students joined an international cultural exchange program to practice German in Berlin.",
+          "zh": "幾位熱愛異國文化的高中學子主動報名參加國際青年文化交流計畫，遠赴德國柏林寄宿家庭精進德語會話。"
+        }
+      ],
+      "collocations": [
+        "Carbon Solution Exchange"
+      ]
+    },
+    {
+      "id": 5060,
+      "word": "credit",
+      "pos": "n.",
+      "phonetic": "[ˋkrɛdɪt]",
+      "definition": "國際認證碳信用額度 (碳權)；信用",
+      "cefr": "B1",
+      "topic": "碳資產",
+      "examples": [
+        {
+          "en": "One carbon credit represents the verified reduction or removal of one metric ton of CO2 equivalent.",
+          "zh": "一單位標準「碳信用額度」（Carbon Credit 碳權），代表經嚴格核證已實質減除或封存一公噸二氧化碳當量。"
+        },
+        {
+          "en": "The bank evaluated the borrower's credit score before approving the thirty-year home mortgage loan.",
+          "zh": "商業銀行房貸授信專員在核准該筆長達三十年的首購自住青年安心成家房貸前，仔細調閱申請人的聯徵信用評分。"
+        },
+        {
+          "en": "The visionary film director generously gave full creative credit to his talented visual effects crew.",
+          "zh": "這位才華洋溢的電影名導在國際影展頒獎台上，將作品的巨大成功由衷歸功於背後才華橫溢的特效技術團隊。"
+        }
+      ],
+      "collocations": [
+        "verified carbon credit"
+      ]
+    },
+    {
+      "id": 5061,
+      "word": "allowance",
+      "pos": "n.",
+      "phonetic": "[əˋlaʊəns]",
+      "definition": "總量管制之碳排放配額；津貼",
+      "cefr": "B1",
+      "topic": "配額交易",
+      "examples": [
+        {
+          "en": "Under cap-and-trade rules, factories that exceed their carbon allowance must buy extra permits from cleaner peers.",
+          "zh": "在總量管制交易體系下，排碳超標的工廠必須出資向減碳優良的低碳同業購買額外的排放配額。"
+        },
+        {
+          "en": "Parents gave their twelve-year-old child a modest weekly allowance to encourage money-saving habits.",
+          "zh": "父母每週定期發放少許零用錢（Allowance）給剛上國中的孩子，引導他從小養成理性記帳與儲蓄儲蓄習慣。"
+        },
+        {
+          "en": "Airlines allow a standard checked baggage allowance of twenty-three kilograms per international passenger.",
+          "zh": "國際線客運航空公司明文規範，經濟艙旅客享有每人單件行李限重二十三公斤的免費託運隨身行李額度。"
+        }
+      ],
+      "collocations": [
+        "carbon emission allowance"
+      ]
+    },
+    {
+      "id": 5062,
+      "word": "offset",
+      "pos": "v., n. [U]",
+      "phonetic": "[ˋɔf͵sɛt]",
+      "definition": "購買高品質碳權進行碳抵換；抵銷",
+      "cefr": "B1",
+      "topic": "碳中和作為",
+      "examples": [
+        {
+          "en": "Tech companies purchase Gold Standard forestry credits to offset residual emissions from air travel.",
+          "zh": "跨國科技巨頭購買榮獲國際黃金標準認證的森林保育碳權，藉以抵換員工跨國出差搭機產生的殘餘碳排。"
+        },
+        {
+          "en": "Robust export revenue growth helped offset domestic market downturns during the economic recession.",
+          "zh": "台灣高階精密電子零件外銷出口額的逆勢強勁成長，有效彌補抵銷了內需零售市場景氣放緩的衝擊。"
+        },
+        {
+          "en": "The airline offered passengers a voluntary green check-box option to purchase carbon offset certificates.",
+          "zh": "國際航空公司在線上訂位購票網頁上，特別提供旅客勾選加購具有國際認證的自願性碳抵換憑證。"
+        }
+      ],
+      "collocations": [
+        "carbon offset credit"
+      ]
+    },
+    {
+      "id": 5063,
+      "word": "baseline",
+      "pos": "n.",
+      "phonetic": "[ˋbesˌlaɪn]",
+      "definition": "減碳計算基準年碳排基線；底線",
+      "cefr": "B1",
+      "topic": "減量參考",
+      "examples": [
+        {
+          "en": "Using 2020 emissions as a baseline, the multinational pledged to cut carbon output by 50% before 2030.",
+          "zh": "企業以 2020 年的排碳總量作為計算基準年基線（Baseline），莊嚴宣示在 2030 年前達成碳排直接砍半。"
+        },
+        {
+          "en": "Physicians measured resting heart rates to establish a health baseline before patients began aerobic therapy.",
+          "zh": "心臟內科醫師在安排病患進行高強度有氧運動復健治療前，先測量靜態安靜心率以建立個人基礎生理基線。"
+        },
+        {
+          "en": "The tennis ball landed millimeter-close but strictly inside the outer baseline, scoring a winning ace.",
+          "zh": "網球名將發出一記時速超過兩百公里的精準外角重砲發球，球皮擦著底線白線內側壓線落地，漂亮奪得愛司球得分。"
+        }
+      ],
+      "collocations": [
+        "emissions calculation baseline"
+      ]
+    },
+    {
+      "id": 5064,
+      "word": "additionality",
+      "pos": "n. [U]",
+      "phonetic": "[ə͵dɪʃəˋnælətɪ]",
+      "definition": "碳權審查「外加性」原則；附加性",
+      "cefr": "B1",
+      "topic": "碳權審核",
+      "examples": [
+        {
+          "en": "Carbon projects must prove additionality, demonstrating the emission reduction wouldn't happen without project funding.",
+          "zh": "碳權開發專案必須通過極為嚴格的「外加性」（Additionality）審查，證明該減碳作為絕非法律既定要求。"
+        },
+        {
+          "en": "Auditors rejected the proposed carbon credit application because the solar installation lacked demonstrable additionality.",
+          "zh": "獨立查驗認證機構斷然駁回了該太陽能電廠的碳權核發申請，原因在於其缺乏法規之外具備說服力的額外外加性。"
+        },
+        {
+          "en": "Stringent standards enforce financial additionality so carbon finance truly accelerates new green capacity.",
+          "zh": "國際碳標準嚴格把關財務外加性指標，以確保流入碳市場的資金能真正催生出全新的再生能源建設。"
+        }
+      ],
+      "collocations": [
+        "prove project additionality"
+      ]
+    },
+    {
+      "id": 5065,
+      "word": "permanence",
+      "pos": "n. [U]",
+      "phonetic": "[ˋpɝmənəns]",
+      "definition": "二氧化碳封存百年永久性；持久",
+      "cefr": "B1",
+      "topic": "封存品質",
+      "examples": [
+        {
+          "en": "Direct air capture guarantees 1,000 years of storage permanence, far superior to short-term tree plantings.",
+          "zh": "採用直接空氣捕捉技術注入深層玄武岩礦化，能保證長達千年的「碳封存永久性」（Permanence）。"
+        },
+        {
+          "en": "Forest fires and disease outbreaks pose inherent risks to the long-term permanence of biological carbon sinks.",
+          "zh": "突如其來的極端森林野火與松材線蟲等病蟲害爆發，是森林生物碳匯在維持長期固碳永久性上難以規避的宿命風險。"
+        },
+        {
+          "en": "Carving treaties into solid granite pillars symbolized the solemn permanence of the peace pact.",
+          "zh": "將和平盟誓銘文深深刻鑿在巍峨堅硬的花崗岩巨石石柱上，象徵著兩國締結和平誓約永世長存的永久性。"
+        }
+      ],
+      "collocations": [
+        "carbon storage permanence"
+      ]
+    },
+    {
+      "id": 5066,
+      "word": "afforestation",
+      "pos": "n. [U]",
+      "phonetic": "[æ͵fɔrɪsˋteʃən]",
+      "definition": "大規模植樹造林綠碳工程",
+      "cefr": "B1",
+      "topic": "自然碳匯",
+      "examples": [
+        {
+          "en": "Large-scale coastal afforestation stabilizes vulnerable sandy shorelines while capturing tons of atmospheric carbon.",
+          "zh": "在沿海多風地區推動大規模海岸林「植樹造林」（Afforestation），既能固砂防風又能吸納巨量溫室氣體。"
+        },
+        {
+          "en": "Government-sponsored afforestation campaigns turned degraded abandoned hillsides into vibrant pine woodlands.",
+          "zh": "林業保育署積極推動的荒山造林專案，成功將昔日過度開墾受蝕的廢棄山坡地轉化為鬱鬱蔥蔥的健康針闊葉林。"
+        },
+        {
+          "en": "Ecological afforestation prioritizes planting native diverse hardwoods rather than single-species commercial monocultures.",
+          "zh": "現代生態造林工法強調全面混栽台灣原生多元闊葉樹種，徹底摒棄生態單一、抗病力差的純商業單一樹種林相。"
+        }
+      ],
+      "collocations": [
+        "coastal afforestation project"
+      ]
+    },
+    {
+      "id": 5067,
+      "word": "sink",
+      "pos": "n.",
+      "phonetic": "[sɪŋk]",
+      "definition": "大自然森林土壤天然碳匯；水槽",
+      "cefr": "B1",
+      "topic": "生態吸收",
+      "examples": [
+        {
+          "en": "Preserving ancient mangrove wetlands maintains a potent blue carbon sink that absorbs carbon forty times faster than forests.",
+          "zh": "悉心保護紅樹林濱海濕地能維持強大的「藍碳碳匯」（Carbon Sink），其固碳速度高達陸地熱帶雨林的四十倍。"
+        },
+        {
+          "en": "Plumbers unclogged the blocked kitchen sink pipe by clearing accumulated food grease deposits.",
+          "zh": "水電師傅利用通管專用鋼絞線工具，迅速清除了廚房不鏽鋼流理台洗碗水槽下方沉積多年的頑固油脂阻塞。"
+        },
+        {
+          "en": "Peatlands and undisturbed oceans function as the planet’s largest long-term planetary carbon sinks.",
+          "zh": "廣大泥炭地濕地與未受污染的深海大洋，是大自然母親調節全球氣候最龐大、最長效的天然地球碳匯。"
+        }
+      ],
+      "collocations": [
+        "natural blue carbon sink"
+      ]
+    },
+    {
+      "id": 5068,
+      "word": "sequestration",
+      "pos": "n. [U]",
+      "phonetic": "[͵sikwɛsˋtreʃən]",
+      "definition": "工業深層地質碳捕捉封存 (CCUS)",
+      "cefr": "B1",
+      "topic": "負碳技術",
+      "examples": [
+        {
+          "en": "Carbon capture and geological sequestration (CCUS) traps smokestack CO2 and injects it deep underground.",
+          "zh": "導入碳捕捉利用與地質封存（CCUS）技術，將工廠煙囪廢氣中的二氧化碳在源頭液化並深埋地底千米。"
+        },
+        {
+          "en": "Deep saline aquifers provide secure geological formations for permanent carbon sequestration.",
+          "zh": "陸上與近海數千公尺深部的深層鹽水層地質構造，為二氧化碳提供了天然且密閉安全的永久封存地質構造。"
+        },
+        {
+          "en": "Subsurface monitoring sensors verify that no injected gas escapes during deep geological sequestration.",
+          "zh": "佈署於地層深部的超靈敏微震監控感測陣列，日夜嚴密監測確認地底封存的二氧化碳氣體未發生絲毫洩漏滲逸。"
+        }
+      ],
+      "collocations": [
+        "carbon capture and sequestration"
+      ]
+    },
+    {
+      "id": 5069,
+      "word": "capture",
+      "pos": "n. [U], v.",
+      "phonetic": "[ˋkæptʃɚ]",
+      "definition": "巨型直接空氣碳捕捉設施 (DAC)；捕捉",
+      "cefr": "B1",
+      "topic": "移除技術",
+      "examples": [
+        {
+          "en": "Direct air capture (DAC) vacuum fans pull ambient air through chemical filters to extract CO2 directly.",
+          "zh": "巨型直接空氣捕捉機組（DAC）利用渦輪風扇抽入環境空氣，透過化學吸附劑直接自大氣中濾出二氧化碳。"
+        },
+        {
+          "en": "The wildlife photographer spent hours camouflaged in the grass to capture the rare leopard on film.",
+          "zh": "國家地理野生動物攝影師身披迷彩偽裝草服，在濕地草叢中耐著蚊蟲叮咬苦守數小時，只為捕捉到珍禽展翅的特寫。"
+        },
+        {
+          "en": "The police successfully carried out the capture of the armed fugitive without any civilian casualties.",
+          "zh": "霹靂小組全副武裝拂曉出擊，以迅雷不及掩耳之勢成功生擒逮捕了持槍逃亡的重刑通緝犯，未造成任何無辜民眾受傷。"
+        }
+      ],
+      "collocations": [
+        "Direct Air Capture (DAC)"
+      ]
+    },
+    {
+      "id": 5070,
+      "word": "disclosure",
+      "pos": "n. [U]",
+      "phonetic": "[dɪsˋkloʒɚ]",
+      "definition": "企業永續報告書 ESG 資訊揭露",
+      "cefr": "B1",
+      "topic": "資訊透明",
+      "examples": [
+        {
+          "en": "Mandatory ESG disclosure regulations hold public corporations accountable for climate risk strategies.",
+          "zh": "政府推動強制性 ESG 永續資訊透明揭露（Disclosure），要求所有上市櫃公司向投資人詳細說明氣候風險對策。"
+        },
+        {
+          "en": "Whistleblower disclosures about financial wrongdoing sparked a thorough investigation by federal prosecutors.",
+          "zh": "內部吹哨者向廉政主管機關大膽揭發的高層作假帳貪腐內幕，引發了檢察官跨部門全面搜索與深度調查。"
+        },
+        {
+          "en": "Real estate purchase contracts require mandatory disclosure of past structural damage and flood risks.",
+          "zh": "內政部成屋買賣定型化契約明文規範，屋主售屋時必須誠實揭露房屋是否曾有結構損壞裂痕或淹水海砂屋病歷。"
+        }
+      ],
+      "collocations": [
+        "ESG sustainability disclosure"
+      ]
+    },
+    {
+      "id": 5071,
+      "word": "materiality",
+      "pos": "n. [U]",
+      "phonetic": "[mə͵tɪrɪˋælətɪ]",
+      "definition": "雙重重大性評估 (Materiality)；實質性",
+      "cefr": "B1",
+      "topic": "永續評估",
+      "examples": [
+        {
+          "en": "Double materiality assessment evaluates both financial impacts on the business and the company's impacts on nature.",
+          "zh": "實施「雙重重大性評估」（Double Materiality），同時衡量氣候風險對公司財務的衝擊及公司對環境的實質影響。"
+        },
+        {
+          "en": "Certified auditors evaluate materiality thresholds to determine which accounting discrepancies require public restatements.",
+          "zh": "執業會計師依循審計準則嚴謹設定「重大性門檻」（Materiality），以裁定何種財務報表分錄偏差必須強制更正申報。"
+        },
+        {
+          "en": "The sustainability report organizes ESG topics in a matrix ranked strictly by stakeholder materiality.",
+          "zh": "該年度企業永續報告書將各項環境、社會與治理議題，嚴格依據利害關係人關注之重大性矩陣依序編排呈現。"
+        }
+      ],
+      "collocations": [
+        "double materiality assessment"
+      ]
+    },
+    {
+      "id": 5072,
+      "word": "greenwashing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋgrin͵wɑʃɪŋ]",
+      "definition": "企業不實誇大行銷之「漂綠行為」",
+      "cefr": "B1",
+      "topic": "誠信原則",
+      "examples": [
+        {
+          "en": "Financial regulators crack down on corporate greenwashing to protect ethical ESG mutual fund investors.",
+          "zh": "金管會全面嚴厲取締各類虛假不實的「企業漂綠行為」（Greenwashing），捍衛綠色共同基金投資人權益。"
+        },
+        {
+          "en": "Consumers are increasingly skeptical of vague 'eco-friendly' labels that amount to nothing more than greenwashing.",
+          "zh": "越來越多具備環保意識的當代消費者，對市面上那些缺乏第三方檢驗佐證、純屬漂綠行銷話術的模糊環保標籤嗤之以鼻。"
+        },
+        {
+          "en": "An oil conglomerate faced heavy advertising fines for blatant greenwashing after highlighting tiny clean energy investments.",
+          "zh": "某跨國傳統石化巨擘因在電視形象廣告中過度誇大微不足道的藻類生質能投資，遭公平交易委員會重罰涉嫌惡意漂綠。"
+        }
+      ],
+      "collocations": [
+        "prevent corporate greenwashing"
+      ]
+    },
+    {
+      "id": 5073,
+      "word": "verification",
+      "pos": "n. [U]",
+      "phonetic": "[͵vɛrəfəˋkeʃən]",
+      "definition": "第三方公正機構獨立查證驗證",
+      "cefr": "B1",
+      "topic": "查驗把關",
+      "examples": [
+        {
+          "en": "International certification bodies conduct rigorous on-site verification before issuing carbon offset certificates.",
+          "zh": "國際公正第三方認證機構在頒發碳權憑證前，必須派員親赴現場執行嚴謹細緻的數據獨立查證（Verification）。"
+        },
+        {
+          "en": "Two-factor authentication provides an extra layer of identity verification to protect banking apps from unauthorized access.",
+          "zh": "登入網路銀行全面強制啟用簡訊 OTP 動態密碼或生物辨識雙重驗證，為個人數位資產構築堅不可摧的資安防護壁壘。"
+        },
+        {
+          "en": "Lab scientists conducted independent experimental verification to confirm the cancer drug's efficacy.",
+          "zh": "國家級生技實驗室科學團隊展開了嚴格的平行獨立實驗驗證，最終證實了這款標靶抗癌新藥的顯著抑瘤療效。"
+        }
+      ],
+      "collocations": [
+        "third-party verification audit"
+      ]
+    },
+    {
+      "id": 5074,
+      "word": "assurance",
+      "pos": "n. [U]",
+      "phonetic": "[əˋʃʊrəns]",
+      "definition": "會計師出具之永續報告確信報告",
+      "cefr": "B1",
+      "topic": "確信服務",
+      "examples": [
+        {
+          "en": "Certified public accountants provide independent limited assurance on sustainability emissions metrics.",
+          "zh": "執業會計師依據國際審計標準出具獨立「永續確信報告」（Assurance），大幅提升報告書數據公信力。"
+        },
+        {
+          "en": "The airline representative gave passengers calm personal assurances that their luggage would arrive safely.",
+          "zh": "地勤主管語氣堅定且誠懇地向焦慮的轉機旅客拍胸脯保證，延遲的託運行李必定在下一班直飛班機準時隨同送達。"
+        },
+        {
+          "en": "Quality assurance testing ensures that zero defective microchips leave the fabrication cleanroom.",
+          "zh": "嚴謹的品保測試（QA）標準層層把關，嚴格確保絕不讓任何一顆帶有微小缺陷的微處理器晶片流出晶圓無塵室。"
+        }
+      ],
+      "collocations": [
+        "independent auditor assurance"
+      ]
+    },
+    {
+      "id": 5075,
+      "word": "transition",
+      "pos": "n. [U], v.",
+      "phonetic": "[trænˋzɪʃən]",
+      "definition": "兼顧基層勞工的「公正轉型」；過渡",
+      "cefr": "B1",
+      "topic": "社會關懷",
+      "examples": [
+        {
+          "en": "A just energy transition provides retraining and pension safety nets for displaced coal miners.",
+          "zh": "國家在推動淨零時堅定落實「公正轉型」（Just Transition），為傳統石化產業勞工提供跨界技能轉型與工作保障。"
+        },
+        {
+          "en": "High school graduates experience an exciting yet challenging social transition when moving into college dorms.",
+          "zh": "高中畢業生在隻身離家搬入大學宿舍獨立生活時，往往會面臨一段既充滿新鮮感又極具挑戰的心理與社交過渡期。"
+        },
+        {
+          "en": "The software company managed a seamless cloud transition without experiencing a single minute of service outage.",
+          "zh": "這家跨國軟體服務商在長達半年的系統上雲遷移過渡中規劃得宜，奇蹟般達成全時段零斷線、零當機的卓越表現。"
+        }
+      ],
+      "collocations": [
+        "just energy transition"
+      ]
+    },
+    {
+      "id": 5076,
+      "word": "circular",
+      "pos": "adj.",
+      "phonetic": "[ˋsɝkjəlɚ]",
+      "definition": "零廢棄循環經濟閉環的；圓形的",
+      "cefr": "B1",
+      "topic": "循環商業",
+      "examples": [
+        {
+          "en": "Transitioning to a circular economy model turns textile offcuts and worn garments into new designer apparel.",
+          "zh": "積極轉型為「循環經濟」（Circular Economy）商業模式，能將裁縫碎布與舊衣完全解構再造為全新名牌服飾。"
+        },
+        {
+          "en": "Guests were seated around a large circular dining table during the wedding celebration.",
+          "zh": "盛大的傳統台菜海鮮喜宴現場，全體貴賓親友笑意盈盈地圍坐在鋪滿喜慶紅布的大型圓形大餐桌旁舉杯同慶。"
+        },
+        {
+          "en": "The school administration distributed a circular letter to parents reminding them of upcoming sports day safety rules.",
+          "zh": "學校教務處印發了一封致全體家長的通報通告傳閱信件，溫馨提醒即將到來的全校運動會各項交通與安全注意事項。"
+        }
+      ],
+      "collocations": [
+        "circular economy model"
+      ]
+    },
+    {
+      "id": 5077,
+      "word": "procurement",
+      "pos": "n. [U]",
+      "phonetic": "[proˋkjʊrmənt]",
+      "definition": "綠色永續供應鏈採購要求；採購",
+      "cefr": "B1",
+      "topic": "供應鏈管理",
+      "examples": [
+        {
+          "en": "Global tech brands mandate 100% green energy procurement across all tier-one component suppliers.",
+          "zh": "國際科技一線品牌全面將「百分之百綠電使用」納入核心供應商的綠色永續採購合約（Procurement）必備條款。"
+        },
+        {
+          "en": "Public defense procurement of naval patrol ships requires transparent competitive tendering.",
+          "zh": "國防海巡巡防艦艇建造政府採購招標案，全程遵循嚴格的政府採購法規公開透明競標程序辦理。"
+        },
+        {
+          "en": "The hospital streamlined pharmaceuticals procurement to eliminate emergency shortages of essential medications.",
+          "zh": "該醫學中心全面整合並優化了全院藥品採購倉儲物流流程，徹底根除急救重症關鍵處方藥物的缺藥中斷風險。"
+        }
+      ],
+      "collocations": [
+        "green sustainable procurement"
+      ]
+    },
+    {
+      "id": 5078,
+      "word": "benchmark",
+      "pos": "n., v.",
+      "phonetic": "[ˋbɛntʃˌmɑrk]",
+      "definition": "全球同業減碳標竿標準；基準",
+      "cefr": "B1",
+      "topic": "業界標竿",
+      "examples": [
+        {
+          "en": "Companies compare their water and energy efficiency against world-class sustainability benchmarks.",
+          "zh": "企業定期將自身的工廠製程用水回收率與節能表現，與全球同業最高標準的頂尖永續標竿（Benchmark）進行比對。"
+        },
+        {
+          "en": "The new graphics card shattered every standard gaming performance benchmark in lab tests.",
+          "zh": "這款旗艦級次世代電競獨立顯示卡，在專業媒體實驗室跑分評測中徹底粉碎打破了所有既定遊戲效能基準標竿。"
+        },
+        {
+          "en": "School districts use standardized reading comprehension exams to benchmark student progress annually.",
+          "zh": "教育局每年定期實施標準化國語文閱讀理解成就評量測驗，藉此客觀衡量評估各學區學子的學習成就進步幅度。"
+        }
+      ],
+      "collocations": [
+        "sustainability performance benchmark"
+      ]
+    },
+    {
+      "id": 5079,
+      "word": "trajectory",
+      "pos": "n.",
+      "phonetic": "[trəˋdʒɛktərɪ]",
+      "definition": "符合科學減碳路徑軌跡；軌跡",
+      "cefr": "B1",
+      "topic": "減量路徑",
+      "examples": [
+        {
+          "en": "The enterprise mapped a steep emissions reduction trajectory aligned with the Science Based Targets initiative (SBTi).",
+          "zh": "該企業規劃出與「科學基礎減碳目標倡議」（SBTi）標準完全吻合的陡峭減排路徑軌跡（Trajectory）。"
+        },
+        {
+          "en": "Tracking ballistic artillery trajectory allows defense radars to pinpoint the origin of enemy mortar fire.",
+          "zh": "國防相控陣雷達精確追蹤敵軍火砲迫擊砲彈的拋物線飛行彈道軌跡，能在數秒內逆向定位敵方發射陣地座標。"
+        },
+        {
+          "en": "After securing the seed investment, the promising biotechnology startup followed an aggressive upward growth trajectory.",
+          "zh": "在順利引進首輪天使投資挹注後，這家極具爆發潛力的生醫新創迅速踏上了令人矚目的超高速向上成長軌跡。"
+        }
+      ],
+      "collocations": [
+        "1.5°C emissions trajectory"
+      ]
+    },
+    {
+      "id": 5080,
+      "word": "neutrality",
+      "pos": "n. [U]",
+      "phonetic": "[njuˋtrælətɪ]",
+      "definition": "達成淨零碳中和承諾；中立",
+      "cefr": "B1",
+      "topic": "終極承諾",
+      "examples": [
+        {
+          "en": "Achieving corporate carbon neutrality requires eliminating 90% of gross emissions and sequestering the rest.",
+          "zh": "達成名副其實的「碳中和」（Carbon Neutrality），必須先在生產端實質減排九成，剩餘難減部分再行封存。"
+        },
+        {
+          "en": "Switzerland maintained official diplomatic neutrality throughout decades of devastating continental warfare.",
+          "zh": "瑞士聯邦政府在長達數個世紀歐洲大陸列強烽火連天的血腥戰爭中，始終恪守嚴格的武裝永久外交中立國地位。"
+        },
+        {
+          "en": "Internet advocates campaign vigorously for strict net neutrality rules to prevent service providers from throttling traffic.",
+          "zh": "數位人權團體大力疾呼政府立法落實嚴格的「網路中立性」（Net Neutrality）原則，嚴防電信龍頭針對特定網頁惡意限速。"
+        }
+      ],
+      "collocations": [
+        "carbon neutrality pledge"
+      ]
+    },
+    {
+      "id": 5081,
+      "word": "hydrogen",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhaɪdrədʒən]",
+      "definition": "水電解零碳純綠氫能源；氫",
+      "cefr": "B1",
+      "topic": "潔淨燃料",
+      "examples": [
+        {
+          "en": "Green hydrogen produced from offshore wind electrolysis fuels zero-emission blast furnaces in steelmaking.",
+          "zh": "利用外海離岸風電水電解製成的純「綠氫」（Green Hydrogen），能替代焦炭作為零碳煉鋼的革命性清潔燃料。"
+        },
+        {
+          "en": "Hydrogen fuel cell city buses emit only pure water vapor from exhaust pipes, keeping roads clean.",
+          "zh": "投入商業營運的氫燃料電池都會市區公車，行駛時排氣管僅排出純淨水蒸氣，徹底告別黑煙柴油廢氣污染。"
+        },
+        {
+          "en": "Hydrogen is the lightest, most abundant chemical element scattered across the observable universe.",
+          "zh": "氫是元素週期表中最輕的元素，也是浩瀚可觀測宇宙中分佈最廣、含量最為豐富的終極化學元素。"
+        }
+      ],
+      "collocations": [
+        "green hydrogen fuel"
+      ]
+    },
+    {
+      "id": 5082,
+      "word": "feedstock",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfid͵stɑk]",
+      "definition": "可再生生質原物料進料；原料",
+      "cefr": "B1",
+      "topic": "化工轉型",
+      "examples": [
+        {
+          "en": "Chemical refiners replace petroleum feedstocks with agricultural sugarcane waste to produce bio-plastics.",
+          "zh": "石化煉油大廠逐步以甘蔗渣等農業廢棄物作為「再生生物質進料」（Feedstock），生產無毒環保生物塑料。"
+        },
+        {
+          "en": "Using recycled cooking oil as raw feedstock produces sustainable aviation fuel (SAF) for passenger flights.",
+          "zh": "將全台小吃攤回收的廢棄食用油轉化為高品質生質原料，能提煉出供長程民航班機使用的永續航空燃油（SAF）。"
+        },
+        {
+          "en": "Rising costs of crude oil petrochemical feedstocks squeezed manufacturing profit margins across the plastics industry.",
+          "zh": "國際原油基礎石化輕油裂解進料成本的居高不下，大幅壓縮了下游傳統塑膠射出加工製造業的微薄毛利率空間。"
+        }
+      ],
+      "collocations": [
+        "renewable bio-feedstock"
+      ]
+    },
+    {
+      "id": 5083,
+      "word": "electrification",
+      "pos": "n. [U]",
+      "phonetic": "[ɪ͵lɛktrəfəˋkeʃən]",
+      "definition": "工廠高溫鍋爐全電氣化改造",
+      "cefr": "B1",
+      "topic": "製程脫碳",
+      "examples": [
+        {
+          "en": "Complete electrification of industrial steam boilers eliminates fossil diesel combustion entirely.",
+          "zh": "將工廠高溫蒸汽鍋爐全面實施「電氣化改造」（Electrification），從源頭徹底淘汰燃燒柴油與重油。"
+        },
+        {
+          "en": "Rural railway electrification shortened passenger travel times and improved reliability across mountain routes.",
+          "zh": "台灣鐵路全線完成電氣化工程後，大幅縮短了南迴線與花東縱谷鐵路行車時間，並提升了高山鐵路妥善率。"
+        },
+        {
+          "en": "Widespread fleet electrification requires substantial municipal investment in curbside electric vehicle charging poles.",
+          "zh": "要大規模推動計程車與物流車隊全面純電化，市府必須在各街廓路邊停車格積極加速佈設公用慢充與快充充電樁。"
+        }
+      ],
+      "collocations": [
+        "industrial boiler electrification"
+      ]
+    },
+    {
+      "id": 5084,
+      "word": "audit",
+      "pos": "n., v.",
+      "phonetic": "[ˋɔdɪt]",
+      "definition": "廠區能源使用效率節能診斷稽核",
+      "cefr": "B1",
+      "topic": "能源體檢",
+      "examples": [
+        {
+          "en": "Comprehensive factory energy audits identified massive heat recovery opportunities in exhaust flues.",
+          "zh": "專業工程師執行全面的工廠「能源稽核診斷」（Energy Audit），在煙囪排氣管中抓出龐大的廢熱回收再發電商機。"
+        },
+        {
+          "en": "Independent certified accountants completed the annual financial audit of the listed technology firm.",
+          "zh": "國際四大會計師事務所執業會計師獨立完成了該大型半導體上市公司年度財務報表的實地查核與審計稽核。"
+        },
+        {
+          "en": "She received permission to informally audit the advanced graduate seminar in behavioral economics.",
+          "zh": "經取得授課教授欣然同意後，這名大三學子以非正式旁聽生身分，全程旁聽這門高階行為經濟學研究所研討課。"
+        }
+      ],
+      "collocations": [
+        "energy efficiency audit"
+      ]
+    },
+    {
+      "id": 5085,
+      "word": "mitigation",
+      "pos": "n. [U]",
+      "phonetic": "[͵mɪtəˋgeʃən]",
+      "definition": "氣候實體與轉型風險緩釋對策",
+      "cefr": "B1",
+      "topic": "風險對策",
+      "examples": [
+        {
+          "en": "Coastal flood barriers provide vital climate risk mitigation protecting seaward industrial zones.",
+          "zh": "興建加高加固的海堤防波閘門，為濱海工業區提供了防範海平面上升與風暴潮的關鍵風險緩釋對策（Mitigation）。"
+        },
+        {
+          "en": "Planting hillside cover crops serves as an effective soil erosion mitigation technique along steep orchards.",
+          "zh": "在陡峭果園山坡上廣泛種植香根草等覆蓋作物，是極佳的水土保持工法，能發揮顯著減緩土壤流失沖刷的效果。"
+        },
+        {
+          "en": "Early arbitration and open communication facilitated dispute mitigation before lawsuits reached the court.",
+          "zh": "及早引入中立仲裁機制並保持理性通暢的雙向溝通，有效化解了合約分歧，達成了訴訟開庭前的爭端緩解與和解。"
+        }
+      ],
+      "collocations": [
+        "climate risk mitigation"
+      ]
+    },
+    {
+      "id": 5086,
+      "word": "adaptation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ædæpˋteʃən]",
+      "definition": "乾旱抗洪等氣候變遷調適策略",
+      "cefr": "B1",
+      "topic": "調適能力",
+      "examples": [
+        {
+          "en": "Farmers adopt climate adaptation strategies by cultivating drought-tolerant crop varieties.",
+          "zh": "面對日益頻繁的極端氣候，農民積極採取「氣候調適策略」（Adaptation），改種抗旱節水的高經濟價值作物。"
+        },
+        {
+          "en": "The bestselling video game's television adaptation was praised by gaming fans for staying faithful to the lore.",
+          "zh": "這款大受歡迎的暢銷主機電玩遊戲被改編成真人影集，因高度忠實還原世界觀歷史設定而贏得全球玩家一致盛讚。"
+        },
+        {
+          "en": "Camels possess remarkable biological adaptations that allow them to survive weeks without fresh water.",
+          "zh": "駱駝體內演化出令人驚嘆的生理演化適應特徵，使其能在灼熱乾旱的沙漠中連續數週不喝一滴水依然安然存活。"
+        }
+      ],
+      "collocations": [
+        "climate change adaptation"
+      ]
+    },
+    {
+      "id": 5087,
+      "word": "vulnerability",
+      "pos": "n. [U]",
+      "phonetic": "[͵vʌlnərəˋbɪlətɪ]",
+      "definition": "供應鏈氣候極端風險脆弱度",
+      "cefr": "B1",
+      "topic": "韌性評估",
+      "examples": [
+        {
+          "en": "Mapping supply chain geographic vulnerability prevents single-point manufacturing disruptions during floods.",
+          "zh": "繪製供應鏈全球地理氣候脆弱度（Vulnerability）風險圖，能防範單一海外代工廠因暴雨淹水導致全球斷鏈。"
+        },
+        {
+          "en": "Cybersecurity engineers quickly patched a critical zero-day security vulnerability in the router firmware.",
+          "zh": "網路資安工程團隊漏夜加班，緊急發布安全性修補程式以修復無線路由器韌體中遭駭客利用的零日安全漏洞。"
+        },
+        {
+          "en": "Sharing personal struggles with close friends requires courage and emotional vulnerability.",
+          "zh": "敞開心扉向摯友傾訴自己內心深處的挫折與脆弱掙扎，需要莫大的心理勇氣與展現真實情感脆弱面的包容心。"
+        }
+      ],
+      "collocations": [
+        "supply chain climate vulnerability"
+      ]
+    },
+    {
+      "id": 5088,
+      "word": "taxonomy",
+      "pos": "n. [U]",
+      "phonetic": "[tækˋsɑnəmɪ]",
+      "definition": "國家永續綠色金融分類標準",
+      "cefr": "B1",
+      "topic": "綠色金融",
+      "examples": [
+        {
+          "en": "The national green finance taxonomy establishes strict criteria defining which business activities count as truly green.",
+          "zh": "國家頒布「永續綠色金融分類標準」（Taxonomy），以嚴格標準明確定義何種商業投資方可獲認證為綠色投資。"
+        },
+        {
+          "en": "Carl Linnaeus founded modern biological taxonomy, classifying living organisms into hierarchical kingdom, phylum, and species.",
+          "zh": "十八世紀植物學家林奈奠定了近現代生物分類學（Taxonomy）的基石，將世間萬物依界門綱目科屬種系統歸類。"
+        },
+        {
+          "en": "Developing an intuitive website taxonomy helps shoppers browse complex online clothing categories quickly.",
+          "zh": "建構架構清晰、條理分明的電子商務網站商品分類體系架構，能引導線上購物消費者在秒速間精準找到心儀服飾。"
+        }
+      ],
+      "collocations": [
+        "green finance taxonomy"
+      ]
+    },
+    {
+      "id": 5089,
+      "word": "engagement",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋgedʒmənt]",
+      "definition": "責任機構投資人股東氣候議合",
+      "cefr": "B1",
+      "topic": "股東行動",
+      "examples": [
+        {
+          "en": "Institutional investors use active shareholder engagement to urge boards to set science-based net-zero goals.",
+          "zh": "大型退休基金等責任機構投資人透過「股東積極議合」（Engagement），敦促企業董事會訂定具約束力的淨零時程。"
+        },
+        {
+          "en": "The cheerful couple celebrated their romantic marriage engagement with family at an oceanfront restaurant.",
+          "zh": "這對沉浸在幸福喜悅中的準新人與雙方親友齊聚在海景景觀餐廳，溫馨舉辦了甜蜜浪漫的訂婚慶祝家宴。"
+        },
+        {
+          "en": "Interactive classroom polling apps significantly increased student attention and active classroom engagement.",
+          "zh": "在大學講堂中導入互動式即時手機投票問答軟體，極為顯著地提升了全場學生的專注力與課堂主動參與互動度。"
+        }
+      ],
+      "collocations": [
+        "active shareholder engagement"
+      ]
+    },
+    {
+      "id": 5090,
+      "word": "divestment",
+      "pos": "n. [U]",
+      "phonetic": "[daɪˋvɛstmənt]",
+      "definition": "撤資化石燃料高碳排重污染產業",
+      "cefr": "B1",
+      "topic": "資本轉向",
+      "examples": [
+        {
+          "en": "University endowment funds announced complete divestment from coal and oil exploration assets.",
+          "zh": "許多國際頂尖大學校產基金與主權基金宣布，全面從傳統高污染燃煤與石油探勘產業執行「責任撤資」（Divestment）。"
+        },
+        {
+          "en": "Strategic corporate divestment of non-core business divisions allowed the electronics firm to refocus on semiconductors.",
+          "zh": "該大型電子集團果斷從虧損的非核心事業部門進行策略性資產剝離撤資，集中全力將資金重兵聚焦於半導體研發。"
+        },
+        {
+          "en": "The activist coalition organized international campaigns advocating moral divestment from regimes violating human rights.",
+          "zh": "全球人權倡議非政府組織發起跨國聯合抵制抗爭，強烈呼籲各大主權基金全面撤資侵犯普世人權的獨裁專制政權。"
+        }
+      ],
+      "collocations": [
+        "fossil fuel divestment"
+      ]
+    },
+    {
+      "id": 5091,
+      "word": "accountability",
+      "pos": "n. [U]",
+      "phonetic": "[ə͵kaʊntəˋbɪlətɪ]",
+      "definition": "企業環境治理崇高當責責任",
+      "cefr": "B1",
+      "topic": "治理責任",
+      "examples": [
+        {
+          "en": "Tying executive bonuses to verifiable carbon reductions enforces boardroom ESG accountability.",
+          "zh": "將總經理與高階主管的年度績效獎金與實質減碳成果直接掛鉤，能有效強化董事會的永續當責責任（Accountability）。"
+        },
+        {
+          "en": "Transparent public hearings ensure bureaucratic accountability for multi-million dollar infrastructure spending.",
+          "zh": "定期舉辦公開透明的市民公聽會，能嚴格監督政府行政機關在百億級重大公共建設公帑支出上的誠信與當責責任。"
+        },
+        {
+          "en": "Forming a study group with peers builds mutual study accountability, preventing procrastination before finals.",
+          "zh": "與志同道合的大學同儕組成讀書會夥伴關係，能在彼此相互督促的同儕當責氛圍中，徹底根絕期末考前的拖延症。"
+        }
+      ],
+      "collocations": [
+        "corporate environmental accountability"
+      ]
+    },
+    {
+      "id": 5092,
+      "word": "governance",
+      "pos": "n. [U]",
+      "phonetic": "[ˋgʌvɚnəns]",
+      "definition": "董事會永續氣候治理決策架構",
+      "cefr": "B1",
+      "topic": "公司治理",
+      "examples": [
+        {
+          "en": "Establishing an independent Sustainability Committee ensures strong boardroom climate governance.",
+          "zh": "在董事會轄下設立獨立運作的「永續發展委員會」，能確保企業高層具備高瞻遠矚的氣候治理決策力（Governance）。"
+        },
+        {
+          "en": "Good public governance requires upholding the rule of law, protecting press freedom, and preventing corruption.",
+          "zh": "卓越健全的國家民主公共治理體系，在於堅定恪守憲政法治、保障新聞言論自由，並堅決防止公務官僚體系貪腐。"
+        },
+        {
+          "en": "The decentralized open-source community votes on protocol upgrades through democratic on-chain governance.",
+          "zh": "去中心化開源區塊鏈技術社群，透過全體代幣持有人投票的鏈上鏈上民主治理投票，自主決策底層協議的升級路線。"
+        }
+      ],
+      "collocations": [
+        "corporate climate governance"
+      ]
+    },
+    {
+      "id": 5093,
+      "word": "solidarity",
+      "pos": "n. [U]",
+      "phonetic": "[͵sɑləˋdærətɪ]",
+      "definition": "全球跨國氣候行動團結陣線",
+      "cefr": "B1",
+      "topic": "國際合作",
+      "examples": [
+        {
+          "en": "Solving global climate change demands unprecedented international solidarity between developed and emerging economies.",
+          "zh": "攻克全球氣候暖化危機，亟需已開發國家與新興經濟體之間展現前所未見的跨國氣候「團結陣線」（Solidarity）。"
+        },
+        {
+          "en": "Striking workers wore red armbands and stood shoulder to shoulder in union solidarity outside the factory gates.",
+          "zh": "走上街頭的罷工工會會員臂戴紅色臂章，在工廠大門口肩並肩手牽手，展現勞工同舟共濟、寸步不讓的團結力量。"
+        },
+        {
+          "en": "Citizens showed heartfelt solidarity with earthquake victims by donating emergency rescue supplies and blood.",
+          "zh": "逢重大震災發生，全台各地民眾第一時間湧入捐血站捲袖捐血，並慷慨解囊捐贈生活物資，展現深厚的同胞互助團結心。"
+        }
+      ],
+      "collocations": [
+        "global climate solidarity"
+      ]
+    },
+    {
+      "id": 5094,
+      "word": "sustainable",
+      "pos": "adj.",
+      "phonetic": "[səˋstenəb!]",
+      "definition": "綠色永續共好繁榮的",
+      "cefr": "B1",
+      "topic": "永續未來",
+      "examples": [
+        {
+          "en": "Investing in clean energy creates millions of high-paying jobs and builds a sustainable green economy.",
+          "zh": "大力投資太陽能與離岸風電等潔淨能源，能創造數百萬高薪綠領就業機會並打造永續繁榮的綠色經濟。"
+        },
+        {
+          "en": "Marine protected zones allow depleted fish stocks to rebuild, securing sustainable fishing for local coastal villages.",
+          "zh": "依法嚴格劃設沿海海洋生態保育禁漁區，讓枯竭的底棲魚類繁衍休養生息，確保近海漁村漁業生生不息的永續生計。"
+        },
+        {
+          "en": "Maintaining a sustainable work-life balance is essential to prevent chronic burnout and maintain mental well-being.",
+          "zh": "隨時保持兼顧身心平衡的永續生活與工作節奏，是徹底杜絕長期職業倦怠並捍衛心理健康的不二法門。"
+        }
+      ],
+      "collocations": [
+        "sustainable economic development"
+      ]
+    },
+    {
+      "id": 5095,
+      "word": "pledge",
+      "pos": "n., v.",
+      "phonetic": "[plɛdʒ]",
+      "definition": "莊嚴許下淨零碳排承諾誓言",
+      "cefr": "B1",
+      "topic": "減碳誓言",
+      "examples": [
+        {
+          "en": "Over 500 CEOs signed a joint corporate pledge to achieve net-zero operations across global sites by 2040.",
+          "zh": "超過五百位跨國企業執行長共同簽署聯合減碳誓言（Pledge），承諾在 2040 年前全面實現全廠區淨零碳排。"
+        },
+        {
+          "en": "Generous donors pledged millions of dollars to fund medical research on rare childhood diseases.",
+          "zh": "熱心公益的民間慈善企業家在募款慈善晚會上慷慨許下承諾誓言，捐贈數千萬元全力資助兒童罕見疾病醫學研究。"
+        },
+        {
+          "en": "The groom made a solemn pledge to honor, support, and cherish his bride throughout all life's adventures.",
+          "zh": "新郎在莊嚴神聖的婚禮大殿中，當著雙方至親好友的面前許下莊嚴誓言，誓願一生敬重、陪伴並呵護新娘。"
+        }
+      ],
+      "collocations": [
+        "signed net-zero pledge"
+      ]
+    },
+    {
+      "id": 5096,
+      "word": "mandate",
+      "pos": "n., v.",
+      "phonetic": "[ˋmændet]",
+      "definition": "政府立法強制命令實施；授權",
+      "cefr": "B1",
+      "topic": "政策法規",
+      "examples": [
+        {
+          "en": "Government mandates will phase out single-use plastics across restaurants, hotels, and retail stores.",
+          "zh": "政府頒布法律強制命令（Mandate），在各餐飲旅宿與零售通路全面分階段淘汰各類一次性拋棄式塑膠製品。"
+        },
+        {
+          "en": "Winning seventy percent of the popular vote gave the newly elected president an unquestionable reform mandate.",
+          "zh": "在總統大選中狂掃超過七成的壓倒性選票，賦予了新當選國家元首無可置疑的大刀闊斧改革民意授權。"
+        },
+        {
+          "en": "Municipal building codes mandate installation of automatic fire sprinkler systems in high-rise condominiums.",
+          "zh": "內政部營建署消防法規強制命令規定，全台所有新起造之超高層集合住宅大樓各樓層必須依法全數安裝自動灑水滅火設備。"
+        }
+      ],
+      "collocations": [
+        "regulatory carbon mandate"
+      ]
+    },
+    {
+      "id": 5097,
+      "word": "transformation",
+      "pos": "n.",
+      "phonetic": "[͵trænsfɚˋmeʃən]",
+      "definition": "全面淨零綠色低碳轉型升級",
+      "cefr": "B1",
+      "topic": "典範變革",
+      "examples": [
+        {
+          "en": "The industrial green transformation represents the biggest economic restructuring since the Industrial Revolution.",
+          "zh": "這場波瀾壯闊的產業綠色轉型（Transformation），代表了自十八世紀工業革命以來全人類最深刻的經濟結構重塑。"
+        },
+        {
+          "en": "Transforming public transportation networks catalyzed the dramatic economic transformation of Kaohsiung port.",
+          "zh": "大眾捷運輕軌網絡與雙港建設的全面翻新，引領著昔日重工業重鎮高雄港迎來脫胎換骨的城市經濟轉型奇蹟。"
+        },
+        {
+          "en": "The caterpillar enters a cocoon, undergoing a miraculous cellular transformation before emerging as a vibrant butterfly.",
+          "zh": "翠綠毛毛蟲靜靜吐絲結繭成蛹，在幽暗的蛹體內經歷令人驚嘆的細胞重組蛻變轉化，最終破繭而出化為絢爛彩蝶。"
+        }
+      ],
+      "collocations": [
+        "industrial green transformation"
+      ]
+    },
+    {
+      "id": 5098,
+      "word": "prosperity",
+      "pos": "n. [U]",
+      "phonetic": "[prɑsˋpɛrətɪ]",
+      "definition": "兼顧生態與經濟的永續繁榮",
+      "cefr": "B1",
+      "topic": "願景目標",
+      "examples": [
+        {
+          "en": "Decoupling economic growth from greenhouse emissions unlocks long-term clean prosperity for future generations.",
+          "zh": "將經濟實質成長與溫室氣體排放徹底脫鉤，能為我們的下一代解鎖兼顧生態保育與財富積累的乾淨繁榮（Prosperity）。"
+        },
+        {
+          "en": "Decades of peace, innovation, and open trade brought unprecedented economic prosperity to the island.",
+          "zh": "數十年來長治久安的和平環境、源源不絕的技術創新與高度自由的對外貿易，為這座美麗之島帶來了空前的經濟繁榮富庶。"
+        },
+        {
+          "en": "Traditional New Year greetings wish family and friends health, happiness, and abundant financial prosperity.",
+          "zh": "農曆春節期間向親朋好友登門拜年時，彼此互道恭喜發財，誠摯祝福對方在新的一年身體康健、平安喜樂與事業大發繁榮。"
+        }
+      ],
+      "collocations": [
+        "sustainable green prosperity"
+      ]
+    },
+    {
+      "id": 5099,
+      "word": "ecosystem",
+      "pos": "n.",
+      "phonetic": "[ˋɛko͵sɪstəm]",
+      "definition": "守護大地海洋脆弱生態系統",
+      "cefr": "B1",
+      "topic": "環境保護",
+      "examples": [
+        {
+          "en": "Protecting delicate coastal coral and mountain rainforest ecosystems ensures freshwater security.",
+          "zh": "傾力守護脆弱的海岸珊瑚礁與高山原始森林生態系統（Ecosystem），是確保國家水土保持與水源安全的根本。"
+        },
+        {
+          "en": "The bustling technology park fosters a thriving ecosystem where venture capitalists, incubators, and engineers collaborate.",
+          "zh": "欣欣向榮的新竹科學園區構築了一個生機盎然的創業創新生態系，創投基金、育成中心與頂尖研發工程師在此密集切磋協同。"
+        },
+        {
+          "en": "Introducing non-native invasive apple snails severely disrupted the delicate balance of Taiwan's traditional wetland rice paddies ecosystem.",
+          "zh": "昔日外來入侵種福壽螺的不慎引進，嚴重破壞了台灣傳統水稻田濕地水生動植物之間微妙且脆弱的天然生態系統平衡。"
+        }
+      ],
+      "collocations": [
+        "fragile natural ecosystem"
+      ]
+    },
+    {
+      "id": 5100,
+      "word": "humanity",
+      "pos": "n. [U]",
+      "phonetic": "[hjuˋmænətɪ]",
+      "definition": "守護全人類共同唯一的地球家園",
+      "cefr": "B1",
+      "topic": "崇高使命",
+      "examples": [
+        {
+          "en": "Combating climate change is the ultimate moral obligation of our generation to protect humanity’s shared home.",
+          "zh": "挺身而出齊心抗擊氣候變遷，是我們這一代人守護全人類（Humanity）共同唯一地球家園的最崇高道德使命。"
+        },
+        {
+          "en": "Dedicated volunteer medical doctors travel into war-torn regions out of boundless compassion and love for humanity.",
+          "zh": "無國界醫生組織的志工醫師無畏槍林彈雨奔赴戰火紛飛的難民前線，全憑內心深處對普世苦難同胞的悲憫與對全人類的大愛。"
+        },
+        {
+          "en": "The timeless poetry of ancient classics speaks deeply to the universal fears, longings, and joys common to all humanity.",
+          "zh": "流傳千古的經典史詩詩篇跨越時空界限，深刻訴說著全人類共同擁有的對死亡的恐懼、對自由的渴望與靈魂深處的欣喜。"
+        }
+      ],
+      "collocations": [
+        "future of humanity"
+      ]
+    }
+  ]
+}

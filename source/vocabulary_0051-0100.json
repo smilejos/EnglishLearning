@@ -1,0 +1,1357 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A1–B1）",
+  "section": "第 51–100 個單字（CEFR A1 基礎入門）",
+  "batch": "0051-0100",
+  "range": "51–100",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 51,
+      "word": "wall",
+      "pos": "n.",
+      "phonetic": "[wɔl]",
+      "definition": "牆壁；圍牆",
+      "cefr": "A1",
+      "topic": "日常生活",
+      "examples": [
+        {
+          "en": "There is a world map on the wall.",
+          "zh": "牆上有一張世界地圖。"
+        },
+        {
+          "en": "Don't draw or write on the classroom wall.",
+          "zh": "請勿在教室牆壁上塗鴉或寫字。"
+        },
+        {
+          "en": "They painted the bedroom wall light blue.",
+          "zh": "他們把臥室的牆壁漆成了淺藍色。"
+        }
+      ],
+      "collocations": [
+        "on the wall",
+        "brick wall"
+      ]
+    },
+    {
+      "id": 52,
+      "word": "bed",
+      "pos": "n.",
+      "phonetic": "[bɛd]",
+      "definition": "床",
+      "cefr": "A1",
+      "topic": "日常生活",
+      "examples": [
+        {
+          "en": "I go to bed at ten o'clock every night.",
+          "zh": "我每晚十點上床睡覺。"
+        },
+        {
+          "en": "Make sure you make your bed before leaving the room.",
+          "zh": "離開房間前請務必整理好床鋪。"
+        },
+        {
+          "en": "The hotel bed was very soft and comfortable.",
+          "zh": "飯店的床非常柔軟舒適。"
+        }
+      ],
+      "collocations": [
+        "go to bed",
+        "make the bed"
+      ]
+    },
+    {
+      "id": 53,
+      "word": "sleep",
+      "pos": "v., n.",
+      "phonetic": "[slip]",
+      "definition": "睡覺；睡眠",
+      "cefr": "A1",
+      "topic": "日常生活",
+      "examples": [
+        {
+          "en": "You should sleep at least seven hours a day.",
+          "zh": "你每天應該至少睡七個小時。"
+        },
+        {
+          "en": "I was so tired that I fell asleep quickly.",
+          "zh": "我太累了，很快就睡著了。"
+        },
+        {
+          "en": "Adequate sleep helps improve your memory and focus.",
+          "zh": "充足的睡眠有助於提升記憶力與專注力。"
+        }
+      ],
+      "collocations": [
+        "go to sleep",
+        "get enough sleep"
+      ]
+    },
+    {
+      "id": 54,
+      "word": "wake",
+      "pos": "v.",
+      "phonetic": "[wek]",
+      "definition": "醒來；喚醒",
+      "cefr": "A1",
+      "topic": "日常生活",
+      "examples": [
+        {
+          "en": "I usually wake up at 6:30 in the morning.",
+          "zh": "我通常早上六點半醒來。"
+        },
+        {
+          "en": "Please wake me up if my alarm doesn't ring.",
+          "zh": "如果我的鬧鐘沒響，請叫醒我。"
+        },
+        {
+          "en": "The loud thunder woke the baby up in the middle of the night.",
+          "zh": "巨大的雷聲在半夜驚醒了嬰兒。"
+        }
+      ],
+      "collocations": [
+        "wake up",
+        "wake somebody up"
+      ]
+    },
+    {
+      "id": 55,
+      "word": "morning",
+      "pos": "n.",
+      "phonetic": "[ˋmɔrnɪŋ]",
+      "definition": "早上；早晨",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "Good morning! Did you sleep well?",
+          "zh": "早安！你睡得好嗎？"
+        },
+        {
+          "en": "I like to do some light exercise in the morning.",
+          "zh": "我喜歡在早晨做一些輕度運動。"
+        },
+        {
+          "en": "It was a cold and foggy morning in the mountains.",
+          "zh": "山區的早晨既寒冷又多霧。"
+        }
+      ],
+      "collocations": [
+        "in the morning",
+        "morning walk"
+      ]
+    },
+    {
+      "id": 56,
+      "word": "afternoon",
+      "pos": "n.",
+      "phonetic": "[ˋæftɚˋnun]",
+      "definition": "下午",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "We have PE class this afternoon.",
+          "zh": "我們今天下午有體育課。"
+        },
+        {
+          "en": "They often enjoy afternoon tea at a cozy café.",
+          "zh": "他們經常在溫馨的咖啡館享用下午茶。"
+        },
+        {
+          "en": "It usually rains in the afternoon during summer in Taipei.",
+          "zh": "台北夏天的下午經常下陣雨。"
+        }
+      ],
+      "collocations": [
+        "in the afternoon",
+        "good afternoon"
+      ]
+    },
+    {
+      "id": 57,
+      "word": "evening",
+      "pos": "n.",
+      "phonetic": "[ˋivnɪŋ]",
+      "definition": "傍晚；晚上",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "My family watches TV together in the evening.",
+          "zh": "我們全家晚上一起看電視。"
+        },
+        {
+          "en": "I will finish my English homework this evening.",
+          "zh": "我今晚會完成我的英文作業。"
+        },
+        {
+          "en": "We took a relaxing walk along the river in the cool evening.",
+          "zh": "我們在涼爽的傍晚沿著河邊愜意散步。"
+        }
+      ],
+      "collocations": [
+        "in the evening",
+        "this evening"
+      ]
+    },
+    {
+      "id": 58,
+      "word": "night",
+      "pos": "n.",
+      "phonetic": "[naɪt]",
+      "definition": "夜晚；夜間",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "Don't stay up late at night.",
+          "zh": "晚上不要熬夜。"
+        },
+        {
+          "en": "The stars look exceptionally bright in the night sky.",
+          "zh": "夜空中的星星看起來格外明亮。"
+        },
+        {
+          "en": "Good night, have sweet dreams!",
+          "zh": "晚安，祝你有個好夢！"
+        }
+      ],
+      "collocations": [
+        "at night",
+        "good night"
+      ]
+    },
+    {
+      "id": 59,
+      "word": "today",
+      "pos": "adv., n.",
+      "phonetic": "[təˋde]",
+      "definition": "今天",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "What day is it today?",
+          "zh": "今天是星期幾？"
+        },
+        {
+          "en": "Today is my classmate's fourteenth birthday.",
+          "zh": "今天是我同班同學的十四歲生日。"
+        },
+        {
+          "en": "I have a lot of things to accomplish today.",
+          "zh": "我今天有很多事情需要完成。"
+        }
+      ],
+      "collocations": [
+        "today is",
+        "see you today"
+      ]
+    },
+    {
+      "id": 60,
+      "word": "tomorrow",
+      "pos": "adv., n.",
+      "phonetic": "[təˋmɑro]",
+      "definition": "明天",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "We will have an English quiz tomorrow.",
+          "zh": "我們明天有英文小考。"
+        },
+        {
+          "en": "Tomorrow will be sunny and warm according to the weather forecast.",
+          "zh": "根據天氣預報，明天將是晴朗溫暖的好天氣。"
+        },
+        {
+          "en": "See you at the library tomorrow afternoon!",
+          "zh": "明天下午圖書館見！"
+        }
+      ],
+      "collocations": [
+        "see you tomorrow",
+        "tomorrow morning"
+      ]
+    },
+    {
+      "id": 61,
+      "word": "yesterday",
+      "pos": "adv., n.",
+      "phonetic": "[ˋjɛstɚˌde]",
+      "definition": "昨天",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "I visited my grandparents yesterday.",
+          "zh": "我昨天去探望我的祖父母。"
+        },
+        {
+          "en": "Did you watch the baseball game on TV yesterday?",
+          "zh": "你昨天有看電視上的棒球比賽嗎？"
+        },
+        {
+          "en": "Yesterday was the hottest day of this week.",
+          "zh": "昨天是這星期最炎熱的一天。"
+        }
+      ],
+      "collocations": [
+        "yesterday afternoon",
+        "just yesterday"
+      ]
+    },
+    {
+      "id": 62,
+      "word": "time",
+      "pos": "n., v.",
+      "phonetic": "[taɪm]",
+      "definition": "時間；次數；計時",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "What time is it now?",
+          "zh": "現在幾點了？"
+        },
+        {
+          "en": "We had a great time at the amusement park.",
+          "zh": "我們在遊樂園玩得非常開心。"
+        },
+        {
+          "en": "Please make sure you arrive on time for the meeting.",
+          "zh": "開會請務必準時抵達。"
+        }
+      ],
+      "collocations": [
+        "on time",
+        "have a good time"
+      ]
+    },
+    {
+      "id": 63,
+      "word": "day",
+      "pos": "n.",
+      "phonetic": "[de]",
+      "definition": "天；白晝；日子",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "Have a nice day!",
+          "zh": "祝你有美好的一天！"
+        },
+        {
+          "en": "I practice playing the violin for an hour every day.",
+          "zh": "我每天練習拉小提琴一個小時。"
+        },
+        {
+          "en": "Sunday is my favorite day of the week.",
+          "zh": "星期日是我一週中最喜歡的一天。"
+        }
+      ],
+      "collocations": [
+        "every day",
+        "day and night"
+      ]
+    },
+    {
+      "id": 64,
+      "word": "week",
+      "pos": "n.",
+      "phonetic": "[wik]",
+      "definition": "星期；週",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "There are seven days in a week.",
+          "zh": "一個星期有七天。"
+        },
+        {
+          "en": "We are taking final exams next week.",
+          "zh": "我們下週要參加期末考。"
+        },
+        {
+          "en": "I go to swimming class twice a week.",
+          "zh": "我每週上兩次游泳課。"
+        }
+      ],
+      "collocations": [
+        "this week",
+        "next week"
+      ]
+    },
+    {
+      "id": 65,
+      "word": "month",
+      "pos": "n.",
+      "phonetic": "[mʌnθ]",
+      "definition": "月份；月",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "We will go on vacation next month.",
+          "zh": "我們下個月要去度假。"
+        },
+        {
+          "en": "February is usually the shortest month of the year.",
+          "zh": "二月通常是一年中最短的月份。"
+        },
+        {
+          "en": "She has been learning Spanish for three months.",
+          "zh": "她已經學了三個月的西班牙文。"
+        }
+      ],
+      "collocations": [
+        "once a month",
+        "last month"
+      ]
+    },
+    {
+      "id": 66,
+      "word": "year",
+      "pos": "n.",
+      "phonetic": "[jɪr]",
+      "definition": "年；年份",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "Happy New Year to everyone!",
+          "zh": "祝大家新年快樂！"
+        },
+        {
+          "en": "I will turn sixteen years old this year.",
+          "zh": "我今年就要滿十六歲了。"
+        },
+        {
+          "en": "Our family travels abroad once a year.",
+          "zh": "我們全家每年出國旅遊一次。"
+        }
+      ],
+      "collocations": [
+        "New Year",
+        "this year"
+      ]
+    },
+    {
+      "id": 67,
+      "word": "hour",
+      "pos": "n.",
+      "phonetic": "[aʊr]",
+      "definition": "小時",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "The movie lasts for two hours.",
+          "zh": "這部電影長達兩個小時。"
+        },
+        {
+          "en": "It took us an hour to finish the science project.",
+          "zh": "我們花了一小時才完成自然科學專題。"
+        },
+        {
+          "en": "The train leaves in half an hour.",
+          "zh": "火車半小時後發車。"
+        }
+      ],
+      "collocations": [
+        "half an hour",
+        "an hour ago"
+      ]
+    },
+    {
+      "id": 68,
+      "word": "minute",
+      "pos": "n.",
+      "phonetic": "[ˋmɪnɪt]",
+      "definition": "分鐘",
+      "cefr": "A1",
+      "topic": "時間",
+      "examples": [
+        {
+          "en": "Please wait a minute, I will be right back.",
+          "zh": "請等一分鐘，我馬上回來。"
+        },
+        {
+          "en": "The noodles will be cooked in three minutes.",
+          "zh": "麵條煮三分鐘就好了。"
+        },
+        {
+          "en": "We still have ten minutes before class begins.",
+          "zh": "距離上課我們還有十分鐘時間。"
+        }
+      ],
+      "collocations": [
+        "just a minute",
+        "in a minute"
+      ]
+    },
+    {
+      "id": 69,
+      "word": "clock",
+      "pos": "n.",
+      "phonetic": "[klɑk]",
+      "definition": "時鐘",
+      "cefr": "A1",
+      "topic": "日常生活",
+      "examples": [
+        {
+          "en": "The clock on the wall says 3:00 PM.",
+          "zh": "牆上的時鐘顯示下午三點。"
+        },
+        {
+          "en": "My alarm clock rang loudly at six this morning.",
+          "zh": "我的鬧鐘今天早上六點大聲響起。"
+        },
+        {
+          "en": "The convenience store is open around the clock.",
+          "zh": "那家便利商店全天候二十四小時營業。"
+        }
+      ],
+      "collocations": [
+        "alarm clock",
+        "around the clock"
+      ]
+    },
+    {
+      "id": 70,
+      "word": "watch",
+      "pos": "n., v.",
+      "phonetic": "[wɑtʃ]",
+      "definition": "手錶；觀看；注視",
+      "cefr": "A1",
+      "topic": "日常生活",
+      "examples": [
+        {
+          "en": "My dad bought me a digital watch.",
+          "zh": "我爸爸買給我一隻數位手錶。"
+        },
+        {
+          "en": "Do you want to watch a movie with us tonight?",
+          "zh": "你今晚想和我們一起看電影嗎？"
+        },
+        {
+          "en": "Watch out for cars when you cross the street!",
+          "zh": "過馬路時要注意來車！"
+        }
+      ],
+      "collocations": [
+        "watch TV",
+        "wrist watch"
+      ]
+    },
+    {
+      "id": 71,
+      "word": "water",
+      "pos": "n., v.",
+      "phonetic": "[ˋwɔtɚ]",
+      "definition": "水；澆水",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Remember to drink plenty of water every day.",
+          "zh": "記得每天多喝水。"
+        },
+        {
+          "en": "Don't forget to water the plants on the balcony.",
+          "zh": "別忘了給陽台上的植物澆水。"
+        },
+        {
+          "en": "Can I have a glass of cold water, please?",
+          "zh": "請問能給我一杯冰水嗎？"
+        }
+      ],
+      "collocations": [
+        "drink water",
+        "bottle of water"
+      ]
+    },
+    {
+      "id": 72,
+      "word": "tea",
+      "pos": "n.",
+      "phonetic": "[ti]",
+      "definition": "茶",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Would you like some hot green tea?",
+          "zh": "你想來點熱綠茶嗎？"
+        },
+        {
+          "en": "Black tea with milk is a classic breakfast drink.",
+          "zh": "奶茶是經典的早餐飲品。"
+        },
+        {
+          "en": "In Taiwan, tea culture has a very long history.",
+          "zh": "在台灣，茶文化有著悠久的歷史。"
+        }
+      ],
+      "collocations": [
+        "milk tea",
+        "cup of tea"
+      ]
+    },
+    {
+      "id": 73,
+      "word": "coffee",
+      "pos": "n.",
+      "phonetic": "[ˋkɔfɪ]",
+      "definition": "咖啡",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "My mother drinks a cup of black coffee every morning.",
+          "zh": "我媽媽每天早上喝一杯黑咖啡。"
+        },
+        {
+          "en": "The smell of freshly brewed coffee filled the kitchen.",
+          "zh": "剛煮好的咖啡香氣瀰漫了整個廚房。"
+        },
+        {
+          "en": "I prefer iced coffee over hot coffee in summer.",
+          "zh": "夏天我喜歡喝冰咖啡勝過熱咖啡。"
+        }
+      ],
+      "collocations": [
+        "iced coffee",
+        "coffee shop"
+      ]
+    },
+    {
+      "id": 74,
+      "word": "milk",
+      "pos": "n.",
+      "phonetic": "[mɪlk]",
+      "definition": "牛奶",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Drinking milk is good for your bones.",
+          "zh": "喝牛奶對骨骼有益。"
+        },
+        {
+          "en": "Put the carton of milk back into the refrigerator.",
+          "zh": "請把那盒牛奶放回冰箱裡。"
+        },
+        {
+          "en": "She poured some warm milk into her cereal bowl.",
+          "zh": "她在麥片碗裡倒了一些溫牛奶。"
+        }
+      ],
+      "collocations": [
+        "fresh milk",
+        "soy milk"
+      ]
+    },
+    {
+      "id": 75,
+      "word": "juice",
+      "pos": "n.",
+      "phonetic": "[dʒus]",
+      "definition": "果汁",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "I love fresh orange juice with breakfast.",
+          "zh": "我早餐喜歡配新鮮柳橙汁。"
+        },
+        {
+          "en": "Would you like apple juice or grape juice?",
+          "zh": "你想要蘋果汁還是葡萄汁？"
+        },
+        {
+          "en": "Fresh watermelon juice is very refreshing on hot summer days.",
+          "zh": "炎熱的夏天喝新鮮西瓜汁非常消暑解渴。"
+        }
+      ],
+      "collocations": [
+        "orange juice",
+        "fruit juice"
+      ]
+    },
+    {
+      "id": 76,
+      "word": "rice",
+      "pos": "n.",
+      "phonetic": "[raɪs]",
+      "definition": "米飯；米",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Fried rice is very popular in Taiwan.",
+          "zh": "炒飯在台灣非常受歡迎。"
+        },
+        {
+          "en": "Rice is the staple food for most people in Asia.",
+          "zh": "米飯是多數亞洲人的主食。"
+        },
+        {
+          "en": "Would you like another bowl of steamed rice?",
+          "zh": "你想要再來一碗白飯嗎？"
+        }
+      ],
+      "collocations": [
+        "fried rice",
+        "white rice"
+      ]
+    },
+    {
+      "id": 77,
+      "word": "bread",
+      "pos": "n.",
+      "phonetic": "[brɛd]",
+      "definition": "麵包",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "We bought fresh toast bread from the bakery.",
+          "zh": "我們從麵包店買了新鮮吐司麵包。"
+        },
+        {
+          "en": "He spread strawberry jam on a slice of bread.",
+          "zh": "他在一片麵包上抹了草莓果醬。"
+        },
+        {
+          "en": "Whole wheat bread is a healthy choice for breakfast.",
+          "zh": "全麥麵包是早餐的健康選擇。"
+        }
+      ],
+      "collocations": [
+        "a loaf of bread",
+        "toast bread"
+      ]
+    },
+    {
+      "id": 78,
+      "word": "noodle",
+      "pos": "n.",
+      "phonetic": "[ˋnud!]",
+      "definition": "麵條（常用複數）",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Beef noodles are my favorite dish.",
+          "zh": "牛肉麵是我最喜歡的料理。"
+        },
+        {
+          "en": "He ate a quick bowl of instant noodles for late-night supper.",
+          "zh": "他宵夜匆匆吃了一碗泡麵。"
+        },
+        {
+          "en": "Traditional handmade noodles have a very chewy texture.",
+          "zh": "傳統手工麵條口感非常彈牙有嚼勁。"
+        }
+      ],
+      "collocations": [
+        "beef noodles",
+        "instant noodles"
+      ]
+    },
+    {
+      "id": 79,
+      "word": "egg",
+      "pos": "n.",
+      "phonetic": "[ɛg]",
+      "definition": "雞蛋；蛋",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "I eat a boiled egg every morning.",
+          "zh": "我每天早上吃一顆水煮蛋。"
+        },
+        {
+          "en": "Crack two eggs into the frying pan to make an omelet.",
+          "zh": "在平底鍋打入兩顆蛋來做煎蛋捲。"
+        },
+        {
+          "en": "Birds lay eggs in safe nests high up in trees.",
+          "zh": "鳥兒在高高的樹上安全築巢產卵。"
+        }
+      ],
+      "collocations": [
+        "fried egg",
+        "boiled egg"
+      ]
+    },
+    {
+      "id": 80,
+      "word": "meat",
+      "pos": "n.",
+      "phonetic": "[mit]",
+      "definition": "肉類",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Vegetarians do not eat meat.",
+          "zh": "素食者不吃肉類。"
+        },
+        {
+          "en": "Keep the raw meat in the freezer until you are ready to cook.",
+          "zh": "在準備烹煮之前，請將生肉保存在冷凍庫。"
+        },
+        {
+          "en": "Eating too much red meat may not be good for health.",
+          "zh": "吃太多紅肉可能對健康無益。"
+        }
+      ],
+      "collocations": [
+        "fresh meat",
+        "red meat"
+      ]
+    },
+    {
+      "id": 81,
+      "word": "chicken",
+      "pos": "n.",
+      "phonetic": "[ˋtʃɪkɪn]",
+      "definition": "雞肉；雞",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Fried chicken cutlet is a famous night market snack.",
+          "zh": "炸雞排是著名夜市小吃。"
+        },
+        {
+          "en": "Mom is roasting a whole chicken in the oven.",
+          "zh": "媽媽正在烤箱裡烤一整隻雞。"
+        },
+        {
+          "en": "The farmer feeds the chickens grain every morning.",
+          "zh": "農夫每天早上用穀物餵雞。"
+        }
+      ],
+      "collocations": [
+        "fried chicken",
+        "roast chicken"
+      ]
+    },
+    {
+      "id": 82,
+      "word": "pork",
+      "pos": "n.",
+      "phonetic": "[pork]",
+      "definition": "豬肉",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Braised pork rice is a classic Taiwanese dish.",
+          "zh": "滷肉飯是經典的台灣料理。"
+        },
+        {
+          "en": "Crispy fried pork chops taste great with white rice.",
+          "zh": "香酥炸排骨配白飯非常美味。"
+        },
+        {
+          "en": "Make sure the pork is thoroughly cooked before serving.",
+          "zh": "端上桌前務必確認豬肉已完全煮熟。"
+        }
+      ],
+      "collocations": [
+        "braised pork",
+        "pork chop"
+      ]
+    },
+    {
+      "id": 83,
+      "word": "beef",
+      "pos": "n.",
+      "phonetic": "[bif]",
+      "definition": "牛肉",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Do you want beef or chicken for dinner?",
+          "zh": "你晚餐想要吃牛肉還是雞肉？"
+        },
+        {
+          "en": "Tainan is famous for its fresh beef soup breakfast.",
+          "zh": "台南以新鮮牛肉湯早餐聞名。"
+        },
+        {
+          "en": "He ordered a medium-rare beef steak at the restaurant.",
+          "zh": "他在餐廳點了一客五分熟的牛排。"
+        }
+      ],
+      "collocations": [
+        "beef noodle soup",
+        "beef steak"
+      ]
+    },
+    {
+      "id": 84,
+      "word": "fish",
+      "pos": "n., v.",
+      "phonetic": "[fɪʃ]",
+      "definition": "魚肉；魚；釣魚",
+      "cefr": "A1",
+      "topic": "飲食與自然",
+      "examples": [
+        {
+          "en": "Fish is rich in healthy oils.",
+          "zh": "魚肉富含健康的油脂。"
+        },
+        {
+          "en": "My grandfather likes to go fishing by the river on weekends.",
+          "zh": "我爺爺週末喜歡去河邊釣魚。"
+        },
+        {
+          "en": "We saw colorful tropical fish while snorkeling.",
+          "zh": "我們浮潛時看見了五彩繽紛的熱帶魚。"
+        }
+      ],
+      "collocations": [
+        "steamed fish",
+        "go fishing"
+      ]
+    },
+    {
+      "id": 85,
+      "word": "fruit",
+      "pos": "n.",
+      "phonetic": "[frut]",
+      "definition": "水果",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Taiwan is famous for delicious fresh fruit.",
+          "zh": "台灣以美味的新鮮水果聞名。"
+        },
+        {
+          "en": "Eating fresh fruit every day provides essential vitamins.",
+          "zh": "每天吃新鮮水果能提供人體必需的維生素。"
+        },
+        {
+          "en": "We made a colorful fruit salad with mangoes and apples.",
+          "zh": "我們用芒果和蘋果做了一道色彩繽紛的水果沙拉。"
+        }
+      ],
+      "collocations": [
+        "fresh fruit",
+        "fruit salad"
+      ]
+    },
+    {
+      "id": 86,
+      "word": "apple",
+      "pos": "n.",
+      "phonetic": "[ˋæp!]",
+      "definition": "蘋果",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "An apple a day keeps the doctor away.",
+          "zh": "一天一蘋果，醫生遠離我。"
+        },
+        {
+          "en": "She cut the red apple into four equal slices.",
+          "zh": "她把紅蘋果切成均等的四片。"
+        },
+        {
+          "en": "My grandmother baked a warm and fragrant apple pie.",
+          "zh": "我奶奶烤了一個溫熱香氣四溢的蘋果派。"
+        }
+      ],
+      "collocations": [
+        "apple pie",
+        "red apple"
+      ]
+    },
+    {
+      "id": 87,
+      "word": "banana",
+      "pos": "n.",
+      "phonetic": "[bəˋnænə]",
+      "definition": "香蕉",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Monkeys love eating yellow bananas.",
+          "zh": "猴子喜歡吃黃色香蕉。"
+        },
+        {
+          "en": "I bought a bunch of ripe bananas from the fruit stall.",
+          "zh": "我在水果攤買了一串熟成的香蕉。"
+        },
+        {
+          "en": "Eating a banana before running gives you quick energy.",
+          "zh": "跑步前吃根香蕉能快速補充能量。"
+        }
+      ],
+      "collocations": [
+        "a bunch of bananas"
+      ]
+    },
+    {
+      "id": 88,
+      "word": "eat",
+      "pos": "v.",
+      "phonetic": "[it]",
+      "definition": "吃",
+      "cefr": "A1",
+      "topic": "日常生活與飲食",
+      "examples": [
+        {
+          "en": "Let's eat lunch together at noon.",
+          "zh": "我們中午一起吃午餐吧。"
+        },
+        {
+          "en": "Remember to wash your hands before you eat.",
+          "zh": "吃東西前記得要先洗手。"
+        },
+        {
+          "en": "We decided to eat out at a nearby noodle shop tonight.",
+          "zh": "我們決定今晚到附近的麵店外食。"
+        }
+      ],
+      "collocations": [
+        "eat out",
+        "eat up"
+      ]
+    },
+    {
+      "id": 89,
+      "word": "drink",
+      "pos": "v., n.",
+      "phonetic": "[drɪŋk]",
+      "definition": "喝；飲料",
+      "cefr": "A1",
+      "topic": "日常生活與飲食",
+      "examples": [
+        {
+          "en": "Do not drink cold drinks too fast.",
+          "zh": "不要太快喝冷飲。"
+        },
+        {
+          "en": "Would you like something warm to drink?",
+          "zh": "你想喝點溫熱的飲品嗎？"
+        },
+        {
+          "en": "You should drink plenty of water after exercising.",
+          "zh": "運動後你應該多喝水。"
+        }
+      ],
+      "collocations": [
+        "soft drink",
+        "drink water"
+      ]
+    },
+    {
+      "id": 90,
+      "word": "breakfast",
+      "pos": "n.",
+      "phonetic": "[ˋbrɛkfəst]",
+      "definition": "早餐",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "I usually eat egg pancakes for breakfast.",
+          "zh": "我早餐通常吃蛋餅。"
+        },
+        {
+          "en": "Breakfast is the most important meal of the day.",
+          "zh": "早餐是一天中最重要的一餐。"
+        },
+        {
+          "en": "Dad made us a delicious breakfast with toast and eggs.",
+          "zh": "爸爸為我們做了包含吐司和雞蛋的美味早餐。"
+        }
+      ],
+      "collocations": [
+        "have breakfast",
+        "eat breakfast"
+      ]
+    },
+    {
+      "id": 91,
+      "word": "lunch",
+      "pos": "n.",
+      "phonetic": "[lʌntʃ]",
+      "definition": "午餐",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "What did you bring for your lunch box?",
+          "zh": "你的便當帶了什麼午餐？"
+        },
+        {
+          "en": "Students eat lunch in the classroom around noontime.",
+          "zh": "學生們大約中午在教室裡吃午餐。"
+        },
+        {
+          "en": "Let's go to the cafeteria to have lunch together.",
+          "zh": "我們一起去學生餐廳吃午餐吧。"
+        }
+      ],
+      "collocations": [
+        "have lunch",
+        "lunch box"
+      ]
+    },
+    {
+      "id": 92,
+      "word": "dinner",
+      "pos": "n.",
+      "phonetic": "[ˋdɪnɚ]",
+      "definition": "晚餐",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "We had hot pot for dinner last night.",
+          "zh": "我們昨晚晚餐吃了火鍋。"
+        },
+        {
+          "en": "Mom is cooking a wonderful dinner in the kitchen.",
+          "zh": "媽媽正在廚房煮一頓豐盛的晚餐。"
+        },
+        {
+          "en": "What would you like to have for dinner tonight?",
+          "zh": "你今晚晚餐想吃什麼？"
+        }
+      ],
+      "collocations": [
+        "have dinner",
+        "cook dinner"
+      ]
+    },
+    {
+      "id": 93,
+      "word": "food",
+      "pos": "n.",
+      "phonetic": "[fud]",
+      "definition": "食物；食品",
+      "cefr": "A1",
+      "topic": "飲食",
+      "examples": [
+        {
+          "en": "Taiwanese street food is world famous.",
+          "zh": "台灣街頭小吃舉世聞名。"
+        },
+        {
+          "en": "Never waste food because many people don't have enough to eat.",
+          "zh": "絕不要浪費食物，因為世界上很多人缺乏糧食。"
+        },
+        {
+          "en": "Japanese food such as sushi and ramen is very popular here.",
+          "zh": "像壽司和拉麵這樣的日本料理在這裡很受歡迎。"
+        }
+      ],
+      "collocations": [
+        "fast food",
+        "street food"
+      ]
+    },
+    {
+      "id": 94,
+      "word": "restaurant",
+      "pos": "n.",
+      "phonetic": "[ˋrɛstərənt]",
+      "definition": "餐廳；飯館",
+      "cefr": "A1",
+      "topic": "飲食與場所",
+      "examples": [
+        {
+          "en": "This restaurant serves delicious seafood.",
+          "zh": "這家餐廳供應美味的海鮮。"
+        },
+        {
+          "en": "We celebrated Dad's birthday at a fancy Italian restaurant.",
+          "zh": "我們在一家高級義大利餐廳慶祝爸爸的生日。"
+        },
+        {
+          "en": "The restaurant is always crowded during weekend dinner hours.",
+          "zh": "這間餐廳在週末晚餐時段總是高朋滿座。"
+        }
+      ],
+      "collocations": [
+        "Italian restaurant",
+        "fast-food restaurant"
+      ]
+    },
+    {
+      "id": 95,
+      "word": "supermarket",
+      "pos": "n.",
+      "phonetic": "[ˋsupɚˌmɑrkɪt]",
+      "definition": "超市",
+      "cefr": "A1",
+      "topic": "購物與場所",
+      "examples": [
+        {
+          "en": "Mom goes to the supermarket every weekend.",
+          "zh": "媽媽每個週末都去超市。"
+        },
+        {
+          "en": "There is a large supermarket across from our apartment.",
+          "zh": "我們公寓對面有一間大型超市。"
+        },
+        {
+          "en": "We bought fresh milk, bread, and fruits at the supermarket.",
+          "zh": "我們在超市買了鮮奶、麵包和水果。"
+        }
+      ],
+      "collocations": [
+        "at the supermarket"
+      ]
+    },
+    {
+      "id": 96,
+      "word": "buy",
+      "pos": "v.",
+      "phonetic": "[baɪ]",
+      "definition": "買；購買",
+      "cefr": "A1",
+      "topic": "購物與消費",
+      "examples": [
+        {
+          "en": "I want to buy a new pencil case.",
+          "zh": "我想買一個新的鉛筆盒。"
+        },
+        {
+          "en": "Where did you buy those cool white sneakers?",
+          "zh": "你在哪裡買那雙酷炫的白色球鞋？"
+        },
+        {
+          "en": "Many people prefer to buy daily necessities online.",
+          "zh": "許多人偏好在網路上購買生活必需品。"
+        }
+      ],
+      "collocations": [
+        "buy groceries",
+        "buy online"
+      ]
+    },
+    {
+      "id": 97,
+      "word": "sell",
+      "pos": "v.",
+      "phonetic": "[sɛl]",
+      "definition": "賣；販售",
+      "cefr": "A1",
+      "topic": "購物與消費",
+      "examples": [
+        {
+          "en": "Convenience stores in Taiwan sell almost everything.",
+          "zh": "台灣的便利商店幾乎什麼都賣。"
+        },
+        {
+          "en": "That bakery sells out of egg tarts very quickly every morning.",
+          "zh": "那家麵包店每天早上蛋塔很快就賣光了。"
+        },
+        {
+          "en": "The bookstore sells stationery and art supplies as well.",
+          "zh": "那家書店也販售文具和美術用品。"
+        }
+      ],
+      "collocations": [
+        "sell out",
+        "sell products"
+      ]
+    },
+    {
+      "id": 98,
+      "word": "money",
+      "pos": "n.",
+      "phonetic": "[ˋmʌnɪ]",
+      "definition": "錢；金錢",
+      "cefr": "A1",
+      "topic": "購物與消費",
+      "examples": [
+        {
+          "en": "How much money do you need for the trip?",
+          "zh": "這次旅行你需要多少錢？"
+        },
+        {
+          "en": "It is important to learn how to save money from a young age.",
+          "zh": "從小學習如何存錢非常重要。"
+        },
+        {
+          "en": "He spent all his pocket money on new video games.",
+          "zh": "他把所有零用錢都花在買新電玩遊戲上了。"
+        }
+      ],
+      "collocations": [
+        "save money",
+        "pocket money"
+      ]
+    },
+    {
+      "id": 99,
+      "word": "price",
+      "pos": "n., v.",
+      "phonetic": "[praɪs]",
+      "definition": "價格；價錢；定價",
+      "cefr": "A1",
+      "topic": "購物與消費",
+      "examples": [
+        {
+          "en": "The price of this t-shirt is very reasonable.",
+          "zh": "這件 T 恤的價格很合理。"
+        },
+        {
+          "en": "House prices in big cities have increased significantly.",
+          "zh": "大城市的房價已經顯著上漲。"
+        },
+        {
+          "en": "Always check the price tag before making a purchase.",
+          "zh": "購買前務必先看一下價格標籤。"
+        }
+      ],
+      "collocations": [
+        "low price",
+        "price tag"
+      ]
+    },
+    {
+      "id": 100,
+      "word": "pay",
+      "pos": "v., n.",
+      "phonetic": "[pe]",
+      "definition": "付錢；支付；薪水",
+      "cefr": "A1",
+      "topic": "購物與消費",
+      "examples": [
+        {
+          "en": "You can pay with an EasyCard here.",
+          "zh": "你可以在這裡用悠遊卡付款。"
+        },
+        {
+          "en": "How much did you pay for that concert ticket?",
+          "zh": "你那張演唱會門票花了多少錢？"
+        },
+        {
+          "en": "Hard work will always pay off in the end.",
+          "zh": "辛勤的付出最終總會有回報的。"
+        }
+      ],
+      "collocations": [
+        "pay by card",
+        "pay cash"
+      ]
+    }
+  ]
+}

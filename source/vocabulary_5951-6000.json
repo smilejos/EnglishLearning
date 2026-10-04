@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,951–6,000 個單字（CEFR B1 中級）",
+  "batch": "5951-6000",
+  "range": "5951–6000",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5951,
+      "word": "offshore",
+      "pos": "adj., adv.",
+      "phonetic": "[ˋɔfˋʃɔr]",
+      "definition": "台灣海峽離岸風力發電風場的；離岸",
+      "cefr": "B1",
+      "topic": "離岸風電",
+      "examples": [
+        {
+          "en": "Strong winter monsoons make the Taiwan Strait an ideal location for giant offshore wind farms.",
+          "zh": "台灣海峽強勁的冬季東北季風，使其成為建設世界級巨型離岸風場的黃金風場。"
+        },
+        {
+          "en": "Engineers board specialized crew vessels to travel thirty kilometers offshore to the wind farm.",
+          "zh": "工程師搭乘專業人員運輸船，遠赴距離台灣西海岸三十公里外的外海離岸風場作業。"
+        },
+        {
+          "en": "Taiwan has emerged as a premier hub for offshore marine renewable energy development in Asia.",
+          "zh": "台灣已傲然崛起成為整個亞洲地區推動離岸海洋再生能源工程發展的領航核心樞紐。"
+        }
+      ],
+      "collocations": [
+        "offshore wind farm"
+      ]
+    },
+    {
+      "id": 5952,
+      "word": "turbine",
+      "pos": "n.",
+      "phonetic": "[ˋtɝbɪn]",
+      "definition": "15MW 巨型離岸風力發電機組 (風機)",
+      "cefr": "B1",
+      "topic": "發電風機",
+      "examples": [
+        {
+          "en": "Next-generation fifteen-megawatt wind turbines stand over two hundred meters above the sea surface.",
+          "zh": "新世代單機容量達十五千瓩（15MW）的巨型風力發電機組，矗立在海平面兩百公尺高空。"
+        },
+        {
+          "en": "A single rotation of the massive turbine generates enough clean electricity to power an average home for a day.",
+          "zh": "這座龐大風機葉輪僅需在大風中旋轉一圈，所產生的潔淨綠電就足以供應一戶普通家庭整整一天的用電。"
+        },
+        {
+          "en": "Sensor systems inside the wind turbine continuously monitor vibration and gearbox temperature.",
+          "zh": "內嵌在風力發電機組內部的密集感測器陣列，全天候即時監控主軸震動與齒輪箱油溫狀態。"
+        }
+      ],
+      "collocations": [
+        "offshore wind turbine"
+      ]
+    },
+    {
+      "id": 5953,
+      "word": "blade",
+      "pos": "n.",
+      "phonetic": "[bled]",
+      "definition": "115 公尺超長碳纖維風機葉片；刀刃",
+      "cefr": "B1",
+      "topic": "風機葉片",
+      "examples": [
+        {
+          "en": "Massive 115-meter carbon-fiber turbine blades sweep a circular area larger than three soccer fields.",
+          "zh": "長達一百一十五公尺的輕量超長碳纖維風機葉片，旋轉時掃掠面積超過三座足球場。"
+        },
+        {
+          "en": "Technicians inspect the aerodynamic blade leading edge for micro-cracks caused by salty sea spray.",
+          "zh": "運維技術人員仔細檢測流線型葉片迎風面邊緣，查看是否存在因海浪高鹽分鹽霧沖刷造成的微裂紋。"
+        },
+        {
+          "en": "Pitch control mechanisms angle each turbine blade to maximize energy capture during light breezes.",
+          "zh": "精密的變槳控制驅動機構動態調整每支風機葉片的攻角角度，以在微風吹拂時捕捉最大風能。"
+        }
+      ],
+      "collocations": [
+        "carbon-fiber turbine blade"
+      ]
+    },
+    {
+      "id": 5954,
+      "word": "nacelle",
+      "pos": "n.",
+      "phonetic": "[nəˋsɛl]",
+      "definition": "頂部直驅發電機機艙 (Nacelle)",
+      "cefr": "B1",
+      "topic": "機艙結構",
+      "examples": [
+        {
+          "en": "The colossal direct-drive generator is housed inside the aerodynamic nacelle perched atop the steel tower.",
+          "zh": "重型直驅發電機組被妥善安裝在位於鋼製塔筒頂端、符合流體力學的機艙內部。"
+        },
+        {
+          "en": "A rooftop helipad on the nacelle allows maintenance crews to board directly during choppy seas.",
+          "zh": "機艙頂部配置的直升機吊掛作業平台，能讓維修工程師在風浪洶湧無法靠船時安全直接登頂作業。"
+        },
+        {
+          "en": "Heavy crane ships carefully lifted the four-hundred-ton nacelle onto the pinnacle of the wind tower.",
+          "zh": "重型水上浮吊工程船小心翼翼將重達四百噸的機艙，分毫不差吊裝對位在塔筒的最頂端。"
+        }
+      ],
+      "collocations": [
+        "wind turbine nacelle"
+      ]
+    },
+    {
+      "id": 5955,
+      "word": "monopile",
+      "pos": "n.",
+      "phonetic": "[ˋmɑnə͵paɪl]",
+      "definition": "萬噸特大直徑鋼製單樁水下基礎",
+      "cefr": "B1",
+      "topic": "單樁基礎",
+      "examples": [
+        {
+          "en": "The crane vessel drove a colossal eight-meter diameter steel monopile deep into the sandy seabed.",
+          "zh": "大型起重工作船將直徑超過八公尺的萬噸特大鋼製單樁水下基礎，垂直打入海床深處。"
+        },
+        {
+          "en": "Fabricating a massive monopile requires rolling and welding thick structural steel plates.",
+          "zh": "製造單支巨型單樁基礎，需要在重工廠內將數十公分厚的特種結構鋼板捲圓並進行超高規格焊接。"
+        },
+        {
+          "en": "Transition pieces are bolted to the top of each monopile to provide a level flange for the tower.",
+          "zh": "過渡段轉接構件緊密螺栓固定在每支單樁基礎頂端，為上方風機塔筒提供水平穩固的法蘭受力面。"
+        }
+      ],
+      "collocations": [
+        "steel seabed monopile"
+      ]
+    },
+    {
+      "id": 5956,
+      "word": "jacket",
+      "pos": "n.",
+      "phonetic": "[ˋdʒækɪt]",
+      "definition": "四腳鋼構套筒式水下桁架基樁；夾克",
+      "cefr": "B1",
+      "topic": "套筒基礎",
+      "examples": [
+        {
+          "en": "Four-legged steel jacket foundations provide earthquake-resistant stability in deep, choppy offshore waters.",
+          "zh": "四腳鋼管桁架結構的套筒式水下基礎，在深水波濤與地震斷層帶展現卓越的抗震穩定性。"
+        },
+        {
+          "en": "The towering eighty-meter jacket was fabricated at a domestic heavy engineering shipyard in Kaohsiung.",
+          "zh": "這座高達八十公尺的巨大鋼構套筒式水下基礎，由高雄興達港本土重造船廠自主焊接打造組裝。"
+        },
+        {
+          "en": "Subsea pin piles anchor the four corners of the jacket deep into the marine sediment.",
+          "zh": "釘入海底岩層的水下插樁基樁，將套筒水下基礎的四個端角深沉牢固地錨定在海床深處。"
+        }
+      ],
+      "collocations": [
+        "steel jacket foundation"
+      ]
+    },
+    {
+      "id": 5957,
+      "word": "pile",
+      "pos": "n., v.",
+      "phonetic": "[paɪl]",
+      "definition": "海床套筒基樁液壓打樁工序；樁柱",
+      "cefr": "B1",
+      "topic": "打樁工序",
+      "examples": [
+        {
+          "en": "Hydraulic hammers ram steel pin piles forty meters into the seafloor to pin the jacket foundation firmly.",
+          "zh": "巨型水下液壓打樁錘將鋼製插樁基樁重重打入海床四十公尺，將套筒水下基座牢牢鎖定。"
+        },
+        {
+          "en": "Acousticians monitored underwater pile driving noise to ensure compliance with marine wildlife limits.",
+          "zh": "海洋聲學工程師全天候監測水下打樁衝擊噪音，以確保嚴格符合保護海洋哺乳野生動物的法定標準。"
+        },
+        {
+          "en": "Each hollow steel pile is checked by ultrasonic testing to confirm structural soundness after hammering.",
+          "zh": "每根中空鋼管基樁在完成打樁工序後，皆須通過嚴密超音波探傷檢測，以確認敲擊後結構完好無裂損。"
+        }
+      ],
+      "collocations": [
+        "underwater steel pin pile"
+      ]
+    },
+    {
+      "id": 5958,
+      "word": "hammer",
+      "pos": "n., v.",
+      "phonetic": "[ˋhæmɚ]",
+      "definition": "氣泡幕減噪水下高衝擊液壓打樁錘",
+      "cefr": "B1",
+      "topic": "打樁設備",
+      "examples": [
+        {
+          "en": "The computer-controlled hydraulic hammer delivers thousands of tons of impact force to drive underwater piles.",
+          "zh": "電腦精密控制的水下液壓打樁錘，輸出數千噸衝擊力將基樁打入堅硬岩層。"
+        },
+        {
+          "en": "Soft-start procedures ramp up hammer power gradually to allow nearby marine life to swim away safely.",
+          "zh": "打樁作業嚴格實施軟啟動程序，逐步緩慢調升衝擊錘敲擊力道，好讓周遭海洋生物有充裕時間游離遠避。"
+        },
+        {
+          "en": "The heavy hydraulic hammer was lowered from the crane vessel boom down to the ocean floor.",
+          "zh": "重達數百噸的水下液壓大打樁錘，由起重船的主吊臂緩緩垂直下放吊至海床表面就位。"
+        }
+      ],
+      "collocations": [
+        "hydraulic impact hammer"
+      ]
+    },
+    {
+      "id": 5959,
+      "word": "curtain",
+      "pos": "n.",
+      "phonetic": "[ˋkɝtn]",
+      "definition": "雙層氣泡幕阻隔打樁水下噪音 (護鯨)；窗簾",
+      "cefr": "B1",
+      "topic": "生態降噪",
+      "examples": [
+        {
+          "en": "Deploying a dual-layer bubble curtain creates acoustic shielding that protects endangered dolphins from noise.",
+          "zh": "在打樁點四周環繞佈設雙層氣泡幕，形成微氣泡隔音牆保護珍稀白海豚免受噪音干擾。"
+        },
+        {
+          "en": "High-output air compressors pump millions of tiny air bubbles through perforated hoses to form the curtain.",
+          "zh": "甲板上的大功率空壓機透過海底穿孔微孔軟管，每分鐘泵入數百萬個細密微氣泡以築起降噪氣幕簾。"
+        },
+        {
+          "en": "Sonar measurements proved that the bubble curtain reduced underwater impact noise levels by over fifteen decibels.",
+          "zh": "水下聲納監測數據鐵證，雙層氣泡幕技術成功將水下打樁的衝擊聲壓級大幅消減了超過十五分貝。"
+        }
+      ],
+      "collocations": [
+        "noise mitigation bubble curtain"
+      ]
+    },
+    {
+      "id": 5960,
+      "word": "cetacean",
+      "pos": "n., adj.",
+      "phonetic": "[sɪˋteʃən]",
+      "definition": "台灣白海豚鯨豚觀察員 (MMO 警戒)",
+      "cefr": "B1",
+      "topic": "海洋生態",
+      "examples": [
+        {
+          "en": "Certified marine mammal observers scan horizons for cetacean pods before piling operations can legally commence.",
+          "zh": "具備專業證照的鯨豚觀察員，在打樁作業前必須確認周遭海域完全無海豚出沒方可動工。"
+        },
+        {
+          "en": "If any cetacean enters the exclusion zone, construction protocols mandate an immediate full stop.",
+          "zh": "只要雷達或望遠鏡觀察到任何鯨豚游入七百五十公尺警戒區內，海事施工規範明令必須立即全線停工。"
+        },
+        {
+          "en": "Acoustic listening buoys detect clicking sounds made by passing cetacean schools even in murky seas.",
+          "zh": "水下被動聲學監測浮標靈敏捕捉到了過境鯨豚游群發出的高頻回聲定位喀噠聲，即便在混濁風浪中亦然。"
+        }
+      ],
+      "collocations": [
+        "marine cetacean observer"
+      ]
+    },
+    {
+      "id": 5961,
+      "word": "scour",
+      "pos": "n. [U], v.",
+      "phonetic": "[skaʊr]",
+      "definition": "拋石防淘刷海床保護層 (防止沙淘空)",
+      "cefr": "B1",
+      "topic": "沖刷防護",
+      "examples": [
+        {
+          "en": "Dumping graded quarry stones creates protective scour protection blankets around subsea foundations.",
+          "zh": "在水下基礎四周海床均勻拋填特選花崗岩塊，形成堅固的防淘刷保護層防止海流淘空。"
+        },
+        {
+          "en": "Swift tidal currents can scour away sandy sediment around steel monopiles if left unprotected.",
+          "zh": "台灣海峽強勁奔騰的潮汐潮流若缺乏保護，會在數月內將鋼製單樁基礎周圍的海床海沙全數淘刷掏空。"
+        },
+        {
+          "en": "Specialized fallpipe rock dumping vessels deposit protective stones with meter accuracy to prevent subsea scour.",
+          "zh": "專業動態定位落石管拋石船透過水下導管，以公尺級精準度在海床鋪設防淘刷塊石層，杜絕掏空危機。"
+        }
+      ],
+      "collocations": [
+        "seabed scour protection"
+      ]
+    },
+    {
+      "id": 5962,
+      "word": "array",
+      "pos": "n., v.",
+      "phonetic": "[əˋre]",
+      "definition": "66kV 風場陣列內部海底電纜網；排列",
+      "cefr": "B1",
+      "topic": "陣列電纜",
+      "examples": [
+        {
+          "en": "Flexible 66kV inter-array cables link dozens of individual turbines to gather electricity across the wind farm.",
+          "zh": "鋪設於海床底部的 66kV 風場內部陣列海纜，串聯各座風機匯集所發出的潔淨電力。"
+        },
+        {
+          "en": "The layout of the subsea cable array was optimized to minimize electrical impedance and trench length.",
+          "zh": "整個水下陣列海纜走向經過電氣模擬拓撲最佳化，以大幅降低線路阻抗損耗並縮短開溝挖埋長度。"
+        },
+        {
+          "en": "Diverless underwater vehicles inspect the cable array to ensure no sections have been uncovered by currents.",
+          "zh": "水下無人遙控潛水器（ROV）定期沿著海纜陣列巡檢，確保沒有任何電纜段落因強勁洋流沖刷而裸露。"
+        }
+      ],
+      "collocations": [
+        "inter-array subsea cable"
+      ]
+    },
+    {
+      "id": 5963,
+      "word": "export",
+      "pos": "n., v.",
+      "phonetic": "[ˋɛksport]",
+      "definition": "220kV 高壓交流送電海纜 (輸電回陸地)",
+      "cefr": "B1",
+      "topic": "輸出海纜",
+      "examples": [
+        {
+          "en": "Heavy armored export cables buried beneath coastal beaches transmit green power directly to the inland grid.",
+          "zh": "深埋在海床與海岸沙灘下方的 220kV 雙層鋼甲高壓輸出海纜，將綠電直送陸上電網。"
+        },
+        {
+          "en": "The export cable route traverses shallow fishing grounds and connects to a landing station ashore.",
+          "zh": "輸出海纜路徑穿過沿岸近海淺水養殖作業區，最終登陸串接上岸邊的專用海纜陸上變電站接線所。"
+        },
+        {
+          "en": "Extra protective concrete mattresses shield the export cable where it crosses shipping fairways.",
+          "zh": "在輸出海纜橫越繁忙商船航道交叉點的路段，施工團隊加鋪了重型混凝土連鎖防護塊毯予以強化保護。"
+        }
+      ],
+      "collocations": [
+        "high-voltage export cable"
+      ]
+    },
+    {
+      "id": 5964,
+      "word": "substation",
+      "pos": "n.",
+      "phonetic": "[ˋsʌb͵steʃən]",
+      "definition": "離岸海上高壓變電站 (海上變電所)",
+      "cefr": "B1",
+      "topic": "海上變電",
+      "examples": [
+        {
+          "en": "The offshore substation transforms wind power up to 220,000 volts to minimize transmission line losses.",
+          "zh": "矗立於外海的離岸高壓變電站，將風電升壓至二十二萬伏特以大幅降低長途傳輸耗損。"
+        },
+        {
+          "en": "Giant transformers and switchgear rooms are sealed inside the yellow offshore substation topside.",
+          "zh": "龐大的升壓主變壓器與高壓氣體絕緣開關設備，被妥善密閉封裝在鮮黃色離岸變電站上部甲板模組中。"
+        },
+        {
+          "en": "Emergency diesel generators onboard the offshore substation supply backup power in the event of grid failure.",
+          "zh": "離岸變電站甲板上配備的大容量應急柴油發電機組，在外部陸上電網跳電事故時能即刻啟動備援自保。"
+        }
+      ],
+      "collocations": [
+        "offshore high-voltage substation"
+      ]
+    },
+    {
+      "id": 5965,
+      "word": "installation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪnstəˋleʃən]",
+      "definition": "自升式巨型風機水下安裝船 (WTIV)",
+      "cefr": "B1",
+      "topic": "海事工程",
+      "examples": [
+        {
+          "en": "The jack-up installation vessel extends four massive legs to the seabed, creating a stable crane platform.",
+          "zh": "自升式風機安裝船將四根鋼製巨腿插入海床將船身頂升出海面，展開重載吊裝。"
+        },
+        {
+          "en": "Calm summer weather windows are vital for the safe offshore turbine installation campaign.",
+          "zh": "初夏海面風平浪靜的珍貴氣象施工窗口，是確保外海風機各大型重件安全高空吊裝作業的命脈。"
+        },
+        {
+          "en": "The installation vessel carries three full sets of towers, nacelles, and blades on each offshore delivery trip.",
+          "zh": "這艘新旗艦級重型安裝船單趟出海，即可滿載三整套包含塔筒、機艙與超長葉片的巨型風機組件。"
+        }
+      ],
+      "collocations": [
+        "wind turbine installation vessel"
+      ]
+    },
+    {
+      "id": 5966,
+      "word": "laying",
+      "pos": "n. [U]",
+      "phonetic": "[ˋleɪŋ]",
+      "definition": "動態定位海底海纜敷設船 (CLV)",
+      "cefr": "B1",
+      "topic": "敷纜作業",
+      "examples": [
+        {
+          "en": "The specialized cable-laying ship uses dynamic satellite thrusters to bury armored cables across the trench.",
+          "zh": "配備衛星動態定位的海纜敷設船，以水下海纜埋設犁精準將電纜深埋於海床下兩米。"
+        },
+        {
+          "en": "A massive carousel turntable on the cable-laying vessel holds five thousand tons of continuous subsea cable.",
+          "zh": "海纜敷設船甲板上巨大的迴轉放纜旋轉盤，可容納重達五千噸不間斷連續長度的高壓海底海纜。"
+        },
+        {
+          "en": "Cable-laying operations proceed around the clock with ROVs confirming burial depths beneath the seabed.",
+          "zh": "海底海纜敷設埋設作業全天候二十四小時不間斷進行，後方水下機器人即時檢測確認埋深達標。"
+        }
+      ],
+      "collocations": [
+        "submarine cable-laying"
+      ]
+    },
+    {
+      "id": 5967,
+      "word": "operation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɑpəˋreʃən]",
+      "definition": "離岸風電專用運維住宿作業船 (SOV)",
+      "cefr": "B1",
+      "topic": "運維船隊",
+      "examples": [
+        {
+          "en": "Service operation vessels (SOVs) house sixty technicians offshore for weeks with hotel-standard comfort.",
+          "zh": "現代化離岸風電運維船，提供六十位工程師如飯店般舒適的外海長期住宿。"
+        },
+        {
+          "en": "The hybrid-electric operation vessel dramatically cuts diesel consumption during prolonged offshore stays.",
+          "zh": "採用油電混合推進動力的風電專用運維船，大幅降低了長期駐留外海風場期間的柴油耗損與碳排。"
+        },
+        {
+          "en": "A central warehouse onboard the operation vessel stocks spare electronic modules and crane components.",
+          "zh": "運維作業船甲板下方設有全自動立體備品零件庫，儲備了充足的各類風機電子控制模組與更換零組件。"
+        }
+      ],
+      "collocations": [
+        "offshore service operation vessel"
+      ]
+    },
+    {
+      "id": 5968,
+      "word": "gangway",
+      "pos": "n.",
+      "phonetic": "[ˋgæŋ͵we]",
+      "definition": "3D 動態波浪補償登塔走橋 (Walk-to-Work)",
+      "cefr": "B1",
+      "topic": "登塔通道",
+      "examples": [
+        {
+          "en": "The motion-compensated gangway bridge neutralizes wave action, letting technicians walk safely onto turbines.",
+          "zh": "搭載液壓 3D 動態波浪補償技術的登塔舷梯走橋，完全抵消海浪顛簸讓技師平穩踏上風機。"
+        },
+        {
+          "en": "Hydraulic pistons react instantaneously to ocean swell, keeping the gangway tip anchored to the boat landing.",
+          "zh": "走橋底部的多軸液壓補償活塞隨海浪湧浪毫秒級即時伸縮，牢牢鎖定走橋前端緊貼風機爬梯平台。"
+        },
+        {
+          "en": "Using an active gangway system allows crew transfers in significant wave heights topping two and a half meters.",
+          "zh": "導入主動式波浪補償走橋系統，即使在外海浪高超過兩米半的惡劣海況下，工程師依然能安全步入風機。"
+        }
+      ],
+      "collocations": [
+        "motion-compensated gangway"
+      ]
+    },
+    {
+      "id": 5969,
+      "word": "technician",
+      "pos": "n.",
+      "phonetic": "[tɛkˋnɪʃən]",
+      "definition": "風機葉片高空繩索懸吊檢修技師；技術員",
+      "cefr": "B1",
+      "topic": "專業技師",
+      "examples": [
+        {
+          "en": "Certified rope-access blade technicians rappel down hundred-meter blades to repair composite lightning damage.",
+          "zh": "通過國際 IRATA 繩索證照的葉片檢修技師，懸掛在百米高空細心修補遭受雷擊的葉片表面。"
+        },
+        {
+          "en": "Wind technicians complete rigorous offshore survival and helicopter escape training before going out to sea.",
+          "zh": "每位合格的離岸風電技術工程師，出海前皆必須通過嚴格的 GWO 高階海上求生與直升機水下逃生受訓。"
+        },
+        {
+          "en": "Every wind turbine technician carries specialized torque wrenches to verify thousands of structural bolts.",
+          "zh": "每一位登上風機作業的專業技師都配備了經過校準的定扭力板手，逐一檢驗確認數千顆關鍵螺栓緊固度。"
+        }
+      ],
+      "collocations": [
+        "rope access wind technician"
+      ]
+    },
+    {
+      "id": 5970,
+      "word": "curtailment",
+      "pos": "n. [U]",
+      "phonetic": "[kɚˋtelmənt]",
+      "definition": "智慧電網減少棄風棄光限電；縮減",
+      "cefr": "B1",
+      "topic": "電網調度",
+      "examples": [
+        {
+          "en": "Integrating large-scale battery storage eliminates renewable energy curtailment during windy midnight hours.",
+          "zh": "導入電網級大型儲能系統，能徹底消除冬季深夜大風時被迫棄風限電的綠電浪費。"
+        },
+        {
+          "en": "In the past, insufficient transmission capacity led to unfortunate wind curtailment along coastal counties.",
+          "zh": "過去因內陸高壓輸電幹線容量不足，曾導致沿海風場在冬季被迫接受無奈的棄風限電解聯處分。"
+        },
+        {
+          "en": "Smart load-shifting policies encourage factories to consume excess power, preventing costly curtailment.",
+          "zh": "政府推行智慧時間電價與負載轉移政策，鼓勵大型工廠夜間高負載開機，化解代價高昂的棄風問題。"
+        }
+      ],
+      "collocations": [
+        "renewable energy curtailment"
+      ]
+    },
+    {
+      "id": 5971,
+      "word": "intermittency",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪntɚˋmɪtnsɪ]",
+      "definition": "綠能風光間歇性與發電波動平滑化",
+      "cefr": "B1",
+      "topic": "綠能特性",
+      "examples": [
+        {
+          "en": "Hybrid wind and solar installations paired with storage overcome the natural intermittency of weather patterns.",
+          "zh": "「風光互補」搭配大型儲能電站，能有效撫平大自然風起雲湧所帶來的發電間歇性與波動。"
+        },
+        {
+          "en": "Critics point to weather intermittency as a primary challenge for grid operators managing power supplies.",
+          "zh": "傳統能源專家常將風力與陽光的天候間歇性，視為電網調度中心在平衡電力供需時面臨的最大考驗。"
+        },
+        {
+          "en": "Advanced artificial intelligence weather forecasting models predict renewable intermittency hours in advance.",
+          "zh": "導入前瞻 AI 氣象數值預報模型，能提前數小時以高精準度預測再生能源發電的間歇性波動起伏。"
+        }
+      ],
+      "collocations": [
+        "renewable power intermittency"
+      ]
+    },
+    {
+      "id": 5972,
+      "word": "storage",
+      "pos": "n. [U]",
+      "phonetic": "[ˋstorɪdʒ]",
+      "definition": "電網級磷酸鋰鐵電池大型儲能系統 (BESS)",
+      "cefr": "B1",
+      "topic": "儲能系統",
+      "examples": [
+        {
+          "en": "Grid-scale battery energy storage systems (BESS) respond in milliseconds to absorb excess generation peaks.",
+          "zh": "電網級電池儲能系統，能在毫秒之內迅速響應充電，將日間多餘的太陽光電完整存儲。"
+        },
+        {
+          "en": "Constructing high-capacity pumped storage hydro stations creates massive energy reservoirs in mountain valleys.",
+          "zh": "擴建高落差抽蓄水力儲能電廠，在崇山峻嶺峽谷間打造出容量龐大的純天然綠色儲能大水庫。"
+        },
+        {
+          "en": "Energy storage facilities release electricity back to the grid during hot summer afternoons when air conditioners peak.",
+          "zh": "大型電池儲能電站在炎夏午後全台冷氣用電飆升的極限時刻放電援馳，力保全國供電無虞。"
+        }
+      ],
+      "collocations": [
+        "battery energy storage system (BESS)"
+      ]
+    },
+    {
+      "id": 5973,
+      "word": "inverter",
+      "pos": "n.",
+      "phonetic": "[ɪnˋvɝtɚ]",
+      "definition": "具備電網構網能力之智慧逆變變流器",
+      "cefr": "B1",
+      "topic": "電力電子",
+      "examples": [
+        {
+          "en": "Advanced grid-forming smart inverters synthesize virtual inertia to stabilize electrical grid frequencies.",
+          "zh": "具備構網技術的智慧變流器，能主動模擬發電機虛擬慣性，牢牢穩定電網頻率。"
+        },
+        {
+          "en": "The solar farm installed three-phase central inverters to convert DC current into high-voltage AC.",
+          "zh": "該大型地面型光電廠配置了三相集中式智慧變流器，高效率將太陽能直流電轉換為高壓交流電。"
+        },
+        {
+          "en": "Next-generation inverters ride through transient transmission faults without disconnecting from the network.",
+          "zh": "新世代智慧變流器具備優異的低電壓穿越（LVRT）能力，在電網突發暫態故障時絕不跳機解聯。"
+        }
+      ],
+      "collocations": [
+        "grid-forming power inverter"
+      ]
+    },
+    {
+      "id": 5974,
+      "word": "restoration",
+      "pos": "n. [U]",
+      "phonetic": "[͵rɛstəˋreʃən]",
+      "definition": "台電電力交易平台 dReg 動態調頻備轉",
+      "cefr": "B1",
+      "topic": "電力交易",
+      "examples": [
+        {
+          "en": "Fast frequency restoration reserves provide automated voltage support when large power plants trip offline.",
+          "zh": "參與電力交易平台的動態調頻備轉服務，在大型發電機組跳脫時即刻救援電網。"
+        },
+        {
+          "en": "Battery assets registered for automatic frequency restoration earn stable returns on the power market.",
+          "zh": "投入電力交易平台參與動態調頻備轉（dReg）的民營儲能資產，每月在市場上獲得穩健的容量收益。"
+        },
+        {
+          "en": "Frequency restoration mechanisms kicked in within two seconds of the generator trip, averting a blackout.",
+          "zh": "當大型發電機組意外跳脫瞬間，自動調頻備轉機制在短短兩秒內瞬態介入注入電力，化解了大停電危機。"
+        }
+      ],
+      "collocations": [
+        "frequency restoration reserve"
+      ]
+    },
+    {
+      "id": 5975,
+      "word": "regulation",
+      "pos": "n. [U]",
+      "phonetic": "[͵rɛgjəˋleʃən]",
+      "definition": "毫秒級自動頻率調節輔助服務；規定",
+      "cefr": "B1",
+      "topic": "調頻輔助",
+      "examples": [
+        {
+          "en": "High-rate lithium battery banks deliver instantaneous frequency regulation, keeping the grid locked at 60 Hz.",
+          "zh": "高倍率鋰電池儲能陣列提供毫秒級頻率調節輔助服務，將全台電力頻率精準鎖定在六十赫茲。"
+        },
+        {
+          "en": "Stringent grid code regulations require renewable developers to furnish ancillary grid stability services.",
+          "zh": "國家電網併網法規嚴格明定，再生能源發電開發商必須配置相應比例的調頻與電壓穩定輔助系統。"
+        },
+        {
+          "en": "Rapid automatic frequency regulation counters micro-second imbalances between power generation and demand.",
+          "zh": "極速全自動頻率調節機制，能在微秒尺度上化解即時發電端與負載端之間出現的細微供需失衡。"
+        }
+      ],
+      "collocations": [
+        "grid frequency regulation"
+      ]
+    },
+    {
+      "id": 5976,
+      "word": "shaving",
+      "pos": "n. [U]",
+      "phonetic": "[ˋʃevɪŋ]",
+      "definition": "尖峰用電削峰填谷轉移夜尖峰電力",
+      "cefr": "B1",
+      "topic": "負載管理",
+      "examples": [
+        {
+          "en": "Peak shaving discharges stored green electricity between 6:00 PM and 9:00 PM to replace dirty fossil generators.",
+          "zh": "儲能削峰填谷在傍晚夜尖峰用電最高峰時釋放綠電，成功取代老舊高污染燃油發電機組。"
+        },
+        {
+          "en": "Industrial manufacturers deploy on-site batteries for peak shaving, cutting expensive contracted demand tariffs.",
+          "zh": "大型鋼鐵與電子製造大廠在廠區自建儲能系統執行削峰填谷，大幅削減昂貴的超約附加基本電費。"
+        },
+        {
+          "en": "Peak shaving flattens load curves, allowing utilities to defer capital investments in redundant thermal turbines.",
+          "zh": "透過儲能進行全網負載削峰填谷能平滑整體用電曲線，讓電力公司無需被迫擴建備而不用的大型火力機組。"
+        }
+      ],
+      "collocations": [
+        "peak load shaving"
+      ]
+    },
+    {
+      "id": 5977,
+      "word": "capacity",
+      "pos": "n. [U]",
+      "phonetic": "[kəˋpæsətɪ]",
+      "definition": "數百萬瓩 (GW) 綠能裝置容量；容量",
+      "cefr": "B1",
+      "topic": "發電容量",
+      "examples": [
+        {
+          "en": "Taiwan aims to install over twenty gigawatts of solar and offshore wind capacity by the decade’s end.",
+          "zh": "台灣積極推動能源轉型，目標在未來數年內將太陽光電與離岸風電的裝置容量推升至數十 GW。"
+        },
+        {
+          "en": "The factory increased its rooftop solar capacity by adding high-efficiency bifacial panels.",
+          "zh": "該科技大廠在所有廠房屋頂加裝高效雙面發電光電板，大幅擴充了自發自用的太陽光電總裝置容量。"
+        },
+        {
+          "en": "Total offshore wind capacity contracted in the latest round exceeded three gigawatts of marine power.",
+          "zh": "經濟部在最新一輪離岸風電區塊開發招標中，正式簽署核發了超過 3GW 裝置容量的海上風電案場。"
+        }
+      ],
+      "collocations": [
+        "installed renewable capacity"
+      ]
+    },
+    {
+      "id": 5978,
+      "word": "grid",
+      "pos": "n.",
+      "phonetic": "[grɪd]",
+      "definition": "強韌分散式現代智慧國家電網；網格",
+      "cefr": "B1",
+      "topic": "輸配電網",
+      "examples": [
+        {
+          "en": "Taipower invests billions in constructing a decentralized, digitized, and resilient national power grid.",
+          "zh": "國營電力公司斥資數千億打造全面數位化、強韌抗災的分散式智慧電網。"
+        },
+        {
+          "en": "High-speed fiber-optic lines connect every smart substation to the central national grid dispatch room.",
+          "zh": "專用高速光纖骨幹網絡將全台每座智慧變電所，與中央最高調度中心的國家電網大螢幕即時串聯。"
+        },
+        {
+          "en": "Automated circuit breakers prevent localized wire faults from cascading into a nationwide grid blackout.",
+          "zh": "全自動化快速開關設備能在幾毫秒內精準隔離在地線路故障，杜絕局部跳電骨牌式擴散為全台大停電。"
+        }
+      ],
+      "collocations": [
+        "resilient national power grid"
+      ]
+    },
+    {
+      "id": 5979,
+      "word": "decentralization",
+      "pos": "n. [U]",
+      "phonetic": "[di͵sɛntrəlɪˋzeʃən]",
+      "definition": "分散式微電網獨立孤島運轉防大停電",
+      "cefr": "B1",
+      "topic": "電網結構",
+      "examples": [
+        {
+          "en": "Energy decentralization empowers local communities to generate and consume their own solar power safely.",
+          "zh": "推進電力去中心化與分散化，讓偏鄉社區能自給自足發電並具備獨立供電能力。"
+        },
+        {
+          "en": "Moving from centralized mega-power plants toward energy decentralization boosts national security against strikes.",
+          "zh": "從過度依賴少數大型集中式火力電廠轉向分散式綠能佈局，大幅提升了國家基礎設施抵禦打擊的安全底氣。"
+        },
+        {
+          "en": "Decentralization breaks monopolies, enabling peer-to-peer neighborhood green energy trading.",
+          "zh": "電力分散化打破了單一國營壟斷體系，促成了社區住戶之間屋頂綠電自由點對點（P2P）相互交易。"
+        }
+      ],
+      "collocations": [
+        "energy grid decentralization"
+      ]
+    },
+    {
+      "id": 5980,
+      "word": "microgrid",
+      "pos": "n.",
+      "phonetic": "[ˋmaɪkro͵grɪd]",
+      "definition": "偏鄉光儲一體智慧微電網 (自給自足)",
+      "cefr": "B1",
+      "topic": "區域微網",
+      "examples": [
+        {
+          "en": "Island microgrids with rooftop solar and battery banks maintain continuous power during typhoon blackouts.",
+          "zh": "離島與偏鄉原鄉部落建立的光儲一體智慧微電網，在颱風外線中斷時依然能獨立供電無虞。"
+        },
+        {
+          "en": "The university campus operates a standalone research microgrid that can disconnect from the utility grid at will.",
+          "zh": "大學城校區內建一座前瞻實驗性獨立智慧微電網，在主電網跳電時可隨時無縫切換至孤島離網模式自保。"
+        },
+        {
+          "en": "During disaster relief, portable emergency microgrids supply power to hospitals and shelter centers.",
+          "zh": "在重大地震災害緊急救援期間，機動型貨櫃式應急微電網能立即進駐為野戰醫院與避難所供應電力。"
+        }
+      ],
+      "collocations": [
+        "autonomous community microgrid"
+      ]
+    },
+    {
+      "id": 5981,
+      "word": "transmission",
+      "pos": "n. [U]",
+      "phonetic": "[trænzˋmɪʃən]",
+      "definition": "345kV 超高壓輸電幹線輸配電系統",
+      "cefr": "B1",
+      "topic": "輸電系統",
+      "examples": [
+        {
+          "en": "Upgrading the 345kV high-voltage transmission backbone allows bulk green power to flow from south to north.",
+          "zh": "擴建升級 345kV 超高壓電力傳輸幹線，讓南部豐沛的綠電順暢輸送至北部用電核心。"
+        },
+        {
+          "en": "Underground transmission lines are heavily armored to prevent damage from excavators and earthquakes.",
+          "zh": "埋設於都會地底深處的大容量超高壓輸電電纜具有重型裝甲披覆，徹底防範道路施工怪手誤損與地震拉扯。"
+        },
+        {
+          "en": "Building transmission lines across mountainous passes requires helicopters to erect steel towers.",
+          "zh": "在崎嶇險峻的高山埡口間架設超高壓輸電線路，仰賴重型直升機凌空吊掛組裝萬噸鋼骨鐵塔。"
+        }
+      ],
+      "collocations": [
+        "high-voltage power transmission"
+      ]
+    },
+    {
+      "id": 5982,
+      "word": "resilience",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋzɪlɪəns]",
+      "definition": "全黑啟動抗颱耐震強韌電網系統韌性",
+      "cefr": "B1",
+      "topic": "電網韌性",
+      "examples": [
+        {
+          "en": "Modernizing switchyards strengthens power grid resilience against extreme natural disasters and military cyberattacks.",
+          "zh": "全面升級變電所自動化設備，能大幅增強國家電網在面對世紀天災與極端狀況下的強大韌性。"
+        },
+        {
+          "en": "Incorporating localized battery backup systems builds resilience into critical hospital emergency wings.",
+          "zh": "在醫學中心急診與手術大樓配置分散式鋰電池與不斷電備援系統，築起堅韌無比的院區電力韌性。"
+        },
+        {
+          "en": "Black-start hydro generators provide the initial spark that restores grid resilience following a total system crash.",
+          "zh": "具備「全黑啟動」能力的抽蓄水力機組，是在全網意外全黑崩塌後重新點亮電網、恢復系統韌性的火種。"
+        }
+      ],
+      "collocations": [
+        "electrical power grid resilience"
+      ]
+    },
+    {
+      "id": 5983,
+      "word": "renewable",
+      "pos": "adj., n.",
+      "phonetic": "[rɪˋnjuəb!]",
+      "definition": "國際 RE100 倡議百分之百再生能源的",
+      "cefr": "B1",
+      "topic": "綠色能源",
+      "examples": [
+        {
+          "en": "Tech giants are committing to one hundred percent renewable energy to eliminate carbon from microchip manufacturing.",
+          "zh": "半導體護國神山與高科技巨頭紛紛簽署 RE100 倡議，承諾全面採用再生能源製造晶圓。"
+        },
+        {
+          "en": "The cost of generating renewable electricity from wind and solar has fallen below fossil fuels.",
+          "zh": "來自風力與太陽光電的潔淨再生能源發電度電成本，在國際市場上已全面低於高污染化石燃料。"
+        },
+        {
+          "en": "Transitioning away from coal to clean renewable resources safeguards clean air for future generations.",
+          "zh": "堅決告別燃煤發電並全面轉向純淨無染的綠色再生能源，是守護我們下一代乾淨空氣的必經之路。"
+        }
+      ],
+      "collocations": [
+        "100% renewable energy"
+      ]
+    },
+    {
+      "id": 5984,
+      "word": "agreement",
+      "pos": "n.",
+      "phonetic": "[əˋgrimənt]",
+      "definition": "企業綠電採購長期購售電合約 (CPPA)；協議",
+      "cefr": "B1",
+      "topic": "綠電交易",
+      "examples": [
+        {
+          "en": "Leading semiconductor fabs signed a twenty-year corporate power purchase agreement for offshore wind output.",
+          "zh": "晶圓製造大廠與離岸風電開發商簽署了為期二十年的長約企業購售電合約。"
+        },
+        {
+          "en": "Negotiating a long-term power purchase agreement guarantees fixed electricity prices for the data center.",
+          "zh": "透過談判簽署二十年期長期企業購售電合約（CPPA），能為跨國資料中心鎖定長期可預期的電力成本。"
+        },
+        {
+          "en": "Institutional banks approve billion-dollar wind loans only after seeing a signed corporate purchase agreement.",
+          "zh": "國際聯貸銀行團唯有在查驗審核具有高信評企業簽署的長期購電合約後，方始核准數百億元的專案融資。"
+        }
+      ],
+      "collocations": [
+        "corporate power purchase agreement"
+      ]
+    },
+    {
+      "id": 5985,
+      "word": "certificate",
+      "pos": "n.",
+      "phonetic": "[sɚˋtɪfəkɪt]",
+      "definition": "台灣再生能源綠電憑證 (T-REC)；證書",
+      "cefr": "B1",
+      "topic": "綠電憑證",
+      "examples": [
+        {
+          "en": "Purchasing verified Taiwan Renewable Energy Certificates (T-RECs) documents compliance with ESG export rules.",
+          "zh": "購買通過官方嚴格核發的台灣再生能源憑證，是跨國企業符合歐盟與國際 ESG 規範的有力鐵證。"
+        },
+        {
+          "en": "Each electronic REC certificate represents one thousand kilowatt-hours of clean green power generated.",
+          "zh": "每一張電子綠電憑證（T-REC）皆代表一千度（1,000 kWh）真實發出並注入電網的綠色潔淨電力。"
+        },
+        {
+          "en": "Regulators audit green certificate registers to prevent fraudulent double-counting of renewable credits.",
+          "zh": "國家能源主管機關嚴密稽核官方綠電憑證媒合平台資料庫，徹底杜絕任何重複申報與雙重計算弊端。"
+        }
+      ],
+      "collocations": [
+        "renewable energy certificate"
+      ]
+    },
+    {
+      "id": 5986,
+      "word": "neutrality",
+      "pos": "n. [U]",
+      "phonetic": "[njuˋtrælətɪ]",
+      "definition": "2050 國家淨零碳中和法定目標；中立",
+      "cefr": "B1",
+      "topic": "淨零目標",
+      "examples": [
+        {
+          "en": "Taiwan's climate law establishes a legally binding commitment to achieve carbon neutrality by 2050.",
+          "zh": "台灣《氣候變遷因應法》正式將西元 2050 年達成淨零碳中和明定為國家法定目標。"
+        },
+        {
+          "en": "Heavy industries must redesign production processes to align with global net-zero carbon neutrality roadmaps.",
+          "zh": "鋼鐵與石化等重工業巨擘必須徹底重構冶煉生產流程，以契合國際供應鏈淨零碳中和的嚴格時程表。"
+        },
+        {
+          "en": "Investing heavily in forest restoration and offshore wind drives our society closer to carbon neutrality.",
+          "zh": "大規模投入退耕還林生態森林造林與離岸風電開發，正引領著整個海島社會穩步邁向碳中和新境界。"
+        }
+      ],
+      "collocations": [
+        "2050 carbon neutrality goal"
+      ]
+    },
+    {
+      "id": 5987,
+      "word": "transition",
+      "pos": "n. [U]",
+      "phonetic": "[trænˋzɪʃən]",
+      "definition": "公正包容有序之全國綠色能源轉型",
+      "cefr": "B1",
+      "topic": "能源轉型",
+      "examples": [
+        {
+          "en": "A successful energy transition creates thousands of green jobs while reducing national coal combustion.",
+          "zh": "一場成功、公正且平穩的綠能轉型，在大幅減少燃煤發電的同時創造數萬個綠色就業機會。"
+        },
+        {
+          "en": "Financial subsidies help retraining programs for fossil-fuel workers during the national energy transition.",
+          "zh": "國家在推動重大能源轉型過程中編列專案輔導預算，全力協助傳統火力電廠勞工轉型培訓至新綠能產業。"
+        },
+        {
+          "en": "Public hearings guarantee that indigenous communities participate equitably in the green transition.",
+          "zh": "密集舉辦基層公聽會，確保原住民族部落與在地漁民能在綠能公正轉型大潮中享有平等的權益與參與。"
+        }
+      ],
+      "collocations": [
+        "just green energy transition"
+      ]
+    },
+    {
+      "id": 5988,
+      "word": "sovereignty",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɑvrɪntɪ]",
+      "definition": "擺脫化石能源依賴之本土能源自主權",
+      "cefr": "B1",
+      "topic": "能源自主",
+      "examples": [
+        {
+          "en": "Harnessing domestic wind and sun builds clean energy sovereignty, shielding the island from fuel blockades.",
+          "zh": "充分開發本土豐沛的風力與陽光，能建立堅不可摧的能源自主權，免受國際能源地緣封鎖威脅。"
+        },
+        {
+          "en": "Relying on imported oil and liquefied natural gas leaves national security exposed, undermining real sovereignty.",
+          "zh": "高達九成七仰賴進口原油與液化天然氣的脆弱現況，會嚴重削弱海島面臨封鎖危機時的實質國家自主性。"
+        },
+        {
+          "en": "Developing self-sustaining renewable capacity provides true geopolitical energy sovereignty.",
+          "zh": "傾力建設在地自給自足的綠色再生能源發電體系，方能為這座島嶼奠定真正的地緣政治能源自主權。"
+        }
+      ],
+      "collocations": [
+        "national clean energy sovereignty"
+      ]
+    },
+    {
+      "id": 5989,
+      "word": "security",
+      "pos": "n. [U]",
+      "phonetic": "[sɪˋkjʊrətɪ]",
+      "definition": "確保島嶼關鍵基礎設施能源供應安全",
+      "cefr": "B1",
+      "topic": "國家安全",
+      "examples": [
+        {
+          "en": "Diversified renewable power generation forms the bedrock of modern national energy security.",
+          "zh": "多元化、在地化與分散式的綠色再生能源發電體系，是守護這座海島國家能源安全的最堅固基石。"
+        },
+        {
+          "en": "Strategic fuel stockpiles and dispersed wind farms insulate island economies against shipping embargoes.",
+          "zh": "提高國家戰略能源儲備天數並廣泛佈建海上分散式風場，能保護海島經濟抵禦任何形式的禁運封鎖。"
+        },
+        {
+          "en": "Protecting power substations against cyber espionage has become a top priority for homeland security.",
+          "zh": "保衛全國各關鍵輸電變電所免受跨國黑客組織的惡意網路間諜滲透，已成國家安全戰略的最高防線。"
+        }
+      ],
+      "collocations": [
+        "strategic national energy security"
+      ]
+    },
+    {
+      "id": 5990,
+      "word": "synergy",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɪnɚdʒɪ]",
+      "definition": "風光儲互補一體完美綜效；協同作用",
+      "cefr": "B1",
+      "topic": "系統綜效",
+      "examples": [
+        {
+          "en": "Integrating offshore wind, rooftop solar, and pumped hydro creates balanced seasonal energy synergy.",
+          "zh": "將夏季發電最強的太陽能、冬季最強的離岸風電與抽蓄水力完美結合，發揮出四季平衡的綠能綜效。"
+        },
+        {
+          "en": "Pairing electric vehicle fleets with solar parking canopies demonstrates brilliant urban energy synergy.",
+          "zh": "將龐大電動車充電樁網絡與停車場太陽能光電遮陽棚相結合，展現出令人驚豔的都會智慧能源協同效應。"
+        },
+        {
+          "en": "The collaboration between domestic shipbuilders and international wind developers generated powerful economic synergy.",
+          "zh": "本土造船重工業大廠與國際頂尖風電開發商的深度合資合作，激發出驚人強大的海事工程經濟綜效。"
+        }
+      ],
+      "collocations": [
+        "seasonal renewable energy synergy"
+      ]
+    },
+    {
+      "id": 5991,
+      "word": "investment",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋvɛstmənt]",
+      "definition": "吸引數千億國際綠色基礎建設投資",
+      "cefr": "B1",
+      "topic": "綠色金融",
+      "examples": [
+        {
+          "en": "Offshore wind projects attracted over one trillion NT dollars in foreign direct green infrastructure investment.",
+          "zh": "離岸風電國家重大建設吸引了超過新台幣一兆元的龐大外國綠色基礎建設投資湧入台灣。"
+        },
+        {
+          "en": "Green bond issuances enable pension funds to direct long-term capital investment toward solar parks.",
+          "zh": "官方與金融機構發行綠色永續債券，引導國家退休基金與長期民間壽險資本直接挹注重大光電風電建設計畫。"
+        },
+        {
+          "en": "Sustainable infrastructure investment creates high-quality engineering apprenticeships for young graduates.",
+          "zh": "蓬勃發展的永續綠能基建投資，為在地大專理工科畢業生創造了數以萬計的高薪海事工程技師就業機會。"
+        }
+      ],
+      "collocations": [
+        "green infrastructure investment"
+      ]
+    },
+    {
+      "id": 5992,
+      "word": "localization",
+      "pos": "n. [U]",
+      "phonetic": "[͵lokəlɪˋzeʃən]",
+      "definition": "水下基礎與風機塔架供應鏈在地化國產化",
+      "cefr": "B1",
+      "topic": "產業國產化",
+      "examples": [
+        {
+          "en": "Government policies promote supply chain localization to cultivate domestic marine engineering capabilities.",
+          "zh": "政府積極推動重大零組件供應鏈在地化國產化，扶植本土造船與水下重工業海事工程技術。"
+        },
+        {
+          "en": "Heavy steel fabricators built multi-million-dollar waterfront facilities to fulfill strict localization rules.",
+          "zh": "本土鋼鐵重工企業在高雄興達港斥資數十億建立海港專業專用碼頭廠房，以落實嚴格的零組件國產化規範。"
+        },
+        {
+          "en": "Industrial localization creates an enduring regional ecosystem capable of exporting components throughout Asia.",
+          "zh": "離岸風電供應鏈在地化國產化，成功培育出成熟且具國際競爭力的產業生態系，進而向亞太各國輸出組件。"
+        }
+      ],
+      "collocations": [
+        "supply chain localization"
+      ]
+    },
+    {
+      "id": 5993,
+      "word": "modernization",
+      "pos": "n. [U]",
+      "phonetic": "[͵mɑdɚnəˋzeʃən]",
+      "definition": "全國電力系統全面智慧數位現代化",
+      "cefr": "B1",
+      "topic": "電網升級",
+      "examples": [
+        {
+          "en": "Accelerated power modernization replaces mechanical meters with smart digital devices in every household.",
+          "zh": "全力加速推動電力系統現代化，為全台數百萬家庭換裝智慧電表並導入數位即時調度。"
+        },
+        {
+          "en": "Substation modernization incorporates fiber-optic telemetry to automate switching during storm outages.",
+          "zh": "全面推動變電所數位自動化現代化改建，導入光纖遙測系統以在颱風跳電事故中秒級自動化復電隔離。"
+        },
+        {
+          "en": "The digital modernization of the electric grid ensures seamless integration of decentralized solar arrays.",
+          "zh": "國家電網的全面數位化與智慧現代化轉型，確保了數十萬處分散式屋頂光電能無縫並入大電網運作。"
+        }
+      ],
+      "collocations": [
+        "electrical grid modernization"
+      ]
+    },
+    {
+      "id": 5994,
+      "word": "generation",
+      "pos": "n. [U]",
+      "phonetic": "[͵dʒɛnəˋreʃən]",
+      "definition": "潔淨純淨零碳排綠色發電；世代",
+      "cefr": "B1",
+      "topic": "綠電發電",
+      "examples": [
+        {
+          "en": "Zero-emission power generation from ocean winds cleans our skies and slows global warming.",
+          "zh": "來自海洋季風的純淨零碳綠能發電，還給孩子們蔚藍晴空並減緩全球暖化浩劫。"
+        },
+        {
+          "en": "On windy winter days, offshore wind generation supplies more than a quarter of the island’s midday electricity.",
+          "zh": "在冬季風勁十足的日子裡，台灣海峽離岸風電瞬時發電量甚至能供應全台中午超過四分之一的用電需求。"
+        },
+        {
+          "en": "Phasing out polluting coal-fired generation brings immediate respiratory benefits to coastal communities.",
+          "zh": "逐步汰除高污染燃煤電廠發電機組，為長期飽受煙囪空污所苦的沿海鄉親帶來立竿見影的呼吸健康改善。"
+        }
+      ],
+      "collocations": [
+        "clean renewable generation"
+      ]
+    },
+    {
+      "id": 5995,
+      "word": "prosperity",
+      "pos": "n. [U]",
+      "phonetic": "[prɑsˋpɛrətɪ]",
+      "definition": "帶動高科技綠能產業永續繁榮富強",
+      "cefr": "B1",
+      "topic": "經濟榮景",
+      "examples": [
+        {
+          "en": "Embracing clean green technology fosters high-wage engineering jobs and long-term economic prosperity.",
+          "zh": "擁抱潔淨綠能科技與循環經濟，帶動了高薪綠能工程聚落的崛起與國家經濟長遠的繁榮富強。"
+        },
+        {
+          "en": "Fishing towns transformed into bustling maritime logistics harbors, experiencing unprecedented economic prosperity.",
+          "zh": "昔日沒落純樸的小漁港蛻變為國際級海事重裝物流運維母港，迎來了前所未有的地方經濟大繁榮。"
+        },
+        {
+          "en": "The green energy transition proves that environmental protection and national industrial prosperity can go hand in hand.",
+          "zh": "這場綠能大轉型向世界雄辯證實，大自然環境保護與國家先進工業的永續繁榮完全可以並駕齊驅、相得益彰。"
+        }
+      ],
+      "collocations": [
+        "long-term green prosperity"
+      ]
+    },
+    {
+      "id": 5996,
+      "word": "innovation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪnəˋveʃən]",
+      "definition": "勇於開拓海島風能之工程科技創新突破",
+      "cefr": "B1",
+      "topic": "科技創新",
+      "examples": [
+        {
+          "en": "Groundbreaking engineering innovation conquered deep water typhoon-resistant floating turbine foundations.",
+          "zh": "舉世矚目的工程科技創新，成功克服深水抗颱抗震難題，開發出新一代漂浮式離岸風機。"
+        },
+        {
+          "en": "Continuous technological innovation pushed the limits of blade length and generator power output.",
+          "zh": "結構力學與複合材料的不懈科技創新，不斷刷新葉片長度極限並推升單機發電機組容量天花板。"
+        },
+        {
+          "en": "Taiwan's wind industry relies on continuous engineering innovation to thrive in challenging geological waters.",
+          "zh": "台灣本土離岸風電工程團隊仰賴勇於突破的科技創新，在斷層遍布的險峻海況中闖出一片嶄新天地。"
+        }
+      ],
+      "collocations": [
+        "marine engineering innovation"
+      ]
+    },
+    {
+      "id": 5997,
+      "word": "commitment",
+      "pos": "n. [U]",
+      "phonetic": "[kəˋmɪtmənt]",
+      "definition": "守護後代子孫之堅定不移淨零承諾",
+      "cefr": "B1",
+      "topic": "莊嚴承諾",
+      "examples": [
+        {
+          "en": "Transitioning away from fossil fuels is a solemn intergenerational commitment to our children's future.",
+          "zh": "堅定告別高污染化石燃料，是當代人對後代子孫生存環境許下的最莊嚴世代承諾。"
+        },
+        {
+          "en": "Corporate leaders signed an ironclad sustainability commitment to power all factories with renewable energy.",
+          "zh": "產業領袖簽署了堅定不移的永續行動承諾書，承諾在指定年限前將旗下所有生產基地改採百分之百綠能運作。"
+        },
+        {
+          "en": "Delivering on our net-zero commitment requires unyielding political determination and community collaboration.",
+          "zh": "全面踐行二零五零淨零承諾，需要執政當局堅定不移的政治魄力以及全民社會上下一心的團結攜手。"
+        }
+      ],
+      "collocations": [
+        "solemn net-zero commitment"
+      ]
+    },
+    {
+      "id": 5998,
+      "word": "heritage",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhɛrətɪdʒ]",
+      "definition": "留給未來世代乾淨山海的綠色永續遺產",
+      "cefr": "B1",
+      "topic": "綠色遺產",
+      "examples": [
+        {
+          "en": "Leaving behind clear blue skies and plastic-free oceans is the greatest environmental heritage we can give.",
+          "zh": "為下一代留下晴空萬里的蔚藍天空、清澈溪流與純淨海洋，是我們能傳承給孩子最無價的綠色遺產。"
+        },
+        {
+          "en": "Protecting ancestral natural coastlines ensures that our precious ecological heritage remains unspoiled.",
+          "zh": "悉心守護這片先民世代棲息的美麗自然海岸線，確保我們珍貴的海洋生態遺產免受工業重度摧殘。"
+        },
+        {
+          "en": "Green energy enables us to pass down a prosperous economy and a thriving natural world as our shared heritage.",
+          "zh": "發展綠能讓我們有能力將繁榮富強的永續經濟與生機盎然的大自然，作為全體子孫引以為傲的共同遺產。"
+        }
+      ],
+      "collocations": [
+        "sustainable planetary heritage"
+      ]
+    },
+    {
+      "id": 5999,
+      "word": "transformation",
+      "pos": "n. [U]",
+      "phonetic": "[͵trænsfɚˋmeʃən]",
+      "definition": "台灣綠能歷史性大轉型大跨越里程碑",
+      "cefr": "B1",
+      "topic": "歷史跨越",
+      "examples": [
+        {
+          "en": "The historic transformation of our energy landscape cements Taiwan’s standing as an international green pioneer.",
+          "zh": "台灣能源結構這場翻天覆地的歷史性大轉型，確立了台灣在國際綠能版圖上的領航者地位。"
+        },
+        {
+          "en": "Decades of bold planning sparked a remarkable industrial transformation across offshore heavy engineering.",
+          "zh": "數十年間具有戰略遠見的前瞻規劃，在本土水下重工與海事工程界掀起了一場令人刮目相看的產業大轉型。"
+        },
+        {
+          "en": "Clean power generation is the crowning achievement in our national economic and environmental transformation.",
+          "zh": "純淨綠色電力全面走入尋常百姓家，是台灣在國家整體經濟發展與環境永續歷史大跨越中最耀眼的里程碑。"
+        }
+      ],
+      "collocations": [
+        "historic energy transformation"
+      ]
+    },
+    {
+      "id": 6000,
+      "word": "hope",
+      "pos": "n. [U], v.",
+      "phonetic": "[hop]",
+      "definition": "綠色希望之光點亮島嶼永續光明未來",
+      "cefr": "B1",
+      "topic": "綠色希望",
+      "examples": [
+        {
+          "en": "The spinning ocean turbines stand tall on the horizon, shining as a glorious beacon of sustainable green hope.",
+          "zh": "矗立於海天交界處旋轉不息的風機，宛如守護這座美麗島嶼的燈塔，綻放出點亮永續未來的綠色希望之光。"
+        },
+        {
+          "en": "Every blade rotating against the wind whispers a message of renewable hope for a greener planet.",
+          "zh": "每一支在大洋季風中昂然旋轉的巨大葉片，皆在藍天碧海間向世人傳遞著拯救地球暖化的無限綠色希望。"
+        },
+        {
+          "en": "Generations of environmental advocates look out at the offshore wind farm with hearts brimming with hope.",
+          "zh": "世代為環境保護奔走奉獻的文史與環保志士佇立在海堤邊遠眺壯闊風場，內心深處被美好的希望所溫暖。"
+        }
+      ],
+      "collocations": [
+        "eternal beacon of hope"
+      ]
+    }
+  ]
+}

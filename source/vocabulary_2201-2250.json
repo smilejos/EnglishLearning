@@ -1,0 +1,1340 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 2,201–2,250 個單字（CEFR B1 中級）",
+  "batch": "2201-2250",
+  "range": "2201–2250",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 2201,
+      "word": "itinerary",
+      "pos": "n.",
+      "phonetic": "[aɪˋtɪnəˌrɛrɪ]",
+      "definition": "旅遊行程；旅行計畫表",
+      "cefr": "B1",
+      "topic": "旅遊規劃",
+      "examples": [
+        {
+          "en": "We carefully planned a five-day round-island railway travel itinerary.",
+          "zh": "我們精心規劃了一套為期五天的鐵道環島旅遊行程。"
+        },
+        {
+          "en": "Our tour guide distributed a printed daily itinerary to all participants.",
+          "zh": "導遊向所有參團團員發放了列印好的每日行程表。"
+        },
+        {
+          "en": "Bad weather forced the mountaineering group to alter their summit itinerary.",
+          "zh": "惡劣天候迫使登山隊伍臨時變更了登頂行程安排。"
+        }
+      ],
+      "collocations": [
+        "travel itinerary",
+        "detailed itinerary"
+      ]
+    },
+    {
+      "id": 2202,
+      "word": "backpacker",
+      "pos": "n.",
+      "phonetic": "[ˋbækˌpækɚ]",
+      "definition": "背包客；自助旅行者",
+      "cefr": "B1",
+      "topic": "旅遊人物",
+      "examples": [
+        {
+          "en": "Budget backpackers love staying at friendly youth hostels near night markets.",
+          "zh": "小資背包客非常喜愛入住鄰近夜市且人情味濃厚的青年旅館。"
+        },
+        {
+          "en": "The hostel common room was packed with international backpackers swapping travel stories.",
+          "zh": "青旅的交誼廳擠滿了來自各國的背包客，熱絡交換著彼此的旅行經歷。"
+        },
+        {
+          "en": "As an experienced backpacker, she travels with only a lightweight 40-liter rucksack.",
+          "zh": "作為一名經驗老到的背包客，她只背著一個四十公升的輕便背包四處旅行。"
+        }
+      ],
+      "collocations": [
+        "solo backpacker"
+      ]
+    },
+    {
+      "id": 2203,
+      "word": "destination",
+      "pos": "n.",
+      "phonetic": "[͵dɛstəˋneʃən]",
+      "definition": "目的地；旅遊終點",
+      "cefr": "B1",
+      "topic": "旅遊地理",
+      "examples": [
+        {
+          "en": "Jiufen Old Street is a must-visit mountain destination for overseas visitors.",
+          "zh": "九份老街是海外觀光客必訪的山城旅遊勝地目的地。"
+        },
+        {
+          "en": "After a twelve-hour flight, the passengers finally reached their sunny European destination.",
+          "zh": "經過十二小時的長途飛行，乘客們終於抵達了陽光明媚的歐洲目的地。"
+        },
+        {
+          "en": "Hualien remains one of the top holiday destinations for domestic ecotourism.",
+          "zh": "花蓮一直是國內生態旅遊的首選度假勝地之一。"
+        }
+      ],
+      "collocations": [
+        "holiday destination",
+        "popular destination"
+      ]
+    },
+    {
+      "id": 2204,
+      "word": "tourist attraction",
+      "pos": "n. phr.",
+      "phonetic": "[ˋtʊrɪst əˋtrækʃən]",
+      "definition": "觀光景點；名勝",
+      "cefr": "B1",
+      "topic": "觀光名勝",
+      "examples": [
+        {
+          "en": "The National Palace Museum is a world-class cultural tourist attraction.",
+          "zh": "國立故宮博物院是一座世界級的文化觀光景點。"
+        },
+        {
+          "en": "Taipei 101 observatory is undoubtedly the most iconic modern tourist attraction in Taiwan.",
+          "zh": "台北 101 觀景台無疑是台灣最具代表性的現代地標觀光景點。"
+        },
+        {
+          "en": "Historic Lukang town features numerous preserved heritage tourist attractions.",
+          "zh": "歷史名鎮鹿港保留了許多完好無損的古蹟文化景點。"
+        }
+      ],
+      "collocations": [
+        "top tourist attraction"
+      ]
+    },
+    {
+      "id": 2205,
+      "word": "scenic spot",
+      "pos": "n. phr.",
+      "phonetic": "[ˋsinɪk spɑt]",
+      "definition": "風景區；名勝景點",
+      "cefr": "B1",
+      "topic": "觀光名勝",
+      "examples": [
+        {
+          "en": "Sun Moon Lake is widely praised as Taiwan's premier scenic spot.",
+          "zh": "日月潭被各界譽為台灣首屈一指的風景名勝區。"
+        },
+        {
+          "en": "Photography enthusiasts gather at this coastal scenic spot to capture golden hour sunsets.",
+          "zh": "攝影愛好者齊聚這處沿海風景名勝，爭相捕捉黃金時刻的日落餘暉。"
+        },
+        {
+          "en": "Taroko Gorge features dramatic marble cliffs and stunning riverbed scenic spots.",
+          "zh": "太魯閣峽谷擁有壯麗的大理石絕壁與令人屏息的河谷風景區。"
+        }
+      ],
+      "collocations": [
+        "famous scenic spot"
+      ]
+    },
+    {
+      "id": 2206,
+      "word": "visa",
+      "pos": "n.",
+      "phonetic": "[ˋvizə]",
+      "definition": "簽證；入境許可",
+      "cefr": "B1",
+      "topic": "國際出入境",
+      "examples": [
+        {
+          "en": "Taiwanese passport holders enjoy visa-free entry to over one hundred countries.",
+          "zh": "台灣護照持有人享有全球一百多個國家的免簽證入境待遇。"
+        },
+        {
+          "en": "You must apply for a student visa at the embassy before studying abroad.",
+          "zh": "出國留學前必須先向大使館申請學生簽證。"
+        },
+        {
+          "en": "Processing a working holiday visa usually takes two to three weeks.",
+          "zh": "辦理打工度假簽證通常需要耗時二至三週的時間。"
+        }
+      ],
+      "collocations": [
+        "apply for a visa",
+        "tourist visa"
+      ]
+    },
+    {
+      "id": 2207,
+      "word": "visa-free",
+      "pos": "adj.",
+      "phonetic": "[ˋvizə fri]",
+      "definition": "免簽證的",
+      "cefr": "B1",
+      "topic": "出入境政策",
+      "examples": [
+        {
+          "en": "Japanese travelers can enter Taiwan on a ninety-day visa-free stay.",
+          "zh": "日本籍旅客可享有停留九十天的免簽證來台待遇。"
+        },
+        {
+          "en": "Many European countries offer reciprocal visa-free entry to international tourists.",
+          "zh": "許多歐洲國家向國際觀光客提供對等的免簽證入境便利待遇。"
+        },
+        {
+          "en": "Expanded visa-free policies have given a huge boost to the local tourism industry.",
+          "zh": "擴大免簽政策為在地觀光旅遊產業帶來了巨大的推動效益。"
+        }
+      ],
+      "collocations": [
+        "visa-free access",
+        "visa-free travel"
+      ]
+    },
+    {
+      "id": 2208,
+      "word": "validity",
+      "pos": "n. [U]",
+      "phonetic": "[vəˋlɪdətɪ]",
+      "definition": "有效期；正當性",
+      "cefr": "B1",
+      "topic": "證件法規",
+      "examples": [
+        {
+          "en": "Ensure your passport has at least six months of remaining validity before flying.",
+          "zh": "出國搭機前請務必確認您的護照具備至少六個月以上的剩餘效期。"
+        },
+        {
+          "en": "The immigration officer verified the legal validity of my work permit documents.",
+          "zh": "移民官仔細審查並確認了我工作許可文件的合法有效性。"
+        },
+        {
+          "en": "Scientists raised doubts about the scientific validity of the experimental results.",
+          "zh": "科學家們對該實驗結果的科學有效性提出了合理質疑。"
+        }
+      ],
+      "collocations": [
+        "passport validity",
+        "period of validity"
+      ]
+    },
+    {
+      "id": 2209,
+      "word": "customs",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋkʌstəmz]",
+      "definition": "海關；關稅；出入境檢查處",
+      "cefr": "B1",
+      "topic": "機場設施",
+      "examples": [
+        {
+          "en": "Passengers must pass through airport customs and declare fresh meat items.",
+          "zh": "旅客入境時必須通過機場海關並主動申報生鮮肉類製品。"
+        },
+        {
+          "en": "The customs officer asked us to open our luggage for a routine random check.",
+          "zh": "海關官員要求我們打開隨身行李接受例行隨機抽查。"
+        },
+        {
+          "en": "Different ethnic groups observe unique cultural customs during lunar new year festivities.",
+          "zh": "不同族群在農曆春節節慶期間恪守著各自獨特的文化習俗。"
+        }
+      ],
+      "collocations": [
+        "clear customs",
+        "customs officer"
+      ]
+    },
+    {
+      "id": 2210,
+      "word": "declare",
+      "pos": "v.",
+      "phonetic": "[dɪˋklɛr]",
+      "definition": "申報；宣稱；宣告",
+      "cefr": "B1",
+      "topic": "海關與法律",
+      "examples": [
+        {
+          "en": "You must declare large amounts of foreign currency upon airport arrival.",
+          "zh": "抵達機場入境時，若攜帶超額外幣現鈔必須主動申報。"
+        },
+        {
+          "en": "Travelers who fail to declare agricultural products face hefty fines.",
+          "zh": "未依法申報生鮮農產品的旅客將面臨高額重罰。"
+        },
+        {
+          "en": "The mayor officially declared the newly constructed suspension bridge open to the public.",
+          "zh": "市長正式宣布新建成的吊橋正式向全體公眾開放通行。"
+        }
+      ],
+      "collocations": [
+        "declare goods",
+        "declare customs"
+      ]
+    },
+    {
+      "id": 2211,
+      "word": "duty-free shop",
+      "pos": "n. phr.",
+      "phonetic": "[ˋdjutɪ fri ʃɑp]",
+      "definition": "免稅商店",
+      "cefr": "B1",
+      "topic": "機場購物",
+      "examples": [
+        {
+          "en": "Travelers love buying fragrances and cosmetics at the airport duty-free shop.",
+          "zh": "旅客們喜歡在機場免稅商店選購香水與專櫃化妝品。"
+        },
+        {
+          "en": "Remember to bring your passport when shopping inside the airport duty-free shop.",
+          "zh": "在機場免稅商店購物結帳時，請記得出示您的個人護照。"
+        },
+        {
+          "en": "Duty-free shops often bundle popular confectioneries into discounted gift packs.",
+          "zh": "免稅商店常將熱門精選糖果點心包裝為特惠伴手禮盒組合。"
+        }
+      ],
+      "collocations": [
+        "duty-free shopping"
+      ]
+    },
+    {
+      "id": 2212,
+      "word": "tax refund",
+      "pos": "n. phr.",
+      "phonetic": "[tæks ˋriˌfʌnd]",
+      "definition": "退稅；退還稅款",
+      "cefr": "B1",
+      "topic": "購物與稅務",
+      "examples": [
+        {
+          "en": "International tourists can claim an instant VAT tax refund at department stores.",
+          "zh": "國際觀光客可在各大百貨商場直接辦理現場退稅服務。"
+        },
+        {
+          "en": "Keep all your purchase receipts and official invoices to process the airport tax refund.",
+          "zh": "請妥善保存所有購物明細收據與正式發票，以便在機場辦理退稅手續。"
+        },
+        {
+          "en": "The automated tax refund kiosk processed our refund in less than two minutes.",
+          "zh": "自動化退稅機台在不到兩分鐘內就幫我們辦妥了退稅手續。"
+        }
+      ],
+      "collocations": [
+        "claim a tax refund"
+      ]
+    },
+    {
+      "id": 2213,
+      "word": "immigration",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪməˋgreʃən]",
+      "definition": "入境檢查；移民局；移居",
+      "cefr": "B1",
+      "topic": "機場通關",
+      "examples": [
+        {
+          "en": "Present your passport and boarding pass at the airport immigration counter.",
+          "zh": "在機場出入境證照查驗櫃檯請出示您的護照與登機證。"
+        },
+        {
+          "en": "Electronic e-gates make passing through airport immigration fast and painless.",
+          "zh": "自動查驗通關閘門讓出入境通關變得極其迅速且輕鬆便利。"
+        },
+        {
+          "en": "The government revised immigration policies to attract skilled foreign engineers.",
+          "zh": "政府修訂了移民政策以積極吸引優秀外籍專業工程師來台。"
+        }
+      ],
+      "collocations": [
+        "pass immigration",
+        "immigration officer"
+      ]
+    },
+    {
+      "id": 2214,
+      "word": "quarantine",
+      "pos": "n. [U], v.",
+      "phonetic": "[ˋkwɔrənˌtin]",
+      "definition": "檢疫；隔離；進行檢疫",
+      "cefr": "B1",
+      "topic": "邊境防疫",
+      "examples": [
+        {
+          "en": "Strict border plant quarantine prevents foreign agricultural pests from entering.",
+          "zh": "嚴格的邊境動植物檢疫能防堵境外農業有害生物入侵。"
+        },
+        {
+          "en": "Pets imported from abroad must undergo a mandatory veterinary quarantine period.",
+          "zh": "從境外輸入的寵物必須依法接受強制性的動物檢疫隔離期。"
+        },
+        {
+          "en": "Health authorities ordered travelers showing fever symptoms into quarantine.",
+          "zh": "衛生機關下令對出現發燒症狀的入境旅客進行隔離檢疫措施。"
+        }
+      ],
+      "collocations": [
+        "airport quarantine",
+        "quarantine inspection"
+      ]
+    },
+    {
+      "id": 2215,
+      "word": "boarding pass",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbordɪŋ pæs]",
+      "definition": "登機證",
+      "cefr": "B1",
+      "topic": "航空搭乘",
+      "examples": [
+        {
+          "en": "You can save paper by downloading a digital mobile boarding pass.",
+          "zh": "下載手機數位電子登機證既環保又能節省紙張。"
+        },
+        {
+          "en": "Keep your boarding pass handy as gate agents inspect it before you board.",
+          "zh": "請將登機證放在隨手可取之處，登機門地勤人員登機前會進行查驗。"
+        },
+        {
+          "en": "The airline ground crew printed our boarding passes at the self-check-in kiosk.",
+          "zh": "航空公司地勤人員在自助報到機前協助我們列印出了登機證。"
+        }
+      ],
+      "collocations": [
+        "show boarding pass"
+      ]
+    },
+    {
+      "id": 2216,
+      "word": "boarding gate",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbordɪŋ get]",
+      "definition": "登機門；登機閘口",
+      "cefr": "B1",
+      "topic": "機場設施",
+      "examples": [
+        {
+          "en": "Please proceed to boarding gate B7 thirty minutes before flight departure.",
+          "zh": "請於班機起飛前三十分鐘前往 B7 登機門候機。"
+        },
+        {
+          "en": "An airport announcement notified passengers that the flight boarding gate had changed.",
+          "zh": "機場廣播即時通知候機旅客該航班的登機門已臨時變更。"
+        },
+        {
+          "en": "Duty-free shopping areas are strategically placed along the path to the boarding gate.",
+          "zh": "免稅購物商場巧妙地規劃在前往登機門的沿途動線上。"
+        }
+      ],
+      "collocations": [
+        "gate number",
+        "gate change"
+      ]
+    },
+    {
+      "id": 2217,
+      "word": "luggage allowance",
+      "pos": "n. phr.",
+      "phonetic": "[ˋlʌgɪdʒ əˋlaʊəns]",
+      "definition": "行李限額；免費行李額度",
+      "cefr": "B1",
+      "topic": "航空規定",
+      "examples": [
+        {
+          "en": "Economy class tickets usually include a twenty-three-kilogram checked luggage allowance.",
+          "zh": "經濟艙機票通常包含一件二十三公斤的免費託運行李額度。"
+        },
+        {
+          "en": "Weigh your bags at home to avoid exceeding the strict airline luggage allowance.",
+          "zh": "出發前先在家稱量行李重量，以免超過航空公司嚴格的行李限額。"
+        },
+        {
+          "en": "Frequent flyer status grants members additional luggage allowance free of charge.",
+          "zh": "高階會員飛行常客資格享有額外贈送的免費行李託運額度。"
+        }
+      ],
+      "collocations": [
+        "baggage allowance"
+      ]
+    },
+    {
+      "id": 2218,
+      "word": "carry-on bag",
+      "pos": "n. phr.",
+      "phonetic": "[ˋkærɪ ɑn bæg]",
+      "definition": "隨身手提行李；登機箱",
+      "cefr": "B1",
+      "topic": "航空行李",
+      "examples": [
+        {
+          "en": "Place your lightweight carry-on bag into the overhead storage bin.",
+          "zh": "將輕便的隨身登機手提行李放置在頭頂上方的行李艙中。"
+        },
+        {
+          "en": "Ensure all liquid containers in your carry-on bag comply with the 100ml limit.",
+          "zh": "請確保隨身手提行李中的所有液體容器皆符合 100 毫升之限制。"
+        },
+        {
+          "en": "Flight attendants help passengers find remaining bin space for their carry-on bags.",
+          "zh": "空服員熱心協助登機乘客尋找頭頂行李櫃剩餘的放置空間。"
+        }
+      ],
+      "collocations": [
+        "hand luggage",
+        "cabin baggage"
+      ]
+    },
+    {
+      "id": 2219,
+      "word": "checked baggage",
+      "pos": "n. phr.",
+      "phonetic": "[tʃɛkt ˋbægɪdʒ]",
+      "definition": "託運行李",
+      "cefr": "B1",
+      "topic": "航空行李",
+      "examples": [
+        {
+          "en": "Check oversized heavy suitcases at the airline check-in counter.",
+          "zh": "在航空公司報到櫃檯將大型沉重行李箱辦理託運。"
+        },
+        {
+          "en": "Remember to remove lithium battery power banks from your checked baggage.",
+          "zh": "請切記將鋰電池行動電源從託運行李中取出，改放隨身攜帶。"
+        },
+        {
+          "en": "Baggage handlers carefully transfer checked baggage into the airplane cargo hold.",
+          "zh": "地勤行李搬運員小心翼翼地將託運行李裝載送入飛機貨艙中。"
+        }
+      ],
+      "collocations": [
+        "checked luggage",
+        "check in bags"
+      ]
+    },
+    {
+      "id": 2220,
+      "word": "baggage claim",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbægɪdʒ klem]",
+      "definition": "行李領取處；行李提取區",
+      "cefr": "B1",
+      "topic": "機場設施",
+      "examples": [
+        {
+          "en": "Follow overhead airport signs to the baggage claim hall after landing.",
+          "zh": "飛機降落入境後，請沿著機場指示牌前往行李領取大廳。"
+        },
+        {
+          "en": "He realized his suitcase was missing after waiting an hour at baggage claim.",
+          "zh": "他在行李領取區苦等了一小時後，才驚覺自己的行李箱遺失了。"
+        },
+        {
+          "en": "The baggage claim area was crowded with travelers returning from holiday vacations.",
+          "zh": "行李領取大廳擠滿了剛結束美好度假返國的旅客人潮。"
+        }
+      ],
+      "collocations": [
+        "baggage claim area"
+      ]
+    },
+    {
+      "id": 2221,
+      "word": "carousel",
+      "pos": "n.",
+      "phonetic": "[͵kærəˋsɛl]",
+      "definition": "行李輸送轉盤；旋轉木馬",
+      "cefr": "B1",
+      "topic": "機場設施",
+      "examples": [
+        {
+          "en": "Travelers waited patiently beside carousel number four for suitcases.",
+          "zh": "旅客們在四號行李轉盤旁耐心等候自己的行李箱出現。"
+        },
+        {
+          "en": "Luggage bags circled on the airport carousel until owners picked them up.",
+          "zh": "行李箱在機場旋轉轉盤上緩緩繞圈，直到失主主人將其提走。"
+        },
+        {
+          "en": "Children cheered with delight as they rode the colorful amusement park carousel.",
+          "zh": "孩子們歡呼雀躍地坐上了遊樂園裡五彩繽紛的旋轉木馬。"
+        }
+      ],
+      "collocations": [
+        "baggage carousel",
+        "conveyor belt"
+      ]
+    },
+    {
+      "id": 2222,
+      "word": "terminal",
+      "pos": "n., adj.",
+      "phonetic": "[ˋtɝmən!]",
+      "definition": "機場航廈；客運總站；末期的",
+      "cefr": "B1",
+      "topic": "機場交通",
+      "examples": [
+        {
+          "en": "Taoyuan International Airport features Terminal 1 and Terminal 2.",
+          "zh": "桃園國際機場目前設有第一航廈與第二航廈。"
+        },
+        {
+          "en": "The airport Skytrain carries passengers between terminals in just a few minutes.",
+          "zh": "機場航廈電車僅需數分鐘即可載運旅客穿梭於各航廈之間。"
+        },
+        {
+          "en": "The patient was diagnosed with terminal illness, but remained remarkably optimistic.",
+          "zh": "雖然這名患者被診斷出罹患絕症末期，但內心依舊保持無比樂觀堅強。"
+        }
+      ],
+      "collocations": [
+        "Airport Terminal",
+        "bus terminal"
+      ]
+    },
+    {
+      "id": 2223,
+      "word": "shuttle bus",
+      "pos": "n. phr.",
+      "phonetic": "[ˋʃʌt! bʌs]",
+      "definition": "機場接駁車；區間接駁公車",
+      "cefr": "B1",
+      "topic": "大眾交通",
+      "examples": [
+        {
+          "en": "Take the complimentary hotel shuttle bus directly from the airport terminal.",
+          "zh": "從機場航廈可直接搭乘飯店提供的免費接駁巴士。"
+        },
+        {
+          "en": "The national park operates eco-friendly electric shuttle buses during peak seasons.",
+          "zh": "國家公園在觀光旺季期間提供環保電動接駁專車服務。"
+        },
+        {
+          "en": "The university provides free shuttle bus services linking campuses and metro stops.",
+          "zh": "大學提供免費校園接駁車，穿梭連接各校區與捷運地鐵站。"
+        }
+      ],
+      "collocations": [
+        "airport shuttle bus"
+      ]
+    },
+    {
+      "id": 2224,
+      "word": "layover",
+      "pos": "n.",
+      "phonetic": "[ˋleˌovɚ]",
+      "definition": "轉機停留；中途短暫過境",
+      "cefr": "B1",
+      "topic": "航空行程",
+      "examples": [
+        {
+          "en": "We enjoyed a six-hour daytime layover in Tokyo between flights.",
+          "zh": "我們在兩段航班之間於東京進行了六小時的白天轉機觀光停留。"
+        },
+        {
+          "en": "A long overnight layover gives budget travelers time to nap in airport sleep pods.",
+          "zh": "漫長的過夜轉機等待時間讓小資旅人能在機場睡眠艙補眠歇息。"
+        },
+        {
+          "en": "The airline offered complimentary meal vouchers during our eight-hour flight layover.",
+          "zh": "在長達八小時的轉機過境期間，航空公司提供了免費餐券補償。"
+        }
+      ],
+      "collocations": [
+        "stopover",
+        "long layover"
+      ]
+    },
+    {
+      "id": 2225,
+      "word": "transit",
+      "pos": "n. [U], v.",
+      "phonetic": "[ˋtrænsɪt]",
+      "definition": "轉機；過境；大眾運輸",
+      "cefr": "B1",
+      "topic": "交通轉乘",
+      "examples": [
+        {
+          "en": "International transit passengers can relax in the comfortable airport lounge.",
+          "zh": "國際轉機過境旅客可在舒適的機場貴賓室內放鬆休息。"
+        },
+        {
+          "en": "Taipei has an exceptionally efficient public transit network encompassing buses and MRT.",
+          "zh": "台北擁有包含公車與捷運系統在內、效率極高的公共大眾運輸網絡。"
+        },
+        {
+          "en": "Goods damaged in transit are fully insured by the international shipping company.",
+          "zh": "貨物若在運送途徑中遭遇損壞，跨國航運公司均有全額保險理賠。"
+        }
+      ],
+      "collocations": [
+        "transit passenger",
+        "in transit"
+      ]
+    },
+    {
+      "id": 2226,
+      "word": "connecting flight",
+      "pos": "n. phr.",
+      "phonetic": "[kəˋnɛktɪŋ flaɪt]",
+      "definition": "轉接航班；銜接班機",
+      "cefr": "B1",
+      "topic": "航空行程",
+      "examples": [
+        {
+          "en": "Allow at least two hours between connecting flights to ensure smooth transfers.",
+          "zh": "兩段銜接班機之間請至少預留兩小時以確保轉機順利。"
+        },
+        {
+          "en": "Because our inbound departure was delayed, we barely made our connecting flight.",
+          "zh": "由於前段出發班機延誤，我們差一點就趕不上後續的轉接航班。"
+        },
+        {
+          "en": "The ground agent rebooked us onto the next connecting flight to London.",
+          "zh": "地勤人員迅速協助我們改簽轉乘下一班前往倫敦的銜接航班。"
+        }
+      ],
+      "collocations": [
+        "miss a connecting flight"
+      ]
+    },
+    {
+      "id": 2227,
+      "word": "direct flight",
+      "pos": "n. phr.",
+      "phonetic": "[dəˋrɛkt flaɪt]",
+      "definition": "直飛航班",
+      "cefr": "B1",
+      "topic": "航空行程",
+      "examples": [
+        {
+          "en": "Flying a non-stop direct flight from Taipei to San Francisco saves travel time.",
+          "zh": "搭乘台北直飛舊金山的直航航班能省下許多寶貴時間。"
+        },
+        {
+          "en": "The new direct flight route makes traveling between the two capitals much more convenient.",
+          "zh": "這條全新的直航航線使兩國首都之間的往返差旅變得更為便捷。"
+        },
+        {
+          "en": "Although direct flights can be slightly more expensive, they eliminate transfer fatigue.",
+          "zh": "雖然直飛航班票價可能稍高一些，但省去了轉機奔波的舟車勞頓。"
+        }
+      ],
+      "collocations": [
+        "non-stop flight"
+      ]
+    },
+    {
+      "id": 2228,
+      "word": "jet lag",
+      "pos": "n. [U]",
+      "phonetic": "[dʒɛt læg]",
+      "definition": "時差疲勞；時差反應",
+      "cefr": "B1",
+      "topic": "旅遊健康",
+      "examples": [
+        {
+          "en": "Drink plenty of water and adapt to local time to conquer jet lag.",
+          "zh": "多喝水並儘早適應當地作息以克服跨時區的時差疲勞。"
+        },
+        {
+          "en": "After crossing eight time zones, he suffered from terrible jet lag for three days.",
+          "zh": "橫跨八個時區後，他連續三天飽受嚴重的時差反應折磨。"
+        },
+        {
+          "en": "Getting sunlight in the morning is a proven natural remedy for jet lag.",
+          "zh": "晨間多接觸自然戶外陽光是已被科學證實能緩解時差的天然良方。"
+        }
+      ],
+      "collocations": [
+        "suffer from jet lag",
+        "recover from jet lag"
+      ]
+    },
+    {
+      "id": 2229,
+      "word": "turbulence",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtɝbjələns]",
+      "definition": "亂流；氣流顛簸",
+      "cefr": "B1",
+      "topic": "飛行狀態",
+      "examples": [
+        {
+          "en": "The captain turned on the seatbelt sign due to sudden mid-air turbulence.",
+          "zh": "由於空中突遇氣流顛簸亂流，機長開啟了安全帶警示燈。"
+        },
+        {
+          "en": "The flight experienced bumpy turbulence while passing over a tropical storm.",
+          "zh": "飛機在飛越熱帶風暴上方時遭遇了強烈的氣流顛簸亂流。"
+        },
+        {
+          "en": "Economic turbulence led several major commercial banks to merge.",
+          "zh": "劇烈的經濟動盪風暴促使數家大型商業銀行展開合併整併。"
+        }
+      ],
+      "collocations": [
+        "severe turbulence",
+        "encounter turbulence"
+      ]
+    },
+    {
+      "id": 2230,
+      "word": "seatbelt",
+      "pos": "n.",
+      "phonetic": "[ˋsitˌbɛlt]",
+      "definition": "安全帶",
+      "cefr": "B1",
+      "topic": "交通安全",
+      "examples": [
+        {
+          "en": "Please keep your airplane seatbelt fastened securely while seated.",
+          "zh": "就座時請務必全程將飛機安全帶確實扣緊繫好。"
+        },
+        {
+          "en": "Wearing a car seatbelt significantly reduces the severity of injuries in crashes.",
+          "zh": "乘坐汽車繫妥安全帶能大幅減輕車禍撞擊時的傷害嚴重程度。"
+        },
+        {
+          "en": "The flight attendant walked down the aisle to verify that all seatbelts were fastened.",
+          "zh": "空服員沿著客艙走道逐一檢查並確認所有乘客的安全帶皆已扣好。"
+        }
+      ],
+      "collocations": [
+        "fasten seatbelt"
+      ]
+    },
+    {
+      "id": 2231,
+      "word": "emergency exit",
+      "pos": "n. phr.",
+      "phonetic": "[ɪˋmɝdʒənsɪ ˋɛgzɪt]",
+      "definition": "緊急逃生出口",
+      "cefr": "B1",
+      "topic": "安全設施",
+      "examples": [
+        {
+          "en": "Passengers seated in emergency exit rows must assist during evacuations.",
+          "zh": "坐在緊急逃生出口走道座位的旅客須具備協助疏散的能力。"
+        },
+        {
+          "en": "Bright green illuminated signs mark the location of every emergency exit.",
+          "zh": "鮮綠色發光的標示清楚指引出每一處緊急逃生出口的位置。"
+        },
+        {
+          "en": "Never block the corridors leading toward the building emergency exits.",
+          "zh": "絕不可堆放雜物堵塞通往建築物緊急避難逃生出口的走道。"
+        }
+      ],
+      "collocations": [
+        "emergency door",
+        "exit row"
+      ]
+    },
+    {
+      "id": 2232,
+      "word": "in-flight meal",
+      "pos": "n. phr.",
+      "phonetic": "[ɪn flaɪt mil]",
+      "definition": "飛機餐；機上餐點",
+      "cefr": "B1",
+      "topic": "航空餐飲",
+      "examples": [
+        {
+          "en": "Airlines provide special vegetarian and halal in-flight meals upon request.",
+          "zh": "航空公司可依旅客特殊飲食需求提供素食或清真飛機餐。"
+        },
+        {
+          "en": "Many carriers now partner with Michelin-starred chefs to elevate in-flight meals.",
+          "zh": "許多航空公司如今與米其林星級名廚跨界合作，以升級機上餐飲水準。"
+        },
+        {
+          "en": "Flight attendants distributed hot in-flight meals shortly after cruising altitude was reached.",
+          "zh": "飛機達到巡航高度後不久，空服員便開始分發熱騰騰的機上餐點。"
+        }
+      ],
+      "collocations": [
+        "airplane food"
+      ]
+    },
+    {
+      "id": 2233,
+      "word": "accommodation",
+      "pos": "n. [U]",
+      "phonetic": "[ə͵kɑməˋdeʃən]",
+      "definition": "住宿；膳宿設施",
+      "cefr": "B1",
+      "topic": "旅宿住宿",
+      "examples": [
+        {
+          "en": "Book your holiday accommodation well in advance during cherry blossom season.",
+          "zh": "櫻花花季期間請務必提前預訂飯店住宿。"
+        },
+        {
+          "en": "The university guarantees dorm accommodation for all first-year foreign students.",
+          "zh": "該大學保證為所有大一外籍新生提供全額住宿床位分配。"
+        },
+        {
+          "en": "Finding budget accommodation in central Tokyo can be challenging during holidays.",
+          "zh": "在連假假期要在東京市中心找到平價合適的住宿往往頗具挑戰。"
+        }
+      ],
+      "collocations": [
+        "hotel accommodation",
+        "find accommodation"
+      ]
+    },
+    {
+      "id": 2234,
+      "word": "youth hostel",
+      "pos": "n. phr.",
+      "phonetic": "[juθ ˋhɑst!]",
+      "definition": "青年旅館；背包青旅",
+      "cefr": "B1",
+      "topic": "旅宿型態",
+      "examples": [
+        {
+          "en": "Youth hostels offer shared communal kitchens where travelers mingle and exchange stories.",
+          "zh": "青年旅館設有公共廚房，讓旅人們能彼此交流旅行故事。"
+        },
+        {
+          "en": "Backpacking through Southeast Asia is made affordable by abundant youth hostels.",
+          "zh": "東南亞各地隨處可見的青年旅館讓背包客窮遊變得輕鬆可負擔。"
+        },
+        {
+          "en": "The youth hostel organized a free walking tour of the historic district.",
+          "zh": "這家青旅為各國住客舉辦了歷史老城街區的免費漫步導覽之旅。"
+        }
+      ],
+      "collocations": [
+        "hostel",
+        "stay in a hostel"
+      ]
+    },
+    {
+      "id": 2235,
+      "word": "bunk bed",
+      "pos": "n. phr.",
+      "phonetic": "[bʌŋk bɛd]",
+      "definition": "上下舖單人床",
+      "cefr": "B1",
+      "topic": "住宿家具",
+      "examples": [
+        {
+          "en": "Hostels provide comfortable bunk beds equipped with individual reading lamps and curtains.",
+          "zh": "青旅提供配備個人專屬閱讀燈與隱私拉簾的舒適上下舖床位。"
+        },
+        {
+          "en": "The brothers shared a wooden bunk bed in their cozy childhood bedroom.",
+          "zh": "兩兄弟童年時期在溫馨的臥房裡同睡一張雙層木製上下舖。"
+        },
+        {
+          "en": "Climbing the ladder to reach the top bunk bed requires extra caution.",
+          "zh": "爬梯爬上雙層床的上舖床位時需要格外留意小心。"
+        }
+      ],
+      "collocations": [
+        "sleep on a bunk bed"
+      ]
+    },
+    {
+      "id": 2236,
+      "word": "guesthouse",
+      "pos": "n.",
+      "phonetic": "[ˋgɛstˌhaʊs]",
+      "definition": "民宿；家庭旅館 (B&B)",
+      "cefr": "B1",
+      "topic": "旅宿型態",
+      "examples": [
+        {
+          "en": "We stayed at a cozy countryside guesthouse in Yilan surrounded by rice paddies.",
+          "zh": "我們入住了一間座落於宜蘭稻田間的溫馨鄉村民宿。"
+        },
+        {
+          "en": "The friendly owners of the seaside guesthouse prepared a homemade breakfast.",
+          "zh": "這家濱海民宿熱情親切的主人為住客精心準備了手作道地早餐。"
+        },
+        {
+          "en": "Booking a traditional guesthouse offers a closer look at local everyday living.",
+          "zh": "預訂傳統日式民宿讓旅客能更貼近體會當地居民的日常生活。"
+        }
+      ],
+      "collocations": [
+        "B&B",
+        "local guesthouse"
+      ]
+    },
+    {
+      "id": 2237,
+      "word": "homestay",
+      "pos": "n.",
+      "phonetic": "[ˋhomˌste]",
+      "definition": "寄宿家庭；在地深度體驗宿屋",
+      "cefr": "B1",
+      "topic": "深度旅遊",
+      "examples": [
+        {
+          "en": "A rural aboriginal village homestay offers authentic tribal cultural immersion.",
+          "zh": "在原住民部落村落體驗在地深度寄宿能深刻感受原鄉文化。"
+        },
+        {
+          "en": "During his exchange semester in Spain, David lived with a welcoming homestay family.",
+          "zh": "在西班牙進行交換學生學期期間，大衛寄宿在一個熱情好客的寄宿家庭。"
+        },
+        {
+          "en": "The homestay host taught travelers how to weave traditional bamboo baskets.",
+          "zh": "寄宿家庭主人親自指導各方旅人如何動手編織傳統竹簍工藝。"
+        }
+      ],
+      "collocations": [
+        "tribal homestay"
+      ]
+    },
+    {
+      "id": 2238,
+      "word": "front desk",
+      "pos": "n. phr.",
+      "phonetic": "[frʌnt dɛsk]",
+      "definition": "飯店櫃檯；接待處",
+      "cefr": "B1",
+      "topic": "飯店服務",
+      "examples": [
+        {
+          "en": "Ask the hotel front desk clerk for extra pillows and local sightseeing maps.",
+          "zh": "向飯店櫃檯服務人員索取額外的枕頭與在地觀光地圖。"
+        },
+        {
+          "en": "You can leave your luggage at the front desk before check-in time.",
+          "zh": "在辦理入住時間前，您可以先將隨身大件行李寄放在飯店櫃檯。"
+        },
+        {
+          "en": "Dial zero on the room telephone to contact the 24-hour front desk.",
+          "zh": "拿起客房分機電話撥打「0」即可隨時聯繫二十四小時客服櫃檯。"
+        }
+      ],
+      "collocations": [
+        "reception desk",
+        "check-in desk"
+      ]
+    },
+    {
+      "id": 2239,
+      "word": "check in",
+      "pos": "v. phr.",
+      "phonetic": "[tʃɛk ɪn]",
+      "definition": "辦理登機／入住手續",
+      "cefr": "B1",
+      "topic": "流程手續",
+      "examples": [
+        {
+          "en": "Guests can check in to their hotel rooms starting from 3:00 PM.",
+          "zh": "房客可自下午三點起開始辦理飯店客房入住手續。"
+        },
+        {
+          "en": "Arrive at the airport three hours early to check in for your international flight.",
+          "zh": "請於班機起飛前三小時抵達機場辦理國際航班報到手續。"
+        },
+        {
+          "en": "We used our mobile phones to check in online twenty-four hours before departure.",
+          "zh": "我們在飛機起飛前二十四小時就先利用智慧型手機完成了線上預先報到。"
+        }
+      ],
+      "collocations": [
+        "check in at the airport"
+      ]
+    },
+    {
+      "id": 2240,
+      "word": "check out",
+      "pos": "v. phr.",
+      "phonetic": "[tʃɛk aʊt]",
+      "definition": "辦理退房結帳手續",
+      "cefr": "B1",
+      "topic": "流程手續",
+      "examples": [
+        {
+          "en": "Remember to return your electronic room keycard when you check out.",
+          "zh": "辦理退房手續時請記得歸還電子房卡。"
+        },
+        {
+          "en": "Hotel check-out time is strictly set at 11:00 AM unless late departure is approved.",
+          "zh": "飯店退房時間嚴格訂為上午十一點，除非事先獲准辦理延遲退房。"
+        },
+        {
+          "en": "The front desk settled our room charges quickly as we prepared to check out.",
+          "zh": "當我們準備退房時，櫃檯服務人員迅速為我們結清了房內消費帳目。"
+        }
+      ],
+      "collocations": [
+        "late check-out"
+      ]
+    },
+    {
+      "id": 2241,
+      "word": "reservation",
+      "pos": "n.",
+      "phonetic": "[͵rɛzɚˋveʃən]",
+      "definition": "預約；預訂（房間、席位）",
+      "cefr": "B1",
+      "topic": "旅宿餐飲",
+      "examples": [
+        {
+          "en": "I made an online hotel reservation for two nights in Kenting.",
+          "zh": "我在網路上預訂了墾丁兩晚的飯店住宿。"
+        },
+        {
+          "en": "Because the seafood restaurant is very popular, making a table reservation is mandatory.",
+          "zh": "由於這家人氣海鮮餐廳極受歡迎，前來用餐必須提前事先訂位。"
+        },
+        {
+          "en": "You can modify or cancel your booking reservation without penalty up to forty-eight hours in advance.",
+          "zh": "您在入住前四十八小時均可免費修改或取消飯店預約訂單。"
+        }
+      ],
+      "collocations": [
+        "make a reservation",
+        "confirm reservation"
+      ]
+    },
+    {
+      "id": 2242,
+      "word": "book",
+      "pos": "v., n.",
+      "phonetic": "[bʊk]",
+      "definition": "預訂；訂購；書籍",
+      "cefr": "B1",
+      "topic": "交易動作",
+      "examples": [
+        {
+          "en": "Book your high-speed rail tickets early to enjoy early-bird discounts.",
+          "zh": "提早預訂高鐵車票以享受早鳥折扣優惠。"
+        },
+        {
+          "en": "We managed to book a boutique hotel overlooking the tranquil ocean.",
+          "zh": "我們幸運地預訂到了一間能俯瞰寧靜湛藍海景的精品渡假飯店。"
+        },
+        {
+          "en": "She loves curling up in an armchair on weekends to read a captivating book.",
+          "zh": "她週末最愛窩在舒適扶手椅裡，靜靜閱讀一本扣人心弦的好書。"
+        }
+      ],
+      "collocations": [
+        "book a room",
+        "book a ticket"
+      ]
+    },
+    {
+      "id": 2243,
+      "word": "confirmation",
+      "pos": "n.",
+      "phonetic": "[͵kɑnfɚˋmeʃən]",
+      "definition": "確認單；證實",
+      "cefr": "B1",
+      "topic": "文書驗證",
+      "examples": [
+        {
+          "en": "Print out your booking confirmation email to present at the front desk.",
+          "zh": "將訂房確認電子郵件列印出來以利在櫃檯出示查驗。"
+        },
+        {
+          "en": "We received an automated SMS confirmation immediately after submitting the order.",
+          "zh": "送出訂單後，我們立刻收到了系統自動發送的簡訊確認通知。"
+        },
+        {
+          "en": "The lab awaits final confirmation of the test results before issuing the medical report.",
+          "zh": "實驗室正在等待檢驗結果的最終確認，隨後才會正式出具醫療報告。"
+        }
+      ],
+      "collocations": [
+        "booking confirmation number"
+      ]
+    },
+    {
+      "id": 2244,
+      "word": "cancellation",
+      "pos": "n.",
+      "phonetic": "[͵kænsəˋleʃən]",
+      "definition": "取消；作廢",
+      "cefr": "B1",
+      "topic": "契約條款",
+      "examples": [
+        {
+          "en": "Review the hotel's free cancellation policy before confirming the reservation.",
+          "zh": "在確認送出預訂前，請先仔細查看飯店的免費取消條款。"
+        },
+        {
+          "en": "Sudden heavy snow caused the widespread cancellation of all domestic flights.",
+          "zh": "突如其來的暴風大雪導致國內線所有航班全面被迫取消。"
+        },
+        {
+          "en": "The concert organizer offered full ticket refunds following the sudden cancellation.",
+          "zh": "在演出突遭取消後，演唱會主辦單位承諾全額退還門票費用。"
+        }
+      ],
+      "collocations": [
+        "cancellation policy",
+        "flight cancellation"
+      ]
+    },
+    {
+      "id": 2245,
+      "word": "complimentary",
+      "pos": "adj.",
+      "phonetic": "[͵kɑmpləˋmɛntərɪ]",
+      "definition": "免費贈送的；讚賞的",
+      "cefr": "B1",
+      "topic": "服務特徵",
+      "examples": [
+        {
+          "en": "Guests enjoy complimentary bottled water and daily high-speed Wi-Fi.",
+          "zh": "住客享有免費贈送的瓶裝礦泉水與全日高速無線網路。"
+        },
+        {
+          "en": "The restaurant served complimentary dessert to celebrate our anniversary.",
+          "zh": "餐廳主動為我們端上了免費招待的精緻甜點以慶祝我們的結婚紀念日。"
+        },
+        {
+          "en": "The reviewer wrote highly complimentary remarks about the author's new biography.",
+          "zh": "評論家在書評中對該傳記作者的新作給予了極高的讚賞評價。"
+        }
+      ],
+      "collocations": [
+        "complimentary breakfast",
+        "free of charge"
+      ]
+    },
+    {
+      "id": 2246,
+      "word": "sightseeing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsaɪtˌsiɪŋ]",
+      "definition": "觀光遊覽；遊覽名勝",
+      "cefr": "B1",
+      "topic": "旅遊活動",
+      "examples": [
+        {
+          "en": "We spent the entire sunny morning sightseeing around historic Lukang town.",
+          "zh": "我們整個晴朗的上午都在歷史悠久的鹿港小鎮觀光遊覽。"
+        },
+        {
+          "en": "An open-top double-decker bus offers an enjoyable sightseeing tour of downtown Taipei.",
+          "zh": "敞篷雙層觀光巴士為遊客提供了暢遊台北市中心的愜意遊覽體驗。"
+        },
+        {
+          "en": "Pack comfortable walking shoes if you plan to do heavy city sightseeing.",
+          "zh": "若你打算在市區進行長時間步行觀光，務必準備一雙好走的健走鞋。"
+        }
+      ],
+      "collocations": [
+        "go sightseeing",
+        "sightseeing bus"
+      ]
+    },
+    {
+      "id": 2247,
+      "word": "guided tour",
+      "pos": "n. phr.",
+      "phonetic": "[ˋgaɪdɪd tʊr]",
+      "definition": "專人導覽行程",
+      "cefr": "B1",
+      "topic": "旅遊服務",
+      "examples": [
+        {
+          "en": "Joining a guided tour of the National Palace Museum enriches your historical knowledge.",
+          "zh": "參加故宮博物院的專人深度導覽能豐富您的歷史人文知識。"
+        },
+        {
+          "en": "The wildlife reserve offers early morning guided tours led by veteran naturalists.",
+          "zh": "野生動物保護區提供由資深自然生態專家親自帶隊的清晨導覽團。"
+        },
+        {
+          "en": "Audio headphones were provided during the multilingual guided tour.",
+          "zh": "在多語種專人導覽行程中，主辦方為每位遊客配發了無線語音耳機。"
+        }
+      ],
+      "collocations": [
+        "take a guided tour"
+      ]
+    },
+    {
+      "id": 2248,
+      "word": "tour guide",
+      "pos": "n. phr.",
+      "phonetic": "[tʊr gaɪd]",
+      "definition": "導遊；解說員",
+      "cefr": "B1",
+      "topic": "觀光職業",
+      "examples": [
+        {
+          "en": "The licensed bilingual tour guide shared fascinating stories of old temples.",
+          "zh": "領有執照的雙語專業導遊娓娓道出古老廟宇的動人傳說。"
+        },
+        {
+          "en": "A knowledgeable tour guide pointed out rare alpine flora along the mountain path.",
+          "zh": "博學多聞的導遊沿著崎嶇山徑為大家指認罕見的高山特色植物。"
+        },
+        {
+          "en": "Tourists applauded our enthusiastic tour guide at the conclusion of the trip.",
+          "zh": "在旅程圓滿畫下句點時，遊客們向熱忱專業的導遊報以熱烈掌聲。"
+        }
+      ],
+      "collocations": [
+        "local tour guide",
+        "certified guide"
+      ]
+    },
+    {
+      "id": 2249,
+      "word": "souvenir",
+      "pos": "n.",
+      "phonetic": "[͵suvəˋnɪr]",
+      "definition": "紀念品；伴手禮",
+      "cefr": "B1",
+      "topic": "購物與紀念",
+      "examples": [
+        {
+          "en": "Hand-painted porcelain cups and Oolong tea are popular Taiwanese souvenirs.",
+          "zh": "手繪陶瓷茶杯與高山烏龍茶是極受歡迎的台灣特色紀念伴手禮。"
+        },
+        {
+          "en": "She bought miniature wooden keychains as affordable souvenirs for her colleagues.",
+          "zh": "她購買了精緻的木雕迷你鑰匙圈作為送給辦公室同事的平價紀念品。"
+        },
+        {
+          "en": "The tourist picked up a seashell necklace as a memorable souvenir of Kenting.",
+          "zh": "這位遊客在墾丁買了一條貝殼項鍊，作為這趟難忘海灘之旅的紀念品。"
+        }
+      ],
+      "collocations": [
+        "buy souvenirs",
+        "souvenir shop"
+      ]
+    },
+    {
+      "id": 2250,
+      "word": "local delicacy",
+      "pos": "n. phr.",
+      "phonetic": "[ˋlok! ˋdɛləkəsɪ]",
+      "definition": "在地特色名產；道地美食",
+      "cefr": "B1",
+      "topic": "美食與文化",
+      "examples": [
+        {
+          "en": "Sun cakes from Taichung and ox-tongue biscuits from Yilan are famous local delicacies.",
+          "zh": "台中太陽餅與宜蘭牛舌餅皆為名聞遐邇的在地特色美食名產。"
+        },
+        {
+          "en": "Visitors to Tainan should not miss savory milkfish congee, a beloved local delicacy.",
+          "zh": "造訪台南的遊客千萬別錯過鮮美虱目魚粥這道極具人氣的在地道地小吃。"
+        },
+        {
+          "en": "Night markets across the island offer hundreds of mouthwatering local delicacies.",
+          "zh": "全台各地的特色夜市匯集了數百種令人垂涎欲滴的在地風味傳統美食。"
+        }
+      ],
+      "collocations": [
+        "local specialties",
+        "famous delicacy"
+      ]
+    }
+  ]
+}

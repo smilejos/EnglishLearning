@@ -1,0 +1,1317 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 3,251–3,300 個單字（CEFR B1 中級）",
+  "batch": "3251-3300",
+  "range": "3251–3300",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 3251,
+      "word": "automotive",
+      "pos": "adj.",
+      "phonetic": "[͵ɔtəˋmotɪv]",
+      "definition": "汽車的；車輛製造的",
+      "cefr": "B1",
+      "topic": "車輛工業",
+      "examples": [
+        {
+          "en": "Taiwan's electronics manufacturers supply critical automotive semiconductors worldwide.",
+          "zh": "台灣電子科技製造大廠向全球供應不可或缺的車用車載半導體晶片。"
+        },
+        {
+          "en": "The German company is a world leader in automotive engineering and luxury vehicles.",
+          "zh": "這家德國企業在汽車工程與豪華車輛製造領域位居全球領導地位。"
+        },
+        {
+          "en": "Rapid advancements in battery technology are reshaping the entire automotive sector.",
+          "zh": "電池技術的突飛猛進正在重塑整個汽車製造業的生態版圖。"
+        }
+      ],
+      "collocations": [
+        "automotive industry",
+        "automotive electronics"
+      ]
+    },
+    {
+      "id": 3252,
+      "word": "electric vehicle",
+      "pos": "n. phr.",
+      "phonetic": "[ɪˋlɛktrɪk ˋviɪk!]",
+      "definition": "電動車 (EV)",
+      "cefr": "B1",
+      "topic": "綠能車輛",
+      "examples": [
+        {
+          "en": "The government offers tax subsidies to encourage drivers to switch to electric vehicles.",
+          "zh": "政府提供汰舊換新貨物稅減免補助，積極鼓勵駕駛人換購綠能電動車（EV）。"
+        },
+        {
+          "en": "Driving an electric vehicle produces zero tailpipe emissions on city roads.",
+          "zh": "駕駛電動車在市區道路行駛時不會產生任何排氣管廢氣排放。"
+        },
+        {
+          "en": "Global sales of electric vehicles have broken records for five consecutive years.",
+          "zh": "全球電動車銷量已連續五年刷新歷史最高紀錄。"
+        }
+      ],
+      "collocations": [
+        "electric vehicle (EV)"
+      ]
+    },
+    {
+      "id": 3253,
+      "word": "hybrid",
+      "pos": "adj., n.",
+      "phonetic": "[ˋhaɪbrɪd]",
+      "definition": "油電混合動力車；混合的",
+      "cefr": "B1",
+      "topic": "車輛動力",
+      "examples": [
+        {
+          "en": "Plug-in hybrid cars combine gasoline engines with rechargeable electric motors.",
+          "zh": "插電式油電混合動力車巧妙結合了傳統燃油引擎與可外接充電的電動馬達。"
+        },
+        {
+          "en": "Many taxi drivers prefer driving a hybrid because of its outstanding city fuel economy.",
+          "zh": "許多計程車運將偏好開油電混合車，因為它在市區行駛時具有極佳的省油表現。"
+        },
+        {
+          "en": "The university offers a hybrid learning model blending in-person lectures with online webinars.",
+          "zh": "這所大學提供了結合實體面授課堂與線上視訊講座的混合式學習模式。"
+        }
+      ],
+      "collocations": [
+        "hybrid vehicle",
+        "plug-in hybrid (PHEV)"
+      ]
+    },
+    {
+      "id": 3254,
+      "word": "lithium-ion",
+      "pos": "adj.",
+      "phonetic": "[ˋlɪθɪəm ˋaɪən]",
+      "definition": "鋰離子的",
+      "cefr": "B1",
+      "topic": "電池科技",
+      "examples": [
+        {
+          "en": "High-density lithium-ion battery packs allow modern EVs to travel 500 kilometers.",
+          "zh": "高能量密度的鋰離子電池模組讓現代電動車單次充飽電具備超過五百公里的續航。"
+        },
+        {
+          "en": "Most consumer laptops and smartphones are powered by rechargeable lithium-ion cells.",
+          "zh": "大多數消費型筆記型電腦與智慧型手機皆由可重複充電的鋰離子電芯供電。"
+        },
+        {
+          "en": "Scientists are researching ways to make lithium-ion batteries charge faster and degrade less.",
+          "zh": "科學家正積極研發如何讓鋰離子電池充電速度更快且壽命衰減更緩慢。"
+        }
+      ],
+      "collocations": [
+        "lithium-ion battery"
+      ]
+    },
+    {
+      "id": 3255,
+      "word": "mileage",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmaɪlɪdʒ]",
+      "definition": "總行駛里程數；油耗表現",
+      "cefr": "B1",
+      "topic": "車輛數據",
+      "examples": [
+        {
+          "en": "The used electric sedan has low mileage and pristine battery health.",
+          "zh": "這部優質中古二手電動房車總行駛里程數極低，且大電池健康度依然接近全新。"
+        },
+        {
+          "en": "Compact city cars usually achieve excellent gas mileage on flat urban roads.",
+          "zh": "緊湊型市區小車在平坦的都會道路上通常能繳出極佳的油耗里程成績。"
+        },
+        {
+          "en": "Be sure to check the odometer to verify the vehicle's true accumulated mileage.",
+          "zh": "購車時務必仔細檢查儀表板里程表，以確認該車輛真實的累積行駛里程數。"
+        }
+      ],
+      "collocations": [
+        "gas mileage",
+        "total mileage"
+      ]
+    },
+    {
+      "id": 3256,
+      "word": "range anxiety",
+      "pos": "n. phr.",
+      "phonetic": "[rendʒ æŋˋzaɪətɪ]",
+      "definition": "里程焦慮（擔心電量不足）",
+      "cefr": "B1",
+      "topic": "用車心理",
+      "examples": [
+        {
+          "en": "A widespread charging network relieves driver range anxiety during cross-island road trips.",
+          "zh": "遍布全島的密集充電網絡徹底消除了駕駛在環島長途旅行時的電量里程焦慮。"
+        },
+        {
+          "en": "Improvements in battery capacity have helped consumers overcome initial range anxiety.",
+          "zh": "電池容量技術的大幅進步有效幫助消費者克服了起初購車時的里程焦慮。"
+        },
+        {
+          "en": "Cold winter weather can decrease driving range, slightly increasing driver range anxiety.",
+          "zh": "寒冷的冬日氣候會稍微降低純電續航里程，略微加深駕駛者的電量里程焦慮。"
+        }
+      ],
+      "collocations": [
+        "overcome range anxiety"
+      ]
+    },
+    {
+      "id": 3257,
+      "word": "charging station",
+      "pos": "n. phr.",
+      "phonetic": "[ˋtʃɑrdʒɪŋ ˋsteʃən]",
+      "definition": "充電站；超級充電站",
+      "cefr": "B1",
+      "topic": "充電設施",
+      "examples": [
+        {
+          "en": "Highway rest stops installed 350kW ultra-fast EV charging stations for travelers.",
+          "zh": "國道高速公路各大服務區休息站皆廣設 350kW 超高速電動車充電站供用路人使用。"
+        },
+        {
+          "en": "You can use a smartphone map app to check the real-time availability of nearby charging stations.",
+          "zh": "你可以打開手機地圖 App，即時查詢周遭各家充電站目前是否有空置充電樁。"
+        },
+        {
+          "en": "Shopping malls attract EV owners by offering free parking alongside dedicated charging stations.",
+          "zh": "許多大型購物商場透過在專屬充電站旁提供免費停車優惠，來吸引電動車主前來消費。"
+        }
+      ],
+      "collocations": [
+        "fast charging station"
+      ]
+    },
+    {
+      "id": 3258,
+      "word": "charging pile",
+      "pos": "n. phr.",
+      "phonetic": "[ˋtʃɑrdʒɪŋ paɪl]",
+      "definition": "充電樁；家用充電座",
+      "cefr": "B1",
+      "topic": "充電設備",
+      "examples": [
+        {
+          "en": "New residential condominium buildings must pre-install EV charging pile wiring.",
+          "zh": "現代新建住宅公寓大樓法令規定管線皆須預留電動車充電樁專用獨立配線。"
+        },
+        {
+          "en": "Homeowners can install a smart AC charging pile in their private parking space.",
+          "zh": "透天厝與獨立產權車主可以在其私人停車格內安裝智慧型慢充家用充電樁。"
+        },
+        {
+          "en": "The city plans to add hundreds of curbside charging piles along downtown avenues.",
+          "zh": "市府計畫沿著市中心主要幹道兩側增設數百座路邊公共充電樁。"
+        }
+      ],
+      "collocations": [
+        "install a charging pile"
+      ]
+    },
+    {
+      "id": 3259,
+      "word": "fast charging",
+      "pos": "n. phr.",
+      "phonetic": "[fæst ˋtʃɑrdʒɪŋ]",
+      "definition": "直流快速充電 (DC 快充)",
+      "cefr": "B1",
+      "topic": "充電技術",
+      "examples": [
+        {
+          "en": "DC fast charging adds 200 kilometers of driving range in just fifteen minutes.",
+          "zh": "直流（DC）快速充電僅需短短十五分鐘即可為車輛迅速補充兩百公里的續航里程。"
+        },
+        {
+          "en": "Frequent reliance on extreme fast charging can slightly accelerate battery degradation over time.",
+          "zh": "長期頻繁依賴超高速快充，隨著時間推移可能會稍微加快電池健康度的衰退速度。"
+        },
+        {
+          "en": "Road-trippers depend on fast charging plazas located near major freeway interchanges.",
+          "zh": "自駕長途出遊的旅人格外仰賴設置在主要高速公路交流道周邊的快充休息站。"
+        }
+      ],
+      "collocations": [
+        "DC fast charging"
+      ]
+    },
+    {
+      "id": 3260,
+      "word": "connector",
+      "pos": "n.",
+      "phonetic": "[kəˋnɛktɚ]",
+      "definition": "充電連接器；充電插頭規格",
+      "cefr": "B1",
+      "topic": "充電介面",
+      "examples": [
+        {
+          "en": "Taiwan adopted CCS2 and NACS as standard high-speed EV charging connectors.",
+          "zh": "台灣各大充電營運商主要採用 CCS2 與特斯拉 NACS 作為主流快充連接器規格。"
+        },
+        {
+          "en": "Drivers often carry adapters to ensure compatibility with different charging connectors.",
+          "zh": "許多電動車主隨車攜帶轉接頭，以確保能相容於各種不同規格的充電槍連接器。"
+        },
+        {
+          "en": "Inspect the rubber seals inside the charging connector before plugging it into your car.",
+          "zh": "在將充電槍插頭插入車輛充電孔前，請先檢視連接器內部的橡膠防水密封圈。"
+        }
+      ],
+      "collocations": [
+        "charging connector"
+      ]
+    },
+    {
+      "id": 3261,
+      "word": "regenerative braking",
+      "pos": "n. phr.",
+      "phonetic": "[rɪˋdʒɛnəˌretɪv ˋbrekɪŋ]",
+      "definition": "動能回充煞車系統",
+      "cefr": "B1",
+      "topic": "節能技術",
+      "examples": [
+        {
+          "en": "One-pedal driving uses regenerative braking to recapture kinetic energy down mountains.",
+          "zh": "單踏板模式運用動能回充煞車系統，在下坡山路行駛時將動能轉化為電能回收。"
+        },
+        {
+          "en": "Regenerative braking reduces mechanical friction wear on conventional brake pads.",
+          "zh": "動能回充煞車系統能大幅減輕傳統機械煞車來令片在行駛時的磨擦損耗。"
+        },
+        {
+          "en": "Drivers can adjust the sensitivity of regenerative braking to match their driving style.",
+          "zh": "駕駛人可以自由微調動能回收煞車的阻尼力道強弱，以貼合個人開車操駕習慣。"
+        }
+      ],
+      "collocations": [
+        "energy recuperation"
+      ]
+    },
+    {
+      "id": 3262,
+      "word": "kilowatt-hour",
+      "pos": "n.",
+      "phonetic": "[ˋkɪlə͵wɑt ˋaʊɚ]",
+      "definition": "千瓦小時；度（電量單位 kWh）",
+      "cefr": "B1",
+      "topic": "能源計量",
+      "examples": [
+        {
+          "en": "The electric SUV comes standard with an 80 kilowatt-hour (kWh) battery pack.",
+          "zh": "這款豪華純電休旅車標配了高達 80 千瓦小時（度電 kWh）的大容量電池組。"
+        },
+        {
+          "en": "Charging rates are billed at nine New Taiwan Dollars per kilowatt-hour during peak hours.",
+          "zh": "在尖峰時段，該快充站的充電費率為每千瓦小時（每度電）九元新台幣。"
+        },
+        {
+          "en": "Household power meters measure monthly electrical energy usage in kilowatt-hours.",
+          "zh": "一般家用電表皆是以千瓦小時（度）為單位，來精準計算每月份的用電度數。"
+        }
+      ],
+      "collocations": [
+        "kWh capacity"
+      ]
+    },
+    {
+      "id": 3263,
+      "word": "zero-emission",
+      "pos": "adj.",
+      "phonetic": "[ˋzɪro ɪˋmɪʃən]",
+      "definition": "零排放的；零碳排的",
+      "cefr": "B1",
+      "topic": "環保標準",
+      "examples": [
+        {
+          "en": "Cities aim to convert municipal bus fleets entirely to zero-emission electric buses.",
+          "zh": "各大都會區全力推動將市區公車車隊全數汰換為百分之百零排放的純電電動公車。"
+        },
+        {
+          "en": "Hydrogen fuel cell vehicles are another promising class of zero-emission mobility.",
+          "zh": "氫燃料電池車輛是另一種深具發展潛力且備受矚目的零排放綠能移動方案。"
+        },
+        {
+          "en": "Transitioning to zero-emission transportation significantly cleans up urban air quality.",
+          "zh": "全面過渡至零碳排綠色運輸工具能大幅改善都會區長年的空氣品質。"
+        }
+      ],
+      "collocations": [
+        "zero-emission vehicle (ZEV)"
+      ]
+    },
+    {
+      "id": 3264,
+      "word": "decarbonization",
+      "pos": "n. [U]",
+      "phonetic": "[di͵kɑrbənəˋzeʃən]",
+      "definition": "去碳化；脫碳轉型",
+      "cefr": "B1",
+      "topic": "永續轉型",
+      "examples": [
+        {
+          "en": "Electrifying heavy transport is vital for national net-zero decarbonization goals.",
+          "zh": "重型運輸工具的全面電動化是達成國家 2050 淨零排放去碳化目標的關鍵樞紐。"
+        },
+        {
+          "en": "Heavy industries are investing billions into renewable energy and industrial decarbonization.",
+          "zh": "各大重工業集團正斥資數十億巨資投入再生能源佈局與製造業脫碳轉型。"
+        },
+        {
+          "en": "Achieving rapid decarbonization requires close cooperation between government and private industry.",
+          "zh": "想要迅速實現全面去碳化，需要政府公部門與民間產業界維持緊密的政策合作。"
+        }
+      ],
+      "collocations": [
+        "transport decarbonization"
+      ]
+    },
+    {
+      "id": 3265,
+      "word": "powertrain",
+      "pos": "n.",
+      "phonetic": "[ˋpaʊɚˌtren]",
+      "definition": "動力傳動系統；動力總成",
+      "cefr": "B1",
+      "topic": "引擎傳動",
+      "examples": [
+        {
+          "en": "Dual electric motors deliver an instantaneous, all-wheel-drive powertrain experience.",
+          "zh": "雙電動馬達系統提供了隨傳隨到、靈敏迅捷的全時四輪驅動純電動力傳動系統。"
+        },
+        {
+          "en": "An electric powertrain has far fewer moving parts than a traditional combustion engine.",
+          "zh": "相較於傳統內燃機引擎，純電動力總成的機械活動零件數量要少得多。"
+        },
+        {
+          "en": "Automotive engineers tuned the powertrain to deliver a smooth and whisper-quiet ride.",
+          "zh": "車輛工程師精心調校了動力傳動系統，以提供平順流暢且靜謐無聲的行路質感。"
+        }
+      ],
+      "collocations": [
+        "electric powertrain"
+      ]
+    },
+    {
+      "id": 3266,
+      "word": "horsepower",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhɔrs͵paʊɚ]",
+      "definition": "馬力 (HP)",
+      "cefr": "B1",
+      "topic": "車輛性能",
+      "examples": [
+        {
+          "en": "The sports EV generates over 500 horsepower, launching effortlessly from zero.",
+          "zh": "這輛純電性能跑車能爆發出超過五百匹強悍馬力，靜止起步加速毫不費力。"
+        },
+        {
+          "en": "Enthusiasts often modify vehicle turbochargers to unlock additional horsepower.",
+          "zh": "性能車改裝狂熱玩家常透過升級渦輪增壓套件，來壓榨出更多的峰值馬力。"
+        },
+        {
+          "en": "One metric horsepower is equivalent to approximately 735.5 watts of mechanical power.",
+          "zh": "一公制馬力在物理學上大約等同於 735.5 瓦特的機械功率輸出。"
+        }
+      ],
+      "collocations": [
+        "brake horsepower (HP)"
+      ]
+    },
+    {
+      "id": 3267,
+      "word": "torque",
+      "pos": "n. [U]",
+      "phonetic": "[tɔrk]",
+      "definition": "扭力；轉矩 (Nm)",
+      "cefr": "B1",
+      "topic": "車輛性能",
+      "examples": [
+        {
+          "en": "Electric motors provide maximum torque instantly without needing gear shifts.",
+          "zh": "電動馬達無須經過傳統變速箱換檔即可瞬間爆發出百分之百的最大峰值扭力。"
+        },
+        {
+          "en": "Heavy trucks require tremendous low-end torque to pull massive freight loads uphill.",
+          "zh": "重型拖車頭需要極其充沛的低轉速大扭力，才能在陡峭爬坡路段輕鬆拉動巨型貨櫃。"
+        },
+        {
+          "en": "Mechanics use a calibrated torque wrench to tighten wheel lug nuts to exact specifications.",
+          "zh": "技師使用經過精準校準的扭力扳手，依照原廠規範磅數鎖緊輪圈螺絲螺帽。"
+        }
+      ],
+      "collocations": [
+        "instant torque"
+      ]
+    },
+    {
+      "id": 3268,
+      "word": "acceleration",
+      "pos": "n. [U]",
+      "phonetic": "[æk͵sɛləˋreʃən]",
+      "definition": "加速；加速度表現",
+      "cefr": "B1",
+      "topic": "操駕體驗",
+      "examples": [
+        {
+          "en": "The EV's blistering 0-to-100 km/h acceleration takes merely 3.5 seconds.",
+          "zh": "該純電車款從零加速至時速一百公里（0-100 km/h）僅需驚人的 3.5 秒。"
+        },
+        {
+          "en": "Passengers felt pushed back into their leather seats under rapid highway acceleration.",
+          "zh": "在高速公路大腳油門急加速下，乘客們感受到了強烈貼背感的推背力道。"
+        },
+        {
+          "en": "Smooth throttle acceleration prevents cars from skidding on wet, rain-slicked asphalt.",
+          "zh": "溫和細膩的油門加速踩踏能防止車輛在雨天潮濕打滑的柏油路面上失控打滑。"
+        }
+      ],
+      "collocations": [
+        "rapid acceleration"
+      ]
+    },
+    {
+      "id": 3269,
+      "word": "cruising speed",
+      "pos": "n. phr.",
+      "phonetic": "[ˋkruzɪŋ spid]",
+      "definition": "定速巡航速度",
+      "cefr": "B1",
+      "topic": "國道行駛",
+      "examples": [
+        {
+          "en": "Highway cruising speed is maintained effortlessly using intelligent cruise control.",
+          "zh": "在國道一號高速公路行駛時，開啟智慧定速巡航能輕鬆維持每小時百公里巡航速度。"
+        },
+        {
+          "en": "The commercial airplane reached its designated cruising speed of 900 kilometers per hour.",
+          "zh": "這架民航客機順利攀升並達到了每小時九百公里的表定高空巡航速度。"
+        },
+        {
+          "en": "Driving at a steady cruising speed maximizes energy efficiency and conserves battery power.",
+          "zh": "保持平穩均勻的定速巡航速度行駛，能將能源效率最大化並節省電池電量。"
+        }
+      ],
+      "collocations": [
+        "set cruising speed"
+      ]
+    },
+    {
+      "id": 3270,
+      "word": "handling",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhændlɪŋ]",
+      "definition": "操控性能；底盤指向反應",
+      "cefr": "B1",
+      "topic": "駕駛感官",
+      "examples": [
+        {
+          "en": "A low center of gravity gives electric sedans exceptionally stable cornering handling.",
+          "zh": "低重心的底盤電池配置賦予了純電房車在過彎時無比沉穩扎實的極佳操控性能。"
+        },
+        {
+          "en": "Sport suspension and wide performance tires dramatically sharpen vehicle handling.",
+          "zh": "運動化硬朗懸吊與高性能寬胎的搭配能大幅強化車輛過彎時的犀利操控性能。"
+        },
+        {
+          "en": "Test drivers praised the compact hatchback for its nimble handling in downtown traffic.",
+          "zh": "試駕媒體大力稱讚這輛掀背小車在擁擠市區車流穿梭時靈活刁鑽的操控動態。"
+        }
+      ],
+      "collocations": [
+        "precise handling"
+      ]
+    },
+    {
+      "id": 3271,
+      "word": "suspension",
+      "pos": "n. [U]",
+      "phonetic": "[səˋspɛnʃən]",
+      "definition": "懸吊系統；中止停職",
+      "cefr": "B1",
+      "topic": "底盤結構",
+      "examples": [
+        {
+          "en": "Adaptive air suspension automatically absorbs road bumps on uneven mountain passes.",
+          "zh": "主動式主動氣壓懸吊系統能在崎嶇不平的山道上自動撫平顛簸、提供極致舒適。"
+        },
+        {
+          "en": "A stiff sport suspension keeps the vehicle body completely flat during aggressive turns.",
+          "zh": "阻尼偏硬的運動化懸吊調校能讓車身在激烈急轉彎時保持極佳的抗側傾支撐性。"
+        },
+        {
+          "en": "The athlete received a two-game disciplinary suspension after arguing with the umpire.",
+          "zh": "該名運動員在比賽中與主審裁判發生激烈口角衝突後，遭到了禁賽兩場的紀律處分。"
+        }
+      ],
+      "collocations": [
+        "air suspension system"
+      ]
+    },
+    {
+      "id": 3272,
+      "word": "chassis",
+      "pos": "n. [sing./pl.]",
+      "phonetic": "[ˋʃæsɪ]",
+      "definition": "車輛底盤；機底骨架",
+      "cefr": "B1",
+      "topic": "車身結構",
+      "examples": [
+        {
+          "en": "The unified skateboard chassis integrates batteries, motors, and suspension modules.",
+          "zh": "創新的滑板式底盤將高壓電池、電動馬達與懸吊轉向模組一體化高度整合。"
+        },
+        {
+          "en": "A rigid high-strength steel chassis improves passenger crash safety ratings.",
+          "zh": "剛性卓越的超高強度鋼材車身底盤結構大幅提升了乘客在碰撞測試中的安全評級。"
+        },
+        {
+          "en": "Mechanics thoroughly inspected the vehicle's rusty underside chassis for structural cracks.",
+          "zh": "汽車維修技師仔細檢查了車輛生鏽的底盤骨架下方，以防出現結構性裂紋。"
+        }
+      ],
+      "collocations": [
+        "skateboard chassis"
+      ]
+    },
+    {
+      "id": 3273,
+      "word": "aerodynamics",
+      "pos": "n. [pl./U]",
+      "phonetic": "[͵ɛroodaɪˋnæmɪks]",
+      "definition": "空氣動力學；流體力學",
+      "cefr": "B1",
+      "topic": "車體工程",
+      "examples": [
+        {
+          "en": "Streamlined aerodynamics reduce highway wind noise and improve battery efficiency.",
+          "zh": "流線型的車身空氣動力學設計能大幅降低高速風阻噪音並提升整體用電續航效率。"
+        },
+        {
+          "en": "Flush door handles and active grille shutters are engineered to optimize aerodynamics.",
+          "zh": "隱藏式平整門把手與主動式進氣格柵葉片皆是為了極致優化空氣動力學而量身設計。"
+        },
+        {
+          "en": "Formula 1 race cars rely heavily on aerodynamics to generate extreme high-speed downforce.",
+          "zh": "F1 一級方程式賽車高度仰賴空氣動力學套件，以在高速狂飆時產生巨大的地面下壓力。"
+        }
+      ],
+      "collocations": [
+        "optimized aerodynamics"
+      ]
+    },
+    {
+      "id": 3274,
+      "word": "sunroof",
+      "pos": "n.",
+      "phonetic": "[ˋsʌnruf]",
+      "definition": "天窗；全景玻璃車頂 (Moonroof)",
+      "cefr": "B1",
+      "topic": "車室配備",
+      "examples": [
+        {
+          "en": "The panoramic glass sunroof fills the passenger cabin with natural sunlight.",
+          "zh": "超大視野的全景玻璃天窗讓柔和溫暖的自然採光灑滿整個寬敞舒適的座艙空間。"
+        },
+        {
+          "en": "We tilted open the power sunroof to let the fresh autumn mountain breeze into the car.",
+          "zh": "我們輕按按鈕掀起電動天窗，讓秋天清爽怡人的高山微風徐徐吹入車內。"
+        },
+        {
+          "en": "The glass sunroof features special UV-blocking coatings to prevent cabin overheating.",
+          "zh": "這面玻璃天窗塗佈了高規格抗紫外線防曬隔熱塗層，以防車室座艙過度悶熱。"
+        }
+      ],
+      "collocations": [
+        "panoramic sunroof"
+      ]
+    },
+    {
+      "id": 3275,
+      "word": "touchscreen",
+      "pos": "n.",
+      "phonetic": "[ˋtʌtʃ͵skrin]",
+      "definition": "觸控螢幕；中控大螢幕",
+      "cefr": "B1",
+      "topic": "座艙科技",
+      "examples": [
+        {
+          "en": "Control air conditioning, navigation, and music via the central 15-inch touchscreen.",
+          "zh": "透過中控台中央十五吋高畫質彩色觸控螢幕即可輕鬆掌控車內恆溫空調與影音導航。"
+        },
+        {
+          "en": "The smartphone touchscreen remained completely responsive even when operated in the rain.",
+          "zh": "這支智慧型手機的觸控螢幕即便在雨水噴濺下操作，依然維持著靈敏的觸控反饋。"
+        },
+        {
+          "en": "Many modern automakers have replaced traditional physical buttons with sleek touchscreens.",
+          "zh": "許多當代新車製造商紛紛以俐落簡潔的大型觸控螢幕取代了傳統繁瑣的實體按鈕。"
+        }
+      ],
+      "collocations": [
+        "central touchscreen"
+      ]
+    },
+    {
+      "id": 3276,
+      "word": "infotainment",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪnfoˋtenmənt]",
+      "definition": "車載影音娛樂系統 (Info + Entertainment)",
+      "cefr": "B1",
+      "topic": "車載軟體",
+      "examples": [
+        {
+          "en": "The responsive infotainment system supports Apple CarPlay and Android Auto seamlessly.",
+          "zh": "反應極為靈敏的車載資訊娛樂系統無縫支援無線 Apple CarPlay 與 Android Auto。"
+        },
+        {
+          "en": "Drivers can stream podcasts and access satellite radio directly through the vehicle infotainment.",
+          "zh": "駕駛人可直接透過車載資訊娛樂系統隨心串流收聽各類 Podcast 節目與衛星廣播。"
+        },
+        {
+          "en": "A fast processor ensures that the dashboard infotainment interface operates without lag.",
+          "zh": "搭載高速處理器能確保中控儀表影音資訊娛樂系統在滑動操作時絲滑順暢不卡頓。"
+        }
+      ],
+      "collocations": [
+        "infotainment system"
+      ]
+    },
+    {
+      "id": 3277,
+      "word": "dashboard",
+      "pos": "n.",
+      "phonetic": "[ˋdæʃˌbord]",
+      "definition": "儀表板；控制面板",
+      "cefr": "B1",
+      "topic": "座艙視角",
+      "examples": [
+        {
+          "en": "A high-resolution digital dashboard displays real-time tire pressure and speed.",
+          "zh": "高解析度全數位液晶儀表板即時清晰顯示當前車速、導航路線與各輪獨立胎壓。"
+        },
+        {
+          "en": "A yellow warning lamp illuminated on the car dashboard signaling low windshield washer fluid.",
+          "zh": "汽車儀表板上亮起了一盞黃色警示燈，提示雨刷水箱中的清潔液存量過低。"
+        },
+        {
+          "en": "The project management dashboard gives executives a quick glance at quarterly revenue trends.",
+          "zh": "專案管理數位儀表板讓企業高層主管能一眼綜觀當季營收與關鍵指標走向。"
+        }
+      ],
+      "collocations": [
+        "digital dashboard"
+      ]
+    },
+    {
+      "id": 3278,
+      "word": "heads-up display",
+      "pos": "n. phr.",
+      "phonetic": "[hɛdz ʌp dɪˋsple]",
+      "definition": "抬頭顯示器 (HUD)",
+      "cefr": "B1",
+      "topic": "駕駛輔助",
+      "examples": [
+        {
+          "en": "The windshield heads-up display projects turn-by-turn navigation directly in sight.",
+          "zh": "前擋風玻璃全彩抬頭顯示器（HUD）將逐向轉彎導航箭頭直接投影於前方視線中。"
+        },
+        {
+          "en": "Fighter jet pilots originally used heads-up displays to track flight instruments during combat.",
+          "zh": "戰鬥機飛行員最初仰賴抬頭顯示器，以便在激烈空戰中眼睛不離前方監控飛行儀表。"
+        },
+        {
+          "en": "Having a heads-up display helps drivers keep their eyes on the road ahead at all times.",
+          "zh": "配備抬頭顯示器能幫助駕駛人的視線始終保持專注注視前方路況，無須低頭看儀表。"
+        }
+      ],
+      "collocations": [
+        "color HUD"
+      ]
+    },
+    {
+      "id": 3279,
+      "word": "OTA",
+      "pos": "adj., n. phr.",
+      "phonetic": "[o ti e]",
+      "definition": "遠端無線軟體升級 (Over-The-Air)",
+      "cefr": "B1",
+      "topic": "軟體更新",
+      "examples": [
+        {
+          "en": "The automaker rolled out improved autopilot algorithms via an overnight OTA update.",
+          "zh": "車廠透過夜間遠端無線軟體升級（OTA），神不知鬼不覺為車主更新了輔助駕駛系統。"
+        },
+        {
+          "en": "Thanks to OTA capability, owners don't need to visit a dealership just to patch software bugs.",
+          "zh": "多虧具備了 OTA 遠端無線更新功能，車主無須特地開車回原廠保養廠只為了修復軟體漏洞。"
+        },
+        {
+          "en": "Connected smart vehicles receive regular OTA updates that add new infotainment features.",
+          "zh": "連網智慧車輛能定期接收遠端 OTA 升級推播，為車主解鎖各項全新影音娛樂功能。"
+        }
+      ],
+      "collocations": [
+        "OTA software update"
+      ]
+    },
+    {
+      "id": 3280,
+      "word": "keyless entry",
+      "pos": "n. phr.",
+      "phonetic": "[ˋkilɪs ˋɛntrɪ]",
+      "definition": "免鑰匙進入系統；智慧感應門鎖",
+      "cefr": "B1",
+      "topic": "便利科技",
+      "examples": [
+        {
+          "en": "Keyless entry unlocks doors automatically as you approach carrying your smartphone.",
+          "zh": "具備免鑰匙進入功能的手機數位鑰匙在您攜帶手機靠近車身時便會自動解鎖感應。"
+        },
+        {
+          "en": "Passive keyless entry is wonderfully convenient when your hands are full of heavy grocery bags.",
+          "zh": "當你雙手提滿沉重的大賣場購物袋時，免鑰匙感應開門功能顯得格外方便貼心。"
+        },
+        {
+          "en": "Modern keyless entry systems use encrypted rolling codes to thwart car thieves.",
+          "zh": "當代免鑰匙感應門鎖系統採用加密滾動防盜代碼，以有效防範不法竊賊攔截訊號。"
+        }
+      ],
+      "collocations": [
+        "passive keyless entry"
+      ]
+    },
+    {
+      "id": 3281,
+      "word": "remote start",
+      "pos": "n. phr., v.",
+      "phonetic": "[rɪˋmot stɑrt]",
+      "definition": "遠端遙控發動；手機預先開冷氣",
+      "cefr": "B1",
+      "topic": "便利功能",
+      "examples": [
+        {
+          "en": "Use the mobile companion app to remote start air conditioning before boarding.",
+          "zh": "上車前可透過手機專屬 App 遠端提前啟動車內冷氣空調，預先降溫消暑。"
+        },
+        {
+          "en": "In frigid winter mornings, drivers love using remote start to preheat cabin defrosters.",
+          "zh": "在天寒地凍的冬日清晨，車主們喜愛使用遠端發動功能預先替座艙暖車並除霜。"
+        },
+        {
+          "en": "The car key fob includes a dedicated button to remote start the engine from fifty yards away.",
+          "zh": "汽車感應鑰匙遙控器上配有一顆專屬按鍵，讓車主在五十碼外就能遠端遙控發動引擎。"
+        }
+      ],
+      "collocations": [
+        "remote start function"
+      ]
+    },
+    {
+      "id": 3282,
+      "word": "blind spot",
+      "pos": "n. phr.",
+      "phonetic": "[blaɪnd spɑt]",
+      "definition": "後視鏡盲點；死角",
+      "cefr": "B1",
+      "topic": "行車安全",
+      "examples": [
+        {
+          "en": "Blind spot monitoring radar flashes an orange warning light when cars pass.",
+          "zh": "盲點偵測警示系統在相鄰車道有車輛快速逼近切入時會在後視鏡亮起警示黃燈。"
+        },
+        {
+          "en": "Always turn your head to check your side mirror blind spot before changing lanes.",
+          "zh": "在變換車道前，切記務必擺頭微轉視線，確認兩側後視鏡的視覺死角無來車。"
+        },
+        {
+          "en": "Large cargo trucks have extensive blind spots along their passenger side and rear bumper.",
+          "zh": "大型聯結貨卡車在副駕駛座一側與後保險桿正後方皆存在著極為龐大的視野死角。"
+        }
+      ],
+      "collocations": [
+        "blind spot monitoring (BSM)"
+      ]
+    },
+    {
+      "id": 3283,
+      "word": "lane keeping",
+      "pos": "n. phr.",
+      "phonetic": "[len ˋkipɪŋ]",
+      "definition": "車道維持輔助 (LKA)",
+      "cefr": "B1",
+      "topic": "主動安全",
+      "examples": [
+        {
+          "en": "Active lane keeping assist gently steers the steering wheel to stay centered.",
+          "zh": "主動式車道維持輔助系統（LKA）會微幅修正方向盤，確保車輛穩穩維持在車道中線。"
+        },
+        {
+          "en": "Lane keeping systems use front-facing windshield cameras to track faded white road stripes.",
+          "zh": "車道維持輔助系統利用前擋風玻璃上的光學鏡頭，精準辨識地面磨損的白色車道標線。"
+        },
+        {
+          "en": "If you drift over markings without signaling, the lane keeping alarm beeps instantly.",
+          "zh": "若你在未打方向燈的情況下車身偏離壓線，車道維持警示蜂鳴器會立刻發出嗶嗶聲。"
+        }
+      ],
+      "collocations": [
+        "lane keeping assist (LKA)"
+      ]
+    },
+    {
+      "id": 3284,
+      "word": "cruise control",
+      "pos": "n. phr.",
+      "phonetic": "[kruz kənˋtrol]",
+      "definition": "定速巡航控制系統",
+      "cefr": "B1",
+      "topic": "駕駛輔助",
+      "examples": [
+        {
+          "en": "Adaptive cruise control (ACC) automatically maintains safe following distance in jams.",
+          "zh": "全速域主動車距調節巡航系統（ACC）在塞車走走停停時能自動主動跟車防追撞。"
+        },
+        {
+          "en": "Turning on cruise control helps drivers avoid speeding accidentally on long road trips.",
+          "zh": "開啟定速巡航功能有助於駕駛人在長途自駕長征中避免因疲倦而不慎超速違規。"
+        },
+        {
+          "en": "Stepping firmly on the brake pedal instantly disengages the vehicle's cruise control.",
+          "zh": "只要腳踩煞車踏板，車輛的定速巡航系統便會在瞬間立即自動解除解除定速。"
+        }
+      ],
+      "collocations": [
+        "adaptive cruise control (ACC)"
+      ]
+    },
+    {
+      "id": 3285,
+      "word": "collision",
+      "pos": "n.",
+      "phonetic": "[kəˋlɪʒən]",
+      "definition": "碰撞事故；衝撞",
+      "cefr": "B1",
+      "topic": "事故防範",
+      "examples": [
+        {
+          "en": "Automatic emergency braking prevented a serious rear-end highway collision.",
+          "zh": "前方主動防撞緊急煞車系統（AEB）成功化解了一起險些發生的國道追撞事故。"
+        },
+        {
+          "en": "The intersection collision caused major morning gridlock across three city lanes.",
+          "zh": "十字路口發生的兩車碰撞車禍導致市區三個主要車道在早尖峰陷入嚴重回堵。"
+        },
+        {
+          "en": "Modern crumple zones absorb kinetic impact energy during a frontal collision.",
+          "zh": "現代汽車的車頭潰縮防護區能在正面猛烈衝撞時吸收衝擊動能，保護座艙完整。"
+        }
+      ],
+      "collocations": [
+        "avoid a collision",
+        "rear-end collision"
+      ]
+    },
+    {
+      "id": 3286,
+      "word": "automated",
+      "pos": "adj.",
+      "phonetic": "[ˋɔtəˌmetɪd]",
+      "definition": "自動化的；全自動的",
+      "cefr": "B1",
+      "topic": "智慧功能",
+      "examples": [
+        {
+          "en": "Automated parking sensors parallel-park the car effortlessly in tight spaces.",
+          "zh": "全自動智慧停車輔助系統能在極度狹窄的市區路邊車位輕鬆完成自動倒車入庫。"
+        },
+        {
+          "en": "Warehouses employ automated guided vehicles to transport pallets between aisles.",
+          "zh": "現代化物流倉儲調度無人自動搬運導引車，在各貨架走道之間穿梭搬運棧板貨品。"
+        },
+        {
+          "en": "Automated driving technology continues to progress closer to full autonomy every year.",
+          "zh": "全自動駕駛輔助科技每年都在大步邁進，朝向完全無人自駕的境界加速演進。"
+        }
+      ],
+      "collocations": [
+        "automated parking system"
+      ]
+    },
+    {
+      "id": 3287,
+      "word": "surround view",
+      "pos": "n. phr.",
+      "phonetic": "[səˋraʊnd vju]",
+      "definition": "360 度環景影像輔助",
+      "cefr": "B1",
+      "topic": "停車安全",
+      "examples": [
+        {
+          "en": "The 360-degree surround view camera eliminates all dangerous parking blind spots.",
+          "zh": "360 度全景環景鳥瞰影像輔助系統徹底消除了在狹小巷弄穿梭與倒車時的所有死角。"
+        },
+        {
+          "en": "Selecting reverse automatically triggers the ultra-wide surround view display.",
+          "zh": "排入倒車 R 檔時，中央觸控螢幕便會自動切換顯示清晰直觀的超廣角環景影像。"
+        },
+        {
+          "en": "Surround view monitors synthesize feeds from four exterior cameras into a bird's-eye view.",
+          "zh": "環景影像監控系統將車外四顆高畫質廣角鏡頭的畫面即時無縫拼接成一張鳥瞰俯視圖。"
+        }
+      ],
+      "collocations": [
+        "360-degree camera"
+      ]
+    },
+    {
+      "id": 3288,
+      "word": "tire pressure",
+      "pos": "n. phr.",
+      "phonetic": "[taɪr ˋprɛʃɚ]",
+      "definition": "輪胎胎壓；胎壓監測",
+      "cefr": "B1",
+      "topic": "車輛維護",
+      "examples": [
+        {
+          "en": "Proper tire pressure ensures optimal fuel economy and maximum wet grip.",
+          "zh": "保持標準標準的正常輪胎胎壓能確保最佳油耗電耗表現並發揮雨天最佳抓地力。"
+        },
+        {
+          "en": "The tire pressure monitoring system warned that the rear left tire was losing air slowly.",
+          "zh": "胎壓偵測系統（TPMS）發出警告訊息，提示左後輪胎壓正在緩慢漏氣降低。"
+        },
+        {
+          "en": "Check your vehicle's cold tire pressure using a digital gauge at least once a month.",
+          "zh": "建議每個月至少使用一次數位胎壓計，在冷胎狀態下準確檢查愛車的胎壓數值。"
+        }
+      ],
+      "collocations": [
+        "tire pressure monitoring system (TPMS)"
+      ]
+    },
+    {
+      "id": 3289,
+      "word": "electric scooter",
+      "pos": "n. phr.",
+      "phonetic": "[ɪˋlɛktrɪk ˋskutɚ]",
+      "definition": "電動機車；電動速克達",
+      "cefr": "B1",
+      "topic": "台灣生活",
+      "examples": [
+        {
+          "en": "Electric scooters with instant battery swapping are ubiquitous across Taiwan cities.",
+          "zh": "具備六秒秒速換電便利性的電動機車（如 Gogoro）在台灣各大都市的大街小巷隨處可見。"
+        },
+        {
+          "en": "Commuting on an electric scooter helps reduce carbon emissions in crowded metropolitan areas.",
+          "zh": "騎乘電動機車通勤上下班有助於大幅降低擁擠都會生活圈中的各類碳廢氣排放。"
+        },
+        {
+          "en": "High school graduates celebrate turning eighteen by getting a license to ride an electric scooter.",
+          "zh": "許多高中畢業生在年滿十八歲時，迫不及待考取駕照體驗騎乘電動機車的自由。"
+        }
+      ],
+      "collocations": [
+        "ride an electric scooter"
+      ]
+    },
+    {
+      "id": 3290,
+      "word": "swapping",
+      "pos": "n. [U]",
+      "phonetic": "[ˋswɑpɪŋ]",
+      "definition": "交換；換取；調換",
+      "cefr": "B1",
+      "topic": "營運模式",
+      "examples": [
+        {
+          "en": "Battery swapping takes less than ten seconds at thousands of nationwide stations.",
+          "zh": "在全台數千座換電站進行智慧電池交換只需不到十秒鐘即可滿電再出發。"
+        },
+        {
+          "en": "Gogoro revolutionized urban mobility by popularizing its smart battery swapping ecosystem.",
+          "zh": "Gogoro 透過普及推廣其智慧電池交換生態系統，徹底顛覆了現代都會移動方式。"
+        },
+        {
+          "en": "The platform allows instant asset swapping between different decentralized digital tokens.",
+          "zh": "該去中心化平台支援不同數位代幣資產之間秒級快速的無縫換取與跨鏈調換。"
+        }
+      ],
+      "collocations": [
+        "battery swapping station"
+      ]
+    },
+    {
+      "id": 3291,
+      "word": "shared mobility",
+      "pos": "n. phr.",
+      "phonetic": "[ʃɛrd moˋbɪlətɪ]",
+      "definition": "共享移動；共享交通工具服務",
+      "cefr": "B1",
+      "topic": "共享經濟",
+      "examples": [
+        {
+          "en": "Shared mobility services like YouBike and iRent reduce downtown parking demand.",
+          "zh": "YouBike 公共自行車與 iRent 共享汽車等共享移動服務大幅降低了市中心停車負擔。"
+        },
+        {
+          "en": "Younger generations increasingly embrace shared mobility rather than purchasing personal vehicles.",
+          "zh": "年輕一代的生活型態日益擁抱共享移動服務，而非堅持斥資購買私人自用車輛。"
+        },
+        {
+          "en": "Urban planners promote shared mobility to decrease traffic congestion and air pollution.",
+          "zh": "都市規劃專家積極推廣多樣化的共享交通方案，以紓解道路壅塞並減緩空污。"
+        }
+      ],
+      "collocations": [
+        "embrace shared mobility"
+      ]
+    },
+    {
+      "id": 3292,
+      "word": "YouBike",
+      "pos": "n. prop.",
+      "phonetic": "[ju baɪk]",
+      "definition": "YouBike 微笑單車（台灣公共自行車）",
+      "cefr": "B1",
+      "topic": "大眾運輸",
+      "examples": [
+        {
+          "en": "YouBike 2.0 stations are located conveniently near almost every metro station exit.",
+          "zh": "YouBike 2.0 智慧公共自行車租賃站便利地設立在幾乎每個捷運站出口與學校旁。"
+        },
+        {
+          "en": "You can rent a YouBike simply by tapping your EasyCard or scanning with your phone app.",
+          "zh": "你只要輕逼一下悠遊卡或直接開啟手機 App 掃碼，就能秒速借還一輛 YouBike。"
+        },
+        {
+          "en": "Riding a yellow YouBike through riverside park cycling trails is a favorite weekend activity.",
+          "zh": "騎著黃色的 YouBike 沿著水岸河濱公園的專用自行車道迎風暢遊，是極受歡迎的週末休閒。"
+        }
+      ],
+      "collocations": [
+        "rent a YouBike"
+      ]
+    },
+    {
+      "id": 3293,
+      "word": "carpool",
+      "pos": "v., n.",
+      "phonetic": "[ˋkɑrˌpul]",
+      "definition": "共乘；拼車；共乘專用道 (HOV)",
+      "cefr": "B1",
+      "topic": "綠色出行",
+      "examples": [
+        {
+          "en": "Coworkers carpool together to utilize high-occupancy vehicle (HOV) freeway lanes.",
+          "zh": "住在同社區的同事們相約拼車共乘上下班，以便行駛國道高乘載專用車道（HOV）。"
+        },
+        {
+          "en": "Organizing a neighborhood carpool helps parents share the duty of driving kids to school.",
+          "zh": "組織社區鄰里共乘車隊能讓家長們輪流分擔開車接送孩子上下學的日常負擔。"
+        },
+        {
+          "en": "Joining a workplace carpool cuts down on commuting gas costs and monthly parking fees.",
+          "zh": "加入公司同仁的共乘拼車行列能顯著分攤通勤油資開銷與昂貴的月租停車費。"
+        }
+      ],
+      "collocations": [
+        "carpool lane"
+      ]
+    },
+    {
+      "id": 3294,
+      "word": "electronic toll",
+      "pos": "n. phr.",
+      "phonetic": "[ɪlɛkˋtrɑnɪk tol]",
+      "definition": "電子收費；計程收費系統 (ETC / eTag)",
+      "cefr": "B1",
+      "topic": "交通科技",
+      "examples": [
+        {
+          "en": "Taiwan's freeway eTag electronic toll collection system operates without toll booths.",
+          "zh": "台灣國道高速公路全面實施無收費站的 eTag 遠距多車道電子計程收費系統。"
+        },
+        {
+          "en": "Electronic toll systems detect moving vehicles via overhead RFID sensors at highway speeds.",
+          "zh": "電子收費系統透過高架龍門上的無線射頻感測器，在車輛高速狂飆時瞬間精準感應扣款。"
+        },
+        {
+          "en": "Drivers can link their bank account or credit card for automatic electronic toll bill payments.",
+          "zh": "駕駛人可以將自己的銀行帳戶或信用卡與 eTag 綁定，享受通行費自動儲值扣繳服務。"
+        }
+      ],
+      "collocations": [
+        "ETC",
+        "electronic toll collection"
+      ]
+    },
+    {
+      "id": 3295,
+      "word": "traffic flow",
+      "pos": "n. phr.",
+      "phonetic": "[ˋtræfɪk flo]",
+      "definition": "交通車流動態；車輛通行流量",
+      "cefr": "B1",
+      "topic": "交通管理",
+      "examples": [
+        {
+          "en": "Smart highway ramps optimize traffic flow during busy Lunar New Year holidays.",
+          "zh": "智慧高快速公路交流道匝道儀控系統在農曆春節返鄉尖峰時段有效調控國道車流。"
+        },
+        {
+          "en": "Synchronized green lights along major boulevards ensure smooth, uninterrupted traffic flow.",
+          "zh": "市區主要景觀大道上的智慧綠波號誌聯鎖控制，確保了車輛川流不息的順暢交通車流。"
+        },
+        {
+          "en": "Road construction blocked two lanes, severely impeding traffic flow heading toward the bridge.",
+          "zh": "道路施工封閉了兩線車道，嚴重阻礙了開往跨海大橋方向的晨間交通車輛流通量。"
+        }
+      ],
+      "collocations": [
+        "smooth traffic flow"
+      ]
+    },
+    {
+      "id": 3296,
+      "word": "electric bus",
+      "pos": "n. phr.",
+      "phonetic": "[ɪˋlɛktrɪk bʌs]",
+      "definition": "電動公車 (E-bus)",
+      "cefr": "B1",
+      "topic": "綠能公共運輸",
+      "examples": [
+        {
+          "en": "Quiet and smooth electric buses significantly reduce urban street noise pollution.",
+          "zh": "行駛平穩安靜的電動公車大幅降低了市區主要幹道旁惱人的柴油排氣與噪音污染。"
+        },
+        {
+          "en": "Municipalities subsidize bus companies to replace aging diesel fleets with modern electric buses.",
+          "zh": "各地方政府提供高額購車補貼，協助客運業者將老舊柴油大客車全面汰換為電動公車。"
+        },
+        {
+          "en": "The city's electric bus fleet charges overnight at central depots powered by solar energy.",
+          "zh": "該市的電動公車車隊每逢深夜都在配備太陽能發電設備的中央客運總站進行夜間充電。"
+        }
+      ],
+      "collocations": [
+        "zero-emission electric bus"
+      ]
+    },
+    {
+      "id": 3297,
+      "word": "transit",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtrænsɪt]",
+      "definition": "大眾運輸；過境轉運",
+      "cefr": "B1",
+      "topic": "交通系統",
+      "examples": [
+        {
+          "en": "The monthly TPASS all-you-can-ride commuter pass encourages green transit usage.",
+          "zh": "行政院推行的 TPASS 通勤月票吃到飽方案極大鼓勵了民眾搭乘大眾運輸綠色出行。"
+        },
+        {
+          "en": "Transit-oriented development focuses new commercial housing hubs around subway stations.",
+          "zh": "大眾運輸導向型開發（TOD）模式專注將嶄新的商業住宅生活圈緊密環繞在捷運樞紐周圍。"
+        },
+        {
+          "en": "Flight passengers in international transit rested comfortably in the terminal sleep lounge.",
+          "zh": "正在國際機場轉機過境的長途過境旅客，在航廈內的休憩躺椅區安適地小憩補眠。"
+        }
+      ],
+      "collocations": [
+        "mass transit",
+        "public transit"
+      ]
+    },
+    {
+      "id": 3298,
+      "word": "incentive",
+      "pos": "n.",
+      "phonetic": "[ɪnˋsɛntɪv]",
+      "definition": "誘因；獎勵補貼機制",
+      "cefr": "B1",
+      "topic": "政策推動",
+      "examples": [
+        {
+          "en": "Government purchase incentives accelerated public adoption of renewable vehicles.",
+          "zh": "政府祭出的購車各項補貼與減稅獎勵誘因顯著加速了全體國民採用綠能車輛。"
+        },
+        {
+          "en": "Generous annual performance bonuses serve as a powerful incentive for top sales talent.",
+          "zh": "豐厚可觀的年終績效分紅獎金是激勵頂尖業務王牌全力衝刺業績的強大誘因機制。"
+        },
+        {
+          "en": "The local government offered tax incentives to encourage tech companies to build factories.",
+          "zh": "地方政府釋出了誘人的租稅優惠獎勵措施，以大力吸引高科技半導體巨頭前來設廠。"
+        }
+      ],
+      "collocations": [
+        "financial incentive",
+        "tax incentive"
+      ]
+    },
+    {
+      "id": 3299,
+      "word": "sustainable",
+      "pos": "adj.",
+      "phonetic": "[səˋstenəb!]",
+      "definition": "永續的；環境友善可持續的",
+      "cefr": "B1",
+      "topic": "綠色理念",
+      "examples": [
+        {
+          "en": "Walking, cycling, and taking the metro create a cleaner, sustainable mobility future.",
+          "zh": "步行、騎自行車與搭乘捷運共同為我們的城市構築出更潔淨健康的永續移動未來。"
+        },
+        {
+          "en": "Organic farming practices promote sustainable agriculture without depleting soil nutrients.",
+          "zh": "有機農法耕作實踐致力於推動永續農業，避免過度耗損土壤中天然的微量礦物質養分。"
+        },
+        {
+          "en": "Companies must adopt environmentally sustainable supply chains to comply with global ESG criteria.",
+          "zh": "跨國企業必須建立環境友善的永續供應鏈架構，以完全符合國際嚴格的 ESG 審查準則。"
+        }
+      ],
+      "collocations": [
+        "sustainable mobility"
+      ]
+    },
+    {
+      "id": 3300,
+      "word": "transportation",
+      "pos": "n. [U]",
+      "phonetic": "[͵trænspɔrˋteʃən]",
+      "definition": "交通運輸；交通系統",
+      "cefr": "B1",
+      "topic": "都會機能",
+      "examples": [
+        {
+          "en": "Intelligent transportation systems (ITS) utilize IoT sensors to improve safety.",
+          "zh": "智慧交通運輸系統（ITS）全面串聯物聯網感測器以守護行人與車輛用路安全。"
+        },
+        {
+          "en": "High-speed rail revolutionized island-wide intercity transportation in Western Taiwan.",
+          "zh": "台灣高速鐵路的通車營運徹底顛覆並縮短了台灣西部走廊各大都會間的城際交通運輸時間。"
+        },
+        {
+          "en": "Reliable public transportation is a vital lifeline connecting suburban communities to downtown.",
+          "zh": "準點可靠的大眾交通運輸網絡是緊密連結遠郊社區與市中心各項機能的重要動脈生命線。"
+        }
+      ],
+      "collocations": [
+        "smart transportation",
+        "public transportation"
+      ]
+    }
+  ]
+}

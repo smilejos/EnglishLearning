@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 6,251–6,300 個單字（CEFR B1 中級）",
+  "batch": "6251-6300",
+  "range": "6251–6300",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 6251,
+      "word": "oncology",
+      "pos": "n. [U]",
+      "phonetic": "[ɑnˋkɑlədʒɪ]",
+      "definition": "現代腫瘤醫學與癌症標靶免疫精準治療",
+      "cefr": "B1",
+      "topic": "腫瘤醫學",
+      "examples": [
+        {
+          "en": "Precision oncology analyzes cancer genome mutations to prescribe customized therapies for every patient.",
+          "zh": "「精準腫瘤醫學」（Precision Oncology），透過全基因定序為每位病患量身打造專屬的標靶抗癌處方。"
+        },
+        {
+          "en": "The hospital opened a new radiation oncology center equipped with state-of-the-art linear accelerators.",
+          "zh": "該大型教學醫院啟用了一座全新的放射腫瘤醫學中心，全面配備頂級的直線加速器設備。"
+        },
+        {
+          "en": "Medical students completed intensive clinical rotations across inpatient oncology wards.",
+          "zh": "醫學系實習醫學生在腫瘤科住院病房順利完成了高強度的臨床輪替實習訓練。"
+        }
+      ],
+      "collocations": [
+        "precision clinical oncology"
+      ]
+    },
+    {
+      "id": 6252,
+      "word": "immunotherapy",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪmjənoˋθɛrəpɪ]",
+      "definition": "喚醒人體免疫系統攻擊癌細胞之免疫療法",
+      "cefr": "B1",
+      "topic": "免疫治療",
+      "examples": [
+        {
+          "en": "Cancer immunotherapy unleashes the body’s own white blood cells to hunt down metastatic tumors.",
+          "zh": "「癌症免疫療法」（Immunotherapy），重新喚醒自體白血球免疫大軍，主動圍剿體內轉移的癌細胞。"
+        },
+        {
+          "en": "Combining local chemotherapy with systemic immunotherapy produced long-lasting remission rates.",
+          "zh": "將局部化學治療與全身性免疫療法相結合，為晚期患者帶來了持久穩定的疾病緩解率。"
+        },
+        {
+          "en": "Unlike traditional treatments, immunotherapy trains the immune memory to prevent tumor recurrence.",
+          "zh": "與傳統破壞性治療不同，免疫治療能訓練人體免疫記憶，長效防範惡性腫瘤捲土重來。"
+        }
+      ],
+      "collocations": [
+        "cancer checkpoint immunotherapy"
+      ]
+    },
+    {
+      "id": 6253,
+      "word": "checkpoint",
+      "pos": "n.",
+      "phonetic": "[ˋtʃɛk͵pɔɪnt]",
+      "definition": "免疫檢查點受體 (解除癌細胞對免疫細胞煞車)",
+      "cefr": "B1",
+      "topic": "免疫機制",
+      "examples": [
+        {
+          "en": "Tumors hide by activating the PD-1 immune checkpoint, effectively putting the brakes on killer T cells.",
+          "zh": "狡猾的腫瘤藉由結合 PD-1「免疫檢查點」（Checkpoint），硬生生踩下煞車讓殺手 T 細胞失去攻擊力。"
+        },
+        {
+          "en": "Police set up a sobriety checkpoint along the boulevard to deter hazardous drunk driving over the weekend.",
+          "zh": "交通警察週末在主要大道上設置酒駕攔檢點，以強力遏止危險的酒後駕車行為。"
+        },
+        {
+          "en": "Hikers stamped their national park permits at the ranger checkpoint before ascending the alpine trail.",
+          "zh": "登山客在攀登高山百岳前，紛紛在國家公園檢查哨依序蓋章驗證入山入園許可證。"
+        }
+      ],
+      "collocations": [
+        "immune checkpoint receptor"
+      ]
+    },
+    {
+      "id": 6254,
+      "word": "inhibitor",
+      "pos": "n.",
+      "phonetic": "[ɪnˋhɪbətɚ]",
+      "definition": "單株抗體免疫檢查點抑制劑標靶藥物",
+      "cefr": "B1",
+      "topic": "檢查點藥物",
+      "examples": [
+        {
+          "en": "Checkpoint inhibitor infusions block the deceptive signals, empowering T cells to destroy the malignant mass.",
+          "zh": "靜脈滴注「免疫檢查點抑制劑」（Inhibitor），能切斷癌細胞的偽裝信號，重啟免疫系統猛烈攻擊。"
+        },
+        {
+          "en": "Taking an ACE inhibitor daily helps hypertensive patients maintain steady resting blood pressure levels.",
+          "zh": "每天規律服用血管張力素轉化酶抑制劑降血壓藥物，有助於高血壓患者維持平穩的靜息血壓。"
+        },
+        {
+          "en": "Corrosion inhibitor chemicals are mixed into industrial coolant pipelines to prevent internal rusting.",
+          "zh": "工廠在工業冷卻水循環管線中添加專用防蝕抑制劑，以有效預防金屬管道內部鏽蝕腐爛。"
+        }
+      ],
+      "collocations": [
+        "checkpoint inhibitor drug"
+      ]
+    },
+    {
+      "id": 6255,
+      "word": "receptor",
+      "pos": "n.",
+      "phonetic": "[rɪˋsɛptɚ]",
+      "definition": "嵌合抗原受體 (CAR-T 細胞表面專一導航天線)",
+      "cefr": "B1",
+      "topic": "細胞工程",
+      "examples": [
+        {
+          "en": "Synthetic chimeric antigen receptors engineered onto cell surfaces target CD19 markers on leukemia cells.",
+          "zh": "在細胞表面嵌入人造「嵌合抗原受體」（Receptor），如精準雷達導航般鎖定白血病細胞表面的 CD19 標記。"
+        },
+        {
+          "en": "Sensory receptors inside human taste buds detect sweet, salty, sour, bitter, and umami flavors.",
+          "zh": "人類舌頭味蕾內部的感覺受體，能敏銳辨識甜、鹹、酸、苦以及鮮味等多元滋味。"
+        },
+        {
+          "en": "The experimental compound successfully binds to the serotonin receptor, relieving acute migraine pain.",
+          "zh": "該試驗性小分子化合物能成功與血清素受體結合，從而迅速緩解急性偏頭痛發作時的劇痛。"
+        }
+      ],
+      "collocations": [
+        "chimeric antigen receptor (CAR)"
+      ]
+    },
+    {
+      "id": 6256,
+      "word": "chimeric",
+      "pos": "adj.",
+      "phonetic": "[kaɪˋmɪrɪk]",
+      "definition": "結合抗體識別與活化訊號之基因工程嵌合的",
+      "cefr": "B1",
+      "topic": "基因重組",
+      "examples": [
+        {
+          "en": "Chimeric antigen receptor (CAR-T) therapy re-engineers a patient’s lymphocytes into cancer-killing cyborgs.",
+          "zh": "「嵌合抗原受體」（Chimeric Receptor）細胞療法，將病患自體淋巴球基因改造為抗癌超級戰士。"
+        },
+        {
+          "en": "Ancient mythology portrayed the Chimera as a fearsome creature composed of lion, goat, and serpent parts.",
+          "zh": "古希臘神話中將奇美拉描繪成一種結合了獅子頭部、山羊身體與毒蛇尾巴的恐怖嵌合異獸。"
+        },
+        {
+          "en": "Geneticists produced a chimeric mouse strain containing human immune genes for antibody research.",
+          "zh": "遺傳學家成功培育出攜帶人類免疫基因的嵌合體小鼠品系，專門用於單株抗體新藥研發。"
+        }
+      ],
+      "collocations": [
+        "engineered chimeric receptor"
+      ]
+    },
+    {
+      "id": 6257,
+      "word": "leukapheresis",
+      "pos": "n. [U]",
+      "phonetic": "[͵lukəfəˋrisɪs]",
+      "definition": "自體病患白血球與 T 細胞血液分離採集術",
+      "cefr": "B1",
+      "topic": "細胞採集",
+      "examples": [
+        {
+          "en": "During leukapheresis, blood passes through a centrifuge separator to isolate healthy immune T cells.",
+          "zh": "在「白血球分離採集術」（Leukapheresis）中，血液流經離心機分離出高品質的健康 T 細胞以供改造。"
+        },
+        {
+          "en": "Specially trained nurses ensured the patient stayed warm and comfortable throughout the three-hour leukapheresis.",
+          "zh": "接受過專業訓練的護理團隊隨時確保病患在長達三小時的白血球分離過程中保持溫暖與舒適。"
+        },
+        {
+          "en": "The leukapheresis product was immediately packaged in temperature-controlled coolers and flown to the lab.",
+          "zh": "採集完成的自體白血球產物立即妥善置入溫控保溫箱中，空運至細胞製備工廠進行基因重組。"
+        }
+      ],
+      "collocations": [
+        "patient autologous leukapheresis"
+      ]
+    },
+    {
+      "id": 6258,
+      "word": "vector",
+      "pos": "n.",
+      "phonetic": "[ˋvɛktɚ]",
+      "definition": "攜帶抗癌基因之去毒慢病毒傳遞載體",
+      "cefr": "B1",
+      "topic": "基因載體",
+      "examples": [
+        {
+          "en": "A harmless disarmed viral vector carries the new therapeutic gene directly into the extracted T-cell nucleus.",
+          "zh": "經過無害化處理的「病毒基因載體」（Vector），將全新設計的抗癌基因精準送入 T 細胞細胞核中。"
+        },
+        {
+          "en": "Mosquitos serve as the biological vector responsible for transmitting malaria parasites between human hosts.",
+          "zh": "雌性斑蚊是負責在人類宿主之間傳播瘧疾寄生蟲與登革熱病毒的關鍵生物媒介載體。"
+        },
+        {
+          "en": "In introductory physics class, students learned how to calculate velocity as a mathematical vector quantity.",
+          "zh": "在大一普通物理課堂上，教授詳細教導學生如何將速度計算為具備大小與方向的向量物理量。"
+        }
+      ],
+      "collocations": [
+        "viral gene delivery vector"
+      ]
+    },
+    {
+      "id": 6259,
+      "word": "transduction",
+      "pos": "n. [U]",
+      "phonetic": "[trænzˋdʌkʃən]",
+      "definition": "慢病毒載體體外基因轉導改造工藝",
+      "cefr": "B1",
+      "topic": "基因轉導",
+      "examples": [
+        {
+          "en": "Genetic transduction in cleanroom bioreactors equips millions of cells with tumor-seeking receptors.",
+          "zh": "在無菌潔淨室生物反應槽中進行「基因轉導」（Transduction），讓數百萬顆細胞同時裝上腫瘤追蹤雷達。"
+        },
+        {
+          "en": "Viral transduction efficiency is quantified by measuring the percentage of cells expressing green fluorescent protein.",
+          "zh": "病毒基因轉導效率的高低，主要透過流式細胞儀測量表現綠色螢光蛋白的細胞比例來定量。"
+        },
+        {
+          "en": "Auditory sensory transduction converts sound vibrations in the cochlea into electrical nerve impulses.",
+          "zh": "人體內耳耳蝸的聽覺感覺訊號轉導機制，能將物理性聲音震動精準轉換為大腦可讀的電子神經衝動。"
+        }
+      ],
+      "collocations": [
+        "viral genetic transduction"
+      ]
+    },
+    {
+      "id": 6260,
+      "word": "proliferation",
+      "pos": "n. [U]",
+      "phonetic": "[prə͵lɪfəˋreʃən]",
+      "definition": "潔淨無菌實驗室體外細胞倍增擴增培養",
+      "cefr": "B1",
+      "topic": "細胞擴增",
+      "examples": [
+        {
+          "en": "Nutrient-rich media stimulates rapid cell proliferation until hundreds of millions of doses are produced.",
+          "zh": "注入豐富營養液刺激細胞「體外倍增擴增」（Proliferation），在兩週內培養出數億顆強大的活體細胞軍團。"
+        },
+        {
+          "en": "International treaties strictly monitor nuclear technology to prevent the proliferation of atomic weapons.",
+          "zh": "聯合國國際原子能總署條約嚴密監控敏感核技術流向，全力防止毀滅性核武的擴散與蔓延。"
+        },
+        {
+          "en": "The rapid proliferation of smartphones over the past two decades transformed modern global commerce.",
+          "zh": "智慧型手機在過去二十年間的迅猛普及與繁衍擴散，徹底顛覆了現代全球商業與社交模式。"
+        }
+      ],
+      "collocations": [
+        "ex-vivo cell proliferation"
+      ]
+    },
+    {
+      "id": 6261,
+      "word": "infusion",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋfjuʒən]",
+      "definition": "改造後活體 CAR-T 細胞靜脈回輸體內療程",
+      "cefr": "B1",
+      "topic": "細胞回輸",
+      "examples": [
+        {
+          "en": "The patient received an intravenous infusion of living CAR-T cellular therapy over thirty quiet minutes.",
+          "zh": "病患在三十鐘內透過靜脈點滴順利完成活體 CAR-T 細胞的「靜脈回輸療程」（Infusion）。"
+        },
+        {
+          "en": "Brewing chamomile herbal infusion calms racing minds and promotes restful sleep before bedtime.",
+          "zh": "沖泡一杯溫熱的洋甘菊草本舒緩花草茶，能平撫焦躁思緒並在睡前營造一夜香甜好眠。"
+        },
+        {
+          "en": "The injection of a substantial venture capital infusion allowed the biotech startup to build manufacturing suites.",
+          "zh": "成功引進關鍵創投機構的大額資金注資挹注，讓該生技新創公司得以順利興建自營 GMP 生產廠房。"
+        }
+      ],
+      "collocations": [
+        "intravenous cellular infusion"
+      ]
+    },
+    {
+      "id": 6262,
+      "word": "conjugate",
+      "pos": "n., adj.",
+      "phonetic": "[ˋkɑndʒəgɪt]",
+      "definition": "抗體藥物複合體 (ADC 精準標靶生物導彈)",
+      "cefr": "B1",
+      "topic": "ADC藥物",
+      "examples": [
+        {
+          "en": "Antibody-drug conjugates (ADCs) combine the precision targeting of antibodies with potent chemotherapy.",
+          "zh": "「抗體藥物複合體」（Conjugates ADCs），將單株抗體的精準導航與劇毒化療分子的毀滅力完美結合。"
+        },
+        {
+          "en": "Students learning Spanish must practice how to conjugate irregular verbs in multiple past tenses.",
+          "zh": "正在修習西班牙語的初學者，必須反覆練習如何在多種過去時態下正確進行不規則動詞的詞形變化。"
+        },
+        {
+          "en": "Chemistry researchers reacted the fluorescent dye to conjugate with specific albumin blood proteins.",
+          "zh": "應用化學研究團隊將螢光染劑分子進行偶聯化學反應，使其與特定的白蛋白分子精準結合。"
+        }
+      ],
+      "collocations": [
+        "antibody-drug conjugate (ADC)"
+      ]
+    },
+    {
+      "id": 6263,
+      "word": "payload",
+      "pos": "n.",
+      "phonetic": "[ˋpe͵lod]",
+      "definition": "高毒性殺手化療分子彈頭 (Payload)；酬載",
+      "cefr": "B1",
+      "topic": "毒性彈頭",
+      "examples": [
+        {
+          "en": "The lethal cytotoxic payload remains securely bound until the antibody attaches to the cancer cell.",
+          "zh": "致命的「高毒性化療彈頭」（Payload）在血液中維持休眠，唯有抗體精準吸附癌細胞時才會發揮威力。"
+        },
+        {
+          "en": "The heavy-lift orbital rocket hoisted a twenty-ton communications satellite payload into geostationary orbit.",
+          "zh": "重型商業運載火箭將重達二十公噸的深空通訊衛星有效酬載，精準送入地球同步轉移軌道。"
+        },
+        {
+          "en": "Security analysts discovered a malicious ransomware payload disguised inside a fraudulent email attachment.",
+          "zh": "資安鑑識專家在偽裝的惡意電子郵件附件中，揪出隱藏在正常文件深處的勒索病毒惡意負載。"
+        }
+      ],
+      "collocations": [
+        "cytotoxic chemo payload"
+      ]
+    },
+    {
+      "id": 6264,
+      "word": "linker",
+      "pos": "n.",
+      "phonetic": "[ˋlɪŋkɚ]",
+      "definition": "腫瘤微環境專一性可裂解化學連接子",
+      "cefr": "B1",
+      "topic": "化學鏈結",
+      "examples": [
+        {
+          "en": "A smart cleavable peptide linker prevents premature release of toxins in healthy blood circulation.",
+          "zh": "智慧型「可裂解化學連接子」（Linker），能徹底防止化療毒素在健康人體血液循環中過早釋放。"
+        },
+        {
+          "en": "Web developers embedded a hyperlinked URL linker that directs visitors to related medical publications.",
+          "zh": "網站前端工程師嵌入了文章超連結連接組件，引導訪客直接跳轉至權威醫學期刊閱讀原始論文。"
+        },
+        {
+          "en": "The chemical linker must remain ultra-stable during storage yet degrade quickly inside tumor lysosomes.",
+          "zh": "這種化學分子連接鍵在冷藏儲存期間必須維持極高穩定性，但在進入癌細胞溶酶體後需迅速斷裂。"
+        }
+      ],
+      "collocations": [
+        "cleavable chemical linker"
+      ]
+    },
+    {
+      "id": 6265,
+      "word": "internalization",
+      "pos": "n. [U]",
+      "phonetic": "[ɪn͵tɝnəlɪˋzeʃən]",
+      "definition": "抗體結合受體後癌細胞專一性吞噬內化作用",
+      "cefr": "B1",
+      "topic": "細胞內吞",
+      "examples": [
+        {
+          "en": "After surface binding, receptor-mediated internalization pulls the ADC payload directly inside the tumor.",
+          "zh": "抗體吸附腫瘤表面後，引發「受體介導內吞作用」（Internalization），將藥物直接吞入癌細胞內部引爆。"
+        },
+        {
+          "en": "Children learn moral norms through the social internalization of parental ethical values and guidance.",
+          "zh": "懵懂幼童藉由將父母親言傳身教的道德觀念與行為引導內化於心，逐步建構健全的人格價值觀。"
+        },
+        {
+          "en": "Cellular biologists tracked the endocytosis and rapid internalization of gold nanoparticles in real time.",
+          "zh": "細胞生物學家在螢光顯微鏡下，即時追蹤奈米金顆粒被吞噬細胞快速進行細胞內化吸收的過程。"
+        }
+      ],
+      "collocations": [
+        "receptor-mediated internalization"
+      ]
+    },
+    {
+      "id": 6266,
+      "word": "specificity",
+      "pos": "n. [U]",
+      "phonetic": "[͵spɛsəˋfɪsətɪ]",
+      "definition": "單株抗體對癌細胞抗原之極高標靶特異性",
+      "cefr": "B1",
+      "topic": "標靶專一",
+      "examples": [
+        {
+          "en": "Monoclonal antibodies exhibit exceptional specificity, sparing healthy bystander tissues from harm.",
+          "zh": "單株抗體展現出無與倫比的「標靶專一特異性」（Specificity），完全不傷及周遭正常的健康組織。"
+        },
+        {
+          "en": "PCR test primers require absolute genetic specificity to avoid generating false positive laboratory results.",
+          "zh": "PCR 聚合酶檢測引子必須具備絕對的物種基因專一性，以避免在實驗室檢驗中產生偽陽性誤判。"
+        },
+        {
+          "en": "The legal contract outlined job duties with meticulous specificity to prevent future contractual disputes.",
+          "zh": "商業法律顧問在勞動契約中巨細靡遺界定各項工作權責與條款細節，全力杜絕未來的履約爭議。"
+        }
+      ],
+      "collocations": [
+        "high target antigen specificity"
+      ]
+    },
+    {
+      "id": 6267,
+      "word": "trial",
+      "pos": "n.",
+      "phonetic": "[ˋtraɪəl]",
+      "definition": "嚴格隨機雙盲對照臨床試驗 (Phase I-III)",
+      "cefr": "B1",
+      "topic": "臨床試驗",
+      "examples": [
+        {
+          "en": "Enrolling in a global randomized clinical trial granted the patient early access to cutting-edge therapy.",
+          "zh": "簽署加入全球多中心「隨機對照臨床試驗」（Clinical Trial），讓患者有機會提早接受劃時代新藥治療。"
+        },
+        {
+          "en": "The high-profile financial fraud trial drew hundreds of curious spectators and journalists to court.",
+          "zh": "這樁引發全台轟動的重大金融詐欺案公開庭審，吸引了數以百計的旁聽民眾與新聞記者擠滿法庭。"
+        },
+        {
+          "en": "Through rigorous trial and error, the baker perfected her sourdough bread fermentation recipe.",
+          "zh": "歷經無數次堅持不懈的嘗試與摸索修正，烘焙師傅終於調配出頂級天然酵母酸種麵包的黃金配方。"
+        }
+      ],
+      "collocations": [
+        "randomized clinical trial"
+      ]
+    },
+    {
+      "id": 6268,
+      "word": "phase",
+      "pos": "n., v.",
+      "phonetic": "[fez]",
+      "definition": "全球多中心第三期上市註冊關鍵臨床試驗；階段",
+      "cefr": "B1",
+      "topic": "試驗分期",
+      "examples": [
+        {
+          "en": "The investigational drug entered a Phase III multicenter trial involving over one thousand global volunteers.",
+          "zh": "這款試驗性抗癌新藥正式挺進「第三期臨床試驗」（Phase III Trial），在全球收案超過一千名志願受試者。"
+        },
+        {
+          "en": "The moon progresses through distinct phases from slender crescent to radiant full orb each month.",
+          "zh": "夜空中的月亮每個月都會經歷從纖細蛾眉月到皎潔圓滿滿月的各個規律月相變化階段。"
+        },
+        {
+          "en": "The infrastructure project is transitioning from the initial design phase to active underground excavation.",
+          "zh": "該大型公共交通基礎設施工程，正順利從前期藍圖規劃階段邁入大規模實質地下潛盾開挖階段。"
+        }
+      ],
+      "collocations": [
+        "multicenter Phase III trial"
+      ]
+    },
+    {
+      "id": 6269,
+      "word": "cohort",
+      "pos": "n.",
+      "phonetic": "[ˋkohɔrt]",
+      "definition": "劑量遞增第一期臨床試驗病患組別 (Cohort)",
+      "cefr": "B1",
+      "topic": "受試組別",
+      "examples": [
+        {
+          "en": "Researchers closely monitored the first cohort of six patients for unexpected adverse reactions.",
+          "zh": "研究團隊二十四小時密切監測第一「受試病患組別」（Cohort）的六名志願者，觀察是否有非預期副作用。"
+        },
+        {
+          "en": "The epidemiological study followed a long-term cohort of ten thousand non-smokers for twenty years.",
+          "zh": "該大型流行病學長期追蹤研究鎖定了一組高達一萬名不吸菸的健康隊列族群，展開長達二十年的追蹤。"
+        },
+        {
+          "en": "Each annual university cohort produces talented graduates ready to contribute to local semiconductor hubs.",
+          "zh": "每屆大學畢業生群體中皆孕育出無數優秀科技人才，隨時準備投入在地頂尖半導體產業發光發熱。"
+        }
+      ],
+      "collocations": [
+        "dose escalation patient cohort"
+      ]
+    },
+    {
+      "id": 6270,
+      "word": "placebo",
+      "pos": "n.",
+      "phonetic": "[pləˋsibo]",
+      "definition": "隨機對照臨床試驗安慰劑組 (評估真實療效)",
+      "cefr": "B1",
+      "topic": "對照安慰劑",
+      "examples": [
+        {
+          "en": "Half the participants received the new pill while the control group took an identical-looking placebo.",
+          "zh": "一半的受試者服用創新抗癌藥物，對照組則服用外觀一模一樣的「無活性安慰劑」（Placebo）進行比對。"
+        },
+        {
+          "en": "Doctors sometimes witness a remarkable placebo effect where patient pain decreases purely from positive expectation.",
+          "zh": "臨床醫師有時會觀察到不可思議的安慰劑效應，即病患僅因抱持樂觀治癒期待其疼痛便顯著減輕。"
+        },
+        {
+          "en": "Using an active placebo that mimics minor side effects helps preserve the study's double-blind credibility.",
+          "zh": "採用能引起輕微口乾等無害副作用的活性安慰劑，能有效確保雙盲臨床試驗不被受試者輕易猜破。"
+        }
+      ],
+      "collocations": [
+        "placebo-controlled clinical trial"
+      ]
+    },
+    {
+      "id": 6271,
+      "word": "blinded",
+      "pos": "adj.",
+      "phonetic": "[ˋblaɪndɪd]",
+      "definition": "醫師與受試者皆不知分組之嚴謹雙盲設計的",
+      "cefr": "B1",
+      "topic": "雙盲設計",
+      "examples": [
+        {
+          "en": "Double-blinded study designs eliminate subjective bias when evaluating patient symptom improvements.",
+          "zh": "嚴格的「雙盲試驗設計」（Double-Blinded），能徹底消除醫師與病患在評估症狀改善時的主觀心理偏差。"
+        },
+        {
+          "en": "The sudden glare of oncoming high beams momentarily blinded the driver on the dark rural road.",
+          "zh": "對向來車突然開啟的刺眼遠光燈強光，瞬間讓在漆黑山路上行駛的駕駛人眼前一片空白盲目。"
+        },
+        {
+          "en": "A third-party data safety board analyzed coded records while keeping the clinical investigators blinded.",
+          "zh": "獨立的資料安全監控委員會負責審閱代碼化加密數據，同時確保第一線臨床試驗醫師始終處於盲態。"
+        }
+      ],
+      "collocations": [
+        "double-blinded study design"
+      ]
+    },
+    {
+      "id": 6272,
+      "word": "protocol",
+      "pos": "n.",
+      "phonetic": "[ˋprotə͵kɑl]",
+      "definition": "人體試驗倫理委員會核准之臨床試驗計畫書",
+      "cefr": "B1",
+      "topic": "試驗方案",
+      "examples": [
+        {
+          "en": "Strict adherence to the study protocol ensures patient safety and reliable scientific conclusions.",
+          "zh": "嚴格遵循人體試驗委員會核准的「臨床試驗計畫書」（Protocol），是保障受試者生命安全與數據真實的基石。"
+        },
+        {
+          "en": "The hospital updated its infection control protocol to require N95 respirators in isolation suites.",
+          "zh": "該醫學中心全面升級院內感控防護作業準則，硬性規定所有負壓隔離病房醫護皆須配戴 N95 口罩。"
+        },
+        {
+          "en": "Internet routers exchange data packets using the standardized TCP/IP transmission protocol.",
+          "zh": "全球網路路由器依循標準化的 TCP/IP 通訊協定規範，在伺服器與用戶端之間高速交換數據封包。"
+        }
+      ],
+      "collocations": [
+        "clinical study protocol"
+      ]
+    },
+    {
+      "id": 6273,
+      "word": "review",
+      "pos": "n., v.",
+      "phonetic": "[rɪˋvju]",
+      "definition": "醫院人體試驗倫理審查委員會 (IRB 審查)；審查",
+      "cefr": "B1",
+      "topic": "倫理審查",
+      "examples": [
+        {
+          "en": "The Institutional Review Board reviewed the patient consent forms to protect human dignity.",
+          "zh": "醫院「人體試驗倫理審查委員會」（Institutional Review Board IRB），嚴格審查知情同意書以捍衛人權尊嚴。"
+        },
+        {
+          "en": "Peer review by external domain specialists caught methodological errors before the journal published the paper.",
+          "zh": "在學術期刊正式刊登論文前，由外部同行專家進行的嚴格審查成功挑出了研究方法中的微小瑕疵。"
+        },
+        {
+          "en": "The manager conducted a comprehensive annual performance review with every software engineer on the team.",
+          "zh": "部門主管與團隊中每一位軟體工程師展開一對一深入懇談，進行全面客觀的年度工作績效考評回顧。"
+        }
+      ],
+      "collocations": [
+        "institutional ethics review board"
+      ]
+    },
+    {
+      "id": 6274,
+      "word": "consent",
+      "pos": "n. [U], v.",
+      "phonetic": "[kənˋsɛnt]",
+      "definition": "病患受試者簽署完全知情同意書；同意",
+      "cefr": "B1",
+      "topic": "知情同意",
+      "examples": [
+        {
+          "en": "Doctors explained all potential risks before the volunteer signed the informed consent document.",
+          "zh": "在受試者正式簽署「知情同意書」（Informed Consent）前，主治醫師巨細靡遺解釋所有潛在風險與替代療法。"
+        },
+        {
+          "en": "Parents must provide written parental consent before minor children can participate in overnight school camps.",
+          "zh": "未成年學童在報名參加學校舉辦的隔宿露營活動前，必須取得法定代理人簽署的家長同意書。"
+        },
+        {
+          "en": "By mutual consent, both companies agreed to terminate the joint venture without seeking legal damages.",
+          "zh": "經過雙方友好充分協商，兩家企業達成一致共識，同意平和終止合資合作協議且互不索賠賠償。"
+        }
+      ],
+      "collocations": [
+        "signed informed consent"
+      ]
+    },
+    {
+      "id": 6275,
+      "word": "compliance",
+      "pos": "n. [U]",
+      "phonetic": "[kəmˋplaɪəns]",
+      "definition": "嚴格遵循國際藥品優良臨床試驗規範",
+      "cefr": "B1",
+      "topic": "法規合規",
+      "examples": [
+        {
+          "en": "Audits verified full regulatory compliance with international clinical good practice standards.",
+          "zh": "衛福部外部稽核員進行全面查核，確認臨床試驗百分之百符合國際法規「合規標準」（Compliance）。"
+        },
+        {
+          "en": "Ensuring strict environmental compliance saved the manufacturing plant from crippling regulatory fines.",
+          "zh": "嚴格遵守各項環保排污合規標準，讓這座現代化工廠免於遭受環保稽查局巨額停工罰款的處分。"
+        },
+        {
+          "en": "The bank established an internal compliance department to guard against money laundering and fraud.",
+          "zh": "該跨國商業銀行設立了專業獨立的法規遵循合規部門，日夜嚴密防範洗錢防制與金融舞弊交易。"
+        }
+      ],
+      "collocations": [
+        "strict GCP regulatory compliance"
+      ]
+    },
+    {
+      "id": 6276,
+      "word": "practice",
+      "pos": "n. [U]",
+      "phonetic": "[ˋpræktɪs]",
+      "definition": "國際藥品優良臨床試驗規範 (GCP 標準)；實踐",
+      "cefr": "B1",
+      "topic": "GCP標準",
+      "examples": [
+        {
+          "en": "Good Clinical Practice guidelines safeguard human rights and ensure data integrity worldwide.",
+          "zh": "國際「藥品優良臨床試驗規範」（Good Clinical Practice GCP），在全球範圍內捍衛受試者權益與數據真實性。"
+        },
+        {
+          "en": "Daily piano practice helps young musicians develop finger agility and musical sensitivity.",
+          "zh": "堅持不懈的每日鋼琴指法練習，能協助年輕琴童奠定敏捷的指尖觸鍵技巧與細膩音樂感受力。"
+        },
+        {
+          "en": "Sustainable farming practices preserve rich topsoil and prevent nutrient runoff into waterways.",
+          "zh": "採用環境永續的友善農耕實踐工法，能長效涵養表土有機質並避免化肥營養過度流失沖刷入河流。"
+        }
+      ],
+      "collocations": [
+        "Good Clinical Practice (GCP)"
+      ]
+    },
+    {
+      "id": 6277,
+      "word": "endpoint",
+      "pos": "n.",
+      "phonetic": "[ˋɛnd͵pɔɪnt]",
+      "definition": "總生存期 (OS) 主要臨床試驗評估終點",
+      "cefr": "B1",
+      "topic": "試驗終點",
+      "examples": [
+        {
+          "en": "Prolonging overall survival served as the primary clinical endpoint for regulatory approval.",
+          "zh": "顯著延長晚期病患的總生存期，是該抗癌新藥爭取各國藥證審查核准的「主要臨床評估終點」（Endpoint）。"
+        },
+        {
+          "en": "Secondary endpoints measured patient quality of life, pain reduction, and physical mobility improvements.",
+          "zh": "次要評估終點深入衡量了受試者的整體生活品質指數、疼痛減緩幅度以及日常身體活動能力改善。"
+        },
+        {
+          "en": "The API endpoint handles user authentication requests through encrypted tokens.",
+          "zh": "該後端雲端 API 接口端點，透過嚴格加密的數位憑證安全處理所有使用者的登入驗證請求。"
+        }
+      ],
+      "collocations": [
+        "primary clinical trial endpoint"
+      ]
+    },
+    {
+      "id": 6278,
+      "word": "survival",
+      "pos": "n. [U]",
+      "phonetic": "[sɚˋvaɪv!]",
+      "definition": "無惡化存活期 (PFS) 與總生存期指標；存活",
+      "cefr": "B1",
+      "topic": "存活指標",
+      "examples": [
+        {
+          "en": "The innovative pill extended progression-free survival by an unprecedented fourteen months.",
+          "zh": "這款創新口服標靶藥物將病患的「無惡化存活期」（Progression-Free Survival PFS）大幅延長了十四個月。"
+        },
+        {
+          "en": "Wilderness survival skills such as building a fire and purifying water save lives during mountain emergencies.",
+          "zh": "鑽木取火與生水過濾消毒等野外求生技能，在高山遇險受困的關鍵時刻能夠拯救寶貴性命。"
+        },
+        {
+          "en": "Early mammogram screening dramatically improves breast cancer five-year survival rates across demographics.",
+          "zh": "定期推動乳房攝影篩檢巡迴車服務，大幅提升了各年齡層女性乳癌患者的五年存活率。"
+        }
+      ],
+      "collocations": [
+        "progression-free survival rate"
+      ]
+    },
+    {
+      "id": 6279,
+      "word": "remission",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋmɪʃən]",
+      "definition": "腫瘤病灶完全消失達到完全緩解狀態",
+      "cefr": "B1",
+      "topic": "疾病緩解",
+      "examples": [
+        {
+          "en": "PET scans confirmed that the refractory lymphoma patient achieved complete durable remission.",
+          "zh": "全身 PET 正子斷層掃描證實，原本頑固難治的淋巴癌病患體內腫瘤已完全消失，達到「完全緩解」（Remission）。"
+        },
+        {
+          "en": "After six cycles of immunotherapy, the patient's leukemia went into sustained complete remission.",
+          "zh": "經過六個週期的免疫標靶綜合治療，該名白血病患者的骨髓象已完全恢復正常並維持穩定緩解。"
+        },
+        {
+          "en": "The court granted partial remission of the prisoner's sentence in recognition of his exemplary behavior.",
+          "zh": "鑑於該名服刑人員在獄中熱心助人且悔改表現優異，法官裁定依法核准酌予減輕並縮短其刑期。"
+        }
+      ],
+      "collocations": [
+        "achieve complete tumor remission"
+      ]
+    },
+    {
+      "id": 6280,
+      "word": "biomarker",
+      "pos": "n.",
+      "phonetic": "[ˋbaɪo͵mɑrkɚ]",
+      "definition": "預測標靶藥物療效之特定生物標記基因",
+      "cefr": "B1",
+      "topic": "生物標記",
+      "examples": [
+        {
+          "en": "High PD-L1 protein expression on tumor surfaces acts as a positive predictive biomarker for therapy success.",
+          "zh": "腫瘤切片表面高濃度的 PD-L1 蛋白表現，是預測免疫檢查點療法能否成功的關鍵「生物標記」（Biomarker）。"
+        },
+        {
+          "en": "Elevated cardiac troponin in bloodstream serves as an unmistakable clinical biomarker of acute heart attacks.",
+          "zh": "血液檢驗中肌鈣蛋白濃度的急遽升高，是急診醫師判定急性心肌梗塞發作的確鑿臨床生物標記。"
+        },
+        {
+          "en": "Researchers discovered an epigenetic biomarker that detects early-stage colon cancer from stool samples.",
+          "zh": "醫學科研團隊發現了一種表觀遺傳生物標記，能透過糞便潛血檢體精準揪出早期大腸癌病灶。"
+        }
+      ],
+      "collocations": [
+        "predictive genetic biomarker"
+      ]
+    },
+    {
+      "id": 6281,
+      "word": "sequencing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsikwənsɪŋ]",
+      "definition": "次世代全基因體腫瘤突變定序 (NGS 定序)",
+      "cefr": "B1",
+      "topic": "基因定序",
+      "examples": [
+        {
+          "en": "Next-generation sequencing identified a rare fusion gene, unlocking a matching targeted drug.",
+          "zh": "透過「次世代全基因體定序」（Next-Generation Sequencing NGS），精準揪出罕見融合基因並媒合特效藥。"
+        },
+        {
+          "en": "High-speed DNA sequencing machines decoded the unknown pathogen's entire genome in less than forty-eight hours.",
+          "zh": "超高速次世代 DNA 定序儀器在短短不到四十八小時內，便徹底破解了未知病原體的完整基因組圖譜。"
+        },
+        {
+          "en": "Automated RNA sequencing uncovers gene expression changes occurring inside stressed kidney cells.",
+          "zh": "全自動 RNA 轉錄組定序技術，能精準揭示腎臟細胞在承受急性缺氧壓力時所發生的基因表達變化。"
+        }
+      ],
+      "collocations": [
+        "next-generation DNA sequencing"
+      ]
+    },
+    {
+      "id": 6282,
+      "word": "biopsy",
+      "pos": "n.",
+      "phonetic": "[ˋbaɪɑpsɪ]",
+      "definition": "抽血檢測循環腫瘤 DNA 之非侵入液態切片；切片",
+      "cefr": "B1",
+      "topic": "液態切片",
+      "examples": [
+        {
+          "en": "A simple liquid biopsy detected circulating tumor DNA in the bloodstream months before scans showed recurrence.",
+          "zh": "僅需抽血的「液態切片檢測」（Liquid Biopsy），比電腦斷層提早數個月在血液中精準捕捉復發微量癌細胞 DNA。"
+        },
+        {
+          "en": "The radiologist performed an ultrasound-guided core needle biopsy of the suspicious thyroid nodule.",
+          "zh": "放射科主治醫師在超音波精準導引下，為病患頸部可疑的甲狀腺結節進行細針粗針穿刺切片。"
+        },
+        {
+          "en": "Pathology biopsy results confirmed that the excised skin lesion was completely benign.",
+          "zh": "顯微鏡下精確的病理切片報告百分之百證實，手術完整切除的皮膚黑痣屬於完全良性的良性組織。"
+        }
+      ],
+      "collocations": [
+        "non-invasive liquid blood biopsy"
+      ]
+    },
+    {
+      "id": 6283,
+      "word": "mutation",
+      "pos": "n.",
+      "phonetic": "[mjuˋteʃən]",
+      "definition": "驅動肺癌與大腸癌發生之關鍵基因突變",
+      "cefr": "B1",
+      "topic": "基因突變",
+      "examples": [
+        {
+          "en": "Targeted tyrosine kinase inhibitors specifically disable cancer cells driven by EGFR gene mutations.",
+          "zh": "專屬小分子標靶藥物，能精準鎖定並關閉由 EGFR「致癌驅動基因突變」（Mutation）所引發的失控生長信號。"
+        },
+        {
+          "en": "A spontaneous genetic mutation enabled the virus variant to evade neutralizing antibodies.",
+          "zh": "病毒在自然複製過程中產生的自發性基因突變，使其變異株具備了逃脫人體中和抗體攔截的免疫逃逸力。"
+        },
+        {
+          "en": "Genetic counseling helps families understand their hereditary cancer mutation risks and preventive options.",
+          "zh": "專業的遺傳諮詢門診能協助有癌症家族病史的家庭，深入了解遺傳性基因突變風險與早期預防方案。"
+        }
+      ],
+      "collocations": [
+        "driver oncogene mutation"
+      ]
+    },
+    {
+      "id": 6284,
+      "word": "toxicity",
+      "pos": "n. [U]",
+      "phonetic": "[tɑkˋsɪsətɪ]",
+      "definition": "評估藥物安全範圍之劑量限制性毒性指標",
+      "cefr": "B1",
+      "topic": "藥物毒性",
+      "examples": [
+        {
+          "en": "Careful dose monitoring minimized organ toxicity while maintaining maximum tumor destruction.",
+          "zh": "嚴密的血中濃度監控，將藥物對肝腎的「器官毒性」（Toxicity）降至最低，同時維持最大殺滅腫瘤效果。"
+        },
+        {
+          "en": "Environmental safety agencies evaluate industrial chemical toxicity levels before authorizing factory production.",
+          "zh": "環保法規主管機關在核准化學工廠量產前，會嚴格評估工業化學原料的急性與慢性環境毒性等級。"
+        },
+        {
+          "en": "Antidote administration countered the lethal toxicity of the poisonous mushroom toxins.",
+          "zh": "急診室醫師及時注射專屬解毒劑，成功中和並化解了誤食致命野生毒菇所引發的嚴重劇烈毒性。"
+        }
+      ],
+      "collocations": [
+        "dose-limiting organ toxicity"
+      ]
+    },
+    {
+      "id": 6285,
+      "word": "cytokine",
+      "pos": "n.",
+      "phonetic": "[ˋsaɪto͵kaɪn]",
+      "definition": "細胞因子釋放風暴 (免疫活化高燒發炎反應)",
+      "cefr": "B1",
+      "topic": "免疫風暴",
+      "examples": [
+        {
+          "en": "Intensive care staff are trained to manage cytokine release syndrome triggered by supercharged T cells.",
+          "zh": "加護病房醫護團隊接受嚴格訓練，隨時應對超級 T 細胞消滅大量癌細胞時誘發的「細胞因子風暴」（Cytokine）。"
+        },
+        {
+          "en": "Cytokine proteins act as chemical messengers that orchestrate immune responses throughout the body.",
+          "zh": "細胞因子蛋白宛如人體內部的化學信使，在全身各器官精確調度與協調免疫細胞的集結防禦反應。"
+        },
+        {
+          "en": "Elevated pro-inflammatory cytokine levels in blood tests signaled an aggressive bacterial infection.",
+          "zh": "抽血檢驗報告中促發炎細胞因子濃度的大幅激增，向醫療團隊發出了嚴重急性細菌感染的危險訊號。"
+        }
+      ],
+      "collocations": [
+        "cytokine release syndrome (CRS)"
+      ]
+    },
+    {
+      "id": 6286,
+      "word": "antagonist",
+      "pos": "n.",
+      "phonetic": "[ænˋtægənɪst]",
+      "definition": "IL-6 受體單株抗體救援拮抗劑 (托珠單抗)",
+      "cefr": "B1",
+      "topic": "救援藥物",
+      "examples": [
+        {
+          "en": "Administering an IL-6 receptor antagonist promptly halted severe inflammation and broke the patient's fever.",
+          "zh": "即時注射 IL-6 受體「單株抗體拮抗劑」（Antagonist），在數小時內迅速撲滅全身性急性發炎並退燒。"
+        },
+        {
+          "en": "The gripping detective novel pitted the clever detective against a ruthless mastermind antagonist.",
+          "zh": "這本引人入勝的懸疑推理小說，生動刻劃了機智敏銳的名偵探與冷血狡猾的反派大魔頭之間的生死鬥智。"
+        },
+        {
+          "en": "Pharmacologists formulated an opioid antagonist spray that rapidly reverses narcotics overdoses in emergency rooms.",
+          "zh": "藥理學家成功研發出一款鴉片受體拮抗劑鼻噴劑，能在急診室第一時間快速逆轉麻醉止痛藥過量休克。"
+        }
+      ],
+      "collocations": [
+        "receptor antagonist medicine"
+      ]
+    },
+    {
+      "id": 6287,
+      "word": "escalation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɛskəˋleʃən]",
+      "definition": "經典 3+3 藥物劑量遞增安全性測試架構；升高",
+      "cefr": "B1",
+      "topic": "劑量遞增",
+      "examples": [
+        {
+          "en": "The safety board monitored stepwise dose escalation to determine the drug's therapeutic window.",
+          "zh": "獨立安全委員會逐步監控「劑量遞增測試」（Dose Escalation），以精準界定新藥兼具安全與療效的治療窗口。"
+        },
+        {
+          "en": "Diplomatic mediators intervened immediately to prevent military conflict escalation along the disputed border.",
+          "zh": "國際資深外交調解專家在第一時間介入斡旋，全力防範邊境爭端引發兩國軍事衝突全面升級失控。"
+        },
+        {
+          "en": "An escalation of customer complaints compelled the airline to overhaul its flight cancellation policies.",
+          "zh": "旅客客訴案件數量的急遽升高升級，迫使該航空公司高層全面檢討並徹底重塑班機取消補償規定。"
+        }
+      ],
+      "collocations": [
+        "stepwise dose escalation trial"
+      ]
+    },
+    {
+      "id": 6288,
+      "word": "tolerated",
+      "pos": "adj.",
+      "phonetic": "[ˋtɑlə͵retɪd]",
+      "definition": "人體可耐受最高安全藥物劑量 (MTD) 的",
+      "cefr": "B1",
+      "topic": "耐受劑量",
+      "examples": [
+        {
+          "en": "Identifying the maximum tolerated dose ensures future trial participants receive effective, safe treatment.",
+          "zh": "精準找出人體「最高可耐受劑量」（Maximum Tolerated Dose MTD），確保後續試驗病患獲得安全有效的治療。"
+        },
+        {
+          "en": "The new low-dose formulation was exceptionally well tolerated by elderly patients with sensitive stomachs.",
+          "zh": "這款新型低劑量配方藥物耐受性極佳，即使是腸胃敏感虛弱的高齡長輩服用後也毫無不適反應。"
+        },
+        {
+          "en": "Severe workplace harassment will never be tolerated under our company’s strict zero-tolerance code of conduct.",
+          "zh": "任何形式的職場霸凌或言語騷擾，在我們公司嚴格的零容忍行為準則規範下絕不被容忍與姑息。"
+        }
+      ],
+      "collocations": [
+        "maximum tolerated dose (MTD)"
+      ]
+    },
+    {
+      "id": 6289,
+      "word": "efficacy",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɛfəkəsɪ]",
+      "definition": "經嚴謹統計學驗證之顯著抗腫瘤臨床療效",
+      "cefr": "B1",
+      "topic": "臨床療效",
+      "examples": [
+        {
+          "en": "The antibody demonstrated dramatic clinical efficacy, shrinking tumors in eighty percent of trial patients.",
+          "zh": "該新型單株抗體展現出驚人的「臨床抗癌療效」（Efficacy），成功讓八成受試者的腫瘤明顯縮小。"
+        },
+        {
+          "en": "Laboratory studies confirmed the disinfectant's high antiviral efficacy against airborne pathogens.",
+          "zh": "權威實驗室的嚴謹體外試驗證實，該消毒劑對殺滅空氣中的各類病毒病原體具有極高的消毒效力。"
+        },
+        {
+          "en": "Peer-reviewed journal publications established the drug's long-term cardiovascular preventive efficacy.",
+          "zh": "發表於頂尖醫學期刊的論文，以翔實數據確立了該款新藥在長效預防心血管疾病上的顯著預防功效。"
+        }
+      ],
+      "collocations": [
+        "proven clinical drug efficacy"
+      ]
+    },
+    {
+      "id": 6290,
+      "word": "statistical",
+      "pos": "adj.",
+      "phonetic": "[stəˋtɪstɪk!]",
+      "definition": "具備高度統計學顯著差異 (p < 0.001) 的",
+      "cefr": "B1",
+      "topic": "統計顯著",
+      "examples": [
+        {
+          "en": "The survival difference between groups reached statistical significance with a p-value below 0.001.",
+          "zh": "兩組病患的存活率差異達到了極高的「統計學顯著性」（Statistical Significance），證實療效絕非偶然。"
+        },
+        {
+          "en": "Market researchers utilized sophisticated statistical models to forecast next quarter’s consumer spending.",
+          "zh": "市場研究專家運用先進的統計計量模型，精準預測下一季度零售消費市場的整體支出動向。"
+        },
+        {
+          "en": "Without rigorous statistical controls, experimental correlations can easily lead researchers to false conclusions.",
+          "zh": "若缺乏嚴謹的統計學控制變數與檢定，實驗中所呈現的表面關聯性極易引導研究員導出錯誤結論。"
+        }
+      ],
+      "collocations": [
+        "statistically significant result"
+      ]
+    },
+    {
+      "id": 6291,
+      "word": "approval",
+      "pos": "n. [U]",
+      "phonetic": "[əˋpruv!]",
+      "definition": "美國 FDA 癌症突破性新藥加速審查上市核准",
+      "cefr": "B1",
+      "topic": "藥證審查",
+      "examples": [
+        {
+          "en": "The oncology drug received accelerated FDA approval following stellar overall survival trial results.",
+          "zh": "憑藉優異顯著的總生存期試驗數據，該抗癌新藥順利榮獲美國 FDA 官方的「加速上市審查核准」（Approval）。"
+        },
+        {
+          "en": "City planners awaited formal municipal approval before groundbreaking could begin on the light rail line.",
+          "zh": "都市交通規劃部門正在等待市政府的正式行政核准文件，以便輕軌捷運工程能如期動工開工。"
+        },
+        {
+          "en": "The young couple smiled joyfully after receiving their parents' enthusiastic approval of their wedding plans.",
+          "zh": "年輕情侶在獲得雙方父母對婚禮籌備計畫的熱情首肯與衷心祝福後，臉上洋溢著無比幸福的燦爛笑容。"
+        }
+      ],
+      "collocations": [
+        "accelerated regulatory drug approval"
+      ]
+    },
+    {
+      "id": 6292,
+      "word": "breakthrough",
+      "pos": "n., adj.",
+      "phonetic": "[ˋbrek͵θru]",
+      "definition": "獲官方認可之癌症突破性療法資格",
+      "cefr": "B1",
+      "topic": "突破療法",
+      "examples": [
+        {
+          "en": "Granting breakthrough therapy designation expedited international regulatory review timelines.",
+          "zh": "獲得官方授予「突破性療法資格認證」（Breakthrough Designation），大幅縮短了跨國新藥審查上市的漫長時程。"
+        },
+        {
+          "en": "Developing solid-state battery cells represents a monumental technological breakthrough for electric mobility.",
+          "zh": "成功研發出全固態鋰電池技術，代表了全球電動車產業與綠色交通領域一場劃時代的重大技術突破。"
+        },
+        {
+          "en": "Archaeologists made a stunning breakthrough when they uncovered an undisturbed subterranean tomb chamber.",
+          "zh": "考古學考察隊在古城遺址挖掘出一座未遭任何盜掘破壞的宏偉地下墓室，迎來了震驚考古界的重大突破。"
+        }
+      ],
+      "collocations": [
+        "breakthrough therapy designation"
+      ]
+    },
+    {
+      "id": 6293,
+      "word": "pipeline",
+      "pos": "n.",
+      "phonetic": "[ˋpaɪp͵laɪn]",
+      "definition": "跨國大藥廠後期癌症新藥臨床研發管線",
+      "cefr": "B1",
+      "topic": "研發管線",
+      "examples": [
+        {
+          "en": "The pharmaceutical company boasts a rich pipeline of next-generation bispecific antibodies and mRNA vaccines.",
+          "zh": "這家跨國頂尖大藥廠擁有極其龐大豐富的雙特異性抗體與 mRNA「新藥研發管線」（Development Pipeline）。"
+        },
+        {
+          "en": "Engineers repaired the ruptured municipal pipeline to restore clean drinking water supplies to the township.",
+          "zh": "自來水工務團隊連夜搶修破裂的自來水主幹供水管線，迅速恢復全鄉數萬戶鄉民乾淨充沛的自來水供應。"
+        },
+        {
+          "en": "Building a strong talent pipeline from local universities supplies high-tech firms with skilled coders.",
+          "zh": "積極在各大頂尖大專院校建立穩定的人才培育輸送管道，為在地高科技園區源源不絕注入頂尖編程工程師。"
+        }
+      ],
+      "collocations": [
+        "clinical drug pipeline"
+      ]
+    },
+    {
+      "id": 6294,
+      "word": "patent",
+      "pos": "n., v.",
+      "phonetic": "[ˋpætnt]",
+      "definition": "創新藥物分子結構二十年智慧財產權專利",
+      "cefr": "B1",
+      "topic": "專利保護",
+      "examples": [
+        {
+          "en": "Securing global patent protection protects billions of dollars invested in revolutionary cancer research.",
+          "zh": "取得關鍵化合物全球「智慧財產權專利」（Patent），保護了投入在革命性抗癌研發上的數十億美元心血。"
+        },
+        {
+          "en": "The inventor applied for a utility patent to prevent rival manufacturers from copying her folding scooter design.",
+          "zh": "該發明家為其新型折疊滑板車機構設計申請了新型實用發明專利，全面防止同業競爭對手惡意仿冒抄襲。"
+        },
+        {
+          "en": "When the drug’s primary patent expired, cheaper generic versions flooded the national pharmaceutical market.",
+          "zh": "當該款專利藥的原廠核心專利期滿失效後，價格實惠親民的學名藥迅速進入各大醫療院所與健保體系。"
+        }
+      ],
+      "collocations": [
+        "pharmaceutical compound patent"
+      ]
+    },
+    {
+      "id": 6295,
+      "word": "milestone",
+      "pos": "n.",
+      "phonetic": "[ˋmaɪl͵ston]",
+      "definition": "達成臨床試驗成功救人無數之歷史里程碑",
+      "cefr": "B1",
+      "topic": "里程碑",
+      "examples": [
+        {
+          "en": "Reaching this Phase III milestone marks a transformative leap forward in combating metastatic disease.",
+          "zh": "順利跨過這座第三期臨床試驗「歷史里程碑」（Milestone），標誌著人類對抗轉移性癌症邁出關鍵躍進。"
+        },
+        {
+          "en": "Celebrating our company's tenth anniversary is a proud milestone reflecting a decade of dedication.",
+          "zh": "熱烈歡慶公司成立十週年是一座令人自豪的輝煌里程碑，凝聚了全體員工整整十載的戮力同心與奉獻。"
+        },
+        {
+          "en": "Completing her first marathon was a personal milestone that proved her physical endurance and grit.",
+          "zh": "咬緊牙關跑完人生第一場四十二公里全程馬拉松，是一座完美證明自身體能耐力與堅毅意志的個人里程碑。"
+        }
+      ],
+      "collocations": [
+        "pivotal clinical milestone"
+      ]
+    },
+    {
+      "id": 6296,
+      "word": "hope",
+      "pos": "n. [U], v.",
+      "phonetic": "[hop]",
+      "definition": "為末期癌症患者與家庭重新點燃生命希望",
+      "cefr": "B1",
+      "topic": "生命希望",
+      "examples": [
+        {
+          "en": "Innovative cell therapies restore renewed hope to courageous patients battling terminal diagnoses.",
+          "zh": "創新的活體細胞療法，為勇敢對抗末期絕症的無數病患與家庭重新點燃了「重獲新生的生命希望」（Hope）。"
+        },
+        {
+          "en": "We hope that tomorrow's sunny weather will allow the coastal festival to proceed without delay.",
+          "zh": "我們衷心期盼明天會是個晴空萬里的好天氣，讓期待已久的海濱音樂藝術季能順暢如期舉行。"
+        },
+        {
+          "en": "The birth of newborn giant panda twins brought infectious joy and renewed hope to conservationists worldwide.",
+          "zh": "新生大貓熊雙胞胎幼崽的平安誕生，為全球奮戰在一線的大熊貓保育志工帶來了無比喜悅與希望之光。"
+        }
+      ],
+      "collocations": [
+        "renewed ray of hope"
+      ]
+    },
+    {
+      "id": 6297,
+      "word": "compassion",
+      "pos": "n. [U]",
+      "phonetic": "[kəmˋpæʃən]",
+      "definition": "臨床腫瘤醫師守護病患之無私同理慈悲心",
+      "cefr": "B1",
+      "topic": "醫者仁心",
+      "examples": [
+        {
+          "en": "True medical greatness blends cutting-edge scientific innovation with deep, heartfelt patient compassion.",
+          "zh": "真正偉大的現代醫學，將頂尖尖端科學創新與床邊對病患無微不至的「同理與慈悲仁心」（Compassion）融為一體。"
+        },
+        {
+          "en": "The volunteer hospice worker sat beside the bed, holding the lonely patient’s hand with gentle compassion.",
+          "zh": "安寧病房的愛心志工溫柔坐在病床旁，以滿懷慈悲同理的雙手緊緊握住孤單病患微顫的手心。"
+        },
+        {
+          "en": "Practicing empathy and compassion toward marginalized communities creates a kinder, more inclusive society.",
+          "zh": "在日常生活中對弱勢族群抱持深切同理與慈悲關懷，方能攜手打造一個更加溫暖、包容而美好的文明社會。"
+        }
+      ],
+      "collocations": [
+        "heartfelt doctor compassion"
+      ]
+    },
+    {
+      "id": 6298,
+      "word": "dedication",
+      "pos": "n. [U]",
+      "phonetic": "[͵dɛdəˋkeʃən]",
+      "definition": "醫學科學家從實驗室到病床之無私奉獻",
+      "cefr": "B1",
+      "topic": "無私奉獻",
+      "examples": [
+        {
+          "en": "Decades of tireless laboratory dedication transformed impossible science fiction into life-saving realities.",
+          "zh": "數十年如一日在實驗室長夜中的「無私奉獻與執著」（Dedication），將昔日科幻夢想化為今日救人性命的真實奇蹟。"
+        },
+        {
+          "en": "The veteran teacher received a lifetime achievement award honoring forty years of classroom dedication.",
+          "zh": "默默耕耘講台四十載的資深國小教師榮獲終身教育奉獻獎，表彰其春風化雨、無怨無悔的育人初心。"
+        },
+        {
+          "en": "Her unwavering dedication to perfecting her pastry craft earned her bakery international Michelin acclaim.",
+          "zh": "她對烘焙法式甜點工藝無可救藥的專注與極致奉獻，讓她經營的手工烘焙坊榮獲法國米其林三星殊榮。"
+        }
+      ],
+      "collocations": [
+        "tireless medical research dedication"
+      ]
+    },
+    {
+      "id": 6299,
+      "word": "triumph",
+      "pos": "n. [U], v.",
+      "phonetic": "[ˋtraɪəmf]",
+      "definition": "人類精準醫療對抗惡疾歷史上的偉大勝利",
+      "cefr": "B1",
+      "topic": "醫學勝利",
+      "examples": [
+        {
+          "en": "Eradicating leukemia in thousands of children stands as a monumental triumph of modern medicine.",
+          "zh": "在全球成功治癒數以萬計的白血病重症兒童，是當代精準生物醫學史上最震撼人心的「偉大勝利」（Triumph）。"
+        },
+        {
+          "en": "The underdog soccer team celebrated their hard-fought championship triumph under pouring rain.",
+          "zh": "一路不被外界看好的黑馬足球隊在大雨磅礡中奮戰到最後一秒，在哨音響起時瘋狂慶祝奪冠的輝煌勝利。"
+        },
+        {
+          "en": "Overcoming speech anxiety to deliver an inspiring keynote address was a major personal triumph for him.",
+          "zh": "徹底克服內心深層的公眾演說焦慮並在國際年會上發表振奮人心的專題演講，是他個人成長的重大勝利。"
+        }
+      ],
+      "collocations": [
+        "monumental scientific triumph"
+      ]
+    },
+    {
+      "id": 6300,
+      "word": "healing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhilɪŋ]",
+      "definition": "邁向完全康復、重獲新生之全人身心療癒",
+      "cefr": "B1",
+      "topic": "身心療癒",
+      "examples": [
+        {
+          "en": "Beyond eliminating physical tumor cells, true medicine fosters emotional healing and restores joyful living.",
+          "zh": "除了徹底消滅肉體上的惡性腫瘤細胞，真正的醫道更能撫平心靈創傷，帶來重獲新生的「全人身心療癒」（Healing）。"
+        },
+        {
+          "en": "The soothing thermal hot springs nestled deep in the mist-shrouded valley provided therapeutic body healing.",
+          "zh": "隱匿在雲霧繚繞高山深谷中的天然碳酸溫泉，為長途跋涉的旅人帶來了放鬆肌肉與身心療癒的極致享受。"
+        },
+        {
+          "en": "Forgiving past grievances allowed the estranged sisters to begin a gentle process of emotional healing.",
+          "zh": "學會放下心中陳年的怨懟與執念，讓長年形同陌路的親姊妹終於開啟了彼此打開心結、重歸於好的心靈療癒之旅。"
+        }
+      ],
+      "collocations": [
+        "holistic body and mind healing"
+      ]
+    }
+  ]
+}

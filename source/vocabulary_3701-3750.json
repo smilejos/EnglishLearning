@@ -1,0 +1,1317 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 3,701–3,750 個單字（CEFR B1 中級）",
+  "batch": "3701-3750",
+  "range": "3701–3750",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 3701,
+      "word": "healthcare",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhɛlθˌkɛr]",
+      "definition": "醫療照護；全民健保制度",
+      "cefr": "B1",
+      "topic": "醫療體系",
+      "examples": [
+        {
+          "en": "Taiwan's National Health Insurance (NHI) provides affordable, world-class healthcare.",
+          "zh": "台灣全民健康保險（NHI）為全體國民提供了平價普及且享譽全球的頂級醫療照護。"
+        },
+        {
+          "en": "Access to quality healthcare is a fundamental human right for every citizen.",
+          "zh": "享有優質普及的醫療照護服務是每一位公民不可剝奪的基本人權。"
+        },
+        {
+          "en": "The government increased public spending to improve rural healthcare facilities.",
+          "zh": "政府大幅擴大公共財政投資規模，以全面改善升級偏鄉地區的基層醫療照護硬體設施。"
+        }
+      ],
+      "collocations": [
+        "universal healthcare"
+      ]
+    },
+    {
+      "id": 3702,
+      "word": "outpatient",
+      "pos": "n., adj.",
+      "phonetic": "[ˋaʊt͵peʃənt]",
+      "definition": "門診病患；門診的",
+      "cefr": "B1",
+      "topic": "醫院就醫",
+      "examples": [
+        {
+          "en": "Register online in advance to avoid waiting at the hospital outpatient department.",
+          "zh": "建議提前透過手機網路掛號系統預約，以節省在醫學中心大醫院門診大廳排隊的時間。"
+        },
+        {
+          "en": "Minor cosmetic surgeries are usually performed in outpatient clinics without overnight stays.",
+          "zh": "輕微的醫美整型微創手術通常直接在門診診所進行，術後當天即可返家不需留院過夜。"
+        },
+        {
+          "en": "The outpatient pharmacy dispenses hundreds of prescriptions to visiting patients daily.",
+          "zh": "醫院門診藥局每天為前來回診看診的廣大門診病患調劑並核發數以百計的處方藥物。"
+        }
+      ],
+      "collocations": [
+        "outpatient clinic"
+      ]
+    },
+    {
+      "id": 3703,
+      "word": "inpatient",
+      "pos": "n., adj.",
+      "phonetic": "[ˋɪn͵peʃənt]",
+      "definition": "住院病患；住院部的",
+      "cefr": "B1",
+      "topic": "醫院就醫",
+      "examples": [
+        {
+          "en": "Inpatient wards provide 24-hour nursing care and monitoring after major surgery.",
+          "zh": "現代化住院病房在重大手術後提供二十四小時不間斷的細緻護理照護與生命徵象監測。"
+        },
+        {
+          "en": "The doctor recommended an inpatient stay of at least three days for observation.",
+          "zh": "主治醫師建議病患至少留院住院觀察三天，以便隨時評估術後各項指標恢復狀況。"
+        },
+        {
+          "en": "Inpatient treatment allows medical staff to manage complex infections with intravenous therapies.",
+          "zh": "住院治療能讓專業醫護團隊透過靜脈注射等積極療法，嚴密控管複雜嚴重的全身性感染。"
+        }
+      ],
+      "collocations": [
+        "inpatient care"
+      ]
+    },
+    {
+      "id": 3704,
+      "word": "triage",
+      "pos": "n. [U], v.",
+      "phonetic": "[triˋɑʒ]",
+      "definition": "急診檢傷分類；檢傷分級",
+      "cefr": "B1",
+      "topic": "急診室",
+      "examples": [
+        {
+          "en": "Emergency room nurses perform triage to treat life-threatening traumas immediately.",
+          "zh": "急診室護理師第一時間進行專業檢傷分類，以確保危及生命的重症病患獲得即刻搶救。"
+        },
+        {
+          "en": "Effective emergency triage categorizes arriving patients by medical urgency rather than arrival time.",
+          "zh": "高效的急診檢傷分級制度依據病情的緊急與危急程度排序救治，而非先來後到的排隊順序。"
+        },
+        {
+          "en": "During disaster relief operations, medical triage helps allocate limited resources where most needed.",
+          "zh": "在突發重大災難救援現場，精準的醫療檢傷分類有助於將有限的急救資源集中於最危急者。"
+        }
+      ],
+      "collocations": [
+        "emergency triage"
+      ]
+    },
+    {
+      "id": 3705,
+      "word": "registration",
+      "pos": "n. [U]",
+      "phonetic": "[͵rɛdʒɪˋstreʃən]",
+      "definition": "門診掛號；註冊登記",
+      "cefr": "B1",
+      "topic": "門診流程",
+      "examples": [
+        {
+          "en": "Insert your IC health card into the self-service kiosk to complete clinic registration.",
+          "zh": "將健保 IC 卡插入自助掛號繳費機中，數秒內即可快速完成門診報到與掛號手續。"
+        },
+        {
+          "en": "Patient registration requires verifying personal identification and insurance details.",
+          "zh": "病患初次就醫掛號手續需要現場核對身分證明文件以及健保醫療卡等個人資料。"
+        },
+        {
+          "en": "The clinic's online registration opens every morning at seven o'clock for same-day visits.",
+          "zh": "該名醫診所的線上預約掛號系統於每天清晨七點準時開放當日就診名額搶掛。"
+        }
+      ],
+      "collocations": [
+        "clinic registration"
+      ]
+    },
+    {
+      "id": 3706,
+      "word": "physician",
+      "pos": "n.",
+      "phonetic": "[fɪˋzɪʃən]",
+      "definition": "內科主治醫師；醫師",
+      "cefr": "B1",
+      "topic": "醫事人員",
+      "examples": [
+        {
+          "en": "The attending physician reviewed the laboratory blood panel with the patient.",
+          "zh": "內科主治醫師耐心地向病患逐一解釋各項血液檢驗數值與肝腎功能報告。"
+        },
+        {
+          "en": "You should consult a licensed physician before starting any extreme exercise program.",
+          "zh": "在開展任何高強度的極限體能訓練之前，建議先諮詢專業合格執業醫師的評估建議。"
+        },
+        {
+          "en": "The experienced physician listened patiently to the elderly patient describe her symptoms.",
+          "zh": "這位經驗豐富的資深醫師神態溫和，極有耐心地聆聽年邁阿嬤娓娓道來她身體的種種不適。"
+        }
+      ],
+      "collocations": [
+        "attending physician"
+      ]
+    },
+    {
+      "id": 3707,
+      "word": "specialist",
+      "pos": "n.",
+      "phonetic": "[ˋspɛʃəlɪst]",
+      "definition": "專科醫師；專家",
+      "cefr": "B1",
+      "topic": "醫事人員",
+      "examples": [
+        {
+          "en": "The family doctor referred her to a cardiology specialist for chest palpitations.",
+          "zh": "家醫科醫師為經常感到心悸胸悶的她開立轉診單，轉介至心臟內科專科醫師進一步檢查。"
+        },
+        {
+          "en": "Seeing a medical specialist often requires a formal referral from a general practitioner.",
+          "zh": "前往醫學中心掛號預約專科醫師看診，通常需要基層診所家庭醫師開具的正式轉診單。"
+        },
+        {
+          "en": "An orthopedic specialist examined the athlete's damaged knee using ultrasound scans.",
+          "zh": "骨科運動醫學專科醫師運用高解析度肌肉骨骼超音波，詳細檢查這位運動員受損的膝關節。"
+        }
+      ],
+      "collocations": [
+        "medical specialist"
+      ]
+    },
+    {
+      "id": 3708,
+      "word": "pediatrician",
+      "pos": "n.",
+      "phonetic": "[͵pidɪəˋtrɪʃən]",
+      "definition": "小兒科醫師",
+      "cefr": "B1",
+      "topic": "專科門診",
+      "examples": [
+        {
+          "en": "Pediatricians monitor infant developmental milestones and administer routine vaccines.",
+          "zh": "專業小兒科醫師定期評估嬰幼兒的生長發育里程碑，並按時施打各項公費常規疫苗。"
+        },
+        {
+          "en": "The caring pediatrician comforted the crying toddler with a colorful puppet toy.",
+          "zh": "充滿愛心與耐心的小兒科醫師拿出色彩繽紛的手偶玩偶，輕聲安撫嚎啕大哭的小寶寶。"
+        },
+        {
+          "en": "New parents should choose a reliable pediatrician located close to their home.",
+          "zh": "初為人父母的新手爸媽，在挑選小兒科家庭醫師時最好優先考慮離家近且評價優良的診所。"
+        }
+      ],
+      "collocations": [
+        "certified pediatrician"
+      ]
+    },
+    {
+      "id": 3709,
+      "word": "dermatologist",
+      "pos": "n.",
+      "phonetic": "[͵dɝməˋtɑlədʒɪst]",
+      "definition": "皮膚科醫師",
+      "cefr": "B1",
+      "topic": "專科門診",
+      "examples": [
+        {
+          "en": "Consult a board-certified dermatologist for persistent eczema and allergic rashes.",
+          "zh": "若皮膚出現頑固難纏的濕疹反覆發作或急性過敏紅疹，請儘速諮詢專業皮膚科醫師。"
+        },
+        {
+          "en": "The dermatologist examined the unusual mole on his shoulder to rule out melanoma.",
+          "zh": "皮膚科專科醫師使用皮膚鏡仔細放大檢查他肩膀上形狀異常的黑痣，以排除黑色素瘤。"
+        },
+        {
+          "en": "She visited her dermatologist to receive a customized treatment plan for acne scars.",
+          "zh": "她專程前往皮膚專科診所尋求醫師協助，針對青春痘凹疤量身規劃專屬的雷射修復療程。"
+        }
+      ],
+      "collocations": [
+        "consult a dermatologist"
+      ]
+    },
+    {
+      "id": 3710,
+      "word": "ophthalmologist",
+      "pos": "n.",
+      "phonetic": "[͵ɑfθælˋmɑlədʒɪst]",
+      "definition": "眼科醫師",
+      "cefr": "B1",
+      "topic": "專科門診",
+      "examples": [
+        {
+          "en": "Regular visits to the ophthalmologist detect early glaucoma and macular degeneration.",
+          "zh": "定期至眼科診所接受眼底檢查能及早發現青光眼與黃斑部病變等潛在視力威脅。"
+        },
+        {
+          "en": "The ophthalmologist performed delicate laser eye surgery to correct her severe myopia.",
+          "zh": "眼科名醫親自操刀執行極其精細的飛秒準分子近視雷射手術，一舉矯正了她的高度近視。"
+        },
+        {
+          "en": "Diabetic patients should have their retinas examined annually by an ophthalmologist.",
+          "zh": "糖尿病病友每年皆應至少接受一次眼科專科醫師的散瞳視網膜檢查，防範視網膜病變。"
+        }
+      ],
+      "collocations": [
+        "visit an ophthalmologist"
+      ]
+    },
+    {
+      "id": 3711,
+      "word": "symptom",
+      "pos": "n.",
+      "phonetic": "[ˋsɪmptəm]",
+      "definition": "病徵；症狀",
+      "cefr": "B1",
+      "topic": "疾病診斷",
+      "examples": [
+        {
+          "en": "Common flu symptoms include high fever, body aches, fatigue, and sore throat.",
+          "zh": "流行性感冒的常見典型症狀包含了高燒不退、全身肌肉痠痛、極度倦怠與喉嚨劇痛。"
+        },
+        {
+          "en": "Never ignore persistent abdominal pain as it could be a symptom of appendicitis.",
+          "zh": "萬萬不可輕忽持續不斷的右下腹部隱痛，因為這極可能是急性盲腸炎的典型發病症狀。"
+        },
+        {
+          "en": "Many chronic diseases develop silently without presenting any noticeable early symptoms.",
+          "zh": "許多慢性隱形殺手疾病在發病初期往往悄無聲息，幾乎不表現出任何容易察覺的早期病徵。"
+        }
+      ],
+      "collocations": [
+        "mild symptoms",
+        "severe symptoms"
+      ]
+    },
+    {
+      "id": 3712,
+      "word": "diagnosis",
+      "pos": "n.",
+      "phonetic": "[͵daɪəgˋnosɪs]",
+      "definition": "臨床診斷；診斷結果",
+      "cefr": "B1",
+      "topic": "醫療判讀",
+      "examples": [
+        {
+          "en": "An MRI scan confirmed the accurate diagnosis of a torn knee ligament.",
+          "zh": "核磁共振造影（MRI）掃描結果精準證實了右膝前十字韌帶撕裂傷的明確臨床診斷。"
+        },
+        {
+          "en": "Early cancer diagnosis significantly improves the chances of successful medical treatment.",
+          "zh": "早期精準的癌症確診與篩檢發現，能大幅提高後續標靶與手術治療的五年存活率。"
+        },
+        {
+          "en": "Seeking a second medical opinion helps patients feel confident in their doctor's diagnosis.",
+          "zh": "在面臨重大疾病開刀前尋求第二醫療意見諮詢，能讓病患與家屬對原診斷更具信心與掌握。"
+        }
+      ],
+      "collocations": [
+        "accurate diagnosis"
+      ]
+    },
+    {
+      "id": 3713,
+      "word": "vital signs",
+      "pos": "n. phr.",
+      "phonetic": "[ˋvaɪt! saɪnz]",
+      "definition": "生命徵象（體溫、脈搏、呼吸、血壓）",
+      "cefr": "B1",
+      "topic": "護理監測",
+      "examples": [
+        {
+          "en": "Nurses record vital signs, including body temperature, pulse, and blood pressure.",
+          "zh": "護理人員定時測量並記錄病患的體溫、脈搏跳動、呼吸頻率與血壓等四大生命徵象。"
+        },
+        {
+          "en": "Stable vital signs indicate that the critically ill patient is responding well to treatment.",
+          "zh": "幾項生命徵象數值逐漸回歸穩定正常範圍，表明重症病患對當前的醫療處置反應良好。"
+        },
+        {
+          "en": "Electronic monitors track the patient's vital signs continuously during intensive care.",
+          "zh": "加護病房床頭的高階生理監視器二十四小時即時連線，不分晝夜監測病患各項生命徵象。"
+        }
+      ],
+      "collocations": [
+        "monitor vital signs"
+      ]
+    },
+    {
+      "id": 3714,
+      "word": "stethoscope",
+      "pos": "n.",
+      "phonetic": "[ˋstɛθəˌskop]",
+      "definition": "聽診器",
+      "cefr": "B1",
+      "topic": "醫療器材",
+      "examples": [
+        {
+          "en": "The doctor placed the cold stethoscope on his chest to listen to lung sounds.",
+          "zh": "醫師將聽診器貼在病患胸口與背部，仔細聆聽肺部呼吸音與心臟跳動雜音。"
+        },
+        {
+          "en": "A physician carries a stethoscope around her neck as an indispensable diagnostic tool.",
+          "zh": "每一位內科醫師脖子上總是隨身掛著一副聽診器，作為臨床問診觸診時不可或缺的利器。"
+        },
+        {
+          "en": "Through the stethoscope, the doctor detected a faint heart murmur during the examination.",
+          "zh": "在聽診過程中，醫師透過聽診器靈敏地捕捉到了心臟瓣膜處傳來的一絲微弱心雜音。"
+        }
+      ],
+      "collocations": [
+        "use a stethoscope"
+      ]
+    },
+    {
+      "id": 3715,
+      "word": "inflammation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪnfləˋmeʃən]",
+      "definition": "發炎反應；紅腫發熱",
+      "cefr": "B1",
+      "topic": "生理病理",
+      "examples": [
+        {
+          "en": "Applying an ice pack reduces localized tissue swelling and acute inflammation.",
+          "zh": "在受傷初期適度冰敷能有效緩解局部軟組織腫脹並抑制急性發炎反應。"
+        },
+        {
+          "en": "Chronic systemic inflammation has been linked to heart disease and premature aging.",
+          "zh": "醫學研究證實，人體長期的慢性全身性低度發炎與心血管硬化及早衰現象息息相關。"
+        },
+        {
+          "en": "The doctor prescribed oral anti-inflammatory pills to reduce joint swelling and inflammation.",
+          "zh": "醫師為關節紅腫熱痛的病患開立了口服消炎處方藥物，以抑制局部組織發炎並減緩疼痛。"
+        }
+      ],
+      "collocations": [
+        "chronic inflammation"
+      ]
+    },
+    {
+      "id": 3716,
+      "word": "infection",
+      "pos": "n.",
+      "phonetic": "[ɪnˋfɛkʃən]",
+      "definition": "感染；傳染病",
+      "cefr": "B1",
+      "topic": "疾病類型",
+      "examples": [
+        {
+          "en": "Wash hands thoroughly with soap to prevent seasonal viral respiratory infections.",
+          "zh": "勤用肥皂以「內外夾弓大立腕」正確步驟徹底洗手，能有效阻斷各類呼吸道病毒感染。"
+        },
+        {
+          "en": "The surgical incision showed no signs of redness, drainage, or bacterial infection.",
+          "zh": "術後乾淨平整的手術切口癒合良好，完全沒有出現任何紅腫、滲液或細菌感染的跡象。"
+        },
+        {
+          "en": "An untreated tooth cavity can eventually lead to a painful bacterial root infection.",
+          "zh": "拖延未及時填補治療的嚴重蛀牙齲齒，最終可能引發劇烈疼痛的牙髓壞死與根尖細菌感染。"
+        }
+      ],
+      "collocations": [
+        "bacterial infection",
+        "viral infection"
+      ]
+    },
+    {
+      "id": 3717,
+      "word": "allergic",
+      "pos": "adj.",
+      "phonetic": "[əˋlɝdʒɪk]",
+      "definition": "過敏的；對…過敏的",
+      "cefr": "B1",
+      "topic": "體質反應",
+      "examples": [
+        {
+          "en": "Inform the triage nurse immediately if you are allergic to penicillin antibiotics.",
+          "zh": "若您個人體質對盤尼西林抗生素有過敏病史，請在就醫時第一時間主動告知醫護人員。"
+        },
+        {
+          "en": "She discovered she was severely allergic to shellfish after breaking out in hives.",
+          "zh": "在一次海鮮大餐後全身突然起大片蕁麻疹紅疹，她這才發現自己對甲殼類海鮮嚴重過敏。"
+        },
+        {
+          "en": "Many children are allergic to peanuts and must carry emergency epinephrine injectors.",
+          "zh": "許多歐美學童對花生堅果具有致命性的嚴重過敏反應，上學時背包必須隨身攜帶腎上腺素筆。"
+        }
+      ],
+      "collocations": [
+        "allergic reaction",
+        "be allergic to"
+      ]
+    },
+    {
+      "id": 3718,
+      "word": "asthma",
+      "pos": "n. [U]",
+      "phonetic": "[ˋæzmə]",
+      "definition": "氣喘；哮喘",
+      "cefr": "B1",
+      "topic": "慢性呼吸道",
+      "examples": [
+        {
+          "en": "Keep an emergency bronchodilator inhaler handy if you suffer from chronic asthma.",
+          "zh": "患有慢性氣喘的病友隨身包包內應隨時備妥急救用支氣管擴張吸入劑以防突發發作。"
+        },
+        {
+          "en": "Sudden temperature drops and high humidity can easily trigger acute asthma attacks.",
+          "zh": "換季時劇烈驟降的氣溫以及潮濕空氣中的塵蟎黴菌，極易誘發氣喘患者的急性呼吸道痙攣。"
+        },
+        {
+          "en": "Swimming is considered one of the safest and most beneficial sports for kids with asthma.",
+          "zh": "溫水游泳被全球小兒科醫師公認為最安全、且最能鍛鍊氣喘患童肺活量的優質有氧運動。"
+        }
+      ],
+      "collocations": [
+        "asthma attack",
+        "asthma inhaler"
+      ]
+    },
+    {
+      "id": 3719,
+      "word": "migraine",
+      "pos": "n.",
+      "phonetic": "[ˋmaɪgren]",
+      "definition": "偏頭痛；血管搏動性頭痛",
+      "cefr": "B1",
+      "topic": "常見病痛",
+      "examples": [
+        {
+          "en": "Resting in a dark, quiet room alleviates severe throbbing migraine attacks.",
+          "zh": "在昏暗無聲的安靜房間內閉目靜養能顯著減輕劇烈抽痛的搏動性偏頭痛發作。"
+        },
+        {
+          "en": "Bright flashing lights and intense workplace stress often trigger her painful migraines.",
+          "zh": "刺眼的閃爍強光與高壓窒息的職場工作壓力，往往是誘發她單側搏動性偏頭痛的導火線。"
+        },
+        {
+          "en": "Modern migraine prescription treatments target specific pain receptors to stop episodes early.",
+          "zh": "當代最新一代的偏頭痛處方標靶針劑能專一性阻斷疼痛受體，在發作早期迅速中止劇痛。"
+        }
+      ],
+      "collocations": [
+        "severe migraine"
+      ]
+    },
+    {
+      "id": 3720,
+      "word": "insomnia",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋsɑmnɪə]",
+      "definition": "失眠症；入睡困難",
+      "cefr": "B1",
+      "topic": "睡眠健康",
+      "examples": [
+        {
+          "en": "Reducing blue light screen exposure before bed helps overcome chronic insomnia.",
+          "zh": "睡前一小時停止滑手機、減少螢幕藍光刺激有助於改善長期困擾的失眠症與多夢。"
+        },
+        {
+          "en": "Chronic insomnia can impair memory, weaken the immune system, and increase anxiety.",
+          "zh": "長期為慢性失眠所苦不僅會嚴重削弱大腦記憶力，還會破壞人體免疫系統並加劇焦慮。"
+        },
+        {
+          "en": "She tried herbal chamomile tea and relaxing bedtime reading to manage her insomnia.",
+          "zh": "她嘗試在每晚睡前沖泡一杯溫熱洋甘菊茶並伴著柔和燈光閱讀紙本書，藉此改善失眠難眠。"
+        }
+      ],
+      "collocations": [
+        "suffer from insomnia"
+      ]
+    },
+    {
+      "id": 3721,
+      "word": "hypertension",
+      "pos": "n. [U]",
+      "phonetic": "[͵haɪpɚˋtɛnʃən]",
+      "definition": "高血壓 (High Blood Pressure)",
+      "cefr": "B1",
+      "topic": "慢性疾病",
+      "examples": [
+        {
+          "en": "Managing hypertension requires a low-sodium diet and regular aerobic exercise.",
+          "zh": "控制與改善慢性高血壓需要嚴格落實少鹽低鈉飲食，並配合每週規律的有氧慢跑運動。"
+        },
+        {
+          "en": "Hypertension is known as a silent killer because it often displays no obvious warnings.",
+          "zh": "高血壓常被醫界冠上「隱形殺手」的稱號，因為它在悄悄破壞血管前往往沒有明顯症狀。"
+        },
+        {
+          "en": "Regular morning blood pressure readings help monitor how well hypertension drugs are working.",
+          "zh": "養成每天早晨起床後量測並記錄血壓的良好習慣，能清楚反映降血壓處方藥物的控壓成效。"
+        }
+      ],
+      "collocations": [
+        "treat hypertension"
+      ]
+    },
+    {
+      "id": 3722,
+      "word": "diabetes",
+      "pos": "n. [U]",
+      "phonetic": "[͵daɪəˋbitiz]",
+      "definition": "糖尿病",
+      "cefr": "B1",
+      "topic": "慢性疾病",
+      "examples": [
+        {
+          "en": "Patients with Type 2 diabetes monitor daily fasting blood sugar levels diligently.",
+          "zh": "第二型糖尿病糖友每日皆會自主定時監測空腹血糖數值，並配合醫囑按時服藥。"
+        },
+        {
+          "en": "Maintaining a healthy weight and balanced diet reduces the long-term risk of diabetes.",
+          "zh": "保持理想的健康體態與少糖高纖的均衡飲食，能從根本上顯著降低日後罹患糖尿病的風險。"
+        },
+        {
+          "en": "Diabetes can lead to serious cardiovascular and kidney complications if left unmanaged.",
+          "zh": "糖尿病若長期疏於血糖控制與追蹤，恐會引發全身動脈硬化、視網膜病變及嚴重腎衰竭。"
+        }
+      ],
+      "collocations": [
+        "Type 2 diabetes"
+      ]
+    },
+    {
+      "id": 3723,
+      "word": "insulin",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɪnsəlɪn]",
+      "definition": "胰島素",
+      "cefr": "B1",
+      "topic": "內分泌激素",
+      "examples": [
+        {
+          "en": "The pancreas produces natural insulin to regulate glucose absorption in the blood.",
+          "zh": "人體胰臟會自然分泌胰島素荷爾蒙，以調控血液中葡萄糖的吸收與代謝平衡。"
+        },
+        {
+          "en": "Type 1 diabetics require daily subcutaneous insulin injections to maintain proper health.",
+          "zh": "第一型糖尿病患者由於自體免疫因素無法自行合成胰島素，因此必須終身每日施打皮下胰島素。"
+        },
+        {
+          "en": "Improved insulin sensitivity through strength training helps control post-meal blood spikes.",
+          "zh": "透過每週規律的肌力重量訓練提升全身骨骼肌的胰島素敏感度，有助於平抑飯後血糖飆升。"
+        }
+      ],
+      "collocations": [
+        "insulin injection"
+      ]
+    },
+    {
+      "id": 3724,
+      "word": "cholesterol",
+      "pos": "n. [U]",
+      "phonetic": "[kəˋlɛstəˌrol]",
+      "definition": "膽固醇；血脂肪",
+      "cefr": "B1",
+      "topic": "檢驗指標",
+      "examples": [
+        {
+          "en": "Eating oat bran and leafy vegetables helps lower bad LDL cholesterol levels.",
+          "zh": "多攝取燕麥麩皮與深綠色高纖蔬菜有助於顯著降低血液中壞的低密度脂蛋白膽固醇（LDL）。"
+        },
+        {
+          "en": "Routine annual blood tests measure total cholesterol alongside HDL and LDL readings.",
+          "zh": "每年度的例行體檢抽血項目中，皆會詳細檢驗總膽固醇、高密度好膽固醇與低密度壞膽固醇。"
+        },
+        {
+          "en": "High cholesterol deposits can gradually narrow arteries and increase the risk of heart attacks.",
+          "zh": "過多的壞膽固醇長期沉積在動脈血管內壁上，會使血管逐漸狹窄硬化並大幅增加心肌梗塞風險。"
+        }
+      ],
+      "collocations": [
+        "high cholesterol",
+        "HDL/LDL"
+      ]
+    },
+    {
+      "id": 3725,
+      "word": "prescription",
+      "pos": "n.",
+      "phonetic": "[prɪˋskrɪpʃən]",
+      "definition": "處方箋；醫師處方",
+      "cefr": "B1",
+      "topic": "領藥流程",
+      "examples": [
+        {
+          "en": "Take your electronic prescription to any NHI community pharmacy to collect medicines.",
+          "zh": "憑醫師開立的慢性病連續處方箋可就近至全台任何一家健保特約健保藥局領取原廠藥物。"
+        },
+        {
+          "en": "The doctor wrote a prescription for strong antibiotics to clear up the ear infection.",
+          "zh": "針對嚴重的化膿性中耳炎，主治醫師開具了一張強效抗生素的七天口服處方箋。"
+        },
+        {
+          "en": "In many countries, you cannot buy prescription medications without an authorized doctor's note.",
+          "zh": "在絕大多數法治國家中，若無合格執業醫師親筆開立的正式處方箋，藥局依法不得擅自販售處方藥。"
+        }
+      ],
+      "collocations": [
+        "fill a prescription"
+      ]
+    },
+    {
+      "id": 3726,
+      "word": "prescribe",
+      "pos": "v.",
+      "phonetic": "[prɪˋskraɪb]",
+      "definition": "開立處方；指示用藥",
+      "cefr": "B1",
+      "topic": "醫師動作",
+      "examples": [
+        {
+          "en": "The doctor prescribed a seven-day course of anti-inflammatory medication.",
+          "zh": "醫師為扭傷發炎的病患開立了為期七天的口服非類固醇消炎止痛處方藥物。"
+        },
+        {
+          "en": "Never take medicine that was prescribed for someone else, even if symptoms seem identical.",
+          "zh": "即使身體症狀看似極為相似，也千萬不要擅自吞服醫師開給別人的處方藥品。"
+        },
+        {
+          "en": "The psychiatrist prescribed a mild sleep aid to help the patient through the grieving period.",
+          "zh": "身心科醫師為深陷喪親之痛的病患開立了一劑溫和的助眠藥物，陪伴他度過最艱難的過渡期。"
+        }
+      ],
+      "collocations": [
+        "prescribe medication"
+      ]
+    },
+    {
+      "id": 3727,
+      "word": "pharmacist",
+      "pos": "n.",
+      "phonetic": "[ˋfɑrməsɪst]",
+      "definition": "藥劑師；藥師",
+      "cefr": "B1",
+      "topic": "醫事人員",
+      "examples": [
+        {
+          "en": "The licensed community pharmacist explained proper dosage timings and drug precautions.",
+          "zh": "專業社區健保藥師親切向長輩詳細說明每款藥物的正確服用時間與服藥注意事項。"
+        },
+        {
+          "en": "Ask the duty pharmacist if your cold medication interacts negatively with high blood pressure pills.",
+          "zh": "在購買成藥時，請主動向值班健保藥師諮詢綜合感冒藥是否會與降血壓藥產生交互不良作用。"
+        },
+        {
+          "en": "The hospital pharmacist double-checks every drug interaction before preparing prescriptions.",
+          "zh": "醫學中心的調劑藥師在為住院患者調配藥劑時，會逐一嚴密核對電腦系統上的藥物配伍禁忌。"
+        }
+      ],
+      "collocations": [
+        "registered pharmacist"
+      ]
+    },
+    {
+      "id": 3728,
+      "word": "dosage",
+      "pos": "n.",
+      "phonetic": "[ˋdosɪdʒ]",
+      "definition": "藥物劑量；服藥用量",
+      "cefr": "B1",
+      "topic": "用藥安全",
+      "examples": [
+        {
+          "en": "Strictly follow the recommended medicine dosage; never exceed two tablets per day.",
+          "zh": "請嚴格恪遵藥袋上標註的建議劑量服用，切勿為了求快而自行加倍劑量或超量服用。"
+        },
+        {
+          "en": "The pediatrician calculated the precise liquid medicine dosage based on the toddler's weight.",
+          "zh": "小兒科醫師嚴謹地依據幼兒的體重公斤數，精準換算出口服退燒藥水的毫升數安全劑量。"
+        },
+        {
+          "en": "Doubling your dosage will not speed up recovery and could cause dangerous toxic poisoning.",
+          "zh": "擅自將每次服藥劑量加倍不僅絲毫無法加速病體痊癒，甚至極可能引發嚴重的肝腎藥物中毒。"
+        }
+      ],
+      "collocations": [
+        "recommended dosage"
+      ]
+    },
+    {
+      "id": 3729,
+      "word": "over-the-counter",
+      "pos": "adj. phr.",
+      "phonetic": "[ˋovɚ ðə ˋkaʊntɚ]",
+      "definition": "成藥的；非處方藥的 (OTC)",
+      "cefr": "B1",
+      "topic": "藥品分類",
+      "examples": [
+        {
+          "en": "Mild motion sickness pills are available as over-the-counter (OTC) medicines.",
+          "zh": "針對出海搭船暈船所準備的溫和暈車藥，可在各大屈臣氏等藥妝店直接購買成藥（OTC）。"
+        },
+        {
+          "en": "You can buy common pain relievers and throat lozenges over-the-counter without a prescription.",
+          "zh": "一般常見的溫和退燒止痛錠與薄荷喉糖，在社區藥局皆能免憑醫師處方直接自費購買。"
+        },
+        {
+          "en": "Read the warning label carefully even when taking mild over-the-counter allergy tablets.",
+          "zh": "即使只是自行購買一般溫和的非處方抗過敏成藥服用，服藥前也務必詳閱外盒說明書上的警語。"
+        }
+      ],
+      "collocations": [
+        "over-the-counter drug"
+      ]
+    },
+    {
+      "id": 3730,
+      "word": "antibiotic",
+      "pos": "n., adj.",
+      "phonetic": "[͵æntɪbaɪˋɑtɪk]",
+      "definition": "抗生素；抗菌的",
+      "cefr": "B1",
+      "topic": "藥物種類",
+      "examples": [
+        {
+          "en": "Complete the entire course of antibiotics to prevent drug-resistant bacteria.",
+          "zh": "服用抗生素時請務必遵照醫囑將整組療程全數吃完，切勿自行停藥以防產生抗藥性超級細菌。"
+        },
+        {
+          "en": "Antibiotics are only effective against bacterial infections, not common viral colds.",
+          "zh": "抗生素只對細菌性感染具有殺滅療效，對一般病毒引起的普通感冒完全沒有任何治療作用。"
+        },
+        {
+          "en": "Misusing broad-spectrum antibiotics can disrupt the healthy microflora living inside your digestive tract.",
+          "zh": "濫用廣效型強效抗生素會無差別殺死體內益菌，進而嚴重破壞消化道內脆弱的正常共生菌群。"
+        }
+      ],
+      "collocations": [
+        "course of antibiotics"
+      ]
+    },
+    {
+      "id": 3731,
+      "word": "painkiller",
+      "pos": "n.",
+      "phonetic": "[ˋpen͵kɪlɚ]",
+      "definition": "止痛藥；止痛劑",
+      "cefr": "B1",
+      "topic": "常用藥品",
+      "examples": [
+        {
+          "en": "Non-aspirin painkillers quickly relieve post-dental extraction toothache.",
+          "zh": "拔完智齒麻藥消退後，按時服用非阿斯匹靈止痛藥能迅速緩解傷口劇烈抽痛。"
+        },
+        {
+          "en": "Relying on daily painkillers without addressing underlying chronic pain is hazardous.",
+          "zh": "長期天天依賴強效止痛藥卻從未尋求專科醫師找出疼痛根源，對身體健康極具潛在危害。"
+        },
+        {
+          "en": "The emergency doctor administered an intravenous painkiller to relieve the acute burn trauma.",
+          "zh": "急診室主治醫師立即為遭遇急性大面積燒燙傷的重症患者施打靜脈注射止痛劑以迅速止痛。"
+        }
+      ],
+      "collocations": [
+        "take painkillers"
+      ]
+    },
+    {
+      "id": 3732,
+      "word": "antihistamine",
+      "pos": "n.",
+      "phonetic": "[͵æntɪˋhɪstəmɪn]",
+      "definition": "抗組織胺藥（鼻過敏／蕁麻疹）",
+      "cefr": "B1",
+      "topic": "常用藥品",
+      "examples": [
+        {
+          "en": "Non-drowsy antihistamines effectively stop sneezing and runny noses caused by pollen.",
+          "zh": "新一代不會引起嗜睡的抗組織胺藥物能有效止住因花粉塵蟎引發的打噴嚏與流鼻水。"
+        },
+        {
+          "en": "The doctor prescribed an oral antihistamine to calm an itchy case of hives.",
+          "zh": "醫師為身上冒出大片奇癢難耐蕁麻疹的病患開立了口服抗組織胺，迅速阻斷過敏組織胺釋放。"
+        },
+        {
+          "en": "Take an antihistamine before gardening if you are sensitive to seasonal outdoor allergens.",
+          "zh": "如果你的體質對戶外花粉塵埃極其敏感，在進行庭院園藝修剪花草前可預防性服用抗組織胺。"
+        }
+      ],
+      "collocations": [
+        "non-drowsy antihistamine"
+      ]
+    },
+    {
+      "id": 3733,
+      "word": "ointment",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɔɪntmənt]",
+      "definition": "外用藥膏；消炎軟膏",
+      "cefr": "B1",
+      "topic": "外用藥品",
+      "examples": [
+        {
+          "en": "Apply a thin layer of antibacterial ointment over minor cuts and scrapes.",
+          "zh": "在表皮輕微擦傷破皮傷口處塗抹薄薄一層抗菌消炎藥膏以加速傷口癒合並防感染。"
+        },
+        {
+          "en": "The soothing herbal ointment relieved redness and burning sensation on sunburned shoulders.",
+          "zh": "塗抹這款具有草本清涼舒緩成分的外用凝膠軟膏，迅速撫平了他肩膀上曬傷後的紅腫熱痛。"
+        },
+        {
+          "en": "Wash your hands thoroughly before and after smoothing healing ointment onto skin abrasions.",
+          "zh": "在為皮膚破皮傷口擦抹醫療修復藥膏的前後，請務必先將雙手徹底清潔乾淨以保無菌。"
+        }
+      ],
+      "collocations": [
+        "apply ointment"
+      ]
+    },
+    {
+      "id": 3734,
+      "word": "side effect",
+      "pos": "n. phr.",
+      "phonetic": "[saɪd ɪˋfɛkt]",
+      "definition": "藥物副作用",
+      "cefr": "B1",
+      "topic": "用藥安全",
+      "examples": [
+        {
+          "en": "Minor drowsiness is a common harmless side effect of traditional cold syrups.",
+          "zh": "些微想睡嗜睡是服用傳統綜合感冒止咳糖漿後常見且無害的暫時性副作用。"
+        },
+        {
+          "en": "Always ask your pharmacist about potential side effects when starting new prescription medications.",
+          "zh": "每當開始服用一種全新的處方藥品時，請務必主動向專業藥師詢問可能伴隨的潛在副作用。"
+        },
+        {
+          "en": "The new clinical drug cured the symptoms without causing any adverse side effects.",
+          "zh": "這款全新研發的臨床新藥在成功治癒疾病症狀的同時，幾乎沒有引發任何令人不適的不良反應。"
+        }
+      ],
+      "collocations": [
+        "adverse side effect"
+      ]
+    },
+    {
+      "id": 3735,
+      "word": "drowsy",
+      "pos": "adj.",
+      "phonetic": "[ˋdraʊzɪ]",
+      "definition": "昏昏欲睡的；嗜睡的",
+      "cefr": "B1",
+      "topic": "生理反應",
+      "examples": [
+        {
+          "en": "Avoid operating heavy machinery if your allergy medicine makes you feel drowsy.",
+          "zh": "若您服用的過敏藥物會讓您感到頭暈目眩或昏昏欲睡，請切勿開車上路或操作重型機具。"
+        },
+        {
+          "en": "The warm afternoon sun streaming through the train window made passengers feel pleasantly drowsy.",
+          "zh": "溫暖柔和的午後暖陽透過火車車窗灑落在車廂內，讓疲累的通勤旅客們紛紛感到昏昏欲睡。"
+        },
+        {
+          "en": "If you start to feel drowsy while driving on the highway, pull over at the rest stop immediately.",
+          "zh": "若在高速公路上長途駕駛時開始感到眼皮沉重、睏意來襲，請務必第一時間開進休息站小憩。"
+        }
+      ],
+      "collocations": [
+        "feel drowsy"
+      ]
+    },
+    {
+      "id": 3736,
+      "word": "dizziness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdɪzɪnɪs]",
+      "definition": "頭暈目眩；眩暈感",
+      "cefr": "B1",
+      "topic": "症狀描述",
+      "examples": [
+        {
+          "en": "Sudden postural changes can cause momentary lightheadedness and mild dizziness.",
+          "zh": "久坐或蹲下後突然快速站起身容易引發短暫的姿勢性低血壓與一陣頭暈目眩。"
+        },
+        {
+          "en": "Severe ear infections can disrupt the vestibular balance system, triggering acute dizziness.",
+          "zh": "嚴重的中耳或內耳化膿發炎會嚴重干擾內耳半規管前庭平衡系統，進而誘發急性眩暈天旋地轉。"
+        },
+        {
+          "en": "Sit down immediately if you experience dizziness after exercising under direct hot sunlight.",
+          "zh": "在炎夏烈日下高溫運動後若突然感到一陣眼前發黑或強烈頭暈，請務必立刻坐下休息喝水。"
+        }
+      ],
+      "collocations": [
+        "experience dizziness"
+      ]
+    },
+    {
+      "id": 3737,
+      "word": "nausea",
+      "pos": "n. [U]",
+      "phonetic": "[ˋnɔʃɪə]",
+      "definition": "噁心；反胃想吐感",
+      "cefr": "B1",
+      "topic": "消化症狀",
+      "examples": [
+        {
+          "en": "Sipping warm ginger tea calms morning sickness nausea during pregnancy.",
+          "zh": "孕婦在清晨害喜孕吐時小口飲用溫熱的薑茶能有效舒緩腸胃反胃與噁心不適。"
+        },
+        {
+          "en": "Sea sickness pills help prevent debilitating waves of nausea while sailing in rough waters.",
+          "zh": "提早服用長效暈船藥，能有效防範在狂風巨浪的顛簸航程中一波波襲來的強烈噁心想吐。"
+        },
+        {
+          "en": "The patient complained of intense nausea and stomach cramps after eating contaminated seafood.",
+          "zh": "病患在不慎誤食不新鮮的變質生鮮海產之後，隨即向急診醫師痛苦哭訴劇烈反胃與胃痙攣絞痛。"
+        }
+      ],
+      "collocations": [
+        "feeling of nausea"
+      ]
+    },
+    {
+      "id": 3738,
+      "word": "diarrhea",
+      "pos": "n. [U]",
+      "phonetic": "[͵daɪəˋriə]",
+      "definition": "腹瀉；拉肚子",
+      "cefr": "B1",
+      "topic": "腸胃症狀",
+      "examples": [
+        {
+          "en": "Stay hydrated with oral rehydration salts when suffering from acute diarrhea.",
+          "zh": "罹患急性腸胃炎腹瀉拉肚子時，應適度飲用口服電解質水溶液以防脫水與電解質失衡。"
+        },
+        {
+          "en": "Eating undercooked street food is a frequent cause of traveler's diarrhea.",
+          "zh": "出國在路邊攤大膽食用未徹底煮熟加熱的生冷海鮮肉品，往往是引發旅人嚴重腹瀉的罪魁禍首。"
+        },
+        {
+          "en": "Contact a doctor if severe diarrhea persists for more than two consecutive days.",
+          "zh": "若水瀉拉肚子症狀連續劇烈持續超過四十八小時且未見好轉，應儘速就醫接受止瀉與輸液治療。"
+        }
+      ],
+      "collocations": [
+        "acute diarrhea"
+      ]
+    },
+    {
+      "id": 3739,
+      "word": "sprain",
+      "pos": "n., v.",
+      "phonetic": "[spren]",
+      "definition": "扭傷；扭到關節",
+      "cefr": "B1",
+      "topic": "運動傷害",
+      "examples": [
+        {
+          "en": "The basketball player suffered a Grade 2 ankle sprain after landing awkwardly.",
+          "zh": "這位籃球校隊主力在搶籃板搶下落地不慎踩空，導致右腳踝二級韌帶扭傷。"
+        },
+        {
+          "en": "Follow the R.I.C.E. protocol—Rest, Ice, Compression, and Elevation—immediately after an ankle sprain.",
+          "zh": "關節不慎急性扭傷當下，應立刻恪遵休息、冰敷、壓迫包紮與抬高患部的急救黃金原則處理。"
+        },
+        {
+          "en": "She wore a supportive brace for three weeks to let her severe wrist sprain heal fully.",
+          "zh": "她整整戴了三週具備硬質支撐條的醫療級護腕支架，以確保受傷的手腕韌帶得以徹底癒合。"
+        }
+      ],
+      "collocations": [
+        "ankle sprain"
+      ]
+    },
+    {
+      "id": 3740,
+      "word": "fracture",
+      "pos": "n., v.",
+      "phonetic": "[ˋfræktʃɚ]",
+      "definition": "骨折；骨裂；使斷裂",
+      "cefr": "B1",
+      "topic": "骨科創傷",
+      "examples": [
+        {
+          "en": "X-rays revealed a hairline fracture in his left wrist from the scooter slip.",
+          "zh": "X 光片檢查清晰顯示出他在雨天騎機車打滑摔倒時造成左手腕處有細微骨裂骨折。"
+        },
+        {
+          "en": "A compound bone fracture requires emergency surgical intervention to realign bone fragments.",
+          "zh": "開放性複雜骨折伴隨骨頭刺破皮膚軟組織，必須第一時間送進開刀房進行骨折復位與內固定。"
+        },
+        {
+          "en": "Older adults with advanced osteoporosis face higher risks of debilitating hip fractures.",
+          "zh": "患有嚴重骨質疏鬆症的高齡銀髮長輩在日常生活中若不慎跌倒，極易引發致命的髖關節骨折。"
+        }
+      ],
+      "collocations": [
+        "bone fracture",
+        "hairline fracture"
+      ]
+    },
+    {
+      "id": 3741,
+      "word": "cast",
+      "pos": "n.",
+      "phonetic": "[kæst]",
+      "definition": "骨折石膏固定；模具",
+      "cefr": "B1",
+      "topic": "骨科護理",
+      "examples": [
+        {
+          "en": "The orthopedist fitted a waterproof fiberglass cast to immobilize the broken arm.",
+          "zh": "骨科名醫為病患裝上透氣防水的輕量化玻璃纖維石膏以牢牢固定骨折的手臂。"
+        },
+        {
+          "en": "Friends and classmates covered his white plaster leg cast with colorful signatures and well-wishes.",
+          "zh": "熱情的同班同學與好友們紛紛拿出彩色奇異筆，在他腿上白色的石膏外殼上簽名並寫滿祝福。"
+        },
+        {
+          "en": "Keep your cast clean and completely dry to avoid irritating the healing skin underneath.",
+          "zh": "請務必保持受傷部位固定的石膏內部清潔與乾爽透氣，以防石膏下悶熱引發皮膚濕疹發癢。"
+        }
+      ],
+      "collocations": [
+        "wear a plaster cast"
+      ]
+    },
+    {
+      "id": 3742,
+      "word": "bandage",
+      "pos": "n., v.",
+      "phonetic": "[ˋbændɪdʒ]",
+      "definition": "彈性繃帶；包紮",
+      "cefr": "B1",
+      "topic": "急救護理",
+      "examples": [
+        {
+          "en": "Wrap an elastic compression bandage around the swollen wrist to support recovery.",
+          "zh": "使用透氣彈性壓迫繃帶在腫脹的手腕周圍進行八字包紮固定以輔助組織修復。"
+        },
+        {
+          "en": "Change the sterile wound bandage daily to maintain optimal cleanliness and moisture.",
+          "zh": "每天洗完澡後請定期更換傷口上的無菌防水紗布繃帶，常保傷口處在最佳的乾淨癒合環境。"
+        },
+        {
+          "en": "The paramedic tied a pressure bandage firmly over the deep cut to stop the bleeding.",
+          "zh": "高級救護技術員在第一時間使用彈性壓迫止血繃帶牢牢加壓包紮傷口，迅速止住深層出血。"
+        }
+      ],
+      "collocations": [
+        "elastic bandage"
+      ]
+    },
+    {
+      "id": 3743,
+      "word": "stitches",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋstɪtʃɪz]",
+      "definition": "傷口縫合縫線",
+      "cefr": "B1",
+      "topic": "外科處置",
+      "examples": [
+        {
+          "en": "The ER doctor placed five delicate stitches on her forehead to close the cut.",
+          "zh": "急診外科醫師在女孩額頭傷口處細心縫合了五針美容針，以促進傷口平整對齊。"
+        },
+        {
+          "en": "Return to the hospital outpatient clinic next Wednesday to have your surgical stitches removed.",
+          "zh": "請於下週三上午按時回大醫院外科門診報到拆線，由醫師評估表皮傷口縫線拆除時機。"
+        },
+        {
+          "en": "Modern absorbable internal stitches dissolve naturally inside the body and do not require removal.",
+          "zh": "當前先進外科手術中廣泛採用的可吸收縫線能在體內自然水解吸收，術後完全免除拆線之苦。"
+        }
+      ],
+      "collocations": [
+        "get stitches",
+        "remove stitches"
+      ]
+    },
+    {
+      "id": 3744,
+      "word": "urinalysis",
+      "pos": "n. [U]",
+      "phonetic": "[͵jʊrəˋnæləsɪs]",
+      "definition": "尿液常規檢驗",
+      "cefr": "B1",
+      "topic": "檢驗醫學",
+      "examples": [
+        {
+          "en": "Routine urinalysis screens for urinary tract infections and kidney protein leakage.",
+          "zh": "定期尿液常規檢驗能快速篩檢出潛在的泌尿道細菌感染與早期微量蛋白尿病徵。"
+        },
+        {
+          "en": "Collect a clean midstream urine specimen into the sterile cup for accurate urinalysis.",
+          "zh": "留取尿液檢體時請務必採集乾淨的「中段尿」置入無菌尿杯中，以確保尿液檢驗數據精準無誤。"
+        },
+        {
+          "en": "The doctor ordered a rapid dipstick urinalysis to check for microscopic red blood cells.",
+          "zh": "門診醫師開立了尿液試紙快速常規篩檢檢驗，以排查是否有肉眼不可見的微小潛血紅血球反應。"
+        }
+      ],
+      "collocations": [
+        "routine urinalysis"
+      ]
+    },
+    {
+      "id": 3745,
+      "word": "checkup",
+      "pos": "n.",
+      "phonetic": "[ˋtʃɛkˌʌp]",
+      "definition": "全身健康檢查；例行體檢",
+      "cefr": "B1",
+      "topic": "預防醫學",
+      "examples": [
+        {
+          "en": "Annual comprehensive health checkups detect metabolic risks and silent tumors early.",
+          "zh": "養成每年定期接受全身精密健康檢查的良好習慣能及早揪出代謝異常與無痛早期腫瘤。"
+        },
+        {
+          "en": "Fasting for eight hours before your morning blood draw checkup is mandatory.",
+          "zh": "在前往醫檢中心接受早晨空腹抽血體檢之前，前一晚午夜起嚴格禁食八小時是絕對必要的。"
+        },
+        {
+          "en": "Take your toddler to the pediatric clinic for regular milestone and wellness checkups.",
+          "zh": "請定期帶家中幼兒前往小兒科健康門診接受各個月齡階段的生長里程碑評估與健兒體檢。"
+        }
+      ],
+      "collocations": [
+        "annual health checkup"
+      ]
+    },
+    {
+      "id": 3746,
+      "word": "telemedicine",
+      "pos": "n. [U]",
+      "phonetic": "[͵tɛləˋmɛdəsɪn]",
+      "definition": "通訊診療；遠距醫療照護",
+      "cefr": "B1",
+      "topic": "智慧醫療",
+      "examples": [
+        {
+          "en": "Telemedicine platforms connect isolated offshore island residents to specialists remotely.",
+          "zh": "智慧通訊遠距醫療平台讓澎湖金門等離島偏鄉居民能透過視訊與醫學中心名醫連線看診。"
+        },
+        {
+          "en": "Telemedicine consultations allow elderly patients to speak with doctors without leaving home.",
+          "zh": "普及的通訊診療視訊看診服務讓行動不便的長輩足不出戶，便能在家中直接與專科醫師對談諮詢。"
+        },
+        {
+          "en": "The adoption of secure video telemedicine surged rapidly during global quarantine periods.",
+          "zh": "在全球疫情居家隔離管制期間，具備資安加密保護的遠距雲端看診服務迎來了爆發式的普及。"
+        }
+      ],
+      "collocations": [
+        "telemedicine consultation"
+      ]
+    },
+    {
+      "id": 3747,
+      "word": "confidentiality",
+      "pos": "n. [U]",
+      "phonetic": "[͵kɑnfəˌdɛnʃɪˋælətɪ]",
+      "definition": "醫療保密義務；機密性",
+      "cefr": "B1",
+      "topic": "醫學倫理",
+      "examples": [
+        {
+          "en": "Doctors uphold strict patient medical record confidentiality under the law.",
+          "zh": "全體醫護從業人員依法恪守崇高的希波克拉底誓詞，嚴格保護病患病歷隱私與保密義務。"
+        },
+        {
+          "en": "A breach of medical confidentiality can result in severe legal penalties and license revocation.",
+          "zh": "任何非法洩漏或擅自窺探病患個人醫療病歷隱私的違法行為，皆會面臨巨額罰金與吊銷執照。"
+        },
+        {
+          "en": "All personal health details are handled with the highest level of professional confidentiality.",
+          "zh": "醫療院所對於病患所有的個人健康病況資料與體檢數據，皆採取最高規格的保密機制安全防護。"
+        }
+      ],
+      "collocations": [
+        "patient confidentiality"
+      ]
+    },
+    {
+      "id": 3748,
+      "word": "recovery",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋkʌvərɪ]",
+      "definition": "康復；痊癒；復原",
+      "cefr": "B1",
+      "topic": "預後狀態",
+      "examples": [
+        {
+          "en": "Adequate bed rest and high-protein nutrition speed up post-surgery physical recovery.",
+          "zh": "術後維持充分臥床休養並多補充優質蛋白質滴雞精能顯著加速身體元氣的康復痊癒。"
+        },
+        {
+          "en": "The young athlete made an astounding recovery and returned to the field ahead of schedule.",
+          "zh": "這位年輕運動員展現出超乎常人的頑強意志與驚人復原力，比預期更早重返綠茵球場馳騁。"
+        },
+        {
+          "en": "Physical therapy plays a pivotal role in accelerating functional recovery after knee replacement.",
+          "zh": "術後積極配合專業物理治療師進行功能性復健操，是加速全膝人工關節置換後靈活康復的關鍵。"
+        }
+      ],
+      "collocations": [
+        "speedy recovery",
+        "make a full recovery"
+      ]
+    },
+    {
+      "id": 3749,
+      "word": "wellness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋwɛlnɪs]",
+      "definition": "身心健康；全人福祉",
+      "cefr": "B1",
+      "topic": "健康生活",
+      "examples": [
+        {
+          "en": "Holistic wellness integrates physical fitness, balanced nutrition, and peaceful mindfulness.",
+          "zh": "全方位身心健康福祉完美整合了規律運動、均衡原型飲食與安詳平靜的正念冥想。"
+        },
+        {
+          "en": "The company opened an employee wellness center equipped with a fitness gym and nap pods.",
+          "zh": "幸福企業在總部大樓內打造了員工身心活力健康中心，配備了頂級健身器材與靜音充電睡眠艙。"
+        },
+        {
+          "en": "True wellness encompasses not just the absence of disease, but a vibrant state of mind.",
+          "zh": "真正的全人身心健康境界絕非僅僅代表著身體毫無疾病，更象徵著內心充滿豐盈活力與幸福感。"
+        }
+      ],
+      "collocations": [
+        "physical and mental wellness"
+      ]
+    },
+    {
+      "id": 3750,
+      "word": "gratitude",
+      "pos": "n. [U]",
+      "phonetic": "[ˋgrætəˌtjud]",
+      "definition": "感恩之情；謝忱",
+      "cefr": "B1",
+      "topic": "醫病關係",
+      "examples": [
+        {
+          "en": "Grateful patients wrote heartfelt thank-you cards to nursing staff upon discharge.",
+          "zh": "康復出院的病患在辦理出院手續時親手向辛勞付出的第一線護理團隊致贈手寫感謝卡。"
+        },
+        {
+          "en": "Expressing sincere gratitude to healthcare frontline workers uplifts hospital morale tremendously.",
+          "zh": "社會大眾由衷向默默堅守崗位的第一線醫護人員致上崇高謝意，能為全體醫護士氣帶來巨大溫暖。"
+        },
+        {
+          "en": "Keeping a daily gratitude journal can reshape mental outlook and boost emotional resilience.",
+          "zh": "養成每天睡前在手帳本上記下三件微小幸運與感恩之事的習慣，能重塑正向心態並鍛鍊心理韌性。"
+        }
+      ],
+      "collocations": [
+        "express heartfelt gratitude"
+      ]
+    }
+  ]
+}

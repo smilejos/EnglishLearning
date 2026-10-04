@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 4,951–5,000 個單字（CEFR B1 中級）",
+  "batch": "4951-5000",
+  "range": "4951–5000",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 4951,
+      "word": "intelligence",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋtɛlədʒəns]",
+      "definition": "人工智慧 (AI)；智力；情報",
+      "cefr": "B1",
+      "topic": "核心科技",
+      "examples": [
+        {
+          "en": "Generative artificial intelligence accelerates creative workflows across graphic design, coding, and writing.",
+          "zh": "生成式人工智慧（Generative AI）為平面設計、程式開發與文案寫作等工作流程帶來百倍效率加速。"
+        },
+        {
+          "en": "Psychologists emphasize that emotional intelligence is just as crucial as cognitive intellect for career success.",
+          "zh": "組織心理學專家再三強調，在職場職涯要取得卓越成就，情緒智商（EQ）與認知智力（IQ）同樣不可或缺。"
+        },
+        {
+          "en": "Military intelligence agencies intercepted encrypted satellite transmissions before the planned attack.",
+          "zh": "國防軍事情報單位在敵軍發動預定空襲前夕，及時截獲了數條關鍵的加密衛星通訊電文。"
+        }
+      ],
+      "collocations": [
+        "artificial intelligence (AI)"
+      ]
+    },
+    {
+      "id": 4952,
+      "word": "transformer",
+      "pos": "n.",
+      "phonetic": "[trænsˋfɔrmɚ]",
+      "definition": "Transformer 神經網路架構；變壓器",
+      "cefr": "B1",
+      "topic": "模型架構",
+      "examples": [
+        {
+          "en": "The revolutionary Transformer architecture uses self-attention mechanisms to process sequential text data in parallel.",
+          "zh": "顛覆科技界的 Transformer 神經網路架構，運用自注意力機制實現了海量文本數據的高效平行運算。"
+        },
+        {
+          "en": "A lightning strike destroyed the roadside utility pole transformer, causing a widespread blackout across the district.",
+          "zh": "一道狂暴的雷電瞬間擊中了路旁電線桿上的高壓變壓器，導致整個行政區陷入大規模跳電與漆黑。"
+        },
+        {
+          "en": "Transformer-based language models revolutionized natural language processing and automated machine translation.",
+          "zh": "以 Transformer 為核心架構的大語言模型，徹底顛覆並重構了現代自然語言處理與即時多國語言機器翻譯。"
+        }
+      ],
+      "collocations": [
+        "Transformer architecture"
+      ]
+    },
+    {
+      "id": 4953,
+      "word": "parameter",
+      "pos": "n.",
+      "phonetic": "[pəˋræmətɚ]",
+      "definition": "模型參數規模（如 70B 參數）；參數",
+      "cefr": "B1",
+      "topic": "模型規模",
+      "examples": [
+        {
+          "en": "The open-weight foundation model contains 70 billion parameters, excelling in multi-step logical reasoning.",
+          "zh": "這款七百億參數（70B Parameters）的開源基礎大模型，在多步驟複雜邏輯推理與數學解題上表現優異。"
+        },
+        {
+          "en": "The research committee established strict ethical parameters to govern human clinical trials.",
+          "zh": "人體醫學倫理審查委員會設立了極其嚴謹的試驗參數準則，以全面規範各階段人體臨床試驗。"
+        },
+        {
+          "en": "Programmers can adjust algorithmic temperature parameters to make chatbot responses more creative or deterministic.",
+          "zh": "軟體工程師能透過微調溫度參數（Temperature），讓生成式 AI 聊天機器人的回答變得更加天馬行空或嚴謹確定。"
+        }
+      ],
+      "collocations": [
+        "model parameter count"
+      ]
+    },
+    {
+      "id": 4954,
+      "word": "token",
+      "pos": "n.",
+      "phonetic": "[ˋtokən]",
+      "definition": "算力計費與文本分割符元 (Token)；代幣",
+      "cefr": "B1",
+      "topic": "運算單位",
+      "examples": [
+        {
+          "en": "The advanced language model boasts a 2-million token context window, analyzing entire books in seconds.",
+          "zh": "先進大語言模型支援高達兩百萬 Token 的超長上下文視窗，能在數秒內完整精讀並總結整座圖書館的書籍。"
+        },
+        {
+          "en": "Riders dropped a blue plastic token into the subway turnstile gate before boarding the train.",
+          "zh": "購買單程票的乘客在走進捷運閘門時，依序將藍色感應式塑膠圓形代幣（Token）投入驗票機投幣口。"
+        },
+        {
+          "en": "He gave her a silver charm bracelet as a humble token of appreciation for her unwavering friendship.",
+          "zh": "他親手贈送了一條純銀幸運手鍊給她，作為由衷感謝她多年來始終如一、風雨同舟真摯友誼的微薄心意信物。"
+        }
+      ],
+      "collocations": [
+        "token context window"
+      ]
+    },
+    {
+      "id": 4955,
+      "word": "multimodal",
+      "pos": "adj.",
+      "phonetic": "[͵mʌltɪˋmod!]",
+      "definition": "多模態 AI（整合文字/影像/語音）",
+      "cefr": "B1",
+      "topic": "全能模型",
+      "examples": [
+        {
+          "en": "Next-generation multimodal AI models seamlessly interpret medical scans, spoken doctor notes, and clinical records.",
+          "zh": "次世代多模態 AI 模型能無縫跨界辨識醫學 X 光片、醫師口述錄音語音與病患歷史電子病歷。"
+        },
+        {
+          "en": "The university introduced a multimodal learning curriculum combining podcasts, interactive VR, and printed textbooks.",
+          "zh": "這所創新大學推出了結合 Podcast 音訊、沉浸式 VR 虛擬實境與實體精裝教材的多模態數位學習課程。"
+        },
+        {
+          "en": "Modern autonomous vehicle perception relies on multimodal sensor streams merging lidar points with video frames.",
+          "zh": "當代高階自駕車環境深度感知系統，高度依賴將光達 3D 點雲與高畫質影像串流無縫融合的多模態感測技術。"
+        }
+      ],
+      "collocations": [
+        "multimodal AI model"
+      ]
+    },
+    {
+      "id": 4956,
+      "word": "prompt",
+      "pos": "n., v.",
+      "phonetic": "[prɑmpt]",
+      "definition": "提示詞工程 (Prompt)；促使",
+      "cefr": "B1",
+      "topic": "人機互動",
+      "examples": [
+        {
+          "en": "Mastering prompt engineering techniques helps professionals extract precise, structured answers from AI chatbots.",
+          "zh": "熟練掌握提示詞工程（Prompt Engineering）技巧，能幫助專業工作者引導 AI 產出精準結構化的專業分析。"
+        },
+        {
+          "en": "A sudden spike in international oil prices prompted the airline to introduce fuel surcharges.",
+          "zh": "國際原油期貨價格的瞬間暴漲，促使各大國際航空公司第一時間宣布加徵長程客運燃油附加費。"
+        },
+        {
+          "en": "The prompter whispered the actor's forgotten line from beneath the wooden floorboards just in time.",
+          "zh": "躲在舞台台口提詞小隔間裡的提詞員，在男主角忘詞的驚險瞬間及時輕聲耳語提示了下一句台詞。"
+        }
+      ],
+      "collocations": [
+        "prompt engineering"
+      ]
+    },
+    {
+      "id": 4957,
+      "word": "reasoning",
+      "pos": "n. [U]",
+      "phonetic": "[ˋriznɪŋ]",
+      "definition": "思維鏈深層邏輯推理能力；推理",
+      "cefr": "B1",
+      "topic": "認知能力",
+      "examples": [
+        {
+          "en": "Advanced Chain of Thought reasoning enables AI to break complex programming bugs into solvable micro-steps.",
+          "zh": "導入「思維鏈」（Chain of Thought）深層邏輯推理技術，讓 AI 能將棘手的程式 Bug 拆解為逐步解決的微步驟。"
+        },
+        {
+          "en": "Her sound deductive reasoning persuaded the entire executive board to greenlight the factory expansion.",
+          "zh": "她那無懈可擊的嚴密演繹推理與詳盡市場數據，成功說服了全體董事會成員無異議通過晶圓新廠擴建案。"
+        },
+        {
+          "en": "The judge explained the legal reasoning behind the landmark intellectual property ruling in detail.",
+          "zh": "承審法官在判決書主文中，鉅細靡遺闡明了這起劃時代智慧財產權里程碑判決背後的完整法理邏輯依據。"
+        }
+      ],
+      "collocations": [
+        "Chain of Thought reasoning"
+      ]
+    },
+    {
+      "id": 4958,
+      "word": "hallucination",
+      "pos": "n.",
+      "phonetic": "[hə͵lusnˋeʃən]",
+      "definition": "模型虛構事實之「AI 幻覺」；幻覺",
+      "cefr": "B1",
+      "topic": "準確性控管",
+      "examples": [
+        {
+          "en": "Retrieval-Augmented Generation (RAG) grounds language models in verified facts, drastically reducing AI hallucinations.",
+          "zh": "導入檢索增強生成（RAG）架構以經過驗證的權威知識庫為基準，能從源頭大幅消弭「AI 幻覺」胡言亂語。"
+        },
+        {
+          "en": "Severe dehydration and heatstroke caused the lost desert hiker to suffer visual hallucinations of cold lakes.",
+          "zh": "重度脫水與熱衰竭導致在戈壁沙漠中迷路的登山客眼前產生幻覺，誤以為前方不遠處有清涼澄澈的湖泊。"
+        },
+        {
+          "en": "Fact-checking teams cross-reference AI-generated medical summaries to detect and flag potential data hallucinations.",
+          "zh": "專業事實查核團隊嚴格比對 AI 生成的臨床醫學病歷總結，第一時間揪出並標記任何潛在的數據幻覺錯誤。"
+        }
+      ],
+      "collocations": [
+        "reduce AI hallucinations"
+      ]
+    },
+    {
+      "id": 4959,
+      "word": "tuning",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtjunɪŋ]",
+      "definition": "領域專用模型微調 (Fine-Tuning)；調音",
+      "cefr": "B1",
+      "topic": "客製訓練",
+      "examples": [
+        {
+          "en": "Supervised fine-tuning adapts generic open-source models for highly specialized Taiwanese legal and tax queries.",
+          "zh": "透過高品質監督式微調（Fine-Tuning），能將通用大模型客製化訓練為精通台灣民刑法典與稅務法規的專家。"
+        },
+        {
+          "en": "The certified piano technician spent three hours on precision tuning of the concert grand harp.",
+          "zh": "擁有國家甲級證照的資深調音師花費整整三個小時，在國家音樂廳大鋼琴前進行極其精密的音準微調調音。"
+        },
+        {
+          "en": "Fine-tuning engine valve timing improved both highway fuel economy and acceleration responsiveness.",
+          "zh": "對引擎進排氣門正時與噴油嘴供油曲線進行精密調校微調，同時顯著提升了高速公路油耗表現與加速反應。"
+        }
+      ],
+      "collocations": [
+        "supervised fine-tuning (SFT)"
+      ]
+    },
+    {
+      "id": 4960,
+      "word": "reinforcement",
+      "pos": "n. [U]",
+      "phonetic": "[͵riɪnˋfɔrsmənt]",
+      "definition": "人類反饋強化學習 (RLHF)；強化",
+      "cefr": "B1",
+      "topic": "對齊訓練",
+      "examples": [
+        {
+          "en": "Reinforcement Learning from Human Feedback (RLHF) aligns raw models to be helpful, honest, and harmless.",
+          "zh": "結合人類反饋的強化學習（RLHF）訓練機制，能引導原始模型展現出樂於助人、誠實可信且無害的安全回答。"
+        },
+        {
+          "en": "Positive reinforcement techniques like praise and healthy treats encourage puppies to learn commands quickly.",
+          "zh": "採用口頭稱讚與健康小零食等正向增強強化學習技巧，能有效引導活潑小幼犬在短時間內學會坐下指令。"
+        },
+        {
+          "en": "Engineers installed thick steel carbon-fiber reinforcement jackets around the old bridge piers to resist earthquakes.",
+          "zh": "土木結構工程師在老舊跨河橋樑橋墩外側包裹厚實的高強度碳纖維鋼板補強包覆，以全面抵禦強烈地震考驗。"
+        }
+      ],
+      "collocations": [
+        "reinforcement learning (RLHF)"
+      ]
+    },
+    {
+      "id": 4961,
+      "word": "alignment",
+      "pos": "n. [U]",
+      "phonetic": "[əˋlaɪnmənt]",
+      "definition": "人工智慧價值觀與安全對齊；對齊",
+      "cefr": "B1",
+      "topic": "安全防護",
+      "examples": [
+        {
+          "en": "Strict safety alignment protocols prevent rogue models from generating malicious hacking scripts or bioweapon recipes.",
+          "zh": "嚴謹的 AI 安全對齊（Safety Alignment）準則與防護護欄，嚴格禁止模型生成惡意駭客木馬或危險武器配方。"
+        },
+        {
+          "en": "The mechanic recommended a four-wheel alignment after the car hit a deep curb on the expressway.",
+          "zh": "在車輛高速撞上路旁深坑路緣石後，保養廠技師強烈建議車主立即進廠進行一次標準的底盤四輪定位對齊。"
+        },
+        {
+          "en": "Successful product launches require strategic alignment between marketing campaigns and manufacturing schedules.",
+          "zh": "一項跨國旗艦新品的震撼上市，高度仰賴全球行銷推廣節奏與工廠量產供貨排程之間高度的策略性對齊。"
+        }
+      ],
+      "collocations": [
+        "safety AI alignment"
+      ]
+    },
+    {
+      "id": 4962,
+      "word": "retrieval",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋtriv!]",
+      "definition": "檢索增強生成架構 (RAG)；檢索",
+      "cefr": "B1",
+      "topic": "知識連結",
+      "examples": [
+        {
+          "en": "Enterprise RAG systems connect generative chatbots with internal confidential documents securely.",
+          "zh": "企業級 RAG 檢索增強系統在確保資安不外洩的前提下，讓 AI 助理能即時檢索公司內部機密技術文件庫。"
+        },
+        {
+          "en": "Automated robotic storage systems allow instantaneous package retrieval from thirty-meter tall warehouse shelves.",
+          "zh": "大型智慧立體倉儲全自動天車機器人系統，能以極致速度從三十公尺高的巨型高架貨架上精準取件出庫。"
+        },
+        {
+          "en": "Data retrieval speeds improved tenfold after the database administrator indexed primary customer keys.",
+          "zh": "在資料庫管理師為核心客戶資料表建立主鍵索引後，後端系統的大規模數據檢索調閱速度瞬間飆升十倍。"
+        }
+      ],
+      "collocations": [
+        "information retrieval (RAG)"
+      ]
+    },
+    {
+      "id": 4963,
+      "word": "vector",
+      "pos": "n., adj.",
+      "phonetic": "[ˋvɛktɚ]",
+      "definition": "向量資料庫；語意嵌入向量；向量",
+      "cefr": "B1",
+      "topic": "數據結構",
+      "examples": [
+        {
+          "en": "High-speed vector databases search millions of text embeddings to find semantically relevant answers in milliseconds.",
+          "zh": "高效能向量資料庫（Vector Database）在數毫秒內高速比對數百萬筆語意嵌入向量，秒速找出最精準答案。"
+        },
+        {
+          "en": "In physics, velocity is a vector quantity that specifies both magnitude speed and directional movement.",
+          "zh": "在古典物理力學中，速度是一種包含數值大小與運動行進方向兩大要素的典型向量（Vector）物理量。"
+        },
+        {
+          "en": "Mosquitoes are dangerous biological vectors capable of transmitting dengue fever across tropical regions.",
+          "zh": "白線斑蚊與埃及斑蚊是危險的生物病媒傳播病媒媒介（Vector），在熱帶雨季極易傳播登革熱病毒。"
+        }
+      ],
+      "collocations": [
+        "vector database embedding"
+      ]
+    },
+    {
+      "id": 4964,
+      "word": "agent",
+      "pos": "n.",
+      "phonetic": "[ˋedʒənt]",
+      "definition": "自主執行任務之 AI 智慧代理人；代理",
+      "cefr": "B1",
+      "topic": "代理架構",
+      "examples": [
+        {
+          "en": "Autonomous AI agents independently browse the web, execute terminal commands, and write unit tests to finish goals.",
+          "zh": "自主 AI 智慧代理人（AI Agent）能自行上網搜尋、呼叫終端機指令並編寫單元測試，全自動達成複雜專案目標。"
+        },
+        {
+          "en": "We contacted a licensed real estate agent to help us negotiate the purchase of our first apartment in Banqiao.",
+          "zh": "我們主動委託了一位信譽良好的資深持照不動產經紀人仲介，協助我們在板橋斡旋洽談人生第一間起家厝。"
+        },
+        {
+          "en": "The FBI undercover agent gathered critical evidence to expose the international money laundering syndicate.",
+          "zh": "這位聯邦調查局臥底特工（Agent）冒著生命危險蒐集到了關鍵鐵證，一舉瓦解了龐大的跨國洗錢犯罪集團。"
+        }
+      ],
+      "collocations": [
+        "autonomous AI agent"
+      ]
+    },
+    {
+      "id": 4965,
+      "word": "workflow",
+      "pos": "n.",
+      "phonetic": "[ˋwɝk͵flo]",
+      "definition": "多步驟自主代理工作流程；工作流程",
+      "cefr": "B1",
+      "topic": "自動化模式",
+      "examples": [
+        {
+          "en": "Implementing an agentic workflow with self-reflection loops dramatically increases coding accuracy.",
+          "zh": "建立具備「自我反思與糾錯迴圈」的代理工作流程（Agentic Workflow），能大幅提升自動化寫程式的成功率。"
+        },
+        {
+          "en": "Cloud-based project management boards streamlined our creative agency's weekly design review workflow.",
+          "zh": "導入全雲端專案管理看板工具，顯著簡化並加速了我們設計廣告整合行銷公司的每週提案審核工作流程。"
+        },
+        {
+          "en": "Hospital administrators analyzed patient triage workflows to reduce emergency room waiting times during flu season.",
+          "zh": "醫院高層深入檢視流感好發期間急診室檢傷分類作業流程，全力縮短病患在急診室走廊的候診與處置時間。"
+        }
+      ],
+      "collocations": [
+        "agentic workflow"
+      ]
+    },
+    {
+      "id": 4966,
+      "word": "orchestration",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɔrkɪsˋtreʃən]",
+      "definition": "多代理人協同編排調度；管弦樂編排",
+      "cefr": "B1",
+      "topic": "系統調度",
+      "examples": [
+        {
+          "en": "Complex software migrations require multi-agent orchestration between architect, coder, and security auditor bots.",
+          "zh": "複雜的大型軟體重構仰賴多代理人協同編排調度系統，讓架構師、工程師與資安稽核 AI 機器人分工合作。"
+        },
+        {
+          "en": "The composer earned rave reviews for his lush, imaginative orchestral orchestration of the romantic drama's soundtrack.",
+          "zh": "這位電影配樂大師為這部淒美愛情史詩所編寫的管弦樂總譜編配（Orchestration），獲得了國際樂評一致盛讚。"
+        },
+        {
+          "en": "Kubernetes provides automated container orchestration, scaling web services up or down based on incoming user traffic.",
+          "zh": "Kubernetes 容器化管理平台提供強大的微服務自動化編排調度能力，能依據即時在線流量秒級彈性擴縮容。"
+        }
+      ],
+      "collocations": [
+        "multi-agent orchestration"
+      ]
+    },
+    {
+      "id": 4967,
+      "word": "humanoid",
+      "pos": "adj., n.",
+      "phonetic": "[ˋhjuməˌnɔɪd]",
+      "definition": "具身智慧雙足人形機器人的；人形",
+      "cefr": "B1",
+      "topic": "機器人硬體",
+      "examples": [
+        {
+          "en": "AI-powered humanoid robots learn factory assembly tasks through end-to-end vision-language-action models.",
+          "zh": "搭載具身智慧的大腦人形機器人（Humanoid Robot），能透過「視覺-語言-動作」端對端大模型學會工廠組裝。"
+        },
+        {
+          "en": "Science fiction literature has long explored the philosophical implications of humanoid androids developing self-awareness.",
+          "zh": "經典科幻文學百年來不斷深刻思辨，當擁有人形外表的高等生化機器人萌生自主自我意識時的倫理哲學衝擊。"
+        },
+        {
+          "en": "The humanoid robot mimicked the worker's manual motions to insert small wiring pins into automotive doors.",
+          "zh": "該人形機器人精準模仿資深產線技師的雙手操作路徑，熟練將微型線束插銷插裝入汽車車門內板卡槽中。"
+        }
+      ],
+      "collocations": [
+        "humanoid robot"
+      ]
+    },
+    {
+      "id": 4968,
+      "word": "actuator",
+      "pos": "n.",
+      "phonetic": "[ˋæktʃʊ͵etɚ]",
+      "definition": "機器人高精密關節伺服致動器",
+      "cefr": "B1",
+      "topic": "動力組件",
+      "examples": [
+        {
+          "en": "High-torque rotary actuators embedded in robot joints provide smooth, human-like arm articulation.",
+          "zh": "隱身在機器人各關節處的高扭矩旋轉伺服致動器（Actuator），帶來如真人手臂般滑順細膩的七軸靈活運作。"
+        },
+        {
+          "en": "A faulty pneumatic valve actuator triggered a safety shutdown across the chemical refinery pipe network.",
+          "zh": "一只氣動控制閥門致動器發生機械卡死故障，第一時間觸發了石化煉油廠全區管道安全聯鎖停機機制。"
+        },
+        {
+          "en": "Modern prosthetics utilize lightweight electronic actuators to restore natural walking gaits for amputees.",
+          "zh": "先進智慧仿生義肢配備輕量化微型電子致動器，成功協助截肢患者重新找回自然對稱、穩健流暢的行走步態。"
+        }
+      ],
+      "collocations": [
+        "robotic joint actuator"
+      ]
+    },
+    {
+      "id": 4969,
+      "word": "bipedal",
+      "pos": "adj.",
+      "phonetic": "[baɪˋpɛd!]",
+      "definition": "雙足直立行走運動控制的",
+      "cefr": "B1",
+      "topic": "步態控制",
+      "examples": [
+        {
+          "en": "Advanced bipedal locomotion algorithms keep balancing robots stable across rocky hiking trails and slippery stairs.",
+          "zh": "先進的雙足動態平衡控制演算法，讓直立行走機器人即使踏在碎石登山步道或濕滑樓梯上依然穩如泰山。"
+        },
+        {
+          "en": "Evolutionary biologists regard bipedal walking as a foundational milestone that freed early human hands for tools.",
+          "zh": "演化生物學界公認，直立雙足行走是人類演化史上的核心里程碑，徹底解放了雙手以製造並熟練使用各類工具。"
+        },
+        {
+          "en": "Maintaining upright bipedal posture requires constant micro-adjustments from foot sensors and gyro stabilizers.",
+          "zh": "人形機器人維持直立雙足姿態，需要底部足底壓力感測器與高精度陀螺穩定儀每秒數千次的毫秒微調反饋。"
+        }
+      ],
+      "collocations": [
+        "bipedal locomotion"
+      ]
+    },
+    {
+      "id": 4970,
+      "word": "dexterity",
+      "pos": "n. [U]",
+      "phonetic": "[dɛksˋtɛrətɪ]",
+      "definition": "機器人五指靈巧手之精準度；敏捷",
+      "cefr": "B1",
+      "topic": "抓握能力",
+      "examples": [
+        {
+          "en": "Tactile sensors on artificial fingertips grant robots the dexterity needed to handle fragile raw eggs.",
+          "zh": "機械五指指尖安裝的高靈敏度觸覺感測器，賦予機器人甚至能溫柔捏取生雞蛋而毫無破損的超高靈巧度。"
+        },
+        {
+          "en": "Playing classical violin concertos demands extraordinary finger dexterity and rhythmic discipline.",
+          "zh": "在舞台上演奏高難度的帕格尼尼小提琴協奏曲，極度考驗左手指法疾如閃電的極致敏捷度與節奏定力。"
+        },
+        {
+          "en": "Surgeons undergo years of rigorous laparoscopic simulator training to hone their manual operating dexterity.",
+          "zh": "外科住院醫師必須在腹腔鏡微創手術模擬儀器前苦練數千小時，以淬煉雙手在毫米微觀視野下的精準手術靈巧度。"
+        }
+      ],
+      "collocations": [
+        "robotic hand dexterity"
+      ]
+    },
+    {
+      "id": 4971,
+      "word": "perception",
+      "pos": "n. [U]",
+      "phonetic": "[pɚˋsɛpʃən]",
+      "definition": "空間運算 3D 環境深度感知；感知",
+      "cefr": "B1",
+      "topic": "環境感知",
+      "examples": [
+        {
+          "en": "Spatial computing perception builds dense point clouds, identifying moving humans and forklifts instantly.",
+          "zh": "空間運算環境深度感知系統能即時建構稠密 3D 點雲圖，在數微秒內精準辨識周圍走動的人員與堆高機。"
+        },
+        {
+          "en": "Public perception of electric vehicles improved dramatically as fast-charging infrastructure blanketed highways.",
+          "zh": "隨著國道沿線與市區充電站網絡全面密集普及，一般社會大眾對於電動車實用性的正面認知獲得了顯著提升。"
+        },
+        {
+          "en": "Optical illusions play clever tricks on our visual perception, making flat static lines appear in motion.",
+          "zh": "巧妙設計的視錯覺幾何圖案常常欺騙大腦的視覺感知系統，讓原本靜止不動的二維黑白線條看起來如水波般翻滾。"
+        }
+      ],
+      "collocations": [
+        "3D spatial perception"
+      ]
+    },
+    {
+      "id": 4972,
+      "word": "navigation",
+      "pos": "n. [U]",
+      "phonetic": "[͵nævəˋgeʃən]",
+      "definition": "SLAM 室內自主定位導航；導航",
+      "cefr": "B1",
+      "topic": "自主移動",
+      "examples": [
+        {
+          "en": "Visual SLAM navigation guides warehouse robots through dynamic aisle mazes without painted floor lines.",
+          "zh": "視覺即時定位與建圖（Visual SLAM）自主導航系統，讓智慧搬運機器人無需在地面貼磁條即可穿梭倉儲迷宮。"
+        },
+        {
+          "en": "Early Polynesian navigators mastered celestial navigation across thousands of miles of uncharted Pacific waters.",
+          "zh": "古波里尼西亞航海家精通夜間仰望星宿位置的天文星盤導航技術，指引獨木舟橫越數千浬遼闊未知的太平洋。"
+        },
+        {
+          "en": "The updated GPS smartphone app provided voice-guided turn-by-turn navigation around holiday traffic detours.",
+          "zh": "更新後的智慧手機衛星導航 App 提供清晰的中英文語音逐向指引導航，巧妙避開連續假期國道壅塞車潮。"
+        }
+      ],
+      "collocations": [
+        "autonomous robot navigation"
+      ]
+    },
+    {
+      "id": 4973,
+      "word": "simulation",
+      "pos": "n.",
+      "phonetic": "[͵sɪmjəˋleʃən]",
+      "definition": "物理引擎虛擬模擬環境；模擬",
+      "cefr": "B1",
+      "topic": "虛擬訓練",
+      "examples": [
+        {
+          "en": "Robots train across millions of physics-accurate simulation scenarios in parallel before entering the real world.",
+          "zh": "機器人在正式進入真實世界前，先在超級電腦的物理模擬環境中同步經歷數百萬種意外碰撞情境的極限訓練。"
+        },
+        {
+          "en": "Flight crew recruits logged hundreds of hours inside full-motion cockpit flight simulators before flying actual jets.",
+          "zh": "民航培訓飛行員在正式坐進真實波音客機駕駛艙前，必須在六軸全動式模擬機艙內累積數百小時的模擬飛行時數。"
+        },
+        {
+          "en": "Supercomputer climate simulations forecast typhoon intensity and landfall tracks with unprecedented precision.",
+          "zh": "國家級超級電腦氣象預報物理模擬系統，能以無與倫比的高精確度提前預警強颱的路徑走向與中心最大風速。"
+        }
+      ],
+      "collocations": [
+        "physics simulation platform"
+      ]
+    },
+    {
+      "id": 4974,
+      "word": "inference",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɪnfərəns]",
+      "definition": "邊緣端 AI 模型推論運算；推論",
+      "cefr": "B1",
+      "topic": "晶片運算",
+      "examples": [
+        {
+          "en": "Dedicated Neural Processing Units (NPUs) inside smartphones perform low-power on-device AI inference.",
+          "zh": "智慧手機內建的專屬神經網路處理器（NPU），能在離線狀態下以極低功耗秒速完成端點 AI 推論運算。"
+        },
+        {
+          "en": "Scientists drew the logical inference that liquid water must have shaped the ancient meandering Martian valleys.",
+          "zh": "行星地質學家透過高解析度衛星空拍地貌，作出了水流沖刷的合理推論：火星遠古地表必然曾流淌著滔滔河流。"
+        },
+        {
+          "en": "Optimizing neural network quantization slashes memory bandwidth requirements during real-time model inference.",
+          "zh": "透過低位元模型量化壓縮優化演算法，能大幅削減神經網路模型在邊緣端進行即時推論時的記憶體頻寬負載。"
+        }
+      ],
+      "collocations": [
+        "on-device AI inference"
+      ]
+    },
+    {
+      "id": 4975,
+      "word": "semiconductor",
+      "pos": "n.",
+      "phonetic": "[͵sɛmɪkənˋdʌktɚ]",
+      "definition": "台灣半導體護國神山產業；半導體",
+      "cefr": "B1",
+      "topic": "晶圓製造",
+      "examples": [
+        {
+          "en": "Taiwan’s world-leading semiconductor foundries manufacture the advanced 3nm chips powering global AI servers.",
+          "zh": "台灣享譽全球的半導體晶圓製造生態系（如台積電），為全世界各大 AI 超級伺服器代工最先進的三奈米晶片。"
+        },
+        {
+          "en": "Silicon remains the foundation of modern electronics, although wide-bandgap semiconductors like SiC are growing rapidly.",
+          "zh": "矽晶圓始終是當代半導體微電子的核心基石，然而碳化矽（SiC）等第三代寬能隙半導體材料正強勢崛起。"
+        },
+        {
+          "en": "A global semiconductor shortage in 2021 forced automotive assembly plants worldwide to pause vehicle assembly lines.",
+          "zh": "二零二一年爆發的全球車用半導體晶片大缺荒，一度迫使歐美各大汽車製造廠全面暫停新車生產線運轉。"
+        }
+      ],
+      "collocations": [
+        "semiconductor foundry"
+      ]
+    },
+    {
+      "id": 4976,
+      "word": "accelerator",
+      "pos": "n.",
+      "phonetic": "[ækˋsɛlə͵retɚ]",
+      "definition": "AI 算力硬體加速晶片；油門踏板",
+      "cefr": "B1",
+      "topic": "硬體加速",
+      "examples": [
+        {
+          "en": "Liquid-cooled GPU accelerators process billions of mathematical matrix multiplications per microsecond.",
+          "zh": "水冷散熱架構的 GPU 硬體加速晶片（Accelerator），每微秒能完成數以千億次的張量矩陣乘法運算。"
+        },
+        {
+          "en": "Pressing gently on the accelerator pedal propelled the electric vehicle down the freeway onramp effortlessly.",
+          "zh": "腳掌輕踩純電動車的電能加速踏板（油門），車輛瞬間爆發出充沛動力，輕盈流暢匯入國道匝道車流。"
+        },
+        {
+          "en": "Particle physicists smash subatomic protons together at near-light speeds inside the Large Hadron Collider accelerator.",
+          "zh": "粒子物理學家在周長二十七公里的大型強子對撞機加速器內，將次原子質子加速至接近光速並猛烈撞擊。"
+        }
+      ],
+      "collocations": [
+        "AI hardware accelerator"
+      ]
+    },
+    {
+      "id": 4977,
+      "word": "compute",
+      "pos": "n. [U]",
+      "phonetic": "[kəmˋpjut]",
+      "definition": "國家級超級 AI 龐大算力資源；計算",
+      "cefr": "B1",
+      "topic": "算力資源",
+      "examples": [
+        {
+          "en": "Massive supercomputing compute clusters are the lifeblood required to train trillion-parameter frontier models.",
+          "zh": "由數萬張頂級晶片組成的巨型高效能算力叢集（Compute），是訓練兆級參數前沿旗艦大模型的必備基石。"
+        },
+        {
+          "en": "Researchers submitted a formal proposal requesting access to national supercomputing compute cycles for drug discovery.",
+          "zh": "國家衛生研究院生醫研發團隊正式遞交專案計畫，申請使用國家級高速超級電腦中心的龐大算力資源進行新藥合成。"
+        },
+        {
+          "en": "As artificial neural networks scale up, access to affordable clean energy and scalable compute determines AI leadership.",
+          "zh": "隨著深度神經網絡規模持續指數級膨脹，能否取得充沛廉價的綠色電能與可彈性擴充的高效算力將決定科技話語權。"
+        }
+      ],
+      "collocations": [
+        "supercomputing AI compute"
+      ]
+    },
+    {
+      "id": 4978,
+      "word": "immersion",
+      "pos": "n. [U]",
+      "phonetic": "[ɪˋmɝʃən]",
+      "definition": "資料中心全浸沒式液冷散熱；沉浸",
+      "cefr": "B1",
+      "topic": "綠色散熱",
+      "examples": [
+        {
+          "en": "Direct-to-chip and two-phase immersion cooling slash data center electricity consumption by thirty percent.",
+          "zh": "導入雙相「浸沒式液冷散熱」（Immersion Cooling）技術，能將龐大 AI 資料中心的冷卻耗電量一口氣大降三成。"
+        },
+        {
+          "en": "Total language immersion in a local homestay is recognized as the fastest way to achieve conversational fluency.",
+          "zh": "全天候與在地寄宿家庭同住的全沉浸式語言學習環境，被公認為能在短時間內說出一口道地流利外語的最好方法。"
+        },
+        {
+          "en": "The high-density AI server chassis is fully submerged in non-conductive synthetic dielectric fluid for silent immersion cooling.",
+          "zh": "高功率密度 AI 超級伺服器主機板完全浸泡於不導電的專用合成介電冷卻液中，實現無風扇極致靜音液冷散熱。"
+        }
+      ],
+      "collocations": [
+        "liquid immersion cooling"
+      ]
+    },
+    {
+      "id": 4979,
+      "word": "automation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɔtəˋmeʃən]",
+      "definition": "認知型辦公室全自動化；自動化",
+      "cefr": "B1",
+      "topic": "生產力躍升",
+      "examples": [
+        {
+          "en": "Intelligent workflow automation frees administrative workers from repetitive data entry, boosting creativity.",
+          "zh": "導入智慧流程自動化（Automation）能將上班族從繁瑣重複的貼表格工作中解脫，將精力投注於高價值創新。"
+        },
+        {
+          "en": "Factory floor automation utilizes robotic arms and automated guided vehicles to assemble laptops twenty-four hours a day.",
+          "zh": "智慧工廠產線自動化透過六軸機械手臂與無軌 AGV 無人搬運車，全天候二十四小時不間斷精準組裝筆記型電腦。"
+        },
+        {
+          "en": "Fears that office automation will cause mass structural unemployment have prompted renewed calls for workforce retraining.",
+          "zh": "針對辦公室白領自動化浪潮恐將引發結構性失業的普遍焦慮，產官學界紛紛大力疾呼應全面加速推動全民在職數位再培訓。"
+        }
+      ],
+      "collocations": [
+        "intelligent workflow automation"
+      ]
+    },
+    {
+      "id": 4980,
+      "word": "copilot",
+      "pos": "n.",
+      "phonetic": "[ˋko͵paɪlət]",
+      "definition": "AI 協同編程與辦公助理 (Copilot)",
+      "cefr": "B1",
+      "topic": "生產力工具",
+      "examples": [
+        {
+          "en": "The AI coding copilot suggests optimal code completions, reducing software development cycles in half.",
+          "zh": "具備深度學習能力的 AI 程式碼協同夥伴（Copilot），能即時預測並生成函式，將軟體開發週期直接縮短一半。"
+        },
+        {
+          "en": "The attentive copilot took over airplane flight controls while the captain reviewed weather radar reports.",
+          "zh": "在正機長全神貫注研讀氣象雷達強對流雲團回波圖時，訓練有素的副駕駛（Copilot）沉著接手了客機的飛行姿態操控。"
+        },
+        {
+          "en": "Having an intelligent AI copilot draft email summaries and organize meetings saves managers hours each morning.",
+          "zh": "擁有一個能秒速自動彙整落落長 Email 摘要並智慧安排行事曆的 AI 辦公協作助手，每天為高階主管省下數小時。"
+        }
+      ],
+      "collocations": [
+        "AI programming copilot"
+      ]
+    },
+    {
+      "id": 4981,
+      "word": "synthesis",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɪnθəsɪs]",
+      "definition": "擬真語音合成技術 (TTS)；綜合",
+      "cefr": "B1",
+      "topic": "語音生成",
+      "examples": [
+        {
+          "en": "Neural speech synthesis produces expressive, natural-sounding voiceovers indistinguishable from human actors.",
+          "zh": "神經網路語音合成技術（Speech Synthesis）能生成抑揚頓挫、富含細膩情感且宛如真人配音員的原生語音。"
+        },
+        {
+          "en": "Photosynthesis in green plant leaves converts solar light, water, and atmospheric carbon dioxide into glucose.",
+          "zh": "綠色植物葉綠體中的光合作用（Photosynthesis），能將燦爛太陽光能、水分與大氣二氧化碳轉化為生命所需的葡萄糖。"
+        },
+        {
+          "en": "The historian’s masterwork presented an impressive synthesis of archival court diaries and archeological findings.",
+          "zh": "這位歷史學巨擘的畢生巔峰傳世代表作，將清代宮廷起居注密檔與最新出土考古文物進行了極為宏大的學術綜合整合。"
+        }
+      ],
+      "collocations": [
+        "neural speech synthesis"
+      ]
+    },
+    {
+      "id": 4982,
+      "word": "tracking",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtrækɪŋ]",
+      "definition": "多目標即時動態追蹤；追蹤",
+      "cefr": "B1",
+      "topic": "視覺分析",
+      "examples": [
+        {
+          "en": "Computer vision systems perform real-time multi-object tracking to analyze pedestrian flows at busy intersections.",
+          "zh": "電腦視覺辨識系統具備即時多目標動態追蹤（Tracking）能力，能在複雜十字路口精準分析人流動線。"
+        },
+        {
+          "en": "Customers entered the parcel tracking number on the courier website to check estimated delivery times.",
+          "zh": "網購消費者在黑貓宅急便貨件追蹤查詢官網上輸入十碼包裹快遞單號，隨時掌握網購商品預定配送抵達時程。"
+        },
+        {
+          "en": "Wildlife biologists attached miniature GPS tracking collars to Formosan sika deer to map migration territories.",
+          "zh": "野生動物保育生物學家為野放的台灣梅花鹿配戴輕量化 GPS 衛星追蹤項圈，以精確繪製鹿群季節性遷徙活動範圍。"
+        }
+      ],
+      "collocations": [
+        "multi-object tracking"
+      ]
+    },
+    {
+      "id": 4983,
+      "word": "diffusion",
+      "pos": "n. [U]",
+      "phonetic": "[dɪˋfjuʒən]",
+      "definition": "影像生成潛在擴散模型 (Diffusion)",
+      "cefr": "B1",
+      "topic": "生成模型",
+      "examples": [
+        {
+          "en": "Latent diffusion models denoise random pixel static into stunning photorealistic digital artwork.",
+          "zh": "潛在擴散模型（Diffusion Model）透過逐步去除隨機像素雜訊，能在數秒內生成令人驚嘆的照片級數位藝術畫作。"
+        },
+        {
+          "en": "The gentle diffusion of lavender essential oil through the ultrasonic diffuser filled the bedroom with a soothing scent.",
+          "zh": "透過超音波精油水氧機在空中輕柔擴散（Diffusion）出純天然薰衣草芬芳，為臥房營造出舒緩放鬆的助眠氛圍。"
+        },
+        {
+          "en": "Economists study the cross-border cultural and technological diffusion of innovation across developing nations.",
+          "zh": "總體經濟學家深入研究前瞻生產技術與現代制度在不同開發中國家之間的跨國界文化與科技擴散擴散擴散歷程。"
+        }
+      ],
+      "collocations": [
+        "latent diffusion model"
+      ]
+    },
+    {
+      "id": 4984,
+      "word": "copyright",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɑpɪ͵raɪt]",
+      "definition": "AI 訓練著作權保護；智慧財產權",
+      "cefr": "B1",
+      "topic": "法律規範",
+      "examples": [
+        {
+          "en": "Legal scholars debate whether training large models on public websites constitutes copyright fair use.",
+          "zh": "法律學者與法官深入辯論在大規模抓取公開網路文章與插畫訓練大模型時，是否構成著作權法上的「合理使用」。"
+        },
+        {
+          "en": "The novelist registered her best-selling fantasy manuscript with the federal copyright office.",
+          "zh": "這位當紅奇幻小說作家在長篇手稿出版前夕，依法前往智慧財產局辦理了完整的著作權版權註冊登記。"
+        },
+        {
+          "en": "Unauthorized downloading or public broadcasting of commercial movies constitutes severe copyright infringement.",
+          "zh": "任何未經授權在公開場所播映未授權商業院線電影或非法重製販售之行為，皆構成嚴重的著作權侵害刑事罪責。"
+        }
+      ],
+      "collocations": [
+        "copyright infringement"
+      ]
+    },
+    {
+      "id": 4985,
+      "word": "watermark",
+      "pos": "n.",
+      "phonetic": "[ˋwɔtɚˌmɑrk]",
+      "definition": "C2PA 防偽數位內容浮水印",
+      "cefr": "B1",
+      "topic": "內容溯源",
+      "examples": [
+        {
+          "en": "Cryptographic digital watermarks help viewers identify AI-generated news photos and deepfake videos instantly.",
+          "zh": "在圖片與影片中嵌入無法肉眼抹除的密碼學數位浮水印（Digital Watermark），能讓大眾秒辨是否為 AI 生成。"
+        },
+        {
+          "en": "Authentic hundred-dollar banknotes feature a hidden watermark portrait visible only when held up to the light.",
+          "zh": "正版新台幣千元大鈔在透光檢驗時，票面空白處會清晰浮現出具有層次防偽特徵的帝雉水印浮水印圖案。"
+        },
+        {
+          "en": "The preview PDF document had an opaque grey 'CONFIDENTIAL' watermark printed across every single page.",
+          "zh": "這份供內部傳閱審閱的機密 PDF 草案檔案，每一頁正中央皆以半透明大字斜印著「內部機密」灰色浮水印字樣。"
+        }
+      ],
+      "collocations": [
+        "invisible digital watermark"
+      ]
+    },
+    {
+      "id": 4986,
+      "word": "deepfake",
+      "pos": "n., adj.",
+      "phonetic": "[ˋdip͵fek]",
+      "definition": "深度偽造影音 (Deepfake)；變臉",
+      "cefr": "B1",
+      "topic": "防詐安全",
+      "examples": [
+        {
+          "en": "Banks deploy anti-spoofing biometrics to detect manipulated deepfake video calls used by scammers.",
+          "zh": "銀行資安中心全面升級活體防偽演算法，嚴防詐騙集團利用 AI 換臉「深度偽造」（Deepfake）冒充親友騙錢。"
+        },
+        {
+          "en": "Cybercriminals used synthetic deepfake audio cloning the CEO's voice to authorize an illegal wire transfer.",
+          "zh": "跨國跨國網路犯罪集團利用幾秒鐘語音樣本合成出仿真度極高的執行長變聲聲音，誘騙財務人員海外匯款。"
+        },
+        {
+          "en": "New criminal statutes impose severe prison sentences for creating non-consensual deepfake pornography.",
+          "zh": "立法院通過最新刑法修正案，針對惡意製造與散布未經當事人同意之深度偽造性私密影像者，處以嚴厲徒刑懲處。"
+        }
+      ],
+      "collocations": [
+        "deepfake video scam"
+      ]
+    },
+    {
+      "id": 4987,
+      "word": "governance",
+      "pos": "n. [U]",
+      "phonetic": "[ˋgʌvɚnəns]",
+      "definition": "人工智慧倫理治理與法規；管理",
+      "cefr": "B1",
+      "topic": "政策法規",
+      "examples": [
+        {
+          "en": "International AI governance frameworks establish safety standards for high-risk autonomous systems.",
+          "zh": "國際組織全面制定「人工智慧治理」（AI Governance）框架，針對自駕車與醫療高風險領域設立嚴格安全紅線。"
+        },
+        {
+          "en": "Strong corporate governance and independent board oversight protect minority shareholder investments.",
+          "zh": "健全規範的公司治理制度與具備超然獨立性的獨立董事監督機制，能切實保護廣大小股東的合法投資權益。"
+        },
+        {
+          "en": "Transparent public governance builds long-term civic trust between democratic institutions and citizens.",
+          "zh": "公開透明的公共治理方針與開放政府資訊平台，是建立民主憲政體制與全體公民之間深厚信任的堅實基石。"
+        }
+      ],
+      "collocations": [
+        "ethical AI governance"
+      ]
+    },
+    {
+      "id": 4988,
+      "word": "democratization",
+      "pos": "n. [U]",
+      "phonetic": "[dɪ͵mɑkrətəˋzeʃən]",
+      "definition": "開源大模型技術普及民主化",
+      "cefr": "B1",
+      "topic": "開源文化",
+      "examples": [
+        {
+          "en": "Open-source weights foster the democratization of AI, allowing researchers worldwide to build customized tools.",
+          "zh": "開源大模型權重的普及推動了「AI 技術民主化」（Democratization），讓各國學生與新創皆能站在巨人的肩膀上。"
+        },
+        {
+          "en": "The invention of the printing press catalyzed the democratization of religious texts and scientific knowledge across Europe.",
+          "zh": "活字印刷術的發明點燃了歐洲文藝復興與宗教改革的星火，推動了聖經文本與近代自然科學知識的全民普及化。"
+        },
+        {
+          "en": "Low-cost stock trading mobile apps led to the rapid democratization of personal retail investing.",
+          "zh": "免手續費零股交易智慧手機 App 的蓬勃興起，推動了過往專屬於富裕階層的金融資本市場個人投資普及化。"
+        }
+      ],
+      "collocations": [
+        "democratization of technology"
+      ]
+    },
+    {
+      "id": 4989,
+      "word": "augmented",
+      "pos": "adj.",
+      "phonetic": "[ɔgˋmɛntɪd]",
+      "definition": "增強型智慧 (人機協同發揮) 的",
+      "cefr": "B1",
+      "topic": "人機哲學",
+      "examples": [
+        {
+          "en": "Augmented intelligence emphasizes empowering humans with AI insights rather than replacing human workers.",
+          "zh": "「增強型智慧」（Augmented Intelligence）的核心哲學，在於以 AI 作為人類智慧的延伸放大器，而非取代人類。"
+        },
+        {
+          "en": "Factory technicians wear augmented reality smart glasses displaying real-time wiring diagrams over jet engines.",
+          "zh": "航太維修廠工程師配戴 AR 擴增實境智慧眼鏡，直接在飛機噴射引擎實體上方疊加顯示即時維修電路圖指引。"
+        },
+        {
+          "en": "The mobile game introduced an augmented reality mode that lets players hunt virtual monsters in city parks.",
+          "zh": "這款風靡全球的寶可夢手機遊戲推出了擴增實境抓寶模式，讓玩家能在真實都市公園綠地捕捉虛擬怪獸。"
+        }
+      ],
+      "collocations": [
+        "augmented intelligence"
+      ]
+    },
+    {
+      "id": 4990,
+      "word": "synergy",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɪnɚdʒɪ]",
+      "definition": "人機協作發揮無窮綜效；加乘效果",
+      "cefr": "B1",
+      "topic": "協同效益",
+      "examples": [
+        {
+          "en": "The ultimate synergy between human intuition and machine speed produces unprecedented scientific breakthroughs.",
+          "zh": "人類深邃的直覺創造力與機器閃電般的超強算力形成完美協作綜效（Synergy），引領前所未有的科學突破。"
+        },
+        {
+          "en": "The strategic merger between both tech giants yielded powerful commercial synergy across hardware and software.",
+          "zh": "這兩家科技龍頭企業之間的策略性換股合併，在硬體晶片製造與雲端軟體生態系統之間發揮了強大的商業加乘綜效。"
+        },
+        {
+          "en": "Cross-departmental collaboration between marketing and engineering created unexpected creative synergy.",
+          "zh": "行銷公關部門與第一線軟體研發團隊定期舉辦的跨部門交流工作坊，激盪出令人驚喜的產品創意綜效。"
+        }
+      ],
+      "collocations": [
+        "powerful human-AI synergy"
+      ]
+    },
+    {
+      "id": 4991,
+      "word": "exponential",
+      "pos": "adj.",
+      "phonetic": "[͵ɛkspoˋnɛnʃəl]",
+      "definition": "指數型爆發飛躍成長的",
+      "cefr": "B1",
+      "topic": "發展趨勢",
+      "examples": [
+        {
+          "en": "Computing power and model capabilities are advancing at an exponential pace every twelve months.",
+          "zh": "人工智慧算力規模與多模態模型推理能力，正以每隔十二個月翻倍的「指數型飛躍」（Exponential）速度演進。"
+        },
+        {
+          "en": "Viral social media adoption generated exponential revenue growth for the direct-to-consumer skincare startup.",
+          "zh": "短影音社群平台上的病毒式口碑瘋傳，為這家美妝新創品牌帶來了營收呈指數型爆發式成長的驚人奇蹟。"
+        },
+        {
+          "en": "Unchecked compound interest can transform modest monthly savings into an exponential long-term retirement nest egg.",
+          "zh": "長期不間斷投入穩健標的所產生的複利加乘效應，能將每月定時定額的微薄儲蓄滾動為龐大驚人的長遠退休金。"
+        }
+      ],
+      "collocations": [
+        "exponential growth rate"
+      ]
+    },
+    {
+      "id": 4992,
+      "word": "literacy",
+      "pos": "n. [U]",
+      "phonetic": "[ˋlɪtərəsɪ]",
+      "definition": "全民必備數位與 AI 核心素養",
+      "cefr": "B1",
+      "topic": "核心素養",
+      "examples": [
+        {
+          "en": "Fostering digital and AI literacy in primary schools prepares the next generation for future workplaces.",
+          "zh": "在國民教育中及早扎根培養全民「AI 核心素養」（AI Literacy），能讓下一代在未來職場中游刃有餘。"
+        },
+        {
+          "en": "Community libraries offer free weekend computing workshops to boost technological literacy among seniors.",
+          "zh": "各地市立圖書館每逢週末開設免費樂齡電腦平板教學課程，積極提升社區銀髮長輩的日常數位科技素養。"
+        },
+        {
+          "en": "Financial literacy classes teach high school teenagers budgeting, credit card traps, and long-term investing principles.",
+          "zh": "青年理財教育課程向高中學子循序漸進解說收支記帳預算、信用卡循環利息陷阱與定期定額長期投資核心概念。"
+        }
+      ],
+      "collocations": [
+        "digital and AI literacy"
+      ]
+    },
+    {
+      "id": 4993,
+      "word": "paradigm",
+      "pos": "n.",
+      "phonetic": "[ˋpærə͵daɪm]",
+      "definition": "科技歷史重大典範轉移；範例",
+      "cefr": "B1",
+      "topic": "產業變革",
+      "examples": [
+        {
+          "en": "Foundation models represent a monumental paradigm shift in how software applications are architected.",
+          "zh": "基礎大語言模型的橫空出世，代表了人類軟體架構設計與人機互動歷史上最壯闊的一場「典範轉移」。"
+        },
+        {
+          "en": "The shift from physical film cameras to digital sensors was a monumental paradigm shift in photography.",
+          "zh": "從傳統銀鹽感光膠捲底片全面跨入數位 CMOS 感光元件的劃時代變革，是整個二十世紀攝影史上最波瀾壯闊的典範轉移。"
+        },
+        {
+          "en": "Quantum computing will introduce an entirely new computational paradigm that surpasses classical physics.",
+          "zh": "量子運算的成熟將引領人類跨入跳脫傳統二進位邏輯的全新運算典範，徹底超越古典物理電腦極限。"
+        }
+      ],
+      "collocations": [
+        "monumental paradigm shift"
+      ]
+    },
+    {
+      "id": 4994,
+      "word": "empower",
+      "pos": "v.",
+      "phonetic": "[ɪmˋpaʊɚ]",
+      "definition": "賦能每個人實現夢想；授權",
+      "cefr": "B1",
+      "topic": "賦能精神",
+      "examples": [
+        {
+          "en": "Modern technology should empower teachers, doctors, and students to accomplish their highest potentials.",
+          "zh": "現代科技最崇高的目標，在於實質賦能（Empower）每一位教師、醫師與學子，讓他們充分發揮最大潛能。"
+        },
+        {
+          "en": "Micro-loans empower women in rural farming cooperatives to launch sustainable village businesses.",
+          "zh": "鄉村微型普惠金融貸款專案，實質賦能偏鄉女性農民合作社自主創立生態友善的手作在地特色工坊。"
+        },
+        {
+          "en": "The supportive manager believes in delegating tasks to empower team members to make autonomous decisions.",
+          "zh": "這位開明的主管深信充分授權的真諦，主動將關鍵專案交付下屬，賦能團隊同仁自主做出最接地氣的決定。"
+        }
+      ],
+      "collocations": [
+        "empower individuals"
+      ]
+    },
+    {
+      "id": 4995,
+      "word": "transformation",
+      "pos": "n.",
+      "phonetic": "[͵trænsfɚˋmeʃən]",
+      "definition": "產業智慧數位轉型升級；變形",
+      "cefr": "B1",
+      "topic": "產業轉型",
+      "examples": [
+        {
+          "en": "Comprehensive digital transformation modernizes traditional manufacturing lines with smart predictive maintenance.",
+          "zh": "推動全面的智慧數位轉型（Digital Transformation），能為傳統製造工廠導入智慧預測性保養與零停機維護。"
+        },
+        {
+          "en": "Regular strength training and clean nutrition triggered a stunning physical transformation in six months.",
+          "zh": "堅持規律的高強度重訓鍛鍊搭配高蛋白原型健康飲食，讓他在短短半年內迎來了令人刮目相看的身形蛻變。"
+        },
+        {
+          "en": "The industrial harbor district underwent an urban transformation into an energetic arts, dining, and marina promenade.",
+          "zh": "昔日煙囪林立的高雄亞洲新灣區老舊港區，經歷了華麗的都市更新轉型，成為集藝術、輕軌與遊艇碼頭於一身的休閒勝地。"
+        }
+      ],
+      "collocations": [
+        "comprehensive digital transformation"
+      ]
+    },
+    {
+      "id": 4996,
+      "word": "frontier",
+      "pos": "n.",
+      "phonetic": "[frʌnˋtɪr]",
+      "definition": "探索科技未知新地平線前沿；國界",
+      "cefr": "B1",
+      "topic": "探索精神",
+      "examples": [
+        {
+          "en": "Generative biology and quantum machine learning represent the ultimate frontiers of 21st-century innovation.",
+          "zh": "生成式生物醫學與量子機器學習，代表了二十一世紀全人類探索未知世界最前沿的科學疆界（Frontier）。"
+        },
+        {
+          "en": "European settlers packed wooden wagons to explore the wild western frontier across the rugged plains.",
+          "zh": "早期拓荒者乘坐滿載生活物資的堅固木質大篷車，跋山涉水穿越荒涼大平原，勇敢探索未知的西部拓荒前線邊疆。"
+        },
+        {
+          "en": "Border patrol officers stationed along the national frontier checked shipping passports and visa documents.",
+          "zh": "駐守在國家陸路邊界檢查哨站的邊防海關巡警，絲毫不苟地仔細核驗進出境貨運司機的護照與過境簽證。"
+        }
+      ],
+      "collocations": [
+        "technological frontier"
+      ]
+    },
+    {
+      "id": 4997,
+      "word": "dignity",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdɪgnətɪ]",
+      "definition": "捍衛以人為本之崇高尊嚴；尊貴",
+      "cefr": "B1",
+      "topic": "人文核心",
+      "examples": [
+        {
+          "en": "Ethical guidelines ensure technology always respects fundamental human dignity and universal human rights.",
+          "zh": "嚴格的科技倫理準則確保所有前瞻演算法的開發與應用，永遠將捍衛以人為本的崇高尊嚴擺在第一位。"
+        },
+        {
+          "en": "Hospice care focuses on pain relief and compassionate support to allow terminally ill patients to pass away with dignity.",
+          "zh": "安寧緩和醫療的核心目標，在於藉由完善止痛與溫柔陪伴，讓走到生命終點的末期病患能在平靜安詳中有尊嚴地謝幕。"
+        },
+        {
+          "en": "In the face of unwarranted accusations, she maintained her poise and composure with quiet dignity.",
+          "zh": "面對對手在公開場合毫無根據的惡意指控與誹謗，她始終保持從容優雅的沉穩風度，展現令人敬佩的沉靜尊嚴。"
+        }
+      ],
+      "collocations": [
+        "human dignity and rights"
+      ]
+    },
+    {
+      "id": 4998,
+      "word": "purpose",
+      "pos": "n.",
+      "phonetic": "[ˋpɝpəs]",
+      "definition": "生命熱情與崇高人生意義；目的",
+      "cefr": "B1",
+      "topic": "人生哲學",
+      "examples": [
+        {
+          "en": "When machines handle tedious manual labor, humans can dedicate their lives to noble creative purpose.",
+          "zh": "當繁瑣重複的勞動全數交由智慧機器分擔，人類終於能將寶貴的生命時光全心投入崇高的創造性意義。"
+        },
+        {
+          "en": "Volunteering at the local animal shelter gave the retired schoolteacher a newfound sense of joy and life purpose.",
+          "zh": "退休後定期在流浪動物之家擔任愛心志工，為這位奉獻半生的高中老教師帶來了重獲新生般的充實快樂與生命意義。"
+        },
+        {
+          "en": "The primary purpose of this meeting is to finalize budget allocations for the upcoming fiscal quarter.",
+          "zh": "本次專案跨部門協調會議的首要核心目的，在於正式定案並確認即將到來的下個會計年度各項研發預算分配。"
+        }
+      ],
+      "collocations": [
+        "find life purpose"
+      ]
+    },
+    {
+      "id": 4999,
+      "word": "wisdom",
+      "pos": "n. [U]",
+      "phonetic": "[ˋwɪzdəm]",
+      "definition": "駕馭強大科技的人類智慧；智慧",
+      "cefr": "B1",
+      "topic": "終極素養",
+      "examples": [
+        {
+          "en": "Developing powerful technologies requires equal measures of human empathy, restraint, and collective wisdom.",
+          "zh": "掌控越發強大的尖端科技，越需要人類內心深沉的同理心、自律道德感與跨世代的集體智慧（Wisdom）。"
+        },
+        {
+          "en": "Tribal elders gathered around the sacred campfire to share ancestral oral histories and folk ecological wisdom.",
+          "zh": "原住民族部落耆老夜間圍坐在神聖的營火旁，向青年一代傳授祖靈口述歷史與世代守護山林的敬虔生態智慧。"
+        },
+        {
+          "en": "Experience brings the quiet wisdom to recognize which daily battles are worth fighting and which to let go.",
+          "zh": "歲月與風霜帶給人一份洞明世事的沉著智慧，讓人學會看透生活中哪些爭執值得全力以赴，哪些紛擾該淡然放下。"
+        }
+      ],
+      "collocations": [
+        "collective human wisdom"
+      ]
+    },
+    {
+      "id": 5000,
+      "word": "milestone",
+      "pos": "n.",
+      "phonetic": "[ˋmaɪlˌston]",
+      "definition": "累計完成五千字重大里程碑！",
+      "cefr": "B1",
+      "topic": "榮耀里程碑",
+      "examples": [
+        {
+          "en": "Congratulations on mastering 5,000 core English words—an extraordinary learning milestone achieved!",
+          "zh": "熱烈恭喜您紮實掌握了 5,000 個核心實用英語單字——這是一項令人無比驕傲與振奮的卓越學習重大里程碑！"
+        },
+        {
+          "en": "Reaching one million active daily subscribers marked a historic commercial milestone for the streaming platform.",
+          "zh": "突破全球每日活躍訂閱付費用戶達一百萬大關，標誌著該影音串流平台在商業競爭上迎來了劃時代的歷史里程碑。"
+        },
+        {
+          "en": "Completing your first full 42-kilometer marathon is a thrilling milestone that changes how you view yourself.",
+          "zh": "憑藉無比毅力咬牙完成人生第一場四十二公里全程馬拉松並衝過終點線，是一場徹底改寫自我極限認知的振奮人生里程碑。"
+        }
+      ],
+      "collocations": [
+        "historic learning milestone"
+      ]
+    }
+  ]
+}

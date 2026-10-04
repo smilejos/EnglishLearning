@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,751–5,800 個單字（CEFR B1 中級）",
+  "batch": "5751-5800",
+  "range": "5751–5800",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5751,
+      "word": "abyss",
+      "pos": "n.",
+      "phonetic": "[əˋbɪs]",
+      "definition": "萬米深海深淵海溝；深淵",
+      "cefr": "B1",
+      "topic": "深海地形",
+      "examples": [
+        {
+          "en": "Autonomous underwater robots descended four thousand meters into the freezing darkness of the oceanic abyss.",
+          "zh": "自主水下載人機器人潛入深達四千公尺、漆黑冰冷的深海深淵之中展開探索。"
+        },
+        {
+          "en": "Ancient mariners imagined terrifying monsters dwelling within the boundless watery abyss.",
+          "zh": "古代航海家曾想像有著身軀龐大、猙獰可怖的海怪蟄伏在深不可測的水下深淵中。"
+        },
+        {
+          "en": "Powerful robotic spotlights sliced through the black void of the abyss, revealing alien landscapes.",
+          "zh": "水下探測機器人的大功率探照燈切穿深淵的永恆漆黑，揭示出宛如外星世界的奇異海底地貌。"
+        }
+      ],
+      "collocations": [
+        "dark oceanic abyss"
+      ]
+    },
+    {
+      "id": 5752,
+      "word": "trench",
+      "pos": "n.",
+      "phonetic": "[trɛntʃ]",
+      "definition": "馬里亞納海溝；海溝",
+      "cefr": "B1",
+      "topic": "地質構造",
+      "examples": [
+        {
+          "en": "The Mariana Trench plunges nearly eleven kilometers deep at Challenger Deep, the lowest point on Earth.",
+          "zh": "馬里亞納海溝中的挑戰者深淵深達近十一公里，是地球上最深的地質極限。"
+        },
+        {
+          "en": "Geological subduction creates a steep submarine trench where one oceanic plate dives beneath another.",
+          "zh": "板塊板塊構造隱沒作用在海底形成了陡峭深邃的深海海溝，大洋板塊在此向下俯衝進入地函。"
+        },
+        {
+          "en": "Extreme pressure and freezing cold define the harsh environment inside this Pacific trench.",
+          "zh": "令人粉身碎骨的極限水壓與接近冰點的刺骨低溫，構成了這條太平洋海溝內部嚴酷的物理環境。"
+        }
+      ],
+      "collocations": [
+        "Mariana ocean trench"
+      ]
+    },
+    {
+      "id": 5753,
+      "word": "bathyscaphe",
+      "pos": "n.",
+      "phonetic": "[ˋbæθə͵skæf]",
+      "definition": "載人深海探測潛水艇；深海潛艇",
+      "cefr": "B1",
+      "topic": "深潛載具",
+      "examples": [
+        {
+          "en": "The historic steel bathyscaphe Trieste made the first manned dive to the ocean floor in 1960.",
+          "zh": "歷史著名的鋼製載人深海潛艇的里雅斯特號，於一九六零年首度成功載人潛入萬米海床。"
+        },
+        {
+          "en": "Gasoline was used inside the bathyscaphe's float chamber because it is lighter than water and resists compression.",
+          "zh": "早期深海探測潛艇的浮力艙採用輕質汽油作為填充液，因其比水輕且在萬米高壓下不易被壓縮。"
+        },
+        {
+          "en": "Designing an ultra-deep bathyscaphe required thick forged steel spheres to withstand bottom pressures.",
+          "zh": "設計一艘能抵禦萬米水壓的超深水深海潛水艇，需要鍛造極厚的高強度合金鋼球形耐壓艙。"
+        }
+      ],
+      "collocations": [
+        "deep-sea manned bathyscaphe"
+      ]
+    },
+    {
+      "id": 5754,
+      "word": "submersible",
+      "pos": "n., adj.",
+      "phonetic": "[səbˋmɝsəb!]",
+      "definition": "鈦合金耐壓載人深海潛水器；可潛水的",
+      "cefr": "B1",
+      "topic": "科考潛艇",
+      "examples": [
+        {
+          "en": "Research submersibles equipped with thick acrylic viewports allow scientists to observe benthic life directly.",
+          "zh": "配備厚重壓克力耐壓觀察窗的科研潛水器，讓海洋學家能親眼凝視萬米底棲生物。"
+        },
+        {
+          "en": "The manned submersible was launched off the mother ship's stern using a massive hydraulic A-frame.",
+          "zh": "載人深海潛水器透過科研母船艉部的巨型液壓 A 型吊架，穩穩吊放佈放進波濤洶湧的大海中。"
+        },
+        {
+          "en": "Advanced battery packs allow the research submersible to conduct nine-hour exploratory missions on the seabed.",
+          "zh": "先進的高效能電池模組，使這艘深海科研潛水器能夠在海床上連續執行長達九小時的探勘任務。"
+        }
+      ],
+      "collocations": [
+        "research deep submersible"
+      ]
+    },
+    {
+      "id": 5755,
+      "word": "unmanned",
+      "pos": "adj.",
+      "phonetic": "[ʌnˋmænd]",
+      "definition": "水下無人自主巡航探測的",
+      "cefr": "B1",
+      "topic": "無人設備",
+      "examples": [
+        {
+          "en": "Unmanned deep-sea probes operate for weeks mapping hydrothermal vents along underwater volcanic ridges.",
+          "zh": "水下無人探測載具能在海底火山脊持續巡航數週，精準測繪熱泉噴口分佈。"
+        },
+        {
+          "en": "Deploying an unmanned autonomous vehicle reduces human risk while exploring hazardous underwater volcanoes.",
+          "zh": "部署水下無人自主航行探測器，在探測危險的海底活火山時能徹底免除科研人員的人身風險。"
+        },
+        {
+          "en": "The unmanned crawler gathered thousands of sediment core samples without requiring diver intervention.",
+          "zh": "這台履帶式水下無人海床巡航車在無人潛航員干預下，順利採集了數千份海床沉積物岩芯樣本。"
+        }
+      ],
+      "collocations": [
+        "unmanned underwater vehicle"
+      ]
+    },
+    {
+      "id": 5756,
+      "word": "tether",
+      "pos": "n., v.",
+      "phonetic": "[ˋtɛðɚ]",
+      "definition": "光纖超深海高壓臍帶纜繩；拴住",
+      "cefr": "B1",
+      "topic": "通訊纜線",
+      "examples": [
+        {
+          "en": "A five-mile armored tether delivers power and high-speed fiber-optic commands from the surface ship to the ROV.",
+          "zh": "一條長達五英里的裝甲光纖臍帶纜繩，源源不絕將電力與操控指令從母船傳送至水下 ROV。"
+        },
+        {
+          "en": "Operators monitored the tension gauge closely to ensure the umbilical tether would not snag on jagged rocks.",
+          "zh": "水面控制員密切緊盯著張力計讀數，以確保深海臍帶纜繩不致卡死或纏繞在鋒利的海底礁石上。"
+        },
+        {
+          "en": "If the main communication tether snaps, safety protocols command the robot to resurface automatically.",
+          "zh": "一旦主要的深海光纖通訊纜線意外崩斷，安全防護協議將強制引導水下機器人自動拋載浮出水面。"
+        }
+      ],
+      "collocations": [
+        "fiber-optic umbilical tether"
+      ]
+    },
+    {
+      "id": 5757,
+      "word": "telemetry",
+      "pos": "n. [U]",
+      "phonetic": "[təˋlɛmətrɪ]",
+      "definition": "即時 4K 水下遙測數據與影像回傳",
+      "cefr": "B1",
+      "topic": "數據遙測",
+      "examples": [
+        {
+          "en": "High-bandwidth digital telemetry streams live 4K video feeds and water salinity data back to the bridge.",
+          "zh": "高頻寬數位遙測傳輸技術，將萬米海底的即時 4K 超高畫質影像與鹽度數據回傳駕駛艙。"
+        },
+        {
+          "en": "Acoustic telemetry systems transmit compressed sensor readings across miles of deep water without cables.",
+          "zh": "水下聲學遙測通訊系統在無需纜線連接的情況下，能將壓縮後的感測數據跨越數英里水層傳回水面。"
+        },
+        {
+          "en": "Continuous battery telemetry warned the pilots that energy reserves were dropping to safety thresholds.",
+          "zh": "持續監控的電池電量遙測數據發出警訊，提醒潛航員儲備電量已逼近返航的安全警戒門檻。"
+        }
+      ],
+      "collocations": [
+        "real-time sensor telemetry"
+      ]
+    },
+    {
+      "id": 5758,
+      "word": "manipulator",
+      "pos": "n.",
+      "phonetic": "[məˋnɪpjə͵letɚ]",
+      "definition": "七軸液壓水下機械手臂 (採集樣本)",
+      "cefr": "B1",
+      "topic": "機械手臂",
+      "examples": [
+        {
+          "en": "The pilot skillfully controlled the robotic manipulator arm to retrieve fragile volcanic rock samples.",
+          "zh": "駕駛員熟練操控七軸液壓水下機械手臂，溫柔夾取珍貴而脆弱的海底火山岩樣本。"
+        },
+        {
+          "en": "Delicate force-feedback sensors on the manipulator prevent crushing delicate glass sponges during sampling.",
+          "zh": "機械手臂指尖搭載的精密力回饋感測器，能防止在抓取採集脆弱的玻璃海綿時將其捏碎破壞。"
+        },
+        {
+          "en": "Specialized rotary cutters can be fitted onto the manipulator to slice through subsea steel cables.",
+          "zh": "水下機械手臂前端可快速更換為專用旋轉切割鋸片，輕鬆切斷纏繞的水下鋼纜障礙物。"
+        }
+      ],
+      "collocations": [
+        "robotic hydraulic manipulator"
+      ]
+    },
+    {
+      "id": 5759,
+      "word": "hydrostatic",
+      "pos": "adj.",
+      "phonetic": "[͵haɪdrəˋstætɪk]",
+      "definition": "一千個大氣壓之毀滅性靜水壓力的",
+      "cefr": "B1",
+      "topic": "水壓物理",
+      "examples": [
+        {
+          "en": "Deep-sea gear must withstand crushing hydrostatic pressure exceeding one thousand atmospheres at the seabed.",
+          "zh": "萬米深海設備必須能抵禦海床底端超過一千個大氣壓的毀滅性靜水壓力。"
+        },
+        {
+          "en": "Engineers test instrument casings inside hydrostatic pressure chambers before deploying them into trenches.",
+          "zh": "在正式下放海溝前，工程師會將儀器外殼放入超高壓靜水壓力模擬試驗艙中進行破壞性檢驗。"
+        },
+        {
+          "en": "Special silicone oils equalize hydrostatic pressure within the sub's external electronic junction boxes.",
+          "zh": "外部電子接線盒內部充填專用矽油進行壓力平衡，使其能在極端靜水壓力下維持電氣絕緣。"
+        }
+      ],
+      "collocations": [
+        "crushing hydrostatic pressure"
+      ]
+    },
+    {
+      "id": 5760,
+      "word": "pressure",
+      "pos": "n. [U]",
+      "phonetic": "[ˋprɛʃɚ]",
+      "definition": "萬米深海極限水壓 (每平方公分一噸)",
+      "cefr": "B1",
+      "topic": "極端環境",
+      "examples": [
+        {
+          "en": "Water pressure in the trench is so extreme it would instantly crush an unprotected steel shipping container.",
+          "zh": "海溝深處的極限水壓極端恐怖，能在一瞬間將未經防護的鋼製貨櫃壓成薄片。"
+        },
+        {
+          "en": "With every ten meters of depth, ambient water pressure increases by approximately one atmosphere.",
+          "zh": "潛航深度每向下增加十公尺，周圍的海水環境壓力便隨之增加約莫一個標準大氣壓。"
+        },
+        {
+          "en": "The titanium sphere shrinks by several millimeters under deep ocean pressure without cracking.",
+          "zh": "在深海萬米重壓下，整顆球形鈦合金耐壓艙會微幅收縮數毫米，但絕不開裂變形。"
+        }
+      ],
+      "collocations": [
+        "extreme water pressure"
+      ]
+    },
+    {
+      "id": 5761,
+      "word": "hull",
+      "pos": "n.",
+      "phonetic": "[hʌl]",
+      "definition": "球形鈦合金耐壓抗壓載人艙體；船體",
+      "cefr": "B1",
+      "topic": "艙體結構",
+      "examples": [
+        {
+          "en": "The spherical titanium pressure hull protects researchers from the violent forces of the deep ocean.",
+          "zh": "鍛造一體的球形鈦合金耐壓艙體，為潛航員築起隔絕萬米深海狂暴水壓的安全避風港。"
+        },
+        {
+          "en": "Ultrasound scans inspect the weld seams of the submersible hull for micro-fractures after every deep dive.",
+          "zh": "每次完成萬米深潛作業後，技術團隊都會使用超音波探傷儀仔細檢測潛艇艙體焊縫是否存在微裂紋。"
+        },
+        {
+          "en": "The outer hydrodynamic fiberglass hull streamlines the vehicle's descent through strong currents.",
+          "zh": "外層符合流體力學的玻璃纖維外殼，讓潛水器能順暢破水穿透強勁洋流快速下潛。"
+        }
+      ],
+      "collocations": [
+        "titanium pressure hull"
+      ]
+    },
+    {
+      "id": 5762,
+      "word": "buoyancy",
+      "pos": "n. [U]",
+      "phonetic": "[ˋbɔɪənsɪ]",
+      "definition": "耐萬米水壓之微珠複合固態浮力材料",
+      "cefr": "B1",
+      "topic": "浮力材料",
+      "examples": [
+        {
+          "en": "Syntactic foam provides positive buoyancy without compressing under tens of thousands of pounds of pressure.",
+          "zh": "微型玻璃空心微珠複合固態浮力材料，在數萬磅極限重壓下依然不變形並提供穩定浮力。"
+        },
+        {
+          "en": "Releasing steel descent weights creates net positive buoyancy, allowing the submersible to float home.",
+          "zh": "拋棄底部配重鐵塊能產生淨正浮力，使深潛器在無需引擎推進的情況下自然緩慢浮回海面。"
+        },
+        {
+          "en": "Careful buoyancy trimming ensures the underwater robot stays neutrally suspended in the water column.",
+          "zh": "精細的浮力配平調校，能確保水下機器人在特定深度水層中保持中性懸浮而不上浮下沉。"
+        }
+      ],
+      "collocations": [
+        "subsea syntactic buoyancy"
+      ]
+    },
+    {
+      "id": 5763,
+      "word": "thruster",
+      "pos": "n.",
+      "phonetic": "[ˋθrʌstɚ]",
+      "definition": "無刷直流全向水下推進器；推力器",
+      "cefr": "B1",
+      "topic": "水下推進",
+      "examples": [
+        {
+          "en": "Six brushless electric thrusters allow the robot to hover motionlessly above turbulent hydrothermal vents.",
+          "zh": "六具高功率無刷水下推進器，讓探測機器人能在洶湧的海底熱泉上方穩穩懸停。"
+        },
+        {
+          "en": "Reversing the horizontal thrusters brings the heavy underwater vehicle to a gentle, precise stop.",
+          "zh": "反轉水平方向的向量推進器，能讓龐大沉重的水下探測器平穩、精準地懸停在目標海床前。"
+        },
+        {
+          "en": "Protective grates guard each ducted thruster propeller against sucking in drifting underwater cables.",
+          "zh": "推進器導流罩外裝有高強度防護網罩，以防旋轉葉片吸入漂浮的水下纜繩造成卡死損毀。"
+        }
+      ],
+      "collocations": [
+        "brushless underwater thruster"
+      ]
+    },
+    {
+      "id": 5764,
+      "word": "sonar",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsonɑr]",
+      "definition": "多音束深海高解析水深側深聲納",
+      "cefr": "B1",
+      "topic": "聲納探測",
+      "examples": [
+        {
+          "en": "Multibeam sonar sweeps acoustic soundwaves across the dark seafloor, generating accurate 3D topographic maps.",
+          "zh": "多音束聲納系統向漆黑海床發射聲波掃描，精準繪製出三維海底立體地形圖。"
+        },
+        {
+          "en": "Forward-looking obstacle avoidance sonar warns pilots of towering underwater cliffs hidden in pitch darkness.",
+          "zh": "前向避障聲納能在伸手不見五指的萬米黑暗中，提前對駕駛員發出前方巍峨海底斷崖的警訊。"
+        },
+        {
+          "en": "Side-scan sonar revealed the scattered metallic debris of a sunken nineteenth-century steamship.",
+          "zh": "側掃聲納傳回的高對比度聲學影像，清晰揭露了一艘沉沒於十九世紀蒸汽船散落的金屬殘骸。"
+        }
+      ],
+      "collocations": [
+        "multibeam mapping sonar"
+      ]
+    },
+    {
+      "id": 5765,
+      "word": "bathymetry",
+      "pos": "n. [U]",
+      "phonetic": "[bəˋθɪmətrɪ]",
+      "definition": "海底三維水深測繪與等深線繪製",
+      "cefr": "B1",
+      "topic": "海底測量",
+      "examples": [
+        {
+          "en": "High-resolution satellite bathymetry revealed an uncharted chain of massive underwater volcanoes.",
+          "zh": "高解析度海底水深測繪技術，意外揭露出一整條未曾被人類記載的巨大海底火山鏈。"
+        },
+        {
+          "en": "Accurate bathymetry data is crucial for safely navigating submarines around underwater mountain ranges.",
+          "zh": "精準的海底等深線水深測繪數據，對於潛艦在漆黑起伏的海底山脈間安全導航航行至關重要。"
+        },
+        {
+          "en": "Scientists synthesized millions of sonar pings to produce the most detailed bathymetry chart of the trench.",
+          "zh": "科學家整合了數百萬次聲納回波探測點，繪製出當前人類掌握最詳盡的海溝立體水深圖。"
+        }
+      ],
+      "collocations": [
+        "seafloor bathymetry map"
+      ]
+    },
+    {
+      "id": 5766,
+      "word": "hydrothermal",
+      "pos": "adj.",
+      "phonetic": "[͵haɪdroˋθɝməl]",
+      "definition": "深海海底四百度超高溫熱泉黑煙囪的",
+      "cefr": "B1",
+      "topic": "熱泉系統",
+      "examples": [
+        {
+          "en": "Hydrothermal black smokers spew boiling mineral-rich fluid at temperatures topping 400 degrees Celsius.",
+          "zh": "深海海底熱泉噴口向冰冷海水中噴湧出高達攝氏四百度、富含礦物質的沸騰熱液。"
+        },
+        {
+          "en": "Surrounding seawater does not boil near hydrothermal vents because of the tremendous hydrostatic pressure.",
+          "zh": "熱液噴口周圍高達四百度的熱泉之所以不會沸騰汽化，全因深海極度恐怖的靜水壓力壓制。"
+        },
+        {
+          "en": "Studying deep hydrothermal systems offers clues to how life might exist on icy moons like Europa.",
+          "zh": "深入研究深海極端熱泉系統，能為木衛二等冰凍外星衛星上是否存在外星生命提供寶貴線索。"
+        }
+      ],
+      "collocations": [
+        "hydrothermal vent chimney"
+      ]
+    },
+    {
+      "id": 5767,
+      "word": "smoker",
+      "pos": "n.",
+      "phonetic": "[ˋsmokɚ]",
+      "definition": "硫化物沉澱堆疊之黑煙囪柱體；抽煙者",
+      "cefr": "B1",
+      "topic": "熱泉煙囪",
+      "examples": [
+        {
+          "en": "Towering black smokers form towering mineral chimneys as dissolved metallic sulfides precipitate into ice-cold water.",
+          "zh": "當溶解的金屬硫化物遇冰冷海水瞬間沉澱結晶，堆疊出高聳如摩天大樓的黑煙囪礦柱。"
+        },
+        {
+          "en": "White smokers release cooler, silica-rich solutions that create chalky, chimney-like spires.",
+          "zh": "與黑煙囪不同，白煙囪噴出溫度較低、富含二氧化矽的白濁熱液，凝結成粉筆般的白色結晶柱。"
+        },
+        {
+          "en": "The robotic arm broke off a chimney fragment from an active smoker to analyze its mineralogy.",
+          "zh": "水下機械手臂折斷了一截活性黑煙囪頂端的礦物結晶殘片，帶回母船實驗室進行礦物成分化驗。"
+        }
+      ],
+      "collocations": [
+        "deep black smoker"
+      ]
+    },
+    {
+      "id": 5768,
+      "word": "chemosynthesis",
+      "pos": "n. [U]",
+      "phonetic": "[͵kimoˋsɪnθəsɪs]",
+      "definition": "黑暗無光硫化氫化學合成作用",
+      "cefr": "B1",
+      "topic": "能量循環",
+      "examples": [
+        {
+          "en": "In sunless abyssal ecosystems, life thrives via chemosynthesis by converting hydrogen sulfide into cellular energy.",
+          "zh": "在永無陽光的深海世界中，生命透過神奇的化學合成作用將硫化氫轉化為生存能量。"
+        },
+        {
+          "en": "Unlike plants that require sunlight, chemosynthesis allows specialized bacteria to manufacture sugars from minerals.",
+          "zh": "與需要陽光光合作用的綠色植物不同，化學合成作用讓特化深海細菌得以將無機礦物轉化為葡萄糖。"
+        },
+        {
+          "en": "The entire benthic food web around the volcanic fissure is built upon microbial chemosynthesis.",
+          "zh": "海底火山裂縫周圍龐大奇特的底棲食物鏈網，完全建立在微生物化學合成作用的基石之上。"
+        }
+      ],
+      "collocations": [
+        "bacterial chemosynthesis process"
+      ]
+    },
+    {
+      "id": 5769,
+      "word": "vent",
+      "pos": "n., v.",
+      "phonetic": "[vɛnt]",
+      "definition": "海底熱液噴口區；通風口；發洩",
+      "cefr": "B1",
+      "topic": "噴口構造",
+      "examples": [
+        {
+          "en": "Bizarre deep-sea crab communities cluster densely around the warm thermal vent to graze on thick bacterial mats.",
+          "zh": "奇特的海底盲蟹族群密密麻麻聚集在溫暖的熱液噴口四周，大口啃食厚厚的細菌生物薄膜。"
+        },
+        {
+          "en": "Acidic fluids rich in hydrogen sulfide vent constantly from fissures along the tectonic ridge.",
+          "zh": "富含高濃度硫化氫的強酸性礦物熱液，持續不斷從板塊構造海脊的深層岩石裂縫中噴湧而出。"
+        },
+        {
+          "en": "Biologists collected genetic samples from creatures living only a few centimeters from the superheated vent.",
+          "zh": "生物學家從生活在距離灼熱噴口僅幾公分之遙的奇特生物體內，採集了珍貴的遺傳基因樣本。"
+        }
+      ],
+      "collocations": [
+        "volcanic hydrothermal vent"
+      ]
+    },
+    {
+      "id": 5770,
+      "word": "sulfide",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsʌlfaɪd]",
+      "definition": "海底多金屬塊狀硫化物沉積礦床",
+      "cefr": "B1",
+      "topic": "海底礦產",
+      "examples": [
+        {
+          "en": "Mining companies eye seafloor massive sulfide deposits for their rich concentrations of copper, zinc, and silver.",
+          "zh": "國際採礦巨頭高度關注海底塊狀硫化物礦床，因其富含高品位銅、鋅與金銀。"
+        },
+        {
+          "en": "Hydrothermal fluids carry high amounts of dissolved iron and lead sulfide out of the Earth’s mantle.",
+          "zh": "循環湧升的地底熱液，將地函中大量溶解的硫化鐵與硫化鉛等金屬硫化物源源不絕帶上海床。"
+        },
+        {
+          "en": "Solidified metal sulfide mounds around extinct vents provide habitats for deep cold-water corals.",
+          "zh": "熄火死噴口周圍凝固沉積的金屬硫化物丘陵，為深海冷水造礁珊瑚群落提供了堅固的附著基質。"
+        }
+      ],
+      "collocations": [
+        "massive seafloor sulfide"
+      ]
+    },
+    {
+      "id": 5771,
+      "word": "nodule",
+      "pos": "n.",
+      "phonetic": "[ˋnɑdʒul]",
+      "definition": "深海多金屬錳結核 (富含鈷鎳稀土)",
+      "cefr": "B1",
+      "topic": "戰略礦產",
+      "examples": [
+        {
+          "en": "Potato-sized polymetallic manganese nodules resting on abyssal plains took millions of years to slowly accrete.",
+          "zh": "散落於萬米深海平原上如馬鈴薯大小的多金屬錳結核，歷經數百萬年才緩慢吸附結晶而成。"
+        },
+        {
+          "en": "Environmentalists warn that dredging manganese nodules will destroy irreplaceable benthic ecosystems permanently.",
+          "zh": "環保團體嚴正警告，在大洋深處拖網挖掘開採錳結核，將對不可逆的深海底棲生態造成毀滅性浩劫。"
+        },
+        {
+          "en": "Each nodule contains concentrated amounts of nickel, cobalt, and copper essential for electric vehicle batteries.",
+          "zh": "每一顆深海結核皆富含高純度鎳、鈷與銅，這些皆是製造電動車鋰電池不可或缺的戰略金屬。"
+        }
+      ],
+      "collocations": [
+        "polymetallic manganese nodule"
+      ]
+    },
+    {
+      "id": 5772,
+      "word": "crust",
+      "pos": "n. [U]",
+      "phonetic": "[krʌst]",
+      "definition": "富鈷鐵錳結殼；海底地殼；外皮",
+      "cefr": "B1",
+      "topic": "海底地質",
+      "examples": [
+        {
+          "en": "Thick ferromanganese crusts coating the flanks of seamounts contain critical rare-earth elements for batteries.",
+          "zh": "沉積覆蓋在海山斜坡上的厚重富鈷鐵錳結殼，富含製造綠能電池不可或缺的關鍵稀土元素。"
+        },
+        {
+          "en": "The oceanic crust is constantly being created at mid-ocean ridges and recycled in subduction trenches.",
+          "zh": "大洋地殼在洋中脊處源源不斷新生誕生，並在萬米深邃的隱沒海溝處重新俯衝熔化重返地函。"
+        },
+        {
+          "en": "Stripping the mineral crust from underwater mountains poses severe threats to rare deep-sea fish nurseries.",
+          "zh": "強行從海底山坡剝除金屬礦物結殼，將對珍貴稀有的深海魚類育苗棲地帶來不可抹滅的致命威脅。"
+        }
+      ],
+      "collocations": [
+        "cobalt-rich ferromanganese crust"
+      ]
+    },
+    {
+      "id": 5773,
+      "word": "seep",
+      "pos": "n., v.",
+      "phonetic": "[sip]",
+      "definition": "深海低溫天然氣甲烷冷泉滲漏區；滲漏",
+      "cefr": "B1",
+      "topic": "冷泉生態",
+      "examples": [
+        {
+          "en": "Cold seeps release plumes of methane bubbles from deep geological reservoirs without violent heat.",
+          "zh": "寧靜的海底甲烷冷泉滲漏區，從地底岩層中緩緩釋放天然氣甲烷氣泡，孕育獨特生態。"
+        },
+        {
+          "en": "Chemotrophic mussels thrive near hydrocarbon seeps by consuming methane-derived nutrients.",
+          "zh": "特化的化能自營深海貽貝簇擁生長在碳氫化合物冷泉口周圍，藉由共生菌吸收甲烷養分茁壯。"
+        },
+        {
+          "en": "Toxic petrochemical compounds seep slowly through seafloor fissures, nurturing dense mussel beds.",
+          "zh": "富含有機成分的天然氣化合物沿著海床裂隙緩慢滲出，滋養了一片片密密麻麻的深海貽貝岩層。"
+        }
+      ],
+      "collocations": [
+        "deep methane cold seep"
+      ]
+    },
+    {
+      "id": 5774,
+      "word": "tubeworm",
+      "pos": "n.",
+      "phonetic": "[ˋtjub͵wɝm]",
+      "definition": "巨型熱泉管蟲 (體內共生硫化菌)",
+      "cefr": "B1",
+      "topic": "深海生物",
+      "examples": [
+        {
+          "en": "Giant red-plumed tubeworms reach lengths of over two meters, living symbiotically with sulfur-oxidizing microbes.",
+          "zh": "頭頂鮮紅羽鰓的巨型熱泉管蟲身長可達兩公尺以上，完全仰賴體內共生菌獲取養分。"
+        },
+        {
+          "en": "Having no mouth, gut, or digestive system, the tubeworm relies entirely on its internal bacterial colony.",
+          "zh": "巨型管蟲一生沒有嘴巴、腸道或任何消化器官，其生存完全仰賴體內共生硫化菌提供的化學養分。"
+        },
+        {
+          "en": "Stiff chitinous tubes shield the delicate red bodies of tubeworms from acidic hydrothermal chemicals.",
+          "zh": "堅硬的幾丁質白色保護管鞘如鎧甲般，保護管蟲柔軟嬌嫩的紅色肉體免受強酸性熱泉腐蝕。"
+        }
+      ],
+      "collocations": [
+        "giant hydrothermal tubeworm"
+      ]
+    },
+    {
+      "id": 5775,
+      "word": "symbiotic",
+      "pos": "adj.",
+      "phonetic": "[͵sɪmbaɪˋɑtɪk]",
+      "definition": "化學合成共生細菌互利共生的",
+      "cefr": "B1",
+      "topic": "共生關係",
+      "examples": [
+        {
+          "en": "Deep-sea clams form an intimate symbiotic relationship with bacteria residing directly inside their gills.",
+          "zh": "深海巨型白瓜蛤與寄生在其鰓部的化學合成細菌，建立起不可分割的互利共生關係。"
+        },
+        {
+          "en": "Both partners gain from this symbiotic pact: the host provides shelter while the microbes manufacture food.",
+          "zh": "宿主與微生物在這段共生契約中各取所需：宿主提供安全的棲身庇護，而微生物則負責化學合成食物。"
+        },
+        {
+          "en": "Disrupting this delicate symbiotic balance causes rapid death for deep-sea hydrothermal organisms.",
+          "zh": "一旦打破這種精密微妙的互利共生平衡，深海熱泉生物將在極短時間內因飢餓而集體暴斃。"
+        }
+      ],
+      "collocations": [
+        "mutually symbiotic relationship"
+      ]
+    },
+    {
+      "id": 5776,
+      "word": "amphipod",
+      "pos": "n.",
+      "phonetic": "[ˋæmfə͵pɑd]",
+      "definition": "超深淵端足類甲殼動物 (巨型深海海蚤)",
+      "cefr": "B1",
+      "topic": "深淵甲殼",
+      "examples": [
+        {
+          "en": "Giant scavengers known as hadal amphipods swarm decomposing whale carcasses on the pitch-black trench floor.",
+          "zh": "被稱為超深淵端足類的巨型海蚤，如飢似渴地聚集在海床上啃食沉降的鯨落殘骸。"
+        },
+        {
+          "en": "Unlike tiny shoreline sand hoppers, deep-sea amphipods can grow larger than a human hand.",
+          "zh": "與沙灘上跳躍的微小跳蝦截然不同，生活在萬米深淵底部的端足類體型甚至能比人類手掌還要巨大。"
+        },
+        {
+          "en": "Traps baited with fresh mackerel captured hundreds of translucent amphipods at ten thousand meters.",
+          "zh": "以新鮮鯖魚作為誘餌的深海採樣誘捕籠，在萬米深處成功捕獲了數百隻通體半透明的端足類甲殼動物。"
+        }
+      ],
+      "collocations": [
+        "hadal deep-sea amphipod"
+      ]
+    },
+    {
+      "id": 5777,
+      "word": "snailfish",
+      "pos": "n.",
+      "phonetic": "[ˋsnel͵fɪʃ]",
+      "definition": "萬米深淵超深海獅子魚 (透明膠質)",
+      "cefr": "B1",
+      "topic": "深海魚類",
+      "examples": [
+        {
+          "en": "The delicate Mariana snailfish thrives under colossal pressures at depths exceeding 8,000 meters.",
+          "zh": "通體粉紅透明、骨骼如膠質般的馬里亞納獅子魚，在八千公尺極限水壓下悠然游動。"
+        },
+        {
+          "en": "Lacking hard scales and rigid skeletons, the flexible snailfish relies on gel-like tissues to absorb pressure.",
+          "zh": "由於缺乏堅硬鱗片與硬質骨骼，獅子魚仰賴充滿凝膠質彈性的特化軟組織從容吸收外界水壓。"
+        },
+        {
+          "en": "Cameras on the benthic lander recorded a curious snailfish brushing against the bait arm in the dark.",
+          "zh": "著陸在萬米深海著陸器上的高畫質攝影機，拍下了一隻好奇的獅子魚在漆黑中輕拂誘餌手臂的珍貴畫面。"
+        }
+      ],
+      "collocations": [
+        "Mariana hadal snailfish"
+      ]
+    },
+    {
+      "id": 5778,
+      "word": "bioluminescence",
+      "pos": "n. [U]",
+      "phonetic": "[͵baɪoluməˋnɛsns]",
+      "definition": "深海生物冷光自體發光奇觀",
+      "cefr": "B1",
+      "topic": "生物發光",
+      "examples": [
+        {
+          "en": "Eerie blue flashes of bioluminescence light up the midnight zone as startled jellyfish evade predators.",
+          "zh": "當受到驚嚇的深海水母躲避捕食者時，身上閃爍出如夢似幻的幽藍生物冷光。"
+        },
+        {
+          "en": "Over ninety percent of creatures living in the mesopelagic zone utilize some form of bioluminescence.",
+          "zh": "棲息在水深兩百至一千公尺中層帶的大多數深海生物，都演化出了利用自體生物冷光溝通獵食的能力。"
+        },
+        {
+          "en": "Luciferin reacting with luciferase enzymes generates cold bioluminescence with virtually no wasted heat.",
+          "zh": "螢光素與螢光酵素在體內發生氧化反應釋放出神奇冷光，轉化效率極高且幾乎不浪費任何熱能。"
+        }
+      ],
+      "collocations": [
+        "marine glowing bioluminescence"
+      ]
+    },
+    {
+      "id": 5779,
+      "word": "photophore",
+      "pos": "n.",
+      "phonetic": "[ˋfoto͵fɔr]",
+      "definition": "深海燈籠魚發光器 (誘食警戒求偶)",
+      "cefr": "B1",
+      "topic": "發光器官",
+      "examples": [
+        {
+          "en": "Anglerfish dangle a glowing photophore organ like a fishing lure above their needle-sharp fangs.",
+          "zh": "鮟鱇魚在頭頂懸掛著一顆如釣竿般閃爍發光的發光器，誘惑盲目游過的小魚自投羅網。"
+        },
+        {
+          "en": "Lanternfish arrange photophore rows along their bellies to blend with faint sunlight from above.",
+          "zh": "燈籠魚在腹部整齊排列著微型發光器矩陣，發出微弱光芒與上方微光融為一體以達成消影偽裝。"
+        },
+        {
+          "en": "Shutter-like muscle flaps can cover the photophore in milliseconds to hide from pursuing squid.",
+          "zh": "如同快門般的特化肌肉瓣膜能在數毫秒內遮蔽發光器，在被巨型烏賊追捕時瞬間遁入黑暗。"
+        }
+      ],
+      "collocations": [
+        "light-emitting photophore organ"
+      ]
+    },
+    {
+      "id": 5780,
+      "word": "adaptation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ædæpˋteʃən]",
+      "definition": "極端抗高壓分子抗滲透壓演化適應",
+      "cefr": "B1",
+      "topic": "生物適應",
+      "examples": [
+        {
+          "en": "Hadal organisms developed cellular adaptation to stabilize cell membranes against destructive pressure.",
+          "zh": "萬米超深淵生物演化出令人驚嘆的細胞生理適應機制，保護細胞膜在高壓下不致破裂。"
+        },
+        {
+          "en": "Producing high levels of trimethylamine N-oxide (TMAO) is a key biochemical adaptation for trench fish.",
+          "zh": "體內細胞合成高濃度的氧化三甲胺，是深海魚類維持蛋白質結構不被水壓壓垮的關鍵生化演化適應。"
+        },
+        {
+          "en": "Evolutionary adaptation allows deep-sea creatures to survive without sight in eternal darkness.",
+          "zh": "數百萬年的極限演化適應，讓許多深海奇特物種在永恆無光的黑暗國度中完全退化了視覺卻能精準獵食。"
+        }
+      ],
+      "collocations": [
+        "extreme deep-sea adaptation"
+      ]
+    },
+    {
+      "id": 5781,
+      "word": "oceanography",
+      "pos": "n. [U]",
+      "phonetic": "[͵oʃənˋɑgrəfɪ]",
+      "definition": "物理化學生物深海海洋科學；海洋學",
+      "cefr": "B1",
+      "topic": "海洋科學",
+      "examples": [
+        {
+          "en": "Modern physical oceanography investigates deep ocean current conveyer belts regulating global climate systems.",
+          "zh": "現代物理海洋學致力研究深海溫鹽環流輸送帶，揭示其如何深刻調節全球氣候。"
+        },
+        {
+          "en": "Studying biological oceanography reveals how marine carbon sinks trap atmospheric greenhouse gases.",
+          "zh": "鑽研生物海洋學的學術成果，能揭開深海生物碳幫浦如何將大氣中的溫室氣體長年封存於萬米海底。"
+        },
+        {
+          "en": "She pursued a doctoral degree in chemical oceanography to analyze deep abyssal water chemistry.",
+          "zh": "她毅然攻讀化學海洋學博士學位，全心投入分析太平洋萬米深淵底層水體的化學組成與同位素。"
+        }
+      ],
+      "collocations": [
+        "biological and physical oceanography"
+      ]
+    },
+    {
+      "id": 5782,
+      "word": "core",
+      "pos": "n., v.",
+      "phonetic": "[kor]",
+      "definition": "海底沉積物重力柱狀岩芯採樣管；核心",
+      "cefr": "B1",
+      "topic": "地質採樣",
+      "examples": [
+        {
+          "en": "Scientists extracted a fifty-foot sediment core to reconstruct prehistoric climate swings and ice age cycles.",
+          "zh": "地質學家從海床鑽取了一根長達五十英尺的沉積物岩芯，藉此重構史前冰河時期的氣候變遷。"
+        },
+        {
+          "en": "Slicing the sediment core open revealed ash layers from volcanic super-eruptions millions of years ago.",
+          "zh": "剖開深海沉積物岩芯，橫斷面清晰浮現出數百萬年前超級海底火山爆發遺留下來的灰白火山灰層。"
+        },
+        {
+          "en": "Technicians carefully freeze and catalog each sediment core inside chilled research ship lockers.",
+          "zh": "實驗室技術員細心將採集到的每節沉積物岩芯低溫冷凍並編號建檔，保存於研究船專用冰庫中。"
+        }
+      ],
+      "collocations": [
+        "seafloor sediment gravity core"
+      ]
+    },
+    {
+      "id": 5783,
+      "word": "seismology",
+      "pos": "n. [U]",
+      "phonetic": "[saɪzˋmɑlədʒɪ]",
+      "definition": "海底地震觀測網與板塊構造地震學",
+      "cefr": "B1",
+      "topic": "地震科學",
+      "examples": [
+        {
+          "en": "Ocean bottom seismometers deployed along the subduction zone provide early warnings for catastrophic tsunamis.",
+          "zh": "佈設在板塊隱沒帶海床上的海底地震儀，為沿海城市爭取毀滅性海嘯來襲前的寶貴預警時間。"
+        },
+        {
+          "en": "Deep subsea seismology maps the subterranean magma chambers feeding active underwater volcanoes.",
+          "zh": "深海地震學的精密觀測網絡，能精確繪製出為海底活火山源源供應炙熱岩漿的地底深層岩漿庫。"
+        },
+        {
+          "en": "Sudden acoustic tremors recorded by global seismology networks revealed a massive submarine landslide.",
+          "zh": "全球海洋地震監測網記錄到的突發異常低頻震動，揭露了一起發生在遠洋海溝處的巨大海底山崩。"
+        }
+      ],
+      "collocations": [
+        "subsea earthquake seismology"
+      ]
+    },
+    {
+      "id": 5784,
+      "word": "subduction",
+      "pos": "n. [U]",
+      "phonetic": "[səbˋdʌkʃən]",
+      "definition": "板塊碰撞向下隱沒帶 (引發海溝強震)",
+      "cefr": "B1",
+      "topic": "板塊構造",
+      "examples": [
+        {
+          "en": "Intense friction at the tectonic plate subduction zone generates mega-thrust earthquakes and deep ocean trenches.",
+          "zh": "構造板塊交界處的板塊隱沒作用，在劇烈擠壓摩擦中孕育出萬米深海溝與毀滅性大地震。"
+        },
+        {
+          "en": "As one plate slips beneath another in the subduction zone, immense strain builds up over centuries.",
+          "zh": "當一個板塊在隱沒帶緩慢向另一個板塊下方俯衝時，斷層交界面在數百年間累積了令人窒息的巨大應力。"
+        },
+        {
+          "en": "The Pacific Ring of Fire is defined by continuous subduction zones that give birth to coastal volcanic arcs.",
+          "zh": "環太平洋火山地震帶正是由一連串綿延不絕的板塊隱沒帶所構成，因而催生出環繞大洋的火山島弧鏈。"
+        }
+      ],
+      "collocations": [
+        "tectonic plate subduction zone"
+      ]
+    },
+    {
+      "id": 5785,
+      "word": "magma",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmægmə]",
+      "definition": "地函湧升超高溫流動熔融岩漿",
+      "cefr": "B1",
+      "topic": "地質火山",
+      "examples": [
+        {
+          "en": "Seafloor spreading occurs when molten magma welled up from the mantle hardens into fresh oceanic crust.",
+          "zh": "當熾熱的高溫地下岩漿從地函湧出接觸冰冷海水凝固，在大洋中脊不斷誕生全新的大洋地殼。"
+        },
+        {
+          "en": "Submarine eruptions freeze liquid magma into smooth, bulbous pillow basalt formations on the seabed.",
+          "zh": "海底火山的噴發使灼熱岩漿遇冰水急冷，在海床上凝結成一顆顆光滑圓潤的枕狀玄武岩。"
+        },
+        {
+          "en": "Seismic sensors detected the subterranean movement of molten magma beneath the deep-sea caldera.",
+          "zh": "佈設在深海破火山口周圍的微震感測器，靈敏捕捉到了地下深層熔融岩漿流動遷移的脈動。"
+        }
+      ],
+      "collocations": [
+        "molten volcanic magma"
+      ]
+    },
+    {
+      "id": 5786,
+      "word": "spreading",
+      "pos": "n. [U], adj.",
+      "phonetic": "[ˋsprɛdɪŋ]",
+      "definition": "大洋中脊板塊張裂海床擴張的",
+      "cefr": "B1",
+      "topic": "海床擴張",
+      "examples": [
+        {
+          "en": "Seafloor spreading pushes continental tectonic plates apart at a rate of several centimeters every year.",
+          "zh": "大洋中脊的海床擴張運動，正以每年數公分的速度悄然推動著兩側大陸板塊向外漂移。"
+        },
+        {
+          "en": "Symmetrical magnetic stripes recorded in basalt rock prove the historic reality of seafloor spreading.",
+          "zh": "對稱排列於洋中脊兩側玄武岩中的地磁倒轉條帶，以鐵證證實了海床擴張學說的地質歷史真實性。"
+        },
+        {
+          "en": "At the mid-ocean spreading center, new lithosphere is forged continuously from upwelling volcanic materials.",
+          "zh": "在大洋中脊的海床張裂擴張中心，湧升的地函火山物質正源源不絕鍛造出全新的海洋岩石圈。"
+        }
+      ],
+      "collocations": [
+        "seafloor tectonic spreading"
+      ]
+    },
+    {
+      "id": 5787,
+      "word": "benthic",
+      "pos": "adj.",
+      "phonetic": "[ˋbɛnθɪk]",
+      "definition": "數千米深海海床底棲帶生態系群落的",
+      "cefr": "B1",
+      "topic": "底棲環境",
+      "examples": [
+        {
+          "en": "Starfish, sea cucumbers, and glass sponges populate the silent, dark benthic boundary ecosystem.",
+          "zh": "海星、深海海參與玻璃海綿，共同棲息在永恆寂靜的深海底棲帶泥質沉積物海床上。"
+        },
+        {
+          "en": "Heavy fishing trawlers drag huge nets across the seabed, causing severe devastation to sensitive benthic habitats.",
+          "zh": "沉重的大型底拖漁網在海床上肆意刮除拖行，對極度脆弱敏感的底棲生物棲地造成不可逆的浩劫。"
+        },
+        {
+          "en": "Sampling the benthic sediments revealed thousands of unclassified microscopic nematode worm species.",
+          "zh": "從海床泥樣中採集分析底棲沉積物，鑑定出數以千計科學界從未記載分類過的微型線蟲新物種。"
+        }
+      ],
+      "collocations": [
+        "benthic boundary ecosystem"
+      ]
+    },
+    {
+      "id": 5788,
+      "word": "pelagic",
+      "pos": "adj.",
+      "phonetic": "[pəˋlædʒɪk]",
+      "definition": "遠洋開闊無垠水層 (遠離陸地與海床) 的",
+      "cefr": "B1",
+      "topic": "遠洋水體",
+      "examples": [
+        {
+          "en": "Pelagic predators like tuna and oceanic sharks hunt across vast stretches of sunlit open blue ocean.",
+          "zh": "鮪魚與遠洋鯊魚等大型掠食者，自由穿梭在陽光灑落、無邊無際的開闊大洋水層中巡航捕食。"
+        },
+        {
+          "en": "Pelagic ecosystems depend on microscopic phytoplankton floating near the surface to produce energy.",
+          "zh": "開闊大洋表層水體生態系統，高度仰賴漂浮在陽光透光層的微型浮游植物進行光合作用提供初級能量。"
+        },
+        {
+          "en": "Migratory birds fly thousands of miles across pelagic waters without ever setting foot on land.",
+          "zh": "遠洋海鳥在開闊無垠的大洋水域上空振翅翱翔數千英里，數月之間足跡未曾踏足任何陸地。"
+        }
+      ],
+      "collocations": [
+        "open pelagic ocean zone"
+      ]
+    },
+    {
+      "id": 5789,
+      "word": "snow",
+      "pos": "n. [U]",
+      "phonetic": "[sno]",
+      "definition": "海雪 (表層有機碎屑如雪花般緩緩沉降)；雪",
+      "cefr": "B1",
+      "topic": "養分輸送",
+      "examples": [
+        {
+          "en": "Drifting flakes of organic marine snow provide the primary food source for bizarre creatures of the abyss.",
+          "zh": "從海洋表層如雪花般飄落的海雪有機碎屑，是萬米深淵奇特生物賴以維生的主要糧食來源。"
+        },
+        {
+          "en": "Composed of dead plankton, fecal pellets, and dust, marine snow drifts perpetually into the abyss.",
+          "zh": "由死去的浮游生物殘骸、排泄物顆粒與大氣微塵組成的海雪，永不停歇地向萬米深淵深處緩緩沉降。"
+        },
+        {
+          "en": "Deep-sea filter feeders extend feathery appendages to catch descending particles of marine snow.",
+          "zh": "深海底棲濾食性生物伸展出羽毛般的觸手與過濾篩網，在水流中攔截沉降而下的點點海雪顆粒。"
+        }
+      ],
+      "collocations": [
+        "organic marine snow"
+      ]
+    },
+    {
+      "id": 5790,
+      "word": "biodiversity",
+      "pos": "n. [U]",
+      "phonetic": "[͵baɪodaɪˋvɝsətɪ]",
+      "definition": "浩瀚深海未解生物多樣性寶庫",
+      "cefr": "B1",
+      "topic": "生態保育",
+      "examples": [
+        {
+          "en": "Deep ocean seamounts harbor astonishing levels of undiscovered genetic biodiversity.",
+          "zh": "沉睡在深海的孤立海山，蘊藏著超乎人類想像、宛如外星世界的龐大未發現生物多樣性。"
+        },
+        {
+          "en": "Protecting fragile marine biodiversity requires strict international treaties prohibiting deep-sea trawling.",
+          "zh": "保護脆弱珍稀的深海生物多樣性，迫切需要跨國簽署嚴格禁止公海深海破壞性底拖網捕撈的國際公約。"
+        },
+        {
+          "en": "Each new deep submersible expedition identifies dozens of bizarre new species, expanding known global biodiversity.",
+          "zh": "每一次科研載人深潛器的成功下潛探勘，總能發現數十種前所未見的奇異新物種，大幅擴展地球生物多樣性版圖。"
+        }
+      ],
+      "collocations": [
+        "deep ocean marine biodiversity"
+      ]
+    },
+    {
+      "id": 5791,
+      "word": "pristine",
+      "pos": "adj.",
+      "phonetic": "[ˋprɪstin]",
+      "definition": "億萬年未受任何人工干擾之原始深海的",
+      "cefr": "B1",
+      "topic": "原始純淨",
+      "examples": [
+        {
+          "en": "Safeguarding the pristine hadal seafloor from destructive commercial seabed mining is a global moral duty.",
+          "zh": "保護歷經億萬年純淨無暇的原始深海海床免受破壞性採礦摧殘，是全人類的共同道德責任。"
+        },
+        {
+          "en": "The remote abyssal plain remained completely pristine until synthetic microplastics began sinking into the sediments.",
+          "zh": "這片遙遠深邃的萬米深海平原億萬年來純淨原始，直到人造塑膠微粒開始悄悄沉澱進入深海沉積物。"
+        },
+        {
+          "en": "Marine sanctuaries aim to keep these pristine underwater habitats untouched for scientific study.",
+          "zh": "劃設公海深海海洋自然保護區的核心目標，正是為了將這些純淨無暇的水下原始棲地永久封存供科學探索。"
+        }
+      ],
+      "collocations": [
+        "untouched pristine seabed"
+      ]
+    },
+    {
+      "id": 5792,
+      "word": "frontier",
+      "pos": "n.",
+      "phonetic": "[frʌnˋtɪr]",
+      "definition": "地球上最後未被揭開的神秘未知疆界",
+      "cefr": "B1",
+      "topic": "探險疆界",
+      "examples": [
+        {
+          "en": "The deep ocean floor remains Earth's least understood planetary frontier, with less than 20% mapped in detail.",
+          "zh": "覆蓋地球七成面積的深邃海底，是人類在地球上最後未曾全面踏足的未知科學疆界。"
+        },
+        {
+          "en": "Venturing into this dark oceanic frontier requires technology just as sophisticated as outer space exploration.",
+          "zh": "涉足這片永恆漆黑的深海科學前線，所需要的工程耐壓技術複雜度絲毫不亞於外太空探險。"
+        },
+        {
+          "en": "Deep-sea exploration represents mankind's final geographical frontier on planet Earth.",
+          "zh": "萬米深海的全面科考與探勘，標誌著人類在母星地球上最後一個尚未被完全征服的地理探索大疆界。"
+        }
+      ],
+      "collocations": [
+        "final unexplored ocean frontier"
+      ]
+    },
+    {
+      "id": 5793,
+      "word": "curiosity",
+      "pos": "n. [U]",
+      "phonetic": "[͵kjʊrɪˋɑsətɪ]",
+      "definition": "人類永無止境之深海科學探知慾",
+      "cefr": "B1",
+      "topic": "探索動力",
+      "examples": [
+        {
+          "en": "Driven by scientific curiosity, marine biologists venture into the dark unknown to discover alien lifeforms.",
+          "zh": "懷抱著對宇宙與生命的無盡科學求知慾，海洋學家勇敢潛入漆黑未知深淵尋覓奇異生命。"
+        },
+        {
+          "en": "Childlike curiosity about what lies at the bottom of the trench pushed the team through years of hardship.",
+          "zh": "正是對海溝最深處究竟隱藏著什麼的純真求知好奇心，支撐著科研團隊熬過長年累月的艱苦研發。"
+        },
+        {
+          "en": "Deep sea research satisfies our fundamental curiosity about the origins of life in extreme planetary environments.",
+          "zh": "深海極限環境科考，深層滿足了人類對地球早期極端環境中生命如何萌芽起源的根本求知渴望。"
+        }
+      ],
+      "collocations": [
+        "endless scientific curiosity"
+      ]
+    },
+    {
+      "id": 5794,
+      "word": "voyage",
+      "pos": "n., v.",
+      "phonetic": "[ˋvɔɪɪdʒ]",
+      "definition": "航向深海深淵的跨國深海科學遠航",
+      "cefr": "B1",
+      "topic": "科考遠航",
+      "examples": [
+        {
+          "en": "The research vessel departed on an epic two-month oceanographic voyage across the stormy western Pacific.",
+          "zh": "頂級海洋科研船啟程展開為期兩個月、橫跨西太平洋狂風巨浪的壯麗深海科考遠航。"
+        },
+        {
+          "en": "Chronicling their scientific voyage across remote seas yielded remarkable documentary footage.",
+          "zh": "詳實記錄他們穿越偏遠大洋風暴的這趟科學遠征航程，催生出震撼人心的海洋深海紀錄片巨作。"
+        },
+        {
+          "en": "Every crew member on this daring voyage into the abyss understood the dangerous risks involved.",
+          "zh": "參與這趟勇闖萬米深海危險航程的每位船員與科學家，內心深處皆深知此行所伴隨的巨大技術風險。"
+        }
+      ],
+      "collocations": [
+        "deep ocean research voyage"
+      ]
+    },
+    {
+      "id": 5795,
+      "word": "discovery",
+      "pos": "n.",
+      "phonetic": "[dɪsˋkʌvərɪ]",
+      "definition": "改寫生物教科書之重大深海科學發現",
+      "cefr": "B1",
+      "topic": "重大發現",
+      "examples": [
+        {
+          "en": "The surprising discovery of life thriving without sunlight at hydrothermal vents reshaped our view of biology.",
+          "zh": "在無光熱泉發現繁盛生命群落的重大科學發現，徹底顛覆了人類過去對生命起源的認知。"
+        },
+        {
+          "en": "Every sweep of the robotic camera leads to the exciting discovery of strange, undescribed marine organisms.",
+          "zh": "水下機器人高解析攝影機的每一次掃描推進，總能帶來令人熱血沸騰的奇異深海新物種重大發現。"
+        },
+        {
+          "en": "Publishing the discovery of deep-sea methane cold seeps earned the research group global scientific acclaim.",
+          "zh": "發表深海天然氣甲烷冷泉共生生態的突破性科學發現，為該研究跨國團隊贏得了世界頂尖學術讚譽。"
+        }
+      ],
+      "collocations": [
+        "groundbreaking scientific discovery"
+      ]
+    },
+    {
+      "id": 5796,
+      "word": "mystery",
+      "pos": "n.",
+      "phonetic": "[ˋmɪstərɪ]",
+      "definition": "黑暗萬米深海千古未解之神秘謎團",
+      "cefr": "B1",
+      "topic": "未解之謎",
+      "examples": [
+        {
+          "en": "Unraveling the deep sea mystery of giant squids and abyssal trenches inspires future generations of scientists.",
+          "zh": "揭開巨型大王烏賊與萬米海溝的千古深海謎團，持續激勵著無數年輕學子投身海洋科學。"
+        },
+        {
+          "en": "How delicate translucent snailfish endure crushing hydrostatic pressure remains a fascinating biological mystery.",
+          "zh": "通體透明脆弱的獅子魚究竟如何在毀滅性水壓下生生不息，至今依然是生物學界津津樂道的未解之謎。"
+        },
+        {
+          "en": "The dark expanse of the deep ocean conceals countless ecological mysteries waiting to be solved.",
+          "zh": "萬米深海廣袤無垠的黑暗水體，深藏著無數等待人類智慧與科技去逐一解碼的地球演化大謎團。"
+        }
+      ],
+      "collocations": [
+        "unsolved deep ocean mystery"
+      ]
+    },
+    {
+      "id": 5797,
+      "word": "expedition",
+      "pos": "n.",
+      "phonetic": "[͵ɛkspɪˋdɪʃən]",
+      "definition": "配備頂級深潛設備之國際深海探險隊",
+      "cefr": "B1",
+      "topic": "探險科考",
+      "examples": [
+        {
+          "en": "The multi-national hadal expedition descended to the deepest trench on Earth to collect water and DNA samples.",
+          "zh": "這支配備頂級深潛器的跨國深淵探險隊，成功下潛至地球最深處採集水質與環境 DNA 樣本。"
+        },
+        {
+          "en": "Preparing for the month-long oceanographic expedition required testing every titanium fastener twice.",
+          "zh": "為這場為期一個月的深海遠洋科學探險隊做好萬全準備，團隊對每一個鈦合金扣件都進行了雙重嚴苛檢測。"
+        },
+        {
+          "en": "The daring polar expedition mapped uncharted deep basins locked beneath permanent Arctic pack ice.",
+          "zh": "這支英勇無畏的極地科考探險隊，成功測繪出長年封凍在北極終年浮冰下從未被記載的萬米深海盆地。"
+        }
+      ],
+      "collocations": [
+        "deep-sea hadal expedition"
+      ]
+    },
+    {
+      "id": 5798,
+      "word": "resilience",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋzɪlɪəns]",
+      "definition": "深海極端生物展現之強韌生命韌性",
+      "cefr": "B1",
+      "topic": "生命韌性",
+      "examples": [
+        {
+          "en": "Surviving complete darkness, freezing water, and crushing pressure demonstrates nature's boundless resilience.",
+          "zh": "在永恆黑暗、冰點低溫與毀滅性重壓下生生不息，深海生物向世人展現了大自然無窮的生命韌性。"
+        },
+        {
+          "en": "The ecological resilience of deep vent communities after volcanic eruptions surprises marine biologists.",
+          "zh": "海底火山狂暴爆發摧毀一切之後，熱泉生物群落驚人的自我修復與生態復原韌性，令海洋學家嘆為觀止。"
+        },
+        {
+          "en": "Evolution has endowed these abyssal organisms with unmatched physiological resilience against the elements.",
+          "zh": "漫長的物競天擇演化賦予了這些深淵奇特生物無與倫比的生理韌性，在極端惡劣環境中昂然生存。"
+        }
+      ],
+      "collocations": [
+        "extreme biological resilience"
+      ]
+    },
+    {
+      "id": 5799,
+      "word": "expanse",
+      "pos": "n.",
+      "phonetic": "[ɪkˋspæns]",
+      "definition": "浩瀚無垠深不可測之深藍廣袤大洋",
+      "cefr": "B1",
+      "topic": "浩瀚空間",
+      "examples": [
+        {
+          "en": "Beneath the calm ocean surface lies a colossal, three-dimensional water expanse larger than all dry continents.",
+          "zh": "在平靜的海面之下，隱藏著一個比地球所有陸地加總還要遼闊數倍的深藍廣袤大洋空間。"
+        },
+        {
+          "en": "The research vessel drifted alone on the vast expanse of the open blue Pacific Ocean.",
+          "zh": "孤單的海洋科研船靜靜漂泊在開闊無垠、浩瀚壯闊的深藍太平洋萬里海天之中。"
+        },
+        {
+          "en": "Looking into the empty blue expanse of the ocean reminds humans of how small our planet's dry land truly is.",
+          "zh": "凝視著空曠深邃、無邊無際的湛藍廣袤大洋，時刻提醒著人類陸地在整顆藍色水星上是多麼渺小。"
+        }
+      ],
+      "collocations": [
+        "vast oceanic blue expanse"
+      ]
+    },
+    {
+      "id": 5800,
+      "word": "awe",
+      "pos": "n. [U], v.",
+      "phonetic": "[ɔ]",
+      "definition": "凝望漆黑無垠深淵之極致震撼與敬畏",
+      "cefr": "B1",
+      "topic": "心靈敬畏",
+      "examples": [
+        {
+          "en": "Staring out of the submarine viewport into the pitch-black abyss fills human hearts with quiet awe.",
+          "zh": "當透過潛水艇觀察窗凝視著窗外無邊無際的漆黑深淵時，每個人的心靈深處都被巨大的震撼與敬畏所填滿。"
+        },
+        {
+          "en": "The sheer scale and ancient stillness of the deep sea command respect and profound scientific awe.",
+          "zh": "萬米深海那令人屏息的壯闊浩瀚與億萬年不變的永恆沉寂，喚起人類由衷的敬意與深刻的科學敬畏。"
+        },
+        {
+          "en": "Divers who witnessed giant bioluminescent siphonophores floated motionless in stunned awe.",
+          "zh": "親眼目睹長達數十公尺、全身閃耀冷光的巨型管水母的潛水員們，無不在強烈震撼與由衷敬畏中屏息凝神。"
+        }
+      ],
+      "collocations": [
+        "profound sense of awe"
+      ]
+    }
+  ]
+}

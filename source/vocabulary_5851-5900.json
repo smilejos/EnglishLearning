@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,851–5,900 個單字（CEFR B1 中級）",
+  "batch": "5851-5900",
+  "range": "5851–5900",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5851,
+      "word": "forensics",
+      "pos": "n. [pl.]",
+      "phonetic": "[fəˋrɛnsɪks]",
+      "definition": "數位鑑識與法醫鑑識科學",
+      "cefr": "B1",
+      "topic": "鑑識科學",
+      "examples": [
+        {
+          "en": "Digital forensics experts recovered deleted chat logs from the suspect's water-damaged hard drive.",
+          "zh": "數位鑑識專家成功從嫌犯泡水的報廢硬碟中，還原出關鍵的加密通訊刪除對話紀錄。"
+        },
+        {
+          "en": "Developments in DNA forensics have solved cold cases that had baffled detectives for decades.",
+          "zh": "DNA 鑑識科學的飛躍進展，讓許多曾讓老刑警苦思數十年不得其解的歷史懸案迎刃而解。"
+        },
+        {
+          "en": "The police department established a specialized mobile forensics unit for fast on-site data extraction.",
+          "zh": "警察局成立了高規格行動鑑識實驗車隊，能在第一時間趕赴重大現場進行即時數位採證提取。"
+        }
+      ],
+      "collocations": [
+        "digital computer forensics"
+      ]
+    },
+    {
+      "id": 5852,
+      "word": "scene",
+      "pos": "n.",
+      "phonetic": "[sin]",
+      "definition": "犯罪現場黃色警戒封鎖線；場景",
+      "cefr": "B1",
+      "topic": "現場勘驗",
+      "examples": [
+        {
+          "en": "Patrol officers immediately cordoned off the indoor crime scene with bright yellow caution tape.",
+          "zh": "巡邏員警第一時間拉起鮮黃色警戒封鎖線，嚴格管制並保全犯罪現場完整跡證。"
+        },
+        {
+          "en": "Forensic technicians spent eight hours systematically photographing and dusting the entire scene.",
+          "zh": "鑑識小組人員耗費了整整八個小時，對整個犯罪現場展開地毯式的照相存證與粉末採證。"
+        },
+        {
+          "en": "Unauthorized personnel were strictly barred from walking across the wet murder scene.",
+          "zh": "所有未經授權的無關人員一律被嚴格隔離在外，嚴禁踩踏尚未勘驗完成的命案現場。"
+        }
+      ],
+      "collocations": [
+        "secure the crime scene"
+      ]
+    },
+    {
+      "id": 5853,
+      "word": "evidence",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɛvədəns]",
+      "definition": "實體物證與數位電子證物；證據",
+      "cefr": "B1",
+      "topic": "證據保全",
+      "examples": [
+        {
+          "en": "Investigators carefully sealed microscopic fiber evidence inside tamper-evident sterile plastic envelopes.",
+          "zh": "鑑識人員小心翼翼將微量纖維物證，封存於防竄改的無菌專用證物袋中。"
+        },
+        {
+          "en": "The defense attorney argued that there was insufficient evidence to justify a formal indictment.",
+          "zh": "被告辯護律師在法庭上主張，檢方所掌握的實質證據不足以支持正式公訴起訴。"
+        },
+        {
+          "en": "Fingerprint evidence recovered from the safe door directly connected the burglar to the robbery.",
+          "zh": "從金庫保險箱把手上成功採集到的指紋物證，將該名竊嫌與這起重大竊案直接鏈結在一起。"
+        }
+      ],
+      "collocations": [
+        "physical forensic evidence"
+      ]
+    },
+    {
+      "id": 5854,
+      "word": "custody",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkʌstədɪ]",
+      "definition": "證物保管鏈紀錄 (防竄改防調包)；監管",
+      "cefr": "B1",
+      "topic": "司法程序",
+      "examples": [
+        {
+          "en": "A rigorous chain of custody log proves that the blood sample was never altered or contaminated.",
+          "zh": "嚴謹記載每位經手人的證物保管鏈，證明血液樣本從未遭受竄改或污染。"
+        },
+        {
+          "en": "Any break in the chain of custody can render crucial evidence completely inadmissible in court.",
+          "zh": "證物保管鏈在傳遞過程中只要出現任何時間斷點或紀錄漏洞，都會導致關鍵證物在法庭上被全盤推翻。"
+        },
+        {
+          "en": "The forensic officer signed the custody transfer sheet before delivering the weapon to the ballistics lab.",
+          "zh": "鑑識警官在將作案槍枝親自押送至彈道實驗室前，在證物保管移交清冊上鄭重簽字確認。"
+        }
+      ],
+      "collocations": [
+        "strict chain of custody"
+      ]
+    },
+    {
+      "id": 5855,
+      "word": "latent",
+      "pos": "adj.",
+      "phonetic": "[ˋletnt]",
+      "definition": "磁性粉末刷顯潛伏指紋的；潛在的",
+      "cefr": "B1",
+      "topic": "指紋採集",
+      "examples": [
+        {
+          "en": "Dusting volcanic ash powder over the smooth glass table revealed three distinct latent fingerprints.",
+          "zh": "在光滑玻璃桌面上輕輕刷掃磁性粉末，顯現出三枚肉眼難辨的清晰潛伏指紋。"
+        },
+        {
+          "en": "Cyanoacrylate fuming chambers visualize faint latent prints left on oily aluminum drink cans.",
+          "zh": "透過三秒膠三聚氰胺熱燻氣化顯影箱，能在油膩的鋁箔飲料罐上清晰顯現出微弱的潛伏指紋。"
+        },
+        {
+          "en": "The latent fingerprint on the steering wheel matched the missing driver’s biometric file.",
+          "zh": "方向盤上刷顯出來的這枚潛伏指紋，經指紋比對與失蹤駕駛的生物辨識建檔完全吻合。"
+        }
+      ],
+      "collocations": [
+        "latent fingerprint dusting"
+      ]
+    },
+    {
+      "id": 5856,
+      "word": "fingerprint",
+      "pos": "n., v.",
+      "phonetic": "[ˋfɪŋgɚ͵prɪnt]",
+      "definition": "指紋自動比對辨識系統 (AFIS)；指紋",
+      "cefr": "B1",
+      "topic": "生物特徵",
+      "examples": [
+        {
+          "en": "Automated fingerprint databases matched the suspect's thumbprint within twenty seconds of scanning.",
+          "zh": "全國指紋資料庫在掃描輸入二十秒內，即精準比對出嫌疑人的大拇指指紋。"
+        },
+        {
+          "en": "Every human fingerprint possesses unique whorls, arches, and ridges that remain unchanged through life.",
+          "zh": "每個人的手指指紋都擁有獨一無二的斗型紋、弓型紋與箕型紋，且終生保持恆定不變。"
+        },
+        {
+          "en": "The technician took digital fingerprint impressions from all arrested suspects at the precinct.",
+          "zh": "鑑識技術員在分局偵訊室中，使用高階光學滾動感測器為所有被捕嫌疑人建立數位指紋檔。"
+        }
+      ],
+      "collocations": [
+        "national fingerprint database"
+      ]
+    },
+    {
+      "id": 5857,
+      "word": "luminol",
+      "pos": "n. [U]",
+      "phonetic": "[ˋlumə͵nɑl]",
+      "definition": "魯米諾試劑潛血反應螢光檢驗",
+      "cefr": "B1",
+      "topic": "潛血檢驗",
+      "examples": [
+        {
+          "en": "Spraying luminol solution onto the scrubbed floor triggered an eerie blue chemical glow revealing washed blood.",
+          "zh": "將魯米諾試劑噴灑在擦洗過的地板上，瞬間激發出幽藍螢光，揭露出被清洗過的血跡。"
+        },
+        {
+          "en": "Even after bleach was used to sanitize the bathtub, luminol detected trace iron hemoglobin molecules.",
+          "zh": "即便兇手試圖使用高濃度漂白水刷洗浴缸滅證，魯米諾試劑依然靈敏測出了微量血紅素鐵離子。"
+        },
+        {
+          "en": "Investigators documented the luminol glow using long-exposure photography in total darkness.",
+          "zh": "鑑識小組在伸手不見五指的完全漆黑環境中，利用長時間曝光攝影將魯米諾螢光反應完整定格拍照。"
+        }
+      ],
+      "collocations": [
+        "luminol blood reagent"
+      ]
+    },
+    {
+      "id": 5858,
+      "word": "splatter",
+      "pos": "n. [U], v.",
+      "phonetic": "[ˋsplætɚ]",
+      "definition": "血跡噴濺形態動力學分析；噴濺",
+      "cefr": "B1",
+      "topic": "現場重構",
+      "examples": [
+        {
+          "en": "Bloodstain splatter analysis established that the victim was seated when the blunt attack occurred.",
+          "zh": "透過精密的血跡噴濺形態分析，鑑識專家推斷受害者遇襲時正坐在椅子上。"
+        },
+        {
+          "en": "High-velocity impact splatter patterns on the bedroom ceiling were consistent with gunshot wounds.",
+          "zh": "天花板上呈現的高速衝擊細微血霧噴濺形態，與近距離致命槍擊所產生的創口特徵完全吻合。"
+        },
+        {
+          "en": "Angle calculations derived from the elongated blood splatter indicated the killer’s exact standing position.",
+          "zh": "鑑識人員利用長橢圓形噴濺血滴進行撞擊角度反向推算，精準標定出兇手行兇時的站立位置。"
+        }
+      ],
+      "collocations": [
+        "bloodstain splatter pattern"
+      ]
+    },
+    {
+      "id": 5859,
+      "word": "ballistics",
+      "pos": "n. [pl.]",
+      "phonetic": "[bəˋlɪstɪks]",
+      "definition": "彈道學膛線擦痕與彈頭比對",
+      "cefr": "B1",
+      "topic": "彈道鑑定",
+      "examples": [
+        {
+          "en": "Ballistics examiners matched microscopic barrel rifling grooves on the fired lead bullet to the seized pistol.",
+          "zh": "彈道學專家在顯微鏡下比對彈頭上的微細膛線擦痕，確認正是查扣的手槍所擊發。"
+        },
+        {
+          "en": "Trajectory lasers placed across the shattered window helped ballistics teams map the shooter’s line of fire.",
+          "zh": "橫跨碎裂落地窗架設的紅色彈道雷射光束，協助彈道專家精確標繪出狙擊手的開槍射擊路徑。"
+        },
+        {
+          "en": "The ballistics report confirmed that both victims had been targeted using the same customized rifle.",
+          "zh": "刑事局彈道鑑定報告正式出爐，確認兩名死者均是遭同一把經過改裝的制式步槍所射殺。"
+        }
+      ],
+      "collocations": [
+        "forensic firearm ballistics"
+      ]
+    },
+    {
+      "id": 5860,
+      "word": "casing",
+      "pos": "n.",
+      "phonetic": "[ˋkesɪŋ]",
+      "definition": "槍擊現場遺留之黃銅彈殼；外殼",
+      "cefr": "B1",
+      "topic": "槍彈物證",
+      "examples": [
+        {
+          "en": "The robotic metal detector located a spent nine-millimeter brass casing hidden under tall lawn grass.",
+          "zh": "金屬探測器在草坪深處成功尋獲一顆槍擊案現場遺留的九毫米黃銅彈殼。"
+        },
+        {
+          "en": "Firing pin indentations stamped on the brass casing provide distinctive microscopic toolmarks.",
+          "zh": "撞針猛烈擊發時在黃銅底火彈殼上烙下的凹痕特徵，宛如槍枝獨一無二的微觀身分指紋。"
+        },
+        {
+          "en": "Investigators recovered five ejected cartridge casings scattered near the victim's abandoned car.",
+          "zh": "鑑識刑警在被害人遭棄置的轎車旁地面，陸續拾獲了五枚退膛散落的黃銅彈殼。"
+        }
+      ],
+      "collocations": [
+        "spent brass shell casing"
+      ]
+    },
+    {
+      "id": 5861,
+      "word": "autopsy",
+      "pos": "n., v.",
+      "phonetic": "[ˋɔtɑpsɪ]",
+      "definition": "法醫病理解剖相驗鑑定；解剖",
+      "cefr": "B1",
+      "topic": "法醫相驗",
+      "examples": [
+        {
+          "en": "The official post-mortem autopsy determined that death resulted from internal hemorrhaging rather than drowning.",
+          "zh": "正式執行的法醫病理解剖相驗，確認死者死因為內出血而非落水溺斃。"
+        },
+        {
+          "en": "Performing a systematic forensic autopsy includes toxicological screening of liver and vitreous fluid.",
+          "zh": "執行標準法醫解剖程序時，必須常規採集死者的肝臟組織與眼球玻璃體液進行毒物化驗。"
+        },
+        {
+          "en": "The autopsy revealed that the fatal stab wound had pierced the victim's left ventricle.",
+          "zh": "遺體病理解剖報告證實，致命的一刀由肋骨間隙刺入並直接穿透了受害者的左心室。"
+        }
+      ],
+      "collocations": [
+        "forensic post-mortem autopsy"
+      ]
+    },
+    {
+      "id": 5862,
+      "word": "pathology",
+      "pos": "n. [U]",
+      "phonetic": "[pəˋθɑlədʒɪ]",
+      "definition": "法醫病理學 (釐清確切死因與死亡時間)",
+      "cefr": "B1",
+      "topic": "法醫學科",
+      "examples": [
+        {
+          "en": "Forensic pathology helps coroners establish the exact cause, mechanism, and estimated time of death.",
+          "zh": "法醫病理學協助檢察官與法醫精準判定確切死因、致死機轉與推估死亡時間。"
+        },
+        {
+          "en": "Evaluating liver mortis and body temperature falls under the core expertise of forensic pathology.",
+          "zh": "綜合評估屍斑分佈擴散、屍僵僵硬度與肛溫冷卻曲線，是法醫病理學家最核心的專業本領。"
+        },
+        {
+          "en": "The court summoned the professor of forensic pathology to give expert testimony regarding bruising patterns.",
+          "zh": "法院依法傳喚法醫病理學資深權威教授出庭，就死者身上挫傷瘀斑的形成機轉作證說明。"
+        }
+      ],
+      "collocations": [
+        "forensic pathology analysis"
+      ]
+    },
+    {
+      "id": 5863,
+      "word": "toxicology",
+      "pos": "n. [U]",
+      "phonetic": "[͵tɑksəˋkɑlədʒɪ]",
+      "definition": "毒物化學分析 (檢驗血液毒藥物殘留)",
+      "cefr": "B1",
+      "topic": "毒物化驗",
+      "examples": [
+        {
+          "en": "Gas chromatography toxicology screening detected lethal concentrations of cyanide inside the wine glass.",
+          "zh": "氣相層析儀毒物化學篩檢，在高腳酒杯殘液中檢驗出致死劑量的氰化物劇毒。"
+        },
+        {
+          "en": "The coroner sent blood and urine samples to the central toxicology lab to check for fentanyl overdose.",
+          "zh": "法醫相驗官迅速將死者血液與尿液檢體直送法醫毒物實驗室，檢驗是否涉及強效止痛藥芬太尼過量。"
+        },
+        {
+          "en": "Negative toxicology results confirmed that the driver was entirely sober at the moment of the crash.",
+          "zh": "全面呈陰性的血液毒物化驗報告，有力證實肇事駕駛在車禍撞擊發生的瞬間處於完全清醒狀態。"
+        }
+      ],
+      "collocations": [
+        "blood toxicology screening"
+      ]
+    },
+    {
+      "id": 5864,
+      "word": "profile",
+      "pos": "n., v.",
+      "phonetic": "[ˋprofaɪl]",
+      "definition": "國家 DNA 犯罪資料庫基因圖譜比對；輪廓",
+      "cefr": "B1",
+      "topic": "DNA 鑑定",
+      "examples": [
+        {
+          "en": "Forensic technicians generated a complete twenty-marker DNA profile from a single root of suspect hair.",
+          "zh": "鑑識技術員從現場採集到的一根帶毛囊毛髮中，成功建構出完整的二十個位點 DNA 基因圖譜。"
+        },
+        {
+          "en": "Uploading the unidentified suspect profile to CODIS triggered a cold-hit match with an offender in another city.",
+          "zh": "將未知嫌犯的 DNA 檔案上傳至國家犯罪基因資料庫，瞬間比對出鄰近城市在監服刑前科犯的吻合通報。"
+        },
+        {
+          "en": "The genetic profile extracted from the cigarette butt proved conclusively that the suspect lied about his alibi.",
+          "zh": "從命案現場菸屁股唾液萃取出的 DNA 基因圖譜，鐵證如山戳破了嫌犯自稱當時不在場的偽證謊言。"
+        }
+      ],
+      "collocations": [
+        "forensic DNA profile"
+      ]
+    },
+    {
+      "id": 5865,
+      "word": "swab",
+      "pos": "n., v.",
+      "phonetic": "[swɑb]",
+      "definition": "無菌口腔黏膜拭子採樣；用拭子擦拭",
+      "cefr": "B1",
+      "topic": "生物採樣",
+      "examples": [
+        {
+          "en": "Detectives collected a sterile buccal swab from the volunteer to rule out genetic contamination at the scene.",
+          "zh": "刑警採集在場人員的無菌口腔棉棒黏膜拭子，以排除現場遺留基因遭受人為污染。"
+        },
+        {
+          "en": "Technicians swabbed the gear shift lever to collect epithelial skin cells left behind by the car thief.",
+          "zh": "鑑識技術員使用無菌拭子反覆擦拭排檔桿表面，採集偷車賊握持時脫落的微量上皮細胞。"
+        },
+        {
+          "en": "Each cotton swab is air-dried in a laminar flow hood to prevent fungal mold from destroying DNA.",
+          "zh": "每根採集完畢的棉花拭子皆放入超淨工作台中自然陰乾，以防潮濕長霉分解破壞脆弱的 DNA。"
+        }
+      ],
+      "collocations": [
+        "sterile buccal DNA swab"
+      ]
+    },
+    {
+      "id": 5866,
+      "word": "degradation",
+      "pos": "n. [U]",
+      "phonetic": "[͵dɛgrəˋdeʃən]",
+      "definition": "風化骨骸微量降解 DNA 萃取技術；降解",
+      "cefr": "B1",
+      "topic": "基因修復",
+      "examples": [
+        {
+          "en": "Advanced sequencing kits recover usable genetic data despite severe environmental DNA degradation.",
+          "zh": "最新世代基因定序套組，即使在檢體經歷數十年風化日曬嚴重 DNA 降解下仍能定序。"
+        },
+        {
+          "en": "Exposure to torrential rain, sunlight, and heat accelerates chemical degradation of biological samples.",
+          "zh": "長期暴露於暴雨沖刷、紫外線烈日與高溫潮濕環境中，會大幅加速生物檢體的化學降解劣質化。"
+        },
+        {
+          "en": "Forensic scientists developed specialized primers designed specifically to amplify short, degraded DNA fragments.",
+          "zh": "鑑識科學家開發出專用短片段擴增引子，專門用以增幅並修復斷裂破碎的高度降解 DNA。"
+        }
+      ],
+      "collocations": [
+        "environmental DNA degradation"
+      ]
+    },
+    {
+      "id": 5867,
+      "word": "genealogy",
+      "pos": "n. [U]",
+      "phonetic": "[͵dʒinɪˋælədʒɪ]",
+      "definition": "司法遺傳基因譜系學 (偵破冷案)",
+      "cefr": "B1",
+      "topic": "譜系偵查",
+      "examples": [
+        {
+          "en": "Investigative genetic genealogy identified the serial killer through distant third-cousin DNA public profiles.",
+          "zh": "辦案團隊運用司法基因譜系學，透過遠房三代堂表親的公開 DNA 資料庫鎖定真兇。"
+        },
+        {
+          "en": "Genetic genealogy combines commercial genealogy databases with traditional family tree research.",
+          "zh": "司法遺傳譜系學將民間商業尋根基因庫與傳統族譜調閱深度結合，開創了現代辦案新紀元。"
+        },
+        {
+          "en": "By triangulating family lines through genetic genealogy, detectives narrowed down thousands of suspects to two brothers.",
+          "zh": "透過司法譜系學進行跨世代家族族譜三角定位比對，辦案刑警奇蹟般地將數千名嫌疑人縮小至一對親兄弟。"
+        }
+      ],
+      "collocations": [
+        "investigative genetic genealogy"
+      ]
+    },
+    {
+      "id": 5868,
+      "word": "cold",
+      "pos": "adj.",
+      "phonetic": "[kold]",
+      "definition": "重啟偵辦沉冤多年之歷史冷案懸案的；寒冷的",
+      "cefr": "B1",
+      "topic": "冷案懸案",
+      "examples": [
+        {
+          "en": "Detectives reopened the 1985 cold case murder after new microscopic DNA technology became available.",
+          "zh": "隨著次世代微量 DNA 鑑識技術問世，警方正式重啟偵辦這起沉冤四十年之久的重大冷案懸案。"
+        },
+        {
+          "en": "The veteran investigator spent weekends reviewing dusty boxes of cold case evidence files.",
+          "zh": "經驗豐富的資深老刑警犧牲週末休假，反覆重新翻閱封存在檔案室角落佈滿灰塵的冷案卷宗。"
+        },
+        {
+          "en": "Breakthrough fingerprint matches breathed fresh hope into a thirty-year-old cold disappearance case.",
+          "zh": "指紋庫比對技術的重大突破，為這樁塵封長達三十年的失蹤冷案注入了破案的全新曙光。"
+        }
+      ],
+      "collocations": [
+        "unresolved cold case file"
+      ]
+    },
+    {
+      "id": 5869,
+      "word": "cybercrime",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsaɪbɚ͵kraɪm]",
+      "definition": "跨國組織型網路犯罪集團；網路犯罪",
+      "cefr": "B1",
+      "topic": "科技犯罪",
+      "examples": [
+        {
+          "en": "International cybercrime rings use encrypted networks to siphon millions from online banking users.",
+          "zh": "跨國網路犯罪集團，利用暗網與加密通道盜領全球網路銀行用戶數百萬美元。"
+        },
+        {
+          "en": "Specialized task forces coordinate global raids to dismantle syndicated cybercrime infrastructure.",
+          "zh": "跨國科技打詐專案小組透過跨國警政合作展開同步突襲，一舉瓦解龐大的組織型網路犯罪伺服器網絡。"
+        },
+        {
+          "en": "Ransomware and identity theft have become the most financially devastating branches of cybercrime.",
+          "zh": "勒索軟體攻擊與個人身分盜用冒名詐貸，已成為當今全球經濟損失最慘重的科技網路犯罪樣態。"
+        }
+      ],
+      "collocations": [
+        "transnational organized cybercrime"
+      ]
+    },
+    {
+      "id": 5870,
+      "word": "phishing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfɪʃɪŋ]",
+      "definition": "魚叉式網路釣魚詐騙帳密攻擊",
+      "cefr": "B1",
+      "topic": "網路釣魚",
+      "examples": [
+        {
+          "en": "Spear-phishing emails containing malicious invoice attachments fooled accounting staff into leaking passwords.",
+          "zh": "夾帶惡意發票附檔的魚叉式網路釣魚信件，誘騙會計人員點擊並洩漏公司管理員帳密。"
+        },
+        {
+          "en": "Regular employee awareness training teaches staff to spot disguised URLs used in deceptive phishing schemes.",
+          "zh": "企業定期舉辦的全員資安防詐演練，教導員工如何精準辨識偽冒銀行或主管名義發出的釣魚郵件連結。"
+        },
+        {
+          "en": "Multi-factor authentication blocks unauthorized logins even when users fall for sophisticated phishing traps.",
+          "zh": "全面強制導入雙因子多重驗證機制，即便員工不慎誤入精心偽裝的釣魚陷阱，駭客依然無法登入系統。"
+        }
+      ],
+      "collocations": [
+        "spear-phishing email scam"
+      ]
+    },
+    {
+      "id": 5871,
+      "word": "malware",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmæl͵wɛr]",
+      "definition": "勒索病毒惡意程式勒索加密；惡意軟體",
+      "cefr": "B1",
+      "topic": "惡意程式",
+      "examples": [
+        {
+          "en": "The hospital's electronic health databases were locked overnight by aggressive ransomware malware.",
+          "zh": "醫院的電子病歷資料庫在一夜之間慘遭強烈勒索病毒惡意軟體全面綁架加密。"
+        },
+        {
+          "en": "Endpoint detection tools isolated the infected laptop before the stealthy malware could traverse the network.",
+          "zh": "終端資安偵測防護系統在數秒內精準隔離染疫筆記型電腦，成功防堵隱密惡意程式橫向擴散至內網。"
+        },
+        {
+          "en": "Cybercriminals continually rewrite malware source code to evade detection by traditional antivirus scanners.",
+          "zh": "跨國黑客組織不斷動態重構惡意程式底層原始碼與特徵碼，以規避傳統防毒軟體的靜態特徵碼比對。"
+        }
+      ],
+      "collocations": [
+        "malicious ransomware malware"
+      ]
+    },
+    {
+      "id": 5872,
+      "word": "seizure",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsiʒɚ]",
+      "definition": "依法院核發令狀合法搜索扣押；沒收",
+      "cefr": "B1",
+      "topic": "搜索扣押",
+      "examples": [
+        {
+          "en": "Federal agents executed a court-approved search and seizure warrant at the fraudulent crypto company.",
+          "zh": "執法人員持法院核發的合法搜索扣押令，突襲查扣虛擬貨幣詐騙公司的伺服器。"
+        },
+        {
+          "en": "All mobile devices and ledgers collected during the seizure were immediately secured in faraday bags.",
+          "zh": "執行扣押搜索過程中查扣的所有涉案智慧手機與帳冊，立即被封入防信號洩漏的法拉第屏蔽袋內。"
+        },
+        {
+          "en": "Unlawful evidence seizure without probable cause leads to immediate suppression by the trial judge.",
+          "zh": "未經法院核發令狀或欠缺合理懷疑的違法搜索扣押，將導致取得的證物遭審理法官依法全數排除剔除。"
+        }
+      ],
+      "collocations": [
+        "lawful evidence search and seizure"
+      ]
+    },
+    {
+      "id": 5873,
+      "word": "blocker",
+      "pos": "n.",
+      "phonetic": "[ˋblɑkɚ]",
+      "definition": "硬體防寫防竄改讀卡轉接器；阻礙者",
+      "cefr": "B1",
+      "topic": "數位保全",
+      "examples": [
+        {
+          "en": "Attaching a hardware write-blocker ensures that connecting the hard drive does not alter a single byte of data.",
+          "zh": "接上硬體防寫保護轉接器，確保在讀取嫌犯硬碟時絕不改動到任何一個位元組資料。"
+        },
+        {
+          "en": "Using an external write-blocker maintains digital evidence integrity during investigative examinations.",
+          "zh": "透過外接專用硬體防寫轉接器接入電腦，能在鑑識檢視過程中完全保全數位電子證據的原始性。"
+        },
+        {
+          "en": "The forensic examiner verified that the write-blocker’s LED signal confirmed read-only operation mode.",
+          "zh": "數位鑑識官反覆檢視防寫器上的指示燈狀態，百分之百確認目前處於唯讀禁止寫入安全模式。"
+        }
+      ],
+      "collocations": [
+        "hardware write-blocker"
+      ]
+    },
+    {
+      "id": 5874,
+      "word": "imaging",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɪmɪdʒɪŋ]",
+      "definition": "數位硬碟逐位元映像檔鏡像複製 (Bit-Stream)",
+      "cefr": "B1",
+      "topic": "鏡像複製",
+      "examples": [
+        {
+          "en": "Forensic imaging creates a bit-by-bit identical duplicate of the original smartphone storage for analysis.",
+          "zh": "數位鏡像映像複製，為嫌犯手機儲存空間製作出一模一樣的逐位元副本以供分析。"
+        },
+        {
+          "en": "Investigators always work on the verified forensic imaging copy rather than the original physical drive.",
+          "zh": "鑑識分析人員作業時永遠只在校驗合格的數位鏡像副本上分析，嚴禁直接接觸通電實體扣押硬碟。"
+        },
+        {
+          "en": "The imaging process captured all unallocated space and hidden partitions on the raided server.",
+          "zh": "逐位元完整鏡像製作過程完整捕獲了查扣伺服器中的所有未分配儲存磁區與隱藏加密磁碟分割區。"
+        }
+      ],
+      "collocations": [
+        "bit-stream forensic imaging"
+      ]
+    },
+    {
+      "id": 5875,
+      "word": "hash",
+      "pos": "n., v.",
+      "phonetic": "[hæʃ]",
+      "definition": "SHA-256 密碼雜湊值 (確保證物原封未動)",
+      "cefr": "B1",
+      "topic": "雜湊校驗",
+      "examples": [
+        {
+          "en": "Calculating matching SHA-256 hash values proves mathematically that the digital evidence remained untouched.",
+          "zh": "計算前後完全吻合的 SHA-256 密碼雜湊值，在數學上鐵證數位證物未遭任何竄改。"
+        },
+        {
+          "en": "Any modification of a single file character completely scrambles the resulting MD5 hash output.",
+          "zh": "即使僅對檔案中的單一空白字符進行改動，重新計算所產生的 MD5 雜湊值將徹底發生雪崩巨變。"
+        },
+        {
+          "en": "The court verified the forensic report by comparing the hash value taken at seizure with the lab image hash.",
+          "zh": "法院審理時透過嚴格比對查扣當下計算之雜湊值與鑑識實驗室鏡像雜湊值，確認證物完全同一。"
+        }
+      ],
+      "collocations": [
+        "cryptographic SHA-256 hash"
+      ]
+    },
+    {
+      "id": 5876,
+      "word": "volatile",
+      "pos": "adj.",
+      "phonetic": "[ˋvɑlət!]",
+      "definition": "揮發性 RAM 動態記憶體現場即時提取的",
+      "cefr": "B1",
+      "topic": "記憶體鑑識",
+      "examples": [
+        {
+          "en": "Capturing live volatile RAM memory before shutting down the computer preserves active encryption keys.",
+          "zh": "在拔掉電腦電源前即時提取暫存於揮發性動態記憶體中的數據，能搶救出解密金鑰。"
+        },
+        {
+          "en": "Once the machine is unplugged from the wall, all volatile data stored inside memory chips is lost forever.",
+          "zh": "一旦直接拔掉主機電源插頭，暫存在揮發性記憶體晶片中的所有即時連線與加密金鑰將永久灰飛煙滅。"
+        },
+        {
+          "en": "Forensic specialists connect a portable drive to run triage tools that dump volatile memory structures.",
+          "zh": "鑑識專家在現場迅速插上便攜開機磁碟，執行現場快篩腳本將珍貴的揮發性記憶體資料結構全數導出。"
+        }
+      ],
+      "collocations": [
+        "volatile RAM memory capture"
+      ]
+    },
+    {
+      "id": 5877,
+      "word": "artifact",
+      "pos": "n.",
+      "phonetic": "[ˋɑrtə͵fækt]",
+      "definition": "作業系統登錄檔與瀏覽器數位殘留跡證",
+      "cefr": "B1",
+      "topic": "數位痕跡",
+      "examples": [
+        {
+          "en": "Registry artifacts revealed that the employee plugged an unauthorized USB flash drive in at midnight.",
+          "zh": "作業系統登錄檔中的數位殘留跡證，揭露出該員工在午夜曾插入未經授權的隨身碟。"
+        },
+        {
+          "en": "Browser history artifacts retrieved from cache files contradicted the defendant's alibi statement.",
+          "zh": "從系統快取暫存檔中還原出的瀏覽器歷史數位殘留痕跡，徹底戳破了被告編造的自白不在場證明。"
+        },
+        {
+          "en": "Forensic software scans system event logs for subtle artifacts left behind by unauthorized remote intrusions.",
+          "zh": "專業數位鑑識軟體深入掃描系統事件日誌，精確揪出未經授權遠端滲透黑客留下的蛛絲馬跡殘留痕跡。"
+        }
+      ],
+      "collocations": [
+        "digital system artifact"
+      ]
+    },
+    {
+      "id": 5878,
+      "word": "carving",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɑrvɪŋ]",
+      "definition": "未分配磁區已刪除檔案還原雕刻",
+      "cefr": "B1",
+      "topic": "檔案還原",
+      "examples": [
+        {
+          "en": "Advanced file carving algorithms reconstructed deleted surveillance video files from unallocated clusters.",
+          "zh": "先進的檔案雕刻還原技術，成功從未分配磁區中救回被惡意刪除的關鍵監視器錄影。"
+        },
+        {
+          "en": "When directory tables are deliberately wiped, raw file carving searches for known file headers and footers.",
+          "zh": "當硬碟檔案配置表遭故意格式化抹除時，底層檔案雕刻技術能搜尋特定檔案標頭與標尾特徵碼進行重組。"
+        },
+        {
+          "en": "File carving successfully extracted hundreds of deleted incriminating spreadsheets from the empty slack space.",
+          "zh": "檔案雕刻技術奇蹟般地從未配置空白扇區與磁區間隙中，成功挖出數百份被嫌犯刪除的行賄財務報表。"
+        }
+      ],
+      "collocations": [
+        "deleted data file carving"
+      ]
+    },
+    {
+      "id": 5879,
+      "word": "timeline",
+      "pos": "n.",
+      "phonetic": "[ˋtaɪm͵laɪn]",
+      "definition": "嫌犯電腦操作行為時間軸事件重組",
+      "cefr": "B1",
+      "topic": "時間重構",
+      "examples": [
+        {
+          "en": "Reconstructing a chronological event timeline proved the hacker logged into the bank account at 3:14 AM.",
+          "zh": "重組數位操作行為事件時間軸，鐵證該駭客於凌晨三點十四分登入銀行帳戶盜轉資金。"
+        },
+        {
+          "en": "The digital timeline integrated GPS logs, text timestamps, and building badge swipes into one cohesive story.",
+          "zh": "這份全方位的數位鑑識時間軸，將手機 GPS 座標、通訊軟體傳訊時間戳與門禁刷卡紀錄完美串接串連。"
+        },
+        {
+          "en": "Cross-referencing phone activity timelines with the victim’s movements pinpointed the exact abduction window.",
+          "zh": "將通聯紀錄活動時間軸與被害人的行蹤路徑相互交叉比對，精確鎖定了受害人遭綁架的關鍵數分鐘。"
+        }
+      ],
+      "collocations": [
+        "chronological forensic timeline"
+      ]
+    },
+    {
+      "id": 5880,
+      "word": "metadata",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmɛtə͵detə]",
+      "definition": "數位照片 EXIF 拍攝時間與 GPS 元數據",
+      "cefr": "B1",
+      "topic": "元數據",
+      "examples": [
+        {
+          "en": "Extracting image metadata revealed the precise GPS coordinates and camera serial number of the photograph.",
+          "zh": "解析照片檔案中的元數據，直接揭露出拍攝當下的精確 GPS 經緯度座標與相機機身序號。"
+        },
+        {
+          "en": "Email metadata headers trace the global path of messages across intermediate relay mail servers.",
+          "zh": "電子郵件表頭內嵌的伺服器元數據，能清晰追蹤信件在跨國轉發郵件伺服器間傳遞的真實路由軌跡。"
+        },
+        {
+          "en": "The document metadata showed the contract had been authored three days after the victim purportedly died.",
+          "zh": "扣押合約 Word 檔案的後台元數據鐵證如山地顯示，該份協議竟然是在被害人身亡後三天始由他人建立。"
+        }
+      ],
+      "collocations": [
+        "embedded file metadata"
+      ]
+    },
+    {
+      "id": 5881,
+      "word": "geotag",
+      "pos": "n., v.",
+      "phonetic": "[ˋdʒio͵tæg]",
+      "definition": "手機基地台與相片地理定位標籤；打卡標記",
+      "cefr": "B1",
+      "topic": "地理標籤",
+      "examples": [
+        {
+          "en": "The suspect denied visiting the dock, but the geotag embedded in his selfie proved his physical presence.",
+          "zh": "嫌疑人矢口否認曾去過碼頭，但他自拍照中內嵌的地理定位標籤鐵證他當時人就在現場。"
+        },
+        {
+          "en": "Investigators extracted cellular tower geotags from call logs to track the kidnapper’s flight path.",
+          "zh": "辦案人員從通聯通話紀錄中提取手機基地台地理標籤紀錄，精準勾勒出綁匪逃亡時的移動路線。"
+        },
+        {
+          "en": "Social media photos uploaded without disabling geotags inadvertently exposed the fugitive’s hideout address.",
+          "zh": "逃犯在社群平台發布照片時因未關閉相機地理定位標籤功能，不慎將自己藏匿的偏僻別墅地址暴露無遺。"
+        }
+      ],
+      "collocations": [
+        "digital GPS geotag"
+      ]
+    },
+    {
+      "id": 5882,
+      "word": "encryption",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋkrɪpʃən]",
+      "definition": "端對端加密通訊軟體對話紀錄破譯；加密",
+      "cefr": "B1",
+      "topic": "密碼破解",
+      "examples": [
+        {
+          "en": "Breaking the multi-layered database encryption required months of high-performance cluster computing.",
+          "zh": "破解犯罪集團多層結構的高強度資料庫加密，耗費了超級電腦叢集數月的運算解密。"
+        },
+        {
+          "en": "Modern end-to-end messaging encryption presents severe technical hurdles for lawful police surveillance.",
+          "zh": "當代通訊軟體普遍採用的端對端高強度加密協議，為司法機關執行合法的刑事偵查帶來了巨大科技屏障。"
+        },
+        {
+          "en": "Ransomware operators use military-grade AES-256 encryption algorithms to lock corporate server files.",
+          "zh": "跨國勒索軟體黑客組織採用軍規等級的 AES-256 對稱加密演算法，鎖定並癱瘓跨國企業的伺服器檔案。"
+        }
+      ],
+      "collocations": [
+        "strong database encryption"
+      ]
+    },
+    {
+      "id": 5883,
+      "word": "brute-force",
+      "pos": "adj., v. phr.",
+      "phonetic": "[brut fɔrs]",
+      "definition": "暴力密碼破解運算叢集的；暴力破解",
+      "cefr": "B1",
+      "topic": "密碼運算",
+      "examples": [
+        {
+          "en": "Forensic labs deploy GPU clusters to execute brute-force dictionary attacks against locked wallet files.",
+          "zh": "鑑識實驗室調用高效能顯示卡叢集，對加密冷錢包檔案執行每秒億次運算的暴力密碼破解。"
+        },
+        {
+          "en": "Setting eight-character simple passwords makes accounts vulnerable to rapid automated brute-force attacks.",
+          "zh": "僅設定八碼純數字或簡單英文密碼，會讓網路帳戶在自動化暴力密碼窮舉攻擊下瞬間遭到攻破。"
+        },
+        {
+          "en": "The brute-force software systematically tried billions of character combinations every single second.",
+          "zh": "暴力破解軟體以每秒數十億組字元排列組合的驚人運算速度，日夜不休地測試解鎖涉案硬碟主密碼。"
+        }
+      ],
+      "collocations": [
+        "brute-force password cracking"
+      ]
+    },
+    {
+      "id": 5884,
+      "word": "surveillance",
+      "pos": "n. [U]",
+      "phonetic": "[sɚˋveləns]",
+      "definition": "路口監視器高畫質天網行蹤調閱；監控",
+      "cefr": "B1",
+      "topic": "影像監控",
+      "examples": [
+        {
+          "en": "High-definition traffic surveillance cameras tracked the getaway vehicle escaping onto the northbound highway.",
+          "zh": "高畫質路口交通監視器，清晰捕捉到作案逃逸車輛一路開上國道往北逃逸。"
+        },
+        {
+          "en": "Undercover officers maintained 24-hour physical surveillance on the suspected smuggling warehouse.",
+          "zh": "便衣刑警在涉案走私鐵皮倉庫周圍進行了二十四小時全天候的隱蔽埋伏與盯梢監控。"
+        },
+        {
+          "en": "Video surveillance from the convenience store captured the robbery suspect discarding the weapon.",
+          "zh": "超商門口高解析監視器錄影畫面，清楚拍下了搶案嫌疑人將兇器隨手丟棄在水溝中的決定性瞬間。"
+        }
+      ],
+      "collocations": [
+        "high-definition video surveillance"
+      ]
+    },
+    {
+      "id": 5885,
+      "word": "facial",
+      "pos": "adj.",
+      "phonetic": "[ˋfeʃəl]",
+      "definition": "AI 深度學習人臉特徵辨識系統的；臉部的",
+      "cefr": "B1",
+      "topic": "影像比對",
+      "examples": [
+        {
+          "en": "Deep-learning facial recognition software matched the masked robber's brow shape against police mugshots.",
+          "zh": "AI 人臉辨識系統，透過嫌犯露出的眉形與眼眶骨骼特徵成功比對出治安前科檔案。"
+        },
+        {
+          "en": "Airport security checkpoints utilize automated facial recognition scans to screen international arrivals.",
+          "zh": "國際機場出入境海關安檢閘門全面啟用全自動人臉特徵辨識掃描，高效防堵冒名頂替黑名單。"
+        },
+        {
+          "en": "Privacy advocates voice ethical concerns regarding unchecked facial recognition surveillance in public squares.",
+          "zh": "人權與隱私倡議團體針對公共廣場無節制佈設動態人臉辨識天網監控，表達了強烈的法律與倫理擔憂。"
+        }
+      ],
+      "collocations": [
+        "AI facial recognition match"
+      ]
+    },
+    {
+      "id": 5886,
+      "word": "plate",
+      "pos": "n.",
+      "phonetic": "[plet]",
+      "definition": "ALPR 自動辨識車牌車辨系統；車牌",
+      "cefr": "B1",
+      "topic": "車牌辨識",
+      "examples": [
+        {
+          "en": "Automatic license plate reader networks flagged the stolen SUV within two minutes of passing the toll bridge.",
+          "zh": "自動車牌辨識系統在贓車通過收費大橋後兩分鐘內，立即發出警報通報攔截。"
+        },
+        {
+          "en": "Highway patrol vehicles are equipped with rooftop cameras that read every passing car license plate automatically.",
+          "zh": "國道公路警察巡邏車頂部搭載了專用紅外線車牌辨識鏡頭，能自動高速掃描掠過的每輛過路車輛車牌。"
+        },
+        {
+          "en": "The suspect swapped stolen plate tags onto his vehicle to mislead roadside automated reader networks.",
+          "zh": "嫌疑人在作案車輛上懸掛懸掛偷來的假車牌以混淆視聽，企圖誤導沿路佈設的智慧車辨雲端監控。"
+        }
+      ],
+      "collocations": [
+        "automatic license plate reader"
+      ]
+    },
+    {
+      "id": 5887,
+      "word": "warrant",
+      "pos": "n., v.",
+      "phonetic": "[ˋwɔrənt]",
+      "definition": "法院核發合法通訊監察監聽令狀；搜查令",
+      "cefr": "B1",
+      "topic": "司法令狀",
+      "examples": [
+        {
+          "en": "The judge signed a lawful wiretap warrant after investigators presented probable cause of drug trafficking.",
+          "zh": "在辦案人員出示跨國販毒充足事證後，法官正式簽發合法的通訊監察監聽令狀。"
+        },
+        {
+          "en": "Officers must present a signed search warrant to the homeowner before entering the private residence.",
+          "zh": "執法人員在強制破門跨入私人住宅執行搜查前，必須當場依法出示法官簽名的正式搜索扣押令狀。"
+        },
+        {
+          "en": "An emergency arrest warrant was issued immediately after ballistics confirmed the weapon match.",
+          "zh": "在彈道比對鑑定確定扣案槍枝與命案彈頭吻合後，檢察官立即向法院聲請並核發了緊急拘票。"
+        }
+      ],
+      "collocations": [
+        "judicial wiretap search warrant"
+      ]
+    },
+    {
+      "id": 5888,
+      "word": "subpoena",
+      "pos": "n., v.",
+      "phonetic": "[səˋpinə]",
+      "definition": "依法傳票傳喚調閱雲端伺服器紀錄；傳票",
+      "cefr": "B1",
+      "topic": "調閱傳票",
+      "examples": [
+        {
+          "en": "Prosecutors issued a legal subpoena demanding email header logs from the multinational cloud provider.",
+          "zh": "檢察官依法向跨國雲端服務供應商核發調閱傳票，強制調取涉案電子郵件的伺服器紀錄。"
+        },
+        {
+          "en": "The bank compliance officer testified under judicial subpoena regarding suspicious wire transfers.",
+          "zh": "銀行法遵主管在接獲法院正式傳票後出庭作證，就帳戶內涉及的數億可疑跨國洗錢電匯進行說明。"
+        },
+        {
+          "en": "Failing to comply with a federal grand jury subpoena leads to immediate contempt of court charges.",
+          "zh": "收到大陪審團法定傳票卻無故拒絕提供涉案帳冊資料，將立即面臨嚴重的藐視法庭刑事罪名起訴。"
+        }
+      ],
+      "collocations": [
+        "judicial grand jury subpoena"
+      ]
+    },
+    {
+      "id": 5889,
+      "word": "testimony",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtɛstə͵monɪ]",
+      "definition": "鑑識專家證人出庭法庭專業證詞；證詞",
+      "cefr": "B1",
+      "topic": "法庭作證",
+      "examples": [
+        {
+          "en": "The DNA analyst delivered compelling expert witness testimony explaining probability statistics to jurors.",
+          "zh": "資深 DNA 分析官在法庭上發表深具說服力的專家證人證詞，向陪審員詳盡解說統計機率。"
+        },
+        {
+          "en": "Eyewitness testimony can sometimes be unreliable due to extreme stress and distorted perception during trauma.",
+          "zh": "目擊證人的當庭證詞有時會因事發當下承受極大心理創傷與知覺扭曲，而出現不可靠的指認誤差。"
+        },
+        {
+          "en": "The pathologist's direct testimony clarified that the injuries could only have been caused by heavy machinery.",
+          "zh": "法醫病理學專家在證人席上的堅定證言，向法庭清楚闡明死者傷勢絕非摔傷、唯有重型機具撞擊方能造成。"
+        }
+      ],
+      "collocations": [
+        "expert witness court testimony"
+      ]
+    },
+    {
+      "id": 5890,
+      "word": "admissible",
+      "pos": "adj.",
+      "phonetic": "[ədˋmɪsəb!]",
+      "definition": "具備法庭訴訟證據能力與證明力的",
+      "cefr": "B1",
+      "topic": "證據能力",
+      "examples": [
+        {
+          "en": "The judge ruled that the digital evidence gathered without a warrant was legally inadmissible in court.",
+          "zh": "法官依法嚴正裁定，未經合法令狀違法取得的通訊監聽錄音，在法庭上完全不具證據能力。"
+        },
+        {
+          "en": "Following strict forensic standards ensures collected biological specimens remain fully admissible before the bench.",
+          "zh": "嚴格遵循標準鑑識規範提取與封存，能確保現場採集的生物檢體在法官面前具備完備的證據能力。"
+        },
+        {
+          "en": "Hearsay statements are generally inadmissible in criminal trials unless they meet narrow statutory exceptions.",
+          "zh": "傳聞證據在刑事審判中原則上完全不具證據能力，除非符合法律所明文列舉的極少數例外要件。"
+        }
+      ],
+      "collocations": [
+        "legally admissible evidence"
+      ]
+    },
+    {
+      "id": 5891,
+      "word": "prosecution",
+      "pos": "n. [U]",
+      "phonetic": "[͵prɑsəˋkjuʃən]",
+      "definition": "檢察官依法提起公訴起訴；起訴",
+      "cefr": "B1",
+      "topic": "司法公訴",
+      "examples": [
+        {
+          "en": "The state prosecution team presented airtight metallurgical evidence proving corporate negligence.",
+          "zh": "地檢署公訴檢察官團隊，出示無懈可擊的金屬疲勞鑑定報告，起訴建商業務過失。"
+        },
+        {
+          "en": "After months of painstaking grand jury hearings, the federal prosecution formally indicted five executives.",
+          "zh": "歷經大陪審團數月縝密嚴格的調查聽證，聯邦檢察官團隊正式對涉案的五名企業高層提起公訴。"
+        },
+        {
+          "en": "Burden of proof rests squarely on the shoulders of the prosecution throughout every criminal trial.",
+          "zh": "在現代法治國的刑事審判中，無罪推定原則要求舉證責任完全由代表國家公權力的公訴方全額承擔。"
+        }
+      ],
+      "collocations": [
+        "public criminal prosecution"
+      ]
+    },
+    {
+      "id": 5892,
+      "word": "jury",
+      "pos": "n.",
+      "phonetic": "[ˋdʒʊrɪ]",
+      "definition": "國民法官陪審團確信犯罪成立；陪審團",
+      "cefr": "B1",
+      "topic": "審判制度",
+      "examples": [
+        {
+          "en": "Taiwan's Citizen Judge system empowers an ordinary citizen jury to deliberate alongside professional judges.",
+          "zh": "台灣推行之國民法官制度，讓來自各行各業的平民國民法官與職業法官共同參與審判。"
+        },
+        {
+          "en": "The twelve-member jury deliberated for three straight days before reaching a unanimous verdict.",
+          "zh": "由十二名一般市民組成的陪審團連續閉門閉門評議了三天三夜，最終達成了全體一致的有罪裁決。"
+        },
+        {
+          "en": "Jurors listened intently as complex financial ledger evidence was explained during the bribery trial.",
+          "zh": "在貪污受賄大案審理過程中，國民法官與陪審員全神貫注聆聽鑑識會計師解碼複雜的跨國洗錢帳冊。"
+        }
+      ],
+      "collocations": [
+        "citizen judge and jury"
+      ]
+    },
+    {
+      "id": 5893,
+      "word": "doubt",
+      "pos": "n. [U], v.",
+      "phonetic": "[daʊt]",
+      "definition": "排除合理懷疑之嚴格刑事舉證門檻；懷疑",
+      "cefr": "B1",
+      "topic": "舉證標準",
+      "examples": [
+        {
+          "en": "Criminal convictions require the state to prove every single element of the crime beyond a reasonable doubt.",
+          "zh": "刑事法院判決有罪的最高門檻，必須將涉案事實舉證至毫無合理懷疑的境地。"
+        },
+        {
+          "en": "If the defense creates reasonable doubt regarding the murder weapon, jurors must vote to acquit.",
+          "zh": "辯護律師若能在法庭上針對作案兇器的同一性成功建立合理懷疑，陪審團即依法必須做出無罪裁決。"
+        },
+        {
+          "en": "The judge reminded the citizen jury that speculation cannot substitute for proof beyond reasonable doubt.",
+          "zh": "審判長鄭重告誡全體國民法官，任何主觀臆測或推論皆絕對無法取代毫無合理懷疑的嚴格法定舉證門檻。"
+        }
+      ],
+      "collocations": [
+        "beyond a reasonable doubt"
+      ]
+    },
+    {
+      "id": 5894,
+      "word": "exoneration",
+      "pos": "n. [U]",
+      "phonetic": "[ɪg͵zɑnəˋreʃən]",
+      "definition": "新 DNA 鑑定洗刷冤屈平反昭雪無罪獲釋",
+      "cefr": "B1",
+      "topic": "冤獄平反",
+      "examples": [
+        {
+          "en": "After twenty-five years of wrongful imprisonment, post-conviction DNA testing brought complete legal exoneration.",
+          "zh": "歷經長達二十五年的冤獄煎熬，最新次世代 DNA 重驗鑑定終於為無辜受冤者洗刷罪名、平反昭雪。"
+        },
+        {
+          "en": "The Innocence Project works tirelessly to achieve legal exoneration for innocent individuals convicted of crimes.",
+          "zh": "冤獄平反組織長年不懈奔走，致力於藉由最新科學鑑識重驗，為遭受誤判冤獄的無辜人民爭取昭雪獲釋。"
+        },
+        {
+          "en": "Tears flowed freely across the courtroom as the judge announced the long-delayed official exoneration.",
+          "zh": "當法官當庭莊嚴宣讀延遲數十載的官方平反無罪判決時，法庭旁聽席上所有人激動得熱淚盈眶。"
+        }
+      ],
+      "collocations": [
+        "complete DNA wrongful exoneration"
+      ]
+    },
+    {
+      "id": 5895,
+      "word": "integrity",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋtɛgrətɪ]",
+      "definition": "司法鑑識科學一絲不苟之客觀公正與誠實",
+      "cefr": "B1",
+      "topic": "職業操守",
+      "examples": [
+        {
+          "en": "Upholding forensic integrity ensures that scientific analysis serves justice rather than personal bias.",
+          "zh": "堅守鑑識科學客觀中立的崇高操守與誠信，確保科學證據永遠為正義服務而非迎合偏見。"
+        },
+        {
+          "en": "Falsifying lab reports compromises the professional integrity of the entire criminal justice system.",
+          "zh": "任何偽造或竄改實驗室檢驗數據的敗德行為，都將對整個刑事司法體系的專業公信與誠信造成致命摧毀。"
+        },
+        {
+          "en": "The forensic laboratory holds international ISO accreditation, confirming absolute data integrity.",
+          "zh": "該國家級鑑識實驗室榮獲國際 ISO 嚴格認證，確認其在採樣檢驗全程具備絕對的數據完整性與操守。"
+        }
+      ],
+      "collocations": [
+        "scientific forensic integrity"
+      ]
+    },
+    {
+      "id": 5896,
+      "word": "closure",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkloʒɚ]",
+      "definition": "破案告慰受害者家屬帶來心靈終結平靜",
+      "cefr": "B1",
+      "topic": "心靈釋懷",
+      "examples": [
+        {
+          "en": "Solving the cold case forty years later brought long-awaited closure and peace to the grieving family.",
+          "zh": "在事隔四十年後終於宣告破案逮捕真兇，為長期承受巨大悲痛的被害者家屬帶來期盼已久的心靈釋懷。"
+        },
+        {
+          "en": "Finding the missing child’s remains finally allowed parents to experience painful closure.",
+          "zh": "歷經漫長歲月終於尋獲失蹤愛子的遺骸，終於讓白髮蒼蒼的父母親在傷痛中得到了最終的心靈平息。"
+        },
+        {
+          "en": "Bringing the fugitive to trial provides the surviving community with a vital sense of legal and emotional closure.",
+          "zh": "將逃亡多年的要犯正式逮捕緝拿歸案受審，為劫後餘生的社區居民帶來了法律與情感上的深層釋懷與平靜。"
+        }
+      ],
+      "collocations": [
+        "bring emotional closure"
+      ]
+    },
+    {
+      "id": 5897,
+      "word": "justice",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdʒʌstɪs]",
+      "definition": "矢志捍衛真理追求公理正義與司法公正",
+      "cefr": "B1",
+      "topic": "司法正義",
+      "examples": [
+        {
+          "en": "Forensic science is a powerful shield in the tireless societal pursuit of truth, fairness, and justice.",
+          "zh": "現代鑑識科學是人類社會在不懈追求真理、公平與公理正義道路上最強大的守護之盾。"
+        },
+        {
+          "en": "Society expects the judicial system to deliver swift and impartial justice to every citizen alike.",
+          "zh": "民主法治社會殷切期盼司法審判體系能為每一位公民伸張迅速、不偏不倚的實質公理正義。"
+        },
+        {
+          "en": "Justice is not merely punishing wrongdoers, but ensuring the truly innocent are never wrongly convicted.",
+          "zh": "司法正義絕非僅止於嚴懲作奸犯科之徒，更在於全力築起防線，確保真正無辜的人民絕不遭受絲毫冤屈。"
+        }
+      ],
+      "collocations": [
+        "relentless pursuit of justice"
+      ]
+    },
+    {
+      "id": 5898,
+      "word": "truth",
+      "pos": "n. [U]",
+      "phonetic": "[truθ]",
+      "definition": "抽絲剝繭還原犯罪現場客觀真相",
+      "cefr": "B1",
+      "topic": "客觀真相",
+      "examples": [
+        {
+          "en": "No matter how cleverly a crime is concealed, objective physical evidence always whispers the undeniable truth.",
+          "zh": "無論罪行被掩蓋得如何天衣無縫，冰冷客觀的物理物證終將無聲訴說著無可辯駁的客觀真相。"
+        },
+        {
+          "en": "Seeking the forensic truth requires setting aside all preconceived theories and letting facts speak.",
+          "zh": "追尋鑑識科學的客觀真相，要求辦案人員徹底拋棄一切先入為主的主觀偏見，唯讓冰冷事實說話。"
+        },
+        {
+          "en": "Unearthing the unvarnished scientific truth restores public confidence in the judicial integrity of trials.",
+          "zh": "抽絲剝繭還原未經修飾的科學真理真相，是重建社會大眾對國家司法審判公平信賴的唯一基石。"
+        }
+      ],
+      "collocations": [
+        "uncover the objective truth"
+      ]
+    },
+    {
+      "id": 5899,
+      "word": "vigilance",
+      "pos": "n. [U]",
+      "phonetic": "[ˋvɪdʒələns]",
+      "definition": "打擊新型科技犯罪之高度警覺與防範",
+      "cefr": "B1",
+      "topic": "警覺防範",
+      "examples": [
+        {
+          "en": "Maintaining digital vigilance protects our personal privacy and financial assets from modern cyber threats.",
+          "zh": "保持高度的資安警覺性，能保護個人隱私與數位金融資產免受新型網路詐騙侵害。"
+        },
+        {
+          "en": "Constant vigilance by border customs officials stopped thousands of counterfeit items from entering.",
+          "zh": "海關查緝關員日夜不懈的高度警覺與機警查驗，成功將數以萬計的走私違禁品攔截於國門之外。"
+        },
+        {
+          "en": "Security teams urge vigilance regarding suspicious text links asking for credit card verification codes.",
+          "zh": "警政署反詐騙諮詢專線一再呼籲全體國民提高警覺，切莫輕信要求提供信用卡 OTP 驗證碼的可疑釣魚簡訊。"
+        }
+      ],
+      "collocations": [
+        "constant cybersecurity vigilance"
+      ]
+    },
+    {
+      "id": 5900,
+      "word": "light",
+      "pos": "n. [U]",
+      "phonetic": "[laɪt]",
+      "definition": "鑑識科學之光驅散黑暗照亮司法正義",
+      "cefr": "B1",
+      "topic": "正義之光",
+      "examples": [
+        {
+          "en": "Forensic science shines an unwavering light into the darkest shadows of crime, bringing hidden facts into the open.",
+          "zh": "鑑識科學宛如一柄永不熄滅的正義之光，穿透罪惡最深沉的黑暗陰影，讓真相大白於天下。"
+        },
+        {
+          "en": "Each recovered fingerprint and DNA match serves as a beacon of light piercing through criminal deception.",
+          "zh": "每一枚被顯影比對出的指紋與每一次 DNA 吻合，皆如刺破犯罪謊言與偽裝欺騙的璀璨希望之光。"
+        },
+        {
+          "en": "The relentless search for evidence ensures that the light of truth prevails over the cover-ups of corruption.",
+          "zh": "對物證永不停歇的客觀鑑識與追尋，確保了真理正義之光終將徹底驅散官商勾結與毀屍滅證的暗黑陰霾。"
+        }
+      ],
+      "collocations": [
+        "scientific light of justice"
+      ]
+    }
+  ]
+}

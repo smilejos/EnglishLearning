@@ -1,0 +1,1355 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A1–B1）",
+  "section": "第 1,051–1,100 個單字（CEFR A2 初級）",
+  "batch": "1051-1100",
+  "range": "1051–1100",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 1051,
+      "word": "meeting",
+      "pos": "n.",
+      "phonetic": "[ˋmitɪŋ]",
+      "definition": "會議；討論會",
+      "cefr": "A2",
+      "topic": "職場與商務",
+      "examples": [
+        {
+          "en": "We have a weekly team meeting every Monday morning.",
+          "zh": "我們每週一早上都會召開團隊週會。"
+        },
+        {
+          "en": "The client asked to reschedule our meeting to Thursday.",
+          "zh": "客戶要求將我們的會議改期到週四。"
+        },
+        {
+          "en": "Over twenty managers attended the annual budget meeting.",
+          "zh": "二十多位經理出席了年度預算會議。"
+        }
+      ],
+      "collocations": [
+        "hold a meeting",
+        "attend a meeting"
+      ]
+    },
+    {
+      "id": 1052,
+      "word": "discuss",
+      "pos": "v.",
+      "phonetic": "[dɪˋskʌs]",
+      "definition": "討論；商討",
+      "cefr": "A2",
+      "topic": "溝通與商務",
+      "examples": [
+        {
+          "en": "Let's discuss our marketing strategy during lunch.",
+          "zh": "我們在午餐時討論一下行銷策略吧。"
+        },
+        {
+          "en": "The committee met to discuss the new company policy.",
+          "zh": "委員會開會討論公司的新政策。"
+        },
+        {
+          "en": "Have you discussed this issue with your parents yet?",
+          "zh": "你跟父母討論過這個問題了嗎？"
+        }
+      ],
+      "collocations": [
+        "discuss something with",
+        "discuss plans"
+      ]
+    },
+    {
+      "id": 1053,
+      "word": "discussion",
+      "pos": "n.",
+      "phonetic": "[dɪˋskʌʃən]",
+      "definition": "討論；商議",
+      "cefr": "A2",
+      "topic": "溝通與會議",
+      "examples": [
+        {
+          "en": "The classroom discussion was lively and inspiring.",
+          "zh": "課堂上的討論非常熱烈且富有啟發性。"
+        },
+        {
+          "en": "After a long discussion, we finally reached an agreement.",
+          "zh": "經過長時間的討論，我們終於達成了共識。"
+        },
+        {
+          "en": "This topic is still under discussion by the board.",
+          "zh": "這個議題目前仍在董事會的討論之中。"
+        }
+      ],
+      "collocations": [
+        "group discussion",
+        "open for discussion"
+      ]
+    },
+    {
+      "id": 1054,
+      "word": "project",
+      "pos": "n., v.",
+      "phonetic": "[ˋprɑdʒɛkt] / [prəˋdʒɛkt]",
+      "definition": "專案；計畫；投射",
+      "cefr": "A2",
+      "topic": "職場與學業",
+      "examples": [
+        {
+          "en": "Our group completed the science project ahead of time.",
+          "zh": "我們小組提前完成了自然科學專題計畫。"
+        },
+        {
+          "en": "She is currently managing a major software project.",
+          "zh": "她目前正在負責管理一個大型軟體專案。"
+        },
+        {
+          "en": "The government announced a new housing project for low-income families.",
+          "zh": "政府宣布了一項針對低收入家庭的新住宅計畫。"
+        }
+      ],
+      "collocations": [
+        "science project",
+        "project manager"
+      ]
+    },
+    {
+      "id": 1055,
+      "word": "report",
+      "pos": "n., v.",
+      "phonetic": "[rɪˋport]",
+      "definition": "報告；報導；通報",
+      "cefr": "A2",
+      "topic": "職場與媒體",
+      "examples": [
+        {
+          "en": "Please submit your quarterly sales report by Friday.",
+          "zh": "請在週五前提交你的季度銷售報告。"
+        },
+        {
+          "en": "The weather report predicts heavy rain this afternoon.",
+          "zh": "天氣預報預測今天下午會有大雨。"
+        },
+        {
+          "en": "He reported the stolen bicycle to the local police.",
+          "zh": "他向當地警方通報了腳踏車失竊一事。"
+        }
+      ],
+      "collocations": [
+        "annual report",
+        "report to"
+      ]
+    },
+    {
+      "id": 1056,
+      "word": "presentation",
+      "pos": "n.",
+      "phonetic": "[͵prɛzənˋteʃən]",
+      "definition": "簡報；發表會；呈現",
+      "cefr": "A2",
+      "topic": "職場與學業",
+      "examples": [
+        {
+          "en": "She delivered an impressive slide presentation.",
+          "zh": "她進行了一場令人印象深刻的投影片簡報。"
+        },
+        {
+          "en": "I feel a bit nervous whenever I have to give a presentation.",
+          "zh": "每當我必須做簡報時，我都感到有點緊張。"
+        },
+        {
+          "en": "The sales presentation convinced the client to invest.",
+          "zh": "這場業務簡報說服了客戶進行投資。"
+        }
+      ],
+      "collocations": [
+        "give a presentation",
+        "slide presentation"
+      ]
+    },
+    {
+      "id": 1057,
+      "word": "present",
+      "pos": "v., adj., n.",
+      "phonetic": "[prɪˋzɛnt] / [ˋprɛznt]",
+      "definition": "報告；呈現；出席的；現在",
+      "cefr": "A2",
+      "topic": "職場與狀態",
+      "examples": [
+        {
+          "en": "Every team member must present their ideas today.",
+          "zh": "每位團隊成員今天都必須發表自己的想法。"
+        },
+        {
+          "en": "Only eight members were present at the morning roll call.",
+          "zh": "早晨點名時只有八名成員出席。"
+        },
+        {
+          "en": "He bought a wonderful birthday present for his wife.",
+          "zh": "他為妻子買了一份很棒的生日禮物。"
+        }
+      ],
+      "collocations": [
+        "present ideas",
+        "be present"
+      ]
+    },
+    {
+      "id": 1058,
+      "word": "schedule",
+      "pos": "n., v.",
+      "phonetic": "[ˋskɛdʒʊl]",
+      "definition": "行程表；時刻表；排定",
+      "cefr": "A2",
+      "topic": "時間與管理",
+      "examples": [
+        {
+          "en": "Check your daily schedule to see if you are free.",
+          "zh": "查看你的每日行程表，看看是否有空。"
+        },
+        {
+          "en": "The train arrived twenty minutes behind schedule.",
+          "zh": "火車比預定時間晚到了二十分鐘。"
+        },
+        {
+          "en": "We need to schedule an appointment with the dentist.",
+          "zh": "我們需要和牙醫預約門診時間。"
+        }
+      ],
+      "collocations": [
+        "timetable (英式)",
+        "on schedule"
+      ]
+    },
+    {
+      "id": 1059,
+      "word": "deadline",
+      "pos": "n.",
+      "phonetic": "[ˋdɛdˌlaɪn]",
+      "definition": "截止日期；最後期限",
+      "cefr": "A2",
+      "topic": "時間與職場",
+      "examples": [
+        {
+          "en": "We worked overtime to meet the project deadline.",
+          "zh": "我們加班以趕上專案的最後截止期限。"
+        },
+        {
+          "en": "The deadline for submitting the application is tomorrow noon.",
+          "zh": "申請書提交的截止期限是明天中午。"
+        },
+        {
+          "en": "Can you give us an extension on this deadline?",
+          "zh": "這個截止日期你能讓我們寬限延後嗎？"
+        }
+      ],
+      "collocations": [
+        "meet a deadline",
+        "strict deadline"
+      ]
+    },
+    {
+      "id": 1060,
+      "word": "task",
+      "pos": "n., v.",
+      "phonetic": "[tæsk]",
+      "definition": "任務；工作；派工",
+      "cefr": "A2",
+      "topic": "職場與工作",
+      "examples": [
+        {
+          "en": "Break large tasks into smaller manageable steps.",
+          "zh": "將大任務拆解為較容易處理的小步驟。"
+        },
+        {
+          "en": "Cleaning the entire warehouse was an exhausting task.",
+          "zh": "清理整個倉庫是一項令人筋疲力盡的任務。"
+        },
+        {
+          "en": "Each student was assigned a specific task for the event.",
+          "zh": "每個學生都被分配了該活動的一項具體任務。"
+        }
+      ],
+      "collocations": [
+        "assign a task",
+        "daily tasks"
+      ]
+    },
+    {
+      "id": 1061,
+      "word": "duty",
+      "pos": "n.",
+      "phonetic": "[ˋdjutɪ]",
+      "definition": "職責；責任；關稅",
+      "cefr": "A2",
+      "topic": "職場與責任",
+      "examples": [
+        {
+          "en": "It is every citizen's duty to protect public safety.",
+          "zh": "維護公共安全是每位公民的職責。"
+        },
+        {
+          "en": "The security guard was on duty throughout the night.",
+          "zh": "保全人員整晚都在值班執勤。"
+        },
+        {
+          "en": "Import duties on luxury goods have recently increased.",
+          "zh": "奢侈品的進口關稅最近有所調升。"
+        }
+      ],
+      "collocations": [
+        "on duty",
+        "off duty"
+      ]
+    },
+    {
+      "id": 1062,
+      "word": "responsible",
+      "pos": "adj.",
+      "phonetic": "[rɪˋspɑnsəb!]",
+      "definition": "負責任的；承擔責任的",
+      "cefr": "A2",
+      "topic": "性格與職場",
+      "examples": [
+        {
+          "en": "Ken is responsible for managing customer relations.",
+          "zh": "肯恩負責管理客戶關係事務。"
+        },
+        {
+          "en": "Parents should teach their children to be responsible citizens.",
+          "zh": "父母應當教導孩子成為負責任的公民。"
+        },
+        {
+          "en": "Who is responsible for the broken window in the hallway?",
+          "zh": "走廊上那扇破掉的窗戶是誰該負責？"
+        }
+      ],
+      "collocations": [
+        "responsible for",
+        "responsible person"
+      ]
+    },
+    {
+      "id": 1063,
+      "word": "responsibility",
+      "pos": "n.",
+      "phonetic": "[rɪ͵spɑnsəˋbɪlətɪ]",
+      "definition": "責任；職責",
+      "cefr": "A2",
+      "topic": "職場與道德",
+      "examples": [
+        {
+          "en": "Taking on leadership brings greater responsibility.",
+          "zh": "承擔領導職位伴隨著更大的責任。"
+        },
+        {
+          "en": "It is our moral responsibility to care for the environment.",
+          "zh": "愛護環境是我們的道德責任。"
+        },
+        {
+          "en": "She accepted full responsibility for the mistake in the balance sheet.",
+          "zh": "她對資產負債表上的錯誤承擔了全部責任。"
+        }
+      ],
+      "collocations": [
+        "take responsibility",
+        "sense of responsibility"
+      ]
+    },
+    {
+      "id": 1064,
+      "word": "organize",
+      "pos": "v.",
+      "phonetic": "[ˋɔrgəˌnaɪz]",
+      "definition": "組織；籌辦；整理",
+      "cefr": "A2",
+      "topic": "管理與活動",
+      "examples": [
+        {
+          "en": "The student council organized a charity book sale.",
+          "zh": "學生會籌辦了一場慈善二手書義賣。"
+        },
+        {
+          "en": "You should organize your notes before the final exam.",
+          "zh": "你在期末考前應該整理好你的筆記。"
+        },
+        {
+          "en": "She helped organize a surprise retirement party for her boss.",
+          "zh": "她幫忙為她的老闆籌劃了一場驚喜退休派對。"
+        }
+      ],
+      "collocations": [
+        "organise (英式)",
+        "organize an event"
+      ]
+    },
+    {
+      "id": 1065,
+      "word": "organization",
+      "pos": "n.",
+      "phonetic": "[͵ɔrgənəˋzeʃən]",
+      "definition": "組織；機構；體系",
+      "cefr": "A2",
+      "topic": "社會與組織",
+      "examples": [
+        {
+          "en": "The World Health Organization monitors global disease trends.",
+          "zh": "世界衛生組織監測全球疾病趨勢。"
+        },
+        {
+          "en": "Good organization of time leads to higher productivity.",
+          "zh": "良好的時間規劃組織能帶來更高的生產力。"
+        },
+        {
+          "en": "He volunteered for a non-profit organization that feeds the homeless.",
+          "zh": "他在一間為街友提供食物的非營利組織擔任志工。"
+        }
+      ],
+      "collocations": [
+        "non-profit organization",
+        "international organization"
+      ]
+    },
+    {
+      "id": 1066,
+      "word": "strategy",
+      "pos": "n.",
+      "phonetic": "[ˋstrætədʒɪ]",
+      "definition": "策略；戰略",
+      "cefr": "A2",
+      "topic": "商業與決策",
+      "examples": [
+        {
+          "en": "A good marketing strategy attracts more customers.",
+          "zh": "良好的行銷策略能吸引更多顧客。"
+        },
+        {
+          "en": "We need a clear strategy to win the championship match.",
+          "zh": "我們需要明確的策略才能贏得冠軍賽。"
+        },
+        {
+          "en": "The company changed its pricing strategy to compete better.",
+          "zh": "該公司改變了定價策略以提升競爭力。"
+        }
+      ],
+      "collocations": [
+        "business strategy",
+        "learning strategy"
+      ]
+    },
+    {
+      "id": 1067,
+      "word": "manage",
+      "pos": "v.",
+      "phonetic": "[ˋmænɪdʒ]",
+      "definition": "管理；經營；設法做到",
+      "cefr": "A2",
+      "topic": "職場與能力",
+      "examples": [
+        {
+          "en": "She managed to finish all her homework before 9 PM.",
+          "zh": "她設法在晚上九點前完成了所有功課。"
+        },
+        {
+          "en": "Who will manage the retail shop while the owner is away?",
+          "zh": "店長不在時誰來管理這間零售店面？"
+        },
+        {
+          "en": "I can barely manage to wake up early on winter mornings.",
+          "zh": "冬天早晨我幾乎沒辦法設法早起。"
+        }
+      ],
+      "collocations": [
+        "manage to do",
+        "manage a store"
+      ]
+    },
+    {
+      "id": 1068,
+      "word": "management",
+      "pos": "n.",
+      "phonetic": "[ˋmænɪdʒmənt]",
+      "definition": "管理；經營團隊",
+      "cefr": "A2",
+      "topic": "職場與商業",
+      "examples": [
+        {
+          "en": "Time management is crucial for exam preparation.",
+          "zh": "時間管理對考試準備至關重要。"
+        },
+        {
+          "en": "The new hotel management improved customer service greatly.",
+          "zh": "飯店的新管理團隊大幅提升了顧客服務。"
+        },
+        {
+          "en": "Stress management workshops are held every semester.",
+          "zh": "每個學期都會舉辦壓力管理工作坊。"
+        }
+      ],
+      "collocations": [
+        "time management",
+        "risk management"
+      ]
+    },
+    {
+      "id": 1069,
+      "word": "department",
+      "pos": "n.",
+      "phonetic": "[dɪˋpɑrtmənt]",
+      "definition": "部門；處；科",
+      "cefr": "A2",
+      "topic": "職場與機構",
+      "examples": [
+        {
+          "en": "Which department does Mr. Chen work in?",
+          "zh": "陳先生在哪個部門上班？"
+        },
+        {
+          "en": "She was promoted to head of the marketing department.",
+          "zh": "她被晉升為行銷部門的主管。"
+        },
+        {
+          "en": "Let's browse the clothing section in that department store.",
+          "zh": "我們去那家百貨公司的服飾區逛逛吧。"
+        }
+      ],
+      "collocations": [
+        "sales department",
+        "human resources department"
+      ]
+    },
+    {
+      "id": 1070,
+      "word": "printer",
+      "pos": "n.",
+      "phonetic": "[ˋprɪntɚ]",
+      "definition": "印表機；印刷廠",
+      "cefr": "A2",
+      "topic": "辦公設備",
+      "examples": [
+        {
+          "en": "The office printer ran out of paper and blue ink.",
+          "zh": "辦公室印表機的紙張和藍色墨水用完了。"
+        },
+        {
+          "en": "Can you connect your phone to the wireless printer?",
+          "zh": "你能將手機連線到這台無線印表機嗎？"
+        },
+        {
+          "en": "We called a technician to fix the paper jam in the printer.",
+          "zh": "我們叫了技術人員來修理印表機的卡紙問題。"
+        }
+      ],
+      "collocations": [
+        "laser printer",
+        "color printer"
+      ]
+    },
+    {
+      "id": 1071,
+      "word": "print",
+      "pos": "v., n.",
+      "phonetic": "[prɪnt]",
+      "definition": "列印；印刷；字體",
+      "cefr": "A2",
+      "topic": "辦公動作",
+      "examples": [
+        {
+          "en": "Print out two copies of the contract for signature.",
+          "zh": "列印出兩份合約副本以供簽名。"
+        },
+        {
+          "en": "The newspaper prints over fifty thousand copies every morning.",
+          "zh": "這份報紙每天早晨印製超過五萬份。"
+        },
+        {
+          "en": "Please print your name clearly in capital letters.",
+          "zh": "請用正楷大寫字母清楚填寫你的姓名。"
+        }
+      ],
+      "collocations": [
+        "print out",
+        "in print"
+      ]
+    },
+    {
+      "id": 1072,
+      "word": "scan",
+      "pos": "v., n.",
+      "phonetic": "[skæn]",
+      "definition": "掃描；審視；掃描圖",
+      "cefr": "A2",
+      "topic": "辦公動作與科技",
+      "examples": [
+        {
+          "en": "Please scan this ID document and email it to HR.",
+          "zh": "請掃描這份身分證件並寄給人資部門。"
+        },
+        {
+          "en": "He quickly scanned the headlines while drinking his coffee.",
+          "zh": "他喝咖啡時快速瀏覽了新聞標題。"
+        },
+        {
+          "en": "The doctor recommended a CT scan to examine the injury.",
+          "zh": "醫生建議做電腦斷層掃描以檢查傷勢。"
+        }
+      ],
+      "collocations": [
+        "scan a document",
+        "brain scan"
+      ]
+    },
+    {
+      "id": 1073,
+      "word": "scanner",
+      "pos": "n.",
+      "phonetic": "[ˋskænɚ]",
+      "definition": "掃描器",
+      "cefr": "A2",
+      "topic": "辦公設備",
+      "examples": [
+        {
+          "en": "Place the photo face down on the flatbed scanner glass.",
+          "zh": "將照片朝下平放在掃描器玻璃板上。"
+        },
+        {
+          "en": "The supermarket cashier used a barcode scanner at checkout.",
+          "zh": "超市收銀員在結帳時使用了條碼掃描器。"
+        },
+        {
+          "en": "This portable document scanner fits right inside your backpack.",
+          "zh": "這款可攜式文件掃描器剛好能裝進你的背包裡。"
+        }
+      ],
+      "collocations": [
+        "barcode scanner",
+        "document scanner"
+      ]
+    },
+    {
+      "id": 1074,
+      "word": "document",
+      "pos": "n., v.",
+      "phonetic": "[ˋdɑkjəmənt]",
+      "definition": "文件；公文；記錄",
+      "cefr": "A2",
+      "topic": "辦公與文書",
+      "examples": [
+        {
+          "en": "Always save your document frequently to avoid data loss.",
+          "zh": "經常儲存你的文件以防資料遺失。"
+        },
+        {
+          "en": "You must bring valid identification documents to the bank.",
+          "zh": "你必須攜帶有效的身分證明文件前往銀行。"
+        },
+        {
+          "en": "The journalist documented the daily life of Arctic wildlife.",
+          "zh": "這位記者記錄了北極野生動物的日常生活。"
+        }
+      ],
+      "collocations": [
+        "official document",
+        "sign a document"
+      ]
+    },
+    {
+      "id": 1075,
+      "word": "folder",
+      "pos": "n.",
+      "phonetic": "[ˋfoldɚ]",
+      "definition": "資料夾；文件夾",
+      "cefr": "A2",
+      "topic": "辦公與電腦",
+      "examples": [
+        {
+          "en": "Create a new folder on the desktop for English notes.",
+          "zh": "在電腦桌面上為英語筆記建立一個新資料夾。"
+        },
+        {
+          "en": "She organized all invoices neatly into a green plastic folder.",
+          "zh": "她將所有發票整齊地歸檔在一個綠色塑膠資料夾中。"
+        },
+        {
+          "en": "You can drag and drop these photos directly into the shared folder.",
+          "zh": "你可以直接將這些照片拖曳到共享資料夾中。"
+        }
+      ],
+      "collocations": [
+        "file folder",
+        "shared folder"
+      ]
+    },
+    {
+      "id": 1076,
+      "word": "paper clip",
+      "pos": "n. phr.",
+      "phonetic": "[ˋpepɚ klɪp]",
+      "definition": "迴紋針",
+      "cefr": "A2",
+      "topic": "辦公用品",
+      "examples": [
+        {
+          "en": "Use a paper clip to fasten the worksheets together.",
+          "zh": "用迴紋針把這些學習單固定在一起。"
+        },
+        {
+          "en": "Do you have a spare paper clip I could borrow?",
+          "zh": "你有多餘的迴紋針可以借我一個嗎？"
+        },
+        {
+          "en": "He bent a small paper clip to reset the router.",
+          "zh": "他把一枚小迴紋針扳直來重設路由器。"
+        }
+      ],
+      "collocations": [
+        "colorful paper clips"
+      ]
+    },
+    {
+      "id": 1077,
+      "word": "stapler",
+      "pos": "n.",
+      "phonetic": "[ˋsteplɚ]",
+      "definition": "訂書機",
+      "cefr": "A2",
+      "topic": "辦公用品",
+      "examples": [
+        {
+          "en": "The stapler on the front desk is empty.",
+          "zh": "櫃檯上的訂書機裡面沒有訂書針了。"
+        },
+        {
+          "en": "Can I borrow your stapler to bind these receipt pages?",
+          "zh": "我可以借用你的訂書機來裝訂這些收據頁面嗎？"
+        },
+        {
+          "en": "This heavy-duty stapler can punch through fifty sheets at once.",
+          "zh": "這台強力重型訂書機可以一次裝訂五十張紙。"
+        }
+      ],
+      "collocations": [
+        "heavy-duty stapler"
+      ]
+    },
+    {
+      "id": 1078,
+      "word": "staple",
+      "pos": "v., n.",
+      "phonetic": "[ˋstep!]",
+      "definition": "裝訂；訂書針；主食",
+      "cefr": "A2",
+      "topic": "辦公動作與日常",
+      "examples": [
+        {
+          "en": "Staple the report pages in the top-left corner.",
+          "zh": "將報告內頁在左上角裝訂整齊。"
+        },
+        {
+          "en": "Rice is a staple food for more than half of the world's population.",
+          "zh": "米飯是全球半數以上人口的主食。"
+        },
+        {
+          "en": "We bought a large box of staples at the stationery store.",
+          "zh": "我們在文具店買了一大盒訂書針。"
+        }
+      ],
+      "collocations": [
+        "box of staples",
+        "staple food"
+      ]
+    },
+    {
+      "id": 1079,
+      "word": "laptop",
+      "pos": "n.",
+      "phonetic": "[ˋlæpˌtɑp]",
+      "definition": "筆記型電腦",
+      "cefr": "A2",
+      "topic": "科技與辦公",
+      "examples": [
+        {
+          "en": "Many college students bring laptops to lecture halls.",
+          "zh": "許多大學生帶筆電去階梯教室上課。"
+        },
+        {
+          "en": "I forgot my laptop charger at the office yesterday.",
+          "zh": "我昨天把筆電充電器忘在辦公室了。"
+        },
+        {
+          "en": "This lightweight laptop has impressive battery life.",
+          "zh": "這款輕薄型筆電具備令人驚豔的電池續航力。"
+        }
+      ],
+      "collocations": [
+        "laptop computer",
+        "lightweight laptop"
+      ]
+    },
+    {
+      "id": 1080,
+      "word": "desktop",
+      "pos": "n., adj.",
+      "phonetic": "[ˋdɛskˌtɑp]",
+      "definition": "桌上型電腦；桌面",
+      "cefr": "A2",
+      "topic": "科技與辦公",
+      "examples": [
+        {
+          "en": "He prefers working on a desktop with dual monitors.",
+          "zh": "他偏好在雙螢幕的桌上型電腦上工作。"
+        },
+        {
+          "en": "There are too many shortcut icons cluttering your computer desktop.",
+          "zh": "你的電腦桌面上堆滿了太多雜亂的捷徑圖示。"
+        },
+        {
+          "en": "Graphic designers often need powerful desktop computers for rendering.",
+          "zh": "平面設計師通常需要效能強大的桌上型電腦來進行算圖渲染。"
+        }
+      ],
+      "collocations": [
+        "desktop PC",
+        "desktop screen"
+      ]
+    },
+    {
+      "id": 1081,
+      "word": "password",
+      "pos": "n.",
+      "phonetic": "[ˋpæsˌwɝd]",
+      "definition": "密碼",
+      "cefr": "A2",
+      "topic": "科技與資安",
+      "examples": [
+        {
+          "en": "Set a strong password containing letters and numbers.",
+          "zh": "設定一個包含英文字母和數字的強密碼。"
+        },
+        {
+          "en": "I entered the wrong password three times and got locked out.",
+          "zh": "我輸入錯誤密碼三次後帳號就被鎖住了。"
+        },
+        {
+          "en": "Never share your account password with anyone online.",
+          "zh": "絕不要在網路上將你的帳號密碼分享給任何人。"
+        }
+      ],
+      "collocations": [
+        "change password",
+        "forgot password"
+      ]
+    },
+    {
+      "id": 1082,
+      "word": "account",
+      "pos": "n., v.",
+      "phonetic": "[əˋkaʊnt]",
+      "definition": "帳號；帳戶；說明",
+      "cefr": "A2",
+      "topic": "科技與金融",
+      "examples": [
+        {
+          "en": "Enter your username to log in to your student account.",
+          "zh": "輸入你的使用者名稱以登入學生帳號。"
+        },
+        {
+          "en": "She opened a joint savings account with her husband.",
+          "zh": "她和先生開立了一個聯名儲蓄帳戶。"
+        },
+        {
+          "en": "Eyewitness accounts helped the police solve the crime.",
+          "zh": "目擊者的陳述說明幫助警方偵破了這起案件。"
+        }
+      ],
+      "collocations": [
+        "bank account",
+        "Google account"
+      ]
+    },
+    {
+      "id": 1083,
+      "word": "log in",
+      "pos": "phr.",
+      "phonetic": "[lɔg ɪn]",
+      "definition": "登入；簽到",
+      "cefr": "A2",
+      "topic": "科技與日常",
+      "examples": [
+        {
+          "en": "Log in with your school email to access online quizzes.",
+          "zh": "用學校電子郵件登入以進行線上測驗。"
+        },
+        {
+          "en": "You need to log in before you can leave a comment on this forum.",
+          "zh": "你必須先登入才能在這個論壇上留言。"
+        },
+        {
+          "en": "Please log in again because your session has expired.",
+          "zh": "由於連線階段已逾時，請重新登入。"
+        }
+      ],
+      "collocations": [
+        "sign in",
+        "log in to account"
+      ]
+    },
+    {
+      "id": 1084,
+      "word": "log out",
+      "pos": "phr.",
+      "phonetic": "[lɔg aʊt]",
+      "definition": "登出；註銷",
+      "cefr": "A2",
+      "topic": "科技與日常",
+      "examples": [
+        {
+          "en": "Remember to log out when using public library computers.",
+          "zh": "使用公共圖書館電腦時記得要登出。"
+        },
+        {
+          "en": "She logged out of her work account before shutting down the PC.",
+          "zh": "她在關閉電腦前登出了她的工作帳號。"
+        },
+        {
+          "en": "For security reasons, the banking app will automatically log you out after five minutes.",
+          "zh": "基於安全考量，銀行應用程式在五分鐘後會自動將您登出。"
+        }
+      ],
+      "collocations": [
+        "sign off",
+        "sign out"
+      ]
+    },
+    {
+      "id": 1085,
+      "word": "download",
+      "pos": "v., n.",
+      "phonetic": "[ˋdaʊnˌlod]",
+      "definition": "下載",
+      "cefr": "A2",
+      "topic": "科技與網路",
+      "examples": [
+        {
+          "en": "You can download the PDF syllabus from the class website.",
+          "zh": "你可以從班級網站下載 PDF 課程大綱。"
+        },
+        {
+          "en": "It took only a few seconds to download the mobile update.",
+          "zh": "僅花了幾秒鐘就下載完了手機更新。"
+        },
+        {
+          "en": "The song has received over a million digital downloads.",
+          "zh": "這首歌已獲得超過百萬次的數位下載次數。"
+        }
+      ],
+      "collocations": [
+        "download files",
+        "fast download"
+      ]
+    },
+    {
+      "id": 1086,
+      "word": "upload",
+      "pos": "v., n.",
+      "phonetic": "[ˋʌpˌlod]",
+      "definition": "上傳",
+      "cefr": "A2",
+      "topic": "科技與網路",
+      "examples": [
+        {
+          "en": "Upload your homework video before midnight Sunday.",
+          "zh": "請在週日午夜前上傳你的作業影片。"
+        },
+        {
+          "en": "The photographer uploaded high-resolution photos to the cloud.",
+          "zh": "攝影師將高解析度照片上傳到了雲端。"
+        },
+        {
+          "en": "Slow internet speeds can delay the video upload process.",
+          "zh": "緩慢的網路連線速度會拖慢影片的上傳過程。"
+        }
+      ],
+      "collocations": [
+        "upload photos",
+        "upload to cloud"
+      ]
+    },
+    {
+      "id": 1087,
+      "word": "attach",
+      "pos": "v.",
+      "phonetic": "[əˋtætʃ]",
+      "definition": "附加；貼上；繫上",
+      "cefr": "A2",
+      "topic": "科技與通訊",
+      "examples": [
+        {
+          "en": "Please attach your resume to the job application email.",
+          "zh": "請將履歷表附在求職應徵郵件中。"
+        },
+        {
+          "en": "He attached a name tag to his travel suitcase.",
+          "zh": "他在旅行行李箱上繫上了一張名牌。"
+        },
+        {
+          "en": "The hospital attaches great importance to patient safety.",
+          "zh": "院方非常重視病患的安全。"
+        }
+      ],
+      "collocations": [
+        "attach a file",
+        "attach importance to"
+      ]
+    },
+    {
+      "id": 1088,
+      "word": "attachment",
+      "pos": "n.",
+      "phonetic": "[əˋtætʃmənt]",
+      "definition": "電子郵件附件；依附",
+      "cefr": "A2",
+      "topic": "科技與通訊",
+      "examples": [
+        {
+          "en": "Please see the email attachment for the full conference schedule.",
+          "zh": "完整會議議程請參閱電子郵件附件。"
+        },
+        {
+          "en": "Do not open email attachments from unknown senders.",
+          "zh": "切勿開啟來自陌生寄件者的電子郵件附件。"
+        },
+        {
+          "en": "The baby developed a deep emotional attachment to her blanket.",
+          "zh": "小嬰兒對她的小毛毯產生了深厚的情感依附。"
+        }
+      ],
+      "collocations": [
+        "email attachment",
+        "download attachment"
+      ]
+    },
+    {
+      "id": 1089,
+      "word": "subject line",
+      "pos": "n. phr.",
+      "phonetic": "[ˋsʌbdʒɪkt laɪn]",
+      "definition": "信件主旨欄",
+      "cefr": "A2",
+      "topic": "科技與商務",
+      "examples": [
+        {
+          "en": "Write a clear subject line so recipients know the purpose.",
+          "zh": "寫一個清楚的主旨讓收件人明白來信目的。"
+        },
+        {
+          "en": "The email had an urgent subject line that caught my attention immediately.",
+          "zh": "那封電子郵件有一個緊急主旨，立刻吸引了我的注意。"
+        },
+        {
+          "en": "Avoid using all capital letters in your email subject line.",
+          "zh": "避免在郵件主旨欄中全使用大寫字母。"
+        }
+      ],
+      "collocations": [
+        "clear subject line"
+      ]
+    },
+    {
+      "id": 1090,
+      "word": "send",
+      "pos": "v.",
+      "phonetic": "[sɛnd]",
+      "definition": "發送；寄出",
+      "cefr": "A2",
+      "topic": "通訊與日常",
+      "examples": [
+        {
+          "en": "Did you send the meeting invitation to all participants?",
+          "zh": "你把會議邀請函寄給所有與會者了嗎？"
+        },
+        {
+          "en": "I will send you a postcard from Tokyo during my vacation.",
+          "zh": "我在東京度假期間會寄一張明信片給你。"
+        },
+        {
+          "en": "Press the blue button to send your text message.",
+          "zh": "按下藍色按鈕即可發送你的文字簡訊。"
+        }
+      ],
+      "collocations": [
+        "send an email",
+        "send a message"
+      ]
+    },
+    {
+      "id": 1091,
+      "word": "receive",
+      "pos": "v.",
+      "phonetic": "[rɪˋsiv]",
+      "definition": "收到；接收；接待",
+      "cefr": "A2",
+      "topic": "通訊與社交",
+      "examples": [
+        {
+          "en": "I received a notification on my smartphone.",
+          "zh": "我的智慧型手機收到了一則推播通知。"
+        },
+        {
+          "en": "She received a scholarship to study abroad next semester.",
+          "zh": "她獲得了下學期赴海外留學的獎學金。"
+        },
+        {
+          "en": "The company received hundreds of inquiries after the product launch.",
+          "zh": "產品發表會後，該公司收到了數百件詢問。"
+        }
+      ],
+      "collocations": [
+        "receive an email",
+        "receive a gift"
+      ]
+    },
+    {
+      "id": 1092,
+      "word": "reply",
+      "pos": "v., n.",
+      "phonetic": "[rɪˋplaɪ]",
+      "definition": "回覆；回信；回答",
+      "cefr": "A2",
+      "topic": "溝通與通訊",
+      "examples": [
+        {
+          "en": "I will reply to your email as soon as possible.",
+          "zh": "我會盡快回覆您的電子郵件。"
+        },
+        {
+          "en": "She received no reply to her letter for two whole weeks.",
+          "zh": "她整整兩週都沒有收到對那封信的回覆。"
+        },
+        {
+          "en": "He replied politely that he was unable to attend the party.",
+          "zh": "他禮貌地回覆表示自己無法出席該派對。"
+        }
+      ],
+      "collocations": [
+        "reply to",
+        "quick reply"
+      ]
+    },
+    {
+      "id": 1093,
+      "word": "forward",
+      "pos": "v., adv., adj.",
+      "phonetic": "[ˋfɔrwɚd]",
+      "definition": "轉寄；向前；前進的",
+      "cefr": "A2",
+      "topic": "科技與方向",
+      "examples": [
+        {
+          "en": "Please forward this memo to all team members.",
+          "zh": "請將這份備忘錄轉寄給全體團隊成員。"
+        },
+        {
+          "en": "Step forward when your name is called by the officer.",
+          "zh": "當長官叫到你的名字時，請向前一步。"
+        },
+        {
+          "en": "We look forward to meeting your family this weekend.",
+          "zh": "我們期待這週末與你的家人碰面。"
+        }
+      ],
+      "collocations": [
+        "forward an email",
+        "look forward to"
+      ]
+    },
+    {
+      "id": 1094,
+      "word": "contact",
+      "pos": "v., n.",
+      "phonetic": "[ˋkɑntækt]",
+      "definition": "聯繫；聯絡；聯絡人",
+      "cefr": "A2",
+      "topic": "社交與通訊",
+      "examples": [
+        {
+          "en": "Feel free to contact me if you have further questions.",
+          "zh": "若有任何進一步問題，歡迎隨時與我聯繫。"
+        },
+        {
+          "en": "Keep this emergency contact number inside your wallet.",
+          "zh": "請把這個緊急聯絡人電話放在皮夾裡面。"
+        },
+        {
+          "en": "Do you prefer contact lenses or glasses for reading?",
+          "zh": "閱讀時你偏好戴隱形眼鏡還是普通眼鏡？"
+        }
+      ],
+      "collocations": [
+        "get in contact with",
+        "contact lenses"
+      ]
+    },
+    {
+      "id": 1095,
+      "word": "business card",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbɪznɪs kɑrd]",
+      "definition": "名片",
+      "cefr": "A2",
+      "topic": "商務與社交",
+      "examples": [
+        {
+          "en": "We exchanged business cards after the business forum.",
+          "zh": "商務論壇結束後我們互相交換了名片。"
+        },
+        {
+          "en": "His business card includes his direct phone number and LinkedIn profile.",
+          "zh": "他的名片上包含他的直撥電話與 LinkedIn 個人檔案。"
+        },
+        {
+          "en": "Always present your business card with both hands in Japanese culture.",
+          "zh": "在日本文化中，遞名片時應雙手奉上。"
+        }
+      ],
+      "collocations": [
+        "exchange business cards"
+      ]
+    },
+    {
+      "id": 1096,
+      "word": "contract",
+      "pos": "n., v.",
+      "phonetic": "[ˋkɑntrækt] / [kənˋtrækt]",
+      "definition": "合約；契約；收縮",
+      "cefr": "A2",
+      "topic": "商務與法律",
+      "examples": [
+        {
+          "en": "Both parties carefully reviewed and signed the contract.",
+          "zh": "雙方仔細審閱並共同簽署了合約。"
+        },
+        {
+          "en": "The employment contract outlines your working hours and salary.",
+          "zh": "聘僱合約詳細列出了你的工時與薪資福利。"
+        },
+        {
+          "en": "Metals contract when they are cooled down.",
+          "zh": "金屬在冷卻時會收縮。"
+        }
+      ],
+      "collocations": [
+        "sign a contract",
+        "breach of contract"
+      ]
+    },
+    {
+      "id": 1097,
+      "word": "agreement",
+      "pos": "n.",
+      "phonetic": "[əˋgrimənt]",
+      "definition": "協定；協議；一致",
+      "cefr": "A2",
+      "topic": "商務與法律",
+      "examples": [
+        {
+          "en": "They reached a trade agreement after weeks of negotiation.",
+          "zh": "經過數週談判後，他們達成了貿易協定。"
+        },
+        {
+          "en": "Everyone in the meeting was in agreement with the new proposal.",
+          "zh": "會議上的每個人都一致贊同這項新提案。"
+        },
+        {
+          "en": "Sign the user agreement before creating a new software account.",
+          "zh": "在建立新的軟體帳號前請先簽署使用者條款協議。"
+        }
+      ],
+      "collocations": [
+        "trade agreement",
+        "in agreement with"
+      ]
+    },
+    {
+      "id": 1098,
+      "word": "sign",
+      "pos": "v., n.",
+      "phonetic": "[saɪn]",
+      "definition": "簽名；標誌；徵兆",
+      "cefr": "A2",
+      "topic": "動作與符號",
+      "examples": [
+        {
+          "en": "Please sign your name on the dotted line.",
+          "zh": "請在虛線上簽署你的大名。"
+        },
+        {
+          "en": "Dark clouds in the sky are a sure sign of rain.",
+          "zh": "天空中的烏雲是下雨的明確徵兆。"
+        },
+        {
+          "en": "He didn't see the stop sign and ran through the intersection.",
+          "zh": "他沒看見停車標誌就衝過了十字路口。"
+        }
+      ],
+      "collocations": [
+        "sign here",
+        "traffic sign"
+      ]
+    },
+    {
+      "id": 1099,
+      "word": "signature",
+      "pos": "n.",
+      "phonetic": "[ˋsɪgnətʃɚ]",
+      "definition": "簽名；署名；招牌特徵",
+      "cefr": "A2",
+      "topic": "文書與身分",
+      "examples": [
+        {
+          "en": "Your legal signature is required on the passport form.",
+          "zh": "護照申請表上需要您的親筆簽名。"
+        },
+        {
+          "en": "Beef noodle soup is the signature dish of this restaurant.",
+          "zh": "牛肉麵是這家餐廳的招牌特色料理。"
+        },
+        {
+          "en": "He collected hundreds of signatures for the local park petition.",
+          "zh": "他為當地公園請願書蒐集了數百份連署簽名。"
+        }
+      ],
+      "collocations": [
+        "digital signature",
+        "signature dish"
+      ]
+    },
+    {
+      "id": 1100,
+      "word": "cancel",
+      "pos": "v., n.",
+      "phonetic": "[ˋkæns!]",
+      "definition": "取消；作廢",
+      "cefr": "A2",
+      "topic": "商務與行程",
+      "examples": [
+        {
+          "en": "The flight was canceled due to the typhoon.",
+          "zh": "由於颱風來襲，該航班已被取消。"
+        },
+        {
+          "en": "You can cancel your subscription at any time without fees.",
+          "zh": "您可以隨時取消訂閱且不收手續費。"
+        },
+        {
+          "en": "We had to cancel our weekend camping trip because of the storm.",
+          "zh": "因為暴風雨的緣故，我們不得不取消週末露營行程。"
+        }
+      ],
+      "collocations": [
+        "cancel a meeting",
+        "free cancellation"
+      ]
+    }
+  ]
+}

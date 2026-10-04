@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 6,651–6,700 個單字（CEFR B1 中級）",
+  "batch": "6651-6700",
+  "range": "6651–6700",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 6651,
+      "word": "synthetic",
+      "pos": "adj.",
+      "phonetic": "[sɪnˋθɛtɪk]",
+      "definition": "設計與編程人工生命程式碼之合成生物學的；合成的",
+      "cefr": "B1",
+      "topic": "合成生物",
+      "examples": [
+        {
+          "en": "Synthetic biology applies engineering logic to design new biological pathways and living circuits.",
+          "zh": "「合成生物學」（Synthetic Biology），將工程思維導入生命科學，設計出自然界前所未有的人造生物路徑。"
+        },
+        {
+          "en": "Outdoor sports jackets often feature synthetic insulation that retains warmth even when damp.",
+          "zh": "戶外運動風衣外套多採用人造合成保暖纖維，即便受潮潮濕依然能維持優異的蓄熱保暖性。"
+        },
+        {
+          "en": "Pharmaceutical chemists synthesized a powerful synthetic analog of natural taxol to fight tumors.",
+          "zh": "藥物化學家人工合成了天然紫杉醇的高效合成類似物，用以對抗頑固惡性腫瘤。"
+        }
+      ],
+      "collocations": [
+        "synthetic biology engineering"
+      ]
+    },
+    {
+      "id": 6652,
+      "word": "chassis",
+      "pos": "n.",
+      "phonetic": "[ˋʃæsɪ]",
+      "definition": "承載外源人工基因之微生物底盤生物 (如大腸桿菌)",
+      "cefr": "B1",
+      "topic": "底盤生物",
+      "examples": [
+        {
+          "en": "Engineered baker’s yeast serves as a versatile microbial chassis organism for producing fragrances.",
+          "zh": "經過基因改造的麵包酵母菌，扮演著生產頂級天然香精與藥物的萬能「微生物底盤生物」（Chassis）。"
+        },
+        {
+          "en": "Mechanics inspected the truck chassis carefully for rust and structural stress cracks after long hauling.",
+          "zh": "技師在長途重載行駛後仔細檢查卡車底盤，排除任何金屬生鏽或結構應力裂紋隱患。"
+        },
+        {
+          "en": "The electric vehicle platform uses an innovative skateboard chassis that houses battery cells flatly.",
+          "zh": "該款電動車模組化平台採用創新的滑板式底盤設計，將鋰電池芯平整鋪設於車身底部。"
+        }
+      ],
+      "collocations": [
+        "microbial cellular chassis"
+      ]
+    },
+    {
+      "id": 6653,
+      "word": "circuit",
+      "pos": "n.",
+      "phonetic": "[ˋsɝkɪt]",
+      "definition": "人工合成基因調控邏輯電路 (邏輯閘開關)；電路",
+      "cefr": "B1",
+      "topic": "基因電路",
+      "examples": [
+        {
+          "en": "Synthetic gene regulatory circuits program cells to glow green only when they detect toxic heavy metals.",
+          "zh": "「人工合成基因邏輯電路」（Gene Circuit），能編程細胞唯有在偵測到有毒重金屬時才發出綠色螢光。"
+        },
+        {
+          "en": "The electrician traced the short circuit back to a loose connection inside the junction box.",
+          "zh": "水電技師循線追查短路故障源頭，最終定位在電線接線盒內部一處鬆脫的端子接頭。"
+        },
+        {
+          "en": "Formula One racers sped around the challenging coastal street circuit in Monaco under clear skies.",
+          "zh": "一級方程式賽車好手在晴朗天候下，全速馳騁於摩納哥極具挑戰性的濱海街道賽道中。"
+        }
+      ],
+      "collocations": [
+        "synthetic gene regulatory circuit"
+      ]
+    },
+    {
+      "id": 6654,
+      "word": "repeat",
+      "pos": "n. [pl.], v.",
+      "phonetic": "[rɪˋpit]",
+      "definition": "規律間隔重複短回文序列 (CRISPR 基因剪刀)；重複",
+      "cefr": "B1",
+      "topic": "基因編輯",
+      "examples": [
+        {
+          "en": "CRISPR clustered regularly interspaced repeats originated as a bacterial adaptive immune system.",
+          "zh": "「CRISPR 規律間隔重複序列」（CRISPR Repeats），源自細菌用來抵禦並摧毀外來噬菌體病毒的免疫武器。"
+        },
+        {
+          "en": "The music teacher asked the choir to repeat the chorus until their harmonies sounded perfectly balanced.",
+          "zh": "合唱團指導老師要求團員反覆重唱副歌段落，直到各聲部的和聲達到無瑕的和諧平衡。"
+        },
+        {
+          "en": "The television network scheduled a prime-time repeat of the critically acclaimed documentary series.",
+          "zh": "電視台特別在黃金時段安排重播該部深獲各界口碑讚譽的旗艦人文紀錄片影集。"
+        }
+      ],
+      "collocations": [
+        "clustered interspaced repeats"
+      ]
+    },
+    {
+      "id": 6655,
+      "word": "endonuclease",
+      "pos": "n.",
+      "phonetic": "[͵ɛndoˋnjuklɪ͵es]",
+      "definition": "依據導航 RNA 精準切割雙股 DNA 之核酸內切酶",
+      "cefr": "B1",
+      "topic": "分子剪刀",
+      "examples": [
+        {
+          "en": "The Cas9 endonuclease acts as a molecular scissor, unwinding and cutting target double-stranded DNA.",
+          "zh": "Cas9「核酸內切酶」（Endonuclease）如同精準的分子剪刀，能解開雙螺旋並精準剪斷目標 DNA。"
+        },
+        {
+          "en": "Restriction endonucleases allow molecular biologists to cut plasmid vectors at specific palindromic sites.",
+          "zh": "限制性核酸內切酶讓分子生物學家能夠在質體載體的特定回文序列位點進行專一性剪切。"
+        },
+        {
+          "en": "Engineered endonuclease enzymes are undergoing preclinical evaluation for treating sickle cell anemia.",
+          "zh": "經過基因工程改良的工程化核酸內切酶，目前正接受治療鐮刀型貧血症的臨床前試驗評估。"
+        }
+      ],
+      "collocations": [
+        "Cas9 targeted endonuclease"
+      ]
+    },
+    {
+      "id": 6656,
+      "word": "guide",
+      "pos": "n., v.",
+      "phonetic": "[gaɪd]",
+      "definition": "引導剪刀精準結合二十個鹼基之單一導航 RNA；引導",
+      "cefr": "B1",
+      "topic": "導航RNA",
+      "examples": [
+        {
+          "en": "Custom synthetic single guide RNA navigates the editing complex directly to the mutated disease gene.",
+          "zh": "客製化人工「單一導航 RNA」（Guide RNA sgRNA），能精準引導剪刀複合體降落至突變致病基因位點。"
+        },
+        {
+          "en": "An experienced local mountain guide escorted the hiking group across the treacherous glacier pass.",
+          "zh": "一位經驗豐富的在地高山嚮導，安全護送整支登山隊伍順利穿越險象環生的冰川隘口。"
+        },
+        {
+          "en": "Parents should guide young children toward healthy digital habits rather than imposing outright bans.",
+          "zh": "為人父母應循循善誘引導年幼子女養成健康的數位使用習慣，而非一味採取全面禁止手段。"
+        }
+      ],
+      "collocations": [
+        "single guide RNA (sgRNA)"
+      ]
+    },
+    {
+      "id": 6657,
+      "word": "cleavage",
+      "pos": "n. [U]",
+      "phonetic": "[ˋklivɪdʒ]",
+      "definition": "雙股 DNA 專一性精準斷裂切割位點；劈開",
+      "cefr": "B1",
+      "topic": "基因切割",
+      "examples": [
+        {
+          "en": "Sequence-specific cleavage creates a clean double-strand break precisely three base pairs upstream.",
+          "zh": "序列專一性「DNA 精準切割」（Cleavage），在目標位點上游三個鹼基處製造出乾淨的雙股斷裂。"
+        },
+        {
+          "en": "Mineralogists identify gemstone crystals by observing their characteristic smooth cleavage planes.",
+          "zh": "礦物學家透過細心觀察寶石結晶特有的平整解理面，來精準鑑定未知礦物的晶體結構。"
+        },
+        {
+          "en": "The evening gala gown featured an elegant sweetheart neckline accentuating tasteful cleavage.",
+          "zh": "這襲晚宴名貴禮服採用高雅的心形領口剪裁，恰到好處地襯托出優雅得體的頸肩曲線。"
+        }
+      ],
+      "collocations": [
+        "targeted genomic DNA cleavage"
+      ]
+    },
+    {
+      "id": 6658,
+      "word": "repair",
+      "pos": "n. [U], v.",
+      "phonetic": "[rɪˋpɛr]",
+      "definition": "同源重組修復 (HDR 精準插入修復基因片段)；修復",
+      "cefr": "B1",
+      "topic": "基因修復",
+      "examples": [
+        {
+          "en": "Supplying a donor template directs the cell's natural homology repair machinery to fix the mutation.",
+          "zh": "提供一段健康修復模板，能引導細胞內部的「同源重組修復機制」（Repair），將致病突變完美修正。"
+        },
+        {
+          "en": "The city maintenance crew worked through the night to repair the burst underground water main.",
+          "zh": "市府工務搶修隊頂著夜色徹夜施工，在破曉前順利修復了爆裂的地下主要自來水幹管。"
+        },
+        {
+          "en": "Open and honest communication helps repair wounded trust between long-time business partners.",
+          "zh": "坦誠不公的真摯溝通與交流，有助於重新修復長期商業合作夥伴之間受損的互信基礎。"
+        }
+      ],
+      "collocations": [
+        "homology-directed repair"
+      ]
+    },
+    {
+      "id": 6659,
+      "word": "editing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɛdətɪŋ]",
+      "definition": "單鹼基編輯技術 (無需剪斷雙股直接修正字母)；編輯",
+      "cefr": "B1",
+      "topic": "鹼基編輯",
+      "examples": [
+        {
+          "en": "Precision base editing chemically converts a single adenine into guanine without breaking DNA strands.",
+          "zh": "高精度「單鹼基編輯技術」（Base Editing），無需切斷 DNA 雙股即可直接將單一腺嘌呤化學轉換為鳥嘌呤。"
+        },
+        {
+          "en": "The documentary film director spent three months in post-production video editing and sound mixing.",
+          "zh": "這位紀錄片導演耗費了整整三個月投入後製影片剪輯與音效混音，力求達到完美影音質感。"
+        },
+        {
+          "en": "Careful manuscript copy editing eliminated typographical errors and improved text flow before printing.",
+          "zh": "印刷出版前一絲不苟的文稿校對與字句潤飾編輯，徹底消除了錯別字並提升了行文流暢度。"
+        }
+      ],
+      "collocations": [
+        "precision cytidine base editing"
+      ]
+    },
+    {
+      "id": 6660,
+      "word": "prime",
+      "pos": "adj., v.",
+      "phonetic": "[praɪm]",
+      "definition": "先導編輯技術 (如文書軟體搜尋取代任意基因字元)；主要",
+      "cefr": "B1",
+      "topic": "先導編輯",
+      "examples": [
+        {
+          "en": "Prime editing functions like a search-and-replace word processor, enabling insertions and deletions.",
+          "zh": "「先導編輯技術」（Prime Editing），如同文字處理軟體的搜尋與取代功能，能隨心所欲插入與置換任意基因。"
+        },
+        {
+          "en": "Downtown commercial storefronts occupy prime real estate locations with continuous foot traffic.",
+          "zh": "位於市中心熱鬧商圈的臨街黃金店面佔據絕佳地段，終日享有源源不絕的往來逛街人潮。"
+        },
+        {
+          "en": "Painters prime unfinished drywall with sealer to ensure topcoat paint adheres smoothly and evenly.",
+          "zh": "油漆師傅在毛坯石膏板牆面上均勻滾塗底漆封孔劑，確保面漆塗刷時能平整服貼不脫落。"
+        }
+      ],
+      "collocations": [
+        "search-and-replace prime editing"
+      ]
+    },
+    {
+      "id": 6661,
+      "word": "nickase",
+      "pos": "n.",
+      "phonetic": "[ˋnɪkes]",
+      "definition": "突變切口酶 (僅切斷單股 DNA 大幅降低突變)",
+      "cefr": "B1",
+      "topic": "切口酶",
+      "examples": [
+        {
+          "en": "A modified Cas9 nickase creates a single-stranded nick, reducing dangerous genomic rearrangements.",
+          "zh": "基因突變改造的「單股切口酶」（Nickase），只切開單股 DNA 鏈，大幅降低了染色體非預期重組風險。"
+        },
+        {
+          "en": "Paired nickase strategies require two separate guides to generate cohesive ends for precise insertion.",
+          "zh": "雙切口酶成對協同策略需要兩段獨立的導向 RNA，以產生具黏性末端的缺口實現精準插入。"
+        },
+        {
+          "en": "Enzymatic assays confirmed that the engineered nickase lacked double-strand cutting activity entirely.",
+          "zh": "體外酵素活性分析證實，該工程突變切口酶已完全喪失了剪斷 DNA 雙鏈的切割活性。"
+        }
+      ],
+      "collocations": [
+        "Cas9 single-strand nickase"
+      ]
+    },
+    {
+      "id": 6662,
+      "word": "off-target",
+      "pos": "adj.",
+      "phonetic": "[ɔf ˋtɑrgɪt]",
+      "definition": "徹底消除非目標基因意外剪切之脫靶效應的",
+      "cefr": "B1",
+      "topic": "脫靶防治",
+      "examples": [
+        {
+          "en": "Comprehensive sequencing confirmed that the engineered enzyme produced zero off-target genomic cuts.",
+          "zh": "全基因體高深度定序證實，該工程化酵素在人體細胞中達成了完美的零「非目標脫靶剪切」（Off-Target Cuts）。"
+        },
+        {
+          "en": "The striker's shot went wide and completely off-target, flying into the enthusiastic stadium crowd.",
+          "zh": "這位前鋒的臨門一腳力道過猛且完全偏離球門目標，足球直接飛進了熱情吶喊的觀眾席中。"
+        },
+        {
+          "en": "Regulatory agencies mandate rigorous off-target mutation assessments before approving gene therapy trials.",
+          "zh": "藥物監管主管機關明文規定，在核准人體基因治療臨床試驗前，必須提交嚴密的脫靶突變評估報告。"
+        }
+      ],
+      "collocations": [
+        "off-target genomic cleavage"
+      ]
+    },
+    {
+      "id": 6663,
+      "word": "fidelity",
+      "pos": "n. [U]",
+      "phonetic": "[fəˋdɛlətɪ]",
+      "definition": "基因工程改造之高保真度 Cas 酵素高特異性",
+      "cefr": "B1",
+      "topic": "酵素保真度",
+      "examples": [
+        {
+          "en": "High-fidelity Cas proteins recognize mismatches strictly, refusing to cut unintended chromosomal sites.",
+          "zh": "新一代「高保真度 Cas 酵素」（High-Fidelity），能嚴格辨識單一鹼基錯配，堅決不切割任何非目標染色體。"
+        },
+        {
+          "en": "The audiophile invested thousands of dollars in high-fidelity speakers to reproduce vinyl warmth.",
+          "zh": "這位發燒友音響迷斥資數千美元添購頂級高傳真鑑聽喇叭，只為忠實重現黑膠唱片的溫潤韻味。"
+        },
+        {
+          "en": "Throughout decades of political turmoil, the loyal diplomat served his nation with unswerving fidelity.",
+          "zh": "歷經數十載風雲變幻的政治動盪，這位忠誠的外交官始終以堅定不移的赤忱忠心報效國家。"
+        }
+      ],
+      "collocations": [
+        "high-fidelity Cas enzyme"
+      ]
+    },
+    {
+      "id": 6664,
+      "word": "screening",
+      "pos": "n. [U]",
+      "phonetic": "[ˋskrinɪŋ]",
+      "definition": "全基因體高通量 CRISPR 敲除篩選藥物標靶",
+      "cefr": "B1",
+      "topic": "基因篩選",
+      "examples": [
+        {
+          "en": "Genome-wide CRISPR knockout screening identifies essential vulnerabilities across tumor cell lines.",
+          "zh": "「全基因體敲除篩選」（Screening），能在數天內全面清查所有癌細胞株不可或缺的阿基里斯腱弱點。"
+        },
+        {
+          "en": "Health authorities recommend regular colonoscopy screening for adults over forty-five years of age.",
+          "zh": "衛生福利部國民健康署強烈建議年滿四十五歲以上國人，應定期接受專業大腸鏡篩檢追蹤。"
+        },
+        {
+          "en": "Airport security officers conducted thorough passenger luggage screening before international departures.",
+          "zh": "機場航警安檢人員在國際線班機起飛前，對所有出境旅客隨身行李執行徹底嚴密的 X 光安檢。"
+        }
+      ],
+      "collocations": [
+        "genome-wide functional screening"
+      ]
+    },
+    {
+      "id": 6665,
+      "word": "knockout",
+      "pos": "n., adj.",
+      "phonetic": "[ˋnɑk͵aʊt]",
+      "definition": "標靶基因敲除 (徹底關閉特定有害致病基因表現)；擊倒",
+      "cefr": "B1",
+      "topic": "基因敲除",
+      "examples": [
+        {
+          "en": "Targeted gene knockout permanently disables the viral entry receptor, conferring immunity against disease.",
+          "zh": "透過「標靶基因敲除」（Gene Knockout），永久關閉細胞表面的病毒受體，賦予宿主對致命病毒的免疫力。"
+        },
+        {
+          "en": "The heavyweight boxer delivered a devastating right hook, scoring a dramatic fifth-round knockout.",
+          "zh": "重量級拳擊好手揮出一記毀滅性的重磅右勾拳，在第五回合以戲劇性的擊倒獲勝贏得金腰帶。"
+        },
+        {
+          "en": "The beauty pageant winner walked onto the runway in a stunning, absolute knockout evening gown.",
+          "zh": "選美大賽冠軍身著一襲驚豔全場、無比美豔絕倫的晚禮服優雅步上伸展台，令人嘆為觀止。"
+        }
+      ],
+      "collocations": [
+        "targeted functional gene knockout"
+      ]
+    },
+    {
+      "id": 6666,
+      "word": "knockin",
+      "pos": "n.",
+      "phonetic": "[ˋnɑk͵ɪn]",
+      "definition": "標靶基因敲入 (在特定位點精準嵌入全新外源基因)",
+      "cefr": "B1",
+      "topic": "基因敲入",
+      "examples": [
+        {
+          "en": "Precise therapeutic knockin inserted a healthy hemoglobin gene into patient stem cells safely.",
+          "zh": "精準的「治療性基因敲入」（Gene Knockin），將一段健康的血紅蛋白基因安全嵌入病患造血幹細胞中。"
+        },
+        {
+          "en": "Researchers created a fluorescent reporter knockin mouse model to track neural lineage differentiation.",
+          "zh": "研究團隊培育出帶有螢光報告基因敲入的小鼠模型，藉以即時追蹤神經細胞的譜系分化歷程。"
+        },
+        {
+          "en": "High knockin efficiency requires optimized delivery vectors and specialized chemical inhibitors.",
+          "zh": "達成高水準的基因敲入成功率，仰賴高度最佳化的遞送載體與專屬的化學抑制劑協同作用。"
+        }
+      ],
+      "collocations": [
+        "precise therapeutic gene knockin"
+      ]
+    },
+    {
+      "id": 6667,
+      "word": "transcription",
+      "pos": "n. [U]",
+      "phonetic": "[trænˋskrɪpʃən]",
+      "definition": "CRISPRa 人工轉錄活化因子 (調高有益基因表達)；轉錄",
+      "cefr": "B1",
+      "topic": "轉錄活化",
+      "examples": [
+        {
+          "en": "CRISPR activation recruits transcription machinery to amplify the expression of silent tumor suppressor genes.",
+          "zh": "運用 CRISPRa 技術招募「轉錄活化複合體」（Transcription），能重新喚醒人體沉睡已久的抑癌基因。"
+        },
+        {
+          "en": "Automated AI transcription software converted the three-hour audio interview into text within minutes.",
+          "zh": "自動化人工智慧語音辨識轉錄軟體，在數分鐘內便將長達三小時的採訪錄音精準轉為逐字稿。"
+        },
+        {
+          "en": "RNA polymerase binds to promoter regions to initiate the transcription of genetic code into messenger RNA.",
+          "zh": "RNA 聚合酶牢牢結合至啟動子區域，正式啟動將 DNA 遺傳密碼轉錄為信使 RNA 的轉錄過程。"
+        }
+      ],
+      "collocations": [
+        "gene transcription activation"
+      ]
+    },
+    {
+      "id": 6668,
+      "word": "epigenetics",
+      "pos": "n. [pl.]",
+      "phonetic": "[͵ɛpədʒəˋnɛtɪks]",
+      "definition": "在不改動 DNA 字母序列下調控基因開關之表觀遺傳學",
+      "cefr": "B1",
+      "topic": "表觀遺傳",
+      "examples": [
+        {
+          "en": "Epigenetics editors add chemical tags to silence disease genes without altering the underlying DNA sequence.",
+          "zh": "「表觀遺傳修飾編輯」（Epigenetics），在完全不改動 DNA 原始字元的前提下添加化學標籤來關閉致病基因。"
+        },
+        {
+          "en": "Lifestyle factors such as chronic stress and diet exert profound epigenetics influences on gene activity.",
+          "zh": "長期精神壓力與不良飲食習慣等後天生活型態，會對人體基因調控產生深遠的表觀遺傳學影響。"
+        },
+        {
+          "en": "Breakthroughs in cancer epigenetics reveal how histone modifications turn tumor protective genes off.",
+          "zh": "癌症表觀遺傳學的重大突破，揭示了組蛋白化學修飾是如何在後天悄悄關閉抑癌保護基因的。"
+        }
+      ],
+      "collocations": [
+        "dCas9 targeted epigenetics"
+      ]
+    },
+    {
+      "id": 6669,
+      "word": "methylation",
+      "pos": "n. [U]",
+      "phonetic": "[͵mɛθəˋleʃən]",
+      "definition": "標靶 DNA 胞嘧啶甲基化 (長期穩定沉默基因表現)",
+      "cefr": "B1",
+      "topic": "甲基化修飾",
+      "examples": [
+        {
+          "en": "Targeted cytosine methylation durable silences hyperactive inflammatory genes for generations of cell divisions.",
+          "zh": "透過專一性「DNA 胞嘧啶甲基化」（Methylation），能讓過度活躍的發炎基因在細胞分裂中長期維持沉默。"
+        },
+        {
+          "en": "Aberrant promoter hyper-methylation is a well-established molecular biomarker in early cancer detection.",
+          "zh": "啟動子區域異常的過度甲基化修飾，在現代臨床醫學中被廣泛認定為早期癌症篩檢的重要生物標誌。"
+        },
+        {
+          "en": "DNA methylation patterns change predictably with age, forming the foundation of biological clocks.",
+          "zh": "人體基因體 DNA 的甲基化分佈圖譜隨年齡規律遞變，構成了推算生理年齡生物時鐘的科學基石。"
+        }
+      ],
+      "collocations": [
+        "targeted DNA cytosine methylation"
+      ]
+    },
+    {
+      "id": 6670,
+      "word": "extract",
+      "pos": "n.",
+      "phonetic": "[ˋɛkstrækt]",
+      "definition": "含有豐富核糖體與轉譯酵素之細胞裂解提取物；提取物",
+      "cefr": "B1",
+      "topic": "細胞提取物",
+      "examples": [
+        {
+          "en": "Lyophilized bacterial extract contains all the enzymes needed to synthesize complex proteins in test tubes.",
+          "zh": "凍乾保存的「細胞裂解提取物」（Extract），封存了在試管中直接合成複雜蛋白質所需的全部酵素機構。"
+        },
+        {
+          "en": "Add two drops of pure Madagascar vanilla extract to the waffle batter for rich confectionery flavor.",
+          "zh": "在格子鬆餅麵糊中滴入兩滴純天然馬達加斯加香草精提取物，能烘烤出濃郁撲鼻的甜點香氣。"
+        },
+        {
+          "en": "The literary journal printed a fascinating extract from the author’s upcoming historical biography.",
+          "zh": "這本文學權威雜誌搶先刊載了這位知名傳記作家即將出版的歷史傳記新書精選節錄。"
+        }
+      ],
+      "collocations": [
+        "crude bacterial cell extract"
+      ]
+    },
+    {
+      "id": 6671,
+      "word": "lysate",
+      "pos": "n. [U]",
+      "phonetic": "[ˋlaɪset]",
+      "definition": "完整保留轉錄與轉譯分子機構之清澈細胞裂解液",
+      "cefr": "B1",
+      "topic": "裂解液",
+      "examples": [
+        {
+          "en": "Adding synthetic DNA plasmids directly to the clear cell lysate triggers instant protein synthesis.",
+          "zh": "將人工合成質體 DNA 直接滴入清澈的「細胞裂解液」（Lysate）中，即可在數分鐘內啟動蛋白質合成反應。"
+        },
+        {
+          "en": "Centrifuging crude cell lysate at high speed pellets membrane fragments, yielding a clear supernatant.",
+          "zh": "將粗製細胞裂解液進行超高速離心，能使沉重的細胞膜碎屑沉澱，獲得極為澄澈的上清液。"
+        },
+        {
+          "en": "The freeze-thaw cycle effectively ruptures cell walls to release target enzymes into the lysate solution.",
+          "zh": "反覆冷凍融解循環能破壞細胞壁，使細胞內部的大量目標酵素順利釋放至裂解液溶液中。"
+        }
+      ],
+      "collocations": [
+        "clear cell-free lysate"
+      ]
+    },
+    {
+      "id": 6672,
+      "word": "translation",
+      "pos": "n. [U]",
+      "phonetic": "[trænzˋleʃən]",
+      "definition": "體外無細胞高通量核糖體蛋白質轉譯製造；翻譯",
+      "cefr": "B1",
+      "topic": "體外轉譯",
+      "examples": [
+        {
+          "en": "Cell-free in-vitro translation produces customized vaccines within hours, bypassing slow cell cultures.",
+          "zh": "「體外無細胞轉譯技術」（In-Vitro Translation），在數小時內快速合成客製化疫苗，完全跳過耗時的細胞培養。"
+        },
+        {
+          "en": "The literary translation captured the whimsical humor and subtle wordplay of the original French novel.",
+          "zh": "這部優秀的文學中譯本，傳神捕捉到了法文原著小說中詼諧靈動的幽默感與微妙文字雙關。"
+        },
+        {
+          "en": "Ribosomes read messenger RNA triplets to guide the accurate translation of polypeptide chains.",
+          "zh": "細胞核糖體沿著信使 RNA 的三聯體密碼逐一解讀，精準指引多胜肽鏈氨基酸序列的轉譯合成。"
+        }
+      ],
+      "collocations": [
+        "in-vitro ribosomal translation"
+      ]
+    },
+    {
+      "id": 6673,
+      "word": "foundry",
+      "pos": "n.",
+      "phonetic": "[ˋfaʊndrɪ]",
+      "definition": "全自動高通量合成生物晶圓代工廠 (Bio-Foundry)；鑄造廠",
+      "cefr": "B1",
+      "topic": "生物代工廠",
+      "examples": [
+        {
+          "en": "The automated bio-foundry executes tens of thousands of pipetting and cloning experiments every single day.",
+          "zh": "全自動「高通量生物晶圓工廠」（Bio-Foundry），每天由機械手臂執行數萬組微量移液與基因拼接實驗。"
+        },
+        {
+          "en": "Molten bronze was poured carefully into sand molds at the historic metal bell foundry.",
+          "zh": "在這座百年金屬鐘鑄造工廠裡，鑄造師傅將滾燙的青銅熔漿小心翼翼澆鑄進砂質模具中。"
+        },
+        {
+          "en": "Taiwan’s world-leading semiconductor foundry manufactures cutting-edge three-nanometer logic chips.",
+          "zh": "台灣傲視全球的頂尖半導體晶圓代工龍頭，日夜全能運轉生產全球最先進的三奈米邏輯晶片。"
+        }
+      ],
+      "collocations": [
+        "automated robotic bio-foundry"
+      ]
+    },
+    {
+      "id": 6674,
+      "word": "automation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɔtəˋmeʃən]",
+      "definition": "聲波微滴液體處理全自動機械手臂平台；自動化",
+      "cefr": "B1",
+      "topic": "實驗自動化",
+      "examples": [
+        {
+          "en": "Robotic laboratory automation accelerates genetic strain engineering while eliminating human manual error.",
+          "zh": "導入全自動「實驗室機器人自動化平台」（Automation），在消除人為操作誤差的同時大幅加速菌株演化。"
+        },
+        {
+          "en": "Warehouse automation featuring autonomous sorting robots tripled express fulfillment throughput.",
+          "zh": "導入全自動分揀機器人的大型物流倉庫自動化系統，讓電商快捷出貨處理效率足足翻了三倍。"
+        },
+        {
+          "en": "Home automation systems allow homeowners to adjust air conditioning and lighting remotely via mobile apps.",
+          "zh": "智慧居家自動化系統讓屋主身在外頭，也能透過手機應用程式隨時隨地遠端調控冷暖空調與室內照明。"
+        }
+      ],
+      "collocations": [
+        "robotic laboratory automation"
+      ]
+    },
+    {
+      "id": 6675,
+      "word": "acoustic",
+      "pos": "adj.",
+      "phonetic": "[əˋkustɪk]",
+      "definition": "聲波非接觸式微滴分配射出技術 (奈升級精度) 的；聲學的",
+      "cefr": "B1",
+      "topic": "聲波移液",
+      "examples": [
+        {
+          "en": "Acoustic liquid handlers use sound energy pulses to shoot precise nanoliter droplets between assay plates.",
+          "zh": "「聲波液體處理儀」（Acoustic Liquid Handlers），利用高頻聲波脈衝以非接觸方式精準彈射奈升級微滴。"
+        },
+        {
+          "en": "Recording studios install angled acoustic baffling on studio walls to achieve pristine vocal capture.",
+          "zh": "專業錄音室在吸音牆面上加裝特定角度的隔音吸音障板，以確保人聲收音純淨無雜訊干擾。"
+        },
+        {
+          "en": "Submarines rely on passive acoustic listening devices to detect surface vessels without revealing their location.",
+          "zh": "柴電潛艦在巡航時仰賴被動式水下聲學監聽聲納，在完全不暴露自身匿蹤位置的前提下探知水面艦艇。"
+        }
+      ],
+      "collocations": [
+        "acoustic droplet ejection"
+      ]
+    },
+    {
+      "id": 6676,
+      "word": "dispenser",
+      "pos": "n.",
+      "phonetic": "[dɪˋspɛnsɚ]",
+      "definition": "奈升級無接觸超高速精準微量移液自動分液儀；分發器",
+      "cefr": "B1",
+      "topic": "自動分液儀",
+      "examples": [
+        {
+          "en": "High-speed liquid dispensers transfer reagents into 1536-well microplates in a matter of seconds.",
+          "zh": "超高速「微量自動分液儀」（Liquid Dispenser），在短短數秒內即可將試劑均勻分配至 1536 微孔板中。"
+        },
+        {
+          "en": "The hospital installed wall-mounted touchless hand sanitizer dispensers beside every patient elevator.",
+          "zh": "綜合醫院在每一座病患專用電梯口旁，皆全面裝設了感應式無接觸酒精乾洗手自動噴霧機。"
+        },
+        {
+          "en": "The office break room features an automated cold brew coffee dispenser that accepts contactless payments.",
+          "zh": "員工茶水休息室引進了一台全自動冰滴冷萃咖啡機，支援悠遊卡與行動支付無感感應結帳。"
+        }
+      ],
+      "collocations": [
+        "automated liquid reagent dispenser"
+      ]
+    },
+    {
+      "id": 6677,
+      "word": "cycle",
+      "pos": "n.",
+      "phonetic": "[ˋsaɪk!]",
+      "definition": "設計-建造-測試-學習 (DBTL 合成生物學迭代閉環)；週期",
+      "cefr": "B1",
+      "topic": "DBTL閉環",
+      "examples": [
+        {
+          "en": "The Design-Build-Test-Learn cycle integrates AI algorithms to optimize microbial pathways iteratively.",
+          "zh": "「DBTL 迭代閉環」（DBTL Cycle），結合 AI 大數據模型，以極快速度持續最佳化微生物代謝途徑。"
+        },
+        {
+          "en": "Agricultural communities organize planting and harvesting around the predictable annual seasonal weather cycle.",
+          "zh": "傳統農業聚落依循大自然周而復始、規律運行的年度節氣週期，安排播種與豐收各項農事。"
+        },
+        {
+          "en": "He decided to cycle to work along the riverside bike path every morning to stay healthy and active.",
+          "zh": "為了維持強健體魄，他決定每個工作日早晨皆沿著風景優美的河濱自行車道騎單車通勤上班。"
+        }
+      ],
+      "collocations": [
+        "Design-Build-Test-Learn cycle"
+      ]
+    },
+    {
+      "id": 6678,
+      "word": "metabolic",
+      "pos": "adj.",
+      "phonetic": "[͵mɛtəˋbɑlɪk]",
+      "definition": "改造菌株代謝途徑以生產高價值化學品的；代謝的",
+      "cefr": "B1",
+      "topic": "代謝工程",
+      "examples": [
+        {
+          "en": "Metabolic engineering reroutes cellular carbon flux to maximize the production of bio-based plastics.",
+          "zh": "「代謝工程技術」（Metabolic Engineering），重新引導細胞內部的碳流走向，極大化產出生質環保塑料。"
+        },
+        {
+          "en": "Regular aerobic exercise combined with strength training significantly boosts your resting metabolic rate.",
+          "zh": "規律進行有氧慢跑運動並結合適度重量阻力訓練，能顯著提升人體的基礎代謝率與熱量消耗。"
+        },
+        {
+          "en": "Endocrinologists treat patients struggling with chronic metabolic disorders such as type 2 diabetes.",
+          "zh": "新陳代謝專科醫師悉心為長期飽受第二型糖尿病等慢性代謝症候群疾患所苦的病患擬定治療指引。"
+        }
+      ],
+      "collocations": [
+        "metabolic pathway engineering"
+      ]
+    },
+    {
+      "id": 6679,
+      "word": "pathway",
+      "pos": "n.",
+      "phonetic": "[ˋpæθ͵we]",
+      "definition": "由十多種酵素精密串聯之人工生物合成途徑；途徑",
+      "cefr": "B1",
+      "topic": "生物合成途徑",
+      "examples": [
+        {
+          "en": "Inserting an artificial seven-gene pathway allows yeast to brew precious anti-malarial medication.",
+          "zh": "植入一條由七個外源基因構成的「人工生物合成途徑」（Pathway），讓酵母菌能直接發酵出珍貴的抗瘧疾特效藥。"
+        },
+        {
+          "en": "A paved stone pathway meanders through the Japanese garden, connecting koi ponds and tea pavilions.",
+          "zh": "一條鋪設整齊的卵石步道蜿蜒貫穿整座日式庭園，優雅串聯起錦鯉池畔與古樸的木造茶亭。"
+        },
+        {
+          "en": "Earning an industry vocational certification provides a practical pathway to high-paying software jobs.",
+          "zh": "考取含金量高且獲業界認可的專業技術證照，為非本科青年提供了一條通往高薪軟體工程師的捷徑。"
+        }
+      ],
+      "collocations": [
+        "biosynthetic metabolic pathway"
+      ]
+    },
+    {
+      "id": 6680,
+      "word": "flux",
+      "pos": "n. [U]",
+      "phonetic": "[flʌks]",
+      "definition": "基因調控平衡細胞內部碳源物質流動通量；流動",
+      "cefr": "B1",
+      "topic": "代謝通量",
+      "examples": [
+        {
+          "en": "Optimizing enzymatic flux prevents the buildup of toxic intermediate metabolites inside the engineered cell.",
+          "zh": "精確調控各步驟的「代謝物質流動通量」（Metabolic Flux），能防止有毒中間產物在工程菌體內過度堆積。"
+        },
+        {
+          "en": "Global energy markets experienced tremendous uncertainty and flux following sudden geopolitical tensions.",
+          "zh": "隨著國際地緣政治局勢驟然緊繃，全球原油與天然氣能源市場陷入了前所未有的劇烈震盪與動盪。"
+        },
+        {
+          "en": "The electronics solder wire contains an inner core of chemical flux that cleans metal surfaces during soldering.",
+          "zh": "這款電子專用焊錫絲內部包覆著化學助焊劑核心，能在高溫焊接過程中自動清除金屬表面氧化物。"
+        }
+      ],
+      "collocations": [
+        "metabolic carbon pathway flux"
+      ]
+    },
+    {
+      "id": 6681,
+      "word": "fermentation",
+      "pos": "n. [U]",
+      "phonetic": "[͵fɝmɛnˋteʃən]",
+      "definition": "精準發酵工藝 (酵母菌直接釀造無牛牛奶與卵白)；發酵",
+      "cefr": "B1",
+      "topic": "精準發酵",
+      "examples": [
+        {
+          "en": "Precision fermentation brews animal-free milk proteins and egg whites identical to traditional dairy.",
+          "zh": "「精準發酵工藝」（Precision Fermentation），利用微生物直接釀造出與傳統乳製品分子結構完全一致的純淨乳蛋白。"
+        },
+        {
+          "en": "Traditional kimchi undergoes slow lactic acid fermentation in buried earthenware jars throughout winter.",
+          "zh": "正宗韓式泡菜在深埋地下的大陶甕中歷經漫長冬日，藉由緩慢的天然乳酸菌發酵熟成出絕妙酸香。"
+        },
+        {
+          "en": "Breweries rely on controlled yeast fermentation to transform malt sugars into crisp pilsner beer.",
+          "zh": "精釀啤酒廠嚴格管控低溫酵母發酵環境，將大麥麥芽中的糖分完美轉化為口感清爽的金黃皮爾森啤酒。"
+        }
+      ],
+      "collocations": [
+        "precision microbial fermentation"
+      ]
+    },
+    {
+      "id": 6682,
+      "word": "bioreactor",
+      "pos": "n.",
+      "phonetic": "[͵baɪorɪˋæktɚ]",
+      "definition": "萬公升大型無菌不銹鋼工業生物發酵反應槽",
+      "cefr": "B1",
+      "topic": "發酵反應槽",
+      "examples": [
+        {
+          "en": "Millions of engineered microbes ferment sweet sugars inside a 50,000-liter stainless steel bioreactor.",
+          "zh": "數以兆計的工程微生物，在五萬公升的「無菌不銹鋼生物發酵槽」（Bioreactor）中將糖水發酵為絲蛋白。"
+        },
+        {
+          "en": "Biopharma manufacturing relies on automated single-use bioreactors to culture monoclonal antibodies safely.",
+          "zh": "現代生物製藥高度仰賴全自動拋棄式生物反應槽系統，以極度安全無污染的環境量產單株抗體新藥。"
+        },
+        {
+          "en": "Real-time digital sensors monitor dissolved oxygen and pH levels continuously throughout the bioreactor run.",
+          "zh": "數位線上感測器全天候即時監測發酵槽內的溶氧量與酸鹼值變化，確保整批發酵製程維持最佳生長條件。"
+        }
+      ],
+      "collocations": [
+        "industrial scale bioreactor"
+      ]
+    },
+    {
+      "id": 6683,
+      "word": "feedstock",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfid͵stɑk]",
+      "definition": "利用甘蔗渣與農業秸稈作為微生物永續碳源原料",
+      "cefr": "B1",
+      "topic": "發酵原料",
+      "examples": [
+        {
+          "en": "Using non-edible agricultural waste as renewable feedstock lowers bio-manufacturing carbon emissions.",
+          "zh": "採用非食用農業廢棄秸稈作為「微生物再生原料碳源」（Feedstock），大幅降低了綠色生物製造的碳足跡。"
+        },
+        {
+          "en": "Crude oil serves as the primary chemical feedstock for producing everyday commercial plastics and resins.",
+          "zh": "原油向來是傳統石化工業製造各類商業日常塑料、合成橡膠與樹脂最主要的化學基礎進料原料。"
+        },
+        {
+          "en": "Biorefineries process forest wood chips into sustainable aviation fuel feedstock to decarbonize airlines.",
+          "zh": "生物質精煉廠將森林疏伐木屑加工轉化為永續航空燃料前驅原料，協助國際民航業加速脫碳進程。"
+        }
+      ],
+      "collocations": [
+        "renewable carbon feedstock"
+      ]
+    },
+    {
+      "id": 6684,
+      "word": "yield",
+      "pos": "n. [U], v.",
+      "phonetic": "[jild]",
+      "definition": "每公升產量克數 (生質轉換產出率指標)；產量",
+      "cefr": "B1",
+      "topic": "發酵產率",
+      "examples": [
+        {
+          "en": "Fine-tuning gene expression elevated the final pharmaceutical yield to twenty grams per liter of broth.",
+          "zh": "精準微調基因表現強度，將最終藥物「發酵產出率」（Yield）大幅提升至每公升發酵液二十公克的商業門檻。"
+        },
+        {
+          "en": "Advanced irrigation systems and organic compost significantly improved average crop yield per hectare.",
+          "zh": "導入滴灌智慧灌溉系統並全面施用天然有機堆肥，讓該農莊每公頃農作物的平均收成產量顯著增長。"
+        },
+        {
+          "en": "Drivers approaching the busy highway on-ramp must yield to fast-moving oncoming freeway traffic.",
+          "zh": "駕車行駛接近車流頻繁的高速公路交流道匯流口時，駕駛人必須減速禮讓主線道快車道的直行車流。"
+        }
+      ],
+      "collocations": [
+        "maximum product fermentation yield"
+      ]
+    },
+    {
+      "id": 6685,
+      "word": "genome",
+      "pos": "n.",
+      "phonetic": "[ˋdʒenom]",
+      "definition": "電腦演算重新編碼設計之全合成極簡基因組",
+      "cefr": "B1",
+      "topic": "合成基因組",
+      "examples": [
+        {
+          "en": "The computationally designed synthetic bacterial genome contains only 473 essential genes.",
+          "zh": "這套由超級電腦全新編碼設計的「全合成極簡細菌基因組」（Genome），僅精簡保留了維持生命所需的 473 個基因。"
+        },
+        {
+          "en": "The human genome project decoded over three billion DNA base pairs, transforming modern personalized medicine.",
+          "zh": "跨國人類基因體計畫完整解碼了超過三十億個鹼基對序列，徹底開啟了當代個人化精準醫療的新紀元。"
+        },
+        {
+          "en": "Comparing the chimpanzee genome with humans reveals genetic variations that drive cognitive development.",
+          "zh": "深入比對黑猩猩與人類的全基因組圖譜，為科學家揭示了主導大腦認知功能飛躍演化的關鍵遺傳變異。"
+        }
+      ],
+      "collocations": [
+        "computationally synthetic genome"
+      ]
+    },
+    {
+      "id": 6686,
+      "word": "minimal",
+      "pos": "adj.",
+      "phonetic": "[ˋmɪnəm!]",
+      "definition": "剔除所有冗餘序列之人工合成極簡人造細胞的；極小的",
+      "cefr": "B1",
+      "topic": "極簡生命",
+      "examples": [
+        {
+          "en": "Synthetic minimal cells serve as clean-slate biological factories without wasteful evolutionary baggage.",
+          "zh": "人工打造的「極簡人造細胞」（Minimal Cells），如同一張純淨的白紙生物工廠，完全拋棄了演化遺留的冗餘包袱。"
+        },
+        {
+          "en": "The storm caused only minimal cosmetic damage to the historic brick lighthouse on the rocky promontory.",
+          "zh": "這場強烈風暴僅對海岬懸崖上的百年歷史磚造燈塔造成了極微小的表皮外觀輕傷，主結構安然無恙。"
+        },
+        {
+          "en": "His minimalist studio apartment featured clean lines, neutral colors, and minimal ornamental furniture.",
+          "zh": "他的極簡風單身小公寓採用俐落清爽的幾何線條、中性大地色調，並刻意擺設最精簡低調的實用家具。"
+        }
+      ],
+      "collocations": [
+        "synthetic minimal bacterial cell"
+      ]
+    },
+    {
+      "id": 6687,
+      "word": "assembly",
+      "pos": "n. [U]",
+      "phonetic": "[əˋsɛmblɪ]",
+      "definition": "吉布森等溫多片段 DNA 快速酵素拼接組裝法；組裝",
+      "cefr": "B1",
+      "topic": "基因組裝",
+      "examples": [
+        {
+          "en": "Gibson enzymatic assembly stitches dozens of synthetic DNA fragments into a circular chromosome seamlessly.",
+          "zh": "經典「吉布森等溫酵素拼接法」（Enzymatic Assembly），在單一試管內將數十段合成 DNA 無縫組裝成完整環狀染色體。"
+        },
+        {
+          "en": "Quality inspectors check every electronic component along the automated smartphone assembly line.",
+          "zh": "品管檢驗員沿著全自動智慧型手機組裝生產流水線，逐一嚴格抽查每項精密電子零組件的裝配良率。"
+        },
+        {
+          "en": "The United Nations General Assembly convened in New York to address pressing global climate emergencies.",
+          "zh": "聯合國大會各國元首齊聚紐約總部召開特別高峰會議，共商應對迫在眉睫的全球氣候緊急狀態危機。"
+        }
+      ],
+      "collocations": [
+        "Gibson isothermal DNA assembly"
+      ]
+    },
+    {
+      "id": 6688,
+      "word": "codon",
+      "pos": "n.",
+      "phonetic": "[ˋkodɑn]",
+      "definition": "全基因體重新編碼置換之遺傳密碼子",
+      "cefr": "B1",
+      "topic": "遺傳密碼子",
+      "examples": [
+        {
+          "en": "Reassigning stop codons throughout the entire genome prevents synthetic strains from sharing DNA with wild microbes.",
+          "zh": "在全基因體中將終止「遺傳密碼子」（Codon）重新編碼賦予新功能，能徹底防止人工菌株與自然界野生菌交換基因。"
+        },
+        {
+          "en": "Each triplet codon along the messenger RNA transcript specifies a unique corresponding amino acid building block.",
+          "zh": "信使 RNA 序列上的每一個三聯體遺傳密碼子，皆專一性對應編碼著某種特定的人體必需氨基酸單元。"
+        },
+        {
+          "en": "Synonymous codon changes do not alter protein amino acid sequence but can influence translation speed.",
+          "zh": "同義密碼子突變置換雖然不會改變蛋白質最終的氨基酸排列，卻可能對細胞內的轉譯速率產生深遠影響。"
+        }
+      ],
+      "collocations": [
+        "reassigned genetic stop codon"
+      ]
+    },
+    {
+      "id": 6689,
+      "word": "biocontainment",
+      "pos": "n. [U]",
+      "phonetic": "[͵baɪokənˋtenmənt]",
+      "definition": "基因安全保險開關 (離開實驗室即自我凋亡防護)",
+      "cefr": "B1",
+      "topic": "生物防護",
+      "examples": [
+        {
+          "en": "Multi-layered genetic biocontainment ensures synthetic organisms cannot survive in natural outdoor ecosystems.",
+          "zh": "多重「基因生物防護屏障機制」（Biocontainment），確保合成工程菌一旦離開實驗室特定營養液便會自動凋亡。"
+        },
+        {
+          "en": "Biosafety level 4 laboratories operate under negative atmospheric pressure to maintain airtight biocontainment.",
+          "zh": "全球最高規格的第四級生物安全實驗室始終處於負壓抽氣狀態，以維持萬無一失的嚴密生物防護隔離。"
+        },
+        {
+          "en": "Regulatory panels audit university biocontainment facilities annually to prevent unintentional microbial release.",
+          "zh": "主管機關生安審查委員會每年定期抽查各大學生安防護設施，嚴防任何未經許可的基因改造微生物外洩。"
+        }
+      ],
+      "collocations": [
+        "synthetic genetic biocontainment"
+      ]
+    },
+    {
+      "id": 6690,
+      "word": "switch",
+      "pos": "n., v.",
+      "phonetic": "[swɪtʃ]",
+      "definition": "人工合成毒素-抗毒素自毀防逃逸安全開關；開關",
+      "cefr": "B1",
+      "topic": "自毀開關",
+      "examples": [
+        {
+          "en": "An engineered molecular kill switch self-destructs the bacteria if synthetic amino acids are absent.",
+          "zh": "設計在菌株內部的「分子自毀安全開關」（Kill Switch），在環境缺乏特定人造氨基酸時會自動啟動毒素消滅自身。"
+        },
+        {
+          "en": "Please remember to flick the light switch off when you leave the conference room to conserve electricity.",
+          "zh": "離開研討會議室時請隨手將室內電燈開關關閉，養成隨手節約用電與節能減碳的好習慣。"
+        },
+        {
+          "en": "Many consumers decided to switch from conventional gas vehicles to electric cars to save on fuel costs.",
+          "zh": "為了節省長期居高不下的燃油油資開銷，許多開車通勤族紛紛決定將傳統汽油車汰換改開純電車。"
+        }
+      ],
+      "collocations": [
+        "molecular biological kill switch"
+      ]
+    },
+    {
+      "id": 6691,
+      "word": "biosecurity",
+      "pos": "n. [U]",
+      "phonetic": "[͵baɪosɪˋkjʊrətɪ]",
+      "definition": "商業 DNA 基因合成訂單全面病原體資安審查",
+      "cefr": "B1",
+      "topic": "生物安全",
+      "examples": [
+        {
+          "en": "International biosecurity screening protocols flag dangerous toxin sequences before automated gene printers run.",
+          "zh": "國際「生物安全審查協議」（Biosecurity），在自動化 DNA 合成儀列印前即時掃描並攔截潛在危險病原體序列。"
+        },
+        {
+          "en": "Strict border biosecurity measures prevent invasive agricultural pests and diseases from entering the island.",
+          "zh": "國境海關嚴密落實動植物邊境檢疫與生物安全防範措施，嚴防境外具破壞力的有害農林害蟲與疫病入侵全島。"
+        },
+        {
+          "en": "Public health agencies updated domestic biosecurity standards to safeguard regional water supply reservoirs.",
+          "zh": "國家公共衛生主管機關全面修訂升級了國家生物安全指引標準，嚴格保障區域民生自來水水庫水源安全。"
+        }
+      ],
+      "collocations": [
+        "rigorous global biosecurity"
+      ]
+    },
+    {
+      "id": 6692,
+      "word": "screening",
+      "pos": "n. [U]",
+      "phonetic": "[ˋskrinɪŋ]",
+      "definition": "嚴密比對全球危險病毒資料庫之合規審查；審查",
+      "cefr": "B1",
+      "topic": "訂單審查",
+      "examples": [
+        {
+          "en": "Algorithmic customer screening verifies that only authorized research institutions can order synthesized pathogens.",
+          "zh": "演算法「訂單合規審查機制」（Screening），確保唯有通過嚴格安全認證的學術機構方能訂購特定合成基因序列。"
+        },
+        {
+          "en": "Human resources conducted thorough background screening on shortlisted executive managerial candidates.",
+          "zh": "人資部門在正式發出高階主管聘僱合約前，對進入決選名單的候選人進行了滴水不漏的背景資格審查。"
+        },
+        {
+          "en": "The film festival hosted an exclusive midnight screening of the restored cinematic masterwork.",
+          "zh": "國際電影節在展覽期間特別安排了一場經典電影數位修復傳世神作的深夜獨家首映會，座無虛席。"
+        }
+      ],
+      "collocations": [
+        "algorithmic customer order screening"
+      ]
+    },
+    {
+      "id": 6693,
+      "word": "sustainability",
+      "pos": "n. [U]",
+      "phonetic": "[sə͵stenəˋbɪlətɪ]",
+      "definition": "以生物製造全面取代石化塑料之綠色永續承諾",
+      "cefr": "B1",
+      "topic": "生物製造永續",
+      "examples": [
+        {
+          "en": "Microbial synthesis offers true environmental sustainability by producing petroleum-free textiles and polymers.",
+          "zh": "利用微生物合成製造完全無石油成分的紡織纖維與高分子，為地球實現真正的「綠色環保永續」（Sustainability）。"
+        },
+        {
+          "en": "Corporate sustainability reports evaluate renewable energy usage, greenhouse emissions, and waste recycling.",
+          "zh": "現代企業社會責任與永續發展年報中，嚴格評估全公司的綠電使用佔比、溫室氣體碳排量與資源回收率。"
+        },
+        {
+          "en": "The island community balances fishery harvest with conservation to protect long-term economic sustainability.",
+          "zh": "這座島嶼漁村社群在經濟捕撈與海洋生態保育間取得微妙平衡，誓言守護沿岸漁業經濟的長遠永續發展。"
+        }
+      ],
+      "collocations": [
+        "bio-manufacturing green sustainability"
+      ]
+    },
+    {
+      "id": 6694,
+      "word": "biology",
+      "pos": "n. [U]",
+      "phonetic": "[baɪˋɑlədʒɪ]",
+      "definition": "善用工程思維改造生命之現代合成生物科學",
+      "cefr": "B1",
+      "topic": "生物工程",
+      "examples": [
+        {
+          "en": "Engineering living biology holds the power to cure genetic illnesses and reverse environmental damage.",
+          "zh": "善用工程思維改造「生命生物學」（Biology），賦予人類治癒先天罕見遺傳疾病與逆轉生態污染的強大力量。"
+        },
+        {
+          "en": "High school students dissected flowers in their introductory biology lab to examine reproductive stamens.",
+          "zh": "高中自然組學生在初階生物學實驗課上親手解剖百合花朵，仔細在顯微鏡下觀察植物花蕊的繁殖構造。"
+        },
+        {
+          "en": "Evolutionary biology investigates how species adapt to environmental pressures across millions of years.",
+          "zh": "演化生物學深奧迷人，專門深入探索生物物種在長達數百萬年的地質歲月中如何適應嚴苛環境壓力的演變歷程。"
+        }
+      ],
+      "collocations": [
+        "engineering synthetic biology"
+      ]
+    },
+    {
+      "id": 6695,
+      "word": "revolution",
+      "pos": "n.",
+      "phonetic": "[͵rɛvəˋluʃən]",
+      "definition": "第四次工業革命之綠色生物製造偉大浪潮；革命",
+      "cefr": "B1",
+      "topic": "生物製造革命",
+      "examples": [
+        {
+          "en": "The bio-manufacturing revolution is transforming factories from chemical smokestacks into clean fermentation tanks.",
+          "zh": "這場席捲全球的「生物製造偉大革命」（Revolution），正將傳統排煙化工廠轉型為純淨清新的生物發酵槽。"
+        },
+        {
+          "en": "The invention of the movable type printing press catalyzed an unprecedented intellectual and literacy revolution.",
+          "zh": "活字印刷術的偉大發明，在歐洲歷史上催化了一場前所未有的知識普及傳播與全民識字率巨幅躍升革命。"
+        },
+        {
+          "en": "Astronomical calculations accurately predict the celestial moon’s orbital revolution around planet Earth.",
+          "zh": "天文軌道物理數學計算，能極其精確地預測月球圍繞地球公轉軌道運行的完整天體運行週期。"
+        }
+      ],
+      "collocations": [
+        "bio-manufacturing industrial revolution"
+      ]
+    },
+    {
+      "id": 6696,
+      "word": "ingenuity",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪndʒəˋnjuətɪ]",
+      "definition": "人類解碼並重寫生命程式碼之無窮科學智慧",
+      "cefr": "B1",
+      "topic": "科學智慧",
+      "examples": [
+        {
+          "en": "Designing synthetic genomes is a breathtaking demonstration of human scientific ingenuity.",
+          "zh": "親手設計並編程全合成生命基因組，是二十一世紀人類「卓越科學智慧與創造力」（Ingenuity）的驚豔展現。"
+        },
+        {
+          "en": "With remarkable resourcefulness and mechanical ingenuity, the stranded sailors repaired their broken rudder.",
+          "zh": "憑藉臨危不亂的過人應變力與高超的機械修護智慧，受困海員在怒海中順利修復了斷裂的船舵脫險。"
+        },
+        {
+          "en": "Architectural ingenuity transformed a cramped, triangular city plot into an award-winning modern residence.",
+          "zh": "建築師巧奪天工的空間規劃智慧，成功將市中心一塊狹窄畸零的三角形建地轉型為屢獲大獎的現代住宅。"
+        }
+      ],
+      "collocations": [
+        "supreme human scientific ingenuity"
+      ]
+    },
+    {
+      "id": 6697,
+      "word": "responsibility",
+      "pos": "n. [U]",
+      "phonetic": "[rɪ͵spɑnsəˋbɪlətɪ]",
+      "definition": "掌控造物剪刀之崇高倫理謙卑敬畏責任；責任",
+      "cefr": "B1",
+      "topic": "倫理責任",
+      "examples": [
+        {
+          "en": "Wielding the power to rewrite nature demands profound ethical responsibility and global cooperation.",
+          "zh": "掌握重寫大自然生命程式碼的神聖力量，要求科學家肩負起無比崇高的「倫理道德責任」（Responsibility）。"
+        },
+        {
+          "en": "It is our collective civic responsibility to sort recyclable waste and keep public parks clean for all.",
+          "zh": "落實資源垃圾分類回收並悉心維護市區公園公共環境整潔，是每一位現代公民不可推卸的共同社會責任。"
+        },
+        {
+          "en": "The project manager took personal responsibility for the software glitch and quickly issued an apology.",
+          "zh": "該專案經理勇於承擔、主動為本次上線系統故障負起全責，並在第一時間向所有受影響客戶誠摯致歉。"
+        }
+      ],
+      "collocations": [
+        "ethical scientific responsibility"
+      ]
+    },
+    {
+      "id": 6698,
+      "word": "breakthrough",
+      "pos": "n.",
+      "phonetic": "[ˋbrek͵θru]",
+      "definition": "解決全球糧食與抗癌難題之生物學歷史性重大突破",
+      "cefr": "B1",
+      "topic": "歷史突破",
+      "examples": [
+        {
+          "en": "Developing climate-resilient synthetic crops marks a historic agricultural breakthrough for global food security.",
+          "zh": "培育出抗極端氣候的合成生物農作物，標誌著捍衛全球糧食安全的一項「歷史性重大突破」（Breakthrough）。"
+        },
+        {
+          "en": "Medical oncologists cheered the landmark drug discovery as a revolutionary clinical cancer breakthrough.",
+          "zh": "腫瘤臨床專科醫師齊聲熱烈讚譽這項劃時代的新藥研發成果，視其為人類對抗癌症史上的革命性突破。"
+        },
+        {
+          "en": "Diplomatic envoys achieved a long-awaited breakthrough during peace talks, signing a border disarmament pact.",
+          "zh": "各國外交特使在和平談判桌上取得了眾所期盼的關鍵性外交突破，正式簽署了邊境非軍事化裁軍條約。"
+        }
+      ],
+      "collocations": [
+        "historic agricultural breakthrough"
+      ]
+    },
+    {
+      "id": 6699,
+      "word": "code",
+      "pos": "n. [U], v.",
+      "phonetic": "[kod]",
+      "definition": "謙卑解讀並重寫演化三十八億年之神聖生命程式碼；代碼",
+      "cefr": "B1",
+      "topic": "生命程式碼",
+      "examples": [
+        {
+          "en": "For the first time in history, humanity has learned not just to read, but to write the sacred code of life.",
+          "zh": "在漫長演化史上人類首次學會了不僅能閱讀、更能親筆書寫並編程神聖的「生命遺傳程式碼」（Code of Life）。"
+        },
+        {
+          "en": "The hotel room safe requires guests to enter a four-digit numeric security code to unlock the door.",
+          "zh": "飯店客房專用保險箱要求入住旅客自行設定輸入一組四位數的數位安全防護密碼以解鎖保險箱門。"
+        },
+        {
+          "en": "Talented teenage students learn how to code mobile apps using Python and JavaScript in after-school workshops.",
+          "zh": "充滿天賦的國高中青少年學生在課後研習工作坊中，熱情學習運用 Python 與 JavaScript 撰寫手機應用程式代碼。"
+        }
+      ],
+      "collocations": [
+        "rewriting the genetic code"
+      ]
+    },
+    {
+      "id": 6700,
+      "word": "future",
+      "pos": "n., adj.",
+      "phonetic": "[ˋfjutʃɚ]",
+      "definition": "攜手昂首邁入生物製造引領文明之繁榮未來",
+      "cefr": "B1",
+      "topic": "生物未來",
+      "examples": [
+        {
+          "en": "Harmonizing engineering with biology will build a sustainable, disease-free future for all coming generations.",
+          "zh": "將精密工程技術與自然生命完美結合，將為全人類後代子孫打造出遠離病痛、生生不息的「繁榮未來」（Future）。"
+        },
+        {
+          "en": "Young parents establish dedicated college tuition savings funds to secure their children's future education.",
+          "zh": "年輕新手父母及早成立專款專用的高教教育基金存簿，為子女未來的求學之路奠定無後顧之憂的經濟基礎。"
+        },
+        {
+          "en": "Artificial intelligence and renewable clean energy systems will undeniably shape future urban infrastructure.",
+          "zh": "人工智慧運算與永續潔淨能源系統的深度融合，毫無疑問將深刻塑造與引領未來的智慧城市基礎建設。"
+        }
+      ],
+      "collocations": [
+        "sustainable green bio-future"
+      ]
+    }
+  ]
+}

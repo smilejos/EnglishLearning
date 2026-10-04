@@ -1,0 +1,1353 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A1–B1）",
+  "section": "第 1,101–1,150 個單字（CEFR A2 初級）",
+  "batch": "1101-1150",
+  "range": "1101–1150",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 1101,
+      "word": "vehicle",
+      "pos": "n.",
+      "phonetic": "[ˋviɪk!]",
+      "definition": "車輛；交通工具；載具",
+      "cefr": "A2",
+      "topic": "交通與運輸",
+      "examples": [
+        {
+          "en": "Electric vehicles are becoming increasingly popular in Taiwan.",
+          "zh": "電動車在台灣越來越受到歡迎。"
+        },
+        {
+          "en": "Heavy goods vehicles are not permitted on this residential road.",
+          "zh": "大型貨運車輛不得行駛於這條住宅區道路。"
+        },
+        {
+          "en": "Make sure all passengers exit the vehicle safely.",
+          "zh": "確保所有乘客都已安全下車。"
+        }
+      ],
+      "collocations": [
+        "motor vehicle",
+        "electric vehicle"
+      ]
+    },
+    {
+      "id": 1102,
+      "word": "motorcycle",
+      "pos": "n.",
+      "phonetic": "[ˋmotɚˌsaɪk!]",
+      "definition": "重型機車；摩托車",
+      "cefr": "A2",
+      "topic": "交通工具",
+      "examples": [
+        {
+          "en": "Riding a heavy motorcycle requires a special license.",
+          "zh": "騎乘大型重型機車需要考取專用駕照。"
+        },
+        {
+          "en": "He spent the entire afternoon polishing his classic motorcycle.",
+          "zh": "他花了一整個下午擦拭保養他的經典重機。"
+        },
+        {
+          "en": "Motorcyclists should always stay vigilant at intersections.",
+          "zh": "機車騎士在十字路口應隨時保持警覺。"
+        }
+      ],
+      "collocations": [
+        "ride a motorcycle",
+        "motorcycle helmet"
+      ]
+    },
+    {
+      "id": 1103,
+      "word": "scooter",
+      "pos": "n.",
+      "phonetic": "[ˋskutɚ]",
+      "definition": "機車；速克達",
+      "cefr": "A2",
+      "topic": "交通工具",
+      "examples": [
+        {
+          "en": "Scooters are the most common mode of transport in Taiwan.",
+          "zh": "機車是台灣最普遍的代步交通工具。"
+        },
+        {
+          "en": "She commutes to work on her electric scooter every morning.",
+          "zh": "她每天早晨騎著電動機車通勤上班。"
+        },
+        {
+          "en": "Renting a scooter is a convenient way to explore the island.",
+          "zh": "租一輛機車是探索這座島嶼的便利方式。"
+        }
+      ],
+      "collocations": [
+        "electric scooter",
+        "ride a scooter"
+      ]
+    },
+    {
+      "id": 1104,
+      "word": "helmet",
+      "pos": "n.",
+      "phonetic": "[ˋhɛlmɪt]",
+      "definition": "安全帽；頭盔",
+      "cefr": "A2",
+      "topic": "安全與交通",
+      "examples": [
+        {
+          "en": "Always strap your safety helmet securely before riding.",
+          "zh": "騎車前請務必將安全帽確實扣緊。"
+        },
+        {
+          "en": "Construction workers must wear hard helmets on the building site.",
+          "zh": "工地工人必須在建築工地上佩戴安全帽。"
+        },
+        {
+          "en": "The bicycle helmet protected his head during the fall.",
+          "zh": "自行車安全帽在他摔倒時保護了他的頭部。"
+        }
+      ],
+      "collocations": [
+        "wear a helmet",
+        "safety helmet"
+      ]
+    },
+    {
+      "id": 1105,
+      "word": "engine",
+      "pos": "n.",
+      "phonetic": "[ˋɛndʒɪn]",
+      "definition": "引擎；發動機",
+      "cefr": "A2",
+      "topic": "機械與交通",
+      "examples": [
+        {
+          "en": "The mechanic checked the car engine thoroughly.",
+          "zh": "技師徹底檢查了汽車引擎。"
+        },
+        {
+          "en": "Strange rattling noises came from the old aircraft engine.",
+          "zh": "老舊飛機引擎發出奇怪的喀喀聲響。"
+        },
+        {
+          "en": "Turn off the engine while waiting at the railway crossing.",
+          "zh": "在平交道等候時請將發動機熄火。"
+        }
+      ],
+      "collocations": [
+        "start the engine",
+        "jet engine"
+      ]
+    },
+    {
+      "id": 1106,
+      "word": "wheel",
+      "pos": "n., v.",
+      "phonetic": "[hwil]",
+      "definition": "車輪；方向盤；滾動",
+      "cefr": "A2",
+      "topic": "機械與交通",
+      "examples": [
+        {
+          "en": "A bicycle has two wheels, while a car has four.",
+          "zh": "腳踏車有兩個車輪，而汽車有四個。"
+        },
+        {
+          "en": "The front wheel of the cart squeaked loudly as it turned.",
+          "zh": "手推車的前輪在轉彎時發出刺耳的吱吱聲。"
+        },
+        {
+          "en": "He took the wheel and drove us through the heavy thunderstorm.",
+          "zh": "他握住方向盤，載著我們穿過了猛烈的雷陣雨。"
+        }
+      ],
+      "collocations": [
+        "four wheels",
+        "behind the wheel"
+      ]
+    },
+    {
+      "id": 1107,
+      "word": "steering wheel",
+      "pos": "n. phr.",
+      "phonetic": "[ˋstɪrɪŋ hwil]",
+      "definition": "方向盤",
+      "cefr": "A2",
+      "topic": "交通與駕駛",
+      "examples": [
+        {
+          "en": "Keep both hands firmly on the steering wheel while driving.",
+          "zh": "開車時雙手請穩握方向盤。"
+        },
+        {
+          "en": "The luxury sports car features a leather-wrapped steering wheel.",
+          "zh": "這款豪華跑車配備了真皮包覆的方向盤。"
+        },
+        {
+          "en": "She adjusted the steering wheel to a comfortable driving height.",
+          "zh": "她將方向盤調整到舒適的駕駛高度。"
+        }
+      ],
+      "collocations": [
+        "hold the steering wheel"
+      ]
+    },
+    {
+      "id": 1108,
+      "word": "tire",
+      "pos": "n., v.",
+      "phonetic": "[taɪr]",
+      "definition": "輪胎；使疲勞",
+      "cefr": "A2",
+      "topic": "交通與保養",
+      "examples": [
+        {
+          "en": "Check the tire pressure before setting off on a road trip.",
+          "zh": "開車出遊前請先檢查輪胎胎壓。"
+        },
+        {
+          "en": "He learned how to replace a flat tire on the side of the highway.",
+          "zh": "他學會了如何在公路旁更換洩氣的扁胎。"
+        },
+        {
+          "en": "Working twelve hours without a break will tire anyone out.",
+          "zh": "連續工作十二小時不休息會讓任何人都感到疲累。"
+        }
+      ],
+      "collocations": [
+        "tyre (英式)",
+        "flat tire"
+      ]
+    },
+    {
+      "id": 1109,
+      "word": "brake",
+      "pos": "n., v.",
+      "phonetic": "[brek]",
+      "definition": "煞車；煞車制動",
+      "cefr": "A2",
+      "topic": "交通與安全",
+      "examples": [
+        {
+          "en": "Step on the brake pedal gently to bring the car to a halt.",
+          "zh": "輕踩煞車踏板使車輛平穩停下。"
+        },
+        {
+          "en": "The bicycle brakes failed when he was going downhill.",
+          "zh": "他的腳踏車煞車在下坡時失靈了。"
+        },
+        {
+          "en": "Drivers must brake quickly when an animal darts into the road.",
+          "zh": "當動物突然衝到路上時，駕駛必須迅速踩煞車。"
+        }
+      ],
+      "collocations": [
+        "hit the brakes",
+        "emergency brake"
+      ]
+    },
+    {
+      "id": 1110,
+      "word": "gas",
+      "pos": "n.",
+      "phonetic": "[gæs]",
+      "definition": "汽油；瓦斯",
+      "cefr": "A2",
+      "topic": "能源與交通",
+      "examples": [
+        {
+          "en": "We need to stop at the service station to fill up on gas.",
+          "zh": "我們需要停在休息站加油。"
+        },
+        {
+          "en": "Turn off the gas valve properly after cooking dinner.",
+          "zh": "煮完晚餐後請務必將瓦斯閥門確實關緊。"
+        },
+        {
+          "en": "Natural gas is widely used for residential home heating.",
+          "zh": "天然氣被廣泛應用於一般住宅供暖。"
+        }
+      ],
+      "collocations": [
+        "petrol (英式)",
+        "step on the gas"
+      ]
+    },
+    {
+      "id": 1111,
+      "word": "fuel",
+      "pos": "n., v.",
+      "phonetic": "[ˋfjuəl]",
+      "definition": "燃料；補充燃料；激勵",
+      "cefr": "A2",
+      "topic": "能源與科技",
+      "examples": [
+        {
+          "en": "Hybrid cars consume significantly less fuel in city traffic.",
+          "zh": "油電車在市區行駛時消耗顯著較少的燃料。"
+        },
+        {
+          "en": "Rising fuel prices have increased international shipping costs.",
+          "zh": "燃油價格上漲增加了國際航運成本。"
+        },
+        {
+          "en": "His harsh criticism only fueled their determination to win.",
+          "zh": "他嚴厲的批評反而更加激發了他們獲勝的決心。"
+        }
+      ],
+      "collocations": [
+        "fossil fuel",
+        "fuel consumption"
+      ]
+    },
+    {
+      "id": 1112,
+      "word": "speed",
+      "pos": "n., v.",
+      "phonetic": "[spid]",
+      "definition": "速度；超速；加速",
+      "cefr": "A2",
+      "topic": "速度與交通",
+      "examples": [
+        {
+          "en": "Do not exceed the speed limit on winding mountain roads.",
+          "zh": "在蜿蜒山路上切勿超速行駛。"
+        },
+        {
+          "en": "The high-speed train travels at over three hundred kilometers per hour.",
+          "zh": "高速列車以超過每小時三百公里的速度行駛。"
+        },
+        {
+          "en": "You need to speed up if you want to catch the last bus.",
+          "zh": "如果你想趕上末班公車，就必須加快腳步。"
+        }
+      ],
+      "collocations": [
+        "high speed",
+        "at full speed"
+      ]
+    },
+    {
+      "id": 1113,
+      "word": "speed limit",
+      "pos": "n. phr.",
+      "phonetic": "[spid ˋlɪmɪt]",
+      "definition": "速限；最高限速",
+      "cefr": "A2",
+      "topic": "交通法規",
+      "examples": [
+        {
+          "en": "The speed limit on Taiwan's National Freeway No. 1 is 100 km/h.",
+          "zh": "台灣國道一號的最高速限為每小時 100 公里。"
+        },
+        {
+          "en": "Drivers who exceed the speed limit will face heavy monetary fines.",
+          "zh": "超速行駛的駕駛將面臨高額罰金處罰。"
+        },
+        {
+          "en": "Pay attention to the speed limit signs when entering school zones.",
+          "zh": "進入學校周邊區域時請留意限速標誌。"
+        }
+      ],
+      "collocations": [
+        "obey the speed limit"
+      ]
+    },
+    {
+      "id": 1114,
+      "word": "highway",
+      "pos": "n.",
+      "phonetic": "[ˋhaɪˌwe]",
+      "definition": "公路；高速公路",
+      "cefr": "A2",
+      "topic": "道路與交通",
+      "examples": [
+        {
+          "en": "Driving on the coastal highway offers breathtaking ocean views.",
+          "zh": "行駛在濱海公路上坐擁令人屏息的壯麗海景。"
+        },
+        {
+          "en": "A serious traffic accident blocked two lanes on the interstate highway.",
+          "zh": "一起嚴重的交通事故封閉了州際公路的兩條車道。"
+        },
+        {
+          "en": "We took the scenic highway instead of the congested city streets.",
+          "zh": "我們選擇行駛風景優美的公路，避開了擁擠的市區街道。"
+        }
+      ],
+      "collocations": [
+        "freeway",
+        "take the highway"
+      ]
+    },
+    {
+      "id": 1115,
+      "word": "lane",
+      "pos": "n.",
+      "phonetic": "[len]",
+      "definition": "車道；小巷；航線",
+      "cefr": "A2",
+      "topic": "道路與交通",
+      "examples": [
+        {
+          "en": "Motorcyclists should stay inside the dedicated scooter lane.",
+          "zh": "機車騎士應行駛在機車專用道內。"
+        },
+        {
+          "en": "Vehicles must signal before changing into the passing lane.",
+          "zh": "車輛在變換至超車道前必須打方向燈。"
+        },
+        {
+          "en": "A quaint stone lane wound through the historic mountain village.",
+          "zh": "一條古雅的石板小巷蜿蜒穿過這座歷史悠久的山村。"
+        }
+      ],
+      "collocations": [
+        "bus lane",
+        "change lanes"
+      ]
+    },
+    {
+      "id": 1116,
+      "word": "tunnel",
+      "pos": "n., v.",
+      "phonetic": "[ˋtʌn!]",
+      "definition": "隧道；開鑿隧道",
+      "cefr": "A2",
+      "topic": "道路與工程",
+      "examples": [
+        {
+          "en": "The Hsuehshan Tunnel connects New Taipei and Yilan.",
+          "zh": "雪山隧道連接了新北市與宜蘭縣。"
+        },
+        {
+          "en": "Turn on your car headlights whenever driving through a long tunnel.",
+          "zh": "開車穿過長隧道時務必開啟汽車大燈。"
+        },
+        {
+          "en": "Workers dug an underground tunnel to expand the subway system.",
+          "zh": "工人們挖掘了一條地下隧道以擴建地鐵系統。"
+        }
+      ],
+      "collocations": [
+        "drive through a tunnel"
+      ]
+    },
+    {
+      "id": 1117,
+      "word": "bridge",
+      "pos": "n., v.",
+      "phonetic": "[brɪdʒ]",
+      "definition": "橋樑；跨越",
+      "cefr": "A2",
+      "topic": "交通與建築",
+      "examples": [
+        {
+          "en": "The Danjiang Bridge will be a stunning landmark across the river.",
+          "zh": "淡江大橋將成為橫跨河面的迷人地標。"
+        },
+        {
+          "en": "Pedestrians can cross the busy avenue using the elevated foot bridge.",
+          "zh": "行人可利用高架人行陸橋跨越繁忙的大街。"
+        },
+        {
+          "en": "Cultural exchange programs help bridge misunderstandings between nations.",
+          "zh": "文化交流計畫有助於消除各國之間的誤解隔閡。"
+        }
+      ],
+      "collocations": [
+        "cross a bridge",
+        "suspension bridge"
+      ]
+    },
+    {
+      "id": 1118,
+      "word": "passenger",
+      "pos": "n.",
+      "phonetic": "[ˋpæsndʒɚ]",
+      "definition": "乘客；旅客",
+      "cefr": "A2",
+      "topic": "交通與人物",
+      "examples": [
+        {
+          "en": "All passengers are required to wear seatbelts by law.",
+          "zh": "法律規定全體乘客均須繫妥安全帶。"
+        },
+        {
+          "en": "Flight attendants welcomed each passenger aboard the airplane.",
+          "zh": "空服人員歡迎每位乘客登上飛機。"
+        },
+        {
+          "en": "Over a thousand passengers boarded the cruise ship for the Caribbean voyage.",
+          "zh": "超過一千名旅客登上了前往加勒比海航程的郵輪。"
+        }
+      ],
+      "collocations": [
+        "bus passenger",
+        "passenger seat"
+      ]
+    },
+    {
+      "id": 1119,
+      "word": "driver's license",
+      "pos": "n. phr.",
+      "phonetic": "[ˋdraɪvɚz ˋlaɪsns]",
+      "definition": "駕照",
+      "cefr": "A2",
+      "topic": "交通與身分",
+      "examples": [
+        {
+          "en": "You must carry your driver's license when operating a car.",
+          "zh": "開車上路時必須隨身攜帶駕照。"
+        },
+        {
+          "en": "She passed her road test on the first try and obtained her driver's license.",
+          "zh": "她路考一次就通過並順利取得了駕照。"
+        },
+        {
+          "en": "The police officer asked to inspect the young driver's license.",
+          "zh": "警員要求檢查這位年輕駕駛的駕照。"
+        }
+      ],
+      "collocations": [
+        "driving licence (英式)",
+        "valid driver's license"
+      ]
+    },
+    {
+      "id": 1120,
+      "word": "fine",
+      "pos": "n., v.",
+      "phonetic": "[faɪn]",
+      "definition": "罰金；處以罰款",
+      "cefr": "A2",
+      "topic": "法律與交通",
+      "examples": [
+        {
+          "en": "You will get a fine for parking in a red-line zone.",
+          "zh": "在紅線違規停車會收到罰單。"
+        },
+        {
+          "en": "The weather looks perfectly fine for an outdoor picnic.",
+          "zh": "天氣看起來非常晴朗良好，很適合戶外野餐。"
+        },
+        {
+          "en": "The court imposed a heavy fine on the illegal dumping company.",
+          "zh": "法院對非法傾倒廢棄物的公司處以重罰。"
+        }
+      ],
+      "collocations": [
+        "traffic fine",
+        "pay a fine"
+      ]
+    },
+    {
+      "id": 1121,
+      "word": "accident",
+      "pos": "n.",
+      "phonetic": "[ˋæksədənt]",
+      "definition": "意外事故；車禍",
+      "cefr": "A2",
+      "topic": "交通與安全",
+      "examples": [
+        {
+          "en": "Drive defensively to prevent serious road accidents.",
+          "zh": "採取防衛性駕駛以預防嚴重的交通事故。"
+        },
+        {
+          "en": "I spilled hot coffee over my keyboard completely by accident.",
+          "zh": "我純屬意外不小心把熱咖啡潑灑在鍵盤上。"
+        },
+        {
+          "en": "Emergency medics responded swiftly to the factory accident.",
+          "zh": "緊急救護人員對工廠發生的意外事件迅速做出了處置。"
+        }
+      ],
+      "collocations": [
+        "traffic accident",
+        "by accident"
+      ]
+    },
+    {
+      "id": 1122,
+      "word": "repair",
+      "pos": "v., n.",
+      "phonetic": "[rɪˋpɛr]",
+      "definition": "修理；修補；修復",
+      "cefr": "A2",
+      "topic": "維修與保養",
+      "examples": [
+        {
+          "en": "The mechanic repaired my punctured bicycle tire quickly.",
+          "zh": "技師迅速修補了我被刺破的腳踏車輪胎。"
+        },
+        {
+          "en": "Road repair work caused minor traffic delays during rush hour.",
+          "zh": "道路修繕工程在尖峰時段造成了輕微的交通延誤。"
+        },
+        {
+          "en": "It will cost several hundred dollars to repair the broken smartphone screen.",
+          "zh": "修理破碎的手機螢幕需要花費數百美元。"
+        }
+      ],
+      "collocations": [
+        "fix",
+        "under repair"
+      ]
+    },
+    {
+      "id": 1123,
+      "word": "parking space",
+      "pos": "n. phr.",
+      "phonetic": "[ˋpɑrkɪŋ spes]",
+      "definition": "停車格；停車位",
+      "cefr": "A2",
+      "topic": "交通與都市",
+      "examples": [
+        {
+          "en": "Finding an available parking space in Taipei can be challenging.",
+          "zh": "在台北市要找到可用的停車位可能頗具挑戰。"
+        },
+        {
+          "en": "Do not occupy the designated handicapped parking space without a permit.",
+          "zh": "未經許可切勿佔用無障礙專用停車位。"
+        },
+        {
+          "en": "The modern apartment complex offers one underground parking space per unit.",
+          "zh": "這棟現代化公寓大樓每戶皆配有一個地下停車位。"
+        }
+      ],
+      "collocations": [
+        "parking spot",
+        "reserve a parking space"
+      ]
+    },
+    {
+      "id": 1124,
+      "word": "traffic jam",
+      "pos": "n. phr.",
+      "phonetic": "[ˋtræfɪk dʒæm]",
+      "definition": "塞車；交通擁塞",
+      "cefr": "A2",
+      "topic": "交通與生活",
+      "examples": [
+        {
+          "en": "We were stuck in a heavy traffic jam on the freeway.",
+          "zh": "我們在高速公路上被困在嚴重的車陣中。"
+        },
+        {
+          "en": "Bad weather and road construction often result in severe traffic jams.",
+          "zh": "惡劣天候和道路施工經常導致嚴重的交通壅塞。"
+        },
+        {
+          "en": "Leaving early in the morning helps you avoid peak-hour traffic jams.",
+          "zh": "清晨提早出門有助於避開尖峰時段的塞車車潮。"
+        }
+      ],
+      "collocations": [
+        "traffic congestion",
+        "get stuck in a traffic jam"
+      ]
+    },
+    {
+      "id": 1125,
+      "word": "route",
+      "pos": "n.",
+      "phonetic": "[rut]",
+      "definition": "路線；路徑；途徑",
+      "cefr": "A2",
+      "topic": "導航與旅遊",
+      "examples": [
+        {
+          "en": "Check the GPS navigation for the fastest driving route.",
+          "zh": "查閱 GPS 導航以獲取最快速的行車路線。"
+        },
+        {
+          "en": "The city added a new bus route serving remote suburban communities.",
+          "zh": "市政府新增了一條服務偏遠郊區社區的公車路線。"
+        },
+        {
+          "en": "Hikers followed a well-marked mountain route up to the summit.",
+          "zh": "登山客沿著標示清晰的登山路徑一路登上山頂。"
+        }
+      ],
+      "collocations": [
+        "bus route",
+        "scenic route"
+      ]
+    },
+    {
+      "id": 1126,
+      "word": "direct",
+      "pos": "adj., v., adv.",
+      "phonetic": "[dəˋrɛkt]",
+      "definition": "直達的；指引；直接地",
+      "cefr": "A2",
+      "topic": "交通與溝通",
+      "examples": [
+        {
+          "en": "Is there a direct train from Taipei to Taitung?",
+          "zh": "請問有從台北直達台東的火車嗎？"
+        },
+        {
+          "en": "The teacher gave clear and direct instructions for the test.",
+          "zh": "老師對考試給予了明確直接的指示。"
+        },
+        {
+          "en": "Police officers were deployed to direct heavy traffic around the stadium.",
+          "zh": "警官被派往體育場周圍指揮疏導繁忙的交通。"
+        }
+      ],
+      "collocations": [
+        "direct flight",
+        "direct train"
+      ]
+    },
+    {
+      "id": 1127,
+      "word": "transfer",
+      "pos": "v., n.",
+      "phonetic": "[trænsˋfɝ] / [ˋtrænsfɝ]",
+      "definition": "轉乘；轉移；轉帳",
+      "cefr": "A2",
+      "topic": "交通與金融",
+      "examples": [
+        {
+          "en": "Transfer to the Red Line at Taipei Main Station.",
+          "zh": "請在台北車站轉乘紅線捷運。"
+        },
+        {
+          "en": "He transferred money from his checking account to pay the rent.",
+          "zh": "他從支票帳戶轉帳以支付房租。"
+        },
+        {
+          "en": "The university allows students to transfer course credits between departments.",
+          "zh": "該大學允許學生在各系所之間辦理學分抵免轉移。"
+        }
+      ],
+      "collocations": [
+        "transfer trains",
+        "bank transfer"
+      ]
+    },
+    {
+      "id": 1128,
+      "word": "platform",
+      "pos": "n.",
+      "phonetic": "[ˋplætˌfɔrm]",
+      "definition": "月台；平台；講台",
+      "cefr": "A2",
+      "topic": "鐵路與交通",
+      "examples": [
+        {
+          "en": "Stand behind the yellow safety line on the train platform.",
+          "zh": "請在火車月台的黃色安全線後方等候。"
+        },
+        {
+          "en": "The politician stepped onto the platform to deliver his campaign speech.",
+          "zh": "這位政治人物走上講台發表他的競選演說。"
+        },
+        {
+          "en": "This online streaming platform provides thousands of documentary films.",
+          "zh": "這個線上串流影音平台提供了數千部紀錄片。"
+        }
+      ],
+      "collocations": [
+        "train platform",
+        "platform number"
+      ]
+    },
+    {
+      "id": 1129,
+      "word": "express train",
+      "pos": "n. phr.",
+      "phonetic": "[ɪkˋsprɛs tren]",
+      "definition": "自強號；特快車",
+      "cefr": "A2",
+      "topic": "鐵路與交通",
+      "examples": [
+        {
+          "en": "The Taroko Express train offers a fast journey to Hualien.",
+          "zh": "太魯閣號特快車提供前往花蓮的便捷旅程。"
+        },
+        {
+          "en": "Be sure to buy tickets in advance because express trains sell out early.",
+          "zh": "請務必提早買票，因為特快車往往很早就售罄。"
+        },
+        {
+          "en": "Unlike local commuter trains, the express train skips smaller stations.",
+          "zh": "與區間普通車不同，特快車不會停靠較小的車站。"
+        }
+      ],
+      "collocations": [
+        "take the express train"
+      ]
+    },
+    {
+      "id": 1130,
+      "word": "High Speed Rail",
+      "pos": "n. phr.",
+      "phonetic": "[haɪ spid rel]",
+      "definition": "高鐵；台灣高速鐵路",
+      "cefr": "A2",
+      "topic": "鐵路與交通",
+      "examples": [
+        {
+          "en": "The Taiwan High Speed Rail connects Taipei and Zuoying in 90 minutes.",
+          "zh": "台灣高鐵在 90 分鐘內連結台北與左營。"
+        },
+        {
+          "en": "Taking the High Speed Rail is the most efficient way to travel across western Taiwan.",
+          "zh": "搭乘高鐵是穿梭台灣西部走廊最高效的旅行方式。"
+        },
+        {
+          "en": "Discounted early-bird tickets are available on the High Speed Rail website.",
+          "zh": "高鐵官方網站上提供限量的早鳥優惠折扣車票。"
+        }
+      ],
+      "collocations": [
+        "HSR",
+        "bullet train"
+      ]
+    },
+    {
+      "id": 1131,
+      "word": "carriage",
+      "pos": "n.",
+      "phonetic": "[ˋkærɪdʒ]",
+      "definition": "車廂；馬車",
+      "cefr": "A2",
+      "topic": "鐵路與交通",
+      "examples": [
+        {
+          "en": "Our reserved seats are in train carriage number six.",
+          "zh": "我們的劃位座位在火車第六節車廂。"
+        },
+        {
+          "en": "Cinderella rode to the palace ball in a magical pumpkin carriage.",
+          "zh": "灰姑娘搭乘神奇的南瓜馬車前往皇宮舞會。"
+        },
+        {
+          "en": "Passengers should maintain silence in the designated quiet carriage.",
+          "zh": "乘客在專屬的靜音車廂內應當保持肅靜。"
+        }
+      ],
+      "collocations": [
+        "passenger car (美式)",
+        "dining carriage"
+      ]
+    },
+    {
+      "id": 1132,
+      "word": "luggage rack",
+      "pos": "n. phr.",
+      "phonetic": "[ˋlʌgɪdʒ ræk]",
+      "definition": "行李架；置物架",
+      "cefr": "A2",
+      "topic": "交通設施",
+      "examples": [
+        {
+          "en": "Place your heavy suitcases on the luggage rack near the door.",
+          "zh": "將厚重行李箱放在靠近車門處的行李架上。"
+        },
+        {
+          "en": "He lifted his travel bag onto the overhead luggage rack.",
+          "zh": "他把旅行提袋放到了頭頂上方的行李置物架上。"
+        },
+        {
+          "en": "Ensure all backpacks on the luggage rack are securely balanced before the train moves.",
+          "zh": "列車啟動前，請確認行李架上的所有背包都已平穩放置。"
+        }
+      ],
+      "collocations": [
+        "overhead luggage rack"
+      ]
+    },
+    {
+      "id": 1133,
+      "word": "fare",
+      "pos": "n.",
+      "phonetic": "[fɛr]",
+      "definition": "車費；票價",
+      "cefr": "A2",
+      "topic": "金融與交通",
+      "examples": [
+        {
+          "en": "You can tap your EasyCard to pay the bus fare.",
+          "zh": "你可以感應悠遊卡來支付公車車資。"
+        },
+        {
+          "en": "Airline fares tend to surge during the summer vacation season.",
+          "zh": "機票票價往往會在暑假旅遊旺季期間飆漲。"
+        },
+        {
+          "en": "Senior citizens enjoy discounted public transport fares nationwide.",
+          "zh": "全國年長者搭乘大眾運輸工具享有優惠折扣票價。"
+        }
+      ],
+      "collocations": [
+        "bus fare",
+        "air fare"
+      ]
+    },
+    {
+      "id": 1134,
+      "word": "conductor",
+      "pos": "n.",
+      "phonetic": "[kənˋdʌktɚ]",
+      "definition": "列車長；車長；指揮家",
+      "cefr": "A2",
+      "topic": "職業與交通",
+      "examples": [
+        {
+          "en": "The train conductor inspected tickets during the ride.",
+          "zh": "列車長在列車行駛途中進行查票。"
+        },
+        {
+          "en": "The orchestra conductor raised his baton and the music began.",
+          "zh": "管弦樂團指揮揚起指揮棒，美妙的樂音隨即奏響。"
+        },
+        {
+          "en": "Copper is widely recognized as an excellent electrical conductor.",
+          "zh": "銅被公認為極為優良的導電體。"
+        }
+      ],
+      "collocations": [
+        "train conductor",
+        "orchestra conductor"
+      ]
+    },
+    {
+      "id": 1135,
+      "word": "airline",
+      "pos": "n.",
+      "phonetic": "[ˋɛrˌlaɪn]",
+      "definition": "航空公司",
+      "cefr": "A2",
+      "topic": "航空與商業",
+      "examples": [
+        {
+          "en": "EVA Air and China Airlines are Taiwan's major airlines.",
+          "zh": "長榮航空與中華航空是台灣的主要航空公司。"
+        },
+        {
+          "en": "Which airline offers the cheapest flights to London?",
+          "zh": "哪一家航空公司提供飛往倫敦最便宜的航班？"
+        },
+        {
+          "en": "The budget airline charges extra fees for checked baggage.",
+          "zh": "這家廉價航空公司對託運行李額外收取費用。"
+        }
+      ],
+      "collocations": [
+        "airline company",
+        "budget airline"
+      ]
+    },
+    {
+      "id": 1136,
+      "word": "check-in",
+      "pos": "n., v.",
+      "phonetic": "[ˋtʃɛkˌɪn]",
+      "definition": "辦理登機／入住手續；報到",
+      "cefr": "A2",
+      "topic": "航空與飯店",
+      "examples": [
+        {
+          "en": "Complete online check-in twenty-four hours before departure.",
+          "zh": "在起飛前二十四小時先完成線上報到。"
+        },
+        {
+          "en": "Hotel check-in typically begins after three o'clock in the afternoon.",
+          "zh": "飯店入住手續通常在下午三點過後開始辦理。"
+        },
+        {
+          "en": "Long queues formed in front of the international airport check-in counter.",
+          "zh": "國際機場報到櫃檯前排起了長長的隊伍。"
+        }
+      ],
+      "collocations": [
+        "check-in counter",
+        "check-in desk"
+      ]
+    },
+    {
+      "id": 1137,
+      "word": "departure",
+      "pos": "n.",
+      "phonetic": "[dɪˋpɑrtʃɚ]",
+      "definition": "出發；離境；起飛",
+      "cefr": "A2",
+      "topic": "航空與旅遊",
+      "examples": [
+        {
+          "en": "Check the digital departure board for your flight status.",
+          "zh": "查看電子出發時刻看板以了解您的航班動態。"
+        },
+        {
+          "en": "All passengers should arrive at the gate thirty minutes before departure.",
+          "zh": "全體旅客應於起飛前三十分鐘抵達登機門。"
+        },
+        {
+          "en": "His sudden departure from the company surprised everyone in the office.",
+          "zh": "他突然從公司離職令辦公室裡的每個人都深感震驚。"
+        }
+      ],
+      "collocations": [
+        "departure gate",
+        "time of departure"
+      ]
+    },
+    {
+      "id": 1138,
+      "word": "arrival",
+      "pos": "n.",
+      "phonetic": "[əˋraɪv!]",
+      "definition": "抵達；到達；入境",
+      "cefr": "A2",
+      "topic": "航空與旅遊",
+      "examples": [
+        {
+          "en": "We will meet our visiting foreign friends at the arrival hall.",
+          "zh": "我們將在機場入境接機大廳迎接來訪的外國友人。"
+        },
+        {
+          "en": "The flight arrival was delayed by poor weather conditions.",
+          "zh": "航班抵達時間因惡劣天候狀況而有所延誤。"
+        },
+        {
+          "en": "On arrival at the hotel, guest luggage was taken directly to their suites.",
+          "zh": "抵達飯店時，客人的行李被直接送往了他們的套房。"
+        }
+      ],
+      "collocations": [
+        "arrival hall",
+        "estimated time of arrival"
+      ]
+    },
+    {
+      "id": 1139,
+      "word": "delay",
+      "pos": "v., n.",
+      "phonetic": "[dɪˋle]",
+      "definition": "延誤；延期；耽擱",
+      "cefr": "A2",
+      "topic": "交通與時間",
+      "examples": [
+        {
+          "en": "The flight departure was delayed by two hours due to heavy fog.",
+          "zh": "由於濃霧，該航班起飛時間延誤了兩小時。"
+        },
+        {
+          "en": "Don't delay in seeking medical advice if symptoms persist.",
+          "zh": "若症狀持續未消，請勿拖延就醫諮詢。"
+        },
+        {
+          "en": "Technical difficulties caused an unexpected delay in the live broadcast.",
+          "zh": "技術故障導致現場直播節目發生了意料之外的延遲。"
+        }
+      ],
+      "collocations": [
+        "delayed flight",
+        "without delay"
+      ]
+    },
+    {
+      "id": 1140,
+      "word": "gate",
+      "pos": "n.",
+      "phonetic": "[get]",
+      "definition": "登機門；大門",
+      "cefr": "A2",
+      "topic": "航空與交通",
+      "examples": [
+        {
+          "en": "Passengers boarding for Tokyo should proceed to Gate B7.",
+          "zh": "前往東京的登機旅客請前往 B7 號登機門。"
+        },
+        {
+          "en": "Don't forget to close and lock the front garden gate.",
+          "zh": "別忘了將前花園大門關好並上鎖。"
+        },
+        {
+          "en": "Boarding will conclude ten minutes before the flight gate closes.",
+          "zh": "登機手續將在登機門關閉前十分鐘結束。"
+        }
+      ],
+      "collocations": [
+        "boarding gate",
+        "departure gate"
+      ]
+    },
+    {
+      "id": 1141,
+      "word": "baggage claim",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbægɪdʒ klem]",
+      "definition": "行李提領處",
+      "cefr": "A2",
+      "topic": "航空與旅遊",
+      "examples": [
+        {
+          "en": "Pick up your checked suitcases at baggage claim carousel 3.",
+          "zh": "請在三號行李轉盤處提領您的託運行李。"
+        },
+        {
+          "en": "We waited over half an hour at the baggage claim area for our luggage.",
+          "zh": "我們在行李提領區等了半個多小時才拿到行李。"
+        },
+        {
+          "en": "Follow airport signs toward the baggage claim exit after clearing border control.",
+          "zh": "通過邊境管制後，請沿著機場指示標誌前往行李提領出口。"
+        }
+      ],
+      "collocations": [
+        "at the baggage claim"
+      ]
+    },
+    {
+      "id": 1142,
+      "word": "customs",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋkʌstəmz]",
+      "definition": "海關；關稅",
+      "cefr": "A2",
+      "topic": "旅遊與法律",
+      "examples": [
+        {
+          "en": "Declare any fresh agricultural products when passing customs.",
+          "zh": "通過海關時，若攜帶任何新鮮農產品必須申報。"
+        },
+        {
+          "en": "The border customs officer inspected our declaration forms carefully.",
+          "zh": "邊境海關官員仔細檢查了我們的申報單。"
+        },
+        {
+          "en": "It took almost an hour to pass through airport customs and immigration.",
+          "zh": "通過機場海關與移民審查關卡花了將近一個小時。"
+        }
+      ],
+      "collocations": [
+        "customs officer",
+        "clear customs"
+      ]
+    },
+    {
+      "id": 1143,
+      "word": "currency",
+      "pos": "n.",
+      "phonetic": "[ˋkɝənsɪ]",
+      "definition": "貨幣；通貨",
+      "cefr": "A2",
+      "topic": "金融與旅遊",
+      "examples": [
+        {
+          "en": "The local currency used in Taiwan is the New Taiwan Dollar (NTD).",
+          "zh": "台灣使用的本地貨幣為新台幣（NTD）。"
+        },
+        {
+          "en": "Most European Union nations adopted the Euro as their common currency.",
+          "zh": "多數歐盟國家採用歐元作為其通用流通貨幣。"
+        },
+        {
+          "en": "Exchange rates between foreign currencies fluctuate on financial markets daily.",
+          "zh": "各國外幣之間的匯率每天在金融市場上持續浮動。"
+        }
+      ],
+      "collocations": [
+        "foreign currency",
+        "local currency"
+      ]
+    },
+    {
+      "id": 1144,
+      "word": "exchange",
+      "pos": "v., n.",
+      "phonetic": "[ɪksˋtʃendʒ]",
+      "definition": "兌換；交換；交流",
+      "cefr": "A2",
+      "topic": "金融與旅遊",
+      "examples": [
+        {
+          "en": "You can exchange US dollars for NT dollars at bank counters.",
+          "zh": "您可以在銀行櫃檯將美金兌換為新台幣。"
+        },
+        {
+          "en": "Students from both universities participated in an academic exchange program.",
+          "zh": "兩所大學的學生參加了學術文化交流計畫。"
+        },
+        {
+          "en": "Customers can exchange unused merchandise within seven days of purchase.",
+          "zh": "顧客可在購買後七日內更換未拆封使用的商品。"
+        }
+      ],
+      "collocations": [
+        "currency exchange",
+        "exchange rate"
+      ]
+    },
+    {
+      "id": 1145,
+      "word": "destination",
+      "pos": "n.",
+      "phonetic": "[͵dɛstəˋneʃən]",
+      "definition": "目的地；終點",
+      "cefr": "A2",
+      "topic": "旅遊與地理",
+      "examples": [
+        {
+          "en": "Taroko Gorge is a world-renowned travel destination.",
+          "zh": "太魯閣峽谷是舉世聞名的旅遊目的地。"
+        },
+        {
+          "en": "We finally reached our destination after an eight-hour scenic train ride.",
+          "zh": "經過八小時風景優美的火車車程後，我們終於抵達了目的地。"
+        },
+        {
+          "en": "The island has become a preferred destination for honeymoon vacations.",
+          "zh": "這座島嶼已成為度蜜月度假的首選勝地。"
+        }
+      ],
+      "collocations": [
+        "tourist destination",
+        "final destination"
+      ]
+    },
+    {
+      "id": 1146,
+      "word": "accommodation",
+      "pos": "n.",
+      "phonetic": "[ə͵kɑməˋdeʃən]",
+      "definition": "住宿；膳宿（不可數）",
+      "cefr": "A2",
+      "topic": "旅遊與生活",
+      "examples": [
+        {
+          "en": "Book your hotel accommodation well in advance during holidays.",
+          "zh": "連假期間請務必提前預訂飯店住宿。"
+        },
+        {
+          "en": "University dormitory accommodation is provided for all freshmen students.",
+          "zh": "全體大學一年級新生均享有學校宿舍住宿安排。"
+        },
+        {
+          "en": "The travel agency arranged comfortable resort accommodation near the beach.",
+          "zh": "旅行社在海灘附近安排了舒適的度假村住宿。"
+        }
+      ],
+      "collocations": [
+        "lodging",
+        "book accommodation"
+      ]
+    },
+    {
+      "id": 1147,
+      "word": "reservation",
+      "pos": "n.",
+      "phonetic": "[͵rɛzɚˋveʃən]",
+      "definition": "預約；訂位；訂房",
+      "cefr": "A2",
+      "topic": "餐廳與飯店",
+      "examples": [
+        {
+          "en": "I made a dinner reservation for four at the hot pot restaurant.",
+          "zh": "我在火鍋店預約了四個人的晚餐訂位。"
+        },
+        {
+          "en": "You must confirm your table reservation at least one day before dining.",
+          "zh": "您必須在用餐前至少一天確認您的訂位。"
+        },
+        {
+          "en": "The committee expressed strong reservations about the proposed budget cut.",
+          "zh": "委員會對擬議中的預算削減表達了強烈保留態度。"
+        }
+      ],
+      "collocations": [
+        "make a reservation",
+        "cancel a reservation"
+      ]
+    },
+    {
+      "id": 1148,
+      "word": "booking",
+      "pos": "n.",
+      "phonetic": "[ˋbʊkɪŋ]",
+      "definition": "預訂；預購",
+      "cefr": "A2",
+      "topic": "旅遊與商業",
+      "examples": [
+        {
+          "en": "You will receive a confirmation code after completing your booking.",
+          "zh": "完成預訂後，您將會收到一組確認代碼。"
+        },
+        {
+          "en": "The popular coastal resort is completely full, so early booking is essential.",
+          "zh": "這座熱門的海濱度假勝地全部客滿，因此及早預訂非常重要。"
+        },
+        {
+          "en": "She made an online flight booking through the travel website.",
+          "zh": "她透過旅遊訂票網站辦理了線上機票預訂。"
+        }
+      ],
+      "collocations": [
+        "advance booking",
+        "online booking"
+      ]
+    },
+    {
+      "id": 1149,
+      "word": "reception",
+      "pos": "n.",
+      "phonetic": "[rɪˋsɛpʃən]",
+      "definition": "接待處；服務台；歡迎會",
+      "cefr": "A2",
+      "topic": "飯店與場所",
+      "examples": [
+        {
+          "en": "Inquire at the front desk reception for local sightseeing maps.",
+          "zh": "可向櫃檯接待處詢問以索取當地觀光導覽地圖。"
+        },
+        {
+          "en": "The wedding reception was held in a magnificent hotel grand ballroom.",
+          "zh": "婚禮婚宴在飯店宏偉的大宴會廳隆重舉行。"
+        },
+        {
+          "en": "Mobile phone signal reception is poor inside deep underground tunnels.",
+          "zh": "在深邃的地下隧道內，手機訊號接收狀況很差。"
+        }
+      ],
+      "collocations": [
+        "front reception",
+        "wedding reception"
+      ]
+    },
+    {
+      "id": 1150,
+      "word": "receptionist",
+      "pos": "n.",
+      "phonetic": "[rɪˋsɛpʃənɪst]",
+      "definition": "接待員；櫃檯人員",
+      "cefr": "A2",
+      "topic": "職業與飯店",
+      "examples": [
+        {
+          "en": "The friendly hotel receptionist handed us the electronic room key cards.",
+          "zh": "親切的飯店櫃檯人員將電子房卡遞交給我們。"
+        },
+        {
+          "en": "The dental clinic receptionist scheduled my next cleaning appointment.",
+          "zh": "牙醫診所櫃檯人員為我排定了下一次洗牙預約。"
+        },
+        {
+          "en": "The corporate receptionist greeted visitors warmly in the main lobby.",
+          "zh": "公司總機接待人員在大廳熱情迎接前來造訪的訪客。"
+        }
+      ],
+      "collocations": [
+        "hotel receptionist",
+        "medical receptionist"
+      ]
+    }
+  ]
+}

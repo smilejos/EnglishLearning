@@ -1,0 +1,1331 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 2,751–2,800 個單字（CEFR B1 中級）",
+  "batch": "2751-2800",
+  "range": "2751–2800",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 2751,
+      "word": "aviation",
+      "pos": "n. [U]",
+      "phonetic": "[͵evɪˋeʃən]",
+      "definition": "航空；航空業；飛行學",
+      "cefr": "B1",
+      "topic": "航空運輸",
+      "examples": [
+        {
+          "en": "The global civil aviation industry recovered rapidly post-pandemic.",
+          "zh": "全球民用航空運輸業在後疫情時代迎來強勁迅速的復甦。"
+        },
+        {
+          "en": "She decided to pursue a degree in aviation management to fulfill her dream of working at airports.",
+          "zh": "她毅然決定報考攻讀航空管理專業學位，以實現投身機場運營管理的兒時夢想。"
+        },
+        {
+          "en": "Strict safety regulations in civil aviation have made commercial flying the safest mode of transport.",
+          "zh": "民用航空界對飛行安全法規的苛刻落實，使得搭乘民航客機成為當今全球最安全的大眾出行方式。"
+        }
+      ],
+      "collocations": [
+        "civil aviation",
+        "aviation safety"
+      ]
+    },
+    {
+      "id": 2752,
+      "word": "airline carrier",
+      "pos": "n. phr.",
+      "phonetic": "[ˋɛrˌlaɪn ˋkærɪɚ]",
+      "definition": "航空公司；空運載運業者",
+      "cefr": "B1",
+      "topic": "航空企業",
+      "examples": [
+        {
+          "en": "Starlux Airlines and EVA Air are world-class international airline carriers.",
+          "zh": "星宇航空與長榮航空皆為享譽國際的世界級頂尖航空公司。"
+        },
+        {
+          "en": "The regional airline carrier expanded its flight network to include direct routes to Southeast Asia.",
+          "zh": "這家區域型航空公司積極拓展其航網版圖，增設了多條直飛東南亞熱門旅遊城市的新航線。"
+        },
+        {
+          "en": "Passengers can compare ticket prices across multiple airline carriers using travel booking platforms.",
+          "zh": "旅客可透過旅遊機票比價平台，輕鬆橫向比對數家不同航空載運業者所開出的各項票價優惠。"
+        }
+      ],
+      "collocations": [
+        "national flag carrier"
+      ]
+    },
+    {
+      "id": 2753,
+      "word": "low-cost carrier",
+      "pos": "n. phr.",
+      "phonetic": "[lo kɔst ˋkærɪɚ]",
+      "definition": "廉價航空；低成本航空 (LCC)",
+      "cefr": "B1",
+      "topic": "航空型態",
+      "examples": [
+        {
+          "en": "Tigerair Taiwan is a popular low-cost carrier (LCC) for weekend trips to Japan.",
+          "zh": "台灣虎航是國人前往日本進行週末輕旅行時最喜愛搭乘的平價廉航。"
+        },
+        {
+          "en": "Low-cost carriers keep base airfares cheap by charging extra for checked baggage and seat selection.",
+          "zh": "低成本廉航透過將託運行李額度與預選座位改為額外使用者付費，進而壓低基礎機票價格。"
+        },
+        {
+          "en": "Many backpackers prefer flying with low-cost carriers to save money for destination accommodations.",
+          "zh": "許多精打細算的年輕背包客偏好選搭廉價航空，將省下的機票旅費撥充至當地的特色住宿體驗。"
+        }
+      ],
+      "collocations": [
+        "LCC",
+        "budget airline"
+      ]
+    },
+    {
+      "id": 2754,
+      "word": "flight attendant",
+      "pos": "n. phr.",
+      "phonetic": "[flaɪt əˋtɛndənt]",
+      "definition": "空服員；空中乘務員",
+      "cefr": "B1",
+      "topic": "航空職業",
+      "examples": [
+        {
+          "en": "The attentive flight attendant assisted elderly passengers with overhead bags.",
+          "zh": "熱心細緻的空服員親切協助年長旅客將隨身隨行行李置入置物櫃。"
+        },
+        {
+          "en": "Flight attendants undergo rigorous emergency evacuation and first aid training before flying.",
+          "zh": "空服員在正式上機執行客艙服務前，皆必須通過高強度的緊急逃生疏散演練與急救專業考核。"
+        },
+        {
+          "en": "The polite flight attendant brought a warm blanket and a glass of water to the shivering traveler.",
+          "zh": "彬彬有禮的空服員主動為在機艙內瑟瑟發抖的旅客遞上一條溫暖毛毯與一杯溫開水。"
+        }
+      ],
+      "collocations": [
+        "cabin crew",
+        "air steward"
+      ]
+    },
+    {
+      "id": 2755,
+      "word": "pilot",
+      "pos": "n., v.",
+      "phonetic": "[ˋpaɪlət]",
+      "definition": "機長；飛行員；駕駛（飛機）",
+      "cefr": "B1",
+      "topic": "航空職業",
+      "examples": [
+        {
+          "en": "The seasoned captain and co-pilot navigated safely through heavy fog.",
+          "zh": "經驗老到的正機長與副駕駛在濃霧中精準操控客機平安平穩降落。"
+        },
+        {
+          "en": "Commercial airline pilots must log hundreds of training hours in flight simulators every year.",
+          "zh": "民航機長與飛行員每年皆必須在全功能高擬真飛行模擬機內完成數百小時的例行複訓。"
+        },
+        {
+          "en": "He worked hard for years to obtain his commercial pilot license and join an international airline.",
+          "zh": "他多年來堅持不懈刻苦訓練，終於順利考取商業民航機師執照並榮耀加入大型跨國航空公司。"
+        }
+      ],
+      "collocations": [
+        "airline pilot",
+        "autopilot"
+      ]
+    },
+    {
+      "id": 2756,
+      "word": "cockpit",
+      "pos": "n.",
+      "phonetic": "[ˋkɑkˌpɪt]",
+      "definition": "駕駛艙；機長座艙",
+      "cefr": "B1",
+      "topic": "飛機構造",
+      "examples": [
+        {
+          "en": "Passengers are strictly prohibited from entering the secure aircraft cockpit.",
+          "zh": "一般乘客一律被嚴格禁止擅自進入具高安防級別的飛機駕駛艙。"
+        },
+        {
+          "en": "The cockpit is equipped with an array of complex digital instruments and navigation screens.",
+          "zh": "現代客機駕駛艙內密集配備了一整套令人眼花繚亂的高科技數位儀表與衛星導航顯示螢幕。"
+        },
+        {
+          "en": "Aviation investigators recovered the cockpit voice recorder to determine the cause of the emergency descent.",
+          "zh": "空難事故調查官在殘骸中尋獲了黑盒子座艙語音記錄器，以深入釐清客機突發緊急迫降的真實肇因。"
+        }
+      ],
+      "collocations": [
+        "cockpit voice recorder"
+      ]
+    },
+    {
+      "id": 2757,
+      "word": "boarding pass",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbordɪŋ pæs]",
+      "definition": "登機證",
+      "cefr": "B1",
+      "topic": "機場搭機",
+      "examples": [
+        {
+          "en": "Save your mobile QR-code boarding pass to your smartphone Apple Wallet.",
+          "zh": "將您的手機 QR Code 數位電子登機證存入智慧型手機的 Apple 錢包。"
+        },
+        {
+          "en": "The ground staff checked my passport and handed me a printed paper boarding pass.",
+          "zh": "地勤人員仔細查驗完我的出國護照後，親切遞上印製精美的實體紙本登機證。"
+        },
+        {
+          "en": "Make sure to keep your boarding pass handy because you must show it before stepping onto the plane.",
+          "zh": "登機前請務必將登機證拿在手上隨時備查，因為在踏入機艙前空服員將再次確認座位號碼。"
+        }
+      ],
+      "collocations": [
+        "digital boarding pass"
+      ]
+    },
+    {
+      "id": 2758,
+      "word": "boarding gate",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbordɪŋ get]",
+      "definition": "登機門；登機閘口",
+      "cefr": "B1",
+      "topic": "機場設施",
+      "examples": [
+        {
+          "en": "Passengers on flight CI-100 should proceed immediately to boarding gate B7.",
+          "zh": "搭乘中華航空 CI-100 班機的旅客請立即前往 B7 號登機門候機。"
+        },
+        {
+          "en": "The boarding gate will close twenty minutes prior to scheduled departure.",
+          "zh": "候機大廳的登機閘口將於班機表定起飛時間前二十分鐘準時關閉、不再受理登機。"
+        },
+        {
+          "en": "Passengers gathered near the boarding gate as the airline announced the commencement of boarding.",
+          "zh": "當廣播宣布即將開放登機時，候機室內的旅客紛紛起身往登機門驗票口前方排隊聚集。"
+        }
+      ],
+      "collocations": [
+        "gate opens",
+        "departure gate"
+      ]
+    },
+    {
+      "id": 2759,
+      "word": "priority boarding",
+      "pos": "n. phr.",
+      "phonetic": "[praɪˋɔrətɪ ˋbordɪŋ]",
+      "definition": "優先登機權",
+      "cefr": "B1",
+      "topic": "登機服務",
+      "examples": [
+        {
+          "en": "Families traveling with small infants enjoy early priority boarding.",
+          "zh": "攜帶幼童嬰兒出遊同行的家庭旅客享有提前登機的優先登機權益。"
+        },
+        {
+          "en": "Business class travelers and frequent flyer elite members are invited to use priority boarding.",
+          "zh": "商務艙尊榮貴賓與各大航空同盟常旅客金卡會員，受邀經由專屬通道享受優先登機服務。"
+        },
+        {
+          "en": "Adding priority boarding to your budget ticket guarantees overhead bin space for your carry-on luggage.",
+          "zh": "在購買廉航特惠機票時加購優先登機服務，能百分之百確保您隨身登機箱有充裕的頭頂行李箱空間。"
+        }
+      ],
+      "collocations": [
+        "enjoy priority boarding"
+      ]
+    },
+    {
+      "id": 2760,
+      "word": "overhead bin",
+      "pos": "n. phr.",
+      "phonetic": "[ˋovɚˌhɛd bɪn]",
+      "definition": "機艙上方行李置物櫃",
+      "cefr": "B1",
+      "topic": "機艙設施",
+      "examples": [
+        {
+          "en": "Place your roller carry-on suitcase wheels-first into the overhead bin.",
+          "zh": "請將您的登機滾輪行李箱以「滾輪朝內」方向平放進機艙上方行李箱。"
+        },
+        {
+          "en": "When the flight is completely full, flight attendants may ask you to check bags if overhead bins are packed.",
+          "zh": "當航班客滿且頭頂行李置物櫃全數爆滿時，客艙乘務員可能會協調將旅客行李移交免費託運。"
+        },
+        {
+          "en": "Be careful when opening the overhead bin after landing, as heavy items might have shifted during flight.",
+          "zh": "班機順利著陸開啟頭頂行李置物櫃時請務必格外小心，以免飛行途中位移的重物意外滑落砸傷。"
+        }
+      ],
+      "collocations": [
+        "overhead compartment"
+      ]
+    },
+    {
+      "id": 2761,
+      "word": "tray table",
+      "pos": "n. phr.",
+      "phonetic": "[tre ˋteb!]",
+      "definition": "飛機折疊餐桌；座椅托盤桌",
+      "cefr": "B1",
+      "topic": "機艙設施",
+      "examples": [
+        {
+          "en": "Please stow and latch your seatback tray table securely for landing.",
+          "zh": "飛機降落準備著陸前，請務必將座椅後方的折疊餐桌收起並扣緊。"
+        },
+        {
+          "en": "She lowered her tray table to set down her laptop and get some work done during the flight.",
+          "zh": "她輕輕放下座椅前方的折疊小餐桌，將筆記型電腦平穩放好，準備在飛行途中處理緊急公務。"
+        },
+        {
+          "en": "Cleaning crews wipe down every individual seatback tray table between passenger turnarounds.",
+          "zh": "機艙清潔地勤團隊在班機前後換班接載的短暫空檔內，逐一用酒精仔細擦拭每一張乘客座椅折疊桌。"
+        }
+      ],
+      "collocations": [
+        "fold up tray table"
+      ]
+    },
+    {
+      "id": 2762,
+      "word": "fasten seatbelt",
+      "pos": "v. phr.",
+      "phonetic": "[ˋfɑsn ˋsit͵bɛlt]",
+      "definition": "繫緊安全帶",
+      "cefr": "B1",
+      "topic": "安全指令",
+      "examples": [
+        {
+          "en": "Return to your seat and fasten your seatbelt when the warning sign illuminates.",
+          "zh": "當機艙上方安全帶指示燈亮起時，請立即回座並扣緊您的安全帶。"
+        },
+        {
+          "en": "Even when the sign is turned off, passengers are strongly advised to keep their seatbelts fastened while seated.",
+          "zh": "即便安全帶警示燈已熄滅，機長仍強烈建議旅客在座位上休息時全程保持安全帶繫緊。"
+        },
+        {
+          "en": "The flight attendant walked down the aisle ensuring all passengers had fastened their seatbelts properly.",
+          "zh": "空服員緩步穿梭在走道兩側，逐一嚴格確認每位旅客腹部的安全帶皆已牢固扣緊並鎖上。"
+        }
+      ],
+      "collocations": [
+        "fasten your seatbelt"
+      ]
+    },
+    {
+      "id": 2763,
+      "word": "emergency exit",
+      "pos": "n. phr.",
+      "phonetic": "[ɪˋmɝdʒənsɪ ˋɛksɪt]",
+      "definition": "緊急逃生出口；緊急逃生門",
+      "cefr": "B1",
+      "topic": "安全設施",
+      "examples": [
+        {
+          "en": "Passengers seated in the emergency exit row must assist crew in emergencies.",
+          "zh": "坐在緊急逃生門出口座位的旅客在面臨緊急狀況時須協助機組人員。"
+        },
+        {
+          "en": "Luminous floor track lighting guides trapped passengers directly toward the nearest emergency exit.",
+          "zh": "機艙地板兩側鋪設的螢光夜光逃生指示燈條，能在濃煙中精準指引受困旅客奔向最近的逃生門。"
+        },
+        {
+          "en": "Never block the designated emergency exit doors or hallways with heavy backpacks or coats.",
+          "zh": "千萬切莫用沉重的隨身雙肩包或厚重大衣阻擋堵塞法定的緊急逃生門通道或機艙走道。"
+        }
+      ],
+      "collocations": [
+        "exit row seat"
+      ]
+    },
+    {
+      "id": 2764,
+      "word": "oxygen mask",
+      "pos": "n. phr.",
+      "phonetic": "[ˋɑksədʒən mæsk]",
+      "definition": "氧氣面罩",
+      "cefr": "B1",
+      "topic": "安全設備",
+      "examples": [
+        {
+          "en": "If cabin pressure drops, pull down the yellow oxygen mask firmly.",
+          "zh": "若機艙發生失壓狀況，請將自動落下的黃色氧氣面罩用力往下拉戴上。"
+        },
+        {
+          "en": "Always put on your own oxygen mask first before attempting to help children or others.",
+          "zh": "在伸出援手協助身旁的年幼孩童或他人前，請務必先將自己的氧氣面罩完全戴妥並正常呼吸。"
+        },
+        {
+          "en": "Oxygen masks will automatically deploy from the ceiling compartments in the event of decompression.",
+          "zh": "一旦機艙遭遇高空意外減壓失壓，隱藏在天花板暗格內的黃色氧氣面罩將會立即自動彈出垂落。"
+        }
+      ],
+      "collocations": [
+        "put on oxygen mask"
+      ]
+    },
+    {
+      "id": 2765,
+      "word": "life vest",
+      "pos": "n. phr.",
+      "phonetic": "[laɪf vɛst]",
+      "definition": "救生衣；救生背心",
+      "cefr": "B1",
+      "topic": "安全設備",
+      "examples": [
+        {
+          "en": "Your inflatable life vest is located directly underneath your passenger seat.",
+          "zh": "您的充氣式專用救生衣就放置在您乘客座椅的正下方夾層內。"
+        },
+        {
+          "en": "Remember to inflate your life vest only after exiting the aircraft through the door.",
+          "zh": "請牢記安全指引：唯有在完全走出飛機艙門來到機外時，方可拉開拉環將救生衣充氣膨脹。"
+        },
+        {
+          "en": "Demonstrating how to whistle and activate the locator light on the life vest is standard safety protocol.",
+          "zh": "示範如何吹響高音求救哨子以及啟動救生衣頂端的海水自動定位警示燈，是客艙標準安全示範程序。"
+        }
+      ],
+      "collocations": [
+        "life jacket",
+        "inflate life vest"
+      ]
+    },
+    {
+      "id": 2766,
+      "word": "turbulence",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtɝbjələns]",
+      "definition": "亂流；氣流顛簸",
+      "cefr": "B1",
+      "topic": "飛行氣象",
+      "examples": [
+        {
+          "en": "The aircraft encountered unexpected clear-air turbulence over the Pacific.",
+          "zh": "飛機在太平洋高空巡航時遭遇了突如其來的晴空亂流與輕微顛簸。"
+        },
+        {
+          "en": "The captain asked all passengers to return to their seats immediately due to anticipated severe turbulence.",
+          "zh": "鑑於前方航路即將面臨嚴重的氣流顛簸，正機長透過廣播敦請全體乘客立即停止走動並回座坐好。"
+        },
+        {
+          "en": "Modern radar technology allows pilots to detect storm clouds and fly around areas of violent turbulence.",
+          "zh": "現代先進氣象都卜勒雷達能敏銳探測遠方積雨雲層，讓機師提早繞道避開劇烈亂流顛簸空域。"
+        }
+      ],
+      "collocations": [
+        "severe turbulence"
+      ]
+    },
+    {
+      "id": 2767,
+      "word": "cruising altitude",
+      "pos": "n. phr.",
+      "phonetic": "[ˋkruzɪŋ ˋæltəˌtjud]",
+      "definition": "巡航高度",
+      "cefr": "B1",
+      "topic": "飛行數據",
+      "examples": [
+        {
+          "en": "The Boeing 787 reached a smooth cruising altitude of 36,000 feet.",
+          "zh": "波音 787 夢幻客機平穩順利爬升至三萬六千英尺的高空巡航高度。"
+        },
+        {
+          "en": "Flying at high cruising altitudes allows passenger jets to consume significantly less aviation fuel.",
+          "zh": "在平流層的高空巡航高度飛行，空氣阻力大幅降低，能讓大型噴射客機大幅節省航空燃油消耗。"
+        },
+        {
+          "en": "Once the airliner settled into its cruising altitude, the flight crew began meal and drink service.",
+          "zh": "一旦民航客機順利進入穩定平穩的萬米巡航高度後，客艙機組人員便隨即展開餐飲推車服務。"
+        }
+      ],
+      "collocations": [
+        "reach cruising altitude"
+      ]
+    },
+    {
+      "id": 2768,
+      "word": "in-flight",
+      "pos": "adj.",
+      "phonetic": "[ɪn flaɪt]",
+      "definition": "機上的；飛行途中的",
+      "cefr": "B1",
+      "topic": "航空服務",
+      "examples": [
+        {
+          "en": "Passengers enjoyed movies via the personal touch-screen in-flight entertainment system.",
+          "zh": "旅客透過個人觸控式機上娛樂系統觀賞最新上映的院線強檔電影。"
+        },
+        {
+          "en": "You can purchase high-speed in-flight satellite internet access to send messages during the journey.",
+          "zh": "旅客可在高空中付費選購高速機上衛星寬頻網路，於整趟飛行航程中隨時與親友保持通訊。"
+        },
+        {
+          "en": "Airlines take great pride in curating authentic Taiwanese delicacies for their long-haul in-flight meals.",
+          "zh": "國籍航空公司在長程國際航班的機上飛機餐菜單中精心融入道地台灣經典小吃，深受各國旅客讚賞。"
+        }
+      ],
+      "collocations": [
+        "in-flight meal",
+        "in-flight WiFi"
+      ]
+    },
+    {
+      "id": 2769,
+      "word": "special meal",
+      "pos": "n. phr.",
+      "phonetic": "[ˋspɛʃəl mil]",
+      "definition": "特殊飛機餐（素食／無麩質／兒童餐）",
+      "cefr": "B1",
+      "topic": "機艙餐飲",
+      "examples": [
+        {
+          "en": "Request dietary special meals like vegan or halal online 24 hours prior.",
+          "zh": "如需全素或清真認證等特殊飛機餐，請於起飛二十四小時前線上預訂。"
+        },
+        {
+          "en": "Parents ordered child-friendly special meals featuring cartoon-shaped pasta for their toddler.",
+          "zh": "貼心的父母特地為隨行的年幼學步兒預訂了印有卡通造型造型通心粉的兒童專屬特殊飛機餐。"
+        },
+        {
+          "en": "Diabetic passengers can pre-order low-sodium and sugar-free special meals for long international flights.",
+          "zh": "患有糖尿病或慢性病的旅客可在出發前預選低鈉無糖特殊餐點，確保長途國際飛行的飲食健康無虞。"
+        }
+      ],
+      "collocations": [
+        "vegetarian meal",
+        "kosher meal"
+      ]
+    },
+    {
+      "id": 2770,
+      "word": "duty-free",
+      "pos": "adj., adv.",
+      "phonetic": "[ˋdjutɪ fri]",
+      "definition": "免稅的；免關稅地",
+      "cefr": "B1",
+      "topic": "購物免稅",
+      "examples": [
+        {
+          "en": "Passengers purchased Taiwanese Kavalan whisky and perfumes duty-free onboard.",
+          "zh": "旅客在機艙內以免稅優惠價格選購了台灣噶瑪蘭威士忌與名牌香水。"
+        },
+        {
+          "en": "International airports feature luxurious duty-free boutiques selling designer watches and cosmetics.",
+          "zh": "現代國際機場航廈廣設奢華免稅精品名店街，薈萃全球頂級名牌手錶與高端美妝保養品。"
+        },
+        {
+          "en": "Be sure you do not exceed the statutory duty-free alcohol and tobacco limits when entering the country.",
+          "zh": "請務必留意各國入境海關規定，切勿超額攜帶超出免稅法定額度的菸酒免稅商品以免遭罰款沒收。"
+        }
+      ],
+      "collocations": [
+        "duty-free shop",
+        "duty-free item"
+      ]
+    },
+    {
+      "id": 2771,
+      "word": "customs declaration",
+      "pos": "n. phr.",
+      "phonetic": "[ˋkʌstəmz ͵dɛkləˋreʃən]",
+      "definition": "海關申報；海關申報單",
+      "cefr": "B1",
+      "topic": "入境手續",
+      "examples": [
+        {
+          "en": "Fill out the customs declaration form accurately to declare luxury goods.",
+          "zh": "誠實且詳盡填寫海關申報單以申報隨身攜帶的高價應稅精品或現金。"
+        },
+        {
+          "en": "Travelers carrying more than the legal limit of cash must submit a formal customs declaration.",
+          "zh": "旅客隨身攜帶超出法定限額的大額現金或有價證券入境時，必須依法主動向海關提出書面申報。"
+        },
+        {
+          "en": "Many international airports have transitioned from paper cards to digital customs declaration kiosks.",
+          "zh": "全球眾多現代化國際機場已全面淘汰傳統紙本卡片，改設數位自助海關申報多功能機台。"
+        }
+      ],
+      "collocations": [
+        "declaration form"
+      ]
+    },
+    {
+      "id": 2772,
+      "word": "arrival card",
+      "pos": "n. phr.",
+      "phonetic": "[əˋraɪv! kɑrd]",
+      "definition": "入境卡；入國紀錄卡 (Visit Japan Web)",
+      "cefr": "B1",
+      "topic": "入境手續",
+      "examples": [
+        {
+          "en": "Travelers submit digital arrival cards on their phones before landing.",
+          "zh": "旅客在班機降落前事先於手機上完成數位線上入境申報填寫手續。"
+        },
+        {
+          "en": "Flight attendants hand out paper arrival cards to international passengers as the plane approaches its destination.",
+          "zh": "在客機即將抵達目的地降落前夕，空服員在走道上為有需要的國際旅客發放紙本入境入國卡。"
+        },
+        {
+          "en": "When completing your arrival card, make sure to write your hotel name and local contact number clearly.",
+          "zh": "在逐欄填寫外國入境卡時，請務必以清晰工整的英文正楷填妥下榻飯店名稱與當地聯絡電話。"
+        }
+      ],
+      "collocations": [
+        "landing card",
+        "disembarkation card"
+      ]
+    },
+    {
+      "id": 2773,
+      "word": "layover",
+      "pos": "n.",
+      "phonetic": "[ˋle͵ovɚ]",
+      "definition": "轉機過境停留（短時間待機）",
+      "cefr": "B1",
+      "topic": "轉機行程",
+      "examples": [
+        {
+          "en": "We booked a cheap ticket with a convenient three-hour layover in Tokyo.",
+          "zh": "我們預訂了一張在中途東京成田機場轉機停留三小時的超值特惠機票。"
+        },
+        {
+          "en": "During our long layover at Changi Airport, we rested in a comfortable transit lounge.",
+          "zh": "在新加坡樟宜機場漫長悠閒的轉機過境待機空檔中，我們在舒適奢華的過境休息室好好洗了個熱水澡。"
+        },
+        {
+          "en": "Because our layover was very tight, we barely had ten minutes to run between terminals.",
+          "zh": "由於兩段班機間的轉機待機時間非常緊迫，我們幾乎只有不到十分鐘在兩座不同航廈間拔腿狂奔。"
+        }
+      ],
+      "collocations": [
+        "transit layover"
+      ]
+    },
+    {
+      "id": 2774,
+      "word": "stopover",
+      "pos": "n.",
+      "phonetic": "[ˋstɑp͵ovɚ]",
+      "definition": "中途停留（超過 24 小時之轉機）",
+      "cefr": "B1",
+      "topic": "轉機行程",
+      "examples": [
+        {
+          "en": "Many travelers enjoy a complimentary two-day city stopover in Singapore.",
+          "zh": "許多長途旅客把握機會在新加坡轉機並享受為期兩天的免費城市漫遊。"
+        },
+        {
+          "en": "The airline allows one free stopover in Dubai on round-trip tickets between Asia and Europe.",
+          "zh": "這家跨國航空公司在歐亞往返機票中，免費贈送旅客一次在杜拜中途停留超過二十四小時的停點權利。"
+        },
+        {
+          "en": "We turned our business trip into a mini-vacation by booking a 48-hour stopover in Istanbul.",
+          "zh": "我們在伊斯坦堡安排了一次長達四十八小時的深度轉機停留，順道將出差行程變成了充實的微度假。"
+        }
+      ],
+      "collocations": [
+        "extended stopover"
+      ]
+    },
+    {
+      "id": 2775,
+      "word": "connecting flight",
+      "pos": "n. phr.",
+      "phonetic": "[kəˋnɛktɪŋ flaɪt]",
+      "definition": "轉機接駁航班",
+      "cefr": "B1",
+      "topic": "航空交通",
+      "examples": [
+        {
+          "en": "Run to Gate C12 to catch your connecting flight to New York.",
+          "zh": "請加快腳步前往 C12 號登機門以順利銜接轉乘前往紐約的接駁班機。"
+        },
+        {
+          "en": "If your first departure is delayed, the airline will rebook you on the next available connecting flight.",
+          "zh": "若第一段航程因天候延誤，地勤將第一時間主動為您免費改簽並安排後續最快起飛的銜接接駁班機。"
+        },
+        {
+          "en": "Checked bags were checked through to the final destination so we didn't need to recheck them for our connecting flight.",
+          "zh": "託運行李已在首發機場直掛抵達最終目的地，因此在過境中轉時我們完全無須提領行李重新辦理託運。"
+        }
+      ],
+      "collocations": [
+        "miss a connecting flight"
+      ]
+    },
+    {
+      "id": 2776,
+      "word": "transfer desk",
+      "pos": "n. phr.",
+      "phonetic": "[trænsˋfɝ dɛsk]",
+      "definition": "轉機服務櫃台",
+      "cefr": "B1",
+      "topic": "機場設施",
+      "examples": [
+        {
+          "en": "Go straight to the international transfer desk to print your next boarding pass.",
+          "zh": "抵達過境大廳後請直行前往國際轉機服務櫃台領取下一段航程登機證。"
+        },
+        {
+          "en": "A long queue formed at the airline transfer desk after several incoming flights arrived late.",
+          "zh": "由於數個入境航班因雷雨延誤抵達，機場航空公司的轉機服務專屬櫃台前隨即排起了長長的人龍。"
+        },
+        {
+          "en": "The customer service agent at the transfer desk handed out hotel accommodation vouchers for missed connections.",
+          "zh": "轉機服務櫃台的地勤人員親切地為因前段班機延誤而錯失接駁班機的旅客發放了過境星級飯店住宿券。"
+        }
+      ],
+      "collocations": [
+        "transit desk",
+        "transfer area"
+      ]
+    },
+    {
+      "id": 2777,
+      "word": "baggage claim",
+      "pos": "n. phr.",
+      "phonetic": "[ˋbægɪdʒ klem]",
+      "definition": "行李提領區；行李轉盤處",
+      "cefr": "B1",
+      "topic": "機場抵達",
+      "examples": [
+        {
+          "en": "Check the overhead monitors to locate your flight's baggage claim carousel.",
+          "zh": "抬頭查閱大廳螢幕資訊以確認您所搭乘航班對應的行李提領轉盤號碼。"
+        },
+        {
+          "en": "Travelers waited anxiously by the baggage claim carousel hoping their suitcases wouldn't be lost.",
+          "zh": "抵達旅客群聚在行李轉盤提領區旁引頸期盼，祈禱自己的行李箱能完好無損且毫無遺漏地順利送出。"
+        },
+        {
+          "en": "Oversized sports equipment like surfboards and golf clubs must be collected at the special baggage claim area.",
+          "zh": "如衝浪板、高爾夫球袋等超大規格的運動器材，必須前往特殊的超規行李專屬領取處提取。"
+        }
+      ],
+      "collocations": [
+        "carousel",
+        "luggage claim"
+      ]
+    },
+    {
+      "id": 2778,
+      "word": "lost and found",
+      "pos": "n. phr.",
+      "phonetic": "[lɔst ænd faʊnd]",
+      "definition": "失物招領處",
+      "cefr": "B1",
+      "topic": "機場服務",
+      "examples": [
+        {
+          "en": "Report forgotten jackets immediately at the airport lost and found office.",
+          "zh": "若將保暖外套遺忘在候機室，請立即前往機場失物招領處登記尋找。"
+        },
+        {
+          "en": "A good Samaritan returned my lost wallet containing all my credit cards to the railway station's lost and found.",
+          "zh": "一名拾金不昧的熱心好心人，親自將我遺落在列車座椅上裝有全部證件與信用卡的皮夾送至車站失物招領處。"
+        },
+        {
+          "en": "Items turned into the subway lost and found are held securely for up to six months before auction.",
+          "zh": "凡被拾獲繳交至捷運失物招領中心的各類遺失物，均會被妥善封存保管長達六個月直至辦理公告招領。"
+        }
+      ],
+      "collocations": [
+        "lost and found counter"
+      ]
+    },
+    {
+      "id": 2779,
+      "word": "jet lag",
+      "pos": "n. [U]",
+      "phonetic": "[dʒɛt læg]",
+      "definition": "時差反應；時差疲勞",
+      "cefr": "B1",
+      "topic": "旅行生理",
+      "examples": [
+        {
+          "en": "Adjusting sleeping routines quickly helps overcome transatlantic jet lag.",
+          "zh": "抵達目的地後迅速調整作息時間有助於克服跨越時區的時差疲憊感。"
+        },
+        {
+          "en": "Drinking plenty of water and walking outside in morning sunlight helps reset your internal clock against jet lag.",
+          "zh": "保持體內水分充沛並在早晨戶外多曬溫暖自然陽光，有助於重新校準生理時鐘以快速擺脫時差困擾。"
+        },
+        {
+          "en": "Severe jet lag left him feeling groggy and disoriented for three straight days after arriving in London.",
+          "zh": "嚴重的跨時區長途時差反應，讓他在飛抵倫敦後的整整前三天始終感到頭昏腦脹、渾身無力。"
+        }
+      ],
+      "collocations": [
+        "suffer from jet lag"
+      ]
+    },
+    {
+      "id": 2780,
+      "word": "car rental",
+      "pos": "n. phr.",
+      "phonetic": "[kɑr ˋrɛnt!]",
+      "definition": "租車服務；汽車租賃公司",
+      "cefr": "B1",
+      "topic": "自駕旅遊",
+      "examples": [
+        {
+          "en": "Reserving a hybrid SUV from the airport car rental desk was effortless.",
+          "zh": "在機場租車櫃台預約一輛油電混合休旅車進行自駕過程輕鬆又便捷。"
+        },
+        {
+          "en": "Comparing rates across several car rental companies online saved us substantial money on our road trip.",
+          "zh": "出發前在線上對比數家知名跨國汽車租賃公司的各項套票方案，為我們的自駕公路之旅省下了大筆預算。"
+        },
+        {
+          "en": "Make sure to inspect the exterior for existing scratches before driving away from the car rental lot.",
+          "zh": "在把車輛正式駛離租車中心交車停車場前，請務必先繞車一圈仔細檢查車身既有刮痕並拍照存證。"
+        }
+      ],
+      "collocations": [
+        "rent a car",
+        "car rental agency"
+      ]
+    },
+    {
+      "id": 2781,
+      "word": "international driving permit",
+      "pos": "n. phr.",
+      "phonetic": "[͵ɪntɚˋnæʃən! ˋdraɪvɪŋ ˋpɝmɪt]",
+      "definition": "國際駕照 (IDP)",
+      "cefr": "B1",
+      "topic": "證件執照",
+      "examples": [
+        {
+          "en": "Apply for an international driving permit (IDP) before touring North America.",
+          "zh": "前往美加北美地區自駕公路旅行前，請務必先在國內監理站申辦國際駕照。"
+        },
+        {
+          "en": "Rental counters will refuse to release vehicles if you fail to show a valid international driving permit.",
+          "zh": "若您在國外租車臨櫃現場無法及時出具有效的國際駕照正本，租車櫃台將依法斷然拒絕交車。"
+        },
+        {
+          "en": "An international driving permit must be accompanied by your home country's original driver's license.",
+          "zh": "國際駕照（IDP）在國際法規上本質為多國語言譯本，必須同時搭配您本國由政府核發的原件實體駕照方具效力。"
+        }
+      ],
+      "collocations": [
+        "IDP"
+      ]
+    },
+    {
+      "id": 2782,
+      "word": "license translation",
+      "pos": "n. phr.",
+      "phonetic": "[ˋlaɪsns trænsˋleʃən]",
+      "definition": "駕照日文譯本",
+      "cefr": "B1",
+      "topic": "赴日自駕",
+      "examples": [
+        {
+          "en": "Taiwanese tourists must present an official Japanese license translation to rent cars.",
+          "zh": "台灣旅客前往日本自駕租車時，必須同時出具駕照日文譯本與本國駕照。"
+        },
+        {
+          "en": "You can easily obtain a certified Japanese driver's license translation at any motor vehicle office in Taiwan.",
+          "zh": "國人出國前只需前往台灣各區公路監理所，即可隨到隨辦、花費一百元快速取得合法的駕照日文譯本。"
+        },
+        {
+          "en": "Do not forget to carry both your Taiwanese license and the official license translation when driving in Okinawa.",
+          "zh": "前往沖繩自駕自由行時，千萬切記要隨身同時攜帶台灣駕照實體正本以及這份官方日文譯本以備交警查驗。"
+        }
+      ],
+      "collocations": [
+        "driver license translation"
+      ]
+    },
+    {
+      "id": 2783,
+      "word": "driver's license",
+      "pos": "n. phr.",
+      "phonetic": "[ˋdraɪvɚz ˋlaɪsns]",
+      "definition": "駕駛執照；駕照正本",
+      "cefr": "B1",
+      "topic": "證件執照",
+      "examples": [
+        {
+          "en": "Keep your original driver's license together with your passport when traveling.",
+          "zh": "出國海外自駕時，請務必將本國實體駕照正本與護照一同妥善隨身攜帶。"
+        },
+        {
+          "en": "She was excited to finally pass the road driving test and earn her driver's license.",
+          "zh": "她在歷經數週刻苦練車後終於順利通過了嚴格的路考測驗，興奮無比地領到了嶄新的汽車駕駛執照。"
+        },
+        {
+          "en": "Police officers will ask to see your driver's license and vehicle registration during routine road checks.",
+          "zh": "在路口遭遇交警實施例行性臨檢盤查時，執勤警員會依法禮貌要求駕駛出示駕照與行照供現場查核。"
+        }
+      ],
+      "collocations": [
+        "valid driver's license"
+      ]
+    },
+    {
+      "id": 2784,
+      "word": "waiver",
+      "pos": "n.",
+      "phonetic": "[ˋwevɚ]",
+      "definition": "免責條款；拋棄聲明書",
+      "cefr": "B1",
+      "topic": "保險條款",
+      "examples": [
+        {
+          "en": "Purchasing Collision Damage Waiver (CDW) protects against accidental vehicle dent costs.",
+          "zh": "購買碰撞損害免責保險（CDW）能在車輛發生意外擦撞損傷時免除賠償責任。"
+        },
+        {
+          "en": "The resort required all participants to sign a liability waiver before taking scuba diving lessons.",
+          "zh": "海島度假村明文規定，所有學員在正式下水參加深潛水肺潛水教學前均必須親筆簽署責任免責聲明書。"
+        },
+        {
+          "en": "Adding a damage waiver gives you peace of mind so you won't be charged for minor fender benders.",
+          "zh": "加購車輛損壞免責附加條款能讓您開得毫無後顧之憂，即使發生輕微保險桿刮蹭亦無須自掏腰包承擔鉅額修復費用。"
+        }
+      ],
+      "collocations": [
+        "collision damage waiver (CDW)"
+      ]
+    },
+    {
+      "id": 2785,
+      "word": "insurance",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋʃʊrəns]",
+      "definition": "車輛保險；保險保障",
+      "cefr": "B1",
+      "topic": "安全保障",
+      "examples": [
+        {
+          "en": "Full comprehensive insurance coverage gives you complete peace of mind while driving.",
+          "zh": "加保全方位租車全險能讓您在異國自駕奔馳時享有百分之百的安心保障。"
+        },
+        {
+          "en": "Travel insurance covers unexpected medical emergencies, trip cancellations, and lost luggage.",
+          "zh": "出國前加保海外旅平險與旅遊不便險，能全方位涵蓋突發海外就醫、行程被迫取消以及行李遺失賠償。"
+        },
+        {
+          "en": "It is illegal to drive a vehicle on public roads without mandatory third-party liability insurance.",
+          "zh": "在未依法投保強制第三人汽車責任保險的情況下開車上路行駛，屬於嚴重的交通違法行為。"
+        }
+      ],
+      "collocations": [
+        "car rental insurance",
+        "full coverage"
+      ]
+    },
+    {
+      "id": 2786,
+      "word": "mileage",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmaɪlɪdʒ]",
+      "definition": "行駛里程數；每加侖英里數",
+      "cefr": "B1",
+      "topic": "車輛數據",
+      "examples": [
+        {
+          "en": "Road trippers prefer rental packages offering unlimited daily mileage.",
+          "zh": "喜愛長途自駕旅行的玩家最偏好選擇包含每日不限里程的超值租車方案。"
+        },
+        {
+          "en": "Hybrid compact cars offer exceptional gas mileage, making them budget-friendly for long highway trips.",
+          "zh": "油電混合掀背小車具備極其出色的低油耗每公升行駛里程表現，是自駕跑長途最省荷包的經濟首選。"
+        },
+        {
+          "en": "Frequent travelers redeem accrued airline mileage for complimentary business class upgrades.",
+          "zh": "經常出差旅行的商務常客，最喜歡將平時累積的巨額飛行里程數兌換成長程航線的尊榮商務艙升等。"
+        }
+      ],
+      "collocations": [
+        "unlimited mileage",
+        "gas mileage"
+      ]
+    },
+    {
+      "id": 2787,
+      "word": "navigation system",
+      "pos": "n. phr.",
+      "phonetic": "[͵nævəˋgeʃən ˋsɪstəm]",
+      "definition": "車載衛星導航系統 (GPS)",
+      "cefr": "B1",
+      "topic": "車用配備",
+      "examples": [
+        {
+          "en": "The built-in car GPS navigation system supports multilingual English voice prompts.",
+          "zh": "該車輛內建之車用 GPS 衛星導航系統支援多國語言與清晰的英文語音提示。"
+        },
+        {
+          "en": "If your phone loses cellular signal in deep mountains, a reliable vehicle navigation system is essential.",
+          "zh": "當您駕車深越高山深山峽谷且手機完全收不到行動網路訊號時，一台靠譜的車載導航機將是救命神器。"
+        },
+        {
+          "en": "Modern dashboard navigation systems display real-time highway traffic updates and detour suggestions.",
+          "zh": "現代化先進車聯網中控導航大螢幕能即時顯示前方的路況擁塞預警，並主動推薦最佳繞道替代路線。"
+        }
+      ],
+      "collocations": [
+        "GPS navigation",
+        "Apple CarPlay"
+      ]
+    },
+    {
+      "id": 2788,
+      "word": "toll road",
+      "pos": "n. phr.",
+      "phonetic": "[tol rod]",
+      "definition": "收費道路；收費高速公路",
+      "cefr": "B1",
+      "topic": "道路類型",
+      "examples": [
+        {
+          "en": "Take the express toll road to avoid heavy downtown morning traffic jams.",
+          "zh": "選擇行駛快捷的收費高速公路以避開市區早晨繁雜壅塞的車陣。"
+        },
+        {
+          "en": "The toll road fee was automatically deducted as our rental car passed beneath the gantry.",
+          "zh": "當我們的租賃車輛平穩高速通過門架感應區時，高速收費公路的通行過路費已完成全自動線上扣繳。"
+        },
+        {
+          "en": "Many travelers take scenic coastal secondary roads instead of paying steep fees on the toll road.",
+          "zh": "許多熱愛自由行且時間充裕的慢遊旅人，寧願選擇沿著風景壯麗的沿海一般公路漫步，也不願行駛收費昂貴的收費公路。"
+        }
+      ],
+      "collocations": [
+        "toll booth",
+        "expressway"
+      ]
+    },
+    {
+      "id": 2789,
+      "word": "ETC",
+      "pos": "n. phr.",
+      "phonetic": "[i ti si]",
+      "definition": "電子道路收費系統 (Electronic Toll Collection)",
+      "cefr": "B1",
+      "topic": "智慧交通",
+      "examples": [
+        {
+          "en": "Renting an ETC card reader card makes highway toll payments seamless.",
+          "zh": "租借高速公路專用 ETC 卡片能讓您通過國道電子收費站時免停車扣款。"
+        },
+        {
+          "en": "Taiwan was among the first countries to implement a fully electronic, multilane free-flow ETC system nationwide.",
+          "zh": "台灣是全世界最早在全境國道全面成功推行無柵欄、多車道自由流智慧型電子道路收費（ETC）的先驅國家之一。"
+        },
+        {
+          "en": "Don't forget to return the rental ETC card and settle toll fees when returning the car.",
+          "zh": "在租車歸還愛車辦理退租手續時，千萬切莫忘記繳回租借的專用 ETC 卡片並當場結清這幾天累計的國道通行費用。"
+        }
+      ],
+      "collocations": [
+        "ETC card",
+        "automated toll"
+      ]
+    },
+    {
+      "id": 2790,
+      "word": "gas station",
+      "pos": "n. phr.",
+      "phonetic": "[gæs ˋsteʃən]",
+      "definition": "加油站",
+      "cefr": "B1",
+      "topic": "道路設施",
+      "examples": [
+        {
+          "en": "Stop at the highway service area gas station to refuel and take a break.",
+          "zh": "在高速公路休息服務區的加油站稍作停留，順便為愛車加滿油並休息。"
+        },
+        {
+          "en": "We pulled into a 24-hour self-service gas station in the middle of nowhere to pump fuel.",
+          "zh": "荒郊野外的深夜裡，我們把車輛緩緩開進一家二十四小時營業的無人自助加油站為油箱補足汽油。"
+        },
+        {
+          "en": "Many modern gas stations feature convenience stores, clean restrooms, and automatic car washes.",
+          "zh": "許多現代大型加油站複合式經營，內部不僅附設大型連鎖便利商店、乾淨公廁，還配有全自動隧道洗車機。"
+        }
+      ],
+      "collocations": [
+        "petrol station (英式)"
+      ]
+    },
+    {
+      "id": 2791,
+      "word": "refuel",
+      "pos": "v.",
+      "phonetic": "[riˋfjuəl]",
+      "definition": "為…加油；補給燃料",
+      "cefr": "B1",
+      "topic": "車輛維護",
+      "examples": [
+        {
+          "en": "Most car rental agreements require you to refuel fully before vehicle return.",
+          "zh": "絕大多數租車合約皆嚴格規定還車時必須將油箱全數加滿油後歸還。"
+        },
+        {
+          "en": "Pilots calculate the exact fuel load required to complete the flight without needing to divert and refuel.",
+          "zh": "飛行員在起飛前依載重與航線嚴密精算所需燃油總量，確保客機一路飛抵目的機場而無須中途轉降加油。"
+        },
+        {
+          "en": "After hiking uphill for three grueling hours, we sat under a pavilion to refuel with trail mix and bananas.",
+          "zh": "在烈日下奮力苦爬了整整三個小時的高山陡坡後，我們紛紛在山腰涼亭內卸下背包，大口享用堅果果乾補充體能。"
+        }
+      ],
+      "collocations": [
+        "fill up",
+        "refuel the tank"
+      ]
+    },
+    {
+      "id": 2792,
+      "word": "unleaded",
+      "pos": "adj.",
+      "phonetic": "[ʌnˋlɛdɪd]",
+      "definition": "無鉛的（汽油）",
+      "cefr": "B1",
+      "topic": "油品種類",
+      "examples": [
+        {
+          "en": "The compact hybrid car runs on 95 regular unleaded gasoline.",
+          "zh": "這款小巧省油的油電掀背車使用的是 95 無鉛常規汽油。"
+        },
+        {
+          "en": "Be careful not to put diesel into a rental car engine that requires unleaded petrol.",
+          "zh": "在海外加油站自助加油時請務必看清油槍標籤，千萬切莫誤將柴油灌進只吃無鉛汽油的汽油車油箱中。"
+        },
+        {
+          "en": "Global environmental bans on leaded additives made clean unleaded fuel the universal automotive standard.",
+          "zh": "國際環保法規全面淘汰劇毒四乙基鉛添加劑，使潔淨的無鉛汽油徹底普及成為全球汽車運行的通用標準。"
+        }
+      ],
+      "collocations": [
+        "regular unleaded petrol"
+      ]
+    },
+    {
+      "id": 2793,
+      "word": "roadside assistance",
+      "pos": "n. phr.",
+      "phonetic": "[ˋrodˌsaɪd əˋsɪstəns]",
+      "definition": "道路救援服務",
+      "cefr": "B1",
+      "topic": "緊急支援",
+      "examples": [
+        {
+          "en": "Call the 24/7 emergency roadside assistance hotline if your vehicle breaks down.",
+          "zh": "若車輛在半路不慎拋錨故障，請立即撥打二十四小時全天候道路救援專線。"
+        },
+        {
+          "en": "The automobile association provides complimentary roadside assistance including towing, jump-starts, and lockouts.",
+          "zh": "汽車駕駛人協會為會員提供全方位的免費道路救援服務，涵蓋長途故障拖吊、電瓶接電啟動與開鎖救援。"
+        },
+        {
+          "en": "Our rental car contract includes roadside assistance anywhere across the island in case of mechanical issues.",
+          "zh": "我們的租車合約包含了全島零死角全年無休的道路緊急救援保證，一旦發生任何突發機械故障均能即時馳援。"
+        }
+      ],
+      "collocations": [
+        "24-hour roadside assistance"
+      ]
+    },
+    {
+      "id": 2794,
+      "word": "flat tire",
+      "pos": "n. phr.",
+      "phonetic": "[flæt ˋtaɪr]",
+      "definition": "輪胎漏氣；爆胎",
+      "cefr": "B1",
+      "topic": "車輛故障",
+      "examples": [
+        {
+          "en": "Learn how to change a flat tire safely on highway shoulders.",
+          "zh": "學習如何在高速公路路肩安全熟練地更換漏氣消氣的破損輪胎。"
+        },
+        {
+          "en": "A sharp rusty nail on the construction roadway caused a sudden flat tire.",
+          "zh": "遺落在施工路段路面上的一顆鋒利生鏽鐵釘，直接刺破了外胎導致車輛無預警瞬間爆胎漏氣。"
+        },
+        {
+          "en": "The tire pressure monitoring sensor flashed red on the dashboard, warning the driver of a dangerous flat tire.",
+          "zh": "汽車儀表板上的胎壓偵測警示燈突然亮起刺目紅光，嚴厲警示駕駛員當前某個車輪出現危險消氣漏氣。"
+        }
+      ],
+      "collocations": [
+        "get a flat tire"
+      ]
+    },
+    {
+      "id": 2795,
+      "word": "spare tire",
+      "pos": "n. phr.",
+      "phonetic": "[spɛr ˋtaɪr]",
+      "definition": "備胎；備用輪胎",
+      "cefr": "B1",
+      "topic": "車輛配件",
+      "examples": [
+        {
+          "en": "Check that the trunk holds a fully inflated emergency spare tire and jack.",
+          "zh": "出發前請先檢查後車廂是否配備有氣壓充足的應急備胎與千斤頂。"
+        },
+        {
+          "en": "Most modern compact spare tires are intended only for temporary low-speed driving to the nearest repair shop.",
+          "zh": "絕大多數現代轎車隨車附贈的小型應急備用輪胎，僅供在時速八十公里以下低速臨時行駛至鄰近輪胎行更換。"
+        },
+        {
+          "en": "Some newer vehicle models omit the physical spare tire entirely in favor of an aerosol puncture repair kit.",
+          "zh": "許多追求極致輕量化與車室空間的新款車型，已徹底取消實體鋼製備胎，取而代之的是輕巧的自動補胎打氣劑。"
+        }
+      ],
+      "collocations": [
+        "emergency spare tire"
+      ]
+    },
+    {
+      "id": 2796,
+      "word": "road trip",
+      "pos": "n. phr.",
+      "phonetic": "[rod trɪp]",
+      "definition": "公路旅行；開車長途旅行",
+      "cefr": "B1",
+      "topic": "旅遊型態",
+      "examples": [
+        {
+          "en": "Driving along the Pacific Coast Highway is an unforgettable bucket-list road trip.",
+          "zh": "沿著加州一號太平洋海岸公路兜風是一場令人終生難忘的夢幻公路旅行。"
+        },
+        {
+          "en": "We packed our tent, cooler, and hiking poles into the trunk for a two-week cross-country road trip.",
+          "zh": "我們將露營帳篷、行動保冷箱與登山杖通通塞滿休旅車後車廂，興高采烈展開為期兩週的橫跨大陸自駕遊。"
+        },
+        {
+          "en": "Creating a collaborative playlist of favorite songs made our coastal road trip even more memorable.",
+          "zh": "全車好友共同在串流軟體上編輯創建專屬自駕歌單，讓整趟沿海公路旅行的歡聲笑語變得更添美好回憶。"
+        }
+      ],
+      "collocations": [
+        "go on a road trip"
+      ]
+    },
+    {
+      "id": 2797,
+      "word": "scenic drive",
+      "pos": "n. phr.",
+      "phonetic": "[ˋsinɪk draɪv]",
+      "definition": "景觀公路駕駛路線；風景公路",
+      "cefr": "B1",
+      "topic": "旅遊型態",
+      "examples": [
+        {
+          "en": "The winding mountain pass offers breathtaking panoramic ocean scenic drives.",
+          "zh": "蜿蜒盤旋的山路能欣賞到一望無際、壯闊無比的蔚藍太平洋景觀公路風光。"
+        },
+        {
+          "en": "Taiwan's Provincial Highway 11 along the eastern coast is widely praised as one of Asia's most stunning scenic drives.",
+          "zh": "緊鄰太平洋蔚藍海線的台灣東部台十一線省道，被國內外無數自駕愛好者譽為全亞洲最令人窒息的絕美景觀公路之一。"
+        },
+        {
+          "en": "We pulled off into designated roadside viewing lookouts along the scenic drive to take panoramic landscape photos.",
+          "zh": "沿著蜿蜒起伏的景觀公路行駛，我們頻頻將車輛靠停於路旁特設的景觀觀景台，用相機記錄下浩瀚山海壯麗全景。"
+        }
+      ],
+      "collocations": [
+        "beautiful scenic drive"
+      ]
+    },
+    {
+      "id": 2798,
+      "word": "roundabout",
+      "pos": "n.",
+      "phonetic": "[ˋraʊndəˌbaʊt]",
+      "definition": "交通圓環；轉盤",
+      "cefr": "B1",
+      "topic": "道路設施",
+      "examples": [
+        {
+          "en": "Vehicles inside the traffic roundabout have right of way over entering cars.",
+          "zh": "已經在交通圓環內行進的車輛享有優先行駛路權，進環車輛必須禮讓。"
+        },
+        {
+          "en": "Signal your intention to exit before gently turning off the circular traffic roundabout.",
+          "zh": "在準備駛離環狀交通圓環前的最後一個出口前，請務必提早開啟方向燈向後方來車示意。"
+        },
+        {
+          "en": "European cities favor roundabouts because they reduce fatal head-on intersection collisions dramatically.",
+          "zh": "歐洲許多歷史名城極其推崇圓環十字路口設計，因為實務數據證明它能極大幅度消弭傳統路口的正面致命對撞車禍。"
+        }
+      ],
+      "collocations": [
+        "traffic circle",
+        "enter a roundabout"
+      ]
+    },
+    {
+      "id": 2799,
+      "word": "pedestrian crossing",
+      "pos": "n. phr.",
+      "phonetic": "[pəˋdɛstrɪən ˋkrɔsɪŋ]",
+      "definition": "行人穿越道；斑馬線",
+      "cefr": "B1",
+      "topic": "交通安全",
+      "examples": [
+        {
+          "en": "Motorists must come to a complete stop before occupied pedestrian crossings.",
+          "zh": "汽機車駕駛人在接近有行人通行的斑馬線行人穿越道前必須完全停讓。"
+        },
+        {
+          "en": "In Taiwan, drivers face severe fines and license demerits if they fail to yield at pedestrian crossings.",
+          "zh": "在台灣，任何汽機車若行經行人穿越道未停讓行人優先通過，將面臨高額法規重罰並吊扣違規記點。"
+        },
+        {
+          "en": "Illuminated flashing beacons alert speeding drivers to pedestrians using the crossing after dark.",
+          "zh": "斑馬線兩端加裝的夜間高亮度感應發光警示道釘，能在夜幕降臨時強烈警示遠方車輛減速禮讓正通過的行人。"
+        }
+      ],
+      "collocations": [
+        "zebra crossing",
+        "crosswalk"
+      ]
+    },
+    {
+      "id": 2800,
+      "word": "itinerary",
+      "pos": "n.",
+      "phonetic": "[aɪˋtɪnəˌrɛrɪ]",
+      "definition": "旅遊行程表；旅行路線計劃",
+      "cefr": "B1",
+      "topic": "旅行規劃",
+      "examples": [
+        {
+          "en": "Create a flexible driving itinerary allowing plenty of time for coastal photography.",
+          "zh": "規劃一份彈性充裕的自駕行程表，預留充沛時間在沿海景點拍照打卡。"
+        },
+        {
+          "en": "The tour guide handed each traveler a printed daily itinerary outlining sightseeing schedules and dinner locations.",
+          "zh": "專業隨團導遊向每位團員發放了一份排版精美的每日行程手冊，詳盡列出觀光景點門票時間與特色晚宴地點。"
+        },
+        {
+          "en": "Because the typhoon disrupted ferry schedules, we had to adjust our travel itinerary on short notice.",
+          "zh": "鑑於突如其來的強烈颱風打亂了往返離島的所有客輪船班，我們被迫在極短時間內緊急重新調整了旅遊行程表。"
+        }
+      ],
+      "collocations": [
+        "travel itinerary",
+        "plan an itinerary"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,501–5,550 個單字（CEFR B1 中級）",
+  "batch": "5501-5550",
+  "range": "5501–5550",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5501,
+      "word": "acoustics",
+      "pos": "n. [pl.]",
+      "phonetic": "[əˋkustɪks]",
+      "definition": "錄音室建築聲學設計；聲學",
+      "cefr": "B1",
+      "topic": "聲學工程",
+      "examples": [
+        {
+          "en": "Treating the home studio with tailored acoustic panels creates balanced, reflection-free room acoustics.",
+          "zh": "在居家錄音室牆面加裝專用調音吸音板，能打造出頻率均衡、無多餘反射雜音的優異室內聲學。"
+        },
+        {
+          "en": "The world-renowned concert hall was designed with impeccable acoustics so acoustic instruments carry to the top balcony.",
+          "zh": "這座享譽國際的國家級音樂廳具備無懈可擊的建築聲學設計，使不插電原聲樂器的細緻音色能清晰傳遞至頂層看台。"
+        },
+        {
+          "en": "She enrolled in a master's program to study architectural acoustics and environmental noise control.",
+          "zh": "她報名攻讀碩士學位學程，專研建築聲學物理與都會環境噪音防治工程。"
+        }
+      ],
+      "collocations": [
+        "room and studio acoustics"
+      ]
+    },
+    {
+      "id": 5502,
+      "word": "frequency",
+      "pos": "n.",
+      "phonetic": "[ˋfrikwənsɪ]",
+      "definition": "音訊頻率響應曲線 (20Hz–20kHz)",
+      "cefr": "B1",
+      "topic": "音訊參數",
+      "examples": [
+        {
+          "en": "Studio reference monitors deliver a flat frequency response from 20 Hz sub-bass to 20,000 Hz highs.",
+          "zh": "專業錄音室監聽喇叭提供平直客觀的頻率響應曲線，精準還原低頻到超高音。"
+        },
+        {
+          "en": "Bats emit high-frequency ultrasonic clicks to locate flying insects in complete darkness.",
+          "zh": "蝙蝠在漆黑無光的深夜中飛行時，透過發射超高頻超音波喀噠聲來精確定位獵捕昆蟲。"
+        },
+        {
+          "en": "The bus service operates with high frequency, arriving every five minutes during peak morning commute hours.",
+          "zh": "該市區公車路線在早晨通勤尖峰時段的發車班次頻率極高，每五分鐘便有一班車靠站。"
+        }
+      ],
+      "collocations": [
+        "frequency response range"
+      ]
+    },
+    {
+      "id": 5503,
+      "word": "decibel",
+      "pos": "n.",
+      "phonetic": "[ˋdɛsə͵bɛl]",
+      "definition": "聲音強度分貝計量單位 (dB)",
+      "cefr": "B1",
+      "topic": "音量測量",
+      "examples": [
+        {
+          "en": "Sound engineers wear earplugs during live rock concerts when levels exceed 95 decibels.",
+          "zh": "當大型戶外搖滾演唱會的現場音壓衝破九十五分貝時，音控工程師會主動配戴抗噪耳塞。"
+        },
+        {
+          "en": "City bylaws prohibit outdoor construction noise above 70 decibels after ten in the evening.",
+          "zh": "市政府環保自治條例嚴格明定，晚間十點之後禁止戶外營建工地產生超過七十分貝的施工噪音。"
+        },
+        {
+          "en": "Normal quiet conversation between two people in a library registers at approximately 40 decibels.",
+          "zh": "兩個人在安靜的圖書館內輕聲交談時，所產生的音量大約落在四十分貝左右。"
+        }
+      ],
+      "collocations": [
+        "sound pressure decibel (dB)"
+      ]
+    },
+    {
+      "id": 5504,
+      "word": "condenser",
+      "pos": "n., adj.",
+      "phonetic": "[kənˋdɛnsɚ]",
+      "definition": "大振膜電容式錄音室人聲麥克風",
+      "cefr": "B1",
+      "topic": "錄音話筒",
+      "examples": [
+        {
+          "en": "Large-diaphragm condenser microphones capture the breathy subtleties of acoustic vocals with sparkling clarity.",
+          "zh": "大振膜電容式麥克風，能以通透晶瑩的細緻度捕捉人聲歌唱中微小的氣息細節。"
+        },
+        {
+          "en": "The HVAC technician cleaned the air conditioner's outdoor condenser unit to improve cooling efficiency.",
+          "zh": "空調維修冷氣師傅徹底清洗了分離式冷氣機的室外冷凝器散熱鰭片，以恢復最佳製冷效率。"
+        },
+        {
+          "en": "Condenser microphones require 48-volt phantom power supplied through the XLR audio cable to function.",
+          "zh": "專業電容式話筒在運作時，必須透過平衡式 XLR 訊號線提供由錄音介面輸出的四十八伏特幻象電源。"
+        }
+      ],
+      "collocations": [
+        "studio condenser microphone"
+      ]
+    },
+    {
+      "id": 5505,
+      "word": "dynamic",
+      "pos": "adj., n.",
+      "phonetic": "[daɪˋnæmɪk]",
+      "definition": "動圈式專業廣播播客麥克風；動態",
+      "cefr": "B1",
+      "topic": "話筒類型",
+      "examples": [
+        {
+          "en": "The rugged dynamic broadcast microphone rejects ambient keyboard typing noises during podcast recordings.",
+          "zh": "堅固耐用的動圈式麥克風，在錄製 Podcast 訪談時能大幅衰減敲擊鍵盤的背景雜音。"
+        },
+        {
+          "en": "The tech startup operates in a highly dynamic market characterized by rapid technological innovation.",
+          "zh": "這家科技新創公司處於一個高度動態多變的競爭市場，隨時面臨破壞性科技創新的洗禮。"
+        },
+        {
+          "en": "Her dynamic stage presence captivated the audience from the opening scene of the musical.",
+          "zh": "她充滿感染力與爆發力的舞台魅力，從音樂劇開場第一幕起便深深吸引了全場觀眾的目光。"
+        }
+      ],
+      "collocations": [
+        "broadcast dynamic microphone"
+      ]
+    },
+    {
+      "id": 5506,
+      "word": "cardioid",
+      "pos": "adj., n.",
+      "phonetic": "[ˋkɑrdɪ͵ɔɪd]",
+      "definition": "心型指向性收音模式 (正面收音)",
+      "cefr": "B1",
+      "topic": "指向特性",
+      "examples": [
+        {
+          "en": "A cardioid polar pattern isolates the speaker's mouth while blocking echoes bouncing off rear walls.",
+          "zh": "心型指向收音模式精準聚焦在講者正前方的說話聲，同時敏銳屏蔽來自背後牆面的反射殘響。"
+        },
+        {
+          "en": "Live vocalists prefer handheld cardioid microphones to prevent piercing audio feedback from stage monitor wedges.",
+          "zh": "舞台現場歌手普遍偏好使用手持心型指向麥克風，以杜絕舞台監聽喇叭所引發的尖銳回授嘯叫聲。"
+        },
+        {
+          "en": "The heart-shaped sensitivity area of a cardioid microphone makes it ideal for home podcast recording.",
+          "zh": "心型指向麥克風宛如心臟形狀的收音靈敏度範圍，使其成為居家錄製播客與語音配音的首選神器。"
+        }
+      ],
+      "collocations": [
+        "cardioid polar pattern"
+      ]
+    },
+    {
+      "id": 5507,
+      "word": "filter",
+      "pos": "n., v.",
+      "phonetic": "[ˋfɪltɚ]",
+      "definition": "消除噴麥爆音之金屬雙層防噴罩；過濾",
+      "cefr": "B1",
+      "topic": "錄音配件",
+      "examples": [
+        {
+          "en": "Clamping a dual-layer mesh pop filter in front of the mic prevents annoying plosive bursts on 'p' sounds.",
+          "zh": "在麥克風前加裝雙層金屬絲網防噴罩，能徹底消除發出「P」與「B」氣音時的刺耳爆破音。"
+        },
+        {
+          "en": "Remember to clean or replace the air purifier filter every six months to eliminate household allergens.",
+          "zh": "請務必記得每半年定期清洗或更換空氣清淨機的 HEPA 濾網濾芯，以有效過濾居家過敏原。"
+        },
+        {
+          "en": "Modern photo editing apps offer artistic vintage filters that adjust color tones with a single tap.",
+          "zh": "現代智慧型手機修圖應用程式內建多款復古風格藝術濾鏡，只需指尖輕輕一點即可變換色調氛圍。"
+        }
+      ],
+      "collocations": [
+        "microphone pop filter"
+      ]
+    },
+    {
+      "id": 5508,
+      "word": "shockmount",
+      "pos": "n.",
+      "phonetic": "[ˋʃɑk͵maʊnt]",
+      "definition": "彈性懸吊避震架 (隔絕桌面震動)",
+      "cefr": "B1",
+      "topic": "避震配件",
+      "examples": [
+        {
+          "en": "The elastic band shockmount isolates the delicate microphone from mechanical table bumps and foot taps.",
+          "zh": "採用彈性橡膠懸吊結構的避震架，能將嬌貴的話筒與桌子碰撞與地板走動震動完全隔離。"
+        },
+        {
+          "en": "Always verify that the elastic bands on the shockmount are tight to hold heavy microphones safely.",
+          "zh": "在使用前務必仔細檢查避震架上的彈力橡膠圈彈性是否緊實，以穩固支撐重量級金屬麥克風。"
+        },
+        {
+          "en": "Using a boom arm paired with a dedicated shockmount keeps the desktop clear while eliminating handling vibration.",
+          "zh": "將麥克風懸臂支架與專用懸吊避震架搭配使用，既能維持桌面清爽整潔，又能徹底消除手部碰觸震動。"
+        }
+      ],
+      "collocations": [
+        "elastic suspension shockmount"
+      ]
+    },
+    {
+      "id": 5509,
+      "word": "interface",
+      "pos": "n.",
+      "phonetic": "[ˋɪntɚˌfes]",
+      "definition": "專業 USB-C 錄音介面錄音卡；介面",
+      "cefr": "B1",
+      "topic": "錄音硬體",
+      "examples": [
+        {
+          "en": "The USB-C audio interface features studio-grade analog preamps that convert voices into 24-bit pristine digital audio.",
+          "zh": "專業 USB-C 錄音介面搭載錄音室等級前級放大器，將溫暖人聲轉為二十四位元純淨數位音訊。"
+        },
+        {
+          "en": "The user interface of the mobile banking app was redesigned to make money transfers faster and simpler.",
+          "zh": "行動網路銀行應用程式的操作介面經過全面改版重塑，讓日常跨行轉帳變得更快速直覺。"
+        },
+        {
+          "en": "Connecting your electric guitar into the audio interface lets you utilize realistic digital amplifier simulations.",
+          "zh": "將電吉他導線直接插上專業錄音介面高阻抗插孔，即可隨心所欲暢玩各種逼真的數位音箱模擬音色。"
+        }
+      ],
+      "collocations": [
+        "USB audio interface"
+      ]
+    },
+    {
+      "id": 5510,
+      "word": "gain",
+      "pos": "n. [U], v.",
+      "phonetic": "[gen]",
+      "definition": "前級增益調校 (Gain Staging)；獲得",
+      "cefr": "B1",
+      "topic": "音量平衡",
+      "examples": [
+        {
+          "en": "Proper gain staging ensures the vocal track stays well above the noise floor without clipping into red distortion.",
+          "zh": "嚴謹的增益調校確保人聲音軌維持在安全動態範圍內，既無底噪又絕不爆音過載。"
+        },
+        {
+          "en": "Regular resistance training helps elderly adults gain functional muscle mass and joint stability.",
+          "zh": "養成規律的阻力重訓習慣，能協助高齡長輩實質增長具備機能性的骨骼肌肌肉量與關節穩定度。"
+        },
+        {
+          "en": "The international export market showed a noticeable gain in revenue over the previous financial year.",
+          "zh": "該企業海外國際外銷市場在上一個財政年度中，展現出令人欣喜的營收實質增長。"
+        }
+      ],
+      "collocations": [
+        "preamp microphone gain"
+      ]
+    },
+    {
+      "id": 5511,
+      "word": "headphone",
+      "pos": "n. [pl.]",
+      "phonetic": "[ˋhɛd͵fon]",
+      "definition": "開放式錄音室監聽耳機；耳機",
+      "cefr": "B1",
+      "topic": "監聽設備",
+      "examples": [
+        {
+          "en": "Sound designers use open-back reference headphones to evaluate subtle stereo panning and spatial reverb tails.",
+          "zh": "聲音設計師配戴開放式監聽耳機，細細審聽立體聲左右聲道平移定位與微細空間殘響尾音。"
+        },
+        {
+          "en": "Commuters put on noise-canceling headphones to enjoy podcasts in quiet serenity on the crowded metro.",
+          "zh": "通勤上班族在擁擠吵雜的捷運車廂中戴上主動降噪耳機，在安詳寧靜中愜意收聽喜愛的播客節。目"
+        },
+        {
+          "en": "Studio tracking sessions require closed-back headphones to prevent headphone audio bleed into the open vocal mic.",
+          "zh": "歌手進錄音室錄唱時必須配戴密閉式監聽耳機，以防耳機裡的伴奏音樂漏音滲入敏感的人聲話筒中。"
+        }
+      ],
+      "collocations": [
+        "open-back studio headphones"
+      ]
+    },
+    {
+      "id": 5512,
+      "word": "monitor",
+      "pos": "n., v.",
+      "phonetic": "[ˋmɑnətɚ]",
+      "definition": "主動式近場錄音監聽喇叭；監控",
+      "cefr": "B1",
+      "topic": "監聽喇叭",
+      "examples": [
+        {
+          "en": "Bi-amplified studio nearfield monitors reveal flaws in bass frequencies that cheap consumer speakers hide.",
+          "zh": "雙擴大機驅動的近場監聽喇叭，能無情揭露一般市售耳機所隱藏的低頻混濁瑕疵。"
+        },
+        {
+          "en": "Doctors closely monitor the patient's vital signs on digital displays following intensive surgery.",
+          "zh": "在複雜的大型重大手術過後，醫療護理團隊透過床邊數位螢幕隨時緊密監控病患的各項生命徵象。"
+        },
+        {
+          "en": "She connected a 4K external monitor to her laptop to expand her digital workspace for video editing.",
+          "zh": "她將筆記型電腦外接了一台超高畫質 4K 專業電腦螢幕，大幅擴充剪輯影片時的雙螢幕工作視窗。"
+        }
+      ],
+      "collocations": [
+        "active studio monitor"
+      ]
+    },
+    {
+      "id": 5513,
+      "word": "baffle",
+      "pos": "n., v.",
+      "phonetic": "[ˋbæf!]",
+      "definition": "高密度吸音板；隔音板；使困惑",
+      "cefr": "B1",
+      "topic": "聲學處理",
+      "examples": [
+        {
+          "en": "Hanging fabric-wrapped acoustic baffles from high ceilings controls excessive room echo and flutter reflections.",
+          "zh": "在挑高天花板垂吊布面包覆的吸音隔板，能有效吸收多餘的空間回聲與牆面拍手顫動反射。"
+        },
+        {
+          "en": "Complex cryptic crossword puzzles never fail to baffle and entertain seasoned riddle solvers.",
+          "zh": "精巧設計的英國填字謎題總是能讓資深解謎高手陷入苦思困惑，同時帶來極致的解謎樂趣。"
+        },
+        {
+          "en": "The engine compartment contains an internal metal baffle to direct cooling air over the radiator.",
+          "zh": "汽車引擎室內部配置了金屬導流阻流板隔板，以精準引導冷卻迎風氣流順暢流經水箱散熱片。"
+        }
+      ],
+      "collocations": [
+        "hanging acoustic baffle"
+      ]
+    },
+    {
+      "id": 5514,
+      "word": "diffuser",
+      "pos": "n.",
+      "phonetic": "[dɪˋfjuzɚ]",
+      "definition": "二次餘數聲學擴散板 (消除回音)",
+      "cefr": "B1",
+      "topic": "聲音擴散",
+      "examples": [
+        {
+          "en": "Wooden quadratic diffusers scatter high frequencies evenly throughout the control room, preserving natural airiness.",
+          "zh": "原木精準雕鑿的聲學擴散板，將高頻聲波均勻散射至整間控音室，維持空間自然的開闊空氣感。"
+        },
+        {
+          "en": "Adding a few drops of natural lavender oil to the ultrasonic room diffuser fills the bedroom with calm fragrance.",
+          "zh": "在超音波精油水氧機擴香儀中滴入數滴天然薰衣草純精油，能讓整間臥房瀰漫著舒心療癒的芳香。"
+        },
+        {
+          "en": "Photographers attach a softbox diffuser to studio strobe lights to soften harsh shadows on portrait models.",
+          "zh": "人像攝影師在棚內閃光燈前套上柔光罩擴散片，以大幅柔化打在模特兒臉龐上的生硬陰影線條。"
+        }
+      ],
+      "collocations": [
+        "quadratic acoustic diffuser"
+      ]
+    },
+    {
+      "id": 5515,
+      "word": "trap",
+      "pos": "n., v.",
+      "phonetic": "[træp]",
+      "definition": "錄音室角落低頻吸音陷阱；陷阱",
+      "cefr": "B1",
+      "topic": "低頻控制",
+      "examples": [
+        {
+          "en": "Placing dense mineral wool bass traps in corners eliminates boomy low-end standing waves.",
+          "zh": "在錄音室四個牆角堆疊高密度岩棉低頻陷阱，能徹底消除低音駐波所引發的轟鳴共振。"
+        },
+        {
+          "en": "Wildlife rangers set humane cage traps to safely rescue and relocate injured mountain animals.",
+          "zh": "國家公園巡山員設置了不傷動物的人道誘捕籠陷阱，以安全救援並異地野放受傷受困的山林野生動物。"
+        },
+        {
+          "en": "Consumers should budget carefully to avoid falling into the dangerous cycle of high-interest credit card debt traps.",
+          "zh": "消費者在日常生活中應當精打細算編列各項開銷預算，以防陷入惡性循環的高利息卡債陷阱之中。"
+        }
+      ],
+      "collocations": [
+        "corner bass trap"
+      ]
+    },
+    {
+      "id": 5516,
+      "word": "workstation",
+      "pos": "n.",
+      "phonetic": "[ˋwɝk͵steʃən]",
+      "definition": "數位音訊工作站軟體 (DAW 混音軟體)",
+      "cefr": "B1",
+      "topic": "混音軟體",
+      "examples": [
+        {
+          "en": "Modern producers compose, edit, and mix complete cinematic soundtracks inside a digital audio workstation.",
+          "zh": "現代音樂製作人在數位音訊工作站中，即可一站式完成整部好萊塢電影配樂的編混錄唱。"
+        },
+        {
+          "en": "Each office employee is provided with an ergonomic height-adjustable desk at their personal computer workstation.",
+          "zh": "企業為每位辦公室同仁的個人電腦工作站配備了人體工學電動升降桌，呵護脊椎健康。"
+        },
+        {
+          "en": "High-performance graphics workstations with multi-core processors render 3D architectural models in minutes.",
+          "zh": "搭載多核心處理器的高性能繪圖工作站電腦，能在短短數分鐘內快速算圖渲染出複雜的 3D 建築模型。"
+        }
+      ],
+      "collocations": [
+        "digital audio workstation (DAW)"
+      ]
+    },
+    {
+      "id": 5517,
+      "word": "multitrack",
+      "pos": "adj., n.",
+      "phonetic": "[ˋmʌltɪ͵træk]",
+      "definition": "多軌同步錄音專案分軌的",
+      "cefr": "B1",
+      "topic": "錄音工程",
+      "examples": [
+        {
+          "en": "The multitrack session contained forty-eight individual audio channels for drums, guitars, strings, and lead vocals.",
+          "zh": "這份多軌錄音專案包含高達四十八軌獨立聲軌，將爵士鼓、木吉他、弦樂團與主唱完美分軌。"
+        },
+        {
+          "en": "Sound engineers export multitrack stems so remixers can rework beats independently.",
+          "zh": "錄音室混音師將母帶導出為多軌分軌音軌文件，以便後續電音混音師能夠獨立重新編排節拍。"
+        },
+        {
+          "en": "Live concerts are recorded on dedicated multitrack digital recorders for later broadcast mixing.",
+          "zh": "巨星現場演唱會全程採用專用多軌數位錄音機進行同步分軌收音，以供日後進行精緻的後製轉播混音。"
+        }
+      ],
+      "collocations": [
+        "multitrack recording session"
+      ]
+    },
+    {
+      "id": 5518,
+      "word": "mixing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmɪksɪŋ]",
+      "definition": "專業多音軌音訊混音工程",
+      "cefr": "B1",
+      "topic": "混音製作",
+      "examples": [
+        {
+          "en": "Audio mixing balances the levels, panning, and frequency space of every instrument into a coherent song.",
+          "zh": "專業混音工程細膩調校每件樂器的音量比例、左右空間定位與頻率切除，組合成一首和諧歌曲。"
+        },
+        {
+          "en": "The recipe calls for mixing dry flour, baking soda, and brown sugar thoroughly before adding milk.",
+          "zh": "這份烘焙食譜要求在倒入鮮奶之前，先將麵粉乾粉、小蘇打粉與黑糖在盆中充分攪拌混合均勻。"
+        },
+        {
+          "en": "Social events organized by student clubs encourage the fun mixing of local and international students.",
+          "zh": "學生會籌辦的迎新聯誼派對，熱情促進了本土在校生與各國外籍國際交換學生之間的歡樂交流互動。"
+        }
+      ],
+      "collocations": [
+        "professional audio mixing"
+      ]
+    },
+    {
+      "id": 5519,
+      "word": "mastering",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmæstərɪŋ]",
+      "definition": "母帶後期處理 (平衡響度與音色)",
+      "cefr": "B1",
+      "topic": "後期母帶",
+      "examples": [
+        {
+          "en": "Final album mastering optimizes tonal balance and matches global streaming loudness standards.",
+          "zh": "專輯發行前的母帶後期處理，全面優化整體音色平衡並對齊各大串流平台的標準響度規範。"
+        },
+        {
+          "en": "Mastering a difficult foreign language requires daily immersive listening practice and conversational courage.",
+          "zh": "想要徹底精通掌握一門艱深的外語，需要持之以恆的每日沉浸式聽力輸入與敢於開口對話的勇氣。"
+        },
+        {
+          "en": "Renowned mastering engineers use ultra-transparent analog outboard gear to add polish to recorded mixes.",
+          "zh": "享譽業界的母帶後期工程大師運用極致純淨通透的頂級類比外接硬體設備，為錄音混音作品錦上添花。"
+        }
+      ],
+      "collocations": [
+        "audio mastering engineer"
+      ]
+    },
+    {
+      "id": 5520,
+      "word": "equalizer",
+      "pos": "n.",
+      "phonetic": "[ˋikwə͵laɪzɚ]",
+      "definition": "參數式等化器 (EQ 雕琢音色頻段)",
+      "cefr": "B1",
+      "topic": "頻率修整",
+      "examples": [
+        {
+          "en": "The sound engineer engaged a high-pass filter on the parametric equalizer to cut rumble below 80 Hz.",
+          "zh": "音訊工程師在參數式等化器上開啟高通濾波器，俐落切除八十赫茲以下的低頻雜音。"
+        },
+        {
+          "en": "Adjusting the three-band equalizer on the guitar amp brings out punchy midrange and sparkling treble.",
+          "zh": "適度微調電吉他音箱上的三段等化器旋鈕，能讓飽滿扎實的中頻穿透力與晶瑩剔透的高音躍然紙上。"
+        },
+        {
+          "en": "Education acts as a powerful social equalizer, offering children from modest backgrounds a chance to excel.",
+          "zh": "普及而平等的義務教育是強大的社會平等促進機制，為出身清寒的莘莘學子提供了翻轉人生的卓越舞台。"
+        }
+      ],
+      "collocations": [
+        "parametric audio equalizer"
+      ]
+    },
+    {
+      "id": 5521,
+      "word": "compressor",
+      "pos": "n.",
+      "phonetic": "[kəmˋprɛsɚ]",
+      "definition": "動態範圍壓縮器 (控制人聲音量)",
+      "cefr": "B1",
+      "topic": "動態控制",
+      "examples": [
+        {
+          "en": "An analog tube compressor gently tames vocal peaks, adding warm musical glue to the overall performance.",
+          "zh": "類比真空管動態壓縮器溫和收斂人聲突發音量，為整體演繹注入溫潤迷人的音樂凝聚感。"
+        },
+        {
+          "en": "Construction workers connected pneumatic nail guns to a portable electric air compressor.",
+          "zh": "建築工地的木工師傅將氣動釘槍高壓風管，穩穩插上便攜式電動空氣壓縮機儲氣桶。"
+        },
+        {
+          "en": "Applying subtle bus compression glues disparate drum hits into a tight, unified rhythmic groove.",
+          "zh": "在爵士鼓總匯流排音軌上套用細膩的總線壓縮效果，能將分散的鼓點鼓棒敲擊牢牢凝聚為扎實律動。"
+        }
+      ],
+      "collocations": [
+        "dynamic range compressor"
+      ]
+    },
+    {
+      "id": 5522,
+      "word": "limiter",
+      "pos": "n.",
+      "phonetic": "[ˋlɪmɪtɚ]",
+      "definition": "數位磚牆限制器 (防止爆音過載)",
+      "cefr": "B1",
+      "topic": "響度把關",
+      "examples": [
+        {
+          "en": "The precision brickwall limiter catches runaway signal spikes, preventing digital clipping on the master fader.",
+          "zh": "總輸出端搭載的極限限制器，能牢牢攔截所有過衝的瞬間峰值信號，杜絕數位爆音失真。"
+        },
+        {
+          "en": "Modern electric scooters come equipped with a factory speed limiter to prevent excessive highway velocity.",
+          "zh": "現代智慧電動滑板車出廠時皆內建強制速限限制器軟體，以防在市區道路發生危險超速飆車。"
+        },
+        {
+          "en": "Mastering engineers set the peak limiter ceiling to -0.3 dB True Peak to avoid inter-sample distortions.",
+          "zh": "母帶工程師將峰值限制器的安全上限設定在負 0.3 dB 真實峰值，以徹底杜絕數位取樣間失真破音。"
+        }
+      ],
+      "collocations": [
+        "brickwall peak limiter"
+      ]
+    },
+    {
+      "id": 5523,
+      "word": "reverb",
+      "pos": "n. [U]",
+      "phonetic": "[ˋri͵vɝb]",
+      "definition": "空間殘響效果器 (營造廳堂立體感)",
+      "cefr": "B1",
+      "topic": "空間效果",
+      "examples": [
+        {
+          "en": "Adding lush convolution reverb transports the dry vocal track into an expansive acoustic cathedral.",
+          "zh": "套用逼真的卷積空間殘響效果，瞬間將乾淨的人聲音軌置身於宏偉悠遠的歐洲大教堂之中。"
+        },
+        {
+          "en": "When performing in empty stone auditoriums, musicians must adapt to the lingering natural room reverb.",
+          "zh": "在空無一人的石造大型音樂廳中演出時，音樂家必須主動調整演奏速度以適應空間綿延的天然殘響。"
+        },
+        {
+          "en": "Dialing back the digital reverb plugin cleared up vocal muddiness and restored upfront lyrical clarity.",
+          "zh": "適度調小數位殘響外掛插件的濕度比例，能有效消除人聲的混濁嗡鳴，重現咬字清晰的前排臨場感。"
+        }
+      ],
+      "collocations": [
+        "lush convolution reverb"
+      ]
+    },
+    {
+      "id": 5524,
+      "word": "delay",
+      "pos": "n. [U], v.",
+      "phonetic": "[dɪˋle]",
+      "definition": "立體聲左右延遲迴音效果；延遲",
+      "cefr": "B1",
+      "topic": "時間效果",
+      "examples": [
+        {
+          "en": "A rhythmic stereo ping-pong delay bounces shimmering echo repeats seamlessly between left and right ears.",
+          "zh": "富節奏感的立體聲乒乓延遲效果，讓清亮空靈的迴音在聽者左右耳之間流暢交替彈跳穿梭。"
+        },
+        {
+          "en": "Torrential mudslides caused an unexpected four-hour train delay along the eastern railway corridor.",
+          "zh": "豪雨引發的突發土石流落石意外，導致東部幹線鐵路各級列車發生了長達四小時的非預期誤點延誤。"
+        },
+        {
+          "en": "Do not delay seeing a qualified doctor if you notice persistent unexplained chest pain or dizziness.",
+          "zh": "倘若你察覺自己出現持續不明原因的胸悶胸痛或陣發性眩暈，千萬切莫拖延拖拖拉拉，務必及早就醫。"
+        }
+      ],
+      "collocations": [
+        "stereo ping-pong delay"
+      ]
+    },
+    {
+      "id": 5525,
+      "word": "podcast",
+      "pos": "n., v.",
+      "phonetic": "[ˋpɑd͵kæst]",
+      "definition": "故事敘事型 Podcast 播客節目",
+      "cefr": "B1",
+      "topic": "網路廣播",
+      "examples": [
+        {
+          "en": "Millions of commuters tune into weekly true-crime narrative podcasts during their morning train rides.",
+          "zh": "數百萬上班通勤族在搭乘捷運時，熱衷收聽每週定期更新的高品質深度敘事型播客節目。"
+        },
+        {
+          "en": "She launched an independent culinary podcast interviewing local organic farmers and artisan bakeries.",
+          "zh": "她創立了一個獨立的美食文化播客音訊節目，親自走訪產地深度專訪友善耕作小農與在地烘焙職人。"
+        },
+        {
+          "en": "Download your favorite audio podcast episodes before boarding the international flight for offline listening.",
+          "zh": "在登上國際長途班機前，記得預先下載好喜愛的播客單集音訊檔案，以便在沒有網路時離線收聽。"
+        }
+      ],
+      "collocations": [
+        "popular narrative podcast"
+      ]
+    },
+    {
+      "id": 5526,
+      "word": "episodic",
+      "pos": "adj.",
+      "phonetic": "[͵ɛpəˋsɑdɪk]",
+      "definition": "分集敘事廣播劇劇本編排的",
+      "cefr": "B1",
+      "topic": "節目結構",
+      "examples": [
+        {
+          "en": "The audio drama features episodic storytelling with dramatic cliffhangers keeping listeners hooked.",
+          "zh": "這部聲音廣播劇採用精彩的分集敘事結構，每集結尾皆留下扣人心弦的懸念讓人欲罷不能。"
+        },
+        {
+          "en": "Chronic migraines can present as episodic headaches triggered by sudden weather shifts or severe fatigue.",
+          "zh": "慢性偏頭痛常表現為陣發性、發作性抽痛頭痛，極易被劇烈的天氣驟變或過度疲倦誘發。"
+        },
+        {
+          "en": "The mystery television series released an episodic miniseries exploring the detective's troubled youth.",
+          "zh": "這部懸疑推理影集推出了一部按集分集敘事的獨立前傳迷你劇，深入探索老神探鮮為人知的坎坷青年歲月。"
+        }
+      ],
+      "collocations": [
+        "episodic audio series"
+      ]
+    },
+    {
+      "id": 5527,
+      "word": "voiceover",
+      "pos": "n.",
+      "phonetic": "[ˋvɔɪs͵ovɚ]",
+      "definition": "專業廣告與紀錄片旁白配音",
+      "cefr": "B1",
+      "topic": "聲音配音",
+      "examples": [
+        {
+          "en": "The seasoned voiceover artist adjusted his pitch and tone to deliver an authoritative documentary narration.",
+          "zh": "經驗老到的旁白配音員，以沉穩磁性的嗓音為國家地理自然紀錄片獻上深具說服力的旁白。"
+        },
+        {
+          "en": "The animated film hired prominent stand-up comedians to perform character voiceovers for talking animals.",
+          "zh": "這部高人氣動畫長片重金禮聘了知名喜劇脫口秀巨星，為劇中開口說話的搞笑動物擔綱角色配音。"
+        },
+        {
+          "en": "Her soothing voiceover in the meditation smartphone app helps hundreds of thousands drift asleep each night.",
+          "zh": "她在冥想助眠手機應用程式中那溫柔甜美的引導配音，每晚陪伴著數十萬名失眠的使用者安然入睡。"
+        }
+      ],
+      "collocations": [
+        "commercial voiceover talent"
+      ]
+    },
+    {
+      "id": 5528,
+      "word": "narration",
+      "pos": "n. [U]",
+      "phonetic": "[næˋreʃən]",
+      "definition": "有聲書沉浸式專業口語朗讀；旁白",
+      "cefr": "B1",
+      "topic": "有聲導讀",
+      "examples": [
+        {
+          "en": "Warm, expressive audiobook narration brings classic literary characters vividly alive in the listener’s imagination.",
+          "zh": "溫暖而富感情的有聲書朗讀旁白，在聽眾的腦海想像中將經典文學名著中的角色鮮活重現。"
+        },
+        {
+          "en": "The documentary film relies on first-person narration by indigenous elders to tell tribal creation myths.",
+          "zh": "這部文史紀錄片完全仰賴原住民部落耆老珍貴的第一人稱口述口述歷史旁白，娓娓道來祖靈創世神話。"
+        },
+        {
+          "en": "Clear historical narration accompanied by archival photographs captivated students in the auditorium.",
+          "zh": "條理分明、引人入勝的歷史故事講述旁白搭配泛黃的珍貴歷史照片，深深吸引了在場所有聆聽的青年學子。"
+        }
+      ],
+      "collocations": [
+        "expressive audiobook narration"
+      ]
+    },
+    {
+      "id": 5529,
+      "word": "Foley",
+      "pos": "n. prop.",
+      "phonetic": "[ˋfolɪ]",
+      "definition": "影視擬音師 (錄製真實生活音效)",
+      "cefr": "B1",
+      "topic": "擬音藝術",
+      "examples": [
+        {
+          "en": "Foley artists twist celery stalks and slap leather jackets to create crunchy bone-breaking movie sound effects.",
+          "zh": "專業電影擬音師在擬音棚中扭斷新鮮芹菜、拍打皮夾克，創造出逼真的動作打鬥音效。"
+        },
+        {
+          "en": "In the Foley studio, sound technicians walk on trays of gravel to recreate footsteps for the suspense thriller.",
+          "zh": "在專業影視擬音棚內，擬音技師親自踩踏在鋪滿碎石的沙槽托盤上，為懸疑驚悚片錄製生動的腳步聲。"
+        },
+        {
+          "en": "High-budget video game developments rely on extensive Foley recording sessions to capture authentic armor rattles.",
+          "zh": "高預算 3A 級旗艦電玩遊戲大作高度仰賴大規模的擬音實錄工序，精確收錄古代重裝鎧甲碰撞摩擦的真實金屬聲。"
+        }
+      ],
+      "collocations": [
+        "cinematic Foley artist"
+      ]
+    },
+    {
+      "id": 5530,
+      "word": "ambient",
+      "pos": "adj.",
+      "phonetic": "[ˋæmbɪənt]",
+      "definition": "環境現場底噪自然氛圍音的",
+      "cefr": "B1",
+      "topic": "環境氛圍",
+      "examples": [
+        {
+          "en": "Layering subtle ambient sounds of forest rain and distant thunder deepens emotional immersion.",
+          "zh": "巧妙疊加山林細雨滴落與遠方隱隱雷鳴的環境氛圍音，能瞬間加深聽眾身歷其境的沉浸感。"
+        },
+        {
+          "en": "Smart home lighting systems automatically adjust ambient room brightness to match evening sunset colors.",
+          "zh": "智慧居家照明系統會靈巧感應室外天色，自動調整室內周遭環境燈光亮度以呼應黃昏夕陽晚霞。"
+        },
+        {
+          "en": "Ambient noise in the busy coffee shop was muffled effectively by her high-end noise-canceling headphones.",
+          "zh": "人潮熙攘的熱鬧咖啡館內嘈雜紛亂的周遭環境背景噪音，被她配戴的高階降噪耳機隔絕得微乎其微。"
+        }
+      ],
+      "collocations": [
+        "relaxing ambient background"
+      ]
+    },
+    {
+      "id": 5531,
+      "word": "spatial",
+      "pos": "adj.",
+      "phonetic": "[ˋspeʃəl]",
+      "definition": "3D 沉浸式空間音訊立體聲場的",
+      "cefr": "B1",
+      "topic": "空間音訊",
+      "examples": [
+        {
+          "en": "Spatial audio tracks dynamically track head movements, making movie footsteps sound like they are right behind you.",
+          "zh": "搭載頭部動態追蹤的 3D 空間音訊，讓電影中由遠及近的腳步聲彷彿就在身後悄然響起。"
+        },
+        {
+          "en": "Architecture students develop strong spatial reasoning skills by building complex three-dimensional models.",
+          "zh": "建築系學生透過親手搭建精密複雜的實體 3D 比例模型，磨練並培養出卓越的空間感知與幾何思考維度。"
+        },
+        {
+          "en": "The virtual reality headset delivers incredible visual fidelity and pinpoint spatial sound localization.",
+          "zh": "這款旗艦級虛擬實境頭戴顯示器，提供了令人驚嘆的視覺細膩度與分毫不差的 3D 空間音效定位。"
+        }
+      ],
+      "collocations": [
+        "3D spatial audio technology"
+      ]
+    },
+    {
+      "id": 5532,
+      "word": "Dolby",
+      "pos": "n. prop.",
+      "phonetic": "[ˋdolbɪ]",
+      "definition": "杜比全景聲 (Dolby Atmos) 物件音場",
+      "cefr": "B1",
+      "topic": "環繞音效",
+      "examples": [
+        {
+          "en": "Mixing in Dolby Atmos places individual sound objects anywhere in a 360-degree dome around the listener.",
+          "zh": "導入杜比全景聲混音技術，能將每一道聲音物件自由定位在聽眾周遭三百六十度的立體穹頂音場中。"
+        },
+        {
+          "en": "The newly renovated cinema hall was fully certified for Dolby Vision projection and multi-channel sound.",
+          "zh": "這座重新裝修升級的現代豪華影廳，全面通過了杜比視界高動態放映與多聲道音效權威認證。"
+        },
+        {
+          "en": "Listening to the orchestral soundtrack mixed in Dolby audio reveals intricate instrumental textures.",
+          "zh": "戴上高規格耳機聆聽以杜比音訊技術混音的交響樂原聲帶，每件樂器細膩的編排質地清晰可辨。"
+        }
+      ],
+      "collocations": [
+        "Dolby Atmos surround"
+      ]
+    },
+    {
+      "id": 5533,
+      "word": "immersive",
+      "pos": "adj.",
+      "phonetic": "[ɪˋmɝsɪv]",
+      "definition": "身歷其境全包覆沉浸式體驗的",
+      "cefr": "B1",
+      "topic": "沉浸感受",
+      "examples": [
+        {
+          "en": "The theater’s 64-speaker setup envelops moviegoers in a completely immersive sonic landscape.",
+          "zh": "影廳內配置的六十四顆獨立環繞揚聲器，將全體影迷完全包覆在身歷其境、震撼無比的沉浸式聲場中。"
+        },
+        {
+          "en": "The language immersion program places exchange students with host families for an immersive cultural experience.",
+          "zh": "這項語言沉浸式文化學習專案安排國際交換學生入住寄宿家庭，提供全天候全方位的深度文化體驗。"
+        },
+        {
+          "en": "Video game creators strive to design highly immersive open-world environments with dynamic weather systems.",
+          "zh": "頂級開放世界電玩遊戲開發團隊竭力打造具備動態天氣變幻系統的高沉浸感龐大遊戲虛擬世界。"
+        }
+      ],
+      "collocations": [
+        "fully immersive audio experience"
+      ]
+    },
+    {
+      "id": 5534,
+      "word": "vinyl",
+      "pos": "n. [U]",
+      "phonetic": "[ˋvaɪn!]",
+      "definition": "發燒友 180 克重磅黑膠唱片；黑膠",
+      "cefr": "B1",
+      "topic": "類比載體",
+      "examples": [
+        {
+          "en": "Music enthusiasts treasure 180-gram heavyweight vinyl records for their warm, tactile analog warmth.",
+          "zh": "音響發燒友與黑膠迷狂熱珍藏一百八十克重磅黑膠唱片，享受其溫潤厚實的類比音樂靈魂。"
+        },
+        {
+          "en": "The collector carefully cleaned the vintage vinyl album using an antistatic carbon fiber brush.",
+          "zh": "這位老唱片收藏家拿著防靜電碳纖維唱片清潔刷，極其小心地拂去古董黑膠唱片溝槽中的微塵。"
+        },
+        {
+          "en": "Durable vinyl flooring is a waterproof, easy-to-clean alternative for residential kitchen remodeling.",
+          "zh": "堅固耐磨且完全防水的卡扣式石塑木紋乙烯基黑膠地磚，是現代居家廚房舊屋翻新時極易清潔的理想建材。"
+        }
+      ],
+      "collocations": [
+        "heavyweight vinyl record"
+      ]
+    },
+    {
+      "id": 5535,
+      "word": "turntable",
+      "pos": "n.",
+      "phonetic": "[ˋtɝn͵teb!]",
+      "definition": "發燒級精密減震黑膠唱盤",
+      "cefr": "B1",
+      "topic": "唱盤器材",
+      "examples": [
+        {
+          "en": "The heavy belt-driven turntable spins smoothly on magnetic levitation isolation feet.",
+          "zh": "重裝打造的皮帶驅動黑膠唱盤，懸浮在磁浮避震腳墊上以每分鐘三十三又三分之一轉極靜旋轉。"
+        },
+        {
+          "en": "The railway maintenance yard utilizes an enormous circular turntable to reverse the heading of diesel locomotives.",
+          "zh": "鐵路維修機廠中央設置了一座巨大的圓形鐵路轉車盤轉盤，用以調轉柴油機車頭的行駛朝向。"
+        },
+        {
+          "en": "A strobe light pattern around the turntable platter helps listeners calibrate rotational speed precisely.",
+          "zh": "黑膠唱盤金屬轉盤邊緣刻有的精密頻閃測速紋路，能協助音響迷利用頻閃燈精準校正轉速。"
+        }
+      ],
+      "collocations": [
+        "audiophile analog turntable"
+      ]
+    },
+    {
+      "id": 5536,
+      "word": "tonearm",
+      "pos": "n.",
+      "phonetic": "[ˋtonˌɑrm]",
+      "definition": "輕量碳纖維唱臂 (精密針壓配重)",
+      "cefr": "B1",
+      "topic": "唱臂組件",
+      "examples": [
+        {
+          "en": "The carbon fiber tonearm glides friction-free on sapphire gimbal bearings across the rotating disc.",
+          "zh": "超輕量碳纖維唱臂搭載藍寶石萬向軸承，以零摩擦阻力平穩滑行於旋轉中的唱片之上。"
+        },
+        {
+          "en": "Setting correct tracking force on the tonearm counterweight prevents needle skipping and record groove damage.",
+          "zh": "在唱臂尾端金屬配重錘上精確調校正確的針壓數值，能有效杜絕唱針跳針並防止磨損唱片微溝槽。"
+        },
+        {
+          "en": "The precision tonearm features fine anti-skating controls to counteract inward centripetal forces.",
+          "zh": "這支高精度旗艦唱臂配備細膩的側滑力抗滑調整旋鈕，精準抵消唱針在旋轉中受到的向心拉力。"
+        }
+      ],
+      "collocations": [
+        "carbon fiber tonearm"
+      ]
+    },
+    {
+      "id": 5537,
+      "word": "cartridge",
+      "pos": "n.",
+      "phonetic": "[ˋkɑrtrɪdʒ]",
+      "definition": "動圈式 MM/MC 高傳真黑膠唱頭",
+      "cefr": "B1",
+      "topic": "拾音核心",
+      "examples": [
+        {
+          "en": "The moving-coil phono cartridge converts microscopic groove vibrations into tiny electrical audio signals.",
+          "zh": "頂級動圈式黑膠唱頭，敏銳將微米級唱片溝槽起伏精準轉化為細微的音訊微電壓。"
+        },
+        {
+          "en": "The laser printer warned the office manager that the black toner cartridge was running critically low.",
+          "zh": "辦公室雷射印表機面板閃爍紅色警示燈，提醒總務人員黑色碳粉匣墨水匣存量即將見底。"
+        },
+        {
+          "en": "Upgrading to a nude diamond cartridge dramatically improved high-frequency sparkle and vocal realism.",
+          "zh": "將原廠唱頭升級為裸鑽動圈黑膠拾音唱頭，瞬間為整體音樂重現帶來了驚艷的高頻泛音與逼真人聲。"
+        }
+      ],
+      "collocations": [
+        "moving coil phono cartridge"
+      ]
+    },
+    {
+      "id": 5538,
+      "word": "stylus",
+      "pos": "n.",
+      "phonetic": "[ˋstaɪləs]",
+      "definition": "純鑽石微型唱針 (深入微溝槽)",
+      "cefr": "B1",
+      "topic": "唱針結構",
+      "examples": [
+        {
+          "en": "The polished diamond elliptical stylus traces the delicate sidewalls of microgrooves without damaging vinyl.",
+          "zh": "鏡面拋光的純鑽石橢圓唱針，深入微溝槽兩側緊密貼合拾音而不刮傷心愛的黑膠唱片。"
+        },
+        {
+          "en": "Digital graphic designers use a pressure-sensitive magnetic stylus to sketch concept art on tablet screens.",
+          "zh": "數位插畫概念設計師手握具備高階感壓技術的磁吸觸控筆手寫筆，在平板螢幕上揮灑繪製概念草圖。"
+        },
+        {
+          "en": "Inspect your turntable stylus regularly under a magnifying glass to clean off accumulated dust and lint.",
+          "zh": "定期使用高倍率放大鏡仔細檢視黑膠唱針針尖，及時拂去沾附在微米鑽石針尖上的微塵與毛屑。"
+        }
+      ],
+      "collocations": [
+        "polished diamond stylus"
+      ]
+    },
+    {
+      "id": 5539,
+      "word": "preamp",
+      "pos": "n.",
+      "phonetic": "[ˋpriˌæmp]",
+      "definition": "唱頭專用前級放大器 (RIAA 曲線)",
+      "cefr": "B1",
+      "topic": "類比放大",
+      "examples": [
+        {
+          "en": "The vacuum tube phono preamp restores the correct RIAA equalization curve with sparkling organic tube harmonics.",
+          "zh": "真空管唱頭前級放大器，精準還原標準 RIAA 等化曲線並賦予音色迷人的管味泛音。"
+        },
+        {
+          "en": "Professional studio audio interfaces feature ultra-low-noise preamps that amplify quiet ribbon microphone signals.",
+          "zh": "錄音室專業音訊介面內建超低噪訊前級放大器前級，能將極其微弱的鋁帶麥克風信號純淨放大。"
+        },
+        {
+          "en": "Audiophiles often pair a dedicated analog preamp with high-power monoblock amplifiers for sonic purity.",
+          "zh": "音響發燒友往往將獨立的純類比前級放大器與大功率單聲道後級擴大機搭配使用，以追求極致純淨的音質。"
+        }
+      ],
+      "collocations": [
+        "phono tube preamp"
+      ]
+    },
+    {
+      "id": 5540,
+      "word": "analog",
+      "pos": "adj., n.",
+      "phonetic": "[ˋænə͵lɔg]",
+      "definition": "類比音訊溫暖純粹厚實的；類比",
+      "cefr": "B1",
+      "topic": "音訊形式",
+      "examples": [
+        {
+          "en": "Many audio purists prefer pure analog magnetic tape recordings over cold, quantized digital files.",
+          "zh": "許多音響行家始終鍾情於純類比音訊特有的溫暖厚實感，那是數位檔案無法複製的生命力。"
+        },
+        {
+          "en": "He still wears a classic Swiss analog watch with luminous hands instead of a modern smartwatch.",
+          "zh": "他手腕上依然習慣佩戴著配有夜光實體指針的經典瑞士傳統指針指針式機械錶，而非智慧手錶。"
+        },
+        {
+          "en": "The electronic synthesizer blends analog filters with digital oscillators to produce fat basslines.",
+          "zh": "這款電子合成器巧妙融合了純類比濾波電路與高精度數位振盪器，調製出極其渾厚飽滿的低音音色。"
+        }
+      ],
+      "collocations": [
+        "warm analog sound"
+      ]
+    },
+    {
+      "id": 5541,
+      "word": "fidelity",
+      "pos": "n. [U]",
+      "phonetic": "[fəˋdɛlətɪ]",
+      "definition": "高傳真無損真實還原度 (Hi-Fi)",
+      "cefr": "B1",
+      "topic": "音質追求",
+      "examples": [
+        {
+          "en": "Audiophile systems pursue high fidelity reproduction that makes listeners feel the singer is in the room.",
+          "zh": "高階 Hi-Fi 頂級音響系統追求極致的高傳真度，讓聽者彷彿主唱親臨客廳現場開唱。"
+        },
+        {
+          "en": "The historical drama film was praised for its remarkable fidelity to seventeenth-century Taiwanese archives.",
+          "zh": "這部大型歷史大戲因其對十七世紀台灣歷史文獻與民俗風貌令人驚嘆的高真實還原度，贏得史學界一致盛讚。"
+        },
+        {
+          "en": "A successful long-term partnership is built upon mutual trust, open communication, and unwavering fidelity.",
+          "zh": "一段歷久彌新的成功長遠夥伴關係，深植於彼此由衷的互信、坦誠溝通與堅定不移的忠誠操守之上。"
+        }
+      ],
+      "collocations": [
+        "high fidelity (Hi-Fi)"
+      ]
+    },
+    {
+      "id": 5542,
+      "word": "lossless",
+      "pos": "adj.",
+      "phonetic": "[ˋlɔslɪs]",
+      "definition": "24-bit 192kHz 頂級母帶無損音質的",
+      "cefr": "B1",
+      "topic": "無損音質",
+      "examples": [
+        {
+          "en": "Streaming platforms offer 24-bit studio-master lossless audio tracks preserving dynamic punch.",
+          "zh": "頂級串流音樂平台提供 24-bit / 192kHz 母帶無損音質，完整保留母帶大動態與敲擊細節。"
+        },
+        {
+          "en": "Archiving high-resolution digital master files in lossless FLAC format ensures perfect audio reproduction forever.",
+          "zh": "將高解析數位母帶以無失真無損 FLAC 格式進行數位典藏，能確保音訊細節歷久彌新永遠原汁原味。"
+        },
+        {
+          "en": "Unlike heavily compressed MP3 files, lossless formats retain every subtle harmonic overtone in the recording.",
+          "zh": "有別於被大幅壓縮砍頻的 MP3 格式，高傳真無損音訊格式完整保留了錄音現場所有細微的樂器諧波泛音。"
+        }
+      ],
+      "collocations": [
+        "lossless audio streaming"
+      ]
+    },
+    {
+      "id": 5543,
+      "word": "soundstage",
+      "pos": "n.",
+      "phonetic": "[ˋsaʊnd͵stedʒ]",
+      "definition": "寬闊立體之三維空間音場定位",
+      "cefr": "B1",
+      "topic": "空間聽感",
+      "examples": [
+        {
+          "en": "High-end stereo speakers cast an expansive three-dimensional soundstage where every instrument has precise placement.",
+          "zh": "旗艦級兩聲道音響在空間中營造出寬廣深邃的 3D 立體音場，讓每件樂器定位清晰可辨。"
+        },
+        {
+          "en": "In the vast movie studio soundstage, lighting crews assembled an elaborate futuristic spaceport set.",
+          "zh": "在佔地廣袤的電影製片廠專用隔音攝影棚中，燈光美工組搭建起了一座令人嘆為觀止的未來太空星際港場景。"
+        },
+        {
+          "en": "High-quality open-back headphones create an out-of-head soundstage that makes music feel airy and natural.",
+          "zh": "頂級開放式耳機營造出彷彿脫離耳機束縛的開闊脫箱立體音場，讓音符如同在大自然空氣中自由流淌。"
+        }
+      ],
+      "collocations": [
+        "wide holographic soundstage"
+      ]
+    },
+    {
+      "id": 5544,
+      "word": "timbre",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtɪmbɚ]",
+      "definition": "各樂器獨特天生之真實音色音質",
+      "cefr": "B1",
+      "topic": "音色質地",
+      "examples": [
+        {
+          "en": "The rich, woody timbre of the solo cello echoed throughout the silent auditorium with haunting beauty.",
+          "zh": "獨奏大提琴那沉穩醇厚、散發原木芳香的天然音色，在寂靜的演奏廳中迴盪出令人動容之美。"
+        },
+        {
+          "en": "Even over an imperfect telephone connection, she recognized her best friend's distinctive vocal timbre instantly.",
+          "zh": "即便隔著收訊微弱、音質斑駁的國際長途電話連線，她依然能一秒辨識出摯友獨具魅力的說話音質音色。"
+        },
+        {
+          "en": "French horns possess a warm, mellow brass timbre that blends smoothly with woodwind ensembles.",
+          "zh": "法國號擁有溫潤柔和、圓融悠揚的銅管音色特質，能與木管樂器重奏團完美交融無間。"
+        }
+      ],
+      "collocations": [
+        "rich instrumental timbre"
+      ]
+    },
+    {
+      "id": 5545,
+      "word": "nuance",
+      "pos": "n.",
+      "phonetic": "[njuˋɑns]",
+      "definition": "歌者微小換氣與微動態細微層次",
+      "cefr": "B1",
+      "topic": "細膩情感",
+      "examples": [
+        {
+          "en": "Sensitive ribbon microphones pick up the singer’s emotional nuance, from soft whispers to passionate climaxes.",
+          "zh": "高靈敏鋁帶麥克風細膩捕捉歌者從輕柔氣息呢喃到激昂高潮的每一絲情感層次細微變化。"
+        },
+        {
+          "en": "A professional literary translator must understand cultural nuance to capture humor across different tongues.",
+          "zh": "專業文學翻譯大師必須深刻體察跨文化的細膩語境意涵，方能將雙關幽默在截然不同的語言間傳神轉譯。"
+        },
+        {
+          "en": "The veteran diplomat negotiated with great tact, observing every subtle psychological nuance during the summit.",
+          "zh": "經驗豐富的資深外交家在高峰會談判桌上進退有度，敏銳觀察並捕捉談判對手流露出的每一個細微心理變化。"
+        }
+      ],
+      "collocations": [
+        "subtle vocal nuance"
+      ]
+    },
+    {
+      "id": 5546,
+      "word": "resonance",
+      "pos": "n. [U]",
+      "phonetic": "[ˋrɛznəns]",
+      "definition": "原木音箱與琴體天然物理共鳴；共鳴",
+      "cefr": "B1",
+      "topic": "物理共振",
+      "examples": [
+        {
+          "en": "The solid spruce top produces rich acoustic resonance that vibrates right through the guitarist’s chest.",
+          "zh": "實木雲杉吉他面板爆發出飽滿有力的物理共鳴，讓琴弦震動直接穿透彈奏者的胸膛。"
+        },
+        {
+          "en": "The politician's speech on economic fairness struck a powerful chord of emotional resonance with young voters.",
+          "zh": "這位政治家針對社會公平正義所發表的感人演說，在廣大青年選民心底激起了強烈的心理共鳴與認同。"
+        },
+        {
+          "en": "Bridges must be engineered carefully to avoid dangerous structural resonance induced by marching troops or strong winds.",
+          "zh": "大型跨海大橋在設計結構力學時必須經過精密風洞計算，以防強烈陣風或大軍齊步通過時誘發致命的結構共振。"
+        }
+      ],
+      "collocations": [
+        "deep acoustic body resonance"
+      ]
+    },
+    {
+      "id": 5547,
+      "word": "warmth",
+      "pos": "n. [U]",
+      "phonetic": "[wɔrmθ]",
+      "definition": "真空管擴大機復古溫潤管味暖意",
+      "cefr": "B1",
+      "topic": "聽覺溫度",
+      "examples": [
+        {
+          "en": "Golden glow vacuum tubes infuse cold synthesizer sounds with intoxicating vintage warmth and richness.",
+          "zh": "散發溫暖金黃微光的真空管，為冰冷的合成器音符注入令人陶醉的復古溫潤暖意。"
+        },
+        {
+          "en": "The comforting physical warmth of a wool blanket on a chilly winter evening helps you relax completely.",
+          "zh": "在寒意逼人的冬日夜晚裡，裹上一條溫暖舒適的羊毛毯，能讓身心瞬間得到徹底的放鬆釋放。"
+        },
+        {
+          "en": "Her open smile and kind, welcoming demeanor brought genuine hospitality and warmth to the exhausted travelers.",
+          "zh": "她親切真誠的燦爛笑容與熱情溫暖的待客之道，為舟車勞頓、疲憊不堪的旅人心中帶來了如沐春風的暖意。"
+        }
+      ],
+      "collocations": [
+        "vintage tube warmth"
+      ]
+    },
+    {
+      "id": 5548,
+      "word": "distortion",
+      "pos": "n. [U]",
+      "phonetic": "[dɪsˋtɔrʃən]",
+      "definition": "超低總諧波失真 (THD < 0.001%)；失真",
+      "cefr": "B1",
+      "topic": "純淨指標",
+      "examples": [
+        {
+          "en": "High-grade linear power supplies reduce harmonic distortion to imperceptible, crystal-clean levels.",
+          "zh": "高階純線性電源供應器將總諧波失真壓至微不可察的境界，帶來如山泉水般純淨的背景。"
+        },
+        {
+          "en": "Wide-angle camera lenses can introduce slight geometric barrel distortion along the outer edges of photographs.",
+          "zh": "超廣角相機光學鏡頭在拍攝宏偉建築全景時，往往會在照片四周邊緣產生微小的幾何桶狀畸變失真。"
+        },
+        {
+          "en": "Spreading sensationalized rumors online causes harmful distortion of facts and misleads public opinion.",
+          "zh": "在社群網路上散播誇大其詞、聳人聽聞的未經證實謠言，會對客觀事實真相造成嚴重扭曲並誤導大眾輿論。"
+        }
+      ],
+      "collocations": [
+        "low harmonic distortion"
+      ]
+    },
+    {
+      "id": 5549,
+      "word": "bliss",
+      "pos": "n. [U]",
+      "phonetic": "[blɪs]",
+      "definition": "沉醉於極致天籟音樂中的至福",
+      "cefr": "B1",
+      "topic": "心靈沉醉",
+      "examples": [
+        {
+          "en": "Closing your eyes and letting the warm vinyl music wash over you offers pure audio listening bliss.",
+          "zh": "輕輕閉上雙眼，任由溫暖流暢的黑膠旋律洗滌疲憊的心靈，那是音響愛好者最純粹的天籟至福。"
+        },
+        {
+          "en": "Lounging on the sun-kissed white sands of Kenting with a chilled tropical juice was sheer tropical bliss.",
+          "zh": "悠閒躺在墾丁陽光灑落的白沙灘上細啜現榨冰鎮熱帶果汁，實在是人生最極致快意的熱帶無上至福。"
+        },
+        {
+          "en": "Newlyweds enjoyed uninterrupted domestic bliss as they settled into their newly renovated apartment.",
+          "zh": "這對新婚燕爾的小夫妻搬進新裝修完成的溫馨公寓，盡情享受著不受外界打擾的甜蜜家庭天倫幸福。"
+        }
+      ],
+      "collocations": [
+        "pure audio listening bliss"
+      ]
+    },
+    {
+      "id": 5550,
+      "word": "symphony",
+      "pos": "n.",
+      "phonetic": "[ˋsɪmfənɪ]",
+      "definition": "聲學與靈魂交織之和諧交響樂章",
+      "cefr": "B1",
+      "topic": "終極和諧",
+      "examples": [
+        {
+          "en": "Life is a grand acoustic symphony where every unique voice contributes to the rich harmony of human experience.",
+          "zh": "人生宛如一部波瀾壯闊的聲學交響樂章，每一道獨特而真誠的聲音都在為人類經驗增添和諧樂章。"
+        },
+        {
+          "en": "The national symphony orchestra received a standing ovation for their passionate performance of Tchaikovsky.",
+          "zh": "國家交響樂團對柴可夫斯基經典巨作淋漓盡致的深情詮釋，贏得了全場觀眾起立致敬與久久不歇的如雷掌聲。"
+        },
+        {
+          "en": "In spring, the chirping crickets, croaking tree frogs, and murmuring stream perform a delightful nature symphony.",
+          "zh": "漫步在春夜山林裡，草叢中呢喃的鳴蟲、清脆樹蛙與潺潺流水聲，宛如大自然即興合奏的一曲天籟交響樂。"
+        }
+      ],
+      "collocations": [
+        "grand acoustic symphony"
+      ]
+    }
+  ]
+}

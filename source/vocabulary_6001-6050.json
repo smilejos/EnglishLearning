@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 6,001–6,050 個單字（CEFR B1 中級）",
+  "batch": "6001-6050",
+  "range": "6001–6050",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 6001,
+      "word": "quantum",
+      "pos": "adj., n.",
+      "phonetic": "[ˋkwɑntəm]",
+      "definition": "顛覆傳統之現代量子運算架構的；量子",
+      "cefr": "B1",
+      "topic": "量子科技",
+      "examples": [
+        {
+          "en": "Quantum computing harnesses the mysterious physics of subatomic particles to solve unsolvable equations.",
+          "zh": "量子運算，善用微觀次原子粒子的奇妙物理特性來破解超級電腦無法計算的難題。"
+        },
+        {
+          "en": "Scientists predict that quantum sensors will revolutionize underground navigation and medical imaging.",
+          "zh": "科學家預言超靈敏量子感測器將徹底顛覆無 GPS 地下導航與人體微觀醫學影像技術。"
+        },
+        {
+          "en": "Enormous global investments are pouring into quantum research centers to develop commercial hardware.",
+          "zh": "全球龐大的科技資本正源源不絕湧入量子研發重鎮，加速推進實用商業量子硬體的落地誕生。"
+        }
+      ],
+      "collocations": [
+        "quantum computing paradigm"
+      ]
+    },
+    {
+      "id": 6002,
+      "word": "mechanics",
+      "pos": "n. [pl.]",
+      "phonetic": "[məˋkænɪks]",
+      "definition": "探索微觀粒子規律之量子力學；力學",
+      "cefr": "B1",
+      "topic": "物理原理",
+      "examples": [
+        {
+          "en": "The mind-bending rules of quantum mechanics govern how atoms behave at microscopic scales.",
+          "zh": "顛覆常理的量子力學定律，精準支配著微觀尺度下原子與電子的運動規律。"
+        },
+        {
+          "en": "Understanding wave-particle duality is essential for mastering university courses in quantum mechanics.",
+          "zh": "深入透徹理解波粒二象性原理，是大學物理系學子修習高等量子力學不可或缺的核心基石。"
+        },
+        {
+          "en": "Breakthrough experiments validated the counterintuitive predictions of theoretical quantum mechanics.",
+          "zh": "一項項突破性的物理實驗，無可辯駁地證實了理論量子力學所做出的各種違背直覺的驚人預言。"
+        }
+      ],
+      "collocations": [
+        "quantum mechanics theory"
+      ]
+    },
+    {
+      "id": 6003,
+      "word": "classical",
+      "pos": "adj.",
+      "phonetic": "[ˋklæsɪk!]",
+      "definition": "傳統二進位 0 與 1 電晶體位元的；經典的",
+      "cefr": "B1",
+      "topic": "傳統運算",
+      "examples": [
+        {
+          "en": "Unlike classical computers that process bits as zeros or ones, quantum systems explore both simultaneously.",
+          "zh": "不同於傳統電腦只能將位元非 0 即 1 地循序處理，量子系統能同時探索兩者。"
+        },
+        {
+          "en": "Even the fastest classical supercomputer would require millennia to factor modern cryptographic keys.",
+          "zh": "即便動用當前全球運算速度最快的傳統超級電腦，也需要耗費數萬年才能暴力破解現代密碼公鑰。"
+        },
+        {
+          "en": "Hybrid computing combines classical CPU pipelines with quantum acceleration chips.",
+          "zh": "混合式運算架構巧妙將傳統 CPU 資料流水線與專用量子加速晶片深度整合，截長補短。"
+        }
+      ],
+      "collocations": [
+        "classical binary computer"
+      ]
+    },
+    {
+      "id": 6004,
+      "word": "qubit",
+      "pos": "n.",
+      "phonetic": "[ˋkjubɪt]",
+      "definition": "量子位元 (可同時處於 0 與 1 疊加態)",
+      "cefr": "B1",
+      "topic": "量子位元",
+      "examples": [
+        {
+          "en": "A single superconducting qubit can hold a vast superposition of informational states.",
+          "zh": "一顆單獨的超導量子位元，能同時乘載極其龐大的資訊疊加態。"
+        },
+        {
+          "en": "Increasing physical qubit counts while reducing error rates is the holy grail of modern physics.",
+          "zh": "在大幅增加物理量子位元數量的同時全面壓低門檻錯誤率，是當代凝聚態物理學的終極聖杯。"
+        },
+        {
+          "en": "Microwave pulses calibrate the rotation angle of each individual qubit with sub-nanosecond precision.",
+          "zh": "精準微波脈衝以次奈米秒級的精確度，細緻調控校準每顆獨立量子位元的旋轉布洛赫球面角度。"
+        }
+      ],
+      "collocations": [
+        "superconducting quantum qubit"
+      ]
+    },
+    {
+      "id": 6005,
+      "word": "superposition",
+      "pos": "n. [U]",
+      "phonetic": "[͵supɚpəˋzɪʃən]",
+      "definition": "量子疊加態 (同時探索指數級可能)",
+      "cefr": "B1",
+      "topic": "核心原理",
+      "examples": [
+        {
+          "en": "Quantum superposition allows a processor to calculate billions of mathematical possibilities in parallel.",
+          "zh": "量子疊加態賦予處理器強大的平行運算力，能在一瞬間同時評估數十億種數學解。"
+        },
+        {
+          "en": "The cat thought experiment humorously illustrates the philosophical paradox of quantum superposition.",
+          "zh": "薛丁格的貓經典思維實驗，詼諧生動地揭示了量子疊加態在宏觀視角下令人費解的哲學悖論。"
+        },
+        {
+          "en": "Measuring the system collapses fragile superposition into a definitive binary outcome.",
+          "zh": "外部探測儀器的物理觀測動作，會瞬間導致脆弱的量子疊加態坍縮為單一確定的古典二進位結果。"
+        }
+      ],
+      "collocations": [
+        "coherent quantum superposition"
+      ]
+    },
+    {
+      "id": 6006,
+      "word": "entanglement",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋtæŋg!mənt]",
+      "definition": "量子糾纏 (愛因斯坦稱鬼魅般超距作用)",
+      "cefr": "B1",
+      "topic": "量子特性",
+      "examples": [
+        {
+          "en": "Quantum entanglement links two distant particles so that measuring one instantly dictates the state of the other.",
+          "zh": "量子糾纏將相隔兩地的粒子緊密連結，測量其中一顆會瞬間決定另一顆的狀態。"
+        },
+        {
+          "en": "Einstein famously dismissed quantum entanglement as spooky action at a distance, yet it is experimentally verified.",
+          "zh": "愛因斯坦曾著名地將量子糾纏譏諷為「鬼魅般的超距作用」，然而當代無數實驗已徹底證實其真實不虛。"
+        },
+        {
+          "en": "Entanglement forms the primary resource that gives quantum computers their exponential computational power.",
+          "zh": "強大的量子糾纏態構成了現代量子電腦能夠展現指數級驚人平行運算威力的最根本物理資源。"
+        }
+      ],
+      "collocations": [
+        "spooky quantum entanglement"
+      ]
+    },
+    {
+      "id": 6007,
+      "word": "interference",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪntɚˋfɪrəns]",
+      "definition": "相長與相消量子干涉演算法；干涉",
+      "cefr": "B1",
+      "topic": "演算法原理",
+      "examples": [
+        {
+          "en": "Algorithms utilize constructive quantum interference to amplify correct answers while canceling wrong paths.",
+          "zh": "量子演算法巧妙利用相長量子干涉強化正確答案機率，同時相消抵消錯誤路徑。"
+        },
+        {
+          "en": "Destructive interference suppresses erroneous computation states, driving error probabilities toward zero.",
+          "zh": "相消干涉機制能精準壓制所有錯誤運算路徑的振幅機率，使其在最終測量時自動衰減歸零。"
+        },
+        {
+          "en": "Controlling wave-phase interference inside the processor is how quantum algorithms isolate optimal solutions.",
+          "zh": "精準調控量子晶片內部的波函數相位干涉，正是量子演算法能從天文數字組合中篩選出最佳解的魔法。"
+        }
+      ],
+      "collocations": [
+        "constructive quantum interference"
+      ]
+    },
+    {
+      "id": 6008,
+      "word": "decoherence",
+      "pos": "n. [U]",
+      "phonetic": "[di͵kohɪrəns]",
+      "definition": "環境微熱雜訊引發之量子退相干現象",
+      "cefr": "B1",
+      "topic": "量子雜訊",
+      "examples": [
+        {
+          "en": "Thermal vibrations and electromagnetic noise trigger rapid decoherence, destroying fragile quantum states.",
+          "zh": "外界的微小熱震動與電磁雜訊會引發致命的量子退相干，摧毀嬌貴脆弱的量子態。"
+        },
+        {
+          "en": "Shielding the processor from external radiation slows down environmental decoherence significantly.",
+          "zh": "為處理器建立嚴密的多層電磁與熱輻射屏蔽，能顯著延緩環境雜訊誘發的量子退相干崩潰。"
+        },
+        {
+          "en": "Once decoherence occurs, the system behaves just like an ordinary, error-prone classical processor.",
+          "zh": "一旦發生量子退相干，原本強大無比的量子系統將立即退化為一般的傳統二進位處理器。"
+        }
+      ],
+      "collocations": [
+        "environmental noise decoherence"
+      ]
+    },
+    {
+      "id": 6009,
+      "word": "coherence",
+      "pos": "n. [U]",
+      "phonetic": "[koˋhɪrəns]",
+      "definition": "維持疊加態不崩潰之量子相干時間",
+      "cefr": "B1",
+      "topic": "晶片指標",
+      "examples": [
+        {
+          "en": "Extending qubit coherence time to several milliseconds is critical for running complex molecular algorithms.",
+          "zh": "將量子位元的相干時間延長至數毫秒，是順利執行複雜分子模擬演算法的關鍵。"
+        },
+        {
+          "en": "Materials engineering breakthroughs have dramatically improved phase coherence in silicon spin chips.",
+          "zh": "先進半導體材料工程的重大進展，大幅提升了矽自旋量子位元晶片的相位相干存活時間。"
+        },
+        {
+          "en": "The algorithm must complete all logical gate operations before the chip loses quantum coherence.",
+          "zh": "整套量子演算法的所有邏輯閘操作，必須趕在晶片喪失量子相干性之前分秒必爭全數執行完畢。"
+        }
+      ],
+      "collocations": [
+        "qubit coherence time"
+      ]
+    },
+    {
+      "id": 6010,
+      "word": "cryostat",
+      "pos": "n.",
+      "phonetic": "[ˋkraɪo͵stæt]",
+      "definition": "稀釋冷凍機低溫恆溫器 (接近絕對零度)",
+      "cefr": "B1",
+      "topic": "極低溫設備",
+      "examples": [
+        {
+          "en": "The golden chandelier cryostat suspends the quantum chip inside multiple vacuum insulation shields.",
+          "zh": "宛如黃金水晶吊燈般的極低溫稀釋冷凍機，將量子晶片懸掛於多層真空隔熱屏蔽核心。"
+        },
+        {
+          "en": "Helium isotopes circulate within the cryostat to pump away tiny residual amounts of thermal energy.",
+          "zh": "稀有的氦三與氦四同位素混合液在低溫恆溫器中循環流動，抽離走每一絲微小的殘留熱能。"
+        },
+        {
+          "en": "Technicians monitor vacuum pressure seals inside the cryostat continuously during cool-down cycles.",
+          "zh": "在長達數天的降溫冷卻循環中，低溫工程師全天候緊盯稀釋冷凍機內部的多層真空密封讀數。"
+        }
+      ],
+      "collocations": [
+        "dilution refrigerator cryostat"
+      ]
+    },
+    {
+      "id": 6011,
+      "word": "Kelvin",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɛlvɪn]",
+      "definition": "絕對溫標克耳文 (工作溫度 15 毫克耳文)",
+      "cefr": "B1",
+      "topic": "溫度單位",
+      "examples": [
+        {
+          "en": "Superconducting qubits operate at fifteen milli-Kelvin, colder than the deepest depths of outer space.",
+          "zh": "超導量子晶片必須在零下 273.13 度的十五毫克耳文極低溫下運行，比外太空深處還要冰冷。"
+        },
+        {
+          "en": "Absolute zero corresponds to zero Kelvin, the theoretical temperature where all molecular motion ceases.",
+          "zh": "絕對零度在物理上對應於零克耳文，標誌著一切分子原子熱運動徹底停滯的理論物理極限。"
+        },
+        {
+          "en": "Advanced dilution refrigerators cool the innermost gold stage down to twenty milli-Kelvin.",
+          "zh": "先進的稀釋冷凍設備能將最底層的純金量子樣品載台，平穩冷卻降溫至二十毫克耳文的極限低溫。"
+        }
+      ],
+      "collocations": [
+        "fifteen milli-Kelvin (mK)"
+      ]
+    },
+    {
+      "id": 6012,
+      "word": "superconducting",
+      "pos": "adj.",
+      "phonetic": "[͵supɚkənˋdʌktɪŋ]",
+      "definition": "鈮鈦金屬零電阻超導約瑟夫森接面的",
+      "cefr": "B1",
+      "topic": "超導體系",
+      "examples": [
+        {
+          "en": "Superconducting circuits allow pairs of electrons to glide without electrical resistance or heat loss.",
+          "zh": "超導電路讓成對電子在零電阻狀態下無損流動，形成人造超導量子位元。"
+        },
+        {
+          "en": "Lithography tools etch microscopic superconducting resonators directly onto purified silicon wafers.",
+          "zh": "半導體微影設備將微米級的超導諧振腔電路，直接蝕刻雕塑在超高純度的矽晶圓基板上。"
+        },
+        {
+          "en": "Leading technology firms favor superconducting architectures because they leverage existing semiconductor fabrication techniques.",
+          "zh": "國際科技巨擘之所以高度青睞超導量子架構，全因其能直接借重現有成熟的高階晶圓代工技術。"
+        }
+      ],
+      "collocations": [
+        "superconducting quantum circuit"
+      ]
+    },
+    {
+      "id": 6013,
+      "word": "junction",
+      "pos": "n.",
+      "phonetic": "[ˋdʒʌŋkʃən]",
+      "definition": "約瑟夫森接面 (超導量子晶片核心)；接合點",
+      "cefr": "B1",
+      "topic": "核心組件",
+      "examples": [
+        {
+          "en": "An ultra-thin aluminum oxide insulator forms the non-linear Josephson junction at the heart of each transmon.",
+          "zh": "夾在超導體中間的奈米級氧化鋁絕緣薄膜，構成了超導晶片最核心的約瑟夫森接面。"
+        },
+        {
+          "en": "Quantum tunneling of Cooper pairs across the Josephson junction generates non-linear inductance.",
+          "zh": "庫柏電子對穿越約瑟夫森接面發生的量子穿隧效應，在電路中產生了無價的非線性電感特性。"
+        },
+        {
+          "en": "Precision electron-beam lithography guarantees uniform junction thickness across the entire chip.",
+          "zh": "高精度電子束微影技術，確保了整片晶圓上數千顆約瑟夫森接面絕緣層厚度達到原子級的一致性。"
+        }
+      ],
+      "collocations": [
+        "non-linear Josephson junction"
+      ]
+    },
+    {
+      "id": 6014,
+      "word": "ion",
+      "pos": "n.",
+      "phonetic": "[ˋaɪən]",
+      "definition": "離子阱真空雷射冷卻量子處理器；離子",
+      "cefr": "B1",
+      "topic": "離子阱體系",
+      "examples": [
+        {
+          "en": "Trapped-ion quantum computers manipulate individual charged ytterbium ions suspended in high vacuum.",
+          "zh": "離子阱量子電腦，利用高真空電磁場懸浮單顆帶電鐿離子並以雷射精準操控。"
+        },
+        {
+          "en": "Lasers cool each trapped ion until its kinetic vibration is nearly eliminated.",
+          "zh": "多道高頻雷射束對被捕獲的單顆離子進行多普勒冷卻，將其動能熱震動近乎完全消除。"
+        },
+        {
+          "en": "Trapped-ion systems boast exceptionally long coherence times and superior gate fidelities.",
+          "zh": "離子阱量子運算體系以其超凡長效的量子相干時間，以及頂尖的邏輯閘保真度在學界傲視群倫。"
+        }
+      ],
+      "collocations": [
+        "trapped-ion quantum processor"
+      ]
+    },
+    {
+      "id": 6015,
+      "word": "photonic",
+      "pos": "adj.",
+      "phonetic": "[foˋtɑnɪk]",
+      "definition": "矽光子光量子位元晶片 (室溫運算) 的",
+      "cefr": "B1",
+      "topic": "光子體系",
+      "examples": [
+        {
+          "en": "Photonic quantum processors route single laser photons through silicon waveguides at room temperature.",
+          "zh": "矽光子量子處理器，在常溫下引導單顆雷射光子在矽光波導中進行高速運算。"
+        },
+        {
+          "en": "Utilizing light particles allows photonic systems to bypass bulky, expensive liquid-helium cryostats.",
+          "zh": "善用光子不易與環境交互作用的物理特性，讓光量子系統得以完全擺脫昂貴笨重的低溫冷凍機。"
+        },
+        {
+          "en": "Integrated photonic circuits achieve entanglement using on-chip beam splitters and phase shifters.",
+          "zh": "整合式矽光子晶片利用晶圓內建的分光鏡與相位調變器，輕鬆實現光子之間的量子糾纏操作。"
+        }
+      ],
+      "collocations": [
+        "silicon photonic qubit"
+      ]
+    },
+    {
+      "id": 6016,
+      "word": "neutral",
+      "pos": "adj.",
+      "phonetic": "[ˋnjutrəl]",
+      "definition": "中性原子光鑷雷射陣列量子運算的；中性的",
+      "cefr": "B1",
+      "topic": "中性原子",
+      "examples": [
+        {
+          "en": "Optical tweezers use focused lasers to arrange hundreds of individual neutral atoms into 3D lattices.",
+          "zh": "聚焦雷射光鑷將數百顆中性原子精確排列成立體陣列，展現極高擴展潛力。"
+        },
+        {
+          "en": "Pumping neutral rubidium atoms into Rydberg states triggers strong dipole interactions for gate logic.",
+          "zh": "將中性銣原子激發至高能量的里德伯態，能激發出強烈的偶極相互作用以執行雙位元邏輯運算。"
+        },
+        {
+          "en": "Neutral atom architectures scale rapidly because thousands of identical atoms can be held simultaneously.",
+          "zh": "中性原子運算架構具備極為驚人的擴展潛力，因為同一光場中能同時穩定懸浮操控數千顆完全相同的原子。"
+        }
+      ],
+      "collocations": [
+        "neutral atom quantum computing"
+      ]
+    },
+    {
+      "id": 6017,
+      "word": "processor",
+      "pos": "n.",
+      "phonetic": "[ˋprɑsɛsɚ]",
+      "definition": "量子處理器晶片 (QPU)；處理器",
+      "cefr": "B1",
+      "topic": "量子晶片",
+      "examples": [
+        {
+          "en": "The 1,000-qubit quantum processor executed a complex optimization problem in two hundred seconds.",
+          "zh": "這顆搭載上千量子位元的量子處理器，在兩百秒內解開了極端複雜的最佳化問題。"
+        },
+        {
+          "en": "Packaging the quantum processor requires non-magnetic materials to prevent interfering with delicate signals.",
+          "zh": "量子處理器晶片的封裝製程必須百分之百嚴選非磁性金屬與封裝材料，以防微弱射頻信號失真。"
+        },
+        {
+          "en": "Benchmarking confirms this processor achieves lower gate crosstalk than its predecessor.",
+          "zh": "嚴謹的效能基準評測確認，這款新世代量子晶片相較於前代大幅壓低了相鄰位元間的串擾雜訊。"
+        }
+      ],
+      "collocations": [
+        "quantum processing unit (QPU)"
+      ]
+    },
+    {
+      "id": 6018,
+      "word": "gate",
+      "pos": "n.",
+      "phonetic": "[get]",
+      "definition": "雙量子位元受控反相量子邏輯閘；大門",
+      "cefr": "B1",
+      "topic": "邏輯運算",
+      "examples": [
+        {
+          "en": "Executing a two-qubit CNOT gate creates maximum entanglement between neighboring superconducting loops.",
+          "zh": "執行一個雙量子位元受控反相量子邏輯閘，能在相鄰的超導電路間建立最強糾纏態。"
+        },
+        {
+          "en": "Applying a single-qubit Hadamard gate puts an initialized zero qubit into an equal superposition.",
+          "zh": "施加一個單量子位元阿達馬（Hadamard）邏輯閘，能將初始為 0 的純態位元瞬間轉化為完美等權重的疊加態。"
+        },
+        {
+          "en": "Minimizing gate execution duration prevents ambient thermal noise from corrupting delicate computations.",
+          "zh": "極致壓縮每個量子邏輯閘的執行秒數，能在周圍環境熱雜訊侵入前火速完成脆弱的量子運算。"
+        }
+      ],
+      "collocations": [
+        "two-qubit quantum logic gate"
+      ]
+    },
+    {
+      "id": 6019,
+      "word": "circuit",
+      "pos": "n.",
+      "phonetic": "[ˋsɝkɪt]",
+      "definition": "深度量子演算法執行邏輯電路；電路",
+      "cefr": "B1",
+      "topic": "電路架構",
+      "examples": [
+        {
+          "en": "Designing shallow quantum circuits minimizes runtime before thermal noise degrades the calculation.",
+          "zh": "設計淺層量子邏輯電路，能在熱雜訊破壞運算前以最高速度完成演算法。"
+        },
+        {
+          "en": "Compiling the quantum circuit reorders operations to respect the physical topology of the chip.",
+          "zh": "將高階量子電路編譯轉譯時，軟體會智慧重新排列閘順序以嚴格契合實體晶片的底層物理拓撲。"
+        },
+        {
+          "en": "The circuit depth measures how many sequential gate steps must be performed from start to finish.",
+          "zh": "量子電路深度（Circuit Depth）是衡量演算法從頭到尾必須循序執行多少道邏輯閘步驟的核心指標。"
+        }
+      ],
+      "collocations": [
+        "programmable quantum circuit"
+      ]
+    },
+    {
+      "id": 6020,
+      "word": "fidelity",
+      "pos": "n. [U]",
+      "phonetic": "[fəˋdɛlətɪ]",
+      "definition": "99.9% 高保真度量子邏輯閘操作精準度",
+      "cefr": "B1",
+      "topic": "精度指標",
+      "examples": [
+        {
+          "en": "Achieving 99.9% two-qubit gate fidelity is the critical threshold for implementing scalable fault tolerance.",
+          "zh": "雙量子位元邏輯閘操作達到 99.9% 的超高保真度精準度，是實現可規模化容錯的關鍵門檻。"
+        },
+        {
+          "en": "Random benchmarking measures average gate fidelity across dozens of randomly applied microwave pulses.",
+          "zh": "隨機基準評測技術透過隨機施加數十組微波脈衝序列，客觀量化晶片全陣列的平均邏輯閘保真度。"
+        },
+        {
+          "en": "High readout fidelity ensures that measuring the qubit accurately reflects its true quantum state.",
+          "zh": "超高的讀出保真度，能確保在終端感測測量量子位元時，能百分之百精準還原其真實量子狀態。"
+        }
+      ],
+      "collocations": [
+        "high quantum gate fidelity"
+      ]
+    },
+    {
+      "id": 6021,
+      "word": "error",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɛrɚ]",
+      "definition": "量子容錯糾錯編碼技術 (QEC)；錯誤",
+      "cefr": "B1",
+      "topic": "量子糾錯",
+      "examples": [
+        {
+          "en": "Quantum error correction encodes fragile information across multiple physical qubits to detect phase flips.",
+          "zh": "量子糾錯技術，將資訊分散編碼至多顆物理位元中以即時揪出相位翻轉錯誤。"
+        },
+        {
+          "en": "Without continuous error suppression, quantum calculations quickly degenerate into meaningless noise.",
+          "zh": "若缺乏全天候持續運轉的主動量子糾錯機制，精密的量子運算將在瞬間退化為毫無意義的雜訊。"
+        },
+        {
+          "en": "Syndrome measurement circuits detect bit-flip errors without directly measuring the protected data qubit.",
+          "zh": "伴隨測量校驗電路能在完全不直接觀測受保護資料位元的前提下，神不知鬼不覺揪出位元翻轉錯誤。"
+        }
+      ],
+      "collocations": [
+        "quantum error correction (QEC)"
+      ]
+    },
+    {
+      "id": 6022,
+      "word": "surface",
+      "pos": "n., adj.",
+      "phonetic": "[ˋsɝfɪs]",
+      "definition": "表面碼拓撲量子糾錯晶格；表面",
+      "cefr": "B1",
+      "topic": "糾錯架構",
+      "examples": [
+        {
+          "en": "The two-dimensional surface code lattice detects data errors continuously using syndrome measurement qubits.",
+          "zh": "二維表面碼晶格，利用輔助校驗位元二十四小時持續偵測並修正資料位元的微小漂移。"
+        },
+        {
+          "en": "Theoretical physicists favor the surface code because of its remarkably high fault-tolerance threshold.",
+          "zh": "理論物理學界普遍推崇二維拓撲表面碼架構，因其具備當前所有糾錯碼中容許度最高的容錯門檻。"
+        },
+        {
+          "en": "Implementing the planar surface code requires a square grid of alternating data and measurement qubits.",
+          "zh": "在晶片上落實平面表面碼糾錯，需要將資料量子位元與測量校驗位元以黑白棋盤般交錯緊密排列。"
+        }
+      ],
+      "collocations": [
+        "2D topological surface code"
+      ]
+    },
+    {
+      "id": 6023,
+      "word": "logical",
+      "pos": "adj.",
+      "phonetic": "[ˋlɑdʒɪk!]",
+      "definition": "容錯邏輯量子位元 (由千顆物理位元構成) 的",
+      "cefr": "B1",
+      "topic": "邏輯位元",
+      "examples": [
+        {
+          "en": "A single fault-tolerant logical qubit requires thousands of underlying physical qubits working in unison.",
+          "zh": "一顆永不犯錯的容錯邏輯量子位元，底層需要上千顆物理量子位元協同糾錯運作。"
+        },
+        {
+          "en": "Calculations performed on stable logical qubits exhibit error rates millions of times lower than raw hardware.",
+          "zh": "在穩定容錯的邏輯量子位元上執行深度運算，其錯誤率比直接在未糾錯實體裸硬體上低上數百萬倍。"
+        },
+        {
+          "en": "Commercial quantum supremacy will arrive once chips support dozens of interconnected logical qubits.",
+          "zh": "真正的商業實用量子霸權時代，將在單一量子晶片能同時穩定支持數十顆相互互聯的邏輯位元時降臨。"
+        }
+      ],
+      "collocations": [
+        "fault-tolerant logical qubit"
+      ]
+    },
+    {
+      "id": 6024,
+      "word": "fault-tolerant",
+      "pos": "adj.",
+      "phonetic": "[fɔlt ˋtɑlərənt]",
+      "definition": "百萬位元大規模完全容錯通用量子電腦的",
+      "cefr": "B1",
+      "topic": "終極目標",
+      "examples": [
+        {
+          "en": "Building a million-qubit fault-tolerant quantum computer will unlock commercial drug design breakthroughs.",
+          "zh": "打造出擁有百萬位元的大型完全容錯量子電腦，將能解鎖革命性新藥分子合成設計。"
+        },
+        {
+          "en": "Only a truly fault-tolerant machine can run deep algorithms with millions of sequential logic gates.",
+          "zh": "唯有一台具備真正完全容錯架構的通用量子電腦，才能從容執行包含數百萬道連續邏輯閘的深層演算法。"
+        },
+        {
+          "en": "Global tech giants race toward the fault-tolerant milestone by stacking modular cryo-chip packages.",
+          "zh": "跨國科技先驅正透過立體堆疊低溫模組化量子晶片，全力朝向商業級完全容錯里程碑發起最後衝刺。"
+        }
+      ],
+      "collocations": [
+        "fault-tolerant quantum computer"
+      ]
+    },
+    {
+      "id": 6025,
+      "word": "noisy",
+      "pos": "adj.",
+      "phonetic": "[ˋnɔɪzɪ]",
+      "definition": "當前含雜訊中等規模量子時代 (NISQ) 的",
+      "cefr": "B1",
+      "topic": "發展現狀",
+      "examples": [
+        {
+          "en": "In today’s noisy intermediate-scale quantum (NISQ) era, hybrid quantum-classical algorithms mitigate hardware limits.",
+          "zh": "在當前含雜訊中等規模量子時代，科學家運用量子與傳統混合演算法來克服硬體限制。"
+        },
+        {
+          "en": "Researchers in the NISQ era focus on heuristic algorithms that tolerate small physical error rates.",
+          "zh": "處於中等規模含雜訊時代的科學家，全力深耕能從容容忍微小實體錯誤率的啟發式混合演算法。"
+        },
+        {
+          "en": "Hardware developers work relentlessly to transition from the noisy era into the fault-tolerant era.",
+          "zh": "全球頂尖硬體研發團隊日以繼夜全力以赴，力求早日跨越雜訊桎梏、昂首邁入完全容錯的黃金新紀元。"
+        }
+      ],
+      "collocations": [
+        "noisy intermediate-scale quantum"
+      ]
+    },
+    {
+      "id": 6026,
+      "word": "supremacy",
+      "pos": "n. [U]",
+      "phonetic": "[səˋprɛməsɪ]",
+      "definition": "量子霸權 (超越全球最強傳統超級電腦)",
+      "cefr": "B1",
+      "topic": "算力超越",
+      "examples": [
+        {
+          "en": "Demonstrating quantum computational supremacy proved that quantum devices can perform tasks impossible for supercomputers.",
+          "zh": "成功驗證量子運算霸權，證明量子電腦能在數分鐘內完成頂級超級電腦萬年無法算完的工作。"
+        },
+        {
+          "en": "Critics questioned whether initial demonstrations of quantum supremacy solved problems of practical industrial value.",
+          "zh": "部分產業界專家曾提出質疑，早期展示的量子霸權基準測試是否具備實質的商業與工業應用價值。"
+        },
+        {
+          "en": "Achieving computational supremacy marks the historical inflection point where quantum theory transforms into computational reality.",
+          "zh": "斬獲量子運算霸權的關鍵里程碑，標誌著量子物理理論正式跨越為具體運算實力的歷史性重大拐點。"
+        }
+      ],
+      "collocations": [
+        "quantum computational supremacy"
+      ]
+    },
+    {
+      "id": 6027,
+      "word": "advantage",
+      "pos": "n. [U]",
+      "phonetic": "[ədˋvæntɪdʒ]",
+      "definition": "實用商業量子算力優勢 (化學材料開發)",
+      "cefr": "B1",
+      "topic": "商業優勢",
+      "examples": [
+        {
+          "en": "Researchers chase practical quantum advantage by simulating industrial battery electrolytes accurately.",
+          "zh": "頂尖研究團隊全力追尋實用商業量子優勢，精準模擬下一代固態鋰電池電解液。"
+        },
+        {
+          "en": "Demonstrating quantum advantage requires solving a economically significant challenge faster and cheaper.",
+          "zh": "驗證實用量子優勢的先決條件，在於必須比傳統超級電腦更快、更廉價地解決具備龐大經濟價值的難題。"
+        },
+        {
+          "en": "Automotive giants partner with quantum startups to discover lightweight structural composites with quantum advantage.",
+          "zh": "全球汽車製造巨擘紛紛攜手前沿量子新創公司，企圖藉由量子優勢算力開發超輕量航太複合材料。"
+        }
+      ],
+      "collocations": [
+        "practical quantum advantage"
+      ]
+    },
+    {
+      "id": 6028,
+      "word": "factoring",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfæktərɪŋ]",
+      "definition": "秀爾演算法 (可在多項式時間因數分解)",
+      "cefr": "B1",
+      "topic": "破密演算法",
+      "examples": [
+        {
+          "en": "Shor’s algorithm can execute large integer factoring in polynomial time, posing a threat to legacy RSA encryption.",
+          "zh": "秀爾質因數分解演算法，能在多項式時間內破解目前保護全球金融的傳統 RSA 密碼。"
+        },
+        {
+          "en": "Prime number factoring forms the mathematical foundation securing modern online banking transactions.",
+          "zh": "龐大質數質因數分解在數學上的極致困難性，構成了當代全球網銀交易安全加密體系的數學基石。"
+        },
+        {
+          "en": "Running large-scale integer factoring algorithms will require thousands of stable logical qubits.",
+          "zh": "想要真正運算足以瓦解二零四八位元公鑰的質因數分解演算法，需要數千顆高度穩定的容錯邏輯位元。"
+        }
+      ],
+      "collocations": [
+        "Shor's integer factoring"
+      ]
+    },
+    {
+      "id": 6029,
+      "word": "search",
+      "pos": "n. [U], v.",
+      "phonetic": "[sɝtʃ]",
+      "definition": "格羅弗演算法 (平方根級非結構化資料庫搜尋)",
+      "cefr": "B1",
+      "topic": "搜尋加速",
+      "examples": [
+        {
+          "en": "Grover’s search algorithm accelerates unstructured database queries with a quadratic mathematical speedup.",
+          "zh": "格羅弗搜尋演算法，為龐大無序的非結構化資料庫檢索帶來平方根級的驚人數學加速。"
+        },
+        {
+          "en": "Searching through an unsorted phonebook of N entries takes only the square root of N quantum iterations.",
+          "zh": "在一本包含 N 筆隨機雜亂資料的電話簿中搜尋特定號碼，格羅弗演算法僅需開根號 N 次的量子迭代。"
+        },
+        {
+          "en": "Cryptanalysts evaluate Grover’s search when determining symmetric key lengths like AES-256.",
+          "zh": "現代密碼分析學家在評估 AES-256 對稱加密金鑰強度時，皆會將格羅弗搜尋演算法的威脅納入考量。"
+        }
+      ],
+      "collocations": [
+        "Grover's quantum search"
+      ]
+    },
+    {
+      "id": 6030,
+      "word": "eigensolver",
+      "pos": "n.",
+      "phonetic": "[ˋaɪgən͵sɑlvɚ]",
+      "definition": "變分量子特徵求解器 (VQE 模擬分子鍵)",
+      "cefr": "B1",
+      "topic": "化學演算法",
+      "examples": [
+        {
+          "en": "The Variational Quantum Eigensolver (VQE) algorithm calculates ground-state electron energies in complex molecules.",
+          "zh": "變分量子特徵求解器，能在現有量子晶片上精準計算複雜分子的基態電子能量分佈。"
+        },
+        {
+          "en": "Chemists use VQE to model the nitrogenase enzyme mechanism for energy-efficient fertilizer production.",
+          "zh": "計算化學家運用 VQE 演算法精確模擬固氮酶的催化催化機制，以開發常溫低能耗肥料生產工藝。"
+        },
+        {
+          "en": "The hybrid nature of the eigensolver delegates parameter optimization to a classical gradient descent optimizer.",
+          "zh": "變分特徵求解器的混合運算特性，巧妙將參數最佳化迴圈委託給傳統電腦的梯度下降演算法處理。"
+        }
+      ],
+      "collocations": [
+        "variational quantum eigensolver"
+      ]
+    },
+    {
+      "id": 6031,
+      "word": "simulation",
+      "pos": "n. [U]",
+      "phonetic": "[͵sɪmjəˋleʃən]",
+      "definition": "量子分子化學精準模擬 (合成高效催化劑)",
+      "cefr": "B1",
+      "topic": "分子模擬",
+      "examples": [
+        {
+          "en": "Accurate quantum molecular chemistry simulation will accelerate the discovery of carbon-capture room catalysts.",
+          "zh": "高精準度的量子分子化學模擬，將大幅加速常溫碳捕捉高效催化劑的重大科學發現。"
+        },
+        {
+          "en": "Simulating quantum systems using classical supercomputers suffers from an exponential memory wall.",
+          "zh": "使用傳統超級電腦模擬微觀量子多體系統時，會遭遇記憶體隨粒子數呈指數級爆炸的物理內存牆。"
+        },
+        {
+          "en": "Feynman famously proposed that simulating nature requires building computational machines that are quantum.",
+          "zh": "物理學大師費曼曾發表名言：想要真實模擬大自然，你就必須打造真正依循量子力學運作的機器。"
+        }
+      ],
+      "collocations": [
+        "molecular chemistry simulation"
+      ]
+    },
+    {
+      "id": 6032,
+      "word": "optimization",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɑptəməˋzeʃən]",
+      "definition": "跨國金融投資組合與晶片佈局組合最佳化",
+      "cefr": "B1",
+      "topic": "最佳化難題",
+      "examples": [
+        {
+          "en": "Quantum optimization algorithms find the most cost-effective global air shipping routes in milliseconds.",
+          "zh": "量子最佳化演算法，能在數毫秒內在天文數字般的排列組合中找出最低成本的全球航線。"
+        },
+        {
+          "en": "Investment banks explore quantum portfolio optimization to maximize risk-adjusted yields on trading desks.",
+          "zh": "跨國投資銀行在交易室積極測試量子資產配置最佳化模型，以在巨額資產配置中極大化風險調整收益。"
+        },
+        {
+          "en": "Solving complex combinatorial optimization problems saves millions in manufacturing supply chain routing.",
+          "zh": "攻克極端複雜的組合最佳化難題，能為半導體製造與跨國供應鏈調度省下數以千萬計的巨額成本。"
+        }
+      ],
+      "collocations": [
+        "combinatorial route optimization"
+      ]
+    },
+    {
+      "id": 6033,
+      "word": "logistics",
+      "pos": "n. [pl.]",
+      "phonetic": "[loˋdʒɪstɪks]",
+      "definition": "全球貨輪排程與半導體繞線量子物流最佳化",
+      "cefr": "B1",
+      "topic": "運籌應用",
+      "examples": [
+        {
+          "en": "Multinational shipping carriers test quantum algorithms to solve complex fleet routing and freight logistics.",
+          "zh": "跨國海運集團正著手測試量子運算，以解決數萬艘貨輪與港口複雜的全球調度物流難題。"
+        },
+        {
+          "en": "Solving traveling salesperson problems through quantum logistics minimizes delivery fuel consumption.",
+          "zh": "藉由量子物流運籌演算法精確求解「旅行推銷員問題」，能將大型貨運車隊的燃油耗損降至最低。"
+        },
+        {
+          "en": "Modern semiconductor physical layout and wire routing benefit from advanced quantum logistics math.",
+          "zh": "現代先進半導體晶片內部的數百億電晶體實體佈局與自動繞線，高度受惠於前沿量子物流數學模型。"
+        }
+      ],
+      "collocations": [
+        "quantum freight logistics"
+      ]
+    },
+    {
+      "id": 6034,
+      "word": "cryptography",
+      "pos": "n. [U]",
+      "phonetic": "[krɪpˋtɑgrəfɪ]",
+      "definition": "後量子密碼學 (PQC 抗量子電腦破解)",
+      "cefr": "B1",
+      "topic": "資安防禦",
+      "examples": [
+        {
+          "en": "Upgrading banking infrastructure with post-quantum cryptography (PQC) protects secret financial data from future attacks.",
+          "zh": "全面升級銀行後量子密碼學防禦體系，保護機密金融資產免遭未來量子破解。"
+        },
+        {
+          "en": "Governments mandate transitions to post-quantum cryptography before the arrival of Cryptanalytically Relevant Quantum Computers.",
+          "zh": "國防與情報部門明令各機關，必須在具備解密能力的量子電腦降臨前完成後量子密碼學全面升級。"
+        },
+        {
+          "en": "Cryptography experts develop algorithms based on mathematical problems that resist quantum Shor factoring.",
+          "zh": "頂尖密碼學家日夜研發基於全新數學難題的演算法，使新密碼體系能從容抵禦秀爾演算法的暴力衝擊。"
+        }
+      ],
+      "collocations": [
+        "post-quantum cryptography (PQC)"
+      ]
+    },
+    {
+      "id": 6035,
+      "word": "lattice",
+      "pos": "n.",
+      "phonetic": "[ˋlætɪs]",
+      "definition": "晶格密碼學 (高維度幾何數學抗量子難題)",
+      "cefr": "B1",
+      "topic": "抗量子數學",
+      "examples": [
+        {
+          "en": "Lattice-based encryption relies on the hardness of discovering shortest vectors in multi-dimensional space.",
+          "zh": "基於高維度晶格幾何的密碼演算法，連未來的量子電腦在數學上也無法攻破其複雜難題。"
+        },
+        {
+          "en": "Mathematical structures inside an infinite multi-dimensional lattice form the bedrock of new PQC standards.",
+          "zh": "隱藏在無限多維空間晶格中的幾何數學結構，構成了全球新一代後量子密碼標準（PQC）的最強盾牌。"
+        },
+        {
+          "en": "Finding the closest vector in an unaligned high-dimensional lattice remains computationally intractable for quantum systems.",
+          "zh": "在傾斜扭曲的高維晶格中尋找最近向量，即便是對量子電腦而言在運算複雜度上依然不可逾越。"
+        }
+      ],
+      "collocations": [
+        "lattice-based cryptography"
+      ]
+    },
+    {
+      "id": 6036,
+      "word": "hardness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhɑrdnɪs]",
+      "definition": "演算法計算複雜度之數學不可破解性；硬度",
+      "cefr": "B1",
+      "topic": "密碼安全",
+      "examples": [
+        {
+          "en": "The mathematical hardness of lattice problems guarantees that encrypted emails remain secure for decades.",
+          "zh": "晶格數學問題那堅不可摧的計算複雜度難題，確保加密信件數十年內絕不被破解。"
+        },
+        {
+          "en": "Provable mathematical hardness ensures that brute-force decryption would exhaust all planetary energy reserves.",
+          "zh": "嚴謹可證明的數學運算複雜度，保證了任何企圖暴力破解密碼的運算都將耗盡整顆行星的全部能源。"
+        },
+        {
+          "en": "Modern cipher security is judged strictly on the computational hardness of underlying algebraic puzzles.",
+          "zh": "現代加密演算法的安全等級評定，完全嚴格取決於其底層抽象代數難題在運算上的不可破解性。"
+        }
+      ],
+      "collocations": [
+        "computational mathematical hardness"
+      ]
+    },
+    {
+      "id": 6037,
+      "word": "encryption",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋkrɪpʃən]",
+      "definition": "NIST 後量子加密標準 (ML-KEM / Kyber)",
+      "cefr": "B1",
+      "topic": "國際標準",
+      "examples": [
+        {
+          "en": "Tech giants are rolling out Kyber post-quantum encryption to secure web browsing sessions worldwide.",
+          "zh": "全球高科技巨頭正全面導入 Kyber 後量子加密標準，為全球數十億網民連線提供安全防護。"
+        },
+        {
+          "en": "Implementing forward secrecy encryption stops adversaries from hoarding encrypted traffic for future quantum decryption.",
+          "zh": "導入前向保密加密機制，能徹底粉碎敵對勢力企圖「先攔截封存、待未來量子電腦解密」的險惡圖謀。"
+        },
+        {
+          "en": "NIST officially standardized primary post-quantum encryption schemes to safeguard global communications.",
+          "zh": "美國國家標準暨技術研究院（NIST）正式公告後量子加密主要標準規範，全面保衛全球通訊安全。"
+        }
+      ],
+      "collocations": [
+        "post-quantum data encryption"
+      ]
+    },
+    {
+      "id": 6038,
+      "word": "signature",
+      "pos": "n.",
+      "phonetic": "[ˋsɪgnətʃɚ]",
+      "definition": "數位簽章抗量子身分認證標準 (ML-DSA)",
+      "cefr": "B1",
+      "topic": "數位簽章",
+      "examples": [
+        {
+          "en": "Digital signature algorithms like Dilithium authenticate official government identity passports against forgery.",
+          "zh": "採用 Dilithium 抗量子數位簽章標準，能百分之百防範各國數位護照與官方公文遭受偽造。"
+        },
+        {
+          "en": "Transitioning digital signature standards prevents quantum adversaries from forging legal corporate contracts.",
+          "zh": "全面平穩過渡至抗量子數位簽章標準，能有效防止未來惡意黑客偽造企業法律合約與跨國電匯指令。"
+        },
+        {
+          "en": "Cryptographic hardware security modules (HSMs) are being upgraded to sign transactions with quantum-safe signatures.",
+          "zh": "金融業硬體安全模組（HSM）全面進行韌體升級，以支援產出符合後量子安全規格的抗量子數位簽章。"
+        }
+      ],
+      "collocations": [
+        "post-quantum digital signature"
+      ]
+    },
+    {
+      "id": 6039,
+      "word": "distribution",
+      "pos": "n. [U]",
+      "phonetic": "[͵dɪstrəˋbjuʃən]",
+      "definition": "量子金鑰分發 (QKD 光子偏振安全傳輸)",
+      "cefr": "B1",
+      "topic": "密鑰分發",
+      "examples": [
+        {
+          "en": "Quantum key distribution (QKD) leverages single photons to exchange cryptographic keys across fiber optic lines.",
+          "zh": "量子金鑰分發，利用單顆光子偏振態在光纖中安全交換密碼金鑰。"
+        },
+        {
+          "en": "Satellites equipped with QKD transmitters beam entangled photon pairs to ground stations thousands of miles away.",
+          "zh": "搭載 QKD 量子發射終端的低軌通訊衛星，向數千公里外的地面基站精準發射糾纏光子對分發密鑰。"
+        },
+        {
+          "en": "Secure government facilities use dedicated optical fiber loops for high-rate quantum key distribution.",
+          "zh": "國防高度機密指揮中心鋪設了專屬的低損耗暗光纖專線環路，執行全天候高速量子金鑰分發。"
+        }
+      ],
+      "collocations": [
+        "quantum key distribution (QKD)"
+      ]
+    },
+    {
+      "id": 6040,
+      "word": "eavesdropping",
+      "pos": "n. [U]",
+      "phonetic": "[ˋivz͵drɑpɪŋ]",
+      "definition": "物理定律保證之攔截即被發現之零竊聽防護",
+      "cefr": "B1",
+      "topic": "防竊聽",
+      "examples": [
+        {
+          "en": "Quantum mechanics ensures that any unauthorized eavesdropping alters the photon, alerting the receiver instantly.",
+          "zh": "量子力學定律保證任何未經授權的中途竊聽都會立即改變光子狀態，讓接收端警鈴大作。"
+        },
+        {
+          "en": "The impossibility of undetectable eavesdropping makes quantum optical networks inherently tamper-proof.",
+          "zh": "物理定律在根本上排除了「神不知鬼不覺隱蔽竊聽」的可能，賦予了量子通訊網絡天生的防竊聽盾牌。"
+        },
+        {
+          "en": "Detectors measure quantum bit error rates; if eavesdropping is present, the key generation aborts immediately.",
+          "zh": "接收端偵測器即時監測量子位元錯誤率；只要有任何第三方竊聽介入，系統將在微秒內立即中止密鑰生成。"
+        }
+      ],
+      "collocations": [
+        "detect unauthorized eavesdropping"
+      ]
+    },
+    {
+      "id": 6041,
+      "word": "teleportation",
+      "pos": "n. [U]",
+      "phonetic": "[͵tɛləpɔrˋteʃən]",
+      "definition": "量子態隱形傳態 (光速傳輸量子資訊)",
+      "cefr": "B1",
+      "topic": "量子傳輸",
+      "examples": [
+        {
+          "en": "Quantum teleportation transmits unknown quantum states between nodes without moving physical matter.",
+          "zh": "量子態隱形傳態，能在不移動任何實體物質的情況下，跨越遙遠距離光速傳輸量子資訊。"
+        },
+        {
+          "en": "Groundbreaking laboratory experiments achieved quantum teleportation of multi-qubit photonic states over 100 km.",
+          "zh": "具有劃時代意義的前沿實驗室研究，成功在超過百公里的光纖鏈路上實現了多量子位元光子隱形傳態。"
+        },
+        {
+          "en": "Teleportation protocols rely on prior shared entanglement and a classical communication channel to reconstruct states.",
+          "zh": "隱形傳態協議仰賴通訊雙方預先建立的糾纏對與一條傳統通訊頻道，在遠端精確重建原始量子態。"
+        }
+      ],
+      "collocations": [
+        "quantum state teleportation"
+      ]
+    },
+    {
+      "id": 6042,
+      "word": "repeater",
+      "pos": "n.",
+      "phonetic": "[rɪˋpitɚ]",
+      "definition": "量子互聯網中繼器 (突破光纖傳輸距離)",
+      "cefr": "B1",
+      "topic": "網絡節點",
+      "examples": [
+        {
+          "en": "Developing memory-based quantum repeaters will allow entangled photons to travel thousands of kilometers.",
+          "zh": "研發搭載量子記憶體的量子中繼器，將能讓糾纏光子跨越數千公里建立跨國量子網絡。"
+        },
+        {
+          "en": "Classical optical amplifiers cannot be used because copying quantum information violates the no-cloning theorem.",
+          "zh": "傳統光纖放大器完全無法在量子網絡中使用，因為複製未知量子態直接違反了物理學不可克隆定理。"
+        },
+        {
+          "en": "Solid-state atomic memories serve as the core storage nodes inside prototype quantum repeaters.",
+          "zh": "固態稀土原子量子記憶體，在實驗室原型量子中繼器架構中扮演著最核心的量子資訊暫存節點。"
+        }
+      ],
+      "collocations": [
+        "optical quantum network repeater"
+      ]
+    },
+    {
+      "id": 6043,
+      "word": "internet",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɪntɚ͵nɛt]",
+      "definition": "全球超安全量子互聯網通訊網絡；網際網路",
+      "cefr": "B1",
+      "topic": "未來網絡",
+      "examples": [
+        {
+          "en": "The future quantum internet will interconnect distributed quantum computers into a unified planetary cloud.",
+          "zh": "未來的全球量子互聯網，將把分散在世界各地的量子電腦無縫串聯成行星級雲端算力。"
+        },
+        {
+          "en": "Quantum internet architectures will enable distributed quantum sensing networks of unprecedented sensitivity.",
+          "zh": "全球量子互聯網基礎設施，將催生出靈敏度前所未見的跨洲分散式量子大地與天文觀測感測網絡。"
+        },
+        {
+          "en": "Connecting quantum processors via an optical quantum internet unlocks collaborative multi-node computing.",
+          "zh": "透過光纖量子互聯網將分散各地的量子晶片即時互聯，能解鎖跨節點分散式量子協同運算的無限潛力。"
+        }
+      ],
+      "collocations": [
+        "secure global quantum internet"
+      ]
+    },
+    {
+      "id": 6044,
+      "word": "compilation",
+      "pos": "n. [U]",
+      "phonetic": "[͵kɑmpəˋleʃən]",
+      "definition": "量子編譯器邏輯閘優化轉換 (Qiskit 編譯)",
+      "cefr": "B1",
+      "topic": "軟體編譯",
+      "examples": [
+        {
+          "en": "Efficient quantum circuit compilation translates abstract mathematical algorithms into physical microwave pulses.",
+          "zh": "高效的量子電路編譯，能將抽象演算法精準轉譯為微波控制脈衝並最佳化邏輯閘層數。"
+        },
+        {
+          "en": "The compilation software automatically cancels redundant adjacent gates, cutting overall execution latency.",
+          "zh": "現代量子編譯軟體能自動識別並相互抵消多餘的相鄰逆邏輯閘，大幅縮短整體電路執行延遲。"
+        },
+        {
+          "en": "Multi-layer compilation takes quantum code from high-level Python down to nanosecond-accurate control waveforms.",
+          "zh": "多層次量子編譯管線將高階 Python 量子程式碼，層層向下轉譯為精準至奈秒等級的微波控制波形。"
+        }
+      ],
+      "collocations": [
+        "quantum circuit compilation"
+      ]
+    },
+    {
+      "id": 6045,
+      "word": "toolkit",
+      "pos": "n.",
+      "phonetic": "[ˋtul͵kɪt]",
+      "definition": "開源量子軟體開發工具套件 (如 Qiskit/Cirq)",
+      "cefr": "B1",
+      "topic": "開發工具",
+      "examples": [
+        {
+          "en": "Students use open-source quantum software development toolkits to program real quantum processors via cloud.",
+          "zh": "台灣各大學學生透過開源量子軟體開發工具套件，在雲端親手撰寫程式操控遠端量子晶片。"
+        },
+        {
+          "en": "The software toolkit provides rich libraries for simulating noise models and benchmarking circuit fidelities.",
+          "zh": "該套件提供了極其豐富的函式庫，專供工程師建立真實雜訊模型並精確評測電路保真度。"
+        },
+        {
+          "en": "Programmers master quantum computing frameworks by utilizing accessible, well-documented python toolkits.",
+          "zh": "初學工程師藉由文檔齊全、友善易懂的 Python 開源工具套件，迅速掌握前沿量子運算程式架構。"
+        }
+      ],
+      "collocations": [
+        "quantum software dev toolkit"
+      ]
+    },
+    {
+      "id": 6046,
+      "word": "scalability",
+      "pos": "n. [U]",
+      "phonetic": "[͵skeləˋbɪlətɪ]",
+      "definition": "晶圓級百萬量子位元晶片規模化擴展能力",
+      "cefr": "B1",
+      "topic": "擴展架構",
+      "examples": [
+        {
+          "en": "Silicon spin qubits leverage Taiwan’s world-class semiconductor fabs to achieve massive chip scalability.",
+          "zh": "矽自旋量子位元能直接借重台灣頂尖晶圓代工製程，展現實現百萬位元的卓越晶片規模擴展力。"
+        },
+        {
+          "en": "Solving the cryogenic wiring bottleneck is essential for demonstrating long-term hardware scalability.",
+          "zh": "徹底攻克低溫冷凍機內密集射頻排線的散熱瓶頸，是驗證量子硬體具備長期規模擴展力的關鍵前提。"
+        },
+        {
+          "en": "Monolithic wafer-scale integration provides unmatched scalability compared to assembling discrete qubit components.",
+          "zh": "與拼裝離散零件相比，單晶圓級先進封裝整合技術為量子晶片帶來了無可匹敵的大規模擴展優勢。"
+        }
+      ],
+      "collocations": [
+        "physical qubit chip scalability"
+      ]
+    },
+    {
+      "id": 6047,
+      "word": "breakthrough",
+      "pos": "n.",
+      "phonetic": "[ˋbrek͵θru]",
+      "definition": "顛覆人類文明之物理科學重大突破",
+      "cefr": "B1",
+      "topic": "科學里程碑",
+      "examples": [
+        {
+          "en": "Achieving room-temperature quantum coherence would represent a Nobel Prize-worthy scientific breakthrough.",
+          "zh": "一旦成功在常溫下實現長時間量子相干，將是足以斬獲諾貝爾獎、改寫人類文明的歷史性重大突破。"
+        },
+        {
+          "en": "The research consortium announced a technological breakthrough in suppressing phase noise inside silicon qubits.",
+          "zh": "跨國前沿聯合研究團隊正式對外宣布，在抑制矽自旋量子位元相位雜訊上取得了突破性科技進展。"
+        },
+        {
+          "en": "Every engineering breakthrough in cryogenic microelectronics brings commercial quantum computing a step closer.",
+          "zh": "極低溫微電子控制晶片的每一次工程重大突破，都讓通用型商業量子電腦的到來更向前邁進一大步。"
+        }
+      ],
+      "collocations": [
+        "revolutionary physics breakthrough"
+      ]
+    },
+    {
+      "id": 6048,
+      "word": "horizon",
+      "pos": "n.",
+      "phonetic": "[həˋraɪzn]",
+      "definition": "拓展人類終極運算能力之壯麗地平線；地平線",
+      "cefr": "B1",
+      "topic": "算力視野",
+      "examples": [
+        {
+          "en": "Quantum computing expands the scientific horizon, allowing researchers to explore fundamental atomic reality.",
+          "zh": "量子運算極大拓展了全人類的科學探索視野，引領我們深入探索微觀宇宙最深層的真實本質。"
+        },
+        {
+          "en": "Beyond the immediate horizon of noisy devices lies the promised era of fault-tolerant molecular simulation.",
+          "zh": "越過當前含雜訊硬體設備的眼前地平線，便是令人神往、具備完全容錯能力的分子精準模擬時代。"
+        },
+        {
+          "en": "Gazing toward the technological horizon, leaders recognize that quantum capability will define national power.",
+          "zh": "遠眺未來的科技地平線，各國戰略領袖深刻洞察到：頂尖量子運算實力將直接定義未來的國家綜合國力。"
+        }
+      ],
+      "collocations": [
+        "expanding scientific horizon"
+      ]
+    },
+    {
+      "id": 6049,
+      "word": "curiosity",
+      "pos": "n. [U]",
+      "phonetic": "[͵kjʊrɪˋɑsətɪ]",
+      "definition": "探索宇宙微觀深奧本質之無窮科學求知慾",
+      "cefr": "B1",
+      "topic": "探索初心",
+      "examples": [
+        {
+          "en": "Boundless scientific curiosity drives physicists to probe the paradoxical mysteries of the quantum world.",
+          "zh": "無窮無盡的科學求知慾與探索熱情，驅使著物理學家勇敢揭開量子世界令人著迷的微觀奧秘。"
+        },
+        {
+          "en": "Pure mathematical curiosity about quantum physics led directly to the technologies fueling our modern revolution.",
+          "zh": "當年對量子力學微觀現象純粹的數學好奇心，直接孕育出了引領當代資訊科技革命的全部前沿技術。"
+        },
+        {
+          "en": "Nurturing youthful curiosity inspires the next generation of engineers to tackle daunting quantum puzzles.",
+          "zh": "悉心呵護青年學子心中的純真求知好奇心，將激勵下一代頂尖工程師勇於攻克令人望而生畏的量子難題。"
+        }
+      ],
+      "collocations": [
+        "endless human curiosity"
+      ]
+    },
+    {
+      "id": 6050,
+      "word": "frontier",
+      "pos": "n.",
+      "phonetic": "[frʌnˋtɪr]",
+      "definition": "探索微觀與宏觀宇宙之終極運算科技疆界",
+      "cefr": "B1",
+      "topic": "終極疆界",
+      "examples": [
+        {
+          "en": "Quantum technology stands as the ultimate computational frontier, unlocking secrets of nature and existence.",
+          "zh": "量子科技是人類有史以來邁向的最前沿終極運算科技疆界，持續解鎖大自然與存在最深沉的秘密。"
+        },
+        {
+          "en": "Exploring this deep intellectual frontier requires unprecedented international collaboration across disciplines.",
+          "zh": "深入探索這片深邃迷人的智慧科學前沿疆界，迫切需要跨學科、跨國界前所未有的國際緊密攜手合作。"
+        },
+        {
+          "en": "Scientists standing at this modern research frontier are rewriting the rules of what computers can achieve.",
+          "zh": "站在當代前衛研究疆界最前線的各國科學家們，正在親手重寫人類文明對運算能力極限的全部定義。"
+        }
+      ],
+      "collocations": [
+        "ultimate computing frontier"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 5,401–5,450 個單字（CEFR B1 中級）",
+  "batch": "5401-5450",
+  "range": "5401–5450",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 5401,
+      "word": "neuroscience",
+      "pos": "n. [U]",
+      "phonetic": "[͵njʊroˋsaɪəns]",
+      "definition": "現代大腦神經科學；神經生物學",
+      "cefr": "B1",
+      "topic": "大腦科學",
+      "examples": [
+        {
+          "en": "Modern neuroscience reveals that the human brain continues to grow and adapt throughout our entire lives.",
+          "zh": "現代大腦神經科學證實：人類大腦在我們的一生中皆具備持續生長與重塑適應的驚人潛力。"
+        },
+        {
+          "en": "She decided to major in cognitive neuroscience to investigate how bilingual speakers process linguistic syntax.",
+          "zh": "她決定大學主修認知神經科學，以深入探究雙語母語者如何在大腦中處理語言句法結構。"
+        },
+        {
+          "en": "Breakthroughs in neuroscience are providing promising new therapies for neurodegenerative diseases like Parkinson's.",
+          "zh": "神經科學的重大突破，正為帕金森氏症等神經退化性疾病帶來極具前景的嶄新醫療方案。"
+        }
+      ],
+      "collocations": [
+        "cognitive neuroscience"
+      ]
+    },
+    {
+      "id": 5402,
+      "word": "neuron",
+      "pos": "n.",
+      "phonetic": "[ˋnjʊrɑn]",
+      "definition": "腦神經元細胞；神經細胞",
+      "cefr": "B1",
+      "topic": "神經細胞",
+      "examples": [
+        {
+          "en": "Nearly one hundred billion interconnected neurons communicate via electrical sparks across brain networks.",
+          "zh": "大腦內近千億個相互交織的神經元細胞，透過微電信號在神經網路中高速傳遞訊息。"
+        },
+        {
+          "en": "A single motor neuron can transmit electrical impulses from the spinal cord to skeletal muscles within milliseconds.",
+          "zh": "單一運動神經元可以在數毫秒之內，將電脈衝訊號從脊髓迅速傳遞至骨骼肌以驅動肢體。"
+        },
+        {
+          "en": "Microscopic staining techniques allow neuroscientists to observe individual neurons and dendrites under the microscope.",
+          "zh": "顯微染色技術讓神經科學家得以在光學顯微鏡下，清晰觀察單個神經元與樹突分支的細膩構造。"
+        }
+      ],
+      "collocations": [
+        "sensory and motor neuron"
+      ]
+    },
+    {
+      "id": 5403,
+      "word": "synapse",
+      "pos": "n.",
+      "phonetic": "[sɪˋnæps]",
+      "definition": "神經突觸 (神經元交接處)",
+      "cefr": "B1",
+      "topic": "傳導節點",
+      "examples": [
+        {
+          "en": "Every time we practice a foreign language, new microscopic synapses form between brain cells.",
+          "zh": "每當我們開口練習一門外語時，大腦神經元之間便會迅速生長出全新的微觀神經突觸。"
+        },
+        {
+          "en": "Electrical signals trigger the release of biochemical vesicles across the narrow synaptic cleft.",
+          "zh": "電脈衝訊號會觸發神經元末梢，跨越極其微小的突觸間隙釋放出微米級的生化囊泡。"
+        },
+        {
+          "en": "Memories are physically encoded through the strengthening and remodeling of active neural synapses.",
+          "zh": "人類的記憶在大腦實體中，是透過活躍神經突觸的持續強化與動態重塑來編碼儲存的。"
+        }
+      ],
+      "collocations": [
+        "neural synaptic connection"
+      ]
+    },
+    {
+      "id": 5404,
+      "word": "neurotransmitter",
+      "pos": "n.",
+      "phonetic": "[͵njʊrotrænsˋmɪtɚ]",
+      "definition": "大腦化學神經傳導物質",
+      "cefr": "B1",
+      "topic": "化學傳遞",
+      "examples": [
+        {
+          "en": "Essential neurotransmitters like dopamine and serotonin balance our motivation, mood, and sleep cycles.",
+          "zh": "多巴胺與血清素等關鍵神經傳導物質，細膩調節著我們的前進動力、情緒與睡眠。"
+        },
+        {
+          "en": "Antidepressant medications often function by increasing the concentration of key neurotransmitters in the brain.",
+          "zh": "抗憂鬱藥物通常透過提升大腦神經間隙中關鍵神經傳導物質的濃度，來緩解患者的情緒低落。"
+        },
+        {
+          "en": "Acetylcholine is a critical neurotransmitter that regulates muscle contraction, attention, and memory retention.",
+          "zh": "乙醯膽鹼是一種極為關鍵的神經傳導物質，主導著肌肉收縮、專注力維持與記憶保存。"
+        }
+      ],
+      "collocations": [
+        "chemical neurotransmitter"
+      ]
+    },
+    {
+      "id": 5405,
+      "word": "dopamine",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdopə͵min]",
+      "definition": "多巴胺（大腦獎勵機制與動力）",
+      "cefr": "B1",
+      "topic": "獎勵機制",
+      "examples": [
+        {
+          "en": "Finishing a challenging puzzle triggers a healthy surge of dopamine, making us feel accomplished and energized.",
+          "zh": "成功解開一道高難度謎題會在大腦中釋放出多巴胺，帶來滿滿的成就感與充沛活力。"
+        },
+        {
+          "en": "Social media algorithms are intentionally designed to stimulate intermittent dopamine spikes through likes and notifications.",
+          "zh": "社群媒體演算法經過精心設計，透過點讚數與即時推播間歇性刺激大腦釋放多巴胺讓人上癮。"
+        },
+        {
+          "en": "Deficiency in brain dopamine levels is the primary physiological hallmark of Parkinson's motor symptoms.",
+          "zh": "大腦黑質區多巴胺濃度的嚴重匱乏，是引發帕金森氏症肢體顫抖與運動障礙的核心病理特徵。"
+        }
+      ],
+      "collocations": [
+        "dopamine reward pathway"
+      ]
+    },
+    {
+      "id": 5406,
+      "word": "serotonin",
+      "pos": "n. [U]",
+      "phonetic": "[͵sɛrəˋtonɪn]",
+      "definition": "血清素（天然情緒穩定劑）",
+      "cefr": "B1",
+      "topic": "幸福荷爾蒙",
+      "examples": [
+        {
+          "en": "Soaking in twenty minutes of morning sunshine boosts brain serotonin production, lifting daily spirits naturally.",
+          "zh": "清晨沐浴在二十分鐘溫暖陽光下，能刺激大腦合成血清素，自然提振一整天的好心情。"
+        },
+        {
+          "en": "Over ninety percent of the body's serotonin is produced in the gastrointestinal tract to regulate gut motility.",
+          "zh": "人體內超過百分之九十的血清素實際上是在胃腸道合成製造的，用以調控腸道蠕動消化。"
+        },
+        {
+          "en": "Regular aerobic exercise combined with balanced meals helps maintain healthy serotonin baseline levels.",
+          "zh": "保持規律的有氧運動並攝取均衡營養的原型飲食，有助於維持體內健康的血清素基礎水平。"
+        }
+      ],
+      "collocations": [
+        "brain serotonin level"
+      ]
+    },
+    {
+      "id": 5407,
+      "word": "endorphin",
+      "pos": "n.",
+      "phonetic": "[ɛnˋdɔrfɪn]",
+      "definition": "腦內啡（天然止痛與暢快感）",
+      "cefr": "B1",
+      "topic": "運動暢快",
+      "examples": [
+        {
+          "en": "Brisk jogging releases natural endorphins, generating a joyful sense of vitality known as the runner's high.",
+          "zh": "暢快慢跑能促使身體分泌天然腦內啡，帶來被稱為「跑者高潮」的無比輕快喜悅感。"
+        },
+        {
+          "en": "Laughter and warm social interactions trigger natural endorphin release that alleviates physical tension.",
+          "zh": "開懷大笑與溫馨真誠的親友社交互動，能觸發天然腦內啡釋放，有效紓解累積的身體緊繃。"
+        },
+        {
+          "en": "The body secretes endorphins during strenuous exercise to dull pain and enhance physical endurance.",
+          "zh": "人體在高強度劇烈運動過程中會分泌腦內啡，以暫時阻斷痛覺感知並強化身體耐力。"
+        }
+      ],
+      "collocations": [
+        "release natural endorphins"
+      ]
+    },
+    {
+      "id": 5408,
+      "word": "oxytocin",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɑksɪˋtosɪn]",
+      "definition": "催產素（信任、親密與依附荷爾蒙）",
+      "cefr": "B1",
+      "topic": "情感連結",
+      "examples": [
+        {
+          "en": "Warm family hugs stimulate the release of oxytocin, strengthening emotional bonding and lowering blood pressure.",
+          "zh": "家人之間溫暖真摯的擁抱能激發催產素分泌，加深彼此的情感依附並溫柔降低血壓。"
+        },
+        {
+          "en": "Often referred to as the love hormone, oxytocin plays a central role in maternal bonding and childbirth.",
+          "zh": "催產素常被科學家暱稱為「愛的荷爾蒙」，在母嬰情感連結建立與自然分娩過程中扮演核心角色。"
+        },
+        {
+          "en": "Petting a friendly dog for several minutes significantly increases circulating oxytocin in both human and animal.",
+          "zh": "溫柔撫摸友善親人的狗狗數分鐘，能使人體與毛小孩體內的催產素循環濃度同步顯著攀升。"
+        }
+      ],
+      "collocations": [
+        "oxytocin bonding hormone"
+      ]
+    },
+    {
+      "id": 5409,
+      "word": "cortex",
+      "pos": "n.",
+      "phonetic": "[ˋkɔrtɛks]",
+      "definition": "前額葉大腦皮質（理性決策中樞）",
+      "cefr": "B1",
+      "topic": "理性中樞",
+      "examples": [
+        {
+          "en": "The prefrontal cortex acts as the CEO of the mind, managing executive planning, logic, and self-control.",
+          "zh": "前額葉大腦皮質宛如心智的執行長，主導著長遠規劃、理性邏輯分析與情緒自制力。"
+        },
+        {
+          "en": "Damage to the visual cortex can cause partial blindness even when the patient's eyes remain healthy.",
+          "zh": "視覺大腦皮質若是遭受物理撞擊損傷，即便患者的眼睛結構完全健康，仍可能導致視野缺失失明。"
+        },
+        {
+          "en": "The evolutionary expansion of the cerebral cortex distinguished human cognitive capacity from other mammals.",
+          "zh": "大腦大腦皮質在演化過程中的大幅擴增，使人類具備了遠超其他哺乳動物的高度認知運算能力。"
+        }
+      ],
+      "collocations": [
+        "prefrontal cerebral cortex"
+      ]
+    },
+    {
+      "id": 5410,
+      "word": "amygdala",
+      "pos": "n.",
+      "phonetic": "[əˋmɪgdələ]",
+      "definition": "杏仁核（恐懼、焦慮與情緒警報）",
+      "cefr": "B1",
+      "topic": "情緒警報",
+      "examples": [
+        {
+          "en": "Deep mindful breathing calms an overactive amygdala during moments of acute stage fright.",
+          "zh": "面對突如其來的上台緊張焦慮時，緩慢深沉的腹式呼吸能迅速安撫過度警覺的杏仁核。"
+        },
+        {
+          "en": "The amygdala processes environmental threats rapidly, triggering an automatic fight-or-flight response.",
+          "zh": "杏仁核能在極短瞬間內敏銳評估周遭潛在威脅，迅速啟動身體自發性的戰或逃應激反應。"
+        },
+        {
+          "en": "Chronic psychological trauma can cause an enlarged, hyper-reactive amygdala prone to anxiety attacks.",
+          "zh": "長期的心理創傷壓力可能使杏仁核持續處於過度活躍放大狀態，進而容易誘發恐慌焦慮發作。"
+        }
+      ],
+      "collocations": [
+        "amygdala fear center"
+      ]
+    },
+    {
+      "id": 5411,
+      "word": "hippocampus",
+      "pos": "n.",
+      "phonetic": "[͵hɪpəˋkæmpəs]",
+      "definition": "海馬迴（記憶形成與空間導航）",
+      "cefr": "B1",
+      "topic": "記憶核心",
+      "examples": [
+        {
+          "en": "Aerobic exercise stimulates neurogenesis in the hippocampus, boosting long-term memory capacity.",
+          "zh": "規律的有氧運動能刺激大腦海馬迴新生神經細胞，大幅擴充長期記憶容量。"
+        },
+        {
+          "en": "Severe stress and sustained lack of sleep can shrink the hippocampus and impair spatial navigation.",
+          "zh": "長期的嚴重精神壓力與持續性睡眠不足，會導致海馬迴微幅萎縮並削弱空間定向導航能力。"
+        },
+        {
+          "en": "Patients with damage to the hippocampus often lose the ability to form new declarative memories.",
+          "zh": "海馬迴遭受病理損傷的患者，往往會喪失將新發生的生活經歷轉化為陳述性長期記憶的能力。"
+        }
+      ],
+      "collocations": [
+        "hippocampus memory center"
+      ]
+    },
+    {
+      "id": 5412,
+      "word": "plasticity",
+      "pos": "n. [U]",
+      "phonetic": "[plæsˋtɪsətɪ]",
+      "definition": "大腦終身可重塑之「神經可塑性」",
+      "cefr": "B1",
+      "topic": "大腦重塑",
+      "examples": [
+        {
+          "en": "Brain plasticity empowers stroke survivors to rewire undamaged neural circuits and regain speech.",
+          "zh": "大腦神奇的神經可塑性，能讓中風患者重新連結健康神經迴路並奇蹟般恢復語言能力。"
+        },
+        {
+          "en": "The clay displayed excellent plasticity, allowing the ceramicist to shape thin-walled delicate vases.",
+          "zh": "這種精選陶土展現出優異的延展可塑性，讓陶藝家得以拉坏塑形出薄如蟬翼的精緻花瓶。"
+        },
+        {
+          "en": "Practicing mindfulness meditation enhances neurostructural plasticity in areas governing empathy.",
+          "zh": "堅持練習正念冥想修習，能顯著增強大腦掌管同理心與自我覺察區域的神經結構可塑性。"
+        }
+      ],
+      "collocations": [
+        "brain neuroplasticity"
+      ]
+    },
+    {
+      "id": 5413,
+      "word": "myelination",
+      "pos": "n. [U]",
+      "phonetic": "[͵maɪəlɪˋneʃən]",
+      "definition": "神經纖維髓鞘化（加速傳導效率）",
+      "cefr": "B1",
+      "topic": "技能熟練",
+      "examples": [
+        {
+          "en": "Repetitive violin practice accelerates the myelination of motor pathways, making finger movements effortless.",
+          "zh": "反覆專注練習小提琴樂曲能加速運動神經纖維的髓鞘化，讓複雜指法如同行雲流水。"
+        },
+        {
+          "en": "Optimal dietary fats during early childhood provide essential lipids for healthy axonal myelination.",
+          "zh": "幼兒成長發育期攝取優質健康的膳食脂肪，能為腦部神經軸突健全的髓鞘化提供關鍵脂質。"
+        },
+        {
+          "en": "Diseases like multiple sclerosis attack the myelin sheath, disrupting normal myelination and nerve signaling.",
+          "zh": "多發性硬化症等自體免疫疾病會攻擊髓鞘組織，破壞正常的神經髓鞘化進程並阻斷訊號傳導。"
+        }
+      ],
+      "collocations": [
+        "neural pathway myelination"
+      ]
+    },
+    {
+      "id": 5414,
+      "word": "circadian",
+      "pos": "adj.",
+      "phonetic": "[sɚˋkedɪən]",
+      "definition": "晝夜二十四小時生理時鐘節律的",
+      "cefr": "B1",
+      "topic": "生理時鐘",
+      "examples": [
+        {
+          "en": "Aligning your sleep schedule with natural circadian light-dark cycles improves immune function.",
+          "zh": "讓作息時間與大自然晝夜光暗的晝夜節律同步，能全面強化人體免疫防禦力。"
+        },
+        {
+          "en": "Traveling across twelve time zones disrupts your internal circadian clock, causing severe jet lag.",
+          "zh": "跨越多達十二個時區搭乘長途越洋航班，會徹底打亂內在晝夜生理時鐘，造成嚴重的時差疲倦。"
+        },
+        {
+          "en": "Night-shift workers often struggle with circadian misalignment, leading to higher risks of metabolic fatigue.",
+          "zh": "長期輪值大夜班的從業人員經常面臨晝夜節律失調的困擾，進而增加代謝機能低下與慢性疲勞風險。"
+        }
+      ],
+      "collocations": [
+        "circadian rhythm biological clock"
+      ]
+    },
+    {
+      "id": 5415,
+      "word": "melatonin",
+      "pos": "n. [U]",
+      "phonetic": "[͵mɛləˋtonɪn]",
+      "definition": "松果體夜間分泌天然褪黑激素",
+      "cefr": "B1",
+      "topic": "睡眠調節",
+      "examples": [
+        {
+          "en": "Dimming blue phone screens two hours before bed allows natural melatonin to signal it is time to sleep.",
+          "zh": "睡前兩小時將手機藍光調暗，能讓大腦松果體順利分泌天然褪黑激素引導香甜入夢。"
+        },
+        {
+          "en": "Frequent travelers sometimes take low-dose melatonin supplements to adjust to international time differences.",
+          "zh": "經常跨國出差的商務人士有時會適量補充低劑量褪黑激素保健品，以協助身體適應海外時差。"
+        },
+        {
+          "en": "Bright indoor fluorescent lighting in the late evening suppresses the pineal gland's secretion of melatonin.",
+          "zh": "深夜室內強烈的白光螢光燈照明，會直接抑制大腦松果體正常分泌褪黑激素的天然節律。"
+        }
+      ],
+      "collocations": [
+        "natural sleep melatonin"
+      ]
+    },
+    {
+      "id": 5416,
+      "word": "architecture",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɑrkə͵tɛktʃɚ]",
+      "definition": "完整九十分鐘睡眠階段結構；架構",
+      "cefr": "B1",
+      "topic": "睡眠科學",
+      "examples": [
+        {
+          "en": "Healthy sleep architecture consists of repeating ninety-minute cycles alternating between light, deep, and dream sleep.",
+          "zh": "健康的睡眠結構由數個九十分鐘週期組成，在淺眠、慢波深睡與夢境間規律循環。"
+        },
+        {
+          "en": "Traditional Minnan architecture features sweeping swallowtail roofs and red brick courtyards across Lukang.",
+          "zh": "鹿港古鎮處處可見傳統閩南式歷史建築結構，以飛揚優美的燕尾屋脊與紅磚合院著稱。"
+        },
+        {
+          "en": "The software architecture of the platform was designed with high modularity to support millions of concurrent users.",
+          "zh": "該雲端平台的軟體系統架構採用高度模組化設計，能從容支撐數百萬名使用者同時在線操作。"
+        }
+      ],
+      "collocations": [
+        "sleep stage architecture"
+      ]
+    },
+    {
+      "id": 5417,
+      "word": "REM",
+      "pos": "n. [U]",
+      "phonetic": "[rɛm]",
+      "definition": "快速動眼期睡眠 (夢境與情緒整合)",
+      "cefr": "B1",
+      "topic": "夢境階段",
+      "examples": [
+        {
+          "en": "Rapid Eye Movement (REM) sleep is essential for creative problem-solving and processing difficult emotions.",
+          "zh": "快速動眼期睡眠是激發創新靈感、鞏固複雜記憶與修復負面情緒創傷的關鍵黃金時刻。"
+        },
+        {
+          "en": "Vivid dreams accompanied by temporary muscle paralysis occur predominantly during the REM sleep phase.",
+          "zh": "情節生動鮮明的情境夢境並伴隨全身骨骼肌暫時放鬆癱瘓，主要發生在快速動眼期睡眠階段。"
+        },
+        {
+          "en": "Alcohol consumption before bed fragments sleep cycles and significantly suppresses restorative REM duration.",
+          "zh": "睡前飲用過量酒精會撕裂打碎整夜的睡眠週期，並顯著壓抑具有大腦修復功能的快速動眼期長度。"
+        }
+      ],
+      "collocations": [
+        "Rapid Eye Movement (REM)"
+      ]
+    },
+    {
+      "id": 5418,
+      "word": "spindle",
+      "pos": "n.",
+      "phonetic": "[ˋspɪnd!]",
+      "definition": "睡眠紡錘波（大腦記憶鎖定訊號）",
+      "cefr": "B1",
+      "topic": "記憶固化",
+      "examples": [
+        {
+          "en": "Brainwaves called sleep spindles lock newly acquired vocabulary words permanently into memory storage.",
+          "zh": "熟睡時大腦發出的微小睡眠紡錘波，能將白天背誦的新英文單字永久烙印進長期記憶庫。"
+        },
+        {
+          "en": "The antique wooden spinning wheel had a polished spindle that twisted raw wool fibers into yarn.",
+          "zh": "這台古董木造手搖紡紗機上裝有一根磨得光滑的旋轉紡錘，能將未加工的羊毛纖維捻成毛線。"
+        },
+        {
+          "en": "Higher densities of sleep spindles recorded on overnight EEGs correlate with faster cognitive learning rates.",
+          "zh": "夜間腦波儀上監測記錄到的睡眠紡錘波密度越高，通常與大腦隔天展現出的更快學習效率高度正相關。"
+        }
+      ],
+      "collocations": [
+        "brainwave sleep spindle"
+      ]
+    },
+    {
+      "id": 5419,
+      "word": "consolidation",
+      "pos": "n. [U]",
+      "phonetic": "[kən͵sɑləˋdeʃən]",
+      "definition": "夜間記憶固化與深度整合工序",
+      "cefr": "B1",
+      "topic": "記憶轉化",
+      "examples": [
+        {
+          "en": "Overnight memory consolidation transfers fragile temporary memories into stable cerebral archives.",
+          "zh": "透過夜間充足的記憶鞏固機制，能將白天脆弱的短期記憶轉化為穩固的永久檔案。"
+        },
+        {
+          "en": "The merger resulted in the consolidation of corporate administrative offices to reduce redundant operating overhead.",
+          "zh": "兩大企業合併後展開了總部行政辦公室的深度整併整合，以大幅削減重疊的營運管理開支。"
+        },
+        {
+          "en": "Adequate sleep following an intensive study day is vital for semantic memory consolidation.",
+          "zh": "在歷經一整天高強度的密集專注研讀後，充足優質的夜間睡眠對大腦語意記憶的長期固化至關重要。"
+        }
+      ],
+      "collocations": [
+        "memory memory consolidation"
+      ]
+    },
+    {
+      "id": 5420,
+      "word": "glymphatic",
+      "pos": "adj.",
+      "phonetic": "[glɪmˋfætɪk]",
+      "definition": "膠淋巴大腦排毒代謝系統的",
+      "cefr": "B1",
+      "topic": "大腦清洗",
+      "examples": [
+        {
+          "en": "The glymphatic system flushes away metabolic waste and toxic proteins while we sleep peacefully.",
+          "zh": "當我們沉沉入睡時，大腦內精密的膠淋巴系統全力運轉，高效沖洗代謝廢物。"
+        },
+        {
+          "en": "Sleeping on your side appears to optimize cerebral fluid flow through the brain's glymphatic channels.",
+          "zh": "採取側臥睡姿似乎能最佳化腦脊髓液的自然流動，提升大腦膠淋巴排毒通道的代謝效能。"
+        },
+        {
+          "en": "Impaired glymphatic drainage during fragmented sleep may accelerate the development of neurodegenerative conditions.",
+          "zh": "在睡眠破碎中斷期間若膠淋巴系統引流功能受阻，恐會加速各類神經退化性病變的進程。"
+        }
+      ],
+      "collocations": [
+        "brain glymphatic system"
+      ]
+    },
+    {
+      "id": 5421,
+      "word": "amyloid",
+      "pos": "n. [U]",
+      "phonetic": "[ˋæməlɔɪd]",
+      "definition": "清除阿茲海默類澱粉蛋白斑塊",
+      "cefr": "B1",
+      "topic": "腦病防範",
+      "examples": [
+        {
+          "en": "Deep slow-wave sleep actively clears sticky beta-amyloid proteins that cause memory decline.",
+          "zh": "優質的慢波深層睡眠能主動清除大腦中堆積的類澱粉蛋白，有效防範認知衰退。"
+        },
+        {
+          "en": "Clinical trials are testing monoclonal antibody therapies designed to clear toxic amyloid plaques from the brain.",
+          "zh": "國際大型臨床試驗正在驗證單株抗體新藥的療效，旨在清除沉積於大腦組織中的毒性類澱粉蛋白斑塊。"
+        },
+        {
+          "en": "The accumulation of abnormal amyloid aggregates disrupts synaptic communication between neighboring brain cells.",
+          "zh": "異常類澱粉蛋白纖維沉澱物的過度累積，會嚴重阻礙鄰近腦神經元細胞之間的正常突觸訊息傳遞。"
+        }
+      ],
+      "collocations": [
+        "toxic beta-amyloid protein"
+      ]
+    },
+    {
+      "id": 5422,
+      "word": "deprivation",
+      "pos": "n. [U]",
+      "phonetic": "[͵dɛprəˋveʃən]",
+      "definition": "長期睡眠剝奪導致腦霧疲憊",
+      "cefr": "B1",
+      "topic": "睡眠不足",
+      "examples": [
+        {
+          "en": "Chronic sleep deprivation impairs judgment, slows reflexes, and increases food cravings for junk sugars.",
+          "zh": "長期睡眠剝奪不僅會引發思緒遲鈍的腦霧，更會顯著削弱專注力並讓人渴望甜食。"
+        },
+        {
+          "en": "Severe sensory deprivation in dark underground chambers can cause disorientation and auditory hallucinations.",
+          "zh": "在漆黑封閉的地底密室中經歷嚴重的感官剝奪，極易引發時空定向感迷失與聽覺幻覺。"
+        },
+        {
+          "en": "The humanitarian aid organization delivered emergency food and clean water to alleviate extreme deprivation.",
+          "zh": "國際人道救援組織緊急空投賑濟乾糧與潔淨飲用水，全力緩解災區人民所面臨的極度物資匱乏。"
+        }
+      ],
+      "collocations": [
+        "severe sleep deprivation"
+      ]
+    },
+    {
+      "id": 5423,
+      "word": "fatigue",
+      "pos": "n. [U]",
+      "phonetic": "[fəˋtig]",
+      "definition": "腦力過度消耗之慢性精神疲憊",
+      "cefr": "B1",
+      "topic": "心智耗損",
+      "examples": [
+        {
+          "en": "Taking five-minute screen-free breaks prevents mental fatigue during intense study sessions.",
+          "zh": "在高強度用腦工作之間適時閉目養神五分鐘，能徹底消除大腦精神疲憊並恢復清晰思緒。"
+        },
+        {
+          "en": "The long-distance marathon runner pushed through intense muscle fatigue to cross the finish line with a smile.",
+          "zh": "這位長跑馬拉松選手咬牙克服雙腿肌肉的極度疲勞，在全場歡呼聲中帶著燦爛笑容衝過終點線。"
+        },
+        {
+          "en": "Microscopic metal fatigue cracks were discovered on the aircraft landing gear during routine inspection.",
+          "zh": "地勤維修技師在例行安全檢查中，於民航客機的起落架金屬構件上發現了微小的金屬疲勞裂痕。"
+        }
+      ],
+      "collocations": [
+        "chronic mental fatigue"
+      ]
+    },
+    {
+      "id": 5424,
+      "word": "cortisol",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɔrtəˌsol]",
+      "definition": "腎上腺分泌過量壓力荷爾蒙皮質醇",
+      "cefr": "B1",
+      "topic": "壓力指標",
+      "examples": [
+        {
+          "en": "Chronic high levels of cortisol weaken immune responses and disrupt restorative sleep quality.",
+          "zh": "體內長期居高不下的皮質醇壓力荷爾蒙，會悄悄削弱免疫系統並破壞深層睡眠品質。"
+        },
+        {
+          "en": "Cortisol levels naturally peak shortly after waking up in the morning to help you feel alert and ready.",
+          "zh": "人體內的皮質醇濃度在早晨剛甦醒後不久會自然達到峰值，以喚醒身體感官進入警覺就緒狀態。"
+        },
+        {
+          "en": "Practicing deep abdominal breathing helps bring elevated cortisol levels back down to a healthy baseline.",
+          "zh": "經常練習深長緩慢的腹式深呼吸，能有效促使體內居高不下的皮質醇迅速回落至健康的基準線。"
+        }
+      ],
+      "collocations": [
+        "elevated stress cortisol"
+      ]
+    },
+    {
+      "id": 5425,
+      "word": "meditation",
+      "pos": "n. [U]",
+      "phonetic": "[͵mɛdəˋteʃən]",
+      "definition": "靜坐冥想放鬆活化大腦平靜波",
+      "cefr": "B1",
+      "topic": "心靈靜定",
+      "examples": [
+        {
+          "en": "Daily morning meditation trains the wandering mind to rest effortlessly in calm, alert awareness.",
+          "zh": "每天早晨進行十分鐘靜坐冥想，能訓練躁動的心念沉澱下來，安住在清明平靜的當下。"
+        },
+        {
+          "en": "She learned transcendental meditation techniques to manage workplace anxiety and cultivate inner peace.",
+          "zh": "她深入學習了超覺靜坐冥想技巧，以有效化解繁重的職場高壓並找回內心深處的安詳定力。"
+        },
+        {
+          "en": "Walking meditation through tranquil bamboo groves combines rhythmic gentle movement with mindful presence.",
+          "zh": "在清幽翠綠的竹林中緩步進行行禪漫步冥想，將富有節奏的舒緩肢體步伐與全神貫注的覺察完美融為一體。"
+        }
+      ],
+      "collocations": [
+        "daily mindfulness meditation"
+      ]
+    },
+    {
+      "id": 5426,
+      "word": "coherence",
+      "pos": "n. [U]",
+      "phonetic": "[koˋhɪrəns]",
+      "definition": "心腦協調共振與心率變異度平衡",
+      "cefr": "B1",
+      "topic": "生理和諧",
+      "examples": [
+        {
+          "en": "Heart-brain coherence occurs when rhythmic breathing synchronizes cardiac rhythms with neural activity.",
+          "zh": "透過規律緩慢的節奏呼吸能創造心腦共振，讓心跳節律與大腦神經放電達到完美協同。"
+        },
+        {
+          "en": "The professor praised the logical coherence and clarity of the arguments in her doctoral dissertation.",
+          "zh": "指導教授高度讚賞她在博士學位畢業論文中所展現出的嚴謹邏輯連貫性與論點條理分明。"
+        },
+        {
+          "en": "Establishing strategic coherence between sales, marketing, and engineering teams accelerates product shipping.",
+          "zh": "在業務銷售、市場行銷與研發工程團隊之間建立高度的策略一致性，能大幅加速產品發表進程。"
+        }
+      ],
+      "collocations": [
+        "heart-brain coherence state"
+      ]
+    },
+    {
+      "id": 5427,
+      "word": "biofeedback",
+      "pos": "n. [U]",
+      "phonetic": "[͵baɪoˋfid͵bæk]",
+      "definition": "腦波神經生理即時回饋訓練",
+      "cefr": "B1",
+      "topic": "生理回饋",
+      "examples": [
+        {
+          "en": "Clinical neurofeedback uses EEG biofeedback to help athletes learn how to access calm focus under pressure.",
+          "zh": "專業運動員運用腦電波生理回饋訓練儀，學會在高壓賽事中隨時隨地召喚冷靜專注。"
+        },
+        {
+          "en": "Smart wearable rings utilize galvanic skin response biofeedback to notify users when stress levels rise.",
+          "zh": "智慧穿戴指環透過微弱皮膚電阻反應生理回饋，在使用者身心壓力過高時及時跳出放鬆提醒。"
+        },
+        {
+          "en": "Physical therapists employ electromyographic biofeedback to help patients retrain weakened knee muscles.",
+          "zh": "物理復健治療師利用肌電圖生理回饋儀器，手把手引導病患重新精準活化無力萎縮的膝部肌肉群。"
+        }
+      ],
+      "collocations": [
+        "real-time EEG biofeedback"
+      ]
+    },
+    {
+      "id": 5428,
+      "word": "cognition",
+      "pos": "n. [U]",
+      "phonetic": "[kɑgˋnɪʃən]",
+      "definition": "提升大腦記憶與邏輯認知能力",
+      "cefr": "B1",
+      "topic": "心智功能",
+      "examples": [
+        {
+          "en": "Lifelong reading and learning new musical instruments maintain razor-sharp cognition into advanced age.",
+          "zh": "堅持閱讀與學習彈奏新樂器，能讓長輩在耄耋之年依然保有敏銳清晰的認知思維能力。"
+        },
+        {
+          "en": "Dehydration and heat exhaustion can cause sudden temporary impairments in human executive cognition.",
+          "zh": "嚴重脫水與中暑熱衰竭，會瞬間導致人類大腦的高階執行認知功能出現暫時性混亂與遲鈍。"
+        },
+        {
+          "en": "Early childhood educators focus on sensory play to foster creative spatial cognition and language skills.",
+          "zh": "幼兒啟蒙教育專家特別強調多樣化感官互動遊戲，以全面啟發幼童的空間認知想像力與語言表達力。"
+        }
+      ],
+      "collocations": [
+        "human brain cognition"
+      ]
+    },
+    {
+      "id": 5429,
+      "word": "focus",
+      "pos": "n. [U], v.",
+      "phonetic": "[ˋfokəs]",
+      "definition": "深度不受干擾的極致專注力；聚焦",
+      "cefr": "B1",
+      "topic": "專注心力",
+      "examples": [
+        {
+          "en": "Practicing single-tasking restores deep focus in a world overflowing with distracting digital notifications.",
+          "zh": "練習一次只專心做好一件事，能在充斥各類手機推播干擾的現代世界中重拾珍貴的深度專注力。"
+        },
+        {
+          "en": "The photographer adjusted the manual camera lens ring until the dewdrop came into razor-sharp focus.",
+          "zh": "專業攝影師細心旋轉手動相機鏡頭對焦環，直到葉片上的晶瑩晨露完美呈現於銳利清晰的焦點中。"
+        },
+        {
+          "en": "Our immediate corporate focus for the upcoming quarter is expanding customer retention and satisfaction.",
+          "zh": "我們公司在即將到來的下一個季度中，最迫切且首要的工作焦點是全面深化顧客留存率與滿意度。"
+        }
+      ],
+      "collocations": [
+        "laser-sharp mental focus"
+      ]
+    },
+    {
+      "id": 5430,
+      "word": "flow",
+      "pos": "n. [U]",
+      "phonetic": "[flo]",
+      "definition": "渾然忘我的心流極致沉浸體驗",
+      "cefr": "B1",
+      "topic": "巔峰體驗",
+      "examples": [
+        {
+          "en": "Being in a state of flow dissolves self-consciousness, allowing artists and programmers to produce brilliant work.",
+          "zh": "沉浸在渾然忘我的心流狀態中，時間彷彿靜止，能讓創作者與工程師爆發出驚人創造力。"
+        },
+        {
+          "en": "A gentle, steady flow of fresh cool water trickled down the mossy mountain rocks into the brook.",
+          "zh": "一股清涼甘洌的山泉水細流緩緩順著生滿翠綠青苔的岩壁滴落，匯入清澈見底的山澗溪流中。"
+        },
+        {
+          "en": "Improving the user interface simplified the checkout flow, significantly boosting mobile purchasing rates.",
+          "zh": "全面優化使用者操作介面簡化了購物結帳流程，進而顯著提升了手機行動端的下單轉換率。"
+        }
+      ],
+      "collocations": [
+        "psychological flow state"
+      ]
+    },
+    {
+      "id": 5431,
+      "word": "attention",
+      "pos": "n. [U]",
+      "phonetic": "[əˋtɛnʃən]",
+      "definition": "專注不移的選擇性注意力廣度",
+      "cefr": "B1",
+      "topic": "注意力管理",
+      "examples": [
+        {
+          "en": "Training your attention span like a muscle builds resistance against impulsive social media scrolling.",
+          "zh": "像鍛鍊肌肉般耐心鍛鍊自己的注意力，能築起強大防線，不再無意識滑動手機社群。"
+        },
+        {
+          "en": "The flight attendant politely asked passengers to give their undivided attention to the emergency safety briefing.",
+          "zh": "空服員親切且禮貌地廣播提醒所有機上旅客，請全神貫注聆聽起飛前的客艙安全逃生示範與說明。"
+        },
+        {
+          "en": "She paid meticulous attention to every single detail when drafting the international joint venture contract.",
+          "zh": "在親自起草這份跨國合資企業法律契約時，她對合約條文中的每一個文字細節都傾注了一絲不苟的專注。"
+        }
+      ],
+      "collocations": [
+        "sustained attention span"
+      ]
+    },
+    {
+      "id": 5432,
+      "word": "distraction",
+      "pos": "n.",
+      "phonetic": "[dɪˋstrækʃən]",
+      "definition": "消除外界訊息干擾分心誘惑",
+      "cefr": "B1",
+      "topic": "排除干擾",
+      "examples": [
+        {
+          "en": "Turning off smartphone banners removes digital distractions, creating a quiet space for deep study.",
+          "zh": "關閉智慧型手機的即時橫幅通知，能徹底隔絕外在分心干擾，營造靜心學習的空間。"
+        },
+        {
+          "en": "The mother gave her restless toddler a colorful picture book as a clever distraction during the long flight.",
+          "zh": "在漫長的國際長途飛行中，年輕媽媽拿出色彩繽紛的立體繪本，巧妙轉移了躁動小寶寶的注意力。"
+        },
+        {
+          "en": "Studying in the quietest floor of the university library eliminates unnecessary social distractions.",
+          "zh": "選擇前往大學總圖書館最安靜的安靜研讀樓層溫書，能徹底排除不必要的外在人群與社交干擾。"
+        }
+      ],
+      "collocations": [
+        "external digital distraction"
+      ]
+    },
+    {
+      "id": 5433,
+      "word": "recharge",
+      "pos": "v., n.",
+      "phonetic": "[riˋtʃɑrdʒ]",
+      "definition": "散步走入大自然為大腦重新充電",
+      "cefr": "B1",
+      "topic": "能量回復",
+      "examples": [
+        {
+          "en": "Taking a quiet walk among green trees allows tired brain circuits to recharge fully.",
+          "zh": "暫時放下手邊工作到綠樹成蔭的公園散散步，能讓緊繃疲憊的大腦神經迴路重新充電。"
+        },
+        {
+          "en": "Remember to plug your smartphone into the wall charger before bed to recharge its battery overnight.",
+          "zh": "晚上睡覺前請記得把智慧型手機插上快充充電器，讓電池在夜間完全充電充滿電量。"
+        },
+        {
+          "en": "A peaceful weekend camping retreat in the mountains gave the exhausted team a chance to recharge their enthusiasm.",
+          "zh": "週末前往群山環抱的林間露營放空，為身心俱疲的創業研發團隊帶來了重新充電與找回工作熱忱的絕佳契機。"
+        }
+      ],
+      "collocations": [
+        "recharge mental battery"
+      ]
+    },
+    {
+      "id": 5434,
+      "word": "regulation",
+      "pos": "n. [U]",
+      "phonetic": "[͵rɛgjəˋleʃən]",
+      "definition": "覺察自省之情緒自我調節管理",
+      "cefr": "B1",
+      "topic": "情緒智商",
+      "examples": [
+        {
+          "en": "Emotional self-regulation enables leaders to pause, reflect, and respond wisely rather than react impulsively.",
+          "zh": "卓越的情緒自我調節能力，讓領導者在危機中冷靜深思並做出明智回應而非意氣用事。"
+        },
+        {
+          "en": "Government environmental authorities introduced a strict new regulation limiting industrial wastewater discharge.",
+          "zh": "政府環保主管機關頒布了一項極為嚴格的法規管制新規定，嚴禁工廠未經處理排放工業廢水。"
+        },
+        {
+          "en": "Thermostatic valves ensure precise temperature regulation inside high-precision pharmaceutical storage refrigerators.",
+          "zh": "恆溫溫控閥門確保高精度生技藥品冷藏儲存冰箱內部，能夠維持分毫不差的精準溫度調控。"
+        }
+      ],
+      "collocations": [
+        "emotional self-regulation"
+      ]
+    },
+    {
+      "id": 5435,
+      "word": "resilience",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋzɪljəns]",
+      "definition": "逆境中百折不撓的心理韌性",
+      "cefr": "B1",
+      "topic": "抗壓復原力",
+      "examples": [
+        {
+          "en": "Building mental resilience helps us bounce back stronger and wiser from inevitable life setbacks.",
+          "zh": "培養堅韌強大的心理抗壓韌性，能讓我們在面對人生難免的挫折風雨後，更加勇敢睿智地站起。"
+        },
+        {
+          "en": "Small rural farmers showed extraordinary resilience after their crops were replanted following the destructive flood.",
+          "zh": "在毀滅性豪雨洪災過後，純樸堅毅的偏鄉小農迅速補種農作物，展現出令人動容的生命韌性。"
+        },
+        {
+          "en": "Strengthening our cybersecurity defenses enhances the operational resilience of our corporate cloud servers.",
+          "zh": "全面強化企業資訊安全防護網，能大幅提升公司雲端核心伺服器在遭受網路攻擊時的營運韌性。"
+        }
+      ],
+      "collocations": [
+        "psychological mental resilience"
+      ]
+    },
+    {
+      "id": 5436,
+      "word": "optimism",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɑptəmɪzəm]",
+      "definition": "相信問題終能解決的習得性樂觀",
+      "cefr": "B1",
+      "topic": "積極思維",
+      "examples": [
+        {
+          "en": "Cultivating learned optimism reframes temporary challenges as valuable stepping stones toward mastery.",
+          "zh": "在心底深植積極樂觀的心態，能將暫時的挑戰與困難視為通往卓越成長的珍貴墊腳石。"
+        },
+        {
+          "en": "Despite facing severe supply chain delays, the project manager maintained contagious optimism and high morale.",
+          "zh": "儘管面臨關鍵零件供應鏈嚴重延遲的重重考驗，專案負責人始終保持著極具感染力的樂觀態度與高昂士氣。"
+        },
+        {
+          "en": "Economists expressed cautious optimism regarding next year’s job market recovery and export growth.",
+          "zh": "總體經濟學者對明年度國內就業市場景氣回溫與出口外銷成長動能，普遍表達出審慎樂觀的看法。"
+        }
+      ],
+      "collocations": [
+        "realistic learned optimism"
+      ]
+    },
+    {
+      "id": 5437,
+      "word": "mindset",
+      "pos": "n.",
+      "phonetic": "[ˋmaɪnd͵sɛt]",
+      "definition": "擁抱挑戰持續進步的成長型思維",
+      "cefr": "B1",
+      "topic": "成長心態",
+      "examples": [
+        {
+          "en": "Adopting a growth mindset transforms fear of failure into an exciting hunger for learning and skill development.",
+          "zh": "擁抱成長型思維模式，能將對失敗的恐懼轉化為渴望探索新知與精進技能的強烈熱情。"
+        },
+        {
+          "en": "Breaking through difficult career plateaus requires shifting from a passive employee mindset to proactive ownership.",
+          "zh": "想要突破職場生涯停滯不前的瓶頸平台期，必須將被動交差的心態轉變為主動當責的創業家思維。"
+        },
+        {
+          "en": "Innovators embrace an agile entrepreneurial mindset that tests ideas quickly and adapts without hesitation.",
+          "zh": "卓越的創新先驅始終懷抱敏捷靈活的創業思維，敢於迅速驗證構想並毫不猶豫地果敢調整方向。"
+        }
+      ],
+      "collocations": [
+        "growth learning mindset"
+      ]
+    },
+    {
+      "id": 5438,
+      "word": "curiosity",
+      "pos": "n. [U]",
+      "phonetic": "[͵kjʊrɪˋɑsətɪ]",
+      "definition": "永保赤子之心求知若渴的好奇心",
+      "cefr": "B1",
+      "topic": "求知熱情",
+      "examples": [
+        {
+          "en": "Unquenchable curiosity keeps the human mind vibrant, innovative, and youthful throughout a lifetime.",
+          "zh": "永不熄滅的強烈求知好奇心，能讓一個人的心智一生永遠保持生機盎然、富有創意與年輕。"
+        },
+        {
+          "en": "Driven by scientific curiosity, researchers ventured into remote jungle caves to collect soil bacteria.",
+          "zh": "在純粹科學好奇心的驅使之下，青年研究團隊無所畏懼地深入偏遠熱帶叢林洞穴採集稀有土壤微生物。"
+        },
+        {
+          "en": "The curious cat approached the mysterious cardboard box with cautious interest and playful curiosity.",
+          "zh": "這隻好奇心旺盛的貓咪輕手輕腳地湊近客廳角落神秘的瓦楞紙箱，滿臉寫著小心翼翼的好奇探究。"
+        }
+      ],
+      "collocations": [
+        "insatiable intellectual curiosity"
+      ]
+    },
+    {
+      "id": 5439,
+      "word": "intuition",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪntjuˋɪʃən]",
+      "definition": "潛意識經驗積累之敏銳直覺",
+      "cefr": "B1",
+      "topic": "直覺洞察",
+      "examples": [
+        {
+          "en": "Decades of experience sharpen clinical intuition, allowing veteran doctors to diagnose rare conditions instantly.",
+          "zh": "數十年的豐富臨床經驗淬鍊出敏銳的直覺判斷力，讓資深醫師能在第一時間察覺罕見病症。"
+        },
+        {
+          "en": "When something felt suspiciously wrong about the contract terms, she trusted her gut intuition and walked away.",
+          "zh": "當她敏銳察覺這份商業合約條款似乎隱藏著可疑貓膩時，她果斷相信自己的內在直覺並毅然終止談判。"
+        },
+        {
+          "en": "Great chess grandmasters rely on rapid subconscious intuition to evaluate thousands of board positions in seconds.",
+          "zh": "頂尖國際西洋棋特級大師高度仰賴閃電般的潛意識直覺，在短短數秒內瞬間評估數千種棋盤走位佈局。"
+        }
+      ],
+      "collocations": [
+        "sharp subconscious intuition"
+      ]
+    },
+    {
+      "id": 5440,
+      "word": "insight",
+      "pos": "n.",
+      "phonetic": "[ˋɪnˌsaɪt]",
+      "definition": "靈光乍現突破盲點的頓悟洞見",
+      "cefr": "B1",
+      "topic": "頓悟時刻",
+      "examples": [
+        {
+          "en": "After days of pondering, a sudden flash of insight illuminated the elegant mathematical solution.",
+          "zh": "在歷經數日的苦思冥想後，一道靈光乍現的深刻頓悟洞見，瞬間照亮了優雅精妙的數學解答。"
+        },
+        {
+          "en": "The investigative documentary offered fascinating psychological insights into the minds of elite athletes.",
+          "zh": "這部獲獎的深度調查紀錄片，為觀眾揭示了頂尖職業極限運動員內心世界引人入勝的心理洞見。"
+        },
+        {
+          "en": "Big data analytics provides retail companies with actionable behavioral insights into customer shopping patterns.",
+          "zh": "大數據深度運算分析為跨國零售連鎖集團提供了極具商務落地價值的消費者購物行為洞察。"
+        }
+      ],
+      "collocations": [
+        "sudden flash of insight"
+      ]
+    },
+    {
+      "id": 5441,
+      "word": "creativity",
+      "pos": "n. [U]",
+      "phonetic": "[͵krieˋtɪvətɪ]",
+      "definition": "跨域聯想發散思維的原創創造力",
+      "cefr": "B1",
+      "topic": "創新能力",
+      "examples": [
+        {
+          "en": "True creativity blossoms when we connect diverse disciplines like biology, poetry, and computer code.",
+          "zh": "當我們大膽跨界融合生物學、古典詩詞與電腦程式碼時，真正的原創創造力便會燦爛盛開。"
+        },
+        {
+          "en": "Art education in elementary schools encourages unbounded imagination and self-expressive creativity in children.",
+          "zh": "國民小學的視覺藝術與美育課程，由衷鼓勵孩子們勇敢揮灑無拘無束的想像力與自我表達創造力。"
+        },
+        {
+          "en": "Creative problem-solving allowed the engineers to design an affordable water filter using local bamboo.",
+          "zh": "充滿巧思的創意思維與問題解決能力，讓工程師團隊就地取材利用當地竹材研發出平價高效的淨水濾芯。"
+        }
+      ],
+      "collocations": [
+        "boundless artistic creativity"
+      ]
+    },
+    {
+      "id": 5442,
+      "word": "integration",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪntəˋgreʃən]",
+      "definition": "左右大腦邏輯與藝術跨域整合",
+      "cefr": "B1",
+      "topic": "腦力整合",
+      "examples": [
+        {
+          "en": "Seamless integration between analytical left-brain logic and imaginative right-brain artistry produces world-changing inventions.",
+          "zh": "將左腦嚴謹的邏輯分析與右腦天馬行空的藝術想像力進行完美整合，能催生改變世界的發明。"
+        },
+        {
+          "en": "The modern smartphone achieves flawless hardware and software integration to deliver exceptional user responsiveness.",
+          "zh": "現代頂級智慧型手機實現了軟硬體之間的天衣無縫高度整合，為使用者帶來極致流暢的操作反應體驗。"
+        },
+        {
+          "en": "Regional economic integration allows smaller neighboring nations to trade goods with zero tariff barriers.",
+          "zh": "區域經濟整合能讓地理位置相鄰的周邊小國之間以零關稅壁壘自由流通物資，實現互利共贏。"
+        }
+      ],
+      "collocations": [
+        "neural cognitive integration"
+      ]
+    },
+    {
+      "id": 5443,
+      "word": "vitality",
+      "pos": "n. [U]",
+      "phonetic": "[vaɪˋtælətɪ]",
+      "definition": "充沛飽滿的身心活力朝氣",
+      "cefr": "B1",
+      "topic": "巔峰精力",
+      "examples": [
+        {
+          "en": "Combining nutritious whole foods with restorative sleep fills your mornings with boundless mental vitality.",
+          "zh": "將營養豐富的原型食物與深度修復睡眠完美結合，能讓你的每個清晨都充滿源源不絕的心智活力。"
+        },
+        {
+          "en": "The mayor's revitalized waterfront promenade project restored vibrant cultural vitality to the old historic harbor.",
+          "zh": "市長推動的親水河畔景觀步道活化計畫，為這座昔日繁華的老歷史港區重新找回了蓬勃的文化活力。"
+        },
+        {
+          "en": "Regular cardiovascular exercise keeps the heart muscle strong and preserves youthful physical vitality into old age.",
+          "zh": "養成規律的心肺有氧運動習慣，能保持心肌收縮強健有力，並讓人在高齡歲月依然享有年輕飽滿的身心活力。"
+        }
+      ],
+      "collocations": [
+        "peak mental vitality"
+      ]
+    },
+    {
+      "id": 5444,
+      "word": "longevity",
+      "pos": "n. [U]",
+      "phonetic": "[lɑnˋdʒɛvətɪ]",
+      "definition": "大腦心智功能終身健康長青",
+      "cefr": "B1",
+      "topic": "健康願景",
+      "examples": [
+        {
+          "en": "Cognitive longevity is nurtured through regular physical exercise, social connection, and continuous learning.",
+          "zh": "透過規律運動、熱絡的親友社交與永不停歇的終身學習，悉心呵護一輩子大腦清明健康的心智長壽。"
+        },
+        {
+          "en": "The remarkable mechanical longevity of traditional mechanical watches makes them cherished family heirlooms.",
+          "zh": "傳統手工機械手錶經久耐用、跨越世紀的驚人壽命，使其成為歷久彌新且世代相傳的珍貴家族傳家寶。"
+        },
+        {
+          "en": "Scientists study centenarian populations in blue zones to unlock the biological secrets of human longevity.",
+          "zh": "現代遺傳醫學家深入調查全球著名的長壽藍區百歲人瑞聚落，旨在解開人類健康長壽的生物基因密碼。"
+        }
+      ],
+      "collocations": [
+        "lifelong cognitive longevity"
+      ]
+    },
+    {
+      "id": 5445,
+      "word": "awakening",
+      "pos": "n. [U]",
+      "phonetic": "[əˋwekənɪŋ]",
+      "definition": "撥開迷霧明心見性的心靈覺醒",
+      "cefr": "B1",
+      "topic": "心靈啟迪",
+      "examples": [
+        {
+          "en": "Experiencing a profound intellectual awakening inspires individuals to live with conscious intentionality.",
+          "zh": "經歷一場深刻的心智覺醒啟迪，啟發人們撥開世俗迷霧，以全然自覺與清醒的態度開創人生。"
+        },
+        {
+          "en": "The sunrise birdsong marked the awakening of the dormant mountain forest after a freezing winter night.",
+          "zh": "破曉時分清脆悅耳的林間鳥鳴，標誌著整座沉睡已久的高山森林在寒冬夜幕褪去後的生機甦醒。"
+        },
+        {
+          "en": "His near-death experience served as a dramatic life awakening that caused him to prioritize his family over work.",
+          "zh": "那場突如其來的瀕死重大意外成為他人生中如當頭棒喝般的劇烈覺醒，讓他徹底意識到家庭遠比工作重要。"
+        }
+      ],
+      "collocations": [
+        "profound spiritual awakening"
+      ]
+    },
+    {
+      "id": 5446,
+      "word": "tranquility",
+      "pos": "n. [U]",
+      "phonetic": "[træŋˋkwɪlətɪ]",
+      "definition": "處變不驚波瀾不起的內心寧靜",
+      "cefr": "B1",
+      "topic": "定力修養",
+      "examples": [
+        {
+          "en": "Cultivating unshakable inner tranquility enables one to navigate life’s turbulent storms with graceful poise.",
+          "zh": "在心中涵養處變不驚的內心寧靜，能讓你在狂風暴雨中依然優雅從容、泰然自若。"
+        },
+        {
+          "en": "We escaped the chaotic traffic of downtown Taipei to seek peaceful tranquility at a high-mountain tea farm.",
+          "zh": "我們暫時逃離台北市中心水洩不通的喧鬧車流，前往高海拔的高山茶園尋覓一份與世隔絕的寧靜清幽。"
+        },
+        {
+          "en": "The sound of gentle ocean waves lapping against the shore filled the quiet evening with soothing tranquility.",
+          "zh": "岸邊溫柔的海浪輕拍礁岩所發出的規律潮水聲，為寂靜清涼的濱海夏夜帶來了無比舒暢的祥和寧靜。"
+        }
+      ],
+      "collocations": [
+        "unshakable inner tranquility"
+      ]
+    },
+    {
+      "id": 5447,
+      "word": "potential",
+      "pos": "n. [U]",
+      "phonetic": "[pəˋtɛnʃəl]",
+      "definition": "徹底解鎖大腦無限心智潛能",
+      "cefr": "B1",
+      "topic": "自我超越",
+      "examples": [
+        {
+          "en": "Dedicated daily practice unlocks the boundless hidden potential resting dormant within every human mind.",
+          "zh": "堅持每日專注不懈的精進修練，能徹底喚醒並解鎖潛藏在每個人大腦深處沉睡的無限潛能。"
+        },
+        {
+          "en": "The experienced high school basketball coach recognized the young player’s extraordinary athletic potential.",
+          "zh": "這位經驗豐富的高中籃球總教練眼光獨到，一眼便看出了這位年輕高一新秀驚人的運動爆發潛力。"
+        },
+        {
+          "en": "Engineers evaluate the energy generation potential of geothermal vents along the volcanic mountain range.",
+          "zh": "地質工程師深入勘測並精確評估大屯火山群周邊地熱噴氣孔開發深層地熱發電的巨大能源潛能。"
+        }
+      ],
+      "collocations": [
+        "unlock brain potential"
+      ]
+    },
+    {
+      "id": 5448,
+      "word": "mastery",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmæstərɪ]",
+      "definition": "主宰掌控自我心智與命運的掌控力",
+      "cefr": "B1",
+      "topic": "自我主宰",
+      "examples": [
+        {
+          "en": "True self-mastery begins with learning how to govern our own thoughts, habits, and emotional reactions.",
+          "zh": "真正的自我主宰掌控力，始於學會如何自律管理我們每天的念頭、生活習慣與情緒反應。"
+        },
+        {
+          "en": "Achieving complete technical mastery over the classical grand piano requires thousands of hours of deliberate practice.",
+          "zh": "想要在古典演奏級平台鋼琴上達到爐火純青的頂尖技藝精通，需要歷經數以萬計小時的刻意練習。"
+        },
+        {
+          "en": "The chef demonstrated effortless culinary mastery as he sliced sashimi with blinding speed and elegance.",
+          "zh": "這位米其林壽司主廚展現了渾然天成的大師級熟練身手，以閃電般的刀工速度與優雅刀法厚切頂級生魚片。"
+        }
+      ],
+      "collocations": [
+        "achieve self-mastery"
+      ]
+    },
+    {
+      "id": 5449,
+      "word": "harmony",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhɑrmənɪ]",
+      "definition": "身心靈各層面均衡和諧共鳴",
+      "cefr": "B1",
+      "topic": "內在平衡",
+      "examples": [
+        {
+          "en": "Living in balance aligns thoughts, actions, and values in joyful, sustainable inner harmony.",
+          "zh": "活在身心靈平衡之中，讓一個人的思想、言行與崇高價值觀在歡樂中達成圓融完美的內在和諧。"
+        },
+        {
+          "en": "The traditional village community lived in respectful ecological harmony with the surrounding cedar forest.",
+          "zh": "這個傳統的原住民山林部落聚落，千百年來始終與周遭環抱的神木森林維持著謙卑共生的生態和諧。"
+        },
+        {
+          "en": "The violin, cello, and flute blended their melodies together in exquisite orchestral harmony.",
+          "zh": "小提琴、大提琴與長笛在舞台上將各自的優美旋律交織共鳴，演繹出極具層次感的精妙交響和聲。"
+        }
+      ],
+      "collocations": [
+        "complete inner harmony"
+      ]
+    },
+    {
+      "id": 5450,
+      "word": "wisdom",
+      "pos": "n. [U]",
+      "phonetic": "[ˋwɪzdəm]",
+      "definition": "洞悉自我與宇宙運行的終極智慧",
+      "cefr": "B1",
+      "topic": "崇高境界",
+      "examples": [
+        {
+          "en": "The highest fruit of neuroscience and self-reflection is the gradual blossoming of deep, compassionate wisdom.",
+          "zh": "神經科學與內省修為結出的最甜美果實，莫過於在歲月中緩緩綻放、照亮自他生命的深刻慈悲智慧。"
+        },
+        {
+          "en": "Grandmothers often share timeless folk wisdom about using natural herbs to soothe common colds.",
+          "zh": "外婆經常與晚輩們分享傳承百年的民間生活智慧，傳授如何運用天然生薑與草藥舒緩感冒不適。"
+        },
+        {
+          "en": "True intellectual wisdom lies in acknowledging the limits of our knowledge and remaining humble learners.",
+          "zh": "真正高尚深遠的智慧，在於能夠坦然承認個人認知的有限邊界，並一生永遠保持謙遜好學的求知熱忱。"
+        }
+      ],
+      "collocations": [
+        "profound and compassionate wisdom"
+      ]
+    }
+  ]
+}

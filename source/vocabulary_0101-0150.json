@@ -1,0 +1,1359 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A1–B1）",
+  "section": "第 101–150 個單字（CEFR A1 基礎入門）",
+  "batch": "0101-0150",
+  "range": "101–150",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 101,
+      "word": "car",
+      "pos": "n.",
+      "phonetic": "[kɑr]",
+      "definition": "車子；汽車",
+      "cefr": "A1",
+      "topic": "交通",
+      "examples": [
+        {
+          "en": "My dad washes his car every Sunday.",
+          "zh": "我爸爸每週日都洗車。"
+        },
+        {
+          "en": "It is difficult to find a parking space for your car downtown.",
+          "zh": "在市中心很難為你的車找到停車位。"
+        },
+        {
+          "en": "We decided to rent a car for our road trip across the island.",
+          "zh": "我們決定租一輛車在島上展開公路旅行。"
+        }
+      ],
+      "collocations": [
+        "drive a car",
+        "by car"
+      ]
+    },
+    {
+      "id": 102,
+      "word": "bus",
+      "pos": "n.",
+      "phonetic": "[bʌs]",
+      "definition": "公車；巴士",
+      "cefr": "A1",
+      "topic": "交通",
+      "examples": [
+        {
+          "en": "We waited at the bus stop for twenty minutes.",
+          "zh": "我們在公車站牌等了二十分鐘。"
+        },
+        {
+          "en": "You can tap your transportation card when you board the bus.",
+          "zh": "上公車時你可以感應交通卡。"
+        },
+        {
+          "en": "The number 285 bus takes you directly to the museum.",
+          "zh": "285 路公車可以直接載你到博物館。"
+        }
+      ],
+      "collocations": [
+        "take a bus",
+        "bus stop"
+      ]
+    },
+    {
+      "id": 103,
+      "word": "train",
+      "pos": "n., v.",
+      "phonetic": "[tren]",
+      "definition": "火車；列車；訓練",
+      "cefr": "A1",
+      "topic": "交通",
+      "examples": [
+        {
+          "en": "The train from Taipei to Kaohsiung is very fast.",
+          "zh": "從台北到高雄的火車非常快。"
+        },
+        {
+          "en": "We need to train hard to win the championship.",
+          "zh": "我們需要努力訓練才能贏得冠軍。"
+        },
+        {
+          "en": "Be sure to arrive at the train platform five minutes before departure.",
+          "zh": "務必在發車前五分鐘抵達火車月台。"
+        }
+      ],
+      "collocations": [
+        "by train",
+        "train station"
+      ]
+    },
+    {
+      "id": 104,
+      "word": "MRT",
+      "pos": "n.",
+      "phonetic": "[͵ɛm ɑr ˈti]",
+      "definition": "捷運（大眾捷運系統）",
+      "cefr": "A1",
+      "topic": "交通",
+      "examples": [
+        {
+          "en": "Taking the MRT is very convenient in Taipei.",
+          "zh": "在台北搭捷運非常方便。"
+        },
+        {
+          "en": "Eating and drinking are strictly prohibited on the MRT.",
+          "zh": "捷運系統內嚴格禁止飲食。"
+        },
+        {
+          "en": "Which MRT line should I transfer to for the night market?",
+          "zh": "我應該轉乘哪條捷運路線去夜市？"
+        }
+      ],
+      "collocations": [
+        "take the MRT",
+        "MRT station"
+      ]
+    },
+    {
+      "id": 105,
+      "word": "bicycle / bike",
+      "pos": "n.",
+      "phonetic": "[ˋbaɪsɪk!] / [baɪk]",
+      "definition": "腳踏車；自行車",
+      "cefr": "A1",
+      "topic": "交通",
+      "examples": [
+        {
+          "en": "YouBike is a popular bicycle rental system in Taiwan.",
+          "zh": "YouBike 是台灣受歡迎的公共自行車系統。"
+        },
+        {
+          "en": "Riding a bicycle along the riverside is a wonderful weekend activity.",
+          "zh": "週末沿著河濱騎腳踏車是一項很棒的活動。"
+        },
+        {
+          "en": "Remember to lock your bike when you park it outside.",
+          "zh": "將腳踏車停在室外時記得上鎖。"
+        }
+      ],
+      "collocations": [
+        "ride a bike",
+        "public bicycle"
+      ]
+    },
+    {
+      "id": 106,
+      "word": "scooter",
+      "pos": "n.",
+      "phonetic": "[ˋskutɚ]",
+      "definition": "機車；速克達",
+      "cefr": "A1",
+      "topic": "交通",
+      "examples": [
+        {
+          "en": "Many people ride scooters to work in Taiwan.",
+          "zh": "在台灣許多人騎機車上班。"
+        },
+        {
+          "en": "Always wear a safety helmet when riding a scooter.",
+          "zh": "騎機車時一定要配戴安全帽。"
+        },
+        {
+          "en": "Scooters make it easy to weave through busy city traffic.",
+          "zh": "機車讓人很容易穿梭在繁忙的市區車流中。"
+        }
+      ],
+      "collocations": [
+        "ride a scooter",
+        "scooter helmet"
+      ]
+    },
+    {
+      "id": 107,
+      "word": "taxi",
+      "pos": "n.",
+      "phonetic": "[ˋtæksɪ]",
+      "definition": "計程車",
+      "cefr": "A1",
+      "topic": "交通",
+      "examples": [
+        {
+          "en": "Let's call a taxi because it's raining heavily.",
+          "zh": "下大雨了，我們叫計程車吧。"
+        },
+        {
+          "en": "Yellow taxis can be flagged down easily on the street.",
+          "zh": "黃色計程車在街上很容易隨招隨停。"
+        },
+        {
+          "en": "The taxi driver was very friendly and recommended great local restaurants.",
+          "zh": "計程車司機非常友善，還推薦了很棒的在地美食。"
+        }
+      ],
+      "collocations": [
+        "take a taxi",
+        "call a taxi"
+      ]
+    },
+    {
+      "id": 108,
+      "word": "airplane / plane",
+      "pos": "n.",
+      "phonetic": "[ˋɛrˌplen] / [plen]",
+      "definition": "飛機",
+      "cefr": "A1",
+      "topic": "交通與旅遊",
+      "examples": [
+        {
+          "en": "We watched the airplane take off at the airport.",
+          "zh": "我們在機場看著飛機起飛。"
+        },
+        {
+          "en": "Please turn your mobile phones to airplane mode during flight.",
+          "zh": "飛行期間請將手機轉為飛航模式。"
+        },
+        {
+          "en": "It takes about three hours by plane from Taipei to Tokyo.",
+          "zh": "從台北搭飛機到東京大約需要三個小時。"
+        }
+      ],
+      "collocations": [
+        "by airplane",
+        "get on a plane"
+      ]
+    },
+    {
+      "id": 109,
+      "word": "boat",
+      "pos": "n.",
+      "phonetic": "[bot]",
+      "definition": "小船；小舟",
+      "cefr": "A1",
+      "topic": "交通與休閒",
+      "examples": [
+        {
+          "en": "We took a boat tour around Sun Moon Lake.",
+          "zh": "我們搭船遊覽日月潭。"
+        },
+        {
+          "en": "The fishermen returned to port with their small wooden boats.",
+          "zh": "漁夫們划著他們的小木船返回港口。"
+        },
+        {
+          "en": "A rowing boat is available for rent in the park.",
+          "zh": "公園裡有提供划艇租借。"
+        }
+      ],
+      "collocations": [
+        "take a boat",
+        "fishing boat"
+      ]
+    },
+    {
+      "id": 110,
+      "word": "ship",
+      "pos": "n., v.",
+      "phonetic": "[ʃɪp]",
+      "definition": "輪船；大船；運送",
+      "cefr": "A1",
+      "topic": "交通與物流",
+      "examples": [
+        {
+          "en": "A huge cargo ship entered the harbor.",
+          "zh": "一艘巨大的貨輪駛入了港口。"
+        },
+        {
+          "en": "The company will ship your order within two business days.",
+          "zh": "公司將在兩個工作天內運送您的訂單。"
+        },
+        {
+          "en": "We took a luxury cruise ship to explore the Mediterranean islands.",
+          "zh": "我們搭乘豪華郵輪探索地中海群島。"
+        }
+      ],
+      "collocations": [
+        "cruise ship",
+        "ship goods"
+      ]
+    },
+    {
+      "id": 111,
+      "word": "station",
+      "pos": "n.",
+      "phonetic": "[ˋsteʃən]",
+      "definition": "車站；局；站",
+      "cefr": "A1",
+      "topic": "交通與場所",
+      "examples": [
+        {
+          "en": "I will meet you at Main Station at noon.",
+          "zh": "我中午在台北車站跟你碰面。"
+        },
+        {
+          "en": "The police station is right next to the post office.",
+          "zh": "警察局就在郵局隔壁。"
+        },
+        {
+          "en": "We stopped at a gas station to refuel the vehicle.",
+          "zh": "我們停在加油站給車子加油。"
+        }
+      ],
+      "collocations": [
+        "train station",
+        "police station"
+      ]
+    },
+    {
+      "id": 112,
+      "word": "airport",
+      "pos": "n.",
+      "phonetic": "[ˋɛrˌport]",
+      "definition": "機場；航空站",
+      "cefr": "A1",
+      "topic": "交通與旅遊",
+      "examples": [
+        {
+          "en": "Taoyuan International Airport is very busy.",
+          "zh": "桃園國際機場非常繁忙。"
+        },
+        {
+          "en": "We arrived at the airport two hours before our flight.",
+          "zh": "我們在航班起飛前兩小時抵達機場。"
+        },
+        {
+          "en": "An airport express train links the terminal directly to the city center.",
+          "zh": "機場快捷列車將航廈直接連結至市中心。"
+        }
+      ],
+      "collocations": [
+        "at the airport",
+        "airport shuttle"
+      ]
+    },
+    {
+      "id": 113,
+      "word": "stop",
+      "pos": "v., n.",
+      "phonetic": "[stɑp]",
+      "definition": "停止；停下；公車站牌",
+      "cefr": "A1",
+      "topic": "交通與動作",
+      "examples": [
+        {
+          "en": "The bus stops right in front of the school.",
+          "zh": "公車剛好停在學校正前方。"
+        },
+        {
+          "en": "Please stop talking and open your textbooks to page ten.",
+          "zh": "請停止講話，並翻開課本第十頁。"
+        },
+        {
+          "en": "There is a red stop sign at the street intersection.",
+          "zh": "街角十字路口有一個紅色的停車標誌。"
+        }
+      ],
+      "collocations": [
+        "bus stop",
+        "stop doing"
+      ]
+    },
+    {
+      "id": 114,
+      "word": "go",
+      "pos": "v.",
+      "phonetic": "[go]",
+      "definition": "去；前往；進行",
+      "cefr": "A1",
+      "topic": "日常生活與移動",
+      "examples": [
+        {
+          "en": "Let's go home together after class.",
+          "zh": "放學後我們一起回家吧。"
+        },
+        {
+          "en": "Do you want to go shopping at the department store this weekend?",
+          "zh": "這個週末你想去百貨公司逛街嗎？"
+        },
+        {
+          "en": "Time goes by so quickly when you are having fun.",
+          "zh": "玩得開心時時間過得真快。"
+        }
+      ],
+      "collocations": [
+        "go home",
+        "go shopping"
+      ]
+    },
+    {
+      "id": 115,
+      "word": "come",
+      "pos": "v.",
+      "phonetic": "[kʌm]",
+      "definition": "來；來到",
+      "cefr": "A1",
+      "topic": "日常生活與移動",
+      "examples": [
+        {
+          "en": "Welcome! Come in and sit down.",
+          "zh": "歡迎！請進來坐下。"
+        },
+        {
+          "en": "Where do you come from originally?",
+          "zh": "你最初來自哪裡？"
+        },
+        {
+          "en": "Dreams come true if you work persistently towards them.",
+          "zh": "只要持之以恆努力，夢想就會實現。"
+        }
+      ],
+      "collocations": [
+        "come in",
+        "come from"
+      ]
+    },
+    {
+      "id": 116,
+      "word": "walk",
+      "pos": "v., n.",
+      "phonetic": "[wɔk]",
+      "definition": "走路；步行；散步",
+      "cefr": "A1",
+      "topic": "日常生活與運動",
+      "examples": [
+        {
+          "en": "I like to walk my dog in the park.",
+          "zh": "我喜歡在公園裡溜狗散步。"
+        },
+        {
+          "en": "It is healthy to take a twenty-minute walk after dinner.",
+          "zh": "晚餐後散步二十分鐘對身體很有益處。"
+        },
+        {
+          "en": "We decided to walk to the museum instead of taking the bus.",
+          "zh": "我們決定走路去博物館而不是搭公車。"
+        }
+      ],
+      "collocations": [
+        "take a walk",
+        "walk to school"
+      ]
+    },
+    {
+      "id": 117,
+      "word": "run",
+      "pos": "v., n.",
+      "phonetic": "[rʌn]",
+      "definition": "跑步；奔馳；經營",
+      "cefr": "A1",
+      "topic": "日常生活與運動",
+      "examples": [
+        {
+          "en": "He runs three kilometers every morning.",
+          "zh": "他每天早上跑三公里。"
+        },
+        {
+          "en": "Don't run in the school hallway, or you might trip and fall.",
+          "zh": "不要在學校走廊奔跑，否則可能會絆倒受傷。"
+        },
+        {
+          "en": "His uncle has run a successful family restaurant for twenty years.",
+          "zh": "他的叔叔經營一間成功的家族餐廳已有二十年。"
+        }
+      ],
+      "collocations": [
+        "go running",
+        "run fast"
+      ]
+    },
+    {
+      "id": 118,
+      "word": "drive",
+      "pos": "v., n.",
+      "phonetic": "[draɪv]",
+      "definition": "開車；駕駛；兜風",
+      "cefr": "A1",
+      "topic": "交通與動作",
+      "examples": [
+        {
+          "en": "My mother learned to drive last year.",
+          "zh": "我媽媽去年學會了開車。"
+        },
+        {
+          "en": "Always drive carefully and obey the local speed limits.",
+          "zh": "開車務必謹慎，並遵守當地的速限。"
+        },
+        {
+          "en": "We went for a scenic drive along the northeast coast.",
+          "zh": "我們開車沿著東北角海岸進行了一趟風景兜風。"
+        }
+      ],
+      "collocations": [
+        "drive safely",
+        "go for a drive"
+      ]
+    },
+    {
+      "id": 119,
+      "word": "ride",
+      "pos": "v., n.",
+      "phonetic": "[raɪd]",
+      "definition": "騎乘；搭乘",
+      "cefr": "A1",
+      "topic": "交通與動作",
+      "examples": [
+        {
+          "en": "Children love to ride bikes in the yard.",
+          "zh": "小朋友們喜歡在院子裡騎腳踏車。"
+        },
+        {
+          "en": "Can you give me a ride to the train station tomorrow?",
+          "zh": "你明天可以順路載我一程去火車站嗎？"
+        },
+        {
+          "en": "He learned how to ride a horse during summer camp.",
+          "zh": "他在夏令營期間學會了騎馬。"
+        }
+      ],
+      "collocations": [
+        "ride a bike",
+        "ride a horse"
+      ]
+    },
+    {
+      "id": 120,
+      "word": "fly",
+      "pos": "v., n.",
+      "phonetic": "[flaɪ]",
+      "definition": "飛行；開飛機；蒼蠅",
+      "cefr": "A1",
+      "topic": "交通與自然",
+      "examples": [
+        {
+          "en": "Birds can fly high in the blue sky.",
+          "zh": "鳥兒能在藍天中展翅高飛。"
+        },
+        {
+          "en": "We will fly to Tokyo for our vacation next Monday.",
+          "zh": "我們下週一將搭飛機前往東京度假。"
+        },
+        {
+          "en": "The children love to fly kites on windy autumn afternoons.",
+          "zh": "孩子們喜歡在多風的秋日午後放風箏。"
+        }
+      ],
+      "collocations": [
+        "fly a kite",
+        "fly to Japan"
+      ]
+    },
+    {
+      "id": 121,
+      "word": "red",
+      "pos": "adj., n.",
+      "phonetic": "[rɛd]",
+      "definition": "紅色的；紅色",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "The traffic light turned red, so we stopped.",
+          "zh": "紅綠燈變紅燈了，所以我們停了下來。"
+        },
+        {
+          "en": "She wore a bright red coat that stood out in the snow.",
+          "zh": "她穿了一件亮紅色的外套，在雪地中格外顯眼。"
+        },
+        {
+          "en": "Red apples taste sweet and crisp in autumn.",
+          "zh": "秋天的紅蘋果吃起來又甜又脆。"
+        }
+      ],
+      "collocations": [
+        "red light",
+        "dark red"
+      ]
+    },
+    {
+      "id": 122,
+      "word": "blue",
+      "pos": "adj., n.",
+      "phonetic": "[blu]",
+      "definition": "藍色的；藍色；憂鬱的",
+      "cefr": "A1",
+      "topic": "顏色與情緒",
+      "examples": [
+        {
+          "en": "The ocean looks deep blue today.",
+          "zh": "今天的海洋看起來一片深藍。"
+        },
+        {
+          "en": "She wore a lovely sky-blue dress to the party.",
+          "zh": "她穿了一件漂亮的天藍色洋裝去參加派對。"
+        },
+        {
+          "en": "Whenever I feel blue, listening to gentle music cheers me up.",
+          "zh": "每當我心情沮喪時，聽輕柔的音樂總能讓我振作起來。"
+        }
+      ],
+      "collocations": [
+        "sky blue",
+        "feel blue"
+      ]
+    },
+    {
+      "id": 123,
+      "word": "yellow",
+      "pos": "adj., n.",
+      "phonetic": "[ˋjɛlo]",
+      "definition": "黃色的；黃色",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "School buses in the US are bright yellow.",
+          "zh": "美國的校車是亮黃色的。"
+        },
+        {
+          "en": "Sunflowers turned their yellow faces towards the warm sun.",
+          "zh": "向日葵把黃色的花盤朝向溫暖的太陽。"
+        },
+        {
+          "en": "She highlighted the important keywords with a yellow marker.",
+          "zh": "她用黃色螢光筆畫出重要關鍵字。"
+        }
+      ],
+      "collocations": [
+        "bright yellow",
+        "light yellow"
+      ]
+    },
+    {
+      "id": 124,
+      "word": "green",
+      "pos": "adj., n.",
+      "phonetic": "[grin]",
+      "definition": "綠色的；綠色；環保的",
+      "cefr": "A1",
+      "topic": "顏色與環境",
+      "examples": [
+        {
+          "en": "Eat more green vegetables to stay healthy.",
+          "zh": "多吃綠色蔬菜以保持健康。"
+        },
+        {
+          "en": "The hills turn vibrant green during springtime.",
+          "zh": "春天時山丘轉變為生機盎然的翠綠色。"
+        },
+        {
+          "en": "Many people choose public transit to support green living.",
+          "zh": "許多人選擇大眾運輸來支持綠色環保生活。"
+        }
+      ],
+      "collocations": [
+        "green tea",
+        "green living"
+      ]
+    },
+    {
+      "id": 125,
+      "word": "black",
+      "pos": "adj., n.",
+      "phonetic": "[blæk]",
+      "definition": "黑色的；黑色",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "He wore a black jacket to the party.",
+          "zh": "他穿了一件黑色夾克去參加聚會。"
+        },
+        {
+          "en": "The teacher wrote key concepts with chalk on the black board.",
+          "zh": "老師用粉筆在黑板上寫下核心概念。"
+        },
+        {
+          "en": "My father prefers his coffee black without any sugar.",
+          "zh": "我父親喜歡喝不加糖的黑咖啡。"
+        }
+      ],
+      "collocations": [
+        "black coffee",
+        "black and white"
+      ]
+    },
+    {
+      "id": 126,
+      "word": "white",
+      "pos": "adj., n.",
+      "phonetic": "[hwaɪt]",
+      "definition": "白色的；白色",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "White snow covered the mountain top.",
+          "zh": "白雪覆蓋了山頂。"
+        },
+        {
+          "en": "Please write your answers on a blank sheet of white paper.",
+          "zh": "請將答案寫在一張空白的白紙上。"
+        },
+        {
+          "en": "The doctor wore a clean white lab coat.",
+          "zh": "醫生穿著一件乾淨的白長袍。"
+        }
+      ],
+      "collocations": [
+        "pure white",
+        "white board"
+      ]
+    },
+    {
+      "id": 127,
+      "word": "orange",
+      "pos": "adj., n.",
+      "phonetic": "[ˋɔrɪndʒ]",
+      "definition": "橘色的；柳橙；橘色",
+      "cefr": "A1",
+      "topic": "顏色與飲食",
+      "examples": [
+        {
+          "en": "The sunset painted the sky orange and gold.",
+          "zh": "夕陽把天空染成了橘金雙色。"
+        },
+        {
+          "en": "Eating an orange provides your body with rich vitamin C.",
+          "zh": "吃一顆柳橙能為身體提供豐富的維生素 C。"
+        },
+        {
+          "en": "Road construction workers wear bright orange safety vests.",
+          "zh": "道路施工人員穿著鮮橘色的反光安全背心。"
+        }
+      ],
+      "collocations": [
+        "orange juice",
+        "bright orange"
+      ]
+    },
+    {
+      "id": 128,
+      "word": "brown",
+      "pos": "adj., n.",
+      "phonetic": "[braʊn]",
+      "definition": "棕色的；褐色",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "The puppy has lovely brown eyes.",
+          "zh": "這隻小狗有一對可愛的棕色眼睛。"
+        },
+        {
+          "en": "Dry leaves turned brown and fell gently from the trees.",
+          "zh": "枯葉變成了褐色，從樹上輕輕飄落。"
+        },
+        {
+          "en": "He wore a stylish pair of dark brown leather shoes.",
+          "zh": "他穿了一雙時髦的深棕色皮鞋。"
+        }
+      ],
+      "collocations": [
+        "brown sugar",
+        "dark brown"
+      ]
+    },
+    {
+      "id": 129,
+      "word": "pink",
+      "pos": "adj., n.",
+      "phonetic": "[pɪŋk]",
+      "definition": "粉紅色的；粉紅色",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "Cherry blossoms are lovely shades of pink.",
+          "zh": "櫻花呈現出可愛的粉紅色調。"
+        },
+        {
+          "en": "The baby girl was wrapped in a soft pink blanket.",
+          "zh": "女嬰被包裹在一條柔軟的粉紅色毛毯裡。"
+        },
+        {
+          "en": "Flamingos get their bright pink color from the food they eat.",
+          "zh": "紅鶴明亮的粉紅色澤源自牠們所吃的食物。"
+        }
+      ],
+      "collocations": [
+        "light pink",
+        "pink ribbon"
+      ]
+    },
+    {
+      "id": 130,
+      "word": "purple",
+      "pos": "adj., n.",
+      "phonetic": "[ˋpɝp!]",
+      "definition": "紫色的；紫色",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "Lavender flowers have a nice purple color.",
+          "zh": "薰衣草花朵擁有美麗的紫色。"
+        },
+        {
+          "en": "The evening sky slowly faded into deep purple before nightfall.",
+          "zh": "傍晚的天空在入夜前逐漸轉變為深紫色。"
+        },
+        {
+          "en": "She picked a bunch of ripe purple grapes from the vineyard.",
+          "zh": "她從葡萄園摘了一串熟成的紫葡萄。"
+        }
+      ],
+      "collocations": [
+        "deep purple",
+        "purple flowers"
+      ]
+    },
+    {
+      "id": 131,
+      "word": "gray / grey",
+      "pos": "adj., n.",
+      "phonetic": "[gre]",
+      "definition": "灰色的；灰色（英式常用 grey）",
+      "cefr": "A1",
+      "topic": "顏色",
+      "examples": [
+        {
+          "en": "The sky turned gray before the thunderstorm.",
+          "zh": "雷陣雨前天空變成了灰色。"
+        },
+        {
+          "en": "My grandfather has distinguished silver-gray hair.",
+          "zh": "我爺爺有一頭顯眼的銀灰色頭髮。"
+        },
+        {
+          "en": "Concrete buildings lined both sides of the gray city street.",
+          "zh": "灰暗的城市街道兩旁矗立著混凝土建築。"
+        }
+      ],
+      "collocations": [
+        "gray hair",
+        "dark gray"
+      ]
+    },
+    {
+      "id": 132,
+      "word": "color / colour",
+      "pos": "n., v.",
+      "phonetic": "[ˋkʌlɚ]",
+      "definition": "顏色；塗色（英式 colour）",
+      "cefr": "A1",
+      "topic": "顏色與外觀",
+      "examples": [
+        {
+          "en": "What is your favorite color?",
+          "zh": "你最喜歡什麼顏色？"
+        },
+        {
+          "en": "The garden is full of vibrant flowers in every color imaginable.",
+          "zh": "花園裡開滿了各式各樣顏色鮮豔的花朵。"
+        },
+        {
+          "en": "The artist mixed blue and yellow to create a new green color.",
+          "zh": "畫家將藍色與黃色調和以創造出嶄新的綠色。"
+        }
+      ],
+      "collocations": [
+        "favorite color",
+        "bright color"
+      ]
+    },
+    {
+      "id": 133,
+      "word": "head",
+      "pos": "n., v.",
+      "phonetic": "[hɛd]",
+      "definition": "頭部；首領；朝…前進",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "Wear a helmet to protect your head.",
+          "zh": "戴上安全帽以保護你的頭部。"
+        },
+        {
+          "en": "He nodded his head in agreement with the teacher's suggestion.",
+          "zh": "他點頭贊成老師的建議。"
+        },
+        {
+          "en": "After dinner, we decided to head for the night market.",
+          "zh": "晚餐後，我們決定前往夜市。"
+        }
+      ],
+      "collocations": [
+        "shake head",
+        "head for"
+      ]
+    },
+    {
+      "id": 134,
+      "word": "eye",
+      "pos": "n., v.",
+      "phonetic": "[aɪ]",
+      "definition": "眼睛；注視",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "Close your eyes and make a wish.",
+          "zh": "閉上你的眼睛並許個願。"
+        },
+        {
+          "en": "She looked into my eyes and smiled warmly.",
+          "zh": "她注視著我的眼睛並溫暖地微笑了。"
+        },
+        {
+          "en": "Please keep an eye on my backpack while I buy a drink.",
+          "zh": "我去買杯飲料時，請幫忙照看我的背包。"
+        }
+      ],
+      "collocations": [
+        "open eyes",
+        "keep an eye on"
+      ]
+    },
+    {
+      "id": 135,
+      "word": "nose",
+      "pos": "n.",
+      "phonetic": "[noz]",
+      "definition": "鼻子",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "Dogs have a very sensitive nose.",
+          "zh": "狗擁有非常靈敏的鼻子。"
+        },
+        {
+          "en": "I caught a cold and have a runny nose today.",
+          "zh": "我感冒了，今天一直流鼻水。"
+        },
+        {
+          "en": "The sweet scent of jasmine tickled her nose.",
+          "zh": "茉莉花的清甜香氣輕輕撲向她的鼻息。"
+        }
+      ],
+      "collocations": [
+        "runny nose",
+        "blow nose"
+      ]
+    },
+    {
+      "id": 136,
+      "word": "mouth",
+      "pos": "n.",
+      "phonetic": "[maʊθ]",
+      "definition": "嘴巴；口",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "Open your mouth so the doctor can check.",
+          "zh": "張開你的嘴巴讓醫生檢查。"
+        },
+        {
+          "en": "Don't speak with your mouth full of food.",
+          "zh": "嘴裡塞滿食物時不要說話。"
+        },
+        {
+          "en": "A wide smile spread across the little boy's mouth.",
+          "zh": "小男孩的嘴角揚起了燦爛的微笑。"
+        }
+      ],
+      "collocations": [
+        "open mouth",
+        "shut mouth"
+      ]
+    },
+    {
+      "id": 137,
+      "word": "ear",
+      "pos": "n.",
+      "phonetic": "[ɪr]",
+      "definition": "耳朵",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "Rabbits have long, cute ears.",
+          "zh": "兔子有著長長可愛的耳朵。"
+        },
+        {
+          "en": "Whisper the secret softly into my ear so no one else hears.",
+          "zh": "悄悄把秘密對我耳語，這樣別人才聽不到。"
+        },
+        {
+          "en": "He listened to music through his wireless earphones.",
+          "zh": "他透過無線耳機聆聽音樂。"
+        }
+      ],
+      "collocations": [
+        "lend an ear",
+        "ear drop"
+      ]
+    },
+    {
+      "id": 138,
+      "word": "face",
+      "pos": "n., v.",
+      "phonetic": "[fes]",
+      "definition": "臉部；面貌；面對",
+      "cefr": "A1",
+      "topic": "身體與社交",
+      "examples": [
+        {
+          "en": "Wash your face with warm water.",
+          "zh": "用溫水洗洗你的臉。"
+        },
+        {
+          "en": "A cheerful smile appeared on her face when she saw the gift.",
+          "zh": "當她看到禮物時，臉上露出了開朗的笑容。"
+        },
+        {
+          "en": "We must stay brave and face whatever challenges lie ahead.",
+          "zh": "我們必須保持勇敢，勇於面對眼前的一切挑戰。"
+        }
+      ],
+      "collocations": [
+        "face to face",
+        "smile on face"
+      ]
+    },
+    {
+      "id": 139,
+      "word": "hand",
+      "pos": "n., v.",
+      "phonetic": "[hænd]",
+      "definition": "手；遞交；交給",
+      "cefr": "A1",
+      "topic": "身體與動作",
+      "examples": [
+        {
+          "en": "Always wash your hands before meals.",
+          "zh": "飯前務必記得洗手。"
+        },
+        {
+          "en": "Raise your hand if you know the answer to this question.",
+          "zh": "如果你知道這道題目的答案，請舉手。"
+        },
+        {
+          "en": "Please hand in your assignment before noon tomorrow.",
+          "zh": "請在明天中午前繳交你的作業。"
+        }
+      ],
+      "collocations": [
+        "shake hands",
+        "hand in"
+      ]
+    },
+    {
+      "id": 140,
+      "word": "arm",
+      "pos": "n.",
+      "phonetic": "[ɑrm]",
+      "definition": "手臂；胳膊",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "He broke his arm during the baseball game.",
+          "zh": "他在棒球比賽中摔斷了手臂。"
+        },
+        {
+          "en": "She held the sleeping baby safely in her arms.",
+          "zh": "她將熟睡的嬰兒安穩抱在懷裡。"
+        },
+        {
+          "en": "Lift both arms above your head during the stretch.",
+          "zh": "伸展時請將雙臂高舉過頭。"
+        }
+      ],
+      "collocations": [
+        "arm in arm",
+        "left arm"
+      ]
+    },
+    {
+      "id": 141,
+      "word": "leg",
+      "pos": "n.",
+      "phonetic": "[lɛg]",
+      "definition": "腿；下肢",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "My legs feel tired after climbing the stairs.",
+          "zh": "爬完樓梯後我的雙腿感到很痠。"
+        },
+        {
+          "en": "He stretched his legs during the long flight to relax.",
+          "zh": "在長途飛行途中他伸展雙腿以放鬆身心。"
+        },
+        {
+          "en": "Flamingos often stand on one slender leg in shallow water.",
+          "zh": "紅鶴在淺水中經常單腿獨立。"
+        }
+      ],
+      "collocations": [
+        "long legs",
+        "cross legs"
+      ]
+    },
+    {
+      "id": 142,
+      "word": "foot",
+      "pos": "n.",
+      "phonetic": "[fʊt]",
+      "definition": "腳；英呎（複數 feet）",
+      "cefr": "A1",
+      "topic": "身體與度量",
+      "examples": [
+        {
+          "en": "My feet hurt after standing all day.",
+          "zh": "站了一整天後我的雙腳很痛。"
+        },
+        {
+          "en": "We explored the old mountain village entirely on foot.",
+          "zh": "我們完全徒步探索這座古老山城。"
+        },
+        {
+          "en": "The basketball player stands over six feet tall.",
+          "zh": "這位籃球運動員身高超過六英呎。"
+        }
+      ],
+      "collocations": [
+        "on foot",
+        "right foot"
+      ]
+    },
+    {
+      "id": 143,
+      "word": "finger",
+      "pos": "n.",
+      "phonetic": "[ˋfɪŋgɚ]",
+      "definition": "手指",
+      "cefr": "A1",
+      "topic": "身體",
+      "examples": [
+        {
+          "en": "Each hand has five fingers.",
+          "zh": "每隻手有五隻手指。"
+        },
+        {
+          "en": "Be careful not to cut your finger while slicing vegetables.",
+          "zh": "切蔬菜時請小心不要切到手指。"
+        },
+        {
+          "en": "Keep your fingers crossed that our school team wins the final match.",
+          "zh": "祈求好運，祝願我們校隊能贏得決賽。"
+        }
+      ],
+      "collocations": [
+        "index finger",
+        "cross fingers"
+      ]
+    },
+    {
+      "id": 144,
+      "word": "body",
+      "pos": "n.",
+      "phonetic": "[ˋbɑdɪ]",
+      "definition": "身體；身軀",
+      "cefr": "A1",
+      "topic": "身體與健康",
+      "examples": [
+        {
+          "en": "Regular exercise keeps your body strong.",
+          "zh": "規律運動能保持身體強健。"
+        },
+        {
+          "en": "Water makes up about sixty percent of the human body.",
+          "zh": "水分大約佔了人體重量的百分之六十。"
+        },
+        {
+          "en": "Good posture keeps your body and spine healthy.",
+          "zh": "良好的體態能維護身體與脊椎健康。"
+        }
+      ],
+      "collocations": [
+        "whole body",
+        "body temperature"
+      ]
+    },
+    {
+      "id": 145,
+      "word": "heart",
+      "pos": "n.",
+      "phonetic": "[hɑrt]",
+      "definition": "心臟；內心；愛心",
+      "cefr": "A1",
+      "topic": "身體與情感",
+      "examples": [
+        {
+          "en": "Exercise makes your heart pump faster.",
+          "zh": "運動能讓你的心跳加速。"
+        },
+        {
+          "en": "She thanked her teacher from the bottom of her heart.",
+          "zh": "她由衷地打從心底感謝她的老師。"
+        },
+        {
+          "en": "The student drew a small pink heart next to her friend's name.",
+          "zh": "這位學生在好友的名字旁畫了一顆小小的粉紅愛心。"
+        }
+      ],
+      "collocations": [
+        "from the heart",
+        "heart disease"
+      ]
+    },
+    {
+      "id": 146,
+      "word": "health",
+      "pos": "n.",
+      "phonetic": "[hɛlθ]",
+      "definition": "健康；體魄",
+      "cefr": "A1",
+      "topic": "健康",
+      "examples": [
+        {
+          "en": "Good health is the greatest wealth.",
+          "zh": "良好的健康是最大的財富。"
+        },
+        {
+          "en": "Drinking clean water and sleeping well protect your overall health.",
+          "zh": "飲用潔淨水與充足睡眠能守護你的整體健康。"
+        },
+        {
+          "en": "Public health guidelines helped keep the school safe.",
+          "zh": "公共衛生指引有助於維護校園的安全。"
+        }
+      ],
+      "collocations": [
+        "in good health",
+        "public health"
+      ]
+    },
+    {
+      "id": 147,
+      "word": "healthy",
+      "pos": "adj.",
+      "phonetic": "[ˋhɛlθɪ]",
+      "definition": "健康的；健壯的",
+      "cefr": "A1",
+      "topic": "健康",
+      "examples": [
+        {
+          "en": "Eating vegetables helps you stay healthy.",
+          "zh": "多吃蔬菜能幫助你維持健康。"
+        },
+        {
+          "en": "Maintaining a healthy diet gives you abundant energy throughout the day.",
+          "zh": "維持健康的飲食能讓你在整天保持充沛活力。"
+        },
+        {
+          "en": "Regular jogging is a very healthy lifestyle habit.",
+          "zh": "規律慢跑是一項非常健康的生活習慣。"
+        }
+      ],
+      "collocations": [
+        "healthy diet",
+        "healthy lifestyle"
+      ]
+    },
+    {
+      "id": 148,
+      "word": "sick",
+      "pos": "adj.",
+      "phonetic": "[sɪk]",
+      "definition": "生病的；不舒服的",
+      "cefr": "A1",
+      "topic": "健康",
+      "examples": [
+        {
+          "en": "If you feel sick, stay home and rest.",
+          "zh": "如果你感到不舒服，請留在家中休息。"
+        },
+        {
+          "en": "He took two days of sick leave because of a high fever.",
+          "zh": "他因為高燒請了兩天的病假。"
+        },
+        {
+          "en": "I felt car sick on the winding mountain roads.",
+          "zh": "在蜿蜒的山路上我感到有些暈車。"
+        }
+      ],
+      "collocations": [
+        "feel sick",
+        "sick leave"
+      ]
+    },
+    {
+      "id": 149,
+      "word": "doctor",
+      "pos": "n.",
+      "phonetic": "[ˋdɑktɚ]",
+      "definition": "醫生；醫師；博士",
+      "cefr": "A1",
+      "topic": "健康與職業",
+      "examples": [
+        {
+          "en": "You should see a doctor if your fever continues.",
+          "zh": "如果你發燒持續，應該去看醫生。"
+        },
+        {
+          "en": "The doctor examined the patient's throat and prescribed medicine.",
+          "zh": "醫生檢查了病人的喉嚨並開立處方藥。"
+        },
+        {
+          "en": "My elder sister wants to become an eye doctor.",
+          "zh": "我的姊姊想成為一名眼科醫生。"
+        }
+      ],
+      "collocations": [
+        "see a doctor",
+        "family doctor"
+      ]
+    },
+    {
+      "id": 150,
+      "word": "hospital",
+      "pos": "n.",
+      "phonetic": "[ˋhɑspɪt!]",
+      "definition": "醫院",
+      "cefr": "A1",
+      "topic": "健康與場所",
+      "examples": [
+        {
+          "en": "The hospital is just two blocks away.",
+          "zh": "醫院距離這裡只有兩條街。"
+        },
+        {
+          "en": "The injured cyclist was immediately rushed to the nearest hospital.",
+          "zh": "受傷的自行車騎士被立刻緊急送往最近的醫院。"
+        },
+        {
+          "en": "Volunteers visited the hospital to read cheerful books to sick children.",
+          "zh": "志工們走訪醫院，為生病的小朋友朗讀歡樂的故事書。"
+        }
+      ],
+      "collocations": [
+        "go to the hospital",
+        "hospital bed"
+      ]
+    }
+  ]
+}

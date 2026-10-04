@@ -1,0 +1,1319 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 3,651–3,700 個單字（CEFR B1 中級）",
+  "batch": "3651-3700",
+  "range": "3651–3700",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 3651,
+      "word": "photography",
+      "pos": "n. [U]",
+      "phonetic": "[fəˋtɑgrəfɪ]",
+      "definition": "攝影術；攝影藝術；照相",
+      "cefr": "B1",
+      "topic": "視覺藝術",
+      "examples": [
+        {
+          "en": "Street photography captures unposed, candid human moments in historic alleys.",
+          "zh": "街頭紀實攝影旨在老城巷弄中捕捉最真實自然、毫無擺拍痕跡的人情日常瞬間。"
+        },
+        {
+          "en": "She took up landscape photography as a creative hobby to connect with nature.",
+          "zh": "她將大自然風景攝影當作一門激發創意的嗜好，藉此走出戶外親近自然。"
+        },
+        {
+          "en": "Digital photography has made experimenting with lighting and angles much easier.",
+          "zh": "數位攝影技術的普及，讓攝影師在嘗試各種打光配置與刁鑽取景角度時更加隨心所欲。"
+        }
+      ],
+      "collocations": [
+        "street photography",
+        "portrait photography"
+      ]
+    },
+    {
+      "id": 3652,
+      "word": "photographer",
+      "pos": "n.",
+      "phonetic": "[fəˋtɑgrəfɚ]",
+      "definition": "攝影師；攝影愛好者",
+      "cefr": "B1",
+      "topic": "專業職業",
+      "examples": [
+        {
+          "en": "Professional wedding photographers skillfully guide couples during outdoor shoots.",
+          "zh": "專業婚紗攝影師在戶外婚紗外拍過程中熟練引導新人擺出自然甜蜜的互動姿態。"
+        },
+        {
+          "en": "The wildlife photographer waited patiently inside a camouflaged tent for six hours.",
+          "zh": "這位野生動物攝影師身穿迷彩偽裝服，在隱蔽帳棚中耐心地屏息蹲點守候了六個小時。"
+        },
+        {
+          "en": "An experienced photographer knows how to find beauty in everyday ordinary moments.",
+          "zh": "經驗老到的資深攝影師懂得在最尋常樸實的日常生活中，發掘令人動容的視覺美感。"
+        }
+      ],
+      "collocations": [
+        "professional photographer"
+      ]
+    },
+    {
+      "id": 3653,
+      "word": "mirrorless",
+      "pos": "adj.",
+      "phonetic": "[ˋmɪrɚlɪs]",
+      "definition": "無反光的；無反單眼相機的",
+      "cefr": "B1",
+      "topic": "相機科技",
+      "examples": [
+        {
+          "en": "Lightweight full-frame mirrorless cameras have revolutionized modern travel photography.",
+          "zh": "輕量小巧的全片幅無反單眼相機（Mirrorless）徹底顛覆並革新了現代旅遊攝影。"
+        },
+        {
+          "en": "Electronic viewfinders on mirrorless bodies display real-time exposure previews accurately.",
+          "zh": "無反相機機身搭載的高解析度電子觀景窗，能即時且精準地呈現最終曝光效果預覽。"
+        },
+        {
+          "en": "She switched from a bulky DSLR to a compact mirrorless system for her overseas assignments.",
+          "zh": "為了出國執行外景採訪任務的輕便性，她毅然將沉重笨重的傳統單眼換成了輕巧的無反系統。"
+        }
+      ],
+      "collocations": [
+        "mirrorless camera"
+      ]
+    },
+    {
+      "id": 3654,
+      "word": "lens",
+      "pos": "n.",
+      "phonetic": "[lɛnz]",
+      "definition": "相機鏡頭；鏡片；隱形眼鏡",
+      "cefr": "B1",
+      "topic": "光學元件",
+      "examples": [
+        {
+          "en": "Fast prime lenses with wide apertures create breathtaking portraits with creamy blur.",
+          "zh": "配備超大光圈的頂級大光圈定焦鏡頭能拍出主體極其銳利、背景如奶油般化開的人像。"
+        },
+        {
+          "en": "Keep your camera lens clean using a microfiber cloth and specialized optical spray.",
+          "zh": "平常請養成使用超細纖維拭鏡布與專用光學清潔液定期擦拭相機鏡頭的好習慣。"
+        },
+        {
+          "en": "A wide-angle lens allows you to capture sweeping mountain vistas and vast horizons.",
+          "zh": "超廣角鏡頭能讓你在畫面中一次納入連綿起伏的壯麗高山全景與浩瀚開闊的地平線。"
+        }
+      ],
+      "collocations": [
+        "prime lens",
+        "zoom lens"
+      ]
+    },
+    {
+      "id": 3655,
+      "word": "focal length",
+      "pos": "n. phr.",
+      "phonetic": "[ˋfok! lɛŋθ]",
+      "definition": "鏡頭焦距；焦段 (mm)",
+      "cefr": "B1",
+      "topic": "光學參數",
+      "examples": [
+        {
+          "en": "An 85mm focal length is widely considered the gold standard for flattering portraits.",
+          "zh": "85mm 鏡頭焦段被全球人像攝影師公認為雕塑人物立體五官與完美散景的黃金標準。"
+        },
+        {
+          "en": "Choosing a 24mm focal length lets landscape shooters include dramatic foreground rocks.",
+          "zh": "選用 24mm 超廣角焦段能讓風景攝影愛好者將前景紋理分明的奇岩怪石納入構圖中。"
+        },
+        {
+          "en": "The versatile zoom lens covers a broad focal length range from 24mm to 70mm.",
+          "zh": "這支多功能標準變焦鏡頭涵蓋了從 24mm 廣角至 70mm 中望遠的常用實用焦段範圍。"
+        }
+      ],
+      "collocations": [
+        "standard focal length"
+      ]
+    },
+    {
+      "id": 3656,
+      "word": "aperture",
+      "pos": "n.",
+      "phonetic": "[ˋæpɚtʃɚ]",
+      "definition": "光圈大小；孔徑 (f-stop)",
+      "cefr": "B1",
+      "topic": "曝光參數",
+      "examples": [
+        {
+          "en": "Opening the lens aperture to f/1.4 allows maximum light for low-light night shots.",
+          "zh": "將鏡頭光圈全開至 f/1.4 超大光圈能導入最充沛的進光量，輕鬆駕馭昏暗夜景微光。"
+        },
+        {
+          "en": "A narrow aperture like f/11 ensures sharp detail throughout the entire landscape photo.",
+          "zh": "縮小光圈至 f/11 等較小光圈，能確保風景照片從前景到遠景皆呈現出極致銳利的細節。"
+        },
+        {
+          "en": "Adjusting the lens aperture directly controls the depth of field in your photograph.",
+          "zh": "調節鏡頭光圈葉片的開合大小，能直接掌控畫面景深的深淺與背景虛化的程度。"
+        }
+      ],
+      "collocations": [
+        "wide aperture",
+        "lens aperture"
+      ]
+    },
+    {
+      "id": 3657,
+      "word": "bokeh",
+      "pos": "n. [U]",
+      "phonetic": "[ˋboke]",
+      "definition": "散景；背景虛化夢幻光斑",
+      "cefr": "B1",
+      "topic": "視覺效果",
+      "examples": [
+        {
+          "en": "The sparkling city night lights dissolved into gorgeous circular bokeh bubbles.",
+          "zh": "繁華都市璀璨絢麗的霓虹夜景在淺景深大光圈下化為一顆顆夢幻迷人的圓形光斑散景。"
+        },
+        {
+          "en": "Premium portrait lenses with rounded aperture blades produce smooth, creamy bokeh.",
+          "zh": "配備多片圓形光圈葉片的頂級人像鏡頭，能渲染出極致柔順滑潤、宛如奶油般的散景。"
+        },
+        {
+          "en": "The delicate flower stood out sharply against a dreamlike background of soft bokeh.",
+          "zh": "嬌豔欲滴的野花在柔和夢幻的光斑背景散景映襯下，顯得格外鮮明立體動人。"
+        }
+      ],
+      "collocations": [
+        "creamy bokeh",
+        "bokeh effect"
+      ]
+    },
+    {
+      "id": 3658,
+      "word": "shutter speed",
+      "pos": "n. phr.",
+      "phonetic": "[ˋʃʌtɚ spid]",
+      "definition": "快門速度",
+      "cefr": "B1",
+      "topic": "曝光參數",
+      "examples": [
+        {
+          "en": "Fast 1/2000s shutter speeds freeze fast-flying hummingbirds crisply in midair.",
+          "zh": "高達兩千分之一秒（1/2000s）的極速快門能將空中高速振翅的蜂鳥動作凝結於半空。"
+        },
+        {
+          "en": "Slow down your shutter speed to two seconds to blur water cascading over river stones.",
+          "zh": "將快門速度調慢至兩秒左右，能拍出溪水潺潺流過鵝卵石時如絹絲般滑順的動態模糊。"
+        },
+        {
+          "en": "Use a tripod whenever your shutter speed falls below one-sixtieth of a second to prevent camera shake.",
+          "zh": "當手持拍攝快門速度低於六十分之一秒時，務必架設三腳架以防止相機手震模糊。"
+        }
+      ],
+      "collocations": [
+        "fast shutter speed",
+        "slow shutter speed"
+      ]
+    },
+    {
+      "id": 3659,
+      "word": "exposure",
+      "pos": "n. [U]",
+      "phonetic": "[ɪkˋspoʒɚ]",
+      "definition": "曝光；曝光時間；暴露",
+      "cefr": "B1",
+      "topic": "攝影技巧",
+      "examples": [
+        {
+          "en": "Long exposure photography turns turbulent ocean surf into a silky mist.",
+          "zh": "長時間曝光（長曝）攝影技巧能將驚濤駭浪的洶湧海浪轉化為如絲綢般平靜的夢幻煙雲。"
+        },
+        {
+          "en": "Finding the right balance between aperture, shutter speed, and ISO ensures perfect exposure.",
+          "zh": "在光圈、快門速度與 ISO 感光度之間找到精準平衡，是達成完美曝光的關鍵所在。"
+        },
+        {
+          "en": "Over-exposure results in lost highlight details that cannot be recovered in post-production.",
+          "zh": "嚴重過度曝光會導致高光區域死白細節全失，即使透過強大的後製軟體也難以挽救。"
+        }
+      ],
+      "collocations": [
+        "long exposure",
+        "exposure time"
+      ]
+    },
+    {
+      "id": 3660,
+      "word": "sensitivity",
+      "pos": "n. [U]",
+      "phonetic": "[͵sɛnsəˋtɪvətɪ]",
+      "definition": "ISO 感光度；敏感性；靈敏度",
+      "cefr": "B1",
+      "topic": "感光元件",
+      "examples": [
+        {
+          "en": "Raising ISO sensitivity brightens dark scenes but may introduce digital grain noise.",
+          "zh": "調高相機的 ISO 感光度能大幅提亮昏暗暗部，但過高數值可能會伴隨產生數位雜訊顆粒。"
+        },
+        {
+          "en": "Modern camera sensors boast incredible sensitivity in near-total darkness.",
+          "zh": "現代頂級相機感光元件在接近全黑的極低光源環境下展現出令人驚嘆的超高靈敏度。"
+        },
+        {
+          "en": "Set the base sensitivity to ISO 100 for maximum image clarity under bright daylight.",
+          "zh": "在艷陽高照的戶外白晝拍攝時，建議將感光度設定在原生基礎 ISO 100 以獲得最佳畫質。"
+        }
+      ],
+      "collocations": [
+        "ISO sensitivity"
+      ]
+    },
+    {
+      "id": 3661,
+      "word": "noise",
+      "pos": "n. [U]",
+      "phonetic": "[nɔɪz]",
+      "definition": "影像雜訊；噪點；噪音",
+      "cefr": "B1",
+      "topic": "畫質指標",
+      "examples": [
+        {
+          "en": "Modern CMOS sensors deliver ultra-clean high-ISO images with remarkably low noise.",
+          "zh": "現代背照式 CMOS 感光元件在高 ISO 弱光環境下依然能呈現出極其純淨、超低雜訊的畫質。"
+        },
+        {
+          "en": "Heavy digital noise can obscure subtle starry textures in night sky photographs.",
+          "zh": "畫面中過多的彩色與亮度數位雜訊，可能會遮蔽夜空星景照片中微弱暗淡的繁星細節。"
+        },
+        {
+          "en": "AI-powered software tools can effectively remove luminance noise without sacrificing sharpness.",
+          "zh": "搭載 AI 深度演算法的專業修圖降噪工具，能在完全不損失畫面銳利度的前提下消除雜訊。"
+        }
+      ],
+      "collocations": [
+        "image noise",
+        "noise reduction"
+      ]
+    },
+    {
+      "id": 3662,
+      "word": "histogram",
+      "pos": "n.",
+      "phonetic": "[ˋhɪstə͵græm]",
+      "definition": "色階分佈圖；直方圖",
+      "cefr": "B1",
+      "topic": "曝光檢測",
+      "examples": [
+        {
+          "en": "Check the realtime digital histogram to prevent clipping bright highlight details.",
+          "zh": "拍攝時養成隨時查看相機螢幕即時色階分佈圖（直方圖）的習慣，以防高光過曝死白。"
+        },
+        {
+          "en": "A well-balanced histogram features a smooth curve concentrated across the midtones.",
+          "zh": "一張曝光均勻適當的照片，其色階直方圖通常呈現出一道平緩集中於中間調的優美曲線。"
+        },
+        {
+          "en": "If the histogram bunches heavily against the right edge, your photo is overexposed.",
+          "zh": "如果直方圖的大量像素資料緊貼在最右側邊緣形成斷崖，說明照片的高光已經嚴重過曝。"
+        }
+      ],
+      "collocations": [
+        "read the histogram"
+      ]
+    },
+    {
+      "id": 3663,
+      "word": "dynamic range",
+      "pos": "n. phr.",
+      "phonetic": "[daɪˋnæmɪk rendʒ]",
+      "definition": "動態範圍（寬容度）",
+      "cefr": "B1",
+      "topic": "畫質性能",
+      "examples": [
+        {
+          "en": "High dynamic range sensors capture both bright sunlit clouds and deep shadowy valleys.",
+          "zh": "具備高寬容度的高動態範圍感光元件能同時完整保留高光雲層細節與深谷陰影層次。"
+        },
+        {
+          "en": "Landscape photographers value wide dynamic range to prevent blown skies during sunrises.",
+          "zh": "風景攝影師極度重視寬廣的動態範圍寬容度，以防止日出拍攝時天空晨曦高光死白。"
+        },
+        {
+          "en": "Exposure bracketing can expand effective dynamic range beyond what a single shot achieves.",
+          "zh": "透過包圍曝光連拍後進行 HDR 合成，能突破單張拍攝所能呈現的動態範圍極限。"
+        }
+      ],
+      "collocations": [
+        "wide dynamic range"
+      ]
+    },
+    {
+      "id": 3664,
+      "word": "autofocus",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɔto͵fokəs]",
+      "definition": "自動對焦系統 (AF)",
+      "cefr": "B1",
+      "topic": "對焦科技",
+      "examples": [
+        {
+          "en": "AI-powered real-time eye autofocus locks tenaciously onto running pets and children.",
+          "zh": "搭載 AI 深度學習演算法的即時眼部自動對焦功能能死死鎖定奔跑中的毛孩與活潑幼童。"
+        },
+        {
+          "en": "Modern autofocus systems track fast-moving sports cars across the entire frame.",
+          "zh": "現代頂級自動對焦追焦系統能精準追蹤在賽道上風馳電掣的跑車，全程不脫焦。"
+        },
+        {
+          "en": "Switch to continuous autofocus mode when shooting birds in active flight.",
+          "zh": "在戶外拍攝空中盤旋掠過的飛鳥生態時，請務必切換至連續自動追焦（AF-C）模式。"
+        }
+      ],
+      "collocations": [
+        "fast autofocus",
+        "eye-AF"
+      ]
+    },
+    {
+      "id": 3665,
+      "word": "manual focus",
+      "pos": "n. phr.",
+      "phonetic": "[ˋmænjʊəl ˋfokəs]",
+      "definition": "手動對焦 (MF)",
+      "cefr": "B1",
+      "topic": "對焦模式",
+      "examples": [
+        {
+          "en": "Astrophotographers use manual focus magnification to pinpoint distant bright stars.",
+          "zh": "拍攝深空星空銀河的天文攝影師習慣開啟放大手動對焦模式，精準對焦於遠方恆星。"
+        },
+        {
+          "en": "Macro photographers often rely on manual focus for razor-thin depth of field adjustments.",
+          "zh": "微距生態攝影師往往依賴手動對焦微調，以便在薄如蟬翼的極淺景深中精準捕捉焦點。"
+        },
+        {
+          "en": "Turn the smooth lens ring to achieve precise manual focus on the dewdrop.",
+          "zh": "緩慢轉動阻尼滑順的鏡頭對焦環，即可在放大畫面中將焦點分毫不差地對準晶瑩水珠。"
+        }
+      ],
+      "collocations": [
+        "switch to manual focus"
+      ]
+    },
+    {
+      "id": 3666,
+      "word": "composition",
+      "pos": "n. [U]",
+      "phonetic": "[͵kɑmpəˋzɪʃən]",
+      "definition": "構圖美學；畫面佈局；作文",
+      "cefr": "B1",
+      "topic": "攝影美學",
+      "examples": [
+        {
+          "en": "The rule of thirds is a foundational composition guideline for visual balance.",
+          "zh": "經典的三分法則（九宮格構圖）是構建畫面視覺平衡感與呼吸感最扎實的核心基礎。"
+        },
+        {
+          "en": "Creative composition guides the viewer's eye directly to the emotional focal point.",
+          "zh": "充滿創意的畫面構圖安排，能巧妙引導觀賞者的視覺視線自然聚焦於核心情感主體。"
+        },
+        {
+          "en": "Experimenting with low ground-level perspectives revitalized his urban architectural composition.",
+          "zh": "嘗試貼近地面的超低視角貼地拍攝，為他的都會現代建築攝影構圖注入了嶄新活力。"
+        }
+      ],
+      "collocations": [
+        "photography composition"
+      ]
+    },
+    {
+      "id": 3667,
+      "word": "leading lines",
+      "pos": "n. phr.",
+      "phonetic": "[ˋlidɪŋ laɪnz]",
+      "definition": "引導線構圖法",
+      "cefr": "B1",
+      "topic": "構圖技巧",
+      "examples": [
+        {
+          "en": "Train tracks and winding mountain roads serve as powerful leading lines in photos.",
+          "zh": "筆直延伸的鐵道軌道與蜿蜒綿延的山徑公路常被巧妙運用為引導視線的引導線構圖。"
+        },
+        {
+          "en": "Use the edges of the curved bridge as leading lines pointing toward the distant mountain.",
+          "zh": "巧妙運用跨海大橋優美的弧形邊緣作為視覺引導線，將觀看者的目光自然引向遠山。"
+        },
+        {
+          "en": "Leading lines create a compelling sense of visual depth that draws observers into the scene.",
+          "zh": "引導線構圖手法能在二維平面照片中營造出強烈的縱深立體感，引人身臨其境。"
+        }
+      ],
+      "collocations": [
+        "use leading lines"
+      ]
+    },
+    {
+      "id": 3668,
+      "word": "framing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfremɪŋ]",
+      "definition": "框架構圖法；畫框取景",
+      "cefr": "B1",
+      "topic": "構圖技巧",
+      "examples": [
+        {
+          "en": "Framing the iconic temple through blooming cherry blossom branches adds poetic depth.",
+          "zh": "巧妙透過盛開粉嫩的櫻花枝枒作為前景自然邊框來框架古剎，增添了詩意深邃的層次。"
+        },
+        {
+          "en": "Using an arched stone doorway for framing gives the street scene an old-world charm.",
+          "zh": "運用歐風拱形石門作為構圖邊框框架老街街景，賦予了畫面濃厚的古典歷史韻味。"
+        },
+        {
+          "en": "Natural framing with tree silhouettes emphasizes the bright full moon in the center.",
+          "zh": "以兩側茂密樹影剪影構成天然框架，能強烈襯托並凸顯畫面正中央的一輪皎潔明月。"
+        }
+      ],
+      "collocations": [
+        "frame within a frame"
+      ]
+    },
+    {
+      "id": 3669,
+      "word": "symmetry",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɪmɪtrɪ]",
+      "definition": "對稱美學；對稱性",
+      "cefr": "B1",
+      "topic": "構圖美學",
+      "examples": [
+        {
+          "en": "Architectural photographers seek perfect geometric symmetry inside historical stations.",
+          "zh": "建築攝影師在百年歷史古蹟車站與現代美術館內部尋求極致完美的幾何對稱美感。"
+        },
+        {
+          "en": "Reflections in still alpine lakes create breathtaking horizontal symmetry.",
+          "zh": "平靜無波的高山湖面倒映著巍峨雪山，營造出令人屏息讚嘆的水準鏡像對稱之美。"
+        },
+        {
+          "en": "The grand palace hallway was designed with immaculate, majestic architectural symmetry.",
+          "zh": "這座宏偉皇宮的中央長廊在設計上展現出嚴謹無瑕的軸線對稱美學，莊嚴而大器。"
+        }
+      ],
+      "collocations": [
+        "perfect symmetry"
+      ]
+    },
+    {
+      "id": 3670,
+      "word": "reflection",
+      "pos": "n.",
+      "phonetic": "[rɪˋflɛkʃən]",
+      "definition": "倒影映襯；反射；反省",
+      "cefr": "B1",
+      "topic": "視覺元素",
+      "examples": [
+        {
+          "en": "The crystal-clear puddle created a flawless mirror reflection of Taipei 101.",
+          "zh": "雨後地面清澈的水窪宛如一面天然明鏡，完美倒映出台北 101 大樓雄偉壯麗的倒影。"
+        },
+        {
+          "en": "Modern glass skyscrapers produce distorted, artistic reflections of surrounding clouds.",
+          "zh": "現代玻璃帷幕摩天大樓的大面積鏡面，將漫天流雲折射出充滿抽象藝術感的扭曲倒影。"
+        },
+        {
+          "en": "She paused by the quiet pond, admiring the colorful autumn reflection of maples.",
+          "zh": "她在靜謐的池畔駐足停留，靜靜欣賞湖面所映照出色彩斑斕的深秋紅楓倒影。"
+        }
+      ],
+      "collocations": [
+        "mirror reflection"
+      ]
+    },
+    {
+      "id": 3671,
+      "word": "negative space",
+      "pos": "n. phr.",
+      "phonetic": "[ˋnɛgətɪv spes]",
+      "definition": "留白藝術；負空間構圖",
+      "cefr": "B1",
+      "topic": "極簡美學",
+      "examples": [
+        {
+          "en": "Utilizing generous negative space gives minimalist landscape imagery a calm mood.",
+          "zh": "大膽運用大面積天空或海面的留白負空間構圖，能賦予極簡風景照寧靜祥和的意境。"
+        },
+        {
+          "en": "The lone boat in a vast white ocean demonstrated the elegant power of negative space.",
+          "zh": "蒼茫遼闊的一汪碧海中漂泊著一葉孤舟，淋漓盡致地展現了極簡留白構圖的震撼力。"
+        },
+        {
+          "en": "Leaving negative space around the portrait subject creates room for viewer contemplation.",
+          "zh": "在人像主體四周保留充裕的留白負空間，能為畫面營造出耐人尋味的沉思呼吸空間。"
+        }
+      ],
+      "collocations": [
+        "minimalist negative space"
+      ]
+    },
+    {
+      "id": 3672,
+      "word": "golden hour",
+      "pos": "n. phr.",
+      "phonetic": "[ˋgoldn ˋaʊɚ]",
+      "definition": "黃金時刻（日出破曉／日落魔幻時刻）",
+      "cefr": "B1",
+      "topic": "光影時段",
+      "examples": [
+        {
+          "en": "Landscape photographers wake up early to capture morning mist during golden hour.",
+          "zh": "風景攝影同好總是不畏辛勞起大清早，搶在破曉日出黃金時刻捕捉晨霧沐浴在金光中的絕美。"
+        },
+        {
+          "en": "The warm amber sunlight during golden hour bathes portraits in a flattering, soft glow.",
+          "zh": "日落前黃金時刻溫暖柔和的琥珀色斜陽，為人物臉龐鍍上了一層溫潤迷人的金色光暈。"
+        },
+        {
+          "en": "We arrived at the scenic coastal cliff just in time to shoot the sunset golden hour.",
+          "zh": "我們頂著海風及時趕抵斷崖觀景平台，恰好趕上了落日時分最夢幻動人的黃金魔幻時刻。"
+        }
+      ],
+      "collocations": [
+        "shoot at golden hour"
+      ]
+    },
+    {
+      "id": 3673,
+      "word": "blue hour",
+      "pos": "n. phr.",
+      "phonetic": "[blu ˋaʊɚ]",
+      "definition": "藍調時刻（日落後二十分鐘天空深藍）",
+      "cefr": "B1",
+      "topic": "光影時段",
+      "examples": [
+        {
+          "en": "Cityscapes look magical during the blue hour when street lamps glow against indigo skies.",
+          "zh": "暮色降臨後的藍調時刻是拍攝都會天際線的最佳時機，街道暖黃華燈與深藍夜空相映成趣。"
+        },
+        {
+          "en": "The blue hour lasts for only twenty minutes right after sunset, so plan setups early.",
+          "zh": "日落後的藍調時刻通常僅短暫持續約二十分鐘，因此務必提前架好腳架調好參數待命。"
+        },
+        {
+          "en": "The cool cobalt hue of the blue hour contrasts beautifully with warm glowing storefronts.",
+          "zh": "藍調時刻天空深邃靜謐的群青靛藍冷調，與街邊小店溫馨亮起的暖色櫥窗形成絕妙對比。"
+        }
+      ],
+      "collocations": [
+        "magical blue hour"
+      ]
+    },
+    {
+      "id": 3674,
+      "word": "diffused",
+      "pos": "adj.",
+      "phonetic": "[dɪˋfjuzd]",
+      "definition": "柔和漫射的；散射的",
+      "cefr": "B1",
+      "topic": "光線性質",
+      "examples": [
+        {
+          "en": "Overcast cloudy skies provide natural, flattering diffused light for outdoor portraits.",
+          "zh": "陰天厚實的雲層宛如一面天然的超大無影柔光罩，為戶外人像攝影提供了柔和細膩的漫射光。"
+        },
+        {
+          "en": "She placed a sheer white curtain across the window to create soft diffused lighting.",
+          "zh": "她在向陽的大落地窗前拉上一層純白透光薄紗窗簾，營造出溫柔雅緻的室內柔光漫射光效。"
+        },
+        {
+          "en": "Diffused light minimizes harsh shadows under the eyes and evens out skin tones nicely.",
+          "zh": "柔和的漫射光源能最大程度消除眼窩與鼻翼下方生硬的濃黑陰影，使人物膚質顯得柔嫩均勻。"
+        }
+      ],
+      "collocations": [
+        "diffused natural light"
+      ]
+    },
+    {
+      "id": 3675,
+      "word": "silhouette",
+      "pos": "n.",
+      "phonetic": "[ˋsɪlʊˋɛt]",
+      "definition": "剪影輪廓；黑影剪影",
+      "cefr": "B1",
+      "topic": "光影技巧",
+      "examples": [
+        {
+          "en": "Sunset backlight turned the coastal fishermen into striking black silhouettes.",
+          "zh": "落日餘暉強烈的逆光將沿海牽罟捕魚的漁民身影勾勒成一幅幅極富張力的黑色剪影。"
+        },
+        {
+          "en": "The couple stood hand-in-hand against the bright sunset, forming a romantic silhouette.",
+          "zh": "這對年輕伴侶牽手並肩佇立於橘紅色的晚霞餘暉前，勾勒出一抹無比浪漫的身影剪影。"
+        },
+        {
+          "en": "Expose for the bright sky background if you want to turn your subject into a crisp silhouette.",
+          "zh": "如果想要拍出線條分明的俐落人物剪影，請以明亮的天空背景作為測光基準進行曝光。"
+        }
+      ],
+      "collocations": [
+        "dramatic silhouette"
+      ]
+    },
+    {
+      "id": 3676,
+      "word": "tripod",
+      "pos": "n.",
+      "phonetic": "[ˋtraɪpɑd]",
+      "definition": "三腳架；相機腳架",
+      "cefr": "B1",
+      "topic": "穩定輔助",
+      "examples": [
+        {
+          "en": "A sturdy carbon-fiber tripod is essential for shake-free night cityscape exposures.",
+          "zh": "一支穩固堅韌的碳纖維三腳架是拍攝超長曝光、確保畫面分毫不晃動的必備夜景重裝。"
+        },
+        {
+          "en": "Adjust the extendable legs of the tripod to level your camera on uneven mountain slopes.",
+          "zh": "在高低不平的崎嶇山坡岩石上拍攝時，可分別調節三腳架各腳管的伸縮長度來抓水平。"
+        },
+        {
+          "en": "Lightweight travel tripods fold down compactly enough to fit inside your carry-on luggage.",
+          "zh": "輕量化的便攜旅行碳纖三腳架收合長度極為小巧，可輕鬆收納進隨身登機背包側袋中。"
+        }
+      ],
+      "collocations": [
+        "carbon-fiber tripod"
+      ]
+    },
+    {
+      "id": 3677,
+      "word": "gimbal",
+      "pos": "n.",
+      "phonetic": "[ˋgɪmb!]",
+      "definition": "三軸穩定器；防手震雲台",
+      "cefr": "B1",
+      "topic": "動態錄影",
+      "examples": [
+        {
+          "en": "Handheld motorized gimbals allow videographers to capture cinematic walking tracking shots.",
+          "zh": "手持式三軸電子穩定器（Gimbal）能讓動態錄影師在快步走動運鏡時拍出行雲流水的電影感鏡頭。"
+        },
+        {
+          "en": "Balancing your camera body and lens properly on the gimbal prevents motor overheating.",
+          "zh": "在啟動三軸穩定器電源前，先細心手動調平機身與鏡頭重心，能避免馬達過載發熱發燙。"
+        },
+        {
+          "en": "Using a three-axis gimbal eliminates distracting hand jitters when filming active sports.",
+          "zh": "善用三軸電子防震穩定器，能在跟拍劇烈運動追逐奔跑場景時徹底消除手持抖動晃動。"
+        }
+      ],
+      "collocations": [
+        "3-axis motorized gimbal"
+      ]
+    },
+    {
+      "id": 3678,
+      "word": "SD card",
+      "pos": "n. phr.",
+      "phonetic": "[ɛs di kɑrd]",
+      "definition": "高速 SD 記憶卡",
+      "cefr": "B1",
+      "topic": "儲存媒介",
+      "examples": [
+        {
+          "en": "High-speed V90 SD cards handle continuous high-bitrate 4K video recording flawlessly.",
+          "zh": "寫入速度高達 V90 等級的超高速 SD 記憶卡能從容因應高碼率 4K 影片的連續不掉幀錄製。"
+        },
+        {
+          "en": "Always format your SD card inside the camera before starting an important shoot.",
+          "zh": "在開展重大商業拍攝活動之前，請務必先將 SD 記憶卡放入相機機身中進行原廠格式化。"
+        },
+        {
+          "en": "Dual SD card slots allow wedding photographers to back up precious photos in real time.",
+          "zh": "機身搭載的雙 SD 卡槽設計，讓婚禮紀錄攝影師能在按下快門的同時進行雙卡同步即時備份。"
+        }
+      ],
+      "collocations": [
+        "high-speed SD card"
+      ]
+    },
+    {
+      "id": 3679,
+      "word": "RAW",
+      "pos": "adj., n. phr.",
+      "phonetic": "[rɔ]",
+      "definition": "RAW 原生無損格式；生鮮的",
+      "cefr": "B1",
+      "topic": "檔案格式",
+      "examples": [
+        {
+          "en": "Shooting in uncompressed RAW preserves maximum sensor data for flexible post-processing.",
+          "zh": "堅持使用未經壓縮的 RAW 原生無損格式拍攝，能為後期暗房修圖保留最充沛的調整寬容度。"
+        },
+        {
+          "en": "RAW image files take up significantly more storage space than standard compressed JPEGs.",
+          "zh": "未經破壞性壓縮的 RAW 原生圖檔容量十分龐大，比起一般 JPEG 圖檔耗費數倍硬碟空間。"
+        },
+        {
+          "en": "Processing RAW photos allows photographers to recover shadow details without degrading quality.",
+          "zh": "在電腦上解讀並微調 RAW 原檔，能讓攝影師在拉亮大片陰影時完全不產生畫質劣化斷階。"
+        }
+      ],
+      "collocations": [
+        "RAW image file"
+      ]
+    },
+    {
+      "id": 3680,
+      "word": "white balance",
+      "pos": "n. phr.",
+      "phonetic": "[hwaɪt ˋbæləns]",
+      "definition": "白平衡；色溫校準 (WB)",
+      "cefr": "B1",
+      "topic": "色彩管理",
+      "examples": [
+        {
+          "en": "Adjusting manual white balance corrects yellowish indoor tungsten lighting casts.",
+          "zh": "手動微調自訂白平衡（White Balance）能精準校正室內鎢絲燈泡所產生的偏黃暖色調偏色。"
+        },
+        {
+          "en": "Setting auto white balance works well under natural daylight but can struggle under mixed lighting.",
+          "zh": "機身自動白平衡在室外自然白晝表現不俗，但在複雜的多光源混合環境下偶爾會判定失準。"
+        },
+        {
+          "en": "Use a gray card to set a custom white balance for accurate product catalog photography.",
+          "zh": "在進行商業靜物商品攝影時，建議使用標準十八度灰卡進行自訂白平衡校準以確保零色差。"
+        }
+      ],
+      "collocations": [
+        "custom white balance (WB)"
+      ]
+    },
+    {
+      "id": 3681,
+      "word": "grading",
+      "pos": "n. [U]",
+      "phonetic": "[ˋgredɪŋ]",
+      "definition": "影視與照片調色；色彩風格化",
+      "cefr": "B1",
+      "topic": "後期修圖",
+      "examples": [
+        {
+          "en": "Cinematic color grading applies cool teal shadows and warm orange skin tones.",
+          "zh": "電影感調色工法巧妙將陰影暗部渲染為清爽的青藍冷色調，並為人物膚色賦予溫暖橙光。"
+        },
+        {
+          "en": "The film editor spent two weeks perfecting the mood of the scenes through color grading.",
+          "zh": "調色師花了整整兩週時間在專用調色軟體中精雕細琢，藉由色彩調性傳達各場景的情緒張力。"
+        },
+        {
+          "en": "Proper color grading ties disparate shots together into a visually unified aesthetic.",
+          "zh": "專業細膩的影視調色工序能將不同機位與不同天氣下拍攝的鏡頭素材，串聯成視覺風格統一的佳作。"
+        }
+      ],
+      "collocations": [
+        "color grading"
+      ]
+    },
+    {
+      "id": 3682,
+      "word": "preset",
+      "pos": "n.",
+      "phonetic": "[ˋpriˌsɛt]",
+      "definition": "風格色調預設集 (Preset)；預設參數",
+      "cefr": "B1",
+      "topic": "修圖濾鏡",
+      "examples": [
+        {
+          "en": "Photography influencers sell custom Lightroom presets to give photos signature film vibes.",
+          "zh": "知名攝影網紅紛紛推出個人專屬的 Lightroom 色調預設集（Preset），重現經典底片質感。"
+        },
+        {
+          "en": "Applying a retro preset with fine grain gave her digital vacation snapshots an analog feel.",
+          "zh": "套用帶有細膩微粒的復古風修圖預設濾鏡，瞬間讓數位相片散發出濃濃的文青底片韻味。"
+        },
+        {
+          "en": "You can create and save your own editing presets to speed up batch workflow.",
+          "zh": "你可以將自己精心調製的參數儲存為個人專屬預設集，以極大提升大批量照片的批次修圖效率。"
+        }
+      ],
+      "collocations": [
+        "Lightroom preset"
+      ]
+    },
+    {
+      "id": 3683,
+      "word": "retouching",
+      "pos": "n. [U]",
+      "phonetic": "[riˋtʌtʃɪŋ]",
+      "definition": "人像精修修圖；修飾美化",
+      "cefr": "B1",
+      "topic": "後期處理",
+      "examples": [
+        {
+          "en": "Subtle skin retouching removes temporary blemishes while preserving natural pore texture.",
+          "zh": "細膩的人像精修手法能在消除皮膚暫時性痘疤瑕疵的同時，完整保留真實自然的毛孔紋理。"
+        },
+        {
+          "en": "High-end commercial retouching requires hours of careful frequency separation work.",
+          "zh": "頂級時尚雜誌與商業廣告精修大片，往往需要耗費數小時進行專業的高低頻分離細緻工法。"
+        },
+        {
+          "en": "Overdone digital retouching can make human skin look plastic, fake, and lifeless.",
+          "zh": "過度磨皮美顏的數位精修修圖，會使人物的皮膚質地看起來宛如塑膠假人般僵硬假面。"
+        }
+      ],
+      "collocations": [
+        "portrait retouching"
+      ]
+    },
+    {
+      "id": 3684,
+      "word": "highlight",
+      "pos": "n., v.",
+      "phonetic": "[ˋhaɪˌlaɪt]",
+      "definition": "高光亮部；亮點；強調",
+      "cefr": "B1",
+      "topic": "影調區域",
+      "examples": [
+        {
+          "en": "Pulling down highlights recovers lost cloud texture in bright summer skies.",
+          "zh": "在修圖軟體中適度拉低高光數值，能重新找回夏日艷陽天空中原本過曝丟失的白雲層次。"
+        },
+        {
+          "en": "The golden sunset was undeniably the scenic highlight of our week-long road trip.",
+          "zh": "這抹壯美無比的落日晚霞，無疑是我們為期一週的公路自駕旅行中最震撼難忘的亮點。"
+        },
+        {
+          "en": "Specular highlights on polished glassware add sparkle and visual appeal to product photos.",
+          "zh": "晶瑩剔透的玻璃器皿表面所折射出的高光反光光芒，為商業商品攝影增添了高級的奢華質感。"
+        }
+      ],
+      "collocations": [
+        "blown-out highlights"
+      ]
+    },
+    {
+      "id": 3685,
+      "word": "shadow",
+      "pos": "n.",
+      "phonetic": "[ˋʃædo]",
+      "definition": "陰影暗部；影子",
+      "cefr": "B1",
+      "topic": "影調區域",
+      "examples": [
+        {
+          "en": "Lifting dark shadows reveals intricate architectural carvings in historic temples.",
+          "zh": "適度拉升照片陰影暗部細節，能清晰展現古老廟宇屋簷下巧奪天工的精細木雕藻井。"
+        },
+        {
+          "en": "The oak tree cast a broad, cool shadow over the lawn where children were playing.",
+          "zh": "枝繁葉茂的百年老橡樹在草坪上投下了一大片清涼愜意的綠蔭樹影，孩童們在樹下嬉戲。"
+        },
+        {
+          "en": "Deep, dramatic shadows in black-and-white portraits create a sense of mystery.",
+          "zh": "在黑白人像攝影中大膽運用深沉生動的濃重陰影對比，能營造出充滿懸念深邃的神秘氛圍。"
+        }
+      ],
+      "collocations": [
+        "recover shadows"
+      ]
+    },
+    {
+      "id": 3686,
+      "word": "saturation",
+      "pos": "n. [U]",
+      "phonetic": "[͵sætʃəˋreʃən]",
+      "definition": "色彩飽和度",
+      "cefr": "B1",
+      "topic": "色彩參數",
+      "examples": [
+        {
+          "en": "Boosting color saturation too high makes natural skin tones look unnatural and orange.",
+          "zh": "若將色彩飽和度調得過高，會讓原本自然白皙的人體膚色顯得過於濃烈死板偏橘。"
+        },
+        {
+          "en": "Adjust the color saturation slightly to make the autumn forest foliage look vibrant.",
+          "zh": "輕微調高色彩飽和度數值，能讓秋日漫山遍野的楓紅與金黃銀杏林木顯得格外絢爛奪目。"
+        },
+        {
+          "en": "Reducing saturation converts vibrant color photographs into moody, timeless monochrome compositions.",
+          "zh": "將畫面飽和度降至零，能將五彩繽紛的彩色照片瞬間轉化為沉靜耐看、永恆經典的黑白純色。"
+        }
+      ],
+      "collocations": [
+        "color saturation"
+      ]
+    },
+    {
+      "id": 3687,
+      "word": "crop",
+      "pos": "v., n.",
+      "phonetic": "[krɑp]",
+      "definition": "裁切畫面；農作物；收穫",
+      "cefr": "B1",
+      "topic": "後期構圖",
+      "examples": [
+        {
+          "en": "Crop the wide shot horizontally to create a panoramic cinematic aspect ratio.",
+          "zh": "將原本的寬景照片進行水平二次構圖裁切，打造出極具視覺震撼力的 21:9 電影全景比例。"
+        },
+        {
+          "en": "Farmers in central Taiwan plant their seasonal rice crop during early spring.",
+          "zh": "台灣中南部的稻農們每逢初春時節便開始引水插秧，種植當季第一期優質稻米作物。"
+        },
+        {
+          "en": "She had to crop out the distracting tourist from the edge of her scenic shot.",
+          "zh": "她透過後製軟體將照片邊緣不小心入鏡走動的雜亂觀光客裁切掉，使畫面更加簡潔聚焦。"
+        }
+      ],
+      "collocations": [
+        "crop the photo"
+      ]
+    },
+    {
+      "id": 3688,
+      "word": "full-frame",
+      "pos": "adj.",
+      "phonetic": "[fʊl frem]",
+      "definition": "全片幅感光元件的 (35mm 等效)",
+      "cefr": "B1",
+      "topic": "片幅規格",
+      "examples": [
+        {
+          "en": "Full-frame cameras feature larger sensors that gather more light in dim conditions.",
+          "zh": "全片幅相機擁有面積更大的感光元件，在微光昏暗環境下能吸收更多光子、呈現純淨畫質。"
+        },
+        {
+          "en": "Upgrading to a full-frame body provides shallower depth of field and richer tones.",
+          "zh": "機身升級換成全片幅規格後，能帶來更具視覺張力的淺景深虛化效果與更細膩的階調過渡。"
+        },
+        {
+          "en": "Full-frame lenses are specifically designed to cast an image circle covering the 35mm sensor.",
+          "zh": "全片幅專用鏡頭經過精密光學設計，其成像圈能完整無裁切地涵蓋整個 35mm 尺寸感光晶片。"
+        }
+      ],
+      "collocations": [
+        "full-frame sensor"
+      ]
+    },
+    {
+      "id": 3689,
+      "word": "sensor",
+      "pos": "n.",
+      "phonetic": "[ˋsɛnsɚ]",
+      "definition": "影像感光元件；感測器",
+      "cefr": "B1",
+      "topic": "核心硬體",
+      "examples": [
+        {
+          "en": "The 45-megapixel CMOS sensor resolves microscopic fabric textures with clarity.",
+          "zh": "高達四千五百萬畫素的高解析度 CMOS 感光元件能分毫畢現解析出布料纖維的微觀紋理。"
+        },
+        {
+          "en": "Dust on the camera sensor can cause dark spots to appear in your sky photos.",
+          "zh": "掉落在相機感光元件表面上的細微灰塵，會導致拍出來的天空風景照出現惱人的黑斑髒點。"
+        },
+        {
+          "en": "The motion sensor turned on the porch lights as soon as we walked up the stairs.",
+          "zh": "當我們踩上玄關階梯走進大門時，門廊上安裝的人體紅外線感測器立刻自動點亮迎賓壁燈。"
+        }
+      ],
+      "collocations": [
+        "CMOS image sensor"
+      ]
+    },
+    {
+      "id": 3690,
+      "word": "shutter count",
+      "pos": "n. phr.",
+      "phonetic": "[ˋʃʌtɚ kaʊnt]",
+      "definition": "快門次數；快門使用壽命",
+      "cefr": "B1",
+      "topic": "二手機身",
+      "examples": [
+        {
+          "en": "Check the camera's shutter count when purchasing pre-owned photography gear.",
+          "zh": "在選購二手中古相機機身時，請務必先透過專業軟體檢測相機已按壓的快門釋放次數。"
+        },
+        {
+          "en": "The professional body had a shutter count of barely 5,000 actuations and was in mint condition.",
+          "zh": "這台專業旗艦機身的快門釋放次數僅僅五千多次，整體外觀與機件功能近乎全新。"
+        },
+        {
+          "en": "Most modern mechanical camera shutters are rated for at least two hundred thousand clicks.",
+          "zh": "絕大多數現代專業級相機的精密機械快門簾結構，其官方設計使用壽命皆達二十萬次以上。"
+        }
+      ],
+      "collocations": [
+        "low shutter count"
+      ]
+    },
+    {
+      "id": 3691,
+      "word": "portrait",
+      "pos": "n.",
+      "phonetic": "[ˋportrɪt]",
+      "definition": "人像相片；肖像畫",
+      "cefr": "B1",
+      "topic": "攝影題材",
+      "examples": [
+        {
+          "en": "The studio specializes in professional corporate headshots and family portraits.",
+          "zh": "這間知名攝影工作室專精於拍攝幹練俐落的企業商務形象照與溫馨質感的全家福肖像。"
+        },
+        {
+          "en": "The museum displayed a famous painted portrait of the seventeenth-century king.",
+          "zh": "國家美術館中央展廳隆重展出了一幅十七世紀查理國王親自端坐繪製的珍貴宮廷肖像油畫。"
+        },
+        {
+          "en": "Using soft natural window light is the simplest way to shoot flattering portraits at home.",
+          "zh": "巧妙運用窗邊自然透進的柔和漫射天光，是在家拍攝出自然耐看的人像寫真最簡單有效的手法。"
+        }
+      ],
+      "collocations": [
+        "environmental portrait"
+      ]
+    },
+    {
+      "id": 3692,
+      "word": "landscape",
+      "pos": "n.",
+      "phonetic": "[ˋlændˌskep]",
+      "definition": "風景大景；自然景觀",
+      "cefr": "B1",
+      "topic": "攝影題材",
+      "examples": [
+        {
+          "en": "Taiwan offers diverse landscape photography, from alpine peaks to volcanic coasts.",
+          "zh": "台灣擁有極為豐富多元的風景攝影資源，從三千公尺雪白高山群峰到壯麗火山岩海岸應有盡有。"
+        },
+        {
+          "en": "The rugged mountain landscape shifted dramaticaly as clouds rolled over the ridge.",
+          "zh": "隨著漫天翻騰的雲海漫過山脊鞍部，眼前壯麗險峻的高山自然景觀展現出瞬息萬變的氣象。"
+        },
+        {
+          "en": "She painted a tranquil watercolor landscape depicting rolling green hills and grazing sheep.",
+          "zh": "她創作了一幅意境悠遠的水彩風景畫，細膩描繪了連綿起伏的翠綠丘陵與低頭吃草的羊群。"
+        }
+      ],
+      "collocations": [
+        "landscape photography"
+      ]
+    },
+    {
+      "id": 3693,
+      "word": "telephoto",
+      "pos": "adj., n.",
+      "phonetic": "[͵tɛləˋfoto]",
+      "definition": "望遠的；超望遠大砲鏡頭",
+      "cefr": "B1",
+      "topic": "鏡頭種類",
+      "examples": [
+        {
+          "en": "Wildlife photographers use heavy 600mm telephoto lenses to photograph nesting eagles.",
+          "zh": "鳥類生態攝影師架設重達數公斤的 600mm 超望遠大砲定焦鏡頭以遠距離記錄黑鳶育雛。"
+        },
+        {
+          "en": "A telephoto lens compresses perspective, making distant background mountains appear closer.",
+          "zh": "長焦望遠鏡頭具有強烈的空間壓縮感光學特性，能讓畫面後方遠在天邊的雪山顯得無比貼近。"
+        },
+        {
+          "en": "He attached a compact 70-200mm telephoto lens to capture candid portraits from across the street.",
+          "zh": "他在機身上接上一支便攜的 70-200mm 望遠變焦鏡頭，站在馬路對街輕鬆抓拍自然的街頭神態。"
+        }
+      ],
+      "collocations": [
+        "telephoto lens"
+      ]
+    },
+    {
+      "id": 3694,
+      "word": "macro",
+      "pos": "adj., n.",
+      "phonetic": "[ˋmækro]",
+      "definition": "微距攝影的；微距鏡頭；宏觀的",
+      "cefr": "B1",
+      "topic": "攝影題材",
+      "examples": [
+        {
+          "en": "Dedicated 1:1 macro lenses reveal dew drops glistening on spider webs.",
+          "zh": "專業的一比一放大倍率微距鏡頭能細膩捕捉清晨蛛網上晶瑩剔透、折射光芒的晨露水珠。"
+        },
+        {
+          "en": "In macro photography, maintaining steady hands is critical because slight movements blur details.",
+          "zh": "在微距攝影的微觀世界中，保持雙手絕對穩定至關重要，任何微小晃動都會使細節脫焦模糊。"
+        },
+        {
+          "en": "She captured the intricate compound eyes of a dragonfly using an extreme macro setup.",
+          "zh": "他運用高倍率專業超微距攝影套組，將蜻蜓宛如蜂巢般精密複雜的複眼構造分毫不差地放大拍下。"
+        }
+      ],
+      "collocations": [
+        "macro lens",
+        "macro photography"
+      ]
+    },
+    {
+      "id": 3695,
+      "word": "astrophotography",
+      "pos": "n. [U]",
+      "phonetic": "[͵æstrofəˋtɑgrəfɪ]",
+      "definition": "深空天文攝影；星空攝影",
+      "cefr": "B1",
+      "topic": "特殊攝影",
+      "examples": [
+        {
+          "en": "Mt. Hehuan Dark Sky Park is Taiwan's premier sanctuary for astrophotography.",
+          "zh": "合歡山國際暗空公園是全台灣最具指標性、最受全球星空同好推崇的天文攝影聖地。"
+        },
+        {
+          "en": "Astrophotography requires tracking mounts to counteract Earth's rotation during long exposures.",
+          "zh": "進行深空天文攝影時通常需要架設精密的赤道儀追星儀，以抵消地球自轉所導致的星點拖線。"
+        },
+        {
+          "en": "Enthusiasts stayed awake all night braving freezing temperatures to photograph the Milky Way.",
+          "zh": "星空攝影愛好者頂著高山零下低溫通宵未眠，只為將壯麗銀河橫跨天際的浩瀚景象定格於鏡頭。"
+        }
+      ],
+      "collocations": [
+        "night astrophotography"
+      ]
+    },
+    {
+      "id": 3696,
+      "word": "aerial",
+      "pos": "adj.",
+      "phonetic": "[ˋɛrɪəl]",
+      "definition": "空中的；空拍鳥瞰的；航空的",
+      "cefr": "B1",
+      "topic": "視角維度",
+      "examples": [
+        {
+          "en": "Drone aerial photography reveals geometric tea plantations from a bird's-eye perspective.",
+          "zh": "無人機空拍攝影從高空鳥瞰視角完美展現了如幾何圖形般整齊排列的高山梯田茶園之美。"
+        },
+        {
+          "en": "The city offers helicopter aerial tours for breathtaking panoramic views of the skyline.",
+          "zh": "該濱海城市推出了直升機高空觀光遊覽行程，帶領旅客以全景鳥瞰視角俯瞰壯麗的都會天際線。"
+        },
+        {
+          "en": "An aerial view showed the full extent of the flooded farmland after the typhoon passed.",
+          "zh": "颱風暴雨過境後，空拍機傳回的高空鳥瞰畫面完整揭示了沿河農田大面積積水受災的真實景象。"
+        }
+      ],
+      "collocations": [
+        "aerial photography"
+      ]
+    },
+    {
+      "id": 3697,
+      "word": "photojournalism",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfotoˋdʒɝn!ˌɪzəm]",
+      "definition": "新聞攝影；紀實攝影新聞學",
+      "cefr": "B1",
+      "topic": "新聞傳播",
+      "examples": [
+        {
+          "en": "Award-winning photojournalism documents human resilience during historic crises.",
+          "zh": "榮獲普立茲獎的新聞攝影作品以震撼人心的鏡頭語言記錄了人類在重大歷史危機中的堅韌人性。"
+        },
+        {
+          "en": "Photojournalism demands strict adherence to truth, prohibiting manipulative staging or digital alteration.",
+          "zh": "新聞紀實攝影要求對客觀真實恪守崇高準則，嚴厲禁止任何形式的人為擺拍演出或惡意後製竄改。"
+        },
+        {
+          "en": "Her compelling photojournalism on climate change was featured on the magazine's front cover.",
+          "zh": "她深入極地拍攝針對全球氣候變遷危機的深度紀實專題報導，榮登國際權威雜誌的跨頁封面。"
+        }
+      ],
+      "collocations": [
+        "integrity of photojournalism"
+      ]
+    },
+    {
+      "id": 3698,
+      "word": "exhibition",
+      "pos": "n.",
+      "phonetic": "[͵ɛksəˋbɪʃən]",
+      "definition": "攝影特展；藝術展覽會",
+      "cefr": "B1",
+      "topic": "藝文展出",
+      "examples": [
+        {
+          "en": "The veteran photographer hosted a solo black-and-white photography exhibition.",
+          "zh": "這位資深紀實攝影大師在當代藝術館舉辦了個人大型經典黑白人文攝影回顧特展。"
+        },
+        {
+          "en": "The museum's contemporary art exhibition drew record crowds over the long holiday weekend.",
+          "zh": "該美術館精心策劃的當代新銳藝術大展在連續長假期間吸引了創紀錄的爆滿觀展人潮。"
+        },
+        {
+          "en": "Framing and lighting are just as important as the prints themselves when curating an exhibition.",
+          "zh": "在籌辦一場高水準的攝影作品展覽時，畫框裝裱的做工與展廳光影投射氛圍與作品本身同等重要。"
+        }
+      ],
+      "collocations": [
+        "photo exhibition",
+        "solo exhibition"
+      ]
+    },
+    {
+      "id": 3699,
+      "word": "photobook",
+      "pos": "n.",
+      "phonetic": "[ˋfotoˌbʊk]",
+      "definition": "攝影集；精裝相本寫真書",
+      "cefr": "B1",
+      "topic": "出版實體",
+      "examples": [
+        {
+          "en": "Curating a printed photobook gives digital pictures a lasting, tangible presence.",
+          "zh": "精心挑選作品編排並印刷一本有溫度的實體精裝攝影集，能賦予數位影像永恆的觸感與生命。"
+        },
+        {
+          "en": "He spent months choosing fine archival paper and cloth binding for his debut photobook.",
+          "zh": "他花費數月時間為個人首部獨立攝影集挑選頂級無酸藝術紙與細膩溫潤的手工布質精裝包邊。"
+        },
+        {
+          "en": "The photobook documents ten years of traditional craftsmen working in old Tainan neighborhoods.",
+          "zh": "這部厚實的人文攝影集詳盡記錄了過去十年間默默在台南老城街坊間堅守老手藝的傳統匠人。"
+        }
+      ],
+      "collocations": [
+        "print a photobook"
+      ]
+    },
+    {
+      "id": 3700,
+      "word": "storytelling",
+      "pos": "n. [U]",
+      "phonetic": "[ˋstorɪˌtɛlɪŋ]",
+      "definition": "敘事表達；用影像說故事",
+      "cefr": "B1",
+      "topic": "藝術靈魂",
+      "examples": [
+        {
+          "en": "Great visual storytelling transcends technical sharpness, touching human hearts.",
+          "zh": "卓越感人的視覺敘事力量遠遠超越了器材像素銳利度的追求，能深深直擊並觸動人心。"
+        },
+        {
+          "en": "Campfire storytelling has been a cherished human tradition for tens of thousands of years.",
+          "zh": "圍坐在跳躍溫暖的營火旁聆聽長老口耳相傳說故事，是人類文明延續了數萬年的珍貴傳統。"
+        },
+        {
+          "en": "Documentary photography relies on narrative storytelling to shed light on marginalized communities.",
+          "zh": "深度紀實人文攝影仰賴深刻動人的敘事力量，讓社會大眾關注並理解各角落弱勢族群的處境。"
+        }
+      ],
+      "collocations": [
+        "visual storytelling"
+      ]
+    }
+  ]
+}

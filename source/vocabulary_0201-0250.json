@@ -1,0 +1,1359 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A1–B1）",
+  "section": "第 201–250 個單字（CEFR A1 基礎入門）",
+  "batch": "0201-0250",
+  "range": "201–250",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 201,
+      "word": "in",
+      "pos": "prep., adv.",
+      "phonetic": "[ɪn]",
+      "definition": "在…裡面；在…之中",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "My wallet is in the backpack.",
+          "zh": "我的皮夾在背包裡面。"
+        },
+        {
+          "en": "We study in the classroom every weekday morning.",
+          "zh": "我們每個平日早晨都在教室裡學習。"
+        },
+        {
+          "en": "She was born in Taichung in 2008.",
+          "zh": "她於 2008 年在台中出生。"
+        }
+      ],
+      "collocations": [
+        "in the morning",
+        "in school"
+      ]
+    },
+    {
+      "id": 202,
+      "word": "on",
+      "pos": "prep., adv.",
+      "phonetic": "[ɑn]",
+      "definition": "在…上面；在…進行中",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "Place the computer on the desk.",
+          "zh": "把電腦放在書桌上。"
+        },
+        {
+          "en": "There is a picture hanging on the wall.",
+          "zh": "牆上掛著一幅畫。"
+        },
+        {
+          "en": "What channel is the baseball game on tonight?",
+          "zh": "今晚棒球比賽在第幾台播出？"
+        }
+      ],
+      "collocations": [
+        "on the table",
+        "on TV"
+      ]
+    },
+    {
+      "id": 203,
+      "word": "under",
+      "pos": "prep., adv.",
+      "phonetic": "[ˋʌndɚ]",
+      "definition": "在…下面；在…底下",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "The cat is sleeping under the table.",
+          "zh": "貓咪正在桌子底下睡覺。"
+        },
+        {
+          "en": "We stood under the big tree to avoid the sudden rain.",
+          "zh": "我們站在大樹下躲避突如其來的陣雨。"
+        },
+        {
+          "en": "Keep everything under control during the experiment.",
+          "zh": "實驗過程中要讓一切保持受控。"
+        }
+      ],
+      "collocations": [
+        "under control",
+        "under the tree"
+      ]
+    },
+    {
+      "id": 204,
+      "word": "next to",
+      "pos": "prep. phr.",
+      "phonetic": "[nɛkst tu]",
+      "definition": "在…旁邊；緊鄰",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "The bookstore is next to the post office.",
+          "zh": "書店就在郵局隔壁。"
+        },
+        {
+          "en": "May I sit next to you on the school bus?",
+          "zh": "我可以坐在校車上你旁邊的位置嗎？"
+        },
+        {
+          "en": "Place the dictionary right next to your study notebook.",
+          "zh": "把字典放在你研讀筆記本的正旁邊。"
+        }
+      ],
+      "collocations": [
+        "sit next to",
+        "stand next to"
+      ]
+    },
+    {
+      "id": 205,
+      "word": "behind",
+      "pos": "prep., adv.",
+      "phonetic": "[bɪˋhaɪnd]",
+      "definition": "在…後面；落後於",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "Who is standing behind the curtain?",
+          "zh": "誰站在窗簾後面？"
+        },
+        {
+          "en": "The playground is located behind the gymnasium.",
+          "zh": "遊樂場位於體育館後方。"
+        },
+        {
+          "en": "Don't leave your personal belongings behind when you leave.",
+          "zh": "離開時不要遺落你的個人隨身物品。"
+        }
+      ],
+      "collocations": [
+        "behind the door",
+        "leave behind"
+      ]
+    },
+    {
+      "id": 206,
+      "word": "in front of",
+      "pos": "prep. phr.",
+      "phonetic": "[ɪn frʌnt ʌv]",
+      "definition": "在…前方；在…面前",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "There is a big tree in front of our house.",
+          "zh": "我們房子前面有一棵大樹。"
+        },
+        {
+          "en": "The teacher stood in front of the chalkboard and began teaching.",
+          "zh": "老師站在黑板前開始講課。"
+        },
+        {
+          "en": "Please wait for me in front of the MRT exit number two.",
+          "zh": "請在捷運二號出口前等我。"
+        }
+      ],
+      "collocations": [
+        "wait in front of",
+        "in front of everyone"
+      ]
+    },
+    {
+      "id": 207,
+      "word": "near",
+      "pos": "prep., adj., adv.",
+      "phonetic": "[nɪr]",
+      "definition": "靠近；在附近",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "Do you live near the MRT station?",
+          "zh": "你住在捷運站附近嗎？"
+        },
+        {
+          "en": "There is a convenient grocery store near our school gate.",
+          "zh": "我們學校校門口附近有一家方便的雜貨店。"
+        },
+        {
+          "en": "Winter vacation is drawing near as January approaches.",
+          "zh": "隨著一月份臨近，寒假也越來越近了。"
+        }
+      ],
+      "collocations": [
+        "near here",
+        "near the park"
+      ]
+    },
+    {
+      "id": 208,
+      "word": "between",
+      "pos": "prep.",
+      "phonetic": "[bɪˋtwin]",
+      "definition": "在…之間（兩者間）",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "The convenience store is between the bank and the clinic.",
+          "zh": "便利商店在銀行與診所之間。"
+        },
+        {
+          "en": "What is the main difference between these two grammar rules?",
+          "zh": "這兩條文法規則之間的主要差異是什麼？"
+        },
+        {
+          "en": "Keep this secret strictly between you and me.",
+          "zh": "請把這個秘密嚴格保留在你我之間。"
+        }
+      ],
+      "collocations": [
+        "between A and B",
+        "in between"
+      ]
+    },
+    {
+      "id": 209,
+      "word": "here",
+      "pos": "adv., n.",
+      "phonetic": "[hɪr]",
+      "definition": "這裡；在這裡",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "Please sign your name right here.",
+          "zh": "請就在這裡簽名。"
+        },
+        {
+          "en": "Here is the library book that you wanted to borrow.",
+          "zh": "這是你想借閱的圖書館書籍。"
+        },
+        {
+          "en": "Spring has arrived, and warm weather is finally here.",
+          "zh": "春天到了，溫暖的天氣終於來臨了。"
+        }
+      ],
+      "collocations": [
+        "over here",
+        "come here"
+      ]
+    },
+    {
+      "id": 210,
+      "word": "there",
+      "pos": "adv., pron.",
+      "phonetic": "[ðɛr]",
+      "definition": "那裡；在那裡；有",
+      "cefr": "A1",
+      "topic": "空間與位置",
+      "examples": [
+        {
+          "en": "There is a new bakery over there.",
+          "zh": "那裡開了一家新的麵包店。"
+        },
+        {
+          "en": "Are there any seats left on the evening bullet train?",
+          "zh": "晚班高鐵還有剩餘座位嗎？"
+        },
+        {
+          "en": "Put your heavy backpack over there by the classroom door.",
+          "zh": "把你的重背包放在教室門口那邊。"
+        }
+      ],
+      "collocations": [
+        "over there",
+        "there is / are"
+      ]
+    },
+    {
+      "id": 211,
+      "word": "house",
+      "pos": "n., v.",
+      "phonetic": "[haʊs]",
+      "definition": "房屋；房子；容納",
+      "cefr": "A1",
+      "topic": "居住環境",
+      "examples": [
+        {
+          "en": "They bought a lovely house in Yilan.",
+          "zh": "他們在宜蘭買了一棟可愛的房子。"
+        },
+        {
+          "en": "This museum houses thousands of ancient historical relics.",
+          "zh": "這座博物館收藏了數千件古老的歷史文物。"
+        },
+        {
+          "en": "We had a lively housewarming party with our new neighbors.",
+          "zh": "我們和新鄰居們舉辦了一場熱鬧的喬遷派對。"
+        }
+      ],
+      "collocations": [
+        "townhouse",
+        "house party"
+      ]
+    },
+    {
+      "id": 212,
+      "word": "home",
+      "pos": "n., adv.",
+      "phonetic": "[hom]",
+      "definition": "家；住處；在家",
+      "cefr": "A1",
+      "topic": "居住環境",
+      "examples": [
+        {
+          "en": "Welcome home! Dinner is ready.",
+          "zh": "歡迎回家！晚餐準備好了。"
+        },
+        {
+          "en": "I usually stay at home and relax on Sunday afternoons.",
+          "zh": "星期天下午我通常待在家裡放鬆。"
+        },
+        {
+          "en": "Taiwan is home to many unique endemic animal species.",
+          "zh": "台灣是許多獨特特有種動物的家園。"
+        }
+      ],
+      "collocations": [
+        "go home",
+        "at home"
+      ]
+    },
+    {
+      "id": 213,
+      "word": "kitchen",
+      "pos": "n.",
+      "phonetic": "[ˋkɪtʃɪn]",
+      "definition": "廚房",
+      "cefr": "A1",
+      "topic": "居住環境",
+      "examples": [
+        {
+          "en": "Dad is making soup in the kitchen.",
+          "zh": "爸爸正在廚房煮湯。"
+        },
+        {
+          "en": "Wipe the kitchen counter clean after cooking meals.",
+          "zh": "做完飯後請把廚房流理台擦拭乾淨。"
+        },
+        {
+          "en": "Delicious baking smells drifted out from the kitchen.",
+          "zh": "廚房裡飄出了誘人的烘焙香氣。"
+        }
+      ],
+      "collocations": [
+        "kitchen table",
+        "open kitchen"
+      ]
+    },
+    {
+      "id": 214,
+      "word": "bathroom",
+      "pos": "n.",
+      "phonetic": "[ˋbæθˌrum]",
+      "definition": "浴室；洗手間",
+      "cefr": "A1",
+      "topic": "居住環境",
+      "examples": [
+        {
+          "en": "May I use your bathroom, please?",
+          "zh": "請問我可以借用一下洗手間嗎？"
+        },
+        {
+          "en": "Remember to wash your hands with soap in the bathroom.",
+          "zh": "記得在洗手間用肥皂把手洗乾淨。"
+        },
+        {
+          "en": "The hotel room includes a modern, spotless private bathroom.",
+          "zh": "飯店房間內設有一間現代化且一塵不染的私人浴室。"
+        }
+      ],
+      "collocations": [
+        "go to the bathroom",
+        "clean bathroom"
+      ]
+    },
+    {
+      "id": 215,
+      "word": "garden",
+      "pos": "n., v.",
+      "phonetic": "[ˋgɑrdn]",
+      "definition": "花園；菜園；從事園藝",
+      "cefr": "A1",
+      "topic": "居住與自然",
+      "examples": [
+        {
+          "en": "My grandma grows roses in her garden.",
+          "zh": "我奶奶在她的花園裡種玫瑰花。"
+        },
+        {
+          "en": "We sat in the rooftop garden enjoying the gentle breeze.",
+          "zh": "我們坐在頂樓花園享受著徐徐微風。"
+        },
+        {
+          "en": "She loves to garden during her free time on weekends.",
+          "zh": "週末有空時她很喜歡從事園藝。"
+        }
+      ],
+      "collocations": [
+        "flower garden",
+        "community garden"
+      ]
+    },
+    {
+      "id": 216,
+      "word": "park",
+      "pos": "n., v.",
+      "phonetic": "[pɑrk]",
+      "definition": "公園；停車",
+      "cefr": "A1",
+      "topic": "休閒與場所",
+      "examples": [
+        {
+          "en": "Many people jog in Daan Forest Park.",
+          "zh": "許多人在大安森林公園慢跑。"
+        },
+        {
+          "en": "You cannot park your car in front of the emergency exit.",
+          "zh": "你不能把車停在緊急出口前。"
+        },
+        {
+          "en": "Children laughed and played on the park swings.",
+          "zh": "孩子們在公園鞦韆上歡笑玩耍。"
+        }
+      ],
+      "collocations": [
+        "national park",
+        "park the car"
+      ]
+    },
+    {
+      "id": 217,
+      "word": "store",
+      "pos": "n., v.",
+      "phonetic": "[stor]",
+      "definition": "商店；店鋪；儲存",
+      "cefr": "A1",
+      "topic": "購物與場所",
+      "examples": [
+        {
+          "en": "Let's drop by the convenience store.",
+          "zh": "我們順道去一趟便利商店吧。"
+        },
+        {
+          "en": "You should store fresh milk in the refrigerator.",
+          "zh": "你應該把鮮奶存放在冰箱裡。"
+        },
+        {
+          "en": "The department store is holding an annual anniversary sale.",
+          "zh": "這家百貨公司正在舉辦一年一度的週年慶。"
+        }
+      ],
+      "collocations": [
+        "shop (英式)",
+        "department store"
+      ]
+    },
+    {
+      "id": 218,
+      "word": "library",
+      "pos": "n.",
+      "phonetic": "[ˋlaɪˌbrɛrɪ]",
+      "definition": "圖書館",
+      "cefr": "A1",
+      "topic": "學校與場所",
+      "examples": [
+        {
+          "en": "You must remain quiet in the library.",
+          "zh": "在圖書館內必須保持安靜。"
+        },
+        {
+          "en": "I borrowed three English storybooks from the municipal library.",
+          "zh": "我從市立圖書館借了三本英文故事書。"
+        },
+        {
+          "en": "The university library stays open late during exam week.",
+          "zh": "大學圖書館在考試週期間會延長開放至深夜。"
+        }
+      ],
+      "collocations": [
+        "public library",
+        "school library"
+      ]
+    },
+    {
+      "id": 219,
+      "word": "bank",
+      "pos": "n.",
+      "phonetic": "[bæŋk]",
+      "definition": "銀行；河岸",
+      "cefr": "A1",
+      "topic": "場所與金融",
+      "examples": [
+        {
+          "en": "I need to withdraw some cash from the bank.",
+          "zh": "我需要從銀行領一些現金。"
+        },
+        {
+          "en": "We sat on the grassy river bank and watched the sunset.",
+          "zh": "我們坐在青草叢生的河岸邊欣賞夕陽。"
+        },
+        {
+          "en": "She opened a savings account at the post bank yesterday.",
+          "zh": "她昨天在郵局銀行開立了一個儲蓄帳戶。"
+        }
+      ],
+      "collocations": [
+        "bank account",
+        "river bank"
+      ]
+    },
+    {
+      "id": 220,
+      "word": "post office",
+      "pos": "n.",
+      "phonetic": "[post ˋɔfɪs]",
+      "definition": "郵局",
+      "cefr": "A1",
+      "topic": "場所與公共服務",
+      "examples": [
+        {
+          "en": "I need to send this parcel at the post office.",
+          "zh": "我需要去郵局寄這個包裹。"
+        },
+        {
+          "en": "The post office closes at five o'clock in the afternoon.",
+          "zh": "郵局在下午五點整關門。"
+        },
+        {
+          "en": "You can buy commemorative stamps at the central post office.",
+          "zh": "你可以在總郵局購買紀念郵票。"
+        }
+      ],
+      "collocations": [
+        "local post office",
+        "nearest post office"
+      ]
+    },
+    {
+      "id": 221,
+      "word": "dog",
+      "pos": "n.",
+      "phonetic": "[dɔg]",
+      "definition": "狗；犬",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "Dogs are loyal human companions.",
+          "zh": "狗是人類忠實的伴侶。"
+        },
+        {
+          "en": "I take my pet dog for a twenty-minute walk every evening.",
+          "zh": "我每天傍晚帶我的寵物狗去散步二十分鐘。"
+        },
+        {
+          "en": "The friendly golden retriever wagged its tail happily.",
+          "zh": "那隻友善的黃金獵犬高興地搖著尾巴。"
+        }
+      ],
+      "collocations": [
+        "pet dog",
+        "walk the dog"
+      ]
+    },
+    {
+      "id": 222,
+      "word": "cat",
+      "pos": "n.",
+      "phonetic": "[kæt]",
+      "definition": "貓",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "The black cat is resting on the windowsill.",
+          "zh": "那隻黑貓正趴在窗台上休息。"
+        },
+        {
+          "en": "My cat purrs softly whenever I gently stroke its fur.",
+          "zh": "每當我輕撫我家的貓咪時，牠便發出輕柔的呼嚕聲。"
+        },
+        {
+          "en": "Stray cats in the neighborhood are fed by kind residents.",
+          "zh": "社區裡的流浪貓受到好心居民的餵食照顧。"
+        }
+      ],
+      "collocations": [
+        "pet cat",
+        "stray cat"
+      ]
+    },
+    {
+      "id": 223,
+      "word": "bird",
+      "pos": "n.",
+      "phonetic": "[bɝd]",
+      "definition": "鳥；禽類",
+      "cefr": "A1",
+      "topic": "動物與自然",
+      "examples": [
+        {
+          "en": "The early bird catches the worm.",
+          "zh": "早起的鳥兒有蟲吃。"
+        },
+        {
+          "en": "Flocks of migratory birds visit the river wetlands every winter.",
+          "zh": "每年冬天成群的候鳥都會造訪河口濕地。"
+        },
+        {
+          "en": "We woke up to the cheerful chirping of wild birds.",
+          "zh": "我們在野鳥歡快的鳴囀聲中醒來。"
+        }
+      ],
+      "collocations": [
+        "wild bird",
+        "bird song"
+      ]
+    },
+    {
+      "id": 224,
+      "word": "pig",
+      "pos": "n.",
+      "phonetic": "[pɪg]",
+      "definition": "豬",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "Pigs are actually very smart animals.",
+          "zh": "豬其實是非常聰明的動物。"
+        },
+        {
+          "en": "The farmer feeds the mother pig fresh vegetables and corn.",
+          "zh": "農夫用新鮮蔬菜和玉米餵養母豬。"
+        },
+        {
+          "en": "He has been collecting coins in his ceramic piggy bank for a year.",
+          "zh": "他把硬幣存在他的陶瓷小豬撲滿裡已經一年了。"
+        }
+      ],
+      "collocations": [
+        "guinea pig",
+        "farm pig"
+      ]
+    },
+    {
+      "id": 225,
+      "word": "cow",
+      "pos": "n.",
+      "phonetic": "[kaʊ]",
+      "definition": "母牛；乳牛",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "Cows provide us with fresh milk.",
+          "zh": "乳牛為我們提供新鮮的牛奶。"
+        },
+        {
+          "en": "Dairy cows grazed peacefully in the lush green pasture.",
+          "zh": "乳牛在翠綠茂盛的牧場上悠閒地吃草。"
+        },
+        {
+          "en": "Holy cow, look at the size of that giant watermelon!",
+          "zh": "我的天哪，快看那顆巨型西瓜有多大！"
+        }
+      ],
+      "collocations": [
+        "dairy cow",
+        "holy cow"
+      ]
+    },
+    {
+      "id": 226,
+      "word": "duck",
+      "pos": "n., v.",
+      "phonetic": "[dʌk]",
+      "definition": "鴨子；閃避",
+      "cefr": "A1",
+      "topic": "動物与飲食",
+      "examples": [
+        {
+          "en": "Roast duck is a famous Chinese delicacy.",
+          "zh": "烤鴨是著名的中華美食。"
+        },
+        {
+          "en": "Several yellow ducklings swam gracefully behind their mother.",
+          "zh": "幾隻黃色小鴨優雅地游在鴨媽媽身後。"
+        },
+        {
+          "en": "Duck your head when entering this low-ceiling cave.",
+          "zh": "走進這座低矮洞穴時請低頭彎腰。"
+        }
+      ],
+      "collocations": [
+        "roast duck",
+        "duck down"
+      ]
+    },
+    {
+      "id": 227,
+      "word": "horse",
+      "pos": "n.",
+      "phonetic": "[hɔrs]",
+      "definition": "馬",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "She loves to ride horses on weekends.",
+          "zh": "她喜歡在週末騎馬。"
+        },
+        {
+          "en": "The brown horse galloped swiftly across the wide field.",
+          "zh": "棕色的馬在廣闊的田野上疾速奔馳。"
+        },
+        {
+          "en": "That unexpected candidate proved to be a dark horse in the race.",
+          "zh": "那位出乎意料的候選人證實是這場競賽中的黑馬。"
+        }
+      ],
+      "collocations": [
+        "horse riding",
+        "dark horse"
+      ]
+    },
+    {
+      "id": 228,
+      "word": "monkey",
+      "pos": "n.",
+      "phonetic": "[ˋmʌŋkɪ]",
+      "definition": "猴子",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "You can see Formosan rock macaques on Shoushan.",
+          "zh": "你可以在壽山上看到台灣獼猴。"
+        },
+        {
+          "en": "Stop monkeying around and finish your homework first.",
+          "zh": "別再胡鬧搗蛋了，先把作業寫完。"
+        },
+        {
+          "en": "The clever monkey peeled the sweet banana effortlessly.",
+          "zh": "聰明的猴子毫不費力地剝開了香甜的香蕉。"
+        }
+      ],
+      "collocations": [
+        "wild monkey",
+        "monkey around"
+      ]
+    },
+    {
+      "id": 229,
+      "word": "bear",
+      "pos": "n., v.",
+      "phonetic": "[bɛr]",
+      "definition": "熊；忍受；承擔",
+      "cefr": "A1",
+      "topic": "動物與情感",
+      "examples": [
+        {
+          "en": "The Formosan black bear is a protected animal.",
+          "zh": "台灣黑熊是保育類動物。"
+        },
+        {
+          "en": "I cannot bear the scorching heat in midsummer without air conditioning.",
+          "zh": "盛夏沒有冷氣我實在無法忍受那股酷熱。"
+        },
+        {
+          "en": "A polar bear has thick fur to stay warm in the Arctic snow.",
+          "zh": "北極熊擁有厚實的毛皮，能在北極風雪中保持溫暖。"
+        }
+      ],
+      "collocations": [
+        "black bear",
+        "cannot bear"
+      ]
+    },
+    {
+      "id": 230,
+      "word": "lion",
+      "pos": "n.",
+      "phonetic": "[ˋlaɪən]",
+      "definition": "獅子",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "The lion is often called the king of the jungle.",
+          "zh": "獅子常被稱為萬獸之王。"
+        },
+        {
+          "en": "A pride of lions rested quietly under the shade of an acacia tree.",
+          "zh": "一群獅子在金合歡樹蔭下安靜休息。"
+        },
+        {
+          "en": "He showed lionhearted courage when facing the sudden emergency.",
+          "zh": "面對突如其來的緊急狀況，他展現了雄獅般的勇氣。"
+        }
+      ],
+      "collocations": [
+        "male lion",
+        "lion king"
+      ]
+    },
+    {
+      "id": 231,
+      "word": "tiger",
+      "pos": "n.",
+      "phonetic": "[ˋtaɪgɚ]",
+      "definition": "老虎",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "Tigers have orange fur with black stripes.",
+          "zh": "老虎有著帶黑條紋的橘色毛皮。"
+        },
+        {
+          "en": "Bengal tigers are known for their strength and solitary lifestyle.",
+          "zh": "孟加拉虎以其力量和獨居習性而聞名。"
+        },
+        {
+          "en": "That strict warning turned out to be nothing more than a paper tiger.",
+          "zh": "那個嚴格的警告結果只不過是一隻紙老虎。"
+        }
+      ],
+      "collocations": [
+        "wild tiger",
+        "paper tiger"
+      ]
+    },
+    {
+      "id": 232,
+      "word": "elephant",
+      "pos": "n.",
+      "phonetic": "[ˋɛləfənt]",
+      "definition": "大象",
+      "cefr": "A1",
+      "topic": "動物",
+      "examples": [
+        {
+          "en": "Elephants have very long trunks and big ears.",
+          "zh": "大象有著長長的鼻子和大大的耳朵。"
+        },
+        {
+          "en": "An Asian elephant can live for more than sixty years.",
+          "zh": "亞洲象可以存活超過六十年。"
+        },
+        {
+          "en": "Let's address the elephant in the room and discuss the budget problem.",
+          "zh": "我們來正視這個大家心照不宣卻避而不談的預算問題吧。"
+        }
+      ],
+      "collocations": [
+        "African elephant",
+        "baby elephant"
+      ]
+    },
+    {
+      "id": 233,
+      "word": "look",
+      "pos": "v., n.",
+      "phonetic": "[lʊk]",
+      "definition": "看；注視；看起來",
+      "cefr": "A1",
+      "topic": "感官與動作",
+      "examples": [
+        {
+          "en": "Look at the beautiful rainbow in the sky!",
+          "zh": "快看天上美麗的彩虹！"
+        },
+        {
+          "en": "She looks very elegant in her traditional festival costume.",
+          "zh": "她穿著傳統節慶服裝看起來十分優雅。"
+        },
+        {
+          "en": "Can you help me look for my lost bus card?",
+          "zh": "你能幫我找一下我遺失的公車卡嗎？"
+        }
+      ],
+      "collocations": [
+        "look at",
+        "look like"
+      ]
+    },
+    {
+      "id": 234,
+      "word": "see",
+      "pos": "v.",
+      "phonetic": "[si]",
+      "definition": "看見；明白；遇見",
+      "cefr": "A1",
+      "topic": "感官與認知",
+      "examples": [
+        {
+          "en": "I see what you mean.",
+          "zh": "我明白你的意思了。"
+        },
+        {
+          "en": "Let me see the test results before we celebrate.",
+          "zh": "在我們慶祝之前，先讓我看一下考試成果。"
+        },
+        {
+          "en": "It was so foggy that we could hardly see the road ahead.",
+          "zh": "霧太濃了，以致於我們幾乎看不見前方的道路。"
+        }
+      ],
+      "collocations": [
+        "see you later",
+        "let me see"
+      ]
+    },
+    {
+      "id": 235,
+      "word": "listen",
+      "pos": "v.",
+      "phonetic": "[ˋlɪsn]",
+      "definition": "聆聽；傾聽",
+      "cefr": "A1",
+      "topic": "感官與動作",
+      "examples": [
+        {
+          "en": "Please listen carefully to the instructions.",
+          "zh": "請仔細聆聽說明。"
+        },
+        {
+          "en": "I like to listen to classical piano music while studying.",
+          "zh": "讀書時我喜歡聽古典鋼琴音樂。"
+        },
+        {
+          "en": "You should always listen to your parents' sincere advice.",
+          "zh": "你應該始終傾聽父母誠懇的建議。"
+        }
+      ],
+      "collocations": [
+        "listen to music",
+        "listen carefully"
+      ]
+    },
+    {
+      "id": 236,
+      "word": "hear",
+      "pos": "v.",
+      "phonetic": "[hɪr]",
+      "definition": "聽見；得知",
+      "cefr": "A1",
+      "topic": "感官與認知",
+      "examples": [
+        {
+          "en": "Did you hear that strange sound?",
+          "zh": "你有聽見那個奇怪的聲音嗎？"
+        },
+        {
+          "en": "I haven't heard from my elementary school classmate for years.",
+          "zh": "我已經多年沒有收到國小同班同學的音訊了。"
+        },
+        {
+          "en": "Speak louder so that the students in the back can hear you clearly.",
+          "zh": "講大聲一點，好讓後排的學生能聽得清楚。"
+        }
+      ],
+      "collocations": [
+        "hear from",
+        "hear about"
+      ]
+    },
+    {
+      "id": 237,
+      "word": "speak",
+      "pos": "v.",
+      "phonetic": "[spik]",
+      "definition": "說話；演講；講（語言）",
+      "cefr": "A1",
+      "topic": "溝通與語言",
+      "examples": [
+        {
+          "en": "Can you speak English and Mandarin?",
+          "zh": "你會說英文和國語嗎？"
+        },
+        {
+          "en": "Actions speak much louder than words.",
+          "zh": "行動勝於空談。"
+        },
+        {
+          "en": "She was invited to speak at the international youth forum.",
+          "zh": "她受邀在國際青年論壇上發表演說。"
+        }
+      ],
+      "collocations": [
+        "speak English",
+        "speak up"
+      ]
+    },
+    {
+      "id": 238,
+      "word": "talk",
+      "pos": "v., n.",
+      "phonetic": "[tɔk]",
+      "definition": "談話；聊天；交談",
+      "cefr": "A1",
+      "topic": "溝通與社交",
+      "examples": [
+        {
+          "en": "Let's talk about our weekend plans.",
+          "zh": "我們來聊聊週末的計畫吧。"
+        },
+        {
+          "en": "We had a long heart-to-heart talk about our future dreams.",
+          "zh": "我們針對未來的夢想進行了一次長談交心。"
+        },
+        {
+          "en": "Don't talk during the movie screening in the cinema.",
+          "zh": "電影院放映期間請不要說話。"
+        }
+      ],
+      "collocations": [
+        "talk to",
+        "have a talk"
+      ]
+    },
+    {
+      "id": 239,
+      "word": "say",
+      "pos": "v.",
+      "phonetic": "[se]",
+      "definition": "說；講述",
+      "cefr": "A1",
+      "topic": "溝通與語言",
+      "examples": [
+        {
+          "en": "What did the teacher say about the test?",
+          "zh": "老師說了什麼關於考試的事？"
+        },
+        {
+          "en": "Remember to say thank you whenever someone assists you.",
+          "zh": "每當有人協助你時，記得說聲謝謝。"
+        },
+        {
+          "en": "It goes without saying that health is more valuable than money.",
+          "zh": "不用說，健康自然比金錢更加珍貴。"
+        }
+      ],
+      "collocations": [
+        "say hello",
+        "say sorry"
+      ]
+    },
+    {
+      "id": 240,
+      "word": "tell",
+      "pos": "v.",
+      "phonetic": "[tɛl]",
+      "definition": "告訴；講述；分辨",
+      "cefr": "A1",
+      "topic": "溝通與資訊",
+      "examples": [
+        {
+          "en": "Can you tell me the way to the station?",
+          "zh": "你能告訴我往車站怎麼走嗎？"
+        },
+        {
+          "en": "Grandfather loves to tell fascinating folk stories by the fireplace.",
+          "zh": "爺爺喜歡在壁爐旁講述迷人的民間傳說。"
+        },
+        {
+          "en": "It is always best to tell the truth even when it is difficult.",
+          "zh": "即使困難重重，說實話永遠是最好的選擇。"
+        }
+      ],
+      "collocations": [
+        "tell a story",
+        "tell the truth"
+      ]
+    },
+    {
+      "id": 241,
+      "word": "read",
+      "pos": "v.",
+      "phonetic": "[rid]",
+      "definition": "閱讀；朗讀",
+      "cefr": "A1",
+      "topic": "學習與技能",
+      "examples": [
+        {
+          "en": "I love to read English novels before bed.",
+          "zh": "我喜歡在睡前閱讀英文小說。"
+        },
+        {
+          "en": "The teacher asked the students to read the dialogue aloud.",
+          "zh": "老師要求學生們大聲朗讀這段對話。"
+        },
+        {
+          "en": "I read an inspiring article about marine conservation in today's paper.",
+          "zh": "我在今天的報紙上讀到了一篇關於海洋保育的鼓舞人心的文章。"
+        }
+      ],
+      "collocations": [
+        "read books",
+        "read aloud"
+      ]
+    },
+    {
+      "id": 242,
+      "word": "write",
+      "pos": "v.",
+      "phonetic": "[raɪt]",
+      "definition": "書寫；寫作",
+      "cefr": "A1",
+      "topic": "學習與技能",
+      "examples": [
+        {
+          "en": "Please write down your email address.",
+          "zh": "請寫下你的電子郵件地址。"
+        },
+        {
+          "en": "She writes in her personal diary every night before going to sleep.",
+          "zh": "她每晚睡前都會在私人日記裡寫下記錄。"
+        },
+        {
+          "en": "He decided to write a thank-you letter to his former tutor.",
+          "zh": "他決定寫一封感謝信給他以前的家教老師。"
+        }
+      ],
+      "collocations": [
+        "write down",
+        "write a letter"
+      ]
+    },
+    {
+      "id": 243,
+      "word": "draw",
+      "pos": "v., n.",
+      "phonetic": "[drɔ]",
+      "definition": "畫畫；拉；吸引",
+      "cefr": "A1",
+      "topic": "藝術與技能",
+      "examples": [
+        {
+          "en": "Children like to draw pictures with crayons.",
+          "zh": "小朋友喜歡用蠟筆畫畫。"
+        },
+        {
+          "en": "The street magician drew a huge crowd of curious spectators.",
+          "zh": "街頭魔術師吸引了一大群好奇的圍觀群眾。"
+        },
+        {
+          "en": "The thrilling basketball championship game ended in a draw.",
+          "zh": "這場精彩刺激的籃球冠軍賽以平手收場。"
+        }
+      ],
+      "collocations": [
+        "draw a picture",
+        "draw attention"
+      ]
+    },
+    {
+      "id": 244,
+      "word": "open",
+      "pos": "v., adj.",
+      "phonetic": "[ˋopən]",
+      "definition": "打開；開放的；營業中的",
+      "cefr": "A1",
+      "topic": "日常動作與狀態",
+      "examples": [
+        {
+          "en": "The supermarket is open 24 hours a day.",
+          "zh": "這家超市一天 24 小時營業。"
+        },
+        {
+          "en": "Please open the front window to let fresh air circulate.",
+          "zh": "請打開前窗讓新鮮空氣流通。"
+        },
+        {
+          "en": "The new library branch will open to the public next Monday.",
+          "zh": "新的圖書館分館將於下週一對公眾開放。"
+        }
+      ],
+      "collocations": [
+        "open the door",
+        "keep open"
+      ]
+    },
+    {
+      "id": 245,
+      "word": "close",
+      "pos": "v., adj., adv.",
+      "phonetic": "[kloz] / [klos]",
+      "definition": "關閉；接近的；親密的",
+      "cefr": "A1",
+      "topic": "日常動作與狀態",
+      "examples": [
+        {
+          "en": "Please close the window before you leave.",
+          "zh": "離開前請把窗戶關上。"
+        },
+        {
+          "en": "Amy and Emily have been close friends since elementary school.",
+          "zh": "艾咪和艾蜜莉從小學起就是親密好友。"
+        },
+        {
+          "en": "The local clinic closes at eight o'clock in the evening.",
+          "zh": "在地診所在晚間八點整結束看診。"
+        }
+      ],
+      "collocations": [
+        "close the door",
+        "close friend"
+      ]
+    },
+    {
+      "id": 246,
+      "word": "give",
+      "pos": "v.",
+      "phonetic": "[gɪv]",
+      "definition": "給予；贈送",
+      "cefr": "A1",
+      "topic": "日常動作與互動",
+      "examples": [
+        {
+          "en": "Give me a hand with these heavy boxes.",
+          "zh": "幫我搬一下這些重箱子吧。"
+        },
+        {
+          "en": "She gave her younger brother an inspiring storybook for his birthday.",
+          "zh": "她送給弟弟一本充滿啟發性的故事書作為生日禮物。"
+        },
+        {
+          "en": "Never give up on your dreams no matter how tough things get.",
+          "zh": "無論處境多麼艱難，絕不要放棄你的夢想。"
+        }
+      ],
+      "collocations": [
+        "give up",
+        "give back"
+      ]
+    },
+    {
+      "id": 247,
+      "word": "take",
+      "pos": "v.",
+      "phonetic": "[tek]",
+      "definition": "拿取；攜帶；搭乘；花費",
+      "cefr": "A1",
+      "topic": "日常動作與交通",
+      "examples": [
+        {
+          "en": "It will take fifteen minutes to get there.",
+          "zh": "到那裡需要花費十五分鐘。"
+        },
+        {
+          "en": "We took lots of wonderful photos during our hike in Taroko Gorge.",
+          "zh": "我們在太魯閣峽谷健行時拍了許多精彩照片。"
+        },
+        {
+          "en": "Remember to take your prescribed medicine after each meal.",
+          "zh": "記得三餐飯後服用醫師開立的處方藥。"
+        }
+      ],
+      "collocations": [
+        "take photos",
+        "take a bus"
+      ]
+    },
+    {
+      "id": 248,
+      "word": "bring",
+      "pos": "v.",
+      "phonetic": "[brɪŋ]",
+      "definition": "帶來；拿來",
+      "cefr": "A1",
+      "topic": "日常動作",
+      "examples": [
+        {
+          "en": "Don't forget to bring your textbook tomorrow.",
+          "zh": "明天別忘了帶你的課本來。"
+        },
+        {
+          "en": "The spring rain brings green life back to dry mountain hills.",
+          "zh": "春雨讓乾燥的山丘重現翠綠生機。"
+        },
+        {
+          "en": "You can bring a friend along to our weekend study session.",
+          "zh": "你可以帶一位朋友一起參加我們週末的讀書會。"
+        }
+      ],
+      "collocations": [
+        "bring about",
+        "bring along"
+      ]
+    },
+    {
+      "id": 249,
+      "word": "find",
+      "pos": "v.",
+      "phonetic": "[faɪnd]",
+      "definition": "找到；發現",
+      "cefr": "A1",
+      "topic": "日常動作與認知",
+      "examples": [
+        {
+          "en": "I cannot find my student ID card anywhere.",
+          "zh": "我到處都找不到我的學生證。"
+        },
+        {
+          "en": "Scientists hope to find new renewable energy solutions.",
+          "zh": "科學家希望能找到新的再生能源解決方案。"
+        },
+        {
+          "en": "Did you find it easy to adapt to the new school routine?",
+          "zh": "你覺得適應新的學校日常步調容易嗎？"
+        }
+      ],
+      "collocations": [
+        "find out",
+        "find a way"
+      ]
+    },
+    {
+      "id": 250,
+      "word": "help",
+      "pos": "v., n.",
+      "phonetic": "[hɛlp]",
+      "definition": "幫忙；協助；援助",
+      "cefr": "A1",
+      "topic": "社交與互動",
+      "examples": [
+        {
+          "en": "Thank you so much for your kind help!",
+          "zh": "非常感謝你的熱心幫忙！"
+        },
+        {
+          "en": "Eating fresh fruits can help strengthen your immune system.",
+          "zh": "多吃新鮮水果能有助於強化你的免疫系統。"
+        },
+        {
+          "en": "Don't hesitate to ask for help if you encounter any difficulties.",
+          "zh": "如果遇到任何困難，請毫不猶豫地尋求協助。"
+        }
+      ],
+      "collocations": [
+        "help out",
+        "ask for help"
+      ]
+    }
+  ]
+}

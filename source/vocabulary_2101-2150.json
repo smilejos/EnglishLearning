@@ -1,0 +1,1354 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 2,101–2,150 個單字（CEFR B1 中級）",
+  "batch": "2101-2150",
+  "range": "2101–2150",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 2101,
+      "word": "technology",
+      "pos": "n.",
+      "phonetic": "[tɛkˋnɑlədʒɪ]",
+      "definition": "科技；技術；工藝",
+      "cefr": "B1",
+      "topic": "科技發展",
+      "examples": [
+        {
+          "en": "Cutting-edge green technology reduces industrial carbon emissions.",
+          "zh": "前瞻尖端的綠色科技有效降低了工業碳排放。"
+        },
+        {
+          "en": "Advancements in medical technology have extended average human life expectancy.",
+          "zh": "醫療技術的進步延長了人類的平均預期壽命。"
+        },
+        {
+          "en": "Many schools incorporate educational technology into their daily curricula.",
+          "zh": "許多學校已將教育科技融入日常課程教學中。"
+        }
+      ],
+      "collocations": [
+        "advanced technology",
+        "high-tech"
+      ]
+    },
+    {
+      "id": 2102,
+      "word": "artificial intelligence",
+      "pos": "n. phr.",
+      "phonetic": "[͵ɑrtəˋfɪʃəl ɪnˋtɛlədʒəns]",
+      "definition": "人工智慧 (AI)",
+      "cefr": "B1",
+      "topic": "科技趨勢",
+      "examples": [
+        {
+          "en": "Artificial intelligence revolutionizes medical diagnosis and automated translation.",
+          "zh": "人工智慧徹底革新了醫療診斷與自動翻譯領域。"
+        },
+        {
+          "en": "Ethical guidelines are needed to govern the rapid development of artificial intelligence.",
+          "zh": "需要制定道德倫理準則以規範人工智慧的快速發展。"
+        },
+        {
+          "en": "Many software applications now integrate generative artificial intelligence features.",
+          "zh": "許多應用軟體現在都整合了生成式人工智慧的功能。"
+        }
+      ],
+      "collocations": [
+        "AI model",
+        "generative AI"
+      ]
+    },
+    {
+      "id": 2103,
+      "word": "machine learning",
+      "pos": "n. phr.",
+      "phonetic": "[məˋʃin ˋlɝnɪŋ]",
+      "definition": "機器學習 (ML)",
+      "cefr": "B1",
+      "topic": "科技與演算法",
+      "examples": [
+        {
+          "en": "Machine learning models predict traffic congestion patterns accurately.",
+          "zh": "機器學習模型能精準預測道路交通壅塞模式。"
+        },
+        {
+          "en": "She is taking an online course to understand the fundamentals of machine learning.",
+          "zh": "她正在修習線上課程以理解機器學習的基本原理。"
+        },
+        {
+          "en": "Financial institutions rely on machine learning to detect credit card fraud.",
+          "zh": "金融機構依賴機器學習來偵測信用卡詐騙交易。"
+        }
+      ],
+      "collocations": [
+        "ML algorithm",
+        "train a model"
+      ]
+    },
+    {
+      "id": 2104,
+      "word": "algorithm",
+      "pos": "n.",
+      "phonetic": "[ˋælgəˌrɪðəm]",
+      "definition": "演算法；運算法則",
+      "cefr": "B1",
+      "topic": "程式與數學",
+      "examples": [
+        {
+          "en": "Social media feeds use sorting algorithms to recommend relevant video content.",
+          "zh": "社群動態牆運用排序演算法向用戶推薦相關影片內容。"
+        },
+        {
+          "en": "The search engine updated its core algorithm to filter out low-quality websites.",
+          "zh": "該搜尋引擎更新了核心演算法以過濾低品質網站。"
+        },
+        {
+          "en": "Engineers are developing a faster algorithm to process large datasets.",
+          "zh": "工程師正在開發更快速的演算法來處理龐大的資料集。"
+        }
+      ],
+      "collocations": [
+        "search algorithm",
+        "computer algorithm"
+      ]
+    },
+    {
+      "id": 2105,
+      "word": "software",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɔftˌwɛr]",
+      "definition": "軟體；應用程式",
+      "cefr": "B1",
+      "topic": "資訊科技",
+      "examples": [
+        {
+          "en": "Keep your antivirus software updated to defend against malicious attacks.",
+          "zh": "保持防毒軟體即時更新以抵禦惡意網路攻擊。"
+        },
+        {
+          "en": "Our company decided to switch to open-source software to save licensing costs.",
+          "zh": "我們公司決定轉換至開源軟體以節省授權費用。"
+        },
+        {
+          "en": "The new graphic editing software offers dozens of intuitive drawing tools.",
+          "zh": "這款全新的影像編輯軟體提供了數十種直覺好用的繪圖工具。"
+        }
+      ],
+      "collocations": [
+        "software engineer",
+        "software development"
+      ]
+    },
+    {
+      "id": 2106,
+      "word": "hardware",
+      "pos": "n. [U]",
+      "phonetic": "[ˋhɑrdˌwɛr]",
+      "definition": "硬體；電腦零組件；五金",
+      "cefr": "B1",
+      "topic": "資訊科技",
+      "examples": [
+        {
+          "en": "Taiwan is a worldwide leader in PC and server hardware manufacturing.",
+          "zh": "台灣在個人電腦與伺服器硬體製造領域領先全球。"
+        },
+        {
+          "en": "You should upgrade your computer hardware before playing graphic-intensive games.",
+          "zh": "在玩高畫質遊戲之前，你應該先升級電腦硬體規格。"
+        },
+        {
+          "en": "The tech store sells both computer hardware and specialized repair tools.",
+          "zh": "這家科技商店兼賣電腦硬體與專業維修工具。"
+        }
+      ],
+      "collocations": [
+        "computer hardware",
+        "hardware components"
+      ]
+    },
+    {
+      "id": 2107,
+      "word": "developer",
+      "pos": "n.",
+      "phonetic": "[dɪˋvɛləpɚ]",
+      "definition": "軟體開發者；程式設計師；建商",
+      "cefr": "B1",
+      "topic": "科技職位",
+      "examples": [
+        {
+          "en": "App developers gathered at the annual international hackathon competition.",
+          "zh": "應用程式開發者齊聚於一年一度的國際黑客松競賽。"
+        },
+        {
+          "en": "The senior developer spent the afternoon reviewing code written by interns.",
+          "zh": "資深軟體開發工程師花了一整個下午審查實習生編寫的程式碼。"
+        },
+        {
+          "en": "A local property developer plans to build a new shopping complex downtown.",
+          "zh": "當地一家不動產建商計劃在市中心興建一座新的購物商場。"
+        }
+      ],
+      "collocations": [
+        "software developer",
+        "web developer"
+      ]
+    },
+    {
+      "id": 2108,
+      "word": "programming",
+      "pos": "n. [U]",
+      "phonetic": "[ˋprogræmɪŋ]",
+      "definition": "程式設計；編寫程式",
+      "cefr": "B1",
+      "topic": "資訊技能",
+      "examples": [
+        {
+          "en": "Python is one of the most popular programming languages for beginners.",
+          "zh": "Python 是最受初學者歡迎的熱門程式設計語言之一。"
+        },
+        {
+          "en": "Logical thinking skills can be greatly sharpened through computer programming.",
+          "zh": "透過電腦程式設計能大幅鍛鍊邏輯思考能力。"
+        },
+        {
+          "en": "The museum organized a weekend programming workshop for teenagers.",
+          "zh": "博物館為青少年舉辦了一場週末程式設計工作坊。"
+        }
+      ],
+      "collocations": [
+        "programming language",
+        "coding"
+      ]
+    },
+    {
+      "id": 2109,
+      "word": "database",
+      "pos": "n.",
+      "phonetic": "[ˋdetəˌbes]",
+      "definition": "資料庫",
+      "cefr": "B1",
+      "topic": "數據管理",
+      "examples": [
+        {
+          "en": "Customer contact information is safely stored in an encrypted database.",
+          "zh": "顧客聯絡資訊被安全妥善地儲存在加密資料庫中。"
+        },
+        {
+          "en": "The server administrator backed up the relational database before the system upgrade.",
+          "zh": "伺服器管理員在系統升級前將關聯式資料庫進行了備份。"
+        },
+        {
+          "en": "Researchers queried the medical database to analyze disease prevalence across regions.",
+          "zh": "研究人員查詢醫療資料庫以分析各區域的疾病盛行率。"
+        }
+      ],
+      "collocations": [
+        "relational database",
+        "SQL database"
+      ]
+    },
+    {
+      "id": 2110,
+      "word": "server",
+      "pos": "n.",
+      "phonetic": "[ˋsɝvɚ]",
+      "definition": "伺服器；服務生；發球員",
+      "cefr": "B1",
+      "topic": "網路設備",
+      "examples": [
+        {
+          "en": "High-performance cloud servers host millions of active websites.",
+          "zh": "高效能雲端伺服器託管著數以百萬計的活躍網站。"
+        },
+        {
+          "en": "A sudden surge in web traffic caused the ticketing server to go offline.",
+          "zh": "網路流量突然暴增導致購票伺服器連線中斷。"
+        },
+        {
+          "en": "The polite server recommended the chef's special dish of the day.",
+          "zh": "那位有禮貌的服務生推薦了今日主廚特餐。"
+        }
+      ],
+      "collocations": [
+        "web server",
+        "server crash"
+      ]
+    },
+    {
+      "id": 2111,
+      "word": "cloud storage",
+      "pos": "n. phr.",
+      "phonetic": "[klaʊd ˋstorɪdʒ]",
+      "definition": "雲端儲存；雲端硬碟",
+      "cefr": "B1",
+      "topic": "雲端科技",
+      "examples": [
+        {
+          "en": "Store your study notes on cloud storage so you can access them anywhere.",
+          "zh": "將你的讀書筆記存放在雲端硬碟，方便隨時隨地查閱。"
+        },
+        {
+          "en": "Many cloud storage providers offer free limited space for basic users.",
+          "zh": "許多雲端儲存服務商為一般用戶提供免費的有限空間。"
+        },
+        {
+          "en": "Automated synchronization with cloud storage prevents accidental data loss.",
+          "zh": "與雲端儲存自動同步能防止檔案因意外而遺失。"
+        }
+      ],
+      "collocations": [
+        "Google Drive",
+        "Dropbox"
+      ]
+    },
+    {
+      "id": 2112,
+      "word": "cloud computing",
+      "pos": "n. phr.",
+      "phonetic": "[klaʊd kəmˋpjutɪŋ]",
+      "definition": "雲端運算",
+      "cefr": "B1",
+      "topic": "雲端科技",
+      "examples": [
+        {
+          "en": "Cloud computing allows enterprises to scale computing power dynamically.",
+          "zh": "雲端運算使企業能夠動態擴展靈活強大的運算效能。"
+        },
+        {
+          "en": "The rise of cloud computing has transformed traditional corporate IT infrastructure.",
+          "zh": "雲端運算的興起翻轉了傳統企業的資訊科技基礎架構。"
+        },
+        {
+          "en": "Cost reduction and flexibility are major incentives for adopting cloud computing.",
+          "zh": "降低成本與彈性是企業導入雲端運算的主要誘因。"
+        }
+      ],
+      "collocations": [
+        "AWS",
+        "Azure",
+        "Google Cloud"
+      ]
+    },
+    {
+      "id": 2113,
+      "word": "cybersecurity",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsaɪbɚsɪ͵kjʊrətɪ]",
+      "definition": "網路資訊安全；資安",
+      "cefr": "B1",
+      "topic": "網路防護",
+      "examples": [
+        {
+          "en": "Financial institutions invest heavily in advanced cybersecurity systems.",
+          "zh": "金融機構投入巨資建構先進嚴密的網路資安防護系統。"
+        },
+        {
+          "en": "The seminar emphasized the importance of individual cybersecurity awareness.",
+          "zh": "該講座強調了培養個人網路資安防範意識的重要性。"
+        },
+        {
+          "en": "A major cybersecurity breach forced the company to reset all passwords.",
+          "zh": "一起重大資安外洩事件迫使該公司重設所有密碼。"
+        }
+      ],
+      "collocations": [
+        "cybersecurity expert",
+        "cyber defense"
+      ]
+    },
+    {
+      "id": 2114,
+      "word": "hacker",
+      "pos": "n.",
+      "phonetic": "[ˋhækɚ]",
+      "definition": "駭客；網路入侵者",
+      "cefr": "B1",
+      "topic": "網路安全",
+      "examples": [
+        {
+          "en": "Ethical white-hat hackers help organizations identify security vulnerabilities.",
+          "zh": "合法具道德感的白帽駭客協助企業組織找出安全漏洞。"
+        },
+        {
+          "en": "The notorious hacker was arrested after breaking into government databases.",
+          "zh": "惡名昭彰的駭客在入侵政府資料庫後遭到逮捕。"
+        },
+        {
+          "en": "Security teams must think like a hacker to anticipate potential threats.",
+          "zh": "資安團隊必須以駭客的思維思考才能預防潛在威脅。"
+        }
+      ],
+      "collocations": [
+        "ethical hacker",
+        "hacker attack"
+      ]
+    },
+    {
+      "id": 2115,
+      "word": "virus",
+      "pos": "n.",
+      "phonetic": "[ˋvaɪrəs]",
+      "definition": "電腦病毒；病毒",
+      "cefr": "B1",
+      "topic": "科技與健康",
+      "examples": [
+        {
+          "en": "Never download suspicious email attachments that could contain a computer virus.",
+          "zh": "切勿下載可能夾帶電腦病毒的可疑電子郵件附件。"
+        },
+        {
+          "en": "The seasonal flu virus spreads rapidly in crowded indoor environments.",
+          "zh": "季節性流感病毒在擁擠的室內環境中傳播迅速。"
+        },
+        {
+          "en": "Running a complete system scan discovered a dormant Trojan virus.",
+          "zh": "執行全系統掃描發現了一隻潛伏的木馬病毒。"
+        }
+      ],
+      "collocations": [
+        "antivirus",
+        "computer virus"
+      ]
+    },
+    {
+      "id": 2116,
+      "word": "malware",
+      "pos": "n. [U]",
+      "phonetic": "[ˋmælwɛr]",
+      "definition": "惡意軟體",
+      "cefr": "B1",
+      "topic": "網路安全",
+      "examples": [
+        {
+          "en": "The IT team installed patches to block dangerous malware infections.",
+          "zh": "資訊部門安裝了安全修補程式以阻擋危險惡意軟體的感染。"
+        },
+        {
+          "en": "Downloading pirated software often introduces spyware and malware onto your PC.",
+          "zh": "下載盜版軟體常會將間諜軟體與惡意軟體引入個人電腦。"
+        },
+        {
+          "en": "Modern antivirus solutions detect malware by analyzing anomalous file behaviors.",
+          "zh": "現代防毒軟體透過分析異常檔案行為來偵測惡意軟體。"
+        }
+      ],
+      "collocations": [
+        "malicious software",
+        "spyware"
+      ]
+    },
+    {
+      "id": 2117,
+      "word": "ransomware",
+      "pos": "n. [U]",
+      "phonetic": "[ˋrænsəmˌwɛr]",
+      "definition": "勒索軟體",
+      "cefr": "B1",
+      "topic": "網路安全",
+      "examples": [
+        {
+          "en": "Ransomware attacks lock files until the victim pays a crypto ransom.",
+          "zh": "勒索軟體攻擊會鎖死檔案，直到受害者支付加密貨幣贖金。"
+        },
+        {
+          "en": "Hospitals are frequent targets of ransomware extortion schemes.",
+          "zh": "醫院常成為勒索軟體勒索企圖的目標攻擊對象。"
+        },
+        {
+          "en": "Maintaining offline backup copies is the most reliable defense against ransomware.",
+          "zh": "保存離線備份副本是抵禦勒索軟體最可靠的防線。"
+        }
+      ],
+      "collocations": [
+        "ransomware attack"
+      ]
+    },
+    {
+      "id": 2118,
+      "word": "phishing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfɪʃɪŋ]",
+      "definition": "網路釣魚；釣魚詐騙",
+      "cefr": "B1",
+      "topic": "網路安全",
+      "examples": [
+        {
+          "en": "Beware of fake phishing text messages claiming your parcel is delayed.",
+          "zh": "當心假借包裹配送延誤為由的假冒釣魚簡訊詐騙。"
+        },
+        {
+          "en": "The company conducts regular phishing simulation drills for its employees.",
+          "zh": "公司為員工定期舉辦釣魚郵件模擬演練。"
+        },
+        {
+          "en": "Phishing websites imitate banking portals to steal login credentials.",
+          "zh": "釣魚網站模仿銀行登入入口以竊取使用者的帳密憑證。"
+        }
+      ],
+      "collocations": [
+        "phishing email",
+        "phishing scam"
+      ]
+    },
+    {
+      "id": 2119,
+      "word": "firewall",
+      "pos": "n.",
+      "phonetic": "[ˋfaɪrˌwɔl]",
+      "definition": "防火牆",
+      "cefr": "B1",
+      "topic": "網路安全",
+      "examples": [
+        {
+          "en": "A robust enterprise firewall filters unauthorized network traffic.",
+          "zh": "堅固的企業級防火牆能有效過濾未經授權的網路流量。"
+        },
+        {
+          "en": "Make sure your personal firewall is turned on whenever connecting to public Wi-Fi.",
+          "zh": "連線至公共 Wi-Fi 時，請確保個人防火牆已開啟。"
+        },
+        {
+          "en": "The network engineer adjusted the firewall rules to allow remote access.",
+          "zh": "網路工程師調整了防火牆規則以允許遠端連線訪問。"
+        }
+      ],
+      "collocations": [
+        "hardware firewall",
+        "set up a firewall"
+      ]
+    },
+    {
+      "id": 2120,
+      "word": "encrypt",
+      "pos": "v.",
+      "phonetic": "[ɪnˋkrɪpt]",
+      "definition": "加密；編碼",
+      "cefr": "B1",
+      "topic": "資訊安全",
+      "examples": [
+        {
+          "en": "Messaging apps encrypt user chats end-to-end for privacy.",
+          "zh": "通訊軟體對使用者的通話聊天進行端對端加密以保護隱私。"
+        },
+        {
+          "en": "You should encrypt confidential business contracts before emailing them.",
+          "zh": "在透過電子郵件寄出機密商業合約前應先進行加密。"
+        },
+        {
+          "en": "The device uses advanced algorithms to encrypt stored biometric data.",
+          "zh": "該裝置採用先進演算法對儲存的生物特徵數據進行加密。"
+        }
+      ],
+      "collocations": [
+        "encrypt data",
+        "encrypted connection"
+      ]
+    },
+    {
+      "id": 2121,
+      "word": "encryption",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋkrɪpʃən]",
+      "definition": "加密；密碼化技術",
+      "cefr": "B1",
+      "topic": "資訊安全",
+      "examples": [
+        {
+          "en": "SSL encryption secures credit card numbers during online transactions.",
+          "zh": "SSL 加密技術確保了線上刷卡交易時信用卡號的安全。"
+        },
+        {
+          "en": "Without proper decryption keys, the strongest encryption cannot be broken.",
+          "zh": "若沒有正確的解密金鑰，最強的加密演算法也無法被破解。"
+        },
+        {
+          "en": "Privacy advocates support default encryption on personal electronic devices.",
+          "zh": "隱私倡導者支持在個人電子設備上預設啟用加密功能。"
+        }
+      ],
+      "collocations": [
+        "data encryption",
+        "end-to-end encryption"
+      ]
+    },
+    {
+      "id": 2122,
+      "word": "password",
+      "pos": "n.",
+      "phonetic": "[ˋpæsˌwɝd]",
+      "definition": "密碼；通關口令",
+      "cefr": "B1",
+      "topic": "帳號安全",
+      "examples": [
+        {
+          "en": "Create a strong password combining uppercase letters, numbers, and symbols.",
+          "zh": "建立一個結合大寫英文字母、數字與特殊符號的強式密碼。"
+        },
+        {
+          "en": "I forgot my account password and requested a password reset link.",
+          "zh": "我忘記了帳號密碼，並索取了密碼重設連結。"
+        },
+        {
+          "en": "Never share your online banking password with anyone over the phone.",
+          "zh": "絕不要在電話中將網路銀行密碼透露給任何人。"
+        }
+      ],
+      "collocations": [
+        "strong password",
+        "reset password"
+      ]
+    },
+    {
+      "id": 2123,
+      "word": "two-factor authentication",
+      "pos": "n. phr.",
+      "phonetic": "[tu ˋfæktɚ ɔ͵θɛntəˋkeʃən]",
+      "definition": "雙重身分驗證 (2FA)",
+      "cefr": "B1",
+      "topic": "帳號安全",
+      "examples": [
+        {
+          "en": "Enable two-factor authentication (2FA) on your bank account for safety.",
+          "zh": "為您的銀行帳戶啟用雙重身分驗證（2FA）以確保資金安全。"
+        },
+        {
+          "en": "Two-factor authentication requires both your password and a verification code.",
+          "zh": "雙重身分驗證需要輸入密碼以及手機驗證碼。"
+        },
+        {
+          "en": "Adding two-factor authentication drastically reduces the chance of account takeover.",
+          "zh": "加入雙重身分驗證能大幅降低帳號遭盜用的機率。"
+        }
+      ],
+      "collocations": [
+        "2FA",
+        "enable 2FA"
+      ]
+    },
+    {
+      "id": 2124,
+      "word": "biometric",
+      "pos": "adj.",
+      "phonetic": "[͵baɪoˋmɛtrɪk]",
+      "definition": "生物辨識的；生物特徵的",
+      "cefr": "B1",
+      "topic": "身分識別",
+      "examples": [
+        {
+          "en": "Modern border control gates use biometric passport scanning technology.",
+          "zh": "現代化機場自動通關閘道採用生物辨識護照掃描技術。"
+        },
+        {
+          "en": "Biometric authentication methods include fingerprint scanners and iris recognition.",
+          "zh": "生物特徵辨識方式包括指紋掃描機與虹膜識別。"
+        },
+        {
+          "en": "High-security facilities rely on biometric access control to prevent intrusion.",
+          "zh": "高規格安全機構仰賴生物特徵門禁管制以防止未經授權闖入。"
+        }
+      ],
+      "collocations": [
+        "biometric security",
+        "biometric data"
+      ]
+    },
+    {
+      "id": 2125,
+      "word": "fingerprint recognition",
+      "pos": "n. phr.",
+      "phonetic": "[ˋfɪŋgɚˌprɪnt ͵rɛkəgˋnɪʃən]",
+      "definition": "指紋辨識",
+      "cefr": "B1",
+      "topic": "科技識別",
+      "examples": [
+        {
+          "en": "Unlock your smartphone swiftly using instant fingerprint recognition.",
+          "zh": "使用秒速指紋辨識功能快速將智慧型手機解鎖。"
+        },
+        {
+          "en": "Fingerprint recognition sensors are often embedded beneath the smartphone screen.",
+          "zh": "指紋辨識感測器通常嵌入於智慧型手機螢幕下方。"
+        },
+        {
+          "en": "Wet fingers can sometimes hinder the accuracy of fingerprint recognition.",
+          "zh": "手指潮濕有時會影響指紋辨識的精準度。"
+        }
+      ],
+      "collocations": [
+        "fingerprint scanner"
+      ]
+    },
+    {
+      "id": 2126,
+      "word": "facial recognition",
+      "pos": "n. phr.",
+      "phonetic": "[ˋfeʃəl ͵rɛkəgˋnɪʃən]",
+      "definition": "人臉辨識；面部識別",
+      "cefr": "B1",
+      "topic": "科技識別",
+      "examples": [
+        {
+          "en": "Facial recognition allows hands-free payment and building access.",
+          "zh": "人臉辨識技術實現了免動手刷臉支付與大樓門禁進出。"
+        },
+        {
+          "en": "Some cities test facial recognition cameras in train stations for public safety.",
+          "zh": "部分城市在火車站測試人臉辨識監視器以維護公共安全。"
+        },
+        {
+          "en": "Privacy critics voice concerns over mass surveillance via facial recognition.",
+          "zh": "隱私倡導團體對透過人臉辨識進行大規模監控表示擔憂。"
+        }
+      ],
+      "collocations": [
+        "Face ID",
+        "facial recognition system"
+      ]
+    },
+    {
+      "id": 2127,
+      "word": "update",
+      "pos": "v., n.",
+      "phonetic": "[ʌpˋdet]",
+      "definition": "更新；升級；最新版本",
+      "cefr": "B1",
+      "topic": "系統維護",
+      "examples": [
+        {
+          "en": "Install system updates regularly to receive performance fixes.",
+          "zh": "定期安裝系統更新以獲得效能優化與修補程式。"
+        },
+        {
+          "en": "The project manager sent a weekly progress update to all stakeholders.",
+          "zh": "專案經理向所有利害關係人寄送了每週進度更新報告。"
+        },
+        {
+          "en": "You need to update your address on the official portal after moving.",
+          "zh": "搬家後，你需要至官方入口網站更新戶籍聯絡地址。"
+        }
+      ],
+      "collocations": [
+        "software update",
+        "status update"
+      ]
+    },
+    {
+      "id": 2128,
+      "word": "upgrade",
+      "pos": "v., n.",
+      "phonetic": "[ʌpˋgred]",
+      "definition": "升級；提升；進階版本",
+      "cefr": "B1",
+      "topic": "系統與設備",
+      "examples": [
+        {
+          "en": "We decided to upgrade our home broadband to high-speed fiber optics.",
+          "zh": "我們決定將家中的寬頻上網升級為高速光纖網路。"
+        },
+        {
+          "en": "The flight was overbooked, so the airline offered to upgrade our seats to business class.",
+          "zh": "該航班機位超賣，航空公司便主動將我們的座位升等為商務艙。"
+        },
+        {
+          "en": "Upgrading your graphics card will significantly improve video rendering times.",
+          "zh": "升級獨立顯示卡將能顯著縮短影片算圖輸出時間。"
+        }
+      ],
+      "collocations": [
+        "upgrade hardware",
+        "upgrade seat"
+      ]
+    },
+    {
+      "id": 2129,
+      "word": "operating system",
+      "pos": "n. phr.",
+      "phonetic": "[ˋɑpəˌretɪŋ ˋsɪstəm]",
+      "definition": "作業系統 (OS)",
+      "cefr": "B1",
+      "topic": "資訊科技",
+      "examples": [
+        {
+          "en": "Windows, macOS, Android, and iOS are mainstream operating systems.",
+          "zh": "Windows、macOS、Android 與 iOS 是主流作業系統。"
+        },
+        {
+          "en": "An operating system manages computer hardware and executes user software programs.",
+          "zh": "作業系統負責管理電腦硬體資源並執行使用者應用程式。"
+        },
+        {
+          "en": "Linux is the preferred operating system for web servers worldwide.",
+          "zh": "Linux 是全球網路伺服器最普遍偏好採用的作業系統。"
+        }
+      ],
+      "collocations": [
+        "OS",
+        "mobile operating system"
+      ]
+    },
+    {
+      "id": 2130,
+      "word": "browser",
+      "pos": "n.",
+      "phonetic": "[ˋbraʊzɚ]",
+      "definition": "網路瀏覽器；瀏覽者",
+      "cefr": "B1",
+      "topic": "網路工具",
+      "examples": [
+        {
+          "en": "Clear your web browser cache if web pages fail to load correctly.",
+          "zh": "若網頁無法正常載入顯示，請嘗試清除網路瀏覽器快取。"
+        },
+        {
+          "en": "Most modern web browsers support private browsing and custom extensions.",
+          "zh": "多數現代網路瀏覽器皆支援無痕隱私瀏覽與自訂擴充套件。"
+        },
+        {
+          "en": "The browser crashed when I attempted to stream three videos at once.",
+          "zh": "當我試圖同時串流播放三部影片時，瀏覽器當機了。"
+        }
+      ],
+      "collocations": [
+        "web browser",
+        "Google Chrome"
+      ]
+    },
+    {
+      "id": 2131,
+      "word": "interface",
+      "pos": "n.",
+      "phonetic": "[ˋɪntɚˌfes]",
+      "definition": "介面；操作介面 (UI)；連接埠",
+      "cefr": "B1",
+      "topic": "設計與科技",
+      "examples": [
+        {
+          "en": "The newly redesigned user interface is intuitive and clean.",
+          "zh": "重新改版設計的使用者介面十分直覺且乾淨俐落。"
+        },
+        {
+          "en": "Programmers interact with cloud services using an application programming interface (API).",
+          "zh": "程式設計師透過應用程式介面（API）與雲端服務進行互動溝通。"
+        },
+        {
+          "en": "The audio interface connects professional microphones directly to a laptop.",
+          "zh": "這款音訊介面（錄音卡）可將專業麥克風直接連接至筆記型電腦。"
+        }
+      ],
+      "collocations": [
+        "user interface (UI)",
+        "API"
+      ]
+    },
+    {
+      "id": 2132,
+      "word": "user experience",
+      "pos": "n. phr.",
+      "phonetic": "[ˋjuzɚ ɪkˋspɪrɪəns]",
+      "definition": "使用者體驗 (UX)",
+      "cefr": "B1",
+      "topic": "產品設計",
+      "examples": [
+        {
+          "en": "Optimizing app load speed greatly enhances user experience.",
+          "zh": "優化應用程式的載入開啟速度能大幅提升使用者體驗。"
+        },
+        {
+          "en": "Designers conduct in-depth interviews to understand the customer user experience.",
+          "zh": "設計師進行深度訪談以了解消費者的實際使用者體驗。"
+        },
+        {
+          "en": "Confusing navigation buttons create a frustrating user experience for shoppers.",
+          "zh": "令人困惑的導覽按鈕會給購物顧客帶來挫折的使用者體驗。"
+        }
+      ],
+      "collocations": [
+        "UX design",
+        "UX researcher"
+      ]
+    },
+    {
+      "id": 2133,
+      "word": "bandwidth",
+      "pos": "n. [U]",
+      "phonetic": "[ˋbændˌwɪdθ]",
+      "definition": "頻寬；網路速度；個人心力負荷",
+      "cefr": "B1",
+      "topic": "通訊與日常",
+      "examples": [
+        {
+          "en": "Streaming 4K movies requires sufficient internet network bandwidth.",
+          "zh": "串流播放 4K 高畫質電影需要充裕順暢的網路頻寬。"
+        },
+        {
+          "en": "The internet service provider throttled our bandwidth during peak evening hours.",
+          "zh": "網路服務業者在晚間尖峰時段限制了我們的頻寬速率。"
+        },
+        {
+          "en": "I don't have enough mental bandwidth to take on another project this week.",
+          "zh": "我這週實在沒有多餘的心力負荷再去接下另一項專案。"
+        }
+      ],
+      "collocations": [
+        "high bandwidth",
+        "network bandwidth"
+      ]
+    },
+    {
+      "id": 2134,
+      "word": "broadband",
+      "pos": "n. [U], adj.",
+      "phonetic": "[ˋbrɔdˌbænd]",
+      "definition": "寬頻網路；寬頻的",
+      "cefr": "B1",
+      "topic": "通訊網路",
+      "examples": [
+        {
+          "en": "Taiwan boasts one of the world's most accessible fiber broadband networks.",
+          "zh": "台灣擁有全球普及率最高的光纖寬頻上網環境之一。"
+        },
+        {
+          "en": "Fast broadband connectivity is essential for families working and studying from home.",
+          "zh": "高速寬頻連線對於在家工作與學習的家庭而言至關重要。"
+        },
+        {
+          "en": "The telecom company rolled out affordable broadband packages for students.",
+          "zh": "電信公司針對學生族群推出了實惠經濟的寬頻專案。"
+        }
+      ],
+      "collocations": [
+        "high-speed broadband",
+        "broadband connection"
+      ]
+    },
+    {
+      "id": 2135,
+      "word": "hotspot",
+      "pos": "n.",
+      "phonetic": "[ˋhɑtˌspɑt]",
+      "definition": "Wi-Fi 熱點；熱門景點",
+      "cefr": "B1",
+      "topic": "通訊與觀光",
+      "examples": [
+        {
+          "en": "You can turn your smartphone into a portable Wi-Fi personal hotspot.",
+          "zh": "您可以將智慧型手機轉換為隨身可攜式的 Wi-Fi 個人熱點。"
+        },
+        {
+          "en": "Free public Wi-Fi hotspots are available at most MRT stations and cafes.",
+          "zh": "多數捷運站與咖啡廳均提供免費公共 Wi-Fi 熱點。"
+        },
+        {
+          "en": "That coastal cafe has become a popular tourist hotspot on Instagram.",
+          "zh": "那家濱海咖啡廳已成為 Instagram 上熱門的觀光打卡熱點。"
+        }
+      ],
+      "collocations": [
+        "mobile hotspot",
+        "Wi-Fi hotspot"
+      ]
+    },
+    {
+      "id": 2136,
+      "word": "connectivity",
+      "pos": "n. [U]",
+      "phonetic": "[͵kɑnɛkˋtɪvətɪ]",
+      "definition": "連網能力；連通性",
+      "cefr": "B1",
+      "topic": "網路科技",
+      "examples": [
+        {
+          "en": "5G technology offers ultra-fast data speeds and seamless IoT connectivity.",
+          "zh": "5G 科技提供了極速傳輸與物聯網無縫連網能力。"
+        },
+        {
+          "en": "The remote mountain cabin had poor mobile connectivity.",
+          "zh": "那座深山小木屋的手機行動網路連線訊號極差。"
+        },
+        {
+          "en": "Bluetooth connectivity allows the earbuds to link with two devices at once.",
+          "zh": "藍牙連線功能允許耳機同時配對連結兩台設備。"
+        }
+      ],
+      "collocations": [
+        "network connectivity",
+        "seamless connectivity"
+      ]
+    },
+    {
+      "id": 2137,
+      "word": "glitch",
+      "pos": "n.",
+      "phonetic": "[glɪtʃ]",
+      "definition": "系統小故障；小毛病",
+      "cefr": "B1",
+      "topic": "系統狀態",
+      "examples": [
+        {
+          "en": "A brief technical glitch caused the online registration to freeze.",
+          "zh": "短暫的技術小故障導致線上報名系統出現畫面卡頓。"
+        },
+        {
+          "en": "The development team promptly resolved the audio glitch in the video game.",
+          "zh": "開發團隊迅速修復了電子遊戲中的音訊異常小毛病。"
+        },
+        {
+          "en": "Aside from a minor software glitch, the launch event ran smoothly.",
+          "zh": "除了微小的軟體小毛病外，發表會進行得非常順利。"
+        }
+      ],
+      "collocations": [
+        "minor glitch",
+        "system glitch"
+      ]
+    },
+    {
+      "id": 2138,
+      "word": "bug",
+      "pos": "n.",
+      "phonetic": "[bʌg]",
+      "definition": "程式錯誤；蟲子；竊聽器",
+      "cefr": "B1",
+      "topic": "軟體工程",
+      "examples": [
+        {
+          "en": "Programmers worked through the night to fix the critical software bug.",
+          "zh": "程式設計師徹夜奮戰以修復關鍵的軟體程式錯誤。"
+        },
+        {
+          "en": "Users discovered an unexpected bug that caused the app to close abruptly.",
+          "zh": "使用者發現了一個導致應用程式突然閃退的意外錯誤。"
+        },
+        {
+          "en": "A thorough testing phase helps detect nasty software bugs before release.",
+          "zh": "全面的測試階段有助於在軟體發布前找出棘手的程式漏洞。"
+        }
+      ],
+      "collocations": [
+        "bug fix",
+        "report a bug"
+      ]
+    },
+    {
+      "id": 2139,
+      "word": "debug",
+      "pos": "v.",
+      "phonetic": "[diˋbʌg]",
+      "definition": "除錯；排除程式錯誤",
+      "cefr": "B1",
+      "topic": "軟體工程",
+      "examples": [
+        {
+          "en": "Developers use specialized testing tools to debug computer code.",
+          "zh": "開發人員使用專業的測試工具來為電腦程式碼進行除錯。"
+        },
+        {
+          "en": "It took hours of patient debugging to trace the root cause of the memory leak.",
+          "zh": "花費了數小時耐心除錯才追查出記憶體洩漏的根本原因。"
+        },
+        {
+          "en": "Before shipping new features, engineers thoroughly test and debug every component.",
+          "zh": "在交付新功能之前，工程師會徹底測試並為每個模組元件除錯。"
+        }
+      ],
+      "collocations": [
+        "debug code",
+        "debugging tool"
+      ]
+    },
+    {
+      "id": 2140,
+      "word": "backup",
+      "pos": "n., adj.",
+      "phonetic": "[ˋbækˌʌp]",
+      "definition": "備份；備用方案；支援",
+      "cefr": "B1",
+      "topic": "數據安全",
+      "examples": [
+        {
+          "en": "Always make an automated external backup of your important thesis files.",
+          "zh": "務必為重要的畢業論文檔案建立自動化的外部硬碟備份。"
+        },
+        {
+          "en": "The hospital operates backup generators in case of electrical power failure.",
+          "zh": "醫院備有備用發電機以防遭遇電力中斷。"
+        },
+        {
+          "en": "If our primary supplier cannot fulfill the order, we have a reliable backup ready.",
+          "zh": "若主要供應商無法交貨，我們已準備好了可靠的備用方案。"
+        }
+      ],
+      "collocations": [
+        "data backup",
+        "backup plan"
+      ]
+    },
+    {
+      "id": 2141,
+      "word": "restore",
+      "pos": "v.",
+      "phonetic": "[rɪˋstor]",
+      "definition": "還原；修復；恢復",
+      "cefr": "B1",
+      "topic": "系統與維護",
+      "examples": [
+        {
+          "en": "You can restore all photos from your cloud account to the new phone.",
+          "zh": "你可以將雲端帳戶中的所有照片完整還原至新手機上。"
+        },
+        {
+          "en": "The IT specialist managed to restore corrupted database files after the crash.",
+          "zh": "資訊專員在當機事故後成功修復並還原了損毀的資料庫檔案。"
+        },
+        {
+          "en": "The community raised funds to restore the historic town hall.",
+          "zh": "社區募集資金以修復重建這座歷史悠久的市政廳建築。"
+        }
+      ],
+      "collocations": [
+        "restore data",
+        "restore settings"
+      ]
+    },
+    {
+      "id": 2142,
+      "word": "reboot",
+      "pos": "v., n.",
+      "phonetic": "[riˋbut]",
+      "definition": "重新啟動；重開機",
+      "cefr": "B1",
+      "topic": "設備操作",
+      "examples": [
+        {
+          "en": "Try rebooting your Wi-Fi router to resolve slow internet speeds.",
+          "zh": "嘗試將 Wi-Fi 無線路由器重新開機以解決網路連線緩慢問題。"
+        },
+        {
+          "en": "The operating system prompt instructed the user to reboot the laptop.",
+          "zh": "作業系統畫面提示使用者將筆記型電腦重新開機。"
+        },
+        {
+          "en": "A brief walk outside helped reboot his exhausted brain.",
+          "zh": "到戶外散個步有助於讓他疲憊的腦袋重新開機。"
+        }
+      ],
+      "collocations": [
+        "reboot the computer",
+        "restart"
+      ]
+    },
+    {
+      "id": 2143,
+      "word": "crash",
+      "pos": "v., n.",
+      "phonetic": "[kræʃ]",
+      "definition": "當機；相撞；暴跌",
+      "cefr": "B1",
+      "topic": "系統與意外",
+      "examples": [
+        {
+          "en": "The browser crashed unexpectedly when I opened thirty tabs at once.",
+          "zh": "當我一口氣打開三十個分頁時，瀏覽器突然當機閃退了。"
+        },
+        {
+          "en": "Thankfully, nobody was seriously injured in the minor highway car crash.",
+          "zh": "萬幸的是，這起高速公路輕微車禍相撞事故無人重傷。"
+        },
+        {
+          "en": "Investors panicked when stock market prices took a dramatic crash.",
+          "zh": "當股市行情發生戲劇性暴跌時，投資人陷入恐慌。"
+        }
+      ],
+      "collocations": [
+        "system crash",
+        "app crashed"
+      ]
+    },
+    {
+      "id": 2144,
+      "word": "freeze",
+      "pos": "v.",
+      "phonetic": "[friz]",
+      "definition": "畫面凍結；卡住；結冰",
+      "cefr": "B1",
+      "topic": "系統狀態",
+      "examples": [
+        {
+          "en": "The computer screen froze while playing the high-definition 3D game.",
+          "zh": "在遊玩高畫質 3D 遊戲時，電腦螢幕畫面突然卡住不動。"
+        },
+        {
+          "en": "Water pipes can freeze and burst when winter temperatures drop below zero.",
+          "zh": "冬季氣溫驟降至零度以下時，水管可能會結冰破裂。"
+        },
+        {
+          "en": "The government announced plans to freeze public transport fares this year.",
+          "zh": "政府宣布了今年凍結大眾運輸票價的計劃。"
+        }
+      ],
+      "collocations": [
+        "screen froze",
+        "frozen screen"
+      ]
+    },
+    {
+      "id": 2145,
+      "word": "compatible",
+      "pos": "adj.",
+      "phonetic": "[kəmˋpætəb!]",
+      "definition": "相容的；相容並蓄的",
+      "cefr": "B1",
+      "topic": "設備屬性",
+      "examples": [
+        {
+          "en": "This USB-C charging cable is compatible with all modern smartphones.",
+          "zh": "這條 Type-C 充電線與所有現代智慧型手機皆完全相容。"
+        },
+        {
+          "en": "The new software suite is fully compatible with older operating systems.",
+          "zh": "這套新軟體套件與舊版作業系統完全相容。"
+        },
+        {
+          "en": "They make a great couple because their personalities and goals are highly compatible.",
+          "zh": "他們是非常般配的情侶，因為性格與人生目標非常契合。"
+        }
+      ],
+      "collocations": [
+        "compatible with",
+        "backward compatible"
+      ]
+    },
+    {
+      "id": 2146,
+      "word": "incompatible",
+      "pos": "adj.",
+      "phonetic": "[͵ɪnkəmˋpætəb!]",
+      "definition": "不相容的；合不來的",
+      "cefr": "B1",
+      "topic": "設備與人際",
+      "examples": [
+        {
+          "en": "The old graphic software is incompatible with the latest operating system.",
+          "zh": "這套老舊的繪圖軟體與最新的作業系統版本並不相容。"
+        },
+        {
+          "en": "Their differing work styles made them fundamentally incompatible as business partners.",
+          "zh": "他們不同的做事風格使他們在商業合作夥伴關係上根本合不來。"
+        },
+        {
+          "en": "Incompatible file formats prevented the program from importing the dataset.",
+          "zh": "不相容的檔案格式導致程式無法匯入該資料集。"
+        }
+      ],
+      "collocations": [
+        "incompatible with"
+      ]
+    },
+    {
+      "id": 2147,
+      "word": "device",
+      "pos": "n.",
+      "phonetic": "[dɪˋvaɪs]",
+      "definition": "設備；電子裝置；儀器",
+      "cefr": "B1",
+      "topic": "科技硬體",
+      "examples": [
+        {
+          "en": "Smart wearable devices track your heart rate and sleep patterns.",
+          "zh": "智慧穿戴裝置能即時追蹤您的心率與睡眠週期模式。"
+        },
+        {
+          "en": "Please switch off all electronic devices during airplane takeoff and landing.",
+          "zh": "飛機起飛與降落期間請關閉所有電子裝置設備。"
+        },
+        {
+          "en": "The inventor designed a clever mechanical device to peel apples rapidly.",
+          "zh": "發明家設計了一款能快速削蘋果皮的巧妙機械裝置。"
+        }
+      ],
+      "collocations": [
+        "mobile device",
+        "smart device"
+      ]
+    },
+    {
+      "id": 2148,
+      "word": "peripheral",
+      "pos": "n., adj.",
+      "phonetic": "[pəˋrɪfərəl]",
+      "definition": "電腦周邊設備（鍵鼠、螢幕）；周圍的",
+      "cefr": "B1",
+      "topic": "硬體配件",
+      "examples": [
+        {
+          "en": "Keyboards, mice, and webcams are essential computer peripherals.",
+          "zh": "鍵盤、滑鼠與網路攝影機是不可或缺的電腦周邊設備。"
+        },
+        {
+          "en": "He plugged several external peripherals into the multi-port USB hub.",
+          "zh": "他將數個外部周邊配件插上了多功能 USB 集線器。"
+        },
+        {
+          "en": "Let us focus on the core argument rather than getting distracted by peripheral issues.",
+          "zh": "讓我們聚焦於核心論點，而不要被次要周邊瑣事分散了注意力。"
+        }
+      ],
+      "collocations": [
+        "computer peripherals"
+      ]
+    },
+    {
+      "id": 2149,
+      "word": "tech-savvy",
+      "pos": "adj.",
+      "phonetic": "[tɛk ˋsævɪ]",
+      "definition": "精通科技的；熟悉 3C 產品的",
+      "cefr": "B1",
+      "topic": "人物特質",
+      "examples": [
+        {
+          "en": "Young tech-savvy students adopt new digital tools effortlessly.",
+          "zh": "熟悉科技 3C 的年輕學生能毫不費力地快速上手全新數位工具。"
+        },
+        {
+          "en": "Companies actively recruit tech-savvy talent to drive automated workflows.",
+          "zh": "企業積極招募精通數位科技的人才以推動工作流程自動化。"
+        },
+        {
+          "en": "My grandmother became remarkably tech-savvy after receiving an iPad.",
+          "zh": "我祖母收到一台 iPad 後變得對 3C 科技產品非常精通。"
+        }
+      ],
+      "collocations": [
+        "tech-savvy generation"
+      ]
+    },
+    {
+      "id": 2150,
+      "word": "digital transformation",
+      "pos": "n. phr.",
+      "phonetic": "[ˋdɪdʒət! ͵trænsfɚˋmeʃən]",
+      "definition": "數位轉型",
+      "cefr": "B1",
+      "topic": "產業趨勢",
+      "examples": [
+        {
+          "en": "Traditional industries embrace digital transformation to boost productivity.",
+          "zh": "傳統產業積極推動數位轉型以大幅提升營運生產力。"
+        },
+        {
+          "en": "Cloud adoption and data analytics are central pillars of corporate digital transformation.",
+          "zh": "導入雲端技術與數據分析是企業數位轉型的核心支柱。"
+        },
+        {
+          "en": "Successful digital transformation requires cultural change alongside technological upgrades.",
+          "zh": "成功的數位轉型除了科技升級之外，更需要組織文化的變革配合。"
+        }
+      ],
+      "collocations": [
+        "enterprise digital transformation"
+      ]
+    }
+  ]
+}

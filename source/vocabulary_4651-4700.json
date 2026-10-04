@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 4,651–4,700 個單字（CEFR B1 中級）",
+  "batch": "4651-4700",
+  "range": "4651–4700",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 4651,
+      "word": "astronomy",
+      "pos": "n. [U]",
+      "phonetic": "[əsˋtrɑnəmɪ]",
+      "definition": "天文學；天文觀測",
+      "cefr": "B1",
+      "topic": "太空科學",
+      "examples": [
+        {
+          "en": "Groundbreaking astronomy reveals how supermassive black holes shape distant spiral galaxies.",
+          "zh": "突破性的現代天文學研究揭示了超大質量黑洞如何重塑遙遠螺旋星系的演化歷程。"
+        },
+        {
+          "en": "She developed a keen passion for astronomy after visiting the Taipei Astronomical Museum as a child.",
+          "zh": "她在童年參觀台北市立天文科學教育館後，對天文學產生了濃厚的熱情。"
+        },
+        {
+          "en": "Advances in radio astronomy allow researchers to map cosmic radiation from the dawn of time.",
+          "zh": "射電天文學的進步使研究人員能夠繪製宇宙黎明時期的宇宙輻射地圖。"
+        }
+      ],
+      "collocations": [
+        "observational astronomy"
+      ]
+    },
+    {
+      "id": 4652,
+      "word": "aerospace",
+      "pos": "n. [U], adj.",
+      "phonetic": "[ˋɛro͵spes]",
+      "definition": "航太工業；太空科技；航空太空的",
+      "cefr": "B1",
+      "topic": "航太產業",
+      "examples": [
+        {
+          "en": "Taiwan's Taiwan Space Agency (TASA) leads indigenous aerospace satellite and launch vehicle engineering.",
+          "zh": "國家太空中心（TASA）全力主導台灣自研自製光學遙測衛星與運載火箭的航太工程研發。"
+        },
+        {
+          "en": "Precision manufacturing companies across central Taiwan supply high-spec components to the global aerospace sector.",
+          "zh": "中台灣各地的精密製造企業向全球航太領域供應高規格零組件。"
+        },
+        {
+          "en": "He decided to pursue a master's degree in aerospace engineering to design reusable rockets.",
+          "zh": "他決定攻讀航空太空工程碩士學位，以投入可重複使用火箭的設計研發。"
+        }
+      ],
+      "collocations": [
+        "aerospace engineering"
+      ]
+    },
+    {
+      "id": 4653,
+      "word": "orbit",
+      "pos": "n., v.",
+      "phonetic": "[ˋɔrbɪt]",
+      "definition": "地球衛星軌道；沿軌道運行",
+      "cefr": "B1",
+      "topic": "軌道力學",
+      "examples": [
+        {
+          "en": "Thousands of low Earth orbit (LEO) satellites circle our planet to provide high-speed global internet.",
+          "zh": "數千顆低地球軌道（LEO）通訊衛星在數百公里高空繞行地球，為偏遠地區提供高速無縫衛星網路。"
+        },
+        {
+          "en": "The weather satellite will remain in geostationary orbit for at least ten years.",
+          "zh": "這顆氣象衛星將在地球同步軌道上維持運行至少十年。"
+        },
+        {
+          "en": "Spacecraft must reach an exact velocity to enter orbit without burning up in the atmosphere.",
+          "zh": "太空船必須達到精確速度才能順利進入軌道，而不致於在大氣層中焚毀。"
+        }
+      ],
+      "collocations": [
+        "low Earth orbit (LEO)"
+      ]
+    },
+    {
+      "id": 4654,
+      "word": "satellite",
+      "pos": "n.",
+      "phonetic": "[ˋsæt!ˌaɪt]",
+      "definition": "人造衛星；衛星通訊",
+      "cefr": "B1",
+      "topic": "太空載具",
+      "examples": [
+        {
+          "en": "Formosat-7 atmospheric satellites collect precise weather radar data to track severe typhoons.",
+          "zh": "台灣自主研製的「福爾摩沙衛星七號」氣象衛星群，每日精準收集海量大氣資料以預測強颱動向。"
+        },
+        {
+          "en": "Emergency workers relied on satellite phones when mountain roads and cell towers were destroyed.",
+          "zh": "當山區道路與行動基地台遭破壞時，緊急救難人員全仰賴衛星電話維持通訊。"
+        },
+        {
+          "en": "Modern farmers utilize satellite imagery to monitor soil moisture and crop health across vast fields.",
+          "zh": "現代農民利用高解析度衛星空拍影像，監控廣大農田的土壤濕度與作物健康狀態。"
+        }
+      ],
+      "collocations": [
+        "weather satellite"
+      ]
+    },
+    {
+      "id": 4655,
+      "word": "antenna",
+      "pos": "n.",
+      "phonetic": "[ænˋtɛnə]",
+      "definition": "地面陣列追蹤天線；觸角",
+      "cefr": "B1",
+      "topic": "地面接收",
+      "examples": [
+        {
+          "en": "Ground station motorized parabolic antennas track passing satellites across the horizon.",
+          "zh": "太空地面接收站的自動化拋物面追蹤天線，能隨著衛星掠過地平線時進行毫秒級精準對準追蹤。"
+        },
+        {
+          "en": "The engineer adjusted the rooftop antenna to improve the receiver's signal strength.",
+          "zh": "工程師調整了屋頂天線的角度，以增強接收器的訊號強度。"
+        },
+        {
+          "en": "Ants use their sensitive antennae to communicate and detect chemical trails left by colony members.",
+          "zh": "螞蟻利用靈敏的觸角互相溝通，並偵測蟻群成員留下的費洛蒙化學路徑。"
+        }
+      ],
+      "collocations": [
+        "tracking dish antenna"
+      ]
+    },
+    {
+      "id": 4656,
+      "word": "constellation",
+      "pos": "n.",
+      "phonetic": "[͵kɑnstəˋleʃən]",
+      "definition": "星座；低軌衛星通訊星系群",
+      "cefr": "B1",
+      "topic": "天文星座",
+      "examples": [
+        {
+          "en": "Starlink deployed a mega-constellation of satellites to blanket rural areas with wireless broadband.",
+          "zh": "國際低軌通訊衛星星系群（Constellation）布署了數萬顆互聯衛星，徹底消弭全球偏鄉數位落差。"
+        },
+        {
+          "en": "Ancient sailors navigated treacherous open seas by charting the position of the Orion constellation.",
+          "zh": "古代水手透過繪製獵戶座等各大星座的方位，在波濤洶湧的遠洋中辨別航向。"
+        },
+        {
+          "en": "On a clear summer night in Kenting, you can spot the Scorpius constellation clearly in the southern sky.",
+          "zh": "在墾丁晴朗涼爽的夏夜，你能清晰地在南方夜空中辨認出壯麗的天蠍座。"
+        }
+      ],
+      "collocations": [
+        "satellite constellation"
+      ]
+    },
+    {
+      "id": 4657,
+      "word": "bandwidth",
+      "pos": "n. [U]",
+      "phonetic": "[ˋbænd͵wɪdtθ]",
+      "definition": "衛星網路傳輸頻寬；頻寬",
+      "cefr": "B1",
+      "topic": "通訊技術",
+      "examples": [
+        {
+          "en": "Direct-to-cell satellite connectivity delivers emergency SMS bandwidth during natural earthquake disasters.",
+          "zh": "衛星直連手機（Direct-to-Cell）前沿通訊技術，能在強烈地震基地台全毀時提供緊急簡訊頻寬。"
+        },
+        {
+          "en": "Streaming 4K video requires substantial internet bandwidth to prevent buffering and lag.",
+          "zh": "串流播放 4K 高畫質影片需要充裕的網路頻寬，以避免畫面停頓與卡頓延遲。"
+        },
+        {
+          "en": "The telecom provider upgraded optical cables to expand broadband bandwidth for tech park enterprises.",
+          "zh": "電信營運商升級了光纖骨幹網路，以擴充科學園區各企業所需的高速頻寬。"
+        }
+      ],
+      "collocations": [
+        "network bandwidth"
+      ]
+    },
+    {
+      "id": 4658,
+      "word": "launchpad",
+      "pos": "n.",
+      "phonetic": "[ˋlɔntʃˌpæd]",
+      "definition": "火箭發射台；發射場",
+      "cefr": "B1",
+      "topic": "發射設施",
+      "examples": [
+        {
+          "en": "Steam billowed across the launchpad seconds before the massive rocket lifted into the sky.",
+          "zh": "倒數讀秒歸零瞬間，巨量冷卻水霧與滾滾烈焰在發射台（Launchpad）蒸騰，巨型火箭拔地而起。"
+        },
+        {
+          "en": "Technicians conducted final telemetry checks while the vehicle stood upright on the coastal launchpad.",
+          "zh": "當運載火箭矗立於濱海發射台上時，工程技術人員進行了最後階段的遙測安全檢查。"
+        },
+        {
+          "en": "This successful incubator program served as a launchpad for dozens of promising Taiwanese hardware startups.",
+          "zh": "這項成功的育成計畫成為數十家極具潛力的台灣硬體新創公司騰飛的發射跳板。"
+        }
+      ],
+      "collocations": [
+        "rocket launchpad"
+      ]
+    },
+    {
+      "id": 4659,
+      "word": "booster",
+      "pos": "n.",
+      "phonetic": "[ˋbustɚ]",
+      "definition": "可重複使用火箭助推推進器；助推器",
+      "cefr": "B1",
+      "topic": "火箭技術",
+      "examples": [
+        {
+          "en": "Reusable rocket boosters ignite reverse thrusters to perform precision vertical landings on drone ships.",
+          "zh": "可重複使用火箭第一節推進器在重返大氣層後重新點火減速，在海上無人靶船上精準垂直著陸回收。"
+        },
+        {
+          "en": "After expending its fuel, the twin boosters detached seamlessly from the central core.",
+          "zh": "耗盡推進燃料後，兩側輔助助推器流暢無誤地從火箭主核心芯級脫離。"
+        },
+        {
+          "en": "Public health authorities urged elderly citizens to receive an updated vaccine booster before winter.",
+          "zh": "衛福防疫機構呼籲高齡長者在入冬氣溫驟降前接種最新款疫苗追加劑（Booster）。"
+        }
+      ],
+      "collocations": [
+        "reusable rocket booster"
+      ]
+    },
+    {
+      "id": 4660,
+      "word": "payload",
+      "pos": "n. [U]",
+      "phonetic": "[ˋpeˌlod]",
+      "definition": "太空船有效酬載；載重",
+      "cefr": "B1",
+      "topic": "載荷管理",
+      "examples": [
+        {
+          "en": "The rocket fairing opened in space to deploy a 5-ton optical imaging payload.",
+          "zh": "當火箭衝出稠密大氣層後兩側整流罩俐落分離，成功將重達五噸的高解析度光學遙測酬載送入軌道。"
+        },
+        {
+          "en": "The heavy-lift rocket is engineered to carry significant payload into deep space orbits.",
+          "zh": "這款重型運載火箭經過特殊工程設計，能將龐大的有效載荷酬載運送至深空軌道。"
+        },
+        {
+          "en": "Sensor instruments accounted for nearly half of the experimental satellite's overall payload capacity.",
+          "zh": "高精度感測儀器佔據了這顆科學實驗衛星整體有效酬載容量的將近一半。"
+        }
+      ],
+      "collocations": [
+        "satellite payload"
+      ]
+    },
+    {
+      "id": 4661,
+      "word": "separation",
+      "pos": "n. [U]",
+      "phonetic": "[͵sɛpəˋreʃən]",
+      "definition": "火箭一二節分級分離；分開",
+      "cefr": "B1",
+      "topic": "飛行階段",
+      "examples": [
+        {
+          "en": "Stage separation occurred smoothly at an altitude of eighty kilometers above the Earth.",
+          "zh": "在海拔八十公里的近太空高空，火箭第一節推進器與第二節太空艙完成教科書般的完美分級分離。"
+        },
+        {
+          "en": "Engineers held their breath until telemetry confirmed clean mechanical separation of the space capsule.",
+          "zh": "工程團隊屏息以待，直到遠端數據確認太空返回艙順利完成機械分離。"
+        },
+        {
+          "en": "Thorough waste separation and recycling have become daily civic habits across Taiwan communities.",
+          "zh": "徹底的垃圾分類（Separation）與資源回收已成為全台灣社區鄰里深植人心的日常習慣。"
+        }
+      ],
+      "collocations": [
+        "stage separation"
+      ]
+    },
+    {
+      "id": 4662,
+      "word": "propulsion",
+      "pos": "n. [U]",
+      "phonetic": "[prəˋpʌlʃən]",
+      "definition": "火箭液態推進動力系統；推進力",
+      "cefr": "B1",
+      "topic": "動力系統",
+      "examples": [
+        {
+          "en": "Next-generation rocket engines burn liquid methane and liquid oxygen for clean, reusable propulsion.",
+          "zh": "次世代頂級火箭發動機採用液態甲烷與液態氧作為環保高效推進劑，大幅提升重複使用動力效能。"
+        },
+        {
+          "en": "Ion propulsion systems provide gentle yet continuous thrust for deep space probes traversing the solar system.",
+          "zh": "離子推進系統為航行於太陽系深處的深空探測器提供微弱卻經年不息的持續推力。"
+        },
+        {
+          "en": "The naval vessel features advanced electric propulsion that dramatically reduces underwater acoustic noise.",
+          "zh": "該新型海軍艦艇配備了先進的電力推進系統，大幅降低了水下聲學噪音輻射。"
+        }
+      ],
+      "collocations": [
+        "rocket propulsion system"
+      ]
+    },
+    {
+      "id": 4663,
+      "word": "trajectory",
+      "pos": "n.",
+      "phonetic": "[trəˋdʒɛktərɪ]",
+      "definition": "太空飛行彈道軌跡；軌跡",
+      "cefr": "B1",
+      "topic": "航道計算",
+      "examples": [
+        {
+          "en": "Mission control monitored the spacecraft's launch trajectory on massive wall monitors.",
+          "zh": "太空任務控制中心的科學家全神貫注盯著巨型螢幕，即時監控太空船升空後的精準飛行軌跡。"
+        },
+        {
+          "en": "Even a fraction of a degree error in trajectory could cause the Mars lander to bounce off the atmosphere.",
+          "zh": "飛行軌跡只要發生極細微的角度誤差，就可能導致火星登陸器直接在大氣層邊緣彈飛。"
+        },
+        {
+          "en": "Analysts projected a strong upward trajectory for the tech company's stock price following the AI breakthrough.",
+          "zh": "在人工智慧技術取得重大突破後，分析師預測該科技公司的股價將迎來強勁的上升軌跡。"
+        }
+      ],
+      "collocations": [
+        "orbital launch trajectory"
+      ]
+    },
+    {
+      "id": 4664,
+      "word": "debris",
+      "pos": "n. [U]",
+      "phonetic": "[dəˋbri]",
+      "definition": "太空垃圾碎片 (Space Debris)；殘骸",
+      "cefr": "B1",
+      "topic": "軌道安全",
+      "examples": [
+        {
+          "en": "Thousands of defunct satellites and rocket fragments form dangerous orbiting space debris.",
+          "zh": "數以萬計退役報廢的衛星與火箭殘骸在地球軌道以超音速狂飆，形成威脅太空站安全的太空垃圾。"
+        },
+        {
+          "en": "International space agencies collaborate to track microscopic space debris moving at bullet speeds.",
+          "zh": "各國太空機構通力合作，嚴密監控那些以子彈般超高時速呼嘯飛馳的微型太空碎屑殘骸。"
+        },
+        {
+          "en": "Rescue workers cleared fallen concrete debris from the collapsed highway after the magnitude 7 tremor.",
+          "zh": "在芮氏規模七的強震過後，救難人員全力清除從崩塌高架道路上掉落的混凝土瓦礫殘骸。"
+        }
+      ],
+      "collocations": [
+        "orbiting space debris"
+      ]
+    },
+    {
+      "id": 4665,
+      "word": "microgravity",
+      "pos": "n. [U]",
+      "phonetic": "[͵maɪkroˋgrævətɪ]",
+      "definition": "太空微重力無重力環境",
+      "cefr": "B1",
+      "topic": "太空物理",
+      "examples": [
+        {
+          "en": "Astronauts aboard the International Space Station conduct pharmaceutical protein crystal growth in microgravity.",
+          "zh": "派駐於國際太空站的各國太空人在無重力微重力環境下，進行極高純度的新藥蛋白質結晶生長實驗。"
+        },
+        {
+          "en": "Extended exposure to microgravity leads to muscle atrophy and reduced bone density without daily exercise.",
+          "zh": "若沒有每天維持高強度負重運動，長期處於微重力環境會引發嚴重的肌肉萎縮與骨質流失。"
+        },
+        {
+          "en": "Researchers drop experiment capsules down zero-gravity vacuum towers to simulate seconds of microgravity.",
+          "zh": "研究團隊將實驗艙從無重力落體塔高處投下，以在地面模擬數秒短暫珍貴的微重力狀態。"
+        }
+      ],
+      "collocations": [
+        "microgravity environment"
+      ]
+    },
+    {
+      "id": 4666,
+      "word": "spacewalk",
+      "pos": "n., v.",
+      "phonetic": "[ˋspesˌwɔk]",
+      "definition": "太空人出艙漫步 (EVA)",
+      "cefr": "B1",
+      "topic": "太空任務",
+      "examples": [
+        {
+          "en": "Astronauts conducted a grueling seven-hour spacewalk to replace the space station's solar array batteries.",
+          "zh": "兩位英勇的太空人完成了長達七個小時的艱鉅艙外太空漫步任務，成功為太空站更換太陽能電池模組。"
+        },
+        {
+          "en": "Specialized tether lines secure astronauts during every spacewalk to prevent drifting into empty space.",
+          "zh": "在每次艙外太空漫步過程中，專用高強度安全繫繩確保太空人牢牢固定，防止意外飄入虛空。"
+        },
+        {
+          "en": "Ground engineers watched the spacewalk live through helmet cameras mounted on the suit.",
+          "zh": "地面飛行控制工程師透過固定在頭盔上的微型鏡頭，全程即時觀看艙外漫步作業進度。"
+        }
+      ],
+      "collocations": [
+        "perform a spacewalk (EVA)"
+      ]
+    },
+    {
+      "id": 4667,
+      "word": "spacesuit",
+      "pos": "n.",
+      "phonetic": "[ˋspesˌsut]",
+      "definition": "艙外加壓保暖太空衣",
+      "cefr": "B1",
+      "topic": "維生裝備",
+      "examples": [
+        {
+          "en": "The multi-layered spacesuit provides pressurized pure oxygen, thermal regulation, and micrometeoroid protection.",
+          "zh": "多層高科技氣密太空衣在零下百度的真空宇宙中提供加壓純氧、恆溫調節與微隕石防彈防護。"
+        },
+        {
+          "en": "Engineers test the spacesuit's glove flexibility to ensure astronauts can manipulate tools in vacuum.",
+          "zh": "工程師反覆測試太空衣專用手套的手指靈活性，以確保太空人在真空環境中能靈活操作各類工具。"
+        },
+        {
+          "en": "Modern spacesuits incorporate bio-sensors that transmit heart rate and body temperature to flight medical officers.",
+          "zh": "現代太空衣內建尖端生醫感測器，能將太空人的即時心率與核心體溫同步回傳給飛行軍醫。"
+        }
+      ],
+      "collocations": [
+        "pressurized spacesuit"
+      ]
+    },
+    {
+      "id": 4668,
+      "word": "astronaut",
+      "pos": "n.",
+      "phonetic": "[ˋæstrəˌnɔt]",
+      "definition": "太空人；太空飛行員",
+      "cefr": "B1",
+      "topic": "太空職業",
+      "examples": [
+        {
+          "en": "Courageous astronauts undergo years of underwater neutral buoyancy training before flying into orbit.",
+          "zh": "勇敢無畏的太空人在正式搭乘火箭升空前，必須在中性浮力巨型水槽中歷經數千小時的嚴格模擬訓練。"
+        },
+        {
+          "en": "Being an astronaut demands exceptional mental resilience, scientific expertise, and physical stamina.",
+          "zh": "成為一名頂尖太空人需要無與倫比的心理抗壓抗挫力、深厚科學專業以及強健的體魄耐力。"
+        },
+        {
+          "en": "Schoolchildren cheered loudly as the visiting astronaut demonstrated how water floats into spheres in space.",
+          "zh": "當前來校園參訪的資深太空人現場示範水滴在太空中如何凝聚成完美圓球時，全場小學生爆出歡呼。"
+        }
+      ],
+      "collocations": [
+        "professional astronaut"
+      ]
+    },
+    {
+      "id": 4669,
+      "word": "lunar",
+      "pos": "adj.",
+      "phonetic": "[ˋlunɚ]",
+      "definition": "月球探測的；陰曆的",
+      "cefr": "B1",
+      "topic": "登月任務",
+      "examples": [
+        {
+          "en": "NASA's Artemis program aims to establish a permanent human research outpost on the lunar south pole.",
+          "zh": "美國 NASA 的「阿提米絲登月計畫」旨在月球南極永久陰影坑建立人類第一個常駐科學研究基地。"
+        },
+        {
+          "en": "Lunar rover missions have confirmed the presence of water ice inside permanently shadowed craters.",
+          "zh": "月球漫遊車探測任務已在終年不見天日的極區陰影坑內，證實蘊藏著珍貴的水冰沉積物。"
+        },
+        {
+          "en": "Families across Taiwan reunite every autumn to celebrate the Lunar Mid-Autumn Festival under the full moon.",
+          "zh": "每年秋天中秋農曆佳節（Lunar Mid-Autumn Festival），全台灣家家戶戶歡喜團圓，在明月下烤肉賞月。"
+        }
+      ],
+      "collocations": [
+        "lunar exploration base"
+      ]
+    },
+    {
+      "id": 4670,
+      "word": "rover",
+      "pos": "n.",
+      "phonetic": "[ˋrovɚ]",
+      "definition": "火星探測車；月球漫遊漫遊車",
+      "cefr": "B1",
+      "topic": "地表探測",
+      "examples": [
+        {
+          "en": "The robotic Mars rover Perseverance drills core rock samples searching for ancient microbial fossil signs.",
+          "zh": "配備核動力發電機的火星探測車「毅力號」（Perseverance），在古老乾涸火星湖床鑽探採集古生物化石岩心。"
+        },
+        {
+          "en": "Signals sent to the autonomous lunar rover take over a second to arrive due to cosmic distance.",
+          "zh": "由於地月空間距離，地面控制中心發送至月球自主漫遊車的無線電指令需耗時一秒多才能抵達。"
+        },
+        {
+          "en": "Heavy metal wheels on the rover suffered scratches after crossing rugged terrain covered in sharp basalt rocks.",
+          "zh": "在穿越佈滿鋒利玄武岩塊的崎嶇地形後，探測車特製的鋁合金輪圈出現了些許刮痕磨損。"
+        }
+      ],
+      "collocations": [
+        "autonomous Mars rover"
+      ]
+    },
+    {
+      "id": 4671,
+      "word": "habitability",
+      "pos": "n. [U]",
+      "phonetic": "[͵hæbətəˋbɪlətɪ]",
+      "definition": "行星適居性；宜居條件",
+      "cefr": "B1",
+      "topic": "天體生物",
+      "examples": [
+        {
+          "en": "Planetary scientists analyze Martian soil chemistry to assess ancient surface habitability.",
+          "zh": "行星地質學家深入分析火星土壤化學成分與地下水冰分布，評估該紅色星球數十億年前的生命適居性。"
+        },
+        {
+          "en": "Liquid water, an atmosphere, and a protective magnetic field are key criteria for planetary habitability.",
+          "zh": "液態水、保護性大氣層以及穩定的磁場，是衡量一顆行星是否具備生命適居條件的核心指標。"
+        },
+        {
+          "en": "Urban planners in Kaohsiung prioritized tree planting and green corridors to enhance city habitability.",
+          "zh": "高雄都市規劃師將廣植遮蔭行道樹與打造水岸綠廊列為首要方針，以提升熱帶城市的整體宜居品質。"
+        }
+      ],
+      "collocations": [
+        "planetary habitability"
+      ]
+    },
+    {
+      "id": 4672,
+      "word": "terraform",
+      "pos": "v.",
+      "phonetic": "[ˋtɛrəˌfɔrm]",
+      "definition": "行星地球化改造；外星改造",
+      "cefr": "B1",
+      "topic": "未來構想",
+      "examples": [
+        {
+          "en": "Sci-fi writers dream of terraforming Mars by thickening its atmosphere and melting polar ice caps.",
+          "zh": "科幻作家暢想透過人工釋放溫室氣體增厚火星大氣層並融化極冠冰層，將火星全面地球化改造成第二家園。"
+        },
+        {
+          "en": "Scientists acknowledge that terraforming an entire planet would require centuries of advanced bioengineering.",
+          "zh": "頂尖科學家坦言，將整顆貧瘠行星完全地球化將耗費數個世紀尖端生物工程與地質改造技術。"
+        },
+        {
+          "en": "Genetically modified cyanobacteria could be released into Martian basins to slowly terraform the surface.",
+          "zh": "經過基因編輯耐極端低溫的藍綠菌若釋放到火星盆地，理論上有助於極為緩慢地推動地表地球化工程。"
+        }
+      ],
+      "collocations": [
+        "terraform a planet"
+      ]
+    },
+    {
+      "id": 4673,
+      "word": "exoplanet",
+      "pos": "n.",
+      "phonetic": "[ˋɛkso͵plænɪt]",
+      "definition": "太陽系外行星；系外行星",
+      "cefr": "B1",
+      "topic": "深空探索",
+      "examples": [
+        {
+          "en": "Astronomers have confirmed over 5,000 exoplanets orbiting distant stars throughout our galaxy.",
+          "zh": "天文學家透過凌日法觀測，已正式在銀河系各深處確認發現了超過五千顆繞行其他恆星的系外行星。"
+        },
+        {
+          "en": "The space telescope observed a gas giant exoplanet that completes an orbit in less than three Earth days.",
+          "zh": "太空望遠鏡觀測到一顆巨大的氣體系外行星，其繞行母恆星公轉一周只需不到三個地球日。"
+        },
+        {
+          "en": "Scientists analyze exoplanet atmospheres for spectral biosignatures such as oxygen and methane.",
+          "zh": "天文物理學家細緻分析系外行星大氣光譜，積極尋找氧氣與甲烷等可能暗示外星生命的光譜特徵。"
+        }
+      ],
+      "collocations": [
+        "habitable exoplanet"
+      ]
+    },
+    {
+      "id": 4674,
+      "word": "Goldilocks",
+      "pos": "adj., n. prop.",
+      "phonetic": "[ˋgɑldɪ͵lɑks]",
+      "definition": "金髮姑娘適居帶（溫度剛好有液態水）",
+      "cefr": "B1",
+      "topic": "適居條件",
+      "examples": [
+        {
+          "en": "Rocky planets situated inside the Goldilocks habitable zone can support liquid surface water oceans.",
+          "zh": "唯有位於距離恆星距離不遠不近、溫度剛剛好的「適居帶」（Goldilocks Zone）岩石行星，才能孕育液態水海洋。"
+        },
+        {
+          "en": "If an exoplanet orbits too close to its host star, it falls outside the Goldilocks sweet spot.",
+          "zh": "如果一顆系外行星繞行其恆星的距離過於貼近，就會脫離溫度宜人的黃金適居帶而變得灼熱無比。"
+        },
+        {
+          "en": "Astrobiologists eagerly hunt for Earth-sized worlds resting comfortably inside the Goldilocks zone.",
+          "zh": "天體生物學家熱切在深空中搜尋那些安然座落於金髮姑娘適居帶內、體積質量與地球相仿的孿生世界。"
+        }
+      ],
+      "collocations": [
+        "Goldilocks habitable zone"
+      ]
+    },
+    {
+      "id": 4675,
+      "word": "telescope",
+      "pos": "n.",
+      "phonetic": "[ˋtɛləˌskop]",
+      "definition": "太空望遠鏡；天文望遠鏡",
+      "cefr": "B1",
+      "topic": "觀測儀器",
+      "examples": [
+        {
+          "en": "The James Webb Space Telescope peers back 13.5 billion years to photograph the universe's earliest infant stars.",
+          "zh": "韋伯太空望遠鏡（JWST）以金色巨大反射鏡面穿透宇宙塵埃，回溯拍攝百億年前宇宙誕生初期的第一代恆星。"
+        },
+        {
+          "en": "The amateur astronomer carried his portable refractor telescope to Yangmingshan for a weekend star party.",
+          "zh": "這位業餘天文同好週末扛著可攜式折射天文望遠鏡登上陽明山擎天崗，參加星空觀測聚會。"
+        },
+        {
+          "en": "High-resolution optical telescopes require pristine mirrors polished down to nanometer accuracy.",
+          "zh": "高解析度光學望遠鏡需要經過奈米級精度極限研磨拋光的頂級反射鏡片，才能呈現銳利無瑕的天象。"
+        }
+      ],
+      "collocations": [
+        "James Webb Space Telescope"
+      ]
+    },
+    {
+      "id": 4676,
+      "word": "infrared",
+      "pos": "adj., n. [U]",
+      "phonetic": "[͵ɪnfrəˋrɛd]",
+      "definition": "紅外線波段的；紅外光",
+      "cefr": "B1",
+      "topic": "電磁光譜",
+      "examples": [
+        {
+          "en": "Infrared sensors penetrate opaque cosmic dust clouds to image hidden protoplanetary disks.",
+          "zh": "靈敏的紅外線天文探測儀能穿透厚重不透光的宇宙星際塵埃雲，清晰拍攝到內部正在孕育新行星的氣體盤。"
+        },
+        {
+          "en": "Thermal infrared cameras at the international airport screen arriving passengers for high body temperatures.",
+          "zh": "國際機場出入境海關通道設置的紅外線熱像儀，能即時自動篩檢體溫異常偏高的入境旅客。"
+        },
+        {
+          "en": "Security systems utilize infrared night vision beams to detect trespassers in total pitch darkness.",
+          "zh": "頂級防盜保全系統利用人眼不可見的紅外線夜視光束，在伸手不見五指的完全黑暗中敏銳鎖定侵入者。"
+        }
+      ],
+      "collocations": [
+        "infrared spectrum camera"
+      ]
+    },
+    {
+      "id": 4677,
+      "word": "observatory",
+      "pos": "n.",
+      "phonetic": "[əbˋzɝvə͵torɪ]",
+      "definition": "高山天文台；氣象觀測所",
+      "cefr": "B1",
+      "topic": "觀測基地",
+      "examples": [
+        {
+          "en": "The high-altitude ALMA radio observatory sits 5,000 meters above sea level in Chile's dry Atacama Desert.",
+          "zh": "坐落於智利海拔五千公尺極度乾燥阿塔卡瑪高原上的 ALMA 大型毫米波陣列天文台，坐擁絕佳觀星天候。"
+        },
+        {
+          "en": "Lulin Observatory, perched atop Taiwan's Jade Mountain range, contributes vital asteroid discovery data.",
+          "zh": "矗立於台灣玉山山脈前峰的鹿林天文台，為全球近地小行星追蹤與超新星搜尋貢獻了至關重要的數據。"
+        },
+        {
+          "en": "Meteorologists at the mountain weather observatory recorded hurricane-force gusts during the tropical storm.",
+          "zh": "駐守於高山氣象觀測所的氣象預報員，在熱帶強颱狂暴侵襲期間記錄下了高達十七級的毀滅性強陣風。"
+        }
+      ],
+      "collocations": [
+        "astronomical observatory"
+      ]
+    },
+    {
+      "id": 4678,
+      "word": "black hole",
+      "pos": "n. phr.",
+      "phonetic": "[blæk hol]",
+      "definition": "宇宙超大質量黑洞；無底洞",
+      "cefr": "B1",
+      "topic": "奇異天體",
+      "examples": [
+        {
+          "en": "The Event Horizon Telescope collaboration captured the first-ever silhouette image of a black hole.",
+          "zh": "台灣中研院天文所深度參與的「事件視界望遠鏡」（EHT）國際團隊，成功拍下人類史上第一張黑洞陰影巨幅照片。"
+        },
+        {
+          "en": "Nothing—not even light—can escape the inescapable pull once past the event horizon of a black hole.",
+          "zh": "任何物質與輻射——甚至連光線——一旦越過了黑洞的事件視界邊界，就再也無法逃脫其無窮引力。"
+        },
+        {
+          "en": "Maintaining that outdated manufacturing facility had turned into a financial black hole for the company.",
+          "zh": "繼續維持那座老舊不堪的過時製造廠，已演變成深不見底、嚴重吞噬公司營運資金的財務黑洞。"
+        }
+      ],
+      "collocations": [
+        "supermassive black hole"
+      ]
+    },
+    {
+      "id": 4679,
+      "word": "gravitational",
+      "pos": "adj.",
+      "phonetic": "[͵grævəˋteʃən!]",
+      "definition": "重力波的；萬有引力的",
+      "cefr": "B1",
+      "topic": "相對論",
+      "examples": [
+        {
+          "en": "Laser interferometers detected ripples in spacetime caused by colliding gravitational waves from neutron stars.",
+          "zh": "巨型雷射干涉儀敏銳捕捉到了雙中子星猛烈碰撞時在時空中激盪泛起的微弱「重力波」（Gravitational Wave）漣漪。"
+        },
+        {
+          "en": "The moon's gravitational pull on ocean waters creates rhythmic high and low tides along coastlines.",
+          "zh": "月球對地球各大洋水體的萬有引力引潮力，在世界各地蜿蜒海岸線上形成了規律起伏的潮起潮落。"
+        },
+        {
+          "en": "Space probes perform gravitational slingshot maneuvers around giant planets to accelerate on less fuel.",
+          "zh": "深空無人探測器巧妙借助木星等氣體巨行星的重力彈弓效應加速，大幅節省漫長星際航行所需燃料。"
+        }
+      ],
+      "collocations": [
+        "gravitational wave detection"
+      ]
+    },
+    {
+      "id": 4680,
+      "word": "galaxy",
+      "pos": "n.",
+      "phonetic": "[ˋgæləksɪ]",
+      "definition": "浩瀚銀河系；星系",
+      "cefr": "B1",
+      "topic": "宇宙結構",
+      "examples": [
+        {
+          "en": "Our Milky Way galaxy contains over one hundred billion stars swirling around a central supermassive black hole.",
+          "zh": "我們身處的浩瀚銀河系（Milky Way）由千億顆恆星交織而成，圍繞著中心名為「人馬座A*」的超大黑洞旋轉。"
+        },
+        {
+          "en": "The Andromeda Galaxy is our nearest cosmic neighbor and will collide with our Milky Way in billions of years.",
+          "zh": "仙女座星系是距離我們最近的螺旋星系鄰居，預計將在數十億年後與我們的銀河系融為一體。"
+        },
+        {
+          "en": "The tech trade show featured a galaxy of international innovators demonstrating cutting-edge AI breakthroughs.",
+          "zh": "這場全球科技盛會匯聚了一群群如群星閃爍般的國際創新領袖，爭相展示顛覆性的 AI 前沿技術突破。"
+        }
+      ],
+      "collocations": [
+        "Milky Way galaxy"
+      ]
+    },
+    {
+      "id": 4681,
+      "word": "nebula",
+      "pos": "n.",
+      "phonetic": "[ˋnɛbjələ]",
+      "definition": "瑰麗宇宙星雲（恆星育嬰室）",
+      "cefr": "B1",
+      "topic": "星際物質",
+      "examples": [
+        {
+          "en": "The colorful Orion Nebula shines as an active stellar nursery where baby stars ignite nuclear fusion.",
+          "zh": "璀璨奪目的獵戶座星雲宛如一座生機盎然的恆星育嬰室，大量新生恆星在此凝聚氣體並點燃核融合之火。"
+        },
+        {
+          "en": "When giant stars shed their glowing gas outer layers at the end of life, they leave behind an ethereal planetary nebula.",
+          "zh": "當年邁的巨型恆星在生命尾聲拋散外層發光氣體外殼時，會在宇宙中留下如夢似幻的行星狀星雲。"
+        },
+        {
+          "en": "Long-exposure astrophotography reveals vibrant emission colors of hydrogen gas within the Crab Nebula.",
+          "zh": "透過高階天文相機進行數小時長曝光攝影，能鮮明呈現出蟹狀星雲內部游離氫氣所發出的絢爛色彩。"
+        }
+      ],
+      "collocations": [
+        "stellar gas nebula"
+      ]
+    },
+    {
+      "id": 4682,
+      "word": "supernova",
+      "pos": "n.",
+      "phonetic": "[͵supɚˋnovə]",
+      "definition": "恆星終極超新星爆發",
+      "cefr": "B1",
+      "topic": "恆星演化",
+      "examples": [
+        {
+          "en": "A dying massive star ends its life in a cataclysmic supernova explosion, outshining its entire galaxy.",
+          "zh": "一顆大質量恆星在壽終正寢時會爆發毀天滅地的「超新星爆發」（Supernova），其瞬間亮度超越整個星系。"
+        },
+        {
+          "en": "Heavy elements such as gold, platinum, and uranium are forged inside the fury of core-collapse supernovas.",
+          "zh": "地球上的黃金、鉑金與鈾等超重金屬元素，全是在遠古超新星核心坍縮爆發的極端高溫高壓中鍛造而成。"
+        },
+        {
+          "en": "Historical records from the Song Dynasty documented a brilliant supernova visible in broad daylight in 1054.",
+          "zh": "中國北宋時期的天文官史書曾詳盡記載了一顆客星（即西元 1054 年超新星），其光芒甚至在白天清晰可見。"
+        }
+      ],
+      "collocations": [
+        "supernova explosion"
+      ]
+    },
+    {
+      "id": 4683,
+      "word": "solar system",
+      "pos": "n. phr.",
+      "phonetic": "[ˋsolɚ ˋsɪstəm]",
+      "definition": "太陽系（太陽與八大行星）",
+      "cefr": "B1",
+      "topic": "宇宙家園",
+      "examples": [
+        {
+          "en": "Earth is the third terrestrial planet orbiting within our sun-centered solar system.",
+          "zh": "地球是我們太陽系中圍繞太陽公轉的第三顆岩石行星，也是已知唯一孕育萬物生命的藍色明珠。"
+        },
+        {
+          "en": "The solar system formed roughly 4.6 billion years ago from the gravitational collapse of a giant molecular cloud.",
+          "zh": "我們的太陽系大約在四十六億年前由一團巨型星際分子雲在自身重力坍縮作用下凝聚形成。"
+        },
+        {
+          "en": "Robotic voyagers have visited all major planets and many moons scattered across our vast solar system.",
+          "zh": "人類所研發的無人探測巡航艦已相繼造訪並近距離拍攝了遍佈整個太陽系的各大行星與奇特衛星。"
+        }
+      ],
+      "collocations": [
+        "solar system planet"
+      ]
+    },
+    {
+      "id": 4684,
+      "word": "Mercury",
+      "pos": "n. prop.",
+      "phonetic": "[ˋmɝkjərɪ]",
+      "definition": "水星（太陽系最內側行星）；水銀",
+      "cefr": "B1",
+      "topic": "行星名稱",
+      "examples": [
+        {
+          "en": "Cratered Mercury experiences scorching daytime temperatures and freezing sub-zero nights.",
+          "zh": "表面佈滿隕石撞擊坑的水星是距離太陽最近的行星，白天高溫如烤爐、夜晚卻寒冷如冰窖。"
+        },
+        {
+          "en": "Mercury is the smallest major planet in our solar system and possesses virtually no atmosphere.",
+          "zh": "水星是太陽系八大行星中體積最小的一顆，表面幾乎完全沒有任何可以調節溫度的厚重大氣層。"
+        },
+        {
+          "en": "Traditional fever thermometers contain liquid mercury and require careful handling to avoid accidental breakage.",
+          "zh": "傳統的水銀體溫計內部注有液態汞（水銀），使用與收納時必須格外小心輕放以防意外摔破外洩。"
+        }
+      ],
+      "collocations": [
+        "planet Mercury"
+      ]
+    },
+    {
+      "id": 4685,
+      "word": "Venus",
+      "pos": "n. prop.",
+      "phonetic": "[ˋvinəs]",
+      "definition": "金星（啟明星）；維納斯",
+      "cefr": "B1",
+      "topic": "行星名稱",
+      "examples": [
+        {
+          "en": "Shrouded in thick sulfuric acid clouds, Venus suffers from a runaway greenhouse effect reaching 460°C.",
+          "zh": "終年被濃密硫酸雲層完全籠罩的金星面臨失控的溫室效應，地表溫度高達攝氏四百六十度。"
+        },
+        {
+          "en": "Often shining brightly at dawn or dusk, Venus earned historical titles as the Morning and Evening Star.",
+          "zh": "由於在清晨或黃昏時分格外璀璨耀眼，金星在古代被東方稱為「啟明星」，在西方被喚作晨昏之星。"
+        },
+        {
+          "en": "Atmospheric surface pressure on Venus is ninety times greater than that at sea level on Earth.",
+          "zh": "金星地表的狂暴大氣壓強相當於地球海平面的九十倍以上，足以在幾秒內壓扁一般金屬探測艙。"
+        }
+      ],
+      "collocations": [
+        "planet Venus"
+      ]
+    },
+    {
+      "id": 4686,
+      "word": "Jupiter",
+      "pos": "n. prop.",
+      "phonetic": "[ˋdʒupətɚ]",
+      "definition": "木星（太陽系最大氣體巨行星）",
+      "cefr": "B1",
+      "topic": "行星名稱",
+      "examples": [
+        {
+          "en": "Gas giant Jupiter features the famous Great Red Spot, a swirling anticyclonic storm larger than Earth.",
+          "zh": "太陽系體積最大的氣體巨行星木星擁有標誌性的「大紅斑」，是一場比整個地球還要巨大的超級反氣旋風暴。"
+        },
+        {
+          "en": "With its massive gravity, Jupiter acts as a cosmic shield by pulling in or deflecting dangerous comets.",
+          "zh": "憑藉其極其強大的萬有引力，木星扮演著天然太空防護盾的角色，吸引並捕獲許多朝內太陽系飛來的彗星。"
+        },
+        {
+          "en": "Spacecraft discovered that Jupiter's icy moon Europa harbors a warm salty ocean beneath its frozen crust.",
+          "zh": "太空探測器深入探索發現，木星的冰封衛星「歐羅巴」（木衛二）厚重冰層底下竟藏著一整片溫暖鹹水海洋。"
+        }
+      ],
+      "collocations": [
+        "gas giant Jupiter"
+      ]
+    },
+    {
+      "id": 4687,
+      "word": "Saturn",
+      "pos": "n. prop.",
+      "phonetic": "[ˋsætɚn]",
+      "definition": "土星（擁有壯麗冰晶光環）",
+      "cefr": "B1",
+      "topic": "行星名稱",
+      "examples": [
+        {
+          "en": "Magnificent Saturn is celebrated for its dazzling, wafer-thin rings composed of billions of ice chunks.",
+          "zh": "宛如戴上華麗草帽的土星以其壯麗無比的巨大冰晶光環聞名，光環由數以億計的微小冰塊與岩屑組成。"
+        },
+        {
+          "en": "Despite being the second largest planet, Saturn's overall density is lower than that of liquid water.",
+          "zh": "儘管土星是太陽系第二大行星，其整體平均物理密度卻比液態水還要小，理論上能浮於巨大水池之上。"
+        },
+        {
+          "en": "The Cassini probe spent thirteen remarkable years orbiting Saturn to study its rings and mysterious moons.",
+          "zh": "卡西尼號探測器在土星軌道上無私奉獻了十三年歲月，為人類傳回無數珍貴的土星環與神秘衛星特寫。"
+        }
+      ],
+      "collocations": [
+        "ringed planet Saturn"
+      ]
+    },
+    {
+      "id": 4688,
+      "word": "asteroid",
+      "pos": "n.",
+      "phonetic": "[ˋæstəˌrɔɪd]",
+      "definition": "小行星；星狀物",
+      "cefr": "B1",
+      "topic": "小天體",
+      "examples": [
+        {
+          "en": "Millions of rocky remnants orbit the sun inside the asteroid belt between Mars and Jupiter.",
+          "zh": "數百萬顆太陽系誕生初期遺留下的岩石殘骸，在火星與木星之間的小行星帶中終年繞日運行。"
+        },
+        {
+          "en": "NASA's planetary defense mission successfully slammed an unmanned probe into an asteroid to alter its course.",
+          "zh": "美國 NASA 行星防禦測試任務成功派遣無人飛行器撞擊小行星，成功實證了微調偏轉其飛行軌道的可行性。"
+        },
+        {
+          "en": "Geologists agree that a massive asteroid impact sixty-six million years ago triggered the extinction of dinosaurs.",
+          "zh": "地質古生物學家普遍認定，六千六百萬年前一顆巨大岩石小行星撞擊地球，觸發了恐龍滅絕的世紀浩劫。"
+        }
+      ],
+      "collocations": [
+        "asteroid belt orbit"
+      ]
+    },
+    {
+      "id": 4689,
+      "word": "comet",
+      "pos": "n.",
+      "phonetic": "[ˋkɑmɪt]",
+      "definition": "彗星（掃帚星）；冰雪天體",
+      "cefr": "B1",
+      "topic": "天文奇觀",
+      "examples": [
+        {
+          "en": "Sunlight vaporizes a comet's icy core, blowing a glowing dust and ion tail millions of miles long.",
+          "zh": "當彗星接近太陽時，強烈陽光蒸發其冰雪核，在太空中拉出一條長達數百萬公里的璀璨離子彗尾。"
+        },
+        {
+          "en": "Halley's Comet is visible from Earth with the naked eye once every seventy-six years.",
+          "zh": "舉世聞名的哈雷彗星（Halley's Comet）每隔大約七十六年便會繞行接近地球一次，肉眼即可清晰仰望。"
+        },
+        {
+          "en": "Scientists believe comets may have delivered water and primordial organic building blocks to young Earth.",
+          "zh": "許多天體物理學家深信，在遠古時代密集撞擊地球的彗星，很可能為剛誕生的原始地球帶來了豐沛的水源與有機分子。"
+        }
+      ],
+      "collocations": [
+        "Halley's Comet (哈雷彗星)"
+      ]
+    },
+    {
+      "id": 4690,
+      "word": "meteor",
+      "pos": "n.",
+      "phonetic": "[ˋmitɪɚ]",
+      "definition": "流星雨；隕星；流星",
+      "cefr": "B1",
+      "topic": "天文現象",
+      "examples": [
+        {
+          "en": "Thousands of bright shooting stars streak across midnight skies during the annual Perseid meteor shower.",
+          "zh": "每逢八月英仙座流星雨極大期，數以百計明亮耀眼的許願流星如雨點般劃破漆黑夏夜天際。"
+        },
+        {
+          "en": "Most meteor particles burn up harmlessly high in the mesosphere long before reaching the ground.",
+          "zh": "絕大多數墜入地球的微小流星塵埃微粒，都在中氣層數十公里高空因劇烈大氣摩擦燃燒殆盡，不致落地。"
+        },
+        {
+          "en": "She closed her eyes and made a silent wish the second a brilliant green meteor flashed across the sky.",
+          "zh": "當一顆拖著翡翠綠光尾的明亮火流星劃過浩瀚夜空的一剎那，她閉上雙眼在心底默默許下願望。"
+        }
+      ],
+      "collocations": [
+        "Perseid meteor shower"
+      ]
+    },
+    {
+      "id": 4691,
+      "word": "eclipse",
+      "pos": "n., v.",
+      "phonetic": "[ɪˋklɪps]",
+      "definition": "日全食（黑晝奇景）；月食；遮蔽",
+      "cefr": "B1",
+      "topic": "罕見天象",
+      "examples": [
+        {
+          "en": "Day turned into eerie twilight during totality of the breathtaking solar eclipse.",
+          "zh": "在震撼人心的日全食（Solar Eclipse）全食階段，原本晴朗的白晝瞬間化為昏暗神秘的黑夜，太陽日冕如銀環浮現。"
+        },
+        {
+          "en": "Observers wore certified solar safety glasses to prevent retinal damage while viewing the partial eclipse.",
+          "zh": "現場觀測民眾皆配戴通過國際認證的專用日食觀測眼鏡，以防強烈陽光灼傷視網膜。"
+        },
+        {
+          "en": "The newcomer's extraordinary athletic performance completely eclipsed all previous tournament records.",
+          "zh": "這位新秀選手在賽場上令人驚嘆的破紀錄表現，完全遮蔽掩蓋了所有前輩留下的賽會輝煌紀錄。"
+        }
+      ],
+      "collocations": [
+        "total solar eclipse"
+      ]
+    },
+    {
+      "id": 4692,
+      "word": "corona",
+      "pos": "n.",
+      "phonetic": "[kəˋronə]",
+      "definition": "太陽日冕層；日冕；冠狀物",
+      "cefr": "B1",
+      "topic": "太陽大氣",
+      "examples": [
+        {
+          "en": "The sun's wispy white outer atmosphere, the corona, is visible only during a total solar eclipse.",
+          "zh": "溫度高達數百萬度卻極度稀薄的太陽最外層大氣「日冕」（Corona），唯有在日全食時才能一窺全貌。"
+        },
+        {
+          "en": "Paradoxically, the temperature in the sun's outer corona is much hotter than on the solar surface.",
+          "zh": "令人困惑的是，太陽外部日冕層的超高溫度竟然遠比太陽光球層表面還要滾燙數百倍。"
+        },
+        {
+          "en": "Spacecraft probes have flown directly through the outer corona to sample solar wind magnetic fields.",
+          "zh": "專門打造的太陽探測器曾無畏高溫直接穿越太陽最外層的日冕結構，實地採樣太陽風與磁場分布。"
+        }
+      ],
+      "collocations": [
+        "solar corona flare"
+      ]
+    },
+    {
+      "id": 4693,
+      "word": "flare",
+      "pos": "n., v.",
+      "phonetic": "[flɛr]",
+      "definition": "太陽耀斑閃焰爆發；閃爍",
+      "cefr": "B1",
+      "topic": "太空天氣",
+      "examples": [
+        {
+          "en": "Massive solar flares eject charged particles that disrupt radio communications and GPS signals on Earth.",
+          "zh": "劇烈的太陽表面超級閃焰耀斑噴射出海量高能帶電粒子，會引發地球無線電短波通訊與 GPS 導航訊號中斷。"
+        },
+        {
+          "en": "Space weather observatories issue alerts to satellite operators when a Class-X solar flare erupts.",
+          "zh": "當觀測到最強烈的 X 級超級太陽閃焰爆發時，太空氣象預警中心會立即向全球通訊衛星營運商發送緊急警報。"
+        },
+        {
+          "en": "The emergency signal flare lit up the misty mountain valley, guiding rescue helicopters to the stranded hikers.",
+          "zh": "救難專用的紅色遇險信號彈照亮了霧氣瀰漫的整座深山幽谷，引導搜救直升機順利發現受困登山客。"
+        }
+      ],
+      "collocations": [
+        "massive solar flare"
+      ]
+    },
+    {
+      "id": 4694,
+      "word": "aurora",
+      "pos": "n.",
+      "phonetic": "[ɔˋrorə]",
+      "definition": "夢幻極光（北極光/南極光）",
+      "cefr": "B1",
+      "topic": "大氣奇觀",
+      "examples": [
+        {
+          "en": "Solar winds collide with Earth's magnetic shield, igniting shimmering dancing curtains of green aurora.",
+          "zh": "太陽風粒子撞擊地球磁層並引導至南北兩極高空大氣，在夜空中激發出如綠色絲綢般曼妙起舞的夢幻極光。"
+        },
+        {
+          "en": "Travelers flock to northern Norway and Iceland during winter in hopes of witnessing the Northern Lights aurora.",
+          "zh": "每逢隆冬時節，無數世界旅人遠赴挪威北部與冰島，期盼能親眼目睹這輩子一定要看一次的璀璨北極光。"
+        },
+        {
+          "en": "Geomagnetic storms can trigger rare auroras visible as far south as mid-latitude regions.",
+          "zh": "當強烈地磁暴猛烈爆發時，極為罕見的極光甚至可能向南延伸至中緯度地區的夜空中隱約可見。"
+        }
+      ],
+      "collocations": [
+        "green aurora borealis"
+      ]
+    },
+    {
+      "id": 4695,
+      "word": "dark matter",
+      "pos": "n. phr.",
+      "phonetic": "[dɑrk ˋmætɚ]",
+      "definition": "神秘暗物質（佔宇宙質量絕大部分）",
+      "cefr": "B1",
+      "topic": "宇宙謎團",
+      "examples": [
+        {
+          "en": "Invisible dark matter emits no light, yet its immense gravity holds entire spinning galaxies together.",
+          "zh": "完全不發光也不吸收光的神秘「暗物質」（Dark Matter），其強大引力是維繫各大星系不致分崩離析的無形黏著劑。"
+        },
+        {
+          "en": "Physicists have constructed deep underground particle detectors to catch rare collisions with dark matter.",
+          "zh": "物理學家在千米地底深處打造超純淨微粒探測器，渴望捕捉到暗物質微粒與普通原子核罕見碰撞的蛛絲馬跡。"
+        },
+        {
+          "en": "Estimations show that mysterious dark matter accounts for roughly eighty-five percent of the total matter in the universe.",
+          "zh": "天文計算表明，完全無法用肉眼與普通光學儀器看見的神秘暗物質，佔據了全宇宙所有物質總量的百分之八十五。"
+        }
+      ],
+      "collocations": [
+        "invisible dark matter"
+      ]
+    },
+    {
+      "id": 4696,
+      "word": "cosmos",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkɑzməs]",
+      "definition": "浩瀚宇宙；井然有序的宇宙天地",
+      "cefr": "B1",
+      "topic": "宇宙觀",
+      "examples": [
+        {
+          "en": "Pondering the vastness of the cosmos evokes profound humility and endless wonder.",
+          "zh": "仰望浩瀚深邃的無垠宇宙（Cosmos），令人由衷感受到自身的渺小，並對生命的存在肅然起敬。"
+        },
+        {
+          "en": "Carl Sagan inspired millions to explore the poetry and scientific laws governing the cosmos.",
+          "zh": "卡爾·薩根以其動人的科普名著啟發了全球數百萬讀者，一同探索主宰整個宇宙秩序的理性科學法則。"
+        },
+        {
+          "en": "We are made of ancient stardust, forever tethered to the endless cycles of the living cosmos.",
+          "zh": "我們身上的每一個原子皆來自遠古星塵的淬煉，生生不息地與生機盎然的宏觀宇宙緊緊相連。"
+        }
+      ],
+      "collocations": [
+        "order of the cosmos"
+      ]
+    },
+    {
+      "id": 4697,
+      "word": "light-year",
+      "pos": "n.",
+      "phonetic": "[ˋlaɪtˌjɪr]",
+      "definition": "光年（光在一年內行進的距離單位）",
+      "cefr": "B1",
+      "topic": "天文尺度",
+      "examples": [
+        {
+          "en": "The nearest stellar neighbor, Proxima Centauri, is located 4.24 light-years away from Earth.",
+          "zh": "距離我們太陽系最近的鄰近恆星「比鄰星」，與地球相隔了長達四點二四光年（約四十兆公里）的遙遠距離。"
+        },
+        {
+          "en": "Telescopes enable us to gaze at starlight that traveled billions of light-years across expanding space.",
+          "zh": "先進天文望遠鏡讓我們能夠親眼凝視那些在膨脹宇宙空間中跋涉了數十億光年才抵達地球的古老星光。"
+        },
+        {
+          "en": "In terms of technology and culture, their ultra-modern headquarters felt light-years ahead of local competitors.",
+          "zh": "就管理技術與創新文化而言，他們那座極具未來感的企業總部感覺比在地競爭對手領先了好幾個光年。"
+        }
+      ],
+      "collocations": [
+        "light-year distance"
+      ]
+    },
+    {
+      "id": 4698,
+      "word": "stargazing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋstɑr͵gezɪŋ]",
+      "definition": "觀星賞星活動；夜間觀星",
+      "cefr": "B1",
+      "topic": "戶外天文",
+      "examples": [
+        {
+          "en": "Hehuanshan International Dark Sky Park offers pristine, unpolluted skies ideal for milky way stargazing.",
+          "zh": "合歡山國際暗空公園擁有極致純淨、零光害的高山夜空，是全台灣欣賞璀璨銀河與觀星的夢幻聖地。"
+        },
+        {
+          "en": "They packed warm sleeping bags and thermoses of hot tea for an all-night stargazing trip on Alishan.",
+          "zh": "他們準備了加厚羽絨睡袋與熱騰騰的高山茶保溫瓶，準備在阿里山上度過一整夜浪漫的觀星露營時光。"
+        },
+        {
+          "en": "Stargazing apps use smartphone compasses to identify glowing constellations and planets in real time.",
+          "zh": "現代智慧型手機觀星 App 能借助陀螺儀與羅盤，即時對準夜空辨認頭頂上每一顆閃爍的星座與行星。"
+        }
+      ],
+      "collocations": [
+        "midnight stargazing"
+      ]
+    },
+    {
+      "id": 4699,
+      "word": "celestial",
+      "pos": "adj.",
+      "phonetic": "[səˋlɛstʃəl]",
+      "definition": "天體的；天空的；神聖天界的",
+      "cefr": "B1",
+      "topic": "天文美學",
+      "examples": [
+        {
+          "en": "Telescopes unlock the sublime celestial beauty of glowing nebulas and glittering globular star clusters.",
+          "zh": "天文望遠鏡為人類揭開了發光星雲、璀璨球狀星團與遙遠星系那份令人屏息、神聖莊嚴的天體之美。"
+        },
+        {
+          "en": "Navigators historically relied on the positions of celestial bodies like the North Star to cross uncharted waters.",
+          "zh": "在沒有衛星定位的古老年代，領航員全憑北極星等天體運行的精準規律，指引船隻穿越未知的茫茫大海。"
+        },
+        {
+          "en": "The choir's ethereal harmony produced a celestial acoustic experience inside the historic church hall.",
+          "zh": "詩班純淨空靈的和聲在歷史悠久的大教堂挑高圓頂下迴盪，創造出一種宛若天界神音般的非凡聽覺饗宴。"
+        }
+      ],
+      "collocations": [
+        "celestial body"
+      ]
+    },
+    {
+      "id": 4700,
+      "word": "curiosity",
+      "pos": "n. [U]",
+      "phonetic": "[͵kjʊrɪˋɑsətɪ]",
+      "definition": "探索未知宇宙的求知好奇心",
+      "cefr": "B1",
+      "topic": "科學原動力",
+      "examples": [
+        {
+          "en": "Human curiosity drives our relentless journey to explore distant worlds and unravel the mysteries of existence.",
+          "zh": "烙印在人類基因深處永無止境的求知好奇心，驅使著我們一代代勇敢飛向群星深處，探索存在與生命的終極奧秘。"
+        },
+        {
+          "en": "Fostering intellectual curiosity in young students is far more rewarding than enforcing rote memorization.",
+          "zh": "在青年學子的心靈深處點燃對於未知世界的好奇心與探索欲，遠比強迫死記硬背課本條文更有長遠價值。"
+        },
+        {
+          "en": "Out of pure scientific curiosity, the team spent endless late nights examining strange signals from deep space.",
+          "zh": "出於純粹而熱切的科學好奇心，研究團隊度過了無數個通宵達旦的夜晚，仔細分析那些來自深空的奇異無線電訊號。"
+        }
+      ],
+      "collocations": [
+        "boundless cosmic curiosity"
+      ]
+    }
+  ]
+}

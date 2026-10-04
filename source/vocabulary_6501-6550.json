@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 6,501–6,550 個單字（CEFR B1 中級）",
+  "batch": "6501-6550",
+  "range": "6501–6550",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 6501,
+      "word": "spatial",
+      "pos": "adj.",
+      "phonetic": "[ˋspeʃəl]",
+      "definition": "打破實體與數位藩籬之空間運算的；空間的",
+      "cefr": "B1",
+      "topic": "空間運算",
+      "examples": [
+        {
+          "en": "Spatial computing seamlessly blends digital content into the physical room surrounding the user.",
+          "zh": "「空間運算」（Spatial Computing），將虛擬數位內容天衣無縫融入使用者身處的真實物理空間中。"
+        },
+        {
+          "en": "Architects use spatial audio and 3D modeling tools to evaluate how sound travels through a new concert hall.",
+          "zh": "建築師利用空間音訊與 3D 建模工具，評估聲音在新建音樂廳內部的傳遞效果。"
+        },
+        {
+          "en": "Young children develop spatial awareness by playing with building blocks and navigating obstacle courses.",
+          "zh": "幼童透過玩積木與走障礙路線，逐步培養出良好的空間認知能力。"
+        }
+      ],
+      "collocations": [
+        "spatial computing paradigm"
+      ]
+    },
+    {
+      "id": 6502,
+      "word": "computing",
+      "pos": "n. [U]",
+      "phonetic": "[kəmˋpjutɪŋ]",
+      "definition": "穿戴式空間三維人機互動運算；運算",
+      "cefr": "B1",
+      "topic": "新代運算",
+      "examples": [
+        {
+          "en": "Wearable spatial computing liberates users from rectangular glass smartphone and laptop screens.",
+          "zh": "穿戴式「空間運算技術」（Computing），將人類徹底從手機與筆記型電腦的長方形玻璃螢幕中解放。"
+        },
+        {
+          "en": "Quantum computing promises to solve complex logistical equations in seconds rather than years.",
+          "zh": "量子運算可望在數秒內解開繁複的物流運籌方程式，而不再需要耗費數年。"
+        },
+        {
+          "en": "The university offers an intensive certificate program in cloud computing and data architecture.",
+          "zh": "這所大學提供雲端運算與資料架構的密集培訓證照課程。"
+        }
+      ],
+      "collocations": [
+        "wearable spatial computing"
+      ]
+    },
+    {
+      "id": 6503,
+      "word": "headset",
+      "pos": "n.",
+      "phonetic": "[ˋhɛd͵sɛt]",
+      "definition": "輕量化混合實境 (MR) 頭戴式顯示器；耳機",
+      "cefr": "B1",
+      "topic": "頭戴裝置",
+      "examples": [
+        {
+          "en": "The aluminum and curved-glass headset rests comfortably against the face with adjustable braided straps.",
+          "zh": "採用鋁合金與曲面玻璃打造的「混合實境頭戴裝置」（Headset），透過編織頭帶貼合人體面部。"
+        },
+        {
+          "en": "The customer service representative adjusted her noise-canceling headset before taking the next incoming call.",
+          "zh": "客服專員在接聽下一通來電前，調整好她的降噪耳麥。"
+        },
+        {
+          "en": "Players put on the lightweight wireless headset to immerse themselves in virtual reality games.",
+          "zh": "玩家戴上輕量化無線頭戴裝置，讓自己完全沉浸在虛擬實境遊戲中。"
+        }
+      ],
+      "collocations": [
+        "mixed reality (MR) headset"
+      ]
+    },
+    {
+      "id": 6504,
+      "word": "passthrough",
+      "pos": "n. [U]",
+      "phonetic": "[ˋpæs͵θru]",
+      "definition": "12 毫秒超低延遲高畫質即時全彩影像透視",
+      "cefr": "B1",
+      "topic": "影像透視",
+      "examples": [
+        {
+          "en": "High-resolution video passthrough reconstructs the external world in real time with twelve-millisecond latency.",
+          "zh": "高解析度「全彩影像透視」（Passthrough），以僅十二毫秒的極低延遲即時還原真實外在世界。"
+        },
+        {
+          "en": "Thanks to full-color passthrough, users can easily read smartphone messages without removing their goggles.",
+          "zh": "受惠於全彩影像透視功能，使用者無需摘下護目鏡即可輕鬆閱讀手機訊息。"
+        },
+        {
+          "en": "The latest firmware update improved passthrough clarity under low-light evening conditions.",
+          "zh": "最新的韌體更新提升了夜間低光源環境下的影像透視清晰度。"
+        }
+      ],
+      "collocations": [
+        "real-time video passthrough"
+      ]
+    },
+    {
+      "id": 6505,
+      "word": "waveguide",
+      "pos": "n.",
+      "phonetic": "[ˋwev͵gaɪd]",
+      "definition": "全像繞射微型光波導鏡片 (極致輕薄如眼鏡)",
+      "cefr": "B1",
+      "topic": "光學波導",
+      "examples": [
+        {
+          "en": "Diffractive optical waveguides bounce projected micro-LED images directly into the wearer's pupil.",
+          "zh": "全像繞射「光學波導鏡片」（Waveguides），將微型投影光束精準折射進佩戴者的瞳孔中。"
+        },
+        {
+          "en": "Engineering teams must achieve micron-level precision when etching nanostructures onto the glass waveguide.",
+          "zh": "工程團隊在玻璃波導鏡片上蝕刻奈米結構時，必須達到微米級的精準度。"
+        },
+        {
+          "en": "Advanced waveguide displays allow augmented reality spectacles to remain thin and fashionable.",
+          "zh": "先進的光波導顯示技術讓擴增實境智慧眼鏡得以維持纖薄且兼具時尚外觀。"
+        }
+      ],
+      "collocations": [
+        "diffractive optical waveguide"
+      ]
+    },
+    {
+      "id": 6506,
+      "word": "display",
+      "pos": "n., v.",
+      "phonetic": "[dɪˋsple]",
+      "definition": "單眼 4K 雙微型 OLED 超高畫質顯示面板；展示",
+      "cefr": "B1",
+      "topic": "微型螢幕",
+      "examples": [
+        {
+          "en": "Dual custom micro-OLED displays pack twenty-three million pixels, rendering razor-sharp text.",
+          "zh": "雙眼特製「微型 OLED 顯示面板」（Micro-OLED Displays），容納兩千三百萬像素，呈現極致清晰文字。"
+        },
+        {
+          "en": "The department store arranged an exquisite holiday display in its ground-floor showcase window.",
+          "zh": "百貨公司在一樓展示櫥窗內佈置了精緻典雅的節慶陳列。"
+        },
+        {
+          "en": "The pilot checked the cockpit digital flight display to confirm their current cruising altitude.",
+          "zh": "機師查看駕駛艙數位飛行顯示螢幕，確認目前的巡航高度。"
+        }
+      ],
+      "collocations": [
+        "dual micro-OLED display"
+      ]
+    },
+    {
+      "id": 6507,
+      "word": "density",
+      "pos": "n. [U]",
+      "phonetic": "[ˋdɛnsətɪ]",
+      "definition": "每英吋三千像素超高密度 (徹底消除紗窗效應)",
+      "cefr": "B1",
+      "topic": "像素密度",
+      "examples": [
+        {
+          "en": "Extreme pixel density eliminates the screen-door effect, making virtual screens look like solid paper.",
+          "zh": "極致的「像素密度」（Pixel Density），徹底消除了紗窗網格感，使虛擬螢幕細膩得如真實印刷紙張。"
+        },
+        {
+          "en": "Urban planners study population density when designing new MRT lines and bus transit routes.",
+          "zh": "都市計畫專家在規劃新捷運路線與公車接駁路網時，會詳加研究人口密度。"
+        },
+        {
+          "en": "The metal alloy was chosen for its high tensile strength and relatively low material density.",
+          "zh": "該金屬合金因兼具高抗拉強度與相對較低的材料密度而獲選採用。"
+        }
+      ],
+      "collocations": [
+        "ultra-high pixel density"
+      ]
+    },
+    {
+      "id": 6508,
+      "word": "foveated",
+      "pos": "adj.",
+      "phonetic": "[ˋfovɪ͵etɪd]",
+      "definition": "眼球追蹤注視點渲染技術 (大幅節省 GPU 算力) 的",
+      "cefr": "B1",
+      "topic": "注視點渲染",
+      "examples": [
+        {
+          "en": "Foveated rendering allocates graphics horsepower exclusively to the exact spot where your eyes focus.",
+          "zh": "「注視點渲染技術」（Foveated Rendering），將圖形運算效能精準集中在視線焦點，大幅節省算力。"
+        },
+        {
+          "en": "By using a foveated rendering algorithm, mobile chipsets can drive demanding virtual worlds smoothly.",
+          "zh": "藉由採用注視點渲染演算法，行動晶片組也能流暢驅動高負載的虛擬世界。"
+        },
+        {
+          "en": "Developers observed a forty percent drop in GPU power consumption after enabling foveated processing.",
+          "zh": "開發者發現啟用注視點處理功能後，GPU 功耗降低了百分之四十。"
+        }
+      ],
+      "collocations": [
+        "foveated graphics rendering"
+      ]
+    },
+    {
+      "id": 6509,
+      "word": "gaze",
+      "pos": "n. [U], v.",
+      "phonetic": "[gez]",
+      "definition": "微秒級眼球凝視方向紅外線追蹤感測；凝視",
+      "cefr": "B1",
+      "topic": "眼球追蹤",
+      "examples": [
+        {
+          "en": "Invisible infrared LED rings track your eye gaze so you can select icons simply by looking at them.",
+          "zh": "隱形紅外線 LED 環即時追蹤使用者的「目光凝視方向」（Eye Gaze），只需注視圖示即可瞬間選取。"
+        },
+        {
+          "en": "The tourist stood quietly on the observation deck, directing her gaze across the shimmering harbor.",
+          "zh": "觀光客靜靜站在觀景台上，將目光投向波光粼粼的港灣港景。"
+        },
+        {
+          "en": "Psychologists analyze mutual gaze patterns to understand infant emotional development.",
+          "zh": "心理學家分析眼神凝視的雙向互動模式，藉此了解嬰幼兒的情感發展。"
+        }
+      ],
+      "collocations": [
+        "eye gaze tracking"
+      ]
+    },
+    {
+      "id": 6510,
+      "word": "gesture",
+      "pos": "n., v.",
+      "phonetic": "[ˋdʒɛstʃɚ]",
+      "definition": "雙指微幅捏合隔空手勢操控智慧演算法；手勢",
+      "cefr": "B1",
+      "topic": "手勢互動",
+      "examples": [
+        {
+          "en": "A subtle two-finger pinch gesture confirms selections without lifting your hands from your lap.",
+          "zh": "輕巧的「雙指微捏手勢」（Pinch Gesture），讓雙手放在大腿上即可優雅確認指令而無需懸空揮動。"
+        },
+        {
+          "en": "The conductor made an energetic hand gesture to cue the brass section during the symphony climax.",
+          "zh": "指揮家在交響樂高潮處做出充滿活力的手勢，提示銅管樂部準時切入。"
+        },
+        {
+          "en": "Sending flowers to the bereaved family was a thoughtful gesture that brought comfort.",
+          "zh": "向喪家致送鮮花是一份溫暖體貼的心意，帶來了許多安慰。"
+        }
+      ],
+      "collocations": [
+        "intuitive hand gesture"
+      ]
+    },
+    {
+      "id": 6511,
+      "word": "tracking",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtrækɪŋ]",
+      "definition": "六自由度 (6DoF) 內向外全方位空間追蹤",
+      "cefr": "B1",
+      "topic": "空間定位",
+      "examples": [
+        {
+          "en": "Six-degrees-of-freedom spatial tracking ensures virtual objects remain pinned solidly to physical tables.",
+          "zh": "「六自由度空間追蹤」（Spatial Tracking），確保虛擬物件能如實體般穩固「釘」在真實桌面上。"
+        },
+        {
+          "en": "The e-commerce logistics platform provides real-time GPS tracking for every express parcel delivery.",
+          "zh": "該電商物流平台為每一件快捷包裹配送提供即時 GPS 追蹤服務。"
+        },
+        {
+          "en": "Marine researchers attached miniature satellite tracking tags to migrating sea turtles.",
+          "zh": "海洋研究團隊在遷徙海龜背上安裝微型衛星定位追蹤器。"
+        }
+      ],
+      "collocations": [
+        "six degrees of freedom tracking"
+      ]
+    },
+    {
+      "id": 6512,
+      "word": "latency",
+      "pos": "n. [U]",
+      "phonetic": "[ˋletnsɪ]",
+      "definition": "動暈症消除之微秒級動作到光子極低延遲；潛伏",
+      "cefr": "B1",
+      "topic": "系統延遲",
+      "examples": [
+        {
+          "en": "Minimizing motion-to-photon latency prevents dizziness by matching visual updates to head rotation instantly.",
+          "zh": "將動作到光子的「系統延遲」（Latency）降至微秒級，讓畫面隨頭部轉動同步更新，消除頭暈感。"
+        },
+        {
+          "en": "Financial trading firms invest heavily in fiber-optic lines to reduce data transmission latency.",
+          "zh": "金融高頻交易公司斥巨資鋪設光纖線路，以盡可能降低資料傳輸延遲。"
+        },
+        {
+          "en": "Severe network latency caused the video conference call to freeze intermittently.",
+          "zh": "嚴重的網路延遲導致視訊會議畫面斷斷續續卡頓。"
+        }
+      ],
+      "collocations": [
+        "motion-to-photon latency"
+      ]
+    },
+    {
+      "id": 6513,
+      "word": "sickness",
+      "pos": "n. [U]",
+      "phonetic": "[ˋsɪknɪs]",
+      "definition": "消除前庭感覺衝突引發之虛擬動暈症；疾病",
+      "cefr": "B1",
+      "topic": "動暈防治",
+      "examples": [
+        {
+          "en": "Ultra-smooth frame pacing prevents simulator motion sickness during fast virtual flying experiences.",
+          "zh": "極致流暢的畫面幀率，徹底預防了在虛擬飛行體驗中因視覺與前庭衝突引起的「動暈症」（Motion Sickness）。"
+        },
+        {
+          "en": "Several passengers took herbal medicine to relieve nausea caused by car sickness on the mountain highway.",
+          "zh": "好幾位乘客在行經蜿蜒山路前服用了草本成藥，以緩解暈車引起的噁心不適。"
+        },
+        {
+          "en": "The company introduced paid leave policies for employees coping with chronic family sickness.",
+          "zh": "公司推出了帶薪照顧假政策，協助需要照顧家中慢性病患的員工。"
+        }
+      ],
+      "collocations": [
+        "virtual reality motion sickness"
+      ]
+    },
+    {
+      "id": 6514,
+      "word": "refresh",
+      "pos": "n. [U], v.",
+      "phonetic": "[rɪˋfrɛʃ]",
+      "definition": "120Hz 超高螢幕更新率 (消除畫面殘影)；刷新",
+      "cefr": "B1",
+      "topic": "螢幕更新率",
+      "examples": [
+        {
+          "en": "A 120Hz dynamic refresh rate ensures smooth movement during rapid head turning.",
+          "zh": "搭載 120Hz 動態「螢幕更新率」（Refresh Rate），確保在快速轉頭時畫面依然極致流暢無殘影。"
+        },
+        {
+          "en": "If the payment gateway stalls, please refresh your web browser tab before re-entering card details.",
+          "zh": "若付款金流頁面停滯，請在重新輸入卡號前先重新整理瀏覽器分頁。"
+        },
+        {
+          "en": "A crisp walk in the morning autumn air helped refresh her mind after hours of exam preparation.",
+          "zh": "在清爽的秋日晨風中散步片刻，讓苦讀備考數小時的她精神為之一振。"
+        }
+      ],
+      "collocations": [
+        "high screen refresh rate"
+      ]
+    },
+    {
+      "id": 6515,
+      "word": "sensor",
+      "pos": "n.",
+      "phonetic": "[ˋsɛnsɚ]",
+      "definition": "飛行時間光學雷達 (LiDAR 空間即時 3D 建模)；感測器",
+      "cefr": "B1",
+      "topic": "空間掃描",
+      "examples": [
+        {
+          "en": "The built-in LiDAR sensor scans room walls, furniture, and ceilings to construct a precise geometric model.",
+          "zh": "機身內建的「光學雷達感測器」（LiDAR Sensor），在數秒內掃描牆壁與家具，構築出精確 3D 幾何模型。"
+        },
+        {
+          "en": "An infrared motion sensor automatically activates hallway lighting whenever someone approaches.",
+          "zh": "紅外線動態感測器只要偵測到有人走近，便會自動點亮走廊照明燈。"
+        },
+        {
+          "en": "The smart greenhouse installed an ambient humidity sensor to trigger automated misting sprinklers.",
+          "zh": "智慧溫室安裝了環境濕度感測器，以自動觸發微霧噴灌系統。"
+        }
+      ],
+      "collocations": [
+        "time-of-flight LiDAR sensor"
+      ]
+    },
+    {
+      "id": 6516,
+      "word": "mesh",
+      "pos": "n., v.",
+      "phonetic": "[mɛʃ]",
+      "definition": "房間實體環境 3D 幾何空間三角網格模型；網狀物",
+      "cefr": "B1",
+      "topic": "空間網格",
+      "examples": [
+        {
+          "en": "Real-time spatial mesh generation enables digital characters to hide realistically behind physical couches.",
+          "zh": "即時生成的「空間幾何網格」（Spatial Mesh），能讓虛擬角色逼真地躲藏在真實沙發背後。"
+        },
+        {
+          "en": "We installed wire mesh fencing around the vegetable patch to protect young shoots from wild rabbits.",
+          "zh": "我們在菜園周圍裝設鐵絲網圍欄，以保護幼嫩的菜苗免遭野兔啃咬。"
+        },
+        {
+          "en": "His practical business skills mesh remarkably well with his partner's artistic design vision.",
+          "zh": "他的務實商業營運能力與合夥人的藝術設計遠見配合得相得益彰。"
+        }
+      ],
+      "collocations": [
+        "3D room geometric mesh"
+      ]
+    },
+    {
+      "id": 6517,
+      "word": "occlusion",
+      "pos": "n. [U]",
+      "phonetic": "[əˋkluʒən]",
+      "definition": "數位物件與真實雙手之即時深度前後遮蔽",
+      "cefr": "B1",
+      "topic": "深度遮蔽",
+      "examples": [
+        {
+          "en": "Dynamic hand occlusion allows your real fingers to pass in front of floating virtual application windows naturally.",
+          "zh": "「動態深度遮蔽技術」（Occlusion），讓使用者的真實雙手能自然出現在懸浮虛擬視窗的前方。"
+        },
+        {
+          "en": "Coronary artery occlusion can restrict oxygen flow to heart tissues and trigger sudden chest pain.",
+          "zh": "冠狀動脈阻塞會限制心肌的氧氣供應，並誘發突發性胸口劇痛。"
+        },
+        {
+          "en": "Computer vision algorithms must solve object occlusion when tracking pedestrians through crowded crosswalks.",
+          "zh": "電腦視覺演算法在擁擠斑馬線上追蹤行人時，必須克服人體相互遮擋的難題。"
+        }
+      ],
+      "collocations": [
+        "dynamic real-time occlusion"
+      ]
+    },
+    {
+      "id": 6518,
+      "word": "immersion",
+      "pos": "n. [U]",
+      "phonetic": "[ɪˋmɝʃən]",
+      "definition": "身臨其境之完全感官沉浸感 (Immersion)",
+      "cefr": "B1",
+      "topic": "沉浸體驗",
+      "examples": [
+        {
+          "en": "High-fidelity audiovisual rendering produces breathtaking immersion, transporting users to Martian plains.",
+          "zh": "高擬真的視聽呈現帶來極致震撼的「感官沉浸感」（Immersion），彷彿親身踏上火星赤紅荒原。"
+        },
+        {
+          "en": "Language immersion camps help young learners acquire fluent conversational skills in English rapidly.",
+          "zh": "全英語沉浸式營隊幫助青少年學員在短時間內迅速掌握流利的英語會話能力。"
+        },
+        {
+          "en": "The theater director focused on lighting and acoustics to create an atmosphere of complete dramatic immersion.",
+          "zh": "舞台劇導演著力於燈光與音效設計，營造出完全引人入勝的戲劇沉浸氛圍。"
+        }
+      ],
+      "collocations": [
+        "total sensory immersion"
+      ]
+    },
+    {
+      "id": 6519,
+      "word": "avatar",
+      "pos": "n.",
+      "phonetic": "[ˋævətɑr]",
+      "definition": "照片級高擬真個人化數位分身阿凡達；化身",
+      "cefr": "B1",
+      "topic": "數位分身",
+      "examples": [
+        {
+          "en": "Advanced neural networks synthesize a photorealistic persona avatar mimicking subtle facial expressions.",
+          "zh": "先進神經網路即時捕捉微表情，為使用者生成如照片般逼真的「個人化數位分身」（Avatar）。"
+        },
+        {
+          "en": "Gamers spend hours customizing the clothing, hairstyle, and armor of their virtual gaming avatar.",
+          "zh": "電玩玩家花費數小時精心自訂虛擬遊戲替身的服飾、髮型與盔甲裝備。"
+        },
+        {
+          "en": "In ancient mythology, the divine hero was regarded as an avatar of courage and righteousness.",
+          "zh": "在遠古神話中，這位神話英雄被奉為勇氣與正義的無瑕化身。"
+        }
+      ],
+      "collocations": [
+        "photorealistic digital avatar"
+      ]
+    },
+    {
+      "id": 6520,
+      "word": "telepresence",
+      "pos": "n. [U]",
+      "phonetic": "[͵tɛləˋprɛzəns]",
+      "definition": "遠端全像即時傳真 (千里之外如坐對面)",
+      "cefr": "B1",
+      "topic": "全像遠距",
+      "examples": [
+        {
+          "en": "Holographic telepresence allows remote coworkers to collaborate in the same virtual room across continents.",
+          "zh": "「全像即時傳真技術」（Telepresence），讓跨越大洋的同事如圍坐在同一張實體會議桌旁協同辦公。"
+        },
+        {
+          "en": "Robotic telepresence units permit hospitalized children to attend school classes and interact with peers.",
+          "zh": "機器人遠端臨場裝置讓長期住院的學童得以同步參與學校課程，並與同儕互動。"
+        },
+        {
+          "en": "High-bandwidth 5G connections make smooth corporate telepresence meetings possible without lag.",
+          "zh": "高頻寬 5G 行動通訊讓流暢無延遲的跨國企業視訊臨場會議成為可能。"
+        }
+      ],
+      "collocations": [
+        "holographic remote telepresence"
+      ]
+    },
+    {
+      "id": 6521,
+      "word": "audio",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɔdɪ͵o]",
+      "definition": "雙耳頭部相關傳遞函數 (HRTF) 3D 空間音訊；音訊",
+      "cefr": "B1",
+      "topic": "空間音效",
+      "examples": [
+        {
+          "en": "Spatial audio renders sound waves bouncing off virtual surfaces so audio cues pinpoint exact object locations.",
+          "zh": "「3D 空間音訊」（Spatial Audio），模擬聲波在房間牆壁上的反射，讓聲音方向與距離清晰可辨。"
+        },
+        {
+          "en": "The podcaster upgraded his studio setup with balanced audio cables and a condenser microphone.",
+          "zh": "這位播客升級了錄音室設備，換上平衡式音訊導線與專業電容麥克風。"
+        },
+        {
+          "en": "Download the audio file to your smartphone so you can listen to language lessons offline during commutes.",
+          "zh": "將音訊檔案下載至智慧型手機，就能在通勤途中離線聆聽語言會話課程。"
+        }
+      ],
+      "collocations": [
+        "3D binaural spatial audio"
+      ]
+    },
+    {
+      "id": 6522,
+      "word": "raytracing",
+      "pos": "n. [U]",
+      "phonetic": "[ˋre͵tresɪŋ]",
+      "definition": "根據房間材質即時計算之聲波光線追蹤技術",
+      "cefr": "B1",
+      "topic": "光線追蹤",
+      "examples": [
+        {
+          "en": "Acoustic raytracing models sound reverberation differences between carpeted bedrooms and marble hallways.",
+          "zh": "聲學「光線追蹤技術」（Raytracing），精準模擬地毯臥室與大理石長廊之間截然不同的回音殘響。"
+        },
+        {
+          "en": "Hardware-accelerated raytracing generates photorealistic light reflections on puddles and wet pavements.",
+          "zh": "硬體加速光線追蹤技術在積水水窪與潮濕路面上呈現出照片級的光影倒影。"
+        },
+        {
+          "en": "Game developers leverage real-time raytracing to craft lifelike shadows cast by multiple dynamic light sources.",
+          "zh": "遊戲開發者善用即時光追運算，精準刻劃出由多重動態光源投射出的生動陰影。"
+        }
+      ],
+      "collocations": [
+        "real-time acoustic raytracing"
+      ]
+    },
+    {
+      "id": 6523,
+      "word": "haptic",
+      "pos": "adj.",
+      "phonetic": "[ˋhæptɪk]",
+      "definition": "微流體氣壓式觸覺回饋手套 (摸到虛擬物體) 的",
+      "cefr": "B1",
+      "topic": "觸覺技術",
+      "examples": [
+        {
+          "en": "Microfluidic haptic gloves inflate tiny air pockets to simulate the physical resistance of grasping a solid cup.",
+          "zh": "微流體「觸覺回饋手套」（Haptic Gloves），透過微型氣囊膨脹，模擬手握實體水杯時的物理阻力。"
+        },
+        {
+          "en": "Smartphone touchscreens deliver subtle haptic vibrations to confirm keystrokes when typing messages.",
+          "zh": "智慧型手機觸控螢幕在打字輸入時提供細微的觸覺震動，確認每一次按鍵觸碰。"
+        },
+        {
+          "en": "Surgical training simulators integrate haptic motors so students can feel tissue resistance while cutting.",
+          "zh": "手術培訓模擬器結合了觸覺反饋馬達，讓學員在切割過程中真切感受人體組織阻力。"
+        }
+      ],
+      "collocations": [
+        "pneumatic haptic feedback"
+      ]
+    },
+    {
+      "id": 6524,
+      "word": "feedback",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfid͵bæk]",
+      "definition": "阻擋手指穿透虛擬鋼球之反作用力力回饋；回饋",
+      "cefr": "B1",
+      "topic": "力回饋",
+      "examples": [
+        {
+          "en": "Force feedback actuators lock finger tendons, preventing your hand from closing through a virtual wooden block.",
+          "zh": "「力回饋致動器」（Force Feedback），在手指觸碰虛擬木塊時即時鎖定肌腱，阻止手指穿透物件。"
+        },
+        {
+          "en": "Constructive customer feedback helped our software team identify and fix critical usability bottlenecks.",
+          "zh": "顧客提供的建設性回饋意見，幫助我們的軟體團隊快速定位並修復了關鍵易用性瓶頸。"
+        },
+        {
+          "en": "The sound technician adjusted the amplifier equalizer to prevent microphone audio feedback in the hall.",
+          "zh": "音響工程師調整了擴大機等化器，以防舞台麥克風在展演廳內產生尖銳的音頻嘯叫回授。"
+        }
+      ],
+      "collocations": [
+        "force-feedback actuator"
+      ]
+    },
+    {
+      "id": 6525,
+      "word": "texture",
+      "pos": "n.",
+      "phonetic": "[ˋtɛkstʃɚ]",
+      "definition": "模擬絲綢滑順與砂紙粗糙之微震動紋理；質地",
+      "cefr": "B1",
+      "topic": "表面觸感",
+      "examples": [
+        {
+          "en": "Electro-tactile surfaces simulate the delicate texture of silk fabric and the coarse grit of raw stone.",
+          "zh": "靜電觸覺技術能精準模擬出絲綢布料的滑順與粗糙岩石的「表面微細紋理」（Texture）。"
+        },
+        {
+          "en": "The artisan bakery is celebrated for sourdough bread with a chewy interior texture and crunchy crust.",
+          "zh": "這家手工烘焙坊以內層口感彈牙、外皮焦香酥脆的酸種麵包而聞名遐邇。"
+        },
+        {
+          "en": "Interior decorators layered velvet cushions over leather sofas to introduce varied tactile textures.",
+          "zh": "室內設計師在真皮沙發上鋪設天鵝絨靠墊，為居家空間增添豐富的觸覺層次。"
+        }
+      ],
+      "collocations": [
+        "virtual surface tactile texture"
+      ]
+    },
+    {
+      "id": 6526,
+      "word": "electromyography",
+      "pos": "n. [U]",
+      "phonetic": "[ɪ͵lɛktromaɪˋɑgrəfɪ]",
+      "definition": "腕帶表面肌電圖 (EMG 讀取神經運動訊號)",
+      "cefr": "B1",
+      "topic": "肌電感應",
+      "examples": [
+        {
+          "en": "Surface electromyography detects microvolt electrical signals traveling from the brain to wrist muscles.",
+          "zh": "表面「肌電圖技術」（Electromyography EMG），能在手腕處捕捉由大腦傳遞至手指肌肉的微伏特神經信號。"
+        },
+        {
+          "en": "Neurologists perform electromyography tests to diagnose nerve damage and neuromuscular disorders.",
+          "zh": "神經科醫師透過肌電圖檢查來診斷神經損傷與神經肌肉病變疾患。"
+        },
+        {
+          "en": "Bionic prosthetic hands equipped with electromyography sensors respond instantly to muscle twitches.",
+          "zh": "配備肌電感測器的仿生義肢手部，能對微弱的殘肢肌肉顫動做出即時敏捷反應。"
+        }
+      ],
+      "collocations": [
+        "surface electromyography (EMG)"
+      ]
+    },
+    {
+      "id": 6527,
+      "word": "intention",
+      "pos": "n.",
+      "phonetic": "[ɪnˋtɛnʃən]",
+      "definition": "在手指微動前數毫秒捕捉運動神經意圖；意圖",
+      "cefr": "B1",
+      "topic": "神經意圖",
+      "examples": [
+        {
+          "en": "EMG wristbands decode motor neuron intention milliseconds before the physical finger moves visibly.",
+          "zh": "肌電手環在手指產生肉眼可見的動作前數毫秒，即可預先解碼大腦的「運動神經意圖」（Intention）。"
+        },
+        {
+          "en": "The startup announced its intention to expand electric scooter rentals into three new metropolitan cities.",
+          "zh": "這家新創企業宣布有意將電動滑板車租賃服務拓展至另外三座大型都會區。"
+        },
+        {
+          "en": "Despite her kind intention to help, she accidentally deleted the shared project spreadsheet.",
+          "zh": "儘管她出發點是好心想幫忙，卻不慎誤刪了團隊共用的專案試算表。"
+        }
+      ],
+      "collocations": [
+        "decode motor neural intention"
+      ]
+    },
+    {
+      "id": 6528,
+      "word": "interface",
+      "pos": "n., v.",
+      "phonetic": "[ˋɪntɚ͵fes]",
+      "definition": "非侵入式神經腦機介面 (意念直接操控)；介面",
+      "cefr": "B1",
+      "topic": "腦機介面",
+      "examples": [
+        {
+          "en": "Non-invasive neural brain-computer interfaces let paralyzed individuals manipulate spatial windows mentally.",
+          "zh": "非侵入式「神經人機介面」（Interface），讓行動不便者能直接透過意念流暢操控三維空間視窗。"
+        },
+        {
+          "en": "Designers revamped the mobile banking interface to ensure intuitive navigation for elderly customers.",
+          "zh": "設計師徹底重新規劃了行動網銀的使用者介面，確保長者也能直覺順暢地操作。"
+        },
+        {
+          "en": "The payment gateway must interface securely with multiple domestic bank clearing networks.",
+          "zh": "該金流閘道系統必須與多家本國銀行的清算網路進行安全無虞的介面串接。"
+        }
+      ],
+      "collocations": [
+        "neural brain-computer interface"
+      ]
+    },
+    {
+      "id": 6529,
+      "word": "wearable",
+      "pos": "adj., n.",
+      "phonetic": "[ˋwɛrəb!]",
+      "definition": "全天候舒適輕量化人體工學穿戴裝置的；穿戴式",
+      "cefr": "B1",
+      "topic": "穿戴舒適",
+      "examples": [
+        {
+          "en": "Future optical glasses will evolve into lightweight, all-day comfortable wearable spatial companions.",
+          "zh": "未來智慧光學眼鏡將演化為如普通眼鏡般輕巧、適合全天候佩戴的「空間穿戴伴侶」（Wearable）。"
+        },
+        {
+          "en": "Fitness enthusiasts wear smart wristbands to track daily step counts, calorie burn, and sleeping cycles.",
+          "zh": "健身愛好者佩戴智慧手環，以隨時監控每日步數、卡路里消耗與睡眠深淺週期。"
+        },
+        {
+          "en": "Fashion designers are incorporating wearable solar cells into outdoor raincoats to recharge gadgets on the go.",
+          "zh": "服裝設計師正嘗試將穿戴式太陽能電池織入戶外風衣，方便戶外活動時隨時為隨身裝置充電。"
+        }
+      ],
+      "collocations": [
+        "lightweight wearable device"
+      ]
+    },
+    {
+      "id": 6530,
+      "word": "ergonomics",
+      "pos": "n. [pl.]",
+      "phonetic": "[͵ɝgəˋnɑmɪks]",
+      "definition": "前後配重平衡消除鼻樑壓迫之人體工學設計",
+      "cefr": "B1",
+      "topic": "人體工學",
+      "examples": [
+        {
+          "en": "Balancing battery weight on the rear strap achieves optimal ergonomics, eliminating pressure on the nose bridge.",
+          "zh": "將電池移至後方頭帶以達到完美前後配重，符合極致「人體工學設計」（Ergonomics），徹底解放鼻樑負擔。"
+        },
+        {
+          "en": "Office workers investing in lumbar chairs and standing desks reduce back fatigue through better ergonomics.",
+          "zh": "上班族添購人體工學椅與升降辦公桌，藉由優良的人體工學改善腰背疲憊。"
+        },
+        {
+          "en": "The industrial tool manufacturer redesigned power drills based on hand and wrist ergonomics.",
+          "zh": "該工業工具大廠根據手掌與手腕人體工學，重新改良了電動電鑽握把設計。"
+        }
+      ],
+      "collocations": [
+        "balanced headset ergonomics"
+      ]
+    },
+    {
+      "id": 6531,
+      "word": "virtual",
+      "pos": "adj.",
+      "phonetic": "[ˋvɝtʃʊəl]",
+      "definition": "隨心所欲構建之完全虛擬元宇宙空間的；虛擬的",
+      "cefr": "B1",
+      "topic": "虛擬空間",
+      "examples": [
+        {
+          "en": "Users customize infinite virtual environments, from tranquil mountain peaks to deep-space observatories.",
+          "zh": "使用者能隨心所欲自訂無邊無際的「虛擬三維環境」（Virtual Environments），從靜謐雪山切換至深空星海。"
+        },
+        {
+          "en": "The tech conference hosted a virtual showroom where attendees explored exhibits from their home offices.",
+          "zh": "該科技年會搭建了虛擬線上展間，讓與會者身在家中辦公室即可穿梭參觀各項展品。"
+        },
+        {
+          "en": "During lockdown, students attended virtual lectures and submitted assignments via digital portals.",
+          "zh": "在疫情居家管制期間，學生們透過線上視訊平台上課，並經由數位入口繳交作業。"
+        }
+      ],
+      "collocations": [
+        "immersive virtual environment"
+      ]
+    },
+    {
+      "id": 6532,
+      "word": "augmented",
+      "pos": "adj.",
+      "phonetic": "[ɔgˋmɛntɪd]",
+      "definition": "即時標註周遭景物與外語同步翻譯之擴增實境的",
+      "cefr": "B1",
+      "topic": "擴增資訊",
+      "examples": [
+        {
+          "en": "Augmented reality displays directional turn-by-turn navigation arrows directly onto city sidewalks.",
+          "zh": "「擴增實境技術」（Augmented Reality），將轉彎導航箭頭與即時路況資訊直接疊加在人行道地面上。"
+        },
+        {
+          "en": "Warehouse logistics workers utilize augmented glasses to highlight storage bins and verify item serials.",
+          "zh": "物流倉庫人員佩戴擴增實境眼鏡，能即時標註儲位料架並快速核對商品序號條碼。"
+        },
+        {
+          "en": "The museum launched an augmented audio tour that brings dinosaur fossil exhibits vividly to life.",
+          "zh": "博物館推出了擴增語音導覽，讓恐龍化石展品在遊客眼前生動躍然而出。"
+        }
+      ],
+      "collocations": [
+        "augmented reality overlay"
+      ]
+    },
+    {
+      "id": 6533,
+      "word": "mixed",
+      "pos": "adj.",
+      "phonetic": "[mɪkst]",
+      "definition": "虛擬數位與真實世界天衣無縫結合之混合實境的",
+      "cefr": "B1",
+      "topic": "混合實境",
+      "examples": [
+        {
+          "en": "Mixed reality enables architectural students to inspect a hollow skyscraper model standing on a living room rug.",
+          "zh": "「混合實境」（Mixed Reality），讓建築系學生能圍繞著矗立在客廳地毯上的摩天大樓模型仔細剖析。"
+        },
+        {
+          "en": "The flight school deployed mixed reality trainers combining physical cockpit switches with digital views.",
+          "zh": "飛行學院導入了結合實體駕駛開關與全景數位視野的混合實境訓練模擬艙。"
+        },
+        {
+          "en": "The retail store is testing mixed reality dressing mirrors that let shoppers try on coats digitally.",
+          "zh": "這家服飾旗艦店正在測試混合實境試衣鏡，讓顧客無需穿脫即可數位試穿各款大衣外套。"
+        }
+      ],
+      "collocations": [
+        "mixed reality experience"
+      ]
+    },
+    {
+      "id": 6534,
+      "word": "hologram",
+      "pos": "n.",
+      "phonetic": "[ˋhɑlə͵græm]",
+      "definition": "懸浮在空中可徒手旋轉之 3D 全像立體投影",
+      "cefr": "B1",
+      "topic": "全像投影",
+      "examples": [
+        {
+          "en": "Medical surgeons rotate a floating 3D organ hologram in mid-air before commencing complex surgery.",
+          "zh": "外科手術醫師在動刀前，在手術室半空中徒手旋轉病患器官的「3D 全像立體投影」（Hologram）。"
+        },
+        {
+          "en": "The pop star surprised thousands of concert fans by appearing as an interactive singing hologram.",
+          "zh": "這位流行巨星以逼真互動式全像立體投影現身演唱會，讓現場上萬歌迷驚呼連連。"
+        },
+        {
+          "en": "Scientists displayed a detailed hologram of the solar system during an interactive youth lecture.",
+          "zh": "科學家在青少年科普講座中，投影出細膩生動的太陽系立體全像圖解。"
+        }
+      ],
+      "collocations": [
+        "interactive 3D hologram"
+      ]
+    },
+    {
+      "id": 6535,
+      "word": "volumetric",
+      "pos": "adj.",
+      "phonetic": "[͵vɑljəˋmɛtrɪk]",
+      "definition": "容積攝影 (百台相機 360 度捕捉真人動態) 的",
+      "cefr": "B1",
+      "topic": "容積攝影",
+      "examples": [
+        {
+          "en": "Volumetric video captures live musical concerts, allowing viewers to walk around performers on stage.",
+          "zh": "「容積動態攝影」（Volumetric Video），讓觀眾能自由走上舞台，從任意角度近距離觀看歌手的現場演出。"
+        },
+        {
+          "en": "Digital studios set up one hundred calibrated cameras in a green dome for volumetric actor capture.",
+          "zh": "數位特效工作室在綠幕圓頂穹頂下架設百台校準相機，進行演員的容積立體動態捕捉。"
+        },
+        {
+          "en": "Doctors examine volumetric computed tomography scans to evaluate bone fracture healing progress.",
+          "zh": "醫師檢視容積電腦斷層掃描成像，仔細評估複雜骨折部位的骨痂癒合生長進度。"
+        }
+      ],
+      "collocations": [
+        "volumetric 3D video capture"
+      ]
+    },
+    {
+      "id": 6536,
+      "word": "photogrammetry",
+      "pos": "n. [U]",
+      "phonetic": "[͵fotogrəˋmɛtrɪ]",
+      "definition": "實景空拍百萬張照片 3D 照相測量建模",
+      "cefr": "B1",
+      "topic": "實景建模",
+      "examples": [
+        {
+          "en": "High-resolution photogrammetry faithfully reconstructs historical ancient temples with sub-millimeter precision.",
+          "zh": "高解析「實景照相測量技術」（Photogrammetry），以毫米級精準度在虛擬世界中永久保存歷史古蹟。"
+        },
+        {
+          "en": "Drone operators used drone photogrammetry to map coastal erosion following the tropical typhoon.",
+          "zh": "空拍無人機飛手利用空拍照相測量技術，在強烈颱風侵襲後詳細繪製海岸線侵蝕地圖。"
+        },
+        {
+          "en": "Game artists rely on photogrammetry scans of real mossy cliffs to create breathtaking game wilderness.",
+          "zh": "遊戲美術設計師仰賴真實苔蘚岩壁的照片建模掃描資料，打造出栩栩如生的遊戲野外場景。"
+        }
+      ],
+      "collocations": [
+        "high-resolution photogrammetry"
+      ]
+    },
+    {
+      "id": 6537,
+      "word": "twin",
+      "pos": "n., adj.",
+      "phonetic": "[twɪn]",
+      "definition": "晶圓廠與智慧工廠即時連動之數位孿生；孿生",
+      "cefr": "B1",
+      "topic": "數位孿生",
+      "examples": [
+        {
+          "en": "Engineers monitor automated fab operations in real time using an exact digital twin of the assembly line.",
+          "zh": "工程師透過與實體產線同步連動的「數位孿生模型」（Digital Twin），隨時監控晶圓廠機台運作狀態。"
+        },
+        {
+          "en": "The city government created a digital twin of downtown traffic grids to test flood drainage scenarios.",
+          "zh": "市政府建立了市中心交通路網的數位孿生體，用以模擬測試暴雨淹水時的排洪疏導方案。"
+        },
+        {
+          "en": "She gave birth to healthy twin girls at the regional medical center last Tuesday morning.",
+          "zh": "她上週二上午在區域醫療中心順利平安誕下了一對健康的雙胞胎女嬰。"
+        }
+      ],
+      "collocations": [
+        "industrial factory digital twin"
+      ]
+    },
+    {
+      "id": 6538,
+      "word": "collaboration",
+      "pos": "n. [U]",
+      "phonetic": "[kə͵læbəˋreʃən]",
+      "definition": "跨國工程師在同一虛擬晶片模型前協同設計",
+      "cefr": "B1",
+      "topic": "跨國協同",
+      "examples": [
+        {
+          "en": "Cross-border holographic collaboration accelerates automotive design cycles by months.",
+          "zh": "跨國團隊進行「全像遠距協同設計」（Collaboration），能將全新電動汽車的研發週期大幅縮短數個月。"
+        },
+        {
+          "en": "Effective inter-departmental collaboration between sales and engineering ensured on-time software delivery.",
+          "zh": "業務部與研發部之間緊密有效的跨部門協作，確保了旗艦軟體產品如期上線交件。"
+        },
+        {
+          "en": "The famous university announced a research collaboration with local hospitals to fight rare diseases.",
+          "zh": "這所頂尖名校宣布與在地多家醫院展開臨床研究合作，攜手對抗罕見疾病。"
+        }
+      ],
+      "collocations": [
+        "holographic team collaboration"
+      ]
+    },
+    {
+      "id": 6539,
+      "word": "training",
+      "pos": "n. [U]",
+      "phonetic": "[ˋtrenɪŋ]",
+      "definition": "外科心臟手術與太空航行零風險高擬真模擬訓練",
+      "cefr": "B1",
+      "topic": "擬真訓練",
+      "examples": [
+        {
+          "en": "Spatial simulation training allows pilot trainees to master emergency engine failures in complete physical safety.",
+          "zh": "空間「高擬真模擬訓練」（Simulation Training），讓實習飛行員能在絕對安全的環境下反覆演練引擎空中熄火。"
+        },
+        {
+          "en": "The company mandates annual cybersecurity awareness training for all new remote staff members.",
+          "zh": "公司規定所有新進遠距工作同仁，每年皆必須完成例行的資安防護意識培訓課程。"
+        },
+        {
+          "en": "Endurance athletes maintain rigorous cardiovascular training schedules before entering the marathon.",
+          "zh": "耐力型運動員在正式參加馬拉松大賽前，維持著極為嚴謹規律的心肺耐力訓練課表。"
+        }
+      ],
+      "collocations": [
+        "immersive simulation training"
+      ]
+    },
+    {
+      "id": 6540,
+      "word": "rehabilitation",
+      "pos": "n. [U]",
+      "phonetic": "[͵rihə͵bɪləˋteʃən]",
+      "definition": "結合遊戲化互動獎勵之中風肢體動作虛擬復健",
+      "cefr": "B1",
+      "topic": "醫療復健",
+      "examples": [
+        {
+          "en": "Gamified VR rehabilitation programs motivate stroke patients to regain arm mobility through playful challenges.",
+          "zh": "結合遊戲化挑戰的「虛擬實境復健療程」（Rehabilitation），激勵中風患者在趣味互動中重新恢復手臂活動力。"
+        },
+        {
+          "en": "After knee ligament reconstruction, the professional basketball player completed six months of physical rehabilitation.",
+          "zh": "接受膝蓋韌帶重建手術後，這名職業籃球員接受了長達半年的嚴格物理復健。"
+        },
+        {
+          "en": "The municipal urban renewal agency supervised the historic brick warehouse rehabilitation into creative studios.",
+          "zh": "市府都更專責機構監督老舊紅磚倉庫的活化整建修復工程，將其轉型為文創藝術工作室。"
+        }
+      ],
+      "collocations": [
+        "motor stroke rehabilitation"
+      ]
+    },
+    {
+      "id": 6541,
+      "word": "canvas",
+      "pos": "n.",
+      "phonetic": "[ˋkænvəs]",
+      "definition": "擺脫實體螢幕限制之無限三維空間工作畫布；畫布",
+      "cefr": "B1",
+      "topic": "空間畫布",
+      "examples": [
+        {
+          "en": "Spatial computing turns your entire physical room into an infinite, borderless productive canvas.",
+          "zh": "空間運算將你的整個房間轉化為一塊無限延伸、毫無邊界的「三維工作畫布」（Canvas）。"
+        },
+        {
+          "en": "The oil painter primed a large stretched canvas with white gesso before beginning the landscape portrait.",
+          "zh": "油畫家在開始繪製風景肖像畫前，先在大型繃布畫布上均勻塗抹白色底劑打底。"
+        },
+        {
+          "en": "Heavy water-resistant canvas tents shielded campers from fierce wind and pouring rain on the ridge.",
+          "zh": "厚實防潑水的帆布帳篷在稜線上替露營登山客抵擋住了強勁的狂風與傾盆大雨。"
+        }
+      ],
+      "collocations": [
+        "infinite 3D spatial canvas"
+      ]
+    },
+    {
+      "id": 6542,
+      "word": "workflow",
+      "pos": "n.",
+      "phonetic": "[ˋwɝk͵flo]",
+      "definition": "圍繞人體周遭排列十個虛擬視窗之高效工作流",
+      "cefr": "B1",
+      "topic": "空間工作流",
+      "examples": [
+        {
+          "en": "Programmers optimize their workflow by positioning terminal windows, code editors, and docs around them.",
+          "zh": "軟體工程師將程式碼、終端機與文件視窗環繞排列在身旁，打造極致專注的「空間工作流」（Workflow）。"
+        },
+        {
+          "en": "Introducing automated invoicing software streamlined the accounting team's monthly closing workflow.",
+          "zh": "導入自動化電子發票帳務軟體，大幅精簡了會計團隊每個月底的結算工作流程。"
+        },
+        {
+          "en": "Any sudden disruption in supply chain delivery can throw the factory production workflow off track.",
+          "zh": "供應鏈物流配送的任何突發性中斷，都可能導致整座工廠的產線運作流程陷入混亂。"
+        }
+      ],
+      "collocations": [
+        "multitasking spatial workflow"
+      ]
+    },
+    {
+      "id": 6543,
+      "word": "boundary",
+      "pos": "n.",
+      "phonetic": "[ˋbaʊndərɪ]",
+      "definition": "徹底打破物理空間與數位資訊的隔閡邊界；邊界",
+      "cefr": "B1",
+      "topic": "空間邊界",
+      "examples": [
+        {
+          "en": "Spatial headsets dissolve the boundary between physical atoms and digital bits forever.",
+          "zh": "空間運算頭戴設備，永遠消弭了「實體原子物理世界與數位位元世界之間的邊界」（Boundary）。"
+        },
+        {
+          "en": "Surveyors erected concrete boundary markers to clearly delineate the edge of the national park reserve.",
+          "zh": "土地測量員設立混凝土界樁，以明確劃定國家自然公園保護區的外圍邊界線。"
+        },
+        {
+          "en": "Maintaining a healthy boundary between professional duty and family life is crucial for mental well-being.",
+          "zh": "在職場工作職責與家庭私人生活之間維持健康的界線，對於心理健康至關重要。"
+        }
+      ],
+      "collocations": [
+        "dissolve the physical boundary"
+      ]
+    },
+    {
+      "id": 6544,
+      "word": "breakthrough",
+      "pos": "n.",
+      "phonetic": "[ˋbrek͵θru]",
+      "definition": "微型顯示器與全像光學波導歷史性重大突破",
+      "cefr": "B1",
+      "topic": "光學突破",
+      "examples": [
+        {
+          "en": "Nanometer optical manufacturing represents a pivotal breakthrough enabling lightweight smart glasses.",
+          "zh": "奈米級光學微影技術的「歷史性重大突破」（Breakthrough），讓輕巧時尚的日常智慧眼鏡即將成為現實。"
+        },
+        {
+          "en": "Medical researchers hailed the discovery of this novel targeted antibody as a monumental cancer breakthrough.",
+          "zh": "醫學研究人員讚譽這款新型標靶抗體的發現，是現代癌症治療史上的劃時代突破。"
+        },
+        {
+          "en": "After weeks of stalled bargaining, negotiators achieved a breakthrough in cross-strait trade talks.",
+          "zh": "經過數週停滯不前的艱辛談判，雙方談判代表終於在跨國貿易協商中取得了關鍵突破。"
+        }
+      ],
+      "collocations": [
+        "optical display breakthrough"
+      ]
+    },
+    {
+      "id": 6545,
+      "word": "intuition",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪntjuˋɪʃən]",
+      "definition": "眼神與手勢如本能般自然流暢的人機直覺互動",
+      "cefr": "B1",
+      "topic": "直覺本能",
+      "examples": [
+        {
+          "en": "Interacting with spatial elements requires no manual learning because it relies on innate human intuition.",
+          "zh": "空間互動完全無需翻閱說明書，因為它完全建立在人類最原始純粹的「視覺與手勢直覺」（Intuition）之上。"
+        },
+        {
+          "en": "Trusting her entrepreneurial intuition, the founder invested early in renewable solar energy farms.",
+          "zh": "憑藉敏銳精準的商業創業直覺，創辦人早在數年前便果斷投資太陽能光電綠能案場。"
+        },
+        {
+          "en": "Mathematical intuition often leads physicists toward groundbreaking hypotheses before formal proof.",
+          "zh": "數學直дж往往能在進行繁複的嚴謹證明之前，引領物理學家率先提出突破性的科學假說。"
+        }
+      ],
+      "collocations": [
+        "innate human motor intuition"
+      ]
+    },
+    {
+      "id": 6546,
+      "word": "dimension",
+      "pos": "n.",
+      "phonetic": "[dəˋmɛnʃən]",
+      "definition": "為人類日常生活增添奇妙生動之數位全新維度",
+      "cefr": "B1",
+      "topic": "數位維度",
+      "examples": [
+        {
+          "en": "Overlaying historical street scenes adds an unforgettable dimension to walking through ancient cities.",
+          "zh": "在古城散步時將百年前的歷史街景疊加在眼前，為城市漫步增添了豐富動人的「時空維度」（Dimension）。"
+        },
+        {
+          "en": "The architect carefully verified the exact ceiling height and room dimension before ordering furniture.",
+          "zh": "建築師在訂製系統家具前，仔細核對了天花板淨高與各個房間的精準空間尺寸。"
+        },
+        {
+          "en": "This sociological survey adds an essential human dimension to abstract macroeconomic inflation statistics.",
+          "zh": "這份社會學深度訪談調查，為冰冷抽象的總體經濟通膨數據注入了真實溫熱的人文維度。"
+        }
+      ],
+      "collocations": [
+        "enriching digital dimension"
+      ]
+    },
+    {
+      "id": 6547,
+      "word": "imagination",
+      "pos": "n. [U]",
+      "phonetic": "[ɪ͵mædʒəˋneʃən]",
+      "definition": "在三維空間中自由揮灑之無窮建築設計想像力",
+      "cefr": "B1",
+      "topic": "空間想像",
+      "examples": [
+        {
+          "en": "Artists sketch glowing neon sculptures in thin air, bounded only by the limits of their imagination.",
+          "zh": "藝術家在虛擬空氣中揮毫繪製發光的立體雕塑，唯一的極限就是人類無拘無束的「想像力」（Imagination）。"
+        },
+        {
+          "en": "Children possess vivid imagination, turning cardboard shipping boxes into fantastical space rockets.",
+          "zh": "孩童擁有無窮無盡的生動想像力，能將尋常的瓦楞紙箱幻化為奔向星際的奇幻太空火箭。"
+        },
+        {
+          "en": "Solving complex environmental challenges requires bold scientific imagination paired with disciplined execution.",
+          "zh": "克服複雜棘手的全球環境變遷挑戰，既需要大膽的科學想像力，也離不開務實嚴謹的執行力。"
+        }
+      ],
+      "collocations": [
+        "boundless creative imagination"
+      ]
+    },
+    {
+      "id": 6548,
+      "word": "revolution",
+      "pos": "n.",
+      "phonetic": "[͵rɛvəˋluʃən]",
+      "definition": "繼滑鼠與多點觸控後之第三次人機互動革命",
+      "cefr": "B1",
+      "topic": "互動革命",
+      "examples": [
+        {
+          "en": "Spatial computing represents the next profound revolution in how humans create, communicate, and live.",
+          "zh": "空間運算標誌著繼滑鼠與觸控螢幕之後，人類溝通、創造與生活的下一場「人機互動偉大革命」（Revolution）。"
+        },
+        {
+          "en": "The widespread adoption of smartphones triggered a digital communication revolution across every continent.",
+          "zh": "智慧型手機的普及在全球各大洲引發了一場翻天覆地的數位通訊與生活型態革命。"
+        },
+        {
+          "en": "Planetary astronomers calculate the exact period of the satellite's revolution around Jupiter.",
+          "zh": "行星天文學家精密計算出這顆天然衛星繞行木星運轉的完整公轉週期。"
+        }
+      ],
+      "collocations": [
+        "interaction paradigm revolution"
+      ]
+    },
+    {
+      "id": 6549,
+      "word": "possibility",
+      "pos": "n. [pl.]",
+      "phonetic": "[͵pɑsəˋbɪlətɪ]",
+      "definition": "空間運算為人類未來生活開拓之無盡創造可能",
+      "cefr": "B1",
+      "topic": "無限可能",
+      "examples": [
+        {
+          "en": "Unlocking spatial interfaces opens up endless possibilities for education, medicine, and human connection.",
+          "zh": "解鎖空間運算介面，為未來的遠距教育、微創醫學與人際心靈連結開啟了「無窮無盡的嶄新可能」（Possibilities）。"
+        },
+        {
+          "en": "Venture capitalists explore investment possibilities in cutting-edge semiconductor lithography packaging.",
+          "zh": "創投機構正在積極評估先進半導體微影光學與高階晶片封裝領域的廣闊投資潛力。"
+        },
+        {
+          "en": "There is a strong possibility that high-speed rail lines will expand into the eastern coastal county.",
+          "zh": "高速鐵路延伸至東部海岸縣市具有很高的落實可能性。"
+        }
+      ],
+      "collocations": [
+        "endless creative possibilities"
+      ]
+    },
+    {
+      "id": 6550,
+      "word": "future",
+      "pos": "n., adj.",
+      "phonetic": "[ˋfjutʃɚ]",
+      "definition": "昂首跨步邁入虛實融合同在之璀璨空間運算未來",
+      "cefr": "B1",
+      "topic": "空間未來",
+      "examples": [
+        {
+          "en": "Putting on spatial optics is like stepping across a magical threshold into the vibrant computing future.",
+          "zh": "戴上空間光學眼鏡，如同跨越一道神奇的科技門檻，自信昂首邁向虛實交融的「璀璨空間未來」（Future）。"
+        },
+        {
+          "en": "Financial planners recommend saving early to guarantee financial security for your future family.",
+          "zh": "理財規劃顧問建議及早展開定期定額儲蓄與投資，為未來家庭生活打下堅實的經濟後盾。"
+        },
+        {
+          "en": "Smart grid technology will serve as the backbone for future carbon-neutral power distribution.",
+          "zh": "智慧電網技術將扮演未來零碳排電力輸送與智慧配電的關鍵核心骨幹。"
+        }
+      ],
+      "collocations": [
+        "dawn of the spatial future"
+      ]
+    }
+  ]
+}

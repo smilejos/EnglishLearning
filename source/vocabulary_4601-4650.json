@@ -1,0 +1,1309 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A2–B1）",
+  "section": "第 4,601–4,650 個單字（CEFR B1 中級）",
+  "batch": "4601-4650",
+  "range": "4601–4650",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 4601,
+      "word": "Fintech",
+      "pos": "n. [U]",
+      "phonetic": "[ˋfɪn͵tɛk]",
+      "definition": "金融科技 (Financial Technology)",
+      "cefr": "B1",
+      "topic": "金融創新",
+      "examples": [
+        {
+          "en": "Innovative Fintech solutions simplify investing, bill payments, and cross-border money transfers.",
+          "zh": "充滿創新的金融科技（Fintech）解決方案，大幅簡化了小資投資、帳單繳費與跨國匯款流程。"
+        },
+        {
+          "en": "The government established regulatory frameworks to foster collaboration between traditional banks and Fintech startups.",
+          "zh": "政府制定了前瞻的監管法規框架，積極促進傳統老牌商業銀行與敏捷金融科技新創之間的跨界合作。"
+        },
+        {
+          "en": "Rapid advancements in Fintech have empowered millions of unbanked citizens across developing nations.",
+          "zh": "金融科技的日新月異與普及，賦能了開發中國家數百萬過去無法享有銀行服務的底層民眾。"
+        }
+      ],
+      "collocations": [
+        "Fintech industry"
+      ]
+    },
+    {
+      "id": 4602,
+      "word": "neobank",
+      "pos": "n.",
+      "phonetic": "[ˋnio͵bæŋk]",
+      "definition": "純數位網銀 (如 LINE Bank / 將來銀行)",
+      "cefr": "B1",
+      "topic": "數位銀行",
+      "examples": [
+        {
+          "en": "Licensed neobanks operate 100% online without expensive physical branch maintenance costs.",
+          "zh": "獲金管會核發純網銀執照的數位銀行（Neobank），完全透過手機 App 運作且無實體分行租金負擔。"
+        },
+        {
+          "en": "Opening an account with a neobank takes just three minutes using a smartphone camera and national ID.",
+          "zh": "透過智慧型手機鏡頭拍照上傳雙證件，只需短短三分鐘即可零接觸完成純網銀的線上開戶手續。"
+        },
+        {
+          "en": "Competition from innovative neobanks forced traditional legacy lenders to revamp their clunky mobile apps.",
+          "zh": "來自新銳純網銀的強烈市場競爭壓力，強烈促使傳統老牌銀行痛定思痛、全面大改版其原本笨重的行動網銀。"
+        }
+      ],
+      "collocations": [
+        "digital neobank"
+      ]
+    },
+    {
+      "id": 4603,
+      "word": "branchless",
+      "pos": "adj.",
+      "phonetic": "[ˋbræntʃlɪs]",
+      "definition": "無實體分行的；全線上營運的",
+      "cefr": "B1",
+      "topic": "營運模式",
+      "examples": [
+        {
+          "en": "Branchless banking allows college students to open savings accounts via smartphones in five minutes.",
+          "zh": "全線上無實體分行營運模式，讓大學生只需拿起智慧型手機，五分鐘內即可完成開戶驗證。"
+        },
+        {
+          "en": "Operating a branchless model significantly lowers overhead, enabling institutions to offer higher deposit yields.",
+          "zh": "採取全線上無實體分行的輕資產營運模式能大幅降低營運管銷，進而讓利給存款戶享有更高的高利活存回饋。"
+        },
+        {
+          "en": "Elderly customers who prefer in-person human tellers sometimes feel alienated by strictly branchless services.",
+          "zh": "習慣臨櫃與親切行員面對面辦理業務的銀髮族長輩，面對純線上無分行模式有時會產生適應上的數位落差。"
+        }
+      ],
+      "collocations": [
+        "branchless digital banking"
+      ]
+    },
+    {
+      "id": 4604,
+      "word": "contactless",
+      "pos": "adj.",
+      "phonetic": "[ˋkɑnˌtæktlɪs]",
+      "definition": "感應式感應支付的；無接觸的",
+      "cefr": "B1",
+      "topic": "行動支付",
+      "examples": [
+        {
+          "en": "Tap your smartphone on the transit gate to enjoy fast contactless ticketing.",
+          "zh": "搭乘捷運時只需將手機靠近閘門輕輕感應嗶一下，即可享受極速暢行的感應式行動支付進站體驗。"
+        },
+        {
+          "en": "Contactless payments became ubiquitous during the pandemic, minimizing physical surface touching.",
+          "zh": "在疫情期間感應式無接觸支付迅速普及至大街小巷，有效降低了因接觸實體鈔票與刷卡機帶來的接觸風險。"
+        },
+        {
+          "en": "Modern convenience stores feature contactless self-checkout counters where customers scan barcodes and pay via tap.",
+          "zh": "現代超商廣設感應式自助結帳機台，讓趕時間的上班族能自行手持條碼機掃描商品並一秒感應付款。"
+        }
+      ],
+      "collocations": [
+        "contactless mobile payment"
+      ]
+    },
+    {
+      "id": 4605,
+      "word": "interoperability",
+      "pos": "n. [U]",
+      "phonetic": "[͵ɪntɚˌɑpərəˋbɪlətɪ]",
+      "definition": "跨機構系統互通性；相容性",
+      "cefr": "B1",
+      "topic": "支付規格",
+      "examples": [
+        {
+          "en": "TWQR code standards provide cross-platform interoperability among all banks and e-wallets.",
+          "zh": "台灣共通「TWQR」標準實現了各大公私立銀行、街口支付與全支付之間無縫掃碼的跨機構互通性。"
+        },
+        {
+          "en": "True system interoperability allows medical records to be shared securely between different hospital networks.",
+          "zh": "達成真正的跨院系統互通相容性，能讓病患的電子病歷與檢查報告在不同醫療體系間安全即時調閱。"
+        },
+        {
+          "en": "Lack of interoperability between proprietary smart home devices frustrates consumers seeking unified automation.",
+          "zh": "不同品牌智慧家庭設備間缺乏通用互通協定，常讓渴望打造全屋智慧自動化連動的消費者備感困擾。"
+        }
+      ],
+      "collocations": [
+        "payment interoperability"
+      ]
+    },
+    {
+      "id": 4606,
+      "word": "wallet",
+      "pos": "n.",
+      "phonetic": "[ˋwɑlɪt]",
+      "definition": "電子支付錢包；皮夾錢包 (E-Wallet)",
+      "cefr": "B1",
+      "topic": "數位錢包",
+      "examples": [
+        {
+          "en": "Store your credit cards and discount coupons inside a secure mobile digital wallet app.",
+          "zh": "將多張信用卡、會員集點卡與電子折價券妥善綁定於高度加密的手機電子支付錢包 App 中。"
+        },
+        {
+          "en": "He left his bulky leather wallet at home, knowing he could pay for dinner using his phone.",
+          "zh": "他出門時直接將厚重的真皮實體皮夾留在家中，因為只要有一台充飽電的手機便足以搞定一整天吃喝玩樂。"
+        },
+        {
+          "en": "Multi-signature crypto wallets require confirmation from two or more private keys before authorizing transfers.",
+          "zh": "具備高防護規格的多重簽名加密貨幣錢包，在正式核准任何一筆轉帳前均需經過兩把以上私鑰確認授權。"
+        }
+      ],
+      "collocations": [
+        "mobile e-wallet"
+      ]
+    },
+    {
+      "id": 4607,
+      "word": "split",
+      "pos": "v., n.",
+      "phonetic": "[splɪt]",
+      "definition": "聚餐平分帳單 (拆帳)；分開；裂痕",
+      "cefr": "B1",
+      "topic": "社交支付",
+      "examples": [
+        {
+          "en": "Co-workers used the mobile app to split the dinner bill evenly without counting physical change.",
+          "zh": "同事聚餐結帳時使用手機電子錢包進行群組一秒精準拆帳，完全省去找零錢與代墊現金的麻煩。"
+        },
+        {
+          "en": "The apartment roommates decided to split the monthly high-speed internet and electricity costs right down the middle.",
+          "zh": "合租公寓的室友們約定好在每個月底將高速寬頻光纖上網費與夏季電費單嚴格均攤、精準平分帳單。"
+        },
+        {
+          "en": "Modern bill-splitting features let party attendees calculate exact individual amounts based on what each person ordered.",
+          "zh": "當代行動支付內建的智慧拆帳功能，能讓聚會好友依據各自單點的餐點品項，分毫不差精準算出各自應付金額。"
+        }
+      ],
+      "collocations": [
+        "split the bill"
+      ]
+    },
+    {
+      "id": 4608,
+      "word": "onboarding",
+      "pos": "n. [U]",
+      "phonetic": "[ˋɑn͵bordɪŋ]",
+      "definition": "數位開戶申辦流程；入職引導",
+      "cefr": "B1",
+      "topic": "開戶體驗",
+      "examples": [
+        {
+          "en": "Smooth e-KYC digital onboarding allows applicants to upload ID photos and verify identity instantly.",
+          "zh": "流暢便捷的電子化身分驗證（e-KYC）數位開戶流程，讓申請人拍照上傳身分證即可秒速完成身分核驗。"
+        },
+        {
+          "en": "The human resources team redesigned the new employee onboarding program to foster belonging from day one.",
+          "zh": "人資團隊全面重構優化了新進員工入職引導培訓流程，讓每位新人從第一天報到起便能深植團隊歸屬感。"
+        },
+        {
+          "en": "Streamlined customer onboarding significantly reduces bounce rates on subscription-based financial platforms.",
+          "zh": "順暢無阻力的數位客戶開戶體驗，能大幅降低新用戶在線上訂閱各類金融服務時因流程繁複而中途放棄的流失率。"
+        }
+      ],
+      "collocations": [
+        "digital customer onboarding"
+      ]
+    },
+    {
+      "id": 4609,
+      "word": "biometric",
+      "pos": "adj.",
+      "phonetic": "[͵baɪoˋmɛtrɪk]",
+      "definition": "生物特徵辨識驗證的 (人臉/指紋)",
+      "cefr": "B1",
+      "topic": "安全認證",
+      "examples": [
+        {
+          "en": "Biometric facial recognition authenticates high-value wire transfers securely without passwords.",
+          "zh": "透過高安全度的 3D 生物特徵人臉辨識掃描進行轉帳授權，無需死記複雜密碼即可安全完成大額匯款。"
+        },
+        {
+          "en": "Border control e-gates utilize biometric iris scanning to process international passengers in ten seconds.",
+          "zh": "國際機場出境自動查驗通關閘門運用尖端生物特徵虹膜辨識技術，能在短短十秒內快速通關完成驗證。"
+        },
+        {
+          "en": "Storing biometric fingerprint templates locally on secure hardware chips prevents cloud data leaks.",
+          "zh": "將使用者的指紋特徵加密資料嚴密儲存於手機硬體獨立安全晶片中，能徹底杜絕雲端資料遭駭客竊取的風險。"
+        }
+      ],
+      "collocations": [
+        "biometric authentication"
+      ]
+    },
+    {
+      "id": 4610,
+      "word": "authentication",
+      "pos": "n. [U]",
+      "phonetic": "[ɔ͵θɛntəˋkeʃən]",
+      "definition": "雙重身分安全驗證 (2FA)；認證",
+      "cefr": "B1",
+      "topic": "帳戶安全",
+      "examples": [
+        {
+          "en": "Enabling two-factor authentication (2FA) blocks hackers from accessing your online investment account.",
+          "zh": "啟用兩步驟雙重身分安全驗證（2FA）機制，能有效阻絕駭客利用釣魚密碼非法登入你的證券帳戶。"
+        },
+        {
+          "en": "SMS one-time passcodes and hardware security keys are widely used methods of identity authentication.",
+          "zh": "手機簡訊動態密碼（OTP）與實體硬體安全金鑰，是當前金融機構廣泛採用的高強度身分安全認證機制。"
+        },
+        {
+          "en": "Always verify server SSL certificate authentication before entering sensitive financial credentials on any portal.",
+          "zh": "在任何網頁登入入口輸入敏感銀行帳號密碼前，切記務必確認伺服器 SSL 數位憑證認證的真實性。"
+        }
+      ],
+      "collocations": [
+        "two-factor authentication (2FA)"
+      ]
+    },
+    {
+      "id": 4611,
+      "word": "alert",
+      "pos": "n., v.",
+      "phonetic": "[əˋlɝt]",
+      "definition": "即時交易推播警示通知；警覺的",
+      "cefr": "B1",
+      "topic": "即時風控",
+      "examples": [
+        {
+          "en": "Real-time SMS and push alerts notify cardholders immediately after any overseas credit card charge.",
+          "zh": "只要海外信用卡出現任何一筆外幣刷卡消費，系統第一時間立即透過簡訊與 App 發送即時推播警示。"
+        },
+        {
+          "en": "The weather bureau issued an urgent maritime gale alert advising small fishing vessels to return to harbor.",
+          "zh": "氣象主管機關緊急發布海上強風特報警報，呼籲在台灣周邊海域作業的近海小型漁船立即返港避風。"
+        },
+        {
+          "en": "Setting an account balance alert prevents checking overdraft fees when automatic rent debits clear.",
+          "zh": "在手機銀行內預先設定活期存款低餘額警示通知，能有效防止每逢月底房租自動扣款時因餘額不足產生違約金。"
+        }
+      ],
+      "collocations": [
+        "instant transaction alert"
+      ]
+    },
+    {
+      "id": 4612,
+      "word": "aggregation",
+      "pos": "n. [U]",
+      "phonetic": "[͵ægrəˋgeʃən]",
+      "definition": "跨銀行多帳戶整合匯總；聚集",
+      "cefr": "B1",
+      "topic": "開放銀行",
+      "examples": [
+        {
+          "en": "Open banking account aggregation allows users to view balances across five different banks in one app.",
+          "zh": "透過開放銀行（Open Banking）多帳戶整合功能，用戶能在單一 App 儀表板同時掌握五家銀行的活存總額。"
+        },
+        {
+          "en": "Data aggregation platforms compile news headlines from hundreds of media outlets into an organized feed.",
+          "zh": "新聞資訊聚合平台將來自數百家主流權威媒體的最新頭條彙整匯總，呈現出條理分明的客製化資訊流。"
+        },
+        {
+          "en": "Financial wellness dashboards rely on balance aggregation APIs to calculate your overall net worth automatically.",
+          "zh": "個人財務健康儀表板運用開放 API 跨帳戶資產整合技術，能一秒精準自動試算每位用戶名下的真實淨資產總值。"
+        }
+      ],
+      "collocations": [
+        "account balance aggregation"
+      ]
+    },
+    {
+      "id": 4613,
+      "word": "alternative",
+      "pos": "adj., n.",
+      "phonetic": "[ɔlˋtɝnətɪv]",
+      "definition": "非傳統替代信用大數據的；替代方案",
+      "cefr": "B1",
+      "topic": "信用評估",
+      "examples": [
+        {
+          "en": "Fintech lenders evaluate alternative mobile bill payment data to grant microloans to young freelancers.",
+          "zh": "金融科技借貸平台藉由分析手機電信費繳費紀錄等替代大數據，為缺乏傳統薪轉證明的自由工作者核貸。"
+        },
+        {
+          "en": "Many patients seek alternative therapies such as acupuncture to manage chronic neck pain.",
+          "zh": "許多飽受頑固肩頸痠痛之苦的現代人，紛紛尋求中醫針灸拔罐等非侵入性的輔助替代療法以舒緩疼痛。"
+        },
+        {
+          "en": "Wind and solar installations provide sustainable alternative energy sources to reduce coal dependence.",
+          "zh": "大規模興建離岸風電與太陽能光電設備，提供了充足永續的潔淨替代能源，大幅降低對燃煤發電的依賴。"
+        }
+      ],
+      "collocations": [
+        "alternative credit data"
+      ]
+    },
+    {
+      "id": 4614,
+      "word": "microloan",
+      "pos": "n.",
+      "phonetic": "[ˋmaɪkro͵lon]",
+      "definition": "線上小額微型信貸；小額貸款",
+      "cefr": "B1",
+      "topic": "融資服務",
+      "examples": [
+        {
+          "en": "Fast-approval online microloans provide emergency working capital for small night market street food stalls.",
+          "zh": "審核撥款極為迅速的線上小額微型信貸，及時為夜市傳統小吃攤商提供了靈活周轉的急難營運資金。"
+        },
+        {
+          "en": "The microfinance foundation offers low-interest microloans to empower female entrepreneurs in developing regions.",
+          "zh": "國際微型金融公益基金會提供免保人低利小額貸款，全力扶助開發中國家弱勢女性在家微型創業自立。"
+        },
+        {
+          "en": "Borrowers can repay their flexible microloan in small weekly installments through mobile wallets.",
+          "zh": "借款人只需打開手機電子錢包，即可透過每週極小額的分期攤還機制，輕鬆無壓力地償清微型信貸。"
+        }
+      ],
+      "collocations": [
+        "instant microloan"
+      ]
+    },
+    {
+      "id": 4615,
+      "word": "underwriting",
+      "pos": "n. [U]",
+      "phonetic": "[ˋʌndɚ͵raɪtɪŋ]",
+      "definition": "AI 智慧核保審貸；承銷責任",
+      "cefr": "B1",
+      "topic": "風險評估",
+      "examples": [
+        {
+          "en": "Automated algorithmic underwriting approves small business loan applications in less than three minutes.",
+          "zh": "導入全自動機器學習演算法智慧審貸系統，能在不到三分鐘內完成中小企業微型頭家貸款資格審批。"
+        },
+        {
+          "en": "Life insurance underwriting assesses medical history and lifestyle factors to calculate monthly policy premiums.",
+          "zh": "人壽保險公司的專業核保審查人員仔細評估被保險人的過往病歷與吸菸作息，精準試算合理的每月保險費率。"
+        },
+        {
+          "en": "Investment banks form syndicates to manage the risk of debt underwriting for major municipal infrastructure bonds.",
+          "zh": "知名跨國投資銀行合組大型聯貸承銷團，共同分攤並管理重大國家級重大交通基礎建設債券的承銷風險。"
+        }
+      ],
+      "collocations": [
+        "automated loan underwriting"
+      ]
+    },
+    {
+      "id": 4616,
+      "word": "fractional",
+      "pos": "adj.",
+      "phonetic": "[ˋfrækʃən!]",
+      "definition": "零股交易的；小數點碎片的",
+      "cefr": "B1",
+      "topic": "普及投資",
+      "examples": [
+        {
+          "en": "Fractional share trading enables young retail investors to buy world-famous tech stocks for just $10.",
+          "zh": "美股與台股「定期定額零股交易」功能，讓小資大學生只需投入銅板價十美元即可成為跨國科技巨頭股東。"
+        },
+        {
+          "en": "Buying fractional equity units lets students assemble diversified portfolios without thousands of dollars in capital.",
+          "zh": "善用小數點零股投資功能，即便是手中只有微薄打工零用錢的青年學子，也能輕鬆分散配置跨國龍頭股票。"
+        },
+        {
+          "en": "The real estate crowdfunding platform permits fractional ownership of commercial office properties.",
+          "zh": "創新不動產群眾募資平台將頂級甲級商辦大樓產權數位代幣化，讓散戶大眾也能以極小單位享有零碎產權持分。"
+        }
+      ],
+      "collocations": [
+        "fractional share investing"
+      ]
+    },
+    {
+      "id": 4617,
+      "word": "robo-advisor",
+      "pos": "n.",
+      "phonetic": "[ˋrobo ædˋvaɪzɚ]",
+      "definition": "機器人智能理財顧問",
+      "cefr": "B1",
+      "topic": "財富管理",
+      "examples": [
+        {
+          "en": "Robo-advisors automatically rebalance index ETF portfolios according to your customized risk tolerance.",
+          "zh": "機器人智能理財顧問（Robo-Advisor）會根據每位投資人設定的風險承受度，自動調整指數型 ETF 配置。"
+        },
+        {
+          "en": "Young professionals prefer low-fee robo-advisors over traditional financial advisors charging steep advisory retainers.",
+          "zh": "年輕新富族群更傾向挑選低管理手續費的機器人智能理財，而非收取昂貴諮詢顧問門檻費用的傳統理專。"
+        },
+        {
+          "en": "The platform's robo-advisor analyzes market volatility every night, shifting allocations toward safe bonds when corrections occur.",
+          "zh": "該平台的智能理財系統每晚自動監控全球市場波動率，並在股市拉回修正之際智慧調升抗跌公債的避險部位。"
+        }
+      ],
+      "collocations": [
+        "automated robo-advisor"
+      ]
+    },
+    {
+      "id": 4618,
+      "word": "rebalance",
+      "pos": "v., n. [U]",
+      "phonetic": "[riˋbæləns]",
+      "definition": "投資組合定期動態再平衡；調整",
+      "cefr": "B1",
+      "topic": "資產配置",
+      "examples": [
+        {
+          "en": "Smart algorithms periodically rebalance your stock and bond allocations to lock in gains and limit risk.",
+          "zh": "智慧資產配置演算法每季自動執行股債比例動態再平衡，及時獲利了結超漲資產並逢低買進鎖定報酬。"
+        },
+        {
+          "en": "Financial planners recommend clients rebalance their investment portfolios at least once every calendar year.",
+          "zh": "資深財務規劃師強烈建議每位投資大眾，每逢年終至少應主動檢視並執行一次資產組合動態再平衡。"
+        },
+        {
+          "en": "If equity values surge during a bull run, selling stocks to buy undervalued assets will rebalance your portfolio safely.",
+          "zh": "當股市迎來波瀾壯闊的大牛市暴漲時，適時賣出獲利豐厚的股票部位並轉進被低估的防禦資產，能安全完成再平衡。"
+        }
+      ],
+      "collocations": [
+        "portfolio rebalance"
+      ]
+    },
+    {
+      "id": 4619,
+      "word": "remittance",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋmɪtns]",
+      "definition": "跨境小額國際匯款；匯款",
+      "cefr": "B1",
+      "topic": "跨境金融",
+      "examples": [
+        {
+          "en": "Low-cost digital remittance apps reduce transfer fees for migrant workers sending funds home to families.",
+          "zh": "費用低廉透明的數位跨境匯款 App，讓在台辛勤打拼的外籍移工能以最省的手續費將薪資秒匯回故鄉老家。"
+        },
+        {
+          "en": "Blockchain-based remittance networks complete international cross-border transfers within thirty seconds.",
+          "zh": "奠基於去中心化分散式帳本技術的區塊鏈跨國清算網絡，能在三十秒內極速完成跨大洲國際資金匯款。"
+        },
+        {
+          "en": "The central bank tracks foreign currency remittance volumes to ensure balance of payments equilibrium.",
+          "zh": "國家中央銀行密切動態監控全台外幣跨境匯出匯入款總量，以維護新台幣匯率與國際收支帳的長遠平衡。"
+        }
+      ],
+      "collocations": [
+        "cross-border money remittance"
+      ]
+    },
+    {
+      "id": 4620,
+      "word": "inclusion",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋkluʒən]",
+      "definition": "普惠金融 (普及金融大眾)；包容",
+      "cefr": "B1",
+      "topic": "社會責任",
+      "examples": [
+        {
+          "en": "Financial inclusion ensures remote rural residents gain equal access to modern banking and credit tools.",
+          "zh": "積極落實「普惠金融」（Financial Inclusion）政策，能確保居住在偏遠山區長輩同等享有現代金融服務。"
+        },
+        {
+          "en": "The company celebrated diversity and inclusion initiatives during annual community appreciation workshops.",
+          "zh": "該跨國企業在年度同仁感謝工作坊中，盛大表彰內部多元文化共融與性別平權倡議的卓越成果。"
+        },
+        {
+          "en": "Expanding mobile money infrastructure across unbanked villages is a proven catalyst for global financial inclusion.",
+          "zh": "在沒有實體銀行的偏鄉部落全面普及手機電子錢包等金融基礎建設，是落實全球普惠金融的最強催化劑。"
+        }
+      ],
+      "collocations": [
+        "financial inclusion policy"
+      ]
+    },
+    {
+      "id": 4621,
+      "word": "laundering",
+      "pos": "n. [U]",
+      "phonetic": "[ˋlɔndərɪŋ]",
+      "definition": "防制洗錢機制 (AML)；清洗",
+      "cefr": "B1",
+      "topic": "金融防弊",
+      "examples": [
+        {
+          "en": "Financial institutions enforce strict Anti-Money Laundering (AML) monitoring to intercept illicit drug money.",
+          "zh": "全台金融機構嚴格落實「洗錢防制」（Anti-Money Laundering）監控，全力在金流源頭攔截非法毒品不法所得。"
+        },
+        {
+          "en": "International watchdogs impose punitive economic sanctions on jurisdictions failing to combat money laundering.",
+          "zh": "國際防制洗錢金融行動工作組織（FATF）會對放任洗錢黑金氾濫的國家列入灰名單，並祭出嚴厲金融制裁。"
+        },
+        {
+          "en": "Casino operators must report suspicious high-roller cash chips to prevent illegal laundering of criminal proceeds.",
+          "zh": "國際賭場業者依法必須向執法機關通報所有異常巨額豪賭籌碼流動，嚴防不肖分子利用洗碼進行黑金洗錢。"
+        }
+      ],
+      "collocations": [
+        "Anti-Money Laundering (AML)"
+      ]
+    },
+    {
+      "id": 4622,
+      "word": "compliance",
+      "pos": "n. [U]",
+      "phonetic": "[kəmˋplaɪəns]",
+      "definition": "法令遵循審查 (法遵)；順從",
+      "cefr": "B1",
+      "topic": "法律監管",
+      "examples": [
+        {
+          "en": "Every licensed fintech startup hires certified compliance officers to adhere to national banking laws.",
+          "zh": "每一家獲准營運的金融科技新創皆聘請專業法遵專員，以嚴格確保各項創新商業模式全然合法合規。"
+        },
+        {
+          "en": "The auditor reviewed internal software logs to verify full compliance with European GDPR privacy rules.",
+          "zh": "外部資安稽核專家逐一調閱內部系統連線日誌，嚴格審查公司是否全然符合歐盟 GDPR 嚴格的個資隱私規範。"
+        },
+        {
+          "en": "Failure to demonstrate environmental regulatory compliance can lead to hefty corporate environmental fines.",
+          "zh": "若企業在生產製造過程中無法出具符合國家環保法規的合規排放證明，將面臨勒令停工與巨額環保裁罰。"
+        }
+      ],
+      "collocations": [
+        "regulatory compliance"
+      ]
+    },
+    {
+      "id": 4623,
+      "word": "suspicious",
+      "pos": "adj.",
+      "phonetic": "[səˋspɪʃəs]",
+      "definition": "可疑異常交易申報的；懷疑的",
+      "cefr": "B1",
+      "topic": "防詐風控",
+      "examples": [
+        {
+          "en": "Banks are legally required to file suspicious transaction reports (STR) for sudden massive cash deposits.",
+          "zh": "當靜止帳戶突然湧入數百萬元不明大額現金頻繁存提時，銀行行員依法必須即刻向上申報可疑交易報告（STR）。"
+        },
+        {
+          "en": "The fraud monitoring system flagged a series of suspicious card authorizations attempted at 3 AM.",
+          "zh": "銀行 AI 智慧風控引擎在凌晨三點鐘，連續攔截並標註了多筆來自海外未知 IP 的可疑高額刷卡授權。"
+        },
+        {
+          "en": "If an email asking for banking passwords looks suspicious, report it immediately to the cybersecurity team.",
+          "zh": "一旦收到任何索取網銀登入帳密、語氣可疑怪異的電子郵件，請立即向公司資安主管回報以防釣魚詐騙。"
+        }
+      ],
+      "collocations": [
+        "suspicious transaction report (STR)"
+      ]
+    },
+    {
+      "id": 4624,
+      "word": "screening",
+      "pos": "n. [U]",
+      "phonetic": "[ˋskrinɪŋ]",
+      "definition": "國際制裁名單過濾篩查；篩選",
+      "cefr": "B1",
+      "topic": "風險控管",
+      "examples": [
+        {
+          "en": "Automated sanctions screening prevents sanctioned entities from moving illicit assets through global payment rails.",
+          "zh": "銀行後台自動化即時制裁黑名單篩查系統，能即刻攔截國際受制裁恐怖組織企圖透過跨境清算轉移資產。"
+        },
+        {
+          "en": "The medical clinic offers free annual mammogram screening to promote early cancer detection.",
+          "zh": "社區婦幼聯合診所提供定期的免費乳房 X 光攝影篩檢，鼓勵女性落實早期發現早期治療的健康守則。"
+        },
+        {
+          "en": "Routine background screening ensures security guards placed at data centers have clean criminal records.",
+          "zh": "嚴謹的定期從業人員信用與良民證背景篩查，確保派駐在雲端數據機房的特勤保全人員具備無前科的良民紀錄。"
+        }
+      ],
+      "collocations": [
+        "sanctions and PEP screening"
+      ]
+    },
+    {
+      "id": 4625,
+      "word": "anomaly",
+      "pos": "n.",
+      "phonetic": "[əˋnɑməlɪ]",
+      "definition": "異常消費交易偵測；不規則反常",
+      "cefr": "B1",
+      "topic": "AI 防詐",
+      "examples": [
+        {
+          "en": "Machine-learning fraud engines flag transaction anomalies when your card is used on another continent.",
+          "zh": "當你的信用卡前一分鐘在台北刷超商、後一分鐘突然出現在東歐網站大額刷卡，AI 風控會瞬間攔截此交易異常。"
+        },
+        {
+          "en": "The weather sensor recorded a thermal anomaly showing ocean temperatures five degrees above average.",
+          "zh": "沿海海洋生態監測感測器記錄到了一次罕見的水溫反常異常，顯示局部表層海溫竟比歷年平均值暴增五度。"
+        },
+        {
+          "en": "Investigating this sudden network traffic anomaly uncovered an attempted distributed denial-of-service attack.",
+          "zh": "資安工程師火速徹查這波突如其來的伺服器網路流量異常暴增，成功瓦解了一場分散式阻斷服務（DDoS）攻擊。"
+        }
+      ],
+      "collocations": [
+        "transaction anomaly detection"
+      ]
+    },
+    {
+      "id": 4626,
+      "word": "mule",
+      "pos": "n.",
+      "phonetic": "[mjul]",
+      "definition": "人頭帳戶洗錢人頭 (Money Mule)；騾子",
+      "cefr": "B1",
+      "topic": "打擊犯罪",
+      "examples": [
+        {
+          "en": "Police crack down on criminal syndicates recruiting young students as illegal money mule accounts.",
+          "zh": "警政署刑事警察局全力掃蕩詐騙集團，嚴防心智未成熟的青少年受金錢誘惑出借銀行帳戶淪為人頭帳戶。"
+        },
+        {
+          "en": "Desperate job seekers must be warned against accepting positions that involve acting as a courier mule.",
+          "zh": "正在急尋打工兼職的新鮮人務必提高警覺，切勿被「在家輕鬆轉帳抽成」的話術誘騙而淪為詐騙集團的洗錢車手。"
+        },
+        {
+          "en": "Law enforcement agencies freeze suspected mule accounts to disrupt the operational cashflow of fraud rings.",
+          "zh": "司法檢調單位在查明案情後第一時間依法全面凍結可疑涉案人頭帳戶，直接斬斷跨國詐欺集團的不法資金鍊。"
+        }
+      ],
+      "collocations": [
+        "money mule account"
+      ]
+    },
+    {
+      "id": 4627,
+      "word": "freeze",
+      "pos": "v., n.",
+      "phonetic": "[friz]",
+      "definition": "圈存凍結受害款項；結冰",
+      "cefr": "B1",
+      "topic": "反詐攔截",
+      "examples": [
+        {
+          "en": "Banks freeze suspicious scam accounts within minutes of receiving emergency 165 anti-fraud police alerts.",
+          "zh": "銀行防詐中心在接獲內政部 165 反詐騙專線通報後的黃金數分鐘內，火速圈存並凍結詐騙人頭帳戶款項。"
+        },
+        {
+          "en": "Sub-zero temperatures caused outdoor water pipes to freeze and burst across the mountain village.",
+          "zh": "寒流來襲導致高山偏遠聚落室外裸露的水管全面結冰凍裂，造成全村居民在清晨一度面臨無水可用的窘境。"
+        },
+        {
+          "en": "Cardholders can temporarily freeze their lost credit cards via the smartphone app to prevent unauthorized swipes.",
+          "zh": "遺失皮夾的持卡人可第一時間在手機銀行 App 內開啟「一鍵暫時鎖卡凍結」功能，徹底防堵任何盜刷可能。"
+        }
+      ],
+      "collocations": [
+        "freeze scam accounts"
+      ]
+    },
+    {
+      "id": 4628,
+      "word": "sandbox",
+      "pos": "n.",
+      "phonetic": "[ˋsændˌbɑks]",
+      "definition": "金管會金融科技創新監理沙盒",
+      "cefr": "B1",
+      "topic": "政策創新",
+      "examples": [
+        {
+          "en": "The regulatory sandbox lets fintech innovators test cutting-edge blockchain products in a safe environment.",
+          "zh": "金管會推行「金融科技監理沙盒」（Regulatory Sandbox）機制，讓新創團隊在受控環境中安心測試創新實驗。"
+        },
+        {
+          "en": "Children built towering castles and deep trenches inside the neighborhood playground sandbox.",
+          "zh": "社區公園兒童遊樂場的專屬大沙坑裡，小朋友們手拿塑膠小鏟子興高采烈堆砌起高聳的城堡與護城河。"
+        },
+        {
+          "en": "Software developers execute untrusted code snippets within an isolated virtual sandbox to safeguard the operating system.",
+          "zh": "資深軟體工程師將來源不明的可疑程式碼放入虛擬隔離沙盒環境中運行測試，嚴防惡意軟體侵害本機作業系統。"
+        }
+      ],
+      "collocations": [
+        "regulatory FinTech sandbox"
+      ]
+    },
+    {
+      "id": 4629,
+      "word": "invoice",
+      "pos": "n.",
+      "phonetic": "[ˋɪnvɔɪs]",
+      "definition": "雲端電子發票載具；發票明細",
+      "cefr": "B1",
+      "topic": "台灣生活",
+      "examples": [
+        {
+          "en": "Scanning your mobile barcode stores paperless electronic uniform invoices directly into the cloud.",
+          "zh": "在超商結帳時主動出示手機條碼載具嗶一下，即可將無紙化統一發票安全歸戶雲端並享有專屬雲端對獎。"
+        },
+        {
+          "en": "The accounting clerk attached all purchase order receipts to the verified vendor invoice before payment.",
+          "zh": "財務會計人員在正式安排匯款放款前，將詳細的採購請購單與出貨單據嚴格裝訂於經核准的廠商請款發票之後。"
+        },
+        {
+          "en": "Millions of dollars in prize money are distributed bi-monthly to lucky citizens holding winning digital invoices.",
+          "zh": "財政部每兩個月固定開出統一發票中獎千萬特別獎號碼，為妥善將發票存在雲端載具的幸運國人送上大紅包。"
+        }
+      ],
+      "collocations": [
+        "uniform electronic invoice (載具)"
+      ]
+    },
+    {
+      "id": 4630,
+      "word": "cashback",
+      "pos": "n. [U]",
+      "phonetic": "[ˋkæʃˌbæk]",
+      "definition": "信用卡行動支付現金回饋",
+      "cefr": "B1",
+      "topic": "消費優惠",
+      "examples": [
+        {
+          "en": "Digital banking debit cards offer 3% unlimited cashback on dining and public transportation fares.",
+          "zh": "申辦這張超人氣純網銀簽帳金融卡，享有全台大眾運輸通勤與各類美食外送高達百分之三無上限現金回饋。"
+        },
+        {
+          "en": "The credit card issuer deposited monthly cashback savings directly into her investment savings account.",
+          "zh": "發卡銀行於每月結帳日次日，將累積的現金回饋金額一毛不少直接抵扣帳單或存入持卡人的高利活存帳戶。"
+        },
+        {
+          "en": "Savvy shoppers utilize cash-back rebate portals to earn an extra 5% return on holiday online purchases.",
+          "zh": "精打細算的網購達人習慣透過現金回饋導購網站下單，在全館特惠之餘額外賺取百分之五的真金白銀返現。"
+        }
+      ],
+      "collocations": [
+        "unlimited cashback"
+      ]
+    },
+    {
+      "id": 4631,
+      "word": "redemption",
+      "pos": "n. [U]",
+      "phonetic": "[rɪˋdɛmpʃən]",
+      "definition": "信用卡消費點數折抵；贖回",
+      "cefr": "B1",
+      "topic": "點數經濟",
+      "examples": [
+        {
+          "en": "Instant points redemption allows shoppers to deduct accumulated bonus points directly at the register.",
+          "zh": "透過行動支付結帳時開啟「點數即時折抵」（Redemption）功能，每一點皆可直接折抵一元現金。"
+        },
+        {
+          "en": "Bondholders received full principal repayment upon the scheduled maturity redemption date.",
+          "zh": "該公用事業公司發行的公司債券於今日正式期滿到期，全體債權投資人全額領回本金完成債券到期贖回。"
+        },
+        {
+          "en": "The novel explored themes of forgiveness, personal sacrifice, and ultimate spiritual redemption.",
+          "zh": "這部扣人心弦的經典文學巨著深入剖析了人性中的救贖、自我犧牲與經歷生命苦難後的靈性重生。"
+        }
+      ],
+      "collocations": [
+        "points redemption"
+      ]
+    },
+    {
+      "id": 4632,
+      "word": "merchant",
+      "pos": "n.",
+      "phonetic": "[ˋmɝtʃənt]",
+      "definition": "特約收單合作店家；商人",
+      "cefr": "B1",
+      "topic": "收單通路",
+      "examples": [
+        {
+          "en": "Small street vendors generate their own merchant QR codes to accept payments without expensive card readers.",
+          "zh": "傳統市場小菜攤也能透過手機快速生成專屬特約店家收款 QR 碼，免裝昂貴刷卡機即可無痛支援無現金收款。"
+        },
+        {
+          "en": "The e-commerce gateway charges merchant transaction fees ranging from 1.5% to 2.8% per swipe.",
+          "zh": "跨國線上金流閘道服務商針對特約商店每筆刷卡交易，酌收介於百分之一點五至二點八的手續費。"
+        },
+        {
+          "en": "Historic port towns historically flourished due to wealthy maritime trade merchants establishing guilds.",
+          "zh": "昔日鹿港與大稻埕等歷史商港的極盛風華，正是源自於富甲一方的兩岸貿易郊商商行在此設立公會。"
+        }
+      ],
+      "collocations": [
+        "QR code merchant"
+      ]
+    },
+    {
+      "id": 4633,
+      "word": "terminal",
+      "pos": "n.",
+      "phonetic": "[ˋtɝmən!]",
+      "definition": "智慧收銀刷卡機 (POS 機)；終端機",
+      "cefr": "B1",
+      "topic": "收款機具",
+      "examples": [
+        {
+          "en": "The modern all-in-one wireless POS terminal accepts chips, contactless Apple Pay, and barcode scans.",
+          "zh": "這台多合一無線智慧 POS 刷卡收銀終端機，同時支援實體晶片插卡、感應式 Apple Pay 與掃碼條碼支付。"
+        },
+        {
+          "en": "Passengers queued at the newly inaugurated airport departure terminal to check in their luggage.",
+          "zh": "準備出國度假的旅客們在全新啟用的第三航廈報到大廳前排起長龍，依序辦理登機手續並交運行李。"
+        },
+        {
+          "en": "System administrators execute configuration bash commands using the encrypted Linux command terminal.",
+          "zh": "系統資深維運工程師透過 SSH 加密連線進入 Linux 指令終端機視窗，快速執行伺服器安全補丁更新。"
+        }
+      ],
+      "collocations": [
+        "smart POS terminal"
+      ]
+    },
+    {
+      "id": 4634,
+      "word": "yield",
+      "pos": "n. [U], v.",
+      "phonetic": "[jild]",
+      "definition": "數位活期儲蓄年利率；產出",
+      "cefr": "B1",
+      "topic": "存錢理財",
+      "examples": [
+        {
+          "en": "The digital account offers an attractive 3.2% annual high-yield savings rate on balances up to $100,000.",
+          "zh": "該數位帳戶針對新戶十萬元存款額度以內，祭出高達年利率百分之三點二的超誘人高利活存優惠。"
+        },
+        {
+          "en": "Farmers celebrated an abundant corn yield following optimal rainfall and mild sunny weather.",
+          "zh": "受惠於風調雨順的充沛降雨與和煦陽光，在地農民歡天喜地迎來了產量創下歷年新高的甜玉米大豐收。"
+        },
+        {
+          "en": "When driving toward a busy traffic circle, motorists must yield right of way to circulating vehicles.",
+          "zh": "當駕車駛近車流繁忙的圓環路口時，駕駛人必須減速讓行，禮讓圓環內行駛中的車輛先行通過。"
+        }
+      ],
+      "collocations": [
+        "high-yield savings account"
+      ]
+    },
+    {
+      "id": 4635,
+      "word": "compounding",
+      "pos": "n. [U]",
+      "phonetic": "[kəmˋpaʊndɪŋ]",
+      "definition": "複利增值效應；複合",
+      "cefr": "B1",
+      "topic": "財富積累",
+      "examples": [
+        {
+          "en": "Daily compounding interest allows modest monthly savings to multiply into substantial nest eggs over decades.",
+          "zh": "善用每日計息按月滾入本金的「複利增值效應」（Compounding），小額儲蓄在數十年後也能滾成可觀退休金。"
+        },
+        {
+          "en": "Einstein famously described mathematical compounding as the eighth wonder of the economic world.",
+          "zh": "愛因斯坦曾讚譽數學與金融世界中的複利累積力量，是人類文明進步史上無可取代的「世界第八大奇蹟」。"
+        },
+        {
+          "en": "In pharmacology, compounding involves tailoring individualized medications for patients with unique allergies.",
+          "zh": "在現代藥劑學中，調劑（Compounding）是指藥師根據特殊過敏患者的體質需求，純手工調配客製化藥劑。"
+        }
+      ],
+      "collocations": [
+        "compound interest effect"
+      ]
+    },
+    {
+      "id": 4636,
+      "word": "accrual",
+      "pos": "n. [U]",
+      "phonetic": "[əˋkruəl]",
+      "definition": "利息每日自然累計滾存；應計",
+      "cefr": "B1",
+      "topic": "計息機制",
+      "examples": [
+        {
+          "en": "Daily interest accrual deposits cash earnings into your digital wallet at midnight every single night.",
+          "zh": "具備「每日計息」（Daily Interest Accrual）機能的創新活存帳戶，每晚午夜自動將當日利息結算入帳。"
+        },
+        {
+          "en": "Accountants use the accrual basis to record expenses in the exact period when services are rendered.",
+          "zh": "專業會計師嚴格採用權責發生制（Accrual Basis），在服務發生的同一當期精確登錄相對應的費用支出。"
+        },
+        {
+          "en": "The automated system tracks personal sick leave accrual across all full-time corporate staff members.",
+          "zh": "企業人資系統自動精確累計每一位全職員工依法隨年資按月增加的有薪病假與特休累積天數。"
+        }
+      ],
+      "collocations": [
+        "daily interest accrual"
+      ]
+    },
+    {
+      "id": 4637,
+      "word": "sub-account",
+      "pos": "n.",
+      "phonetic": "[ˋsʌb əˌkaʊnt]",
+      "definition": "夢想存錢專用子帳戶",
+      "cefr": "B1",
+      "topic": "儲蓄技巧",
+      "examples": [
+        {
+          "en": "Setting up automated sub-accounts for travel, emergency funds, and tax payments organizes your budget effortlessly.",
+          "zh": "在手機網銀內一鍵開立旅遊基金、緊急預備金與繳稅專用多個子帳戶（Sub-accounts），讓財務預算井井有條。"
+        },
+        {
+          "en": "Users can create a dedicated pet medical sub-account and set automated monthly deposits into it.",
+          "zh": "飼主能在 App 內獨立建立專屬的「毛孩醫療急難備金」專款專用子帳戶，每逢發薪日自動撥款存入。"
+        },
+        {
+          "en": "Parents set up a monitored savings sub-account to teach their teenagers disciplined pocket money habits.",
+          "zh": "父母親為孩子在家庭帳戶下開立具備消費限額監控的儲蓄子帳戶，從小培養青少年理性記帳的自律金錢觀。"
+        }
+      ],
+      "collocations": [
+        "savings sub-account"
+      ]
+    },
+    {
+      "id": 4638,
+      "word": "deduction",
+      "pos": "n.",
+      "phonetic": "[dɪˋdʌkʃən]",
+      "definition": "自動定額代扣繳帳單；扣除額",
+      "cefr": "B1",
+      "topic": "生活繳費",
+      "examples": [
+        {
+          "en": "Enabling auto-pay direct debit deductions ensures electricity, water, and telecom bills are never missed.",
+          "zh": "在 App 內一鍵設定公用事業瓦斯、水電費與手機電信費自動代扣繳（Auto-pay），告別逾期罰款煩惱。"
+        },
+        {
+          "en": "Taxpayers claim medical expense and charitable donation deductions to reduce their total income tax liability.",
+          "zh": "納稅義務人在每年五月申報綜合所得稅時，依法列舉醫藥生育費與合法慈善捐款扣除額以合法節稅。"
+        },
+        {
+          "en": "Through logical deduction from forensic clues, the detective identified the real culprit behind the burglary.",
+          "zh": "透過刑案現場遺留的微物跡證展開嚴謹的邏輯演繹推論（Deduction），偵查刑警一舉鎖定了竊案真兇。"
+        }
+      ],
+      "collocations": [
+        "automatic bill deduction"
+      ]
+    },
+    {
+      "id": 4639,
+      "word": "transparency",
+      "pos": "n. [U]",
+      "phonetic": "[trænsˋpɛrənsɪ]",
+      "definition": "收費費用全然透明公開；透明度",
+      "cefr": "B1",
+      "topic": "誠信原則",
+      "examples": [
+        {
+          "en": "Consumers value fintech platforms that maintain 100% fee transparency without hidden maintenance charges.",
+          "zh": "現代聰明消費者最熱愛收費全然透明公開、絕不巧立名目收取各類隱藏手續費的誠實金融科技平台。"
+        },
+        {
+          "en": "The clear acrylic case showcases the transparent internal mechanical gearwork of the luxury watch.",
+          "zh": "晶瑩剔透的高透度藍寶石水晶透明底蓋，將這只頂級機械腕表內部運轉的精密齒輪陀飛輪展露無遺。"
+        },
+        {
+          "en": "Government procurement portals enforce bidding transparency to eliminate public corruption risks.",
+          "zh": "政府公部門全面落實政府電子採購網的開標透明化制度，以徹底杜絕黑箱作業與公共工程貪腐弊端。"
+        }
+      ],
+      "collocations": [
+        "100% fee transparency"
+      ]
+    },
+    {
+      "id": 4640,
+      "word": "interface",
+      "pos": "n.",
+      "phonetic": "[ˋɪntɚˌfes]",
+      "definition": "手機操作軟體介面 (UI)；介面",
+      "cefr": "B1",
+      "topic": "使用者體驗",
+      "examples": [
+        {
+          "en": "A minimalist, uncluttered user interface makes managing stock investments intuitive and stress-free.",
+          "zh": "乾淨清爽、視覺無負擔的極簡手機 App 操作介面，讓查看即時股市行情與買賣下單變得無比直覺輕鬆。"
+        },
+        {
+          "en": "The software engineer built an API interface connecting internal databases with third-party payment gateways.",
+          "zh": "資深軟體工程師搭建起高強度的 API 連接介面，無縫串聯內部會員核心資料庫與國際第三方金流閘道。"
+        },
+        {
+          "en": "Oil and water form a distinct boundary interface because the two liquids do not mix together.",
+          "zh": "在化學物理實驗中，純水與沙拉油在燒杯中會形成清晰可辨的接觸交界面，因為兩者互不相溶。"
+        }
+      ],
+      "collocations": [
+        "intuitive user interface (UI)"
+      ]
+    },
+    {
+      "id": 4641,
+      "word": "intuitive",
+      "pos": "adj.",
+      "phonetic": "[ɪnˋtjuɪtɪv]",
+      "definition": "直覺好懂的；無需學習的",
+      "cefr": "B1",
+      "topic": "體驗設計",
+      "examples": [
+        {
+          "en": "The mobile banking app boasts an intuitive navigation flow designed for seniors and first-time users.",
+          "zh": "這款銀行 App 擁有無比直覺友善的操作動線與超大字體模式，就連初次使用智慧手機的銀髮長輩也能秒上手。"
+        },
+        {
+          "en": "Experienced drivers possess an intuitive sense of vehicle dimensions when parallel parking in tight spaces.",
+          "zh": "身經百戰的老司機在路邊狹窄車格側位停車時，對車身長寬距離具備與生俱來的直覺性空間感。"
+        },
+        {
+          "en": "An intuitive touch screen dashboard lets operators adjust warehouse conveyor speeds with a flick of a finger.",
+          "zh": "符合直覺操作思維的觸控儀表板，讓工廠作業員只需手指輕輕一滑即可瞬間調控全線輸送帶轉速。"
+        }
+      ],
+      "collocations": [
+        "intuitive app navigation"
+      ]
+    },
+    {
+      "id": 4642,
+      "word": "cashless",
+      "pos": "adj.",
+      "phonetic": "[ˋkæʃlɪs]",
+      "definition": "無現金智慧支付的",
+      "cefr": "B1",
+      "topic": "智慧生活",
+      "examples": [
+        {
+          "en": "Taipei is rapidly transitioning into a cashless society where night markets and taxis accept QR payments.",
+          "zh": "台北都會區正全力加速轉型為無現金智慧城市，從夜市銅板小吃到計程車行車資皆能隨手掃碼付款。"
+        },
+        {
+          "en": "Traveling through modern airports has become entirely cashless thanks to digital boarding passes and contactless apps.",
+          "zh": "拜智慧型手機電子登機證與各類感應支付所賜，國際商務旅客穿梭全球各大機場已完全實現免帶現金。"
+        },
+        {
+          "en": "The festival organizer mandated a 100% cashless environment using smart RFID wristbands for drinks and snacks.",
+          "zh": "音樂祭主辦單位明令全區推行百分之百無現金智慧消費，樂迷只需透過儲值 RFID 智慧手環即可暢飲狂歡。"
+        }
+      ],
+      "collocations": [
+        "cashless society"
+      ]
+    },
+    {
+      "id": 4643,
+      "word": "ecosystem",
+      "pos": "n.",
+      "phonetic": "[ˋɛko͵sɪstəm]",
+      "definition": "行動支付生態圈；生態系統",
+      "cefr": "B1",
+      "topic": "商業整合",
+      "examples": [
+        {
+          "en": "Super-apps combine ride-hailing, food delivery, and digital payments into a massive consumer ecosystem.",
+          "zh": "現代生活超級 App（Super-App）將線上叫車、外送叫餐、電子支付與點數折抵深度整合為龐大生態圈。"
+        },
+        {
+          "en": "Protecting coastal mangrove swamps preserves a delicate marine ecosystem that shelters thousands of species.",
+          "zh": "悉心保護沿海河口紅樹林濕地，正是為了守護庇護成千上萬珍稀動植物生靈的脆弱濱海生態系統。"
+        },
+        {
+          "en": "Tech conglomerates build closed-loop software ecosystems that encourage loyalty across their laptops, phones, and watches.",
+          "zh": "全球科技巨頭打造出軟硬體高度緊密無縫聯動的閉環生態圈，讓用戶在筆電、手機與手錶間享有絕佳黏著度。"
+        }
+      ],
+      "collocations": [
+        "digital payment ecosystem"
+      ]
+    },
+    {
+      "id": 4644,
+      "word": "empowerment",
+      "pos": "n. [U]",
+      "phonetic": "[ɪmˋpaʊɚmənt]",
+      "definition": "個人財務自主掌控賦能；賦權",
+      "cefr": "B1",
+      "topic": "財務自由",
+      "examples": [
+        {
+          "en": "Smart automated budgeting tools foster true financial empowerment and long-term financial security.",
+          "zh": "善用手機內建的智慧記帳與自動儲蓄工具，能幫助年輕世代實現掌握個人財富自主權的實質賦能。"
+        },
+        {
+          "en": "Microfinance lending programs in rural villages provide economic empowerment to thousands of independent women.",
+          "zh": "深入偏鄉落實的微型農民信貸專案，為成千上萬名農村婦女開創了經濟獨立自主的實質賦權。"
+        },
+        {
+          "en": "The company culture encourages employee empowerment, allowing frontline workers to resolve client complaints immediately.",
+          "zh": "該卓越企業大力推行充分信任員工的充權授權文化，讓第一線客服同仁擁有在當下免請示直接解決客戶抱怨的權限。"
+        }
+      ],
+      "collocations": [
+        "financial empowerment"
+      ]
+    },
+    {
+      "id": 4645,
+      "word": "budgeting",
+      "pos": "n. [U]",
+      "phonetic": "[ˋbʌdʒɪtɪŋ]",
+      "definition": "個人財務記帳預算編列",
+      "cefr": "B1",
+      "topic": "財務健康",
+      "examples": [
+        {
+          "en": "Automated expense categorization simplifies monthly personal budgeting, revealing hidden subscription costs.",
+          "zh": "透過發票載具自動消費分類記帳功能，能輕鬆檢視每月收支並抓出平時沒注意到的訂閱制隱形開銷。"
+        },
+        {
+          "en": "The corporate finance committee spent three days finalizing the corporate annual marketing budgeting.",
+          "zh": "企業財務審查委員會連續召開了長達三天的閉門會議，審慎敲定下一年度全集團各事業群的行銷預算編列。"
+        },
+        {
+          "en": "Adopting the 50/30/20 budgeting rule allocates half your salary to essentials and a fifth to savings.",
+          "zh": "實踐經典的五三二預算分配法則，將每月實領薪資的一半用於生活剛需，百分之二十則強制存入長期投資。"
+        }
+      ],
+      "collocations": [
+        "smart monthly budgeting"
+      ]
+    },
+    {
+      "id": 4646,
+      "word": "encryption",
+      "pos": "n. [U]",
+      "phonetic": "[ɪnˋkrɪpʃən]",
+      "definition": "銀行級高規格資料加密",
+      "cefr": "B1",
+      "topic": "資訊安全",
+      "examples": [
+        {
+          "en": "End-to-end 256-bit AES data encryption safeguards confidential banking passwords and card tokens.",
+          "zh": "採用銀行最高規格的 AES 256 位元端對端高強度資料加密技術，能滴水不漏守護用戶帳密與代碼化憑證。"
+        },
+        {
+          "en": "Modern messaging apps employ public-key encryption so only the intended recipient can read the chat.",
+          "zh": "當代私密通訊軟體採用非對稱非對稱公私鑰加密演算，確保只有通話對象雙方的裝置能夠解密閱讀訊息。"
+        },
+        {
+          "en": "If an employee loses a company laptop, whole-disk hardware encryption blocks unauthorized access to client files.",
+          "zh": "即便員工在出差途中不慎遺失公司商務筆電，全硬碟硬體加密技術亦能嚴密阻絕不肖人士竊取客戶機密。"
+        }
+      ],
+      "collocations": [
+        "bank-grade encryption"
+      ]
+    },
+    {
+      "id": 4647,
+      "word": "tokenization",
+      "pos": "n. [U]",
+      "phonetic": "[͵tokənəˋzeʃən]",
+      "definition": "信用卡代碼化安全技術 (Token)",
+      "cefr": "B1",
+      "topic": "交易安全",
+      "examples": [
+        {
+          "en": "Apple Pay replaces actual credit card numbers with randomized device tokenization to prevent data theft.",
+          "zh": "Apple Pay 在感應刷卡時會以隨機生成的加密代碼取代真實信用卡卡號，從源頭徹底杜絕卡號遭側錄盜刷。"
+        },
+        {
+          "en": "Asset tokenization divides a billion-dollar commercial skyscraper into digital cryptographic units on blockchain rails.",
+          "zh": "不動產資產代幣化技術將市值數十億的甲級商辦大樓產權數位化，並上鏈拆解為微型區塊鏈持分份額。"
+        },
+        {
+          "en": "Because merchant databases store only tokens rather than primary card numbers, security breach damage is neutralized.",
+          "zh": "由於電商特約商店伺服器資料庫中僅儲存無意義的代碼憑證（Token），即便遭遇資料外洩也不會洩漏真實卡號。"
+        }
+      ],
+      "collocations": [
+        "credit card tokenization"
+      ]
+    },
+    {
+      "id": 4648,
+      "word": "biometric",
+      "pos": "adj.",
+      "phonetic": "[͵baɪoˋmɛtrɪk]",
+      "definition": "指紋與人臉等生物特徵的",
+      "cefr": "B1",
+      "topic": "身分識別",
+      "examples": [
+        {
+          "en": "Touch ID fingerprint biometric sensors unlock financial apps in a fraction of a second.",
+          "zh": "輕觸指紋辨識感測器（Touch ID），不到零點一秒即可安全解鎖並秒速登入個人網路銀行。"
+        },
+        {
+          "en": "Law enforcement agencies cross-reference biometric facial imaging to identify suspects captured on street cameras.",
+          "zh": "刑事司法偵查機關透過高解析度生物特徵人臉比對演算技術，在海量路口監視器中秒速比對查明嫌疑犯。"
+        },
+        {
+          "en": "High-security data centers require both biometric palm-vein scans and badge credentials for server room entry.",
+          "zh": "國家最高安全等級的雲端超算中心，規定工程師進入核心機房必須同時通過手掌靜脈生物辨識與實體門禁卡。"
+        }
+      ],
+      "collocations": [
+        "biometric fingerprint sensor"
+      ]
+    },
+    {
+      "id": 4649,
+      "word": "seamless",
+      "pos": "adj.",
+      "phonetic": "[ˋsimlɪs]",
+      "definition": "無縫接軌順暢無比的",
+      "cefr": "B1",
+      "topic": "流程體驗",
+      "examples": [
+        {
+          "en": "One-click checkout delivers a seamless, friction-free purchasing experience across all e-commerce sites.",
+          "zh": "一鍵快速授權結帳功能，為各大網購平台消費者帶來毫無卡頓、極致流暢的無縫接軌購物體驗。"
+        },
+        {
+          "en": "The transitions between live presentations and streaming videos were seamless throughout the hybrid conference.",
+          "zh": "在這場線上線下虛實整合的國際年會中，現場實體簡報與遠端高畫質視訊連線之間的切換天衣無縫、流暢無比。"
+        },
+        {
+          "en": "Seamless integration between the payroll software and tax authorities eliminated manual monthly filing chores.",
+          "zh": "企業人資薪酬發放系統與國稅局申報系統之間的無縫資料介接，徹底免除了會計同仁每月手工申報的繁複雜務。"
+        }
+      ],
+      "collocations": [
+        "seamless payment experience"
+      ]
+    },
+    {
+      "id": 4650,
+      "word": "autonomy",
+      "pos": "n. [U]",
+      "phonetic": "[ɔˋtɑnəmɪ]",
+      "definition": "財務掌控自主獨立權；自治權",
+      "cefr": "B1",
+      "topic": "人生意義",
+      "examples": [
+        {
+          "en": "Achieving financial autonomy frees individuals to pursue creative passions without monetary anxiety.",
+          "zh": "達成財務自主與被動收入獨立（Financial Autonomy），能讓每個人無後顧之憂地全心追尋內心真正熱愛的夢想。"
+        },
+        {
+          "en": "Decentralized software teams enjoy high levels of project autonomy, allowing members to innovate freely.",
+          "zh": "跨國遠距軟體開發小組享有極高度的專案執行自主權，讓每位工程師皆能在不受過度干預下自由揮灑創新創意。"
+        },
+        {
+          "en": "The remote territory fought for decades to achieve political autonomy and self-governance.",
+          "zh": "這處偏遠島嶼地區的自治代表經過數十年和平抗爭與公民投票，終於爭取到了合憲的地方自治與決策權。"
+        }
+      ],
+      "collocations": [
+        "personal financial autonomy"
+      ]
+    }
+  ]
+}

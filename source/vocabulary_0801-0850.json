@@ -1,0 +1,1356 @@
+{
+  "title": "7,000 實用英語單字清單（CEFR A1–B1）",
+  "section": "第 801–850 個單字（CEFR A1 基礎入門）",
+  "batch": "0801-0850",
+  "range": "801–850",
+  "total_words": 50,
+  "words": [
+    {
+      "id": 801,
+      "word": "greet",
+      "pos": "v.",
+      "phonetic": "[grit]",
+      "definition": "問候；打招呼；迎接",
+      "cefr": "A1",
+      "topic": "社交與溝通",
+      "examples": [
+        {
+          "en": "The shop clerk greeted every customer with a smile.",
+          "zh": "店員面帶微笑向每一位顧客打招呼。"
+        },
+        {
+          "en": "Dogs wag their tails excitedly to greet their owners coming home.",
+          "zh": "狗狗興奮地搖尾巴迎接回家的主人。"
+        },
+        {
+          "en": "In many cultures, bowing is a traditional way to greet elders politely.",
+          "zh": "在許多文化中，鞠躬是向長輩禮貌致意的傳統方式。"
+        }
+      ],
+      "collocations": [
+        "greet someone with a smile"
+      ]
+    },
+    {
+      "id": 802,
+      "word": "smile",
+      "pos": "v., n.",
+      "phonetic": "[smaɪl]",
+      "definition": "微笑；笑容",
+      "cefr": "A1",
+      "topic": "情緒與表情",
+      "examples": [
+        {
+          "en": "A warm smile makes people feel welcome.",
+          "zh": "溫暖的微笑能讓人感到賓至如歸。"
+        },
+        {
+          "en": "She smiled cheerfully upon seeing the unexpected birthday bouquet.",
+          "zh": "看見意想不到的生日花束時，她開心地笑了。"
+        },
+        {
+          "en": "Keep smiling even when you encounter unexpected obstacles.",
+          "zh": "即使遇到意想不到的挫折，也要保持微笑與樂觀。"
+        }
+      ],
+      "collocations": [
+        "big smile",
+        "keep smiling"
+      ]
+    },
+    {
+      "id": 803,
+      "word": "laugh",
+      "pos": "v., n.",
+      "phonetic": "[læf]",
+      "definition": "大笑；笑聲",
+      "cefr": "A1",
+      "topic": "情緒與表達",
+      "examples": [
+        {
+          "en": "The hilarious sitcom made the entire class laugh.",
+          "zh": "這部搞笑情境喜劇逗得全班哄堂大笑。"
+        },
+        {
+          "en": "It feels wonderful to sit together and laugh with lifelong friends.",
+          "zh": "和相交一生的摯友圍坐在一起開懷大笑感覺無比美好。"
+        },
+        {
+          "en": "Laughter is often described as the best medicine for relieving daily stress.",
+          "zh": "笑聲常被譽為緩解日常壓力的最佳良藥。"
+        }
+      ],
+      "collocations": [
+        "laugh at",
+        "burst out laughing"
+      ]
+    },
+    {
+      "id": 804,
+      "word": "cry",
+      "pos": "v., n.",
+      "phonetic": "[kraɪ]",
+      "definition": "哭泣；喊叫；哭聲",
+      "cefr": "A1",
+      "topic": "情緒與表達",
+      "examples": [
+        {
+          "en": "The touching movie scene made her cry.",
+          "zh": "那個感人的電影場景讓她哭了。"
+        },
+        {
+          "en": "The lost little boy started to cry and called out for his mother.",
+          "zh": "迷路的小男孩開始哭泣，大聲呼喊著媽媽。"
+        },
+        {
+          "en": "A loud cry for help echoed through the quiet midnight street.",
+          "zh": "一聲響亮的呼救聲在寧靜的午夜街道上迴盪。"
+        }
+      ],
+      "collocations": [
+        "cry for help",
+        "stop crying"
+      ]
+    },
+    {
+      "id": 805,
+      "word": "shout",
+      "pos": "v., n.",
+      "phonetic": "[ʃaʊt]",
+      "definition": "喊叫；呼喊；大叫",
+      "cefr": "A1",
+      "topic": "聲音與動作",
+      "examples": [
+        {
+          "en": "Please don't shout in the library hallway.",
+          "zh": "請不要在圖書館走廊上大聲喊叫。"
+        },
+        {
+          "en": "Fans shouted with wild excitement when the winning goal was scored.",
+          "zh": "當打進致勝球的那一刻，球迷們欣喜若狂地高聲吶喊。"
+        },
+        {
+          "en": "He had to shout over the roar of the rushing waterfall to be heard.",
+          "zh": "他不得不蓋過奔騰瀑布的轟鳴聲大聲喊話才能讓別人聽見。"
+        }
+      ],
+      "collocations": [
+        "shout at",
+        "yell and shout"
+      ]
+    },
+    {
+      "id": 806,
+      "word": "whisper",
+      "pos": "v., n.",
+      "phonetic": "[ˋhwɪspɚ]",
+      "definition": "耳語；低聲說話",
+      "cefr": "A1",
+      "topic": "聲音與動作",
+      "examples": [
+        {
+          "en": "She whispered the answer softly into my ear.",
+          "zh": "她輕聲在我耳邊低語告訴我答案。"
+        },
+        {
+          "en": "The students whispered quietly in the back row during the quiet study hour.",
+          "zh": "自習課時學生們在後排輕聲低語說著悄悄話。"
+        },
+        {
+          "en": "The pine trees seemed to whisper in the gentle autumn evening breeze.",
+          "zh": "松樹彷彿在秋日傍晚的徐徐微風中輕聲絮語。"
+        }
+      ],
+      "collocations": [
+        "whisper in ear",
+        "speak in a whisper"
+      ]
+    },
+    {
+      "id": 807,
+      "word": "agree",
+      "pos": "v.",
+      "phonetic": "[əˋgri]",
+      "definition": "同意；贊同",
+      "cefr": "A1",
+      "topic": "意見與溝通",
+      "examples": [
+        {
+          "en": "I totally agree with your environmental proposal.",
+          "zh": "我完全贊同你的環保提議。"
+        },
+        {
+          "en": "After a fruitful discussion, both sides agreed to sign the cooperation agreement.",
+          "zh": "經過卓有成效的討論後，雙方同意簽署合作協議。"
+        },
+        {
+          "en": "We all agree that safety must always be our highest priority.",
+          "zh": "我們大家一致同意安全必須永遠是我們的最高原則。"
+        }
+      ],
+      "collocations": [
+        "agree with",
+        "agree to"
+      ]
+    },
+    {
+      "id": 808,
+      "word": "disagree",
+      "pos": "v.",
+      "phonetic": "[͵dɪsəˋgri]",
+      "definition": "不同意；反對",
+      "cefr": "A1",
+      "topic": "意見與溝通",
+      "examples": [
+        {
+          "en": "It is okay to disagree politely during discussions.",
+          "zh": "討論時抱持不同意見並禮貌表達是沒關係的。"
+        },
+        {
+          "en": "They often disagree on politics but remain very close friends.",
+          "zh": "他們在政治立場上經常意見相左，但依然是親密的好朋友。"
+        },
+        {
+          "en": "I respectfully disagree with the claim that technology replaces human empathy.",
+          "zh": "對於科技會取代人類同理心的說法，我抱持不同的見解。"
+        }
+      ],
+      "collocations": [
+        "disagree with"
+      ]
+    },
+    {
+      "id": 809,
+      "word": "promise",
+      "pos": "v., n.",
+      "phonetic": "[ˋprɑmɪs]",
+      "definition": "承諾；答應；前途",
+      "cefr": "A1",
+      "topic": "承諾與道德",
+      "examples": [
+        {
+          "en": "I promise to return your book by Friday.",
+          "zh": "我保證在週五前歸還你的書。"
+        },
+        {
+          "en": "A person of integrity always strives to keep every promise made.",
+          "zh": "一個有誠信的人總是努力恪守許下的每一項承諾。"
+        },
+        {
+          "en": "The talented young violinist shows great artistic promise for the future.",
+          "zh": "這位富有天賦的年輕小提琴家展現了光明遠大的藝術前程。"
+        }
+      ],
+      "collocations": [
+        "keep a promise",
+        "make a promise"
+      ]
+    },
+    {
+      "id": 810,
+      "word": "invite",
+      "pos": "v.",
+      "phonetic": "[ɪnˋvaɪt]",
+      "definition": "邀請；招致",
+      "cefr": "A1",
+      "topic": "社交與人際",
+      "examples": [
+        {
+          "en": "Ken invited all his classmates to his birthday party.",
+          "zh": "肯恩邀請了全班同學參加他的生日聚會。"
+        },
+        {
+          "en": "The school invited a renowned marine biologist to deliver a guest lecture.",
+          "zh": "學校邀請了一位著名的海洋生物學家前來進行專題演講。"
+        },
+        {
+          "en": "Leaving open food on kitchen counters invites troublesome ants and flies.",
+          "zh": "將食物裸露放在廚房流理台上會招引討厭的螞蟻與蒼蠅。"
+        }
+      ],
+      "collocations": [
+        "invite someone to"
+      ]
+    },
+    {
+      "id": 811,
+      "word": "invitation",
+      "pos": "n.",
+      "phonetic": "[͵ɪnvəˋteʃən]",
+      "definition": "邀請；請帖",
+      "cefr": "A1",
+      "topic": "社交與人際",
+      "examples": [
+        {
+          "en": "Thank you for the wedding invitation card!",
+          "zh": "感謝你的婚禮喜帖邀請函！"
+        },
+        {
+          "en": "She graciously accepted the formal invitation to keynote the international conference.",
+          "zh": "她欣然接受了在國際會議上發表主題演講的正式邀請。"
+        },
+        {
+          "en": "Send out party invitations at least two weeks ahead of time.",
+          "zh": "請至少提前兩週發出派對的邀請函。"
+        }
+      ],
+      "collocations": [
+        "invitation card",
+        "accept an invitation"
+      ]
+    },
+    {
+      "id": 812,
+      "word": "introduce",
+      "pos": "v.",
+      "phonetic": "[͵ɪntrəˋdjus]",
+      "definition": "介紹；引進",
+      "cefr": "A1",
+      "topic": "社交與溝通",
+      "examples": [
+        {
+          "en": "Let me introduce my new classmate, David.",
+          "zh": "讓我來介紹我的新同班同學，大衛。"
+        },
+        {
+          "en": "Please take two minutes to introduce yourself to the interview panel.",
+          "zh": "請花兩分鐘時間向面試官小組做自我介紹。"
+        },
+        {
+          "en": "The tech company plans to introduce innovative eco-friendly products next quarter.",
+          "zh": "這家科技公司計劃於下季度推出創新的環保產品。"
+        }
+      ],
+      "collocations": [
+        "introduce oneself",
+        "introduce someone to"
+      ]
+    },
+    {
+      "id": 813,
+      "word": "remember",
+      "pos": "v.",
+      "phonetic": "[rɪˋmɛmbɚ]",
+      "definition": "記得；記住；代為問候",
+      "cefr": "A1",
+      "topic": "認知與記憶",
+      "examples": [
+        {
+          "en": "Remember to turn off the lights before leaving.",
+          "zh": "離開前記得要關燈。"
+        },
+        {
+          "en": "I still clearly remember the first time I traveled abroad with my family.",
+          "zh": "我依然清晰記得第一次和家人出國旅遊的情景。"
+        },
+        {
+          "en": "Please remember me warmly to your lovely parents when you visit home.",
+          "zh": "你回家探親時請代我向你親愛的雙親致上由衷的問候。"
+        }
+      ],
+      "collocations": [
+        "remember to do",
+        "remember me to"
+      ]
+    },
+    {
+      "id": 814,
+      "word": "forget",
+      "pos": "v.",
+      "phonetic": "[fɚˋgɛt]",
+      "definition": "忘記；遺忘",
+      "cefr": "A1",
+      "topic": "認知與記憶",
+      "examples": [
+        {
+          "en": "Don't forget to bring your umbrella today.",
+          "zh": "今天出門別忘了帶雨傘。"
+        },
+        {
+          "en": "I will never forget the breathtaking sunrise we saw on Alishan.",
+          "zh": "我永遠不會忘記我們在阿里山看見那令人屏息的壯美日出。"
+        },
+        {
+          "en": "He wrote down the important appointment details so he wouldn't forget them.",
+          "zh": "他把重要預約細節寫下來，以免自己遺忘。"
+        }
+      ],
+      "collocations": [
+        "forget to do",
+        "forget about"
+      ]
+    },
+    {
+      "id": 815,
+      "word": "understand",
+      "pos": "v.",
+      "phonetic": "[͵ʌndɚˋstænd]",
+      "definition": "理解；明白；懂",
+      "cefr": "A1",
+      "topic": "認知與學習",
+      "examples": [
+        {
+          "en": "Do you understand what the teacher explained?",
+          "zh": "你明白老師剛剛解釋的內容了嗎？"
+        },
+        {
+          "en": "Practice speaking English regularly so you can make yourself understood clearly.",
+          "zh": "經常練習說英語，這樣你才能讓別人清楚理解你的意思。"
+        },
+        {
+          "en": "True empathy means striving to understand someone else's feelings.",
+          "zh": "真正的同理心意味著努力設身處地去理解他人的感受。"
+        }
+      ],
+      "collocations": [
+        "understand English",
+        "make yourself understood"
+      ]
+    },
+    {
+      "id": 816,
+      "word": "mean",
+      "pos": "v., adj.",
+      "phonetic": "[min]",
+      "definition": "意思是；打算；刻薄的",
+      "cefr": "A1",
+      "topic": "意義與性格",
+      "examples": [
+        {
+          "en": "What does this new English vocabulary word mean?",
+          "zh": "這個新英文單字是什麼意思？"
+        },
+        {
+          "en": "I am so sorry; I didn't mean to hurt your feelings.",
+          "zh": "非常抱歉，我絕不是有意要傷害你的感情。"
+        },
+        {
+          "en": "It was unkind and mean of him to tease the younger child.",
+          "zh": "他去取笑年紀較小的孩子是很刻薄且不友善的行為。"
+        }
+      ],
+      "collocations": [
+        "what do you mean",
+        "mean to do"
+      ]
+    },
+    {
+      "id": 817,
+      "word": "meaning",
+      "pos": "n.",
+      "phonetic": "[ˋminɪŋ]",
+      "definition": "意思；意義",
+      "cefr": "A1",
+      "topic": "語言與概念",
+      "examples": [
+        {
+          "en": "Look up the meaning of the word in a dictionary.",
+          "zh": "在字典裡查詢這個單字的意思。"
+        },
+        {
+          "en": "Serving underprivileged communities gave deep meaning and purpose to her life.",
+          "zh": "為弱勢社區服務為她的生命賦予了深遠的意義與目標。"
+        },
+        {
+          "en": "The true meaning of friendship is being there through both happiness and hardships.",
+          "zh": "友誼的真諦是在順境與逆境中都常伴左右。"
+        }
+      ],
+      "collocations": [
+        "true meaning",
+        "word meaning"
+      ]
+    },
+    {
+      "id": 818,
+      "word": "idea",
+      "pos": "n.",
+      "phonetic": "[aɪˋdiə]",
+      "definition": "想法；點子；觀念",
+      "cefr": "A1",
+      "topic": "思考與創意",
+      "examples": [
+        {
+          "en": "That sounds like a wonderful idea for the weekend!",
+          "zh": "這聽起來是個超棒的週末點子！"
+        },
+        {
+          "en": "Brainstorming meetings encourage team members to propose innovative ideas freely.",
+          "zh": "腦力激盪會議鼓勵團隊成員自由提出創新的想法。"
+        },
+        {
+          "en": "I have no idea where I misplaced my car keys this morning.",
+          "zh": "我完全不知道今天早上把車鑰匙落在何處了。"
+        }
+      ],
+      "collocations": [
+        "good idea",
+        "have no idea"
+      ]
+    },
+    {
+      "id": 819,
+      "word": "problem",
+      "pos": "n.",
+      "phonetic": "[ˋprɑbləm]",
+      "definition": "問題；難題",
+      "cefr": "A1",
+      "topic": "困難與日常生活",
+      "examples": [
+        {
+          "en": "No problem! I am always glad to help you.",
+          "zh": "沒問題！我很樂意幫你的忙。"
+        },
+        {
+          "en": "Engineers worked tirelessly overnight to solve the technical network problem.",
+          "zh": "工程師們整夜不眠不休地工作以解決網路技術難題。"
+        },
+        {
+          "en": "Climate change is a global problem requiring worldwide international collaboration.",
+          "zh": "氣候變遷是需要全球各國攜手合作應對的世界級難題。"
+        }
+      ],
+      "collocations": [
+        "no problem",
+        "solve a problem"
+      ]
+    },
+    {
+      "id": 820,
+      "word": "trouble",
+      "pos": "n., v.",
+      "phonetic": "[ˋtrʌb!]",
+      "definition": "麻煩；煩惱；使困擾",
+      "cefr": "A1",
+      "topic": "困難與日常",
+      "examples": [
+        {
+          "en": "Ask the teacher for help if you get into trouble.",
+          "zh": "如果遇到麻煩，請向老師求助。"
+        },
+        {
+          "en": "She had trouble falling asleep because of the loud thunderstorm outside.",
+          "zh": "因為外面的雷雨交加，她翻來覆去難以入睡。"
+        },
+        {
+          "en": "I am sorry to trouble you, but could you tell me the way to the subway?",
+          "zh": "不好意思麻煩你，請問你可以告訴我前往捷運站的路嗎？"
+        }
+      ],
+      "collocations": [
+        "in trouble",
+        "have trouble doing"
+      ]
+    },
+    {
+      "id": 821,
+      "word": "reason",
+      "pos": "n., v.",
+      "phonetic": "[ˋrizn]",
+      "definition": "原因；理由；推論",
+      "cefr": "A1",
+      "topic": "邏輯與思維",
+      "examples": [
+        {
+          "en": "What is the main reason for your school absence?",
+          "zh": "你請假沒來上學的主要原因是什麼？"
+        },
+        {
+          "en": "For this reason, doctors strongly recommend washing hands regularly.",
+          "zh": "基於這個原因，醫生強烈建議必須勤加洗手。"
+        },
+        {
+          "en": "He gave a logical, convincing reason for adjusting the project timeline.",
+          "zh": "他為調整專案時程表提出了合乎邏輯且令人信服的理由。"
+        }
+      ],
+      "collocations": [
+        "for this reason",
+        "reason why"
+      ]
+    },
+    {
+      "id": 822,
+      "word": "result",
+      "pos": "n., v.",
+      "phonetic": "[rɪˋzʌlt]",
+      "definition": "結果；成果；導致",
+      "cefr": "A1",
+      "topic": "邏輯與評量",
+      "examples": [
+        {
+          "en": "Hard work brings positive exam results.",
+          "zh": "努力付出會帶來良好的考試成果。"
+        },
+        {
+          "en": "Heavy torrential rain caused flash flooding as a result of poor drainage.",
+          "zh": "由於排水不良，豪大雨最終導致了瞬間積淹水的結果。"
+        },
+        {
+          "en": "The clinical experiment produced unexpected scientific results that surprised researchers.",
+          "zh": "這項臨床實驗產生了令研究人員大感意外的科學成果。"
+        }
+      ],
+      "collocations": [
+        "as a result",
+        "exam result"
+      ]
+    },
+    {
+      "id": 823,
+      "word": "success",
+      "pos": "n.",
+      "phonetic": "[səkˋsɛs]",
+      "definition": "成功；成就",
+      "cefr": "A1",
+      "topic": "成長與成就",
+      "examples": [
+        {
+          "en": "We wished our school team great success.",
+          "zh": "我們祝福校隊獲得巨大的成功。"
+        },
+        {
+          "en": "Persistence, discipline, and passion are crucial keys to lasting success.",
+          "zh": "堅持、自律與熱忱是通往持久成功的關鍵要素。"
+        },
+        {
+          "en": "The charity fundraising gala was an overwhelming commercial and social success.",
+          "zh": "這場慈善募款晚會在商業與社會層面上皆獲得了空前的巨大成功。"
+        }
+      ],
+      "collocations": [
+        "wish someone success",
+        "key to success"
+      ]
+    },
+    {
+      "id": 824,
+      "word": "dream",
+      "pos": "n., v.",
+      "phonetic": "[drim]",
+      "definition": "夢想；作夢",
+      "cefr": "A1",
+      "topic": "願望與心理",
+      "examples": [
+        {
+          "en": "Follow your dream and never give up easily.",
+          "zh": "追隨你的夢想，絕不要輕言放棄。"
+        },
+        {
+          "en": "I had a strange and vivid dream about flying across towering mountain ranges.",
+          "zh": "我做了一個奇特且栩栩如生的夢，夢見自己在高聳的山脈上空翱翔。"
+        },
+        {
+          "en": "She dreams of traveling around the globe after completing her degree.",
+          "zh": "她夢想著在取得學位後能踏上環遊世界的旅程。"
+        }
+      ],
+      "collocations": [
+        "sweet dreams",
+        "dream of"
+      ]
+    },
+    {
+      "id": 825,
+      "word": "secret",
+      "pos": "n., adj.",
+      "phonetic": "[ˋsikrɪt]",
+      "definition": "秘密；秘密的；機密的",
+      "cefr": "A1",
+      "topic": "社交與資訊",
+      "examples": [
+        {
+          "en": "Can you keep a secret between the two of us?",
+          "zh": "你能保守我們兩人之間的秘密嗎？"
+        },
+        {
+          "en": "The chef refuses to reveal the secret ingredient behind the award-winning sauce.",
+          "zh": "主廚拒絕透露這款獲獎特調醬汁背後的獨門秘密食材。"
+        },
+        {
+          "en": "Government intelligence archives keep top-secret files protected under high security.",
+          "zh": "政府情報檔案庫在高度嚴密戒備下保管著絕密機密文件。"
+        }
+      ],
+      "collocations": [
+        "keep a secret",
+        "top secret"
+      ]
+    },
+    {
+      "id": 826,
+      "word": "surprise",
+      "pos": "n., v.",
+      "phonetic": "[sɚˋpraɪz]",
+      "definition": "驚喜；使驚訝；驚奇",
+      "cefr": "A1",
+      "topic": "情緒與事件",
+      "examples": [
+        {
+          "en": "The birthday gift was a delightful surprise.",
+          "zh": "這份生日禮物是一個令人愉悅的驚喜。"
+        },
+        {
+          "en": "Much to our pleasant surprise, the weather cleared up right before the picnic.",
+          "zh": "讓我們非常驚喜的是，天氣在野餐開始前恰好放晴了。"
+        },
+        {
+          "en": "We organized a memorable surprise party to celebrate our teacher's retirement.",
+          "zh": "我們精心籌辦了一場難忘的驚喜派對來慶祝老師光榮退休。"
+        }
+      ],
+      "collocations": [
+        "to one's surprise",
+        "surprise party"
+      ]
+    },
+    {
+      "id": 827,
+      "word": "peace",
+      "pos": "n.",
+      "phonetic": "[pis]",
+      "definition": "和平；平靜；安寧",
+      "cefr": "A1",
+      "topic": "社會與心理",
+      "examples": [
+        {
+          "en": "Everyone hopes for lasting world peace.",
+          "zh": "每個人都期盼持久的世界和平。"
+        },
+        {
+          "en": "Sitting quietly by the serene mountain lake brought deep inner peace.",
+          "zh": "靜坐在寧靜的高山湖畔帶來了心靈深處的祥和與平靜。"
+        },
+        {
+          "en": "I cherish the peace and quiet of early mornings before the city awakens.",
+          "zh": "我非常珍惜在城市甦醒前清晨特有的安寧與靜謐。"
+        }
+      ],
+      "collocations": [
+        "world peace",
+        "peace and quiet"
+      ]
+    },
+    {
+      "id": 828,
+      "word": "noise",
+      "pos": "n.",
+      "phonetic": "[nɔɪz]",
+      "definition": "噪音；聲響",
+      "cefr": "A1",
+      "topic": "環境與感官",
+      "examples": [
+        {
+          "en": "Traffic noise outside kept me awake last night.",
+          "zh": "外面的車輛噪音讓我昨晚睡不著。"
+        },
+        {
+          "en": "Please refrain from making loud noise while studying in the quiet reading room.",
+          "zh": "在安靜的閱覽室內讀書時請勿發出吵鬧的噪音。"
+        },
+        {
+          "en": "The car began making an alarming metallic noise whenever braking.",
+          "zh": "這輛汽車每當煞車時就開始發出一種令人不安的金屬異音。"
+        }
+      ],
+      "collocations": [
+        "make noise",
+        "loud noise"
+      ]
+    },
+    {
+      "id": 829,
+      "word": "sound",
+      "pos": "n., v., adj.",
+      "phonetic": "[saʊnd]",
+      "definition": "聲音；聽起來；健全的",
+      "cefr": "A1",
+      "topic": "感官與特徵",
+      "examples": [
+        {
+          "en": "That idea sounds exciting and creative!",
+          "zh": "那個點子聽起來刺激又有創意！"
+        },
+        {
+          "en": "The calming sound of ocean waves lapping against the shore helped me relax.",
+          "zh": "海浪輕輕拍打海岸的舒緩聲音幫助我放鬆身心。"
+        },
+        {
+          "en": "Despite the storm, the sturdy wooden cabin remained structurally sound.",
+          "zh": "儘管經歷了暴風雨，這座堅固的木屋結構依然完好無損。"
+        }
+      ],
+      "collocations": [
+        "sound like",
+        "strange sound"
+      ]
+    },
+    {
+      "id": 830,
+      "word": "voice",
+      "pos": "n., v.",
+      "phonetic": "[vɔɪs]",
+      "definition": "嗓音；歌喉；發聲",
+      "cefr": "A1",
+      "topic": "聲音與人體",
+      "examples": [
+        {
+          "en": "The singer has a sweet and melodious voice.",
+          "zh": "這位歌手擁有一副甜美悅耳的好歌喉。"
+        },
+        {
+          "en": "Please lower your voice because patients in the ward are resting.",
+          "zh": "病房裡的病患正在休息，請壓低你的說話音量。"
+        },
+        {
+          "en": "Citizens have every right to raise their voice against unfair community policies.",
+          "zh": "公民完全有權利發出聲音反對不合理的社區政策。"
+        }
+      ],
+      "collocations": [
+        "soft voice",
+        "raise one's voice"
+      ]
+    },
+    {
+      "id": 831,
+      "word": "habit",
+      "pos": "n.",
+      "phonetic": "[ˋhæbɪt]",
+      "definition": "習慣；嗜好",
+      "cefr": "A1",
+      "topic": "生活與行為",
+      "examples": [
+        {
+          "en": "Reading every day is an excellent habit to build.",
+          "zh": "每天閱讀是值得培養的極佳習慣。"
+        },
+        {
+          "en": "It takes deliberate daily practice to break a bad habit like staying up late.",
+          "zh": "需要持之以恆的每日實踐才能戒除像熬夜這樣的壞習慣。"
+        },
+        {
+          "en": "Drinking a glass of warm water upon waking is a healthy morning habit.",
+          "zh": "早晨起床後喝一杯溫開水是一項健康的晨間習慣。"
+        }
+      ],
+      "collocations": [
+        "good habit",
+        "break a habit"
+      ]
+    },
+    {
+      "id": 832,
+      "word": "plan",
+      "pos": "n., v.",
+      "phonetic": "[plæn]",
+      "definition": "計畫；打算；規劃",
+      "cefr": "A1",
+      "topic": "目標與行動",
+      "examples": [
+        {
+          "en": "What are your plans for the summer vacation?",
+          "zh": "你的暑假有什麼計畫？"
+        },
+        {
+          "en": "We made a detailed emergency evacuation plan in case of natural disasters.",
+          "zh": "我們制定了一份詳細的緊急疏散計畫以防發生天然災害。"
+        },
+        {
+          "en": "The architect presented a comprehensive floor plan for the new community library.",
+          "zh": "建築師展示了新社區圖書館的全面平面規劃設計圖。"
+        }
+      ],
+      "collocations": [
+        "make a plan",
+        "travel plan"
+      ]
+    },
+    {
+      "id": 833,
+      "word": "goal",
+      "pos": "n.",
+      "phonetic": "[gol]",
+      "definition": "目標；得分；球門",
+      "cefr": "A1",
+      "topic": "成長與運動",
+      "examples": [
+        {
+          "en": "Set clear study goals at the beginning of each semester.",
+          "zh": "每個學期初設定明確的讀書目標。"
+        },
+        {
+          "en": "The star soccer forward scored an astonishing goal in the final seconds.",
+          "zh": "明星足球前鋒在最後幾秒攻進了一記驚艷全場的關鍵進球。"
+        },
+        {
+          "en": "Breaking down long-term dreams into smaller milestones makes goals achievable.",
+          "zh": "將遠大夢想拆解為各個階段性小目標會使目標更容易達成。"
+        }
+      ],
+      "collocations": [
+        "achieve a goal",
+        "score a goal"
+      ]
+    },
+    {
+      "id": 834,
+      "word": "rule",
+      "pos": "n., v.",
+      "phonetic": "[rul]",
+      "definition": "規則；規定；統治",
+      "cefr": "A1",
+      "topic": "紀律與管理",
+      "examples": [
+        {
+          "en": "Students must follow the school and library rules.",
+          "zh": "學生必須遵守學校和圖書館的規定。"
+        },
+        {
+          "en": "The golden rule of good friendship is treating others as you wish to be treated.",
+          "zh": "深厚友誼的黃金法則就是以你希望被對待的方式去對待他人。"
+        },
+        {
+          "en": "The wise emperor ruled the ancient prosperous empire justly for forty years.",
+          "zh": "英明的君主公正仁慈地統治了這座繁榮古帝國長達四十年。"
+        }
+      ],
+      "collocations": [
+        "follow rules",
+        "school rules"
+      ]
+    },
+    {
+      "id": 835,
+      "word": "law",
+      "pos": "n.",
+      "phonetic": "[lɔ]",
+      "definition": "法律；法規；定律",
+      "cefr": "A1",
+      "topic": "社會與秩序",
+      "examples": [
+        {
+          "en": "Everyone must obey traffic safety laws.",
+          "zh": "每個人都必須遵守交通安全法規。"
+        },
+        {
+          "en": "Isaac Newton formulated universal scientific laws explaining gravity and motion.",
+          "zh": "艾薩克·牛頓創立了闡釋萬有引力與物體運動的普遍科學定律。"
+        },
+        {
+          "en": "She studied constitutional law at university to become a public interest attorney.",
+          "zh": "她在大學研讀憲法，志在成為一名維護公眾利益的人權律師。"
+        }
+      ],
+      "collocations": [
+        "obey the law",
+        "traffic law"
+      ]
+    },
+    {
+      "id": 836,
+      "word": "order",
+      "pos": "n., v.",
+      "phonetic": "[ˋɔrdɚ]",
+      "definition": "點餐；訂購；順序；命令",
+      "cefr": "A1",
+      "topic": "飲食與商業",
+      "examples": [
+        {
+          "en": "Are you ready to order your lunch now?",
+          "zh": "請問你現在準備好要點午餐了嗎？"
+        },
+        {
+          "en": "Please arrange all historical documents in chronological order.",
+          "zh": "請依照時間先後順序整齊排列所有歷史文獻檔案。"
+        },
+        {
+          "en": "The police officer issued a strict order commanding spectators to remain behind barricades.",
+          "zh": "警官下達了嚴格指令，命令圍觀群眾留在防護欄後方。"
+        }
+      ],
+      "collocations": [
+        "take an order",
+        "in order"
+      ]
+    },
+    {
+      "id": 837,
+      "word": "crowd",
+      "pos": "n., v.",
+      "phonetic": "[kraʊd]",
+      "definition": "人群；群眾；湧入",
+      "cefr": "A1",
+      "topic": "社會與場所",
+      "examples": [
+        {
+          "en": "A large crowd gathered to watch the live concert.",
+          "zh": "一大群民眾聚集觀賞現場演唱會。"
+        },
+        {
+          "en": "Festive holiday crowds poured into the bustling department stores for sales.",
+          "zh": "洋溢節慶歡樂的人潮湧入熱鬧的百貨公司搶購特賣商品。"
+        },
+        {
+          "en": "Avoid walking alone into chaotic and uncontrolled street crowds.",
+          "zh": "避免隻身走入混亂且缺乏管制的街頭人群之中。"
+        }
+      ],
+      "collocations": [
+        "big crowd",
+        "crowd of people"
+      ]
+    },
+    {
+      "id": 838,
+      "word": "group",
+      "pos": "n., v.",
+      "phonetic": "[grup]",
+      "definition": "團體；群組；聚集",
+      "cefr": "A1",
+      "topic": "社交與組織",
+      "examples": [
+        {
+          "en": "We worked in small groups for the science project.",
+          "zh": "我們在自然科學專題中分組合作。"
+        },
+        {
+          "en": "Our class set up a dedicated LINE discussion group for sharing study notes.",
+          "zh": "我們班設立了一個專門的 LINE 討論群組以分享讀書筆記。"
+        },
+        {
+          "en": "A group of wild dolphins leaped playfully alongside the scenic whale-watching ferry.",
+          "zh": "一群野生海豚在風景優美的賞鯨渡輪旁歡快地躍出水面。"
+        }
+      ],
+      "collocations": [
+        "group work",
+        "LINE group"
+      ]
+    },
+    {
+      "id": 839,
+      "word": "club",
+      "pos": "n.",
+      "phonetic": "[klʌb]",
+      "definition": "社團；俱樂部；球桿",
+      "cefr": "A1",
+      "topic": "學校與休閒",
+      "examples": [
+        {
+          "en": "I joined the English speaking club this semester.",
+          "zh": "我這學期加入了英語演講社。"
+        },
+        {
+          "en": "The high school robotics club designed a prize-winning automated machine.",
+          "zh": "高中機器人社團設計出了一部榮獲大獎的自動化機器設備。"
+        },
+        {
+          "en": "Golfers select the appropriate golf club according to the distance to the hole.",
+          "zh": "高爾夫球手會根據與球洞的距離選取適當的球桿。"
+        }
+      ],
+      "collocations": [
+        "school club",
+        "join a club"
+      ]
+    },
+    {
+      "id": 840,
+      "word": "member",
+      "pos": "n.",
+      "phonetic": "[ˋmɛmbɚ]",
+      "definition": "成員；會員",
+      "cefr": "A1",
+      "topic": "社交與身分",
+      "examples": [
+        {
+          "en": "There are five members in my project group.",
+          "zh": "我的專題小組有五位成員。"
+        },
+        {
+          "en": "Gym members enjoy unlimited access to swimming facilities and fitness classes.",
+          "zh": "健身房會員享有無限次使用游泳設施與健身課程的權益。"
+        },
+        {
+          "en": "Every family member gathered around the dining table for the reunion dinner.",
+          "zh": "每位家庭成員都圍坐在餐桌旁享用溫馨的除夕團圓飯。"
+        }
+      ],
+      "collocations": [
+        "family member",
+        "club member"
+      ]
+    },
+    {
+      "id": 841,
+      "word": "leader",
+      "pos": "n.",
+      "phonetic": "[ˋlidɚ]",
+      "definition": "領袖；隊長；領導者",
+      "cefr": "A1",
+      "topic": "角色與能力",
+      "examples": [
+        {
+          "en": "She is the team leader for our science project.",
+          "zh": "她是我們自然科學專題的小組隊長。"
+        },
+        {
+          "en": "A visionary leader inspires colleagues to innovate, persevere, and excel.",
+          "zh": "一位富有遠見的領袖能激勵同仁勇於創新、堅持不懈並追求卓越。"
+        },
+        {
+          "en": "Taiwan is recognized as a global industry leader in cutting-edge microchips.",
+          "zh": "台灣被公認為尖端晶片製造領域的全球產業領頭羊。"
+        }
+      ],
+      "collocations": [
+        "team leader",
+        "group leader"
+      ]
+    },
+    {
+      "id": 842,
+      "word": "partner",
+      "pos": "n.",
+      "phonetic": "[ˋpɑrtnɚ]",
+      "definition": "夥伴；搭檔；伴侶",
+      "cefr": "A1",
+      "topic": "合作與人際",
+      "examples": [
+        {
+          "en": "Practice the dialogue with your seat partner.",
+          "zh": "和你的鄰座搭檔一起練習對話。"
+        },
+        {
+          "en": "They established a successful business and have been trusted partners for decades.",
+          "zh": "他們創立了一番成功的事業，數十年來一直是互信互惠的合作夥伴。"
+        },
+        {
+          "en": "Dancing the salsa smoothly requires coordinated rhythm between both dance partners.",
+          "zh": "跳出流暢動人的騷莎舞需要雙方舞伴之間協調默契的節拍配合。"
+        }
+      ],
+      "collocations": [
+        "study partner",
+        "business partner"
+      ]
+    },
+    {
+      "id": 843,
+      "word": "guest",
+      "pos": "n.",
+      "phonetic": "[gɛst]",
+      "definition": "客人；賓客",
+      "cefr": "A1",
+      "topic": "社交與禮儀",
+      "examples": [
+        {
+          "en": "We prepared a warm welcome for our dinner guests.",
+          "zh": "我們為晚餐賓客準備了熱情的款待。"
+        },
+        {
+          "en": "The luxury resort offers complimentary breakfast and fruit bowls to hotel guests.",
+          "zh": "這家豪華度假飯店為飯店住客提供免費精緻早餐與迎賓水果盤。"
+        },
+        {
+          "en": "A world-famous author appeared as the special guest speaker at the literary seminar.",
+          "zh": "一位舉世聞名的作家作為特別受邀貴賓出席了這場文學研討會。"
+        }
+      ],
+      "collocations": [
+        "special guest",
+        "hotel guest"
+      ]
+    },
+    {
+      "id": 844,
+      "word": "neighbor",
+      "pos": "n.",
+      "phonetic": "[ˋnebɚ]",
+      "definition": "鄰居",
+      "cefr": "A1",
+      "topic": "社區與人際",
+      "examples": [
+        {
+          "en": "Our neighbors are very friendly and always helpful.",
+          "zh": "我們的鄰居非常親切而且總是樂於助人。"
+        },
+        {
+          "en": "Our next-door neighbor baked homemade banana bread and shared it with us.",
+          "zh": "我們的隔壁鄰居烤了手工香蕉蛋糕並熱情與我們分享。"
+        },
+        {
+          "en": "Good community neighbors watch out for each other's home safety during holidays.",
+          "zh": "良好的社區鄰里會在假期外出時互相守望相助照顧門戶安全。"
+        }
+      ],
+      "collocations": [
+        "neighbour (英式)",
+        "next-door neighbor"
+      ]
+    },
+    {
+      "id": 845,
+      "word": "stranger",
+      "pos": "n.",
+      "phonetic": "[ˋstrendʒɚ]",
+      "definition": "陌生人；生客",
+      "cefr": "A1",
+      "topic": "社會與安全",
+      "examples": [
+        {
+          "en": "Never accept candy or rides from strangers.",
+          "zh": "絕對不要接受陌生人給的糖果或搭便車。"
+        },
+        {
+          "en": "A courteous stranger kindly offered me umbrella shelter when it rained suddenly.",
+          "zh": "突降陣雨時，一位彬彬有禮的陌生人好心地主動為我撐傘遮雨。"
+        },
+        {
+          "en": "Although we arrived as total strangers, we soon felt like close friends.",
+          "zh": "儘管抵達時彼此完全是素未謀面的陌生人，我們很快就宛如熟稔的好友。"
+        }
+      ],
+      "collocations": [
+        "stranger danger",
+        "total stranger"
+      ]
+    },
+    {
+      "id": 846,
+      "word": "friend",
+      "pos": "n.",
+      "phonetic": "[frɛnd]",
+      "definition": "朋友",
+      "cefr": "A1",
+      "topic": "社交與人際",
+      "examples": [
+        {
+          "en": "A friend in need is a friend indeed.",
+          "zh": "患難見真情。"
+        },
+        {
+          "en": "Joining campus clubs is a great way to make lifelong friends.",
+          "zh": "參加校園社團是結交一生摯友的絕佳途徑。"
+        },
+        {
+          "en": "My best friend always listens patiently and offers thoughtful, honest advice.",
+          "zh": "我最好的朋友總是耐心傾聽，並提供體貼而真摯坦率的建議。"
+        }
+      ],
+      "collocations": [
+        "make friends",
+        "close friend"
+      ]
+    },
+    {
+      "id": 847,
+      "word": "friendship",
+      "pos": "n.",
+      "phonetic": "[ˋfrɛndʃɪp]",
+      "definition": "友誼；友愛",
+      "cefr": "A1",
+      "topic": "人際關係",
+      "examples": [
+        {
+          "en": "True friendship lasts through the years.",
+          "zh": "真正的友誼歷久彌新。"
+        },
+        {
+          "en": "Distance and time cannot diminish the deep bond of genuine friendship.",
+          "zh": "距離與歲月無法磨滅真正友誼之間深厚堅固的羈絆。"
+        },
+        {
+          "en": "We exchanged handwritten postcards to cultivate and cherish our international friendship.",
+          "zh": "我們互相寄送手寫明信片，以維繫並珍惜這份跨越國界的深厚友誼。"
+        }
+      ],
+      "collocations": [
+        "lasting friendship",
+        "build friendship"
+      ]
+    },
+    {
+      "id": 848,
+      "word": "help",
+      "pos": "v., n.",
+      "phonetic": "[hɛlp]",
+      "definition": "幫助；協助；求救",
+      "cefr": "A1",
+      "topic": "社交與日常",
+      "examples": [
+        {
+          "en": "Can you give me some help with this suitcase?",
+          "zh": "你能幫我提一下這個行李箱嗎？"
+        },
+        {
+          "en": "Volunteers offered valuable help at the community animal shelter.",
+          "zh": "志工們在社區動物收容所提供了非常寶貴的協助。"
+        },
+        {
+          "en": "Do not hesitate to ask for help when facing overwhelming emotional stress.",
+          "zh": "當面臨難以承受的心理壓力時，切莫猶豫尋求專業協助。"
+        }
+      ],
+      "collocations": [
+        "help out",
+        "ask for help"
+      ]
+    },
+    {
+      "id": 849,
+      "word": "helpful",
+      "pos": "adj.",
+      "phonetic": "[ˋhɛlpfəl]",
+      "definition": "有幫助的；有益的；樂於助人的",
+      "cefr": "A1",
+      "topic": "特徵與評價",
+      "examples": [
+        {
+          "en": "This English grammar chart is extremely helpful.",
+          "zh": "這張英語文法圖表非常有幫助。"
+        },
+        {
+          "en": "The hotel concierge gave us helpful travel tips for navigating the historical city.",
+          "zh": "飯店禮賓人員給了我們遊覽這座歷史名城非常實用的旅遊秘訣。"
+        },
+        {
+          "en": "He is a polite and helpful young man who always assists senior citizens.",
+          "zh": "他是個有禮貌且熱心助人的年輕小伙子，總是主動攙扶協助長者。"
+        }
+      ],
+      "collocations": [
+        "very helpful",
+        "helpful advice"
+      ]
+    },
+    {
+      "id": 850,
+      "word": "share",
+      "pos": "v., n.",
+      "phonetic": "[ʃɛr]",
+      "definition": "分享；分擔；股份",
+      "cefr": "A1",
+      "topic": "社交與互動",
+      "examples": [
+        {
+          "en": "Sharing snacks with classmates creates happy memories.",
+          "zh": "和同班同學分享零食能創造快樂回憶。"
+        },
+        {
+          "en": "She posted a blog entry to share her backpacking travel experiences in Europe.",
+          "zh": "她發表了一篇部落格文章，分享她在歐洲背包自助旅行的寶貴經驗。"
+        },
+        {
+          "en": "The two leading smartphone brands hold the largest share of the domestic market.",
+          "zh": "這兩大智慧型手機巨頭品牌佔據了國內市場最大的市佔份額。"
+        }
+      ],
+      "collocations": [
+        "share with",
+        "market share"
+      ]
+    }
+  ]
+}
