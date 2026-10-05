@@ -11,6 +11,8 @@ import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { articleIdFromHash, hashForArticle, readArticleTarget } from "./lib/route";
 import { VocabularySaveButton } from "./VocabularySaveButton";
 import { VocabularyReview } from "./VocabularyReview";
+import { LearningHome } from "./LearningHome";
+import { WordbankPractice } from "./WordbankPractice";
 import { popupTitle } from "./lib/vocab";
 import { explanationAudioReady } from "./lib/explanation";
 import {
@@ -947,6 +949,8 @@ export default function App() {
   const [hash, setHash] = useState(() => window.location.hash);
   const openId = articleIdFromHash(hash);
   const reviewOpen = hash === "#/review";
+  const practiceOpen = hash === "#/practice";
+  const articlesOpen = hash === "#/articles";
   const target = readArticleTarget(hash);
   // 角色決定是否能用即時重新翻譯（admin／reviewer）；後端仍會縱深防禦。
   const [canReexplain, setCanReexplain] = useState(false);
@@ -976,7 +980,7 @@ export default function App() {
     <div className="app-root">
       <header className="topbar">
         <div className="topbar__in">
-          <button className="brand brand--button" onClick={() => navigate(null)} aria-label="回課文列表">
+          <button className="brand brand--button" onClick={() => navigate(null)} aria-label="回首頁">
             <span className="brand__mark">
               <HeadphonesIcon size={20} />
             </span>
@@ -989,20 +993,22 @@ export default function App() {
         <VocabularyReview onJump={(id, paragraphId, word) => {
           window.location.hash = hashForArticle(id, { paragraphId, word, fromReview: true });
         }} />
-      ) : openId === null ? (
+      ) : practiceOpen ? (
+        <WordbankPractice />
+      ) : articlesOpen ? (
         <ArticleList onOpen={navigate} />
-      ) : (
+      ) : openId !== null ? (
         <Reader
           key={openId}
           articleId={openId}
-          onBack={() => target.fromReview ? window.location.hash = "#/review" : navigate(null)}
+          onBack={() => window.location.hash = target.fromReview ? "#/review" : "#/articles"}
           onJump={navigate}
           canReexplain={canReexplain}
           targetParagraphId={target.paragraphId}
           targetWord={target.word}
           fromReview={target.fromReview}
         />
-      )}
+      ) : <LearningHome />}
     </div>
   );
 }

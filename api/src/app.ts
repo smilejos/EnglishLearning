@@ -9,6 +9,7 @@ import { registerTaxonomyRoutes } from "./routes/taxonomy";
 import { registerLookupRoutes, type LookupDeps } from "./routes/lookups";
 import { registerStatsRoutes } from "./routes/stats";
 import { registerVocabularyRoutes } from "./routes/vocabulary";
+import { registerWordbankRoutes } from "./routes/wordbank";
 import { registerUserRoutes } from "./routes/users";
 import type { LookupLimiter } from "./rateLimit";
 import { registerIllustrationRoutes, type IllustrationDeps } from "./routes/illustrations";
@@ -61,6 +62,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   if (opts.generationSettings) registerGenerationSettingsRoutes(app, opts.pool, opts.generationSettings);
   registerTaxonomyRoutes(app, opts.pool);
   registerVocabularyRoutes(app, opts.pool);
+  registerWordbankRoutes(app, opts.pool);
   registerLookupRoutes(app, opts.pool, opts.audioDir, opts.lookupDeps, opts.lookupLimiter);
   registerStatsRoutes(app, opts.pool, opts.lookupLimiter);
   registerUserRoutes(app, opts.pool, opts.config.adminEmails);

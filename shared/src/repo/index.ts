@@ -11,3 +11,6 @@ export * from "./audioBackfill";
 export * from "./categories";
 export * from "./tags";
 export * from "./stats";
+export * from "./wordbank";
+export * from "./wordbankAudio";
+export * from "./wordbankPractice";

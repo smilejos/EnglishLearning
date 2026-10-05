@@ -32,6 +32,20 @@ beforeEach(() => {
 afterEach(cleanup);
 
 describe("收藏到原課文的完整導航", () => {
+  it("首頁有三功能入口，文章清單獨立路由且品牌回首頁", async () => {
+    window.history.replaceState(null, "", "#");
+    render(<App />);
+    expect(screen.getByRole("link", { name: /文章閱讀/ }).getAttribute("href")).toBe("#/articles");
+    expect(screen.getByRole("link", { name: /單字練習/ }).getAttribute("href")).toBe("#/practice");
+    expect(screen.getByText("即將推出").closest("[aria-disabled]")).toBeTruthy();
+    expect(api.listArticles).not.toHaveBeenCalled();
+    await act(async () => { window.location.hash = "#/articles"; window.dispatchEvent(new Event("hashchange")); });
+    await screen.findByRole("heading", { name: "開始閱讀" });
+    expect(await screen.findByRole("heading", { name: "Habit lesson" })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "回首頁" }));
+    await act(async () => { window.dispatchEvent(new Event("hashchange")); });
+    await screen.findByRole("heading", { name: "今天，想怎麼練習英文？" });
+  });
   it("回課文定位原段落及單字，返回複習保留篩選", async () => {
     const scroll = vi.fn();
     const original = HTMLElement.prototype.scrollIntoView;

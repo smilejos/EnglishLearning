@@ -14,6 +14,13 @@ export function releaseAudio(stop: Stopper): void {
   if (current === stop) current = null;
 }
 
+/** 換題或切換功能時停止目前的音源。 */
+export function stopAudio(): void {
+  const stop = current;
+  current = null;
+  stop?.();
+}
+
 /** 測試用：重置模組狀態。 */
 export function _resetAudioBus(): void {
   current = null;

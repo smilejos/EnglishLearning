@@ -108,3 +108,5 @@ export type {
 } from "./schemas";
 
 export * from "./repo/vocabulary";
+export * from "./wordbank";
+export * from "./wordbankAudio";

@@ -5,7 +5,7 @@ export function articleIdFromHash(hash: string): number | null {
   return Number.isSafeInteger(id) && id > 0 ? id : null;
 }
 
-/** 文章頁對應的 hash；null 代表清單頁。 */
+/** 文章頁對應的 hash；null 代表入口首頁。 */
 export function hashForArticle(id: number | null, target?: {
   paragraphId: number | null; word: string; fromReview?: boolean;
 }): string {

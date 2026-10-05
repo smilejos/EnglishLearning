@@ -7,6 +7,7 @@ import type {
 } from "./types";
 import { normalizeBaseUrl } from "./lib/urls";
 import type { VocabularyItem } from "./vocabularyTypes";
+import type { WordbankOptions, WordbankQuestion, WordbankSystem } from "./wordbankTypes";
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
@@ -60,6 +61,18 @@ export function removeVocabulary(id: number): Promise<void> {
 export function listArticles(): Promise<{ articles: Article[] }> {
   return req("/articles");
 }
+
+export function getWordbankOptions(signal?: AbortSignal): Promise<WordbankOptions> {
+  return req("/wordbank/options", { signal });
+}
+
+export function getWordbankQuestion(system: WordbankSystem, levels: string[], signal?: AbortSignal): Promise<WordbankQuestion> {
+  const query = new URLSearchParams({ system, levels: levels.join(",") });
+  return req(`/wordbank/random?${query}`, { signal });
+}
+
+/** API 回傳同源音訊路徑；自訂 API base 仍套用相同來源。 */
+export function wordbankAudioUrl(path: string): string { return `${BASE}${path}`; }
 
 export function getArticle(
   id: number,

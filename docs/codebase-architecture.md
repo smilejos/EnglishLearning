@@ -1,7 +1,7 @@
 # 專案架構與功能導覽（以程式碼為準）
 
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-09-28（視覺參考圖支援多個故事主體）。原始分析時已於本機 Docker 套用 migration、重建啟動供試用；舊圖片轉換 migration 已於 2026-09-27 套用正式資料庫，相關程式碼尚未部署。
+> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-10-05（獨立字庫匯入與本機 Qwen3-TTS 批次產音工具；首頁與字庫練習介面尚未實作）。原始分析時已於本機 Docker 套用 migration、重建啟動供試用；舊圖片轉換 migration 已於 2026-09-27 套用正式資料庫，相關程式碼尚未部署。新增字庫的實際匯入／產音進度以交付回報與本機 manifest 為準。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理，未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 ## 1. 先讀這裡：專案目的與全貌
@@ -21,6 +21,7 @@
 
 - `done` 是文章翻譯／語音流程的完成狀態，**不代表插圖已發布**；沒有插圖也能閱讀。
 - 單字解釋與「已解釋」標記是全站共用資料，**不是個人背單字或學習進度**；主動收藏與熟悉狀態另存於 `vocabulary_items`／`vocabulary_sources`。
+- 新字庫 `wordbank_entries`／`wordbank_audio` 與文章單字、收藏分開，先提供 JSON 匯入與離線產音；尚未提供字庫 HTTP API 或練習頁。需求與操作入口見 `docs/wordbank-practice-requirements.md`。
 - 文章 job、圖片 job、單字背景 TTS 是三種不同機制，不可直接套用同一套重試方式。
 - 前後台各有本地型別與 API client；瀏覽器程式沒有直接依賴 `@el/shared`。
 - API 沒有統一 `/api` 前綴，使用 `/articles`、`/words` 等頂層路徑，新增路徑要一起檢查反向代理。
@@ -70,6 +71,7 @@ flowchart TD
 | `docker-compose.yml`、各 Dockerfile | 部署服務、相依啟動順序、掛載、ports、healthcheck |
 | `proxy/nginx.conf`、兩個前端 nginx／Vite 設定 | 正式與開發環境的路徑轉發 |
 | `scripts/`、`fixtures/seed/` | 部署、備份、免 LLM 示範資料匯入 |
+| `source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts`、repo、`scripts/import-vocabulary*.ts`、`scripts/generate-wordbank-audio.mjs` | 9,166 字獨立字庫、補缺匯入、音檔 metadata 校驗、本機 Qwen3-TTS 批次生成 |
 | `.github/workflows/ci.yml` | Node 20 CI：安裝、型別檢查、測試、前端 build、測試庫清理 |
 
 技術組合：TypeScript、Node 20、Fastify 4、React 18、Vite 5、PostgreSQL 16、`pg`、Zod、Vitest；前端測試使用 happy-dom／Testing Library；圖片轉檔用 sharp，音訊轉檔用 ffmpeg。版本以各 `package.json` 與 lockfile 為準。
@@ -284,6 +286,8 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | 標籤 | `tags(kind,label)` unique；`article_tags` 多對多 |
 | 單字 | `words.normalized_word` unique；`word_explanations(word_id,article_id)` unique，保存 paragraph 脈絡及五組產物 |
 | 收藏 | `vocabulary_items(user_id,word)` unique，保存 active／mastered 與 saved_at；`vocabulary_sources` 保存來源／分類快照，來源 unique `(item_id,article_id,paragraph_id)`；文章／段落刪除時 FK SET NULL，收藏刪除時來源 CASCADE；不依賴共用 words FK |
+| 獨立字庫 | `wordbank_entries.guid` UUID 主鍵，保存來源 id、word、詞性、定義、例句／解釋 JSONB、level 三套分級、category／scenario；匯入保留後補內容，只填缺漏、合併陣列，不刪既有詞條 |
+| 字庫音檔 | `wordbank_audio.asset_guid` UUID 主鍵，引用詞條 GUID；kind 為 word／example，保存相對路徑、模型／聲線／語氣、文字 hash、時長、大小及生成時間。匯入前核對 GUID 所屬詞條與當下文字 hash |
 | 圖片估價／版本 | `illustration_estimates`、`article_visual_runs`、`article_visual_publications`；每篇只有一個目前發布指標 |
 | 圖片內容 | `illustration_slots` 表示 cover／paragraph／reference；新版 slot 保存可編輯 Prompt 草稿及修訂號，每 slot 多個 candidates，candidate 保存當次實際生圖 Prompt，selected candidate 有歸屬約束 |
 | 圖片檔案 | `illustration_assets` 與 `illustration_asset_files` 一對多；variant、object key、尺寸、MIME、bytes |
@@ -297,6 +301,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 - `schemas.ts` 不涵蓋每個實際 HTTP payload：如 `POST /lookups` 回單筆 `explanation`，GET 則回 `explanations`；圖片、category、tags 等也有額外 DTO。改契約要同看路由及兩端本地型別。
 - DB 音檔欄位存相對路徑：`articles/<id>/p<idx>.en|zh.<ext>`、`words/<id>/en.<ext>`、`words/<id>/a<articleId>/<content>.<ext>`。
 - 新音檔預設 AAC/M4A；ffmpeg 不可用或失敗回退 WAV，既有 WAV 可共存，前端應使用 API 提供的實際路徑。
+- 字庫離線音檔另採 Qwen3-TTS MP3，路徑為 `wordbank/<profileHash>/<assetGuid>.mp3`。生成器預設寫本機 `data/wordbank-audio/`，正式 audio volume 的檔案複製與 DB metadata 匯入為另一步，不會自動把本機路徑當作 API 音檔。
 
 ## 10. API 查找表
 
@@ -361,6 +366,10 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 | `./scripts/deploy.sh up` | 建置、啟動、等 healthy／running，重讀 proxy 設定；會啟用圖片服務 |
 | `./scripts/deploy.sh status` | 查看部署服務狀態 |
 | `npm run seed` | 由 fixtures 匯入既有翻譯／音檔，不呼叫 LLM；會刪除並重建同標題示範文章 |
+| `npm run vocabulary:import -- --dry-run` | 檢查全字庫，不連 DB；實際匯入需明示 DATABASE_URL，正式庫須先授權 |
+| `npm run vocabulary:audio:generate -- --dry-run --list basic` | 列出單字＋全部英文例句產音計畫，不呼叫 TTS；真實生成需 WORD_BANK_REAL_TTS=1 加 --generate，支援續跑 |
+| `npm run vocabulary:audio:import -- data/wordbank-audio/manifest.json` | 核對 GUID／文字 hash 後匯入 metadata；不複製檔案，需明示 DATABASE_URL |
+| `npm run vocabulary:audio:test` | Node 原生測試批次工具，HTTP 假回應；不呼叫真實 TTS |
 | `./scripts/backup.sh` | 備份 DB／音檔／圖片並輪替 |
 
 seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade 清關聯；不要為了看畫面就對已有資料庫隨意執行。`deploy.sh clean` 會移除正式 volumes，不是一般測試清理指令。
@@ -374,6 +383,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 - `worker/src/processor.test.ts`：批次翻譯／回退、部分重生、退避、stale 回收、狀態聚合。
 - 前端 `*.test.ts(x)`：純函式、路由、分享、音源仲裁、播放器、圖片 fallback／單字操作、後台錯誤與圖片審核操作。
 - 收藏測試：`api/src/routes/vocabulary.test.ts` 驗證 CRUD、日期／來源語意及權限；`web-learner/src/VocabularyReview.test.tsx` 驗證篩選、挑戰、失敗保留、來源失效與音訊停止；App 與 route 測試涵蓋收藏入口及返回定位。
+- 字庫測試：`shared/src/wordbank.test.ts`、`repo/wordbank.test.ts` 涵蓋來源校驗、全 9,166 字匯入／重匯、後補資料保留、分級精確匹配與音檔 GUID／hash；另以 `npm run vocabulary:audio:test` 驗證生成器的續跑、損毀重建、失敗回應、下載中斷與儲存失敗，不混入一般真實 TTS 呼叫。
 - `api/src/routeConfig.test.ts`：檢查兩前端使用的 API 頂層路徑是否被 nginx／Vite 正確轉發。
 - 現有 `e2e/` 未提供自動瀏覽器測試程式；不要把 Vitest 全綠宣稱為完整線上端到端驗收。
 
@@ -407,6 +417,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 朗讀、跳段、速度、疊音 | `web-learner/src/useArticlePlayer.ts`、`AudioBar.tsx`、`lib/audioBus.ts` |
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
+| 入口首頁、字庫練習、9,166 字、Qwen3-TTS 批次產音 | `docs/wordbank-practice-requirements.md`、`source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts` 與 repo、`scripts/import-vocabulary*.ts`／`generate-wordbank-audio.mjs`；首頁與練習頁尚未實作 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
 | 生成供應商、模型、聲線設定或 Google Vertex AI 端點 | admin `GenerationSettings.tsx`、API `generationSettings.ts`、`shared/src/{generationSettings,generationClients}.ts`、`shared/src/llm/{auth,genai}.ts`、repo、migration、API／worker 入口 |
 | 缺失單字音檔清單／逐檔或全部補檔 | admin `App.tsx`／`AudioBackfillPanel.tsx`、`api/src/routes/lookups.ts`、`shared/src/repo/audioBackfill.ts`、相關測試 |

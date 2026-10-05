@@ -1,0 +1,78 @@
+/* 新入口與字庫練習沿用閱讀室的色彩、字型及控制元件。 */
+.learning-home { padding-bottom: 56px; }
+.learning-home .greet { padding-top: 54px; padding-bottom: 30px; }
+.learning-home .greet__hi { line-height: 1.3; }
+.learning-paths { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+.learning-path { display: flex; align-items: center; justify-content: space-between; gap: 26px; padding: 30px; border-bottom: 1px solid var(--border); }
+.learning-path:last-child { border-bottom: 0; }
+.learning-path h2 { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.4; margin: 0 0 8px; }
+.learning-path p { margin: 0; color: var(--text-soft); font-size: .95rem; line-height: 1.7; }
+.learning-path__action { display: inline-flex; gap: 12px; align-items: center; white-space: nowrap; font-size: .92rem; font-weight: 700; color: var(--accent-strong); }
+a.learning-path:hover { background: var(--surface-2); }
+a.learning-path:focus-visible { outline-offset: -4px; }
+.learning-path--practice { background: var(--accent-soft); }
+a.learning-path--practice:hover { background: var(--accent-soft); }
+a.learning-path:hover .learning-path__action { text-decoration: underline; text-underline-offset: 4px; }
+.learning-path--soon { background: var(--surface-2); }
+.learning-path--soon .learning-path__action { color: var(--text-soft); font-weight: 400; }
+.learning-home__review { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; color: var(--text-soft); font-size: .92rem; padding: 8px 0; }
+.learning-home__review:hover { color: var(--accent-strong); }
+.wordbank-page { max-width: 1080px; padding-bottom: 56px; }
+.wordbank-page .greet { padding-bottom: 28px; }
+.wordbank-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 30px; align-items: start; }
+.wordbank-settings { padding-top: 8px; }
+.wordbank-field { display: block; font-size: .9rem; font-weight: 700; margin-bottom: 9px; }
+.wordbank-settings select { width: 100%; min-height: 44px; }
+.wordbank-levels { border: 0; margin: 26px 0 14px; padding: 0; min-width: 0; }
+.wordbank-levels legend { font-size: .9rem; font-weight: 700; margin-bottom: 8px; padding: 0; }
+.wordbank-level { display: flex; align-items: center; gap: 9px; padding: 10px 4px; font-size: .9rem; cursor: pointer; }
+.wordbank-level input { accent-color: var(--accent); width: 17px; height: 17px; margin: 0; }
+.wordbank-count { margin-left: auto; font-size: .82rem; color: var(--text-soft); font-variant-numeric: tabular-nums; }
+.wordbank-note { color: var(--text-soft); font-size: .85rem; line-height: 1.7; margin: 10px 0; }
+.wordbank-workspace { min-width: 0; }
+.wordbank-modes { display: flex; border-bottom: 1px solid var(--border-strong); gap: 20px; }
+.wordbank-mode { color: var(--text-soft); background: none; border: 0; border-bottom: 2px solid transparent; padding: 12px 2px; font-size: .95rem; font-weight: 700; }
+.wordbank-mode:hover { color: var(--accent-strong); }
+.wordbank-mode.on { color: var(--accent-strong); border-bottom-color: var(--accent); }
+.wordbank-mode-hint { font-size: .9rem; color: var(--text-soft); line-height: 1.7; margin: 14px 0 20px; }
+.wordbank-question { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 30px; min-height: 340px; }
+.wordbank-question h3 { font-size: .91rem; color: var(--text-soft); margin: 0 0 10px; }
+.wordbank-word-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.wordbank-word { margin: 0; font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1.2; overflow-wrap: anywhere; }
+.wordbank-word--masked { letter-spacing: .04em; }
+.wordbank-definition { margin-top: 14px; line-height: 1.7; }
+.wordbank-definition p { margin: 8px 0; }
+.wordbank-pos { color: var(--text-soft); font-size: .9rem; }
+.wordbank-explains { margin-top: 26px; }
+.wordbank-explains ul { margin: 0; padding-left: 20px; font-family: var(--font-body); font-size: 1.08rem; line-height: 1.75; }
+.wordbank-explains li + li { margin-top: 9px; }
+.wordbank-examples { margin-top: 30px; }
+.wordbank-examples ol { list-style: none; margin: 0; padding: 0; }
+.wordbank-examples li { padding: 18px 0; border-top: 1px solid var(--border); }
+.wordbank-example-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; justify-content: space-between; }
+.wordbank-example-number { font-size: .85rem; color: var(--text-soft); }
+.wordbank-example-en { font-family: var(--font-body); font-size: 1.12rem; line-height: 1.8; margin: 12px 0 6px; overflow-wrap: anywhere; }
+.wordbank-example-zh { font-size: .92rem; line-height: 1.8; margin: 0; color: var(--text-soft); }
+.wordbank-audio { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.wordbank-audio .btn:disabled { opacity: 1; color: var(--text-soft); cursor: not-allowed; }
+.wordbank-audio .is-playing { background: var(--accent-soft); color: var(--accent-strong); }
+.wordbank-audio__error { color: var(--danger); font-size: .82rem; }
+.wordbank-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--border); }
+.wordbank-actions .wordbank-note { margin: 0; }
+.wordbank-empty { font-family: var(--font-display); line-height: 1.5; margin: 10px 0; }
+@media (max-width: 700px) {
+  .learning-home .greet { padding-top: 32px; }
+  .learning-path { padding: 23px 20px; align-items: flex-start; flex-direction: column; gap: 16px; }
+  .learning-path h2 { font-size: 1.4rem; }
+  .wordbank-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .wordbank-settings { border-bottom: 1px solid var(--border); padding-bottom: 18px; }
+  .wordbank-settings select { max-width: 290px; }
+  .wordbank-levels { display: flex; flex-wrap: wrap; gap: 2px 16px; margin-top: 18px; }
+  .wordbank-levels legend { margin-bottom: 6px; }
+  .wordbank-level { gap: 7px; }
+  .wordbank-count { margin-left: 3px; }
+  .wordbank-modes { gap: 14px; }
+  .wordbank-mode { font-size: .9rem; }
+  .wordbank-question { padding: 22px 18px; }
+  .wordbank-word { font-size: 2.6rem; }
+}

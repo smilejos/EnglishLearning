@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { claimAudio, releaseAudio, _resetAudioBus } from "./audioBus";
+import { claimAudio, releaseAudio, stopAudio, _resetAudioBus } from "./audioBus";
 
 beforeEach(_resetAudioBus);
 
@@ -27,5 +27,14 @@ describe("audioBus", () => {
     releaseAudio(stopA);
     claimAudio(stopB);
     expect(stopA).not.toHaveBeenCalled();
+  });
+
+  it("切換功能停止當前音源並釋放，重複停止不再次操作舊音源", () => {
+    const stop = vi.fn();
+    claimAudio(stop);
+    stopAudio();
+    stopAudio();
+    claimAudio(vi.fn());
+    expect(stop).toHaveBeenCalledTimes(1);
   });
 });

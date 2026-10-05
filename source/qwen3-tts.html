@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Qwen3-TTS 語音試聽</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#18302b;background:#f4f6f3;accent-color:#236653}
+*{box-sizing:border-box}body{margin:0;padding:44px 20px}main{max-width:700px;margin:auto}h1{font-size:28px;margin:0 0 10px;letter-spacing:-.025em}p{line-height:1.65;color:#4d6059;margin:0 0 26px}form{background:#fff;border:1px solid #d5ded7;padding:28px;border-radius:12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:20px}.field{margin-bottom:22px}label{display:block;font-weight:600;margin-bottom:8px}label small{font-weight:400;color:#53665d;font-size:13px}select,textarea{width:100%;font:inherit;border:1px solid #9dafA4;border-radius:6px;background:#fff;color:#18302b;padding:11px;caret-color:#236653}textarea{resize:vertical;line-height:1.6}button{font:inherit;font-weight:600;border:0;border-radius:6px;padding:12px 20px;background:#236653;color:#fff;cursor:pointer}button:hover{background:#194d3f}button:disabled{opacity:.6;cursor:wait}:focus-visible{outline:3px solid #628e7c;outline-offset:3px}::selection{background:#d1e9df}#status{margin:18px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}#status.error{color:#9c2525}#result{margin-top:26px;border-top:1px solid #d5ded7;padding-top:22px}audio{display:block;width:100%;margin:12px 0}a{color:#236653;text-underline-offset:3px}.note{font-size:13px;margin:20px 0 0}code{overflow-wrap:anywhere}h2{font-size:18px;margin:0} [hidden]{display:none!important}@media(max-width:520px){body{padding:28px 16px}.row{grid-template-columns:1fr;gap:0}form{padding:20px}button{width:100%}}
+</style>
+</head>
+<body>
+<main>
+<h1>Qwen3-TTS 語音試聽</h1>
+<p>選擇聲音、調整語氣，讓文字變成語音。</p>
+<form id="speechForm">
+<div class="field"><label for="model">Model <small>CustomVoice 模型</small></label><select id="model" name="model" aria-describedby="modelHint">
+<option value="mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-8bit">1.7B · 8bit（預設）</option>
+<option value="mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-4bit">1.7B · 4bit</option>
+<option value="mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-bf16">1.7B · bf16</option>
+<option value="mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit">0.6B · 8bit</option>
+<option value="mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-4bit">0.6B · 4bit</option>
+</select><p id="modelHint" class="note" aria-live="polite"></p></div>
+<div class="row">
+<div class="field"><label for="voice">Voice <small>聲音</small></label><select id="voice" name="voice"><option>Aiden</option><option>Ryan</option><option>Vivian</option><option>Serena</option><option>Uncle_Fu</option><option>Dylan</option><option>Eric</option><option>Ono_Anna</option><option>Sohee</option></select></div>
+<div class="field"><label for="lang">lang_code <small>語言</small></label><select id="lang" name="lang_code"><option>English</option><option>Chinese</option><option>Japanese</option><option>Korean</option></select></div>
+</div>
+<div class="field"><label for="tone">instruct <small>語氣指示</small></label><select id="tone" name="tone">
+<option value="Speak warmly and clearly, like a elementary school English teacher.">幼稚園老師</option>
+<option value="Speak gently and soothingly, like telling a bedtime story to a child.">溫柔床邊故事</option>
+<option value="Speak with lively energy and expressive emotion, like an engaging storyteller.">生動說故事</option>
+<option value="Speak calmly and clearly, with a professional and neutral news anchor tone.">專業新聞主播</option>
+<option value="Speak naturally and casually, like chatting with a close friend.">自然朋友聊天</option>
+<option value="Speak slowly and clearly, with careful pronunciation and short pauses for language learners.">慢速語言教學</option>
+<option value="Speak cheerfully and enthusiastically, with a bright and encouraging tone.">活潑開朗</option>
+<option value="Speak confidently and persuasively, with an inspiring motivational tone.">激勵鼓舞</option>
+<option value="Speak softly and slowly, with a calm and relaxing meditation guide tone.">放鬆冥想</option>
+<option value="Speak in a formal and courteous tone, with clear articulation and a steady pace.">正式禮貌</option>
+<option value="custom">其他／自訂</option>
+</select></div>
+<div class="field" id="customInstruct" hidden><label for="instruct">自訂語氣 <small>可留空</small></label><textarea id="instruct" name="instruct" rows="3" placeholder="以英文描述想要的語氣、速度或情緒…" disabled></textarea></div>
+<div class="field"><label for="input">input <small>要朗讀的文字</small></label><textarea id="input" name="input" rows="5" required placeholder="輸入要轉成語音的文字…">Today we are going to learn about animals.</textarea></div>
+<button id="generate" type="submit">產生並播放</button>
+<p id="status" role="status" aria-live="polite" aria-atomic="true"></p>
+<section id="result" hidden aria-label="產生的音訊"><h2>試聽結果</h2><audio id="player" controls preload="metadata"></audio><a id="download" download="qwen3-speech.mp3">下載 MP3</a></section>
+</form>
+<p class="note">請先啟動本機 MLX Audio Server。API：<code>http://localhost:8000/v1/audio/speech</code><br>切換模型後，首次使用可能需要下載及載入模型，請耐心等候。<br>若瀏覽器阻擋跨來源請求（CORS），需由本機 API 允許此頁面的來源；第一次載入模型可能需要較久。</p>
+</main>
+<script>
+'use strict';
+const form = document.getElementById('speechForm');
+const button = document.getElementById('generate');
+const status = document.getElementById('status');
+const player = document.getElementById('player');
+const result = document.getElementById('result');
+const download = document.getElementById('download');
+let audioUrl = null;
+const model = document.getElementById('model');
+const modelHint = document.getElementById('modelHint');
+function updateModelHint() {
+  const precision = model.value.endsWith('bf16') ? 'bf16 的模型權重通常占用較多記憶體；較高精度不保證能解決長段音質問題。' : model.value.endsWith('4bit') ? '4bit 的模型權重通常占用較少記憶體；可比較量化對音質的影響。' : '8bit 可作為音質與記憶體使用量的比較基準。';
+  modelHint.textContent = precision;
+}
+model.addEventListener('change', updateModelHint);
+updateModelHint();
+const tone = document.getElementById('tone');
+const customInstruct = document.getElementById('customInstruct');
+const instruct = document.getElementById('instruct');
+function updateTone() {
+  const custom = tone.value === 'custom';
+  customInstruct.hidden = !custom;
+  instruct.disabled = !custom;
+}
+tone.addEventListener('change', updateTone);
+updateTone();
+function message(text, error = false) { status.textContent = text; status.classList.toggle('error', error); }
+async function errorDetail(response) {
+  const text = await response.text();
+  try { const data = JSON.parse(text); const detail = data.detail ?? data.error?.message ?? data.error ?? data.message; return typeof detail === 'string' ? detail : JSON.stringify(detail ?? data); }
+  catch { return text.trim().slice(0, 1000); }
+}
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const input = document.getElementById('input').value.trim();
+  if (!input) { message('請輸入要朗讀的文字。', true); document.getElementById('input').focus(); return; }
+  button.disabled = true; button.textContent = '正在產生…'; form.setAttribute('aria-busy', 'true');
+  player.pause(); message('正在產生語音，請稍候。第一次載入模型可能需要較久。');
+  try {
+    const response = await fetch('http://localhost:8000/v1/audio/speech', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: model.value,
+        voice: document.getElementById('voice').value,
+        instruct: tone.value === 'custom' ? instruct.value.trim() : tone.value,
+        input, lang_code: document.getElementById('lang').value,
+        response_format: 'mp3'
+      })
+    });
+    if (!response.ok) { const detail = await errorDetail(response); throw new Error(`API 回應錯誤（HTTP ${response.status}）${detail ? '：' + detail : ''}`); }
+    const type = (response.headers.get('content-type') || '').toLowerCase();
+    if (type.includes('json') || type.startsWith('text/')) throw new Error('API 未傳回音訊：' + await errorDetail(response));
+    const blob = await response.blob();
+    if (!blob.size) throw new Error('API 傳回空的音訊，請重試並查看伺服器紀錄。');
+    const nextUrl = URL.createObjectURL(new Blob([blob], { type: 'audio/mpeg' }));
+    const oldUrl = audioUrl; audioUrl = nextUrl;
+    player.src = audioUrl; download.href = audioUrl; result.hidden = false;
+    if (oldUrl) URL.revokeObjectURL(oldUrl);
+    try { await player.play(); message('語音已產生，正在播放。'); }
+    catch { message('語音已產生。若瀏覽器未自動播放，請按下播放器的播放按鈕。'); }
+  } catch (error) {
+    message(error instanceof TypeError ? '無法連線至本機 API。請確認 MLX Audio Server 已啟動、8000 連接埠可用，並允許此頁面來源的 CORS／瀏覽器本機網路存取權限。' : (error.message || '產生失敗，請重試。'), true);
+  } finally {
+    button.disabled = false; button.textContent = '產生並播放'; form.removeAttribute('aria-busy');
+  }
+});
+player.addEventListener('error', () => { if (player.getAttribute('src')) message('音訊無法播放。請下載 MP3 檢查，並確認 API 傳回有效的 MP3 音訊。', true); });
+window.addEventListener('pagehide', () => { if (audioUrl) { URL.revokeObjectURL(audioUrl); audioUrl = null; player.removeAttribute('src'); result.hidden = true; } });
+</script>
+</body>
+</html>

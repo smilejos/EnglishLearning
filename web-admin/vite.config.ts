@@ -17,6 +17,7 @@ export default defineConfig({
       "/generation-settings": apiTarget,
       "/articles": apiTarget,
       "/words": apiTarget,
+      "/wordbank": apiTarget,
       "/lookups": apiTarget,
       "/audio": apiTarget,
       "/stats": apiTarget,
