@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFile } from "node:fs/promises";
 import { mergeWordbankEntry, parseWordbankDocument, WordbankEntrySchema } from "./wordbank";
-import { validateWordbankAudioManifest, wordbankTextHash, type WordbankAudioManifest } from "./wordbankAudio";
+import { validateWordbankAudioManifest, WordbankAudioManifestSchema, wordbankTextHash, type WordbankAudioManifest } from "./wordbankAudio";
 
 const entry = WordbankEntrySchema.parse({ id: 1, guid: "5cf42a19-a752-5940-9e93-25b1e69e21bf", word: "a" });
 const manifest = (): WordbankAudioManifest => ({
@@ -58,5 +58,22 @@ describe("音檔 manifest 對應", () => {
     expect(() => validateWordbankAudioManifest(wrongExample, [entry])).toThrow("GUID 未對應");
     const duplicate = manifest(); duplicate.entries.push(duplicate.entries[0]);
     expect(() => validateWordbankAudioManifest(duplicate, [entry])).toThrow("GUID 重複");
+  });
+
+  it("英文解釋以自身 GUID 對應、trim 後核對文字與 hash，不能冒用例句或其他字的解釋", () => {
+    const explanation = { guid: "19e00b96-25de-5527-ac24-528cef1e33f9", en: "  A grammar word for one thing.  " };
+    const explained = { ...entry, explains: [explanation] };
+    const data = manifest();
+    data.entries[0] = { ...data.entries[0], kind: "explanation", assetGuid: explanation.guid,
+      text: explanation.en.trim(), textHash: wordbankTextHash(explanation.en), relativePath: `wordbank/abc123/${explanation.guid}.mp3` };
+    expect(WordbankAudioManifestSchema.parse(data)).toEqual(data);
+    expect(() => validateWordbankAudioManifest(data, [explained])).not.toThrow();
+    const wrongHash = structuredClone(data); wrongHash.entries[0].textHash = "0".repeat(64);
+    expect(() => validateWordbankAudioManifest(wrongHash, [explained])).toThrow("文字或 textHash");
+    const wrongKind = structuredClone(data); wrongKind.entries[0].kind = "example";
+    expect(() => validateWordbankAudioManifest(wrongKind, [explained])).toThrow("GUID 未對應");
+    const otherEntry = { ...entry, guid: "64d5d1d1-5838-53c0-967e-9124bcdca6dd", explains: [] };
+    const wrongOwner = structuredClone(data); wrongOwner.entries[0].entryGuid = otherEntry.guid;
+    expect(() => validateWordbankAudioManifest(wrongOwner, [explained, otherEntry])).toThrow("GUID 未對應");
   });
 });

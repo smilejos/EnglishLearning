@@ -9,7 +9,7 @@ export interface WordbankEntry {
   word: string;
   partsOfSpeech: string[];
   definition: string;
-  explains: { guid: string; en: string }[];
+  explains: { guid: string; en: string; audioUrl: string | null }[];
   level: { cefr: string | null; tw_7000: number | null; list: string | null };
   wordAudioUrl: string | null;
   examples: { guid: string; en: string; zh: string; audioUrl: string | null }[];

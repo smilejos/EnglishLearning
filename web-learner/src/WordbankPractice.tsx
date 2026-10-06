@@ -156,7 +156,10 @@ export function WordbankPractice() {
             </div>
             {explainVisible && <section className="wordbank-explains" aria-label="英文解釋">
               <h3>英文解釋</h3>
-              {entry.explains.some((exp) => exp.en.trim()) ? <ul>{entry.explains.filter((exp) => exp.en.trim()).map((exp) => <li key={exp.guid} lang="en">{exp.en}</li>)}</ul>
+              {entry.explains.some((exp) => exp.en.trim()) ? <ul>{entry.explains.filter((exp) => exp.en.trim()).map((exp, index) => <li key={exp.guid}>
+                <p lang="en">{exp.en}</p>
+                <WordbankAudio url={exp.audioUrl} label={`朗讀英文解釋 ${index + 1}`} />
+              </li>)}</ul>
                 : <p className="wordbank-note">英文解釋待補{!showAnswer ? "，可先揭曉答案或換下一個單字。" : "。"}</p>}
             </section>}
             {(showAnswer || mode === "listening") && <section className="wordbank-examples" aria-label="例句">

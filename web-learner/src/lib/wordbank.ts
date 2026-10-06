@@ -15,7 +15,8 @@ export function levelLabel(system: WordbankSystem, value: string): string {
 export function maskWord(word: string, mode: PracticeMode): string {
   const chars = Array.from(word);
   if (mode === "practice") return word;
-  if (chars.length <= 1) return chars[0] ?? "";
-  const showLast = mode === "challenge" && (word.match(/[a-z]/gi)?.length ?? 0) >= 4;
-  return chars[0] + "•".repeat(chars.length - (showLast ? 2 : 1)) + (showLast ? chars.at(-1) : "");
+  const letters = chars.flatMap((char, index) => /\p{L}/u.test(char) ? [index] : []);
+  const first = letters[0];
+  const last = mode === "challenge" && letters.length >= 4 ? letters.at(-1) : undefined;
+  return chars.map((char, index) => index === first || index === last ? char : "•").join("");
 }

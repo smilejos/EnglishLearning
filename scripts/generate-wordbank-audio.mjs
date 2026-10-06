@@ -15,9 +15,10 @@ export const DEFAULT_PROFILE = {
 const hash = (text) => createHash('sha256').update(text).digest('hex');
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
-export function planAudio(database, list = 'basic', profile = DEFAULT_PROFILE) {
+export function planAudio(database, list = 'basic', profile = DEFAULT_PROFILE, kinds = ['word', 'example', 'explanation']) {
   if (!Array.isArray(database.entries)) throw new Error('字庫缺少 entries 陣列');
   if (!['basic', 'advance', 'expert', 'all'].includes(list)) throw new Error('list 必須是 basic、advance、expert 或 all');
+  if (!Array.isArray(kinds) || !kinds.length || kinds.some((kind) => !['word', 'example', 'explanation'].includes(kind))) throw new Error('kinds 必須是 word、example、explanation');
   const profileHash = hash(JSON.stringify(profile)).slice(0, 16);
   const jobs = [];
   const seen = new Set();
@@ -35,8 +36,10 @@ export function planAudio(database, list = 'basic', profile = DEFAULT_PROFILE) {
     append(entry, entry.guid, 'word', entry.word);
     if (!Array.isArray(entry.examples)) throw new Error(`缺少例句：${entry.guid}`);
     for (const example of entry.examples) append(entry, example.guid, 'example', example.en);
+    if (entry.explains !== undefined && !Array.isArray(entry.explains)) throw new Error(`英文解釋格式錯誤：${entry.guid}`);
+    for (const explanation of entry.explains ?? []) append(entry, explanation.guid, 'explanation', explanation.en);
   }
-  return jobs;
+  return jobs.filter((job) => kinds.includes(job.kind));
 }
 
 export async function validateMp3(path) {
@@ -168,14 +171,14 @@ async function main() {
   for (let i = 0; i < args.length; i++) {
     const argument = args[i];
     if (argument === '--generate' || argument === '--dry-run') options[argument.slice(2)] = true;
-    else if (['--input', '--output', '--list', '--endpoint', '--limit'].includes(argument)) {
+    else if (['--input', '--output', '--list', '--kinds', '--endpoint', '--limit'].includes(argument)) {
       if (!args[i + 1] || args[i + 1].startsWith('--')) throw new Error(`${argument} 缺少值`);
       options[argument.slice(2)] = args[++i];
     } else throw new Error(`不支援參數：${argument}`);
   }
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
   const database = JSON.parse(await readFile(resolve(options.input ?? join(root, 'source/vocabulary-database.json')), 'utf8'));
-  const planned = planAudio(database, options.list ?? 'basic');
+  const planned = planAudio(database, options.list ?? 'basic', DEFAULT_PROFILE, options.kinds?.split(','));
   let jobs = planned;
   if (options.limit) {
     const limit = Number(options.limit);
@@ -184,7 +187,8 @@ async function main() {
   }
   const outputDir = resolve(options.output ?? join(root, 'data/wordbank-audio'));
   console.log(JSON.stringify({ profile: DEFAULT_PROFILE, outputDir, words: planned.filter((j) => j.kind === 'word').length,
-    examples: planned.filter((j) => j.kind === 'example').length, selected: jobs.length, total: planned.length }));
+    examples: planned.filter((j) => j.kind === 'example').length,
+    explanations: planned.filter((j) => j.kind === 'explanation').length, selected: jobs.length, total: planned.length }));
   if (!options.generate || options['dry-run']) return;
   if (process.env.WORD_BANK_REAL_TTS !== '1') throw new Error('真實產音須明確設定 WORD_BANK_REAL_TTS=1');
   const controller = new AbortController();

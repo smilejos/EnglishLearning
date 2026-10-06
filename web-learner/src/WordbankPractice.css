@@ -45,7 +45,8 @@ a.learning-path:hover .learning-path__action { text-decoration: underline; text-
 .wordbank-pos { color: var(--text-soft); font-size: .9rem; }
 .wordbank-explains { margin-top: 26px; }
 .wordbank-explains ul { margin: 0; padding-left: 20px; font-family: var(--font-body); font-size: 1.08rem; line-height: 1.75; }
-.wordbank-explains li + li { margin-top: 9px; }
+.wordbank-explains li + li { margin-top: 18px; }
+.wordbank-explains li p { margin: 0 0 8px; }
 .wordbank-examples { margin-top: 30px; }
 .wordbank-examples ol { list-style: none; margin: 0; padding: 0; }
 .wordbank-examples li { padding: 18px 0; border-top: 1px solid var(--border); }

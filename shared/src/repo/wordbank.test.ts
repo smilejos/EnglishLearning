@@ -8,7 +8,9 @@ import { importWordbankAudioManifest } from "./wordbankAudio";
 import { wordbankTextHash, type WordbankAudioManifest } from "../wordbankAudio";
 
 let pool: ReturnType<typeof createPool>;
-const first = WordbankEntrySchema.parse({ id: 1, guid: "5cf42a19-a752-5940-9e93-25b1e69e21bf", word: "a", level: { cefr: "A1", list: "basic", tw_7000: 1 }, examples: [{ guid: "900e7622-ab9d-5ad4-b8ba-a617fa982ffc", en: "A cat.", zh: "一隻貓。" }] });
+const first = WordbankEntrySchema.parse({ id: 1, guid: "5cf42a19-a752-5940-9e93-25b1e69e21bf", word: "a", level: { cefr: "A1", list: "basic", tw_7000: 1 },
+  explains: [{ guid: "19e00b96-25de-5527-ac24-528cef1e33f9", en: "A grammar word for one thing." }],
+  examples: [{ guid: "900e7622-ab9d-5ad4-b8ba-a617fa982ffc", en: "A cat.", zh: "一隻貓。" }] });
 beforeAll(() => { pool = createPool(resolveTestDatabaseUrl()); });
 afterAll(async () => { await pool.end(); });
 beforeEach(async () => { await pool.query("TRUNCATE wordbank_entries CASCADE"); });
@@ -53,16 +55,18 @@ describe("音檔 metadata 匯入", () => {
     profile: { model: "Qwen3-TTS-0.6B-8bit", voice: "Serena", instruct: "Kind teacher", lang_code: "English", response_format: "mp3" },
     entries: [{ assetGuid: first.guid, entryGuid: first.guid, kind: "word", text: first.word, textHash: wordbankTextHash(first.word), relativePath: `wordbank/test/${first.guid}.mp3`, durationSeconds: 1, bytes: 100, generatedAt: "2026-10-05T01:00:00.000Z" }] });
 
-  it("word 和 example 的 GUID 都能存入，重匯 metadata 不重複且字庫重匯保留音檔", async () => {
+  it("word、example 與 explanation 的 GUID 都能存入，重匯 metadata 不重複且字庫重匯保留音檔", async () => {
     await importWordbankEntries(pool, [first]);
     const data = manifest();
     const example = first.examples[0];
     data.entries.push({ ...data.entries[0], assetGuid: example.guid, kind: "example", text: example.en, textHash: wordbankTextHash(example.en), relativePath: `wordbank/test/${example.guid}.mp3` });
-    expect(await importWordbankAudioManifest(pool, data)).toBe(2);
+    const explanation = first.explains[0];
+    data.entries.push({ ...data.entries[0], assetGuid: explanation.guid, kind: "explanation", text: explanation.en, textHash: wordbankTextHash(explanation.en), relativePath: `wordbank/test/${explanation.guid}.mp3` });
+    expect(await importWordbankAudioManifest(pool, data)).toBe(3);
     data.entries[0].durationSeconds = 2;
     await importWordbankAudioManifest(pool, data);
     await importWordbankEntries(pool, [first]);
-    expect((await pool.query("SELECT count(*) FROM wordbank_audio")).rows[0].count).toBe("2");
+    expect((await pool.query("SELECT count(*) FROM wordbank_audio")).rows[0].count).toBe("3");
     expect((await pool.query("SELECT duration_seconds FROM wordbank_audio WHERE asset_guid = $1", [first.guid])).rows[0].duration_seconds).toBe(2);
   });
 
@@ -70,6 +74,17 @@ describe("音檔 metadata 匯入", () => {
     await importWordbankEntries(pool, [first]);
     const data = manifest(); data.entries[0].textHash = "0".repeat(64);
     await expect(importWordbankAudioManifest(pool, data)).rejects.toThrow("文字或 textHash");
+    expect((await pool.query("SELECT count(*) FROM wordbank_audio")).rows[0].count).toBe("0");
+  });
+
+  it("解釋 GUID 若屬於其他字，整批 metadata 都不匯入", async () => {
+    const explanation = { guid: "7bc2abec-ce1f-4103-9d9d-4b4fb49d3e99", en: "The power to do something." };
+    const second = { ...first, guid: "64d5d1d1-5838-53c0-967e-9124bcdca6dd", id: 2, word: "ability", explains: [explanation], examples: [] };
+    await importWordbankEntries(pool, [first, second]);
+    const data = manifest();
+    data.entries.push({ ...data.entries[0], assetGuid: explanation.guid, kind: "explanation",
+      text: explanation.en, textHash: wordbankTextHash(explanation.en), relativePath: `wordbank/test/${explanation.guid}.mp3` });
+    await expect(importWordbankAudioManifest(pool, data)).rejects.toThrow("GUID 未對應");
     expect((await pool.query("SELECT count(*) FROM wordbank_audio")).rows[0].count).toBe("0");
   });
 });

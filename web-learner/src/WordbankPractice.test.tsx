@@ -12,7 +12,7 @@ const options: WordbankOptions = { total: 9166, systems: {
   tw_7000: [{ value: "all", count: 9166 }, { value: "1", count: 500 }],
 } };
 const entry: WordbankEntry = {
-  guid: "apple-guid", word: "apple", partsOfSpeech: ["noun"], definition: "蘋果", explains: [{ guid: "exp1", en: "A round fruit." }, { guid: "exp2", en: "A fruit growing on trees." }],
+  guid: "apple-guid", word: "apple", partsOfSpeech: ["noun"], definition: "蘋果", explains: [{ guid: "exp1", en: "A round fruit.", audioUrl: "/audio/exp1.mp3" }, { guid: "exp2", en: "A fruit growing on trees.", audioUrl: null }],
   level: { list: "basic", cefr: "A1", tw_7000: 1 }, wordAudioUrl: "/audio/apple.mp3",
   examples: [1, 2, 3].map((n) => ({ guid: `ex${n}`, en: `I eat an apple ${n}.`, zh: `我吃蘋果 ${n}。`, audioUrl: n === 3 ? null : `/audio/ex${n}.mp3` })),
 };
@@ -52,10 +52,35 @@ describe("字庫練習", () => {
     expect(container.innerHTML).not.toContain("apple");
     expect(container.textContent).not.toContain("蘋果");
     expect(container.textContent).not.toContain("A round fruit.");
+    expect(screen.queryByRole("button", { name: /朗讀英文解釋/ })).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "揭曉答案" }));
     expect(screen.getByRole("heading", { name: "apple" })).toBeTruthy();
     expect(screen.getByText("I eat an apple 1.")).toBeTruthy();
     expect(screen.getByText("我吃蘋果 1。")).toBeTruthy();
+  });
+
+  it("英文解釋可朗讀並與其他音源互斥，挑戰可聽提示，聽力揭曉才開放", async () => {
+    render(<WordbankPractice />);
+    await screen.findByRole("heading", { name: "apple" });
+    expect((screen.getByRole("button", { name: "朗讀英文解釋 2（音檔待準備）" }) as HTMLButtonElement).disabled).toBe(true);
+    fireEvent.click(screen.getByRole("button", { name: "朗讀單字" }));
+    fireEvent.click(screen.getByRole("button", { name: "朗讀英文解釋 1" }));
+    expect(audios[0].pause).toHaveBeenCalled();
+    expect(audios[1].url).toBe("/audio/exp1.mp3");
+    fireEvent.click(screen.getByRole("button", { name: "單字挑戰" }));
+    expect(audios[1].pause).toHaveBeenCalled();
+    await screen.findByRole("heading", { name: "單字提示" });
+    fireEvent.click(screen.getByRole("button", { name: "朗讀英文解釋 1" }));
+    expect(audios[2].url).toBe("/audio/exp1.mp3");
+    fireEvent.click(screen.getByRole("button", { name: "聽力練習" }));
+    expect(audios[2].pause).toHaveBeenCalled();
+    await screen.findByRole("heading", { name: "單字提示" });
+    expect(screen.queryByRole("button", { name: /朗讀英文解釋/ })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "揭曉答案" }));
+    fireEvent.click(screen.getByRole("button", { name: "朗讀英文解釋 1" }));
+    expect(audios[3].url).toBe("/audio/exp1.mp3");
+    fireEvent.click(screen.getByRole("button", { name: /下一個單字/ }));
+    expect(audios[3].pause).toHaveBeenCalled();
   });
 
   it("挑戰顯示全部英文解釋，短字只露首字，切換模式重設揭曉", async () => {

@@ -6,7 +6,10 @@ import type { AuthConfig } from "../auth";
 
 const config: AuthConfig = { cfAccess: null, devAuthBypass: true, devUserEmail: "reader@example.com", adminEmails: [] };
 const first = WordbankEntrySchema.parse({ id: 1, guid: "5cf42a19-a752-5940-9e93-25b1e69e21bf", word: "a", parts_of_speech: ["art"], definition: "一個", level: { cefr: "A1", list: "basic", tw_7000: 1 },
-  explains: [{ guid: "19e00b96-25de-5527-ac24-528cef1e33f9", en: "A grammar word for one thing." }],
+  explains: [
+    { guid: "19e00b96-25de-5527-ac24-528cef1e33f9", en: "A grammar word for one thing." },
+    { guid: "7bc2abec-ce1f-4103-9d9d-4b4fb49d3e99", en: "Used before a singular noun." },
+  ],
   examples: [
     { guid: "900e7622-ab9d-5ad4-b8ba-a617fa982ffc", en: "A cat.", zh: "一隻貓。" },
     { guid: "8a847019-ec3f-539e-98ad-bef40c4dc379", en: "A dog.", zh: "一隻狗。" },
@@ -42,7 +45,7 @@ describe("單字練習 API", () => {
     expect(result.statusCode).toBe(200);
     const { poolSize, entry } = result.json<{ poolSize: number; entry: WordbankPracticeEntry }>();
     expect(poolSize).toBe(1);
-    expect(entry).toMatchObject({ guid: first.guid, word: "a", partsOfSpeech: ["art"], definition: "一個", explains: first.explains, level: first.level, wordAudioUrl: null });
+    expect(entry).toMatchObject({ guid: first.guid, word: "a", partsOfSpeech: ["art"], definition: "一個", explains: first.explains.map((explanation) => ({ ...explanation, audioUrl: null })), level: first.level, wordAudioUrl: null });
     expect(entry.examples).toHaveLength(3);
     expect(new Set(entry.examples.map((example) => example.guid)).size).toBe(3);
     for (const example of entry.examples) expect(example).toEqual({ ...first.examples.find((candidate) => candidate.guid === example.guid), audioUrl: null });
@@ -72,17 +75,36 @@ describe("單字練習 API", () => {
 
   it("MP3 metadata 回既有音訊URL，改過文字的舊音檔不播放", async () => {
     const assets = [{ assetGuid: first.guid, entryGuid: first.guid, kind: "word" as const, text: first.word },
+      ...first.explains.map((explanation) => ({ assetGuid: explanation.guid, entryGuid: first.guid, kind: "explanation" as const, text: explanation.en })),
       ...first.examples.map((example) => ({ assetGuid: example.guid, entryGuid: first.guid, kind: "example" as const, text: example.en }))];
     await importWordbankAudioManifest(pool, { version: 1,
       profile: { model: "qwen", voice: "Serena", instruct: "Kind teacher", lang_code: "English", response_format: "mp3" },
       entries: assets.map((asset) => ({ ...asset, textHash: wordbankTextHash(asset.text), relativePath: `wordbank/test/${asset.assetGuid}.mp3`, durationSeconds: 1, bytes: 100, generatedAt: "2026-10-05T01:00:00.000Z" })) });
     const entry = (await app.inject("/wordbank/random?system=list&levels=basic")).json().entry;
     expect(entry.wordAudioUrl).toBe(`/audio/wordbank/test/${first.guid}.mp3`);
+    expect(entry.explains).toEqual(first.explains.map((explanation) => ({ ...explanation, audioUrl: `/audio/wordbank/test/${explanation.guid}.mp3` })));
     for (const example of entry.examples) expect(example.audioUrl).toBe(`/audio/wordbank/test/${example.guid}.mp3`);
     await pool.query("UPDATE wordbank_audio SET text_hash = $1", ["0".repeat(64)]);
     const stale = (await app.inject("/wordbank/random?system=list&levels=basic")).json().entry;
     expect(stale.wordAudioUrl).toBeNull();
+    expect(stale.explains.every((explanation: { audioUrl: string | null }) => explanation.audioUrl === null)).toBe(true);
     expect(stale.examples.every((example: { audioUrl: string | null }) => example.audioUrl === null)).toBe(true);
+  });
+
+  it("解釋改字或 metadata 屬於其他詞條／種類時不回舊音檔", async () => {
+    const explanation = first.explains[0];
+    await importWordbankAudioManifest(pool, { version: 1,
+      profile: { model: "qwen", voice: "Serena", instruct: "Kind teacher", lang_code: "English", response_format: "mp3" },
+      entries: [{ assetGuid: explanation.guid, entryGuid: first.guid, kind: "explanation", text: explanation.en,
+        textHash: wordbankTextHash(explanation.en), relativePath: `wordbank/test/${explanation.guid}.mp3`, durationSeconds: 1, bytes: 100, generatedAt: "2026-10-05T01:00:00.000Z" }] });
+    const getExplanation = async () => (await app.inject("/wordbank/random?system=list&levels=basic")).json().entry.explains[0];
+    await pool.query("UPDATE wordbank_audio SET entry_guid = $1 WHERE asset_guid = $2", [second.guid, explanation.guid]);
+    expect((await getExplanation()).audioUrl).toBeNull();
+    await pool.query("UPDATE wordbank_audio SET entry_guid = $1, kind = 'example' WHERE asset_guid = $2", [first.guid, explanation.guid]);
+    expect((await getExplanation()).audioUrl).toBeNull();
+    await pool.query("UPDATE wordbank_audio SET kind = 'explanation' WHERE asset_guid = $1", [explanation.guid]);
+    await pool.query("UPDATE wordbank_entries SET explains = $1::jsonb WHERE guid = $2", [JSON.stringify([{ ...explanation, en: "Changed explanation." }]), first.guid]);
+    expect(await getExplanation()).toEqual({ guid: explanation.guid, en: "Changed explanation.", audioUrl: null });
   });
 
   it("正常身份驗證保留；抽題不建立文章job、共用單字或收藏", async () => {

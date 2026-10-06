@@ -33,6 +33,24 @@ test('精確 basic 篩選，單字與所有例句有穩定 GUID 路徑與文字 
   assert.throws(() => planAudio({ entries: [{ ...database.entries[0], word: '' }] }), /缺少朗讀文字/);
 });
 
+test('英文解釋按 GUID 產音，可只補解釋並保留原有 manifest', async () => withOutput(async (outputDir) => {
+  const expanded = structuredClone(database);
+  const guid = '44444444-4444-5444-8444-444444444444';
+  expanded.entries[0].explains = [{ guid, en: ' A round fruit that grows on trees. ' }];
+  const jobs = planAudio(expanded, 'basic', DEFAULT_PROFILE, ['explanation']);
+  assert.equal(jobs.length, 1);
+  assert.equal(jobs[0].assetGuid, guid);
+  assert.equal(jobs[0].entryGuid, entryGuid);
+  assert.equal(jobs[0].text, 'A round fruit that grows on trees.');
+  assert.equal(jobs[0].kind, 'explanation');
+  await generateBatch({ jobs: planAudio(database), outputDir, validate, log() {}, fetchImpl: async () => mockAudio() });
+  await generateBatch({ jobs, outputDir, validate, log() {}, fetchImpl: async () => mockAudio() });
+  const manifest = JSON.parse(await readFile(join(outputDir, 'manifest.json'), 'utf8'));
+  assert.equal(manifest.entries.length, 3);
+  assert.equal((await generateBatch({ jobs, outputDir, validate, log() {}, fetchImpl: async () => mockAudio() })).skipped, 1);
+  assert.throws(() => planAudio(expanded, 'basic', DEFAULT_PROFILE, ['unknown']), /kinds/);
+}));
+
 test('保存指定生成設定；續跑跳過有效檔，损毀音檔重新產生', async () => withOutput(async (outputDir) => {
   const jobs = planAudio(database);
   let requests = 0;

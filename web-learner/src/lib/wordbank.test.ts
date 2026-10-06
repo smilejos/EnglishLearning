@@ -11,4 +11,10 @@ describe("揭曉前遮字", () => {
     expect(maskWord("a", "challenge")).toBe("a");
     expect(maskWord("apple", "practice")).toBe("apple");
   });
+  it("重音字母計入四字母界線，標點不當成字尾", () => {
+    expect(maskWord("café", "challenge")).toBe("c••é");
+    expect(maskWord("Congratulations!", "challenge")).toBe("C" + "•".repeat(13) + "s•");
+    expect(maskWord("Congratulations!", "listening")).toBe("C" + "•".repeat(15));
+    expect(maskWord("", "challenge")).toBe("");
+  });
 });

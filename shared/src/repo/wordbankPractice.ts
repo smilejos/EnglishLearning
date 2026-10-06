@@ -16,7 +16,7 @@ export interface WordbankPracticeEntry {
   word: string;
   partsOfSpeech: string[];
   definition: string;
-  explains: Array<{ guid: string; en: string }>;
+  explains: Array<{ guid: string; en: string; audioUrl: string | null }>;
   level: WordbankEntry["level"];
   wordAudioUrl: string | null;
   examples: Array<{ guid: string; en: string; zh: string; audioUrl: string | null }>;
@@ -43,6 +43,7 @@ export async function getWordbankPracticeOptions(db: Queryable): Promise<Wordban
 }
 
 interface AudioMetadata { relative_path: string; text_hash: string }
+interface ExplanationWithAudio { guid: string; en: string; audio: AudioMetadata | null }
 const audioUrl = (audio: AudioMetadata | null, text: string): string | null =>
   audio && audio.text_hash === wordbankTextHash(text) && /^wordbank\/[a-zA-Z0-9_-]+\/[a-f0-9-]+\.mp3$/.test(audio.relative_path)
     ? `/audio/${audio.relative_path}` : null;
@@ -53,12 +54,16 @@ export async function getRandomWordbankPracticeEntry(
 ): Promise<{ poolSize: number; entry: WordbankPracticeEntry | null }> {
   const where = filter ? `WHERE (level->>$1 = ANY($2::text[]) OR ($3::boolean AND level->>$1 IS NULL))` : "";
   const params = filter ? [filter.system, filter.levels.filter((level) => level !== null), filter.levels.includes(null)] : [];
-  const result = await db.query<{ pool_size: number; entry: (WordbankEntry & { word_audio: AudioMetadata | null; selected_examples: Array<{ guid: string; en: string; zh: string; audio: AudioMetadata | null }> }) | null }>(
+  const result = await db.query<{ pool_size: number; entry: (WordbankEntry & { word_audio: AudioMetadata | null; explanations_audio: ExplanationWithAudio[]; selected_examples: Array<{ guid: string; en: string; zh: string; audio: AudioMetadata | null }> }) | null }>(
     `WITH eligible AS MATERIALIZED (SELECT * FROM wordbank_entries ${where}),
       chosen AS (SELECT * FROM eligible ORDER BY random() LIMIT 1)
       SELECT (SELECT count(*)::int FROM eligible) AS pool_size,
         (SELECT jsonb_build_object('guid', e.guid, 'word', e.word, 'parts_of_speech', e.parts_of_speech,
           'definition', e.definition, 'explains', e.explains, 'level', e.level,
+          'explanations_audio', COALESCE((SELECT jsonb_agg(x.explanation || jsonb_build_object('audio',
+            CASE WHEN a.asset_guid IS NULL THEN NULL ELSE jsonb_build_object('relative_path', a.relative_path, 'text_hash', a.text_hash) END) ORDER BY x.ordinality)
+            FROM jsonb_array_elements(e.explains) WITH ORDINALITY x(explanation, ordinality)
+            LEFT JOIN wordbank_audio a ON a.asset_guid = (x.explanation->>'guid')::uuid AND a.entry_guid = e.guid AND a.kind = 'explanation'), '[]'::jsonb),
           'word_audio', CASE WHEN w.asset_guid IS NULL THEN NULL ELSE jsonb_build_object('relative_path', w.relative_path, 'text_hash', w.text_hash) END,
           'selected_examples', COALESCE((SELECT jsonb_agg(s.example || jsonb_build_object('audio',
             CASE WHEN a.asset_guid IS NULL THEN NULL ELSE jsonb_build_object('relative_path', a.relative_path, 'text_hash', a.text_hash) END))
@@ -70,7 +75,9 @@ export async function getRandomWordbankPracticeEntry(
   const entry = row.entry;
   return { poolSize: row.pool_size, entry: {
     guid: entry.guid, word: entry.word, partsOfSpeech: entry.parts_of_speech,
-    definition: entry.definition, explains: entry.explains, level: entry.level,
+    definition: entry.definition,
+    explains: entry.explanations_audio.map((explanation) => ({ guid: explanation.guid, en: explanation.en,
+      audioUrl: audioUrl(explanation.audio, explanation.en) })), level: entry.level,
     wordAudioUrl: audioUrl(entry.word_audio, entry.word),
     examples: entry.selected_examples.map((example) => ({ guid: example.guid, en: example.en, zh: example.zh,
       audioUrl: audioUrl(example.audio, example.en) })),
