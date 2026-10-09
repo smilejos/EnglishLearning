@@ -14,3 +14,4 @@ export * from "./stats";
 export * from "./wordbank";
 export * from "./wordbankAudio";
 export * from "./wordbankPractice";
+export * from "./scenarios";

@@ -16,10 +16,10 @@ export function LearningHome() {
         <div><h2>單字練習</h2><p>選擇程度，以單純練習、聽力或英文解釋挑戰自己。</p></div>
         <span className="learning-path__action">開始練習 <span aria-hidden="true">→</span></span>
       </a>
-      <div className="learning-path learning-path--soon" aria-disabled="true">
+      <a className="learning-path" href="#/scenarios">
         <div><h2>情境模擬</h2><p>在生活情境中運用英文。</p></div>
-        <span className="learning-path__action">即將推出</span>
-      </div>
+        <span className="learning-path__action">開始探索 <span aria-hidden="true">→</span></span>
+      </a>
     </nav>
     <a className="learning-home__review" href="#/review"><HeadphonesIcon size={18} /> 回到我的單字複習 <span aria-hidden="true">→</span></a>
   </main>;

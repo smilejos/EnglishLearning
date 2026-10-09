@@ -1,7 +1,7 @@
 # 專案架構與功能導覽（以程式碼為準）
 
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-10-07（字庫中文釋義與英文解釋補齊）。本機正式 DB 已套用字庫 migration、匯入全部 9,166 詞條；來源 JSON 與正式字庫逐筆一致，中文釋義、英文解釋及例句缺漏均為零，補齊結果見 [完成報告](wordbank-completion-2026-10-07.md)。basic 的 1,193 單字、4,108 英文例句與 3,591 英文解釋共 8,892 段 MP3 已完成，並複製至 audio volume、匯入 metadata；本次補文字保留全部音檔 metadata，未新增產音。新版程式已在本機預覽，尚未部署新版服務，不代表網站已上線。舊圖片轉換 migration 已於 2026-09-27 套用正式 DB，相關程式碼的部署狀態仍另行確認。
+> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-10-09（正式情境功能與離線素材）。本輪情境 migration、匯入器、API 與 learner 已實作，只在 `_test` 作本機 QA；底圖已目視通過，Serena 故事 31.896 秒待使用者試聽，客廳 advance 27 段已生成但正式 metadata 尚未匯入。情境正式庫寫入、部署及發布尚未執行。2026-10-07 字庫補齊的既有正式資料狀態如下：本機正式 DB 已套用字庫 migration、匯入全部 9,166 詞條；來源 JSON 與正式字庫逐筆一致，中文釋義、英文解釋及例句缺漏均為零，補齊結果見 [完成報告](wordbank-completion-2026-10-07.md)。basic 的 1,193 單字、4,108 英文例句與 3,591 英文解釋共 8,892 段 MP3 已完成，並複製至 audio volume、匯入 metadata；本次補文字保留全部音檔 metadata，未新增產音。新版程式已在本機預覽，尚未部署新版服務，不代表網站已上線。舊圖片轉換 migration 已於 2026-09-27 套用正式 DB，相關程式碼的部署狀態仍另行確認。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理；初始整理未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。後續同步會連結已確認的需求文件。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 ## 1. 先讀這裡：專案目的與全貌
@@ -10,13 +10,14 @@
 
 產品有兩個介面：**學習前台**與**管理後台**。後端由一個 API、文章 worker、圖片 worker 組成，共用 PostgreSQL；音檔與圖片存放在檔案 volume，DB 保存路徑及 metadata。
 
-五條主流程：
+六條主流程：
 
 1. **文章教材**：後台輸入標題／英文內文 → API 依空白行切段、建立 DB jobs → worker 翻譯與合成語音 → 前台閱讀、聆聽。
 2. **語境單字**：點單字先讀既有解釋 → admin／reviewer 可用本篇脈絡產生解釋 → API 先回文字，再於 API 行程內背景補音檔 → 全站共用。
 3. **收藏複習**：單字卡主動收藏 → 保存單字與來源快照 → 快速複習／自行判斷的快速挑戰 → 標熟悉後移出待複習，可重新收藏。
 4. **文章插圖**：admin 估價並建立版本 → 文字模型提出視覺設定與可編輯 Prompt → 人工逐步生成、審核參考圖與封面 → 逐段生圖或略過 → 整版發布 → 前台顯示。
 5. **字庫練習**：入口首頁選單字練習 → 選一套分級及精確級別 → API 隨機抽一個詞條及最多三個例句 → 單純練習、聽力或單字挑戰；不保存作答紀錄或建立收藏。
+6. **情境學習**：離線十五詞套件與素材 → 明示目標 DB 匯入 draft → admin 發布 revision → 前台看圖學習／回想、聽故事與按 GUID 查字庫。程式已實作，正式資料與部署尚未執行；流程見 [情境匯入文件](scenarios/generation-import-workflow.md)。
 
 新 agent 必須先知道的邊界：
 
@@ -58,13 +59,14 @@ flowchart TD
 | `package.json` | npm workspaces 與跨 workspace 指令；共五個 workspace |
 | `api/src/server.ts` | 組裝正式 config、DB、LLM client、限流與圖片模型可用性；啟動 HTTP |
 | `api/src/app.ts` | 可注入依賴的 Fastify 工廠；組裝 auth、路由、音檔服務、錯誤處理 |
-| `api/src/routes/` | articles、lookups、vocabulary、wordbank、taxonomy、users、stats、illustrations 的 HTTP 邊界 |
+| `api/src/routes/` | articles、lookups、vocabulary、wordbank、scenarios、taxonomy、users、stats、illustrations 的 HTTP 邊界 |
 | `worker/src/index.ts`、`processor.ts` | 文章 jobs 輪詢與處理流程 |
 | `worker/src/image-index.ts` | 圖片服務獨立入口；和文章 worker 使用同一 Docker image，但為另一個行程／服務 |
 | `shared/src/repo/` | 核心實體的參數化 SQL、查詢、camelCase 映射 |
 | `shared/src/db.ts`、`config.ts`、`schemas.ts` | DB pool／交易、環境設定驗證、核心 Zod 契約 |
 | `shared/src/llm/`、`generationSettings.ts`、`generationClients.ts` | Google／OpenAI 文字與語音 client、載入 config 模型清單／驗證及依工作設定建立 client |
 | `shared/src/audioFiles.ts`、`audioEncode.ts` | 共用音檔寫入／刪除與 ffmpeg 編碼 |
+| `shared/src/scenarios.ts`、`repo/scenarios.ts`、`scripts/import-scenario.ts` | 十五詞契約、媒體 hash／安全路徑、不可覆寫 revision、匯入及發布 |
 | `shared/src/illustrations/` | 圖片契約、模型／價格目錄、版本與審核、佇列、供應商、檔案儲存 |
 | `web-learner/src/` | React 學習前台；`App.tsx`、`LearningHome.tsx`、`WordbankPractice.tsx`、`useArticlePlayer.ts`、`AudioBar.tsx`、`Illustration.tsx` |
 | `web-admin/src/` | React 後台；`App.tsx` 管主要頁面，`GenerationSettings.tsx` 管文字／語音／圖片三項生成設定，`AudioBackfillPanel.tsx` 管缺失音檔，`Illustrations.tsx` 管圖片生命週期 |
@@ -93,6 +95,8 @@ flowchart TD
 | 文章新增／修改 metadata／刪除／重試／重生 | 不可 | 不可 | 可 |
 | 分類標籤異動、單字解釋刪除、補音檔 | 不可 | 不可 | 可 |
 | 插圖估價／生成／審核／發布、查看草稿圖 | 不可 | 不可 | 可 |
+| 情境匯入／發布、指定 revision 查看草稿及媒體 | 不可 | 不可 | 可 |
+| 查看已發布情境與媒體、按 GUID 讀字庫 | 可 | 可 | 可 |
 | 讀寫生成供應商與模型設定 | 不可 | 不可 | 可 |
 | 統計、使用者角色管理 | 不可 | 不可 | 可 |
 
@@ -103,7 +107,7 @@ flowchart TD
 - 每次受保護請求透過 `ensureUser` 建立使用者或更新 `last_seen_at`，不覆寫既有 DB 角色。
 - `ADMIN_EMAILS` 優先決定有效 admin 身分；未命中時沿用 DB role。DB enum 仍容許 `admin`，因此不能宣稱程式在任何情況都只接受環境變數 admin。
 - 管理 API 只能指派 `reader`／`reviewer`，支援預先建立 email；新建但尚未登入者的 `last_seen_at` 為 null。此操作不等於替 Cloudflare Access 設定通行名單。
-- 應用層預設放行 `/healthz`、`/audio/` 路徑；`/images/*` 要驗證身分，非 admin 只能取目前發布版本選用的圖片。外部 Cloudflare Access 規則不在程式庫內，不能僅憑本機設定斷言線上保護情況。
+- 應用層預設放行 `/healthz`、`/audio/` 路徑，但公共音檔服務拒絕情境 `scenarios/`；情境媒體走 `/scenarios/.../media/:kind` 並驗證身分與 draft／published 權限；`/images/*` 要驗證身分，非 admin 只能取目前發布版本選用的圖片。外部 Cloudflare Access 規則不在程式庫內，不能僅憑本機設定斷言線上保護情況。
 
 ## 4. 學習前台功能
 
@@ -111,13 +115,20 @@ flowchart TD
 
 ### 入口首頁與獨立字庫練習
 
-- 根路徑（空 hash）顯示首頁；「文章閱讀」開啟 `#/articles`，「單字練習」開啟 `#/practice`，「情境模擬」停用並標示即將推出。品牌按鈕回首頁，既有 `#/a/<id>` 與 `#/review` 仍有效；課文返回文章清單，從複習進入的課文返回複習頁。
+- 根路徑（空 hash）顯示首頁；「文章閱讀」開啟 `#/articles`，「單字練習」開啟 `#/practice`，「情境模擬」開啟 `#/scenarios` 已發布情境清單。品牌按鈕回首頁，既有 `#/a/<id>` 與 `#/review` 仍有效；課文返回文章清單，從複習進入的課文返回複習頁。
 - 字庫頁預設使用「字庫分級」及「全部」、模式為「單純練習」。一次選 `list`、`cefr` 或 `tw_7000` 一套制度，同套可多選精確級別及「未分類」，選 A2 不累計 A1。選「全部」會清除個別級別；取消最後一個級別會回到全部，切制度也重設全部。
 - API 隨機抽一個符合範圍的詞條，保留同詞條全部詞性、中文定義與英文解釋，隨機取最多三個中英例句；未滿三句時全部顯示，不補造資料。下一字可再次抽中同字，不維護抽題歷史。
 - 單純練習直接顯示完整內容。聽力揭曉前只露第一個字母，例句文字與解釋不放入 DOM，只提供可用的單字／例句音訊。挑戰揭曉前顯示全部非空英文解釋；滿四個 Unicode 字母露首尾，較短只露首字母，其他字元以圓點遮蔽。揭曉後顯示完整字詞、詞性、中文定義、英文解釋與中英例句。
 - 缺文字顯示「待補」，缺音檔顯示「待準備」並停用朗讀；不觸發 LLM 或 TTS。播放失敗可重試，音訊與既有 audioBus 共用仲裁。切模式、篩選、下一字會停止音訊、重抽並重設揭曉；離頁也停止，舊請求取消後不覆蓋新結果。
 - 字庫英文解釋也逐段提供朗讀：單純練習、挑戰提示及揭曉後可播；聽力揭曉前不顯示解釋或朗讀按鈕。basic 追加 3,591 段解釋已生成並接入，總音檔為 8,892；`data/wordbank-audio/explanation-completion.json` 狀態為 complete。
 - 級別及抽題各有載入／錯誤／重試狀態，空範圍顯示調整級別提示。揭曉後焦點移至答案標題，揭曉前朗讀標籤不包含答案。頁面不保存成績、熟悉或收藏資料，不影響文章收藏／複習。
+
+### 情境模擬
+
+- `#/scenarios` 讀已發布清單，`#/scenarios/<key>` 讀目前發布 revision；空清單、載入失敗／重試及缺素材均有提示。程式已接首頁，正式情境資料尚未匯入或發布。
+- 無標籤底圖疊十五詞 HTML 標籤與指向位置；手機先放大圖。點圖或故事按 GUID 開單字 Modal，顯示本次詞義及原字庫內容；先顯示第一筆解釋／例句，其餘可展開。
+- 故事由「放大圖片」旁按鈕開 Modal，繁中預設收合；查詞切換同一 Modal 並可返回。完整旁白有播放／暫停、重播、速度與失敗重試；共用音源仲裁，查詞／關閉 Modal 時暫停並保留故事位置，不自動續播。
+- 看圖回想揭曉前移除標籤、故事、翻譯及答案入口；自行回想與揭曉，不新增作答紀錄或收藏。Modal 支援焦點回復、Escape、背景關閉、背景鎖捲動。
 
 ### 文章瀏覽與閱讀
 
@@ -301,6 +312,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | 收藏 | `vocabulary_items(user_id,word)` unique，保存 active／mastered 與 saved_at；`vocabulary_sources` 保存來源／分類快照，來源 unique `(item_id,article_id,paragraph_id)`；文章／段落刪除時 FK SET NULL，收藏刪除時來源 CASCADE；不依賴共用 words FK |
 | 獨立字庫 | `wordbank_entries.guid` UUID 主鍵，保存來源 id、word、詞性、定義、例句／解釋 JSONB、level 三套分級、category／scenario；匯入保留後補內容，只填缺漏、合併陣列，不刪既有詞條 |
 | 字庫音檔 | `wordbank_audio.asset_guid` UUID 主鍵，引用詞條 GUID；kind 為 word／example／explanation，保存相對路徑、模型／聲線／語氣、文字 hash、時長、大小及生成時間。英文解釋使用 explains[].guid；匯入前核對 GUID 所屬詞條與當下文字 hash |
+| 情境 | `learning_scenarios` 保存目前發布指標；`scenario_revisions` 以 `(scenario_key,revision)` 保存 content／media/hash、draft／published，不可原地覆寫；`scenario_word_links` FK 引用字庫 GUID。migration `1791504000000_scenarios.sql` 尚未套正式庫 |
 | 圖片估價／版本 | `illustration_estimates`、`article_visual_runs`、`article_visual_publications`；每篇只有一個目前發布指標 |
 | 圖片內容 | `illustration_slots` 表示 cover／paragraph／reference；新版 slot 保存可編輯 Prompt 草稿及修訂號，每 slot 多個 candidates，candidate 保存當次實際生圖 Prompt，selected candidate 有歸屬約束 |
 | 圖片檔案 | `illustration_assets` 與 `illustration_asset_files` 一對多；variant、object key、尺寸、MIME、bytes |
@@ -324,13 +336,17 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | 路由 | 權限／用途 | 原始碼 |
 | --- | --- | --- |
 | `GET /healthz`、`GET /me` | 健康檢查公開；目前身分需驗證 | `api/src/app.ts` |
-| `GET /audio/*` | 應用層公開音檔 | `api/src/static.ts` |
+| `GET /audio/*` | 應用層公開一般音檔，封鎖情境 `scenarios/` 路徑 | `api/src/static.ts` |
 | `GET /articles`、`GET /articles/:id` | 文章清單／詳情，附已發布圖片 | `api/src/routes/articles.ts` |
 | `POST /articles`、`PATCH /articles/:id`、`DELETE /articles/:id` | admin 文章管理 | 同上 |
 | `POST /articles/:id/retry`、`POST /articles/:id/paragraphs/:pid/regenerate` | admin 重試／指定產物重生 | 同上 |
 | `GET /words/:word/explanations`、`GET /articles/:id/lookups` | 既有解釋／全站已解釋字標記 | `api/src/routes/lookups.ts` |
 | `GET/POST /vocabulary`、`PATCH/DELETE /vocabulary/:id` | 已登入使用者列出／收藏／改熟悉狀態／取消收藏；不產生 AI 內容 | `api/src/routes/vocabulary.ts` |
 | `GET /wordbank/options`、`GET /wordbank/random` | 已登入使用者取得三套分級數量／隨機詞條及最多三例句；不產生 AI 內容或寫入收藏 | `api/src/routes/wordbank.ts`、`shared/src/repo/wordbankPractice.ts` |
+| `GET /wordbank/entries/:guid` | 已登入使用者按 GUID 讀完整指定字庫詞條與有效音訊，不產生內容 | `api/src/routes/wordbank.ts` |
+| `GET /scenarios`、`GET /scenarios/:key`、`GET /scenarios/:key/revisions/:revision` | reader 讀 published；admin 指定 revision 可讀 draft，`includeDrafts=true` 清單限 admin | `api/src/routes/scenarios.ts` |
+| `GET /scenarios/:key/revisions/:revision/media/:kind` | 同版本權限讀 image／audio，核對檔案 hash、安全路徑，支援 Range | 同上 |
+| `POST /scenarios/import`、`POST /scenarios/:key/revisions/:revision/publish` | admin 匯入 draft／指定版本發布，匯入不自動發布 | 同上 |
 | `POST /lookups` | admin／reviewer 語境解釋 | `api/src/routes/lookups.ts` |
 | `GET /words`、`GET /articles/:id/explanations` | admin 搜尋／文章來源解釋 | 同上 |
 | `DELETE /words/:id`、`DELETE /explanations/:id`、`GET /lookups/missing-audio`、`POST /lookups/backfill-audio` | admin 刪除／列出缺檔／補音檔；POST 帶 `{kind,id}` 補單檔，無 body 沿用舊批次模式 | 同上 |
@@ -352,7 +368,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 
 圖片路由只在 `buildApp` 提供 illustrations dependencies 時掛載；正式 `server.ts` 由 `IMAGE_MODELS_FILE` 決定是否載入 catalog。POST lookup／backfill 也需要 lookup dependencies；這是可測試組裝方式，不代表正式 server 預設缺少它們。
 
-字庫 options 不接收 query，回 `{ total, systems }`，每套含全部、固定級別及未分類的筆數（零筆也保留）。random 接收 `system=all|list|cefr|tw_7000`（預設 all）及逗號分隔的 `levels`；省略 levels 或 `levels=all` 不篩選，指定級別須與一套制度相符，同套多值採 OR，`unclassified` 對應 null。回 `{ poolSize, entry }`，空池是 200／entry null，非法參數或額外 query 是 400。兩路徑沿用一般身分驗證，不需管理者角色。單次查詢只回一詞條，不將全字庫載入瀏覽器；proxy、learner nginx 與 learner Vite 均轉發 `/wordbank`。
+字庫 options 不接收 query，回 `{ total, systems }`，每套含全部、固定級別及未分類的筆數（零筆也保留）。random 接收 `system=all|list|cefr|tw_7000`（預設 all）及逗號分隔的 `levels`；省略 levels 或 `levels=all` 不篩選，指定級別須與一套制度相符，同套多值採 OR，`unclassified` 對應 null。回 `{ poolSize, entry }`，空池是 200／entry null，非法參數或額外 query 是 400。上述字庫路徑沿用一般身分驗證，不需管理者角色。單次查詢只回一詞條，不將全字庫載入瀏覽器；按 GUID 路徑回完整詞條與全部例句，空詞條為 404。proxy、learner nginx 與 learner Vite 均轉發 `/wordbank` 及 `/scenarios`。
 
 ## 11. 執行、部署與測試
 
@@ -362,7 +378,7 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 
 本次首頁與字庫驗收使用 learner `http://127.0.0.1:5174`、API `http://127.0.0.1:8180`；`api/src/preview.ts` 組裝既有 auth 與讀取路由，但不注入真實 LLM／TTS／圖片 client，也不啟動 worker。learner Vite 的 API 目標可由 `VITE_API_PROXY` 設定。這是本機預覽，沒有部署新版正式服務。
 
-客廳十五詞另有獨立 `web-learner/scenario-preview.html` 本機入口：先 `npm run scenario:preview:prepare`，再啟動綁 `127.0.0.1:5174` 的 learner Vite，開啟 `/scenario-preview.html`。此頁只讀情境／字庫文字快照及核對後的本機 MP3，不掛載 App、不呼叫身分或 DB API。圖片點字開單字 Modal；「故事與旁白」按鈕開故事 Modal，圖下沒有常駐單字列或內容卡。關閉支援按鈕／Escape／背景點擊，恢復入口焦點並停止單字音訊；故事查詞切換同一個 Modal，可返回故事。旁白及三個 advance 詞音檔仍待準備；圖片文字已燒入，未提供隱藏答案練習。正式首頁情境入口仍停用，預設正式 build 不含此額外 HTML entry，詳見 `docs/scenarios/web-preview.md`。
+客廳十五詞另有獨立 `web-learner/scenario-preview.html` 本機入口：先 `npm run scenario:preview:prepare`，再啟動綁 `127.0.0.1:5174` 的 learner Vite，開啟 `/scenario-preview.html`。此頁只讀情境／字庫文字快照及核對後的本機 MP3，不掛載 App、不呼叫身分或 DB API。圖片點字開單字 Modal；「故事與旁白」按鈕開故事 Modal，圖下沒有常駐單字列或內容卡。關閉支援按鈕／Escape／背景點擊，恢復入口焦點並停止單字音訊；故事查詞切換同一個 Modal，可返回故事。原預覽未接新旁白及三個 advance 詞補音；圖片文字已燒入，未提供隱藏答案練習。正式 App 另已開放情境入口，預設 build 不含此額外 HTML entry。正式功能 QA 使用 `_test`、API 5180／Vite 5181 與測試媒體，不啟動真實生成 client／worker。座標及桌面／手機 QA 已完成；旁白使用者試聽與正式寫入／部署待完成，詳見 `docs/scenarios/web-preview.md`。
 
 - 環境設定由 `shared/src/config.ts` 讀取：DB、音檔、選用供應商的憑證、Access、admin emails、lookup limits、音訊格式、圖片路徑及 catalog。Google 與 OpenAI 憑證可擇一或並存。Google 各工作共用 Vertex AI `generateContent`，`GOOGLE_CLOUD_PROJECT` 與 `GOOGLE_CLOUD_LOCATION` 組成端點；`global` 使用 `aiplatform.googleapis.com`。授權優先使用可呼叫 Agent Platform API 的 `GEMINI_API_KEY`，其次使用 `GOOGLE_APPLICATION_CREDENTIALS` 指定的 ADC；無憑證時不列為可用供應商。
 - 文字、語音、圖片三項生成設定存於 DB `generation_settings`，由 admin 的 `/generation-settings` 讀寫。共用文字設定供翻譯、單字解釋與圖片分階段 Prompt 規劃使用；可選文字／語音模型與聲線由 `config/generation-models.json` 載入，圖檔模型由 `config/image-models.json` 載入。圖片與規劃費率由 `config/image-pricing.json` 定義，新增文字模型須有規劃費率才可儲存。設定檔在後端行程啟動時讀取，修改後需重啟相關服務；既有工作快照不會自動變更。舊五項設定升級時以「文章翻譯」模型作為共用文字模型。Vertex AI TTS 使用 `gemini-2.5-flash-tts`／`gemini-2.5-pro-tts`；migration 更新目前後台設定中的舊 preview 型號，舊 job 快照在送出時映射，已生成音檔不重做。
@@ -395,6 +411,8 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 | `npm run scenario:package:test` | Node 原生測試情境套件預檢；不呼叫真實生成服務 |
 | `npm run scenario:preview:prepare` | 預檢客廳套件，保存預覽字庫快照並複製已有有效音檔；不連 DB、不生成 |
 | `npm run scenario:preview:test` | Node 原生測試預覽素材準備；使用假素材，不呼叫真實生成服務 |
+| `npm run scenario:audio:generate`、`scenario:audio:test` | 前者預設 dry-run；實際本機 Qwen 產音需使用者授權及 `SCENARIO_REAL_TTS=1` 加 `--generate`；六項測試使用假回應 |
+| `npm run scenario:import -- --dry-run` | 離線完整素材檢查；`--check-database` 明示 DATABASE_URL 唯讀核對；`--apply` 需精確確認 DB／server 與兩個 volume 路徑，只建 draft，不跑 migration、不發布 |
 | `./scripts/backup.sh` | 備份 DB／音檔／圖片並輪替 |
 
 seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade 清關聯；不要為了看畫面就對已有資料庫隨意執行。`deploy.sh clean` 會移除正式 volumes，不是一般測試清理指令。
@@ -410,6 +428,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 - 收藏測試：`api/src/routes/vocabulary.test.ts` 驗證 CRUD、日期／來源語意及權限；`web-learner/src/VocabularyReview.test.tsx` 驗證篩選、挑戰、失敗保留、來源失效與音訊停止；App 與 route 測試涵蓋收藏入口及返回定位。
 - 字庫測試：`shared/src/wordbank.test.ts`、`repo/wordbank.test.ts` 涵蓋來源校驗、全 9,166 字匯入／重匯、後補資料保留、分級精確匹配與音檔 GUID／hash；另以 `npm run vocabulary:audio:test` 驗證生成器的續跑、損毀重建、失敗回應、下載中斷與儲存失敗，不混入一般真實 TTS 呼叫。
 - 字庫 API／介面測試：`api/src/routes/wordbank.test.ts` 涵蓋級別數量、同套 OR／精確匹配、未分類、隨機三句、空池、非法 query、音檔文字更新失效、身分驗證與不建立 job／收藏；`web-learner/src/WordbankPractice.test.tsx`、`lib/wordbank.test.ts` 涵蓋三模式、Unicode 遮罩、揭曉前 DOM／aria 不洩漏、競態、缺資料、錯誤／重試、音訊停止；App／route 測試保留首頁、文章與複習導航。
+- 情境測試：`shared/src/scenarios.test.ts` 檢查媒體安全路徑／symlink／hash／不覆寫；`api/src/routes/scenarios.test.ts` 檢查 draft／published 權限、公共音檔阻擋、冪等／衝突及交易回滾／COMMIT 復原；`web-learner/src/ScenarioLearning.test.tsx` 檢查故事、單字、回想、Modal 與假 Audio。實跑結果以交付回報為準。
 - `api/src/routeConfig.test.ts`：檢查兩前端使用的 API 頂層路徑是否被 nginx／Vite 正確轉發。
 - 現有 `e2e/` 未提供自動瀏覽器測試程式；不要把 Vitest 全綠宣稱為完整線上端到端驗收。
 
@@ -444,7 +463,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
 | 入口首頁、字庫練習、9,166 字、Qwen3-TTS 批次產音 | `docs/wordbank-practice-requirements.md`、learner `LearningHome.tsx`／`WordbankPractice.tsx`／`lib/wordbank.ts`、API `routes/wordbank.ts`、`shared/src/repo/wordbankPractice.ts`、`source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts` 與 repo、`scripts/import-vocabulary*.ts`／`generate-wordbank-audio.mjs` |
-| 情境教材、十五詞客廳、離線套件預檢／網頁預覽 | `docs/scenarios/generation-import-workflow.md`、`web-preview.md`、`packages/living-room-15-v1/`，`scripts/check-scenario-package.mjs`／`prepare-scenario-preview.mjs` 與測試，learner `ScenarioPreview.tsx`／`scenario-preview-main.tsx`；已有本機互動預覽，正式首頁入口仍未開放，尚無 DB 匯入器或正式情境學習頁 |
+| 情境教材、十五詞客廳、匯入／發布／旁白／QA | `docs/scenarios/{generation-import-workflow,web-preview}.md`、`packages/living-room-15-v1/`；shared `scenarios.ts`／`repo/scenarios.ts`、API `routes/scenarios.ts`／`routes/wordbank.ts` GUID 接口、migration `1791504000000_scenarios.sql`、`scripts/{check-scenario-package,generate-scenario-audio}.mjs`／`import-scenario.ts`；learner `ScenarioLearning.tsx`／`ScenarioAudio.tsx`／`ScenarioDialog.tsx`／`ScenarioWordCard.tsx` 與測試。已實作，正式寫入／部署／發布待完成；原 `ScenarioPreview` 獨立預覽保留 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
 | 生成供應商、模型、聲線設定或 Google Vertex AI 端點 | admin `GenerationSettings.tsx`、API `generationSettings.ts`、`shared/src/{generationSettings,generationClients}.ts`、`shared/src/llm/{auth,genai}.ts`、repo、migration、API／worker 入口 |
 | 缺失單字音檔清單／逐檔或全部補檔 | admin `App.tsx`／`AudioBackfillPanel.tsx`、`api/src/routes/lookups.ts`、`shared/src/repo/audioBackfill.ts`、相關測試 |

@@ -83,3 +83,20 @@ export async function getRandomWordbankPracticeEntry(
       audioUrl: audioUrl(example.audio, example.en) })),
   } };
 }
+
+/** 按 GUID 查閱完整詞條，不套用練習頁的隨機三句限制。 */
+export async function getWordbankPracticeEntry(db: Queryable, guid: string): Promise<WordbankPracticeEntry | null> {
+  const result = await db.query(`SELECT e.*, COALESCE((SELECT jsonb_object_agg(a.asset_guid::text,
+    jsonb_build_object('relative_path',a.relative_path,'text_hash',a.text_hash,'kind',a.kind))
+    FROM wordbank_audio a WHERE a.entry_guid=e.guid), '{}'::jsonb) AS audio FROM wordbank_entries e WHERE e.guid=$1`, [guid]);
+  const row = result.rows[0];
+  if (!row) return null;
+  const clip = (assetGuid: string, kind: string, text: string) => {
+    const metadata = row.audio[assetGuid];
+    return metadata?.kind === kind ? audioUrl(metadata, text) : null;
+  };
+  return { guid: row.guid, word: row.word, partsOfSpeech: row.parts_of_speech, definition: row.definition, level: row.level,
+    wordAudioUrl: clip(row.guid, "word", row.word),
+    explains: row.explains.map((x: { guid: string; en: string }) => ({ guid: x.guid, en: x.en, audioUrl: clip(x.guid, "explanation", x.en) })),
+    examples: row.examples.map((x: { guid: string; en: string; zh: string }) => ({ guid: x.guid, en: x.en, zh: x.zh, audioUrl: clip(x.guid, "example", x.en) })) };
+}

@@ -37,7 +37,7 @@ describe("收藏到原課文的完整導航", () => {
     render(<App />);
     expect(screen.getByRole("link", { name: /文章閱讀/ }).getAttribute("href")).toBe("#/articles");
     expect(screen.getByRole("link", { name: /單字練習/ }).getAttribute("href")).toBe("#/practice");
-    expect(screen.getByText("即將推出").closest("[aria-disabled]")).toBeTruthy();
+    expect(screen.getByRole("link", { name: /情境模擬/ }).getAttribute("href")).toBe("#/scenarios");
     expect(api.listArticles).not.toHaveBeenCalled();
     await act(async () => { window.location.hash = "#/articles"; window.dispatchEvent(new Event("hashchange")); });
     await screen.findByRole("heading", { name: "開始閱讀" });

@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
-import { getRandomWordbankPracticeEntry, getWordbankPracticeOptions, WORDBANK_LEVELS, type DbPool, type WordbankPracticeFilter } from "@el/shared";
+import { getRandomWordbankPracticeEntry, getWordbankPracticeEntry, getWordbankPracticeOptions, WORDBANK_LEVELS, type DbPool, type WordbankPracticeFilter } from "@el/shared";
 
 const Query = z.object({
   system: z.enum(["all", "list", "cefr", "tw_7000"]).default("all"),
@@ -20,6 +20,12 @@ export function parseWordbankRandomQuery(query: unknown): { filter?: WordbankPra
 }
 
 export function registerWordbankRoutes(app: FastifyInstance, pool: DbPool): void {
+  app.get("/wordbank/entries/:guid", async (request, reply) => {
+    const params = z.object({ guid: z.string().uuid() }).safeParse(request.params);
+    if (!params.success || !z.object({}).strict().safeParse(request.query).success) return reply.code(400).send({ error: "invalid query" });
+    const entry = await getWordbankPracticeEntry(pool, params.data.guid);
+    return entry ?? reply.code(404).send({ error: "entry not found" });
+  });
   app.get("/wordbank/options", async (request, reply) => {
     if (!z.object({}).strict().safeParse(request.query).success) return reply.code(400).send({ error: "invalid query" });
     return getWordbankPracticeOptions(pool);

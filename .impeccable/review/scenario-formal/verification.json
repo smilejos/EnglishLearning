@@ -1,0 +1,31 @@
+{
+  "environment": "english_learning_test",
+  "frontend": "http://127.0.0.1:5181/#/scenarios/living-room",
+  "api": "http://127.0.0.1:5180",
+  "desktopWidth": 1920,
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "checks": [
+    "15 clickable vocabulary labels",
+    "advance shelf real MP3 playback",
+    "Serena narration playback and 0.75 speed",
+    "story lookup pauses narration, manual resume shown",
+    "translation retained on return",
+    "native dialog keyboard trap and Escape restores opener",
+    "recall hides labels/story until reveal",
+    "mobile page width 390 and dialog fits",
+    "mobile zoom, word lookup, return to picture",
+    "browser console error count 0"
+  ],
+  "formalDatabaseWritten": false,
+  "productionDeployed": false,
+  "productionPublished": false,
+  "fullTestPassed": 538,
+  "postFixRelatedTestsPassed": 34,
+  "scenarioAudioTestsPassed": 6,
+  "packageTestsPassed": 10,
+  "typecheck": "passed",
+  "build": "passed"
+}

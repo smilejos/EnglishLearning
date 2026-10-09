@@ -119,3 +119,22 @@ describe("單字練習 API", () => {
     expect(await counts()).toEqual(before);
   });
 });
+
+it("GUID 查詞回全部例句/解釋，缺詞404與非法GUID400，保留有效音檔/淘汰變更文字音檔", async () => {
+  const assets = [{ assetGuid: first.guid, kind: "word" as const, text: first.word },
+    ...first.explains.map(x => ({ assetGuid: x.guid, kind: "explanation" as const, text: x.en })),
+    ...first.examples.map(x => ({ assetGuid: x.guid, kind: "example" as const, text: x.en }))];
+  await importWordbankAudioManifest(pool, { version: 1,
+    profile: { model: "qwen", voice: "Serena", instruct: "Kind teacher", lang_code: "English", response_format: "mp3" },
+    entries: assets.map(a => ({ ...a, entryGuid: first.guid, textHash: wordbankTextHash(a.text), relativePath: `wordbank/test/${a.assetGuid}.mp3`, durationSeconds: 1, bytes: 100, generatedAt: "2026-10-05T01:00:00.000Z" })) });
+  const result = await app.inject(`/wordbank/entries/${first.guid}`);
+  expect(result.statusCode).toBe(200);
+  expect(result.json()).toMatchObject({ guid: first.guid, word: first.word, wordAudioUrl: `/audio/wordbank/test/${first.guid}.mp3` });
+  expect(result.json().examples).toEqual(first.examples.map(x => ({ ...x, audioUrl: `/audio/wordbank/test/${x.guid}.mp3` })));
+  expect(result.json().explains).toEqual(first.explains.map(x => ({ ...x, audioUrl: `/audio/wordbank/test/${x.guid}.mp3` })));
+  await pool.query("UPDATE wordbank_audio SET text_hash=$1", ["0".repeat(64)]);
+  const changed = (await app.inject(`/wordbank/entries/${first.guid}`)).json();
+  expect(changed.wordAudioUrl).toBeNull(); expect(changed.explains.every((x: { audioUrl: unknown }) => x.audioUrl === null)).toBe(true);
+  expect((await app.inject("/wordbank/entries/not-a-guid")).statusCode).toBe(400);
+  expect((await app.inject("/wordbank/entries/00000000-0000-4000-8000-000000000000")).statusCode).toBe(404);
+});

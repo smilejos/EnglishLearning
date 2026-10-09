@@ -16,6 +16,7 @@ export default defineConfig({
       "/words": apiTarget,
       "/vocabulary": apiTarget,
       "/wordbank": apiTarget,
+      "/scenarios": apiTarget,
       "/lookups": apiTarget,
       "/audio": apiTarget,
       "/me": apiTarget,

@@ -7,7 +7,8 @@ import type {
 } from "./types";
 import { normalizeBaseUrl } from "./lib/urls";
 import type { VocabularyItem } from "./vocabularyTypes";
-import type { WordbankOptions, WordbankQuestion, WordbankSystem } from "./wordbankTypes";
+import type { WordbankEntry, WordbankOptions, WordbankQuestion, WordbankSystem } from "./wordbankTypes";
+import type { ScenarioDetail, ScenarioSummary } from "./scenarioTypes";
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
 
@@ -73,6 +74,17 @@ export function getWordbankQuestion(system: WordbankSystem, levels: string[], si
 
 /** API 回傳同源音訊路徑；自訂 API base 仍套用相同來源。 */
 export function wordbankAudioUrl(path: string): string { return `${BASE}${path}`; }
+
+export function listScenarios(signal?: AbortSignal): Promise<{ scenarios: ScenarioSummary[] }> {
+  return req("/scenarios", { signal });
+}
+export function getScenario(key: string, signal?: AbortSignal): Promise<ScenarioDetail> {
+  return req(`/scenarios/${encodeURIComponent(key)}`, { signal });
+}
+export function getWordbankEntry(guid: string, signal?: AbortSignal): Promise<WordbankEntry> {
+  return req(`/wordbank/entries/${encodeURIComponent(guid)}`, { signal });
+}
+export function scenarioMediaUrl(path: string): string { return `${BASE}${path}`; }
 
 export function getArticle(
   id: number,

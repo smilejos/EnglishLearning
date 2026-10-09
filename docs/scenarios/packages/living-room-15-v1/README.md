@@ -1,6 +1,6 @@
 # 午後客廳十五詞：故事與素材套件
 
-狀態：套件草稿。參考圖已有，正式無文字底圖、互動座標與故事音檔待準備；此套件尚未匯入資料庫。
+狀態：套件草稿。正式無標籤底圖目視覆核通過，十五組互動座標已整理，已通過桌面／手機網頁位置驗收；Serena 英文故事音檔已生成 31.896 秒，待使用者試聽。後端、匯入器與正式 App 情境頁已實作，目前只在 `_test` 作本機 QA；此套件尚未匯入正式資料庫，未部署或發布。
 
 ## 英文故事
 
@@ -32,8 +32,10 @@ It is a quiet afternoon at home. A child sits on the sofa and reads a book. The 
 
 故事共有 8 句、75 個英文單字；十五個目標詞皆有出現。所有支援詞經明示文法映射比對後均在 basic／advance 範圍內。
 
-[套件 JSON](scenario.json) 保存字庫 GUID、逐句中英、所有故事字形的連結與參考圖 SHA-256。[參考圖](../../../../output/imagegen/living-room-15words-2026-10-09-v1/scene-01-living-room-15words.png) 的標籤仍燒在圖片內，不能當作可隱藏答案的正式底圖。
+[套件 JSON](scenario.json) 保存字庫 GUID、逐句中英、所有故事字形的連結、圖片 SHA-256 與十五組標籤／指向座標。正式版使用[無標籤底圖](../../../../output/imagegen/living-room-base-2026-10-09-v1/README.md)。[參考圖](../../../../output/imagegen/living-room-15words-2026-10-09-v1/scene-01-living-room-15words.png) 的標籤仍燒在圖片內，不能當作可隱藏答案的正式底圖。
 
 wordLinks 的 start／end 為各句字串的 0-based、起點包含／終點不包含字元索引；不是音訊時間戳。reads／sleeps／books 等明確連回 read／sleep／book，播放既有單字原形錄音。
+
+`assets.storyAudio` 保存旁白路徑、hash、聲線及時長。curtain／shelf／pillow 的 27 段補音已生成成功，manifest 在 `data/scenario-wordbank-audio/living-room-v1/manifest.json`，正式字庫音檔 metadata 尚未匯入。本機素材齊備時套件預檢為 `valid: true`／`publishReady: true`；只表示結構與檔案通過，並不代表旁白、座標或正式上線已驗收。音檔受 `.gitignore` 排除，其他環境須另備素材。
 
 [產生與匯入流程](../../generation-import-workflow.md) 說明已具備的預檢指令及後續落地順序。

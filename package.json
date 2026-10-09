@@ -27,7 +27,10 @@
     "build": "npm run build --workspaces --if-present",
     "migrate": "node-pg-migrate -m migrations",
     "migrate:up": "node-pg-migrate -m migrations up",
-    "migrate:down": "node-pg-migrate -m migrations down"
+    "migrate:down": "node-pg-migrate -m migrations down",
+    "scenario:audio:generate": "node scripts/generate-scenario-audio.mjs",
+    "scenario:audio:test": "node --test scripts/generate-scenario-audio.test.mjs",
+    "scenario:import": "node --import tsx scripts/import-scenario.ts"
   },
   "devDependencies": {
     "node-pg-migrate": "^7.9.1",

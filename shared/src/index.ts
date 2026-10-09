@@ -110,3 +110,4 @@ export type {
 export * from "./repo/vocabulary";
 export * from "./wordbank";
 export * from "./wordbankAudio";
+export * from "./scenarios";

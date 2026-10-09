@@ -35,6 +35,7 @@ const lookupLimiter = new LookupLimiter(config.lookupLimits);
 const app = buildApp({
   config,
   pool,
+  scenarios: { imageDir: config.images.directory, audioDir: config.audioDir },
   illustrations: imageCatalog ? {
     catalog: imageCatalog,
     imageDir: config.images.directory,

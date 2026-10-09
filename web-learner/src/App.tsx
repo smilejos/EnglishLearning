@@ -13,6 +13,7 @@ import { VocabularySaveButton } from "./VocabularySaveButton";
 import { VocabularyReview } from "./VocabularyReview";
 import { LearningHome } from "./LearningHome";
 import { WordbankPractice } from "./WordbankPractice";
+import { ScenarioLearning, ScenarioList, scenarioKeyFromHash } from "./ScenarioLearning";
 import { popupTitle } from "./lib/vocab";
 import { explanationAudioReady } from "./lib/explanation";
 import {
@@ -951,6 +952,8 @@ export default function App() {
   const reviewOpen = hash === "#/review";
   const practiceOpen = hash === "#/practice";
   const articlesOpen = hash === "#/articles";
+  const scenariosOpen = hash === "#/scenarios";
+  const scenarioKey = scenarioKeyFromHash(hash);
   const target = readArticleTarget(hash);
   // 角色決定是否能用即時重新翻譯（admin／reviewer）；後端仍會縱深防禦。
   const [canReexplain, setCanReexplain] = useState(false);
@@ -995,6 +998,10 @@ export default function App() {
         }} />
       ) : practiceOpen ? (
         <WordbankPractice />
+      ) : scenariosOpen ? (
+        <ScenarioList />
+      ) : scenarioKey !== null ? (
+        <ScenarioLearning key={scenarioKey} scenarioKey={scenarioKey} />
       ) : articlesOpen ? (
         <ArticleList onOpen={navigate} />
       ) : openId !== null ? (

@@ -19,7 +19,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "沙發",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.547,
+          "y": 0.196
+        },
+        "object": {
+          "x": 0.53,
+          "y": 0.547
+        }
+      }
     },
     {
       "word": "television",
@@ -27,7 +36,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "電視機",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.14,
+          "y": 0.144
+        },
+        "object": {
+          "x": 0.07,
+          "y": 0.23
+        }
+      }
     },
     {
       "word": "lamp",
@@ -35,7 +53,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "檯燈",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.912,
+          "y": 0.193
+        },
+        "object": {
+          "x": 0.854,
+          "y": 0.272
+        }
+      }
     },
     {
       "word": "chair",
@@ -43,7 +70,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "椅子",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.845,
+          "y": 0.873
+        },
+        "object": {
+          "x": 0.92,
+          "y": 0.619
+        }
+      }
     },
     {
       "word": "table",
@@ -51,7 +87,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "桌子",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.671,
+          "y": 0.765
+        },
+        "object": {
+          "x": 0.552,
+          "y": 0.68
+        }
+      }
     },
     {
       "word": "read",
@@ -59,7 +104,16 @@
       "list": "basic",
       "teachingPos": "v",
       "senseZh": "閱讀",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.294,
+          "y": 0.324
+        },
+        "object": {
+          "x": 0.386,
+          "y": 0.388
+        }
+      }
     },
     {
       "word": "sleep",
@@ -67,7 +121,16 @@
       "list": "basic",
       "teachingPos": "v",
       "senseZh": "睡覺",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.772,
+          "y": 0.29
+        },
+        "object": {
+          "x": 0.64,
+          "y": 0.432
+        }
+      }
     },
     {
       "word": "comfortable",
@@ -75,7 +138,16 @@
       "list": "basic",
       "teachingPos": "adj",
       "senseZh": "舒適的",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.3225,
+          "y": 0.186
+        },
+        "object": {
+          "x": 0.365,
+          "y": 0.436
+        }
+      }
     },
     {
       "word": "window",
@@ -83,7 +155,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "窗戶",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.938,
+          "y": 0.08
+        },
+        "object": {
+          "x": 0.944,
+          "y": 0.121
+        }
+      }
     },
     {
       "word": "curtain",
@@ -91,7 +172,16 @@
       "list": "advance",
       "teachingPos": "n",
       "senseZh": "窗簾",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.817,
+          "y": 0.064
+        },
+        "object": {
+          "x": 0.82,
+          "y": 0.12
+        }
+      }
     },
     {
       "word": "shelf",
@@ -99,7 +189,16 @@
       "list": "advance",
       "teachingPos": "n",
       "senseZh": "架子",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.684,
+          "y": 0.102
+        },
+        "object": {
+          "x": 0.629,
+          "y": 0.178
+        }
+      }
     },
     {
       "word": "book",
@@ -107,7 +206,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "書本",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.47,
+          "y": 0.321
+        },
+        "object": {
+          "x": 0.411,
+          "y": 0.4
+        }
+      }
     },
     {
       "word": "pillow",
@@ -115,7 +223,16 @@
       "list": "advance",
       "teachingPos": "n",
       "senseZh": "枕頭",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.78,
+          "y": 0.449
+        },
+        "object": {
+          "x": 0.73,
+          "y": 0.439
+        }
+      }
     },
     {
       "word": "clock",
@@ -123,7 +240,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "時鐘",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.439,
+          "y": 0.028
+        },
+        "object": {
+          "x": 0.356,
+          "y": 0.086
+        }
+      }
     },
     {
       "word": "plant",
@@ -131,7 +257,16 @@
       "list": "basic",
       "teachingPos": "n",
       "senseZh": "植物",
-      "interaction": null
+      "interaction": {
+        "label": {
+          "x": 0.277,
+          "y": 0.103
+        },
+        "object": {
+          "x": 0.231,
+          "y": 0.21
+        }
+      }
     }
   ],
   "story": {
@@ -803,20 +938,42 @@
       "path": "output/imagegen/living-room-15words-2026-10-09-v1/scene-01-living-room-15words.png",
       "sha256": "b652286f3cf90c32fd58b5b9c66d3886a56f366629b79357e22c61c323d66c51"
     },
-    "baseImage": null,
-    "storyAudio": null
+    "baseImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/living-room/r1/09eeb3d17582e855/story-f43cd361d44041bd.mp3",
+      "sha256": "7e1380d7e15639ea95696cf09ecdb02556715595565962941de960e6eb6458e9",
+      "language": "en",
+      "textSha256": "f43cd361d44041bdedcbf864dcd902aa14f5a494dffbc8b50855b53db7863c3b",
+      "durationSeconds": 31.896,
+      "bytes": 510380,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
   },
   "generationPlan": {
     "baseImage": {
-      "status": "pending",
+      "status": "generated-reviewed",
       "method": "imagegen edit from reference",
-      "prompt": "[STYLE]\nEdit the supplied living-room reference. Preserve its polished cute 3D cartoon style, soft fabrics, warm afternoon lighting, colors, wide composition, children and recognizable object positions.\n\n[SCENE DESCRIPTION]\nThe same cozy living room: television left; blue sofa center; one child reading comfortably, another sleeping on a pillow; low foreground table, separate chair right, lamp right, right window and curtain, rear shelf and books, wall clock and leafy plants.\n\n[TARGET VOCABULARY]\nDepict the existing fifteen concepts clearly, without printing their names: sofa, television, lamp, chair, table, read, sleep, comfortable, window, curtain, shelf, book, pillow, clock, plant.\n\n[OBJECT VISIBILITY RULES]\nPreserve recognizable objects and the reading/sleeping actions. Keep the pillow under the girl's head, shelf board, window pane, curtain fabric, clock hands and plant leaves visible.\n\n[COMPOSITION]\nKeep the same camera and relative object layout. Restore naturally textured surfaces where annotations are removed; do not replace the room or add new furniture.\n\n[CHARACTERS / ACTIONS]\nPreserve both children's identities, faces, natural hands and reading/sleeping poses.\n\n[ANNOTATION STYLE]\nRemove every white vocabulary label, arrow, annotation line and doodle. Do not add any replacement annotation.\n\n[TEXT RULES]\nNo text anywhere: remove vocabulary labels, incidental book-cover/spine lettering and clock numerals. Keep simple book patterns and analog clock hands/tick marks. No English, Chinese, captions or signage.\n\n[DECORATION]\nPreserve the original room decoration without adding doodles.\n\n[NEGATIVE REQUIREMENTS]\nNo changed camera, changed people, extra characters, missing target objects, damaged hands, fake blank patches, labels, arrows, text, logos, watermarks, UI or panels.\n"
+      "prompt": "[STYLE]\nEdit the supplied living-room reference. Preserve its polished cute 3D cartoon style, soft fabrics, warm afternoon lighting, colors, wide composition, children and recognizable object positions.\n\n[SCENE DESCRIPTION]\nThe same cozy living room: television left; blue sofa center; one child reading comfortably, another sleeping on a pillow; low foreground table, separate chair right, lamp right, right window and curtain, rear shelf and books, wall clock and leafy plants.\n\n[TARGET VOCABULARY]\nDepict the existing fifteen concepts clearly, without printing their names: sofa, television, lamp, chair, table, read, sleep, comfortable, window, curtain, shelf, book, pillow, clock, plant.\n\n[OBJECT VISIBILITY RULES]\nPreserve recognizable objects and the reading/sleeping actions. Keep the pillow under the girl's head, shelf board, window pane, curtain fabric, clock hands and plant leaves visible.\n\n[COMPOSITION]\nKeep the same camera and relative object layout. Restore naturally textured surfaces where annotations are removed; do not replace the room or add new furniture.\n\n[CHARACTERS / ACTIONS]\nPreserve both children's identities, faces, natural hands and reading/sleeping poses.\n\n[ANNOTATION STYLE]\nRemove every white vocabulary label, arrow, annotation line and doodle. Do not add any replacement annotation.\n\n[TEXT RULES]\nNo text anywhere: remove vocabulary labels, incidental book-cover/spine lettering and clock numerals. Keep simple book patterns and analog clock hands/tick marks. No English, Chinese, captions or signage.\n\n[DECORATION]\nPreserve the original room decoration without adding doodles.\n\n[NEGATIVE REQUIREMENTS]\nNo changed camera, changed people, extra characters, missing target objects, damaged hands, fake blank patches, labels, arrows, text, logos, watermarks, UI or panels.\n",
+      "promptRecord": "output/imagegen/living-room-base-2026-10-09-v1/prompt.json"
     },
     "storyAudio": {
-      "status": "pending",
+      "status": "generated-awaiting-listening-review",
       "language": "en",
       "textSha256": "f43cd361d44041bdedcbf864dcd902aa14f5a494dffbc8b50855b53db7863c3b",
-      "voice": "待確認故事旁白聲線"
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
     },
     "wordbankAudio": {
       "reuseExisting": true,
@@ -824,7 +981,12 @@
         "b7cca6ba-1503-5765-983d-6b9087bacd87",
         "e3d6374d-d9eb-599a-afd7-93a930699782",
         "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a"
-      ]
+      ],
+      "plannedMissingCounts": {
+        "word": 3,
+        "example": 15,
+        "explanation": 9
+      }
     }
   },
   "contentReview": {
