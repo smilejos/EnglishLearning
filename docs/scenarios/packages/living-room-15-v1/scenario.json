@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "living-room",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "午後客廳",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 15,
+  "targets": [
+    {
+      "word": "sofa",
+      "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "沙發",
+      "interaction": null
+    },
+    {
+      "word": "television",
+      "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "電視機",
+      "interaction": null
+    },
+    {
+      "word": "lamp",
+      "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "檯燈",
+      "interaction": null
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "interaction": null
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": null
+    },
+    {
+      "word": "read",
+      "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "閱讀",
+      "interaction": null
+    },
+    {
+      "word": "sleep",
+      "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "睡覺",
+      "interaction": null
+    },
+    {
+      "word": "comfortable",
+      "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "舒適的",
+      "interaction": null
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "interaction": null
+    },
+    {
+      "word": "curtain",
+      "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "窗簾",
+      "interaction": null
+    },
+    {
+      "word": "shelf",
+      "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "架子",
+      "interaction": null
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書本",
+      "interaction": null
+    },
+    {
+      "word": "pillow",
+      "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "枕頭",
+      "interaction": null
+    },
+    {
+      "word": "clock",
+      "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "時鐘",
+      "interaction": null
+    },
+    {
+      "word": "plant",
+      "entryGuid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "植物",
+      "interaction": null
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "It is a quiet afternoon at home. A child sits on the sofa and reads a book. The child looks comfortable. Another child sleeps with her head on a pillow. A table and a chair are in front of the sofa. The television is on the left, beside a tall plant. A lamp is on the right, by the window and the curtain. Books are on a shelf, and a clock is on the wall.",
+    "textZh": "這是家中一個安靜的午後。一個孩子坐在沙發上讀書。這個孩子看起來很舒服。另一個孩子頭靠著枕頭睡覺。沙發前方有一張桌子和一張椅子。電視在左邊，旁邊有一株高大的植物。檯燈在右邊，靠近窗戶與窗簾。書本放在架子上，牆上有一個時鐘。",
+    "sentences": [
+      {
+        "id": "s01",
+        "en": "It is a quiet afternoon at home.",
+        "zh": "這是家中一個安靜的午後。",
+        "wordLinks": [
+          {
+            "surface": "It",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "quiet",
+            "word": "quiet",
+            "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "afternoon",
+            "word": "afternoon",
+            "entryGuid": "a5cbff0b-6a99-57e0-a364-070342039e0f",
+            "isTarget": false,
+            "start": 14,
+            "end": 23
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "home",
+            "word": "home",
+            "entryGuid": "1ec333cb-6966-5431-b180-0448e8610698",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "en": "A child sits on the sofa and reads a book.",
+        "zh": "一個孩子坐在沙發上讀書。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "sits",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 16,
+            "end": 19
+          },
+          {
+            "surface": "sofa",
+            "word": "sofa",
+            "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+            "isTarget": true,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "reads",
+            "word": "read",
+            "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 35,
+            "end": 36
+          },
+          {
+            "surface": "book",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 37,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "en": "The child looks comfortable.",
+        "zh": "這個孩子看起來很舒服。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "looks",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "comfortable",
+            "word": "comfortable",
+            "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+            "isTarget": true,
+            "start": 16,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "id": "s04",
+        "en": "Another child sleeps with her head on a pillow.",
+        "zh": "另一個孩子頭靠著枕頭睡覺。",
+        "wordLinks": [
+          {
+            "surface": "Another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "sleeps",
+            "word": "sleep",
+            "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+            "isTarget": true,
+            "start": 14,
+            "end": 20
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "surface": "her",
+            "word": "her",
+            "entryGuid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "head",
+            "word": "head",
+            "entryGuid": "2eca3d4d-8da9-5fa5-b74e-d8f968adfbaf",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 38,
+            "end": 39
+          },
+          {
+            "surface": "pillow",
+            "word": "pillow",
+            "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+            "isTarget": true,
+            "start": 40,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s05",
+        "en": "A table and a chair are in front of the sofa.",
+        "zh": "沙發前方有一張桌子和一張椅子。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 12,
+            "end": 13
+          },
+          {
+            "surface": "chair",
+            "word": "chair",
+            "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+            "isTarget": true,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "front",
+            "word": "front",
+            "entryGuid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+            "isTarget": false,
+            "start": 27,
+            "end": 32
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "sofa",
+            "word": "sofa",
+            "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+            "isTarget": true,
+            "start": 40,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s06",
+        "en": "The television is on the left, beside a tall plant.",
+        "zh": "電視在左邊，旁邊有一株高大的植物。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "television",
+            "word": "television",
+            "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+            "isTarget": true,
+            "start": 4,
+            "end": 14
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 18,
+            "end": 20
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "left",
+            "word": "left",
+            "entryGuid": "feaa13de-bcb4-5a08-bf9b-0d3b82de9864",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 31,
+            "end": 37
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 38,
+            "end": 39
+          },
+          {
+            "surface": "tall",
+            "word": "tall",
+            "entryGuid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "plant",
+            "word": "plant",
+            "entryGuid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+            "isTarget": true,
+            "start": 45,
+            "end": 50
+          }
+        ]
+      },
+      {
+        "id": "s07",
+        "en": "A lamp is on the right, by the window and the curtain.",
+        "zh": "檯燈在右邊，靠近窗戶與窗簾。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "lamp",
+            "word": "lamp",
+            "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+            "isTarget": true,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "right",
+            "word": "right",
+            "entryGuid": "4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4",
+            "isTarget": false,
+            "start": 17,
+            "end": 22
+          },
+          {
+            "surface": "by",
+            "word": "by",
+            "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": true,
+            "start": 31,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "curtain",
+            "word": "curtain",
+            "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+            "isTarget": true,
+            "start": 46,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s08",
+        "en": "Books are on a shelf, and a clock is on the wall.",
+        "zh": "書本放在架子上，牆上有一個時鐘。",
+        "wordLinks": [
+          {
+            "surface": "Books",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 9
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 13,
+            "end": 14
+          },
+          {
+            "surface": "shelf",
+            "word": "shelf",
+            "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+            "isTarget": true,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "clock",
+            "word": "clock",
+            "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+            "isTarget": true,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 34,
+            "end": 36
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "wall",
+            "word": "wall",
+            "entryGuid": "d27a390f-bc58-5875-a9cf-8fc78602e1c5",
+            "isTarget": false,
+            "start": 44,
+            "end": 48
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-15words-2026-10-09-v1/scene-01-living-room-15words.png",
+      "sha256": "b652286f3cf90c32fd58b5b9c66d3886a56f366629b79357e22c61c323d66c51"
+    },
+    "baseImage": null,
+    "storyAudio": null
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "pending",
+      "method": "imagegen edit from reference",
+      "prompt": "[STYLE]\nEdit the supplied living-room reference. Preserve its polished cute 3D cartoon style, soft fabrics, warm afternoon lighting, colors, wide composition, children and recognizable object positions.\n\n[SCENE DESCRIPTION]\nThe same cozy living room: television left; blue sofa center; one child reading comfortably, another sleeping on a pillow; low foreground table, separate chair right, lamp right, right window and curtain, rear shelf and books, wall clock and leafy plants.\n\n[TARGET VOCABULARY]\nDepict the existing fifteen concepts clearly, without printing their names: sofa, television, lamp, chair, table, read, sleep, comfortable, window, curtain, shelf, book, pillow, clock, plant.\n\n[OBJECT VISIBILITY RULES]\nPreserve recognizable objects and the reading/sleeping actions. Keep the pillow under the girl's head, shelf board, window pane, curtain fabric, clock hands and plant leaves visible.\n\n[COMPOSITION]\nKeep the same camera and relative object layout. Restore naturally textured surfaces where annotations are removed; do not replace the room or add new furniture.\n\n[CHARACTERS / ACTIONS]\nPreserve both children's identities, faces, natural hands and reading/sleeping poses.\n\n[ANNOTATION STYLE]\nRemove every white vocabulary label, arrow, annotation line and doodle. Do not add any replacement annotation.\n\n[TEXT RULES]\nNo text anywhere: remove vocabulary labels, incidental book-cover/spine lettering and clock numerals. Keep simple book patterns and analog clock hands/tick marks. No English, Chinese, captions or signage.\n\n[DECORATION]\nPreserve the original room decoration without adding doodles.\n\n[NEGATIVE REQUIREMENTS]\nNo changed camera, changed people, extra characters, missing target objects, damaged hands, fake blank patches, labels, arrows, text, logos, watermarks, UI or panels.\n"
+    },
+    "storyAudio": {
+      "status": "pending",
+      "language": "en",
+      "textSha256": "f43cd361d44041bdedcbf864dcd902aa14f5a494dffbc8b50855b53db7863c3b",
+      "voice": "待確認故事旁白聲線"
+    },
+    "wordbankAudio": {
+      "reuseExisting": true,
+      "entriesNeedingAvailabilityCheck": [
+        "b7cca6ba-1503-5765-983d-6b9087bacd87",
+        "e3d6374d-d9eb-599a-afd7-93a930699782",
+        "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a"
+      ]
+    }
+  },
+  "contentReview": {
+    "status": "draft-for-review",
+    "explicitGrammarMappings": {
+      "is": "be",
+      "are": "be",
+      "sits": "sit",
+      "reads": "read",
+      "looks": "look",
+      "sleeps": "sleep",
+      "books": "book"
+    },
+    "noteZh": "字形與詞義仍需內容覆核；字元索引不是音訊時間戳。"
+  }
+}

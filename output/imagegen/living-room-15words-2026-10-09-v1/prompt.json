@@ -1,0 +1,172 @@
+{
+  "createdOn": "2026-10-09",
+  "status": "density-comparison-preview",
+  "generationMethod": "built-in image_gen edit with reference",
+  "referenceFile": "../scenario-preview-2026-10-09-v1/scene-01-living-room.png",
+  "imageFile": "scene-01-living-room-15words.png",
+  "sourceFile": "/Users/jos/.codex/generated_images/01a11eb3-06f1-79b0-8f56-ae41f8996afa/exec-fc3b2892-a7a4-427e-8584-b5c8ec7dd745.png",
+  "wordbankSource": "../../../source/vocabulary-database.json",
+  "targetCount": 15,
+  "countsByList": {
+    "basic": 12,
+    "advance": 3
+  },
+  "targets": [
+    {
+      "word": "sofa",
+      "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "沙發"
+    },
+    {
+      "word": "television",
+      "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "電視機"
+    },
+    {
+      "word": "lamp",
+      "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "檯燈"
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "teachingPos": "n",
+      "senseZh": "椅子"
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "桌子"
+    },
+    {
+      "word": "read",
+      "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "list": "basic",
+      "partsOfSpeech": [
+        "v"
+      ],
+      "teachingPos": "v",
+      "senseZh": "閱讀"
+    },
+    {
+      "word": "sleep",
+      "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "teachingPos": "v",
+      "senseZh": "睡覺"
+    },
+    {
+      "word": "comfortable",
+      "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adj"
+      ],
+      "teachingPos": "adj",
+      "senseZh": "舒適的"
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "窗戶"
+    },
+    {
+      "word": "curtain",
+      "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+      "list": "advance",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "teachingPos": "n",
+      "senseZh": "窗簾"
+    },
+    {
+      "word": "shelf",
+      "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "list": "advance",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "架子"
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "teachingPos": "n",
+      "senseZh": "書本"
+    },
+    {
+      "word": "pillow",
+      "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+      "list": "advance",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "枕頭"
+    },
+    {
+      "word": "clock",
+      "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "teachingPos": "n",
+      "senseZh": "時鐘"
+    },
+    {
+      "word": "plant",
+      "entryGuid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "teachingPos": "n",
+      "senseZh": "植物"
+    }
+  ],
+  "prompt": "Use case: scientific-educational.\nAsset type: vocabulary-density comparison preview.\nInput image: the supplied living-room image is the EDIT TARGET. Preserve its recognizable scene, children, furniture layout, 3D rendering, lighting and wide framing. Create a NEW fifteen-word version; do not remove any of the original eight target concepts.\n\n[STYLE]\nKeep the reference's polished cute 3D animated-cartoon style, rounded friendly children, tactile soft fabrics, warm natural afternoon sunlight, pastel palette and cozy children's storybook feeling. Match its quality and visual identity. Keep a wide 16:9 landscape image.\n\n[SCENE DESCRIPTION]\nThe SAME living room: television left; blue sofa center; the boy on the left reads an open book in a comfortable relaxed sitting pose; the girl on the right sleeps with her head on a soft pillow; lamp and a small side table right; coffee table foreground; a separate chair foreground right; rear wooden shelving, right window and curtain, green potted plant on the foreground table. Keep these existing subjects in the same relative places. The only new scene object needed is a small, clearly recognizable round analog wall clock in an available quiet patch of wall. Preserve the room as a natural place, not a catalog.\n\n[TARGET VOCABULARY]\nRender exactly these FIFTEEN labels, each once:\nsofa\ntelevision\nlamp\nchair\ntable\nread\nsleep\ncomfortable\nwindow\ncurtain\nshelf\nbook\npillow\nclock\nplant\nThe first eight are the original targets. The seven additions are existing room elements except the new clock. Interpret window as a household window, curtain as the window's fabric curtain, shelf as a horizontal wooden shelf, book as the physical open book, pillow as the soft pillow beneath the sleeping girl's head, clock as the analog wall clock, and plant as the green leafy plant rather than its container. plant is a NOUN here.\n\n[OBJECT VISIBILITY RULES]\nAll fifteen targets must be visible and distinct. Keep furniture silhouettes, book, both children's actions, pillow, shelf board, window frame/pane, curtain fabric and plant leaves readable. Slightly clarify the rear shelf and window if needed without changing the camera. Show the clock face with hands and simple tick marks, no written numerals. Do not add another character or extra furniture. Do not turn the background objects into floating insets.\n\n[COMPOSITION]\nKeep the reference camera, wide room composition and approximate object sizes, so this remains a useful comparison with the eight-label version. Distribute fifteen labels through available wall, furniture, window and foreground spaces. Retain readable label size; do not solve density merely by shrinking text to tiny print. Labels may be repositioned to avoid collisions, but the picture must still have breathing room. No panels, split screens, collages, sidebars or word lists.\n\n[CHARACTERS / ACTIONS]\nKeep the two original children and their original reading/sleeping poses. The read arrow should indicate the boy's book-reading action; book should point to the open book as an object with a separate short arrow. sleep points to the sleeping girl, while pillow points precisely to the pillow fabric under her head. comfortable points to the relaxed boy's posture/shoulder area, not an unrelated shelf. Preserve natural hands and faces.\n\n[ANNOTATION STYLE]\nUse the SAME casual thin white handwritten lowercase English and white curved hand-drawn arrows as the reference. One distinct short arrow per label. Each arrow ends on its own correct object or action. Keep shelf on a visible horizontal wooden board; plant on green leaves; table on the foreground table; curtain on curtain fabric; window on the visible window pane/frame. Use quiet medium-toned areas and a very subtle darker halo where necessary. Avoid arrows crossing other labels, faces or action details. All fifteen words should be comfortably readable at normal viewing size.\n\n[TEXT RULES]\nExactly fifteen vocabulary labels, each written once, spelled exactly as listed, all lowercase. No missing, duplicate or additional labels. No title, numbers, translations, definitions, signage, captions, UI controls or watermarks. Remove incidental tiny lettering from book covers and spines, leaving simple decorative patterns instead. The semantic explanations above are NOT text to print.\n\n[DECORATION]\nMinimal white doodles only if space remains; prioritize the fifteen labels and their targets. Do not add text doodles.\n\n[NEGATIVE REQUIREMENTS]\nAvoid a new room design, new camera angle, changed character identities, extra people, a furniture inventory layout, clutter, tiny text, tangled arrows, cropped key targets, spelling errors, duplicate labels, flat 2D artwork, photorealistic people, dramatic dark lighting, malformed hands or extra limbs. No Chinese text or additional English text."
+}

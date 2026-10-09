@@ -20,6 +20,8 @@
     "vocabulary:audio:import": "node --import tsx scripts/import-vocabulary-audio.ts",
     "vocabulary:audio:generate": "node scripts/generate-wordbank-audio.mjs",
     "vocabulary:audio:test": "node --test scripts/generate-wordbank-audio.test.mjs",
+    "scenario:package:check": "node scripts/check-scenario-package.mjs",
+    "scenario:package:test": "node --test scripts/check-scenario-package.test.mjs",
     "build": "npm run build --workspaces --if-present",
     "migrate": "node-pg-migrate -m migrations",
     "migrate:up": "node-pg-migrate -m migrations up",

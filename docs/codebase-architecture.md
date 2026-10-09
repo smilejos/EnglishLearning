@@ -389,6 +389,8 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 | `npm run vocabulary:audio:generate -- --dry-run --list basic` | 列出單字＋全部英文例句產音計畫，不呼叫 TTS；真實生成需 WORD_BANK_REAL_TTS=1 加 --generate，支援續跑 |
 | `npm run vocabulary:audio:import -- data/wordbank-audio/manifest.json` | 核對 GUID／文字 hash 後匯入 metadata；不複製檔案，需明示 DATABASE_URL |
 | `npm run vocabulary:audio:test` | Node 原生測試批次工具，HTTP 假回應；不呼叫真實 TTS |
+| `npm run scenario:package:check -- <套件.json>` | 唯讀檢查十五詞情境套件、字庫關聯與素材 hash；加 `--require-publish-ready` 要求素材及座標齊備，不連 DB 或生成服務 |
+| `npm run scenario:package:test` | Node 原生測試情境套件預檢；不呼叫真實生成服務 |
 | `./scripts/backup.sh` | 備份 DB／音檔／圖片並輪替 |
 
 seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade 清關聯；不要為了看畫面就對已有資料庫隨意執行。`deploy.sh clean` 會移除正式 volumes，不是一般測試清理指令。
@@ -438,6 +440,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
 | 入口首頁、字庫練習、9,166 字、Qwen3-TTS 批次產音 | `docs/wordbank-practice-requirements.md`、learner `LearningHome.tsx`／`WordbankPractice.tsx`／`lib/wordbank.ts`、API `routes/wordbank.ts`、`shared/src/repo/wordbankPractice.ts`、`source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts` 與 repo、`scripts/import-vocabulary*.ts`／`generate-wordbank-audio.mjs` |
+| 情境教材、十五詞客廳、離線套件預檢 | `docs/scenarios/generation-import-workflow.md`、`docs/scenarios/packages/living-room-15-v1/`、`scripts/check-scenario-package.mjs` 與測試；目前只有內容套件與預檢，首頁情境入口仍未開放，尚無 DB 匯入器或情境學習頁 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
 | 生成供應商、模型、聲線設定或 Google Vertex AI 端點 | admin `GenerationSettings.tsx`、API `generationSettings.ts`、`shared/src/{generationSettings,generationClients}.ts`、`shared/src/llm/{auth,genai}.ts`、repo、migration、API／worker 入口 |
 | 缺失單字音檔清單／逐檔或全部補檔 | admin `App.tsx`／`AudioBackfillPanel.tsx`、`api/src/routes/lookups.ts`、`shared/src/repo/audioBackfill.ts`、相關測試 |
