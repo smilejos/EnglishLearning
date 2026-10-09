@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "status": "draft-for-discussion",
+  "createdOn": "2026-10-09",
+  "batchId": "basic-advance-01",
+  "scenarioId": "01",
+  "titleZh": "午後客廳",
+  "source": {
+    "path": "source/vocabulary-database.json",
+    "sha256": "7df89d8abab18348a0acbfe5720c108a7a2b54057e6aee22f9d488dc37b446ea"
+  },
+  "narrationLanguage": "en",
+  "translationLanguage": "zh-Hant",
+  "audio": {
+    "status": "not-generated",
+    "audioUrl": null
+  },
+  "textEn": "It is a quiet afternoon at home. A child sits on the sofa and reads a book. The child looks comfortable. Another child sleeps on the sofa. A lamp is on the right. A table and a chair are in front of the sofa. The television is on the left.",
+  "textZh": "這是家中一個安靜的午後。一個孩子坐在沙發上讀書，看起來很舒服。另一個孩子在沙發上睡覺。檯燈在右邊，沙發前方有一張桌子和一張椅子，電視在左邊。",
+  "spanConvention": "sentence-local character indices, 0-based, start-inclusive, end-exclusive; not audio timestamps",
+  "sampleGrammarMappings": {
+    "reads": "read",
+    "sleeps": "sleep",
+    "sits": "sit",
+    "looks": "look",
+    "is": "be",
+    "are": "be"
+  },
+  "statistics": {
+    "sentenceCount": 7,
+    "wordCount": 50,
+    "targetEntryCount": 8,
+    "targetOccurrenceCount": 10,
+    "wordLinkCount": 50,
+    "supportingLemmasAllWithinBasicAdvance": true
+  },
+  "sentences": [
+    {
+      "id": "s01",
+      "en": "It is a quiet afternoon at home.",
+      "zh": "這是家中一個安靜的午後。",
+      "wordLinks": [
+        {
+          "surface": "It",
+          "word": "it",
+          "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+          "isTarget": false,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "surface": "is",
+          "word": "be",
+          "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+          "isTarget": false,
+          "start": 3,
+          "end": 5
+        },
+        {
+          "surface": "a",
+          "word": "a",
+          "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+          "isTarget": false,
+          "start": 6,
+          "end": 7
+        },
+        {
+          "surface": "quiet",
+          "word": "quiet",
+          "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+          "isTarget": false,
+          "start": 8,
+          "end": 13
+        },
+        {
+          "surface": "afternoon",
+          "word": "afternoon",
+          "entryGuid": "a5cbff0b-6a99-57e0-a364-070342039e0f",
+          "isTarget": false,
+          "start": 14,
+          "end": 23
+        },
+        {
+          "surface": "at",
+          "word": "at",
+          "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+          "isTarget": false,
+          "start": 24,
+          "end": 26
+        },
+        {
+          "surface": "home",
+          "word": "home",
+          "entryGuid": "1ec333cb-6966-5431-b180-0448e8610698",
+          "isTarget": false,
+          "start": 27,
+          "end": 31
+        }
+      ],
+      "targetLinks": []
+    },
+    {
+      "id": "s02",
+      "en": "A child sits on the sofa and reads a book.",
+      "zh": "一個孩子坐在沙發上讀書。",
+      "wordLinks": [
+        {
+          "surface": "A",
+          "word": "a",
+          "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+          "isTarget": false,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "surface": "child",
+          "word": "child",
+          "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+          "isTarget": false,
+          "start": 2,
+          "end": 7
+        },
+        {
+          "surface": "sits",
+          "word": "sit",
+          "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+          "isTarget": false,
+          "start": 8,
+          "end": 12
+        },
+        {
+          "surface": "on",
+          "word": "on",
+          "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+          "isTarget": false,
+          "start": 13,
+          "end": 15
+        },
+        {
+          "surface": "the",
+          "word": "the",
+          "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+          "isTarget": false,
+          "start": 16,
+          "end": 19
+        },
+        {
+          "surface": "sofa",
+          "word": "sofa",
+          "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+          "isTarget": true,
+          "start": 20,
+          "end": 24
+        },
+        {
+          "surface": "and",
+          "word": "and",
+          "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+          "isTarget": false,
+          "start": 25,
+          "end": 28
+        },
+        {
+          "surface": "reads",
+          "word": "read",
+          "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+          "isTarget": true,
+          "start": 29,
+          "end": 34
+        },
+        {
+          "surface": "a",
+          "word": "a",
+          "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+          "isTarget": false,
+          "start": 35,
+          "end": 36
+        },
+        {
+          "surface": "book",
+          "word": "book",
+          "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+          "isTarget": false,
+          "start": 37,
+          "end": 41
+        }
+      ],
+      "targetLinks": [
+        {
+          "surface": "sofa",
+          "word": "sofa",
+          "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+          "start": 20,
+          "end": 24
+        },
+        {
+          "surface": "reads",
+          "word": "read",
+          "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+          "start": 29,
+          "end": 34
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "en": "The child looks comfortable.",
+      "zh": "這個孩子看起來很舒服。",
+      "wordLinks": [
+        {
+          "surface": "The",
+          "word": "the",
+          "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+          "isTarget": false,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "surface": "child",
+          "word": "child",
+          "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+          "isTarget": false,
+          "start": 4,
+          "end": 9
+        },
+        {
+          "surface": "looks",
+          "word": "look",
+          "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+          "isTarget": false,
+          "start": 10,
+          "end": 15
+        },
+        {
+          "surface": "comfortable",
+          "word": "comfortable",
+          "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+          "isTarget": true,
+          "start": 16,
+          "end": 27
+        }
+      ],
+      "targetLinks": [
+        {
+          "surface": "comfortable",
+          "word": "comfortable",
+          "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+          "start": 16,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "en": "Another child sleeps on the sofa.",
+      "zh": "另一個孩子在沙發上睡覺。",
+      "wordLinks": [
+        {
+          "surface": "Another",
+          "word": "another",
+          "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+          "isTarget": false,
+          "start": 0,
+          "end": 7
+        },
+        {
+          "surface": "child",
+          "word": "child",
+          "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+          "isTarget": false,
+          "start": 8,
+          "end": 13
+        },
+        {
+          "surface": "sleeps",
+          "word": "sleep",
+          "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+          "isTarget": true,
+          "start": 14,
+          "end": 20
+        },
+        {
+          "surface": "on",
+          "word": "on",
+          "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+          "isTarget": false,
+          "start": 21,
+          "end": 23
+        },
+        {
+          "surface": "the",
+          "word": "the",
+          "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+          "isTarget": false,
+          "start": 24,
+          "end": 27
+        },
+        {
+          "surface": "sofa",
+          "word": "sofa",
+          "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+          "isTarget": true,
+          "start": 28,
+          "end": 32
+        }
+      ],
+      "targetLinks": [
+        {
+          "surface": "sleeps",
+          "word": "sleep",
+          "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+          "start": 14,
+          "end": 20
+        },
+        {
+          "surface": "sofa",
+          "word": "sofa",
+          "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+          "start": 28,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "en": "A lamp is on the right.",
+      "zh": "檯燈在右邊。",
+      "wordLinks": [
+        {
+          "surface": "A",
+          "word": "a",
+          "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+          "isTarget": false,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "surface": "lamp",
+          "word": "lamp",
+          "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+          "isTarget": true,
+          "start": 2,
+          "end": 6
+        },
+        {
+          "surface": "is",
+          "word": "be",
+          "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+          "isTarget": false,
+          "start": 7,
+          "end": 9
+        },
+        {
+          "surface": "on",
+          "word": "on",
+          "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+          "isTarget": false,
+          "start": 10,
+          "end": 12
+        },
+        {
+          "surface": "the",
+          "word": "the",
+          "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+          "isTarget": false,
+          "start": 13,
+          "end": 16
+        },
+        {
+          "surface": "right",
+          "word": "right",
+          "entryGuid": "4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4",
+          "isTarget": false,
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "targetLinks": [
+        {
+          "surface": "lamp",
+          "word": "lamp",
+          "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+          "start": 2,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "en": "A table and a chair are in front of the sofa.",
+      "zh": "沙發前方有一張桌子和一張椅子。",
+      "wordLinks": [
+        {
+          "surface": "A",
+          "word": "a",
+          "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+          "isTarget": false,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "surface": "table",
+          "word": "table",
+          "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+          "isTarget": true,
+          "start": 2,
+          "end": 7
+        },
+        {
+          "surface": "and",
+          "word": "and",
+          "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+          "isTarget": false,
+          "start": 8,
+          "end": 11
+        },
+        {
+          "surface": "a",
+          "word": "a",
+          "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+          "isTarget": false,
+          "start": 12,
+          "end": 13
+        },
+        {
+          "surface": "chair",
+          "word": "chair",
+          "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+          "isTarget": true,
+          "start": 14,
+          "end": 19
+        },
+        {
+          "surface": "are",
+          "word": "be",
+          "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+          "isTarget": false,
+          "start": 20,
+          "end": 23
+        },
+        {
+          "surface": "in",
+          "word": "in",
+          "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+          "isTarget": false,
+          "start": 24,
+          "end": 26
+        },
+        {
+          "surface": "front",
+          "word": "front",
+          "entryGuid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+          "isTarget": false,
+          "start": 27,
+          "end": 32
+        },
+        {
+          "surface": "of",
+          "word": "of",
+          "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+          "isTarget": false,
+          "start": 33,
+          "end": 35
+        },
+        {
+          "surface": "the",
+          "word": "the",
+          "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+          "isTarget": false,
+          "start": 36,
+          "end": 39
+        },
+        {
+          "surface": "sofa",
+          "word": "sofa",
+          "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+          "isTarget": true,
+          "start": 40,
+          "end": 44
+        }
+      ],
+      "targetLinks": [
+        {
+          "surface": "table",
+          "word": "table",
+          "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+          "start": 2,
+          "end": 7
+        },
+        {
+          "surface": "chair",
+          "word": "chair",
+          "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+          "start": 14,
+          "end": 19
+        },
+        {
+          "surface": "sofa",
+          "word": "sofa",
+          "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+          "start": 40,
+          "end": 44
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "en": "The television is on the left.",
+      "zh": "電視在左邊。",
+      "wordLinks": [
+        {
+          "surface": "The",
+          "word": "the",
+          "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+          "isTarget": false,
+          "start": 0,
+          "end": 3
+        },
+        {
+          "surface": "television",
+          "word": "television",
+          "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+          "isTarget": true,
+          "start": 4,
+          "end": 14
+        },
+        {
+          "surface": "is",
+          "word": "be",
+          "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+          "isTarget": false,
+          "start": 15,
+          "end": 17
+        },
+        {
+          "surface": "on",
+          "word": "on",
+          "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+          "isTarget": false,
+          "start": 18,
+          "end": 20
+        },
+        {
+          "surface": "the",
+          "word": "the",
+          "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+          "isTarget": false,
+          "start": 21,
+          "end": 24
+        },
+        {
+          "surface": "left",
+          "word": "left",
+          "entryGuid": "feaa13de-bcb4-5a08-bf9b-0d3b82de9864",
+          "isTarget": false,
+          "start": 25,
+          "end": 29
+        }
+      ],
+      "targetLinks": [
+        {
+          "surface": "television",
+          "word": "television",
+          "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+          "start": 4,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}
