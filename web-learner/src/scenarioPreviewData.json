@@ -1,0 +1,2899 @@
+{
+  "scenarioKey": "living-room",
+  "titleZh": "午後客廳",
+  "story": {
+    "textEn": "It is a quiet afternoon at home. A child sits on the sofa and reads a book. The child looks comfortable. Another child sleeps with her head on a pillow. A table and a chair are in front of the sofa. The television is on the left, beside a tall plant. A lamp is on the right, by the window and the curtain. Books are on a shelf, and a clock is on the wall.",
+    "textZh": "這是家中一個安靜的午後。一個孩子坐在沙發上讀書。這個孩子看起來很舒服。另一個孩子頭靠著枕頭睡覺。沙發前方有一張桌子和一張椅子。電視在左邊，旁邊有一株高大的植物。檯燈在右邊，靠近窗戶與窗簾。書本放在架子上，牆上有一個時鐘。",
+    "sentences": [
+      {
+        "id": "s01",
+        "en": "It is a quiet afternoon at home.",
+        "zh": "這是家中一個安靜的午後。",
+        "wordLinks": [
+          {
+            "surface": "It",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "quiet",
+            "word": "quiet",
+            "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "afternoon",
+            "word": "afternoon",
+            "entryGuid": "a5cbff0b-6a99-57e0-a364-070342039e0f",
+            "isTarget": false,
+            "start": 14,
+            "end": 23
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "home",
+            "word": "home",
+            "entryGuid": "1ec333cb-6966-5431-b180-0448e8610698",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "en": "A child sits on the sofa and reads a book.",
+        "zh": "一個孩子坐在沙發上讀書。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "sits",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 16,
+            "end": 19
+          },
+          {
+            "surface": "sofa",
+            "word": "sofa",
+            "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+            "isTarget": true,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "reads",
+            "word": "read",
+            "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 35,
+            "end": 36
+          },
+          {
+            "surface": "book",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 37,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "en": "The child looks comfortable.",
+        "zh": "這個孩子看起來很舒服。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "looks",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "comfortable",
+            "word": "comfortable",
+            "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+            "isTarget": true,
+            "start": 16,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "id": "s04",
+        "en": "Another child sleeps with her head on a pillow.",
+        "zh": "另一個孩子頭靠著枕頭睡覺。",
+        "wordLinks": [
+          {
+            "surface": "Another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "sleeps",
+            "word": "sleep",
+            "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+            "isTarget": true,
+            "start": 14,
+            "end": 20
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "surface": "her",
+            "word": "her",
+            "entryGuid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "head",
+            "word": "head",
+            "entryGuid": "2eca3d4d-8da9-5fa5-b74e-d8f968adfbaf",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 38,
+            "end": 39
+          },
+          {
+            "surface": "pillow",
+            "word": "pillow",
+            "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+            "isTarget": true,
+            "start": 40,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s05",
+        "en": "A table and a chair are in front of the sofa.",
+        "zh": "沙發前方有一張桌子和一張椅子。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 12,
+            "end": 13
+          },
+          {
+            "surface": "chair",
+            "word": "chair",
+            "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+            "isTarget": true,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "front",
+            "word": "front",
+            "entryGuid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+            "isTarget": false,
+            "start": 27,
+            "end": 32
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "sofa",
+            "word": "sofa",
+            "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+            "isTarget": true,
+            "start": 40,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s06",
+        "en": "The television is on the left, beside a tall plant.",
+        "zh": "電視在左邊，旁邊有一株高大的植物。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "television",
+            "word": "television",
+            "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+            "isTarget": true,
+            "start": 4,
+            "end": 14
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 18,
+            "end": 20
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "left",
+            "word": "left",
+            "entryGuid": "feaa13de-bcb4-5a08-bf9b-0d3b82de9864",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 31,
+            "end": 37
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 38,
+            "end": 39
+          },
+          {
+            "surface": "tall",
+            "word": "tall",
+            "entryGuid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "plant",
+            "word": "plant",
+            "entryGuid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+            "isTarget": true,
+            "start": 45,
+            "end": 50
+          }
+        ]
+      },
+      {
+        "id": "s07",
+        "en": "A lamp is on the right, by the window and the curtain.",
+        "zh": "檯燈在右邊，靠近窗戶與窗簾。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "lamp",
+            "word": "lamp",
+            "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+            "isTarget": true,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "right",
+            "word": "right",
+            "entryGuid": "4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4",
+            "isTarget": false,
+            "start": 17,
+            "end": 22
+          },
+          {
+            "surface": "by",
+            "word": "by",
+            "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": true,
+            "start": 31,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "curtain",
+            "word": "curtain",
+            "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+            "isTarget": true,
+            "start": 46,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s08",
+        "en": "Books are on a shelf, and a clock is on the wall.",
+        "zh": "書本放在架子上，牆上有一個時鐘。",
+        "wordLinks": [
+          {
+            "surface": "Books",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 9
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 13,
+            "end": 14
+          },
+          {
+            "surface": "shelf",
+            "word": "shelf",
+            "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+            "isTarget": true,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "clock",
+            "word": "clock",
+            "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+            "isTarget": true,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 34,
+            "end": 36
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "wall",
+            "word": "wall",
+            "entryGuid": "d27a390f-bc58-5875-a9cf-8fc78602e1c5",
+            "isTarget": false,
+            "start": 44,
+            "end": 48
+          }
+        ]
+      }
+    ]
+  },
+  "targets": [
+    {
+      "word": "sofa",
+      "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "沙發",
+      "interaction": null
+    },
+    {
+      "word": "television",
+      "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "電視機",
+      "interaction": null
+    },
+    {
+      "word": "lamp",
+      "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "檯燈",
+      "interaction": null
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "interaction": null
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": null
+    },
+    {
+      "word": "read",
+      "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "閱讀",
+      "interaction": null
+    },
+    {
+      "word": "sleep",
+      "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "睡覺",
+      "interaction": null
+    },
+    {
+      "word": "comfortable",
+      "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "舒適的",
+      "interaction": null
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "interaction": null
+    },
+    {
+      "word": "curtain",
+      "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "窗簾",
+      "interaction": null
+    },
+    {
+      "word": "shelf",
+      "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "架子",
+      "interaction": null
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書本",
+      "interaction": null
+    },
+    {
+      "word": "pillow",
+      "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "枕頭",
+      "interaction": null
+    },
+    {
+      "word": "clock",
+      "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "時鐘",
+      "interaction": null
+    },
+    {
+      "word": "plant",
+      "entryGuid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "植物",
+      "interaction": null
+    }
+  ],
+  "entries": [
+    {
+      "guid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+      "word": "sofa",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "沙發",
+      "explains": [
+        {
+          "guid": "d4bfbed9-9592-5b95-be09-1b290f6c724a",
+          "en": "People sit on this soft piece of furniture. It often has room for two or three. Cushions make it comfortable.",
+          "audioKey": "d4bfbed9-9592-5b95-be09-1b290f6c724a.mp3"
+        },
+        {
+          "guid": "eeef519f-95ea-5362-ae83-11a4c05984bf",
+          "en": "A living room may have this long seat. Friends can sit together on it. It may be covered with cloth or leather.",
+          "audioKey": "eeef519f-95ea-5362-ae83-11a4c05984bf.mp3"
+        },
+        {
+          "guid": "8b54137f-9b9c-5ba6-8a21-f52fb665938e",
+          "en": "This furniture can be placed near a table. A family may watch TV while seated there. It has a back and arms.",
+          "audioKey": "8b54137f-9b9c-5ba6-8a21-f52fb665938e.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "efaa3dcc-44e0-594a-8836-beb1b2306328",
+          "en": "The grandfather took a nap on the soft sofa.",
+          "zh": "爺爺在柔軟的沙發上小睡片刻。",
+          "audioKey": "efaa3dcc-44e0-594a-8836-beb1b2306328.mp3"
+        },
+        {
+          "guid": "6670de42-81bc-5267-8dd5-ce756efe232b",
+          "en": "We all sat on the leather sofa to watch the basketball finals.",
+          "zh": "我們全都坐在皮沙發上觀看籃球總決賽。",
+          "audioKey": "6670de42-81bc-5267-8dd5-ce756efe232b.mp3"
+        },
+        {
+          "guid": "e5dd9542-6f1f-50ec-9d01-11998b3e18bc",
+          "en": "The playful kitten curled up in the corner of the comfortable sofa.",
+          "zh": "頑皮的小貓在舒適沙發的角落蜷縮著入睡。",
+          "audioKey": "e5dd9542-6f1f-50ec-9d01-11998b3e18bc.mp3"
+        }
+      ],
+      "wordAudioKey": "05175166-0fc1-5d57-9946-0beff46ea6da.mp3"
+    },
+    {
+      "guid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+      "word": "television",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "電視機；電視",
+      "explains": [
+        {
+          "guid": "32a6351c-ffb3-5260-80f2-2194dbfdc2e7",
+          "en": "A screen shows moving pictures and sound. Families may watch a news program at home. It can also mean the business of making shows.",
+          "audioKey": "32a6351c-ffb3-5260-80f2-2194dbfdc2e7.mp3"
+        },
+        {
+          "guid": "206fe793-d554-519f-9fea-8eb05fb038a1",
+          "en": "People sit on a couch and watch this device. A remote can change its channel. It may show films, sports, or news.",
+          "audioKey": "206fe793-d554-519f-9fea-8eb05fb038a1.mp3"
+        },
+        {
+          "guid": "f26ea37e-c380-57d3-bbca-5d6f6150febb",
+          "en": "This screen brings pictures into a home. A person can watch shows on it. The short form uses two letters.",
+          "audioKey": "f26ea37e-c380-57d3-bbca-5d6f6150febb.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "0f85a0e0-0cbe-5941-8a86-017627af8fc8",
+          "en": "Turn down the television; it is too loud.",
+          "zh": "把電視聲音關小一點，太吵了。",
+          "audioKey": "0f85a0e0-0cbe-5941-8a86-017627af8fc8.mp3"
+        },
+        {
+          "guid": "b2eb975a-438e-54e4-b11d-202662e2c4c3",
+          "en": "Watching English television shows with subtitles improves listening skills.",
+          "zh": "觀看附中文字幕的英語電視節目有助於提升聽力。",
+          "audioKey": "b2eb975a-438e-54e4-b11d-202662e2c4c3.mp3"
+        },
+        {
+          "guid": "2b8bae05-c4b2-5450-810b-6077309c999d",
+          "en": "They bought a large sixty-five-inch smart television for the living room.",
+          "zh": "他們為客廳添購了一台六十五吋的大型智慧電視。",
+          "audioKey": "2b8bae05-c4b2-5450-810b-6077309c999d.mp3"
+        }
+      ],
+      "wordAudioKey": "87934955-bb34-5b65-aa87-cab8d03d1d03.mp3"
+    },
+    {
+      "guid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+      "word": "lamp",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "檯燈；燈具",
+      "explains": [
+        {
+          "guid": "380872de-4677-559f-8763-53abb143340a",
+          "en": "This is a device that gives light. It may sit on a desk or hang from a ceiling. A switch turns it on and off.",
+          "audioKey": "380872de-4677-559f-8763-53abb143340a.mp3"
+        },
+        {
+          "guid": "71cc6205-b7c8-5104-add2-adbfe98ccfb6",
+          "en": "People use this object to brighten a dark room. It may have a shade around the bulb. A bedside one helps someone read.",
+          "audioKey": "71cc6205-b7c8-5104-add2-adbfe98ccfb6.mp3"
+        },
+        {
+          "guid": "e2d3a300-5176-5c54-82ed-b12618357fad",
+          "en": "This word names a light-making object. It may stand on a table or be fixed to a wall. It uses a bulb or other source.",
+          "audioKey": "e2d3a300-5176-5c54-82ed-b12618357fad.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d5e242d8-b850-5a53-a655-4783caf8daa0",
+          "en": "I turned on the desk lamp to read my book.",
+          "zh": "我打開檯燈閱讀我的書。",
+          "audioKey": "d5e242d8-b850-5a53-a655-4783caf8daa0.mp3"
+        },
+        {
+          "guid": "7ba3e74e-0076-5146-9d94-b5eb285fc187",
+          "en": "The warm yellow lamp created a peaceful ambiance in the study.",
+          "zh": "溫暖的黃色燈光在書房營造了祥和寧靜的氛圍。",
+          "audioKey": "7ba3e74e-0076-5146-9d94-b5eb285fc187.mp3"
+        },
+        {
+          "guid": "b8243ae7-b80d-5a7b-8100-6d6ef83bceac",
+          "en": "Remember to switch off your bedside reading lamp before falling asleep.",
+          "zh": "入睡前記得關閉床頭閱讀燈。",
+          "audioKey": "b8243ae7-b80d-5a7b-8100-6d6ef83bceac.mp3"
+        }
+      ],
+      "wordAudioKey": "7e26abdd-2a98-5391-91d8-cf1d891c0e78.mp3"
+    },
+    {
+      "guid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "word": "chair",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "definition": "椅子",
+      "explains": [
+        {
+          "guid": "a001c6c1-d6d2-51c0-b5bc-5e07385770e0",
+          "en": "This is a seat with a back, usually made for one person. It may have four legs. As a verb, it can mean leading a meeting.",
+          "audioKey": "a001c6c1-d6d2-51c0-b5bc-5e07385770e0.mp3"
+        },
+        {
+          "guid": "115fe2bc-08ea-59f8-a2dc-e8232cc49cbb",
+          "en": "People sit on this furniture at a table. A person in charge may also lead a group meeting. The same word names that leadership role.",
+          "audioKey": "115fe2bc-08ea-59f8-a2dc-e8232cc49cbb.mp3"
+        },
+        {
+          "guid": "045501c0-90cc-57d3-a623-edb44a30e37a",
+          "en": "This word names a common piece of furniture. It often has a seat and a back. It can also describe guiding a meeting.",
+          "audioKey": "045501c0-90cc-57d3-a623-edb44a30e37a.mp3"
+        },
+        {
+          "guid": "a7407e8c-3776-541e-94fd-73dd40ef5259",
+          "en": "These nouns can name a person who leads a meeting or group. The shorter form is often used for the role. A leader guides discussion and helps the group make decisions.",
+          "audioKey": "a7407e8c-3776-541e-94fd-73dd40ef5259.mp3"
+        },
+        {
+          "guid": "5ef38819-292f-5cf3-9662-43a093e6b9b1",
+          "en": "A committee meets to discuss a new plan. One person keeps the talk in order and invites each member to speak. That person leads the meeting.",
+          "audioKey": "5ef38819-292f-5cf3-9662-43a093e6b9b1.mp3"
+        },
+        {
+          "guid": "5a1e1fa6-ca77-51cc-b638-70c172c09302",
+          "en": "A group may choose someone to guide its work for a year. The person may set meeting topics and speak for the group. The role can be held by anyone.",
+          "audioKey": "5a1e1fa6-ca77-51cc-b638-70c172c09302.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "e8b62abf-6153-5d8a-9aa5-72b1bf885c3f",
+          "en": "Please sit down on that wooden chair.",
+          "zh": "請在那張木椅上坐下。",
+          "audioKey": "e8b62abf-6153-5d8a-9aa5-72b1bf885c3f.mp3"
+        },
+        {
+          "guid": "00c61d4b-e9a7-5dd3-8562-2baeec76a9f9",
+          "en": "There are not enough chairs for all the guests.",
+          "zh": "沒有足夠的椅子給所有客人坐。",
+          "audioKey": "00c61d4b-e9a7-5dd3-8562-2baeec76a9f9.mp3"
+        },
+        {
+          "guid": "3ea7709f-ef3a-5dc3-aa3d-ca5f5d9c5c1c",
+          "en": "He pulled out a chair and sat down next to me.",
+          "zh": "他拉開一張椅子並坐在我身旁。",
+          "audioKey": "3ea7709f-ef3a-5dc3-aa3d-ca5f5d9c5c1c.mp3"
+        }
+      ],
+      "wordAudioKey": "453bf052-e58d-52ba-87ea-20d53d9e0fda.mp3"
+    },
+    {
+      "guid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "word": "table",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "桌子；餐桌；表格",
+      "explains": [
+        {
+          "guid": "d3e07c2a-fe71-536a-9c19-4750c81aa51c",
+          "en": "People eat meals at this flat piece of furniture. It may have four legs. A family can sit around it.",
+          "audioKey": "d3e07c2a-fe71-536a-9c19-4750c81aa51c.mp3"
+        },
+        {
+          "guid": "4b627629-4fb4-51bd-81f8-790d3cf63014",
+          "en": "A student may do homework here. A kitchen can have one for meals. It has a flat top and legs.",
+          "audioKey": "4b627629-4fb4-51bd-81f8-790d3cf63014.mp3"
+        },
+        {
+          "guid": "1c9eae83-6147-588d-8069-b732fa3d0259",
+          "en": "This furniture holds dishes and books. A person may place a cup on it. Several chairs can go around it.",
+          "audioKey": "1c9eae83-6147-588d-8069-b732fa3d0259.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "3553b51b-b316-526c-887b-6148884a85ce",
+          "en": "Dinner is ready on the table.",
+          "zh": "晚餐已經在餐桌上準備好了。",
+          "audioKey": "3553b51b-b316-526c-887b-6148884a85ce.mp3"
+        },
+        {
+          "guid": "ebaf426b-2c9e-5091-b895-814c6a719875",
+          "en": "We reserved a table for four at the Italian restaurant.",
+          "zh": "我們在義大利餐廳預訂了一張四人桌。",
+          "audioKey": "ebaf426b-2c9e-5091-b895-814c6a719875.mp3"
+        },
+        {
+          "guid": "e5e4cf14-7564-59d2-9ab1-c7888ca2a167",
+          "en": "The report presents the experimental results in a clear table.",
+          "zh": "報告在清楚的表格中呈現了實驗結果。",
+          "audioKey": "e5e4cf14-7564-59d2-9ab1-c7888ca2a167.mp3"
+        }
+      ],
+      "wordAudioKey": "7aa3aa74-1f36-5ce4-9a31-d0971f130500.mp3"
+    },
+    {
+      "guid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "word": "read",
+      "list": "basic",
+      "partsOfSpeech": [
+        "v"
+      ],
+      "definition": "閱讀；朗讀",
+      "explains": [
+        {
+          "guid": "6dd88e3e-7455-5c4c-9860-653e25008f14",
+          "en": "This action means looking at written words and understanding them. A child follows the words in a storybook. The story becomes clear in the child’s mind.",
+          "audioKey": "6dd88e3e-7455-5c4c-9860-653e25008f14.mp3"
+        },
+        {
+          "guid": "4ec76753-b9a1-56d2-907a-4ced3ee3442f",
+          "en": "This action can also involve saying written words aloud. A parent speaks the words on a page. A younger child listens to the story.",
+          "audioKey": "4ec76753-b9a1-56d2-907a-4ced3ee3442f.mp3"
+        },
+        {
+          "guid": "809ce75c-e931-5462-a8bf-5a17cb18fc41",
+          "en": "This can mean understanding information shown by something. A person looks at a clock. Its hands tell the person what time it is.",
+          "audioKey": "809ce75c-e931-5462-a8bf-5a17cb18fc41.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "b7f6712d-50ea-599d-819a-56383f109ca8",
+          "en": "I love to read English novels before bed.",
+          "zh": "我喜歡在睡前閱讀英文小說。",
+          "audioKey": "b7f6712d-50ea-599d-819a-56383f109ca8.mp3"
+        },
+        {
+          "guid": "5330cee2-83b8-5880-b804-5ab6207cced7",
+          "en": "The teacher asked the students to read the dialogue aloud.",
+          "zh": "老師要求學生們大聲朗讀這段對話。",
+          "audioKey": "5330cee2-83b8-5880-b804-5ab6207cced7.mp3"
+        },
+        {
+          "guid": "c96a040a-5601-5f7f-93e7-e37219ce7332",
+          "en": "I read an inspiring article about marine conservation in today's paper.",
+          "zh": "我在今天的報紙上讀到了一篇關於海洋保育的鼓舞人心的文章。",
+          "audioKey": "c96a040a-5601-5f7f-93e7-e37219ce7332.mp3"
+        }
+      ],
+      "wordAudioKey": "901917ba-0a4c-5c4a-9127-1d87d64eaa65.mp3"
+    },
+    {
+      "guid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+      "word": "sleep",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "definition": "睡覺；睡眠",
+      "explains": [
+        {
+          "guid": "bc0dee67-4098-54ff-8716-589193419d9e",
+          "en": "A person closes their eyes and rests at night. A baby may do this for many hours. The body needs this rest.",
+          "audioKey": "bc0dee67-4098-54ff-8716-589193419d9e.mp3"
+        },
+        {
+          "guid": "c53926a9-37a8-5e57-947b-b328ee9d2edf",
+          "en": "A tired person may lie in bed and become unaware of the room. A quiet place can help. Most people do this each night.",
+          "audioKey": "c53926a9-37a8-5e57-947b-b328ee9d2edf.mp3"
+        },
+        {
+          "guid": "2be86b12-d60b-5bbc-aad9-a4278d34c418",
+          "en": "This action gives the body time to rest. A person may dream during it. A soft bed can make it easier.",
+          "audioKey": "2be86b12-d60b-5bbc-aad9-a4278d34c418.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "eea8edeb-6b53-5505-b9b7-65f7253c48bd",
+          "en": "You should sleep at least seven hours a day.",
+          "zh": "你每天應該至少睡七個小時。",
+          "audioKey": "eea8edeb-6b53-5505-b9b7-65f7253c48bd.mp3"
+        },
+        {
+          "guid": "dcd51d58-fedf-5d35-8a4a-af0cb76f6a9d",
+          "en": "I was so tired that I fell asleep quickly.",
+          "zh": "我太累了，很快就睡著了。",
+          "audioKey": "dcd51d58-fedf-5d35-8a4a-af0cb76f6a9d.mp3"
+        },
+        {
+          "guid": "c836db22-3e0d-530e-a157-cd7c5c539867",
+          "en": "Adequate sleep helps improve your memory and focus.",
+          "zh": "充足的睡眠有助於提升記憶力與專注力。",
+          "audioKey": "c836db22-3e0d-530e-a157-cd7c5c539867.mp3"
+        }
+      ],
+      "wordAudioKey": "3e87b8fe-ca07-5227-898e-ae35219d04aa.mp3"
+    },
+    {
+      "guid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+      "word": "comfortable",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adj"
+      ],
+      "definition": "舒適的；自在的",
+      "explains": [
+        {
+          "guid": "6c93e32a-1582-5e4f-8112-c19974246fa3",
+          "en": "It describes something that feels easy and pleasant. A soft chair may help someone relax. A person may feel at ease with close friends.",
+          "audioKey": "6c93e32a-1582-5e4f-8112-c19974246fa3.mp3"
+        },
+        {
+          "guid": "d4dc7d28-ef33-569b-9f06-d65a190b4998",
+          "en": "Use this word for a seat or bed that feels good. It can also describe feeling calm with another person. Soft clothes may feel nice on the skin.",
+          "audioKey": "d4dc7d28-ef33-569b-9f06-d65a190b4998.mp3"
+        },
+        {
+          "guid": "75031016-1a3e-5720-b1e3-4940592ec9b4",
+          "en": "This word tells that someone feels relaxed or free from pain. It may describe furniture or clothing. A friendly place may make a guest feel this way.",
+          "audioKey": "75031016-1a3e-5720-b1e3-4940592ec9b4.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d4236eba-78f1-530b-96c3-54a542fe803e",
+          "en": "This memory foam mattress provides a comfortable night's sleep.",
+          "zh": "這款記憶棉床墊能提供整晚極致舒適的睡眠品質。",
+          "audioKey": "d4236eba-78f1-530b-96c3-54a542fe803e.mp3"
+        },
+        {
+          "guid": "15c7e2a2-d876-59ce-9aa3-669a649bf953",
+          "en": "Wear loose, comfortable clothing when taking long-distance international flights.",
+          "zh": "搭乘長途跨國長途航班時，請穿著寬鬆舒適的衣物。",
+          "audioKey": "15c7e2a2-d876-59ce-9aa3-669a649bf953.mp3"
+        },
+        {
+          "guid": "25dd9bc8-298a-56da-bccb-5478bfa6edf7",
+          "en": "Are you feeling comfortable with the proposed project timeline?",
+          "zh": "您對目前擬議中的專案執行時程感到自在滿意嗎？",
+          "audioKey": "25dd9bc8-298a-56da-bccb-5478bfa6edf7.mp3"
+        }
+      ],
+      "wordAudioKey": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac.mp3"
+    },
+    {
+      "guid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "word": "window",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "窗戶；每二十六個月開啟一次的地火發射窗口",
+      "explains": [
+        {
+          "guid": "6a5dd082-b3db-522a-8197-ed60eb5a7533",
+          "en": "A clear opening in a wall lets light enter. People can look outside through it. Curtains may cover it.",
+          "audioKey": "6a5dd082-b3db-522a-8197-ed60eb5a7533.mp3"
+        },
+        {
+          "guid": "6a80b676-b0a0-5668-8c78-74534b82a124",
+          "en": "A house has glass panels that can open. A bird may sit on its outer ledge. A person may close it during a storm.",
+          "audioKey": "6a80b676-b0a0-5668-8c78-74534b82a124.mp3"
+        },
+        {
+          "guid": "e69d96ec-71ae-5442-848c-0f832a77e594",
+          "en": "This part of a room lets people see outdoors. It may have curtains or blinds. A frame holds its glass.",
+          "audioKey": "e69d96ec-71ae-5442-848c-0f832a77e594.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "fdc6042c-5825-57be-a2cf-1e84aeefaccb",
+          "en": "Open the window to let fresh air in.",
+          "zh": "打開窗戶讓新鮮空氣進來。",
+          "audioKey": "fdc6042c-5825-57be-a2cf-1e84aeefaccb.mp3"
+        },
+        {
+          "guid": "4c475c42-6834-5d54-b50a-1695266778e4",
+          "en": "The cat is sitting quietly by the living room window.",
+          "zh": "貓咪安靜地坐在客廳窗戶旁。",
+          "audioKey": "4c475c42-6834-5d54-b50a-1695266778e4.mp3"
+        },
+        {
+          "guid": "09ca8ae2-f6fb-5e29-b94a-bf3a376cfe0a",
+          "en": "Raindrops are tapping gently against the bedroom window.",
+          "zh": "雨滴輕輕敲打著臥室的窗戶。",
+          "audioKey": "09ca8ae2-f6fb-5e29-b94a-bf3a376cfe0a.mp3"
+        },
+        {
+          "guid": "ef8b60c8-6c72-5d22-91af-d1562453dcae",
+          "en": "The planetary launch window opens every twenty-six months when Earth and Mars align favorably in orbit.",
+          "zh": "當地球與火星在公轉軌道上運行至最佳相對位置時，每二十六個月才會開啟一次寶貴的發射窗口。",
+          "audioKey": "ef8b60c8-6c72-5d22-91af-d1562453dcae.mp3"
+        },
+        {
+          "guid": "f392fe5a-27ea-5f69-875b-68892ba233cd",
+          "en": "Missing the tight launch window forces flight planners to postpone interplanetary missions by two full years.",
+          "zh": "萬一因天氣或技術故障錯過這短短兩週的發射窗口，整個火星探測計畫將被迫整整延宕兩年之久。",
+          "audioKey": "f392fe5a-27ea-5f69-875b-68892ba233cd.mp3"
+        },
+        {
+          "guid": "1fcbf4a4-1154-54c1-a30e-bd378ea47a8e",
+          "en": "Propulsion engineers calculated an optimal departure window to take full advantage of orbital alignment.",
+          "zh": "火箭軌道工程師精算出能量消耗最低的最佳出發窗口，以極致利用兩顆行星公轉軌道的幾何交會紅利。",
+          "audioKey": "1fcbf4a4-1154-54c1-a30e-bd378ea47a8e.mp3"
+        }
+      ],
+      "wordAudioKey": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38.mp3"
+    },
+    {
+      "guid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+      "word": "curtain",
+      "list": "advance",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "definition": "窗簾；幕簾；雙層氣泡幕阻隔打樁水下噪音 (護鯨)；隱藏於木格柵後方之電動可伸縮調音吸音布幕",
+      "explains": [
+        {
+          "guid": "4d1768bb-305b-50f5-956a-93003082ec35",
+          "en": "A piece of cloth can cover a window. A theater has one that opens before a show. It can give privacy.",
+          "audioKey": null
+        },
+        {
+          "guid": "a317ddf3-baf8-5949-97fb-6f3344a62335",
+          "en": "A person may pull it across a window. Heavy fabric can block light. A stage has one that hides actors.",
+          "audioKey": null
+        },
+        {
+          "guid": "34f087c8-ca2c-5a73-b9fd-b124b21a01c5",
+          "en": "This cloth hangs in front of glass. It may be opened in the morning. A theater uses a large one.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "b4035a83-ca5f-5a91-a536-98e3e39dc4db",
+          "en": "Open the curtains to let the warm sunlight in.",
+          "zh": "拉開窗簾讓溫暖的陽光照進來。",
+          "audioKey": null
+        },
+        {
+          "guid": "c25dd296-b8da-5fed-9f4f-90ffe5bde87b",
+          "en": "Heavy blackout curtains block out blinding morning glare effectively.",
+          "zh": "厚實的遮光窗簾能有效阻擋早晨刺眼的陽光。",
+          "audioKey": null
+        },
+        {
+          "guid": "99671c99-a6ad-5992-97c3-0141d988667a",
+          "en": "The stage curtain rose slowly as the orchestra began the overture.",
+          "zh": "隨著管弦樂團奏響序曲，舞台大幕緩緩升起。",
+          "audioKey": null
+        },
+        {
+          "guid": "a9c6f9db-7783-5b40-8319-e943403912b8",
+          "en": "Deploying a dual-layer bubble curtain creates acoustic shielding that protects endangered dolphins from noise.",
+          "zh": "在打樁點四周環繞佈設雙層氣泡幕，形成微氣泡隔音牆保護珍稀白海豚免受噪音干擾。",
+          "audioKey": null
+        },
+        {
+          "guid": "925cdc46-da4b-522c-94b4-8301d9150e76",
+          "en": "High-output air compressors pump millions of tiny air bubbles through perforated hoses to form the curtain.",
+          "zh": "甲板上的大功率空壓機透過海底穿孔微孔軟管，每分鐘泵入數百萬個細密微氣泡以築起降噪氣幕簾。",
+          "audioKey": null
+        },
+        {
+          "guid": "6bc7790a-a3f9-5ccc-82ce-df1c3f3112af",
+          "en": "Sonar measurements proved that the bubble curtain reduced underwater impact noise levels by over fifteen decibels.",
+          "zh": "水下聲納監測數據鐵證，雙層氣泡幕技術成功將水下打樁的衝擊聲壓級大幅消減了超過十五分貝。",
+          "audioKey": null
+        },
+        {
+          "guid": "fdde0439-3304-5d56-80ef-a0a1a2a32957",
+          "en": "Motorized acoustic wool curtains deploy from hidden ceiling pockets to adjust reverberation for amplified jazz concerts.",
+          "zh": "隱藏式「電動羊毛吸音布幕」（Acoustic Curtains），在舉辦爵士與流行電聲音樂會時迅速展開以縮短殘響。",
+          "audioKey": null
+        },
+        {
+          "guid": "7c70789b-3e66-5500-add2-b8e7276d9961",
+          "en": "She drew the thick velvet curtains shut to block out bright morning streetlights and sleep in late.",
+          "zh": "她隨手拉緊厚實遮光的天鵝絨窗簾以完全隔絕清晨刺眼的街燈與晨曦，安心享受週末難得的補眠時光。",
+          "audioKey": null
+        },
+        {
+          "guid": "b94796ce-2169-53b8-9e27-fec70c7c5f12",
+          "en": "The stage crew waited backstage for the heavy red velvet theater curtains to part before the play commenced.",
+          "zh": "舞台後台全體工作人員屏息待命，靜候沉重華麗的大紅天鵝絨戲劇布幕徐徐拉開，宣告年度大戲正式開演。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": null
+    },
+    {
+      "guid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "word": "shelf",
+      "list": "advance",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "架子；貨架",
+      "explains": [
+        {
+          "guid": "be4ed095-6fc9-5373-b0ec-a2dc72638378",
+          "en": "A flat board fixed to a wall or inside furniture holds books, dishes, or toys. The plural form changes its ending. People use it to organize a room.",
+          "audioKey": null
+        },
+        {
+          "guid": "a17cdc2a-efce-55f5-b849-a055a3def242",
+          "en": "A child may place a favorite book on a low board. A kitchen cabinet can hold cups above the counter. These boards help keep things organized.",
+          "audioKey": null
+        },
+        {
+          "guid": "46014aee-0650-5dfd-b26f-cf51fedd0fab",
+          "en": "A drawer stores items inside a box, while this board holds them in view. It may be made from wood, metal, or glass. Many can line a wall.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "e4e5c9c9-a7da-5ec1-b981-1c7d09d276a6",
+          "en": "The store clerk is restocking the milk and dairy shelves.",
+          "zh": "店員正在為牛奶與乳製品貨架補貨。",
+          "audioKey": null
+        },
+        {
+          "guid": "ffc18c11-0aca-5566-88f5-3e96fdadae0f",
+          "en": "Place the heavy hardcover dictionaries on the bottom shelf.",
+          "zh": "將厚重的精裝字典放在最底層的書架上。",
+          "audioKey": null
+        },
+        {
+          "guid": "1d9edb29-f7f9-5fdb-b3db-01deb5060d09",
+          "en": "The newly launched novel flew off the bookstore shelves within days.",
+          "zh": "這本新出版的小說在幾天內就在書店架上被搶購一空。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": null
+    },
+    {
+      "guid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "word": "book",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "definition": "書本；預訂；訂購；書籍",
+      "explains": [
+        {
+          "guid": "5b6763f2-fdda-5d5a-bb80-90bd6c5a5432",
+          "en": "It is a set of pages joined together with a cover. People read the words or pictures inside. As a verb, it can mean saving a place for a service or event.",
+          "audioKey": "5b6763f2-fdda-5d5a-bb80-90bd6c5a5432.mp3"
+        },
+        {
+          "guid": "6fdf68e6-30c5-5577-8fb2-b7902618790e",
+          "en": "This item may tell a story or teach facts. It can be opened and read one page at a time. A person may also reserve a room or seat using the same verb.",
+          "audioKey": "6fdf68e6-30c5-5577-8fb2-b7902618790e.mp3"
+        },
+        {
+          "guid": "c5e21103-aeba-5980-84f9-6dd123698533",
+          "en": "It can name something people read for fun or learning. It may contain many pages. As an action, it can mean arranging a place to stay or travel.",
+          "audioKey": "c5e21103-aeba-5980-84f9-6dd123698533.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "98adf3b8-60ed-519f-bbcf-ed07eea0c05c",
+          "en": "I like to read a story book before bedtime.",
+          "zh": "我喜歡在睡前讀故事書。",
+          "audioKey": "98adf3b8-60ed-519f-bbcf-ed07eea0c05c.mp3"
+        },
+        {
+          "guid": "1c295c3f-764f-52a8-8c4a-051e6f105056",
+          "en": "Don't forget to book the train tickets in advance.",
+          "zh": "不要忘記提前預訂火車票。",
+          "audioKey": "1c295c3f-764f-52a8-8c4a-051e6f105056.mp3"
+        },
+        {
+          "guid": "f99ae17a-bbbb-5c8f-ba9d-1d8a6d33148f",
+          "en": "This library contains thousands of rare English books.",
+          "zh": "這座圖書館藏有數千本珍貴的英文書籍。",
+          "audioKey": "f99ae17a-bbbb-5c8f-ba9d-1d8a6d33148f.mp3"
+        },
+        {
+          "guid": "8765a7d1-87cd-5c9f-b090-96bc9a74c639",
+          "en": "Book your high-speed rail tickets early to enjoy early-bird discounts.",
+          "zh": "提早預訂高鐵車票以享受早鳥折扣優惠。",
+          "audioKey": "8765a7d1-87cd-5c9f-b090-96bc9a74c639.mp3"
+        },
+        {
+          "guid": "9ce1c109-f14c-528d-896d-e08789b5442b",
+          "en": "We managed to book a boutique hotel overlooking the tranquil ocean.",
+          "zh": "我們幸運地預訂到了一間能俯瞰寧靜湛藍海景的精品渡假飯店。",
+          "audioKey": "9ce1c109-f14c-528d-896d-e08789b5442b.mp3"
+        },
+        {
+          "guid": "096d61eb-c476-5421-bb95-9587a528168a",
+          "en": "She loves curling up in an armchair on weekends to read a captivating book.",
+          "zh": "她週末最愛窩在舒適扶手椅裡，靜靜閱讀一本扣人心弦的好書。",
+          "audioKey": "096d61eb-c476-5421-bb95-9587a528168a.mp3"
+        }
+      ],
+      "wordAudioKey": "bde8d38f-901b-512d-a555-f6bbfad21fda.mp3"
+    },
+    {
+      "guid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+      "word": "pillow",
+      "list": "advance",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "枕頭；墊著",
+      "explains": [
+        {
+          "guid": "d24b5c35-a6ea-5d00-81e3-c8b9f3ee3c3c",
+          "en": "This noun names a soft cushion placed under the head during sleep. It may be filled with feathers, foam, or other soft material. A person can also rest against one while sitting.",
+          "audioKey": null
+        },
+        {
+          "guid": "dfdd5941-bfba-59dd-bc2c-e39e7b23df13",
+          "en": "A child may place one on a bed before going to sleep. A traveler may carry a small one on a long trip. It makes resting more comfortable.",
+          "audioKey": null
+        },
+        {
+          "guid": "ac5a2c0d-aadc-507b-a205-96bd9cb04ee3",
+          "en": "A cushion can be used on a chair or floor, while this item is usually made for a bed. It comes in different sizes and firmness. People often put a cover around it.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "b8478e7c-7696-5624-b01b-f6b3274c43bb",
+          "en": "A soft pillow helps you sleep comfortably.",
+          "zh": "一顆柔軟的枕頭能幫你睡得舒適。",
+          "audioKey": null
+        },
+        {
+          "guid": "8ae900d6-5919-53f8-b48a-47891f4eb7f9",
+          "en": "She hugged a decorative sofa pillow while watching the movie.",
+          "zh": "她邊看電影邊抱著沙發上的裝飾抱枕。",
+          "audioKey": null
+        },
+        {
+          "guid": "6e6c10d2-bac0-5c22-b808-87e677ed6954",
+          "en": "Change and wash your pillowcase regularly to keep your skin clear.",
+          "zh": "定期更換並清洗枕頭套以保持皮膚健康潔淨。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": null
+    },
+    {
+      "guid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+      "word": "clock",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "時鐘",
+      "explains": [
+        {
+          "guid": "ec5400f1-aecf-501c-937c-9ad6e3ffb078",
+          "en": "This device shows the time. It may hang on a wall or sit on a desk. Some make a sound each hour.",
+          "audioKey": "ec5400f1-aecf-501c-937c-9ad6e3ffb078.mp3"
+        },
+        {
+          "guid": "ab63dd7a-e988-5852-92e5-5e7aba66990d",
+          "en": "People look at this object to know the hour and minute. It may have hands or a digital screen. A large one may stand in a town square.",
+          "audioKey": "ab63dd7a-e988-5852-92e5-5e7aba66990d.mp3"
+        },
+        {
+          "guid": "b2b98b8f-42f9-56f0-bea3-4913bc9bf0ee",
+          "en": "This word names something that measures time. It can be worn, hung, or placed on a desk. Its face may show numbers.",
+          "audioKey": "b2b98b8f-42f9-56f0-bea3-4913bc9bf0ee.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "5c8748e2-8bd9-5a07-a676-cf4af0ddb6d7",
+          "en": "The clock on the wall says 3:00 PM.",
+          "zh": "牆上的時鐘顯示下午三點。",
+          "audioKey": "5c8748e2-8bd9-5a07-a676-cf4af0ddb6d7.mp3"
+        },
+        {
+          "guid": "cfcf37c5-ebfd-59bc-a22f-959b37a3fb0c",
+          "en": "My alarm clock rang loudly at six this morning.",
+          "zh": "我的鬧鐘今天早上六點大聲響起。",
+          "audioKey": "cfcf37c5-ebfd-59bc-a22f-959b37a3fb0c.mp3"
+        },
+        {
+          "guid": "9da05b17-2f45-5fbc-a3ab-d0f3dc879712",
+          "en": "The convenience store is open around the clock.",
+          "zh": "那家便利商店全天候二十四小時營業。",
+          "audioKey": "9da05b17-2f45-5fbc-a3ab-d0f3dc879712.mp3"
+        }
+      ],
+      "wordAudioKey": "ca66ba9a-d268-5346-a6dc-4f413011557d.mp3"
+    },
+    {
+      "guid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+      "word": "plant",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "definition": "植物；工廠；種植",
+      "explains": [
+        {
+          "guid": "a511ac80-632c-54a1-94b5-46090e2f7d7a",
+          "en": "A living thing with roots can grow in soil. It may have leaves, flowers, or fruit. As an action, it means putting seeds or young trees into the ground.",
+          "audioKey": "a511ac80-632c-54a1-94b5-46090e2f7d7a.mp3"
+        },
+        {
+          "guid": "655607a6-94be-5309-b47c-fda3f95dd035",
+          "en": "This living thing often needs water and sunlight. A farmer may grow food from it. The same word can mean a place where goods are made.",
+          "audioKey": "655607a6-94be-5309-b47c-fda3f95dd035.mp3"
+        },
+        {
+          "guid": "d2202e26-26d5-5849-a4f0-a85641235f12",
+          "en": "A tree is one kind of this living thing. It takes in water through roots. As a verb, it means placing seeds in the earth.",
+          "audioKey": "d2202e26-26d5-5849-a4f0-a85641235f12.mp3"
+        }
+      ],
+      "examples": [
+        {
+          "guid": "45e9ffe4-52a4-5937-adc3-9258ea9ae81d",
+          "en": "Many people enjoy keeping green indoor plants.",
+          "zh": "許多人喜歡在室內擺放綠色植栽。",
+          "audioKey": "45e9ffe4-52a4-5937-adc3-9258ea9ae81d.mp3"
+        },
+        {
+          "guid": "641668c2-b7f8-5ac1-806b-c3adf2eded78",
+          "en": "Water your potted plants once every two days.",
+          "zh": "每兩天為你的盆栽植物澆一次水。",
+          "audioKey": "641668c2-b7f8-5ac1-806b-c3adf2eded78.mp3"
+        },
+        {
+          "guid": "4a74475c-255d-503f-bcdd-bfff4767d166",
+          "en": "The local government plans to plant more trees along the street.",
+          "zh": "地方政府計劃在街道兩旁種植更多樹木。",
+          "audioKey": "4a74475c-255d-503f-bcdd-bfff4767d166.mp3"
+        }
+      ],
+      "wordAudioKey": "5a2196e2-78c5-511b-bd11-20f77f76399b.mp3"
+    },
+    {
+      "guid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+      "word": "it",
+      "list": "basic",
+      "partsOfSpeech": [
+        "pron"
+      ],
+      "definition": "它；這；那；它自己；本身",
+      "explains": [
+        {
+          "guid": "eb683133-3008-5c25-a084-9ea70da0b464",
+          "en": "This pronoun refers to a thing, animal, or idea already named. Another form shows ownership. A reflexive form points back to the same noun.",
+          "audioKey": null
+        },
+        {
+          "guid": "89891019-fb11-5b7f-b24f-82b2e477995e",
+          "en": "Use this pronoun when talking about a non-human subject. Other forms change when showing ownership. One form can point back to that subject.",
+          "audioKey": null
+        },
+        {
+          "guid": "895124df-93ec-5df9-9524-87e1b95336a6",
+          "en": "This word group may refer to an object or animal. One form acts as a subject or object. Other forms show possession or self-reference.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "fedaa50e-b3f3-519c-8dc0-638058b24ca7",
+          "en": "It is a sunny day today.",
+          "zh": "今天是個大晴天。",
+          "audioKey": null
+        },
+        {
+          "guid": "b4d4e345-4084-59fe-9ce5-703c1bec0212",
+          "en": "I found my lost key; it was under the sofa.",
+          "zh": "我找到遺失的鑰匙了，它在沙發下面。",
+          "audioKey": null
+        },
+        {
+          "guid": "f7b9f44e-4f06-5833-8fc3-3d5e40e8cb47",
+          "en": "It takes only ten minutes to walk there.",
+          "zh": "走路到那裡只要十分鐘。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "e013a140-86ec-5d79-984d-ff1215b342a2.mp3"
+    },
+    {
+      "guid": "d226c564-d905-53b7-8609-d0dc7065a798",
+      "word": "be",
+      "list": "basic",
+      "partsOfSpeech": [
+        "v",
+        "aux"
+      ],
+      "definition": "（動）是；成為；存在；（助）用於構成進行式或被動語態",
+      "explains": [
+        {
+          "guid": "d739d69a-dc38-5b7e-b3bc-d1eaa31c4817",
+          "en": "This verb connects a person with a name or quality. It can also link something to a place. It helps make many kinds of statements.",
+          "audioKey": null
+        },
+        {
+          "guid": "0a17341b-dcbe-58e6-b6ea-e59acf5a5aa3",
+          "en": "This verb can link a person to a description. It can tell where someone lives or stands. It can also help form a command or a question.",
+          "audioKey": null
+        },
+        {
+          "guid": "2a37236b-bcf7-5952-ada5-1d50f9028341",
+          "en": "This small verb can show that something exists or has a certain state. It links a subject with more information. It also appears in many questions and instructions.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "e0211c1f-064a-58b3-83db-e25d9f6de6be",
+          "en": "I want to be a kind and helpful friend.",
+          "zh": "我想成為一位善良又樂於助人的朋友。",
+          "audioKey": null
+        },
+        {
+          "guid": "bd7bcc91-9341-5546-a3bb-e94c59a1a53e",
+          "en": "The keys are on the kitchen table.",
+          "zh": "鑰匙在廚房桌上。",
+          "audioKey": null
+        },
+        {
+          "guid": "7ea36a59-4f4e-5398-830d-71e186c233c4",
+          "en": "Please be quiet while the baby sleeps.",
+          "zh": "寶寶睡覺時請保持安靜。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "d226c564-d905-53b7-8609-d0dc7065a798.mp3"
+    },
+    {
+      "guid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+      "word": "a",
+      "list": "basic",
+      "partsOfSpeech": [
+        "art"
+      ],
+      "definition": "不定冠詞：一個、一隻；用於單數可數名詞前，泛指某人或某物。",
+      "explains": [
+        {
+          "guid": "19e00b96-25de-5527-ac24-528cef1e33f9",
+          "en": "This short grammar word comes before one countable thing. It is useful when the listener does not know which thing you mean. Its form can change to match the first sound of the next word.",
+          "audioKey": null
+        },
+        {
+          "guid": "33cf9233-4039-58a4-becf-359ea50cdf08",
+          "en": "Use this word when you mean one item in general. One form comes before consonant sounds. Another form comes before vowel sounds.",
+          "audioKey": null
+        },
+        {
+          "guid": "6a3f237c-be8a-55ec-b5ab-d2c37938d453",
+          "en": "This word can come before the name of one person, place, or object. It helps show that you mean one, but not one special thing. It is often used before jobs and things people can count.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "900e7622-ab9d-5ad4-b8ba-a617fa982ffc",
+          "en": "I saw a rabbit near the school gate.",
+          "zh": "我在校門附近看到一隻兔子。",
+          "audioKey": null
+        },
+        {
+          "guid": "8a847019-ec3f-539e-98ad-bef40c4dc379",
+          "en": "There is a fluffy cat sleeping peacefully under the tree.",
+          "zh": "有一隻毛茸茸的貓在樹下安詳地睡覺。",
+          "audioKey": null
+        },
+        {
+          "guid": "8414b6dc-4e2e-56c9-94cf-2cacc9cc8e3b",
+          "en": "Mom bought me a new blue backpack for the new school year.",
+          "zh": "媽媽為新學年買了一個新的藍色書包給我。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "5cf42a19-a752-5940-9e93-25b1e69e21bf.mp3"
+    },
+    {
+      "guid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+      "word": "quiet",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adj",
+        "n",
+        "v"
+      ],
+      "definition": "安靜的；平靜的",
+      "explains": [
+        {
+          "guid": "5f87bf4d-6d99-5112-b0e0-a79469d3f1c1",
+          "en": "It describes a place with little sound. A child may sit and read without noise. It can also mean calm and still.",
+          "audioKey": null
+        },
+        {
+          "guid": "d80cf1b7-0dbf-59ff-98b5-b481250e7bcb",
+          "en": "A library asks visitors to keep their voices low. A lake may have no waves. This word tells that a place is peaceful.",
+          "audioKey": null
+        },
+        {
+          "guid": "6879c359-7282-594e-aa65-10645593951c",
+          "en": "This word means not noisy. A person may speak softly in a room. It can also describe someone who does not talk much.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "2c0f3cf8-e44c-5de7-8388-52e0e40a074e",
+          "en": "Please be quiet while studying in the library.",
+          "zh": "在圖書館讀書時請保持安靜。",
+          "audioKey": null
+        },
+        {
+          "guid": "69bd4951-9621-5b91-a1c7-cf62cf6b0e93",
+          "en": "We spent a quiet afternoon sipping tea in the yard.",
+          "zh": "我們在院子裡喝茶度過了一個寧靜祥和的下午。",
+          "audioKey": null
+        },
+        {
+          "guid": "55255afa-0eeb-56de-a0cc-7067db2108ad",
+          "en": "She is a quiet girl who prefers reading over talking.",
+          "zh": "她是個文靜的女孩，比起聊天更喜歡看書。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "c3107be9-eaa8-54a6-a6b6-c764fe455083.mp3"
+    },
+    {
+      "guid": "a5cbff0b-6a99-57e0-a364-070342039e0f",
+      "word": "afternoon",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "下午",
+      "explains": [
+        {
+          "guid": "fb893571-d943-5433-a067-18a91f038e96",
+          "en": "This is the part of the day between noon and evening. Children may go to school during this time. The sun is still up for much of it.",
+          "audioKey": null
+        },
+        {
+          "guid": "ca5998eb-04ec-513a-acb2-e8579d6cb696",
+          "en": "It is the time after the middle of the day. People may eat lunch or do homework then. It comes before evening.",
+          "audioKey": null
+        },
+        {
+          "guid": "863afa44-9af2-571e-86bc-15f4c67a7ca6",
+          "en": "This word names a part of the day. It begins when noon has passed. It ends when evening starts.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "192fe78d-b839-5a00-bb13-080a99c0e1ff",
+          "en": "We have PE class this afternoon.",
+          "zh": "我們今天下午有體育課。",
+          "audioKey": null
+        },
+        {
+          "guid": "54fc8ddb-e7f1-52bc-b821-6a68707490dd",
+          "en": "They often enjoy afternoon tea at a cozy café.",
+          "zh": "他們經常在溫馨的咖啡館享用下午茶。",
+          "audioKey": null
+        },
+        {
+          "guid": "ca9d7af0-f832-54db-8567-472c724d0274",
+          "en": "It usually rains in the afternoon during summer in Taipei.",
+          "zh": "台北夏天的下午經常下陣雨。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "a5cbff0b-6a99-57e0-a364-070342039e0f.mp3"
+    },
+    {
+      "guid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+      "word": "at",
+      "list": "basic",
+      "partsOfSpeech": [
+        "prep"
+      ],
+      "definition": "在；於；以（時間、地點或目標）",
+      "explains": [
+        {
+          "guid": "38afa4a2-a5bb-5392-b646-cf3b74b73d18",
+          "en": "This short word points to one exact place or time. It can show where something happens, such as near the door. It can also show when something happens, such as noon.",
+          "audioKey": null
+        },
+        {
+          "guid": "a4e752ec-49ff-5d00-9792-cf858871f486",
+          "en": "Use this word to name the place where someone is. It can also connect an event with one clock time. It often comes before the name of a place or hour.",
+          "audioKey": null
+        },
+        {
+          "guid": "abe5cc74-bb51-50fd-b806-2eeb06fb40e1",
+          "en": "It helps give a clear point on a map or clock. Someone can wait beside one building with it. A meeting can begin when the clock shows one stated hour.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d49bc193-c190-5da6-9ed4-140392630627",
+          "en": "The children meet at the library after school.",
+          "zh": "孩子們放學後在圖書館碰面。",
+          "audioKey": null
+        },
+        {
+          "guid": "e954e2ae-1146-57b3-9f6f-21b9cd60edd2",
+          "en": "Our bus leaves at six in the morning.",
+          "zh": "我們的公車早上六點出發。",
+          "audioKey": null
+        },
+        {
+          "guid": "ece9f723-9aac-5a5a-8954-621783a17135",
+          "en": "Look at the bright star above the trees.",
+          "zh": "看看樹上方那顆明亮的星星。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "2e2ac029-b469-53b8-a11b-2f1c63f3c295.mp3"
+    },
+    {
+      "guid": "1ec333cb-6966-5431-b180-0448e8610698",
+      "word": "home",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "adv",
+        "v",
+        "adj"
+      ],
+      "definition": "家；住處；在家",
+      "explains": [
+        {
+          "guid": "c71f468e-49fb-5c9b-9a56-a10064847316",
+          "en": "This is the place where someone lives. It may be an apartment, house, or room. The word can also mean being at that place.",
+          "audioKey": null
+        },
+        {
+          "guid": "92784e4a-7182-57d7-8cb5-63c2e7862410",
+          "en": "People often feel safe where they live. A family may return there after work or school. As an adverb, it can mean toward that place.",
+          "audioKey": null
+        },
+        {
+          "guid": "0b79f708-a899-5980-ba9d-a71a7144ffec",
+          "en": "This word names a person’s living place. It may be where family members gather. It can also describe moving to that place.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d3670158-3c5d-5106-8f24-6f62c943a0b1",
+          "en": "Welcome home! Dinner is ready.",
+          "zh": "歡迎回家！晚餐準備好了。",
+          "audioKey": null
+        },
+        {
+          "guid": "e190edd8-9c66-523a-8aaf-e494f4a68456",
+          "en": "I usually stay at home and relax on Sunday afternoons.",
+          "zh": "星期天下午我通常待在家裡放鬆。",
+          "audioKey": null
+        },
+        {
+          "guid": "b1ecb85c-05a3-55b6-9c47-ea763be2fc39",
+          "en": "Taiwan is home to many unique endemic animal species.",
+          "zh": "台灣是許多獨特特有種動物的家園。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "1ec333cb-6966-5431-b180-0448e8610698.mp3"
+    },
+    {
+      "guid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "word": "child",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "小孩；兒童",
+      "explains": [
+        {
+          "guid": "a069ca0d-ae00-57f1-861f-c01825bdd755",
+          "en": "This is a young person who is not yet an adult. They may go to school and live with family. The word can mean a son or daughter.",
+          "audioKey": null
+        },
+        {
+          "guid": "dbde6465-0cdf-5bdf-80dc-96487b209bb9",
+          "en": "A young person needs care from adults. They may learn new things at school. This word is used for someone who has not grown up yet.",
+          "audioKey": null
+        },
+        {
+          "guid": "ccacbe68-91d8-5667-8385-ecadfcf466c9",
+          "en": "This word names a young human. They may play, learn, and grow each day. Adults help keep them safe.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "8abd45f2-f885-5b0d-a7e3-3a326705f44f",
+          "en": "Every child loves going to the night market.",
+          "zh": "每個小孩子都喜歡逛夜市。",
+          "audioKey": null
+        },
+        {
+          "guid": "fa3a4b9a-4947-5fbc-83ab-577af0fedfa7",
+          "en": "The child fell asleep while listening to a bedtime story.",
+          "zh": "那個孩子聽著床邊故事睡著了。",
+          "audioKey": null
+        },
+        {
+          "guid": "59ce4a71-2586-5f28-82d9-bacc44d87417",
+          "en": "Parents should spend more quality time with their child.",
+          "zh": "父母應該多花有質量的時間陪伴孩子。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "263754b2-3e27-5e7d-9dfa-cbed6ee49408.mp3"
+    },
+    {
+      "guid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "word": "sit",
+      "list": "basic",
+      "partsOfSpeech": [
+        "v"
+      ],
+      "definition": "坐下；就座",
+      "explains": [
+        {
+          "guid": "f8203902-4269-545c-95ab-e7fbb956e224",
+          "en": "It means resting on a chair with the body upright. A person may do this at a desk. A dog can do it when told.",
+          "audioKey": null
+        },
+        {
+          "guid": "31cb910e-259f-5547-8283-07fd657ed91c",
+          "en": "A child can be on a chair during a lesson. The body is lower than when standing. A cat may stay in this position by a window.",
+          "audioKey": null
+        },
+        {
+          "guid": "c86d4ab2-b933-5d7a-99ff-fc1904891d04",
+          "en": "This position uses a chair or bench. A person may stay still during a meal. A teacher may ask a class to do this.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "bba9cafe-190f-57d8-afc2-e4dde4565e11",
+          "en": "Please sit down and make yourself comfortable.",
+          "zh": "請坐下，請放輕鬆。",
+          "audioKey": null
+        },
+        {
+          "guid": "7ef20400-74e5-5097-93db-7fd53787f16e",
+          "en": "We sat by the window watching the raindrops fall into the garden.",
+          "zh": "我們坐在窗邊看著雨滴落在花園裡。",
+          "audioKey": null
+        },
+        {
+          "guid": "0cf0280e-871a-5a37-a0ca-add39bd66f70",
+          "en": "Sit up straight during class to prevent back pain and fatigue.",
+          "zh": "上課時坐姿端正可以預防背部痠痛與疲勞。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "c7cebf58-68f7-5296-b1dd-d81806393e06.mp3"
+    },
+    {
+      "guid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+      "word": "on",
+      "list": "basic",
+      "partsOfSpeech": [
+        "prep",
+        "adv"
+      ],
+      "definition": "在…上面；在…進行中",
+      "explains": [
+        {
+          "guid": "489c58fb-9a2b-5de9-98c7-09101e3c9005",
+          "en": "It can show that a thing rests above a surface. A cup may sit atop a table. It can also tell that a machine is working.",
+          "audioKey": null
+        },
+        {
+          "guid": "89e7b739-1c66-5bf9-80b1-a87f24dc1bdc",
+          "en": "Use this small term to say something touches the top of a surface. A coat may hang there. It can also describe a light that shines.",
+          "audioKey": null
+        },
+        {
+          "guid": "8d1d9309-8306-56a0-a499-e6069bc295e6",
+          "en": "This word can tell that an event is happening now. A computer may be working. It may also show contact with a surface.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7fefaa28-4772-517f-a6cb-165c678f8305",
+          "en": "Place the computer on the desk.",
+          "zh": "把電腦放在書桌上。",
+          "audioKey": null
+        },
+        {
+          "guid": "f2fd5b4e-4ad4-57bb-999e-dc5d6f7e00c1",
+          "en": "There is a picture hanging on the wall.",
+          "zh": "牆上掛著一幅畫。",
+          "audioKey": null
+        },
+        {
+          "guid": "d6783ed1-dd44-5f04-ba6e-ee9f7aeeecd9",
+          "en": "What channel is the baseball game on tonight?",
+          "zh": "今晚棒球比賽在第幾台播出？",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "ec204d26-d736-53ae-a83b-6efc605c6eaa.mp3"
+    },
+    {
+      "guid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+      "word": "the",
+      "list": "basic",
+      "partsOfSpeech": [
+        "art"
+      ],
+      "definition": "（定冠詞）這個；那個；用於特定或已知的人事物前",
+      "explains": [
+        {
+          "guid": "ffc7bfa1-e809-57f2-941f-730dd401fcd5",
+          "en": "A short article comes before a noun when a speaker means a known person or object. It can appear before one noun or many nouns. English uses it very often.",
+          "audioKey": null
+        },
+        {
+          "guid": "c64e7867-04bc-5ff1-a2fb-03f28a310fab",
+          "en": "Speakers use this article for a specific item. It can come before a name for something mentioned before. It is a short word placed before a noun.",
+          "audioKey": null
+        },
+        {
+          "guid": "3f19f9bc-3561-5aaa-8bd4-7ae0655b5069",
+          "en": "This tiny article points to a particular person, place, or object. It may come before a describing word and a noun. Readers see it very often.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "166c8c17-b989-5d39-b099-f4a0e2a8276b",
+          "en": "The sun is bright today.",
+          "zh": "今天陽光很明亮。",
+          "audioKey": null
+        },
+        {
+          "guid": "e78aea02-7530-53c7-a7b2-a700788a7952",
+          "en": "Please close the door.",
+          "zh": "請把門關上。",
+          "audioKey": null
+        },
+        {
+          "guid": "f64e652f-f1eb-5f95-972e-64a8755e1f4b",
+          "en": "We saw the moon last night.",
+          "zh": "我們昨晚看到了月亮。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "f0de0ac7-58d3-5227-8bae-c777d72510ec.mp3"
+    },
+    {
+      "guid": "8368b809-999f-54a8-9960-aea0226831fa",
+      "word": "and",
+      "list": "basic",
+      "partsOfSpeech": [
+        "conj"
+      ],
+      "definition": "和；以及；而且",
+      "explains": [
+        {
+          "guid": "cd5dc21a-8a4e-528c-b9d1-f03e30324c62",
+          "en": "This small joining word links two words or ideas. It can connect names, things, or actions. It shows that both parts belong together.",
+          "audioKey": null
+        },
+        {
+          "guid": "42429926-17af-5ce3-96f7-f2f624abd783",
+          "en": "Use this word to put two items in one list. It may also join two parts of a sentence. It helps the reader see that both ideas matter.",
+          "audioKey": null
+        },
+        {
+          "guid": "2ba0525f-b052-5d7f-83dd-40a40bb9c6d9",
+          "en": "It links one person or thing with another. It can join two actions in one thought. Lists often use it before the final item.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "542c1620-7308-5e0e-a1b3-580e71e6d8e8",
+          "en": "I like apples and oranges.",
+          "zh": "我喜歡蘋果和柳橙。",
+          "audioKey": null
+        },
+        {
+          "guid": "903f61a0-cbbc-5711-aadd-8c71a944a611",
+          "en": "He is smart, kind, and always willing to help his classmates.",
+          "zh": "他聰明、善良，而且總是樂於幫助同學。",
+          "audioKey": null
+        },
+        {
+          "guid": "eacdca3c-05d4-5c5b-b43c-36d7dfee941f",
+          "en": "You and I should cooperate closely to finish this science assignment.",
+          "zh": "你和我應該緊密合作以完成這項自然科學作業。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "8368b809-999f-54a8-9960-aea0226831fa.mp3"
+    },
+    {
+      "guid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+      "word": "look",
+      "list": "basic",
+      "partsOfSpeech": [
+        "v",
+        "n"
+      ],
+      "definition": "看；注視；看起來",
+      "explains": [
+        {
+          "guid": "fa5b08ff-19de-57af-90b5-b49ab29f81a3",
+          "en": "It means using the eyes to see. It can also mean seeming a certain way. As a noun, it can name someone’s appearance.",
+          "audioKey": null
+        },
+        {
+          "guid": "b772c782-e39c-59b4-8a3a-79498c7ff9bc",
+          "en": "Use this word when directing the eyes toward something. It can describe how a person seems. The noun may mean a style or appearance.",
+          "audioKey": null
+        },
+        {
+          "guid": "782250ef-dbeb-5110-bd17-289ab3b2135c",
+          "en": "This verb means seeing or watching. It may also mean seeming to be a certain way. A person’s face or style can be described with the noun.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "66c2459f-f0be-5414-8f03-33e2f34dd2f2",
+          "en": "Look at the beautiful rainbow in the sky!",
+          "zh": "快看天上美麗的彩虹！",
+          "audioKey": null
+        },
+        {
+          "guid": "666c78e5-85f8-50fb-94ee-4bb3c61882db",
+          "en": "She looks very elegant in her traditional festival costume.",
+          "zh": "她穿著傳統節慶服裝看起來十分優雅。",
+          "audioKey": null
+        },
+        {
+          "guid": "de5bef53-4881-589b-8cf9-b21d3ba0993e",
+          "en": "Can you help me look for my lost bus card?",
+          "zh": "你能幫我找一下我遺失的公車卡嗎？",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4.mp3"
+    },
+    {
+      "guid": "2127488c-c92c-575c-8331-16dc10313e68",
+      "word": "another",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adj",
+        "pron"
+      ],
+      "definition": "另一個；再一個",
+      "explains": [
+        {
+          "guid": "f6f86b57-3453-580e-8ec4-e9708f12df35",
+          "en": "It means one more person or thing of the same kind. You may take one cookie now, then choose one more. It can also mean a different choice.",
+          "audioKey": null
+        },
+        {
+          "guid": "4e29feec-b7d7-5f35-9d4d-628b6eb1ad83",
+          "en": "Use this word when you want one extra item. It can also point to a different person or thing. The sentence tells which meaning fits.",
+          "audioKey": null
+        },
+        {
+          "guid": "8967b1ff-ec01-55c3-ae0e-a0a3048feb4f",
+          "en": "This word can name one more member of a group. It may also mean a different one. It helps talk about an extra choice.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "fcbfb54f-715e-596a-a9ce-324edfd08271",
+          "en": "Would you like another cup of hot soy milk?",
+          "zh": "你想要再來一杯熱豆漿嗎？",
+          "audioKey": null
+        },
+        {
+          "guid": "3b81f263-e48b-5f22-b809-8cc6c14e47f6",
+          "en": "The team faced another difficult challenge after winning the semi-finals.",
+          "zh": "在贏得準決賽後，該團隊面臨了另一項艱鉅考驗。",
+          "audioKey": null
+        },
+        {
+          "guid": "7d574c51-e36a-55b3-ad15-269af3d061ea",
+          "en": "If this shirt doesn't fit, I can fetch another one from the stockroom.",
+          "zh": "如果這件襯衫不合身，我可以從庫房再拿另一件過來。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "2127488c-c92c-575c-8331-16dc10313e68.mp3"
+    },
+    {
+      "guid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+      "word": "with",
+      "list": "basic",
+      "partsOfSpeech": [
+        "prep"
+      ],
+      "definition": "和…一起；用；伴隨著",
+      "explains": [
+        {
+          "guid": "c959610f-a49d-58d2-8474-d673c6a17408",
+          "en": "It means together or alongside. A person may walk beside a friend. It can also mean using an object.",
+          "audioKey": null
+        },
+        {
+          "guid": "2f7d3435-236f-59e7-a689-4958424977e9",
+          "en": "A meal may include rice and beans. A person can hold a cup in one hand. The word can mean having something at the same time.",
+          "audioKey": null
+        },
+        {
+          "guid": "3d352cdf-fb1c-56e5-889c-39c835223d3f",
+          "en": "This short preposition can show company. A child may go to school beside a parent. It can also describe a tool used for an action.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "5e49da08-f75a-5e22-86eb-b028a9425c63",
+          "en": "I like drinking hot pearl milk tea with less sugar.",
+          "zh": "我喜歡喝微糖的熱珍珠奶茶。",
+          "audioKey": null
+        },
+        {
+          "guid": "a62d2019-5511-5d64-b849-45343c5c5688",
+          "en": "She loves spending her weekend afternoons cooking dinner with close friends.",
+          "zh": "她喜歡在週末午後和親密摯友一起動手煮晚餐。",
+          "audioKey": null
+        },
+        {
+          "guid": "5b1687c3-42c2-50b2-930b-e6dff486c0ae",
+          "en": "Write your signature with a black ballpoint pen on the official form.",
+          "zh": "請在正式表格上使用黑色原子筆簽上你的名字。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "7b751619-7c9f-5174-a0b8-92c5a2563fca.mp3"
+    },
+    {
+      "guid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+      "word": "her",
+      "list": "basic",
+      "partsOfSpeech": [
+        "pron"
+      ],
+      "definition": "她；她自己",
+      "explains": [
+        {
+          "guid": "120dd013-40c0-5b45-8453-6792f096ae21",
+          "en": "This word refers to a female person or animal. The word may be used when talking about someone already known. It can also refer to an object or animal linked to a female.",
+          "audioKey": null
+        },
+        {
+          "guid": "9739a1a0-a1ad-53a7-9cec-e665f2be0849",
+          "en": "A girl may be spoken about with this pronoun. It takes the place of a female name in a sentence. The form for something owned by that person is different.",
+          "audioKey": null
+        },
+        {
+          "guid": "dc5be8ea-f312-5e3c-b4a0-d75b6ecc332d",
+          "en": "This pronoun points to a female person. It may be used after a verb or before something owned. A speaker uses it to avoid saying a name again.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7bb0cd05-6f6b-5272-a362-05aa32c2dd92",
+          "en": "She lives in Taipei.",
+          "zh": "她住在台北。",
+          "audioKey": null
+        },
+        {
+          "guid": "e6e758a4-b89b-5edf-b7d8-76ac979241fe",
+          "en": "She wants to be a doctor in the future.",
+          "zh": "她未來想成為一名醫生。",
+          "audioKey": null
+        },
+        {
+          "guid": "4cf855b4-13a6-5bca-ad40-be03e414fbb7",
+          "en": "She speaks English very fluently.",
+          "zh": "她的英語說得非常流利。",
+          "audioKey": null
+        },
+        {
+          "guid": "8ff70286-c917-5a21-9f26-90d596512c22",
+          "en": "She made a beautiful beaded bracelet for herself.",
+          "zh": "她為自己做了一條漂亮的串珠手鍊。",
+          "audioKey": null
+        },
+        {
+          "guid": "6c464f1b-ee8e-50ee-b843-5dd81f46f078",
+          "en": "She taught herself how to play acoustic guitar through online video tutorials.",
+          "zh": "她透過線上影片教學自學學會了彈奏木吉他。",
+          "audioKey": null
+        },
+        {
+          "guid": "8d25bdb6-13fc-5c1b-851a-61141abdd470",
+          "en": "She took great pride in herself after passing the advanced certification exam.",
+          "zh": "在通過高階檢定考試後，她為自己感到無比驕傲與自豪。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "340e6974-23fc-5371-af8c-cfb45df7e165.mp3"
+    },
+    {
+      "guid": "2eca3d4d-8da9-5fa5-b74e-d8f968adfbaf",
+      "word": "head",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n",
+        "v"
+      ],
+      "definition": "頭部；首領；朝…前進",
+      "explains": [
+        {
+          "guid": "e13f288f-a507-5896-9ac4-dedd7d1c8674",
+          "en": "This is the part of the body above the neck. It contains the brain, eyes, and mouth. It can also mean a leader or the top part of something.",
+          "audioKey": null
+        },
+        {
+          "guid": "25e374bf-24e6-5a11-9396-e0e40e71cca2",
+          "en": "People use this part to think, see, and speak. A group may have someone in charge with this name. The verb can mean moving toward a place.",
+          "audioKey": null
+        },
+        {
+          "guid": "ddf5d525-275d-585a-aff0-b0d79f2ceb9b",
+          "en": "This word can name the top part of the body. It may also mean a person leading a group. As an action, it means going in a direction.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "085e9938-2a57-53b5-a99a-554010bc62c0",
+          "en": "Wear a helmet to protect your head.",
+          "zh": "戴上安全帽以保護你的頭部。",
+          "audioKey": null
+        },
+        {
+          "guid": "864ceafa-426e-587e-926d-dcbd280595e8",
+          "en": "He nodded his head in agreement with the teacher's suggestion.",
+          "zh": "他點頭贊成老師的建議。",
+          "audioKey": null
+        },
+        {
+          "guid": "723e1f4d-d02d-59e8-8c47-9757a3819139",
+          "en": "After dinner, we decided to head for the night market.",
+          "zh": "晚餐後，我們決定前往夜市。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "2eca3d4d-8da9-5fa5-b74e-d8f968adfbaf.mp3"
+    },
+    {
+      "guid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+      "word": "in",
+      "list": "basic",
+      "partsOfSpeech": [
+        "prep",
+        "adv",
+        "adj"
+      ],
+      "definition": "在…裡面；在…之中",
+      "explains": [
+        {
+          "guid": "e14ea9c8-6220-5cbd-abfa-285238a09141",
+          "en": "This short word can show that something is within a place. It may also tell a time period or condition. A sentence gives the exact sense.",
+          "audioKey": null
+        },
+        {
+          "guid": "5d36ee8d-9296-5fb0-87a9-f266100e58a6",
+          "en": "Use it to point to a position surrounded by something. It may also describe a month, year, or state. The nearby words help show its meaning.",
+          "audioKey": null
+        },
+        {
+          "guid": "3e7cda12-88d0-5961-a577-0e7ed456046a",
+          "en": "This word may tell that someone is surrounded by a space. It can name a time or situation. It often links a thing with its location.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "cf7dd100-7d8b-5ebd-82bf-5251049c4527",
+          "en": "My wallet is in the backpack.",
+          "zh": "我的皮夾在背包裡面。",
+          "audioKey": null
+        },
+        {
+          "guid": "5000676d-5292-5498-8839-3f12f62d6150",
+          "en": "We study in the classroom every weekday morning.",
+          "zh": "我們每個平日早晨都在教室裡學習。",
+          "audioKey": null
+        },
+        {
+          "guid": "fd86c2e7-dd4a-5e18-91ad-1cc45f1b9316",
+          "en": "She was born in Taichung in 2008.",
+          "zh": "她於 2008 年在台中出生。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "2b8b2b8a-9127-5565-a861-0d8c1023d61f.mp3"
+    },
+    {
+      "guid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+      "word": "front",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adj",
+        "n"
+      ],
+      "definition": "（形）前面的；（名）前面；正面",
+      "explains": [
+        {
+          "guid": "e9a2ef18-7b0a-55ff-84a9-0e416cd58865",
+          "en": "This means the part that faces forward. It may be the area closest to the entrance. It can also describe a position at the start of a line.",
+          "audioKey": null
+        },
+        {
+          "guid": "00a04663-7083-5ff7-a83d-2ee3ad5fecaf",
+          "en": "Use this word for the side seen first when looking at an object. It may describe the area near an entrance. A person at the start of a group stands there.",
+          "audioKey": null
+        },
+        {
+          "guid": "1463687c-6844-52bd-a463-875523af32af",
+          "en": "This word names the part that faces outward or forward. It may describe the start of a building. It can also mean acting in a false way to hide the truth.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "3205cdc7-b386-5c47-bc32-3910959a7c35",
+          "en": "The front of the house faces the garden.",
+          "zh": "房子的正面朝向花園。",
+          "audioKey": null
+        },
+        {
+          "guid": "4b086b5e-41db-57ad-a9e5-f2b96e2320b6",
+          "en": "Please sit in the front row.",
+          "zh": "請坐在前排。",
+          "audioKey": null
+        },
+        {
+          "guid": "0be38732-1d8f-54be-a9a5-6990f2344f54",
+          "en": "The front door was painted red.",
+          "zh": "前門漆成了紅色。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92.mp3"
+    },
+    {
+      "guid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+      "word": "of",
+      "list": "basic",
+      "partsOfSpeech": [
+        "prep"
+      ],
+      "definition": "…的；由…組成；關於",
+      "explains": [
+        {
+          "guid": "fab14051-5bb8-5aa8-8126-6c156e3e8a33",
+          "en": "This short preposition connects two nouns. It may show who owns something. It can tell what material an item uses.",
+          "audioKey": null
+        },
+        {
+          "guid": "c347c18a-f829-5f7f-ba2b-b0258330d7a7",
+          "en": "Use this small word to link one thing with another. It can show a part that belongs to a whole. It may also introduce a source or cause.",
+          "audioKey": null
+        },
+        {
+          "guid": "1111bac7-fb39-54b3-921f-1c66ef9ddcad",
+          "en": "This preposition can show a connection, amount, or material. It often appears between two nouns. The surrounding words tell the relationship.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "934914cb-2870-51f8-8b05-618d21ab0eaa",
+          "en": "The lid of the box is blue.",
+          "zh": "盒子的蓋子是藍色的。",
+          "audioKey": null
+        },
+        {
+          "guid": "5ad45af7-c83f-58cd-ba0a-d4739843e031",
+          "en": "A cup of tea would be nice.",
+          "zh": "來一杯茶會很不錯。",
+          "audioKey": null
+        },
+        {
+          "guid": "1ba01f5e-55df-56a3-a6c8-9cae3514c317",
+          "en": "She is a friend of my sister.",
+          "zh": "她是我姊姊的朋友。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "3e0475b2-f44f-5b77-b24f-44308c2b9239.mp3"
+    },
+    {
+      "guid": "feaa13de-bcb4-5a08-bf9b-0d3b82de9864",
+      "word": "left",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adj",
+        "n",
+        "adv"
+      ],
+      "definition": "左邊的；向左；左方",
+      "explains": [
+        {
+          "guid": "4a41d32f-0b10-5d33-955a-3fe90f42e5ea",
+          "en": "It means the side opposite right. It may also mean remaining after others are gone. As a verb form, it can describe someone who went away.",
+          "audioKey": null
+        },
+        {
+          "guid": "bc374cd4-a33f-5af8-a6c4-6c120fb68ab1",
+          "en": "Use this word for the direction toward the west when facing north. It can also mean what remains. A person may turn that way at a road.",
+          "audioKey": null
+        },
+        {
+          "guid": "747fb085-a2a9-568a-ba2e-c4bd19f3c838",
+          "en": "This word names one side of a pair of directions. It can also mean still present after others have gone. Context shows the sense.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7a61d0da-3ba3-5b8b-b898-a986dc75b62b",
+          "en": "Turn left at the next traffic light.",
+          "zh": "在下一個紅綠燈路口左轉。",
+          "audioKey": null
+        },
+        {
+          "guid": "c2da1bf3-77f5-5157-8ca5-54d2bffb395c",
+          "en": "The post office is on the left side of the street.",
+          "zh": "郵局位於街道的左手邊。",
+          "audioKey": null
+        },
+        {
+          "guid": "fe086aaf-c05c-5044-9468-efebbabfee74",
+          "en": "She left her umbrella on the bus by mistake this morning.",
+          "zh": "她今天早上不小心把雨傘遺落在公車上了。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "feaa13de-bcb4-5a08-bf9b-0d3b82de9864.mp3"
+    },
+    {
+      "guid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+      "word": "beside",
+      "list": "basic",
+      "partsOfSpeech": [
+        "prep"
+      ],
+      "definition": "在…旁邊；與…相比",
+      "explains": [
+        {
+          "guid": "6f07c98b-2d3d-584f-9549-4d7ad5a53b71",
+          "en": "It means next to something. Two people may sit side by side. It can also introduce a comparison with a second thing.",
+          "audioKey": null
+        },
+        {
+          "guid": "7174d11c-292a-56a7-8d98-f9d85b54181a",
+          "en": "Use this word for a place immediately next to another place. It may also help compare one thing with another. The sentence shows which use is meant.",
+          "audioKey": null
+        },
+        {
+          "guid": "43ed24e3-cf4b-567f-afcf-18034133ff17",
+          "en": "This word tells that something is at the side of something else. It can describe two people sitting close together. It may also show a contrast.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "8586b541-231f-5a56-852f-ac01102fc552",
+          "en": "Come sit beside me so we can share the book.",
+          "zh": "來坐在我旁邊，我們才能一起看這本書。",
+          "audioKey": null
+        },
+        {
+          "guid": "4d51c139-df72-5821-8a0f-f4cf35df6fb3",
+          "en": "A beautiful crystal vase filled with fresh lilies stood beside the bed.",
+          "zh": "床邊擺放著一只插滿新鮮百合的美麗水晶花瓶。",
+          "audioKey": null
+        },
+        {
+          "guid": "2c5a8ad0-8b22-5b29-b055-44a645bcc1a1",
+          "en": "He parked his compact scooter right beside the convenience store entrance.",
+          "zh": "他把輕巧的機車恰好停放在便利商店入口旁邊。",
+          "audioKey": null
+        },
+        {
+          "guid": "9da65a66-42ba-5e3b-9f29-7f76fe96e509",
+          "en": "She sat beside her best friend during the graduation ceremony.",
+          "zh": "畢業典禮上她坐在最好的摯友身旁。",
+          "audioKey": null
+        },
+        {
+          "guid": "69c09494-56fd-5b14-8209-a0f701e61b90",
+          "en": "Place the floor lamp beside the armchair so you can read comfortably.",
+          "zh": "把立式閱讀燈擺設在單人扶手沙發身旁，這樣看書才夠明亮舒服。",
+          "audioKey": null
+        },
+        {
+          "guid": "677db170-777d-5229-b7aa-0841780163ee",
+          "en": "Beside the massive Pacific Ocean, our tiny boat felt small and fragile.",
+          "zh": "與浩瀚無邊的太平洋相比，我們搭乘的觀光小艇顯得格外渺小脆弱。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db.mp3"
+    },
+    {
+      "guid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+      "word": "tall",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adj"
+      ],
+      "definition": "高的；高大的",
+      "explains": [
+        {
+          "guid": "34edd295-3611-5052-9839-dac76713d916",
+          "en": "This describes a great distance from bottom to top. A giraffe has this body shape compared with most other land animals. A building with many floors can also be described this way.",
+          "audioKey": null
+        },
+        {
+          "guid": "1290a48e-b6d6-5a1c-be4a-42e831f71df8",
+          "en": "A tree may reach far above the ground. A person can be greater in height than a friend. The word can also describe a high amount.",
+          "audioKey": null
+        },
+        {
+          "guid": "ed629fec-7e1f-50be-9882-118fc229d998",
+          "en": "This word describes someone with greater height. A lamp can stand above a table. A mountain may reach far into the clouds.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "ea4623f9-e75c-5e45-9623-72061baf5ed1",
+          "en": "Jeremy Lin is a very tall basketball player.",
+          "zh": "林書豪是一位非常高大的籃球員。",
+          "audioKey": null
+        },
+        {
+          "guid": "85b1db8b-034d-51f2-bcfa-c9a665e04ccb",
+          "en": "Tall coconut palm trees line the beautiful tropical beach.",
+          "zh": "高聳的椰子樹排列在美麗的熱帶海灘旁。",
+          "audioKey": null
+        },
+        {
+          "guid": "82498e7b-87a9-5ce3-b4cc-847afb062edf",
+          "en": "How tall have you grown since the beginning of this year?",
+          "zh": "從今年初以來你長高了多少呢？",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "e3af050d-4c5f-5c51-87fd-9425150c6475.mp3"
+    },
+    {
+      "guid": "4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4",
+      "word": "right",
+      "list": "basic",
+      "partsOfSpeech": [
+        "adv",
+        "adj",
+        "n"
+      ],
+      "definition": "右邊的；正確的；權利；向右；右邊",
+      "explains": [
+        {
+          "guid": "196e49b6-c993-5bc5-8f00-8c3f3a6eda7f",
+          "en": "It can mean the side opposite the left. It may also describe an answer that is correct. A person can have a freedom to do something.",
+          "audioKey": null
+        },
+        {
+          "guid": "ff557b03-c2a7-5cc7-a38b-65c9e6403361",
+          "en": "A hand on one side is often used for writing. A good answer is not wrong. The word can also name something a person is allowed to do.",
+          "audioKey": null
+        },
+        {
+          "guid": "d9ecc8a1-bf68-555a-afd0-41c30280115c",
+          "en": "This word can describe a true answer. It can mean the direction opposite left. A law may protect a freedom people have.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "bac3a35e-4e8b-5e36-9f7b-fb79c3a98c63",
+          "en": "The post office is on your right.",
+          "zh": "郵局就在你的右手邊。",
+          "audioKey": null
+        },
+        {
+          "guid": "ad825f35-672d-5c96-a6fa-b0309e927984",
+          "en": "You got all the answers right on today's vocabulary quiz.",
+          "zh": "你在今天的單字小考中答對了所有題目。",
+          "audioKey": null
+        },
+        {
+          "guid": "75f91907-f57e-5164-baae-909ae2d2dd7f",
+          "en": "Everyone has the right to receive a good quality education.",
+          "zh": "人人都有享有優質教育的權利。",
+          "audioKey": null
+        },
+        {
+          "guid": "3e4ed165-df98-5133-bda2-6ded7bcf059b",
+          "en": "You gave the right answer to that question!",
+          "zh": "你回答了那個問題的正確答案！",
+          "audioKey": null
+        },
+        {
+          "guid": "1fd5e695-eaa6-52dc-9e1f-13eaf80ac225",
+          "en": "Turn right at the convenience store to reach the train station.",
+          "zh": "在便利商店處向右轉即可抵達火車站。",
+          "audioKey": null
+        },
+        {
+          "guid": "dc84b1d5-37a0-58eb-aa8d-24e5f4a36991",
+          "en": "Everyone has the fundamental human right to receive free education.",
+          "zh": "每個人都享有接受基本免費教育的人權權利。",
+          "audioKey": null
+        },
+        {
+          "guid": "83518cf1-fd52-5cde-80eb-11ebb9311821",
+          "en": "Every child has the basic human right to receive free education.",
+          "zh": "每個孩童都享有接受免費教育的基本人權權利。",
+          "audioKey": null
+        },
+        {
+          "guid": "6391f9bc-a2d7-5268-a6c6-decec6822236",
+          "en": "Double-check your calculation to ensure you have the right total answer.",
+          "zh": "請再次仔細核算確認算式，以確保你計算出的最終總額答案完全正確。",
+          "audioKey": null
+        },
+        {
+          "guid": "e393e7ec-c921-5a66-94c7-84c822ecb44e",
+          "en": "Turn right at the convenience store and walk straight for two blocks.",
+          "zh": "在那家便利商店路口右轉，接著筆直向前步行兩個街區即達。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4.mp3"
+    },
+    {
+      "guid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+      "word": "by",
+      "list": "basic",
+      "partsOfSpeech": [
+        "prep",
+        "adv"
+      ],
+      "definition": "藉由；在…旁邊；不遲於",
+      "explains": [
+        {
+          "guid": "5beaef4a-6833-51d2-82c9-d2d625f5ae86",
+          "en": "It can tell how something is done. It may also show that one thing is beside another. When used with a time, it can mean no later than that time.",
+          "audioKey": null
+        },
+        {
+          "guid": "d6b868f3-0aa5-5005-b1fc-879abed1023b",
+          "en": "Use this word to name a method or tool. It can point to a place beside something. It can also set a latest time for an action.",
+          "audioKey": null
+        },
+        {
+          "guid": "85fa1e11-501f-5bd4-8932-ea2e130536aa",
+          "en": "This short word may tell who made something or what tool was used. It can show a position close to an object. It may also mean before a stated deadline.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "9bb85af3-8082-5a9d-95b3-3deed7511bf7",
+          "en": "We travel around Taipei easily by MRT.",
+          "zh": "我們搭乘捷運輕鬆暢遊台北。",
+          "audioKey": null
+        },
+        {
+          "guid": "d5f64f0f-8754-5641-b94a-febc7fe5007b",
+          "en": "The cozy cafe is located by the picturesque riverside walkway.",
+          "zh": "那家溫馨的咖啡館就座落在風景如畫的河畔步道旁。",
+          "audioKey": null
+        },
+        {
+          "guid": "bf70b73a-5e88-563e-b0a2-e3b84545b048",
+          "en": "Please submit your final project reports by five o'clock on Friday afternoon.",
+          "zh": "請在週五下午五點以前繳交你們的期末專案報告。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "6ff0b69d-d838-598a-a758-40b4091f6989.mp3"
+    },
+    {
+      "guid": "d27a390f-bc58-5875-a9cf-8fc78602e1c5",
+      "word": "wall",
+      "list": "basic",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "definition": "牆壁；圍牆",
+      "explains": [
+        {
+          "guid": "11613273-c467-590e-a6d8-3898b56f1cd0",
+          "en": "A building may have a flat side around a room. People hang pictures on it. A fence can mark a yard.",
+          "audioKey": null
+        },
+        {
+          "guid": "f96ce7af-8fb8-5b9f-af71-0c8af2de14b0",
+          "en": "A brick structure can keep wind out. A person may lean against one. A room has several flat surfaces around it.",
+          "audioKey": null
+        },
+        {
+          "guid": "fdf5783e-ae4e-5546-a8e3-325516863904",
+          "en": "This part of a house stands upright. It may hold a window or door. A ball can bounce off it.",
+          "audioKey": null
+        }
+      ],
+      "examples": [
+        {
+          "guid": "b978e72c-9a90-5f77-8c23-435feff626eb",
+          "en": "There is a world map on the wall.",
+          "zh": "牆上有一張世界地圖。",
+          "audioKey": null
+        },
+        {
+          "guid": "509031f8-23eb-5453-b033-d7c0f5ede3f2",
+          "en": "Don't draw or write on the classroom wall.",
+          "zh": "請勿在教室牆壁上塗鴉或寫字。",
+          "audioKey": null
+        },
+        {
+          "guid": "d3b86494-0068-51cf-9e01-7c9cbcc86fc1",
+          "en": "They painted the bedroom wall light blue.",
+          "zh": "他們把臥室的牆壁漆成了淺藍色。",
+          "audioKey": null
+        }
+      ],
+      "wordAudioKey": "d27a390f-bc58-5875-a9cf-8fc78602e1c5.mp3"
+    }
+  ]
+}

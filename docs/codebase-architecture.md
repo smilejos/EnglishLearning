@@ -362,6 +362,8 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 
 本次首頁與字庫驗收使用 learner `http://127.0.0.1:5174`、API `http://127.0.0.1:8180`；`api/src/preview.ts` 組裝既有 auth 與讀取路由，但不注入真實 LLM／TTS／圖片 client，也不啟動 worker。learner Vite 的 API 目標可由 `VITE_API_PROXY` 設定。這是本機預覽，沒有部署新版正式服務。
 
+客廳十五詞另有獨立 `web-learner/scenario-preview.html` 本機入口：先 `npm run scenario:preview:prepare`，再啟動綁 `127.0.0.1:5174` 的 learner Vite，開啟 `/scenario-preview.html`。此頁只讀情境／字庫文字快照及核對後的本機 MP3，不掛載 App、不呼叫身分或 DB API。圖片點字開單字 Modal；「故事與旁白」按鈕開故事 Modal，圖下沒有常駐單字列或內容卡。關閉支援按鈕／Escape／背景點擊，恢復入口焦點並停止單字音訊；故事查詞切換同一個 Modal，可返回故事。旁白及三個 advance 詞音檔仍待準備；圖片文字已燒入，未提供隱藏答案練習。正式首頁情境入口仍停用，預設正式 build 不含此額外 HTML entry，詳見 `docs/scenarios/web-preview.md`。
+
 - 環境設定由 `shared/src/config.ts` 讀取：DB、音檔、選用供應商的憑證、Access、admin emails、lookup limits、音訊格式、圖片路徑及 catalog。Google 與 OpenAI 憑證可擇一或並存。Google 各工作共用 Vertex AI `generateContent`，`GOOGLE_CLOUD_PROJECT` 與 `GOOGLE_CLOUD_LOCATION` 組成端點；`global` 使用 `aiplatform.googleapis.com`。授權優先使用可呼叫 Agent Platform API 的 `GEMINI_API_KEY`，其次使用 `GOOGLE_APPLICATION_CREDENTIALS` 指定的 ADC；無憑證時不列為可用供應商。
 - 文字、語音、圖片三項生成設定存於 DB `generation_settings`，由 admin 的 `/generation-settings` 讀寫。共用文字設定供翻譯、單字解釋與圖片分階段 Prompt 規劃使用；可選文字／語音模型與聲線由 `config/generation-models.json` 載入，圖檔模型由 `config/image-models.json` 載入。圖片與規劃費率由 `config/image-pricing.json` 定義，新增文字模型須有規劃費率才可儲存。設定檔在後端行程啟動時讀取，修改後需重啟相關服務；既有工作快照不會自動變更。舊五項設定升級時以「文章翻譯」模型作為共用文字模型。Vertex AI TTS 使用 `gemini-2.5-flash-tts`／`gemini-2.5-pro-tts`；migration 更新目前後台設定中的舊 preview 型號，舊 job 快照在送出時映射，已生成音檔不重做。
 - 文字選項包含 Vertex AI `gemini-3.8-flash`，圖片規劃對此模型使用 `thinkingLevel=LOW`；其規劃費率目前採官方截至 2026-12-31 的優惠價，2027-01-01 須更新價格。`gemini-3.8-flash-lite-tts` 未列入 Vertex AI `global` 可用模型清單，因此語音選項尚未加入它。
@@ -391,6 +393,8 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 | `npm run vocabulary:audio:test` | Node 原生測試批次工具，HTTP 假回應；不呼叫真實 TTS |
 | `npm run scenario:package:check -- <套件.json>` | 唯讀檢查十五詞情境套件、字庫關聯與素材 hash；加 `--require-publish-ready` 要求素材及座標齊備，不連 DB 或生成服務 |
 | `npm run scenario:package:test` | Node 原生測試情境套件預檢；不呼叫真實生成服務 |
+| `npm run scenario:preview:prepare` | 預檢客廳套件，保存預覽字庫快照並複製已有有效音檔；不連 DB、不生成 |
+| `npm run scenario:preview:test` | Node 原生測試預覽素材準備；使用假素材，不呼叫真實生成服務 |
 | `./scripts/backup.sh` | 備份 DB／音檔／圖片並輪替 |
 
 seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade 清關聯；不要為了看畫面就對已有資料庫隨意執行。`deploy.sh clean` 會移除正式 volumes，不是一般測試清理指令。
@@ -440,7 +444,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
 | 入口首頁、字庫練習、9,166 字、Qwen3-TTS 批次產音 | `docs/wordbank-practice-requirements.md`、learner `LearningHome.tsx`／`WordbankPractice.tsx`／`lib/wordbank.ts`、API `routes/wordbank.ts`、`shared/src/repo/wordbankPractice.ts`、`source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts` 與 repo、`scripts/import-vocabulary*.ts`／`generate-wordbank-audio.mjs` |
-| 情境教材、十五詞客廳、離線套件預檢 | `docs/scenarios/generation-import-workflow.md`、`docs/scenarios/packages/living-room-15-v1/`、`scripts/check-scenario-package.mjs` 與測試；目前只有內容套件與預檢，首頁情境入口仍未開放，尚無 DB 匯入器或情境學習頁 |
+| 情境教材、十五詞客廳、離線套件預檢／網頁預覽 | `docs/scenarios/generation-import-workflow.md`、`web-preview.md`、`packages/living-room-15-v1/`，`scripts/check-scenario-package.mjs`／`prepare-scenario-preview.mjs` 與測試，learner `ScenarioPreview.tsx`／`scenario-preview-main.tsx`；已有本機互動預覽，正式首頁入口仍未開放，尚無 DB 匯入器或正式情境學習頁 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
 | 生成供應商、模型、聲線設定或 Google Vertex AI 端點 | admin `GenerationSettings.tsx`、API `generationSettings.ts`、`shared/src/{generationSettings,generationClients}.ts`、`shared/src/llm/{auth,genai}.ts`、repo、migration、API／worker 入口 |
 | 缺失單字音檔清單／逐檔或全部補檔 | admin `App.tsx`／`AudioBackfillPanel.tsx`、`api/src/routes/lookups.ts`、`shared/src/repo/audioBackfill.ts`、相關測試 |

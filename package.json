@@ -22,6 +22,8 @@
     "vocabulary:audio:test": "node --test scripts/generate-wordbank-audio.test.mjs",
     "scenario:package:check": "node scripts/check-scenario-package.mjs",
     "scenario:package:test": "node --test scripts/check-scenario-package.test.mjs",
+    "scenario:preview:prepare": "node scripts/prepare-scenario-preview.mjs",
+    "scenario:preview:test": "node --test scripts/prepare-scenario-preview.test.mjs",
     "build": "npm run build --workspaces --if-present",
     "migrate": "node-pg-migrate -m migrations",
     "migrate:up": "node-pg-migrate -m migrations up",
