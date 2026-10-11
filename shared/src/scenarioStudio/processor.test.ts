@@ -185,9 +185,9 @@ describe("studio worker 手動階段、租約與單段音檔復原", () => {
     expect(await readFile(path.join(deps.audioDir, newRelative))).toEqual(audioBytes);
     expect(await readFile(path.join(deps.audioDir, oldRelative))).toEqual(oldData);
   });
-  it.each([15, 25])("finalize %i詞只匯入不可覆寫draftrevision，不發布；copy使用hashpaths，租約allocator供重試冪等", async count => {
+  it.each([15, 25, 29])("finalize %i詞只匯入不可覆寫draftrevision，不發布；copy使用hashpaths，租約allocator供重試冪等", async count => {
     claim.job.kind = "finalize";
-    if (count === 25) {
+    if (count > 15) {
       claim.draft.story!.paragraphBreakAfterSentenceIds = [claim.draft.story!.sentences[0].id];
       const known = new Set(claim.draft.targets.map(t => t.entryGuid));
       const words = new Set(claim.draft.targets.map(t => t.word));
@@ -198,7 +198,7 @@ describe("studio worker 手動階段、租約與單段音檔復原", () => {
         if (claim.draft.targets.length === count) break;
       }
       for (const link of claim.draft.story!.sentences.flatMap(s => s.wordLinks)) link.isTarget = known.has(link.entryGuid);
-      expect(claim.draft.targets).toHaveLength(25);
+      expect(claim.draft.targets).toHaveLength(count);
     }
     claim.draft.selectedImageId = randomUUID(); claim.draft.selectedAudioId = randomUUID();
     const image: StudioAsset = { id: claim.draft.selectedImageId, draftId: claim.draft.id, kind: "image", relativePath: "studio/image.png", sha256: scenarioHash("fake image"), bytes: 10, width: 1600, height: 900, contentType: "image/png", inputHash: claim.job.inputHash, metadata: {}, createdAt: new Date().toISOString() };
@@ -210,7 +210,7 @@ describe("studio worker 手動階段、租約與單段音檔復原", () => {
     await processScenarioStudioJob(deps);
     expect(importScenarioRevision).toHaveBeenCalledTimes(1);
     expect(vi.mocked(importScenarioRevision).mock.calls[0][1]).toMatchObject({ revision: 2, targetCount: count });
-    if (count === 25) expect(vi.mocked(importScenarioRevision).mock.calls[0][1]).toMatchObject({ story: { paragraphBreakAfterSentenceIds: claim.draft.story!.paragraphBreakAfterSentenceIds } });
+    if (count > 15) expect(vi.mocked(importScenarioRevision).mock.calls[0][1]).toMatchObject({ story: { paragraphBreakAfterSentenceIds: claim.draft.story!.paragraphBreakAfterSentenceIds } });
     else expect(vi.mocked(importScenarioRevision).mock.calls[0][1]).not.toHaveProperty("story.paragraphBreakAfterSentenceIds");
     expect(providers.image).not.toHaveBeenCalled(); expect(providers.speech).not.toHaveBeenCalled();
     expect(lastJobResult()).toMatchObject({ status: "done", materializedRevision: 2, output: { status: "draft" } });

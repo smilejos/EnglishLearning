@@ -42,7 +42,7 @@ export async function validateScenarioPackage(pkg, options = {}) {
       levels.some((level) => !['basic', 'advance'].includes(level)) || new Set(levels).size !== levels.length) {
     errors.push('vocabularyFilter 必須為 list，levels 僅接受不重複的 basic／advance');
   }
-  if (!Number.isInteger(pkg.targetCount) || pkg.targetCount < 1 || pkg.targetCount > 25) errors.push('targetCount 必須為 1–25 的整數');
+  if (!Number.isInteger(pkg.targetCount) || pkg.targetCount < 1 || pkg.targetCount > 29) errors.push('targetCount 必須為 1–29 的整數');
   const targets = Array.isArray(pkg.targets) ? pkg.targets : [];
   if (targets.length !== pkg.targetCount) errors.push('targets 長度必須等於 targetCount');
   const targetWords = new Set();

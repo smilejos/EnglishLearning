@@ -272,36 +272,36 @@ describe("正式情境學習", () => {
     expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(13);
   });
 
-  it("零動詞不顯示空開關，按 teachingPos 分組而非字庫的多詞性，25 詞數量與舊15詞兼容", async () => {
-    const moreWords = ["rug", "wall", "floor", "door", "ceiling", "picture", "speaker", "vase", "remote", "blanket"];
-    const expanded: ScenarioDetail = { ...scenario, targetCount: 25, targets: [
+  it.each([25, 29])("零動詞不顯示空開關，按 teachingPos 分組而非字庫的多詞性，%i 詞數量與舊15詞兼容", async count => {
+    const moreWords = ["rug", "wall", "floor", "door", "ceiling", "picture", "speaker", "vase", "remote", "blanket", "cabinet", "stool", "basket", "cushion"].slice(0, count - 15);
+    const expanded: ScenarioDetail = { ...scenario, targetCount: count, targets: [
       ...scenario.targets.map(target => ({ ...target, teachingPos: target.teachingPos === "v" ? "n" : target.teachingPos })),
       ...moreWords.map((word, index) => ({ ...scenario.targets[0], word, entryGuid: `${word}-guid`,
-        interaction: { label: { x: .1 + index * .08, y: .7 }, object: { x: .1 + index * .08, y: .8 } } })),
+        interaction: { label: { x: .1 + index % 7 * .12, y: .6 + Math.floor(index / 7) * .1 }, object: { x: .1 + index % 7 * .12, y: .7 + Math.floor(index / 7) * .1 } } })),
     ] };
     vi.mocked(api.getScenario).mockResolvedValue(expanded);
     vi.mocked(api.getWordbankEntry).mockResolvedValue({ ...entry("read"), partsOfSpeech: ["n", "v"] });
     await load();
-    expect(screen.queryByText("basic ＋ advance · 25 詞")).toBeNull();
-    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(25);
+    expect(screen.queryByText(`basic ＋ advance · ${count} 詞`)).toBeNull();
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(count);
     fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
     expect(screen.queryByRole("button", { name: /^動詞/ })).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "名詞 24" }));
-    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(24);
+    fireEvent.click(screen.getByRole("button", { name: `名詞 ${count - 1}` }));
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(count - 1);
     await selectWord("read");
     expect(within(card()).getByText("本情境：情境釋義5（n）")).toBeTruthy();
     expect(within(card()).getByText("n / v · basic")).toBeTruthy();
     fireEvent.click(within(card()).getByRole("button", { name: "關閉單字卡" }));
     expect(screen.queryByRole("button", { name: /^動詞/ })).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "形容詞 1" }));
-    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(25);
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(count);
     expect(screen.getByRole("button", { name: "故事與旁白" })).toBeTruthy();
     fireEvent.click(screen.getByRole("button", { name: "全部收起" }));
     expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "看圖學習" }));
-    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(25);
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(count);
     fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
-    expect(screen.getByRole("button", { name: "名詞 24" }).getAttribute("aria-pressed")).toBe("false");
+    expect(screen.getByRole("button", { name: `名詞 ${count - 1}` }).getAttribute("aria-pressed")).toBe("false");
     expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
   });
 

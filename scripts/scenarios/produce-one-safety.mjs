@@ -5,7 +5,7 @@ export function productionOptions(args, realOptIn) {
   return {id, execute: flags.includes('--execute'), skipImage: flags.includes('--skip-image'), resume: flags.includes('--resume'), stopAfterImage: flags.includes('--stop-after-image')};
 }
 export function reviewedCoordinates(review, targets, actual, sha256, acceptance) {
-  if (review.noVocabularyText !== true || review.width !== actual.width || review.height !== actual.height || !Array.isArray(review.issues) || targets.length < 1 || targets.length > 25 || review.targets?.length !== targets.length) throw Error('圖片無文字／尺寸／目標詞審閱不完整');
+  if (review.noVocabularyText !== true || review.width !== actual.width || review.height !== actual.height || !Array.isArray(review.issues) || targets.length < 1 || targets.length > 29 || review.targets?.length !== targets.length) throw Error('圖片無文字／尺寸／目標詞審閱不完整');
   if (review.issues.length) {
     if (acceptance?.reviewed !== true || acceptance.sha256 !== sha256 || !Array.isArray(acceptance.issuesResolved) || acceptance.issuesResolved.length !== review.issues.length || review.issues.some(issue => !acceptance.issuesResolved.includes(issue))) throw Error('CLI 圖片 issues 尚未經主 agent 綁定 hash 的實際審閱解決');
   }

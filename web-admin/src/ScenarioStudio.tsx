@@ -6,7 +6,7 @@ import "./ScenarioStudio.css";
 import { ScenarioTags } from "./ScenarioTags";
 import { ScenarioThumbnail } from "./ScenarioThumbnail";
 
-const maxTargets = 25;
+const maxTargets = 29;
 const stages = ["選擇單字", "場景與風格", "故事", "底圖", "標籤定位", "錄音", "預覽與發布"];
 const kinds: Record<StudioKind, string> = { story: "英文故事與翻譯", image: "底圖", "story-audio": "Serena 英文旁白", "wordbank-audio": "缺失字庫音檔", finalize: "固定情境版本" };
 const statuses = { queued: "等待處理", processing: "處理中", done: "已完成", failed: "失敗", uncertain: "結果不明", cancelled: "已取消" };
@@ -163,7 +163,7 @@ export function ScenarioStudio() {
     await act(async () => { accept(await api.getDraft(id)); setStage(0); setResolved([]); setQuotes({}); setMapping(null); setSelectedTarget(0); });
   }
   function addWord(word: StudioWord) {
-    if (!draft || draft.targets.length >= maxTargets) { setError("每張情境最多25詞，請先移除要替換的詞。"); return; }
+    if (!draft || draft.targets.length >= maxTargets) { setError(`每張情境最多${maxTargets}詞，請先移除要替換的詞。`); return; }
     if (draft.targets.some(target => target.entryGuid === word.guid || target.word === word.word)) { setError(`${word.word} 已在目標詞內。`); return; }
     const level = word.level.list;
     if ((level !== "basic" && level !== "advance") || !draft.vocabularyFilter.levels.includes(level)) { setError(`${word.word} 不在所選級別內。`); return; }

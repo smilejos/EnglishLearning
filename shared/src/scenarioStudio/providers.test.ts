@@ -33,11 +33,11 @@ describe("情境 studio 供應商與文字解析（完全使用假 client）", (
     expect(result.issues.map(i => i.reason)).toEqual(["ambiguous", "unknown"]);
     expect(result.missingTargetGuids).toEqual([a1.guid]);
   });
-  it("故事提示使用實際詞數與教學詞性，要求自然融入並允許連貫小段", () => {
-    const targets = Array.from({ length: 25 }, (_, i) => ({ word: `word${i}`, teachingPos: i < 15 ? "n" : i < 20 ? "adj" : "v", senseZh: "情境詞義" }));
+  it.each([25, 29])("%i詞故事提示使用實際詞數與教學詞性，要求自然融入並允許連貫小段", count => {
+    const targets = Array.from({ length: count }, (_, i) => ({ word: `word${i}`, teachingPos: i < 15 ? "n" : i < 20 ? "adj" : "v", senseZh: "情境詞義" }));
     const prompt = compileScenarioStoryPrompt({ ...promptInput, targets }, []);
-    expect(prompt).toContain("all 25 target words naturally");
-    expect(prompt).toContain("word24 (v; 情境詞義)");
+    expect(prompt).toContain(`all ${count} target words naturally`);
+    expect(prompt).toContain(`word${count - 1} (v; 情境詞義)`);
     expect(prompt).toContain("two short connected parts");
     expect(prompt).not.toContain("all 15 target words");
     expect(compileScenarioStoryPrompt(promptInput, [])).toContain("all 1 target words naturally");

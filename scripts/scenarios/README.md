@@ -25,7 +25,7 @@ manifest 必須只含本場目標詞的資產，且相對音檔路徑以 manifes
 
 ## 01–09 revision 2 修訂
 
-這輪只修訂已完成第一版的九場，復用既有無文字底圖；新套件為 `docs/scenarios/packages/<key>-r2/`，不覆寫 `<key>-15-v1/`。現行契約為 1–25 詞，15 名詞＋5 形容詞＋最多 5 動詞是依底圖選詞的目標；實際備料每場 15 名詞、5 形容詞，動詞依序為 4、2、4、3、4、4、5、4、3，共 213 個目標詞次。所有新 revision 2 均只作 draft，不發布；客廳發布指標保持 1。以下是操作規則，正式進度以各場 production／postcheck 紀錄為準。
+這輪只修訂已完成第一版的九場，復用既有無文字底圖；新套件為 `docs/scenarios/packages/<key>-r2/`，不覆寫 `<key>-15-v1/`。現行契約為 1–29 詞，15 名詞＋5 形容詞＋最多 5 動詞是依底圖選詞的目標；實際備料每場 15 名詞、5 形容詞，動詞依序為 4、2、4、3、4、4、5、4、3，共 213 個目標詞次。所有新 revision 2 均只作 draft，不發布；客廳發布指標保持 1。以下是操作規則，正式進度以各場 production／postcheck 紀錄為準。
 
 `prepare-revision-02.mjs` 每次接受一個 01–09 編號，只讀既有 revision 1 與 `docs/scenarios/preparation/basic-advance-01/revision-02-texts.json`，建立新 `scenario.json`／`target-review.json`。不連 DB、不生成、不覆寫現有檔案；同路徑已存在即拒絕。初建套件的 `baseImage` 為 null，只保存復用候選；故事 hash 相同才保留既有旁白。仍須實際看原底圖，核對全部新詞及座標，才補入素材與綁定審閱，不能把離線備料當成已完成審閱。
 

@@ -1,0 +1,830 @@
+{
+  "batchKey": "mcdonalds-restaurant",
+  "categoryNameZh": "餐廳",
+  "themeZh": "麥當勞",
+  "vocabularyMode": "user-specified",
+  "sceneCount": 4,
+  "phase": "discussion-draft",
+  "authorization": {
+    "currentScope": "四場離線規劃、補詞盡量不重複、第一場新增套餐／單點／內用／外帶；使用者已授權調整程式上限容納29項，正式庫／生成／匯入／部署未授權",
+    "vocabularyRequest": "多字詞缺詞新增目前詞庫並分類 Others；現階段保留為待執行計畫，先完成具體清單供討論",
+    "imageGeneration": false,
+    "audioGeneration": false,
+    "productionDatabaseWrites": false,
+    "draftImport": false,
+    "publish": false,
+    "deploy": false,
+    "programTargetLimitChange": true
+  },
+  "assumptions": [
+    "超過一個字暫指兩個以上英文單字的完整詞組",
+    "Others 暫作 category 分類；名詞片語仍以 n 教學；無依據的新詞分級留 null",
+    "各場保留原指定15個名詞與5形容詞／5動詞；第一場再加4個模式共29項，其餘各25項",
+    "沿用同一組兩位小朋友、陪同大人與餐廳配置"
+  ],
+  "sourceVocabularyAudit": "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
+  "compatibility": "blocked-pending-adaptation: 指定 expert／null 詞與完整多字詞故事映射尚待程式適配；未驗證正式服務",
+  "status": {
+    "teachingMaterialsComplete": false,
+    "productionDraftImported": false,
+    "qualityReadyToPublish": false,
+    "published": false,
+    "programDeployed": false
+  },
+  "scenes": [
+    {
+      "order": 1,
+      "scenarioKey": "mcdonalds-restaurant-tour",
+      "titleEn": "McDonald's Restaurant 🏠",
+      "titleZh": "認識麥當勞餐廳",
+      "coreActivityZh": "進店認識各區域、人物與設備",
+      "plannedRevision": 1,
+      "targetCount": 29,
+      "teachingPosCounts": {
+        "n": 17,
+        "adj": 7,
+        "v": 5
+      },
+      "originalVocabulary": [
+        {
+          "english": "Restaurant",
+          "chinese": "餐廳"
+        },
+        {
+          "english": "Entrance",
+          "chinese": "入口"
+        },
+        {
+          "english": "Exit",
+          "chinese": "出口"
+        },
+        {
+          "english": "Counter",
+          "chinese": "櫃檯"
+        },
+        {
+          "english": "Cashier",
+          "chinese": "收銀員"
+        },
+        {
+          "english": "Customer",
+          "chinese": "顧客"
+        },
+        {
+          "english": "Menu Board",
+          "chinese": "菜單看板"
+        },
+        {
+          "english": "Self-Service Kiosk",
+          "chinese": "自助點餐機"
+        },
+        {
+          "english": "Cash Register",
+          "chinese": "收銀機"
+        },
+        {
+          "english": "Table",
+          "chinese": "桌子"
+        },
+        {
+          "english": "Chair",
+          "chinese": "椅子"
+        },
+        {
+          "english": "Dining Area",
+          "chinese": "用餐區"
+        },
+        {
+          "english": "Kitchen",
+          "chinese": "廚房"
+        },
+        {
+          "english": "Employee",
+          "chinese": "店員"
+        },
+        {
+          "english": "Playground",
+          "chinese": "遊戲區"
+        }
+      ],
+      "sourceReuseCandidateCount": 21,
+      "pendingNewEntryCount": 8,
+      "newEntriesImportedCount": 0,
+      "mediaSources": {
+        "reference": "既有情境僅供風格參考，未選定可重用底圖",
+        "baseImage": null,
+        "storyAudio": null
+      },
+      "progress": "discussion-draft",
+      "evidencePaths": [
+        "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
+        "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
+        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json",
+        "docs/scenarios/preparation/mcdonalds-restaurant/ordering-modes-audit.json"
+      ],
+      "contractCompatible": false,
+      "supplementalVocabulary": [
+        {
+          "english": "bright",
+          "chinese": "明亮的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+          "sourceList": "basic",
+          "visualCueZh": "大窗戶日光與室內照明"
+        },
+        {
+          "english": "tidy",
+          "chinese": "整潔的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+          "sourceList": "basic",
+          "visualCueZh": "用餐區桌椅擺放整齊，桌面收拾妥當"
+        },
+        {
+          "english": "large",
+          "chinese": "寬大的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+          "sourceList": "basic",
+          "visualCueZh": "寬敞的用餐區與多組桌椅"
+        },
+        {
+          "english": "friendly",
+          "chinese": "親切的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+          "sourceList": "basic",
+          "visualCueZh": "收銀員微笑接待顧客"
+        },
+        {
+          "english": "busy",
+          "chinese": "忙碌的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+          "sourceList": "basic",
+          "visualCueZh": "店員備餐與顧客點餐的熱鬧景象"
+        },
+        {
+          "english": "enter",
+          "chinese": "進入",
+          "teachingPos": "v",
+          "sourceEntryGuid": "71bc506a-dc77-50dd-a79a-921d44a5f208",
+          "sourceList": "basic",
+          "visualCueZh": "主角一家正穿過入口"
+        },
+        {
+          "english": "wait",
+          "chinese": "等候",
+          "teachingPos": "v",
+          "sourceEntryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+          "sourceList": "basic",
+          "visualCueZh": "櫃檯前排隊等候的顧客"
+        },
+        {
+          "english": "pay",
+          "chinese": "付款",
+          "teachingPos": "v",
+          "sourceEntryGuid": "f29a553c-6053-599b-a26b-58c96f78c412",
+          "sourceList": "basic",
+          "visualCueZh": "另一位顧客使用卡片付款"
+        },
+        {
+          "english": "work",
+          "chinese": "工作",
+          "teachingPos": "v",
+          "sourceEntryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+          "sourceList": "basic",
+          "visualCueZh": "店員在廚房備餐"
+        },
+        {
+          "english": "play",
+          "chinese": "玩耍",
+          "teachingPos": "v",
+          "sourceEntryGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+          "sourceList": "basic",
+          "visualCueZh": "遊戲區的背景孩子玩溜滑梯"
+        }
+      ],
+      "orderingModes": [
+        {
+          "english": "Combo Meal",
+          "chinese": "套餐",
+          "teachingPos": "n",
+          "sourceEntryGuid": null,
+          "sourceStatus": "pending-new-entry",
+          "visualCueZh": "漢堡、薯條與飲料放在同一個托盤，與旁邊單點漢堡對照"
+        },
+        {
+          "english": "À la carte",
+          "chinese": "單點（的）",
+          "teachingPos": "adj",
+          "sourceEntryGuid": null,
+          "sourceStatus": "pending-new-entry",
+          "visualCueZh": "單獨一份漢堡，與整組套餐對照；菜單採圖片，不燒入價格或文字"
+        },
+        {
+          "english": "Dine-in",
+          "chinese": "內用（的）",
+          "teachingPos": "adj",
+          "sourceEntryGuid": null,
+          "sourceStatus": "pending-new-entry",
+          "visualCueZh": "座位區坐著享用餐點的顧客"
+        },
+        {
+          "english": "Takeout",
+          "chinese": "外帶（餐點）",
+          "teachingPos": "n",
+          "sourceEntryGuid": null,
+          "sourceStatus": "pending-new-entry",
+          "visualCueZh": "拿著餐點紙袋向出口走去的顧客"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "scenarioKey": "mcdonalds-order-food",
+      "titleEn": "Let's Order Food! 🍟",
+      "titleZh": "一起點餐吧！",
+      "coreActivityZh": "在櫃檯看餐點圖示並選餐",
+      "plannedRevision": 1,
+      "targetCount": 25,
+      "teachingPosCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 5
+      },
+      "originalVocabulary": [
+        {
+          "english": "Hamburger",
+          "chinese": "漢堡"
+        },
+        {
+          "english": "Cheeseburger",
+          "chinese": "起司漢堡"
+        },
+        {
+          "english": "Big Mac",
+          "chinese": "大麥克"
+        },
+        {
+          "english": "Chicken Burger",
+          "chinese": "雞肉漢堡"
+        },
+        {
+          "english": "Fish Burger",
+          "chinese": "魚肉漢堡"
+        },
+        {
+          "english": "French Fries",
+          "chinese": "薯條"
+        },
+        {
+          "english": "Chicken Nuggets",
+          "chinese": "雞塊"
+        },
+        {
+          "english": "Hash Brown",
+          "chinese": "薯餅"
+        },
+        {
+          "english": "Apple Pie",
+          "chinese": "蘋果派"
+        },
+        {
+          "english": "Ice Cream Cone",
+          "chinese": "蛋捲冰淇淋"
+        },
+        {
+          "english": "Sundae",
+          "chinese": "聖代"
+        },
+        {
+          "english": "Soft Drink",
+          "chinese": "汽水"
+        },
+        {
+          "english": "Orange Juice",
+          "chinese": "柳橙汁"
+        },
+        {
+          "english": "Milk",
+          "chinese": "牛奶"
+        },
+        {
+          "english": "Happy Meal",
+          "chinese": "快樂兒童餐"
+        }
+      ],
+      "sourceReuseCandidateCount": 13,
+      "pendingNewEntryCount": 12,
+      "newEntriesImportedCount": 0,
+      "mediaSources": {
+        "reference": "既有情境僅供風格參考，未選定可重用底圖",
+        "baseImage": null,
+        "storyAudio": null
+      },
+      "progress": "discussion-draft",
+      "evidencePaths": [
+        "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
+        "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
+        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json"
+      ],
+      "contractCompatible": false,
+      "supplementalVocabulary": [
+        {
+          "english": "hot",
+          "chinese": "熱的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+          "sourceList": "basic",
+          "visualCueZh": "薯條上方少量熱氣"
+        },
+        {
+          "english": "cold",
+          "chinese": "冰的；冷的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "2a8f34e9-caf2-5b1c-8518-318d2cdf4590",
+          "sourceList": "basic",
+          "visualCueZh": "汽水杯中的冰塊與外側凝結水珠"
+        },
+        {
+          "english": "crispy",
+          "chinese": "酥脆的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "972af8de-7b4c-5125-b8ce-c3b147970bdd",
+          "sourceList": "expert",
+          "visualCueZh": "薯餅剖面與酥脆外皮；口感由故事補強"
+        },
+        {
+          "english": "sweet",
+          "chinese": "甜的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "1c29a1ce-c008-54ab-8ca8-6c9dbda6d953",
+          "sourceList": "basic",
+          "visualCueZh": "聖代淋醬與甜點展示；味道由故事補強"
+        },
+        {
+          "english": "small",
+          "chinese": "小的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+          "sourceList": "basic",
+          "visualCueZh": "小份薯條與較大份量形成對比"
+        },
+        {
+          "english": "choose",
+          "chinese": "選擇",
+          "teachingPos": "v",
+          "sourceEntryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+          "sourceList": "basic",
+          "visualCueZh": "孩子在食物圖片前作選擇"
+        },
+        {
+          "english": "point",
+          "chinese": "指向",
+          "teachingPos": "v",
+          "sourceEntryGuid": "db168ec2-5704-55ac-905a-1d51ffec07f2",
+          "sourceList": "basic",
+          "visualCueZh": "另一位孩子指著菜單上的漢堡"
+        },
+        {
+          "english": "order",
+          "chinese": "點餐",
+          "teachingPos": "v",
+          "sourceEntryGuid": "82eab39c-2f5e-5408-a0b0-a62721cc13c0",
+          "sourceList": "basic",
+          "visualCueZh": "孩子向收銀員表達選擇"
+        },
+        {
+          "english": "receive",
+          "chinese": "領取（餐點）",
+          "teachingPos": "v",
+          "sourceEntryGuid": "ae6b0ef4-d37b-580a-ba03-906abedd6bf2",
+          "sourceList": "advance",
+          "visualCueZh": "大人從收銀員手中接過餐點托盤"
+        },
+        {
+          "english": "carry",
+          "chinese": "端著；攜帶",
+          "teachingPos": "v",
+          "sourceEntryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+          "sourceList": "basic",
+          "visualCueZh": "背景顧客端著托盤離開櫃檯"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "scenarioKey": "mcdonalds-enjoy-meal",
+      "titleEn": "Let's Eat! 🍔",
+      "titleZh": "一起享用美食！",
+      "coreActivityZh": "在桌前用餐，認識包裝、餐具與食材",
+      "plannedRevision": 1,
+      "targetCount": 25,
+      "teachingPosCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 5
+      },
+      "originalVocabulary": [
+        {
+          "english": "Tray",
+          "chinese": "托盤"
+        },
+        {
+          "english": "Cup",
+          "chinese": "杯子"
+        },
+        {
+          "english": "Straw",
+          "chinese": "吸管"
+        },
+        {
+          "english": "Lid",
+          "chinese": "杯蓋"
+        },
+        {
+          "english": "Napkin",
+          "chinese": "餐巾紙"
+        },
+        {
+          "english": "Wrapper",
+          "chinese": "食物包裝紙"
+        },
+        {
+          "english": "Paper Bag",
+          "chinese": "紙袋"
+        },
+        {
+          "english": "Food Box",
+          "chinese": "餐盒"
+        },
+        {
+          "english": "Fork",
+          "chinese": "叉子"
+        },
+        {
+          "english": "Spoon",
+          "chinese": "湯匙"
+        },
+        {
+          "english": "Ketchup",
+          "chinese": "番茄醬"
+        },
+        {
+          "english": "Dipping Sauce",
+          "chinese": "沾醬"
+        },
+        {
+          "english": "Burger Bun",
+          "chinese": "漢堡麵包"
+        },
+        {
+          "english": "Cheese",
+          "chinese": "起司"
+        },
+        {
+          "english": "Lettuce",
+          "chinese": "生菜"
+        }
+      ],
+      "sourceReuseCandidateCount": 20,
+      "pendingNewEntryCount": 5,
+      "newEntriesImportedCount": 0,
+      "mediaSources": {
+        "reference": "既有情境僅供風格參考，未選定可重用底圖",
+        "baseImage": null,
+        "storyAudio": null
+      },
+      "progress": "discussion-draft",
+      "evidencePaths": [
+        "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
+        "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
+        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json"
+      ],
+      "contractCompatible": false,
+      "supplementalVocabulary": [
+        {
+          "english": "happy",
+          "chinese": "開心的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "013069fb-6aeb-597d-9c61-7dcec4504d2c",
+          "sourceList": "basic",
+          "visualCueZh": "孩子用餐時的笑容"
+        },
+        {
+          "english": "round",
+          "chinese": "圓形的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+          "sourceList": "basic",
+          "visualCueZh": "圓形漢堡麵包"
+        },
+        {
+          "english": "soft",
+          "chinese": "柔軟的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "19868dcc-ab14-5d35-8001-e13c4fdfad51",
+          "sourceList": "expert",
+          "visualCueZh": "漢堡麵包蓬鬆切面與輕壓痕；觸感由故事補強"
+        },
+        {
+          "english": "fresh",
+          "chinese": "新鮮的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "7bbaeb1f-2dfb-5097-b352-82aff054864c",
+          "sourceList": "basic",
+          "visualCueZh": "生菜的翠綠葉片；品質由故事補強"
+        },
+        {
+          "english": "full",
+          "chinese": "滿的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+          "sourceList": "basic",
+          "visualCueZh": "裝滿薯條的紙盒"
+        },
+        {
+          "english": "sit",
+          "chinese": "坐",
+          "teachingPos": "v",
+          "sourceEntryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+          "sourceList": "basic",
+          "visualCueZh": "孩子坐在餐椅上"
+        },
+        {
+          "english": "eat",
+          "chinese": "吃",
+          "teachingPos": "v",
+          "sourceEntryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+          "sourceList": "basic",
+          "visualCueZh": "孩子把食物送向嘴邊"
+        },
+        {
+          "english": "drink",
+          "chinese": "喝",
+          "teachingPos": "v",
+          "sourceEntryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+          "sourceList": "basic",
+          "visualCueZh": "陪同大人使用吸管喝飲料"
+        },
+        {
+          "english": "dip",
+          "chinese": "沾",
+          "teachingPos": "v",
+          "sourceEntryGuid": "d498bd39-ef15-57fa-9685-e195067dd213",
+          "sourceList": "expert",
+          "visualCueZh": "另一位孩子把雞塊沾進醬盒"
+        },
+        {
+          "english": "hold",
+          "chinese": "拿著",
+          "teachingPos": "v",
+          "sourceEntryGuid": "954342d3-d873-596f-9763-1385be49c458",
+          "sourceList": "basic",
+          "visualCueZh": "孩子手持漢堡"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "scenarioKey": "mcdonalds-after-meal",
+      "titleEn": "After the Meal! 🧹",
+      "titleZh": "用餐結束後",
+      "coreActivityZh": "整理餐後物品、歸還托盤與準備離開",
+      "plannedRevision": 1,
+      "targetCount": 25,
+      "teachingPosCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 5
+      },
+      "originalVocabulary": [
+        {
+          "english": "Trash Can",
+          "chinese": "垃圾桶"
+        },
+        {
+          "english": "Recycling Bin",
+          "chinese": "資源回收桶"
+        },
+        {
+          "english": "Tray Return Station",
+          "chinese": "餐盤回收區"
+        },
+        {
+          "english": "Leftovers",
+          "chinese": "剩餘食物"
+        },
+        {
+          "english": "Empty Cup",
+          "chinese": "空杯子"
+        },
+        {
+          "english": "Paper Wrapper",
+          "chinese": "食物包裝紙"
+        },
+        {
+          "english": "Used Napkin",
+          "chinese": "使用過的餐巾紙"
+        },
+        {
+          "english": "Cleaning Cloth",
+          "chinese": "清潔抹布"
+        },
+        {
+          "english": "Broom",
+          "chinese": "掃把"
+        },
+        {
+          "english": "Dustpan",
+          "chinese": "畚箕"
+        },
+        {
+          "english": "Mop",
+          "chinese": "拖把"
+        },
+        {
+          "english": "Cleaning Cart",
+          "chinese": "清潔推車"
+        },
+        {
+          "english": "Trash Bag",
+          "chinese": "垃圾袋"
+        },
+        {
+          "english": "Recycling Symbol",
+          "chinese": "回收標誌"
+        },
+        {
+          "english": "Exit Sign",
+          "chinese": "出口指示牌"
+        }
+      ],
+      "sourceReuseCandidateCount": 13,
+      "pendingNewEntryCount": 12,
+      "newEntriesImportedCount": 0,
+      "mediaSources": {
+        "reference": "既有情境僅供風格參考，未選定可重用底圖",
+        "baseImage": null,
+        "storyAudio": null
+      },
+      "progress": "discussion-draft",
+      "evidencePaths": [
+        "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
+        "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
+        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json"
+      ],
+      "contractCompatible": false,
+      "supplementalVocabulary": [
+        {
+          "english": "empty",
+          "chinese": "空的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+          "sourceList": "advance",
+          "visualCueZh": "看得見空內部的杯子"
+        },
+        {
+          "english": "dirty",
+          "chinese": "髒的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+          "sourceList": "basic",
+          "visualCueZh": "使用過的餐巾紙與未擦拭桌面"
+        },
+        {
+          "english": "clean",
+          "chinese": "乾淨的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+          "sourceList": "basic",
+          "visualCueZh": "另一張擦好的桌子"
+        },
+        {
+          "english": "wet",
+          "chinese": "濕的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+          "sourceList": "basic",
+          "visualCueZh": "清潔抹布有少量水滴"
+        },
+        {
+          "english": "messy",
+          "chinese": "凌亂的",
+          "teachingPos": "adj",
+          "sourceEntryGuid": "43f91af9-d8b7-5303-8310-02edc88df2d5",
+          "sourceList": "expert",
+          "visualCueZh": "餐後桌面上散落的包裝紙與餐具"
+        },
+        {
+          "english": "pour",
+          "chinese": "倒",
+          "teachingPos": "v",
+          "sourceEntryGuid": "772e1508-c6fc-50fa-b0f1-286dd266fa44",
+          "sourceList": "expert",
+          "visualCueZh": "孩子將剩餘飲料倒進專用收集口"
+        },
+        {
+          "english": "sort",
+          "chinese": "分類",
+          "teachingPos": "v",
+          "sourceEntryGuid": "136bee9c-2803-5a85-b848-70e9181377d0",
+          "sourceList": "expert",
+          "visualCueZh": "另一位孩子依圖像分放餐後物品"
+        },
+        {
+          "english": "return",
+          "chinese": "歸還",
+          "teachingPos": "v",
+          "sourceEntryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+          "sourceList": "advance",
+          "visualCueZh": "陪同大人把托盤放回回收架"
+        },
+        {
+          "english": "wipe",
+          "chinese": "擦拭",
+          "teachingPos": "v",
+          "sourceEntryGuid": "84de3914-33cf-5ae7-9c31-8fdd2fc5e47e",
+          "sourceList": "expert",
+          "visualCueZh": "店員用抹布擦桌"
+        },
+        {
+          "english": "leave",
+          "chinese": "離開",
+          "teachingPos": "v",
+          "sourceEntryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+          "sourceList": "basic",
+          "visualCueZh": "背景顧客走出出口"
+        }
+      ]
+    }
+  ],
+  "sourceSupplementAudit": "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json",
+  "originalNounVocabularySummary": {
+    "total": 60,
+    "singleWord": 30,
+    "multiword": 30,
+    "sourceExactMatches": 27,
+    "missingInSource": 33,
+    "sourceMatchesNeedingDefinitionRepair": 1,
+    "existingMultiwordEntries": [
+      "French Fries",
+      "Trash Can"
+    ],
+    "sourceMatchedLevelCounts": {
+      "basic": 12,
+      "advance": 8,
+      "expert": 5,
+      "null": 2
+    }
+  },
+  "vocabularySummary": {
+    "totalTargetOccurrences": 104,
+    "nounOccurrences": 62,
+    "adjectiveOccurrences": 22,
+    "verbOccurrences": 20,
+    "sourceReuseCandidateOccurrences": 67,
+    "pendingNewEntryOccurrences": 37,
+    "originalNounAuditUniqueWithinOriginalList": 60,
+    "supplementUniqueWords": 40,
+    "sourceDefinitionRepairOccurrences": 1,
+    "formalDatabaseChecked": false,
+    "orderingModeOccurrences": 4
+  },
+  "vocabularyDeduplicationPreference": "同一批次目標詞盡量不重複，保留自然情境優先；故事支援詞可自然重用",
+  "deduplicationChanges": [
+    {
+      "scene": 1,
+      "from": "clean",
+      "to": "tidy",
+      "senseZh": "整潔的"
+    },
+    {
+      "scene": 1,
+      "from": "order",
+      "to": "wait",
+      "senseZh": "等候"
+    },
+    {
+      "scene": 4,
+      "from": "full",
+      "to": "messy",
+      "senseZh": "凌亂的"
+    }
+  ],
+  "sourceOrderingModesAudit": "docs/scenarios/preparation/mcdonalds-restaurant/ordering-modes-audit.json",
+  "programTargetLimit": {
+    "maxTargets": 29,
+    "implemented": true,
+    "deployed": false,
+    "validation": {
+      "typecheck": "passed",
+      "npmTest": "passed-with-zh_TW.UTF-8",
+      "testCount": 646,
+      "defaultLocaleFirstRun": "failed: existing meta groupTags sorting locale assumption",
+      "packageAndImageSafetyTests": "passed by delegated implementation checks",
+      "learner29TargetInteractionTest": "passed with fake API; no real29target image visual QA"
+    }
+  }
+}

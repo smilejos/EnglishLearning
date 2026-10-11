@@ -5,7 +5,7 @@ import { z } from "zod";
 import sharp from "sharp";
 
 export const ScenarioKeySchema = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(80);
-export const SCENARIO_MAX_TARGETS = 25;
+export const SCENARIO_MAX_TARGETS = 29;
 const Hash = z.string().regex(/^[a-f0-9]{64}$/);
 const Text = z.string().trim().min(1).max(20000);
 export const ScenarioParagraphBreakIdsSchema = z.array(Text).min(1).max(99);

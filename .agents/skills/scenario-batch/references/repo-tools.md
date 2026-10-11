@@ -11,7 +11,7 @@ npm run scenario:import -- --package PACKAGE --check-database
 npm run scenario:audio:generate -- --package PACKAGE
 ```
 
-前兩者離線、不連 DB、不生成／複製／發布。check 接受 1–25 詞，`assets.referenceImage` 仍必須保留，正式媒體只採無文字底圖與旁白。
+前兩者離線、不連 DB、不生成／複製／發布。check 接受 1–29 詞，`assets.referenceImage` 仍必須保留，正式媒體只採無文字底圖與旁白。
 
 目前契約／checker／後台仍有 basic／advance 硬限制，這些命令未因此技能改版就支援指定詞模式。expert／未分級／新增詞先走 [指定詞與缺詞流程](user-vocabulary.md)，完成必要且有測試的契約適配後才能匯入；不能假標分級或略過檢查。
 

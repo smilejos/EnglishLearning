@@ -19,6 +19,18 @@ test('圖片不能用缺件、文字或未解 issues 自動過關；人工解決
   assert.throws(() => reviewedCoordinates(issues, targets, actual, 'hash', {reviewed: true, sha256: 'wrong', issuesResolved: issues.issues}));
   assert.throws(() => reviewedCoordinates(issues, targets, actual, 'hash', {reviewed: true, sha256: 'hash', issuesResolved: ['隨便描述']}));
 });
+test('完整圖片審閱接受 25／29 詞、拒絕 30 詞，仍核對每詞座標與線索', () => {
+  for (const count of [25, 29, 30]) {
+    const expanded = Array.from({length: count}, (_, i) => ({word: `word${i}`, entryGuid: `entry${i}`}));
+    const fullReview = {...review, targets: expanded.map(t => ({...review.targets[0], word: t.word}))};
+    if (count === 30) assert.throws(() => reviewedCoordinates(fullReview, expanded, review, 'hash'));
+    else {
+      assert.equal(reviewedCoordinates(fullReview, expanded, review, 'hash').length, count);
+      fullReview.targets[count - 1].visualEvidenceZh = '';
+      assert.throws(() => reviewedCoordinates(fullReview, expanded, review, 'hash'));
+    }
+  }
+});
 test('manifest 只選當次 plan.jobs，排除其他場與已完整舊音檔；缺資產／舊文字停止', () => {
   const job = {assetGuid: 'needed', entryGuid: 'entry0', kind: 'word', textHash: 'current', text: 'word0'};
   const plan = {scenarioKey: 'scene', revision: 1, jobs: [job]};

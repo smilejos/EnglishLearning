@@ -1,0 +1,105 @@
+{
+  "source": "source/vocabulary-database.json",
+  "auditScope": "新四項點餐與用餐模式規劃；詞庫來源查重與官方用法核對；未查正式DB",
+  "sourceExactMatches": 0,
+  "pendingNewEntryCount": 4,
+  "formalDatabaseChecked": false,
+  "targets": [
+    {
+      "scene": 1,
+      "english": "Combo Meal",
+      "senseZh": "套餐",
+      "teachingPos": "n",
+      "sourceEntryGuid": null,
+      "sourceStatus": "pending-new-entry",
+      "level": {
+        "list": null,
+        "cefr": null,
+        "tw_7000": null
+      },
+      "categoryProposed": [
+        "Others"
+      ],
+      "visualCueZh": "漢堡、薯條與飲料放在同一個托盤，與旁邊單點漢堡對照",
+      "usageNoteZh": "名詞片語，套餐餐點組合",
+      "usageSources": [
+        "https://www.mcdonalds.com/us/en-us/meal/ranch-and-spicy-snack-wrap-combo-meal.html"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked"
+    },
+    {
+      "scene": 1,
+      "english": "À la carte",
+      "senseZh": "單點（的）",
+      "teachingPos": "adj",
+      "sourceEntryGuid": null,
+      "sourceStatus": "pending-new-entry",
+      "level": {
+        "list": null,
+        "cefr": null,
+        "tw_7000": null
+      },
+      "categoryProposed": [
+        "Others"
+      ],
+      "visualCueZh": "單獨一份漢堡，與整組套餐對照；菜單採圖片，不燒入價格或文字",
+      "usageNoteZh": "保留法語重音；用à la carte menu教形容詞義，非名詞",
+      "usageSources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/a-la-carte"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked"
+    },
+    {
+      "scene": 1,
+      "english": "Dine-in",
+      "senseZh": "內用（的）",
+      "teachingPos": "adj",
+      "sourceEntryGuid": null,
+      "sourceStatus": "pending-new-entry",
+      "level": {
+        "list": null,
+        "cefr": null,
+        "tw_7000": null
+      },
+      "categoryProposed": [
+        "Others"
+      ],
+      "visualCueZh": "座位區坐著享用餐點的顧客",
+      "usageNoteZh": "以dine-in customers／service教服務模式的形容詞用法，不把For here硬標名詞",
+      "usageSources": [
+        "https://custcare.mcdonalds.com.sg/hc/en-us/articles/6368275466393-How-does-Dine-In-work"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked"
+    },
+    {
+      "scene": 1,
+      "english": "Takeout",
+      "senseZh": "外帶（餐點）",
+      "teachingPos": "n",
+      "sourceEntryGuid": null,
+      "sourceStatus": "pending-new-entry",
+      "level": {
+        "list": null,
+        "cefr": null,
+        "tw_7000": null
+      },
+      "categoryProposed": null,
+      "visualCueZh": "拿著餐點紙袋向出口走去的顧客",
+      "usageNoteZh": "美式名詞指外帶餐點；口語To go可放未來對話，不充作名詞詞條",
+      "usageSources": [
+        "https://dictionary.cambridge.org/us/dictionary/english/takeout"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked"
+    }
+  ],
+  "contractIssues": [
+    "每場上限程式已由25改29，29接受／30拒絕及完整646項測試與typecheck通過；未部署",
+    "À la carte有重音字母，現ASCII逐token驗證仍需指定詞／完整片語適配",
+    "四項新詞無可靠分級時level.list留null，不假標basic／advance",
+    "新詞沒有正式GUID，必須依核對後的增量匯入，才能正式建立scenario關聯"
+  ]
+}

@@ -26,23 +26,26 @@ function stage(name: string) { fireEvent.click(screen.getByRole("button", { name
 describe("情境工作室的人工作業邊界", () => {
   it("舊十五詞可繼續編輯，顯示分類數量與非強制備料目標", async () => {
     await open();
-    expect(screen.getByRole("heading", { name: "目前目標詞（15/25）" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "目前目標詞（15/29）" })).toBeTruthy();
     expect(screen.getByLabelText("目標詞分類數量").textContent).toBe("名詞 13 · 形容詞 1 · 動詞 1");
     expect(screen.getByText(/15個名詞、5個形容詞、5個動詞/)).toBeTruthy();
     mocked.resolveWords.mockResolvedValue({ results: [{ input: "extra", status: "matched", entries: [{ ...words[0], guid: "00000000-0000-4000-8000-000000000026", word: "extra" }] }] });
     fireEvent.change(screen.getByLabelText("貼上目標單字"), { target: { value: "extra" } }); fireEvent.click(screen.getByRole("button", { name: "比對字庫" })); fireEvent.click(await screen.findByRole("button", { name: "加入 extra" }));
-    expect(screen.getByRole("heading", { name: "目前目標詞（16/25）" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "目前目標詞（16/29）" })).toBeTruthy();
     expect(mocked.startJob).not.toHaveBeenCalled();
   });
-  it("25詞和空動詞組可顯示與估價，拒絕加入第26詞且不自動生成", async () => {
-    const targets = Array.from({ length: 25 }, (_, i) => ({ ...draft().targets[0], word: `target${i}`, entryGuid: `00000000-0000-4000-8000-${String(i + 1).padStart(12, "0")}`, teachingPos: "n" as const }));
+  it("28詞可加入第29詞和估價，拒絕第30詞且不自動生成", async () => {
+    const targets = Array.from({ length: 28 }, (_, i) => ({ ...draft().targets[0], word: `target${i}`, entryGuid: `00000000-0000-4000-8000-${String(i + 1).padStart(12, "0")}`, teachingPos: "n" as const }));
     current = detail({ draft: { ...draft(), targets } }); await open();
-    expect(screen.getByRole("heading", { name: "目前目標詞（25/25）" })).toBeTruthy();
-    expect(screen.getByLabelText("目標詞分類數量").textContent).toBe("名詞 25 · 形容詞 0 · 動詞 0");
-    mocked.resolveWords.mockResolvedValue({ results: [{ input: "extra", status: "matched", entries: [{ ...words[0], guid: "00000000-0000-4000-8000-000000000026", word: "extra" }] }] });
+    expect(screen.getByRole("heading", { name: "目前目標詞（28/29）" })).toBeTruthy();
+    mocked.resolveWords.mockResolvedValue({ results: [{ input: "extra", status: "matched", entries: [{ ...words[0], guid: "00000000-0000-4000-8000-000000000029", word: "extra" }] }] });
     fireEvent.change(screen.getByLabelText("貼上目標單字"), { target: { value: "extra" } }); fireEvent.click(screen.getByRole("button", { name: "比對字庫" })); fireEvent.click(await screen.findByRole("button", { name: "加入 extra" }));
-    expect(await screen.findByText(/每張情境最多25詞/)).toBeTruthy();
-    expect(screen.getByRole("heading", { name: "目前目標詞（25/25）" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "目前目標詞（29/29）" })).toBeTruthy();
+    expect(screen.getByLabelText("目標詞分類數量").textContent).toBe("名詞 29 · 形容詞 0 · 動詞 0");
+    mocked.resolveWords.mockResolvedValue({ results: [{ input: "overflow", status: "matched", entries: [{ ...words[0], guid: "00000000-0000-4000-8000-000000000030", word: "overflow" }] }] });
+    fireEvent.change(screen.getByLabelText("貼上目標單字"), { target: { value: "overflow" } }); fireEvent.click(screen.getByRole("button", { name: "比對字庫" })); fireEvent.click(await screen.findByRole("button", { name: "加入 overflow" }));
+    expect(await screen.findByText(/每張情境最多29詞/)).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "目前目標詞（29/29）" })).toBeTruthy();
     stage("故事");
     expect((screen.getByRole("button", { name: "取得英文故事與翻譯估價" }) as HTMLButtonElement).disabled).toBe(false);
     expect(mocked.startJob).not.toHaveBeenCalled(); expect(mocked.saveDraft).not.toHaveBeenCalled();

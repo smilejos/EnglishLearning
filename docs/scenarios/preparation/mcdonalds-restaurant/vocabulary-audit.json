@@ -1,0 +1,1525 @@
+{
+  "batchKey": "mcdonalds-restaurant",
+  "auditScope": "唯讀來源詞庫及當下程式契約盤點；未查正式 DB、未改來源、未新增正式詞條、未生成素材",
+  "source": "source/vocabulary-database.json",
+  "matchingRule": "trim／casefold 精確完整詞比對；沒有匹配不使用構成詞冒充片語 GUID",
+  "othersInterpretation": {
+    "field": "category",
+    "proposedValue": [
+      "Others"
+    ],
+    "sourceCurrentEntryCount": 0,
+    "note": "category 可自由字串陣列；Others 不是 level.list（basic／advance／expert／null）或 teachingPos（n／v／adj）的值。使用者多字詞分類要求暫記於此，待討論。現有 French fries／trash can 優先重用並考慮追加 category，避免產生重複詞條。"
+  },
+  "summary": {
+    "total": 60,
+    "singleWord": 30,
+    "multiword": 30,
+    "sourceExactMatches": 27,
+    "missingInSource": 33,
+    "sourceMatchesNeedingDefinitionRepair": 1,
+    "existingMultiwordEntries": [
+      "French Fries",
+      "Trash Can"
+    ],
+    "sourceMatchedLevelCounts": {
+      "basic": 12,
+      "advance": 8,
+      "expert": 5,
+      "null": 2
+    }
+  },
+  "contractEvidence": [
+    {
+      "path": "shared/src/wordbank.ts",
+      "line": 8,
+      "finding": "word 非空字串，允許多字詞；category 自由字串陣列；parts_of_speech 可保留 n。"
+    },
+    {
+      "path": "shared/src/scenarios.ts",
+      "line": 22,
+      "finding": "目標 list 只接受 basic／advance，不接受 expert／null；每場 1–25 目標，15 詞可容納。"
+    },
+    {
+      "path": "shared/src/scenarios.ts",
+      "line": 47,
+      "finding": "故事按英文單 token regex 與 wordLinks 一對一，不能用跨空白 phrase span。"
+    },
+    {
+      "path": "shared/src/scenarioStudio/story.ts",
+      "line": 31,
+      "finding": "故事按 token 與 baseWords/previous link 解析，且每筆 list 必須落在 vocabularyFilter.levels，完整多字詞自然映射需適配。"
+    },
+    {
+      "path": "scripts/check-scenario-package.mjs",
+      "line": 57,
+      "finding": "離線預檢仍限制 basic／advance。"
+    }
+  ],
+  "targets": [
+    {
+      "scene": 1,
+      "order": 1,
+      "englishOriginal": "Restaurant",
+      "senseZhRequested": "餐廳",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 712,
+          "guid": "30601ca6-061b-5296-aac7-292e5c9b9d87",
+          "word": "restaurant",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "餐廳；飯館",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Places & locations"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 1,
+      "order": 2,
+      "englishOriginal": "Entrance",
+      "senseZhRequested": "入口",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1314,
+          "guid": "d0be231f-ffd5-530e-a8f5-faf687464651",
+          "word": "entrance",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "入口；進入；入場",
+          "level": {
+            "cefr": "A2",
+            "tw_7000": 2,
+            "list": "advance"
+          },
+          "category": [
+            "Other nouns"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 1,
+      "order": 3,
+      "englishOriginal": "Exit",
+      "senseZhRequested": "出口",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1331,
+          "guid": "fea1d8a0-da95-51af-a82c-a8289ea9e738",
+          "word": "exit",
+          "parts_of_speech": [
+            "n",
+            "v"
+          ],
+          "definition": "（名）出口；離開；（動）離開；退出",
+          "level": {
+            "cefr": "B1",
+            "tw_7000": 2,
+            "list": "advance"
+          },
+          "category": [
+            "Other nouns"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 1,
+      "order": 4,
+      "englishOriginal": "Counter",
+      "senseZhRequested": "櫃檯",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 3233,
+          "guid": "f020a23d-7efe-5a09-bc8d-b4d0865beada",
+          "word": "counter",
+          "parts_of_speech": [
+            "n",
+            "v",
+            "adj",
+            "adv"
+          ],
+          "definition": "櫃檯；相反方向地；報到櫃檯；反駁",
+          "level": {
+            "cefr": "A2",
+            "tw_7000": 4,
+            "list": "expert"
+          },
+          "category": []
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "out-of-current-level-contract"
+    },
+    {
+      "scene": 1,
+      "order": 5,
+      "englishOriginal": "Cashier",
+      "senseZhRequested": "收銀員",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 5135,
+          "guid": "b729adf6-5166-55aa-b0b3-2be80ae34de1",
+          "word": "cashier",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "收銀員；出納員",
+          "level": {
+            "cefr": "A2",
+            "tw_7000": 6,
+            "list": "expert"
+          },
+          "category": []
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "out-of-current-level-contract"
+    },
+    {
+      "scene": 1,
+      "order": 6,
+      "englishOriginal": "Customer",
+      "senseZhRequested": "顧客",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1221,
+          "guid": "161ac71e-acdd-5392-940f-1db1f1151186",
+          "word": "customer",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "顧客；客人",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 2,
+            "list": "advance"
+          },
+          "category": [
+            "People"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 1,
+      "order": 7,
+      "englishOriginal": "Menu Board",
+      "senseZhRequested": "菜單看板",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 1,
+      "order": 8,
+      "englishOriginal": "Self-Service Kiosk",
+      "senseZhRequested": "自助點餐機",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "含連字號與空白；故事目前 tokenizer 將 Self-Service 分成兩個 token，完整片語需支援 span。"
+      ],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 1,
+      "order": 9,
+      "englishOriginal": "Cash Register",
+      "senseZhRequested": "收銀機",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 1,
+      "order": 10,
+      "englishOriginal": "Table",
+      "senseZhRequested": "桌子",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 849,
+          "guid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+          "word": "table",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "桌子；餐桌；表格",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Houses & apartments"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 1,
+      "order": 11,
+      "englishOriginal": "Chair",
+      "senseZhRequested": "椅子",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 155,
+          "guid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+          "word": "chair",
+          "parts_of_speech": [
+            "n",
+            "v"
+          ],
+          "definition": "椅子",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Houses & apartments"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 1,
+      "order": 12,
+      "englishOriginal": "Dining Area",
+      "senseZhRequested": "用餐區",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 1,
+      "order": 13,
+      "englishOriginal": "Kitchen",
+      "senseZhRequested": "廚房",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 458,
+          "guid": "3940129e-ff35-5de4-8f17-361c73dcdef4",
+          "word": "kitchen",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "廚房",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Houses & apartments"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 1,
+      "order": 14,
+      "englishOriginal": "Employee",
+      "senseZhRequested": "店員",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1305,
+          "guid": "37e2ee92-aabf-5b57-bb2d-1f25b4292356",
+          "word": "employee",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "員工；受雇者",
+          "level": {
+            "cefr": "A2",
+            "tw_7000": 2,
+            "list": "expert"
+          },
+          "category": []
+        }
+      ],
+      "semanticNotes": [
+        "現有員工／受雇者詞義適用；圖中需与 cashier 以不同人物或位置分別辨認。"
+      ],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "out-of-current-level-contract"
+    },
+    {
+      "scene": 1,
+      "order": 15,
+      "englishOriginal": "Playground",
+      "senseZhRequested": "遊戲區",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1638,
+          "guid": "595cdbcd-c009-572c-8089-f1cc069340e5",
+          "word": "playground",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "操場；遊樂場；兒童遊樂場",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 2,
+            "list": "basic"
+          },
+          "category": [
+            "School"
+          ]
+        }
+      ],
+      "semanticNotes": [
+        "現有詞義含兒童遊樂場，適用店內遊戲區；場景採設有遊戲區的想像分店，不代表所有麥當勞都有。"
+      ],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 2,
+      "order": 1,
+      "englishOriginal": "Hamburger",
+      "senseZhRequested": "漢堡",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1424,
+          "guid": "153f4185-cc1d-550f-8522-534fef25256d",
+          "word": "hamburger",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "漢堡",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 2,
+            "list": "basic"
+          },
+          "category": [
+            "Food & drinks"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 2,
+      "order": 2,
+      "englishOriginal": "Cheeseburger",
+      "senseZhRequested": "起司漢堡",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "missing-vocabulary"
+    },
+    {
+      "scene": 2,
+      "order": 3,
+      "englishOriginal": "Big Mac",
+      "senseZhRequested": "大麥克",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "品牌產品名稱，新增時保留 Big Mac 大小寫；不推定已有分級。"
+      ],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 4,
+      "englishOriginal": "Chicken Burger",
+      "senseZhRequested": "雞肉漢堡",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 5,
+      "englishOriginal": "Fish Burger",
+      "senseZhRequested": "魚肉漢堡",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 6,
+      "englishOriginal": "French Fries",
+      "senseZhRequested": "薯條",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 6268,
+          "guid": "625ee007-f822-59a9-b652-7564b110d4bf",
+          "word": "French fries",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "薯條",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": null,
+            "list": null
+          },
+          "category": []
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 7,
+      "englishOriginal": "Chicken Nuggets",
+      "senseZhRequested": "雞塊",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 8,
+      "englishOriginal": "Hash Brown",
+      "senseZhRequested": "薯餅",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 9,
+      "englishOriginal": "Apple Pie",
+      "senseZhRequested": "蘋果派",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 10,
+      "englishOriginal": "Ice Cream Cone",
+      "senseZhRequested": "蛋捲冰淇淋",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 11,
+      "englishOriginal": "Sundae",
+      "senseZhRequested": "聖代",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "missing-vocabulary"
+    },
+    {
+      "scene": 2,
+      "order": 12,
+      "englishOriginal": "Soft Drink",
+      "senseZhRequested": "汽水",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 13,
+      "englishOriginal": "Orange Juice",
+      "senseZhRequested": "柳橙汁",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 2,
+      "order": 14,
+      "englishOriginal": "Milk",
+      "senseZhRequested": "牛奶",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 539,
+          "guid": "347f1643-7bf0-52ea-bfd7-be478631e73e",
+          "word": "milk",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "牛奶",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Food & drinks"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 2,
+      "order": 15,
+      "englishOriginal": "Happy Meal",
+      "senseZhRequested": "快樂兒童餐",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "品牌產品名稱，新增時保留 Happy Meal 大小寫；不推定已有分級。"
+      ],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 3,
+      "order": 1,
+      "englishOriginal": "Tray",
+      "senseZhRequested": "托盤",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "candidate-reuse-needs-definition-repair",
+      "sourceMatches": [
+        {
+          "id": 2931,
+          "guid": "da59f650-66c8-5d96-a95d-81722978e727",
+          "word": "tray",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "實木排水茶盤；茶席托盤",
+          "level": {
+            "cefr": "B1",
+            "tw_7000": 3,
+            "list": "expert"
+          },
+          "category": []
+        }
+      ],
+      "semanticNotes": [
+        "現有中文定義僅涵蓋茶盤／茶席托盤；英文解釋與例句含一般餐飲托盤。可重用 GUID，但須另提正式字庫定義修正，不可只依 importer 覆寫非空文字。"
+      ],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "out-of-current-level-contract"
+    },
+    {
+      "scene": 3,
+      "order": 2,
+      "englishOriginal": "Cup",
+      "senseZhRequested": "杯子",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 206,
+          "guid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+          "word": "cup",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "杯子；獎盃",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Tableware",
+            "Sizes & measurements"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 3,
+      "englishOriginal": "Straw",
+      "senseZhRequested": "吸管",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 2857,
+          "guid": "db2819f9-ea61-5686-9e34-86085164f14e",
+          "word": "straw",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "吸管；稻草",
+          "level": {
+            "cefr": "A2",
+            "tw_7000": 3,
+            "list": "advance"
+          },
+          "category": [
+            "Tableware"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 4,
+      "englishOriginal": "Lid",
+      "senseZhRequested": "杯蓋",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1505,
+          "guid": "66751b1d-dfd4-500b-b11d-4ac7aef12c67",
+          "word": "lid",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "蓋子",
+          "level": {
+            "cefr": "B2",
+            "tw_7000": 2,
+            "list": "advance"
+          },
+          "category": [
+            "Other nouns"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 5,
+      "englishOriginal": "Napkin",
+      "senseZhRequested": "餐巾紙",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 2569,
+          "guid": "b64599c4-2778-5584-ad14-3a0ab029098a",
+          "word": "napkin",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "餐巾；餐巾紙",
+          "level": {
+            "cefr": "A2",
+            "tw_7000": 3,
+            "list": "advance"
+          },
+          "category": [
+            "Tableware"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 6,
+      "englishOriginal": "Wrapper",
+      "senseZhRequested": "食物包裝紙",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "來源缺詞；與 Scene 4 Paper Wrapper 同義但保留使用者兩份清單，後續可討論是否共用或分開詞條。"
+      ],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "missing-vocabulary"
+    },
+    {
+      "scene": 3,
+      "order": 7,
+      "englishOriginal": "Paper Bag",
+      "senseZhRequested": "紙袋",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 3,
+      "order": 8,
+      "englishOriginal": "Food Box",
+      "senseZhRequested": "餐盒",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "使用者定義餐盒；可新增此完整名詞片語，圖像需清楚區分紙袋與漢堡包裝紙。"
+      ],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 3,
+      "order": 9,
+      "englishOriginal": "Fork",
+      "senseZhRequested": "叉子",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 327,
+          "guid": "8eb4c30c-5207-52f6-8d17-1f966a14683a",
+          "word": "fork",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "叉子",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Tableware"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 10,
+      "englishOriginal": "Spoon",
+      "senseZhRequested": "湯匙",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1837,
+          "guid": "ecd0366a-ed6e-5306-9b55-b259206b5f6d",
+          "word": "spoon",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "湯匙；杓子",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 2,
+            "list": "basic"
+          },
+          "category": [
+            "Tableware"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 11,
+      "englishOriginal": "Ketchup",
+      "senseZhRequested": "番茄醬",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1485,
+          "guid": "010ec33f-5fc9-5319-8db9-d8ec20ad7624",
+          "word": "ketchup",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "番茄醬。",
+          "level": {
+            "cefr": null,
+            "tw_7000": 2,
+            "list": "advance"
+          },
+          "category": [
+            "Food & drinks"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 12,
+      "englishOriginal": "Dipping Sauce",
+      "senseZhRequested": "沾醬",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 3,
+      "order": 13,
+      "englishOriginal": "Burger Bun",
+      "senseZhRequested": "漢堡麵包",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 3,
+      "order": 14,
+      "englishOriginal": "Cheese",
+      "senseZhRequested": "起司",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 160,
+          "guid": "cca0e75e-9836-5eae-ac4b-42b50fa09afe",
+          "word": "cheese",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "起司；乳酪",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": 1,
+            "list": "basic"
+          },
+          "category": [
+            "Food & drinks"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 3,
+      "order": 15,
+      "englishOriginal": "Lettuce",
+      "senseZhRequested": "生菜",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 2492,
+          "guid": "4c48f0d8-42e8-5f92-8b9d-84434e098489",
+          "word": "lettuce",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "萵苣；生菜",
+          "level": {
+            "cefr": "B1",
+            "tw_7000": 3,
+            "list": "advance"
+          },
+          "category": [
+            "Food & drinks"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 4,
+      "order": 1,
+      "englishOriginal": "Trash Can",
+      "senseZhRequested": "垃圾桶",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 6255,
+          "guid": "629d763b-59f1-5d47-81de-501e84103717",
+          "word": "trash can",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "垃圾桶",
+          "level": {
+            "cefr": "A1",
+            "tw_7000": null,
+            "list": null
+          },
+          "category": []
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 2,
+      "englishOriginal": "Recycling Bin",
+      "senseZhRequested": "資源回收桶",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 3,
+      "englishOriginal": "Tray Return Station",
+      "senseZhRequested": "餐盤回收區",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 4,
+      "englishOriginal": "Leftovers",
+      "senseZhRequested": "剩餘食物",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "來源也無 leftover 可做原形候選；保留使用者 leftovers 名詞複數。"
+      ],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "missing-vocabulary"
+    },
+    {
+      "scene": 4,
+      "order": 5,
+      "englishOriginal": "Empty Cup",
+      "senseZhRequested": "空杯子",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "空杯子是形容詞修飾名詞的名詞片語，可 teachingPos=n，不應把整詞標 adj。"
+      ],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 6,
+      "englishOriginal": "Paper Wrapper",
+      "senseZhRequested": "食物包裝紙",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "來源缺詞；與 Scene 3 Wrapper 圖像同義，若分開詞條須一致釋義。"
+      ],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 7,
+      "englishOriginal": "Used Napkin",
+      "senseZhRequested": "使用過的餐巾紙",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [
+        "使用過的餐巾紙是名詞片語，可 teachingPos=n。"
+      ],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 8,
+      "englishOriginal": "Cleaning Cloth",
+      "senseZhRequested": "清潔抹布",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 9,
+      "englishOriginal": "Broom",
+      "senseZhRequested": "掃把",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 3114,
+          "guid": "21a62c82-0176-5a95-9e27-9a34bd8aa793",
+          "word": "broom",
+          "parts_of_speech": [
+            "n"
+          ],
+          "definition": "掃帚；掃把；掃地工具。",
+          "level": {
+            "cefr": null,
+            "tw_7000": 4,
+            "list": "expert"
+          },
+          "category": []
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "out-of-current-level-contract"
+    },
+    {
+      "scene": 4,
+      "order": 10,
+      "englishOriginal": "Dustpan",
+      "senseZhRequested": "畚箕",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "missing-vocabulary"
+    },
+    {
+      "scene": 4,
+      "order": 11,
+      "englishOriginal": "Mop",
+      "senseZhRequested": "拖把",
+      "form": "single-word",
+      "teachingPosProposed": "n",
+      "sourceStatus": "reuse-candidate",
+      "sourceMatches": [
+        {
+          "id": 1559,
+          "guid": "e2926169-3026-5ce7-98b2-87f00a5aec7a",
+          "word": "mop",
+          "parts_of_speech": [
+            "n",
+            "v"
+          ],
+          "definition": "（名）拖把；（動）用拖把拖地",
+          "level": {
+            "cefr": null,
+            "tw_7000": 2,
+            "list": "basic"
+          },
+          "category": [
+            "Other verbs"
+          ]
+        }
+      ],
+      "semanticNotes": [],
+      "proposedCategory": null,
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "source-compatible-candidate"
+    },
+    {
+      "scene": 4,
+      "order": 12,
+      "englishOriginal": "Cleaning Cart",
+      "senseZhRequested": "清潔推車",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 13,
+      "englishOriginal": "Trash Bag",
+      "senseZhRequested": "垃圾袋",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 14,
+      "englishOriginal": "Recycling Symbol",
+      "senseZhRequested": "回收標誌",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    },
+    {
+      "scene": 4,
+      "order": 15,
+      "englishOriginal": "Exit Sign",
+      "senseZhRequested": "出口指示牌",
+      "form": "multiword",
+      "teachingPosProposed": "n",
+      "sourceStatus": "missing-in-source",
+      "sourceMatches": [],
+      "semanticNotes": [],
+      "proposedCategory": [
+        "Others"
+      ],
+      "liveDatabaseStatus": "not-checked",
+      "audioStatus": "not-checked",
+      "scenarioContractStatus": "needs-multiword-and-specified-level-adaptation"
+    }
+  ],
+  "contractSnapshotNote": "此檔記錄最初60名詞來源盤點，當時單場max25；本輪程式上限後來改29，原詞庫匹配結果保持。當下契約仍限制分級與片語，見batch.json及review.md。"
+}

@@ -1,0 +1,743 @@
+{
+  "source": "source/vocabulary-database.json",
+  "auditScope": "補詞來源GUID／詞性／詞義與計畫畫面線索核對；未查正式DB或音檔",
+  "totalOccurrences": 40,
+  "distinctWords": 40,
+  "missingInSource": [],
+  "formalDatabaseChecked": false,
+  "scenes": [
+    {
+      "scene": 1,
+      "supplements": [
+        {
+          "word": "bright",
+          "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "adv"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "明亮的",
+          "sourceDefinition": "明亮的；聰穎的；歡快的",
+          "sourceMatch": true,
+          "visualCueZh": "大窗戶日光與室內照明",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "tidy",
+          "entryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "v"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "整潔的",
+          "sourceDefinition": "（形）整潔的；有條理的；（動）整理；收拾",
+          "sourceMatch": true,
+          "visualCueZh": "用餐區桌椅擺放整齊，桌面收拾妥當",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "large",
+          "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "寬大的",
+          "sourceDefinition": "大的；大型的；大量的",
+          "sourceMatch": true,
+          "visualCueZh": "寬敞的用餐區與多組桌椅",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "friendly",
+          "entryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "親切的",
+          "sourceDefinition": "友善的；親切的；不用農藥化肥之石虎米友善農作的",
+          "sourceMatch": true,
+          "visualCueZh": "收銀員微笑接待顧客",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "busy",
+          "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "忙碌的",
+          "sourceDefinition": "忙碌的；繁忙的",
+          "sourceMatch": true,
+          "visualCueZh": "店員備餐與顧客點餐的熱鬧景象",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "enter",
+          "entryGuid": "71bc506a-dc77-50dd-a79a-921d44a5f208",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "進入",
+          "sourceDefinition": "進入；輸入；參加；登記",
+          "sourceMatch": true,
+          "visualCueZh": "主角一家正穿過入口",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "wait",
+          "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "等候",
+          "sourceDefinition": "等候；等待",
+          "sourceMatch": true,
+          "visualCueZh": "櫃檯前排隊等候的顧客",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "pay",
+          "entryGuid": "f29a553c-6053-599b-a26b-58c96f78c412",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "付款",
+          "sourceDefinition": "付錢；支付；薪水",
+          "sourceMatch": true,
+          "visualCueZh": "另一位顧客使用卡片付款",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "work",
+          "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "n",
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "工作",
+          "sourceDefinition": "工作；運作；作品",
+          "sourceMatch": true,
+          "visualCueZh": "店員在廚房備餐",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "play",
+          "entryGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "玩耍",
+          "sourceDefinition": "玩耍；演奏；戲劇",
+          "sourceMatch": true,
+          "visualCueZh": "遊戲區的背景孩子玩溜滑梯",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "supplements": [
+        {
+          "word": "hot",
+          "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "熱的",
+          "sourceDefinition": "熱的；辣的；熱門的",
+          "sourceMatch": true,
+          "visualCueZh": "薯條上方少量熱氣",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "cold",
+          "entryGuid": "2a8f34e9-caf2-5b1c-8518-318d2cdf4590",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "n"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "冰的；冷的",
+          "sourceDefinition": "冷的；寒冷的；感冒；重啟偵辦沉冤多年之歷史冷案懸案的",
+          "sourceMatch": true,
+          "visualCueZh": "汽水杯中的冰塊與外側凝結水珠",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "crispy",
+          "entryGuid": "972af8de-7b4c-5125-b8ce-c3b147970bdd",
+          "list": "expert",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "酥脆的",
+          "sourceDefinition": "酥脆的；香脆可口的",
+          "sourceMatch": true,
+          "visualCueZh": "薯餅剖面與酥脆外皮；口感由故事補強",
+          "currentListContractCompatible": false,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "sweet",
+          "entryGuid": "1c29a1ce-c008-54ab-8ca8-6c9dbda6d953",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "甜的",
+          "sourceDefinition": "甜的；親切的；甜點",
+          "sourceMatch": true,
+          "visualCueZh": "聖代淋醬與甜點展示；味道由故事補強",
+          "currentListContractCompatible": true,
+          "status": "reasonable-with-story-support",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "small",
+          "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "n",
+            "adv"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "小的",
+          "sourceDefinition": "小的；微小的",
+          "sourceMatch": true,
+          "visualCueZh": "小份薯條與較大份量形成對比",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "choose",
+          "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "選擇",
+          "sourceDefinition": "挑選；選擇",
+          "sourceMatch": true,
+          "visualCueZh": "孩子在食物圖片前作選擇",
+          "currentListContractCompatible": true,
+          "status": "reasonable-with-story-support",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "point",
+          "entryGuid": "db168ec2-5704-55ac-905a-1d51ffec07f2",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "n",
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "指向",
+          "sourceDefinition": "分數；點；指向；消除軌面有害空間之高錳鋼可動鼻軌心軌",
+          "sourceMatch": true,
+          "visualCueZh": "另一位孩子指著菜單上的漢堡",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "order",
+          "entryGuid": "82eab39c-2f5e-5408-a0b0-a62721cc13c0",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "n",
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "點餐",
+          "sourceDefinition": "點餐；訂購；順序；命令",
+          "sourceMatch": true,
+          "visualCueZh": "孩子向收銀員表達選擇",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "receive",
+          "entryGuid": "ae6b0ef4-d37b-580a-ba03-906abedd6bf2",
+          "list": "advance",
+          "sourcePartsOfSpeech": [
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "領取（餐點）",
+          "sourceDefinition": "收到；接收；接待",
+          "sourceMatch": true,
+          "visualCueZh": "大人從收銀員手中接過餐點托盤",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "carry",
+          "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v"
+          ],
+          "sourceDefinition": "攜帶；搬運；提",
+          "sourceMatch": true,
+          "teachingPos": "v",
+          "senseZh": "端著；攜帶",
+          "visualCueZh": "背景顧客端著托盤離開櫃檯",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked",
+          "currentListContractCompatible": true
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "supplements": [
+        {
+          "word": "happy",
+          "entryGuid": "013069fb-6aeb-597d-9c61-7dcec4504d2c",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "開心的",
+          "sourceDefinition": "快樂的；幸福的",
+          "sourceMatch": true,
+          "visualCueZh": "孩子用餐時的笑容",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "round",
+          "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "n",
+            "adv",
+            "prep",
+            "v"
+          ],
+          "sourceDefinition": "（形）圓形的；（名）一輪；一回合；（副／介）環繞；（動）使成圓形",
+          "sourceMatch": true,
+          "teachingPos": "adj",
+          "senseZh": "圓形的",
+          "visualCueZh": "圓形漢堡麵包",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked",
+          "currentListContractCompatible": true
+        },
+        {
+          "word": "soft",
+          "entryGuid": "19868dcc-ab14-5d35-8001-e13c4fdfad51",
+          "list": "expert",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "柔軟的",
+          "sourceDefinition": "柔軟的；輕柔的；溫和的",
+          "sourceMatch": true,
+          "visualCueZh": "漢堡麵包蓬鬆切面與輕壓痕；觸感由故事補強",
+          "currentListContractCompatible": false,
+          "status": "reasonable-with-story-support",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "fresh",
+          "entryGuid": "7bbaeb1f-2dfb-5097-b352-82aff054864c",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "新鮮的",
+          "sourceDefinition": "新鮮的；清新的；生動的",
+          "sourceMatch": true,
+          "visualCueZh": "生菜的翠綠葉片；品質由故事補強",
+          "currentListContractCompatible": true,
+          "status": "reasonable-with-story-support",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "full",
+          "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "滿的",
+          "sourceDefinition": "飽的；充滿的；滿的",
+          "sourceMatch": true,
+          "visualCueZh": "裝滿薯條的紙盒",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "sit",
+          "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "坐",
+          "sourceDefinition": "坐下；就座",
+          "sourceMatch": true,
+          "visualCueZh": "孩子坐在餐椅上",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "eat",
+          "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "吃",
+          "sourceDefinition": "吃",
+          "sourceMatch": true,
+          "visualCueZh": "孩子把食物送向嘴邊",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "drink",
+          "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "喝",
+          "sourceDefinition": "喝；飲料",
+          "sourceMatch": true,
+          "visualCueZh": "陪同大人使用吸管喝飲料",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "dip",
+          "entryGuid": "d498bd39-ef15-57fa-9685-e195067dd213",
+          "list": "expert",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "沾",
+          "sourceDefinition": "（動）浸入；蘸；下降；（名）蘸醬；短暫下跌",
+          "sourceMatch": true,
+          "visualCueZh": "另一位孩子把雞塊沾進醬盒",
+          "currentListContractCompatible": false,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "hold",
+          "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "拿著",
+          "sourceDefinition": "握住；拿著；舉辦",
+          "sourceMatch": true,
+          "visualCueZh": "孩子手持漢堡",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "supplements": [
+        {
+          "word": "empty",
+          "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+          "list": "advance",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "v"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "空的",
+          "sourceDefinition": "空的；清空",
+          "sourceMatch": true,
+          "visualCueZh": "看得見空內部的杯子",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "dirty",
+          "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "v"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "髒的",
+          "sourceDefinition": "髒的；弄髒",
+          "sourceMatch": true,
+          "visualCueZh": "使用過的餐巾紙與未擦拭桌面",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "clean",
+          "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "v",
+            "adv",
+            "n"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "乾淨的",
+          "sourceDefinition": "乾淨的；打掃；清潔",
+          "sourceMatch": true,
+          "visualCueZh": "另一張擦好的桌子",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "wet",
+          "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "adj",
+            "v"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "濕的",
+          "sourceDefinition": "（形）濕的；下雨的；（動）弄濕",
+          "sourceMatch": true,
+          "visualCueZh": "清潔抹布有少量水滴",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "messy",
+          "entryGuid": "43f91af9-d8b7-5303-8310-02edc88df2d5",
+          "list": "expert",
+          "sourcePartsOfSpeech": [
+            "adj"
+          ],
+          "teachingPos": "adj",
+          "senseZh": "凌亂的",
+          "sourceDefinition": "凌亂的；髒亂的；棘手的",
+          "sourceMatch": true,
+          "visualCueZh": "餐後桌面上散落的包裝紙與餐具",
+          "currentListContractCompatible": false,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "pour",
+          "entryGuid": "772e1508-c6fc-50fa-b0f1-286dd266fa44",
+          "list": "expert",
+          "sourcePartsOfSpeech": [
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "倒",
+          "sourceDefinition": "傾倒；倒水；下傾盆大雨",
+          "sourceMatch": true,
+          "visualCueZh": "孩子將剩餘飲料倒進專用收集口",
+          "currentListContractCompatible": false,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "sort",
+          "entryGuid": "136bee9c-2803-5a85-b848-70e9181377d0",
+          "list": "expert",
+          "sourcePartsOfSpeech": [
+            "n",
+            "v"
+          ],
+          "teachingPos": "v",
+          "senseZh": "分類",
+          "sourceDefinition": "（動）分類；整理；挑選；（名）種類；類型",
+          "sourceMatch": true,
+          "visualCueZh": "另一位孩子依圖像分放餐後物品",
+          "currentListContractCompatible": false,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "return",
+          "entryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+          "list": "advance",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "歸還",
+          "sourceDefinition": "退貨；歸還；返回；收益",
+          "sourceMatch": true,
+          "visualCueZh": "陪同大人把托盤放回回收架",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "wipe",
+          "entryGuid": "84de3914-33cf-5ae7-9c31-8fdd2fc5e47e",
+          "list": "expert",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "擦拭",
+          "sourceDefinition": "（動）擦拭；抹去；清除；（名）擦拭；濕紙巾。",
+          "sourceMatch": true,
+          "visualCueZh": "店員用抹布擦桌",
+          "currentListContractCompatible": false,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        },
+        {
+          "word": "leave",
+          "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+          "list": "basic",
+          "sourcePartsOfSpeech": [
+            "v",
+            "n"
+          ],
+          "teachingPos": "v",
+          "senseZh": "離開",
+          "sourceDefinition": "離開；留下；休假；特別休假 (特休)；請假",
+          "sourceMatch": true,
+          "visualCueZh": "背景顧客走出出口",
+          "currentListContractCompatible": true,
+          "status": "reasonable",
+          "liveDatabaseStatus": "not-checked",
+          "audioStatus": "not-checked"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "40個補詞詞次均有來源GUID，這次可自然安排為40個不同詞，不強制未來各批全部去重",
+    "crispy、soft、dip、pour、sort、wipe、messy是expert，保留實際分級，現行情境契約需適配",
+    "sweet／soft／fresh的味覺、觸感與品質以圖像線索配合故事解釋，不宣稱靜態圖可直接證實",
+    "full只在Scene3教滿的，指裝滿薯條的盒子；Scene4改用messy教凌亂的",
+    "尚未生成底圖，全部visualCueZh均為規劃而非實際圖像驗收"
+  ]
+}

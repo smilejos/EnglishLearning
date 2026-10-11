@@ -73,9 +73,9 @@ test('有效草稿可預檢，列出 15 組座標、底圖與故事音檔缺項'
   assert.equal((await f.run()).status, 0);
 });
 
-test('25 詞完整覆蓋可預檢；缺少動詞的教材也可保留', async (t) => {
+for (const count of [25, 29, 30]) test(`${count} 詞完整覆蓋預檢遵守 29 詞上限；缺少動詞的教材也可保留`, async (t) => {
   const f = await fixture(t);
-  const extraWords = ['alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa'];
+  const extraWords = ['alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron'].slice(0, count - 15);
   for (const word of extraWords) {
     f.entries.push({ guid: `entry-${word}`, word, level: { list: 'basic' }, parts_of_speech: ['n'] });
     f.pkg.targets.push({ word, entryGuid: `entry-${word}`, list: 'basic', teachingPos: 'n', senseZh: '測試詞義', interaction: null });
@@ -85,17 +85,23 @@ test('25 詞完整覆蓋可預檢；缺少動詞的教材也可保留', async (t
   f.pkg.story.sentences.push({ id: 's5', en, zh: '新增測試詞。', wordLinks: [...en.matchAll(/[A-Za-z]+/g)].map(token => ({
     surface: token[0], word: token[0], entryGuid: `entry-${token[0]}`, isTarget: true, start: token.index, end: token.index + token[0].length,
   })) });
-  f.pkg.targetCount = 25;
+  f.pkg.targetCount = count;
   f.pkg.story.textEn = f.pkg.story.sentences.map(s => s.en).join(' ');
   f.pkg.story.textZh = f.pkg.story.sentences.map(s => s.zh).join('');
+  if (count === 30) {
+    const rejected = await f.check();
+    assert.equal(rejected.valid, false);
+    assert.ok(rejected.errors.includes('targetCount 必須為 1–29 的整數'));
+    return;
+  }
   assert.equal((await f.check()).valid, true);
   const missing = structuredClone(f.pkg);
   missing.story.sentences.pop();
   missing.story.textEn = missing.story.sentences.map(s => s.en).join(' ');
   missing.story.textZh = missing.story.sentences.map(s => s.zh).join('');
   assert.equal((await f.check(missing)).valid, false);
-  for (const count of [0, 26, 24, 2.5]) {
-    const wrong = structuredClone(f.pkg); wrong.targetCount = count;
+  for (const invalidCount of [0, 30, count - 1, 2.5]) {
+    const wrong = structuredClone(f.pkg); wrong.targetCount = invalidCount;
     assert.equal((await f.check(wrong)).valid, false);
   }
   f.pkg.targets = f.pkg.targets.filter(t => t.teachingPos !== 'v');
