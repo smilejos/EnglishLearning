@@ -1,0 +1,4 @@
+interface:
+  display_name: "情境分類製作"
+  short_description: "依場景或指定單字製作情境，處理缺詞入庫、圖文語音及逐場驗收"
+  default_prompt: "使用 $scenario-batch 製作一組情境分類；若我提供單字，優先使用且不限 basic／advance，缺詞納入字庫新增流程，依授權逐場驗收及匯入草稿。"

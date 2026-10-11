@@ -1,0 +1,1093 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "art-class",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "美術課畫畫與剪貼",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 15,
+  "targets": [
+    {
+      "word": "paint",
+      "entryGuid": "548b80a3-443a-54d4-9e37-e9e2a87bffea",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "顏料",
+      "interaction": {
+        "label": {
+          "x": 0.04,
+          "y": 0.79
+        },
+        "object": {
+          "x": 0.145,
+          "y": 0.648
+        }
+      }
+    },
+    {
+      "word": "brush",
+      "entryGuid": "8204f9f0-cecc-5bc8-89ba-42a5d4fd1173",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "筆刷",
+      "interaction": {
+        "label": {
+          "x": 0.214,
+          "y": 0.787
+        },
+        "object": {
+          "x": 0.251,
+          "y": 0.708
+        }
+      }
+    },
+    {
+      "word": "paper",
+      "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "紙張",
+      "interaction": {
+        "label": {
+          "x": 0.905,
+          "y": 0.846
+        },
+        "object": {
+          "x": 0.895,
+          "y": 0.732
+        }
+      }
+    },
+    {
+      "word": "crayon",
+      "entryGuid": "72dd4341-6b20-59cf-8118-3a57f36fca94",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "蠟筆",
+      "interaction": {
+        "label": {
+          "x": 0.441,
+          "y": 0.819
+        },
+        "object": {
+          "x": 0.445,
+          "y": 0.746
+        }
+      }
+    },
+    {
+      "word": "draw",
+      "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "畫畫",
+      "interaction": {
+        "label": {
+          "x": 0.518,
+          "y": 0.607
+        },
+        "object": {
+          "x": 0.326,
+          "y": 0.574
+        }
+      }
+    },
+    {
+      "word": "cut",
+      "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "剪",
+      "interaction": {
+        "label": {
+          "x": 0.62,
+          "y": 0.603
+        },
+        "object": {
+          "x": 0.708,
+          "y": 0.546
+        }
+      }
+    },
+    {
+      "word": "colorful",
+      "entryGuid": "26bd6701-0e1d-50c0-b7bf-96397c0cc230",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "色彩繽紛的",
+      "interaction": {
+        "label": {
+          "x": 0.505,
+          "y": 0.334
+        },
+        "object": {
+          "x": 0.527,
+          "y": 0.184
+        }
+      }
+    },
+    {
+      "word": "round",
+      "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "圓形的",
+      "interaction": {
+        "label": {
+          "x": 0.783,
+          "y": 0.621
+        },
+        "object": {
+          "x": 0.708,
+          "y": 0.677
+        }
+      }
+    },
+    {
+      "word": "art",
+      "entryGuid": "039b8931-2f84-5f42-9741-c4c132213c2f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "美術",
+      "interaction": {
+        "label": {
+          "x": 0.855,
+          "y": 0.045
+        },
+        "object": {
+          "x": 0.925,
+          "y": 0.145
+        }
+      }
+    },
+    {
+      "word": "glue",
+      "entryGuid": "1163f3bc-1084-51e0-9763-76068bec6149",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "膠水",
+      "interaction": {
+        "label": {
+          "x": 0.575,
+          "y": 0.812
+        },
+        "object": {
+          "x": 0.58,
+          "y": 0.656
+        }
+      }
+    },
+    {
+      "word": "shape",
+      "entryGuid": "50d6285e-1e17-578e-8055-ec4d9e7d2af2",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "形狀",
+      "interaction": {
+        "label": {
+          "x": 0.799,
+          "y": 0.861
+        },
+        "object": {
+          "x": 0.708,
+          "y": 0.677
+        }
+      }
+    },
+    {
+      "word": "flower",
+      "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "花朵",
+      "interaction": {
+        "label": {
+          "x": 0.154,
+          "y": 0.188
+        },
+        "object": {
+          "x": 0.112,
+          "y": 0.337
+        }
+      }
+    },
+    {
+      "word": "yellow",
+      "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "黃色的",
+      "interaction": {
+        "label": {
+          "x": 0.207,
+          "y": 0.14
+        },
+        "object": {
+          "x": 0.303,
+          "y": 0.125
+        }
+      }
+    },
+    {
+      "word": "square",
+      "entryGuid": "ddc4a248-569d-5fd4-ac61-864baf4a6d12",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "正方形的",
+      "interaction": {
+        "label": {
+          "x": 0.701,
+          "y": 0.861
+        },
+        "object": {
+          "x": 0.714,
+          "y": 0.771
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "label": {
+          "x": 0.438,
+          "y": 0.924
+        },
+        "object": {
+          "x": 0.48,
+          "y": 0.871
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "In art class, we sit around a large table. There is paint, a brush, and paper in front of me. I use a crayon to draw a yellow flower. My friend draws a colorful garden beside my picture. Then I cut a round shape out of paper. I also make a square piece for a little house. We use glue to put our work on a big sheet. Our teacher helps us find a place on the wall. We stand back and smile at our work together.",
+    "textZh": "美術課上，我們圍著一張大桌子坐。我面前有顏料、筆刷和紙。我用蠟筆畫一朵黃色的花。朋友在我的圖旁畫了一個色彩繽紛的花園。接著我從紙上剪出一個圓形。我也做一片正方形紙，拿來做小房子。我們用膠水把作品貼在一大張紙上。老師幫我們在牆上找個位置。我們一起退後站著，對自己的作品微笑。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "In art class, we sit around a large table.",
+        "zh": "美術課上，我們圍著一張大桌子坐。",
+        "wordLinks": [
+          {
+            "surface": "In",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "art",
+            "word": "art",
+            "entryGuid": "039b8931-2f84-5f42-9741-c4c132213c2f",
+            "isTarget": true,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "class",
+            "word": "class",
+            "entryGuid": "1316631b-5665-507a-98d0-2d313582c3bd",
+            "isTarget": false,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "around",
+            "word": "around",
+            "entryGuid": "5b1ade62-c054-562e-b689-f5e03e978bab",
+            "isTarget": false,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 28,
+            "end": 29
+          },
+          {
+            "surface": "large",
+            "word": "large",
+            "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+            "isTarget": false,
+            "start": 30,
+            "end": 35
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 36,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "There is paint, a brush, and paper in front of me.",
+        "zh": "我面前有顏料、筆刷和紙。",
+        "wordLinks": [
+          {
+            "surface": "There",
+            "word": "there",
+            "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "paint",
+            "word": "paint",
+            "entryGuid": "548b80a3-443a-54d4-9e37-e9e2a87bffea",
+            "isTarget": true,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 16,
+            "end": 17
+          },
+          {
+            "surface": "brush",
+            "word": "brush",
+            "entryGuid": "8204f9f0-cecc-5bc8-89ba-42a5d4fd1173",
+            "isTarget": true,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "paper",
+            "word": "paper",
+            "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "front",
+            "word": "front",
+            "entryGuid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+            "isTarget": false,
+            "start": 38,
+            "end": 43
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 44,
+            "end": 46
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 47,
+            "end": 49
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "I use a crayon to draw a yellow flower.",
+        "zh": "我用蠟筆畫一朵黃色的花。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "crayon",
+            "word": "crayon",
+            "entryGuid": "72dd4341-6b20-59cf-8118-3a57f36fca94",
+            "isTarget": true,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "draw",
+            "word": "draw",
+            "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+            "isTarget": true,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 23,
+            "end": 24
+          },
+          {
+            "surface": "yellow",
+            "word": "yellow",
+            "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+            "isTarget": true,
+            "start": 25,
+            "end": 31
+          },
+          {
+            "surface": "flower",
+            "word": "flower",
+            "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+            "isTarget": true,
+            "start": 32,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "My friend draws a colorful garden beside my picture.",
+        "zh": "朋友在我的圖旁畫了一個色彩繽紛的花園。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "friend",
+            "word": "friend",
+            "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "draws",
+            "word": "draw",
+            "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+            "isTarget": true,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 16,
+            "end": 17
+          },
+          {
+            "surface": "colorful",
+            "word": "colorful",
+            "entryGuid": "26bd6701-0e1d-50c0-b7bf-96397c0cc230",
+            "isTarget": true,
+            "start": 18,
+            "end": 26
+          },
+          {
+            "surface": "garden",
+            "word": "garden",
+            "entryGuid": "d4a6e961-4ac9-5e14-af6c-7cff536b0f53",
+            "isTarget": false,
+            "start": 27,
+            "end": 33
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 34,
+            "end": 40
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 41,
+            "end": 43
+          },
+          {
+            "surface": "picture",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": false,
+            "start": 44,
+            "end": 51
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "Then I cut a round shape out of paper.",
+        "zh": "接著我從紙上剪出一個圓形。",
+        "wordLinks": [
+          {
+            "surface": "Then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "surface": "cut",
+            "word": "cut",
+            "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+            "isTarget": true,
+            "start": 7,
+            "end": 10
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 11,
+            "end": 12
+          },
+          {
+            "surface": "round",
+            "word": "round",
+            "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+            "isTarget": true,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "shape",
+            "word": "shape",
+            "entryGuid": "50d6285e-1e17-578e-8055-ec4d9e7d2af2",
+            "isTarget": true,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "out",
+            "word": "out",
+            "entryGuid": "54bce296-b4a0-5f4e-be4a-0a012bc9ce07",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "paper",
+            "word": "paper",
+            "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+            "isTarget": true,
+            "start": 32,
+            "end": 37
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "I also make a square piece for a little house.",
+        "zh": "我也做一片正方形紙，拿來做小房子。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "make",
+            "word": "make",
+            "entryGuid": "a780251a-295b-5786-867c-9f8ac8d23036",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 12,
+            "end": 13
+          },
+          {
+            "surface": "square",
+            "word": "square",
+            "entryGuid": "ddc4a248-569d-5fd4-ac61-864baf4a6d12",
+            "isTarget": true,
+            "start": 14,
+            "end": 20
+          },
+          {
+            "surface": "piece",
+            "word": "piece",
+            "entryGuid": "ca76c704-9258-57a0-b64d-95fb233021c5",
+            "isTarget": false,
+            "start": 21,
+            "end": 26
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 31,
+            "end": 32
+          },
+          {
+            "surface": "little",
+            "word": "little",
+            "entryGuid": "58f73838-9a29-5a84-94c0-54188c22658f",
+            "isTarget": false,
+            "start": 33,
+            "end": 39
+          },
+          {
+            "surface": "house",
+            "word": "house",
+            "entryGuid": "ada3994d-7136-5f2b-a00e-8559f10fdfa4",
+            "isTarget": false,
+            "start": 40,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "We use glue to put our work on a big sheet.",
+        "zh": "我們用膠水把作品貼在一大張紙上。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "glue",
+            "word": "glue",
+            "entryGuid": "1163f3bc-1084-51e0-9763-76068bec6149",
+            "isTarget": true,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "put",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 15,
+            "end": 18
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "work",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 23,
+            "end": 27
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 31,
+            "end": 32
+          },
+          {
+            "surface": "big",
+            "word": "big",
+            "entryGuid": "835376ac-bc57-5996-beba-2b63de212c86",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "sheet",
+            "word": "sheet",
+            "entryGuid": "ba7aaf79-c0af-5976-884c-f018d0ba390b",
+            "isTarget": false,
+            "start": 37,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "Our teacher helps us find a place on the wall.",
+        "zh": "老師幫我們在牆上找個位置。",
+        "wordLinks": [
+          {
+            "surface": "Our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": false,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "surface": "helps",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 18,
+            "end": 20
+          },
+          {
+            "surface": "find",
+            "word": "find",
+            "entryGuid": "c2e379f6-5361-5af7-9538-bb3754c11c0c",
+            "isTarget": false,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "place",
+            "word": "place",
+            "entryGuid": "b880b5c6-c573-5bdd-917f-c01f1fa25142",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 34,
+            "end": 36
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "surface": "wall",
+            "word": "wall",
+            "entryGuid": "d27a390f-bc58-5875-a9cf-8fc78602e1c5",
+            "isTarget": false,
+            "start": 41,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "We stand back and smile at our work together.",
+        "zh": "我們一起退後站著，對自己的作品微笑。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "stand",
+            "word": "stand",
+            "entryGuid": "c159bec5-f00f-522b-8ac1-34ff583d7696",
+            "isTarget": false,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "surface": "back",
+            "word": "back",
+            "entryGuid": "79052125-6cc1-55c6-80e6-91ca929b5ccd",
+            "isTarget": false,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 14,
+            "end": 17
+          },
+          {
+            "surface": "smile",
+            "word": "smile",
+            "entryGuid": "94b20084-3dfd-548a-b5c9-eceab251ba3f",
+            "isTarget": false,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "work",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 36,
+            "end": 44
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/08-art-class-v1/base.png",
+      "sha256": "ea0c00373fd5818e5346beef360615fda6ab4f78b84471c55f839359c914f34b",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/art-class/r1/09eeb3d17582e855/story-7a4b244a1daaa2be.mp3",
+      "sha256": "1db43593c14f757f352f1ba2010bba64a2d4c3425272c73716489a030516493c",
+      "language": "en",
+      "textSha256": "7a4b244a1daaa2be6a56d605b23367e9ffc2c2a5780c0e0a0fd876a9639a8198",
+      "durationSeconds": 40.368,
+      "bytes": 645932,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "cli-visually-reviewed",
+      "method": "Codex CLI",
+      "sceneDescriptionZh": "美術教室桌上分區擺放顏料、筆刷、蠟筆和紙。一位孩子畫圖，另一位剪出圓形紙片；牆上彩色作品與單色作品並排。增加膠水瓶、方形紙片與黄色花朵，剪刀只保留輔助道具不列目標。",
+      "reviewPath": "output/imagegen/basic-advance-01/08-art-class-v1/image-review.json",
+      "acceptancePath": "output/imagegen/basic-advance-01/08-art-class-v1/image-acceptance.json"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "target-fifteen-only"
+    }
+  },
+  "contentReview": {
+    "status": "text-prepared-awaiting-media-review",
+    "notes": [
+      "paint 本次取顏料名詞，brush 取繪畫筆刷。",
+      "剪刀是 cut 的輔助道具；scissors 屬 expert，不列為目標標籤。",
+      "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+    ]
+  }
+}

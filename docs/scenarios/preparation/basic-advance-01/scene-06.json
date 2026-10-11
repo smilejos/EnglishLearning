@@ -1,0 +1,181 @@
+{
+  "id": "06",
+  "scenarioKey": "classroom-group-work",
+  "titleZh": "課堂小組活動",
+  "descriptionZh": "教室兩組學生圍桌工作，前景一組討論，另一組寫筆記。桌上的鉛筆與筆記本放大呈現；忙碌組同時操作材料，安靜組有學生用手勢提醒輕聲。增加老師、椅子、直尺與小紙屋，學校及答案由故事輔助辨義。",
+  "targets": [
+    {
+      "word": "desk",
+      "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書桌",
+      "visualCueZh": "前景露出學生桌的桌面、桌腳與抽屜。"
+    },
+    {
+      "word": "notebook",
+      "entryGuid": "299ab06d-b405-5bc0-ba87-6b565483aa90",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "筆記本",
+      "visualCueZh": "桌面放打開的線裝筆記本，頁面無可讀文字。"
+    },
+    {
+      "word": "pencil",
+      "entryGuid": "35748892-bcfc-5557-b955-75559b05348d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "鉛筆",
+      "visualCueZh": "筆記本旁放長鉛筆，削尖筆頭清楚可見。"
+    },
+    {
+      "word": "group",
+      "entryGuid": "6421725c-8f90-57ad-9995-cff9922e097b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "團體",
+      "visualCueZh": "左側三名孩子圍坐一桌形成一個小組。"
+    },
+    {
+      "word": "write",
+      "entryGuid": "e81f01ab-11c0-56b9-af5e-bf59f547c0df",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "書寫",
+      "visualCueZh": "前景孩子手握鉛筆，筆尖接觸筆記本頁面。"
+    },
+    {
+      "word": "discuss",
+      "entryGuid": "10dd911e-5fa0-5697-9ff3-181f5fa3c7b7",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "討論",
+      "visualCueZh": "兩位學生面向同一張圖，一人指圖、一人回應手勢。"
+    },
+    {
+      "word": "quiet",
+      "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "安靜的",
+      "visualCueZh": "右側一名學生把食指輕放嘴前，其餘同學閉嘴閱讀。"
+    },
+    {
+      "word": "busy",
+      "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "忙碌的",
+      "visualCueZh": "左側同組孩子同時寫字、整理材料和傳遞紙張。"
+    },
+    {
+      "word": "school",
+      "entryGuid": "af70f279-c3ca-5288-b3e7-be0694b46cd4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "學校",
+      "visualCueZh": "窗外可見校舍與操場，教室仍是主要場景。"
+    },
+    {
+      "word": "teacher",
+      "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "老師",
+      "visualCueZh": "成人老師站在兩組学生之間，協助小組活動。"
+    },
+    {
+      "word": "student",
+      "entryGuid": "bf3f1240-42b3-51d5-9f1a-74405d8c0eeb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "學生",
+      "visualCueZh": "前景學生坐在桌旁，正參與小組活動。"
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "visualCueZh": "桌旁椅子露出椅背和椅腳，沒有被書桌完全遮住。"
+    },
+    {
+      "word": "ruler",
+      "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "尺",
+      "visualCueZh": "桌上放一把有刻度但無文字的直尺。"
+    },
+    {
+      "word": "answer",
+      "entryGuid": "26272a3d-d299-5669-9c48-e360417c9d69",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "答案",
+      "visualCueZh": "學生以鉛筆指向自己完成的簡單圖形答案，仍需故事輔助。"
+    },
+    {
+      "word": "small",
+      "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "小的",
+      "visualCueZh": "小組做出小紙屋，旁邊大紙屋作同類大小對比。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "At school, our teacher gives each group a small job.",
+      "zh": "在學校，老師給每個小組一個小任務。"
+    },
+    {
+      "en": "I sit on a chair and move close to the desk.",
+      "zh": "我坐在椅子上，移近書桌。"
+    },
+    {
+      "en": "There is a notebook, a pencil, and a ruler before me.",
+      "zh": "我面前有筆記本、鉛筆和尺。"
+    },
+    {
+      "en": "We are busy making a little house out of paper.",
+      "zh": "我們忙著用紙做一棟小房子。"
+    },
+    {
+      "en": "I write our idea while the other student draws.",
+      "zh": "我寫下我們的想法，另一位學生畫圖。"
+    },
+    {
+      "en": "We discuss the size of the house and the door.",
+      "zh": "我們討論房子和門的大小。"
+    },
+    {
+      "en": "Then the room is quiet while everyone thinks again.",
+      "zh": "接著大家再次思考，教室安靜下來。"
+    },
+    {
+      "en": "Our group finds an answer and shows the teacher.",
+      "zh": "我們的小組找出答案，拿給老師看。"
+    },
+    {
+      "en": "She smiles, and we are ready to try our idea.",
+      "zh": "她微笑，我們準備試試自己的想法。"
+    }
+  ],
+  "aliases": {
+    "gives": "give",
+    "is": "be",
+    "are": "be",
+    "making": "make",
+    "draws": "draw",
+    "thinks": "think",
+    "finds": "find",
+    "shows": "show",
+    "smiles": "smile"
+  },
+  "reviewNotes": [
+    "quiet 與 discuss 僅由互動推知；單張無聲圖不能保證使用者正確辨認，需審圖或附練習提示。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

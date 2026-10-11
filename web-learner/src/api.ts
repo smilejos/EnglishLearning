@@ -81,6 +81,9 @@ export function listScenarios(signal?: AbortSignal): Promise<{ scenarios: Scenar
 export function getScenario(key: string, signal?: AbortSignal): Promise<ScenarioDetail> {
   return req(`/scenarios/${encodeURIComponent(key)}`, { signal });
 }
+export function getScenarioRevision(key: string, revision: number, signal?: AbortSignal): Promise<ScenarioDetail> {
+  return req(`/scenarios/${encodeURIComponent(key)}/revisions/${revision}`, { signal });
+}
 export function getWordbankEntry(guid: string, signal?: AbortSignal): Promise<WordbankEntry> {
   return req(`/wordbank/entries/${encodeURIComponent(guid)}`, { signal });
 }

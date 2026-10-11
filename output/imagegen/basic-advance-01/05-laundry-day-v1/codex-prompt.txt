@@ -1,0 +1,66 @@
+使用 Codex CLI 的原生 image_generation 工具，為「05 洗衣與曬衣」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/05-laundry-day-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/05-laundry-day-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/05-laundry-day-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+洗衣區前景放洗衣籃與肥皂，一人清洗衣服，另一人把襯衫掛上曬衣繩。左側滴水的衣服與右側已乾衣物分區，襪子掛在容易辨認的位置。加入洗衣機、毛巾、洗衣水盆及日照線索；乾濕衣物仍分區。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. shirt (n; 襯衫): 中央衣繩掛一件有衣領、鈕扣與長袖的襯衫。
+2. sock (n; 襪子): 衣繩前端掛一隻清楚有腳跟與腳尖形狀的襪子。
+3. basket (n; 籃子): 前景放開口洗衣籃，籃體不被衣服完全蓋住。
+4. soap (n; 肥皂): 洗衣盆旁放一塊長方形肥皂，表面有泡沫。
+5. wash (v; 清洗): 人物把衣服放在水盆中搓洗，手部與泡沫可見。
+6. hang (v; 懸掛): 另一人正用衣夾把襯衫上緣固定到衣繩。
+7. wet (adj; 濕的): 左側衣物顏色較深且向下滴水。
+8. dry (adj; 乾的): 右側乾衣物沒有水滴，已整理好等待收入籃中。
+9. machine (n; 機器): 洗衣區後方放洗衣機，圓門與控制按鈕可見但無文字。
+10. towel (n; 毛巾): 曬衣繩右邊有一條寬毛巾，與襯衫隔開。
+11. clothes (n; 衣服): 籃中和繩上多種衣物共同作為一個衣服區域。
+12. line (n; 繩子): 兩根柱子之間水平拉著曬衣繩，空白繩段清楚可見。
+13. sun (n; 太陽): 背景天空露出太陽，與人物保持距離。
+14. bright (adj; 明亮的): 曬衣區地面有清晰的陽光與陰影。
+15. water (n; 水): 前景洗衣盆內有水，水面清楚可見。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+It is a bright morning, and the sun is high.
+這是個明亮的早晨，太陽高掛。
+We take our dirty clothes to the washing machine.
+我們把髒衣服拿到洗衣機旁。
+I find a sock at the bottom of the basket.
+我在籃子底找到一隻襪子。
+My mother helps me wash it with soap and water.
+媽媽幫我用肥皂和水洗它。
+Then we hang a shirt on the line outside.
+接著我們把襯衫掛在外面的曬衣繩上。
+The shirt is still wet, and water falls to the ground.
+襯衫還是濕的，水滴落到地上。
+A dry towel is ready on the other side.
+另一邊有一條已經乾的毛巾。
+I take it down and carry it into the house.
+我把它取下，拿進屋裡。
+We finish our work before it is time for lunch.
+午餐時間前，我們完成了工作。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/05-laundry-day-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

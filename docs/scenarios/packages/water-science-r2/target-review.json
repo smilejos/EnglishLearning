@@ -1,0 +1,408 @@
+{
+  "id": "09",
+  "scenarioKey": "water-science",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/09-water-science-v1/base-refined-2.png",
+    "sha256": "9c1094a5fae1afe9d9d7f7d43b4dfdea2f263b1ca1cdb1a079dc3d4d159d6151",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "bottle",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側尺旁透明水瓶。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.294,
+          "y": 0.483
+        },
+        "label": {
+          "x": 0.295,
+          "y": 0.76
+        }
+      }
+    },
+    {
+      "word": "water",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左前景水壺中的水。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.127,
+          "y": 0.757
+        },
+        "label": {
+          "x": 0.12,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "glass",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央偏右裝水的玻璃杯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.677,
+          "y": 0.75
+        },
+        "label": {
+          "x": 0.705,
+          "y": 0.855
+        }
+      }
+    },
+    {
+      "word": "ruler",
+      "teachingPos": "n",
+      "visualEvidenceZh": "男孩豎直拿著的尺。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.249,
+          "y": 0.424
+        },
+        "label": {
+          "x": 0.2,
+          "y": 0.2
+        }
+      }
+    },
+    {
+      "word": "drop",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央桌面單獨一滴水。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.404,
+          "y": 0.717
+        },
+        "label": {
+          "x": 0.398,
+          "y": 0.81
+        }
+      }
+    },
+    {
+      "word": "cup",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側有把手的杯子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.933,
+          "y": 0.802
+        },
+        "label": {
+          "x": 0.925,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "science",
+      "teachingPos": "n",
+      "visualEvidenceZh": "量水與混色的科學活動。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.035
+        },
+        "label": {
+          "x": 0.615,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "table",
+      "teachingPos": "n",
+      "visualEvidenceZh": "實驗材料放置的木桌。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.497,
+          "y": 0.919
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "teacher",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側陪同觀察的老師。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.793,
+          "y": 0.443
+        },
+        "label": {
+          "x": 0.83,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "word": "student",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央操作混色的學生。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.528,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.435,
+          "y": 0.585
+        }
+      }
+    },
+    {
+      "word": "color",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央杯中藍黃混成綠色的顏色。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.544,
+          "y": 0.693
+        },
+        "label": {
+          "x": 0.475,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "result",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央綠色水是混色結果。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.545,
+          "y": 0.73
+        },
+        "label": {
+          "x": 0.545,
+          "y": 0.865
+        }
+      }
+    },
+    {
+      "word": "level",
+      "teachingPos": "n",
+      "visualEvidenceZh": "透明水瓶中的水平水面。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.294,
+          "y": 0.436
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.35
+        }
+      }
+    },
+    {
+      "word": "height",
+      "teachingPos": "n",
+      "visualEvidenceZh": "尺與水瓶並排可量水面高度。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.3,
+          "y": 0.433
+        },
+        "label": {
+          "x": 0.365,
+          "y": 0.435
+        }
+      }
+    },
+    {
+      "word": "liquid",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央玻璃杯內正在混合的液體。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.548,
+          "y": 0.725
+        },
+        "label": {
+          "x": 0.62,
+          "y": 0.83
+        }
+      }
+    },
+    {
+      "word": "empty",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "右前方未裝水的透明杯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.796,
+          "y": 0.756
+        },
+        "label": {
+          "x": 0.8,
+          "y": 0.59
+        }
+      }
+    },
+    {
+      "word": "full",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "右前方另一透明杯裝滿清水，和空杯對比。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.677,
+          "y": 0.738
+        },
+        "label": {
+          "x": 0.68,
+          "y": 0.565
+        }
+      }
+    },
+    {
+      "word": "careful",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "學生控制手中容器、老師近旁觀察。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.651,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.775,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "blue",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "學生左手容器的藍水，混色活動必要顏色。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.507
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.455
+        }
+      }
+    },
+    {
+      "word": "yellow",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "學生右手容器的黃水，混色活動必要顏色。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.605,
+          "y": 0.546
+        },
+        "label": {
+          "x": 0.675,
+          "y": 0.505
+        }
+      }
+    },
+    {
+      "word": "measure",
+      "teachingPos": "v",
+      "visualEvidenceZh": "男孩用尺對照瓶中水位。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.251,
+          "y": 0.45
+        },
+        "label": {
+          "x": 0.29,
+          "y": 0.16
+        }
+      }
+    },
+    {
+      "word": "mix",
+      "teachingPos": "v",
+      "visualEvidenceZh": "藍水與黃水同時進入中央玻璃杯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.544,
+          "y": 0.626
+        },
+        "label": {
+          "x": 0.555,
+          "y": 0.68
+        }
+      }
+    },
+    {
+      "word": "add",
+      "teachingPos": "v",
+      "visualEvidenceZh": "學生將黃色水加入中央杯中。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.601,
+          "y": 0.555
+        },
+        "label": {
+          "x": 0.625,
+          "y": 0.655
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 3
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 2,
+    "storyTokenCount": 150,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "圖面直接支援measure/mix/add共3個；不追加未演出的寫記錄或泛用動作。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:25:40.321Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "9c1094a5fae1afe9d9d7f7d43b4dfdea2f263b1ca1cdb1a079dc3d4d159d6151",
+  "targetsSha256": "79b03c4e5e0e57cc5117990f0643a62f8538f4ba019965b401c9d44f4f3a472b",
+  "storySha256": "1eb3050559bf14b33abef2f1a256c793b33eadd95400d478d0a53d9b8044aec4",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}

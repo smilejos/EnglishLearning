@@ -1,0 +1,424 @@
+{
+  "id": "06",
+  "scenarioKey": "classroom-group-work",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/06-classroom-group-work-v1/base-refined-2.png",
+    "sha256": "0f9e2378e910b9a35c631076f92f5fd80828392eda99395a37e18dff5e309847",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "desk",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景學生併桌工作。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.344,
+          "y": 0.821
+        },
+        "label": {
+          "x": 0.23,
+          "y": 0.82
+        }
+      }
+    },
+    {
+      "word": "notebook",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左前方翻開的筆記本。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.203,
+          "y": 0.66
+        },
+        "label": {
+          "x": 0.175,
+          "y": 0.73
+        }
+      }
+    },
+    {
+      "word": "pencil",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側男孩手中的鉛筆。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.165,
+          "y": 0.58
+        },
+        "label": {
+          "x": 0.13,
+          "y": 0.56
+        }
+      }
+    },
+    {
+      "word": "group",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景三位學生一起工作。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.39,
+          "y": 0.595
+        },
+        "label": {
+          "x": 0.325,
+          "y": 0.255
+        }
+      }
+    },
+    {
+      "word": "school",
+      "teachingPos": "n",
+      "visualEvidenceZh": "窗外可見校舍，故事交代在學校。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.73,
+          "y": 0.225
+        },
+        "label": {
+          "x": 0.73,
+          "y": 0.105
+        }
+      }
+    },
+    {
+      "word": "teacher",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央俯身協助學生的老師。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.406,
+          "y": 0.282
+        },
+        "label": {
+          "x": 0.46,
+          "y": 0.125
+        }
+      }
+    },
+    {
+      "word": "student",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側正在寫字的學生。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.13,
+          "y": 0.489
+        },
+        "label": {
+          "x": 0.055,
+          "y": 0.64
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側露出椅背與椅腳的椅子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.916,
+          "y": 0.73
+        },
+        "label": {
+          "x": 0.915,
+          "y": 0.8
+        }
+      }
+    },
+    {
+      "word": "ruler",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景桌上長尺。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.354,
+          "y": 0.739
+        },
+        "label": {
+          "x": 0.385,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "answer",
+      "teachingPos": "n",
+      "visualEvidenceZh": "桌上房屋圖，故事中是小組對老師問題的答案。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.395,
+          "y": 0.668
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.645
+        }
+      }
+    },
+    {
+      "word": "paper",
+      "teachingPos": "n",
+      "visualEvidenceZh": "女孩拿著的房屋圖紙。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.405,
+          "y": 0.536
+        },
+        "label": {
+          "x": 0.45,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "word": "book",
+      "teachingPos": "n",
+      "visualEvidenceZh": "模型後方堆疊的書。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.549,
+          "y": 0.642
+        },
+        "label": {
+          "x": 0.595,
+          "y": 0.53
+        }
+      }
+    },
+    {
+      "word": "model",
+      "teachingPos": "n",
+      "visualEvidenceZh": "桌上立體房屋模型。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.487,
+          "y": 0.644
+        },
+        "label": {
+          "x": 0.495,
+          "y": 0.79
+        }
+      }
+    },
+    {
+      "word": "house",
+      "teachingPos": "n",
+      "visualEvidenceZh": "女孩拿著紙上的房屋。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.405,
+          "y": 0.536
+        },
+        "label": {
+          "x": 0.37,
+          "y": 0.47
+        }
+      }
+    },
+    {
+      "word": "window",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右後方大片窗框。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.698,
+          "y": 0.195
+        },
+        "label": {
+          "x": 0.915,
+          "y": 0.1
+        }
+      }
+    },
+    {
+      "word": "quiet",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "後排女孩食指放在唇前提醒安靜。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.724,
+          "y": 0.437
+        },
+        "label": {
+          "x": 0.805,
+          "y": 0.31
+        }
+      }
+    },
+    {
+      "word": "busy",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "前景學生畫圖、指圖與討論。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.337,
+          "y": 0.492
+        },
+        "label": {
+          "x": 0.37,
+          "y": 0.77
+        }
+      }
+    },
+    {
+      "word": "small",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "前景兩個模型中較小的一個。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.558,
+          "y": 0.714
+        },
+        "label": {
+          "x": 0.6,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "helpful",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "老師俯身協助學生。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.425,
+          "y": 0.415
+        },
+        "label": {
+          "x": 0.445,
+          "y": 0.375
+        }
+      }
+    },
+    {
+      "word": "different",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "兩個模型大小不同。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.511,
+          "y": 0.678
+        },
+        "label": {
+          "x": 0.66,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "write",
+      "teachingPos": "v",
+      "visualEvidenceZh": "左側學生在筆記本上寫。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.167,
+          "y": 0.618
+        },
+        "label": {
+          "x": 0.1,
+          "y": 0.705
+        }
+      }
+    },
+    {
+      "word": "discuss",
+      "teachingPos": "v",
+      "visualEvidenceZh": "前景女孩指圖、男孩用手表達。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.393,
+          "y": 0.523
+        },
+        "label": {
+          "x": 0.61,
+          "y": 0.43
+        }
+      }
+    },
+    {
+      "word": "draw",
+      "teachingPos": "v",
+      "visualEvidenceZh": "桌上與女孩手中的房屋線條圖。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.406,
+          "y": 0.66
+        },
+        "label": {
+          "x": 0.33,
+          "y": 0.58
+        }
+      }
+    },
+    {
+      "word": "compare",
+      "teachingPos": "v",
+      "visualEvidenceZh": "桌上並列不同尺寸房屋，故事比較大小。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.521,
+          "y": 0.665
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.91
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 4
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 1,
+    "storyTokenCount": 143,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "前後動作可在故事出現，但圖上沒有直接動作證據，未為湊滿5v列入target。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:22:40.802Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "0f9e2378e910b9a35c631076f92f5fd80828392eda99395a37e18dff5e309847",
+  "targetsSha256": "e60050103e7356b77dbd096a3de936b975b93affb9872449483b5bf3703fa998",
+  "storySha256": "ee7032e91844a04302f7e5e2cd0242c4e12db61d09e6c9512652d37ff3ea91e9",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}

@@ -1,0 +1,66 @@
+使用 Codex CLI 的原生 image_generation 工具，為「03 家庭一起用餐」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/03-family-dinner-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/03-family-dinner-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/03-family-dinner-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+一家人在餐桌前吃晚餐，飯碗與餐具分開擺放，彼此不遮擋。一人將一盤菜推向另一人分享，另兩人分別呈現準備開吃與吃飽後的姿勢。增設湯碗、雞肉、品嚐人物與窗外暮色，保留兩種飢飽狀態。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. plate (n; 盤子): 桌前放白色扁平圓盤，盤沿完整可見。
+2. fork (n; 叉子): 盤子左側放四齒叉子，與湯匙隔開。
+3. spoon (n; 湯匙): 盤子右側放有圓凹匙面的湯匙。
+4. rice (n; 米飯): 中央飯碗盛白飯，清楚畫出幾粒米的形狀。
+5. eat (v; 吃): 一位家人把叉上的食物送到張開的嘴邊。
+6. share (v; 分享): 另一位家人把盛菜的盤子推向同桌的人，對方伸手接。
+7. hungry (adj; 飢餓的): 還沒開始吃的孩子一手摸肚子、一手伸向食物。
+8. full (adj; 飽的): 已吃完的家人面前有空盤，摸著肚子並擺手婉拒加菜。
+9. family (n; 家人): 餐桌四周坐著不同年齡的家人，一同用餐。
+10. soup (n; 湯): 桌前碗內有湯汁和少量蔬菜，與米飯分開。
+11. bowl (n; 碗): 前景圓碗的碗沿與外側清楚可见。
+12. chicken (n; 雞肉): 中央餐盤有煮熟的雞腿，保留肉與骨的輪廓。
+13. dinner (n; 晚餐): 窗外暮色與餐桌準備的完整餐點共同提示晚餐。
+14. taste (v; 品嚐): 一人把少量湯放入口中，湯匙停在嘴邊。
+15. happy (adj; 快樂的): 餐桌旁孩子開口微笑、姿勢放鬆。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+My family sits together at the table for dinner.
+我的家人一起坐在桌邊吃晚餐。
+I am hungry after a long day at school.
+上了一整天的課，我肚子餓了。
+There is rice on my plate and soup in my bowl.
+我的盤子裡有米飯，碗裡有湯。
+I use a spoon to taste the soup first.
+我先用湯匙品嚐湯。
+Then I take my fork and eat some chicken.
+接著我拿起叉子，吃一些雞肉。
+We share the food and talk about our day.
+我們分享食物，聊聊今天的事。
+My little brother asks for another small bowl of rice.
+弟弟想再吃一小碗米飯。
+Soon I am full, so I put my spoon down.
+很快我吃飽了，所以放下湯匙。
+Everyone is happy to spend this time together.
+大家都很開心能一起度過這段時間。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/03-family-dinner-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

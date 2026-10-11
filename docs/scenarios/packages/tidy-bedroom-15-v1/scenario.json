@@ -1,0 +1,1101 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "tidy-bedroom",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "整理臥室",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 15,
+  "targets": [
+    {
+      "word": "bed",
+      "entryGuid": "cec13288-f8ee-50b2-be0e-f7753e716a08",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "床",
+      "interaction": {
+        "label": {
+          "x": 0.58,
+          "y": 0.72
+        },
+        "object": {
+          "x": 0.49,
+          "y": 0.61
+        }
+      }
+    },
+    {
+      "word": "pillow",
+      "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "枕頭",
+      "interaction": {
+        "label": {
+          "x": 0.545,
+          "y": 0.265
+        },
+        "object": {
+          "x": 0.543,
+          "y": 0.364
+        }
+      }
+    },
+    {
+      "word": "drawer",
+      "entryGuid": "e6770284-2e09-5312-829c-913dc55ea421",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "抽屜",
+      "interaction": {
+        "label": {
+          "x": 0.956,
+          "y": 0.602
+        },
+        "object": {
+          "x": 0.901,
+          "y": 0.538
+        }
+      }
+    },
+    {
+      "word": "closet",
+      "entryGuid": "35c6378b-2885-53a9-bd4b-100cebf8dfa0",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "衣櫥",
+      "interaction": {
+        "label": {
+          "x": 0.713,
+          "y": 0.218
+        },
+        "object": {
+          "x": 0.813,
+          "y": 0.208
+        }
+      }
+    },
+    {
+      "word": "put",
+      "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "放",
+      "interaction": {
+        "label": {
+          "x": 0.764,
+          "y": 0.807
+        },
+        "object": {
+          "x": 0.86,
+          "y": 0.465
+        }
+      }
+    },
+    {
+      "word": "clean",
+      "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "打掃",
+      "interaction": {
+        "label": {
+          "x": 0.189,
+          "y": 0.376
+        },
+        "object": {
+          "x": 0.141,
+          "y": 0.42
+        }
+      }
+    },
+    {
+      "word": "tidy",
+      "entryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "整潔的",
+      "interaction": {
+        "label": {
+          "x": 0.414,
+          "y": 0.229
+        },
+        "object": {
+          "x": 0.311,
+          "y": 0.264
+        }
+      }
+    },
+    {
+      "word": "dirty",
+      "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "髒的",
+      "interaction": {
+        "label": {
+          "x": 0.843,
+          "y": 0.951
+        },
+        "object": {
+          "x": 0.926,
+          "y": 0.746
+        }
+      }
+    },
+    {
+      "word": "blanket",
+      "entryGuid": "2582b0ca-1f00-5d30-bb76-338e4bfb0ad6",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "毛毯",
+      "interaction": {
+        "label": {
+          "x": 0.698,
+          "y": 0.721
+        },
+        "object": {
+          "x": 0.514,
+          "y": 0.482
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "interaction": {
+        "label": {
+          "x": 0.065,
+          "y": 0.826
+        },
+        "object": {
+          "x": 0.147,
+          "y": 0.581
+        }
+      }
+    },
+    {
+      "word": "toy",
+      "entryGuid": "70205063-21a7-5b16-a97e-a4115ee3008f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "玩具",
+      "interaction": {
+        "label": {
+          "x": 0.95,
+          "y": 0.295
+        },
+        "object": {
+          "x": 0.886,
+          "y": 0.466
+        }
+      }
+    },
+    {
+      "word": "floor",
+      "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "地板",
+      "interaction": {
+        "label": {
+          "x": 0.435,
+          "y": 0.951
+        },
+        "object": {
+          "x": 0.301,
+          "y": 0.941
+        }
+      }
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "interaction": {
+        "label": {
+          "x": 0.104,
+          "y": 0.126
+        },
+        "object": {
+          "x": 0.108,
+          "y": 0.221
+        }
+      }
+    },
+    {
+      "word": "blue",
+      "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "藍色的",
+      "interaction": {
+        "label": {
+          "x": 0.433,
+          "y": 0.729
+        },
+        "object": {
+          "x": 0.587,
+          "y": 0.488
+        }
+      }
+    },
+    {
+      "word": "white",
+      "entryGuid": "8ed80686-943c-580b-8615-b9bd80095157",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "白色的",
+      "interaction": {
+        "label": {
+          "x": 0.657,
+          "y": 0.296
+        },
+        "object": {
+          "x": 0.572,
+          "y": 0.363
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "My bedroom is dirty after a busy week at school. I open the window and let the morning light in. A white pillow lies on the bed beside a blue blanket. I put my toy in the drawer near the closet. Then I move the chair away from the window. My brother helps me clean the floor with water. We also make the bed and pick up our clothes. The room is tidy, and there is space to play. We sit down and enjoy the bright room together.",
+    "textZh": "在學校忙了一週後，我的臥室很髒。我打開窗戶，讓晨光照進來。床上有一個白色枕頭，旁邊是藍色毛毯。我把玩具放進衣櫥附近的抽屜。接著我把椅子從窗邊移開。哥哥幫我用水清理地板。我們也整理床鋪，撿起衣服。房間整潔了，也有空間可以玩。我們一起坐下，享受明亮的房間。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "My bedroom is dirty after a busy week at school.",
+        "zh": "在學校忙了一週後，我的臥室很髒。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "bedroom",
+            "word": "bedroom",
+            "entryGuid": "dcb9bcba-a35b-5113-824c-7c5952208e98",
+            "isTarget": false,
+            "start": 3,
+            "end": 10
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 11,
+            "end": 13
+          },
+          {
+            "surface": "dirty",
+            "word": "dirty",
+            "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+            "isTarget": true,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "after",
+            "word": "after",
+            "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+            "isTarget": false,
+            "start": 20,
+            "end": 25
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "busy",
+            "word": "busy",
+            "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "week",
+            "word": "week",
+            "entryGuid": "f6b99d2a-e039-5511-b562-61bd29dd7c55",
+            "isTarget": false,
+            "start": 33,
+            "end": 37
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 38,
+            "end": 40
+          },
+          {
+            "surface": "school",
+            "word": "school",
+            "entryGuid": "af70f279-c3ca-5288-b3e7-be0694b46cd4",
+            "isTarget": false,
+            "start": 41,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "I open the window and let the morning light in.",
+        "zh": "我打開窗戶，讓晨光照進來。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "open",
+            "word": "open",
+            "entryGuid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 7,
+            "end": 10
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": true,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "let",
+            "word": "let",
+            "entryGuid": "ce50b637-72c2-549c-a931-2f7d36846b80",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 30,
+            "end": 37
+          },
+          {
+            "surface": "light",
+            "word": "light",
+            "entryGuid": "854c9aa7-e65a-5c1e-9909-d829063e0720",
+            "isTarget": false,
+            "start": 38,
+            "end": 43
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 44,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "A white pillow lies on the bed beside a blue blanket.",
+        "zh": "床上有一個白色枕頭，旁邊是藍色毛毯。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "white",
+            "word": "white",
+            "entryGuid": "8ed80686-943c-580b-8615-b9bd80095157",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "pillow",
+            "word": "pillow",
+            "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+            "isTarget": true,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "lies",
+            "word": "lie",
+            "entryGuid": "5182ef14-94c5-5aa9-a304-4c7b75007f35",
+            "isTarget": false,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 20,
+            "end": 22
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "bed",
+            "word": "bed",
+            "entryGuid": "cec13288-f8ee-50b2-be0e-f7753e716a08",
+            "isTarget": true,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 31,
+            "end": 37
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 38,
+            "end": 39
+          },
+          {
+            "surface": "blue",
+            "word": "blue",
+            "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+            "isTarget": true,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "blanket",
+            "word": "blanket",
+            "entryGuid": "2582b0ca-1f00-5d30-bb76-338e4bfb0ad6",
+            "isTarget": true,
+            "start": 45,
+            "end": 52
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "I put my toy in the drawer near the closet.",
+        "zh": "我把玩具放進衣櫥附近的抽屜。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "put",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": true,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "toy",
+            "word": "toy",
+            "entryGuid": "70205063-21a7-5b16-a97e-a4115ee3008f",
+            "isTarget": true,
+            "start": 9,
+            "end": 12
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 16,
+            "end": 19
+          },
+          {
+            "surface": "drawer",
+            "word": "drawer",
+            "entryGuid": "e6770284-2e09-5312-829c-913dc55ea421",
+            "isTarget": true,
+            "start": 20,
+            "end": 26
+          },
+          {
+            "surface": "near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "closet",
+            "word": "closet",
+            "entryGuid": "35c6378b-2885-53a9-bd4b-100cebf8dfa0",
+            "isTarget": true,
+            "start": 36,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "Then I move the chair away from the window.",
+        "zh": "接著我把椅子從窗邊移開。",
+        "wordLinks": [
+          {
+            "surface": "Then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "surface": "move",
+            "word": "move",
+            "entryGuid": "6d943d82-d4c7-50c7-af4f-0471a858bd35",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 12,
+            "end": 15
+          },
+          {
+            "surface": "chair",
+            "word": "chair",
+            "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+            "isTarget": true,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "away",
+            "word": "away",
+            "entryGuid": "a38097b1-254e-5fb3-bbb6-f13f307443b5",
+            "isTarget": false,
+            "start": 22,
+            "end": 26
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": true,
+            "start": 36,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "My brother helps me clean the floor with water.",
+        "zh": "哥哥幫我用水清理地板。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "brother",
+            "word": "brother",
+            "entryGuid": "5d3ef66c-0a7c-5ad9-8647-021957e114df",
+            "isTarget": false,
+            "start": 3,
+            "end": 10
+          },
+          {
+            "surface": "helps",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 17,
+            "end": 19
+          },
+          {
+            "surface": "clean",
+            "word": "clean",
+            "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+            "isTarget": true,
+            "start": 20,
+            "end": 25
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "floor",
+            "word": "floor",
+            "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+            "isTarget": true,
+            "start": 30,
+            "end": 35
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 36,
+            "end": 40
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": false,
+            "start": 41,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "We also make the bed and pick up our clothes.",
+        "zh": "我們也整理床鋪，撿起衣服。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "make",
+            "word": "make",
+            "entryGuid": "a780251a-295b-5786-867c-9f8ac8d23036",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "bed",
+            "word": "bed",
+            "entryGuid": "cec13288-f8ee-50b2-be0e-f7753e716a08",
+            "isTarget": true,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "pick",
+            "word": "pick",
+            "entryGuid": "89f07fd1-2d5a-5850-aef1-483b2b57598a",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 30,
+            "end": 32
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "clothes",
+            "word": "clothes",
+            "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+            "isTarget": false,
+            "start": 37,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "The room is tidy, and there is space to play.",
+        "zh": "房間整潔了，也有空間可以玩。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "room",
+            "word": "room",
+            "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+            "isTarget": false,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 9,
+            "end": 11
+          },
+          {
+            "surface": "tidy",
+            "word": "tidy",
+            "entryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+            "isTarget": true,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "there",
+            "word": "there",
+            "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+            "isTarget": false,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "space",
+            "word": "space",
+            "entryGuid": "97f217f6-62ba-53b8-9b98-5bb81cd7dac5",
+            "isTarget": false,
+            "start": 31,
+            "end": 36
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "play",
+            "word": "play",
+            "entryGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "We sit down and enjoy the bright room together.",
+        "zh": "我們一起坐下，享受明亮的房間。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "down",
+            "word": "down",
+            "entryGuid": "451dcd82-9969-5473-b509-7f48b55049f6",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 12,
+            "end": 15
+          },
+          {
+            "surface": "enjoy",
+            "word": "enjoy",
+            "entryGuid": "c7f1f45f-8aeb-57bc-86d6-06b858354e08",
+            "isTarget": false,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "bright",
+            "word": "bright",
+            "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+            "isTarget": false,
+            "start": 26,
+            "end": 32
+          },
+          {
+            "surface": "room",
+            "word": "room",
+            "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+            "isTarget": false,
+            "start": 33,
+            "end": 37
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 38,
+            "end": 46
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/04-tidy-bedroom-v1/base.png",
+      "sha256": "34b1924ae0ef8efe0a8167ef203ab64eed9e3cc867ef4939b045f6449ac0796d",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/tidy-bedroom/r1/09eeb3d17582e855/story-59f390d5020d88ed.mp3",
+      "sha256": "25d0f003e3d87aeb82afccc8b8c12573e23b07abf141db511b4d442485771002",
+      "language": "en",
+      "textSha256": "59f390d5020d88edc3573dce0c5307a88cc69fb8f2e3154fac5494011aaa3621",
+      "durationSeconds": 31.584,
+      "bytes": 505388,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "cli-visually-reviewed",
+      "method": "Codex CLI",
+      "sceneDescriptionZh": "臥室中央露出床與枕頭，右側打開衣櫥與一格抽屜。孩子把玩具放進抽屜，另一人擦拭桌面；髒衣服堆與整理過的區域形成對比。增加床尾毛毯、窗戶、椅子、玩具與清理中的地板，藍白物件分區。",
+      "reviewPath": "output/imagegen/basic-advance-01/04-tidy-bedroom-v1/image-review.json",
+      "acceptancePath": "output/imagegen/basic-advance-01/04-tidy-bedroom-v1/image-acceptance.json"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "target-fifteen-only"
+    }
+  },
+  "contentReview": {
+    "status": "text-prepared-awaiting-media-review",
+    "notes": [
+      "tidy 本次取形容詞、clean 取動詞；避免兩個標籤都指同一處。",
+      "fold 屬 expert，改以 put 呈現整理動作。",
+      "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+    ]
+  }
+}

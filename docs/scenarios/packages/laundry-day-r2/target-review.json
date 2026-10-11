@@ -1,0 +1,424 @@
+{
+  "id": "05",
+  "scenarioKey": "laundry-day",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png",
+    "sha256": "c125ab5ac52798f7c4c72266087397786b0c2fde37cac47c78c617088bb58e60",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "shirt",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央滴水的襯衫。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.505,
+          "y": 0.354
+        },
+        "label": {
+          "x": 0.495,
+          "y": 0.56
+        }
+      }
+    },
+    {
+      "word": "sock",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左上曬衣繩上的襪子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.244,
+          "y": 0.205
+        },
+        "label": {
+          "x": 0.235,
+          "y": 0.08
+        }
+      }
+    },
+    {
+      "word": "basket",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左前景裝衣物的編織籃。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.152,
+          "y": 0.824
+        },
+        "label": {
+          "x": 0.125,
+          "y": 0.935
+        }
+      }
+    },
+    {
+      "word": "soap",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景有泡沫的肥皂塊。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.498,
+          "y": 0.888
+        },
+        "label": {
+          "x": 0.52,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "machine",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側洗衣機；故事明確稱 washing machine。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.105,
+          "y": 0.474
+        },
+        "label": {
+          "x": 0.115,
+          "y": 0.3
+        }
+      }
+    },
+    {
+      "word": "towel",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側曬衣繩的大毛巾。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.786,
+          "y": 0.35
+        },
+        "label": {
+          "x": 0.78,
+          "y": 0.57
+        }
+      }
+    },
+    {
+      "word": "clothes",
+      "teachingPos": "n",
+      "visualEvidenceZh": "籃中待洗衣服與繩上衣物。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.193,
+          "y": 0.733
+        },
+        "label": {
+          "x": 0.15,
+          "y": 0.605
+        }
+      }
+    },
+    {
+      "word": "line",
+      "teachingPos": "n",
+      "visualEvidenceZh": "穿過上方並吊掛衣物的曬衣繩。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.675,
+          "y": 0.187
+        },
+        "label": {
+          "x": 0.66,
+          "y": 0.125
+        }
+      }
+    },
+    {
+      "word": "sun",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右上明亮太陽。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.736,
+          "y": 0.063
+        },
+        "label": {
+          "x": 0.74,
+          "y": 0.13
+        }
+      }
+    },
+    {
+      "word": "water",
+      "teachingPos": "n",
+      "visualEvidenceZh": "大桶中的水與地上水滴。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.434,
+          "y": 0.739
+        },
+        "label": {
+          "x": 0.445,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "garden",
+      "teachingPos": "n",
+      "visualEvidenceZh": "庭院周圍花朵與植物。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.88,
+          "y": 0.59
+        },
+        "label": {
+          "x": 0.87,
+          "y": 0.83
+        }
+      }
+    },
+    {
+      "word": "tub",
+      "teachingPos": "n",
+      "visualEvidenceZh": "媽媽面前大型金屬洗衣桶，取大桶義而非浴缸。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.389,
+          "y": 0.77
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "mother",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側用手洗衣的媽媽。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.295,
+          "y": 0.492
+        },
+        "label": {
+          "x": 0.21,
+          "y": 0.35
+        }
+      }
+    },
+    {
+      "word": "child",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央幫忙曬衣的孩子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.601,
+          "y": 0.476
+        },
+        "label": {
+          "x": 0.685,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "word": "jeans",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側繩上仍在滴水的牛仔褲。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.37,
+          "y": 0.312
+        },
+        "label": {
+          "x": 0.375,
+          "y": 0.1
+        }
+      }
+    },
+    {
+      "word": "wet",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "中央襯衫有濕色塊與下滴水珠。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.503,
+          "y": 0.485
+        },
+        "label": {
+          "x": 0.435,
+          "y": 0.535
+        }
+      }
+    },
+    {
+      "word": "dry",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "右側衣物無濕色塊與滴水，故事說已曬乾。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.788,
+          "y": 0.36
+        },
+        "label": {
+          "x": 0.91,
+          "y": 0.42
+        }
+      }
+    },
+    {
+      "word": "bright",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "右上太陽与庭院日光。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.734,
+          "y": 0.071
+        },
+        "label": {
+          "x": 0.855,
+          "y": 0.065
+        }
+      }
+    },
+    {
+      "word": "full",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "左前方籃中多件衣服堆至籃口，上方露出衣物。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.153,
+          "y": 0.797
+        },
+        "label": {
+          "x": 0.075,
+          "y": 0.75
+        }
+      }
+    },
+    {
+      "word": "clean",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "右側曬好的毛巾，與待洗衣物的故事狀態對比。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.775,
+          "y": 0.41
+        },
+        "label": {
+          "x": 0.805,
+          "y": 0.36
+        }
+      }
+    },
+    {
+      "word": "wash",
+      "teachingPos": "v",
+      "visualEvidenceZh": "媽媽雙手在水中洗衣。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.322,
+          "y": 0.693
+        },
+        "label": {
+          "x": 0.28,
+          "y": 0.605
+        }
+      }
+    },
+    {
+      "word": "hang",
+      "teachingPos": "v",
+      "visualEvidenceZh": "孩子手扶衣架將襯衫掛上繩。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.545,
+          "y": 0.216
+        },
+        "label": {
+          "x": 0.6,
+          "y": 0.145
+        }
+      }
+    },
+    {
+      "word": "rub",
+      "teachingPos": "v",
+      "visualEvidenceZh": "媽媽雙手拿衣物在桶中搓洗。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.329,
+          "y": 0.696
+        },
+        "label": {
+          "x": 0.405,
+          "y": 0.6
+        }
+      }
+    },
+    {
+      "word": "help",
+      "teachingPos": "v",
+      "visualEvidenceZh": "孩子協助媽媽曬衣。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.596,
+          "y": 0.402
+        },
+        "label": {
+          "x": 0.665,
+          "y": 0.61
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 4
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 1,
+    "storyTokenCount": 149,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "前後動作可在故事出現，但圖上沒有直接動作證據，未為湊滿5v列入target。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:22:20.484Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "c125ab5ac52798f7c4c72266087397786b0c2fde37cac47c78c617088bb58e60",
+  "targetsSha256": "e8b351657a97af3ff6e4bb77772daf0641b641287dbcac6ca2292b310e267cc5",
+  "storySha256": "579cb41ec2798a5d2e4a9977be8308864e418bb4aab9020ceba66fc662686b0d",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}

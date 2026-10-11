@@ -1,0 +1,176 @@
+{
+  "id": "09",
+  "scenarioKey": "water-science",
+  "titleZh": "測量與混合的科學小實驗",
+  "descriptionZh": "教室實驗桌上一邊測量透明瓶子的高度，一邊把兩色水混合。前景兩個同尺寸透明杯分別裝滿與留空，所有器材以寬間距擺放。增加有把手小杯、清澈水瓶與獨立水滴；只使用安全色水進行視覺活動。",
+  "targets": [
+    {
+      "word": "bottle",
+      "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "瓶子",
+      "visualCueZh": "桌左放透明窄口瓶，瓶身與瓶口完整呈現。"
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "visualCueZh": "前景透明壺中裝清水，水面與光線折射可見。"
+    },
+    {
+      "word": "glass",
+      "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "玻璃杯",
+      "visualCueZh": "桌前放無柄透明玻璃飲用杯。"
+    },
+    {
+      "word": "ruler",
+      "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "尺",
+      "visualCueZh": "瓶子旁豎放長尺，刻度線可見但無數字。"
+    },
+    {
+      "word": "measure",
+      "entryGuid": "40322aac-afef-54bb-b5d0-e117fd3109e5",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "測量",
+      "visualCueZh": "孩子將尺與瓶底對齊，眼睛看瓶子最高處。"
+    },
+    {
+      "word": "mix",
+      "entryGuid": "a0d35ceb-68e0-58c7-a9ac-ca28d9a5574f",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "混合",
+      "visualCueZh": "另一孩子把藍色與黃色液體倒入中央杯，交接處呈綠色。"
+    },
+    {
+      "word": "empty",
+      "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "空的",
+      "visualCueZh": "右側透明杯杯底清楚可見，沒有液體。"
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "滿的",
+      "visualCueZh": "相鄰同尺寸透明杯裝液體到接近杯口。"
+    },
+    {
+      "word": "clear",
+      "entryGuid": "2fa08d81-b7f1-5b7b-989d-d8b0b0a47217",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "清澈的",
+      "visualCueZh": "透明瓶內的水清澈，可直接看見瓶後背景。"
+    },
+    {
+      "word": "drop",
+      "entryGuid": "a0246fee-ef2e-587b-9611-d63131ceb3b9",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "一滴",
+      "visualCueZh": "瓶口附近一滴水與小杯分開放大呈現。"
+    },
+    {
+      "word": "cup",
+      "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "杯子",
+      "visualCueZh": "實驗桌右側放有把手的小杯，與玻璃杯分開。"
+    },
+    {
+      "word": "science",
+      "entryGuid": "9fc253a4-a108-599a-9b0b-568c42156a37",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "科學",
+      "visualCueZh": "教室工作桌上的測量與混色活動共同提示科學課。"
+    },
+    {
+      "word": "careful",
+      "entryGuid": "134a56a7-2483-53ac-9c97-653e1329ca9d",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "小心的",
+      "visualCueZh": "孩子雙手穩定拿住容器、目光集中，老師在旁協助。"
+    },
+    {
+      "word": "blue",
+      "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "藍色的",
+      "visualCueZh": "左側容器中水呈明確藍色。"
+    },
+    {
+      "word": "yellow",
+      "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "黃色的",
+      "visualCueZh": "右側容器中水呈明確黃色，與藍色分開。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "Today we learn about water in our science class.",
+      "zh": "今天我們在科學課學習水的知識。"
+    },
+    {
+      "en": "There is a bottle of clear water on the table.",
+      "zh": "桌上有一瓶清澈的水。"
+    },
+    {
+      "en": "I use a ruler to measure how tall it is.",
+      "zh": "我用尺測量瓶子有多高。"
+    },
+    {
+      "en": "My friend puts blue water in a small cup.",
+      "zh": "朋友把藍色的水放進一個小杯子。"
+    },
+    {
+      "en": "We mix it with yellow water and watch the color change.",
+      "zh": "我們把它和黃色的水混合，看著顏色改變。"
+    },
+    {
+      "en": "A glass beside us is full, but another is empty.",
+      "zh": "我們旁邊一個玻璃杯是滿的，另一個則是空的。"
+    },
+    {
+      "en": "I am careful when I move the full glass.",
+      "zh": "移動裝滿的玻璃杯時，我很小心。"
+    },
+    {
+      "en": "Only a drop of water falls on the table.",
+      "zh": "只有一滴水落在桌上。"
+    },
+    {
+      "en": "We clean our place and tell the teacher what we see.",
+      "zh": "我們清理座位，把看到的結果告訴老師。"
+    }
+  ],
+  "aliases": {
+    "is": "be",
+    "puts": "put",
+    "falls": "fall"
+  },
+  "reviewNotes": [
+    "glass 本次教玻璃杯，排除玻璃材質與眼鏡。",
+    "混合液體只作視覺實驗，不呈現真實危險化學品。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

@@ -1,0 +1,9 @@
+僅用 Codex CLI 原生 image_generation 圖片編輯工具，一次，局部修改附圖。不要重新生成整張新場景，不改人物、構圖、其他道具、風格或尺寸；不裁切。
+本次必要修正：只清除前景木質直尺刻度旁所有細小數字與字母，使直尺保留清楚短線刻度、木質質感、大小角度與位置，完全無可辨文字／數字。其他區域全部保持原圖：人物、手、筆記本、鉛筆、桌椅、紙屋、圖紙、窗外校舍均不改。不要加任何字、箭頭、標籤或答案。
+保留其他區域完全相同。全圖不得出現可辨文字、單字、字母、數字、翻譯、標籤、箭頭、水印。
+此工作只可圖片編輯、讀取/實際目視工具輸出、複製原始工具圖片與写本次審閱JSON。禁止讀.env/keys/auth、改程式或教材故事、碰DB、啟動服務、部署、tests、LLM/TTS/圖片HTTP API/SDK/Python生圖。工具僅一次，失敗停，不自動重送。
+原圖及所有原審閱保留不覆寫。保存原始編輯結果到 output/imagegen/basic-advance-01/06-classroom-group-work-v1/base-refined-1.png，實際工具檔案來源依工具回覆，不猜測。真正完整看圖，再寫 output/imagegen/basic-advance-01/06-classroom-group-work-v1/image-review.refined-1.json。
+十五目標順序：desk (n;書桌), notebook (n;筆記本), pencil (n;鉛筆), group (n;團體), write (v;書寫), discuss (v;討論), quiet (adj;安靜的), busy (adj;忙碌的), school (n;學校), teacher (n;老師), student (n;學生), chair (n;椅子), ruler (n;尺), answer (n;答案), small (adj;小的)。
+逐詞看圖，以下JSON不可憑prompt虛構座標，缺線索填null並列issues：
+{"imagePath":"output/imagegen/basic-advance-01/06-classroom-group-work-v1/base-refined-1.png","width":<实际整数>,"height":<实际整数>,"noVocabularyText":<真正全图无字无数字才true>,"targets":[{"word":"<按十五原顺序>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<實際看見的物件/動作/狀態與需故事補足之處>"}],"issues":["<未解問題或空陣列>"]}。
+label取附近空白避免相互重疊和遮臉，object指向真正物件/動作/狀態。只回報原始工具結果路徑、保存圖路徑、尺寸、審閱JSON與未解問題。

@@ -1,0 +1,1760 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "art-class",
+  "revision": 2,
+  "status": "draft",
+  "titleZh": "美術課創作花園",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 24,
+  "targets": [
+    {
+      "word": "paint",
+      "entryGuid": "548b80a3-443a-54d4-9e37-e9e2a87bffea",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "顏料",
+      "interaction": {
+        "object": {
+          "x": 0.096,
+          "y": 0.68
+        },
+        "label": {
+          "x": 0.07,
+          "y": 0.82
+        }
+      }
+    },
+    {
+      "word": "brush",
+      "entryGuid": "8204f9f0-cecc-5bc8-89ba-42a5d4fd1173",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "畫筆",
+      "interaction": {
+        "object": {
+          "x": 0.195,
+          "y": 0.735
+        },
+        "label": {
+          "x": 0.225,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "paper",
+      "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "紙",
+      "interaction": {
+        "object": {
+          "x": 0.892,
+          "y": 0.734
+        },
+        "label": {
+          "x": 0.905,
+          "y": 0.86
+        }
+      }
+    },
+    {
+      "word": "crayon",
+      "entryGuid": "72dd4341-6b20-59cf-8118-3a57f36fca94",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "蠟筆",
+      "interaction": {
+        "object": {
+          "x": 0.317,
+          "y": 0.53
+        },
+        "label": {
+          "x": 0.265,
+          "y": 0.52
+        }
+      }
+    },
+    {
+      "word": "art",
+      "entryGuid": "039b8931-2f84-5f42-9741-c4c132213c2f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "美術",
+      "interaction": {
+        "object": {
+          "x": 0.52,
+          "y": 0.13
+        },
+        "label": {
+          "x": 0.415,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "glue",
+      "entryGuid": "1163f3bc-1084-51e0-9763-76068bec6149",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "膠水",
+      "interaction": {
+        "object": {
+          "x": 0.585,
+          "y": 0.641
+        },
+        "label": {
+          "x": 0.54,
+          "y": 0.76
+        }
+      }
+    },
+    {
+      "word": "shape",
+      "entryGuid": "50d6285e-1e17-578e-8055-ec4d9e7d2af2",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "形狀",
+      "interaction": {
+        "object": {
+          "x": 0.747,
+          "y": 0.571
+        },
+        "label": {
+          "x": 0.82,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "flower",
+      "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "花朵",
+      "interaction": {
+        "object": {
+          "x": 0.113,
+          "y": 0.341
+        },
+        "label": {
+          "x": 0.125,
+          "y": 0.215
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "object": {
+          "x": 0.489,
+          "y": 0.866
+        },
+        "label": {
+          "x": 0.47,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "picture",
+      "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "圖畫",
+      "interaction": {
+        "object": {
+          "x": 0.351,
+          "y": 0.626
+        },
+        "label": {
+          "x": 0.375,
+          "y": 0.735
+        }
+      }
+    },
+    {
+      "word": "pencil",
+      "entryGuid": "35748892-bcfc-5557-b955-75559b05348d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "鉛筆",
+      "interaction": {
+        "object": {
+          "x": 0.605,
+          "y": 0.33
+        },
+        "label": {
+          "x": 0.585,
+          "y": 0.25
+        }
+      }
+    },
+    {
+      "word": "leaf",
+      "entryGuid": "417f3c72-3787-52c5-8ea1-414ab78519f0",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "葉子",
+      "interaction": {
+        "object": {
+          "x": 0.042,
+          "y": 0.425
+        },
+        "label": {
+          "x": 0.05,
+          "y": 0.475
+        }
+      }
+    },
+    {
+      "word": "circle",
+      "entryGuid": "d9d646aa-31f1-50a9-bec1-5cdb5f2dedf6",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "圓形",
+      "interaction": {
+        "object": {
+          "x": 0.707,
+          "y": 0.68
+        },
+        "label": {
+          "x": 0.685,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "bottle",
+      "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "瓶子",
+      "interaction": {
+        "object": {
+          "x": 0.583,
+          "y": 0.64
+        },
+        "label": {
+          "x": 0.575,
+          "y": 0.48
+        }
+      }
+    },
+    {
+      "word": "sun",
+      "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "太陽",
+      "interaction": {
+        "object": {
+          "x": 0.567,
+          "y": 0.052
+        },
+        "label": {
+          "x": 0.585,
+          "y": 0.075
+        }
+      }
+    },
+    {
+      "word": "colorful",
+      "entryGuid": "26bd6701-0e1d-50c0-b7bf-96397c0cc230",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "色彩豐富的",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.153
+        },
+        "label": {
+          "x": 0.54,
+          "y": 0.2
+        }
+      }
+    },
+    {
+      "word": "round",
+      "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "圓的",
+      "interaction": {
+        "object": {
+          "x": 0.743,
+          "y": 0.56
+        },
+        "label": {
+          "x": 0.74,
+          "y": 0.44
+        }
+      }
+    },
+    {
+      "word": "yellow",
+      "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "黃色的",
+      "interaction": {
+        "object": {
+          "x": 0.707,
+          "y": 0.68
+        },
+        "label": {
+          "x": 0.8,
+          "y": 0.7
+        }
+      }
+    },
+    {
+      "word": "square",
+      "entryGuid": "ddc4a248-569d-5fd4-ac61-864baf4a6d12",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "正方形的",
+      "interaction": {
+        "object": {
+          "x": 0.719,
+          "y": 0.777
+        },
+        "label": {
+          "x": 0.735,
+          "y": 0.89
+        }
+      }
+    },
+    {
+      "word": "beautiful",
+      "entryGuid": "3018d7a8-42ea-5f27-aa5e-9e21a84f6c47",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "漂亮的",
+      "interaction": {
+        "object": {
+          "x": 0.319,
+          "y": 0.134
+        },
+        "label": {
+          "x": 0.22,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "draw",
+      "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "畫",
+      "interaction": {
+        "object": {
+          "x": 0.319,
+          "y": 0.55
+        },
+        "label": {
+          "x": 0.285,
+          "y": 0.64
+        }
+      }
+    },
+    {
+      "word": "cut",
+      "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "剪",
+      "interaction": {
+        "object": {
+          "x": 0.703,
+          "y": 0.525
+        },
+        "label": {
+          "x": 0.62,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "color",
+      "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "塗色",
+      "interaction": {
+        "object": {
+          "x": 0.36,
+          "y": 0.594
+        },
+        "label": {
+          "x": 0.48,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "create",
+      "entryGuid": "c2b1d7d9-35cc-5fee-bb0f-ed0348d58eff",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "創作",
+      "interaction": {
+        "object": {
+          "x": 0.735,
+          "y": 0.535
+        },
+        "label": {
+          "x": 0.885,
+          "y": 0.465
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "In art class, my friend and I want to create a colorful garden picture for the wall. We look at the flower on our table and notice the shape of each leaf. I use a crayon to draw a house on my paper, then color the roof and the grass. There is a pencil in the cup if I need to plan another line before adding color. My friend can cut a round shape while I make room for a yellow sun above the house. We put a little glue from the bottle on the circle and put it on the picture. A square piece of paper can become another window, and a brush with paint can add flowers. We work with care and leave space between the flowers, so the garden does not feel too crowded. When we finish, we stand back together and smile at our beautiful garden.",
+    "textZh": "在美術課上，朋友和我想創作一幅色彩豐富的花園圖畫，放在牆上。我們看看桌上的花朵，注意每片葉子的形狀。我用蠟筆在紙上畫一間房屋，接著替屋頂和草地塗色。如果我需要先規劃另一條線再上色，杯子裡有一支鉛筆可用。朋友剪一個圓形，我則在房屋上方留位置給黃色的太陽。我們從瓶子裡取一點膠水抹在圓紙上，把它壓貼在圖畫上。一張正方形紙可以變成另一扇窗，畫筆沾顏料後則能加上花朵。我們小心地做，在花朵之間留空間，讓花園不會太擠。完成後，我們一起退後看看，對著漂亮的花園微笑。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "In art class, my friend and I want to create a colorful garden picture for the wall.",
+        "zh": "在美術課上，朋友和我想創作一幅色彩豐富的花園圖畫，放在牆上。",
+        "wordLinks": [
+          {
+            "surface": "In",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "art",
+            "word": "art",
+            "entryGuid": "039b8931-2f84-5f42-9741-c4c132213c2f",
+            "isTarget": true,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "class",
+            "word": "class",
+            "entryGuid": "1316631b-5665-507a-98d0-2d313582c3bd",
+            "isTarget": false,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "friend",
+            "word": "friend",
+            "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+            "isTarget": false,
+            "start": 17,
+            "end": 23
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 28,
+            "end": 29
+          },
+          {
+            "surface": "want",
+            "word": "want",
+            "entryGuid": "4cf23b7c-e8b5-5e85-8039-4c2d32cc4507",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "create",
+            "word": "create",
+            "entryGuid": "c2b1d7d9-35cc-5fee-bb0f-ed0348d58eff",
+            "isTarget": true,
+            "start": 38,
+            "end": 44
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 45,
+            "end": 46
+          },
+          {
+            "surface": "colorful",
+            "word": "colorful",
+            "entryGuid": "26bd6701-0e1d-50c0-b7bf-96397c0cc230",
+            "isTarget": true,
+            "start": 47,
+            "end": 55
+          },
+          {
+            "surface": "garden",
+            "word": "garden",
+            "entryGuid": "d4a6e961-4ac9-5e14-af6c-7cff536b0f53",
+            "isTarget": false,
+            "start": 56,
+            "end": 62
+          },
+          {
+            "surface": "picture",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": true,
+            "start": 63,
+            "end": 70
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 71,
+            "end": 74
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 75,
+            "end": 78
+          },
+          {
+            "surface": "wall",
+            "word": "wall",
+            "entryGuid": "d27a390f-bc58-5875-a9cf-8fc78602e1c5",
+            "isTarget": false,
+            "start": 79,
+            "end": 83
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "We look at the flower on our table and notice the shape of each leaf.",
+        "zh": "我們看看桌上的花朵，注意每片葉子的形狀。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "look",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 8,
+            "end": 10
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 11,
+            "end": 14
+          },
+          {
+            "surface": "flower",
+            "word": "flower",
+            "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+            "isTarget": true,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 22,
+            "end": 24
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "notice",
+            "word": "notice",
+            "entryGuid": "81bbb8b8-00ec-522c-b72a-91fddca58c13",
+            "isTarget": false,
+            "start": 39,
+            "end": 45
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "shape",
+            "word": "shape",
+            "entryGuid": "50d6285e-1e17-578e-8055-ec4d9e7d2af2",
+            "isTarget": true,
+            "start": 50,
+            "end": 55
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 56,
+            "end": 58
+          },
+          {
+            "surface": "each",
+            "word": "each",
+            "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+            "isTarget": false,
+            "start": 59,
+            "end": 63
+          },
+          {
+            "surface": "leaf",
+            "word": "leaf",
+            "entryGuid": "417f3c72-3787-52c5-8ea1-414ab78519f0",
+            "isTarget": true,
+            "start": 64,
+            "end": 68
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "I use a crayon to draw a house on my paper, then color the roof and the grass.",
+        "zh": "我用蠟筆在紙上畫一間房屋，接著替屋頂和草地塗色。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "crayon",
+            "word": "crayon",
+            "entryGuid": "72dd4341-6b20-59cf-8118-3a57f36fca94",
+            "isTarget": true,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "draw",
+            "word": "draw",
+            "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+            "isTarget": true,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 23,
+            "end": 24
+          },
+          {
+            "surface": "house",
+            "word": "house",
+            "entryGuid": "ada3994d-7136-5f2b-a00e-8559f10fdfa4",
+            "isTarget": false,
+            "start": 25,
+            "end": 30
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 31,
+            "end": 33
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 34,
+            "end": 36
+          },
+          {
+            "surface": "paper",
+            "word": "paper",
+            "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+            "isTarget": true,
+            "start": 37,
+            "end": 42
+          },
+          {
+            "surface": "then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 44,
+            "end": 48
+          },
+          {
+            "surface": "color",
+            "word": "color",
+            "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+            "isTarget": true,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 55,
+            "end": 58
+          },
+          {
+            "surface": "roof",
+            "word": "roof",
+            "entryGuid": "903fa9a3-8292-5653-87ad-53499ec29454",
+            "isTarget": false,
+            "start": 59,
+            "end": 63
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 64,
+            "end": 67
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 68,
+            "end": 71
+          },
+          {
+            "surface": "grass",
+            "word": "grass",
+            "entryGuid": "f1f7ef4b-4107-5741-92cc-2c73536b3766",
+            "isTarget": false,
+            "start": 72,
+            "end": 77
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "There is a pencil in the cup if I need to plan another line before adding color.",
+        "zh": "如果我需要先規劃另一條線再上色，杯子裡有一支鉛筆可用。",
+        "wordLinks": [
+          {
+            "surface": "There",
+            "word": "there",
+            "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 9,
+            "end": 10
+          },
+          {
+            "surface": "pencil",
+            "word": "pencil",
+            "entryGuid": "35748892-bcfc-5557-b955-75559b05348d",
+            "isTarget": true,
+            "start": 11,
+            "end": 17
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 18,
+            "end": 20
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "cup",
+            "word": "cup",
+            "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "if",
+            "word": "if",
+            "entryGuid": "bce98aaa-8d60-5afb-873d-caeaf29d237f",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 32,
+            "end": 33
+          },
+          {
+            "surface": "need",
+            "word": "need",
+            "entryGuid": "8940ab92-17e5-5271-bc92-7ed5db345c6d",
+            "isTarget": false,
+            "start": 34,
+            "end": 38
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 39,
+            "end": 41
+          },
+          {
+            "surface": "plan",
+            "word": "plan",
+            "entryGuid": "8a9442cd-a7a6-50a4-898b-afb8ee2acf1f",
+            "isTarget": false,
+            "start": 42,
+            "end": 46
+          },
+          {
+            "surface": "another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 47,
+            "end": 54
+          },
+          {
+            "surface": "line",
+            "word": "line",
+            "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+            "isTarget": false,
+            "start": 55,
+            "end": 59
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 60,
+            "end": 66
+          },
+          {
+            "surface": "adding",
+            "word": "add",
+            "entryGuid": "bae3cd73-114b-5005-919a-8708ca22e9d2",
+            "isTarget": false,
+            "start": 67,
+            "end": 73
+          },
+          {
+            "surface": "color",
+            "word": "color",
+            "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+            "isTarget": true,
+            "start": 74,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "My friend can cut a round shape while I make room for a yellow sun above the house.",
+        "zh": "朋友剪一個圓形，我則在房屋上方留位置給黃色的太陽。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "friend",
+            "word": "friend",
+            "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 10,
+            "end": 13
+          },
+          {
+            "surface": "cut",
+            "word": "cut",
+            "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+            "isTarget": true,
+            "start": 14,
+            "end": 17
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 18,
+            "end": 19
+          },
+          {
+            "surface": "round",
+            "word": "round",
+            "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+            "isTarget": true,
+            "start": 20,
+            "end": 25
+          },
+          {
+            "surface": "shape",
+            "word": "shape",
+            "entryGuid": "50d6285e-1e17-578e-8055-ec4d9e7d2af2",
+            "isTarget": true,
+            "start": 26,
+            "end": 31
+          },
+          {
+            "surface": "while",
+            "word": "while",
+            "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+            "isTarget": false,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 38,
+            "end": 39
+          },
+          {
+            "surface": "make",
+            "word": "make",
+            "entryGuid": "a780251a-295b-5786-867c-9f8ac8d23036",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "room",
+            "word": "room",
+            "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+            "isTarget": false,
+            "start": 45,
+            "end": 49
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 50,
+            "end": 53
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 54,
+            "end": 55
+          },
+          {
+            "surface": "yellow",
+            "word": "yellow",
+            "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+            "isTarget": true,
+            "start": 56,
+            "end": 62
+          },
+          {
+            "surface": "sun",
+            "word": "sun",
+            "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+            "isTarget": true,
+            "start": 63,
+            "end": 66
+          },
+          {
+            "surface": "above",
+            "word": "above",
+            "entryGuid": "d8da53d0-5638-5f66-911b-704738d85988",
+            "isTarget": false,
+            "start": 67,
+            "end": 72
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 73,
+            "end": 76
+          },
+          {
+            "surface": "house",
+            "word": "house",
+            "entryGuid": "ada3994d-7136-5f2b-a00e-8559f10fdfa4",
+            "isTarget": false,
+            "start": 77,
+            "end": 82
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "We put a little glue from the bottle on the circle and put it on the picture.",
+        "zh": "我們從瓶子裡取一點膠水抹在圓紙上，把它壓貼在圖畫上。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "put",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 7,
+            "end": 8
+          },
+          {
+            "surface": "little",
+            "word": "little",
+            "entryGuid": "58f73838-9a29-5a84-94c0-54188c22658f",
+            "isTarget": false,
+            "start": 9,
+            "end": 15
+          },
+          {
+            "surface": "glue",
+            "word": "glue",
+            "entryGuid": "1163f3bc-1084-51e0-9763-76068bec6149",
+            "isTarget": true,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "bottle",
+            "word": "bottle",
+            "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+            "isTarget": true,
+            "start": 30,
+            "end": 36
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "circle",
+            "word": "circle",
+            "entryGuid": "d9d646aa-31f1-50a9-bec1-5cdb5f2dedf6",
+            "isTarget": true,
+            "start": 44,
+            "end": 50
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 51,
+            "end": 54
+          },
+          {
+            "surface": "put",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 55,
+            "end": 58
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 59,
+            "end": 61
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 62,
+            "end": 64
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 65,
+            "end": 68
+          },
+          {
+            "surface": "picture",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": true,
+            "start": 69,
+            "end": 76
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "A square piece of paper can become another window, and a brush with paint can add flowers.",
+        "zh": "一張正方形紙可以變成另一扇窗，畫筆沾顏料後則能加上花朵。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "square",
+            "word": "square",
+            "entryGuid": "ddc4a248-569d-5fd4-ac61-864baf4a6d12",
+            "isTarget": true,
+            "start": 2,
+            "end": 8
+          },
+          {
+            "surface": "piece",
+            "word": "piece",
+            "entryGuid": "ca76c704-9258-57a0-b64d-95fb233021c5",
+            "isTarget": false,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "paper",
+            "word": "paper",
+            "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+            "isTarget": true,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "become",
+            "word": "become",
+            "entryGuid": "4ad98249-f187-5105-be4f-d9ad673d568d",
+            "isTarget": false,
+            "start": 28,
+            "end": 34
+          },
+          {
+            "surface": "another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 35,
+            "end": 42
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": false,
+            "start": 43,
+            "end": 49
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 51,
+            "end": 54
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 55,
+            "end": 56
+          },
+          {
+            "surface": "brush",
+            "word": "brush",
+            "entryGuid": "8204f9f0-cecc-5bc8-89ba-42a5d4fd1173",
+            "isTarget": true,
+            "start": 57,
+            "end": 62
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 63,
+            "end": 67
+          },
+          {
+            "surface": "paint",
+            "word": "paint",
+            "entryGuid": "548b80a3-443a-54d4-9e37-e9e2a87bffea",
+            "isTarget": true,
+            "start": 68,
+            "end": 73
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 74,
+            "end": 77
+          },
+          {
+            "surface": "add",
+            "word": "add",
+            "entryGuid": "bae3cd73-114b-5005-919a-8708ca22e9d2",
+            "isTarget": false,
+            "start": 78,
+            "end": 81
+          },
+          {
+            "surface": "flowers",
+            "word": "flower",
+            "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+            "isTarget": true,
+            "start": 82,
+            "end": 89
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "We work with care and leave space between the flowers, so the garden does not feel too crowded.",
+        "zh": "我們小心地做，在花朵之間留空間，讓花園不會太擠。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "work",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "care",
+            "word": "care",
+            "entryGuid": "81a47358-ba4c-56b5-ad1a-a0ec01afa38f",
+            "isTarget": false,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "leave",
+            "word": "leave",
+            "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+            "isTarget": false,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "space",
+            "word": "space",
+            "entryGuid": "97f217f6-62ba-53b8-9b98-5bb81cd7dac5",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "between",
+            "word": "between",
+            "entryGuid": "a894b53a-9e55-515b-a141-e6d60bc4bad8",
+            "isTarget": false,
+            "start": 34,
+            "end": 41
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "flowers",
+            "word": "flower",
+            "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+            "isTarget": true,
+            "start": 46,
+            "end": 53
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 55,
+            "end": 57
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 58,
+            "end": 61
+          },
+          {
+            "surface": "garden",
+            "word": "garden",
+            "entryGuid": "d4a6e961-4ac9-5e14-af6c-7cff536b0f53",
+            "isTarget": false,
+            "start": 62,
+            "end": 68
+          },
+          {
+            "surface": "does",
+            "word": "do",
+            "entryGuid": "ffbec297-eb82-5c71-983e-2644831c0165",
+            "isTarget": false,
+            "start": 69,
+            "end": 73
+          },
+          {
+            "surface": "not",
+            "word": "not",
+            "entryGuid": "fbdf28e7-69e4-5e0f-b051-b6e9e842ea63",
+            "isTarget": false,
+            "start": 74,
+            "end": 77
+          },
+          {
+            "surface": "feel",
+            "word": "feel",
+            "entryGuid": "1ea0f856-55af-57f7-9676-fc91c7f74ba5",
+            "isTarget": false,
+            "start": 78,
+            "end": 82
+          },
+          {
+            "surface": "too",
+            "word": "too",
+            "entryGuid": "25320ac0-3865-50ac-ba1d-320e13d2a26b",
+            "isTarget": false,
+            "start": 83,
+            "end": 86
+          },
+          {
+            "surface": "crowded",
+            "word": "crowd",
+            "entryGuid": "d2413572-42a1-54fa-848f-8c0dded2b7b8",
+            "isTarget": false,
+            "start": 87,
+            "end": 94
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "When we finish, we stand back together and smile at our beautiful garden.",
+        "zh": "完成後，我們一起退後看看，對著漂亮的花園微笑。",
+        "wordLinks": [
+          {
+            "surface": "When",
+            "word": "when",
+            "entryGuid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 16,
+            "end": 18
+          },
+          {
+            "surface": "stand",
+            "word": "stand",
+            "entryGuid": "c159bec5-f00f-522b-8ac1-34ff583d7696",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "back",
+            "word": "back",
+            "entryGuid": "79052125-6cc1-55c6-80e6-91ca929b5ccd",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 30,
+            "end": 38
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 39,
+            "end": 42
+          },
+          {
+            "surface": "smile",
+            "word": "smile",
+            "entryGuid": "94b20084-3dfd-548a-b5c9-eceab251ba3f",
+            "isTarget": false,
+            "start": 43,
+            "end": 48
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 49,
+            "end": 51
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 52,
+            "end": 55
+          },
+          {
+            "surface": "beautiful",
+            "word": "beautiful",
+            "entryGuid": "3018d7a8-42ea-5f27-aa5e-9e21a84f6c47",
+            "isTarget": true,
+            "start": 56,
+            "end": 65
+          },
+          {
+            "surface": "garden",
+            "word": "garden",
+            "entryGuid": "d4a6e961-4ac9-5e14-af6c-7cff536b0f53",
+            "isTarget": false,
+            "start": 66,
+            "end": 72
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s5"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/08-art-class-v1/base.png",
+      "sha256": "ea0c00373fd5818e5346beef360615fda6ab4f78b84471c55f839359c914f34b",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/art-class/r2/09eeb3d17582e855/story-f3b2a694da8fe04f.mp3",
+      "sha256": "78a4b43616b834eee1a366af6a27b9e64eb7467fa03cd702c46864813a702423",
+      "language": "en",
+      "textSha256": "f3b2a694da8fe04f4548380b9fcb20f7e65246e48d25d8d40a26a39a44d1f439",
+      "durationSeconds": 52.128,
+      "bytes": 834092,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reused-visually-reviewed-for-new-targets",
+      "method": "reuse-existing-base-image",
+      "reuseCandidate": {
+        "path": "output/imagegen/basic-advance-01/08-art-class-v1/base.png",
+        "sha256": "ea0c00373fd5818e5346beef360615fda6ab4f78b84471c55f839359c914f34b",
+        "reviewed": true,
+        "containsVocabularyText": false
+      },
+      "sceneDescriptionZh": "孩子觀察花朵與葉子，畫房屋、剪圓形，並把黃色圓紙貼成太陽。"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "current-targets-only"
+    }
+  },
+  "contentReview": {
+    "status": "image-text-reviewed-awaiting-ui",
+    "notes": [
+      "本檔是 revision 2 離線文字候選，舊 revision 1／published 客廳未變動。",
+      "已逐張查看現有底圖，object 是圖面錨點；story／image-and-story 明示時間先後或敘事線索，不宣稱單張圖可直接證明。",
+      "label 是候選比例位置，尚須正式套件 UI 檢查遮擋、手機排版與點擊；本檔不代表圖片／媒體或發布審核完成。",
+      "yellow 是太陽剪紙的必要創作選擇，保留；不以其他顏色補形容詞。",
+      "動詞只有4個；不把來源缺席的stick或畫面未呈現的動作硬湊成第5。",
+      "逐張查看現有底圖並依物件分區重排標籤，整場概念以背景／結構為錨點；桌機與手機實際UI尚待驗收。"
+    ]
+  }
+}

@@ -4,6 +4,7 @@ import * as api from "./api";
 import { Illustrations } from "./Illustrations";
 import { AudioBackfillPanel } from "./AudioBackfillPanel";
 import { GenerationSettings } from "./GenerationSettings";
+import { ScenarioStudio } from "./ScenarioStudio";
 import { normalizeBaseUrl } from "./urls";
 import { uniqSorted } from "./facets";
 import {
@@ -1349,7 +1350,8 @@ type View =
   | "audio"
   | "words"
   | "users"
-  | "settings";
+  | "settings"
+  | "scenarios";
 
 export function WordManager({ initialQuery = "" }: { initialQuery?: string }) {
   const [q, setQ] = useState(initialQuery);
@@ -1560,6 +1562,12 @@ export default function App() {
               文章
             </button>
             <button
+              className={"topnav__btn" + (view === "scenarios" ? " on" : "")}
+              onClick={() => setView("scenarios")}
+            >
+              情境
+            </button>
+            <button
               className={"topnav__btn" + (view === "taxonomy" ? " on" : "")}
               onClick={() => setView("taxonomy")}
             >
@@ -1587,7 +1595,9 @@ export default function App() {
         </div>
       </header>
       <main className="wrap" style={{ paddingTop: 24, paddingBottom: 60 }}>
-        {view === "taxonomy" ? (
+        {view === "scenarios" ? (
+          <ScenarioStudio />
+        ) : view === "taxonomy" ? (
           <TaxonomyManager />
         ) : view === "settings" ? (
           <GenerationSettings />

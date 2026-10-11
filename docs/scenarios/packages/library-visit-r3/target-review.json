@@ -1,0 +1,465 @@
+{
+  "id": "07",
+  "scenarioKey": "library-visit",
+  "revision": 3,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/07-library-visit-v1/base-refined-1.png",
+    "sha256": "ca8bb03efb4c4b36bd040ad48d13fb294219dd8c4830a230660cbff26236f83a",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "library",
+      "entryGuid": "50f5727a-4c23-5910-82f8-73be2fce8b99",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "圖書館",
+      "interaction": {
+        "object": {
+          "x": 0.7,
+          "y": 0.055
+        },
+        "label": {
+          "x": 0.79,
+          "y": 0.06
+        }
+      }
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書",
+      "interaction": {
+        "object": {
+          "x": 0.609,
+          "y": 0.854
+        },
+        "label": {
+          "x": 0.49,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "shelf",
+      "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "書架",
+      "interaction": {
+        "object": {
+          "x": 0.453,
+          "y": 0.211
+        },
+        "label": {
+          "x": 0.47,
+          "y": 0.14
+        }
+      }
+    },
+    {
+      "word": "computer",
+      "entryGuid": "2bc6469f-d280-5991-b4f0-b0c1d897b1b7",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "電腦",
+      "interaction": {
+        "object": {
+          "x": 0.382,
+          "y": 0.397
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.47
+        }
+      }
+    },
+    {
+      "word": "child",
+      "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "孩子",
+      "interaction": {
+        "object": {
+          "x": 0.564,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.585,
+          "y": 0.45
+        }
+      }
+    },
+    {
+      "word": "story",
+      "entryGuid": "32312092-5567-5fc4-8a22-fdd8d1632b74",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "故事",
+      "interaction": {
+        "object": {
+          "x": 0.663,
+          "y": 0.854
+        },
+        "label": {
+          "x": 0.605,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "bag",
+      "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "袋子",
+      "interaction": {
+        "object": {
+          "x": 0.92,
+          "y": 0.736
+        },
+        "label": {
+          "x": 0.925,
+          "y": 0.89
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "object": {
+          "x": 0.459,
+          "y": 0.956
+        },
+        "label": {
+          "x": 0.275,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "interaction": {
+        "object": {
+          "x": 0.276,
+          "y": 0.62
+        },
+        "label": {
+          "x": 0.26,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "page",
+      "entryGuid": "eb33a309-4ef5-5b81-9e77-019d3983cf70",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書頁",
+      "interaction": {
+        "object": {
+          "x": 0.612,
+          "y": 0.833
+        },
+        "label": {
+          "x": 0.825,
+          "y": 0.945
+        }
+      }
+    },
+    {
+      "word": "picture",
+      "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "圖畫",
+      "interaction": {
+        "object": {
+          "x": 0.739,
+          "y": 0.894
+        },
+        "label": {
+          "x": 0.805,
+          "y": 0.79
+        }
+      }
+    },
+    {
+      "word": "screen",
+      "entryGuid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "螢幕",
+      "interaction": {
+        "object": {
+          "x": 0.386,
+          "y": 0.376
+        },
+        "label": {
+          "x": 0.395,
+          "y": 0.25
+        }
+      }
+    },
+    {
+      "word": "floor",
+      "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "地板",
+      "interaction": {
+        "object": {
+          "x": 0.58,
+          "y": 0.717
+        },
+        "label": {
+          "x": 0.555,
+          "y": 0.695
+        }
+      }
+    },
+    {
+      "word": "desk",
+      "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "服務台",
+      "interaction": {
+        "object": {
+          "x": 0.913,
+          "y": 0.551
+        },
+        "label": {
+          "x": 0.9,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "interaction": {
+        "object": {
+          "x": 0.112,
+          "y": 0.076
+        },
+        "label": {
+          "x": 0.18,
+          "y": 0.1
+        }
+      }
+    },
+    {
+      "word": "tall",
+      "entryGuid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "高的",
+      "interaction": {
+        "object": {
+          "x": 0.485,
+          "y": 0.24
+        },
+        "label": {
+          "x": 0.595,
+          "y": 0.12
+        }
+      }
+    },
+    {
+      "word": "heavy",
+      "entryGuid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "重的",
+      "interaction": {
+        "object": {
+          "x": 0.153,
+          "y": 0.576
+        },
+        "label": {
+          "x": 0.08,
+          "y": 0.575
+        }
+      }
+    },
+    {
+      "word": "helpful",
+      "entryGuid": "2599cb0d-c590-5e3f-b718-0ec19236347a",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "樂於助人的",
+      "interaction": {
+        "object": {
+          "x": 0.32,
+          "y": 0.289
+        },
+        "label": {
+          "x": 0.225,
+          "y": 0.16
+        }
+      }
+    },
+    {
+      "word": "quiet",
+      "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "安靜的",
+      "interaction": {
+        "object": {
+          "x": 0.704,
+          "y": 0.699
+        },
+        "label": {
+          "x": 0.405,
+          "y": 0.65
+        }
+      }
+    },
+    {
+      "word": "interesting",
+      "entryGuid": "e6396785-30b3-5505-a885-d3d37392390a",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "有趣的",
+      "interaction": {
+        "object": {
+          "x": 0.653,
+          "y": 0.825
+        },
+        "label": {
+          "x": 0.505,
+          "y": 0.8
+        }
+      }
+    },
+    {
+      "word": "borrow",
+      "entryGuid": "2aec94a9-e7e6-5b31-86a4-50ba00fe1104",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "借",
+      "interaction": {
+        "object": {
+          "x": 0.897,
+          "y": 0.412
+        },
+        "label": {
+          "x": 0.89,
+          "y": 0.36
+        }
+      }
+    },
+    {
+      "word": "search",
+      "entryGuid": "e0610abe-aee8-553a-9405-1384f7cb4a15",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "搜尋",
+      "interaction": {
+        "object": {
+          "x": 0.367,
+          "y": 0.463
+        },
+        "label": {
+          "x": 0.355,
+          "y": 0.565
+        }
+      }
+    },
+    {
+      "word": "return",
+      "entryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "歸還",
+      "interaction": {
+        "object": {
+          "x": 0.826,
+          "y": 0.331
+        },
+        "label": {
+          "x": 0.815,
+          "y": 0.21
+        }
+      }
+    },
+    {
+      "word": "read",
+      "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "閱讀",
+      "interaction": {
+        "object": {
+          "x": 0.682,
+          "y": 0.777
+        },
+        "label": {
+          "x": 0.705,
+          "y": 0.795
+        }
+      }
+    },
+    {
+      "word": "choose",
+      "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "挑選",
+      "interaction": {
+        "object": {
+          "x": 0.51,
+          "y": 0.308
+        },
+        "label": {
+          "x": 0.485,
+          "y": 0.47
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 5
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 0,
+    "storyTokenCount": 154,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": []
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:39:21.285Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "ca8bb03efb4c4b36bd040ad48d13fb294219dd8c4830a230660cbff26236f83a",
+  "targetsSha256": "c719755b3bc22eb7bbc693543ae26277230a71ec293ba855bb64dd0f116d4c36",
+  "storySha256": "b1e9ef52e4ba2067b30c8df9b69fa72954760843e40a32d03bab9885ac79b5a1",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ],
+  "correctiveNote": "桌面實際 UI 驗收修正 tall 箭頭指向高書架；其他圖文與錄音沿用 revision 2，不重新生成。"
+}

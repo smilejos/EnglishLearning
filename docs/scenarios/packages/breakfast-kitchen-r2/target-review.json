@@ -1,0 +1,392 @@
+{
+  "id": "02",
+  "scenarioKey": "breakfast-kitchen",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/02-breakfast-kitchen-v1/base-refined.png",
+    "sha256": "72c1f12c9425e8cb2be4138c52f19e197b4273f20bdf1024fa58e83abd7972f0",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "kitchen",
+      "teachingPos": "n",
+      "visualEvidenceZh": "爐子、洗槽與櫥櫃構成廚房。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.655,
+          "y": 0.345
+        },
+        "label": {
+          "x": 0.63,
+          "y": 0.325
+        }
+      }
+    },
+    {
+      "word": "bread",
+      "teachingPos": "n",
+      "visualEvidenceZh": "桌上完整麵包與切片。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.483,
+          "y": 0.671
+        },
+        "label": {
+          "x": 0.465,
+          "y": 0.795
+        }
+      }
+    },
+    {
+      "word": "egg",
+      "teachingPos": "n",
+      "visualEvidenceZh": "煎鍋中的蛋。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.11,
+          "y": 0.431
+        },
+        "label": {
+          "x": 0.1,
+          "y": 0.495
+        }
+      }
+    },
+    {
+      "word": "milk",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央玻璃壺中的牛奶。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.728,
+          "y": 0.659
+        },
+        "label": {
+          "x": 0.735,
+          "y": 0.795
+        }
+      }
+    },
+    {
+      "word": "knife",
+      "teachingPos": "n",
+      "visualEvidenceZh": "孩子手中切麵包的刀子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.44,
+          "y": 0.595
+        },
+        "label": {
+          "x": 0.46,
+          "y": 0.545
+        }
+      }
+    },
+    {
+      "word": "pan",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側爐上平底鍋。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.104,
+          "y": 0.434
+        },
+        "label": {
+          "x": 0.16,
+          "y": 0.325
+        }
+      }
+    },
+    {
+      "word": "table",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景早餐桌。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.494,
+          "y": 0.871
+        },
+        "label": {
+          "x": 0.42,
+          "y": 0.935
+        }
+      }
+    },
+    {
+      "word": "butter",
+      "teachingPos": "n",
+      "visualEvidenceZh": "盤中的奶油塊。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.527,
+          "y": 0.789
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.87
+        }
+      }
+    },
+    {
+      "word": "juice",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側裝柳橙汁的玻璃杯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.891,
+          "y": 0.712
+        },
+        "label": {
+          "x": 0.903,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "glass",
+      "teachingPos": "n",
+      "visualEvidenceZh": "桌上空的玻璃杯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.808,
+          "y": 0.708
+        },
+        "label": {
+          "x": 0.81,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "orange",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右下完整與切半的柳橙。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.92,
+          "y": 0.834
+        },
+        "label": {
+          "x": 0.945,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "plate",
+      "teachingPos": "n",
+      "visualEvidenceZh": "奶油下方白色小盤。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.52,
+          "y": 0.817
+        },
+        "label": {
+          "x": 0.6,
+          "y": 0.81
+        }
+      }
+    },
+    {
+      "word": "bowl",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右上櫥櫃中可見碗。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.886,
+          "y": 0.132
+        },
+        "label": {
+          "x": 0.91,
+          "y": 0.06
+        }
+      }
+    },
+    {
+      "word": "stove",
+      "teachingPos": "n",
+      "visualEvidenceZh": "煎鍋下面有火焰與控制旋鈕的爐子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.099,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.195,
+          "y": 0.635
+        }
+      }
+    },
+    {
+      "word": "breakfast",
+      "teachingPos": "n",
+      "visualEvidenceZh": "麵包、蛋與飲品組成早餐。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.685,
+          "y": 0.775
+        },
+        "label": {
+          "x": 0.695,
+          "y": 0.9
+        }
+      }
+    },
+    {
+      "word": "hot",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "鍋與蛋旁冒蒸氣。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.101,
+          "y": 0.411
+        },
+        "label": {
+          "x": 0.065,
+          "y": 0.31
+        }
+      }
+    },
+    {
+      "word": "full",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "桌上牛奶杯已裝滿，杯緣保留安全空間。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.62,
+          "y": 0.691
+        },
+        "label": {
+          "x": 0.61,
+          "y": 0.735
+        }
+      }
+    },
+    {
+      "word": "fresh",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "剛切開的柳橙與麵包，故事取當天新鮮食材。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.927,
+          "y": 0.826
+        },
+        "label": {
+          "x": 0.94,
+          "y": 0.84
+        }
+      }
+    },
+    {
+      "word": "warm",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "新切麵包；溫度由故事交代，不把圖面當測溫證明。",
+      "evidenceKind": "story",
+      "interaction": {
+        "object": {
+          "x": 0.496,
+          "y": 0.665
+        },
+        "label": {
+          "x": 0.56,
+          "y": 0.73
+        }
+      }
+    },
+    {
+      "word": "hungry",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "孩子看著食物；故事早晨肚子餓並期待吃早餐。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.433,
+          "y": 0.418
+        },
+        "label": {
+          "x": 0.59,
+          "y": 0.465
+        }
+      }
+    },
+    {
+      "word": "cook",
+      "teachingPos": "v",
+      "visualEvidenceZh": "爸爸用爐子與平底鍋煎蛋。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.183,
+          "y": 0.374
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.435
+        }
+      }
+    },
+    {
+      "word": "cut",
+      "teachingPos": "v",
+      "visualEvidenceZh": "孩子用刀切麵包。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.451,
+          "y": 0.621
+        },
+        "label": {
+          "x": 0.59,
+          "y": 0.63
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 2
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 3,
+    "storyTokenCount": 142,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "前後動作可在故事出現，但圖上沒有直接動作證據，未為湊滿5v列入target。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:21:26.657Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "72c1f12c9425e8cb2be4138c52f19e197b4273f20bdf1024fa58e83abd7972f0",
+  "targetsSha256": "b9f3db2704f357356695fcb2d83ab135b6fb00cc5075fee6ba4db88e83ad761d",
+  "storySha256": "e8194fed147c73b3d03f86470b764687f0eb181eed54fbc2dae7bd367abd8f05",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}

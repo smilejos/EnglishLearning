@@ -1,0 +1,190 @@
+{
+  "imagePath": "output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png",
+  "width": 1672,
+  "height": 941,
+  "noVocabularyText": true,
+  "reviewer": "root agent 實際目視最終無字圖",
+  "targets": [
+    {
+      "word": "shirt",
+      "label": {
+        "x": 0.492,
+        "y": 0.097
+      },
+      "object": {
+        "x": 0.505,
+        "y": 0.355
+      },
+      "visualEvidenceZh": "中央淺藍襯衫背面，袖子與領口清楚，無领標或文字。"
+    },
+    {
+      "word": "sock",
+      "label": {
+        "x": 0.224,
+        "y": 0.327
+      },
+      "object": {
+        "x": 0.25,
+        "y": 0.206
+      },
+      "visualEvidenceZh": "左上襪子腳跟與腳尖清楚，掛在衣繩上。"
+    },
+    {
+      "word": "basket",
+      "label": {
+        "x": 0.104,
+        "y": 0.65
+      },
+      "object": {
+        "x": 0.15,
+        "y": 0.85
+      },
+      "visualEvidenceZh": "左前藤編洗衣籃完整入鏡，籃身與把手可辨。"
+    },
+    {
+      "word": "soap",
+      "label": {
+        "x": 0.514,
+        "y": 0.952
+      },
+      "object": {
+        "x": 0.5,
+        "y": 0.893
+      },
+      "visualEvidenceZh": "盆前淡黃色長方形肥皂與泡沫。"
+    },
+    {
+      "word": "wash",
+      "label": {
+        "x": 0.336,
+        "y": 0.821
+      },
+      "object": {
+        "x": 0.326,
+        "y": 0.715
+      },
+      "visualEvidenceZh": "母親以雙手在盆中搓洗衣物，周圍泡沫。"
+    },
+    {
+      "word": "hang",
+      "label": {
+        "x": 0.59,
+        "y": 0.135
+      },
+      "object": {
+        "x": 0.534,
+        "y": 0.208
+      },
+      "visualEvidenceZh": "孩子雙手拿著上衣在曬衣繩衣夾處掛衣，故事補足動作方向。"
+    },
+    {
+      "word": "wet",
+      "label": {
+        "x": 0.416,
+        "y": 0.585
+      },
+      "object": {
+        "x": 0.508,
+        "y": 0.5
+      },
+      "visualEvidenceZh": "淺藍襯衫下緣有濕斑及多顆水滴，提示濕。"
+    },
+    {
+      "word": "dry",
+      "label": {
+        "x": 0.886,
+        "y": 0.481
+      },
+      "object": {
+        "x": 0.787,
+        "y": 0.323
+      },
+      "visualEvidenceZh": "右側毛巾表面沒有濕斑或水滴，與左側濕衣物形成對比，故事明說乾毛巾。"
+    },
+    {
+      "word": "machine",
+      "label": {
+        "x": 0.066,
+        "y": 0.273
+      },
+      "object": {
+        "x": 0.133,
+        "y": 0.478
+      },
+      "visualEvidenceZh": "左後滾筒洗衣機，圓形門與無字控制面板可辨。"
+    },
+    {
+      "word": "towel",
+      "label": {
+        "x": 0.801,
+        "y": 0.564
+      },
+      "object": {
+        "x": 0.784,
+        "y": 0.353
+      },
+      "visualEvidenceZh": "右側粉色長毛巾與下端白色橫帶，與上衣分開。"
+    },
+    {
+      "word": "clothes",
+      "label": {
+        "x": 0.284,
+        "y": 0.961
+      },
+      "object": {
+        "x": 0.132,
+        "y": 0.768
+      },
+      "visualEvidenceZh": "籃中多種不同顏色衣物，集合意思以故事補足。"
+    },
+    {
+      "word": "line",
+      "label": {
+        "x": 0.692,
+        "y": 0.126
+      },
+      "object": {
+        "x": 0.665,
+        "y": 0.195
+      },
+      "visualEvidenceZh": "兩根柱之間的衣繩，中段清楚可見。"
+    },
+    {
+      "word": "sun",
+      "label": {
+        "x": 0.85,
+        "y": 0.06
+      },
+      "object": {
+        "x": 0.734,
+        "y": 0.061
+      },
+      "visualEvidenceZh": "上方藍天中的明亮圓形太陽。"
+    },
+    {
+      "word": "bright",
+      "label": {
+        "x": 0.852,
+        "y": 0.804
+      },
+      "object": {
+        "x": 0.808,
+        "y": 0.8
+      },
+      "visualEvidenceZh": "日光照亮地面，與人物衣物陰影對比。"
+    },
+    {
+      "word": "water",
+      "label": {
+        "x": 0.605,
+        "y": 0.906
+      },
+      "object": {
+        "x": 0.448,
+        "y": 0.73
+      },
+      "visualEvidenceZh": "盆右側有清楚藍灰水面及漣漪，沒有被泡沫完全遮住。"
+    }
+  ],
+  "issues": []
+}

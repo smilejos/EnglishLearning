@@ -1,0 +1,8 @@
+請用 Codex CLI 原生 image_generation 工具編修附圖，只一次，保存原始工具結果為 output/imagegen/basic-advance-01/05-laundry-day-v1/base-refined.png。這是真實素材修正，不是重新驗證生成。保留原base.png和image-review.initial.json。只允許原生圖片編修、實際看圖及本場JSON，不碰DB/服務/程式/.env/keys或其他模型API。
+維持原圖暖色精緻3D庭院洗衣場景、兩名角色、15詞線索與16:9 opaque PNG。做三個精確調整：1. 完全清除中央藍襯衫領內黃色小標籤及右側衣服領標，衣領只有普通無標籤布料；洗衣機面板只有單純光滑白面/純色旋鈕，沒有小字/數字/刻痕/符號。2. 稍微拉遠視角讓左前景藤編洗衣籃完整入鏡，留少量邊距，保留其衣物、把手和编織形狀。3. 將洗衣盆右側泡沫與衣物略騰出一片清楚藍灰水面，能看到水線和漣漪，母親仍合理搓洗衣物。不要加任何注解、單字、箭頭或任何文字。保留濕衣滴水、右側乾衣、肥皂、毛巾、太陽、晾衣繩、夾衣動作等全部線索；靜態代表洗衣中的一刻，乾濕/掛衣由故事補足。
+完成後實際用view_image看新圖，依實際圖重建15詞label/object位置及審閱，寫 output/imagegen/basic-advance-01/05-laundry-day-v1/image-review.json（原審閱已另存）。不是照舊圖座標複製。原15詞依順序：shirt,sock,basket,soap,wash,hang,wet,dry,machine,towel,clothes,line,sun,bright,water。
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/05-laundry-day-v1/base-refined.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

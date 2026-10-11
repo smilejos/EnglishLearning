@@ -15,8 +15,10 @@ import { registerUserRoutes } from "./routes/users";
 import type { LookupLimiter } from "./rateLimit";
 import { registerIllustrationRoutes, type IllustrationDeps } from "./routes/illustrations";
 import { registerGenerationSettingsRoutes, type GenerationSettingsRouteDeps } from "./routes/generationSettings";
+import { registerScenarioStudioRoutes, type ScenarioStudioRouteDeps } from "./routes/scenarioStudio";
 
 export interface BuildAppOpts {
+  scenarioStudio?: ScenarioStudioRouteDeps;
   scenarios?: ScenarioRouteDeps;
   illustrations?: IllustrationDeps;
   generationSettings?: GenerationSettingsRouteDeps;
@@ -66,6 +68,7 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   registerVocabularyRoutes(app, opts.pool);
   registerWordbankRoutes(app, opts.pool);
   registerScenarioRoutes(app, opts.pool, opts.scenarios);
+  if (opts.scenarioStudio) registerScenarioStudioRoutes(app, opts.pool, opts.scenarioStudio);
   registerLookupRoutes(app, opts.pool, opts.audioDir, opts.lookupDeps, opts.lookupLimiter);
   registerStatsRoutes(app, opts.pool, opts.lookupLimiter);
   registerUserRoutes(app, opts.pool, opts.config.adminEmails);

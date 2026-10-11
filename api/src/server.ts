@@ -36,6 +36,14 @@ const app = buildApp({
   config,
   pool,
   scenarios: { imageDir: config.images.directory, audioDir: config.audioDir },
+  scenarioStudio: process.env.SCENARIO_STUDIO_DIR ? {
+    studioDir: process.env.SCENARIO_STUDIO_DIR,
+    imageDir: config.images.directory,
+    audioDir: config.audioDir,
+    catalog: imageCatalog ?? undefined,
+    resolveSettings: async () => (await getGenerationSettings(pool)).settings,
+    getAvailability: () => ({ google: Boolean(auth), openai: Boolean(credentials.openaiApiKey), localQwen: Boolean(process.env.SCENARIO_QWEN_TTS_URL) }),
+  } : undefined,
   illustrations: imageCatalog ? {
     catalog: imageCatalog,
     imageDir: config.images.directory,

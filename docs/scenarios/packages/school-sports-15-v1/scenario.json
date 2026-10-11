@@ -1,0 +1,935 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "school-sports",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "校園運動會",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 15,
+  "targets": [
+    {
+      "word": "playground",
+      "entryGuid": "595cdbcd-c009-572c-8089-f1cc069340e5",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "操場",
+      "interaction": null
+    },
+    {
+      "word": "race",
+      "entryGuid": "04359cf1-c49c-5632-b830-8abe21159b9e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "比賽",
+      "interaction": null
+    },
+    {
+      "word": "flag",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "旗幟",
+      "interaction": null
+    },
+    {
+      "word": "basketball",
+      "entryGuid": "31f8bb1f-26c7-556b-a43c-f515f7d533a3",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "籃球",
+      "interaction": null
+    },
+    {
+      "word": "run",
+      "entryGuid": "508738cf-7c4d-531d-9ae1-d27a598e1df9",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "跑步",
+      "interaction": null
+    },
+    {
+      "word": "jump",
+      "entryGuid": "fc032c20-6b0f-59ce-a529-8d23dd7d69a2",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "跳躍",
+      "interaction": null
+    },
+    {
+      "word": "fast",
+      "entryGuid": "2e669a8b-b591-59b6-915c-c4250f7918c4",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "快的",
+      "interaction": null
+    },
+    {
+      "word": "slow",
+      "entryGuid": "668a47d0-6979-56fd-ae87-f29785c5fbe6",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "慢的",
+      "interaction": null
+    },
+    {
+      "word": "team",
+      "entryGuid": "74232fe5-fbb3-580a-b4da-2c570a79d9de",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "隊伍",
+      "interaction": null
+    },
+    {
+      "word": "ball",
+      "entryGuid": "d4537a6a-ee82-5b34-8fc4-c431d45ccde9",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "球",
+      "interaction": null
+    },
+    {
+      "word": "shoe",
+      "entryGuid": "cc6ba09c-72ff-5c1f-8b49-08f6c7125745",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "鞋子",
+      "interaction": null
+    },
+    {
+      "word": "strong",
+      "entryGuid": "2da1fa1c-a126-583b-a84c-21399f91ac09",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "強壯的",
+      "interaction": null
+    },
+    {
+      "word": "tired",
+      "entryGuid": "ccf6918e-e54d-599c-98ec-d822325dcda5",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "疲倦的",
+      "interaction": null
+    },
+    {
+      "word": "child",
+      "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "孩子",
+      "interaction": null
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "interaction": null
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "Our team meets on the playground for a race today. I check each shoe before I run with my friends. A bright flag is near the end of the race. I am fast, but my friend is slow at first. We are strong and keep going until we finish. Then we jump for fun beside the basketball area. A child plays with a ball near our teacher. Soon we are tired and sit down to drink water. We smile and talk about what we can try next.",
+    "textZh": "今天我們的隊伍在操場集合參加比賽。和朋友跑步前，我檢查兩腳的鞋子。比賽終點附近有一面鮮明的旗幟。我跑得快，但朋友一開始較慢。我們很強壯，繼續努力直到完成。接著我們在籃球區旁開心地跳躍。一個孩子在老師附近玩球。很快我們累了，坐下來喝水。我們笑著討論下次可以試試什麼。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "Our team meets on the playground for a race today.",
+        "zh": "今天我們的隊伍在操場集合參加比賽。",
+        "wordLinks": [
+          {
+            "surface": "Our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "team",
+            "word": "team",
+            "entryGuid": "74232fe5-fbb3-580a-b4da-2c570a79d9de",
+            "isTarget": true,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "meets",
+            "word": "meet",
+            "entryGuid": "3c09f046-7faa-50d6-89f6-4db1f583ddaa",
+            "isTarget": false,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "playground",
+            "word": "playground",
+            "entryGuid": "595cdbcd-c009-572c-8089-f1cc069340e5",
+            "isTarget": true,
+            "start": 22,
+            "end": 32
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 37,
+            "end": 38
+          },
+          {
+            "surface": "race",
+            "word": "race",
+            "entryGuid": "04359cf1-c49c-5632-b830-8abe21159b9e",
+            "isTarget": true,
+            "start": 39,
+            "end": 43
+          },
+          {
+            "surface": "today",
+            "word": "today",
+            "entryGuid": "47eeff73-685a-50ee-814d-4f4f8b5cfb43",
+            "isTarget": false,
+            "start": 44,
+            "end": 49
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "I check each shoe before I run with my friends.",
+        "zh": "和朋友跑步前，我檢查兩腳的鞋子。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "check",
+            "word": "check",
+            "entryGuid": "7242d255-af15-510d-8c98-44f37f9b9ee0",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "each",
+            "word": "each",
+            "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "shoe",
+            "word": "shoe",
+            "entryGuid": "cc6ba09c-72ff-5c1f-8b49-08f6c7125745",
+            "isTarget": true,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 18,
+            "end": 24
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 25,
+            "end": 26
+          },
+          {
+            "surface": "run",
+            "word": "run",
+            "entryGuid": "508738cf-7c4d-531d-9ae1-d27a598e1df9",
+            "isTarget": true,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 36,
+            "end": 38
+          },
+          {
+            "surface": "friends",
+            "word": "friend",
+            "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+            "isTarget": false,
+            "start": 39,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "A bright flag is near the end of the race.",
+        "zh": "比賽終點附近有一面鮮明的旗幟。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "bright",
+            "word": "bright",
+            "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+            "isTarget": false,
+            "start": 2,
+            "end": 8
+          },
+          {
+            "surface": "flag",
+            "word": "flag",
+            "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+            "isTarget": true,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "end",
+            "word": "end",
+            "entryGuid": "40b5005d-7c55-58f9-8fe5-0cd57d2fcc16",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 30,
+            "end": 32
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "race",
+            "word": "race",
+            "entryGuid": "04359cf1-c49c-5632-b830-8abe21159b9e",
+            "isTarget": true,
+            "start": 37,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "I am fast, but my friend is slow at first.",
+        "zh": "我跑得快，但朋友一開始較慢。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "am",
+            "word": "am",
+            "entryGuid": "27f44900-dca0-5f8e-8a58-a4a00832cf0b",
+            "isTarget": false,
+            "start": 2,
+            "end": 4
+          },
+          {
+            "surface": "fast",
+            "word": "fast",
+            "entryGuid": "2e669a8b-b591-59b6-915c-c4250f7918c4",
+            "isTarget": true,
+            "start": 5,
+            "end": 9
+          },
+          {
+            "surface": "but",
+            "word": "but",
+            "entryGuid": "6bc80d04-84e6-5602-a22e-ab8101e03ee7",
+            "isTarget": false,
+            "start": 11,
+            "end": 14
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "friend",
+            "word": "friend",
+            "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+            "isTarget": false,
+            "start": 18,
+            "end": 24
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "slow",
+            "word": "slow",
+            "entryGuid": "668a47d0-6979-56fd-ae87-f29785c5fbe6",
+            "isTarget": true,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "first",
+            "word": "first",
+            "entryGuid": "eb25f77b-5263-5877-a03e-24cd1689e6eb",
+            "isTarget": false,
+            "start": 36,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "We are strong and keep going until we finish.",
+        "zh": "我們很強壯，繼續努力直到完成。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "strong",
+            "word": "strong",
+            "entryGuid": "2da1fa1c-a126-583b-a84c-21399f91ac09",
+            "isTarget": true,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 14,
+            "end": 17
+          },
+          {
+            "surface": "keep",
+            "word": "keep",
+            "entryGuid": "d63f5c23-0339-5669-92a1-9c8f139bb857",
+            "isTarget": false,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "going",
+            "word": "go",
+            "entryGuid": "59507b98-d561-5243-8ee8-6492d7cebeb5",
+            "isTarget": false,
+            "start": 23,
+            "end": 28
+          },
+          {
+            "surface": "until",
+            "word": "until",
+            "entryGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+            "isTarget": false,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 38,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "Then we jump for fun beside the basketball area.",
+        "zh": "接著我們在籃球區旁開心地跳躍。",
+        "wordLinks": [
+          {
+            "surface": "Then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "jump",
+            "word": "jump",
+            "entryGuid": "fc032c20-6b0f-59ce-a529-8d23dd7d69a2",
+            "isTarget": true,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "fun",
+            "word": "fun",
+            "entryGuid": "89ba493b-515c-5161-8772-c25b3ace3091",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "basketball",
+            "word": "basketball",
+            "entryGuid": "31f8bb1f-26c7-556b-a43c-f515f7d533a3",
+            "isTarget": true,
+            "start": 32,
+            "end": 42
+          },
+          {
+            "surface": "area",
+            "word": "area",
+            "entryGuid": "c9857d87-09ab-5598-b615-6b9a5a668eb0",
+            "isTarget": false,
+            "start": 43,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "A child plays with a ball near our teacher.",
+        "zh": "一個孩子在老師附近玩球。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "plays",
+            "word": "play",
+            "entryGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 19,
+            "end": 20
+          },
+          {
+            "surface": "ball",
+            "word": "ball",
+            "entryGuid": "d4537a6a-ee82-5b34-8fc4-c431d45ccde9",
+            "isTarget": true,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "surface": "near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 26,
+            "end": 30
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": false,
+            "start": 35,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "Soon we are tired and sit down to drink water.",
+        "zh": "很快我們累了，坐下來喝水。",
+        "wordLinks": [
+          {
+            "surface": "Soon",
+            "word": "soon",
+            "entryGuid": "5061831b-3bb0-539e-9838-209c76ece493",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "tired",
+            "word": "tired",
+            "entryGuid": "ccf6918e-e54d-599c-98ec-d822325dcda5",
+            "isTarget": true,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "down",
+            "word": "down",
+            "entryGuid": "451dcd82-9969-5473-b509-7f48b55049f6",
+            "isTarget": false,
+            "start": 26,
+            "end": 30
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 31,
+            "end": 33
+          },
+          {
+            "surface": "drink",
+            "word": "drink",
+            "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+            "isTarget": false,
+            "start": 34,
+            "end": 39
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 40,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "We smile and talk about what we can try next.",
+        "zh": "我們笑著討論下次可以試試什麼。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "smile",
+            "word": "smile",
+            "entryGuid": "94b20084-3dfd-548a-b5c9-eceab251ba3f",
+            "isTarget": false,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 9,
+            "end": 12
+          },
+          {
+            "surface": "talk",
+            "word": "talk",
+            "entryGuid": "1361dba3-7b46-5cee-af47-99476ec3c803",
+            "isTarget": false,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "about",
+            "word": "about",
+            "entryGuid": "7923a36d-b3a3-5dda-bd0a-e311c58bc2bf",
+            "isTarget": false,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "what",
+            "word": "what",
+            "entryGuid": "5ae8e0ea-ca3e-53b2-a2dc-6a8be5c392da",
+            "isTarget": false,
+            "start": 24,
+            "end": 28
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "try",
+            "word": "try",
+            "entryGuid": "c6a50e9e-5615-5d79-b754-bcf099d3bcf6",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "next",
+            "word": "next",
+            "entryGuid": "eb74bac2-c475-5f32-b1f3-83f286f561fb",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": null,
+    "storyAudio": null
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "awaiting-reviewed-base-image",
+      "method": "Codex CLI",
+      "sceneDescriptionZh": "操場上一組孩子比賽跑步，另一位孩子跳躍，旁邊放籃球和旗幟。領先者與落後者身體姿勢、距離形成明顯對比，避免把整張圖塞滿人群。增加隊伍聚集區、普通球、運動鞋與喝水休息區，強壯及疲累需故事輔助。"
+    },
+    "storyAudio": {
+      "status": "awaiting-local-tts",
+      "voice": "Serena"
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "target-fifteen-only"
+    }
+  },
+  "contentReview": {
+    "status": "text-prepared-awaiting-media-review",
+    "notes": [
+      "fast 與 slow 單張圖無法直接測量速度；以同場競賽距離和動態線提示，仍需審圖。",
+      "race 本次教競賽名詞，排除人種；track 與 medal 屬 expert，未選。",
+      "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+    ]
+  }
+}

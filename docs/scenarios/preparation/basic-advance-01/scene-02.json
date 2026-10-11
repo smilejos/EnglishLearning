@@ -1,0 +1,176 @@
+{
+  "id": "02",
+  "scenarioKey": "breakfast-kitchen",
+  "titleZh": "廚房準備早餐",
+  "descriptionZh": "明亮廚房中，一名大人用平底鍋煎蛋，孩子在旁切麵包。桌上放牛奶與兩個透明杯，讓杯中飲品的多少有明顯對比。另加入刀子、平底鍋、奶油、果汁與餐桌；新鮮和溫暖需故事輔助辨義。",
+  "targets": [
+    {
+      "word": "kitchen",
+      "entryGuid": "3940129e-ff35-5de4-8f17-361c73dcdef4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "廚房",
+      "visualCueZh": "背景保留爐台、水槽與工作檯，呈現完整廚房空間。"
+    },
+    {
+      "word": "bread",
+      "entryGuid": "e19fc246-c8bc-549b-a9d9-8590d28d100a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "麵包",
+      "visualCueZh": "前景砧板放一條麵包與切好的厚片。"
+    },
+    {
+      "word": "egg",
+      "entryGuid": "5e88aae4-fae4-5376-a0eb-808a62fcf6b4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "雞蛋",
+      "visualCueZh": "桌前放完整帶殼雞蛋，旁邊另有破開的蛋殼。"
+    },
+    {
+      "word": "milk",
+      "entryGuid": "347f1643-7bf0-52ea-bfd7-be478631e73e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "牛奶",
+      "visualCueZh": "透明壺中裝白色牛奶，壺旁放同色飲品的杯子。"
+    },
+    {
+      "word": "cook",
+      "entryGuid": "d5c26cd5-c5e6-59c0-a96c-30ba555eb9f0",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "烹調",
+      "visualCueZh": "大人握鍋鏟，正在爐台平底鍋中煎蛋。"
+    },
+    {
+      "word": "cut",
+      "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "切",
+      "visualCueZh": "孩子在大人陪同下以餐刀切麵包，刀刃接觸麵包。"
+    },
+    {
+      "word": "hot",
+      "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "熱的",
+      "visualCueZh": "平底鍋上方冒出的蒸氣提示鍋子很熱，與故事 The pan is hot 一致。"
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "滿的",
+      "visualCueZh": "前景杯子裝牛奶至接近杯口，旁邊空杯提供對比。"
+    },
+    {
+      "word": "knife",
+      "entryGuid": "e9207cc0-3bb9-50c4-8fb1-c5932164c9e8",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "刀子",
+      "visualCueZh": "桌前放一把刀，大人引導孩子在安全位置切麵包。"
+    },
+    {
+      "word": "pan",
+      "entryGuid": "210af1b7-6654-54c6-a788-39073f589413",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "平底鍋",
+      "visualCueZh": "爐上有長柄平底鍋，鍋內可見雞蛋。"
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "visualCueZh": "中央餐桌露出桌面與桌腳，食物分區擺放。"
+    },
+    {
+      "word": "butter",
+      "entryGuid": "ad6b4669-20c2-5283-9a23-4ba3712e6dbe",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "奶油",
+      "visualCueZh": "白色小碟放淡黃色奶油塊，旁邊麵包已抹少量奶油。"
+    },
+    {
+      "word": "juice",
+      "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "果汁",
+      "visualCueZh": "右側透明杯裝橘色果汁，與白色牛奶分開。"
+    },
+    {
+      "word": "fresh",
+      "entryGuid": "7bbaeb1f-2dfb-5097-b352-82aff054864c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "新鮮的",
+      "visualCueZh": "桌邊籃中放剛採下、帶綠葉的水果供榨汁；仍須故事輔助。"
+    },
+    {
+      "word": "warm",
+      "entryGuid": "9394e846-b90b-5dfe-a6f0-ac9d91be428c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "溫暖的",
+      "visualCueZh": "溫熱麵包旁的人以手掌靠近感受溫度，與有明顯蒸氣的鍋分開。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "We are in the kitchen before school this morning.",
+      "zh": "今天早上上學前，我們在廚房裡。"
+    },
+    {
+      "en": "I help my father cook an egg in a pan.",
+      "zh": "我幫爸爸用平底鍋煎一顆蛋。"
+    },
+    {
+      "en": "The pan is hot, so I stand back and watch.",
+      "zh": "平底鍋很熱，所以我退後站著觀看。"
+    },
+    {
+      "en": "At the table, I use a knife to cut bread.",
+      "zh": "我在桌邊用刀切麵包。"
+    },
+    {
+      "en": "My father helps me put butter on the warm bread.",
+      "zh": "爸爸幫我把奶油抹在溫熱的麵包上。"
+    },
+    {
+      "en": "There is a full glass of milk beside my plate.",
+      "zh": "我的盤子旁有一杯裝滿的牛奶。"
+    },
+    {
+      "en": "We also have fresh juice for our breakfast today.",
+      "zh": "今天早餐還有新鮮果汁。"
+    },
+    {
+      "en": "I take a small bite and smile at my father.",
+      "zh": "我咬了一小口，對爸爸微笑。"
+    },
+    {
+      "en": "Our breakfast is ready, and we sit down together.",
+      "zh": "早餐準備好了，我們一起坐下。"
+    }
+  ],
+  "aliases": {
+    "are": "be",
+    "is": "be",
+    "helps": "help"
+  },
+  "reviewNotes": [
+    "hot 以平底鍋上方的蒸氣提示溫度，故事教鍋子很熱；蒸氣只是線索，仍需詞義輔助。",
+    "full 本次教容器裝滿，不教吃飽；pour 屬 expert，未選。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

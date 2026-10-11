@@ -1,0 +1,176 @@
+{
+  "id": "04",
+  "scenarioKey": "tidy-bedroom",
+  "titleZh": "整理臥室",
+  "descriptionZh": "臥室中央露出床與枕頭，右側打開衣櫥與一格抽屜。孩子把玩具放進抽屜，另一人擦拭桌面；髒衣服堆與整理過的區域形成對比。增加床尾毛毯、窗戶、椅子、玩具與清理中的地板，藍白物件分區。",
+  "targets": [
+    {
+      "word": "bed",
+      "entryGuid": "cec13288-f8ee-50b2-be0e-f7753e716a08",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "床",
+      "visualCueZh": "中央完整呈現床架與床面。"
+    },
+    {
+      "word": "pillow",
+      "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "枕頭",
+      "visualCueZh": "床頭獨立放一顆枕頭，不被棉被遮住。"
+    },
+    {
+      "word": "drawer",
+      "entryGuid": "e6770284-2e09-5312-829c-913dc55ea421",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "抽屜",
+      "visualCueZh": "右側矮櫃最上方抽屜拉開，抽屜盒與把手可見。"
+    },
+    {
+      "word": "closet",
+      "entryGuid": "35c6378b-2885-53a9-bd4b-100cebf8dfa0",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "衣櫥",
+      "visualCueZh": "後方衣櫥打開，衣架與吊掛衣物可見。"
+    },
+    {
+      "word": "put",
+      "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "放",
+      "visualCueZh": "孩子雙手正把玩具放進拉開的抽屜。"
+    },
+    {
+      "word": "clean",
+      "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "打掃",
+      "visualCueZh": "另一人握布擦桌面，擦拭區域旁保留少量灰塵。"
+    },
+    {
+      "word": "tidy",
+      "entryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "整潔的",
+      "visualCueZh": "左側已整理區域的物品整齊排在架上，地板無散落物。"
+    },
+    {
+      "word": "dirty",
+      "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "髒的",
+      "visualCueZh": "右側待洗衣物上有明顯泥漬，與乾淨床面隔開。"
+    },
+    {
+      "word": "blanket",
+      "entryGuid": "2582b0ca-1f00-5d30-bb76-338e4bfb0ad6",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "毛毯",
+      "visualCueZh": "床尾攤開藍色毛毯，與枕頭分開。"
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "visualCueZh": "窗旁獨立椅子露出椅背與四腳。"
+    },
+    {
+      "word": "toy",
+      "entryGuid": "70205063-21a7-5b16-a97e-a4115ee3008f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "玩具",
+      "visualCueZh": "孩子手上拿一台無字玩具車，正要放進抽屜。"
+    },
+    {
+      "word": "floor",
+      "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "地板",
+      "visualCueZh": "前景露出大片地板和少量待清理灰塵。"
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "visualCueZh": "左側窗框與室外明亮景色清楚可見。"
+    },
+    {
+      "word": "blue",
+      "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "藍色的",
+      "visualCueZh": "床尾毛毯是純藍色，與白色枕頭成對比。"
+    },
+    {
+      "word": "white",
+      "entryGuid": "8ed80686-943c-580b-8615-b9bd80095157",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "白色的",
+      "visualCueZh": "床頭枕頭是白色，與藍色毛毯分區。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "My bedroom is dirty after a busy week at school.",
+      "zh": "在學校忙了一週後，我的臥室很髒。"
+    },
+    {
+      "en": "I open the window and let the morning light in.",
+      "zh": "我打開窗戶，讓晨光照進來。"
+    },
+    {
+      "en": "A white pillow lies on the bed beside a blue blanket.",
+      "zh": "床上有一個白色枕頭，旁邊是藍色毛毯。"
+    },
+    {
+      "en": "I put my toy in the drawer near the closet.",
+      "zh": "我把玩具放進衣櫥附近的抽屜。"
+    },
+    {
+      "en": "Then I move the chair away from the window.",
+      "zh": "接著我把椅子從窗邊移開。"
+    },
+    {
+      "en": "My brother helps me clean the floor with water.",
+      "zh": "哥哥幫我用水清理地板。"
+    },
+    {
+      "en": "We also make the bed and pick up our clothes.",
+      "zh": "我們也整理床鋪，撿起衣服。"
+    },
+    {
+      "en": "The room is tidy, and there is space to play.",
+      "zh": "房間整潔了，也有空間可以玩。"
+    },
+    {
+      "en": "We sit down and enjoy the bright room together.",
+      "zh": "我們一起坐下，享受明亮的房間。"
+    }
+  ],
+  "aliases": {
+    "is": "be",
+    "lies": "lie",
+    "helps": "help"
+  },
+  "reviewNotes": [
+    "tidy 本次取形容詞、clean 取動詞；避免兩個標籤都指同一處。",
+    "fold 屬 expert，改以 put 呈現整理動作。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

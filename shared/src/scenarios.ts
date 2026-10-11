@@ -5,8 +5,18 @@ import { z } from "zod";
 import sharp from "sharp";
 
 export const ScenarioKeySchema = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(80);
+export const SCENARIO_MAX_TARGETS = 25;
 const Hash = z.string().regex(/^[a-f0-9]{64}$/);
 const Text = z.string().trim().min(1).max(20000);
+export const ScenarioParagraphBreakIdsSchema = z.array(Text).min(1).max(99);
+export function validateScenarioParagraphBreaks(story: { sentences: Array<{ id: string }>; paragraphBreakAfterSentenceIds?: string[] }, ctx: z.RefinementCtx): void {
+  const breaks = story.paragraphBreakAfterSentenceIds;
+  if (!breaks) return;
+  const sentenceIds = new Set(story.sentences.map(s => s.id));
+  if (new Set(breaks).size !== breaks.length) ctx.addIssue({ code: "custom", message: "故事分段句子 ID 不可重複" });
+  if (breaks.some(id => !sentenceIds.has(id))) ctx.addIssue({ code: "custom", message: "故事分段須指定存在的句子 ID" });
+  if (breaks.includes(story.sentences.at(-1)?.id ?? "")) ctx.addIssue({ code: "custom", message: "故事最後一句之後不可分段" });
+}
 const Point = z.object({ x: z.number().finite().min(0).max(1), y: z.number().finite().min(0).max(1) }).strict();
 export const ScenarioTargetSchema = z.object({
   word: Text, entryGuid: z.string().uuid(), list: z.enum(["basic", "advance"]),
@@ -18,18 +28,20 @@ const WordLink = z.object({ surface: Text, word: Text, entryGuid: z.string().uui
 export const ScenarioContentSchema = z.object({
   schemaVersion: z.literal(1), scenarioKey: ScenarioKeySchema, revision: z.number().int().positive(), titleZh: Text,
   vocabularyFilter: z.object({ system: z.literal("list"), levels: z.array(z.enum(["basic", "advance"])).min(1).max(2) }).strict(),
-  targetCount: z.literal(15), targets: z.array(ScenarioTargetSchema).length(15),
+  targetCount: z.number().int().min(1).max(SCENARIO_MAX_TARGETS), targets: z.array(ScenarioTargetSchema).min(1).max(SCENARIO_MAX_TARGETS),
   story: z.object({ language: z.literal("en"), translationLanguage: z.literal("zh-Hant"), textEn: Text, textZh: Text,
     sentences: z.array(z.object({ id: Text, en: Text, zh: Text, wordLinks: z.array(WordLink).min(1) }).strict()).min(1).max(100),
+    paragraphBreakAfterSentenceIds: ScenarioParagraphBreakIdsSchema.optional(),
   }).strict(),
 }).strict().superRefine((value, ctx) => {
   const fail = (message: string) => ctx.addIssue({ code: "custom", message });
   const targets = new Map(value.targets.map(t => [t.entryGuid, t]));
-  if (targets.size !== 15 || new Set(value.targets.map(t => t.word)).size !== 15) fail("目標單字/GUID 不可重複");
-  for (const pos of ["n", "v", "adj"]) if (!value.targets.some(t => t.teachingPos === pos)) fail(`目標須包含 ${pos}`);
+  if (value.targetCount !== value.targets.length) fail("目標數量與詞條數不符");
+  if (targets.size !== value.targets.length || new Set(value.targets.map(t => t.word)).size !== value.targets.length) fail("目標單字/GUID 不可重複");
   if (value.targets.some(t => !value.vocabularyFilter.levels.includes(t.list))) fail("目標超出指定級別");
   if (value.story.textEn !== value.story.sentences.map(s => s.en).join(" ") || value.story.textZh !== value.story.sentences.map(s => s.zh).join("")) fail("故事全文與句子不符");
   if (new Set(value.story.sentences.map(s => s.id)).size !== value.story.sentences.length) fail("故事句子 ID 重複");
+  validateScenarioParagraphBreaks(value.story, ctx);
   const covered = new Set<string>();
   for (const sentence of value.story.sentences) {
     const tokens = [...sentence.en.matchAll(/[A-Za-z]+(?:['’][A-Za-z]+)*/g)];
@@ -42,7 +54,7 @@ export const ScenarioContentSchema = z.object({
       if (target) covered.add(link.entryGuid);
     });
   }
-  if (covered.size !== 15) fail("故事須涵蓋十五個目標詞");
+  if (covered.size !== targets.size) fail("故事須涵蓋所有目標詞");
 });
 export type ScenarioContent = z.infer<typeof ScenarioContentSchema>;
 export const ScenarioAssetSchema = z.object({ relativePath: z.string().regex(/^scenarios\/[a-z0-9-]+\/[1-9][0-9]*\/[a-f0-9]{64}\.(png|jpg|webp|mp3)$/),
@@ -52,7 +64,7 @@ export const ScenarioAssetSchema = z.object({ relativePath: z.string().regex(/^s
 export type ScenarioAsset = z.infer<typeof ScenarioAssetSchema>;
 export interface ScenarioMedia { image: ScenarioAsset; audio: ScenarioAsset }
 export interface ScenarioRecord { content: ScenarioContent; media: ScenarioMedia; status: "draft" | "published"; contentHash: string }
-export interface ScenarioSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; vocabularyFilter: ScenarioContent["vocabularyFilter"]; targetCount: 15 }
+export interface ScenarioSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; vocabularyFilter: ScenarioContent["vocabularyFilter"]; targetCount: number }
 export interface ScenarioDetail extends ScenarioContent { status: "draft" | "published"; image: { url: string; width: number; height: number }; storyAudio: { url: string } }
 export const scenarioHash = (data: string | Buffer): string => createHash("sha256").update(data).digest("hex");
 /** 物件 key 順序不構成新的 revision。 */

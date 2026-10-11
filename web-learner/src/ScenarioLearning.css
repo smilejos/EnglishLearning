@@ -35,6 +35,7 @@
 .scenario-pending { display: inline-flex; align-items: center; gap: 6px; font-size: .82rem; color: var(--text-soft); }
 .scenario-story-hint { font-size: .87rem; color: var(--text-soft); line-height: 1.65; margin: 12px 0 20px; }
 .scenario-story-text { font: var(--reading-size)/var(--reading-leading) var(--font-body); margin: 0; }
+.scenario-story-text + .scenario-story-text { margin-top: 1em; }
 .scenario-story-word { font: inherit; display: inline; padding: 0; border: 0; background: transparent; color: inherit; border-radius: 3px; }
 .scenario-story-word.is-target { color: var(--accent-strong); font-weight: 700; text-decoration: underline; text-decoration-color: #c7d2fe; text-underline-offset: 4px; }
 .scenario-story-word:hover { background: var(--accent-soft); color: var(--accent-strong); }
@@ -42,6 +43,7 @@
 .scenario-learning summary { color: var(--accent-strong); font-size: .92rem; cursor: pointer; padding-block: 12px; }
 .scenario-learning summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .scenario-translation p { line-height: 1.9; color: var(--text-soft); margin: 4px 0 0; }
+.scenario-translation p + p { margin-top: 1em; }
 .scenario-card-title { display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
 .scenario-card-title h3 { font: 600 1.8rem/1.2 var(--font-display); margin: 0; overflow-wrap: anywhere; }
 .scenario-word-meta { color: var(--text-soft); font-size: .84rem; margin: 10px 0; }
@@ -71,6 +73,12 @@
 .scenario-list-item:hover h2 { color: var(--accent-strong); }
 .scenario-mode { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 .scenario-mode > span { color: var(--text-soft); font-size: .87rem; margin-inline: 4px; }
+.scenario-recall { margin: -8px 0 24px; }
+.scenario-recall > p { color: var(--text-soft); font-size: .9rem; line-height: 1.65; margin: 0 0 12px; }
+.scenario-recall-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.scenario-recall-controls .btn, .scenario-recall-all { min-height: 44px; }
+.scenario-recall-count { font-variant-numeric: tabular-nums; }
+.scenario-recall > .scenario-recall-status { margin: 10px 0 0; font-size: .85rem; }
 .scenario-arrows { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; filter: drop-shadow(0 1px 2px rgb(27 35 48 / 55%)); }
 .scenario-label { position: absolute; transform: translate(-50%, -50%); padding: 4px 8px; min-height: 32px; border: 1px solid transparent; border-radius: var(--radius-sm); background: rgb(27 35 48 / 68%); color: white; font: 500 clamp(.8rem, 1.6vw, 1.3rem)/1.25 var(--font-display); white-space: nowrap; }
 .scenario-label:hover, .scenario-label.is-selected { background: var(--accent-strong); border-color: white; }

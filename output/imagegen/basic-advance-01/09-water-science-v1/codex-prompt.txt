@@ -1,0 +1,68 @@
+使用 Codex CLI 的原生 image_generation 工具，為「09 測量與混合的科學小實驗」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/09-water-science-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/09-water-science-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/09-water-science-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+教室實驗桌上一邊測量透明瓶子的高度，一邊把兩色水混合。前景兩個同尺寸透明杯分別裝滿與留空，所有器材以寬間距擺放。增加有把手小杯、清澈水瓶與獨立水滴；只使用安全色水進行視覺活動。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. bottle (n; 瓶子): 桌左放透明窄口瓶，瓶身與瓶口完整呈現。
+2. water (n; 水): 前景透明壺中裝清水，水面與光線折射可見。
+3. glass (n; 玻璃杯): 桌前放無柄透明玻璃飲用杯。
+4. ruler (n; 尺): 瓶子旁豎放長尺，刻度線可見但無數字。
+5. measure (v; 測量): 孩子將尺與瓶底對齊，眼睛看瓶子最高處。
+6. mix (v; 混合): 另一孩子把藍色與黃色液體倒入中央杯，交接處呈綠色。
+7. empty (adj; 空的): 右側透明杯杯底清楚可見，沒有液體。
+8. full (adj; 滿的): 相鄰同尺寸透明杯裝液體到接近杯口。
+9. clear (adj; 清澈的): 透明瓶內的水清澈，可直接看見瓶後背景。
+10. drop (n; 一滴): 瓶口附近一滴水與小杯分開放大呈現。
+11. cup (n; 杯子): 實驗桌右側放有把手的小杯，與玻璃杯分開。
+12. science (n; 科學): 教室工作桌上的測量與混色活動共同提示科學課。
+13. careful (adj; 小心的): 孩子雙手穩定拿住容器、目光集中，老師在旁協助。
+14. blue (adj; 藍色的): 左側容器中水呈明確藍色。
+15. yellow (adj; 黃色的): 右側容器中水呈明確黃色，與藍色分開。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+Today we learn about water in our science class.
+今天我們在科學課學習水的知識。
+There is a bottle of clear water on the table.
+桌上有一瓶清澈的水。
+I use a ruler to measure how tall it is.
+我用尺測量瓶子有多高。
+My friend puts blue water in a small cup.
+朋友把藍色的水放進一個小杯子。
+We mix it with yellow water and watch the color change.
+我們把它和黃色的水混合，看著顏色改變。
+A glass beside us is full, but another is empty.
+我們旁邊一個玻璃杯是滿的，另一個則是空的。
+I am careful when I move the full glass.
+移動裝滿的玻璃杯時，我很小心。
+Only a drop of water falls on the table.
+只有一滴水落在桌上。
+We clean our place and tell the teacher what we see.
+我們清理座位，把看到的結果告訴老師。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[MATERIAL SURFACES / DIRECTIONAL ACTIONS]
+All book spines, covers, packaging, ruler surfaces, machine panels, clothing tags and signs must be plain solid colors or simple isolated geometric shapes. Never draw strings of tiny glyph-like dots, squiggles, decorative strokes, catalog labels, pseudo-writing, digits, brands or scale numbers. Rulers may have only evenly spaced straight tick lines; no dots, curves or marks beside the ticks. Book illustration pages may contain pictures only with completely blank margins. Buttons and indicators are isolated plain shapes, never character clusters. A visual cue for borrow, return, give, receive, pay or exchange must show the direction physically: visible handover/contact between sender and receiver, or a clearly appropriate deposit into a receptacle. Merely holding an item while waiting is insufficient. Keep simultaneous opposite transfers clearly separate and hands anatomically plausible.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/09-water-science-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

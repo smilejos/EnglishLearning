@@ -1,0 +1,178 @@
+{
+  "id": "07",
+  "scenarioKey": "library-visit",
+  "titleZh": "圖書館找書與借書",
+  "descriptionZh": "圖書館中央有高書架與獨立借書櫃檯。一名孩子沿書架找書，另一名孩子從館員手中接取借出的書；前景第三名孩子吃力抱著一疊厚書，旁邊保留查詢電腦。加入還書交接、閱讀區、書袋與協助人物，借入及歸還分開呈現。",
+  "targets": [
+    {
+      "word": "library",
+      "entryGuid": "50f5727a-4c23-5910-82f8-73be2fce8b99",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "圖書館",
+      "visualCueZh": "背景呈現多排書架、閱讀桌與借書櫃檯。"
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書本",
+      "visualCueZh": "前景桌面放一本書，書脊與封面完整可見。"
+    },
+    {
+      "word": "shelf",
+      "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "架子",
+      "visualCueZh": "中央獨立書架露出多層水平板，書籍不完全塞滿。"
+    },
+    {
+      "word": "computer",
+      "entryGuid": "2bc6469f-d280-5991-b4f0-b0c1d897b1b7",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "電腦",
+      "visualCueZh": "查詢桌上有螢幕、鍵盤與滑鼠。"
+    },
+    {
+      "word": "borrow",
+      "entryGuid": "2aec94a9-e7e6-5b31-86a4-50ba00fe1104",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "借入",
+      "visualCueZh": "孩子在借書櫃檯雙手接過館員交出的書，呈現借閱交接。"
+    },
+    {
+      "word": "search",
+      "entryGuid": "e0610abe-aee8-553a-9405-1384f7cb4a15",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "尋找",
+      "visualCueZh": "另一名孩子沿著書脊逐一看，手指與視線指向不同書本。"
+    },
+    {
+      "word": "tall",
+      "entryGuid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "高的",
+      "visualCueZh": "後方書架高過站立成人，旁邊矮書架形成尺度對比。"
+    },
+    {
+      "word": "heavy",
+      "entryGuid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "重的",
+      "visualCueZh": "前景孩子雙臂吃力抱一大疊厚書，身體微向後傾。"
+    },
+    {
+      "word": "child",
+      "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "孩子",
+      "visualCueZh": "借書櫃檯前有一名較小的孩子接取圖書。"
+    },
+    {
+      "word": "return",
+      "entryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "歸還",
+      "visualCueZh": "另一人把書交回館員，與借書人物分開且方向相反。"
+    },
+    {
+      "word": "story",
+      "entryGuid": "32312092-5567-5fc4-8a22-fdd8d1632b74",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "故事",
+      "visualCueZh": "一本打開的書呈現連續小圖，故事內容由旁白輔助。"
+    },
+    {
+      "word": "read",
+      "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "閱讀",
+      "visualCueZh": "閱讀區人物低頭看打開的書，食指沿書頁移動。"
+    },
+    {
+      "word": "helpful",
+      "entryGuid": "2599cb0d-c590-5e3f-b718-0ec19236347a",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "樂於助人的",
+      "visualCueZh": "館員主動指向書架並協助小孩，仍需故事輔助辨義。"
+    },
+    {
+      "word": "bag",
+      "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "袋子",
+      "visualCueZh": "閱讀桌旁放有提把的裝書袋，袋身清楚可見。"
+    },
+    {
+      "word": "quiet",
+      "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "安靜的",
+      "visualCueZh": "閱讀區人物閉嘴閱讀，與借書區分開。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "I go to the library with my father after school.",
+      "zh": "放學後，我和爸爸去圖書館。"
+    },
+    {
+      "en": "First, we return a book at the front desk.",
+      "zh": "我們先在前方櫃檯還一本書。"
+    },
+    {
+      "en": "A helpful woman shows us how to use the computer.",
+      "zh": "一位樂於助人的女士教我們使用電腦。"
+    },
+    {
+      "en": "We search for a story about a child and a dog.",
+      "zh": "我們找一個關於孩子和狗的故事。"
+    },
+    {
+      "en": "The book is on a tall shelf near the window.",
+      "zh": "那本書放在窗邊的高書架上。"
+    },
+    {
+      "en": "My father takes it down so I can borrow it.",
+      "zh": "爸爸把它拿下來，讓我可以借閱。"
+    },
+    {
+      "en": "My bag is heavy with books, so he carries it.",
+      "zh": "我的袋子裝著書很重，所以由他來提。"
+    },
+    {
+      "en": "We sit in a quiet corner and read together.",
+      "zh": "我們坐在安靜的角落，一起閱讀。"
+    },
+    {
+      "en": "I enjoy the story and want to come back soon.",
+      "zh": "我很喜歡這個故事，想很快再來。"
+    }
+  ],
+  "aliases": {
+    "shows": "show",
+    "is": "be",
+    "takes": "take",
+    "books": "book",
+    "carries": "carry"
+  },
+  "reviewNotes": [
+    "borrow 可能被看成買書或還書；圖書館櫃檯與接取方向是必要線索。",
+    "heavy 表達重量，不把厚或多直接等同重；ladder 屬 expert，未選。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

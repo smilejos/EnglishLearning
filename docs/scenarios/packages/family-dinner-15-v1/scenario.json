@@ -1,0 +1,1067 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "family-dinner",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "家庭一起用餐",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 15,
+  "targets": [
+    {
+      "word": "plate",
+      "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "盤子",
+      "interaction": {
+        "label": {
+          "x": 0.503,
+          "y": 0.954
+        },
+        "object": {
+          "x": 0.51,
+          "y": 0.824
+        }
+      }
+    },
+    {
+      "word": "fork",
+      "entryGuid": "8eb4c30c-5207-52f6-8d17-1f966a14683a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "叉子",
+      "interaction": {
+        "label": {
+          "x": 0.287,
+          "y": 0.88
+        },
+        "object": {
+          "x": 0.373,
+          "y": 0.785
+        }
+      }
+    },
+    {
+      "word": "spoon",
+      "entryGuid": "ecd0366a-ed6e-5306-9b55-b259206b5f6d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "湯匙",
+      "interaction": {
+        "label": {
+          "x": 0.679,
+          "y": 0.928
+        },
+        "object": {
+          "x": 0.65,
+          "y": 0.817
+        }
+      }
+    },
+    {
+      "word": "rice",
+      "entryGuid": "ab2af344-6cb4-594b-8157-ce67da043e75",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "米飯",
+      "interaction": {
+        "label": {
+          "x": 0.429,
+          "y": 0.734
+        },
+        "object": {
+          "x": 0.466,
+          "y": 0.609
+        }
+      }
+    },
+    {
+      "word": "eat",
+      "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "吃",
+      "interaction": {
+        "label": {
+          "x": 0.211,
+          "y": 0.209
+        },
+        "object": {
+          "x": 0.155,
+          "y": 0.259
+        }
+      }
+    },
+    {
+      "word": "share",
+      "entryGuid": "e97f2c91-8291-58f9-aa30-f17af2ba9cf4",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "分享",
+      "interaction": {
+        "label": {
+          "x": 0.603,
+          "y": 0.342
+        },
+        "object": {
+          "x": 0.547,
+          "y": 0.449
+        }
+      }
+    },
+    {
+      "word": "hungry",
+      "entryGuid": "2d388700-5b9a-5927-b571-6efe0040ef63",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "飢餓的",
+      "interaction": {
+        "label": {
+          "x": 0.334,
+          "y": 0.25
+        },
+        "object": {
+          "x": 0.272,
+          "y": 0.544
+        }
+      }
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "飽的",
+      "interaction": {
+        "label": {
+          "x": 0.846,
+          "y": 0.35
+        },
+        "object": {
+          "x": 0.925,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "family",
+      "entryGuid": "3dce25c5-181c-5ff5-9910-b8f915ab05b3",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "家人",
+      "interaction": {
+        "label": {
+          "x": 0.387,
+          "y": 0.19
+        },
+        "object": {
+          "x": 0.505,
+          "y": 0.379
+        }
+      }
+    },
+    {
+      "word": "soup",
+      "entryGuid": "03efd4ff-bc2a-5d5c-8708-fad1c4a553fb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "湯",
+      "interaction": {
+        "label": {
+          "x": 0.75,
+          "y": 0.875
+        },
+        "object": {
+          "x": 0.738,
+          "y": 0.704
+        }
+      }
+    },
+    {
+      "word": "bowl",
+      "entryGuid": "e35a0e95-016f-596e-bad6-e974c904f920",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "碗",
+      "interaction": {
+        "label": {
+          "x": 0.848,
+          "y": 0.846
+        },
+        "object": {
+          "x": 0.737,
+          "y": 0.781
+        }
+      }
+    },
+    {
+      "word": "chicken",
+      "entryGuid": "19f4c758-b070-5639-a6f6-d444b6b215b1",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "雞肉",
+      "interaction": {
+        "label": {
+          "x": 0.593,
+          "y": 0.71
+        },
+        "object": {
+          "x": 0.64,
+          "y": 0.608
+        }
+      }
+    },
+    {
+      "word": "dinner",
+      "entryGuid": "8d095514-2db1-5af6-ab36-da070b4b8057",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "晚餐",
+      "interaction": {
+        "label": {
+          "x": 0.753,
+          "y": 0.056
+        },
+        "object": {
+          "x": 0.72,
+          "y": 0.127
+        }
+      }
+    },
+    {
+      "word": "taste",
+      "entryGuid": "8f3ff47a-5543-51f4-a2fb-283fdb8b9095",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "品嚐",
+      "interaction": {
+        "label": {
+          "x": 0.811,
+          "y": 0.202
+        },
+        "object": {
+          "x": 0.694,
+          "y": 0.328
+        }
+      }
+    },
+    {
+      "word": "happy",
+      "entryGuid": "013069fb-6aeb-597d-9c61-7dcec4504d2c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "快樂的",
+      "interaction": {
+        "label": {
+          "x": 0.099,
+          "y": 0.734
+        },
+        "object": {
+          "x": 0.159,
+          "y": 0.549
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "My family sits together at the table for dinner. I am hungry after a long day at school. There is rice on my plate and soup in my bowl. I use a spoon to taste the soup first. Then I take my fork and eat some chicken. We share the food and talk about our day. My little brother asks for another small bowl of rice. Soon I am full, so I put my spoon down. Everyone is happy to spend this time together.",
+    "textZh": "我的家人一起坐在桌邊吃晚餐。上了一整天的課，我肚子餓了。我的盤子裡有米飯，碗裡有湯。我先用湯匙品嚐湯。接著我拿起叉子，吃一些雞肉。我們分享食物，聊聊今天的事。弟弟想再吃一小碗米飯。很快我吃飽了，所以放下湯匙。大家都很開心能一起度過這段時間。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "My family sits together at the table for dinner.",
+        "zh": "我的家人一起坐在桌邊吃晚餐。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "family",
+            "word": "family",
+            "entryGuid": "3dce25c5-181c-5ff5-9910-b8f915ab05b3",
+            "isTarget": true,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "sits",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 15,
+            "end": 23
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": false,
+            "start": 31,
+            "end": 36
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "surface": "dinner",
+            "word": "dinner",
+            "entryGuid": "8d095514-2db1-5af6-ab36-da070b4b8057",
+            "isTarget": true,
+            "start": 41,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "I am hungry after a long day at school.",
+        "zh": "上了一整天的課，我肚子餓了。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "am",
+            "word": "am",
+            "entryGuid": "27f44900-dca0-5f8e-8a58-a4a00832cf0b",
+            "isTarget": false,
+            "start": 2,
+            "end": 4
+          },
+          {
+            "surface": "hungry",
+            "word": "hungry",
+            "entryGuid": "2d388700-5b9a-5927-b571-6efe0040ef63",
+            "isTarget": true,
+            "start": 5,
+            "end": 11
+          },
+          {
+            "surface": "after",
+            "word": "after",
+            "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 18,
+            "end": 19
+          },
+          {
+            "surface": "long",
+            "word": "long",
+            "entryGuid": "c00a40eb-0325-52fb-8048-fd066da109cd",
+            "isTarget": false,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "day",
+            "word": "day",
+            "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "school",
+            "word": "school",
+            "entryGuid": "af70f279-c3ca-5288-b3e7-be0694b46cd4",
+            "isTarget": false,
+            "start": 32,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "There is rice on my plate and soup in my bowl.",
+        "zh": "我的盤子裡有米飯，碗裡有湯。",
+        "wordLinks": [
+          {
+            "surface": "There",
+            "word": "there",
+            "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "rice",
+            "word": "rice",
+            "entryGuid": "ab2af344-6cb4-594b-8157-ce67da043e75",
+            "isTarget": true,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 17,
+            "end": 19
+          },
+          {
+            "surface": "plate",
+            "word": "plate",
+            "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+            "isTarget": true,
+            "start": 20,
+            "end": 25
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "soup",
+            "word": "soup",
+            "entryGuid": "03efd4ff-bc2a-5d5c-8708-fad1c4a553fb",
+            "isTarget": true,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 38,
+            "end": 40
+          },
+          {
+            "surface": "bowl",
+            "word": "bowl",
+            "entryGuid": "e35a0e95-016f-596e-bad6-e974c904f920",
+            "isTarget": true,
+            "start": 41,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "I use a spoon to taste the soup first.",
+        "zh": "我先用湯匙品嚐湯。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "spoon",
+            "word": "spoon",
+            "entryGuid": "ecd0366a-ed6e-5306-9b55-b259206b5f6d",
+            "isTarget": true,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "taste",
+            "word": "taste",
+            "entryGuid": "8f3ff47a-5543-51f4-a2fb-283fdb8b9095",
+            "isTarget": true,
+            "start": 17,
+            "end": 22
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "soup",
+            "word": "soup",
+            "entryGuid": "03efd4ff-bc2a-5d5c-8708-fad1c4a553fb",
+            "isTarget": true,
+            "start": 27,
+            "end": 31
+          },
+          {
+            "surface": "first",
+            "word": "first",
+            "entryGuid": "eb25f77b-5263-5877-a03e-24cd1689e6eb",
+            "isTarget": false,
+            "start": 32,
+            "end": 37
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "Then I take my fork and eat some chicken.",
+        "zh": "接著我拿起叉子，吃一些雞肉。",
+        "wordLinks": [
+          {
+            "surface": "Then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "surface": "take",
+            "word": "take",
+            "entryGuid": "eb536808-149b-524f-93ad-87bd2527d5da",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "fork",
+            "word": "fork",
+            "entryGuid": "8eb4c30c-5207-52f6-8d17-1f966a14683a",
+            "isTarget": true,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "surface": "eat",
+            "word": "eat",
+            "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+            "isTarget": true,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "some",
+            "word": "some",
+            "entryGuid": "46494184-e96d-5eb9-b4d5-3ec9fd8690de",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "chicken",
+            "word": "chicken",
+            "entryGuid": "19f4c758-b070-5639-a6f6-d444b6b215b1",
+            "isTarget": true,
+            "start": 33,
+            "end": 40
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "We share the food and talk about our day.",
+        "zh": "我們分享食物，聊聊今天的事。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "share",
+            "word": "share",
+            "entryGuid": "e97f2c91-8291-58f9-aa30-f17af2ba9cf4",
+            "isTarget": true,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 9,
+            "end": 12
+          },
+          {
+            "surface": "food",
+            "word": "food",
+            "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+            "isTarget": false,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "talk",
+            "word": "talk",
+            "entryGuid": "1361dba3-7b46-5cee-af47-99476ec3c803",
+            "isTarget": false,
+            "start": 22,
+            "end": 26
+          },
+          {
+            "surface": "about",
+            "word": "about",
+            "entryGuid": "7923a36d-b3a3-5dda-bd0a-e311c58bc2bf",
+            "isTarget": false,
+            "start": 27,
+            "end": 32
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "day",
+            "word": "day",
+            "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "My little brother asks for another small bowl of rice.",
+        "zh": "弟弟想再吃一小碗米飯。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "little",
+            "word": "little",
+            "entryGuid": "58f73838-9a29-5a84-94c0-54188c22658f",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "brother",
+            "word": "brother",
+            "entryGuid": "5d3ef66c-0a7c-5ad9-8647-021957e114df",
+            "isTarget": false,
+            "start": 10,
+            "end": 17
+          },
+          {
+            "surface": "asks",
+            "word": "ask",
+            "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+            "isTarget": false,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 27,
+            "end": 34
+          },
+          {
+            "surface": "small",
+            "word": "small",
+            "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+            "isTarget": false,
+            "start": 35,
+            "end": 40
+          },
+          {
+            "surface": "bowl",
+            "word": "bowl",
+            "entryGuid": "e35a0e95-016f-596e-bad6-e974c904f920",
+            "isTarget": true,
+            "start": 41,
+            "end": 45
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 46,
+            "end": 48
+          },
+          {
+            "surface": "rice",
+            "word": "rice",
+            "entryGuid": "ab2af344-6cb4-594b-8157-ce67da043e75",
+            "isTarget": true,
+            "start": 49,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "Soon I am full, so I put my spoon down.",
+        "zh": "很快我吃飽了，所以放下湯匙。",
+        "wordLinks": [
+          {
+            "surface": "Soon",
+            "word": "soon",
+            "entryGuid": "5061831b-3bb0-539e-9838-209c76ece493",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "surface": "am",
+            "word": "am",
+            "entryGuid": "27f44900-dca0-5f8e-8a58-a4a00832cf0b",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "full",
+            "word": "full",
+            "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+            "isTarget": true,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 16,
+            "end": 18
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 19,
+            "end": 20
+          },
+          {
+            "surface": "put",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "spoon",
+            "word": "spoon",
+            "entryGuid": "ecd0366a-ed6e-5306-9b55-b259206b5f6d",
+            "isTarget": true,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "down",
+            "word": "down",
+            "entryGuid": "451dcd82-9969-5473-b509-7f48b55049f6",
+            "isTarget": false,
+            "start": 34,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "Everyone is happy to spend this time together.",
+        "zh": "大家都很開心能一起度過這段時間。",
+        "wordLinks": [
+          {
+            "surface": "Everyone",
+            "word": "everyone",
+            "entryGuid": "dabe0b24-9c2b-56ee-a06a-7a3f642b26dd",
+            "isTarget": false,
+            "start": 0,
+            "end": 8
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 9,
+            "end": 11
+          },
+          {
+            "surface": "happy",
+            "word": "happy",
+            "entryGuid": "013069fb-6aeb-597d-9c61-7dcec4504d2c",
+            "isTarget": true,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 18,
+            "end": 20
+          },
+          {
+            "surface": "spend",
+            "word": "spend",
+            "entryGuid": "99f3b54b-e5b0-5e4f-acf9-2b2cf30d4ea3",
+            "isTarget": false,
+            "start": 21,
+            "end": 26
+          },
+          {
+            "surface": "this",
+            "word": "this",
+            "entryGuid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 37,
+            "end": 45
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/03-family-dinner-v1/base.png",
+      "sha256": "ff0056c9da57ac441e3e64d9c0b0148e745306002e706b927bcc67fbcebeef30",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/family-dinner/r1/09eeb3d17582e855/story-1bd24a0846e95676.mp3",
+      "sha256": "4d74dc37fa92dff32c52bc93c7617c455413288216384d1eefe925f0a029386f",
+      "language": "en",
+      "textSha256": "1bd24a0846e9567638f04eda5c93c0189b5a682b1acdffb07cf1573dd3f61228",
+      "durationSeconds": 38.448,
+      "bytes": 615212,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "generated-reviewed",
+      "method": "Codex CLI",
+      "sceneDescriptionZh": "一家人在餐桌前吃晚餐，飯碗與餐具分開擺放，彼此不遮擋。一人將一盤菜推向另一人分享，另兩人分別呈現準備開吃與吃飽後的姿勢。增設湯碗、雞肉、品嚐人物與窗外暮色，保留兩種飢飽狀態。"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "target-fifteen-only"
+    }
+  },
+  "contentReview": {
+    "status": "media-prepared-awaiting-ui-and-listening-review",
+    "notes": [
+      "CLI 原生產圖後目視建立十五詞座標；主 agent 再實際看圖。",
+      "share 畫成把菜盤遞給家人，符合分享食物；不要求只能沿桌面滑盤。chicken 畫成熟雞腿可清楚辨認；本次教雞肉，不要求露出骨端。",
+      "英文故事與繁中已獨立審閱；旁白完整解碼與text hash通過，人工聽辨待完成；draft不表示可發布。"
+    ]
+  }
+}

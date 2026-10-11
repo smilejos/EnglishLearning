@@ -1,0 +1,424 @@
+{
+  "id": "08",
+  "scenarioKey": "art-class",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/08-art-class-v1/base.png",
+    "sha256": "ea0c00373fd5818e5346beef360615fda6ab4f78b84471c55f839359c914f34b",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "paint",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左前方多罐顏料。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.096,
+          "y": 0.68
+        },
+        "label": {
+          "x": 0.07,
+          "y": 0.82
+        }
+      }
+    },
+    {
+      "word": "brush",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景橫放的畫筆。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.195,
+          "y": 0.735
+        },
+        "label": {
+          "x": 0.225,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "paper",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側一疊白紙。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.892,
+          "y": 0.734
+        },
+        "label": {
+          "x": 0.905,
+          "y": 0.86
+        }
+      }
+    },
+    {
+      "word": "crayon",
+      "teachingPos": "n",
+      "visualEvidenceZh": "男孩手中的紅色蠟筆。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.317,
+          "y": 0.53
+        },
+        "label": {
+          "x": 0.265,
+          "y": 0.52
+        }
+      }
+    },
+    {
+      "word": "art",
+      "teachingPos": "n",
+      "visualEvidenceZh": "牆上作品與桌上創作材料組成美術活動。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.52,
+          "y": 0.13
+        },
+        "label": {
+          "x": 0.415,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "glue",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央膠水瓶與旁邊少量膠水。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.585,
+          "y": 0.641
+        },
+        "label": {
+          "x": 0.54,
+          "y": 0.76
+        }
+      }
+    },
+    {
+      "word": "shape",
+      "teachingPos": "n",
+      "visualEvidenceZh": "女孩正在剪圓形。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.747,
+          "y": 0.571
+        },
+        "label": {
+          "x": 0.82,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "flower",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側花瓶裡的花朵。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.113,
+          "y": 0.341
+        },
+        "label": {
+          "x": 0.125,
+          "y": 0.215
+        }
+      }
+    },
+    {
+      "word": "table",
+      "teachingPos": "n",
+      "visualEvidenceZh": "共同創作的大桌。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.489,
+          "y": 0.866
+        },
+        "label": {
+          "x": 0.47,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "picture",
+      "teachingPos": "n",
+      "visualEvidenceZh": "男孩正在畫的房屋圖畫。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.351,
+          "y": 0.626
+        },
+        "label": {
+          "x": 0.375,
+          "y": 0.735
+        }
+      }
+    },
+    {
+      "word": "pencil",
+      "teachingPos": "n",
+      "visualEvidenceZh": "後方筆筒中的鉛筆。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.605,
+          "y": 0.33
+        },
+        "label": {
+          "x": 0.585,
+          "y": 0.25
+        }
+      }
+    },
+    {
+      "word": "leaf",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側花莖上的葉子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.042,
+          "y": 0.425
+        },
+        "label": {
+          "x": 0.05,
+          "y": 0.475
+        }
+      }
+    },
+    {
+      "word": "circle",
+      "teachingPos": "n",
+      "visualEvidenceZh": "桌上已剪好的黃色圓紙。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.707,
+          "y": 0.68
+        },
+        "label": {
+          "x": 0.685,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "bottle",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央裝膠水的瓶子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.583,
+          "y": 0.64
+        },
+        "label": {
+          "x": 0.575,
+          "y": 0.48
+        }
+      }
+    },
+    {
+      "word": "sun",
+      "teachingPos": "n",
+      "visualEvidenceZh": "牆上花園畫中的太陽，故事用圓紙製作太陽。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.567,
+          "y": 0.052
+        },
+        "label": {
+          "x": 0.585,
+          "y": 0.075
+        }
+      }
+    },
+    {
+      "word": "colorful",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "牆上花園作品與多色材料。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.153
+        },
+        "label": {
+          "x": 0.54,
+          "y": 0.2
+        }
+      }
+    },
+    {
+      "word": "round",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "女孩所剪的圓形紙。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.743,
+          "y": 0.56
+        },
+        "label": {
+          "x": 0.74,
+          "y": 0.44
+        }
+      }
+    },
+    {
+      "word": "yellow",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "剪好的黃色圓紙，創作中用來做太陽。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.707,
+          "y": 0.68
+        },
+        "label": {
+          "x": 0.8,
+          "y": 0.7
+        }
+      }
+    },
+    {
+      "word": "square",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "桌上粉紅色正方形紙。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.719,
+          "y": 0.777
+        },
+        "label": {
+          "x": 0.735,
+          "y": 0.89
+        }
+      }
+    },
+    {
+      "word": "beautiful",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "牆上花朵作品，故事稱完成的花園漂亮。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.319,
+          "y": 0.134
+        },
+        "label": {
+          "x": 0.22,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "draw",
+      "teachingPos": "v",
+      "visualEvidenceZh": "男孩以蠟筆畫房屋。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.319,
+          "y": 0.55
+        },
+        "label": {
+          "x": 0.285,
+          "y": 0.64
+        }
+      }
+    },
+    {
+      "word": "cut",
+      "teachingPos": "v",
+      "visualEvidenceZh": "女孩拿剪刀剪圓形；scissors屬非允許來源，故事不以此token指名工具。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.703,
+          "y": 0.525
+        },
+        "label": {
+          "x": 0.62,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "color",
+      "teachingPos": "v",
+      "visualEvidenceZh": "男孩用紅蠟筆塗房屋屋頂。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.36,
+          "y": 0.594
+        },
+        "label": {
+          "x": 0.48,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "create",
+      "teachingPos": "v",
+      "visualEvidenceZh": "孩子使用畫紙、蠟筆與剪紙創作作品。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.735,
+          "y": 0.535
+        },
+        "label": {
+          "x": 0.885,
+          "y": 0.465
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 4
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 1,
+    "storyTokenCount": 150,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "現圖能支援畫、剪、塗色與創作；黏貼用put/glue作自然支援詞，glue已取名詞，同字不重複列target。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:24:40.560Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "ea0c00373fd5818e5346beef360615fda6ab4f78b84471c55f839359c914f34b",
+  "targetsSha256": "ad7035d31a2e35ecc1e7d51abcf8c244b0fffbfc120eef86915483297623c6fa",
+  "storySha256": "f3b2a694da8fe04f4548380b9fcb20f7e65246e48d25d8d40a26a39a44d1f439",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}

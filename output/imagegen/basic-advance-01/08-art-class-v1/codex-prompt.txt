@@ -1,0 +1,68 @@
+使用 Codex CLI 的原生 image_generation 工具，為「08 美術課畫畫與剪貼」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/08-art-class-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/08-art-class-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/08-art-class-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+美術教室桌上分區擺放顏料、筆刷、蠟筆和紙。一位孩子畫圖，另一位剪出圓形紙片；牆上彩色作品與單色作品並排。增加膠水瓶、方形紙片與黄色花朵，剪刀只保留輔助道具不列目標。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. paint (n; 顏料): 左側桌面放打開的顏料罐，罐中彩色顏料清楚可見。
+2. brush (n; 筆刷): 前景放有細握柄與柔毛筆頭的繪畫筆刷。
+3. paper (n; 紙張): 右側放一疊平整白紙，邊緣可見。
+4. crayon (n; 蠟筆): 前景排列幾支粗短彩色蠟筆，與長筆刷區分。
+5. draw (v; 畫畫): 孩子握蠟筆在紙上畫出尚未完成的房子。
+6. cut (v; 剪): 另一孩子以剪刀沿紙上圓形外緣剪，刀口與紙相接。
+7. colorful (adj; 色彩繽紛的): 牆上作品使用多種明顯不同顏色，旁邊單色作品作對比。
+8. round (adj; 圓形的): 右側桌上放剪好的完整圓形紙片，與方形紙分開。
+9. art (n; 美術): 背景展示兒童畫與紙作品，教室有美術工作桌。
+10. glue (n; 膠水): 前景放無字小膠水瓶，旁邊有少量黏貼痕跡。
+11. shape (n; 形狀): 桌面分區放圓形與正方形紙片。
+12. flower (n; 花朵): 桌邊花瓶有大花朵供孩子參考畫畫。
+13. yellow (adj; 黃色的): 其中一朵花與對應畫作使用明確黃色。
+14. square (adj; 正方形的): 桌上紙片有四條等長邊，與圓紙片分開。
+15. table (n; 桌子): 中央工作桌的桌面與桌腳完整可辨。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+In art class, we sit around a large table.
+美術課上，我們圍著一張大桌子坐。
+There is paint, a brush, and paper in front of me.
+我面前有顏料、筆刷和紙。
+I use a crayon to draw a yellow flower.
+我用蠟筆畫一朵黃色的花。
+My friend draws a colorful garden beside my picture.
+朋友在我的圖旁畫了一個色彩繽紛的花園。
+Then I cut a round shape out of paper.
+接著我從紙上剪出一個圓形。
+I also make a square piece for a little house.
+我也做一片正方形紙，拿來做小房子。
+We use glue to put our work on a big sheet.
+我們用膠水把作品貼在一大張紙上。
+Our teacher helps us find a place on the wall.
+老師幫我們在牆上找個位置。
+We stand back and smile at our work together.
+我們一起退後站著，對自己的作品微笑。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[MATERIAL SURFACES / DIRECTIONAL ACTIONS]
+All book spines, covers, packaging, ruler surfaces, machine panels, clothing tags and signs must be plain solid colors or simple isolated geometric shapes. Never draw strings of tiny glyph-like dots, squiggles, decorative strokes, catalog labels, pseudo-writing, digits, brands or scale numbers. Rulers may have only evenly spaced straight tick lines; no dots, curves or marks beside the ticks. Book illustration pages may contain pictures only with completely blank margins. Buttons and indicators are isolated plain shapes, never character clusters. A visual cue for borrow, return, give, receive, pay or exchange must show the direction physically: visible handover/contact between sender and receiver, or a clearly appropriate deposit into a receptacle. Merely holding an item while waiting is insufficient. Keep simultaneous opposite transfers clearly separate and hands anatomically plausible.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/08-art-class-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

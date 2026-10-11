@@ -1,0 +1,180 @@
+{
+  "id": "13",
+  "scenarioKey": "coffee-order",
+  "titleZh": "咖啡店點餐與上飲品",
+  "descriptionZh": "咖啡店前景有菜單、糖罐與杯子，客人指著菜單向店員點餐。另一店員端來一杯有蒸氣的咖啡與一杯有冰塊的咖啡，兩杯分開放。加入三明治、奶盅、湯匙與空椅；熱冷咖啡仍使用不同容器避免標籤重疊。",
+  "targets": [
+    {
+      "word": "coffee",
+      "entryGuid": "f2012afd-cdba-5945-9501-b702b7f77697",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "咖啡",
+      "visualCueZh": "透明杯內呈深棕色咖啡，旁邊少量咖啡豆提示飲品來源。"
+    },
+    {
+      "word": "cup",
+      "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "杯子",
+      "visualCueZh": "前景放一個有把手的陶瓷杯，杯沿完整可見。"
+    },
+    {
+      "word": "menu",
+      "entryGuid": "e2969d29-3c59-548c-b4af-4c67767e2150",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "菜單",
+      "visualCueZh": "客人手上打開的菜單用飲品小圖呈現，無可讀文字。"
+    },
+    {
+      "word": "sugar",
+      "entryGuid": "86dabe50-6417-540a-a97c-685875f90179",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "糖",
+      "visualCueZh": "桌面開口糖罐中有白色方糖，旁放一小塊方糖。"
+    },
+    {
+      "word": "order",
+      "entryGuid": "82eab39c-2f5e-5408-a0b0-a62721cc13c0",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "點餐",
+      "visualCueZh": "客人指向菜單上的飲品圖片，店員面向客人接受點餐。"
+    },
+    {
+      "word": "serve",
+      "entryGuid": "f7119668-da06-5011-bad5-08f375197a28",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "上菜",
+      "visualCueZh": "店員把托盤上的飲品送到客人桌邊。"
+    },
+    {
+      "word": "hot",
+      "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "熱的",
+      "visualCueZh": "左側咖啡杯上方有薄蒸氣，杯中沒有冰塊。"
+    },
+    {
+      "word": "cold",
+      "entryGuid": "2a8f34e9-caf2-5b1c-8518-318d2cdf4590",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "冷的",
+      "visualCueZh": "右側透明咖啡杯中有大冰塊，杯壁出現凝結水滴。"
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "visualCueZh": "前景咖啡桌完整露出桌沿與桌腳。"
+    },
+    {
+      "word": "cream",
+      "entryGuid": "105db983-5c3d-521e-a1db-bee6ddd829bc",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "鮮奶油",
+      "visualCueZh": "桌上小奶盅裝白色鮮奶油，與糖罐分开。"
+    },
+    {
+      "word": "sandwich",
+      "entryGuid": "508e6468-de53-516a-8c25-ea335391aabe",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "三明治",
+      "visualCueZh": "桌旁餐盤有對切三明治，麵包和夾餡清楚可見。"
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "visualCueZh": "顧客桌旁有獨立空椅，露出椅背與椅腳。"
+    },
+    {
+      "word": "spoon",
+      "entryGuid": "ecd0366a-ed6e-5306-9b55-b259206b5f6d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "湯匙",
+      "visualCueZh": "糖罐旁放小湯匙，匙面和柄完整可見。"
+    },
+    {
+      "word": "glass",
+      "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "玻璃杯",
+      "visualCueZh": "冷咖啡使用透明高玻璃杯，與陶瓷熱咖啡杯分開。"
+    },
+    {
+      "word": "happy",
+      "entryGuid": "013069fb-6aeb-597d-9c61-7dcec4504d2c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "快樂的",
+      "visualCueZh": "顧客接到飲品時微笑，姿勢自然放鬆。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "My father and I find a table near the window.",
+      "zh": "爸爸和我在窗邊找到一張桌子。"
+    },
+    {
+      "en": "I sit on a chair while he looks at the menu.",
+      "zh": "我坐在椅子上，他看著菜單。"
+    },
+    {
+      "en": "He wants to order hot coffee and a sandwich.",
+      "zh": "他想點熱咖啡和一份三明治。"
+    },
+    {
+      "en": "I ask for a cold drink in a glass.",
+      "zh": "我想要一杯裝在玻璃杯裡的冷飲。"
+    },
+    {
+      "en": "The worker comes to serve our food and drinks.",
+      "zh": "店員過來為我們送上食物和飲品。"
+    },
+    {
+      "en": "She puts a cup of coffee in front of my father.",
+      "zh": "她把一杯咖啡放在爸爸面前。"
+    },
+    {
+      "en": "There is cream and sugar beside a little spoon.",
+      "zh": "一支小湯匙旁有鮮奶油和糖。"
+    },
+    {
+      "en": "We share the sandwich and talk about our morning.",
+      "zh": "我們分享三明治，聊聊早上的事。"
+    },
+    {
+      "en": "We are happy to enjoy this quiet time together.",
+      "zh": "我們很開心能一起享受這段安靜的時光。"
+    }
+  ],
+  "aliases": {
+    "looks": "look",
+    "wants": "want",
+    "comes": "come",
+    "drinks": "drink",
+    "puts": "put",
+    "is": "be",
+    "are": "be"
+  },
+  "reviewNotes": [
+    "coffee、cup、hot、cold 的標註分別指飲品、容器與溫度線索，需留足位置。",
+    "stir 屬 expert，改用 advance 的 serve。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

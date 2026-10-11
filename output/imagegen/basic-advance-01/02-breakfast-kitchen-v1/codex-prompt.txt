@@ -1,0 +1,22 @@
+使用內建 image_generation 工具完成一張正式英文教材底圖；使用者明確要求透過 Codex CLI 產圖。不要改程式、不要跑測試、不要部署或連資料庫，不讀 .env / keys / auth 檔，不用 Python 圖片 API runner。提供的附件只是3D風格參考，不是編輯客廳。直接生成下述全新的廚房場景，僅一張；保存原始生成圖片到 output/imagegen/basic-advance-01/02-breakfast-kitchen-v1/base.png，保留工具來源路徑；不要覆蓋既有同名不同圖片。完成後回報實際檔案路徑、尺寸、是否有可辨識文字，以及十五個概念是否清楚。不要自行重試或產第二張。
+
+[STYLE]
+Polished cute warm 3D cartoon, like the attached living-room illustration: soft rounded forms, tactile materials, expressive children, bright gentle natural light. Children learning English picture-book aesthetic.
+[SCENE DESCRIPTION]
+Wide bright family breakfast kitchen, approximately 16:9 landscape. A father stands at a rear-left stove cooking an egg in a handled frying pan; a young child at a roomy foreground dining table carefully slices a loaf of bread with a rounded dinner knife while the father is close and attentive. Realistic child-safe breakfast preparation. Natural cheerful home scene, no instructional panels.
+[TARGET VOCABULARY]
+Show all fifteen concepts: kitchen, bread, egg, milk, cook, cut, hot, full, knife, pan, table, butter, juice, fresh, warm. These are concepts only, DO NOT print any of these words.
+[OBJECT VISIBILITY RULES]
+Visible whole egg and shell near foreground-left, clear loaf with cut slices on a wood board, distinguishable knife contacting loaf, pale yellow butter block on a little white dish beside bread. Transparent white-milk jug and a near-full glass of milk, plus an empty glass for contrast at foreground right. A separate transparent glass of orange juice and fresh oranges with little green leaves beside it. All objects are separated enough to point to them. Table surface and legs, kitchen stove and sink visible. Clear handled pan with cooking egg, subtle steam from hot food. Warm bread lightly steaming is distinct from the hotter rear pan; freshness uses fruit and natural juice, with story to clarify abstract adjectives.
+[COMPOSITION]
+Comfortable wide 16:9 view, front table occupies lower half, father/stove left background, child cutting center-left foreground, milk/juice right foreground. Leave small open regions around target objects for website labels; the labels will be added in HTML, so draw none. Keep all target objects fully inside frame with sufficient margins, no crowding/obstruction. One cohesive scene, not a collage.
+[CHARACTERS / ACTIONS]
+Father cooking with spatula, child using rounded table knife to cut bread. Natural correct hands and relaxed happy faces. The child stays away from the hot stove.
+[ANNOTATION STYLE]
+Absolutely none. No labels, callouts, arrows, circles, lines, doodles, letters or vocabulary cards.
+[TEXT RULES]
+No text ANYWHERE: no words, glyphs, letters, numerals, captions, brand marks, packaging lettering, clocks with numbers, signage, book writing, or watermarks. All containers are unbranded plain materials.
+[DECORATION]
+Minimal natural kitchen details; no extraneous props obscuring fifteen teaching concepts. Use a warm tidy breakfast palette with blue cabinets and golden wood, coordinated with reference style.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshots, UI, grids, split scenes, unrecognizable food, duplicates that obscure pointers, missing utensils, floating items, malformed hands, labels, arrows, words, typography, logos, watermarks. Opaque background, not transparent.

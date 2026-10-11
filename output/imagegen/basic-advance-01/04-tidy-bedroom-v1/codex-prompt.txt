@@ -1,0 +1,66 @@
+使用 Codex CLI 的原生 image_generation 工具，為「04 整理臥室」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/04-tidy-bedroom-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/04-tidy-bedroom-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/04-tidy-bedroom-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+臥室中央露出床與枕頭，右側打開衣櫥與一格抽屜。孩子把玩具放進抽屜，另一人擦拭桌面；髒衣服堆與整理過的區域形成對比。增加床尾毛毯、窗戶、椅子、玩具與清理中的地板，藍白物件分區。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. bed (n; 床): 中央完整呈現床架與床面。
+2. pillow (n; 枕頭): 床頭獨立放一顆枕頭，不被棉被遮住。
+3. drawer (n; 抽屜): 右側矮櫃最上方抽屜拉開，抽屜盒與把手可見。
+4. closet (n; 衣櫥): 後方衣櫥打開，衣架與吊掛衣物可見。
+5. put (v; 放): 孩子雙手正把玩具放進拉開的抽屜。
+6. clean (v; 打掃): 另一人握布擦桌面，擦拭區域旁保留少量灰塵。
+7. tidy (adj; 整潔的): 左側已整理區域的物品整齊排在架上，地板無散落物。
+8. dirty (adj; 髒的): 右側待洗衣物上有明顯泥漬，與乾淨床面隔開。
+9. blanket (n; 毛毯): 床尾攤開藍色毛毯，與枕頭分開。
+10. chair (n; 椅子): 窗旁獨立椅子露出椅背與四腳。
+11. toy (n; 玩具): 孩子手上拿一台無字玩具車，正要放進抽屜。
+12. floor (n; 地板): 前景露出大片地板和少量待清理灰塵。
+13. window (n; 窗戶): 左側窗框與室外明亮景色清楚可見。
+14. blue (adj; 藍色的): 床尾毛毯是純藍色，與白色枕頭成對比。
+15. white (adj; 白色的): 床頭枕頭是白色，與藍色毛毯分區。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+My bedroom is dirty after a busy week at school.
+在學校忙了一週後，我的臥室很髒。
+I open the window and let the morning light in.
+我打開窗戶，讓晨光照進來。
+A white pillow lies on the bed beside a blue blanket.
+床上有一個白色枕頭，旁邊是藍色毛毯。
+I put my toy in the drawer near the closet.
+我把玩具放進衣櫥附近的抽屜。
+Then I move the chair away from the window.
+接著我把椅子從窗邊移開。
+My brother helps me clean the floor with water.
+哥哥幫我用水清理地板。
+We also make the bed and pick up our clothes.
+我們也整理床鋪，撿起衣服。
+The room is tidy, and there is space to play.
+房間整潔了，也有空間可以玩。
+We sit down and enjoy the bright room together.
+我們一起坐下，享受明亮的房間。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/04-tidy-bedroom-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

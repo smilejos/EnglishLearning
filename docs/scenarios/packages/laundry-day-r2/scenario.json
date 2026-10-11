@@ -1,0 +1,1751 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "laundry-day",
+  "revision": 2,
+  "status": "draft",
+  "titleZh": "一起洗衣曬衣",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 24,
+  "targets": [
+    {
+      "word": "shirt",
+      "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "襯衫",
+      "interaction": {
+        "object": {
+          "x": 0.505,
+          "y": 0.354
+        },
+        "label": {
+          "x": 0.495,
+          "y": 0.56
+        }
+      }
+    },
+    {
+      "word": "sock",
+      "entryGuid": "449d095e-3408-5ae1-93d2-1976cd804511",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "襪子",
+      "interaction": {
+        "object": {
+          "x": 0.244,
+          "y": 0.205
+        },
+        "label": {
+          "x": 0.235,
+          "y": 0.08
+        }
+      }
+    },
+    {
+      "word": "basket",
+      "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "籃子",
+      "interaction": {
+        "object": {
+          "x": 0.152,
+          "y": 0.824
+        },
+        "label": {
+          "x": 0.125,
+          "y": 0.935
+        }
+      }
+    },
+    {
+      "word": "soap",
+      "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "肥皂",
+      "interaction": {
+        "object": {
+          "x": 0.498,
+          "y": 0.888
+        },
+        "label": {
+          "x": 0.52,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "machine",
+      "entryGuid": "3acc68b5-4531-540d-8cf7-1d8252782dbb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "機器",
+      "interaction": {
+        "object": {
+          "x": 0.105,
+          "y": 0.474
+        },
+        "label": {
+          "x": 0.115,
+          "y": 0.3
+        }
+      }
+    },
+    {
+      "word": "towel",
+      "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "毛巾",
+      "interaction": {
+        "object": {
+          "x": 0.786,
+          "y": 0.35
+        },
+        "label": {
+          "x": 0.78,
+          "y": 0.57
+        }
+      }
+    },
+    {
+      "word": "clothes",
+      "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "衣服",
+      "interaction": {
+        "object": {
+          "x": 0.193,
+          "y": 0.733
+        },
+        "label": {
+          "x": 0.15,
+          "y": 0.605
+        }
+      }
+    },
+    {
+      "word": "line",
+      "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "繩子",
+      "interaction": {
+        "object": {
+          "x": 0.675,
+          "y": 0.187
+        },
+        "label": {
+          "x": 0.66,
+          "y": 0.125
+        }
+      }
+    },
+    {
+      "word": "sun",
+      "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "太陽",
+      "interaction": {
+        "object": {
+          "x": 0.736,
+          "y": 0.063
+        },
+        "label": {
+          "x": 0.74,
+          "y": 0.13
+        }
+      }
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "interaction": {
+        "object": {
+          "x": 0.434,
+          "y": 0.739
+        },
+        "label": {
+          "x": 0.445,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "garden",
+      "entryGuid": "d4a6e961-4ac9-5e14-af6c-7cff536b0f53",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "花園",
+      "interaction": {
+        "object": {
+          "x": 0.88,
+          "y": 0.59
+        },
+        "label": {
+          "x": 0.87,
+          "y": 0.83
+        }
+      }
+    },
+    {
+      "word": "tub",
+      "entryGuid": "42e80b4a-a0a3-55ce-bda3-6a03c84913ec",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "大桶",
+      "interaction": {
+        "object": {
+          "x": 0.389,
+          "y": 0.77
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "mother",
+      "entryGuid": "82a3e2d6-3524-5464-b83b-84096ceda408",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "媽媽",
+      "interaction": {
+        "object": {
+          "x": 0.295,
+          "y": 0.492
+        },
+        "label": {
+          "x": 0.21,
+          "y": 0.35
+        }
+      }
+    },
+    {
+      "word": "child",
+      "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "孩子",
+      "interaction": {
+        "object": {
+          "x": 0.601,
+          "y": 0.476
+        },
+        "label": {
+          "x": 0.685,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "word": "jeans",
+      "entryGuid": "717855b9-4d3f-518a-8640-8c158918339e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "牛仔褲",
+      "interaction": {
+        "object": {
+          "x": 0.37,
+          "y": 0.312
+        },
+        "label": {
+          "x": 0.375,
+          "y": 0.1
+        }
+      }
+    },
+    {
+      "word": "wet",
+      "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "濕的",
+      "interaction": {
+        "object": {
+          "x": 0.503,
+          "y": 0.485
+        },
+        "label": {
+          "x": 0.435,
+          "y": 0.535
+        }
+      }
+    },
+    {
+      "word": "dry",
+      "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "乾的",
+      "interaction": {
+        "object": {
+          "x": 0.788,
+          "y": 0.36
+        },
+        "label": {
+          "x": 0.91,
+          "y": 0.42
+        }
+      }
+    },
+    {
+      "word": "bright",
+      "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "明亮的",
+      "interaction": {
+        "object": {
+          "x": 0.734,
+          "y": 0.071
+        },
+        "label": {
+          "x": 0.855,
+          "y": 0.065
+        }
+      }
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "裝滿的",
+      "interaction": {
+        "object": {
+          "x": 0.153,
+          "y": 0.797
+        },
+        "label": {
+          "x": 0.075,
+          "y": 0.75
+        }
+      }
+    },
+    {
+      "word": "clean",
+      "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "乾淨的",
+      "interaction": {
+        "object": {
+          "x": 0.775,
+          "y": 0.41
+        },
+        "label": {
+          "x": 0.805,
+          "y": 0.36
+        }
+      }
+    },
+    {
+      "word": "wash",
+      "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "洗",
+      "interaction": {
+        "object": {
+          "x": 0.322,
+          "y": 0.693
+        },
+        "label": {
+          "x": 0.28,
+          "y": 0.605
+        }
+      }
+    },
+    {
+      "word": "hang",
+      "entryGuid": "2d5ee780-ce6e-5afe-ad6c-3ece2de62d14",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "掛",
+      "interaction": {
+        "object": {
+          "x": 0.545,
+          "y": 0.216
+        },
+        "label": {
+          "x": 0.6,
+          "y": 0.145
+        }
+      }
+    },
+    {
+      "word": "rub",
+      "entryGuid": "aeac542a-179a-5e15-9089-913b6cc7e500",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "搓洗",
+      "interaction": {
+        "object": {
+          "x": 0.329,
+          "y": 0.696
+        },
+        "label": {
+          "x": 0.405,
+          "y": 0.6
+        }
+      }
+    },
+    {
+      "word": "help",
+      "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "幫忙",
+      "interaction": {
+        "object": {
+          "x": 0.596,
+          "y": 0.402
+        },
+        "label": {
+          "x": 0.665,
+          "y": 0.61
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "On a bright morning, Mother takes me into the garden and shows me how a child can help wash clothes. The washing machine is near us, but today she wants to wash a few things by hand in a tub. I carry the full basket to her and help pick up the dirty clothes before we start. She puts soap in the water and shows me how to rub a shirt with care. Soon it is clean but still wet, with drops falling from the bottom. I hang it on the line beside a sock and the jeans, leaving a little space between them. The sun shines over us, and the towel at the other end is already dry. Mother checks the rest of the clothes and asks me to bring in the dry things first. We finish our small jobs together, then sit down and enjoy the flowers.",
+    "textZh": "一個明亮的早晨，媽媽帶我到花園裡，示範孩子可以如何幫忙洗衣。洗衣機就在附近，但今天她想在大桶裡用手洗幾件衣物。我把裝滿衣物的籃子提到她身邊，開始前先幫忙撿起髒衣服。她把肥皂放進水裡，示範怎麼輕輕搓洗襯衫。很快襯衫就洗乾淨了，但還是濕的，水滴從下方落下。我把它掛在曬衣繩上，放在襪子和牛仔褲旁，衣物間留一點空間。太陽照著我們，另一端的毛巾已經乾了。媽媽檢查其餘衣物，請我先把乾的衣物收進屋裡。我們一起做完這些小事，再坐下來欣賞花朵。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "On a bright morning, Mother takes me into the garden and shows me how a child can help wash clothes.",
+        "zh": "一個明亮的早晨，媽媽帶我到花園裡，示範孩子可以如何幫忙洗衣。",
+        "wordLinks": [
+          {
+            "surface": "On",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "surface": "bright",
+            "word": "bright",
+            "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+            "isTarget": true,
+            "start": 5,
+            "end": 11
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 12,
+            "end": 19
+          },
+          {
+            "surface": "Mother",
+            "word": "mother",
+            "entryGuid": "82a3e2d6-3524-5464-b83b-84096ceda408",
+            "isTarget": true,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "takes",
+            "word": "take",
+            "entryGuid": "eb536808-149b-524f-93ad-87bd2527d5da",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 34,
+            "end": 36
+          },
+          {
+            "surface": "into",
+            "word": "into",
+            "entryGuid": "ff2ff7fe-ca9b-5d6f-b685-f1fe96d9ed46",
+            "isTarget": false,
+            "start": 37,
+            "end": 41
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "garden",
+            "word": "garden",
+            "entryGuid": "d4a6e961-4ac9-5e14-af6c-7cff536b0f53",
+            "isTarget": true,
+            "start": 46,
+            "end": 52
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 53,
+            "end": 56
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 57,
+            "end": 62
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 63,
+            "end": 65
+          },
+          {
+            "surface": "how",
+            "word": "how",
+            "entryGuid": "46750fe2-26a0-516a-8c88-a4b9259ddc38",
+            "isTarget": false,
+            "start": 66,
+            "end": 69
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 70,
+            "end": 71
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": true,
+            "start": 72,
+            "end": 77
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 78,
+            "end": 81
+          },
+          {
+            "surface": "help",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": true,
+            "start": 82,
+            "end": 86
+          },
+          {
+            "surface": "wash",
+            "word": "wash",
+            "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+            "isTarget": true,
+            "start": 87,
+            "end": 91
+          },
+          {
+            "surface": "clothes",
+            "word": "clothes",
+            "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+            "isTarget": true,
+            "start": 92,
+            "end": 99
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "The washing machine is near us, but today she wants to wash a few things by hand in a tub.",
+        "zh": "洗衣機就在附近，但今天她想在大桶裡用手洗幾件衣物。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "washing",
+            "word": "wash",
+            "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+            "isTarget": true,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "surface": "machine",
+            "word": "machine",
+            "entryGuid": "3acc68b5-4531-540d-8cf7-1d8252782dbb",
+            "isTarget": true,
+            "start": 12,
+            "end": 19
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 20,
+            "end": 22
+          },
+          {
+            "surface": "near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 23,
+            "end": 27
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "but",
+            "word": "but",
+            "entryGuid": "6bc80d04-84e6-5602-a22e-ab8101e03ee7",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "today",
+            "word": "today",
+            "entryGuid": "47eeff73-685a-50ee-814d-4f4f8b5cfb43",
+            "isTarget": false,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "she",
+            "word": "she",
+            "entryGuid": "ccbe3ed4-aadd-56cd-a461-184577b231e9",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "wants",
+            "word": "want",
+            "entryGuid": "4cf23b7c-e8b5-5e85-8039-4c2d32cc4507",
+            "isTarget": false,
+            "start": 46,
+            "end": 51
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 52,
+            "end": 54
+          },
+          {
+            "surface": "wash",
+            "word": "wash",
+            "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+            "isTarget": true,
+            "start": 55,
+            "end": 59
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 60,
+            "end": 61
+          },
+          {
+            "surface": "few",
+            "word": "few",
+            "entryGuid": "2977229e-5e48-53e7-a2b5-a4b62e6509be",
+            "isTarget": false,
+            "start": 62,
+            "end": 65
+          },
+          {
+            "surface": "things",
+            "word": "thing",
+            "entryGuid": "7c258eec-319f-58d9-99e1-d57e4ba454ba",
+            "isTarget": false,
+            "start": 66,
+            "end": 72
+          },
+          {
+            "surface": "by",
+            "word": "by",
+            "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+            "isTarget": false,
+            "start": 73,
+            "end": 75
+          },
+          {
+            "surface": "hand",
+            "word": "hand",
+            "entryGuid": "9c789a02-da62-59ae-b3ff-fc5f2bd655d2",
+            "isTarget": false,
+            "start": 76,
+            "end": 80
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 81,
+            "end": 83
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 84,
+            "end": 85
+          },
+          {
+            "surface": "tub",
+            "word": "tub",
+            "entryGuid": "42e80b4a-a0a3-55ce-bda3-6a03c84913ec",
+            "isTarget": true,
+            "start": 86,
+            "end": 89
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "I carry the full basket to her and help pick up the dirty clothes before we start.",
+        "zh": "我把裝滿衣物的籃子提到她身邊，開始前先幫忙撿起髒衣服。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "carry",
+            "word": "carry",
+            "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "full",
+            "word": "full",
+            "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+            "isTarget": true,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "basket",
+            "word": "basket",
+            "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+            "isTarget": true,
+            "start": 17,
+            "end": 23
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "her",
+            "word": "her",
+            "entryGuid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "help",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": true,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "pick",
+            "word": "pick",
+            "entryGuid": "89f07fd1-2d5a-5850-aef1-483b2b57598a",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 45,
+            "end": 47
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 48,
+            "end": 51
+          },
+          {
+            "surface": "dirty",
+            "word": "dirty",
+            "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+            "isTarget": false,
+            "start": 52,
+            "end": 57
+          },
+          {
+            "surface": "clothes",
+            "word": "clothes",
+            "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+            "isTarget": true,
+            "start": 58,
+            "end": 65
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 66,
+            "end": 72
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 73,
+            "end": 75
+          },
+          {
+            "surface": "start",
+            "word": "start",
+            "entryGuid": "631dcd39-cb09-5f75-b6d6-8587dca9b87f",
+            "isTarget": false,
+            "start": 76,
+            "end": 81
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "She puts soap in the water and shows me how to rub a shirt with care.",
+        "zh": "她把肥皂放進水裡，示範怎麼輕輕搓洗襯衫。",
+        "wordLinks": [
+          {
+            "surface": "She",
+            "word": "she",
+            "entryGuid": "ccbe3ed4-aadd-56cd-a461-184577b231e9",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "puts",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "soap",
+            "word": "soap",
+            "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+            "isTarget": true,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 21,
+            "end": 26
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 31,
+            "end": 36
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "how",
+            "word": "how",
+            "entryGuid": "46750fe2-26a0-516a-8c88-a4b9259ddc38",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 44,
+            "end": 46
+          },
+          {
+            "surface": "rub",
+            "word": "rub",
+            "entryGuid": "aeac542a-179a-5e15-9089-913b6cc7e500",
+            "isTarget": true,
+            "start": 47,
+            "end": 50
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 51,
+            "end": 52
+          },
+          {
+            "surface": "shirt",
+            "word": "shirt",
+            "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+            "isTarget": true,
+            "start": 53,
+            "end": 58
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 59,
+            "end": 63
+          },
+          {
+            "surface": "care",
+            "word": "care",
+            "entryGuid": "81a47358-ba4c-56b5-ad1a-a0ec01afa38f",
+            "isTarget": false,
+            "start": 64,
+            "end": 68
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "Soon it is clean but still wet, with drops falling from the bottom.",
+        "zh": "很快襯衫就洗乾淨了，但還是濕的，水滴從下方落下。",
+        "wordLinks": [
+          {
+            "surface": "Soon",
+            "word": "soon",
+            "entryGuid": "5061831b-3bb0-539e-9838-209c76ece493",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 8,
+            "end": 10
+          },
+          {
+            "surface": "clean",
+            "word": "clean",
+            "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+            "isTarget": true,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "surface": "but",
+            "word": "but",
+            "entryGuid": "6bc80d04-84e6-5602-a22e-ab8101e03ee7",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "still",
+            "word": "still",
+            "entryGuid": "a9d992ab-1b10-5ec3-9953-25b3779f051b",
+            "isTarget": false,
+            "start": 21,
+            "end": 26
+          },
+          {
+            "surface": "wet",
+            "word": "wet",
+            "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+            "isTarget": true,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "drops",
+            "word": "drop",
+            "entryGuid": "a0246fee-ef2e-587b-9611-d63131ceb3b9",
+            "isTarget": false,
+            "start": 37,
+            "end": 42
+          },
+          {
+            "surface": "falling",
+            "word": "fall",
+            "entryGuid": "dae505ed-1d6f-54e4-b68b-4c093bb974d1",
+            "isTarget": false,
+            "start": 43,
+            "end": 50
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 51,
+            "end": 55
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 56,
+            "end": 59
+          },
+          {
+            "surface": "bottom",
+            "word": "bottom",
+            "entryGuid": "d732f974-0e9e-5ce3-8d15-c44438334b2d",
+            "isTarget": false,
+            "start": 60,
+            "end": 66
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "I hang it on the line beside a sock and the jeans, leaving a little space between them.",
+        "zh": "我把它掛在曬衣繩上，放在襪子和牛仔褲旁，衣物間留一點空間。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "hang",
+            "word": "hang",
+            "entryGuid": "2d5ee780-ce6e-5afe-ad6c-3ece2de62d14",
+            "isTarget": true,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "line",
+            "word": "line",
+            "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+            "isTarget": true,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 22,
+            "end": 28
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 29,
+            "end": 30
+          },
+          {
+            "surface": "sock",
+            "word": "sock",
+            "entryGuid": "449d095e-3408-5ae1-93d2-1976cd804511",
+            "isTarget": true,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "jeans",
+            "word": "jeans",
+            "entryGuid": "717855b9-4d3f-518a-8640-8c158918339e",
+            "isTarget": true,
+            "start": 44,
+            "end": 49
+          },
+          {
+            "surface": "leaving",
+            "word": "leave",
+            "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+            "isTarget": false,
+            "start": 51,
+            "end": 58
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 59,
+            "end": 60
+          },
+          {
+            "surface": "little",
+            "word": "little",
+            "entryGuid": "58f73838-9a29-5a84-94c0-54188c22658f",
+            "isTarget": false,
+            "start": 61,
+            "end": 67
+          },
+          {
+            "surface": "space",
+            "word": "space",
+            "entryGuid": "97f217f6-62ba-53b8-9b98-5bb81cd7dac5",
+            "isTarget": false,
+            "start": 68,
+            "end": 73
+          },
+          {
+            "surface": "between",
+            "word": "between",
+            "entryGuid": "a894b53a-9e55-515b-a141-e6d60bc4bad8",
+            "isTarget": false,
+            "start": 74,
+            "end": 81
+          },
+          {
+            "surface": "them",
+            "word": "them",
+            "entryGuid": "39092abf-a6e2-54cb-9151-9c9947587c98",
+            "isTarget": false,
+            "start": 82,
+            "end": 86
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "The sun shines over us, and the towel at the other end is already dry.",
+        "zh": "太陽照著我們，另一端的毛巾已經乾了。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "sun",
+            "word": "sun",
+            "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+            "isTarget": true,
+            "start": 4,
+            "end": 7
+          },
+          {
+            "surface": "shines",
+            "word": "shine",
+            "entryGuid": "54996d42-ec66-5676-9032-ba70083ccf9e",
+            "isTarget": false,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "over",
+            "word": "over",
+            "entryGuid": "78e40216-3485-54f9-9c71-70c3e01cd6ed",
+            "isTarget": false,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 20,
+            "end": 22
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "towel",
+            "word": "towel",
+            "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+            "isTarget": true,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 38,
+            "end": 40
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 41,
+            "end": 44
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 45,
+            "end": 50
+          },
+          {
+            "surface": "end",
+            "word": "end",
+            "entryGuid": "40b5005d-7c55-58f9-8fe5-0cd57d2fcc16",
+            "isTarget": false,
+            "start": 51,
+            "end": 54
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 55,
+            "end": 57
+          },
+          {
+            "surface": "already",
+            "word": "already",
+            "entryGuid": "f406ca13-cf9e-58c7-b061-4a7228c61916",
+            "isTarget": false,
+            "start": 58,
+            "end": 65
+          },
+          {
+            "surface": "dry",
+            "word": "dry",
+            "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+            "isTarget": true,
+            "start": 66,
+            "end": 69
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "Mother checks the rest of the clothes and asks me to bring in the dry things first.",
+        "zh": "媽媽檢查其餘衣物，請我先把乾的衣物收進屋裡。",
+        "wordLinks": [
+          {
+            "surface": "Mother",
+            "word": "mother",
+            "entryGuid": "82a3e2d6-3524-5464-b83b-84096ceda408",
+            "isTarget": true,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "checks",
+            "word": "check",
+            "entryGuid": "7242d255-af15-510d-8c98-44f37f9b9ee0",
+            "isTarget": false,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 14,
+            "end": 17
+          },
+          {
+            "surface": "rest",
+            "word": "rest",
+            "entryGuid": "5c4a6c3d-d47c-5f19-99ab-1b22c129e22e",
+            "isTarget": false,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 23,
+            "end": 25
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "clothes",
+            "word": "clothes",
+            "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+            "isTarget": true,
+            "start": 30,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "asks",
+            "word": "ask",
+            "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+            "isTarget": false,
+            "start": 42,
+            "end": 46
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 47,
+            "end": 49
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 50,
+            "end": 52
+          },
+          {
+            "surface": "bring",
+            "word": "bring",
+            "entryGuid": "aced9d5e-ff5c-558f-b154-1bfb5752bb52",
+            "isTarget": false,
+            "start": 53,
+            "end": 58
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 59,
+            "end": 61
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 62,
+            "end": 65
+          },
+          {
+            "surface": "dry",
+            "word": "dry",
+            "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+            "isTarget": true,
+            "start": 66,
+            "end": 69
+          },
+          {
+            "surface": "things",
+            "word": "thing",
+            "entryGuid": "7c258eec-319f-58d9-99e1-d57e4ba454ba",
+            "isTarget": false,
+            "start": 70,
+            "end": 76
+          },
+          {
+            "surface": "first",
+            "word": "first",
+            "entryGuid": "eb25f77b-5263-5877-a03e-24cd1689e6eb",
+            "isTarget": false,
+            "start": 77,
+            "end": 82
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "We finish our small jobs together, then sit down and enjoy the flowers.",
+        "zh": "我們一起做完這些小事，再坐下來欣賞花朵。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 10,
+            "end": 13
+          },
+          {
+            "surface": "small",
+            "word": "small",
+            "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+            "isTarget": false,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "jobs",
+            "word": "job",
+            "entryGuid": "f5f0f434-c9c8-5e5e-9d59-20d3f09a7e43",
+            "isTarget": false,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 25,
+            "end": 33
+          },
+          {
+            "surface": "then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "down",
+            "word": "down",
+            "entryGuid": "451dcd82-9969-5473-b509-7f48b55049f6",
+            "isTarget": false,
+            "start": 44,
+            "end": 48
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 49,
+            "end": 52
+          },
+          {
+            "surface": "enjoy",
+            "word": "enjoy",
+            "entryGuid": "c7f1f45f-8aeb-57bc-86d6-06b858354e08",
+            "isTarget": false,
+            "start": 53,
+            "end": 58
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 59,
+            "end": 62
+          },
+          {
+            "surface": "flowers",
+            "word": "flower",
+            "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+            "isTarget": false,
+            "start": 63,
+            "end": 70
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s5"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png",
+      "sha256": "c125ab5ac52798f7c4c72266087397786b0c2fde37cac47c78c617088bb58e60",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/laundry-day/r2/09eeb3d17582e855/story-579cb41ec2798a5d.mp3",
+      "sha256": "14049c1306a210c2853067dc0326e96dd9385e070db5632577696646890d430a",
+      "language": "en",
+      "textSha256": "579cb41ec2798a5d2e4a9977be8308864e418bb4aab9020ceba66fc662686b0d",
+      "durationSeconds": 63.408,
+      "bytes": 1014572,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reused-visually-reviewed-for-new-targets",
+      "method": "reuse-existing-base-image",
+      "reuseCandidate": {
+        "path": "output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png",
+        "sha256": "c125ab5ac52798f7c4c72266087397786b0c2fde37cac47c78c617088bb58e60",
+        "reviewed": true,
+        "containsVocabularyText": false
+      },
+      "sceneDescriptionZh": "媽媽在庭院用大桶洗衣，孩子把濕衣掛上曬衣繩，陽光與乾衣形成對比。"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "current-targets-only"
+    }
+  },
+  "contentReview": {
+    "status": "image-text-reviewed-awaiting-ui",
+    "notes": [
+      "本檔是 revision 2 離線文字候選，舊 revision 1／published 客廳未變動。",
+      "已逐張查看現有底圖，object 是圖面錨點；story／image-and-story 明示時間先後或敘事線索，不宣稱單張圖可直接證明。",
+      "label 是候選比例位置，尚須正式套件 UI 檢查遮擋、手機排版與點擊；本檔不代表圖片／媒體或發布審核完成。",
+      "dry 與 clean 指右側已曬好衣物；中央滴水襯衫與牛仔褲不標成乾。",
+      "逐張查看現有底圖並依物件分區重排標籤，整場概念以背景／結構為錨點；桌機與手機實際UI尚待驗收。"
+    ]
+  }
+}

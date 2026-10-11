@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "28",
+    "scenarioKey": "riverside-bicycle-trip",
+    "titleZh": "河畔自行車出遊",
+    "descriptionZh": "兩名騎車者沿著河邊小路前進，前方有一座長橋跨過河流。車輪與踏板清楚可見，河岸綠色草地形成開闊背景，人物戴安全帽但不列為目標詞。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "bicycle",
+        "entryGuid": "809bb674-3b80-5b53-afc5-db09b051b314",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "自行車",
+        "visualCueZh": "近景完整可見車架、車輪、踏板的自行車"
+      },
+      {
+        "word": "wheel",
+        "entryGuid": "2d4b1674-3804-50c0-aae5-144d889a9b27",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "車輪",
+        "visualCueZh": "近景自行車完整露出的前輪"
+      },
+      {
+        "word": "path",
+        "entryGuid": "11e5ee52-9dcf-5f3b-ab07-e12331a9b246",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "小路",
+        "visualCueZh": "沿河岸延伸的狹小騎行路徑"
+      },
+      {
+        "word": "bridge",
+        "entryGuid": "825e46b9-5200-578c-86bf-84e314b27eef",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "橋",
+        "visualCueZh": "前方跨過河流的橋"
+      },
+      {
+        "word": "river",
+        "entryGuid": "089cf335-8461-56e7-a960-0d755baf3bc6",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "河流",
+        "visualCueZh": "沿路延伸、帶清楚河岸的流水"
+      },
+      {
+        "word": "ride",
+        "entryGuid": "e53cb5aa-9fa5-5613-b922-aed35d2f3247",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "騎乘",
+        "visualCueZh": "人物雙手握車把、雙腳踩踏板騎車"
+      },
+      {
+        "word": "long",
+        "entryGuid": "c00a40eb-0325-52fb-8048-fd066da109cd",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "長的",
+        "visualCueZh": "橫跨寬河、明顯延伸很遠的長橋"
+      },
+      {
+        "word": "green",
+        "entryGuid": "4d557825-5f21-55de-bb31-7afa183d1bfb",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "綠色的",
+        "visualCueZh": "自行車旁的大片綠色草地"
+      },
+      {
+        "word": "grass",
+        "entryGuid": "f1f7ef4b-4107-5741-92cc-2c73536b3766",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "草地",
+        "visualCueZh": "河岸上露出大片草地。"
+      },
+      {
+        "word": "sky",
+        "entryGuid": "8020010d-a985-5605-a44b-453a75eb5624",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "天空",
+        "visualCueZh": "畫面上方留出晴朗天空。"
+      },
+      {
+        "word": "cloud",
+        "entryGuid": "70818df1-ee97-590f-8dbb-7da3592f99d1",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "雲",
+        "visualCueZh": "天空中有一朵白雲。"
+      },
+      {
+        "word": "bench",
+        "entryGuid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "長椅",
+        "visualCueZh": "河岸旁放一張完整可見的長椅。"
+      },
+      {
+        "word": "rest",
+        "entryGuid": "5c4a6c3d-d47c-5f19-99ab-1b22c129e22e",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "休息",
+        "visualCueZh": "一名騎車者在長椅上坐下休息。"
+      },
+      {
+        "word": "safe",
+        "entryGuid": "5aa0d7a7-79b1-5168-861f-d87eb01317c8",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "安全的",
+        "visualCueZh": "騎車者戴安全帽並在河岸護欄內側騎車。"
+      },
+      {
+        "word": "slow",
+        "entryGuid": "668a47d0-6979-56fd-ae87-f29785c5fbe6",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "緩慢的",
+        "visualCueZh": "騎車者輕鬆前進，故事說明慢速騎行。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A pair of friends ride a bicycle each along a path by the river.",
+        "zh": "兩位朋友各騎一輛自行車，沿著河邊的小路前進。"
+      },
+      {
+        "en": "A wheel turns as they pass the green grass.",
+        "zh": "他們經過綠色草地時，一個車輪轉動。"
+      },
+      {
+        "en": "A long bridge stands over the water in front of them.",
+        "zh": "一座長橋橫跨在他們前方的水面上。"
+      },
+      {
+        "en": "They see a white cloud high in the blue sky.",
+        "zh": "他們看見藍天高處有一朵白雲。"
+      },
+      {
+        "en": "Their speed is slow because they want a safe trip.",
+        "zh": "他們騎得很慢，因為他們希望這趟旅程安全。"
+      },
+      {
+        "en": "They stop near a bench and put their feet down.",
+        "zh": "他們在長椅附近停下，雙腳踏到地上。"
+      },
+      {
+        "en": "They rest together and watch the water under the bridge.",
+        "zh": "他們一起休息，看著橋下的河水。"
+      },
+      {
+        "en": "A friend points at a small bird above the river.",
+        "zh": "一位朋友指向河面上方的一隻小鳥。"
+      },
+      {
+        "en": "Then they get back on their bicycles and continue their trip.",
+        "zh": "接著，他們重新騎上自行車，繼續這趟旅程。"
+      }
+    ],
+    "aliases": {
+      "friends": "friend",
+      "turns": "turn",
+      "stands": "stand",
+      "is": "be",
+      "feet": "foot",
+      "points": "point",
+      "bicycles": "bicycle"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "29",
+    "scenarioKey": "swimming-pool-practice",
+    "titleZh": "泳池練習踢水",
+    "descriptionZh": "明亮泳池裡，一名孩子穿著泳衣扶住池邊練習踢水，另一名孩子正游泳。池旁椅子上放著毛巾；清楚的藍色泳衣、透明水面和泳池邊緣都有足夠視覺空間。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "pool",
+        "entryGuid": "84f9259d-64ae-5d72-82a2-f304bee5a857",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "水池",
+        "visualCueZh": "帶池壁與池邊的整座游泳池"
+      },
+      {
+        "word": "towel",
+        "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "毛巾",
+        "visualCueZh": "椅背上展開的長方形毛巾"
+      },
+      {
+        "word": "water",
+        "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "水",
+        "visualCueZh": "近景池內透明、有波紋的水面"
+      },
+      {
+        "word": "swimsuit",
+        "entryGuid": "9b9d963e-619e-5909-ad70-689028902bfc",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "泳衣",
+        "visualCueZh": "池邊孩子穿著、上半身清楚露出的泳衣"
+      },
+      {
+        "word": "chair",
+        "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "椅子",
+        "visualCueZh": "池邊完整可見的休息椅"
+      },
+      {
+        "word": "swim",
+        "entryGuid": "e8fb0d6e-765d-5fe9-b28a-4aa57912fa6f",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "游泳",
+        "visualCueZh": "另一孩子身體平伸、手臂向前划水"
+      },
+      {
+        "word": "kick",
+        "entryGuid": "6cf49c75-394a-5983-8553-e6db131455ab",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "踢",
+        "visualCueZh": "扶池邊的孩子雙腿踢出清楚水花"
+      },
+      {
+        "word": "blue",
+        "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "藍色的",
+        "visualCueZh": "練習踢水孩子明確的藍色泳衣"
+      },
+      {
+        "word": "foot",
+        "entryGuid": "0d40601d-7768-5fde-9880-10d59b1f4666",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "腳",
+        "visualCueZh": "泳池邊孩子伸出腳踢水。"
+      },
+      {
+        "word": "bag",
+        "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "袋子",
+        "visualCueZh": "椅旁放著打開的泳具袋。"
+      },
+      {
+        "word": "sun",
+        "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "太陽",
+        "visualCueZh": "室外泳池上方可見陽光與太陽。"
+      },
+      {
+        "word": "bright",
+        "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "明亮的",
+        "visualCueZh": "泳池被明亮陽光照亮。"
+      },
+      {
+        "word": "friend",
+        "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "朋友",
+        "visualCueZh": "兩個孩子相互鼓勵。"
+      },
+      {
+        "word": "smile",
+        "entryGuid": "94b20084-3dfd-548a-b5c9-eceab251ba3f",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "微笑",
+        "visualCueZh": "泳池邊孩子露出微笑。"
+      },
+      {
+        "word": "dry",
+        "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "乾的",
+        "visualCueZh": "椅上的毛巾保持乾燥，故事補足。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A child wears a blue swimsuit at the pool.",
+        "zh": "一個孩子在泳池穿著藍色泳衣。"
+      },
+      {
+        "en": "The sun is bright above the clear water today.",
+        "zh": "今天，清澈的池水上方陽光明亮。"
+      },
+      {
+        "en": "A dry towel lies on a chair beside a bag.",
+        "zh": "一條乾毛巾放在椅子上，旁邊是一個袋子。"
+      },
+      {
+        "en": "The child holds the side and starts to kick.",
+        "zh": "孩子扶住池邊，開始踢水。"
+      },
+      {
+        "en": "A foot makes a little wave near the side.",
+        "zh": "一隻腳在池邊激起一道小水波。"
+      },
+      {
+        "en": "A friend can swim and comes closer to help.",
+        "zh": "一位會游泳的朋友游近，想幫忙。"
+      },
+      {
+        "en": "They smile at each other and try again together.",
+        "zh": "他們對彼此微笑，再一起試一次。"
+      },
+      {
+        "en": "After a short practice, they climb out of the pool.",
+        "zh": "短暫練習後，他們爬出泳池。"
+      },
+      {
+        "en": "The child takes the towel and sits down to rest.",
+        "zh": "孩子拿起毛巾，坐下休息。"
+      }
+    ],
+    "aliases": {
+      "wears": "wear",
+      "is": "be",
+      "lies": "lie",
+      "holds": "hold",
+      "starts": "start",
+      "makes": "make",
+      "comes": "come",
+      "closer": "close",
+      "takes": "take",
+      "sits": "sit"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "30",
+    "scenarioKey": "basketball-court-practice",
+    "titleZh": "球場投球練習",
+    "descriptionZh": "一群穿相同顏色球衣的孩子在籃球場練習。近景球員跳起投球，籃框與球網清楚可見，其他隊員在旁露出興奮表情，畫面以球員、球與球網為主。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "ball",
+        "entryGuid": "d4537a6a-ee82-5b34-8fc4-c431d45ccde9",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "球",
+        "visualCueZh": "空中清楚可見的橘色籃球"
+      },
+      {
+        "word": "court",
+        "entryGuid": "5543e260-a627-5652-905f-89c50c223e5f",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "球場",
+        "visualCueZh": "帶籃球場線條與籃框的場地"
+      },
+      {
+        "word": "net",
+        "entryGuid": "382f5582-cf41-528b-aea7-534077e2df98",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "球網",
+        "visualCueZh": "籃框下完整露出的網"
+      },
+      {
+        "word": "player",
+        "entryGuid": "0b887f11-56a7-5c79-aafa-5d0910824dd1",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "球員",
+        "visualCueZh": "近景跳起投籃的孩子，球已離手；player 標註人物本身"
+      },
+      {
+        "word": "team",
+        "entryGuid": "74232fe5-fbb3-580a-b4da-2c570a79d9de",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "隊伍",
+        "visualCueZh": "穿相同球衣、一起練習的整組孩子"
+      },
+      {
+        "word": "throw",
+        "entryGuid": "33d5aeff-8a01-541f-b94c-febf39a8e659",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "投擲",
+        "visualCueZh": "投球者手臂伸向籃框，球剛離手"
+      },
+      {
+        "word": "jump",
+        "entryGuid": "fc032c20-6b0f-59ce-a529-8d23dd7d69a2",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "跳躍",
+        "visualCueZh": "投球者雙腳明顯離開地面"
+      },
+      {
+        "word": "excited",
+        "entryGuid": "a1da25a6-c8b9-5f7f-a520-45c9f0f8102b",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "興奮的",
+        "visualCueZh": "旁邊隊員眼睛睜大、張口微笑並舉手"
+      },
+      {
+        "word": "basket",
+        "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "籃子",
+        "visualCueZh": "場邊放著裝備用球的籃子。"
+      },
+      {
+        "word": "shoe",
+        "entryGuid": "cc6ba09c-72ff-5c1f-8b49-08f6c7125745",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "鞋子",
+        "visualCueZh": "球員腳上的運動鞋清楚可見。"
+      },
+      {
+        "word": "shirt",
+        "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "上衣",
+        "visualCueZh": "球員穿同色上衣。"
+      },
+      {
+        "word": "hand",
+        "entryGuid": "9c789a02-da62-59ae-b3ff-fc5f2bd655d2",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "手",
+        "visualCueZh": "投球者雙手朝球伸出。"
+      },
+      {
+        "word": "run",
+        "entryGuid": "508738cf-7c4d-531d-9ae1-d27a598e1df9",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "跑步",
+        "visualCueZh": "一名球員跑向球。"
+      },
+      {
+        "word": "catch",
+        "entryGuid": "571abcec-ca5c-5c39-b75a-6cf8c06f3e88",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "接住",
+        "visualCueZh": "另一名球員伸手準備接球。"
+      },
+      {
+        "word": "ready",
+        "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "準備好的",
+        "visualCueZh": "場邊隊員彎膝伸手準備接球。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A team comes to the court for a short practice.",
+        "zh": "一支隊伍來到球場，準備短暫練習。"
+      },
+      {
+        "en": "Every player wears a blue shirt and white shoes on the court.",
+        "zh": "每位球員都穿著藍色上衣和白鞋，在球場上練習。"
+      },
+      {
+        "en": "A player holds the ball with both hands for a moment.",
+        "zh": "一位球員用雙手握住球，停了一會兒。"
+      },
+      {
+        "en": "Then he starts to jump and throw it toward the net.",
+        "zh": "接著，他跳起來，朝球網投球。"
+      },
+      {
+        "en": "The ball goes through the net and falls to the ground.",
+        "zh": "球穿過球網，落到地上。"
+      },
+      {
+        "en": "The other players are excited and clap their hands.",
+        "zh": "其他球員很興奮，拍起手來。"
+      },
+      {
+        "en": "They run across the court to get the ball.",
+        "zh": "他們跑過球場去拿球。"
+      },
+      {
+        "en": "A friend is ready to catch the next throw.",
+        "zh": "一位朋友準備好接住下一次傳球。"
+      },
+      {
+        "en": "A basket of balls waits beside the court for more practice.",
+        "zh": "一籃球放在球場旁邊，供大家繼續練習。"
+      },
+      {
+        "en": "Everyone takes a turn, and the team learns together.",
+        "zh": "每個人輪流練習，整支隊伍一起學習。"
+      }
+    ],
+    "aliases": {
+      "comes": "come",
+      "wears": "wear",
+      "shoes": "shoe",
+      "holds": "hold",
+      "hands": "hand",
+      "starts": "start",
+      "goes": "go",
+      "falls": "fall",
+      "players": "player",
+      "are": "be",
+      "is": "be",
+      "balls": "ball",
+      "waits": "wait",
+      "takes": "take",
+      "learns": "learn"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "31",
+    "scenarioKey": "candle-party-celebration",
+    "titleZh": "生日派對吹蠟燭",
+    "descriptionZh": "桌上擺著蛋糕、蠟燭、禮物與盤子，背景有少量氣球。壽星鼓起嘴巴吹蠟燭，朋友拍手慶祝，人物露出快樂表情，蛋糕和禮物不被手臂擋住。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "cake",
+        "entryGuid": "6ba3cbba-87e7-5db5-bb58-d700f91434b8",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "蛋糕",
+        "visualCueZh": "桌子中央完整露出的生日蛋糕"
+      },
+      {
+        "word": "candle",
+        "entryGuid": "1e8e09c4-2c4c-5423-9522-3b9619df2235",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "蠟燭",
+        "visualCueZh": "蛋糕上清楚直立的蠟燭"
+      },
+      {
+        "word": "gift",
+        "entryGuid": "bb814ace-50b7-5c79-b2e0-7df666a691c6",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "禮物",
+        "visualCueZh": "桌邊帶簡單包裝與蝴蝶結的禮物盒"
+      },
+      {
+        "word": "balloon",
+        "entryGuid": "be2f5812-2392-5faa-b395-de514b51de09",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "氣球",
+        "visualCueZh": "背景幾顆相互分離的圓氣球"
+      },
+      {
+        "word": "plate",
+        "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "盤子",
+        "visualCueZh": "蛋糕旁平放的空盤子"
+      },
+      {
+        "word": "blow",
+        "entryGuid": "4de7ec16-29c1-58c8-9aa5-e6da7829b35a",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "吹氣",
+        "visualCueZh": "壽星噘嘴朝蠟燭吹氣、火焰微微傾斜"
+      },
+      {
+        "word": "celebrate",
+        "entryGuid": "b474d947-7c51-571f-98d0-be1437075543",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "慶祝",
+        "visualCueZh": "朋友圍著壽星拍手、以派對物件輔助辨認"
+      },
+      {
+        "word": "happy",
+        "entryGuid": "013069fb-6aeb-597d-9c61-7dcec4504d2c",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "快樂的",
+        "visualCueZh": "朋友清楚的微笑表情"
+      },
+      {
+        "word": "friend",
+        "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "朋友",
+        "visualCueZh": "桌旁的朋友圍著壽星。"
+      },
+      {
+        "word": "clap",
+        "entryGuid": "3fb6f86d-879c-53ce-8a46-933487ce1fcf",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "拍手",
+        "visualCueZh": "朋友雙手合起拍手慶祝。"
+      },
+      {
+        "word": "sing",
+        "entryGuid": "59f2da80-16a9-5deb-879c-30306b4defc2",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "唱歌",
+        "visualCueZh": "一名朋友張口唱歌，故事補足。"
+      },
+      {
+        "word": "cup",
+        "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "杯子",
+        "visualCueZh": "桌上有透明果汁杯。"
+      },
+      {
+        "word": "juice",
+        "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "果汁",
+        "visualCueZh": "杯中有橘色果汁。"
+      },
+      {
+        "word": "round",
+        "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "圓形的",
+        "visualCueZh": "蛋糕與盤子呈圓形。"
+      },
+      {
+        "word": "sweet",
+        "entryGuid": "1c29a1ce-c008-54ab-8ca8-6c9dbda6d953",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "甜的",
+        "visualCueZh": "蛋糕上有水果，故事說明味道。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A happy child sits beside a round cake at the table.",
+        "zh": "一個開心的孩子坐在桌旁，面前有一個圓蛋糕。"
+      },
+      {
+        "en": "A candle stands on top, and a balloon hangs near them.",
+        "zh": "一根蠟燭立在蛋糕上，附近飄著一顆氣球。"
+      },
+      {
+        "en": "Each friend brings a gift and puts it on the table.",
+        "zh": "每位朋友帶來一份禮物，放在桌上。"
+      },
+      {
+        "en": "They sing together while the child looks at the candle.",
+        "zh": "孩子看著蠟燭，大家一起唱歌。"
+      },
+      {
+        "en": "The child smiles at everyone and starts to blow.",
+        "zh": "孩子向大家微笑，開始吹蠟燭。"
+      },
+      {
+        "en": "The friends clap their hands and celebrate with big smiles.",
+        "zh": "朋友們拍手，帶著大大的笑容一起慶祝。"
+      },
+      {
+        "en": "Then everyone gets a plate with a little sweet cake.",
+        "zh": "接著，每個人都拿到裝著一小塊甜蛋糕的盤子。"
+      },
+      {
+        "en": "There is a cup of juice beside each plate.",
+        "zh": "每個盤子旁邊都有一杯果汁。"
+      },
+      {
+        "en": "They eat and enjoy this special time together.",
+        "zh": "他們吃著蛋糕，一起享受這個特別的時刻。"
+      }
+    ],
+    "aliases": {
+      "sits": "sit",
+      "stands": "stand",
+      "hangs": "hang",
+      "brings": "bring",
+      "puts": "put",
+      "looks": "look",
+      "smiles": "smile",
+      "starts": "start",
+      "friends": "friend",
+      "hands": "hand",
+      "gets": "get",
+      "is": "be"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "32",
+    "scenarioKey": "moving-furniture-home",
+    "titleZh": "搬家搬運家具",
+    "descriptionZh": "搬家貨車停在新家敞開的門口，地上有幾個大小不同的紙箱。成年人正提起大紙箱，另一人打開箱蓋；沙發與椅子放在一旁，完整露出家具輪廓。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "box",
+        "entryGuid": "0808ecec-fe55-523e-ad6a-105d4392ab02",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "箱子",
+        "visualCueZh": "貨車旁完整可見的大紙箱"
+      },
+      {
+        "word": "furniture",
+        "entryGuid": "3aee90bd-e522-52d1-ab25-6e01638eaf71",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "家具",
+        "visualCueZh": "門口分開擺放的一組沙發與椅子"
+      },
+      {
+        "word": "truck",
+        "entryGuid": "997a05f2-b6af-512b-b149-592021da6422",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "貨車",
+        "visualCueZh": "停在門外、露出貨斗的搬家貨車"
+      },
+      {
+        "word": "sofa",
+        "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "沙發",
+        "visualCueZh": "家具組中完整露出靠背與扶手的沙發"
+      },
+      {
+        "word": "door",
+        "entryGuid": "21d37b04-3f63-5178-9162-a4cd088eaf7f",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "門",
+        "visualCueZh": "新家門口敞開的門扇"
+      },
+      {
+        "word": "carry",
+        "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "搬運",
+        "visualCueZh": "成年人抱起紙箱、箱子離開地面"
+      },
+      {
+        "word": "open",
+        "entryGuid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "打開",
+        "visualCueZh": "另一人雙手把紙箱蓋翻向兩側"
+      },
+      {
+        "word": "large",
+        "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "大的",
+        "visualCueZh": "一個接近成年人軀幹大小、旁有小箱比較的大紙箱"
+      },
+      {
+        "word": "chair",
+        "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "椅子",
+        "visualCueZh": "門口旁有一張完整露出的椅子。"
+      },
+      {
+        "word": "floor",
+        "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "地板",
+        "visualCueZh": "新家室內空曠地板清楚可見。"
+      },
+      {
+        "word": "window",
+        "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "窗戶",
+        "visualCueZh": "新家牆上有一扇明亮窗戶。"
+      },
+      {
+        "word": "rope",
+        "entryGuid": "cc4761b9-093c-5995-8370-13c594a385f4",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "繩子",
+        "visualCueZh": "貨車旁放著綁家具的繩子。"
+      },
+      {
+        "word": "heavy",
+        "entryGuid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "重的",
+        "visualCueZh": "兩人共同搬箱，故事說明重量。"
+      },
+      {
+        "word": "lift",
+        "entryGuid": "4696f111-62dd-5128-9ac7-bdcc0da1701a",
+        "list": "advance",
+        "teachingPos": "v",
+        "senseZh": "抬起",
+        "visualCueZh": "兩人彎膝抬起紙箱。"
+      },
+      {
+        "word": "new",
+        "entryGuid": "08930472-4bfb-52ea-aef1-375f479fb12e",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "新的",
+        "visualCueZh": "新家整潔明亮，故事說明新住處。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A truck stops in front of a new home this morning.",
+        "zh": "今天早上，一輛貨車停在新家前面。"
+      },
+      {
+        "en": "Some people open the door and look at the empty floor.",
+        "zh": "幾個人打開門，看著空曠的地板。"
+      },
+      {
+        "en": "A large box waits beside the truck with some furniture.",
+        "zh": "一個大箱子和一些家具放在貨車旁，等待搬運。"
+      },
+      {
+        "en": "The box is heavy, so they lift it together.",
+        "zh": "箱子很重，所以他們一起把它抬起來。"
+      },
+      {
+        "en": "They carry it inside and put it near the window.",
+        "zh": "他們把箱子搬進屋內，放在窗邊。"
+      },
+      {
+        "en": "Then they bring in a sofa and a chair.",
+        "zh": "接著，他們把沙發和椅子搬進來。"
+      },
+      {
+        "en": "A person takes the rope away from the furniture.",
+        "zh": "一個人解下家具上的繩子。"
+      },
+      {
+        "en": "The other person opens the box and finds some books.",
+        "zh": "另一個人打開箱子，找到一些書。"
+      },
+      {
+        "en": "They sit down for a short rest in their new home.",
+        "zh": "他們在新家坐下，短暫休息。"
+      }
+    ],
+    "aliases": {
+      "stops": "stop",
+      "waits": "wait",
+      "is": "be",
+      "takes": "take",
+      "opens": "open",
+      "finds": "find",
+      "books": "book"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "33",
+    "scenarioKey": "gentle-pet-care",
+    "titleZh": "溫柔照顧寵物",
+    "descriptionZh": "孩子在客廳陪伴一隻狗與一隻貓，一人把食物送到貓碗旁，另一人輕柔撫摸安靜坐著的狗。地上另有梳毛刷與一根骨頭，寵物和用品彼此不遮擋。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "dog",
+        "entryGuid": "1f2481cb-fa12-577a-9032-a2b1e1e80b75",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "狗",
+        "visualCueZh": "孩子身旁完整可見的狗"
+      },
+      {
+        "word": "cat",
+        "entryGuid": "1c9f6b77-3906-54f3-850e-fe30107a006c",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "貓",
+        "visualCueZh": "食碗旁完整可見的貓"
+      },
+      {
+        "word": "bowl",
+        "entryGuid": "e35a0e95-016f-596e-bad6-e974c904f920",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "碗",
+        "visualCueZh": "貓前方裝有少量食物的碗"
+      },
+      {
+        "word": "brush",
+        "entryGuid": "8204f9f0-cecc-5bc8-89ba-42a5d4fd1173",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "刷子",
+        "visualCueZh": "地上刷毛朝上、完整露出的梳毛刷"
+      },
+      {
+        "word": "bone",
+        "entryGuid": "7059c042-6baf-5e19-97fe-956d6a352235",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "骨頭",
+        "visualCueZh": "狗旁邊形狀清楚的骨頭"
+      },
+      {
+        "word": "feed",
+        "entryGuid": "91dc116b-9311-5e4c-8127-bf9a65320a43",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "餵食",
+        "visualCueZh": "孩子將一小份飼料遞到貓碗上方"
+      },
+      {
+        "word": "pet",
+        "entryGuid": "ebaa66a8-2901-580e-9ab9-0f696566a9fb",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "撫摸",
+        "visualCueZh": "另一孩子手掌輕放狗背，呈現撫摸動作"
+      },
+      {
+        "word": "gentle",
+        "entryGuid": "04528ab4-70f6-589c-83c1-393b9407ee00",
+        "list": "advance",
+        "teachingPos": "adj",
+        "senseZh": "輕柔的",
+        "visualCueZh": "孩子放鬆手掌輕撫狗背，狗保持安定姿態"
+      },
+      {
+        "word": "food",
+        "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "食物",
+        "visualCueZh": "貓碗裡有清楚可辨的飼料。"
+      },
+      {
+        "word": "water",
+        "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "水",
+        "visualCueZh": "旁邊另一碗裝著清水。"
+      },
+      {
+        "word": "toy",
+        "entryGuid": "70205063-21a7-5b16-a97e-a4115ee3008f",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "玩具",
+        "visualCueZh": "狗旁有一顆寵物玩具球。"
+      },
+      {
+        "word": "small",
+        "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "小的",
+        "visualCueZh": "小貓與較大的狗並列，大小有對比。"
+      },
+      {
+        "word": "hungry",
+        "entryGuid": "2d388700-5b9a-5927-b571-6efe0040ef63",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "飢餓的",
+        "visualCueZh": "小貓看著食物，故事說明肚子餓。"
+      },
+      {
+        "word": "quiet",
+        "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "安靜的",
+        "visualCueZh": "狗放鬆坐著，沒有吠叫。"
+      },
+      {
+        "word": "sleep",
+        "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "睡覺",
+        "visualCueZh": "小貓靠近放有靠墊的椅子；睡覺由故事補足，不額外畫另一隻貓。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A pair of children sit with a dog and a small cat.",
+        "zh": "兩個孩子和一隻狗、一隻小貓坐在一起。"
+      },
+      {
+        "en": "The cat is hungry and looks at an empty bowl.",
+        "zh": "貓餓了，看著空碗。"
+      },
+      {
+        "en": "A child brings food and starts to feed the cat.",
+        "zh": "一個孩子拿來食物，開始餵貓。"
+      },
+      {
+        "en": "The other child puts water in another bowl near them.",
+        "zh": "另一個孩子把水倒進旁邊的另一個碗。"
+      },
+      {
+        "en": "The quiet dog sits beside a toy and a bone.",
+        "zh": "安靜的狗坐在玩具和骨頭旁邊。"
+      },
+      {
+        "en": "The children use a brush and give the dog gentle care.",
+        "zh": "孩子們用刷子梳毛，溫柔地照顧狗。"
+      },
+      {
+        "en": "They pet its back while it rests beside them.",
+        "zh": "狗在身邊休息，他們撫摸牠的背。"
+      },
+      {
+        "en": "After the meal, the cat wants to sleep on a chair.",
+        "zh": "吃完飯後，貓想在椅子上睡覺。"
+      },
+      {
+        "en": "The children leave some space and let both animals rest.",
+        "zh": "孩子們留出一些空間，讓兩隻動物休息。"
+      }
+    ],
+    "aliases": {
+      "children": "child",
+      "is": "be",
+      "looks": "look",
+      "brings": "bring",
+      "starts": "start",
+      "puts": "put",
+      "sits": "sit",
+      "rests": "rest",
+      "wants": "want",
+      "animals": "animal"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "34",
+    "scenarioKey": "bicycle-repair-corner",
+    "titleZh": "自行車維修與打氣",
+    "descriptionZh": "自行車放在明亮的維修角落，前輪完整露出。成年人拿工具調整車輪，旁邊放著打氣筒與幾件有金屬光澤的工具，手部操作清楚可見。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "bicycle",
+        "entryGuid": "809bb674-3b80-5b53-afc5-db09b051b314",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "自行車",
+        "visualCueZh": "完整可見車架、兩輪與車把的自行車"
+      },
+      {
+        "word": "wheel",
+        "entryGuid": "2d4b1674-3804-50c0-aae5-144d889a9b27",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "車輪",
+        "visualCueZh": "未被人物擋住的前輪"
+      },
+      {
+        "word": "pump",
+        "entryGuid": "90cbabb9-9b52-543f-b6be-6ec2ace00f03",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "打氣筒",
+        "visualCueZh": "車輪旁直立、帶手柄和軟管的打氣筒"
+      },
+      {
+        "word": "tool",
+        "entryGuid": "56497cf2-0b2d-5a36-a0d6-10cf0101f7f9",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "工具",
+        "visualCueZh": "人物手中輪廓清楚的扳手"
+      },
+      {
+        "word": "metal",
+        "entryGuid": "42252469-2487-58e3-8fe9-1de32c0e37de",
+        "list": "advance",
+        "teachingPos": "adj",
+        "senseZh": "金屬製的",
+        "visualCueZh": "旁邊工具的銀灰色表面與金屬反光"
+      },
+      {
+        "word": "repair",
+        "entryGuid": "747e76d4-7354-548d-8daf-aafa3012f441",
+        "list": "advance",
+        "teachingPos": "v",
+        "senseZh": "修理",
+        "visualCueZh": "成年人蹲下用扳手調整車輪部件"
+      },
+      {
+        "word": "hand",
+        "entryGuid": "9c789a02-da62-59ae-b3ff-fc5f2bd655d2",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "手",
+        "visualCueZh": "人物握著扳手的手"
+      },
+      {
+        "word": "round",
+        "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "圓形的",
+        "visualCueZh": "完整未遮擋的圓形前輪"
+      },
+      {
+        "word": "oil",
+        "entryGuid": "750bef13-ed07-5446-ade5-9b156e07832a",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "油",
+        "visualCueZh": "工作檯放一瓶供維修使用的油。"
+      },
+      {
+        "word": "bag",
+        "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "袋子",
+        "visualCueZh": "地上放開口工具袋。"
+      },
+      {
+        "word": "bench",
+        "entryGuid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "長凳",
+        "visualCueZh": "維修區旁有完整長凳。"
+      },
+      {
+        "word": "light",
+        "entryGuid": "854c9aa7-e65a-5c1e-9909-d829063e0720",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "燈",
+        "visualCueZh": "工作檯上有一盞照明燈。"
+      },
+      {
+        "word": "fix",
+        "entryGuid": "c979ae90-e9ab-5103-b588-8bf0fe0759c9",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "修好",
+        "visualCueZh": "成人用工具調整自行車零件。"
+      },
+      {
+        "word": "dirty",
+        "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "髒的",
+        "visualCueZh": "車輪帶少量可辨泥污。"
+      },
+      {
+        "word": "dry",
+        "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "乾的",
+        "visualCueZh": "工作檯放乾毛巾，故事補足。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A person brings a bicycle into a bright room.",
+        "zh": "一個人把自行車帶進明亮的房間。"
+      },
+      {
+        "en": "A round wheel is dirty after a ride through the park.",
+        "zh": "騎自行車穿過公園後，一個圓形車輪弄髒了。"
+      },
+      {
+        "en": "A pump stands beside a bag near a bench.",
+        "zh": "打氣筒立在長凳附近的袋子旁。"
+      },
+      {
+        "en": "The person takes a metal tool and starts to repair the bicycle.",
+        "zh": "這個人拿起金屬工具，開始修理自行車。"
+      },
+      {
+        "en": "A light shines on the wheel so the work is clear.",
+        "zh": "一盞燈照著車輪，讓工作位置清楚可見。"
+      },
+      {
+        "en": "A hand holds the tool while the other turns the wheel.",
+        "zh": "一隻手握住工具，另一隻手轉動車輪。"
+      },
+      {
+        "en": "A little oil helps the wheel turn well again.",
+        "zh": "一點油讓車輪再次順暢轉動。"
+      },
+      {
+        "en": "Then the person uses a dry towel to clean the bicycle.",
+        "zh": "接著，這個人用乾毛巾擦乾淨自行車。"
+      },
+      {
+        "en": "It takes time to fix everything, but the bicycle is ready.",
+        "zh": "修好所有部分需要一些時間，但自行車已經準備好了。"
+      }
+    ],
+    "aliases": {
+      "brings": "bring",
+      "is": "be",
+      "stands": "stand",
+      "takes": "take",
+      "starts": "start",
+      "shines": "shine",
+      "holds": "hold",
+      "turns": "turn",
+      "helps": "help",
+      "uses": "use"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "35",
+    "scenarioKey": "recycling-table-sort",
+    "titleZh": "整理資源回收物",
+    "descriptionZh": "孩子在桌旁整理玻璃瓶、紙張、金屬罐與紙箱，把同類物件放進帶回收圖形的容器。另有一小堆垃圾，清洗過的玻璃瓶透明明亮，所有物件清楚分區。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "bottle",
+        "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "瓶子",
+        "visualCueZh": "近景乾淨透明的玻璃瓶"
+      },
+      {
+        "word": "paper",
+        "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "紙張",
+        "visualCueZh": "桌上一疊攤平的紙"
+      },
+      {
+        "word": "can",
+        "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "金屬罐（容器）",
+        "visualCueZh": "桌上可辨認圓柱形罐身與罐口的金屬罐"
+      },
+      {
+        "word": "box",
+        "entryGuid": "0808ecec-fe55-523e-ad6a-105d4392ab02",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "紙箱",
+        "visualCueZh": "地上打開的紙箱"
+      },
+      {
+        "word": "garbage",
+        "entryGuid": "deba53d0-376d-5600-8803-04b939cfc7bf",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "垃圾",
+        "visualCueZh": "另一邊單獨放置的食物殘渣與用過紙巾"
+      },
+      {
+        "word": "collect",
+        "entryGuid": "5f5e21ee-eded-58d5-8c86-47a94e05f0c7",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "收集",
+        "visualCueZh": "孩子用手把散放的紙張聚攏成一疊"
+      },
+      {
+        "word": "recycle",
+        "entryGuid": "ef59bb58-0e85-5c18-9a55-14499ce6073e",
+        "list": "advance",
+        "teachingPos": "v",
+        "senseZh": "資源回收",
+        "visualCueZh": "另一孩子把玻璃瓶放入帶循環箭頭圖形的回收容器"
+      },
+      {
+        "word": "clean",
+        "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "乾淨的",
+        "visualCueZh": "玻璃瓶無污漬、瓶內空且透明明亮"
+      },
+      {
+        "word": "glass",
+        "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "玻璃",
+        "visualCueZh": "玻璃瓶透明，與金屬罐形成材質對比。"
+      },
+      {
+        "word": "bag",
+        "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "袋子",
+        "visualCueZh": "垃圾裝在獨立袋子中。"
+      },
+      {
+        "word": "basket",
+        "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "籃子",
+        "visualCueZh": "桌邊有用來收紙的籃子。"
+      },
+      {
+        "word": "empty",
+        "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+        "list": "advance",
+        "teachingPos": "adj",
+        "senseZh": "空的",
+        "visualCueZh": "張開的紙箱內部空曠可見。"
+      },
+      {
+        "word": "full",
+        "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "滿的",
+        "visualCueZh": "紙張籃已裝滿紙。"
+      },
+      {
+        "word": "green",
+        "entryGuid": "4d557825-5f21-55de-bb31-7afa183d1bfb",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "綠色的",
+        "visualCueZh": "收集瓶子的箱子為綠色。"
+      },
+      {
+        "word": "wash",
+        "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "清洗",
+        "visualCueZh": "孩子在水盆裡清洗玻璃瓶。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A pair of children collect things beside a table after lunch.",
+        "zh": "午餐後，兩個孩子在桌旁收集物品。"
+      },
+      {
+        "en": "A glass bottle stands beside a can and some paper.",
+        "zh": "一個玻璃瓶放在金屬罐和一些紙張旁邊。"
+      },
+      {
+        "en": "They wash the bottle with water until it is clean.",
+        "zh": "他們用水清洗瓶子，直到瓶子乾淨。"
+      },
+      {
+        "en": "A green box is empty and ready for the bottles.",
+        "zh": "一個綠色箱子是空的，準備拿來收瓶子。"
+      },
+      {
+        "en": "A child puts the clean bottles inside with care.",
+        "zh": "一個孩子很小心地把乾淨瓶子放進去。"
+      },
+      {
+        "en": "The other child fills a basket with the paper.",
+        "zh": "另一個孩子把紙張放進籃子，裝滿籃子。"
+      },
+      {
+        "en": "Soon the basket is full, but the table looks clear.",
+        "zh": "很快，籃子滿了，但桌面看起來乾淨空曠。"
+      },
+      {
+        "en": "They keep the garbage in a different bag near them.",
+        "zh": "他們把垃圾放在旁邊另一個袋子裡。"
+      },
+      {
+        "en": "They can recycle many things and keep their home clean.",
+        "zh": "他們可以回收許多物品，也讓家裡保持乾淨。"
+      }
+    ],
+    "aliases": {
+      "children": "child",
+      "things": "thing",
+      "stands": "stand",
+      "is": "be",
+      "bottles": "bottle",
+      "puts": "put",
+      "fills": "fill",
+      "looks": "look"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "36",
+    "scenarioKey": "clinic-throat-check",
+    "titleZh": "診間檢查喉嚨",
+    "descriptionZh": "明亮診間裡，醫生用小燈檢查坐在椅上的病人張開的嘴，護理師站在旁邊協助。桌上放著藥品包裝，病人眉頭微皺並以手扶額，呈現不舒服但平和的就診場景。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "doctor",
+        "entryGuid": "fd97607e-5e26-5bec-97b9-5f40fb2f09ce",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "醫生",
+        "visualCueZh": "穿白袍、拿小燈檢查的醫生"
+      },
+      {
+        "word": "nurse",
+        "entryGuid": "15c535ed-1155-5bea-92e8-eb8b8c3c5dbb",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "護理師",
+        "visualCueZh": "穿醫療工作服、在旁協助的護理師"
+      },
+      {
+        "word": "patient",
+        "entryGuid": "927d239d-402d-58b2-963f-d56d1b748ca7",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "病人",
+        "visualCueZh": "坐在診療椅上接受檢查的人"
+      },
+      {
+        "word": "medicine",
+        "entryGuid": "6eb2dfd9-eeac-5916-a1a5-5f5b2b9b08b6",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "藥物",
+        "visualCueZh": "桌上清楚可見的錠劑鋁箔包裝與藥瓶"
+      },
+      {
+        "word": "mouth",
+        "entryGuid": "c5333114-71ca-5a86-a2b2-56c79914bba3",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "嘴巴",
+        "visualCueZh": "病人面部清楚張開的嘴"
+      },
+      {
+        "word": "chair",
+        "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "椅子",
+        "visualCueZh": "病人坐著、露出椅背與座面的椅子"
+      },
+      {
+        "word": "check",
+        "entryGuid": "7242d255-af15-510d-8c98-44f37f9b9ee0",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "檢查",
+        "visualCueZh": "醫生把小燈對準病人嘴巴檢查"
+      },
+      {
+        "word": "sick",
+        "entryGuid": "3f5ea7e6-41fa-53fa-bf67-546e96e95478",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "不舒服的",
+        "visualCueZh": "病人微皺眉、臉色疲憊並以一手扶額"
+      },
+      {
+        "word": "room",
+        "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "房間",
+        "visualCueZh": "診間完整露出牆面與空間。"
+      },
+      {
+        "word": "bed",
+        "entryGuid": "cec13288-f8ee-50b2-be0e-f7753e716a08",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "床",
+        "visualCueZh": "診間一側有檢查床。"
+      },
+      {
+        "word": "head",
+        "entryGuid": "2eca3d4d-8da9-5fa5-b74e-d8f968adfbaf",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "頭",
+        "visualCueZh": "病人以手扶頭。"
+      },
+      {
+        "word": "neck",
+        "entryGuid": "29779933-e0b6-539c-86c0-53ed42ec4156",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "脖子",
+        "visualCueZh": "病人頸部露出以供檢查。"
+      },
+      {
+        "word": "lamp",
+        "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "燈",
+        "visualCueZh": "醫生握著檢查用小燈。"
+      },
+      {
+        "word": "throat",
+        "entryGuid": "c30b2939-cc05-58b7-bcc9-33d149282d22",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "喉嚨",
+        "visualCueZh": "病人張嘴，故事說明喉嚨不舒服。"
+      },
+      {
+        "word": "calm",
+        "entryGuid": "a9366e12-a1e7-5174-b554-6e1a7bc8e957",
+        "list": "advance",
+        "teachingPos": "adj",
+        "senseZh": "平靜的",
+        "visualCueZh": "病人安心坐好，表情放鬆。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A sick patient sits on a chair in a bright room.",
+        "zh": "一位不舒服的病人坐在明亮房間裡的椅子上。"
+      },
+      {
+        "en": "A bed stands near the wall, and a nurse waits near the patient.",
+        "zh": "牆邊有一張床，一位護理師在旁等候。"
+      },
+      {
+        "en": "The patient holds his head and says his throat hurts.",
+        "zh": "病人扶著頭，說喉嚨痛。"
+      },
+      {
+        "en": "The doctor asks him to open his mouth wide.",
+        "zh": "醫生請他把嘴巴張大。"
+      },
+      {
+        "en": "A small lamp helps the doctor check inside with care.",
+        "zh": "一盞小燈幫助醫生仔細檢查口腔裡面。"
+      },
+      {
+        "en": "Then the doctor looks at the patient and checks his neck.",
+        "zh": "接著，醫生看著病人，檢查他的脖子。"
+      },
+      {
+        "en": "The nurse brings water and some medicine to the table.",
+        "zh": "護理師把水和一些藥物拿到桌上。"
+      },
+      {
+        "en": "The patient feels calm because everyone is kind and gentle.",
+        "zh": "每個人都親切又溫柔，病人因此感到平靜。"
+      },
+      {
+        "en": "He listens with care and gets ready to rest at home.",
+        "zh": "他仔細聆聽，準備回家休息。"
+      }
+    ],
+    "aliases": {
+      "sits": "sit",
+      "stands": "stand",
+      "waits": "wait",
+      "holds": "hold",
+      "says": "say",
+      "hurts": "hurt",
+      "asks": "ask",
+      "helps": "help",
+      "looks": "look",
+      "checks": "check",
+      "brings": "bring",
+      "feels": "feel",
+      "is": "be",
+      "listens": "listen",
+      "gets": "get"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "37",
+    "scenarioKey": "zoo-animal-watching",
+    "titleZh": "動物園觀察動物",
+    "descriptionZh": "動物園設有相鄰但分隔的開闊棲地，能看見大象、獅子、斑馬與攀樹的猴子。前景柵欄與一棵高樹清楚露出，動物保持自然活動，不以小籠子擁擠排列。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "elephant",
+        "entryGuid": "73595027-6f27-520a-b168-44f61299c07b",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "大象",
+        "visualCueZh": "一側棲地完整露出長鼻與大耳的大象"
+      },
+      {
+        "word": "lion",
+        "entryGuid": "202c0363-ae5a-551f-b99a-a3afea42d33b",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "獅子",
+        "visualCueZh": "另一側帶鬃毛、輪廓清楚的獅子"
+      },
+      {
+        "word": "monkey",
+        "entryGuid": "bf4b23e7-8056-544c-aca5-0995d806d503",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "猴子",
+        "visualCueZh": "樹幹上的猴子"
+      },
+      {
+        "word": "zebra",
+        "entryGuid": "cd01b349-f952-5475-9855-d29cdefb0301",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "斑馬",
+        "visualCueZh": "黑白條紋明確的斑馬"
+      },
+      {
+        "word": "fence",
+        "entryGuid": "3e592d2e-c014-56a0-8378-42270b643976",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "柵欄",
+        "visualCueZh": "前景不遮擋動物身體的低柵欄"
+      },
+      {
+        "word": "tree",
+        "entryGuid": "cb47822e-87eb-548c-aa51-38d562f80ee3",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "樹木",
+        "visualCueZh": "猴子攀爬、完整露出樹幹與樹冠的樹"
+      },
+      {
+        "word": "climb",
+        "entryGuid": "768f426b-489a-5e48-97fe-0d318340bd43",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "攀爬",
+        "visualCueZh": "猴子雙手抓住較高樹枝、腳踩樹幹"
+      },
+      {
+        "word": "tall",
+        "entryGuid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "高大的",
+        "visualCueZh": "相較動物高度明顯高出的樹"
+      },
+      {
+        "word": "animal",
+        "entryGuid": "62ba27b8-0b45-52ea-aef2-2448b407dc30",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "動物",
+        "visualCueZh": "不同動物分隔在開闊棲地。"
+      },
+      {
+        "word": "stone",
+        "entryGuid": "6d83c005-e958-553c-8628-1599ae9ab5d2",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "石頭",
+        "visualCueZh": "獅子附近有大型石頭。"
+      },
+      {
+        "word": "walk",
+        "entryGuid": "137d17ff-7b74-5742-ba25-01919562c322",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "走路",
+        "visualCueZh": "大象緩緩走向水邊。"
+      },
+      {
+        "word": "watch",
+        "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "觀看",
+        "visualCueZh": "孩子站在柵欄外看動物。"
+      },
+      {
+        "word": "big",
+        "entryGuid": "835376ac-bc57-5996-beba-2b63de212c86",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "大的",
+        "visualCueZh": "大象身形與前景孩子形成大小對比。"
+      },
+      {
+        "word": "brown",
+        "entryGuid": "6d02130f-46a3-59f9-9877-b64efab8ef5e",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "棕色的",
+        "visualCueZh": "猴子身上有棕色毛。"
+      },
+      {
+        "word": "zoo",
+        "entryGuid": "bc58b26a-9bac-59ec-a9c6-f08a4a75896b",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "動物園",
+        "visualCueZh": "開闊動物棲地與參觀步道構成動物園。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A pair of children walk into the zoo on a bright morning.",
+        "zh": "兩個孩子在明亮的早晨走進動物園。"
+      },
+      {
+        "en": "They stop behind a fence to watch each animal.",
+        "zh": "他們在柵欄後停下，觀看每隻動物。"
+      },
+      {
+        "en": "A big elephant walks toward some water near them.",
+        "zh": "一隻大象走向附近的水邊。"
+      },
+      {
+        "en": "A lion rests beside a stone in another open space.",
+        "zh": "一隻獅子在另一處開闊空間裡，靠著石頭休息。"
+      },
+      {
+        "en": "A zebra eats grass in another place near the lion.",
+        "zh": "一隻斑馬在獅子附近的另一區吃草。"
+      },
+      {
+        "en": "A brown monkey starts to climb a tall tree.",
+        "zh": "一隻棕色猴子開始攀爬一棵高樹。"
+      },
+      {
+        "en": "It moves between the branches above the ground.",
+        "zh": "牠在地面上方的樹枝間移動。"
+      },
+      {
+        "en": "The children point at the animals and keep quiet behind the fence.",
+        "zh": "孩子們在柵欄後指著動物，保持安靜。"
+      },
+      {
+        "en": "They enjoy the visit and leave room for other people.",
+        "zh": "他們享受這次參觀，也為其他人留出空間。"
+      }
+    ],
+    "aliases": {
+      "children": "child",
+      "walks": "walk",
+      "rests": "rest",
+      "eats": "eat",
+      "starts": "start",
+      "moves": "move",
+      "branches": "branch",
+      "animals": "animal"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "38",
+    "scenarioKey": "vegetable-garden-harvest",
+    "titleZh": "菜園採收蔬菜",
+    "descriptionZh": "農夫在整齊的菜園中採摘紅色番茄，旁邊有玉米植株與露出葉叢的胡蘿蔔。採下的蔬菜放在大籃子中，每種作物保留清楚可辨的外觀。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "farmer",
+        "entryGuid": "faef1227-9f0a-55f1-b763-1decd8fa159b",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "農夫",
+        "visualCueZh": "穿工作服、戴草帽並在菜園採摘的人"
+      },
+      {
+        "word": "garden",
+        "entryGuid": "d4a6e961-4ac9-5e14-af6c-7cff536b0f53",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "菜園",
+        "visualCueZh": "種有整齊蔬菜列的小菜園"
+      },
+      {
+        "word": "corn",
+        "entryGuid": "1d13eaec-03c1-5509-85c1-892133bed284",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "玉米",
+        "visualCueZh": "前景籃旁露出金黃色籽粒的玉米"
+      },
+      {
+        "word": "tomato",
+        "entryGuid": "9ab1fe70-90c5-5e34-8d89-39c341c4f0a6",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "番茄",
+        "visualCueZh": "枝頭完整露出的紅色番茄"
+      },
+      {
+        "word": "carrot",
+        "entryGuid": "a94e951a-aa42-5de2-8358-d35c8e045f00",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "胡蘿蔔",
+        "visualCueZh": "籃子中露出橘色根部與綠色葉叢的胡蘿蔔"
+      },
+      {
+        "word": "basket",
+        "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "籃子",
+        "visualCueZh": "農夫旁裝著採收蔬菜的大籃子"
+      },
+      {
+        "word": "pick",
+        "entryGuid": "89f07fd1-2d5a-5850-aef1-483b2b57598a",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "採摘",
+        "visualCueZh": "農夫手指握住枝頭番茄並輕扭採下"
+      },
+      {
+        "word": "red",
+        "entryGuid": "6182bfb3-1423-5b4c-bf17-3f159de06e04",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "紅色的",
+        "visualCueZh": "農夫手邊明確的紅色番茄"
+      },
+      {
+        "word": "vegetable",
+        "entryGuid": "b8f772e0-3f61-5b62-a676-e998fa450568",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "蔬菜",
+        "visualCueZh": "籃中裝不同種類新採蔬菜。"
+      },
+      {
+        "word": "leaf",
+        "entryGuid": "417f3c72-3787-52c5-8ea1-414ab78519f0",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "葉子",
+        "visualCueZh": "胡蘿蔔葉與番茄葉清楚可見。"
+      },
+      {
+        "word": "dig",
+        "entryGuid": "7996c7ef-8648-5669-9681-abbcf73a2ac8",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "挖掘",
+        "visualCueZh": "另一人用小鏟挖開胡蘿蔔旁泥土。"
+      },
+      {
+        "word": "water",
+        "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "澆水",
+        "visualCueZh": "菜園一側的人用水壺澆水。"
+      },
+      {
+        "word": "fresh",
+        "entryGuid": "7bbaeb1f-2dfb-5097-b352-82aff054864c",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "新鮮的",
+        "visualCueZh": "剛採蔬菜飽滿，故事說明新鮮。"
+      },
+      {
+        "word": "green",
+        "entryGuid": "4d557825-5f21-55de-bb31-7afa183d1bfb",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "綠色的",
+        "visualCueZh": "作物葉片呈綠色。"
+      },
+      {
+        "word": "earth",
+        "entryGuid": "a42fe73a-0ffd-54f6-8733-9906f2f6a85d",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "泥土",
+        "visualCueZh": "菜畦與挖開土壤清楚露出。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A farmer goes into the garden with a large basket.",
+        "zh": "一位農夫提著大籃子，走進菜園。"
+      },
+      {
+        "en": "A red tomato hangs beside a green leaf in the sun.",
+        "zh": "一顆紅番茄掛在陽光下的綠葉旁。"
+      },
+      {
+        "en": "The farmer starts to pick the tomatoes in turn.",
+        "zh": "農夫開始一顆接一顆地採番茄。"
+      },
+      {
+        "en": "Some tall corn grows near a row of carrots.",
+        "zh": "一些高高的玉米長在一排胡蘿蔔附近。"
+      },
+      {
+        "en": "A friend helps dig in the earth beside a carrot.",
+        "zh": "一位朋友幫忙挖開胡蘿蔔旁邊的泥土。"
+      },
+      {
+        "en": "They pull it out with care and brush away the earth.",
+        "zh": "他們小心拔出胡蘿蔔，刷掉泥土。"
+      },
+      {
+        "en": "Every vegetable is fresh and goes into the basket.",
+        "zh": "每種蔬菜都很新鮮，被放進籃子裡。"
+      },
+      {
+        "en": "Then they water the plants that are still growing.",
+        "zh": "接著，他們替仍在生長的植物澆水。"
+      },
+      {
+        "en": "They carry the basket home and plan a good meal.",
+        "zh": "他們把籃子提回家，準備做一頓好吃的飯。"
+      }
+    ],
+    "aliases": {
+      "goes": "go",
+      "hangs": "hang",
+      "starts": "start",
+      "tomatoes": "tomato",
+      "grows": "grow",
+      "carrots": "carrot",
+      "helps": "help",
+      "is": "be",
+      "plants": "plant",
+      "are": "be",
+      "growing": "grow"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "39",
+    "scenarioKey": "museum-dinosaur-tour",
+    "titleZh": "博物館古物與恐龍展",
+    "descriptionZh": "寬敞博物館展廳裡有一具大型恐龍骨架、牆上圖畫與玻璃櫃中的古代錢幣。導覽人員朝展示品講解，孩子抬頭觀看恐龍，展品之間保留寬廣走道。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "museum",
+        "entryGuid": "03013626-ece3-5286-a868-cfeeaa91b6b4",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "博物館",
+        "visualCueZh": "有展示櫃、展品與導覽人員的整體展廳"
+      },
+      {
+        "word": "dinosaur",
+        "entryGuid": "558c3bd3-5f96-5013-9fd0-609cea10ddde",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "恐龍",
+        "visualCueZh": "展廳中央完整可見的大型恐龍骨架展示"
+      },
+      {
+        "word": "picture",
+        "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "圖畫",
+        "visualCueZh": "牆上描繪恐龍的單幅圖畫"
+      },
+      {
+        "word": "coin",
+        "entryGuid": "35fa68c9-d589-57fd-9291-85ddedf3c150",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "錢幣",
+        "visualCueZh": "近景玻璃櫃中放大且不過小的金屬錢幣"
+      },
+      {
+        "word": "guide",
+        "entryGuid": "5fb6cb23-5d54-5208-a269-362ab296d7e9",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "導覽人員",
+        "visualCueZh": "站在孩子前方、伸手向展示品介紹的人"
+      },
+      {
+        "word": "look",
+        "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "看",
+        "visualCueZh": "孩子抬頭、視線明確朝向恐龍展示"
+      },
+      {
+        "word": "ancient",
+        "entryGuid": "f7614a21-f9e5-5292-8038-49d79759ddaa",
+        "list": "advance",
+        "teachingPos": "adj",
+        "senseZh": "古代的",
+        "visualCueZh": "展示櫃中帶磨損與古老圖紋的錢幣"
+      },
+      {
+        "word": "large",
+        "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "大型的",
+        "visualCueZh": "相較旁邊人物高度明顯巨大的恐龍骨架"
+      },
+      {
+        "word": "ticket",
+        "entryGuid": "1a126970-ab39-5697-bab2-7316a7819184",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "票",
+        "visualCueZh": "孩子手上拿著無文字入場票。"
+      },
+      {
+        "word": "glass",
+        "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "玻璃",
+        "visualCueZh": "錢幣展示櫃有透明玻璃。"
+      },
+      {
+        "word": "hall",
+        "entryGuid": "ec51dc5f-b855-5051-88f9-697bc5cb5ed8",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "大廳",
+        "visualCueZh": "展廳有寬敞走道。"
+      },
+      {
+        "word": "stand",
+        "entryGuid": "c159bec5-f00f-522b-8ac1-34ff583d7696",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "站立",
+        "visualCueZh": "導覽員站在恐龍展示旁。"
+      },
+      {
+        "word": "listen",
+        "entryGuid": "c183236f-bc95-51ba-90d2-f6cb6d100ac8",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "聆聽",
+        "visualCueZh": "孩子朝向導覽員安靜聆聽。"
+      },
+      {
+        "word": "old",
+        "entryGuid": "e43fc5d1-7c69-55a5-97f1-e67f2e207276",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "古老的",
+        "visualCueZh": "古錢幣有歲月痕跡，故事說明年代。"
+      },
+      {
+        "word": "wide",
+        "entryGuid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "寬闊的",
+        "visualCueZh": "展品間留出寬走道。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A pair of children take a ticket each and enter the museum.",
+        "zh": "兩個孩子各拿一張票，走進博物館。"
+      },
+      {
+        "en": "The hall is wide, with a large dinosaur in the middle.",
+        "zh": "展廳很寬敞，中央有一具大型恐龍展示。"
+      },
+      {
+        "en": "A guide stands beside it and starts to talk.",
+        "zh": "一位導覽員站在旁邊，開始講解。"
+      },
+      {
+        "en": "The children look up and listen to the story with care.",
+        "zh": "孩子們抬頭看，仔細聆聽這段故事。"
+      },
+      {
+        "en": "A picture on the wall shows the dinosaur long ago.",
+        "zh": "牆上的圖畫呈現很久以前的恐龍。"
+      },
+      {
+        "en": "Then the guide points to an ancient coin behind glass.",
+        "zh": "接著，導覽員指向玻璃後的一枚古代錢幣。"
+      },
+      {
+        "en": "The coin is very old and much smaller than their tickets.",
+        "zh": "錢幣非常古老，比他們的票小得多。"
+      },
+      {
+        "en": "They stand a little closer, but they do not touch anything.",
+        "zh": "他們站得稍微近一點，但不碰任何東西。"
+      },
+      {
+        "en": "There is room for everyone to enjoy these interesting things.",
+        "zh": "大家都有空間，能欣賞這些有趣的展示品。"
+      }
+    ],
+    "aliases": {
+      "children": "child",
+      "is": "be",
+      "stands": "stand",
+      "starts": "start",
+      "shows": "show",
+      "points": "point",
+      "smaller": "small",
+      "tickets": "ticket",
+      "closer": "close",
+      "things": "thing"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  },
+  {
+    "id": "40",
+    "scenarioKey": "community-yard-cleanup",
+    "titleZh": "社區一起打掃",
+    "descriptionZh": "社區庭院中，居民戴手套打掃地面，一人用掃把掃落葉，另一人提桶清洗角落。落葉、垃圾和髒地面集中在不同小區域，工具與手部動作清楚露出。 新增七詞線索依 targets.visualCueZh 整合，生成底圖前須核對動作與構圖。",
+    "targets": [
+      {
+        "word": "glove",
+        "entryGuid": "468fc8b2-0ff6-52bb-8838-415d05d1b433",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "手套",
+        "visualCueZh": "清潔者手上清楚可辨的防護手套"
+      },
+      {
+        "word": "bucket",
+        "entryGuid": "cc7f2035-f1b6-53c9-b1bb-5ce10b7cc285",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "水桶",
+        "visualCueZh": "清洗者腳邊帶提把的水桶"
+      },
+      {
+        "word": "leaf",
+        "entryGuid": "417f3c72-3787-52c5-8ea1-414ab78519f0",
+        "list": "advance",
+        "teachingPos": "n",
+        "senseZh": "葉子",
+        "visualCueZh": "近景地上單片輪廓清楚的落葉"
+      },
+      {
+        "word": "trash",
+        "entryGuid": "c06e7691-afbd-5c0b-a3b8-e7fb9c847358",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "垃圾",
+        "visualCueZh": "地上單獨可見的揉皺包裝紙與空包裝袋"
+      },
+      {
+        "word": "ground",
+        "entryGuid": "fa6913cc-1315-54ea-99d3-91332d319f3f",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "地面",
+        "visualCueZh": "庭院可見鋪面與泥土的地面"
+      },
+      {
+        "word": "sweep",
+        "entryGuid": "fb71278f-927b-59a5-a28b-a7542059a710",
+        "list": "advance",
+        "teachingPos": "v",
+        "senseZh": "掃",
+        "visualCueZh": "人物雙手持掃把、刷毛接觸落葉堆"
+      },
+      {
+        "word": "wash",
+        "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "清洗",
+        "visualCueZh": "另一人用刷子和桶水刷洗鋪面"
+      },
+      {
+        "word": "dirty",
+        "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "髒的",
+        "visualCueZh": "正在清洗處旁仍有清楚泥漬的地面"
+      },
+      {
+        "word": "street",
+        "entryGuid": "3c1b7db2-c4b0-52a8-8f6c-9164c8c8bda0",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "街道",
+        "visualCueZh": "庭院出口旁露出社區街道。"
+      },
+      {
+        "word": "neighbor",
+        "entryGuid": "7c25b97b-92ee-5efe-88bf-b09378a99759",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "鄰居",
+        "visualCueZh": "不同住戶共同清掃庭院。"
+      },
+      {
+        "word": "bottle",
+        "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "瓶子",
+        "visualCueZh": "地面上有待回收的瓶子。"
+      },
+      {
+        "word": "bag",
+        "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+        "list": "basic",
+        "teachingPos": "n",
+        "senseZh": "袋子",
+        "visualCueZh": "一人手持裝垃圾的袋子。"
+      },
+      {
+        "word": "clean",
+        "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "乾淨的",
+        "visualCueZh": "已清掃區與髒地面形成對比。"
+      },
+      {
+        "word": "help",
+        "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+        "list": "basic",
+        "teachingPos": "v",
+        "senseZh": "幫忙",
+        "visualCueZh": "一個孩子協助成人收集垃圾。"
+      },
+      {
+        "word": "busy",
+        "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+        "list": "basic",
+        "teachingPos": "adj",
+        "senseZh": "忙碌的",
+        "visualCueZh": "多位居民各自進行清掃工作。"
+      }
+    ],
+    "sentences": [
+      {
+        "en": "A neighbor walks into the yard with a bucket of water.",
+        "zh": "一位鄰居提著一桶水走進庭院。"
+      },
+      {
+        "en": "Several people are busy beside the street this morning.",
+        "zh": "今天早上，幾個人在街道旁忙碌地工作。"
+      },
+      {
+        "en": "Each person wears a glove on each hand for the work.",
+        "zh": "每個人都在兩手各戴一隻手套，準備工作。"
+      },
+      {
+        "en": "They sweep a dirty part of the ground together.",
+        "zh": "他們一起清掃地面上髒的區域。"
+      },
+      {
+        "en": "A leaf blows past a bottle near the wall.",
+        "zh": "一片葉子被吹過牆邊的一個瓶子。"
+      },
+      {
+        "en": "A child wants to help and puts trash into a bag.",
+        "zh": "一個孩子想幫忙，把垃圾放進袋子。"
+      },
+      {
+        "en": "The neighbor uses the water to wash a small corner.",
+        "zh": "鄰居用水清洗一個小角落。"
+      },
+      {
+        "en": "Soon the ground is clean, and the yard looks bright.",
+        "zh": "不久，地面乾淨了，庭院看起來明亮整潔。"
+      },
+      {
+        "en": "Everyone smiles and takes a short rest after the work.",
+        "zh": "工作結束後，大家微笑著短暫休息。"
+      }
+    ],
+    "aliases": {
+      "walks": "walk",
+      "are": "be",
+      "wears": "wear",
+      "blows": "blow",
+      "wants": "want",
+      "puts": "put",
+      "uses": "use",
+      "is": "be",
+      "looks": "look",
+      "smiles": "smile",
+      "takes": "take"
+    },
+    "reviewNotes": [
+      "文字備料；原八詞保留並新增七詞。",
+      "只核對來源 JSON，尚未核對正式 DB。",
+      "尚無新底圖、座標、旁白、媒體審閱或匯入結果。",
+      "支援詞映射含實際屈折形；不以同義詞替代超級別字。"
+    ]
+  }
+]

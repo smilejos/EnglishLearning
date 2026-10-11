@@ -18,7 +18,7 @@ export interface ScenarioSentence {
 }
 export interface ScenarioDetail extends ScenarioSummary {
   targets: ScenarioTarget[];
-  story: { textEn: string; textZh: string; sentences: ScenarioSentence[] };
+  story: { textEn: string; textZh: string; sentences: ScenarioSentence[]; paragraphBreakAfterSentenceIds?: string[] };
   image: { url: string; width: number; height: number };
   storyAudio: { url: string } | null;
 }

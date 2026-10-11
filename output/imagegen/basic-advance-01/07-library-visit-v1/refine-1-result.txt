@@ -1,0 +1,6 @@
+- 原始工具結果：[exec-801b08a0-489b-4157-9cce-3a02f64aba5a.png](/Users/jos/.codex/generated_images/01a126c4-7eea-7581-85ad-613dc2f9c44f/exec-801b08a0-489b-4157-9cce-3a02f64aba5a.png)
+- 保存圖片：[base-refined-1.png](/Users/jos/Documents/program/EnglishLearning/output/imagegen/basic-advance-01/07-library-visit-v1/base-refined-1.png)
+- 尺寸：1672 × 941
+- 審閱 JSON：[image-review.refined-1.json](/Users/jos/Documents/program/EnglishLearning/output/imagegen/basic-advance-01/07-library-visit-v1/image-review.refined-1.json)
+
+未解問題：另一手扶書及半本插入的比例不夠明確；藍書封面插圖被移除，前景故事插圖部分細節改變；`quiet` 缺少直接線索，座標填 `null`。全圖目視未見文字或數字，`noVocabularyText` 設為 `true`。

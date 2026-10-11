@@ -1,0 +1,1743 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "water-science",
+  "revision": 3,
+  "status": "draft",
+  "titleZh": "觀察水與顏色",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 23,
+  "targets": [
+    {
+      "word": "bottle",
+      "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "瓶子",
+      "interaction": {
+        "object": {
+          "x": 0.294,
+          "y": 0.483
+        },
+        "label": {
+          "x": 0.295,
+          "y": 0.76
+        }
+      }
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "interaction": {
+        "object": {
+          "x": 0.127,
+          "y": 0.757
+        },
+        "label": {
+          "x": 0.12,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "glass",
+      "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "玻璃杯",
+      "interaction": {
+        "object": {
+          "x": 0.677,
+          "y": 0.75
+        },
+        "label": {
+          "x": 0.705,
+          "y": 0.855
+        }
+      }
+    },
+    {
+      "word": "ruler",
+      "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "尺",
+      "interaction": {
+        "object": {
+          "x": 0.249,
+          "y": 0.424
+        },
+        "label": {
+          "x": 0.2,
+          "y": 0.2
+        }
+      }
+    },
+    {
+      "word": "drop",
+      "entryGuid": "a0246fee-ef2e-587b-9611-d63131ceb3b9",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水滴",
+      "interaction": {
+        "object": {
+          "x": 0.404,
+          "y": 0.717
+        },
+        "label": {
+          "x": 0.398,
+          "y": 0.81
+        }
+      }
+    },
+    {
+      "word": "cup",
+      "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "杯子",
+      "interaction": {
+        "object": {
+          "x": 0.933,
+          "y": 0.802
+        },
+        "label": {
+          "x": 0.925,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "science",
+      "entryGuid": "9fc253a4-a108-599a-9b0b-568c42156a37",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "科學",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.035
+        },
+        "label": {
+          "x": 0.615,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "object": {
+          "x": 0.497,
+          "y": 0.919
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "teacher",
+      "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "老師",
+      "interaction": {
+        "object": {
+          "x": 0.793,
+          "y": 0.443
+        },
+        "label": {
+          "x": 0.83,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "word": "student",
+      "entryGuid": "bf3f1240-42b3-51d5-9f1a-74405d8c0eeb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "學生",
+      "interaction": {
+        "object": {
+          "x": 0.528,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.435,
+          "y": 0.585
+        }
+      }
+    },
+    {
+      "word": "color",
+      "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "顏色",
+      "interaction": {
+        "object": {
+          "x": 0.544,
+          "y": 0.693
+        },
+        "label": {
+          "x": 0.475,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "result",
+      "entryGuid": "1bb2a4a2-daa1-5147-8f39-83e9269b6a02",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "結果",
+      "interaction": {
+        "object": {
+          "x": 0.545,
+          "y": 0.73
+        },
+        "label": {
+          "x": 0.545,
+          "y": 0.865
+        }
+      }
+    },
+    {
+      "word": "level",
+      "entryGuid": "dd37379a-d117-564f-9f03-47efa85b677e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水位",
+      "interaction": {
+        "object": {
+          "x": 0.294,
+          "y": 0.436
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.35
+        }
+      }
+    },
+    {
+      "word": "height",
+      "entryGuid": "3f796fd9-b852-5216-9c89-526fa8f7aa4d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "高度",
+      "interaction": {
+        "object": {
+          "x": 0.3,
+          "y": 0.433
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.385
+        }
+      }
+    },
+    {
+      "word": "liquid",
+      "entryGuid": "6aab37cd-7a5b-562c-ada6-ca5ccaa001c6",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "液體",
+      "interaction": {
+        "object": {
+          "x": 0.548,
+          "y": 0.725
+        },
+        "label": {
+          "x": 0.62,
+          "y": 0.83
+        }
+      }
+    },
+    {
+      "word": "empty",
+      "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "空的",
+      "interaction": {
+        "object": {
+          "x": 0.796,
+          "y": 0.756
+        },
+        "label": {
+          "x": 0.835,
+          "y": 0.53
+        }
+      }
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "裝滿的",
+      "interaction": {
+        "object": {
+          "x": 0.677,
+          "y": 0.738
+        },
+        "label": {
+          "x": 0.68,
+          "y": 0.565
+        }
+      }
+    },
+    {
+      "word": "careful",
+      "entryGuid": "134a56a7-2483-53ac-9c97-653e1329ca9d",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "小心的",
+      "interaction": {
+        "object": {
+          "x": 0.651,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.775,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "blue",
+      "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "藍色的",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.507
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.455
+        }
+      }
+    },
+    {
+      "word": "yellow",
+      "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "黃色的",
+      "interaction": {
+        "object": {
+          "x": 0.605,
+          "y": 0.546
+        },
+        "label": {
+          "x": 0.675,
+          "y": 0.505
+        }
+      }
+    },
+    {
+      "word": "measure",
+      "entryGuid": "40322aac-afef-54bb-b5d0-e117fd3109e5",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "測量",
+      "interaction": {
+        "object": {
+          "x": 0.251,
+          "y": 0.45
+        },
+        "label": {
+          "x": 0.29,
+          "y": 0.16
+        }
+      }
+    },
+    {
+      "word": "mix",
+      "entryGuid": "a0d35ceb-68e0-58c7-a9ac-ca28d9a5574f",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "混合",
+      "interaction": {
+        "object": {
+          "x": 0.544,
+          "y": 0.626
+        },
+        "label": {
+          "x": 0.555,
+          "y": 0.68
+        }
+      }
+    },
+    {
+      "word": "add",
+      "entryGuid": "bae3cd73-114b-5005-919a-8708ca22e9d2",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "加入",
+      "interaction": {
+        "object": {
+          "x": 0.601,
+          "y": 0.555
+        },
+        "label": {
+          "x": 0.625,
+          "y": 0.655
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "In science class, our teacher asks each student to be careful with the water on the table. My friend holds a ruler beside a bottle so we can measure the height of the water. We look at the level of the liquid beside the ruler and tell the teacher what we see. Next, I take some blue water and some yellow water, ready to mix both colors. I add them with care to a glass and watch a new color appear as the water moves together. The result is green, and we keep looking as the color spreads through the water. An empty glass waits beside a full glass, and a cup stays at the end of the table. A drop lands on the table, so we clean it up before moving our things. Our teacher smiles and asks us to explain what changed, using the things we can see.",
+    "textZh": "在科學課上，老師請每位學生小心處理桌上的水。朋友把尺拿在瓶子旁，讓我們測量水的高度。我們看看尺旁液體的水位，告訴老師看到什麼。接著，我拿一些藍色水和一些黃色水，準備把兩種顏色混合。我慢慢把它們加入玻璃杯，看著水混在一起，出現新的顏色。結果變成綠色，我們繼續看著顏色在水中散開。一個空玻璃杯放在裝滿水的玻璃杯旁，桌子的另一端還有一個杯子。一滴水落在桌上，所以我們移動物品前先把它擦掉。老師微笑著請我們用看得到的事物，說明發生了什麼變化。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "In science class, our teacher asks each student to be careful with the water on the table.",
+        "zh": "在科學課上，老師請每位學生小心處理桌上的水。",
+        "wordLinks": [
+          {
+            "surface": "In",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "science",
+            "word": "science",
+            "entryGuid": "9fc253a4-a108-599a-9b0b-568c42156a37",
+            "isTarget": true,
+            "start": 3,
+            "end": 10
+          },
+          {
+            "surface": "class",
+            "word": "class",
+            "entryGuid": "1316631b-5665-507a-98d0-2d313582c3bd",
+            "isTarget": false,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": true,
+            "start": 22,
+            "end": 29
+          },
+          {
+            "surface": "asks",
+            "word": "ask",
+            "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "each",
+            "word": "each",
+            "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "student",
+            "word": "student",
+            "entryGuid": "bf3f1240-42b3-51d5-9f1a-74405d8c0eeb",
+            "isTarget": true,
+            "start": 40,
+            "end": 47
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 48,
+            "end": 50
+          },
+          {
+            "surface": "be",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 51,
+            "end": 53
+          },
+          {
+            "surface": "careful",
+            "word": "careful",
+            "entryGuid": "134a56a7-2483-53ac-9c97-653e1329ca9d",
+            "isTarget": true,
+            "start": 54,
+            "end": 61
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 62,
+            "end": 66
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 67,
+            "end": 70
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 71,
+            "end": 76
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 77,
+            "end": 79
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 80,
+            "end": 83
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 84,
+            "end": 89
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "My friend holds a ruler beside a bottle so we can measure the height of the water.",
+        "zh": "朋友把尺拿在瓶子旁，讓我們測量水的高度。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "friend",
+            "word": "friend",
+            "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "holds",
+            "word": "hold",
+            "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 16,
+            "end": 17
+          },
+          {
+            "surface": "ruler",
+            "word": "ruler",
+            "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+            "isTarget": true,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 24,
+            "end": 30
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 31,
+            "end": 32
+          },
+          {
+            "surface": "bottle",
+            "word": "bottle",
+            "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+            "isTarget": true,
+            "start": 33,
+            "end": 39
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 40,
+            "end": 42
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 43,
+            "end": 45
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "measure",
+            "word": "measure",
+            "entryGuid": "40322aac-afef-54bb-b5d0-e117fd3109e5",
+            "isTarget": true,
+            "start": 50,
+            "end": 57
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 58,
+            "end": 61
+          },
+          {
+            "surface": "height",
+            "word": "height",
+            "entryGuid": "3f796fd9-b852-5216-9c89-526fa8f7aa4d",
+            "isTarget": true,
+            "start": 62,
+            "end": 68
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 69,
+            "end": 71
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 72,
+            "end": 75
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 76,
+            "end": 81
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "We look at the level of the liquid beside the ruler and tell the teacher what we see.",
+        "zh": "我們看看尺旁液體的水位，告訴老師看到什麼。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "look",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 8,
+            "end": 10
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 11,
+            "end": 14
+          },
+          {
+            "surface": "level",
+            "word": "level",
+            "entryGuid": "dd37379a-d117-564f-9f03-47efa85b677e",
+            "isTarget": true,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "liquid",
+            "word": "liquid",
+            "entryGuid": "6aab37cd-7a5b-562c-ada6-ca5ccaa001c6",
+            "isTarget": true,
+            "start": 28,
+            "end": 34
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 35,
+            "end": 41
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "ruler",
+            "word": "ruler",
+            "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+            "isTarget": true,
+            "start": 46,
+            "end": 51
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 52,
+            "end": 55
+          },
+          {
+            "surface": "tell",
+            "word": "tell",
+            "entryGuid": "950c89ca-5d11-5366-9780-786c9ff70af7",
+            "isTarget": false,
+            "start": 56,
+            "end": 60
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 61,
+            "end": 64
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": true,
+            "start": 65,
+            "end": 72
+          },
+          {
+            "surface": "what",
+            "word": "what",
+            "entryGuid": "5ae8e0ea-ca3e-53b2-a2dc-6a8be5c392da",
+            "isTarget": false,
+            "start": 73,
+            "end": 77
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 78,
+            "end": 80
+          },
+          {
+            "surface": "see",
+            "word": "see",
+            "entryGuid": "8f7d06a5-0e23-5c26-9992-beb7d2badfb3",
+            "isTarget": false,
+            "start": 81,
+            "end": 84
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "Next, I take some blue water and some yellow water, ready to mix both colors.",
+        "zh": "接著，我拿一些藍色水和一些黃色水，準備把兩種顏色混合。",
+        "wordLinks": [
+          {
+            "surface": "Next",
+            "word": "next",
+            "entryGuid": "eb74bac2-c475-5f32-b1f3-83f286f561fb",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "take",
+            "word": "take",
+            "entryGuid": "eb536808-149b-524f-93ad-87bd2527d5da",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "some",
+            "word": "some",
+            "entryGuid": "46494184-e96d-5eb9-b4d5-3ec9fd8690de",
+            "isTarget": false,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "blue",
+            "word": "blue",
+            "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+            "isTarget": true,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 23,
+            "end": 28
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "some",
+            "word": "some",
+            "entryGuid": "46494184-e96d-5eb9-b4d5-3ec9fd8690de",
+            "isTarget": false,
+            "start": 33,
+            "end": 37
+          },
+          {
+            "surface": "yellow",
+            "word": "yellow",
+            "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+            "isTarget": true,
+            "start": 38,
+            "end": 44
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 45,
+            "end": 50
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 52,
+            "end": 57
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 58,
+            "end": 60
+          },
+          {
+            "surface": "mix",
+            "word": "mix",
+            "entryGuid": "a0d35ceb-68e0-58c7-a9ac-ca28d9a5574f",
+            "isTarget": true,
+            "start": 61,
+            "end": 64
+          },
+          {
+            "surface": "both",
+            "word": "both",
+            "entryGuid": "c1ddaab4-1087-5620-bd51-d0b83f933403",
+            "isTarget": false,
+            "start": 65,
+            "end": 69
+          },
+          {
+            "surface": "colors",
+            "word": "color",
+            "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+            "isTarget": true,
+            "start": 70,
+            "end": 76
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "I add them with care to a glass and watch a new color appear as the water moves together.",
+        "zh": "我慢慢把它們加入玻璃杯，看著水混在一起，出現新的顏色。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "add",
+            "word": "add",
+            "entryGuid": "bae3cd73-114b-5005-919a-8708ca22e9d2",
+            "isTarget": true,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "them",
+            "word": "them",
+            "entryGuid": "39092abf-a6e2-54cb-9151-9c9947587c98",
+            "isTarget": false,
+            "start": 6,
+            "end": 10
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 11,
+            "end": 15
+          },
+          {
+            "surface": "care",
+            "word": "care",
+            "entryGuid": "81a47358-ba4c-56b5-ad1a-a0ec01afa38f",
+            "isTarget": false,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 24,
+            "end": 25
+          },
+          {
+            "surface": "glass",
+            "word": "glass",
+            "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+            "isTarget": true,
+            "start": 26,
+            "end": 31
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "watch",
+            "word": "watch",
+            "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+            "isTarget": false,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 42,
+            "end": 43
+          },
+          {
+            "surface": "new",
+            "word": "new",
+            "entryGuid": "08930472-4bfb-52ea-aef1-375f479fb12e",
+            "isTarget": false,
+            "start": 44,
+            "end": 47
+          },
+          {
+            "surface": "color",
+            "word": "color",
+            "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+            "isTarget": true,
+            "start": 48,
+            "end": 53
+          },
+          {
+            "surface": "appear",
+            "word": "appear",
+            "entryGuid": "5909b605-ed93-55df-bbaf-d68c3f917370",
+            "isTarget": false,
+            "start": 54,
+            "end": 60
+          },
+          {
+            "surface": "as",
+            "word": "as",
+            "entryGuid": "12fc5be2-8022-591f-b719-d9aa3eeb7dac",
+            "isTarget": false,
+            "start": 61,
+            "end": 63
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 64,
+            "end": 67
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 68,
+            "end": 73
+          },
+          {
+            "surface": "moves",
+            "word": "move",
+            "entryGuid": "6d943d82-d4c7-50c7-af4f-0471a858bd35",
+            "isTarget": false,
+            "start": 74,
+            "end": 79
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 80,
+            "end": 88
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "The result is green, and we keep looking as the color spreads through the water.",
+        "zh": "結果變成綠色，我們繼續看著顏色在水中散開。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "result",
+            "word": "result",
+            "entryGuid": "1bb2a4a2-daa1-5147-8f39-83e9269b6a02",
+            "isTarget": true,
+            "start": 4,
+            "end": 10
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 11,
+            "end": 13
+          },
+          {
+            "surface": "green",
+            "word": "green",
+            "entryGuid": "4d557825-5f21-55de-bb31-7afa183d1bfb",
+            "isTarget": false,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "keep",
+            "word": "keep",
+            "entryGuid": "d63f5c23-0339-5669-92a1-9c8f139bb857",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "looking",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 33,
+            "end": 40
+          },
+          {
+            "surface": "as",
+            "word": "as",
+            "entryGuid": "12fc5be2-8022-591f-b719-d9aa3eeb7dac",
+            "isTarget": false,
+            "start": 41,
+            "end": 43
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 44,
+            "end": 47
+          },
+          {
+            "surface": "color",
+            "word": "color",
+            "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+            "isTarget": true,
+            "start": 48,
+            "end": 53
+          },
+          {
+            "surface": "spreads",
+            "word": "spread",
+            "entryGuid": "56d4234e-7c37-50c5-92a9-b9717df17146",
+            "isTarget": false,
+            "start": 54,
+            "end": 61
+          },
+          {
+            "surface": "through",
+            "word": "through",
+            "entryGuid": "9ae026b7-e7c9-517e-b739-bd61f536bafa",
+            "isTarget": false,
+            "start": 62,
+            "end": 69
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 70,
+            "end": 73
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 74,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "An empty glass waits beside a full glass, and a cup stays at the end of the table.",
+        "zh": "一個空玻璃杯放在裝滿水的玻璃杯旁，桌子的另一端還有一個杯子。",
+        "wordLinks": [
+          {
+            "surface": "An",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "empty",
+            "word": "empty",
+            "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+            "isTarget": true,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "surface": "glass",
+            "word": "glass",
+            "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+            "isTarget": true,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "surface": "waits",
+            "word": "wait",
+            "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+            "isTarget": false,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 28,
+            "end": 29
+          },
+          {
+            "surface": "full",
+            "word": "full",
+            "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+            "isTarget": true,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "glass",
+            "word": "glass",
+            "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+            "isTarget": true,
+            "start": 35,
+            "end": 40
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 46,
+            "end": 47
+          },
+          {
+            "surface": "cup",
+            "word": "cup",
+            "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+            "isTarget": true,
+            "start": 48,
+            "end": 51
+          },
+          {
+            "surface": "stays",
+            "word": "stay",
+            "entryGuid": "988d1227-e4a1-5628-ae1a-6d11c8d8a932",
+            "isTarget": false,
+            "start": 52,
+            "end": 57
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 58,
+            "end": 60
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 61,
+            "end": 64
+          },
+          {
+            "surface": "end",
+            "word": "end",
+            "entryGuid": "40b5005d-7c55-58f9-8fe5-0cd57d2fcc16",
+            "isTarget": false,
+            "start": 65,
+            "end": 68
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 69,
+            "end": 71
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 72,
+            "end": 75
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 76,
+            "end": 81
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "A drop lands on the table, so we clean it up before moving our things.",
+        "zh": "一滴水落在桌上，所以我們移動物品前先把它擦掉。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "drop",
+            "word": "drop",
+            "entryGuid": "a0246fee-ef2e-587b-9611-d63131ceb3b9",
+            "isTarget": true,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "lands",
+            "word": "land",
+            "entryGuid": "0ee84232-288f-519c-8ffb-ad2cdcab1d11",
+            "isTarget": false,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 16,
+            "end": 19
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 20,
+            "end": 25
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 27,
+            "end": 29
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 30,
+            "end": 32
+          },
+          {
+            "surface": "clean",
+            "word": "clean",
+            "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+            "isTarget": false,
+            "start": 33,
+            "end": 38
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 39,
+            "end": 41
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 42,
+            "end": 44
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 45,
+            "end": 51
+          },
+          {
+            "surface": "moving",
+            "word": "move",
+            "entryGuid": "6d943d82-d4c7-50c7-af4f-0471a858bd35",
+            "isTarget": false,
+            "start": 52,
+            "end": 58
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 59,
+            "end": 62
+          },
+          {
+            "surface": "things",
+            "word": "thing",
+            "entryGuid": "7c258eec-319f-58d9-99e1-d57e4ba454ba",
+            "isTarget": false,
+            "start": 63,
+            "end": 69
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "Our teacher smiles and asks us to explain what changed, using the things we can see.",
+        "zh": "老師微笑著請我們用看得到的事物，說明發生了什麼變化。",
+        "wordLinks": [
+          {
+            "surface": "Our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": true,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "surface": "smiles",
+            "word": "smile",
+            "entryGuid": "94b20084-3dfd-548a-b5c9-eceab251ba3f",
+            "isTarget": false,
+            "start": 12,
+            "end": 18
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "asks",
+            "word": "ask",
+            "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+            "isTarget": false,
+            "start": 23,
+            "end": 27
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 31,
+            "end": 33
+          },
+          {
+            "surface": "explain",
+            "word": "explain",
+            "entryGuid": "eb023b0d-c7a4-522d-8538-d7209ca6ea6e",
+            "isTarget": false,
+            "start": 34,
+            "end": 41
+          },
+          {
+            "surface": "what",
+            "word": "what",
+            "entryGuid": "5ae8e0ea-ca3e-53b2-a2dc-6a8be5c392da",
+            "isTarget": false,
+            "start": 42,
+            "end": 46
+          },
+          {
+            "surface": "changed",
+            "word": "change",
+            "entryGuid": "07cdb249-56e7-58fd-a489-04016549505a",
+            "isTarget": false,
+            "start": 47,
+            "end": 54
+          },
+          {
+            "surface": "using",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 56,
+            "end": 61
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 62,
+            "end": 65
+          },
+          {
+            "surface": "things",
+            "word": "thing",
+            "entryGuid": "7c258eec-319f-58d9-99e1-d57e4ba454ba",
+            "isTarget": false,
+            "start": 66,
+            "end": 72
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 73,
+            "end": 75
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 76,
+            "end": 79
+          },
+          {
+            "surface": "see",
+            "word": "see",
+            "entryGuid": "8f7d06a5-0e23-5c26-9992-beb7d2badfb3",
+            "isTarget": false,
+            "start": 80,
+            "end": 83
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s3"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/09-water-science-v1/base-refined-2.png",
+      "sha256": "9c1094a5fae1afe9d9d7f7d43b4dfdea2f263b1ca1cdb1a079dc3d4d159d6151",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/water-science/r2/09eeb3d17582e855/story-1eb3050559bf14b3.mp3",
+      "sha256": "023f8dd041cda37596584b5f34c543627b3bbeccaa7e80f20b896ed69e67d40a",
+      "language": "en",
+      "textSha256": "1eb3050559bf14b33abef2f1a256c793b33eadd95400d478d0a53d9b8044aec4",
+      "durationSeconds": 63.096,
+      "bytes": 1009580,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reused-visually-reviewed-for-new-targets",
+      "method": "reuse-existing-base-image",
+      "reuseCandidate": {
+        "path": "output/imagegen/basic-advance-01/09-water-science-v1/base-refined-2.png",
+        "sha256": "9c1094a5fae1afe9d9d7f7d43b4dfdea2f263b1ca1cdb1a079dc3d4d159d6151",
+        "reviewed": true,
+        "containsVocabularyText": false
+      },
+      "sceneDescriptionZh": "學生量瓶中水的高度，將藍水與黃水加入玻璃杯，老師陪同觀察綠色結果。"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "current-targets-only"
+    }
+  },
+  "contentReview": {
+    "status": "image-text-reviewed-awaiting-ui",
+    "notes": [
+      "本檔是 revision 2 離線文字候選，舊 revision 1／published 客廳未變動。",
+      "已逐張查看現有底圖，object 是圖面錨點；story／image-and-story 明示時間先後或敘事線索，不宣稱單張圖可直接證明。",
+      "label 是候選比例位置，尚須正式套件 UI 檢查遮擋、手機排版與點擊；本檔不代表圖片／媒體或發布審核完成。",
+      "blue／yellow 是混色活動本身，保留；empty／full指右側兩個不同透明杯。",
+      "沒有可見寫記錄動作，也不把泛用watch/hold列滿5；只留measure/mix/add共3v。",
+      "逐張查看現有底圖並依物件分區重排標籤，整場概念以背景／結構為錨點；桌機與手機實際UI尚待驗收。"
+    ]
+  }
+}

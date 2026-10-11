@@ -1,0 +1,176 @@
+{
+  "id": "03",
+  "scenarioKey": "family-dinner",
+  "titleZh": "家庭一起用餐",
+  "descriptionZh": "一家人在餐桌前吃晚餐，飯碗與餐具分開擺放，彼此不遮擋。一人將一盤菜推向另一人分享，另兩人分別呈現準備開吃與吃飽後的姿勢。增設湯碗、雞肉、品嚐人物與窗外暮色，保留兩種飢飽狀態。",
+  "targets": [
+    {
+      "word": "plate",
+      "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "盤子",
+      "visualCueZh": "桌前放白色扁平圓盤，盤沿完整可見。"
+    },
+    {
+      "word": "fork",
+      "entryGuid": "8eb4c30c-5207-52f6-8d17-1f966a14683a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "叉子",
+      "visualCueZh": "盤子左側放四齒叉子，與湯匙隔開。"
+    },
+    {
+      "word": "spoon",
+      "entryGuid": "ecd0366a-ed6e-5306-9b55-b259206b5f6d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "湯匙",
+      "visualCueZh": "盤子右側放有圓凹匙面的湯匙。"
+    },
+    {
+      "word": "rice",
+      "entryGuid": "ab2af344-6cb4-594b-8157-ce67da043e75",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "米飯",
+      "visualCueZh": "中央飯碗盛白飯，清楚畫出幾粒米的形狀。"
+    },
+    {
+      "word": "eat",
+      "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "吃",
+      "visualCueZh": "一位家人把叉上的食物送到張開的嘴邊。"
+    },
+    {
+      "word": "share",
+      "entryGuid": "e97f2c91-8291-58f9-aa30-f17af2ba9cf4",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "分享",
+      "visualCueZh": "另一位家人把盛菜的盤子推向同桌的人，對方伸手接。"
+    },
+    {
+      "word": "hungry",
+      "entryGuid": "2d388700-5b9a-5927-b571-6efe0040ef63",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "飢餓的",
+      "visualCueZh": "還沒開始吃的孩子一手摸肚子、一手伸向食物。"
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "飽的",
+      "visualCueZh": "已吃完的家人面前有空盤，摸著肚子並擺手婉拒加菜。"
+    },
+    {
+      "word": "family",
+      "entryGuid": "3dce25c5-181c-5ff5-9910-b8f915ab05b3",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "家人",
+      "visualCueZh": "餐桌四周坐著不同年齡的家人，一同用餐。"
+    },
+    {
+      "word": "soup",
+      "entryGuid": "03efd4ff-bc2a-5d5c-8708-fad1c4a553fb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "湯",
+      "visualCueZh": "桌前碗內有湯汁和少量蔬菜，與米飯分開。"
+    },
+    {
+      "word": "bowl",
+      "entryGuid": "e35a0e95-016f-596e-bad6-e974c904f920",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "碗",
+      "visualCueZh": "前景圓碗的碗沿與外側清楚可见。"
+    },
+    {
+      "word": "chicken",
+      "entryGuid": "19f4c758-b070-5639-a6f6-d444b6b215b1",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "雞肉",
+      "visualCueZh": "中央餐盤有煮熟的雞腿，保留肉與骨的輪廓。"
+    },
+    {
+      "word": "dinner",
+      "entryGuid": "8d095514-2db1-5af6-ab36-da070b4b8057",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "晚餐",
+      "visualCueZh": "窗外暮色與餐桌準備的完整餐點共同提示晚餐。"
+    },
+    {
+      "word": "taste",
+      "entryGuid": "8f3ff47a-5543-51f4-a2fb-283fdb8b9095",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "品嚐",
+      "visualCueZh": "一人把少量湯放入口中，湯匙停在嘴邊。"
+    },
+    {
+      "word": "happy",
+      "entryGuid": "013069fb-6aeb-597d-9c61-7dcec4504d2c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "快樂的",
+      "visualCueZh": "餐桌旁孩子開口微笑、姿勢放鬆。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "My family sits together at the table for dinner.",
+      "zh": "我的家人一起坐在桌邊吃晚餐。"
+    },
+    {
+      "en": "I am hungry after a long day at school.",
+      "zh": "上了一整天的課，我肚子餓了。"
+    },
+    {
+      "en": "There is rice on my plate and soup in my bowl.",
+      "zh": "我的盤子裡有米飯，碗裡有湯。"
+    },
+    {
+      "en": "I use a spoon to taste the soup first.",
+      "zh": "我先用湯匙品嚐湯。"
+    },
+    {
+      "en": "Then I take my fork and eat some chicken.",
+      "zh": "接著我拿起叉子，吃一些雞肉。"
+    },
+    {
+      "en": "We share the food and talk about our day.",
+      "zh": "我們分享食物，聊聊今天的事。"
+    },
+    {
+      "en": "My little brother asks for another small bowl of rice.",
+      "zh": "弟弟想再吃一小碗米飯。"
+    },
+    {
+      "en": "Soon I am full, so I put my spoon down.",
+      "zh": "很快我吃飽了，所以放下湯匙。"
+    },
+    {
+      "en": "Everyone is happy to spend this time together.",
+      "zh": "大家都很開心能一起度過這段時間。"
+    }
+  ],
+  "aliases": {
+    "sits": "sit",
+    "is": "be",
+    "asks": "ask"
+  },
+  "reviewNotes": [
+    "hungry 與 full 是生理狀態，需姿勢與餐盤線索，仍可能與想吃、不想吃混淆。",
+    "plate 只採餐盤詞義，排除來源混入的車牌與機芯說明。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

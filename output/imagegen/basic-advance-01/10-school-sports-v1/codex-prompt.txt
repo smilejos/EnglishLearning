@@ -1,0 +1,68 @@
+使用 Codex CLI 的原生 image_generation 工具，為「10 校園運動會」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/10-school-sports-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/10-school-sports-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/10-school-sports-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+操場上一組孩子比賽跑步，另一位孩子跳躍，旁邊放籃球和旗幟。領先者與落後者身體姿勢、距離形成明顯對比，避免把整張圖塞滿人群。增加隊伍聚集區、普通球、運動鞋與喝水休息區，強壯及疲累需故事輔助。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. playground (n; 操場): 背景露出校舍邊的開放操場與運動區。
+2. race (n; 比賽): 兩名孩子在相同起跑與終點方向競賽，旁邊觀眾為兩人加油。
+3. flag (n; 旗幟): 操場側邊獨立旗杆掛旗，旗面完整伸展。
+4. basketball (n; 籃球): 前景放橘色有黑色分隔線的籃球。
+5. run (v; 跑步): 前方孩子前傾奔跑，雙臂擺動、一腳離地。
+6. jump (v; 跳躍): 另一孩子跨過低障礙，雙腳同時離地。
+7. fast (adj; 快的): 領先跑者距離終點近、姿態前傾，少量動態線表示速度。
+8. slow (adj; 慢的): 另一跑者落在後方，步幅較小，與領先者同方向前進。
+9. team (n; 隊伍): 左側穿同色上衣的一組孩子聚在一起。
+10. ball (n; 球): 前景另一顆普通球與籃球分開放置，避免同物雙標籤。
+11. shoe (n; 鞋子): 跑者腳上的運動鞋露出鞋面、鞋帶和鞋底。
+12. strong (adj; 強壯的): 跑者姿勢穩定有力，仍由故事輔助說明強壯。
+13. tired (adj; 疲倦的): 賽後孩子坐在旁邊低垂肩膀、擦汗休息。
+14. child (n; 孩子): 操場旁獨立孩子觀看比賽，人物外形清楚。
+15. water (n; 水): 休息區有透明水瓶，水面清楚可見。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+Our team meets on the playground for a race today.
+今天我們的隊伍在操場集合參加比賽。
+I check each shoe before I run with my friends.
+和朋友跑步前，我檢查兩腳的鞋子。
+A bright flag is near the end of the race.
+比賽終點附近有一面鮮明的旗幟。
+I am fast, but my friend is slow at first.
+我跑得快，但朋友一開始較慢。
+We are strong and keep going until we finish.
+我們很強壯，繼續努力直到完成。
+Then we jump for fun beside the basketball area.
+接著我們在籃球區旁開心地跳躍。
+A child plays with a ball near our teacher.
+一個孩子在老師附近玩球。
+Soon we are tired and sit down to drink water.
+很快我們累了，坐下來喝水。
+We smile and talk about what we can try next.
+我們笑著討論下次可以試試什麼。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[MATERIAL SURFACES / DIRECTIONAL ACTIONS]
+All book spines, covers, packaging, ruler surfaces, machine panels, clothing tags and signs must be plain solid colors or simple isolated geometric shapes. Never draw strings of tiny glyph-like dots, squiggles, decorative strokes, catalog labels, pseudo-writing, digits, brands or scale numbers. Rulers may have only evenly spaced straight tick lines; no dots, curves or marks beside the ticks. Book illustration pages may contain pictures only with completely blank margins. Buttons and indicators are isolated plain shapes, never character clusters. A visual cue for borrow, return, give, receive, pay or exchange must show the direction physically: visible handover/contact between sender and receiver, or a clearly appropriate deposit into a receptacle. Merely holding an item while waiting is insufficient. Keep simultaneous opposite transfers clearly separate and hands anatomically plausible.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/10-school-sports-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

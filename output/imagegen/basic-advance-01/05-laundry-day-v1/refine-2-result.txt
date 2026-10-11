@@ -1,0 +1,5 @@
+- 圖片：`output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png`
+- 工具原圖：`/Users/jos/.codex/generated_images/01a1269c-53a3-7951-8c9d-085dc1fb4822/exec-a4123133-0ea1-4367-bf82-e7ef839e41e6.png`
+- 尺寸：1672×941，不透明。
+- 審閱：`output/imagegen/basic-advance-01/05-laundry-day-v1/image-review.final.json`
+- issues：面板右端仍見細小藍灰點；藍襯衫背部仍有橫向縫線；`dry` 只能由間接線索支持，需故事補足。目視未見文字，`noVocabularyText=true`。

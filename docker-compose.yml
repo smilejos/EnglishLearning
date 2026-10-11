@@ -65,9 +65,12 @@ services:
       IMAGE_DIR: /data/images
       IMAGE_MODELS_FILE: /app/config/image-models.json
       IMAGE_PRICING_FILE: /app/config/image-pricing.json
+      SCENARIO_STUDIO_DIR: /data/scenario-studio
+      SCENARIO_QWEN_TTS_URL: ${SCENARIO_QWEN_TTS_URL:-http://host.docker.internal:8000/v1/audio/speech}
     volumes:
       - audio:/data/audio
       - images:/data/images:ro
+      - scenario-studio:/data/scenario-studio
       - ./config:/app/config:ro
     ports:
       - "127.0.0.1:${API_PORT:-8080}:8080"
@@ -115,6 +118,34 @@ services:
       IMAGE_PRICING_FILE: /app/config/image-pricing.json
     volumes:
       - images:/data/images
+      - ./config:/app/config:ro
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  # 情境生成採獨立 profile；啟動一般服務不會處理情境產圖／產音佇列。
+  scenario-worker:
+    profiles: ["scenarios"]
+    build:
+      context: .
+      dockerfile: worker/Dockerfile
+    command: ["npx", "tsx", "src/scenario-index.ts"]
+    environment:
+      <<: *app-env
+      DATABASE_URL: postgres://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD:-app}@db:5432/${POSTGRES_DB:-english_learning}
+      AUDIO_DIR: /data/audio
+      IMAGE_DIR: /data/images
+      SCENARIO_STUDIO_DIR: /data/scenario-studio
+      SCENARIO_QWEN_TTS_URL: ${SCENARIO_QWEN_TTS_URL:-http://host.docker.internal:8000/v1/audio/speech}
+      IMAGE_MODELS_FILE: /app/config/image-models.json
+      IMAGE_PRICING_FILE: /app/config/image-pricing.json
+    volumes:
+      - audio:/data/audio
+      - images:/data/images
+      - scenario-studio:/data/scenario-studio
       - ./config:/app/config:ro
     depends_on:
       db:
@@ -204,3 +235,4 @@ volumes:
   pgdata:
   audio:
   images:
+  scenario-studio:

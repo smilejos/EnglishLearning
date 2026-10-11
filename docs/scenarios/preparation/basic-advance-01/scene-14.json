@@ -1,0 +1,179 @@
+{
+  "id": "14",
+  "scenarioKey": "clothes-shopping",
+  "titleZh": "服飾店試穿與挑選",
+  "descriptionZh": "服飾店中央的孩子穿著夾克站在鏡子前，旁邊另有人比較兩件衣服。左側掛襯衫，右側並排兩件款式相同但長短不同的裙子。加入洋裝、帽子、鞋子與藍夾克；新與漂亮保留故事及主觀描述輔助。",
+  "targets": [
+    {
+      "word": "shirt",
+      "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "襯衫",
+      "visualCueZh": "左側衣架掛有領子、袖子和鈕扣的襯衫。"
+    },
+    {
+      "word": "jacket",
+      "entryGuid": "dfa9b10e-f99f-56a8-b032-5bab3262bc11",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "夾克",
+      "visualCueZh": "鏡前人物穿著有拉鍊與外層口袋的短外套。"
+    },
+    {
+      "word": "mirror",
+      "entryGuid": "9be729b5-6962-5125-8cf0-cb0c5b688a7f",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "鏡子",
+      "visualCueZh": "中央立鏡照出人物的對應倒影。"
+    },
+    {
+      "word": "skirt",
+      "entryGuid": "a13227a9-fb85-57e8-bf45-f31507615a58",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "裙子",
+      "visualCueZh": "右側展示架露出裙腰與裙擺，不被其他衣物遮住。"
+    },
+    {
+      "word": "wear",
+      "entryGuid": "2207f719-6ad9-5c97-bc92-75ba8bef9ef7",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "穿著",
+      "visualCueZh": "人物雙臂穿入夾克袖子，衣物實際穿在身上。"
+    },
+    {
+      "word": "choose",
+      "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "挑選",
+      "visualCueZh": "店員展開兩件衣物，另一人物伸手指向其中一件。"
+    },
+    {
+      "word": "long",
+      "entryGuid": "c00a40eb-0325-52fb-8048-fd066da109cd",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "長的",
+      "visualCueZh": "右側同款裙子中一件裙擺接近腳踝。"
+    },
+    {
+      "word": "short",
+      "entryGuid": "0d06c5a9-11b0-57e9-b942-4a5e5c627ede",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "短的",
+      "visualCueZh": "相鄰另一件同款裙子裙擺只到膝上，掛放起點一致。"
+    },
+    {
+      "word": "dress",
+      "entryGuid": "027c1652-4d11-5b56-8d42-11757b66e061",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "洋裝",
+      "visualCueZh": "左側展示一件連身洋裝，裙身與上身連在一起。"
+    },
+    {
+      "word": "hat",
+      "entryGuid": "f3e1ee3b-d7ae-5ca6-891f-a89e853281c0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "帽子",
+      "visualCueZh": "前景獨立圓帽架放有帽沿的帽子。"
+    },
+    {
+      "word": "shoe",
+      "entryGuid": "cc6ba09c-72ff-5c1f-8b49-08f6c7125745",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "鞋子",
+      "visualCueZh": "右側低架放一雙鞋，鞋面與鞋底清楚可見。"
+    },
+    {
+      "word": "blue",
+      "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "藍色的",
+      "visualCueZh": "人物試穿的夾克是純藍色，與其他衣物形成對比。"
+    },
+    {
+      "word": "new",
+      "entryGuid": "08930472-4bfb-52ea-aef1-375f479fb12e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "新的",
+      "visualCueZh": "一組完整乾淨、無磨損衣物擺在展示區，仍需故事輔助。"
+    },
+    {
+      "word": "pretty",
+      "entryGuid": "9f36702b-9d4c-5a8f-9b8b-cfe49b4afac8",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "漂亮的",
+      "visualCueZh": "顧客微笑欣賞洋裝，漂亮是主觀判斷需故事輔助。"
+    },
+    {
+      "word": "clothes",
+      "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "衣服",
+      "visualCueZh": "店內多樣衣物共同呈現衣服展示區。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "We visit a shop to choose new clothes today.",
+      "zh": "今天我們到商店挑選新衣服。"
+    },
+    {
+      "en": "I wear a blue jacket and stand before the mirror.",
+      "zh": "我穿著藍色夾克，站在鏡子前。"
+    },
+    {
+      "en": "My mother holds a shirt beside me to compare.",
+      "zh": "媽媽拿著一件襯衫站在我旁邊比較。"
+    },
+    {
+      "en": "There is a long skirt beside a short skirt.",
+      "zh": "一件長裙旁邊有一件短裙。"
+    },
+    {
+      "en": "My sister finds a pretty dress and wants to try it.",
+      "zh": "姐姐找到一件漂亮洋裝，想試穿。"
+    },
+    {
+      "en": "She also looks at a hat near the door.",
+      "zh": "她也看看門邊的一頂帽子。"
+    },
+    {
+      "en": "I try each shoe and walk around to check the size.",
+      "zh": "我試穿鞋子，走動一下確認尺寸。"
+    },
+    {
+      "en": "We ask each other what we like before we buy.",
+      "zh": "買之前，我們問彼此喜歡什麼。"
+    },
+    {
+      "en": "Then we take our things home in a large bag.",
+      "zh": "接著我們把東西裝進大袋子帶回家。"
+    }
+  ],
+  "aliases": {
+    "holds": "hold",
+    "is": "be",
+    "finds": "find",
+    "wants": "want",
+    "looks": "look",
+    "things": "thing"
+  },
+  "reviewNotes": [
+    "long 與 short 以相同款式與相同掛放高度比較，不用人物高矮代替。",
+    "jacket、mirror 只採衣物與家用鏡子義，排除來源混入的工程與望遠鏡說明。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

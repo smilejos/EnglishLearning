@@ -1,0 +1,439 @@
+{
+  "id": "07",
+  "scenarioKey": "library-visit",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/07-library-visit-v1/base-refined-1.png",
+    "sha256": "ca8bb03efb4c4b36bd040ad48d13fb294219dd8c4830a230660cbff26236f83a",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "library",
+      "teachingPos": "n",
+      "visualEvidenceZh": "大量書架與借還書櫃台。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.7,
+          "y": 0.055
+        },
+        "label": {
+          "x": 0.79,
+          "y": 0.06
+        }
+      }
+    },
+    {
+      "word": "book",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景翻開的書。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.609,
+          "y": 0.854
+        },
+        "label": {
+          "x": 0.49,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "shelf",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央高書架。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.453,
+          "y": 0.211
+        },
+        "label": {
+          "x": 0.47,
+          "y": 0.14
+        }
+      }
+    },
+    {
+      "word": "computer",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側查詢電腦。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.382,
+          "y": 0.397
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.47
+        }
+      }
+    },
+    {
+      "word": "child",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央伸手選書的孩子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.564,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.585,
+          "y": 0.45
+        }
+      }
+    },
+    {
+      "word": "story",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景打開的書有男孩與狗的連續圖像。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.663,
+          "y": 0.854
+        },
+        "label": {
+          "x": 0.605,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "bag",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右下裝書的提袋。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.92,
+          "y": 0.736
+        },
+        "label": {
+          "x": 0.925,
+          "y": 0.89
+        }
+      }
+    },
+    {
+      "word": "table",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景閱讀桌。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.459,
+          "y": 0.956
+        },
+        "label": {
+          "x": 0.275,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "teachingPos": "n",
+      "visualEvidenceZh": "查詢電腦前的椅子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.276,
+          "y": 0.62
+        },
+        "label": {
+          "x": 0.26,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "page",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景開書的左右書頁。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.612,
+          "y": 0.833
+        },
+        "label": {
+          "x": 0.825,
+          "y": 0.945
+        }
+      }
+    },
+    {
+      "word": "picture",
+      "teachingPos": "n",
+      "visualEvidenceZh": "書頁中的男孩與狗圖畫。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.739,
+          "y": 0.894
+        },
+        "label": {
+          "x": 0.805,
+          "y": 0.79
+        }
+      }
+    },
+    {
+      "word": "screen",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側查詢電腦的螢幕。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.386,
+          "y": 0.376
+        },
+        "label": {
+          "x": 0.395,
+          "y": 0.25
+        }
+      }
+    },
+    {
+      "word": "floor",
+      "teachingPos": "n",
+      "visualEvidenceZh": "書架與閱讀桌之間露出的地板。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.58,
+          "y": 0.717
+        },
+        "label": {
+          "x": 0.555,
+          "y": 0.695
+        }
+      }
+    },
+    {
+      "word": "desk",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側借還書服務台，取desk桌子義。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.913,
+          "y": 0.551
+        },
+        "label": {
+          "x": 0.9,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "word": "window",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左後方大窗框。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.112,
+          "y": 0.076
+        },
+        "label": {
+          "x": 0.18,
+          "y": 0.1
+        }
+      }
+    },
+    {
+      "word": "tall",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "高書架与成年男子向上伸手形成比例。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.617,
+          "y": 0.281
+        },
+        "label": {
+          "x": 0.595,
+          "y": 0.12
+        }
+      }
+    },
+    {
+      "word": "heavy",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "左側孩子抱著大疊厚書，姿勢吃力。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.153,
+          "y": 0.576
+        },
+        "label": {
+          "x": 0.08,
+          "y": 0.575
+        }
+      }
+    },
+    {
+      "word": "helpful",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "成人指著電腦協助查書。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.32,
+          "y": 0.289
+        },
+        "label": {
+          "x": 0.225,
+          "y": 0.16
+        }
+      }
+    },
+    {
+      "word": "quiet",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "讀者各自安靜閱讀。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.704,
+          "y": 0.699
+        },
+        "label": {
+          "x": 0.405,
+          "y": 0.65
+        }
+      }
+    },
+    {
+      "word": "interesting",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "女孩專心指著故事圖像，故事說想繼續讀。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.653,
+          "y": 0.825
+        },
+        "label": {
+          "x": 0.505,
+          "y": 0.8
+        }
+      }
+    },
+    {
+      "word": "borrow",
+      "teachingPos": "v",
+      "visualEvidenceZh": "右側服務台人員將書交給孩子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.897,
+          "y": 0.412
+        },
+        "label": {
+          "x": 0.89,
+          "y": 0.36
+        }
+      }
+    },
+    {
+      "word": "search",
+      "teachingPos": "v",
+      "visualEvidenceZh": "男孩使用查詢電腦、成人指螢幕。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.367,
+          "y": 0.463
+        },
+        "label": {
+          "x": 0.355,
+          "y": 0.565
+        }
+      }
+    },
+    {
+      "word": "return",
+      "teachingPos": "v",
+      "visualEvidenceZh": "右後方成人把紅書放進還書區。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.826,
+          "y": 0.331
+        },
+        "label": {
+          "x": 0.815,
+          "y": 0.21
+        }
+      }
+    },
+    {
+      "word": "read",
+      "teachingPos": "v",
+      "visualEvidenceZh": "前景女孩讀打開的圖畫故事。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.682,
+          "y": 0.777
+        },
+        "label": {
+          "x": 0.705,
+          "y": 0.795
+        }
+      }
+    },
+    {
+      "word": "choose",
+      "teachingPos": "v",
+      "visualEvidenceZh": "中央女孩伸手挑書架上的書。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.51,
+          "y": 0.308
+        },
+        "label": {
+          "x": 0.485,
+          "y": 0.47
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 5
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 0,
+    "storyTokenCount": 154,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": []
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:23:29.023Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "ca8bb03efb4c4b36bd040ad48d13fb294219dd8c4830a230660cbff26236f83a",
+  "targetsSha256": "7e0795b46b8e6d94777bcd8b038d28ac5b0064e833329182744d8816ae460e2b",
+  "storySha256": "b1e9ef52e4ba2067b30c8df9b69fa72954760843e40a32d03bab9885ac79b5a1",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "10",
+  "scenarioKey": "school-sports",
+  "titleZh": "校園運動會",
+  "descriptionZh": "操場上一組孩子比賽跑步，另一位孩子跳躍，旁邊放籃球和旗幟。領先者與落後者身體姿勢、距離形成明顯對比，避免把整張圖塞滿人群。增加隊伍聚集區、普通球、運動鞋與喝水休息區，強壯及疲累需故事輔助。",
+  "targets": [
+    {
+      "word": "playground",
+      "entryGuid": "595cdbcd-c009-572c-8089-f1cc069340e5",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "操場",
+      "visualCueZh": "背景露出校舍邊的開放操場與運動區。"
+    },
+    {
+      "word": "race",
+      "entryGuid": "04359cf1-c49c-5632-b830-8abe21159b9e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "比賽",
+      "visualCueZh": "兩名孩子在相同起跑與終點方向競賽，旁邊觀眾為兩人加油。"
+    },
+    {
+      "word": "flag",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "旗幟",
+      "visualCueZh": "操場側邊獨立旗杆掛旗，旗面完整伸展。"
+    },
+    {
+      "word": "basketball",
+      "entryGuid": "31f8bb1f-26c7-556b-a43c-f515f7d533a3",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "籃球",
+      "visualCueZh": "前景放橘色有黑色分隔線的籃球。"
+    },
+    {
+      "word": "run",
+      "entryGuid": "508738cf-7c4d-531d-9ae1-d27a598e1df9",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "跑步",
+      "visualCueZh": "前方孩子前傾奔跑，雙臂擺動、一腳離地。"
+    },
+    {
+      "word": "jump",
+      "entryGuid": "fc032c20-6b0f-59ce-a529-8d23dd7d69a2",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "跳躍",
+      "visualCueZh": "另一孩子跨過低障礙，雙腳同時離地。"
+    },
+    {
+      "word": "fast",
+      "entryGuid": "2e669a8b-b591-59b6-915c-c4250f7918c4",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "快的",
+      "visualCueZh": "領先跑者距離終點近、姿態前傾，少量動態線表示速度。"
+    },
+    {
+      "word": "slow",
+      "entryGuid": "668a47d0-6979-56fd-ae87-f29785c5fbe6",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "慢的",
+      "visualCueZh": "另一跑者落在後方，步幅較小，與領先者同方向前進。"
+    },
+    {
+      "word": "team",
+      "entryGuid": "74232fe5-fbb3-580a-b4da-2c570a79d9de",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "隊伍",
+      "visualCueZh": "左側穿同色上衣的一組孩子聚在一起。"
+    },
+    {
+      "word": "ball",
+      "entryGuid": "d4537a6a-ee82-5b34-8fc4-c431d45ccde9",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "球",
+      "visualCueZh": "前景另一顆普通球與籃球分開放置，避免同物雙標籤。"
+    },
+    {
+      "word": "shoe",
+      "entryGuid": "cc6ba09c-72ff-5c1f-8b49-08f6c7125745",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "鞋子",
+      "visualCueZh": "跑者腳上的運動鞋露出鞋面、鞋帶和鞋底。"
+    },
+    {
+      "word": "strong",
+      "entryGuid": "2da1fa1c-a126-583b-a84c-21399f91ac09",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "強壯的",
+      "visualCueZh": "跑者姿勢穩定有力，仍由故事輔助說明強壯。"
+    },
+    {
+      "word": "tired",
+      "entryGuid": "ccf6918e-e54d-599c-98ec-d822325dcda5",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "疲倦的",
+      "visualCueZh": "賽後孩子坐在旁邊低垂肩膀、擦汗休息。"
+    },
+    {
+      "word": "child",
+      "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "孩子",
+      "visualCueZh": "操場旁獨立孩子觀看比賽，人物外形清楚。"
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "visualCueZh": "休息區有透明水瓶，水面清楚可見。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "Our team meets on the playground for a race today.",
+      "zh": "今天我們的隊伍在操場集合參加比賽。"
+    },
+    {
+      "en": "I check each shoe before I run with my friends.",
+      "zh": "和朋友跑步前，我檢查兩腳的鞋子。"
+    },
+    {
+      "en": "A bright flag is near the end of the race.",
+      "zh": "比賽終點附近有一面鮮明的旗幟。"
+    },
+    {
+      "en": "I am fast, but my friend is slow at first.",
+      "zh": "我跑得快，但朋友一開始較慢。"
+    },
+    {
+      "en": "We are strong and keep going until we finish.",
+      "zh": "我們很強壯，繼續努力直到完成。"
+    },
+    {
+      "en": "Then we jump for fun beside the basketball area.",
+      "zh": "接著我們在籃球區旁開心地跳躍。"
+    },
+    {
+      "en": "A child plays with a ball near our teacher.",
+      "zh": "一個孩子在老師附近玩球。"
+    },
+    {
+      "en": "Soon we are tired and sit down to drink water.",
+      "zh": "很快我們累了，坐下來喝水。"
+    },
+    {
+      "en": "We smile and talk about what we can try next.",
+      "zh": "我們笑著討論下次可以試試什麼。"
+    }
+  ],
+  "aliases": {
+    "meets": "meet",
+    "friends": "friend",
+    "is": "be",
+    "are": "be",
+    "going": "go",
+    "plays": "play"
+  },
+  "reviewNotes": [
+    "fast 與 slow 單張圖無法直接測量速度；以同場競賽距離和動態線提示，仍需審圖。",
+    "race 本次教競賽名詞，排除人種；track 與 medal 屬 expert，未選。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

@@ -1,0 +1,12 @@
+僅用 Codex CLI 原生 image_generation 圖片編輯工具，一次，局部修改附圖。不要重新生成整張新場景，不改人物、構圖、其他道具、風格或尺寸；不裁切。
+本次必要修正：必要局部修正两项：
+1. 清除所有书脊、封面、书页、电脑下框上的文字、数字、字母、字形小标记。所有书脊改成光滑纯色书脊；删除书脊白色分类标签与金色字形装饰，允许简单无字色块，禁止细小点线组合伪文字。前景打开的故事书只保留孩子与狗的连续插图，页边完全空白，无细线文字或字形。蓝色电脑屏幕与下框完全纯色无标记。
+2. 右后方灰发绿衣男子需明确正在归还红书：在他双手前方柜台上局部加一个小型无字木质还书投递盒，顶部有清楚深色开口；改他靠近柜台的手把一本红书向下送进开口，红书一半进入盒中，另一手扶书边。另一册可留在左臂。盒子不写return或任何字。这样呈现归还方向与动作，和右侧馆员递蓝书给黄色衣女孩的借入动作清楚分开。不要增加新人物或改变馆员与小孩已有借书动作。
+其余人物、书架、构图、书袋、电脑、重书堆、故事插画与光色风格维持。
+保留其他區域完全相同。全圖不得出現可辨文字、單字、字母、數字、翻譯、標籤、箭頭、水印。
+此工作只可圖片編輯、讀取/實際目視工具輸出、複製原始工具圖片與寫本次審閱JSON。禁止讀.env/keys/auth、改程式或教材故事、碰DB、啟動服務、部署、tests、LLM/TTS/圖片HTTP API/SDK/Python生圖。工具僅一次，失敗停，不自動重送。
+原圖及所有原審閱保留不覆寫。保存原始編輯結果到 output/imagegen/basic-advance-01/07-library-visit-v1/base-refined-1.png，實際工具檔案來源依工具回覆，不猜測。真正完整看圖，再寫 output/imagegen/basic-advance-01/07-library-visit-v1/image-review.refined-1.json。
+十五目標順序：library (n;圖書館), book (n;書本), shelf (n;架子), computer (n;電腦), borrow (v;借入), search (v;尋找), tall (adj;高的), heavy (adj;重的), child (n;孩子), return (v;歸還), story (n;故事), read (v;閱讀), helpful (adj;樂於助人的), bag (n;袋子), quiet (adj;安靜的)。
+逐詞看圖，以下JSON不可憑prompt虛構座標，缺線索填null並列issues：
+{"imagePath":"output/imagegen/basic-advance-01/07-library-visit-v1/base-refined-1.png","width":<實際整數>,"height":<實際整數>,"noVocabularyText":<真正全圖無字無數字才true>,"targets":[{"word":"<按十五原順序>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<實際看見的物件/動作/狀態與需故事補足之處>"}],"issues":["<未解問題或空陣列>"]}。
+label取附近空白避免相互重疊和遮臉，object指向真正物件/動作/狀態。只回報原始工具結果路徑、保存圖路徑、尺寸、審閱JSON與未解問題。

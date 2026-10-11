@@ -73,6 +73,38 @@ test('有效草稿可預檢，列出 15 組座標、底圖與故事音檔缺項'
   assert.equal((await f.run()).status, 0);
 });
 
+test('25 詞完整覆蓋可預檢；缺少動詞的教材也可保留', async (t) => {
+  const f = await fixture(t);
+  const extraWords = ['alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa'];
+  for (const word of extraWords) {
+    f.entries.push({ guid: `entry-${word}`, word, level: { list: 'basic' }, parts_of_speech: ['n'] });
+    f.pkg.targets.push({ word, entryGuid: `entry-${word}`, list: 'basic', teachingPos: 'n', senseZh: '測試詞義', interaction: null });
+  }
+  await writeFile(f.sourceFile, JSON.stringify({ entries: f.entries }));
+  const en = extraWords.join(' ') + '.';
+  f.pkg.story.sentences.push({ id: 's5', en, zh: '新增測試詞。', wordLinks: [...en.matchAll(/[A-Za-z]+/g)].map(token => ({
+    surface: token[0], word: token[0], entryGuid: `entry-${token[0]}`, isTarget: true, start: token.index, end: token.index + token[0].length,
+  })) });
+  f.pkg.targetCount = 25;
+  f.pkg.story.textEn = f.pkg.story.sentences.map(s => s.en).join(' ');
+  f.pkg.story.textZh = f.pkg.story.sentences.map(s => s.zh).join('');
+  assert.equal((await f.check()).valid, true);
+  const missing = structuredClone(f.pkg);
+  missing.story.sentences.pop();
+  missing.story.textEn = missing.story.sentences.map(s => s.en).join(' ');
+  missing.story.textZh = missing.story.sentences.map(s => s.zh).join('');
+  assert.equal((await f.check(missing)).valid, false);
+  for (const count of [0, 26, 24, 2.5]) {
+    const wrong = structuredClone(f.pkg); wrong.targetCount = count;
+    assert.equal((await f.check(wrong)).valid, false);
+  }
+  f.pkg.targets = f.pkg.targets.filter(t => t.teachingPos !== 'v');
+  f.pkg.targetCount = f.pkg.targets.length;
+  const guids = new Set(f.pkg.targets.map(t => t.entryGuid));
+  for (const s of f.pkg.story.sentences) for (const link of s.wordLinks) link.isTarget = guids.has(link.entryGuid);
+  assert.equal((await f.check()).valid, true);
+});
+
 test('CLI 嚴格發布預檢缺素材時回傳 exit 1，但草稿仍 valid', async (t) => {
   const f = await fixture(t);
   const result = await f.run(['--require-publish-ready']);

@@ -13,6 +13,7 @@ vi.mock("./Illustrations", () => ({
     <button onClick={() => onValidationWarningsChange(["段落 67：已略過不合規教學單字"])}>模擬圖片警告</button>
   ),
 }));
+vi.mock("./ScenarioStudio", () => ({ ScenarioStudio: () => <h2>情境工作室</h2> }));
 
 vi.mock("./api", () => ({
   getArticle: vi.fn(),
@@ -219,4 +220,15 @@ it("文章沒有分類與標籤時不顯示多餘的 0", async () => {
   render(<App />);
   const title = await screen.findByText("測試文章");
   expect(title.closest("tr")?.textContent).not.toContain("0");
+});
+
+it("後台情境導覽開啟獨立工作室，文章入口仍能返回", async () => {
+  window.history.replaceState(null, "", "#/");
+  mocked.listArticles.mockResolvedValue({ articles: [] });
+  mocked.getStats.mockRejectedValue(new Error("stats unavailable"));
+  render(<App />);
+  fireEvent.click(screen.getByRole("button", { name: "情境" }));
+  expect(screen.getByRole("heading", { name: "情境工作室" })).toBeTruthy();
+  fireEvent.click(screen.getByRole("button", { name: "文章" }));
+  expect(await screen.findByText("文章清單 · 共 0 篇")).toBeTruthy();
 });

@@ -1,0 +1,66 @@
+使用 Codex CLI 的原生 image_generation 工具，為「07 圖書館找書與借書」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/07-library-visit-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/07-library-visit-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/07-library-visit-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+圖書館中央有高書架與獨立借書櫃檯。一名孩子沿書架找書，另一名孩子從館員手中接取借出的書；前景第三名孩子吃力抱著一疊厚書，旁邊保留查詢電腦。加入還書交接、閱讀區、書袋與協助人物，借入及歸還分開呈現。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. library (n; 圖書館): 背景呈現多排書架、閱讀桌與借書櫃檯。
+2. book (n; 書本): 前景桌面放一本書，書脊與封面完整可見。
+3. shelf (n; 架子): 中央獨立書架露出多層水平板，書籍不完全塞滿。
+4. computer (n; 電腦): 查詢桌上有螢幕、鍵盤與滑鼠。
+5. borrow (v; 借入): 孩子在借書櫃檯雙手接過館員交出的書，呈現借閱交接。
+6. search (v; 尋找): 另一名孩子沿著書脊逐一看，手指與視線指向不同書本。
+7. tall (adj; 高的): 後方書架高過站立成人，旁邊矮書架形成尺度對比。
+8. heavy (adj; 重的): 前景孩子雙臂吃力抱一大疊厚書，身體微向後傾。
+9. child (n; 孩子): 借書櫃檯前有一名較小的孩子接取圖書。
+10. return (v; 歸還): 另一人把書交回館員，與借書人物分開且方向相反。
+11. story (n; 故事): 一本打開的書呈現連續小圖，故事內容由旁白輔助。
+12. read (v; 閱讀): 閱讀區人物低頭看打開的書，食指沿書頁移動。
+13. helpful (adj; 樂於助人的): 館員主動指向書架並協助小孩，仍需故事輔助辨義。
+14. bag (n; 袋子): 閱讀桌旁放有提把的裝書袋，袋身清楚可見。
+15. quiet (adj; 安靜的): 閱讀區人物閉嘴閱讀，與借書區分開。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+I go to the library with my father after school.
+放學後，我和爸爸去圖書館。
+First, we return a book at the front desk.
+我們先在前方櫃檯還一本書。
+A helpful woman shows us how to use the computer.
+一位樂於助人的女士教我們使用電腦。
+We search for a story about a child and a dog.
+我們找一個關於孩子和狗的故事。
+The book is on a tall shelf near the window.
+那本書放在窗邊的高書架上。
+My father takes it down so I can borrow it.
+爸爸把它拿下來，讓我可以借閱。
+My bag is heavy with books, so he carries it.
+我的袋子裝著書很重，所以由他來提。
+We sit in a quiet corner and read together.
+我們坐在安靜的角落，一起閱讀。
+I enjoy the story and want to come back soon.
+我很喜歡這個故事，想很快再來。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/07-library-visit-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

@@ -1,0 +1,1109 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "library-visit",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "圖書館找書與借書",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 15,
+  "targets": [
+    {
+      "word": "library",
+      "entryGuid": "50f5727a-4c23-5910-82f8-73be2fce8b99",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "圖書館",
+      "interaction": {
+        "label": {
+          "x": 0.91,
+          "y": 0.115
+        },
+        "object": {
+          "x": 0.78,
+          "y": 0.17
+        }
+      }
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書本",
+      "interaction": {
+        "label": {
+          "x": 0.28,
+          "y": 0.94
+        },
+        "object": {
+          "x": 0.414,
+          "y": 0.824
+        }
+      }
+    },
+    {
+      "word": "shelf",
+      "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "架子",
+      "interaction": {
+        "label": {
+          "x": 0.463,
+          "y": 0.643
+        },
+        "object": {
+          "x": 0.454,
+          "y": 0.389
+        }
+      }
+    },
+    {
+      "word": "computer",
+      "entryGuid": "2bc6469f-d280-5991-b4f0-b0c1d897b1b7",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "電腦",
+      "interaction": {
+        "label": {
+          "x": 0.408,
+          "y": 0.55
+        },
+        "object": {
+          "x": 0.386,
+          "y": 0.391
+        }
+      }
+    },
+    {
+      "word": "borrow",
+      "entryGuid": "2aec94a9-e7e6-5b31-86a4-50ba00fe1104",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "借入",
+      "interaction": {
+        "label": {
+          "x": 0.951,
+          "y": 0.586
+        },
+        "object": {
+          "x": 0.893,
+          "y": 0.409
+        }
+      }
+    },
+    {
+      "word": "search",
+      "entryGuid": "e0610abe-aee8-553a-9405-1384f7cb4a15",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "尋找",
+      "interaction": {
+        "label": {
+          "x": 0.605,
+          "y": 0.411
+        },
+        "object": {
+          "x": 0.505,
+          "y": 0.33
+        }
+      }
+    },
+    {
+      "word": "tall",
+      "entryGuid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "高的",
+      "interaction": {
+        "label": {
+          "x": 0.653,
+          "y": 0.036
+        },
+        "object": {
+          "x": 0.599,
+          "y": 0.055
+        }
+      }
+    },
+    {
+      "word": "heavy",
+      "entryGuid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "重的",
+      "interaction": {
+        "label": {
+          "x": 0.045,
+          "y": 0.746
+        },
+        "object": {
+          "x": 0.13,
+          "y": 0.566
+        }
+      }
+    },
+    {
+      "word": "child",
+      "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "孩子",
+      "interaction": {
+        "label": {
+          "x": 0.804,
+          "y": 0.735
+        },
+        "object": {
+          "x": 0.849,
+          "y": 0.545
+        }
+      }
+    },
+    {
+      "word": "return",
+      "entryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "歸還",
+      "interaction": {
+        "label": {
+          "x": 0.673,
+          "y": 0.344
+        },
+        "object": {
+          "x": 0.831,
+          "y": 0.355
+        }
+      }
+    },
+    {
+      "word": "story",
+      "entryGuid": "32312092-5567-5fc4-8a22-fdd8d1632b74",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "故事",
+      "interaction": {
+        "label": {
+          "x": 0.74,
+          "y": 0.967
+        },
+        "object": {
+          "x": 0.755,
+          "y": 0.868
+        }
+      }
+    },
+    {
+      "word": "read",
+      "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "閱讀",
+      "interaction": {
+        "label": {
+          "x": 0.56,
+          "y": 0.755
+        },
+        "object": {
+          "x": 0.663,
+          "y": 0.779
+        }
+      }
+    },
+    {
+      "word": "helpful",
+      "entryGuid": "2599cb0d-c590-5e3f-b718-0ec19236347a",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "樂於助人的",
+      "interaction": {
+        "label": {
+          "x": 0.346,
+          "y": 0.14
+        },
+        "object": {
+          "x": 0.329,
+          "y": 0.368
+        }
+      }
+    },
+    {
+      "word": "bag",
+      "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "袋子",
+      "interaction": {
+        "label": {
+          "x": 0.973,
+          "y": 0.917
+        },
+        "object": {
+          "x": 0.93,
+          "y": 0.764
+        }
+      }
+    },
+    {
+      "word": "quiet",
+      "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "安靜的",
+      "interaction": {
+        "label": {
+          "x": 0.228,
+          "y": 0.172
+        },
+        "object": {
+          "x": 0.147,
+          "y": 0.286
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "I go to the library with my father after school. First, we return a book at the front desk. A helpful woman shows us how to use the computer. We search for a story about a child and a dog. The book is on a tall shelf near the window. My father takes it down so I can borrow it. My bag is heavy with books, so he carries it. We sit in a quiet corner and read together. I enjoy the story and want to come back soon.",
+    "textZh": "放學後，我和爸爸去圖書館。我們先在前方櫃檯還一本書。一位樂於助人的女士教我們使用電腦。我們找一個關於孩子和狗的故事。那本書放在窗邊的高書架上。爸爸把它拿下來，讓我可以借閱。我的袋子裝著書很重，所以由他來提。我們坐在安靜的角落，一起閱讀。我很喜歡這個故事，想很快再來。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "I go to the library with my father after school.",
+        "zh": "放學後，我和爸爸去圖書館。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "go",
+            "word": "go",
+            "entryGuid": "59507b98-d561-5243-8ee8-6492d7cebeb5",
+            "isTarget": false,
+            "start": 2,
+            "end": 4
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "library",
+            "word": "library",
+            "entryGuid": "50f5727a-4c23-5910-82f8-73be2fce8b99",
+            "isTarget": true,
+            "start": 12,
+            "end": 19
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "father",
+            "word": "father",
+            "entryGuid": "d518fb9d-1d71-5e2a-924d-fe03216188a8",
+            "isTarget": false,
+            "start": 28,
+            "end": 34
+          },
+          {
+            "surface": "after",
+            "word": "after",
+            "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+            "isTarget": false,
+            "start": 35,
+            "end": 40
+          },
+          {
+            "surface": "school",
+            "word": "school",
+            "entryGuid": "af70f279-c3ca-5288-b3e7-be0694b46cd4",
+            "isTarget": false,
+            "start": 41,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "First, we return a book at the front desk.",
+        "zh": "我們先在前方櫃檯還一本書。",
+        "wordLinks": [
+          {
+            "surface": "First",
+            "word": "first",
+            "entryGuid": "eb25f77b-5263-5877-a03e-24cd1689e6eb",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "return",
+            "word": "return",
+            "entryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+            "isTarget": true,
+            "start": 10,
+            "end": 16
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 17,
+            "end": 18
+          },
+          {
+            "surface": "book",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 19,
+            "end": 23
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "front",
+            "word": "front",
+            "entryGuid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+            "isTarget": false,
+            "start": 31,
+            "end": 36
+          },
+          {
+            "surface": "desk",
+            "word": "desk",
+            "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+            "isTarget": false,
+            "start": 37,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "A helpful woman shows us how to use the computer.",
+        "zh": "一位樂於助人的女士教我們使用電腦。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "helpful",
+            "word": "helpful",
+            "entryGuid": "2599cb0d-c590-5e3f-b718-0ec19236347a",
+            "isTarget": true,
+            "start": 2,
+            "end": 9
+          },
+          {
+            "surface": "woman",
+            "word": "woman",
+            "entryGuid": "14939383-9986-5420-b4be-0d7ebcb34bd3",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 22,
+            "end": 24
+          },
+          {
+            "surface": "how",
+            "word": "how",
+            "entryGuid": "46750fe2-26a0-516a-8c88-a4b9259ddc38",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "computer",
+            "word": "computer",
+            "entryGuid": "2bc6469f-d280-5991-b4f0-b0c1d897b1b7",
+            "isTarget": true,
+            "start": 40,
+            "end": 48
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "We search for a story about a child and a dog.",
+        "zh": "我們找一個關於孩子和狗的故事。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "search",
+            "word": "search",
+            "entryGuid": "e0610abe-aee8-553a-9405-1384f7cb4a15",
+            "isTarget": true,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 10,
+            "end": 13
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 14,
+            "end": 15
+          },
+          {
+            "surface": "story",
+            "word": "story",
+            "entryGuid": "32312092-5567-5fc4-8a22-fdd8d1632b74",
+            "isTarget": true,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "about",
+            "word": "about",
+            "entryGuid": "7923a36d-b3a3-5dda-bd0a-e311c58bc2bf",
+            "isTarget": false,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 28,
+            "end": 29
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": true,
+            "start": 30,
+            "end": 35
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 40,
+            "end": 41
+          },
+          {
+            "surface": "dog",
+            "word": "dog",
+            "entryGuid": "1f2481cb-fa12-577a-9032-a2b1e1e80b75",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "The book is on a tall shelf near the window.",
+        "zh": "那本書放在窗邊的高書架上。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "book",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 9,
+            "end": 11
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 15,
+            "end": 16
+          },
+          {
+            "surface": "tall",
+            "word": "tall",
+            "entryGuid": "e3af050d-4c5f-5c51-87fd-9425150c6475",
+            "isTarget": true,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "surface": "shelf",
+            "word": "shelf",
+            "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+            "isTarget": true,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": false,
+            "start": 37,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "My father takes it down so I can borrow it.",
+        "zh": "爸爸把它拿下來，讓我可以借閱。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "father",
+            "word": "father",
+            "entryGuid": "d518fb9d-1d71-5e2a-924d-fe03216188a8",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "takes",
+            "word": "take",
+            "entryGuid": "eb536808-149b-524f-93ad-87bd2527d5da",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 16,
+            "end": 18
+          },
+          {
+            "surface": "down",
+            "word": "down",
+            "entryGuid": "451dcd82-9969-5473-b509-7f48b55049f6",
+            "isTarget": false,
+            "start": 19,
+            "end": 23
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 27,
+            "end": 28
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "borrow",
+            "word": "borrow",
+            "entryGuid": "2aec94a9-e7e6-5b31-86a4-50ba00fe1104",
+            "isTarget": true,
+            "start": 33,
+            "end": 39
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 40,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "My bag is heavy with books, so he carries it.",
+        "zh": "我的袋子裝著書很重，所以由他來提。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "bag",
+            "word": "bag",
+            "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+            "isTarget": true,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "heavy",
+            "word": "heavy",
+            "entryGuid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+            "isTarget": true,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "books",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 21,
+            "end": 26
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "he",
+            "word": "he",
+            "entryGuid": "bf4cb952-a8cf-5a38-a45c-cf50ec7135aa",
+            "isTarget": false,
+            "start": 31,
+            "end": 33
+          },
+          {
+            "surface": "carries",
+            "word": "carry",
+            "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+            "isTarget": false,
+            "start": 34,
+            "end": 41
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 42,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "We sit in a quiet corner and read together.",
+        "zh": "我們坐在安靜的角落，一起閱讀。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 10,
+            "end": 11
+          },
+          {
+            "surface": "quiet",
+            "word": "quiet",
+            "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+            "isTarget": true,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "corner",
+            "word": "corner",
+            "entryGuid": "d86eede9-f717-5302-b27f-2b9bc960ab6f",
+            "isTarget": false,
+            "start": 18,
+            "end": 24
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "read",
+            "word": "read",
+            "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+            "isTarget": true,
+            "start": 29,
+            "end": 33
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 34,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "I enjoy the story and want to come back soon.",
+        "zh": "我很喜歡這個故事，想很快再來。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "enjoy",
+            "word": "enjoy",
+            "entryGuid": "c7f1f45f-8aeb-57bc-86d6-06b858354e08",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "story",
+            "word": "story",
+            "entryGuid": "32312092-5567-5fc4-8a22-fdd8d1632b74",
+            "isTarget": true,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "want",
+            "word": "want",
+            "entryGuid": "4cf23b7c-e8b5-5e85-8039-4c2d32cc4507",
+            "isTarget": false,
+            "start": 22,
+            "end": 26
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 27,
+            "end": 29
+          },
+          {
+            "surface": "come",
+            "word": "come",
+            "entryGuid": "68e62372-a2ed-54a6-98c3-35bb2d2047d2",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "back",
+            "word": "back",
+            "entryGuid": "79052125-6cc1-55c6-80e6-91ca929b5ccd",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "soon",
+            "word": "soon",
+            "entryGuid": "5061831b-3bb0-539e-9838-209c76ece493",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/07-library-visit-v1/base-refined-1.png",
+      "sha256": "ca8bb03efb4c4b36bd040ad48d13fb294219dd8c4830a230660cbff26236f83a",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/library-visit/r1/09eeb3d17582e855/story-aa0b0bb601be8de2.mp3",
+      "sha256": "5724ef61544290e468c47ab2e09253a902ceb75b07d1221eedf6ff3ca684e8e5",
+      "language": "en",
+      "textSha256": "aa0b0bb601be8de29033da6190015823227e013aacb451164c59c19ffcfce141",
+      "durationSeconds": 39.888,
+      "bytes": 638252,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "cli-visually-reviewed",
+      "method": "Codex CLI",
+      "sceneDescriptionZh": "圖書館中央有高書架與獨立借書櫃檯。一名孩子沿書架找書，另一名孩子從館員手中接取借出的書；前景第三名孩子吃力抱著一疊厚書，旁邊保留查詢電腦。加入還書交接、閱讀區、書袋與協助人物，借入及歸還分開呈現。",
+      "reviewPath": "output/imagegen/basic-advance-01/07-library-visit-v1/image-review.json",
+      "acceptancePath": "output/imagegen/basic-advance-01/07-library-visit-v1/image-acceptance.json"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "target-fifteen-only"
+    }
+  },
+  "contentReview": {
+    "status": "text-prepared-awaiting-media-review",
+    "notes": [
+      "borrow 可能被看成買書或還書；圖書館櫃檯與接取方向是必要線索。",
+      "heavy 表達重量，不把厚或多直接等同重；ladder 屬 expert，未選。",
+      "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+    ]
+  }
+}

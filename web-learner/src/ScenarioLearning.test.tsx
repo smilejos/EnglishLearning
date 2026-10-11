@@ -2,21 +2,21 @@ import { StrictMode } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { act, cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import App from "./App";
-import { ScenarioLearning, ScenarioList, scenarioKeyFromHash } from "./ScenarioLearning";
+import { ScenarioLearning, ScenarioList, scenarioKeyFromHash, scenarioRevisionFromHash } from "./ScenarioLearning";
 import * as api from "./api";
 import type { ScenarioDetail } from "./scenarioTypes";
 import type { WordbankEntry } from "./wordbankTypes";
 import { _resetAudioBus, claimAudio } from "./lib/audioBus";
 
 vi.mock("./api", () => ({
-  listScenarios: vi.fn(), getScenario: vi.fn(), getWordbankEntry: vi.fn(), getMe: vi.fn(),
+  listScenarios: vi.fn(), getScenario: vi.fn(), getScenarioRevision: vi.fn(), getWordbankEntry: vi.fn(), getMe: vi.fn(),
   scenarioMediaUrl: (path: string) => path,
 }));
 const words = ["sofa", "television", "lamp", "chair", "table", "read", "sleep", "comfortable", "window", "curtain", "shelf", "book", "pillow", "clock", "plant"];
 const scenario: ScenarioDetail = {
   scenarioKey: "living-room", revision: 1, status: "published", titleZh: "午後客廳", targetCount: 15,
   vocabularyFilter: { system: "list", levels: ["basic", "advance"] },
-  targets: words.map((word, index) => ({ word, entryGuid: `${word}-guid`, list: "basic", teachingPos: "n", senseZh: `情境釋義${index}`,
+  targets: words.map((word, index) => ({ word, entryGuid: `${word}-guid`, list: "basic", teachingPos: ["read", "sleep"].includes(word) ? "v" : word === "comfortable" ? "adj" : "n", senseZh: `情境釋義${index}`,
     interaction: { label: { x: .1 + index * .04, y: .15 }, object: { x: .1 + index * .04, y: .4 } } })),
   story: { textEn: "Books are comfortable.", textZh: "書本很舒服。", sentences: [{ id: "s1", en: "Books are comfortable.", zh: "書本很舒服。",
     wordLinks: [
@@ -71,6 +71,25 @@ async function click(name: string, scope = document.body) {
 }
 
 describe("正式情境學習", () => {
+  it("指定版本由受權限保護的 API 載入草稿；失敗時不回退到已發布版", async () => {
+    vi.mocked(api.getScenarioRevision).mockResolvedValue({ ...scenario, revision: 2, status: "draft" });
+    window.location.hash = "#/scenarios/living-room/revisions/2";
+    render(<App />);
+    await screen.findByRole("button", { name: "查看 sofa 單字卡" });
+    expect(api.getScenarioRevision).toHaveBeenCalledWith("living-room", 2, expect.any(AbortSignal));
+    expect(api.getScenario).not.toHaveBeenCalled();
+    expect(screen.getByText("版本 2 預覽 · 尚未發布")).toBeTruthy();
+    cleanup();
+    vi.mocked(api.getScenarioRevision).mockRejectedValue(new Error("forbidden"));
+    render(<ScenarioLearning scenarioKey="living-room" revision={2} />);
+    await screen.findByRole("alert");
+    expect(screen.queryByRole("button", { name: "查看 sofa 單字卡" })).toBeNull();
+    expect(api.getScenario).not.toHaveBeenCalled();
+    expect(scenarioRevisionFromHash("#/scenarios/a%20b/revisions/2")).toEqual({ scenarioKey: "a b", revision: 2 });
+    for (const value of ["0", "-1", "1.2", "999999999999999999999", "1/foo"]) {
+      expect(scenarioRevisionFromHash(`#/scenarios/living-room/revisions/${value}`)).toBeNull();
+    }
+  });
   it("首頁、清單與detail路由接續，瀏覽器返回清單重新載入；不產生資料或收藏", async () => {
     render(<App />);
     expect(screen.getByRole("link", { name: /情境模擬/ }).getAttribute("href")).toBe("#/scenarios");
@@ -135,16 +154,120 @@ describe("正式情境學習", () => {
     expect(document.body.textContent).not.toContain("書本很舒服");
     expect(document.body.innerHTML).not.toContain("sofa");
     expect(screen.getByRole("img").getAttribute("alt")).toBe("情境插圖");
-    fireEvent.click(screen.getByRole("button", { name: "揭曉答案" }));
+    fireEvent.click(screen.getByRole("button", { name: "全部揭曉" }));
     expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(15);
     await selectWord("book");
     expect(within(card()).getByText("book 中文釋義")).toBeTruthy();
   });
 
+  it("按本情境詞性累加揭曉與收起，標籤、箭頭、位置與查卡入口同步，全部揭曉才提供故事", async () => {
+    await load();
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(15);
+    fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
+    const nouns = screen.getByRole("button", { name: "名詞 12" });
+    const adjectives = screen.getByRole("button", { name: "形容詞 1" });
+    const verbs = screen.getByRole("button", { name: "動詞 2" });
+    for (const button of [nouns, adjectives, verbs]) expect(button.getAttribute("aria-pressed")).toBe("false");
+    expect(document.querySelector(".scenario-arrows")).toBeNull();
+    fireEvent.click(nouns);
+    expect(nouns.getAttribute("aria-pressed")).toBe("true");
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(12);
+    expect(document.querySelectorAll(".scenario-arrows > g")).toHaveLength(12);
+    fireEvent.click(screen.getByRole("button", { name: "顯示點選位置" }));
+    expect(document.querySelectorAll(".scenario-arrows circle")).toHaveLength(12);
+    expect(document.body.innerHTML).not.toContain("comfortable");
+    expect(document.body.innerHTML).not.toContain("read-guid");
+    expect(screen.queryByRole("button", { name: "故事與旁白" })).toBeNull();
+    expect(screen.queryByRole("button", { name: "展開繁中翻譯" })).toBeNull();
+    expect(document.body.textContent).not.toContain("Books are");
+    await selectWord("sofa");
+    expect(within(card()).getByText("本情境：情境釋義0（n）")).toBeTruthy();
+    await click("播放sofa 單字", card());
+    const wordAudio = audios[0];
+    fireEvent.click(nouns);
+    expect(screen.queryByRole("dialog")).toBeNull();
+    expect(wordAudio.pause).toHaveBeenCalled();
+    expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
+    expect(document.querySelector(".scenario-arrows")).toBeNull();
+    fireEvent.click(adjectives); fireEvent.click(verbs);
+    expect(adjectives.getAttribute("aria-pressed")).toBe("true");
+    expect(verbs.getAttribute("aria-pressed")).toBe("true");
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(3);
+    expect(document.querySelectorAll(".scenario-arrows circle")).toHaveLength(3);
+    expect(document.body.innerHTML).not.toContain("sofa");
+    expect(screen.queryByRole("button", { name: "故事與旁白" })).toBeNull();
+    fireEvent.click(nouns);
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(15);
+    openStory();
+    expect(within(story()).getByRole("button", { name: "展開繁中翻譯" })).toBeTruthy();
+    await click("播放英文旁白", story());
+    fireEvent.click(within(story()).getByRole("button", { name: "展開繁中翻譯" }));
+    fireEvent.click(verbs);
+    expect(audios[1].pause).toHaveBeenCalled();
+    expect(screen.queryByRole("dialog")).toBeNull();
+    expect(screen.queryByRole("button", { name: "故事與旁白" })).toBeNull();
+    expect(document.body.textContent).not.toContain("書本很舒服");
+    expect(document.body.innerHTML).not.toContain("read-guid");
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(13);
+  });
+
+  it("零動詞不顯示空開關，按 teachingPos 分組而非字庫的多詞性，25 詞數量與舊15詞兼容", async () => {
+    const moreWords = ["rug", "wall", "floor", "door", "ceiling", "picture", "speaker", "vase", "remote", "blanket"];
+    const expanded: ScenarioDetail = { ...scenario, targetCount: 25, targets: [
+      ...scenario.targets.map(target => ({ ...target, teachingPos: target.teachingPos === "v" ? "n" : target.teachingPos })),
+      ...moreWords.map((word, index) => ({ ...scenario.targets[0], word, entryGuid: `${word}-guid`,
+        interaction: { label: { x: .1 + index * .08, y: .7 }, object: { x: .1 + index * .08, y: .8 } } })),
+    ] };
+    vi.mocked(api.getScenario).mockResolvedValue(expanded);
+    vi.mocked(api.getWordbankEntry).mockResolvedValue({ ...entry("read"), partsOfSpeech: ["n", "v"] });
+    await load();
+    expect(screen.getByText("basic ＋ advance · 25 詞")).toBeTruthy();
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(25);
+    fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
+    expect(screen.queryByRole("button", { name: /^動詞/ })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "名詞 24" }));
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(24);
+    await selectWord("read");
+    expect(within(card()).getByText("本情境：情境釋義5（n）")).toBeTruthy();
+    expect(within(card()).getByText("n / v · basic")).toBeTruthy();
+    fireEvent.click(within(card()).getByRole("button", { name: "關閉單字卡" }));
+    expect(screen.queryByRole("button", { name: /^動詞/ })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "形容詞 1" }));
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(25);
+    expect(screen.getByRole("button", { name: "故事與旁白" })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "全部收起" }));
+    expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "看圖學習" }));
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(25);
+    fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
+    expect(screen.getByRole("button", { name: "名詞 24" }).getAttribute("aria-pressed")).toBe("false");
+    expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
+  });
+
+  it.each(["scenario", "revision"] as const)("切換%s重設詞性開關、關閉答案並停止音訊，回想重新由全隱藏開始", async change => {
+    const { rerender } = await load();
+    fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
+    fireEvent.click(screen.getByRole("button", { name: "全部揭曉" }));
+    await selectWord("sofa"); await click("播放sofa 單字", card());
+    vi.mocked(api.getScenario).mockResolvedValue({ ...scenario, scenarioKey: "next-room", titleZh: "另一個情境" });
+    vi.mocked(api.getScenarioRevision).mockResolvedValue({ ...scenario, revision: 2, titleZh: "另一個情境", status: "draft" });
+    rerender(<ScenarioLearning scenarioKey={change === "scenario" ? "next-room" : "living-room"} revision={change === "revision" ? 2 : undefined} />);
+    await screen.findByRole("heading", { name: "另一個情境" });
+    expect(audios[0].pause).toHaveBeenCalled();
+    expect(screen.queryByRole("dialog")).toBeNull();
+    expect(screen.getByRole("button", { name: "看圖回想" }).getAttribute("aria-pressed")).toBe("true");
+    for (const name of ["名詞 12", "形容詞 1", "動詞 2"]) expect(screen.getByRole("button", { name }).getAttribute("aria-pressed")).toBe("false");
+    expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
+    expect(screen.queryByRole("button", { name: "故事與旁白" })).toBeNull();
+    expect(document.body.innerHTML).not.toContain("sofa");
+  });
+
   it("故事屈折字與非目標字皆載入原形；單一Modal查詞返回保持翻譯", async () => {
     await load(); openStory();
+    expect(story().querySelectorAll(".scenario-story-text")).toHaveLength(1);
     expect(within(story()).queryByText(scenario.story.textZh)).toBeNull();
     fireEvent.click(within(story()).getByRole("button", { name: "展開繁中翻譯" }));
+    expect(story().querySelectorAll("#scenario-translation-text p")).toHaveLength(1);
     fireEvent.click(within(story()).getByRole("button", { name: "查看 Books（book）單字卡" }));
     await within(card()).findByRole("heading", { name: "book" });
     expect(screen.getAllByRole("dialog")).toHaveLength(1);
@@ -156,6 +279,36 @@ describe("正式情境學習", () => {
     fireEvent.click(within(story()).getByRole("button", { name: "查看 are（be）單字卡" }));
     await within(card()).findByRole("heading", { name: "be" });
     expect(within(card()).queryByText(/^本情境/)).toBeNull();
+  });
+
+  it("故事依指定句後斷點顯示中英段落，各句仍可查詞並共用一段完整旁白", async () => {
+    const secondSentence = { ...scenario.story.sentences[0], id: "s2", zh: "第二段故事。" };
+    const thirdSentence = { ...scenario.story.sentences[0], id: "s3", zh: "第三句故事。" };
+    vi.mocked(api.getScenario).mockResolvedValue({ ...scenario, story: { ...scenario.story,
+      sentences: [...scenario.story.sentences, secondSentence, thirdSentence],
+      textZh: "書本很舒服。第二段故事。第三句故事。", paragraphBreakAfterSentenceIds: ["s1"],
+    } });
+    await load(); openStory();
+    const paragraphs = story().querySelectorAll(".scenario-story-text");
+    expect(paragraphs).toHaveLength(2);
+    expect(within(paragraphs[0] as HTMLElement).getAllByRole("button", { name: "查看 Books（book）單字卡" })).toHaveLength(1);
+    expect(within(paragraphs[1] as HTMLElement).getAllByRole("button", { name: "查看 Books（book）單字卡" })).toHaveLength(2);
+    fireEvent.click(within(story()).getByRole("button", { name: "展開繁中翻譯" }));
+    const translations = story().querySelectorAll("#scenario-translation-text p");
+    expect(translations).toHaveLength(2);
+    expect(translations[0].textContent).toBe("書本很舒服。");
+    expect(translations[1].textContent).toBe("第二段故事。第三句故事。");
+    await click("播放英文旁白", story());
+    expect(audios).toHaveLength(1);
+    expect(audios[0].url).toBe(scenario.storyAudio!.url);
+    fireEvent.click(within(paragraphs[1] as HTMLElement).getAllByRole("button", { name: "查看 Books（book）單字卡" })[0]);
+    await within(card()).findByRole("heading", { name: "book" });
+    expect(api.getWordbankEntry).toHaveBeenCalledWith("book-guid", expect.any(AbortSignal));
+    expect(audios[0].pause).toHaveBeenCalled();
+    fireEvent.click(within(card()).getByRole("button", { name: "回到故事" }));
+    expect(story().querySelectorAll(".scenario-story-text")).toHaveLength(2);
+    expect(story().querySelectorAll("#scenario-translation-text p")).toHaveLength(2);
+    expect(audios).toHaveLength(1);
   });
 
   it("旁白切卡暫停保留位置，單字與解釋例句仲裁；返回故事手動續播、改速、重播", async () => {

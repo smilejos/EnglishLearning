@@ -1,7 +1,9 @@
 # 專案架構與功能導覽（以程式碼為準）
 
+> 2026-10-10 正式查核更新：客廳 `living-room / 1` 已匯入正式 DB，並依使用者「直接發佈」指示轉為 **published**，一般情境清單可見；十五詞 120 段字庫錄音有效（含既有 advance 27 段 metadata／檔案匯入）。正式庫已存在兩個情境 migrations，既有服務可由一般情境入口開啟客廳；該次查核沒有 migration、部署、啟動生成服務或重新生成。實際結果及未完驗收見 [匯入紀錄](scenarios/packages/living-room-15-v1/import-review.md)。
+
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-10-09（正式情境功能與離線素材）。本輪情境 migration、匯入器、API 與 learner 已實作，只在 `_test` 作本機 QA；底圖已目視通過，Serena 故事 31.896 秒待使用者試聽，客廳 advance 27 段已生成但正式 metadata 尚未匯入。情境正式庫寫入、部署及發布尚未執行。2026-10-07 字庫補齊的既有正式資料狀態如下：本機正式 DB 已套用字庫 migration、匯入全部 9,166 詞條；來源 JSON 與正式字庫逐筆一致，中文釋義、英文解釋及例句缺漏均為零，補齊結果見 [完成報告](wordbank-completion-2026-10-07.md)。basic 的 1,193 單字、4,108 英文例句與 3,591 英文解釋共 8,892 段 MP3 已完成，並複製至 audio volume、匯入 metadata；本次補文字保留全部音檔 metadata，未新增產音。新版程式已在本機預覽，尚未部署新版服務，不代表網站已上線。舊圖片轉換 migration 已於 2026-09-27 套用正式 DB，相關程式碼的部署狀態仍另行確認。
+> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-10-11（情境 1–25 詞契約及九場修訂流程）。情境的 migration、匯入器、API、learner 及完整後台製作流程已實作；先前已在 `_test` 作本機 QA，2026-10-10 正式客廳 draft 匯入及桌機／手機指定版本查核通過。底圖、Serena 故事 31.896 秒與客廳 advance 27 段錄音已備妥，使用者已認可客廳版本；2026-10-10 已核對正式庫存在兩個情境 migrations，匯入 advance 27 段 metadata 及客廳 revision 1 draft；本輪未執行部署，已依使用者授權發布客廳 revision 1，完整品質／權限驗收待完成。後台生成測試使用假 client，未新增真實生成呼叫。2026-10-07 字庫補齊的既有正式資料狀態如下：本機正式 DB 已套用字庫 migration、匯入全部 9,166 詞條；來源 JSON 與正式字庫逐筆一致，中文釋義、英文解釋及例句缺漏均為零，補齊結果見 [完成報告](wordbank-completion-2026-10-07.md)。basic 的 1,193 單字、4,108 英文例句與 3,591 英文解釋共 8,892 段 MP3 已完成，並複製至 audio volume、匯入 metadata；本次補文字保留全部音檔 metadata，未新增產音。字庫新版先前已在本機預覽；2026-10-10 發布前既有正式入口可預覽客廳 draft，發布後一般入口已可見；完整後台部署驗收另行確認，本輪未執行部署。舊圖片轉換 migration 已於 2026-09-27 套用正式 DB，相關程式碼的部署狀態仍另行確認。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理；初始整理未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。後續同步會連結已確認的需求文件。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 ## 1. 先讀這裡：專案目的與全貌
@@ -17,7 +19,7 @@
 3. **收藏複習**：單字卡主動收藏 → 保存單字與來源快照 → 快速複習／自行判斷的快速挑戰 → 標熟悉後移出待複習，可重新收藏。
 4. **文章插圖**：admin 估價並建立版本 → 文字模型提出視覺設定與可編輯 Prompt → 人工逐步生成、審核參考圖與封面 → 逐段生圖或略過 → 整版發布 → 前台顯示。
 5. **字庫練習**：入口首頁選單字練習 → 選一套分級及精確級別 → API 隨機抽一個詞條及最多三個例句 → 單純練習、聽力或單字挑戰；不保存作答紀錄或建立收藏。
-6. **情境學習**：離線十五詞套件與素材 → 明示目標 DB 匯入 draft → admin 發布 revision → 前台看圖學習／回想、聽故事與按 GUID 查字庫。程式已實作，正式資料與部署尚未執行；流程見 [情境匯入文件](scenarios/generation-import-workflow.md)。
+6. **情境學習**：後台依底圖選 1–25 詞與設定場景 → 個別啟動故事／圖片／Serena 錄音 → 編輯互動位置及審閱 → 建立不可覆寫 draft revision → 預覽與發布 → 前台看圖學習／回想、聽故事與按 GUID 查字庫。離線套件與匯入器仍可使用；正式客廳 revision 1 已匯入並發布；完整後台部署驗收另行確認。流程見 [情境匯入文件](scenarios/generation-import-workflow.md)、[逐一匯入準則](scenarios/import-criteria.md) 與 [情境製作後台](scenarios/admin-studio.md)。
 
 新 agent 必須先知道的邊界：
 
@@ -66,7 +68,8 @@ flowchart TD
 | `shared/src/db.ts`、`config.ts`、`schemas.ts` | DB pool／交易、環境設定驗證、核心 Zod 契約 |
 | `shared/src/llm/`、`generationSettings.ts`、`generationClients.ts` | Google／OpenAI 文字與語音 client、載入 config 模型清單／驗證及依工作設定建立 client |
 | `shared/src/audioFiles.ts`、`audioEncode.ts` | 共用音檔寫入／刪除與 ffmpeg 編碼 |
-| `shared/src/scenarios.ts`、`repo/scenarios.ts`、`scripts/import-scenario.ts` | 十五詞契約、媒體 hash／安全路徑、不可覆寫 revision、匯入及發布 |
+| `shared/src/scenarios.ts`、`repo/scenarios.ts`、`scripts/import-scenario.ts` | 1–25 詞契約、可選故事分段、媒體 hash／安全路徑、不可覆寫 revision、匯入及發布 |
+| `shared/src/scenarioStudio/`、`api/src/routes/scenarioStudio.ts`、`worker/src/scenario-index.ts` | 可編輯製作草稿、Prompt／故事映射、持久化生成工作與 lease、候選媒體、字庫缺音與版本建立；worker 為獨立 profile |
 | `shared/src/illustrations/` | 圖片契約、模型／價格目錄、版本與審核、佇列、供應商、檔案儲存 |
 | `web-learner/src/` | React 學習前台；`App.tsx`、`LearningHome.tsx`、`WordbankPractice.tsx`、`useArticlePlayer.ts`、`AudioBar.tsx`、`Illustration.tsx` |
 | `web-admin/src/` | React 後台；`App.tsx` 管主要頁面，`GenerationSettings.tsx` 管文字／語音／圖片三項生成設定，`AudioBackfillPanel.tsx` 管缺失音檔，`Illustrations.tsx` 管圖片生命週期 |
@@ -96,6 +99,7 @@ flowchart TD
 | 分類標籤異動、單字解釋刪除、補音檔 | 不可 | 不可 | 可 |
 | 插圖估價／生成／審核／發布、查看草稿圖 | 不可 | 不可 | 可 |
 | 情境匯入／發布、指定 revision 查看草稿及媒體 | 不可 | 不可 | 可 |
+| 情境製作草稿、選詞、生成、上傳及草稿媒體 | 不可 | 不可 | 可 |
 | 查看已發布情境與媒體、按 GUID 讀字庫 | 可 | 可 | 可 |
 | 讀寫生成供應商與模型設定 | 不可 | 不可 | 可 |
 | 統計、使用者角色管理 | 不可 | 不可 | 可 |
@@ -125,10 +129,22 @@ flowchart TD
 
 ### 情境模擬
 
-- `#/scenarios` 讀已發布清單，`#/scenarios/<key>` 讀目前發布 revision；空清單、載入失敗／重試及缺素材均有提示。程式已接首頁，正式情境資料尚未匯入或發布。
-- 無標籤底圖疊十五詞 HTML 標籤與指向位置；手機先放大圖。點圖或故事按 GUID 開單字 Modal，顯示本次詞義及原字庫內容；先顯示第一筆解釋／例句，其餘可展開。
+- `#/scenarios` 讀已發布清單，`#/scenarios/<key>` 讀目前發布 revision；空清單、載入失敗／重試及缺素材均有提示。程式已接首頁；正式客廳 revision 1 已匯入並發布，一般清單已顯示午後客廳。
+- `#/scenarios/<key>/revisions/<revision>` 顯示指定版本及發布狀態，供後台開啟預覽；draft 由 API 限 admin，失敗不回退到另一版本。
+- 無標籤底圖依實際目標詞數疊 HTML 標籤與指向位置；手機先放大圖。點圖或故事按 GUID 開單字 Modal，顯示本次詞義及原字庫內容；先顯示第一筆解釋／例句，其餘可展開。
 - 故事由「放大圖片」旁按鈕開 Modal，繁中預設收合；查詞切換同一 Modal 並可返回。完整旁白有播放／暫停、重播、速度與失敗重試；共用音源仲裁，查詞／關閉 Modal 時暫停並保留故事位置，不自動續播。
-- 看圖回想揭曉前移除標籤、故事、翻譯及答案入口；自行回想與揭曉，不新增作答紀錄或收藏。Modal 支援焦點回復、Escape、背景關閉、背景鎖捲動。
+- 看圖學習顯示全部目標詞；看圖回想依本場實際存在的名詞／形容詞／動詞獨立開關，可累加揭曉、再次點選收起，也可全部揭曉／收起。查詞只開放已揭曉詞；全部目標詞揭曉前隱藏故事、翻譯與旁白入口，收起任一已揭曉類別時關閉故事並暫停旁白。不新增作答紀錄或收藏。Modal 支援焦點回復、Escape、背景關閉、背景鎖捲動。
+- optional `story.paragraphBreakAfterSentenceIds` 同步切分中英故事文字，可呈現兩個相連短段；仍只有一個全文 MP3。省略欄位的舊版維持原格式及 hash。
+
+01–09 本輪修訂已完成正式 draft 匯入與本機桌機／手機驗收，共 213 個目標詞次；九張底圖全部復用，生成 9 個新版全文旁白，只補缺少的 84 段目標詞錄音。最新版除 07 圖書館／09 科學實驗為 revision 3，其餘為 revision 2；兩篇 revision 3 只修正座標，未重產圖片或錄音，兩篇 revision 2 仍保留。原 revision 1 的 hash／狀態／發布指標不變，客廳仍發布 1，其餘仍未發布；本輪未部署或發布新版，未完成人工完整試聽或正式 learner 角色端到端驗收。備份完整 gzip／tar／dump 解析通過，但 `restoreTest: false`；10 仍等待 image gate，11–40 未開始。詳見 [九篇修訂驗收](scenarios/preparation/basic-advance-01/revision-02-import-review.md) 與 [修訂操作](../scripts/scenarios/README.md)。
+
+### 情境製作後台
+
+- admin 的「情境製作」管理 1–25 詞 basic／advance 工作草稿：貼詞／搜尋、場景及圖片設定、英文故事與繁中翻譯、候選圖片、標籤與指向座標、Serena 故事及字庫缺音、版本預覽／發布。
+- `/scenarios/studio/*` 全部限 admin；可編輯工作草稿與正式不可覆寫 revision 分開。儲存及讀取不呼叫生成；生成需手動按鈕，持久化 job／attempt，版本及輸入快照避免舊結果覆蓋新編輯。
+- `scenario-worker` 採獨立 `scenarios` profile，定期續租；結果不明的供應商請求不自動重送。API／worker 共用可寫 studio volume；正式 images 對 API 仍唯讀，worker 核對並複製媒體後匯入 draft，發布另外執行。
+- 選詞以 15 名詞、5 形容詞及最多 5 動詞為目標，依底圖線索取捨，不硬湊數；故事生成依實際目標數要求全詞覆蓋。
+- 故事／圖片使用現有文字與圖片模型設定，Qwen／Serena 使用專用固定伺服器端點。只補缺少或失效的目標字庫音檔，不因選詞重做已有基本級錄音。細節及操作見 [情境製作後台](scenarios/admin-studio.md)。
 
 ### 文章瀏覽與閱讀
 
@@ -312,7 +328,8 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | 收藏 | `vocabulary_items(user_id,word)` unique，保存 active／mastered 與 saved_at；`vocabulary_sources` 保存來源／分類快照，來源 unique `(item_id,article_id,paragraph_id)`；文章／段落刪除時 FK SET NULL，收藏刪除時來源 CASCADE；不依賴共用 words FK |
 | 獨立字庫 | `wordbank_entries.guid` UUID 主鍵，保存來源 id、word、詞性、定義、例句／解釋 JSONB、level 三套分級、category／scenario；匯入保留後補內容，只填缺漏、合併陣列，不刪既有詞條 |
 | 字庫音檔 | `wordbank_audio.asset_guid` UUID 主鍵，引用詞條 GUID；kind 為 word／example／explanation，保存相對路徑、模型／聲線／語氣、文字 hash、時長、大小及生成時間。英文解釋使用 explains[].guid；匯入前核對 GUID 所屬詞條與當下文字 hash |
-| 情境 | `learning_scenarios` 保存目前發布指標；`scenario_revisions` 以 `(scenario_key,revision)` 保存 content／media/hash、draft／published，不可原地覆寫；`scenario_word_links` FK 引用字庫 GUID。migration `1791504000000_scenarios.sql` 尚未套正式庫 |
+| 情境 | `learning_scenarios` 保存目前發布指標；`scenario_revisions` 以 `(scenario_key,revision)` 保存 content／media/hash、draft／published，不可原地覆寫；`scenario_word_links` FK 引用字庫 GUID。migration `1791504000000_scenarios.sql` 於 2026-10-10 已在正式庫查得，客廳 revision 1 已匯入並發布 |
+| 情境製作 | `scenario_studio_drafts`、`scenario_studio_jobs`／`attempts`、`assets`、`quotes`、`revision_reservations`、`worker_heartbeats` 保存可編輯草稿、生成輸入與候選、lease 及固定版本；migration `1791504000001_scenario-studio.sql` 於 2026-10-10 已在正式庫查得；完整後台部署驗收另行確認 |
 | 圖片估價／版本 | `illustration_estimates`、`article_visual_runs`、`article_visual_publications`；每篇只有一個目前發布指標 |
 | 圖片內容 | `illustration_slots` 表示 cover／paragraph／reference；新版 slot 保存可編輯 Prompt 草稿及修訂號，每 slot 多個 candidates，candidate 保存當次實際生圖 Prompt，selected candidate 有歸屬約束 |
 | 圖片檔案 | `illustration_assets` 與 `illustration_asset_files` 一對多；variant、object key、尺寸、MIME、bytes |
@@ -347,6 +364,7 @@ schema 保留 `derive`／`qa` job kind 等欄位，但目前主流程實際排�
 | `GET /scenarios`、`GET /scenarios/:key`、`GET /scenarios/:key/revisions/:revision` | reader 讀 published；admin 指定 revision 可讀 draft，`includeDrafts=true` 清單限 admin | `api/src/routes/scenarios.ts` |
 | `GET /scenarios/:key/revisions/:revision/media/:kind` | 同版本權限讀 image／audio，核對檔案 hash、安全路徑，支援 Range | 同上 |
 | `POST /scenarios/import`、`POST /scenarios/:key/revisions/:revision/publish` | admin 匯入 draft／指定版本發布，匯入不自動發布 | 同上 |
+| `/scenarios/studio/*` | admin 選詞、工作草稿、候選媒體、估價、生成／重試／取消；一般讀取與保存不生成 | `api/src/routes/scenarioStudio.ts` |
 | `POST /lookups` | admin／reviewer 語境解釋 | `api/src/routes/lookups.ts` |
 | `GET /words`、`GET /articles/:id/explanations` | admin 搜尋／文章來源解釋 | 同上 |
 | `DELETE /words/:id`、`DELETE /explanations/:id`、`GET /lookups/missing-audio`、`POST /lookups/backfill-audio` | admin 刪除／列出缺檔／補音檔；POST 帶 `{kind,id}` 補單檔，無 body 沿用舊批次模式 | 同上 |
@@ -378,13 +396,14 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 
 本次首頁與字庫驗收使用 learner `http://127.0.0.1:5174`、API `http://127.0.0.1:8180`；`api/src/preview.ts` 組裝既有 auth 與讀取路由，但不注入真實 LLM／TTS／圖片 client，也不啟動 worker。learner Vite 的 API 目標可由 `VITE_API_PROXY` 設定。這是本機預覽，沒有部署新版正式服務。
 
-客廳十五詞另有獨立 `web-learner/scenario-preview.html` 本機入口：先 `npm run scenario:preview:prepare`，再啟動綁 `127.0.0.1:5174` 的 learner Vite，開啟 `/scenario-preview.html`。此頁只讀情境／字庫文字快照及核對後的本機 MP3，不掛載 App、不呼叫身分或 DB API。圖片點字開單字 Modal；「故事與旁白」按鈕開故事 Modal，圖下沒有常駐單字列或內容卡。關閉支援按鈕／Escape／背景點擊，恢復入口焦點並停止單字音訊；故事查詞切換同一個 Modal，可返回故事。原預覽未接新旁白及三個 advance 詞補音；圖片文字已燒入，未提供隱藏答案練習。正式 App 另已開放情境入口，預設 build 不含此額外 HTML entry。正式功能 QA 使用 `_test`、API 5180／Vite 5181 與測試媒體，不啟動真實生成 client／worker。座標及桌面／手機 QA 已完成；旁白使用者試聽與正式寫入／部署待完成，詳見 `docs/scenarios/web-preview.md`。
+客廳十五詞另有獨立 `web-learner/scenario-preview.html` 本機入口：先 `npm run scenario:preview:prepare`，再啟動綁 `127.0.0.1:5174` 的 learner Vite，開啟 `/scenario-preview.html`。此頁只讀情境／字庫文字快照及核對後的本機 MP3，不掛載 App、不呼叫身分或 DB API。圖片點字開單字 Modal；「故事與旁白」按鈕開故事 Modal，圖下沒有常駐單字列或內容卡。關閉支援按鈕／Escape／背景點擊，恢復入口焦點並停止單字音訊；故事查詞切換同一個 Modal，可返回故事。原預覽未接新旁白及三個 advance 詞補音；圖片文字已燒入，未提供隱藏答案練習。正式 App 另已開放情境入口，預設 build 不含此額外 HTML entry。正式功能 QA 使用 `_test`、API 5180／Vite 5181 與測試媒體，不啟動真實生成 client／worker。座標及桌面／手機 QA 已完成；2026-10-10 客廳正式 draft、媒體及字庫補音寫入完成，既有正式入口桌機／手機指定版本查核通過；完整人工試聽及完整後台部署驗收待完成，詳見 `docs/scenarios/web-preview.md`。
 
 - 環境設定由 `shared/src/config.ts` 讀取：DB、音檔、選用供應商的憑證、Access、admin emails、lookup limits、音訊格式、圖片路徑及 catalog。Google 與 OpenAI 憑證可擇一或並存。Google 各工作共用 Vertex AI `generateContent`，`GOOGLE_CLOUD_PROJECT` 與 `GOOGLE_CLOUD_LOCATION` 組成端點；`global` 使用 `aiplatform.googleapis.com`。授權優先使用可呼叫 Agent Platform API 的 `GEMINI_API_KEY`，其次使用 `GOOGLE_APPLICATION_CREDENTIALS` 指定的 ADC；無憑證時不列為可用供應商。
 - 文字、語音、圖片三項生成設定存於 DB `generation_settings`，由 admin 的 `/generation-settings` 讀寫。共用文字設定供翻譯、單字解釋與圖片分階段 Prompt 規劃使用；可選文字／語音模型與聲線由 `config/generation-models.json` 載入，圖檔模型由 `config/image-models.json` 載入。圖片與規劃費率由 `config/image-pricing.json` 定義，新增文字模型須有規劃費率才可儲存。設定檔在後端行程啟動時讀取，修改後需重啟相關服務；既有工作快照不會自動變更。舊五項設定升級時以「文章翻譯」模型作為共用文字模型。Vertex AI TTS 使用 `gemini-2.5-flash-tts`／`gemini-2.5-pro-tts`；migration 更新目前後台設定中的舊 preview 型號，舊 job 快照在送出時映射，已生成音檔不重做。
 - 文字選項包含 Vertex AI `gemini-3.8-flash`，圖片規劃對此模型使用 `thinkingLevel=LOW`；其規劃費率目前採官方截至 2026-12-31 的優惠價，2027-01-01 須更新價格。`gemini-3.8-flash-lite-tts` 未列入 Vertex AI `global` 可用模型清單，因此語音選項尚未加入它。
 - `VITE_*` 是前端建置設定。Compose 用 `LEARNER_URL_PUBLIC`／`ADMIN_URL_PUBLIC` 轉為 build args；改連結通常要重新 build，不能只重啟舊前端映像。
 - 裸 `docker compose up` 不會啟用 images profile；**`scripts/deploy.sh` 預設加 `--profile images`**，因此完整部署包含 image-worker。tunnel、seed 仍各自為選用 profile。
+- 情境 worker 的 `scenarios` profile 不由一般部署腳本預設加入；API 與 worker 掛載專用可寫 `scenario-studio` volume，worker 另寫正式 audio／images。啟動可能執行既有付費生成待辦，操作及授權範圍須確認。
 - proxy 以 `proxy/` 目錄掛載 nginx 設定，避免單檔掛載在原子替換後指向已刪除 inode；從舊版單檔掛載升級需只重建 proxy 容器，單純 restart 不會更新掛載。
 - 三個後端服務以 `config/` 目錄掛載模型與價格清單，避免編輯器原子替換 JSON 後容器仍讀到舊 inode；從單檔掛載升級需重建相關容器，之後修改清單重啟服務即可讀取。
 - image-worker 至少要有一種可用圖片供應商憑證；只宣告可執行的模型。選定的圖片規劃供應商也要有對應憑證，否則該工作會失敗；開啟 profile 就可能開始處理既有待辦。
@@ -407,7 +426,7 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 | `npm run vocabulary:audio:generate -- --dry-run --list basic` | 列出單字＋全部英文例句產音計畫，不呼叫 TTS；真實生成需 WORD_BANK_REAL_TTS=1 加 --generate，支援續跑 |
 | `npm run vocabulary:audio:import -- data/wordbank-audio/manifest.json` | 核對 GUID／文字 hash 後匯入 metadata；不複製檔案，需明示 DATABASE_URL |
 | `npm run vocabulary:audio:test` | Node 原生測試批次工具，HTTP 假回應；不呼叫真實 TTS |
-| `npm run scenario:package:check -- <套件.json>` | 唯讀檢查十五詞情境套件、字庫關聯與素材 hash；加 `--require-publish-ready` 要求素材及座標齊備，不連 DB 或生成服務 |
+| `npm run scenario:package:check -- <套件.json>` | 唯讀檢查 1–25 詞情境套件、字庫關聯與素材 hash；加 `--require-publish-ready` 要求素材及座標齊備，不連 DB 或生成服務 |
 | `npm run scenario:package:test` | Node 原生測試情境套件預檢；不呼叫真實生成服務 |
 | `npm run scenario:preview:prepare` | 預檢客廳套件，保存預覽字庫快照並複製已有有效音檔；不連 DB、不生成 |
 | `npm run scenario:preview:test` | Node 原生測試預覽素材準備；使用假素材，不呼叫真實生成服務 |
@@ -429,6 +448,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 - 字庫測試：`shared/src/wordbank.test.ts`、`repo/wordbank.test.ts` 涵蓋來源校驗、全 9,166 字匯入／重匯、後補資料保留、分級精確匹配與音檔 GUID／hash；另以 `npm run vocabulary:audio:test` 驗證生成器的續跑、損毀重建、失敗回應、下載中斷與儲存失敗，不混入一般真實 TTS 呼叫。
 - 字庫 API／介面測試：`api/src/routes/wordbank.test.ts` 涵蓋級別數量、同套 OR／精確匹配、未分類、隨機三句、空池、非法 query、音檔文字更新失效、身分驗證與不建立 job／收藏；`web-learner/src/WordbankPractice.test.tsx`、`lib/wordbank.test.ts` 涵蓋三模式、Unicode 遮罩、揭曉前 DOM／aria 不洩漏、競態、缺資料、錯誤／重試、音訊停止；App／route 測試保留首頁、文章與複習導航。
 - 情境測試：`shared/src/scenarios.test.ts` 檢查媒體安全路徑／symlink／hash／不覆寫；`api/src/routes/scenarios.test.ts` 檢查 draft／published 權限、公共音檔阻擋、冪等／衝突及交易回滾／COMMIT 復原；`web-learner/src/ScenarioLearning.test.tsx` 檢查故事、單字、回想、Modal 與假 Audio。實跑結果以交付回報為準。
+- 製作後台測試：shared `scenarioStudio/{contracts,providers,processor}.test.ts` 使用假 fetch／client；API `scenarioStudio.test.ts` 驗 admin 權限、選詞、草稿 CAS、取消未知費用、素材安全、版本鎖及晚到故事候選；admin `ScenarioStudio.test.tsx`／`scenarioStudioApi.test.ts` 驗手動生成、候選套用、輪詢與衝突。一般測試不啟動真實情境 worker。
 - `api/src/routeConfig.test.ts`：檢查兩前端使用的 API 頂層路徑是否被 nginx／Vite 正確轉發。
 - 現有 `e2e/` 未提供自動瀏覽器測試程式；不要把 Vitest 全綠宣稱為完整線上端到端驗收。
 
@@ -463,7 +483,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
 | 入口首頁、字庫練習、9,166 字、Qwen3-TTS 批次產音 | `docs/wordbank-practice-requirements.md`、learner `LearningHome.tsx`／`WordbankPractice.tsx`／`lib/wordbank.ts`、API `routes/wordbank.ts`、`shared/src/repo/wordbankPractice.ts`、`source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts` 與 repo、`scripts/import-vocabulary*.ts`／`generate-wordbank-audio.mjs` |
-| 情境教材、十五詞客廳、匯入／發布／旁白／QA | `docs/scenarios/{generation-import-workflow,web-preview}.md`、`packages/living-room-15-v1/`；shared `scenarios.ts`／`repo/scenarios.ts`、API `routes/scenarios.ts`／`routes/wordbank.ts` GUID 接口、migration `1791504000000_scenarios.sql`、`scripts/{check-scenario-package,generate-scenario-audio}.mjs`／`import-scenario.ts`；learner `ScenarioLearning.tsx`／`ScenarioAudio.tsx`／`ScenarioDialog.tsx`／`ScenarioWordCard.tsx` 與測試。已實作，正式寫入／部署／發布待完成；原 `ScenarioPreview` 獨立預覽保留 |
+| 情境教材、後台製作、1–25 詞修訂、匯入／發布／旁白／QA | `docs/scenarios/{admin-studio,generation-import-workflow,import-criteria,web-preview}.md`、`scripts/scenarios/README.md`、`packages/living-room-15-v1/`、`<key>-r2/` 與 `preparation/basic-advance-01/revision-02-import-review.md`；shared `scenarios.ts`／`repo/scenarios.ts`／`scenarioStudio/`、API `routes/scenarios.ts`／`scenarioStudio.ts`、migration `1791504000000_scenarios.sql`／`1791504000001_scenario-studio.sql`、worker `scenario-index.ts`、admin `ScenarioStudio.tsx` 與 learner `ScenarioLearning.tsx`／`ScenarioAudio.tsx`／`ScenarioDialog.tsx`／`ScenarioWordCard.tsx`。已實作，01–09 新版正式 draft／213 詞次及本機桌機／手機驗收完成，9 個新旁白／84 段缺音已補；07／09 最新 revision 3 僅改座標，其餘 revision 2，底圖及舊版保留。新版未部署／發布，完整人工試聽待完成；客廳發布指標仍為 1，其餘未發布；10 image gate／11–40 未開始；原 `ScenarioPreview` 獨立預覽保留 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
 | 生成供應商、模型、聲線設定或 Google Vertex AI 端點 | admin `GenerationSettings.tsx`、API `generationSettings.ts`、`shared/src/{generationSettings,generationClients}.ts`、`shared/src/llm/{auth,genai}.ts`、repo、migration、API／worker 入口 |
 | 缺失單字音檔清單／逐檔或全部補檔 | admin `App.tsx`／`AudioBackfillPanel.tsx`、`api/src/routes/lookups.ts`、`shared/src/repo/audioBackfill.ts`、相關測試 |

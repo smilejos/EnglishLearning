@@ -1,0 +1,1632 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "living-room",
+  "revision": 2,
+  "status": "draft",
+  "titleZh": "客廳裡的午後",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 24,
+  "targets": [
+    {
+      "word": "sofa",
+      "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "沙發",
+      "interaction": {
+        "object": {
+          "x": 0.5,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.31,
+          "y": 0.56
+        }
+      }
+    },
+    {
+      "word": "television",
+      "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "電視",
+      "interaction": {
+        "object": {
+          "x": 0.076,
+          "y": 0.32
+        },
+        "label": {
+          "x": 0.092,
+          "y": 0.155
+        }
+      }
+    },
+    {
+      "word": "lamp",
+      "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "檯燈",
+      "interaction": {
+        "object": {
+          "x": 0.854,
+          "y": 0.328
+        },
+        "label": {
+          "x": 0.85,
+          "y": 0.18
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "interaction": {
+        "object": {
+          "x": 0.885,
+          "y": 0.671
+        },
+        "label": {
+          "x": 0.91,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "object": {
+          "x": 0.479,
+          "y": 0.718
+        },
+        "label": {
+          "x": 0.5,
+          "y": 0.765
+        }
+      }
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "interaction": {
+        "object": {
+          "x": 0.943,
+          "y": 0.158
+        },
+        "label": {
+          "x": 0.945,
+          "y": 0.115
+        }
+      }
+    },
+    {
+      "word": "curtain",
+      "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "窗簾",
+      "interaction": {
+        "object": {
+          "x": 0.825,
+          "y": 0.123
+        },
+        "label": {
+          "x": 0.8,
+          "y": 0.105
+        }
+      }
+    },
+    {
+      "word": "shelf",
+      "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "架子",
+      "interaction": {
+        "object": {
+          "x": 0.647,
+          "y": 0.159
+        },
+        "label": {
+          "x": 0.665,
+          "y": 0.125
+        }
+      }
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書",
+      "interaction": {
+        "object": {
+          "x": 0.387,
+          "y": 0.38
+        },
+        "label": {
+          "x": 0.397,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "pillow",
+      "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "枕頭",
+      "interaction": {
+        "object": {
+          "x": 0.712,
+          "y": 0.418
+        },
+        "label": {
+          "x": 0.72,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "clock",
+      "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "時鐘",
+      "interaction": {
+        "object": {
+          "x": 0.353,
+          "y": 0.076
+        },
+        "label": {
+          "x": 0.29,
+          "y": 0.105
+        }
+      }
+    },
+    {
+      "word": "plant",
+      "entryGuid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "植物",
+      "interaction": {
+        "object": {
+          "x": 0.421,
+          "y": 0.574
+        },
+        "label": {
+          "x": 0.36,
+          "y": 0.715
+        }
+      }
+    },
+    {
+      "word": "picture",
+      "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "圖畫",
+      "interaction": {
+        "object": {
+          "x": 0.457,
+          "y": 0.14
+        },
+        "label": {
+          "x": 0.47,
+          "y": 0.18
+        }
+      }
+    },
+    {
+      "word": "floor",
+      "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "地板",
+      "interaction": {
+        "object": {
+          "x": 0.765,
+          "y": 0.96
+        },
+        "label": {
+          "x": 0.75,
+          "y": 0.945
+        }
+      }
+    },
+    {
+      "word": "room",
+      "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "房間",
+      "interaction": {
+        "object": {
+          "x": 0.515,
+          "y": 0.18
+        },
+        "label": {
+          "x": 0.525,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "comfortable",
+      "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "舒適的",
+      "interaction": {
+        "object": {
+          "x": 0.528,
+          "y": 0.488
+        },
+        "label": {
+          "x": 0.43,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "quiet",
+      "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "安靜的",
+      "interaction": {
+        "object": {
+          "x": 0.077,
+          "y": 0.29
+        },
+        "label": {
+          "x": 0.79,
+          "y": 0.51
+        }
+      }
+    },
+    {
+      "word": "bright",
+      "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "明亮的",
+      "interaction": {
+        "object": {
+          "x": 0.934,
+          "y": 0.215
+        },
+        "label": {
+          "x": 0.93,
+          "y": 0.43
+        }
+      }
+    },
+    {
+      "word": "tired",
+      "entryGuid": "ccf6918e-e54d-599c-98ec-d822325dcda5",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "疲倦的",
+      "interaction": {
+        "object": {
+          "x": 0.685,
+          "y": 0.373
+        },
+        "label": {
+          "x": 0.59,
+          "y": 0.315
+        }
+      }
+    },
+    {
+      "word": "asleep",
+      "entryGuid": "c26c01c7-ee15-5422-92ba-49284f7394bb",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "睡著的",
+      "interaction": {
+        "object": {
+          "x": 0.676,
+          "y": 0.385
+        },
+        "label": {
+          "x": 0.755,
+          "y": 0.32
+        }
+      }
+    },
+    {
+      "word": "read",
+      "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "閱讀",
+      "interaction": {
+        "object": {
+          "x": 0.387,
+          "y": 0.38
+        },
+        "label": {
+          "x": 0.478,
+          "y": 0.37
+        }
+      }
+    },
+    {
+      "word": "sleep",
+      "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "睡覺",
+      "interaction": {
+        "object": {
+          "x": 0.652,
+          "y": 0.419
+        },
+        "label": {
+          "x": 0.615,
+          "y": 0.58
+        }
+      }
+    },
+    {
+      "word": "sit",
+      "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "坐",
+      "interaction": {
+        "object": {
+          "x": 0.384,
+          "y": 0.449
+        },
+        "label": {
+          "x": 0.28,
+          "y": 0.395
+        }
+      }
+    },
+    {
+      "word": "rest",
+      "entryGuid": "5c4a6c3d-d47c-5f19-99ab-1b22c129e22e",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "休息",
+      "interaction": {
+        "object": {
+          "x": 0.61,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.54,
+          "y": 0.46
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "After lunch, I sit on the comfortable sofa in our living room and read a book about animals. My sister is tired after playing outside, so she comes to rest beside me. She puts her head on a pillow and is soon asleep. I leave the television off because she needs to sleep, and the room stays quiet. Light comes through the window and past the curtain, making the floor bright near the chair. A plant stands on the table, and the lamp waits beside the sofa for evening. When I finish a page, I look at the clock and then at the picture above us. There are more books on the shelf, but I keep reading this story until my sister wakes up. Later, we can watch a short show together before dinner.",
+    "textZh": "午餐後，我坐在客廳裡舒適的沙發上，讀一本關於動物的書。妹妹在外面玩累了，所以過來我身旁休息。她把頭靠在枕頭上，很快就睡著了。她需要睡覺，所以我讓電視保持關著，房間也維持安靜。陽光穿過窗戶、照過窗簾，讓椅子附近的地板明亮起來。桌上有一盆植物，沙發旁的檯燈等到晚上再使用。讀完一頁時，我看看時鐘，再看看我們上方的圖畫。架子上還有更多書，但我繼續讀這個故事，直到妹妹醒來。晚點晚餐前，我們可以一起看一個短節目。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "After lunch, I sit on the comfortable sofa in our living room and read a book about animals.",
+        "zh": "午餐後，我坐在客廳裡舒適的沙發上，讀一本關於動物的書。",
+        "wordLinks": [
+          {
+            "surface": "After",
+            "word": "after",
+            "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "lunch",
+            "word": "lunch",
+            "entryGuid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+            "isTarget": false,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 13,
+            "end": 14
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": true,
+            "start": 15,
+            "end": 18
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 19,
+            "end": 21
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "comfortable",
+            "word": "comfortable",
+            "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+            "isTarget": true,
+            "start": 26,
+            "end": 37
+          },
+          {
+            "surface": "sofa",
+            "word": "sofa",
+            "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+            "isTarget": true,
+            "start": 38,
+            "end": 42
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 43,
+            "end": 45
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "living",
+            "word": "live",
+            "entryGuid": "011e6efb-b7f3-54f9-b81a-37b5f352bfd5",
+            "isTarget": false,
+            "start": 50,
+            "end": 56
+          },
+          {
+            "surface": "room",
+            "word": "room",
+            "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+            "isTarget": true,
+            "start": 57,
+            "end": 61
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 62,
+            "end": 65
+          },
+          {
+            "surface": "read",
+            "word": "read",
+            "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+            "isTarget": true,
+            "start": 66,
+            "end": 70
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 71,
+            "end": 72
+          },
+          {
+            "surface": "book",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 73,
+            "end": 77
+          },
+          {
+            "surface": "about",
+            "word": "about",
+            "entryGuid": "7923a36d-b3a3-5dda-bd0a-e311c58bc2bf",
+            "isTarget": false,
+            "start": 78,
+            "end": 83
+          },
+          {
+            "surface": "animals",
+            "word": "animal",
+            "entryGuid": "62ba27b8-0b45-52ea-aef2-2448b407dc30",
+            "isTarget": false,
+            "start": 84,
+            "end": 91
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "My sister is tired after playing outside, so she comes to rest beside me.",
+        "zh": "妹妹在外面玩累了，所以過來我身旁休息。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "sister",
+            "word": "sister",
+            "entryGuid": "a7a5e8cf-a6c5-5e16-92d5-aee6619def82",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "tired",
+            "word": "tired",
+            "entryGuid": "ccf6918e-e54d-599c-98ec-d822325dcda5",
+            "isTarget": true,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "after",
+            "word": "after",
+            "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "playing",
+            "word": "play",
+            "entryGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+            "isTarget": false,
+            "start": 25,
+            "end": 32
+          },
+          {
+            "surface": "outside",
+            "word": "outside",
+            "entryGuid": "adbe8a2c-2383-5688-9c8a-7125e967551a",
+            "isTarget": false,
+            "start": 33,
+            "end": 40
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 42,
+            "end": 44
+          },
+          {
+            "surface": "she",
+            "word": "she",
+            "entryGuid": "ccbe3ed4-aadd-56cd-a461-184577b231e9",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          },
+          {
+            "surface": "comes",
+            "word": "come",
+            "entryGuid": "68e62372-a2ed-54a6-98c3-35bb2d2047d2",
+            "isTarget": false,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 55,
+            "end": 57
+          },
+          {
+            "surface": "rest",
+            "word": "rest",
+            "entryGuid": "5c4a6c3d-d47c-5f19-99ab-1b22c129e22e",
+            "isTarget": true,
+            "start": 58,
+            "end": 62
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 63,
+            "end": 69
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 70,
+            "end": 72
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "She puts her head on a pillow and is soon asleep.",
+        "zh": "她把頭靠在枕頭上，很快就睡著了。",
+        "wordLinks": [
+          {
+            "surface": "She",
+            "word": "she",
+            "entryGuid": "ccbe3ed4-aadd-56cd-a461-184577b231e9",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "puts",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "her",
+            "word": "her",
+            "entryGuid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+            "isTarget": false,
+            "start": 9,
+            "end": 12
+          },
+          {
+            "surface": "head",
+            "word": "head",
+            "entryGuid": "2eca3d4d-8da9-5fa5-b74e-d8f968adfbaf",
+            "isTarget": false,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 18,
+            "end": 20
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 21,
+            "end": 22
+          },
+          {
+            "surface": "pillow",
+            "word": "pillow",
+            "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+            "isTarget": true,
+            "start": 23,
+            "end": 29
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 30,
+            "end": 33
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 34,
+            "end": 36
+          },
+          {
+            "surface": "soon",
+            "word": "soon",
+            "entryGuid": "5061831b-3bb0-539e-9838-209c76ece493",
+            "isTarget": false,
+            "start": 37,
+            "end": 41
+          },
+          {
+            "surface": "asleep",
+            "word": "asleep",
+            "entryGuid": "c26c01c7-ee15-5422-92ba-49284f7394bb",
+            "isTarget": true,
+            "start": 42,
+            "end": 48
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "I leave the television off because she needs to sleep, and the room stays quiet.",
+        "zh": "她需要睡覺，所以我讓電視保持關著，房間也維持安靜。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "leave",
+            "word": "leave",
+            "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "television",
+            "word": "television",
+            "entryGuid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+            "isTarget": true,
+            "start": 12,
+            "end": 22
+          },
+          {
+            "surface": "off",
+            "word": "off",
+            "entryGuid": "b4ba7c21-1e7d-52af-87b6-0ec4ad32396a",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "because",
+            "word": "because",
+            "entryGuid": "7d75f3b6-5dbb-5de6-95c3-2a7b405cdb4b",
+            "isTarget": false,
+            "start": 27,
+            "end": 34
+          },
+          {
+            "surface": "she",
+            "word": "she",
+            "entryGuid": "ccbe3ed4-aadd-56cd-a461-184577b231e9",
+            "isTarget": false,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "needs",
+            "word": "need",
+            "entryGuid": "8940ab92-17e5-5271-bc92-7ed5db345c6d",
+            "isTarget": false,
+            "start": 39,
+            "end": 44
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 45,
+            "end": 47
+          },
+          {
+            "surface": "sleep",
+            "word": "sleep",
+            "entryGuid": "3e87b8fe-ca07-5227-898e-ae35219d04aa",
+            "isTarget": true,
+            "start": 48,
+            "end": 53
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 55,
+            "end": 58
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 59,
+            "end": 62
+          },
+          {
+            "surface": "room",
+            "word": "room",
+            "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+            "isTarget": true,
+            "start": 63,
+            "end": 67
+          },
+          {
+            "surface": "stays",
+            "word": "stay",
+            "entryGuid": "988d1227-e4a1-5628-ae1a-6d11c8d8a932",
+            "isTarget": false,
+            "start": 68,
+            "end": 73
+          },
+          {
+            "surface": "quiet",
+            "word": "quiet",
+            "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+            "isTarget": true,
+            "start": 74,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "Light comes through the window and past the curtain, making the floor bright near the chair.",
+        "zh": "陽光穿過窗戶、照過窗簾，讓椅子附近的地板明亮起來。",
+        "wordLinks": [
+          {
+            "surface": "Light",
+            "word": "light",
+            "entryGuid": "854c9aa7-e65a-5c1e-9909-d829063e0720",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "comes",
+            "word": "come",
+            "entryGuid": "68e62372-a2ed-54a6-98c3-35bb2d2047d2",
+            "isTarget": false,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "surface": "through",
+            "word": "through",
+            "entryGuid": "9ae026b7-e7c9-517e-b739-bd61f536bafa",
+            "isTarget": false,
+            "start": 12,
+            "end": 19
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": true,
+            "start": 24,
+            "end": 30
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "past",
+            "word": "past",
+            "entryGuid": "2f05a738-9df4-5a58-a155-65f0856b369a",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "curtain",
+            "word": "curtain",
+            "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+            "isTarget": true,
+            "start": 44,
+            "end": 51
+          },
+          {
+            "surface": "making",
+            "word": "make",
+            "entryGuid": "a780251a-295b-5786-867c-9f8ac8d23036",
+            "isTarget": false,
+            "start": 53,
+            "end": 59
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 60,
+            "end": 63
+          },
+          {
+            "surface": "floor",
+            "word": "floor",
+            "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+            "isTarget": true,
+            "start": 64,
+            "end": 69
+          },
+          {
+            "surface": "bright",
+            "word": "bright",
+            "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+            "isTarget": true,
+            "start": 70,
+            "end": 76
+          },
+          {
+            "surface": "near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 77,
+            "end": 81
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 82,
+            "end": 85
+          },
+          {
+            "surface": "chair",
+            "word": "chair",
+            "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+            "isTarget": true,
+            "start": 86,
+            "end": 91
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "A plant stands on the table, and the lamp waits beside the sofa for evening.",
+        "zh": "桌上有一盆植物，沙發旁的檯燈等到晚上再使用。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "plant",
+            "word": "plant",
+            "entryGuid": "5a2196e2-78c5-511b-bd11-20f77f76399b",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "stands",
+            "word": "stand",
+            "entryGuid": "c159bec5-f00f-522b-8ac1-34ff583d7696",
+            "isTarget": false,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "lamp",
+            "word": "lamp",
+            "entryGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+            "isTarget": true,
+            "start": 37,
+            "end": 41
+          },
+          {
+            "surface": "waits",
+            "word": "wait",
+            "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+            "isTarget": false,
+            "start": 42,
+            "end": 47
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 48,
+            "end": 54
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 55,
+            "end": 58
+          },
+          {
+            "surface": "sofa",
+            "word": "sofa",
+            "entryGuid": "05175166-0fc1-5d57-9946-0beff46ea6da",
+            "isTarget": true,
+            "start": 59,
+            "end": 63
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 64,
+            "end": 67
+          },
+          {
+            "surface": "evening",
+            "word": "evening",
+            "entryGuid": "2114663e-69d6-511e-9713-54c6e10d5347",
+            "isTarget": false,
+            "start": 68,
+            "end": 75
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "When I finish a page, I look at the clock and then at the picture above us.",
+        "zh": "讀完一頁時，我看看時鐘，再看看我們上方的圖畫。",
+        "wordLinks": [
+          {
+            "surface": "When",
+            "word": "when",
+            "entryGuid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "surface": "finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 14,
+            "end": 15
+          },
+          {
+            "surface": "page",
+            "word": "page",
+            "entryGuid": "eb33a309-4ef5-5b81-9e77-019d3983cf70",
+            "isTarget": false,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 22,
+            "end": 23
+          },
+          {
+            "surface": "look",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 24,
+            "end": 28
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "clock",
+            "word": "clock",
+            "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+            "isTarget": true,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 46,
+            "end": 50
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 51,
+            "end": 53
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 54,
+            "end": 57
+          },
+          {
+            "surface": "picture",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": true,
+            "start": 58,
+            "end": 65
+          },
+          {
+            "surface": "above",
+            "word": "above",
+            "entryGuid": "d8da53d0-5638-5f66-911b-704738d85988",
+            "isTarget": false,
+            "start": 66,
+            "end": 71
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 72,
+            "end": 74
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "There are more books on the shelf, but I keep reading this story until my sister wakes up.",
+        "zh": "架子上還有更多書，但我繼續讀這個故事，直到妹妹醒來。",
+        "wordLinks": [
+          {
+            "surface": "There",
+            "word": "there",
+            "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 9
+          },
+          {
+            "surface": "more",
+            "word": "more",
+            "entryGuid": "66f118af-d262-5cc8-8a87-78bb5102ddca",
+            "isTarget": false,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "books",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "shelf",
+            "word": "shelf",
+            "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+            "isTarget": true,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "but",
+            "word": "but",
+            "entryGuid": "6bc80d04-84e6-5602-a22e-ab8101e03ee7",
+            "isTarget": false,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 39,
+            "end": 40
+          },
+          {
+            "surface": "keep",
+            "word": "keep",
+            "entryGuid": "d63f5c23-0339-5669-92a1-9c8f139bb857",
+            "isTarget": false,
+            "start": 41,
+            "end": 45
+          },
+          {
+            "surface": "reading",
+            "word": "read",
+            "entryGuid": "901917ba-0a4c-5c4a-9127-1d87d64eaa65",
+            "isTarget": true,
+            "start": 46,
+            "end": 53
+          },
+          {
+            "surface": "this",
+            "word": "this",
+            "entryGuid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+            "isTarget": false,
+            "start": 54,
+            "end": 58
+          },
+          {
+            "surface": "story",
+            "word": "story",
+            "entryGuid": "32312092-5567-5fc4-8a22-fdd8d1632b74",
+            "isTarget": false,
+            "start": 59,
+            "end": 64
+          },
+          {
+            "surface": "until",
+            "word": "until",
+            "entryGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+            "isTarget": false,
+            "start": 65,
+            "end": 70
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 71,
+            "end": 73
+          },
+          {
+            "surface": "sister",
+            "word": "sister",
+            "entryGuid": "a7a5e8cf-a6c5-5e16-92d5-aee6619def82",
+            "isTarget": false,
+            "start": 74,
+            "end": 80
+          },
+          {
+            "surface": "wakes",
+            "word": "wake",
+            "entryGuid": "c5c976c0-3300-5410-81fc-7303a978c6ce",
+            "isTarget": false,
+            "start": 81,
+            "end": 86
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 87,
+            "end": 89
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "Later, we can watch a short show together before dinner.",
+        "zh": "晚點晚餐前，我們可以一起看一個短節目。",
+        "wordLinks": [
+          {
+            "surface": "Later",
+            "word": "later",
+            "entryGuid": "b589a536-9029-5863-a49c-994d3bbbd31d",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 10,
+            "end": 13
+          },
+          {
+            "surface": "watch",
+            "word": "watch",
+            "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+            "isTarget": false,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 20,
+            "end": 21
+          },
+          {
+            "surface": "short",
+            "word": "short",
+            "entryGuid": "0d06c5a9-11b0-57e9-b942-4a5e5c627ede",
+            "isTarget": false,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "show",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 33,
+            "end": 41
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 42,
+            "end": 48
+          },
+          {
+            "surface": "dinner",
+            "word": "dinner",
+            "entryGuid": "8d095514-2db1-5af6-ab36-da070b4b8057",
+            "isTarget": false,
+            "start": 49,
+            "end": 55
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s4"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-15words-2026-10-09-v1/scene-01-living-room-15words.png",
+      "sha256": "b652286f3cf90c32fd58b5b9c66d3886a56f366629b79357e22c61c323d66c51"
+    },
+    "baseImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/living-room/r2/09eeb3d17582e855/story-ca2dd2dacecc6790.mp3",
+      "sha256": "c2fcbcf981778a48003fc1bde809ebed31d91dbbfb533c68c638d951854b88ea",
+      "language": "en",
+      "textSha256": "ca2dd2dacecc6790b6de88fe1d24447a0d63daa965b56e0e48cc2d979003f379",
+      "durationSeconds": 62.304,
+      "bytes": 996908,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reused-visually-reviewed-for-new-targets",
+      "method": "reuse-existing-base-image",
+      "reuseCandidate": {
+        "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+        "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1",
+        "reviewed": true,
+        "containsVocabularyText": false
+      },
+      "sceneDescriptionZh": "午後在客廳閱讀與休息，電視暫停，妹妹靠著枕頭睡覺。"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "current-targets-only"
+    }
+  },
+  "contentReview": {
+    "status": "image-text-reviewed-awaiting-ui",
+    "notes": [
+      "本檔是 revision 2 離線文字候選，舊 revision 1／published 客廳未變動。",
+      "已逐張查看現有底圖，object 是圖面錨點；story／image-and-story 明示時間先後或敘事線索，不宣稱單張圖可直接證明。",
+      "label 是候選比例位置，尚須正式套件 UI 檢查遮擋、手機排版與點擊；本檔不代表圖片／媒體或發布審核完成。",
+      "room 明確取房間義，不以 living-room 複合字改造來源。",
+      "watch 是稍後一起看節目的計畫，現圖黑螢幕不冒充正在觀看。",
+      "逐張查看現有底圖並依物件分區重排標籤，整場概念以背景／結構為錨點；桌機與手機實際UI尚待驗收。"
+    ]
+  }
+}

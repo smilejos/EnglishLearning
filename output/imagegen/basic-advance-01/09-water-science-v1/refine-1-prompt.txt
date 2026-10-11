@@ -1,0 +1,9 @@
+僅用 Codex CLI 原生 image_generation 圖片編輯工具，一次，局部修改附圖。不要重新生成整張新場景，不改人物、構圖、其他道具、風格或尺寸；不裁切。
+本次必要修正：唯一必要修正：瓶口上方那一滴透明水目前無來源地漂浮，請清除該懸空水滴並恢復原背景。把同一概念改為瓶旁桌面上的一滴透明水，位置在水瓶右側、中央混色杯左側的空桌面；呈自然小半球水滴/圓潤透明小滴，清楚接觸木桌面，底緣微小反光與接觸陰影，有光線折射，與瓶/杯分開可定位。不要畫向上懸浮的尖端、任何箭頭或放大框。只改此水滴位置和所需接觸桌面的微小區域，其他尺子（只有直線刻度且絕無字數字）、水瓶、量瓶動作、藍黃水流變綠、空滿玻璃杯、藍色把手杯、老師與孩子、構圖風格均維持。故事是一滴水落在桌上，因此圖取已落下時刻，不須描繪整段滴落過程。
+保留其他區域完全相同。全圖不得出現可辨文字、單字、字母、數字、翻譯、標籤、箭頭、水印。
+此工作只可圖片編輯、讀取/實際目視工具輸出、複製原始工具圖片與寫本次審閱JSON。禁止讀.env/keys/auth、改程式或教材故事、碰DB、啟動服務、部署、tests、LLM/TTS/圖片HTTP API/SDK/Python生圖。工具僅一次，失敗停，不自動重送。
+原圖及所有原審閱保留不覆寫。保存原始編輯結果到 output/imagegen/basic-advance-01/09-water-science-v1/base-refined-1.png，實際工具檔案來源依工具回覆，不猜測。真正完整看圖，再寫 output/imagegen/basic-advance-01/09-water-science-v1/image-review.refined-1.json。
+十五目標順序：bottle (n;瓶子), water (n;水), glass (n;玻璃杯), ruler (n;尺), measure (v;測量), mix (v;混合), empty (adj;空的), full (adj;滿的), clear (adj;清澈的), drop (n;一滴), cup (n;杯子), science (n;科學), careful (adj;小心的), blue (adj;藍色的), yellow (adj;黃色的)。
+逐詞看圖，以下JSON不可憑prompt虛構座標，缺線索填null並列issues：
+{"imagePath":"output/imagegen/basic-advance-01/09-water-science-v1/base-refined-1.png","width":<實際整數>,"height":<實際整數>,"noVocabularyText":<真正全圖無字無數字才true>,"targets":[{"word":"<按十五原順序>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<實際看見的物件/動作/狀態與需故事補足之處>"}],"issues":["<未解問題或空陣列>"]}。
+label取附近空白避免相互重疊和遮臉，object指向真正物件/動作/狀態。只回報原始工具結果路徑、保存圖路徑、尺寸、審閱JSON與未解問題。

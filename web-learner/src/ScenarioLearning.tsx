@@ -14,6 +14,14 @@ export function scenarioKeyFromHash(hash: string): string | null {
   try { return decodeURIComponent(match[1]); } catch { return null; }
 }
 
+export function scenarioRevisionFromHash(hash: string): { scenarioKey: string; revision: number } | null {
+  const match = /^#\/scenarios\/([^/?#]+)\/revisions\/([1-9]\d*)$/.exec(hash);
+  if (!match) return null;
+  const revision = Number(match[2]);
+  if (!Number.isSafeInteger(revision)) return null;
+  try { return { scenarioKey: decodeURIComponent(match[1]), revision }; } catch { return null; }
+}
+
 export function ScenarioList() {
   const [scenarios, setScenarios] = useState<ScenarioSummary[] | null>(null);
   const [error, setError] = useState(false);
@@ -60,7 +68,25 @@ function StorySentence({ sentence, onSelect }: { sentence: ScenarioSentence; onS
   return <>{chunks} </>;
 }
 
-export function ScenarioLearning({ scenarioKey }: { scenarioKey: string }) {
+const recallCategories = [
+  { pos: "n", label: "名詞" },
+  { pos: "adj", label: "形容詞" },
+  { pos: "v", label: "動詞" },
+] as const;
+
+function storyParagraphs(story: ScenarioDetail["story"]): ScenarioSentence[][] {
+  const breaks = new Set(story.paragraphBreakAfterSentenceIds);
+  const paragraphs: ScenarioSentence[][] = [];
+  let current: ScenarioSentence[] = [];
+  for (const sentence of story.sentences) {
+    current.push(sentence);
+    if (breaks.has(sentence.id)) { paragraphs.push(current); current = []; }
+  }
+  if (current.length) paragraphs.push(current);
+  return paragraphs;
+}
+
+export function ScenarioLearning({ scenarioKey, revision }: { scenarioKey: string; revision?: number }) {
   const [data, setData] = useState<ScenarioDetail | null>(null);
   const [loadFailed, setLoadFailed] = useState(false);
   const [retry, setRetry] = useState(0);
@@ -76,21 +102,29 @@ export function ScenarioLearning({ scenarioKey }: { scenarioKey: string }) {
   const [fromStory, setFromStory] = useState(false);
   const [translationOpen, setTranslationOpen] = useState(false);
   const [recall, setRecall] = useState(false);
-  const [revealed, setRevealed] = useState(false);
-  const hidden = recall && !revealed;
+  const [revealedPos, setRevealedPos] = useState<Set<string>>(() => new Set());
+  const categories = recallCategories.map(category => ({ ...category,
+    count: data?.targets.filter(item => item.teachingPos === category.pos).length ?? 0,
+  })).filter(category => category.count > 0);
+  const visibleTargets = data?.targets.filter(item => !recall || revealedPos.has(item.teachingPos)) ?? [];
+  const storyAvailable = !recall || (!!data && visibleTargets.length === data.targets.length);
+  const anyRevealed = visibleTargets.length > 0;
   const narration = useScenarioNarration(data?.storyAudio?.url);
 
   useEffect(() => {
     const controller = new AbortController();
+    narration.pause(); setModal(null); setSelected(null); setEntry(null);
+    setFromStory(false); setTranslationOpen(false); setRevealedPos(new Set()); setShowLocations(false);
     setData(null); setLoadFailed(false); setImageFailed(false);
-    void api.getScenario(scenarioKey, controller.signal).then(result => {
+    const request = revision === undefined ? api.getScenario(scenarioKey, controller.signal) : api.getScenarioRevision(scenarioKey, revision, controller.signal);
+    void request.then(result => {
       if (!controller.signal.aborted) {
-        if (result.status !== "published") setLoadFailed(true);
+        if (result.status !== "published" && revision === undefined) setLoadFailed(true);
         else setData(result);
       }
     }).catch(() => { if (!controller.signal.aborted) setLoadFailed(true); });
     return () => controller.abort();
-  }, [scenarioKey, retry]);
+  }, [scenarioKey, revision, retry, narration.pause]);
   useEffect(() => {
     if (modal !== "story") narration.pause();
   }, [modal, narration.pause]);
@@ -106,15 +140,29 @@ export function ScenarioLearning({ scenarioKey }: { scenarioKey: string }) {
     return () => controller.abort();
   }, [selected, modal, wordRetry]);
   const select = (guid: string) => {
-    if (hidden) return;
+    if (!storyAvailable && !visibleTargets.some(item => item.entryGuid === guid)) return;
     narration.pause(); setEntry(null); setSelected(guid); setWordFailed(false);
     setFromStory(modal === "story"); setModal("word");
   };
+  const closeAnswers = () => {
+    narration.pause(); setModal(null); setSelected(null); setEntry(null);
+    setFromStory(false); setTranslationOpen(false);
+  };
   const changeMode = (value: boolean) => {
-    narration.pause(); setModal(null); setSelected(null); setShowLocations(false);
-    setRecall(value); setRevealed(false);
+    closeAnswers(); setShowLocations(false);
+    setRecall(value); setRevealedPos(new Set());
+  };
+  const toggleCategory = (pos: string) => {
+    const next = new Set(revealedPos);
+    if (next.has(pos)) { next.delete(pos); closeAnswers(); } else next.add(pos);
+    setRevealedPos(next);
+  };
+  const toggleAll = () => {
+    if (storyAvailable) { closeAnswers(); setRevealedPos(new Set()); }
+    else setRevealedPos(new Set(categories.map(category => category.pos)));
   };
   const target = data?.targets.find(item => item.entryGuid === selected);
+  const paragraphs = data ? storyParagraphs(data.story) : [];
   if (!data) return <main className="scenario-learning scenario-wrap">
     <a href="#/scenarios" className="link-btn">回情境清單</a>
     {loadFailed ? <div role="alert" className="scenario-load-state"><p>情境未能載入，可能尚未發布或暫時無法連線。</p>
@@ -122,43 +170,55 @@ export function ScenarioLearning({ scenarioKey }: { scenarioKey: string }) {
   </main>;
   return <main className="scenario-learning scenario-wrap">
     <a href="#/scenarios" className="link-btn scenario-return">回情境清單</a>
+    {revision !== undefined && <p role="status">版本 {data.revision} 預覽{data.status === "draft" ? " · 尚未發布" : " · 已發布"}</p>}
     <div className="scenario-heading"><div><h1>{data.titleZh}</h1><p>看圖認識單字，再聽故事裡的用法。</p></div>
       <span className="scenario-level">{data.vocabularyFilter.levels.join(" ＋ ")} · {data.targetCount} 詞</span></div>
     <div className="scenario-mode" role="group" aria-label="練習方式">
       <button className={`btn btn--sm${!recall ? " btn--primary" : " btn--ghost"}`} aria-pressed={!recall} onClick={() => changeMode(false)}>看圖學習</button>
       <button className={`btn btn--sm${recall ? " btn--primary" : " btn--ghost"}`} aria-pressed={recall} onClick={() => changeMode(true)}>看圖回想</button>
-      {hidden ? <><span>先看圖回想英文，準備好再揭曉。</span><button className="btn btn--sm" onClick={() => setRevealed(true)}>揭曉答案</button></> :
-        recall && <span role="status">答案已揭曉，可以點選單字與聆聽故事。</span>}
     </div>
+    {recall && <div className="scenario-recall">
+      <p id="scenario-recall-hint">先看圖回想英文，再選詞性揭曉；再次點選可以收起。</p>
+      <div className="scenario-recall-controls" role="group" aria-label="依詞性揭曉答案" aria-describedby="scenario-recall-hint">
+        {categories.map(category => <button key={category.pos}
+          className={`btn btn--sm${revealedPos.has(category.pos) ? " btn--primary" : " btn--ghost"}`}
+          aria-pressed={revealedPos.has(category.pos)} onClick={() => toggleCategory(category.pos)}>
+          {category.label} <span className="scenario-recall-count">{category.count}</span>
+        </button>)}
+        <button className="link-btn scenario-recall-all" onClick={toggleAll}>{storyAvailable ? "全部收起" : "全部揭曉"}</button>
+      </div>
+      <p className="scenario-recall-status" role="status">已揭曉 {visibleTargets.length}／{data.targets.length} 詞。
+        {storyAvailable ? "可以點選單字與聆聽故事。" : "全部揭曉後可開啟故事與旁白。"}</p>
+    </div>}
     <div className={`scenario-image-tools${zoomed ? " is-zoomed" : ""}`}>
-      <p>{hidden ? "圖片中的物件和動作，都可以試著用英文說說看。" : <><span className="scenario-desktop-hint">點選圖上的英文標籤，查看解釋與例句。</span>
-        <span className="scenario-mobile-hint">放大圖片後點英文標籤，或開啟故事查單字。</span></>}</p>
-      <div>{!hidden && <button className="btn btn--ghost btn--sm scenario-locations-button" aria-pressed={showLocations}
+      <p>{!anyRevealed ? "圖片中的物件和動作，都可以試著用英文說說看。" : <><span className="scenario-desktop-hint">點選圖上的英文標籤，查看解釋與例句。</span>
+        <span className="scenario-mobile-hint">放大圖片後點英文標籤{storyAvailable ? "，或開啟故事查單字。" : "，查看已揭曉的單字。"}</span></>}</p>
+      <div>{anyRevealed && <button className="btn btn--ghost btn--sm scenario-locations-button" aria-pressed={showLocations}
         onClick={() => setShowLocations(!showLocations)}>{showLocations ? "收起點選位置" : "顯示點選位置"}</button>}
         <button className="btn btn--ghost btn--sm" aria-pressed={zoomed} onClick={() => setZoomed(!zoomed)}>{zoomed ? "還原圖片" : "放大圖片"}</button>
-        {!hidden && <button className="btn btn--primary btn--sm" onClick={() => setModal("story")}><HeadphonesIcon size={16} /> 故事與旁白</button>}</div>
+        {storyAvailable && <button className="btn btn--primary btn--sm" onClick={() => setModal("story")}><HeadphonesIcon size={16} /> 故事與旁白</button>}</div>
     </div>
     <div className={`scenario-image-scroll${zoomed ? " is-zoomed" : ""}`}>
       <div className={`scenario-image-canvas${showLocations ? " show-locations" : ""}`} style={{ "--scenario-image-width": `${data.image.width}px` } as React.CSSProperties}>
-        {imageFailed ? <p role="alert" className="scenario-image-error">圖片未能載入。{!hidden && "可先開啟「故事與旁白」查看故事與單字。"}
+        {imageFailed ? <p role="alert" className="scenario-image-error">圖片未能載入。{storyAvailable && "可先開啟「故事與旁白」查看故事與單字。"}
           <button className="btn btn--ghost" onClick={() => setImageFailed(false)}>重試載入圖片</button></p> :
           <img src={api.scenarioMediaUrl(data.image.url)} alt="情境插圖" width={data.image.width} height={data.image.height} onError={() => setImageFailed(true)} />}
-        {!hidden && !imageFailed && <>
+        {anyRevealed && !imageFailed && <>
           <svg className="scenario-arrows" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
             <defs><marker id="scenario-arrow-tip" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M1 1 L6 3.5 L1 6" fill="none" stroke="white" strokeWidth="1.2" /></marker></defs>
-            {data.targets.map(item => <g key={item.entryGuid}>
+            {visibleTargets.map(item => <g key={item.entryGuid}>
               <path d={`M ${item.interaction.label.x * 1000} ${item.interaction.label.y * 1000 + 18} Q ${(item.interaction.label.x + item.interaction.object.x) * 500 + 10} ${(item.interaction.label.y + item.interaction.object.y) * 500} ${item.interaction.object.x * 1000} ${item.interaction.object.y * 1000}`}
                 fill="none" stroke="white" strokeWidth="1.5" vectorEffect="non-scaling-stroke" markerEnd="url(#scenario-arrow-tip)" />
               {showLocations && <circle cx={item.interaction.object.x * 1000} cy={item.interaction.object.y * 1000} r="6" fill="white" />}
             </g>)}
           </svg>
-          {data.targets.map(item => <button key={item.entryGuid} className={`scenario-label${selected === item.entryGuid ? " is-selected" : ""}`}
+          {visibleTargets.map(item => <button key={item.entryGuid} className={`scenario-label${selected === item.entryGuid ? " is-selected" : ""}`}
             style={{ left: `${item.interaction.label.x * 100}%`, top: `${item.interaction.label.y * 100}%` }}
             aria-label={`查看 ${item.word} 單字卡`} onClick={() => select(item.entryGuid)}>{item.word}</button>)}
         </>}
       </div>
     </div>
-    {modal && !hidden && <ScenarioDialog title={modal === "story" ? "情境小故事" : "單字卡"}
+    {modal && (modal === "story" ? storyAvailable : storyAvailable || visibleTargets.some(item => item.entryGuid === selected)) && <ScenarioDialog title={modal === "story" ? "情境小故事" : "單字卡"}
       focusKey={modal === "story" ? "story" : selected ?? "word"} onClose={() => setModal(null)}>
       {modal === "story" ? <section className="scenario-story" aria-label="情境小故事">
         <div className="scenario-narration" role="group" aria-label="故事英文旁白">
@@ -173,12 +233,15 @@ export function ScenarioLearning({ scenarioKey }: { scenarioKey: string }) {
           {narration.state === "error" && <span role="status" className="scenario-error">旁白播放失敗，請重試。</span>}
         </div>
         <p className="scenario-story-hint">點選故事中的單字，查看原形、解釋與例句。靛藍字是本次目標詞。</p>
-        <p className="scenario-story-text">{data.story.sentences.map(sentence => <StorySentence key={sentence.id} sentence={sentence} onSelect={select} />)}</p>
+        <div className="scenario-story-paragraphs">{paragraphs.map((sentences, index) => <p className="scenario-story-text" key={index}>
+          {sentences.map(sentence => <StorySentence key={sentence.id} sentence={sentence} onSelect={select} />)}
+        </p>)}</div>
         <div className="scenario-translation"><button className="link-btn" aria-expanded={translationOpen} aria-controls="scenario-translation-text"
           onClick={() => setTranslationOpen(!translationOpen)}>{translationOpen ? "收起繁中翻譯" : "展開繁中翻譯"}</button>
-          {translationOpen && <p id="scenario-translation-text">{data.story.textZh}</p>}</div>
+          {translationOpen && <div id="scenario-translation-text">{paragraphs.length > 1 ? paragraphs.map((sentences, index) =>
+            <p key={index}>{sentences.map(sentence => sentence.zh).join("")}</p>) : <p>{data.story.textZh}</p>}</div>}</div>
       </section> : <>
-        {fromStory && <button className="link-btn scenario-back-story" onClick={() => setModal("story")}>回到故事</button>}
+        {fromStory && storyAvailable && <button className="link-btn scenario-back-story" onClick={() => setModal("story")}>回到故事</button>}
         {wordFailed ? <div role="alert"><p>單字資料載入失敗，請重試。</p><button className="btn" onClick={() => setWordRetry(wordRetry + 1)}>重新載入單字</button></div> :
           entry?.guid === selected ? <ScenarioWordCard key={entry.guid} entry={entry} target={target} /> : <p role="status">正在載入單字…</p>}
       </>}

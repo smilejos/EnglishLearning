@@ -1,0 +1,1704 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "classroom-group-work",
+  "revision": 2,
+  "status": "draft",
+  "titleZh": "分組設計房屋",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 24,
+  "targets": [
+    {
+      "word": "desk",
+      "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書桌",
+      "interaction": {
+        "object": {
+          "x": 0.344,
+          "y": 0.821
+        },
+        "label": {
+          "x": 0.23,
+          "y": 0.82
+        }
+      }
+    },
+    {
+      "word": "notebook",
+      "entryGuid": "299ab06d-b405-5bc0-ba87-6b565483aa90",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "筆記本",
+      "interaction": {
+        "object": {
+          "x": 0.203,
+          "y": 0.66
+        },
+        "label": {
+          "x": 0.175,
+          "y": 0.73
+        }
+      }
+    },
+    {
+      "word": "pencil",
+      "entryGuid": "35748892-bcfc-5557-b955-75559b05348d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "鉛筆",
+      "interaction": {
+        "object": {
+          "x": 0.165,
+          "y": 0.58
+        },
+        "label": {
+          "x": 0.13,
+          "y": 0.56
+        }
+      }
+    },
+    {
+      "word": "group",
+      "entryGuid": "6421725c-8f90-57ad-9995-cff9922e097b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "小組",
+      "interaction": {
+        "object": {
+          "x": 0.39,
+          "y": 0.595
+        },
+        "label": {
+          "x": 0.325,
+          "y": 0.255
+        }
+      }
+    },
+    {
+      "word": "school",
+      "entryGuid": "af70f279-c3ca-5288-b3e7-be0694b46cd4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "學校",
+      "interaction": {
+        "object": {
+          "x": 0.73,
+          "y": 0.225
+        },
+        "label": {
+          "x": 0.73,
+          "y": 0.105
+        }
+      }
+    },
+    {
+      "word": "teacher",
+      "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "老師",
+      "interaction": {
+        "object": {
+          "x": 0.406,
+          "y": 0.282
+        },
+        "label": {
+          "x": 0.46,
+          "y": 0.125
+        }
+      }
+    },
+    {
+      "word": "student",
+      "entryGuid": "bf3f1240-42b3-51d5-9f1a-74405d8c0eeb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "學生",
+      "interaction": {
+        "object": {
+          "x": 0.13,
+          "y": 0.489
+        },
+        "label": {
+          "x": 0.055,
+          "y": 0.64
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "interaction": {
+        "object": {
+          "x": 0.916,
+          "y": 0.73
+        },
+        "label": {
+          "x": 0.915,
+          "y": 0.8
+        }
+      }
+    },
+    {
+      "word": "ruler",
+      "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "尺",
+      "interaction": {
+        "object": {
+          "x": 0.354,
+          "y": 0.739
+        },
+        "label": {
+          "x": 0.385,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "answer",
+      "entryGuid": "26272a3d-d299-5669-9c48-e360417c9d69",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "答案",
+      "interaction": {
+        "object": {
+          "x": 0.395,
+          "y": 0.668
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.645
+        }
+      }
+    },
+    {
+      "word": "paper",
+      "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "紙",
+      "interaction": {
+        "object": {
+          "x": 0.405,
+          "y": 0.536
+        },
+        "label": {
+          "x": 0.45,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "word": "book",
+      "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "書",
+      "interaction": {
+        "object": {
+          "x": 0.549,
+          "y": 0.642
+        },
+        "label": {
+          "x": 0.595,
+          "y": 0.53
+        }
+      }
+    },
+    {
+      "word": "model",
+      "entryGuid": "e2a9a964-d4fa-54e3-82c1-da13df0d3715",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "模型",
+      "interaction": {
+        "object": {
+          "x": 0.487,
+          "y": 0.644
+        },
+        "label": {
+          "x": 0.495,
+          "y": 0.79
+        }
+      }
+    },
+    {
+      "word": "house",
+      "entryGuid": "ada3994d-7136-5f2b-a00e-8559f10fdfa4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "房屋",
+      "interaction": {
+        "object": {
+          "x": 0.405,
+          "y": 0.536
+        },
+        "label": {
+          "x": 0.37,
+          "y": 0.47
+        }
+      }
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "interaction": {
+        "object": {
+          "x": 0.698,
+          "y": 0.195
+        },
+        "label": {
+          "x": 0.915,
+          "y": 0.1
+        }
+      }
+    },
+    {
+      "word": "quiet",
+      "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "安靜的",
+      "interaction": {
+        "object": {
+          "x": 0.724,
+          "y": 0.437
+        },
+        "label": {
+          "x": 0.805,
+          "y": 0.31
+        }
+      }
+    },
+    {
+      "word": "busy",
+      "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "忙碌的",
+      "interaction": {
+        "object": {
+          "x": 0.337,
+          "y": 0.492
+        },
+        "label": {
+          "x": 0.37,
+          "y": 0.77
+        }
+      }
+    },
+    {
+      "word": "small",
+      "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "小的",
+      "interaction": {
+        "object": {
+          "x": 0.558,
+          "y": 0.714
+        },
+        "label": {
+          "x": 0.6,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "helpful",
+      "entryGuid": "2599cb0d-c590-5e3f-b718-0ec19236347a",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "樂於助人的",
+      "interaction": {
+        "object": {
+          "x": 0.425,
+          "y": 0.415
+        },
+        "label": {
+          "x": 0.445,
+          "y": 0.375
+        }
+      }
+    },
+    {
+      "word": "different",
+      "entryGuid": "d9117cd0-8129-52b9-836d-b403f04f656c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "不同的",
+      "interaction": {
+        "object": {
+          "x": 0.511,
+          "y": 0.678
+        },
+        "label": {
+          "x": 0.66,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "write",
+      "entryGuid": "e81f01ab-11c0-56b9-af5e-bf59f547c0df",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "寫",
+      "interaction": {
+        "object": {
+          "x": 0.167,
+          "y": 0.618
+        },
+        "label": {
+          "x": 0.1,
+          "y": 0.705
+        }
+      }
+    },
+    {
+      "word": "discuss",
+      "entryGuid": "10dd911e-5fa0-5697-9ff3-181f5fa3c7b7",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "討論",
+      "interaction": {
+        "object": {
+          "x": 0.393,
+          "y": 0.523
+        },
+        "label": {
+          "x": 0.61,
+          "y": 0.43
+        }
+      }
+    },
+    {
+      "word": "draw",
+      "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "畫",
+      "interaction": {
+        "object": {
+          "x": 0.406,
+          "y": 0.66
+        },
+        "label": {
+          "x": 0.33,
+          "y": 0.58
+        }
+      }
+    },
+    {
+      "word": "compare",
+      "entryGuid": "99fac742-662e-5d52-9802-9bd2ec8ed9e5",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "比較",
+      "interaction": {
+        "object": {
+          "x": 0.521,
+          "y": 0.665
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.91
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "At school, our teacher asks each group to plan a house that a family will enjoy. We gather around a desk, and every student has a different idea to share. I use a pencil to write our ideas in my notebook while my friend holds up a sheet of paper. We draw the door and window first, then discuss where the family can sit together. A book gives us another idea, and the helpful teacher comes over to listen. Our group is busy, but the students behind us stay quiet so everyone can think. Next, we measure a model with a ruler and compare it with the small model beside it. I move my chair closer so I can see both, and we agree which size will work well. Finally, we show our answer to the teacher and explain how our plan changed.",
+    "textZh": "在學校，老師請每個小組設計一間家人會喜歡的房屋。我們圍在書桌旁，每位學生都有不同的想法想分享。我用鉛筆在筆記本裡寫下大家的想法，朋友則舉起一張紙。我們先畫門和窗戶，再討論家人能一起坐在哪裡。一本書給了我們另一個想法，樂於助人的老師也過來聽。我們的小組很忙，後面的學生則保持安靜，讓每個人都能思考。接著我們用尺量一個模型，並拿它和旁邊的小模型比較。我把椅子挪近一點，看清楚兩個模型；我們同意哪個大小合適。最後，我們把答案展示給老師，說明設計如何改變。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "At school, our teacher asks each group to plan a house that a family will enjoy.",
+        "zh": "在學校，老師請每個小組設計一間家人會喜歡的房屋。",
+        "wordLinks": [
+          {
+            "surface": "At",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "school",
+            "word": "school",
+            "entryGuid": "af70f279-c3ca-5288-b3e7-be0694b46cd4",
+            "isTarget": true,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 11,
+            "end": 14
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": true,
+            "start": 15,
+            "end": 22
+          },
+          {
+            "surface": "asks",
+            "word": "ask",
+            "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+            "isTarget": false,
+            "start": 23,
+            "end": 27
+          },
+          {
+            "surface": "each",
+            "word": "each",
+            "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "group",
+            "word": "group",
+            "entryGuid": "6421725c-8f90-57ad-9995-cff9922e097b",
+            "isTarget": true,
+            "start": 33,
+            "end": 38
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 39,
+            "end": 41
+          },
+          {
+            "surface": "plan",
+            "word": "plan",
+            "entryGuid": "8a9442cd-a7a6-50a4-898b-afb8ee2acf1f",
+            "isTarget": false,
+            "start": 42,
+            "end": 46
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 47,
+            "end": 48
+          },
+          {
+            "surface": "house",
+            "word": "house",
+            "entryGuid": "ada3994d-7136-5f2b-a00e-8559f10fdfa4",
+            "isTarget": true,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "that",
+            "word": "that",
+            "entryGuid": "9055af51-4865-58f3-998b-4478c285810e",
+            "isTarget": false,
+            "start": 55,
+            "end": 59
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 60,
+            "end": 61
+          },
+          {
+            "surface": "family",
+            "word": "family",
+            "entryGuid": "3dce25c5-181c-5ff5-9910-b8f915ab05b3",
+            "isTarget": false,
+            "start": 62,
+            "end": 68
+          },
+          {
+            "surface": "will",
+            "word": "will",
+            "entryGuid": "c05eaf90-ad2d-5a0a-803d-625f721b18d4",
+            "isTarget": false,
+            "start": 69,
+            "end": 73
+          },
+          {
+            "surface": "enjoy",
+            "word": "enjoy",
+            "entryGuid": "c7f1f45f-8aeb-57bc-86d6-06b858354e08",
+            "isTarget": false,
+            "start": 74,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "We gather around a desk, and every student has a different idea to share.",
+        "zh": "我們圍在書桌旁，每位學生都有不同的想法想分享。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "gather",
+            "word": "gather",
+            "entryGuid": "65126ff3-92fa-5fdb-963f-12d1a5c324b8",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "around",
+            "word": "around",
+            "entryGuid": "5b1ade62-c054-562e-b689-f5e03e978bab",
+            "isTarget": false,
+            "start": 10,
+            "end": 16
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 17,
+            "end": 18
+          },
+          {
+            "surface": "desk",
+            "word": "desk",
+            "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+            "isTarget": true,
+            "start": 19,
+            "end": 23
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "every",
+            "word": "every",
+            "entryGuid": "2effa3bb-fe72-5f68-9503-9d9011a0a5e9",
+            "isTarget": false,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "student",
+            "word": "student",
+            "entryGuid": "bf3f1240-42b3-51d5-9f1a-74405d8c0eeb",
+            "isTarget": true,
+            "start": 35,
+            "end": 42
+          },
+          {
+            "surface": "has",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 47,
+            "end": 48
+          },
+          {
+            "surface": "different",
+            "word": "different",
+            "entryGuid": "d9117cd0-8129-52b9-836d-b403f04f656c",
+            "isTarget": true,
+            "start": 49,
+            "end": 58
+          },
+          {
+            "surface": "idea",
+            "word": "idea",
+            "entryGuid": "93e09da8-b459-55ed-aab5-b937fe92f77a",
+            "isTarget": false,
+            "start": 59,
+            "end": 63
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 64,
+            "end": 66
+          },
+          {
+            "surface": "share",
+            "word": "share",
+            "entryGuid": "e97f2c91-8291-58f9-aa30-f17af2ba9cf4",
+            "isTarget": false,
+            "start": 67,
+            "end": 72
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "I use a pencil to write our ideas in my notebook while my friend holds up a sheet of paper.",
+        "zh": "我用鉛筆在筆記本裡寫下大家的想法，朋友則舉起一張紙。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "pencil",
+            "word": "pencil",
+            "entryGuid": "35748892-bcfc-5557-b955-75559b05348d",
+            "isTarget": true,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "write",
+            "word": "write",
+            "entryGuid": "e81f01ab-11c0-56b9-af5e-bf59f547c0df",
+            "isTarget": true,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "ideas",
+            "word": "idea",
+            "entryGuid": "93e09da8-b459-55ed-aab5-b937fe92f77a",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 34,
+            "end": 36
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "notebook",
+            "word": "notebook",
+            "entryGuid": "299ab06d-b405-5bc0-ba87-6b565483aa90",
+            "isTarget": true,
+            "start": 40,
+            "end": 48
+          },
+          {
+            "surface": "while",
+            "word": "while",
+            "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+            "isTarget": false,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 55,
+            "end": 57
+          },
+          {
+            "surface": "friend",
+            "word": "friend",
+            "entryGuid": "ab65f8b5-9946-5b2e-8a3d-aae6e30ed2f5",
+            "isTarget": false,
+            "start": 58,
+            "end": 64
+          },
+          {
+            "surface": "holds",
+            "word": "hold",
+            "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+            "isTarget": false,
+            "start": 65,
+            "end": 70
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 71,
+            "end": 73
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 74,
+            "end": 75
+          },
+          {
+            "surface": "sheet",
+            "word": "sheet",
+            "entryGuid": "ba7aaf79-c0af-5976-884c-f018d0ba390b",
+            "isTarget": false,
+            "start": 76,
+            "end": 81
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 82,
+            "end": 84
+          },
+          {
+            "surface": "paper",
+            "word": "paper",
+            "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+            "isTarget": true,
+            "start": 85,
+            "end": 90
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "We draw the door and window first, then discuss where the family can sit together.",
+        "zh": "我們先畫門和窗戶，再討論家人能一起坐在哪裡。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "draw",
+            "word": "draw",
+            "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+            "isTarget": true,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "door",
+            "word": "door",
+            "entryGuid": "21d37b04-3f63-5178-9162-a4cd088eaf7f",
+            "isTarget": false,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": true,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "first",
+            "word": "first",
+            "entryGuid": "eb25f77b-5263-5877-a03e-24cd1689e6eb",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "discuss",
+            "word": "discuss",
+            "entryGuid": "10dd911e-5fa0-5697-9ff3-181f5fa3c7b7",
+            "isTarget": true,
+            "start": 40,
+            "end": 47
+          },
+          {
+            "surface": "where",
+            "word": "where",
+            "entryGuid": "4b8a80ba-4973-5f81-815d-16131c80089c",
+            "isTarget": false,
+            "start": 48,
+            "end": 53
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 54,
+            "end": 57
+          },
+          {
+            "surface": "family",
+            "word": "family",
+            "entryGuid": "3dce25c5-181c-5ff5-9910-b8f915ab05b3",
+            "isTarget": false,
+            "start": 58,
+            "end": 64
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 65,
+            "end": 68
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 69,
+            "end": 72
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 73,
+            "end": 81
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "A book gives us another idea, and the helpful teacher comes over to listen.",
+        "zh": "一本書給了我們另一個想法，樂於助人的老師也過來聽。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "book",
+            "word": "book",
+            "entryGuid": "bde8d38f-901b-512d-a555-f6bbfad21fda",
+            "isTarget": true,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "gives",
+            "word": "give",
+            "entryGuid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+            "isTarget": false,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 16,
+            "end": 23
+          },
+          {
+            "surface": "idea",
+            "word": "idea",
+            "entryGuid": "93e09da8-b459-55ed-aab5-b937fe92f77a",
+            "isTarget": false,
+            "start": 24,
+            "end": 28
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 30,
+            "end": 33
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 34,
+            "end": 37
+          },
+          {
+            "surface": "helpful",
+            "word": "helpful",
+            "entryGuid": "2599cb0d-c590-5e3f-b718-0ec19236347a",
+            "isTarget": true,
+            "start": 38,
+            "end": 45
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": true,
+            "start": 46,
+            "end": 53
+          },
+          {
+            "surface": "comes",
+            "word": "come",
+            "entryGuid": "68e62372-a2ed-54a6-98c3-35bb2d2047d2",
+            "isTarget": false,
+            "start": 54,
+            "end": 59
+          },
+          {
+            "surface": "over",
+            "word": "over",
+            "entryGuid": "78e40216-3485-54f9-9c71-70c3e01cd6ed",
+            "isTarget": false,
+            "start": 60,
+            "end": 64
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 65,
+            "end": 67
+          },
+          {
+            "surface": "listen",
+            "word": "listen",
+            "entryGuid": "c183236f-bc95-51ba-90d2-f6cb6d100ac8",
+            "isTarget": false,
+            "start": 68,
+            "end": 74
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "Our group is busy, but the students behind us stay quiet so everyone can think.",
+        "zh": "我們的小組很忙，後面的學生則保持安靜，讓每個人都能思考。",
+        "wordLinks": [
+          {
+            "surface": "Our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "group",
+            "word": "group",
+            "entryGuid": "6421725c-8f90-57ad-9995-cff9922e097b",
+            "isTarget": true,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "busy",
+            "word": "busy",
+            "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+            "isTarget": true,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "but",
+            "word": "but",
+            "entryGuid": "6bc80d04-84e6-5602-a22e-ab8101e03ee7",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "students",
+            "word": "student",
+            "entryGuid": "bf3f1240-42b3-51d5-9f1a-74405d8c0eeb",
+            "isTarget": true,
+            "start": 27,
+            "end": 35
+          },
+          {
+            "surface": "behind",
+            "word": "behind",
+            "entryGuid": "983f7556-8d27-55bc-b9d8-2f0f22a2ed8f",
+            "isTarget": false,
+            "start": 36,
+            "end": 42
+          },
+          {
+            "surface": "us",
+            "word": "us",
+            "entryGuid": "140b0629-36d9-5d31-89b6-6ba322b5eac7",
+            "isTarget": false,
+            "start": 43,
+            "end": 45
+          },
+          {
+            "surface": "stay",
+            "word": "stay",
+            "entryGuid": "988d1227-e4a1-5628-ae1a-6d11c8d8a932",
+            "isTarget": false,
+            "start": 46,
+            "end": 50
+          },
+          {
+            "surface": "quiet",
+            "word": "quiet",
+            "entryGuid": "c3107be9-eaa8-54a6-a6b6-c764fe455083",
+            "isTarget": true,
+            "start": 51,
+            "end": 56
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 57,
+            "end": 59
+          },
+          {
+            "surface": "everyone",
+            "word": "everyone",
+            "entryGuid": "dabe0b24-9c2b-56ee-a06a-7a3f642b26dd",
+            "isTarget": false,
+            "start": 60,
+            "end": 68
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 69,
+            "end": 72
+          },
+          {
+            "surface": "think",
+            "word": "think",
+            "entryGuid": "bc74ba55-d2d2-5012-aba8-758fdc4e19d3",
+            "isTarget": false,
+            "start": 73,
+            "end": 78
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "Next, we measure a model with a ruler and compare it with the small model beside it.",
+        "zh": "接著我們用尺量一個模型，並拿它和旁邊的小模型比較。",
+        "wordLinks": [
+          {
+            "surface": "Next",
+            "word": "next",
+            "entryGuid": "eb74bac2-c475-5f32-b1f3-83f286f561fb",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "measure",
+            "word": "measure",
+            "entryGuid": "40322aac-afef-54bb-b5d0-e117fd3109e5",
+            "isTarget": false,
+            "start": 9,
+            "end": 16
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 17,
+            "end": 18
+          },
+          {
+            "surface": "model",
+            "word": "model",
+            "entryGuid": "e2a9a964-d4fa-54e3-82c1-da13df0d3715",
+            "isTarget": true,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 30,
+            "end": 31
+          },
+          {
+            "surface": "ruler",
+            "word": "ruler",
+            "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+            "isTarget": true,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "compare",
+            "word": "compare",
+            "entryGuid": "99fac742-662e-5d52-9802-9bd2ec8ed9e5",
+            "isTarget": true,
+            "start": 42,
+            "end": 49
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 50,
+            "end": 52
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 53,
+            "end": 57
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 58,
+            "end": 61
+          },
+          {
+            "surface": "small",
+            "word": "small",
+            "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+            "isTarget": true,
+            "start": 62,
+            "end": 67
+          },
+          {
+            "surface": "model",
+            "word": "model",
+            "entryGuid": "e2a9a964-d4fa-54e3-82c1-da13df0d3715",
+            "isTarget": true,
+            "start": 68,
+            "end": 73
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 74,
+            "end": 80
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 81,
+            "end": 83
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "I move my chair closer so I can see both, and we agree which size will work well.",
+        "zh": "我把椅子挪近一點，看清楚兩個模型；我們同意哪個大小合適。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "move",
+            "word": "move",
+            "entryGuid": "6d943d82-d4c7-50c7-af4f-0471a858bd35",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "chair",
+            "word": "chair",
+            "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+            "isTarget": true,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "closer",
+            "word": "close",
+            "entryGuid": "64780f59-1ba5-587d-b50a-42cfbd730c8e",
+            "isTarget": false,
+            "start": 16,
+            "end": 22
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 23,
+            "end": 25
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "see",
+            "word": "see",
+            "entryGuid": "8f7d06a5-0e23-5c26-9992-beb7d2badfb3",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "both",
+            "word": "both",
+            "entryGuid": "c1ddaab4-1087-5620-bd51-d0b83f933403",
+            "isTarget": false,
+            "start": 36,
+            "end": 40
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 46,
+            "end": 48
+          },
+          {
+            "surface": "agree",
+            "word": "agree",
+            "entryGuid": "5b3a59cf-5700-5d9d-a8f9-59ccfd59bee5",
+            "isTarget": false,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "which",
+            "word": "which",
+            "entryGuid": "07bdff6c-6851-522f-b822-7b96c5372d69",
+            "isTarget": false,
+            "start": 55,
+            "end": 60
+          },
+          {
+            "surface": "size",
+            "word": "size",
+            "entryGuid": "99d94974-918c-5cd4-8e70-5e7068fad688",
+            "isTarget": false,
+            "start": 61,
+            "end": 65
+          },
+          {
+            "surface": "will",
+            "word": "will",
+            "entryGuid": "c05eaf90-ad2d-5a0a-803d-625f721b18d4",
+            "isTarget": false,
+            "start": 66,
+            "end": 70
+          },
+          {
+            "surface": "work",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 71,
+            "end": 75
+          },
+          {
+            "surface": "well",
+            "word": "well",
+            "entryGuid": "9e40ed4b-f10b-56b9-9967-f36e4b74e7eb",
+            "isTarget": false,
+            "start": 76,
+            "end": 80
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "Finally, we show our answer to the teacher and explain how our plan changed.",
+        "zh": "最後，我們把答案展示給老師，說明設計如何改變。",
+        "wordLinks": [
+          {
+            "surface": "Finally",
+            "word": "finally",
+            "entryGuid": "5e5278db-0d8b-5f8f-9d04-ca0acae769a9",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 9,
+            "end": 11
+          },
+          {
+            "surface": "show",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "answer",
+            "word": "answer",
+            "entryGuid": "26272a3d-d299-5669-9c48-e360417c9d69",
+            "isTarget": true,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "teacher",
+            "word": "teacher",
+            "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+            "isTarget": true,
+            "start": 35,
+            "end": 42
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          },
+          {
+            "surface": "explain",
+            "word": "explain",
+            "entryGuid": "eb023b0d-c7a4-522d-8538-d7209ca6ea6e",
+            "isTarget": false,
+            "start": 47,
+            "end": 54
+          },
+          {
+            "surface": "how",
+            "word": "how",
+            "entryGuid": "46750fe2-26a0-516a-8c88-a4b9259ddc38",
+            "isTarget": false,
+            "start": 55,
+            "end": 58
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 59,
+            "end": 62
+          },
+          {
+            "surface": "plan",
+            "word": "plan",
+            "entryGuid": "8a9442cd-a7a6-50a4-898b-afb8ee2acf1f",
+            "isTarget": false,
+            "start": 63,
+            "end": 67
+          },
+          {
+            "surface": "changed",
+            "word": "change",
+            "entryGuid": "07cdb249-56e7-58fd-a489-04016549505a",
+            "isTarget": false,
+            "start": 68,
+            "end": 75
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s5"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/06-classroom-group-work-v1/base-refined-2.png",
+      "sha256": "0f9e2378e910b9a35c631076f92f5fd80828392eda99395a37e18dff5e309847",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/classroom-group-work/r2/09eeb3d17582e855/story-ee7032e91844a043.mp3",
+      "sha256": "41f9ce3c21080483253a78b8a23830766cce474b3d418397e5f0d7fb57278c75",
+      "language": "en",
+      "textSha256": "ee7032e91844a04302f7e5e2cd0242c4e12db61d09e6c9512652d37ff3ea91e9",
+      "durationSeconds": 63.168,
+      "bytes": 1010732,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reused-visually-reviewed-for-new-targets",
+      "method": "reuse-existing-base-image",
+      "reuseCandidate": {
+        "path": "output/imagegen/basic-advance-01/06-classroom-group-work-v1/base-refined-2.png",
+        "sha256": "0f9e2378e910b9a35c631076f92f5fd80828392eda99395a37e18dff5e309847",
+        "reviewed": true,
+        "containsVocabularyText": false
+      },
+      "sceneDescriptionZh": "學生與老師在課室裡合作，畫房屋、量大小、比較兩個模型並討論答案。"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "current-targets-only"
+    }
+  },
+  "contentReview": {
+    "status": "image-text-reviewed-awaiting-ui",
+    "notes": [
+      "本檔是 revision 2 離線文字候選，舊 revision 1／published 客廳未變動。",
+      "已逐張查看現有底圖，object 是圖面錨點；story／image-and-story 明示時間先後或敘事線索，不宣稱單張圖可直接證明。",
+      "label 是候選比例位置，尚須正式套件 UI 檢查遮擋、手機排版與點擊；本檔不代表圖片／媒體或發布審核完成。",
+      "answer 是小組回答設計問題的圖／方案，不宣稱圖片有可讀答案文字。",
+      "measure僅留故事支援詞，尺放在桌上不冒充正在測量；target compare以大小不同的並列模型與討論為線索。",
+      "逐張查看現有底圖並依物件分區重排標籤，整場概念以背景／結構為錨點；桌機與手機實際UI尚待驗收。"
+    ]
+  }
+}

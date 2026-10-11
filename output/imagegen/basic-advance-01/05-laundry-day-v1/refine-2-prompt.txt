@@ -1,0 +1,8 @@
+只用Codex CLI原生 image_generation 一次，編修附圖，保存 output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png；保留其他原圖，這是生產素材修正。只允許本場圖與真正目視JSON，不碰DB/服務/.env/keys/其他API。
+新圖已具備完整洗衣籃與清楚盆水，維持所有人物動作、物件與15目標位置、暖3D光色、1672×941左右16:9opaque。只重畫以下三小區域：中央藍襯衫內領仍有黃色tiny布標（約x=.513,y=.228）—不要保留或塗小字，直接讓整件襯衫呈背面朝鏡頭，平滑藍色後領外側與無縫單純藍色布料，不可看見內領，也沒有任何衣物標籤。右侧白藍條紋上衣領內仍有黑色tiny布標（約x=.876,y=.227）—也改成背面朝鏡頭，後領純粹條紋布料，沒有標籤。洗衣機上緣控制面板（約x=.13,y=.345）重畫為完全單純白色長方形面板，只有兩個無刻度無符號的光滑圓形旋鈕，沒有顯示器、文字、數字、刻痕或任何細小符號。衣領/所有衣物/肥皂/洗衣機都不得有字母、字形、數字或tiny logo。不要動其他細節。
+完成後真正view_image仔細看衣領/面板，依新圖重作15詞 normalized label/object審閱JSON。原15詞依序shirt,sock,basket,soap,wash,hang,wet,dry,machine,towel,clothes,line,sun,bright,water。新JSON存為 output/imagegen/basic-advance-01/05-laundry-day-v1/image-review.final.json（不覆蓋仍在寫的前次image-review.json），schema如下但將檔案/圖片路徑依新圖：
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

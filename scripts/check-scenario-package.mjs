@@ -42,12 +42,11 @@ export async function validateScenarioPackage(pkg, options = {}) {
       levels.some((level) => !['basic', 'advance'].includes(level)) || new Set(levels).size !== levels.length) {
     errors.push('vocabularyFilter 必須為 list，levels 僅接受不重複的 basic／advance');
   }
-  if (pkg.targetCount !== 15) errors.push('targetCount 必須為 15');
+  if (!Number.isInteger(pkg.targetCount) || pkg.targetCount < 1 || pkg.targetCount > 25) errors.push('targetCount 必須為 1–25 的整數');
   const targets = Array.isArray(pkg.targets) ? pkg.targets : [];
-  if (targets.length !== 15) errors.push('targets 必須包含 15 個詞條');
+  if (targets.length !== pkg.targetCount) errors.push('targets 長度必須等於 targetCount');
   const targetWords = new Set();
   const targetGuids = new Set();
-  const teachingPos = new Set();
   const validateEntry = (item, label) => {
     if (!record(item)) { errors.push(`${label} 必須為物件`); return null; }
     const entry = entries.get(item.entryGuid);
@@ -69,14 +68,13 @@ export async function validateScenarioPackage(pkg, options = {}) {
     if (targetWords.has(target.word) || targetGuids.has(target.entryGuid)) errors.push(`${label} 的 word／entryGuid 重複`);
     targetWords.add(target.word);
     targetGuids.add(target.entryGuid);
-    teachingPos.add(target.teachingPos);
+    if (!['n', 'adj', 'v'].includes(target.teachingPos)) errors.push(`${label}.teachingPos 僅接受 n／adj／v`);
     if (entry && target.list !== entry.level?.list) errors.push(`${label}.list 與字庫不一致`);
     if (entry && !entry.parts_of_speech?.includes(target.teachingPos)) errors.push(`${label}.teachingPos 不屬於字庫詞性`);
     if (!nonempty(target.senseZh)) errors.push(`${label}.senseZh 不可空白`);
     if (target.interaction == null) missing.push(`${label} (${target.word}) 缺互動標籤及物件座標`);
     else if (!coordinate(target.interaction.label) || !coordinate(target.interaction.object)) errors.push(`${label}.interaction 座標必須為 0–1 的有限數值`);
   });
-  for (const pos of ['n', 'v', 'adj']) if (!teachingPos.has(pos)) errors.push(`目標詞須包含 ${pos} 詞性`);
 
   const story = pkg.story;
   const foundTargets = new Set();

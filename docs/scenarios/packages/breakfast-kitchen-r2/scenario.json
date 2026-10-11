@@ -1,0 +1,1661 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "breakfast-kitchen",
+  "revision": 2,
+  "status": "draft",
+  "titleZh": "一起準備早餐",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 22,
+  "targets": [
+    {
+      "word": "kitchen",
+      "entryGuid": "3940129e-ff35-5de4-8f17-361c73dcdef4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "廚房",
+      "interaction": {
+        "object": {
+          "x": 0.655,
+          "y": 0.345
+        },
+        "label": {
+          "x": 0.63,
+          "y": 0.325
+        }
+      }
+    },
+    {
+      "word": "bread",
+      "entryGuid": "e19fc246-c8bc-549b-a9d9-8590d28d100a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "麵包",
+      "interaction": {
+        "object": {
+          "x": 0.483,
+          "y": 0.671
+        },
+        "label": {
+          "x": 0.465,
+          "y": 0.795
+        }
+      }
+    },
+    {
+      "word": "egg",
+      "entryGuid": "5e88aae4-fae4-5376-a0eb-808a62fcf6b4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "蛋",
+      "interaction": {
+        "object": {
+          "x": 0.11,
+          "y": 0.431
+        },
+        "label": {
+          "x": 0.1,
+          "y": 0.495
+        }
+      }
+    },
+    {
+      "word": "milk",
+      "entryGuid": "347f1643-7bf0-52ea-bfd7-be478631e73e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "牛奶",
+      "interaction": {
+        "object": {
+          "x": 0.728,
+          "y": 0.659
+        },
+        "label": {
+          "x": 0.735,
+          "y": 0.795
+        }
+      }
+    },
+    {
+      "word": "knife",
+      "entryGuid": "e9207cc0-3bb9-50c4-8fb1-c5932164c9e8",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "刀子",
+      "interaction": {
+        "object": {
+          "x": 0.44,
+          "y": 0.595
+        },
+        "label": {
+          "x": 0.46,
+          "y": 0.545
+        }
+      }
+    },
+    {
+      "word": "pan",
+      "entryGuid": "210af1b7-6654-54c6-a788-39073f589413",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "平底鍋",
+      "interaction": {
+        "object": {
+          "x": 0.104,
+          "y": 0.434
+        },
+        "label": {
+          "x": 0.16,
+          "y": 0.325
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "object": {
+          "x": 0.494,
+          "y": 0.871
+        },
+        "label": {
+          "x": 0.42,
+          "y": 0.935
+        }
+      }
+    },
+    {
+      "word": "butter",
+      "entryGuid": "ad6b4669-20c2-5283-9a23-4ba3712e6dbe",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "奶油",
+      "interaction": {
+        "object": {
+          "x": 0.527,
+          "y": 0.789
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.87
+        }
+      }
+    },
+    {
+      "word": "juice",
+      "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "果汁",
+      "interaction": {
+        "object": {
+          "x": 0.891,
+          "y": 0.712
+        },
+        "label": {
+          "x": 0.903,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "glass",
+      "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "玻璃杯",
+      "interaction": {
+        "object": {
+          "x": 0.808,
+          "y": 0.708
+        },
+        "label": {
+          "x": 0.81,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "orange",
+      "entryGuid": "cb2d65eb-4166-5fe2-a4ad-cb748fa516c4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "柳橙",
+      "interaction": {
+        "object": {
+          "x": 0.92,
+          "y": 0.834
+        },
+        "label": {
+          "x": 0.945,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "plate",
+      "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "盤子",
+      "interaction": {
+        "object": {
+          "x": 0.52,
+          "y": 0.817
+        },
+        "label": {
+          "x": 0.6,
+          "y": 0.81
+        }
+      }
+    },
+    {
+      "word": "bowl",
+      "entryGuid": "e35a0e95-016f-596e-bad6-e974c904f920",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "碗",
+      "interaction": {
+        "object": {
+          "x": 0.886,
+          "y": 0.132
+        },
+        "label": {
+          "x": 0.91,
+          "y": 0.06
+        }
+      }
+    },
+    {
+      "word": "stove",
+      "entryGuid": "ed5a9f83-a4f0-59d8-ab1a-61e1253ccf60",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "爐子",
+      "interaction": {
+        "object": {
+          "x": 0.099,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.195,
+          "y": 0.635
+        }
+      }
+    },
+    {
+      "word": "breakfast",
+      "entryGuid": "45bc28f5-0f68-5022-9964-19cad25570f4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "早餐",
+      "interaction": {
+        "object": {
+          "x": 0.685,
+          "y": 0.775
+        },
+        "label": {
+          "x": 0.695,
+          "y": 0.9
+        }
+      }
+    },
+    {
+      "word": "hot",
+      "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "熱的",
+      "interaction": {
+        "object": {
+          "x": 0.101,
+          "y": 0.411
+        },
+        "label": {
+          "x": 0.065,
+          "y": 0.31
+        }
+      }
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "裝滿的",
+      "interaction": {
+        "object": {
+          "x": 0.62,
+          "y": 0.691
+        },
+        "label": {
+          "x": 0.61,
+          "y": 0.735
+        }
+      }
+    },
+    {
+      "word": "fresh",
+      "entryGuid": "7bbaeb1f-2dfb-5097-b352-82aff054864c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "新鮮的",
+      "interaction": {
+        "object": {
+          "x": 0.927,
+          "y": 0.826
+        },
+        "label": {
+          "x": 0.94,
+          "y": 0.84
+        }
+      }
+    },
+    {
+      "word": "warm",
+      "entryGuid": "9394e846-b90b-5dfe-a6f0-ac9d91be428c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "溫暖的",
+      "interaction": {
+        "object": {
+          "x": 0.496,
+          "y": 0.665
+        },
+        "label": {
+          "x": 0.56,
+          "y": 0.73
+        }
+      }
+    },
+    {
+      "word": "hungry",
+      "entryGuid": "2d388700-5b9a-5927-b571-6efe0040ef63",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "飢餓的",
+      "interaction": {
+        "object": {
+          "x": 0.433,
+          "y": 0.418
+        },
+        "label": {
+          "x": 0.59,
+          "y": 0.465
+        }
+      }
+    },
+    {
+      "word": "cook",
+      "entryGuid": "d5c26cd5-c5e6-59c0-a96c-30ba555eb9f0",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "烹調",
+      "interaction": {
+        "object": {
+          "x": 0.183,
+          "y": 0.374
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.435
+        }
+      }
+    },
+    {
+      "word": "cut",
+      "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "切",
+      "interaction": {
+        "object": {
+          "x": 0.451,
+          "y": 0.621
+        },
+        "label": {
+          "x": 0.59,
+          "y": 0.63
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "I wake up hungry and find Father in the kitchen, where he is ready to cook breakfast. An egg is in the pan on the stove, and Father tells me to stay back because the pan is hot. At the table, I cut the warm bread with a knife while he watches my hands. Then I spread a little butter from the plate on a slice. A fresh orange waits beside the juice, and a full glass of milk is ready for me. I bring another glass to the table so Father can have juice with his food. He takes a bowl from the shelf and puts our fruit in it. When the egg is ready, we sit down together, and I drink my milk before it is time for school. Helping with a small job makes our morning meal feel special.",
+    "textZh": "我醒來時肚子餓了，走到廚房，發現爸爸正準備做早餐。爐子上的平底鍋裡有一顆蛋，爸爸提醒我退後，因為鍋子很燙。我在桌邊用刀子切溫熱的麵包，爸爸看著我的手。接著我從盤子裡取一點奶油，抹在一片麵包上。果汁旁放著一顆新鮮柳橙，一杯裝滿的牛奶也準備好給我喝。我再拿一個玻璃杯到桌上，讓爸爸用餐時可以喝果汁。他從架子上拿一個碗，把我們的水果放進去。蛋煎好後，我們一起坐下來；上學前，我把牛奶喝完。幫忙做一點小事，讓早上的這頓飯感覺很特別。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "I wake up hungry and find Father in the kitchen, where he is ready to cook breakfast.",
+        "zh": "我醒來時肚子餓了，走到廚房，發現爸爸正準備做早餐。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "wake",
+            "word": "wake",
+            "entryGuid": "c5c976c0-3300-5410-81fc-7303a978c6ce",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "hungry",
+            "word": "hungry",
+            "entryGuid": "2d388700-5b9a-5927-b571-6efe0040ef63",
+            "isTarget": true,
+            "start": 10,
+            "end": 16
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "find",
+            "word": "find",
+            "entryGuid": "c2e379f6-5361-5af7-9538-bb3754c11c0c",
+            "isTarget": false,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "surface": "Father",
+            "word": "father",
+            "entryGuid": "d518fb9d-1d71-5e2a-924d-fe03216188a8",
+            "isTarget": false,
+            "start": 26,
+            "end": 32
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "kitchen",
+            "word": "kitchen",
+            "entryGuid": "3940129e-ff35-5de4-8f17-361c73dcdef4",
+            "isTarget": true,
+            "start": 40,
+            "end": 47
+          },
+          {
+            "surface": "where",
+            "word": "where",
+            "entryGuid": "4b8a80ba-4973-5f81-815d-16131c80089c",
+            "isTarget": false,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "he",
+            "word": "he",
+            "entryGuid": "bf4cb952-a8cf-5a38-a45c-cf50ec7135aa",
+            "isTarget": false,
+            "start": 55,
+            "end": 57
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 58,
+            "end": 60
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 61,
+            "end": 66
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 67,
+            "end": 69
+          },
+          {
+            "surface": "cook",
+            "word": "cook",
+            "entryGuid": "d5c26cd5-c5e6-59c0-a96c-30ba555eb9f0",
+            "isTarget": true,
+            "start": 70,
+            "end": 74
+          },
+          {
+            "surface": "breakfast",
+            "word": "breakfast",
+            "entryGuid": "45bc28f5-0f68-5022-9964-19cad25570f4",
+            "isTarget": true,
+            "start": 75,
+            "end": 84
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "An egg is in the pan on the stove, and Father tells me to stay back because the pan is hot.",
+        "zh": "爐子上的平底鍋裡有一顆蛋，爸爸提醒我退後，因為鍋子很燙。",
+        "wordLinks": [
+          {
+            "surface": "An",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "egg",
+            "word": "egg",
+            "entryGuid": "5e88aae4-fae4-5376-a0eb-808a62fcf6b4",
+            "isTarget": true,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "pan",
+            "word": "pan",
+            "entryGuid": "210af1b7-6654-54c6-a788-39073f589413",
+            "isTarget": true,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "stove",
+            "word": "stove",
+            "entryGuid": "ed5a9f83-a4f0-59d8-ab1a-61e1253ccf60",
+            "isTarget": true,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "Father",
+            "word": "father",
+            "entryGuid": "d518fb9d-1d71-5e2a-924d-fe03216188a8",
+            "isTarget": false,
+            "start": 39,
+            "end": 45
+          },
+          {
+            "surface": "tells",
+            "word": "tell",
+            "entryGuid": "950c89ca-5d11-5366-9780-786c9ff70af7",
+            "isTarget": false,
+            "start": 46,
+            "end": 51
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 52,
+            "end": 54
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 55,
+            "end": 57
+          },
+          {
+            "surface": "stay",
+            "word": "stay",
+            "entryGuid": "988d1227-e4a1-5628-ae1a-6d11c8d8a932",
+            "isTarget": false,
+            "start": 58,
+            "end": 62
+          },
+          {
+            "surface": "back",
+            "word": "back",
+            "entryGuid": "79052125-6cc1-55c6-80e6-91ca929b5ccd",
+            "isTarget": false,
+            "start": 63,
+            "end": 67
+          },
+          {
+            "surface": "because",
+            "word": "because",
+            "entryGuid": "7d75f3b6-5dbb-5de6-95c3-2a7b405cdb4b",
+            "isTarget": false,
+            "start": 68,
+            "end": 75
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 76,
+            "end": 79
+          },
+          {
+            "surface": "pan",
+            "word": "pan",
+            "entryGuid": "210af1b7-6654-54c6-a788-39073f589413",
+            "isTarget": true,
+            "start": 80,
+            "end": 83
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 84,
+            "end": 86
+          },
+          {
+            "surface": "hot",
+            "word": "hot",
+            "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+            "isTarget": true,
+            "start": 87,
+            "end": 90
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "At the table, I cut the warm bread with a knife while he watches my hands.",
+        "zh": "我在桌邊用刀子切溫熱的麵包，爸爸看著我的手。",
+        "wordLinks": [
+          {
+            "surface": "At",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 14,
+            "end": 15
+          },
+          {
+            "surface": "cut",
+            "word": "cut",
+            "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+            "isTarget": true,
+            "start": 16,
+            "end": 19
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "surface": "warm",
+            "word": "warm",
+            "entryGuid": "9394e846-b90b-5dfe-a6f0-ac9d91be428c",
+            "isTarget": true,
+            "start": 24,
+            "end": 28
+          },
+          {
+            "surface": "bread",
+            "word": "bread",
+            "entryGuid": "e19fc246-c8bc-549b-a9d9-8590d28d100a",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 40,
+            "end": 41
+          },
+          {
+            "surface": "knife",
+            "word": "knife",
+            "entryGuid": "e9207cc0-3bb9-50c4-8fb1-c5932164c9e8",
+            "isTarget": true,
+            "start": 42,
+            "end": 47
+          },
+          {
+            "surface": "while",
+            "word": "while",
+            "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+            "isTarget": false,
+            "start": 48,
+            "end": 53
+          },
+          {
+            "surface": "he",
+            "word": "he",
+            "entryGuid": "bf4cb952-a8cf-5a38-a45c-cf50ec7135aa",
+            "isTarget": false,
+            "start": 54,
+            "end": 56
+          },
+          {
+            "surface": "watches",
+            "word": "watch",
+            "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+            "isTarget": false,
+            "start": 57,
+            "end": 64
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 65,
+            "end": 67
+          },
+          {
+            "surface": "hands",
+            "word": "hand",
+            "entryGuid": "9c789a02-da62-59ae-b3ff-fc5f2bd655d2",
+            "isTarget": false,
+            "start": 68,
+            "end": 73
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "Then I spread a little butter from the plate on a slice.",
+        "zh": "接著我從盤子裡取一點奶油，抹在一片麵包上。",
+        "wordLinks": [
+          {
+            "surface": "Then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "surface": "spread",
+            "word": "spread",
+            "entryGuid": "56d4234e-7c37-50c5-92a9-b9717df17146",
+            "isTarget": false,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 14,
+            "end": 15
+          },
+          {
+            "surface": "little",
+            "word": "little",
+            "entryGuid": "58f73838-9a29-5a84-94c0-54188c22658f",
+            "isTarget": false,
+            "start": 16,
+            "end": 22
+          },
+          {
+            "surface": "butter",
+            "word": "butter",
+            "entryGuid": "ad6b4669-20c2-5283-9a23-4ba3712e6dbe",
+            "isTarget": true,
+            "start": 23,
+            "end": 29
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "plate",
+            "word": "plate",
+            "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+            "isTarget": true,
+            "start": 39,
+            "end": 44
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 45,
+            "end": 47
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 48,
+            "end": 49
+          },
+          {
+            "surface": "slice",
+            "word": "slice",
+            "entryGuid": "700c1818-ffb5-5297-9ac1-ca1bdd212faa",
+            "isTarget": false,
+            "start": 50,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "A fresh orange waits beside the juice, and a full glass of milk is ready for me.",
+        "zh": "果汁旁放著一顆新鮮柳橙，一杯裝滿的牛奶也準備好給我喝。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "fresh",
+            "word": "fresh",
+            "entryGuid": "7bbaeb1f-2dfb-5097-b352-82aff054864c",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "orange",
+            "word": "orange",
+            "entryGuid": "cb2d65eb-4166-5fe2-a4ad-cb748fa516c4",
+            "isTarget": true,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "waits",
+            "word": "wait",
+            "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+            "isTarget": false,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "juice",
+            "word": "juice",
+            "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+            "isTarget": true,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 39,
+            "end": 42
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 43,
+            "end": 44
+          },
+          {
+            "surface": "full",
+            "word": "full",
+            "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+            "isTarget": true,
+            "start": 45,
+            "end": 49
+          },
+          {
+            "surface": "glass",
+            "word": "glass",
+            "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+            "isTarget": true,
+            "start": 50,
+            "end": 55
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 56,
+            "end": 58
+          },
+          {
+            "surface": "milk",
+            "word": "milk",
+            "entryGuid": "347f1643-7bf0-52ea-bfd7-be478631e73e",
+            "isTarget": true,
+            "start": 59,
+            "end": 63
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 64,
+            "end": 66
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 67,
+            "end": 72
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 73,
+            "end": 76
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 77,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "I bring another glass to the table so Father can have juice with his food.",
+        "zh": "我再拿一個玻璃杯到桌上，讓爸爸用餐時可以喝果汁。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "bring",
+            "word": "bring",
+            "entryGuid": "aced9d5e-ff5c-558f-b154-1bfb5752bb52",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "surface": "glass",
+            "word": "glass",
+            "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+            "isTarget": true,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 22,
+            "end": 24
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "Father",
+            "word": "father",
+            "entryGuid": "d518fb9d-1d71-5e2a-924d-fe03216188a8",
+            "isTarget": false,
+            "start": 38,
+            "end": 44
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          },
+          {
+            "surface": "have",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 49,
+            "end": 53
+          },
+          {
+            "surface": "juice",
+            "word": "juice",
+            "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+            "isTarget": true,
+            "start": 54,
+            "end": 59
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 60,
+            "end": 64
+          },
+          {
+            "surface": "his",
+            "word": "his",
+            "entryGuid": "368023a6-163e-50c0-ac53-3e23d791db26",
+            "isTarget": false,
+            "start": 65,
+            "end": 68
+          },
+          {
+            "surface": "food",
+            "word": "food",
+            "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+            "isTarget": false,
+            "start": 69,
+            "end": 73
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "He takes a bowl from the shelf and puts our fruit in it.",
+        "zh": "他從架子上拿一個碗，把我們的水果放進去。",
+        "wordLinks": [
+          {
+            "surface": "He",
+            "word": "he",
+            "entryGuid": "bf4cb952-a8cf-5a38-a45c-cf50ec7135aa",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "takes",
+            "word": "take",
+            "entryGuid": "eb536808-149b-524f-93ad-87bd2527d5da",
+            "isTarget": false,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 9,
+            "end": 10
+          },
+          {
+            "surface": "bowl",
+            "word": "bowl",
+            "entryGuid": "e35a0e95-016f-596e-bad6-e974c904f920",
+            "isTarget": true,
+            "start": 11,
+            "end": 15
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "shelf",
+            "word": "shelf",
+            "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+            "isTarget": false,
+            "start": 25,
+            "end": 30
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "puts",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "fruit",
+            "word": "fruit",
+            "entryGuid": "65db3e8f-eab4-52b8-95a5-1820458dd59b",
+            "isTarget": false,
+            "start": 44,
+            "end": 49
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 50,
+            "end": 52
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 53,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "When the egg is ready, we sit down together, and I drink my milk before it is time for school.",
+        "zh": "蛋煎好後，我們一起坐下來；上學前，我把牛奶喝完。",
+        "wordLinks": [
+          {
+            "surface": "When",
+            "word": "when",
+            "entryGuid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 5,
+            "end": 8
+          },
+          {
+            "surface": "egg",
+            "word": "egg",
+            "entryGuid": "5e88aae4-fae4-5376-a0eb-808a62fcf6b4",
+            "isTarget": true,
+            "start": 9,
+            "end": 12
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 23,
+            "end": 25
+          },
+          {
+            "surface": "sit",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "down",
+            "word": "down",
+            "entryGuid": "451dcd82-9969-5473-b509-7f48b55049f6",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "together",
+            "word": "together",
+            "entryGuid": "f13deb35-bc66-5e52-b29d-94bb8eb4b8b3",
+            "isTarget": false,
+            "start": 35,
+            "end": 43
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 49,
+            "end": 50
+          },
+          {
+            "surface": "drink",
+            "word": "drink",
+            "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+            "isTarget": false,
+            "start": 51,
+            "end": 56
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 57,
+            "end": 59
+          },
+          {
+            "surface": "milk",
+            "word": "milk",
+            "entryGuid": "347f1643-7bf0-52ea-bfd7-be478631e73e",
+            "isTarget": true,
+            "start": 60,
+            "end": 64
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 65,
+            "end": 71
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 72,
+            "end": 74
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 75,
+            "end": 77
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 78,
+            "end": 82
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 83,
+            "end": 86
+          },
+          {
+            "surface": "school",
+            "word": "school",
+            "entryGuid": "af70f279-c3ca-5288-b3e7-be0694b46cd4",
+            "isTarget": false,
+            "start": 87,
+            "end": 93
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "Helping with a small job makes our morning meal feel special.",
+        "zh": "幫忙做一點小事，讓早上的這頓飯感覺很特別。",
+        "wordLinks": [
+          {
+            "surface": "Helping",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 13,
+            "end": 14
+          },
+          {
+            "surface": "small",
+            "word": "small",
+            "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+            "isTarget": false,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "job",
+            "word": "job",
+            "entryGuid": "f5f0f434-c9c8-5e5e-9d59-20d3f09a7e43",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "makes",
+            "word": "make",
+            "entryGuid": "a780251a-295b-5786-867c-9f8ac8d23036",
+            "isTarget": false,
+            "start": 25,
+            "end": 30
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 35,
+            "end": 42
+          },
+          {
+            "surface": "meal",
+            "word": "meal",
+            "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+            "isTarget": false,
+            "start": 43,
+            "end": 47
+          },
+          {
+            "surface": "feel",
+            "word": "feel",
+            "entryGuid": "1ea0f856-55af-57f7-9676-fc91c7f74ba5",
+            "isTarget": false,
+            "start": 48,
+            "end": 52
+          },
+          {
+            "surface": "special",
+            "word": "special",
+            "entryGuid": "93014870-d186-5f97-85f4-93489de3a10e",
+            "isTarget": false,
+            "start": 53,
+            "end": 60
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s4"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/basic-advance-01/02-breakfast-kitchen-v1/base.png",
+      "sha256": "0f31ffa098a12ba8f5c9b9b0315c150c08477716f13dbb500da0cb5f30c16120"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/02-breakfast-kitchen-v1/base-refined.png",
+      "sha256": "72c1f12c9425e8cb2be4138c52f19e197b4273f20bdf1024fa58e83abd7972f0",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/breakfast-kitchen/r2/09eeb3d17582e855/story-e8194fed147c73b3.mp3",
+      "sha256": "8c84545a52d39089c296477098fb3ffdd1d82eef3f232d31e43bbe5b71f231d4",
+      "language": "en",
+      "textSha256": "e8194fed147c73b3d03f86470b764687f0eb181eed54fbc2dae7bd367abd8f05",
+      "durationSeconds": 47.568,
+      "bytes": 761132,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reused-visually-reviewed-for-new-targets",
+      "method": "reuse-existing-base-image",
+      "reuseCandidate": {
+        "path": "output/imagegen/basic-advance-01/02-breakfast-kitchen-v1/base-refined.png",
+        "sha256": "72c1f12c9425e8cb2be4138c52f19e197b4273f20bdf1024fa58e83abd7972f0",
+        "reviewed": true,
+        "containsVocabularyText": false
+      },
+      "sceneDescriptionZh": "爸爸煎蛋，孩子切麵包，桌上準備牛奶、果汁與奶油；接著一家人用餐。"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "current-targets-only"
+    }
+  },
+  "contentReview": {
+    "status": "image-text-reviewed-awaiting-ui",
+    "notes": [
+      "本檔是 revision 2 離線文字候選，舊 revision 1／published 客廳未變動。",
+      "已逐張查看現有底圖，object 是圖面錨點；story／image-and-story 明示時間先後或敘事線索，不宣稱單張圖可直接證明。",
+      "label 是候選比例位置，尚須正式套件 UI 檢查遮擋、手機排版與點擊；本檔不代表圖片／媒體或發布審核完成。",
+      "warm 是麵包溫度的故事線索；hot 另對應有蒸氣的鍋。",
+      "逐張查看現有底圖並依物件分區重排標籤，整場概念以背景／結構為錨點；桌機與手機實際UI尚待驗收。"
+    ]
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "checkedAt": "2026-10-11T01:33:56.443Z",
+  "surface": "local-vite-5174-with-formal-draft-api",
+  "proofs": [
+    {
+      "key": "tidy-bedroom",
+      "revision": 2,
+      "desktopCards": 23,
+      "mobileCards": [
+        "bed",
+        "tidy",
+        "put"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 3
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false
+    },
+    {
+      "key": "living-room",
+      "revision": 2,
+      "desktopCards": 24,
+      "mobileCards": [
+        "sofa",
+        "comfortable",
+        "read"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 4
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false
+    },
+    {
+      "key": "breakfast-kitchen",
+      "revision": 2,
+      "desktopCards": 22,
+      "mobileCards": [
+        "kitchen",
+        "hot",
+        "cook"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 2
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false
+    },
+    {
+      "key": "family-dinner",
+      "revision": 2,
+      "desktopCards": 24,
+      "mobileCards": [
+        "plate",
+        "hungry",
+        "eat"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 4
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false
+    },
+    {
+      "key": "laundry-day",
+      "revision": 2,
+      "desktopCards": 24,
+      "mobileCards": [
+        "shirt",
+        "wet",
+        "wash"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 4
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false
+    },
+    {
+      "key": "classroom-group-work",
+      "revision": 2,
+      "desktopCards": 24,
+      "mobileCards": [
+        "desk",
+        "quiet",
+        "write"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 4
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false
+    },
+    {
+      "key": "library-visit",
+      "revision": 3,
+      "desktopCards": 25,
+      "mobileCards": [
+        "library",
+        "tall",
+        "borrow"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 5
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false,
+      "fullCardsVerifiedAtRevision": 2,
+      "correctiveRevisionVerified": {
+        "revision": 3,
+        "visibleCards": 25,
+        "tallCard": true,
+        "categoryReveal": true,
+        "changed": "tall arrow to shelf",
+        "imageAndAudioReused": true
+      }
+    },
+    {
+      "key": "art-class",
+      "revision": 2,
+      "desktopCards": 24,
+      "mobileCards": [
+        "paint",
+        "colorful",
+        "draw"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 4
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false
+    },
+    {
+      "key": "water-science",
+      "revision": 3,
+      "desktopCards": 23,
+      "mobileCards": [
+        "bottle",
+        "empty",
+        "measure"
+      ],
+      "groupCounts": {
+        "n": 15,
+        "adj": 5,
+        "v": 3
+      },
+      "independentRevealAndHide": true,
+      "storyHiddenUntilAll": true,
+      "storyParagraphs": 2,
+      "translation": true,
+      "humanFullListening": false,
+      "fullCardsVerifiedAtRevision": 2,
+      "correctiveRevisionVerified": {
+        "revision": 3,
+        "visibleCards": 23,
+        "heightAndEmptyCards": true,
+        "categoryReveal": true,
+        "changed": "height/empty label positions",
+        "imageAndAudioReused": true,
+        "desktopTextCollisions": 0,
+        "backgroundEdgeTouch": [
+          "empty/careful"
+        ]
+      },
+      "narrationStartPauseChecked": true
+    }
+  ],
+  "desktopLayout": [
+    {
+      "key": "living-room",
+      "revision": 2,
+      "collisions": [
+        {
+          "words": [
+            "plant",
+            "comfortable"
+          ],
+          "x": 10.9921875,
+          "y": 1.625
+        }
+      ],
+      "labels": 24
+    },
+    {
+      "key": "breakfast-kitchen",
+      "revision": 2,
+      "collisions": [],
+      "labels": 22
+    },
+    {
+      "key": "family-dinner",
+      "revision": 2,
+      "collisions": [
+        {
+          "words": [
+            "dinner",
+            "delicious"
+          ],
+          "x": 21.15234375,
+          "y": 1.6328125
+        },
+        {
+          "words": [
+            "mother",
+            "serve"
+          ],
+          "x": 31.51953125,
+          "y": 4.921875
+        }
+      ],
+      "labels": 24
+    },
+    {
+      "key": "tidy-bedroom",
+      "revision": 2,
+      "collisions": [],
+      "labels": 23
+    },
+    {
+      "key": "laundry-day",
+      "revision": 2,
+      "collisions": [],
+      "labels": 24
+    },
+    {
+      "key": "classroom-group-work",
+      "revision": 2,
+      "collisions": [],
+      "labels": 24
+    },
+    {
+      "key": "library-visit",
+      "revision": 3,
+      "collisions": [],
+      "labels": 25
+    },
+    {
+      "key": "art-class",
+      "revision": 2,
+      "collisions": [
+        {
+          "words": [
+            "pencil",
+            "colorful"
+          ],
+          "x": 25.20703125,
+          "y": 1.625
+        },
+        {
+          "words": [
+            "bottle",
+            "cut"
+          ],
+          "x": 3.9921875,
+          "y": 4.921875
+        }
+      ],
+      "labels": 24
+    },
+    {
+      "key": "water-science",
+      "revision": 2,
+      "collisions": [
+        {
+          "words": [
+            "teacher",
+            "empty"
+          ],
+          "x": 42.18359375,
+          "y": 14.796875
+        },
+        {
+          "words": [
+            "height",
+            "blue"
+          ],
+          "x": 34.9140625,
+          "y": 21.3828125
+        }
+      ],
+      "labels": 23
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "id": "11",
+  "scenarioKey": "fruit-shopping",
+  "titleZh": "超市挑選水果",
+  "descriptionZh": "超市水果區分別放紅蘋果與綠蘋果，香蕉擺在另一個展示籃。一人從兩種水果中挑選，另一人推購物車；前景獨立放購物袋與籃子。加入柳橙、結帳交接和大小購物袋；甜味保留為故事輔助詞。",
+  "targets": [
+    {
+      "word": "basket",
+      "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "籃子",
+      "visualCueZh": "前景放有提把的購物籃，提把與籃底清楚可見。"
+    },
+    {
+      "word": "apple",
+      "entryGuid": "b0939e2e-601e-5436-9837-712fa13ce70b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "蘋果",
+      "visualCueZh": "中央放一顆放大的蘋果，果柄與外形完整。"
+    },
+    {
+      "word": "banana",
+      "entryGuid": "bca46f60-3baa-58fe-90f6-561ea2a7ae17",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "香蕉",
+      "visualCueZh": "右側水果架放一串彎曲香蕉。"
+    },
+    {
+      "word": "bag",
+      "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "袋子",
+      "visualCueZh": "前景購物籃旁放有提把的購物袋。"
+    },
+    {
+      "word": "choose",
+      "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "挑選",
+      "visualCueZh": "孩子在紅蘋果與香蕉之間伸手選向蘋果，旁邊大人等候。"
+    },
+    {
+      "word": "push",
+      "entryGuid": "7af4f04e-cad5-55f0-8067-7177a2fd87e5",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "推",
+      "visualCueZh": "另一人雙手握購物車把手，身體向前推動。"
+    },
+    {
+      "word": "green",
+      "entryGuid": "4d557825-5f21-55de-bb31-7afa183d1bfb",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "綠色的",
+      "visualCueZh": "左側展示籃有綠蘋果，與右側紅蘋果對比。"
+    },
+    {
+      "word": "red",
+      "entryGuid": "6182bfb3-1423-5b4c-bf17-3f159de06e04",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "紅色的",
+      "visualCueZh": "右側展示籃有紅蘋果，保持與綠蘋果相似大小。"
+    },
+    {
+      "word": "orange",
+      "entryGuid": "cb2d65eb-4166-5fe2-a4ad-cb748fa516c4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "柳橙",
+      "visualCueZh": "水果區另放有葉子的柳橙，與蘋果香蕉分區。"
+    },
+    {
+      "word": "fruit",
+      "entryGuid": "65db3e8f-eab4-52b8-95a5-1820458dd59b",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水果",
+      "visualCueZh": "同一區有多種完整水果，共同作水果區標記。"
+    },
+    {
+      "word": "shop",
+      "entryGuid": "59058303-0b58-5f0d-84ad-a197b8e1ad4a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "商店",
+      "visualCueZh": "保留貨架、結帳櫃檯與出入口，呈現超市商店環境。"
+    },
+    {
+      "word": "money",
+      "entryGuid": "c3813e2a-65b8-586b-8512-16615cad3597",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "錢",
+      "visualCueZh": "櫃檯前顧客手上拿無文字鈔票和硬幣。"
+    },
+    {
+      "word": "buy",
+      "entryGuid": "c105053e-f1d7-5fa2-935c-7c05b26ba309",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "購買",
+      "visualCueZh": "顧客把錢交向店員，另一手接袋裝水果。"
+    },
+    {
+      "word": "sweet",
+      "entryGuid": "1c29a1ce-c008-54ab-8ca8-6c9dbda6d953",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "甜的",
+      "visualCueZh": "孩子品嚐水果後微笑，甜味需故事輔助不能靠圖直接判定。"
+    },
+    {
+      "word": "big",
+      "entryGuid": "835376ac-bc57-5996-beba-2b63de212c86",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "大的",
+      "visualCueZh": "同款購物袋一大一小並排，大袋裝水果。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "My mother and I go to the shop for fruit.",
+      "zh": "媽媽和我去商店買水果。"
+    },
+    {
+      "en": "We push a large basket on wheels through the shop.",
+      "zh": "我們推著裝有輪子的大購物籃穿過商店。"
+    },
+    {
+      "en": "I choose a red apple and look at a green apple.",
+      "zh": "我挑一顆紅蘋果，也看看一顆綠蘋果。"
+    },
+    {
+      "en": "We also need a banana for my little brother.",
+      "zh": "我們還需要一根香蕉給弟弟。"
+    },
+    {
+      "en": "An orange looks good, so we take it too.",
+      "zh": "一顆柳橙看起來很好，所以我們也拿了它。"
+    },
+    {
+      "en": "My mother says the fruit will be sweet today.",
+      "zh": "媽媽說今天的水果會很甜。"
+    },
+    {
+      "en": "At the front, she uses money to buy our food.",
+      "zh": "在前面的櫃檯，她用錢買下我們的食物。"
+    },
+    {
+      "en": "I put the fruit in a big bag and carry it.",
+      "zh": "我把水果放進大袋子裡，提著它。"
+    },
+    {
+      "en": "We walk home and share a small snack together.",
+      "zh": "我們走回家，一起分享一份小點心。"
+    }
+  ],
+  "aliases": {
+    "wheels": "wheel",
+    "looks": "look",
+    "says": "say",
+    "uses": "use"
+  },
+  "reviewNotes": [
+    "green 本次是顏色，排除環保與來源混入的電力契約詞義。",
+    "購物車僅為 push 道具；cart、ripe 屬 expert，未列目標。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

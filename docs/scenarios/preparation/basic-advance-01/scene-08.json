@@ -1,0 +1,176 @@
+{
+  "id": "08",
+  "scenarioKey": "art-class",
+  "titleZh": "美術課畫畫與剪貼",
+  "descriptionZh": "美術教室桌上分區擺放顏料、筆刷、蠟筆和紙。一位孩子畫圖，另一位剪出圓形紙片；牆上彩色作品與單色作品並排。增加膠水瓶、方形紙片與黄色花朵，剪刀只保留輔助道具不列目標。",
+  "targets": [
+    {
+      "word": "paint",
+      "entryGuid": "548b80a3-443a-54d4-9e37-e9e2a87bffea",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "顏料",
+      "visualCueZh": "左側桌面放打開的顏料罐，罐中彩色顏料清楚可見。"
+    },
+    {
+      "word": "brush",
+      "entryGuid": "8204f9f0-cecc-5bc8-89ba-42a5d4fd1173",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "筆刷",
+      "visualCueZh": "前景放有細握柄與柔毛筆頭的繪畫筆刷。"
+    },
+    {
+      "word": "paper",
+      "entryGuid": "7fcb715b-aa3e-5d05-98ce-96e637396a55",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "紙張",
+      "visualCueZh": "右側放一疊平整白紙，邊緣可見。"
+    },
+    {
+      "word": "crayon",
+      "entryGuid": "72dd4341-6b20-59cf-8118-3a57f36fca94",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "蠟筆",
+      "visualCueZh": "前景排列幾支粗短彩色蠟筆，與長筆刷區分。"
+    },
+    {
+      "word": "draw",
+      "entryGuid": "693452b4-b9a0-5ba8-be02-9ab35a5cb507",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "畫畫",
+      "visualCueZh": "孩子握蠟筆在紙上畫出尚未完成的房子。"
+    },
+    {
+      "word": "cut",
+      "entryGuid": "e7b6d02e-3148-5268-9e6b-42c5ee6317fe",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "剪",
+      "visualCueZh": "另一孩子以剪刀沿紙上圓形外緣剪，刀口與紙相接。"
+    },
+    {
+      "word": "colorful",
+      "entryGuid": "26bd6701-0e1d-50c0-b7bf-96397c0cc230",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "色彩繽紛的",
+      "visualCueZh": "牆上作品使用多種明顯不同顏色，旁邊單色作品作對比。"
+    },
+    {
+      "word": "round",
+      "entryGuid": "4e6811ab-7904-57dd-b6e7-405a1d38979f",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "圓形的",
+      "visualCueZh": "右側桌上放剪好的完整圓形紙片，與方形紙分開。"
+    },
+    {
+      "word": "art",
+      "entryGuid": "039b8931-2f84-5f42-9741-c4c132213c2f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "美術",
+      "visualCueZh": "背景展示兒童畫與紙作品，教室有美術工作桌。"
+    },
+    {
+      "word": "glue",
+      "entryGuid": "1163f3bc-1084-51e0-9763-76068bec6149",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "膠水",
+      "visualCueZh": "前景放無字小膠水瓶，旁邊有少量黏貼痕跡。"
+    },
+    {
+      "word": "shape",
+      "entryGuid": "50d6285e-1e17-578e-8055-ec4d9e7d2af2",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "形狀",
+      "visualCueZh": "桌面分區放圓形與正方形紙片。"
+    },
+    {
+      "word": "flower",
+      "entryGuid": "e7cb3cf2-1cbd-59bc-9c97-9052317a866c",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "花朵",
+      "visualCueZh": "桌邊花瓶有大花朵供孩子參考畫畫。"
+    },
+    {
+      "word": "yellow",
+      "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "黃色的",
+      "visualCueZh": "其中一朵花與對應畫作使用明確黃色。"
+    },
+    {
+      "word": "square",
+      "entryGuid": "ddc4a248-569d-5fd4-ac61-864baf4a6d12",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "正方形的",
+      "visualCueZh": "桌上紙片有四條等長邊，與圓紙片分開。"
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "visualCueZh": "中央工作桌的桌面與桌腳完整可辨。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "In art class, we sit around a large table.",
+      "zh": "美術課上，我們圍著一張大桌子坐。"
+    },
+    {
+      "en": "There is paint, a brush, and paper in front of me.",
+      "zh": "我面前有顏料、筆刷和紙。"
+    },
+    {
+      "en": "I use a crayon to draw a yellow flower.",
+      "zh": "我用蠟筆畫一朵黃色的花。"
+    },
+    {
+      "en": "My friend draws a colorful garden beside my picture.",
+      "zh": "朋友在我的圖旁畫了一個色彩繽紛的花園。"
+    },
+    {
+      "en": "Then I cut a round shape out of paper.",
+      "zh": "接著我從紙上剪出一個圓形。"
+    },
+    {
+      "en": "I also make a square piece for a little house.",
+      "zh": "我也做一片正方形紙，拿來做小房子。"
+    },
+    {
+      "en": "We use glue to put our work on a big sheet.",
+      "zh": "我們用膠水把作品貼在一大張紙上。"
+    },
+    {
+      "en": "Our teacher helps us find a place on the wall.",
+      "zh": "老師幫我們在牆上找個位置。"
+    },
+    {
+      "en": "We stand back and smile at our work together.",
+      "zh": "我們一起退後站著，對自己的作品微笑。"
+    }
+  ],
+  "aliases": {
+    "is": "be",
+    "draws": "draw",
+    "helps": "help"
+  },
+  "reviewNotes": [
+    "paint 本次取顏料名詞，brush 取繪畫筆刷。",
+    "剪刀是 cut 的輔助道具；scissors 屬 expert，不列為目標標籤。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

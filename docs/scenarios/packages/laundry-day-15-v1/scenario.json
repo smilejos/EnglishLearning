@@ -1,0 +1,1100 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "laundry-day",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "洗衣與曬衣",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 15,
+  "targets": [
+    {
+      "word": "shirt",
+      "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "襯衫",
+      "interaction": {
+        "label": {
+          "x": 0.492,
+          "y": 0.097
+        },
+        "object": {
+          "x": 0.505,
+          "y": 0.355
+        }
+      }
+    },
+    {
+      "word": "sock",
+      "entryGuid": "449d095e-3408-5ae1-93d2-1976cd804511",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "襪子",
+      "interaction": {
+        "label": {
+          "x": 0.224,
+          "y": 0.327
+        },
+        "object": {
+          "x": 0.25,
+          "y": 0.206
+        }
+      }
+    },
+    {
+      "word": "basket",
+      "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "籃子",
+      "interaction": {
+        "label": {
+          "x": 0.104,
+          "y": 0.65
+        },
+        "object": {
+          "x": 0.15,
+          "y": 0.85
+        }
+      }
+    },
+    {
+      "word": "soap",
+      "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "肥皂",
+      "interaction": {
+        "label": {
+          "x": 0.514,
+          "y": 0.952
+        },
+        "object": {
+          "x": 0.5,
+          "y": 0.893
+        }
+      }
+    },
+    {
+      "word": "wash",
+      "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "清洗",
+      "interaction": {
+        "label": {
+          "x": 0.336,
+          "y": 0.821
+        },
+        "object": {
+          "x": 0.326,
+          "y": 0.715
+        }
+      }
+    },
+    {
+      "word": "hang",
+      "entryGuid": "2d5ee780-ce6e-5afe-ad6c-3ece2de62d14",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "懸掛",
+      "interaction": {
+        "label": {
+          "x": 0.59,
+          "y": 0.135
+        },
+        "object": {
+          "x": 0.534,
+          "y": 0.208
+        }
+      }
+    },
+    {
+      "word": "wet",
+      "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "濕的",
+      "interaction": {
+        "label": {
+          "x": 0.416,
+          "y": 0.585
+        },
+        "object": {
+          "x": 0.508,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "word": "dry",
+      "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "乾的",
+      "interaction": {
+        "label": {
+          "x": 0.886,
+          "y": 0.481
+        },
+        "object": {
+          "x": 0.787,
+          "y": 0.323
+        }
+      }
+    },
+    {
+      "word": "machine",
+      "entryGuid": "3acc68b5-4531-540d-8cf7-1d8252782dbb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "機器",
+      "interaction": {
+        "label": {
+          "x": 0.066,
+          "y": 0.273
+        },
+        "object": {
+          "x": 0.133,
+          "y": 0.478
+        }
+      }
+    },
+    {
+      "word": "towel",
+      "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "毛巾",
+      "interaction": {
+        "label": {
+          "x": 0.801,
+          "y": 0.564
+        },
+        "object": {
+          "x": 0.784,
+          "y": 0.353
+        }
+      }
+    },
+    {
+      "word": "clothes",
+      "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "衣服",
+      "interaction": {
+        "label": {
+          "x": 0.284,
+          "y": 0.961
+        },
+        "object": {
+          "x": 0.132,
+          "y": 0.768
+        }
+      }
+    },
+    {
+      "word": "line",
+      "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "繩子",
+      "interaction": {
+        "label": {
+          "x": 0.692,
+          "y": 0.126
+        },
+        "object": {
+          "x": 0.665,
+          "y": 0.195
+        }
+      }
+    },
+    {
+      "word": "sun",
+      "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "太陽",
+      "interaction": {
+        "label": {
+          "x": 0.85,
+          "y": 0.06
+        },
+        "object": {
+          "x": 0.734,
+          "y": 0.061
+        }
+      }
+    },
+    {
+      "word": "bright",
+      "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "明亮的",
+      "interaction": {
+        "label": {
+          "x": 0.852,
+          "y": 0.804
+        },
+        "object": {
+          "x": 0.808,
+          "y": 0.8
+        }
+      }
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "interaction": {
+        "label": {
+          "x": 0.605,
+          "y": 0.906
+        },
+        "object": {
+          "x": 0.448,
+          "y": 0.73
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "It is a bright morning, and the sun is high. We take our dirty clothes to the washing machine. I find a sock at the bottom of the basket. My mother helps me wash it with soap and water. Then we hang a shirt on the line outside. The shirt is still wet, and water falls to the ground. A dry towel is ready on the other side. I take it down and carry it into the house. We finish our work before it is time for lunch.",
+    "textZh": "這是個明亮的早晨，太陽高掛。我們把髒衣服拿到洗衣機旁。我在籃子底找到一隻襪子。媽媽幫我用肥皂和水洗它。接著我們把襯衫掛在外面的曬衣繩上。襯衫還是濕的，水滴落到地上。另一邊有一條已經乾的毛巾。我把它取下，拿進屋裡。午餐時間前，我們完成了工作。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "It is a bright morning, and the sun is high.",
+        "zh": "這是個明亮的早晨，太陽高掛。",
+        "wordLinks": [
+          {
+            "surface": "It",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "surface": "bright",
+            "word": "bright",
+            "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+            "isTarget": true,
+            "start": 8,
+            "end": 14
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 15,
+            "end": 22
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "sun",
+            "word": "sun",
+            "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+            "isTarget": true,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 36,
+            "end": 38
+          },
+          {
+            "surface": "high",
+            "word": "high",
+            "entryGuid": "eb5522d7-40c2-5d93-af1a-15c8edf93c3d",
+            "isTarget": false,
+            "start": 39,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "We take our dirty clothes to the washing machine.",
+        "zh": "我們把髒衣服拿到洗衣機旁。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "take",
+            "word": "take",
+            "entryGuid": "eb536808-149b-524f-93ad-87bd2527d5da",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "dirty",
+            "word": "dirty",
+            "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "clothes",
+            "word": "clothes",
+            "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+            "isTarget": true,
+            "start": 18,
+            "end": 25
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 26,
+            "end": 28
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "washing",
+            "word": "wash",
+            "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+            "isTarget": true,
+            "start": 33,
+            "end": 40
+          },
+          {
+            "surface": "machine",
+            "word": "machine",
+            "entryGuid": "3acc68b5-4531-540d-8cf7-1d8252782dbb",
+            "isTarget": true,
+            "start": 41,
+            "end": 48
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "I find a sock at the bottom of the basket.",
+        "zh": "我在籃子底找到一隻襪子。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "find",
+            "word": "find",
+            "entryGuid": "c2e379f6-5361-5af7-9538-bb3754c11c0c",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 7,
+            "end": 8
+          },
+          {
+            "surface": "sock",
+            "word": "sock",
+            "entryGuid": "449d095e-3408-5ae1-93d2-1976cd804511",
+            "isTarget": true,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "bottom",
+            "word": "bottom",
+            "entryGuid": "d732f974-0e9e-5ce3-8d15-c44438334b2d",
+            "isTarget": false,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "basket",
+            "word": "basket",
+            "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+            "isTarget": true,
+            "start": 35,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "My mother helps me wash it with soap and water.",
+        "zh": "媽媽幫我用肥皂和水洗它。",
+        "wordLinks": [
+          {
+            "surface": "My",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "mother",
+            "word": "mother",
+            "entryGuid": "82a3e2d6-3524-5464-b83b-84096ceda408",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "helps",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "me",
+            "word": "me",
+            "entryGuid": "e239b03b-096d-5410-989e-d49577a3e086",
+            "isTarget": false,
+            "start": 16,
+            "end": 18
+          },
+          {
+            "surface": "wash",
+            "word": "wash",
+            "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+            "isTarget": true,
+            "start": 19,
+            "end": 23
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          },
+          {
+            "surface": "soap",
+            "word": "soap",
+            "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+            "isTarget": true,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 41,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "Then we hang a shirt on the line outside.",
+        "zh": "接著我們把襯衫掛在外面的曬衣繩上。",
+        "wordLinks": [
+          {
+            "surface": "Then",
+            "word": "then",
+            "entryGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "we",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "hang",
+            "word": "hang",
+            "entryGuid": "2d5ee780-ce6e-5afe-ad6c-3ece2de62d14",
+            "isTarget": true,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 13,
+            "end": 14
+          },
+          {
+            "surface": "shirt",
+            "word": "shirt",
+            "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+            "isTarget": true,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "line",
+            "word": "line",
+            "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+            "isTarget": true,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "outside",
+            "word": "outside",
+            "entryGuid": "adbe8a2c-2383-5688-9c8a-7125e967551a",
+            "isTarget": false,
+            "start": 33,
+            "end": 40
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "The shirt is still wet, and water falls to the ground.",
+        "zh": "襯衫還是濕的，水滴落到地上。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "shirt",
+            "word": "shirt",
+            "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+            "isTarget": true,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "still",
+            "word": "still",
+            "entryGuid": "a9d992ab-1b10-5ec3-9953-25b3779f051b",
+            "isTarget": false,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "wet",
+            "word": "wet",
+            "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+            "isTarget": true,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "falls",
+            "word": "fall",
+            "entryGuid": "dae505ed-1d6f-54e4-b68b-4c093bb974d1",
+            "isTarget": false,
+            "start": 34,
+            "end": 39
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 40,
+            "end": 42
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          },
+          {
+            "surface": "ground",
+            "word": "ground",
+            "entryGuid": "fa6913cc-1315-54ea-99d3-91332d319f3f",
+            "isTarget": false,
+            "start": 47,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "A dry towel is ready on the other side.",
+        "zh": "另一邊有一條已經乾的毛巾。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "dry",
+            "word": "dry",
+            "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+            "isTarget": true,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "towel",
+            "word": "towel",
+            "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+            "isTarget": true,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "side",
+            "word": "side",
+            "entryGuid": "df213a3b-9504-51fb-94f4-aa2bb095fe2e",
+            "isTarget": false,
+            "start": 34,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "I take it down and carry it into the house.",
+        "zh": "我把它取下，拿進屋裡。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "take",
+            "word": "take",
+            "entryGuid": "eb536808-149b-524f-93ad-87bd2527d5da",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "down",
+            "word": "down",
+            "entryGuid": "451dcd82-9969-5473-b509-7f48b55049f6",
+            "isTarget": false,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 15,
+            "end": 18
+          },
+          {
+            "surface": "carry",
+            "word": "carry",
+            "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "into",
+            "word": "into",
+            "entryGuid": "ff2ff7fe-ca9b-5d6f-b685-f1fe96d9ed46",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "house",
+            "word": "house",
+            "entryGuid": "ada3994d-7136-5f2b-a00e-8559f10fdfa4",
+            "isTarget": false,
+            "start": 37,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "We finish our work before it is time for lunch.",
+        "zh": "午餐時間前，我們完成了工作。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 3,
+            "end": 9
+          },
+          {
+            "surface": "our",
+            "word": "our",
+            "entryGuid": "188bb0a5-1188-57ec-a75e-0eacf52cfc96",
+            "isTarget": false,
+            "start": 10,
+            "end": 13
+          },
+          {
+            "surface": "work",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 19,
+            "end": 25
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 26,
+            "end": 28
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "surface": "lunch",
+            "word": "lunch",
+            "entryGuid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+            "isTarget": false,
+            "start": 41,
+            "end": 46
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+      "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1"
+    },
+    "baseImage": {
+      "path": "output/imagegen/basic-advance-01/05-laundry-day-v1/base-final.png",
+      "sha256": "c125ab5ac52798f7c4c72266087397786b0c2fde37cac47c78c617088bb58e60",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/scenarios/laundry-day/r1/09eeb3d17582e855/story-f695b62961845e6a.mp3",
+      "sha256": "e785f2bd73280b1bad89c91e4ebe0a0dd83f4b229172820e408e63b542b5326d",
+      "language": "en",
+      "textSha256": "f695b62961845e6ab3368a1a9182ad32512533b1581523bf0bb82129b86bcbcc",
+      "durationSeconds": 35.976,
+      "bytes": 575660,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "cli-visually-reviewed",
+      "method": "Codex CLI",
+      "sceneDescriptionZh": "洗衣區前景放洗衣籃與肥皂，一人清洗衣服，另一人把襯衫掛上曬衣繩。左側滴水的衣服與右側已乾衣物分區，襪子掛在容易辨認的位置。加入洗衣機、毛巾、洗衣水盆及日照線索；乾濕衣物仍分區。",
+      "reviewPath": "output/imagegen/basic-advance-01/05-laundry-day-v1/image-review.json"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "awaiting-formal-audio-check",
+      "scope": "target-fifteen-only"
+    }
+  },
+  "contentReview": {
+    "status": "text-prepared-awaiting-media-review",
+    "notes": [
+      "dry 缺乏直接可見性，需與滴水的 wet 衣物成對比較。",
+      "basket 只採籃子，不採來源混入的咖啡濾杯詞義。",
+      "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+    ]
+  }
+}

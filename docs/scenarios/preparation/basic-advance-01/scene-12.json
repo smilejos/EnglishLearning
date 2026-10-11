@@ -1,0 +1,177 @@
+{
+  "id": "12",
+  "scenarioKey": "fresh-bakery",
+  "titleZh": "麵包店剛出爐",
+  "descriptionZh": "麵包店左側看得到烤箱，店員用隔熱手套取出烤盤，另一人端送麵包。前景陳列棕色麵包與大小不同的蛋糕，店門與櫃檯共同呈現店鋪。增加餅乾、小紙盒、顧客與同款大小蛋糕；氣味與新鮮需故事輔助。",
+  "targets": [
+    {
+      "word": "bakery",
+      "entryGuid": "0d06819e-2408-50eb-850b-6230aea7807e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "麵包店",
+      "visualCueZh": "背景呈現陳列櫃、收銀櫃檯與烤箱所在的麵包店。"
+    },
+    {
+      "word": "bread",
+      "entryGuid": "e19fc246-c8bc-549b-a9d9-8590d28d100a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "麵包",
+      "visualCueZh": "櫃檯前放幾條麵包，切口與外皮清楚可見。"
+    },
+    {
+      "word": "cake",
+      "entryGuid": "6ba3cbba-87e7-5db5-bb58-d700f91434b8",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "蛋糕",
+      "visualCueZh": "玻璃櫃中放有切面的蛋糕，與麵包分區。"
+    },
+    {
+      "word": "oven",
+      "entryGuid": "9022b037-cecc-5d20-b396-e785023625a1",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "烤箱",
+      "visualCueZh": "左側烤箱門打開，內部烤架與烤盤可見。"
+    },
+    {
+      "word": "bake",
+      "entryGuid": "7560bb87-3d4a-5910-81f1-06ea15e6ce38",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "烘烤",
+      "visualCueZh": "烤箱中有正在烘烤的麵包，店員隔熱手套正取出另一盤。"
+    },
+    {
+      "word": "carry",
+      "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "搬運",
+      "visualCueZh": "另一店員雙手端著烤盤走向櫃檯。"
+    },
+    {
+      "word": "brown",
+      "entryGuid": "6d02130f-46a3-59f9-9877-b64efab8ef5e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "棕色的",
+      "visualCueZh": "中央麵包外皮呈清楚棕色，旁邊白色紙袋提供對比。"
+    },
+    {
+      "word": "small",
+      "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "小的",
+      "visualCueZh": "同一層架放一個迷你蛋糕，與旁邊較大同款蛋糕比較。"
+    },
+    {
+      "word": "box",
+      "entryGuid": "0808ecec-fe55-523e-ad6a-105d4392ab02",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "盒子",
+      "visualCueZh": "櫃檯右側放打開的紙盒，裡面有蛋糕。"
+    },
+    {
+      "word": "cookie",
+      "entryGuid": "21a603d8-40e6-5551-8f14-be3b277baa69",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "餅乾",
+      "visualCueZh": "餅乾擺在獨立小盤，圓形外觀與蛋糕不同。"
+    },
+    {
+      "word": "smell",
+      "entryGuid": "87c9d439-7d4d-5ed9-a63f-65b998acdffd",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "聞",
+      "visualCueZh": "店門附近顧客靠近麵包吸氣，仍需故事輔助。"
+    },
+    {
+      "word": "warm",
+      "entryGuid": "9394e846-b90b-5dfe-a6f0-ac9d91be428c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "溫熱的",
+      "visualCueZh": "剛出爐麵包有薄蒸氣，顧客手靠近但不直接碰熱盤。"
+    },
+    {
+      "word": "fresh",
+      "entryGuid": "7bbaeb1f-2dfb-5097-b352-82aff054864c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "新鮮的",
+      "visualCueZh": "店員剛取出的完整麵包與烤箱連在同一活動中。"
+    },
+    {
+      "word": "customer",
+      "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "顧客",
+      "visualCueZh": "櫃檯前顧客接取紙盒，店員站在另一側。"
+    },
+    {
+      "word": "big",
+      "entryGuid": "835376ac-bc57-5996-beba-2b63de212c86",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "大的",
+      "visualCueZh": "同款蛋糕一大一小並排，不用不同品項代替大小比較。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "I stop at the bakery with my mother this morning.",
+      "zh": "今天早上，我和媽媽在麵包店停下腳步。"
+    },
+    {
+      "en": "We smell fresh bread as soon as we open the door.",
+      "zh": "一開門，我們就聞到新鮮麵包的香氣。"
+    },
+    {
+      "en": "The workers bake bread in a large oven behind the table.",
+      "zh": "店員在桌子後方的大烤箱裡烘烤麵包。"
+    },
+    {
+      "en": "They carry the warm brown bread to the front.",
+      "zh": "他們把溫熱的棕色麵包端到前方。"
+    },
+    {
+      "en": "A customer waits beside a big cake and a small cake.",
+      "zh": "一位顧客在一大一小兩個蛋糕旁等候。"
+    },
+    {
+      "en": "My mother chooses the small cake for our family.",
+      "zh": "媽媽挑了小蛋糕給我們一家人。"
+    },
+    {
+      "en": "I pick a cookie to eat on the way home.",
+      "zh": "我挑一片餅乾，準備回家的路上吃。"
+    },
+    {
+      "en": "The worker puts the cake in a box for us.",
+      "zh": "店員為我們把蛋糕放進盒子裡。"
+    },
+    {
+      "en": "We thank her and leave with a happy smile.",
+      "zh": "我們向她道謝，帶著開心的笑容離開。"
+    }
+  ],
+  "aliases": {
+    "workers": "worker",
+    "waits": "wait",
+    "chooses": "choose",
+    "puts": "put"
+  },
+  "reviewNotes": [
+    "bake 與 carry 分別指烤箱內麵包及端盤人物，標註不能重疊。",
+    "soft 屬 expert，改用直接可見的 brown。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

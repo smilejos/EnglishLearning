@@ -1,0 +1,66 @@
+使用 Codex CLI 的原生 image_generation 工具，為「06 課堂小組活動」產生一張全新的正式英文教材底圖。
+工具只呼叫一次；只生成這一張，不自行重試，不產變體。若原生工具失敗或無法提供可保存圖片即停止並回報，不切換API／SDK／其他生成方式。提供的圖片僅為可愛3D風格參考，絕不是編輯目標；不要修改客廳或已有教材。
+本工作只允許原生產圖、讀取／目視生成圖、複製圖片及寫本場審閱JSON。不要修改任何程式／教材文字，不讀.env、keys、auth，不碰DB，不啟動服務，不部署，不跑tests／npm test／typecheck，不呼叫LLM／TTS／圖片HTTP API，不使用SDK或Python圖片API runner。
+生成前檢查 output/imagegen/basic-advance-01/06-classroom-group-work-v1/base.png 是否存在；若存在即停止生成並回報，不覆寫。將原始生成結果完整複製到 output/imagegen/basic-advance-01/06-classroom-group-work-v1/base.png，保留原圖尺寸，不自行裁切、加字或拼接。工具檔案路徑依實際工具結果取得，不猜測。
+完成後必須真正目視原始生成圖，再記錄 output/imagegen/basic-advance-01/06-classroom-group-work-v1/image-review.json。使用實際圖片尺寸；禁止憑prompt虛構座標或審閱通過。
+
+[STYLE]
+Use case: illustration-story. Polished cute warm 3D cartoon with soft rounded forms, tactile materials, expressive friendly people, bright gentle natural light, and warm children learning English picture-book aesthetics. If a style-reference image is attached, use only its rendering style; create this new scene from scratch.
+[SCENE DESCRIPTION]
+教室兩組學生圍桌工作，前景一組討論，另一組寫筆記。桌上的鉛筆與筆記本放大呈現；忙碌組同時操作材料，安靜組有學生用手勢提醒輕聲。增加老師、椅子、直尺與小紙屋，學校及答案由故事輔助辨義。
+One coherent natural scene, wide approximately 16:9 landscape, opaque background. Show the fifteen teaching concepts naturally in this setting.
+[TARGET VOCABULARY]
+These are visual concepts only. DO NOT print any target word, translation, number, or label in the picture. Keep this exact list of fifteen concepts without substituting synonyms:
+1. desk (n; 書桌): 前景露出學生桌的桌面、桌腳與抽屜。
+2. notebook (n; 筆記本): 桌面放打開的線裝筆記本，頁面無可讀文字。
+3. pencil (n; 鉛筆): 筆記本旁放長鉛筆，削尖筆頭清楚可見。
+4. group (n; 團體): 左側三名孩子圍坐一桌形成一個小組。
+5. write (v; 書寫): 前景孩子手握鉛筆，筆尖接觸筆記本頁面。
+6. discuss (v; 討論): 兩位學生面向同一張圖，一人指圖、一人回應手勢。
+7. quiet (adj; 安靜的): 右側一名學生把食指輕放嘴前，其餘同學閉嘴閱讀。
+8. busy (adj; 忙碌的): 左側同組孩子同時寫字、整理材料和傳遞紙張。
+9. school (n; 學校): 窗外可見校舍與操場，教室仍是主要場景。
+10. teacher (n; 老師): 成人老師站在兩組学生之間，協助小組活動。
+11. student (n; 學生): 前景學生坐在桌旁，正參與小組活動。
+12. chair (n; 椅子): 桌旁椅子露出椅背和椅腳，沒有被書桌完全遮住。
+13. ruler (n; 尺): 桌上放一把有刻度但無文字的直尺。
+14. answer (n; 答案): 學生以鉛筆指向自己完成的簡單圖形答案，仍需故事輔助。
+15. small (adj; 小的): 小組做出小紙屋，旁邊大紙屋作同類大小對比。
+[OBJECT VISIBILITY RULES]
+Every noun needs a distinguishable object or location; every verb needs a physically plausible visible action; every adjective needs a sensible state or contextual visual cue. All fifteen cues above must be considered. Separate similar objects with enough space to point to each clearly. No target object hidden behind a hand, body, another prop, or frame edge. For abstract meanings and sequential story actions, provide a reasonable scene cue and let the story clarify; do not duplicate a person or animal to show contradictory simultaneous states. Do not create text to explain a missing concept.
+[COMPOSITION]
+Comfortable wide 16:9 view, clear foreground, midground and background with breathing room. Arrange the existing implied props and characters to reduce overlap rather than cramming in decoration. Reserve scattered nearby open areas for fifteen HTML labels to be added by the website later; draw no labels now. Keep all key objects inside the frame with generous margins. One cohesive scene, not a collage, grid, split view or instructional panel.
+[CHARACTERS / ACTIONS]
+Keep character counts and actions consistent with the scene and these story sentences, used only as context, never printed in the image. Choose a representative coherent moment; do not try to depict every sequential sentence at once. Warm relaxed faces, correct anatomy and natural hands. Child-safe activity.
+At school, our teacher gives each group a small job.
+在學校，老師給每個小組一個小任務。
+I sit on a chair and move close to the desk.
+我坐在椅子上，移近書桌。
+There is a notebook, a pencil, and a ruler before me.
+我面前有筆記本、鉛筆和尺。
+We are busy making a little house out of paper.
+我們忙著用紙做一棟小房子。
+I write our idea while the other student draws.
+我寫下我們的想法，另一位學生畫圖。
+We discuss the size of the house and the door.
+我們討論房子和門的大小。
+Then the room is quiet while everyone thinks again.
+接著大家再次思考，教室安靜下來。
+Our group finds an answer and shows the teacher.
+我們的小組找出答案，拿給老師看。
+She smiles, and we are ready to try our idea.
+她微笑，我們準備試試自己的想法。
+[ANNOTATION STYLE]
+Absolutely none. No annotation labels, callouts, overlay arrows, circles, pointer lines, vocabulary cards, diagrams, symbols used as answer overlays, or explanatory overlays. Plain real-world objects required by targets, such as an unlettered arrow-shaped direction sign or recycling symbol on a container, are allowed.
+[TEXT RULES]
+No text anywhere: no words, translations, letters, glyphs, numerals, captions, branding, packaging lettering, readable book pages, numbered clocks, text-bearing signage or watermarks. Containers and tickets are plain and unbranded; decorative pages and signs contain no writing.
+[DECORATION]
+Minimal natural details already implied by this scene, supporting a warm tidy coordinated palette. Do not add unrelated target-like props. Keep every teaching cue visually dominant and legible.
+[NEGATIVE REQUIREMENTS]
+No photorealism, flat vectors, screenshot, UI, collage, dense crowding, unrecognizable objects, missing target cues, floating props, malformed hands, contradictory actions, labels, annotation arrows, typography, logos, watermarks or transparent background.
+
+[POST-GENERATION VISUAL REVIEW — DO NOT RENDER THIS TEXT]
+Write image-review.json with exactly this structure:
+{"imagePath":"output/imagegen/basic-advance-01/06-classroom-group-work-v1/base.png","width":<actual integer>,"height":<actual integer>,"noVocabularyText":<actual boolean>,"targets":[{"word":"<each original target word>","label":{"x":<0–1>,"y":<0–1>},"object":{"x":<0–1>,"y":<0–1>},"visualEvidenceZh":"<what you actually saw, in Traditional Chinese>"}],"issues":["<actual unresolved issues, or empty array>"]}
+targets 必須保持原十五詞順序。object 指向實際物件／動作／狀態，不是整圖任意位置；label 選附近空白，十五個label盡量分散、彼此有間距、不蓋住臉手或關鍵概念。比例座標左上為(0,0)、右下為(1,1)。如果某詞沒有可信線索，該詞object與label填null、visualEvidenceZh據實說明、issues列出缺失；不得虛構位置或假稱十五詞均清楚。noVocabularyText 只有真正看圖完全無任何字母／單字／數字／文字才為true；若有任何文字，填false並列issues。抽象詞只說明實際線索與需要故事補足的部分，不宣稱靜態圖片證明抽象意思。
+完成後只回報這一場實際base.png路徑、工具原圖來源路徑、尺寸、image-review.json路徑及issues。此審閱是圖片備料，絕不是匯入／發布驗收。

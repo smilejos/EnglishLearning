@@ -1,0 +1,407 @@
+{
+  "id": "04",
+  "scenarioKey": "tidy-bedroom",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/04-tidy-bedroom-v1/base.png",
+    "sha256": "34b1924ae0ef8efe0a8167ef203ab64eed9e3cc867ef4939b045f6449ac0796d",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "bed",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央床架與床面。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.55,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.56,
+          "y": 0.7
+        }
+      }
+    },
+    {
+      "word": "pillow",
+      "teachingPos": "n",
+      "visualEvidenceZh": "床頭白色枕頭。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.55,
+          "y": 0.36
+        },
+        "label": {
+          "x": 0.53,
+          "y": 0.27
+        }
+      }
+    },
+    {
+      "word": "drawer",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側拉開的抽屜。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.89,
+          "y": 0.55
+        },
+        "label": {
+          "x": 0.945,
+          "y": 0.56
+        }
+      }
+    },
+    {
+      "word": "closet",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右後方開啟、掛著衣物的衣櫥。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.82,
+          "y": 0.25
+        },
+        "label": {
+          "x": 0.79,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "blanket",
+      "teachingPos": "n",
+      "visualEvidenceZh": "床面藍色毛毯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.54,
+          "y": 0.49
+        },
+        "label": {
+          "x": 0.64,
+          "y": 0.49
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左前方書桌椅。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.13,
+          "y": 0.65
+        },
+        "label": {
+          "x": 0.09,
+          "y": 0.7
+        }
+      }
+    },
+    {
+      "word": "toy",
+      "teachingPos": "n",
+      "visualEvidenceZh": "弟弟手中的玩具車。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.88,
+          "y": 0.46
+        },
+        "label": {
+          "x": 0.95,
+          "y": 0.37
+        }
+      }
+    },
+    {
+      "word": "floor",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景露出的木地板。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.74,
+          "y": 0.8
+        },
+        "label": {
+          "x": 0.66,
+          "y": 0.925
+        }
+      }
+    },
+    {
+      "word": "window",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側窗框。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.11,
+          "y": 0.17
+        },
+        "label": {
+          "x": 0.12,
+          "y": 0.1
+        }
+      }
+    },
+    {
+      "word": "clothes",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右下籃中與地上的衣服。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.91,
+          "y": 0.75
+        },
+        "label": {
+          "x": 0.92,
+          "y": 0.87
+        }
+      }
+    },
+    {
+      "word": "desk",
+      "teachingPos": "n",
+      "visualEvidenceZh": "哥哥正在擦拭的左侧書桌。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.12,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.12,
+          "y": 0.5
+        }
+      }
+    },
+    {
+      "word": "lamp",
+      "teachingPos": "n",
+      "visualEvidenceZh": "書桌左側金屬檯燈。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.037,
+          "y": 0.265
+        },
+        "label": {
+          "x": 0.045,
+          "y": 0.3
+        }
+      }
+    },
+    {
+      "word": "shelf",
+      "teachingPos": "n",
+      "visualEvidenceZh": "床左側放書與玩具的架子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.305,
+          "y": 0.198
+        },
+        "label": {
+          "x": 0.32,
+          "y": 0.075
+        }
+      }
+    },
+    {
+      "word": "basket",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右下裝髒衣物的白色籃子；籃子義在來源定義中。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.918,
+          "y": 0.765
+        },
+        "label": {
+          "x": 0.84,
+          "y": 0.68
+        }
+      }
+    },
+    {
+      "word": "bedroom",
+      "teachingPos": "n",
+      "visualEvidenceZh": "床、衣櫥與書桌構成臥室。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.55,
+          "y": 0.64
+        },
+        "label": {
+          "x": 0.48,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "tidy",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "故事最後整理完成；圖上架子與床鋪已有整齊區域。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.32,
+          "y": 0.22
+        },
+        "label": {
+          "x": 0.37,
+          "y": 0.32
+        }
+      }
+    },
+    {
+      "word": "dirty",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "右下衣物可見大片泥漬。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.877,
+          "y": 0.851
+        },
+        "label": {
+          "x": 0.91,
+          "y": 0.945
+        }
+      }
+    },
+    {
+      "word": "bright",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "日光透過窗戶照亮房間。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.11,
+          "y": 0.28
+        },
+        "label": {
+          "x": 0.145,
+          "y": 0.3
+        }
+      }
+    },
+    {
+      "word": "open",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "衣櫥門開著、衣物可見；此處取形容詞。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.715,
+          "y": 0.29
+        },
+        "label": {
+          "x": 0.7,
+          "y": 0.14
+        }
+      }
+    },
+    {
+      "word": "full",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "右下籃子堆滿衣服，部分垂出籃外。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.925,
+          "y": 0.756
+        },
+        "label": {
+          "x": 0.955,
+          "y": 0.72
+        }
+      }
+    },
+    {
+      "word": "put",
+      "teachingPos": "v",
+      "visualEvidenceZh": "弟弟將玩具放進抽屜。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.88,
+          "y": 0.465
+        },
+        "label": {
+          "x": 0.835,
+          "y": 0.47
+        }
+      }
+    },
+    {
+      "word": "clean",
+      "teachingPos": "v",
+      "visualEvidenceZh": "哥哥拿布擦書桌，不是清地板。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.153,
+          "y": 0.427
+        },
+        "label": {
+          "x": 0.265,
+          "y": 0.475
+        }
+      }
+    },
+    {
+      "word": "help",
+      "teachingPos": "v",
+      "visualEvidenceZh": "弟弟收玩具，幫哥哥一起整理。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.81,
+          "y": 0.44
+        },
+        "label": {
+          "x": 0.375,
+          "y": 0.59
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 3
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 2,
+    "storyTokenCount": 136,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "前後動作可在故事出現，但圖上沒有直接動作證據，未為湊滿5v列入target。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:13:39.348Z",
+  "reviewers": [
+    "root actual base-image view",
+    "fresh-context verify_revision_materials"
+  ],
+  "imageSha256": "34b1924ae0ef8efe0a8167ef203ab64eed9e3cc867ef4939b045f6449ac0796d",
+  "targetsSha256": "6ed6d3d1829bb844bd40da0394b74739462c8bf1f02ba904c29a8272689d41f7",
+  "storySha256": "6ae7a860dbae646d1282919d477ae03756989af15cb271dc02a1cc42255fd5e6"
+}

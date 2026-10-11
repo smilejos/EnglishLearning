@@ -1,0 +1,177 @@
+{
+  "id": "05",
+  "scenarioKey": "laundry-day",
+  "titleZh": "洗衣與曬衣",
+  "descriptionZh": "洗衣區前景放洗衣籃與肥皂，一人清洗衣服，另一人把襯衫掛上曬衣繩。左側滴水的衣服與右側已乾衣物分區，襪子掛在容易辨認的位置。加入洗衣機、毛巾、洗衣水盆及日照線索；乾濕衣物仍分區。",
+  "targets": [
+    {
+      "word": "shirt",
+      "entryGuid": "980596a2-0ca1-5134-a65f-12dc121553eb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "襯衫",
+      "visualCueZh": "中央衣繩掛一件有衣領、鈕扣與長袖的襯衫。"
+    },
+    {
+      "word": "sock",
+      "entryGuid": "449d095e-3408-5ae1-93d2-1976cd804511",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "襪子",
+      "visualCueZh": "衣繩前端掛一隻清楚有腳跟與腳尖形狀的襪子。"
+    },
+    {
+      "word": "basket",
+      "entryGuid": "ba743d18-ef4f-568c-b9ee-812f3df7b7e5",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "籃子",
+      "visualCueZh": "前景放開口洗衣籃，籃體不被衣服完全蓋住。"
+    },
+    {
+      "word": "soap",
+      "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "肥皂",
+      "visualCueZh": "洗衣盆旁放一塊長方形肥皂，表面有泡沫。"
+    },
+    {
+      "word": "wash",
+      "entryGuid": "d4c56758-f320-5f80-8635-f536b7af082a",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "清洗",
+      "visualCueZh": "人物把衣服放在水盆中搓洗，手部與泡沫可見。"
+    },
+    {
+      "word": "hang",
+      "entryGuid": "2d5ee780-ce6e-5afe-ad6c-3ece2de62d14",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "懸掛",
+      "visualCueZh": "另一人正用衣夾把襯衫上緣固定到衣繩。"
+    },
+    {
+      "word": "wet",
+      "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "濕的",
+      "visualCueZh": "左側衣物顏色較深且向下滴水。"
+    },
+    {
+      "word": "dry",
+      "entryGuid": "20b75a9c-9200-5c22-ab6a-7cd38172a68e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "乾的",
+      "visualCueZh": "右側乾衣物沒有水滴，已整理好等待收入籃中。"
+    },
+    {
+      "word": "machine",
+      "entryGuid": "3acc68b5-4531-540d-8cf7-1d8252782dbb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "機器",
+      "visualCueZh": "洗衣區後方放洗衣機，圓門與控制按鈕可見但無文字。"
+    },
+    {
+      "word": "towel",
+      "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "毛巾",
+      "visualCueZh": "曬衣繩右邊有一條寬毛巾，與襯衫隔開。"
+    },
+    {
+      "word": "clothes",
+      "entryGuid": "0056343b-11d8-5869-8582-4307e246f6a9",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "衣服",
+      "visualCueZh": "籃中和繩上多種衣物共同作為一個衣服區域。"
+    },
+    {
+      "word": "line",
+      "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "繩子",
+      "visualCueZh": "兩根柱子之間水平拉著曬衣繩，空白繩段清楚可見。"
+    },
+    {
+      "word": "sun",
+      "entryGuid": "92e3022d-942e-5926-8331-2dcc0e057984",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "太陽",
+      "visualCueZh": "背景天空露出太陽，與人物保持距離。"
+    },
+    {
+      "word": "bright",
+      "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "明亮的",
+      "visualCueZh": "曬衣區地面有清晰的陽光與陰影。"
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "visualCueZh": "前景洗衣盆內有水，水面清楚可見。"
+    }
+  ],
+  "sentences": [
+    {
+      "en": "It is a bright morning, and the sun is high.",
+      "zh": "這是個明亮的早晨，太陽高掛。"
+    },
+    {
+      "en": "We take our dirty clothes to the washing machine.",
+      "zh": "我們把髒衣服拿到洗衣機旁。"
+    },
+    {
+      "en": "I find a sock at the bottom of the basket.",
+      "zh": "我在籃子底找到一隻襪子。"
+    },
+    {
+      "en": "My mother helps me wash it with soap and water.",
+      "zh": "媽媽幫我用肥皂和水洗它。"
+    },
+    {
+      "en": "Then we hang a shirt on the line outside.",
+      "zh": "接著我們把襯衫掛在外面的曬衣繩上。"
+    },
+    {
+      "en": "The shirt is still wet, and water falls to the ground.",
+      "zh": "襯衫還是濕的，水滴落到地上。"
+    },
+    {
+      "en": "A dry towel is ready on the other side.",
+      "zh": "另一邊有一條已經乾的毛巾。"
+    },
+    {
+      "en": "I take it down and carry it into the house.",
+      "zh": "我把它取下，拿進屋裡。"
+    },
+    {
+      "en": "We finish our work before it is time for lunch.",
+      "zh": "午餐時間前，我們完成了工作。"
+    }
+  ],
+  "aliases": {
+    "is": "be",
+    "washing": "wash",
+    "helps": "help",
+    "falls": "fall"
+  },
+  "reviewNotes": [
+    "dry 缺乏直接可見性，需與滴水的 wet 衣物成對比較。",
+    "basket 只採籃子，不採來源混入的咖啡濾杯詞義。",
+    "本檔為十五詞文字備料；新底圖、實測互動位置、語音與人工審閱尚待製作，不能據此宣稱已通過匯入驗收。"
+  ]
+}

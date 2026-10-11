@@ -1,0 +1,424 @@
+{
+  "id": "03",
+  "scenarioKey": "family-dinner",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/03-family-dinner-v1/base.png",
+    "sha256": "ff0056c9da57ac441e3e64d9c0b0148e745306002e706b927bcc67fbcebeef30",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "plate",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景白色平盤。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.507,
+          "y": 0.827
+        },
+        "label": {
+          "x": 0.515,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "fork",
+      "teachingPos": "n",
+      "visualEvidenceZh": "盤子左側叉子。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.363,
+          "y": 0.83
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.82
+        }
+      }
+    },
+    {
+      "word": "spoon",
+      "teachingPos": "n",
+      "visualEvidenceZh": "盤子右側湯匙。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.661,
+          "y": 0.866
+        },
+        "label": {
+          "x": 0.67,
+          "y": 0.935
+        }
+      }
+    },
+    {
+      "word": "rice",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央碗中的白飯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.462,
+          "y": 0.624
+        },
+        "label": {
+          "x": 0.465,
+          "y": 0.735
+        }
+      }
+    },
+    {
+      "word": "family",
+      "teachingPos": "n",
+      "visualEvidenceZh": "圍桌的三代家人。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.57,
+          "y": 0.545
+        },
+        "label": {
+          "x": 0.425,
+          "y": 0.57
+        }
+      }
+    },
+    {
+      "word": "soup",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右前方碗裡有湯與蔬菜。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.737,
+          "y": 0.704
+        },
+        "label": {
+          "x": 0.755,
+          "y": 0.79
+        }
+      }
+    },
+    {
+      "word": "bowl",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左前方裝蔬菜的碗。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.273,
+          "y": 0.686
+        },
+        "label": {
+          "x": 0.265,
+          "y": 0.78
+        }
+      }
+    },
+    {
+      "word": "chicken",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央雞腿與媽媽端的雞肉。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.592,
+          "y": 0.59
+        },
+        "label": {
+          "x": 0.603,
+          "y": 0.715
+        }
+      }
+    },
+    {
+      "word": "dinner",
+      "teachingPos": "n",
+      "visualEvidenceZh": "窗外傍晚與桌上飯菜形成晚餐。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.505,
+          "y": 0.57
+        },
+        "label": {
+          "x": 0.52,
+          "y": 0.49
+        }
+      }
+    },
+    {
+      "word": "table",
+      "teachingPos": "n",
+      "visualEvidenceZh": "一家圍坐的木餐桌。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.596,
+          "y": 0.943
+        },
+        "label": {
+          "x": 0.83,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "glass",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景裝水的玻璃杯。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.184,
+          "y": 0.873
+        },
+        "label": {
+          "x": 0.13,
+          "y": 0.87
+        }
+      }
+    },
+    {
+      "word": "vegetable",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左前方碗中的蔬菜。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.274,
+          "y": 0.65
+        },
+        "label": {
+          "x": 0.225,
+          "y": 0.59
+        }
+      }
+    },
+    {
+      "word": "mother",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央端雞肉的媽媽。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.521,
+          "y": 0.267
+        },
+        "label": {
+          "x": 0.59,
+          "y": 0.31
+        }
+      }
+    },
+    {
+      "word": "grandfather",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央偏右戴眼鏡喝湯的爺爺。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.718,
+          "y": 0.297
+        },
+        "label": {
+          "x": 0.765,
+          "y": 0.08
+        }
+      }
+    },
+    {
+      "word": "grandmother",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側微笑並把手放在肚子上的奶奶。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.906,
+          "y": 0.308
+        },
+        "label": {
+          "x": 0.9,
+          "y": 0.63
+        }
+      }
+    },
+    {
+      "word": "hungry",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "男孩伸手想拿食物，故事說等不及吃飯。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.334,
+          "y": 0.486
+        },
+        "label": {
+          "x": 0.26,
+          "y": 0.345
+        }
+      }
+    },
+    {
+      "word": "full",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "奶奶一手放腹部、一手表示不用再添。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.914,
+          "y": 0.534
+        },
+        "label": {
+          "x": 0.94,
+          "y": 0.52
+        }
+      }
+    },
+    {
+      "word": "happy",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "家人圍桌微笑。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.27,
+          "y": 0.475
+        },
+        "label": {
+          "x": 0.075,
+          "y": 0.695
+        }
+      }
+    },
+    {
+      "word": "delicious",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "家人享用雞肉與湯；味道由故事品嚐交代。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.616,
+          "y": 0.589
+        },
+        "label": {
+          "x": 0.575,
+          "y": 0.54
+        }
+      }
+    },
+    {
+      "word": "warm",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "剛上桌的湯；溫度用故事交代。",
+      "evidenceKind": "story",
+      "interaction": {
+        "object": {
+          "x": 0.737,
+          "y": 0.705
+        },
+        "label": {
+          "x": 0.74,
+          "y": 0.64
+        }
+      }
+    },
+    {
+      "word": "eat",
+      "teachingPos": "v",
+      "visualEvidenceZh": "左側爸爸叉起雞肉入口。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.146,
+          "y": 0.252
+        },
+        "label": {
+          "x": 0.085,
+          "y": 0.36
+        }
+      }
+    },
+    {
+      "word": "share",
+      "teachingPos": "v",
+      "visualEvidenceZh": "媽媽把雞肉端向全家。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.563,
+          "y": 0.428
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.465
+        }
+      }
+    },
+    {
+      "word": "taste",
+      "teachingPos": "v",
+      "visualEvidenceZh": "爺爺把一匙湯送到嘴邊。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.675,
+          "y": 0.307
+        },
+        "label": {
+          "x": 0.72,
+          "y": 0.405
+        }
+      }
+    },
+    {
+      "word": "serve",
+      "teachingPos": "v",
+      "visualEvidenceZh": "媽媽端出雞肉，供家人取用。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.553,
+          "y": 0.446
+        },
+        "label": {
+          "x": 0.555,
+          "y": 0.265
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 4
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 1,
+    "storyTokenCount": 146,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "前後動作可在故事出現，但圖上沒有直接動作證據，未為湊滿5v列入target。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:21:55.051Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "ff0056c9da57ac441e3e64d9c0b0148e745306002e706b927bcc67fbcebeef30",
+  "targetsSha256": "3c566e2921e396b3da386fcd0f798731cb34a0056dbd97b1c6e1731e25ea39bb",
+  "storySha256": "e043b566142862422d5fd74d47110568669ac28838220cbc9d971b1c1c9d8d18",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}

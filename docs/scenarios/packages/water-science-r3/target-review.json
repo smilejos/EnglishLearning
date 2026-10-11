@@ -1,0 +1,432 @@
+{
+  "id": "09",
+  "scenarioKey": "water-science",
+  "revision": 3,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/basic-advance-01/09-water-science-v1/base-refined-2.png",
+    "sha256": "9c1094a5fae1afe9d9d7f7d43b4dfdea2f263b1ca1cdb1a079dc3d4d159d6151",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "bottle",
+      "entryGuid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "瓶子",
+      "interaction": {
+        "object": {
+          "x": 0.294,
+          "y": 0.483
+        },
+        "label": {
+          "x": 0.295,
+          "y": 0.76
+        }
+      }
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "interaction": {
+        "object": {
+          "x": 0.127,
+          "y": 0.757
+        },
+        "label": {
+          "x": 0.12,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "glass",
+      "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "玻璃杯",
+      "interaction": {
+        "object": {
+          "x": 0.677,
+          "y": 0.75
+        },
+        "label": {
+          "x": 0.705,
+          "y": 0.855
+        }
+      }
+    },
+    {
+      "word": "ruler",
+      "entryGuid": "a369e837-fb1f-56f4-964a-4d6b9953fcc0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "尺",
+      "interaction": {
+        "object": {
+          "x": 0.249,
+          "y": 0.424
+        },
+        "label": {
+          "x": 0.2,
+          "y": 0.2
+        }
+      }
+    },
+    {
+      "word": "drop",
+      "entryGuid": "a0246fee-ef2e-587b-9611-d63131ceb3b9",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水滴",
+      "interaction": {
+        "object": {
+          "x": 0.404,
+          "y": 0.717
+        },
+        "label": {
+          "x": 0.398,
+          "y": 0.81
+        }
+      }
+    },
+    {
+      "word": "cup",
+      "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "杯子",
+      "interaction": {
+        "object": {
+          "x": 0.933,
+          "y": 0.802
+        },
+        "label": {
+          "x": 0.925,
+          "y": 0.92
+        }
+      }
+    },
+    {
+      "word": "science",
+      "entryGuid": "9fc253a4-a108-599a-9b0b-568c42156a37",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "科學",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.035
+        },
+        "label": {
+          "x": 0.615,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "object": {
+          "x": 0.497,
+          "y": 0.919
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "teacher",
+      "entryGuid": "bb0e8ccd-85d5-5db2-8a34-c736e754d95d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "老師",
+      "interaction": {
+        "object": {
+          "x": 0.793,
+          "y": 0.443
+        },
+        "label": {
+          "x": 0.83,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "word": "student",
+      "entryGuid": "bf3f1240-42b3-51d5-9f1a-74405d8c0eeb",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "學生",
+      "interaction": {
+        "object": {
+          "x": 0.528,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.435,
+          "y": 0.585
+        }
+      }
+    },
+    {
+      "word": "color",
+      "entryGuid": "3f635553-657f-5633-9fcc-e6e18213a2c0",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "顏色",
+      "interaction": {
+        "object": {
+          "x": 0.544,
+          "y": 0.693
+        },
+        "label": {
+          "x": 0.475,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "result",
+      "entryGuid": "1bb2a4a2-daa1-5147-8f39-83e9269b6a02",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "結果",
+      "interaction": {
+        "object": {
+          "x": 0.545,
+          "y": 0.73
+        },
+        "label": {
+          "x": 0.545,
+          "y": 0.865
+        }
+      }
+    },
+    {
+      "word": "level",
+      "entryGuid": "dd37379a-d117-564f-9f03-47efa85b677e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水位",
+      "interaction": {
+        "object": {
+          "x": 0.294,
+          "y": 0.436
+        },
+        "label": {
+          "x": 0.315,
+          "y": 0.35
+        }
+      }
+    },
+    {
+      "word": "height",
+      "entryGuid": "3f796fd9-b852-5216-9c89-526fa8f7aa4d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "高度",
+      "interaction": {
+        "object": {
+          "x": 0.3,
+          "y": 0.433
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.385
+        }
+      }
+    },
+    {
+      "word": "liquid",
+      "entryGuid": "6aab37cd-7a5b-562c-ada6-ca5ccaa001c6",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "液體",
+      "interaction": {
+        "object": {
+          "x": 0.548,
+          "y": 0.725
+        },
+        "label": {
+          "x": 0.62,
+          "y": 0.83
+        }
+      }
+    },
+    {
+      "word": "empty",
+      "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "空的",
+      "interaction": {
+        "object": {
+          "x": 0.796,
+          "y": 0.756
+        },
+        "label": {
+          "x": 0.835,
+          "y": 0.53
+        }
+      }
+    },
+    {
+      "word": "full",
+      "entryGuid": "b858143e-fcd8-508e-9635-516389f4c20e",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "裝滿的",
+      "interaction": {
+        "object": {
+          "x": 0.677,
+          "y": 0.738
+        },
+        "label": {
+          "x": 0.68,
+          "y": 0.565
+        }
+      }
+    },
+    {
+      "word": "careful",
+      "entryGuid": "134a56a7-2483-53ac-9c97-653e1329ca9d",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "小心的",
+      "interaction": {
+        "object": {
+          "x": 0.651,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.775,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "blue",
+      "entryGuid": "df2bad18-76ff-5f91-90f9-2a255b2cb155",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "藍色的",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.507
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.455
+        }
+      }
+    },
+    {
+      "word": "yellow",
+      "entryGuid": "4adc9c3c-bf2c-50cd-8a4b-6ca047d0e009",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "黃色的",
+      "interaction": {
+        "object": {
+          "x": 0.605,
+          "y": 0.546
+        },
+        "label": {
+          "x": 0.675,
+          "y": 0.505
+        }
+      }
+    },
+    {
+      "word": "measure",
+      "entryGuid": "40322aac-afef-54bb-b5d0-e117fd3109e5",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "測量",
+      "interaction": {
+        "object": {
+          "x": 0.251,
+          "y": 0.45
+        },
+        "label": {
+          "x": 0.29,
+          "y": 0.16
+        }
+      }
+    },
+    {
+      "word": "mix",
+      "entryGuid": "a0d35ceb-68e0-58c7-a9ac-ca28d9a5574f",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "混合",
+      "interaction": {
+        "object": {
+          "x": 0.544,
+          "y": 0.626
+        },
+        "label": {
+          "x": 0.555,
+          "y": 0.68
+        }
+      }
+    },
+    {
+      "word": "add",
+      "entryGuid": "bae3cd73-114b-5005-919a-8708ca22e9d2",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "加入",
+      "interaction": {
+        "object": {
+          "x": 0.601,
+          "y": 0.555
+        },
+        "label": {
+          "x": 0.625,
+          "y": 0.655
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 3
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 2,
+    "storyTokenCount": 150,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "圖面直接支援measure/mix/add共3個；不追加未演出的寫記錄或泛用動作。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-11T01:26:56.131Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "9c1094a5fae1afe9d9d7f7d43b4dfdea2f263b1ca1cdb1a079dc3d4d159d6151",
+  "targetsSha256": "5374a12166b55a586cd37645aa6530f0924d13828463e67a053e142d12eadf71",
+  "storySha256": "1eb3050559bf14b33abef2f1a256c793b33eadd95400d478d0a53d9b8044aec4",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ],
+  "correctiveNote": "實際桌面量測 height/blue、empty/teacher 標籤文字重疊，僅移動 height、empty 標籤；圖文與錄音沿用 r2 不重產。"
+}

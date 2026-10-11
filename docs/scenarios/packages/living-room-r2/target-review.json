@@ -1,0 +1,424 @@
+{
+  "id": "01",
+  "scenarioKey": "living-room",
+  "revision": 2,
+  "status": "image-text-reviewed-awaiting-ui",
+  "sourceImage": {
+    "path": "output/imagegen/living-room-base-2026-10-09-v1/scene-01-living-room-base.png",
+    "sha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1",
+    "reviewed": true,
+    "containsVocabularyText": false
+  },
+  "targets": [
+    {
+      "word": "sofa",
+      "teachingPos": "n",
+      "visualEvidenceZh": "中央雙人沙發。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.5,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.31,
+          "y": 0.56
+        }
+      }
+    },
+    {
+      "word": "television",
+      "teachingPos": "n",
+      "visualEvidenceZh": "左側螢幕與底座。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.076,
+          "y": 0.32
+        },
+        "label": {
+          "x": 0.092,
+          "y": 0.155
+        }
+      }
+    },
+    {
+      "word": "lamp",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右側邊桌上的檯燈。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.854,
+          "y": 0.328
+        },
+        "label": {
+          "x": 0.85,
+          "y": 0.18
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右前方扶手椅。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.885,
+          "y": 0.671
+        },
+        "label": {
+          "x": 0.91,
+          "y": 0.62
+        }
+      }
+    },
+    {
+      "word": "table",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景橢圓桌面。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.479,
+          "y": 0.718
+        },
+        "label": {
+          "x": 0.5,
+          "y": 0.765
+        }
+      }
+    },
+    {
+      "word": "window",
+      "teachingPos": "n",
+      "visualEvidenceZh": "右後方窗框。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.943,
+          "y": 0.158
+        },
+        "label": {
+          "x": 0.945,
+          "y": 0.115
+        }
+      }
+    },
+    {
+      "word": "curtain",
+      "teachingPos": "n",
+      "visualEvidenceZh": "窗戶旁金黃色窗簾。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.825,
+          "y": 0.123
+        },
+        "label": {
+          "x": 0.8,
+          "y": 0.105
+        }
+      }
+    },
+    {
+      "word": "shelf",
+      "teachingPos": "n",
+      "visualEvidenceZh": "沙發後方書架。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.647,
+          "y": 0.159
+        },
+        "label": {
+          "x": 0.665,
+          "y": 0.125
+        }
+      }
+    },
+    {
+      "word": "book",
+      "teachingPos": "n",
+      "visualEvidenceZh": "男孩手中翻開的書。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.387,
+          "y": 0.38
+        },
+        "label": {
+          "x": 0.397,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "pillow",
+      "teachingPos": "n",
+      "visualEvidenceZh": "妹妹頭下的枕頭。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.712,
+          "y": 0.418
+        },
+        "label": {
+          "x": 0.72,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "clock",
+      "teachingPos": "n",
+      "visualEvidenceZh": "牆上圓形時鐘。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.353,
+          "y": 0.076
+        },
+        "label": {
+          "x": 0.29,
+          "y": 0.105
+        }
+      }
+    },
+    {
+      "word": "plant",
+      "teachingPos": "n",
+      "visualEvidenceZh": "桌上盆栽。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.421,
+          "y": 0.574
+        },
+        "label": {
+          "x": 0.36,
+          "y": 0.715
+        }
+      }
+    },
+    {
+      "word": "picture",
+      "teachingPos": "n",
+      "visualEvidenceZh": "牆上風景畫。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.457,
+          "y": 0.14
+        },
+        "label": {
+          "x": 0.47,
+          "y": 0.18
+        }
+      }
+    },
+    {
+      "word": "floor",
+      "teachingPos": "n",
+      "visualEvidenceZh": "前景地毯外露出的木地板。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.765,
+          "y": 0.96
+        },
+        "label": {
+          "x": 0.75,
+          "y": 0.945
+        }
+      }
+    },
+    {
+      "word": "room",
+      "teachingPos": "n",
+      "visualEvidenceZh": "沙發、電視與閱讀區構成這個房間。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.515,
+          "y": 0.18
+        },
+        "label": {
+          "x": 0.525,
+          "y": 0.085
+        }
+      }
+    },
+    {
+      "word": "comfortable",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "坐著閱讀與靠枕休息的沙發呈現舒適。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.528,
+          "y": 0.488
+        },
+        "label": {
+          "x": 0.43,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "quiet",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "電視沒有播放、孩子安靜閱讀與睡覺。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.077,
+          "y": 0.29
+        },
+        "label": {
+          "x": 0.79,
+          "y": 0.51
+        }
+      }
+    },
+    {
+      "word": "bright",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "窗邊日光與明亮室內。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.934,
+          "y": 0.215
+        },
+        "label": {
+          "x": 0.93,
+          "y": 0.43
+        }
+      }
+    },
+    {
+      "word": "tired",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "妹妹靠在枕頭上睡覺；故事說她玩後累了。",
+      "evidenceKind": "image-and-story",
+      "interaction": {
+        "object": {
+          "x": 0.685,
+          "y": 0.373
+        },
+        "label": {
+          "x": 0.59,
+          "y": 0.315
+        }
+      }
+    },
+    {
+      "word": "asleep",
+      "teachingPos": "adj",
+      "visualEvidenceZh": "妹妹閉眼側躺睡著。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.676,
+          "y": 0.385
+        },
+        "label": {
+          "x": 0.755,
+          "y": 0.32
+        }
+      }
+    },
+    {
+      "word": "read",
+      "teachingPos": "v",
+      "visualEvidenceZh": "男孩正在讀書。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.387,
+          "y": 0.38
+        },
+        "label": {
+          "x": 0.478,
+          "y": 0.37
+        }
+      }
+    },
+    {
+      "word": "sleep",
+      "teachingPos": "v",
+      "visualEvidenceZh": "妹妹側躺睡覺。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.652,
+          "y": 0.419
+        },
+        "label": {
+          "x": 0.615,
+          "y": 0.58
+        }
+      }
+    },
+    {
+      "word": "sit",
+      "teachingPos": "v",
+      "visualEvidenceZh": "男孩坐在沙發上。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.384,
+          "y": 0.449
+        },
+        "label": {
+          "x": 0.28,
+          "y": 0.395
+        }
+      }
+    },
+    {
+      "word": "rest",
+      "teachingPos": "v",
+      "visualEvidenceZh": "妹妹靠著枕頭休息。",
+      "evidenceKind": "image",
+      "interaction": {
+        "object": {
+          "x": 0.61,
+          "y": 0.47
+        },
+        "label": {
+          "x": 0.54,
+          "y": 0.46
+        }
+      }
+    }
+  ],
+  "imageNeeds": [],
+  "preflight": {
+    "counts": {
+      "n": 15,
+      "adj": 5,
+      "v": 4
+    },
+    "nounDeficit": 0,
+    "adjectiveDeficit": 0,
+    "verbDeficit": 1,
+    "storyTokenCount": 134,
+    "allTargetWordsCovered": true,
+    "unmappedTokens": [],
+    "uncoveredTargets": [],
+    "verbDeficitReasonZh": "前後動作可在故事出現，但圖上沒有直接動作證據，未為湊滿5v列入target。"
+  },
+  "reviewed": true,
+  "reviewedAt": "2026-10-10T18:20:50.932Z",
+  "reviewer": "verify_revision_materials",
+  "imageSha256": "82fcd052b2a0c5a48a7c646cec3c2f62b1086e3e11ea934792d649acf2e479f1",
+  "targetsSha256": "1e1e9984d507d2ce5e063fa2448caba27df871e815f887fe9d5eda6e9a39c9a3",
+  "storySha256": "ca2dd2dacecc6790b6de88fe1d24447a0d63daa965b56e0e48cc2d979003f379",
+  "notes": [
+    "已直接查看sourceImage底圖，逐詞核對來源、故事與圖面；標籤依物件分區定位，未宣稱實際桌機或手機UI已通過。",
+    "全九場定稿文字已獨立read-back接受，參照docs/scenarios/preparation/basic-advance-01/revision-02-review.md。"
+  ]
+}
