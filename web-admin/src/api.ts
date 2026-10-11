@@ -9,6 +9,7 @@ import type {
 } from "./types";
 
 const BASE = import.meta.env.VITE_API_BASE ?? "";
+export function scenarioMediaUrl(path: string): string { return `${BASE}${path}`; }
 
 export async function req<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {

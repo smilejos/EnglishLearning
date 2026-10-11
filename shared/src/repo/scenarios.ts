@@ -1,7 +1,8 @@
 import { withTransaction, type DbPool } from "../db";
-import { ScenarioContentSchema, scenarioRevisionHash, validateScenarioMedia, verifyScenarioAssets,
+import { ScenarioContentSchema, scenarioImage, scenarioRevisionHash, validateScenarioMedia, verifyScenarioAssets,
   type ScenarioContent, type ScenarioMedia, type ScenarioRecord, type ScenarioSummary } from "../scenarios";
-import type { Queryable } from "./types";
+import { toNum, type Queryable } from "./types";
+import type { Tag } from "./tags";
 
 export class ScenarioConflictError extends Error {}
 export class ScenarioValidationError extends Error {}
@@ -81,10 +82,43 @@ export async function getScenarioRevision(db: Queryable, key: string, revision?:
   return result.rows[0] ? mapRecord(result.rows[0]) : null;
 }
 export async function listScenarios(db: Queryable, includeDrafts = false): Promise<ScenarioSummary[]> {
-  const result = await db.query("SELECT r.content, r.status FROM scenario_revisions r JOIN learning_scenarios s USING (scenario_key) WHERE " +
+  const result = await db.query<{ content: ScenarioContent; media: ScenarioMedia; status: ScenarioRecord["status"]; tags: Tag[] }>(`SELECT r.content, r.media, r.status,
+    COALESCE((SELECT jsonb_agg(jsonb_build_object('id', t.id, 'kind', t.kind, 'label', t.label) ORDER BY t.label, t.id)
+      FROM scenario_tags st JOIN tags t ON t.id=st.tag_id WHERE st.scenario_key=s.scenario_key), '[]'::jsonb) AS tags
+    FROM scenario_revisions r JOIN learning_scenarios s USING (scenario_key) WHERE ` +
     (includeDrafts ? "r.revision=(SELECT max(revision) FROM scenario_revisions WHERE scenario_key=s.scenario_key)" : "r.revision=s.published_revision AND r.status='published'") + " ORDER BY r.scenario_key");
-  return result.rows.map(({ content, status }) => ({ scenarioKey: content.scenarioKey, revision: content.revision, status,
-    titleZh: content.titleZh, vocabularyFilter: content.vocabularyFilter, targetCount: content.targetCount }));
+  return result.rows.map(({ content, media, status, tags }) => {
+    const targetCounts: ScenarioSummary["targetCounts"] = { n: 0, adj: 0, v: 0 };
+    for (const target of content.targets) targetCounts[target.teachingPos]++;
+    return { scenarioKey: content.scenarioKey, revision: content.revision, status,
+      titleZh: content.titleZh, vocabularyFilter: content.vocabularyFilter, targetCount: content.targetCount,
+      targetCounts, image: scenarioImage({ content, media }),
+      tags: tags.map(tag => ({ ...tag, id: toNum(tag.id) })) };
+  });
+}
+
+/** 此功能所綁定的維度名稱；整批改名維度時會與 tags 一起更新。 */
+export async function getScenarioTagKind(db: Queryable): Promise<string> {
+  const result = await db.query<{ kind: string }>("SELECT kind FROM scenario_tag_settings WHERE singleton");
+  return result.rows[0].kind;
+}
+
+/** 整組取代分類。先驗證所有標籤，再寫入，失敗不清除原分類。 */
+export async function setScenarioTags(pool: DbPool, key: string, tagIds: number[]): Promise<Tag[] | null> {
+  return withTransaction(pool, async tx => {
+    // 與維度改名、單筆標籤搬移共用鎖，避免驗證後維度被改動。
+    const setting = await tx.query<{ kind: string }>("SELECT kind FROM scenario_tag_settings WHERE singleton FOR UPDATE");
+    const scenario = await tx.query("SELECT scenario_key FROM learning_scenarios WHERE scenario_key=$1 FOR UPDATE", [key]);
+    if (!scenario.rows.length) return null;
+    const ids = [...new Set(tagIds)];
+    const selected = await tx.query<Tag>("SELECT id, kind, label FROM tags WHERE id=ANY($1::bigint[]) ORDER BY label, id FOR SHARE", [ids]);
+    if (selected.rows.length !== ids.length || selected.rows.some(tag => tag.kind !== setting.rows[0].kind)) {
+      throw new ScenarioValidationError("只能使用目前情境分類維度的標籤");
+    }
+    await tx.query("DELETE FROM scenario_tags WHERE scenario_key=$1", [key]);
+    if (ids.length) await tx.query("INSERT INTO scenario_tags(scenario_key,tag_id) SELECT $1, unnest($2::bigint[])", [key, ids]);
+    return selected.rows.map(tag => ({ ...tag, id: toNum(tag.id) }));
+  });
 }
 export async function publishScenarioRevision(pool: DbPool, key: string, revision: number, roots: { imageDir: string; audioDir: string }): Promise<ScenarioRecord | null> {
   return withTransaction(pool, async tx => {

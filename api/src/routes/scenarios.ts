@@ -1,7 +1,8 @@
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
 import { getScenarioRevision, importScenarioRevision, listScenarios, publishScenarioRevision, readScenarioAsset, scenarioDetail,
-  ScenarioKeySchema, ScenarioContentSchema, ScenarioAssetSchema, ScenarioConflictError, ScenarioValidationError, type DbPool } from "@el/shared";
+  ScenarioKeySchema, ScenarioContentSchema, ScenarioAssetSchema, ScenarioConflictError, ScenarioValidationError,
+  getScenarioTagKind, setScenarioTags, type DbPool } from "@el/shared";
 import { requireAdmin } from "../auth";
 export interface ScenarioRouteDeps { imageDir: string; audioDir: string }
 const Params = z.object({ key: ScenarioKeySchema, revision: z.coerce.number().int().positive().optional() });
@@ -23,6 +24,22 @@ export function registerScenarioRoutes(app: FastifyInstance, pool: DbPool, roots
     if (!query.success) return reply.code(400).send({ error: "invalid query" });
     if (query.data.includeDrafts === "true" && request.user?.role !== "admin") return reply.code(403).send({ error: "admin only" });
     return { scenarios: await listScenarios(pool, query.data.includeDrafts === "true") };
+  });
+  app.get("/scenarios/taxonomy/tag-kind", async (request, reply) => {
+    if (!Empty.safeParse(request.query).success) return reply.code(400).send({ error: "invalid query" });
+    return { kind: await getScenarioTagKind(pool) };
+  });
+  app.put("/scenarios/:key/tags", { preHandler: requireAdmin }, async (request, reply) => {
+    const params = z.object({ key: ScenarioKeySchema }).strict().safeParse(request.params);
+    const body = z.object({ tagIds: z.array(z.number().int().positive().safe()).max(100) }).strict().safeParse(request.body);
+    if (!params.success || !body.success || !Empty.safeParse(request.query).success) return reply.code(400).send({ error: "invalid scenario tags" });
+    try {
+      const tags = await setScenarioTags(pool, params.data.key, body.data.tagIds);
+      return tags ? { tags } : reply.code(404).send({ error: "scenario not found" });
+    } catch (error) {
+      if (error instanceof ScenarioValidationError) return reply.code(400).send({ error: error.message });
+      throw error;
+    }
   });
   for (const url of ["/scenarios/:key", "/scenarios/:key/revisions/:revision"]) app.get(url, async (request, reply) => {
     const params = Params.safeParse(request.params);

@@ -13,7 +13,7 @@ import { VocabularySaveButton } from "./VocabularySaveButton";
 import { VocabularyReview } from "./VocabularyReview";
 import { LearningHome } from "./LearningHome";
 import { WordbankPractice } from "./WordbankPractice";
-import { ScenarioLearning, ScenarioList, scenarioKeyFromHash, scenarioRevisionFromHash } from "./ScenarioLearning";
+import { ScenarioLearning, ScenarioList, scenarioKeyFromHash, scenarioRevisionFromHash, scenarioCategoryFromHash } from "./ScenarioLearning";
 import { popupTitle } from "./lib/vocab";
 import { explanationAudioReady } from "./lib/explanation";
 import {
@@ -952,7 +952,8 @@ export default function App() {
   const reviewOpen = hash === "#/review";
   const practiceOpen = hash === "#/practice";
   const articlesOpen = hash === "#/articles";
-  const scenariosOpen = hash === "#/scenarios";
+  const scenariosOpen = hash.split("?")[0] === "#/scenarios";
+  const scenarioCategory = scenarioCategoryFromHash(hash);
   const scenarioKey = scenarioKeyFromHash(hash);
   const scenarioRevision = scenarioRevisionFromHash(hash);
   const target = readArticleTarget(hash);
@@ -1000,11 +1001,11 @@ export default function App() {
       ) : practiceOpen ? (
         <WordbankPractice />
       ) : scenariosOpen ? (
-        <ScenarioList />
+        <ScenarioList categoryId={scenarioCategory} />
       ) : scenarioRevision !== null ? (
         <ScenarioLearning key={`${scenarioRevision.scenarioKey}:${scenarioRevision.revision}`} {...scenarioRevision} />
       ) : scenarioKey !== null ? (
-        <ScenarioLearning key={scenarioKey} scenarioKey={scenarioKey} />
+        <ScenarioLearning key={scenarioKey} scenarioKey={scenarioKey} categoryId={scenarioCategory} />
       ) : articlesOpen ? (
         <ArticleList onOpen={navigate} />
       ) : openId !== null ? (

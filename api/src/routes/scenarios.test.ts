@@ -32,7 +32,8 @@ beforeAll(async () => {
 });
 afterAll(async () => { await pool.end(); });
 beforeEach(async () => {
-  await pool.query("TRUNCATE learning_scenarios, users, wordbank_entries CASCADE");
+  await pool.query("TRUNCATE learning_scenarios, tags, users, wordbank_entries CASCADE");
+  await pool.query("UPDATE scenario_tag_settings SET kind='情境' WHERE singleton");
   const refs = new Set([...content.targets, ...content.story.sentences.flatMap(s => s.wordLinks)].map(t => t.entryGuid));
   const entries = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8"))).filter(e => refs.has(e.guid));
   await importWordbankEntries(pool, entries);
@@ -46,7 +47,7 @@ beforeEach(async () => {
   reader = buildApp({ pool, config: readerConfig, scenarios: roots, audioDir: roots.audioDir });
   admin = buildApp({ pool, config: { ...readerConfig, devUserEmail: "admin@example.com", adminEmails: ["admin@example.com"] }, scenarios: roots, audioDir: roots.audioDir });
 });
-afterEach(async () => { await reader.close(); await admin.close(); await rm(directory, { recursive: true, force: true }); });
+afterEach(async () => { await reader.close(); await admin.close(); await pool.query("UPDATE scenario_tag_settings SET kind='情境' WHERE singleton"); await rm(directory, { recursive: true, force: true }); });
 const mediaUrl = (kind: string) => `/scenarios/${content.scenarioKey}/revisions/${content.revision}/media/${kind}`;
 const revisionUrl = () => `/scenarios/${content.scenarioKey}/revisions/${content.revision}`;
 const publish = () => admin.inject({ method: "POST", url: `${revisionUrl()}/publish`, payload: {} });
@@ -75,6 +76,35 @@ describe("正式情境 revision、權限與媒體", () => {
     expect((await reader.inject(`/audio/${media.audio.relativePath.replace("scenarios", "%73cenarios")}`)).statusCode).toBe(404);
     const unauth = buildApp({ pool, config: { ...readerConfig, devAuthBypass: false }, scenarios: roots });
     try { expect((await unauth.inject(mediaUrl("image"))).statusCode).toBe(403); } finally { await unauth.close(); }
+  });
+  it("清單依本版教學詞性計數並含零值；admin 最新草稿與 reader 發布版縮圖各自對應固定 revision", async () => {
+    // 字庫可有多詞性；每個目標只按本篇選定的教學詞性計一次。
+    await pool.query("UPDATE wordbank_entries SET parts_of_speech=ARRAY['n','adj','v'] WHERE guid=ANY($1::uuid[])", [content.targets.map(target => target.entryGuid)]);
+    const nounContent: ScenarioContent = { ...content, targets: content.targets.map(target => ({ ...target, teachingPos: "n" })) };
+    await importScenarioRevision(pool, nounContent, media, roots);
+    expect((await publish()).statusCode).toBe(200);
+    const next = structuredClone(nounContent); next.revision++;
+    next.targets[0].teachingPos = "adj"; next.targets[1].teachingPos = "v";
+    const nextImage = await sharp({ create: { width: 20, height: 10, channels: 3, background: "blue" } }).png().toBuffer();
+    const nextMedia = structuredClone(media);
+    nextMedia.image = { ...nextMedia.image, relativePath: `scenarios/${next.scenarioKey}/${next.revision}/${scenarioHash(nextImage)}.png`,
+      sha256: scenarioHash(nextImage), bytes: nextImage.length, width: 20, height: 10 };
+    nextMedia.audio.relativePath = nextMedia.audio.relativePath.replace(`/${content.revision}/`, `/${next.revision}/`);
+    for (const [asset, data, root] of [[nextMedia.image, nextImage, roots.imageDir], [nextMedia.audio, audioData, roots.audioDir]] as const) {
+      const destination = path.join(root, asset.relativePath);
+      await mkdir(path.dirname(destination), { recursive: true }); await writeFile(destination, data);
+    }
+    await importScenarioRevision(pool, next, nextMedia, roots);
+    const published = (await reader.inject("/scenarios")).json().scenarios[0];
+    const draft = (await admin.inject("/scenarios?includeDrafts=true")).json().scenarios[0];
+    expect(published).toMatchObject({ revision: content.revision, status: "published", targetCounts: { n: 15, adj: 0, v: 0 }, image: { url: mediaUrl("image"), width: 16, height: 9 } });
+    expect(draft).toMatchObject({ revision: next.revision, status: "draft", targetCounts: { n: 13, adj: 1, v: 1 },
+      image: { url: `/scenarios/${next.scenarioKey}/revisions/${next.revision}/media/image`, width: 20, height: 10 } });
+    for (const summary of [published, draft]) expect(Object.values(summary.targetCounts).reduce((sum: number, count) => sum + Number(count), 0)).toBe(summary.targetCount);
+    expect((await reader.inject(published.image.url)).rawPayload).toEqual(imageData);
+    expect((await admin.inject(draft.image.url)).rawPayload).toEqual(nextImage);
+    expect((await reader.inject(draft.image.url)).statusCode).toBe(404);
+    expect((await admin.inject(`/scenarios/${next.scenarioKey}/revisions/${next.revision}`)).json().image).toEqual(draft.image);
   });
   it("同key/revision冪等；內容不同拒絕、DB trigger不可覆寫、未產生文章或job", async () => {
     await importScenarioRevision(pool, content, media, roots);
@@ -113,6 +143,59 @@ describe("正式情境 revision、權限與媒體", () => {
     })).rejects.toThrow("hash");
     await expect(readFile(marker)).rejects.toThrow();
     expect((await pool.query("SELECT count(*)::int n FROM learning_scenarios")).rows[0].n).toBe(0);
+  });
+});
+
+describe("情境分類與既有標籤維度", () => {
+  const makeTag = async (kind: string, label: string) => (await admin.inject({ method: "POST", url: "/tags", payload: { kind, label } })).json().tag;
+  const setTags = (tagIds: number[]) => admin.inject({ method: "PUT", url: `/scenarios/${content.scenarioKey}/tags`, payload: { tagIds } });
+  const summaries = async () => (await admin.inject("/scenarios?includeDrafts=true")).json().scenarios;
+
+  it("admin 可分類既有草稿／發布教材，多選去重與清除不改內容 hash；reader 不能修改", async () => {
+    await importScenarioRevision(pool, content, media, roots);
+    const before = (await pool.query("SELECT content_hash, content, media, status FROM scenario_revisions")).rows[0];
+    const home = await makeTag("情境", "家庭"), school = await makeTag("情境", "校園");
+    expect((await reader.inject("/scenarios/taxonomy/tag-kind")).json()).toEqual({ kind: "情境" });
+    expect((await reader.inject({ method: "PUT", url: `/scenarios/${content.scenarioKey}/tags`, payload: { tagIds: [home.id] } })).statusCode).toBe(403);
+    expect((await setTags([home.id, school.id, home.id])).json().tags).toHaveLength(2);
+    expect((await summaries())[0].tags).toEqual(expect.arrayContaining([home, school]));
+    expect((await reader.inject("/scenarios")).json().scenarios).toEqual([]);
+    expect((await pool.query("SELECT content_hash, content, media, status FROM scenario_revisions")).rows[0]).toEqual(before);
+    expect((await publish()).statusCode).toBe(200);
+    expect((await reader.inject("/scenarios")).json().scenarios[0].tags).toEqual(expect.arrayContaining([home, school]));
+    expect((await setTags([])).json()).toEqual({ tags: [] });
+    expect((await summaries())[0].tags).toEqual([]);
+    expect((await pool.query("SELECT content_hash FROM scenario_revisions")).rows[0].content_hash).toBe(before.content_hash);
+  });
+
+  it("拒絕其他維度、未知 id 與 malformed body，失敗保留原分類；未知情境 404", async () => {
+    await importScenarioRevision(pool, content, media, roots);
+    const home = await makeTag("情境", "家庭"), topic = await makeTag("題材", "文化");
+    await setTags([home.id]);
+    for (const ids of [[home.id, topic.id], [home.id, 999999]]) expect((await setTags(ids)).statusCode).toBe(400);
+    for (const payload of [{ tagIds: [-1] }, { tagIds: [1.5] }, { tagIds: ["1"] }, { tagIds: [], extra: true }, {}]) {
+      expect((await admin.inject({ method: "PUT", url: `/scenarios/${content.scenarioKey}/tags`, payload })).statusCode).toBe(400);
+    }
+    expect((await summaries())[0].tags).toEqual([home]);
+    expect((await admin.inject({ method: "PUT", url: "/scenarios/nonexistent/tags", payload: { tagIds: [] } })).statusCode).toBe(404);
+  });
+
+  it("維度與標籤改名保持分類 id；改名後仍能設定，搬離維度或刪除只移除分類", async () => {
+    await importScenarioRevision(pool, content, media, roots);
+    const home = await makeTag("情境", "家庭"), school = await makeTag("情境", "校園");
+    await setTags([home.id, school.id]);
+    expect((await admin.inject({ method: "POST", url: "/tag-kinds/rename", payload: { from: "情境", to: "生活場景" } })).json().updated).toBe(2);
+    expect((await reader.inject("/scenarios/taxonomy/tag-kind")).json()).toEqual({ kind: "生活場景" });
+    expect((await summaries())[0].tags).toEqual(expect.arrayContaining([{ ...home, kind: "生活場景" }, { ...school, kind: "生活場景" }]));
+    expect((await setTags([home.id, school.id])).statusCode).toBe(200);
+    await admin.inject({ method: "PATCH", url: `/tags/${home.id}`, payload: { label: "居家" } });
+    expect((await summaries())[0].tags).toContainEqual({ ...home, kind: "生活場景", label: "居家" });
+    await admin.inject({ method: "PATCH", url: `/tags/${school.id}`, payload: { kind: "題材" } });
+    expect((await summaries())[0].tags).toHaveLength(1);
+    expect((await setTags([school.id])).statusCode).toBe(400);
+    await admin.inject({ method: "DELETE", url: `/tags/${home.id}` });
+    expect((await summaries())[0].tags).toEqual([]);
+    expect((await pool.query("SELECT count(*)::int n FROM scenario_revisions")).rows[0].n).toBe(1);
   });
 });
 

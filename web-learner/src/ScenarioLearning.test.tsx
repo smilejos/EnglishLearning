@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { act, cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import App from "./App";
-import { ScenarioLearning, ScenarioList, scenarioKeyFromHash, scenarioRevisionFromHash } from "./ScenarioLearning";
+import { ScenarioLearning, ScenarioList, scenarioKeyFromHash, scenarioRevisionFromHash, scenarioCategoryFromHash } from "./ScenarioLearning";
 import * as api from "./api";
 import type { ScenarioDetail } from "./scenarioTypes";
 import type { WordbankEntry } from "./wordbankTypes";
@@ -14,8 +14,9 @@ vi.mock("./api", () => ({
 }));
 const words = ["sofa", "television", "lamp", "chair", "table", "read", "sleep", "comfortable", "window", "curtain", "shelf", "book", "pillow", "clock", "plant"];
 const scenario: ScenarioDetail = {
-  scenarioKey: "living-room", revision: 1, status: "published", titleZh: "午後客廳", targetCount: 15,
+  scenarioKey: "living-room", revision: 1, status: "published", titleZh: "午後客廳", targetCount: 15, targetCounts: { n: 12, adj: 1, v: 2 },
   vocabularyFilter: { system: "list", levels: ["basic", "advance"] },
+  tags: [{ id: 1, kind: "情境", label: "家庭" }],
   targets: words.map((word, index) => ({ word, entryGuid: `${word}-guid`, list: "basic", teachingPos: ["read", "sleep"].includes(word) ? "v" : word === "comfortable" ? "adj" : "n", senseZh: `情境釋義${index}`,
     interaction: { label: { x: .1 + index * .04, y: .15 }, object: { x: .1 + index * .04, y: .4 } } })),
   story: { textEn: "Books are comfortable.", textZh: "書本很舒服。", sentences: [{ id: "s1", en: "Books are comfortable.", zh: "書本很舒服。",
@@ -94,12 +95,16 @@ describe("正式情境學習", () => {
     render(<App />);
     expect(screen.getByRole("link", { name: /情境模擬/ }).getAttribute("href")).toBe("#/scenarios");
     await act(async () => { window.location.hash = "#/scenarios"; window.dispatchEvent(new Event("hashchange")); });
+    const categoryLink = await screen.findByRole("link", { name: /家庭/ });
+    expect(screen.queryByRole("link", { name: /午後客廳/ })).toBeNull();
+    await act(async () => { window.location.hash = categoryLink.getAttribute("href")!; window.dispatchEvent(new Event("hashchange")); });
     const sceneLink = await screen.findByRole("link", { name: /午後客廳/ });
-    expect(sceneLink.getAttribute("href")).toBe("#/scenarios/living-room");
+    expect(sceneLink.getAttribute("href")).toBe("#/scenarios/living-room?category=1");
     await act(async () => { window.location.hash = sceneLink.getAttribute("href")!; window.dispatchEvent(new Event("hashchange")); });
     await screen.findByRole("button", { name: "查看 sofa 單字卡" });
     expect(api.getScenario).toHaveBeenCalledWith("living-room", expect.any(AbortSignal));
-    await act(async () => { window.location.hash = "#/scenarios"; window.dispatchEvent(new Event("hashchange")); });
+    expect(screen.getByRole("link", { name: "回情境清單" }).getAttribute("href")).toBe("#/scenarios?category=1");
+    await act(async () => { window.location.hash = "#/scenarios?category=1"; window.dispatchEvent(new Event("hashchange")); });
     await screen.findByRole("link", { name: /午後客廳/ });
     expect(api.listScenarios).toHaveBeenCalledTimes(2);
     expect(audios).toHaveLength(0);
@@ -110,7 +115,7 @@ describe("正式情境學習", () => {
 
   it("清單只呈現published並能篩選程度，提供空清單與載入失敗重試", async () => {
     vi.mocked(api.listScenarios).mockRejectedValueOnce(new Error("offline"));
-    render(<ScenarioList />);
+    render(<ScenarioList categoryId={1} />);
     await screen.findByRole("alert");
     fireEvent.click(screen.getByRole("button", { name: "重新載入" }));
     await screen.findByRole("link", { name: /午後客廳/ });
@@ -121,6 +126,62 @@ describe("正式情境學習", () => {
     vi.mocked(api.listScenarios).mockResolvedValue({ scenarios: [{ ...scenario, status: "draft" }] });
     render(<ScenarioList />);
     await screen.findByText("目前還沒有已發布的情境。");
+  });
+
+  it("分類只統計已發布篇目，多情境共用同篇，未分類與失效分類可返回", async () => {
+    vi.mocked(api.listScenarios).mockResolvedValue({ scenarios: [
+      { ...scenario, tags: [...scenario.tags!, { id: 2, kind: "情境", label: "餐廳" }] },
+      { ...scenario, scenarioKey: "unassigned", titleZh: "整理房間", tags: [] },
+      { ...scenario, scenarioKey: "hidden", status: "draft", tags: [{ id: 3, kind: "情境", label: "校園" }] },
+    ] });
+    const view = render(<ScenarioList />);
+    expect(await screen.findByRole("link", { name: /家庭 1 篇/ })).toBeTruthy();
+    expect(screen.getByRole("link", { name: /餐廳 1 篇/ })).toBeTruthy();
+    expect(screen.getByRole("link", { name: /未分類 1 篇/ }).getAttribute("href")).toBe("#/scenarios?category=0");
+    expect(screen.queryByRole("link", { name: /校園/ })).toBeNull();
+    view.rerender(<ScenarioList categoryId={2} />);
+    expect(screen.getByRole("link", { name: /午後客廳/ }).getAttribute("href")).toBe("#/scenarios/living-room?category=2");
+    fireEvent.change(screen.getByRole("combobox"), { target: { value: "expert" } });
+    view.rerender(<ScenarioList categoryId={0} />);
+    expect(await screen.findByRole("link", { name: /整理房間/ })).toBeTruthy();
+    expect(screen.queryByRole("link", { name: /午後客廳/ })).toBeNull();
+    view.rerender(<ScenarioList categoryId={999} />);
+    expect(screen.getByText(/這個分類目前沒有已發布/)).toBeTruthy();
+    expect(screen.getByRole("link", { name: "回情境分類" }).getAttribute("href")).toBe("#/scenarios");
+    expect(scenarioCategoryFromHash("#/scenarios?category=0")).toBe(0);
+    for (const bad of ["-1", "1.2", "hello", "99999999999999999999"]) expect(scenarioCategoryFromHash(`#/scenarios?category=${bad}`)).toBeNull();
+    expect(scenarioKeyFromHash("#/scenarios/living-room?category=2")).toBe("living-room");
+  });
+
+  it("分類卡片只取同分類已發布篇目的圖片，略過缺圖並保留分類連結", async () => {
+    vi.mocked(api.listScenarios).mockResolvedValue({ scenarios: [
+      { ...scenario, scenarioKey: "missing", image: undefined },
+      scenario,
+      { ...scenario, scenarioKey: "hidden", status: "draft", image: { ...scenario.image, url: "/hidden/image" } },
+      { ...scenario, scenarioKey: "school", tags: [{ id: 2, kind: "情境", label: "校園" }], image: { ...scenario.image, url: "/school/image" } },
+    ] });
+    render(<ScenarioList />);
+    const family = await screen.findByRole("link", { name: /家庭 2 篇/ });
+    expect(within(family).getByRole("img").getAttribute("src")).toBe(scenario.image.url);
+    expect(family.getAttribute("href")).toBe("#/scenarios?category=1");
+    const school = screen.getByRole("link", { name: /校園 1 篇/ });
+    expect(within(school).getByRole("img").getAttribute("src")).toBe("/school/image");
+    fireEvent.error(within(family).getByRole("img"));
+    expect(within(family).getByText("圖片未能載入")).toBeTruthy();
+    expect(family.getAttribute("href")).toBe("#/scenarios?category=1");
+  });
+
+  it("篇目顯示本版名詞／形容詞／動詞數量及圖片，失敗仍能進入學習", async () => {
+    vi.mocked(api.listScenarios).mockResolvedValue({ scenarios: [{ ...scenario, targetCounts: { n: 15, adj: 0, v: 0 } }] });
+    render(<ScenarioList categoryId={1} />);
+    expect(await screen.findByText("名詞 15 個 · 形容詞 0 個 · 動詞 0 個")).toBeTruthy();
+    expect(screen.queryByText("basic ＋ advance · 15 詞")).toBeNull();
+    const image = screen.getByRole("img", { name: "午後客廳的情境縮圖" });
+    expect(image.getAttribute("src")).toBe("/scenarios/living-room/revisions/1/media/image");
+    expect(image.getAttribute("loading")).toBe("lazy");
+    fireEvent.error(image);
+    expect(screen.getByText("圖片未能載入")).toBeTruthy();
+    expect(screen.getByRole("link", { name: /午後客廳/ }).getAttribute("href")).toBe("#/scenarios/living-room?category=1");
   });
 
   it("detail失敗可重試，不顯示draft；只點標籤才依GUID載入完整卡與全部例句", async () => {
@@ -221,7 +282,7 @@ describe("正式情境學習", () => {
     vi.mocked(api.getScenario).mockResolvedValue(expanded);
     vi.mocked(api.getWordbankEntry).mockResolvedValue({ ...entry("read"), partsOfSpeech: ["n", "v"] });
     await load();
-    expect(screen.getByText("basic ＋ advance · 25 詞")).toBeTruthy();
+    expect(screen.queryByText("basic ＋ advance · 25 詞")).toBeNull();
     expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(25);
     fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
     expect(screen.queryByRole("button", { name: /^動詞/ })).toBeNull();

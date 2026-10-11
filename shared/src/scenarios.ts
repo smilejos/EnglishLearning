@@ -64,7 +64,7 @@ export const ScenarioAssetSchema = z.object({ relativePath: z.string().regex(/^s
 export type ScenarioAsset = z.infer<typeof ScenarioAssetSchema>;
 export interface ScenarioMedia { image: ScenarioAsset; audio: ScenarioAsset }
 export interface ScenarioRecord { content: ScenarioContent; media: ScenarioMedia; status: "draft" | "published"; contentHash: string }
-export interface ScenarioSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; vocabularyFilter: ScenarioContent["vocabularyFilter"]; targetCount: number }
+export interface ScenarioSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; vocabularyFilter: ScenarioContent["vocabularyFilter"]; targetCount: number; targetCounts: Record<ScenarioContent["targets"][number]["teachingPos"], number>; image: ScenarioDetail["image"]; tags: import("./repo/tags").Tag[] }
 export interface ScenarioDetail extends ScenarioContent { status: "draft" | "published"; image: { url: string; width: number; height: number }; storyAudio: { url: string } }
 export const scenarioHash = (data: string | Buffer): string => createHash("sha256").update(data).digest("hex");
 /** 物件 key 順序不構成新的 revision。 */
@@ -108,9 +108,12 @@ export async function verifyScenarioAssets(content: ScenarioContent, media: Scen
   if (metadata.width !== media.image.width || metadata.height !== media.image.height || contentTypes[metadata.format ?? ""] !== media.image.contentType) throw new Error("圖片實際格式/尺寸與 metadata 不符");
   if (!(audio.subarray(0, 3).toString() === "ID3" || (audio[0] === 255 && (audio[1] & 224) === 224))) throw new Error("故事音檔不是 MP3");
 }
+export function scenarioImage(row: Pick<ScenarioRecord, "content" | "media">): ScenarioDetail["image"] {
+  return { url: `/scenarios/${row.content.scenarioKey}/revisions/${row.content.revision}/media/image`, width: row.media.image.width!, height: row.media.image.height! };
+}
 export function scenarioDetail(row: ScenarioRecord): ScenarioDetail {
   const prefix = `/scenarios/${row.content.scenarioKey}/revisions/${row.content.revision}/media`;
-  return { ...row.content, status: row.status, image: { url: `${prefix}/image`, width: row.media.image.width!, height: row.media.image.height! }, storyAudio: { url: `${prefix}/audio` } };
+  return { ...row.content, status: row.status, image: scenarioImage(row), storyAudio: { url: `${prefix}/audio` } };
 }
 
 /** 只建立不存在的媒體；相同hash重用，既有不同hash/任何symlink均拒絕。 */

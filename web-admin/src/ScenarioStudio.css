@@ -15,6 +15,21 @@
 .studio-drafts, .studio-job-list ul { list-style: none; padding: 0; margin: 24px 0 0; }
 .studio-drafts li { display: flex; gap: 16px; justify-content: space-between; align-items: center; padding: 18px 0; border-top: 1px solid var(--border); }
 .studio-drafts p { margin: 5px 0 0; color: var(--text-soft); font-size: .85rem; }
+.studio-drafts li > div:first-child { min-width: 0; flex: 1; }
+.studio-drafts strong { overflow-wrap: anywhere; }
+.studio-scenario-tags { display: grid; grid-template-columns: minmax(0, 392px) minmax(0, 1fr); gap: 16px; align-items: center; width: 100%; }
+.studio-scenario-tags > .studio-actions { justify-content: flex-end; }
+.studio-scenario-summary { display: grid; grid-template-columns: minmax(0, 1fr) 128px; align-items: center; gap: 24px; min-width: 0; }
+.studio-scenario-summary > div { min-width: 0; }
+.studio-scenario-thumbnail { display: grid; place-items: center; width: 128px; aspect-ratio: 16 / 9; flex: 0 0 auto; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
+.studio-scenario-thumbnail img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.studio-scenario-thumbnail > span { color: var(--text-soft); font-size: .85rem; text-align: center; padding: 8px; }
+.studio-scenario-tags form { grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--border); max-width: 580px; }
+.studio-scenario-tags fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
+.studio-scenario-tags legend { font-size: .9rem; font-weight: 650; margin-bottom: 8px; }
+.studio-tag-choices { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.studio-tag-choices .studio-check { min-height: 44px; align-items: center; }
+.studio-scenario-tags [role="alert"] { color: var(--danger); margin-bottom: 12px; }
 .studio-draft-bar { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 0 0 18px; }
 .studio-draft-bar > div { display: grid; gap: 4px; }
 .studio-draft-bar span { color: var(--text-soft); font-size: .85rem; }
@@ -98,5 +113,10 @@
   .studio-position-image { min-width: 900px; }
   .studio-word-result { flex-wrap: wrap; }
   .studio-drafts li { flex-wrap: wrap; }
+  .studio-drafts li > div:first-child { flex: 1 1 100%; }
+  .studio-drafts li > .studio-actions { width: 100%; }
+  .studio-scenario-tags { grid-template-columns: minmax(0, 1fr); }
+  .studio-scenario-summary { grid-template-columns: minmax(0, 1fr) 104px; gap: 16px; }
+  .studio-scenario-thumbnail { width: 104px; }
   .studio-actions .btn { flex: 1 1 180px; justify-content: center; }
 }

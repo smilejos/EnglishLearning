@@ -7,9 +7,10 @@ import { ScenarioDialog } from "./ScenarioDialog";
 import { ScenarioWordCard } from "./ScenarioWordCard";
 import { useScenarioNarration } from "./ScenarioAudio";
 import "./ScenarioLearning.css";
+import { ScenarioThumbnail } from "./ScenarioThumbnail";
 
 export function scenarioKeyFromHash(hash: string): string | null {
-  const match = /^#\/scenarios\/([^/?#]+)$/.exec(hash);
+  const match = /^#\/scenarios\/([^/?#]+)(?:\?[^#]*)?$/.exec(hash);
   if (!match) return null;
   try { return decodeURIComponent(match[1]); } catch { return null; }
 }
@@ -22,11 +23,19 @@ export function scenarioRevisionFromHash(hash: string): { scenarioKey: string; r
   try { return { scenarioKey: decodeURIComponent(match[1]), revision }; } catch { return null; }
 }
 
-export function ScenarioList() {
+export function scenarioCategoryFromHash(hash: string): number | null {
+  const value = new URLSearchParams(hash.split("?")[1]).get("category");
+  if (value === null || !/^(0|[1-9]\d*)$/.test(value)) return null;
+  const id = Number(value);
+  return Number.isSafeInteger(id) ? id : null;
+}
+
+export function ScenarioList({ categoryId = null }: { categoryId?: number | null }) {
   const [scenarios, setScenarios] = useState<ScenarioSummary[] | null>(null);
   const [error, setError] = useState(false);
   const [retry, setRetry] = useState(0);
   const [level, setLevel] = useState("");
+  useEffect(() => { setLevel(""); }, [categoryId]);
   useEffect(() => {
     const controller = new AbortController();
     setScenarios(null); setError(false);
@@ -35,22 +44,43 @@ export function ScenarioList() {
     }).catch(() => { if (!controller.signal.aborted) setError(true); });
     return () => controller.abort();
   }, [retry]);
-  const visible = scenarios?.filter(item => !level || item.vocabularyFilter.levels.includes(level));
+  const categories = new Map<number, { label: string; count: number; preview: ScenarioSummary }>();
+  for (const item of scenarios ?? []) {
+    const tags = item.tags?.length ? item.tags : [{ id: 0, label: "未分類" }];
+    for (const tag of tags) {
+      const previous = categories.get(tag.id);
+      categories.set(tag.id, { label: tag.label, count: (previous?.count ?? 0) + 1,
+        preview: previous?.preview.image ? previous.preview : item });
+    }
+  }
+  const category = categoryId === null ? null : categories.get(categoryId);
+  const inCategory = scenarios?.filter(item => categoryId === 0 ? !item.tags?.length : item.tags?.some(tag => tag.id === categoryId));
+  const visible = inCategory?.filter(item => !level || item.vocabularyFilter.levels.includes(level));
   return <main className="scenario-learning scenario-wrap">
-    <a className="link-btn scenario-return" href="#/">回首頁</a>
-    <div className="scenario-heading"><div><h1>情境模擬</h1><p>看一張圖、聽一個故事，在生活中認識英文。</p></div></div>
-    {scenarios && <label className="scenario-list-filter">字庫分級
+    <a className="link-btn scenario-return" href={categoryId === null ? "#/" : "#/scenarios"}>{categoryId === null ? "回首頁" : "回情境分類"}</a>
+    <div className="scenario-heading"><div><h1>{categoryId === null ? "情境模擬" : category?.label ?? "情境分類"}</h1>
+      <p>{categoryId === null ? "先選擇情境，再挑一篇故事開始探索。" : "選一篇情境，看圖學習、聽故事，在生活中認識英文。"}</p></div></div>
+    {scenarios && categoryId !== null && <label className="scenario-list-filter">字庫分級
       <select value={level} onChange={event => setLevel(event.target.value)}><option value="">全部程度</option>
         <option value="basic">basic</option><option value="advance">advance</option><option value="expert">expert</option></select>
     </label>}
     {error ? <div role="alert" className="scenario-load-state"><p>情境清單載入失敗，請重試。</p>
       <button className="btn" onClick={() => setRetry(retry + 1)}>重新載入</button></div> :
       !scenarios ? <p role="status" className="scenario-load-state">正在載入情境…</p> :
-      !visible?.length ? <p className="scenario-load-state">{scenarios.length ? "目前沒有符合程度的情境。請調整篩選。" : "目前還沒有已發布的情境。"}</p> :
-      <nav className="scenario-list" aria-label="已發布情境">{visible.map(item => <a key={item.scenarioKey}
-        href={`#/scenarios/${encodeURIComponent(item.scenarioKey)}`} className="scenario-list-item">
-        <div><h2>{item.titleZh}</h2><p>{item.vocabularyFilter.levels.join(" ＋ ")} · {item.targetCount} 詞</p></div>
-        <span>開始探索 <span aria-hidden="true">→</span></span>
+      !scenarios.length ? <p className="scenario-load-state">目前還沒有已發布的情境。</p> :
+      categoryId === null ? <nav className="cards scenario-cards" aria-label="情境分類">{[...categories].sort(([a, x], [b, y]) => a === 0 ? 1 : b === 0 ? -1 : x.label.localeCompare(y.label, "zh-Hant")).map(([id, item]) =>
+        <a key={id} href={`#/scenarios?category=${id}`} className="card scenario-card">
+          <div className="card__cover"><ScenarioThumbnail key={`${item.preview.scenarioKey}:${item.preview.revision}`} image={item.preview.image} title={item.label} /></div>
+          <div className="card__body"><h2 className="card__title">{item.label}</h2><p>{item.count} 篇情境</p><span className="scenario-card-action">選擇情境 <span aria-hidden="true">→</span></span></div>
+        </a>)}</nav> :
+      !category ? <p className="scenario-load-state">這個分類目前沒有已發布的情境。請返回情境分類重新選擇。</p> :
+      !visible?.length ? <p className="scenario-load-state">目前沒有符合程度的情境。請調整篩選。</p> :
+      <nav className="cards scenario-cards" aria-label={`${category.label}的情境`}>{visible.map(item => <a key={item.scenarioKey}
+        href={`#/scenarios/${encodeURIComponent(item.scenarioKey)}?category=${categoryId}`} className="card scenario-card">
+        <div className="card__cover"><ScenarioThumbnail key={`${item.scenarioKey}:${item.revision}`} image={item.image} title={item.titleZh} /></div>
+        <div className="card__body"><h2 className="card__title">{item.titleZh}</h2><p>{item.targetCounts
+          ? `名詞 ${item.targetCounts.n} 個 · 形容詞 ${item.targetCounts.adj} 個 · 動詞 ${item.targetCounts.v} 個`
+          : "詞性數量待提供"}</p><span className="scenario-card-action">開始探索 <span aria-hidden="true">→</span></span></div>
       </a>)}</nav>}
   </main>;
 }
@@ -86,7 +116,7 @@ function storyParagraphs(story: ScenarioDetail["story"]): ScenarioSentence[][] {
   return paragraphs;
 }
 
-export function ScenarioLearning({ scenarioKey, revision }: { scenarioKey: string; revision?: number }) {
+export function ScenarioLearning({ scenarioKey, revision, categoryId }: { scenarioKey: string; revision?: number; categoryId?: number | null }) {
   const [data, setData] = useState<ScenarioDetail | null>(null);
   const [loadFailed, setLoadFailed] = useState(false);
   const [retry, setRetry] = useState(0);
@@ -164,22 +194,26 @@ export function ScenarioLearning({ scenarioKey, revision }: { scenarioKey: strin
   const target = data?.targets.find(item => item.entryGuid === selected);
   const paragraphs = data ? storyParagraphs(data.story) : [];
   if (!data) return <main className="scenario-learning scenario-wrap">
-    <a href="#/scenarios" className="link-btn">回情境清單</a>
+    <a href={categoryId == null ? "#/scenarios" : `#/scenarios?category=${categoryId}`} className="link-btn">回情境清單</a>
     {loadFailed ? <div role="alert" className="scenario-load-state"><p>情境未能載入，可能尚未發布或暫時無法連線。</p>
       <button className="btn" onClick={() => setRetry(retry + 1)}>重新載入</button></div> : <p role="status" className="scenario-load-state">正在載入情境…</p>}
   </main>;
-  return <main className="scenario-learning scenario-wrap">
-    <a href="#/scenarios" className="link-btn scenario-return">回情境清單</a>
-    {revision !== undefined && <p role="status">版本 {data.revision} 預覽{data.status === "draft" ? " · 尚未發布" : " · 已發布"}</p>}
-    <div className="scenario-heading"><div><h1>{data.titleZh}</h1><p>看圖認識單字，再聽故事裡的用法。</p></div>
-      <span className="scenario-level">{data.vocabularyFilter.levels.join(" ＋ ")} · {data.targetCount} 詞</span></div>
-    <div className="scenario-mode" role="group" aria-label="練習方式">
+  return <main className="scenario-learning scenario-wrap scenario-detail">
+    <header className="scenario-detail-heading"><h1>{data.titleZh}</h1>
+      <a href={categoryId == null ? "#/scenarios" : `#/scenarios?category=${categoryId}`} className="link-btn scenario-return">回情境清單</a></header>
+    {revision !== undefined && <p className="scenario-preview-status" role="status">版本 {data.revision} 預覽{data.status === "draft" ? " · 尚未發布" : " · 已發布"}</p>}
+    <div className="scenario-toolbar"><div className="scenario-mode" role="group" aria-label="練習方式">
       <button className={`btn btn--sm${!recall ? " btn--primary" : " btn--ghost"}`} aria-pressed={!recall} onClick={() => changeMode(false)}>看圖學習</button>
       <button className={`btn btn--sm${recall ? " btn--primary" : " btn--ghost"}`} aria-pressed={recall} onClick={() => changeMode(true)}>看圖回想</button>
     </div>
+    <div className={`scenario-image-tools${zoomed ? " is-zoomed" : ""}`}>
+      {anyRevealed && <button className="btn btn--ghost btn--sm scenario-locations-button" aria-pressed={showLocations}
+        onClick={() => setShowLocations(!showLocations)}>{showLocations ? "收起點選位置" : "顯示點選位置"}</button>}
+      <button className="btn btn--ghost btn--sm" aria-pressed={zoomed} onClick={() => setZoomed(!zoomed)}>{zoomed ? "還原圖片" : "放大圖片"}</button>
+      {storyAvailable && <button className="btn btn--primary btn--sm" onClick={() => setModal("story")}><HeadphonesIcon size={16} /> 故事與旁白</button>}
+    </div></div>
     {recall && <div className="scenario-recall">
-      <p id="scenario-recall-hint">先看圖回想英文，再選詞性揭曉；再次點選可以收起。</p>
-      <div className="scenario-recall-controls" role="group" aria-label="依詞性揭曉答案" aria-describedby="scenario-recall-hint">
+      <div className="scenario-recall-controls" role="group" aria-label="依詞性揭曉答案">
         {categories.map(category => <button key={category.pos}
           className={`btn btn--sm${revealedPos.has(category.pos) ? " btn--primary" : " btn--ghost"}`}
           aria-pressed={revealedPos.has(category.pos)} onClick={() => toggleCategory(category.pos)}>
@@ -187,17 +221,8 @@ export function ScenarioLearning({ scenarioKey, revision }: { scenarioKey: strin
         </button>)}
         <button className="link-btn scenario-recall-all" onClick={toggleAll}>{storyAvailable ? "全部收起" : "全部揭曉"}</button>
       </div>
-      <p className="scenario-recall-status" role="status">已揭曉 {visibleTargets.length}／{data.targets.length} 詞。
-        {storyAvailable ? "可以點選單字與聆聽故事。" : "全部揭曉後可開啟故事與旁白。"}</p>
+      <p className="scenario-recall-status" role="status">已揭曉 {visibleTargets.length}／{data.targets.length} 詞。</p>
     </div>}
-    <div className={`scenario-image-tools${zoomed ? " is-zoomed" : ""}`}>
-      <p>{!anyRevealed ? "圖片中的物件和動作，都可以試著用英文說說看。" : <><span className="scenario-desktop-hint">點選圖上的英文標籤，查看解釋與例句。</span>
-        <span className="scenario-mobile-hint">放大圖片後點英文標籤{storyAvailable ? "，或開啟故事查單字。" : "，查看已揭曉的單字。"}</span></>}</p>
-      <div>{anyRevealed && <button className="btn btn--ghost btn--sm scenario-locations-button" aria-pressed={showLocations}
-        onClick={() => setShowLocations(!showLocations)}>{showLocations ? "收起點選位置" : "顯示點選位置"}</button>}
-        <button className="btn btn--ghost btn--sm" aria-pressed={zoomed} onClick={() => setZoomed(!zoomed)}>{zoomed ? "還原圖片" : "放大圖片"}</button>
-        {storyAvailable && <button className="btn btn--primary btn--sm" onClick={() => setModal("story")}><HeadphonesIcon size={16} /> 故事與旁白</button>}</div>
-    </div>
     <div className={`scenario-image-scroll${zoomed ? " is-zoomed" : ""}`}>
       <div className={`scenario-image-canvas${showLocations ? " show-locations" : ""}`} style={{ "--scenario-image-width": `${data.image.width}px` } as React.CSSProperties}>
         {imageFailed ? <p role="alert" className="scenario-image-error">圖片未能載入。{storyAvailable && "可先開啟「故事與旁白」查看故事與單字。"}

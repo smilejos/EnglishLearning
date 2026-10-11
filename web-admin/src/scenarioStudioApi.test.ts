@@ -23,3 +23,19 @@ it("新的生成工作也可明示接受已取消請求的重複費用", async (
 it("複製新草稿與發布正式 revision 是不同的明確 mutation", async () => {
   await api.forkDraft("living-room", 1); await api.publishRevision("living-room", 2); expect(requests[0].url).toBe("/scenarios/studio/drafts/fork"); expect(JSON.parse(requests[0].init.body as string)).toEqual({ sourceKey: "living-room", sourceRevision: 1 }); expect(requests[1].url).toBe("/scenarios/living-room/revisions/2/publish");
 });
+
+it("情境分類只傳 tag ids，不修改教材 revision 或觸發發布", async () => {
+  await api.saveScenarioTags("family-breakfast", [1, 2]);
+  expect(requests[0].url).toBe("/scenarios/family-breakfast/tags");
+  expect(requests[0].init.method).toBe("PUT");
+  expect(JSON.parse(requests[0].init.body as string)).toEqual({ tagIds: [1, 2] });
+});
+it("可選情境標籤沿用伺服器綁定的維度改名", async () => {
+  vi.mocked(fetch).mockImplementation(async (url, init) => {
+    requests.push({ url: String(url), init: init ?? {} });
+    const result = String(url) === "/tags" ? { tags: [{ id: 1, kind: "生活場景", label: "家庭" }, { id: 2, kind: "文體", label: "故事" }] } : { kind: "生活場景" };
+    return new Response(JSON.stringify(result), { headers: { "content-type": "application/json" } });
+  });
+  expect(await api.scenarioTagOptions()).toEqual({ kind: "生活場景", tags: [{ id: 1, kind: "生活場景", label: "家庭" }] });
+  expect(requests.map(item => item.url).sort()).toEqual(["/scenarios/taxonomy/tag-kind", "/tags"]);
+});

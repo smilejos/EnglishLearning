@@ -7,6 +7,9 @@ export interface ScenarioSummary {
   titleZh: string;
   vocabularyFilter: { system: WordbankSystem; levels: string[] };
   targetCount: number;
+  targetCounts?: { n: number; adj: number; v: number };
+  image?: { url: string; width: number; height: number };
+  tags?: { id: number; kind: string; label: string }[];
 }
 export interface ScenarioTarget {
   word: string; entryGuid: string; list: string; teachingPos: string; senseZh: string;

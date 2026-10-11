@@ -1,5 +1,6 @@
 // tags / article_tags 資料存取（開放、可多值分類）。
 import { type Queryable, toNum } from "./types";
+import { withTransaction, type DbPool } from "../db";
 
 export interface Tag {
   id: number;
@@ -69,22 +70,29 @@ export async function listTags(db: Queryable): Promise<Tag[]> {
 
 /** 更新單一 tag 的 kind／label（後台管理用）。找不到回 null。 */
 export async function updateTag(
-  db: Queryable,
+  db: DbPool,
   id: number,
   patch: { kind?: string; label?: string },
 ): Promise<Tag | null> {
-  const res = await db.query(
-    `UPDATE tags
-        SET kind = COALESCE($2, kind),
-            label = COALESCE($3, label)
-      WHERE id = $1
-      RETURNING *`,
-    [id, patch.kind ?? null, patch.label ?? null],
-  );
-  return res.rows[0] ? mapTag(res.rows[0]) : null;
+  return withTransaction(db, async tx => {
+    const setting = await tx.query<{ kind: string }>("SELECT kind FROM scenario_tag_settings WHERE singleton FOR UPDATE");
+    const res = await tx.query(
+      `UPDATE tags
+          SET kind = COALESCE($2, kind),
+              label = COALESCE($3, label)
+        WHERE id = $1
+        RETURNING *`,
+      [id, patch.kind ?? null, patch.label ?? null],
+    );
+    if (!res.rows[0]) return null;
+    const tag = mapTag(res.rows[0]);
+    // 單筆搬到其他維度即移出情境分類；整個維度改名則保留掛載。
+    if (tag.kind !== setting.rows[0].kind) await tx.query("DELETE FROM scenario_tags WHERE tag_id=$1", [id]);
+    return tag;
+  });
 }
 
-/** 刪除 tag（article_tags 由 FK cascade 一併移除）。回傳是否刪到。 */
+/** 刪除 tag（article_tags／scenario_tags 由 FK cascade 一併移除）。回傳是否刪到。 */
 export async function deleteTag(db: Queryable, id: number): Promise<boolean> {
   const res = await db.query(`DELETE FROM tags WHERE id = $1 RETURNING id`, [id]);
   return (res.rowCount ?? 0) > 0;
@@ -92,13 +100,14 @@ export async function deleteTag(db: Queryable, id: number): Promise<boolean> {
 
 /** 整批改名某維度（kind）；回傳受影響筆數。供後台管理「維度」用。 */
 export async function renameTagKind(
-  db: Queryable,
+  db: DbPool,
   from: string,
   to: string,
 ): Promise<number> {
-  const res = await db.query(
-    `UPDATE tags SET kind = $2 WHERE kind = $1`,
-    [from, to],
-  );
-  return res.rowCount ?? 0;
+  return withTransaction(db, async tx => {
+    await tx.query("SELECT kind FROM scenario_tag_settings WHERE singleton FOR UPDATE");
+    const res = await tx.query(`UPDATE tags SET kind = $2 WHERE kind = $1`, [from, to]);
+    await tx.query("UPDATE scenario_tag_settings SET kind=$2 WHERE kind=$1", [from, to]);
+    return res.rowCount ?? 0;
+  });
 }

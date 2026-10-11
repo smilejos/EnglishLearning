@@ -3,6 +3,8 @@ import * as api from "./scenarioStudioApi";
 import { normalizeBaseUrl } from "./urls";
 import { STUDIO_BLOCKS, type StudioBlock, type StudioCheck, type StudioDetail, type StudioDraft, type StudioJob, type StudioKind, type StudioLevel, type StudioOptions, type StudioPos, type StudioQuote, type StudioResolveResult, type StudioRevisionSummary, type StudioSentence, type StudioStory, type StudioTarget, type StudioWord } from "./scenarioStudioTypes";
 import "./ScenarioStudio.css";
+import { ScenarioTags } from "./ScenarioTags";
+import { ScenarioThumbnail } from "./ScenarioThumbnail";
 
 const maxTargets = 25;
 const stages = ["選擇單字", "場景與風格", "故事", "底圖", "標籤定位", "錄音", "預覽與發布"];
@@ -266,8 +268,19 @@ export function ScenarioStudio() {
         <button className="btn btn--primary" disabled={busy}>建立草稿</button>
       </form>
       <p className="studio-hint">使用小寫英文、數字與連字號；草稿不會自動產圖、錄音或發布。</p>
-      {!list.length ? <p className="studio-empty">還沒有工作室草稿。建立第一張情境，從 basic＋advance 選擇貼合場景的目標詞。</p> : <ul className="studio-drafts">{list.map(item => <li key={item.id}><div><strong>{item.titleZh || item.scenarioKey}</strong><p>{item.materializedRevision ? `已固定版本 ${item.materializedRevision}` : "製作中"} · {item.targets.length} 詞</p></div><button className="btn btn--ghost" disabled={busy} onClick={() => void open(item.id)}>開啟情境</button></li>)}</ul>}
-      {revisions.length > 0 && <><h3>已匯入的情境版本</h3><ul className="studio-drafts">{revisions.map(item => <li key={`${item.scenarioKey}-${item.revision}`}><div><strong>{item.titleZh}</strong><p>版本 {item.revision} · {item.status === "published" ? "已發布" : "待發布"}</p></div><div className="studio-actions"><a className="btn btn--ghost" href={learnerPreview(item.scenarioKey, item.revision)} target="_blank" rel="noreferrer">驗收版本</a>{item.status === "draft" && <button className="btn btn--primary" disabled={busy} onClick={() => void act(async () => { await api.publishRevision(item.scenarioKey, item.revision); await loadList(); setMessage("情境版本已發布。"); })}>發布 {item.titleZh}</button>}<button className="btn btn--ghost" disabled={busy} onClick={() => void act(async () => { accept(await api.forkDraft(item.scenarioKey, item.revision)); setStage(0); setQuotes({}); await loadList(); })}>複製為製作草稿</button></div></li>)}</ul></>}
+      {list.length > 0 && <ul className="studio-drafts">{list.map(item => <li key={item.id}><div><strong>{item.titleZh || item.scenarioKey}</strong><p>{item.materializedRevision ? `已固定版本 ${item.materializedRevision}` : "製作中"} · {item.targets.length} 詞</p></div><button className="btn btn--ghost" disabled={busy} onClick={() => void open(item.id)}>開啟情境</button></li>)}</ul>}
+      {revisions.length > 0 && <ul className="studio-drafts">{revisions.map(item => <li key={`${item.scenarioKey}-${item.revision}`}>
+        <ScenarioTags scenarioKey={item.scenarioKey} title={item.titleZh} tags={item.tags}
+          thumbnail={<ScenarioThumbnail key={`${item.scenarioKey}:${item.revision}`} image={item.image} title={item.titleZh} />}
+          summary={<><strong>{item.titleZh}</strong><p>版本 {item.revision} · {item.status === "published" ? "已發布" : "待發布"}</p></>}
+          onSaved={async () => { await loadList(); setMessage(`「${item.titleZh}」的情境分類已儲存。`); }}
+          actions={<>
+            <a className="btn btn--ghost" href={learnerPreview(item.scenarioKey, item.revision)} target="_blank" rel="noreferrer">驗收版本</a>
+            {item.status === "draft" && <button className="btn btn--primary" disabled={busy} onClick={() => void act(async () => { await api.publishRevision(item.scenarioKey, item.revision); await loadList(); setMessage("情境版本已發布。"); })}>發布 {item.titleZh}</button>}
+            <button className="btn btn--ghost" disabled={busy} onClick={() => void act(async () => { accept(await api.forkDraft(item.scenarioKey, item.revision)); setStage(0); setQuotes({}); await loadList(); })}>複製為製作草稿</button>
+          </>} />
+      </li>)}</ul>}
+
     </div> : detail && <>
       <div className="studio-draft-bar"><div><strong>{draft.titleZh || draft.scenarioKey}</strong><span>{frozen ? `版本 ${draft.materializedRevision} 已固定` : dirty ? "有未儲存變更" : "草稿已儲存"}</span></div><button className="btn btn--primary" disabled={busy || !dirty || frozen || running} onClick={() => void act(async () => { await save(); setMessage("草稿已儲存，生成素材與檢查已更新。"); })}>儲存草稿</button></div>
       {frozen && <p className="studio-hint">此版本已固定，內容採唯讀。需要修改時，可在「預覽與發布」複製成新草稿。</p>}

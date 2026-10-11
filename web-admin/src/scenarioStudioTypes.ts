@@ -25,7 +25,7 @@ export interface StudioAsset { id: string; kind: "image" | "story-audio"; sha256
 export interface StudioAudioClip { assetGuid: string; entryGuid: string; kind: "word" | "example" | "explanation"; text: string; textHash: string }
 export interface StudioCheck { code: string; message: string; blocking: boolean; sentenceId?: string; tokenIndex?: number; surface?: string }
 export interface StudioDetail { draft: StudioDraft; assets: StudioAsset[]; jobs: StudioJob[]; checks: StudioCheck[]; compiledPrompt: string; missingAudioPlan: StudioAudioClip[]; publishedRevision: number | null }
-export interface StudioRevisionSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; targetCount: number }
+export interface StudioRevisionSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; targetCount: number; tags?: { id: number; kind: string; label: string }[]; image?: { url: string; width: number; height: number }; targetCounts?: { n: number; adj: number; v: number } }
 export interface StudioWord { guid: string; word: string; partsOfSpeech: string[]; definition: string; level: { list: string | null; [key: string]: string | null } }
 export interface StudioResolveResult { input: string; status: "matched" | "ambiguous" | "unknown" | "out-of-level" | "duplicate"; entries: StudioWord[] }
 export interface StudioQuote { kind: StudioKind; version: number; inputHash: string; estimatedCostUsdMicros: number | null; localCompute: boolean; expiresAt: string; modelLabel: string; quoteHash: string }

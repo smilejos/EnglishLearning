@@ -2,15 +2,17 @@
 .scenario-learning .topbar { position: static; background: var(--surface); backdrop-filter: none; }
 .scenario-learning .topbar__in, .scenario-wrap { max-width: 1220px; margin-inline: auto; }
 .scenario-wrap { padding: 32px 24px 48px; }
-.scenario-learning-status, .scenario-level { color: var(--text-soft); font-size: .88rem; }
+.scenario-learning-status { color: var(--text-soft); font-size: .88rem; }
 .scenario-heading { display: flex; gap: 20px; align-items: end; justify-content: space-between; margin-bottom: 24px; }
 .scenario-heading h1 { font: 600 clamp(2rem, 4vw, 2.8rem)/1.18 var(--font-display); letter-spacing: -.02em; margin: 0; }
 .scenario-heading p { color: var(--text-soft); line-height: 1.6; margin: 10px 0 0; }
-.scenario-level { flex-shrink: 0; padding-bottom: 4px; }
-.scenario-image-tools { display: flex; align-items: center; gap: 12px; justify-content: space-between; margin-bottom: 12px; }
-.scenario-image-tools p { margin: 0; color: var(--text-soft); font-size: .92rem; }
-.scenario-image-tools > div { display: flex; gap: 8px; flex-wrap: wrap; }
-.scenario-mobile-hint { display: none; }
+.scenario-detail { padding-top: 20px; }
+.scenario-detail-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 12px; }
+.scenario-detail-heading h1 { flex: 1; min-width: 180px; font: 600 clamp(1.5rem, 3vw, 2rem)/1.3 var(--font-display); margin: 0; overflow-wrap: anywhere; }
+.scenario-detail .scenario-return { margin: 0; flex-shrink: 0; }
+.scenario-detail .scenario-preview-status { margin: 0 0 12px; color: var(--text-soft); font-size: .85rem; }
+.scenario-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 12px; }
+.scenario-detail .scenario-image-tools { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .scenario-image-scroll { overflow: auto; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); }
 .scenario-image-canvas { position: relative; width: 100%; }
 .scenario-image-canvas img { display: block; width: 100%; height: auto; }
@@ -64,17 +66,17 @@
 .scenario-list-filter { margin-bottom: 24px; }
 .scenario-learning select { padding: 8px 12px; color: var(--text); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); min-height: 40px; }
 .scenario-load-state { line-height: 1.75; color: var(--text-soft); margin-top: 32px; }
-.scenario-list { border-block: 1px solid var(--border); }
-.scenario-list-item { display: flex; gap: 20px; align-items: center; justify-content: space-between; padding: 28px 0; text-decoration: none; color: var(--text); }
-.scenario-list-item + .scenario-list-item { border-top: 1px solid var(--border); }
-.scenario-list-item h2 { margin: 0 0 8px; font: 600 1.5rem/1.4 var(--font-display); }
-.scenario-list-item p { margin: 0; color: var(--text-soft); font-size: .9rem; }
-.scenario-list-item > span { color: var(--accent-strong); flex-shrink: 0; }
-.scenario-list-item:hover h2 { color: var(--accent-strong); }
-.scenario-mode { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.scenario-card { text-decoration: none; color: var(--text); }
+.scenario-card .card__cover { aspect-ratio: 16 / 9; background: var(--surface-2); }
+.scenario-card p { margin: 0; color: var(--text-soft); font-size: .9rem; line-height: 1.65; }
+.scenario-card-action { color: var(--accent-strong); margin-top: auto; }
+.scenario-thumbnail { display: grid; place-items: center; width: 100%; height: 100%; overflow: hidden; background: var(--surface-2); }
+.scenario-thumbnail img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.scenario-thumbnail > span { color: var(--text-soft); font-size: .85rem; text-align: center; padding: 8px; }
+.scenario-mode { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .scenario-mode > span { color: var(--text-soft); font-size: .87rem; margin-inline: 4px; }
-.scenario-recall { margin: -8px 0 24px; }
-.scenario-recall > p { color: var(--text-soft); font-size: .9rem; line-height: 1.65; margin: 0 0 12px; }
+.scenario-recall { margin: 0 0 12px; }
+.scenario-recall > p { color: var(--text-soft); line-height: 1.65; }
 .scenario-recall-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .scenario-recall-controls .btn, .scenario-recall-all { min-height: 44px; }
 .scenario-recall-count { font-variant-numeric: tabular-nums; }
@@ -94,10 +96,7 @@
   .scenario-learning .brand__name { font-size: 1rem; }
   .scenario-learning-status { font-size: .75rem; }
   .scenario-heading { display: block; }
-  .scenario-level { display: block; margin-top: 12px; }
-  .scenario-image-tools { align-items: start; flex-direction: column; }
-  .scenario-desktop-hint { display: none; }
-  .scenario-mobile-hint { display: inline; }
+  .scenario-detail { padding-top: 16px; }
   .scenario-image-tools:not(.is-zoomed) .scenario-locations-button { display: none; }
   .scenario-dialog { max-height: calc(100dvh - 32px); }
   .scenario-dialog-heading { padding: 12px 16px; }
@@ -107,5 +106,4 @@
   .is-zoomed .scenario-hotspot { display: block; }
   .scenario-label, .scenario-arrows { display: none; }
   .is-zoomed .scenario-label, .is-zoomed .scenario-arrows { display: block; }
-  .scenario-list-item { align-items: start; flex-direction: column; gap: 12px; }
 }

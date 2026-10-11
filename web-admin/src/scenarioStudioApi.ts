@@ -1,10 +1,15 @@
-import { req } from "./api";
+import { req, listTags, type Tag } from "./api";
 import type { StudioDetail, StudioDraft, StudioEditable, StudioJob, StudioKind, StudioLevel, StudioOptions, StudioQuote, StudioResolveResult, StudioRevisionSummary, StudioWord } from "./scenarioStudioTypes";
 
 const base = "/scenarios/studio";
 const json = (method: string, value: unknown): RequestInit => ({ method, body: JSON.stringify(value) });
 export const listDrafts = () => req<{ drafts: StudioDraft[] }>(`${base}/drafts`);
 export const listRevisions = () => req<{ scenarios: StudioRevisionSummary[] }>("/scenarios?includeDrafts=true");
+export async function scenarioTagOptions(): Promise<{ kind: string; tags: Tag[] }> {
+  const [setting, taxonomy] = await Promise.all([req<{ kind: string }>("/scenarios/taxonomy/tag-kind"), listTags()]);
+  return { kind: setting.kind, tags: taxonomy.tags.filter(tag => tag.kind === setting.kind) };
+}
+export const saveScenarioTags = (key: string, tagIds: number[]) => req<{ tags: Tag[] }>(`/scenarios/${encodeURIComponent(key)}/tags`, json("PUT", { tagIds }));
 export const getOptions = () => req<StudioOptions>(`${base}/options`);
 export const createDraft = (scenarioKey: string) => req<StudioDetail>(`${base}/drafts`, json("POST", { scenarioKey }));
 export const getDraft = (id: string) => req<StudioDetail>(`${base}/drafts/${encodeURIComponent(id)}`);
