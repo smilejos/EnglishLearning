@@ -1,0 +1,313 @@
+{
+  "batchKey": "mcdonalds-restaurant",
+  "scope": "當前四場離線scenario wordLinks；來源JSON＋37 planned additions，新增GUID未正式寫入",
+  "storySha256ByScene": {
+    "mcdonalds-restaurant-tour": "dac0ae1b68d7f7585fd00a11c3c7dacf48ae503d30a46811872158fb78a3a0ae",
+    "mcdonalds-order-food": "8f47d56bd533da4aa146929aa0cd2d47ccc5c4c2cd12d914a5db812dc6208d10",
+    "mcdonalds-enjoy-meal": "441a43bcad9e35aa3cfa825ab2393ac3c72315f9287eb107ebc2b99a94944566",
+    "mcdonalds-after-meal": "6f35c1b87cf744f05bf1882b87a8b05515e0699be9256735ad0cc5feda2ce8c6"
+  },
+  "strategy": "完整字形最長片語匹配；屈折形映射真實原形；共享span驗證器已核對全部覆蓋與不重疊",
+  "sourceEntries": 9166,
+  "plannedAdditionEntries": 37,
+  "sentenceCounts": [
+    15,
+    12,
+    11,
+    15
+  ],
+  "totalSentenceCount": 53,
+  "resolvedSpanCount": 507,
+  "exactMultiTokenPhraseSpanCount": 38,
+  "unresolvedTokens": {},
+  "ambiguousSourceCanonicalWords": {},
+  "inflectionMappings": [
+    {
+      "surface": "has",
+      "canonicalWord": "have",
+      "canonicalGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+      "occurrences": [
+        "1:s1",
+        "2:s10",
+        "3:s7",
+        "3:s8"
+      ]
+    },
+    {
+      "surface": "children",
+      "canonicalWord": "child",
+      "canonicalGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+      "occurrences": [
+        "1:s2",
+        "1:s10",
+        "1:s10",
+        "2:s1",
+        "2:s9",
+        "3:s1",
+        "3:s11",
+        "4:s1",
+        "4:s14"
+      ]
+    },
+    {
+      "surface": "are",
+      "canonicalWord": "be",
+      "canonicalGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+      "occurrences": [
+        "1:s3",
+        "2:s1",
+        "2:s6",
+        "4:s2",
+        "4:s11"
+      ]
+    },
+    {
+      "surface": "helps",
+      "canonicalWord": "help",
+      "canonicalGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+      "occurrences": [
+        "1:s4",
+        "4:s5",
+        "4:s7"
+      ]
+    },
+    {
+      "surface": "others",
+      "canonicalWord": "other",
+      "canonicalGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+      "occurrences": [
+        "1:s4"
+      ]
+    },
+    {
+      "surface": "shows",
+      "canonicalWord": "show",
+      "canonicalGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+      "occurrences": [
+        "1:s5",
+        "2:s3"
+      ]
+    },
+    {
+      "surface": "pictures",
+      "canonicalWord": "picture",
+      "canonicalGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+      "occurrences": [
+        "1:s5",
+        "2:s2",
+        "2:s4",
+        "4:s5"
+      ]
+    },
+    {
+      "surface": "uses",
+      "canonicalWord": "use",
+      "canonicalGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+      "occurrences": [
+        "1:s6",
+        "1:s7"
+      ]
+    },
+    {
+      "surface": "is",
+      "canonicalWord": "be",
+      "canonicalGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+      "occurrences": [
+        "1:s8",
+        "1:s15",
+        "2:s11",
+        "4:s1",
+        "4:s4-empty",
+        "4:s4-empty",
+        "4:s6",
+        "4:s10"
+      ]
+    },
+    {
+      "surface": "brings",
+      "canonicalWord": "bring",
+      "canonicalGuid": "aced9d5e-ff5c-558f-b154-1bfb5752bb52",
+      "occurrences": [
+        "1:s9"
+      ]
+    },
+    {
+      "surface": "includes",
+      "canonicalWord": "include",
+      "canonicalGuid": "f2d656ab-14b9-5a06-a450-2c3ed98d2dcf",
+      "occurrences": [
+        "1:s11"
+      ]
+    },
+    {
+      "surface": "lets",
+      "canonicalWord": "let",
+      "canonicalGuid": "ce50b637-72c2-549c-a931-2f7d36846b80",
+      "occurrences": [
+        "1:s12"
+      ]
+    },
+    {
+      "surface": "customers",
+      "canonicalWord": "customer",
+      "canonicalGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+      "occurrences": [
+        "1:s12",
+        "1:s13",
+        "2:s12",
+        "4:s13"
+      ]
+    },
+    {
+      "surface": "carries",
+      "canonicalWord": "carry",
+      "canonicalGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+      "occurrences": [
+        "1:s14"
+      ]
+    },
+    {
+      "surface": "meals",
+      "canonicalWord": "meal",
+      "canonicalGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+      "occurrences": [
+        "2:s1"
+      ]
+    },
+    {
+      "surface": "looks",
+      "canonicalWord": "look",
+      "canonicalGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+      "occurrences": [
+        "2:s6"
+      ]
+    },
+    {
+      "surface": "chooses",
+      "canonicalWord": "choose",
+      "canonicalGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+      "occurrences": [
+        "2:s7",
+        "2:s7",
+        "2:s8"
+      ]
+    },
+    {
+      "surface": "trays",
+      "canonicalWord": "tray",
+      "canonicalGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+      "occurrences": [
+        "2:s12"
+      ]
+    },
+    {
+      "surface": "holds",
+      "canonicalWord": "hold",
+      "canonicalGuid": "954342d3-d873-596f-9763-1385be49c458",
+      "occurrences": [
+        "3:s2",
+        "3:s3"
+      ]
+    },
+    {
+      "surface": "stands",
+      "canonicalWord": "stand",
+      "canonicalGuid": "c159bec5-f00f-522b-8ac1-34ff583d7696",
+      "occurrences": [
+        "3:s2",
+        "4:s4"
+      ]
+    },
+    {
+      "surface": "opens",
+      "canonicalWord": "open",
+      "canonicalGuid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+      "occurrences": [
+        "3:s5"
+      ]
+    },
+    {
+      "surface": "dips",
+      "canonicalWord": "dip",
+      "canonicalGuid": "d498bd39-ef15-57fa-9685-e195067dd213",
+      "occurrences": [
+        "3:s6"
+      ]
+    },
+    {
+      "surface": "rests",
+      "canonicalWord": "rest",
+      "canonicalGuid": "5c4a6c3d-d47c-5f19-99ab-1b22c129e22e",
+      "occurrences": [
+        "3:s8",
+        "4:s12"
+      ]
+    },
+    {
+      "surface": "drinks",
+      "canonicalWord": "drink",
+      "canonicalGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+      "occurrences": [
+        "3:s9"
+      ]
+    },
+    {
+      "surface": "pours",
+      "canonicalWord": "pour",
+      "canonicalGuid": "772e1508-c6fc-50fa-b0f1-286dd266fa44",
+      "occurrences": [
+        "4:s3"
+      ]
+    },
+    {
+      "surface": "remaining",
+      "canonicalWord": "remain",
+      "canonicalGuid": "28451681-337a-5448-9dc3-2fc626be2664",
+      "occurrences": [
+        "4:s3"
+      ]
+    },
+    {
+      "surface": "items",
+      "canonicalWord": "item",
+      "canonicalGuid": "3d757b95-7d7b-5bfd-8bdc-bdbe004ba7f5",
+      "occurrences": [
+        "4:s5"
+      ]
+    },
+    {
+      "surface": "bins",
+      "canonicalWord": "bin",
+      "canonicalGuid": "5937510e-30cc-524c-9521-c0ffd63558f9",
+      "occurrences": [
+        "4:s5"
+      ]
+    },
+    {
+      "surface": "returns",
+      "canonicalWord": "return",
+      "canonicalGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+      "occurrences": [
+        "4:s8"
+      ]
+    },
+    {
+      "surface": "wipes",
+      "canonicalWord": "wipe",
+      "canonicalGuid": "84de3914-33cf-5ae7-9c31-8fdd2fc5e47e",
+      "occurrences": [
+        "4:s9"
+      ]
+    }
+  ],
+  "imageAlignmentChanges": [
+    "Scene4空杯位於前景托盤：An empty cup stands on the tray.",
+    "Scene4餐盤回收區移至adult return句，保持完整target：The adult returns a tray to the rack at the tray return station.",
+    "Scene4清潔同桌遠端：The far end of the table is already clean."
+  ],
+  "targetCoverage": {
+    "count": 104,
+    "distinctWords": 104,
+    "distinctGuids": 104
+  }
+}

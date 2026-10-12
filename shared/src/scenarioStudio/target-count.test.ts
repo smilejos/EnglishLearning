@@ -4,14 +4,14 @@ import { ScenarioContentSchema, scenarioCanonicalJson, scenarioRevisionHash, sce
 import { emptyStudioDraft, StudioEditableSchema, StudioStorySchema } from "./contracts";
 import { validateStudioTargets } from "./story";
 
-function content(count: number, nounsOnly = false): ScenarioContent {
+function content(count: number, nounsOnly = false) {
   const targets = Array.from({ length: count }, (_, i) => ({ word: `word${i < 26 ? "" : "a"}${String.fromCharCode(97 + i % 26)}`, entryGuid: `00000000-0000-4000-8000-${String(i + 1).padStart(12, "0")}`,
-    list: "basic" as const, teachingPos: nounsOnly || i < 15 ? "n" as const : i < 20 ? "adj" as const : "v" as const, senseZh: "測試詞義", interaction: { label: { x: .1, y: .2 }, object: { x: .3, y: .4 } } }));
+    list: "basic" as "basic" | "advance", teachingPos: nounsOnly || i < 15 ? "n" as const : i < 20 ? "adj" as const : "v" as const, senseZh: "測試詞義", interaction: { label: { x: .1, y: .2 }, object: { x: .3, y: .4 } } }));
   const en = targets.map(t => t.word).join(" ") + ".";
   let start = 0;
   const wordLinks = targets.map(t => { const link = { surface: t.word, word: t.word, entryGuid: t.entryGuid, isTarget: true, start, end: start + t.word.length }; start = link.end + 1; return link; });
-  return { schemaVersion: 1, scenarioKey: "target-count", revision: 1, titleZh: "詞數測試", vocabularyFilter: { system: "list", levels: ["basic", "advance"] }, targetCount: count, targets,
-    story: { language: "en", translationLanguage: "zh-Hant", textEn: en, textZh: "測試故事。", sentences: [{ id: "s1", en, zh: "測試故事。", wordLinks }] } };
+  return { schemaVersion: 1 as const, scenarioKey: "target-count", revision: 1, titleZh: "詞數測試", vocabularyFilter: { system: "list" as const, levels: ["basic", "advance"] as Array<"basic" | "advance"> }, targetCount: count, targets,
+    story: { language: "en", translationLanguage: "zh-Hant", textEn: en, textZh: "測試故事。", sentences: [{ id: "s1", en, zh: "測試故事。", wordLinks }] } as ScenarioContent["story"] } satisfies ScenarioContent;
 }
 
 describe("情境實際詞數與舊教材相容", () => {

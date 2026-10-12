@@ -151536,7 +151536,7 @@
           "zh": "學校學生餐廳全面將原本笨重的老舊木質餐盤，汰換為輕巧耐用且符合環保標章的食品級托盤。"
         }
       ],
-      "definition": "實木排水茶盤；茶席托盤",
+      "definition": "托盤；餐盤（用來盛放或端送食物、飲料等的淺盤）；茶盤",
       "explains": [
         {
           "guid": "6d6f1db6-3458-5fe3-820d-138e50da432c",
@@ -320154,7 +320154,9 @@
         "tw_7000": null,
         "list": null
       },
-      "category": [],
+      "category": [
+        "Others"
+      ],
       "scenario": [
         "居家與公共設施"
       ],
@@ -320887,7 +320889,9 @@
         "tw_7000": null,
         "list": null
       },
-      "category": [],
+      "category": [
+        "Others"
+      ],
       "scenario": [
         "飲食與速食"
       ],
@@ -476753,6 +476757,1820 @@
           "en": "A bird lifts its body by moving the feathered structures up and down. An airplane keeps its broad surfaces steady as air flows around them. The same word names both."
         }
       ]
+    },
+    {
+      "id": 9176,
+      "guid": "d964f7b7-2224-5fce-965f-3375ed903d80",
+      "word": "Menu Board",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "菜單看板",
+      "explains": [
+        {
+          "guid": "19e1f01d-3fff-57e8-b0e5-fb1ec2b6d57d",
+          "en": "A menu board shows the food and drinks you can order."
+        },
+        {
+          "guid": "e6089fb2-afec-54c1-919e-3a720d0b6f0e",
+          "en": "It is a large display that people can read before ordering."
+        },
+        {
+          "guid": "2126db87-3df9-55b9-a959-8c141a7f5fa9",
+          "en": "In a restaurant, it may show meal pictures and prices."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7cbceecf-c22a-509d-a3fa-f30b8c21910c",
+          "en": "The menu board is above the counter.",
+          "zh": "菜單看板在櫃檯上方。"
+        },
+        {
+          "guid": "f63dcd13-f690-5a04-8f8c-1f6c87cad8e9",
+          "en": "I look at the menu board before I order.",
+          "zh": "我點餐前先看看菜單看板。"
+        },
+        {
+          "guid": "bf1b8f8e-d399-59cd-87e2-f8b936e7e837",
+          "en": "The menu board shows pictures of burgers.",
+          "zh": "菜單看板上有漢堡的圖片。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9177,
+      "guid": "122000c0-ab05-5c69-906a-a505f62c6ee2",
+      "word": "Self-Service Kiosk",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "自助點餐機",
+      "explains": [
+        {
+          "guid": "8559bd1d-f88f-568a-adc2-1d58a8d758d3",
+          "en": "A self-service kiosk is a machine that customers use without a cashier's help."
+        },
+        {
+          "guid": "0eb4df4a-e2ed-5b64-abc5-c575b4d74f95",
+          "en": "In a restaurant, you can touch its screen to choose food."
+        },
+        {
+          "guid": "088d4ea4-9cac-512f-9bae-4b95faee5f58",
+          "en": "It lets you place your own food order."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "4b5b74ba-cdb8-5fd5-873c-dca8bf98b10e",
+          "en": "Dad orders lunch at the self-service kiosk.",
+          "zh": "爸爸在自助點餐機上點午餐。"
+        },
+        {
+          "guid": "bcc05364-f85e-501c-bff5-9ed54ab57faa",
+          "en": "The self-service kiosk has a touch screen.",
+          "zh": "自助點餐機有觸控螢幕。"
+        },
+        {
+          "guid": "2e0f423f-e9a9-58f5-933a-fec0e661d22b",
+          "en": "We choose our drinks on the self-service kiosk.",
+          "zh": "我們在自助點餐機上選飲料。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9178,
+      "guid": "a263ce51-35b4-5dde-a56c-240c9f6f3668",
+      "word": "Cash Register",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "收銀機",
+      "explains": [
+        {
+          "guid": "d8a46542-0b2c-5cbd-bcfa-6d34a495c316",
+          "en": "A cash register is a machine used to record payments."
+        },
+        {
+          "guid": "a478ea87-8a6f-5ff5-b2cc-1be8e6465da9",
+          "en": "It helps a cashier work out how much a customer must pay."
+        },
+        {
+          "guid": "e85a5faa-f3f8-5eb3-90ac-97aae29d97ee",
+          "en": "A cash register may have a drawer for keeping money."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "e11242e4-8eb8-5e9c-b680-a94414f7769f",
+          "en": "The cashier stands beside the cash register.",
+          "zh": "收銀員站在收銀機旁邊。"
+        },
+        {
+          "guid": "ac8383e8-6d31-570c-ba90-a7530c7aa2ef",
+          "en": "The cash register has a money drawer.",
+          "zh": "收銀機有放錢的抽屜。"
+        },
+        {
+          "guid": "26b37e16-dbbf-5094-b4b3-64aeaa2d5ffa",
+          "en": "The cashier uses the cash register to record our payment.",
+          "zh": "收銀員用收銀機記錄我們的付款。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9179,
+      "guid": "259a4ecb-6973-5e40-b1ca-83dd51ac85d0",
+      "word": "Dining Area",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "用餐區",
+      "explains": [
+        {
+          "guid": "3bf7d60e-0f62-56bc-84e4-27b55281411c",
+          "en": "A dining area is a place where people sit and eat."
+        },
+        {
+          "guid": "348064cb-4f3e-5ade-9f9a-99e28fcb7eaf",
+          "en": "In a restaurant, it contains tables and chairs for customers."
+        },
+        {
+          "guid": "cb9b4fb4-fc2a-5041-95d9-62ad11d168e3",
+          "en": "It is the part of a restaurant used for enjoying meals."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "57329d37-9e33-57dc-84b0-dfb95beaf7c3",
+          "en": "The dining area is bright and tidy.",
+          "zh": "用餐區明亮又整潔。"
+        },
+        {
+          "guid": "8da781cb-baef-56be-82dd-04aeff352847",
+          "en": "We find a table in the dining area.",
+          "zh": "我們在用餐區找到一張桌子。"
+        },
+        {
+          "guid": "ca9712d8-7e97-5a6c-8674-b174d6ae1067",
+          "en": "The dining area is near the window.",
+          "zh": "用餐區在窗戶附近。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9180,
+      "guid": "9460f908-8416-5250-bb62-6b31972bce2e",
+      "word": "Cheeseburger",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "起司漢堡",
+      "explains": [
+        {
+          "guid": "588064c9-f7cb-5298-82a2-227bd55bb1c6",
+          "en": "A cheeseburger is a burger with cheese in it."
+        },
+        {
+          "guid": "e3357bbb-b90f-5106-bb99-7aa23b902350",
+          "en": "It has a meat patty and cheese between pieces of bread."
+        },
+        {
+          "guid": "7ebefffd-8b08-5428-91f7-a73922902247",
+          "en": "The cheese is an important part of this kind of burger."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "16c5714a-1cc9-5b0e-8d15-1a36f6ff8090",
+          "en": "I choose a cheeseburger for lunch.",
+          "zh": "我選起司漢堡當午餐。"
+        },
+        {
+          "guid": "be110c69-0870-556f-9efe-ecb94ffad4a4",
+          "en": "The cheeseburger has yellow cheese inside.",
+          "zh": "起司漢堡裡面有黃色的起司。"
+        },
+        {
+          "guid": "a3e1c12b-8e5d-58e7-80f3-3cc6a95ed02d",
+          "en": "She holds a cheeseburger with both hands.",
+          "zh": "她用雙手拿著起司漢堡。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Food & drinks"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9181,
+      "guid": "7be495ca-e5db-5aed-bd99-30bf6397ce9e",
+      "word": "Big Mac",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "大麥克",
+      "explains": [
+        {
+          "guid": "f39766ce-a4f2-5542-992d-4266c31595a8",
+          "en": "A Big Mac is a burger sold by McDonald's."
+        },
+        {
+          "guid": "f02f0470-6a0d-52a5-985f-0823a02ebf40",
+          "en": "It has two beef patties and an extra piece of bun in the middle."
+        },
+        {
+          "guid": "b08b6d7a-55dc-500f-9c74-1e450bddb618",
+          "en": "This burger also contains cheese, lettuce, pickles, onions, and sauce."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "1b230c24-066b-510d-99d1-f30aafc2aee2",
+          "en": "Dad chooses a Big Mac.",
+          "zh": "爸爸選大麥克。"
+        },
+        {
+          "guid": "9333b15b-af67-5a94-a0af-4961ff931df1",
+          "en": "The picture shows a Big Mac.",
+          "zh": "圖片上有一個大麥克。"
+        },
+        {
+          "guid": "5ad0576c-62ec-5934-be8b-df51a33a2204",
+          "en": "A Big Mac has an extra piece of bun in the middle.",
+          "zh": "大麥克中間多一層漢堡麵包。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9182,
+      "guid": "12fe2281-38e1-52c3-946c-79bf8a607c02",
+      "word": "Chicken Burger",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "雞肉漢堡",
+      "explains": [
+        {
+          "guid": "14575901-c6cc-5c67-802e-4709ed0f97b8",
+          "en": "A chicken burger is a burger made with chicken."
+        },
+        {
+          "guid": "cab5359a-a005-5fdb-b502-103695c250cf",
+          "en": "It has cooked chicken between pieces of a bun."
+        },
+        {
+          "guid": "caa75e06-8494-5ff8-a997-f5c8c2b50a5c",
+          "en": "The chicken is the main filling in this kind of burger."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "73411397-96ef-5729-bfcc-c8aac9012bff",
+          "en": "I would like a chicken burger.",
+          "zh": "我想要一個雞肉漢堡。"
+        },
+        {
+          "guid": "fa84b5e8-d1bd-5e4e-a043-8d1fdeb575da",
+          "en": "The chicken burger has lettuce inside.",
+          "zh": "雞肉漢堡裡面有生菜。"
+        },
+        {
+          "guid": "021ef88e-b3ba-5375-827d-b031aa125b86",
+          "en": "She puts her chicken burger on the tray.",
+          "zh": "她把雞肉漢堡放在托盤上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9183,
+      "guid": "8731add9-6029-54a4-8c91-6b747f93f667",
+      "word": "Fish Burger",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "魚肉漢堡",
+      "explains": [
+        {
+          "guid": "71eeace6-5e7a-5d30-b859-838ecb1539b7",
+          "en": "A fish burger is a burger made with fish."
+        },
+        {
+          "guid": "b9784321-6144-5f80-baea-7328bb177547",
+          "en": "It has cooked fish between pieces of a bun."
+        },
+        {
+          "guid": "c6a3f732-687c-5059-9030-ab19058af0b7",
+          "en": "The fish is the main filling in this kind of burger."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "fb5bc433-6c7f-589a-8830-fb309e67b529",
+          "en": "He chooses a fish burger.",
+          "zh": "他選魚肉漢堡。"
+        },
+        {
+          "guid": "27ae7cb6-3d9e-5a71-9aaf-17628c8d7657",
+          "en": "The fish burger has sauce inside.",
+          "zh": "魚肉漢堡裡面有醬。"
+        },
+        {
+          "guid": "689f7930-2b96-5816-8afa-35b4c8ab739c",
+          "en": "I put my fish burger on its wrapper.",
+          "zh": "我把魚肉漢堡放在它的包裝紙上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9184,
+      "guid": "833a9ad9-2097-5139-b738-547ca41e8463",
+      "word": "Chicken Nuggets",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "雞塊",
+      "explains": [
+        {
+          "guid": "86b25102-6e4b-54c4-9e39-295bbeb406ed",
+          "en": "Chicken nuggets are small pieces of chicken prepared as bite-sized food."
+        },
+        {
+          "guid": "e73826f9-3467-5654-909d-e2e9d4ff111a",
+          "en": "They are often covered with a crisp coating and cooked."
+        },
+        {
+          "guid": "9ecbc0b6-985a-5791-bfaa-eb55d854bf43",
+          "en": "You can pick up a chicken nugget and dip it into sauce."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "85da46a7-f186-589e-95af-651d614a48d5",
+          "en": "The chicken nuggets are in a food box.",
+          "zh": "雞塊放在餐盒裡。"
+        },
+        {
+          "guid": "e3a36419-3c83-59a1-85b7-6bffb919d9af",
+          "en": "I dip my chicken nuggets into sauce.",
+          "zh": "我把雞塊沾進醬裡。"
+        },
+        {
+          "guid": "76f61780-c23b-5afd-b137-a977397ef764",
+          "en": "We share a box of chicken nuggets.",
+          "zh": "我們分享一盒雞塊。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9185,
+      "guid": "49988d44-96ab-5742-9d57-7c2dca7f20e4",
+      "word": "Hash Brown",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "薯餅",
+      "explains": [
+        {
+          "guid": "e105e5ce-b6b7-500e-8123-97a5ce795486",
+          "en": "A hash brown is a food made from small pieces of potato."
+        },
+        {
+          "guid": "1ce7c370-dce9-526b-acbd-9baaada5cacf",
+          "en": "The potato is shaped and cooked until the outside is crisp."
+        },
+        {
+          "guid": "3dfaf6b5-ea64-5aa7-abe4-66fa06f1acfa",
+          "en": "A hash brown can be a flat patty served with breakfast."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "de73ef9b-ffc7-5d4a-9bc4-879f6c3f7483",
+          "en": "The hash brown is golden.",
+          "zh": "薯餅是金黃色的。"
+        },
+        {
+          "guid": "d5fe37f4-9a94-5d17-8cd4-aa5dbd6fe82e",
+          "en": "Dad puts a hash brown on the tray.",
+          "zh": "爸爸把一塊薯餅放在托盤上。"
+        },
+        {
+          "guid": "1fff9376-8ea3-5614-8bb6-4ee133a4590f",
+          "en": "I eat a hot hash brown for breakfast.",
+          "zh": "我早餐吃一塊熱薯餅。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9186,
+      "guid": "8fcc03a8-194e-5550-aab8-397b4aa62f1a",
+      "word": "Apple Pie",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "蘋果派",
+      "explains": [
+        {
+          "guid": "0e575aad-28cc-5278-bca1-af584732a250",
+          "en": "An apple pie is a pie with an apple filling."
+        },
+        {
+          "guid": "c10c0681-bcc9-5699-88e7-609fcd38beed",
+          "en": "It has apples inside a pastry crust."
+        },
+        {
+          "guid": "0bf9fb40-6d0c-5dc8-8882-a62d0d16a30b",
+          "en": "Some apple pies are small enough to hold in one hand."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "a7b8dc1d-3908-5ba1-a6d9-9a0e6535a47d",
+          "en": "The apple pie has apple pieces inside.",
+          "zh": "蘋果派裡面有蘋果塊。"
+        },
+        {
+          "guid": "393985a0-e887-5f17-bc37-36829982d078",
+          "en": "We share a warm apple pie.",
+          "zh": "我們分享一個溫熱的蘋果派。"
+        },
+        {
+          "guid": "cba74614-426a-5793-80c7-8b86aab33879",
+          "en": "The apple pie is on the tray.",
+          "zh": "蘋果派在托盤上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9187,
+      "guid": "8c9fbb43-a84e-5d99-b9c1-5dc6a872c7da",
+      "word": "Ice Cream Cone",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "蛋捲冰淇淋",
+      "explains": [
+        {
+          "guid": "9649a564-f01b-554b-83b3-b6202aa1b7bf",
+          "en": "An ice cream cone is ice cream served in a cone-shaped wafer."
+        },
+        {
+          "guid": "b9db1b02-b9cc-5c22-999c-ba206e2cc569",
+          "en": "You can hold the cone while eating the ice cream."
+        },
+        {
+          "guid": "3422be98-5d1b-527f-b9a7-23d16b7e3fa1",
+          "en": "The cone is a crisp, edible container for the ice cream."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "53e5792f-e032-5064-a149-16777c57efab",
+          "en": "She holds an ice cream cone.",
+          "zh": "她拿著一支蛋捲冰淇淋。"
+        },
+        {
+          "guid": "5c4c3060-c890-512d-82d9-587a4f647b33",
+          "en": "My ice cream cone is cold.",
+          "zh": "我的蛋捲冰淇淋是冰的。"
+        },
+        {
+          "guid": "d65a0087-9a92-5179-bec8-971eca4704a8",
+          "en": "I eat the ice cream cone before it melts.",
+          "zh": "我在蛋捲冰淇淋融化前把它吃完。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9188,
+      "guid": "7b87f992-6dd3-5d41-b681-fe74d07eb5d2",
+      "word": "Sundae",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "聖代",
+      "explains": [
+        {
+          "guid": "b3c2561d-56e4-58f4-944e-036a593c04e0",
+          "en": "A sundae is an ice cream dessert with a topping."
+        },
+        {
+          "guid": "2e5f1761-63b9-5e8d-806e-186134a197c0",
+          "en": "It is usually served in a cup or a bowl."
+        },
+        {
+          "guid": "5a066b52-f256-53da-be2c-f02f1bfb565c",
+          "en": "A sundae can have chocolate sauce, fruit, or another topping."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "8eeb263d-74ce-53ea-886a-cca98e8aecd4",
+          "en": "The sundae has chocolate sauce on top.",
+          "zh": "聖代上面淋著巧克力醬。"
+        },
+        {
+          "guid": "f3bf549f-ea65-5c22-8d58-b09aa03c7340",
+          "en": "I eat my sundae with a spoon.",
+          "zh": "我用湯匙吃聖代。"
+        },
+        {
+          "guid": "19927692-1fb8-5810-9f8e-c857ee675816",
+          "en": "She chooses a small sundae.",
+          "zh": "她選一份小聖代。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Food & drinks"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9189,
+      "guid": "4b71f758-9c4d-5178-b1ce-671077e674fe",
+      "word": "Soft Drink",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "汽水",
+      "explains": [
+        {
+          "guid": "af90c8a1-ea7b-515f-853c-61089f665866",
+          "en": "A soft drink is a drink that does not contain alcohol."
+        },
+        {
+          "guid": "371a2287-bee2-5f39-a78a-8bf5d825ecc6",
+          "en": "This phrase often means a sweet drink with bubbles, such as cola."
+        },
+        {
+          "guid": "e47850b5-a0c4-59b5-8664-62d27b7ab9e2",
+          "en": "In this lesson, a soft drink means a fizzy drink served with a meal."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "79cfc53e-cfc6-569d-a9d6-35c5a232e84e",
+          "en": "Dad orders a soft drink.",
+          "zh": "爸爸點一杯汽水。"
+        },
+        {
+          "guid": "3cb8f13c-cc50-519d-8aad-0b824fb46e3b",
+          "en": "The soft drink has ice in it.",
+          "zh": "汽水裡有冰塊。"
+        },
+        {
+          "guid": "b1c0ad09-3ffa-53e7-8712-ceec4dae0ee6",
+          "en": "I can see bubbles in the soft drink.",
+          "zh": "我可以看見汽水裡的氣泡。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9190,
+      "guid": "6567ccd3-2a17-54c8-a90d-b9701574e406",
+      "word": "Orange Juice",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "柳橙汁",
+      "explains": [
+        {
+          "guid": "b54e457b-54ea-51c3-8794-75087b09a53c",
+          "en": "Orange juice is the liquid taken from oranges."
+        },
+        {
+          "guid": "ca3ab5aa-1480-56dd-954e-aa275b0cb0d9",
+          "en": "It is a fruit drink made from oranges."
+        },
+        {
+          "guid": "0ff295e1-fa01-543b-910a-4e746a049a0c",
+          "en": "Orange juice can be served in a glass, a cup, or a carton."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "29a5d6b9-bed2-525b-995a-9d9510279c4c",
+          "en": "She chooses orange juice with her meal.",
+          "zh": "她選柳橙汁搭配餐點。"
+        },
+        {
+          "guid": "b5c95b92-3155-5bb7-8eed-995053ca572a",
+          "en": "The cup is full of orange juice.",
+          "zh": "杯子裡裝滿柳橙汁。"
+        },
+        {
+          "guid": "23231cdd-7f63-56ea-bb88-4beeeb47efa4",
+          "en": "I drink some cold orange juice.",
+          "zh": "我喝一些冰柳橙汁。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9191,
+      "guid": "b095635a-83d8-5948-9056-e721dc38e986",
+      "word": "Happy Meal",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "快樂兒童餐",
+      "explains": [
+        {
+          "guid": "bddc55cd-605e-5f0f-8b8b-72493761e439",
+          "en": "A Happy Meal is a children's meal sold by McDonald's."
+        },
+        {
+          "guid": "892f97ab-521f-5d62-aea3-7f5620bfb303",
+          "en": "It combines a small main dish with other food and a drink."
+        },
+        {
+          "guid": "3ed279bd-3573-58f6-bca2-0e0c029843a9",
+          "en": "A Happy Meal may also include a toy or another item for children."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "a07f169e-824e-59e2-aa7e-0fd809caaed3",
+          "en": "The child chooses a Happy Meal.",
+          "zh": "這位小朋友選快樂兒童餐。"
+        },
+        {
+          "guid": "d7eb1668-29ed-59e6-b16e-993f91a4a9ce",
+          "en": "The Happy Meal comes in a small box.",
+          "zh": "快樂兒童餐裝在小餐盒裡。"
+        },
+        {
+          "guid": "e4354342-7596-5085-9e2e-79607582b8c6",
+          "en": "I carry my Happy Meal to the table.",
+          "zh": "我把快樂兒童餐帶到桌邊。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9192,
+      "guid": "d825e045-35cd-5522-b0b5-f01f3a2e123f",
+      "word": "Wrapper",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "食物包裝紙",
+      "explains": [
+        {
+          "guid": "e500ec1d-b3c7-57f0-a18b-bd347faf7255",
+          "en": "A wrapper is material used to cover or hold something."
+        },
+        {
+          "guid": "81ed4170-75b4-5532-b6a5-61af587fc2fb",
+          "en": "For food, it can be paper wrapped around a burger or another item."
+        },
+        {
+          "guid": "157042c9-0ebe-5f3a-860d-58571a8ae94f",
+          "en": "A food wrapper helps keep the food covered before you eat it."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d0bcb234-d14b-5702-b3e6-5a2867ff7fca",
+          "en": "The burger is inside its wrapper.",
+          "zh": "漢堡包在食物包裝紙裡。"
+        },
+        {
+          "guid": "3fbb78bc-2da6-5416-80d6-999a9abdcf8c",
+          "en": "I open the wrapper before eating.",
+          "zh": "我吃東西前打開食物包裝紙。"
+        },
+        {
+          "guid": "43fd049f-8038-54a8-b5b7-d63a5e4dc25c",
+          "en": "The wrapper lies under the burger.",
+          "zh": "食物包裝紙攤在漢堡下面。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Tableware"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9193,
+      "guid": "7fdb901f-c4e0-59a3-a478-c0d96c820e4c",
+      "word": "Paper Bag",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "紙袋",
+      "explains": [
+        {
+          "guid": "dac84a83-8e65-59dc-986a-543b40e5fbb1",
+          "en": "A paper bag is a bag made from paper."
+        },
+        {
+          "guid": "49525138-6047-5ad4-99b2-c13c7cd83299",
+          "en": "It can hold food or other things that you need to carry."
+        },
+        {
+          "guid": "f3ba1ef1-b3cd-5def-8e50-d89acf3d3f1e",
+          "en": "A restaurant may put takeout food in a paper bag."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "0954b74d-87db-512c-9e1f-0df91c540a96",
+          "en": "The food is in a paper bag.",
+          "zh": "餐點放在紙袋裡。"
+        },
+        {
+          "guid": "ed158817-fb8d-53af-b915-60983df66e05",
+          "en": "Dad carries the paper bag to the car.",
+          "zh": "爸爸把紙袋拿到車上。"
+        },
+        {
+          "guid": "3cb8f48e-e25f-5107-8b89-798a688029ca",
+          "en": "An empty paper bag stands beside the tray.",
+          "zh": "一個空紙袋立在托盤旁邊。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9194,
+      "guid": "0fa66e06-5227-5fe1-9f68-b948e4d82ec9",
+      "word": "Food Box",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "餐盒",
+      "explains": [
+        {
+          "guid": "086a4807-903e-5a52-aa81-e94eed5acfb2",
+          "en": "A food box is a box used to hold food."
+        },
+        {
+          "guid": "80dd0433-8140-52bc-bcdc-47cbb1b6bf27",
+          "en": "It is a container that helps keep a meal or snack together."
+        },
+        {
+          "guid": "10978916-e38a-5e64-956b-3de03951e8bf",
+          "en": "In a restaurant, a food box may hold nuggets or other items."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "b787a3eb-f3ee-5c44-9b04-d73f783b660e",
+          "en": "The chicken nuggets are in a food box.",
+          "zh": "雞塊放在餐盒裡。"
+        },
+        {
+          "guid": "c30e8333-8f3b-5481-88ee-5b13a5305fa1",
+          "en": "I open the food box on the table.",
+          "zh": "我在桌上打開餐盒。"
+        },
+        {
+          "guid": "35060e32-0e9b-5270-8a3e-cde9637ab324",
+          "en": "The empty food box is on my tray.",
+          "zh": "空餐盒在我的托盤上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9195,
+      "guid": "423d3976-08f2-530b-a9a5-d8b58737da01",
+      "word": "Dipping Sauce",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "沾醬",
+      "explains": [
+        {
+          "guid": "17606038-e37e-534f-9e1a-49c7d639ddbc",
+          "en": "Dipping sauce is a sauce that you dip food into."
+        },
+        {
+          "guid": "b3ff25e0-c888-5872-9d98-f704c5896f59",
+          "en": "It adds flavor when you put a small piece of food into it."
+        },
+        {
+          "guid": "cc4bf988-3893-5db6-b9c4-7263f850aa54",
+          "en": "It is often served in a small container beside the food."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "507df982-666a-5917-a8e2-3995c54bc069",
+          "en": "The dipping sauce is beside the nuggets.",
+          "zh": "沾醬放在雞塊旁邊。"
+        },
+        {
+          "guid": "f478e362-058d-56e0-867d-65d3fbf82442",
+          "en": "She dips a nugget into the dipping sauce.",
+          "zh": "她把一塊雞塊沾進沾醬。"
+        },
+        {
+          "guid": "4061387e-5307-52cc-9995-1e24876985cb",
+          "en": "I open the small cup of dipping sauce.",
+          "zh": "我打開裝著沾醬的小杯子。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9196,
+      "guid": "e1e82622-3f02-52b7-b301-d53257eb31c7",
+      "word": "Burger Bun",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "漢堡麵包",
+      "explains": [
+        {
+          "guid": "d6d7aa7e-6837-5905-9b77-6b19e22dfe6a",
+          "en": "A burger bun is the bread used to hold a burger's filling."
+        },
+        {
+          "guid": "057a6c26-bb51-5ba1-8f5c-773417bfa251",
+          "en": "It is usually a small round bread roll cut into two parts."
+        },
+        {
+          "guid": "355cf0d8-a825-5b45-8aca-60d2c39a15c6",
+          "en": "The meat and other fillings go between the parts of the burger bun."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "340c4103-7edc-52ee-baa1-97175befa530",
+          "en": "The burger bun is round and soft.",
+          "zh": "漢堡麵包圓圓又軟軟的。"
+        },
+        {
+          "guid": "8a859b17-85c0-5799-9cfd-04e684206efa",
+          "en": "I lift the top of the burger bun.",
+          "zh": "我掀開漢堡麵包的上半部。"
+        },
+        {
+          "guid": "f68eab39-ff4c-5d88-a334-f05b5b7032bb",
+          "en": "There is cheese under the burger bun.",
+          "zh": "漢堡麵包下面有起司。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9197,
+      "guid": "7d0e9d9e-ea2f-5e56-afa6-94e6d0225f7c",
+      "word": "Recycling Bin",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "資源回收桶",
+      "explains": [
+        {
+          "guid": "c9133792-8110-5e4b-bb7a-427105f50537",
+          "en": "A recycling bin is a container for materials collected for recycling."
+        },
+        {
+          "guid": "454fbeed-bdbb-588a-8cda-40d431f17a67",
+          "en": "People put accepted recyclable items in this bin."
+        },
+        {
+          "guid": "807255a7-cda7-52ee-bc58-a4dcb25b81aa",
+          "en": "Its sign or pictures tell you what can go inside."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "9f7a689c-9d40-5902-83d4-ae862c4e051d",
+          "en": "The recycling bin has a symbol on it.",
+          "zh": "資源回收桶上有一個標誌。"
+        },
+        {
+          "guid": "5a771f32-dd00-5a7e-a806-053b5c3aa388",
+          "en": "We check the pictures above the recycling bin.",
+          "zh": "我們查看資源回收桶上方的圖片。"
+        },
+        {
+          "guid": "0a8c7cd1-64e5-5eca-95ba-ed3eb639e5fc",
+          "en": "The recycling bin is beside the trash can.",
+          "zh": "資源回收桶在垃圾桶旁邊。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9198,
+      "guid": "d4590780-19b5-53d9-b2e7-1e7a77d1780e",
+      "word": "Tray Return Station",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "餐盤回收區",
+      "explains": [
+        {
+          "guid": "128bcede-a0db-5e01-a866-81319a1f1a1c",
+          "en": "A tray return station is a place where customers return used trays."
+        },
+        {
+          "guid": "29f1e9b3-9c31-514e-ae2c-d801d93f7c1b",
+          "en": "It may have a rack or a shelf for stacking trays."
+        },
+        {
+          "guid": "a825f1b5-bdcb-5ea3-8955-c888521ecc7b",
+          "en": "Restaurants use this area to collect trays after meals."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "89f65932-145b-544c-b59f-659d6cc75a69",
+          "en": "Dad takes our tray to the tray return station.",
+          "zh": "爸爸把我們的托盤拿到餐盤回收區。"
+        },
+        {
+          "guid": "b51895e2-3131-5d80-affd-0d1f5661982b",
+          "en": "The tray return station is near the exit.",
+          "zh": "餐盤回收區在出口附近。"
+        },
+        {
+          "guid": "c3358872-a945-5285-af25-6edde1ab648a",
+          "en": "We leave the tray at the tray return station.",
+          "zh": "我們把托盤放在餐盤回收區。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9199,
+      "guid": "7cdc3862-829a-55f2-be8f-1fb61b502066",
+      "word": "Leftovers",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "剩餘食物",
+      "explains": [
+        {
+          "guid": "6dd88b5a-5ea5-5e43-b91f-768fd60eb47a",
+          "en": "Leftovers are food that remains after a meal."
+        },
+        {
+          "guid": "d280341d-9bee-5038-ac65-9b40a5e8bcc1",
+          "en": "They are parts of a meal that people have not eaten."
+        },
+        {
+          "guid": "0466db18-c041-5128-914a-3274a2d48312",
+          "en": "Some leftovers can be kept and eaten later if stored safely."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d7e657cc-1fa8-5556-9894-2f6de17279c7",
+          "en": "There are some leftovers on the tray.",
+          "zh": "托盤上有一些剩餘食物。"
+        },
+        {
+          "guid": "7b285f75-491d-52e0-8361-cd8268eaced9",
+          "en": "Dad puts the leftovers in a box.",
+          "zh": "爸爸把剩餘食物放進餐盒。"
+        },
+        {
+          "guid": "52191a2e-475b-582d-8665-7fe95320a925",
+          "en": "We take our leftovers home.",
+          "zh": "我們把剩餘食物帶回家。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Food & drinks"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9200,
+      "guid": "4fdd11c6-9ad0-5965-89dc-21ea145c3d77",
+      "word": "Empty Cup",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "空杯子",
+      "explains": [
+        {
+          "guid": "c7a3af16-c150-5c9d-972a-57b507a447e3",
+          "en": "An empty cup is a cup with nothing inside it."
+        },
+        {
+          "guid": "1fa780b7-59f2-58e3-9945-cf83d2eea7aa",
+          "en": "It is a cup that no longer holds a drink or other contents."
+        },
+        {
+          "guid": "ff279b71-abe4-55c7-903e-53f8cf641b75",
+          "en": "After finishing a drink, you may have an empty cup."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "11103bea-e25a-52c6-a450-5ef744ae9a85",
+          "en": "The empty cup is beside the tray.",
+          "zh": "空杯子在托盤旁邊。"
+        },
+        {
+          "guid": "1bb24049-619d-524b-bb47-2aa17582ba44",
+          "en": "I take the lid off the empty cup.",
+          "zh": "我拿下空杯子的杯蓋。"
+        },
+        {
+          "guid": "086b110e-07dd-51de-b3c5-8105a9ec95eb",
+          "en": "We can see inside the empty cup.",
+          "zh": "我們可以看見空杯子的內部。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9201,
+      "guid": "f6753daf-52d7-5de0-8f6d-cab8bd41e36f",
+      "word": "Paper Wrapper",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "食物包裝紙",
+      "explains": [
+        {
+          "guid": "7400360d-0f1b-5070-9ac9-6cebbde56fcf",
+          "en": "A paper wrapper is paper used to cover or hold something."
+        },
+        {
+          "guid": "52fd3d80-dd8d-5847-98b6-82cbe2a27541",
+          "en": "For food, it is paper wrapped around an item such as a burger."
+        },
+        {
+          "guid": "601bdd2f-51fe-5528-bd76-10ffb02a2959",
+          "en": "It serves the same purpose as other food wrappers but is made of paper."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "3d57cb37-1592-5c44-b2c5-66e253846950",
+          "en": "The burger has a paper wrapper.",
+          "zh": "漢堡包著食物包裝紙。"
+        },
+        {
+          "guid": "00028c88-4b34-54c4-a222-4cdcaec270ab",
+          "en": "I open the paper wrapper on the table.",
+          "zh": "我在桌上打開食物包裝紙。"
+        },
+        {
+          "guid": "33502927-da35-5121-9b35-67e32e5a7071",
+          "en": "The used paper wrapper is on the tray.",
+          "zh": "用過的食物包裝紙在托盤上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9202,
+      "guid": "d5383ce1-423f-59e0-8221-15b961798f5f",
+      "word": "Used Napkin",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "使用過的餐巾紙",
+      "explains": [
+        {
+          "guid": "e8608f82-db12-5dce-b335-a6a51e338bf1",
+          "en": "A used napkin is a napkin that someone has already used."
+        },
+        {
+          "guid": "1874524d-7f76-5af7-85e7-6bd221fae581",
+          "en": "It may have been used to wipe a mouth, hands, or a small spill."
+        },
+        {
+          "guid": "456594f4-3f33-5c0f-b32c-c60bd39550c3",
+          "en": "It can have food marks or moisture after use."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "a0386917-1275-5913-a179-e31ea81dbd80",
+          "en": "The used napkin is beside the empty cup.",
+          "zh": "使用過的餐巾紙放在空杯子旁邊。"
+        },
+        {
+          "guid": "8a1d2e4e-e251-51f4-9414-e84d00dbdc77",
+          "en": "I put the used napkin on the tray.",
+          "zh": "我把使用過的餐巾紙放在托盤上。"
+        },
+        {
+          "guid": "7d4cd6ef-49bb-5da5-8b8c-6ccb9949358e",
+          "en": "The used napkin has a small sauce mark.",
+          "zh": "使用過的餐巾紙上有一小塊醬漬。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9203,
+      "guid": "60b02d58-5775-575e-88dc-0371ae7e3ff4",
+      "word": "Cleaning Cloth",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "清潔抹布",
+      "explains": [
+        {
+          "guid": "6b33475d-56d1-586b-a944-107090cf8d2c",
+          "en": "A cleaning cloth is a piece of cloth used to clean surfaces."
+        },
+        {
+          "guid": "5436bdf9-9ed2-5392-b897-0b291ecf6b71",
+          "en": "People use it to wipe tables or remove small spills."
+        },
+        {
+          "guid": "ea682c66-4340-5b74-a501-f374f82f8858",
+          "en": "A cleaning cloth may be damp when someone uses it."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "515fd814-ad33-5d55-95de-38783301336a",
+          "en": "The employee wipes the table with a cleaning cloth.",
+          "zh": "店員用清潔抹布擦桌子。"
+        },
+        {
+          "guid": "cb8380a7-a831-566b-aebd-c401f319b25d",
+          "en": "The cleaning cloth is wet.",
+          "zh": "清潔抹布是濕的。"
+        },
+        {
+          "guid": "9ae00ea4-3d15-5029-88f3-d8b825d3eeba",
+          "en": "The cleaning cloth is on the cart.",
+          "zh": "清潔抹布放在推車上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9204,
+      "guid": "ed2cfd8e-3409-5da3-8167-1a319b974e16",
+      "word": "Dustpan",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "畚箕",
+      "explains": [
+        {
+          "guid": "2bd8e686-293a-52fe-8572-8ea80c293fb9",
+          "en": "A dustpan is a small tool used to collect dirt from a floor."
+        },
+        {
+          "guid": "83413d32-69b3-518e-8f51-9bf2d1453e04",
+          "en": "You sweep dirt into it with a broom."
+        },
+        {
+          "guid": "6fe52a92-ed11-51d3-bd82-759792dfa688",
+          "en": "Its flat edge helps it sit close to the floor."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "eb5bcc73-75a7-5cb1-a1e4-e86025bc8e0f",
+          "en": "The dustpan is beside the broom.",
+          "zh": "畚箕在掃把旁邊。"
+        },
+        {
+          "guid": "4d0c627e-2d7c-5d0d-a373-7fd3ad85d7f8",
+          "en": "The employee sweeps dirt into the dustpan.",
+          "zh": "店員把灰塵掃進畚箕。"
+        },
+        {
+          "guid": "376a6d1a-3edf-5549-94b3-a771eb157be7",
+          "en": "The dustpan is on the cleaning cart.",
+          "zh": "畚箕放在清潔推車上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Houses & apartments"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9205,
+      "guid": "922f4be5-bc43-55e7-89c3-312a9acb4592",
+      "word": "Cleaning Cart",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "清潔推車",
+      "explains": [
+        {
+          "guid": "67d864f7-8a5b-560d-84da-bf1668568b5f",
+          "en": "A cleaning cart is a cart used to carry cleaning supplies."
+        },
+        {
+          "guid": "a22b82fa-a846-5a38-8b74-07ea0e9b254a",
+          "en": "It has wheels so a worker can move tools from place to place."
+        },
+        {
+          "guid": "bbc28f05-4f9b-5ac0-ae61-c4123a3c39cc",
+          "en": "It may hold cloths, bags, and other cleaning equipment."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "0073e3fe-673b-598c-afa4-144d144193f2",
+          "en": "The cleaning cart is near the table.",
+          "zh": "清潔推車在桌子附近。"
+        },
+        {
+          "guid": "b5f8c26d-4b21-5d10-9bf8-16539adb1866",
+          "en": "The employee pushes the cleaning cart.",
+          "zh": "店員推著清潔推車。"
+        },
+        {
+          "guid": "c2e8ba07-70b4-5fbc-af9a-21594c3a0632",
+          "en": "A cleaning cloth rests on the cleaning cart.",
+          "zh": "一塊清潔抹布放在清潔推車上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9206,
+      "guid": "ac43a461-fde3-557c-8708-c5ae15d0ad8a",
+      "word": "Trash Bag",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "垃圾袋",
+      "explains": [
+        {
+          "guid": "869fa9c1-9487-5264-a511-111647dccdb5",
+          "en": "A trash bag is a bag used to collect trash."
+        },
+        {
+          "guid": "d478808e-30ff-5494-b47d-17c5e1532ea5",
+          "en": "It can fit inside a trash can and hold waste."
+        },
+        {
+          "guid": "26200400-2d59-55d0-98ce-825a9987bd1e",
+          "en": "A filled trash bag can be tied closed for removal."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7163e8b4-2029-5a54-8298-527194057a66",
+          "en": "The trash bag is inside the trash can.",
+          "zh": "垃圾袋放在垃圾桶裡。"
+        },
+        {
+          "guid": "9cb9cce0-97c2-5006-8d62-7b0088af5b05",
+          "en": "The employee ties the trash bag closed.",
+          "zh": "店員把垃圾袋綁好。"
+        },
+        {
+          "guid": "d3024206-b49f-539b-a401-d1e2cd65e5ca",
+          "en": "A tied trash bag is beside the cleaning cart.",
+          "zh": "一個紮好的垃圾袋在清潔推車旁邊。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9207,
+      "guid": "1eb54d53-4622-590a-851b-d73a9dec8082",
+      "word": "Recycling Symbol",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "回收標誌",
+      "explains": [
+        {
+          "guid": "31657b87-00b0-5db8-b573-ca168260341a",
+          "en": "A recycling symbol is a sign connected with recycling."
+        },
+        {
+          "guid": "9bd86ee6-9e0c-52ac-9287-9afa763f0ff9",
+          "en": "A common version has three arrows that form a loop."
+        },
+        {
+          "guid": "ae626f33-10c5-5eec-a58f-f4576284d30b",
+          "en": "It helps people recognize recycling information or a recycling area."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "9e6fce48-c491-56a1-9d7f-c1aaa3191221",
+          "en": "The recycling symbol is on the bin.",
+          "zh": "回收標誌在桶子上。"
+        },
+        {
+          "guid": "ed0944b8-be19-5264-9aa4-35fe6fd4268f",
+          "en": "The child points to the recycling symbol.",
+          "zh": "小朋友指著回收標誌。"
+        },
+        {
+          "guid": "7018b4a9-2d4e-514d-beb1-c71abf8f929e",
+          "en": "The recycling symbol has three arrows.",
+          "zh": "回收標誌有三個箭頭。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9208,
+      "guid": "4d100eb8-e0a3-5995-b672-9d7c56620a1b",
+      "word": "Exit Sign",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "出口指示牌",
+      "explains": [
+        {
+          "guid": "7d9f2133-fe48-5d31-ad01-a1ced3e56cb6",
+          "en": "An exit sign is a sign that shows the way to an exit."
+        },
+        {
+          "guid": "41d430e5-bc21-56d0-bc83-723228abd81c",
+          "en": "It helps people find a door or route leading out."
+        },
+        {
+          "guid": "da32d52a-0a15-5199-871e-c013179f4c17",
+          "en": "It may use words, an arrow, or a picture of a person leaving."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "f751594b-6857-5f39-85f1-d3668cf79631",
+          "en": "The exit sign is above the door.",
+          "zh": "出口指示牌在門上方。"
+        },
+        {
+          "guid": "23e6175c-e61a-5d42-979f-b5835c41a761",
+          "en": "We look for the exit sign.",
+          "zh": "我們找出口指示牌。"
+        },
+        {
+          "guid": "f8bf909f-a7df-5404-848a-4d7aa30d7e8a",
+          "en": "The exit sign points toward the door.",
+          "zh": "出口指示牌指向門口。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9209,
+      "guid": "18e6fa71-d307-55d9-ac9f-d37d2033f3e9",
+      "word": "Combo Meal",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "套餐",
+      "explains": [
+        {
+          "guid": "19b7f113-7c56-5249-9274-0af4ffcddda0",
+          "en": "A combo meal is a group of food items sold together as one meal."
+        },
+        {
+          "guid": "0237e417-a7ce-5b37-82de-df83f0fb8fd9",
+          "en": "It often includes a main dish, a side dish, and a drink."
+        },
+        {
+          "guid": "dc616e19-8ed1-5f02-8689-00fac681d815",
+          "en": "You order the items as a set rather than choosing each one separately."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "c912ca11-8e9d-5872-a30f-a36bcddfade2",
+          "en": "The combo meal has a burger, fries, and a drink.",
+          "zh": "套餐有漢堡、薯條和飲料。"
+        },
+        {
+          "guid": "ba944492-6271-50c6-b9da-3ed289eced29",
+          "en": "Dad orders a combo meal.",
+          "zh": "爸爸點一份套餐。"
+        },
+        {
+          "guid": "ef4744c0-e0bb-5508-8224-e894418cb0ec",
+          "en": "The combo meal is on one tray.",
+          "zh": "套餐放在同一個托盤上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9210,
+      "guid": "f9a73ba5-eec3-50c8-940a-2bb64b0bbf94",
+      "word": "À la carte",
+      "parts_of_speech": [
+        "adj",
+        "adv"
+      ],
+      "definition": "單點（的）",
+      "explains": [
+        {
+          "guid": "4db0da59-a937-5f35-b134-c2f96acacb07",
+          "en": "À la carte describes food items ordered separately from a menu."
+        },
+        {
+          "guid": "5408daf0-b2bc-58bb-ab0a-177d1931b288",
+          "en": "An à la carte menu lets you choose individual items instead of a set meal."
+        },
+        {
+          "guid": "7c21b492-88c8-5f4e-99a3-66713cd57fba",
+          "en": "As an adverb, à la carte means ordering items separately, each with its own price."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "0cc29480-dac1-5c6c-8311-5039d77f7741",
+          "en": "The à la carte menu shows separate food items.",
+          "zh": "單點菜單列出個別餐點。"
+        },
+        {
+          "guid": "009bfae0-898c-5557-8706-d695e8833797",
+          "en": "We order our burgers à la carte.",
+          "zh": "我們以單點方式點漢堡。"
+        },
+        {
+          "guid": "b7890000-cba2-58a6-8ab5-da33facdebca",
+          "en": "Dad chooses an à la carte burger instead of a combo meal.",
+          "zh": "爸爸選單點漢堡，沒有選套餐。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9211,
+      "guid": "1f6fd002-1468-54c1-a271-9fba091fca99",
+      "word": "Dine-in",
+      "parts_of_speech": [
+        "adj"
+      ],
+      "definition": "內用（的）",
+      "explains": [
+        {
+          "guid": "a12c4eef-94aa-5b88-a464-e7878f88bc29",
+          "en": "Dine-in describes eating at the restaurant where you order your food."
+        },
+        {
+          "guid": "094c2561-6789-5933-a35a-83bc1479ece5",
+          "en": "Dine-in service provides food for customers who stay and eat there."
+        },
+        {
+          "guid": "8fd8d089-5004-5986-b024-cf14c8da9297",
+          "en": "Dine-in customers use the restaurant's tables instead of taking the meal away."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "f462dc7e-f3b3-53a0-a109-c0419135aafb",
+          "en": "Dine-in customers sit in the dining area.",
+          "zh": "內用顧客坐在用餐區。"
+        },
+        {
+          "guid": "326d8ca4-9674-58f9-9623-d083acb0d886",
+          "en": "The restaurant offers dine-in service.",
+          "zh": "這間餐廳提供內用服務。"
+        },
+        {
+          "guid": "65d52250-6dc2-58af-ade6-c6886c2bf6de",
+          "en": "Our dine-in meal comes on a tray.",
+          "zh": "我們的內用餐點放在托盤上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9212,
+      "guid": "799a7de6-37fa-5a6a-a3fa-b731c99d80c1",
+      "word": "Takeout",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "外帶（餐點）",
+      "explains": [
+        {
+          "guid": "528af962-0454-516e-9c6a-5e497553b6b4",
+          "en": "Takeout is food prepared by a restaurant to be eaten somewhere else."
+        },
+        {
+          "guid": "90fc7889-ead4-512e-b2f2-e5da46b5b913",
+          "en": "You collect takeout and carry it away from the restaurant."
+        },
+        {
+          "guid": "da3f6c95-1274-54d5-a453-193e28dcd978",
+          "en": "In American English, takeout can mean a meal that you bring home."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "c50190e4-8e8c-593e-85a6-cd5c871a8a16",
+          "en": "Dad picks up our takeout.",
+          "zh": "爸爸領取我們的外帶餐點。"
+        },
+        {
+          "guid": "7a845d2f-bd49-5c16-8443-cbbd52cc45f5",
+          "en": "The takeout is in a paper bag.",
+          "zh": "外帶餐點放在紙袋裡。"
+        },
+        {
+          "guid": "42cda169-26b5-5514-af57-3c2dc88d7a78",
+          "en": "We carry the takeout home.",
+          "zh": "我們把外帶餐點帶回家。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Food & drinks"
+      ],
+      "scenario": []
     }
   ]
 }

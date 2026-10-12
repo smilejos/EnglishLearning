@@ -73,6 +73,48 @@ test('有效草稿可預檢，列出 15 組座標、底圖與故事音檔缺項'
   assert.equal((await f.run()).status, 0);
 });
 
+test('指定詞模式重用真實 expert／null 詞條，Unicode 與多字片語完整覆蓋且只保留一個 GUID', async (t) => {
+  const f = await fixture(t);
+  f.pkg.vocabularyMode = 'user-specified';
+  f.pkg.vocabularyFilter.levels = ['basic', 'advance', 'expert'];
+  const added = [
+    { guid: 'entry-phrase-one', word: 'À la carte', level: { list: 'expert' }, parts_of_speech: ['n'] },
+    { guid: 'entry-phrase-two', word: 'self-service kiosk', level: { list: null }, parts_of_speech: ['n'] },
+  ];
+  f.entries.push(...added);
+  // 指定詞模式的故事支援詞也可使用真實 expert 級別。
+  f.entries.find(entry => entry.word === 'by').level.list = 'expert';
+  await writeFile(f.sourceFile, JSON.stringify({ entries: f.entries }));
+  f.pkg.targets.push(...added.map(entry => ({ word: entry.word, entryGuid: entry.guid, list: entry.level.list, teachingPos: 'n', senseZh: '本次教學詞義', interaction: null })));
+  f.pkg.targetCount += 2;
+  const en = 'À la carte by the self-service kiosk.';
+  const wordLinks = [
+    { surface: 'À la carte', word: 'À la carte', entryGuid: 'entry-phrase-one', isTarget: true, start: 0, end: 10 },
+    { surface: 'by', word: 'by', entryGuid: 'entry-by', isTarget: false, start: 11, end: 13 },
+    { surface: 'the', word: 'the', entryGuid: 'entry-the', isTarget: false, start: 14, end: 17 },
+    { surface: 'self-service kiosk', word: 'self-service kiosk', entryGuid: 'entry-phrase-two', isTarget: true, start: 18, end: 36 },
+  ];
+  f.pkg.story.sentences.push({ id: 's5', en, zh: '在自助點餐機單點。', wordLinks });
+  f.pkg.story.textEn = f.pkg.story.sentences.map(sentence => sentence.en).join(' ');
+  f.pkg.story.textZh = f.pkg.story.sentences.map(sentence => sentence.zh).join('');
+  assert.equal((await f.check()).valid, true);
+  assert.equal((await f.check({ ...f.pkg, vocabularyFilter: { system: 'list', levels: [] } })).valid, true);
+  for (const edit of [
+    pkg => { delete pkg.vocabularyMode; },
+    pkg => { pkg.vocabularyMode = 'anything'; },
+    pkg => { pkg.targets.at(-1).list = 'basic'; },
+    pkg => { pkg.story.sentences.at(-1).wordLinks.reverse(); },
+    pkg => { pkg.story.sentences.at(-1).wordLinks[0].start = 1; },
+    pkg => { pkg.story.sentences.at(-1).wordLinks[0].entryGuid = 'entry-by'; },
+    pkg => { const link = pkg.story.sentences.at(-1).wordLinks[3]; link.surface = 'self'; link.end = link.start + 4; },
+    pkg => { pkg.story.sentences.at(-1).wordLinks.splice(1, 1); },
+    pkg => { const links = pkg.story.sentences.at(-1).wordLinks; links.splice(1, 0, structuredClone(links[0])); },
+  ]) {
+    const invalid = structuredClone(f.pkg); edit(invalid);
+    assert.equal((await f.check(invalid)).valid, false);
+  }
+});
+
 for (const count of [25, 29, 30]) test(`${count} 詞完整覆蓋預檢遵守 29 詞上限；缺少動詞的教材也可保留`, async (t) => {
   const f = await fixture(t);
   const extraWords = ['alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron'].slice(0, count - 15);

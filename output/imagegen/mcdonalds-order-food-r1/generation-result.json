@@ -1,0 +1,15 @@
+{
+  "scenarioKey": "mcdonalds-order-food",
+  "revision": 1,
+  "tool": "Codex imagegen skill / built-in image_gen",
+  "status": "generated-visually-reviewed-awaiting-interaction-review",
+  "baseImage": "output/imagegen/mcdonalds-order-food-r1/base-v2.png",
+  "sha256": "2cb1ae9920dec36a0c63f8451f5f1c2e9979ae4f8c362a46bf36041dfc73547c",
+  "width": 1672,
+  "height": 941,
+  "bytes": 2308048,
+  "promptPath": "output/imagegen/mcdonalds-order-food-r1/prompt.txt",
+  "sourceGeneratedPath": "/Users/jos/.codex/generated_images/01a12b80-2380-7713-a984-108d8659451a/exec-5eb2f5fb-9a47-438e-95fa-e4a4ec551c83.png",
+  "noVocabularyTextReviewed": true,
+  "humanFullImageReview": "root完整看圖，25項線索可見；v2補hot蒸氣，所有餐點/人物/動作保留"
+}

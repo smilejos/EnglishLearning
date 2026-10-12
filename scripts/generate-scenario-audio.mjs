@@ -25,19 +25,27 @@ export function planScenarioAudio(pkg, profile = DEFAULT_PROFILE) {
     relativePath: `scenarios/${pkg.scenarioKey}/r${pkg.revision}/${profileHash}/story-${textHash.slice(0, 16)}.mp3` };
 }
 
-export async function generateScenarioAudio({ packageFile, repoRoot = process.cwd(), outputDir,
+export async function generateScenarioAudio({ packageFile, repoRoot = process.cwd(), outputDir, sourceFile,
   endpoint = 'http://127.0.0.1:8000/v1/audio/speech', realOptIn = process.env.SCENARIO_REAL_TTS,
   profile = DEFAULT_PROFILE, fetchImpl = fetch, validate = validateMp3, log = console.log }) {
   if (realOptIn !== '1') throw new Error('真實產音須 SCENARIO_REAL_TTS=1');
   const root = await realpath(repoRoot);
   const file = await realpath(packageFile);
   if (!within(root, file)) throw new Error('套件必須位於專案內');
+  let checkedSource;
+  if (sourceFile !== undefined) {
+    const requestedSource = path.resolve(sourceFile);
+    const lexicalRoot = path.resolve(repoRoot);
+    if (!within(lexicalRoot, requestedSource)) throw new Error('指定字庫必須位於專案內');
+    checkedSource = await realpath(requestedSource);
+    if (!within(root, checkedSource)) throw new Error('指定字庫不得透過 symlink 離開專案');
+  }
   const url = new URL(endpoint);
   if (url.protocol !== 'http:' || !['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname))
     throw new Error('情境旁白只允許指定本機 TTS 服務');
   const pkg = JSON.parse(await readFile(file, 'utf8'));
   // 舊旁白失效時可再生成；其他來源與素材仍嚴格檢查。
-  const check = await validateScenarioPackage({ ...pkg, assets: { ...pkg.assets, storyAudio: null } }, { repoRoot: root });
+  const check = await validateScenarioPackage({ ...pkg, assets: { ...pkg.assets, storyAudio: null } }, { repoRoot: root, sourceFile: checkedSource });
   if (!check.valid) throw new Error(`套件無效：${check.errors.join('；')}`);
   const job = planScenarioAudio(pkg, profile);
   const requested = path.resolve(outputDir ?? path.join(root, 'data/scenario-audio'));
@@ -65,7 +73,8 @@ export async function generateScenarioAudio({ packageFile, repoRoot = process.cw
     const latest = JSON.parse(await readFile(file, 'utf8'));
     if (latest.scenarioKey !== pkg.scenarioKey || latest.revision !== pkg.revision || latest.story?.textEn !== job.text)
       throw new Error('生成期間故事已變更；音檔保留，但套件未更新');
-    const latestCheck = await validateScenarioPackage({ ...latest, assets: { ...latest.assets, storyAudio: null } }, { repoRoot: root });
+    if (checkedSource && !within(root, await realpath(checkedSource))) throw new Error('指定字庫不得透過 symlink 離開專案');
+    const latestCheck = await validateScenarioPackage({ ...latest, assets: { ...latest.assets, storyAudio: null } }, { repoRoot: root, sourceFile: checkedSource });
     if (!latestCheck.valid) throw new Error(`生成期間套件已失效；音檔保留，套件未更新：${latestCheck.errors.join('；')}`);
     latest.assets.storyAudio = { path: path.relative(root, audioPath).split(path.sep).join('/'),
       sha256: hash(await readFile(audioPath)), language: 'en', textSha256: job.textHash,
@@ -88,7 +97,7 @@ async function main() {
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     if (arg === '--generate') generate = true;
-    else if (['--package', '--output', '--endpoint'].includes(arg)) {
+    else if (['--package', '--output', '--endpoint', '--source'].includes(arg)) {
       if (!args[i + 1] || args[i + 1].startsWith('--')) throw new Error(`${arg} 缺少值`);
       options[arg.slice(2)] = args[++i];
     } else throw new Error(`不支援參數 ${arg}`);
@@ -99,7 +108,7 @@ async function main() {
     console.log(JSON.stringify({ dryRun: true, profile: DEFAULT_PROFILE, job: planScenarioAudio(pkg) }, null, 2));
     return;
   }
-  console.log(JSON.stringify(await generateScenarioAudio({ packageFile, outputDir: options.output, endpoint: options.endpoint }), null, 2));
+  console.log(JSON.stringify(await generateScenarioAudio({ packageFile, outputDir: options.output, endpoint: options.endpoint, sourceFile: options.source }), null, 2));
 }
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href)
   main().catch((error) => { console.error(error.message); process.exitCode = 1; });

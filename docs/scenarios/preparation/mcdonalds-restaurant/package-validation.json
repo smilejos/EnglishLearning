@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-11T17:03:02.339Z",
+  "scope": "offline-merged-planned-source-not-formal-import",
+  "results": [
+    {
+      "scenarioKey": "mcdonalds-restaurant-tour",
+      "sharedContentValid": true,
+      "offlinePackageValid": true,
+      "offlineAssetsComplete": true,
+      "targetCount": 29,
+      "spans": 135,
+      "errors": [],
+      "formalImported": false
+    },
+    {
+      "scenarioKey": "mcdonalds-order-food",
+      "sharedContentValid": true,
+      "offlinePackageValid": true,
+      "offlineAssetsComplete": true,
+      "targetCount": 25,
+      "spans": 120,
+      "errors": [],
+      "formalImported": false
+    },
+    {
+      "scenarioKey": "mcdonalds-enjoy-meal",
+      "sharedContentValid": true,
+      "offlinePackageValid": true,
+      "offlineAssetsComplete": true,
+      "targetCount": 25,
+      "spans": 102,
+      "errors": [],
+      "formalImported": false
+    },
+    {
+      "scenarioKey": "mcdonalds-after-meal",
+      "sharedContentValid": true,
+      "offlinePackageValid": true,
+      "offlineAssetsComplete": true,
+      "targetCount": 25,
+      "spans": 150,
+      "errors": [],
+      "formalImported": false
+    }
+  ]
+}

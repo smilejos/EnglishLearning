@@ -1,0 +1,15 @@
+{
+  "scenarioKey": "mcdonalds-enjoy-meal",
+  "revision": 1,
+  "tool": "Codex imagegen skill / built-in image_gen",
+  "status": "generated-visually-reviewed-awaiting-interaction-review",
+  "baseImage": "output/imagegen/mcdonalds-enjoy-meal-r1/base-v2.png",
+  "sha256": "989e41647ffa7494ecc6cf13a33b8973febf9f2cf06cb1d9efdc49cf91766d1d",
+  "width": 1672,
+  "height": 941,
+  "bytes": 2248219,
+  "promptPath": "output/imagegen/mcdonalds-enjoy-meal-r1/prompt.txt",
+  "sourceGeneratedPath": "/Users/jos/.codex/generated_images/01a12b80-2380-7713-a984-108d8659451a/exec-4d82cd6c-ec76-4984-990c-11ed1b45e325.png",
+  "noVocabularyTextReviewed": true,
+  "humanFullImageReview": "root完整看圖，v2補清楚生菜綠葉；25項線索可見"
+}

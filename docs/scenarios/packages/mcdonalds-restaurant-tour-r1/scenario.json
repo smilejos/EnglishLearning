@@ -1,0 +1,1755 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "mcdonalds-restaurant-tour",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "認識麥當勞餐廳",
+  "vocabularyMode": "user-specified",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance",
+      "expert"
+    ]
+  },
+  "targetCount": 29,
+  "targets": [
+    {
+      "word": "restaurant",
+      "entryGuid": "30601ca6-061b-5296-aac7-292e5c9b9d87",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "餐廳",
+      "interaction": {
+        "object": {
+          "x": 0.49,
+          "y": 0.55
+        },
+        "label": {
+          "x": 0.09,
+          "y": 0.04
+        }
+      }
+    },
+    {
+      "word": "entrance",
+      "entryGuid": "d0be231f-ffd5-530e-a8f5-faf687464651",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "入口",
+      "interaction": {
+        "object": {
+          "x": 0.055,
+          "y": 0.305
+        },
+        "label": {
+          "x": 0.055,
+          "y": 0.12
+        }
+      }
+    },
+    {
+      "word": "exit",
+      "entryGuid": "fea1d8a0-da95-51af-a82c-a8289ea9e738",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "出口",
+      "interaction": {
+        "object": {
+          "x": 0.921,
+          "y": 0.339
+        },
+        "label": {
+          "x": 0.959,
+          "y": 0.285
+        }
+      }
+    },
+    {
+      "word": "counter",
+      "entryGuid": "f020a23d-7efe-5a09-bc8d-b4d0865beada",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "櫃檯",
+      "interaction": {
+        "object": {
+          "x": 0.667,
+          "y": 0.421
+        },
+        "label": {
+          "x": 0.72,
+          "y": 0.46
+        }
+      }
+    },
+    {
+      "word": "cashier",
+      "entryGuid": "b729adf6-5166-55aa-b0b3-2be80ae34de1",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "收銀員",
+      "interaction": {
+        "object": {
+          "x": 0.622,
+          "y": 0.305
+        },
+        "label": {
+          "x": 0.615,
+          "y": 0.385
+        }
+      }
+    },
+    {
+      "word": "customer",
+      "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "顧客",
+      "interaction": {
+        "object": {
+          "x": 0.537,
+          "y": 0.32
+        },
+        "label": {
+          "x": 0.523,
+          "y": 0.435
+        }
+      }
+    },
+    {
+      "word": "Menu Board",
+      "entryGuid": "d964f7b7-2224-5fce-965f-3375ed903d80",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "菜單看板",
+      "interaction": {
+        "object": {
+          "x": 0.647,
+          "y": 0.085
+        },
+        "label": {
+          "x": 0.645,
+          "y": 0.055
+        }
+      }
+    },
+    {
+      "word": "Self-Service Kiosk",
+      "entryGuid": "122000c0-ab05-5c69-906a-a505f62c6ee2",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "自助點餐機",
+      "interaction": {
+        "object": {
+          "x": 0.246,
+          "y": 0.359
+        },
+        "label": {
+          "x": 0.245,
+          "y": 0.635
+        }
+      }
+    },
+    {
+      "word": "Cash Register",
+      "entryGuid": "a263ce51-35b4-5dde-a56c-240c9f6f3668",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "收銀機",
+      "interaction": {
+        "object": {
+          "x": 0.593,
+          "y": 0.337
+        },
+        "label": {
+          "x": 0.587,
+          "y": 0.17
+        }
+      }
+    },
+    {
+      "word": "table",
+      "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "桌子",
+      "interaction": {
+        "object": {
+          "x": 0.326,
+          "y": 0.771
+        },
+        "label": {
+          "x": 0.324,
+          "y": 0.81
+        }
+      }
+    },
+    {
+      "word": "chair",
+      "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "椅子",
+      "interaction": {
+        "object": {
+          "x": 0.526,
+          "y": 0.696
+        },
+        "label": {
+          "x": 0.513,
+          "y": 0.72
+        }
+      }
+    },
+    {
+      "word": "Dining Area",
+      "entryGuid": "259a4ecb-6973-5e40-b1ca-83dd51ac85d0",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "用餐區",
+      "interaction": {
+        "object": {
+          "x": 0.744,
+          "y": 0.575
+        },
+        "label": {
+          "x": 0.765,
+          "y": 0.635
+        }
+      }
+    },
+    {
+      "word": "kitchen",
+      "entryGuid": "3940129e-ff35-5de4-8f17-361c73dcdef4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "廚房",
+      "interaction": {
+        "object": {
+          "x": 0.735,
+          "y": 0.253
+        },
+        "label": {
+          "x": 0.747,
+          "y": 0.145
+        }
+      }
+    },
+    {
+      "word": "employee",
+      "entryGuid": "37e2ee92-aabf-5b57-bb2d-1f25b4292356",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "店員",
+      "interaction": {
+        "object": {
+          "x": 0.789,
+          "y": 0.291
+        },
+        "label": {
+          "x": 0.809,
+          "y": 0.345
+        }
+      }
+    },
+    {
+      "word": "playground",
+      "entryGuid": "595cdbcd-c009-572c-8089-f1cc069340e5",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "遊戲區",
+      "interaction": {
+        "object": {
+          "x": 0.356,
+          "y": 0.19
+        },
+        "label": {
+          "x": 0.351,
+          "y": 0.07
+        }
+      }
+    },
+    {
+      "word": "bright",
+      "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "明亮的",
+      "interaction": {
+        "object": {
+          "x": 0.102,
+          "y": 0.145
+        },
+        "label": {
+          "x": 0.146,
+          "y": 0.13
+        }
+      }
+    },
+    {
+      "word": "tidy",
+      "entryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "整潔的",
+      "interaction": {
+        "object": {
+          "x": 0.63,
+          "y": 0.467
+        },
+        "label": {
+          "x": 0.628,
+          "y": 0.545
+        }
+      }
+    },
+    {
+      "word": "large",
+      "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "寬大的",
+      "interaction": {
+        "object": {
+          "x": 0.547,
+          "y": 0.676
+        },
+        "label": {
+          "x": 0.605,
+          "y": 0.66
+        }
+      }
+    },
+    {
+      "word": "friendly",
+      "entryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "親切的",
+      "interaction": {
+        "object": {
+          "x": 0.623,
+          "y": 0.262
+        },
+        "label": {
+          "x": 0.715,
+          "y": 0.548
+        }
+      }
+    },
+    {
+      "word": "busy",
+      "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "忙碌的",
+      "interaction": {
+        "object": {
+          "x": 0.55,
+          "y": 0.349
+        },
+        "label": {
+          "x": 0.468,
+          "y": 0.145
+        }
+      }
+    },
+    {
+      "word": "enter",
+      "entryGuid": "71bc506a-dc77-50dd-a79a-921d44a5f208",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "進入",
+      "interaction": {
+        "object": {
+          "x": 0.129,
+          "y": 0.49
+        },
+        "label": {
+          "x": 0.14,
+          "y": 0.54
+        }
+      }
+    },
+    {
+      "word": "wait",
+      "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "等候",
+      "interaction": {
+        "object": {
+          "x": 0.416,
+          "y": 0.343
+        },
+        "label": {
+          "x": 0.407,
+          "y": 0.405
+        }
+      }
+    },
+    {
+      "word": "pay",
+      "entryGuid": "f29a553c-6053-599b-a26b-58c96f78c412",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "付款",
+      "interaction": {
+        "object": {
+          "x": 0.575,
+          "y": 0.319
+        },
+        "label": {
+          "x": 0.545,
+          "y": 0.26
+        }
+      }
+    },
+    {
+      "word": "work",
+      "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "工作",
+      "interaction": {
+        "object": {
+          "x": 0.69,
+          "y": 0.287
+        },
+        "label": {
+          "x": 0.715,
+          "y": 0.325
+        }
+      }
+    },
+    {
+      "word": "play",
+      "entryGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "玩耍",
+      "interaction": {
+        "object": {
+          "x": 0.323,
+          "y": 0.181
+        },
+        "label": {
+          "x": 0.323,
+          "y": 0.25
+        }
+      }
+    },
+    {
+      "word": "Combo Meal",
+      "entryGuid": "18e6fa71-d307-55d9-ac9f-d37d2033f3e9",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "套餐",
+      "interaction": {
+        "object": {
+          "x": 0.651,
+          "y": 0.842
+        },
+        "label": {
+          "x": 0.651,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "À la carte",
+      "entryGuid": "f9a73ba5-eec3-50c8-940a-2bb64b0bbf94",
+      "list": null,
+      "teachingPos": "adj",
+      "senseZh": "單點（的）",
+      "interaction": {
+        "object": {
+          "x": 0.866,
+          "y": 0.867
+        },
+        "label": {
+          "x": 0.865,
+          "y": 0.94
+        }
+      }
+    },
+    {
+      "word": "Dine-in",
+      "entryGuid": "1f6fd002-1468-54c1-a271-9fba091fca99",
+      "list": null,
+      "teachingPos": "adj",
+      "senseZh": "內用（的）",
+      "interaction": {
+        "object": {
+          "x": 0.85,
+          "y": 0.52
+        },
+        "label": {
+          "x": 0.914,
+          "y": 0.655
+        }
+      }
+    },
+    {
+      "word": "Takeout",
+      "entryGuid": "799a7de6-37fa-5a6a-a3fa-b731c99d80c1",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "外帶（餐點）",
+      "interaction": {
+        "object": {
+          "x": 0.927,
+          "y": 0.392
+        },
+        "label": {
+          "x": 0.939,
+          "y": 0.53
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "This bright restaurant has a large dining area. Two children enter through the entrance with an adult. A tidy table and a chair are ready for them. At the counter, a friendly cashier helps a customer while others wait nearby. The menu board shows pictures of food. Another customer uses a card to pay beside the cash register. A customer also uses the self-service kiosk. The restaurant is busy, and people work in the kitchen. An employee brings food to the counter. Through the glass, the children see other children play in the playground. A combo meal includes a burger, fries, and a drink. The à la carte menu lets customers choose each item. Dine-in customers enjoy their food in the dining area. Another customer carries takeout in a paper bag toward the exit. The exit is on the other side of the room.",
+    "textZh": "這間明亮的餐廳有一個寬大的用餐區。兩位小朋友和一位大人從入口進入。一張整潔的桌子和一張椅子正等著他們。在櫃檯旁，一位親切的收銀員協助顧客，其他人在附近等候。菜單看板上有餐點圖片。另一位顧客在收銀機旁使用卡片付款。也有一位顧客使用自助點餐機。餐廳裡很忙碌，廚房裡有人正在工作。一位店員把餐點送到櫃檯。小朋友透過玻璃，看見其他孩子在遊戲區玩耍。套餐包含漢堡、薯條和飲料。單點菜單讓顧客選擇每一樣餐點。內用的顧客在用餐區享用餐點。另一位顧客拿著裝在紙袋裡的外帶餐點走向出口。出口在室內的另一側。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "This bright restaurant has a large dining area.",
+        "zh": "這間明亮的餐廳有一個寬大的用餐區。",
+        "wordLinks": [
+          {
+            "surface": "This",
+            "word": "this",
+            "entryGuid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "bright",
+            "word": "bright",
+            "entryGuid": "81ad853e-0491-5db2-9f65-a617a8e786b1",
+            "isTarget": true,
+            "start": 5,
+            "end": 11
+          },
+          {
+            "surface": "restaurant",
+            "word": "restaurant",
+            "entryGuid": "30601ca6-061b-5296-aac7-292e5c9b9d87",
+            "isTarget": true,
+            "start": 12,
+            "end": 22
+          },
+          {
+            "surface": "has",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 27,
+            "end": 28
+          },
+          {
+            "surface": "large",
+            "word": "large",
+            "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "dining area",
+            "word": "Dining Area",
+            "entryGuid": "259a4ecb-6973-5e40-b1ca-83dd51ac85d0",
+            "isTarget": true,
+            "start": 35,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "Two children enter through the entrance with an adult.",
+        "zh": "兩位小朋友和一位大人從入口進入。",
+        "wordLinks": [
+          {
+            "surface": "Two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "children",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 4,
+            "end": 12
+          },
+          {
+            "surface": "enter",
+            "word": "enter",
+            "entryGuid": "71bc506a-dc77-50dd-a79a-921d44a5f208",
+            "isTarget": true,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "through",
+            "word": "through",
+            "entryGuid": "9ae026b7-e7c9-517e-b739-bd61f536bafa",
+            "isTarget": false,
+            "start": 19,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "entrance",
+            "word": "entrance",
+            "entryGuid": "d0be231f-ffd5-530e-a8f5-faf687464651",
+            "isTarget": true,
+            "start": 31,
+            "end": 39
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 45,
+            "end": 47
+          },
+          {
+            "surface": "adult",
+            "word": "adult",
+            "entryGuid": "e6f35183-2516-5245-97be-54ab4a1fd4a2",
+            "isTarget": false,
+            "start": 48,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "A tidy table and a chair are ready for them.",
+        "zh": "一張整潔的桌子和一張椅子正等著他們。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "tidy",
+            "word": "tidy",
+            "entryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+            "isTarget": true,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": true,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 17,
+            "end": 18
+          },
+          {
+            "surface": "chair",
+            "word": "chair",
+            "entryGuid": "453bf052-e58d-52ba-87ea-20d53d9e0fda",
+            "isTarget": true,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "them",
+            "word": "them",
+            "entryGuid": "39092abf-a6e2-54cb-9151-9c9947587c98",
+            "isTarget": false,
+            "start": 39,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "At the counter, a friendly cashier helps a customer while others wait nearby.",
+        "zh": "在櫃檯旁，一位親切的收銀員協助顧客，其他人在附近等候。",
+        "wordLinks": [
+          {
+            "surface": "At",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "counter",
+            "word": "counter",
+            "entryGuid": "f020a23d-7efe-5a09-bc8d-b4d0865beada",
+            "isTarget": true,
+            "start": 7,
+            "end": 14
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 16,
+            "end": 17
+          },
+          {
+            "surface": "friendly",
+            "word": "friendly",
+            "entryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+            "isTarget": true,
+            "start": 18,
+            "end": 26
+          },
+          {
+            "surface": "cashier",
+            "word": "cashier",
+            "entryGuid": "b729adf6-5166-55aa-b0b3-2be80ae34de1",
+            "isTarget": true,
+            "start": 27,
+            "end": 34
+          },
+          {
+            "surface": "helps",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 35,
+            "end": 40
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 41,
+            "end": 42
+          },
+          {
+            "surface": "customer",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": true,
+            "start": 43,
+            "end": 51
+          },
+          {
+            "surface": "while",
+            "word": "while",
+            "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+            "isTarget": false,
+            "start": 52,
+            "end": 57
+          },
+          {
+            "surface": "others",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 58,
+            "end": 64
+          },
+          {
+            "surface": "wait",
+            "word": "wait",
+            "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+            "isTarget": true,
+            "start": 65,
+            "end": 69
+          },
+          {
+            "surface": "nearby",
+            "word": "nearby",
+            "entryGuid": "1d83ac72-ccfd-5575-b47a-d3643c2d512a",
+            "isTarget": false,
+            "start": 70,
+            "end": 76
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "The menu board shows pictures of food.",
+        "zh": "菜單看板上有餐點圖片。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "menu board",
+            "word": "Menu Board",
+            "entryGuid": "d964f7b7-2224-5fce-965f-3375ed903d80",
+            "isTarget": true,
+            "start": 4,
+            "end": 14
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "pictures",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": false,
+            "start": 21,
+            "end": 29
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 30,
+            "end": 32
+          },
+          {
+            "surface": "food",
+            "word": "food",
+            "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+            "isTarget": false,
+            "start": 33,
+            "end": 37
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "Another customer uses a card to pay beside the cash register.",
+        "zh": "另一位顧客在收銀機旁使用卡片付款。",
+        "wordLinks": [
+          {
+            "surface": "Another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "customer",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": true,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "surface": "uses",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 17,
+            "end": 21
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 22,
+            "end": 23
+          },
+          {
+            "surface": "card",
+            "word": "card",
+            "entryGuid": "50d8cbb6-1acc-5ec7-992b-aeb55b844801",
+            "isTarget": false,
+            "start": 24,
+            "end": 28
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "pay",
+            "word": "pay",
+            "entryGuid": "f29a553c-6053-599b-a26b-58c96f78c412",
+            "isTarget": true,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 36,
+            "end": 42
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          },
+          {
+            "surface": "cash register",
+            "word": "Cash Register",
+            "entryGuid": "a263ce51-35b4-5dde-a56c-240c9f6f3668",
+            "isTarget": true,
+            "start": 47,
+            "end": 60
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "A customer also uses the self-service kiosk.",
+        "zh": "也有一位顧客使用自助點餐機。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "customer",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": true,
+            "start": 2,
+            "end": 10
+          },
+          {
+            "surface": "also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 11,
+            "end": 15
+          },
+          {
+            "surface": "uses",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "self-service kiosk",
+            "word": "Self-Service Kiosk",
+            "entryGuid": "122000c0-ab05-5c69-906a-a505f62c6ee2",
+            "isTarget": true,
+            "start": 25,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "The restaurant is busy, and people work in the kitchen.",
+        "zh": "餐廳裡很忙碌，廚房裡有人正在工作。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "restaurant",
+            "word": "restaurant",
+            "entryGuid": "30601ca6-061b-5296-aac7-292e5c9b9d87",
+            "isTarget": true,
+            "start": 4,
+            "end": 14
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "busy",
+            "word": "busy",
+            "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+            "isTarget": true,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "people",
+            "word": "people",
+            "entryGuid": "7d8071a9-5a5a-5242-86f8-2cfb33a7856f",
+            "isTarget": false,
+            "start": 28,
+            "end": 34
+          },
+          {
+            "surface": "work",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": true,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 40,
+            "end": 42
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          },
+          {
+            "surface": "kitchen",
+            "word": "kitchen",
+            "entryGuid": "3940129e-ff35-5de4-8f17-361c73dcdef4",
+            "isTarget": true,
+            "start": 47,
+            "end": 54
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "An employee brings food to the counter.",
+        "zh": "一位店員把餐點送到櫃檯。",
+        "wordLinks": [
+          {
+            "surface": "An",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "employee",
+            "word": "employee",
+            "entryGuid": "37e2ee92-aabf-5b57-bb2d-1f25b4292356",
+            "isTarget": true,
+            "start": 3,
+            "end": 11
+          },
+          {
+            "surface": "brings",
+            "word": "bring",
+            "entryGuid": "aced9d5e-ff5c-558f-b154-1bfb5752bb52",
+            "isTarget": false,
+            "start": 12,
+            "end": 18
+          },
+          {
+            "surface": "food",
+            "word": "food",
+            "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+            "isTarget": false,
+            "start": 19,
+            "end": 23
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "counter",
+            "word": "counter",
+            "entryGuid": "f020a23d-7efe-5a09-bc8d-b4d0865beada",
+            "isTarget": true,
+            "start": 31,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "id": "s10",
+        "en": "Through the glass, the children see other children play in the playground.",
+        "zh": "小朋友透過玻璃，看見其他孩子在遊戲區玩耍。",
+        "wordLinks": [
+          {
+            "surface": "Through",
+            "word": "through",
+            "entryGuid": "9ae026b7-e7c9-517e-b739-bd61f536bafa",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "glass",
+            "word": "glass",
+            "entryGuid": "2bc8d789-16d0-53b3-9632-1b8d71ed3865",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "children",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 23,
+            "end": 31
+          },
+          {
+            "surface": "see",
+            "word": "see",
+            "entryGuid": "8f7d06a5-0e23-5c26-9992-beb7d2badfb3",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "children",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 42,
+            "end": 50
+          },
+          {
+            "surface": "play",
+            "word": "play",
+            "entryGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+            "isTarget": true,
+            "start": 51,
+            "end": 55
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 56,
+            "end": 58
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 59,
+            "end": 62
+          },
+          {
+            "surface": "playground",
+            "word": "playground",
+            "entryGuid": "595cdbcd-c009-572c-8089-f1cc069340e5",
+            "isTarget": true,
+            "start": 63,
+            "end": 73
+          }
+        ]
+      },
+      {
+        "id": "s11",
+        "en": "A combo meal includes a burger, fries, and a drink.",
+        "zh": "套餐包含漢堡、薯條和飲料。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "combo meal",
+            "word": "Combo Meal",
+            "entryGuid": "18e6fa71-d307-55d9-ac9f-d37d2033f3e9",
+            "isTarget": true,
+            "start": 2,
+            "end": 12
+          },
+          {
+            "surface": "includes",
+            "word": "include",
+            "entryGuid": "f2d656ab-14b9-5a06-a450-2c3ed98d2dcf",
+            "isTarget": false,
+            "start": 13,
+            "end": 21
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 22,
+            "end": 23
+          },
+          {
+            "surface": "burger",
+            "word": "burger",
+            "entryGuid": "c91abadf-339d-5ad7-bee7-f8b4249b7503",
+            "isTarget": false,
+            "start": 24,
+            "end": 30
+          },
+          {
+            "surface": "fries",
+            "word": "fries",
+            "entryGuid": "9c9a9642-8845-535d-9d5b-688c847258bb",
+            "isTarget": false,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 39,
+            "end": 42
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 43,
+            "end": 44
+          },
+          {
+            "surface": "drink",
+            "word": "drink",
+            "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+            "isTarget": false,
+            "start": 45,
+            "end": 50
+          }
+        ]
+      },
+      {
+        "id": "s12",
+        "en": "The à la carte menu lets customers choose each item.",
+        "zh": "單點菜單讓顧客選擇每一樣餐點。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "à la carte",
+            "word": "À la carte",
+            "entryGuid": "f9a73ba5-eec3-50c8-940a-2bb64b0bbf94",
+            "isTarget": true,
+            "start": 4,
+            "end": 14
+          },
+          {
+            "surface": "menu",
+            "word": "menu",
+            "entryGuid": "e2969d29-3c59-548c-b4af-4c67767e2150",
+            "isTarget": false,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "surface": "lets",
+            "word": "let",
+            "entryGuid": "ce50b637-72c2-549c-a931-2f7d36846b80",
+            "isTarget": false,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "customers",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": true,
+            "start": 25,
+            "end": 34
+          },
+          {
+            "surface": "choose",
+            "word": "choose",
+            "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+            "isTarget": false,
+            "start": 35,
+            "end": 41
+          },
+          {
+            "surface": "each",
+            "word": "each",
+            "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+            "isTarget": false,
+            "start": 42,
+            "end": 46
+          },
+          {
+            "surface": "item",
+            "word": "item",
+            "entryGuid": "3d757b95-7d7b-5bfd-8bdc-bdbe004ba7f5",
+            "isTarget": false,
+            "start": 47,
+            "end": 51
+          }
+        ]
+      },
+      {
+        "id": "s13",
+        "en": "Dine-in customers enjoy their food in the dining area.",
+        "zh": "內用的顧客在用餐區享用餐點。",
+        "wordLinks": [
+          {
+            "surface": "Dine-in",
+            "word": "Dine-in",
+            "entryGuid": "1f6fd002-1468-54c1-a271-9fba091fca99",
+            "isTarget": true,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "customers",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": true,
+            "start": 8,
+            "end": 17
+          },
+          {
+            "surface": "enjoy",
+            "word": "enjoy",
+            "entryGuid": "c7f1f45f-8aeb-57bc-86d6-06b858354e08",
+            "isTarget": false,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "their",
+            "word": "their",
+            "entryGuid": "2c8aba5a-9617-5580-a4ef-c45fa27151b0",
+            "isTarget": false,
+            "start": 24,
+            "end": 29
+          },
+          {
+            "surface": "food",
+            "word": "food",
+            "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "dining area",
+            "word": "Dining Area",
+            "entryGuid": "259a4ecb-6973-5e40-b1ca-83dd51ac85d0",
+            "isTarget": true,
+            "start": 42,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s14",
+        "en": "Another customer carries takeout in a paper bag toward the exit.",
+        "zh": "另一位顧客拿著裝在紙袋裡的外帶餐點走向出口。",
+        "wordLinks": [
+          {
+            "surface": "Another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "customer",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": true,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "surface": "carries",
+            "word": "carry",
+            "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+            "isTarget": false,
+            "start": 17,
+            "end": 24
+          },
+          {
+            "surface": "takeout",
+            "word": "Takeout",
+            "entryGuid": "799a7de6-37fa-5a6a-a3fa-b731c99d80c1",
+            "isTarget": true,
+            "start": 25,
+            "end": 32
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 36,
+            "end": 37
+          },
+          {
+            "surface": "paper bag",
+            "word": "Paper Bag",
+            "entryGuid": "7fdb901f-c4e0-59a3-a478-c0d96c820e4c",
+            "isTarget": false,
+            "start": 38,
+            "end": 47
+          },
+          {
+            "surface": "toward",
+            "word": "toward",
+            "entryGuid": "03a9b04c-86d8-5b68-bb35-51cd5319ad77",
+            "isTarget": false,
+            "start": 48,
+            "end": 54
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 55,
+            "end": 58
+          },
+          {
+            "surface": "exit",
+            "word": "exit",
+            "entryGuid": "fea1d8a0-da95-51af-a82c-a8289ea9e738",
+            "isTarget": true,
+            "start": 59,
+            "end": 63
+          }
+        ]
+      },
+      {
+        "id": "s15",
+        "en": "The exit is on the other side of the room.",
+        "zh": "出口在室內的另一側。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "exit",
+            "word": "exit",
+            "entryGuid": "fea1d8a0-da95-51af-a82c-a8289ea9e738",
+            "isTarget": true,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 9,
+            "end": 11
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 15,
+            "end": 18
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "side",
+            "word": "side",
+            "entryGuid": "df213a3b-9504-51fb-94f4-aa2bb095fe2e",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 30,
+            "end": 32
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 33,
+            "end": 36
+          },
+          {
+            "surface": "room",
+            "word": "room",
+            "entryGuid": "a8bc3533-a829-56a1-a63f-e8d3fda48c92",
+            "isTarget": false,
+            "start": 37,
+            "end": 41
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s7"
+    ]
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "generated-visually-reviewed",
+      "method": "Codex imagegen skill / built-in image_gen",
+      "promptPath": "output/imagegen/mcdonalds-restaurant-tour-r1/prompt.txt"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "generated-awaiting-listening-review",
+      "scope": "current-targets-only",
+      "generated": 101,
+      "reusedValid": 117,
+      "manifestPath": "data/scenario-wordbank-audio/mcdonalds-restaurant-tour-r1/manifest.json"
+    }
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+      "sha256": "26e68b4dc1312adaefce113461b8b263e7c3817bcb755d52f1205e7a75aeaca3"
+    },
+    "baseImage": {
+      "path": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+      "sha256": "26e68b4dc1312adaefce113461b8b263e7c3817bcb755d52f1205e7a75aeaca3",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/mcdonalds-restaurant/scenarios/mcdonalds-restaurant-tour/r1/09eeb3d17582e855/story-dac0ae1b68d7f758.mp3",
+      "sha256": "233604cdcf301a0604037d068309d3fbbd50fb56684403e5c97f7e9ec91e856b",
+      "language": "en",
+      "textSha256": "dac0ae1b68d7f7585fd00a11c3c7dacf48ae503d30a46811872158fb78a3a0ae",
+      "durationSeconds": 78.696,
+      "bytes": 1259180,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  }
+}

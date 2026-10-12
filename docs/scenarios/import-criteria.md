@@ -2,7 +2,7 @@
 
 > 2026-10-10 正式查核更新：客廳 `living-room / 1` 已匯入正式 DB，並依使用者「直接發佈」指示轉為 **published**，一般情境清單可見；十五詞 120 段字庫錄音有效（含既有 advance 27 段 metadata／檔案匯入）。正式庫已存在兩個情境 migrations，既有服務可由一般情境入口開啟客廳；該次查核沒有 migration、部署、啟動生成服務或重新生成。實際結果及未完驗收見 [匯入紀錄](packages/living-room-15-v1/import-review.md)。
 
-更新日期：2026-10-11。現行教材契約接受 1–29 個不同目標詞，第一批使用 basic／advance。選詞以 15 個名詞、5 個形容詞及最多 5 個動詞為目標，依底圖可辨識線索取捨；這是選詞方向，不是硬性配額。既有十五詞 revision 1 及其內容 hash 保留。
+更新日期：2026-10-12。現行教材契約接受 1–29 個不同目標詞，第一批使用 basic／advance。選詞以 15 個名詞、5 個形容詞及最多 5 個動詞為目標，依底圖可辨識線索取捨；這是選詞方向，不是硬性配額。既有十五詞 revision 1 及其內容 hash 保留。
 
 ## 1. 本輪修訂與既有進度
 
@@ -17,11 +17,11 @@
 | 項目 | 必須通過的準則 | 驗證方式 |
 | --- | --- | --- |
 | 身分與版本 | 固定 `scenarioKey`、繁中標題、正整數 revision；同 key／revision 不得換內容 | 契約及現存版本查核 |
-| 目標詞 | 1–29 個不同單字、不同 GUID，`targetCount` 與實際陣列長度一致；限定選定的 basic／advance 聯集，依圖片線索選擇 n／adj／v | 套件／後台檢查＋實際 DB 比對 |
+| 目標詞 | 1–29 個不同單字、不同 GUID，`targetCount` 與實際陣列長度一致；分級模式限選定 basic／advance，指定詞模式可重用 expert／null；依圖片線索選擇 n／adj／v | 套件／後台檢查＋實際 DB 比對 |
 | 教學詞義 | 每詞保存 word、entryGuid、list、teachingPos、senseZh；詞性與本次意思符合字庫，圖與故事一致 | 機械關聯檢查＋人工詞義審閱 |
 | 圖片 | 正式底圖無單字、翻譯、箭頭或答案文字；所有目標物件／動作／狀態有可辨認的線索，不被主要角色遮住 | 人工看圖；預檢只核對檔案與人工標記，沒有 OCR |
 | 互動定位 | 每詞各有 label／object 的 0–1 比例座標；名詞指物件、動詞指動作、形容詞指可解釋的狀態 | 座標格式檢查＋桌機／手機目視與點擊 |
-| 英文故事 | 涵蓋全部目標詞；每個英文 token 都有正確 GUID、字形範圍與目標詞標記；支援詞也在選定級別 | 全 token 映射檢查＋人工文法／語意審閱 |
+| 英文故事 | 涵蓋全部目標詞；每個英文 token 均由正確 GUID／UTF-16 span 完整覆蓋；分級模式支援詞也限選定級別，指定詞可用完整 Unicode 片語 span | 全 token 映射檢查＋人工文法／語意審閱 |
 | 繁中翻譯 | 逐句對應、自然易懂、不新增圖片中不存在的關鍵動作；全文與逐句合併一致 | 全文一致性檢查＋人工對讀 |
 | 故事旁白 | 英文、Serena、清楚溫暖；MP3 實際可解碼與播放，全文和定稿故事相符；textSha256 綁定故事 | hash／格式／完整解碼＋完整試聽 |
 | 目標字庫音檔 | 本場目標詞的單字、既有英文解釋與既有英文例句錄音可用；同 GUID／種類／文字 hash，實際檔案存在，缺漏補齊 | 目標音檔計畫＋正式 metadata／檔案核對＋播放抽查 |
@@ -29,7 +29,7 @@
 
 以上是本批教材要求，不把所有條件宣稱為現有匯入器自動保證。離線匯入器不檢查單字音檔是否齊備，也不替代試聽；後台建立版本會檢查本場全部目標詞缺音。兩條路都遵守本文件，離線路徑另留人工／資料核對證據。
 
-離線套件目前也要求保留 `assets.referenceImage` 參考圖；正式 volume 只採無文字底圖及旁白，不把參考圖複製成教材。底層 API 對故事支援詞的級別檢查不如套件／後台完整，因此不能跳過來源及正式字庫核對直接送 API。
+離線套件目前也要求保留 `assets.referenceImage` 參考圖；正式 volume 只採無文字底圖及旁白，不把參考圖複製成教材。套件／正式 content 省略 `vocabularyMode` 時，目標與故事支援詞都限選定 basic／advance；設定 `vocabularyMode: "user-specified"` 時可用真實 expert／未分級詞。指定詞目標 `list` 必須是字庫原值 basic／advance／expert 或 null，GUID、word 與詞性仍須比對 canonical 來源及正式 DB。後台 Studio 仍只支援 basic／advance 草稿，不可把指定詞模式當成放寬後台的授權。
 
 ### 選詞、圖片與故事的人工判斷
 
@@ -38,8 +38,8 @@
 - 形容詞與部分動詞可由故事補足語境，但底圖仍須有合理可辨識線索。若線索牽強或易誤解，換詞或少選；不靠額外文字把答案畫進底圖。
 - 沿用已確認的可愛、明亮、溫暖 3D 卡通方向與十區塊 Prompt。英文標籤由網站疊加，annotation／text 規則固定無燒字。推薦寬幅約 16:9；後台生成會整理為 1600×900，既有上傳素材保留實際尺寸，1672×941 客廳不用重做或硬裁切。
 - 故事參考客廳八句、75 詞的密度，採短句、自然敘事；句數與時長是編寫參考，不另設尚未確認的硬性限制。不為塞入目標詞寫成物件清單。可用 optional `story.paragraphBreakAfterSentenceIds` 將中英故事呈現為兩個相連短段；分段不改全文文字，仍只使用一個完整英文 MP3。舊版省略此欄位維持原格式及 hash。
-- 目前離線套件與正式契約的英文 tokenizer 對 apostrophe 用法有差異；第一批先避免縮寫及所有格。若要使用，先確認套件 check 與 import dry-run 都通過，不能只依一條檢查判定。
-- 畫面可有非目標裝飾物，但不把 expert／未分類詞加入本批標籤或英文故事；台灣 7000、CEFR 不用來補放超出 basic／advance 範圍的詞。
+- 離線預檢與正式 content 共用 Unicode／撇號 span 檢查。指定詞完整片語使用單一 GUID、surface、start／end，必須依序、無重疊並覆蓋所有英文 token；不能跨標點或切開片語。片語 surface 與完整字庫 word 只允許大小寫、NFC、彎／直撇號差異；單詞屈折形仍需人工核對文法。
+- 分級模式不把 expert／未分類詞加入標籤或故事，也不用台灣 7000／CEFR 繞過 basic／advance。指定詞模式按使用者清單與真實字庫選詞，不變更原分級；缺詞先列增量並取得正式入庫授權，不能把計畫 GUID 當成已存在詞條。
 - 優先重用有效錄音，不重做整個 advance 字庫。故事支援詞缺音可如實顯示「待準備」，目前補音範圍僅本場目標詞，不擴大為全故事字庫補音。
 
 ## 3. 一場一場完成的流程
@@ -82,7 +82,8 @@
 情境編號／標題：
 scenarioKey／revision：
 套件檔或製作草稿 ID：
-目標詞數：__（1–29）；basic __／advance __；n __／v __／adj __
+選詞模式：省略 vocabularyMode（分級）／user-specified
+目標詞數：__（1–29）；basic __／advance __／expert __／null __；n __／v __／adj __
 選詞／本次詞義／正式 GUID 核對：通過／待修正（證據）
 圖片人工審閱／圖片 hash：
 故事與翻譯審閱／故事文字 hash：
@@ -110,7 +111,7 @@ npm run scenario:package:check -- docs/scenarios/packages/living-room-15-v1/scen
 npm run scenario:import -- --package docs/scenarios/packages/living-room-15-v1/scenario.json --dry-run
 ```
 
-兩者不連 DB、不生成、不複製、不發布。`publishReady` 不檢查正式字庫音檔、不判斷圖文語意或旁白讀對全文。
+兩者不連 DB、不生成、不複製、不發布。`publishReady` 不檢查正式字庫音檔、不判斷圖文語意或旁白讀對全文。缺詞備料可用 `scenario:package:check --source <合併字庫.json>`；本機旁白生成亦有專案內 `--source`，拒絕 symlink 逃逸。`scenario:import` 不接受替代來源，dry-run／check-database／apply 仍先核對 canonical `source/vocabulary-database.json`；正式字庫入庫與音檔 metadata／volume 寫入另依授權執行。
 
 指定 `DATABASE_URL` 後，可用 `scenario:import` 的 `--package <套件路徑> --check-database` 唯讀檢查實際目標與字庫。不要把連線 URL 貼進文件；此腳本不讀 `.env`。實際匯入使用 `--apply`、`--confirm-database`、`--confirm-server`、`--image-dir`、`--audio-dir`；確認值以唯讀查核輸出為準，不猜測 DB／volume。
 

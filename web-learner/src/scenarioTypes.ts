@@ -5,6 +5,7 @@ export interface ScenarioSummary {
   revision: number;
   status: "draft" | "published";
   titleZh: string;
+  vocabularyMode?: "user-specified";
   vocabularyFilter: { system: WordbankSystem; levels: string[] };
   targetCount: number;
   targetCounts?: { n: number; adj: number; v: number };
@@ -12,7 +13,7 @@ export interface ScenarioSummary {
   tags?: { id: number; kind: string; label: string }[];
 }
 export interface ScenarioTarget {
-  word: string; entryGuid: string; list: string; teachingPos: string; senseZh: string;
+  word: string; entryGuid: string; list: string | null; teachingPos: string; senseZh: string;
   interaction: { label: { x: number; y: number }; object: { x: number; y: number } };
 }
 export interface ScenarioSentence {

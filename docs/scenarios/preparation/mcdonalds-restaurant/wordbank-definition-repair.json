@@ -1,0 +1,10 @@
+{
+  "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+  "word": "tray",
+  "beforeZh": "實木排水茶盤；茶席托盤",
+  "proposedZh": "托盤；餐盤（用來盛放或端送食物、飲料等的淺盤）；茶盤",
+  "status": "applied-production-and-canonical-source",
+  "reason": "使用者本輪「請繼續」授權必要正式字庫修正；保留原 GUID，中文加入一般餐飲托盤／餐盤義並保留茶盤義，正式 DB 與 canonical source 已同步",
+  "appliedDateTaipei": "2026-10-12",
+  "evidencePath": "data/scenario-preparation/mcdonalds-restaurant/wordbank-import.log"
+}

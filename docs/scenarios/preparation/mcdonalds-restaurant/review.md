@@ -1,23 +1,23 @@
-# 餐廳：麥當勞四個情境討論稿
+# 餐廳：麥當勞四個情境備料與生成紀錄
 
-日期：2026-10-11。階段：討論與離線規劃；未定稿、未生成、未寫入正式詞庫、未匯入或發布情境。
+日期：2026-10-12。階段：四場教材素材與正式匯入已完成；第四場目前為已發布 revision 2（Recycling Symbol 改 floor），前三場已發布 revision 1，餐廳標籤 24；37 新詞與必要音檔已入庫，api／web-learner 已健康更新。完整人工試聽與品質／角色驗收待完成；本 agent 未執行發布；後續唯讀核對四場皆已發布。
 
-使用者原指定四場各 15 個名詞，共 60 詞次；2026-10-11 後續要求補齊形容詞與動詞，各場保留原名詞並補 5 個形容詞、5 個動詞；使用者另要求第一場加入套餐、單點、內用、外帶並明確選擇調整程式上限，因此第一場 29 項，其餘各 25 項，四場合計 104 詞次。分類為「餐廳」，麥當勞是四場共同主題。以下英文故事與逐句翻譯只是討論草案，尚未製作 GUID／token 映射。
+使用者原指定四場各 15 個名詞，共 60 詞次；2026-10-11 後續要求補齊形容詞與動詞，各場依原名詞補 5 個形容詞、5 個動詞；第四場 r2 依使用者修正將 Recycling Symbol 換成 floor；使用者另要求第一場加入套餐、單點、內用、外帶並明確選擇調整程式上限，因此第一場 29 項，其餘各 25 項，四場合計 104 詞次。分類為「餐廳」，麥當勞是四場共同主題。以下保存已認可故事與逐句翻譯；四場 GUID／完整片語映射已完成，新增 GUID 已正式入庫；下列第四場故事與詞表已同步 r2；原 r1 套件與生成素材保留未覆寫。
 
 ## 共用方向
 
 - 四場依「認識餐廳 → 點餐 → 用餐 → 整理離開」排序；建議沿用兩位小朋友、一位陪同大人與相同餐廳配置。
 - 明亮、溫暖、可愛 3D 卡通，16:9 寬幅；英文標籤由網站疊加。底圖不含可讀文字、價錢、教學箭頭或答案。
 - 金色拱門、紅黃配色與餐盒造型作品牌線索；菜單與自助點餐機使用食物圖示，出口與回收採圖像符號。
-- 各場保留原 15 個名詞與 5 個形容詞／5 個動詞；第一場另加 4 個模式，實際詞性為 17 n／7 adj／5 v，共 29 項；其餘各 25 項。Others 若作詞庫分類，不取代情境的名詞教學詞性；實際欄位與相容性見詞庫盤點。
+- 各場皆為 15 個名詞與 5 個形容詞／5 個動詞（第四場 r2 取代一個名詞）；第一場另加 4 個模式，實際詞性為 17 n／7 adj／5 v，共 29 項；其餘各 25 項。Others 若作詞庫分類，不取代情境的名詞教學詞性；實際欄位與相容性見詞庫盤點。
 - 使用者已確認同批次目標詞「盡量」不重複，不作硬性全去重；故事支援詞可以自然重用。本次 40 個補詞可安排為 40 個不同詞。
-- 使用者「超過一個字」暫按「由兩個以上英文單字組成的完整詞條」理解，連字號詞也視完整詞組。缺詞才準備新增；已有相同拼字與適用詞義者優先重用 GUID。正式新增及音檔工作尚未執行。
+- 使用者「超過一個字」暫按「由兩個以上英文單字組成的完整詞條」理解，連字號詞也視完整詞組。缺詞才準備新增；已有相同拼字與適用詞義者優先重用 GUID。37 缺詞已正式新增並同步來源；本機缺音已逐場補齊且匯入正式 volume／metadata。
 
 ## Scene 1：McDonald's Restaurant 🏠／認識麥當勞餐廳
 
 活動：第一次進店，認識各區域與人物。採室內廣角，左側入口、右側出口、後方點餐區、前景座位區，旁側透過玻璃看見小型遊戲區。這是為教材設計的餐廳，不代表每間分店皆有遊戲區。
 
-| 目標詞 | 原指定意思 | 預定圖中線索 |
+| 目標詞 | 原指定意思 | 圖中線索 |
 | --- | --- | --- |
 | Restaurant | 餐廳 | 整個室內場景與入口外的品牌圖像 |
 | Entrance | 入口 | 孩子與大人正在進入的門 |
@@ -37,7 +37,7 @@
 
 新增形容詞與動詞（各 5 個）：
 
-| 詞性 | English | 本次意思 | 預定圖中線索 |
+| 詞性 | English | 本次意思 | 圖中線索 |
 | --- | --- | --- | --- |
 | adj | bright | 明亮的 | 大窗戶日光與室內照明 |
 | adj | tidy | 整潔的 | 用餐區桌椅擺放整齊，桌面收拾妥當 |
@@ -54,16 +54,16 @@
 
 新增點餐與用餐模式（使用者追加的 4 項）：
 
-| 詞性 | English | 本次意思 | 預定圖中線索 |
+| 詞性 | English | 本次意思 | 圖中線索 |
 | --- | --- | --- | --- |
 | n | Combo Meal | 套餐 | 漢堡、薯條與飲料放在同一個托盤，與旁邊單點漢堡對照 |
 | adj | À la carte | 單點（的） | 單獨一份漢堡，與整組套餐對照；菜單採圖片，不燒入價格或文字 |
 | adj | Dine-in | 內用（的） | 座位區坐著享用餐點的顧客 |
 | n | Takeout | 外帶（餐點） | 拿著餐點紙袋向出口走去的顧客 |
 
-Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-in 用服務模式的形容詞義「內用的」，Takeout 是外帶餐點名詞。保留正確詞性，不把四項全部硬歸名詞；字庫用法與來源見 [四模式盤點](ordering-modes-audit.json)。四項在來源 JSON 都缺詞，尚無正式 GUID。
+Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-in 用服務模式的形容詞義「內用的」，Takeout 是外帶餐點名詞。保留正確詞性，不把四項全部硬歸名詞；字庫用法與來源見 [四模式盤點](ordering-modes-audit.json)。四項在匯入前來源 JSON 都缺詞；本輪已新增並使用正式 GUID，保留原盤點作歷史證據。
 
-故事草案（29 項版，尚未製作 GUID／token 映射）：
+故事定稿（29 項版，離線 GUID／完整片語映射已完成）：
 
 1. **This bright restaurant has a large dining area.** 這間明亮的餐廳有一個寬大的用餐區。
 2. **Two children enter through the entrance with an adult.** 兩位小朋友和一位大人從入口進入。
@@ -76,7 +76,7 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 9. **An employee brings food to the counter.** 一位店員把餐點送到櫃檯。
 10. **Through the glass, the children see other children play in the playground.** 小朋友透過玻璃，看見其他孩子在遊戲區玩耍。
 11. **A combo meal includes a burger, fries, and a drink.** 套餐包含漢堡、薯條和飲料。
-12. **The à la carte menu lets customers choose items separately.** 單點菜單讓顧客分別選擇餐點。
+12. **The à la carte menu lets customers choose each item.** 單點菜單讓顧客選擇每一樣餐點。
 13. **Dine-in customers enjoy their food in the dining area.** 內用的顧客在用餐區享用餐點。
 14. **Another customer carries takeout in a paper bag toward the exit.** 另一位顧客拿著裝在紙袋裡的外帶餐點走向出口。
 15. **The exit is on the other side of the room.** 出口在室內的另一側。
@@ -85,9 +85,9 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 ## Scene 2：Let's Order Food! 🍟／一起點餐吧！
 
-活動：在櫃檯選餐。畫面主角是選擇餐點，不讓孩子吃下全部品項。可用無文字食物圖示菜單與前景餐點展示；五種漢堡露出不同內餡，大麥克採雙層肉排與中層麵包，雞肉與魚肉餐點仍須生成後確認辨識度。
+活動：在櫃檯選餐。畫面主角是選擇餐點，不讓孩子吃下全部品項。可用無文字食物圖示菜單與前景餐點展示；五種漢堡露出不同內餡，大麥克採雙層肉排與中層麵包，雞肉與魚肉餐點已在第二場 v2 以不同內餡核對辨識度。
 
-| 目標詞 | 原指定意思 | 預定圖中線索 |
+| 目標詞 | 原指定意思 | 圖中線索 |
 | --- | --- | --- |
 | Hamburger | 漢堡 | 露出肉排的基本漢堡 |
 | Cheeseburger | 起司漢堡 | 起司片明顯的漢堡 |
@@ -107,7 +107,7 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 新增形容詞與動詞（各 5 個）：
 
-| 詞性 | English | 本次意思 | 預定圖中線索 |
+| 詞性 | English | 本次意思 | 圖中線索 |
 | --- | --- | --- | --- |
 | adj | hot | 熱的 | 薯條上方少量熱氣 |
 | adj | cold | 冰的；冷的 | 汽水杯中的冰塊與外側凝結水珠 |
@@ -122,7 +122,7 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 味覺／觸感／新鮮程度採圖像線索配合故事說明，不把靜態圖片當成直接證明。動作分配給不同人物，背景人物只支援本場活動。
 
-故事草案（25 詞版，尚未製作 GUID／token 映射）：
+故事定稿（25 詞版，離線 GUID／完整片語映射已完成）：
 
 1. **The children are ready to order food and choose their meals.** 小朋友準備好點餐，選擇自己的餐點。
 2. **They point to pictures of a hamburger and a cheeseburger.** 他們指著漢堡和起司漢堡的圖片。
@@ -143,7 +143,7 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 活動：坐下用餐，學習容器、包裝、餐具與食材。鏡頭靠近桌面，小朋友留在上方；漢堡略打開，清楚露出麵包、起司與生菜。Fork／Spoon 作桌上可用餐具，不要求畫面中人人同時使用所有餐具。
 
-| 目標詞 | 原指定意思 | 預定圖中線索 |
+| 目標詞 | 原指定意思 | 圖中線索 |
 | --- | --- | --- |
 | Tray | 托盤 | 承裝餐點的托盤 |
 | Cup | 杯子 | 一個完整飲料杯 |
@@ -163,7 +163,7 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 新增形容詞與動詞（各 5 個）：
 
-| 詞性 | English | 本次意思 | 預定圖中線索 |
+| 詞性 | English | 本次意思 | 圖中線索 |
 | --- | --- | --- | --- |
 | adj | happy | 開心的 | 孩子用餐時的笑容 |
 | adj | round | 圓形的 | 圓形漢堡麵包 |
@@ -178,14 +178,14 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 味覺／觸感／新鮮程度採圖像線索配合故事說明，不把靜態圖片當成直接證明。動作分配給不同人物，背景人物只支援本場活動。
 
-故事草案（25 詞版，尚未製作 GUID／token 映射）：
+故事定稿（25 詞版，離線 GUID／完整片語映射已完成）：
 
 1. **The children sit down to eat, and they look happy.** 小朋友坐下吃東西，看起來很開心。
 2. **A tray holds their food, and a paper bag stands beside it.** 托盤盛著他們的餐點，旁邊立著一個紙袋。
 3. **One child holds a round burger above its wrapper.** 一位小朋友拿著圓形漢堡，食物包裝紙在下面。
 4. **Under the soft burger bun, we can see cheese and fresh lettuce.** 在柔軟的漢堡麵包下面，我們可以看見起司和新鮮的生菜。
 5. **The other child opens a food box of chicken nuggets.** 另一位小朋友打開裝著雞塊的餐盒。
-6. **The child dips a nugget into the dipping sauce.** 這位小朋友把一塊雞塊沾進沾醬。
+6. **The child dips chicken nuggets into the dipping sauce.** 這位小朋友把雞塊沾進沾醬。
 7. **A full box of French fries has ketchup beside it.** 一盒裝滿的薯條旁邊放著番茄醬。
 8. **One cup has a straw, and a lid rests on the table beside another cup.** 一個杯子裡插著吸管，另一個杯子旁的桌上放著杯蓋。
 9. **The adult drinks through a straw.** 大人用吸管喝飲料。
@@ -196,9 +196,9 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 ## Scene 4：After the Meal! 🧹／用餐結束後
 
-活動：整理餐桌、分類餐後物品、歸還托盤與準備離開。一位小朋友在大人陪同下將剩餘飲料倒進專用液體收集口，另一位依圖像分類餐後物品，大人在旁歸還托盤；店員在側邊擦桌與整理清潔工具，背景顧客正從出口離開。畫面保留托盤上的剩餘食物與回收區旁的空杯子。分類僅示範看圖像指示，未指定實際店面的回收規則。
+活動：整理餐桌、分類餐後物品、歸還托盤與準備離開。一位小朋友在大人陪同下將剩餘飲料倒進專用液體收集口，另一位依圖像分類餐後物品，大人在旁歸還托盤；店員在側邊擦桌與整理清潔工具，背景顧客正從出口離開。畫面保留前景托盤上的剩餘食物與空杯子。分類僅示範看圖像指示，未指定實際店面的回收規則。
 
-| 目標詞 | 原指定意思 | 預定圖中線索 |
+| 目標詞 | 原指定意思 | 圖中線索 |
 | --- | --- | --- |
 | Trash Can | 垃圾桶 | 具有一般垃圾圖示的桶 |
 | Recycling Bin | 資源回收桶 | 有回收圖示且與垃圾桶不同的桶 |
@@ -213,16 +213,16 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 | Mop | 拖把 | 清潔推車旁的拖把 |
 | Cleaning Cart | 清潔推車 | 店員旁邊承裝工具的小推車 |
 | Trash Bag | 垃圾袋 | 推車旁紮好的垃圾袋 |
-| Recycling Symbol | 回收標誌 | 回收桶上清楚的三箭頭圖像 |
+| floor | 地板 | 小朋友腳邊與清潔推車之間清楚可見的磁磚地板 |
 | Exit Sign | 出口指示牌 | 出口上方的圖像式逃生指示牌 |
 
 新增形容詞與動詞（各 5 個）：
 
-| 詞性 | English | 本次意思 | 預定圖中線索 |
+| 詞性 | English | 本次意思 | 圖中線索 |
 | --- | --- | --- | --- |
 | adj | empty | 空的 | 看得見空內部的杯子 |
 | adj | dirty | 髒的 | 使用過的餐巾紙與未擦拭桌面 |
-| adj | clean | 乾淨的 | 另一張擦好的桌子 |
+| adj | clean | 乾淨的 | 擦拭桌面的遠端已經乾淨 |
 | adj | wet | 濕的 | 清潔抹布有少量水滴 |
 | adj | messy | 凌亂的 | 餐後桌面上散落的包裝紙與餐具 |
 | v | pour | 倒 | 孩子將剩餘飲料倒進專用收集口 |
@@ -233,44 +233,86 @@ Combo Meal 是套餐組合；À la carte 用形容詞義「單點的」，Dine-i
 
 味覺／觸感／新鮮程度採圖像線索配合故事說明，不把靜態圖片當成直接證明。動作分配給不同人物，背景人物只支援本場活動。
 
-故事草案（25 詞版，尚未製作 GUID／token 映射）：
+故事定稿（25 詞版，離線 GUID／完整片語映射已完成）：
 
 1. **The meal is over, and the children help tidy up.** 用餐結束了，小朋友幫忙整理。
 2. **There are some leftovers, a paper wrapper, and a dirty used napkin on the tray.** 托盤上有一些剩餘食物、食物包裝紙和一張用過而且弄髒的餐巾紙。
-3. **With an adult nearby, one child pours the remaining drink into a special opening.** 大人在旁邊陪同，一位小朋友將剩餘飲料倒進專用收集口。
-4. **An empty cup stands beside the tray return station.** 餐盤回收區旁邊放著一個空杯子。
-5. **The other child helps sort the used items by checking the pictures above the bins.** 另一位小朋友查看桶子上方的圖像指示，幫忙將用過的物品分類。
-6. **The trash can is beside the recycling bin.** 垃圾桶在資源回收桶旁邊。
-7. **A recycling symbol helps them find the right bin.** 回收標誌幫助他們找到對應的桶子。
-8. **The adult returns a tray to the rack.** 大人將托盤歸還到回收架上。
-9. **Nearby, an employee wipes a table with a wet cleaning cloth.** 附近一位店員用濕的清潔抹布擦桌子。
-10. **Another table is already clean.** 另一張桌子已經乾淨了。
-11. **A broom, a dustpan, and a mop are beside the cleaning cart.** 掃把、畚箕和拖把放在清潔推車旁邊。
-12. **A tied trash bag rests beside the cart, away from the messy table.** 一個紮好的垃圾袋放在推車旁，與凌亂的桌面保持距離。
-13. **Near the exit sign, other customers leave the restaurant.** 在出口指示牌附近，其他顧客正離開餐廳。
-14. **Soon, the children will be ready to leave, too.** 小朋友也很快就準備好離開了。
+3. **With an adult nearby, one child pours the remaining drink into a special hole.** 大人在旁邊陪同，一位小朋友將剩餘飲料倒進專用收集孔。
+4. **An empty cup stands on the tray.** 一個空杯子放在托盤上。
+5. **There is nothing inside the cup; it is empty.** 杯子裡沒有東西；它是空的。
+6. **The other child helps sort the used items by checking the pictures above the bins.** 另一位小朋友查看桶子上方的圖像指示，幫忙將用過的物品分類。
+7. **The trash can is beside the recycling bin.** 垃圾桶在資源回收桶旁邊。
+8. **The children stand on the floor beside the bins.** 小朋友站在桶子旁邊的地板上。
+9. **The adult returns a tray to the rack at the tray return station.** 大人把托盤放回餐盤回收區的架子上。
+10. **Nearby, an employee wipes a table with a wet cleaning cloth.** 附近一位店員用濕的清潔抹布擦桌子。
+11. **The far end of the table is already clean.** 桌子的遠端已經乾淨了。
+12. **A broom, a dustpan, and a mop are beside the cleaning cart.** 掃把、畚箕和拖把放在清潔推車旁邊。
+13. **A trash bag rests beside the cart, away from the messy table.** 一個垃圾袋放在推車旁，與凌亂的桌面保持距離。
+14. **Near the exit sign, other customers leave the restaurant.** 在出口指示牌附近，其他顧客正離開餐廳。
+15. **Soon, the children will be ready to leave, too.** 小朋友也很快就準備好離開了。
 
-討論重點：Exit 與 Exit Sign 指向門／門上的指示牌；Recycling Bin 與 Recycling Symbol 指向桶／桶上圖像。清潔工具屬店員，不要求小朋友拿拖把或處理垃圾袋。
+討論重點：Exit 與 Exit Sign 指向門／門上的指示牌；Recycling Bin 保留；依使用者修正，Recycling Symbol 在 r2 改為 floor（地板），避免兩個目標詞過於相近。清潔工具屬店員，不要求小朋友拿拖把或處理垃圾袋。
 
-## 素材、詞庫與下一步
+## r1 素材與字庫匯入結果（歷史紀錄）
 
-- 尚無這四場經確認可重用的麥當勞底圖／故事音檔；既有情境可參考風格，不視為本批可用素材。
-- 原名詞清單的來源 JSON 盤點：60 項中 27 項找到既有詞條、33 項缺詞；30 單字／30 多字詞。French fries 與 trash can 已有 GUID；缺詞包含 28 個多字詞與 Cheeseburger、Sundae、Wrapper、Leftovers、Dustpan 五個單字。正式 DB 尚未查核。
-- 新增 40 個形容詞／動詞詞次，40 個不同詞全部找到來源 GUID 與適用詞性，無新增來源缺詞；詳見 [補詞盤點](supplement-vocabulary-audit.json)。原名詞、補詞與新四模式合計 104 詞次，67 個來源重用候選詞次、37 個來源缺詞詞次；正式 DB／音檔仍未核對。
-- 補詞中 crispy、soft、dip、pour、sort、wipe、messy 是 expert；保留實際分級，不為匯入假標。
-- Others 可作 category 字串陣列，不是分級；新詞無可靠分級依據則留 null。已有多字詞優先重用 GUID，是否追加 Others 分類待定稿。
-- 契約數量上限：程式已調整為 1–29 項；繁中語系完整 npm test 646 項通過、npm run typecheck 通過；未部署。預設語系首跑因既有中英文標籤排序測試失敗，改用 LC_ALL=zh_TW.UTF-8 重跑通過，未更改排序程式或放寬測試。
-- 其餘契約缺口：目前目標詞仍限制 basic／advance；原名詞清單的來源匹配中 5 個 expert、2 個 null 會受限，新增未分級詞亦同。故事逐 token 映射不支援完整多字詞 span，À la carte 的重音字母也需要字形處理，需調整後才可製作完整互動教材。證據見 [逐詞盤點](vocabulary-audit.json)。
-- Tray 中文定義目前偏向茶盤，英文已有一般餐飲托盤意思；建議重用 GUID 並提出中文釋義修正，不能只改情境詞義掩蓋差異。
-- 待完成：正式詞庫唯讀比對、缺詞解釋／例句增量、故事支援詞核對及映射、指定詞與多字詞相容性調整。
-- 圖片尚未生成，因此上述物件線索與構圖只是需求，沒有實際座標或圖像驗收。
-- 音檔另核對現有單字、解釋與例句的 metadata、文字 hash 與實體檔案後，只補缺項；本輪未核對正式音檔，不填生成數。
-- 先討論並確認第一場 29 項／其餘各 25 詞版的畫面與用詞，之後整理缺詞的解釋／例句增量，再逐場生成與驗收。當下契約若有限制，須另列必要程式適配，不能假標 basic／advance。
-- 討論稿不是匯入套件，不可直接交給匯入器，也不代表教材完成或品質可發布。
+- 四張底圖皆用 Codex imagegen skill 的 built-in image_gen 產生並保存於 `output/imagegen/`；第一場選 base-v1，其餘三場選 base-v2。第二場補蒸氣、第三場補清楚生菜綠葉、第四場分類物改為與圖示相符的乾淨紙袋；原圖保留未覆寫，四場匯入皆採已選定 hash。
+- 匯入前原名詞 60 項中 27 項找到既有詞條、33 項缺詞；加 4 種服務模式後，104 個不同目標為 67 既有＋37 新增。40 補詞皆重用既有 GUID。盤點 JSON 的 missing／planned 數值表示當時狀態，現在 37 新詞已入庫、待新增 0。
+- 37 新詞各 3 英文解釋與 3 中英例句（111 解釋＋111 例句）已正式寫入；source id 9176–9212，穩定 GUID 沿用備料。31 多字／連字號新詞分類 Others；French fries／trash can 原 GUID 合併 Others。Tray 保留原 GUID，中文擴充一般托盤／餐盤義並保留茶盤義，canonical 來源同步完成。
+- 本輪 canonical source 由 9,166 增為 9,203 詞；寫入前來源備份：`data/scenario-preparation/mcdonalds-restaurant/canonical-source-before-draft-import.json`。`canonical-source-change.json` 是同步來源時的快照，內含當時尚未正式 DB 寫入與 Tray proposal 狀態；不以該歷史欄位代替後續正式結果。
+- crispy、soft、dip、pour、sort、wipe、messy 保留 expert；新詞無可靠分級依據皆 null。Others 是分類而非詞性或分級，指定詞情境契約保留真實資料。
+- 四場共 53 句、507 個完整 UTF-16 span、38 個多 token 詞組，全部目標涵蓋；正式 preflight 核對 204 個必要 GUID（167 既有＋37 當時待新增）。四場正式 check／匯入／單場 postcheck 均通過，故事所需 GUID 已齊備。
+- 423 段新目標詞音與 4 份故事旁白共 427 個 MP3 全部完整解碼，文字 hash／bytes／SHA-256 核對通過，已複製至正式 volume 並匯入對應 metadata；335 段有效舊音重用。完整人工發音與內容試聽仍待做，解碼與操作成功不代表音質驗收完成。
+- 使用者本輪「請繼續」明確授權正式 draft 匯入與所需字庫、音檔及服務更新；本批未授權發布。
 
-## 本輪驗證
+## r1 首次正式 draft 匯入與服務更新（歷史快照）
 
-- 4 場合計 104 項、詞性數量、40 個補詞皆不同、各故事完整詞形或屈折形覆蓋、67 個來源重用候選與 37 個來源缺詞詞次、證據路徑一致性檢查通過。此為備料檢查，未製作正式 token／GUID 匯入套件。
-- 上限測試包含 29 接受、30 拒絕、targetCount 與目標長度一致、舊 15／25 詞相容；假 API 的 learner 測試覆蓋 29 個標籤點字及詞性揭曉。新圖尚未生成，29 項的實際桌機／手機構圖與標籤密度未驗收。
-- LC_ALL=zh_TW.UTF-8 npm test：646 項通過；npm run typecheck 通過；離線 package check 與圖片座標 gate 測試通過；git diff --check 通過。
-- 本輪未生成圖片／音檔、未改來源詞庫、未寫正式 DB、未匯入 draft、未發布或部署。
+| 場次 | 指定版本 | 目標／詞性 | 正式狀態 |
+| --- | --- | --- | --- |
+| 認識麥當勞餐廳 | [mcdonalds-restaurant-tour / r1](https://e-learning.jos.homes/#/scenarios/mcdonalds-restaurant-tour/revisions/1) | 29；17 n／7 adj／5 v | draft，餐廳標籤 24，未發布 |
+| 一起點餐吧！ | [mcdonalds-order-food / r1](https://e-learning.jos.homes/#/scenarios/mcdonalds-order-food/revisions/1) | 25；15 n／5 adj／5 v | draft，餐廳標籤 24，未發布 |
+| 一起享用美食！ | [mcdonalds-enjoy-meal / r1](https://e-learning.jos.homes/#/scenarios/mcdonalds-enjoy-meal/revisions/1) | 25；15 n／5 adj／5 v | draft，餐廳標籤 24，未發布 |
+| 用餐結束後 | [mcdonalds-after-meal / r1](https://e-learning.jos.homes/#/scenarios/mcdonalds-after-meal/revisions/1) | 25；15 n／5 adj／5 v | draft，餐廳標籤 24，未發布 |
+
+- 實際正式庫為 `english_learning`，查核伺服器 `172.18.0.4/32:5432`；所需 migrations 已存在，本輪未套 migration。查核證據：`data/scenario-preparation/mcdonalds-restaurant/production-preflight.json`。
+- 備份 `data/scenario-import-backups/mcdonalds-restaurant-20261012/20261012-011810/verification.json` 記錄 DB dump／audio／images 完整解析與 bytes／SHA-256 全部通過；未做隔離還原演練，沒有刪除 retention 備份。
+- 每場依 check → copy-audio → audio-metadata → scenario → postcheck 執行且全部通過；紀錄在 `data/scenario-preparation/mcdonalds-restaurant/import-<scenarioKey>/` 各五份 `.log`。四份底圖與旁白已正式匯入，revision 1 為 draft、publishedRevision 為 null；全批跨資料保留查核另行紀錄，不由單場 postcheck 推定完成。
+- api／web-learner 已使用 `docker compose up -d --no-deps --wait` 更新且健康，正式指定詞／29 詞／Unicode 片語可使用；沒有跑 migration 或付費生成。Studio 選詞介面仍使用其原有分級流程，本批離線匯入不代表 Studio 已有完整指定詞製作支援。
+
+## r1 首次匯入時的驗證與未解事項（歷史快照）
+
+- `LC_ALL=zh_TW.UTF-8 npm test`：652 項通過；`npm run typecheck` 通過，適配器另 10 項測試通過。完整測試只使用 5433 的受保護 `english_learning_test`，未用正式庫清表，未呼叫真實 LLM／TTS。證據：`data/scenario-preparation/mcdonalds-restaurant/verification/draft-import-results.json`。最初語系排序與其後 canonical 筆數測試失敗原因保留原驗證紀錄；修正筆數預期為 9,203，仍保留欄位 roundtrip、重匯及 basic 1,193 檢查。
+- 靜態座標量測：1440／1024／768 桌機平板與 390 手機放大零相交／越界；原 CSS 近似預覽及 file:// policy 阻擋為生成階段紀錄。後續已透過正式 HTTPS 指定版本完成實際 Chrome 操作，未採替代路徑繞過 policy。
+- 正式 Chrome 桌機：104 張目標詞卡逐一開啟並成功載入；四場看圖回想初始皆 0 標籤，全部揭曉為 29／25／25／25，故事 gate 可用。四場故事旁白開始／暫停採抽查。
+- 第一場完整 À la carte 故事片語開卡成功；播放單字音使故事暫停，保留位置並顯示「繼續旁白」。第三場 Tray 新中文詞義顯示成功；第四場翻譯切換及 Escape 關卡成功。
+- 正式 Chrome 390px 手機：四場放大、開詞卡與返回均成功。證據：`data/scenario-preparation/mcdonalds-restaurant/browser-qa.json`。這些指定操作不代表所有箭頭、每組解釋／例句音、全面角色權限或發音品質已驗收。
+- 尚待完整人工試聽與最終品質／角色驗收；目前 **qualityReadyToPublish=false、published=false**，不得以 checker 的 publishReady 或成功 draft 匯入代替品質可發布。一般情境清單只顯示 published，這四場仍須管理者開啟指定 revision。
+
+## 素材預覽與歷史證據
+
+[四場底圖與旁白總預覽](generated-review.html) 目前保留前三場 r1 素材／已發布連結，第四場改為 r2 故事／旁白／詞表與正式版本連結。原 r1 套件與匯入紀錄位於 `docs/scenarios/packages/mcdonalds-*-r1/`，第四場新版位於 `docs/scenarios/packages/mcdonalds-after-meal-r2/`。`generation-texts.json` 是故事備料，沒有完整匯入契約，仍不能當成 scenario package。
+
+[image-prompts.json](image-prompts.json) 保存提示詞與選圖路徑；[獨立生成讀回報告](final-readback.md) 是正式匯入前的生成驗收快照，104 目標、507 spans、四尺寸座標與全部 423 新詞音等檢查保留。正式後續狀態以本文件、批次總表與正式匯入／Chrome 證據為準。
+
+## r1 首次全局匯入後核對（歷史快照）
+
+2026-10-12 全局唯讀 postcheck 通過：四場 revision 1 維持 draft／發布指標 null，204 個相關 GUID 與 canonical 一致，758 段目標詞音 metadata／文字 hash／bytes／檔案 hash 有效；四份 API detail 與八個 HTTP 媒體的 hash 通過。所有既有 revision hash、發布指標及 17 個 migration 紀錄與匯入前基準相同；一般情境清單隱藏 draft。證據：`data/scenario-preparation/mcdonalds-restaurant/production-postcheck.json`。此結果不代表人工完整試聽、learner 角色端到端或品質可發布。
+
+## 第四場 r2 換詞修訂
+
+r2 匯入當時狀態：前三場 r1 已發布；第四場 r2 為草稿，管理者由指定版本入口驗收。此節保存當時查核；最新已發布狀態另見下節。
+
+使用者要求將 Recycling Symbol 換成其他詞；改為 floor（地板），使用既有 basic A1 名詞 GUID，四場最新目標仍為 104 個不同詞。保留 25 詞及 15 n／5 adj／5 v；底圖沿用，故事第 s7 句、翻譯、詞卡與互動位置同步。只用本機 Serena 新生成 78.216 秒完整英文旁白，184 段目標詞音均重用，沒有新增字庫或詞音 metadata。原第四場 r1 保留。
+
+正式單場 check → scenario → postcheck 通過；全域唯讀 postcheck 的既有版本、發布指標、migrations、tags、9,203 詞及 9,515 列音 metadata hash 皆與本輪 before-state 相同。API／媒體 HTTP200且 hash 符合；第四場 r2 draft、publishedRevision null、餐廳 tag24。查核期間前三場由外部發布，before-state 與追加 DB 備份已記錄該狀態，本 agent 保留並未操作發布。
+
+正式 Chrome 的 25 詞卡、floor 圖片及故事詞卡、單字音啟動、故事旁白開始／暫停、回想 0→25 及 390px 手機放大／詞卡／返回通過。未做人耳完整試聽，本輪為教材內容修訂、未改程式或部署，因此使用套件／正式匯入／UI檢查；上次 652 項測試與 typecheck 為前次程式改動的驗證。
+
+[第四場 r2 正式草稿](https://e-learning.jos.homes/#/scenarios/mcdonalds-after-meal/revisions/2) · [本次匯入紀錄](../../packages/mcdonalds-after-meal-r2/import-review.md)。證據：`data/scenario-preparation/mcdonalds-restaurant/after-meal-r2-postcheck.json`、`data/scenario-preparation/mcdonalds-restaurant/after-meal-r2-browser-qa.json`。
+
+## 使用者確認與最終現況
+
+使用者確認「好，匯入吧」後，唯讀查核確認所有四場都已在正式一般清單中發布；第四場現行為 r2，包含 floor，Recycling Symbol 已移出最新目標詞。此輪未重複匯入、未操作發布、未部署或重新生成。一般 Chrome 入口可見新版底圖及 floor 詞卡，證據 `data/scenario-preparation/mcdonalds-restaurant/acceptance-final-state.json` 與同目錄 `after-meal-r2-published.png`。先前 draft/null／隱藏清單 postcheck 是各次匯入當時的歷史狀態。
+
+提交前重跑：npm test 652 項、typecheck、套件工具14項、旁白工具8項與匯入適配器5項皆通過；測試只使用5433受保護測試庫與假client。完整人工試聽與全面角色驗收仍未完成，不以已發布狀態推定品質驗收。
+
+[開啟第四場目前已發布版本](https://e-learning.jos.homes/#/scenarios/mcdonalds-after-meal)

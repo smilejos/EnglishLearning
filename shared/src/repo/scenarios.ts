@@ -20,13 +20,21 @@ export async function validateScenarioWordbank(db: Queryable, content: ScenarioC
     if (refs.has(link.entryGuid) && refs.get(link.entryGuid) !== link.word) throw new ScenarioValidationError("同 GUID 的單字不一致");
     refs.set(link.entryGuid, link.word);
   }
-  const result = await db.query<{ guid: string; word: string; parts_of_speech: string[]; level: { list?: string } }>(
+  const result = await db.query<{ guid: string; word: string; parts_of_speech: string[]; level: { list?: string | null } }>(
     "SELECT guid, word, parts_of_speech, level FROM wordbank_entries WHERE guid = ANY($1::uuid[]) FOR SHARE", [[...refs.keys()]]);
   const entries = new Map(result.rows.map(row => [row.guid, row]));
   for (const [guid, word] of refs) if (entries.get(guid)?.word !== word) throw new ScenarioValidationError(`字庫 GUID/單字不符：${word}`);
   for (const target of content.targets) {
     const entry = entries.get(target.entryGuid)!;
-    if (entry.level.list !== target.list || !entry.parts_of_speech.includes(target.teachingPos)) throw new ScenarioValidationError(`字庫分級/詞性不符：${target.word}`);
+    if ((entry.level?.list ?? null) !== target.list || !entry.parts_of_speech.includes(target.teachingPos)) throw new ScenarioValidationError(`字庫分級/詞性不符：${target.word}`);
+  }
+  if (content.vocabularyMode !== "user-specified") {
+    for (const guid of refs.keys()) {
+      const entry = entries.get(guid)!;
+      if (!["basic", "advance"].includes(entry.level?.list ?? "") || !content.vocabularyFilter.levels.includes(entry.level?.list as "basic" | "advance")) {
+        throw new ScenarioValidationError(`故事/目標詞超出指定 basic／advance 級別：${entry.word}`);
+      }
+    }
   }
 }
 export async function importScenarioRevision(pool: DbPool, input: unknown, mediaInput: ScenarioMedia,
@@ -91,7 +99,7 @@ export async function listScenarios(db: Queryable, includeDrafts = false): Promi
     const targetCounts: ScenarioSummary["targetCounts"] = { n: 0, adj: 0, v: 0 };
     for (const target of content.targets) targetCounts[target.teachingPos]++;
     return { scenarioKey: content.scenarioKey, revision: content.revision, status,
-      titleZh: content.titleZh, vocabularyFilter: content.vocabularyFilter, targetCount: content.targetCount,
+      titleZh: content.titleZh, ...(content.vocabularyMode ? { vocabularyMode: content.vocabularyMode } : {}), vocabularyFilter: content.vocabularyFilter, targetCount: content.targetCount,
       targetCounts, image: scenarioImage({ content, media }),
       tags: tags.map(tag => ({ ...tag, id: toNum(tag.id) })) };
   });

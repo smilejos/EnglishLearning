@@ -28,7 +28,7 @@ async function main() {
   const check = await validateScenarioPackage(pkg, { repoRoot });
   if (!check.valid || !check.publishReady) throw new Error(`情境素材未完整：${[...(check.errors ?? []), ...(check.missing ?? [])].join("；")}`);
   const content = ScenarioContentSchema.parse({ schemaVersion: pkg.schemaVersion, scenarioKey: pkg.scenarioKey,
-    revision: pkg.revision, titleZh: pkg.titleZh, vocabularyFilter: pkg.vocabularyFilter,
+    revision: pkg.revision, titleZh: pkg.titleZh, vocabularyMode: pkg.vocabularyMode, vocabularyFilter: pkg.vocabularyFilter,
     targetCount: pkg.targetCount, targets: pkg.targets, story: pkg.story });
   // 正式匯入只採用無文字底圖，參考標籤圖不進 volume。
   const imageBytes = await readFile(await scenarioSafePath(repoRoot, pkg.assets.baseImage.path));

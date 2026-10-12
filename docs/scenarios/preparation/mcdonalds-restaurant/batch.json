@@ -4,16 +4,16 @@
   "themeZh": "麥當勞",
   "vocabularyMode": "user-specified",
   "sceneCount": 4,
-  "phase": "discussion-draft",
+  "phase": "user-accepted-all-four-published-observed",
   "authorization": {
-    "currentScope": "四場離線規劃、補詞盡量不重複、第一場新增套餐／單點／內用／外帶；使用者已授權調整程式上限容納29項，正式庫／生成／匯入／部署未授權",
-    "vocabularyRequest": "多字詞缺詞新增目前詞庫並分類 Others；現階段保留為待執行計畫，先完成具體清單供討論",
-    "imageGeneration": false,
-    "audioGeneration": false,
-    "productionDatabaseWrites": false,
-    "draftImport": false,
+    "currentScope": "使用者本輪「請繼續」明確授權四場正式 draft 匯入及必要字庫、音檔與 api/web-learner 服務更新；未授權發布",
+    "vocabularyRequest": "37 缺詞新增、既有 French fries/trash can 合併 Others、Tray 原 GUID 中文釋義擴充均已正式寫入並同步 canonical source",
+    "imageGeneration": true,
+    "audioGeneration": true,
+    "productionDatabaseWrites": true,
+    "draftImport": true,
     "publish": false,
-    "deploy": false,
+    "deploy": true,
     "programTargetLimitChange": true
   },
   "assumptions": [
@@ -23,13 +23,16 @@
     "沿用同一組兩位小朋友、陪同大人與餐廳配置"
   ],
   "sourceVocabularyAudit": "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
-  "compatibility": "blocked-pending-adaptation: 指定 expert／null 詞與完整多字詞故事映射尚待程式適配；未驗證正式服務",
+  "compatibility": "implemented-tested-and-deployed: 指定詞模式、expert/null 與完整片語 Unicode 映射已適配；正式指定 revision 詞卡可用",
   "status": {
-    "teachingMaterialsComplete": false,
-    "productionDraftImported": false,
+    "teachingMaterialsComplete": true,
+    "productionDraftImported": true,
     "qualityReadyToPublish": false,
-    "published": false,
-    "programDeployed": false
+    "published": true,
+    "programDeployed": true,
+    "assetsGeneratedComplete": true,
+    "reason": "使用者確認滿意；唯讀正式API與一般前台確認四場已發布，第四場現行r2含floor。本agent未重複匯入或操作發布；完整人工試聽與全面角色驗收紀錄仍未完成。",
+    "publishedSceneCount": 4
   },
   "scenes": [
     {
@@ -108,21 +111,31 @@
         }
       ],
       "sourceReuseCandidateCount": 21,
-      "pendingNewEntryCount": 8,
-      "newEntriesImportedCount": 0,
+      "pendingNewEntryCount": 0,
+      "newEntriesImportedCount": 8,
       "mediaSources": {
-        "reference": "既有情境僅供風格參考，未選定可重用底圖",
-        "baseImage": null,
-        "storyAudio": null
+        "reference": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+        "baseImage": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+        "storyAudio": "data/scenario-audio/mcdonalds-restaurant/scenarios/mcdonalds-restaurant-tour/r1/09eeb3d17582e855/story-dac0ae1b68d7f758.mp3"
       },
-      "progress": "discussion-draft",
+      "progress": "user-accepted-published-version-confirmed",
       "evidencePaths": [
         "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
         "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
         "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json",
-        "docs/scenarios/preparation/mcdonalds-restaurant/ordering-modes-audit.json"
+        "docs/scenarios/preparation/mcdonalds-restaurant/ordering-modes-audit.json",
+        "docs/scenarios/packages/mcdonalds-restaurant-tour-r1/scenario.json",
+        "data/scenario-wordbank-audio/mcdonalds-restaurant-tour-r1/verification.json",
+        "docs/scenarios/packages/mcdonalds-restaurant-tour-r1/import-review.md",
+        "docs/scenarios/packages/mcdonalds-restaurant-tour-r1/interaction-preview-review.md",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-restaurant-tour/check.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-restaurant-tour/copy-audio.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-restaurant-tour/audio-metadata.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-restaurant-tour/scenario.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-restaurant-tour/postcheck.log",
+        "data/scenario-preparation/mcdonalds-restaurant/browser-qa.json"
       ],
-      "contractCompatible": false,
+      "contractCompatible": true,
       "supplementalVocabulary": [
         {
           "english": "bright",
@@ -211,7 +224,7 @@
           "chinese": "套餐",
           "teachingPos": "n",
           "sourceEntryGuid": null,
-          "sourceStatus": "pending-new-entry",
+          "sourceStatus": "production-imported",
           "visualCueZh": "漢堡、薯條與飲料放在同一個托盤，與旁邊單點漢堡對照"
         },
         {
@@ -219,7 +232,7 @@
           "chinese": "單點（的）",
           "teachingPos": "adj",
           "sourceEntryGuid": null,
-          "sourceStatus": "pending-new-entry",
+          "sourceStatus": "production-imported",
           "visualCueZh": "單獨一份漢堡，與整組套餐對照；菜單採圖片，不燒入價格或文字"
         },
         {
@@ -227,7 +240,7 @@
           "chinese": "內用（的）",
           "teachingPos": "adj",
           "sourceEntryGuid": null,
-          "sourceStatus": "pending-new-entry",
+          "sourceStatus": "production-imported",
           "visualCueZh": "座位區坐著享用餐點的顧客"
         },
         {
@@ -235,10 +248,17 @@
           "chinese": "外帶（餐點）",
           "teachingPos": "n",
           "sourceEntryGuid": null,
-          "sourceStatus": "pending-new-entry",
+          "sourceStatus": "production-imported",
           "visualCueZh": "拿著餐點紙袋向出口走去的顧客"
         }
-      ]
+      ],
+      "formalContractValidated": true,
+      "importedRevision": 1,
+      "productionStatus": "published",
+      "publishedRevision": 1,
+      "categoryTagId": 24,
+      "productionDraftUrl": "https://e-learning.jos.homes/#/scenarios/mcdonalds-restaurant-tour/revisions/1",
+      "contentHash": "eb995599372fd42b218a77b13922353d87717b2a4328ef2bab459181cfa5520d"
     },
     {
       "order": 2,
@@ -316,20 +336,29 @@
         }
       ],
       "sourceReuseCandidateCount": 13,
-      "pendingNewEntryCount": 12,
-      "newEntriesImportedCount": 0,
+      "pendingNewEntryCount": 0,
+      "newEntriesImportedCount": 12,
       "mediaSources": {
-        "reference": "既有情境僅供風格參考，未選定可重用底圖",
-        "baseImage": null,
-        "storyAudio": null
+        "reference": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+        "baseImage": "output/imagegen/mcdonalds-order-food-r1/base-v2.png",
+        "storyAudio": "data/scenario-audio/mcdonalds-restaurant/scenarios/mcdonalds-order-food/r1/09eeb3d17582e855/story-8f47d56bd533da4a.mp3"
       },
-      "progress": "discussion-draft",
+      "progress": "user-accepted-published-version-confirmed",
       "evidencePaths": [
         "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
         "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
-        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json"
+        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json",
+        "docs/scenarios/packages/mcdonalds-order-food-r1/scenario.json",
+        "docs/scenarios/packages/mcdonalds-order-food-r1/import-review.md",
+        "docs/scenarios/packages/mcdonalds-order-food-r1/interaction-preview-review.md",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-order-food/check.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-order-food/copy-audio.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-order-food/audio-metadata.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-order-food/scenario.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-order-food/postcheck.log",
+        "data/scenario-preparation/mcdonalds-restaurant/browser-qa.json"
       ],
-      "contractCompatible": false,
+      "contractCompatible": true,
       "supplementalVocabulary": [
         {
           "english": "hot",
@@ -411,7 +440,14 @@
           "sourceList": "basic",
           "visualCueZh": "背景顧客端著托盤離開櫃檯"
         }
-      ]
+      ],
+      "formalContractValidated": true,
+      "importedRevision": 1,
+      "productionStatus": "published",
+      "publishedRevision": 1,
+      "categoryTagId": 24,
+      "productionDraftUrl": "https://e-learning.jos.homes/#/scenarios/mcdonalds-order-food/revisions/1",
+      "contentHash": "fd2186c1db67a521cd603ebd9ca504d935532b5afeed274062d0c876ea217279"
     },
     {
       "order": 3,
@@ -489,20 +525,29 @@
         }
       ],
       "sourceReuseCandidateCount": 20,
-      "pendingNewEntryCount": 5,
-      "newEntriesImportedCount": 0,
+      "pendingNewEntryCount": 0,
+      "newEntriesImportedCount": 5,
       "mediaSources": {
-        "reference": "既有情境僅供風格參考，未選定可重用底圖",
-        "baseImage": null,
-        "storyAudio": null
+        "reference": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+        "baseImage": "output/imagegen/mcdonalds-enjoy-meal-r1/base-v2.png",
+        "storyAudio": "data/scenario-audio/mcdonalds-restaurant/scenarios/mcdonalds-enjoy-meal/r1/09eeb3d17582e855/story-441a43bcad9e35aa.mp3"
       },
-      "progress": "discussion-draft",
+      "progress": "user-accepted-published-version-confirmed",
       "evidencePaths": [
         "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
         "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
-        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json"
+        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json",
+        "docs/scenarios/packages/mcdonalds-enjoy-meal-r1/scenario.json",
+        "docs/scenarios/packages/mcdonalds-enjoy-meal-r1/import-review.md",
+        "docs/scenarios/packages/mcdonalds-enjoy-meal-r1/interaction-preview-review.md",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-enjoy-meal/check.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-enjoy-meal/copy-audio.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-enjoy-meal/audio-metadata.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-enjoy-meal/scenario.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-enjoy-meal/postcheck.log",
+        "data/scenario-preparation/mcdonalds-restaurant/browser-qa.json"
       ],
-      "contractCompatible": false,
+      "contractCompatible": true,
       "supplementalVocabulary": [
         {
           "english": "happy",
@@ -584,7 +629,14 @@
           "sourceList": "basic",
           "visualCueZh": "孩子手持漢堡"
         }
-      ]
+      ],
+      "formalContractValidated": true,
+      "importedRevision": 1,
+      "productionStatus": "published",
+      "publishedRevision": 1,
+      "categoryTagId": 24,
+      "productionDraftUrl": "https://e-learning.jos.homes/#/scenarios/mcdonalds-enjoy-meal/revisions/1",
+      "contentHash": "40e6458a97324e2639bc4535556fbaea536dbd4a44216cdd17aabe65628543f4"
     },
     {
       "order": 4,
@@ -592,7 +644,7 @@
       "titleEn": "After the Meal! 🧹",
       "titleZh": "用餐結束後",
       "coreActivityZh": "整理餐後物品、歸還托盤與準備離開",
-      "plannedRevision": 1,
+      "plannedRevision": 2,
       "targetCount": 25,
       "teachingPosCounts": {
         "n": 15,
@@ -662,20 +714,33 @@
         }
       ],
       "sourceReuseCandidateCount": 13,
-      "pendingNewEntryCount": 12,
-      "newEntriesImportedCount": 0,
+      "pendingNewEntryCount": 0,
+      "newEntriesImportedCount": 12,
       "mediaSources": {
-        "reference": "既有情境僅供風格參考，未選定可重用底圖",
-        "baseImage": null,
-        "storyAudio": null
+        "reference": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+        "baseImage": "output/imagegen/mcdonalds-after-meal-r1/base-v2.png",
+        "storyAudio": "data/scenario-audio/mcdonalds-after-meal-r2/scenarios/mcdonalds-after-meal/r2/09eeb3d17582e855/story-d6bf4ff1047359ea.mp3"
       },
-      "progress": "discussion-draft",
+      "progress": "user-accepted-published-version-confirmed",
       "evidencePaths": [
         "docs/scenarios/preparation/mcdonalds-restaurant/review.md",
         "docs/scenarios/preparation/mcdonalds-restaurant/vocabulary-audit.json",
-        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json"
+        "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json",
+        "docs/scenarios/packages/mcdonalds-after-meal-r1/scenario.json",
+        "docs/scenarios/packages/mcdonalds-after-meal-r1/import-review.md",
+        "docs/scenarios/packages/mcdonalds-after-meal-r1/interaction-preview-review.md",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-after-meal/check.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-after-meal/copy-audio.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-after-meal/audio-metadata.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-after-meal/scenario.log",
+        "data/scenario-preparation/mcdonalds-restaurant/import-mcdonalds-after-meal/postcheck.log",
+        "data/scenario-preparation/mcdonalds-restaurant/browser-qa.json",
+        "docs/scenarios/packages/mcdonalds-after-meal-r2/scenario.json",
+        "docs/scenarios/packages/mcdonalds-after-meal-r2/import-review.md",
+        "data/scenario-preparation/mcdonalds-restaurant/after-meal-r2-postcheck.json",
+        "data/scenario-preparation/mcdonalds-restaurant/after-meal-r2-browser-qa.json"
       ],
-      "contractCompatible": false,
+      "contractCompatible": true,
       "supplementalVocabulary": [
         {
           "english": "empty",
@@ -699,7 +764,7 @@
           "teachingPos": "adj",
           "sourceEntryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
           "sourceList": "basic",
-          "visualCueZh": "另一張擦好的桌子"
+          "visualCueZh": "擦拭桌面的遠端已經乾淨"
         },
         {
           "english": "wet",
@@ -757,7 +822,22 @@
           "sourceList": "basic",
           "visualCueZh": "背景顧客走出出口"
         }
-      ]
+      ],
+      "formalContractValidated": true,
+      "importedRevision": 2,
+      "productionStatus": "published",
+      "publishedRevision": 2,
+      "categoryTagId": 24,
+      "productionDraftUrl": "https://e-learning.jos.homes/#/scenarios/mcdonalds-after-meal/revisions/2",
+      "contentHash": "85d87be65532b0ba0e5b700e1e75b335c3a5dae45cdcf126faf52bc312c25a82",
+      "currentVocabularyReplacement": {
+        "from": "Recycling Symbol",
+        "to": "floor",
+        "senseZh": "地板",
+        "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+        "sourceList": "basic",
+        "revision": 2
+      }
     }
   ],
   "sourceSupplementAudit": "docs/scenarios/preparation/mcdonalds-restaurant/supplement-vocabulary-audit.json",
@@ -777,7 +857,8 @@
       "advance": 8,
       "expert": 5,
       "null": 2
-    }
+    },
+    "auditStage": "before-import-source-snapshot"
   },
   "vocabularySummary": {
     "totalTargetOccurrences": 104,
@@ -785,12 +866,22 @@
     "adjectiveOccurrences": 22,
     "verbOccurrences": 20,
     "sourceReuseCandidateOccurrences": 67,
-    "pendingNewEntryOccurrences": 37,
+    "pendingNewEntryOccurrences": 0,
     "originalNounAuditUniqueWithinOriginalList": 60,
     "supplementUniqueWords": 40,
     "sourceDefinitionRepairOccurrences": 1,
-    "formalDatabaseChecked": false,
-    "orderingModeOccurrences": 4
+    "formalDatabaseChecked": true,
+    "orderingModeOccurrences": 4,
+    "formalTargetVocabularyChecked": true,
+    "formalStorySupportVocabularyChecked": true,
+    "newEntriesImportedCount": 37,
+    "formalRequiredGuidCount": 204,
+    "preImportExistingGuidCount": 167,
+    "preImportPlannedGuidCount": 37,
+    "canonicalSourceEntryCount": 9203,
+    "definitionRepairAppliedCount": 1,
+    "existingCategoryUpdatesAppliedCount": 2,
+    "sourceReuseCandidateOccurrencesScope": "initial-r1-audit"
   },
   "vocabularyDeduplicationPreference": "同一批次目標詞盡量不重複，保留自然情境優先；故事支援詞可自然重用",
   "deduplicationChanges": [
@@ -817,14 +908,110 @@
   "programTargetLimit": {
     "maxTargets": 29,
     "implemented": true,
-    "deployed": false,
+    "deployed": true,
     "validation": {
       "typecheck": "passed",
       "npmTest": "passed-with-zh_TW.UTF-8",
-      "testCount": 646,
+      "testCount": 652,
       "defaultLocaleFirstRun": "failed: existing meta groupTags sorting locale assumption",
       "packageAndImageSafetyTests": "passed by delegated implementation checks",
-      "learner29TargetInteractionTest": "passed with fake API; no real29target image visual QA"
+      "learner29TargetInteractionTest": "passed with fake API and production Chrome: 29 target cards, recall reveal, full À la carte phrase, story/word audio arbitration, 390px mobile"
     }
+  },
+  "audioSummary": {
+    "generatedTargetAssets": 423,
+    "reusedValidTargetAssets": 335,
+    "totalTargetAssets": 758,
+    "generatedStoryAssets": 4,
+    "generatedMp3Files": 427,
+    "fullyDecodedNewFiles": 427,
+    "listeningReview": "pending-full-human-review",
+    "formalAudioMetadataImported": true,
+    "evidencePath": "data/scenario-preparation/mcdonalds-restaurant/audio-aggregate.json",
+    "formalVolumeCopied": true,
+    "formalImportedNewTargetAssets": 423,
+    "formalImportedStoryAssets": 4
+  },
+  "previewPath": "docs/scenarios/preparation/mcdonalds-restaurant/generated-review.html",
+  "promptSetPath": "docs/scenarios/preparation/mcdonalds-restaurant/image-prompts.json",
+  "productionImport": {
+    "dateTaipei": "2026-10-12",
+    "database": "english_learning",
+    "server": "172.18.0.4/32:5432",
+    "draftRevision": 1,
+    "categoryTagId": 24,
+    "preflightEvidence": "data/scenario-preparation/mcdonalds-restaurant/production-preflight.json",
+    "baselineGuidCount": 204,
+    "preExistingGuidCount": 167,
+    "plannedAddedGuidCount": 37,
+    "backupVerificationEvidence": "data/scenario-import-backups/mcdonalds-restaurant-20261012/20261012-011810/verification.json",
+    "isolatedRestoreTested": false,
+    "canonicalSourceBackup": "data/scenario-preparation/mcdonalds-restaurant/canonical-source-before-draft-import.json",
+    "canonicalSourceBeforeCount": 9166,
+    "canonicalSourceAfterCount": 9203,
+    "singleScenePostchecks": "passed-all-four",
+    "globalPostcheck": "passed",
+    "globalPostcheckEvidence": "data/scenario-preparation/mcdonalds-restaurant/production-postcheck.json",
+    "deployment": {
+      "services": [
+        "api",
+        "web-learner"
+      ],
+      "healthy": true,
+      "method": "docker compose up -d --no-deps --wait",
+      "migrationExecuted": false,
+      "paidGenerationInvoked": false
+    },
+    "testEvidence": "data/scenario-preparation/mcdonalds-restaurant/verification/draft-import-results.json",
+    "adapterTestsPassed": 10,
+    "browserQaEvidence": "data/scenario-preparation/mcdonalds-restaurant/browser-qa.json",
+    "allTargetCardsLoaded": 104,
+    "fullHumanListeningCompleted": false,
+    "qualityReadyToPublish": false,
+    "published": false,
+    "revision2Correction": {
+      "replacement": {
+        "from": "Recycling Symbol",
+        "to": "floor",
+        "senseZh": "地板",
+        "entryGuid": "3fe78ca1-1b74-5363-a801-aaece7ef8a83",
+        "sourceList": "basic",
+        "revision": 2
+      },
+      "postcheckEvidence": "data/scenario-preparation/mcdonalds-restaurant/after-meal-r2-postcheck.json",
+      "browserQaEvidence": "data/scenario-preparation/mcdonalds-restaurant/after-meal-r2-browser-qa.json",
+      "backupVerificationEvidence": "data/scenario-import-backups/mcdonalds-after-meal-r2-20261012/20261012-081551/verification.json",
+      "generatedStoryAudioCount": 1,
+      "generatedTargetAudioCount": 0,
+      "reusedTargetAudioCount": 184,
+      "agentPublishPerformed": false,
+      "deploymentPerformed": false
+    },
+    "scope": "initial-r1-import-history-with-revision2-correction-record",
+    "currentRevisionsByScenario": {
+      "mcdonalds-restaurant-tour": 1,
+      "mcdonalds-order-food": 1,
+      "mcdonalds-enjoy-meal": 1,
+      "mcdonalds-after-meal": 2
+    },
+    "commitVerification": {
+      "npmTestPassed": 652,
+      "typecheckPassed": true,
+      "scenarioPackageTestsPassed": 14,
+      "scenarioAudioTestsPassed": 8,
+      "importAdapterTestsPassed": 5,
+      "evidence": "data/scenario-preparation/mcdonalds-restaurant/acceptance-final-state.json"
+    }
+  },
+  "currentPublicationSnapshot": {
+    "checkedAt": "2026-10-12T11:59:01.066009+00:00",
+    "evidence": "data/scenario-preparation/mcdonalds-restaurant/acceptance-final-state.json",
+    "published": {
+      "mcdonalds-restaurant-tour": 1,
+      "mcdonalds-order-food": 1,
+      "mcdonalds-enjoy-meal": 1,
+      "mcdonalds-after-meal": 2
+    },
+    "agentPublishPerformed": false
   }
 }

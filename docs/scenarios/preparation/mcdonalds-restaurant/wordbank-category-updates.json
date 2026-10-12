@@ -1,0 +1,106 @@
+{
+  "entries": [
+    {
+      "id": 6268,
+      "guid": "625ee007-f822-59a9-b652-7564b110d4bf",
+      "level": {
+        "cefr": "A1",
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": [
+        "飲食與速食"
+      ],
+      "word": "French fries",
+      "parts_of_speech": [
+        "n"
+      ],
+      "examples": [
+        {
+          "guid": "c4bad9db-729a-5784-8f0c-b4009e7aa96f",
+          "en": "I ordered a burger with a side of crispy French fries.",
+          "zh": "我點了一個漢堡附帶一份酥脆薯條。"
+        },
+        {
+          "guid": "21114de6-023a-5743-a63e-7152c5df10d6",
+          "en": "Dip your hot French fries into tangy tomato ketchup.",
+          "zh": "把熱呼呼的薯條沾上酸甜濃郁的番茄醬。"
+        },
+        {
+          "guid": "a50077cc-63db-59fb-bf19-a02bd7109e79",
+          "en": "Freshly fried French fries taste best when seasoned with salt.",
+          "zh": "剛炸好的薯條撒上一點鹽巴調味時滋味最棒。"
+        }
+      ],
+      "definition": "薯條",
+      "explains": [
+        {
+          "guid": "da97e09d-1a98-5d55-9f07-a1ff47cc9180",
+          "en": "These are long pieces of potato cooked in hot oil until soft inside and crisp outside. People often eat them beside a sandwich or burger. They may add salt or a dipping sauce."
+        },
+        {
+          "guid": "7ac558b6-447e-5208-b099-028dcc08db23",
+          "en": "A cook cuts potatoes into sticks and fries them in oil. The finished snack is usually served hot. Tomato sauce is a popular dip."
+        },
+        {
+          "guid": "f22f9bd6-d307-5f66-a11d-8509dac80b57",
+          "en": "This popular side dish is made from sliced potatoes. The pieces turn golden and crunchy when cooked in oil. Many people sprinkle them with salt."
+        }
+      ]
+    },
+    {
+      "id": 6255,
+      "guid": "629d763b-59f1-5d47-81de-501e84103717",
+      "level": {
+        "cefr": "A1",
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Others"
+      ],
+      "scenario": [
+        "居家與公共設施"
+      ],
+      "word": "trash can",
+      "parts_of_speech": [
+        "n"
+      ],
+      "examples": [
+        {
+          "guid": "2074eccd-de9d-5840-b6de-55ce46d1512d",
+          "en": "Throw the empty cup into the recycling trash can.",
+          "zh": "把空杯子丟進資源回收垃圾桶。"
+        },
+        {
+          "guid": "95a7f20d-35fc-5f6b-aa5f-75c7c3e98771",
+          "en": "The street was very clean because trash cans were placed at every corner.",
+          "zh": "這條街道非常乾淨，因為每個街角都設有垃圾桶。"
+        },
+        {
+          "guid": "517a36d3-8302-5d27-8bdc-ea84e5374c60",
+          "en": "Empty the kitchen trash can daily to prevent unpleasant odors.",
+          "zh": "每天清理廚房垃圾桶以防止產生難聞的異味。"
+        }
+      ],
+      "definition": "垃圾桶",
+      "explains": [
+        {
+          "guid": "7ae12387-0e24-5faa-8ca6-b838ad7d5ce9",
+          "en": "Put unwanted paper or food wrappers inside this container. It helps keep a room or street clean."
+        },
+        {
+          "guid": "4c62bb6f-d473-56d1-9ada-de125cc86c17",
+          "en": "You may find one beside a desk or on a street corner. Some are made for things that can be recycled."
+        },
+        {
+          "guid": "e30a1add-401f-516b-a6a4-6b1cdf55baa2",
+          "en": "After a picnic, place rubbish in this bin. A family may empty the kitchen one each day."
+        }
+      ]
+    }
+  ]
+}

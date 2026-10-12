@@ -2,7 +2,7 @@
 
 > 2026-10-10 正式查核更新：客廳 `living-room / 1` 已匯入正式 DB，並依使用者「直接發佈」指示轉為 **published**，一般情境清單可見；十五詞 120 段字庫錄音有效（含既有 advance 27 段 metadata／檔案匯入）。正式庫已存在兩個情境 migrations，既有服務可由一般情境入口開啟客廳；該次查核沒有 migration、部署、啟動生成服務或重新生成。實際結果及未完驗收見 [匯入紀錄](packages/living-room-15-v1/import-review.md)。
 
-更新日期：2026-10-11。現行套件、API 與後台生成契約接受 1–29 個目標詞，`targetCount` 與實際詞數一致。15 名詞＋5 形容詞＋最多 5 動詞是選詞目標，必須貼合底圖；動詞線索不足可以少選，不為配額塞詞。舊十五詞 revision 1 及其 hash 保留，不改寫成新教材。
+更新日期：2026-10-12。現行套件、API 與後台生成契約接受 1–29 個目標詞，`targetCount` 與實際詞數一致。15 名詞＋5 形容詞＋最多 5 動詞是選詞目標，必須貼合底圖；動詞線索不足可以少選，不為配額塞詞。舊十五詞 revision 1 及其 hash 保留，不改寫成新教材。
 
 ## 01–09 revision 2 修訂流程
 
@@ -33,9 +33,15 @@
 
 ## 1. 先確認故事與選詞（歷史試點與現行規則）
 
-使用 `level.list` 的 basic／advance 聯集選詞；歷史客廳 revision 1 的十五詞與支援詞均已比對來源檔。每個目標詞保存 `entryGuid`、`word`、`list`、`teachingPos` 與 `senseZh`，讓圖、故事和單字卡共用同一詞條。
+分級模式使用 `level.list` 的 basic／advance 聯集選詞；歷史客廳 revision 1 的十五詞與支援詞均已比對來源檔。每個目標詞保存 `entryGuid`、`word`、`list`、`teachingPos` 與 `senseZh`，讓圖、故事和單字卡共用同一詞條。
 
 故事採英文朗讀，繁中翻譯以文字展開，不另做中文朗讀。`reads → read`、`sleeps → sleep`、`books → book` 等關聯保存於逐句 `wordLinks`；單字卡播放的是原形單字錄音。預檢會核對字形範圍及 GUID，但不判斷字形與原詞是否為正確文法關係，仍須人工審閱故事、翻譯、詞義及畫面是否一致。
+
+使用者指定清單時，離線套件與正式 content 增加 optional `vocabularyMode: "user-specified"`；目標與故事支援詞可用 basic／advance／expert／未分級詞條。`targets[].list` 保留實際級別或 null，`vocabularyFilter` 仍為 `{ system: "list", levels: [...] }`；指定詞模式的 levels 可列非 null 級別或為空，並非選詞範圍。省略模式時，levels 必須是至少一個、不重複的 basic／advance，目標與支援詞都受限制。舊版省略欄位不改格式或 hash；後台 Studio 仍只支援分級模式。
+
+指定詞的 `self-service kiosk`、`À la carte` 等完整片語只用一個 `wordLinks` span、word 與正式 GUID，不拆成個別詞條；圖片標籤連到同一 GUID。start／end 是該句 JavaScript UTF-16、0-based、起點包含／終點不包含索引；全部英文 token 須依序、無重疊且完整覆蓋，片語只能跨內部空白／連字號。完整 surface 與字庫 word 只允許大小寫、NFC 及彎／直撇號差異，不能以部分或不同複數片語映射。單一詞仍支援 reads → read 等人工審閱後的原型關聯。共用檢查位於 `shared/src/scenario-word-links.mjs`。
+
+缺詞先整理可審閱字庫增量與來源，取得正式入庫授權前只作離線備料。合併字庫可供下述 check／local TTS 使用，不代表正式 GUID 已存在；正式入庫、字庫音檔 metadata／volume、情境 draft 與發布各自確認狀態。
 
 故事定稿後再產音，避免文字改動造成重做。使用者已確認旁白沿用字庫的本機 Qwen3-TTS／Serena，採溫暖、清楚的英語老師語氣；不要在測試時呼叫真實生成服務。
 
@@ -55,7 +61,16 @@
 
 basic 原有音檔優先沿用，仍要核對實際檔案與 metadata。advance 的 curtain、shelf、pillow 已全部生成：3 段單字、15 段英文例句、9 段英文解釋，共 27 段，manifest 在 `data/scenario-wordbank-audio/living-room-v1/manifest.json`；2026-10-10 已匯入正式字庫 metadata 及 audio volume，未重新產音。只處理客廳試點，不重做整個 advance 字庫。
 
-`npm run scenario:audio:generate` 預設只列 dry-run 計畫；經使用者明確授權實際產音後，使用 `SCENARIO_REAL_TTS=1 npm run scenario:audio:generate -- --generate` 呼叫本機 Qwen3-TTS。`npm run scenario:audio:test` 的六項測試使用假回應。一般驗證不產音。
+`npm run scenario:audio:generate` 預設只列 dry-run 計畫；經使用者明確授權實際產音後，使用 `SCENARIO_REAL_TTS=1 npm run scenario:audio:generate -- --generate` 呼叫本機 Qwen3-TTS。`npm run scenario:audio:test` 使用假回應，包含自訂來源及來源失效保護；一般驗證不產音。預設仍使用 canonical `source/vocabulary-database.json`。尚未正式入庫的缺詞可用 `--source` 指定專案內合併字庫，字庫實際路徑不得透過 symlink 離開專案；生成前後都重新核對，生成期間來源或套件失效時保留音檔而不套用。
+
+麥當勞第一場備料例子（須已有素材與合併字庫；實際生成仍需本次對話授權）：
+
+```bash
+npm run scenario:package:check -- docs/scenarios/packages/mcdonalds-restaurant-tour-r1/scenario.json --source data/scenario-preparation/mcdonalds-restaurant/vocabulary-generation-source.json
+SCENARIO_REAL_TTS=1 npm run scenario:audio:generate -- --package docs/scenarios/packages/mcdonalds-restaurant-tour-r1/scenario.json --source data/scenario-preparation/mcdonalds-restaurant/vocabulary-generation-source.json --generate
+```
+
+合併字庫是本機備料輸入，不是正式 DB 匯入證據；本機 TTS 限本機 HTTP endpoint，不能改成遠端 TTS。
 
 故事、單字與例句接入既有音源仲裁：開卡不自動播放；播放單字或例句時暫停故事並保留位置，使用者可自行繼續聽故事。
 
@@ -86,7 +101,7 @@ npm run scenario:package:check -- docs/scenarios/packages/living-room-15-v1/scen
 
 `GET /wordbank/entries/:guid` 已提供指定字庫詞條與有效音檔。正式 App 的 `#/scenarios`／`#/scenarios/living-room` 沿用字庫單字卡、故事 Modal 與音源仲裁，提供看圖學習／回想；回想按詞性開放已揭曉標籤與單字入口，全部目標詞揭曉前移除故事與翻譯入口。點字或播放不自動收藏，不虛構文章來源。QA 使用 API 5180、Vite 5181 與 `_test`，不改原 5174 獨立預覽。
 
-從根目錄執行 `npm run scenario:import -- --dry-run` 可離線核對完整套件；`--check-database` 須明示 `DATABASE_URL`，唯讀核對實際資料庫與字庫。實際匯入需 `--apply --confirm-database '<URL主機:port/DB名>' --confirm-server '<實際IP:port/DB名>' --image-dir '<圖片volume目錄>' --audio-dir '<音檔volume目錄>'`；可用 `--package` 指定套件；`--apply` 不能與 dry-run／check-database 混用。此指令不讀 `.env`、不跑 migration、不啟動 worker、不自動發布。
+從根目錄執行 `npm run scenario:import -- --dry-run` 可離線核對完整套件；`--check-database` 須明示 `DATABASE_URL`，唯讀核對實際資料庫與字庫。實際匯入需 `--apply --confirm-database '<URL主機:port/DB名>' --confirm-server '<實際IP:port/DB名>' --image-dir '<圖片volume目錄>' --audio-dir '<音檔volume目錄>'`；可用 `--package` 指定套件；`--apply` 不能與 dry-run／check-database 混用。此指令不讀 `.env`、不跑 migration、不啟動 worker、不自動發布。`scenario:import` 保留指定詞模式欄位，但不接受 `--source`；dry-run／check-database／apply 均先核對 canonical `source/vocabulary-database.json`，正式操作再核對實際 DB 的真實 GUID／word／級別／詞性。替代合併字庫的 check 或生成通過，不能用來繞過正式字庫缺詞。
 
 正式寫入前，先完成旁白試聽、座標與桌機／手機 QA，再依 [AGENTS.md](../../AGENTS.md) 確認具體範圍：實際目標 DB 與備份、情境 migration、底圖／旁白 volume 落點與 draft 匯入、advance 27 段檔案及字庫 metadata 匯入、程式部署、指定 revision 發布。字庫 metadata 匯入器不複製音檔，須另安排 volume 落點。截至 2026-10-10，正式 migrations 已在實際庫查得，客廳 draft、底圖／旁白及 advance 27 段檔案／metadata 已匯入；該次查核沒有部署或啟動 worker，已依使用者授權發布客廳 revision 1。其餘操作不由預檢自動執行。
 

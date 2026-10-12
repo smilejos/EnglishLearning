@@ -1,0 +1,17 @@
+{
+  "scenarioKey": "mcdonalds-restaurant-tour",
+  "revision": 1,
+  "tool": "Codex imagegen skill / built-in image_gen",
+  "status": "generated-awaiting-interaction-review",
+  "baseImage": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+  "sha256": "26e68b4dc1312adaefce113461b8b263e7c3817bcb755d52f1205e7a75aeaca3",
+  "width": 1672,
+  "height": 941,
+  "bytes": 2345660,
+  "promptPath": "output/imagegen/mcdonalds-restaurant-tour-r1/prompt.txt",
+  "sourceGeneratedPath": "/Users/jos/.codex/generated_images/01a12b80-2380-7713-a984-108d8659451a/exec-56ffd865-1dbd-4747-98ce-a97aae7204cf.png",
+  "copiedAt": "2026-10-11T16:02:16.706295+00:00",
+  "noVocabularyTextReviewed": true,
+  "brandSymbolNote": "金色拱門圖像保留，不是教材文字",
+  "humanFullImageReview": "root已完整看圖；29項線索可見，座標與手機實際標籤待驗"
+}

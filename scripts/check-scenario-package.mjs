@@ -4,6 +4,7 @@ import { readFile, realpath, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateScenarioWordLinkSpans } from '../shared/src/scenario-word-links.mjs';
 
 const defaultRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
@@ -36,11 +37,13 @@ export async function validateScenarioPackage(pkg, options = {}) {
   if (!Number.isInteger(pkg.revision) || pkg.revision < 1) errors.push('revision 必須為正整數');
   if (!['draft', 'published'].includes(pkg.status)) errors.push('status 必須為 draft 或 published');
   if (!nonempty(pkg.titleZh)) errors.push('titleZh 不可空白');
+  const userSpecified = pkg.vocabularyMode === 'user-specified';
+  if (pkg.vocabularyMode !== undefined && !userSpecified) errors.push('vocabularyMode 僅接受 user-specified 或省略');
   const levels = pkg.vocabularyFilter?.levels;
   const selectedLevels = Array.isArray(levels) ? levels : [];
-  if (pkg.vocabularyFilter?.system !== 'list' || !Array.isArray(levels) || levels.length === 0 ||
-      levels.some((level) => !['basic', 'advance'].includes(level)) || new Set(levels).size !== levels.length) {
-    errors.push('vocabularyFilter 必須為 list，levels 僅接受不重複的 basic／advance');
+  if (pkg.vocabularyFilter?.system !== 'list' || !Array.isArray(levels) || (!userSpecified && levels.length === 0) ||
+      selectedLevels.some((level) => !(userSpecified ? ['basic', 'advance', 'expert'] : ['basic', 'advance']).includes(level)) || new Set(selectedLevels).size !== selectedLevels.length) {
+    errors.push('vocabularyFilter 必須為 list；一般模式 levels 僅接受不重複的 basic／advance，指定詞模式可含 expert 或為空');
   }
   if (!Number.isInteger(pkg.targetCount) || pkg.targetCount < 1 || pkg.targetCount > 29) errors.push('targetCount 必須為 1–29 的整數');
   const targets = Array.isArray(pkg.targets) ? pkg.targets : [];
@@ -54,7 +57,7 @@ export async function validateScenarioPackage(pkg, options = {}) {
       errors.push(`${label} 的 word／entryGuid 與字庫不一致`);
       return null;
     }
-    if (!['basic', 'advance'].includes(entry.level?.list) || !selectedLevels.includes(entry.level?.list)) {
+    if (!userSpecified && (!['basic', 'advance'].includes(entry.level?.list) || !selectedLevels.includes(entry.level?.list))) {
       errors.push(`${label} 的詞條不在所選 basic／advance 範圍內`);
     }
     return entry;
@@ -69,7 +72,8 @@ export async function validateScenarioPackage(pkg, options = {}) {
     targetWords.add(target.word);
     targetGuids.add(target.entryGuid);
     if (!['n', 'adj', 'v'].includes(target.teachingPos)) errors.push(`${label}.teachingPos 僅接受 n／adj／v`);
-    if (entry && target.list !== entry.level?.list) errors.push(`${label}.list 與字庫不一致`);
+    if (![null, 'basic', 'advance', 'expert'].includes(target.list)) errors.push(`${label}.list 必須為 basic／advance／expert 或 null`);
+    if (entry && target.list !== (entry.level?.list ?? null)) errors.push(`${label}.list 與字庫不一致`);
     if (entry && !entry.parts_of_speech?.includes(target.teachingPos)) errors.push(`${label}.teachingPos 不屬於字庫詞性`);
     if (!nonempty(target.senseZh)) errors.push(`${label}.senseZh 不可空白`);
     if (target.interaction == null) missing.push(`${label} (${target.word}) 缺互動標籤及物件座標`);
@@ -93,23 +97,18 @@ export async function validateScenarioPackage(pkg, options = {}) {
       if (!nonempty(sentence.id) || ids.has(sentence.id)) errors.push(`${label}.id 必須非空且不重複`);
       ids.add(sentence.id);
       if (!nonempty(sentence.en) || !nonempty(sentence.zh)) errors.push(`${label} 的英文與翻譯不可空白`);
-      const tokens = typeof sentence.en === 'string' ? [...sentence.en.matchAll(/[A-Za-z]+/g)] : [];
-      const spans = new Map(tokens.map((token) => [`${token.index}:${token.index + token[0].length}`, token[0]]));
-      const used = new Set();
       if (!Array.isArray(sentence.wordLinks)) errors.push(`${label}.wordLinks 必須為陣列`);
+      if (typeof sentence.en === 'string' && Array.isArray(sentence.wordLinks)) {
+        errors.push(...validateScenarioWordLinkSpans(sentence.en, sentence.wordLinks, userSpecified).map(error => `${label}.${error}`));
+      }
       for (const [linkIndex, link] of (Array.isArray(sentence.wordLinks) ? sentence.wordLinks : []).entries()) {
         const linkLabel = `${label}.wordLinks[${linkIndex}]`;
         const entry = validateEntry(link, linkLabel);
         if (!record(link)) continue;
-        const key = `${link.start}:${link.end}`;
-        if (!Number.isInteger(link.start) || !Number.isInteger(link.end) || spans.get(key) !== link.surface || used.has(key)) {
-          errors.push(`${linkLabel} 的 span／surface 不正確或重複`);
-        } else used.add(key);
         const expectedTarget = targetGuids.has(link.entryGuid) && targetWords.has(link.word);
         if (link.isTarget !== expectedTarget) errors.push(`${linkLabel}.isTarget 與 targets 不一致`);
         if (entry && expectedTarget) foundTargets.add(link.entryGuid);
       }
-      if (used.size !== tokens.length) errors.push(`${label}.wordLinks 必須覆蓋所有英文單字`);
     });
     for (const target of targets) if (record(target) && !foundTargets.has(target.entryGuid)) errors.push(`故事缺少目標詞 ${target.word}`);
   }

@@ -58,6 +58,40 @@ test('真實 opt-in、回傳音訊及來源校驗通過才更新套件；重跑�
   assert.equal(f.calls(), 1);
 });
 
+test('明確指定專案內增量字庫可生成，仍保留預設字庫；過程中來源失效不更新套件', async (t) => {
+  const f = await fixture(t);
+  const canonical = path.join(f.root, 'source/vocabulary-database.json');
+  const sourceFile = path.join(f.root, 'source/merged-vocabulary.json');
+  await writeFile(sourceFile, await readFile(canonical));
+  await writeFile(canonical, JSON.stringify({ entries: [] }));
+  await assert.rejects(generateScenarioAudio(f.options), /字庫不一致/);
+  assert.equal(f.calls(), 0);
+  const report = await generateScenarioAudio({ ...f.options, sourceFile });
+  assert.equal(report.generated, 1);
+  assert.equal(f.calls(), 1);
+  assert.deepEqual(JSON.parse(await readFile(canonical, 'utf8')), { entries: [] });
+  // 第二次預檢也必須使用同一份指定字庫，且不可套用已失效的產音結果。
+  const before = await readFile(f.packageFile, 'utf8');
+  await assert.rejects(generateScenarioAudio({ ...f.options, sourceFile, outputDir: path.join(f.root, 'audio-recheck'), fetchImpl: async () => {
+    await writeFile(sourceFile, JSON.stringify({ entries: [] }));
+    return new Response('fake audio', { headers: { 'Content-Type': 'audio/mpeg' } });
+  } }), /生成期間套件已失效/);
+  assert.equal(await readFile(f.packageFile, 'utf8'), before);
+});
+
+test('指定字庫拒絕專案外來源及 symlink 逃逸，拒絕前不呼叫 TTS', async (t) => {
+  const f = await fixture(t);
+  const outside = await mkdtemp(path.join(tmpdir(), 'scenario-source-outside-'));
+  t.after(() => rm(outside, { recursive: true, force: true }));
+  const external = path.join(outside, 'vocabulary.json');
+  await writeFile(external, await readFile(path.join(f.root, 'source/vocabulary-database.json')));
+  await assert.rejects(generateScenarioAudio({ ...f.options, sourceFile: external }), /專案內/);
+  const linked = path.join(f.root, 'source/linked.json');
+  await symlink(external, linked);
+  await assert.rejects(generateScenarioAudio({ ...f.options, sourceFile: linked }), /symlink/);
+  assert.equal(f.calls(), 0);
+});
+
 test('故事或聲線改變會使用另一個資產識別，不重用舊故事', async () => {
   const pkg = { scenarioKey: 'living-room', revision: 1, story: { language: 'en', textEn: 'Read a book.' } };
   const first = planScenarioAudio(pkg);

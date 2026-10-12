@@ -72,6 +72,26 @@ async function click(name: string, scope = document.body) {
 }
 
 describe("正式情境學習", () => {
+  it("指定詞故事把完整 Unicode 片語呈現為一個按鈕，與圖片標籤共用同一張正式詞卡", async () => {
+    const phrases = ["À la carte", "self-service kiosk"];
+    const custom = structuredClone(scenario);
+    custom.vocabularyMode = "user-specified";
+    custom.targetCount = 2;
+    custom.targets = phrases.map((word, i) => ({ ...custom.targets[i], word, entryGuid: `${word}-guid`, list: i === 0 ? "expert" : null }));
+    const en = "À la carte at the self-service kiosk.";
+    custom.story = { textEn: en, textZh: "在自助點餐機單點。", sentences: [{ id: "s1", en, zh: "在自助點餐機單點。", wordLinks: [
+      { surface: "À la carte", word: phrases[0], entryGuid: `${phrases[0]}-guid`, isTarget: true, start: 0, end: 10 },
+      { surface: "at", word: "at", entryGuid: "at-guid", isTarget: false, start: 11, end: 13 },
+      { surface: "the", word: "the", entryGuid: "the-guid", isTarget: false, start: 14, end: 17 },
+      { surface: "self-service kiosk", word: phrases[1], entryGuid: `${phrases[1]}-guid`, isTarget: true, start: 18, end: 36 },
+    ] }] };
+    vi.mocked(api.getScenario).mockResolvedValue(custom);
+    await load(); openStory();
+    expect(within(story()).getAllByRole("button", { name: /^查看/ })).toHaveLength(4);
+    fireEvent.click(within(story()).getByRole("button", { name: "查看 À la carte（À la carte）單字卡" }));
+    await within(card()).findByRole("heading", { name: "À la carte" });
+    expect(api.getWordbankEntry).toHaveBeenCalledWith("À la carte-guid", expect.any(AbortSignal));
+  });
   it("指定版本由受權限保護的 API 載入草稿；失敗時不回退到已發布版", async () => {
     vi.mocked(api.getScenarioRevision).mockResolvedValue({ ...scenario, revision: 2, status: "draft" });
     window.location.hash = "#/scenarios/living-room/revisions/2";

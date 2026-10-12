@@ -1,0 +1,15 @@
+{
+  "scenarioKey": "mcdonalds-after-meal",
+  "revision": 1,
+  "tool": "Codex imagegen skill / built-in image_gen",
+  "status": "generated-visually-reviewed-awaiting-interaction-review",
+  "baseImage": "output/imagegen/mcdonalds-after-meal-r1/base-v2.png",
+  "sha256": "65d601e0291e7f59bfd1cd96a7f0b1d9fb342e160996726b5df3305923876d21",
+  "width": 1672,
+  "height": 941,
+  "bytes": 2058616,
+  "promptPath": "output/imagegen/mcdonalds-after-meal-r1/prompt.txt",
+  "sourceGeneratedPath": "/Users/jos/.codex/generated_images/01a12b80-2380-7713-a984-108d8659451a/exec-8a2f33ee-3e41-49e2-91ca-8b0056506a3b.png",
+  "noVocabularyTextReviewed": true,
+  "humanFullImageReview": "root完整看圖，25項可辨；v2分類紙袋與桶上圖示相符，原前景髒餐巾/包裝/剩食保留"
+}

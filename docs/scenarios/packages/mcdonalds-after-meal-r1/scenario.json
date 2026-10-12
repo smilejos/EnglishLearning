@@ -1,0 +1,1810 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "mcdonalds-after-meal",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "用餐結束後",
+  "vocabularyMode": "user-specified",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance",
+      "expert"
+    ]
+  },
+  "targetCount": 25,
+  "targets": [
+    {
+      "word": "trash can",
+      "entryGuid": "629d763b-59f1-5d47-81de-501e84103717",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "垃圾桶",
+      "interaction": {
+        "object": {
+          "x": 0.299,
+          "y": 0.563
+        },
+        "label": {
+          "x": 0.292,
+          "y": 0.693
+        }
+      }
+    },
+    {
+      "word": "Recycling Bin",
+      "entryGuid": "7d0e9d9e-ea2f-5e56-afa6-94e6d0225f7c",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "資源回收桶",
+      "interaction": {
+        "object": {
+          "x": 0.366,
+          "y": 0.556
+        },
+        "label": {
+          "x": 0.425,
+          "y": 0.66
+        }
+      }
+    },
+    {
+      "word": "Tray Return Station",
+      "entryGuid": "d4590780-19b5-53d9-b2e7-1e7a77d1780e",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "餐盤回收區",
+      "interaction": {
+        "object": {
+          "x": 0.321,
+          "y": 0.163
+        },
+        "label": {
+          "x": 0.23,
+          "y": 0.045
+        }
+      }
+    },
+    {
+      "word": "Leftovers",
+      "entryGuid": "7cdc3862-829a-55f2-be8f-1fb61b502066",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "剩餘食物",
+      "interaction": {
+        "object": {
+          "x": 0.689,
+          "y": 0.851
+        },
+        "label": {
+          "x": 0.56,
+          "y": 0.935
+        }
+      }
+    },
+    {
+      "word": "Empty Cup",
+      "entryGuid": "4fdd11c6-9ad0-5965-89dc-21ea145c3d77",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "空杯子",
+      "interaction": {
+        "object": {
+          "x": 0.767,
+          "y": 0.789
+        },
+        "label": {
+          "x": 0.848,
+          "y": 0.858
+        }
+      }
+    },
+    {
+      "word": "Paper Wrapper",
+      "entryGuid": "f6753daf-52d7-5de0-8f6d-cab8bd41e36f",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "食物包裝紙",
+      "interaction": {
+        "object": {
+          "x": 0.584,
+          "y": 0.813
+        },
+        "label": {
+          "x": 0.535,
+          "y": 0.565
+        }
+      }
+    },
+    {
+      "word": "Used Napkin",
+      "entryGuid": "d5383ce1-423f-59e0-8221-15b961798f5f",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "使用過的餐巾紙",
+      "interaction": {
+        "object": {
+          "x": 0.658,
+          "y": 0.925
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.93
+        }
+      }
+    },
+    {
+      "word": "Cleaning Cloth",
+      "entryGuid": "60b02d58-5775-575e-88dc-0371ae7e3ff4",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "清潔抹布",
+      "interaction": {
+        "object": {
+          "x": 0.839,
+          "y": 0.464
+        },
+        "label": {
+          "x": 0.915,
+          "y": 0.59
+        }
+      }
+    },
+    {
+      "word": "broom",
+      "entryGuid": "21a62c82-0176-5a95-9e27-9a34bd8aa793",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "掃把",
+      "interaction": {
+        "object": {
+          "x": 0.671,
+          "y": 0.503
+        },
+        "label": {
+          "x": 0.7,
+          "y": 0.633
+        }
+      }
+    },
+    {
+      "word": "Dustpan",
+      "entryGuid": "ed2cfd8e-3409-5da3-8167-1a319b974e16",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "畚箕",
+      "interaction": {
+        "object": {
+          "x": 0.62,
+          "y": 0.548
+        },
+        "label": {
+          "x": 0.595,
+          "y": 0.655
+        }
+      }
+    },
+    {
+      "word": "mop",
+      "entryGuid": "e2926169-3026-5ce7-98b2-87f00a5aec7a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "拖把",
+      "interaction": {
+        "object": {
+          "x": 0.733,
+          "y": 0.571
+        },
+        "label": {
+          "x": 0.79,
+          "y": 0.653
+        }
+      }
+    },
+    {
+      "word": "Cleaning Cart",
+      "entryGuid": "922f4be5-bc43-55e7-89c3-312a9acb4592",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "清潔推車",
+      "interaction": {
+        "object": {
+          "x": 0.631,
+          "y": 0.456
+        },
+        "label": {
+          "x": 0.69,
+          "y": 0.282
+        }
+      }
+    },
+    {
+      "word": "Trash Bag",
+      "entryGuid": "ac43a461-fde3-557c-8708-c5ae15d0ad8a",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "垃圾袋",
+      "interaction": {
+        "object": {
+          "x": 0.697,
+          "y": 0.496
+        },
+        "label": {
+          "x": 0.73,
+          "y": 0.52
+        }
+      }
+    },
+    {
+      "word": "Recycling Symbol",
+      "entryGuid": "1eb54d53-4622-590a-851b-d73a9dec8082",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "回收標誌",
+      "interaction": {
+        "object": {
+          "x": 0.381,
+          "y": 0.538
+        },
+        "label": {
+          "x": 0.415,
+          "y": 0.46
+        }
+      }
+    },
+    {
+      "word": "Exit Sign",
+      "entryGuid": "4d100eb8-e0a3-5995-b672-9d7c56620a1b",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "出口指示牌",
+      "interaction": {
+        "object": {
+          "x": 0.878,
+          "y": 0.063
+        },
+        "label": {
+          "x": 0.88,
+          "y": 0.12
+        }
+      }
+    },
+    {
+      "word": "empty",
+      "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "空的",
+      "interaction": {
+        "object": {
+          "x": 0.766,
+          "y": 0.716
+        },
+        "label": {
+          "x": 0.83,
+          "y": 0.74
+        }
+      }
+    },
+    {
+      "word": "dirty",
+      "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "髒的",
+      "interaction": {
+        "object": {
+          "x": 0.667,
+          "y": 0.903
+        },
+        "label": {
+          "x": 0.757,
+          "y": 0.93
+        }
+      }
+    },
+    {
+      "word": "clean",
+      "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "乾淨的",
+      "interaction": {
+        "object": {
+          "x": 0.932,
+          "y": 0.479
+        },
+        "label": {
+          "x": 0.957,
+          "y": 0.48
+        }
+      }
+    },
+    {
+      "word": "wet",
+      "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "濕的",
+      "interaction": {
+        "object": {
+          "x": 0.858,
+          "y": 0.475
+        },
+        "label": {
+          "x": 0.779,
+          "y": 0.42
+        }
+      }
+    },
+    {
+      "word": "messy",
+      "entryGuid": "43f91af9-d8b7-5303-8310-02edc88df2d5",
+      "list": "expert",
+      "teachingPos": "adj",
+      "senseZh": "凌亂的",
+      "interaction": {
+        "object": {
+          "x": 0.648,
+          "y": 0.854
+        },
+        "label": {
+          "x": 0.515,
+          "y": 0.83
+        }
+      }
+    },
+    {
+      "word": "pour",
+      "entryGuid": "772e1508-c6fc-50fa-b0f1-286dd266fa44",
+      "list": "expert",
+      "teachingPos": "v",
+      "senseZh": "倒",
+      "interaction": {
+        "object": {
+          "x": 0.158,
+          "y": 0.401
+        },
+        "label": {
+          "x": 0.098,
+          "y": 0.09
+        }
+      }
+    },
+    {
+      "word": "sort",
+      "entryGuid": "136bee9c-2803-5a85-b848-70e9181377d0",
+      "list": "expert",
+      "teachingPos": "v",
+      "senseZh": "分類",
+      "interaction": {
+        "object": {
+          "x": 0.375,
+          "y": 0.384
+        },
+        "label": {
+          "x": 0.575,
+          "y": 0.395
+        }
+      }
+    },
+    {
+      "word": "return",
+      "entryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "歸還",
+      "interaction": {
+        "object": {
+          "x": 0.334,
+          "y": 0.173
+        },
+        "label": {
+          "x": 0.37,
+          "y": 0.055
+        }
+      }
+    },
+    {
+      "word": "wipe",
+      "entryGuid": "84de3914-33cf-5ae7-9c31-8fdd2fc5e47e",
+      "list": "expert",
+      "teachingPos": "v",
+      "senseZh": "擦拭",
+      "interaction": {
+        "object": {
+          "x": 0.833,
+          "y": 0.444
+        },
+        "label": {
+          "x": 0.795,
+          "y": 0.337
+        }
+      }
+    },
+    {
+      "word": "leave",
+      "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "離開",
+      "interaction": {
+        "object": {
+          "x": 0.901,
+          "y": 0.35
+        },
+        "label": {
+          "x": 0.954,
+          "y": 0.383
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "The meal is over, and the children help tidy up. There are some leftovers, a paper wrapper, and a dirty used napkin on the tray. With an adult nearby, one child pours the remaining drink into a special hole. An empty cup stands on the tray. There is nothing inside the cup; it is empty. The other child helps sort the used items by checking the pictures above the bins. The trash can is beside the recycling bin. A recycling symbol helps them find the right bin. The adult returns a tray to the rack at the tray return station. Nearby, an employee wipes a table with a wet cleaning cloth. The far end of the table is already clean. A broom, a dustpan, and a mop are beside the cleaning cart. A trash bag rests beside the cart, away from the messy table. Near the exit sign, other customers leave the restaurant. Soon, the children will be ready to leave, too.",
+    "textZh": "用餐結束了，小朋友幫忙整理。托盤上有一些剩餘食物、食物包裝紙和一張用過而且弄髒的餐巾紙。大人在旁邊陪同，一位小朋友將剩餘飲料倒進專用收集孔。一個空杯子放在托盤上。杯子裡沒有東西；它是空的。另一位小朋友查看桶子上方的圖像指示，幫忙將用過的物品分類。垃圾桶在資源回收桶旁邊。回收標誌幫助他們找到對應的桶子。大人把托盤放回餐盤回收區的架子上。附近一位店員用濕的清潔抹布擦桌子。桌子的遠端已經乾淨了。掃把、畚箕和拖把放在清潔推車旁邊。一個垃圾袋放在推車旁，與凌亂的桌面保持距離。在出口指示牌附近，其他顧客正離開餐廳。小朋友也很快就準備好離開了。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "The meal is over, and the children help tidy up.",
+        "zh": "用餐結束了，小朋友幫忙整理。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "meal",
+            "word": "meal",
+            "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+            "isTarget": false,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 9,
+            "end": 11
+          },
+          {
+            "surface": "over",
+            "word": "over",
+            "entryGuid": "78e40216-3485-54f9-9c71-70c3e01cd6ed",
+            "isTarget": false,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "children",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 26,
+            "end": 34
+          },
+          {
+            "surface": "help",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "tidy",
+            "word": "tidy",
+            "entryGuid": "2e861a64-2190-589c-a96a-855182873dc2",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 45,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "There are some leftovers, a paper wrapper, and a dirty used napkin on the tray.",
+        "zh": "托盤上有一些剩餘食物、食物包裝紙和一張用過而且弄髒的餐巾紙。",
+        "wordLinks": [
+          {
+            "surface": "There",
+            "word": "there",
+            "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 9
+          },
+          {
+            "surface": "some",
+            "word": "some",
+            "entryGuid": "46494184-e96d-5eb9-b4d5-3ec9fd8690de",
+            "isTarget": false,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "leftovers",
+            "word": "Leftovers",
+            "entryGuid": "7cdc3862-829a-55f2-be8f-1fb61b502066",
+            "isTarget": true,
+            "start": 15,
+            "end": 24
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "paper wrapper",
+            "word": "Paper Wrapper",
+            "entryGuid": "f6753daf-52d7-5de0-8f6d-cab8bd41e36f",
+            "isTarget": true,
+            "start": 28,
+            "end": 41
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 47,
+            "end": 48
+          },
+          {
+            "surface": "dirty",
+            "word": "dirty",
+            "entryGuid": "92f8200c-bca5-5bcc-b0cd-4f28f5ed5d46",
+            "isTarget": true,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "used napkin",
+            "word": "Used Napkin",
+            "entryGuid": "d5383ce1-423f-59e0-8221-15b961798f5f",
+            "isTarget": true,
+            "start": 55,
+            "end": 66
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 67,
+            "end": 69
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 70,
+            "end": 73
+          },
+          {
+            "surface": "tray",
+            "word": "tray",
+            "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+            "isTarget": false,
+            "start": 74,
+            "end": 78
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "With an adult nearby, one child pours the remaining drink into a special hole.",
+        "zh": "大人在旁邊陪同，一位小朋友將剩餘飲料倒進專用收集孔。",
+        "wordLinks": [
+          {
+            "surface": "With",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "adult",
+            "word": "adult",
+            "entryGuid": "e6f35183-2516-5245-97be-54ab4a1fd4a2",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "nearby",
+            "word": "nearby",
+            "entryGuid": "1d83ac72-ccfd-5575-b47a-d3643c2d512a",
+            "isTarget": false,
+            "start": 14,
+            "end": 20
+          },
+          {
+            "surface": "one",
+            "word": "one",
+            "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 26,
+            "end": 31
+          },
+          {
+            "surface": "pours",
+            "word": "pour",
+            "entryGuid": "772e1508-c6fc-50fa-b0f1-286dd266fa44",
+            "isTarget": true,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "remaining",
+            "word": "remain",
+            "entryGuid": "28451681-337a-5448-9dc3-2fc626be2664",
+            "isTarget": false,
+            "start": 42,
+            "end": 51
+          },
+          {
+            "surface": "drink",
+            "word": "drink",
+            "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+            "isTarget": false,
+            "start": 52,
+            "end": 57
+          },
+          {
+            "surface": "into",
+            "word": "into",
+            "entryGuid": "ff2ff7fe-ca9b-5d6f-b685-f1fe96d9ed46",
+            "isTarget": false,
+            "start": 58,
+            "end": 62
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 63,
+            "end": 64
+          },
+          {
+            "surface": "special",
+            "word": "special",
+            "entryGuid": "93014870-d186-5f97-85f4-93489de3a10e",
+            "isTarget": false,
+            "start": 65,
+            "end": 72
+          },
+          {
+            "surface": "hole",
+            "word": "hole",
+            "entryGuid": "e8137f23-31da-56f5-afce-b847e7881aaa",
+            "isTarget": false,
+            "start": 73,
+            "end": 77
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "An empty cup stands on the tray.",
+        "zh": "一個空杯子放在托盤上。",
+        "wordLinks": [
+          {
+            "surface": "An",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "empty cup",
+            "word": "Empty Cup",
+            "entryGuid": "4fdd11c6-9ad0-5965-89dc-21ea145c3d77",
+            "isTarget": true,
+            "start": 3,
+            "end": 12
+          },
+          {
+            "surface": "stands",
+            "word": "stand",
+            "entryGuid": "c159bec5-f00f-522b-8ac1-34ff583d7696",
+            "isTarget": false,
+            "start": 13,
+            "end": 19
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 20,
+            "end": 22
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "tray",
+            "word": "tray",
+            "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s4-empty",
+        "en": "There is nothing inside the cup; it is empty.",
+        "zh": "杯子裡沒有東西；它是空的。",
+        "wordLinks": [
+          {
+            "surface": "There",
+            "word": "there",
+            "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "nothing",
+            "word": "nothing",
+            "entryGuid": "a4dee1f4-9543-52d5-a54f-d92aafba90db",
+            "isTarget": false,
+            "start": 9,
+            "end": 16
+          },
+          {
+            "surface": "inside",
+            "word": "inside",
+            "entryGuid": "5f6834de-8d31-5b6f-a4bb-a994dd55231b",
+            "isTarget": false,
+            "start": 17,
+            "end": 23
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "cup",
+            "word": "cup",
+            "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 36,
+            "end": 38
+          },
+          {
+            "surface": "empty",
+            "word": "empty",
+            "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+            "isTarget": true,
+            "start": 39,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "The other child helps sort the used items by checking the pictures above the bins.",
+        "zh": "另一位小朋友查看桶子上方的圖像指示，幫忙將用過的物品分類。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "helps",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "sort",
+            "word": "sort",
+            "entryGuid": "136bee9c-2803-5a85-b848-70e9181377d0",
+            "isTarget": true,
+            "start": 22,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "used",
+            "word": "used",
+            "entryGuid": "eaefaeeb-945b-58a0-974e-6914bb371989",
+            "isTarget": false,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "items",
+            "word": "item",
+            "entryGuid": "3d757b95-7d7b-5bfd-8bdc-bdbe004ba7f5",
+            "isTarget": false,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "by",
+            "word": "by",
+            "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+            "isTarget": false,
+            "start": 42,
+            "end": 44
+          },
+          {
+            "surface": "checking",
+            "word": "checking",
+            "entryGuid": "ab66aade-a984-565e-8d61-7cf19f21377b",
+            "isTarget": false,
+            "start": 45,
+            "end": 53
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 54,
+            "end": 57
+          },
+          {
+            "surface": "pictures",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": false,
+            "start": 58,
+            "end": 66
+          },
+          {
+            "surface": "above",
+            "word": "above",
+            "entryGuid": "d8da53d0-5638-5f66-911b-704738d85988",
+            "isTarget": false,
+            "start": 67,
+            "end": 72
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 73,
+            "end": 76
+          },
+          {
+            "surface": "bins",
+            "word": "bin",
+            "entryGuid": "5937510e-30cc-524c-9521-c0ffd63558f9",
+            "isTarget": false,
+            "start": 77,
+            "end": 81
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "The trash can is beside the recycling bin.",
+        "zh": "垃圾桶在資源回收桶旁邊。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "trash can",
+            "word": "trash can",
+            "entryGuid": "629d763b-59f1-5d47-81de-501e84103717",
+            "isTarget": true,
+            "start": 4,
+            "end": 13
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 17,
+            "end": 23
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 24,
+            "end": 27
+          },
+          {
+            "surface": "recycling bin",
+            "word": "Recycling Bin",
+            "entryGuid": "7d0e9d9e-ea2f-5e56-afa6-94e6d0225f7c",
+            "isTarget": true,
+            "start": 28,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "A recycling symbol helps them find the right bin.",
+        "zh": "回收標誌幫助他們找到對應的桶子。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "recycling symbol",
+            "word": "Recycling Symbol",
+            "entryGuid": "1eb54d53-4622-590a-851b-d73a9dec8082",
+            "isTarget": true,
+            "start": 2,
+            "end": 18
+          },
+          {
+            "surface": "helps",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "them",
+            "word": "them",
+            "entryGuid": "39092abf-a6e2-54cb-9151-9c9947587c98",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "find",
+            "word": "find",
+            "entryGuid": "c2e379f6-5361-5af7-9538-bb3754c11c0c",
+            "isTarget": false,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "right",
+            "word": "right",
+            "entryGuid": "4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4",
+            "isTarget": false,
+            "start": 39,
+            "end": 44
+          },
+          {
+            "surface": "bin",
+            "word": "bin",
+            "entryGuid": "5937510e-30cc-524c-9521-c0ffd63558f9",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "The adult returns a tray to the rack at the tray return station.",
+        "zh": "大人把托盤放回餐盤回收區的架子上。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "adult",
+            "word": "adult",
+            "entryGuid": "e6f35183-2516-5245-97be-54ab4a1fd4a2",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "returns",
+            "word": "return",
+            "entryGuid": "c6ef33cc-ab7c-5297-8459-e37a403f858b",
+            "isTarget": true,
+            "start": 10,
+            "end": 17
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 18,
+            "end": 19
+          },
+          {
+            "surface": "tray",
+            "word": "tray",
+            "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+            "isTarget": false,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "rack",
+            "word": "rack",
+            "entryGuid": "004b8fd4-d635-5e41-b19b-6d6482a06f8f",
+            "isTarget": false,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "tray return station",
+            "word": "Tray Return Station",
+            "entryGuid": "d4590780-19b5-53d9-b2e7-1e7a77d1780e",
+            "isTarget": true,
+            "start": 44,
+            "end": 63
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "Nearby, an employee wipes a table with a wet cleaning cloth.",
+        "zh": "附近一位店員用濕的清潔抹布擦桌子。",
+        "wordLinks": [
+          {
+            "surface": "Nearby",
+            "word": "nearby",
+            "entryGuid": "1d83ac72-ccfd-5575-b47a-d3643c2d512a",
+            "isTarget": false,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 8,
+            "end": 10
+          },
+          {
+            "surface": "employee",
+            "word": "employee",
+            "entryGuid": "37e2ee92-aabf-5b57-bb2d-1f25b4292356",
+            "isTarget": false,
+            "start": 11,
+            "end": 19
+          },
+          {
+            "surface": "wipes",
+            "word": "wipe",
+            "entryGuid": "84de3914-33cf-5ae7-9c31-8fdd2fc5e47e",
+            "isTarget": true,
+            "start": 20,
+            "end": 25
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 34,
+            "end": 38
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 39,
+            "end": 40
+          },
+          {
+            "surface": "wet",
+            "word": "wet",
+            "entryGuid": "52d1ea5c-da61-5756-84d2-40539783d9e1",
+            "isTarget": true,
+            "start": 41,
+            "end": 44
+          },
+          {
+            "surface": "cleaning cloth",
+            "word": "Cleaning Cloth",
+            "entryGuid": "60b02d58-5775-575e-88dc-0371ae7e3ff4",
+            "isTarget": true,
+            "start": 45,
+            "end": 59
+          }
+        ]
+      },
+      {
+        "id": "s10",
+        "en": "The far end of the table is already clean.",
+        "zh": "桌子的遠端已經乾淨了。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "far",
+            "word": "far",
+            "entryGuid": "5b185616-cc26-587f-af2b-c6fc3201abf3",
+            "isTarget": false,
+            "start": 4,
+            "end": 7
+          },
+          {
+            "surface": "end",
+            "word": "end",
+            "entryGuid": "40b5005d-7c55-58f9-8fe5-0cd57d2fcc16",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 15,
+            "end": 18
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "already",
+            "word": "already",
+            "entryGuid": "f406ca13-cf9e-58c7-b061-4a7228c61916",
+            "isTarget": false,
+            "start": 28,
+            "end": 35
+          },
+          {
+            "surface": "clean",
+            "word": "clean",
+            "entryGuid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+            "isTarget": true,
+            "start": 36,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s11",
+        "en": "A broom, a dustpan, and a mop are beside the cleaning cart.",
+        "zh": "掃把、畚箕和拖把放在清潔推車旁邊。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "broom",
+            "word": "broom",
+            "entryGuid": "21a62c82-0176-5a95-9e27-9a34bd8aa793",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 9,
+            "end": 10
+          },
+          {
+            "surface": "dustpan",
+            "word": "Dustpan",
+            "entryGuid": "ed2cfd8e-3409-5da3-8167-1a319b974e16",
+            "isTarget": true,
+            "start": 11,
+            "end": 18
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 24,
+            "end": 25
+          },
+          {
+            "surface": "mop",
+            "word": "mop",
+            "entryGuid": "e2926169-3026-5ce7-98b2-87f00a5aec7a",
+            "isTarget": true,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 30,
+            "end": 33
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 34,
+            "end": 40
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 41,
+            "end": 44
+          },
+          {
+            "surface": "cleaning cart",
+            "word": "Cleaning Cart",
+            "entryGuid": "922f4be5-bc43-55e7-89c3-312a9acb4592",
+            "isTarget": true,
+            "start": 45,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "id": "s12",
+        "en": "A trash bag rests beside the cart, away from the messy table.",
+        "zh": "一個垃圾袋放在推車旁，與凌亂的桌面保持距離。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "trash bag",
+            "word": "Trash Bag",
+            "entryGuid": "ac43a461-fde3-557c-8708-c5ae15d0ad8a",
+            "isTarget": true,
+            "start": 2,
+            "end": 11
+          },
+          {
+            "surface": "rests",
+            "word": "rest",
+            "entryGuid": "5c4a6c3d-d47c-5f19-99ab-1b22c129e22e",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 18,
+            "end": 24
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "cart",
+            "word": "cart",
+            "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+            "isTarget": false,
+            "start": 29,
+            "end": 33
+          },
+          {
+            "surface": "away",
+            "word": "away",
+            "entryGuid": "a38097b1-254e-5fb3-bbb6-f13f307443b5",
+            "isTarget": false,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          },
+          {
+            "surface": "messy",
+            "word": "messy",
+            "entryGuid": "43f91af9-d8b7-5303-8310-02edc88df2d5",
+            "isTarget": true,
+            "start": 49,
+            "end": 54
+          },
+          {
+            "surface": "table",
+            "word": "table",
+            "entryGuid": "7aa3aa74-1f36-5ce4-9a31-d0971f130500",
+            "isTarget": false,
+            "start": 55,
+            "end": 60
+          }
+        ]
+      },
+      {
+        "id": "s13",
+        "en": "Near the exit sign, other customers leave the restaurant.",
+        "zh": "在出口指示牌附近，其他顧客正離開餐廳。",
+        "wordLinks": [
+          {
+            "surface": "Near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 5,
+            "end": 8
+          },
+          {
+            "surface": "exit sign",
+            "word": "Exit Sign",
+            "entryGuid": "4d100eb8-e0a3-5995-b672-9d7c56620a1b",
+            "isTarget": true,
+            "start": 9,
+            "end": 18
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 20,
+            "end": 25
+          },
+          {
+            "surface": "customers",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": false,
+            "start": 26,
+            "end": 35
+          },
+          {
+            "surface": "leave",
+            "word": "leave",
+            "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+            "isTarget": true,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "restaurant",
+            "word": "restaurant",
+            "entryGuid": "30601ca6-061b-5296-aac7-292e5c9b9d87",
+            "isTarget": false,
+            "start": 46,
+            "end": 56
+          }
+        ]
+      },
+      {
+        "id": "s14",
+        "en": "Soon, the children will be ready to leave, too.",
+        "zh": "小朋友也很快就準備好離開了。",
+        "wordLinks": [
+          {
+            "surface": "Soon",
+            "word": "soon",
+            "entryGuid": "5061831b-3bb0-539e-9838-209c76ece493",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 6,
+            "end": 9
+          },
+          {
+            "surface": "children",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 10,
+            "end": 18
+          },
+          {
+            "surface": "will",
+            "word": "will",
+            "entryGuid": "c05eaf90-ad2d-5a0a-803d-625f721b18d4",
+            "isTarget": false,
+            "start": 19,
+            "end": 23
+          },
+          {
+            "surface": "be",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 27,
+            "end": 32
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "leave",
+            "word": "leave",
+            "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+            "isTarget": true,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "too",
+            "word": "too",
+            "entryGuid": "25320ac0-3865-50ac-ba1d-320e13d2a26b",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s6"
+    ]
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "generated-visually-reviewed",
+      "method": "Codex imagegen skill / built-in image_gen",
+      "promptPath": "output/imagegen/mcdonalds-after-meal-r1/prompt.txt",
+      "editPromptPath": "output/imagegen/mcdonalds-after-meal-r1/edit-prompt-v2.txt"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "generated-awaiting-listening-review",
+      "scope": "current-targets-only",
+      "generated": 126,
+      "reusedValid": 58,
+      "manifestPath": "data/scenario-wordbank-audio/mcdonalds-after-meal-r1/manifest.json"
+    }
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+      "sha256": "26e68b4dc1312adaefce113461b8b263e7c3817bcb755d52f1205e7a75aeaca3",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "baseImage": {
+      "path": "output/imagegen/mcdonalds-after-meal-r1/base-v2.png",
+      "sha256": "65d601e0291e7f59bfd1cd96a7f0b1d9fb342e160996726b5df3305923876d21",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/mcdonalds-restaurant/scenarios/mcdonalds-after-meal/r1/09eeb3d17582e855/story-6f35c1b87cf744f0.mp3",
+      "sha256": "74114fd60d028e18dd5035a38949a7f24981a0d8f8dcfd60e7eb71b794b0e45d",
+      "language": "en",
+      "textSha256": "6f35c1b87cf744f05bf1882b87a8b05515e0699be9256735ad0cc5feda2ce8c6",
+      "durationSeconds": 75.744,
+      "bytes": 1211948,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  }
+}

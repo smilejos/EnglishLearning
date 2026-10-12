@@ -17,10 +17,10 @@ describe("字庫匯入契約", () => {
     expect(() => parseWordbankDocument({ entries: [entry, entry] })).toThrow("GUID 重複");
   });
 
-  it("實際來源可完整解析 9166 字，包含 1193 basic 字且保留所有欄位", async () => {
+  it("實際來源可完整解析 9203 字，包含 1193 basic 字且保留所有欄位", async () => {
     const source = JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8"));
     const parsed = parseWordbankDocument(source);
-    expect(parsed).toHaveLength(9166);
+    expect(parsed).toHaveLength(9203);
     expect(parsed.filter((item) => item.level.list === "basic")).toHaveLength(1193);
     expect(parsed).toEqual(source.entries);
   });

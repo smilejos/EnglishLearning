@@ -1,0 +1,1549 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "mcdonalds-order-food",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "一起點餐吧！",
+  "vocabularyMode": "user-specified",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance",
+      "expert"
+    ]
+  },
+  "targetCount": 25,
+  "targets": [
+    {
+      "word": "hamburger",
+      "entryGuid": "153f4185-cc1d-550f-8522-534fef25256d",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "漢堡",
+      "interaction": {
+        "object": {
+          "x": 0.23,
+          "y": 0.69
+        },
+        "label": {
+          "x": 0.235,
+          "y": 0.765
+        }
+      }
+    },
+    {
+      "word": "Cheeseburger",
+      "entryGuid": "9460f908-8416-5250-bb62-6b31972bce2e",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "起司漢堡",
+      "interaction": {
+        "object": {
+          "x": 0.325,
+          "y": 0.684
+        },
+        "label": {
+          "x": 0.323,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "Big Mac",
+      "entryGuid": "7be495ca-e5db-5aed-bd99-30bf6397ce9e",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "大麥克",
+      "interaction": {
+        "object": {
+          "x": 0.425,
+          "y": 0.67
+        },
+        "label": {
+          "x": 0.423,
+          "y": 0.755
+        }
+      }
+    },
+    {
+      "word": "Chicken Burger",
+      "entryGuid": "12fe2281-38e1-52c3-946c-79bf8a607c02",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "雞肉漢堡",
+      "interaction": {
+        "object": {
+          "x": 0.535,
+          "y": 0.69
+        },
+        "label": {
+          "x": 0.537,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "Fish Burger",
+      "entryGuid": "8731add9-6029-54a4-8c91-6b747f93f667",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "魚肉漢堡",
+      "interaction": {
+        "object": {
+          "x": 0.644,
+          "y": 0.706
+        },
+        "label": {
+          "x": 0.675,
+          "y": 0.78
+        }
+      }
+    },
+    {
+      "word": "French fries",
+      "entryGuid": "625ee007-f822-59a9-b652-7564b110d4bf",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "薯條",
+      "interaction": {
+        "object": {
+          "x": 0.144,
+          "y": 0.647
+        },
+        "label": {
+          "x": 0.09,
+          "y": 0.735
+        }
+      }
+    },
+    {
+      "word": "Chicken Nuggets",
+      "entryGuid": "833a9ad9-2097-5139-b738-547ca41e8463",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "雞塊",
+      "interaction": {
+        "object": {
+          "x": 0.776,
+          "y": 0.697
+        },
+        "label": {
+          "x": 0.786,
+          "y": 0.565
+        }
+      }
+    },
+    {
+      "word": "Hash Brown",
+      "entryGuid": "49988d44-96ab-5742-9d57-7c2dca7f20e4",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "薯餅",
+      "interaction": {
+        "object": {
+          "x": 0.94,
+          "y": 0.69
+        },
+        "label": {
+          "x": 0.936,
+          "y": 0.765
+        }
+      }
+    },
+    {
+      "word": "Apple Pie",
+      "entryGuid": "8fcc03a8-194e-5550-aab8-397b4aa62f1a",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "蘋果派",
+      "interaction": {
+        "object": {
+          "x": 0.168,
+          "y": 0.833
+        },
+        "label": {
+          "x": 0.08,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "Ice Cream Cone",
+      "entryGuid": "8c9fbb43-a84e-5d99-b9c1-5dc6a872c7da",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "蛋捲冰淇淋",
+      "interaction": {
+        "object": {
+          "x": 0.3,
+          "y": 0.82
+        },
+        "label": {
+          "x": 0.245,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "Sundae",
+      "entryGuid": "7b87f992-6dd3-5d41-b681-fe74d07eb5d2",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "聖代",
+      "interaction": {
+        "object": {
+          "x": 0.375,
+          "y": 0.846
+        },
+        "label": {
+          "x": 0.39,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "Soft Drink",
+      "entryGuid": "4b71f758-9c4d-5178-b1ce-671077e674fe",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "汽水",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.876
+        },
+        "label": {
+          "x": 0.52,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "Orange Juice",
+      "entryGuid": "6567ccd3-2a17-54c8-a90d-b9701574e406",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "柳橙汁",
+      "interaction": {
+        "object": {
+          "x": 0.581,
+          "y": 0.873
+        },
+        "label": {
+          "x": 0.65,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "milk",
+      "entryGuid": "347f1643-7bf0-52ea-bfd7-be478631e73e",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "牛奶",
+      "interaction": {
+        "object": {
+          "x": 0.705,
+          "y": 0.868
+        },
+        "label": {
+          "x": 0.77,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "Happy Meal",
+      "entryGuid": "b095635a-83d8-5948-9056-e721dc38e986",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "快樂兒童餐",
+      "interaction": {
+        "object": {
+          "x": 0.871,
+          "y": 0.829
+        },
+        "label": {
+          "x": 0.9,
+          "y": 0.955
+        }
+      }
+    },
+    {
+      "word": "hot",
+      "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "熱的",
+      "interaction": {
+        "object": {
+          "x": 0.144,
+          "y": 0.59
+        },
+        "label": {
+          "x": 0.06,
+          "y": 0.61
+        }
+      }
+    },
+    {
+      "word": "cold",
+      "entryGuid": "2a8f34e9-caf2-5b1c-8518-318d2cdf4590",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "冰的；冷的",
+      "interaction": {
+        "object": {
+          "x": 0.475,
+          "y": 0.812
+        },
+        "label": {
+          "x": 0.525,
+          "y": 0.845
+        }
+      }
+    },
+    {
+      "word": "crispy",
+      "entryGuid": "972af8de-7b4c-5125-b8ce-c3b147970bdd",
+      "list": "expert",
+      "teachingPos": "adj",
+      "senseZh": "酥脆的",
+      "interaction": {
+        "object": {
+          "x": 0.945,
+          "y": 0.68
+        },
+        "label": {
+          "x": 0.913,
+          "y": 0.525
+        }
+      }
+    },
+    {
+      "word": "sweet",
+      "entryGuid": "1c29a1ce-c008-54ab-8ca8-6c9dbda6d953",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "甜的",
+      "interaction": {
+        "object": {
+          "x": 0.375,
+          "y": 0.804
+        },
+        "label": {
+          "x": 0.43,
+          "y": 0.845
+        }
+      }
+    },
+    {
+      "word": "small",
+      "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "小的",
+      "interaction": {
+        "object": {
+          "x": 0.296,
+          "y": 0.36
+        },
+        "label": {
+          "x": 0.25,
+          "y": 0.41
+        }
+      }
+    },
+    {
+      "word": "choose",
+      "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "選擇",
+      "interaction": {
+        "object": {
+          "x": 0.535,
+          "y": 0.48
+        },
+        "label": {
+          "x": 0.465,
+          "y": 0.32
+        }
+      }
+    },
+    {
+      "word": "point",
+      "entryGuid": "db168ec2-5704-55ac-905a-1d51ffec07f2",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "指向",
+      "interaction": {
+        "object": {
+          "x": 0.536,
+          "y": 0.334
+        },
+        "label": {
+          "x": 0.557,
+          "y": 0.365
+        }
+      }
+    },
+    {
+      "word": "order",
+      "entryGuid": "82eab39c-2f5e-5408-a0b0-a62721cc13c0",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "點餐",
+      "interaction": {
+        "object": {
+          "x": 0.596,
+          "y": 0.513
+        },
+        "label": {
+          "x": 0.635,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "word": "receive",
+      "entryGuid": "ae6b0ef4-d37b-580a-ba03-906abedd6bf2",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "領取（餐點）",
+      "interaction": {
+        "object": {
+          "x": 0.287,
+          "y": 0.377
+        },
+        "label": {
+          "x": 0.34,
+          "y": 0.195
+        }
+      }
+    },
+    {
+      "word": "carry",
+      "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "端著；攜帶",
+      "interaction": {
+        "object": {
+          "x": 0.047,
+          "y": 0.433
+        },
+        "label": {
+          "x": 0.063,
+          "y": 0.195
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "The children are ready to order food and choose their meals. They point to pictures of a hamburger and a cheeseburger. One picture shows a Big Mac with an extra bun in the middle. Other pictures show a chicken burger and a fish burger. They choose a Happy Meal with chicken nuggets and a small serving of French fries. The fries are hot, and a golden hash brown looks crispy. For a drink, one child chooses milk and the other chooses orange juice. The adult chooses a cold soft drink with ice. The children also look at an apple pie and an ice cream cone. A sundae has sweet sauce on top. The adult is ready to receive the food from the cashier. Nearby, other customers carry trays away from the counter.",
+    "textZh": "小朋友準備好點餐，選擇自己的餐點。他們指著漢堡和起司漢堡的圖片。一張圖片上有一個中間多一層麵包的大麥克。其他圖片上有雞肉漢堡和魚肉漢堡。他們選了一份有雞塊和小份薯條的快樂兒童餐。薯條是熱的，金黃色的薯餅看起來很酥脆。飲料方面，一位小朋友選牛奶，另一位選柳橙汁。大人選了一杯加冰的冰汽水。小朋友也看看蘋果派和蛋捲冰淇淋。聖代上面淋著甜甜的醬。大人準備從收銀員手中領取餐點。附近，其他顧客端著托盤離開櫃檯。",
+    "sentences": [
+      {
+        "id": "s1",
+        "en": "The children are ready to order food and choose their meals.",
+        "zh": "小朋友準備好點餐，選擇自己的餐點。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "children",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 4,
+            "end": 12
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 17,
+            "end": 22
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 23,
+            "end": 25
+          },
+          {
+            "surface": "order",
+            "word": "order",
+            "entryGuid": "82eab39c-2f5e-5408-a0b0-a62721cc13c0",
+            "isTarget": true,
+            "start": 26,
+            "end": 31
+          },
+          {
+            "surface": "food",
+            "word": "food",
+            "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+            "isTarget": false,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "surface": "choose",
+            "word": "choose",
+            "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+            "isTarget": true,
+            "start": 41,
+            "end": 47
+          },
+          {
+            "surface": "their",
+            "word": "their",
+            "entryGuid": "2c8aba5a-9617-5580-a4ef-c45fa27151b0",
+            "isTarget": false,
+            "start": 48,
+            "end": 53
+          },
+          {
+            "surface": "meals",
+            "word": "meal",
+            "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+            "isTarget": false,
+            "start": 54,
+            "end": 59
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "en": "They point to pictures of a hamburger and a cheeseburger.",
+        "zh": "他們指著漢堡和起司漢堡的圖片。",
+        "wordLinks": [
+          {
+            "surface": "They",
+            "word": "they",
+            "entryGuid": "8c62033e-5414-5b02-b128-ced14982fa67",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "point",
+            "word": "point",
+            "entryGuid": "db168ec2-5704-55ac-905a-1d51ffec07f2",
+            "isTarget": true,
+            "start": 5,
+            "end": 10
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 11,
+            "end": 13
+          },
+          {
+            "surface": "pictures",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": false,
+            "start": 14,
+            "end": 22
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 23,
+            "end": 25
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 26,
+            "end": 27
+          },
+          {
+            "surface": "hamburger",
+            "word": "hamburger",
+            "entryGuid": "153f4185-cc1d-550f-8522-534fef25256d",
+            "isTarget": true,
+            "start": 28,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 42,
+            "end": 43
+          },
+          {
+            "surface": "cheeseburger",
+            "word": "Cheeseburger",
+            "entryGuid": "9460f908-8416-5250-bb62-6b31972bce2e",
+            "isTarget": true,
+            "start": 44,
+            "end": 56
+          }
+        ]
+      },
+      {
+        "id": "s3",
+        "en": "One picture shows a Big Mac with an extra bun in the middle.",
+        "zh": "一張圖片上有一個中間多一層麵包的大麥克。",
+        "wordLinks": [
+          {
+            "surface": "One",
+            "word": "one",
+            "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "picture",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": false,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 18,
+            "end": 19
+          },
+          {
+            "surface": "Big Mac",
+            "word": "Big Mac",
+            "entryGuid": "7be495ca-e5db-5aed-bd99-30bf6397ce9e",
+            "isTarget": true,
+            "start": 20,
+            "end": 27
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "extra",
+            "word": "extra",
+            "entryGuid": "f56db0c7-decf-5033-8675-2a0f4d0e752d",
+            "isTarget": false,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "bun",
+            "word": "bun",
+            "entryGuid": "10fb5632-055d-5f9e-8fd4-30325ea537f9",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 46,
+            "end": 48
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 49,
+            "end": 52
+          },
+          {
+            "surface": "middle",
+            "word": "middle",
+            "entryGuid": "b2d76693-0769-590f-9375-b55acf7d1639",
+            "isTarget": false,
+            "start": 53,
+            "end": 59
+          }
+        ]
+      },
+      {
+        "id": "s4",
+        "en": "Other pictures show a chicken burger and a fish burger.",
+        "zh": "其他圖片上有雞肉漢堡和魚肉漢堡。",
+        "wordLinks": [
+          {
+            "surface": "Other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "pictures",
+            "word": "picture",
+            "entryGuid": "b1756728-0706-5f0a-a193-c28fc67c636b",
+            "isTarget": false,
+            "start": 6,
+            "end": 14
+          },
+          {
+            "surface": "show",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 20,
+            "end": 21
+          },
+          {
+            "surface": "chicken burger",
+            "word": "Chicken Burger",
+            "entryGuid": "12fe2281-38e1-52c3-946c-79bf8a607c02",
+            "isTarget": true,
+            "start": 22,
+            "end": 36
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 41,
+            "end": 42
+          },
+          {
+            "surface": "fish burger",
+            "word": "Fish Burger",
+            "entryGuid": "8731add9-6029-54a4-8c91-6b747f93f667",
+            "isTarget": true,
+            "start": 43,
+            "end": 54
+          }
+        ]
+      },
+      {
+        "id": "s5",
+        "en": "They choose a Happy Meal with chicken nuggets and a small serving of French fries.",
+        "zh": "他們選了一份有雞塊和小份薯條的快樂兒童餐。",
+        "wordLinks": [
+          {
+            "surface": "They",
+            "word": "they",
+            "entryGuid": "8c62033e-5414-5b02-b128-ced14982fa67",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "choose",
+            "word": "choose",
+            "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+            "isTarget": true,
+            "start": 5,
+            "end": 11
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 12,
+            "end": 13
+          },
+          {
+            "surface": "Happy Meal",
+            "word": "Happy Meal",
+            "entryGuid": "b095635a-83d8-5948-9056-e721dc38e986",
+            "isTarget": true,
+            "start": 14,
+            "end": 24
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 25,
+            "end": 29
+          },
+          {
+            "surface": "chicken nuggets",
+            "word": "Chicken Nuggets",
+            "entryGuid": "833a9ad9-2097-5139-b738-547ca41e8463",
+            "isTarget": true,
+            "start": 30,
+            "end": 45
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 50,
+            "end": 51
+          },
+          {
+            "surface": "small",
+            "word": "small",
+            "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+            "isTarget": true,
+            "start": 52,
+            "end": 57
+          },
+          {
+            "surface": "serving",
+            "word": "serving",
+            "entryGuid": "fb41718d-6964-5a27-b884-ed0670173d44",
+            "isTarget": false,
+            "start": 58,
+            "end": 65
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 66,
+            "end": 68
+          },
+          {
+            "surface": "French fries",
+            "word": "French fries",
+            "entryGuid": "625ee007-f822-59a9-b652-7564b110d4bf",
+            "isTarget": true,
+            "start": 69,
+            "end": 81
+          }
+        ]
+      },
+      {
+        "id": "s6",
+        "en": "The fries are hot, and a golden hash brown looks crispy.",
+        "zh": "薯條是熱的，金黃色的薯餅看起來很酥脆。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "fries",
+            "word": "fries",
+            "entryGuid": "9c9a9642-8845-535d-9d5b-688c847258bb",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 10,
+            "end": 13
+          },
+          {
+            "surface": "hot",
+            "word": "hot",
+            "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+            "isTarget": true,
+            "start": 14,
+            "end": 17
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 23,
+            "end": 24
+          },
+          {
+            "surface": "golden",
+            "word": "golden",
+            "entryGuid": "cb046839-1fbc-5eab-9aa8-57aae6ed31cf",
+            "isTarget": false,
+            "start": 25,
+            "end": 31
+          },
+          {
+            "surface": "hash brown",
+            "word": "Hash Brown",
+            "entryGuid": "49988d44-96ab-5742-9d57-7c2dca7f20e4",
+            "isTarget": true,
+            "start": 32,
+            "end": 42
+          },
+          {
+            "surface": "looks",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 43,
+            "end": 48
+          },
+          {
+            "surface": "crispy",
+            "word": "crispy",
+            "entryGuid": "972af8de-7b4c-5125-b8ce-c3b147970bdd",
+            "isTarget": true,
+            "start": 49,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "id": "s7",
+        "en": "For a drink, one child chooses milk and the other chooses orange juice.",
+        "zh": "飲料方面，一位小朋友選牛奶，另一位選柳橙汁。",
+        "wordLinks": [
+          {
+            "surface": "For",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "surface": "drink",
+            "word": "drink",
+            "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+            "isTarget": false,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "surface": "one",
+            "word": "one",
+            "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 17,
+            "end": 22
+          },
+          {
+            "surface": "chooses",
+            "word": "choose",
+            "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+            "isTarget": true,
+            "start": 23,
+            "end": 30
+          },
+          {
+            "surface": "milk",
+            "word": "milk",
+            "entryGuid": "347f1643-7bf0-52ea-bfd7-be478631e73e",
+            "isTarget": true,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 36,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 44,
+            "end": 49
+          },
+          {
+            "surface": "chooses",
+            "word": "choose",
+            "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+            "isTarget": true,
+            "start": 50,
+            "end": 57
+          },
+          {
+            "surface": "orange juice",
+            "word": "Orange Juice",
+            "entryGuid": "6567ccd3-2a17-54c8-a90d-b9701574e406",
+            "isTarget": true,
+            "start": 58,
+            "end": 70
+          }
+        ]
+      },
+      {
+        "id": "s8",
+        "en": "The adult chooses a cold soft drink with ice.",
+        "zh": "大人選了一杯加冰的冰汽水。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "adult",
+            "word": "adult",
+            "entryGuid": "e6f35183-2516-5245-97be-54ab4a1fd4a2",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "chooses",
+            "word": "choose",
+            "entryGuid": "cccbf9c0-d91b-5e46-9acc-9b304c3eef48",
+            "isTarget": true,
+            "start": 10,
+            "end": 17
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 18,
+            "end": 19
+          },
+          {
+            "surface": "cold",
+            "word": "cold",
+            "entryGuid": "2a8f34e9-caf2-5b1c-8518-318d2cdf4590",
+            "isTarget": true,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "soft drink",
+            "word": "Soft Drink",
+            "entryGuid": "4b71f758-9c4d-5178-b1ce-671077e674fe",
+            "isTarget": true,
+            "start": 25,
+            "end": 35
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 36,
+            "end": 40
+          },
+          {
+            "surface": "ice",
+            "word": "ice",
+            "entryGuid": "3c8388ca-4b09-5fb9-a679-934fbd579c37",
+            "isTarget": false,
+            "start": 41,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "id": "s9",
+        "en": "The children also look at an apple pie and an ice cream cone.",
+        "zh": "小朋友也看看蘋果派和蛋捲冰淇淋。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "children",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 4,
+            "end": 12
+          },
+          {
+            "surface": "also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "look",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 23,
+            "end": 25
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 26,
+            "end": 28
+          },
+          {
+            "surface": "apple pie",
+            "word": "Apple Pie",
+            "entryGuid": "8fcc03a8-194e-5550-aab8-397b4aa62f1a",
+            "isTarget": true,
+            "start": 29,
+            "end": 38
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 39,
+            "end": 42
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 43,
+            "end": 45
+          },
+          {
+            "surface": "ice cream cone",
+            "word": "Ice Cream Cone",
+            "entryGuid": "8c9fbb43-a84e-5d99-b9c1-5dc6a872c7da",
+            "isTarget": true,
+            "start": 46,
+            "end": 60
+          }
+        ]
+      },
+      {
+        "id": "s10",
+        "en": "A sundae has sweet sauce on top.",
+        "zh": "聖代上面淋著甜甜的醬。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "sundae",
+            "word": "Sundae",
+            "entryGuid": "7b87f992-6dd3-5d41-b681-fe74d07eb5d2",
+            "isTarget": true,
+            "start": 2,
+            "end": 8
+          },
+          {
+            "surface": "has",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 9,
+            "end": 12
+          },
+          {
+            "surface": "sweet",
+            "word": "sweet",
+            "entryGuid": "1c29a1ce-c008-54ab-8ca8-6c9dbda6d953",
+            "isTarget": true,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "sauce",
+            "word": "sauce",
+            "entryGuid": "2cc3bd18-037f-5faf-b550-d62b106af2c9",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "top",
+            "word": "top",
+            "entryGuid": "fb5102c0-6ecd-51e7-a0cb-4c55af29f854",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s11",
+        "en": "The adult is ready to receive the food from the cashier.",
+        "zh": "大人準備從收銀員手中領取餐點。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "adult",
+            "word": "adult",
+            "entryGuid": "e6f35183-2516-5245-97be-54ab4a1fd4a2",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "ready",
+            "word": "ready",
+            "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+            "isTarget": false,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 19,
+            "end": 21
+          },
+          {
+            "surface": "receive",
+            "word": "receive",
+            "entryGuid": "ae6b0ef4-d37b-580a-ba03-906abedd6bf2",
+            "isTarget": true,
+            "start": 22,
+            "end": 29
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 30,
+            "end": 33
+          },
+          {
+            "surface": "food",
+            "word": "food",
+            "entryGuid": "8653843a-4dbf-5862-acaa-8b4f259bf05d",
+            "isTarget": false,
+            "start": 34,
+            "end": 38
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 39,
+            "end": 43
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 44,
+            "end": 47
+          },
+          {
+            "surface": "cashier",
+            "word": "cashier",
+            "entryGuid": "b729adf6-5166-55aa-b0b3-2be80ae34de1",
+            "isTarget": false,
+            "start": 48,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "id": "s12",
+        "en": "Nearby, other customers carry trays away from the counter.",
+        "zh": "附近，其他顧客端著托盤離開櫃檯。",
+        "wordLinks": [
+          {
+            "surface": "Nearby",
+            "word": "nearby",
+            "entryGuid": "1d83ac72-ccfd-5575-b47a-d3643c2d512a",
+            "isTarget": false,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "other",
+            "word": "other",
+            "entryGuid": "d066f7fa-a397-5c48-9a00-ff2682caab02",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "customers",
+            "word": "customer",
+            "entryGuid": "161ac71e-acdd-5392-940f-1db1f1151186",
+            "isTarget": false,
+            "start": 14,
+            "end": 23
+          },
+          {
+            "surface": "carry",
+            "word": "carry",
+            "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+            "isTarget": true,
+            "start": 24,
+            "end": 29
+          },
+          {
+            "surface": "trays",
+            "word": "tray",
+            "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+            "isTarget": false,
+            "start": 30,
+            "end": 35
+          },
+          {
+            "surface": "away",
+            "word": "away",
+            "entryGuid": "a38097b1-254e-5fb3-bbb6-f13f307443b5",
+            "isTarget": false,
+            "start": 36,
+            "end": 40
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 41,
+            "end": 45
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "counter",
+            "word": "counter",
+            "entryGuid": "f020a23d-7efe-5a09-bc8d-b4d0865beada",
+            "isTarget": false,
+            "start": 50,
+            "end": 57
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s6"
+    ]
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "generated-visually-reviewed",
+      "method": "Codex imagegen skill / built-in image_gen",
+      "promptPath": "output/imagegen/mcdonalds-order-food-r1/prompt.txt",
+      "editPromptPath": "output/imagegen/mcdonalds-order-food-r1/edit-prompt-v2.txt"
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "voice": "Serena",
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "status": "generated-awaiting-listening-review",
+      "scope": "current-targets-only",
+      "generated": 105,
+      "reusedValid": 76,
+      "manifestPath": "data/scenario-wordbank-audio/mcdonalds-order-food-r1/manifest.json"
+    }
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/mcdonalds-restaurant-tour-r1/base-v1.png",
+      "sha256": "26e68b4dc1312adaefce113461b8b263e7c3817bcb755d52f1205e7a75aeaca3",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "baseImage": {
+      "path": "output/imagegen/mcdonalds-order-food-r1/base-v2.png",
+      "sha256": "2cb1ae9920dec36a0c63f8451f5f1c2e9979ae4f8c362a46bf36041dfc73547c",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/mcdonalds-restaurant/scenarios/mcdonalds-order-food/r1/09eeb3d17582e855/story-8f47d56bd533da4a.mp3",
+      "sha256": "28f6f6ed60fa0771728c1328bae36f7fe06c5f6dfee5d8a63a5664cb54f096e3",
+      "language": "en",
+      "textSha256": "8f47d56bd533da4aa146929aa0cd2d47ccc5c4c2cd12d914a5db812dc6208d10",
+      "durationSeconds": 63.648,
+      "bytes": 1018412,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  }
+}

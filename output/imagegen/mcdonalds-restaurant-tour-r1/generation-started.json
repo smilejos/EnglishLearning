@@ -1,0 +1,9 @@
+{
+  "scenarioKey": "mcdonalds-restaurant-tour",
+  "revision": 1,
+  "tool": "Codex imagegen skill / built-in image_gen",
+  "status": "started",
+  "startedAt": "2026-10-11T15:57:11.910126+00:00",
+  "authorization": "使用者已授權開始產生，並指定Codex SKILL圖片",
+  "targetCount": 29
+}

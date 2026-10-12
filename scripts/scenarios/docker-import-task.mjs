@@ -7,6 +7,7 @@ import {createPool, ScenarioContentSchema, WordbankAudioManifestSchema, Wordbank
   wordbankTextHash} from '@el/shared';
 import {validateScenarioPackage} from '../check-scenario-package.mjs';
 import {parseOptions, safeFile, hash, assertManifestScope, assertRevisionBaseline, exclusiveCopy} from './import-safety.mjs';
+import {scenarioContentInput, assertScenarioEntryReferences} from './docker-import-validation.mjs';
 
 const ROOT = '/app';
 const roots = {imageDir: '/data/images', audioDir: '/data/audio'};
@@ -26,7 +27,7 @@ async function main() {
   const baseline = options.baseline ? JSON.parse(await readFile(await safeFile(ROOT, options.baseline), 'utf8')) : null;
   const check = await validateScenarioPackage(pkg, {repoRoot: ROOT});
   if (!check.valid || !check.publishReady) throw Error('套件未通過完整離線預檢，停止此場操作');
-  const content = ScenarioContentSchema.parse(Object.fromEntries(['schemaVersion', 'scenarioKey', 'revision', 'titleZh', 'vocabularyFilter', 'targetCount', 'targets', 'story'].map(k => [k, pkg[k]])));
+  const content = ScenarioContentSchema.parse(scenarioContentInput(pkg));
   let manifest;
   let manifestRoot;
   if (options.manifest) {
@@ -57,15 +58,7 @@ async function main() {
       if (!migrations.some(m => m.name === '1791504000000_scenarios')) throw Error('情境 migration ledger 缺少必要紀錄；先唯讀查明，不自動套用');
       const refs = [...content.targets, ...content.story.sentences.flatMap(s => s.wordLinks)];
       entries = (await client.query('SELECT guid, source_id AS id, word, parts_of_speech, definition, explains, examples, level, category, scenario FROM wordbank_entries WHERE guid=ANY($1::uuid[])', [[...new Set(refs.map(r => r.entryGuid))]])).rows.map(r => WordbankEntrySchema.parse(r));
-      const byGuid = new Map(entries.map(e => [e.guid, e]));
-      for (const ref of refs) {
-        const entry = byGuid.get(ref.entryGuid);
-        if (!entry || entry.word !== ref.word || !content.vocabularyFilter.levels.includes(entry.level.list)) throw Error(`正式字庫 GUID／單字／分級不符：${ref.word}`);
-      }
-      for (const target of content.targets) {
-        const entry = byGuid.get(target.entryGuid);
-        if (entry.level.list !== target.list || !entry.parts_of_speech.includes(target.teachingPos)) throw Error(`正式目標字詞詞性／級別不符：${target.word}`);
-      }
+      assertScenarioEntryReferences(content, entries);
       if (manifest) validateWordbankAudioManifest(manifest, entries);
       audios = (await client.query('SELECT * FROM wordbank_audio WHERE entry_guid=ANY($1::uuid[])', [content.targets.map(t => t.entryGuid)])).rows;
       revisions = (await client.query('SELECT * FROM scenario_revisions WHERE scenario_key=$1 ORDER BY revision', [content.scenarioKey])).rows;
