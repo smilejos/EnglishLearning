@@ -16,15 +16,41 @@ afterAll(async () => { await pool.end(); });
 beforeEach(async () => { await pool.query("TRUNCATE wordbank_entries CASCADE"); });
 
 describe("字庫 repo", () => {
-  it("完整 9203 字匯入／重匯演練，所有欄位 round-trip 相同且不遺失缺文字詞條", async () => {
+  it("完整 9208 字匯入／重匯演練，所有欄位 round-trip 相同且不遺失缺文字詞條", async () => {
     const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8")));
-    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 9203, existing: 0 });
+    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 9208, existing: 0 });
     expect(await listWordbankEntries(pool)).toEqual(source);
-    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 0, existing: 9203 });
+    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 0, existing: 9208 });
     const persisted = await listWordbankEntries(pool);
     expect(persisted).toEqual(source);
     expect(persisted.filter((entry) => entry.level.list === "basic")).toHaveLength(1193);
   }, 30000);
+
+  it("自然發音增量新增五詞並只補八個例句，重匯不改舊詞、原形或 null 分級", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../docs/phonics/preparation/short-vowels/wordbank-additions.json", import.meta.url), "utf8")));
+    const originalForms = source.filter(({ word }) => ["sit", "run", "man", "feed"].includes(word));
+    expect(originalForms).toHaveLength(4);
+    const existingDeltas = delta.filter(({ id }) => id <= 9212);
+    const initial = new Map(originalForms.map((entry) => [entry.guid, entry]));
+    for (const incoming of existingDeltas) {
+      const current = source.find(({ guid }) => guid === incoming.guid)!;
+      const newExampleGuids = new Set(incoming.examples.map(({ guid }) => guid));
+      initial.set(current.guid, { ...current, examples: current.examples.filter(({ guid }) => !newExampleGuids.has(guid)) });
+    }
+    await importWordbankEntries(pool, [...initial.values()]);
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 5, existing: 8 });
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 0, existing: 13 });
+    for (const incoming of delta) {
+      const expected = source.find(({ guid }) => guid === incoming.guid)!;
+      expect(await getWordbankEntry(pool, incoming.guid)).toEqual(expected);
+      if (incoming.id >= 9213) expect(expected.level).toEqual({ cefr: null, tw_7000: null, list: null });
+    }
+    for (const original of originalForms) {
+      expect(await getWordbankEntry(pool, original.guid)).toEqual(original);
+    }
+    expect(await listWordbankEntries(pool)).toHaveLength(initial.size + 5);
+  });
 
   it("完整保存原欄位、重匯不加重複資料或覆蓋後補定義", async () => {
     expect(await importWordbankEntries(pool, [first])).toEqual({ inserted: 1, existing: 0 });

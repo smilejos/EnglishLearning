@@ -1,11 +1,18 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { claimAudio, releaseAudio } from "./lib/audioBus";
 import { NextIcon, PauseIcon, PrevIcon, RepeatIcon, SoundIcon } from "./icons";
-import { phonicsAudioPath, shortAFamilies, shortAIntroductionWords, shortAQuestions, shortASentences, studyWords, type PhonicsQuestion } from "./phonicsLesson";
+import { getPhonicsLesson, lessonWords, phonicsAudioPath, phonicsLessons, type PhonicsLesson, type PhonicsQuestion } from "./phonicsLesson";
 import "./PhonicsLearning.css";
 
+const LessonContext = createContext<PhonicsLesson | null>(null);
+function useLesson() {
+  const lesson = useContext(LessonContext);
+  if (!lesson) throw new Error("自然發音教材尚未選取");
+  return lesson;
+}
+
 /** 播放票號避免舊 play promise／媒體事件覆蓋新的播放狀態。 */
-function usePhonicsAudio() {
+function usePhonicsAudio(lessonId: string) {
   const audio = useRef<HTMLAudioElement | null>(null);
   const ticket = useRef(0);
   const nextTrack = useRef<number | null>(null);
@@ -39,7 +46,7 @@ function usePhonicsAudio() {
     const startTrack = async (index: number): Promise<void> => {
       if (ticket.current !== ownTicket) return;
       nextTrack.current = null;
-      const current = new Audio(phonicsAudioPath(keys[index]));
+      const current = new Audio(phonicsAudioPath(keys[index], lessonId));
       current.playbackRate = rate;
       audio.current = current;
       onTrack?.(index);
@@ -87,9 +94,9 @@ function AudioButton({ player, audioKey, label, slow = false, primary = false }:
   </button>;
 }
 
-const wordsByKey = new Map(studyWords.map((entry) => [entry.word.toLowerCase(), entry]));
 function MarkedWord({ word }: { word: string }) {
-  const ranges = wordsByKey.get(word.toLowerCase())?.targetRanges ?? [];
+  const lesson = useLesson();
+  const ranges = lessonWords(lesson).find((entry) => entry.word.toLowerCase() === word.toLowerCase())?.targetRanges ?? [];
   return <span lang="en">{word.split("").map((letter, index) =>
     ranges.some(({ start, end }) => index >= start && index < end)
       ? <em key={index}>{letter}</em> : <span key={index}>{letter}</span>)}
@@ -141,63 +148,73 @@ function PhonicsOverview() {
       <div className="phonics-title-line"><h1>自然發音</h1><span className="phonics-preview-label">教材試作</span></div>
       <p>認識字母與聲音的關係，一步一步，自己讀出單字。</p>
     </header>
-    <section className="phonics-course" aria-labelledby="short-a-title">
-      <div className="phonics-course-copy">
-        <h2 id="short-a-title">短母音 <span lang="en">a</span></h2>
-        <p className="phonics-course-lead">從 <MarkedWord word="cat" /> 開始，<br />聽見單字中間的聲音。</p>
-        <p className="phonics-course-description">從 <span lang="en">-at、-an、-ap</span> 三個字族，聽出相同的字尾，練習把每個音連起來讀。</p>
-        <div className="phonics-course-facts"><span>{shortAFamilies.length} 個字族・{studyWords.length} 個單字</span><span>{shortAQuestions.length} 題練習</span><span>{shortASentences.length} 個短句</span></div>
-        <a className="btn btn--primary phonics-start" href="#/phonics/short-a">開始這一課 <NextIcon size={17} /></a>
-      </div>
-      <div className="phonics-course-art"><span className="phonics-art-letter" lang="en" aria-hidden="true">a</span><CatOnMat /></div>
-    </section>
+    <p className="phonics-instruction">依 a、e、i、o、u 的順序學習；每課先聽聲音，再拼讀同一字族的單字。</p>
+    <div className="phonics-course-list">{phonicsLessons.map((lesson) => <LessonContext.Provider key={lesson.id} value={lesson}>
+      <section className="phonics-course" aria-labelledby={`${lesson.id}-title`}>
+        <div className="phonics-course-copy">
+          <h2 id={`${lesson.id}-title`}>短母音 <span lang="en">{lesson.vowel}</span><span className="phonics-course-sound" lang="en">{lesson.sound}</span></h2>
+          <p className="phonics-course-lead">從 <MarkedWord word={lesson.introductionWords[0].word} /> 開始，<br />聽見單字中間的聲音。</p>
+          <p className="phonics-course-description">{lesson.description}</p>
+          <div className="phonics-course-facts"><span>{lesson.families.length} 個字族・{lessonWords(lesson).length} 個單字</span><span>{lesson.questions.length} 題練習</span><span>{lesson.sentences.length} 個短句</span></div>
+          <a className="btn btn--primary phonics-start" href={`#/phonics/${lesson.id}`} aria-label={`開始短母音 ${lesson.vowel} 這一課`}>開始這一課 <NextIcon size={17} /></a>
+        </div>
+        <div className="phonics-course-art">{lesson.id === "short-a" ? <><span className="phonics-art-letter" lang="en" aria-hidden="true">a</span><CatOnMat /></> : <LetterIllustration lesson={lesson} />}</div>
+      </section>
+    </LessonContext.Provider>)}</div>
     <section className="phonics-course-plan" aria-labelledby="phonics-plan-title">
       <h2 id="phonics-plan-title">這一課，怎麼學？</h2>
-      <ol><li><span>01</span><div><strong>認識聲音</strong><p>聽聽 a 在單字中的發音。</p></div></li>
+      <ol><li><span>01</span><div><strong>認識聲音</strong><p>聽聽母音在單字中的發音。</p></div></li>
         <li><span>02</span><div><strong>看字拼讀</strong><p>選一個字族，換個字首讀讀看。</p></div></li>
-        <li><span>03</span><div><strong>動手練習</strong><p>混合三個字族，聽音選字與拼字。</p></div></li>
+        <li><span>03</span><div><strong>動手練習</strong><p>比較本課字族，聽音選字與拼字。</p></div></li>
         <li><span>04</span><div><strong>讀個短句</strong><p>把剛學的單字放進句子裡。</p></div></li></ol>
     </section>
-    <p className="phonics-footnote">本版提供短母音 a 試學，練習紀錄只保留在本輪。</p>
+    <p className="phonics-footnote">本版提供五個短母音課程，練習紀錄只保留在本輪。</p>
   </main>;
 }
 
+function LetterIllustration({ lesson }: { lesson: PhonicsLesson }) {
+  return <div className="phonics-letter-illustration" aria-hidden="true"><span lang="en">{lesson.vowel}</span><span lang="en">{lesson.sound}</span></div>;
+}
+
 function SoundIntroduction({ player }: { player: Player }) {
-  const [example, setExample] = useState("cat");
+  const lesson = useLesson();
+  const [example, setExample] = useState(lesson.introductionWords[0].word);
   return <section className="phonics-introduction" aria-labelledby="phonics-sound-title">
     <div className="phonics-intro-main">
-      <h2 id="phonics-sound-title">聽聽 a 在單字裡的聲音</h2>
-      <p className="phonics-instruction">先聽，再跟著讀。留意中間的 <span lang="en">a</span>。</p>
-      <div className="phonics-sound-display"><span className="phonics-big-letter" lang="en">a</span><span className="phonics-ipa">短母音 <span lang="en">/æ/</span></span></div>
+      <h2 id="phonics-sound-title">聽聽 {lesson.vowel} 在單字裡的聲音</h2>
+      <p className="phonics-instruction">{lesson.introductionText}</p>
+      <div className="phonics-sound-display"><span className="phonics-big-letter" lang="en">{lesson.vowel}</span><span className="phonics-ipa">短母音 <span lang="en">{lesson.sound}</span></span></div>
       <AudioButton player={player} audioKey={example} label="聽單字示範" primary />
-      <div className="phonics-example-words" aria-label="選擇示範單字">{shortAIntroductionWords.map(({ word }) =>
+      <div className="phonics-example-words" aria-label="選擇示範單字">{lesson.introductionWords.map(({ word }) =>
         <button key={word} aria-pressed={word === example} onClick={() => { setExample(word); void player.play(word); }}>
           <MarkedWord word={word} /><SoundIcon size={15} />
         </button>)}</div>
     </div>
-    <aside className="phonics-intro-aside"><CatOnMat /><div className="phonics-teaching-note"><h3>把注意力放在中間</h3>
-      <p>{shortAIntroductionWords.map(({ word }, i) => <span key={word}>{i > 0 && "、"}<MarkedWord word={word} /></span>)} 中間的 a，都有這一課要學的聲音。</p>
-      <p>這裡播放完整單字。聽完後，試著自己讀一次。</p></div></aside>
+    <aside className="phonics-intro-aside">{lesson.id === "short-a" ? <CatOnMat /> : <LetterIllustration lesson={lesson} />}<div className="phonics-teaching-note"><h3>把注意力放在中間</h3>
+      <p>{lesson.introductionWords.map(({ word }, i) => <span key={word}>{i > 0 && "、"}<MarkedWord word={word} /></span>)} 中間的 {lesson.vowel}，都有這一課要學的聲音。</p>
+      <p>這裡播放完整單字。聽完後，試著自己讀一次。</p><p>{lesson.pronunciationNote}</p><p>先備：{lesson.prerequisites.join("；")}</p></div></aside>
   </section>;
 }
 
 function WordBlending({ player }: { player: Player }) {
-  const [familyId, setFamilyId] = useState(shortAFamilies[0].id);
+  const lesson = useLesson();
+  const [familyId, setFamilyId] = useState(lesson.families[0]?.id ?? "");
   const [index, setIndex] = useState(0);
-  const family = shortAFamilies.find(({ id }) => id === familyId) ?? shortAFamilies[0];
-  const words = family.words;
+  const family = lesson.families.find(({ id }) => id === familyId) ?? lesson.families[0];
+  const words = family?.words ?? [];
   const entry = words[index];
   const chooseFamily = (id: string) => {
     player.stop(); setFamilyId(id); setIndex(0);
   };
   return <section className="phonics-blending" aria-labelledby="phonics-blend-title">
     <h2 id="phonics-blend-title">看字形，試著連起來讀</h2>
-    <p className="phonics-instruction">先選一個字族，聽聽字首怎麼變，再把每個音連起來讀。</p>
-    <div className="phonics-family-picker" role="group" aria-label="選擇字族">{shortAFamilies.map((item) =>
-      <button key={item.id} aria-label={`${item.label} 字族，${item.words.length} 個單字`} aria-pressed={family.id === item.id} onClick={() => chooseFamily(item.id)}>
+    <p className="phonics-instruction">本課拼法：<span lang="en">{lesson.spellingLabel}</span>。先選一個字族，聽聽字首怎麼變，再把每個音連起來讀。</p>
+    <div className="phonics-family-picker" role="group" aria-label="選擇字族">{lesson.families.map((item) =>
+      <button key={item.id} aria-label={`${item.label} 字族，${item.words.length} 個單字`} aria-pressed={family?.id === item.id} onClick={() => chooseFamily(item.id)}>
         <span lang="en">{item.label}</span><span>{item.words.length} 詞</span>
       </button>)}</div>
-    <p className="phonics-family-description"><span lang="en">{family.label}</span> 字族<span aria-hidden="true"> · </span>{family.description}</p>
+    {family && <p className="phonics-family-description"><span lang="en">{family.label}</span> 字族<span aria-hidden="true"> · </span>{family.description}</p>}
+    {entry && family ? <>
     <div className={`phonics-graphemes ${entry.graphemes.length > 3 ? "phonics-graphemes--long" : ""}`} aria-label={`${entry.word} 的 ${entry.graphemes.length} 個字形`}>
       {entry.graphemes.map((grapheme, i) => <div key={`${entry.word}-${i}`}>
         <span className={`phonics-grapheme ${grapheme.kind === "vowel" ? "is-vowel" : ""}`} lang="en">{grapheme.text}</span>
@@ -215,11 +232,13 @@ function WordBlending({ player }: { player: Player }) {
     <div className="phonics-word-picker" aria-label="選擇拼讀單字">{words.map(({ word }, i) =>
       <button key={word} aria-label={`播放單字 ${word}`} aria-pressed={index === i} onClick={() => { setIndex(i); void player.play(word); }}><MarkedWord word={word} /><SoundIcon size={14} /></button>)}</div>
     <p className="phonics-inline-tip">字尾一樣，字首不一樣。仍然要把每個音都讀出來，再連成完整單字。</p>
+    </> : <p className="phonics-instruction" role="status">這個字族還沒有可練習的單字，請選擇其他字族。</p>}
   </section>;
 }
 
 function Practice({ player, onContinue }: { player: Player; onContinue: () => void }) {
-  const [questions, setQuestions] = useState(shortAQuestions);
+  const lesson = useLesson();
+  const [questions, setQuestions] = useState(lesson.questions);
   const [index, setIndex] = useState(0);
   const [selection, setSelection] = useState<string | null>(null);
   const [tiles, setTiles] = useState<number[]>([]);
@@ -261,7 +280,7 @@ function Practice({ player, onContinue }: { player: Player; onContinue: () => vo
         <div className="phonics-missed-words">{missed.map((item) => <button key={item.id} className="btn btn--ghost" onClick={() => void player.play(item.answer.word)}><SoundIcon /><MarkedWord word={item.answer.word} /></button>)}</div>
         <button className="btn btn--primary" onClick={() => restart(missed)}><RepeatIcon size={17} /> 再練這 {missed.length} 題</button></>
         : <p className="phonics-summary-hint">接下來，把這些聲音放進短句裡。</p>}
-      <div className="phonics-summary-actions"><button className="btn btn--ghost" onClick={() => restart(shortAQuestions)}>全部再練一次</button>
+      <div className="phonics-summary-actions"><button className="btn btn--ghost" onClick={() => restart(lesson.questions)}>全部再練一次</button>
         <button className={`btn ${missed.length ? "btn--ghost" : "btn--primary"}`} onClick={onContinue}>讀個短句 <NextIcon size={16} /></button></div>
     </section>;
   }
@@ -308,10 +327,11 @@ function CheckMark() {
 }
 
 function SentenceReading({ player }: { player: Player }) {
+  const lesson = useLesson();
   const [sentence, setSentence] = useState(0);
   const [translation, setTranslation] = useState(false);
   const [completed, setCompleted] = useState(false);
-  const current = shortASentences[sentence];
+  const current = lesson.sentences[sentence];
   return <section className="phonics-reading" aria-labelledby="phonics-reading-title">
     <div className="phonics-reading-copy"><h2 id="phonics-reading-title">換你讀讀這個短句</h2>
       <p className="phonics-instruction">先自己讀，再聽示範。點選重點單字也可以單獨聽。</p>
@@ -326,29 +346,37 @@ function SentenceReading({ player }: { player: Player }) {
         <button className="phonics-text-button" aria-expanded={translation} onClick={() => setTranslation(!translation)}>{translation ? "收起中文" : "看看中文"}</button></div>
       {translation && <p className="phonics-translation">{current.translation}</p>}
       <p className="phonics-inline-tip">{current.supportNote}</p>
-      <div className="phonics-reading-switch"><span>短句 {sentence + 1} / {shortASentences.length}</span><button className="btn btn--ghost" onClick={() => {
-        player.stop(); setSentence((sentence + 1) % shortASentences.length); setTranslation(false); setCompleted(false);
-      }}>{sentence + 1 < shortASentences.length ? "讀下一句" : "回到第一句"}<NextIcon size={15} /></button></div>
+      {!!current.supportWords?.length && <div className="phonics-support-words" aria-label="短句支援詞"><p>先聽這些搭配用詞，再讀短句：</p>{current.supportWords.map((support) => <button className="btn btn--ghost" key={support.word} onClick={() => void player.play(support.audioKey)} aria-label={`聽支援詞 ${support.word}`}><SoundIcon size={16} /><span lang="en">{support.text}</span><span>{support.meaning}</span></button>)}</div>}
+      <div className="phonics-reading-switch"><span>短句 {sentence + 1} / {lesson.sentences.length}</span><button className="btn btn--ghost" onClick={() => {
+        player.stop(); setSentence((sentence + 1) % lesson.sentences.length); setTranslation(false); setCompleted(false);
+      }}>{sentence + 1 < lesson.sentences.length ? "讀下一句" : "回到第一句"}<NextIcon size={15} /></button></div>
       <button className={`btn ${completed ? "btn--ghost" : "btn--primary"}`} onClick={() => { player.stop(); setCompleted(true); }}>
         <CheckMark />{completed ? "已完成一次朗讀" : "我已讀過一次"}</button>
       {completed && <p role="status" className="phonics-reading-done">讀完後可以重聽核對，或回到練習再挑戰一次。</p>}
-    </div>{sentence === 0 ? <CatOnMat /> : <ManOnMat />}
+    </div>{current.illustration === "cat" ? <CatOnMat /> : current.illustration === "man" ? <ManOnMat /> : <LetterIllustration lesson={lesson} />}
   </section>;
 }
 
 const steps = ["認識聲音", "看字拼讀", "動手練習", "讀個短句"];
-export function PhonicsLearning({ lessonOpen }: { lessonOpen: boolean }) {
+export function PhonicsLearning({ lessonOpen, lessonId = "short-a" }: { lessonOpen: boolean; lessonId?: string }) {
+  if (!lessonOpen) return <PhonicsOverview />;
+  const lesson = getPhonicsLesson(lessonId);
+  if (!lesson) return <main className="wrap phonics-page"><h1>找不到這一課</h1><a href="#/phonics">回到教材總覽</a></main>;
+  return <LessonContext.Provider value={lesson}><LessonLearning key={lesson.id} /></LessonContext.Provider>;
+}
+
+function LessonLearning() {
+  const lesson = useLesson();
   const [step, setStep] = useState(0);
-  const player = usePhonicsAudio();
+  const player = usePhonicsAudio(lesson.id);
   const stageHeading = useRef<HTMLDivElement>(null);
   const changeStep = (next: number) => {
     player.stop(); setStep(next);
   };
-  useEffect(() => { if (lessonOpen) stageHeading.current?.focus(); }, [lessonOpen, step]);
-  if (!lessonOpen) return <PhonicsOverview />;
+  useEffect(() => { stageHeading.current?.focus(); }, [step]);
   return <main className="wrap phonics-page phonics-lesson">
     <a className="phonics-back" href="#/phonics"><PrevIcon size={15} /> 自然發音</a>
-    <header className="phonics-lesson-heading"><div><h1>短母音 <span lang="en">a</span></h1><p>聽一聽、讀一讀，把聲音連起來。</p></div>
+    <header className="phonics-lesson-heading"><div><h1>短母音 <span lang="en">{lesson.vowel}</span></h1><p>聽一聽、讀一讀，把聲音連起來。</p></div>
       <span className="phonics-preview-label">教材試作</span></header>
     <nav className="phonics-steps" aria-label="學習階段">{steps.map((label, i) => <button key={label}
       aria-current={step === i ? "step" : undefined} onClick={() => changeStep(i)}><span>{i + 1}</span>{label}</button>)}</nav>

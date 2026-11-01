@@ -1,0 +1,345 @@
+{
+  "entries": [
+    {
+      "id": 9213,
+      "guid": "069db3d4-41ea-5df6-944b-e3a6609e7894",
+      "word": "sat",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "坐；坐下（sit 的過去式與過去分詞）",
+      "explains": [
+        {
+          "guid": "e336410a-eafc-5353-b6d0-a3bdf6568b57",
+          "en": "Sat is the past tense and past participle of sit. It describes being in a sitting position at an earlier time."
+        },
+        {
+          "guid": "f37857ed-ef0a-5c7a-927b-520d6e28d05b",
+          "en": "A person who sat rested with their body supported by a chair, the ground, or another surface."
+        },
+        {
+          "guid": "e6c6afbc-d58f-5f5c-85db-92cc4ef8ec18",
+          "en": "In a sentence about the past, sat can describe a person or an animal sitting down or remaining seated."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "ed866510-9b70-53a0-b2db-48d983fae41b",
+          "en": "A cat sat.",
+          "zh": "一隻貓坐下了。"
+        },
+        {
+          "guid": "495a8957-1822-516c-987d-67bf586bf29f",
+          "en": "A man sat on a mat.",
+          "zh": "一位男子坐在墊子上。"
+        },
+        {
+          "guid": "5fa55f14-0d3d-59d0-9e43-7b2f9f45c41d",
+          "en": "She sat by the window.",
+          "zh": "她坐在窗邊。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Other verbs"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9214,
+      "guid": "36fd6fc8-36ca-5c99-977e-c941b15e5568",
+      "word": "ran",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "跑；奔跑（run 的過去式）",
+      "explains": [
+        {
+          "guid": "08868fd5-1c90-5d1b-8fa0-e300c7d70ad3",
+          "en": "Ran is the past tense of run. It describes moving quickly on foot at an earlier time."
+        },
+        {
+          "guid": "85e8318e-8e7b-52ed-b516-f4c890b70eb5",
+          "en": "A person who ran moved faster than when walking, with both feet briefly leaving the ground between steps."
+        },
+        {
+          "guid": "f35f766a-4f3c-5712-8fb2-45b846737aff",
+          "en": "Use ran for a completed running action in the past. The past participle of run is run, not ran."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d7311d5f-f407-5a2e-a9b7-19f32e8a73e4",
+          "en": "The boy ran to the park.",
+          "zh": "男孩跑到公園。"
+        },
+        {
+          "guid": "fd00f1b3-7477-56f6-b8bd-27ef916e2a0f",
+          "en": "She ran home.",
+          "zh": "她跑回家。"
+        },
+        {
+          "guid": "7beff880-c61c-5a50-ac23-281ae764aef7",
+          "en": "We ran after the bus.",
+          "zh": "我們追著公車跑。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Other verbs"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9215,
+      "guid": "0e1c1d75-59f2-5cf5-b087-622165460e8b",
+      "word": "men",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "男人們；成年男性（man 的複數）",
+      "explains": [
+        {
+          "guid": "c51ec253-0711-53cb-a1f0-06cf2a3e507c",
+          "en": "Men is the plural form of man when the word means an adult male person."
+        },
+        {
+          "guid": "4262349f-08a2-5b04-94bb-9ba303caf82d",
+          "en": "Two or more adult male people can be called men. The singular form is man."
+        },
+        {
+          "guid": "a5092e74-2a1c-5037-90a2-c2706f3a30bd",
+          "en": "This is an irregular plural: the vowel changes from man to men instead of adding an s."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "4cb69189-cf17-59e0-8f61-c359e77e404b",
+          "en": "Two men are waiting outside.",
+          "zh": "兩名男子在外面等候。"
+        },
+        {
+          "guid": "f769e87f-4c2b-5a33-86c9-66d827c6a2da",
+          "en": "The men carried the table.",
+          "zh": "那些男子搬了桌子。"
+        },
+        {
+          "guid": "c32d97bf-6dea-5b04-9db0-09292e64f183",
+          "en": "Three men work in this shop.",
+          "zh": "三名男子在這間店工作。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "People"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9216,
+      "guid": "1b9f1a6e-95b7-5262-a6a9-1edc2509be59",
+      "word": "fed",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "餵食；給食物（feed 的過去式與過去分詞）",
+      "explains": [
+        {
+          "guid": "129103b8-12a3-5ca7-92bc-c2dbd0d31534",
+          "en": "Fed is the past tense and past participle of feed. It can describe giving food to a person or an animal."
+        },
+        {
+          "guid": "8a6bb7bb-5d2c-5dc9-b49a-b2282149a6e4",
+          "en": "If someone fed a pet, that person gave the pet something to eat at an earlier time."
+        },
+        {
+          "guid": "7e3a5ada-2b92-5fe5-b045-d81d4234b8b5",
+          "en": "In a sentence about a completed feeding action, fed tells us that food was given. Its base form is feed."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "16626186-7cf6-56a0-83ef-e3709997038a",
+          "en": "I fed the cat.",
+          "zh": "我餵了貓。"
+        },
+        {
+          "guid": "f5cf788d-e69c-5089-92dc-8af6c7e2404c",
+          "en": "She fed the baby.",
+          "zh": "她餵了寶寶。"
+        },
+        {
+          "guid": "369fcfae-f7bb-56fe-8fc1-c625f18e2b98",
+          "en": "He fed the birds in the garden.",
+          "zh": "他餵了花園裡的鳥。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Other verbs"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 9217,
+      "guid": "044321f5-089b-53c3-a42a-1b90889352bb",
+      "word": "cot",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "簡易床；帆布折疊床（本課採美式用法）",
+      "explains": [
+        {
+          "guid": "5044bb12-3ad6-573e-9456-2307256aaecc",
+          "en": "In American English, a cot is a narrow, simple bed that can often be folded and moved."
+        },
+        {
+          "guid": "05a8871b-a1d1-5fe9-a54c-b5c44681587a",
+          "en": "A cot may have a light frame with fabric stretched across it. People may use one while camping or as an extra bed."
+        },
+        {
+          "guid": "673c22a0-a95b-5b87-b98d-e8088765f4a5",
+          "en": "The word can have a different meaning in British English, where a cot is a bed for a baby. This lesson uses the American meaning."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "68002dd8-a01f-5dd9-a216-310f568a9d00",
+          "en": "We put a cot in the tent.",
+          "zh": "我們在帳篷裡放了一張簡易床。"
+        },
+        {
+          "guid": "2ef63482-b3f7-5cb6-8747-a5100cd00df2",
+          "en": "He slept on a cot.",
+          "zh": "他睡在簡易床上。"
+        },
+        {
+          "guid": "4680515d-0b6b-5736-9bae-1fde34ecf490",
+          "en": "The camp has a cot for each guest.",
+          "zh": "營地為每位住客準備了一張簡易床。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [
+        "Houses & apartments"
+      ],
+      "scenario": []
+    },
+    {
+      "id": 633,
+      "guid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+      "word": "pen",
+      "examples": [
+        {
+          "guid": "27c29950-96ce-5f17-a7e8-14f4734f14da",
+          "en": "Get a red pen.",
+          "zh": "拿一支紅筆。"
+        }
+      ]
+    },
+    {
+      "id": 395,
+      "guid": "950270d3-f38d-5083-a6ff-83355985dd0e",
+      "word": "hen",
+      "examples": [
+        {
+          "guid": "173e6750-ce99-5360-8c5d-d23d342fe625",
+          "en": "The hen is on the bed.",
+          "zh": "母雞在床上。"
+        }
+      ]
+    },
+    {
+      "id": 646,
+      "guid": "0874e50f-bded-5996-9891-f1276eef45b4",
+      "word": "pig",
+      "examples": [
+        {
+          "guid": "0d5d263d-d217-5365-9745-c9ef48d4dc40",
+          "en": "The pig is big.",
+          "zh": "這隻豬很大。"
+        }
+      ]
+    },
+    {
+      "id": 784,
+      "guid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "word": "sit",
+      "examples": [
+        {
+          "guid": "8e80eb6c-e3ee-5db4-a9dc-cc95b2f3f676",
+          "en": "The pig can sit.",
+          "zh": "這隻豬會坐下。"
+        }
+      ]
+    },
+    {
+      "id": 670,
+      "guid": "485c94ec-3d02-5c07-9535-a17426c2bb01",
+      "word": "pot",
+      "examples": [
+        {
+          "guid": "afbd9521-c0fe-5cb9-997f-d14414ed6e83",
+          "en": "The pot is hot.",
+          "zh": "這個鍋子很燙。"
+        }
+      ]
+    },
+    {
+      "id": 1437,
+      "guid": "dfa5acbb-5aff-54d1-9c84-9d65f218f632",
+      "word": "hop",
+      "examples": [
+        {
+          "guid": "07943516-34b5-5b6e-a932-96678faeacbc",
+          "en": "Hop to the top.",
+          "zh": "單腳跳到頂端。"
+        }
+      ]
+    },
+    {
+      "id": 732,
+      "guid": "508738cf-7c4d-531d-9ae1-d27a598e1df9",
+      "word": "run",
+      "examples": [
+        {
+          "guid": "f73a824f-ff5b-527f-9b25-7f3657b7480c",
+          "en": "Run in the sun.",
+          "zh": "在陽光下跑步。"
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "guid": "7fbf0b83-5555-519f-84b4-6a71c7de654c",
+      "word": "bug",
+      "examples": [
+        {
+          "guid": "f49fd27c-1a07-5d47-83cb-c75c1fdd76e4",
+          "en": "The bug is on the rug.",
+          "zh": "小蟲在小地毯上。"
+        }
+      ]
+    }
+  ]
+}

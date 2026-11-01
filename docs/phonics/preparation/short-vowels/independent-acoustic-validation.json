@@ -1,0 +1,50 @@
+[
+  {
+    "lesson": "short-e",
+    "key": "fed",
+    "file": "/Users/jos/Documents/program/Learning/EnglishLearning/web-learner/public/phonics/short-e/fed.mp3",
+    "log": "/tmp/phonics-independent-fed-astats.log",
+    "metrics": [
+      "[Parsed_silencedetect_1 @ 0x77bd01c9c0] silence_start: 0",
+      "[Parsed_astats_0 @ 0x77bd01c900] Peak level dB: -70.542245",
+      "[Parsed_astats_0 @ 0x77bd01c900] RMS level dB: -82.935853",
+      "[Parsed_astats_0 @ 0x77bd01c900] Peak level dB: -70.542245",
+      "[Parsed_astats_0 @ 0x77bd01c900] RMS level dB: -82.935853",
+      "[Parsed_silencedetect_1 @ 0x77bd01c9c0] silence_end: 2.928 | silence_duration: 2.928"
+    ]
+  },
+  {
+    "lesson": "short-o",
+    "key": "hop",
+    "file": "/Users/jos/Documents/program/Learning/EnglishLearning/web-learner/public/phonics/short-o/hop.mp3",
+    "log": "/tmp/phonics-independent-hop-astats.log",
+    "metrics": [
+      "[Parsed_silencedetect_1 @ 0x797703c9c0] silence_start: 0",
+      "[Parsed_silencedetect_1 @ 0x797703c9c0] silence_end: 0.725 | silence_duration: 0.725",
+      "[Parsed_silencedetect_1 @ 0x797703c9c0] silence_start: 1.097833",
+      "[Parsed_astats_0 @ 0x797703c900] Peak level dB: -4.929915",
+      "[Parsed_astats_0 @ 0x797703c900] RMS level dB: -26.123698",
+      "[Parsed_astats_0 @ 0x797703c900] Peak level dB: -4.929915",
+      "[Parsed_astats_0 @ 0x797703c900] RMS level dB: -26.123698",
+      "[Parsed_silencedetect_1 @ 0x797703c9c0] silence_end: 2.064 | silence_duration: 0.966167"
+    ]
+  },
+  {
+    "lesson": "short-e",
+    "key": "pet",
+    "file": "/Users/jos/Documents/program/Learning/EnglishLearning/web-learner/public/phonics/short-e/pet.mp3",
+    "log": "/tmp/phonics-independent-pet-astats.log",
+    "metrics": [
+      "[Parsed_silencedetect_1 @ 0x797ec589c0] silence_start: 0",
+      "[Parsed_silencedetect_1 @ 0x797ec589c0] silence_end: 0.276208 | silence_duration: 0.276208",
+      "[Parsed_silencedetect_1 @ 0x797ec589c0] silence_start: 1.134",
+      "[Parsed_silencedetect_1 @ 0x797ec589c0] silence_end: 1.600458 | silence_duration: 0.466458",
+      "[Parsed_silencedetect_1 @ 0x797ec589c0] silence_start: 3.392417",
+      "[Parsed_astats_0 @ 0x797ec58900] Peak level dB: -14.926882",
+      "[Parsed_astats_0 @ 0x797ec58900] RMS level dB: -30.502845",
+      "[Parsed_astats_0 @ 0x797ec58900] Peak level dB: -14.926882",
+      "[Parsed_astats_0 @ 0x797ec58900] RMS level dB: -30.502845",
+      "[Parsed_silencedetect_1 @ 0x797ec589c0] silence_end: 5.088 | silence_duration: 1.695583"
+    ]
+  }
+]

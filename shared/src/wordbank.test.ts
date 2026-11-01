@@ -17,12 +17,61 @@ describe("字庫匯入契約", () => {
     expect(() => parseWordbankDocument({ entries: [entry, entry] })).toThrow("GUID 重複");
   });
 
-  it("實際來源可完整解析 9203 字，包含 1193 basic 字且保留所有欄位", async () => {
+  it("實際來源可完整解析 9208 字，包含 1193 basic 字且保留所有欄位", async () => {
     const source = JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8"));
     const parsed = parseWordbankDocument(source);
-    expect(parsed).toHaveLength(9203);
+    expect(parsed).toHaveLength(9208);
     expect(parsed.filter((item) => item.level.list === "basic")).toHaveLength(1193);
     expect(parsed).toEqual(source.entries);
+  });
+
+  it("五個自然發音新詞保留獨立 GUID、完整內容及未分級狀態，不取代原形", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const expected = [
+      ["sat", 9213, "069db3d4-41ea-5df6-944b-e3a6609e7894", "sit"],
+      ["ran", 9214, "36fd6fc8-36ca-5c99-977e-c941b15e5568", "run"],
+      ["men", 9215, "0e1c1d75-59f2-5cf5-b087-622165460e8b", "man"],
+      ["fed", 9216, "1b9f1a6e-95b7-5262-a6a9-1edc2509be59", "feed"],
+      ["cot", 9217, "044321f5-089b-53c3-a42a-1b90889352bb", null],
+    ] as const;
+    for (const [word, id, guid, baseWord] of expected) {
+      const matches = source.filter((entry) => entry.word === word);
+      expect(matches).toHaveLength(1);
+      const added = matches[0];
+      expect(added.id).toBe(id);
+      expect(added.guid).toBe(guid);
+      expect(added.level).toEqual({ cefr: null, tw_7000: null, list: null });
+      expect(added.definition.trim().length).toBeGreaterThan(0);
+      expect(added.parts_of_speech.length).toBeGreaterThan(0);
+      expect(added.explains).toHaveLength(3);
+      expect(added.examples).toHaveLength(3);
+      expect(added.examples.every(({ en, zh }) => en.trim() && zh.trim())).toBe(true);
+      if (baseWord) {
+        const original = source.find((entry) => entry.word === baseWord)!;
+        expect(original).toBeDefined();
+        expect(original.guid).not.toBe(added.guid);
+        expect(added.definition).toContain(baseWord);
+      }
+    }
+  });
+
+  it("本批八筆例句增量可重跑，保留既有詞的全部文字、分級與舊例句", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../docs/phonics/preparation/short-vowels/wordbank-additions.json", import.meta.url), "utf8")));
+    const existingDeltas = delta.filter(({ id }) => id <= 9212);
+    expect(existingDeltas).toHaveLength(8);
+    for (const incoming of existingDeltas) {
+      expect(incoming.definition).toBe("");
+      expect(incoming.explains).toEqual([]);
+      expect(incoming.examples).toHaveLength(1);
+      const completed = source.find(({ guid }) => guid === incoming.guid)!;
+      const addedGuids = new Set(incoming.examples.map(({ guid }) => guid));
+      const current = { ...completed, examples: completed.examples.filter(({ guid }) => !addedGuids.has(guid)) };
+      expect(current.examples.length).toBeGreaterThanOrEqual(3);
+      const merged = mergeWordbankEntry(current, incoming);
+      expect(merged).toEqual(completed);
+      expect(mergeWordbankEntry(merged, incoming)).toEqual(completed);
+    }
   });
 
   it("重匯保留既有人工補齊內容、例句 GUID 與情境，並補新內容", () => {

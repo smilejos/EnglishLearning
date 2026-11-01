@@ -1,0 +1,773 @@
+{
+  "version": 1,
+  "note": "支援詞使用自然片語示範，不把 a/the/to 的孤立字母名稱當句中弱讀。音訊尚須盤點；本檔不是既存匯入契約。",
+  "lessons": [
+    {
+      "id": "short-a",
+      "jobs": [
+        {
+          "key": "cat",
+          "kind": "word",
+          "text": "cat"
+        },
+        {
+          "key": "bat",
+          "kind": "word",
+          "text": "bat"
+        },
+        {
+          "key": "hat",
+          "kind": "word",
+          "text": "hat"
+        },
+        {
+          "key": "mat",
+          "kind": "word",
+          "text": "mat"
+        },
+        {
+          "key": "sat",
+          "kind": "word",
+          "text": "sat"
+        },
+        {
+          "key": "can",
+          "kind": "word",
+          "text": "can"
+        },
+        {
+          "key": "fan",
+          "kind": "word",
+          "text": "fan"
+        },
+        {
+          "key": "man",
+          "kind": "word",
+          "text": "man"
+        },
+        {
+          "key": "pan",
+          "kind": "word",
+          "text": "pan"
+        },
+        {
+          "key": "ran",
+          "kind": "word",
+          "text": "ran"
+        },
+        {
+          "key": "cap",
+          "kind": "word",
+          "text": "cap"
+        },
+        {
+          "key": "map",
+          "kind": "word",
+          "text": "map"
+        },
+        {
+          "key": "nap",
+          "kind": "word",
+          "text": "nap"
+        },
+        {
+          "key": "tap",
+          "kind": "word",
+          "text": "tap"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "A cat sat."
+        },
+        {
+          "key": "sentence-family-2",
+          "kind": "sentence",
+          "text": "A man sat on a mat."
+        },
+        {
+          "key": "support-a-cat",
+          "kind": "support",
+          "text": "a cat"
+        },
+        {
+          "key": "support-a-man",
+          "kind": "support",
+          "text": "a man"
+        },
+        {
+          "key": "support-on-a-mat",
+          "kind": "support",
+          "text": "on a mat"
+        }
+      ]
+    },
+    {
+      "id": "short-e",
+      "jobs": [
+        {
+          "key": "hen",
+          "kind": "word",
+          "text": "hen",
+          "meaning": "母雞",
+          "phonemes": [
+            "h",
+            "ɛ",
+            "n"
+          ]
+        },
+        {
+          "key": "pen",
+          "kind": "word",
+          "text": "pen",
+          "meaning": "筆",
+          "phonemes": [
+            "p",
+            "ɛ",
+            "n"
+          ]
+        },
+        {
+          "key": "ten",
+          "kind": "word",
+          "text": "ten",
+          "meaning": "十",
+          "phonemes": [
+            "t",
+            "ɛ",
+            "n"
+          ]
+        },
+        {
+          "key": "men",
+          "kind": "word",
+          "text": "men",
+          "meaning": "男人們（man 的複數）",
+          "phonemes": [
+            "m",
+            "ɛ",
+            "n"
+          ]
+        },
+        {
+          "key": "pet",
+          "kind": "word",
+          "text": "pet",
+          "meaning": "寵物",
+          "phonemes": [
+            "p",
+            "ɛ",
+            "t"
+          ]
+        },
+        {
+          "key": "net",
+          "kind": "word",
+          "text": "net",
+          "meaning": "網子",
+          "phonemes": [
+            "n",
+            "ɛ",
+            "t"
+          ]
+        },
+        {
+          "key": "wet",
+          "kind": "word",
+          "text": "wet",
+          "meaning": "濕的",
+          "phonemes": [
+            "w",
+            "ɛ",
+            "t"
+          ]
+        },
+        {
+          "key": "get",
+          "kind": "word",
+          "text": "get",
+          "meaning": "拿取；取得",
+          "phonemes": [
+            "ɡ",
+            "ɛ",
+            "t"
+          ]
+        },
+        {
+          "key": "bed",
+          "kind": "word",
+          "text": "bed",
+          "meaning": "床",
+          "phonemes": [
+            "b",
+            "ɛ",
+            "d"
+          ]
+        },
+        {
+          "key": "red",
+          "kind": "word",
+          "text": "red",
+          "meaning": "紅色的",
+          "phonemes": [
+            "r",
+            "ɛ",
+            "d"
+          ]
+        },
+        {
+          "key": "fed",
+          "kind": "word",
+          "text": "fed",
+          "meaning": "餵食（feed 的過去式）",
+          "phonemes": [
+            "f",
+            "ɛ",
+            "d"
+          ]
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "Get a red pen.",
+          "wordKeys": [
+            "get",
+            "red",
+            "pen"
+          ]
+        },
+        {
+          "key": "support-a-red-pen",
+          "kind": "support",
+          "text": "a red pen",
+          "supportWord": "a",
+          "meaning": "一個；聽片語中的冠詞弱讀。"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The hen is on the bed.",
+          "wordKeys": [
+            "hen",
+            "bed"
+          ]
+        },
+        {
+          "key": "support-the-hen",
+          "kind": "support",
+          "text": "the hen",
+          "supportWord": "the",
+          "meaning": "這個／那個；聽片語中的弱讀。"
+        },
+        {
+          "key": "support-is-on-the-bed",
+          "kind": "support",
+          "text": "is on the bed",
+          "supportWord": "is",
+          "meaning": "是／在；句中讀 /ɪz/，先跟讀，不考短 i。"
+        },
+        {
+          "key": "support-on-the-bed",
+          "kind": "support",
+          "text": "on the bed",
+          "supportWord": "on",
+          "meaning": "在……上面；先聽示範，不考短 o。"
+        }
+      ]
+    },
+    {
+      "id": "short-i",
+      "jobs": [
+        {
+          "key": "pig",
+          "kind": "word",
+          "text": "pig",
+          "meaning": "豬",
+          "phonemes": [
+            "p",
+            "ɪ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "big",
+          "kind": "word",
+          "text": "big",
+          "meaning": "大的",
+          "phonemes": [
+            "b",
+            "ɪ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "dig",
+          "kind": "word",
+          "text": "dig",
+          "meaning": "挖",
+          "phonemes": [
+            "d",
+            "ɪ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "wig",
+          "kind": "word",
+          "text": "wig",
+          "meaning": "假髮",
+          "phonemes": [
+            "w",
+            "ɪ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "pin",
+          "kind": "word",
+          "text": "pin",
+          "meaning": "別針",
+          "phonemes": [
+            "p",
+            "ɪ",
+            "n"
+          ]
+        },
+        {
+          "key": "fin",
+          "kind": "word",
+          "text": "fin",
+          "meaning": "魚鰭",
+          "phonemes": [
+            "f",
+            "ɪ",
+            "n"
+          ]
+        },
+        {
+          "key": "bin",
+          "kind": "word",
+          "text": "bin",
+          "meaning": "箱子；垃圾桶",
+          "phonemes": [
+            "b",
+            "ɪ",
+            "n"
+          ]
+        },
+        {
+          "key": "tin",
+          "kind": "word",
+          "text": "tin",
+          "meaning": "金屬罐",
+          "phonemes": [
+            "t",
+            "ɪ",
+            "n"
+          ]
+        },
+        {
+          "key": "sit",
+          "kind": "word",
+          "text": "sit",
+          "meaning": "坐",
+          "phonemes": [
+            "s",
+            "ɪ",
+            "t"
+          ]
+        },
+        {
+          "key": "hit",
+          "kind": "word",
+          "text": "hit",
+          "meaning": "打；擊中",
+          "phonemes": [
+            "h",
+            "ɪ",
+            "t"
+          ]
+        },
+        {
+          "key": "fit",
+          "kind": "word",
+          "text": "fit",
+          "meaning": "合身；合適",
+          "phonemes": [
+            "f",
+            "ɪ",
+            "t"
+          ]
+        },
+        {
+          "key": "kit",
+          "kind": "word",
+          "text": "kit",
+          "meaning": "成套工具",
+          "phonemes": [
+            "k",
+            "ɪ",
+            "t"
+          ]
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The pig is big.",
+          "wordKeys": [
+            "pig",
+            "big"
+          ]
+        },
+        {
+          "key": "support-the-pig",
+          "kind": "support",
+          "text": "the pig",
+          "supportWord": "the",
+          "meaning": "這個／那個；聽片語中的弱讀。"
+        },
+        {
+          "key": "support-is-big",
+          "kind": "support",
+          "text": "is big",
+          "supportWord": "is",
+          "meaning": "是；英語用 is 連接主詞與形容詞。"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The pig can sit.",
+          "wordKeys": [
+            "pig",
+            "sit"
+          ]
+        },
+        {
+          "key": "support-can-sit",
+          "kind": "support",
+          "text": "can sit",
+          "supportWord": "can",
+          "meaning": "能夠；這裡不是短 a 課的「罐子」，句中可弱讀。"
+        }
+      ]
+    },
+    {
+      "id": "short-o",
+      "jobs": [
+        {
+          "key": "hop",
+          "kind": "word",
+          "text": "hop",
+          "meaning": "單腳跳",
+          "phonemes": [
+            "h",
+            "ɑ",
+            "p"
+          ]
+        },
+        {
+          "key": "mop",
+          "kind": "word",
+          "text": "mop",
+          "meaning": "拖把",
+          "phonemes": [
+            "m",
+            "ɑ",
+            "p"
+          ]
+        },
+        {
+          "key": "top",
+          "kind": "word",
+          "text": "top",
+          "meaning": "頂端",
+          "phonemes": [
+            "t",
+            "ɑ",
+            "p"
+          ]
+        },
+        {
+          "key": "pop",
+          "kind": "word",
+          "text": "pop",
+          "meaning": "發出啵的一聲",
+          "phonemes": [
+            "p",
+            "ɑ",
+            "p"
+          ]
+        },
+        {
+          "key": "pot",
+          "kind": "word",
+          "text": "pot",
+          "meaning": "鍋子",
+          "phonemes": [
+            "p",
+            "ɑ",
+            "t"
+          ]
+        },
+        {
+          "key": "hot",
+          "kind": "word",
+          "text": "hot",
+          "meaning": "熱的",
+          "phonemes": [
+            "h",
+            "ɑ",
+            "t"
+          ]
+        },
+        {
+          "key": "dot",
+          "kind": "word",
+          "text": "dot",
+          "meaning": "小圓點",
+          "phonemes": [
+            "d",
+            "ɑ",
+            "t"
+          ]
+        },
+        {
+          "key": "cot",
+          "kind": "word",
+          "text": "cot",
+          "meaning": "簡易床",
+          "phonemes": [
+            "k",
+            "ɑ",
+            "t"
+          ]
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The pot is hot.",
+          "wordKeys": [
+            "pot",
+            "hot"
+          ]
+        },
+        {
+          "key": "support-the-pot",
+          "kind": "support",
+          "text": "the pot",
+          "supportWord": "the",
+          "meaning": "這個／那個；聽片語中的弱讀。"
+        },
+        {
+          "key": "support-is-hot",
+          "kind": "support",
+          "text": "is hot",
+          "supportWord": "is",
+          "meaning": "是；英語用 is 連接主詞與形容詞。"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Hop to the top.",
+          "wordKeys": [
+            "hop",
+            "top"
+          ]
+        },
+        {
+          "key": "support-to-the-top",
+          "kind": "support",
+          "text": "to the top",
+          "supportWord": "to",
+          "meaning": "到……；聽片語中的弱讀，不能當作短 o。"
+        },
+        {
+          "key": "support-the-top",
+          "kind": "support",
+          "text": "the top",
+          "supportWord": "the",
+          "meaning": "這個／那個；聽片語中的弱讀。"
+        }
+      ]
+    },
+    {
+      "id": "short-u",
+      "jobs": [
+        {
+          "key": "bug",
+          "kind": "word",
+          "text": "bug",
+          "meaning": "小蟲",
+          "phonemes": [
+            "b",
+            "ʌ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "rug",
+          "kind": "word",
+          "text": "rug",
+          "meaning": "小地毯",
+          "phonemes": [
+            "r",
+            "ʌ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "mug",
+          "kind": "word",
+          "text": "mug",
+          "meaning": "馬克杯",
+          "phonemes": [
+            "m",
+            "ʌ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "hug",
+          "kind": "word",
+          "text": "hug",
+          "meaning": "擁抱",
+          "phonemes": [
+            "h",
+            "ʌ",
+            "ɡ"
+          ]
+        },
+        {
+          "key": "sun",
+          "kind": "word",
+          "text": "sun",
+          "meaning": "太陽",
+          "phonemes": [
+            "s",
+            "ʌ",
+            "n"
+          ]
+        },
+        {
+          "key": "run",
+          "kind": "word",
+          "text": "run",
+          "meaning": "跑",
+          "phonemes": [
+            "r",
+            "ʌ",
+            "n"
+          ]
+        },
+        {
+          "key": "fun",
+          "kind": "word",
+          "text": "fun",
+          "meaning": "樂趣",
+          "phonemes": [
+            "f",
+            "ʌ",
+            "n"
+          ]
+        },
+        {
+          "key": "bun",
+          "kind": "word",
+          "text": "bun",
+          "meaning": "小圓麵包",
+          "phonemes": [
+            "b",
+            "ʌ",
+            "n"
+          ]
+        },
+        {
+          "key": "nut",
+          "kind": "word",
+          "text": "nut",
+          "meaning": "堅果",
+          "phonemes": [
+            "n",
+            "ʌ",
+            "t"
+          ]
+        },
+        {
+          "key": "cut",
+          "kind": "word",
+          "text": "cut",
+          "meaning": "切",
+          "phonemes": [
+            "k",
+            "ʌ",
+            "t"
+          ]
+        },
+        {
+          "key": "hut",
+          "kind": "word",
+          "text": "hut",
+          "meaning": "小屋",
+          "phonemes": [
+            "h",
+            "ʌ",
+            "t"
+          ]
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "Run in the sun.",
+          "wordKeys": [
+            "run",
+            "sun"
+          ]
+        },
+        {
+          "key": "support-in-the-sun",
+          "kind": "support",
+          "text": "in the sun",
+          "supportWord": "in",
+          "meaning": "在……裡／之中；這裡指在陽光下。"
+        },
+        {
+          "key": "support-the-sun",
+          "kind": "support",
+          "text": "the sun",
+          "supportWord": "the",
+          "meaning": "這個／那個；聽片語中的弱讀。"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The bug is on the rug.",
+          "wordKeys": [
+            "bug",
+            "rug"
+          ]
+        },
+        {
+          "key": "support-the-bug",
+          "kind": "support",
+          "text": "the bug",
+          "supportWord": "the",
+          "meaning": "這個／那個；聽片語中的弱讀。"
+        },
+        {
+          "key": "support-is-on-the-rug",
+          "kind": "support",
+          "text": "is on the rug",
+          "supportWord": "is",
+          "meaning": "是／在；句中讀 /ɪz/，不是短 u 示範。"
+        },
+        {
+          "key": "support-on-the-rug",
+          "kind": "support",
+          "text": "on the rug",
+          "supportWord": "on",
+          "meaning": "在……上面；沿用短 o 支援詞讀音。"
+        }
+      ]
+    }
+  ]
+}

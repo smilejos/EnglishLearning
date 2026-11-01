@@ -1,7 +1,7 @@
 import { act, cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { PhonicsLearning } from "./PhonicsLearning";
-import { shortAFamilies, shortAQuestions, studyWords } from "./phonicsLesson";
+import { phonicsLessons, shortAFamilies, shortAQuestions, studyWords } from "./phonicsLesson";
 import { _resetAudioBus, claimAudio } from "./lib/audioBus";
 
 type FakeAudio = {
@@ -47,9 +47,10 @@ function answerQuestion(index: number, correct = true) {
 describe("短母音 a 教材", () => {
   it("總覽提供可直接開啟的課程連結與實際教材範圍", () => {
     render(<PhonicsLearning lessonOpen={false} />);
-    expect(screen.getByRole("link", { name: "開始這一課" }).getAttribute("href")).toBe("#/phonics/short-a");
-    expect(screen.getByText("3 個字族・14 個單字")).toBeTruthy();
-    expect(screen.getByText("8 題練習")).toBeTruthy();
+    expect(screen.getByRole("link", { name: "開始短母音 a 這一課" }).getAttribute("href")).toBe("#/phonics/short-a");
+    const shortACourse = screen.getByRole("link", { name: "開始短母音 a 這一課" }).closest("section")!;
+    expect(within(shortACourse).getByText("3 個字族・14 個單字")).toBeTruthy();
+    expect(screen.getAllByText("8 題練習")).toHaveLength(5);
     expect(audios).toHaveLength(0);
   });
 
@@ -361,4 +362,90 @@ describe("短母音 a 教材", () => {
     fireEvent.click(screen.getByRole("button", { name: "我已讀過一次" }));
     expect(screen.getByRole("status").textContent).toContain("讀完後可以重聽核對");
   });
+});
+
+
+describe("五個短母音課程", () => {
+  it("總覽依教學順序提供五課與實際範圍", () => {
+    render(<PhonicsLearning lessonOpen={false} />);
+    expect(screen.getAllByRole("link", { name: /開始短母音/ }).map((link) => link.getAttribute("href"))).toEqual(
+      ["a", "e", "i", "o", "u"].map((vowel) => `#/phonics/short-${vowel}`),
+    );
+  });
+
+  it.each(["short-e", "short-i", "short-o", "short-u"])("%s 使用本課字族、題目、短句與音訊", async (lessonId) => {
+    const lesson = phonicsLessons.find((item) => item.id === lessonId)!;
+    const { container } = render(<PhonicsLearning lessonOpen lessonId={lessonId} />);
+    expect(screen.getByRole("heading", { name: `短母音 ${lesson.vowel}`, level: 1 })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "聽單字示範" }));
+    await act(async () => {});
+    expect(audios[0].url).toBe(`/phonics/${lessonId}/${lesson.introductionWords[0].word}.mp3`);
+    enterBlending();
+    const firstFamily = lesson.families[0];
+    expect(container.querySelectorAll(".phonics-word-picker button")).toHaveLength(firstFamily.words.length);
+    expect(container.querySelector(".phonics-grapheme.is-vowel")?.textContent).toBe(lesson.vowel);
+    expect(screen.getByRole("button", { name: `播放單字 ${firstFamily.words[0].word}` }).getAttribute("aria-pressed")).toBe("true");
+    fireEvent.click(screen.getByRole("button", { name: `全部播放 ${firstFamily.label} 字族，共 ${firstFamily.words.length} 詞` }));
+    await act(async () => {});
+    expect(audios[1].url).toBe(`/phonics/${lessonId}/${firstFamily.words[0].word}.mp3`);
+    const secondFamily = lesson.families[1];
+    fireEvent.click(screen.getByRole("button", { name: `${secondFamily.label} 字族，${secondFamily.words.length} 個單字` }));
+    expect(audios[1].pause).toHaveBeenCalledOnce();
+    expect(audios).toHaveLength(2);
+    enterPractice();
+    expect(screen.getByText("第 1 / 8 題")).toBeTruthy();
+    expect(screen.queryByText(lesson.questions[0].answer.meaning)).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "播放題目" }));
+    await act(async () => {});
+    expect(audios[2].url).toBe(`/phonics/${lessonId}/${lesson.questions[0].answer.word}.mp3`);
+    for (const [index, question] of lesson.questions.entries()) {
+      if (question.kind === "listen") {
+        fireEvent.click(within(screen.getByRole("group", { name: "單字選項" })).getByRole("button", { name: question.answer.word }));
+      } else {
+        for (const letter of question.answer.word) {
+          const tile = screen.getAllByRole<HTMLButtonElement>("button", { name: `加入字母 ${letter}` }).find((button) => !button.disabled)!;
+          fireEvent.click(tile);
+        }
+      }
+      fireEvent.click(screen.getByRole("button", { name: "確認答案" }));
+      fireEvent.click(screen.getByRole("button", { name: index === 7 ? "看看練習結果" : "下一題" }));
+    }
+    expect(screen.getByText("8 / 8")).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "4 讀個短句" }));
+    expect(container.querySelector(".phonics-sentence")?.textContent).toBe(lesson.sentences[0].text);
+    expect(screen.queryByText(lesson.sentences[0].translation)).toBeNull();
+    expect(screen.getByRole("navigation", { name: "學習階段" })).toBeTruthy();
+  });
+
+  it("切換課程取消字間連播、重設階段且不自動播放", async () => {
+    vi.useFakeTimers();
+    const { rerender } = render(<PhonicsLearning lessonOpen lessonId="short-a" />);
+    enterBlending(); playFamily();
+    await act(async () => {});
+    act(() => audios[0].onended?.());
+    rerender(<PhonicsLearning lessonOpen lessonId="short-e" />);
+    await act(async () => { vi.advanceTimersByTime(1000); });
+    expect(audios).toHaveLength(1);
+    expect(screen.getByRole("heading", { name: "聽聽 e 在單字裡的聲音" })).toBeTruthy();
+    enterBlending();
+    const firstWord = phonicsLessons.find((lesson) => lesson.id === "short-e")!.families[0].words[0].word;
+    expect(screen.getByRole("button", { name: `播放單字 ${firstWord}` }).getAttribute("aria-pressed")).toBe("true");
+    expect(audios).toHaveLength(1);
+  });
+});
+
+
+it("空字族不選取不存在的第一詞，並停止提供播放操作", () => {
+  const firstFamily = shortAFamilies[0];
+  const originalWords = firstFamily.words;
+  firstFamily.words = [];
+  try {
+    render(<PhonicsLearning lessonOpen />);
+    enterBlending();
+    expect(screen.getByRole("status").textContent).toContain("這個字族還沒有可練習的單字");
+    expect(screen.queryByRole("button", { name: "聽完整單字" })).toBeNull();
+    expect(audios).toHaveLength(0);
+    chooseFamily("-an");
+    expect(screen.getByRole("button", { name: "播放單字 can" }).getAttribute("aria-pressed")).toBe("true");
+  } finally { firstFamily.words = originalWords; }
 });

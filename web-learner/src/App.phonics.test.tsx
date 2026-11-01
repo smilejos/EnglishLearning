@@ -7,9 +7,9 @@ import * as api from "./api";
 const phonicsCleanup = vi.hoisted(() => vi.fn());
 vi.mock("./api", () => ({ getMe: vi.fn() }));
 vi.mock("./PhonicsLearning", () => ({
-  PhonicsLearning({ lessonOpen }: { lessonOpen: boolean }) {
+  PhonicsLearning({ lessonOpen, lessonId }: { lessonOpen: boolean; lessonId?: string }) {
     useEffect(() => () => phonicsCleanup(), []);
-    return <main><h1>{lessonOpen ? "自然發音課程測試" : "自然發音總覽測試"}</h1></main>;
+    return <main><h1>{lessonOpen ? "自然發音課程測試" : "自然發音總覽測試"}</h1>{lessonOpen && <p>課程：{lessonId}</p>}</main>;
   },
 }));
 
@@ -44,6 +44,16 @@ describe("自然發音入口導航", () => {
     await act(async () => { window.dispatchEvent(new Event("hashchange")); });
     expect(screen.getByRole("heading", { name: "今天，想怎麼練習英文？" })).toBeTruthy();
     expect(phonicsCleanup).toHaveBeenCalledTimes(3);
+  });
+
+  it("五個短母音可直接開啟，切課會卸載舊課與其音訊", async () => {
+    window.history.replaceState(null, "", "#/phonics/short-a");
+    render(<App />);
+    for (const [index, vowel] of ["a", "e", "i", "o", "u"].entries()) {
+      await navigate(`#/phonics/short-${vowel}`);
+      expect(screen.getByText(`課程：short-${vowel}`)).toBeTruthy();
+      expect(phonicsCleanup).toHaveBeenCalledTimes(index);
+    }
   });
 
   it("直接開啟短母音課程的網址會進入課程", async () => {

@@ -953,7 +953,8 @@ export default function App() {
   const reviewOpen = hash === "#/review";
   const practiceOpen = hash === "#/practice";
   const phonicsOpen = hash === "#/phonics";
-  const phonicsLessonOpen = hash === "#/phonics/short-a";
+  const phonicsLessonId = /^#\/phonics\/(short-[aeiou])$/.exec(hash)?.[1];
+  const phonicsLessonOpen = phonicsLessonId !== undefined;
   const articlesOpen = hash === "#/articles";
   const scenariosOpen = hash.split("?")[0] === "#/scenarios";
   const scenarioCategory = scenarioCategoryFromHash(hash);
@@ -1004,7 +1005,7 @@ export default function App() {
       ) : practiceOpen ? (
         <WordbankPractice />
       ) : phonicsOpen || phonicsLessonOpen ? (
-        <PhonicsLearning key={phonicsLessonOpen ? "short-a" : "overview"} lessonOpen={phonicsLessonOpen} />
+        <PhonicsLearning key={phonicsLessonId ?? "overview"} lessonOpen={phonicsLessonOpen} lessonId={phonicsLessonId} />
       ) : scenariosOpen ? (
         <ScenarioList categoryId={scenarioCategory} />
       ) : scenarioRevision !== null ? (

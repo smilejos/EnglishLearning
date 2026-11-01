@@ -1,0 +1,598 @@
+{
+  "date": "2026-11-01",
+  "target": "english_learning",
+  "sourceMaxId": 9212,
+  "counts": [
+    {
+      "lesson": "short-a",
+      "requirements": 19,
+      "reuse": 16,
+      "missing": [
+        "a cat",
+        "a man",
+        "on a mat"
+      ]
+    },
+    {
+      "lesson": "short-e",
+      "requirements": 17,
+      "reuse": 7,
+      "missing": [
+        "ten",
+        "men",
+        "net",
+        "fed",
+        "Get a red pen.",
+        "a red pen",
+        "The hen is on the bed.",
+        "the hen",
+        "is on the bed",
+        "on the bed"
+      ]
+    },
+    {
+      "lesson": "short-i",
+      "requirements": 17,
+      "reuse": 6,
+      "missing": [
+        "wig",
+        "fin",
+        "bin",
+        "tin",
+        "fit",
+        "kit",
+        "The pig is big.",
+        "the pig",
+        "is big",
+        "The pig can sit.",
+        "can sit"
+      ]
+    },
+    {
+      "lesson": "short-o",
+      "requirements": 14,
+      "reuse": 6,
+      "missing": [
+        "hop",
+        "cot",
+        "The pot is hot.",
+        "the pot",
+        "is hot",
+        "Hop to the top.",
+        "to the top",
+        "the top"
+      ]
+    },
+    {
+      "lesson": "short-u",
+      "requirements": 18,
+      "reuse": 6,
+      "missing": [
+        "rug",
+        "mug",
+        "hug",
+        "nut",
+        "hut",
+        "Run in the sun.",
+        "in the sun",
+        "the sun",
+        "The bug is on the rug.",
+        "the bug",
+        "is on the rug",
+        "on the rug"
+      ]
+    }
+  ],
+  "missing": [
+    {
+      "key": "support-a-cat",
+      "kind": "support",
+      "text": "a cat",
+      "lesson": "short-a"
+    },
+    {
+      "key": "support-a-man",
+      "kind": "support",
+      "text": "a man",
+      "lesson": "short-a"
+    },
+    {
+      "key": "support-on-a-mat",
+      "kind": "support",
+      "text": "on a mat",
+      "lesson": "short-a"
+    },
+    {
+      "key": "ten",
+      "kind": "word",
+      "text": "ten",
+      "meaning": "十",
+      "phonemes": [
+        "t",
+        "ɛ",
+        "n"
+      ],
+      "lesson": "short-e"
+    },
+    {
+      "key": "men",
+      "kind": "word",
+      "text": "men",
+      "meaning": "男人們（man 的複數）",
+      "phonemes": [
+        "m",
+        "ɛ",
+        "n"
+      ],
+      "lesson": "short-e"
+    },
+    {
+      "key": "net",
+      "kind": "word",
+      "text": "net",
+      "meaning": "網子",
+      "phonemes": [
+        "n",
+        "ɛ",
+        "t"
+      ],
+      "lesson": "short-e"
+    },
+    {
+      "key": "fed",
+      "kind": "word",
+      "text": "fed",
+      "meaning": "餵食（feed 的過去式）",
+      "phonemes": [
+        "f",
+        "ɛ",
+        "d"
+      ],
+      "lesson": "short-e"
+    },
+    {
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "Get a red pen.",
+      "wordKeys": [
+        "get",
+        "red",
+        "pen"
+      ],
+      "lesson": "short-e"
+    },
+    {
+      "key": "support-a-red-pen",
+      "kind": "support",
+      "text": "a red pen",
+      "supportWord": "a",
+      "meaning": "一個；聽片語中的冠詞弱讀。",
+      "lesson": "short-e"
+    },
+    {
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The hen is on the bed.",
+      "wordKeys": [
+        "hen",
+        "bed"
+      ],
+      "lesson": "short-e"
+    },
+    {
+      "key": "support-the-hen",
+      "kind": "support",
+      "text": "the hen",
+      "supportWord": "the",
+      "meaning": "這個／那個；聽片語中的弱讀。",
+      "lesson": "short-e"
+    },
+    {
+      "key": "support-is-on-the-bed",
+      "kind": "support",
+      "text": "is on the bed",
+      "supportWord": "is",
+      "meaning": "是／在；句中讀 /ɪz/，先跟讀，不考短 i。",
+      "lesson": "short-e"
+    },
+    {
+      "key": "support-on-the-bed",
+      "kind": "support",
+      "text": "on the bed",
+      "supportWord": "on",
+      "meaning": "在……上面；先聽示範，不考短 o。",
+      "lesson": "short-e"
+    },
+    {
+      "key": "wig",
+      "kind": "word",
+      "text": "wig",
+      "meaning": "假髮",
+      "phonemes": [
+        "w",
+        "ɪ",
+        "ɡ"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "fin",
+      "kind": "word",
+      "text": "fin",
+      "meaning": "魚鰭",
+      "phonemes": [
+        "f",
+        "ɪ",
+        "n"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "bin",
+      "kind": "word",
+      "text": "bin",
+      "meaning": "箱子；垃圾桶",
+      "phonemes": [
+        "b",
+        "ɪ",
+        "n"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "tin",
+      "kind": "word",
+      "text": "tin",
+      "meaning": "金屬罐",
+      "phonemes": [
+        "t",
+        "ɪ",
+        "n"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "fit",
+      "kind": "word",
+      "text": "fit",
+      "meaning": "合身；合適",
+      "phonemes": [
+        "f",
+        "ɪ",
+        "t"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "kit",
+      "kind": "word",
+      "text": "kit",
+      "meaning": "成套工具",
+      "phonemes": [
+        "k",
+        "ɪ",
+        "t"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The pig is big.",
+      "wordKeys": [
+        "pig",
+        "big"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "support-the-pig",
+      "kind": "support",
+      "text": "the pig",
+      "supportWord": "the",
+      "meaning": "這個／那個；聽片語中的弱讀。",
+      "lesson": "short-i"
+    },
+    {
+      "key": "support-is-big",
+      "kind": "support",
+      "text": "is big",
+      "supportWord": "is",
+      "meaning": "是；英語用 is 連接主詞與形容詞。",
+      "lesson": "short-i"
+    },
+    {
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The pig can sit.",
+      "wordKeys": [
+        "pig",
+        "sit"
+      ],
+      "lesson": "short-i"
+    },
+    {
+      "key": "support-can-sit",
+      "kind": "support",
+      "text": "can sit",
+      "supportWord": "can",
+      "meaning": "能夠；這裡不是短 a 課的「罐子」，句中可弱讀。",
+      "lesson": "short-i"
+    },
+    {
+      "key": "hop",
+      "kind": "word",
+      "text": "hop",
+      "meaning": "單腳跳",
+      "phonemes": [
+        "h",
+        "ɑ",
+        "p"
+      ],
+      "lesson": "short-o"
+    },
+    {
+      "key": "cot",
+      "kind": "word",
+      "text": "cot",
+      "meaning": "簡易床",
+      "phonemes": [
+        "k",
+        "ɑ",
+        "t"
+      ],
+      "lesson": "short-o"
+    },
+    {
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The pot is hot.",
+      "wordKeys": [
+        "pot",
+        "hot"
+      ],
+      "lesson": "short-o"
+    },
+    {
+      "key": "support-the-pot",
+      "kind": "support",
+      "text": "the pot",
+      "supportWord": "the",
+      "meaning": "這個／那個；聽片語中的弱讀。",
+      "lesson": "short-o"
+    },
+    {
+      "key": "support-is-hot",
+      "kind": "support",
+      "text": "is hot",
+      "supportWord": "is",
+      "meaning": "是；英語用 is 連接主詞與形容詞。",
+      "lesson": "short-o"
+    },
+    {
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Hop to the top.",
+      "wordKeys": [
+        "hop",
+        "top"
+      ],
+      "lesson": "short-o"
+    },
+    {
+      "key": "support-to-the-top",
+      "kind": "support",
+      "text": "to the top",
+      "supportWord": "to",
+      "meaning": "到……；聽片語中的弱讀，不能當作短 o。",
+      "lesson": "short-o"
+    },
+    {
+      "key": "support-the-top",
+      "kind": "support",
+      "text": "the top",
+      "supportWord": "the",
+      "meaning": "這個／那個；聽片語中的弱讀。",
+      "lesson": "short-o"
+    },
+    {
+      "key": "rug",
+      "kind": "word",
+      "text": "rug",
+      "meaning": "小地毯",
+      "phonemes": [
+        "r",
+        "ʌ",
+        "ɡ"
+      ],
+      "lesson": "short-u"
+    },
+    {
+      "key": "mug",
+      "kind": "word",
+      "text": "mug",
+      "meaning": "馬克杯",
+      "phonemes": [
+        "m",
+        "ʌ",
+        "ɡ"
+      ],
+      "lesson": "short-u"
+    },
+    {
+      "key": "hug",
+      "kind": "word",
+      "text": "hug",
+      "meaning": "擁抱",
+      "phonemes": [
+        "h",
+        "ʌ",
+        "ɡ"
+      ],
+      "lesson": "short-u"
+    },
+    {
+      "key": "nut",
+      "kind": "word",
+      "text": "nut",
+      "meaning": "堅果",
+      "phonemes": [
+        "n",
+        "ʌ",
+        "t"
+      ],
+      "lesson": "short-u"
+    },
+    {
+      "key": "hut",
+      "kind": "word",
+      "text": "hut",
+      "meaning": "小屋",
+      "phonemes": [
+        "h",
+        "ʌ",
+        "t"
+      ],
+      "lesson": "short-u"
+    },
+    {
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "Run in the sun.",
+      "wordKeys": [
+        "run",
+        "sun"
+      ],
+      "lesson": "short-u"
+    },
+    {
+      "key": "support-in-the-sun",
+      "kind": "support",
+      "text": "in the sun",
+      "supportWord": "in",
+      "meaning": "在……裡／之中；這裡指在陽光下。",
+      "lesson": "short-u"
+    },
+    {
+      "key": "support-the-sun",
+      "kind": "support",
+      "text": "the sun",
+      "supportWord": "the",
+      "meaning": "這個／那個；聽片語中的弱讀。",
+      "lesson": "short-u"
+    },
+    {
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The bug is on the rug.",
+      "wordKeys": [
+        "bug",
+        "rug"
+      ],
+      "lesson": "short-u"
+    },
+    {
+      "key": "support-the-bug",
+      "kind": "support",
+      "text": "the bug",
+      "supportWord": "the",
+      "meaning": "這個／那個；聽片語中的弱讀。",
+      "lesson": "short-u"
+    },
+    {
+      "key": "support-is-on-the-rug",
+      "kind": "support",
+      "text": "is on the rug",
+      "supportWord": "is",
+      "meaning": "是／在；句中讀 /ɪz/，不是短 u 示範。",
+      "lesson": "short-u"
+    },
+    {
+      "key": "support-on-the-rug",
+      "kind": "support",
+      "text": "on the rug",
+      "supportWord": "on",
+      "meaning": "在……上面；沿用短 o 支援詞讀音。",
+      "lesson": "short-u"
+    }
+  ],
+  "missingWords": [
+    "sat",
+    "ran",
+    "men",
+    "fed",
+    "cot"
+  ],
+  "dbWordAudioCount": 34,
+  "dbMissingWordAudio": [
+    {
+      "word": "net",
+      "guid": "382f5582-cf41-528b-aea7-534077e2df98"
+    },
+    {
+      "word": "fit",
+      "guid": "87b16883-304e-565b-adbc-57c6a2f121c2"
+    },
+    {
+      "word": "hop",
+      "guid": "dfa5acbb-5aff-54d1-9c84-9d65f218f632"
+    },
+    {
+      "word": "mat",
+      "guid": "f9989930-9ca6-5f79-9c2c-2b91e8e5414a"
+    },
+    {
+      "word": "mug",
+      "guid": "1ec1876a-7989-5044-8f1b-1928ff11fc61"
+    },
+    {
+      "word": "nut",
+      "guid": "99bddaa3-1c70-52e4-b703-2b33d229ee77"
+    },
+    {
+      "word": "ten",
+      "guid": "f184e5a6-7814-5ef5-bb48-c61a84bbbf0f"
+    },
+    {
+      "word": "hug",
+      "guid": "c4f823f8-f42e-5cc4-8572-f0e778572edf"
+    },
+    {
+      "word": "hut",
+      "guid": "fdcb92a1-bf8a-51a8-ae85-7f6c0fd97c70"
+    },
+    {
+      "word": "kit",
+      "guid": "87f5bafb-c34c-5f6e-96c1-8348183a085d"
+    },
+    {
+      "word": "nap",
+      "guid": "5b8e70ed-fc21-54cf-9712-7d1605a60e52"
+    },
+    {
+      "word": "rug",
+      "guid": "adfe2b29-e443-5124-81df-0b5ff2529749"
+    },
+    {
+      "word": "tap",
+      "guid": "7f32de24-d58a-537a-866c-704b885a2465"
+    },
+    {
+      "word": "bin",
+      "guid": "5937510e-30cc-524c-9521-c0ffd63558f9"
+    },
+    {
+      "word": "tin",
+      "guid": "b8e1280f-6c46-5344-a542-6aa396e77fe2"
+    },
+    {
+      "word": "wig",
+      "guid": "593b383e-fab7-5929-90f1-be5df128e98a"
+    },
+    {
+      "word": "fin",
+      "guid": "2f704480-6d5a-5963-a22c-cf7722301353"
+    }
+  ],
+  "rejected": []
+}
