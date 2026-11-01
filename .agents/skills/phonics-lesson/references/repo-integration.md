@@ -1,6 +1,6 @@
 # 程式與音訊路由
 
-以下是 2026-11-01 短母音 a 原型的定位線索。使用技能時先核對當下程式；路徑或能力若已變更，以實作為準，不照抄過時限制。
+本文件供 a、e、i、o、u 全部長短母音教材查找共用程式、音訊與字庫回補入口。以下實作快照以 2026-11-01 已接入的短母音 a 為例；固定的 short-a 路徑與腳本不限制規範的適用範圍，也不代表其他母音已接入。使用技能時先核對當下程式；路徑或能力若已變更，以實作為準，不照抄過時限制。
 
 已完成範例、素材重用與驗證快照見 [短母音 a 實作與接續紀錄](short-a-example.md)；詳細教材與驗收原始紀錄放在 Repo 的 `docs/phonics/preparation/short-a-word-families/`，接續時先核對既有進度，不重產已有效的素材。
 
@@ -56,7 +56,7 @@
 
 ## 補缺回寫第二功能
 
-後續教材的缺詞與一般整詞錄音回補既有共用字庫，詳細流程、增量格式、CLI 與保留原音限制見 [回補共用字庫](wordbank-backfill.md)。這是已確認的製作規範；目前 phonics 腳本尚未自動完成補詞、canonical 同步、服務檔案轉存與 metadata 匯入，不把規範當成已接入能力。
+a、e、i、o、u 每個長短母音主題的缺詞與一般整詞錄音，都依同一流程回補既有共用字庫；詳細流程、增量格式、CLI 與保留原音限制見 [回補共用字庫](wordbank-backfill.md)。這是已確認的製作規範；目前 phonics 腳本尚未自動完成補詞、canonical 同步、服務檔案轉存與 metadata 匯入，不把規範當成已接入能力。
 
 相關實作入口為 `shared/src/wordbank.ts`、`shared/src/repo/wordbank.ts`、`shared/src/wordbankAudio.ts`、`shared/src/repo/wordbankAudio.ts`、`scripts/import-vocabulary.ts`、`scripts/import-vocabulary-audio.ts`。兩個 importer 的 `--dry-run` 只做離線檢查；audio importer 按 asset GUID 更新既有 metadata，正式匯入必須只含核對過的缺音增量。
 
