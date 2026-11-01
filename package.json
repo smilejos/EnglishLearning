@@ -10,6 +10,7 @@
     "web-learner"
   ],
   "scripts": {
+    "phonics:preview": "node scripts/preview-phonics.mjs",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "pretest": "npm run test:db:up",
     "test": "npm run test --workspaces --if-present",

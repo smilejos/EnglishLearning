@@ -13,6 +13,7 @@ import { VocabularySaveButton } from "./VocabularySaveButton";
 import { VocabularyReview } from "./VocabularyReview";
 import { LearningHome } from "./LearningHome";
 import { WordbankPractice } from "./WordbankPractice";
+import { PhonicsLearning } from "./PhonicsLearning";
 import { ScenarioLearning, ScenarioList, scenarioKeyFromHash, scenarioRevisionFromHash, scenarioCategoryFromHash } from "./ScenarioLearning";
 import { popupTitle } from "./lib/vocab";
 import { explanationAudioReady } from "./lib/explanation";
@@ -951,6 +952,8 @@ export default function App() {
   const openId = articleIdFromHash(hash);
   const reviewOpen = hash === "#/review";
   const practiceOpen = hash === "#/practice";
+  const phonicsOpen = hash === "#/phonics";
+  const phonicsLessonOpen = hash === "#/phonics/short-a";
   const articlesOpen = hash === "#/articles";
   const scenariosOpen = hash.split("?")[0] === "#/scenarios";
   const scenarioCategory = scenarioCategoryFromHash(hash);
@@ -1000,6 +1003,8 @@ export default function App() {
         }} />
       ) : practiceOpen ? (
         <WordbankPractice />
+      ) : phonicsOpen || phonicsLessonOpen ? (
+        <PhonicsLearning key={phonicsLessonOpen ? "short-a" : "overview"} lessonOpen={phonicsLessonOpen} />
       ) : scenariosOpen ? (
         <ScenarioList categoryId={scenarioCategory} />
       ) : scenarioRevision !== null ? (

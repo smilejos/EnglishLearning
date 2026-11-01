@@ -1,0 +1,4 @@
+interface:
+  display_name: "自然發音教材製作"
+  short_description: "依發音主題、拼法與字族製作四階段教材，含結構標註、練習與本機語音"
+  default_prompt: "使用 $phonics-lesson 依指定發音主題、拼法與字族製作四階段自然發音教材，逐詞標註結構，不硬湊固定詞量，依目前授權準備內容與本機音訊。"

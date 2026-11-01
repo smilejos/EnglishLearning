@@ -1,0 +1,224 @@
+.phonics-page { max-width: 1080px; padding-top: 28px; padding-bottom: 64px; }
+.phonics-back { display: inline-flex; align-items: center; gap: 6px; color: var(--text-soft); font-size: .9rem; min-height: 36px; }
+.phonics-back:hover { color: var(--accent-strong); text-decoration: underline; text-underline-offset: 4px; }
+.phonics-page-heading { margin: 20px 0 30px; }
+.phonics-title-line { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.phonics-page h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.65rem); letter-spacing: -.02em; line-height: 1.25; margin: 0; }
+.phonics-page-heading > p, .phonics-lesson-heading p { color: var(--text-soft); margin: 12px 0 0; line-height: 1.75; }
+.phonics-preview-label { font-size: .75rem; color: var(--text-soft); border: 1px solid var(--border-strong); padding: 4px 10px; border-radius: 6px; white-space: nowrap; }
+.phonics-course { display: grid; grid-template-columns: 1.12fr 1fr; border: 1px solid var(--border); background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; }
+.phonics-course-copy { padding: 42px 40px; }
+.phonics-course h2 { font-family: var(--font-display); font-size: 1.35rem; margin: 0 0 22px; }
+.phonics-course h2 > span { font-size: 1.6em; color: var(--accent-strong); margin-left: 6px; }
+.phonics-course-lead { font-family: var(--font-display); font-size: clamp(1.7rem, 3.1vw, 2.3rem); line-height: 1.6; margin: 0 0 16px; font-weight: 600; letter-spacing: -.02em; }
+.phonics-page em { font-style: normal; color: var(--accent-strong); }
+.phonics-course-description { color: var(--text-soft); line-height: 1.9; font-size: .95rem; max-width: 34ch; margin: 0; }
+.phonics-course-facts { display: flex; gap: 8px 18px; flex-wrap: wrap; color: var(--text-soft); font-size: .8rem; margin: 24px 0 28px; }
+.phonics-course-art { position: relative; display: flex; align-items: flex-end; justify-content: center; background: #f1f2fc; min-width: 0; overflow: hidden; }
+.phonics-art-letter { position: absolute; font-family: Georgia, serif; font-size: 270px; color: #cbd0f1; line-height: 1; top: 2px; right: 32px; user-select: none; }
+.phonics-cat { width: 100%; max-width: 400px; height: auto; display: block; position: relative; }
+.phonics-course-art .phonics-cat { margin-bottom: 24px; }
+.phonics-course-plan { margin: 36px 0 0; }
+.phonics-course-plan h2 { font-size: 1.12rem; margin: 0 0 22px; }
+.phonics-course-plan ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.phonics-course-plan li { display: flex; gap: 12px; padding-top: 16px; border-top: 1px solid var(--border-strong); }
+.phonics-course-plan li > span { font-size: .8rem; font-variant-numeric: tabular-nums; color: var(--accent-strong); padding-top: 3px; }
+.phonics-course-plan strong { font-size: .95rem; }
+.phonics-course-plan p { font-size: .84rem; line-height: 1.75; margin: 8px 0 0; color: var(--text-soft); }
+.phonics-footnote { color: var(--text-muted); font-size: .8rem; margin-top: 30px; line-height: 1.8; }
+.phonics-lesson-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 18px 0 28px; }
+.phonics-lesson-heading h1 > span { color: var(--accent-strong); }
+.phonics-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-bottom: 18px; border-bottom: 1px solid var(--border-strong); }
+.phonics-steps button { display: flex; gap: 10px; align-items: center; justify-content: center; background: transparent; color: var(--text-soft); border: 0; border-bottom: 3px solid transparent; padding: 15px 10px; font-size: .9rem; font-weight: 600; }
+.phonics-steps button > span { width: 24px; height: 24px; border: 1px solid var(--border-strong); border-radius: 50%; display: grid; place-items: center; font-size: .75rem; font-variant-numeric: tabular-nums; }
+.phonics-steps button:hover { color: var(--accent-strong); background: var(--accent-soft); }
+.phonics-steps button[aria-current] { border-bottom-color: var(--accent); color: var(--accent-strong); }
+.phonics-steps button[aria-current] > span { background: var(--accent); color: white; border-color: var(--accent); }
+.phonics-workspace { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); min-height: 470px; overflow: hidden; }
+.phonics-workspace:focus { outline: none; }
+.phonics-workspace h2 { font-size: 1.4rem; line-height: 1.5; margin: 0; letter-spacing: -.02em; }
+.phonics-instruction { margin: 10px 0 0; color: var(--text-soft); line-height: 1.85; font-size: .94rem; }
+.phonics-introduction { display: grid; grid-template-columns: 1.2fr 1fr; min-height: 480px; }
+.phonics-intro-main { padding: 34px 36px; }
+.phonics-sound-display { display: flex; align-items: baseline; gap: 22px; margin: 5px 0 20px; }
+.phonics-big-letter { font-family: Georgia, serif; font-size: 150px; line-height: 1.3; color: var(--accent-strong); }
+.phonics-ipa { color: var(--text-soft); font-size: .9rem; }
+.phonics-ipa span { margin-left: 8px; font-family: Georgia, serif; font-size: 1.3rem; }
+.phonics-example-words { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.phonics-example-words button { display: flex; align-items: center; gap: 14px; padding: 9px 12px; font-family: Georgia, serif; font-size: 1.6rem; background: transparent; border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); }
+.phonics-example-words button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.phonics-example-words button:hover { border-color: var(--accent); }
+.phonics-example-words svg { color: var(--accent-strong); }
+.phonics-intro-aside { background: var(--surface-2); padding: 0 28px 26px; display: flex; flex-direction: column; justify-content: center; }
+.phonics-intro-aside .phonics-cat { max-width: 300px; margin: 0 auto; }
+.phonics-teaching-note h3 { font-size: .95rem; margin: 0 0 10px; }
+.phonics-teaching-note p { color: var(--text-soft); font-size: .86rem; line-height: 1.9; margin: 6px 0 0; }
+.phonics-teaching-note strong { color: var(--accent-strong); }
+.phonics-blending { padding: 32px 36px; text-align: center; }
+.phonics-family-picker { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; max-width: 480px; margin: 24px auto 0; padding: 5px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); }
+.phonics-family-picker button { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 50px; border: 1px solid transparent; border-radius: var(--radius-sm); background: transparent; color: var(--text-soft); }
+.phonics-family-picker button > span:first-child { font-family: Georgia, serif; font-size: 1.6rem; line-height: 1.2; }
+.phonics-family-picker button > span:last-child { font-size: .78rem; white-space: nowrap; }
+.phonics-family-picker button[aria-pressed="true"] { background: var(--surface); border-color: var(--accent); color: var(--accent-strong); }
+.phonics-family-picker button:hover { background: var(--accent-soft); color: var(--accent-strong); }
+.phonics-family-description { margin: 18px 0 0; color: var(--text-soft); font-size: .85rem; line-height: 1.9; }
+.phonics-family-description > span:first-child { font-family: Georgia, serif; color: var(--accent-strong); font-size: 1.15rem; }
+.phonics-graphemes { display: flex; gap: 22px; justify-content: center; margin: 32px 0 16px; }
+.phonics-graphemes > div { display: flex; flex: 0 1 100px; min-width: 0; flex-direction: column; gap: 10px; }
+.phonics-grapheme { display: grid; place-items: center; width: 100%; height: 108px; border-radius: 12px; border: 1px solid var(--border-strong); font-family: Georgia, serif; font-size: 4.7rem; line-height: 1; }
+.phonics-grapheme.is-vowel { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-strong); }
+.phonics-grapheme-label { font-size: .78rem; color: var(--text-soft); }
+.phonics-whole-word { display: flex; align-items: baseline; justify-content: center; gap: 18px; margin: 20px 0; }
+.phonics-whole-word > span:first-child { font-family: Georgia, serif; font-size: 2.1rem; }
+.phonics-whole-word > span:last-child { font-size: .9rem; color: var(--text-soft); }
+.phonics-word-structure { margin: -8px 0 22px; color: var(--text-soft); font-size: .8rem; line-height: 1.8; }
+.phonics-word-structure > span:first-child { font-weight: 600; color: var(--accent-strong); }
+.phonics-audio-actions { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
+.phonics-playback-status { min-height: 1.8em; margin: 14px 0 0; font-size: .82rem; line-height: 1.8; color: var(--text-soft); }
+.phonics-word-picker { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; max-width: 760px; padding-top: 24px; margin: 18px auto 0; border-top: 1px solid var(--border); }
+.phonics-word-picker button { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 12px; background: transparent; border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: Georgia, serif; font-size: 1.4rem; color: var(--text); }
+.phonics-word-picker button svg { flex-shrink: 0; color: var(--accent-strong); }
+.phonics-word-picker button:hover, .phonics-word-picker button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.phonics-inline-tip { color: var(--text-soft); font-size: .82rem; line-height: 1.9; margin: 20px 0 0; }
+.phonics-step-footer { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-top: 20px; }
+.phonics-step-footer > span { color: var(--text-muted); font-size: .82rem; white-space: nowrap; }
+.phonics-step-footer > div { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.phonics-practice { padding: 28px 64px 32px; max-width: 800px; margin: 0 auto; text-align: center; }
+.phonics-question-meta { display: flex; justify-content: space-between; align-items: center; color: var(--text-soft); font-size: .83rem; }
+.phonics-question-meta > span:first-child { font-weight: 600; color: var(--accent-strong); }
+.phonics-question-progress { display: flex; gap: 5px; margin: 12px 0 30px; }
+.phonics-question-progress > span { height: 3px; flex: 1; background: var(--border); border-radius: 2px; }
+.phonics-question-progress > .is-reached { background: var(--accent); }
+.phonics-practice h2:focus, .phonics-practice-summary h2:focus { outline: none; }
+.phonics-listen-actions { display: flex; justify-content: center; gap: 10px; margin: 26px 0; }
+.phonics-listen-choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0; }
+.phonics-listen-choices > button { border: 1px solid var(--border-strong); background: var(--surface); padding: 24px 8px; border-radius: var(--radius); font-family: Georgia, serif; font-size: 2.3rem; color: var(--text); position: relative; }
+.phonics-listen-choices > button:not(:disabled):hover { background: var(--surface-2); border-color: var(--accent); }
+.phonics-listen-choices > button.is-selected { background: var(--accent-soft); border: 2px solid var(--accent); padding: 23px 7px; }
+.phonics-listen-choices > button.is-correct { border-color: var(--positive); background: var(--positive-soft); }
+.phonics-listen-choices > button:disabled { cursor: default; }
+.phonics-listen-choices svg { position: absolute; right: 6px; top: 6px; color: var(--positive); width: 18px; }
+.phonics-spelling { margin: 24px 0 16px; }
+.phonics-spelling-slots { display: flex; justify-content: center; gap: 12px; }
+.phonics-spelling-slots > button { width: 84px; height: 88px; border: 1px solid var(--border-strong); border-bottom: 3px solid var(--border-strong); background: var(--surface-2); border-radius: var(--radius-sm); font-family: Georgia, serif; font-size: 3rem; color: var(--text); }
+.phonics-spelling-slots > .is-vowel { background: var(--accent-soft); border-color: #b0b5ee; color: var(--accent-strong); }
+.phonics-spelling-slots > .is-correct { border-color: var(--positive); }
+.phonics-spelling-slots > button:disabled { cursor: default; }
+.phonics-spelling-slots > button:disabled > span { color: #8993a6; }
+.phonics-letter-bank { display: flex; justify-content: center; gap: 12px; margin: 22px 0 12px; }
+.phonics-letter-bank > button { width: 58px; height: 58px; border-radius: var(--radius-sm); border: 1px solid var(--border-strong); background: var(--surface); font-family: Georgia, serif; font-size: 2rem; color: var(--text); box-shadow: var(--shadow-sm); }
+.phonics-letter-bank > button:not(:disabled):hover { border-color: var(--accent); background: var(--accent-soft); }
+.phonics-letter-bank > button:disabled { opacity: .3; cursor: default; box-shadow: none; }
+.phonics-text-button { border: 0; background: transparent; color: var(--accent-strong); font-size: .85rem; padding: 10px 6px; text-decoration: underline; text-underline-offset: 4px; }
+.phonics-text-button:disabled { color: var(--text-muted); cursor: default; text-decoration: none; }
+.phonics-feedback { border-radius: var(--radius-sm); padding: 16px 20px; text-align: left; line-height: 1.8; margin: 20px 0; }
+.phonics-feedback.is-correct { background: var(--positive-soft); color: #0c6849; }
+.phonics-feedback.is-incorrect { background: #fff5e7; color: #79501c; }
+.phonics-feedback > strong { font-size: .94rem; margin-right: 14px; }
+.phonics-feedback > span > span:first-child { font-family: Georgia, serif; font-size: 1.25rem; }
+.phonics-feedback-meaning { color: var(--text-soft); margin-left: 12px; font-size: .85rem; }
+.phonics-feedback p { margin: 6px 0 0; font-size: .85rem; }
+.phonics-check-actions { display: flex; justify-content: center; gap: 10px; margin-top: 24px; flex-wrap: wrap; }
+.phonics-practice-note { font-size: .77rem; line-height: 1.8; color: var(--text-muted); margin: 22px 0 0; }
+.phonics-practice-summary { text-align: center; padding: 46px 24px; }
+.phonics-complete-mark { width: 56px; height: 56px; display: grid; place-items: center; background: var(--positive-soft); border-radius: 50%; color: var(--positive); margin: 0 auto 22px; }
+.phonics-complete-mark svg { width: 30px; height: 30px; }
+.phonics-practice-summary > p { line-height: 1.85; }
+.phonics-practice-summary > p > strong { font-size: 1.2rem; color: var(--accent-strong); }
+.phonics-summary-hint { color: var(--text-soft); font-size: .9rem; }
+.phonics-missed-words { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 20px 0 28px; }
+.phonics-missed-words button > span { font-family: Georgia, serif; font-size: 1.2rem; }
+.phonics-summary-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+.phonics-reading { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; min-height: 470px; padding: 36px; gap: 12px; }
+.phonics-reading .phonics-audio-actions { justify-content: flex-start; }
+.phonics-sentence { font-family: Georgia, serif; font-size: clamp(1.8rem, 3vw, 2.3rem); line-height: 1.9; margin: 22px 0; text-wrap: balance; }
+.phonics-sentence button { font-family: inherit; font-size: inherit; padding: 0; background: none; border: 0; border-bottom: 1px dashed #9da6d4; color: var(--text); line-height: 1.35; }
+.phonics-sentence button:hover { background: var(--accent-soft); }
+.phonics-translation { font-size: .9rem; color: var(--text-soft); line-height: 1.8; margin: 16px 0 0; }
+.phonics-reading-switch { display: flex; gap: 16px; align-items: center; border-top: 1px solid var(--border); padding-top: 20px; margin: 24px 0 20px; }
+.phonics-reading-switch > span { font-size: .82rem; color: var(--text-soft); }
+.phonics-reading-done { font-size: .85rem; line-height: 1.8; color: var(--positive); }
+.phonics-audio-error { margin: 0 28px 24px; padding: 14px 18px; background: var(--danger-soft); color: var(--danger); border-radius: var(--radius-sm); font-size: .88rem; line-height: 1.8; }
+@media (prefers-reduced-motion: no-preference) {
+  .phonics-graphemes { animation: phonics-word-arrive .3s cubic-bezier(.16, 1, .3, 1); }
+  @keyframes phonics-word-arrive { from { transform: translateY(8px); } to { transform: translateY(0); } }
+}
+@media (max-width: 760px) {
+  .phonics-course-copy { padding: 30px 26px; }
+  .phonics-course { grid-template-columns: 1.2fr 1fr; }
+  .phonics-course-art .phonics-cat { margin-bottom: 40px; }
+  .phonics-art-letter { font-size: 220px; top: 20px; right: 20px; }
+  .phonics-course-plan ol { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .phonics-intro-main { padding: 28px 24px; }
+  .phonics-intro-aside { padding: 8px 20px 24px; }
+  .phonics-example-words { gap: 8px; }
+  .phonics-example-words button { font-size: 1.3rem; padding: 8px 10px; gap: 8px; }
+  .phonics-reading { grid-template-columns: 1fr .7fr; padding: 28px; }
+}
+@media (max-width: 560px) {
+  .phonics-page { padding: 20px 18px 40px; }
+  .phonics-page-heading { margin-top: 14px; margin-bottom: 24px; }
+  .phonics-page-heading > p { font-size: .9rem; max-width: 29ch; }
+  .phonics-title-line { gap: 12px; }
+  .phonics-course { grid-template-columns: 1fr; }
+  .phonics-course-copy { padding: 26px 24px 28px; }
+  .phonics-course h2 { margin-bottom: 16px; }
+  .phonics-course-lead { font-size: 1.85rem; }
+  .phonics-course-art { height: 190px; }
+  .phonics-course-art .phonics-cat { width: 235px; margin: 0 30px 0 auto; }
+  .phonics-art-letter { font-size: 200px; top: -18px; left: 26px; right: auto; }
+  .phonics-course-facts { gap: 8px 14px; margin: 20px 0 24px; }
+  .phonics-course-plan { margin-top: 28px; }
+  .phonics-course-plan ol { gap: 22px 18px; }
+  .phonics-course-plan li { gap: 8px; }
+  .phonics-course-plan p { font-size: .8rem; }
+  .phonics-lesson-heading { margin: 14px 0 22px; }
+  .phonics-lesson-heading p { font-size: .83rem; margin-top: 8px; }
+  .phonics-steps button { flex-direction: column; gap: 8px; font-size: .77rem; padding: 12px 3px; }
+  .phonics-steps button > span { width: 22px; height: 22px; }
+  .phonics-workspace h2 { font-size: 1.16rem; }
+  .phonics-introduction { grid-template-columns: 1fr; }
+  .phonics-intro-main { padding: 24px; }
+  .phonics-sound-display { margin: 0 0 18px; }
+  .phonics-big-letter { font-size: 128px; }
+  .phonics-instruction { font-size: .85rem; }
+  .phonics-example-words { margin-top: 22px; }
+  .phonics-example-words button { padding: 10px 13px; font-size: 1.4rem; }
+  .phonics-intro-aside { padding: 22px 24px; }
+  .phonics-intro-aside .phonics-cat { display: none; }
+  .phonics-teaching-note p { font-size: .82rem; }
+  .phonics-blending { padding: 24px 18px; }
+  .phonics-family-picker { gap: 3px; padding: 4px; margin-top: 20px; }
+  .phonics-family-picker button { flex-direction: column; gap: 4px; padding: 8px 4px; }
+  .phonics-family-picker button > span:first-child { font-size: 1.45rem; }
+  .phonics-family-description { font-size: .8rem; margin-top: 14px; }
+  .phonics-graphemes { gap: 12px; margin-top: 26px; }
+  .phonics-graphemes > div { flex-basis: clamp(58px, 19vw, 78px); }
+  .phonics-grapheme { height: 90px; font-size: clamp(3rem, 15vw, 3.8rem); }
+  .phonics-graphemes--long .phonics-grapheme { height: 78px; font-size: clamp(2.3rem, 9vw, 3.8rem); }
+  .phonics-word-picker { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .phonics-word-picker button { padding: 10px 12px; }
+  .phonics-whole-word { margin: 16px 0; gap: 12px; flex-wrap: wrap; }
+  .phonics-step-footer { align-items: flex-start; }
+  .phonics-step-footer > span { padding-top: 12px; }
+  .phonics-step-footer .btn { padding: 11px 13px; font-size: .82rem; }
+  .phonics-step-footer > div { gap: 8px; }
+  .phonics-practice { padding: 22px 18px 26px; }
+  .phonics-question-progress { margin-bottom: 24px; }
+  .phonics-listen-actions { margin: 22px 0; gap: 8px; }
+  .phonics-listen-actions .btn { padding: 11px 14px; font-size: .85rem; }
+  .phonics-listen-choices { gap: 10px; margin: 24px 0; }
+  .phonics-listen-choices > button { padding: 22px 5px; font-size: 1.8rem; }
+  .phonics-listen-choices > button.is-selected { padding: 21px 4px; }
+  .phonics-spelling-slots { gap: 10px; }
+  .phonics-spelling-slots > button { width: 74px; height: 80px; }
+  .phonics-letter-bank { gap: 10px; }
+  .phonics-letter-bank > button { width: 54px; height: 56px; }
+  .phonics-practice-note { font-size: .75rem; }
+  .phonics-feedback { padding: 14px; }
+  .phonics-feedback > strong { display: block; }
+  .phonics-practice-summary { padding: 36px 20px; }
+  .phonics-reading { grid-template-columns: 1fr; padding: 24px; }
+  .phonics-reading > .phonics-cat { max-width: 250px; margin: 12px auto 0; }
+  .phonics-sentence { font-size: 2rem; margin: 20px 0; }
+}

@@ -32,12 +32,13 @@ beforeEach(() => {
 afterEach(cleanup);
 
 describe("收藏到原課文的完整導航", () => {
-  it("首頁有三功能入口，文章清單獨立路由且品牌回首頁", async () => {
+  it("首頁有四功能入口，文章清單獨立路由且品牌回首頁", async () => {
     window.history.replaceState(null, "", "#");
     render(<App />);
     expect(screen.getByRole("link", { name: /文章閱讀/ }).getAttribute("href")).toBe("#/articles");
     expect(screen.getByRole("link", { name: /單字練習/ }).getAttribute("href")).toBe("#/practice");
     expect(screen.getByRole("link", { name: /情境模擬/ }).getAttribute("href")).toBe("#/scenarios");
+    expect(screen.getByRole("link", { name: /自然發音/ }).getAttribute("href")).toBe("#/phonics");
     expect(api.listArticles).not.toHaveBeenCalled();
     await act(async () => { window.location.hash = "#/articles"; window.dispatchEvent(new Event("hashchange")); });
     await screen.findByRole("heading", { name: "開始閱讀" });

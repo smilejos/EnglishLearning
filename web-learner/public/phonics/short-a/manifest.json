@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "profile": {
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Serena",
+    "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+    "lang_code": "English",
+    "response_format": "mp3"
+  },
+  "entries": [
+    {
+      "kind": "word",
+      "text": "cat",
+      "assetGuid": "phonics-short-a-cat",
+      "textHash": "77af778b51abd4a3c51c5ddd97204a9c3ae614ebccb75a606c3b6865aed6744e",
+      "relativePath": "cat.mp3",
+      "durationSeconds": 1.104,
+      "bytes": 17708,
+      "generatedAt": "2026-10-05T00:52:21.603Z",
+      "preparedAt": "2026-11-01T04:28:56.786Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/1c9f6b77-3906-54f3-850e-fe30107a006c.mp3",
+        "assetGuid": "1c9f6b77-3906-54f3-850e-fe30107a006c"
+      },
+      "sha256": "1893ebb3cf581078a4b4068c23057f0e3f123718708e9c12fb9ace8fe5948cdf",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "map",
+      "assetGuid": "phonics-short-a-map",
+      "textHash": "60be9861750facbfad8758254a2f76c0cfe78d54459a3bc187d49b1401fcd8e8",
+      "relativePath": "map.mp3",
+      "durationSeconds": 1.176,
+      "bytes": 18860,
+      "generatedAt": "2026-10-05T01:50:39.821Z",
+      "preparedAt": "2026-11-01T04:28:56.831Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/59e05e7e-ded1-58a9-bfcf-5fb01619d9fd.mp3",
+        "assetGuid": "59e05e7e-ded1-58a9-bfcf-5fb01619d9fd"
+      },
+      "sha256": "590043a3e68af96248bce38e3d6391f6b2438a8095510dfc05d1f50fef9bc7d3",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "cap",
+      "assetGuid": "phonics-short-a-cap",
+      "textHash": "45e84635bc4803c5cc5d456c798a13d37a7fd184f76b012b01c01676d5ce46c0",
+      "relativePath": "cap.mp3",
+      "durationSeconds": 1.728,
+      "bytes": 27692,
+      "generatedAt": "2026-10-05T00:51:14.912Z",
+      "preparedAt": "2026-11-01T04:28:56.874Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/86f2f566-2e5f-5a1a-a129-299bc4a70dcd.mp3",
+        "assetGuid": "86f2f566-2e5f-5a1a-a129-299bc4a70dcd"
+      },
+      "sha256": "87999d36dd0c33e48fbef758f9b88b873138ebd7bd460518f5ba77b558a4e796",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "bat",
+      "assetGuid": "phonics-short-a-bat",
+      "textHash": "ca5bcec12f716f44d9745d349cc80422f0d14cbab09329caf533bef7c2d952eb",
+      "relativePath": "bat.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "generatedAt": "2026-10-05T00:37:46.044Z",
+      "preparedAt": "2026-11-01T04:28:56.920Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/5ba89121-4ca8-51de-b2d2-ce9ba00084d4.mp3",
+        "assetGuid": "5ba89121-4ca8-51de-b2d2-ce9ba00084d4"
+      },
+      "sha256": "53dea14a6eb2cfd3c7adb6412cee545607d9d57c0679b08e6fa28be703ff7dfa",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "bag",
+      "assetGuid": "phonics-short-a-bag",
+      "textHash": "c018019b6a8b01ab5868cf4be8db327a7549ae03202548b9ffcd2671c4c2b624",
+      "relativePath": "bag.mp3",
+      "durationSeconds": 1.176,
+      "bytes": 18860,
+      "generatedAt": "2026-10-05T00:36:28.649Z",
+      "preparedAt": "2026-11-01T04:28:56.963Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/be63fd22-30f2-55f4-88d1-5633149ddd18.mp3",
+        "assetGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18"
+      },
+      "sha256": "6d974ef55dde6dbe298d9af273802877af3d5b63652b5217d2d09b11e5784570",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "can",
+      "assetGuid": "phonics-short-a-can",
+      "textHash": "9f584196e7fe6de85d3898bc0b11c78b1d0a1d49530ee5eaf7c26c3939cf043d",
+      "relativePath": "can.mp3",
+      "durationSeconds": 1.416,
+      "bytes": 22700,
+      "generatedAt": "2026-10-05T00:51:04.996Z",
+      "preparedAt": "2026-11-01T04:28:57.009Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/0da06347-b050-56e2-98ce-25dd4a36a51b.mp3",
+        "assetGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b"
+      },
+      "sha256": "05e37a9cd220404eb9a60bd3d312603cb448cd7d6f1133b2e22c4e972eb4884a",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "fan",
+      "assetGuid": "phonics-short-a-fan",
+      "textHash": "e29a7f31cac05abc97e12380c8e7bfaf5fef0839fd58dbcb8e81b0036eabf04a",
+      "relativePath": "fan.mp3",
+      "durationSeconds": 1.968,
+      "bytes": 31532,
+      "generatedAt": "2026-10-05T01:13:02.596Z",
+      "preparedAt": "2026-11-01T04:28:57.053Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/ce088c7d-69bd-55e4-9262-02191457b458.mp3",
+        "assetGuid": "ce088c7d-69bd-55e4-9262-02191457b458"
+      },
+      "sha256": "e5ff9a1302ce6fd3d134c7813511852c14ac68768188881783cf6857b2bbb9d9",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "man",
+      "assetGuid": "phonics-short-a-man",
+      "textHash": "48b676e2b107da679512b793d5fd4cc4329f0c7c17a97cf6e0e3d1005b600b03",
+      "relativePath": "man.mp3",
+      "durationSeconds": 1.824,
+      "bytes": 29228,
+      "generatedAt": "2026-10-05T01:50:27.409Z",
+      "preparedAt": "2026-11-01T04:28:57.099Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/2844258b-bc8a-5114-8446-9d9d6ca8a79a.mp3",
+        "assetGuid": "2844258b-bc8a-5114-8446-9d9d6ca8a79a"
+      },
+      "sha256": "3fbf87b735ee1e94e8035a607a8326609a3f53de44484072dde453fc1ec4daf6",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "mat",
+      "assetGuid": "phonics-short-a-mat",
+      "textHash": "0c1c541af9cc252a1c759f3ae0416921e745c1d359dd9f782ec3d3ff0c432dcf",
+      "relativePath": "mat.mp3",
+      "durationSeconds": 1.824,
+      "bytes": 29228,
+      "generatedAt": "2026-11-01T04:29:01.969Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "fb9ad8ce743ab98e7524ba4b37c477c277663c8d7c1a23ff8a56b09434bc9b7e",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "sat",
+      "assetGuid": "phonics-short-a-sat",
+      "textHash": "339efeab70b4cc6e2755ec57d2290484ef2363f955c16df3900ad44382227429",
+      "relativePath": "sat.mp3",
+      "durationSeconds": 1.896,
+      "bytes": 30380,
+      "generatedAt": "2026-11-01T04:29:03.182Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "e7b2ebb8bdfee36a02eb256da565486d99bab6fe540ebcb76d963a07bf75210c",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "tap",
+      "assetGuid": "phonics-short-a-tap",
+      "textHash": "729cd87c6329408e2bbfea0e2055404969539832af12773b558aca625ccc9041",
+      "relativePath": "tap.mp3",
+      "durationSeconds": 1.176,
+      "bytes": 18860,
+      "generatedAt": "2026-11-01T04:29:03.961Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "aebb14603ddef3e6268d1955b0a8b8c4d47761663bdc2e5e8cefd40827e39ed6",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "pan",
+      "assetGuid": "phonics-short-a-pan",
+      "textHash": "00e37ffae0562ab6818d8f4f97457ac5f9679723c1b57f4b371b93f379f1c17a",
+      "relativePath": "pan.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "generatedAt": "2026-11-01T04:29:05.063Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "79c7653568497a64a76ff36142ece9f225b9dad3de7ed265acf463c85e64eda2",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "sentence",
+      "text": "A cat sat.",
+      "assetGuid": "phonics-short-a-sentence-1",
+      "textHash": "8686568f0586cba34e8b8a66db7640dc1c96a4818818f9eae75e15da5dff9287",
+      "relativePath": "sentence-1.mp3",
+      "durationSeconds": 1.968,
+      "bytes": 31532,
+      "generatedAt": "2026-11-01T04:29:06.201Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "d3c6104af2c7e402acf38d56600e84d8930b6e4ce8e2f4477e1fe5459070c6b2",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "sentence",
+      "text": "A cat sat on a mat.",
+      "assetGuid": "phonics-short-a-sentence-2",
+      "textHash": "bddb7263c74a4187829c5d1a6cca93a32af12164c4225bdf0d9be400ea426a52",
+      "relativePath": "sentence-2.mp3",
+      "durationSeconds": 2.544,
+      "bytes": 40748,
+      "generatedAt": "2026-11-01T04:29:07.748Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "98d0e879531c69239f9d107604a46c4164eb352e837c63ee91bc316c0d539e57",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "clap",
+      "assetGuid": "phonics-short-a-clap",
+      "textHash": "8cceaf5c89e63591aea2e0a16fd98363477c370764ffa98fa7f00a60928576e1",
+      "relativePath": "clap.mp3",
+      "durationSeconds": 3.096,
+      "bytes": 49580,
+      "generatedAt": "2026-10-05T03:05:12.318Z",
+      "preparedAt": "2026-11-01T04:45:38.930Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/3fb6f86d-879c-53ce-8a46-933487ce1fcf.mp3",
+        "assetGuid": "3fb6f86d-879c-53ce-8a46-933487ce1fcf"
+      },
+      "sha256": "5779758fb64d63076f7ac6ddcd54ac8bff40c485ee6819bd126c63fa1362c60f",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "hand",
+      "assetGuid": "phonics-short-a-hand",
+      "textHash": "1b001706a418bdfca35361355c643b7918572b8f9b7503f3043a6e23b45dce52",
+      "relativePath": "hand.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "generatedAt": "2026-10-05T01:26:32.989Z",
+      "preparedAt": "2026-11-01T04:45:38.975Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/9c789a02-da62-59ae-b3ff-fc5f2bd655d2.mp3",
+        "assetGuid": "9c789a02-da62-59ae-b3ff-fc5f2bd655d2"
+      },
+      "sha256": "f1f4ea44076a71a685bc0709ccaac71b6ecb32c3933fdcacebfd409cfea934e1",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "stamp",
+      "assetGuid": "phonics-short-a-stamp",
+      "textHash": "e0afcdbf6ad4adf566c572d7f7c34d4dfb85e5122bba750d6a3a5842f915d39b",
+      "relativePath": "stamp.mp3",
+      "durationSeconds": 1.488,
+      "bytes": 23852,
+      "generatedAt": "2026-10-05T03:17:53.983Z",
+      "preparedAt": "2026-11-01T04:45:39.021Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/88f9ffd5-8c30-590f-bc0f-ab864a3e44b3.mp3",
+        "assetGuid": "88f9ffd5-8c30-590f-bc0f-ab864a3e44b3"
+      },
+      "sha256": "fdde0c8bff1c89676a061e69d06b9e436c83bcc72931c4b88aefa7202dd35ec9",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "flag",
+      "assetGuid": "phonics-short-a-flag",
+      "textHash": "807d0fbcae7c4b20518d4d85664f6820aafdf936104122c5073e7744c46c4b87",
+      "relativePath": "flag.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "generatedAt": "2026-11-01T04:45:40.769Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "5b858bc41afed5e7681e5ffafcf292654225ac8d93e1397040949280f379fa95",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "hat",
+      "assetGuid": "phonics-short-a-hat",
+      "textHash": "18e1dd392168f601d0e568612a2bf40e6555c033e033b580ae6627d8aeee1150",
+      "relativePath": "hat.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "generatedAt": "2026-10-05T01:27:28.629Z",
+      "preparedAt": "2026-11-01T06:33:06.294Z",
+      "origin": {
+        "type": "reused-local-qwen3-tts",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/f3e1ee3b-d7ae-5ca6-891f-a89e853281c0.mp3",
+        "assetGuid": "f3e1ee3b-d7ae-5ca6-891f-a89e853281c0"
+      },
+      "sha256": "725f4a40e80451afc4c192b23c98575fcb10fc89518d2cfdfb96bfd96169a85d",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "ran",
+      "assetGuid": "phonics-short-a-ran",
+      "textHash": "c8fc6bf296faa18d058b23f9a467243a6f0a176f8d2c407e9c9ea06165da95f6",
+      "relativePath": "ran.mp3",
+      "durationSeconds": 1.656,
+      "bytes": 26540,
+      "generatedAt": "2026-11-01T06:33:23.890Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "6104ae8c3e71850f2150de49ae77fd82e645a1ea303f55a2003667610f1f0706",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "word",
+      "text": "nap",
+      "assetGuid": "phonics-short-a-nap",
+      "textHash": "82ebadafdeec2df737e59b762a3c868e5884731addc8cd687e78b5de93fd061c",
+      "relativePath": "nap.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "generatedAt": "2026-11-01T06:33:24.768Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "921315cab5154ff5118b1075f61b9fbb72e9033aea0162e476b71d9a27e86a82",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "kind": "sentence",
+      "text": "A man sat on a mat.",
+      "assetGuid": "phonics-short-a-sentence-family-2",
+      "textHash": "610f377c38dd05facdc53bc57cb4567f0b477f3ddf2bb94c03a4540218b19d94",
+      "relativePath": "sentence-family-2.mp3",
+      "durationSeconds": 3.024,
+      "bytes": 48428,
+      "generatedAt": "2026-11-01T06:33:27.086Z",
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "sha256": "3d9a302faf27afebeb0bbc8be640d6f8b1e5273581fa21797eacb5a4f7ed415e",
+      "listeningReview": "awaiting-human-listening"
+    }
+  ],
+  "lesson": "short-a",
+  "preparedAt": "2026-11-01T06:34:04.547Z",
+  "listeningReview": "awaiting-human-listening",
+  "scope": "整字與短句示範；沒有可宣稱已驗收的孤立音素或逐音拼合錄音。",
+  "notes": [
+    "a、on 為短句中的額外常用詞；a 在自然句中通常使用弱讀，不應當作本課 /æ/ 示範。",
+    "字母 c 在本課單字對應 /k/，字母名稱不能代替音素。",
+    "MP3 完整解碼通過只代表檔案有效；自然發音教學品質仍需人工試聽。"
+  ]
+}

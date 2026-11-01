@@ -5,7 +5,7 @@ export function LearningHome() {
   return <main className="wrap learning-home">
     <div className="greet">
       <h1 className="greet__hi">今天，想怎麼練習英文？</h1>
-      <p className="greet__sub">從文章理解語境，或從一個單字開始練習。</p>
+      <p className="greet__sub">閱讀文章、練習單字、探索情境，也能從聲音開始學會拼讀。</p>
     </div>
     <nav className="learning-paths" aria-label="學習功能">
       <a className="learning-path" href="#/articles">
@@ -19,6 +19,10 @@ export function LearningHome() {
       <a className="learning-path" href="#/scenarios">
         <div><h2>情境模擬</h2><p>在生活情境中運用英文。</p></div>
         <span className="learning-path__action">開始探索 <span aria-hidden="true">→</span></span>
+      </a>
+      <a className="learning-path" href="#/phonics">
+        <div><h2>自然發音</h2><p>聽聲音、看字形，一步步練習拼讀與拼字。</p></div>
+        <span className="learning-path__action">開始拼讀 <span aria-hidden="true">→</span></span>
       </a>
     </nav>
     <a className="learning-home__review" href="#/review"><HeadphonesIcon size={18} /> 回到我的單字複習 <span aria-hidden="true">→</span></a>
