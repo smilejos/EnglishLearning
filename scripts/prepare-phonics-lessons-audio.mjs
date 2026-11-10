@@ -1,13 +1,34 @@
-// 五個短母音的離線備音；不寫 DB，完整保留來源設定，僅缺件才呼叫本機 TTS。
+// 自然發音教材的離線備音；不寫 DB，完整保留來源設定，僅缺件才呼叫本機 TTS。
 import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { DEFAULT_PROFILE, generateBatch, withBatchLock } from './generate-wordbank-audio.mjs';
 import { validatePhonicsMp3 } from './phonics-audio-quality.mjs';
+import { phonicsPreparationDirectory } from './phonics-audio-paths.mjs';
 
 const root = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
-const preparation = path.join(root, 'docs/phonics/preparation/short-vowels');
+const batchLessons = {
+  'short-vowels': ['a', 'e', 'i', 'o', 'u'].map((vowel) => `short-${vowel}`),
+  'long-vowels': ['a', 'e', 'i', 'o', 'u'].map((vowel) => `long-${vowel}`),
+  'endings': ['s', 'es', 'ed', 'ing'].map((suffix) => `endings-${suffix}`),
+  'phonics-345': [
+    ...['l', 'r', 's', 'final', 'three'].map((kind) => `blends-${kind}`),
+    ...['sh', 'ch', 'th-voiceless', 'th-voiced', 'wh', 'ph', 'tch'].map((kind) => `digraph-${kind}`),
+    ...['ar', 'or', 'ore-oar'].map((kind) => `r-${kind}`),
+  ],
+};
+export function lessonMatchesBatch(id, batch) {
+  if (!Object.hasOwn(batchLessons, batch)) throw new Error('無效的教材批次');
+  return batchLessons[batch].includes(id);
+}
+export function validLessonId(id) {
+  return Object.values(batchLessons).some((ids) => ids.includes(id));
+}
+export function batchPreparation(batch = 'short-vowels') {
+  if (!Object.hasOwn(batchLessons, batch)) throw new Error('無效的教材批次');
+  return path.join(root, 'docs/phonics/preparation', batch);
+}
 const hash = (text) => createHash('sha256').update(text).digest('hex');
 const json = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const save = async (file, value) => writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
@@ -20,7 +41,7 @@ export function localTtsEndpoint(value = 'http://127.0.0.1:8000/v1/audio/speech'
 }
 
 export function planLesson(lesson) {
-  if (!/^short-[aeiou]$/.test(lesson.id)) throw new Error('無效的短母音課程');
+  if (!validLessonId(lesson.id)) throw new Error('無效的自然發音課程');
   const seen = new Set();
   return lesson.jobs.map(({ key, kind, text }) => {
     if (!/^[a-z0-9-]+$/.test(key) || seen.has(key)) throw new Error('音訊 key 無效或重複');
@@ -55,7 +76,7 @@ export async function selectValidSource(job, sources, verify, onExcluded = () =>
 
 async function prepareLesson(lesson, sources, mode, endpoint) {
   const jobs = planLesson(lesson);
-  const outputDir = path.join(root, 'web-learner/public/phonics', lesson.id);
+  const outputDir = phonicsPreparationDirectory(root, lesson.id);
   let manifest;
   try { manifest = await json(path.join(outputDir, 'manifest.json')); }
   catch (error) { if (error.code !== 'ENOENT') throw error; manifest = { version: 1, profile: DEFAULT_PROFILE, entries: [] }; }
@@ -112,15 +133,20 @@ async function prepareLesson(lesson, sources, mode, endpoint) {
 export async function main(args = process.argv.slice(2)) {
   let mode = 'dry-run';
   let selected = 'all';
+  let batch = 'short-vowels';
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--generate' || args[i] === '--reuse-only') mode = args[i].slice(2);
+    else if (args[i] === '--batch' && args[i + 1]) batch = args[++i];
     else if (args[i] === '--lesson' && args[i + 1]) selected = args[++i];
-    else throw new Error('僅接受 --lesson short-a/short-e/short-i/short-o/short-u/all、--reuse-only、--generate');
+    else throw new Error('僅接受 --batch short-vowels/long-vowels/phonics-345/endings、--lesson 課程識別/all、--reuse-only、--generate');
   }
+  const preparation = batchPreparation(batch);
   const endpoint = localTtsEndpoint(process.env.PHONICS_TTS_ENDPOINT);
   if (mode === 'generate' && process.env.PHONICS_REAL_TTS !== '1') throw new Error('本機產音須 PHONICS_REAL_TTS=1');
   const { lessons } = await json(path.join(preparation, 'audio-plan.json'));
   const { sources } = await json(path.join(preparation, 'audio-sources.json'));
+  if (lessons.some((lesson) => !lessonMatchesBatch(lesson.id, batch)))
+    throw new Error('課程與教材批次不符');
   if (selected !== 'all' && !lessons.some((lesson) => lesson.id === selected)) throw new Error('課程不存在');
   for (const lesson of lessons.filter((item) => selected === 'all' || item.id === selected))
     console.log(JSON.stringify(await prepareLesson(lesson, sources, mode, endpoint), null, 2));

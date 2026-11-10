@@ -6,6 +6,8 @@
 
 ## 已確認的方向
 
+- 時間介系詞圖解採離線套件的 optional `learningMode: "illustrated-guide"`，保留使用者認可的含文字教學圖，並如實標記 `assets.baseImage.containsVocabularyText: true`。此模式可使用 `prep` 目標詞，提供放大、查詞卡、解說文字／翻譯與英文旁白，不提供看圖回想。省略模式欄位的既有情境仍採無答案底圖與原本回想流程；Studio 尚未提供圖解製作流程。兩組教材與驗證進度見 [時間介系詞備料紀錄](preparation/time-prepositions/review.md)，離線完成不代表正式匯入或部署。
+
 - 以單一使用者的英文學習平台為前提，保留既有驗證與角色權限。
 - 第一批選詞使用 `level.list` 的 `basic`＋`advance` 聯集，不自動加入 expert 或未分類詞。原 [四十個八詞情境草稿](basic-advance-batch-01.md) 與 [客廳十五詞試點](packages/living-room-15-v1/README.md) 保留作歷史參考。現行每圖接受 1–29 個不同目標詞；15 名詞、5 形容詞、最多 5 動詞是選詞方向，每詞須有底圖線索，動詞不足可以少選。
 - 使用者指定清單時，離線套件與正式 content 可設 optional `vocabularyMode: "user-specified"`；目標與支援詞可使用真實 basic／advance／expert／未分級詞條，目標 `list` 保留字庫原值或 null，不偽標分級。省略此欄位仍是 basic／advance 分級模式，舊版格式及 hash 保持。後台 Studio 草稿仍只支援分級模式，未增加指定詞製作流程。

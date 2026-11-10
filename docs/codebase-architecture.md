@@ -1,13 +1,23 @@
 # 專案架構與功能導覽（以程式碼為準）
 
-> 2026-11-01 五短母音教材：第四入口 `#/phonics` 已接入 a／e／i／o／u 五課（各 `#/phonics/short-*`），共 56 個 CVC 詞、每課八題與兩句；保留短 a 字族與原 22 音檔。支援三示範、按字族連播／650ms 字間取消、0.8 倍速、課內暫存練習、短句支援詞片語示範。85 項播放需求為 41 重用／44 本機 Qwen3-TTS 補缺；後續聲學初篩修正 fed 近全靜音並加上兩備料工具的近靜音防護。本環境無音訊感知，實際發音聽審仍未完成；沒有音素音檔或自動發音評分。離線 canonical 已備 5 新詞及 8 既有詞例句增量，共 9,208 詞，正式 DB 仍為既有 9,203 詞基準，尚未正式回補或部署。本批測試、檔案驗證及桌機／手機實際範圍見 [五課紀錄](phonics/preparation/short-vowels/review.md)，隔離預覽及工具見 [試作文件](phonics-prototype.md)。
+> 2026-11-10 音源統一正式完成：Phonics 與獨立情境預覽改由 `/audio-assets/:scope/:lessonId` 取得 DB 綁定，再透過共用 `/audio/` 播放 audio volume。已套用唯一新增 migration，566 個來源／引用對應 553 個資產，305 檔新增／248 檔重用，舊 10,111 檔 SHA 全數未變；566 個專案靜態來源已可回復封存。30 組 metadata 與 554 個實際播放網址驗證通過；API／前台已更新且服務健康。pan 舊教材錄音以 assets 路徑保留，播放優先正式字庫原錄音。規範見 [音訊存放與搬遷](audio-storage.md)，備份、封存、測試與部署細節見 [正式紀錄](audio-migration-2026-11-10.md)。以下較早批次的隔離預覽與 public 音檔記錄為歷史製作狀態。
 
-> 2026-10-12 麥當勞正式匯入更新：四場已匯入，共 104 個目標；第四場最新為已發布 revision 2（Recycling Symbol 改 floor），前三場為已發布 revision 1，均標記餐廳分類（tag 24）；本 agent 未執行發布；後續唯讀 API 與一般前台查核確認四場已發布。37 新詞、既有兩詞 Others 分類及 Tray 中文釋義修正已正式寫入並同步 canonical source，目前 9,203 詞、27,648 段英文解釋、32,977 組中英例句，最高 source id 9212；首次匯入時 423 段新目標詞音與 4 份故事旁白已複製至 volume 並匯入 metadata，335 段有效舊音重用；第四場 r2 額外重製 1 份 Serena 故事旁白，184 段詞音重用、字庫與音 metadata 不變。api／web-learner 已在本批授權下健康更新，未跑 migration 或付費生成；652 項測試與 typecheck 通過，正式 Chrome 全部 104 詞卡、四場回想及 390px 手機指定操作已核對。完整人工試聽與全面品質／角色驗收待完成，不能宣稱品質可發布；Studio 仍使用既有 basic／advance 製作流程。詳見 [本批匯入紀錄](scenarios/preparation/mcdonalds-restaurant/review.md)。
+> 2026-11-08 時間介系詞：兩組illustrated-guide／user-specified教材（3／11個prep、各19句）已正式發布revision 1，指標均為1，歸入[語法情境tag28](http://127.0.0.1:8090/#/scenarios?category=28)。本輪新增autumn並對13舊詞partial merge，合計16 explain／16例句；33詞音複製／90重用，metadata只補33／原90不UPDATE，123詞音＋2圖＋2旁白共127媒體有效。正式字庫9,204詞／27,664解釋／32,993例句，最高source id9253；canonical9,244詞／27,784解釋／33,161例句，尚差40個phonics新詞／120解釋／168例句，分拆以實際delta為準。原13場／25revision與原資料不變；所需API／learner已於本輪前外部部署，三檔SHA及公開JS的guide／hide／show已核對，本輪未重建／啟停、migration或生成。878測試、全workspace typecheck及正式QA9項mock通過；正式API13卡／123音、素材hash／Range與新增語意通過。_test預覽已被測試清表失效；手機、完整點擊／聽審仍pending。見[正式成果](scenarios/preparation/time-prepositions/production-import-review.md)。
+
+> 2026-11-02 字尾變化：新增第六章與-s／-es／-ed／-ing四課，共33詞／32題／8句，目前六章29課。49段本機Qwen／Serena音訊已完成技術驗證，33詞與41段共用音訊離線備好，canonical為9,243詞；當時正式基準9,203詞，未匯入／未部署，人工發音聽審待完成。862項測試、typecheck、learner build與19項相關Node工具測試通過；桌機／375px手機指定操作及限制見[本批紀錄](phonics/preparation/endings/review.md)。
+
+> 2026-11-02 自然發音第三至五章：當時前台總覽擴為五章／25 小課，保留長短母音，新增子音混合5課、子音字母組合7課、r控制母音3課，共137課內詞次（跨課134詞）、120題、30句。221項音訊為63重用／158本機補缺，解碼、hash及近靜音初篩通過，人工聽審與完整手機驗收未完成。canonical補oar與本課例句後為9,210詞；76整詞＋30例句的共用音訊增量已離線備好，當時正式基準9,203詞，未匯入或部署。836項測試、typecheck、learner build及21項Node工具測試通過，詳見 [本批紀錄](phonics/preparation/phonics-345/review.md)。
+
+> 2026-11-01 五長母音教材：新增 `#/phonics/long-{a,e,i,o,u}` 五課，55詞／40題／10句，保留原五短母音。支援拼法→字族、全部結構預設、不連續字形與多字母作答塊，長U區分 /juː/／美式 /uː/。86項音訊為42重用／44本機Qwen補缺，檔案技術驗證通過，人工發音聽審未完成。canonical離線補為9,209詞，本批1新詞dune與10既有詞例句、23份共用音訊增量已備；當時正式基準為9,203詞，本批未入庫或部署。715項測試、typecheck、learner build通過；指定桌機／手機實跑及完整限制見 [長母音紀錄](phonics/preparation/long-vowels/review.md)。
+
+> 2026-11-01 五短母音教材：第四入口 `#/phonics` 已接入 a／e／i／o／u 五課（各 `#/phonics/short-*`），共 56 個 CVC 詞、每課八題與兩句；保留短 a 字族與原 22 音檔。支援三示範、按字族連播／650ms 字間取消、0.8 倍速、課內暫存練習、短句支援詞片語示範。85 項播放需求為 41 重用／44 本機 Qwen3-TTS 補缺；後續聲學初篩修正 fed 近全靜音並加上兩備料工具的近靜音防護。本環境無音訊感知，實際發音聽審仍未完成；沒有音素音檔或自動發音評分。離線 canonical 已備 5 新詞及 8 既有詞例句增量，共 9,208 詞，當時正式 DB 基準為既有 9,203 詞，尚未正式回補或部署。本批測試、檔案驗證及桌機／手機實際範圍見 [五課紀錄](phonics/preparation/short-vowels/review.md)，隔離預覽及工具見 [試作文件](phonics-prototype.md)。
+
+> 2026-10-12 麥當勞正式匯入更新：四場已匯入，共 104 個目標；第四場最新為已發布 revision 2（Recycling Symbol 改 floor），前三場為已發布 revision 1，均標記餐廳分類（tag 24）；本 agent 未執行發布；後續唯讀 API 與一般前台查核確認四場已發布。37 新詞、既有兩詞 Others 分類及 Tray 中文釋義修正已正式寫入並同步 canonical source，當時基準 9,203 詞、27,648 段英文解釋、32,977 組中英例句，最高 source id 9212；首次匯入時 423 段新目標詞音與 4 份故事旁白已複製至 volume 並匯入 metadata，335 段有效舊音重用；第四場 r2 額外重製 1 份 Serena 故事旁白，184 段詞音重用、字庫與音 metadata 不變。api／web-learner 已在本批授權下健康更新，未跑 migration 或付費生成；652 項測試與 typecheck 通過，正式 Chrome 全部 104 詞卡、四場回想及 390px 手機指定操作已核對。完整人工試聽與全面品質／角色驗收待完成，不能宣稱品質可發布；Studio 仍使用既有 basic／advance 製作流程。詳見 [本批匯入紀錄](scenarios/preparation/mcdonalds-restaurant/review.md)。
 
 > 2026-10-10 正式查核更新：客廳 `living-room / 1` 已匯入正式 DB，並依使用者「直接發佈」指示轉為 **published**，一般情境清單可見；十五詞 120 段字庫錄音有效（含既有 advance 27 段 metadata／檔案匯入）。正式庫已存在兩個情境 migrations，既有服務可由一般情境入口開啟客廳；該次查核沒有 migration、部署、啟動生成服務或重新生成。實際結果及未完驗收見 [匯入紀錄](scenarios/packages/living-room-15-v1/import-review.md)。
 
 > 供新進 agent 與維護者先建立全貌，再依任務閱讀相關程式。
-> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-10-12（麥當勞四場已發布／第四場 r2／前三場 r1、9,203 詞 canonical 與 api／learner 更新）。情境的 migration、匯入器、API、learner 及完整後台製作流程已實作；先前已在 `_test` 作本機 QA，2026-10-10 正式客廳 draft 匯入及桌機／手機指定版本查核通過。底圖、Serena 故事 31.896 秒與客廳 advance 27 段錄音已備妥，使用者已認可客廳版本；2026-10-10 已核對正式庫存在兩個情境 migrations，匯入 advance 27 段 metadata 及客廳 revision 1 draft；該次客廳查核未執行部署，已依使用者授權發布客廳 revision 1，完整品質／權限驗收待完成。後台生成測試使用假 client，未新增真實生成呼叫。2026-10-07 字庫補齊的既有正式資料狀態如下：本機正式 DB 已套用字庫 migration、匯入全部 9,166 詞條；來源 JSON 與正式字庫逐筆一致，中文釋義、英文解釋及例句缺漏均為零，補齊結果見 [完成報告](wordbank-completion-2026-10-07.md)。basic 的 1,193 單字、4,108 英文例句與 3,591 英文解釋共 8,892 段 MP3 已完成，並複製至 audio volume、匯入 metadata；本次補文字保留全部音檔 metadata，未新增產音。字庫新版先前已在本機預覽；2026-10-10 發布前既有正式入口可預覽客廳 draft，發布後一般入口已可見；完整後台部署驗收另行確認，該次字庫／客廳查核未執行部署。舊圖片轉換 migration 已於 2026-09-27 套用正式 DB，相關程式碼的部署狀態仍另行確認。
+> 初始分析日期：2026-09-20；初始程式碼基準：`a1f32ea`；最近同步：2026-11-08（時間介系詞兩組已正式發布／語法情境tag28；離線canonical9,244詞、正式9,204詞；_test預覽已失效）。情境的 migration、匯入器、API、learner 及完整後台製作流程已實作；先前已在 `_test` 作本機 QA，2026-10-10 正式客廳 draft 匯入及桌機／手機指定版本查核通過。底圖、Serena 故事 31.896 秒與客廳 advance 27 段錄音已備妥，使用者已認可客廳版本；2026-10-10 已核對正式庫存在兩個情境 migrations，匯入 advance 27 段 metadata 及客廳 revision 1 draft；該次客廳查核未執行部署，已依使用者授權發布客廳 revision 1，完整品質／權限驗收待完成。後台生成測試使用假 client，未新增真實生成呼叫。2026-10-07 字庫補齊的既有正式資料狀態如下：本機正式 DB 已套用字庫 migration、匯入全部 9,166 詞條；來源 JSON 與正式字庫逐筆一致，中文釋義、英文解釋及例句缺漏均為零，補齊結果見 [完成報告](wordbank-completion-2026-10-07.md)。basic 的 1,193 單字、4,108 英文例句與 3,591 英文解釋共 8,892 段 MP3 已完成，並複製至 audio volume、匯入 metadata；本次補文字保留全部音檔 metadata，未新增產音。字庫新版先前已在本機預覽；2026-10-10 發布前既有正式入口可預覽客廳 draft，發布後一般入口已可見；完整後台部署驗收另行確認，該次字庫／客廳查核未執行部署。舊圖片轉換 migration 已於 2026-09-27 套用正式 DB，相關程式碼的部署狀態仍另行確認。
 > 本文由實際原始碼、SQL migrations、執行設定、腳本與測試整理；初始整理未使用 `docs` 內既有需求／設計文件，也未以 README 的功能敘述代替程式分析。後續同步會連結已確認的需求文件。這是現況快照，不是未來需求清單。遇到差異，以當下可執行程式與 migration 為準。
 
 > 2026-10-11 麥當勞批次規劃追加：單場硬性上限已由 25 調整為 29，契約、後台選詞、離線預檢與圖片座標 gate 同步；既有 15／25 詞套件與 revision 內容不變。當時規劃階段未部署或寫入正式庫。2026-10-12 已完成指定詞的真實 expert／null 分級與 Unicode 完整片語故事映射相容支援，並於本批後續授權下完成 api／learner 更新、37 新詞入庫及四場正式 draft 匯入；品質與發布狀態分別以批次紀錄確認。
@@ -26,14 +36,14 @@
 4. **文章插圖**：admin 估價並建立版本 → 文字模型提出視覺設定與可編輯 Prompt → 人工逐步生成、審核參考圖與封面 → 逐段生圖或略過 → 整版發布 → 前台顯示。
 5. **字庫練習**：入口首頁選單字練習 → 選一套分級及精確級別 → API 隨機抽一個詞條及最多三個例句 → 單純練習、聽力或單字挑戰；不保存作答紀錄或建立收藏。
 6. **情境學習**：後台依底圖選 1–29 詞與設定場景 → 個別啟動故事／圖片／Serena 錄音 → 編輯互動位置及審閱 → 建立不可覆寫 draft revision → 預覽與發布 → 前台看圖學習／回想、聽故事與按 GUID 查字庫。離線套件與匯入器仍可使用；正式客廳 revision 1 已匯入並發布；麥當勞四場已匯入（餐廳 tag 24）、api／learner 已更新；前三場 r1 與第四場 r2 皆已發布；完整後台部署驗收另行確認。流程見 [情境匯入文件](scenarios/generation-import-workflow.md)、[逐一匯入準則](scenarios/import-criteria.md) 與 [情境製作後台](scenarios/admin-studio.md)。
-7. **自然發音（試作）**：前台總覽 → a／e／i／o／u 任一課 → 三個整詞認識聲音 → 按字族拼讀與連播 → 每課八題 → 兩個短句與支援詞片語示範；五課共 56 個 CVC 詞。教材與音檔固定於前台，保留字庫 GUID 映射，不在開頁查庫或生成、不保存跨次紀錄、不接收藏。本機隔離預覽與未驗限制見 [試作文件](phonics-prototype.md)，尚未部署。
+7. **自然發音（試作）**：前台六章總覽 → 短母音／長母音／子音混合／子音字母組合／r控制母音／字尾變化 → 全部29小課 → 三個整詞認識聲音 → 按拼法與字族／詞組拼讀連播 → 每課八題 → 兩個短句與支援片語。保留五短課56詞與五長課55詞；子音與r章十五課137課內詞次，含兩種th、tch與ar／or／ore／oar；字尾章四課33詞，含-s／-es／-ed／-ing與原形對照。音素結構與字形位置分開，/r/仍算子音，新子音課不誤標母音為目標。教材資料保留於前台，音檔由共用 DB registry／字庫查詢取得 API URL，保留字庫 GUID 映射；不在開頁或播放時生成，不保存跨次紀錄、不接收藏。本機隔離預覽與未驗限制見 [試作文件](phonics-prototype.md)，本批未部署。
 
 新 agent 必須先知道的邊界：
 
 - `done` 是文章翻譯／語音流程的完成狀態，**不代表插圖已發布**；沒有插圖也能閱讀。
 - 單字解釋與「已解釋」標記是全站共用資料，**不是個人背單字或學習進度**；主動收藏與熟悉狀態另存於 `vocabulary_items`／`vocabulary_sources`。
 - 字庫 `wordbank_entries`／`wordbank_audio` 與文章單字、收藏分開，提供 JSON 匯入、離線產音、讀取 API 與獨立練習頁。字庫練習不改動既有收藏／複習。需求、準備狀態與操作入口見 `docs/wordbank-practice-requirements.md`。
-- 本機正式字庫的 9,203 筆基準均有中文釋義及至少三段英文解釋，合計 27,648 段解釋、32,977 組中英例句，最高 source id 9212；五短母音備料後的離線來源另有 9,208 詞、27,663 解釋及 33,000 例句，最高 source id 9217，五詞增量尚未正式匯入。字庫補缺原則保留既有詞性、分級及非空文字；本批另依授權修正 Tray 中文並合併兩詞 Others 分類。覆核發現的其他既有錯配另列於完成報告，補齊不代表所有舊內容已校正。
+- 2026-11-08正式字庫唯讀SQL聚合確認 **9,204詞、27,664英文解釋、32,993中英例句，最高source id9253**。時間介系詞只新增autumn及13既有詞的26子項，含autumn共16解釋／16例句；2026-10-12的9,203詞／27,648解釋／32,977例句／最高id9212為當時基準。離線canonical維持9,244詞／27,784解釋／33,161例句／最高id9253，尚差40個phonics新詞、120解釋及168例句未正式匯入，來源各批分拆以實際delta為準，不屬本批正式授權。字庫補缺保留既有GUID、詞性、分級及非空文字；Tray中文與兩詞Others分類為先前麥當勞批次修正。既有其他錯配仍見完成報告，不因本次匯入宣稱全部已校正。
 - 文章 job、圖片 job、單字背景 TTS 是三種不同機制，不可直接套用同一套重試方式。
 - 前後台各有本地型別與 API client；瀏覽器程式沒有直接依賴 `@el/shared`。
 - API 沒有統一 `/api` 前綴，使用 `/articles`、`/words` 等頂層路徑，新增路徑要一起檢查反向代理。
@@ -79,14 +89,14 @@ flowchart TD
 | `shared/src/scenarioStudio/`、`api/src/routes/scenarioStudio.ts`、`worker/src/scenario-index.ts` | 可編輯製作草稿、Prompt／故事映射、持久化生成工作與 lease、候選媒體、字庫缺音與版本建立；worker 為獨立 profile |
 | `shared/src/illustrations/` | 圖片契約、模型／價格目錄、版本與審核、佇列、供應商、檔案儲存 |
 | `web-learner/src/` | React 學習前台；`App.tsx`、`LearningHome.tsx`、`WordbankPractice.tsx`、`useArticlePlayer.ts`、`AudioBar.tsx`、`Illustration.tsx` |
-| `web-learner/src/PhonicsLearning.tsx`、`phonicsLesson.ts`、`public/phonics/short-{a,e,i,o,u}/` | 五短母音共56個CVC詞、40題、10句，顯式字形／目標位置與支援片語；實際85項播放需求，另保留六個舊素材。`scripts/preview-phonics.mjs` 提供隔離預覽，`prepare-phonics-lessons-audio.mjs` 明確opt-in本機補音，`phonics-audio-quality.mjs` 僅排除近靜音、不驗發音；字庫回補工具只離線備料 |
+| `web-learner/src/PhonicsLearning.tsx`、`phonicsLesson.ts`、`public/phonics/{short,long}-{a,e,i,o,u}/`、`phonicsLongLessons.ts` | 五短母音56詞、五長母音55詞及新增十五課137詞次；新增資料在 `phonicsBlendLessons.ts`／`phonicsDigraphLessons.ts`／`phonicsRControlledLessons.ts`，每課8題／2句，顯式字形／目標位置與支援片語，支援不連續母音、多字母作答與結構篩選。`scripts/preview-phonics.mjs` 提供隔離預覽，`prepare-phonics-lessons-audio.mjs` 明確opt-in本機補音，`phonics-audio-quality.mjs` 僅排除近靜音、不驗發音；字庫回補工具只離線備料 |
 | `web-admin/src/` | React 後台；`App.tsx` 管主要頁面，`GenerationSettings.tsx` 管文字／語音／圖片三項生成設定，`AudioBackfillPanel.tsx` 管缺失音檔，`Illustrations.tsx` 管圖片生命週期 |
 | `migrations/` | DB 結構的可執行演進；不能只讀初始 migration 判定現況 |
 | `config/generation-models.json`、`image-models.json`、`image-pricing.json` | 共用文字／語音模型與聲線、圖檔模型與參數、圖片及規劃費率 |
 | `docker-compose.yml`、各 Dockerfile | 部署服務、相依啟動順序、掛載、ports、healthcheck |
 | `proxy/nginx.conf`、兩個前端 nginx／Vite 設定 | 正式與開發環境的路徑轉發 |
 | `scripts/`、`fixtures/seed/` | 部署、備份、免 LLM 示範資料匯入 |
-| `source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts`、repo、`scripts/import-vocabulary*.ts`、`scripts/generate-wordbank-audio.mjs` | 獨立字庫（來源9,208詞／正式9,203詞基準）、補缺匯入、音檔 metadata 校驗、本機 Qwen3-TTS 批次生成 |
+| `source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts`、repo、`scripts/import-vocabulary*.ts`、`scripts/generate-wordbank-audio.mjs` | 獨立字庫（來源9,244詞／正式9,204詞）、補缺匯入、音檔 metadata 校驗、本機 Qwen3-TTS 批次生成 |
 | `.github/workflows/ci.yml` | Node 20 CI：安裝、型別檢查、測試、前端 build、測試庫清理 |
 
 技術組合：TypeScript、Node 20、Fastify 4、React 18、Vite 5、PostgreSQL 16、`pg`、Zod、Vitest；前端測試使用 happy-dom／Testing Library；圖片轉檔用 sharp，音訊轉檔用 ffmpeg。版本以各 `package.json` 與 lockfile 為準。
@@ -135,13 +145,17 @@ flowchart TD
 - 字庫英文解釋也逐段提供朗讀：單純練習、挑戰提示及揭曉後可播；聽力揭曉前不顯示解釋或朗讀按鈕。basic 追加 3,591 段解釋已生成並接入，總音檔為 8,892；`data/wordbank-audio/explanation-completion.json` 狀態為 complete。
 - 級別及抽題各有載入／錯誤／重試狀態，空範圍顯示調整級別提示。揭曉後焦點移至答案標題，揭曉前朗讀標籤不包含答案。頁面不保存成績、熟悉或收藏資料，不影響文章收藏／複習。
 
-### 自然發音（純前台試作）
+### 自然發音（教材試作，共用音訊 API）
 
-- `#/phonics` 為總覽，`#/phonics/short-a` 為短母音 a 課程，分為認識聲音、看字拼讀、動手練習與讀個短句。第一階段以 cat／man／map 跨三族示範；第二階段預設 -at 五詞，可切 -an 五詞／-ap 四詞，共 14 詞。點詞立即播放、正常或 0.8 倍速、只連播目前族的 N 詞，每字間隔 650ms，進度依實際數量；切族停止音訊與待播、重設第一詞但不自動播放。
-- 全課八題聽音選字／點字母拼字混合三字族，答案與干擾詞在本課詞表；以第一次作答統計，可只重練錯題或全部重練，離開練習會重設，不保存跨次紀錄、不影響收藏。兩句為 `A cat sat.` 與 `A man sat on a mat.`，翻譯預設收合、可點重點詞／播整句，自行朗讀核對；第二句搭配男子坐墊子的 SVG。
-- 教材資料明列 familyId／structure／phonemes／graphemes／targetRanges，畫面依資料呈現字形、目標與 CVC 標籤；目前仍只接入短 a／拼法 a 及三字母 CVC，本次不聲稱已完成其他母音、通用教材匯入、a_e 等不連續字形或不同字形塊作答支援。後續製作規範見 phonics-lesson Skill，實作現況以當下程式為準。
-- 音訊素材庫共 22 段（12 段重用、10 段本機生成），本課使用 14 詞＋2 句的 16 項內容；保留舊詞與舊句，不計入本課詞數。本輪 hat 重用，ran／nap／新句三段本機生成，原 18 檔 hash 不變。共用 `audioBus`，換族／換階段／換題／離頁或外部音源接手時停止播放及待播，失敗停止連播並可重試。沒有孤立音素／逐音錄音；A／a 弱讀及 on 另作支援詞，不當 `/æ/` 示範。桌面指定字族／連播已由主線 native Chrome 確認；手機及完整人工聽審待完成，測試與建置結果見 [本輪紀錄](phonics/preparation/short-a-word-families/review.md)。
-- `npm run phonics:preview` 啟動固定 127.0.0.1:5174 的隔離 Vite，不載入正式 proxy；`/me` 回空使用者，其他既有 API 回 503。因此在該預覽點舊功能會看到未連線訊息，不代表正式功能損壞。正式 auth 未修改，本批未寫正式 DB 或部署；一般 `npm run dev` 不提供此隔離。詳見 [試作操作與驗證](phonics-prototype.md)。
+- `#/phonics` 顯示六章：`short-vowels`、`long-vowels`、`blends`、`digraphs`、`r-controlled`、`endings`，分別5／5／5／7／3／4課。前兩章仍按a→e→i→o→u；子音與r章依l／r／s／字尾／三子音、sh／ch／兩種th／wh／ph／tch、ar／or／ore-oar排序；字尾章依-s／-es／-ed／-ing排序。章節返回總覽，小課頂端及最後階段返回所屬章節，既有小課網址仍可直接開啟。各課保留認識聲音、看字拼讀、動手練習與讀個短句四階段，可自由切換。
+- 新課資料在 `phonicsBlendLessons.ts`、`phonicsDigraphLessons.ts`、`phonicsRControlledLessons.ts`，共137詞次／120題／30句，跨課134詞；按目標拼法與詞組分組，不把同字首詞誤稱共同韻尾字族。字形與音素分開，r課把/ɑ/或/ɔ/後的/r/另計C，目標字形標籤為「母音＋r」。工具 `--batch phonics-345` 使用15課明確白名單，保留舊批次隔離與路徑／覆寫防護。共用字庫備料及人工聽審界線見 [本批紀錄](phonics/preparation/phonics-345/review.md)。
+- 字尾課資料在 `phonicsInflectedLessons.ts`，共33詞／32題／8句；依最後聲音比較-s的/s z/、-es的/ɪz/、-ed的/t d ɪd/及-ing的/ɪŋ/，明列雙寫／去e／保留y與原形對照。es、/ɪd/的ed及ing逐音拆字形，x的/k s/算兩C，雙寫及ng各一C。49段本機錄音技術驗證通過，33新詞與41段共用音訊僅離線備好，正式未匯入／未部署、人工聽審待完成，見[字尾製作紀錄](phonics/preparation/endings/review.md)；備料工具 `prepare-phonics-endings.mjs` 的snapshot/preflight只有唯讀交易。
+- 長課依 A→E→I→O→U 安排，教 `a_e／ai／ay`、`ee／ea`、`i_e／igh`、`o_e／oa／ow`、`u_e`。長 u 分 /juː/ 與美式 /uː/；/j/ 另計子音。新課逐詞資料在 `phonicsLongLessons.ts`，保留顯式 phonemes／graphemes／targetRanges；不連續母音字形可有多個範圍，原字順序不變，拼字作答用獨立的 `spellingUnits`，不以字元數判定多字母塊完成。
+- 第二階段按主題→拼法→字族導覽，結構篩選預設全部，不排除 CV／CCV。進入時選第一字族第一詞；可點詞、正常／0.8 倍速與連播目前實際 N 詞，字間 650ms，同步選詞與進度。切拼法／字族／結構篩選停止音訊與待播、重設第一詞且不自動播放；空詞表停用播放。
+- 各課八題聽音選字／拼字，以第一次作答計本輪結果，可重聽錯詞、只重練錯題或全部重練；重複字形塊使用獨立識別。離開練習重設，不保存跨次紀錄、不接收藏。各課兩個自然短句，中文預設收合，可播整句、重點詞及支援片語；自行朗讀核對，沒有自動評分或孤立音素錄音。
+- 音訊沿用 `audioBus`，切課／階段／題目／離頁、改播或外部音源接手均取消舊播放與待播，錯誤停止後可重試。只在備料時重用／本機補缺，不在開頁或播放時生成。教材來源、檔案技術驗證、人工聽審與正式共用字庫匯入分開記錄，未聽審不稱品質通過。各批紀錄見 [短母音](phonics/preparation/short-vowels/review.md) 與 [長母音](phonics/preparation/long-vowels/review.md)。
+- Phonics 播放前按課載入 `/audio-assets/phonics/:lessonId`，DB 綁定指向共用音訊資產；文字與用途仍符合字庫時優先使用當前 `wordbank_audio`。未映射至字庫的片語使用同樣 profileHash／GUID 檔名規則。檔案只由 `AUDIO_DIR` 與 `/audio/` 提供，API 失敗不回退 public 音檔。獨立 `scenario-preview.html` 同樣使用 `/audio-assets/scenario-preview/living-room`，不再打包本機 MP3。
+- `npm run phonics:preview` 固定於 127.0.0.1:5174，改為唯讀同源 API proxy（`VITE_API_PROXY`，預設 localhost:8080）；讀取既有身分與音訊 API，拒絕寫入及舊 public 音檔，已不再是斷開正式 DB 的隔離模式。沒有啟動生成服務。正式文字增量仍須依各批匯入狀態判定；音源搬遷不等於字庫文字增量匯入。工具與操作見 [音訊存放與搬遷](audio-storage.md)。
 
 ### 情境模擬
 
@@ -152,6 +166,9 @@ flowchart TD
 - 故事由「放大圖片」旁按鈕開 Modal，繁中預設收合；查詞切換同一 Modal 並可返回。完整旁白有播放／暫停、重播、速度與失敗重試；共用音源仲裁，查詞／關閉 Modal 時暫停並保留故事位置，不自動續播。
 - 看圖學習顯示全部目標詞；看圖回想依本場實際存在的名詞／形容詞／動詞獨立開關，可累加揭曉、再次點選收起，也可全部揭曉／收起。查詞只開放已揭曉詞；全部目標詞揭曉前隱藏故事、翻譯與旁白入口，收起任一已揭曉類別時關閉故事並暫停旁白。不新增作答紀錄或收藏。Modal 支援焦點回復、Escape、背景關閉、背景鎖捲動。
 - 正式 content／離線套件可設 optional `vocabularyMode: "user-specified"`，目標 `list` 保留真實 basic／advance／expert／null，故事支援詞亦可用真實未分級詞；省略時仍限選定 basic／advance，舊版格式與 hash 不變。指定詞完整片語（含 Unicode、連字號）以單一 `wordLinks` UTF-16 span 連到正式完整詞條，整個片語可點，與圖片標籤使用同一 GUID；共用 `scenario-word-links.mjs` 驗全部 token 依序、無重疊且完整覆蓋，完整片語字形須一致。後台 Studio 仍只支援 basic／advance 草稿；正式內容相容改動已於 2026-10-12 本批部署到 api／learner，四場 draft 與所有目標詞卡已核對，包含完整 À la carte span。後台製作流程未因離線指定詞匯入而擴充，品質與發布狀態另看批次紀錄。
+- 新增 optional `learningMode: "illustrated-guide"` 圖解學習：離線套件要求已審核且 `baseImage.containsVocabularyText: true`，保留含字教學圖；普通模式仍強制 false。僅圖解模式可使用 `prep` 目標並核對真實字庫詞性；前台明示圖解學習、不提供回想，保留點詞卡、故事及旁白。清單僅圖解模式增加介系詞計數；省略模式的舊內容 hash 與 n／adj／v 統計格式不變。Studio 製作流程仍限原詞性與分級；此支援不代表教材已匯入或程式已部署。
+- 看圖學習及圖解學習提供「隱藏單字／顯示單字」，只收起網站疊加的單字標籤、箭頭與點選位置，不隱藏圖片內固有文字，也不影響故事入口。放大／還原圖片保留隱藏狀態，換情境、版本或學習模式恢復顯示；看圖回想仍使用原詞性揭曉控制，不提供此按鈕。
+- 時間介系詞兩組illustrated-guide已正式發布revision 1／pointer1，沿用情境標籤關聯，歸入「語法情境」（kind情境、tag28），未新增schema或修改教材content。圖解停用回想；看圖學習提供隱藏／顯示單字，可一起隱藏標籤與箭頭。正式API／公開bundle已驗，不代表真點擊；手機／完整聽審仍待驗。歷史`preview-time-prepositions.ts --browse`僅寫_test，曾使用tag3；全庫測試清表後該預覽已失效、本輪未重建。正式入口及證據見[本批紀錄](scenarios/preparation/time-prepositions/review.md)。
 - optional `story.paragraphBreakAfterSentenceIds` 同步切分中英故事文字，可呈現兩個相連短段；仍只有一個全文 MP3。省略欄位的舊版維持原格式及 hash。
 
 01–09 歷史修訂查核紀錄：該批已完成正式 draft 匯入與本機桌機／手機驗收，共 213 個目標詞次；九張底圖全部復用，生成 9 個新版全文旁白，只補缺少的 84 段目標詞錄音。最新版除 07 圖書館／09 科學實驗為 revision 3，其餘為 revision 2；兩篇 revision 3 只修正座標，未重產圖片或錄音，兩篇 revision 2 仍保留。原 revision 1 的 hash／狀態／發布指標不變，客廳仍發布 1，其餘仍未發布；本輪未部署或發布新版，未完成人工完整試聽或正式 learner 角色端到端驗收。備份完整 gzip／tar／dump 解析通過，但 `restoreTest: false`；10 仍等待 image gate，11–40 未開始。詳見 [九篇修訂驗收](scenarios/preparation/basic-advance-01/revision-02-import-review.md) 與 [修訂操作](../scripts/scenarios/README.md)。
@@ -466,7 +483,7 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 - `worker/src/processor.test.ts`：批次翻譯／回退、部分重生、退避、stale 回收、狀態聚合。
 - 前端 `*.test.ts(x)`：純函式、路由、分享、音源仲裁、播放器、圖片 fallback／單字操作、後台錯誤與圖片審核操作。
 - 收藏測試：`api/src/routes/vocabulary.test.ts` 驗證 CRUD、日期／來源語意及權限；`web-learner/src/VocabularyReview.test.tsx` 驗證篩選、挑戰、失敗保留、來源失效與音訊停止；App 與 route 測試涵蓋收藏入口及返回定位。
-- 字庫測試：`shared/src/wordbank.test.ts`、`repo/wordbank.test.ts` 涵蓋來源校驗、全 9,203 字匯入／重匯、後補資料保留、分級精確匹配與音檔 GUID／hash；另以 `npm run vocabulary:audio:test` 驗證生成器的續跑、損毀重建、失敗回應、下載中斷與儲存失敗，不混入一般真實 TTS 呼叫。
+- 字庫測試：`shared/src/wordbank.test.ts`、`repo/wordbank.test.ts` 涵蓋來源校驗、全 9,244 字匯入／重匯、後補資料保留、分級精確匹配與音檔 GUID／hash；另以 `npm run vocabulary:audio:test` 驗證生成器的續跑、損毀重建、失敗回應、下載中斷與儲存失敗，不混入一般真實 TTS 呼叫。
 - 字庫 API／介面測試：`api/src/routes/wordbank.test.ts` 涵蓋級別數量、同套 OR／精確匹配、未分類、隨機三句、空池、非法 query、音檔文字更新失效、身分驗證與不建立 job／收藏；`web-learner/src/WordbankPractice.test.tsx`、`lib/wordbank.test.ts` 涵蓋三模式、Unicode 遮罩、揭曉前 DOM／aria 不洩漏、競態、缺資料、錯誤／重試、音訊停止；App／route 測試保留首頁、文章與複習導航。
 - 情境測試：`shared/src/scenarios.vocabulary.test.ts` 檢查指定詞 expert／null、Unicode 完整片語、UTF-16 span 與分級保護；`shared/src/scenarios.test.ts` 檢查媒體安全路徑／symlink／hash／不覆寫；`api/src/routes/scenarios.test.ts` 檢查 draft／published 權限、公共音檔阻擋、冪等／衝突及交易回滾／COMMIT 復原；`web-learner/src/ScenarioLearning.test.tsx` 檢查故事、單字、回想、Modal 與假 Audio。實跑結果以交付回報為準。
 - 製作後台測試：shared `scenarioStudio/{contracts,providers,processor}.test.ts` 使用假 fetch／client；API `scenarioStudio.test.ts` 驗 admin 權限、選詞、草稿 CAS、取消未知費用、素材安全、版本鎖及晚到故事候選；admin `ScenarioStudio.test.tsx`／`scenarioStudioApi.test.ts` 驗手動生成、候選套用、輪詢與衝突。一般測試不啟動真實情境 worker。
@@ -503,8 +520,8 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 | 朗讀、跳段、速度、疊音 | `web-learner/src/useArticlePlayer.ts`、`AudioBar.tsx`、`lib/audioBus.ts` |
 | 點字、片語、來源解釋、已解釋標記 | learner `WordPopup`／`ClickableText`、`api/src/routes/lookups.ts`、`shared/src/repo/wordExplanations.ts`、`normalizeWord.ts`／`tokenizeWords.ts` |
 | 收藏、複習、熟悉狀態、日期／來源篩選 | learner `VocabularyReview.tsx`／`lib/vocabulary.ts`／`vocabularyTypes.ts`、App `WordPopup`、`lib/route.ts`、API／repo `vocabulary.ts`、收藏 migration 與相關測試 |
-| 入口首頁、字庫練習、9,203 字、Qwen3-TTS 批次產音 | `docs/wordbank-practice-requirements.md`、learner `LearningHome.tsx`／`WordbankPractice.tsx`／`lib/wordbank.ts`、API `routes/wordbank.ts`、`shared/src/repo/wordbankPractice.ts`、`source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts` 與 repo、`scripts/import-vocabulary*.ts`／`generate-wordbank-audio.mjs` |
-| 自然發音、新主題教材製作、短母音 a、隔離預覽與本機教材音訊 | 新主題製作使用 [phonics-lesson Skill](../.agents/skills/phonics-lesson/SKILL.md)；現況見 `docs/phonics-prototype.md`、learner `PhonicsLearning.tsx`／`PhonicsLearning.css`／`phonicsLesson.ts`、`App.phonics.test.tsx`／`PhonicsLearning.test.tsx`、`web-learner/public/phonics/short-a/manifest.json`、`scripts/preview-phonics.mjs`／`preview-phonics.test.mjs`／`generate-phonics-audio.mjs`；純前台試作，未部署，不寫正式 DB |
+| 入口首頁、字庫練習、9,204 字、Qwen3-TTS 批次產音 | `docs/wordbank-practice-requirements.md`、learner `LearningHome.tsx`／`WordbankPractice.tsx`／`lib/wordbank.ts`、API `routes/wordbank.ts`、`shared/src/repo/wordbankPractice.ts`、`source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts` 與 repo、`scripts/import-vocabulary*.ts`／`generate-wordbank-audio.mjs` |
+| 自然發音、新主題教材製作、短母音 a、隔離預覽與本機教材音訊 | 新主題製作使用 [phonics-lesson Skill](../.agents/skills/phonics-lesson/SKILL.md)；現況見 `docs/phonics-prototype.md`、learner `PhonicsLearning.tsx`／`PhonicsLearning.css`／`phonicsLesson.ts`／`phonicsBlendLessons.ts`／`phonicsDigraphLessons.ts`／`phonicsRControlledLessons.ts`／`phonicsInflectedLessons.ts`、`App.phonics.test.tsx`／`PhonicsLearning.test.tsx`、`web-learner/public/phonics/short-a/manifest.json`、`scripts/preview-phonics.mjs`／`preview-phonics.test.mjs`／`generate-phonics-audio.mjs`；純前台試作；本輪未重建／匯入其他phonics增量，40新詞及相關子項仍未正式入庫 |
 | 情境教材、後台製作、1–29 詞修訂、匯入／發布／旁白／QA | `docs/scenarios/{admin-studio,generation-import-workflow,import-criteria,web-preview}.md`、`scripts/scenarios/README.md`、`packages/living-room-15-v1/`、`<key>-r2/` 與 `preparation/basic-advance-01/revision-02-import-review.md`；shared `scenarios.ts`／`scenario-word-links.mjs`／`repo/scenarios.ts`／`scenarioStudio/`、API `routes/scenarios.ts`／`scenarioStudio.ts`、migration `1791504000000_scenarios.sql`／`1791504000001_scenario-studio.sql`、worker `scenario-index.ts`、admin `ScenarioStudio.tsx` 與 learner `ScenarioLearning.tsx`／`ScenarioAudio.tsx`／`ScenarioDialog.tsx`／`ScenarioWordCard.tsx`。已實作；2026-10-12 麥當勞四場／104 目標、37 新詞、423 新目標音與初次4旁白匯入；前三場 r1 已發布，第四場 r2 換成 floor 並重製1旁白，四場後續均已發布，api／learner 已更新，完整人工試聽與品質待完成，見 `preparation/mcdonalds-restaurant/review.md`。01–09 歷史修訂紀錄：新版正式 draft／213 詞次及本機桌機／手機驗收完成，9 個新旁白／84 段缺音已補；07／09 最新 revision 3 僅改座標，其餘 revision 2，底圖及舊版保留。新版未部署／發布，完整人工試聽待完成；客廳發布指標仍為 1，其餘未發布；10 image gate／11–40 未開始；原 `ScenarioPreview` 獨立預覽保留 |
 | 翻譯品質／TTS 失敗或重試 | `worker/src/processor.ts`、`shared/src/repo/jobs.ts`、`shared/src/llm/`、音訊工具 |
 | 生成供應商、模型、聲線設定或 Google Vertex AI 端點 | admin `GenerationSettings.tsx`、API `generationSettings.ts`、`shared/src/{generationSettings,generationClients}.ts`、`shared/src/llm/{auth,genai}.ts`、repo、migration、API／worker 入口 |

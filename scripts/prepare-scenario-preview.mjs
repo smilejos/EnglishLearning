@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// 離線預覽素材準備：不連資料庫、不呼叫生成 API。
+// 離線預覽文字／音訊識別碼準備：不連資料庫、不呼叫生成 API、不複製音檔。播放由共用 API 解析。
 import { createHash } from 'node:crypto';
-import { copyFile, mkdir, readFile, realpath, stat, writeFile } from 'node:fs/promises';
+import { readFile, realpath, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateScenarioPackage } from './check-scenario-package.mjs';
@@ -15,7 +15,7 @@ const inside = (base, file) => {
 };
 
 /** 來源詞條先完整核對，再選擇有效音檔；無效或缺音一律回傳 null。 */
-export async function buildScenarioPreview({ pkg, sourceEntries, manifest, audioRoot, outputAudioDir }) {
+export async function buildScenarioPreview({ pkg, sourceEntries, manifest, audioRoot }) {
   const byGuid = new Map(sourceEntries.map((entry) => [entry.guid, entry]));
   const required = [...pkg.targets, ...pkg.story.sentences.flatMap((sentence) => sentence.wordLinks)];
   for (const item of required) {
@@ -69,10 +69,6 @@ export async function buildScenarioPreview({ pkg, sourceEntries, manifest, audio
       wordAudioKey: await audioKey(entry, 'word', guid, entry.word),
     });
   }
-  if (outputAudioDir) {
-    await mkdir(outputAudioDir, { recursive: true });
-    for (const [key, file] of files) await copyFile(file, path.join(outputAudioDir, key));
-  }
   const data = {
     scenarioKey: pkg.scenarioKey, titleZh: pkg.titleZh,
     story: { textEn: pkg.story.textEn, textZh: pkg.story.textZh, sentences: pkg.story.sentences },
@@ -97,8 +93,7 @@ export async function prepareScenarioPreview(repoRoot = root) {
   const audioRoot = path.join(repoRoot, 'data/wordbank-audio');
   let manifest = null;
   try { manifest = JSON.parse(await readFile(path.join(audioRoot, 'manifest.json'), 'utf8')); } catch { /* 缺音明示，不生成。 */ }
-  const { data, stats } = await buildScenarioPreview({ pkg, sourceEntries: source.entries, manifest, audioRoot,
-    outputAudioDir: path.join(repoRoot, 'data/scenario-preview/living-room/audio') });
+  const { data, stats } = await buildScenarioPreview({ pkg, sourceEntries: source.entries, manifest, audioRoot });
   await writeFile(path.join(repoRoot, 'web-learner/src/scenarioPreviewData.json'), `${JSON.stringify(data, null, 2)}\n`);
   return stats;
 }

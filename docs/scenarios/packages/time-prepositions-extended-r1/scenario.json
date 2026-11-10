@@ -1,0 +1,1666 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "time-prepositions-extended",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "時間介系詞圖解：先後、持續與期限",
+  "learningMode": "illustrated-guide",
+  "vocabularyMode": "user-specified",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "expert"
+    ]
+  },
+  "targetCount": 11,
+  "targets": [
+    {
+      "word": "before",
+      "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在某時間或事件之前：before lunch（午餐前），比午餐早；與 after lunch（午餐後）對照。",
+      "interaction": {
+        "label": {
+          "x": 0.09,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.09,
+          "y": 0.215
+        }
+      }
+    },
+    {
+      "word": "after",
+      "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在某時間或事件之後：after lunch（午餐後），比午餐晚；與 before lunch（午餐前）對照。",
+      "interaction": {
+        "label": {
+          "x": 0.255,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.255,
+          "y": 0.215
+        }
+      }
+    },
+    {
+      "word": "from",
+      "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "指出一段時間的起點，常與 to 配對：from nine in the morning to five in the afternoon（從早上九點到下午五點）。圖中 from 9:00 a.m. 是起點。",
+      "interaction": {
+        "label": {
+          "x": 0.41,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.41,
+          "y": 0.215
+        }
+      }
+    },
+    {
+      "word": "to",
+      "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "指出 from…to… 時間範圍的終點：from nine in the morning to five in the afternoon（從早上九點到下午五點）。本圖 to 5:00 p.m. 是終點，不是「距離五點還差幾分」的用法。",
+      "interaction": {
+        "label": {
+          "x": 0.585,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.585,
+          "y": 0.215
+        }
+      }
+    },
+    {
+      "word": "by",
+      "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "最晚在指定時間完成，包含提前完成：Finish by five／Finish by 5:00 p.m.（最晚下午五點完成）。不是一直做事到五點；持續到五點用 until。",
+      "interaction": {
+        "label": {
+          "x": 0.69,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.69,
+          "y": 0.215
+        }
+      }
+    },
+    {
+      "word": "until",
+      "entryGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "動作或狀態持續到指定時間：Work until five／Work until 5:00 p.m.（持續工作到下午五點）。與 by 的完成期限不同；till 也可表達此義，本場不另列目標。",
+      "interaction": {
+        "label": {
+          "x": 0.69,
+          "y": 0.405
+        },
+        "object": {
+          "x": 0.69,
+          "y": 0.405
+        }
+      }
+    },
+    {
+      "word": "for",
+      "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "接時間長度，回答持續多久：for two hours（持續兩小時）。不指出起點；since 指起點，during 指在哪段期間內。",
+      "interaction": {
+        "label": {
+          "x": 0.11,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.11,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "since",
+      "entryGuid": "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "接過去起點，表示持續到參照時間；本例用現在完成式：I have been here since Monday.（我從星期一起就一直在這裡。）圖中 Monday → now 表示從星期一延續到現在。",
+      "interaction": {
+        "label": {
+          "x": 0.28,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.28,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "during",
+      "entryGuid": "00676060-6b5b-564b-9108-e58900a36b8b",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在某個期間或事件內：during the meeting（在會議期間）。不單靠此詞判定活動持續多久，也不表示一定整場都在做；與 for two hours 的時間長度不同。",
+      "interaction": {
+        "label": {
+          "x": 0.435,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.435,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "in",
+      "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在本圖未來句 I will be back in two hours. 中，in two hours 指從現在算起「兩小時後」回來。與第一張圖 in April 等期間用法不同；也與 within 的「最晚兩小時內」有別。",
+      "interaction": {
+        "label": {
+          "x": 0.57,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.57,
+          "y": 0.665
+        }
+      }
+    },
+    {
+      "word": "within",
+      "entryGuid": "1716c62d-9d1d-510c-b7a7-779558ff5c4d",
+      "list": "expert",
+      "teachingPos": "prep",
+      "senseZh": "在指定長度的時間內、不晚於終點：I will be back within two hours.（我會在兩小時內回來。）可以提早，也可以在兩小時的期限到達時回來；與 in two hours（兩小時後）對照。",
+      "interaction": {
+        "label": {
+          "x": 0.775,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.775,
+          "y": 0.665
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "Look at more words for time. Before lunch means earlier than lunch. After lunch means later than lunch. From and to show the start and end. Say from nine in the morning to five in the afternoon. Finish by five means finish at five or earlier. Work until five means keep working up to five. By shows when to finish, but until shows how long to keep working. For two hours tells us how long. I have been here since Monday. Since Monday tells us when the time started. It continues from Monday to now. We can talk during the meeting. During tells us when, but for tells us how long. I will be back in two hours. Here, in two hours means two hours from now. I will be back within two hours. Within two hours means no later than two hours from now. I can be back earlier, too.",
+    "textZh": "看看更多表達時間的字。before lunch 表示在午餐之前。after lunch 表示在午餐之後。from 和 to 分別指出起點和終點。說 from nine in the morning to five in the afternoon，表示從早上九點到下午五點。Finish by five 表示最晚五點完成，也可以提早完成。Work until five 表示持續工作到五點。by 指出完成期限，until 則指出持續工作到何時。for two hours 告訴我們持續多久：兩小時。我從星期一起就一直在這裡。since Monday 告訴我們開始的時間是星期一。這個狀態從星期一持續到現在。我們可以在會議期間交談。during 說明在哪段期間內，for 則說明持續多久。我會在兩小時後回來。這裡的 in two hours 表示從現在算起兩小時後。我會在兩小時內回來。within two hours 表示最晚在從現在算起的兩小時內。我也可以提早回來。",
+    "sentences": [
+      {
+        "id": "s01",
+        "en": "Look at more words for time.",
+        "zh": "看看更多表達時間的字。",
+        "wordLinks": [
+          {
+            "surface": "Look",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "more",
+            "word": "more",
+            "entryGuid": "66f118af-d262-5cc8-8a87-78bb5102ddca",
+            "isTarget": false,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "words",
+            "word": "word",
+            "entryGuid": "5ddbc179-ce06-5d38-a696-9154669775a2",
+            "isTarget": false,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": true,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 23,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "en": "Before lunch means earlier than lunch.",
+        "zh": "before lunch 表示在午餐之前。",
+        "wordLinks": [
+          {
+            "surface": "Before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": true,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "lunch",
+            "word": "lunch",
+            "entryGuid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+            "isTarget": false,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "means",
+            "word": "mean",
+            "entryGuid": "f1bc8511-fec9-5e46-8419-e5d36b1d75db",
+            "isTarget": false,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "earlier",
+            "word": "early",
+            "entryGuid": "c7d3a31f-3e97-5902-ab18-67a5355fd15d",
+            "isTarget": false,
+            "start": 19,
+            "end": 26
+          },
+          {
+            "surface": "than",
+            "word": "than",
+            "entryGuid": "bc27cdcf-5c93-5bd0-97c6-c367fd3ffd69",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          },
+          {
+            "surface": "lunch",
+            "word": "lunch",
+            "entryGuid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+            "isTarget": false,
+            "start": 32,
+            "end": 37
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "en": "After lunch means later than lunch.",
+        "zh": "after lunch 表示在午餐之後。",
+        "wordLinks": [
+          {
+            "surface": "After",
+            "word": "after",
+            "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+            "isTarget": true,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "lunch",
+            "word": "lunch",
+            "entryGuid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+            "isTarget": false,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "surface": "means",
+            "word": "mean",
+            "entryGuid": "f1bc8511-fec9-5e46-8419-e5d36b1d75db",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "later",
+            "word": "late",
+            "entryGuid": "64658923-65b4-570b-8b90-8fb01b136abf",
+            "isTarget": false,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "than",
+            "word": "than",
+            "entryGuid": "bc27cdcf-5c93-5bd0-97c6-c367fd3ffd69",
+            "isTarget": false,
+            "start": 24,
+            "end": 28
+          },
+          {
+            "surface": "lunch",
+            "word": "lunch",
+            "entryGuid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+            "isTarget": false,
+            "start": 29,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "id": "s04",
+        "en": "From and to show the start and end.",
+        "zh": "from 和 to 分別指出起點和終點。",
+        "wordLinks": [
+          {
+            "surface": "From",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": true,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 5,
+            "end": 8
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": true,
+            "start": 9,
+            "end": 11
+          },
+          {
+            "surface": "show",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "start",
+            "word": "start",
+            "entryGuid": "631dcd39-cb09-5f75-b6d6-8587dca9b87f",
+            "isTarget": false,
+            "start": 21,
+            "end": 26
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "end",
+            "word": "end",
+            "entryGuid": "40b5005d-7c55-58f9-8fe5-0cd57d2fcc16",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "id": "s05",
+        "en": "Say from nine in the morning to five in the afternoon.",
+        "zh": "說 from nine in the morning to five in the afternoon，表示從早上九點到下午五點。",
+        "wordLinks": [
+          {
+            "surface": "Say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": true,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "nine",
+            "word": "nine",
+            "entryGuid": "5c69a7d1-e706-5e9b-aa56-256745650956",
+            "isTarget": false,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 21,
+            "end": 28
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": true,
+            "start": 29,
+            "end": 31
+          },
+          {
+            "surface": "five",
+            "word": "five",
+            "entryGuid": "45115dd9-2021-5ee0-9431-a51cfbc9ae14",
+            "isTarget": false,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 37,
+            "end": 39
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          },
+          {
+            "surface": "afternoon",
+            "word": "afternoon",
+            "entryGuid": "a5cbff0b-6a99-57e0-a364-070342039e0f",
+            "isTarget": false,
+            "start": 44,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s06",
+        "en": "Finish by five means finish at five or earlier.",
+        "zh": "Finish by five 表示最晚五點完成，也可以提早完成。",
+        "wordLinks": [
+          {
+            "surface": "Finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "by",
+            "word": "by",
+            "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+            "isTarget": true,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "five",
+            "word": "five",
+            "entryGuid": "45115dd9-2021-5ee0-9431-a51cfbc9ae14",
+            "isTarget": false,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "means",
+            "word": "mean",
+            "entryGuid": "f1bc8511-fec9-5e46-8419-e5d36b1d75db",
+            "isTarget": false,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "five",
+            "word": "five",
+            "entryGuid": "45115dd9-2021-5ee0-9431-a51cfbc9ae14",
+            "isTarget": false,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "or",
+            "word": "or",
+            "entryGuid": "36fc537e-61ac-5cf7-97bc-ab53bb8712fa",
+            "isTarget": false,
+            "start": 36,
+            "end": 38
+          },
+          {
+            "surface": "earlier",
+            "word": "early",
+            "entryGuid": "c7d3a31f-3e97-5902-ab18-67a5355fd15d",
+            "isTarget": false,
+            "start": 39,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s07",
+        "en": "Work until five means keep working up to five.",
+        "zh": "Work until five 表示持續工作到五點。",
+        "wordLinks": [
+          {
+            "surface": "Work",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "until",
+            "word": "until",
+            "entryGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+            "isTarget": true,
+            "start": 5,
+            "end": 10
+          },
+          {
+            "surface": "five",
+            "word": "five",
+            "entryGuid": "45115dd9-2021-5ee0-9431-a51cfbc9ae14",
+            "isTarget": false,
+            "start": 11,
+            "end": 15
+          },
+          {
+            "surface": "means",
+            "word": "mean",
+            "entryGuid": "f1bc8511-fec9-5e46-8419-e5d36b1d75db",
+            "isTarget": false,
+            "start": 16,
+            "end": 21
+          },
+          {
+            "surface": "keep",
+            "word": "keep",
+            "entryGuid": "d63f5c23-0339-5669-92a1-9c8f139bb857",
+            "isTarget": false,
+            "start": 22,
+            "end": 26
+          },
+          {
+            "surface": "working",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 27,
+            "end": 34
+          },
+          {
+            "surface": "up",
+            "word": "up",
+            "entryGuid": "08d48d37-0ccc-58b7-b5a9-2399901b077d",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": true,
+            "start": 38,
+            "end": 40
+          },
+          {
+            "surface": "five",
+            "word": "five",
+            "entryGuid": "45115dd9-2021-5ee0-9431-a51cfbc9ae14",
+            "isTarget": false,
+            "start": 41,
+            "end": 45
+          }
+        ]
+      },
+      {
+        "id": "s08",
+        "en": "By shows when to finish, but until shows how long to keep working.",
+        "zh": "by 指出完成期限，until 則指出持續工作到何時。",
+        "wordLinks": [
+          {
+            "surface": "By",
+            "word": "by",
+            "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+            "isTarget": true,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 3,
+            "end": 8
+          },
+          {
+            "surface": "when",
+            "word": "when",
+            "entryGuid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+            "isTarget": false,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": true,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "finish",
+            "word": "finish",
+            "entryGuid": "689c1611-0b3a-56b8-861f-9eecfcc108b0",
+            "isTarget": false,
+            "start": 17,
+            "end": 23
+          },
+          {
+            "surface": "but",
+            "word": "but",
+            "entryGuid": "6bc80d04-84e6-5602-a22e-ab8101e03ee7",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "until",
+            "word": "until",
+            "entryGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 35,
+            "end": 40
+          },
+          {
+            "surface": "how",
+            "word": "how",
+            "entryGuid": "46750fe2-26a0-516a-8c88-a4b9259ddc38",
+            "isTarget": false,
+            "start": 41,
+            "end": 44
+          },
+          {
+            "surface": "long",
+            "word": "long",
+            "entryGuid": "c00a40eb-0325-52fb-8048-fd066da109cd",
+            "isTarget": false,
+            "start": 45,
+            "end": 49
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": true,
+            "start": 50,
+            "end": 52
+          },
+          {
+            "surface": "keep",
+            "word": "keep",
+            "entryGuid": "d63f5c23-0339-5669-92a1-9c8f139bb857",
+            "isTarget": false,
+            "start": 53,
+            "end": 57
+          },
+          {
+            "surface": "working",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 58,
+            "end": 65
+          }
+        ]
+      },
+      {
+        "id": "s09",
+        "en": "For two hours tells us how long.",
+        "zh": "for two hours 告訴我們持續多久：兩小時。",
+        "wordLinks": [
+          {
+            "surface": "For",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": true,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 4,
+            "end": 7
+          },
+          {
+            "surface": "hours",
+            "word": "hour",
+            "entryGuid": "3ed127c8-9262-53f0-ae59-31863d78d764",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "tells",
+            "word": "tell",
+            "entryGuid": "950c89ca-5d11-5366-9780-786c9ff70af7",
+            "isTarget": false,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "us",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 20,
+            "end": 22
+          },
+          {
+            "surface": "how",
+            "word": "how",
+            "entryGuid": "46750fe2-26a0-516a-8c88-a4b9259ddc38",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          },
+          {
+            "surface": "long",
+            "word": "long",
+            "entryGuid": "c00a40eb-0325-52fb-8048-fd066da109cd",
+            "isTarget": false,
+            "start": 27,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s10",
+        "en": "I have been here since Monday.",
+        "zh": "我從星期一起就一直在這裡。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "have",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "been",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "here",
+            "word": "here",
+            "entryGuid": "cc8ad8fc-76f2-52e9-b835-5ef466586a6c",
+            "isTarget": false,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "since",
+            "word": "since",
+            "entryGuid": "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+            "isTarget": true,
+            "start": 17,
+            "end": 22
+          },
+          {
+            "surface": "Monday",
+            "word": "Monday",
+            "entryGuid": "256f851e-ad22-53bd-ad0b-626c6147668b",
+            "isTarget": false,
+            "start": 23,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "id": "s11",
+        "en": "Since Monday tells us when the time started.",
+        "zh": "since Monday 告訴我們開始的時間是星期一。",
+        "wordLinks": [
+          {
+            "surface": "Since",
+            "word": "since",
+            "entryGuid": "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+            "isTarget": true,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "Monday",
+            "word": "Monday",
+            "entryGuid": "256f851e-ad22-53bd-ad0b-626c6147668b",
+            "isTarget": false,
+            "start": 6,
+            "end": 12
+          },
+          {
+            "surface": "tells",
+            "word": "tell",
+            "entryGuid": "950c89ca-5d11-5366-9780-786c9ff70af7",
+            "isTarget": false,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "us",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 19,
+            "end": 21
+          },
+          {
+            "surface": "when",
+            "word": "when",
+            "entryGuid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+            "isTarget": false,
+            "start": 22,
+            "end": 26
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "started",
+            "word": "start",
+            "entryGuid": "631dcd39-cb09-5f75-b6d6-8587dca9b87f",
+            "isTarget": false,
+            "start": 36,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "id": "s12",
+        "en": "It continues from Monday to now.",
+        "zh": "這個狀態從星期一持續到現在。",
+        "wordLinks": [
+          {
+            "surface": "It",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "continues",
+            "word": "continue",
+            "entryGuid": "8610dc52-4df9-5e30-a5a2-fcc50a532380",
+            "isTarget": false,
+            "start": 3,
+            "end": 12
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": true,
+            "start": 13,
+            "end": 17
+          },
+          {
+            "surface": "Monday",
+            "word": "Monday",
+            "entryGuid": "256f851e-ad22-53bd-ad0b-626c6147668b",
+            "isTarget": false,
+            "start": 18,
+            "end": 24
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": true,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "now",
+            "word": "now",
+            "entryGuid": "7a20bd51-d7f6-50f5-9806-b843a7af14de",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s13",
+        "en": "We can talk during the meeting.",
+        "zh": "我們可以在會議期間交談。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "talk",
+            "word": "talk",
+            "entryGuid": "1361dba3-7b46-5cee-af47-99476ec3c803",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "during",
+            "word": "during",
+            "entryGuid": "00676060-6b5b-564b-9108-e58900a36b8b",
+            "isTarget": true,
+            "start": 12,
+            "end": 18
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "meeting",
+            "word": "meeting",
+            "entryGuid": "29109427-cb76-5824-ae5b-9cb14a799334",
+            "isTarget": false,
+            "start": 23,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "id": "s14",
+        "en": "During tells us when, but for tells us how long.",
+        "zh": "during 說明在哪段期間內，for 則說明持續多久。",
+        "wordLinks": [
+          {
+            "surface": "During",
+            "word": "during",
+            "entryGuid": "00676060-6b5b-564b-9108-e58900a36b8b",
+            "isTarget": true,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "tells",
+            "word": "tell",
+            "entryGuid": "950c89ca-5d11-5366-9780-786c9ff70af7",
+            "isTarget": false,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "us",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "when",
+            "word": "when",
+            "entryGuid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+            "isTarget": false,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "but",
+            "word": "but",
+            "entryGuid": "6bc80d04-84e6-5602-a22e-ab8101e03ee7",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": true,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "tells",
+            "word": "tell",
+            "entryGuid": "950c89ca-5d11-5366-9780-786c9ff70af7",
+            "isTarget": false,
+            "start": 30,
+            "end": 35
+          },
+          {
+            "surface": "us",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 36,
+            "end": 38
+          },
+          {
+            "surface": "how",
+            "word": "how",
+            "entryGuid": "46750fe2-26a0-516a-8c88-a4b9259ddc38",
+            "isTarget": false,
+            "start": 39,
+            "end": 42
+          },
+          {
+            "surface": "long",
+            "word": "long",
+            "entryGuid": "c00a40eb-0325-52fb-8048-fd066da109cd",
+            "isTarget": false,
+            "start": 43,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s15",
+        "en": "I will be back in two hours.",
+        "zh": "我會在兩小時後回來。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "will",
+            "word": "will",
+            "entryGuid": "c05eaf90-ad2d-5a0a-803d-625f721b18d4",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "be",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "back",
+            "word": "back",
+            "entryGuid": "79052125-6cc1-55c6-80e6-91ca929b5ccd",
+            "isTarget": false,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "hours",
+            "word": "hour",
+            "entryGuid": "3ed127c8-9262-53f0-ae59-31863d78d764",
+            "isTarget": false,
+            "start": 22,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "id": "s16",
+        "en": "Here, in two hours means two hours from now.",
+        "zh": "這裡的 in two hours 表示從現在算起兩小時後。",
+        "wordLinks": [
+          {
+            "surface": "Here",
+            "word": "here",
+            "entryGuid": "cc8ad8fc-76f2-52e9-b835-5ef466586a6c",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 9,
+            "end": 12
+          },
+          {
+            "surface": "hours",
+            "word": "hour",
+            "entryGuid": "3ed127c8-9262-53f0-ae59-31863d78d764",
+            "isTarget": false,
+            "start": 13,
+            "end": 18
+          },
+          {
+            "surface": "means",
+            "word": "mean",
+            "entryGuid": "f1bc8511-fec9-5e46-8419-e5d36b1d75db",
+            "isTarget": false,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "hours",
+            "word": "hour",
+            "entryGuid": "3ed127c8-9262-53f0-ae59-31863d78d764",
+            "isTarget": false,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": true,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "now",
+            "word": "now",
+            "entryGuid": "7a20bd51-d7f6-50f5-9806-b843a7af14de",
+            "isTarget": false,
+            "start": 40,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "id": "s17",
+        "en": "I will be back within two hours.",
+        "zh": "我會在兩小時內回來。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "will",
+            "word": "will",
+            "entryGuid": "c05eaf90-ad2d-5a0a-803d-625f721b18d4",
+            "isTarget": false,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "be",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "back",
+            "word": "back",
+            "entryGuid": "79052125-6cc1-55c6-80e6-91ca929b5ccd",
+            "isTarget": false,
+            "start": 10,
+            "end": 14
+          },
+          {
+            "surface": "within",
+            "word": "within",
+            "entryGuid": "1716c62d-9d1d-510c-b7a7-779558ff5c4d",
+            "isTarget": true,
+            "start": 15,
+            "end": 21
+          },
+          {
+            "surface": "two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "hours",
+            "word": "hour",
+            "entryGuid": "3ed127c8-9262-53f0-ae59-31863d78d764",
+            "isTarget": false,
+            "start": 26,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s18",
+        "en": "Within two hours means no later than two hours from now.",
+        "zh": "within two hours 表示最晚在從現在算起的兩小時內。",
+        "wordLinks": [
+          {
+            "surface": "Within",
+            "word": "within",
+            "entryGuid": "1716c62d-9d1d-510c-b7a7-779558ff5c4d",
+            "isTarget": true,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 7,
+            "end": 10
+          },
+          {
+            "surface": "hours",
+            "word": "hour",
+            "entryGuid": "3ed127c8-9262-53f0-ae59-31863d78d764",
+            "isTarget": false,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "surface": "means",
+            "word": "mean",
+            "entryGuid": "f1bc8511-fec9-5e46-8419-e5d36b1d75db",
+            "isTarget": false,
+            "start": 17,
+            "end": 22
+          },
+          {
+            "surface": "no",
+            "word": "no",
+            "entryGuid": "1db4d66b-943e-51e2-b2af-0c5baabcd53d",
+            "isTarget": false,
+            "start": 23,
+            "end": 25
+          },
+          {
+            "surface": "later",
+            "word": "late",
+            "entryGuid": "64658923-65b4-570b-8b90-8fb01b136abf",
+            "isTarget": false,
+            "start": 26,
+            "end": 31
+          },
+          {
+            "surface": "than",
+            "word": "than",
+            "entryGuid": "bc27cdcf-5c93-5bd0-97c6-c367fd3ffd69",
+            "isTarget": false,
+            "start": 32,
+            "end": 36
+          },
+          {
+            "surface": "two",
+            "word": "two",
+            "entryGuid": "75425602-6d68-58fb-a110-ba8a0840b417",
+            "isTarget": false,
+            "start": 37,
+            "end": 40
+          },
+          {
+            "surface": "hours",
+            "word": "hour",
+            "entryGuid": "3ed127c8-9262-53f0-ae59-31863d78d764",
+            "isTarget": false,
+            "start": 41,
+            "end": 46
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": true,
+            "start": 47,
+            "end": 51
+          },
+          {
+            "surface": "now",
+            "word": "now",
+            "entryGuid": "7a20bd51-d7f6-50f5-9806-b843a7af14de",
+            "isTarget": false,
+            "start": 52,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "id": "s19",
+        "en": "I can be back earlier, too.",
+        "zh": "我也可以提早回來。",
+        "wordLinks": [
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 2,
+            "end": 5
+          },
+          {
+            "surface": "be",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "surface": "back",
+            "word": "back",
+            "entryGuid": "79052125-6cc1-55c6-80e6-91ca929b5ccd",
+            "isTarget": false,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "earlier",
+            "word": "early",
+            "entryGuid": "c7d3a31f-3e97-5902-ab18-67a5355fd15d",
+            "isTarget": false,
+            "start": 14,
+            "end": 21
+          },
+          {
+            "surface": "too",
+            "word": "too",
+            "entryGuid": "25320ac0-3865-50ac-ba1d-320e13d2a26b",
+            "isTarget": false,
+            "start": 23,
+            "end": 26
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/time-prepositions/02-more-time-prepositions-landscape-v2.png",
+      "sha256": "0daddcd50f29d5fb57e566a395518463caef0cce2936e9cf1968fa620bfd139b"
+    },
+    "baseImage": {
+      "path": "output/imagegen/time-prepositions/02-more-time-prepositions-landscape-v2.png",
+      "sha256": "0daddcd50f29d5fb57e566a395518463caef0cce2936e9cf1968fa620bfd139b",
+      "reviewed": true,
+      "containsVocabularyText": true
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/time-prepositions-extended-r1/scenarios/time-prepositions-extended/r1/09eeb3d17582e855/story-90fab37db22523f1.mp3",
+      "sha256": "3c0f5fd3bb53b58ee23cedc6fae255408161907c90c21554a2856e879b54c973",
+      "language": "en",
+      "textSha256": "90fab37db22523f15d59a4e29b86853b4db4b2038f9ee039085deb6a39839fe1",
+      "durationSeconds": 80.136,
+      "bytes": 1282220,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reuse-user-approved",
+      "width": 1672,
+      "height": 941,
+      "generationRequired": false
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "language": "en",
+      "textSha256": "90fab37db22523f15d59a4e29b86853b4db4b2038f9ee039085deb6a39839fe1",
+      "voice": "Serena",
+      "method": "local Qwen3-TTS",
+      "generated": true,
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "reuseExisting": true,
+      "status": "offline-complete-awaiting-listening-review",
+      "entryGuids": [
+        "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+        "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+        "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+        "8be6b5fd-78fa-58ca-bb30-784540380f41",
+        "6ff0b69d-d838-598a-a758-40b4091f6989",
+        "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+        "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+        "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+        "00676060-6b5b-564b-9108-e58900a36b8b",
+        "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+        "1716c62d-9d1d-510c-b7a7-779558ff5c4d"
+      ],
+      "noteZh": "本機離線詞音已齊，完整解碼／近靜音初篩通過；人工發音聽審待完成。正式音訊 metadata 尚未查核或寫入；_test 已匯入不代表正式入庫。",
+      "manifest": {
+        "path": "data/scenario-wordbank-audio/time-prepositions/manifest.json",
+        "sha256": "759b0b53a8959ef09bff9d15189f29c73af3c70bbe3c0f1a74ac23e8f38b4fbb"
+      },
+      "audioVerification": {
+        "path": "docs/scenarios/preparation/time-prepositions/audio-verification.json",
+        "sha256": "95a2a54940c153eaef1a58ba90577687ba13d09d37ce1ce0d9163efe2dd8a4e2"
+      },
+      "counts": {
+        "sceneClips": 105,
+        "reusedAtGeneration": 78,
+        "newGenerated": 27,
+        "sharedInClips": 9
+      },
+      "batchCounts": {
+        "uniqueClips": 123,
+        "oldReused": 90,
+        "newGenerated": 33,
+        "includingStoryClips": 125
+      }
+    }
+  },
+  "contentReview": {
+    "status": "offline-prepared-awaiting-ui-and-audio-review",
+    "explicitGrammarMappings": {
+      "years": "year",
+      "months": "month",
+      "seasons": "season",
+      "parts": "part",
+      "days": "day",
+      "dates": "date",
+      "words": "word",
+      "means": "mean",
+      "shows": "show",
+      "tells": "tell",
+      "hours": "hour",
+      "been": "be",
+      "started": "start",
+      "continues": "continue",
+      "working": "work",
+      "happens": "happen",
+      "lasts": "last",
+      "phrases": "phrase",
+      "these": "this",
+      "us": "we",
+      "earlier": "early",
+      "later": "late"
+    },
+    "noteZh": "圖解底圖含答案，不提供回想；每詞一入口。索引為句內 UTF-16，不是音訊時間。"
+  }
+}

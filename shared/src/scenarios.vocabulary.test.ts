@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { ScenarioContentSchema, type ScenarioContent } from "./scenarios";
-import { validateScenarioWordbank } from "./repo/scenarios";
+import { ScenarioContentSchema, scenarioCanonicalJson, scenarioRevisionHash, type ScenarioContent, type ScenarioMedia } from "./scenarios";
+import { listScenarios, validateScenarioWordbank } from "./repo/scenarios";
 import type { Queryable } from "./repo/types";
 
 const guid = (n: number) => `00000000-0000-4000-8000-${String(n).padStart(12, "0")}`;
@@ -76,5 +76,52 @@ describe("使用者指定詞模式與完整故事片語", () => {
     graded.vocabularyFilter.levels = ["basic"];
     graded.targets.forEach(target => { target.list = "basic"; });
     expect(() => ScenarioContentSchema.parse(graded)).toThrow("完整單字");
+  });
+});
+
+
+describe("圖解學習介系詞與舊版相容", () => {
+  function guideFixture() {
+    const f = fixture();
+    f.content.learningMode = "illustrated-guide";
+    f.entries[1].parts_of_speech = ["prep"];
+    f.content.targets = [{ ...f.content.targets[0], word: "by", entryGuid: guid(2), teachingPos: "prep", senseZh: "不遲於指定時間" }];
+    f.content.targetCount = 1;
+    f.content.story.sentences[0].wordLinks.forEach(link => { link.isTarget = link.entryGuid === guid(2); });
+    return f;
+  }
+  it("prep 僅在圖解模式合法，且仍核對真字庫的詞性、GUID 與分級", async () => {
+    const f = guideFixture();
+    expect(ScenarioContentSchema.parse(f.content).learningMode).toBe("illustrated-guide");
+    await expect(validateScenarioWordbank(f.db, f.content)).resolves.toBeUndefined();
+    expect(ScenarioContentSchema.safeParse({ ...f.content, learningMode: undefined }).success).toBe(false);
+    expect(ScenarioContentSchema.safeParse({ ...f.content, learningMode: "other" }).success).toBe(false);
+    f.entries[1].parts_of_speech = ["adv"];
+    await expect(validateScenarioWordbank(f.db, f.content)).rejects.toThrow("分級/詞性不符");
+    f.entries[1].parts_of_speech = ["prep"];
+    f.entries[1].level.list = "expert";
+    await expect(validateScenarioWordbank(f.db, f.content)).rejects.toThrow("分級/詞性不符");
+    f.entries[1].level.list = "basic";
+    f.entries[1].word = "wrong";
+    await expect(validateScenarioWordbank(f.db, f.content)).rejects.toThrow("GUID/單字不符");
+  });
+  it("省略模式的 canonical JSON 與 revision hash 完全保持舊格式", () => {
+    const { content } = fixture();
+    const media = {} as ScenarioMedia;
+    const before = scenarioRevisionHash(content, media);
+    const parsed = ScenarioContentSchema.parse(content);
+    expect(Object.hasOwn(parsed, "learningMode")).toBe(false);
+    expect(scenarioCanonicalJson(parsed)).toBe(scenarioCanonicalJson(content));
+    expect(scenarioRevisionHash(parsed, media)).toBe(before);
+    expect(scenarioRevisionHash({ ...parsed, learningMode: "illustrated-guide" }, media)).not.toBe(before);
+  });
+  it("清單僅圖解模式輸出 prep 計數，舊版仍只有 n／adj／v 且不增加 mode", async () => {
+    const old = fixture().content, guide = guideFixture().content;
+    const media = { image: { width: 16, height: 9 } } as ScenarioMedia;
+    const db = { query: vi.fn(async () => ({ rows: [old, guide].map(content => ({ content, media, status: "published", tags: [] })) })) } as unknown as Queryable;
+    const summaries = await listScenarios(db);
+    expect(summaries[0].targetCounts).toEqual({ n: 2, adj: 0, v: 1 });
+    expect(Object.hasOwn(summaries[0], "learningMode")).toBe(false);
+    expect(summaries[1]).toMatchObject({ learningMode: "illustrated-guide", targetCounts: { n: 0, adj: 0, v: 0, prep: 1 } });
   });
 });

@@ -1,0 +1,1507 @@
+{
+  "checkedAt": "2026-11-07T12:38:39.278Z",
+  "scope": "完整解碼及近靜音初篩；人工發音聽審待完成",
+  "clips": 125,
+  "results": [
+    {
+      "assetGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+      "kind": "word",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -6.737325463953193,
+        "rmsDbfs": -30.278958699976265,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d49bc193-c190-5da6-9ed4-140392630627",
+      "kind": "example",
+      "durationSeconds": 3.888,
+      "bytes": 62252,
+      "acousticCheck": {
+        "peakDbfs": -10.783377716530609,
+        "rmsDbfs": -23.81235283077131,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e954e2ae-1146-57b3-9f6f-21b9cd60edd2",
+      "kind": "example",
+      "durationSeconds": 4.224,
+      "bytes": 67628,
+      "acousticCheck": {
+        "peakDbfs": -13.239840655796481,
+        "rmsDbfs": -29.345534513875833,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ece9f723-9aac-5a5a-8954-621783a17135",
+      "kind": "example",
+      "durationSeconds": 3.336,
+      "bytes": 53420,
+      "acousticCheck": {
+        "peakDbfs": -8.164161830711338,
+        "rmsDbfs": -23.677932929742234,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "38afa4a2-a5bb-5392-b646-cf3b74b73d18",
+      "kind": "explanation",
+      "durationSeconds": 15.744,
+      "bytes": 251948,
+      "acousticCheck": {
+        "peakDbfs": -6.433985317630989,
+        "rmsDbfs": -22.063662728658674,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a4e752ec-49ff-5d00-9792-cf858871f486",
+      "kind": "explanation",
+      "durationSeconds": 15.024,
+      "bytes": 240428,
+      "acousticCheck": {
+        "peakDbfs": -3.6057368170208988,
+        "rmsDbfs": -22.591040952036327,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "abe5cc74-bb51-50fd-b806-2eeb06fb40e1",
+      "kind": "explanation",
+      "durationSeconds": 12.624,
+      "bytes": 202028,
+      "acousticCheck": {
+        "peakDbfs": -6.412061888767569,
+        "rmsDbfs": -22.677368332500517,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+      "kind": "word",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -16.583748296272944,
+        "rmsDbfs": -29.06600808428623,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7fefaa28-4772-517f-a6cb-165c678f8305",
+      "kind": "example",
+      "durationSeconds": 3.504,
+      "bytes": 56108,
+      "acousticCheck": {
+        "peakDbfs": -11.199079898582308,
+        "rmsDbfs": -27.123791745161824,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f2fd5b4e-4ad4-57bb-999e-dc5d6f7e00c1",
+      "kind": "example",
+      "durationSeconds": 2.616,
+      "bytes": 41900,
+      "acousticCheck": {
+        "peakDbfs": -8.521236563834666,
+        "rmsDbfs": -25.462443449542715,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d6783ed1-dd44-5f04-ba6e-ee9f7aeeecd9",
+      "kind": "example",
+      "durationSeconds": 3.408,
+      "bytes": 54572,
+      "acousticCheck": {
+        "peakDbfs": -3.6299684578893316,
+        "rmsDbfs": -21.524827082719845,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "489c58fb-9a2b-5de9-98c7-09101e3c9005",
+      "kind": "explanation",
+      "durationSeconds": 9.984,
+      "bytes": 159788,
+      "acousticCheck": {
+        "peakDbfs": -7.768134020727695,
+        "rmsDbfs": -25.358606161480285,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "89e7b739-1c66-5bf9-80b1-a87f24dc1bdc",
+      "kind": "explanation",
+      "durationSeconds": 9.648,
+      "bytes": 154412,
+      "acousticCheck": {
+        "peakDbfs": -6.583162102839322,
+        "rmsDbfs": -23.418848363857833,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8d1d9309-8306-56a0-a499-e6069bc295e6",
+      "kind": "explanation",
+      "durationSeconds": 10.608,
+      "bytes": 169772,
+      "acousticCheck": {
+        "peakDbfs": -7.738629263459629,
+        "rmsDbfs": -24.574947524938334,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7322ee8b-d764-58a1-85b4-8250856d23d0",
+      "kind": "example",
+      "durationSeconds": 2.304,
+      "bytes": 36908,
+      "acousticCheck": {
+        "peakDbfs": -17.73555476244795,
+        "rmsDbfs": -30.664150974043217,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8afc096b-b000-5e0a-b99a-3d4bb98ee098",
+      "kind": "explanation",
+      "durationSeconds": 5.976,
+      "bytes": 95660,
+      "acousticCheck": {
+        "peakDbfs": -10.078029233796478,
+        "rmsDbfs": -25.591852997556515,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a421bfb1-b65e-56a0-a235-10f79231fffc",
+      "kind": "example",
+      "durationSeconds": 2.304,
+      "bytes": 36908,
+      "acousticCheck": {
+        "peakDbfs": -10.479060580102715,
+        "rmsDbfs": -23.746610715215226,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ce6d9296-7254-5a2e-8435-03da81a87c56",
+      "kind": "explanation",
+      "durationSeconds": 9.168,
+      "bytes": 146732,
+      "acousticCheck": {
+        "peakDbfs": -9.948734608409698,
+        "rmsDbfs": -26.502558102877586,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+      "kind": "word",
+      "durationSeconds": 1.176,
+      "bytes": 18860,
+      "acousticCheck": {
+        "peakDbfs": -13.525455404544221,
+        "rmsDbfs": -29.109265269441096,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9b09fe51-23f0-55d8-8df4-4ca9c2dc52d9",
+      "kind": "example",
+      "durationSeconds": 3.504,
+      "bytes": 56108,
+      "acousticCheck": {
+        "peakDbfs": -7.922687283974399,
+        "rmsDbfs": -23.733532387177846,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ef136049-3083-508a-97cb-e8a995e251b7",
+      "kind": "example",
+      "durationSeconds": 7.824,
+      "bytes": 125228,
+      "acousticCheck": {
+        "peakDbfs": -9.444842632225964,
+        "rmsDbfs": -26.649226619159705,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9b1cb8c5-4af5-5464-ae7d-f4e99972cf98",
+      "kind": "example",
+      "durationSeconds": 6.864,
+      "bytes": 109868,
+      "acousticCheck": {
+        "peakDbfs": -8.38653618383837,
+        "rmsDbfs": -25.79083433763269,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "40c0bb0e-a292-5840-903b-b1aa19e87846",
+      "kind": "explanation",
+      "durationSeconds": 10.128,
+      "bytes": 162092,
+      "acousticCheck": {
+        "peakDbfs": -8.58301959167945,
+        "rmsDbfs": -25.1491820025293,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a2c3cb7b-c4d9-5f53-a381-03b903761488",
+      "kind": "explanation",
+      "durationSeconds": 10.464,
+      "bytes": 167468,
+      "acousticCheck": {
+        "peakDbfs": -8.97191612637238,
+        "rmsDbfs": -27.161141084413735,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6b6093b2-4d9d-5af8-a14c-5f4972f68310",
+      "kind": "explanation",
+      "durationSeconds": 11.736,
+      "bytes": 187820,
+      "acousticCheck": {
+        "peakDbfs": -6.517758719920223,
+        "rmsDbfs": -24.15800780677359,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+      "kind": "word",
+      "durationSeconds": 2.304,
+      "bytes": 36908,
+      "acousticCheck": {
+        "peakDbfs": -12.805072517037344,
+        "rmsDbfs": -30.167112978735098,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2f788aed-332c-5c9f-84cf-5c6e6ca2234b",
+      "kind": "example",
+      "durationSeconds": 3.744,
+      "bytes": 59948,
+      "acousticCheck": {
+        "peakDbfs": -11.107732035322073,
+        "rmsDbfs": -24.269064747312953,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5dcb7cfc-ff3e-52ce-a2c7-6f6743ffd95e",
+      "kind": "example",
+      "durationSeconds": 4.368,
+      "bytes": 69932,
+      "acousticCheck": {
+        "peakDbfs": -8.809732275147988,
+        "rmsDbfs": -26.243973460192166,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "78597b0b-3532-5b26-b390-c6447fc4940d",
+      "kind": "example",
+      "durationSeconds": 5.088,
+      "bytes": 81452,
+      "acousticCheck": {
+        "peakDbfs": -12.795195354307541,
+        "rmsDbfs": -28.76061607688394,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "95d5054b-490e-580d-bc62-f94338ce993f",
+      "kind": "explanation",
+      "durationSeconds": 11.568,
+      "bytes": 185132,
+      "acousticCheck": {
+        "peakDbfs": -7.481848713317568,
+        "rmsDbfs": -26.384643289828063,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "597d7f07-b006-5d8b-ae0f-86ab51e39e0d",
+      "kind": "explanation",
+      "durationSeconds": 10.464,
+      "bytes": 167468,
+      "acousticCheck": {
+        "peakDbfs": -13.196374036156637,
+        "rmsDbfs": -29.325371086620407,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b0d07060-3f49-58af-a6f7-0e80f043fa8e",
+      "kind": "explanation",
+      "durationSeconds": 11.736,
+      "bytes": 187820,
+      "acousticCheck": {
+        "peakDbfs": -9.712047497066505,
+        "rmsDbfs": -25.688328647130266,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+      "kind": "word",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -6.026226238322172,
+        "rmsDbfs": -22.307250597840977,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9bb85af3-8082-5a9d-95b3-3deed7511bf7",
+      "kind": "example",
+      "durationSeconds": 3.984,
+      "bytes": 63788,
+      "acousticCheck": {
+        "peakDbfs": -9.64817989512255,
+        "rmsDbfs": -24.322698137982503,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d5f64f0f-8754-5641-b94a-febc7fe5007b",
+      "kind": "example",
+      "durationSeconds": 5.976,
+      "bytes": 95660,
+      "acousticCheck": {
+        "peakDbfs": -7.512713386785497,
+        "rmsDbfs": -24.13894833037962,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bf70b73a-5e88-563e-b0a2-e3b84545b048",
+      "kind": "example",
+      "durationSeconds": 5.568,
+      "bytes": 89132,
+      "acousticCheck": {
+        "peakDbfs": -9.536295130940903,
+        "rmsDbfs": -25.284036822462063,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5beaef4a-6833-51d2-82c9-d2d625f5ae86",
+      "kind": "explanation",
+      "durationSeconds": 12.696,
+      "bytes": 203180,
+      "acousticCheck": {
+        "peakDbfs": -8.895473142679815,
+        "rmsDbfs": -24.437286799223653,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d6b868f3-0aa5-5005-b1fc-879abed1023b",
+      "kind": "explanation",
+      "durationSeconds": 10.536,
+      "bytes": 168620,
+      "acousticCheck": {
+        "peakDbfs": -3.956594829072394,
+        "rmsDbfs": -20.81780790092433,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "85fa1e11-501f-5bd4-8932-ea2e130536aa",
+      "kind": "explanation",
+      "durationSeconds": 11.568,
+      "bytes": 185132,
+      "acousticCheck": {
+        "peakDbfs": -6.685743909935952,
+        "rmsDbfs": -24.679801149697667,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "00676060-6b5b-564b-9108-e58900a36b8b",
+      "kind": "word",
+      "durationSeconds": 1.488,
+      "bytes": 23852,
+      "acousticCheck": {
+        "peakDbfs": -9.853284262269721,
+        "rmsDbfs": -22.640098100793608,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a7547fb5-f78c-537f-b87b-4e9dd0612801",
+      "kind": "example",
+      "durationSeconds": 3.408,
+      "bytes": 54572,
+      "acousticCheck": {
+        "peakDbfs": -9.52896007810973,
+        "rmsDbfs": -25.651519175744284,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "75308c15-13fb-5a77-935a-1db071b57d2c",
+      "kind": "example",
+      "durationSeconds": 5.736,
+      "bytes": 91820,
+      "acousticCheck": {
+        "peakDbfs": -9.967906176733367,
+        "rmsDbfs": -24.838675185325556,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f0c532c6-e0aa-5923-8944-02e5359bad6a",
+      "kind": "example",
+      "durationSeconds": 5.664,
+      "bytes": 90668,
+      "acousticCheck": {
+        "peakDbfs": -10.412900878104836,
+        "rmsDbfs": -26.465666950079108,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9b01b802-e99b-54ef-96fe-8aeed6b2ab36",
+      "kind": "explanation",
+      "durationSeconds": 12.216,
+      "bytes": 195500,
+      "acousticCheck": {
+        "peakDbfs": -6.9384661049986125,
+        "rmsDbfs": -22.792692038955398,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1b974fec-c6fe-5e68-be85-b14de780e40a",
+      "kind": "explanation",
+      "durationSeconds": 14.928,
+      "bytes": 238892,
+      "acousticCheck": {
+        "peakDbfs": -5.681976686548404,
+        "rmsDbfs": -22.762116918320608,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7ecb8ac5-302f-5885-9e67-bf3b827e13b3",
+      "kind": "explanation",
+      "durationSeconds": 13.176,
+      "bytes": 210860,
+      "acousticCheck": {
+        "peakDbfs": -8.376283138157605,
+        "rmsDbfs": -25.111772473424008,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+      "kind": "word",
+      "durationSeconds": 2.304,
+      "bytes": 36908,
+      "acousticCheck": {
+        "peakDbfs": -13.694235730355029,
+        "rmsDbfs": -29.533241853156053,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "aea3b577-5432-5b41-a734-22ae1dbc46ce",
+      "kind": "example",
+      "durationSeconds": 3.984,
+      "bytes": 63788,
+      "acousticCheck": {
+        "peakDbfs": -6.052667034051392,
+        "rmsDbfs": -22.392252919334112,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8d33e828-429b-5244-8e97-75249e01fef7",
+      "kind": "example",
+      "durationSeconds": 5.496,
+      "bytes": 87980,
+      "acousticCheck": {
+        "peakDbfs": -7.215843037604198,
+        "rmsDbfs": -23.38873120566074,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "596e1d37-2db3-57dc-85e4-abb8e3bb8793",
+      "kind": "example",
+      "durationSeconds": 7.176,
+      "bytes": 114860,
+      "acousticCheck": {
+        "peakDbfs": -6.637068729603318,
+        "rmsDbfs": -23.406446689933865,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "92af032f-6518-5b05-bdd9-c6550353338c",
+      "kind": "explanation",
+      "durationSeconds": 14.208,
+      "bytes": 227372,
+      "acousticCheck": {
+        "peakDbfs": -8.354266882645705,
+        "rmsDbfs": -25.18377861311262,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "943f21b8-fe00-5ffa-8e3a-0a742517a271",
+      "kind": "explanation",
+      "durationSeconds": 10.368,
+      "bytes": 165932,
+      "acousticCheck": {
+        "peakDbfs": -8.128999621694494,
+        "rmsDbfs": -24.006348343889783,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "cf406b42-16a4-5e90-ba29-03b018142590",
+      "kind": "explanation",
+      "durationSeconds": 13.344,
+      "bytes": 213548,
+      "acousticCheck": {
+        "peakDbfs": -6.877591221621903,
+        "rmsDbfs": -24.83048901725641,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+      "kind": "word",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -8.194659280386041,
+        "rmsDbfs": -24.180133997110733,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "eb717a95-0fd2-586f-bf16-484641b5e673",
+      "kind": "example",
+      "durationSeconds": 3.024,
+      "bytes": 48428,
+      "acousticCheck": {
+        "peakDbfs": -8.520892731282837,
+        "rmsDbfs": -25.40916424908336,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e44a0f5a-84f9-5713-97b7-6011aa8c747c",
+      "kind": "example",
+      "durationSeconds": 3.648,
+      "bytes": 58412,
+      "acousticCheck": {
+        "peakDbfs": -4.984618411428394,
+        "rmsDbfs": -21.434628213278234,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0e87b9e6-fa2c-5d03-b6e5-e222e3676188",
+      "kind": "example",
+      "durationSeconds": 3.264,
+      "bytes": 52268,
+      "acousticCheck": {
+        "peakDbfs": -10.834193323287064,
+        "rmsDbfs": -24.92612587728349,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "80da3e6a-2aa1-5db3-9925-2341d6012b0e",
+      "kind": "explanation",
+      "durationSeconds": 12.624,
+      "bytes": 202028,
+      "acousticCheck": {
+        "peakDbfs": -8.564364805734739,
+        "rmsDbfs": -24.870840600392828,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "07bb5087-9a25-5e22-b2d2-16ae11cc07ee",
+      "kind": "explanation",
+      "durationSeconds": 9.648,
+      "bytes": 154412,
+      "acousticCheck": {
+        "peakDbfs": -6.258309143885877,
+        "rmsDbfs": -23.0430591436965,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "56858e0e-0a88-51e8-922c-d8aa392665e5",
+      "kind": "explanation",
+      "durationSeconds": 9.816,
+      "bytes": 157100,
+      "acousticCheck": {
+        "peakDbfs": -7.66459312396507,
+        "rmsDbfs": -24.349548619683937,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+      "kind": "word",
+      "durationSeconds": 2.448,
+      "bytes": 39212,
+      "acousticCheck": {
+        "peakDbfs": -12.750850636282927,
+        "rmsDbfs": -28.75606309225631,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "cf7dd100-7d8b-5ebd-82bf-5251049c4527",
+      "kind": "example",
+      "durationSeconds": 2.688,
+      "bytes": 43052,
+      "acousticCheck": {
+        "peakDbfs": -16.376120385944795,
+        "rmsDbfs": -30.68983878068058,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5000676d-5292-5498-8839-3f12f62d6150",
+      "kind": "example",
+      "durationSeconds": 3.504,
+      "bytes": 56108,
+      "acousticCheck": {
+        "peakDbfs": -8.802338034779403,
+        "rmsDbfs": -26.053703615105373,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fd86c2e7-dd4a-5e18-91ad-1cc45f1b9316",
+      "kind": "example",
+      "durationSeconds": 4.296,
+      "bytes": 68780,
+      "acousticCheck": {
+        "peakDbfs": -9.626314775032947,
+        "rmsDbfs": -25.849910224533566,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "346650f8-dcf2-516a-abce-ae8d25a30bec",
+      "kind": "example",
+      "durationSeconds": 1.968,
+      "bytes": 31532,
+      "acousticCheck": {
+        "peakDbfs": -10.877684692696679,
+        "rmsDbfs": -25.149586092319996,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e14ea9c8-6220-5cbd-abfa-285238a09141",
+      "kind": "explanation",
+      "durationSeconds": 10.536,
+      "bytes": 168620,
+      "acousticCheck": {
+        "peakDbfs": -6.623777519495696,
+        "rmsDbfs": -25.622192928364953,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5d36ee8d-9296-5fb0-87a9-f266100e58a6",
+      "kind": "explanation",
+      "durationSeconds": 11.088,
+      "bytes": 177452,
+      "acousticCheck": {
+        "peakDbfs": -9.632084646165255,
+        "rmsDbfs": -26.061374228556417,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3e7cda12-88d0-5961-a577-0e7ed456046a",
+      "kind": "explanation",
+      "durationSeconds": 10.536,
+      "bytes": 168620,
+      "acousticCheck": {
+        "peakDbfs": -9.407250760066105,
+        "rmsDbfs": -27.667449258104337,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1ca5a7d5-3508-534f-a0c9-1bf8b50ef0af",
+      "kind": "explanation",
+      "durationSeconds": 8.616,
+      "bytes": 137900,
+      "acousticCheck": {
+        "peakDbfs": -8.54382951651952,
+        "rmsDbfs": -25.699110181995174,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+      "kind": "word",
+      "durationSeconds": 1.488,
+      "bytes": 23852,
+      "acousticCheck": {
+        "peakDbfs": -10.546299046374427,
+        "rmsDbfs": -26.04783252383303,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "36298c70-f4ad-554e-80e6-70a4dd53860f",
+      "kind": "example",
+      "durationSeconds": 4.296,
+      "bytes": 68780,
+      "acousticCheck": {
+        "peakDbfs": -10.215219077913185,
+        "rmsDbfs": -26.402504806534942,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "246fecb3-4fcc-5b79-b240-e9c450040ae9",
+      "kind": "example",
+      "durationSeconds": 5.256,
+      "bytes": 84140,
+      "acousticCheck": {
+        "peakDbfs": -9.864587234076252,
+        "rmsDbfs": -26.14287041407785,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ffcbe712-737e-511f-abc1-6e732f211e24",
+      "kind": "example",
+      "durationSeconds": 5.496,
+      "bytes": 87980,
+      "acousticCheck": {
+        "peakDbfs": -8.554734273137012,
+        "rmsDbfs": -25.729247050428867,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5f1c2e89-66d3-562a-94bc-09402516d880",
+      "kind": "example",
+      "durationSeconds": 4.368,
+      "bytes": 69932,
+      "acousticCheck": {
+        "peakDbfs": -8.65626551908392,
+        "rmsDbfs": -22.40601901227814,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7808a543-eefb-535d-9393-85d747221202",
+      "kind": "example",
+      "durationSeconds": 6.288,
+      "bytes": 100652,
+      "acousticCheck": {
+        "peakDbfs": -8.222976283955884,
+        "rmsDbfs": -23.062227236981023,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "dfb1809d-2a16-55a9-9c13-d955d19ab4b9",
+      "kind": "example",
+      "durationSeconds": 5.808,
+      "bytes": 92972,
+      "acousticCheck": {
+        "peakDbfs": -9.83821719334271,
+        "rmsDbfs": -25.634330651186993,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "4fd8f759-44f7-5c9d-ae44-0d682dc72e3c",
+      "kind": "explanation",
+      "durationSeconds": 10.536,
+      "bytes": 168620,
+      "acousticCheck": {
+        "peakDbfs": -7.08705615493166,
+        "rmsDbfs": -23.48548348934242,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "785c65c9-04ea-5e79-8c75-e74421be29c9",
+      "kind": "explanation",
+      "durationSeconds": 11.496,
+      "bytes": 183980,
+      "acousticCheck": {
+        "peakDbfs": -6.597842431641697,
+        "rmsDbfs": -24.323743109207797,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "38cc50ea-e7c2-5d3b-a7d1-9b267a57302d",
+      "kind": "explanation",
+      "durationSeconds": 14.304,
+      "bytes": 228908,
+      "acousticCheck": {
+        "peakDbfs": -6.090084271798888,
+        "rmsDbfs": -23.010556138085644,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+      "kind": "word",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -13.432602401435439,
+        "rmsDbfs": -29.98635664617268,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "705dff51-2784-5735-a0e8-22f8bd11cd63",
+      "kind": "example",
+      "durationSeconds": 2.064,
+      "bytes": 33068,
+      "acousticCheck": {
+        "peakDbfs": -10.284987103294121,
+        "rmsDbfs": -23.927479242858,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ce2cb2cd-6f67-5be1-b52e-54bcc273a338",
+      "kind": "example",
+      "durationSeconds": 2.448,
+      "bytes": 39212,
+      "acousticCheck": {
+        "peakDbfs": -7.549667180069202,
+        "rmsDbfs": -22.564534113746852,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "82ee2702-d59b-577b-88e1-52a41812ab68",
+      "kind": "example",
+      "durationSeconds": 2.448,
+      "bytes": 39212,
+      "acousticCheck": {
+        "peakDbfs": -8.199564100988992,
+        "rmsDbfs": -22.568200822738564,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "84ae808e-7530-5805-a2b3-8e8f0c706e06",
+      "kind": "explanation",
+      "durationSeconds": 10.704,
+      "bytes": 171308,
+      "acousticCheck": {
+        "peakDbfs": -6.417012313003943,
+        "rmsDbfs": -21.77614573555513,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bb96b09a-b934-5003-87d0-cb4b28fc07e1",
+      "kind": "explanation",
+      "durationSeconds": 8.616,
+      "bytes": 137900,
+      "acousticCheck": {
+        "peakDbfs": -7.1421747505843145,
+        "rmsDbfs": -22.767119506929646,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "71c3e73d-6a83-55ef-83c5-076eff17575d",
+      "kind": "explanation",
+      "durationSeconds": 12.528,
+      "bytes": 200492,
+      "acousticCheck": {
+        "peakDbfs": -7.793548909984468,
+        "rmsDbfs": -25.932342906739,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+      "kind": "word",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "acousticCheck": {
+        "peakDbfs": -11.926479322729357,
+        "rmsDbfs": -30.083781563960468,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7e738fac-3c79-5451-84ec-9c824828becb",
+      "kind": "example",
+      "durationSeconds": 4.776,
+      "bytes": 76460,
+      "acousticCheck": {
+        "peakDbfs": -11.671114052621846,
+        "rmsDbfs": -25.539802264251684,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3870c3eb-c26c-5c24-ae85-9b25d01fc1f3",
+      "kind": "example",
+      "durationSeconds": 5.184,
+      "bytes": 82988,
+      "acousticCheck": {
+        "peakDbfs": -7.452605435256201,
+        "rmsDbfs": -23.73966691911201,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6f87579b-4537-5a3c-9e19-9d7fb9daa8ac",
+      "kind": "example",
+      "durationSeconds": 7.176,
+      "bytes": 114860,
+      "acousticCheck": {
+        "peakDbfs": -7.886914021447198,
+        "rmsDbfs": -25.23470104107507,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "da9accd8-dd05-5b19-9e53-46c942fbabd5",
+      "kind": "example",
+      "durationSeconds": 5.424,
+      "bytes": 86828,
+      "acousticCheck": {
+        "peakDbfs": -6.387847238660531,
+        "rmsDbfs": -23.798853007056522,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0558da36-5eb1-5832-8c42-d84a4e93d896",
+      "kind": "example",
+      "durationSeconds": 6.216,
+      "bytes": 99500,
+      "acousticCheck": {
+        "peakDbfs": -5.640617147529518,
+        "rmsDbfs": -22.670979248742277,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "741dd8cb-0b0e-5f06-b4b2-a297246e0312",
+      "kind": "example",
+      "durationSeconds": 8.064,
+      "bytes": 129068,
+      "acousticCheck": {
+        "peakDbfs": -6.96382287330164,
+        "rmsDbfs": -21.829186595346304,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6b12ef6f-ce2b-595a-a266-ba52db49da91",
+      "kind": "explanation",
+      "durationSeconds": 13.896,
+      "bytes": 222380,
+      "acousticCheck": {
+        "peakDbfs": -3.6242271603024125,
+        "rmsDbfs": -22.32540913807068,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f3555827-8498-5591-8fce-48d69a3e2c6d",
+      "kind": "explanation",
+      "durationSeconds": 10.848,
+      "bytes": 173612,
+      "acousticCheck": {
+        "peakDbfs": -7.615547485424332,
+        "rmsDbfs": -23.153080633678268,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c50179b4-643a-53b3-ba0e-4c9dbb6a6059",
+      "kind": "explanation",
+      "durationSeconds": 17.088,
+      "bytes": 273452,
+      "acousticCheck": {
+        "peakDbfs": -8.954387686581937,
+        "rmsDbfs": -26.35853645137402,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d7f15d3a-a501-58f0-ac1b-e0dd3c2aad72",
+      "kind": "example",
+      "durationSeconds": 2.376,
+      "bytes": 38060,
+      "acousticCheck": {
+        "peakDbfs": -8.569962035023,
+        "rmsDbfs": -22.8206027724013,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2e0a5b3b-b363-5999-9270-99c3d6ab6625",
+      "kind": "explanation",
+      "durationSeconds": 5.664,
+      "bytes": 90668,
+      "acousticCheck": {
+        "peakDbfs": -7.958768980904933,
+        "rmsDbfs": -25.98616513410588,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d5357d2a-a2c9-5381-af1a-4ec883993e7a",
+      "kind": "example",
+      "durationSeconds": 3.408,
+      "bytes": 54572,
+      "acousticCheck": {
+        "peakDbfs": -11.260514700636826,
+        "rmsDbfs": -25.26683744501884,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "78221608-dc06-5587-9252-d02950fa2fb0",
+      "kind": "explanation",
+      "durationSeconds": 5.496,
+      "bytes": 87980,
+      "acousticCheck": {
+        "peakDbfs": -16.382164482410925,
+        "rmsDbfs": -30.87211989329542,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "88155bbf-b315-5129-976b-14cf7f0337ff",
+      "kind": "example",
+      "durationSeconds": 1.896,
+      "bytes": 30380,
+      "acousticCheck": {
+        "peakDbfs": -12.661585686550254,
+        "rmsDbfs": -25.85417443427564,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "15f96a9a-7c3b-545c-bd49-7b0bab4bfc7d",
+      "kind": "explanation",
+      "durationSeconds": 5.808,
+      "bytes": 92972,
+      "acousticCheck": {
+        "peakDbfs": -6.284801508360028,
+        "rmsDbfs": -25.672344805970337,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7e4cdcca-8c05-5ba3-b899-11a2ac026d79",
+      "kind": "example",
+      "durationSeconds": 2.376,
+      "bytes": 38060,
+      "acousticCheck": {
+        "peakDbfs": -4.060278568835602,
+        "rmsDbfs": -22.918538505429087,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0c6bad0a-4208-5349-917f-1aa9818fbdd4",
+      "kind": "explanation",
+      "durationSeconds": 8.544,
+      "bytes": 136748,
+      "acousticCheck": {
+        "peakDbfs": -12.0745952340285,
+        "rmsDbfs": -26.11999734396933,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7e2c6cbd-b2e1-57df-adee-12322db98911",
+      "kind": "example",
+      "durationSeconds": 2.616,
+      "bytes": 41900,
+      "acousticCheck": {
+        "peakDbfs": -12.433678418648867,
+        "rmsDbfs": -27.28670236381205,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b842220c-c3c4-582e-a0ea-e0afe1b08a69",
+      "kind": "explanation",
+      "durationSeconds": 10.056,
+      "bytes": 160940,
+      "acousticCheck": {
+        "peakDbfs": -8.968805676273346,
+        "rmsDbfs": -26.435601264406564,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c4b670b5-4775-5c2d-80df-b333f72c8105",
+      "kind": "example",
+      "durationSeconds": 3.168,
+      "bytes": 50732,
+      "acousticCheck": {
+        "peakDbfs": -7.67822742678983,
+        "rmsDbfs": -21.664812146428222,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1d0f0886-4a90-519d-b611-21c1af76179d",
+      "kind": "explanation",
+      "durationSeconds": 6.696,
+      "bytes": 107180,
+      "acousticCheck": {
+        "peakDbfs": -6.258415561257616,
+        "rmsDbfs": -24.85359788412183,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bf788844-dd5e-52ff-b1f2-bdcc790a19a7",
+      "kind": "example",
+      "durationSeconds": 2.376,
+      "bytes": 38060,
+      "acousticCheck": {
+        "peakDbfs": -6.048309954608299,
+        "rmsDbfs": -18.96481571304592,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ae1dda89-80f3-5e34-b3df-946266673270",
+      "kind": "explanation",
+      "durationSeconds": 8.064,
+      "bytes": 129068,
+      "acousticCheck": {
+        "peakDbfs": -10.96339254284497,
+        "rmsDbfs": -24.51511346925198,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "af5db4a1-92e8-5c62-a9d0-72bf5a664bed",
+      "kind": "example",
+      "durationSeconds": 4.056,
+      "bytes": 64940,
+      "acousticCheck": {
+        "peakDbfs": -8.271948976864518,
+        "rmsDbfs": -22.770206464306355,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5749ea12-3491-5e09-8da9-15709fef24fb",
+      "kind": "explanation",
+      "durationSeconds": 5.736,
+      "bytes": 91820,
+      "acousticCheck": {
+        "peakDbfs": -6.566311030433763,
+        "rmsDbfs": -22.422148873611995,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7b114979-117e-525a-8f7e-8dfad29e4ab9",
+      "kind": "example",
+      "durationSeconds": 2.136,
+      "bytes": 34220,
+      "acousticCheck": {
+        "peakDbfs": -9.008065256025,
+        "rmsDbfs": -25.161768857210802,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0ca21a13-8d0f-5d36-8b24-23a5c9b8f318",
+      "kind": "explanation",
+      "durationSeconds": 5.976,
+      "bytes": 95660,
+      "acousticCheck": {
+        "peakDbfs": -10.52150513170317,
+        "rmsDbfs": -25.09808156057314,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1716c62d-9d1d-510c-b7a7-779558ff5c4d",
+      "kind": "word",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -8.068027705916553,
+        "rmsDbfs": -24.292811012792832,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "85f099eb-3103-5fae-99b8-7936840b9bb2",
+      "kind": "example",
+      "durationSeconds": 3.504,
+      "bytes": 56108,
+      "acousticCheck": {
+        "peakDbfs": -8.866414340095917,
+        "rmsDbfs": -21.6370925468871,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fe3b677d-9c4d-57a2-b03e-c1617b372ddc",
+      "kind": "example",
+      "durationSeconds": 5.808,
+      "bytes": 92972,
+      "acousticCheck": {
+        "peakDbfs": -11.70534350743666,
+        "rmsDbfs": -26.165609569130336,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5ae45f0c-0972-5fb6-96b3-e5362cedbc47",
+      "kind": "example",
+      "durationSeconds": 6.528,
+      "bytes": 104492,
+      "acousticCheck": {
+        "peakDbfs": -11.48215878052222,
+        "rmsDbfs": -27.166921558602372,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e68c7d6c-e189-556f-aa3f-139ac3102ac3",
+      "kind": "example",
+      "durationSeconds": 3.336,
+      "bytes": 53420,
+      "acousticCheck": {
+        "peakDbfs": -9.933366350454564,
+        "rmsDbfs": -26.99543360809602,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6e644af3-58b1-5081-b21a-a373bbbbf044",
+      "kind": "explanation",
+      "durationSeconds": 10.056,
+      "bytes": 160940,
+      "acousticCheck": {
+        "peakDbfs": -7.305654822018862,
+        "rmsDbfs": -23.53042889255787,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e4565efa-400e-5eab-aeb0-eb515d3af822",
+      "kind": "explanation",
+      "durationSeconds": 10.296,
+      "bytes": 164780,
+      "acousticCheck": {
+        "peakDbfs": -5.838954141831067,
+        "rmsDbfs": -22.301277697793857,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "436d1824-f3fe-5f3e-8748-bc033f748c09",
+      "kind": "explanation",
+      "durationSeconds": 9.336,
+      "bytes": 149420,
+      "acousticCheck": {
+        "peakDbfs": -10.522019736990112,
+        "rmsDbfs": -25.107303280507047,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e762852f-c5b4-59e1-9e09-9e9873388915",
+      "kind": "explanation",
+      "durationSeconds": 8.208,
+      "bytes": 131372,
+      "acousticCheck": {
+        "peakDbfs": -7.875080592222754,
+        "rmsDbfs": -25.524476383183206,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "time-prepositions-basics",
+      "kind": "story",
+      "durationSeconds": 89.976,
+      "bytes": 1439660,
+      "acousticCheck": {
+        "peakDbfs": -7.240570610859343,
+        "rmsDbfs": -25.663331810058658,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "time-prepositions-extended",
+      "kind": "story",
+      "durationSeconds": 80.136,
+      "bytes": 1282220,
+      "acousticCheck": {
+        "peakDbfs": -3.8024840622450027,
+        "rmsDbfs": -24.006113812068403,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    }
+  ]
+}

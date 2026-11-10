@@ -1,0 +1,404 @@
+{
+  "entries": [
+    {
+      "id": 349,
+      "guid": "38a15c63-e0fe-5c44-8d75-1d6ca08fb9f9",
+      "word": "glad",
+      "examples": [
+        {
+          "guid": "a3d1de76-2b4c-5637-9862-98329be89210",
+          "en": "I am glad.",
+          "zh": "我很高興。"
+        }
+      ]
+    },
+    {
+      "id": 3749,
+      "guid": "f0ed3234-222c-54ef-aace-a92baa20d011",
+      "word": "plum",
+      "examples": [
+        {
+          "guid": "9dda17c6-f7f9-57ea-a071-575f7d5b6b99",
+          "en": "Put the plum on the plate.",
+          "zh": "把李子放到盤子上。"
+        }
+      ]
+    },
+    {
+      "id": 332,
+      "guid": "9e73e71c-87b6-50d4-96d3-ba2b5352dd44",
+      "word": "frog",
+      "examples": [
+        {
+          "guid": "40ad5a24-aa77-58ba-91be-7137c99284e7",
+          "en": "The frog is in the tree.",
+          "zh": "青蛙在樹上。"
+        }
+      ]
+    },
+    {
+      "id": 2368,
+      "guid": "c7cbb969-5ffb-52e2-b07a-09403ec24cec",
+      "word": "grab",
+      "examples": [
+        {
+          "guid": "33049f29-3a5b-5bf6-9fb6-c0c028a1b87c",
+          "en": "Grab the drum and play.",
+          "zh": "拿起鼓來演奏。"
+        }
+      ]
+    },
+    {
+      "id": 1881,
+      "guid": "e8fb0d6e-765d-5fe9-b28a-4aa57912fa6f",
+      "word": "swim",
+      "examples": [
+        {
+          "guid": "c4023c9d-3b69-503d-93c6-f66f8e5ac341",
+          "en": "I can swim.",
+          "zh": "我會游泳。"
+        }
+      ]
+    },
+    {
+      "id": 828,
+      "guid": "25ac6804-4166-5875-9895-86fc60a5dc6b",
+      "word": "stop",
+      "examples": [
+        {
+          "guid": "c86eda23-8925-54e9-811f-7b2dda6afc6b",
+          "en": "Stop and spin on the spot.",
+          "zh": "停下來，並在原地旋轉。"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "guid": "192f0b06-dfbe-5bbb-810c-e3ac89f1c728",
+      "word": "ant",
+      "examples": [
+        {
+          "guid": "9b6388c1-5a68-50d2-9532-cad639a97ed7",
+          "en": "The ant is on my hand.",
+          "zh": "螞蟻在我的手上。"
+        }
+      ]
+    },
+    {
+      "id": 466,
+      "guid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+      "word": "lamp",
+      "examples": [
+        {
+          "guid": "018d2026-7662-5929-8037-dfc0fc2ea063",
+          "en": "Put the lamp in the tent.",
+          "zh": "把檯燈放進帳篷裡。"
+        }
+      ]
+    },
+    {
+      "id": 2859,
+      "guid": "14d0f9ed-4e28-5e2d-8b6b-7a1da0a0925b",
+      "word": "strip",
+      "examples": [
+        {
+          "guid": "1edf0c72-6231-5ba9-b87c-e79ffc68aecb",
+          "en": "Cut a strip.",
+          "zh": "剪下一條長條。"
+        }
+      ]
+    },
+    {
+      "id": 2832,
+      "guid": "3c2b25f0-5291-5007-a151-719605a14cad",
+      "word": "spray",
+      "examples": [
+        {
+          "guid": "86a92e36-5969-53e5-9465-fe71a5600bdb",
+          "en": "Spray the tub and scrub.",
+          "zh": "朝浴缸噴灑清潔噴霧，再用力刷洗。"
+        }
+      ]
+    },
+    {
+      "id": 315,
+      "guid": "f8e13ebd-55fa-56f2-a773-dd061cf44d7a",
+      "word": "fish",
+      "examples": [
+        {
+          "guid": "ebe7f035-cdd0-5377-bd67-24c888aad48a",
+          "en": "The fish is in the dish.",
+          "zh": "魚在盤子裡。"
+        }
+      ]
+    },
+    {
+      "id": 1793,
+      "guid": "93563907-18af-515c-872d-f87b6a3f76c5",
+      "word": "shut",
+      "examples": [
+        {
+          "guid": "d82dfd76-c86e-59fd-bab2-4ad62e8dd628",
+          "en": "Shut the shop.",
+          "zh": "把商店關上。"
+        }
+      ]
+    },
+    {
+      "id": 714,
+      "guid": "97511c5a-8c56-57e2-8d68-d659e782ef9f",
+      "word": "rich",
+      "examples": [
+        {
+          "guid": "8239cd92-b13c-5e0e-8b02-035d49d1f1a4",
+          "en": "The rich man can chat.",
+          "zh": "這位富有的男子會聊天。"
+        }
+      ]
+    },
+    {
+      "id": 511,
+      "guid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+      "word": "lunch",
+      "examples": [
+        {
+          "guid": "785f0cd0-eed2-51ca-b83b-f8772bee56c2",
+          "en": "I had lunch on the bench.",
+          "zh": "我坐在長椅上吃了午餐。"
+        }
+      ]
+    },
+    {
+      "id": 879,
+      "guid": "a1777815-c12b-59a8-8c2d-2069d1826872",
+      "word": "thin",
+      "examples": [
+        {
+          "guid": "ce808505-75b2-532f-a76c-49bc178ae5a0",
+          "en": "A thin cat is on the path.",
+          "zh": "一隻瘦貓在小路上。"
+        }
+      ]
+    },
+    {
+      "id": 2560,
+      "guid": "1b887928-edf1-571b-a61e-0280d3f6611c",
+      "word": "moth",
+      "examples": [
+        {
+          "guid": "cc77c218-9cc9-5f4d-a25b-276bfd305515",
+          "en": "A moth is on the cloth.",
+          "zh": "一隻蛾在布上。"
+        }
+      ]
+    },
+    {
+      "id": 883,
+      "guid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+      "word": "this",
+      "examples": [
+        {
+          "guid": "aa8aae5c-b5b5-5ce7-9712-bf16aa51c828",
+          "en": "This is my bag.",
+          "zh": "這是我的袋子。"
+        }
+      ]
+    },
+    {
+      "id": 871,
+      "guid": "9055af51-4865-58f3-998b-4478c285810e",
+      "word": "that",
+      "examples": [
+        {
+          "guid": "b2ad1b4e-f91a-5be8-97d6-6add6433c90a",
+          "en": "That man can bathe.",
+          "zh": "那位男子可以洗澡。"
+        }
+      ]
+    },
+    {
+      "id": 969,
+      "guid": "8ed80686-943c-580b-8615-b9bd80095157",
+      "word": "white",
+      "examples": [
+        {
+          "guid": "a872fb21-1fda-5c13-9198-65b137a423f0",
+          "en": "The white whale is big.",
+          "zh": "這隻白鯨很大。"
+        }
+      ]
+    },
+    {
+      "id": 964,
+      "guid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+      "word": "when",
+      "examples": [
+        {
+          "guid": "44759175-1038-50ba-bc6e-a5a7e2ede359",
+          "en": "When can I spin the wheel?",
+          "zh": "我什麼時候可以轉動這個輪子？"
+        }
+      ]
+    },
+    {
+      "id": 6051,
+      "guid": "f8aeec9a-9075-5df7-9f02-338649ea40d5",
+      "word": "phone",
+      "examples": [
+        {
+          "guid": "4bc71876-d179-569f-96dc-61855deabe1a",
+          "en": "The phone is on the desk.",
+          "zh": "電話在書桌上。"
+        }
+      ]
+    },
+    {
+      "id": 1633,
+      "guid": "e88870de-d3dc-5389-9926-18e9f1064d2f",
+      "word": "phrase",
+      "examples": [
+        {
+          "guid": "e93d7322-7f4d-574a-90a8-f45a8943eb7a",
+          "en": "Say the phrase.",
+          "zh": "說出這個片語。"
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "guid": "571abcec-ca5c-5c39-b75a-6cf8c06f3e88",
+      "word": "catch",
+      "examples": [
+        {
+          "guid": "6ead6166-3a55-5c53-b6ab-f19ee22438d1",
+          "en": "Catch the ball.",
+          "zh": "接住球。"
+        }
+      ]
+    },
+    {
+      "id": 4615,
+      "guid": "dc459315-236d-5568-9af9-79fc8d7c4db1",
+      "word": "patch",
+      "examples": [
+        {
+          "guid": "d73c303a-9e4e-517f-b469-d5a5110aa03f",
+          "en": "The patch is on the hat.",
+          "zh": "補丁在帽子上。"
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "guid": "d142f6ea-f226-51f1-a6a1-46a4127afd3a",
+      "word": "car",
+      "examples": [
+        {
+          "guid": "07d9be58-6a1c-5835-ae36-cea527fce729",
+          "en": "The car is in the park.",
+          "zh": "汽車在公園裡。"
+        }
+      ]
+    },
+    {
+      "id": 1783,
+      "guid": "3a033edf-41a3-51cd-a187-7288848749f5",
+      "word": "shark",
+      "examples": [
+        {
+          "guid": "aeb94e6c-061b-522f-afc7-5c1afe9f77b4",
+          "en": "A shark has a dark fin.",
+          "zh": "一隻鯊魚有深色的鰭。"
+        }
+      ]
+    },
+    {
+      "id": 1201,
+      "guid": "1d13eaec-03c1-5509-85c1-892133bed284",
+      "word": "corn",
+      "examples": [
+        {
+          "guid": "a655ec3d-fc45-58fb-bfc6-1bf0bab1b16a",
+          "en": "The corn is on the fork.",
+          "zh": "玉米在叉子上。"
+        }
+      ]
+    },
+    {
+      "id": 1851,
+      "guid": "c5dc710e-1648-5151-9dbe-51fd632219e3",
+      "word": "storm",
+      "examples": [
+        {
+          "guid": "273e555b-abcd-5190-8304-50c28f2abeb5",
+          "en": "The storm is short.",
+          "zh": "這場暴風雨持續的時間很短。"
+        }
+      ]
+    },
+    {
+      "id": 9219,
+      "guid": "048e3d74-d5fe-51a1-85cd-079d1fd684ef",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [],
+      "word": "oar",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "槳；用手划動小船的長柄工具，一端寬而扁平。",
+      "explains": [
+        {
+          "guid": "3f037f6f-ffd8-5623-98f7-71587f3aa797",
+          "en": "An oar is a long pole with a wide, flat end. A person pushes it through the water to move a small boat."
+        },
+        {
+          "guid": "24fb9d80-7dba-5ae5-ad26-2cdd006f77bc",
+          "en": "This noun names a tool used for rowing. A rower holds one end and puts the broad blade into the water."
+        },
+        {
+          "guid": "3c2ee089-6aed-5381-99c6-57c38cdf06bb",
+          "en": "An oar helps a person move or turn a boat by hand. It can be made of wood or another strong, light material."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "8c0b69bf-c824-5d8f-a907-650f81bdb9ea",
+          "en": "The oar is in the boat.",
+          "zh": "槳在船裡。"
+        },
+        {
+          "guid": "3ba6c472-0b2d-5ad0-9acc-ca291342a5c4",
+          "en": "He used an oar to move the boat.",
+          "zh": "他用一支槳划動小船。"
+        },
+        {
+          "guid": "754e3b53-938e-5e80-b716-a645fb9fb99c",
+          "en": "She lifted the oar out of the water.",
+          "zh": "她把槳從水裡提起。"
+        },
+        {
+          "guid": "2b961a82-485f-5016-8002-7bacd90b13f6",
+          "en": "The oar is on the shore.",
+          "zh": "船槳在岸邊。"
+        }
+      ]
+    },
+    {
+      "id": 1102,
+      "guid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "examples": [
+        {
+          "guid": "d1321a93-e6d5-5505-8818-a9be4c6e3b7f",
+          "en": "The board is in the store.",
+          "zh": "木板在商店裡。"
+        }
+      ]
+    }
+  ]
+}

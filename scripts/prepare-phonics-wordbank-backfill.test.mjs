@@ -45,3 +45,23 @@ test('例句只能關聯本課詞條，不能拿整詞GUID當例句素材', () =
     { lesson: 'short-e' }, { word: 'bat' }, { kind: 'word' }])
     assert.throws(() => planBackfill({ words: [word], sentences: [{ ...sentence, ...change }] }, { audio: [] }), /未歸屬|用途不符/);
 });
+
+test('長母音映射可離線補缺，仍保留既有整詞與驗證例句歸屬', () => {
+  const longWord = { ...word, lesson: 'long-a' };
+  const longSentence = { ...sentence, lesson: 'long-a' };
+  assert.deepEqual(planBackfill({ words: [longWord], sentences: [longSentence] }, { audio: [existing] }),
+    { selected: [longSentence], preserved: [longWord] });
+  assert.throws(() => planBackfill({ words: [{ ...longWord, lesson: 'long-x' }], sentences: [] }, { audio: [] }));
+});
+
+
+test('第三至五章映射維持GUID歸屬、既有音保留與路徑驗證', () => {
+  for (const lesson of ['blends-l', 'digraph-th-voiced', 'r-ore-oar']) {
+    const newWord = { ...word, lesson };
+    const newSentence = { ...sentence, lesson };
+    assert.deepEqual(planBackfill({ words: [newWord], sentences: [newSentence] }, { audio: [existing] }),
+      { selected: [newSentence], preserved: [newWord] });
+  }
+  for (const lesson of ['blends-unknown', 'digraph-sh/../long-a', 'r-unknown'])
+    assert.throws(() => planBackfill({ words: [{ ...word, lesson }], sentences: [] }, { audio: [] }), /不合法/);
+});

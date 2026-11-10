@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from 'node:fs/promises';
+import { mkdtemp, mkdir, readdir, rm, symlink, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
@@ -46,7 +46,7 @@ async function fixture(t) {
   return { tmp, audioRoot, outputAudioDir, sourceEntries, manifest, pkg };
 }
 
-test('只複製目標詞全部音檔及支援詞單字，保留全文詞條與來源內容', async (t) => {
+test('只產生共用音訊識別碼與全文內容，不再複製音檔', async (t) => {
   const f = await fixture(t);
   const { data, stats } = await buildScenarioPreview(f);
   assert.equal(stats.entries, 2);
@@ -56,9 +56,7 @@ test('只複製目標詞全部音檔及支援詞單字，保留全文詞條與�
   assert.equal(data.entries[1].examples[0].en, 'A book.');
   assert.equal(data.entries[1].examples[0].audioKey, null);
   assert.deepEqual(data.story.sentences, f.pkg.story.sentences);
-  assert.equal((await readdir(f.outputAudioDir)).length, 4);
-  assert.deepEqual(await readFile(path.join(f.outputAudioDir, `${targetGuid}.mp3`)),
-    await readFile(path.join(f.audioRoot, f.manifest.entries[0].relativePath)));
+  await assert.rejects(readdir(f.outputAudioDir), { code: 'ENOENT' });
 });
 
 test('音檔文字、hash、bytes、缺檔或越界路徑不會生成可播放 key', async (t) => {
@@ -81,7 +79,7 @@ test('音檔文字、hash、bytes、缺檔或越界路徑不會生成可播放 k
       assert.equal(data.entries[0].wordAudioKey, null);
       assert.deepEqual(stats.targetsMissingWordAudio, ['sofa']);
       assert.equal(stats.rejectedAssets, 1);
-      assert.ok(!(await readdir(f.outputAudioDir)).includes(`${targetGuid}.mp3`));
+      await assert.rejects(readdir(f.outputAudioDir), { code: 'ENOENT' });
     });
   }
 });
@@ -96,7 +94,7 @@ test('缺少 manifest 仍可讀完整內容，所有音檔 key 為 null', async 
   assert.equal(data.entries[0].examples[0].audioKey, null);
 });
 
-test('來源 GUID 或 word 不符時，在複製素材前拒絕套件', async (t) => {
+test('來源 GUID 或 word 不符時，在產生識別碼前拒絕套件', async (t) => {
   const f = await fixture(t);
   f.pkg.story.sentences[0].wordLinks[0].word = 'wrong';
   await assert.rejects(buildScenarioPreview(f), /來源不符/);

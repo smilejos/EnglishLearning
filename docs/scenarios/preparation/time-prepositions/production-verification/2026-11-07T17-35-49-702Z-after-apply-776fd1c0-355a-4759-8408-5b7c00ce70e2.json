@@ -1,0 +1,227 @@
+{
+  "checkedAt": "2026-11-07T17:35:49.702Z",
+  "origin": "http://127.0.0.1:8090",
+  "mode": "after-apply",
+  "scope": "固定 origin GET 查核；不呼叫 API mutation、不直接連 DB、不啟動服務。",
+  "manual": {
+    "desktopClicks": "pending",
+    "mobile": "pending",
+    "listeningReview": "pending",
+    "readerRoleAuthorization": "pending"
+  },
+  "static": {
+    "role": "admin",
+    "emailRecorded": false,
+    "htmlSha256": "563eb9241a4855fe86ede84dbec85540bfc4ab9a65d845c8d85d5397f20305b7",
+    "bundle": {
+      "url": "/assets/index-SeLv5tqt.js",
+      "bytes": 360885,
+      "sha256": "e609b11199300232462d3f401de9690914cfe9f346038e3b8d8db70dff37b446",
+      "snapshotMatched": true,
+      "illustratedGuide": true,
+      "guideExplanation": true,
+      "guideResetsRecall": true,
+      "hideShowToggleAndLocationReset": true,
+      "overlayUsesWordVisibility": true,
+      "wordLabels": true,
+      "proofType": "靜態程式證據；非瀏覽器真實點擊"
+    },
+    "repoSourceHashes": {
+      "web-learner/src/ScenarioLearning.tsx": "e0c3ee39ddd66582f7bf2d9d421c4435b09bd1c07024d03c007e5e4320c119a1",
+      "web-learner/src/scenarioTypes.ts": "43d3390ba20760c28c4bc4fb488c476be59d1d9e720aaca3f231db8675b9a553",
+      "web-learner/src/ScenarioWordCard.tsx": "cc930e86dcee047077b5b9712c6d1413bf7367b6684facdc368686fa497b1cee"
+    },
+    "repoSourceHashesProveCompiledIdentity": false
+  },
+  "production": {
+    "scenarios": [
+      {
+        "scenarioKey": "time-prepositions-basics",
+        "revision": 1,
+        "status": "published",
+        "targets": 3,
+        "media": {
+          "image": {
+            "sha256": "28a3f4394b90ec12835fe633954539517b6f4814b1a68b7f1b58f7695449d12b",
+            "bytes": 2563199,
+            "hashMatched": true,
+            "rangeMatched": true
+          },
+          "audio": {
+            "sha256": "9f94e4d1f7d8bfcc8721873f0fa94180b3ed3af966c9e8bfafb5e9703e3735f3",
+            "bytes": 1439660,
+            "hashMatched": true,
+            "rangeMatched": true
+          }
+        }
+      },
+      {
+        "scenarioKey": "time-prepositions-extended",
+        "revision": 1,
+        "status": "published",
+        "targets": 11,
+        "media": {
+          "image": {
+            "sha256": "0daddcd50f29d5fb57e566a395518463caef0cce2936e9cf1968fa620bfd139b",
+            "bytes": 2369710,
+            "hashMatched": true,
+            "rangeMatched": true
+          },
+          "audio": {
+            "sha256": "3c0f5fd3bb53b58ee23cedc6fae255408161907c90c21554a2856e879b54c973",
+            "bytes": 1282220,
+            "hashMatched": true,
+            "rangeMatched": true
+          }
+        }
+      }
+    ],
+    "categoryId": 28,
+    "categoryKind": "情境",
+    "categoryUrl": "http://127.0.0.1:8090/#/scenarios?category=28",
+    "targetCardOccurrences": 14,
+    "uniqueTargetCards": 13,
+    "availableWordbankClips": 123,
+    "wordbankAudioByteHashesMatched": true,
+    "additions": [
+      {
+        "word": "in",
+        "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "on",
+        "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "at",
+        "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "before",
+        "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "after",
+        "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "from",
+        "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "to",
+        "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "by",
+        "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "until",
+        "entryGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "for",
+        "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "since",
+        "entryGuid": "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "during",
+        "entryGuid": "00676060-6b5b-564b-9108-e58900a36b8b",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "within",
+        "entryGuid": "1716c62d-9d1d-510c-b7a7-779558ff5c4d",
+        "explains": 1,
+        "examples": 1,
+        "textMatched": true,
+        "targetAudioMatched": true
+      },
+      {
+        "word": "autumn",
+        "entryGuid": "8f3a9c1c-fc8e-5494-b126-31fe95b29df8",
+        "explains": 3,
+        "examples": 3,
+        "textMatched": true,
+        "targetAudioMatched": false,
+        "audioScope": "非目標支援詞；未要求音訊"
+      }
+    ],
+    "publicList": {
+      "total": 15,
+      "batchIncluded": true,
+      "otherPublishedKeys": [
+        "art-class",
+        "breakfast-kitchen",
+        "classroom-group-work",
+        "family-dinner",
+        "laundry-day",
+        "library-visit",
+        "living-room",
+        "mcdonalds-after-meal",
+        "mcdonalds-enjoy-meal",
+        "mcdonalds-order-food",
+        "mcdonalds-restaurant-tour",
+        "tidy-bedroom",
+        "water-science"
+      ]
+    },
+    "existingScenarioPreservation": {
+      "status": "pending-driver-baseline-after-comparison",
+      "expectedExistingScenarios": 13,
+      "note": "本腳本不掃其他 key、不驗既有13場完整性；由主對話 driver 比對 baseline/after。"
+    }
+  },
+  "status": "api-checks-passed"
+}

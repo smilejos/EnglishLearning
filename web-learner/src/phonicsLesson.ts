@@ -1,3 +1,9 @@
+import { longVowelLessons } from "./phonicsLongLessons";
+import { blendLessons } from "./phonicsBlendLessons";
+import { digraphLessons } from "./phonicsDigraphLessons";
+import { rControlledLessons } from "./phonicsRControlledLessons";
+import { inflectedLessons } from "./phonicsInflectedLessons";
+
 /** 自然發音試作：明列教材資料，不呼叫生成 API，也不保存跨次作答紀錄。 */
 export type PhonicsRange = { start: number; end: number };
 export type PhonicsGrapheme = {
@@ -14,11 +20,17 @@ export type PhonicsWord = {
   phonemes: string[];
   graphemes: PhonicsGrapheme[];
   targetRanges: PhonicsRange[];
+  /** 拼字作答塊；未指定時沿用單字元字母。 */
+  spellingUnits?: string[];
+  /** 屈折字尾教材明列原形與拼字變化，不由畫面猜測。 */
+  inflection?: { baseWord: string; suffix: string; note: string };
 };
 export type PhonicsFamily = {
   id: string;
   label: string;
   rime: string;
+  /** 表示目標聲音的拼法；既有單拼法課程可省略。 */
+  spelling?: string;
   description: string;
   words: PhonicsWord[];
 };
@@ -125,7 +137,6 @@ export const shortASentences: PhonicsSentence[] = [
     ],
   },
 ];
-export const phonicsAudioPath = (key: string, lessonId = "short-a") => `/phonics/${lessonId}/${key}.mp3`;
 
 export type PhonicsLesson = {
   id: string;
@@ -136,6 +147,8 @@ export type PhonicsLesson = {
   introductionText: string;
   pronunciationNote: string;
   spellingLabel: string;
+  /** 子音或 r 控制母音依教學目標分詞組，不假稱相同韻尾字族。 */
+  groupLabel?: "字族" | "詞組";
   prerequisites: string[];
   families: PhonicsFamily[];
   introductionWords: PhonicsWord[];
@@ -555,6 +568,6 @@ export const shortULesson: PhonicsLesson = {
   ],
 };
 
-export const phonicsLessons: PhonicsLesson[] = [shortALesson, shortELesson, shortILesson, shortOLesson, shortULesson];
+export const phonicsLessons: PhonicsLesson[] = [shortALesson, shortELesson, shortILesson, shortOLesson, shortULesson, ...longVowelLessons, ...blendLessons, ...digraphLessons, ...rControlledLessons, ...inflectedLessons];
 export const getPhonicsLesson = (id: string) => phonicsLessons.find((lesson) => lesson.id === id);
 export const lessonWords = (lesson: PhonicsLesson) => lesson.families.flatMap(({ words }) => words);

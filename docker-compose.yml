@@ -231,6 +231,25 @@ services:
         condition: service_completed_successfully
     restart: "no"
 
+  # 僅由明確維護指令啟動；資料寫入已由本次音源統一需求授權。
+  # /workspace 保留原檔／可回復封存；真正播放來源只在 audio volume。
+  audio-maintenance:
+    profiles: ["audio-maintenance"]
+    build:
+      context: .
+      dockerfile: Dockerfile.audio-maintenance
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD:-app}@db:5432/${POSTGRES_DB:-english_learning}
+      AUDIO_DIR: /data/audio
+    volumes:
+      - .:/workspace
+      - audio:/data/audio
+      - ./config:/app/config:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
 volumes:
   pgdata:
   audio:

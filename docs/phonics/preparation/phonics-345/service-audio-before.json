@@ -1,0 +1,357 @@
+{
+  "target": "english_learning",
+  "verifiedAt": "2026-11-01T16:24:58.053Z",
+  "readOnly": true,
+  "total": 58,
+  "allIdenticalToLocalSources": true,
+  "entries": [
+    {
+      "assetGuid": "192f0b06-dfbe-5bbb-810c-e3ac89f1c728",
+      "path": "wordbank/09eeb3d17582e855/192f0b06-dfbe-5bbb-810c-e3ac89f1c728.mp3",
+      "sha256": "2c7aad36c1e884ed0ffd314f394edc6554922c0ae7f8bb6e4538278eb16600d6",
+      "bytes": 22700
+    },
+    {
+      "assetGuid": "4a76d9c6-6854-5132-bf33-877d68f38d8f",
+      "path": "wordbank/09eeb3d17582e855/4a76d9c6-6854-5132-bf33-877d68f38d8f.mp3",
+      "sha256": "72afea0842b8bc26c4a68805ab3d9f1fb864a5ba7f57672ba4fc2d9c88b56fd9",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "17e48c9a-335d-56a1-ae1a-658608a5d1ea",
+      "path": "wordbank/09eeb3d17582e855/17e48c9a-335d-56a1-ae1a-658608a5d1ea.mp3",
+      "sha256": "9eb059e1dad62bc87fc170da48017e7c5e134b699dbc6e2ed0aabc286b30bdfe",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+      "path": "wordbank/09eeb3d17582e855/d82e9391-94d2-5384-89e4-2b674f37e41a.mp3",
+      "sha256": "9657e17a83f18c09d3d34e623eafffa36ffda72ea7c011c241b8692bb83f4a64",
+      "bytes": 23852
+    },
+    {
+      "assetGuid": "c6a04cc1-069c-5544-a350-f8cd4d38fff2",
+      "path": "wordbank/09eeb3d17582e855/c6a04cc1-069c-5544-a350-f8cd4d38fff2.mp3",
+      "sha256": "9232c14eca95245cc613bd3b686f3687dfa9e8c707835e241e31a9f8647ad35c",
+      "bytes": 22700
+    },
+    {
+      "assetGuid": "0dd4d1e1-c428-5f07-93c6-37db540d116f",
+      "path": "wordbank/09eeb3d17582e855/0dd4d1e1-c428-5f07-93c6-37db540d116f.mp3",
+      "sha256": "e165d7813a52f7eadd34421c8f3905c3314d95b0b536d23d7e8801fc254eb683",
+      "bytes": 22700
+    },
+    {
+      "assetGuid": "3dfb8841-25d4-5c6a-8c43-243a45506519",
+      "path": "wordbank/09eeb3d17582e855/3dfb8841-25d4-5c6a-8c43-243a45506519.mp3",
+      "sha256": "35139ec26a48518b1aaa0c6586b013cd1fedfca9e710e30c3d8dd85dee626021",
+      "bytes": 17708
+    },
+    {
+      "assetGuid": "d142f6ea-f226-51f1-a6a1-46a4127afd3a",
+      "path": "wordbank/09eeb3d17582e855/d142f6ea-f226-51f1-a6a1-46a4127afd3a.mp3",
+      "sha256": "9ad5f66c7ecce09a63626b4b370acaa3b30a12270524fd93acd0b153ba8ff0a3",
+      "bytes": 23852
+    },
+    {
+      "assetGuid": "571abcec-ca5c-5c39-b75a-6cf8c06f3e88",
+      "path": "wordbank/09eeb3d17582e855/571abcec-ca5c-5c39-b75a-6cf8c06f3e88.mp3",
+      "sha256": "d900e8f6617590948f716512bd0780e5c7ca09fd956873656c6a69b175c7ce63",
+      "bytes": 23852
+    },
+    {
+      "assetGuid": "5719cbd5-314b-5efd-8a7e-68b1f39ba85a",
+      "path": "wordbank/09eeb3d17582e855/5719cbd5-314b-5efd-8a7e-68b1f39ba85a.mp3",
+      "sha256": "7ca882aa744074516554cb39835e475e798bca89819a97a48ceb76b9d198a048",
+      "bytes": 23852
+    },
+    {
+      "assetGuid": "8c10780a-8bb8-5dfd-92c8-0ce9de01166c",
+      "path": "wordbank/09eeb3d17582e855/8c10780a-8bb8-5dfd-92c8-0ce9de01166c.mp3",
+      "sha256": "700184d01db60d1cde84637112f724d624402f182abe104c8c777f5c43aac2e8",
+      "bytes": 22700
+    },
+    {
+      "assetGuid": "b2bcc931-5c1e-5f8d-a02b-1123e9a2e19c",
+      "path": "wordbank/09eeb3d17582e855/b2bcc931-5c1e-5f8d-a02b-1123e9a2e19c.mp3",
+      "sha256": "4d8e431b464b96a867093a33d7791e9ddc43383bb47100a888417a7a51ca0217",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "5b185616-cc26-587f-af2b-c6fc3201abf3",
+      "path": "wordbank/09eeb3d17582e855/5b185616-cc26-587f-af2b-c6fc3201abf3.mp3",
+      "sha256": "5fb522269504591f80f9512e3c93e7540d96de3d05fb5f7c42fce72b99f405e8",
+      "bytes": 27692
+    },
+    {
+      "assetGuid": "ba8bba28-156b-5050-8cd5-935f05aece0e",
+      "path": "wordbank/09eeb3d17582e855/ba8bba28-156b-5050-8cd5-935f05aece0e.mp3",
+      "sha256": "a1ed44bdeb2b51fa6219a98679b1da72efa6e61a7aebb7eb547e76edc29d2260",
+      "bytes": 30380
+    },
+    {
+      "assetGuid": "f8e13ebd-55fa-56f2-a773-dd061cf44d7a",
+      "path": "wordbank/09eeb3d17582e855/f8e13ebd-55fa-56f2-a773-dd061cf44d7a.mp3",
+      "sha256": "16791b4cd6cfeeace94fd5abd3c4acb8c113b757ec7d0ebe5c5aaf41b1a8d80f",
+      "bytes": 22700
+    },
+    {
+      "assetGuid": "8eb4c30c-5207-52f6-8d17-1f966a14683a",
+      "path": "wordbank/09eeb3d17582e855/8eb4c30c-5207-52f6-8d17-1f966a14683a.mp3",
+      "sha256": "b42db348836b97e357017433ddabe2476d96ac11081f015c755089ec425f2206",
+      "bytes": 25388
+    },
+    {
+      "assetGuid": "ac695b43-6b36-5623-a553-29cd262468e1",
+      "path": "wordbank/09eeb3d17582e855/ac695b43-6b36-5623-a553-29cd262468e1.mp3",
+      "sha256": "4c75a3791d4398c3e3bd6f06373e08db49b372c4fc3f161a22b322275a47804c",
+      "bytes": 18860
+    },
+    {
+      "assetGuid": "9e73e71c-87b6-50d4-96d3-ba2b5352dd44",
+      "path": "wordbank/09eeb3d17582e855/9e73e71c-87b6-50d4-96d3-ba2b5352dd44.mp3",
+      "sha256": "7dff129a83ee8416ecda3a452ec117a159529e35da6beef45fb57ddd23fffeb5",
+      "bytes": 20012
+    },
+    {
+      "assetGuid": "bb814ace-50b7-5c79-b2e0-7df666a691c6",
+      "path": "wordbank/09eeb3d17582e855/bb814ace-50b7-5c79-b2e0-7df666a691c6.mp3",
+      "sha256": "9725880b2d0c8fc4cd11903365b320d46d648bb5b51d1eef6a0a963b4659c139",
+      "bytes": 20012
+    },
+    {
+      "assetGuid": "38a15c63-e0fe-5c44-8d75-1d6ca08fb9f9",
+      "path": "wordbank/09eeb3d17582e855/38a15c63-e0fe-5c44-8d75-1d6ca08fb9f9.mp3",
+      "sha256": "6c468aa46725f69a544099103b81ed804671a30aa816852d727358ab0fcf8de7",
+      "bytes": 25388
+    },
+    {
+      "assetGuid": "9c789a02-da62-59ae-b3ff-fc5f2bd655d2",
+      "path": "wordbank/09eeb3d17582e855/9c789a02-da62-59ae-b3ff-fc5f2bd655d2.mp3",
+      "sha256": "f1f4ea44076a71a685bc0709ccaac71b6ecb32c3933fdcacebfd409cfea934e1",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "7e26abdd-2a98-5391-91d8-cf1d891c0e78",
+      "path": "wordbank/09eeb3d17582e855/7e26abdd-2a98-5391-91d8-cf1d891c0e78.mp3",
+      "sha256": "20a67266cd85b87c26c949d2a25e12251a5104f0fbd33f8ac198dca57e3d3848",
+      "bytes": 18860
+    },
+    {
+      "assetGuid": "feaa13de-bcb4-5a08-bf9b-0d3b82de9864",
+      "path": "wordbank/09eeb3d17582e855/feaa13de-bcb4-5a08-bf9b-0d3b82de9864.mp3",
+      "sha256": "56d89b9a19de80cb4351690ba5e68a6c72504b765c094e5238e0119b3c506039",
+      "bytes": 23852
+    },
+    {
+      "assetGuid": "8ac59a23-c7cd-50d4-b64d-a887ffd4e709",
+      "path": "wordbank/09eeb3d17582e855/8ac59a23-c7cd-50d4-b64d-a887ffd4e709.mp3",
+      "sha256": "1c60b30dc613a01411cbec189219c2ee7847724028fdad1d44c5d0a39c1a7596",
+      "bytes": 18860
+    },
+    {
+      "assetGuid": "3c7d15e8-2c8c-5536-9573-6fecc22335a6",
+      "path": "wordbank/09eeb3d17582e855/3c7d15e8-2c8c-5536-9573-6fecc22335a6.mp3",
+      "sha256": "f8b547cf2a47c3ce077f2cfb161785e1244131341f1599c1b56d3ac418874b96",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "66f118af-d262-5cc8-8a87-78bb5102ddca",
+      "path": "wordbank/09eeb3d17582e855/66f118af-d262-5cc8-8a87-78bb5102ddca.mp3",
+      "sha256": "f0f08a1a013484625dcb5723a6d1cbb9d40171043ee8e6ca39860c9f31f1fe1d",
+      "bytes": 22700
+    },
+    {
+      "assetGuid": "252bda43-a9d8-5870-ba3c-693a76d74c3b",
+      "path": "wordbank/09eeb3d17582e855/252bda43-a9d8-5870-ba3c-693a76d74c3b.mp3",
+      "sha256": "9e366f8736d64c11d450b34a8962d1e095b46ea8ffb677e90d4829f8e26e27dd",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "f1f62583-010c-5cd6-bd3e-e2ec1e1898ed",
+      "path": "wordbank/09eeb3d17582e855/f1f62583-010c-5cd6-bd3e-e2ec1e1898ed.mp3",
+      "sha256": "1cff0733061048201d2af814e1f85f25f52dfbeae3339856581f45b00c2894dd",
+      "bytes": 20012
+    },
+    {
+      "assetGuid": "8a9442cd-a7a6-50a4-898b-afb8ee2acf1f",
+      "path": "wordbank/09eeb3d17582e855/8a9442cd-a7a6-50a4-898b-afb8ee2acf1f.mp3",
+      "sha256": "095fdacf4b3dfa61210aa22e5629f5e4007ccf91a739aba27b12930e229c6ab1",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "97511c5a-8c56-57e2-8d68-d659e782ef9f",
+      "path": "wordbank/09eeb3d17582e855/97511c5a-8c56-57e2-8d68-d659e782ef9f.mp3",
+      "sha256": "11f8c775c3102d8e755f2a640a0a1a0e5fe5bfae416f6a95148a7f78876456ee",
+      "bytes": 20012
+    },
+    {
+      "assetGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+      "path": "wordbank/09eeb3d17582e855/96cf64be-8c0c-5c98-be51-5c7390022225.mp3",
+      "sha256": "a81544332070aee45fd60d8e50aac477cb70463d4980f9c6cef6a111d17f29b9",
+      "bytes": 34220
+    },
+    {
+      "assetGuid": "59058303-0b58-5f0d-84ad-a197b8e1ad4a",
+      "path": "wordbank/09eeb3d17582e855/59058303-0b58-5f0d-84ad-a197b8e1ad4a.mp3",
+      "sha256": "4b54e4ecfc4443bf82c53612f667eb0edf207cbf07eaedb465adf0c8ecb2dd6b",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "0d06c5a9-11b0-57e9-b942-4a5e5c627ede",
+      "path": "wordbank/09eeb3d17582e855/0d06c5a9-11b0-57e9-b942-4a5e5c627ede.mp3",
+      "sha256": "2fcc77c9bc961072f5269a958a5569929e821043349c3c3504b2662639ce924e",
+      "bytes": 30380
+    },
+    {
+      "assetGuid": "90f8333d-eb77-54cf-b7b6-475b41bb8f9c",
+      "path": "wordbank/09eeb3d17582e855/90f8333d-eb77-54cf-b7b6-475b41bb8f9c.mp3",
+      "sha256": "fea9e133bb03ef6b11bcad6a55d34409544b66440adad94e5d8898b78aed28c9",
+      "bytes": 40748
+    },
+    {
+      "assetGuid": "94b20084-3dfd-548a-b5c9-eceab251ba3f",
+      "path": "wordbank/09eeb3d17582e855/94b20084-3dfd-548a-b5c9-eceab251ba3f.mp3",
+      "sha256": "893c4e11e5a369b6c730652944649201011be6819fd21f1a570f55412645a0da",
+      "bytes": 68780
+    },
+    {
+      "assetGuid": "859efca1-d77e-5a2a-a543-13a23b8d48c3",
+      "path": "wordbank/09eeb3d17582e855/859efca1-d77e-5a2a-a543-13a23b8d48c3.mp3",
+      "sha256": "1a5a62a474a5633b4bec7bc8cbf2c04a61bf75d5a08c1eb1d25f999be614bc9d",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "cc33fe2f-d9aa-5f69-921a-77e15405bab9",
+      "path": "wordbank/09eeb3d17582e855/cc33fe2f-d9aa-5f69-921a-77e15405bab9.mp3",
+      "sha256": "881541ac6678eb23fb0b455a4f993841664e3f0aa46136b81e72bb853058bd7d",
+      "bytes": 25388
+    },
+    {
+      "assetGuid": "a191f764-4de6-5981-8a10-3dd3ad01bafa",
+      "path": "wordbank/09eeb3d17582e855/a191f764-4de6-5981-8a10-3dd3ad01bafa.mp3",
+      "sha256": "84d45453509b08d43765beb20d7171074980a19f01b9b37252ea34832eb9baeb",
+      "bytes": 27692
+    },
+    {
+      "assetGuid": "25ac6804-4166-5875-9895-86fc60a5dc6b",
+      "path": "wordbank/09eeb3d17582e855/25ac6804-4166-5875-9895-86fc60a5dc6b.mp3",
+      "sha256": "6cea14e0c7d4a7840d0c2978c4a2acfdec3a74d83a32afc4e1769bcc8ad8726c",
+      "bytes": 20012
+    },
+    {
+      "assetGuid": "b2bf583f-2b66-56aa-abe8-a8f0fe006771",
+      "path": "wordbank/09eeb3d17582e855/b2bf583f-2b66-56aa-abe8-a8f0fe006771.mp3",
+      "sha256": "3ce5c041719240cf92e75258e8d38266ede395ee8c6a6606d2adfc923bed6b67",
+      "bytes": 29228
+    },
+    {
+      "assetGuid": "1c29a1ce-c008-54ab-8ca8-6c9dbda6d953",
+      "path": "wordbank/09eeb3d17582e855/1c29a1ce-c008-54ab-8ca8-6c9dbda6d953.mp3",
+      "sha256": "597b828b7fc426945f1f906687e3c8645100df4361593ceb61b97c12c07febe2",
+      "bytes": 20012
+    },
+    {
+      "assetGuid": "bc27cdcf-5c93-5bd0-97c6-c367fd3ffd69",
+      "path": "wordbank/09eeb3d17582e855/bc27cdcf-5c93-5bd0-97c6-c367fd3ffd69.mp3",
+      "sha256": "7f3268e6e02f1ea781e632fce62edaab8a3439ca6ad1b5f4d9f4e43e5c483569",
+      "bytes": 27692
+    },
+    {
+      "assetGuid": "9055af51-4865-58f3-998b-4478c285810e",
+      "path": "wordbank/09eeb3d17582e855/9055af51-4865-58f3-998b-4478c285810e.mp3",
+      "sha256": "37a2c185a4964d541c1dd4eb705f91251860259c20ce7ae3590ee34cc15ad914",
+      "bytes": 29228
+    },
+    {
+      "assetGuid": "47b03103-a555-55fd-a51b-34d8b149b596",
+      "path": "wordbank/09eeb3d17582e855/47b03103-a555-55fd-a51b-34d8b149b596.mp3",
+      "sha256": "429f73fc35fe3bc6a1c12b8a0dba821448c7739cdcb70a6ea5c6071e81e7a3c6",
+      "bytes": 20012
+    },
+    {
+      "assetGuid": "a1777815-c12b-59a8-8c2d-2069d1826872",
+      "path": "wordbank/09eeb3d17582e855/a1777815-c12b-59a8-8c2d-2069d1826872.mp3",
+      "sha256": "259dfdd3218ef6f91ccc35edc2950c5a9deee6545f9c8c64df03e8bda539304b",
+      "bytes": 30380
+    },
+    {
+      "assetGuid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+      "path": "wordbank/09eeb3d17582e855/d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d.mp3",
+      "sha256": "38ecab46f09a05b3021dd0e2a27d43b31bf3080396802e03666fc02bb4895fb3",
+      "bytes": 31532
+    },
+    {
+      "assetGuid": "83f92cd1-5004-584c-b13e-36f264ca478c",
+      "path": "wordbank/09eeb3d17582e855/83f92cd1-5004-584c-b13e-36f264ca478c.mp3",
+      "sha256": "eb45386d5f32c90e612d474ba92781d0d8ceef3bce3b6c96c3997f7c2f847990",
+      "bytes": 25388
+    },
+    {
+      "assetGuid": "cb47822e-87eb-548c-aa51-38d562f80ee3",
+      "path": "wordbank/09eeb3d17582e855/cb47822e-87eb-548c-aa51-38d562f80ee3.mp3",
+      "sha256": "869eda4b5a95e08c66b86a57bd8832cf53911ad88afe42d198f07582e86c48b1",
+      "bytes": 18860
+    },
+    {
+      "assetGuid": "80cd87eb-7404-5eae-b7ae-fa54e1ed56a7",
+      "path": "wordbank/09eeb3d17582e855/80cd87eb-7404-5eae-b7ae-fa54e1ed56a7.mp3",
+      "sha256": "3f27f719192202d9349280e96be63a866f8991a9796a8b165103bcb05ce35ec2",
+      "bytes": 18860
+    },
+    {
+      "assetGuid": "8ed80686-943c-580b-8615-b9bd80095157",
+      "path": "wordbank/09eeb3d17582e855/8ed80686-943c-580b-8615-b9bd80095157.mp3",
+      "sha256": "e8962d8601ee05b9ae4cf27aaaaad73ce8221676b69b9ca2441f3de4b9d214a4",
+      "bytes": 25388
+    },
+    {
+      "assetGuid": "339dbaf3-025d-532c-b4ef-3720fc9fbca1",
+      "path": "wordbank/09eeb3d17582e855/339dbaf3-025d-532c-b4ef-3720fc9fbca1.mp3",
+      "sha256": "e0fdb03f08aa323c54258c679fe09f63914eec24fe8215fbc8942b742581a6af",
+      "bytes": 27692
+    },
+    {
+      "assetGuid": "3fb6f86d-879c-53ce-8a46-933487ce1fcf",
+      "path": "wordbank/09eeb3d17582e855/3fb6f86d-879c-53ce-8a46-933487ce1fcf.mp3",
+      "sha256": "5779758fb64d63076f7ac6ddcd54ac8bff40c485ee6819bd126c63fa1362c60f",
+      "bytes": 49580
+    },
+    {
+      "assetGuid": "3d9dec47-c7ed-5ab6-a3c8-7e0ef932902c",
+      "path": "wordbank/09eeb3d17582e855/3d9dec47-c7ed-5ab6-a3c8-7e0ef932902c.mp3",
+      "sha256": "8ee9b59cf3f10ac303ec5b5220d44882e5523c3754da51a7f6fecddccde5e67d",
+      "bytes": 33068
+    },
+    {
+      "assetGuid": "da8a5a63-19a0-5645-9336-801351980f69",
+      "path": "wordbank/09eeb3d17582e855/da8a5a63-19a0-5645-9336-801351980f69.mp3",
+      "sha256": "e8afdd5d7ba986c61149fc8c2684fd88d71c45d62616d47b4fbd19fdc9dc87ad",
+      "bytes": 23852
+    },
+    {
+      "assetGuid": "e8fb0d6e-765d-5fe9-b28a-4aa57912fa6f",
+      "path": "wordbank/09eeb3d17582e855/e8fb0d6e-765d-5fe9-b28a-4aa57912fa6f.mp3",
+      "sha256": "9f92737f0a41f0fb1dd4dac28eca9ea6c2fa41c4bd15f91a71e85484cb9a2fe9",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "ddc0aadb-f148-5055-8910-ad6b17d60787",
+      "path": "wordbank/09eeb3d17582e855/ddc0aadb-f148-5055-8910-ad6b17d60787.mp3",
+      "sha256": "7ac800479fabf9fecbaf5c0d24c26c4fd116cf49989122ec24ebfe853e6f3a3c",
+      "bytes": 21548
+    },
+    {
+      "assetGuid": "f8aeec9a-9075-5df7-9f02-338649ea40d5",
+      "path": "wordbank/09eeb3d17582e855/f8aeec9a-9075-5df7-9f02-338649ea40d5.mp3",
+      "sha256": "ce6f8bf279fb82674d170c69b51343887c60e011aa9f052277abf7edababf2e5",
+      "bytes": 22700
+    },
+    {
+      "assetGuid": "39092abf-a6e2-54cb-9151-9c9947587c98",
+      "path": "wordbank/09eeb3d17582e855/39092abf-a6e2-54cb-9151-9c9947587c98.mp3",
+      "sha256": "6a55c370765614f12333f99d03ec2d7fe5767fe793666ccebf2c5c4e66443dc0",
+      "bytes": 21548
+    }
+  ]
+}

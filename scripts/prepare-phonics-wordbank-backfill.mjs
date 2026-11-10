@@ -4,11 +4,11 @@ import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { withBatchLock } from './generate-wordbank-audio.mjs';
+import { batchPreparation, lessonMatchesBatch, validLessonId } from './prepare-phonics-lessons-audio.mjs';
 import { validatePhonicsMp3 } from './phonics-audio-quality.mjs';
+import { phonicsSourceDirectory } from './phonics-audio-paths.mjs';
 
 const root = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
-const preparation = path.join(root, 'docs/phonics/preparation/short-vowels');
-const output = path.join(root, 'data/phonics/short-vowels/wordbank-audio');
 const json = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const hash = (data) => createHash('sha256').update(data).digest('hex');
 const save = (file, value) => writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
@@ -18,7 +18,7 @@ function validateMapping(mapping) {
   if (!Array.isArray(mapping?.words) || !Array.isArray(mapping?.sentences)) throw new Error('缺少單字／例句映射');
   for (const [kind, items] of [['word', mapping.words], ['example', mapping.sentences]]) {
     for (const item of items) {
-      if (!item || typeof item.lesson !== 'string' || !/^short-[aeiou]$/.test(item.lesson)) throw new Error('課程識別不合法');
+      if (!item || typeof item.lesson !== 'string' || !validLessonId(item.lesson)) throw new Error('課程識別不合法');
       if (typeof item.key !== 'string' || !/^[a-z0-9][a-z0-9-]*$/.test(item.key)) throw new Error('素材 key 不合法');
       if (typeof item.entryGuid !== 'string' || !uuid.test(item.entryGuid)
         || typeof item.assetGuid !== 'string' || !uuid.test(item.assetGuid)) throw new Error('素材／詞條 UUID 不合法');
@@ -59,11 +59,21 @@ export function planBackfill(mapping, snapshot) {
 }
 
 export async function main(args = process.argv.slice(2)) {
-  if (args.some((arg) => arg !== '--prepare')) throw new Error('只接受 --prepare；無參數只列離線計畫');
+  let batch = 'short-vowels';
+  let prepare = false;
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--prepare') prepare = true;
+    else if (args[i] === '--batch' && args[i + 1]) batch = args[++i];
+    else throw new Error('只接受 --batch short-vowels/long-vowels/phonics-345/endings 與 --prepare；無參數只列離線計畫');
+  }
+  const preparation = batchPreparation(batch);
+  const output = path.join(root, 'data/phonics', batch, 'wordbank-audio');
   const mapping = await json(path.join(preparation, 'wordbank-phonics-mapping.json'));
   const snapshot = await json(path.join(preparation, 'wordbank-before.json'));
+  if ([...mapping.words, ...mapping.sentences].some((item) => !lessonMatchesBatch(item.lesson, batch)))
+    throw new Error('映射與教材批次不符');
   const { selected, preserved } = planBackfill(mapping, snapshot);
-  if (!args.includes('--prepare')) {
+  if (!prepare) {
     console.log(JSON.stringify({ dryRun: true, sourceSnapshotTarget: snapshot.target,
       output, preserved: preserved.length, words: selected.filter((a) => a.kind === 'word').length,
       examples: selected.filter((a) => a.kind === 'example').length, assets: selected }, null, 2));
@@ -74,7 +84,7 @@ export async function main(args = process.argv.slice(2)) {
     const groups = new Map();
     const copies = [];
     for (const item of selected) {
-      const lessonDir = path.join(root, 'web-learner/public/phonics', item.lesson);
+      const lessonDir = await phonicsSourceDirectory(root, item.lesson);
       const manifest = await json(path.join(lessonDir, 'manifest.json'));
       const source = manifest.entries.find((audio) => audio.assetGuid === `phonics-${item.lesson}-${item.key}`);
       if (!source || source.text !== item.text || source.textHash !== item.textHash)

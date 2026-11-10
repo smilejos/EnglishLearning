@@ -97,9 +97,10 @@ export async function listScenarios(db: Queryable, includeDrafts = false): Promi
     (includeDrafts ? "r.revision=(SELECT max(revision) FROM scenario_revisions WHERE scenario_key=s.scenario_key)" : "r.revision=s.published_revision AND r.status='published'") + " ORDER BY r.scenario_key");
   return result.rows.map(({ content, media, status, tags }) => {
     const targetCounts: ScenarioSummary["targetCounts"] = { n: 0, adj: 0, v: 0 };
-    for (const target of content.targets) targetCounts[target.teachingPos]++;
+    if (content.learningMode === "illustrated-guide") targetCounts.prep = 0;
+    for (const target of content.targets) targetCounts[target.teachingPos] = (targetCounts[target.teachingPos] ?? 0) + 1;
     return { scenarioKey: content.scenarioKey, revision: content.revision, status,
-      titleZh: content.titleZh, ...(content.vocabularyMode ? { vocabularyMode: content.vocabularyMode } : {}), vocabularyFilter: content.vocabularyFilter, targetCount: content.targetCount,
+      titleZh: content.titleZh, ...(content.vocabularyMode ? { vocabularyMode: content.vocabularyMode } : {}), ...(content.learningMode ? { learningMode: content.learningMode } : {}), vocabularyFilter: content.vocabularyFilter, targetCount: content.targetCount,
       targetCounts, image: scenarioImage({ content, media }),
       tags: tags.map(tag => ({ ...tag, id: toNum(tag.id) })) };
   });

@@ -231,7 +231,7 @@ export function ScenarioPreview({ data, imageUrl, audioUrls }: {
         </div>
       </div>
       <p className="scenario-image-note">這張參考圖的英文已畫在圖片內，暫不提供隱藏答案練習。</p>
-      <footer className="scenario-footer">原八詞版與十五詞版均保留。本頁供效果與互動確認；故事旁白及三個 advance 詞的音檔尚待準備。</footer>
+      <footer className="scenario-footer">原八詞版與十五詞版均保留。本頁供效果與互動確認；音訊統一由共用 API 與 audio volume 提供。</footer>
     </main>
     {modal && <PreviewDialog title={modal === "story" ? "客廳裡的小故事" : "單字卡"}
       focusKey={modal === "story" ? "story" : selected ?? "word"} onClose={() => setModal(null)}>

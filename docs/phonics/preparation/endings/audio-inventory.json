@@ -1,0 +1,451 @@
+{
+  "checkedAt": "2026-11-02T13:24:59.374Z",
+  "total": 49,
+  "uniqueTexts": 49,
+  "items": [
+    {
+      "lesson": "endings-s",
+      "key": "cats",
+      "kind": "word",
+      "text": "cats",
+      "status": "newly-generated",
+      "sha256": "41cfd9c7902b5a88692ec9a1885336305b6073b46fc9c6b62dce3fa54f6d7ab3",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "caps",
+      "kind": "word",
+      "text": "caps",
+      "status": "newly-generated",
+      "sha256": "4053387416fd33b0f09b8d4b160dc98c588f9edc7f6e3a92c200398616110476",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "maps",
+      "kind": "word",
+      "text": "maps",
+      "status": "newly-generated",
+      "sha256": "b9c823a9f56d9eac3d0a829c3eb004cf7dc23afce078c024a667e935d60f87e2",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "cups",
+      "kind": "word",
+      "text": "cups",
+      "status": "newly-generated",
+      "sha256": "f081177254330b0dcae5b4ce0f4d1562db2514b11c1eac9bd1e5e4d521765691",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "pigs",
+      "kind": "word",
+      "text": "pigs",
+      "status": "newly-generated",
+      "sha256": "794b002a3cd78d51ec3b636a673dd92c5552b6476b4dc2aa28bc1ac04d6d36ef",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "dogs",
+      "kind": "word",
+      "text": "dogs",
+      "status": "newly-generated",
+      "sha256": "dfbd1b8967eeb760b9935ba042f2b0c5e6a9167e8b399676e3db067ce64efe5d",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "pens",
+      "kind": "word",
+      "text": "pens",
+      "status": "newly-generated",
+      "sha256": "b8db11f973d6908e9ed6b9a7785cf968c3b28491baa7ff5af24fcc88fb403229",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "beds",
+      "kind": "word",
+      "text": "beds",
+      "status": "newly-generated",
+      "sha256": "0b9177b033c514e73117c3211942a8a1b10be01fa377b8be408757e997cd08d6",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The cats nap.",
+      "status": "newly-generated",
+      "sha256": "f71f9c098548e396ad6d44155978a54aa991ce8cc6038519ef272417594e1749",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the cats nap",
+      "status": "newly-generated",
+      "sha256": "02f76211b4eac8462a18af47cc4b42de75d033ef4b32c8d73251b243fe7c9d1f",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The pigs sit on the beds.",
+      "status": "newly-generated",
+      "sha256": "b2760e40b3225da4ce010a40bf11840f36cf4d2012f3e4c8ac5b8ee494c9c8a7",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the pigs sit on the beds",
+      "status": "newly-generated",
+      "sha256": "33ec0038879eddbbc11f9baff043ba0f2765465a58a1a2c2f42640d90f521c76",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "buses",
+      "kind": "word",
+      "text": "buses",
+      "status": "newly-generated",
+      "sha256": "c60722ea33b8c722cdc57fd824214a185ac63d758b97d86038107f458b59b70a",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "dishes",
+      "kind": "word",
+      "text": "dishes",
+      "status": "newly-generated",
+      "sha256": "8917d2eb51526e295a1f5f9e2c9488671b1d2f2998cdf75768d5762b32c5d969",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "wishes",
+      "kind": "word",
+      "text": "wishes",
+      "status": "newly-generated",
+      "sha256": "29694bf8d7172c6f2d691fa4022584f69df69dad08e5c111eaf2b19b6ff530a2",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "foxes",
+      "kind": "word",
+      "text": "foxes",
+      "status": "newly-generated",
+      "sha256": "40d48cd2879855c62d60a2c1c2dcc6f6ca4835c89088a101218d4487b23c1e8b",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "boxes",
+      "kind": "word",
+      "text": "boxes",
+      "status": "newly-generated",
+      "sha256": "8eea0e4592bc5d09a449d326f09188746b16a6d6c3d33ab6521ca65b49f3ee88",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "matches",
+      "kind": "word",
+      "text": "matches",
+      "status": "newly-generated",
+      "sha256": "25d1b10b0be76f8768b1a30daf05442df08371e89c3f09de07da708c1630809d",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "catches",
+      "kind": "word",
+      "text": "catches",
+      "status": "newly-generated",
+      "sha256": "bc0ab38e17fadfe79fc35ab4a16151174c20875e2f70de9ace572e7bad74ad29",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "benches",
+      "kind": "word",
+      "text": "benches",
+      "status": "newly-generated",
+      "sha256": "ed9a2bec1ac600486e4e0d1ee3cf717ca9ac3520a693a10c0209768ece99ad84",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The foxes run.",
+      "status": "newly-generated",
+      "sha256": "b03798c939567ad0beb2062c3e54709bd2743aad1501584788bf7218f7c65d2f",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the foxes run",
+      "status": "newly-generated",
+      "sha256": "02dcd2684eca9434adef4decbaef4ed9a03f62d4471093c71e84a367e1d04bb4",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The dishes are in the boxes.",
+      "status": "newly-generated",
+      "sha256": "f5a57e1194765cb2f919997342bed0555a7d193bec369bd056c1fa84c9248358",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the dishes are in the boxes",
+      "status": "newly-generated",
+      "sha256": "161086365470653efffe9b3057b6f34aed279aae25fbacd7e7243bfadd65c3eb",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "tapped",
+      "kind": "word",
+      "text": "tapped",
+      "status": "newly-generated",
+      "sha256": "196b4d102675d161ef0717d111173130126c17afc9f2d3ff3525b587daf79743",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "packed",
+      "kind": "word",
+      "text": "packed",
+      "status": "newly-generated",
+      "sha256": "687be4651d92f2006ffa05be9d86ea92f592884faaac123b42c0249e93c973e5",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "jumped",
+      "kind": "word",
+      "text": "jumped",
+      "status": "newly-generated",
+      "sha256": "8f12092560a6745d0457b86c2ee5073d0bc8702a52a74b347cbd1456aec1e1d6",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "filled",
+      "kind": "word",
+      "text": "filled",
+      "status": "newly-generated",
+      "sha256": "b2accc8cd23133f00e307bb509b2b7cf1e3fe322d59d319b322a0528f3bb4be7",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "hummed",
+      "kind": "word",
+      "text": "hummed",
+      "status": "newly-generated",
+      "sha256": "1752cf2046bd04549edfa9260942df56286695e9717648e52d3d8f4e74d888bb",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "played",
+      "kind": "word",
+      "text": "played",
+      "status": "newly-generated",
+      "sha256": "50814f2243f4656ea23c27de37117334f9872f6153d7d399483577c3a86ea1ad",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "landed",
+      "kind": "word",
+      "text": "landed",
+      "status": "newly-generated",
+      "sha256": "10eb58af1021ed5a741ab460b38f42f1fe9a469c1a4f47eedfcda2a3a1935e6f",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "rested",
+      "kind": "word",
+      "text": "rested",
+      "status": "newly-generated",
+      "sha256": "f009922cfa7a93f272ce2f2f6cd4b9f1249f833639d8e8de3628315a94846e20",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "needed",
+      "kind": "word",
+      "text": "needed",
+      "status": "newly-generated",
+      "sha256": "23f4919011cc993e54c5efa1f37f98ab787cd97dbedb05ce1cfdc744c867f1f0",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The dog jumped.",
+      "status": "newly-generated",
+      "sha256": "0a53a4aff45fb0c48001bc7872c65ea3b07208cb3412bb02a27e8795dd00ff0d",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the dog jumped",
+      "status": "newly-generated",
+      "sha256": "5c82edcb7fb99ae5acddd35f6a6ab2867ded3248f7ba4839dec5e4ebafdb28e9",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "I rested and played.",
+      "status": "newly-generated",
+      "sha256": "e74fb26f76d9a58c0e7c826719d1095a249669e7592bcef9fcd88e29229063f5",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "I rested and played",
+      "status": "newly-generated",
+      "sha256": "d60cc682c8a315b46e46cdea2a3616fea2c8698bec381f827931c39289a4228f",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "jumping",
+      "kind": "word",
+      "text": "jumping",
+      "status": "newly-generated",
+      "sha256": "f7278e6d4b4e0bac7a354cf8f1f52faafad37de664e19a308c5a5ce8d1bf7ab6",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "resting",
+      "kind": "word",
+      "text": "resting",
+      "status": "newly-generated",
+      "sha256": "276141130706c24df7d5918300082eafb69ad75ac0bb1330e08950a0ea6eee1b",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "running",
+      "kind": "word",
+      "text": "running",
+      "status": "newly-generated",
+      "sha256": "9822831ad3bc66cb1767a668b3ef2d1fcbce0bf4e49fdb75eeadbcfd2129f4dc",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "hopping",
+      "kind": "word",
+      "text": "hopping",
+      "status": "newly-generated",
+      "sha256": "76ffa6562b5c603e8b3afe580d9ffe066d6c09114730866185800f4a05d6de68",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "sitting",
+      "kind": "word",
+      "text": "sitting",
+      "status": "newly-generated",
+      "sha256": "d70c39b0fdb6ae306454b113895363120852311b937a7814f26b3f0c977690f2",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "making",
+      "kind": "word",
+      "text": "making",
+      "status": "newly-generated",
+      "sha256": "0932e8ca358fa5083e41de2faa49f7f6187097672c610377a0c9e2e4daeb3003",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "riding",
+      "kind": "word",
+      "text": "riding",
+      "status": "newly-generated",
+      "sha256": "9f4ab8b78c6c26d590692be175d4d79d5838091528b60514f9f28e02ff05c9fc",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "playing",
+      "kind": "word",
+      "text": "playing",
+      "status": "newly-generated",
+      "sha256": "854a499ca8229dbd10ce3615ab23e53afad7c2be8cdb488bfdde2b247a041cae",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The cat is running.",
+      "status": "newly-generated",
+      "sha256": "e660651c969a3f5d99204f0c9c864cb153d8813cdd2a0a9e73949e8c269115e6",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the cat is running",
+      "status": "newly-generated",
+      "sha256": "9fd8088ba15eee0a951f10c4354233f0f32f7e8605c03c5aa36117713e31abb7",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "I am making a map.",
+      "status": "newly-generated",
+      "sha256": "328af9e91d86f811ac8faa62dcc14effbc305b63c1e10971c8dca6b3e335b347",
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "I am making a map",
+      "status": "newly-generated",
+      "sha256": "687ab97e855d79a725866f13b40ad899572355a8907d6a6b3c1d20a9b6793a45",
+      "listeningReview": "awaiting-human-listening"
+    }
+  ],
+  "excluded": [],
+  "formalSnapshot": "wordbank-before.json",
+  "scope": "本批最終技術驗證：49項本機新生成；0未盤點／0待生成／0既有重用。人工發音聽審另記。"
+}

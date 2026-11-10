@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-11-07T16:03:40.125Z",
+  "origin": "http://127.0.0.1:8090",
+  "mode": "static-only",
+  "scope": "固定 origin GET 查核；不呼叫 API mutation、不直接連 DB、不啟動服務。",
+  "manual": {
+    "desktopClicks": "pending",
+    "mobile": "pending",
+    "listeningReview": "pending",
+    "readerRoleAuthorization": "pending"
+  },
+  "static": {
+    "role": "admin",
+    "emailRecorded": false,
+    "htmlSha256": "563eb9241a4855fe86ede84dbec85540bfc4ab9a65d845c8d85d5397f20305b7",
+    "bundle": {
+      "url": "/assets/index-SeLv5tqt.js",
+      "bytes": 360885,
+      "sha256": "e609b11199300232462d3f401de9690914cfe9f346038e3b8d8db70dff37b446",
+      "snapshotMatched": true,
+      "illustratedGuide": true,
+      "guideExplanation": true,
+      "guideResetsRecall": true,
+      "hideShowToggleAndLocationReset": true,
+      "overlayUsesWordVisibility": true,
+      "wordLabels": true,
+      "proofType": "靜態程式證據；非瀏覽器真實點擊"
+    },
+    "repoSourceHashes": {
+      "web-learner/src/ScenarioLearning.tsx": "e0c3ee39ddd66582f7bf2d9d421c4435b09bd1c07024d03c007e5e4320c119a1",
+      "web-learner/src/scenarioTypes.ts": "43d3390ba20760c28c4bc4fb488c476be59d1d9e720aaca3f231db8675b9a553",
+      "web-learner/src/ScenarioWordCard.tsx": "cc930e86dcee047077b5b9712c6d1413bf7367b6684facdc368686fa497b1cee"
+    },
+    "repoSourceHashesProveCompiledIdentity": false
+  },
+  "status": "static-evidence-passed"
+}

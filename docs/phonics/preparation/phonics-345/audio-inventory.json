@@ -1,0 +1,1555 @@
+{
+  "checkedAt": "2026-11-01T16:21:40.483Z",
+  "total": 221,
+  "items": [
+    {
+      "lesson": "blends-l",
+      "key": "blade",
+      "kind": "word",
+      "text": "blade",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "blame",
+      "kind": "word",
+      "text": "blame",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "clap",
+      "kind": "word",
+      "text": "clap",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "clam",
+      "kind": "word",
+      "text": "clam",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "flat",
+      "kind": "word",
+      "text": "flat",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "flute",
+      "kind": "word",
+      "text": "flute",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "glad",
+      "kind": "word",
+      "text": "glad",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "glide",
+      "kind": "word",
+      "text": "glide",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "plan",
+      "kind": "word",
+      "text": "plan",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "plum",
+      "kind": "word",
+      "text": "plum",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "slam",
+      "kind": "word",
+      "text": "slam",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "slim",
+      "kind": "word",
+      "text": "slim",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "I am glad.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "support-i-am",
+      "kind": "support",
+      "text": "I am",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Put the plum on the plate.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "support-put-the-plum",
+      "kind": "support",
+      "text": "put the plum",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-l",
+      "key": "support-on-the-plate",
+      "kind": "support",
+      "text": "on the plate",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "brain",
+      "kind": "word",
+      "text": "brain",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "brave",
+      "kind": "word",
+      "text": "brave",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "crab",
+      "kind": "word",
+      "text": "crab",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "crop",
+      "kind": "word",
+      "text": "crop",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "drip",
+      "kind": "word",
+      "text": "drip",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "drum",
+      "kind": "word",
+      "text": "drum",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "frog",
+      "kind": "word",
+      "text": "frog",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "free",
+      "kind": "word",
+      "text": "free",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "grin",
+      "kind": "word",
+      "text": "grin",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "grab",
+      "kind": "word",
+      "text": "grab",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "prop",
+      "kind": "word",
+      "text": "prop",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "pray",
+      "kind": "word",
+      "text": "pray",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "trap",
+      "kind": "word",
+      "text": "trap",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "tree",
+      "kind": "word",
+      "text": "tree",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The frog is in the tree.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "support-the-frog",
+      "kind": "support",
+      "text": "the frog",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "support-is-in-the-tree",
+      "kind": "support",
+      "text": "is in the tree",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Grab the drum and play.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "support-the-drum",
+      "kind": "support",
+      "text": "the drum",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-r",
+      "key": "support-and-play",
+      "kind": "support",
+      "text": "and play",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "skip",
+      "kind": "word",
+      "text": "skip",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "skin",
+      "kind": "word",
+      "text": "skin",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "smog",
+      "kind": "word",
+      "text": "smog",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "smile",
+      "kind": "word",
+      "text": "smile",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "snap",
+      "kind": "word",
+      "text": "snap",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "snow",
+      "kind": "word",
+      "text": "snow",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "spin",
+      "kind": "word",
+      "text": "spin",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "spot",
+      "kind": "word",
+      "text": "spot",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "stop",
+      "kind": "word",
+      "text": "stop",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "step",
+      "kind": "word",
+      "text": "step",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "swim",
+      "kind": "word",
+      "text": "swim",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "sweet",
+      "kind": "word",
+      "text": "sweet",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "I can swim.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "support-i-can",
+      "kind": "support",
+      "text": "I can",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Stop and spin on the spot.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "support-stop-and-spin",
+      "kind": "support",
+      "text": "stop and spin",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-s",
+      "key": "support-on-the-spot",
+      "kind": "support",
+      "text": "on the spot",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "hand",
+      "kind": "word",
+      "text": "hand",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "sand",
+      "kind": "word",
+      "text": "sand",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "tent",
+      "kind": "word",
+      "text": "tent",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "ant",
+      "kind": "word",
+      "text": "ant",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "lamp",
+      "kind": "word",
+      "text": "lamp",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "camp",
+      "kind": "word",
+      "text": "camp",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "nest",
+      "kind": "word",
+      "text": "nest",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "vest",
+      "kind": "word",
+      "text": "vest",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "gift",
+      "kind": "word",
+      "text": "gift",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "left",
+      "kind": "word",
+      "text": "left",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The ant is on my hand.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "support-the-ant",
+      "kind": "support",
+      "text": "the ant",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "support-is-on-my-hand",
+      "kind": "support",
+      "text": "is on my hand",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Put the lamp in the tent.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "support-put-the-lamp",
+      "kind": "support",
+      "text": "put the lamp",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-final",
+      "key": "support-in-the-tent",
+      "kind": "support",
+      "text": "in the tent",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "scrap",
+      "kind": "word",
+      "text": "scrap",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "scrub",
+      "kind": "word",
+      "text": "scrub",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "split",
+      "kind": "word",
+      "text": "split",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "spray",
+      "kind": "word",
+      "text": "spray",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "strap",
+      "kind": "word",
+      "text": "strap",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "strip",
+      "kind": "word",
+      "text": "strip",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "Cut a strip.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "support-cut-a",
+      "kind": "support",
+      "text": "cut a",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Spray the tub and scrub.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "support-the-tub",
+      "kind": "support",
+      "text": "the tub",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "blends-three",
+      "key": "support-and-scrub",
+      "kind": "support",
+      "text": "and scrub",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "ship",
+      "kind": "word",
+      "text": "ship",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "shop",
+      "kind": "word",
+      "text": "shop",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "shed",
+      "kind": "word",
+      "text": "shed",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "shut",
+      "kind": "word",
+      "text": "shut",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "fish",
+      "kind": "word",
+      "text": "fish",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "dish",
+      "kind": "word",
+      "text": "dish",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "wish",
+      "kind": "word",
+      "text": "wish",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "cash",
+      "kind": "word",
+      "text": "cash",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "rash",
+      "kind": "word",
+      "text": "rash",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "rush",
+      "kind": "word",
+      "text": "rush",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "hush",
+      "kind": "word",
+      "text": "hush",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The fish is in the dish.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the fish",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "is in the dish",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Shut the shop.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-sh",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the shop",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "chip",
+      "kind": "word",
+      "text": "chip",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "chin",
+      "kind": "word",
+      "text": "chin",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "chat",
+      "kind": "word",
+      "text": "chat",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "chop",
+      "kind": "word",
+      "text": "chop",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "rich",
+      "kind": "word",
+      "text": "rich",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "much",
+      "kind": "word",
+      "text": "much",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "such",
+      "kind": "word",
+      "text": "such",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "lunch",
+      "kind": "word",
+      "text": "lunch",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "bench",
+      "kind": "word",
+      "text": "bench",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The rich man can chat.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the rich man",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "I had lunch on the bench.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "I had lunch",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ch",
+      "key": "support-2-2",
+      "kind": "support",
+      "text": "on the bench",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "thin",
+      "kind": "word",
+      "text": "thin",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "bath",
+      "kind": "word",
+      "text": "bath",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "math",
+      "kind": "word",
+      "text": "math",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "path",
+      "kind": "word",
+      "text": "path",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "moth",
+      "kind": "word",
+      "text": "moth",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "cloth",
+      "kind": "word",
+      "text": "cloth",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "theft",
+      "kind": "word",
+      "text": "theft",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "A thin cat is on the path.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "a thin cat",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "is on the path",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "support-1-3",
+      "kind": "support",
+      "text": "the path",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "A moth is on the cloth.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "a moth",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "support-2-2",
+      "kind": "support",
+      "text": "is on the cloth",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiceless",
+      "key": "support-2-3",
+      "kind": "support",
+      "text": "the cloth",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "this",
+      "kind": "word",
+      "text": "this",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "that",
+      "kind": "word",
+      "text": "that",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "them",
+      "kind": "word",
+      "text": "them",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "then",
+      "kind": "word",
+      "text": "then",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "than",
+      "kind": "word",
+      "text": "than",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "those",
+      "kind": "word",
+      "text": "those",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "bathe",
+      "kind": "word",
+      "text": "bathe",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "This is my bag.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "this is",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "my bag",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-th-voiced",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "That man can bathe.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "when",
+      "kind": "word",
+      "text": "when",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "whip",
+      "kind": "word",
+      "text": "whip",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "wheel",
+      "kind": "word",
+      "text": "wheel",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "wheat",
+      "kind": "word",
+      "text": "wheat",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "white",
+      "kind": "word",
+      "text": "white",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "whale",
+      "kind": "word",
+      "text": "whale",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "whine",
+      "kind": "word",
+      "text": "whine",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The white whale is big.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the white whale",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "is big",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "When can I spin the wheel?",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "can I spin",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-wh",
+      "key": "support-2-2",
+      "kind": "support",
+      "text": "the wheel",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "phone",
+      "kind": "word",
+      "text": "phone",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "graph",
+      "kind": "word",
+      "text": "graph",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "phase",
+      "kind": "word",
+      "text": "phase",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "phrase",
+      "kind": "word",
+      "text": "phrase",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The phone is on the desk.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the phone",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "is on the desk",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "Say the phrase.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-ph",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the phrase",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "catch",
+      "kind": "word",
+      "text": "catch",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "match",
+      "kind": "word",
+      "text": "match",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "patch",
+      "kind": "word",
+      "text": "patch",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "hatch",
+      "kind": "word",
+      "text": "hatch",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "fetch",
+      "kind": "word",
+      "text": "fetch",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "itch",
+      "kind": "word",
+      "text": "itch",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "pitch",
+      "kind": "word",
+      "text": "pitch",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "rich",
+      "kind": "word",
+      "text": "rich",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "much",
+      "kind": "word",
+      "text": "much",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "lunch",
+      "kind": "word",
+      "text": "lunch",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "Catch the ball.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the ball",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "catch the ball",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The patch is on the hat.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the patch",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "digraph-tch",
+      "key": "support-2-2",
+      "kind": "support",
+      "text": "is on the hat",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "car",
+      "kind": "word",
+      "text": "car",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "bar",
+      "kind": "word",
+      "text": "bar",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "far",
+      "kind": "word",
+      "text": "far",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "star",
+      "kind": "word",
+      "text": "star",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "arm",
+      "kind": "word",
+      "text": "arm",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "farm",
+      "kind": "word",
+      "text": "farm",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "park",
+      "kind": "word",
+      "text": "park",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "dark",
+      "kind": "word",
+      "text": "dark",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "mark",
+      "kind": "word",
+      "text": "mark",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "shark",
+      "kind": "word",
+      "text": "shark",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The car is in the park.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the car",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "is in the park",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "A shark has a dark fin.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "a shark",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ar",
+      "key": "support-2-2",
+      "kind": "support",
+      "text": "has a dark fin",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "corn",
+      "kind": "word",
+      "text": "corn",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "horn",
+      "kind": "word",
+      "text": "horn",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "born",
+      "kind": "word",
+      "text": "born",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-or",
+      "key": "fork",
+      "kind": "word",
+      "text": "fork",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-or",
+      "key": "pork",
+      "kind": "word",
+      "text": "pork",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-or",
+      "key": "form",
+      "kind": "word",
+      "text": "form",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "storm",
+      "kind": "word",
+      "text": "storm",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "short",
+      "kind": "word",
+      "text": "short",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-or",
+      "key": "sport",
+      "kind": "word",
+      "text": "sport",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The corn is on the fork.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the corn",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "is on the fork",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The storm is short.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the storm",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-or",
+      "key": "support-2-2",
+      "kind": "support",
+      "text": "is short",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "more",
+      "kind": "word",
+      "text": "more",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "sore",
+      "kind": "word",
+      "text": "sore",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "core",
+      "kind": "word",
+      "text": "core",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "shore",
+      "kind": "word",
+      "text": "shore",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "store",
+      "kind": "word",
+      "text": "store",
+      "status": "confirmed-reuse"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "oar",
+      "kind": "word",
+      "text": "oar",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "roar",
+      "kind": "word",
+      "text": "roar",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "soar",
+      "kind": "word",
+      "text": "soar",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "board",
+      "kind": "word",
+      "text": "board",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The oar is on the shore.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the oar",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "support-1-2",
+      "kind": "support",
+      "text": "is on the shore",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The board is in the store.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the board",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "r-ore-oar",
+      "key": "support-2-2",
+      "kind": "support",
+      "text": "is in the store",
+      "status": "pending-generation"
+    }
+  ],
+  "excluded": [],
+  "scope": "只盤點精確文字候選並驗證檔案；發音與口音仍待人工聽審。"
+}

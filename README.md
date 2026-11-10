@@ -33,6 +33,8 @@
 
 `api` 與 `worker` 共用同一個 `audio` named volume。
 
+Phonics 與獨立情境預覽的音訊已改為共用 DB／API 查詢，不再使用前台靜態 MP3；正式音檔搬入、驗證、原檔封存與 API／前台部署已於 2026-11-10 完成，操作及成果見 [共用音訊存放與搬遷](docs/audio-storage.md)。
+
 ## 快速開始
 
 ```bash

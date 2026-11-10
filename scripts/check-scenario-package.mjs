@@ -39,6 +39,8 @@ export async function validateScenarioPackage(pkg, options = {}) {
   if (!nonempty(pkg.titleZh)) errors.push('titleZh 不可空白');
   const userSpecified = pkg.vocabularyMode === 'user-specified';
   if (pkg.vocabularyMode !== undefined && !userSpecified) errors.push('vocabularyMode 僅接受 user-specified 或省略');
+  const illustratedGuide = pkg.learningMode === 'illustrated-guide';
+  if (pkg.learningMode !== undefined && !illustratedGuide) errors.push('learningMode 僅接受 illustrated-guide 或省略');
   const levels = pkg.vocabularyFilter?.levels;
   const selectedLevels = Array.isArray(levels) ? levels : [];
   if (pkg.vocabularyFilter?.system !== 'list' || !Array.isArray(levels) || (!userSpecified && levels.length === 0) ||
@@ -71,7 +73,7 @@ export async function validateScenarioPackage(pkg, options = {}) {
     if (targetWords.has(target.word) || targetGuids.has(target.entryGuid)) errors.push(`${label} 的 word／entryGuid 重複`);
     targetWords.add(target.word);
     targetGuids.add(target.entryGuid);
-    if (!['n', 'adj', 'v'].includes(target.teachingPos)) errors.push(`${label}.teachingPos 僅接受 n／adj／v`);
+    if (!(illustratedGuide ? ['n', 'adj', 'v', 'prep'] : ['n', 'adj', 'v']).includes(target.teachingPos)) errors.push(`${label}.teachingPos 僅接受 n／adj／v；prep 僅限 illustrated-guide`);
     if (![null, 'basic', 'advance', 'expert'].includes(target.list)) errors.push(`${label}.list 必須為 basic／advance／expert 或 null`);
     if (entry && target.list !== (entry.level?.list ?? null)) errors.push(`${label}.list 與字庫不一致`);
     if (entry && !entry.parts_of_speech?.includes(target.teachingPos)) errors.push(`${label}.teachingPos 不屬於字庫詞性`);
@@ -136,7 +138,7 @@ export async function validateScenarioPackage(pkg, options = {}) {
     else {
       await validateAsset(pkg.assets.baseImage, 'assets.baseImage');
       if (pkg.assets.baseImage.reviewed !== true) errors.push('assets.baseImage.reviewed 必須為 true');
-      if (pkg.assets.baseImage.containsVocabularyText !== false) errors.push('assets.baseImage.containsVocabularyText 必須為 false');
+      if (pkg.assets.baseImage.containsVocabularyText !== illustratedGuide) errors.push(`assets.baseImage.containsVocabularyText 必須為 ${illustratedGuide}`);
     }
     if (pkg.assets.storyAudio == null) missing.push('缺英文故事音檔 assets.storyAudio');
     else {

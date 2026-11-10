@@ -1,0 +1,1185 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "blends-l",
+      "jobs": [
+        {
+          "key": "blade",
+          "kind": "word",
+          "text": "blade"
+        },
+        {
+          "key": "blame",
+          "kind": "word",
+          "text": "blame"
+        },
+        {
+          "key": "clap",
+          "kind": "word",
+          "text": "clap"
+        },
+        {
+          "key": "clam",
+          "kind": "word",
+          "text": "clam"
+        },
+        {
+          "key": "flat",
+          "kind": "word",
+          "text": "flat"
+        },
+        {
+          "key": "flute",
+          "kind": "word",
+          "text": "flute"
+        },
+        {
+          "key": "glad",
+          "kind": "word",
+          "text": "glad"
+        },
+        {
+          "key": "glide",
+          "kind": "word",
+          "text": "glide"
+        },
+        {
+          "key": "plan",
+          "kind": "word",
+          "text": "plan"
+        },
+        {
+          "key": "plum",
+          "kind": "word",
+          "text": "plum"
+        },
+        {
+          "key": "slam",
+          "kind": "word",
+          "text": "slam"
+        },
+        {
+          "key": "slim",
+          "kind": "word",
+          "text": "slim"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "I am glad."
+        },
+        {
+          "key": "support-i-am",
+          "kind": "support",
+          "text": "I am"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Put the plum on the plate."
+        },
+        {
+          "key": "support-put-the-plum",
+          "kind": "support",
+          "text": "put the plum"
+        },
+        {
+          "key": "support-on-the-plate",
+          "kind": "support",
+          "text": "on the plate"
+        }
+      ]
+    },
+    {
+      "id": "blends-r",
+      "jobs": [
+        {
+          "key": "brain",
+          "kind": "word",
+          "text": "brain"
+        },
+        {
+          "key": "brave",
+          "kind": "word",
+          "text": "brave"
+        },
+        {
+          "key": "crab",
+          "kind": "word",
+          "text": "crab"
+        },
+        {
+          "key": "crop",
+          "kind": "word",
+          "text": "crop"
+        },
+        {
+          "key": "drip",
+          "kind": "word",
+          "text": "drip"
+        },
+        {
+          "key": "drum",
+          "kind": "word",
+          "text": "drum"
+        },
+        {
+          "key": "frog",
+          "kind": "word",
+          "text": "frog"
+        },
+        {
+          "key": "free",
+          "kind": "word",
+          "text": "free"
+        },
+        {
+          "key": "grin",
+          "kind": "word",
+          "text": "grin"
+        },
+        {
+          "key": "grab",
+          "kind": "word",
+          "text": "grab"
+        },
+        {
+          "key": "prop",
+          "kind": "word",
+          "text": "prop"
+        },
+        {
+          "key": "pray",
+          "kind": "word",
+          "text": "pray"
+        },
+        {
+          "key": "trap",
+          "kind": "word",
+          "text": "trap"
+        },
+        {
+          "key": "tree",
+          "kind": "word",
+          "text": "tree"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The frog is in the tree."
+        },
+        {
+          "key": "support-the-frog",
+          "kind": "support",
+          "text": "the frog"
+        },
+        {
+          "key": "support-is-in-the-tree",
+          "kind": "support",
+          "text": "is in the tree"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Grab the drum and play."
+        },
+        {
+          "key": "support-the-drum",
+          "kind": "support",
+          "text": "the drum"
+        },
+        {
+          "key": "support-and-play",
+          "kind": "support",
+          "text": "and play"
+        }
+      ]
+    },
+    {
+      "id": "blends-s",
+      "jobs": [
+        {
+          "key": "skip",
+          "kind": "word",
+          "text": "skip"
+        },
+        {
+          "key": "skin",
+          "kind": "word",
+          "text": "skin"
+        },
+        {
+          "key": "smog",
+          "kind": "word",
+          "text": "smog"
+        },
+        {
+          "key": "smile",
+          "kind": "word",
+          "text": "smile"
+        },
+        {
+          "key": "snap",
+          "kind": "word",
+          "text": "snap"
+        },
+        {
+          "key": "snow",
+          "kind": "word",
+          "text": "snow"
+        },
+        {
+          "key": "spin",
+          "kind": "word",
+          "text": "spin"
+        },
+        {
+          "key": "spot",
+          "kind": "word",
+          "text": "spot"
+        },
+        {
+          "key": "stop",
+          "kind": "word",
+          "text": "stop"
+        },
+        {
+          "key": "step",
+          "kind": "word",
+          "text": "step"
+        },
+        {
+          "key": "swim",
+          "kind": "word",
+          "text": "swim"
+        },
+        {
+          "key": "sweet",
+          "kind": "word",
+          "text": "sweet"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "I can swim."
+        },
+        {
+          "key": "support-i-can",
+          "kind": "support",
+          "text": "I can"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Stop and spin on the spot."
+        },
+        {
+          "key": "support-stop-and-spin",
+          "kind": "support",
+          "text": "stop and spin"
+        },
+        {
+          "key": "support-on-the-spot",
+          "kind": "support",
+          "text": "on the spot"
+        }
+      ]
+    },
+    {
+      "id": "blends-final",
+      "jobs": [
+        {
+          "key": "hand",
+          "kind": "word",
+          "text": "hand"
+        },
+        {
+          "key": "sand",
+          "kind": "word",
+          "text": "sand"
+        },
+        {
+          "key": "tent",
+          "kind": "word",
+          "text": "tent"
+        },
+        {
+          "key": "ant",
+          "kind": "word",
+          "text": "ant"
+        },
+        {
+          "key": "lamp",
+          "kind": "word",
+          "text": "lamp"
+        },
+        {
+          "key": "camp",
+          "kind": "word",
+          "text": "camp"
+        },
+        {
+          "key": "nest",
+          "kind": "word",
+          "text": "nest"
+        },
+        {
+          "key": "vest",
+          "kind": "word",
+          "text": "vest"
+        },
+        {
+          "key": "gift",
+          "kind": "word",
+          "text": "gift"
+        },
+        {
+          "key": "left",
+          "kind": "word",
+          "text": "left"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The ant is on my hand."
+        },
+        {
+          "key": "support-the-ant",
+          "kind": "support",
+          "text": "the ant"
+        },
+        {
+          "key": "support-is-on-my-hand",
+          "kind": "support",
+          "text": "is on my hand"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Put the lamp in the tent."
+        },
+        {
+          "key": "support-put-the-lamp",
+          "kind": "support",
+          "text": "put the lamp"
+        },
+        {
+          "key": "support-in-the-tent",
+          "kind": "support",
+          "text": "in the tent"
+        }
+      ]
+    },
+    {
+      "id": "blends-three",
+      "jobs": [
+        {
+          "key": "scrap",
+          "kind": "word",
+          "text": "scrap"
+        },
+        {
+          "key": "scrub",
+          "kind": "word",
+          "text": "scrub"
+        },
+        {
+          "key": "split",
+          "kind": "word",
+          "text": "split"
+        },
+        {
+          "key": "spray",
+          "kind": "word",
+          "text": "spray"
+        },
+        {
+          "key": "strap",
+          "kind": "word",
+          "text": "strap"
+        },
+        {
+          "key": "strip",
+          "kind": "word",
+          "text": "strip"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "Cut a strip."
+        },
+        {
+          "key": "support-cut-a",
+          "kind": "support",
+          "text": "cut a"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Spray the tub and scrub."
+        },
+        {
+          "key": "support-the-tub",
+          "kind": "support",
+          "text": "the tub"
+        },
+        {
+          "key": "support-and-scrub",
+          "kind": "support",
+          "text": "and scrub"
+        }
+      ]
+    },
+    {
+      "id": "digraph-sh",
+      "jobs": [
+        {
+          "key": "ship",
+          "kind": "word",
+          "text": "ship"
+        },
+        {
+          "key": "shop",
+          "kind": "word",
+          "text": "shop"
+        },
+        {
+          "key": "shed",
+          "kind": "word",
+          "text": "shed"
+        },
+        {
+          "key": "shut",
+          "kind": "word",
+          "text": "shut"
+        },
+        {
+          "key": "fish",
+          "kind": "word",
+          "text": "fish"
+        },
+        {
+          "key": "dish",
+          "kind": "word",
+          "text": "dish"
+        },
+        {
+          "key": "wish",
+          "kind": "word",
+          "text": "wish"
+        },
+        {
+          "key": "cash",
+          "kind": "word",
+          "text": "cash"
+        },
+        {
+          "key": "rash",
+          "kind": "word",
+          "text": "rash"
+        },
+        {
+          "key": "rush",
+          "kind": "word",
+          "text": "rush"
+        },
+        {
+          "key": "hush",
+          "kind": "word",
+          "text": "hush"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The fish is in the dish."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the fish"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "is in the dish"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Shut the shop."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "the shop"
+        }
+      ]
+    },
+    {
+      "id": "digraph-ch",
+      "jobs": [
+        {
+          "key": "chip",
+          "kind": "word",
+          "text": "chip"
+        },
+        {
+          "key": "chin",
+          "kind": "word",
+          "text": "chin"
+        },
+        {
+          "key": "chat",
+          "kind": "word",
+          "text": "chat"
+        },
+        {
+          "key": "chop",
+          "kind": "word",
+          "text": "chop"
+        },
+        {
+          "key": "rich",
+          "kind": "word",
+          "text": "rich"
+        },
+        {
+          "key": "much",
+          "kind": "word",
+          "text": "much"
+        },
+        {
+          "key": "such",
+          "kind": "word",
+          "text": "such"
+        },
+        {
+          "key": "lunch",
+          "kind": "word",
+          "text": "lunch"
+        },
+        {
+          "key": "bench",
+          "kind": "word",
+          "text": "bench"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The rich man can chat."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the rich man"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "I had lunch on the bench."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "I had lunch"
+        },
+        {
+          "key": "support-2-2",
+          "kind": "support",
+          "text": "on the bench"
+        }
+      ]
+    },
+    {
+      "id": "digraph-th-voiceless",
+      "jobs": [
+        {
+          "key": "thin",
+          "kind": "word",
+          "text": "thin"
+        },
+        {
+          "key": "bath",
+          "kind": "word",
+          "text": "bath"
+        },
+        {
+          "key": "math",
+          "kind": "word",
+          "text": "math"
+        },
+        {
+          "key": "path",
+          "kind": "word",
+          "text": "path"
+        },
+        {
+          "key": "moth",
+          "kind": "word",
+          "text": "moth"
+        },
+        {
+          "key": "cloth",
+          "kind": "word",
+          "text": "cloth"
+        },
+        {
+          "key": "theft",
+          "kind": "word",
+          "text": "theft"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "A thin cat is on the path."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "a thin cat"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "is on the path"
+        },
+        {
+          "key": "support-1-3",
+          "kind": "support",
+          "text": "the path"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "A moth is on the cloth."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "a moth"
+        },
+        {
+          "key": "support-2-2",
+          "kind": "support",
+          "text": "is on the cloth"
+        },
+        {
+          "key": "support-2-3",
+          "kind": "support",
+          "text": "the cloth"
+        }
+      ]
+    },
+    {
+      "id": "digraph-th-voiced",
+      "jobs": [
+        {
+          "key": "this",
+          "kind": "word",
+          "text": "this"
+        },
+        {
+          "key": "that",
+          "kind": "word",
+          "text": "that"
+        },
+        {
+          "key": "them",
+          "kind": "word",
+          "text": "them"
+        },
+        {
+          "key": "then",
+          "kind": "word",
+          "text": "then"
+        },
+        {
+          "key": "than",
+          "kind": "word",
+          "text": "than"
+        },
+        {
+          "key": "those",
+          "kind": "word",
+          "text": "those"
+        },
+        {
+          "key": "bathe",
+          "kind": "word",
+          "text": "bathe"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "This is my bag."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "this is"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "my bag"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "That man can bathe."
+        }
+      ]
+    },
+    {
+      "id": "digraph-wh",
+      "jobs": [
+        {
+          "key": "when",
+          "kind": "word",
+          "text": "when"
+        },
+        {
+          "key": "whip",
+          "kind": "word",
+          "text": "whip"
+        },
+        {
+          "key": "wheel",
+          "kind": "word",
+          "text": "wheel"
+        },
+        {
+          "key": "wheat",
+          "kind": "word",
+          "text": "wheat"
+        },
+        {
+          "key": "white",
+          "kind": "word",
+          "text": "white"
+        },
+        {
+          "key": "whale",
+          "kind": "word",
+          "text": "whale"
+        },
+        {
+          "key": "whine",
+          "kind": "word",
+          "text": "whine"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The white whale is big."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the white whale"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "is big"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "When can I spin the wheel?"
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "can I spin"
+        },
+        {
+          "key": "support-2-2",
+          "kind": "support",
+          "text": "the wheel"
+        }
+      ]
+    },
+    {
+      "id": "digraph-ph",
+      "jobs": [
+        {
+          "key": "phone",
+          "kind": "word",
+          "text": "phone"
+        },
+        {
+          "key": "graph",
+          "kind": "word",
+          "text": "graph"
+        },
+        {
+          "key": "phase",
+          "kind": "word",
+          "text": "phase"
+        },
+        {
+          "key": "phrase",
+          "kind": "word",
+          "text": "phrase"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The phone is on the desk."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the phone"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "is on the desk"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Say the phrase."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "the phrase"
+        }
+      ]
+    },
+    {
+      "id": "digraph-tch",
+      "jobs": [
+        {
+          "key": "catch",
+          "kind": "word",
+          "text": "catch"
+        },
+        {
+          "key": "match",
+          "kind": "word",
+          "text": "match"
+        },
+        {
+          "key": "patch",
+          "kind": "word",
+          "text": "patch"
+        },
+        {
+          "key": "hatch",
+          "kind": "word",
+          "text": "hatch"
+        },
+        {
+          "key": "fetch",
+          "kind": "word",
+          "text": "fetch"
+        },
+        {
+          "key": "itch",
+          "kind": "word",
+          "text": "itch"
+        },
+        {
+          "key": "pitch",
+          "kind": "word",
+          "text": "pitch"
+        },
+        {
+          "key": "rich",
+          "kind": "word",
+          "text": "rich"
+        },
+        {
+          "key": "much",
+          "kind": "word",
+          "text": "much"
+        },
+        {
+          "key": "lunch",
+          "kind": "word",
+          "text": "lunch"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "Catch the ball."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the ball"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "catch the ball"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The patch is on the hat."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "the patch"
+        },
+        {
+          "key": "support-2-2",
+          "kind": "support",
+          "text": "is on the hat"
+        }
+      ]
+    },
+    {
+      "id": "r-ar",
+      "jobs": [
+        {
+          "key": "car",
+          "kind": "word",
+          "text": "car"
+        },
+        {
+          "key": "bar",
+          "kind": "word",
+          "text": "bar"
+        },
+        {
+          "key": "far",
+          "kind": "word",
+          "text": "far"
+        },
+        {
+          "key": "star",
+          "kind": "word",
+          "text": "star"
+        },
+        {
+          "key": "arm",
+          "kind": "word",
+          "text": "arm"
+        },
+        {
+          "key": "farm",
+          "kind": "word",
+          "text": "farm"
+        },
+        {
+          "key": "park",
+          "kind": "word",
+          "text": "park"
+        },
+        {
+          "key": "dark",
+          "kind": "word",
+          "text": "dark"
+        },
+        {
+          "key": "mark",
+          "kind": "word",
+          "text": "mark"
+        },
+        {
+          "key": "shark",
+          "kind": "word",
+          "text": "shark"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The car is in the park."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the car"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "is in the park"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "A shark has a dark fin."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "a shark"
+        },
+        {
+          "key": "support-2-2",
+          "kind": "support",
+          "text": "has a dark fin"
+        }
+      ]
+    },
+    {
+      "id": "r-or",
+      "jobs": [
+        {
+          "key": "corn",
+          "kind": "word",
+          "text": "corn"
+        },
+        {
+          "key": "horn",
+          "kind": "word",
+          "text": "horn"
+        },
+        {
+          "key": "born",
+          "kind": "word",
+          "text": "born"
+        },
+        {
+          "key": "fork",
+          "kind": "word",
+          "text": "fork"
+        },
+        {
+          "key": "pork",
+          "kind": "word",
+          "text": "pork"
+        },
+        {
+          "key": "form",
+          "kind": "word",
+          "text": "form"
+        },
+        {
+          "key": "storm",
+          "kind": "word",
+          "text": "storm"
+        },
+        {
+          "key": "short",
+          "kind": "word",
+          "text": "short"
+        },
+        {
+          "key": "sport",
+          "kind": "word",
+          "text": "sport"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The corn is on the fork."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the corn"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "is on the fork"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The storm is short."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "the storm"
+        },
+        {
+          "key": "support-2-2",
+          "kind": "support",
+          "text": "is short"
+        }
+      ]
+    },
+    {
+      "id": "r-ore-oar",
+      "jobs": [
+        {
+          "key": "more",
+          "kind": "word",
+          "text": "more"
+        },
+        {
+          "key": "sore",
+          "kind": "word",
+          "text": "sore"
+        },
+        {
+          "key": "core",
+          "kind": "word",
+          "text": "core"
+        },
+        {
+          "key": "shore",
+          "kind": "word",
+          "text": "shore"
+        },
+        {
+          "key": "store",
+          "kind": "word",
+          "text": "store"
+        },
+        {
+          "key": "oar",
+          "kind": "word",
+          "text": "oar"
+        },
+        {
+          "key": "roar",
+          "kind": "word",
+          "text": "roar"
+        },
+        {
+          "key": "soar",
+          "kind": "word",
+          "text": "soar"
+        },
+        {
+          "key": "board",
+          "kind": "word",
+          "text": "board"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The oar is on the shore."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the oar"
+        },
+        {
+          "key": "support-1-2",
+          "kind": "support",
+          "text": "is on the shore"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The board is in the store."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "the board"
+        },
+        {
+          "key": "support-2-2",
+          "kind": "support",
+          "text": "is in the store"
+        }
+      ]
+    }
+  ]
+}

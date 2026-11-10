@@ -1,0 +1,349 @@
+{
+  "scopeZh": "離線素材與正式匯入／發布／API證據；_test預覽已失效，非完整人工品質驗收",
+  "newEntryCount": 1,
+  "uniqueSupplementedEntries": 13,
+  "childItemCount": 32,
+  "checks": [
+    {
+      "scenarioKey": "time-prepositions-basics",
+      "packageSha256": "dfce7ac09e247ca300db4764eec9e46188983b780ebcd9de6035ad441458efb2",
+      "textSha256": "1da3e6ad6a753a6b3e187534d4c75f600770b0522aeb2b9d5b2709e95fab959d",
+      "sentenceCount": 19,
+      "tokenCount": 149,
+      "targetCount": 3,
+      "result": {
+        "valid": true,
+        "publishReady": true,
+        "scenarioKey": "time-prepositions-basics",
+        "targetCount": 3,
+        "missing": [],
+        "warnings": [
+          "本工具只驗證套件與來源字庫，不代表正式資料庫已匯入或圖片內容已通過人工驗收"
+        ]
+      }
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "packageSha256": "be9015fbdbb86a8aa763082dcaf6f68b5229ff64d36146bef389d45ae8533e0c",
+      "textSha256": "90fab37db22523f15d59a4e29b86853b4db4b2038f9ee039085deb6a39839fe1",
+      "sentenceCount": 19,
+      "tokenCount": 151,
+      "targetCount": 11,
+      "result": {
+        "valid": true,
+        "publishReady": true,
+        "scenarioKey": "time-prepositions-extended",
+        "targetCount": 11,
+        "missing": [],
+        "warnings": [
+          "本工具只驗證套件與來源字庫，不代表正式資料庫已匯入或圖片內容已通過人工驗收"
+        ]
+      }
+    }
+  ],
+  "finalStatusPath": "docs/scenarios/preparation/time-prepositions/final-status.json",
+  "artifactRefs": [
+    {
+      "path": "data/scenario-wordbank-audio/time-prepositions/manifest.json",
+      "sha256": "759b0b53a8959ef09bff9d15189f29c73af3c70bbe3c0f1a74ac23e8f38b4fbb"
+    },
+    {
+      "path": "data/scenario-wordbank-audio/time-prepositions/plan-time-prepositions-basics.json",
+      "sha256": "ecedc4470e44d83855bbfb9783757b80f1cb85e35188bf38af7c6c773d6d5fa9"
+    },
+    {
+      "path": "data/scenario-wordbank-audio/time-prepositions/plan-time-prepositions-extended.json",
+      "sha256": "18f234eff8f7dab688fb5a9c19310a3b883a63bf03c7ea597dc7ad47666cba2c"
+    },
+    {
+      "path": "data/scenario-wordbank-audio/time-prepositions/report.json",
+      "sha256": "a3d72e510fa9f58aece3e2fcbbacfac3a26c048f08a483da1ef5ccf6a00d7220"
+    },
+    {
+      "path": "docs/scenarios/preparation/time-prepositions/audio-verification.json",
+      "sha256": "95a2a54940c153eaef1a58ba90577687ba13d09d37ce1ce0d9163efe2dd8a4e2"
+    },
+    {
+      "path": "docs/scenarios/preparation/time-prepositions/api-verification.json",
+      "sha256": "5ac7c6601c3f97a167e1308da0b7537436f764e427d2a35a93b01a48e92140a5"
+    },
+    {
+      "path": "docs/scenarios/preparation/time-prepositions/category-verification.json",
+      "sha256": "c8aacaba3ad4640464da4d741376bfa02d63f2f74fa004ab9a6edb755e73a144"
+    },
+    {
+      "path": "data/scenario-preparation/time-prepositions-production/baseline-20261108.json",
+      "sha256": "eef8dc4f9c1424fc5ecc03caf54e3b877679ce5b6ad4e2e1367b82c7e8c49135"
+    },
+    {
+      "path": "data/scenario-preparation/time-prepositions-production/backup-verified-20261108.json",
+      "sha256": "8c9db069b111b409b3c9b0b46d6191f90d2d0d9c5e17529cb6a71f25eca02288"
+    },
+    {
+      "path": "data/scenario-preparation/time-prepositions-production/apply-20261108.json",
+      "sha256": "25f05e6a6df4eca92771654212020d61b1bf23aefeddc9621c68ddc23a8d713f"
+    },
+    {
+      "path": "data/scenario-preparation/time-prepositions-production/postcheck-20261108.json",
+      "sha256": "a041b25ba2570ee0c174c8c91e90f3cd07164e5641103a1f6840dfd753e27958"
+    },
+    {
+      "path": "docs/scenarios/preparation/time-prepositions/production-verification/2026-11-07T17-35-49-702Z-after-apply-776fd1c0-355a-4759-8408-5b7c00ce70e2.json",
+      "sha256": "5bf96c0678fd60d87ca7c7c0f2c3de5f74004924cb296b4abe5f6f522d945f0e"
+    }
+  ],
+  "technicalValidation": {
+    "npmTest": {
+      "passed": 878,
+      "workspaces": {
+        "shared": 288,
+        "api": 147,
+        "worker": 17,
+        "admin": 115,
+        "learner": 311
+      },
+      "logPath": "/tmp/time-prepositions-production-test.log",
+      "executedBy": "主對話"
+    },
+    "typecheck": "passed",
+    "learnerBuild": "passed",
+    "nodeToolTestsPassed": 27,
+    "strictPackageChecks": "both-passed",
+    "importDryRuns": "both-passed-offline",
+    "wordbankDeltaDryRun": {
+      "entries": 14,
+      "partialExisting": 13,
+      "newSupportEntries": 1
+    },
+    "audio": {
+      "clips": 125,
+      "storyClips": 2,
+      "targetClips": 123,
+      "completeDecode": "passed",
+      "nearSilenceScreen": "passed",
+      "humanListening": "pending"
+    },
+    "apiVerification": {
+      "status": "passed",
+      "reportPath": "docs/scenarios/preparation/time-prepositions/api-verification.json",
+      "draftTargetsStoryModeAndMediaHashesMatched": true,
+      "storyRange206": true,
+      "targetOccurrences": 14,
+      "uniqueEntries": 13,
+      "audioUrls200Nonempty": 123,
+      "prepListCountsCorrect": true,
+      "publicListExcludesDrafts": true,
+      "snapshotStatus": "historical-test-evidence-invalidated-by-test-suite"
+    },
+    "strictPreviewTypecheck": "passed-reported-by-main",
+    "categoryVerification": {
+      "status": "passed",
+      "reportPath": "docs/scenarios/preparation/time-prepositions/category-verification.json",
+      "publicListContainsExactlyBatch": true,
+      "sharedGrammarTagMatched": true,
+      "targetOccurrences": 14,
+      "uniqueEntries": 13,
+      "audioUrls200Nonempty": 123,
+      "testOnly": true,
+      "snapshotStatus": "historical-test-evidence-invalidated-by-test-suite"
+    },
+    "categoryPreviewMockTestsPassed": 15,
+    "historicalPreparationNpmTest": {
+      "passed": 873,
+      "workspaces": {
+        "shared": 288,
+        "api": 147,
+        "worker": 17,
+        "admin": 115,
+        "learner": 306
+      },
+      "logPath": "docs/scenarios/preparation/time-prepositions/validation-logs/npm-test.log"
+    },
+    "typecheckLogPath": "/tmp/time-prepositions-production-typecheck.log",
+    "learnerBuildScope": "歷史備料驗證通過；正式匯入本輪未重跑build或重建服務",
+    "productionQaMockTests": {
+      "passed": 9,
+      "logPath": "/tmp/time-prepositions-production-qa-tests.log",
+      "executedBy": "主對話"
+    },
+    "productionApiVerification": {
+      "status": "passed",
+      "reportPath": "docs/scenarios/preparation/time-prepositions/production-verification/2026-11-07T17-35-49-702Z-after-apply-776fd1c0-355a-4759-8408-5b7c00ce70e2.json",
+      "publishedScenarios": 2,
+      "categoryId": 28,
+      "uniqueTargetCards": 13,
+      "targetCardOccurrences": 14,
+      "availableWordbankClips": 123,
+      "mediaHashesAndRangesMatched": true,
+      "addedTimeExplanationsAndExamplesMatched": true,
+      "wordbankAudioByteHashesMatched": true,
+      "existing13ScenesVerifiedBy": "data/scenario-preparation/time-prepositions-production/postcheck-20261108.json"
+    }
+  },
+  "preview": {
+    "status": "invalidated-by-test-suite",
+    "active": false,
+    "database": "english_learning_test",
+    "reasonZh": "全庫npm test清除測試資料；API5180進程仍在不代表教材或分類可用，本輪未重建預覽。",
+    "restored": false,
+    "categoryUrl": null,
+    "urls": [],
+    "historical": {
+      "database": "english_learning_test",
+      "resolver": "shared/src/testing.ts TEST_DATABASE_URL；拒絕非_test，不讀 DATABASE_URL",
+      "draftsImported": true,
+      "draftCount": 0,
+      "targetAudioImported": 123,
+      "noTableTruncate": true,
+      "published": true,
+      "api": "http://127.0.0.1:5180",
+      "learner": "http://127.0.0.1:5181",
+      "urls": [
+        "http://127.0.0.1:5181/#/scenarios/time-prepositions-basics/revisions/1",
+        "http://127.0.0.1:5181/#/scenarios/time-prepositions-extended/revisions/1"
+      ],
+      "status": "category-browsable-in-test-only",
+      "importedScenarioCount": 2,
+      "publicationScope": "test-only-for-category-browsing",
+      "categoryId": 3,
+      "categoryUrl": "http://127.0.0.1:5181/#/scenarios?category=3"
+    }
+  },
+  "independentReview": {
+    "reviewer": "Faraday",
+    "firstReadback": "passed-after-preview-contentReview-fix",
+    "verified": [
+      "圖文概念",
+      "300 tokens",
+      "本批 source 最小增量",
+      "預覽 contentReview 正確排除的修復複驗"
+    ],
+    "reportPath": "docs/scenarios/preparation/time-prepositions/independent-review-first.md",
+    "secondReadback": "completed-no-blockers-minor-wording-corrected"
+  },
+  "production": {
+    "status": "published",
+    "databaseWritten": true,
+    "draftImported": true,
+    "published": true,
+    "categoryCreated": true,
+    "qualityReady": false,
+    "deployed": false,
+    "runtimeAlreadyAvailable": true,
+    "migrationsRun": false,
+    "generationPerformed": false,
+    "servicesStartedOrStoppedThisTask": false,
+    "authorization": {
+      "productionDatabase": true,
+      "draftImport": true,
+      "publish": true,
+      "deploy": true,
+      "migrations": false,
+      "generation": false
+    },
+    "scopeZh": "僅時間介系詞兩場、14-entry delta、123目標音與2圖2旁白；不包含其他40個phonics新詞或全canonical匯入。",
+    "identity": {
+      "database": "english_learning",
+      "address": "172.18.0.4",
+      "port": 5432
+    },
+    "checkedAt": "2026-11-07T17:35:48.542Z",
+    "baselinePath": "data/scenario-preparation/time-prepositions-production/baseline-20261108.json",
+    "backupRecordPath": "data/scenario-preparation/time-prepositions-production/backup-verified-20261108.json",
+    "applyReportPath": "data/scenario-preparation/time-prepositions-production/apply-20261108.json",
+    "postcheckReportPath": "data/scenario-preparation/time-prepositions-production/postcheck-20261108.json",
+    "apiQaReportPath": "docs/scenarios/preparation/time-prepositions/production-verification/2026-11-07T17-35-49-702Z-after-apply-776fd1c0-355a-4759-8408-5b7c00ce70e2.json",
+    "backup": {
+      "path": "data/backups/time-prepositions-production/20261108-011011",
+      "dbDumpFullParse": true,
+      "gzipIntegrity": true,
+      "tarFullListing": true,
+      "hashesAndBytesBoundToBaseline": true,
+      "restoreTest": false
+    },
+    "wordbank": {
+      "beforeWords": 9203,
+      "words": 9204,
+      "explanations": 27664,
+      "examples": 32993,
+      "maxSourceId": 9253,
+      "aggregateEvidence": "主對話正式SQL聚合唯讀查核（2026-11-08）",
+      "newEntries": 1,
+      "existingPartialUpdates": 13,
+      "explanationsAdded": 16,
+      "examplesAdded": 16,
+      "canonical": {
+        "words": 9244,
+        "explanations": 27784,
+        "examples": 33161
+      },
+      "notImportedDelta": {
+        "words": 40,
+        "explanations": 120,
+        "examples": 168,
+        "noteZh": "以實際delta為準，不推定各phonics批次分拆。"
+      }
+    },
+    "audio": {
+      "uniqueTargetClips": 123,
+      "filesCopied": 33,
+      "filesReused": 90,
+      "metadataInserted": 33,
+      "metadataReusedWithoutUpdate": 90,
+      "mediaFilesVerified": 127
+    },
+    "scenarios": [
+      {
+        "scenarioKey": "time-prepositions-basics",
+        "revision": 1,
+        "status": "published",
+        "publishedRevision": 1,
+        "contentHash": "6d03d67b449fb454e3335cf9408e1f766f96f01b2633c316b4d58854db016265",
+        "tagIds": [
+          28
+        ]
+      },
+      {
+        "scenarioKey": "time-prepositions-extended",
+        "revision": 1,
+        "status": "published",
+        "publishedRevision": 1,
+        "contentHash": "6d0800c43a1d9a6b33b6dfa31662b3f35389c5b09a81e2c29fe3f195e1236356",
+        "tagIds": [
+          28
+        ]
+      }
+    ],
+    "category": {
+      "kind": "情境",
+      "label": "語法情境",
+      "id": 28,
+      "url": "http://127.0.0.1:8090/#/scenarios?category=28"
+    },
+    "preservation": {
+      "oldScenes": 13,
+      "oldRevisions": 25,
+      "oldScenesPointersRevisionsTagsUnchanged": true,
+      "unrelatedWordbankUnchanged": true,
+      "originalAudioMetadataUnchanged": true,
+      "evidencePath": "data/scenario-preparation/time-prepositions-production/postcheck-20261108.json"
+    },
+    "driverVsMain": {
+      "driverPublicationPerformed": false,
+      "driverTaxonomyWritesPerformed": false,
+      "mainAdminApiPublicationPerformed": true,
+      "mainAdminApiTaxonomyWritesPerformed": true,
+      "noteZh": "driver的false只描述自身未分類／發布；主對話已用真admin API建立tag、PUT標籤union、POST發布兩場。"
+    },
+    "runtime": {
+      "apiSharedAndRouteThreeFilesShaMatched": true,
+      "apiShaEvidence": "主對話正式容器與本機3檔SHA核對",
+      "bundle": "/assets/index-SeLv5tqt.js",
+      "bundleSha256": "e609b11199300232462d3f401de9690914cfe9f346038e3b8d8db70dff37b446",
+      "guideHideShowStaticEvidencePassed": true,
+      "proofType": "公開runtime bundle靜態證據；非真實點擊",
+      "rebuiltThisTask": false,
+      "noteZh": "所需正式程式於本輪開始前已由外部部署；部署雖已授權，本輪沒有重建／啟停。"
+    }
+  }
+}

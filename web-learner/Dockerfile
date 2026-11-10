@@ -3,6 +3,7 @@ FROM node:20-alpine AS build
 WORKDIR /app
 # Base tsconfig is referenced via "../tsconfig.base.json".
 COPY tsconfig.base.json ./tsconfig.base.json
+COPY scripts/shared-audio-only.mjs scripts/shared-audio-only.d.mts ./scripts/
 COPY web-learner ./web-learner
 WORKDIR /app/web-learner
 ARG VITE_ADMIN_URL=http://localhost:8081

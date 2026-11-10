@@ -21,16 +21,21 @@ function options(args: string[]) {
   if (result["--apply"] && (result["--dry-run"] || result["--check-database"])) throw new Error("--apply 不可與 dry-run/check-database 混用");
   return result;
 }
+export function contentFromScenarioPackage(pkg: Record<string, unknown>) {
+  return ScenarioContentSchema.parse({ schemaVersion: pkg.schemaVersion, scenarioKey: pkg.scenarioKey,
+    revision: pkg.revision, titleZh: pkg.titleZh, vocabularyMode: pkg.vocabularyMode,
+    ...(pkg.learningMode !== undefined ? { learningMode: pkg.learningMode } : {}), vocabularyFilter: pkg.vocabularyFilter,
+    targetCount: pkg.targetCount, targets: pkg.targets, story: pkg.story });
+}
 async function main() {
   const opts = options(process.argv.slice(2));
   const pkg = JSON.parse(await readFile(path.resolve(repoRoot, String(opts["--package"] ?? defaultFile)), "utf8"));
+  // @ts-expect-error 既有離線 MJS 檢查器尚無型別宣告。
   const { validateScenarioPackage } = await import("./check-scenario-package.mjs");
   const check = await validateScenarioPackage(pkg, { repoRoot });
   if (!check.valid || !check.publishReady) throw new Error(`情境素材未完整：${[...(check.errors ?? []), ...(check.missing ?? [])].join("；")}`);
-  const content = ScenarioContentSchema.parse({ schemaVersion: pkg.schemaVersion, scenarioKey: pkg.scenarioKey,
-    revision: pkg.revision, titleZh: pkg.titleZh, vocabularyMode: pkg.vocabularyMode, vocabularyFilter: pkg.vocabularyFilter,
-    targetCount: pkg.targetCount, targets: pkg.targets, story: pkg.story });
-  // 正式匯入只採用無文字底圖，參考標籤圖不進 volume。
+  const content = contentFromScenarioPackage(pkg);
+  // 正式匯入採用已按 learningMode 預檢的底圖，參考圖不進 volume。
   const imageBytes = await readFile(await scenarioSafePath(repoRoot, pkg.assets.baseImage.path));
   const audioBytes = await readFile(await scenarioSafePath(repoRoot, pkg.assets.storyAudio.path));
   const metadata = await sharp(imageBytes).metadata();
@@ -81,4 +86,6 @@ async function main() {
     console.log(`匯入完成：${JSON.stringify(result)}；未發布、不呼叫生成服務。`);
   } finally { await pool.end(); }
 }
-main().catch(error => { console.error(error instanceof Error ? error.message : error); process.exitCode = 1; });
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch(error => { console.error(error instanceof Error ? error.message : error); process.exitCode = 1; });
+}

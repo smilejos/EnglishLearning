@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-07T12:45:01.976Z",
+  "scope": "隔離 _test API 唯讀查核；不代替瀏覽器操作或人工試聽",
+  "scenarios": [
+    {
+      "scenarioKey": "time-prepositions-basics",
+      "revision": 1,
+      "targets": 3,
+      "imageHashMatched": true,
+      "storyHashMatched": true,
+      "storyRangeSupported": true
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "revision": 1,
+      "targets": 11,
+      "imageHashMatched": true,
+      "storyHashMatched": true,
+      "storyRangeSupported": true
+    }
+  ],
+  "uniqueTargetCards": 13,
+  "targetCardOccurrences": 14,
+  "availableWordbankClips": 123,
+  "draftAbsentFromPublicList": true,
+  "adminPrepCountsMatched": true
+}

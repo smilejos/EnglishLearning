@@ -17,10 +17,10 @@ describe("字庫匯入契約", () => {
     expect(() => parseWordbankDocument({ entries: [entry, entry] })).toThrow("GUID 重複");
   });
 
-  it("實際來源可完整解析 9208 字，包含 1193 basic 字且保留所有欄位", async () => {
+  it("實際來源可完整解析 9244 字，包含 1193 basic 字且保留所有欄位", async () => {
     const source = JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8"));
     const parsed = parseWordbankDocument(source);
-    expect(parsed).toHaveLength(9208);
+    expect(parsed).toHaveLength(9244);
     expect(parsed.filter((item) => item.level.list === "basic")).toHaveLength(1193);
     expect(parsed).toEqual(source.entries);
   });
@@ -74,6 +74,104 @@ describe("字庫匯入契約", () => {
     }
   });
 
+  it("長母音增量只新增 dune 與十句例句，保留既有詞並可重跑", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../docs/phonics/preparation/long-vowels/wordbank-additions.json", import.meta.url), "utf8")));
+    expect(delta).toHaveLength(11);
+    const dune = delta.find(({ word }) => word === "dune")!;
+    expect(dune).toMatchObject({ id: 9218, guid: "6fdadfd0-12b1-576d-9e70-8935d1b5e24c", level: { cefr: null, tw_7000: null, list: null } });
+    expect(dune.explains).toHaveLength(3);
+    expect(dune.examples).toHaveLength(3);
+    expect(source.filter(({ word }) => word === "dune")).toEqual([dune]);
+    for (const incoming of delta.filter(({ guid }) => guid !== dune.guid)) {
+      expect(incoming.examples).toHaveLength(1);
+      expect(incoming.definition).toBe("");
+      expect(incoming.explains).toEqual([]);
+      const completed = source.find(({ guid }) => guid === incoming.guid)!;
+      const added = new Set(incoming.examples.map(({ guid }) => guid));
+      const current = { ...completed, examples: completed.examples.filter(({ guid }) => !added.has(guid)) };
+      expect(current.examples.length).toBeGreaterThanOrEqual(3);
+      expect(mergeWordbankEntry(current, incoming)).toEqual(completed);
+      expect(mergeWordbankEntry(completed, incoming)).toEqual(completed);
+    }
+  });
+
+  it("第三至五章增量完整補 oar，三十短句歸屬正確且重跑不覆寫舊文字", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../docs/phonics/preparation/phonics-345/wordbank-additions.json", import.meta.url), "utf8")));
+    const mapping = JSON.parse(await readFile(new URL("../../docs/phonics/preparation/phonics-345/wordbank-phonics-mapping.json", import.meta.url), "utf8"));
+    const oar = delta.find(({ word }) => word === "oar")!;
+    expect(oar).toMatchObject({ id: 9219, guid: "048e3d74-d5fe-51a1-85cd-079d1fd684ef", parts_of_speech: ["n"], level: { cefr: null, tw_7000: null, list: null } });
+    expect(oar.definition).toContain("槳");
+    expect(oar.explains).toHaveLength(3);
+    expect(oar.examples.length).toBeGreaterThanOrEqual(3);
+    expect(source.filter(({ word }) => word === "oar")).toEqual([oar]);
+    expect(mapping.words).toHaveLength(134);
+    expect(new Set(mapping.words.map((item: { assetGuid: string }) => item.assetGuid)).size).toBe(134);
+    expect(mapping.sentences).toHaveLength(30);
+    for (const item of mapping.sentences) {
+      const owner = delta.find(({ guid }) => guid === item.entryGuid)!;
+      expect(owner.examples.find(({ guid }) => guid === item.assetGuid)?.en).toBe(item.text);
+      expect(item.textHash).toBe(wordbankTextHash(item.text));
+    }
+    for (const incoming of delta.filter(({ word }) => word !== "oar")) {
+      const complete = source.find(({ guid }) => guid === incoming.guid)!;
+      const added = new Set(incoming.examples.map(({ guid }) => guid));
+      const current = { ...complete, examples: complete.examples.filter(({ guid }) => !added.has(guid)) };
+      expect(current.examples.length).toBeGreaterThanOrEqual(3);
+      expect(mergeWordbankEntry(current, incoming)).toEqual(complete);
+      expect(mergeWordbankEntry(complete, incoming)).toEqual(complete);
+    }
+  });
+
+  it("時間介系詞增量完整包含13既有詞的26子項與autumn，重匯保留原欄位及分級", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../docs/scenarios/preparation/time-prepositions/wordbank-additions.json", import.meta.url), "utf8")));
+    expect(delta).toHaveLength(14);
+    const existing = delta.filter(({ word }) => word !== "autumn");
+    expect(existing.map(({ word }) => word).sort()).toEqual(["in", "on", "at", "before", "after", "from", "to", "by", "until", "for", "since", "during", "within"].sort());
+    const subitems = existing.flatMap(({ explains, examples }) => [...explains, ...examples]);
+    expect(subitems).toHaveLength(26);
+    expect(new Set(subitems.map(({ guid }) => guid)).size).toBe(26);
+    for (const incoming of existing) {
+      expect(incoming.parts_of_speech).toEqual(["prep"]);
+      expect(incoming.definition).toBe("");
+      expect(incoming.level).toEqual({ cefr: null, tw_7000: null, list: null });
+      expect(incoming.explains).toHaveLength(1);
+      expect(incoming.examples).toHaveLength(1);
+      expect(incoming.explains[0].en.trim()).not.toBe("");
+      expect(incoming.examples[0].en.trim()).not.toBe("");
+      expect(incoming.examples[0].zh.trim()).not.toBe("");
+      const complete = source.find(({ guid }) => guid === incoming.guid)!;
+      expect(complete).toMatchObject({ word: incoming.word, id: incoming.id });
+      expect(complete.level.list).toBe(incoming.word === "within" ? "expert" : "basic");
+      const explainGuids = new Set(incoming.explains.map(({ guid }) => guid));
+      const exampleGuids = new Set(incoming.examples.map(({ guid }) => guid));
+      expect(complete.explains.filter(({ guid }) => explainGuids.has(guid))).toEqual(incoming.explains);
+      expect(complete.examples.filter(({ guid }) => exampleGuids.has(guid))).toEqual(incoming.examples);
+      const current = { ...complete,
+        explains: complete.explains.filter(({ guid }) => !explainGuids.has(guid)),
+        examples: complete.examples.filter(({ guid }) => !exampleGuids.has(guid)),
+      };
+      expect(current.explains.length).toBeGreaterThanOrEqual(3);
+      expect(current.examples.length).toBeGreaterThanOrEqual(3);
+      // 完整物件相等同時保護既有詞性、定義、分類、情境、分級與所有舊子項。
+      expect(mergeWordbankEntry(current, incoming)).toEqual(complete);
+      expect(mergeWordbankEntry(complete, incoming)).toEqual(complete);
+    }
+    const autumn = delta.find(({ word }) => word === "autumn")!;
+    expect(autumn).toMatchObject({ id: 9253, guid: "8f3a9c1c-fc8e-5494-b126-31fe95b29df8", parts_of_speech: ["n"], level: { cefr: null, tw_7000: null, list: null } });
+    expect(autumn.definition).toContain("秋天");
+    expect(autumn.explains).toHaveLength(3);
+    expect(autumn.examples).toHaveLength(3);
+    expect(autumn.explains.every(({ en }) => en.trim())).toBe(true);
+    expect(autumn.examples.every(({ en, zh }) => en.trim() && zh.trim())).toBe(true);
+    const allSubitems = delta.flatMap(({ explains, examples }) => [...explains, ...examples]);
+    expect(new Set(allSubitems.map(({ guid }) => guid)).size).toBe(32);
+    expect(source.filter(({ word }) => word === "autumn")).toEqual([autumn]);
+    expect(mergeWordbankEntry(autumn, autumn)).toEqual(autumn);
+  });
+
   it("重匯保留既有人工補齊內容、例句 GUID 與情境，並補新內容", () => {
     const current = { ...entry, definition: "一個", category: ["manual"], scenario: ["school"],
       examples: [{ guid: "900e7622-ab9d-5ad4-b8ba-a617fa982ffc", en: "A cat.", zh: "" }],
@@ -124,5 +222,42 @@ describe("音檔 manifest 對應", () => {
     const otherEntry = { ...entry, guid: "64d5d1d1-5838-53c0-967e-9124bcdca6dd", explains: [] };
     const wrongOwner = structuredClone(data); wrongOwner.entries[0].entryGuid = otherEntry.guid;
     expect(() => validateWordbankAudioManifest(wrongOwner, [explained, otherEntry])).toThrow("GUID 未對應");
+  });
+});
+
+describe("字尾教材的共用字庫增量", () => {
+  it("33屈折詞有獨立GUID與完整內容，原形不被取代且41個音訊歸屬正確", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../docs/phonics/preparation/endings/wordbank-additions.json", import.meta.url), "utf8")));
+    const mapping = JSON.parse(await readFile(new URL("../../docs/phonics/preparation/endings/wordbank-phonics-mapping.json", import.meta.url), "utf8"));
+    const audio = WordbankAudioManifestSchema.parse(JSON.parse(await readFile(new URL("../../docs/phonics/preparation/endings/wordbank-audio-import.json", import.meta.url), "utf8")));
+    const bank = new Map(source.map((entry) => [entry.guid, entry]));
+    expect(delta).toHaveLength(33);
+    expect(mapping.words).toHaveLength(33);
+    expect(mapping.sentences).toHaveLength(8);
+    expect(audio.entries).toHaveLength(41);
+    validateWordbankAudioManifest(audio, source);
+    for (const incoming of delta) {
+      expect(bank.get(incoming.guid)).toEqual(incoming);
+      expect(incoming.level).toEqual({ cefr: null, tw_7000: null, list: null });
+      expect(incoming.explains).toHaveLength(3);
+      expect(incoming.examples).toHaveLength(3);
+      expect(incoming.examples.every(({ en, zh }) => en && zh)).toBe(true);
+      expect(mergeWordbankEntry(incoming, incoming)).toEqual(incoming);
+    }
+    for (const item of mapping.words) {
+      const inflected = bank.get(item.entryGuid)!;
+      const base = source.find(({ word }) => word === item.baseWord)!;
+      expect(base).toBeDefined();
+      expect(base.guid).not.toBe(inflected.guid);
+      expect(inflected.definition).toContain(item.baseWord);
+      expect(item.assetGuid).toBe(inflected.guid);
+      expect(inflected.word).toBe(item.text);
+      expect(item.textHash).toBe(wordbankTextHash(item.text));
+    }
+    for (const item of mapping.sentences) {
+      expect(bank.get(item.entryGuid)!.examples.find(({ guid }) => guid === item.assetGuid)?.en).toBe(item.text);
+      expect(item.textHash).toBe(wordbankTextHash(item.text));
+    }
   });
 });

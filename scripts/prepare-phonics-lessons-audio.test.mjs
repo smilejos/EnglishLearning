@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { localTtsEndpoint, planLesson, matchingSource, keepExistingRecording, selectValidSource } from './prepare-phonics-lessons-audio.mjs';
+import { localTtsEndpoint, planLesson, matchingSource, keepExistingRecording, selectValidSource, batchPreparation, lessonMatchesBatch, validLessonId } from './prepare-phonics-lessons-audio.mjs';
 
 test('產音端點僅允許本機 HTTP，不接受外部或夾帶帳密', () => {
   assert.match(localTtsEndpoint(), /^http:\/\/127\.0\.0\.1:8000/);
@@ -46,4 +46,47 @@ test('重用需要文字與 hash 相符，整詞不能誤用句子素材；不�
   assert.equal(matchingSource(job, [wrongKind, source]), source);
   assert.equal(matchingSource(job, [{ ...source, textHash: 'stale' }]), undefined);
   assert.equal(matchingSource(job, [{ ...source, text: 'Pen' }]), undefined);
+});
+
+test('長母音批次沿用安全識別，批次路徑不接受任意輸入', () => {
+  assert.match(batchPreparation(), /short-vowels$/);
+  assert.match(batchPreparation('long-vowels'), /long-vowels$/);
+  for (const invalid of ['../long-vowels', 'long-a', '', '/tmp']) assert.throws(() => batchPreparation(invalid));
+  const [job] = planLesson({ id: 'long-a', jobs: [{ key: 'cake', text: 'cake', kind: 'word' }] });
+  assert.equal(job.assetGuid, 'phonics-long-a-cake');
+  assert.throws(() => planLesson({ id: 'long-x', jobs: [] }));
+});
+
+
+test('第三至五章僅接受明列課程，批次配對不放寬長短母音範圍', () => {
+  assert.match(batchPreparation('phonics-345'), /phonics-345$/);
+  for (const id of ['blends-l', 'blends-r', 'blends-s', 'blends-final', 'blends-three',
+    'digraph-sh', 'digraph-ch', 'digraph-th-voiceless', 'digraph-th-voiced', 'digraph-wh', 'digraph-ph', 'digraph-tch',
+    'r-ar', 'r-or', 'r-ore-oar']) {
+    assert.equal(validLessonId(id), true);
+    assert.equal(lessonMatchesBatch(id, 'phonics-345'), true);
+    assert.equal(lessonMatchesBatch(id, 'short-vowels'), false);
+    assert.equal(lessonMatchesBatch(id, 'long-vowels'), false);
+    assert.equal(planLesson({ id, jobs: [{ key: 'example', text: 'example', kind: 'word' }] })[0].assetGuid, `phonics-${id}-example`);
+  }
+  for (const id of ['short-a', 'long-u']) assert.equal(lessonMatchesBatch(id, 'phonics-345'), false);
+  for (const id of ['blends-unknown', 'digraph-sh/escape', 'r-ar-other', '../r-ar', 'r-', 'short-ar', 'long-sh']) {
+    assert.equal(validLessonId(id), false);
+    assert.throws(() => planLesson({ id, jobs: [] }));
+  }
+  assert.throws(() => lessonMatchesBatch('short-a', 'toString'));
+  assert.throws(() => batchPreparation('__proto__'));
+});
+
+test('字尾變化使用獨立白名單，不可混入其他教材批次', () => {
+  assert.match(batchPreparation('endings'), /endings$/);
+  for (const suffix of ['s', 'es', 'ed', 'ing']) {
+    const id = `endings-${suffix}`;
+    assert.equal(validLessonId(id), true);
+    assert.equal(lessonMatchesBatch(id, 'endings'), true);
+    for (const batch of ['short-vowels', 'long-vowels', 'phonics-345']) assert.equal(lessonMatchesBatch(id, batch), false);
+    assert.equal(planLesson({ id, jobs: [{ key: 'test', kind: 'word', text: 'test' }] })[0].assetGuid, `phonics-${id}-test`);
+  }
+  for (const id of ['endings', 'endings-ies', 'endings-ing/escape', '../endings-s']) assert.equal(validLessonId(id), false);
+  for (const id of ['short-a', 'long-a', 'digraph-sh']) assert.equal(lessonMatchesBatch(id, 'endings'), false);
 });

@@ -1,0 +1,353 @@
+{
+  "checkedAt": "2026-11-02T13:21:43.050Z",
+  "total": 49,
+  "uniqueTexts": 49,
+  "items": [
+    {
+      "lesson": "endings-s",
+      "key": "cats",
+      "kind": "word",
+      "text": "cats",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "caps",
+      "kind": "word",
+      "text": "caps",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "maps",
+      "kind": "word",
+      "text": "maps",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "cups",
+      "kind": "word",
+      "text": "cups",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "pigs",
+      "kind": "word",
+      "text": "pigs",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "dogs",
+      "kind": "word",
+      "text": "dogs",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "pens",
+      "kind": "word",
+      "text": "pens",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "beds",
+      "kind": "word",
+      "text": "beds",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The cats nap.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the cats nap",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The pigs sit on the beds.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-s",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the pigs sit on the beds",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "buses",
+      "kind": "word",
+      "text": "buses",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "dishes",
+      "kind": "word",
+      "text": "dishes",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "wishes",
+      "kind": "word",
+      "text": "wishes",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "foxes",
+      "kind": "word",
+      "text": "foxes",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "boxes",
+      "kind": "word",
+      "text": "boxes",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "matches",
+      "kind": "word",
+      "text": "matches",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "catches",
+      "kind": "word",
+      "text": "catches",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "benches",
+      "kind": "word",
+      "text": "benches",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The foxes run.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the foxes run",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "The dishes are in the boxes.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-es",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "the dishes are in the boxes",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "tapped",
+      "kind": "word",
+      "text": "tapped",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "packed",
+      "kind": "word",
+      "text": "packed",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "jumped",
+      "kind": "word",
+      "text": "jumped",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "filled",
+      "kind": "word",
+      "text": "filled",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "hummed",
+      "kind": "word",
+      "text": "hummed",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "played",
+      "kind": "word",
+      "text": "played",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "landed",
+      "kind": "word",
+      "text": "landed",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "rested",
+      "kind": "word",
+      "text": "rested",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "needed",
+      "kind": "word",
+      "text": "needed",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The dog jumped.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the dog jumped",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "I rested and played.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ed",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "I rested and played",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "jumping",
+      "kind": "word",
+      "text": "jumping",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "resting",
+      "kind": "word",
+      "text": "resting",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "running",
+      "kind": "word",
+      "text": "running",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "hopping",
+      "kind": "word",
+      "text": "hopping",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "sitting",
+      "kind": "word",
+      "text": "sitting",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "making",
+      "kind": "word",
+      "text": "making",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "riding",
+      "kind": "word",
+      "text": "riding",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "playing",
+      "kind": "word",
+      "text": "playing",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "sentence-1",
+      "kind": "sentence",
+      "text": "The cat is running.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "support-1-1",
+      "kind": "support",
+      "text": "the cat is running",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "sentence-2",
+      "kind": "sentence",
+      "text": "I am making a map.",
+      "status": "pending-generation"
+    },
+    {
+      "lesson": "endings-ing",
+      "key": "support-2-1",
+      "kind": "support",
+      "text": "I am making a map",
+      "status": "pending-generation"
+    }
+  ],
+  "excluded": [],
+  "formalSnapshot": "wordbank-before.json",
+  "scope": "正式詞條/音訊/文章候選唯讀比對；本機精確文字素材經解碼/hash驗證。讀音與口音仍待人工聽審。"
+}

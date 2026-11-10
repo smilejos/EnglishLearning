@@ -1,0 +1,310 @@
+{
+  "targets": [
+    {
+      "scenarioKey": "time-prepositions-basics",
+      "word": "in",
+      "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "年、月、季節與一般時段：in 2024、in April、in winter、in autumn，以及 in the morning／afternoon／evening。指定某一天的早上改用 on Monday morning；夜晚慣用 at night。本圖以類別建立概念，不只依時間長短判斷。",
+      "interaction": {
+        "label": {
+          "x": 0.17,
+          "y": 0.17
+        },
+        "object": {
+          "x": 0.17,
+          "y": 0.17
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-basics",
+      "word": "on",
+      "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "星期、特定日期或特定的一天：on Monday、on December 25、on my birthday。指定某天的時段也用 on，例如 on Monday morning；一般早上則用 in the morning。",
+      "interaction": {
+        "label": {
+          "x": 0.5,
+          "y": 0.17
+        },
+        "object": {
+          "x": 0.5,
+          "y": 0.17
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-basics",
+      "word": "at",
+      "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "明確時間點及固定用法：at 5:00 p.m.（下午五點）、at 7:00 a.m.（早上七點）、at noon（中午）、at midnight（午夜）、at night（夜晚）。一般早午晚用 in the morning／afternoon／evening。",
+      "interaction": {
+        "label": {
+          "x": 0.84,
+          "y": 0.17
+        },
+        "object": {
+          "x": 0.84,
+          "y": 0.17
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "before",
+      "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在某時間或事件之前：before lunch（午餐前），比午餐早；與 after lunch（午餐後）對照。",
+      "interaction": {
+        "label": {
+          "x": 0.09,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.09,
+          "y": 0.215
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "after",
+      "entryGuid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在某時間或事件之後：after lunch（午餐後），比午餐晚；與 before lunch（午餐前）對照。",
+      "interaction": {
+        "label": {
+          "x": 0.255,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.255,
+          "y": 0.215
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "from",
+      "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "指出一段時間的起點，常與 to 配對：from nine in the morning to five in the afternoon（從早上九點到下午五點）。圖中 from 9:00 a.m. 是起點。",
+      "interaction": {
+        "label": {
+          "x": 0.41,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.41,
+          "y": 0.215
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "to",
+      "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "指出 from…to… 時間範圍的終點：from nine in the morning to five in the afternoon（從早上九點到下午五點）。本圖 to 5:00 p.m. 是終點，不是「距離五點還差幾分」的用法。",
+      "interaction": {
+        "label": {
+          "x": 0.585,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.585,
+          "y": 0.215
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "by",
+      "entryGuid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "最晚在指定時間完成，包含提前完成：Finish by five／Finish by 5:00 p.m.（最晚下午五點完成）。不是一直做事到五點；持續到五點用 until。",
+      "interaction": {
+        "label": {
+          "x": 0.69,
+          "y": 0.215
+        },
+        "object": {
+          "x": 0.69,
+          "y": 0.215
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "until",
+      "entryGuid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "動作或狀態持續到指定時間：Work until five／Work until 5:00 p.m.（持續工作到下午五點）。與 by 的完成期限不同；till 也可表達此義，本場不另列目標。",
+      "interaction": {
+        "label": {
+          "x": 0.69,
+          "y": 0.405
+        },
+        "object": {
+          "x": 0.69,
+          "y": 0.405
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "for",
+      "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "接時間長度，回答持續多久：for two hours（持續兩小時）。不指出起點；since 指起點，during 指在哪段期間內。",
+      "interaction": {
+        "label": {
+          "x": 0.11,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.11,
+          "y": 0.665
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "since",
+      "entryGuid": "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "接過去起點，表示持續到參照時間；本例用現在完成式：I have been here since Monday.（我從星期一起就一直在這裡。）圖中 Monday → now 表示從星期一延續到現在。",
+      "interaction": {
+        "label": {
+          "x": 0.28,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.28,
+          "y": 0.665
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "during",
+      "entryGuid": "00676060-6b5b-564b-9108-e58900a36b8b",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在某個期間或事件內：during the meeting（在會議期間）。不單靠此詞判定活動持續多久，也不表示一定整場都在做；與 for two hours 的時間長度不同。",
+      "interaction": {
+        "label": {
+          "x": 0.435,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.435,
+          "y": 0.665
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "in",
+      "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "在本圖未來句 I will be back in two hours. 中，in two hours 指從現在算起「兩小時後」回來。與第一張圖 in April 等期間用法不同；也與 within 的「最晚兩小時內」有別。",
+      "interaction": {
+        "label": {
+          "x": 0.57,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.57,
+          "y": 0.665
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    },
+    {
+      "scenarioKey": "time-prepositions-extended",
+      "word": "within",
+      "entryGuid": "1716c62d-9d1d-510c-b7a7-779558ff5c4d",
+      "list": "expert",
+      "teachingPos": "prep",
+      "senseZh": "在指定長度的時間內、不晚於終點：I will be back within two hours.（我會在兩小時內回來。）可以提早，也可以在兩小時的期限到達時回來；與 in two hours（兩小時後）對照。",
+      "interaction": {
+        "label": {
+          "x": 0.775,
+          "y": 0.665
+        },
+        "object": {
+          "x": 0.775,
+          "y": 0.665
+        }
+      },
+      "visibleCueZh": "對應已認可圖片之分區標題、時間線或 caption 附近留白；每詞一入口，不重複例子。",
+      "status": "canonical-existing-production-not-checked"
+    }
+  ],
+  "inflectionAliases": {
+    "years": "year",
+    "months": "month",
+    "seasons": "season",
+    "parts": "part",
+    "days": "day",
+    "dates": "date",
+    "words": "word",
+    "means": "mean",
+    "shows": "show",
+    "tells": "tell",
+    "hours": "hour",
+    "been": "be",
+    "started": "start",
+    "continues": "continue",
+    "working": "work",
+    "happens": "happen",
+    "lasts": "last",
+    "phrases": "phrase",
+    "these": "this",
+    "us": "we",
+    "earlier": "early",
+    "later": "late"
+  },
+  "missingEntryCount": 0,
+  "noteZh": "圖與旁白保留 autumn；新增支援詞的離線 canonical／增量已備，不代表正式入庫。"
+}

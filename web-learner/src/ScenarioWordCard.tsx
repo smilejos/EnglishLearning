@@ -7,7 +7,7 @@ export function ScenarioWordCard({ entry, target }: { entry: WordbankEntry; targ
     <div className="scenario-card-title"><h3>{entry.word}</h3>
       <ScenarioAudioButton path={entry.wordAudioUrl} label={`${entry.word} 單字`} /></div>
     <p className="scenario-word-meta">{entry.partsOfSpeech.join(" / ")} · {entry.level.list ?? "未分類"}</p>
-    {target && <p className="scenario-sense">本情境：{target.senseZh}（{target.teachingPos}）</p>}
+    {target && <p className="scenario-sense">本情境：{target.senseZh}（{target.teachingPos === "prep" ? "介系詞 prep" : target.teachingPos}）</p>}
     <p className="scenario-definition">{entry.definition || "中文釋義待補"}</p>
     <section aria-label="字庫英文解釋" className="scenario-word-section"><h4>英文解釋</h4>
       {!entry.explains.length && <p>英文解釋待補。</p>}

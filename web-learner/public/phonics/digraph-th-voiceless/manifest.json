@@ -1,0 +1,461 @@
+{
+  "version": 1,
+  "profile": {
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Serena",
+    "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+    "lang_code": "English",
+    "response_format": "mp3"
+  },
+  "entries": [
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-thin",
+      "kind": "word",
+      "text": "thin",
+      "textHash": "1a0dc227b5aa78f8400838aec14099a5e23b9da69ff5ee37dffd8b6b40003a95",
+      "relativePath": "thin.mp3",
+      "durationSeconds": 1.896,
+      "bytes": 30380,
+      "acousticCheck": {
+        "peakDbfs": -14.480110693868895,
+        "rmsDbfs": -31.142749107035232,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-10-05T02:44:21.043Z",
+      "sha256": "259dfdd3218ef6f91ccc35edc2950c5a9deee6545f9c8c64df03e8bda539304b",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "entryGuid": "a1777815-c12b-59a8-8c2d-2069d1826872",
+      "origin": {
+        "type": "reused-local-audio",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/a1777815-c12b-59a8-8c2d-2069d1826872.mp3",
+        "assetGuid": "a1777815-c12b-59a8-8c2d-2069d1826872",
+        "kind": "word"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-bath",
+      "kind": "word",
+      "text": "bath",
+      "textHash": "0de8ab6315488d30b61d0cd3d4a99d994bbb781c6efe77147fe3cae8f7a21ad8",
+      "relativePath": "bath.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -17.452983978405655,
+        "rmsDbfs": -30.456223265736174,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-10-05T00:37:52.736Z",
+      "sha256": "9eb059e1dad62bc87fc170da48017e7c5e134b699dbc6e2ed0aabc286b30bdfe",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "entryGuid": "17e48c9a-335d-56a1-ae1a-658608a5d1ea",
+      "origin": {
+        "type": "reused-local-audio",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/17e48c9a-335d-56a1-ae1a-658608a5d1ea.mp3",
+        "assetGuid": "17e48c9a-335d-56a1-ae1a-658608a5d1ea",
+        "kind": "word"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-math",
+      "kind": "word",
+      "text": "math",
+      "textHash": "58a6d6801ae771e632351013ffe8e53628287bf5310e469c8c48573669011ef0",
+      "relativePath": "math.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -15.072884975330858,
+        "rmsDbfs": -29.75193593251523,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-10-05T03:26:55.239Z",
+      "sha256": "7ac800479fabf9fecbaf5c0d24c26c4fd116cf49989122ec24ebfe853e6f3a3c",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "entryGuid": "ddc0aadb-f148-5055-8910-ad6b17d60787",
+      "origin": {
+        "type": "reused-local-audio",
+        "path": "data/wordbank-audio/wordbank/09eeb3d17582e855/ddc0aadb-f148-5055-8910-ad6b17d60787.mp3",
+        "assetGuid": "ddc0aadb-f148-5055-8910-ad6b17d60787",
+        "kind": "word"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-path",
+      "kind": "word",
+      "text": "path",
+      "textHash": "a0af9f865bf637e6736817f4ce552e4cdf7b8c36ea75bc254c1d1f0af744b5bf",
+      "relativePath": "path.mp3",
+      "durationSeconds": 1.104,
+      "bytes": 17708,
+      "acousticCheck": {
+        "peakDbfs": -14.545367416862018,
+        "rmsDbfs": -29.982492572446255,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:11.519Z",
+      "sha256": "7dc4121a276ae043da02579f07fa39f35a875055907a976c72600f816644f5fe",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-moth",
+      "kind": "word",
+      "text": "moth",
+      "textHash": "19c3d6e4f5c8b0da71e2d0fb9a7db15b030db09a672f7d57705c278b2c0e4979",
+      "relativePath": "moth.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -9.284981697211403,
+        "rmsDbfs": -26.14116479964219,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:12.274Z",
+      "sha256": "a613926d482b5c8f6ecdceb2b223ec2c8cf75c4a8e54ebb3f4a78239f7c0f328",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-cloth",
+      "kind": "word",
+      "text": "cloth",
+      "textHash": "d6e28ffb3b198d85e47dc58d1febc577d52031abedf28af8e10d8c165d681e7b",
+      "relativePath": "cloth.mp3",
+      "durationSeconds": 1.416,
+      "bytes": 22700,
+      "acousticCheck": {
+        "peakDbfs": -10.881564353099588,
+        "rmsDbfs": -28.72011701849804,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:13.117Z",
+      "sha256": "0904ee68c2ee4e157c2277d7d3656257ca6933ff28e5270c932bef4427a4d780",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-theft",
+      "kind": "word",
+      "text": "theft",
+      "textHash": "2daf5a7240150afc0b2265a2237d0b6edcb714dd7f88283525716581c2cf1f3e",
+      "relativePath": "theft.mp3",
+      "durationSeconds": 1.104,
+      "bytes": 17708,
+      "acousticCheck": {
+        "peakDbfs": -11.79933238189395,
+        "rmsDbfs": -34.660261841173394,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:13.775Z",
+      "sha256": "7a7f6ea5eda63f4b406ee5007ac301cd809f94900ad9be9f0eac256f5a15b823",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-sentence-1",
+      "kind": "sentence",
+      "text": "A thin cat is on the path.",
+      "textHash": "38f45e471556d9d1eb5c1db32447294624f8e79a2e3ed0d845ebe12a72bb5e63",
+      "relativePath": "sentence-1.mp3",
+      "durationSeconds": 2.376,
+      "bytes": 38060,
+      "acousticCheck": {
+        "peakDbfs": -9.438825890368697,
+        "rmsDbfs": -23.209794073639035,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:15.131Z",
+      "sha256": "9a21874774e681e895c93aba7d908f9f55ced684303d481300ceb3a2c03f6b10",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-support-1-1",
+      "kind": "support",
+      "text": "a thin cat",
+      "textHash": "130cdf9f6798b0360a551f7c9c9636beaf98067255b9d4474ad7051a664f67e0",
+      "relativePath": "support-1-1.mp3",
+      "durationSeconds": 1.824,
+      "bytes": 29228,
+      "acousticCheck": {
+        "peakDbfs": -10.210997639463502,
+        "rmsDbfs": -25.78499416383422,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:16.191Z",
+      "sha256": "03cbf50449ac935618b0932dc2a773a07d975203e266018ca8e8534c944b29c8",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-support-1-2",
+      "kind": "support",
+      "text": "is on the path",
+      "textHash": "2bf8e3722d706a99809a91d040f509572993c1e4a87deb07475fa1b2b5843bd7",
+      "relativePath": "support-1-2.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "acousticCheck": {
+        "peakDbfs": -8.624163130755333,
+        "rmsDbfs": -24.655029290676627,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:17.122Z",
+      "sha256": "d48f3911298e6587fa88c06f6a94583b21591b19cc9f1aaa53464ced0659c115",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-support-1-3",
+      "kind": "support",
+      "text": "the path",
+      "textHash": "b427acb96a637c25c861448eed0411048fbe5772481c899bb7d53f432d6701d2",
+      "relativePath": "support-1-3.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -16.71746004672076,
+        "rmsDbfs": -35.16374430745871,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:17.948Z",
+      "sha256": "49da4ea79d635d0008ab65327507ba4766462048c6ee9cf482d75d015c7e80ba",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-sentence-2",
+      "kind": "sentence",
+      "text": "A moth is on the cloth.",
+      "textHash": "99355cfc5f7392f08e65f0015c052ae3d91e29655f7ba2e48d7e927d4d7f4a3d",
+      "relativePath": "sentence-2.mp3",
+      "durationSeconds": 3.024,
+      "bytes": 48428,
+      "acousticCheck": {
+        "peakDbfs": -9.748979041265159,
+        "rmsDbfs": -26.43254334854065,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:19.778Z",
+      "sha256": "6687a9535e207b9a66541f8439de0197f0cced75f31d8f54c6d5ca0e3ecad0a7",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-support-2-1",
+      "kind": "support",
+      "text": "a moth",
+      "textHash": "cecb61d82e8fc424e623349f28e3ba78b42d95003c4084789ae31a656c6b18c2",
+      "relativePath": "support-2-1.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "acousticCheck": {
+        "peakDbfs": -14.147854129085115,
+        "rmsDbfs": -26.43315393663629,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:20.777Z",
+      "sha256": "e5c52ab765068751564fd18f4d5190e2c4aec59684d174927272da4f2bbd6e27",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-support-2-2",
+      "kind": "support",
+      "text": "is on the cloth",
+      "textHash": "03fc5b9d2740d14ced0dda951cd2ffd722bb98f95f9537c56ee5306c760a4e7d",
+      "relativePath": "support-2-2.mp3",
+      "durationSeconds": 1.656,
+      "bytes": 26540,
+      "acousticCheck": {
+        "peakDbfs": -9.377020427547421,
+        "rmsDbfs": -23.787450355043056,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:21.752Z",
+      "sha256": "e37c94a87d53a9e0386113d6b7ed7001c3e1e940aa49d7524ca492dde2843b6c",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "phonics-digraph-th-voiceless-support-2-3",
+      "kind": "support",
+      "text": "the cloth",
+      "textHash": "d0b641222436f89de63daf3675688386f7d81feef05cf792b30844b92938776f",
+      "relativePath": "support-2-3.mp3",
+      "durationSeconds": 1.488,
+      "bytes": 23852,
+      "acousticCheck": {
+        "peakDbfs": -10.577901570508272,
+        "rmsDbfs": -27.939891725042948,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-01T16:25:22.644Z",
+      "sha256": "3377e7665cb6ae77e1d053cffc1b4ff6bcce7cecd8958ea3a161f86f2569208f",
+      "sourceProfile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "origin": {
+        "type": "generated-local-qwen3-tts",
+        "endpoint": "http://127.0.0.1:8000/v1/audio/speech"
+      },
+      "listeningReview": "awaiting-human-listening"
+    }
+  ],
+  "lesson": "digraph-th-voiceless",
+  "preparedAt": "2026-11-01T16:25:22.646Z",
+  "scope": "整字、短句與支援詞示範；不包含孤立音素或逐音拼合錄音。",
+  "listeningReview": "awaiting-human-listening",
+  "excludedCandidates": []
+}

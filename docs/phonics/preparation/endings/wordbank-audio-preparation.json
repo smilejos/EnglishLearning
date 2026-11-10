@@ -1,0 +1,347 @@
+{
+  "preparedAt": "2026-11-02T13:25:05.742Z",
+  "mode": "offline-only",
+  "sourceSnapshotTarget": "english_learning",
+  "preservedWordAudio": 0,
+  "words": 33,
+  "examples": 8,
+  "manifests": [
+    {
+      "path": "docs/phonics/preparation/endings/wordbank-audio-import.json",
+      "entries": 41,
+      "profileHash": "09eeb3d17582e855"
+    }
+  ],
+  "copies": [
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/cats.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/d3bc195e-695d-58a1-b64b-7f019497ffba.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/d3bc195e-695d-58a1-b64b-7f019497ffba.mp3",
+      "sha256": "41cfd9c7902b5a88692ec9a1885336305b6073b46fc9c6b62dce3fa54f6d7ab3",
+      "bytes": 20012,
+      "assetGuid": "d3bc195e-695d-58a1-b64b-7f019497ffba"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/caps.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/4132a3c1-b6ca-59b2-926f-ecbd766157be.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/4132a3c1-b6ca-59b2-926f-ecbd766157be.mp3",
+      "sha256": "4053387416fd33b0f09b8d4b160dc98c588f9edc7f6e3a92c200398616110476",
+      "bytes": 18860,
+      "assetGuid": "4132a3c1-b6ca-59b2-926f-ecbd766157be"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/maps.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/edcebbe1-822c-58bf-ba1e-b4e0fc3bca92.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/edcebbe1-822c-58bf-ba1e-b4e0fc3bca92.mp3",
+      "sha256": "b9c823a9f56d9eac3d0a829c3eb004cf7dc23afce078c024a667e935d60f87e2",
+      "bytes": 23852,
+      "assetGuid": "edcebbe1-822c-58bf-ba1e-b4e0fc3bca92"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/cups.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/4f054135-21cd-5d40-9a38-07aecb5cd1e1.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/4f054135-21cd-5d40-9a38-07aecb5cd1e1.mp3",
+      "sha256": "f081177254330b0dcae5b4ce0f4d1562db2514b11c1eac9bd1e5e4d521765691",
+      "bytes": 21548,
+      "assetGuid": "4f054135-21cd-5d40-9a38-07aecb5cd1e1"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/pigs.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/21d6c5cb-be27-5e1e-a5b8-abfd019ff640.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/21d6c5cb-be27-5e1e-a5b8-abfd019ff640.mp3",
+      "sha256": "794b002a3cd78d51ec3b636a673dd92c5552b6476b4dc2aa28bc1ac04d6d36ef",
+      "bytes": 18860,
+      "assetGuid": "21d6c5cb-be27-5e1e-a5b8-abfd019ff640"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/dogs.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/cf780cb1-9c62-53a2-ad85-15188cf9b9aa.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/cf780cb1-9c62-53a2-ad85-15188cf9b9aa.mp3",
+      "sha256": "dfbd1b8967eeb760b9935ba042f2b0c5e6a9167e8b399676e3db067ce64efe5d",
+      "bytes": 20012,
+      "assetGuid": "cf780cb1-9c62-53a2-ad85-15188cf9b9aa"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/pens.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/92efb0a4-7c32-508e-9788-42c4b804e8e1.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/92efb0a4-7c32-508e-9788-42c4b804e8e1.mp3",
+      "sha256": "b8db11f973d6908e9ed6b9a7785cf968c3b28491baa7ff5af24fcc88fb403229",
+      "bytes": 21548,
+      "assetGuid": "92efb0a4-7c32-508e-9788-42c4b804e8e1"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/beds.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/61bde512-aa13-5066-9146-37e17a2baf6a.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/61bde512-aa13-5066-9146-37e17a2baf6a.mp3",
+      "sha256": "0b9177b033c514e73117c3211942a8a1b10be01fa377b8be408757e997cd08d6",
+      "bytes": 20012,
+      "assetGuid": "61bde512-aa13-5066-9146-37e17a2baf6a"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/buses.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/a378db33-c378-5144-b708-a773cbb2a3c6.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/a378db33-c378-5144-b708-a773cbb2a3c6.mp3",
+      "sha256": "c60722ea33b8c722cdc57fd824214a185ac63d758b97d86038107f458b59b70a",
+      "bytes": 30380,
+      "assetGuid": "a378db33-c378-5144-b708-a773cbb2a3c6"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/dishes.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/7ece530c-b63c-5799-a45b-12119d1ab881.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/7ece530c-b63c-5799-a45b-12119d1ab881.mp3",
+      "sha256": "8917d2eb51526e295a1f5f9e2c9488671b1d2f2998cdf75768d5762b32c5d969",
+      "bytes": 23852,
+      "assetGuid": "7ece530c-b63c-5799-a45b-12119d1ab881"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/wishes.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/874d4ca3-b8f6-5875-a318-601edc17d5ac.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/874d4ca3-b8f6-5875-a318-601edc17d5ac.mp3",
+      "sha256": "29694bf8d7172c6f2d691fa4022584f69df69dad08e5c111eaf2b19b6ff530a2",
+      "bytes": 26540,
+      "assetGuid": "874d4ca3-b8f6-5875-a318-601edc17d5ac"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/foxes.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/25caf86f-3c45-5f18-9850-0a68fa3206b4.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/25caf86f-3c45-5f18-9850-0a68fa3206b4.mp3",
+      "sha256": "40d48cd2879855c62d60a2c1c2dcc6f6ca4835c89088a101218d4487b23c1e8b",
+      "bytes": 21548,
+      "assetGuid": "25caf86f-3c45-5f18-9850-0a68fa3206b4"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/boxes.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/41e6a9a2-771c-591b-ba4a-d07303d4f7a7.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/41e6a9a2-771c-591b-ba4a-d07303d4f7a7.mp3",
+      "sha256": "8eea0e4592bc5d09a449d326f09188746b16a6d6c3d33ab6521ca65b49f3ee88",
+      "bytes": 31532,
+      "assetGuid": "41e6a9a2-771c-591b-ba4a-d07303d4f7a7"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/matches.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/2a45fb4d-8672-5312-add6-30f0ee0f5e3e.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/2a45fb4d-8672-5312-add6-30f0ee0f5e3e.mp3",
+      "sha256": "25d1b10b0be76f8768b1a30daf05442df08371e89c3f09de07da708c1630809d",
+      "bytes": 25388,
+      "assetGuid": "2a45fb4d-8672-5312-add6-30f0ee0f5e3e"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/catches.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/9f050fda-881b-5277-a90a-64091adb546a.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/9f050fda-881b-5277-a90a-64091adb546a.mp3",
+      "sha256": "bc0ab38e17fadfe79fc35ab4a16151174c20875e2f70de9ace572e7bad74ad29",
+      "bytes": 36908,
+      "assetGuid": "9f050fda-881b-5277-a90a-64091adb546a"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/benches.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/731326f1-21f9-56ad-8940-2b455c783f4b.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/731326f1-21f9-56ad-8940-2b455c783f4b.mp3",
+      "sha256": "ed9a2bec1ac600486e4e0d1ee3cf717ca9ac3520a693a10c0209768ece99ad84",
+      "bytes": 26540,
+      "assetGuid": "731326f1-21f9-56ad-8940-2b455c783f4b"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/tapped.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/f586d800-7652-5c21-a0c7-37e9fbebe10a.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/f586d800-7652-5c21-a0c7-37e9fbebe10a.mp3",
+      "sha256": "196b4d102675d161ef0717d111173130126c17afc9f2d3ff3525b587daf79743",
+      "bytes": 33068,
+      "assetGuid": "f586d800-7652-5c21-a0c7-37e9fbebe10a"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/packed.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/defcc14f-f54b-5a72-acc8-2ca95727bfea.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/defcc14f-f54b-5a72-acc8-2ca95727bfea.mp3",
+      "sha256": "687be4651d92f2006ffa05be9d86ea92f592884faaac123b42c0249e93c973e5",
+      "bytes": 22700,
+      "assetGuid": "defcc14f-f54b-5a72-acc8-2ca95727bfea"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/jumped.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/c1411cc8-359d-5be8-a6d8-c26492a0b1d8.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/c1411cc8-359d-5be8-a6d8-c26492a0b1d8.mp3",
+      "sha256": "8f12092560a6745d0457b86c2ee5073d0bc8702a52a74b347cbd1456aec1e1d6",
+      "bytes": 25388,
+      "assetGuid": "c1411cc8-359d-5be8-a6d8-c26492a0b1d8"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/filled.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/59aa5d10-042a-58b0-9d6f-3af8640c1389.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/59aa5d10-042a-58b0-9d6f-3af8640c1389.mp3",
+      "sha256": "b2accc8cd23133f00e307bb509b2b7cf1e3fe322d59d319b322a0528f3bb4be7",
+      "bytes": 26540,
+      "assetGuid": "59aa5d10-042a-58b0-9d6f-3af8640c1389"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/hummed.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/47949d54-26d6-57f3-9540-5c722e8ecf22.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/47949d54-26d6-57f3-9540-5c722e8ecf22.mp3",
+      "sha256": "1752cf2046bd04549edfa9260942df56286695e9717648e52d3d8f4e74d888bb",
+      "bytes": 26540,
+      "assetGuid": "47949d54-26d6-57f3-9540-5c722e8ecf22"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/played.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/e9177592-6c04-54ec-afad-8834ee6da5ea.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/e9177592-6c04-54ec-afad-8834ee6da5ea.mp3",
+      "sha256": "50814f2243f4656ea23c27de37117334f9872f6153d7d399483577c3a86ea1ad",
+      "bytes": 31532,
+      "assetGuid": "e9177592-6c04-54ec-afad-8834ee6da5ea"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/landed.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/41e977df-074b-5844-9bd3-51945662d24d.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/41e977df-074b-5844-9bd3-51945662d24d.mp3",
+      "sha256": "10eb58af1021ed5a741ab460b38f42f1fe9a469c1a4f47eedfcda2a3a1935e6f",
+      "bytes": 21548,
+      "assetGuid": "41e977df-074b-5844-9bd3-51945662d24d"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/rested.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958.mp3",
+      "sha256": "f009922cfa7a93f272ce2f2f6cd4b9f1249f833639d8e8de3628315a94846e20",
+      "bytes": 36908,
+      "assetGuid": "62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/needed.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/8760190a-1759-5401-bc68-12e1ca880ecb.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/8760190a-1759-5401-bc68-12e1ca880ecb.mp3",
+      "sha256": "23f4919011cc993e54c5efa1f37f98ab787cd97dbedb05ce1cfdc744c867f1f0",
+      "bytes": 29228,
+      "assetGuid": "8760190a-1759-5401-bc68-12e1ca880ecb"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/jumping.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/2a4923f1-dde9-5744-8b85-7bf95cdd8159.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/2a4923f1-dde9-5744-8b85-7bf95cdd8159.mp3",
+      "sha256": "f7278e6d4b4e0bac7a354cf8f1f52faafad37de664e19a308c5a5ce8d1bf7ab6",
+      "bytes": 33068,
+      "assetGuid": "2a4923f1-dde9-5744-8b85-7bf95cdd8159"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/resting.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/30c34a86-187e-576a-9a7c-359b9148ab74.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/30c34a86-187e-576a-9a7c-359b9148ab74.mp3",
+      "sha256": "276141130706c24df7d5918300082eafb69ad75ac0bb1330e08950a0ea6eee1b",
+      "bytes": 21548,
+      "assetGuid": "30c34a86-187e-576a-9a7c-359b9148ab74"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/running.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/b52f3202-1e56-5db0-8aa5-db51af5c0bd3.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/b52f3202-1e56-5db0-8aa5-db51af5c0bd3.mp3",
+      "sha256": "9822831ad3bc66cb1767a668b3ef2d1fcbce0bf4e49fdb75eeadbcfd2129f4dc",
+      "bytes": 29228,
+      "assetGuid": "b52f3202-1e56-5db0-8aa5-db51af5c0bd3"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/hopping.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/61c7bc16-7f49-59f1-b061-3a868da4bc38.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/61c7bc16-7f49-59f1-b061-3a868da4bc38.mp3",
+      "sha256": "76ffa6562b5c603e8b3afe580d9ffe066d6c09114730866185800f4a05d6de68",
+      "bytes": 20012,
+      "assetGuid": "61c7bc16-7f49-59f1-b061-3a868da4bc38"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/sitting.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/118b9802-54d4-5b55-ad1e-05451e488aca.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/118b9802-54d4-5b55-ad1e-05451e488aca.mp3",
+      "sha256": "d70c39b0fdb6ae306454b113895363120852311b937a7814f26b3f0c977690f2",
+      "bytes": 20012,
+      "assetGuid": "118b9802-54d4-5b55-ad1e-05451e488aca"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/making.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/3592596b-d6e0-55c7-8fea-76470b33126d.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/3592596b-d6e0-55c7-8fea-76470b33126d.mp3",
+      "sha256": "0932e8ca358fa5083e41de2faa49f7f6187097672c610377a0c9e2e4daeb3003",
+      "bytes": 27692,
+      "assetGuid": "3592596b-d6e0-55c7-8fea-76470b33126d"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/riding.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/7b0aaec2-d0f5-5741-97a3-93fc48ee2bcf.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/7b0aaec2-d0f5-5741-97a3-93fc48ee2bcf.mp3",
+      "sha256": "9f4ab8b78c6c26d590692be175d4d79d5838091528b60514f9f28e02ff05c9fc",
+      "bytes": 31532,
+      "assetGuid": "7b0aaec2-d0f5-5741-97a3-93fc48ee2bcf"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/playing.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/15eab2b7-f88b-5b8d-930c-9691975f7a36.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/15eab2b7-f88b-5b8d-930c-9691975f7a36.mp3",
+      "sha256": "854a499ca8229dbd10ce3615ab23e53afad7c2be8cdb488bfdde2b247a041cae",
+      "bytes": 20012,
+      "assetGuid": "15eab2b7-f88b-5b8d-930c-9691975f7a36"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/sentence-1.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/7215bb23-7b6e-562b-bbd0-18abb6ca252c.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/7215bb23-7b6e-562b-bbd0-18abb6ca252c.mp3",
+      "sha256": "f71f9c098548e396ad6d44155978a54aa991ce8cc6038519ef272417594e1749",
+      "bytes": 25388,
+      "assetGuid": "7215bb23-7b6e-562b-bbd0-18abb6ca252c"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-s/sentence-2.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/30c69a82-30b3-56cc-b167-ff9fc39a0065.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/30c69a82-30b3-56cc-b167-ff9fc39a0065.mp3",
+      "sha256": "b2760e40b3225da4ce010a40bf11840f36cf4d2012f3e4c8ac5b8ee494c9c8a7",
+      "bytes": 34220,
+      "assetGuid": "30c69a82-30b3-56cc-b167-ff9fc39a0065"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/sentence-1.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/910870a6-e6e9-5bb1-9f28-40f3b9b4b816.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/910870a6-e6e9-5bb1-9f28-40f3b9b4b816.mp3",
+      "sha256": "b03798c939567ad0beb2062c3e54709bd2743aad1501584788bf7218f7c65d2f",
+      "bytes": 29228,
+      "assetGuid": "910870a6-e6e9-5bb1-9f28-40f3b9b4b816"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-es/sentence-2.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/993bb49c-a902-5942-814a-fdb790d19369.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/993bb49c-a902-5942-814a-fdb790d19369.mp3",
+      "sha256": "f5a57e1194765cb2f919997342bed0555a7d193bec369bd056c1fa84c9248358",
+      "bytes": 57260,
+      "assetGuid": "993bb49c-a902-5942-814a-fdb790d19369"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/sentence-1.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/d9efee0c-a7f3-5b2d-b1b2-c4fd20bdddd8.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/d9efee0c-a7f3-5b2d-b1b2-c4fd20bdddd8.mp3",
+      "sha256": "0a53a4aff45fb0c48001bc7872c65ea3b07208cb3412bb02a27e8795dd00ff0d",
+      "bytes": 26540,
+      "assetGuid": "d9efee0c-a7f3-5b2d-b1b2-c4fd20bdddd8"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ed/sentence-2.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/6cb59932-7999-57a8-b20d-3a6793ae5d21.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/6cb59932-7999-57a8-b20d-3a6793ae5d21.mp3",
+      "sha256": "e74fb26f76d9a58c0e7c826719d1095a249669e7592bcef9fcd88e29229063f5",
+      "bytes": 43052,
+      "assetGuid": "6cb59932-7999-57a8-b20d-3a6793ae5d21"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/sentence-1.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/3c343cb3-6904-51ed-84a0-2b374c98a353.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/3c343cb3-6904-51ed-84a0-2b374c98a353.mp3",
+      "sha256": "e660651c969a3f5d99204f0c9c864cb153d8813cdd2a0a9e73949e8c269115e6",
+      "bytes": 27692,
+      "assetGuid": "3c343cb3-6904-51ed-84a0-2b374c98a353"
+    },
+    {
+      "sourcePath": "web-learner/public/phonics/endings-ing/sentence-2.mp3",
+      "targetPath": "data/phonics/endings/wordbank-audio/wordbank/09eeb3d17582e855/a19ce9b2-f16c-5f44-bd3f-f4be93d9d3ec.mp3",
+      "relativePath": "wordbank/09eeb3d17582e855/a19ce9b2-f16c-5f44-bd3f-f4be93d9d3ec.mp3",
+      "sha256": "328af9e91d86f811ac8faa62dcc14effbc305b63c1e10971c8dca6b3e335b347",
+      "bytes": 30380,
+      "assetGuid": "a19ce9b2-f16c-5f44-bd3f-f4be93d9d3ec"
+    }
+  ],
+  "listeningReview": "awaiting-human-listening",
+  "formalImport": "not-executed"
+}

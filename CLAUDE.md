@@ -36,6 +36,11 @@ npm run seed          # 匯入示範資料（fixtures，免 LLM 費用）
    呼叫 Gemini。新的長期示範內容要把翻譯與音檔補進 `fixtures/seed/` 再提交。
 3. 對正式庫（5432）的寫入操作（migrate、DELETE、UPDATE、restore）先向使用者確認。
 
+## 音訊存放與播放
+
+- 遵守 `AGENTS.md`「音訊存放與播放規範」及 `docs/audio-storage.md`：正式教材、字庫與學習預覽音檔使用共用 `audio` volume、資料庫 metadata 與 API URL；共用字庫資產沿用 GUID／生成設定命名，教材專用資產使用同規則，禁止從 `public/`、本地 glob 或靜態音檔 fallback 播放。Studio 製作審閱保留既有受保護暫存，固定教材版本時落至 audio volume。
+- 離線備料、seed fixtures、測試與搬遷封存可保留，但不作瀏覽器音源；先完成 volume／DB／API 驗證，再封存原檔。既有受保護媒體路由的身分及發布檢查不得取消。
+
 ## Git 流程
 
 - 每完成一個任務的最後異動，先問「這樣是否滿意？」。滿意 → 直接 `git commit`

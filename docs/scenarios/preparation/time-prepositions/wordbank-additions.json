@@ -1,0 +1,324 @@
+{
+  "entries": [
+    {
+      "id": 428,
+      "guid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+      "word": "in",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "1ca5a7d5-3508-534f-a0c9-1bf8b50ef0af",
+          "en": "Use in with years, months, seasons, and parts of a day. In two hours can mean two hours from now."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "346650f8-dcf2-516a-abce-ae8d25a30bec",
+          "en": "We play in the morning.",
+          "zh": "我們在早上玩。"
+        }
+      ]
+    },
+    {
+      "id": 606,
+      "guid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+      "word": "on",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "ce6d9296-7254-5a2e-8435-03da81a87c56",
+          "en": "Use on with days, dates, and a part of a specific day, such as on Monday morning."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "a421bfb1-b65e-56a0-a235-10f79231fffc",
+          "en": "We meet on Monday.",
+          "zh": "我們在星期一見面。"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "guid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+      "word": "at",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "8afc096b-b000-5e0a-b99a-3d4bb98ee098",
+          "en": "Use at with clock times, noon, midnight, and night."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7322ee8b-d764-58a1-85b4-8250856d23d0",
+          "en": "We eat at noon.",
+          "zh": "我們在中午吃飯。"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "guid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+      "word": "before",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "78221608-dc06-5587-9252-d02950fa2fb0",
+          "en": "Before a time or event means earlier than that time or event."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d5357d2a-a2c9-5381-af1a-4ec883993e7a",
+          "en": "Wash your hands before lunch.",
+          "zh": "午餐前洗手。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "guid": "e60fdb0c-729c-50d3-b155-608f3d2b5f2c",
+      "word": "after",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "2e0a5b3b-b363-5999-9270-99c3d6ab6625",
+          "en": "After a time or event means later than that time or event."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d7f15d3a-a501-58f0-ac1b-e0dd3c2aad72",
+          "en": "We play after lunch.",
+          "zh": "我們在午餐後玩。"
+        }
+      ]
+    },
+    {
+      "id": 333,
+      "guid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+      "word": "from",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "1d0f0886-4a90-519d-b611-21c1af76179d",
+          "en": "From marks the start of a time period, often paired with to for the end."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "c4b670b5-4775-5c2d-80df-b333f72c8105",
+          "en": "We work from nine to five.",
+          "zh": "我們從九點工作到五點。"
+        }
+      ]
+    },
+    {
+      "id": 897,
+      "guid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+      "word": "to",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "5749ea12-3491-5e09-8da9-15709fef24fb",
+          "en": "To marks the end of a time period in expressions such as from nine to five."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "af5db4a1-92e8-5c62-a9d0-72bf5a664bed",
+          "en": "The shop is open from nine to five.",
+          "zh": "這家店從九點營業到五點。"
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "guid": "6ff0b69d-d838-598a-a758-40b4091f6989",
+      "word": "by",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "15f96a9a-7c3b-545c-bd49-7b0bab4bfc7d",
+          "en": "By a time means no later than that time; something may finish earlier."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "88155bbf-b315-5129-976b-14cf7f0337ff",
+          "en": "Finish by five.",
+          "zh": "最晚五點完成。"
+        }
+      ]
+    },
+    {
+      "id": 931,
+      "guid": "e52f11ad-4c52-5039-80a5-07e47b7b998c",
+      "word": "until",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "0ca21a13-8d0f-5d36-8b24-23a5c9b8f318",
+          "en": "Until a time means an action or state continues up to that time."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7b114979-117e-525a-8f7e-8dfad29e4ab9",
+          "en": "Work until five.",
+          "zh": "持續工作到五點。"
+        }
+      ]
+    },
+    {
+      "id": 323,
+      "guid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+      "word": "for",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "b842220c-c3c4-582e-a0ea-e0afe1b08a69",
+          "en": "For with a length of time tells how long an action or state lasts."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7e2c6cbd-b2e1-57df-adee-12322db98911",
+          "en": "I read for two hours.",
+          "zh": "我讀書讀了兩小時。"
+        }
+      ]
+    },
+    {
+      "id": 779,
+      "guid": "5e3124e7-180d-5ff3-b83c-b1d95abaf63f",
+      "word": "since",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "ae1dda89-80f3-5e34-b3df-946266673270",
+          "en": "Since marks a starting time in the past for an action or state continuing to a later time."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "bf788844-dd5e-52ff-b1f2-bdcc790a19a7",
+          "en": "I have been here since Monday.",
+          "zh": "我從星期一起就一直在這裡。"
+        }
+      ]
+    },
+    {
+      "id": 249,
+      "guid": "00676060-6b5b-564b-9108-e58900a36b8b",
+      "word": "during",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "0c6bad0a-4208-5349-917f-1aa9818fbdd4",
+          "en": "During means at some time in a period or event; it does not tell how long an action lasts."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7e4cdcca-8c05-5ba3-b899-11a2ac026d79",
+          "en": "We talk during the meeting.",
+          "zh": "我們在會議期間交談。"
+        }
+      ]
+    },
+    {
+      "id": 1990,
+      "guid": "1716c62d-9d1d-510c-b7a7-779558ff5c4d",
+      "word": "within",
+      "parts_of_speech": [
+        "prep"
+      ],
+      "explains": [
+        {
+          "guid": "e762852f-c5b4-59e1-9e09-9e9873388915",
+          "en": "Within a length of time means before or at the end of that period, not later."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "e68c7d6c-e189-556f-aa3f-139ac3102ac3",
+          "en": "I will be back within two hours.",
+          "zh": "我會在兩小時內回來。"
+        }
+      ]
+    },
+    {
+      "id": 9253,
+      "guid": "8f3a9c1c-fc8e-5494-b126-31fe95b29df8",
+      "word": "autumn",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "秋天；夏季與冬季之間的季節。",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [],
+      "explains": [
+        {
+          "guid": "c1ab9a13-b51b-59be-bbf8-680119166bcf",
+          "en": "Autumn is the season between summer and winter."
+        },
+        {
+          "guid": "22297cff-33bb-5719-a80a-c19aa923c040",
+          "en": "In autumn, leaves on many trees turn yellow, orange, or red."
+        },
+        {
+          "guid": "6ae034e1-cbad-559f-a883-d3ce9cbca8c3",
+          "en": "We use in before autumn when we talk about this season."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "c34207da-ebae-5b43-9157-643280d2592a",
+          "en": "Leaves fall in autumn.",
+          "zh": "樹葉在秋天落下。"
+        },
+        {
+          "guid": "112a180c-baa3-569d-bebc-0ed5e1b452d9",
+          "en": "We walk in the park in autumn.",
+          "zh": "我們在秋天到公園散步。"
+        },
+        {
+          "guid": "289ed02f-74b1-5785-bd3b-574dce529a23",
+          "en": "Autumn comes after summer.",
+          "zh": "秋天在夏天之後到來。"
+        }
+      ]
+    }
+  ]
+}

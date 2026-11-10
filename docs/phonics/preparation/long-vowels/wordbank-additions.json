@@ -1,0 +1,171 @@
+{
+  "entries": [
+    {
+      "id": 9218,
+      "guid": "6fdadfd0-12b1-576d-9e70-8935d1b5e24c",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [],
+      "word": "dune",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "沙丘；風堆積沙子形成的小山丘。",
+      "explains": [
+        {
+          "guid": "c6a1c8c6-972f-5018-a5c5-16319004cec4",
+          "en": "A dune is a hill of sand formed by the wind. Dunes are often found in deserts or near the sea."
+        },
+        {
+          "guid": "0911ea0a-8280-5d4f-a6ca-c2856add5c60",
+          "en": "This noun names a mound of sand. The wind can slowly change its shape or move it across the ground."
+        },
+        {
+          "guid": "fbb737b5-e626-590e-856c-c68ba246fc7a",
+          "en": "A dune is a natural pile of sand with sloping sides. Plants may grow on it and help hold the sand in place."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "1e8fc5a1-79bb-58ff-b0de-8f2702affcda",
+          "en": "The dune is near the beach.",
+          "zh": "這座沙丘在海灘附近。"
+        },
+        {
+          "guid": "719f1c2f-1c74-563c-8d69-faddf062508f",
+          "en": "We walked up the sandy dune.",
+          "zh": "我們走上了沙丘。"
+        },
+        {
+          "guid": "1c9e2229-a58c-5dad-9e47-c9541ed287fc",
+          "en": "The wind changed the shape of the dune.",
+          "zh": "風吹改變了沙丘的形狀。"
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "guid": "6ba3cbba-87e7-5db5-bb58-d700f91434b8",
+      "word": "cake",
+      "examples": [
+        {
+          "guid": "799d7749-88f0-5cd4-aa6d-d7bad8621411",
+          "en": "Make a cake.",
+          "zh": "做一個蛋糕。"
+        }
+      ]
+    },
+    {
+      "id": 916,
+      "guid": "499c355f-2a99-5836-852e-54d7a1921032",
+      "word": "train",
+      "examples": [
+        {
+          "guid": "ccf150ef-4ada-51ad-b17f-542c25655667",
+          "en": "The train is late.",
+          "zh": "火車誤點了。"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "guid": "c69f4aba-7be8-5957-b3ff-86e74e5203f5",
+      "word": "bee",
+      "examples": [
+        {
+          "guid": "6daef7f4-5fa1-5e6e-93da-57131acc872e",
+          "en": "I see a bee.",
+          "zh": "我看見一隻蜜蜂。"
+        }
+      ]
+    },
+    {
+      "id": 749,
+      "guid": "518b8c6f-9a22-5f12-9ca9-30916bfcb4b0",
+      "word": "seed",
+      "examples": [
+        {
+          "guid": "8d45e235-f9a7-59c1-ba7c-c2e05ca959a3",
+          "en": "The seed is in the sun.",
+          "zh": "種子在陽光下。"
+        }
+      ]
+    },
+    {
+      "id": 6019,
+      "guid": "36283646-40d1-5649-8f8c-698da3fc3795",
+      "word": "bike",
+      "examples": [
+        {
+          "guid": "96edfb64-5bbe-58b2-a6eb-de450c63a2e2",
+          "en": "I like the bike.",
+          "zh": "我喜歡這輛腳踏車。"
+        }
+      ]
+    },
+    {
+      "id": 492,
+      "guid": "854c9aa7-e65a-5c1e-9909-d829063e0720",
+      "word": "light",
+      "examples": [
+        {
+          "guid": "57dc0fcd-3d2c-5298-8ddd-34017d6ba4cf",
+          "en": "The light is on at night.",
+          "zh": "燈在夜裡亮著。"
+        }
+      ]
+    },
+    {
+      "id": 1403,
+      "guid": "80e8b548-ce81-55e8-a352-3300edb5d1ae",
+      "word": "goat",
+      "examples": [
+        {
+          "guid": "91dc6218-e462-56f5-82a6-82915eb9f63d",
+          "en": "The goat is in the boat.",
+          "zh": "山羊在小船裡。"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "guid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+      "word": "boat",
+      "examples": [
+        {
+          "guid": "249fa24a-15b1-5291-90d8-43a25779c743",
+          "en": "The boat is slow.",
+          "zh": "這艘小船很慢。"
+        }
+      ]
+    },
+    {
+      "id": 3249,
+      "guid": "3bff5128-3b52-5b7c-bff8-7dccb8df2030",
+      "word": "cube",
+      "examples": [
+        {
+          "guid": "9c12231f-bd49-546a-9e4c-57cef5ece808",
+          "en": "The cube is red.",
+          "zh": "這個立方體是紅色的。"
+        }
+      ]
+    },
+    {
+      "id": 2336,
+      "guid": "d793dbc8-7389-513d-90f7-6c8ef201583a",
+      "word": "flute",
+      "examples": [
+        {
+          "guid": "d6dc85f0-f273-5400-86c3-c336fbfff16d",
+          "en": "Play a tune on the flute.",
+          "zh": "用長笛演奏一段曲調。"
+        }
+      ]
+    }
+  ]
+}

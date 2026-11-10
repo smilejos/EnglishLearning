@@ -1,11 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { sharedAudioOnly } from "../scripts/shared-audio-only.mjs";
 
 // 開發時把 api 路徑 proxy 到本機 api（正式為同源部署，毋需 proxy）。
 const apiTarget = process.env.VITE_API_PROXY ?? "http://localhost:8080";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [sharedAudioOnly(), react()],
   server: {
     host: true,
     port: 5174,
@@ -19,6 +20,7 @@ export default defineConfig({
       "/scenarios": apiTarget,
       "/lookups": apiTarget,
       "/audio": apiTarget,
+      "/audio-assets": apiTarget,
       "/me": apiTarget,
     },
   },

@@ -100,6 +100,9 @@ describe("正式情境 revision、權限與媒體", () => {
     expect(published).toMatchObject({ revision: content.revision, status: "published", targetCounts: { n: 15, adj: 0, v: 0 }, image: { url: mediaUrl("image"), width: 16, height: 9 } });
     expect(draft).toMatchObject({ revision: next.revision, status: "draft", targetCounts: { n: 13, adj: 1, v: 1 },
       image: { url: `/scenarios/${next.scenarioKey}/revisions/${next.revision}/media/image`, width: 20, height: 10 } });
+    expect(published.targetCounts).toEqual({ n: 15, adj: 0, v: 0 });
+    expect(draft.targetCounts).toEqual({ n: 13, adj: 1, v: 1 });
+    expect(published).not.toHaveProperty("learningMode");
     for (const summary of [published, draft]) expect(Object.values(summary.targetCounts).reduce((sum: number, count) => sum + Number(count), 0)).toBe(summary.targetCount);
     expect((await reader.inject(published.image.url)).rawPayload).toEqual(imageData);
     expect((await admin.inject(draft.image.url)).rawPayload).toEqual(nextImage);
@@ -219,4 +222,26 @@ it("DB寫入途中失敗會回滾revision/word links並清理本次媒體副本"
     expect((await pool.query("SELECT (SELECT count(*)::int FROM learning_scenarios) scenarios,(SELECT count(*)::int FROM scenario_revisions) revisions,(SELECT count(*)::int FROM scenario_word_links) links")).rows[0]).toEqual({ scenarios: 0, revisions: 0, links: 0 });
     await expect(readFile(marker)).rejects.toThrow();
   } finally { await pool.query("ALTER TABLE scenario_word_links DROP CONSTRAINT scenario_test_fail"); }
+});
+
+
+it("圖解模式由正式匯入 API 保留 prep／mode，清單計數及故事音訊可讀", async () => {
+  const guide = structuredClone(content);
+  guide.learningMode = "illustrated-guide";
+  const at = guide.story.sentences.flatMap(sentence => sentence.wordLinks).find(link => link.word === "at")!;
+  expect(at).toBeTruthy();
+  guide.targets = [{ ...guide.targets[0], word: "at", entryGuid: at.entryGuid, teachingPos: "prep", senseZh: "在指定時間點", list: "basic" }];
+  guide.targetCount = 1;
+  guide.story.sentences.forEach(sentence => sentence.wordLinks.forEach(link => { link.isTarget = link.entryGuid === at.entryGuid; }));
+  const oldMode = { ...guide, learningMode: undefined };
+  expect((await admin.inject({ method: "POST", url: "/scenarios/import", payload: { content: oldMode, media } })).statusCode).toBe(400);
+  await pool.query("UPDATE wordbank_entries SET parts_of_speech=ARRAY['n'] WHERE guid=$1", [at.entryGuid]);
+  expect((await admin.inject({ method: "POST", url: "/scenarios/import", payload: { content: guide, media } })).statusCode).toBe(400);
+  await pool.query("UPDATE wordbank_entries SET parts_of_speech=ARRAY['prep'] WHERE guid=$1", [at.entryGuid]);
+  expect((await admin.inject({ method: "POST", url: "/scenarios/import", payload: { content: guide, media } })).statusCode).toBe(200);
+  expect((await admin.inject(revisionUrl())).json()).toMatchObject({ learningMode: "illustrated-guide", targets: guide.targets });
+  expect((await publish()).statusCode).toBe(200);
+  expect((await reader.inject("/scenarios")).json().scenarios[0]).toMatchObject({ learningMode: "illustrated-guide", targetCounts: { n: 0, adj: 0, v: 0, prep: 1 } });
+  expect((await reader.inject(`/scenarios/${content.scenarioKey}`)).json()).toMatchObject({ learningMode: "illustrated-guide", storyAudio: { url: mediaUrl("audio") } });
+  expect((await reader.inject(mediaUrl("audio"))).rawPayload).toEqual(audioData);
 });

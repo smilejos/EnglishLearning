@@ -953,7 +953,8 @@ export default function App() {
   const reviewOpen = hash === "#/review";
   const practiceOpen = hash === "#/practice";
   const phonicsOpen = hash === "#/phonics";
-  const phonicsLessonId = /^#\/phonics\/(short-[aeiou])$/.exec(hash)?.[1];
+  const phonicsChapterId = /^#\/phonics\/((?:short|long)-vowels|blends|digraphs|r-controlled|endings)$/.exec(hash)?.[1];
+  const phonicsLessonId = /^#\/phonics\/((?:short|long)-[aeiou]|blends-(?:l|r|s|final|three)|digraph-(?:sh|ch|th-voiceless|th-voiced|wh|ph|tch)|r-(?:ar|or|ore-oar)|endings-(?:s|es|ed|ing))$/.exec(hash)?.[1];
   const phonicsLessonOpen = phonicsLessonId !== undefined;
   const articlesOpen = hash === "#/articles";
   const scenariosOpen = hash.split("?")[0] === "#/scenarios";
@@ -1004,8 +1005,8 @@ export default function App() {
         }} />
       ) : practiceOpen ? (
         <WordbankPractice />
-      ) : phonicsOpen || phonicsLessonOpen ? (
-        <PhonicsLearning key={phonicsLessonId ?? "overview"} lessonOpen={phonicsLessonOpen} lessonId={phonicsLessonId} />
+      ) : phonicsOpen || phonicsChapterId || phonicsLessonOpen ? (
+        <PhonicsLearning key={phonicsLessonId ?? phonicsChapterId ?? "overview"} lessonOpen={phonicsLessonOpen} lessonId={phonicsLessonId} chapterId={phonicsChapterId} />
       ) : scenariosOpen ? (
         <ScenarioList categoryId={scenarioCategory} />
       ) : scenarioRevision !== null ? (

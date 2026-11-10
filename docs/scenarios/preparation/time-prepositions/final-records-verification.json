@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "本次最終紀錄更新與真實音訊套件的隔離重跑；無生成／DB／瀏覽器操作",
+  "isolatedPrepareAndCheckPassed": true,
+  "secondPrepareByteIdentical": true,
+  "preserved": {
+    "source": true,
+    "storyAudio": true,
+    "allAssets": true,
+    "allContent": true,
+    "wordbankAudioMetadata": true,
+    "contentReview": true,
+    "importReviewMarkdown": true,
+    "vocabularyReview": true,
+    "batchHumanAndSceneProgress": true,
+    "verificationExtraFieldsAndReadbackProgress": true,
+    "generationListeningProgress": true
+  },
+  "originalWorkspace": {
+    "protectedFilesUnchanged": 8,
+    "scenarioOnlyGenerationPlanStoryAndWordbankUpdated": true,
+    "manifestAndAudioVerificationUntouched": true
+  },
+  "limitations": "全庫測試為主對話既有結果，本次不重跑；Faraday第二次read-back待執行"
+}

@@ -4,6 +4,12 @@
 
 更新日期：2026-10-12。現行套件、API 與後台生成契約接受 1–29 個目標詞，`targetCount` 與實際詞數一致。15 名詞＋5 形容詞＋最多 5 動詞是選詞目標，必須貼合底圖；動詞線索不足可以少選，不為配額塞詞。舊十五詞 revision 1 及其 hash 保留，不改寫成新教材。
 
+## 時間介系詞圖解的離線製作
+
+新圖解套件可設定 `learningMode: "illustrated-guide"`，目標 `teachingPos` 可使用真實字庫的 `prep`。此模式保留含文字教學圖，`assets.baseImage.containsVocabularyText` 必須為 `true`；一般情境仍要求 `false`。匯入 content 保留此 optional 模式，舊套件不補入預設值，維持既有 hash。前台圖解模式顯示全部互動標籤、查卡與解說旁白，停用看圖回想；不能以隱藏網頁標籤宣稱隱藏圖中答案。Studio 製作仍維持原流程。
+
+本批的兩套件、字庫增量、本機 Serena 錄音及 `_test` 預覽指令見 [時間介系詞備料紀錄](preparation/time-prepositions/review.md)。正式寫庫、發布與服務部署仍須獨立授權，不由製作教材或啟動隔離預覽推定。
+
 ## 01–09 revision 2 修訂流程
 
 本輪九場已完成正式 draft 匯入及本機桌機／手機驗收，復用九張原無文字底圖，生成 9 個新版全文英文旁白，僅補正式字庫缺少的 84 段目標詞錄音。每場 15 名詞、5 形容詞，動詞依序 4、2、4、3、4、4、5、4、3，合計 213 個目標詞次。最新版除 07 圖書館／09 科學實驗為 revision 3，其餘為 revision 2；兩篇 revision 3 僅修正座標，不重產圖片或錄音，原 revision 2 保留。所有新版均為 draft，原 revision 1 的 hash／狀態／發布指標保持，客廳 `living-room` 仍發布 1，其餘未發布。本輪未部署或發布新版，完整人工試聽及正式 learner 角色端到端驗收尚未完成；備份完整解析通過，未做實際還原演練。結果見 [九篇修訂驗收](preparation/basic-advance-01/revision-02-import-review.md)。

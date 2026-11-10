@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "comparedFileCount": 12,
+  "allHashesUnchanged": true,
+  "canonicalChildrenAppendedOnRerun": 0,
+  "newEntriesAppendedOnRerun": 0,
+  "files": {
+    "source/vocabulary-database.json": "158cc627f2a62a5fb0c81cd33f33c7d360665c0df4917c87d39b49bb82e2d6d6",
+    "scripts/scenarios/prepare-time-prepositions.mjs": "6a5f2a19fdb7414d4dc4e1e74e33893b158ed331664647cd264ffc59396d1006",
+    "docs/scenarios/preparation/time-prepositions/batch.json": "a63b266c7fc08d893a13f3a0725ee0cdb1bed96a1729475d4bf95905518d0abe",
+    "docs/scenarios/preparation/time-prepositions/wordbank-additions.json": "dde2c37c12483a411cb9abdfb40fda402acf47b1ce6ebab4ff57e973293de8ad",
+    "docs/scenarios/preparation/time-prepositions/verification.json": "12f75f0d9ba486f3ba1cde2cfef5643506ebf30a241c5f3b320ede59c26bd70b",
+    "docs/scenarios/preparation/time-prepositions/vocabulary-review.json": "9fe86e731a0c38e79bf5da12267a244b74ed5b1e91b2cb0bdfa0371d1b5a92a6",
+    "docs/scenarios/preparation/time-prepositions/stories.md": "cd1848f9ac39e5f0285acd215b93871097cfdcb151821a06b0ed62add06e83cc",
+    "docs/scenarios/preparation/time-prepositions/review.md": "7094c71c7baa32976ac3c6239dc7bdc4f5d8b6c77c679c51da22d4ef85ef5e96",
+    "docs/scenarios/packages/time-prepositions-basics-r1/scenario.json": "724cfbc95b18375eb99f55028cef1178cebd7cd47aaffb766feced7904360658",
+    "docs/scenarios/packages/time-prepositions-basics-r1/import-review.md": "65e05f92c45914d244a6150a5e34d508cf837775338430e4a03ec374e9ccdc72",
+    "docs/scenarios/packages/time-prepositions-extended-r1/scenario.json": "9d56e87d1b837d94d17a7344379d27bb1dbc25d1bbac17861db939189b97b3bc",
+    "docs/scenarios/packages/time-prepositions-extended-r1/import-review.md": "9f637bd26f03c2ab09ff5c191a424671f85abdae8329574356ab9c1cf4c5e4f9"
+  }
+}

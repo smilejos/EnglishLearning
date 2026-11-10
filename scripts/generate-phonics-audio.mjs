@@ -4,9 +4,10 @@ import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DEFAULT_PROFILE, generateBatch, validateMp3, withBatchLock } from './generate-wordbank-audio.mjs';
+import { phonicsPreparationDirectory } from './phonics-audio-paths.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const destination = path.join(root, 'web-learner/public/phonics/short-a');
+const destination = phonicsPreparationDirectory(root, 'short-a');
 const sourceRoot = path.join(root, 'data/wordbank-audio');
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
 // 保留第一版及十詞版既有素材，再補字族版缺件；不要因改教材刪除舊音。

@@ -1,0 +1,1506 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "time-prepositions-basics",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "時間介系詞圖解：IN／ON／AT",
+  "learningMode": "illustrated-guide",
+  "vocabularyMode": "user-specified",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic"
+    ]
+  },
+  "targetCount": 3,
+  "targets": [
+    {
+      "word": "in",
+      "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "年、月、季節與一般時段：in 2024、in April、in winter、in autumn，以及 in the morning／afternoon／evening。指定某一天的早上改用 on Monday morning；夜晚慣用 at night。本圖以類別建立概念，不只依時間長短判斷。",
+      "interaction": {
+        "label": {
+          "x": 0.17,
+          "y": 0.17
+        },
+        "object": {
+          "x": 0.17,
+          "y": 0.17
+        }
+      }
+    },
+    {
+      "word": "on",
+      "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "星期、特定日期或特定的一天：on Monday、on December 25、on my birthday。指定某天的時段也用 on，例如 on Monday morning；一般早上則用 in the morning。",
+      "interaction": {
+        "label": {
+          "x": 0.5,
+          "y": 0.17
+        },
+        "object": {
+          "x": 0.5,
+          "y": 0.17
+        }
+      }
+    },
+    {
+      "word": "at",
+      "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+      "list": "basic",
+      "teachingPos": "prep",
+      "senseZh": "明確時間點及固定用法：at 5:00 p.m.（下午五點）、at 7:00 a.m.（早上七點）、at noon（中午）、at midnight（午夜）、at night（夜晚）。一般早午晚用 in the morning／afternoon／evening。",
+      "interaction": {
+        "label": {
+          "x": 0.84,
+          "y": 0.17
+        },
+        "object": {
+          "x": 0.84,
+          "y": 0.17
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "Look at three words: in, on, and at. Use in with years, months, and seasons. We say in winter and in autumn. We also say in 2024 and in April. For parts of the day, say in the morning, in the afternoon, and in the evening. Now, on. Use on with days and dates. Say on Monday and on December 25. We also say on my birthday. For a morning on one day, say on Monday morning. Next, at. Use at with a time on the clock. Say at five in the afternoon and at seven in the morning. We also say at noon, at midnight, and at night. These words help us talk about time. Some time words do not need in, on, or at. Say this morning and next Monday. Also say last year and every day. Do not put in, on, or at before these four time phrases.",
+    "textZh": "看看這三個字：in、on 和 at。年、月和季節使用 in。我們說 in winter（在冬天）和 in autumn（在秋天）。我們也說 in 2024（在二〇二四年）和 in April（在四月）。一天中的時段可以說 in the morning（在早上）、in the afternoon（在下午）和 in the evening（在傍晚或晚上）。接著是 on。星期和日期使用 on。說 on Monday（在星期一）和 on December 25（在十二月二十五日）。我們也說 on my birthday（在我的生日當天）。指定某一天的早上時，可以說 on Monday morning（在星期一早上）。接著是 at。時鐘上的時間點使用 at。說 at five in the afternoon（在下午五點）和 at seven in the morning（在早上七點），對應圖上的 at 5:00 p.m. 和 at 7:00 a.m.。我們也說 at noon（在中午）、at midnight（在午夜）和 at night（在夜晚）。這些字幫助我們表達時間。有些時間表達不用加 in、on 或 at。說 this morning（今天早上）和 next Monday（下星期一）。也可以說 last year（去年）和 every day（每天）。這四種時間片語前面不加 in、on 或 at。",
+    "sentences": [
+      {
+        "id": "s01",
+        "en": "Look at three words: in, on, and at.",
+        "zh": "看看這三個字：in、on 和 at。",
+        "wordLinks": [
+          {
+            "surface": "Look",
+            "word": "look",
+            "entryGuid": "1a55d2ad-7ba9-5f58-bbd2-fcd9d49d75b4",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "surface": "three",
+            "word": "three",
+            "entryGuid": "0ef23e6a-2aeb-521e-bbd5-e112ff09e0f1",
+            "isTarget": false,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "words",
+            "word": "word",
+            "entryGuid": "5ddbc179-ce06-5d38-a696-9154669775a2",
+            "isTarget": false,
+            "start": 14,
+            "end": 19
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 33,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "en": "Use in with years, months, and seasons.",
+        "zh": "年、月和季節使用 in。",
+        "wordLinks": [
+          {
+            "surface": "Use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "years",
+            "word": "year",
+            "entryGuid": "f442c26d-22d1-552d-a0ba-6e78bebf5323",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "months",
+            "word": "month",
+            "entryGuid": "96fd4683-d702-5949-9d65-602fd898e2a3",
+            "isTarget": false,
+            "start": 19,
+            "end": 25
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "seasons",
+            "word": "season",
+            "entryGuid": "019517ab-8704-53e0-aeab-06e4118de66b",
+            "isTarget": false,
+            "start": 31,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "en": "We say in winter and in autumn.",
+        "zh": "我們說 in winter（在冬天）和 in autumn（在秋天）。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "surface": "winter",
+            "word": "winter",
+            "entryGuid": "b43eb071-11ee-55cd-bbab-8def33757d5d",
+            "isTarget": false,
+            "start": 10,
+            "end": 16
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "autumn",
+            "word": "autumn",
+            "entryGuid": "8f3a9c1c-fc8e-5494-b126-31fe95b29df8",
+            "isTarget": false,
+            "start": 24,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "id": "s04",
+        "en": "We also say in 2024 and in April.",
+        "zh": "我們也說 in 2024（在二〇二四年）和 in April（在四月）。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 20,
+            "end": 23
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 24,
+            "end": 26
+          },
+          {
+            "surface": "April",
+            "word": "April",
+            "entryGuid": "e3326cd1-b46b-5ce8-9799-4f936b039257",
+            "isTarget": false,
+            "start": 27,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "id": "s05",
+        "en": "For parts of the day, say in the morning, in the afternoon, and in the evening.",
+        "zh": "一天中的時段可以說 in the morning（在早上）、in the afternoon（在下午）和 in the evening（在傍晚或晚上）。",
+        "wordLinks": [
+          {
+            "surface": "For",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "parts",
+            "word": "part",
+            "entryGuid": "9dc5e919-fec6-555e-b7a8-f04653c9c62b",
+            "isTarget": false,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "of",
+            "word": "of",
+            "entryGuid": "3e0475b2-f44f-5b77-b24f-44308c2b9239",
+            "isTarget": false,
+            "start": 10,
+            "end": 12
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "day",
+            "word": "day",
+            "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 26,
+            "end": 28
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 33,
+            "end": 40
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 42,
+            "end": 44
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          },
+          {
+            "surface": "afternoon",
+            "word": "afternoon",
+            "entryGuid": "a5cbff0b-6a99-57e0-a364-070342039e0f",
+            "isTarget": false,
+            "start": 49,
+            "end": 58
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 60,
+            "end": 63
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 64,
+            "end": 66
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 67,
+            "end": 70
+          },
+          {
+            "surface": "evening",
+            "word": "evening",
+            "entryGuid": "2114663e-69d6-511e-9713-54c6e10d5347",
+            "isTarget": false,
+            "start": 71,
+            "end": 78
+          }
+        ]
+      },
+      {
+        "id": "s06",
+        "en": "Now, on.",
+        "zh": "接著是 on。",
+        "wordLinks": [
+          {
+            "surface": "Now",
+            "word": "now",
+            "entryGuid": "7a20bd51-d7f6-50f5-9806-b843a7af14de",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 5,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "id": "s07",
+        "en": "Use on with days and dates.",
+        "zh": "星期和日期使用 on。",
+        "wordLinks": [
+          {
+            "surface": "Use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "days",
+            "word": "day",
+            "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+            "isTarget": false,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "dates",
+            "word": "date",
+            "entryGuid": "6608db8b-e6af-5cd9-a487-17fda5be04c2",
+            "isTarget": false,
+            "start": 21,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "id": "s08",
+        "en": "Say on Monday and on December 25.",
+        "zh": "說 on Monday（在星期一）和 on December 25（在十二月二十五日）。",
+        "wordLinks": [
+          {
+            "surface": "Say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "surface": "Monday",
+            "word": "Monday",
+            "entryGuid": "256f851e-ad22-53bd-ad0b-626c6147668b",
+            "isTarget": false,
+            "start": 7,
+            "end": 13
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 14,
+            "end": 17
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 18,
+            "end": 20
+          },
+          {
+            "surface": "December",
+            "word": "December",
+            "entryGuid": "816b6e08-4f83-5f08-af02-78cdd0f1c587",
+            "isTarget": false,
+            "start": 21,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "id": "s09",
+        "en": "We also say on my birthday.",
+        "zh": "我們也說 on my birthday（在我的生日當天）。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "birthday",
+            "word": "birthday",
+            "entryGuid": "f8e41e5a-dca5-5cc9-9f94-7349b11dc2cd",
+            "isTarget": false,
+            "start": 18,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "id": "s10",
+        "en": "For a morning on one day, say on Monday morning.",
+        "zh": "指定某一天的早上時，可以說 on Monday morning（在星期一早上）。",
+        "wordLinks": [
+          {
+            "surface": "For",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 6,
+            "end": 13
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 14,
+            "end": 16
+          },
+          {
+            "surface": "one",
+            "word": "one",
+            "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "day",
+            "word": "day",
+            "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 26,
+            "end": 29
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 30,
+            "end": 32
+          },
+          {
+            "surface": "Monday",
+            "word": "Monday",
+            "entryGuid": "256f851e-ad22-53bd-ad0b-626c6147668b",
+            "isTarget": false,
+            "start": 33,
+            "end": 39
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 40,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s11",
+        "en": "Next, at.",
+        "zh": "接著是 at。",
+        "wordLinks": [
+          {
+            "surface": "Next",
+            "word": "next",
+            "entryGuid": "eb74bac2-c475-5f32-b1f3-83f286f561fb",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 6,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "id": "s12",
+        "en": "Use at with a time on the clock.",
+        "zh": "時鐘上的時間點使用 at。",
+        "wordLinks": [
+          {
+            "surface": "Use",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 12,
+            "end": 13
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 19,
+            "end": 21
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "surface": "clock",
+            "word": "clock",
+            "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+            "isTarget": false,
+            "start": 26,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "id": "s13",
+        "en": "Say at five in the afternoon and at seven in the morning.",
+        "zh": "說 at five in the afternoon（在下午五點）和 at seven in the morning（在早上七點），對應圖上的 at 5:00 p.m. 和 at 7:00 a.m.。",
+        "wordLinks": [
+          {
+            "surface": "Say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "surface": "five",
+            "word": "five",
+            "entryGuid": "45115dd9-2021-5ee0-9431-a51cfbc9ae14",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 15,
+            "end": 18
+          },
+          {
+            "surface": "afternoon",
+            "word": "afternoon",
+            "entryGuid": "a5cbff0b-6a99-57e0-a364-070342039e0f",
+            "isTarget": false,
+            "start": 19,
+            "end": 28
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "seven",
+            "word": "seven",
+            "entryGuid": "b7cb2e04-b252-50cc-bd32-015ceaf2a39a",
+            "isTarget": false,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 42,
+            "end": 44
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 49,
+            "end": 56
+          }
+        ]
+      },
+      {
+        "id": "s14",
+        "en": "We also say at noon, at midnight, and at night.",
+        "zh": "我們也說 at noon（在中午）、at midnight（在午夜）和 at night（在夜晚）。",
+        "wordLinks": [
+          {
+            "surface": "We",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 3,
+            "end": 7
+          },
+          {
+            "surface": "say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 8,
+            "end": 11
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "noon",
+            "word": "noon",
+            "entryGuid": "8ab80b8c-ff32-5e53-904a-4f077e815d87",
+            "isTarget": false,
+            "start": 15,
+            "end": 19
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 21,
+            "end": 23
+          },
+          {
+            "surface": "midnight",
+            "word": "midnight",
+            "entryGuid": "6580ba52-8651-5448-a96f-32740e7e36fb",
+            "isTarget": false,
+            "start": 24,
+            "end": 32
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 34,
+            "end": 37
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 38,
+            "end": 40
+          },
+          {
+            "surface": "night",
+            "word": "night",
+            "entryGuid": "45c1cb02-1c04-5504-a261-defa2e0ecb4a",
+            "isTarget": false,
+            "start": 41,
+            "end": 46
+          }
+        ]
+      },
+      {
+        "id": "s15",
+        "en": "These words help us talk about time.",
+        "zh": "這些字幫助我們表達時間。",
+        "wordLinks": [
+          {
+            "surface": "These",
+            "word": "this",
+            "entryGuid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+            "isTarget": false,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "surface": "words",
+            "word": "word",
+            "entryGuid": "5ddbc179-ce06-5d38-a696-9154669775a2",
+            "isTarget": false,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "surface": "help",
+            "word": "help",
+            "entryGuid": "7c93581c-5f8d-51e9-98b0-d12a78e7e4ea",
+            "isTarget": false,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "us",
+            "word": "we",
+            "entryGuid": "481fd796-4f04-5036-a77c-4583ac620d55",
+            "isTarget": false,
+            "start": 17,
+            "end": 19
+          },
+          {
+            "surface": "talk",
+            "word": "talk",
+            "entryGuid": "1361dba3-7b46-5cee-af47-99476ec3c803",
+            "isTarget": false,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "about",
+            "word": "about",
+            "entryGuid": "7923a36d-b3a3-5dda-bd0a-e311c58bc2bf",
+            "isTarget": false,
+            "start": 25,
+            "end": 30
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 31,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "id": "s16",
+        "en": "Some time words do not need in, on, or at.",
+        "zh": "有些時間表達不用加 in、on 或 at。",
+        "wordLinks": [
+          {
+            "surface": "Some",
+            "word": "some",
+            "entryGuid": "46494184-e96d-5eb9-b4d5-3ec9fd8690de",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 5,
+            "end": 9
+          },
+          {
+            "surface": "words",
+            "word": "word",
+            "entryGuid": "5ddbc179-ce06-5d38-a696-9154669775a2",
+            "isTarget": false,
+            "start": 10,
+            "end": 15
+          },
+          {
+            "surface": "do",
+            "word": "do",
+            "entryGuid": "ffbec297-eb82-5c71-983e-2644831c0165",
+            "isTarget": false,
+            "start": 16,
+            "end": 18
+          },
+          {
+            "surface": "not",
+            "word": "not",
+            "entryGuid": "fbdf28e7-69e4-5e0f-b051-b6e9e842ea63",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "need",
+            "word": "need",
+            "entryGuid": "8940ab92-17e5-5271-bc92-7ed5db345c6d",
+            "isTarget": false,
+            "start": 23,
+            "end": 27
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 28,
+            "end": 30
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 32,
+            "end": 34
+          },
+          {
+            "surface": "or",
+            "word": "or",
+            "entryGuid": "36fc537e-61ac-5cf7-97bc-ab53bb8712fa",
+            "isTarget": false,
+            "start": 36,
+            "end": 38
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 39,
+            "end": 41
+          }
+        ]
+      },
+      {
+        "id": "s17",
+        "en": "Say this morning and next Monday.",
+        "zh": "說 this morning（今天早上）和 next Monday（下星期一）。",
+        "wordLinks": [
+          {
+            "surface": "Say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "this",
+            "word": "this",
+            "entryGuid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+            "isTarget": false,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "morning",
+            "word": "morning",
+            "entryGuid": "b514f665-2ae6-5aeb-93bd-3c72a0f98a8f",
+            "isTarget": false,
+            "start": 9,
+            "end": 16
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 17,
+            "end": 20
+          },
+          {
+            "surface": "next",
+            "word": "next",
+            "entryGuid": "eb74bac2-c475-5f32-b1f3-83f286f561fb",
+            "isTarget": false,
+            "start": 21,
+            "end": 25
+          },
+          {
+            "surface": "Monday",
+            "word": "Monday",
+            "entryGuid": "256f851e-ad22-53bd-ad0b-626c6147668b",
+            "isTarget": false,
+            "start": 26,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "id": "s18",
+        "en": "Also say last year and every day.",
+        "zh": "也可以說 last year（去年）和 every day（每天）。",
+        "wordLinks": [
+          {
+            "surface": "Also",
+            "word": "also",
+            "entryGuid": "d150d60c-25c2-547e-bcf2-d0d1802d7b2d",
+            "isTarget": false,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "surface": "say",
+            "word": "say",
+            "entryGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+            "isTarget": false,
+            "start": 5,
+            "end": 8
+          },
+          {
+            "surface": "last",
+            "word": "last",
+            "entryGuid": "44536957-cef4-5ebc-94cd-9f9eb315ee51",
+            "isTarget": false,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "year",
+            "word": "year",
+            "entryGuid": "f442c26d-22d1-552d-a0ba-6e78bebf5323",
+            "isTarget": false,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "every",
+            "word": "every",
+            "entryGuid": "2effa3bb-fe72-5f68-9503-9d9011a0a5e9",
+            "isTarget": false,
+            "start": 23,
+            "end": 28
+          },
+          {
+            "surface": "day",
+            "word": "day",
+            "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "id": "s19",
+        "en": "Do not put in, on, or at before these four time phrases.",
+        "zh": "這四種時間片語前面不加 in、on 或 at。",
+        "wordLinks": [
+          {
+            "surface": "Do",
+            "word": "do",
+            "entryGuid": "ffbec297-eb82-5c71-983e-2644831c0165",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "not",
+            "word": "not",
+            "entryGuid": "fbdf28e7-69e4-5e0f-b051-b6e9e842ea63",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "put",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 7,
+            "end": 10
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": true,
+            "start": 11,
+            "end": 13
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": true,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "or",
+            "word": "or",
+            "entryGuid": "36fc537e-61ac-5cf7-97bc-ab53bb8712fa",
+            "isTarget": false,
+            "start": 19,
+            "end": 21
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": true,
+            "start": 22,
+            "end": 24
+          },
+          {
+            "surface": "before",
+            "word": "before",
+            "entryGuid": "7310db5f-33dc-5a0c-b8e1-fc78aa5f2f83",
+            "isTarget": false,
+            "start": 25,
+            "end": 31
+          },
+          {
+            "surface": "these",
+            "word": "this",
+            "entryGuid": "d7c08404-f6fe-52cc-9e34-c3a7f3cd6a3d",
+            "isTarget": false,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "four",
+            "word": "four",
+            "entryGuid": "cfef1639-40ed-58e1-b992-d7173cf09dbb",
+            "isTarget": false,
+            "start": 38,
+            "end": 42
+          },
+          {
+            "surface": "time",
+            "word": "time",
+            "entryGuid": "905efb3b-a2c7-50d2-8620-51fb0b2c57b1",
+            "isTarget": false,
+            "start": 43,
+            "end": 47
+          },
+          {
+            "surface": "phrases",
+            "word": "phrase",
+            "entryGuid": "e88870de-d3dc-5389-9926-18e9f1064d2f",
+            "isTarget": false,
+            "start": 48,
+            "end": 55
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/time-prepositions/01-in-on-at-landscape-v2.png",
+      "sha256": "28a3f4394b90ec12835fe633954539517b6f4814b1a68b7f1b58f7695449d12b"
+    },
+    "baseImage": {
+      "path": "output/imagegen/time-prepositions/01-in-on-at-landscape-v2.png",
+      "sha256": "28a3f4394b90ec12835fe633954539517b6f4814b1a68b7f1b58f7695449d12b",
+      "reviewed": true,
+      "containsVocabularyText": true
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/time-prepositions-basics-r1/scenarios/time-prepositions-basics/r1/09eeb3d17582e855/story-1da3e6ad6a753a6b.mp3",
+      "sha256": "9f94e4d1f7d8bfcc8721873f0fa94180b3ed3af966c9e8bfafb5e9703e3735f3",
+      "language": "en",
+      "textSha256": "1da3e6ad6a753a6b3e187534d4c75f600770b0522aeb2b9d5b2709e95fab959d",
+      "durationSeconds": 89.976,
+      "bytes": 1439660,
+      "profile": {
+        "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "baseImage": {
+      "status": "reuse-user-approved",
+      "width": 1672,
+      "height": 941,
+      "generationRequired": false
+    },
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "language": "en",
+      "textSha256": "1da3e6ad6a753a6b3e187534d4c75f600770b0522aeb2b9d5b2709e95fab959d",
+      "voice": "Serena",
+      "method": "local Qwen3-TTS",
+      "generated": true,
+      "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+      "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation."
+    },
+    "wordbankAudio": {
+      "reuseExisting": true,
+      "status": "offline-complete-awaiting-listening-review",
+      "entryGuids": [
+        "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+        "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+        "2e2ac029-b469-53b8-a11b-2f1c63f3c295"
+      ],
+      "noteZh": "本機離線詞音已齊，完整解碼／近靜音初篩通過；人工發音聽審待完成。正式音訊 metadata 尚未查核或寫入；_test 已匯入不代表正式入庫。",
+      "manifest": {
+        "path": "data/scenario-wordbank-audio/time-prepositions/manifest.json",
+        "sha256": "759b0b53a8959ef09bff9d15189f29c73af3c70bbe3c0f1a74ac23e8f38b4fbb"
+      },
+      "audioVerification": {
+        "path": "docs/scenarios/preparation/time-prepositions/audio-verification.json",
+        "sha256": "95a2a54940c153eaef1a58ba90577687ba13d09d37ce1ce0d9163efe2dd8a4e2"
+      },
+      "counts": {
+        "sceneClips": 27,
+        "reusedAtGeneration": 21,
+        "newGenerated": 6,
+        "sharedInClips": 9
+      },
+      "batchCounts": {
+        "uniqueClips": 123,
+        "oldReused": 90,
+        "newGenerated": 33,
+        "includingStoryClips": 125
+      }
+    }
+  },
+  "contentReview": {
+    "status": "offline-prepared-awaiting-ui-and-audio-review",
+    "explicitGrammarMappings": {
+      "years": "year",
+      "months": "month",
+      "seasons": "season",
+      "parts": "part",
+      "days": "day",
+      "dates": "date",
+      "words": "word",
+      "means": "mean",
+      "shows": "show",
+      "tells": "tell",
+      "hours": "hour",
+      "been": "be",
+      "started": "start",
+      "continues": "continue",
+      "working": "work",
+      "happens": "happen",
+      "lasts": "last",
+      "phrases": "phrase",
+      "these": "this",
+      "us": "we",
+      "earlier": "early",
+      "later": "late"
+    },
+    "noteZh": "圖解底圖含答案，不提供回想；每詞一入口。索引為句內 UTF-16，不是音訊時間。",
+    "vocabularyNoteZh": "旁白保留圖上 in autumn；支援詞 autumn 以完整離線增量補入 canonical，分級三欄 null。日期保留 December 25；數字不是既有 tokenizer 的字母 token。"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-01T16:21:51.386Z",
+  "readOnly": true,
+  "candidates": {
+    "paragraphs": [],
+    "words": [
+      {
+        "text": "spray",
+        "path": "words/10/en.m4a"
+      },
+      {
+        "text": "shore",
+        "path": "words/14/en.m4a"
+      }
+    ],
+    "examples": []
+  },
+  "scope": "精確文字比對，不裁切文章拼出新錄音；未有可靠生成設定與有效檔案者不冒稱可重用。"
+}

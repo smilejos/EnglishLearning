@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "comparison": "製作子任務開始前快照與最終 canonical 逐欄比對",
+  "changedExistingWords": [
+    "after",
+    "at",
+    "before",
+    "by",
+    "during",
+    "for",
+    "from",
+    "in",
+    "on",
+    "since",
+    "to",
+    "until",
+    "within"
+  ],
+  "newEntry": {
+    "word": "autumn",
+    "id": 9253,
+    "guid": "8f3a9c1c-fc8e-5494-b126-31fe95b29df8",
+    "level": {
+      "cefr": null,
+      "tw_7000": null,
+      "list": null
+    }
+  },
+  "newEntryCount": 1,
+  "explanationsAdded": 16,
+  "examplesAdded": 16,
+  "originalFieldsAndChildrenPreserved": true,
+  "unrelatedEntriesPreserved": 9230,
+  "metadataUnchanged": true,
+  "onlyDerivedStatisticsUpdated": true,
+  "totalsBefore": {
+    "entries": 9243,
+    "examples": 33145,
+    "explains": 27768
+  },
+  "totalsAfter": {
+    "entries": 9244,
+    "examples": 33161,
+    "explains": 27784
+  },
+  "productionDatabase": "未查核／未寫入"
+}

@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "endings-s",
+      "jobs": [
+        {
+          "key": "cats",
+          "kind": "word",
+          "text": "cats"
+        },
+        {
+          "key": "caps",
+          "kind": "word",
+          "text": "caps"
+        },
+        {
+          "key": "maps",
+          "kind": "word",
+          "text": "maps"
+        },
+        {
+          "key": "cups",
+          "kind": "word",
+          "text": "cups"
+        },
+        {
+          "key": "pigs",
+          "kind": "word",
+          "text": "pigs"
+        },
+        {
+          "key": "dogs",
+          "kind": "word",
+          "text": "dogs"
+        },
+        {
+          "key": "pens",
+          "kind": "word",
+          "text": "pens"
+        },
+        {
+          "key": "beds",
+          "kind": "word",
+          "text": "beds"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The cats nap."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the cats nap"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The pigs sit on the beds."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "the pigs sit on the beds"
+        }
+      ]
+    },
+    {
+      "id": "endings-es",
+      "jobs": [
+        {
+          "key": "buses",
+          "kind": "word",
+          "text": "buses"
+        },
+        {
+          "key": "dishes",
+          "kind": "word",
+          "text": "dishes"
+        },
+        {
+          "key": "wishes",
+          "kind": "word",
+          "text": "wishes"
+        },
+        {
+          "key": "foxes",
+          "kind": "word",
+          "text": "foxes"
+        },
+        {
+          "key": "boxes",
+          "kind": "word",
+          "text": "boxes"
+        },
+        {
+          "key": "matches",
+          "kind": "word",
+          "text": "matches"
+        },
+        {
+          "key": "catches",
+          "kind": "word",
+          "text": "catches"
+        },
+        {
+          "key": "benches",
+          "kind": "word",
+          "text": "benches"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The foxes run."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the foxes run"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The dishes are in the boxes."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "the dishes are in the boxes"
+        }
+      ]
+    },
+    {
+      "id": "endings-ed",
+      "jobs": [
+        {
+          "key": "tapped",
+          "kind": "word",
+          "text": "tapped"
+        },
+        {
+          "key": "packed",
+          "kind": "word",
+          "text": "packed"
+        },
+        {
+          "key": "jumped",
+          "kind": "word",
+          "text": "jumped"
+        },
+        {
+          "key": "filled",
+          "kind": "word",
+          "text": "filled"
+        },
+        {
+          "key": "hummed",
+          "kind": "word",
+          "text": "hummed"
+        },
+        {
+          "key": "played",
+          "kind": "word",
+          "text": "played"
+        },
+        {
+          "key": "landed",
+          "kind": "word",
+          "text": "landed"
+        },
+        {
+          "key": "rested",
+          "kind": "word",
+          "text": "rested"
+        },
+        {
+          "key": "needed",
+          "kind": "word",
+          "text": "needed"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The dog jumped."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the dog jumped"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "I rested and played."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "I rested and played"
+        }
+      ]
+    },
+    {
+      "id": "endings-ing",
+      "jobs": [
+        {
+          "key": "jumping",
+          "kind": "word",
+          "text": "jumping"
+        },
+        {
+          "key": "resting",
+          "kind": "word",
+          "text": "resting"
+        },
+        {
+          "key": "running",
+          "kind": "word",
+          "text": "running"
+        },
+        {
+          "key": "hopping",
+          "kind": "word",
+          "text": "hopping"
+        },
+        {
+          "key": "sitting",
+          "kind": "word",
+          "text": "sitting"
+        },
+        {
+          "key": "making",
+          "kind": "word",
+          "text": "making"
+        },
+        {
+          "key": "riding",
+          "kind": "word",
+          "text": "riding"
+        },
+        {
+          "key": "playing",
+          "kind": "word",
+          "text": "playing"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The cat is running."
+        },
+        {
+          "key": "support-1-1",
+          "kind": "support",
+          "text": "the cat is running"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "I am making a map."
+        },
+        {
+          "key": "support-2-1",
+          "kind": "support",
+          "text": "I am making a map"
+        }
+      ]
+    }
+  ]
+}

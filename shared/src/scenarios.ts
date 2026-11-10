@@ -21,7 +21,7 @@ export function validateScenarioParagraphBreaks(story: { sentences: Array<{ id: 
 const Point = z.object({ x: z.number().finite().min(0).max(1), y: z.number().finite().min(0).max(1) }).strict();
 export const ScenarioTargetSchema = z.object({
   word: Text, entryGuid: z.string().uuid(), list: z.enum(["basic", "advance", "expert"]).nullable(),
-  teachingPos: z.enum(["n", "v", "adj"]), senseZh: Text,
+  teachingPos: z.enum(["n", "v", "adj", "prep"]), senseZh: Text,
   interaction: z.object({ label: Point, object: Point }).strict(),
 }).strict();
 const WordLink = z.object({ surface: Text, word: Text, entryGuid: z.string().uuid(), isTarget: z.boolean(),
@@ -29,6 +29,7 @@ const WordLink = z.object({ surface: Text, word: Text, entryGuid: z.string().uui
 export const ScenarioContentSchema = z.object({
   schemaVersion: z.literal(1), scenarioKey: ScenarioKeySchema, revision: z.number().int().positive(), titleZh: Text,
   vocabularyMode: z.literal("user-specified").optional(),
+  learningMode: z.literal("illustrated-guide").optional(),
   vocabularyFilter: z.object({ system: z.literal("list"), levels: z.array(z.enum(["basic", "advance", "expert"])).max(3) }).strict(),
   targetCount: z.number().int().min(1).max(SCENARIO_MAX_TARGETS), targets: z.array(ScenarioTargetSchema).min(1).max(SCENARIO_MAX_TARGETS),
   story: z.object({ language: z.literal("en"), translationLanguage: z.literal("zh-Hant"), textEn: Text, textZh: Text,
@@ -38,6 +39,7 @@ export const ScenarioContentSchema = z.object({
 }).strict().superRefine((value, ctx) => {
   const fail = (message: string) => ctx.addIssue({ code: "custom", message });
   const targets = new Map(value.targets.map(t => [t.entryGuid, t]));
+  if (value.learningMode !== "illustrated-guide" && value.targets.some(t => t.teachingPos === "prep")) fail("介系詞目標僅限 illustrated-guide 圖解學習");
   if (value.targetCount !== value.targets.length) fail("目標數量與詞條數不符");
   if (targets.size !== value.targets.length || new Set(value.targets.map(t => t.word)).size !== value.targets.length) fail("目標單字/GUID 不可重複");
   const userSpecified = value.vocabularyMode === "user-specified";
@@ -67,7 +69,7 @@ export const ScenarioAssetSchema = z.object({ relativePath: z.string().regex(/^s
 export type ScenarioAsset = z.infer<typeof ScenarioAssetSchema>;
 export interface ScenarioMedia { image: ScenarioAsset; audio: ScenarioAsset }
 export interface ScenarioRecord { content: ScenarioContent; media: ScenarioMedia; status: "draft" | "published"; contentHash: string }
-export interface ScenarioSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; vocabularyMode?: "user-specified"; vocabularyFilter: ScenarioContent["vocabularyFilter"]; targetCount: number; targetCounts: Record<ScenarioContent["targets"][number]["teachingPos"], number>; image: ScenarioDetail["image"]; tags: import("./repo/tags").Tag[] }
+export interface ScenarioSummary { scenarioKey: string; revision: number; status: "draft" | "published"; titleZh: string; vocabularyMode?: "user-specified"; learningMode?: "illustrated-guide"; vocabularyFilter: ScenarioContent["vocabularyFilter"]; targetCount: number; targetCounts: Record<"n" | "adj" | "v", number> & { prep?: number }; image: ScenarioDetail["image"]; tags: import("./repo/tags").Tag[] }
 export interface ScenarioDetail extends ScenarioContent { status: "draft" | "published"; image: { url: string; width: number; height: number }; storyAudio: { url: string } }
 export const scenarioHash = (data: string | Buffer): string => createHash("sha256").update(data).digest("hex");
 /** 物件 key 順序不構成新的 revision。 */

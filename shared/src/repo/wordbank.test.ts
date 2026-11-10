@@ -16,11 +16,11 @@ afterAll(async () => { await pool.end(); });
 beforeEach(async () => { await pool.query("TRUNCATE wordbank_entries CASCADE"); });
 
 describe("字庫 repo", () => {
-  it("完整 9208 字匯入／重匯演練，所有欄位 round-trip 相同且不遺失缺文字詞條", async () => {
+  it("完整 9244 字匯入／重匯演練，所有欄位 round-trip 相同且不遺失缺文字詞條", async () => {
     const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8")));
-    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 9208, existing: 0 });
+    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 9244, existing: 0 });
     expect(await listWordbankEntries(pool)).toEqual(source);
-    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 0, existing: 9208 });
+    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 0, existing: 9244 });
     const persisted = await listWordbankEntries(pool);
     expect(persisted).toEqual(source);
     expect(persisted.filter((entry) => entry.level.list === "basic")).toHaveLength(1193);
@@ -50,6 +50,68 @@ describe("字庫 repo", () => {
       expect(await getWordbankEntry(pool, original.guid)).toEqual(original);
     }
     expect(await listWordbankEntries(pool)).toHaveLength(initial.size + 5);
+  });
+
+  it("長母音增量新增 dune 並補十句例句，重匯保留舊內容與 null 分級", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../docs/phonics/preparation/long-vowels/wordbank-additions.json", import.meta.url), "utf8")));
+    const existing = delta.filter(({ word }) => word !== "dune").map((incoming) => {
+      const completed = source.find(({ guid }) => guid === incoming.guid)!;
+      const added = new Set(incoming.examples.map(({ guid }) => guid));
+      return { ...completed, examples: completed.examples.filter(({ guid }) => !added.has(guid)) };
+    });
+    expect(existing).toHaveLength(10);
+    await importWordbankEntries(pool, existing);
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 1, existing: 10 });
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 0, existing: 11 });
+    for (const incoming of delta) {
+      expect(await getWordbankEntry(pool, incoming.guid)).toEqual(source.find(({ guid }) => guid === incoming.guid));
+    }
+    expect(await listWordbankEntries(pool)).toHaveLength(11);
+  });
+
+  it("第三至五章增量在測試庫可新增 oar 與例句，重匯維持所有既有欄位", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../docs/phonics/preparation/phonics-345/wordbank-additions.json", import.meta.url), "utf8")));
+    const initial = delta.filter(({ word }) => word !== "oar").map((incoming) => {
+      const complete = source.find(({ guid }) => guid === incoming.guid)!;
+      const added = new Set(incoming.examples.map(({ guid }) => guid));
+      return { ...complete, examples: complete.examples.filter(({ guid }) => !added.has(guid)) };
+    });
+    expect(initial).toHaveLength(29);
+    await importWordbankEntries(pool, initial);
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 1, existing: 29 });
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 0, existing: 30 });
+    for (const incoming of delta) expect(await getWordbankEntry(pool, incoming.guid)).toEqual(source.find(({ guid }) => guid === incoming.guid));
+    expect(await listWordbankEntries(pool)).toHaveLength(30);
+  });
+
+  it("時間介系詞增量新增autumn與26子項，重匯完整保留13既有詞所有欄位", async () => {
+    const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8")));
+    const delta = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../docs/scenarios/preparation/time-prepositions/wordbank-additions.json", import.meta.url), "utf8")));
+    const existing = delta.filter(({ word }) => word !== "autumn");
+    expect(existing).toHaveLength(13);
+    const initial = existing.map(incoming => {
+      const complete = source.find(({ guid }) => guid === incoming.guid)!;
+      const explains = new Set(incoming.explains.map(({ guid }) => guid));
+      const examples = new Set(incoming.examples.map(({ guid }) => guid));
+      return { ...complete,
+        explains: complete.explains.filter(({ guid }) => !explains.has(guid)),
+        examples: complete.examples.filter(({ guid }) => !examples.has(guid)),
+      };
+    });
+    expect(existing.reduce((sum, item) => sum + item.explains.length + item.examples.length, 0)).toBe(26);
+    expect(await importWordbankEntries(pool, initial)).toEqual({ inserted: 13, existing: 0 });
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 1, existing: 13 });
+    for (const incoming of delta) expect(await getWordbankEntry(pool, incoming.guid)).toEqual(source.find(({ guid }) => guid === incoming.guid));
+    const firstImport = await listWordbankEntries(pool);
+    expect(await importWordbankEntries(pool, delta)).toEqual({ inserted: 0, existing: 14 });
+    expect(await listWordbankEntries(pool)).toEqual(firstImport);
+    expect(firstImport).toHaveLength(14);
+    const countSubitems = (entries: typeof source) => entries.reduce((sum, item) => sum + item.explains.length + item.examples.length, 0);
+    expect(countSubitems(firstImport) - countSubitems(initial)).toBe(32); // 26既有詞子項＋autumn的6子項。
+    expect(firstImport.find(({ word }) => word === "within")?.level.list).toBe("expert");
+    expect(firstImport.find(({ word }) => word === "autumn")?.level).toEqual({ cefr: null, tw_7000: null, list: null });
   });
 
   it("完整保存原欄位、重匯不加重複資料或覆蓋後補定義", async () => {

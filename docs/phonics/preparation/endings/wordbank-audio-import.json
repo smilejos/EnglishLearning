@@ -1,0 +1,996 @@
+{
+  "version": 1,
+  "profile": {
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Serena",
+    "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+    "lang_code": "English",
+    "response_format": "mp3"
+  },
+  "entries": [
+    {
+      "assetGuid": "d3bc195e-695d-58a1-b64b-7f019497ffba",
+      "entryGuid": "d3bc195e-695d-58a1-b64b-7f019497ffba",
+      "kind": "word",
+      "text": "cats",
+      "textHash": "d936608baaacc6b762c14b0c356026fba3b84e77d5b22e86f2fc29d3da09c675",
+      "relativePath": "wordbank/09eeb3d17582e855/d3bc195e-695d-58a1-b64b-7f019497ffba.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -8.80455193669508,
+        "rmsDbfs": -26.77497477442404,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:31.052Z",
+      "sha256": "41cfd9c7902b5a88692ec9a1885336305b6073b46fc9c6b62dce3fa54f6d7ab3",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/cats.mp3",
+        "assetGuid": "phonics-endings-s-cats"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "4132a3c1-b6ca-59b2-926f-ecbd766157be",
+      "entryGuid": "4132a3c1-b6ca-59b2-926f-ecbd766157be",
+      "kind": "word",
+      "text": "caps",
+      "textHash": "709523528f4df152c0cfbb352eda593872fd6bd72543de62ca8d1f0b4c19cdb6",
+      "relativePath": "wordbank/09eeb3d17582e855/4132a3c1-b6ca-59b2-926f-ecbd766157be.mp3",
+      "durationSeconds": 1.176,
+      "bytes": 18860,
+      "acousticCheck": {
+        "peakDbfs": -8.566582026552005,
+        "rmsDbfs": -24.35703706130517,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:32.074Z",
+      "sha256": "4053387416fd33b0f09b8d4b160dc98c588f9edc7f6e3a92c200398616110476",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/caps.mp3",
+        "assetGuid": "phonics-endings-s-caps"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "edcebbe1-822c-58bf-ba1e-b4e0fc3bca92",
+      "entryGuid": "edcebbe1-822c-58bf-ba1e-b4e0fc3bca92",
+      "kind": "word",
+      "text": "maps",
+      "textHash": "325392e8dd2826a53a9a35b7a7f8d71683cd27ebc2c73fee85dab673bc909b67",
+      "relativePath": "wordbank/09eeb3d17582e855/edcebbe1-822c-58bf-ba1e-b4e0fc3bca92.mp3",
+      "durationSeconds": 1.488,
+      "bytes": 23852,
+      "acousticCheck": {
+        "peakDbfs": -6.4162802439003475,
+        "rmsDbfs": -23.07625426674636,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:33.823Z",
+      "sha256": "b9c823a9f56d9eac3d0a829c3eb004cf7dc23afce078c024a667e935d60f87e2",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/maps.mp3",
+        "assetGuid": "phonics-endings-s-maps"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "4f054135-21cd-5d40-9a38-07aecb5cd1e1",
+      "entryGuid": "4f054135-21cd-5d40-9a38-07aecb5cd1e1",
+      "kind": "word",
+      "text": "cups",
+      "textHash": "43b69e82bee632b30b91215b8578b7700077dbad5fe72a7329b5597333cb483e",
+      "relativePath": "wordbank/09eeb3d17582e855/4f054135-21cd-5d40-9a38-07aecb5cd1e1.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -10.220075598185435,
+        "rmsDbfs": -28.497181944349997,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:35.486Z",
+      "sha256": "f081177254330b0dcae5b4ce0f4d1562db2514b11c1eac9bd1e5e4d521765691",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/cups.mp3",
+        "assetGuid": "phonics-endings-s-cups"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "21d6c5cb-be27-5e1e-a5b8-abfd019ff640",
+      "entryGuid": "21d6c5cb-be27-5e1e-a5b8-abfd019ff640",
+      "kind": "word",
+      "text": "pigs",
+      "textHash": "7ca803c7fc3f8d5f93ccd12046e81535cd9ee00a28020359c5aad34d6716b3fd",
+      "relativePath": "wordbank/09eeb3d17582e855/21d6c5cb-be27-5e1e-a5b8-abfd019ff640.mp3",
+      "durationSeconds": 1.176,
+      "bytes": 18860,
+      "acousticCheck": {
+        "peakDbfs": -9.91050255988396,
+        "rmsDbfs": -27.74166854839876,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:36.436Z",
+      "sha256": "794b002a3cd78d51ec3b636a673dd92c5552b6476b4dc2aa28bc1ac04d6d36ef",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/pigs.mp3",
+        "assetGuid": "phonics-endings-s-pigs"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "cf780cb1-9c62-53a2-ad85-15188cf9b9aa",
+      "entryGuid": "cf780cb1-9c62-53a2-ad85-15188cf9b9aa",
+      "kind": "word",
+      "text": "dogs",
+      "textHash": "23bcd2d83d4c0f270640ec65cbeb61a1784856255c3c98dd25ec340453458348",
+      "relativePath": "wordbank/09eeb3d17582e855/cf780cb1-9c62-53a2-ad85-15188cf9b9aa.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -15.627590497545906,
+        "rmsDbfs": -29.555561499197776,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:37.435Z",
+      "sha256": "dfbd1b8967eeb760b9935ba042f2b0c5e6a9167e8b399676e3db067ce64efe5d",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/dogs.mp3",
+        "assetGuid": "phonics-endings-s-dogs"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "92efb0a4-7c32-508e-9788-42c4b804e8e1",
+      "entryGuid": "92efb0a4-7c32-508e-9788-42c4b804e8e1",
+      "kind": "word",
+      "text": "pens",
+      "textHash": "55015dcc0231800fb4072efb2524cc9e2b181eddc344348cc5128e041e61549e",
+      "relativePath": "wordbank/09eeb3d17582e855/92efb0a4-7c32-508e-9788-42c4b804e8e1.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -16.175376328637157,
+        "rmsDbfs": -30.394429364590415,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:39.500Z",
+      "sha256": "b8db11f973d6908e9ed6b9a7785cf968c3b28491baa7ff5af24fcc88fb403229",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/pens.mp3",
+        "assetGuid": "phonics-endings-s-pens"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "61bde512-aa13-5066-9146-37e17a2baf6a",
+      "entryGuid": "61bde512-aa13-5066-9146-37e17a2baf6a",
+      "kind": "word",
+      "text": "beds",
+      "textHash": "52cffaac9427e988b0cf3da4dada12631152d496d4b15ab7e98e11811b2d0970",
+      "relativePath": "wordbank/09eeb3d17582e855/61bde512-aa13-5066-9146-37e17a2baf6a.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -15.841200998729466,
+        "rmsDbfs": -32.89302378475194,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:41.157Z",
+      "sha256": "0b9177b033c514e73117c3211942a8a1b10be01fa377b8be408757e997cd08d6",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/beds.mp3",
+        "assetGuid": "phonics-endings-s-beds"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "a378db33-c378-5144-b708-a773cbb2a3c6",
+      "entryGuid": "a378db33-c378-5144-b708-a773cbb2a3c6",
+      "kind": "word",
+      "text": "buses",
+      "textHash": "4da014218dcf86f967eae296f49c335afb3d2d5c1cf4360125d49e6bd877d8d5",
+      "relativePath": "wordbank/09eeb3d17582e855/a378db33-c378-5144-b708-a773cbb2a3c6.mp3",
+      "durationSeconds": 1.896,
+      "bytes": 30380,
+      "acousticCheck": {
+        "peakDbfs": -13.909458211087056,
+        "rmsDbfs": -33.205027598877635,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:50.946Z",
+      "sha256": "c60722ea33b8c722cdc57fd824214a185ac63d758b97d86038107f458b59b70a",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/buses.mp3",
+        "assetGuid": "phonics-endings-es-buses"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "7ece530c-b63c-5799-a45b-12119d1ab881",
+      "entryGuid": "7ece530c-b63c-5799-a45b-12119d1ab881",
+      "kind": "word",
+      "text": "dishes",
+      "textHash": "f9fda1f27798cc51c46110520d8628eeba55f239307604d46b3c5a9fd1153fd9",
+      "relativePath": "wordbank/09eeb3d17582e855/7ece530c-b63c-5799-a45b-12119d1ab881.mp3",
+      "durationSeconds": 1.488,
+      "bytes": 23852,
+      "acousticCheck": {
+        "peakDbfs": -14.694163741509412,
+        "rmsDbfs": -30.989652649057945,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:52.389Z",
+      "sha256": "8917d2eb51526e295a1f5f9e2c9488671b1d2f2998cdf75768d5762b32c5d969",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/dishes.mp3",
+        "assetGuid": "phonics-endings-es-dishes"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "874d4ca3-b8f6-5875-a318-601edc17d5ac",
+      "entryGuid": "874d4ca3-b8f6-5875-a318-601edc17d5ac",
+      "kind": "word",
+      "text": "wishes",
+      "textHash": "7389560c10e6c4743063ed8291f818f86e45bb2ab89e7404b58757f08023acf7",
+      "relativePath": "wordbank/09eeb3d17582e855/874d4ca3-b8f6-5875-a318-601edc17d5ac.mp3",
+      "durationSeconds": 1.656,
+      "bytes": 26540,
+      "acousticCheck": {
+        "peakDbfs": -14.145783852799367,
+        "rmsDbfs": -30.636419134363905,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:53.886Z",
+      "sha256": "29694bf8d7172c6f2d691fa4022584f69df69dad08e5c111eaf2b19b6ff530a2",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/wishes.mp3",
+        "assetGuid": "phonics-endings-es-wishes"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "25caf86f-3c45-5f18-9850-0a68fa3206b4",
+      "entryGuid": "25caf86f-3c45-5f18-9850-0a68fa3206b4",
+      "kind": "word",
+      "text": "foxes",
+      "textHash": "73ef70b681cc631b21dbc1ff5852dc5a74395a9833768fc49e878a5dea1a5a5e",
+      "relativePath": "wordbank/09eeb3d17582e855/25caf86f-3c45-5f18-9850-0a68fa3206b4.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -8.352972668653567,
+        "rmsDbfs": -28.113522898242223,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:55.117Z",
+      "sha256": "40d48cd2879855c62d60a2c1c2dcc6f6ca4835c89088a101218d4487b23c1e8b",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/foxes.mp3",
+        "assetGuid": "phonics-endings-es-foxes"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "41e6a9a2-771c-591b-ba4a-d07303d4f7a7",
+      "entryGuid": "41e6a9a2-771c-591b-ba4a-d07303d4f7a7",
+      "kind": "word",
+      "text": "boxes",
+      "textHash": "ff1f51bdc88ddff105542b5e621a9f793c40f314e8b46caa84fcf2c9cd39eb7e",
+      "relativePath": "wordbank/09eeb3d17582e855/41e6a9a2-771c-591b-ba4a-d07303d4f7a7.mp3",
+      "durationSeconds": 1.968,
+      "bytes": 31532,
+      "acousticCheck": {
+        "peakDbfs": -13.72480463508852,
+        "rmsDbfs": -32.130038539832036,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:56.864Z",
+      "sha256": "8eea0e4592bc5d09a449d326f09188746b16a6d6c3d33ab6521ca65b49f3ee88",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/boxes.mp3",
+        "assetGuid": "phonics-endings-es-boxes"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "2a45fb4d-8672-5312-add6-30f0ee0f5e3e",
+      "entryGuid": "2a45fb4d-8672-5312-add6-30f0ee0f5e3e",
+      "kind": "word",
+      "text": "matches",
+      "textHash": "a54084383e3cf7c246307c0f656da443a587afe30dd18a1878c2fcad9db93da4",
+      "relativePath": "wordbank/09eeb3d17582e855/2a45fb4d-8672-5312-add6-30f0ee0f5e3e.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "acousticCheck": {
+        "peakDbfs": -7.048275474503325,
+        "rmsDbfs": -24.677645521151202,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:58.293Z",
+      "sha256": "25d1b10b0be76f8768b1a30daf05442df08371e89c3f09de07da708c1630809d",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/matches.mp3",
+        "assetGuid": "phonics-endings-es-matches"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "9f050fda-881b-5277-a90a-64091adb546a",
+      "entryGuid": "9f050fda-881b-5277-a90a-64091adb546a",
+      "kind": "word",
+      "text": "catches",
+      "textHash": "493da60d328a8d69d637716dd0cc72f21f6f25aa8537dc9beda021d28fc0bc11",
+      "relativePath": "wordbank/09eeb3d17582e855/9f050fda-881b-5277-a90a-64091adb546a.mp3",
+      "durationSeconds": 2.304,
+      "bytes": 36908,
+      "acousticCheck": {
+        "peakDbfs": -12.091319601144292,
+        "rmsDbfs": -29.475636597310853,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:00.289Z",
+      "sha256": "bc0ab38e17fadfe79fc35ab4a16151174c20875e2f70de9ace572e7bad74ad29",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/catches.mp3",
+        "assetGuid": "phonics-endings-es-catches"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "731326f1-21f9-56ad-8940-2b455c783f4b",
+      "entryGuid": "731326f1-21f9-56ad-8940-2b455c783f4b",
+      "kind": "word",
+      "text": "benches",
+      "textHash": "5a0ac63ebbe26777a71fdc437ea8cd0c29f1b11d922a98cda5fd2e3a13a8cdfa",
+      "relativePath": "wordbank/09eeb3d17582e855/731326f1-21f9-56ad-8940-2b455c783f4b.mp3",
+      "durationSeconds": 1.656,
+      "bytes": 26540,
+      "acousticCheck": {
+        "peakDbfs": -8.412784741942266,
+        "rmsDbfs": -26.241748222209033,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:01.828Z",
+      "sha256": "ed9a2bec1ac600486e4e0d1ee3cf717ca9ac3520a693a10c0209768ece99ad84",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/benches.mp3",
+        "assetGuid": "phonics-endings-es-benches"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "f586d800-7652-5c21-a0c7-37e9fbebe10a",
+      "entryGuid": "f586d800-7652-5c21-a0c7-37e9fbebe10a",
+      "kind": "word",
+      "text": "tapped",
+      "textHash": "ca0efa17afafe3e14c91a5430ec99057a35dfc4423910b2fee03504c42129adb",
+      "relativePath": "wordbank/09eeb3d17582e855/f586d800-7652-5c21-a0c7-37e9fbebe10a.mp3",
+      "durationSeconds": 2.064,
+      "bytes": 33068,
+      "acousticCheck": {
+        "peakDbfs": -11.231168104843112,
+        "rmsDbfs": -32.79617727947384,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:13.620Z",
+      "sha256": "196b4d102675d161ef0717d111173130126c17afc9f2d3ff3525b587daf79743",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/tapped.mp3",
+        "assetGuid": "phonics-endings-ed-tapped"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "defcc14f-f54b-5a72-acc8-2ca95727bfea",
+      "entryGuid": "defcc14f-f54b-5a72-acc8-2ca95727bfea",
+      "kind": "word",
+      "text": "packed",
+      "textHash": "88cb8a087b6e8cebfc9ae5602f5a2159a6bcf923e7f2c56809bcda6cad1727a7",
+      "relativePath": "wordbank/09eeb3d17582e855/defcc14f-f54b-5a72-acc8-2ca95727bfea.mp3",
+      "durationSeconds": 1.416,
+      "bytes": 22700,
+      "acousticCheck": {
+        "peakDbfs": -7.852846608838516,
+        "rmsDbfs": -27.526163285412032,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:14.916Z",
+      "sha256": "687be4651d92f2006ffa05be9d86ea92f592884faaac123b42c0249e93c973e5",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/packed.mp3",
+        "assetGuid": "phonics-endings-ed-packed"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "c1411cc8-359d-5be8-a6d8-c26492a0b1d8",
+      "entryGuid": "c1411cc8-359d-5be8-a6d8-c26492a0b1d8",
+      "kind": "word",
+      "text": "jumped",
+      "textHash": "f948c4eb7f17fdb77ade313d3d443d3842c693cfeb676eb92cff8b50540e11d8",
+      "relativePath": "wordbank/09eeb3d17582e855/c1411cc8-359d-5be8-a6d8-c26492a0b1d8.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "acousticCheck": {
+        "peakDbfs": -11.50922675172425,
+        "rmsDbfs": -27.35215037375361,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:16.326Z",
+      "sha256": "8f12092560a6745d0457b86c2ee5073d0bc8702a52a74b347cbd1456aec1e1d6",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/jumped.mp3",
+        "assetGuid": "phonics-endings-ed-jumped"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "59aa5d10-042a-58b0-9d6f-3af8640c1389",
+      "entryGuid": "59aa5d10-042a-58b0-9d6f-3af8640c1389",
+      "kind": "word",
+      "text": "filled",
+      "textHash": "8a2f8bcb5572a89ae969186af0e03c56c87c22be98cb81e0c79ef69c80319670",
+      "relativePath": "wordbank/09eeb3d17582e855/59aa5d10-042a-58b0-9d6f-3af8640c1389.mp3",
+      "durationSeconds": 1.656,
+      "bytes": 26540,
+      "acousticCheck": {
+        "peakDbfs": -12.625838617329547,
+        "rmsDbfs": -24.029006531719062,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:17.795Z",
+      "sha256": "b2accc8cd23133f00e307bb509b2b7cf1e3fe322d59d319b322a0528f3bb4be7",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/filled.mp3",
+        "assetGuid": "phonics-endings-ed-filled"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "47949d54-26d6-57f3-9540-5c722e8ecf22",
+      "entryGuid": "47949d54-26d6-57f3-9540-5c722e8ecf22",
+      "kind": "word",
+      "text": "hummed",
+      "textHash": "80b94c884514702767fb7f039c3f2dda703c8d9db42101a1919bf99fc5701fd8",
+      "relativePath": "wordbank/09eeb3d17582e855/47949d54-26d6-57f3-9540-5c722e8ecf22.mp3",
+      "durationSeconds": 1.656,
+      "bytes": 26540,
+      "acousticCheck": {
+        "peakDbfs": -13.98598590230173,
+        "rmsDbfs": -30.728565359153166,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:19.281Z",
+      "sha256": "1752cf2046bd04549edfa9260942df56286695e9717648e52d3d8f4e74d888bb",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/hummed.mp3",
+        "assetGuid": "phonics-endings-ed-hummed"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "e9177592-6c04-54ec-afad-8834ee6da5ea",
+      "entryGuid": "e9177592-6c04-54ec-afad-8834ee6da5ea",
+      "kind": "word",
+      "text": "played",
+      "textHash": "8000dce068b164c20509fbcd15de00421ef8960e9eb0530aff6949c4d171b66b",
+      "relativePath": "wordbank/09eeb3d17582e855/e9177592-6c04-54ec-afad-8834ee6da5ea.mp3",
+      "durationSeconds": 1.968,
+      "bytes": 31532,
+      "acousticCheck": {
+        "peakDbfs": -13.826134850627778,
+        "rmsDbfs": -29.052511968854155,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:21.055Z",
+      "sha256": "50814f2243f4656ea23c27de37117334f9872f6153d7d399483577c3a86ea1ad",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/played.mp3",
+        "assetGuid": "phonics-endings-ed-played"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "41e977df-074b-5844-9bd3-51945662d24d",
+      "entryGuid": "41e977df-074b-5844-9bd3-51945662d24d",
+      "kind": "word",
+      "text": "landed",
+      "textHash": "78ee12c65d407ba0694df910c6b815938bf6119f7288bd720a48c98e11af57bc",
+      "relativePath": "wordbank/09eeb3d17582e855/41e977df-074b-5844-9bd3-51945662d24d.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -7.92174319526935,
+        "rmsDbfs": -22.113657036675093,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:22.295Z",
+      "sha256": "10eb58af1021ed5a741ab460b38f42f1fe9a469c1a4f47eedfcda2a3a1935e6f",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/landed.mp3",
+        "assetGuid": "phonics-endings-ed-landed"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958",
+      "entryGuid": "62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958",
+      "kind": "word",
+      "text": "rested",
+      "textHash": "5a0cc465ad68c3d8e5d80ae1876aecf405996711f9ae99a0cd1c1943e9f50bd5",
+      "relativePath": "wordbank/09eeb3d17582e855/62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958.mp3",
+      "durationSeconds": 2.304,
+      "bytes": 36908,
+      "acousticCheck": {
+        "peakDbfs": -12.941247899290262,
+        "rmsDbfs": -28.235424094734725,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:24.338Z",
+      "sha256": "f009922cfa7a93f272ce2f2f6cd4b9f1249f833639d8e8de3628315a94846e20",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/rested.mp3",
+        "assetGuid": "phonics-endings-ed-rested"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "8760190a-1759-5401-bc68-12e1ca880ecb",
+      "entryGuid": "8760190a-1759-5401-bc68-12e1ca880ecb",
+      "kind": "word",
+      "text": "needed",
+      "textHash": "c0cea2dd285281f7893d49fb1f28644d36777194b1c4655dbeb3b49944daa04f",
+      "relativePath": "wordbank/09eeb3d17582e855/8760190a-1759-5401-bc68-12e1ca880ecb.mp3",
+      "durationSeconds": 1.824,
+      "bytes": 29228,
+      "acousticCheck": {
+        "peakDbfs": -9.109725011149038,
+        "rmsDbfs": -25.168082337434367,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:25.947Z",
+      "sha256": "23f4919011cc993e54c5efa1f37f98ab787cd97dbedb05ce1cfdc744c867f1f0",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/needed.mp3",
+        "assetGuid": "phonics-endings-ed-needed"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "2a4923f1-dde9-5744-8b85-7bf95cdd8159",
+      "entryGuid": "2a4923f1-dde9-5744-8b85-7bf95cdd8159",
+      "kind": "word",
+      "text": "jumping",
+      "textHash": "da7efaf6535bfaf67d32cf2098babadc6e965eedc74ae857a4692f451d70d01f",
+      "relativePath": "wordbank/09eeb3d17582e855/2a4923f1-dde9-5744-8b85-7bf95cdd8159.mp3",
+      "durationSeconds": 2.064,
+      "bytes": 33068,
+      "acousticCheck": {
+        "peakDbfs": -13.953380857491751,
+        "rmsDbfs": -34.73126826446948,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:35.306Z",
+      "sha256": "f7278e6d4b4e0bac7a354cf8f1f52faafad37de664e19a308c5a5ce8d1bf7ab6",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/jumping.mp3",
+        "assetGuid": "phonics-endings-ing-jumping"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "30c34a86-187e-576a-9a7c-359b9148ab74",
+      "entryGuid": "30c34a86-187e-576a-9a7c-359b9148ab74",
+      "kind": "word",
+      "text": "resting",
+      "textHash": "b720654010747049561205f4086666e09f95a51529ba3586a5abd24ba4efcddd",
+      "relativePath": "wordbank/09eeb3d17582e855/30c34a86-187e-576a-9a7c-359b9148ab74.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "acousticCheck": {
+        "peakDbfs": -9.423652867119179,
+        "rmsDbfs": -25.89066093418229,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:36.523Z",
+      "sha256": "276141130706c24df7d5918300082eafb69ad75ac0bb1330e08950a0ea6eee1b",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/resting.mp3",
+        "assetGuid": "phonics-endings-ing-resting"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "b52f3202-1e56-5db0-8aa5-db51af5c0bd3",
+      "entryGuid": "b52f3202-1e56-5db0-8aa5-db51af5c0bd3",
+      "kind": "word",
+      "text": "running",
+      "textHash": "c071cf5f5ed6f884cc70155b6f05f755fd46a302d05e4261b7e92ce878bbfed8",
+      "relativePath": "wordbank/09eeb3d17582e855/b52f3202-1e56-5db0-8aa5-db51af5c0bd3.mp3",
+      "durationSeconds": 1.824,
+      "bytes": 29228,
+      "acousticCheck": {
+        "peakDbfs": -8.700053548478117,
+        "rmsDbfs": -25.7611064822161,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:38.129Z",
+      "sha256": "9822831ad3bc66cb1767a668b3ef2d1fcbce0bf4e49fdb75eeadbcfd2129f4dc",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/running.mp3",
+        "assetGuid": "phonics-endings-ing-running"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "61c7bc16-7f49-59f1-b061-3a868da4bc38",
+      "entryGuid": "61c7bc16-7f49-59f1-b061-3a868da4bc38",
+      "kind": "word",
+      "text": "hopping",
+      "textHash": "91d5c8f2fcbb1ec2ff50f751b6f7f1af90ff964d078ee22f36b91790db0687fe",
+      "relativePath": "wordbank/09eeb3d17582e855/61c7bc16-7f49-59f1-b061-3a868da4bc38.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -9.55484810800925,
+        "rmsDbfs": -29.055760988651897,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:39.268Z",
+      "sha256": "76ffa6562b5c603e8b3afe580d9ffe066d6c09114730866185800f4a05d6de68",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/hopping.mp3",
+        "assetGuid": "phonics-endings-ing-hopping"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "118b9802-54d4-5b55-ad1e-05451e488aca",
+      "entryGuid": "118b9802-54d4-5b55-ad1e-05451e488aca",
+      "kind": "word",
+      "text": "sitting",
+      "textHash": "558413b70f8c6bbbb1d586aad7277175c8fc68688333706b38f9d13a9d03db5b",
+      "relativePath": "wordbank/09eeb3d17582e855/118b9802-54d4-5b55-ad1e-05451e488aca.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -10.307310882684915,
+        "rmsDbfs": -25.35188078594187,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:40.485Z",
+      "sha256": "d70c39b0fdb6ae306454b113895363120852311b937a7814f26b3f0c977690f2",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/sitting.mp3",
+        "assetGuid": "phonics-endings-ing-sitting"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "3592596b-d6e0-55c7-8fea-76470b33126d",
+      "entryGuid": "3592596b-d6e0-55c7-8fea-76470b33126d",
+      "kind": "word",
+      "text": "making",
+      "textHash": "febb9f32c94e238e5f36abb28975778a150d63ff5c656d62861f97ccd9ede9fe",
+      "relativePath": "wordbank/09eeb3d17582e855/3592596b-d6e0-55c7-8fea-76470b33126d.mp3",
+      "durationSeconds": 1.728,
+      "bytes": 27692,
+      "acousticCheck": {
+        "peakDbfs": -18.881816533892774,
+        "rmsDbfs": -34.99634541271686,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:42.034Z",
+      "sha256": "0932e8ca358fa5083e41de2faa49f7f6187097672c610377a0c9e2e4daeb3003",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/making.mp3",
+        "assetGuid": "phonics-endings-ing-making"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "7b0aaec2-d0f5-5741-97a3-93fc48ee2bcf",
+      "entryGuid": "7b0aaec2-d0f5-5741-97a3-93fc48ee2bcf",
+      "kind": "word",
+      "text": "riding",
+      "textHash": "c1e6de2c54a06869a6154313e99a9def7de567d21dd0e900282268dfb793188a",
+      "relativePath": "wordbank/09eeb3d17582e855/7b0aaec2-d0f5-5741-97a3-93fc48ee2bcf.mp3",
+      "durationSeconds": 1.968,
+      "bytes": 31532,
+      "acousticCheck": {
+        "peakDbfs": -8.311914755473186,
+        "rmsDbfs": -27.741308245212743,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:43.809Z",
+      "sha256": "9f4ab8b78c6c26d590692be175d4d79d5838091528b60514f9f28e02ff05c9fc",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/riding.mp3",
+        "assetGuid": "phonics-endings-ing-riding"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "15eab2b7-f88b-5b8d-930c-9691975f7a36",
+      "entryGuid": "15eab2b7-f88b-5b8d-930c-9691975f7a36",
+      "kind": "word",
+      "text": "playing",
+      "textHash": "0db79e63c5179b1263619f693ca7125017237cec447946bdb40a8d3175c1773d",
+      "relativePath": "wordbank/09eeb3d17582e855/15eab2b7-f88b-5b8d-930c-9691975f7a36.mp3",
+      "durationSeconds": 1.248,
+      "bytes": 20012,
+      "acousticCheck": {
+        "peakDbfs": -12.450910204444677,
+        "rmsDbfs": -26.22310353552741,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:44.957Z",
+      "sha256": "854a499ca8229dbd10ce3615ab23e53afad7c2be8cdb488bfdde2b247a041cae",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/playing.mp3",
+        "assetGuid": "phonics-endings-ing-playing"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "7215bb23-7b6e-562b-bbd0-18abb6ca252c",
+      "entryGuid": "d3bc195e-695d-58a1-b64b-7f019497ffba",
+      "kind": "example",
+      "text": "The cats nap.",
+      "textHash": "434c4689d8a2c8d9ca5bf8571ed71fd4448f39931f7b4eec1474262580c457f4",
+      "relativePath": "wordbank/09eeb3d17582e855/7215bb23-7b6e-562b-bbd0-18abb6ca252c.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "acousticCheck": {
+        "peakDbfs": -6.638781315503409,
+        "rmsDbfs": -24.653350607714458,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:42.487Z",
+      "sha256": "f71f9c098548e396ad6d44155978a54aa991ce8cc6038519ef272417594e1749",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/sentence-1.mp3",
+        "assetGuid": "phonics-endings-s-sentence-1"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "30c69a82-30b3-56cc-b167-ff9fc39a0065",
+      "entryGuid": "21d6c5cb-be27-5e1e-a5b8-abfd019ff640",
+      "kind": "example",
+      "text": "The pigs sit on the beds.",
+      "textHash": "36797ed15efa97f23be1cb02f5bb78d32cd3c7c936b1c4e1b583b82641e6a52b",
+      "relativePath": "wordbank/09eeb3d17582e855/30c69a82-30b3-56cc-b167-ff9fc39a0065.mp3",
+      "durationSeconds": 2.136,
+      "bytes": 34220,
+      "acousticCheck": {
+        "peakDbfs": -10.859818786709637,
+        "rmsDbfs": -25.5738069548403,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:22:46.303Z",
+      "sha256": "b2760e40b3225da4ce010a40bf11840f36cf4d2012f3e4c8ac5b8ee494c9c8a7",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-s/sentence-2.mp3",
+        "assetGuid": "phonics-endings-s-sentence-2"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "910870a6-e6e9-5bb1-9f28-40f3b9b4b816",
+      "entryGuid": "25caf86f-3c45-5f18-9850-0a68fa3206b4",
+      "kind": "example",
+      "text": "The foxes run.",
+      "textHash": "96f1bf9961d199da9c58a408cf78578f1a55a9f84760a89a86f0be7f8deb8908",
+      "relativePath": "wordbank/09eeb3d17582e855/910870a6-e6e9-5bb1-9f28-40f3b9b4b816.mp3",
+      "durationSeconds": 1.824,
+      "bytes": 29228,
+      "acousticCheck": {
+        "peakDbfs": -4.367985408162409,
+        "rmsDbfs": -22.161513889613424,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:03.430Z",
+      "sha256": "b03798c939567ad0beb2062c3e54709bd2743aad1501584788bf7218f7c65d2f",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/sentence-1.mp3",
+        "assetGuid": "phonics-endings-es-sentence-1"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "993bb49c-a902-5942-814a-fdb790d19369",
+      "entryGuid": "7ece530c-b63c-5799-a45b-12119d1ab881",
+      "kind": "example",
+      "text": "The dishes are in the boxes.",
+      "textHash": "04596d7cd65a02ccd3ce4b23da841ad5b5ae2ef5fba28de76fdc6c99dc35528a",
+      "relativePath": "wordbank/09eeb3d17582e855/993bb49c-a902-5942-814a-fdb790d19369.mp3",
+      "durationSeconds": 3.576,
+      "bytes": 57260,
+      "acousticCheck": {
+        "peakDbfs": -11.976716574561198,
+        "rmsDbfs": -27.041780585713365,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:08.262Z",
+      "sha256": "f5a57e1194765cb2f919997342bed0555a7d193bec369bd056c1fa84c9248358",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-es/sentence-2.mp3",
+        "assetGuid": "phonics-endings-es-sentence-2"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "d9efee0c-a7f3-5b2d-b1b2-c4fd20bdddd8",
+      "entryGuid": "c1411cc8-359d-5be8-a6d8-c26492a0b1d8",
+      "kind": "example",
+      "text": "The dog jumped.",
+      "textHash": "0604b505c4156884ea878f7aac1893ba96a0eb0129f90f4f8827a2a3485d8c4e",
+      "relativePath": "wordbank/09eeb3d17582e855/d9efee0c-a7f3-5b2d-b1b2-c4fd20bdddd8.mp3",
+      "durationSeconds": 1.656,
+      "bytes": 26540,
+      "acousticCheck": {
+        "peakDbfs": -4.9151761499145294,
+        "rmsDbfs": -21.49602482130203,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:27.451Z",
+      "sha256": "0a53a4aff45fb0c48001bc7872c65ea3b07208cb3412bb02a27e8795dd00ff0d",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/sentence-1.mp3",
+        "assetGuid": "phonics-endings-ed-sentence-1"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "6cb59932-7999-57a8-b20d-3a6793ae5d21",
+      "entryGuid": "62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958",
+      "kind": "example",
+      "text": "I rested and played.",
+      "textHash": "95f1d516a48b2918f8274dbef3b803d2cbb54db76559ed6e97524aa4d7d23d3b",
+      "relativePath": "wordbank/09eeb3d17582e855/6cb59932-7999-57a8-b20d-3a6793ae5d21.mp3",
+      "durationSeconds": 2.688,
+      "bytes": 43052,
+      "acousticCheck": {
+        "peakDbfs": -8.489470938143564,
+        "rmsDbfs": -27.951306881430227,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:31.368Z",
+      "sha256": "e74fb26f76d9a58c0e7c826719d1095a249669e7592bcef9fcd88e29229063f5",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ed/sentence-2.mp3",
+        "assetGuid": "phonics-endings-ed-sentence-2"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "3c343cb3-6904-51ed-84a0-2b374c98a353",
+      "entryGuid": "b52f3202-1e56-5db0-8aa5-db51af5c0bd3",
+      "kind": "example",
+      "text": "The cat is running.",
+      "textHash": "93560527a27c40f79bd0311162e871fbc4488d63ca9827a3d7cdf9ff9722a699",
+      "relativePath": "wordbank/09eeb3d17582e855/3c343cb3-6904-51ed-84a0-2b374c98a353.mp3",
+      "durationSeconds": 1.728,
+      "bytes": 27692,
+      "acousticCheck": {
+        "peakDbfs": -9.056804560713633,
+        "rmsDbfs": -27.439569697498225,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:46.489Z",
+      "sha256": "e660651c969a3f5d99204f0c9c864cb153d8813cdd2a0a9e73949e8c269115e6",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/sentence-1.mp3",
+        "assetGuid": "phonics-endings-ing-sentence-1"
+      },
+      "listeningReview": "awaiting-human-listening"
+    },
+    {
+      "assetGuid": "a19ce9b2-f16c-5f44-bd3f-f4be93d9d3ec",
+      "entryGuid": "3592596b-d6e0-55c7-8fea-76470b33126d",
+      "kind": "example",
+      "text": "I am making a map.",
+      "textHash": "0fb1b5d7776ea7cebdd8ddf935e6e828f0fcaf2681009770742c47406319a461",
+      "relativePath": "wordbank/09eeb3d17582e855/a19ce9b2-f16c-5f44-bd3f-f4be93d9d3ec.mp3",
+      "durationSeconds": 1.896,
+      "bytes": 30380,
+      "acousticCheck": {
+        "peakDbfs": -10.690673968694517,
+        "rmsDbfs": -23.235563181979792,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      },
+      "generatedAt": "2026-11-02T13:23:49.869Z",
+      "sha256": "328af9e91d86f811ac8faa62dcc14effbc305b63c1e10971c8dca6b3e335b347",
+      "origin": {
+        "type": "copied-phonics-asset",
+        "path": "web-learner/public/phonics/endings-ing/sentence-2.mp3",
+        "assetGuid": "phonics-endings-ing-sentence-2"
+      },
+      "listeningReview": "awaiting-human-listening"
+    }
+  ]
+}

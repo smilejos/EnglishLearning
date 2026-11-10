@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-07T15:55:04.089Z",
+  "origin": "http://127.0.0.1:8090",
+  "mode": "static-only",
+  "scope": "固定 origin GET 查核；不呼叫 API mutation、不直接連 DB、不啟動服務。",
+  "manual": {
+    "desktopClicks": "pending",
+    "mobile": "pending",
+    "listeningReview": "pending",
+    "readerRoleAuthorization": "pending"
+  },
+  "status": "failed",
+  "error": "fetch failed"
+}

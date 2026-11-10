@@ -43,20 +43,44 @@
       "level_note": "新增屈折形與短母音詞無另查分級依據，level三欄留null。",
       "guid_note": "沿用字庫UUID v5命名空間，以phonics:short-vowels前綴和素材類型、文字JSON建立穩定GUID。",
       "production_import": "待使用者確認；canonical備料不代表正式DB已匯入。"
+    },
+    "phonics_long_vowels_supplement": {
+      "prepared_on": "2026-11-01",
+      "new_entries": 1,
+      "new_explanations": 3,
+      "new_examples": 13,
+      "level_note": "dune無另查分級依據，level三欄留null。",
+      "guid_note": "沿用UUID v5命名空間，以phonics:long-vowels前綴和素材種類、文字JSON建立穩定GUID。",
+      "production_import": "未正式匯入；不包含前批短母音未入庫增量。"
+    },
+    "phonics_345_supplement": {
+      "prepared_on": "2026-11-02",
+      "new_entries": 1,
+      "lesson_examples": 30,
+      "production_import": "未正式匯入；未部署。",
+      "guid_note": "沿用字庫 UUID v5 namespace，以 phonics:phonics-345 前綴產生穩定例句識別。"
+    },
+    "phonics_endings_supplement": {
+      "prepared_on": "2026-11-02",
+      "new_entries": 33,
+      "lesson_examples": 8,
+      "production_import": "未正式匯入；未部署。",
+      "level_note": "本批屈折形無獨立分級依據，level三欄留null。",
+      "guid_note": "沿用字庫 UUID v5 namespace，以 phonics:endings 前綴產生穩定詞條與子項識別。"
     }
   },
   "statistics": {
-    "total_entries": 9208,
+    "total_entries": 9244,
     "original_entries": 6012,
     "original_entries_split": 168,
     "entries_from_split_forms": 189,
     "entries_new_from_7000_list": 2974,
     "merged_duplicate_forms": 13,
     "entries_by_list": {
-      "advance": 774,
       "basic": 1193,
       "expert": 4225,
-      "null": 3016
+      "advance": 774,
+      "null": 3052
     },
     "entries_by_tw_7000": {
       "1": 1056,
@@ -65,23 +89,23 @@
       "4": 1026,
       "5": 1009,
       "6": 1034,
-      "null": 3016
+      "null": 3052
     },
     "entries_by_cefr": {
       "A1": 1451,
       "A2": 1584,
       "B1": 4204,
+      "null": 709,
       "B2": 963,
       "C1": 314,
-      "C2": 19,
-      "null": 673
+      "C2": 19
     },
     "entries_without_definition": 0,
     "entries_supplemented_examples": 133,
     "total_supplemented_examples": 204,
     "entries_with_fewer_than_3_examples": 0,
-    "total_examples": 33000,
-    "total_explains": 27663,
+    "total_examples": 33161,
+    "total_explains": 27784,
     "entries_without_explains": 0
   },
   "entries": [
@@ -755,6 +779,11 @@
           "guid": "9b1cb8c5-4af5-5464-ae7d-f4e99972cf98",
           "en": "After that wonderful experience, he decided to pursue a culinary career.",
           "zh": "在經歷了那次美好的體驗後，他毅然決定投身餐飲廚藝事業。"
+        },
+        {
+          "guid": "d7f15d3a-a501-58f0-ac1b-e0dd3c2aad72",
+          "en": "We play after lunch.",
+          "zh": "我們在午餐後玩。"
         }
       ],
       "definition": "在…之後；追隨",
@@ -770,6 +799,10 @@
         {
           "guid": "6b6093b2-4d9d-5af8-a14c-5f4972f68310",
           "en": "It points to a later time or place in a series. It can show what happens next. It can also mean following a person or plan."
+        },
+        {
+          "guid": "2e0a5b3b-b363-5999-9270-99c3d6ab6625",
+          "en": "After a time or event means later than that time or event."
         }
       ]
     },
@@ -1983,6 +2016,11 @@
           "guid": "d90135e4-f739-501b-96b2-ab4be707f243",
           "en": "She is always as busy as an ant preparing for upcoming examinations.",
           "zh": "她總是像隻忙碌的小螞蟻一樣忙著準備即將到來的考試。"
+        },
+        {
+          "guid": "9b6388c1-5a68-50d2-9532-cad639a97ed7",
+          "en": "The ant is on my hand.",
+          "zh": "螞蟻在我的手上。"
         }
       ],
       "definition": "螞蟻",
@@ -2714,6 +2752,11 @@
           "guid": "ece9f723-9aac-5a5a-8954-621783a17135",
           "en": "Look at the bright star above the trees.",
           "zh": "看看樹上方那顆明亮的星星。"
+        },
+        {
+          "guid": "7322ee8b-d764-58a1-85b4-8250856d23d0",
+          "en": "We eat at noon.",
+          "zh": "我們在中午吃飯。"
         }
       ],
       "definition": "在；於；以（時間、地點或目標）",
@@ -2729,6 +2772,10 @@
         {
           "guid": "abe5cc74-bb51-50fd-b806-2eeb06fb40e1",
           "en": "It helps give a clear point on a map or clock. Someone can wait beside one building with it. A meeting can begin when the clock shows one stated hour."
+        },
+        {
+          "guid": "8afc096b-b000-5e0a-b99a-3d4bb98ee098",
+          "en": "Use at with clock times, noon, midnight, and night."
         }
       ]
     },
@@ -4139,6 +4186,11 @@
           "guid": "aa0d7b5a-da0e-570c-baa8-e9cd7e4317f8",
           "en": "He has been a busy bee all morning cleaning every room.",
           "zh": "他整個早上就像隻勤勞的小蜜蜂一樣打掃每間房間。"
+        },
+        {
+          "guid": "6daef7f4-5fa1-5e6e-93da-57131acc872e",
+          "en": "I see a bee.",
+          "zh": "我看見一隻蜜蜂。"
         }
       ],
       "definition": "蜜蜂",
@@ -4243,6 +4295,11 @@
           "guid": "78597b0b-3532-5b26-b390-c6447fc4940d",
           "en": "The peaceful mountain village looked just as enchanting as before.",
           "zh": "這座安詳的山村看起來就像以往一樣迷人美麗。"
+        },
+        {
+          "guid": "d5357d2a-a2c9-5381-af1a-4ec883993e7a",
+          "en": "Wash your hands before lunch.",
+          "zh": "午餐前洗手。"
         }
       ],
       "definition": "在…之前；以前",
@@ -4258,6 +4315,10 @@
         {
           "guid": "b0d07060-3f49-58af-a6f7-0e80f043fa8e",
           "en": "This word points to something that comes first in time or order. It can tell when someone should do a task. It may also refer to an earlier period."
+        },
+        {
+          "guid": "78221608-dc06-5587-9252-d02950fa2fb0",
+          "en": "Before a time or event means earlier than that time or event."
         }
       ]
     },
@@ -5353,6 +5414,11 @@
           "guid": "63af4d0f-1a2f-5aba-86d9-e648cc5ffc1e",
           "en": "A rowing boat is available for rent in the park.",
           "zh": "公園裡有提供划艇租借。"
+        },
+        {
+          "guid": "249fa24a-15b1-5291-90d8-43a25779c743",
+          "en": "The boat is slow.",
+          "zh": "這艘小船很慢。"
         }
       ],
       "definition": "小船；小舟",
@@ -7295,6 +7361,11 @@
           "guid": "bf70b73a-5e88-563e-b0a2-e3b84545b048",
           "en": "Please submit your final project reports by five o'clock on Friday afternoon.",
           "zh": "請在週五下午五點以前繳交你們的期末專案報告。"
+        },
+        {
+          "guid": "88155bbf-b315-5129-976b-14cf7f0337ff",
+          "en": "Finish by five.",
+          "zh": "最晚五點完成。"
         }
       ],
       "definition": "藉由；在…旁邊；不遲於",
@@ -7310,6 +7381,10 @@
         {
           "guid": "85fa1e11-501f-5bd4-8932-ea2e130536aa",
           "en": "This short word may tell who made something or what tool was used. It can show a position close to an object. It may also mean before a stated deadline."
+        },
+        {
+          "guid": "15f96a9a-7c3b-545c-bd49-7b0bab4bfc7d",
+          "en": "By a time means no later than that time; something may finish earlier."
         }
       ]
     },
@@ -7346,6 +7421,11 @@
           "guid": "82e97ecd-334f-51e0-a74c-0542fd0128f6",
           "en": "She decorated the strawberry shortcake with whipped cream and fresh mint leaves.",
           "zh": "她用鮮奶油與新鮮薄荷葉點綴草莓蛋糕。"
+        },
+        {
+          "guid": "799d7749-88f0-5cd4-aa6d-d7bad8621411",
+          "en": "Make a cake.",
+          "zh": "做一個蛋糕。"
         }
       ],
       "definition": "蛋糕",
@@ -7654,6 +7734,11 @@
           "guid": "9a4f37b1-2f36-51f8-b777-eb7e7c1e6ae3",
           "en": "We decided to rent a car for our road trip across the island.",
           "zh": "我們決定租一輛車在島上展開公路旅行。"
+        },
+        {
+          "guid": "07d9be58-6a1c-5835-ae36-cea527fce729",
+          "en": "The car is in the park.",
+          "zh": "汽車在公園裡。"
         }
       ],
       "definition": "車子；汽車",
@@ -8079,6 +8164,11 @@
           "guid": "228733e9-c0be-5e50-837a-29d1908428b1",
           "en": "The goalkeeper leaped sideways to catch the high-speed shot.",
           "zh": "守門員側身飛撲接住了高速射門。"
+        },
+        {
+          "guid": "6ead6166-3a55-5c53-b6ab-f19ee22438d1",
+          "en": "Catch the ball.",
+          "zh": "接住球。"
         }
       ],
       "definition": "接住；抓住；趕上（車輛）",
@@ -13341,6 +13431,11 @@
           "guid": "f0c532c6-e0aa-5923-8944-02e5359bad6a",
           "en": "Students took notes attentively during the informative guest history lecture.",
           "zh": "在內容豐富的客座歷史講座期間，學生們專注地做筆記。"
+        },
+        {
+          "guid": "7e4cdcca-8c05-5ba3-b899-11a2ac026d79",
+          "en": "We talk during the meeting.",
+          "zh": "我們在會議期間交談。"
         }
       ],
       "definition": "在…期間",
@@ -13356,6 +13451,10 @@
         {
           "guid": "7ecb8ac5-302f-5885-9e67-bf3b827e13b3",
           "en": "This word shows that two events take place within the same period. It can point to a class, visit, or trip. The sentence gives the time frame."
+        },
+        {
+          "guid": "0c6bad0a-4208-5349-917f-1aa9818fbdd4",
+          "en": "During means at some time in a period or event; it does not tell how long an action lasts."
         }
       ]
     },
@@ -16815,6 +16914,11 @@
           "guid": "ea6703e8-66da-5e05-b942-33a362fb1cc2",
           "en": "We saw colorful tropical fish while snorkeling.",
           "zh": "我們浮潛時看見了五彩繽紛的熱帶魚。"
+        },
+        {
+          "guid": "ebe7f035-cdd0-5377-bd67-24c888aad48a",
+          "en": "The fish is in the dish.",
+          "zh": "魚在盤子裡。"
         }
       ],
       "definition": "魚肉；魚；釣魚",
@@ -17226,6 +17330,11 @@
           "guid": "596e1d37-2db3-57dc-85e4-abb8e3bb8793",
           "en": "For example, bananas and apples are rich in essential dietary vitamins.",
           "zh": "舉例來說，香蕉和蘋果富含人體不可或缺的膳食維生素。"
+        },
+        {
+          "guid": "7e2c6cbd-b2e1-57df-adee-12322db98911",
+          "en": "I read for two hours.",
+          "zh": "我讀書讀了兩小時。"
         }
       ],
       "definition": "為了；給；因為",
@@ -17241,6 +17350,10 @@
         {
           "guid": "cf406b42-16a4-5e90-ba29-03b018142590",
           "en": "This short word can point to a goal, receiver, or cause. It may describe a period of time. The surrounding words tell how it is used."
+        },
+        {
+          "guid": "b842220c-c3c4-582e-a0ea-e0afe1b08a69",
+          "en": "For with a length of time tells how long an action or state lasts."
         }
       ]
     },
@@ -17717,6 +17830,11 @@
           "guid": "8a299832-6da8-5f95-95af-836014fea7d3",
           "en": "Tadpoles hatch from eggs in freshwater and gradually turn into frogs.",
           "zh": "蝌蚪在淡水卵中孵化，並逐漸長成青蛙。"
+        },
+        {
+          "guid": "40ad5a24-aa77-58ba-91be-7137c99284e7",
+          "en": "The frog is in the tree.",
+          "zh": "青蛙在樹上。"
         }
       ],
       "definition": "青蛙",
@@ -17766,6 +17884,11 @@
           "guid": "0e87b9e6-fa2c-5d03-b6e5-e222e3676188",
           "en": "She made a doll from old cloth.",
           "zh": "她用舊布做了一個娃娃。"
+        },
+        {
+          "guid": "c4b670b5-4775-5c2d-80df-b333f72c8105",
+          "en": "We work from nine to five.",
+          "zh": "我們從九點工作到五點。"
         }
       ],
       "definition": "從；來自；由…製成",
@@ -17781,6 +17904,10 @@
         {
           "guid": "56858e0e-0a88-51e8-922c-d8aa392665e5",
           "en": "This word can show where something began. It may identify the person who gave an item. A recipe may name the ingredients used."
+        },
+        {
+          "guid": "1d0f0886-4a90-519d-b611-21c1af76179d",
+          "en": "From marks the start of a time period, often paired with to for the end."
         }
       ]
     },
@@ -18676,6 +18803,11 @@
           "guid": "ad72de28-ca22-52f5-beca-82adbb0d4831",
           "en": "We are glad that the rain stopped.",
           "zh": "我們很高興雨停了。"
+        },
+        {
+          "guid": "a3d1de76-2b4c-5637-9862-98329be89210",
+          "en": "I am glad.",
+          "zh": "我很高興。"
         }
       ],
       "definition": "高興的；欣喜的；樂意的。",
@@ -22969,6 +23101,11 @@
           "guid": "fd86c2e7-dd4a-5e18-91ad-1cc45f1b9316",
           "en": "She was born in Taichung in 2008.",
           "zh": "她於 2008 年在台中出生。"
+        },
+        {
+          "guid": "346650f8-dcf2-516a-abce-ae8d25a30bec",
+          "en": "We play in the morning.",
+          "zh": "我們在早上玩。"
         }
       ],
       "definition": "在…裡面；在…之中",
@@ -22984,6 +23121,10 @@
         {
           "guid": "3e7cda12-88d0-5961-a577-0e7ed456046a",
           "en": "This word may tell that someone is surrounded by a space. It can name a time or situation. It often links a thing with its location."
+        },
+        {
+          "guid": "1ca5a7d5-3508-534f-a0c9-1bf8b50ef0af",
+          "en": "Use in with years, months, seasons, and parts of a day. In two hours can mean two hours from now."
         }
       ]
     },
@@ -25034,6 +25175,11 @@
           "guid": "b8243ae7-b80d-5a7b-8100-6d6ef83bceac",
           "en": "Remember to switch off your bedside reading lamp before falling asleep.",
           "zh": "入睡前記得關閉床頭閱讀燈。"
+        },
+        {
+          "guid": "018d2026-7662-5929-8037-dfc0fc2ea063",
+          "en": "Put the lamp in the tent.",
+          "zh": "把檯燈放進帳篷裡。"
         }
       ],
       "definition": "檯燈；燈具",
@@ -26442,6 +26588,11 @@
           "guid": "75168bb8-a401-5100-99f9-67207963da38",
           "en": "The relentless search for evidence ensures that the light of truth prevails over the cover-ups of corruption.",
           "zh": "對物證永不停歇的客觀鑑識與追尋，確保了真理正義之光終將徹底驅散官商勾結與毀屍滅證的暗黑陰霾。"
+        },
+        {
+          "guid": "57dc0fcd-3d2c-5298-8ddd-34017d6ba4cf",
+          "en": "The light is on at night.",
+          "zh": "燈在夜裡亮著。"
         }
       ],
       "definition": "光線；燈；明亮的；點燃；輕的；淺色的；輕盈的；鑑識科學之光驅散黑暗照亮司法正義",
@@ -27431,6 +27582,11 @@
           "guid": "d177c617-51b3-565d-a441-28d0b06f89f8",
           "en": "Let's go to the cafeteria to have lunch together.",
           "zh": "我們一起去學生餐廳吃午餐吧。"
+        },
+        {
+          "guid": "785f0cd0-eed2-51ca-b83b-f8772bee56c2",
+          "en": "I had lunch on the bench.",
+          "zh": "我坐在長椅上吃了午餐。"
         }
       ],
       "definition": "午餐",
@@ -32499,6 +32655,11 @@
           "guid": "d6783ed1-dd44-5f04-ba6e-ee9f7aeeecd9",
           "en": "What channel is the baseball game on tonight?",
           "zh": "今晚棒球比賽在第幾台播出？"
+        },
+        {
+          "guid": "a421bfb1-b65e-56a0-a235-10f79231fffc",
+          "en": "We meet on Monday.",
+          "zh": "我們在星期一見面。"
         }
       ],
       "definition": "在…上面；在…進行中",
@@ -32514,6 +32675,10 @@
         {
           "guid": "8d1d9309-8306-56a0-a499-e6069bc295e6",
           "en": "This word can tell that an event is happening now. A computer may be working. It may also show contact with a surface."
+        },
+        {
+          "guid": "ce6d9296-7254-5a2e-8435-03da81a87c56",
+          "en": "Use on with days, dates, and a part of a specific day, such as on Monday morning."
         }
       ]
     },
@@ -38247,6 +38412,11 @@
           "guid": "d26344ac-bb37-5bc6-b4d0-0ec8702a1f86",
           "en": "Dark chocolate has a rich, deep, and satisfying flavor.",
           "zh": "黑巧克力具有濃郁、深沉且令人滿足的風味。"
+        },
+        {
+          "guid": "8239cd92-b13c-5e0e-8b02-035d49d1f1a4",
+          "en": "The rich man can chat.",
+          "zh": "這位富有的男子會聊天。"
         }
       ],
       "definition": "富有的；豐富的",
@@ -40093,6 +40263,11 @@
           "guid": "3ede65ab-0381-5bf1-b8e7-a19d9e2f074f",
           "en": "The bird carried a seed in its beak.",
           "zh": "那隻鳥用喙叼著一顆種子。"
+        },
+        {
+          "guid": "8d45e235-f9a7-59c1-ba7c-c2e05ca959a3",
+          "en": "The seed is in the sun.",
+          "zh": "種子在陽光下。"
         }
       ],
       "definition": "種子；籽；播種。",
@@ -41675,6 +41850,11 @@
           "guid": "dfb1809d-2a16-55a9-9c13-d955d19ab4b9",
           "en": "Since the mountain path is muddy and slick, watch your footing carefully.",
           "zh": "既然雨後的陡峭山徑十分泥濘濕滑，健行時請務必步步為營、留心腳下安全。"
+        },
+        {
+          "guid": "bf788844-dd5e-52ff-b1f2-bdcc790a19a7",
+          "en": "I have been here since Monday.",
+          "zh": "我從星期一起就一直在這裡。"
         }
       ],
       "definition": "自從…以來；既然；自從；因為",
@@ -41690,6 +41870,10 @@
         {
           "guid": "38cc50ea-e7c2-5d3b-a7d1-9b267a57302d",
           "en": "This word points to a time before now. A person may have been busy all day. It can also give the reason for an action."
+        },
+        {
+          "guid": "ae1dda89-80f3-5e34-b3df-946266673270",
+          "en": "Since marks a starting time in the past for an action or state continuing to a later time."
         }
       ]
     },
@@ -44347,6 +44531,11 @@
           "guid": "e614837f-cd77-51ff-a505-a5b8cf94b10f",
           "en": "There is a red stop sign at the street intersection.",
           "zh": "街角十字路口有一個紅色的停車標誌。"
+        },
+        {
+          "guid": "c86eda23-8925-54e9-811f-7b2dda6afc6b",
+          "en": "Stop and spin on the spot.",
+          "zh": "停下來，並在原地旋轉。"
         }
       ],
       "definition": "停止；停下；公車站牌",
@@ -46603,6 +46792,11 @@
           "guid": "3dd62003-12fe-5d88-8fb8-36a6fb0c4df5",
           "en": "The bag that you gave me is blue.",
           "zh": "你給我的包包是藍色的。"
+        },
+        {
+          "guid": "b2ad1b4e-f91a-5be8-97d6-6add6433c90a",
+          "en": "That man can bathe.",
+          "zh": "那位男子可以洗澡。"
         }
       ],
       "definition": "（代）那；（形）那個；（連）引導子句；（副）那麼",
@@ -47038,6 +47232,11 @@
           "guid": "9d765935-17a5-5813-b6f0-3c3f70349777",
           "en": "Cut the apple into thin slices.",
           "zh": "把蘋果切成薄片。"
+        },
+        {
+          "guid": "ce808505-75b2-532f-a76c-49bc178ae5a0",
+          "en": "A thin cat is on the path.",
+          "zh": "一隻瘦貓在小路上。"
         }
       ],
       "definition": "薄的；細的；瘦的",
@@ -47242,6 +47441,11 @@
           "guid": "fd1ebe31-4f11-5924-8f05-111f88f41234",
           "en": "This apple is very sweet.",
           "zh": "這顆蘋果很甜。"
+        },
+        {
+          "guid": "aa8aae5c-b5b5-5ce7-9712-bf16aa51c828",
+          "en": "This is my bag.",
+          "zh": "這是我的袋子。"
         }
       ],
       "definition": "這；這個（人或物），指靠近說話者的對象；如此。",
@@ -47988,6 +48192,11 @@
           "guid": "82ee2702-d59b-577b-88e1-52a41812ab68",
           "en": "We walked to the park together.",
           "zh": "我們一起走到公園。"
+        },
+        {
+          "guid": "af5db4a1-92e8-5c62-a9d0-72bf5a664bed",
+          "en": "The shop is open from nine to five.",
+          "zh": "這家店從九點營業到五點。"
         }
       ],
       "definition": "到；向；給；用於表示方向、目的地、對象或不定詞。",
@@ -48003,6 +48212,10 @@
         {
           "guid": "71c3e73d-6a83-55ef-83c5-076eff17575d",
           "en": "A speaker may place it before an action word. A person can head toward a place. It can also show who receives something."
+        },
+        {
+          "guid": "5749ea12-3491-5e09-8da9-15709fef24fb",
+          "en": "To marks the end of a time period in expressions such as from nine to five."
         }
       ]
     },
@@ -48966,6 +49179,11 @@
           "guid": "251b5dea-dd97-59f4-9ef1-08221cc8beda",
           "en": "The professional soccer team traveled to the sports academy to train for the continental cup.",
           "zh": "職業足球隊全員飛抵封閉式高原運動基地，展開為期一個月的魔鬼體能集訓以備戰即將開踢的亞洲盃。"
+        },
+        {
+          "guid": "ccf150ef-4ada-51ad-b17f-542c25655667",
+          "en": "The train is late.",
+          "zh": "火車誤點了。"
         }
       ],
       "definition": "火車；列車；訓練；傳遞發條動力至擒縱結構之四輪機械走時輪系",
@@ -49746,6 +49964,11 @@
           "guid": "741dd8cb-0b0e-5f06-b4b2-a297246e0312",
           "en": "The night market stalls stay bustling with cheerful customers until two in the morning.",
           "zh": "這處知名觀光夜市的熱門小吃攤位熱鬧滾滾，熱絡氣氛一直持續到凌晨兩點為止。"
+        },
+        {
+          "guid": "7b114979-117e-525a-8f7e-8dfad29e4ab9",
+          "en": "Work until five.",
+          "zh": "持續工作到五點。"
         }
       ],
       "definition": "直到…為止",
@@ -49761,6 +49984,10 @@
         {
           "guid": "c50179b4-643a-53b3-ba0e-4c9dbb6a6059",
           "en": "With a negative statement, this word can show that something happens no earlier than a certain time. A bus may arrive at noon rather than in the morning. The passengers must wait that long."
+        },
+        {
+          "guid": "0ca21a13-8d0f-5d36-8b24-23a5c9b8f318",
+          "en": "Until a time means an action or state continues up to that time."
         }
       ]
     },
@@ -51474,6 +51701,11 @@
           "guid": "733fcde1-c385-52c8-93d7-46851a65953f",
           "en": "I remember the exact moment when we won our first trophy.",
           "zh": "我清楚記得我們贏得第一座獎盃的那一瞬間。"
+        },
+        {
+          "guid": "44759175-1038-50ba-bc6e-a5a7e2ede359",
+          "en": "When can I spin the wheel?",
+          "zh": "我什麼時候可以轉動這個輪子？"
         }
       ],
       "definition": "何時；當…的時候",
@@ -51751,6 +51983,11 @@
           "guid": "1aa5b4c9-0e92-59d5-86fc-83461eeeea55",
           "en": "The doctor wore a clean white lab coat.",
           "zh": "醫生穿著一件乾淨的白長袍。"
+        },
+        {
+          "guid": "a872fb21-1fda-5c13-9198-65b137a423f0",
+          "en": "The white whale is big.",
+          "zh": "這隻白鯨很大。"
         }
       ],
       "definition": "白色的；白色",
@@ -58602,6 +58839,11 @@
           "guid": "2c8753e4-acd3-5700-9073-4d509b798fe1",
           "en": "A wooden board covered the hole.",
           "zh": "一塊木板蓋住了洞。"
+        },
+        {
+          "guid": "d1321a93-e6d5-5505-8818-a9be4c6e3b7f",
+          "en": "The board is in the store.",
+          "zh": "木板在商店裡。"
         }
       ],
       "definition": "（名）板子；董事會；膳食；（動）登上（交通工具）；寄宿",
@@ -63745,6 +63987,11 @@
           "guid": "0627e4e7-6a13-5b7f-95b1-909608ff426c",
           "en": "Farmers cultivate fields of yellow corn throughout the fertile valley.",
           "zh": "農民在肥沃的山谷各處種植了大片黃金玉米田。"
+        },
+        {
+          "guid": "a655ec3d-fc45-58fb-bfc6-1bf0bab1b16a",
+          "en": "The corn is on the fork.",
+          "zh": "玉米在叉子上。"
         }
       ],
       "definition": "玉米",
@@ -74228,6 +74475,11 @@
           "guid": "5e0f3b6c-af17-5c15-8916-3116938a95b0",
           "en": "The lively baby goat leaped playfully around the farm enclosure.",
           "zh": "活潑的小山羊在農場圍欄周圍歡快地蹦蹦跳跳。"
+        },
+        {
+          "guid": "91dc6218-e462-56f5-82a6-82915eb9f63d",
+          "en": "The goat is in the boat.",
+          "zh": "山羊在小船裡。"
         }
       ],
       "definition": "山羊",
@@ -86033,6 +86285,11 @@
           "guid": "3a31d6d2-9883-5bd4-ae62-ec4469110f24",
           "en": "Please underline the phrase that describes the dog.",
           "zh": "請在描述那隻狗的片語下面畫線。"
+        },
+        {
+          "guid": "e93d7322-7f4d-574a-90a8-f45a8943eb7a",
+          "en": "Say the phrase.",
+          "zh": "說出這個片語。"
         }
       ],
       "definition": "（名）片語；短語；措辭；（動）措辭；表達",
@@ -93883,6 +94140,11 @@
           "guid": "d739f9a5-3c83-5de4-bb2e-d6c1adb41cde",
           "en": "Banning shark fin trading in international markets is crucial for ending destructive high-seas finning.",
           "zh": "在國際公約全面禁止魚翅貿易與非法捕撈，是終結公海上殘忍割鰭棄鯊惡劣行徑的關鍵一步。"
+        },
+        {
+          "guid": "aeb94e6c-061b-522f-afc7-5c1afe9f77b4",
+          "en": "A shark has a dark fin.",
+          "zh": "一隻鯊魚有深色的鰭。"
         }
       ],
       "definition": "威風凜凜的大洋巨獸沙虎鯊與鯨鯊；鯊魚",
@@ -94374,6 +94636,11 @@
           "guid": "62c8e3bd-6c3e-5b79-b223-296e3f5fab4a",
           "en": "He shut his book and went outside.",
           "zh": "他闔上書後走到外面。"
+        },
+        {
+          "guid": "d82dfd76-c86e-59fd-bab2-4ad62e8dd628",
+          "en": "Shut the shop.",
+          "zh": "把商店關上。"
         }
       ],
       "definition": "（動）關閉；合上；（形）關閉的",
@@ -97320,6 +97587,11 @@
           "guid": "c0362d63-0f4b-51dc-84f2-d8a50cfcd0e1",
           "en": "The innovative startup took the global smartphone market by storm.",
           "zh": "這家創新型新創企業在全球智慧型手機市場掀起了一股強大風潮。"
+        },
+        {
+          "guid": "273e555b-abcd-5190-8304-50c28f2abeb5",
+          "en": "The storm is short.",
+          "zh": "這場暴風雨持續的時間很短。"
         }
       ],
       "definition": "暴風雨；風暴",
@@ -98876,6 +99148,11 @@
           "guid": "961d8397-2da1-5451-8c11-7bbb9010005a",
           "en": "Dolphins can swim effortlessly at high speeds through ocean currents.",
           "zh": "海豚能毫不費力地在洋流中高速游動。"
+        },
+        {
+          "guid": "c4023c9d-3b69-503d-93c6-f66f8e5ac341",
+          "en": "I can swim.",
+          "zh": "我會游泳。"
         }
       ],
       "definition": "游泳",
@@ -104597,6 +104874,11 @@
           "guid": "5ae45f0c-0972-5fb6-96b3-e5362cedbc47",
           "en": "Peaceful happiness comes from cultivating inner contentment within your own mind.",
           "zh": "真正的內心寧靜與平靜喜樂，來自於在自己的心靈深處耕耘知足與感恩。"
+        },
+        {
+          "guid": "e68c7d6c-e189-556f-aa3f-139ac3102ac3",
+          "en": "I will be back within two hours.",
+          "zh": "我會在兩小時內回來。"
         }
       ],
       "definition": "在…之內；在…範圍內",
@@ -104612,6 +104894,10 @@
         {
           "guid": "436d1824-f3fe-5f3e-8748-bc033f748c09",
           "en": "It can describe something inside a group. A team has different skills among its players. Each person contributes something helpful."
+        },
+        {
+          "guid": "e762852f-c5b4-59e1-9e09-9e9873388915",
+          "en": "Within a length of time means before or at the end of that period, not later."
         }
       ]
     },
@@ -122025,6 +122311,11 @@
           "guid": "969964be-f695-57b0-bfe0-86598d273d2a",
           "en": "Learn how to breathe steadily when practicing the flute.",
           "zh": "練習長笛時要學會如何穩定地調節呼吸。"
+        },
+        {
+          "guid": "d6dc85f0-f273-5400-86c3-c336fbfff16d",
+          "en": "Play a tune on the flute.",
+          "zh": "用長笛演奏一段曲調。"
         }
       ],
       "definition": "長笛；笛子",
@@ -123620,6 +123911,11 @@
           "guid": "4105fae5-8eff-59f7-9181-2cbb9addb1b9",
           "en": "Let us grab a snack after the game.",
           "zh": "我們比賽後去拿點心吃吧。"
+        },
+        {
+          "guid": "33049f29-3a5b-5bf6-9fb6-c0c028a1b87c",
+          "en": "Grab the drum and play.",
+          "zh": "拿起鼓來演奏。"
         }
       ],
       "definition": "（動）抓住；攫取；匆忙拿；（名）抓取",
@@ -132947,6 +133243,11 @@
           "guid": "2330c71b-2c78-54c3-b715-80a6f75b2749",
           "en": "A brown moth hid among the leaves.",
           "zh": "一隻棕色飛蛾躲在葉子間。"
+        },
+        {
+          "guid": "cc77c218-9cc9-5f4d-a25b-276bfd305515",
+          "en": "A moth is on the cloth.",
+          "zh": "一隻蛾在布上。"
         }
       ],
       "definition": "蛾；飛蛾",
@@ -146591,6 +146892,11 @@
           "guid": "2a29427f-5d02-5feb-9c2f-29e98ff25fcc",
           "en": "A fine spray covered the windshield.",
           "zh": "細小的水霧覆蓋了擋風玻璃。"
+        },
+        {
+          "guid": "86a92e36-5969-53e5-9465-fe71a5600bdb",
+          "en": "Spray the tub and scrub.",
+          "zh": "朝浴缸噴灑清潔噴霧，再用力刷洗。"
         }
       ],
       "definition": "（名）噴霧；噴霧器；（動）噴灑；噴射",
@@ -147948,6 +148254,11 @@
           "guid": "7be45b93-03a5-59f5-a979-820cdc706d6f",
           "en": "A strip of cloth was tied around the gift.",
           "zh": "一條布帶綁在禮物上。"
+        },
+        {
+          "guid": "1edf0c72-6231-5ba9-b87c-e79ffc68aecb",
+          "en": "Cut a strip.",
+          "zh": "剪下一條長條。"
         }
       ],
       "definition": "（名）長條；狹長地帶；漫畫；（動）剝去；拆除；脫衣。",
@@ -167657,6 +167968,11 @@
           "guid": "d02e2dc5-dcfb-5c8a-819a-81e434a2371b",
           "en": "Cut the cheese into small cubes for the salad.",
           "zh": "把起司切成小方塊放進沙拉裡。"
+        },
+        {
+          "guid": "9c12231f-bd49-546a-9e4c-57cef5ece808",
+          "en": "The cube is red.",
+          "zh": "這個立方體是紅色的。"
         }
       ],
       "definition": "（名）立方體；方塊；（動）切成小方塊",
@@ -192829,6 +193145,11 @@
           "guid": "c7c12495-e326-5f86-bb6c-b813045b6e90",
           "en": "He cut a plum into small pieces for the salad.",
           "zh": "他把李子切成小塊放進沙拉裡。"
+        },
+        {
+          "guid": "9dda17c6-f7f9-57ea-a071-575f7d5b6b99",
+          "en": "Put the plum on the plate.",
+          "zh": "把李子放到盤子上。"
         }
       ],
       "definition": "（名）李子；李樹結出的圓形果實，果肉多汁，成熟時可呈紫、紅或黃等色。",
@@ -237674,6 +237995,11 @@
           "guid": "bbd82795-72d5-5ac1-bd34-a9906e591e49",
           "en": "Network engineers patched all company servers over the weekend.",
           "zh": "網路工程師利用週末期間修補了公司所有的伺服器。"
+        },
+        {
+          "guid": "d73c303a-9e4e-517f-b469-d5a5110aa03f",
+          "en": "The patch is on the hat.",
+          "zh": "補丁在帽子上。"
         }
       ],
       "definition": "安全補丁；更新修補程式；修補",
@@ -307992,6 +308318,11 @@
           "guid": "30a23f0a-9d06-5e54-a8a3-096119123269",
           "en": "She pedaled her vintage city bike along the tree-lined avenue toward the central market.",
           "zh": "她沿著綠樹成蔭的大道踩著她的復古城市腳踏車前往中央市集。"
+        },
+        {
+          "guid": "96edfb64-5bbe-58b2-a6eb-de450c63a2e2",
+          "en": "I like the bike.",
+          "zh": "我喜歡這輛腳踏車。"
         }
       ],
       "definition": "腳踏車；自行車",
@@ -309755,6 +310086,11 @@
           "guid": "7461775e-76f1-5a40-9962-4ae4958fdcab",
           "en": "The receptionist answered the phone with a polite greeting.",
           "zh": "櫃檯接待員以禮貌的問候語接聽了電話。"
+        },
+        {
+          "guid": "4bc71876-d179-569f-96dc-61855deabe1a",
+          "en": "The phone is on the desk.",
+          "zh": "電話在書桌上。"
         }
       ],
       "definition": "電話；打電話",
@@ -478865,6 +479201,1703 @@
         "Houses & apartments"
       ],
       "scenario": []
+    },
+    {
+      "id": 9218,
+      "guid": "6fdadfd0-12b1-576d-9e70-8935d1b5e24c",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [],
+      "word": "dune",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "沙丘；風堆積沙子形成的小山丘。",
+      "explains": [
+        {
+          "guid": "c6a1c8c6-972f-5018-a5c5-16319004cec4",
+          "en": "A dune is a hill of sand formed by the wind. Dunes are often found in deserts or near the sea."
+        },
+        {
+          "guid": "0911ea0a-8280-5d4f-a6ca-c2856add5c60",
+          "en": "This noun names a mound of sand. The wind can slowly change its shape or move it across the ground."
+        },
+        {
+          "guid": "fbb737b5-e626-590e-856c-c68ba246fc7a",
+          "en": "A dune is a natural pile of sand with sloping sides. Plants may grow on it and help hold the sand in place."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "1e8fc5a1-79bb-58ff-b0de-8f2702affcda",
+          "en": "The dune is near the beach.",
+          "zh": "這座沙丘在海灘附近。"
+        },
+        {
+          "guid": "719f1c2f-1c74-563c-8d69-faddf062508f",
+          "en": "We walked up the sandy dune.",
+          "zh": "我們走上了沙丘。"
+        },
+        {
+          "guid": "1c9e2229-a58c-5dad-9e47-c9541ed287fc",
+          "en": "The wind changed the shape of the dune.",
+          "zh": "風吹改變了沙丘的形狀。"
+        }
+      ]
+    },
+    {
+      "id": 9219,
+      "guid": "048e3d74-d5fe-51a1-85cd-079d1fd684ef",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [],
+      "word": "oar",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "槳；用手划動小船的長柄工具，一端寬而扁平。",
+      "explains": [
+        {
+          "guid": "3f037f6f-ffd8-5623-98f7-71587f3aa797",
+          "en": "An oar is a long pole with a wide, flat end. A person pushes it through the water to move a small boat."
+        },
+        {
+          "guid": "24fb9d80-7dba-5ae5-ad26-2cdd006f77bc",
+          "en": "This noun names a tool used for rowing. A rower holds one end and puts the broad blade into the water."
+        },
+        {
+          "guid": "3c2ee089-6aed-5381-99c6-57c38cdf06bb",
+          "en": "An oar helps a person move or turn a boat by hand. It can be made of wood or another strong, light material."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "8c0b69bf-c824-5d8f-a907-650f81bdb9ea",
+          "en": "The oar is in the boat.",
+          "zh": "槳在船裡。"
+        },
+        {
+          "guid": "3ba6c472-0b2d-5ad0-9acc-ca291342a5c4",
+          "en": "He used an oar to move the boat.",
+          "zh": "他用一支槳划動小船。"
+        },
+        {
+          "guid": "754e3b53-938e-5e80-b716-a645fb9fb99c",
+          "en": "She lifted the oar out of the water.",
+          "zh": "她把槳從水裡提起。"
+        },
+        {
+          "guid": "2b961a82-485f-5016-8002-7bacd90b13f6",
+          "en": "The oar is on the shore.",
+          "zh": "船槳在岸邊。"
+        }
+      ]
+    },
+    {
+      "id": 9220,
+      "guid": "d3bc195e-695d-58a1-b64b-7f019497ffba",
+      "word": "cats",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "貓（複數）；cat 的複數。",
+      "explains": [
+        {
+          "guid": "b5d2ef77-916b-5e3e-a5a4-e861b2343d88",
+          "en": "Cats are small animals that many people keep as pets."
+        },
+        {
+          "guid": "f3386d87-68a5-5738-ab0c-8b505c0a4089",
+          "en": "Cats is the plural form of cat."
+        },
+        {
+          "guid": "3c8c00c5-2cc2-5a68-a4c3-1a1d97651b61",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7215bb23-7b6e-562b-bbd0-18abb6ca252c",
+          "en": "The cats nap.",
+          "zh": "這些貓在小睡。"
+        },
+        {
+          "guid": "fed550a6-4e75-5673-9058-360acd459c3d",
+          "en": "Two cats sit by the door.",
+          "zh": "兩隻貓坐在門邊。"
+        },
+        {
+          "guid": "7dd368ba-b28f-5a30-b10f-dc23519d1ec7",
+          "en": "I can see three cats.",
+          "zh": "我看得到三隻貓。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9221,
+      "guid": "4132a3c1-b6ca-59b2-926f-ecbd766157be",
+      "word": "caps",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "帽子（複數）；cap 的複數。",
+      "explains": [
+        {
+          "guid": "855e954c-3ac2-59e2-8ddd-e73981b53eb5",
+          "en": "Caps are soft hats that often have a short brim at the front."
+        },
+        {
+          "guid": "600670f4-0c93-58a2-8a11-b8f1fda4cfbc",
+          "en": "Caps is the plural form of cap."
+        },
+        {
+          "guid": "e8b802b7-8f9b-554a-81ac-62dfe5d6c408",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "8775cf6f-bb9f-532e-98e0-791d2bec5705",
+          "en": "The caps are on the shelf.",
+          "zh": "這些帽子在架上。"
+        },
+        {
+          "guid": "83aefeca-5c87-5fdb-9d9d-45b2f6605a67",
+          "en": "We wear caps in the sun.",
+          "zh": "我們在陽光下戴帽子。"
+        },
+        {
+          "guid": "b267ca4a-031e-5e9a-b273-f17822e903e8",
+          "en": "These caps are blue.",
+          "zh": "這些帽子是藍色的。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9222,
+      "guid": "edcebbe1-822c-58bf-ba1e-b4e0fc3bca92",
+      "word": "maps",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "地圖（複數）；map 的複數。",
+      "explains": [
+        {
+          "guid": "68420e64-900f-52e4-9148-04b08e816d8c",
+          "en": "Maps are drawings that show places and help people find their way."
+        },
+        {
+          "guid": "1dca9234-1d99-56da-8429-a4692b141081",
+          "en": "Maps is the plural form of map."
+        },
+        {
+          "guid": "0fd2b69b-3bfd-5a4f-8b3f-f28a86d53b23",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "5f1b66dc-a9ef-568d-a63d-cfc941a0f967",
+          "en": "The maps are in my bag.",
+          "zh": "這些地圖在我的袋子裡。"
+        },
+        {
+          "guid": "1b51dc0f-cbc1-5141-aab2-c6f3e6e2b576",
+          "en": "We use maps to find the park.",
+          "zh": "我們用地圖找公園。"
+        },
+        {
+          "guid": "ae423bdf-c2de-534a-a725-f4e3bf16ce77",
+          "en": "These maps show the town.",
+          "zh": "這些地圖標示了這個城鎮。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9223,
+      "guid": "4f054135-21cd-5d40-9a38-07aecb5cd1e1",
+      "word": "cups",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "杯子（複數）；cup 的複數。",
+      "explains": [
+        {
+          "guid": "fc3d9bc0-c9d8-50d8-8c86-afc13ff05a51",
+          "en": "Cups are small containers used for drinking."
+        },
+        {
+          "guid": "955a85e6-c6bd-5e33-90b1-5e5ae978efc3",
+          "en": "Cups is the plural form of cup."
+        },
+        {
+          "guid": "3d2b79ed-a658-5517-bf2d-58276dcf4058",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "ca9ebb27-a28b-5692-8bb6-f2117a23a98a",
+          "en": "The cups are on the table.",
+          "zh": "這些杯子在桌上。"
+        },
+        {
+          "guid": "e0fd67ba-444b-580c-b57e-1abdbce53d17",
+          "en": "Please wash these cups.",
+          "zh": "請洗這些杯子。"
+        },
+        {
+          "guid": "9d4c4558-d8d6-575a-9626-107f504f6692",
+          "en": "We need two cups.",
+          "zh": "我們需要兩個杯子。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9224,
+      "guid": "21d6c5cb-be27-5e1e-a5b8-abfd019ff640",
+      "word": "pigs",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "豬（複數）；pig 的複數。",
+      "explains": [
+        {
+          "guid": "c1b030a4-efc0-5464-a26f-67e29ef7c475",
+          "en": "Pigs are farm animals with short legs and a wide nose."
+        },
+        {
+          "guid": "14dc780f-8a07-5b75-a5a4-f7fc598f9677",
+          "en": "Pigs is the plural form of pig."
+        },
+        {
+          "guid": "7e092440-462c-5930-bd7b-c125aacc5b47",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "30c69a82-30b3-56cc-b167-ff9fc39a0065",
+          "en": "The pigs sit on the beds.",
+          "zh": "這些豬坐在床上。"
+        },
+        {
+          "guid": "95860232-9429-54b6-946e-99414a26b6d4",
+          "en": "The pigs are in the pen.",
+          "zh": "這些豬在豬圈裡。"
+        },
+        {
+          "guid": "c09b68c1-6366-536e-8a13-198b04122e5c",
+          "en": "Three pigs eat together.",
+          "zh": "三隻豬一起吃東西。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9225,
+      "guid": "cf780cb1-9c62-53a2-ad85-15188cf9b9aa",
+      "word": "dogs",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "狗（複數）；dog 的複數。",
+      "explains": [
+        {
+          "guid": "395ee705-4f7e-5c35-a2bd-b5aa995afa8c",
+          "en": "Dogs are animals that many people keep as pets."
+        },
+        {
+          "guid": "657aa1e1-e7ae-52d5-afa1-1b9515cd4798",
+          "en": "Dogs is the plural form of dog."
+        },
+        {
+          "guid": "4c6db31c-f23d-58db-98d5-05d3778a4b9f",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "726dbff3-9784-5343-bbb5-9f2c309b254b",
+          "en": "The dogs run in the park.",
+          "zh": "這些狗在公園裡跑。"
+        },
+        {
+          "guid": "1a105fef-98a4-5fab-80fe-a16f669e9323",
+          "en": "Two dogs play with a ball.",
+          "zh": "兩隻狗玩球。"
+        },
+        {
+          "guid": "7d6efc02-d556-5bd3-94e3-cc5d13c61e93",
+          "en": "Our dogs sleep here.",
+          "zh": "我們的狗睡在這裡。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9226,
+      "guid": "92efb0a4-7c32-508e-9788-42c4b804e8e1",
+      "word": "pens",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "筆（複數）；pen 的複數。",
+      "explains": [
+        {
+          "guid": "d1ea0e8e-9e5a-5250-ac8d-3e8c4651dae9",
+          "en": "Pens are tools used for writing with ink."
+        },
+        {
+          "guid": "586d72ec-bf9e-5b11-adb4-226c14dc65b0",
+          "en": "Pens is the plural form of pen."
+        },
+        {
+          "guid": "53015c06-3b60-5959-aadf-b3c1c89ae174",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "cc190f31-37d9-5602-8638-033826587c58",
+          "en": "The pens are on the desk.",
+          "zh": "這些筆在書桌上。"
+        },
+        {
+          "guid": "ff222128-5109-5ebe-8b1f-15adb73eba37",
+          "en": "I have two black pens.",
+          "zh": "我有兩支黑筆。"
+        },
+        {
+          "guid": "d3bef324-f0eb-5471-8d41-984cb556042f",
+          "en": "Please put the pens in the box.",
+          "zh": "請把這些筆放進盒子。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9227,
+      "guid": "61bde512-aa13-5066-9146-37e17a2baf6a",
+      "word": "beds",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "床（複數）；bed 的複數。",
+      "explains": [
+        {
+          "guid": "8567d2d3-9c0a-5733-9d4c-56734cb6088c",
+          "en": "Beds are pieces of furniture used for sleeping."
+        },
+        {
+          "guid": "c0369c3a-17b0-513e-962b-c7d0d4cf8259",
+          "en": "Beds is the plural form of bed."
+        },
+        {
+          "guid": "73275241-6260-538c-bfae-529082923a38",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "48c03da6-5e26-593c-8dda-5172f8831eb7",
+          "en": "The beds are soft.",
+          "zh": "這些床很柔軟。"
+        },
+        {
+          "guid": "ad9ddcdd-3089-50fa-a9ff-69b6aa31fc94",
+          "en": "There are two beds in the room.",
+          "zh": "房間裡有兩張床。"
+        },
+        {
+          "guid": "7c4d43a0-e4c9-5e49-8ef6-afe2fb58dd86",
+          "en": "We made the beds this morning.",
+          "zh": "我們今天早上整理了床鋪。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9228,
+      "guid": "a378db33-c378-5144-b708-a773cbb2a3c6",
+      "word": "buses",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "公車（複數）；bus 的複數。",
+      "explains": [
+        {
+          "guid": "93741966-4bb6-584d-b89a-7848347dcf68",
+          "en": "Buses are large vehicles that carry many passengers."
+        },
+        {
+          "guid": "87dc1a2b-2e9a-533d-8236-96f56ec8183e",
+          "en": "Buses is the plural form of bus."
+        },
+        {
+          "guid": "e7168f38-29e3-579d-82ad-dd7195c201ff",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "53599443-5e9e-57a2-9fa9-a3c3af44b14d",
+          "en": "The buses stop here.",
+          "zh": "這些公車在這裡停靠。"
+        },
+        {
+          "guid": "5a71d31d-91a9-5895-aa4e-a7a8e31a3c25",
+          "en": "Two buses are at the station.",
+          "zh": "車站有兩輛公車。"
+        },
+        {
+          "guid": "584e413b-4998-5796-87ac-bdb04419d8b5",
+          "en": "We take buses to school.",
+          "zh": "我們搭公車上學。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9229,
+      "guid": "7ece530c-b63c-5799-a45b-12119d1ab881",
+      "word": "dishes",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "盤子（複數）；dish 的複數。",
+      "explains": [
+        {
+          "guid": "08df9185-1331-58d3-8884-01d2497708f3",
+          "en": "Dishes are plates or bowls used for serving or eating food."
+        },
+        {
+          "guid": "1a84b739-8bfc-5f4b-9a36-08906f04e0cb",
+          "en": "Dishes is the plural form of dish."
+        },
+        {
+          "guid": "bfe4e805-f025-5b27-bd11-c110689579b8",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "993bb49c-a902-5942-814a-fdb790d19369",
+          "en": "The dishes are in the boxes.",
+          "zh": "這些盤子在箱子裡。"
+        },
+        {
+          "guid": "ec31f86b-53f9-5c33-9c7a-669c9c7d0565",
+          "en": "I wash the dishes after dinner.",
+          "zh": "我晚餐後洗碗盤。"
+        },
+        {
+          "guid": "60d170a2-6560-5a14-93da-e5a839fa5263",
+          "en": "Put the clean dishes on the shelf.",
+          "zh": "把乾淨的盤子放到架上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9230,
+      "guid": "874d4ca3-b8f6-5875-a318-601edc17d5ac",
+      "word": "wishes",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "願望（複數）；wish 的複數。",
+      "explains": [
+        {
+          "guid": "26b25abb-7b5a-5ee5-a9a3-b8236261bc1d",
+          "en": "Wishes are things that someone hopes will happen."
+        },
+        {
+          "guid": "79ec70c2-1e8f-50c6-9f14-0c9bb61e7da2",
+          "en": "Wishes is the plural form of wish."
+        },
+        {
+          "guid": "f870e3ae-0cd0-5f88-a7fa-d5b48ef1770e",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "e2bd6f62-3d44-5ae0-b40e-5d7b290277e1",
+          "en": "She made three wishes.",
+          "zh": "她許了三個願望。"
+        },
+        {
+          "guid": "db049884-35f5-5710-9b22-f029f7160587",
+          "en": "His wishes came true.",
+          "zh": "他的願望成真了。"
+        },
+        {
+          "guid": "8a082172-55df-5813-916e-3480e2a82706",
+          "en": "We wrote our wishes on paper.",
+          "zh": "我們把願望寫在紙上。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9231,
+      "guid": "25caf86f-3c45-5f18-9850-0a68fa3206b4",
+      "word": "foxes",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "狐狸（複數）；fox 的複數。",
+      "explains": [
+        {
+          "guid": "d0205ebc-035b-5a89-8101-76d6a570097e",
+          "en": "Foxes are wild animals with pointed ears and a long, bushy tail."
+        },
+        {
+          "guid": "803477d5-f974-5e1e-bf22-699b748fa495",
+          "en": "Foxes is the plural form of fox."
+        },
+        {
+          "guid": "486b4101-6c20-5ffa-9e92-b5654931359f",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "910870a6-e6e9-5bb1-9f28-40f3b9b4b816",
+          "en": "The foxes run.",
+          "zh": "這些狐狸在跑。"
+        },
+        {
+          "guid": "d7db56aa-77c6-5688-9f9b-595772874c16",
+          "en": "Two foxes hide in the woods.",
+          "zh": "兩隻狐狸躲在樹林裡。"
+        },
+        {
+          "guid": "28bd087e-102c-51f6-a7b9-ffe20a532424",
+          "en": "We saw foxes near the farm.",
+          "zh": "我們在農場附近看到了狐狸。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9232,
+      "guid": "41e6a9a2-771c-591b-ba4a-d07303d4f7a7",
+      "word": "boxes",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "箱子（複數）；box 的複數。",
+      "explains": [
+        {
+          "guid": "b0198c0b-ee2d-5704-bbb0-91d1bd9d572c",
+          "en": "Boxes are containers with flat sides used for holding things."
+        },
+        {
+          "guid": "89a4a382-d5f6-5ffb-b337-c4b0d424f7c3",
+          "en": "Boxes is the plural form of box."
+        },
+        {
+          "guid": "48242a9e-ec87-5476-8847-bc32ee5e67c4",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "a07d92c8-65a3-592c-9392-2bea340e8129",
+          "en": "The boxes are empty.",
+          "zh": "這些箱子是空的。"
+        },
+        {
+          "guid": "1ba554f8-a72e-51cf-9d01-4baf751e221a",
+          "en": "We put the books in boxes.",
+          "zh": "我們把書放進箱子。"
+        },
+        {
+          "guid": "00dafa81-b7a8-5a1f-8650-95df6c7d42b0",
+          "en": "Three boxes are by the door.",
+          "zh": "門邊有三個箱子。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9233,
+      "guid": "2a45fb4d-8672-5312-add6-30f0ee0f5e3e",
+      "word": "matches",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "火柴（複數）；match 的複數。",
+      "explains": [
+        {
+          "guid": "9edb06c2-87d7-5bbe-a98e-370e995e6ba3",
+          "en": "Matches are small sticks with tips that make a flame when rubbed against a suitable surface."
+        },
+        {
+          "guid": "a75e7f68-0c06-5d7f-8db8-b6d0be346ed7",
+          "en": "Matches is the plural form of match."
+        },
+        {
+          "guid": "0f254bf1-d84f-514d-bda6-d670c0c438ad",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "c75a9f30-d5c0-508c-b569-f3e47993a21b",
+          "en": "Keep matches away from children.",
+          "zh": "請把火柴放在兒童拿不到的地方。"
+        },
+        {
+          "guid": "b741f74d-b03c-51ba-ab3f-1883c573b9b3",
+          "en": "The matches are in a small box.",
+          "zh": "這些火柴在一個小盒子裡。"
+        },
+        {
+          "guid": "a8b3913d-21a7-55d6-bc3e-459b151839ee",
+          "en": "These matches are dry.",
+          "zh": "這些火柴是乾的。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9234,
+      "guid": "9f050fda-881b-5277-a90a-64091adb546a",
+      "word": "catches",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "接住（第三人稱單數）；catch 的現在式第三人稱單數。",
+      "explains": [
+        {
+          "guid": "7a611969-75c8-59cc-aa15-37937abe3fb0",
+          "en": "Catches means takes hold of something that is moving through the air."
+        },
+        {
+          "guid": "2197390e-c2df-5774-941d-67c911666e1b",
+          "en": "Catches is the third-person singular present form of catch."
+        },
+        {
+          "guid": "ef1b4dfe-30c1-513d-b84d-43c8f1fa1cef",
+          "en": "Use catches with he, she, it, or a singular subject when talking about a usual action."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "0bfd1d1a-e51f-52eb-8cf1-e67a7a91a776",
+          "en": "She catches the ball.",
+          "zh": "她接住球。"
+        },
+        {
+          "guid": "de44b0ae-2cd7-55f5-9e27-4d4d21fe8dcf",
+          "en": "He catches a leaf as it falls.",
+          "zh": "他接住一片落下的葉子。"
+        },
+        {
+          "guid": "f93e5e2b-0134-5492-a184-9ee83364bb29",
+          "en": "The player catches the ball with both hands.",
+          "zh": "這位球員用雙手接住球。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9235,
+      "guid": "731326f1-21f9-56ad-8940-2b455c783f4b",
+      "word": "benches",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "長椅（複數）；bench 的複數。",
+      "explains": [
+        {
+          "guid": "3e976388-c797-5e61-9253-772bb4a7c995",
+          "en": "Benches are long seats for two or more people."
+        },
+        {
+          "guid": "aa28eba9-c800-51e0-8996-35a03e41cc0d",
+          "en": "Benches is the plural form of bench."
+        },
+        {
+          "guid": "e124bb2b-2a7d-554b-8edc-41549d1f47db",
+          "en": "Use this plural noun when talking about more than one."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "61d7a68c-ba18-529a-9126-abcf6d30ce8a",
+          "en": "The benches are in the park.",
+          "zh": "這些長椅在公園裡。"
+        },
+        {
+          "guid": "1ac8cb7e-a1a4-57cc-a567-295654fdbc24",
+          "en": "We sit on the benches.",
+          "zh": "我們坐在長椅上。"
+        },
+        {
+          "guid": "1d767833-c165-5ab5-a4ed-f21b65b0bc19",
+          "en": "Two benches stand by the path.",
+          "zh": "小路旁有兩張長椅。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9236,
+      "guid": "f586d800-7652-5c21-a0c7-37e9fbebe10a",
+      "word": "tapped",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "輕拍了（tap 的過去式）；tap 的規則過去式。",
+      "explains": [
+        {
+          "guid": "5362b397-8a51-5363-891a-e0caa3fc8efe",
+          "en": "Tapped means touched something lightly, often with a finger."
+        },
+        {
+          "guid": "e26d4b20-79c8-5ab0-8440-79ac9fd85e74",
+          "en": "Tapped is the simple past form of tap."
+        },
+        {
+          "guid": "9e911495-6268-53af-a5cb-8135b1f5e53c",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "4504c246-087c-594d-a7b8-47b7ed889a28",
+          "en": "She tapped the desk.",
+          "zh": "她輕敲了書桌。"
+        },
+        {
+          "guid": "130441dc-6035-5d43-bb9b-8a4838df86b5",
+          "en": "I tapped his arm gently.",
+          "zh": "我輕輕拍了他的手臂。"
+        },
+        {
+          "guid": "cba18064-d2df-59a7-b65e-71d943cfcd0a",
+          "en": "He tapped on the door.",
+          "zh": "他輕敲了門。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9237,
+      "guid": "defcc14f-f54b-5a72-acc8-2ca95727bfea",
+      "word": "packed",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "打包了（pack 的過去式）；pack 的規則過去式。",
+      "explains": [
+        {
+          "guid": "9578c601-2f03-51fe-9a35-86947244cd61",
+          "en": "Packed means put things into a bag, box, or other container."
+        },
+        {
+          "guid": "aaec0cd0-6473-5ecd-9151-fd53adf36923",
+          "en": "Packed is the simple past form of pack."
+        },
+        {
+          "guid": "2ab02f9a-79ac-59db-99aa-c2b6a577e021",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "7decb2c0-a11a-5682-95e1-5039f1fa9439",
+          "en": "I packed my bag.",
+          "zh": "我打包好了袋子。"
+        },
+        {
+          "guid": "5e04353f-c1b6-5188-b680-6c7b7ef9f993",
+          "en": "She packed lunch for us.",
+          "zh": "她為我們裝好了午餐。"
+        },
+        {
+          "guid": "6c92d2fa-50c1-542b-ba17-32906083628a",
+          "en": "We packed the books in a box.",
+          "zh": "我們把書裝進了箱子。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9238,
+      "guid": "c1411cc8-359d-5be8-a6d8-c26492a0b1d8",
+      "word": "jumped",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "跳了（jump 的過去式）；jump 的規則過去式。",
+      "explains": [
+        {
+          "guid": "96839d79-bbe5-53c2-a836-0c2b6daaf096",
+          "en": "Jumped means pushed off the ground with the legs and moved through the air."
+        },
+        {
+          "guid": "935fee4a-33ac-5c5b-8819-a8d6ac3047a6",
+          "en": "Jumped is the simple past form of jump."
+        },
+        {
+          "guid": "4060a6cf-bd2e-5854-8d4c-bee2a2cb77e0",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "d9efee0c-a7f3-5b2d-b1b2-c4fd20bdddd8",
+          "en": "The dog jumped.",
+          "zh": "這隻狗跳了。"
+        },
+        {
+          "guid": "6e997a84-7a94-5915-b7c1-1c8f6f91914d",
+          "en": "I jumped over the puddle.",
+          "zh": "我跳過了水窪。"
+        },
+        {
+          "guid": "56bb74fa-ac88-5fb3-960e-8a764e758b73",
+          "en": "She jumped up to catch the ball.",
+          "zh": "她跳起來接球。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9239,
+      "guid": "59aa5d10-042a-58b0-9d6f-3af8640c1389",
+      "word": "filled",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "裝滿了（fill 的過去式）；fill 的規則過去式。",
+      "explains": [
+        {
+          "guid": "b64eb614-8f09-5119-bc42-d59458d133f3",
+          "en": "Filled means put something into a container until it was full."
+        },
+        {
+          "guid": "e151ea2c-7688-5cb7-9663-b7d5c6edfebd",
+          "en": "Filled is the simple past form of fill."
+        },
+        {
+          "guid": "6bcda806-e0f1-5cc1-a0da-33bf9c611361",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "9e16239b-3f91-5b9e-a76e-b3c7b8a225bf",
+          "en": "He filled the cup with water.",
+          "zh": "他把杯子裝滿了水。"
+        },
+        {
+          "guid": "0cf1b7f1-0049-518e-a447-6f7316ae8b3d",
+          "en": "We filled the box with toys.",
+          "zh": "我們把箱子裝滿了玩具。"
+        },
+        {
+          "guid": "d9efc378-66ba-5523-9b20-9b1d39d82099",
+          "en": "She filled the bowl with rice.",
+          "zh": "她把碗裝滿了飯。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9240,
+      "guid": "47949d54-26d6-57f3-9540-5c722e8ecf22",
+      "word": "hummed",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "哼唱了（hum 的過去式）；hum 的規則過去式。",
+      "explains": [
+        {
+          "guid": "1fd6d971-a9c3-55a9-829a-7d4d08afa7d4",
+          "en": "Hummed means sang a tune with the lips closed."
+        },
+        {
+          "guid": "fa99e9cc-679e-59a8-97f6-67dee2563639",
+          "en": "Hummed is the simple past form of hum."
+        },
+        {
+          "guid": "30127219-fa67-5b83-8bd9-ef92d2d0b6ec",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "9b3f5f38-ac6e-5534-9741-9156145b13b7",
+          "en": "She hummed a song.",
+          "zh": "她哼唱了一首歌。"
+        },
+        {
+          "guid": "50783e5e-2d19-52cf-92a4-8d9b6005a0eb",
+          "en": "I hummed while I worked.",
+          "zh": "我工作時哼著歌。"
+        },
+        {
+          "guid": "7f493916-e10b-5d1d-978f-0f5efb23438b",
+          "en": "He hummed a quiet tune.",
+          "zh": "他輕聲哼唱了一段曲調。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9241,
+      "guid": "e9177592-6c04-54ec-afad-8834ee6da5ea",
+      "word": "played",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "玩了（play 的過去式）；play 的規則過去式。",
+      "explains": [
+        {
+          "guid": "2cdb0f9e-91c1-56b7-abb2-c5dc051bb85b",
+          "en": "Played means spent time enjoying a game or another fun activity."
+        },
+        {
+          "guid": "49533ebf-482f-543b-a576-906406426ef8",
+          "en": "Played is the simple past form of play."
+        },
+        {
+          "guid": "4770cf77-bce3-5f89-ada7-9b0d74944845",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "9671ba99-5234-5c61-ac3c-73d7b1fd825e",
+          "en": "I rested and played.",
+          "zh": "我休息了，也玩了。"
+        },
+        {
+          "guid": "15504666-4501-5785-8eb4-f41ff73094dd",
+          "en": "We played in the park.",
+          "zh": "我們在公園裡玩了。"
+        },
+        {
+          "guid": "238961fe-65a7-5223-9082-624ee0d12cd2",
+          "en": "She played with her friends.",
+          "zh": "她和朋友們玩了。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9242,
+      "guid": "41e977df-074b-5844-9bd3-51945662d24d",
+      "word": "landed",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "降落了（land 的過去式）；land 的規則過去式。",
+      "explains": [
+        {
+          "guid": "6f2cd5dd-a2a6-554e-b931-7c3c08791382",
+          "en": "Landed means came down onto the ground or another surface after moving through the air."
+        },
+        {
+          "guid": "99043ced-aa48-58ae-83a7-8dc1ce4d0e3c",
+          "en": "Landed is the simple past form of land."
+        },
+        {
+          "guid": "e71fe92a-d625-59fb-809b-b6be549d75ff",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "ca4a1083-39fd-5ab1-8631-1d45a561bcae",
+          "en": "The plane landed safely.",
+          "zh": "飛機安全降落了。"
+        },
+        {
+          "guid": "804ca08a-685e-5a94-8b41-70afe93c822f",
+          "en": "The bird landed on a branch.",
+          "zh": "鳥停落在樹枝上。"
+        },
+        {
+          "guid": "a5db5286-0282-55bf-abf7-61e2077bf354",
+          "en": "The ball landed in the grass.",
+          "zh": "球落在草地裡。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9243,
+      "guid": "62f2c2b6-3f8b-5dcd-8fa9-f2a7080a5958",
+      "word": "rested",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "休息了（rest 的過去式）；rest 的規則過去式。",
+      "explains": [
+        {
+          "guid": "51d40b99-9c33-5c79-9707-27374f14d0cd",
+          "en": "Rested means stopped working or moving for a while to relax."
+        },
+        {
+          "guid": "36a39611-de86-5371-aaa7-f4815202bb0f",
+          "en": "Rested is the simple past form of rest."
+        },
+        {
+          "guid": "2e3370d8-7b31-55c2-ae38-cc1e34c65614",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "6cb59932-7999-57a8-b20d-3a6793ae5d21",
+          "en": "I rested and played.",
+          "zh": "我休息了，也玩了。"
+        },
+        {
+          "guid": "aa98dda7-83ff-5734-962e-37f3afd37fde",
+          "en": "We rested under a tree.",
+          "zh": "我們在樹下休息了。"
+        },
+        {
+          "guid": "dfc2a145-f837-5ca6-b19b-1b74d9069bcd",
+          "en": "She rested after the walk.",
+          "zh": "她散步後休息了。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9244,
+      "guid": "8760190a-1759-5401-bc68-12e1ca880ecb",
+      "word": "needed",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "需要了（need 的過去式）；need 的規則過去式。",
+      "explains": [
+        {
+          "guid": "fc2dd609-4ccf-5191-a186-230a5333e072",
+          "en": "Needed means had to have something or required help."
+        },
+        {
+          "guid": "444212ef-d396-5b51-a702-f589cd12d742",
+          "en": "Needed is the simple past form of need."
+        },
+        {
+          "guid": "1db169ce-5569-598d-b23b-f3ec4bd98308",
+          "en": "Use this simple past form to describe an action or situation in the past."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "106ef19a-e49c-50b5-a38e-4f50daba23b6",
+          "en": "I needed a pen.",
+          "zh": "我當時需要一支筆。"
+        },
+        {
+          "guid": "1563eac4-e1e1-5306-8baa-180ec43cb569",
+          "en": "She needed help with the box.",
+          "zh": "她當時需要人幫忙搬箱子。"
+        },
+        {
+          "guid": "c803adca-8f61-5a8c-914a-81ad95262b67",
+          "en": "We needed more time.",
+          "zh": "我們當時需要更多時間。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9245,
+      "guid": "2a4923f1-dde9-5744-8b85-7bf95cdd8159",
+      "word": "jumping",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在跳；jump 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "051b2aa9-44db-50b7-b319-cff7eece7a0a",
+          "en": "Jumping means pushing off the ground with the legs and moving through the air."
+        },
+        {
+          "guid": "d1f9b5c1-279b-5ef3-aa84-5ce6be3723ec",
+          "en": "Jumping is the -ing form of jump."
+        },
+        {
+          "guid": "3def72c8-683c-5f30-83de-f0d8bda98df5",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "4bd91067-463e-5312-9e0c-d47512cc1283",
+          "en": "The dog is jumping.",
+          "zh": "這隻狗正在跳。"
+        },
+        {
+          "guid": "b660ad89-c5f0-5153-98bd-fb2debe7cccb",
+          "en": "I am jumping over a line.",
+          "zh": "我正在跳過一條線。"
+        },
+        {
+          "guid": "7b90e6de-1086-5ba0-901c-280a2e550da2",
+          "en": "The children are jumping together.",
+          "zh": "孩子們正在一起跳。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9246,
+      "guid": "30c34a86-187e-576a-9a7c-359b9148ab74",
+      "word": "resting",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在休息；rest 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "459ee388-b601-56f5-bdfc-423866a551a2",
+          "en": "Resting means taking a break from work or movement."
+        },
+        {
+          "guid": "a21cee69-fe9d-528b-aacd-2d5e9d0a57ee",
+          "en": "Resting is the -ing form of rest."
+        },
+        {
+          "guid": "dccc742a-6001-5cd5-8e69-2d820087f6e8",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "8bc7b016-0874-56b9-a94e-e2a1cb3f8c42",
+          "en": "She is resting on the sofa.",
+          "zh": "她正在沙發上休息。"
+        },
+        {
+          "guid": "8c3c8184-d334-59d8-980a-a8bd4c443829",
+          "en": "We are resting after the game.",
+          "zh": "我們比賽後正在休息。"
+        },
+        {
+          "guid": "934b728b-45e5-541b-b2ce-22c73cb4bb38",
+          "en": "The dog is resting in the shade.",
+          "zh": "這隻狗正在陰影下休息。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9247,
+      "guid": "b52f3202-1e56-5db0-8aa5-db51af5c0bd3",
+      "word": "running",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在跑；run 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "235ba34f-4d01-5223-9ccb-79ed978d5147",
+          "en": "Running means moving quickly on foot, with steps in which both feet leave the ground."
+        },
+        {
+          "guid": "b221e474-45df-505f-84af-8c639cded8e3",
+          "en": "Running is the -ing form of run."
+        },
+        {
+          "guid": "a657e104-2550-56cf-b642-cdf45e9faefd",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "3c343cb3-6904-51ed-84a0-2b374c98a353",
+          "en": "The cat is running.",
+          "zh": "這隻貓正在跑。"
+        },
+        {
+          "guid": "0c24a38b-246c-5efe-b4cf-067909193b55",
+          "en": "He is running in the park.",
+          "zh": "他正在公園裡跑。"
+        },
+        {
+          "guid": "7213c4a8-1322-5ac6-bfe6-bfa8e4252bb3",
+          "en": "We are running to the gate.",
+          "zh": "我們正在跑向大門。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9248,
+      "guid": "61c7bc16-7f49-59f1-b061-3a868da4bc38",
+      "word": "hopping",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在單腳跳；hop 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "50f662c5-10ed-5f43-9575-4298029b312c",
+          "en": "Hopping means jumping on one foot or making short jumps."
+        },
+        {
+          "guid": "a224638d-01d1-5a3c-84ce-264d51036ffb",
+          "en": "Hopping is the -ing form of hop."
+        },
+        {
+          "guid": "bd6bdad9-874a-515c-af9f-af6bea362054",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "4b060f98-091f-5cd3-8604-d9676ac659f4",
+          "en": "The child is hopping on one foot.",
+          "zh": "這個孩子正在單腳跳。"
+        },
+        {
+          "guid": "4a0ba61e-f8a8-5188-a2c8-ea7a92666bc5",
+          "en": "A rabbit is hopping across the grass.",
+          "zh": "一隻兔子正一跳一跳地穿過草地。"
+        },
+        {
+          "guid": "6b16499c-58ca-58b2-9adb-781b206cf387",
+          "en": "I am hopping over a line.",
+          "zh": "我正在單腳跳過一條線。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9249,
+      "guid": "118b9802-54d4-5b55-ad1e-05451e488aca",
+      "word": "sitting",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在坐著；sit 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "d1bed847-042d-5c85-854d-667d7641637f",
+          "en": "Sitting means resting with the body supported by a seat or another surface."
+        },
+        {
+          "guid": "ac978285-6d25-537a-8cf9-a11cd3d68bd2",
+          "en": "Sitting is the -ing form of sit."
+        },
+        {
+          "guid": "434b1ec4-009e-50a4-96ba-05388a30f435",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "b1c6bafc-0431-535e-aca7-5c0c1bdb6f48",
+          "en": "The cat is sitting on the mat.",
+          "zh": "這隻貓正坐在墊子上。"
+        },
+        {
+          "guid": "e3fbc673-47ef-5210-a319-4d583331a5da",
+          "en": "We are sitting on a bench.",
+          "zh": "我們正坐在長椅上。"
+        },
+        {
+          "guid": "9f1768bc-5544-59e8-b0a7-af5a91060f06",
+          "en": "She is sitting beside me.",
+          "zh": "她正坐在我旁邊。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9250,
+      "guid": "3592596b-d6e0-55c7-8fea-76470b33126d",
+      "word": "making",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在製作；make 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "5d0be213-75c7-5dd7-908b-d1e448d290bd",
+          "en": "Making means creating, preparing, or producing something."
+        },
+        {
+          "guid": "29be241d-3541-545e-b90a-8e8dd2a72c43",
+          "en": "Making is the -ing form of make."
+        },
+        {
+          "guid": "840a1dfe-3b83-5e4a-8e69-647c616100ee",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "a19ce9b2-f16c-5f44-bd3f-f4be93d9d3ec",
+          "en": "I am making a map.",
+          "zh": "我正在製作一張地圖。"
+        },
+        {
+          "guid": "5c436ea2-2290-5d19-a2a6-a68bdac40b45",
+          "en": "She is making a paper boat.",
+          "zh": "她正在做一艘紙船。"
+        },
+        {
+          "guid": "50d13066-c3e2-5b72-ae31-e52e8875bfce",
+          "en": "We are making lunch.",
+          "zh": "我們正在準備午餐。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9251,
+      "guid": "7b0aaec2-d0f5-5741-97a3-93fc48ee2bcf",
+      "word": "riding",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在騎乘；ride 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "e1d29bfb-5bd1-5fb5-8603-fab3157a866c",
+          "en": "Riding means sitting on and controlling a bicycle, horse, or similar thing while it moves."
+        },
+        {
+          "guid": "aabb27bd-8972-5616-9223-5e9419db1a12",
+          "en": "Riding is the -ing form of ride."
+        },
+        {
+          "guid": "60854779-2a88-5b1c-a33b-4c64e7f50187",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "f0adccc1-3a5f-5a86-b117-fd0155be8a1c",
+          "en": "He is riding a bike.",
+          "zh": "他正在騎腳踏車。"
+        },
+        {
+          "guid": "3092d9b4-21c5-521f-b1f4-c75841cbfbe8",
+          "en": "She is riding a horse.",
+          "zh": "她正在騎馬。"
+        },
+        {
+          "guid": "db72a710-6e35-5cd3-aaf6-4c0001eeef63",
+          "en": "We are riding our bikes to the park.",
+          "zh": "我們正騎著腳踏車前往公園。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9252,
+      "guid": "15eab2b7-f88b-5b8d-930c-9691975f7a36",
+      "word": "playing",
+      "parts_of_speech": [
+        "v"
+      ],
+      "definition": "正在玩；play 的 -ing 形式。",
+      "explains": [
+        {
+          "guid": "5afaac63-6545-55eb-8730-a16d29db4a62",
+          "en": "Playing means taking part in a game or another enjoyable activity."
+        },
+        {
+          "guid": "795e90d9-bcb4-5217-8f2b-3991ff091724",
+          "en": "Playing is the -ing form of play."
+        },
+        {
+          "guid": "c23e506d-858d-5e2a-8d09-59a67f12ce62",
+          "en": "This -ing form can follow am, is, or are to describe an action that is happening."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "376347c4-5db9-5eda-849e-b009829f8170",
+          "en": "The children are playing in the park.",
+          "zh": "孩子們正在公園裡玩。"
+        },
+        {
+          "guid": "75db681f-7556-5ca0-9d4d-748b77911fdd",
+          "en": "I am playing with my dog.",
+          "zh": "我正在和我的狗玩。"
+        },
+        {
+          "guid": "fd9904f2-1029-54d0-b628-c9d86f0da3c9",
+          "en": "We are playing a game.",
+          "zh": "我們正在玩遊戲。"
+        }
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": []
+    },
+    {
+      "id": 9253,
+      "guid": "8f3a9c1c-fc8e-5494-b126-31fe95b29df8",
+      "word": "autumn",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "秋天；夏季與冬季之間的季節。",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [],
+      "explains": [
+        {
+          "guid": "c1ab9a13-b51b-59be-bbf8-680119166bcf",
+          "en": "Autumn is the season between summer and winter."
+        },
+        {
+          "guid": "22297cff-33bb-5719-a80a-c19aa923c040",
+          "en": "In autumn, leaves on many trees turn yellow, orange, or red."
+        },
+        {
+          "guid": "6ae034e1-cbad-559f-a883-d3ce9cbca8c3",
+          "en": "We use in before autumn when we talk about this season."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "c34207da-ebae-5b43-9157-643280d2592a",
+          "en": "Leaves fall in autumn.",
+          "zh": "樹葉在秋天落下。"
+        },
+        {
+          "guid": "112a180c-baa3-569d-bebc-0ed5e1b452d9",
+          "en": "We walk in the park in autumn.",
+          "zh": "我們在秋天到公園散步。"
+        },
+        {
+          "guid": "289ed02f-74b1-5785-bd3b-574dce529a23",
+          "en": "Autumn comes after summer.",
+          "zh": "秋天在夏天之後到來。"
+        }
+      ]
     }
   ]
 }

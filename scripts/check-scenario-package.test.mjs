@@ -292,3 +292,37 @@ test('不完整或型別錯誤的外部套件可回報 invalid，不拋例外', 
     assert.ok(result.errors.length > 0);
   }
 });
+
+
+test('圖解模式接受真實 prep 並要求含字底圖；普通模式保留無字與詞性 guard', async (t) => {
+  const f = await fixture(t);
+  f.pkg.learningMode = 'illustrated-guide';
+  f.pkg.targets = [{ ...f.pkg.targets[0], word: 'at', entryGuid: 'entry-at', teachingPos: 'prep', list: 'basic' }];
+  f.pkg.targetCount = 1;
+  f.entries.find(entry => entry.word === 'at').parts_of_speech = ['prep'];
+  await writeFile(f.sourceFile, JSON.stringify({ entries: f.entries }));
+  for (const sentence of f.pkg.story.sentences) for (const link of sentence.wordLinks) link.isTarget = link.word === 'at';
+  await ready(f);
+  assert.equal((await f.check()).valid, false); // 圖解不能誤標無字圖。
+  f.pkg.assets.baseImage.containsVocabularyText = true;
+  assert.equal((await f.check()).publishReady, true);
+  assert.equal((await f.run(['--require-publish-ready'])).status, 0);
+  for (const edit of [
+    pkg => { delete pkg.learningMode; },
+    pkg => { pkg.learningMode = 'other'; },
+    pkg => { pkg.assets.baseImage.containsVocabularyText = false; },
+    pkg => { delete pkg.assets.baseImage.containsVocabularyText; },
+    pkg => { pkg.assets.baseImage.reviewed = false; },
+    pkg => { pkg.targets[0].teachingPos = 'adv'; },
+    pkg => { pkg.targets[0].entryGuid = 'missing'; },
+  ]) {
+    const wrong = structuredClone(f.pkg); edit(wrong);
+    assert.equal((await f.check(wrong)).valid, false);
+  }
+  f.entries.find(entry => entry.word === 'at').parts_of_speech = ['n'];
+  await writeFile(f.sourceFile, JSON.stringify({ entries: f.entries }));
+  assert.equal((await f.check()).valid, false);
+  delete f.pkg.learningMode;
+  f.pkg.assets.baseImage.containsVocabularyText = false;
+  assert.equal((await f.check()).valid, false); // 普通模式即使無字仍不能用 prep。
+});

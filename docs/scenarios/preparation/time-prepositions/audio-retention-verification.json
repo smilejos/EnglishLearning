@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "isolatedTemporaryDirectory": true,
+  "fixtureOnlyNoGeneration": true,
+  "sameTextAndFileHashPreservesStoryAudio": true,
+  "preservesGenerationPlan": true,
+  "readOnlyCheckPassesWithAudio": true,
+  "mismatchedTextHashRejectedWithoutPackageOverwrite": true,
+  "mismatchedFileHashRejected": true,
+  "productionOrOriginalPackagesTouched": false
+}

@@ -1,0 +1,460 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "long-a",
+      "jobs": [
+        {
+          "key": "cake",
+          "kind": "word",
+          "text": "cake"
+        },
+        {
+          "key": "make",
+          "kind": "word",
+          "text": "make"
+        },
+        {
+          "key": "lake",
+          "kind": "word",
+          "text": "lake"
+        },
+        {
+          "key": "name",
+          "kind": "word",
+          "text": "name"
+        },
+        {
+          "key": "game",
+          "kind": "word",
+          "text": "game"
+        },
+        {
+          "key": "same",
+          "kind": "word",
+          "text": "same"
+        },
+        {
+          "key": "rain",
+          "kind": "word",
+          "text": "rain"
+        },
+        {
+          "key": "pain",
+          "kind": "word",
+          "text": "pain"
+        },
+        {
+          "key": "train",
+          "kind": "word",
+          "text": "train"
+        },
+        {
+          "key": "day",
+          "kind": "word",
+          "text": "day"
+        },
+        {
+          "key": "say",
+          "kind": "word",
+          "text": "say"
+        },
+        {
+          "key": "play",
+          "kind": "word",
+          "text": "play"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "Make a cake."
+        },
+        {
+          "key": "support-a-cake",
+          "kind": "support",
+          "text": "a cake"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The train is late."
+        },
+        {
+          "key": "support-the-train",
+          "kind": "support",
+          "text": "the train"
+        },
+        {
+          "key": "support-is-late",
+          "kind": "support",
+          "text": "is late"
+        }
+      ]
+    },
+    {
+      "id": "long-e",
+      "jobs": [
+        {
+          "key": "see",
+          "kind": "word",
+          "text": "see"
+        },
+        {
+          "key": "bee",
+          "kind": "word",
+          "text": "bee"
+        },
+        {
+          "key": "tree",
+          "kind": "word",
+          "text": "tree"
+        },
+        {
+          "key": "seed",
+          "kind": "word",
+          "text": "seed"
+        },
+        {
+          "key": "feed",
+          "kind": "word",
+          "text": "feed"
+        },
+        {
+          "key": "need",
+          "kind": "word",
+          "text": "need"
+        },
+        {
+          "key": "meat",
+          "kind": "word",
+          "text": "meat"
+        },
+        {
+          "key": "seat",
+          "kind": "word",
+          "text": "seat"
+        },
+        {
+          "key": "heat",
+          "kind": "word",
+          "text": "heat"
+        },
+        {
+          "key": "team",
+          "kind": "word",
+          "text": "team"
+        },
+        {
+          "key": "beam",
+          "kind": "word",
+          "text": "beam"
+        },
+        {
+          "key": "dream",
+          "kind": "word",
+          "text": "dream"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "I see a bee."
+        },
+        {
+          "key": "support-i-see",
+          "kind": "support",
+          "text": "I see"
+        },
+        {
+          "key": "support-a-bee",
+          "kind": "support",
+          "text": "a bee"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The seed is in the sun."
+        },
+        {
+          "key": "support-the-seed",
+          "kind": "support",
+          "text": "the seed"
+        },
+        {
+          "key": "support-is-in-the-sun",
+          "kind": "support",
+          "text": "is in the sun"
+        }
+      ]
+    },
+    {
+      "id": "long-i",
+      "jobs": [
+        {
+          "key": "bike",
+          "kind": "word",
+          "text": "bike"
+        },
+        {
+          "key": "like",
+          "kind": "word",
+          "text": "like"
+        },
+        {
+          "key": "hike",
+          "kind": "word",
+          "text": "hike"
+        },
+        {
+          "key": "ride",
+          "kind": "word",
+          "text": "ride"
+        },
+        {
+          "key": "hide",
+          "kind": "word",
+          "text": "hide"
+        },
+        {
+          "key": "wide",
+          "kind": "word",
+          "text": "wide"
+        },
+        {
+          "key": "high",
+          "kind": "word",
+          "text": "high"
+        },
+        {
+          "key": "sigh",
+          "kind": "word",
+          "text": "sigh"
+        },
+        {
+          "key": "light",
+          "kind": "word",
+          "text": "light"
+        },
+        {
+          "key": "night",
+          "kind": "word",
+          "text": "night"
+        },
+        {
+          "key": "right",
+          "kind": "word",
+          "text": "right"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "I like the bike."
+        },
+        {
+          "key": "support-i-like",
+          "kind": "support",
+          "text": "I like"
+        },
+        {
+          "key": "support-the-bike",
+          "kind": "support",
+          "text": "the bike"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The light is on at night."
+        },
+        {
+          "key": "support-the-light",
+          "kind": "support",
+          "text": "the light"
+        },
+        {
+          "key": "support-is-on",
+          "kind": "support",
+          "text": "is on"
+        },
+        {
+          "key": "support-at-night",
+          "kind": "support",
+          "text": "at night"
+        }
+      ]
+    },
+    {
+      "id": "long-o",
+      "jobs": [
+        {
+          "key": "hope",
+          "kind": "word",
+          "text": "hope"
+        },
+        {
+          "key": "rope",
+          "kind": "word",
+          "text": "rope"
+        },
+        {
+          "key": "bone",
+          "kind": "word",
+          "text": "bone"
+        },
+        {
+          "key": "cone",
+          "kind": "word",
+          "text": "cone"
+        },
+        {
+          "key": "stone",
+          "kind": "word",
+          "text": "stone"
+        },
+        {
+          "key": "boat",
+          "kind": "word",
+          "text": "boat"
+        },
+        {
+          "key": "coat",
+          "kind": "word",
+          "text": "coat"
+        },
+        {
+          "key": "goat",
+          "kind": "word",
+          "text": "goat"
+        },
+        {
+          "key": "low",
+          "kind": "word",
+          "text": "low"
+        },
+        {
+          "key": "slow",
+          "kind": "word",
+          "text": "slow"
+        },
+        {
+          "key": "snow",
+          "kind": "word",
+          "text": "snow"
+        },
+        {
+          "key": "grow",
+          "kind": "word",
+          "text": "grow"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The goat is in the boat."
+        },
+        {
+          "key": "support-the-goat",
+          "kind": "support",
+          "text": "the goat"
+        },
+        {
+          "key": "support-is-in-the-boat",
+          "kind": "support",
+          "text": "is in the boat"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "The boat is slow."
+        },
+        {
+          "key": "support-the-boat",
+          "kind": "support",
+          "text": "the boat"
+        },
+        {
+          "key": "support-is-slow",
+          "kind": "support",
+          "text": "is slow"
+        }
+      ]
+    },
+    {
+      "id": "long-u",
+      "jobs": [
+        {
+          "key": "cute",
+          "kind": "word",
+          "text": "cute"
+        },
+        {
+          "key": "mute",
+          "kind": "word",
+          "text": "mute"
+        },
+        {
+          "key": "cube",
+          "kind": "word",
+          "text": "cube"
+        },
+        {
+          "key": "tube",
+          "kind": "word",
+          "text": "tube"
+        },
+        {
+          "key": "tune",
+          "kind": "word",
+          "text": "tune"
+        },
+        {
+          "key": "dune",
+          "kind": "word",
+          "text": "dune"
+        },
+        {
+          "key": "rude",
+          "kind": "word",
+          "text": "rude"
+        },
+        {
+          "key": "flute",
+          "kind": "word",
+          "text": "flute"
+        },
+        {
+          "key": "sentence-1",
+          "kind": "sentence",
+          "text": "The cube is red."
+        },
+        {
+          "key": "support-the-cube",
+          "kind": "support",
+          "text": "the cube"
+        },
+        {
+          "key": "support-is-red",
+          "kind": "support",
+          "text": "is red"
+        },
+        {
+          "key": "sentence-2",
+          "kind": "sentence",
+          "text": "Play a tune on the flute."
+        },
+        {
+          "key": "support-play-a-tune",
+          "kind": "support",
+          "text": "play a tune"
+        },
+        {
+          "key": "support-a-tune",
+          "kind": "support",
+          "text": "a tune"
+        },
+        {
+          "key": "support-on-the-flute",
+          "kind": "support",
+          "text": "on the flute"
+        }
+      ]
+    }
+  ]
+}

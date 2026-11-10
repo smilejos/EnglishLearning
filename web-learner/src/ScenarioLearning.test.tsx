@@ -511,3 +511,133 @@ describe("正式情境學習", () => {
     await waitFor(() => expect(screen.getByRole("img").getAttribute("src")).toBe(scenario.image.url));
   });
 });
+
+
+function guideScenario(): ScenarioDetail {
+  const guide = structuredClone(scenario);
+  guide.scenarioKey = "time-guide";
+  guide.titleZh = "時間介系詞圖解";
+  guide.learningMode = "illustrated-guide";
+  guide.targetCount = 1;
+  guide.targetCounts = { n: 0, adj: 0, v: 0, prep: 1 };
+  guide.targets = [{ ...guide.targets[0], word: "at", entryGuid: "at-guid", teachingPos: "prep", senseZh: "在指定時間點" }];
+  guide.story = { textEn: "At noon.", textZh: "在正午。", sentences: [{ id: "s1", en: "At noon.", zh: "在正午。", wordLinks: [
+    { surface: "At", word: "at", entryGuid: "at-guid", isTarget: true, start: 0, end: 2 },
+    { surface: "noon", word: "noon", entryGuid: "noon-guid", isTarget: false, start: 3, end: 7 },
+  ] }] };
+  return guide;
+}
+describe("圖片單字顯示", () => {
+  it.each(["一般情境", "圖解"] as const)("%s 可隱藏圖上標籤與指引，放大仍維持隱藏，故事查詞不受影響", async kind => {
+    const data = kind === "圖解" ? guideScenario() : scenario;
+    vi.mocked(api.getScenario).mockResolvedValue(data);
+    const view = render(<ScenarioLearning scenarioKey={data.scenarioKey} />);
+    await screen.findByRole("heading", { name: data.titleZh });
+    const image = screen.getByRole("img");
+    fireEvent.click(screen.getByRole("button", { name: "顯示點選位置" }));
+    expect(view.container.querySelector(".scenario-arrows circle")).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "隱藏單字" }));
+    expect(view.container.querySelector(".scenario-label")).toBeNull();
+    expect(view.container.querySelector(".scenario-arrows")).toBeNull();
+    expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
+    expect(screen.queryByRole("button", { name: /點選位置/ })).toBeNull();
+    expect(screen.getByRole("img")).toBe(image);
+    expect(image.getAttribute("src")).toBe(data.image.url);
+    fireEvent.click(screen.getByRole("button", { name: "放大圖片" }));
+    expect(view.container.querySelector(".scenario-image-scroll.is-zoomed")).toBeTruthy();
+    expect(view.container.querySelector(".scenario-label")).toBeNull();
+    openStory();
+    const link = data.story.sentences[0].wordLinks[0];
+    fireEvent.click(within(story()).getByRole("button", { name: `查看 ${link.surface}（${link.word}）單字卡` }));
+    await within(card()).findByRole("heading", { name: link.word });
+    fireEvent.click(within(card()).getByRole("button", { name: "關閉單字卡" }));
+    fireEvent.click(screen.getByRole("button", { name: "顯示單字" }));
+    expect(view.container.querySelectorAll(".scenario-label")).toHaveLength(data.targets.length);
+    expect(screen.getByRole("button", { name: "顯示點選位置" }).getAttribute("aria-pressed")).toBe("false");
+  });
+
+  it("隱藏單字不改變回想的揭曉與故事 gate，返回學習恢復顯示", async () => {
+    await load();
+    fireEvent.click(screen.getByRole("button", { name: "隱藏單字" }));
+    fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
+    expect(screen.queryByRole("button", { name: /^(隱藏|顯示)單字$/ })).toBeNull();
+    expect(screen.queryByRole("button", { name: "故事與旁白" })).toBeNull();
+    expect(screen.queryByRole("button", { name: /^查看/ })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "全部揭曉" }));
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(15);
+    expect(screen.getByRole("button", { name: "故事與旁白" })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "看圖學習" }));
+    expect(screen.getByRole("button", { name: "隱藏單字" })).toBeTruthy();
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(15);
+  });
+
+  it.each(["情境", "版本"] as const)("切換%s恢復單字顯示", async change => {
+    const view = await load();
+    fireEvent.click(screen.getByRole("button", { name: "隱藏單字" }));
+    const next = { ...scenario, titleZh: "另一個情境版本", revision: 2,
+      scenarioKey: change === "情境" ? "kitchen" : scenario.scenarioKey };
+    vi.mocked(api.getScenario).mockResolvedValue(next);
+    vi.mocked(api.getScenarioRevision).mockResolvedValue(next);
+    view.rerender(<ScenarioLearning scenarioKey={next.scenarioKey} revision={change === "版本" ? 2 : undefined} />);
+    await screen.findByRole("heading", { name: next.titleZh });
+    expect(screen.getByRole("button", { name: "隱藏單字" })).toBeTruthy();
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(15);
+  });
+});
+describe("圖解學習", () => {
+  it.each([
+    { counts: { n: 0, adj: 0, v: 0, prep: 3 }, text: "介系詞 3 個" },
+    { counts: { n: 2, adj: 0, v: 1, prep: 3 }, text: "名詞 2 個 · 動詞 1 個 · 介系詞 3 個" },
+  ])("圖解清單只列出非零詞類：$text", async ({ counts, text }) => {
+    vi.mocked(api.listScenarios).mockResolvedValue({ scenarios: [{ ...guideScenario(), targetCounts: counts }] });
+    render(<ScenarioList categoryId={1} />);
+    expect(await screen.findByText(text)).toBeTruthy();
+    expect(screen.queryByText(/(?:名詞|形容詞|動詞|介系詞) 0 個/)).toBeNull();
+  });
+  it("清單呈現介系詞數量，圖解不提供回想；prep 詞卡及故事旁白照常可用", async () => {
+    const guide = guideScenario();
+    vi.mocked(api.listScenarios).mockResolvedValue({ scenarios: [guide] });
+    const list = render(<ScenarioList categoryId={1} />);
+    expect(await screen.findByText("介系詞 1 個")).toBeTruthy();
+    list.unmount();
+    vi.mocked(api.getScenario).mockResolvedValue(guide);
+    vi.mocked(api.getWordbankEntry).mockResolvedValue({ ...entry("at"), partsOfSpeech: ["prep"] });
+    render(<ScenarioLearning scenarioKey={guide.scenarioKey} />);
+    expect(await screen.findByText("圖解學習：圖中包含教學文字，可點選標籤查詞、聆聽教材。")).toBeTruthy();
+    expect(screen.queryByRole("button", { name: "看圖回想" })).toBeNull();
+    expect(screen.queryByRole("group", { name: "依詞性揭曉答案" })).toBeNull();
+    await selectWord("at");
+    expect(within(card()).getByText("本情境：在指定時間點（介系詞 prep）")).toBeTruthy();
+    expect(within(card()).getByText("prep · basic")).toBeTruthy();
+    fireEvent.click(within(card()).getByRole("button", { name: "關閉單字卡" }));
+    openStory();
+    await click("播放英文旁白", story());
+    expect(audios.some(audio => audio.url === guide.storyAudio!.url && audio.play.mock.calls.length > 0)).toBe(true);
+    fireEvent.click(within(story()).getByRole("button", { name: "查看 At（at）單字卡" }));
+    await within(card()).findByRole("heading", { name: "at" });
+    expect(api.getWordbankEntry).toHaveBeenCalledWith("at-guid", expect.any(AbortSignal));
+  });
+  it.each(["key", "revision"] as const)("一般回想 → 圖解 → 一般，切換 %s 清除回想、答案與播放狀態", async change => {
+    const view = await load();
+    fireEvent.click(screen.getByRole("button", { name: "看圖回想" }));
+    fireEvent.click(screen.getByRole("button", { name: "全部揭曉" }));
+    openStory();
+    await click("播放英文旁白", story());
+    const guide = guideScenario();
+    vi.mocked(api.getScenario).mockResolvedValue(guide);
+    vi.mocked(api.getScenarioRevision).mockResolvedValue(guide);
+    view.rerender(<ScenarioLearning scenarioKey={change === "key" ? guide.scenarioKey : "living-room"} revision={change === "revision" ? 2 : undefined} />);
+    await screen.findByText(/圖解學習：/);
+    expect(screen.queryByRole("dialog")).toBeNull();
+    expect(screen.queryByRole("button", { name: "看圖回想" })).toBeNull();
+    expect(screen.getByRole("button", { name: "查看 at 單字卡" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "故事與旁白" })).toBeTruthy();
+    expect(audios[0].pause).toHaveBeenCalled();
+    vi.mocked(api.getScenario).mockResolvedValue(scenario);
+    view.rerender(<ScenarioLearning scenarioKey="living-room" />);
+    await screen.findByRole("heading", { name: "午後客廳" });
+    expect(screen.getByRole("button", { name: "看圖學習" }).getAttribute("aria-pressed")).toBe("true");
+    expect(screen.getAllByRole("button", { name: /^查看/ })).toHaveLength(15);
+    expect(screen.queryByRole("group", { name: "依詞性揭曉答案" })).toBeNull();
+  });
+});

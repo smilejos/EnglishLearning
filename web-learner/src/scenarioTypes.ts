@@ -6,9 +6,10 @@ export interface ScenarioSummary {
   status: "draft" | "published";
   titleZh: string;
   vocabularyMode?: "user-specified";
+  learningMode?: "illustrated-guide";
   vocabularyFilter: { system: WordbankSystem; levels: string[] };
   targetCount: number;
-  targetCounts?: { n: number; adj: number; v: number };
+  targetCounts?: { n: number; adj: number; v: number; prep?: number };
   image?: { url: string; width: number; height: number };
   tags?: { id: number; kind: string; label: string }[];
 }

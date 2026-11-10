@@ -1,0 +1,303 @@
+{
+  "target": "english_learning",
+  "verifiedAt": "2026-11-01T15:05:39.144Z",
+  "readOnly": true,
+  "total": 42,
+  "allIdenticalToDecodedLessonCopy": true,
+  "entries": [
+    {
+      "assetGuid": "c69f4aba-7be8-5957-b3ff-86e74e5203f5",
+      "path": "wordbank/09eeb3d17582e855/c69f4aba-7be8-5957-b3ff-86e74e5203f5.mp3",
+      "sha256": "49cc266c4af92392e3649b4461232e6fc1517bc72179bc48d4f86cc35883d1d6",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+      "path": "wordbank/09eeb3d17582e855/b3f83a04-74e9-5f11-bbc0-f0077de4503f.mp3",
+      "sha256": "e07cc3ec5383eb4418900e7d27db00701ce2a82674769a8574d0b7617eea8ade",
+      "bytes": 23852,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "6ba3cbba-87e7-5db5-bb58-d700f91434b8",
+      "path": "wordbank/09eeb3d17582e855/6ba3cbba-87e7-5db5-bb58-d700f91434b8.mp3",
+      "sha256": "cf9eeac17df34ee7ac420e5cee1516d093816f195dd7d65f236ea58f1b2fde5c",
+      "bytes": 20012,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "d1f47231-6599-53b9-9927-44f34a098aab",
+      "path": "wordbank/09eeb3d17582e855/d1f47231-6599-53b9-9927-44f34a098aab.mp3",
+      "sha256": "6b2c89df3caa86683b6601df5d819149fa14e19d305b1c349ebb58ee5391bf52",
+      "bytes": 20012,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "392531a1-aa11-5e63-a2ac-cfc9dbf3fe18",
+      "path": "wordbank/09eeb3d17582e855/392531a1-aa11-5e63-a2ac-cfc9dbf3fe18.mp3",
+      "sha256": "a5f869b98e11f24f8d2e731ddd3c600da9065cf2557cfe56f319e1a5e3f2d27d",
+      "bytes": 30380,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+      "path": "wordbank/09eeb3d17582e855/56d5f915-c486-51b4-958c-fce7e6f1d5ae.mp3",
+      "sha256": "24174a82f1155f3ab343500e0c6714c61ab69afa30a5d3cdda5874b104d5bf33",
+      "bytes": 18860,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "0d513e9d-3cab-53a4-afa8-dcf01d20d11d",
+      "path": "wordbank/09eeb3d17582e855/0d513e9d-3cab-53a4-afa8-dcf01d20d11d.mp3",
+      "sha256": "a6a6ded752b8410b77cee9b9eebc119bcda9a23043468bd1527d18c0b546a757",
+      "bytes": 33068,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "91dc116b-9311-5e4c-8127-bf9a65320a43",
+      "path": "wordbank/09eeb3d17582e855/91dc116b-9311-5e4c-8127-bf9a65320a43.mp3",
+      "sha256": "da9a0ced95d29f97ba22a02bdbf75aa333d99a9b6fe81eed0031b8aa4f4f04cb",
+      "bytes": 30380,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "94f81406-453f-577e-93be-da62ba59d3bd",
+      "path": "wordbank/09eeb3d17582e855/94f81406-453f-577e-93be-da62ba59d3bd.mp3",
+      "sha256": "256bd0d459b1342188bbde21e1ca6553f332eb35667c227c66b4ffe7eb5815ed",
+      "bytes": 20012,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "a2893d6b-463c-5547-b3ac-2fe8a0536494",
+      "path": "wordbank/09eeb3d17582e855/a2893d6b-463c-5547-b3ac-2fe8a0536494.mp3",
+      "sha256": "ce3b7717655d554f950df75b77709c2cbcaeb3635e86c8af2a4a6e1a928a09a6",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "6fbca967-eb9c-53b1-b9d8-4e043ae06961",
+      "path": "wordbank/09eeb3d17582e855/6fbca967-eb9c-53b1-b9d8-4e043ae06961.mp3",
+      "sha256": "db2652396d0cbefd004395a832b8e714925290d9e95a94d7189f8f66e416ab72",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "1129f144-ae5b-5e4b-bec4-dc520ebd1631",
+      "path": "wordbank/09eeb3d17582e855/1129f144-ae5b-5e4b-bec4-dc520ebd1631.mp3",
+      "sha256": "9f7c2efa1d80cc81d20ffee3a93c6f26d1097d077f8db617723abaaa46bcd5b5",
+      "bytes": 30380,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "eb5522d7-40c2-5d93-af1a-15c8edf93c3d",
+      "path": "wordbank/09eeb3d17582e855/eb5522d7-40c2-5d93-af1a-15c8edf93c3d.mp3",
+      "sha256": "1b7711bbac1c432c5d63d874dc63847cc49c29290f48189823539f1927d89e3f",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "92be2e07-1c80-57da-8b31-51648e60dbda",
+      "path": "wordbank/09eeb3d17582e855/92be2e07-1c80-57da-8b31-51648e60dbda.mp3",
+      "sha256": "784cf3c11a42362bf817b0644fa70ad1c1b6a512b050b14641dfc46830d7c9bb",
+      "bytes": 13868,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "30d36019-24f5-5449-98a2-f00255a88a73",
+      "path": "wordbank/09eeb3d17582e855/30d36019-24f5-5449-98a2-f00255a88a73.mp3",
+      "sha256": "7f3e866345028564150dbbde8b58032b60807f78b3d102e67648bf0c2df08cef",
+      "bytes": 17708,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "854c9aa7-e65a-5c1e-9909-d829063e0720",
+      "path": "wordbank/09eeb3d17582e855/854c9aa7-e65a-5c1e-9909-d829063e0720.mp3",
+      "sha256": "385fd38285818f0c8fbc4d234acfb84a9dcee92662ee1b1eb25ac8ad5da8e469",
+      "bytes": 25388,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "3f8e40fd-f185-571b-a096-fee7ba96f216",
+      "path": "wordbank/09eeb3d17582e855/3f8e40fd-f185-571b-a096-fee7ba96f216.mp3",
+      "sha256": "7c50fe1421b9dddb4c567d13bbb451ecdbfb32862c506c735f97bb92be195bfd",
+      "bytes": 17708,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "c9350fa3-acfb-5b30-bb6e-d513f3ef378b",
+      "path": "wordbank/09eeb3d17582e855/c9350fa3-acfb-5b30-bb6e-d513f3ef378b.mp3",
+      "sha256": "4667c66a560bb2834121cac4b696d466166547aef6709da878912929286ffd60",
+      "bytes": 18860,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "a780251a-295b-5786-867c-9f8ac8d23036",
+      "path": "wordbank/09eeb3d17582e855/a780251a-295b-5786-867c-9f8ac8d23036.mp3",
+      "sha256": "fe0e0398397c7c5fe043e3f125afbae9e5c456d6ff859b368c3b4da1a247e4f1",
+      "bytes": 27692,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "4ab71b6b-9dd4-564d-8bf1-20578d1ba715",
+      "path": "wordbank/09eeb3d17582e855/4ab71b6b-9dd4-564d-8bf1-20578d1ba715.mp3",
+      "sha256": "1363dfdbadd8b3a1bbb5fe1017030944aae4aed7ec3648dd9c7bf16c0f6bd05d",
+      "bytes": 25388,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "56172ecf-af11-5c62-884d-c099eb848ad0",
+      "path": "wordbank/09eeb3d17582e855/56172ecf-af11-5c62-884d-c099eb848ad0.mp3",
+      "sha256": "9cabda2a5aa465ce1a4861c193f99890ca7bf99e4af897a5052b127c39fdb5c2",
+      "bytes": 30380,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "8940ab92-17e5-5271-bc92-7ed5db345c6d",
+      "path": "wordbank/09eeb3d17582e855/8940ab92-17e5-5271-bc92-7ed5db345c6d.mp3",
+      "sha256": "4ebee8832227794b9cecc4ab33379a14f2cafcd6cdae6333eb1b5aa12f3a5171",
+      "bytes": 26540,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "45c1cb02-1c04-5504-a261-defa2e0ecb4a",
+      "path": "wordbank/09eeb3d17582e855/45c1cb02-1c04-5504-a261-defa2e0ecb4a.mp3",
+      "sha256": "2f0b791da059cbb96c86ad031256340a042d8e51b236a51bf8ae88f25fd178e4",
+      "bytes": 17708,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "cb27fc1d-a52b-592d-80be-89364b185265",
+      "path": "wordbank/09eeb3d17582e855/cb27fc1d-a52b-592d-80be-89364b185265.mp3",
+      "sha256": "8832407f4d285a0f7c0ea20121f5f4a92be287878b3a059ea5b59daa46eff3ac",
+      "bytes": 21548,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "261ce932-b9bc-5c11-ac41-afb4c26a35ba",
+      "path": "wordbank/09eeb3d17582e855/261ce932-b9bc-5c11-ac41-afb4c26a35ba.mp3",
+      "sha256": "5bffbbe0de46b4c952ec73f0ef2692592289b584b1f8776054acf3586401dc27",
+      "bytes": 21548,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "e53cb5aa-9fa5-5613-b922-aed35d2f3247",
+      "path": "wordbank/09eeb3d17582e855/e53cb5aa-9fa5-5613-b922-aed35d2f3247.mp3",
+      "sha256": "bac124b0ae1b32497de1cfedb5c4784cd94ab055f625dfc1b20d43ad9de97ced",
+      "bytes": 17708,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4",
+      "path": "wordbank/09eeb3d17582e855/4c9af0e7-aea8-55b2-b6cc-5a67858b9ca4.mp3",
+      "sha256": "c2a478b58fdc848956df4298feee3e558c021112338990eb2eb2fdf4070c2307",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "cc4761b9-093c-5995-8370-13c594a385f4",
+      "path": "wordbank/09eeb3d17582e855/cc4761b9-093c-5995-8370-13c594a385f4.mp3",
+      "sha256": "2662ea67d921af6ddfc0bce2175156c861d95fb5040a3e160e38e2ec95f24454",
+      "bytes": 16172,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "9f2a78a5-b943-5d11-9170-c79ff8d8f648",
+      "path": "wordbank/09eeb3d17582e855/9f2a78a5-b943-5d11-9170-c79ff8d8f648.mp3",
+      "sha256": "a4303b8b1029750bd116365b2f339a26e7135e43d3e198cd93bf0c85ca556e5a",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "e18b6fbd-397e-56fe-8379-d6eeee1b4b76",
+      "path": "wordbank/09eeb3d17582e855/e18b6fbd-397e-56fe-8379-d6eeee1b4b76.mp3",
+      "sha256": "e7948af672da42083c5f757b9ab0fa0512f4cb37fa1c6faa70b14929aa6ea8ce",
+      "bytes": 23852,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+      "path": "wordbank/09eeb3d17582e855/accb9ef6-d6e7-52b8-a363-0ab9db325e1a.mp3",
+      "sha256": "f2d6779a905c44484da96d651ef916d8559b0df3aaafd3010f85279f7be359f7",
+      "bytes": 18860,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "8f7d06a5-0e23-5c26-9992-beb7d2badfb3",
+      "path": "wordbank/09eeb3d17582e855/8f7d06a5-0e23-5c26-9992-beb7d2badfb3.mp3",
+      "sha256": "27239fdae4e8fd331b51507edd04a490aa56f3accbaccd0bd6ace00c4d10f5ca",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "518b8c6f-9a22-5f12-9ca9-30916bfcb4b0",
+      "path": "wordbank/09eeb3d17582e855/518b8c6f-9a22-5f12-9ca9-30916bfcb4b0.mp3",
+      "sha256": "a88a8a02b40d2e6b2afb59d26fec1e6f8001abc7ac2ecf559b7d225cfa06961a",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "668a47d0-6979-56fd-ae87-f29785c5fbe6",
+      "path": "wordbank/09eeb3d17582e855/668a47d0-6979-56fd-ae87-f29785c5fbe6.mp3",
+      "sha256": "4196c7c5644bdc7e4877202a506582286ade3db6a6262cc4b6adf6d5e5122996",
+      "bytes": 22700,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "859efca1-d77e-5a2a-a543-13a23b8d48c3",
+      "path": "wordbank/09eeb3d17582e855/859efca1-d77e-5a2a-a543-13a23b8d48c3.mp3",
+      "sha256": "1a5a62a474a5633b4bec7bc8cbf2c04a61bf75d5a08c1eb1d25f999be614bc9d",
+      "bytes": 21548,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "74232fe5-fbb3-580a-b4da-2c570a79d9de",
+      "path": "wordbank/09eeb3d17582e855/74232fe5-fbb3-580a-b4da-2c570a79d9de.mp3",
+      "sha256": "22682ccc8e09ac6075c3536db3929e6be00d727b8fde91ab98cc4455b7557b5b",
+      "bytes": 21548,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "499c355f-2a99-5836-852e-54d7a1921032",
+      "path": "wordbank/09eeb3d17582e855/499c355f-2a99-5836-852e-54d7a1921032.mp3",
+      "sha256": "e84168a0b82e692182be241caeff01914bcbd32b017657faa47f397503d597cb",
+      "bytes": 29228,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "cb47822e-87eb-548c-aa51-38d562f80ee3",
+      "path": "wordbank/09eeb3d17582e855/cb47822e-87eb-548c-aa51-38d562f80ee3.mp3",
+      "sha256": "869eda4b5a95e08c66b86a57bd8832cf53911ad88afe42d198f07582e86c48b1",
+      "bytes": 18860,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+      "path": "wordbank/09eeb3d17582e855/d6a9a9a3-9543-5271-babd-8e6dfc745708.mp3",
+      "sha256": "2a1008834bea4b21cfd400847667a8d92723504f79db4a255e180f70057c58fb",
+      "bytes": 21548,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "80e8b548-ce81-55e8-a352-3300edb5d1ae",
+      "path": "wordbank/09eeb3d17582e855/80e8b548-ce81-55e8-a352-3300edb5d1ae.mp3",
+      "sha256": "9a83266a290b6e3444f6e31a30bd5f6754ba080815d9eeb18d9c9a03ec864064",
+      "bytes": 21548,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "6508c7ee-0613-5dac-916d-28b4f3626842",
+      "path": "wordbank/09eeb3d17582e855/6508c7ee-0613-5dac-916d-28b4f3626842.mp3",
+      "sha256": "9613eefc6ff7eaba48f0e5b04e66ba832dccc9fa6eb5092d5d57f9fd95107039",
+      "bytes": 26540,
+      "matchesLessonCopy": true
+    },
+    {
+      "assetGuid": "36283646-40d1-5649-8f8c-698da3fc3795",
+      "path": "wordbank/09eeb3d17582e855/36283646-40d1-5649-8f8c-698da3fc3795.mp3",
+      "sha256": "a74b951c25a0c60c39efcce2b75aeca42c64fb162c6f83947e9a37fab405977a",
+      "bytes": 25388,
+      "matchesLessonCopy": true
+    }
+  ]
+}
