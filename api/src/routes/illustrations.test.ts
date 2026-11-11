@@ -7,7 +7,7 @@ import {
   expect,
   vi,
 } from "vitest";
-import { randomUUID } from "node:crypto";
+import { randomBytes, randomUUID } from "node:crypto";
 import { mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -23,6 +23,9 @@ import {
   ImageProviderError,
   estimateImageCost,
   createVisualRun,
+  uploadVisualSlot,
+  type ImageStorage,
+  type StoredAsset,
   type VisualPlan,
   type VisualSource,
 } from "@el/shared";
@@ -660,5 +663,275 @@ describe("逐步圖片製作", () => {
     expect((await post(`${base()}/${forkId}/publish`)).statusCode).toBe(200);
     expect((await detail(runId)).run.status).toBe("superseded");
     expect(d.generate).toHaveBeenCalledTimes(3);
+  });
+});
+
+describe("文章自備圖片與混用流程（免真實生成）", () => {
+  async function manual(sourceRunId?: number) {
+    const result = await post(`${base()}/manual`, { idempotencyKey: randomUUID(), sourceRunId });
+    expect(result.statusCode, result.body).toBe(201);
+    return Number(result.json().run.id);
+  }
+  const upload = (runId: number, slotId: string, extra: Record<string, unknown> = {}) =>
+    post(`${base()}/${runId}/slots/${slotId}/upload`, {
+      dataBase64: imageBytes.toString("base64"), idempotencyKey: randomUUID(), ...extra,
+    });
+
+  it("無供應商可用時也能任意順序配圖、免封面並零生成費用發布", async () => {
+    await pool.query("INSERT INTO paragraphs(article_id,idx,text,status) VALUES($1,1,'It is green.','done')", [articleId]);
+    const availableModelIds = vi.fn().mockResolvedValue([]);
+    const local = buildApp({ pool, config: adminConfig, illustrations: { catalog, imageDir: dir, availableModelIds } });
+    try {
+      const created = await local.inject({ method: "POST", url: `${base()}/manual`, payload: { idempotencyKey: randomUUID() } });
+      expect(created.statusCode, created.body).toBe(201);
+      const runId = Number(created.json().run.id);
+      const view = await detail(runId);
+      expect(view.run.source_mode).toBe("manual");
+      expect(view.run.estimated_cost_usd_micros).toBe("0");
+      expect(view.slots.map((s: any) => s.kind)).toEqual(["cover", "paragraph", "paragraph"]);
+      expect(view.slots[0].required).toBe(false);
+      const paragraphs = view.slots.filter((s: any) => s.kind === "paragraph");
+      for (const paragraph of [...paragraphs].reverse()) {
+        const result = await local.inject({ method: "POST", url: `${base()}/${runId}/slots/${paragraph.id}/upload`,
+          payload: { dataBase64: imageBytes.toString("base64"), idempotencyKey: randomUUID() } });
+        expect(result.statusCode, result.body).toBe(200);
+      }
+      expect(availableModelIds).not.toHaveBeenCalled();
+      const uploaded = await detail(runId);
+      const selected = uploaded.slots[1].candidates[0];
+      expect(selected.source).toBe("upload");
+      expect(selected.status).toBe("approved");
+      expect(selected.alt_text).toContain("第 1 段");
+      expect(selected.teaching_targets).toEqual([]);
+      expect(uploaded.run.status).toBe("review");
+      expect((await reader.inject(selected.url)).statusCode).toBe(404);
+      expect((await post(`${base()}/${runId}/publish`)).statusCode).toBe(200);
+      expect((await reader.inject(selected.url)).statusCode).toBe(200);
+      const published = (await reader.inject(`/articles/${articleId}`)).json();
+      expect(published.article.cover).toBeNull();
+      expect(published.paragraphs.every((p: any) => p.illustration)).toBe(true);
+      expect((await pool.query("SELECT count(*) FROM illustration_jobs")).rows[0].count).toBe("0");
+      expect((await pool.query("SELECT count(*) FROM illustration_attempts")).rows[0].count).toBe("0");
+      expect((await pool.query("SELECT count(*) FROM illustration_estimates")).rows[0].count).toBe("0");
+      expect((await detail(runId)).run.actual_cost_usd_micros).toBe("0");
+    } finally { await local.close(); }
+  });
+
+  it("上傳封面直接選用、可替換移除且不需逐張核准", async () => {
+    const runId = await manual();
+    let view = await detail(runId);
+    const cover = view.slots.find((s: any) => s.kind === "cover");
+    const paragraph = view.slots.find((s: any) => s.kind === "paragraph");
+    const first = await upload(runId, cover.id, { altText: "我的封面" });
+    expect(first.statusCode).toBe(200);
+    view = await detail(runId);
+    expect(view.slots[0].required).toBe(true);
+    expect(view.slots[0].candidates[0].alt_text).toBe("我的封面");
+    const second = await upload(runId, cover.id, { altText: "替換封面" });
+    expect(second.statusCode).toBe(200);
+    view = await detail(runId);
+    expect(view.slots[0].candidates).toHaveLength(2);
+    expect(Number(view.slots[0].selected_candidate_id)).toBe(second.json().candidateId);
+    expect((await post(`${base()}/${runId}/slots/${cover.id}/skip`)).statusCode).toBe(200);
+    expect((await upload(runId, paragraph.id)).statusCode).toBe(200);
+    view = await detail(runId);
+    expect(view.slots[0].selected_candidate_id).toBeNull();
+    expect(view.slots[0].required).toBe(false);
+    expect((await post(`${base()}/${runId}/publish`)).statusCode).toBe(200);
+    const published = (await reader.inject(`/articles/${articleId}`)).json();
+    expect(published.article.cover).toBeNull();
+    expect(published.paragraphs[0].illustration).toBeTruthy();
+  });
+
+  it("發布後可複製圖片再替換，新稿發布前前台維持原圖", async () => {
+    const runId = await manual();
+    const initial = await detail(runId);
+    for (const slot of initial.slots) expect((await upload(runId, slot.id)).statusCode).toBe(200);
+    expect((await post(`${base()}/${runId}/publish`)).statusCode).toBe(200);
+    const original = (await reader.inject(`/articles/${articleId}`)).json();
+    const forkId = await manual(runId);
+    let view = await detail(forkId);
+    expect(view.run.status).toBe("review");
+    expect(view.slots).toHaveLength(2);
+    expect(view.slots[1].candidates[0].source).toBe("upload");
+    expect(view.slots[1].candidates[0].asset_id).toBe((await detail(runId)).slots[1].candidates[0].asset_id);
+    expect((await upload(forkId, view.slots[1].id, { altText: "新版的段落圖片" })).statusCode).toBe(200);
+    expect((await reader.inject(`/articles/${articleId}`)).json().paragraphs[0].illustration).toEqual(original.paragraphs[0].illustration);
+    expect((await post(`${base()}/${forkId}/publish`)).statusCode).toBe(200);
+    expect((await reader.inject(`/articles/${articleId}`)).json().paragraphs[0].illustration.altText).toBe("新版的段落圖片");
+    expect((await detail(runId)).run.status).toBe("superseded");
+    expect((await pool.query("SELECT count(*) FROM illustration_jobs")).rows[0].count).toBe("0");
+  });
+
+  it("並行重送不重建版本或圖檔，舊上傳重試不覆蓋後選圖片", async () => {
+    const key = randomUUID();
+    const creates = await Promise.all([1, 2].map(() => post(`${base()}/manual`, { idempotencyKey: key })));
+    expect(creates.every((r) => r.statusCode === 201)).toBe(true);
+    const runId = Number(creates[0].json().run.id);
+    expect(Number(creates[1].json().run.id)).toBe(runId);
+    const slot = (await detail(runId)).slots[1];
+    const uploadKey = randomUUID();
+    const uploads = await Promise.all([1, 2].map(() => upload(runId, slot.id, { idempotencyKey: uploadKey })));
+    expect(uploads.every((r) => r.statusCode === 200)).toBe(true);
+    expect(uploads[0].json().candidateId).toBe(uploads[1].json().candidateId);
+    const newer = await upload(runId, slot.id, { altText: "新的圖" });
+    expect((await upload(runId, slot.id, { idempotencyKey: uploadKey })).json().candidateId).toBe(uploads[0].json().candidateId);
+    expect(Number((await detail(runId)).slots[1].selected_candidate_id)).toBe(newer.json().candidateId);
+    expect((await upload(runId, slot.id, { idempotencyKey: uploadKey, altText: "不同請求" })).statusCode).toBe(409);
+    expect((await pool.query("SELECT count(*) FROM illustration_assets")).rows[0].count).toBe("2");
+  });
+
+  it("管理權限、段落歸屬及發布／取消的唯讀狀態均由 API 檢查", async () => {
+    expect((await reader.inject({ method: "POST", url: `${base()}/manual`, payload: { idempotencyKey: randomUUID() } })).statusCode).toBe(403);
+    const runId = await manual();
+    const slot = (await detail(runId)).slots[1];
+    expect((await reader.inject({ method: "POST", url: `${base()}/${runId}/slots/${slot.id}/upload`, payload: {
+      idempotencyKey: randomUUID(), dataBase64: imageBytes.toString("base64"),
+    } })).statusCode).toBe(403);
+    const other = await manual();
+    expect((await upload(other, slot.id)).statusCode).toBe(404);
+    expect((await post(`${base()}/manual`, { idempotencyKey: randomUUID(), sourceRunId: runId })).statusCode).toBe(409);
+    expect((await upload(runId, slot.id)).statusCode).toBe(200);
+    expect((await post(`${base()}/${runId}/publish`)).statusCode).toBe(200);
+    expect((await upload(runId, slot.id)).statusCode).toBe(409);
+    expect((await post(`${base()}/${runId}/slots/${slot.id}/skip`)).statusCode).toBe(409);
+    expect((await post(`${base()}/${other}/cancel`)).statusCode).toBe(200);
+    expect((await upload(other, (await detail(other)).slots[1].id)).statusCode).toBe(409);
+  });
+
+  it("接受超過預設 1MB 的有效圖片，web 圖維持原比例", async () => {
+    const runId = await manual();
+    const slot = (await detail(runId)).slots[1];
+    const large = await sharp(randomBytes(750 * 600 * 3), { raw: { width: 750, height: 600, channels: 3 } }).png().toBuffer();
+    expect(large.length).toBeGreaterThan(1024 * 1024);
+    const result = await upload(runId, slot.id, { dataBase64: large.toString("base64") });
+    expect(result.statusCode, result.body).toBe(200);
+    const files = (await pool.query("SELECT width,height FROM illustration_asset_files WHERE variant='web'")).rows;
+    expect(files).toEqual([{ width: 750, height: 600 }]);
+  });
+
+  it("拒絕偽裝、截斷、非靜態格式及超過 10MB 的圖片且不留下資產", async () => {
+    const runId = await manual();
+    const slot = (await detail(runId)).slots[1];
+    const gif = await sharp(imageBytes).gif().toBuffer();
+    for (const invalid of ["not base64!", Buffer.from("<svg></svg>").toString("base64"), imageBytes.subarray(0, 45).toString("base64"), gif.toString("base64")]) {
+      const result = await upload(runId, slot.id, { dataBase64: invalid });
+      expect(result.statusCode, result.body).toBe(400);
+    }
+    const huge = Buffer.alloc(10 * 1024 * 1024 + 1, 0).toString("base64");
+    expect((await upload(runId, slot.id, { dataBase64: huge })).statusCode).toBe(413);
+    expect((await pool.query("SELECT count(*) FROM illustration_assets")).rows[0].count).toBe("0");
+    expect((await detail(runId)).slots[1].selected_candidate_id).toBeNull();
+  });
+
+  it("同一張圖規劃／生成中不可上傳或移除，其他段落仍可處理", async () => {
+    const runId = await manual();
+    let view = await detail(runId);
+    const paragraph = view.slots[1];
+    expect((await post(`${base()}/${runId}/slots/${paragraph.id}/plan`)).statusCode).toBe(200);
+    expect((await upload(runId, paragraph.id)).statusCode).toBe(409);
+    expect((await post(`${base()}/${runId}/slots/${paragraph.id}/skip`)).statusCode).toBe(409);
+    expect((await upload(runId, view.slots[0].id)).statusCode).toBe(200);
+    const d = deps();
+    d.planner.plan.mockResolvedValue({ value: { prompt: "Cat in a garden", altText: "A cat", visualBible: "" } });
+    expect(await processImageJob(d)).toBe(true);
+    view = await detail(runId);
+    const planned = view.slots[1];
+    expect((await post(`${base()}/${runId}/slots/${paragraph.id}/generate`, { prompt: planned.prompt_draft, revision: planned.prompt_revision })).statusCode).toBe(200);
+    let release: (value: any) => void;
+    d.generate.mockImplementation(() => new Promise((resolve) => { release = resolve; }));
+    const processing = processImageJob(d);
+    await vi.waitFor(async () => expect((await pool.query("SELECT count(*) FROM illustration_jobs WHERE status='processing'")).rows[0].count).toBe("1"));
+    try {
+      expect((await upload(runId, paragraph.id)).statusCode).toBe(409);
+      expect((await post(`${base()}/${runId}/slots/${paragraph.id}/skip`)).statusCode).toBe(409);
+    } finally { release!({ bytes: imageBytes, mimeType: "image/png" }); }
+    expect(await processing).toBe(true);
+    await approve(runId);
+    expect((await detail(runId)).run.status).toBe("review");
+    expect((await post(`${base()}/${runId}/publish`)).statusCode).toBe(200);
+    expect(d.generate.mock.calls[0][1].references).toEqual([]);
+    const final = await detail(runId);
+    expect(final.slots[0].candidates[0].source).toBe("upload");
+    expect(final.slots[1].candidates[0].source).toBe("generated");
+    expect(Number(final.run.actual_cost_usd_micros) + Number(final.run.reserved_cost_usd_micros)).toBeGreaterThan(0);
+  });
+
+  it("AI 草稿也可上傳段落、略過封面，參考圖維持既有生成與核准流程", async () => {
+    const estimate = await post(`/articles/${articleId}/illustration-estimates`, { modelId: catalog.models[0].id, scope: { kind: "all" } });
+    const created = await post(base(), { estimateId: estimate.json().estimateId, idempotencyKey: randomUUID() });
+    const runId = Number(created.json().run.id);
+    const d = deps();
+    d.planner.plan.mockResolvedValue({ value: { prompt: "Garden reference", altText: "Garden", visualBible: "Garden" } });
+    expect(await processImageJob(d)).toBe(true);
+    let view = await detail(runId);
+    expect((await upload(runId, view.slots[0].id)).statusCode).toBe(400);
+    const reference = view.slots[0];
+    expect((await post(`${base()}/${runId}/slots/${reference.id}/generate`, { prompt: reference.prompt_draft, revision: reference.prompt_revision })).statusCode).toBe(200);
+    expect(await processImageJob(d)).toBe(true);
+    await approve(runId);
+    expect((await post(`${base()}/${runId}/slots/${view.slots[1].id}/skip`)).statusCode).toBe(200);
+    expect((await upload(runId, view.slots[2].id)).statusCode).toBe(200);
+    expect((await post(`${base()}/${runId}/publish`)).statusCode).toBe(200);
+    const forkId = await manual(runId);
+    view = await detail(forkId);
+    expect(view.slots.map((s: any) => s.kind)).toEqual(["cover", "paragraph"]);
+    expect(view.slots[1].candidates[0].source).toBe("upload");
+    expect(view.slots[0].required).toBe(false);
+    expect(d.generate).toHaveBeenCalledTimes(1);
+  });
+
+  it("只有一條 DB 連線時，檔案 journal 與上傳提交也不會互相等待", async () => {
+    const single = createPool(resolveTestDatabaseUrl(), { max: 1, connectionTimeoutMillis: 1500 });
+    const local = buildApp({ pool: single, config: adminConfig, illustrations: {
+      catalog, imageDir: dir, availableModelIds: async () => [],
+    } });
+    try {
+      const created = await local.inject({ method: "POST", url: `${base()}/manual`, payload: { idempotencyKey: randomUUID() } });
+      expect(created.statusCode, created.body).toBe(201);
+      const runId = Number(created.json().run.id);
+      const view = (await local.inject(`${base()}/${runId}`)).json();
+      const result = await local.inject({ method: "POST", url: `${base()}/${runId}/slots/${view.slots[1].id}/upload`,
+        payload: { dataBase64: imageBytes.toString("base64"), idempotencyKey: randomUUID() } });
+      expect(result.statusCode, result.body).toBe(200);
+      expect((await single.query("SELECT count(*) FROM illustration_cleanup_jobs")).rows[0].count).toBe("0");
+    } finally { await local.close(); await single.end(); }
+  });
+
+  it("原始工作流上傳替換後仍可核准其餘圖片及發布", async () => {
+    const run = await createRun();
+    const d = deps();
+    for (let i = 0; i < 3; i++) expect(await processImageJob(d)).toBe(true);
+    const slot = (await detail(run.id)).slots.find((s: any) => s.kind === "paragraph");
+    expect((await upload(run.id, slot.id)).statusCode).toBe(200);
+    expect((await detail(run.id)).run.status).toBe("review");
+    await approve(run.id);
+    expect((await post(`${base()}/${run.id}/publish`)).statusCode).toBe(200);
+    expect((await reader.inject(`/articles/${articleId}`)).json().paragraphs[0].illustration).toBeTruthy();
+  });
+
+  it("檔案寫入中取消版本時重驗失敗、移除未採用檔案並保留可重試清理日誌", async () => {
+    const runId = await manual();
+    const slot = (await detail(runId)).slots[1];
+    const local = new LocalImageStorage(dir, pool);
+    let saved: StoredAsset | undefined;
+    const storage: ImageStorage = {
+      async save(...args) {
+        saved = await local.save(...args);
+        expect((await post(`${base()}/${runId}/cancel`)).statusCode).toBe(200);
+        return saved;
+      },
+      read: (key) => local.read(key), remove: (key) => local.remove(key),
+    };
+    const actor = Number((await pool.query("SELECT id FROM users WHERE email='admin@example.com'")).rows[0].id);
+    await expect(uploadVisualSlot(pool, storage, articleId, runId, Number(slot.id), actor,
+      imageBytes.toString("base64"), randomUUID())).rejects.toThrow("read-only");
+    expect(saved!.files).toHaveLength(2);
+    for (const file of saved!.files) await expect(local.read(file.objectKey)).rejects.toMatchObject({ code: "ENOENT" });
+    expect((await pool.query("SELECT count(*) FROM illustration_assets")).rows[0].count).toBe("0");
+    expect((await pool.query("SELECT count(*) FROM illustration_cleanup_jobs")).rows[0].count).toBe("2");
+    await pool.query("UPDATE illustration_cleanup_jobs SET available_at=now()");
+    await cleanupImageFiles(pool, local);
+    expect((await pool.query("SELECT count(*) FROM illustration_cleanup_jobs")).rows[0].count).toBe("0");
   });
 });

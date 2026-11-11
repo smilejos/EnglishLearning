@@ -26,7 +26,7 @@ import {
   type VisualPlanner,
 } from "./providers";
 import { recordAsset, type ImageStorage, type StoredAsset } from "./storage";
-import { audit, assertStagedSlot, lockedRun, VisualError } from "./repository";
+import { audit, assertStagedSlot, editable, lockedRun, VisualError } from "./repository";
 
 export interface ImageWorkerDeps {
   pool: DbPool;
@@ -35,7 +35,7 @@ export interface ImageWorkerDeps {
   adapters: Record<string, ImageAdapter>;
   storage: ImageStorage;
 }
-async function refreshRun(db: Queryable, runId: number) {
+export async function refreshRun(db: Queryable, runId: number) {
   const staged = (await db.query("SELECT workflow_version,status FROM article_visual_runs WHERE id=$1", [runId])).rows[0];
   if (staged?.workflow_version === 2) {
     if (["cancelled","published","superseded"].includes(staged.status)) return;
@@ -721,20 +721,21 @@ export async function skipVisualSlot(
 ) {
   await withTransaction(pool, async (tx) => {
     const run = await lockedRun(tx, articleId, runId);
+    editable(run);
     if (!(["review", "partial_failed"].includes(run.status) ||
-      (run.workflow_version === 2 && ["pending","planning","waiting_reference_review"].includes(run.status))))
+      (run.workflow_version === 2 && (run.source_mode === "manual" || ["pending","planning","waiting_reference_review"].includes(run.status)))))
       throw new VisualError("wait for run to finish before skipping");
     if (run.workflow_version === 2) {
       await assertStagedSlot(tx,run,slotId);
-      if ((await tx.query("SELECT 1 FROM illustration_jobs WHERE slot_id=$1 AND status IN ('pending','processing')",[slotId])).rowCount)
+      if ((await tx.query("SELECT 1 FROM illustration_jobs WHERE run_id=$1 AND (slot_id=$2 OR slot_id IS NULL) AND status IN ('pending','processing')",[runId,slotId])).rowCount)
         throw new VisualError("wait for current work before skipping");
     }
     const result = await tx.query(
-      "UPDATE illustration_slots SET required=false,skip_reason=$3 WHERE run_id=$1 AND id=$2 AND kind='paragraph' RETURNING id",
+      "UPDATE illustration_slots SET required=false,skip_reason=$3,selected_candidate_id=NULL WHERE run_id=$1 AND id=$2 AND kind IN ('paragraph','cover') RETURNING id",
       [runId, slotId, reason || "已略過"],
     );
     if (!result.rowCount)
-      throw new VisualError("only paragraph slots may be skipped");
+      throw new VisualError("only paragraph or cover slots may be skipped");
     await tx.query(
       "UPDATE illustration_jobs SET status='cancelled' WHERE slot_id=$1 AND status='pending'",
       [slotId],

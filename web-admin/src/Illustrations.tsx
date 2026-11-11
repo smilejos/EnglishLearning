@@ -19,6 +19,7 @@ interface Target {
 interface Candidate {
   id: string;
   status: string;
+  source?: "generated" | "upload";
   derived_from_candidate_id?: string | number | null;
   alt_text: string;
   teaching_targets: Target[];
@@ -52,6 +53,7 @@ interface Run {
   plan_json?: { validationWarnings?: string[] } | null;
   source_json?: { paragraphs: Array<{ id: number; text: string }> } | null;
   workflow_version?: number;
+  source_mode?: "ai" | "manual";
   legacy_imported?: boolean;
   visual_bible?: string | null;
 }
@@ -140,12 +142,14 @@ export function Illustrations({ articleId, onValidationWarningsChange }: {
 }) {
   const [models, setModels] = useState<Model[]>([]);
   const [model, setModel] = useState("");
+  const [modelError, setModelError] = useState("");
   const [runs, setRuns] = useState<Run[]>([]);
   const [selected, setSelected] = useState("");
   const [detail, setDetail] = useState<Detail | null>(null);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const key = useRef(crypto.randomUUID());
+  const manualKey = useRef<{ sourceRunId?: string; key: string } | null>(null);
   const base = `/articles/${articleId}/illustration-runs`;
   const load = useCallback(async () => {
     const data = await req<{ runs: Run[] }>(base);
@@ -173,7 +177,7 @@ export function Illustrations({ articleId, onValidationWarningsChange }: {
         }
       })
       .catch((e) => {
-        if (active) setError(e.message);
+        if (active) setModelError(e.message);
       });
     return () => {
       active = false;
@@ -216,6 +220,18 @@ export function Illustrations({ articleId, onValidationWarningsChange }: {
       body: JSON.stringify({ modelId: model, scope: { kind: "all" } }),
     });
   }
+  async function createManual(sourceRunId?: string) {
+    if (!manualKey.current || manualKey.current.sourceRunId !== sourceRunId) {
+      manualKey.current = { sourceRunId, key: crypto.randomUUID() };
+    }
+    const idempotencyKey = manualKey.current.key;
+    const result = await req<{ run: Run }>(`${base}/manual`, {
+      method: "POST",
+      body: JSON.stringify({ idempotencyKey, ...(sourceRunId ? { sourceRunId: Number(sourceRunId) } : {}) }),
+    });
+    manualKey.current = null;
+    setSelected(String(result.run.id));
+  }
   const immutable =
     !detail ||
     ["published", "superseded", "cancelled"].includes(detail.run.status);
@@ -225,14 +241,17 @@ export function Illustrations({ articleId, onValidationWarningsChange }: {
     BigInt(attempt.id) > BigInt(detail.dismissedFailedAttemptId ?? "0")
   ).reverse() ?? [];
   return (
-    <section className="panel visual-panel" aria-label="文章 AI 圖片">
+    <section className="panel visual-panel" aria-label="文章圖片">
       {error && (
         <p role="alert" className="error-text">
           {error}
         </p>
       )}
       <div className="visual-toolbar">
-        <button className="btn btn--primary"
+        <div className="visual-create-actions">
+          <button type="button" className="btn btn--primary" disabled={busy}
+            onClick={() => void act(() => createManual())}>自行配圖</button>
+          <button className="btn btn--ghost"
           disabled={!model || !models.some((m) => m.id === model) || busy}
           onClick={() =>
             void act(async () => {
@@ -245,8 +264,10 @@ export function Illustrations({ articleId, onValidationWarningsChange }: {
             })
           }
         >
-          {busy ? "處理中…" : "建立圖片版本"}
+          建立圖片版本
         </button>
+        <p>自行上傳圖片，或建立 AI 圖片版本。</p>
+        </div>
         {!!runs.length && (
           <div className="visual-toolbar__right">
             <label className="visual-toolbar__versions">
@@ -262,34 +283,30 @@ export function Illustrations({ articleId, onValidationWarningsChange }: {
               >
                 {runs.map((r) => (
                   <option key={r.id} value={r.id}>
-                    版本 {r.revision} · {runStatusLabel(r)} · {r.model_id}
+                    版本 {r.revision} · {runStatusLabel(r)} · {r.source_mode === "manual" ? "自行配圖" : r.model_id}
                   </option>
                 ))}
               </select>
             </label>
             {detail && ["published", "superseded"].includes(detail.run.status) && (
                 <button className="btn btn--ghost btn--sm"
-                  disabled={busy || !model || !models.some((m) => m.id === model)}
-                  onClick={() => {
-                    void act(async () => {
-                      const quote = await estimate();
-                      const d = await req<{ run: Run }>(`${base}/${detail.run.id}/fork`, {
-                        method: "POST",
-                        body: JSON.stringify({ estimateId: quote.estimateId, idempotencyKey: key.current }),
-                      });
-                      setSelected(d.run.id);
-                    });
-                  }}
+                  disabled={busy}
+                  onClick={() => void act(() => createManual(detail.run.id))}
                 >修改圖片</button>
               )}
           </div>
         )}
       </div>
-      {!error && model && !models.some((m) => m.id === model) && (
-        <p role="alert" className="error-text">目前設定的圖片模型無法使用。請確認圖片 worker、模型及憑證設定。</p>
+      {(modelError || (model && !models.some((m) => m.id === model))) && (
+        <p className="visual-note">AI 配圖目前無法使用，仍可自行上傳圖片。</p>
       )}
       {detail && (
         <>
+          <p className="visual-version-note">
+            版本 {detail.run.revision} · {runStatusLabel(detail.run)}。
+            {immutable ? "修改圖片會建立草稿，重新發布後才會更新閱讀頁。"
+              : "目前為製作草稿；完成配圖後，按「發布整套圖片」更新閱讀頁。"}
+          </p>
           {uncertainAttempts.slice(0, 1).map((a) => (
               <div key={a.id} className="visual-uncertain" role="alert">
                 <strong>請求 {a.id}：{attemptTask(a, detail)}結果不明</strong>
@@ -408,6 +425,7 @@ function IllustrationWorkflow({ detail, base, busy, immutable, act, post, articl
   articleId: number;
 }) {
   const staged = detail.run.workflow_version === 2;
+  const manual = detail.run.source_mode === "manual";
   const [focused, setFocused] = useState<string | null>(null);
   const [visualBible, setVisualBible] = useState(detail.run.visual_bible ?? "");
   const [bibleSaving, setBibleSaving] = useState(false);
@@ -460,16 +478,19 @@ function IllustrationWorkflow({ detail, base, busy, immutable, act, post, articl
   );
   const firstOpen = ordered.find((slot) => !complete(slot));
   const active = ordered.find((slot) => slot.id === focused) ?? firstOpen ?? ordered.at(-1);
+  useEffect(() => {
+    if (focused == null && active) setFocused(active.id);
+  }, [focused, active?.id]);
   const missingReference = staged && detail.run.legacy_imported && active?.kind === "reference" && !active.required;
   const activeIndex = active ? ordered.findIndex((slot) => slot.id === active.id) : -1;
-  const canOpen = (index: number) => !staged || ordered.slice(0, index).every(complete) || complete(ordered[index]);
+  const canOpen = (index: number) => manual || !staged || ordered.slice(0, index).every(complete) || complete(ordered[index]);
   const title = (slot: Slot) => slot.kind === "reference" ? staged ? "視覺設定與參考圖" : "視覺參考圖" : slot.kind === "cover" ? "封面" : `第 ${(slot.idx ?? 0) + 1} 段`;
   const step = (slot: Slot) => slot.kind === "reference" ? staged ? "規劃" : "參考圖" : slot.kind === "cover" ? "封面" : "逐段圖片";
   const slotStatus = (slot: Slot) => {
     if (staged && detail.run.legacy_imported && slot.kind === "reference" && !slot.required)
       return slot.candidates.length ? "未核准" : "未建立";
-    if (!slot.required) return "已略過";
-    if (complete(slot)) return "已核准";
+    if (!slot.required) return slot.kind === "cover" ? "不放封面" : "不放圖片";
+    if (complete(slot)) return "已選用";
     if (staged && slot.prompt_status === "planning") return "提示詞規劃中";
     if (slot.candidates.some((c) => c.status === "processing")) return "生成中";
     if (slot.candidates.some((c) => c.status === "pending" && c.latest_error)) return "等待自動重試";
@@ -501,7 +522,7 @@ function IllustrationWorkflow({ detail, base, busy, immutable, act, post, articl
         <section className="visual-stage" aria-label={title(active)}>
           <div className="visual-stage-heading">
             <div>
-              <p className="visual-stage-phase">{step(active)}</p>
+              {!manual && <p className="visual-stage-phase">{step(active)}</p>}
               <h4>{title(active)}</h4>
             </div>
             <span>{activeIndex + 1} / {ordered.length}</span>
@@ -510,7 +531,7 @@ function IllustrationWorkflow({ detail, base, busy, immutable, act, post, articl
           {missingReference ? (
             <p className="visual-stage-skip">舊版沒有已核准的參考圖；既有圖片可繼續使用。新增圖片將僅依提示詞與視覺設定生成，畫風可能較難一致。</p>
           ) : !active.required && (
-            <p className="visual-stage-skip">這段已略過{active.skip_reason ? `：${active.skip_reason}` : ""}，日後可回來補圖，也可以維持無圖。</p>
+            <p className="visual-stage-skip">{active.kind === "cover" ? "目前不放封面" : "此段目前不放圖片"}，隨時可以上傳或使用 AI 配圖。</p>
           )}
           {staged && active.kind === "reference" && (
             <div className="visual-bible">
@@ -535,6 +556,21 @@ function IllustrationWorkflow({ detail, base, busy, immutable, act, post, articl
               )}
             </div>
           )}
+          {!immutable && !missingReference && active.kind !== "reference" && (
+            <ImageUpload key={`${detail.run.id}-${active.id}-upload`}
+              slot={active} busy={busy} manual={manual}
+              path={`${base}/${detail.run.id}/slots/${active.id}`} act={act} post={post} />
+          )}
+          {manual ? (
+            <ManualAiEditor key={`${detail.run.id}-${active.id}-ai`}>
+              <PromptEditor slot={active} runId={detail.run.id} base={base} busy={busy}
+                immutable={immutable} locked={false}
+                costKey={`${detail.run.actual_cost_usd_micros}-${detail.run.reserved_cost_usd_micros}`}
+                uncertainPlan={detail.attempts.some((attempt) => attempt.operation_kind === "plan" && String(attempt.slot_id) === active.id && attempt.state === "uncertain")}
+                uncertainWork={detail.attempts.some((attempt) => String(attempt.slot_id) === active.id && attempt.state === "uncertain")}
+                hideSkip act={act} post={post} />
+            </ManualAiEditor>
+          ) : <>
           {missingReference ? (
             <div className="visual-prompt-editor">
               <div className="visual-prompt-heading"><label htmlFor={`missing-reference-${active.id}`}>圖片提示詞</label><small>{active.prompt_draft ? "歷史紀錄" : "未建立"}</small></div>
@@ -562,10 +598,12 @@ function IllustrationWorkflow({ detail, base, busy, immutable, act, post, articl
             <LegacySlotControls slot={active} runId={detail.run.id} base={base}
               busy={busy} immutable={immutable} act={act} post={post} />
           )}
+          </>}
           {active.candidates.map((c) => (
             <CandidateReview
               key={`${articleId}-${detail.run.id}-${active.id}-${c.id}`}
               candidate={c}
+              selected={String(active.selected_candidate_id) === c.id}
               sourceText={active.kind === "paragraph"
                 ? detail.run.source_json?.paragraphs.find((p) => p.id === Number(active.paragraph_id))?.text
                 : undefined}
@@ -582,6 +620,120 @@ function IllustrationWorkflow({ detail, base, busy, immutable, act, post, articl
             </button>
           )}
         </section>
+      )}
+    </div>
+  );
+}
+
+function ManualAiEditor({ children }: { children: React.ReactNode }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <details className="visual-manual-ai" open={open} onToggle={(event) => setOpen(event.currentTarget.open)}>
+      <summary>使用 AI 配圖</summary>
+      {open && children}
+    </details>
+  );
+}
+
+const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
+function ImageUpload({ slot, busy, manual, path, act, post }: {
+  slot: Slot;
+  busy: boolean;
+  manual: boolean;
+  path: string;
+  act: (fn: () => Promise<unknown>) => Promise<void>;
+  post: (path: string, body?: unknown) => Promise<unknown>;
+}) {
+  const [file, setFile] = useState<File | null>(null);
+  const [preview, setPreview] = useState("");
+  const [reading, setReading] = useState(false);
+  const [error, setError] = useState("");
+  const [alt, setAlt] = useState("");
+  const fileInput = useRef<HTMLInputElement>(null);
+  const reader = useRef<FileReader | null>(null);
+  const uploadKey = useRef<string | null>(null);
+  useEffect(() => () => { reader.current?.abort(); }, []);
+  const working = slot.prompt_status === "planning" || slot.candidates.some((candidate) => ["pending", "processing"].includes(candidate.status));
+  const selected = slot.required && slot.selected_candidate_id != null;
+  const disabled = busy || working || reading;
+  function chooseFile(next: File | undefined) {
+    reader.current?.abort();
+    setReading(false);
+    setFile(null);
+    setPreview("");
+    setError("");
+    uploadKey.current = null;
+    if (!next) return;
+    if (!["image/jpeg", "image/png", "image/webp"].includes(next.type)) {
+      setError("請選擇 JPG、PNG 或 WebP 圖片。");
+      return;
+    }
+    if (!next.size || next.size > MAX_UPLOAD_BYTES) {
+      setError("圖片需大於 0 且不超過 10 MB，請縮小後重新選擇。");
+      return;
+    }
+    setReading(true);
+    const nextReader = new FileReader();
+    reader.current = nextReader;
+    nextReader.onload = () => {
+      if (reader.current !== nextReader) return;
+      setReading(false);
+      if (typeof nextReader.result !== "string" || !nextReader.result.includes(",")) {
+        setError("無法讀取圖片，請重新選擇。");
+        return;
+      }
+      setFile(next);
+      setPreview(nextReader.result);
+      uploadKey.current = crypto.randomUUID();
+    };
+    nextReader.onerror = () => {
+      if (reader.current !== nextReader) return;
+      setReading(false);
+      setError("無法讀取圖片，請重新選擇。");
+    };
+    nextReader.readAsDataURL(next);
+  }
+  return (
+    <div className="visual-upload">
+      <label htmlFor={`upload-${slot.id}`}>{selected ? "替換圖片" : "上傳圖片"}</label>
+      <p id={`upload-help-${slot.id}`}>JPG、PNG、WebP，每張最多 10 MB。上傳後直接選用，發布後才會顯示在閱讀頁。</p>
+      <input ref={fileInput} id={`upload-${slot.id}`} type="file" accept="image/jpeg,image/png,image/webp"
+        aria-describedby={`upload-help-${slot.id}`} disabled={disabled}
+        onChange={(event) => chooseFile(event.target.files?.[0])} />
+      {working && <p role="status">此處正在處理 AI 圖片，完成後即可上傳或移除。</p>}
+      {reading && <p role="status">正在讀取圖片…</p>}
+      {error && <p role="alert" className="error-text">{error}</p>}
+      {file && preview && (
+        <div className="visual-upload-preview">
+          <img src={preview} alt="待上傳圖片預覽" />
+          <p>{file.name} · 待上傳</p>
+          <label htmlFor={`upload-alt-${slot.id}`}>圖片說明（選填）</label>
+          <input id={`upload-alt-${slot.id}`} className="field" value={alt} maxLength={2000}
+            disabled={busy} placeholder="簡單描述圖片內容" onChange={(event) => { setAlt(event.target.value); uploadKey.current = crypto.randomUUID(); }} />
+          <div className="visual-controls">
+            <button type="button" className="btn btn--primary btn--sm" disabled={disabled}
+              onClick={() => void act(async () => {
+                await post(`${path}/upload`, {
+                  dataBase64: preview.slice(preview.indexOf(",") + 1),
+                  ...(alt.trim() ? { altText: alt.trim() } : {}),
+                  idempotencyKey: uploadKey.current,
+                });
+                setFile(null);
+                setPreview("");
+                setAlt("");
+                uploadKey.current = null;
+                if (fileInput.current) fileInput.current.value = "";
+              })}>{busy ? "正在上傳…" : "上傳並選用"}</button>
+            <button type="button" className="btn btn--ghost btn--sm" disabled={busy}
+              onClick={() => { chooseFile(undefined); if (fileInput.current) fileInput.current.value = ""; }}>取消選擇</button>
+          </div>
+        </div>
+      )}
+      {slot.kind !== "reference" && slot.required && (manual || selected || slot.kind === "cover") && (
+        <button type="button" className="btn btn--ghost btn--sm" disabled={disabled}
+          onClick={() => void act(() => post(`${path}/skip`))}>
+          {selected ? "移除圖片" : slot.kind === "cover" ? "不放封面" : "不放圖片"}
+        </button>
       )}
     </div>
   );
@@ -643,7 +795,7 @@ interface SlotQuote {
   reservedCostUsdMicros: number;
 }
 
-function PromptEditor({ slot, runId, base, busy, immutable, locked, costKey, uncertainPlan, uncertainWork, act, post }: {
+function PromptEditor({ slot, runId, base, busy, immutable, locked, costKey, uncertainPlan, uncertainWork, hideSkip = false, act, post }: {
   slot: Slot;
   runId: string;
   base: string;
@@ -653,6 +805,7 @@ function PromptEditor({ slot, runId, base, busy, immutable, locked, costKey, unc
   costKey: string;
   uncertainPlan: boolean;
   uncertainWork: boolean;
+  hideSkip?: boolean;
   act: (fn: () => Promise<unknown>) => Promise<void>;
   post: (path: string, body?: unknown) => Promise<unknown>;
 }) {
@@ -784,7 +937,7 @@ function PromptEditor({ slot, runId, base, busy, immutable, locked, costKey, unc
               });
             }}
           >{imageJobActive ? "等待圖片生成" : hasCandidate ? "再生成一張" : "生成圖片"}</button>
-          {slot.kind === "paragraph" && slot.required && (
+          {!hideSkip && slot.kind === "paragraph" && slot.required && (
             <button className="btn btn--ghost btn--sm" disabled={busy}
               onClick={() => {
                 void act(() => post(`${path}/skip`));
@@ -799,11 +952,13 @@ function PromptEditor({ slot, runId, base, busy, immutable, locked, costKey, unc
 
 function CandidateReview({
   candidate: c,
+  selected,
   sourceText,
   disabled,
   onReview,
 }: {
   candidate: Candidate;
+  selected: boolean;
   sourceText?: string;
   disabled: boolean;
   onReview: (body: unknown) => Promise<void>;
@@ -837,7 +992,7 @@ function CandidateReview({
   return (
     <div className="visual-candidate">
       <p>
-        候選 {c.id} · {retryQueued ? "等待自動重試" : statusLabel[c.status] ?? c.status}
+        {selected ? "目前選用" : "候選"} {c.id} · {c.source === "upload" ? "自行上傳 · " : ""}{retryQueued ? "等待自動重試" : statusLabel[c.status] ?? c.status}
         {!waitingForImage && c.status !== "failed" && c.latest_error && `：${c.latest_error}`}
       </p>
       {waitingForImage && (
@@ -900,11 +1055,12 @@ function CandidateReview({
             ))}
         </div>
       )}
-      <details>
+      {c.source !== "upload" && <details>
         <summary>生成提示詞</summary>
-        <pre style={{ whiteSpace: "pre-wrap" }}>{c.prompt_json.prompt}</pre>
-      </details>
+        <pre style={{ whiteSpace: "pre-wrap" }}>{c.prompt_json?.prompt ?? ""}</pre>
+      </details>}
       {reviewable && (
+        <CandidateFields collapsed={c.source === "upload" && selected}>
         <fieldset disabled={disabled}>
           <label>
             圖片替代文字{" "}
@@ -1047,7 +1203,7 @@ function CandidateReview({
                 })
               }
             >
-              核准並選用
+              {c.source === "upload" && selected ? "儲存圖片說明與單字" : "核准並選用"}
             </button>
             <button className="btn btn--danger btn--sm"
               onClick={() => {
@@ -1066,7 +1222,14 @@ function CandidateReview({
             </button>
           </div>
         </fieldset>
+        </CandidateFields>
       )}
     </div>
   );
+}
+
+function CandidateFields({ collapsed, children }: { collapsed: boolean; children: React.ReactNode }) {
+  return collapsed ? <details className="visual-review-details">
+    <summary>編輯圖片說明與教學單字（選填）</summary>{children}
+  </details> : <>{children}</>;
 }

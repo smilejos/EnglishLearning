@@ -344,9 +344,9 @@ export async function forkVisualRun(
       )).rows[0];
       if (!prior) continue;
       const copy = (await tx.query(
-        `INSERT INTO illustration_candidates(slot_id,candidate_no,status,derived_from_candidate_id,prompt_json,model_snapshot,asset_id,focal_x,focal_y,alt_text,teaching_targets,reviewed_by,reviewed_at,review_reason)
-         VALUES($1,1,'approved',$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12) RETURNING id`,
-        [slot.id,prior.id,prior.prompt_json,prior.model_snapshot,prior.asset_id,prior.focal_x,prior.focal_y,prior.alt_text,JSON.stringify(prior.teaching_targets),prior.reviewed_by,prior.reviewed_at,prior.review_reason],
+        `INSERT INTO illustration_candidates(slot_id,candidate_no,status,derived_from_candidate_id,prompt_json,model_snapshot,asset_id,focal_x,focal_y,alt_text,teaching_targets,reviewed_by,reviewed_at,review_reason,source)
+         VALUES($1,1,'approved',$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13) RETURNING id`,
+        [slot.id,prior.id,prior.prompt_json,prior.model_snapshot,prior.asset_id,prior.focal_x,prior.focal_y,prior.alt_text,JSON.stringify(prior.teaching_targets),prior.reviewed_by,prior.reviewed_at,prior.review_reason,prior.source],
       )).rows[0];
       await tx.query("UPDATE illustration_slots SET selected_candidate_id=$2 WHERE id=$1", [slot.id,copy.id]);
     }
@@ -379,7 +379,7 @@ export async function assertStagedSlot(tx: Queryable, run: any, slotId: number) 
     throw new VisualError("this revision has no reference image; create a new revision to add one");
   if (slot.kind === "reference" && slot.selected_status === "approved")
     throw new VisualError("reference is locked; create a new revision");
-  if (slots.slice(0,index).some((s) => s.required && s.selected_status !== "approved"))
+  if (run.source_mode !== "manual" && slots.slice(0,index).some((s) => s.required && s.selected_status !== "approved"))
     throw new VisualError("approve or skip the previous image first");
   return slot;
 }
@@ -413,7 +413,7 @@ export async function stagedSlotQuote(db: Queryable, articleId: number, runId: n
   const generateCostUsdMicros = imagePrompt ? estimateImageCost(run.model_config_snapshot,run.pricing_profile_snapshot,slot.kind,Buffer.byteLength(imagePrompt),referenceApproved && slot.kind !== "reference") : null;
   return { planCostUsdMicros,generateCostUsdMicros,remainingCostUsdMicros: Math.max(0,Number(run.max_cost_usd_micros)-Number(run.reserved_cost_usd_micros)-Number(run.actual_cost_usd_micros)),actualCostUsdMicros:Number(run.actual_cost_usd_micros),reservedCostUsdMicros:Number(run.reserved_cost_usd_micros) };
 }
-async function refreshStagedStatus(tx: Queryable, runId: number) {
+export async function refreshStagedStatus(tx: Queryable, runId: number) {
   const slots = (await tx.query(
     "SELECT s.kind,s.required,s.prompt_status,c.status AS selected_status FROM illustration_slots s LEFT JOIN illustration_candidates c ON c.id=s.selected_candidate_id WHERE s.run_id=$1",
     [runId],
@@ -441,7 +441,7 @@ export async function lockedRun(
   if (!run) throw new VisualError("visual run not found", 404);
   return run;
 }
-function editable(run: Record<string, any>) {
+export function editable(run: Record<string, any>) {
   if (["published", "superseded", "cancelled"].includes(run.status))
     throw new VisualError("visual revision is read-only");
 }
@@ -539,7 +539,7 @@ export async function reviewVisualCandidate(
     );
     if (input.decision === "approved")
       await tx.query(
-        "UPDATE illustration_slots SET selected_candidate_id=$2 WHERE id=$1",
+        "UPDATE illustration_slots SET selected_candidate_id=$2,required=true,skip_reason=NULL WHERE id=$1",
         [c.slot_id, candidateId],
       );
     if (input.decision === "approved" && c.kind === "reference" && r.workflow_version !== 2) {
@@ -576,7 +576,7 @@ export async function publishVisualRun(
     ).rows;
     if (
       !slots.some((s) => s.kind === "cover") ||
-      (r.workflow_version === 2 && !slots.some((s) => s.kind === "reference" && (
+      (r.workflow_version === 2 && r.source_mode !== "manual" && !slots.some((s) => s.kind === "reference" && (
         s.candidate_status === "approved" || (r.legacy_imported && !s.required)
       ))) ||
       slots.filter((s) => s.kind === "paragraph").length !==

@@ -16,6 +16,9 @@ import {
   dismissVisualFailures,
   saveVisualBible,
   stagedSlotQuote,
+  createManualVisualRun,
+  uploadVisualSlot,
+  LocalImageStorage,
   GenerationScopeSchema,
   ReviewSchema,
   type DbPool,
@@ -45,6 +48,7 @@ export function registerIllustrationRoutes(
     return result;
   }
   const admin = { preHandler: requireAdmin };
+  const uploadStorage = new LocalImageStorage(deps.imageDir, pool);
   const availableCatalog = async () => {
     const ids = await deps.availableModelIds();
     const selected = deps.resolveCatalog ? await deps.resolveCatalog() : deps.catalog;
@@ -118,6 +122,29 @@ export function registerIllustrationRoutes(
   app.get(base, admin, async (request) => ({
     runs: await listVisualRuns(pool, ids(request.params).id),
   }));
+  app.post(`${base}/manual`, admin, async (request, reply) => {
+    const body = z.object({
+      idempotencyKey: z.string().uuid(),
+      sourceRunId: z.number().int().positive().optional(),
+    }).strict().safeParse(request.body);
+    if (!body.success) throw new VisualError("invalid manual revision request", 400);
+    const catalog = deps.resolveCatalog ? await deps.resolveCatalog() : deps.catalog;
+    const run = await createManualVisualRun(pool, catalog, ids(request.params).id,
+      request.user!.id, body.data.idempotencyKey, body.data.sourceRunId);
+    return reply.code(201).send({ run });
+  });
+  app.post(`${base}/:runId/slots/:slotId/upload`, { ...admin, bodyLimit: 15 * 1024 * 1024 }, async (request) => {
+    const p = ids(request.params);
+    const body = z.object({
+      dataBase64: z.string().min(1),
+      altText: z.string().trim().max(2000).optional(),
+      idempotencyKey: z.string().uuid(),
+    }).strict().safeParse(request.body);
+    if (!body.success) throw new VisualError("invalid image upload request", 400);
+    const result = await uploadVisualSlot(pool, uploadStorage, p.id, p.runId, p.slotId,
+      request.user!.id, body.data.dataBase64, body.data.idempotencyKey, body.data.altText);
+    return { ok: true, ...result };
+  });
   app.get(`${base}/:runId`, admin, async (request) => {
     const p = ids(request.params);
     return visualRunDetail(pool, p.id, p.runId);

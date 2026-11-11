@@ -313,6 +313,25 @@ textarea.field { resize: vertical; line-height: 1.5; }
 .visual-panel p { font-size: 0.9rem; line-height: 1.7; color: var(--text-soft); }
 .visual-panel .error-text { color: var(--danger); }
 .visual-toolbar { display: grid; grid-template-columns: minmax(180px, 240px) minmax(0, 1fr); align-items: end; gap: 28px; }
+.visual-create-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.visual-create-actions > .btn { flex: 1 1 180px; }
+.visual-panel .visual-create-actions p { margin: 0; font-size: .78rem; }
+.visual-panel .visual-version-note { margin: 18px 0 8px; }
+.visual-upload { display: grid; justify-items: start; gap: 12px; margin: 12px 0 24px; }
+.visual-panel .visual-upload p { margin: 0; }
+.visual-upload > input[type=file] { display: block; max-width: 100%; min-width: 0; color: var(--text-soft); font: inherit; font-size: .85rem; }
+.visual-upload > input[type=file]::file-selector-button { margin-right: 10px; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 12px; background: var(--surface); color: var(--text); font: inherit; cursor: pointer; }
+.visual-upload > input[type=file]:hover:not(:disabled)::file-selector-button { border-color: var(--accent); }
+.visual-upload > input[type=file]:disabled { opacity: .6; cursor: not-allowed; }
+.visual-upload > input[type=file]:focus-visible, .visual-manual-ai > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.visual-upload-preview { width: 100%; min-width: 0; }
+.visual-upload-preview > img { display: block; max-width: 100%; max-height: 360px; height: auto; object-fit: contain; border-radius: var(--radius-sm); margin-bottom: 10px; }
+.visual-panel .visual-upload-preview > p { overflow-wrap: anywhere; margin-bottom: 14px; }
+.visual-upload-preview > .field { display: block; width: 100%; margin-top: 6px; }
+.visual-manual-ai { margin: 20px 0; border-top: 1px solid var(--border); padding-top: 16px; }
+.visual-manual-ai > summary { cursor: pointer; color: var(--accent-strong); font-weight: 700; }
+.visual-manual-ai .visual-prompt-editor { border-top: 0; }
+.visual-review-details > summary { color: var(--accent-strong); font-weight: 700; }
 .visual-toolbar__right { display: flex; align-items: end; gap: 12px; min-width: 0; }
 .visual-toolbar__versions { flex: 1 1 320px; min-width: 0; }
 .visual-toolbar__right > .btn { flex: 0 0 auto; }

@@ -10,6 +10,7 @@
 
 - 後台（web-admin）：上傳文章（自動切段）、輪詢處理狀態、重試失敗段落、刪除文章、
   編輯文章資訊（教材別／年級單元難度／分類／標籤）、分類與標籤管理、平台統計、生成設定。
+- 文章圖片：文章處理完成後，在「圖片」頁選「自行配圖」，可為封面及各段上傳 JPG／PNG／WebP（每張最多 10MB）；上傳後直接選用，最後統一發布。封面可省略，段落也可不放圖，同篇可混用自備圖與 AI 圖。純上傳不呼叫圖片規劃／生成 API；修改已發布圖片時先承接成新草稿，再整版發布。
 - 情境製作後台：十五詞選詞、圖片風格與 Prompt、英文故事／繁中翻譯、產圖、互動位置、
   Serena 錄音、版本預覽與發布；使用獨立 `scenarios` worker profile。程式未部署至正式服務，
   設定與操作見 [情境製作後台](docs/scenarios/admin-studio.md)。
@@ -20,6 +21,8 @@
 - 單字查詢：`POST /lookups` 具用量韁繩（per-user 每分鐘／全站每日，可由環境變數調整）。
 
 ## 架構（Docker Compose）
+
+文章圖片上傳需套用 `1794355200000_uploaded-illustrations.sql`，並更新 API、管理後台及 nginx 設定；API 的 images volume 改為可寫。正式 migration 與部署依專案規則另行確認，本機測試通過不代表正式環境已更新。
 
 | 服務 | 內容 | 對外埠（預設） |
 |------|------|------|
@@ -128,10 +131,10 @@ docker compose exec -T proxy nginx -t
 
 ## 備份與還原
 
-AI 圖片版本也會備份至 `images.tgz`。還原時先停止 `image-worker`，使用新的暫存目錄解壓，將 `images/.` 複製至 `/data/images` 的可寫 volume（API 掛載為唯讀）：
+文章圖片版本（含自行上傳的圖片）也會備份至 `images.tgz`。還原圖片前先停止 API 與 `image-worker`，避免上傳或生成與還原同時寫入；使用新的暫存目錄解壓，將 `images/.` 複製至 `/data/images` 的共用 volume：
 
 ```bash
-docker compose stop image-worker
+docker compose stop api image-worker
 docker compose --profile images run --rm --no-deps -v /path/to/backup:/backup:ro image-worker sh -c 'tar -xzf /backup/images.tgz -C /data'
 ```
 

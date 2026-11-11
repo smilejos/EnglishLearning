@@ -78,7 +78,7 @@ it("blocks estimation when the globally configured image model is unavailable", 
     return original(path, init);
   });
   render(<Illustrations articleId={1} />);
-  await waitFor(() => expect(screen.getByRole("alert").textContent).toContain("無法使用"));
+  await screen.findByText("AI 配圖目前無法使用，仍可自行上傳圖片。");
   expect(screen.getByRole("button", { name: "建立圖片版本" }).hasAttribute("disabled")).toBe(true);
 });
 it("rechecks the global image model before estimating", async () => {
@@ -394,14 +394,14 @@ it("does not allow adding words while the candidate is processing", async () => 
 });
 
 it("creates a fill-in version from a published edition without a confirmation dialog", async () => {
-  const run = { id: "old", revision: 1, status: "published", model_id: "test-model",
+  const run = { id: "40", revision: 1, status: "published", model_id: "test-model",
     actual_cost_usd_micros: "100", reserved_cost_usd_micros: "0", max_cost_usd_micros: "1000" };
   const original = vi.mocked(req).getMockImplementation()!;
   vi.mocked(req).mockImplementation(async (path, init) => {
     if (path.endsWith("/illustration-runs") && !init?.method) return { runs: [run] } as never;
-    if (path.endsWith("/illustration-runs/old")) return { run, slots: [{ id: "skip", kind: "paragraph",
+    if (path.endsWith("/illustration-runs/40")) return { run, slots: [{ id: "skip", kind: "paragraph",
       paragraph_id: "66", idx: 0, text: "A flag.", required: false, skip_reason: "", candidates: [] }], attempts: [] } as never;
-    if (path.endsWith("/illustration-runs/old/fork")) return { run: { ...run, id: "new", revision: 2, workflow_version: 2 } } as never;
+    if (path.endsWith("/illustration-runs/manual")) return { run: { ...run, id: "new", revision: 2, workflow_version: 2 } } as never;
     if (path.endsWith("/illustration-runs/new")) return { run: { ...run, id: "new", revision: 2, workflow_version: 2 }, slots: [], attempts: [] } as never;
     return original(path, init);
   });
@@ -409,14 +409,17 @@ it("creates a fill-in version from a published edition without a confirmation di
   render(<Illustrations articleId={1} />);
   expect(await screen.findByRole("button", { name: "修改圖片" })).toBeTruthy();
   fireEvent.click(screen.getByRole("button", { name: "修改圖片" }));
-  await waitFor(() => expect(vi.mocked(req).mock.calls.some(([path]) => path.endsWith("/illustration-runs/old/fork"))).toBe(true));
+  await waitFor(() => expect(vi.mocked(req).mock.calls.some(([path]) => path.endsWith("/illustration-runs/manual"))).toBe(true));
+  const creation = vi.mocked(req).mock.calls.find(([path]) => path.endsWith("/illustration-runs/manual"));
+  expect(JSON.parse(String(creation?.[1]?.body)).sourceRunId).toBe(40);
+  expect(vi.mocked(req).mock.calls.some(([path]) => path.endsWith("/illustration-estimates"))).toBe(false);
   expect(confirmation).not.toHaveBeenCalled();
 });
 
 it("offers modification for a fully illustrated published run and unlocks its inherited cover", async () => {
-  const oldRun = { id: "old", revision: 1, workflow_version: 2, status: "published", model_id: "test-model",
+  const oldRun = { id: "40", revision: 1, workflow_version: 2, status: "published", model_id: "test-model",
     actual_cost_usd_micros: "100", reserved_cost_usd_micros: "0", max_cost_usd_micros: "10000" };
-  const newRun = { ...oldRun, id: "new", revision: 2, status: "review" };
+  const newRun = { ...oldRun, id: "new", revision: 2, status: "review", source_mode: "manual" };
   const oldSlot = { id: "old-cover", kind: "cover", paragraph_id: null, idx: null, text: null,
     required: true, skip_reason: null, selected_candidate_id: "original", prompt_draft: "Original cover",
     prompt_revision: 1, prompt_status: "ready", candidates: [{ id: "original", status: "approved",
@@ -427,10 +430,10 @@ it("offers modification for a fully illustrated published run and unlocks its in
   let forked = false;
   vi.mocked(req).mockImplementation(async (path, init) => {
     if (path.endsWith("/illustration-runs") && !init?.method) return { runs: forked ? [newRun, oldRun] : [oldRun] } as never;
-    if (path.endsWith("/illustration-runs/old") && !init?.method) return { run: oldRun, slots: [oldSlot], attempts: [
+    if (path.endsWith("/illustration-runs/40") && !init?.method) return { run: oldRun, slots: [oldSlot], attempts: [
       { id: "116", slot_id: "old-cover", operation_kind: "plan", state: "uncertain" },
     ] } as never;
-    if (path.endsWith("/illustration-runs/old/fork")) { forked = true; return { run: newRun } as never; }
+    if (path.endsWith("/illustration-runs/manual")) { forked = true; return { run: newRun } as never; }
     if (path.endsWith("/illustration-runs/new") && !init?.method) return { run: newRun, slots: [inheritedSlot], attempts: [] } as never;
     if (path.endsWith("/slots/new-cover/quote")) return { planCostUsdMicros: 100, generateCostUsdMicros: 200,
       remainingCostUsdMicros: 10000, actualCostUsdMicros: 0, reservedCostUsdMicros: 0 } as never;
@@ -438,6 +441,7 @@ it("offers modification for a fully illustrated published run and unlocks its in
   });
   render(<Illustrations articleId={1} />);
   fireEvent.click(await screen.findByRole("button", { name: "修改圖片" }));
+  fireEvent.click(await screen.findByText("使用 AI 配圖"));
   await waitFor(() => expect((screen.getByRole("textbox", { name: "圖片提示詞" }) as HTMLTextAreaElement).disabled).toBe(false));
   const editor = screen.getByRole("textbox", { name: "圖片提示詞" });
   expect((editor as HTMLTextAreaElement).value).toBe("Original cover");
@@ -790,4 +794,213 @@ it("offers later paragraph work after approval and skips without asking for a re
     )).toBe(true);
   });
   expect(confirmation).not.toHaveBeenCalled();
+});
+
+function mockManualImages(options: { empty?: boolean; unavailable?: boolean; uploadError?: boolean } = {}) {
+  const run = { id: "90", revision: 1, status: "pending", workflow_version: 2, source_mode: "manual",
+    model_id: "test-model", actual_cost_usd_micros: "0", reserved_cost_usd_micros: "0", max_cost_usd_micros: "10000" };
+  type Uploaded = { id: string; status: string; source: string; alt_text: string; teaching_targets: never[];
+    url: string; latest_error: null; prompt_json: { prompt: string } };
+  const slots = [
+    { id: "91", kind: "cover", paragraph_id: null as number | null, idx: null as number | null, text: null as string | null,
+      required: false, selected_candidate_id: null as string | null, skip_reason: "不放封面", prompt_status: "empty",
+      prompt_draft: null as string | null, candidates: [] as Uploaded[] },
+    { id: "92", kind: "paragraph", paragraph_id: 66, idx: 0, text: "A cat in a garden.", required: true,
+      selected_candidate_id: null as string | null, skip_reason: null as string | null, prompt_status: "empty",
+      prompt_draft: null as string | null, candidates: [] as Uploaded[] },
+    { id: "93", kind: "paragraph", paragraph_id: 67, idx: 1, text: "A flag flies.", required: true,
+      selected_candidate_id: null as string | null, skip_reason: null as string | null, prompt_status: "empty",
+      prompt_draft: null as string | null, candidates: [] as Uploaded[] },
+  ];
+  const original = vi.mocked(req).getMockImplementation()!;
+  let exists = !options.empty;
+  vi.mocked(req).mockImplementation(async (path, init) => {
+    if (options.unavailable && path === "/image-models") return { models: [] } as never;
+    if (path.endsWith("/illustration-runs") && !init?.method) return { runs: exists ? [run] : [] } as never;
+    if (path.endsWith("/illustration-runs/90")) return { run, slots, attempts: [], source_json: {} } as never;
+    if (path.endsWith("/illustration-runs/manual")) { exists = true; return { run } as never; }
+    const slot = slots.find((item) => path.includes(`/slots/${item.id}/`));
+    if (slot && path.endsWith("/upload")) {
+      if (options.uploadError) throw new Error("上傳失敗，請重試");
+      const body = JSON.parse(String(init?.body));
+      const candidate = { id: String(100 + slot.candidates.length), status: "approved", source: "upload",
+        alt_text: body.altText || "使用者圖片", teaching_targets: [] as never[], url: "/images/upload.webp",
+        latest_error: null, prompt_json: { prompt: "" } };
+      slot.candidates.push(candidate);
+      slot.selected_candidate_id = candidate.id;
+      slot.required = true;
+      return { ok: true, candidateId: candidate.id } as never;
+    }
+    if (slot && path.endsWith("/skip")) {
+      slot.required = false; slot.selected_candidate_id = null;
+      run.status = slots.every((item) => !item.required || item.selected_candidate_id != null) ? "review" : "pending";
+      return { ok: true } as never;
+    }
+    if (slot && path.endsWith("/quote")) return { planCostUsdMicros: 100, generateCostUsdMicros: 200,
+      remainingCostUsdMicros: 10000, actualCostUsdMicros: 0, reservedCostUsdMicros: 0 } as never;
+    if (path.endsWith("/publish")) { run.status = "published"; return { ok: true } as never; }
+    return original(path, init);
+  });
+  return { run, slots };
+}
+
+async function selectUpload(file = new File(["test-image"], "garden.png", { type: "image/png" })) {
+  fireEvent.change(await screen.findByLabelText("上傳圖片"), { target: { files: [file] } });
+  return screen.findByRole("button", { name: "上傳並選用" });
+}
+
+it("creates a manual edition even with no available image model and never estimates or plans", async () => {
+  mockManualImages({ empty: true, unavailable: true });
+  render(<Illustrations articleId={1} />);
+  fireEvent.click(await screen.findByRole("button", { name: "自行配圖" }));
+  await screen.findByLabelText("上傳圖片");
+  const creation = vi.mocked(req).mock.calls.find(([path]) => path.endsWith("/illustration-runs/manual"));
+  expect(JSON.parse(String(creation?.[1]?.body)).idempotencyKey).toMatch(/^[a-f0-9-]{36}$/);
+  expect(vi.mocked(req).mock.calls.some(([path]) => /estimates|\/quote$|\/plan$|\/generate$/.test(path))).toBe(false);
+  expect(screen.queryByRole("textbox", { name: "圖片提示詞" })).toBeNull();
+});
+
+it("lets manual editions visit any paragraph or optional cover without completing previous steps", async () => {
+  mockManualImages();
+  render(<Illustrations articleId={1} />);
+  const second = (await screen.findAllByRole("button", { name: /第 2 段/ }))[0];
+  expect((second as HTMLButtonElement).disabled).toBe(false);
+  fireEvent.click(second);
+  expect(await screen.findByText("A flag flies.")).toBeTruthy();
+  fireEvent.click(screen.getByRole("button", { name: /封面/ }));
+  expect(await screen.findByText(/目前不放封面，/)).toBeTruthy();
+  expect(screen.getByLabelText("上傳圖片")).toBeTruthy();
+  expect(screen.queryByText("故事主體與畫風設定")).toBeNull();
+});
+
+it("previews a selected file and uploads it as the chosen image without another approval", async () => {
+  const { slots } = mockManualImages();
+  render(<Illustrations articleId={1} />);
+  const upload = await selectUpload();
+  expect(screen.getByRole("img", { name: "待上傳圖片預覽" }).getAttribute("src")).toMatch(/^data:image\/png;base64,/);
+  fireEvent.change(screen.getByLabelText("圖片說明（選填）"), { target: { value: "花園中的貓" } });
+  fireEvent.click(upload);
+  await screen.findByRole("img", { name: "花園中的貓" });
+  expect(slots[1].selected_candidate_id).toBe("100");
+  const call = vi.mocked(req).mock.calls.find(([path]) => path.endsWith("/slots/92/upload"));
+  expect(JSON.parse(String(call?.[1]?.body))).toMatchObject({ altText: "花園中的貓", dataBase64: "dGVzdC1pbWFnZQ==" });
+  expect(screen.getByText(/目前選用 100 · 自行上傳/)).toBeTruthy();
+  expect(screen.queryByRole("button", { name: "核准並選用" })).toBeNull();
+  expect(screen.getByLabelText("替換圖片")).toBeTruthy();
+  expect(vi.mocked(req).mock.calls.some(([path]) => /\/review$|\/plan$|\/generate$|\/quote$/.test(path))).toBe(false);
+});
+
+it("rejects unsupported and oversized uploads before reading or making an upload request", async () => {
+  mockManualImages();
+  render(<Illustrations articleId={1} />);
+  const field = await screen.findByLabelText("上傳圖片");
+  fireEvent.change(field, { target: { files: [new File(["gif"], "animated.gif", { type: "image/gif" })] } });
+  expect(await screen.findByText("請選擇 JPG、PNG 或 WebP 圖片。")).toBeTruthy();
+  const large = new File(["image"], "big.jpg", { type: "image/jpeg" });
+  Object.defineProperty(large, "size", { value: 10 * 1024 * 1024 + 1 });
+  fireEvent.change(field, { target: { files: [large] } });
+  expect(await screen.findByText(/圖片需大於 0 且不超過 10 MB/)).toBeTruthy();
+  expect(screen.queryByRole("button", { name: "上傳並選用" })).toBeNull();
+  expect(vi.mocked(req).mock.calls.some(([path]) => path.endsWith("/upload"))).toBe(false);
+});
+
+it("retains the preview after an upload failure and reuses the same request key on retry", async () => {
+  mockManualImages({ uploadError: true });
+  render(<Illustrations articleId={1} />);
+  fireEvent.click(await selectUpload());
+  await screen.findByText("上傳失敗，請重試");
+  expect(screen.getByRole("img", { name: "待上傳圖片預覽" })).toBeTruthy();
+  fireEvent.click(screen.getByRole("button", { name: "上傳並選用" }));
+  await waitFor(() => expect(vi.mocked(req).mock.calls.filter(([path]) => path.endsWith("/upload"))).toHaveLength(2));
+  const uploads = vi.mocked(req).mock.calls.filter(([path]) => path.endsWith("/upload"));
+  expect(JSON.parse(String(uploads[0][1]?.body)).idempotencyKey).toBe(JSON.parse(String(uploads[1][1]?.body)).idempotencyKey);
+});
+
+it("blocks uploads and removals while the slot has active image work", async () => {
+  const { slots } = mockManualImages();
+  slots[1].prompt_status = "planning";
+  render(<Illustrations articleId={1} />);
+  expect((await screen.findByLabelText("上傳圖片") as HTMLInputElement).disabled).toBe(true);
+  expect((screen.getByRole("button", { name: "不放圖片" }) as HTMLButtonElement).disabled).toBe(true);
+  expect(screen.getByRole("status").textContent).toContain("完成後即可上傳或移除");
+});
+
+it("removes selected uploaded images, preserves the candidates, and publishes without a cover", async () => {
+  const { slots } = mockManualImages();
+  render(<Illustrations articleId={1} />);
+  fireEvent.click(await selectUpload());
+  fireEvent.click(await screen.findByRole("button", { name: "移除圖片" }));
+  await waitFor(() => expect(slots[1].selected_candidate_id).toBeNull());
+  expect(slots[1].candidates).toHaveLength(1);
+  fireEvent.click(screen.getAllByRole("button", { name: /第 2 段/ })[0]);
+  fireEvent.click(await screen.findByRole("button", { name: "不放圖片" }));
+  await waitFor(() => expect(slots[2].required).toBe(false));
+  fireEvent.click(await screen.findByRole("button", { name: "發布整套圖片" }));
+  await waitFor(() => expect(screen.queryByLabelText("上傳圖片")).toBeNull());
+  expect(slots[0].required).toBe(false);
+  expect(screen.getByRole("combobox", { name: "視覺版本" }).textContent).toContain("已發布");
+});
+
+it("opens AI controls only when requested in a manual edition", async () => {
+  mockManualImages();
+  render(<Illustrations articleId={1} />);
+  await screen.findByLabelText("上傳圖片");
+  expect(vi.mocked(req).mock.calls.some(([path]) => path.endsWith("/quote"))).toBe(false);
+  fireEvent.click(screen.getByText("使用 AI 配圖"));
+  expect(await screen.findByRole("textbox", { name: "圖片提示詞" })).toBeTruthy();
+  await waitFor(() => expect(vi.mocked(req).mock.calls.some(([path]) => path.endsWith("/slots/92/quote"))).toBe(true));
+});
+
+it("keeps manual creation available when image settings cannot be loaded", async () => {
+  mockManualImages({ empty: true });
+  const original = vi.mocked(req).getMockImplementation()!;
+  vi.mocked(req).mockImplementation(async (path, init) => {
+    if (path === "/image-models" || path === "/generation-settings") throw new Error("AI settings unavailable");
+    return original(path, init);
+  });
+  render(<Illustrations articleId={1} />);
+  await screen.findByText("AI 配圖目前無法使用，仍可自行上傳圖片。");
+  expect(screen.queryByRole("alert")).toBeNull();
+  fireEvent.click(screen.getByRole("button", { name: "自行配圖" }));
+  await screen.findByLabelText("上傳圖片");
+});
+
+it("shows FileReader errors and permits choosing another image", async () => {
+  mockManualImages();
+  const originalRead = FileReader.prototype.readAsDataURL;
+  vi.spyOn(FileReader.prototype, "readAsDataURL").mockImplementationOnce(function (this: FileReader) {
+    this.dispatchEvent(new ProgressEvent("error"));
+  });
+  render(<Illustrations articleId={1} />);
+  fireEvent.change(await screen.findByLabelText("上傳圖片"), { target: { files: [new File(["broken"], "first.png", { type: "image/png" })] } });
+  expect(await screen.findByText("無法讀取圖片，請重新選擇。")).toBeTruthy();
+  vi.mocked(FileReader.prototype.readAsDataURL).mockImplementation(originalRead);
+  expect(await selectUpload()).toBeTruthy();
+  expect(screen.queryByText("無法讀取圖片，請重新選擇。")).toBeNull();
+});
+
+it("disables the file picker and submit button until an upload finishes", async () => {
+  mockManualImages();
+  const original = vi.mocked(req).getMockImplementation()!;
+  let finish: () => void = () => {};
+  vi.mocked(req).mockImplementation(async (path, init) => {
+    if (path.endsWith("/upload")) {
+      await new Promise<void>((resolve) => { finish = resolve; });
+      return original(path, init);
+    }
+    return original(path, init);
+  });
+  render(<Illustrations articleId={1} />);
+  fireEvent.click(await selectUpload());
+  expect((screen.getByRole("button", { name: "正在上傳…" }) as HTMLButtonElement).disabled).toBe(true);
+  expect((screen.getByLabelText("上傳圖片") as HTMLInputElement).disabled).toBe(true);
+  await act(async () => finish());
+  await screen.findByLabelText("替換圖片");
+});
+
+it("keeps reference approval separate from uploading cover and paragraph pictures", async () => {
+  mockWorkflow();
+  render(<Illustrations articleId={1} />);
+  await screen.findByRole("region", { name: "視覺設定與參考圖" });
+  expect(screen.queryByLabelText("上傳圖片")).toBeNull();
 });

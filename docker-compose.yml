@@ -69,7 +69,7 @@ services:
       SCENARIO_QWEN_TTS_URL: ${SCENARIO_QWEN_TTS_URL:-http://host.docker.internal:8000/v1/audio/speech}
     volumes:
       - audio:/data/audio
-      - images:/data/images:ro
+      - images:/data/images
       - scenario-studio:/data/scenario-studio
       - ./config:/app/config:ro
     ports:

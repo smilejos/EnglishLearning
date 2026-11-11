@@ -7,6 +7,7 @@ export * from "./illustrations/catalog";
 export * from "./illustrations/providers";
 export * from "./illustrations/repository";
 export * from "./illustrations/storage";
+export * from "./illustrations/uploads";
 export * from "./illustrations/processor";
 export { extractVocabWords } from "./tokenizeWords";
 
