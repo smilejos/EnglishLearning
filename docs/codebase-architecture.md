@@ -444,6 +444,7 @@ Compose 先啟動 DB，migrate 成功後啟動 API／worker，再啟動兩個前
 - 文字、語音、圖片三項生成設定存於 DB `generation_settings`，由 admin 的 `/generation-settings` 讀寫。共用文字設定供翻譯、單字解釋與圖片分階段 Prompt 規劃使用；可選文字／語音模型與聲線由 `config/generation-models.json` 載入，圖檔模型由 `config/image-models.json` 載入。圖片與規劃費率由 `config/image-pricing.json` 定義，新增文字模型須有規劃費率才可儲存。設定檔在後端行程啟動時讀取，修改後需重啟相關服務；既有工作快照不會自動變更。舊五項設定升級時以「文章翻譯」模型作為共用文字模型。Vertex AI TTS 使用 `gemini-2.5-flash-tts`／`gemini-2.5-pro-tts`；migration 更新目前後台設定中的舊 preview 型號，舊 job 快照在送出時映射，已生成音檔不重做。
 - 文字選項包含 Vertex AI `gemini-3.8-flash`，圖片規劃對此模型使用 `thinkingLevel=LOW`；其規劃費率目前採官方截至 2026-12-31 的優惠價，2027-01-01 須更新價格。`gemini-3.8-flash-lite-tts` 未列入 Vertex AI `global` 可用模型清單，因此語音選項尚未加入它。
 - `VITE_*` 是前端建置設定。Compose 用 `LEARNER_URL_PUBLIC`／`ADMIN_URL_PUBLIC` 轉為 build args；改連結通常要重新 build，不能只重啟舊前端映像。
+- 兩個前端 Docker build 先複製根目錄 `package.json`、`package-lock.json` 與全部 workspace manifests，再以 `npm ci --workspace @el/web-admin`／`@el/web-learner` 安裝對應前端（包含 devDependencies、不安裝根目錄依賴）；原始碼另外複製以重用安裝快取。避免在單一前端目錄執行未使用 lockfile 的 `npm install`，重新解析版本曾在 npm 10.9.9 觸發 `edgesOut` 錯誤。
 - 裸 `docker compose up` 不會啟用 images profile；**`scripts/deploy.sh` 預設加 `--profile images`**，因此完整部署包含 image-worker。tunnel、seed 仍各自為選用 profile。
 - 情境 worker 的 `scenarios` profile 不由一般部署腳本預設加入；API 與 worker 掛載專用可寫 `scenario-studio` volume，worker 另寫正式 audio／images。啟動可能執行既有付費生成待辦，操作及授權範圍須確認。
 - proxy 以 `proxy/` 目錄掛載 nginx 設定，避免單檔掛載在原子替換後指向已刪除 inode；從舊版單檔掛載升級需只重建 proxy 容器，單純 restart 不會更新掛載。

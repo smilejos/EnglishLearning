@@ -1,6 +1,15 @@
 # Build context is the repo root (see docker-compose.yml).
 FROM node:20-alpine AS build
 WORKDIR /app
+# 依 monorepo lockfile 安裝，避免獨立 npm install 重新解析相依版本。
+COPY package.json package-lock.json ./
+COPY shared/package.json ./shared/package.json
+COPY api/package.json ./api/package.json
+COPY worker/package.json ./worker/package.json
+COPY web-admin/package.json ./web-admin/package.json
+COPY web-learner/package.json ./web-learner/package.json
+RUN npm ci --workspace @el/web-learner --include-workspace-root=false --include=dev --no-audit --no-fund
+
 # Base tsconfig is referenced via "../tsconfig.base.json".
 COPY tsconfig.base.json ./tsconfig.base.json
 COPY scripts/shared-audio-only.mjs scripts/shared-audio-only.d.mts ./scripts/
@@ -8,7 +17,7 @@ COPY web-learner ./web-learner
 WORKDIR /app/web-learner
 ARG VITE_ADMIN_URL=http://localhost:8081
 ENV VITE_ADMIN_URL=$VITE_ADMIN_URL
-RUN npm install --no-audit --no-fund && npm run build
+RUN npm run build
 
 FROM nginx:alpine
 COPY web-learner/nginx.conf /etc/nginx/conf.d/default.conf
