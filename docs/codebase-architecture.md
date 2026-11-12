@@ -522,6 +522,8 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 
 ## 13. 未來 agent 的任務定位與文件維護
 
+字庫錄音重新產音可用 `scripts/replace-wordbank-words.mjs` 與 Compose `wordbank-audio` 維護服務：預設保持原 word 清單／version 1 續跑；plan／run／status 加 `--kinds example,explanation` 可另批重製字庫英文例句與英文解釋，預設目錄追加 `-example-explanation`，不碰原整詞批次。清單依實際 DB 全級別與既有 GUID，含缺音、略空英文；逐筆保存 CSV／恢復紀錄、校驗後切換 audio volume 與 metadata，交易核對原詞條內容、GUID／kind 與原錄音 CAS，未選種類不變；不處理中文、文章 `words/` 或情境旁白。預設 plan 唯讀，run 須 `WORD_BANK_REAL_TTS=1`，`--apply` 才寫入正式媒體與 DB；支援工具不等於正式重產已執行。詳見[字庫錄音替換操作](wordbank-word-audio-replacement.md)。
+
 未引用音檔清理使用 `scripts/cleanup-audio.mjs` 與獨立 Compose `audio-cleanup` profile。預設 plan 只讀 DB／volume，產出 JSON／CSV；apply 才沿同份清單永久刪檔，不改 DB。引用包含 paragraphs、words、word_explanations、wordbank_audio、全部 audio_assets 及所有 scenario_revisions 旁白，保留草稿／歷史版本及 registry 舊音源；未知檔與近期24小時檔保留。apply 持六表 SHARE 鎖並重驗引用、根目錄與SHA／bytes／檔案身分；仍須與產音／匯入錯開。專用測試為 `npm run audio:cleanup:test`，程序與不可只靠metadata還原的限制見[音檔清理](audio-storage.md#未使用音檔盤點與永久刪除)。
 
 啟動時先讀第 1–3 節；接著依下表定位，再閱讀對應流程、測試與當下程式。不要把歷史需求檔當成已實作功能，也不必每次重新掃描全庫。

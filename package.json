@@ -27,6 +27,8 @@
     "vocabulary:import": "node --import tsx scripts/import-vocabulary.ts",
     "vocabulary:audio:import": "node --import tsx scripts/import-vocabulary-audio.ts",
     "vocabulary:audio:generate": "node scripts/generate-wordbank-audio.mjs",
+    "vocabulary:audio:replace": "node --import tsx scripts/replace-wordbank-words.mjs",
+    "vocabulary:audio:replace:test": "node --import tsx --test scripts/replace-wordbank-words-core.test.mjs scripts/replace-wordbank-words.test.mjs scripts/replace-wordbank-words-db.test.mjs scripts/replace-wordbank-words-e2e.test.mjs scripts/scenarios/qwen-gradio-client.test.mjs",
     "vocabulary:audio:test": "node --test scripts/generate-wordbank-audio.test.mjs",
     "scenario:package:check": "node scripts/check-scenario-package.mjs",
     "scenario:package:test": "node --test scripts/check-scenario-package.test.mjs",

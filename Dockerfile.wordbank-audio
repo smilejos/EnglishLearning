@@ -1,0 +1,15 @@
+# 一次性 Qwen 字庫錄音重產工具，預設整詞、可選例句／解釋；不啟動 API、worker 或 migration。
+FROM node:22-alpine
+WORKDIR /app
+RUN apk add --no-cache ffmpeg
+COPY package.json package-lock.json tsconfig.base.json ./
+COPY shared/package.json ./shared/package.json
+COPY api/package.json ./api/package.json
+COPY worker/package.json ./worker/package.json
+COPY web-admin/package.json ./web-admin/package.json
+COPY web-learner/package.json ./web-learner/package.json
+RUN npm ci --omit=dev --no-audit --no-fund
+COPY shared/src ./shared/src
+COPY scripts ./scripts
+ENTRYPOINT ["node", "--import", "tsx", "scripts/replace-wordbank-words.mjs"]
+CMD ["plan"]

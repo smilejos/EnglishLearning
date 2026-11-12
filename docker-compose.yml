@@ -268,6 +268,24 @@ services:
         condition: service_healthy
     restart: "no"
 
+  # 手動執行的字庫錄音重產；預設 word，可選 kinds；plan 唯讀，--apply 才切換選定資產。
+  wordbank-audio:
+    profiles: ["wordbank-audio"]
+    build:
+      context: .
+      dockerfile: Dockerfile.wordbank-audio
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD:-app}@db:5432/${POSTGRES_DB:-english_learning}
+      AUDIO_DIR: /data/audio
+      WORD_REPLACEMENT_WORK_DIR: /workspace/data/wordbank-word-replacement/qwen-lan-1.7b
+    volumes:
+      - .:/workspace
+      - audio:/data/audio
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
 volumes:
   pgdata:
   audio:
