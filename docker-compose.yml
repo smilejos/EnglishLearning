@@ -205,7 +205,8 @@ services:
   cloudflared:
     image: cloudflare/cloudflared:latest
     profiles: ["tunnel"]
-    command: tunnel run
+    # 容器未配置 IPv6 路由，固定以 IPv4 連線 Cloudflare，避免自動選址後持續連線失敗。
+    command: ["tunnel", "--edge-ip-version", "4", "run"]
     restart: unless-stopped
     environment:
       TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
