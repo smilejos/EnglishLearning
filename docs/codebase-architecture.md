@@ -522,6 +522,8 @@ seed 不是純新增或唯讀檢查，重跑可能更換文章 ID 並 cascade �
 
 ## 13. 未來 agent 的任務定位與文件維護
 
+未引用音檔清理使用 `scripts/cleanup-audio.mjs` 與獨立 Compose `audio-cleanup` profile。預設 plan 只讀 DB／volume，產出 JSON／CSV；apply 才沿同份清單永久刪檔，不改 DB。引用包含 paragraphs、words、word_explanations、wordbank_audio、全部 audio_assets 及所有 scenario_revisions 旁白，保留草稿／歷史版本及 registry 舊音源；未知檔與近期24小時檔保留。apply 持六表 SHARE 鎖並重驗引用、根目錄與SHA／bytes／檔案身分；仍須與產音／匯入錯開。專用測試為 `npm run audio:cleanup:test`，程序與不可只靠metadata還原的限制見[音檔清理](audio-storage.md#未使用音檔盤點與永久刪除)。
+
 啟動時先讀第 1–3 節；接著依下表定位，再閱讀對應流程、測試與當下程式。不要把歷史需求檔當成已實作功能，也不必每次重新掃描全庫。
 
 | 使用者提到的任務 | 優先閱讀 |

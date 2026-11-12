@@ -16,6 +16,8 @@
     "phonics:preview": "node scripts/preview-phonics.mjs",
     "audio:migrate": "node --import tsx scripts/migrate-static-audio.mjs",
     "audio:migrate:test": "node --import tsx --test scripts/migrate-static-audio.test.mjs scripts/phonics-audio-paths.test.mjs scripts/shared-audio-only.test.mjs",
+    "audio:cleanup": "node --import tsx scripts/cleanup-audio.mjs",
+    "audio:cleanup:test": "node --import tsx --test scripts/cleanup-audio-core.test.mjs scripts/cleanup-audio-e2e.test.mjs",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "pretest": "npm run test:db:up",
     "test": "npm run test --workspaces --if-present",

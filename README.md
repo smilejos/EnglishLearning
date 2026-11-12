@@ -38,6 +38,8 @@
 
 Phonics 與獨立情境預覽的音訊已改為共用 DB／API 查詢，不再使用前台靜態 MP3；正式音檔搬入、驗證、原檔封存與 API／前台部署已於 2026-11-10 完成，操作及成果見 [共用音訊存放與搬遷](docs/audio-storage.md)。
 
+字庫重產後的舊音檔可用 `docker compose --profile audio-cleanup run --rm --build audio-cleanup plan` 盤點，再用 `docker compose --profile audio-cleanup run --rm audio-cleanup apply` 永久刪除仍未被任何 DB 引用的候選；預設保留 24 小時內新增或變更檔。請先等產音／匯入結束並審閱清單；引用來源、備份與恢復限制見[未使用音檔清理](docs/audio-storage.md#未使用音檔盤點與永久刪除)。
+
 ## 快速開始
 
 本機開發與測試使用 Node.js 22.12 以上；Docker 建置與 CI 使用 Node 22。安全相依升級與驗證範圍見 [2026-11-11 審核紀錄](docs/audit-2026-11-11.md)；本機驗證不代表正式服務已更新。

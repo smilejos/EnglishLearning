@@ -250,6 +250,24 @@ services:
         condition: service_healthy
     restart: "no"
 
+  # 共用 audio 未引用音檔清理；plan 只盤點，apply 才永久刪除，與產音／匯入錯開。
+  audio-cleanup:
+    profiles: ["audio-cleanup"]
+    build:
+      context: .
+      dockerfile: Dockerfile.audio-cleanup
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-app}:${POSTGRES_PASSWORD:-app}@db:5432/${POSTGRES_DB:-english_learning}
+      AUDIO_DIR: /data/audio
+      AUDIO_CLEANUP_WORK_DIR: /workspace/data/audio-cleanup
+    volumes:
+      - .:/workspace
+      - audio:/data/audio
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
 volumes:
   pgdata:
   audio:

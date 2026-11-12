@@ -87,6 +87,32 @@
 
    正式搬遷與部署須完成上述 DB、檔案、HTTP 及服務健康驗證。瀏覽器實際點擊試播與人工發音聽審另列驗收狀態，不可由 HTTP 通過推定完成。本次實際範圍見正式紀錄；搬遷不會重新產音，也不代表新增字庫文字已匯入。
 
+## 未使用音檔盤點與永久刪除
+
+`audio-cleanup` 只掃描共用 `audio` volume，支援 `articles/`、`words/`、`wordbank/`、`assets/`、`scenarios/` 內的 `.mp3`、`.wav`、`.m4a`。文章段落、文章單字及五種解釋錄音、字庫 metadata、所有 `audio_assets` metadata、情境所有草稿／歷史／發布版本的旁白都算引用；即使目前字庫優先播放新錄音，registry 仍記錄的舊檔也保留。未知目錄、其他副檔名及 symlink 只列在 ignored，不刪除、不跟隨。
+
+在專案根目錄先盤點，這一步只讀 DB／音檔，清單與摘要寫入 `data/audio-cleanup/`：
+
+```bash
+docker compose --profile audio-cleanup run --rm --build audio-cleanup plan
+```
+
+審閱 `data/audio-cleanup/plan.csv` 的 `candidate` 列、bytes 與 SHA-256。`plan.json` 固定候選、DB 身分、audio 根目錄身分、檔案 hash／大小／inode／修改及變更時間；再次 plan 會重建清單。預設保留 24 小時內新增或修改的檔案，保護尚未完成匯入的近期檔；若確認不需這項時間保護，可在 plan 時明確加 `--min-age-hours 0`。時間門檻只固定於 plan，apply 不會自動納入稍後才過期的檔案。
+
+確認清單並保留需要的音檔備份後，執行永久刪除：
+
+```bash
+docker compose --profile audio-cleanup run --rm audio-cleanup apply
+```
+
+apply 只處理這份清單中的 candidate；重新讀取完整 DB 引用，新增加引用的檔案保留並列為 `newlyReferenced`。全部候選先核對一次，刪每檔前再驗 hash、bytes 與檔案身分；內容、時間、inode、目標 DB 或根目錄變更時會停止。已刪／本來不存在的檔案可安全重跑，不掃入 plan 之後新增的檔案。結果見 `report.json`，逐檔歷程見 `progress.jsonl`，失敗或中斷以非零 exit code 結束；已成功刪除的檔案不會因後續錯誤而自動還原。意外斷電可能留下 `.cleanup.lock`，確認原程序已停止後才可手動移除此鎖。
+
+**清理需與產音、上傳、匯入、還原錯開，尤其先等 `wordbank-audio` 及 API 查字後的背景 TTS 都結束。** apply 以六個引用資料表的 SHARE 鎖阻擋 metadata 同時寫入（等鎖超過三秒則失敗），每次真正刪檔前再以同一 client 檢查 DB 連線；但檔案與 DB 無法跨系統原子操作，24 小時保護及 DB 鎖不能取代這項維護安排。維護容器只依賴 DB，不會啟動 API、worker、migration 或生成服務，也不會修改 DB metadata。
+
+這是永久刪除。**刪除舊錄音後，無法只靠整詞替換 `plan.json` 的原 metadata 還原，仍需原音檔備份。** 離線 plan、`fixtures/seed/`、備料及封存不算正式 DB 引用；工具不掃描或刪除它們，也不掃獨立 `scenario-studio` volume。主機可用 `npm run audio:cleanup -- plan|apply`，須自行明確提供正確的 `DATABASE_URL`、`AUDIO_DIR`，且沿用同一實體根目錄及 work-dir；不應混用主機／容器產生的清單。
+
+專用驗證：`npm run audio:cleanup:test`，使用暫存檔與經 `resolveTestDatabaseUrl` 保護的隔離 `_test` schema，不呼叫生成服務或操作正式 volume。
+
 ## 預覽與驗證
 
 `npm run phonics:preview` 固定於 `127.0.0.1:5174`，透過 `VITE_API_PROXY`（預設 `http://localhost:8080`）讀取既有 API。這是唯讀 API 預覽，已不再是斷開 DB 的離線模式；GET／HEAD／OPTIONS 通過，寫入方法與舊 `/phonics/*.mp3` 被拒絕。`/me` 使用真實既有身分回應，音訊清單或檔案失效時顯示可重試錯誤，不回本機備援。
