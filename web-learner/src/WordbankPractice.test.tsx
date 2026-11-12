@@ -21,7 +21,7 @@ beforeEach(() => {
   vi.resetAllMocks(); _resetAudioBus(); audios = [];
   vi.mocked(api.getWordbankOptions).mockResolvedValue(options);
   vi.mocked(api.getWordbankQuestion).mockResolvedValue({ poolSize: 1193, entry });
-  vi.stubGlobal("Audio", vi.fn((url: string) => {
+  vi.stubGlobal("Audio", vi.fn(function (url: string) {
     const audio = { url, pause: vi.fn(), play: vi.fn().mockResolvedValue(undefined), onended: null, onerror: null };
     audios.push(audio); return audio;
   }));

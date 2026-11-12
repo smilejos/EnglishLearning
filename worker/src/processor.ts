@@ -34,6 +34,10 @@ async function recomputeArticleStatus(
   db: Queryable,
   articleId: number,
 ): Promise<void> {
+  // 同文章的完成交易先序列化，再用下一個 READ COMMITTED snapshot 重算。
+  // 否則兩個 worker 都可能只看見自己的段落完成，將文章永遠留在 processing。
+  // 維持既有 paragraph/job → article 鎖序；COUNT 不鎖其他 worker 的段落。
+  await db.query("SELECT id FROM articles WHERE id = $1 FOR UPDATE", [articleId]);
   const c = await countParagraphsByStatus(db, articleId);
   const status =
     c.pending + c.processing > 0

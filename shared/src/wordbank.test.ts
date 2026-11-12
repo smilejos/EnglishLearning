@@ -11,16 +11,25 @@ const manifest = (): WordbankAudioManifest => ({
 });
 
 describe("字庫匯入契約", () => {
+  it("省略、空白或部分分級都補齊 null，保留已提供的分級", () => {
+    const base = { id: 1, guid: entry.guid, word: "a" };
+    for (const input of [base, { ...base, level: undefined }, { ...base, level: {} }]) {
+      expect(WordbankEntrySchema.parse(input).level).toEqual({ cefr: null, tw_7000: null, list: null });
+    }
+    expect(WordbankEntrySchema.parse({ ...base, level: { cefr: "A2" } }).level)
+      .toEqual({ cefr: "A2", tw_7000: null, list: null });
+  });
+
   it("接受缺少文字與分級，但拒絕重複 GUID", () => {
     expect(entry.definition).toBe("");
     expect(entry.level).toEqual({ cefr: null, tw_7000: null, list: null });
     expect(() => parseWordbankDocument({ entries: [entry, entry] })).toThrow("GUID 重複");
   });
 
-  it("實際來源可完整解析 9244 字，包含 1193 basic 字且保留所有欄位", async () => {
+  it("實際來源可完整解析 9247 字，包含 1193 basic 字且保留所有欄位", async () => {
     const source = JSON.parse(await readFile(new URL("../../source/vocabulary-database.json", import.meta.url), "utf8"));
     const parsed = parseWordbankDocument(source);
-    expect(parsed).toHaveLength(9244);
+    expect(parsed).toHaveLength(9247);
     expect(parsed.filter((item) => item.level.list === "basic")).toHaveLength(1193);
     expect(parsed).toEqual(source.entries);
   });

@@ -40,6 +40,8 @@ Phonics 與獨立情境預覽的音訊已改為共用 DB／API 查詢，不再�
 
 ## 快速開始
 
+本機開發與測試使用 Node.js 22.12 以上；Docker 建置與 CI 使用 Node 22。安全相依升級與驗證範圍見 [2026-11-11 審核紀錄](docs/audit-2026-11-11.md)；本機驗證不代表正式服務已更新。
+
 ```bash
 ./scripts/deploy.sh up        # build（如需）→ 啟動 → 等待全部 healthy
 npm run seed                  # 匯入示範資料（fixtures，免 LLM 費用）

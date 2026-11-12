@@ -62,10 +62,12 @@ const EXPLANATION = {
 };
 
 beforeEach(() => {
+  vi.stubGlobal("confirm", vi.fn(() => false));
   vi.clearAllMocks();
 });
 
 afterEach(() => {
+  vi.unstubAllGlobals();
   cleanup();
   vi.restoreAllMocks();
 });

@@ -1,6 +1,6 @@
 # Build context is the repo root (see docker-compose.yml).
 # Workspace-aware：api 依賴 @el/shared，需在 monorepo 內安裝並以 tsx 執行。
-FROM node:20-alpine
+FROM node:22-alpine
 WORKDIR /app
 RUN apk add --no-cache ffmpeg
 

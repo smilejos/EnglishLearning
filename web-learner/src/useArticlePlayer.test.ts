@@ -97,4 +97,71 @@ describe("useArticlePlayer", () => {
     act(() => result.current.toggle());
     expect(result.current.playing).toBe(false);
   });
+
+  it("播放被瀏覽器拒絕時停止顯示播放中，並可重試", async () => {
+    const { result } = renderHook(() => useArticlePlayer(items));
+    vi.spyOn(FakeAudio.instances[0], "play").mockRejectedValueOnce(new Error("blocked"));
+    await act(async () => result.current.playParagraph(0));
+    expect(result.current.playing).toBe(false);
+    await act(async () => result.current.toggle());
+    expect(result.current.playing).toBe(true);
+  });
+
+  it("前次播放的延遲拒絕不會停止新段落", async () => {
+    const { result } = renderHook(() => useArticlePlayer(items));
+    let reject!: (error: Error) => void;
+    vi.spyOn(FakeAudio.instances[0], "play").mockImplementationOnce(
+      () => new Promise<void>((_resolve, fail) => { reject = fail; }),
+    );
+    act(() => result.current.playParagraph(0));
+    act(() => result.current.playParagraph(1));
+    await act(async () => reject(new Error("superseded")));
+    expect(result.current.playing).toBe(true);
+    expect(result.current.currentParagraphId).toBe(22);
+  });
+
+  it("跨段拖曳後直接選段會清掉舊的待跳轉位置", () => {
+    const { result } = renderHook(() => useArticlePlayer(items));
+    act(() => {
+      FakeAudio.instances[1].dispatch("loadedmetadata");
+      FakeAudio.instances[2].dispatch("loadedmetadata");
+    });
+    act(() => result.current.seek(0.75));
+    act(() => result.current.playParagraph(0));
+    act(() => FakeAudio.instances[0].dispatch("loadedmetadata"));
+    expect(FakeAudio.instances[0].currentTime).toBe(0);
+  });
+
+  it("替換文章段落會停止舊音訊並重設播放列", () => {
+    const { result, rerender } = renderHook(({ list }) => useArticlePlayer(list), {
+      initialProps: { list: items },
+    });
+    const pause = vi.spyOn(FakeAudio.instances[0], "pause");
+    act(() => result.current.playParagraph(1));
+    pause.mockClear();
+    rerender({ list: [{ paragraphId: 33, url: "/audio/b/p0.wav" }] });
+    expect(pause).toHaveBeenCalled();
+    expect(result.current.playing).toBe(false);
+    expect(result.current.index).toBe(-1);
+    expect(result.current.active).toBe(false);
+  });
+
+  it("metadata 載入前再次拖曳同段，以最後位置為準", () => {
+    const { result } = renderHook(() => useArticlePlayer(items));
+    act(() => {
+      FakeAudio.instances[1].dispatch("loadedmetadata");
+      FakeAudio.instances[2].dispatch("loadedmetadata");
+    });
+    act(() => result.current.seek(0.75));
+    act(() => result.current.seek(0.6));
+    act(() => FakeAudio.instances[0].dispatch("loadedmetadata"));
+    expect(FakeAudio.instances[0].currentTime).toBe(2);
+  });
+
+  it("音訊載入失敗會結束播放中狀態", () => {
+    const { result } = renderHook(() => useArticlePlayer(items));
+    act(() => result.current.playParagraph(0));
+    act(() => FakeAudio.instances[0].dispatch("error"));
+    expect(result.current.playing).toBe(false);
+  });
 });

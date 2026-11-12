@@ -1,6 +1,6 @@
 # 一次性 migration runner：安裝（含 dev 的 node-pg-migrate）並執行 migrate:up。
 # 由 docker-compose 的 migrate 服務使用，api/worker 依其 completed_successfully 啟動。
-FROM node:20-alpine
+FROM node:22-alpine
 WORKDIR /app
 
 COPY package.json package-lock.json ./

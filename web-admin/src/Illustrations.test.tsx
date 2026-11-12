@@ -13,8 +13,12 @@ vi.mock("./api", () => ({ req: vi.fn() }));
 afterEach(() => {
   cleanup();
   vi.restoreAllMocks();
+  vi.unstubAllGlobals();
 });
 beforeEach(() => {
+  // happy-dom 未實作瀏覽器對話框，先明確提供可監聽的測試替身。
+  vi.stubGlobal("confirm", vi.fn(() => false));
+  vi.stubGlobal("prompt", vi.fn(() => null));
   vi.mocked(req).mockReset();
   vi.mocked(req).mockImplementation(async (path) => {
     if (path === "/image-models")

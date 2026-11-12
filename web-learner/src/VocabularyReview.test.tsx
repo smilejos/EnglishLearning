@@ -51,7 +51,7 @@ describe("單字複習", () => {
       zhExampleAudioPath: null, zhTranslationAudioPath: "meaning.wav",
     });
     const pause = vi.fn();
-    vi.stubGlobal("Audio", vi.fn(() => ({ play: vi.fn().mockResolvedValue(undefined), pause })));
+    vi.stubGlobal("Audio", vi.fn(function () { return { play: vi.fn().mockResolvedValue(undefined), pause }; }));
     vi.mocked(api.getExplanations).mockResolvedValue({ word: null, explanations: [explanation(2, 21, "其他意思"), explanation(1, 20, "習慣")] });
     render(<VocabularyReview onJump={vi.fn()} />);
     await screen.findByText("習慣");

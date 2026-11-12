@@ -85,6 +85,61 @@ async function jobRow(
 }
 
 describe("worker 段落處理", () => {
+  it.each(["done", "failed"] as const)("兩個 worker 同時完成時文章得到正確終態：%s", async (expected) => {
+    const article = await createArticle(pool, { title: "Concurrent completion" });
+    for (let idx = 0; idx < 2; idx++) {
+      const paragraph = await createParagraph(pool, {
+        articleId: article.id,
+        idx,
+        text: idx === 0 ? "First." : "Second.",
+      });
+      await updateParagraphResult(pool, paragraph.id, { translation: "已有翻譯。" });
+      await createJob(pool, article.id, paragraph.id);
+    }
+    // 認領時的 pending → processing 不應被下面的終態同步屏障擋住。
+    await pool.query("UPDATE articles SET status = 'processing' WHERE id = $1", [article.id]);
+    const applicationName = `worker-race-${article.id}-${expected}`;
+    const workerPool = createPool(DATABASE_URL, { application_name: applicationName });
+    const blocker = await pool.connect();
+    let work: Promise<boolean[]> | undefined;
+    try {
+      await blocker.query("BEGIN");
+      await blocker.query("SELECT id FROM articles WHERE id = $1 FOR UPDATE", [article.id]);
+      const ttsClient: TtsClient = {
+        synthesize: async (text) => {
+          if (expected === "failed" && text === "Second.") throw new Error("terminal TTS failure");
+          return { wav: Buffer.from("RIFF"), pcm: Buffer.from([1, 2]) };
+        },
+      };
+      const deps = makeDeps({ pool: workerPool, ttsClient, maxAttempts: 1 });
+      work = Promise.all([processNextJob(deps), processNextJob(deps)]);
+
+      // 明確等到兩個交易都完成自己的段落寫入並等待文章鎖，才解除屏障。
+      // 舊實作在此時已各自算出 processing；修正後需取得鎖才會讀取段落狀態。
+      const deadline = Date.now() + 5000;
+      let waiting = 0;
+      while (waiting < 2 && Date.now() < deadline) {
+        const result = await pool.query<{ n: number }>(
+          "SELECT count(*)::int AS n FROM pg_stat_activity WHERE application_name = $1 AND wait_event_type = 'Lock'",
+          [applicationName],
+        );
+        waiting = result.rows[0].n;
+        if (waiting < 2) await new Promise((resolve) => setTimeout(resolve, 5));
+      }
+      expect(waiting).toBe(2);
+      await blocker.query("COMMIT");
+      expect(await work).toEqual([true, true]);
+      expect((await getArticleById(pool, article.id))?.status).toBe(expected);
+      const paragraphs = await listParagraphsByArticle(pool, article.id);
+      expect(paragraphs.map((p) => p.status)).toEqual(["done", expected]);
+    } finally {
+      await blocker.query("ROLLBACK");
+      blocker.release();
+      await work;
+      await workerPool.end();
+    }
+  }, 10000);
+
   it("處理一篇兩段文章：兩段各有中英音檔與翻譯，文章 done", async () => {
     const article = await createArticle(pool, { title: "Two paragraphs" });
     const p0 = await createParagraph(pool, {

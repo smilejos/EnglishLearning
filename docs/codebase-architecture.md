@@ -101,9 +101,9 @@ flowchart TD
 | `proxy/nginx.conf`、兩個前端 nginx／Vite 設定 | 正式與開發環境的路徑轉發 |
 | `scripts/`、`fixtures/seed/` | 部署、備份、免 LLM 示範資料匯入 |
 | `source/vocabulary-database.json`、`shared/src/{wordbank,wordbankAudio}.ts`、repo、`scripts/import-vocabulary*.ts`、`scripts/generate-wordbank-audio.mjs` | 獨立字庫（來源9,247詞／正式9,207詞）、補缺匯入、音檔 metadata 校驗、本機 Qwen3-TTS 批次生成 |
-| `.github/workflows/ci.yml` | Node 20 CI：安裝、型別檢查、測試、前端 build、測試庫清理 |
+| `.github/workflows/ci.yml` | Node 22 CI：安裝、型別檢查、測試、前端 build、測試庫清理 |
 
-技術組合：TypeScript、Node 20、Fastify 4、React 18、Vite 5、PostgreSQL 16、`pg`、Zod、Vitest；前端測試使用 happy-dom／Testing Library；圖片轉檔用 sharp，音訊轉檔用 ffmpeg。版本以各 `package.json` 與 lockfile 為準。
+技術組合：TypeScript、Node 22（本機最低 22.12）、Fastify 5、React 18、Vite 6、PostgreSQL 16、`pg`、Zod 4、Vitest 4；前端測試使用 happy-dom 21／Testing Library，migration runner 為 node-pg-migrate 9；圖片轉檔用 sharp，音訊轉檔用 ffmpeg。版本以各 `package.json` 與 lockfile 為準。2026-11-11 安全相依升級、相容調整及剩餘 moderate 公告見 [審核紀錄](audit-2026-11-11.md)，尚未部署正式服務。
 
 後端使用 `tsx` 直接執行 TypeScript；`@el/shared` 匯出 `src/index.ts`，沒有獨立的 shared 編譯產物。根目錄 `npm run build` 實際主要建置兩個前端，不會把 API／worker 編譯為另一套 JS dist。
 
@@ -202,6 +202,7 @@ flowchart TD
 - 單段按鈕播放完即停；全文模式才自動接下一段，並跟隨目前段落捲動與高亮。
 - 空白鍵播放／暫停、左右鍵切段；彈窗開啟或焦點在輸入／按鈕元件時不攔截。
 - `lib/audioBus.ts` 協調全文播放器、中文朗讀與單字語音，開始新音源時暫停前一個。
+- 全文播放器統一處理播放拒絕與媒體錯誤；切換段落會清除舊的待跳轉位置，替換文章段落清單會停止並重設播放器。延遲回報的舊播放失敗不覆蓋新播放狀態。
 
 ### 單字彈窗
 
@@ -254,7 +255,7 @@ flowchart TD
 3. worker 用 `claimNextJob` 原子認領一筆到期 pending job，或回收超過期限的 processing job；使用 `FOR UPDATE SKIP LOCKED`，認領時增加 attempts。
 4. 缺翻譯且同篇有多個缺譯段落、其翻譯模型快照相同時，先嘗試批次翻譯；批次失敗或快照不同時回退逐段。已有翻譯沿用。
 5. 缺英文／中文音檔才呼叫 TTS；同段的兩種語言並行。檔案在 DB transaction 外寫入。
-6. 成功後以 transaction 更新段落與 job 為 done，重算文章狀態。
+6. 成功後以 transaction 更新段落與 job 為 done，取得文章列鎖後再重算文章狀態；失敗／重試路徑沿用相同順序，避免多 worker 同時完成時使用過期的段落計數。
 
 文章重算規則：尚有 pending／processing 段落 → processing；否則有 failed → failed；否則 done。雖然共用 enum 包含 processing，現有處理器認領時主要更新 job，並未同步把段落設為 processing；不要假設三張表每一刻狀態一致。
 

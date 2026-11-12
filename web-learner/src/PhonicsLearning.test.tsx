@@ -24,7 +24,7 @@ beforeEach(() => {
     const lessonId = url.split("/").at(-1)!;
     return { ok: true, json: async () => ({ assets: mockAssets(lessonId) }) };
   }));
-  vi.stubGlobal("Audio", vi.fn((url: string) => {
+  vi.stubGlobal("Audio", vi.fn(function (url: string) {
     const audio = { url, playbackRate: 1, pause: vi.fn(), play: vi.fn().mockResolvedValue(undefined), onended: null, onerror: null };
     audios.push(audio); return audio;
   }));
@@ -181,7 +181,7 @@ describe("短母音 a 教材", () => {
   it("切字族後舊 ended、error 與 play promise 都不會干擾新字族連播", async () => {
     vi.useFakeTimers();
     let resolveOld!: () => void;
-    vi.mocked(Audio).mockImplementationOnce((url?: string) => {
+    vi.mocked(Audio).mockImplementationOnce(function (url?: string) {
       const audio: FakeAudio = { url: url!, playbackRate: 1, pause: vi.fn(),
         play: vi.fn(() => new Promise<void>((resolve) => { resolveOld = resolve; })), onended: null, onerror: null };
       audios.push(audio); return audio as unknown as HTMLAudioElement;
@@ -277,7 +277,7 @@ describe("短母音 a 教材", () => {
   it("舊播放 promise 完成不會覆蓋新階段，音訊失敗能重試", async () => {
     let resolveOld!: () => void;
     render(<PhonicsLearning lessonOpen />);
-    vi.mocked(Audio).mockImplementationOnce((url?: string) => {
+    vi.mocked(Audio).mockImplementationOnce(function (url?: string) {
       const audio: FakeAudio = { url: url!, playbackRate: 1, pause: vi.fn(),
         play: vi.fn(() => new Promise<void>((resolve) => { resolveOld = resolve; })), onended: null, onerror: null };
       audios.push(audio); return audio as unknown as HTMLAudioElement;

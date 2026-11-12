@@ -1,5 +1,5 @@
 # Build context is the repo root (see docker-compose.yml).
-FROM node:20-alpine AS build
+FROM node:22-alpine AS build
 WORKDIR /app
 # 依 monorepo lockfile 安裝，避免獨立 npm install 重新解析相依版本。
 COPY package.json package-lock.json ./

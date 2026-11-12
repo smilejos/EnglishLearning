@@ -24,7 +24,7 @@ export const emptyDraft = (): MetaDraft => ({
   selTags: new Set(),
 });
 
-/** 將標籤依 kind 分組（維度與組內標籤皆依字典序）。 */
+/** 將標籤依 kind 分組（以繁體中文排序，不受瀏覽器／伺服器預設語系影響）。 */
 export function groupTags(tags: Tag[]): { kind: string; items: Tag[] }[] {
   const m = new Map<string, Tag[]>();
   for (const t of tags) {
@@ -32,10 +32,10 @@ export function groupTags(tags: Tag[]): { kind: string; items: Tag[] }[] {
     m.get(t.kind)!.push(t);
   }
   return [...m.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]))
+    .sort((a, b) => a[0].localeCompare(b[0], "zh-TW"))
     .map(([kind, items]) => ({
       kind,
-      items: [...items].sort((a, b) => a.label.localeCompare(b.label)),
+      items: [...items].sort((a, b) => a.label.localeCompare(b.label, "zh-TW")),
     }));
 }
 

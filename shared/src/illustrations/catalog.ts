@@ -16,7 +16,7 @@ const GeminiOptions = z
     imageSize: z.literal("1K"),
   })
   .strict();
-const profile = (options: z.ZodTypeAny) =>
+const profile = <T extends z.ZodType>(options: T) =>
   z
     .object({
       deliveryAspectRatio: z.enum(["1:1", "16:9", "4:3"]),
@@ -82,7 +82,7 @@ const tokenRates = z
   .strict();
 const outputRate = z
   .object({
-    options: z.record(z.union([z.string(), z.number()])),
+    options: z.record(z.string(), z.union([z.string(), z.number()])),
     outputTokens: positive,
     imageUsdMicros: positive,
   })

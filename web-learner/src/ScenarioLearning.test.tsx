@@ -49,7 +49,7 @@ beforeEach(() => {
   vi.mocked(api.listScenarios).mockResolvedValue({ scenarios: [scenario] });
   vi.mocked(api.getScenario).mockResolvedValue(scenario);
   vi.mocked(api.getWordbankEntry).mockImplementation(async guid => entry(guid.replace("-guid", "")));
-  vi.stubGlobal("Audio", vi.fn((url: string) => {
+  vi.stubGlobal("Audio", vi.fn(function (url: string) {
     const audio: FakeAudio = { url, currentTime: 0, playbackRate: 1, play: vi.fn(() => nextPlay()), pause: vi.fn(), onended: null, onerror: null, ontimeupdate: null };
     audios.push(audio); return audio;
   }));

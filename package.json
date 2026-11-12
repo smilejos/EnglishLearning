@@ -2,6 +2,9 @@
   "name": "english-learning",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "workspaces": [
     "shared",
     "api",
@@ -36,7 +39,7 @@
     "scenario:import": "node --import tsx scripts/import-scenario.ts"
   },
   "devDependencies": {
-    "node-pg-migrate": "^7.9.1",
+    "node-pg-migrate": "^9.0.0",
     "pg": "^8.22.0"
   }
 }

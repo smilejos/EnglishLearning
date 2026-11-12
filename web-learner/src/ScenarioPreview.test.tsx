@@ -32,7 +32,7 @@ beforeEach(() => {
   fetchMock = vi.fn(() => { throw new Error("預覽行為測試不可連線"); });
   vi.stubGlobal("fetch", fetchMock);
   vi.stubGlobal("requestAnimationFrame", vi.fn((callback: FrameRequestCallback) => { callback(0); return 1; }));
-  vi.stubGlobal("Audio", vi.fn((url: string) => {
+  vi.stubGlobal("Audio", vi.fn(function (url: string) {
     const audio: FakeAudio = { url, play: vi.fn(() => nextPlay()), pause: vi.fn(), onended: null, onerror: null };
     audios.push(audio);
     return audio;

@@ -42,8 +42,13 @@ export function buildApp(opts: BuildAppOpts): FastifyInstance {
   // 避免把上游（如 Gemini）的錯誤內文或實作細節暴露給呼叫端。
   app.setErrorHandler((error, request, reply) => {
     request.log.error(error);
-    const status = error.statusCode && error.statusCode >= 400 ? error.statusCode : 500;
-    reply.status(status).send({ error: status >= 500 ? "internal server error" : error.message });
+    const failure = error && typeof error === "object"
+      ? error as { statusCode?: unknown; message?: unknown }
+      : {};
+    const status = typeof failure.statusCode === "number" && Number.isInteger(failure.statusCode)
+      && failure.statusCode >= 400 && failure.statusCode < 600 ? failure.statusCode : 500;
+    reply.status(status).send({ error: status >= 500 ? "internal server error"
+      : typeof failure.message === "string" ? failure.message : "request failed" });
   });
 
   // 健康檢查（公開，供 docker healthcheck）。

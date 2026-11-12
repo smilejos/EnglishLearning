@@ -13,11 +13,12 @@ export const WordbankEntrySchema = z.object({
   definition: Text.nullish().transform((value) => value ?? ""),
   explains: z.array(ExplainSchema).default([]),
   examples: z.array(ExampleSchema).default([]),
+  // 先解析缺省物件，保留各分級欄位的 null 正規化；Zod 4 default 會直接回傳值。
   level: z.object({
     cefr: z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]).nullish().transform((value) => value ?? null),
     tw_7000: z.number().int().min(1).max(6).nullish().transform((value) => value ?? null),
     list: z.enum(["basic", "advance", "expert"]).nullish().transform((value) => value ?? null),
-  }).default({}),
+  }).prefault({}),
   category: z.array(Text).default([]),
   scenario: z.array(Text).default([]),
 });

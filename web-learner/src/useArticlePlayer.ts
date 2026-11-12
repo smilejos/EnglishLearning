@@ -1,6 +1,6 @@
 // 把整篇文章的逐段音檔串成一條可拖曳的連續時間軸（沿用 article2speech 設計）。
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { claimAudio } from "./lib/audioBus";
+import { claimAudio, releaseAudio } from "./lib/audioBus";
 
 export interface PlayerItem {
   paragraphId: number;
@@ -40,6 +40,7 @@ export function useArticlePlayer(
   const [posInPara, setPosInPara] = useState(0);
   const [speed, setSpeed] = useState(initialSpeed || 1);
   const pendingSeek = useRef<number | null>(null);
+  const playRequest = useRef(0);
   const indexRef = useRef(-1);
   indexRef.current = index;
   const continuousRef = useRef(true);
@@ -50,10 +51,39 @@ export function useArticlePlayer(
   // 全域單音源：被其他音源搶走時暫停自己（stopper 引用必須穩定）。
   const stopRef = useRef<() => void>(() => {});
   stopRef.current = () => {
+    playRequest.current += 1;
     audio.pause();
+    releaseAudio(busStop);
     setPlaying(false);
   };
   const busStop = useMemo(() => () => stopRef.current(), []);
+
+  // 同一個 Audio 切換 src 時，舊的 play promise 可能延遲拒絕。
+  // 只讓目前播放請求更新狀態，並完整處理瀏覽器拒絕播放的情況。
+  const startPlayback = useCallback(() => {
+    const request = ++playRequest.current;
+    claimAudio(busStop);
+    setPlaying(true);
+    void audio.play().catch(() => {
+      if (request !== playRequest.current) return;
+      releaseAudio(busStop);
+      setPlaying(false);
+    });
+  }, [audio, busStop]);
+
+  useEffect(() => {
+    stopRef.current();
+    pendingSeek.current = null;
+    indexRef.current = -1;
+    setIndex(-1);
+    setPosInPara(0);
+    audio.src = "";
+    return () => {
+      playRequest.current += 1;
+      audio.pause();
+      releaseAudio(busStop);
+    };
+  }, [audio, items, busStop]);
 
   // 預載 metadata 取得各段真實長度，組出時間軸。
   useEffect(() => {
@@ -93,29 +123,33 @@ export function useArticlePlayer(
     (i: number, continuous = true) => {
       if (i < 0 || i >= items.length) return;
       continuousRef.current = continuous;
+      pendingSeek.current = null;
+      indexRef.current = i;
       setIndex(i);
       audio.src = items[i].url;
       audio.currentTime = 0;
       audio.playbackRate = speed;
       setPosInPara(0);
-      claimAudio(busStop);
-      void audio.play();
-      setPlaying(true);
+      startPlayback();
     },
-    [audio, items, speed, busStop],
+    [audio, items, speed, startPlayback],
   );
 
   useEffect(() => {
     const onTime = () => setPosInPara(audio.currentTime);
     const onEnded = () => {
       if (!continuousRef.current) {
+        releaseAudio(busStop);
         setPlaying(false);
         return;
       }
       const next = indexRef.current + 1;
       if (next < items.length) playParagraph(next, true);
       else if (repeatRef.current) playParagraph(0, true); // 重複：整篇循環
-      else setPlaying(false);
+      else {
+        releaseAudio(busStop);
+        setPlaying(false);
+      }
     };
     const onMeta = () => {
       if (pendingSeek.current != null) {
@@ -126,32 +160,31 @@ export function useArticlePlayer(
     audio.addEventListener("timeupdate", onTime);
     audio.addEventListener("ended", onEnded);
     audio.addEventListener("loadedmetadata", onMeta);
+    const onError = () => stopRef.current();
+    audio.addEventListener("error", onError);
     return () => {
       audio.removeEventListener("timeupdate", onTime);
       audio.removeEventListener("ended", onEnded);
       audio.removeEventListener("loadedmetadata", onMeta);
+      audio.removeEventListener("error", onError);
     };
-  }, [audio, items, playParagraph]);
+  }, [audio, items, playParagraph, busStop]);
 
   useEffect(() => {
     audio.playbackRate = speed;
   }, [audio, speed]);
-  useEffect(() => () => audio.pause(), [audio]);
 
   const toggle = useCallback(() => {
     if (playing) {
-      audio.pause();
-      setPlaying(false);
+      stopRef.current();
       return;
     }
     if (index < 0) {
       playParagraph(0);
       return;
     }
-    claimAudio(busStop);
-    void audio.play();
-    setPlaying(true);
-  }, [audio, playing, index, playParagraph, busStop]);
+    startPlayback();
+  }, [playing, index, playParagraph, startPlayback]);
 
   const prev = useCallback(
     () =>
@@ -172,18 +205,20 @@ export function useArticlePlayer(
         if (target >= starts[k] - 1e-3) i = k;
       const off = target - starts[i];
       if (i === indexRef.current) {
+        if (pendingSeek.current != null) pendingSeek.current = off;
         audio.currentTime = off;
         setPosInPara(off);
       } else {
+        indexRef.current = i;
         setIndex(i);
         pendingSeek.current = off;
         audio.src = items[i].url;
         audio.playbackRate = speed;
         setPosInPara(off);
-        if (playing) void audio.play();
+        if (playing) startPlayback();
       }
     },
-    [audio, items, starts, total, playing, speed],
+    [audio, items, starts, total, playing, speed, startPlayback],
   );
 
   const toggleRepeat = useCallback(() => setRepeat((v) => !v), []);

@@ -108,17 +108,17 @@ describe("POST /lookups（重新解釋）", () => {
   };
 
   // mock LLM／TTS，計數呼叫次數。
-  let explainSpy: ReturnType<typeof vi.fn>;
-  let synthSpy: ReturnType<typeof vi.fn>;
+  let explainSpy: ReturnType<typeof vi.fn<ExplainClient["complete"]>>;
+  let synthSpy: ReturnType<typeof vi.fn<TtsClient["synthesize"]>>;
   function makeDeps(): LookupDeps {
-    explainSpy = vi.fn(async () => JSON.stringify(content));
-    synthSpy = vi.fn(async () => ({
+    explainSpy = vi.fn<ExplainClient["complete"]>(async () => JSON.stringify(content));
+    synthSpy = vi.fn<TtsClient["synthesize"]>(async () => ({
       wav: Buffer.from([0x52, 0x49, 0x46, 0x46]),
       pcm: Buffer.from([1, 2]),
     }));
     const explainClient: ExplainClient = { complete: explainSpy };
     const ttsClient: TtsClient = {
-      synthesize: synthSpy as unknown as TtsClient["synthesize"],
+      synthesize: synthSpy,
     };
     return {
       explainClient,

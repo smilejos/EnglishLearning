@@ -16,11 +16,11 @@ afterAll(async () => { await pool.end(); });
 beforeEach(async () => { await pool.query("TRUNCATE wordbank_entries CASCADE"); });
 
 describe("字庫 repo", () => {
-  it("完整 9244 字匯入／重匯演練，所有欄位 round-trip 相同且不遺失缺文字詞條", async () => {
+  it("完整 9247 字匯入／重匯演練，所有欄位 round-trip 相同且不遺失缺文字詞條", async () => {
     const source = parseWordbankDocument(JSON.parse(await readFile(new URL("../../../source/vocabulary-database.json", import.meta.url), "utf8")));
-    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 9244, existing: 0 });
+    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 9247, existing: 0 });
     expect(await listWordbankEntries(pool)).toEqual(source);
-    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 0, existing: 9244 });
+    expect(await importWordbankEntries(pool, source)).toEqual({ inserted: 0, existing: 9247 });
     const persisted = await listWordbankEntries(pool);
     expect(persisted).toEqual(source);
     expect(persisted.filter((entry) => entry.level.list === "basic")).toHaveLength(1193);
