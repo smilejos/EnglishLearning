@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "databaseConnected": false,
+  "changes": [
+    {
+      "word": "boat",
+      "id": 100,
+      "oldExamples": 3,
+      "newExamples": 4,
+      "preservedScalarAndExplains": true
+    },
+    {
+      "word": "pen",
+      "id": 633,
+      "oldExamples": 3,
+      "newExamples": 4,
+      "preservedScalarAndExplains": true
+    },
+    {
+      "word": "sit",
+      "id": 784,
+      "oldExamples": 3,
+      "newExamples": 4,
+      "preservedScalarAndExplains": true
+    },
+    {
+      "word": "board",
+      "id": 1102,
+      "oldExamples": 3,
+      "newExamples": 4,
+      "preservedScalarAndExplains": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "scenarioKey": "travel-airplane-cabin",
+  "assetVersion": 1,
+  "tool": "built-in image_gen.imagegen",
+  "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-92d89c01-b7c6-4d8f-bc3f-afcfffbaee5d.png",
+  "repositoryPath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png",
+  "promptPath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/prompt.txt",
+  "sha256": "723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0",
+  "bytes": 2534227,
+  "width": 1672,
+  "height": 941,
+  "transparentBackground": false,
+  "status": "generated-visually-inspected-awaiting-user-review",
+  "generatedOn": "2026-11-11",
+  "productionImported": false,
+  "published": false
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "profile": {
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Serena",
+    "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+    "lang_code": "English",
+    "response_format": "mp3"
+  },
+  "entries": [
+    {
+      "assetGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "kind": "word",
+      "text": "board",
+      "textHash": "859169b38185780daa5497983ff20d2994390058d8a71f2847ac7846f970971e",
+      "relativePath": "wordbank/09eeb3d17582e855/f813645b-5fc5-5c97-b02a-684b14dd9f63.mp3",
+      "durationSeconds": 2.928,
+      "bytes": 46892,
+      "generatedAt": "2026-11-01T16:26:36.348Z"
+    },
+    {
+      "assetGuid": "d1321a93-e6d5-5505-8818-a9be4c6e3b7f",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "kind": "example",
+      "text": "The board is in the store.",
+      "textHash": "2e508279e8332cd4856d0c6b098cf4f79152d923ebdc6f4d62468cb2eebd05b6",
+      "relativePath": "wordbank/09eeb3d17582e855/d1321a93-e6d5-5505-8818-a9be4c6e3b7f.mp3",
+      "durationSeconds": 2.544,
+      "bytes": 40748,
+      "generatedAt": "2026-11-01T16:26:41.496Z"
+    },
+    {
+      "assetGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "kind": "word",
+      "text": "form",
+      "textHash": "07397d633f25a7101990a75864ae03d5a3b9ac07c4ed6accbc52cbfd7d7c13b4",
+      "relativePath": "wordbank/09eeb3d17582e855/c632fa33-c99b-53e3-ad58-565f4f627aa4.mp3",
+      "durationSeconds": 1.584,
+      "bytes": 25388,
+      "generatedAt": "2026-11-01T16:26:20.118Z"
+    },
+    {
+      "assetGuid": "27c29950-96ce-5f17-a7e8-14f4734f14da",
+      "entryGuid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+      "kind": "example",
+      "text": "Get a red pen.",
+      "textHash": "51561ff5588ca6aed665cdfb68fcb6892dfde9adebcdea6e55fa7d247863db5b",
+      "relativePath": "wordbank/09eeb3d17582e855/27c29950-96ce-5f17-a7e8-14f4734f14da.mp3",
+      "durationSeconds": 2.064,
+      "bytes": 33068,
+      "generatedAt": "2026-11-01T10:48:32.554Z"
+    },
+    {
+      "assetGuid": "249fa24a-15b1-5291-90d8-43a25779c743",
+      "entryGuid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+      "kind": "example",
+      "text": "The boat is slow.",
+      "textHash": "c45ef990ad2aa59a4b1e8bb4c3dba7466930fa38e11fa3baf594f4a19b938a87",
+      "relativePath": "wordbank/09eeb3d17582e855/249fa24a-15b1-5291-90d8-43a25779c743.mp3",
+      "durationSeconds": 1.968,
+      "bytes": 31532,
+      "generatedAt": "2026-11-01T15:04:04.572Z"
+    },
+    {
+      "assetGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "kind": "word",
+      "text": "flag",
+      "textHash": "807d0fbcae7c4b20518d4d85664f6820aafdf936104122c5073e7744c46c4b87",
+      "relativePath": "wordbank/09eeb3d17582e855/8128f3ea-350f-5cff-9e35-71603d504df7.mp3",
+      "durationSeconds": 1.344,
+      "bytes": 21548,
+      "generatedAt": "2026-11-01T04:45:40.769Z"
+    },
+    {
+      "assetGuid": "8e80eb6c-e3ee-5db4-a9dc-cc95b2f3f676",
+      "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "kind": "example",
+      "text": "The pig can sit.",
+      "textHash": "448ceb6eeefcbbf3cda60ef95295119fb58754dc450bfa17a84aad5b8442d037",
+      "relativePath": "wordbank/09eeb3d17582e855/8e80eb6c-e3ee-5db4-a9dc-cc95b2f3f676.mp3",
+      "durationSeconds": 2.136,
+      "bytes": 34220,
+      "generatedAt": "2026-11-01T10:48:46.503Z"
+    }
+  ]
+}

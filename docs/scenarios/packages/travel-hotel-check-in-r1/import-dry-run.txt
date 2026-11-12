@@ -1,0 +1,23 @@
+{
+  "scenarioKey": "travel-hotel-check-in",
+  "revision": 1,
+  "targets": 29,
+  "image": {
+    "relativePath": "scenarios/travel-hotel-check-in/1/0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af.png",
+    "sha256": "0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af",
+    "bytes": 2403165,
+    "contentType": "image/png",
+    "width": 1672,
+    "height": 941
+  },
+  "audio": {
+    "relativePath": "scenarios/travel-hotel-check-in/1/ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161.mp3",
+    "sha256": "ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161",
+    "bytes": 713900,
+    "contentType": "audio/mpeg",
+    "textSha256": "5be1bff70c686f547abe59e766d60177253759d168fb195015490b846703b8eb"
+  },
+  "importStatus": "draft",
+  "mode": "dry-run"
+}
+離線檢查完成，未連線資料庫、複製媒體或發布。

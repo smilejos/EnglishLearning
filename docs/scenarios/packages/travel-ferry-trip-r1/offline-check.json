@@ -1,0 +1,20 @@
+{
+  "scenarioKey": "travel-ferry-trip",
+  "packagePath": "docs/scenarios/packages/travel-ferry-trip-r1/scenario.json",
+  "source": "source/vocabulary-database.json",
+  "check": {
+    "valid": true,
+    "publishReady": true,
+    "scenarioKey": "travel-ferry-trip",
+    "targetCount": 19,
+    "missing": [],
+    "warnings": [
+      "advance 單字與例句音檔尚待正式字庫核對；此預檢不連資料庫",
+      "本工具只驗證套件與來源字庫，不代表正式資料庫已匯入或圖片內容已通過人工驗收"
+    ]
+  },
+  "strictSchema": {
+    "valid": true,
+    "targetCount": 19
+  }
+}

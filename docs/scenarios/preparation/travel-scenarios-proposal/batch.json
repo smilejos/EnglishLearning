@@ -1,0 +1,2958 @@
+{
+  "batchKey": "travel-scenarios-proposal",
+  "mode": "mixed-by-scene",
+  "scenes": [
+    {
+      "key": "travel-airport-gate",
+      "title": "機場登機",
+      "coreTargets": [
+        {
+          "word": "airport",
+          "guid": "6598df4f-74d0-5f12-8de7-6043b46336ca",
+          "pos": "n",
+          "meaning": "機場",
+          "level": "basic",
+          "visualCue": "候機區大窗與窗外停機坪共同呈現機場",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "落地玻璃窗、停機坪、登機櫃檯與空橋共同呈現機場候機區。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "airplane",
+          "guid": "55eefd94-534b-5a8b-97ed-6eef05dec561",
+          "pos": "n",
+          "meaning": "飛機",
+          "level": "basic",
+          "visualCue": "窗外一架完整停靠的飛機",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "窗外的大型客機，可見機身、機尾、機翼與引擎；機首一部分被空橋遮住但仍可辨識。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "gate",
+          "guid": "89921bea-fb3a-5795-923d-7137dcac7c16",
+          "pos": "n",
+          "meaning": "登機門",
+          "level": "basic",
+          "visualCue": "隊伍前方連接登機通道的入口",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "右側連入空橋的開放登機入口。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "ticket",
+          "guid": "1a126970-ab39-5697-bab2-7316a7819184",
+          "pos": "n",
+          "meaning": "票券",
+          "level": "basic",
+          "visualCue": "旅客手持紙本票券，不把與登機證的不同用途混教",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男孩右手向地勤出示的白色紙本旅行票證；圖面沒有文字，不單憑外觀辨別票券用途。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "passenger",
+          "guid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+          "pos": "n",
+          "meaning": "乘客",
+          "level": "advance",
+          "visualCue": "拿票等待登機的旅客",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "排隊旅客、男孩與走入空橋的成人。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "bag",
+          "guid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+          "pos": "n",
+          "meaning": "旅行袋",
+          "level": "basic",
+          "visualCue": "旅客手上或腳邊的提袋",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "中央男士雙手提起的鼓脹深藍旅行袋。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "window",
+          "guid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+          "pos": "n",
+          "meaning": "窗戶",
+          "level": "basic",
+          "visualCue": "候機區的大面玻璃窗",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "畫面後方可看見客機的大面玻璃窗。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "seat",
+          "guid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+          "pos": "n",
+          "meaning": "座位",
+          "level": "basic",
+          "visualCue": "排隊區旁的候機椅",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "左前方無人乘坐的藍色候機椅。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "line",
+          "guid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+          "pos": "n",
+          "meaning": "隊伍",
+          "level": "basic",
+          "visualCue": "有序排隊的旅客",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男孩、提袋男士與女士依序排在藍色欄帶旁。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "screen",
+          "guid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+          "pos": "n",
+          "meaning": "螢幕",
+          "level": "basic",
+          "visualCue": "牆上無可辨識文字的航班資訊螢幕外觀",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "左上方顯示飛機圖示與色塊的壁掛螢幕。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "clock",
+          "guid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+          "pos": "n",
+          "meaning": "時鐘",
+          "level": "basic",
+          "visualCue": "候機區牆面指針鐘",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "螢幕正上方的無數字指針鐘。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "uniform",
+          "guid": "a9faa595-0c09-57f5-b092-c3d84f41a563",
+          "pos": "n",
+          "meaning": "制服",
+          "level": "basic",
+          "visualCue": "登機門工作人員的制服",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "地勤身上的深藍制服與黃色領巾。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "busy",
+          "guid": "9d321e96-b853-5882-97ed-5043682012a3",
+          "pos": "adj",
+          "meaning": "繁忙的",
+          "level": "basic",
+          "visualCue": "排隊與查票同時進行的候機區",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "查票、排隊與走入空橋同時進行，繁忙感屬場景語境。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "heavy",
+          "guid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+          "pos": "adj",
+          "meaning": "重的",
+          "level": "basic",
+          "visualCue": "旅客雙手費力提著旅行袋",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男士雙手提起大旅行袋；實際重量不能由圖證明，需故事補足。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "empty",
+          "guid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+          "pos": "adj",
+          "meaning": "空的",
+          "level": "advance",
+          "visualCue": "一張無人乘坐的候機椅",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "左前候機椅上沒有乘客。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "ready",
+          "guid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+          "pos": "adj",
+          "meaning": "準備好的",
+          "level": "basic",
+          "visualCue": "旅客備妥票券在入口等待，語境需故事輔助",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男孩票證已備妥、另一旅客正進入空橋；準備就緒需語境。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "wait",
+          "guid": "dec06abd-726b-5825-93e6-8f495225bc26",
+          "pos": "v",
+          "meaning": "等候",
+          "level": "basic",
+          "visualCue": "旅客在登機口排隊等待",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男士與女士在男孩後方排隊等候。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "carry",
+          "guid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+          "pos": "v",
+          "meaning": "提著；攜帶",
+          "level": "basic",
+          "visualCue": "旅客正在提旅行袋",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男士以雙手提起旅行袋，袋子離地。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "check",
+          "guid": "7242d255-af15-510d-8c98-44f37f9b9ee0",
+          "pos": "v",
+          "meaning": "檢查；核對",
+          "level": "basic",
+          "visualCue": "工作人員檢查票券",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "地勤將手持讀取器對向男孩出示的票證。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "show",
+          "guid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+          "pos": "v",
+          "meaning": "出示",
+          "level": "basic",
+          "visualCue": "旅客把票券展示給工作人員",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男孩把白色紙本票證伸向地勤。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "board",
+          "guid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+          "pos": "v",
+          "meaning": "登機",
+          "level": "advance",
+          "visualCue": "旅客踏進登機通道，須確認構圖支持動作",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "右側背包旅客背向候機區走入登機空橋，登機方向清楚。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "airbridge",
+          "guid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+          "pos": "n",
+          "meaning": "空橋；登機空橋",
+          "level": null,
+          "visualCue": "右側旅客走入的封閉玻璃空橋，窗外也可看見連接客機的伸縮結構。",
+          "actualImageStatus": "visible",
+          "sourceDefinition": "登機空橋 (Jet Bridge)",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 401006,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false,
+          "imageEvidence": {
+            "visibleCue": "右側旅客走入的封閉玻璃空橋，窗外也可看見連接客機的伸縮結構。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "baggage cart",
+          "guid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+          "pos": "n",
+          "meaning": "行李運輸拖車",
+          "level": null,
+          "visualCue": "中央窗外、客機引擎前下方可見低矮四輪載運拖車，上有紅／黃／紫三只行李箱，前方由白藍牽引車拖動；與右側空橋支撐底盤分開。",
+          "actualImageStatus": "visible-wordbank-entry-missing",
+          "sourceDefinition": null,
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": null,
+          "wordbankStatus": "canonical-added-production-pending",
+          "requiredForSelectedTargets": true,
+          "imageEvidence": {
+            "visibleCue": "中央窗外、客機引擎前下方可見低矮四輪載運拖車，上有紅／黃／紫三只行李箱，前方由白藍牽引車拖動；與右側空橋支撐底盤分開。",
+            "reviewStatus": "visible-canonical-word-added-production-pending",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          },
+          "plannedSourceId": 9254,
+          "sourceStatus": "canonical-existing-not-production-imported"
+        },
+        {
+          "word": "passage",
+          "guid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+          "pos": "n",
+          "meaning": "通道",
+          "level": "expert",
+          "visualCue": "右側空橋內可行走的地板與兩側扶欄形成的通道；標籤指內部行走空間，與airbridge整體設施區分。",
+          "actualImageStatus": "visible",
+          "sourceDefinition": "通道；走廊；文章段落；通過；經過。",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 136066,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false,
+          "imageEvidence": {
+            "visibleCue": "右側空橋內可行走的地板與兩側扶欄形成的通道；標籤指內部行走空間，與airbridge整體設施區分。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "terminal",
+          "guid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+          "pos": "n",
+          "meaning": "航廈",
+          "level": "expert",
+          "visualCue": "整體候機區、大片窗戶與登機入口呈現航廈內部；精確場所名稱需故事語境。",
+          "actualImageStatus": "visible-needs-story-context",
+          "sourceDefinition": "機場航廈；客運總站；末期的；末端的；港口貨櫃碼頭；航廈；終端；智慧收銀刷卡機 (POS 機)；終端機",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 252587,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false,
+          "imageEvidence": {
+            "visibleCue": "整體候機區、大片窗戶與登機入口呈現航廈內部；精確場所名稱需故事語境。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        },
+        {
+          "word": "suitcase",
+          "guid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+          "pos": "n",
+          "meaning": "行李箱",
+          "level": "expert",
+          "visualCue": "男孩身前的藍紫色拉桿行李箱，與男士提著的bag旅行袋分開指向。",
+          "actualImageStatus": "visible",
+          "sourceDefinition": "（名）手提箱、行李箱；旅行時裝衣物的箱包。",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 301992,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false,
+          "imageEvidence": {
+            "visibleCue": "男孩身前的藍紫色拉桿行李箱，與男士提著的bag旅行袋分開指向。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png"
+          }
+        }
+      ],
+      "extensionCandidates": [
+        {
+          "word": "passport",
+          "guid": "8315fb35-d242-58af-8aaa-638a878ad478",
+          "pos": "n",
+          "meaning": "護照",
+          "level": "expert",
+          "visualCue": "旅客打開護照供檢查",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        },
+        {
+          "word": "boarding pass",
+          "guid": "151fd2cc-f8a3-5693-84e3-b474dc12c9ea",
+          "pos": "n",
+          "meaning": "登機證",
+          "level": null,
+          "visualCue": "旅客出示紙本或手機登機證；無燒字底圖須故事說明",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        },
+        {
+          "word": "luggage",
+          "guid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+          "pos": "n",
+          "meaning": "行李",
+          "level": "expert",
+          "visualCue": "成組行李箱與旅行袋",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        }
+      ],
+      "reusableMaterials": [
+        "docs/scenarios/basic-advance-batch-01.md#scenario-23",
+        "docs/scenarios/preparation/basic-advance-01/author-15-27.json (airport-gate)"
+      ],
+      "order": 1,
+      "coreActivity": "在登機門排隊、核對票券並準備登機；不混入安檢或機艙用餐。",
+      "plannedRevision": 1,
+      "revisionStatus": "production-r1-imported-and-published-pointer-1",
+      "status": "published",
+      "counts": {
+        "n": 17,
+        "adj": 4,
+        "v": 5
+      },
+      "targetCount": 26,
+      "assetSource": {
+        "image": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png",
+        "storyAudio": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-airport-gate/scenarios/travel-airport-gate/r1/2706fd2bc0c87488/story-99a9d6b90fa379fc.mp3",
+        "wordAudio": "正式audio volume：435有效目標音訊重用、7既有錄音補metadata、278新音檔完成匯入；共720不同目標資產"
+      },
+      "missingItems": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "evidencePaths": [
+        "source/vocabulary-database.json",
+        "docs/scenarios/preparation/travel-scenarios-proposal/review.md"
+      ],
+      "vocabularyMode": "user-specified",
+      "selectionStatus": "selection-guid-mapping-and-production-word-cards-verified",
+      "imageAsset": {
+        "scenarioKey": "travel-airport-gate",
+        "assetVersion": 2,
+        "tool": "built-in image_gen.imagegen",
+        "operation": "edit",
+        "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-32d7859f-81f1-4571-81a7-eb95224e7f7f.png",
+        "editTargetPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v1/base.png",
+        "editTargetSha256": "cfafa477593478c2199cc0616ea2a65b60ff0e2f3bfda33af1a9ae718178b3be",
+        "repositoryPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png",
+        "promptPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/prompt.txt",
+        "sha256": "5f29fc06a1c411adfc45d81ea7ebedb299a596883c022e01ecea36457e931258",
+        "bytes": 2073698,
+        "width": 1672,
+        "height": 941,
+        "transparentBackground": false,
+        "status": "production-imported-and-published",
+        "generatedOn": "2026-11-11",
+        "productionImported": true,
+        "published": true
+      },
+      "previousGradedLevels": [
+        "basic",
+        "advance"
+      ],
+      "originalUserConcepts": [
+        "空橋",
+        "行李運輸車",
+        "通道",
+        "其他適合登機場景的人事物"
+      ],
+      "facilityExpansionOptions": [
+        {
+          "word": "baggage tractor",
+          "guid": null,
+          "pos": "n",
+          "meaning": "行李牽引車",
+          "level": null,
+          "visualCue": "窗外載行李拖車前方的白藍有動力牽引車，可見駕駛，與拖車分開；仍為未列主目標的延伸概念。",
+          "actualImageStatus": "visible-wordbank-entry-missing",
+          "sourceDefinition": null,
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": null,
+          "wordbankStatus": "missing-exact-canonical-entry",
+          "requiredForSelectedTargets": false
+        },
+        {
+          "word": "queue barrier",
+          "guid": null,
+          "pos": "n",
+          "meaning": "排隊伸縮圍欄",
+          "level": null,
+          "visualCue": "畫面左至中央的銀色立柱與藍色伸縮欄帶；exact完整詞條尚缺，不用barrier的抽象義假冒完整片語GUID。",
+          "actualImageStatus": "visible-wordbank-entry-missing",
+          "sourceDefinition": null,
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": null,
+          "wordbankStatus": "missing-exact-canonical-entry",
+          "requiredForSelectedTargets": false
+        },
+        {
+          "word": "boarding pass",
+          "guid": "151fd2cc-f8a3-5693-84e3-b474dc12c9ea",
+          "pos": "n",
+          "meaning": "登機證",
+          "level": null,
+          "visualCue": "可作ticket的一般票證語意的延伸或日後替換；現白紙無文字，不能只靠外觀證明用途，不把兩詞混教為不同用途的兩張票。",
+          "actualImageStatus": "visible-needs-story-context",
+          "sourceDefinition": "登機證；機場登機證（紙本或電子）",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 323326,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false
+        },
+        {
+          "word": "engine",
+          "guid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+          "pos": "n",
+          "meaning": "引擎",
+          "level": "advance",
+          "visualCue": "窗外客機左中位置清楚的引擎與風扇口；可作飛機結構延伸。",
+          "actualImageStatus": "visible",
+          "sourceDefinition": "引擎；發動機；氙氣離子霍爾推進超高比沖引擎；三百千瓦級重型商用卡車燃料電池引擎電堆",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 69812,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false
+        },
+        {
+          "word": "ground staff",
+          "guid": null,
+          "pos": "n",
+          "meaning": "地勤人員",
+          "level": null,
+          "visualCue": "穿制服、在登機門核對票證的女士；exact完整詞條尚缺，可先保留概念。",
+          "actualImageStatus": "visible-wordbank-entry-missing",
+          "sourceDefinition": null,
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": null,
+          "wordbankStatus": "missing-exact-canonical-entry",
+          "requiredForSelectedTargets": false
+        },
+        {
+          "word": "backpack",
+          "guid": "2737a962-38b4-5658-968b-3aae2108f998",
+          "pos": "n",
+          "meaning": "背包",
+          "level": "advance",
+          "visualCue": "男孩、男士與走入空橋旅客背上的背包；已有GUID，但來源主定義偏50公升登山重裝背包，使用前需補足一般背包義/例句。",
+          "actualImageStatus": "visible-source-sense-review-needed",
+          "sourceDefinition": "輕量化 50 公升專業登山重裝大背包",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 56632,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false
+        },
+        {
+          "word": "apron",
+          "guid": "f47e55a7-53b7-5df2-b936-81119042db1a",
+          "pos": "n",
+          "meaning": "停機坪",
+          "level": "expert",
+          "visualCue": "候機窗外停機坪可見，但現有apron詞條只有圍裙義，不能直接掛為停機坪詞義。",
+          "actualImageStatus": "visible-source-sense-missing",
+          "sourceDefinition": "圍裙",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 107244,
+          "wordbankStatus": "reuse-canonical-not-production-verified",
+          "requiredForSelectedTargets": false
+        }
+      ],
+      "wordbankStatus": {
+        "existingInCanonical": 26,
+        "requiredMissingInCanonical": 0,
+        "productionMissing": 0,
+        "productionImportComplete": true
+      },
+      "missingRequiredEntries": [],
+      "imageRevisionPlan": {
+        "status": "completed-awaiting-user-review",
+        "existingImagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v1/base.png",
+        "existingImageSha256": "cfafa477593478c2199cc0616ea2a65b60ff0e2f3bfda33af1a9ae718178b3be",
+        "retainExistingImage": true,
+        "alreadyVisible": [
+          "airbridge",
+          "passage",
+          "terminal",
+          "suitcase"
+        ],
+        "missingVisualTargets": [],
+        "plannedChange": "在窗外停機坪新增清楚可辨、裝有行李的低矮行李拖車，與空橋支撐底盤分開；保留排隊、查票、提袋、空座位、時鐘、螢幕與登機人物。",
+        "optionalVehicleNote": "若畫有動力車頭，可作baggage tractor支援物件，與載行李拖車分開，不擅自當同義詞。",
+        "generationPerformedThisTurn": true,
+        "resultImagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png",
+        "resultImageSha256": "5f29fc06a1c411adfc45d81ea7ebedb299a596883c022e01ecea36457e931258",
+        "completedChanges": [
+          "baggage cart載行李拖車與三只行李箱已補入窗外停機坪",
+          "前方牽引車為支援物件，未擅自增加主目標詞",
+          "原五名主要人物、查票、排隊、提袋、空座位、時鐘、螢幕與空橋通道保留"
+        ],
+        "snapshotContext": "正式發布前的補圖製作快照；v2現已正式匯入並發布，v1僅保留未匯入"
+      },
+      "previousImageAssets": [
+        {
+          "scenarioKey": "travel-airport-gate",
+          "assetVersion": 1,
+          "tool": "built-in image_gen.imagegen",
+          "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-656d7529-8939-4e24-89af-9a174474be02.png",
+          "repositoryPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v1/base.png",
+          "promptPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v1/prompt.txt",
+          "sha256": "cfafa477593478c2199cc0616ea2a65b60ff0e2f3bfda33af1a9ae718178b3be",
+          "bytes": 2152031,
+          "width": 1672,
+          "height": 941,
+          "transparentBackground": false,
+          "status": "generated-visually-inspected-awaiting-user-review",
+          "generatedOn": "2026-11-11",
+          "productionImported": false,
+          "published": false
+        }
+      ],
+      "preparation": {
+        "packagePath": "docs/scenarios/packages/travel-airport-gate-r1/scenario.json",
+        "revision": 1,
+        "status": "production-imported-and-published",
+        "workingVocabularySource": "data/scenario-preparation/travel-scenarios/merged-vocabulary.json",
+        "plannedWordbankAdditions": "docs/scenarios/preparation/travel-scenarios-proposal/wordbank-additions.json",
+        "canonicalSource": "source/vocabulary-database.json",
+        "coordinateStatus": "103-points-statically-reviewed-3-corrections-applied-browser-unavailable",
+        "testPreviewUrl": "http://127.0.0.1:5181/#/scenarios/travel-airport-gate/revisions/1",
+        "productionApplied": true
+      },
+      "storyPrepared": {
+        "sentences": 8,
+        "textSha256": "99a9d6b90fa379fc15b8d294a50c95a410f8284e3f3854b77a5150d1a428aefc",
+        "allTargetsMapped": true,
+        "tokenMappingStatus": "canonical-and-production-wordbank-verified"
+      },
+      "pendingProductionWordbankEntries": [],
+      "remainingPreparation": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "previousImagePlanningStoryDraft": {
+        "status": "26-target-draft-blocked-by-baggage-cart-wordbank-gap-not-token-mapped",
+        "sentences": [
+          {
+            "en": "At the busy airport terminal, an airplane waits outside the window.",
+            "zh": "在繁忙的機場航廈，一架飛機停在窗外等候。"
+          },
+          {
+            "en": "A baggage cart carries suitcases outside.",
+            "zh": "外面有一台行李拖車載運著行李箱。"
+          },
+          {
+            "en": "A passenger carries a heavy bag and waits in line near the gate.",
+            "zh": "一位乘客提著沉重的旅行袋，在登機門附近排隊等候。"
+          },
+          {
+            "en": "There is an empty seat beside the line.",
+            "zh": "隊伍旁邊有一個空座位。"
+          },
+          {
+            "en": "A clock hangs above a screen.",
+            "zh": "螢幕上方掛著一個時鐘。"
+          },
+          {
+            "en": "A woman in a uniform checks each ticket.",
+            "zh": "一位穿制服的女士核對每張票券。"
+          },
+          {
+            "en": "A boy shows his ticket to her.",
+            "zh": "一個男孩向她出示票券。"
+          },
+          {
+            "en": "His family is ready to board the airplane through the passage inside the airbridge.",
+            "zh": "他的家人已準備好經由空橋內的通道登機。"
+          }
+        ]
+      },
+      "preparedStoryPath": "docs/scenarios/preparation/travel-scenarios-proposal/prepared-texts.json",
+      "preparedStoryAudio": {
+        "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-airport-gate/scenarios/travel-airport-gate/r1/2706fd2bc0c87488/story-99a9d6b90fa379fc.mp3",
+        "sha256": "59203d214cf96b9b4c55be2464fac11536150b752937b8a6b0cbce5da916d929",
+        "language": "en",
+        "textSha256": "99a9d6b90fa379fc15b8d294a50c95a410f8284e3f3854b77a5150d1a428aefc",
+        "durationSeconds": 33.096,
+        "bytes": 529580,
+        "profile": {
+          "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+          "voice": "Serena",
+          "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+          "lang_code": "English",
+          "response_format": "mp3"
+        },
+        "listeningReviewCompleted": false
+      },
+      "planningSelectionStatus": "user-requested-facility-additions-proposed-26-targets",
+      "production": {
+        "key": "travel-airport-gate",
+        "revision": 1,
+        "status": "published",
+        "publishedRevision": 1,
+        "contentHash": "1160366b49cbd28663b1a5ef346b67405b6f4ce8c615dcad845768c0f1313784",
+        "publishedAt": "2026-11-12T00:40:21.896Z",
+        "targetCount": 26
+      },
+      "prePublicationState": {
+        "revisionStatus": "test-draft-r1-imported-production-r1-planned-not-reserved-or-imported",
+        "missingItems": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "remainingPreparation": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "pendingProductionWordbankEntries": [
+          {
+            "word": "baggage cart",
+            "id": 9254,
+            "guid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+            "status": "canonical-added-production-pending"
+          }
+        ],
+        "asOf": "2026-11-12T02:19:49+08:00",
+        "context": "正式發布前備料快照，非目前待辦"
+      }
+    },
+    {
+      "key": "travel-hotel-check-in",
+      "title": "飯店櫃檯入住與周邊服務",
+      "coreTargets": [
+        {
+          "word": "receptionist",
+          "guid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+          "pos": "n",
+          "meaning": "櫃檯接待員",
+          "level": null,
+          "visualCue": "微笑站在接待櫃檯後、遞出房卡的人員",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "接待員；櫃檯人員",
+          "imageEvidence": {
+            "visibleCue": "中央穿深藍制服的接待員微笑遞出房卡。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "guest",
+          "guid": "ac639252-b530-5342-933b-75737f80bee2",
+          "pos": "n",
+          "meaning": "住客",
+          "level": "advance",
+          "visualCue": "站在櫃檯前辦理入住的旅客",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "客人；賓客",
+          "imageEvidence": {
+            "visibleCue": "櫃檯前接房卡的女士與右側簽名的男士。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "front desk",
+          "guid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+          "pos": "n",
+          "meaning": "飯店櫃檯；接待處",
+          "level": null,
+          "visualCue": "畫面中央長櫃檯及後方接待員，避免另用counter重複標同物件",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "飯店櫃檯；接待處",
+          "imageEvidence": {
+            "visibleCue": "中央弧形木質接待櫃檯。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "passport",
+          "guid": "8315fb35-d242-58af-8aaa-638a878ad478",
+          "pos": "n",
+          "meaning": "護照",
+          "level": "expert",
+          "visualCue": "住客打開放在櫃檯上的護照，內頁不畫可辨識個資或文字",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "護照；晶片護照；國際旅行證件；建築材料數位護照 (追蹤未來回收價值)；暢行無阻通往世界每一個角落之無形金色護照",
+          "imageEvidence": {
+            "visibleCue": "檯面左中打開的護照冊，內頁為抽象線條與圖案。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "key card",
+          "guid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+          "pos": "n",
+          "meaning": "房卡",
+          "level": null,
+          "visualCue": "接待員遞給住客的感應房卡，不以實體鑰匙代替",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "房卡；感應門卡",
+          "imageEvidence": {
+            "visibleCue": "接待員與女士之間交接的白色房卡。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "bell",
+          "guid": "078d0d47-f1ea-5158-a992-e0cf22e830bd",
+          "pos": "n",
+          "meaning": "服務鈴",
+          "level": "basic",
+          "visualCue": "櫃檯一角的按壓式服務鈴",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "（名）鈴；鐘；門鈴。",
+          "imageEvidence": {
+            "visibleCue": "檯面中央金色按壓式服務鈴。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "form",
+          "guid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+          "pos": "n",
+          "meaning": "表格",
+          "level": "advance",
+          "visualCue": "另一名住客正簽名的表格，僅畫無可辨識文字的欄線",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "（名）表格；形狀；種類；（動）形成；組成",
+          "imageEvidence": {
+            "visibleCue": "右側住客面前的有欄線紙本表格。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "pen",
+          "guid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+          "pos": "n",
+          "meaning": "筆",
+          "level": "basic",
+          "visualCue": "住客正用來在入住表格上簽名的筆",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "原子筆；鋼筆",
+          "imageEvidence": {
+            "visibleCue": "男士右手握著的筆。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "reservation",
+          "guid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+          "pos": "n",
+          "meaning": "訂房；預訂",
+          "level": "expert",
+          "visualCue": "住客向接待員展示手機訂房確認畫面（只畫床／日期圖示、無文字）；訂房預約屬抽象概念，需故事明確說明，不以外觀宣稱可獨立辨認",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "預約；訂位；訂房；預訂（房間、席位）",
+          "imageEvidence": {
+            "visibleCue": "護照與服務鈴之間的手機，畫面是床圖示與勾選；預訂語意需故事。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "luggage",
+          "guid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+          "pos": "n",
+          "meaning": "行李（不可數）",
+          "level": "expert",
+          "visualCue": "櫃檯旁等待寄放的整組旅行袋與行李箱；整組與單件suitcase分開指向",
+          "group": "寄放行李",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "行李（不可數）",
+          "imageEvidence": {
+            "visibleCue": "左後推車上的多件箱包。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "suitcase",
+          "guid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+          "pos": "n",
+          "meaning": "行李箱",
+          "level": "expert",
+          "visualCue": "寄放區一只清楚可辨的拉桿行李箱",
+          "group": "寄放行李",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "（名）手提箱、行李箱；旅行時裝衣物的箱包。",
+          "imageEvidence": {
+            "visibleCue": "左前方獨立灰色拉桿行李箱。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "cart",
+          "guid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+          "pos": "n",
+          "meaning": "推車",
+          "level": "expert",
+          "visualCue": "櫃檯旁運送行李的推車，與寄放架相鄰",
+          "group": "寄放行李",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "（名）推車；手推車；購物車；（動）用車運送",
+          "imageEvidence": {
+            "visibleCue": "左後方有金色框架與輪子的行李推車。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "tag",
+          "guid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+          "pos": "n",
+          "meaning": "吊牌；標籤",
+          "level": "expert",
+          "visualCue": "行李箱拉桿上的寄放識別吊牌，不畫可辨識編號或文字",
+          "group": "寄放行李",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "（名）標籤；吊牌；標記；追逐遊戲；（動）貼標籤；標記；追上",
+          "imageEvidence": {
+            "visibleCue": "灰色行李箱拉桿旁掛著的大張空白吊牌。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "water",
+          "guid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+          "pos": "n",
+          "meaning": "水",
+          "level": "basic",
+          "visualCue": "茶水桌上透明水壺與裝有清水的杯子",
+          "group": "茶水區",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "水；澆水",
+          "imageEvidence": {
+            "visibleCue": "右後茶水桌的透明清水壺。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "tea",
+          "guid": "0479b7b6-5c9e-52ad-a0ad-315383f1dae3",
+          "pos": "n",
+          "meaning": "茶",
+          "level": "basic",
+          "visualCue": "茶水桌上的茶壺與淺色茶湯；與coffee精確辨識仍需故事輔助",
+          "group": "茶水區",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "茶",
+          "imageEvidence": {
+            "visibleCue": "右後茶水桌中央玻璃茶壺內的琥珀色液體，需故事指認。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "coffee",
+          "guid": "f2012afd-cdba-5945-9501-b702b7f77697",
+          "pos": "n",
+          "meaning": "咖啡",
+          "level": "basic",
+          "visualCue": "茶水桌另一端咖啡壺與深色咖啡，和茶分開擺放",
+          "group": "茶水區",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "咖啡",
+          "imageEvidence": {
+            "visibleCue": "右後茶水桌右側黑色上蓋玻璃壺的深色液體，需故事指認。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "cup",
+          "guid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+          "pos": "n",
+          "meaning": "杯子",
+          "level": "basic",
+          "visualCue": "茶水桌前方整齊擺放的乾淨杯子",
+          "group": "茶水區",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "杯子；獎盃",
+          "imageEvidence": {
+            "visibleCue": "茶水桌前排四個有把手杯子。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "toothbrush",
+          "guid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+          "pos": "n",
+          "meaning": "牙刷",
+          "level": "advance",
+          "visualCue": "櫃檯旁整齊備品托盤中的獨立包裝牙刷，保留可辨刷頭輪廓",
+          "group": "衛浴備品",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "牙刷",
+          "imageEvidence": {
+            "visibleCue": "右側接待員手中透明包裝內的牙刷，托盤另有一支。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "toothpaste",
+          "guid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+          "pos": "n",
+          "meaning": "牙膏",
+          "level": null,
+          "visualCue": "與牙刷配對的小條牙膏，靠造型和故事輔助區別",
+          "group": "衛浴備品",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "牙膏",
+          "imageEvidence": {
+            "visibleCue": "右前托盤左側與牙刷並排的軟管。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "towel",
+          "guid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+          "pos": "n",
+          "meaning": "毛巾",
+          "level": "basic",
+          "visualCue": "備品架上摺好的乾淨毛巾",
+          "group": "衛浴備品",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "毛巾；浴巾",
+          "imageEvidence": {
+            "visibleCue": "右前托盤中央摺疊的白色毛巾。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "shampoo",
+          "guid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+          "pos": "n",
+          "meaning": "洗髮精",
+          "level": "expert",
+          "visualCue": "備品托盤中的旅行用洗髮精小瓶；無文字圖需故事說明用途",
+          "group": "衛浴備品",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "洗髮精；洗頭",
+          "imageEvidence": {
+            "visibleCue": "毛巾右側透明金黃色液體小瓶；用途無文字線索，需故事明確指認。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "soap",
+          "guid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+          "pos": "n",
+          "meaning": "肥皂",
+          "level": "advance",
+          "visualCue": "備品托盤中的獨立包裝塊狀肥皂，與小瓶洗髮精分開",
+          "group": "衛浴備品",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "肥皂",
+          "imageEvidence": {
+            "visibleCue": "托盤最右側打開包裝內的橢圓塊狀肥皂。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "friendly",
+          "guid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+          "pos": "adj",
+          "meaning": "友善的",
+          "level": "basic",
+          "visualCue": "接待員微笑迎接住客",
+          "group": "人員狀態",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "友善的；親切的；不用農藥化肥之石虎米友善農作的",
+          "imageEvidence": {
+            "visibleCue": "中央與右側接待員的微笑和迎接姿勢。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "porter",
+          "guid": "028397a3-6eb3-5491-8662-0b0908345941",
+          "pos": "n",
+          "meaning": "行李員",
+          "level": "expert",
+          "visualCue": "穿工作制服、替旅客把寄放行李掛上吊牌並放上推車的行李員",
+          "group": "寄放行李",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "（名）搬運工、行李員；負責替旅客搬運行李的人。",
+          "imageEvidence": {
+            "visibleCue": "左側紅色制服、替灰色行李箱整理吊牌的行李員。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "check in",
+          "guid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+          "pos": "v",
+          "meaning": "辦理入住",
+          "level": null,
+          "visualCue": "住客在櫃檯辦理入住的整體互動",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "辦理登機／入住手續",
+          "imageEvidence": {
+            "visibleCue": "中央遞房卡、右側簽表的整體入住互動。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "leave",
+          "guid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+          "pos": "v",
+          "meaning": "留下（在此以leave luggage表達寄放行李）",
+          "level": "basic",
+          "visualCue": "旅客把行李交由員工保管，須故事明確說明暫放，不教成離開",
+          "group": "寄放行李",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "離開；留下；休假；特別休假 (特休)；請假",
+          "imageEvidence": {
+            "visibleCue": "左側行李員接管並掛牌的行李，暫時寄放需故事說明。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "ask",
+          "guid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+          "pos": "v",
+          "meaning": "詢問；索取",
+          "level": "basic",
+          "visualCue": "住客向接待員詢問能否寄放行李或索取牙刷，故事補足語意",
+          "group": "櫃檯服務",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "問；詢問；要求",
+          "imageEvidence": {
+            "visibleCue": "孩子向右側接待員伸手互動，索取牙刷的語意需故事說明。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "give",
+          "guid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+          "pos": "v",
+          "meaning": "給予；遞給",
+          "level": "basic",
+          "visualCue": "接待員把房卡遞給住客",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "給予；贈送",
+          "imageEvidence": {
+            "visibleCue": "中央接待員把白色房卡遞給女士。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "sign",
+          "guid": "4109ddc1-c73c-5bc6-8fb8-74d95b3b107f",
+          "pos": "v",
+          "meaning": "簽名",
+          "level": "basic",
+          "visualCue": "另一名住客用筆在表格上簽名，不畫可辨識簽名",
+          "group": "櫃檯入住",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "簽名；標誌；徵兆",
+          "imageEvidence": {
+            "visibleCue": "右側男士握筆在表格上簽名。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png"
+          }
+        }
+      ],
+      "extensionCandidates": [
+        {
+          "word": "counter",
+          "guid": "f020a23d-7efe-5a09-bc8d-b4d0865beada",
+          "pos": "n",
+          "meaning": "櫃檯",
+          "level": "expert",
+          "visualCue": "與front desk同義範圍重疊，本場若採front desk則不重複標同一櫃檯",
+          "group": "替代詞",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "櫃檯；相反方向地；報到櫃檯；反駁"
+        },
+        {
+          "word": "reception",
+          "guid": "25f35f65-cc16-575d-a25c-2030cc072de9",
+          "pos": "n",
+          "meaning": "接待處",
+          "level": "expert",
+          "visualCue": "與front desk重疊，留作延伸查詞",
+          "group": "替代詞",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "接待處；服務台；歡迎會"
+        },
+        {
+          "word": "storage",
+          "guid": "d7ce9a62-0e6d-517a-a529-3f8d6801a791",
+          "pos": "n",
+          "meaning": "儲存；存放",
+          "level": "expert",
+          "visualCue": "行李寄放區，字庫已有一般儲存解釋，但整體詞卡能源例句偏多，選用前需審閱",
+          "group": "寄放延伸",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "電網級儲能系統 (ESS)；儲存；電網級磷酸鋰鐵電池大型儲能系統 (BESS)"
+        },
+        {
+          "word": "store",
+          "guid": "b2bf583f-2b66-56aa-abe8-a8f0fe006771",
+          "pos": "v",
+          "meaning": "存放；保管",
+          "level": "basic",
+          "visualCue": "飯店替旅客保管行李；leave已能完成寄放對話，不重複加動詞",
+          "group": "寄放延伸",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "商店；店鋪；儲存"
+        },
+        {
+          "word": "bottle",
+          "guid": "02816e5e-8676-5dde-b51b-67edaa00327e",
+          "pos": "n",
+          "meaning": "瓶子",
+          "level": "basic",
+          "visualCue": "茶水桌上的瓶裝水，可替換coffee或其他名詞",
+          "group": "茶水延伸",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "瓶子"
+        },
+        {
+          "word": "dispenser",
+          "guid": "f50f6407-0a48-5a28-88e7-94f9418a6892",
+          "pos": "n",
+          "meaning": "分配器",
+          "level": null,
+          "visualCue": "茶水設備可出現，但字庫技術釋義／例句占比較高，不優先當本場目標",
+          "group": "茶水延伸",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "奈升級無接觸超高速精準微量移液自動分液儀；分發器；搭載紅外線即時通訊之自動加氫槍分流器機台"
+        },
+        {
+          "word": "helpful",
+          "guid": "2599cb0d-c590-5e3f-b718-0ec19236347a",
+          "pos": "adj",
+          "meaning": "樂於助人的",
+          "level": "basic",
+          "visualCue": "人員協助搬運行李，與friendly不同重點，可替換或拆場再用",
+          "group": "人員狀態",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "有幫助的；有益的；樂於助人的"
+        },
+        {
+          "word": "free",
+          "guid": "ac695b43-6b36-5623-a553-29cd262468e1",
+          "pos": "adj",
+          "meaning": "免費的",
+          "level": "basic",
+          "visualCue": "收費與否不能單靠無文字圖片判斷，先不主張備品或茶水必然免費",
+          "group": "服務延伸",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "空閒的；免費的；自由的"
+        },
+        {
+          "word": "hotel",
+          "guid": "be58d6e2-0954-5554-aaff-53dce6b0b295",
+          "pos": "n",
+          "meaning": "飯店",
+          "level": "basic",
+          "visualCue": "整體場所可在標題與故事表達，本場圖上先聚焦櫃檯服務",
+          "group": "場所延伸",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "飯店；旅館"
+        },
+        {
+          "word": "heavy",
+          "guid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+          "pos": "adj",
+          "meaning": "沉重的",
+          "level": "basic",
+          "visualCue": "一名員工用力將行李箱放上推車，呈現重量",
+          "group": "行李狀態",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "重的；沉重的；劇烈的；大量的；嚴重的"
+        },
+        {
+          "word": "clean",
+          "guid": "d3de04c7-7cbc-5dec-9cf0-8bd9fa5be0d5",
+          "pos": "adj",
+          "meaning": "乾淨的",
+          "level": "basic",
+          "visualCue": "整齊潔淨的白毛巾與杯子；非要求同圖加入髒污對比",
+          "group": "備品狀態",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "乾淨的；打掃；清潔"
+        },
+        {
+          "word": "hot",
+          "guid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+          "pos": "adj",
+          "meaning": "熱的",
+          "level": "basic",
+          "visualCue": "茶杯上方輕微蒸氣，杯子穩放於茶水桌",
+          "group": "茶水狀態延伸",
+          "source": "source/vocabulary-database.json",
+          "sourceDefinition": "熱的；辣的；熱門的"
+        }
+      ],
+      "reusableMaterials": [
+        "docs/scenarios/basic-advance-batch-01.md#scenario-24 (客房非入住櫃檯，僅旅程脈絡)",
+        "docs/scenarios/preparation/basic-advance-01/author-15-27.json (hotel-room-arrival，僅文字參考)"
+      ],
+      "order": 2,
+      "coreActivity": "在飯店櫃檯辦理入住，並延伸寄放行李、取用旁邊茶水與索取衛浴備品。",
+      "plannedRevision": 1,
+      "revisionStatus": "production-r1-imported-and-published-pointer-1",
+      "status": "published",
+      "counts": {
+        "n": 23,
+        "adj": 1,
+        "v": 5
+      },
+      "targetCount": 29,
+      "assetSource": {
+        "image": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png",
+        "storyAudio": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-hotel-check-in/scenarios/travel-hotel-check-in/r1/2706fd2bc0c87488/story-5be1bff70c686f54.mp3",
+        "wordAudio": "正式audio volume：435有效目標音訊重用、7既有錄音補metadata、278新音檔完成匯入；共720不同目標資產"
+      },
+      "missingItems": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "evidencePaths": [
+        "source/vocabulary-database.json",
+        "docs/scenarios/preparation/travel-scenarios-proposal/review.md"
+      ],
+      "vocabularyMode": "user-specified",
+      "originalUserConcepts": [
+        "櫃檯人員",
+        "寄放行李",
+        "旁邊的茶水",
+        "衛浴用品"
+      ],
+      "selectionStatus": "selection-guid-mapping-and-production-word-cards-verified",
+      "layoutPlan": [
+        "中央：接待員與辦理入住住客，護照／房卡／服務鈴／簽名表格。",
+        "一側：寄放行李架與行李推車，旅客把行李交給員工保管。",
+        "另一側：小型茶水桌，清水／茶／咖啡與杯子。",
+        "靠櫃檯側邊：可索取備品整齊放在托盤／架上，非散放於辦理手續的檯面。"
+      ],
+      "teachingPhrases": [
+        {
+          "en": "Can I leave my luggage here?",
+          "zh": "我可以把行李寄放在這裡嗎？",
+          "note": "leave與luggage各沿用既有GUID；整句是對話草案，不宣稱有整句或leave luggage詞條。"
+        },
+        {
+          "en": "Could I have a toothbrush and some toothpaste?",
+          "zh": "可以給我一支牙刷和一些牙膏嗎？",
+          "note": "故事支援詞尚未逐token對應。"
+        },
+        {
+          "en": "Is there any tea or water?",
+          "zh": "有茶或水嗎？",
+          "note": "茶水用簡單詢問呈現，不假定所有飯店都提供。"
+        }
+      ],
+      "optionalMissingEntries": [
+        {
+          "word": "luggage tag",
+          "guid": null,
+          "status": "absent-exact-match-in-canonical",
+          "requiredForSelectedTargets": false,
+          "decision": "以已有tag標行李吊牌即可；若要完整片語作單一詞卡需先補新詞。"
+        },
+        {
+          "word": "luggage cart",
+          "guid": null,
+          "status": "absent-exact-match-in-canonical",
+          "requiredForSelectedTargets": false,
+          "decision": "以已有cart標推車即可；若要完整片語作單一詞卡需先補新詞。"
+        },
+        {
+          "word": "baggage storage",
+          "guid": null,
+          "status": "absent-exact-match-in-canonical",
+          "requiredForSelectedTargets": false,
+          "decision": "本場以leave luggage完整語境表達寄放，不必新增此片語。"
+        },
+        {
+          "word": "toiletries",
+          "guid": null,
+          "status": "absent-exact-match-in-canonical",
+          "requiredForSelectedTargets": false,
+          "decision": "以toothbrush／toothpaste／towel／shampoo／soap具體備品分別學習；若要總稱詞卡需先補新詞。"
+        }
+      ],
+      "missingRequiredEntries": [],
+      "selectionChanges": {
+        "removedFromPreviousCore": [
+          "hotel",
+          "key",
+          "bag",
+          "sofa",
+          "lamp",
+          "door",
+          "window",
+          "tired",
+          "bright",
+          "comfortable",
+          "carry",
+          "wait"
+        ],
+        "reason": "依使用者指定的人事物，將重點放在接待人員、寄放行李、茶水與衛浴備品；主詞數29，不硬湊原預設詞性比例。",
+        "revisionChanged": false
+      },
+      "notes": [
+        "初始選詞紀錄（正式狀態以production欄位為準）：29詞是現行上限內的候選；23名詞＋1形容詞＋5動詞，以使用者要求的櫃檯人事物優先，納入行李員porter，不硬湊預設詞性比例。",
+        "初始選詞紀錄（正式狀態以production欄位為準）：原始級別保留expert／null，不偽標basic或advance。",
+        "初始選詞紀錄（正式狀態以production欄位為準）：所有selectedTargets/options均已在canonical找到真實GUID；未讀正式DB、音檔metadata或volume。",
+        "初始選詞紀錄（正式狀態以production欄位為準）：missingEntries僅記可選完整片語exact缺詞；目前29主選不需新增字庫。",
+        "初始選詞紀錄（正式狀態以production欄位為準）：茶／咖啡／洗髮精等在無文字圖中無法靠外觀絕對辨認；故事須明確指認，不以未來構圖計畫冒稱已驗收。",
+        "初始選詞紀錄（正式狀態以production欄位為準）：user-vocabulary.md有舊25詞與舊契約限制敘述；本輪依當前技能29上限，正式匯入前仍需實際契約核對。"
+      ],
+      "imageAsset": {
+        "scenarioKey": "travel-hotel-check-in",
+        "assetVersion": 1,
+        "tool": "built-in image_gen.imagegen",
+        "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-0a58ba3d-5767-486f-9a73-9eb38edd48da.png",
+        "repositoryPath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png",
+        "promptPath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/prompt.txt",
+        "sha256": "0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af",
+        "bytes": 2403165,
+        "width": 1672,
+        "height": 941,
+        "transparentBackground": false,
+        "status": "production-imported-and-published",
+        "generatedOn": "2026-11-11",
+        "productionImported": true,
+        "published": true
+      },
+      "preparation": {
+        "packagePath": "docs/scenarios/packages/travel-hotel-check-in-r1/scenario.json",
+        "revision": 1,
+        "status": "production-imported-and-published",
+        "workingVocabularySource": "data/scenario-preparation/travel-scenarios/merged-vocabulary.json",
+        "plannedWordbankAdditions": "docs/scenarios/preparation/travel-scenarios-proposal/wordbank-additions.json",
+        "canonicalSource": "source/vocabulary-database.json",
+        "coordinateStatus": "103-points-statically-reviewed-3-corrections-applied-browser-unavailable",
+        "testPreviewUrl": "http://127.0.0.1:5181/#/scenarios/travel-hotel-check-in/revisions/1",
+        "productionApplied": true
+      },
+      "storyPrepared": {
+        "sentences": 9,
+        "textSha256": "5be1bff70c686f547abe59e766d60177253759d168fb195015490b846703b8eb",
+        "allTargetsMapped": true,
+        "tokenMappingStatus": "canonical-and-production-wordbank-verified"
+      },
+      "remainingPreparation": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "previousImagePlanningStoryDraft": {
+        "status": "draft-not-token-mapped-or-validated",
+        "paragraphBreakAfterSentence": 4,
+        "sentences": [
+          {
+            "en": "At the hotel front desk, guests check in with a friendly receptionist.",
+            "zh": "在飯店櫃檯，住客向友善的接待員辦理入住。"
+          },
+          {
+            "en": "One guest has a reservation and shows her passport.",
+            "zh": "其中一位住客有訂房，並出示她的護照。"
+          },
+          {
+            "en": "Another guest uses a pen to sign a form while the receptionist gives the woman a key card.",
+            "zh": "另一位住客用筆在表格上簽名，同時接待員把房卡交給那位女士。"
+          },
+          {
+            "en": "A bell sits on the desk.",
+            "zh": "櫃檯上放著一個服務鈴。"
+          },
+          {
+            "en": "Another guest asks, “Can I leave my luggage here?”",
+            "zh": "另一位住客問：「我可以把行李寄放在這裡嗎？」"
+          },
+          {
+            "en": "A porter puts a tag on a suitcase and sets it on a cart.",
+            "zh": "一位行李員在行李箱上掛上吊牌，並把它放到推車上。"
+          },
+          {
+            "en": "Beside the desk, travelers can have water, hot tea, or coffee in a cup.",
+            "zh": "在櫃檯旁邊，旅客可以用杯子取用水、熱茶或咖啡。"
+          },
+          {
+            "en": "A nearby shelf holds a towel, soap, shampoo, a toothbrush, and toothpaste.",
+            "zh": "附近的架上放著毛巾、肥皂、洗髮精、牙刷與牙膏。"
+          },
+          {
+            "en": "A guest asks for a toothbrush, and another receptionist gives one to him.",
+            "zh": "一位住客索取牙刷，另一位接待員拿了一支給他。"
+          }
+        ]
+      },
+      "preparedStoryPath": "docs/scenarios/preparation/travel-scenarios-proposal/prepared-texts.json",
+      "preparedStoryAudio": {
+        "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-hotel-check-in/scenarios/travel-hotel-check-in/r1/2706fd2bc0c87488/story-5be1bff70c686f54.mp3",
+        "sha256": "ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161",
+        "language": "en",
+        "textSha256": "5be1bff70c686f547abe59e766d60177253759d168fb195015490b846703b8eb",
+        "durationSeconds": 44.616,
+        "bytes": 713900,
+        "profile": {
+          "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+          "voice": "Serena",
+          "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+          "lang_code": "English",
+          "response_format": "mp3"
+        },
+        "listeningReviewCompleted": false
+      },
+      "planningSelectionStatus": "user-approved-candidate-list",
+      "production": {
+        "key": "travel-hotel-check-in",
+        "revision": 1,
+        "status": "published",
+        "publishedRevision": 1,
+        "contentHash": "37d74b8eb51553bc94243dd718e2d1939f383d80c9e5590368860fba6626aeb3",
+        "publishedAt": "2026-11-12T00:41:33.425Z",
+        "targetCount": 29
+      },
+      "prePublicationState": {
+        "revisionStatus": "test-draft-r1-imported-production-r1-planned-not-reserved-or-imported",
+        "missingItems": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "remainingPreparation": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "asOf": "2026-11-12T02:19:49+08:00",
+        "context": "正式發布前備料快照，非目前待辦"
+      }
+    },
+    {
+      "key": "travel-ferry-trip",
+      "title": "搭乘渡輪",
+      "coreTargets": [
+        {
+          "word": "ship",
+          "guid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+          "pos": "n",
+          "meaning": "輪船",
+          "level": "basic",
+          "visualCue": "已開航的主要客輪，與渡輪精確詞義另列擴充",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "近景白藍大型客輪的船身、舷窗、甲板與駕駛艙；船身為近景局部，不是全船外觀。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "boat",
+          "guid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+          "pos": "n",
+          "meaning": "小船",
+          "level": "basic",
+          "visualCue": "主客輪附近一艘獨立可辨識的小船，不將同一艘大船同時標兩詞",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "右後海面上獨立、可辨識的小型動力船。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "passenger",
+          "guid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+          "pos": "n",
+          "meaning": "乘客",
+          "level": "advance",
+          "visualCue": "坐在船上看海的旅客",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "中央坐在長椅上的男士及後方座位旅客。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "captain",
+          "guid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+          "pos": "n",
+          "meaning": "船長",
+          "level": "advance",
+          "visualCue": "駕駛室內掌舵的船長，構圖須能看見",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "左側駕駛艙內穿制服、雙手掌舵的船長。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "sailor",
+          "guid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+          "pos": "n",
+          "meaning": "船員",
+          "level": "advance",
+          "visualCue": "整理纜繩或引導旅客的制服船員",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "左前穿條紋制服、整理粗繩的船員。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "sea",
+          "guid": "8dc4dce9-961b-5e4d-a918-0697b883bb57",
+          "pos": "n",
+          "meaning": "大海",
+          "level": "basic",
+          "visualCue": "船外大片海面",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "船外大片藍色海面。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "island",
+          "guid": "2f1775be-7a7b-5b14-bd7f-ba4680753a57",
+          "pos": "n",
+          "meaning": "島嶼",
+          "level": "basic",
+          "visualCue": "航向遠方可見的一座小島",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "右後方有綠色山丘的島嶼。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "wave",
+          "guid": "b1140533-37c0-5cc3-9a64-63d17ad3b171",
+          "pos": "n",
+          "meaning": "波浪",
+          "level": "basic",
+          "visualCue": "船身旁清楚的白色波紋",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "右側海面與船邊清楚的波紋和白色浪花。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "rope",
+          "guid": "cc4761b9-093c-5995-8370-13c594a385f4",
+          "pos": "n",
+          "meaning": "繩索",
+          "level": "basic",
+          "visualCue": "甲板角落整齊盤好的粗繩",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "左前方盤起並由船員整理的粗繩。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "flag",
+          "guid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+          "pos": "n",
+          "meaning": "旗幟",
+          "level": "advance",
+          "visualCue": "船上被風吹起的旗幟",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "上方隨風飄動的紅黃雙色旗幟。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "bench",
+          "guid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+          "pos": "n",
+          "meaning": "長椅",
+          "level": "basic",
+          "visualCue": "乘客乘坐的船上長椅",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "中央男士坐著的木製長椅。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "bag",
+          "guid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+          "pos": "n",
+          "meaning": "旅行袋",
+          "level": "basic",
+          "visualCue": "長椅邊固定妥當的旅行袋",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男士身旁長椅上的棕綠色旅行袋。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "sunny",
+          "guid": "ac615d17-79b1-5d3b-a406-80e798f57c9f",
+          "pos": "adj",
+          "meaning": "晴朗的",
+          "level": "basic",
+          "visualCue": "陽光明亮的天空與海面",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "右上明亮太陽及晴朗海景。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "windy",
+          "guid": "65fef98d-c94b-5d64-aebc-d886b2c9779c",
+          "pos": "adj",
+          "meaning": "風大的",
+          "level": "basic",
+          "visualCue": "迎風飄起的旗幟與乘客頭髮",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "旗幟飄起、孩子頭髮被風吹動，男士扶帽。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "large",
+          "guid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+          "pos": "adj",
+          "meaning": "大型的",
+          "level": "basic",
+          "visualCue": "主客輪與旁邊小船形成可見大小對比",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "大型客輪與右後小動力船形成大小對比；距離不同，需故事說明相對尺度。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "sail",
+          "guid": "e58393a2-bf7e-5095-9a69-271db58d9bae",
+          "pos": "v",
+          "meaning": "航行",
+          "level": "basic",
+          "visualCue": "客輪後方的航跡顯示正在航行；sail不要求帆船",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "船旁連續白色航跡與水流提供航行線索。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "sit",
+          "guid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+          "pos": "v",
+          "meaning": "坐著",
+          "level": "basic",
+          "visualCue": "旅客坐在長椅上",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男士自然坐在固定長椅上。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "hold",
+          "guid": "954342d3-d873-596f-9763-1385be49c458",
+          "pos": "v",
+          "meaning": "握住",
+          "level": "basic",
+          "visualCue": "旅客握著帽子避免被風吹走",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "男士抬手按住頭上的草帽。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "watch",
+          "guid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+          "pos": "v",
+          "meaning": "觀看",
+          "level": "basic",
+          "visualCue": "孩子看向海面與遠方小島",
+          "source": "source/vocabulary-database.json",
+          "imageEvidence": {
+            "visibleCue": "孩子站在欄杆內側朝海面、小船與島嶼觀看。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png"
+          }
+        }
+      ],
+      "extensionCandidates": [
+        {
+          "word": "ferry",
+          "guid": "9e60828b-0818-59d6-bd0b-7e42312ffb14",
+          "pos": "n",
+          "meaning": "渡輪",
+          "level": "expert",
+          "visualCue": "已開航並往返固定航線的客輪，須旅程語境確認功能",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        },
+        {
+          "word": "deck",
+          "guid": "e2a2672e-1e24-5f43-ba41-d539c1890dd8",
+          "pos": "n",
+          "meaning": "甲板",
+          "level": "expert",
+          "visualCue": "露天座位所在的船面",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        },
+        {
+          "word": "life jacket",
+          "guid": "d7a8c0cf-a2ee-5683-81d7-10fc01c7a301",
+          "pos": "n",
+          "meaning": "救生衣",
+          "level": null,
+          "visualCue": "旅客身上或固定架上的救生衣",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        },
+        {
+          "word": "harbor",
+          "guid": "76cded7d-0321-5adf-9a19-ea8aa7ca2308",
+          "pos": "n",
+          "meaning": "港口",
+          "level": "expert",
+          "visualCue": "客輪出發處的碼頭與港灣",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        },
+        {
+          "word": "railing",
+          "guid": "3ecfd5b1-9085-5b3b-afdb-fc3f712a5ad7",
+          "pos": "n",
+          "meaning": "欄杆",
+          "level": null,
+          "visualCue": "客輪外緣的安全欄杆",
+          "source": "source/vocabulary-database.json",
+          "status": "existing-in-canonical-pending-selection-not-production-verified"
+        }
+      ],
+      "reusableMaterials": [],
+      "order": 3,
+      "coreActivity": "已開航後坐在甲板看海；不混入碼頭登船動作。",
+      "plannedRevision": 1,
+      "revisionStatus": "production-r1-imported-and-published-pointer-1",
+      "status": "published",
+      "counts": {
+        "n": 12,
+        "adj": 3,
+        "v": 4
+      },
+      "targetCount": 19,
+      "assetSource": {
+        "image": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png",
+        "storyAudio": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-ferry-trip/scenarios/travel-ferry-trip/r1/2706fd2bc0c87488/story-1e552088c27582ff.mp3",
+        "wordAudio": "正式audio volume：435有效目標音訊重用、7既有錄音補metadata、278新音檔完成匯入；共720不同目標資產"
+      },
+      "missingItems": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "evidencePaths": [
+        "source/vocabulary-database.json",
+        "docs/scenarios/preparation/travel-scenarios-proposal/review.md"
+      ],
+      "vocabularyMode": "default-graded",
+      "levels": [
+        "basic",
+        "advance"
+      ],
+      "selectionStatus": "selection-guid-mapping-and-production-word-cards-verified",
+      "imageAsset": {
+        "scenarioKey": "travel-ferry-trip",
+        "assetVersion": 1,
+        "tool": "built-in image_gen.imagegen",
+        "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-e6b3bac4-8000-40a5-a23e-cf902cf8e4b4.png",
+        "repositoryPath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png",
+        "promptPath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/prompt.txt",
+        "sha256": "5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d",
+        "bytes": 2377470,
+        "width": 1672,
+        "height": 941,
+        "transparentBackground": false,
+        "status": "production-imported-and-published",
+        "generatedOn": "2026-11-11",
+        "productionImported": true,
+        "published": true
+      },
+      "preparation": {
+        "packagePath": "docs/scenarios/packages/travel-ferry-trip-r1/scenario.json",
+        "revision": 1,
+        "status": "production-imported-and-published",
+        "workingVocabularySource": "data/scenario-preparation/travel-scenarios/merged-vocabulary.json",
+        "plannedWordbankAdditions": "docs/scenarios/preparation/travel-scenarios-proposal/wordbank-additions.json",
+        "canonicalSource": "source/vocabulary-database.json",
+        "coordinateStatus": "103-points-statically-reviewed-3-corrections-applied-browser-unavailable",
+        "testPreviewUrl": "http://127.0.0.1:5181/#/scenarios/travel-ferry-trip/revisions/1",
+        "productionApplied": true
+      },
+      "storyPrepared": {
+        "sentences": 6,
+        "textSha256": "1e552088c27582ffe05502dd7452517545462f2f0bbe4b4d78b0a6466e64d748",
+        "allTargetsMapped": true,
+        "tokenMappingStatus": "canonical-and-production-wordbank-verified"
+      },
+      "remainingPreparation": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "previousImagePlanningStoryDraft": {
+        "status": "draft-not-token-mapped-or-validated",
+        "sentences": [
+          {
+            "en": "On a sunny day, a large ship sails across the sea toward an island.",
+            "zh": "在晴朗的一天，一艘大船航行在海上，朝一座島嶼前進。"
+          },
+          {
+            "en": "A small boat passes near the ship.",
+            "zh": "一艘小船從大船附近經過。"
+          },
+          {
+            "en": "The captain is at the front, and a sailor works with a rope below a flag.",
+            "zh": "船長在船的前方，一位船員在旗幟下方整理繩索。"
+          },
+          {
+            "en": "A passenger sits on a bench with a bag beside him.",
+            "zh": "一位乘客坐在長椅上，身旁放著旅行袋。"
+          },
+          {
+            "en": "It is windy, so he holds his hat.",
+            "zh": "風很大，所以他按住自己的帽子。"
+          },
+          {
+            "en": "A child watches a wave beside the ship.",
+            "zh": "一個孩子看著船邊的一道波浪。"
+          }
+        ]
+      },
+      "preparedStoryPath": "docs/scenarios/preparation/travel-scenarios-proposal/prepared-texts.json",
+      "preparedStoryAudio": {
+        "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-ferry-trip/scenarios/travel-ferry-trip/r1/2706fd2bc0c87488/story-1e552088c27582ff.mp3",
+        "sha256": "80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e",
+        "language": "en",
+        "textSha256": "1e552088c27582ffe05502dd7452517545462f2f0bbe4b4d78b0a6466e64d748",
+        "durationSeconds": 24.864,
+        "bytes": 397868,
+        "profile": {
+          "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+          "voice": "Serena",
+          "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+          "lang_code": "English",
+          "response_format": "mp3"
+        },
+        "listeningReviewCompleted": false
+      },
+      "planningSelectionStatus": "user-approved-image-production-based-on-proposal",
+      "production": {
+        "key": "travel-ferry-trip",
+        "revision": 1,
+        "status": "published",
+        "publishedRevision": 1,
+        "contentHash": "2721342ef7588d9bee5523a894210634a27ed54968a9ec15f6aa47d31b51423e",
+        "publishedAt": "2026-11-12T00:42:46.597Z",
+        "targetCount": 19
+      },
+      "prePublicationState": {
+        "revisionStatus": "test-draft-r1-imported-production-r1-planned-not-reserved-or-imported",
+        "missingItems": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "remainingPreparation": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "asOf": "2026-11-12T02:19:49+08:00",
+        "context": "正式發布前備料快照，非目前待辦"
+      }
+    },
+    {
+      "order": 4,
+      "key": "travel-airplane-cabin",
+      "title": "飛機上的餐飲與艙等體驗",
+      "vocabularyMode": "user-specified",
+      "originalUserConcepts": [
+        "有人打開上方行李艙",
+        "空姐送餐及飲料",
+        "旅客已在用餐",
+        "窗外有雲、機翼與引擎",
+        "椅背有電視、耳機與雜誌",
+        "區分商務艙與經濟艙"
+      ],
+      "selectionStatus": "selection-guid-mapping-and-production-word-cards-verified",
+      "coreActivity": "同一航班飛行中的客艙生活：開行李艙、餐飲服務與用餐，觀察椅背娛樂、窗外雲／機翼／引擎及商務／經濟艙配置。",
+      "coreTargets": [
+        {
+          "word": "cabin",
+          "guid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+          "pos": "n",
+          "meaning": "機艙",
+          "level": "expert",
+          "visualCue": "完整機艙內部，前後座艙連成同一空間。",
+          "sourceDefinition": "客艙；小木屋",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 111373,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "單一連續機艙內部，保留弧形機體、橢圓窗、行李艙與前後座位。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "flight attendant",
+          "guid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+          "pos": "n",
+          "meaning": "空服員",
+          "level": null,
+          "visualCue": "制服空服員在走道側替旅客遞送餐盤或飲料。",
+          "sourceDefinition": "空服員；乘務員；空中乘務員",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 325778,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "中央遞餐與右後倒飲料的兩名深藍制服空服員。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "passenger",
+          "guid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+          "pos": "n",
+          "meaning": "乘客",
+          "level": "advance",
+          "visualCue": "各自坐在商務艙與經濟艙的旅客。",
+          "sourceDefinition": "乘客；旅客",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 136105,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左前用餐、中央開行李艙、右側接餐及戴耳機喝飲料的旅客。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "overhead bin",
+          "guid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+          "pos": "n",
+          "meaning": "頭頂行李艙",
+          "level": null,
+          "visualCue": "機艙頂側的置物櫃，一名站立旅客抬手打開其中一扇門。",
+          "sourceDefinition": "機艙上方行李置物櫃",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 366961,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左上被旅客抬手打開的行李艙，艙蓋與內部箱子清楚可見。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "luggage",
+          "guid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+          "pos": "n",
+          "meaning": "行李（不可數）",
+          "level": "expert",
+          "visualCue": "打開的行李艙內可見旅行袋或隨身行李。",
+          "sourceDefinition": "行李（不可數）",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 130976,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "打開的行李艙內藍色行李箱與開艙旅客的背包。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "cart",
+          "guid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+          "pos": "n",
+          "meaning": "推車",
+          "level": "expert",
+          "visualCue": "走道上的機艙餐車；採一般推車詞，不冒稱有meal cart完整詞條。",
+          "sourceDefinition": "（名）推車；手推車；購物車；（動）用車運送",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 111996,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "中央走道上的四輪餐車，層架放餐盤，上層放水與果汁壺。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "meal",
+          "guid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+          "pos": "n",
+          "meaning": "餐點",
+          "level": "basic",
+          "visualCue": "旅客桌板上的完整飛機餐。",
+          "sourceDefinition": "一餐；一頓飯",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 28459,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左前桌面、空服員手上與餐車層架的餐點。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "tray",
+          "guid": "da59f650-66c8-5d96-a95d-81722978e727",
+          "pos": "n",
+          "meaning": "托盤；餐盤",
+          "level": "expert",
+          "visualCue": "餐點下方長方形托盤，與其中盤子分開。",
+          "sourceDefinition": "托盤；餐盤（用來盛放或端送食物、飲料等的淺盤）；茶盤",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 151868,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "中央空服員遞給右側旅客的深色餐盤托盤。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "seat",
+          "guid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+          "pos": "n",
+          "meaning": "座位",
+          "level": "basic",
+          "visualCue": "前方寬座椅與後方較密集的標準座椅。",
+          "sourceDefinition": "座位；使就座",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 40029,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左前兩張寬大座位與右後排列緊密的座位。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "screen",
+          "guid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+          "pos": "n",
+          "meaning": "螢幕",
+          "level": "basic",
+          "visualCue": "經濟艙前排椅背上嵌入的螢幕，只顯示抽象圖案；不是空中懸浮電視。",
+          "sourceDefinition": "螢幕；銀幕；篩選",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 93013,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "右前與右後椅背上的彩色螢幕，畫面為無文字山景。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "headphones",
+          "guid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+          "pos": "n",
+          "meaning": "耳機",
+          "level": "expert",
+          "visualCue": "一位旅客頭上或座椅旁清楚可辨的頭戴式耳機。",
+          "sourceDefinition": "開放式錄音室監聽耳機；耳機；耳罩式耳機；頭戴耳機",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 316998,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "右前旅客頭上明顯的包耳耳機。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "magazine",
+          "guid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+          "pos": "n",
+          "meaning": "雜誌",
+          "level": "advance",
+          "visualCue": "椅背袋或旅客手中的彩色封面薄雜誌，無可辨識字。",
+          "sourceDefinition": "雜誌；期刊",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 80449,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "右前椅背下方口袋內的旅行插畫封面雜誌。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "window",
+          "guid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+          "pos": "n",
+          "meaning": "窗戶",
+          "level": "basic",
+          "visualCue": "機艙側壁的橢圓形舷窗。",
+          "sourceDefinition": "窗戶；每二十六個月開啟一次的地火發射窗口",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 52418,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "機艙左側與剖視近側保留的橢圓窗。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "cloud",
+          "guid": "70818df1-ee97-590f-8dbb-7da3592f99d1",
+          "pos": "n",
+          "meaning": "雲",
+          "level": "basic",
+          "visualCue": "透過舷窗或外側剖視可見的白雲，仍在機艙外。",
+          "sourceDefinition": "雲朵；雲",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 9612,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "多扇窗外與左下外部天空的白雲。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "wing",
+          "guid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+          "pos": "n",
+          "meaning": "機翼",
+          "level": "advance",
+          "visualCue": "窗外伸出的機翼；不可畫進客艙內。",
+          "sourceDefinition": "翅膀；機翼；側翼；翅膀狀部分",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 104751,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "機體左下外側伸出的機翼，透過剖視可見，不在客艙內。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "engine",
+          "guid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+          "pos": "n",
+          "meaning": "引擎",
+          "level": "advance",
+          "visualCue": "窗外、機翼下方的噴射引擎外殼和進氣口；不可畫進客艙。",
+          "sourceDefinition": "引擎；發動機；氙氣離子霍爾推進超高比沖引擎；三百千瓦級重型商用卡車燃料電池引擎電堆",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 69798,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左下機翼下方的圓形引擎艙，位於機體外；由剖視揭露，不宣稱單一正常窗戶可看見完整引擎。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "business class",
+          "guid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+          "pos": "n",
+          "meaning": "商務艙",
+          "level": null,
+          "visualCue": "前方區域少量寬大座椅、較大座距與較豐富空間，無文字招牌。",
+          "sourceDefinition": null,
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": null,
+          "status": "missing-required-entry",
+          "imageEvidence": {
+            "visibleCue": "左前方寬大座椅、寬扶手、較大空間與枕毯；以配置暗示艙等，需故事指認，正式詞條尚缺。",
+            "reviewStatus": "visible-canonical-word-added-production-pending",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          },
+          "plannedSourceId": 9255,
+          "wordbankStatus": "canonical-added-production-pending",
+          "sourceStatus": "canonical-existing-not-production-imported"
+        },
+        {
+          "word": "economy class",
+          "guid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+          "pos": "n",
+          "meaning": "經濟艙",
+          "level": null,
+          "visualCue": "後方區域較多較窄標準座椅、多排座位與椅背螢幕；無文字招牌。",
+          "sourceDefinition": null,
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": null,
+          "status": "missing-required-entry",
+          "imageEvidence": {
+            "visibleCue": "隔簾後方與右側較窄、密集的成排座椅；需故事指認，正式詞條尚缺。",
+            "reviewStatus": "visible-canonical-word-added-production-pending",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          },
+          "plannedSourceId": 9256,
+          "wordbankStatus": "canonical-added-production-pending",
+          "sourceStatus": "canonical-existing-not-production-imported"
+        },
+        {
+          "word": "cup",
+          "guid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+          "pos": "n",
+          "meaning": "杯子",
+          "level": "basic",
+          "visualCue": "餐車上或空服員手中的飲料杯。",
+          "sourceDefinition": "杯子；獎盃",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 11160,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "右前戴耳機旅客嘴邊的杯子，及右後接受倒飲料的杯子。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "water",
+          "guid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+          "pos": "n",
+          "meaning": "水",
+          "level": "basic",
+          "visualCue": "透明瓶或杯中的清水，故事需明確指認。",
+          "sourceDefinition": "水；澆水",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 50934,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "餐車上左側透明壺內的無色液體，實際內容物需故事指認。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "juice",
+          "guid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+          "pos": "n",
+          "meaning": "果汁",
+          "level": "basic",
+          "visualCue": "飲料杯中的橙色飲品，故事需明確指認。",
+          "sourceDefinition": "果汁",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 24180,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "餐車上右側與倒飲料空服員手中透明壺的黃色液體，需故事指認。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "plate",
+          "guid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+          "pos": "n",
+          "meaning": "盤子",
+          "level": "basic",
+          "visualCue": "用餐旅客托盤內盛放食物的盤子。",
+          "sourceDefinition": "盤子；碟子；ALPR 自動辨識車牌車辨系統；車牌；打磨魚鱗紋珍珠圓點之主機芯底板 (Mainplate)",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 35185,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左前用餐旅客桌上的白色餐盤。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "open",
+          "guid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+          "pos": "v",
+          "meaning": "打開",
+          "level": "basic",
+          "visualCue": "獨立站立旅客打開頭頂行李艙，與送餐及用餐人物分開。",
+          "sourceDefinition": "打開；開放的；營業中的",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 32857,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "中央男士抬手扶起上方行李艙蓋。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "serve",
+          "guid": "f7119668-da06-5011-bad5-08f375197a28",
+          "pos": "v",
+          "meaning": "供餐；遞送",
+          "level": "advance",
+          "visualCue": "空服員把托盤或飲料遞給另一位乘客。",
+          "sourceDefinition": "（動）服務；供應；上菜；發球；任職",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 93920,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "中央空服員雙手遞出餐盤，另一名空服員倒飲料。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "eat",
+          "guid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+          "pos": "v",
+          "meaning": "吃；用餐",
+          "level": "basic",
+          "visualCue": "另一位坐著的旅客以餐具吃桌板上的餐點。",
+          "sourceDefinition": "吃",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 13774,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左前男士把食物舉向嘴邊並坐在餐點前用餐。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "drink",
+          "guid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+          "pos": "v",
+          "meaning": "喝",
+          "level": "basic",
+          "visualCue": "再一位旅客拿杯子喝飲料，不與開行李艙者混為同一動作。",
+          "sourceDefinition": "喝；飲料",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 13026,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "右前戴耳機旅客把杯子舉到嘴邊。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "comfortable",
+          "guid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+          "pos": "adj",
+          "meaning": "舒適的",
+          "level": "basic",
+          "visualCue": "商務艙旅客放鬆靠坐於有軟墊的寬大座位；精確感受仍需故事。",
+          "sourceDefinition": "舒適的；自在的",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 10039,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左前座椅軟墊、枕頭與摺毯提供舒適的語境線索，不當作客觀舒適度測量。",
+            "reviewStatus": "visible-needs-story-context",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "wide",
+          "guid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+          "pos": "adj",
+          "meaning": "寬的",
+          "level": "basic",
+          "visualCue": "商務艙座位本身明顯較寬。",
+          "sourceDefinition": "寬的；廣闊的；充分睜大的。",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 52163,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "左前座椅寬大坐墊與扶手，相對右後座位較寬。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        },
+        {
+          "word": "narrow",
+          "guid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+          "pos": "adj",
+          "meaning": "較窄的",
+          "level": "advance",
+          "visualCue": "同一視角下經濟艙座位相較商務座位較窄，勿誇張成不能乘坐。",
+          "sourceDefinition": "（形）狹窄的；勉強的；（動）使變窄；縮小",
+          "sourcePath": "source/vocabulary-database.json",
+          "sourceLine": 82871,
+          "status": "reuse-canonical-not-production-verified",
+          "imageEvidence": {
+            "visibleCue": "右後與右前的經濟座椅相較左前商務座位較窄。",
+            "reviewStatus": "visible",
+            "imagePath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png"
+          }
+        }
+      ],
+      "extensionCandidates": [
+        {
+          "word": "television",
+          "guid": "87934955-bb34-5b65-aa87-cab8d03d1d03",
+          "pos": "n",
+          "meaning": "電視",
+          "level": "basic",
+          "visualCue": "若以television替換screen需整套詞表與故事一致，不雙標同一螢幕。",
+          "sourceDefinition": "電視機；電視",
+          "sourcePath": "source/vocabulary-database.json"
+        },
+        {
+          "word": "suitcase",
+          "guid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+          "pos": "n",
+          "meaning": "行李箱",
+          "level": "expert",
+          "visualCue": "打開行李艙內可見單件隨身行李箱；若主圖容量不足不硬加。",
+          "sourceDefinition": "（名）手提箱、行李箱；旅行時裝衣物的箱包。",
+          "sourcePath": "source/vocabulary-database.json"
+        },
+        {
+          "word": "fork",
+          "guid": "8eb4c30c-5207-52f6-8d17-1f966a14683a",
+          "pos": "n",
+          "meaning": "叉子",
+          "level": "basic",
+          "visualCue": "用餐旅客使用的叉子，可替換較次要的形容詞。",
+          "sourceDefinition": "叉子",
+          "sourcePath": "source/vocabulary-database.json"
+        },
+        {
+          "word": "coffee",
+          "guid": "f2012afd-cdba-5945-9501-b702b7f77697",
+          "pos": "n",
+          "meaning": "咖啡",
+          "level": "basic",
+          "visualCue": "空服員供應的咖啡，若要加入應與現有飲品取捨。",
+          "sourceDefinition": "咖啡",
+          "sourcePath": "source/vocabulary-database.json"
+        }
+      ],
+      "counts": {
+        "n": 22,
+        "adj": 3,
+        "v": 4
+      },
+      "targetCount": 29,
+      "wordbankStatus": {
+        "existingInCanonical": 29,
+        "requiredMissingInCanonical": 0,
+        "productionMissing": 0,
+        "productionImportComplete": true
+      },
+      "missingRequiredEntries": [],
+      "optionalMissingEntries": [
+        {
+          "word": "overhead compartment",
+          "guid": null,
+          "required": false,
+          "status": "exact-entry-absent-in-canonical",
+          "decision": "已有overhead bin完整詞條可表達同概念。"
+        },
+        {
+          "word": "meal cart",
+          "guid": null,
+          "required": false,
+          "status": "exact-entry-absent-in-canonical",
+          "decision": "本輪以cart詞條與餐車圖中語境表達，不需立即新增完整片語。"
+        },
+        {
+          "word": "trolley",
+          "guid": null,
+          "required": false,
+          "status": "exact-entry-absent-in-canonical",
+          "decision": "可沿用cart。"
+        },
+        {
+          "word": "seatback screen",
+          "guid": null,
+          "required": false,
+          "status": "exact-entry-absent-in-canonical",
+          "decision": "沿用screen並明確畫在椅背上。"
+        },
+        {
+          "word": "seat belt",
+          "guid": null,
+          "required": false,
+          "status": "exact-entry-absent-in-canonical",
+          "decision": "使用者未特別指定；可作支撐畫面，不列本輪主詞。"
+        }
+      ],
+      "layoutPlan": [
+        "單一連續寬體機艙採三分之四剖視；近景或左前為商務艙，後方為經濟艙，以座距、寬度、配置區別，不加文字。",
+        "一名獨立旅客站在走道側打開頭頂行李艙；開門處與餐車保持可辨識空間。",
+        "制服女空服員在走道邊靠餐車遞送餐點或飲料；另一名旅客坐著用餐，再一名拿杯飲用。",
+        "前排椅背清楚可見螢幕、耳機、雜誌袋；不能全部藏在觀看不到的椅背後。",
+        "寬大側窗或合理局部剖視可見雲、外側機翼及機翼下的引擎。機翼與引擎必須在機體外，不破壞機艙結構。"
+      ],
+      "plannedRevision": 1,
+      "revisionStatus": "production-r1-imported-and-published-pointer-1",
+      "status": "published",
+      "assetSource": {
+        "image": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png",
+        "storyAudio": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-airplane-cabin/scenarios/travel-airplane-cabin/r1/2706fd2bc0c87488/story-01faf649050e17ae.mp3",
+        "wordAudio": "正式audio volume：435有效目標音訊重用、7既有錄音補metadata、278新音檔完成匯入；共720不同目標資產"
+      },
+      "imageAsset": {
+        "scenarioKey": "travel-airplane-cabin",
+        "assetVersion": 1,
+        "tool": "built-in image_gen.imagegen",
+        "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-92d89c01-b7c6-4d8f-bc3f-afcfffbaee5d.png",
+        "repositoryPath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png",
+        "promptPath": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/prompt.txt",
+        "sha256": "723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0",
+        "bytes": 2534227,
+        "width": 1672,
+        "height": 941,
+        "transparentBackground": false,
+        "status": "production-imported-and-published",
+        "generatedOn": "2026-11-11",
+        "productionImported": true,
+        "published": true
+      },
+      "reusableMaterials": [],
+      "evidencePaths": [
+        "source/vocabulary-database.json",
+        "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/README.md",
+        "docs/scenarios/preparation/travel-scenarios-proposal/airplane-cabin-vocabulary-gaps.json"
+      ],
+      "missingItems": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "preparation": {
+        "packagePath": "docs/scenarios/packages/travel-airplane-cabin-r1/scenario.json",
+        "revision": 1,
+        "status": "production-imported-and-published",
+        "workingVocabularySource": "data/scenario-preparation/travel-scenarios/merged-vocabulary.json",
+        "plannedWordbankAdditions": "docs/scenarios/preparation/travel-scenarios-proposal/wordbank-additions.json",
+        "canonicalSource": "source/vocabulary-database.json",
+        "coordinateStatus": "103-points-statically-reviewed-3-corrections-applied-browser-unavailable",
+        "testPreviewUrl": "http://127.0.0.1:5181/#/scenarios/travel-airplane-cabin/revisions/1",
+        "productionApplied": true
+      },
+      "storyPrepared": {
+        "sentences": 10,
+        "textSha256": "01faf649050e17ae9b2e5d36f9d7e2a5691f34e6e98e924c3a2494cb9e6705e7",
+        "allTargetsMapped": true,
+        "tokenMappingStatus": "canonical-and-production-wordbank-verified"
+      },
+      "pendingProductionWordbankEntries": [],
+      "remainingPreparation": [
+        "人工發音／完整旁白聽審",
+        "桌機／手機實際視覺與操作、播放仲裁及角色端到端驗收"
+      ],
+      "previousImagePlanningStoryDraft": {
+        "status": "draft-blocked-by-required-wordbank-gaps-not-token-mapped",
+        "paragraphBreakAfterSentence": 4,
+        "sentences": [
+          {
+            "en": "Inside the cabin, a passenger opens an overhead bin with luggage inside.",
+            "zh": "在機艙內，一位乘客打開上方放著行李的行李艙。"
+          },
+          {
+            "en": "In business class, the seats are wide and comfortable.",
+            "zh": "商務艙的座位寬敞又舒適。"
+          },
+          {
+            "en": "A traveler eats a meal from a plate, while another seat holds a pillow and a blanket.",
+            "zh": "一位旅客吃著盤中的餐點，另一張座位上放著枕頭與毯子。"
+          },
+          {
+            "en": "Behind a curtain, economy class has narrow seats arranged in rows.",
+            "zh": "隔簾後方的經濟艙，較窄的座椅一排排排列。"
+          },
+          {
+            "en": "One flight attendant serves a tray to a passenger beside a cart.",
+            "zh": "一位空服員在餐車旁，將托盤遞給乘客。"
+          },
+          {
+            "en": "The cart holds water, juice, and more meals.",
+            "zh": "餐車上放著水、果汁與更多餐點。"
+          },
+          {
+            "en": "Another flight attendant pours juice into a cup.",
+            "zh": "另一位空服員把果汁倒進杯子。"
+          },
+          {
+            "en": "A passenger wears headphones and drinks from his cup.",
+            "zh": "一位乘客戴著耳機，用杯子喝飲料。"
+          },
+          {
+            "en": "A magazine sits in a pocket below a screen.",
+            "zh": "螢幕下方的口袋裡放著一本雜誌。"
+          },
+          {
+            "en": "Clouds fill the view through each window, and the wing and engine are outside the cabin.",
+            "zh": "透過窗戶可以看見雲，機翼與引擎則位於機艙外。"
+          }
+        ]
+      },
+      "preparedStoryPath": "docs/scenarios/preparation/travel-scenarios-proposal/prepared-texts.json",
+      "preparedStoryAudio": {
+        "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-airplane-cabin/scenarios/travel-airplane-cabin/r1/2706fd2bc0c87488/story-01faf649050e17ae.mp3",
+        "sha256": "5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba",
+        "language": "en",
+        "textSha256": "01faf649050e17ae9b2e5d36f9d7e2a5691f34e6e98e924c3a2494cb9e6705e7",
+        "durationSeconds": 48.768,
+        "bytes": 780332,
+        "profile": {
+          "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+          "voice": "Serena",
+          "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+          "lang_code": "English",
+          "response_format": "mp3"
+        },
+        "listeningReviewCompleted": false
+      },
+      "planningSelectionStatus": "user-approved-image-production-candidate-vocabulary-pending-completion",
+      "production": {
+        "key": "travel-airplane-cabin",
+        "revision": 1,
+        "status": "published",
+        "publishedRevision": 1,
+        "contentHash": "4bdc65b1b5e6ef30d1dc1273f10c8a7c4a56eede205341169f5625afad99955f",
+        "publishedAt": "2026-11-12T00:44:27.063Z",
+        "targetCount": 29
+      },
+      "prePublicationState": {
+        "revisionStatus": "test-draft-r1-imported-production-r1-planned-not-reserved-or-imported",
+        "missingItems": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "remainingPreparation": [
+          "人工發音／完整旁白聽審",
+          "桌機／手機實際視覺與操作、播放仲裁及角色驗收",
+          "正式匯入前重查DB/versions/volume與有效備份",
+          "正式7筆字庫增量、285詞音metadata及媒體／四場draft寫入授權"
+        ],
+        "pendingProductionWordbankEntries": [
+          {
+            "word": "business class",
+            "id": 9255,
+            "guid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+            "status": "canonical-added-production-pending"
+          },
+          {
+            "word": "economy class",
+            "id": 9256,
+            "guid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+            "status": "canonical-added-production-pending"
+          }
+        ],
+        "asOf": "2026-11-12T02:19:49+08:00",
+        "context": "正式發布前備料快照，非目前待辦"
+      }
+    }
+  ],
+  "notes": [
+    "四場正式revision1均已匯入並published，發布指標1；103目標詞次（26／29／19／29），一般正式清單可見。",
+    "只正式匯入3新詞及4既有詞例句的7筆增量；正式9207詞，canonical9247詞，其他40個phonics詞未入庫。",
+    "278新字庫音檔、4篇全文旁白、4圖與285筆新音metadata已匯入，435項有效既有目標音訊不UPDATE。",
+    "正式92詞卡、728媒體SHA／bytes及12項Range驗證通過；原9548音metadata、15場／27revision及全部既有媒體檔案保持不變。",
+    "本輪無部署、migration或新生成；實際桌機／手機UI、角色端到端及完整人工聽審仍未完成。",
+    "逐詞候選status/sourceLine與各場候選notes屬初始選詞快照；當前正式狀態以production及production-import-review.md為準，prePublicationState明示匯入前狀態。"
+  ],
+  "nameZh": "旅遊情境四場",
+  "sceneCount": 4,
+  "status": "published",
+  "authorization": {
+    "planning": true,
+    "realGeneration": {
+      "image": {
+        "authorized": true,
+        "scenarioKeys": [
+          "travel-airport-gate",
+          "travel-hotel-check-in",
+          "travel-ferry-trip",
+          "travel-airplane-cabin"
+        ],
+        "scope": "使用者逐次授權原三場底圖，並追加飛機上情境底圖；只製作這四場圖片",
+        "edits": [
+          {
+            "scenarioKey": "travel-airport-gate",
+            "assetVersion": 2,
+            "scope": "依使用者「那幫我補圖吧」補入窗外載行李拖車，原v1保留"
+          }
+        ]
+      },
+      "audio": {
+        "scope": "四場全文英文旁白與103目標詞次中缺少的字庫音訊，保留有效舊音",
+        "endpoint": "http://192.168.1.124:8000",
+        "provider": "使用者提供的LAN Qwen CustomVoice服務",
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "productionWrite": false
+      },
+      "textApi": false
+    },
+    "productionWrite": true,
+    "importDraft": true,
+    "publish": true,
+    "deploy": false,
+    "productionContext": "2026-11-12使用者於四場本機預覽後要求「可以幫我發佈」；授權四場必要字庫、媒體、正式匯入與發布，不含部署或新生成"
+  },
+  "assumptions": [
+    "原三組依三個獨立場景製作；使用者後續追加飛機上情境，合計四場，不自動擴成其他批次。",
+    "渡輪保留basic＋advance；機場、飯店及機艙採指定詞／概念並保留真實expert／null。使用者已授權四場底圖及機場補圖，機場v2已生成；本批3缺詞已於本輪正式補庫。"
+  ],
+  "evidencePaths": [
+    "source/vocabulary-database.json",
+    "docs/scenarios/preparation/travel-scenarios-proposal/review.md",
+    "docs/scenarios/preparation/travel-scenarios-proposal/production-import-review.md",
+    "docs/scenarios/preparation/travel-scenarios-proposal/evidence/production-publication-summary.json"
+  ],
+  "defaultLevels": [
+    "basic",
+    "advance"
+  ],
+  "importPreparation": {
+    "status": "production-imported-and-published",
+    "workingVocabularySource": "data/scenario-preparation/travel-scenarios/merged-vocabulary.json",
+    "wordbankAdditionsPath": "docs/scenarios/preparation/travel-scenarios-proposal/wordbank-additions.json",
+    "plannedNewWords": [
+      "baggage cart",
+      "business class",
+      "economy class"
+    ],
+    "productionApplied": true,
+    "audioGenerationAuthorized": true,
+    "wordbankDelta": {
+      "newWords": 3,
+      "existingWordsPartialExampleMerge": 4,
+      "totalEntries": 7
+    },
+    "audioEndpointProvidedByUser": "http://192.168.1.124:8000",
+    "reportedModel": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "voice": "Serena",
+    "authorizationContext": "原備料授權僅含本機缺音；後續本輪使用者要求發布，已正式匯入必要增量及四場revision1並發布；以production紀錄為最新依據",
+    "newAudioGenerated": {
+      "wordbank": 278,
+      "narration": 4,
+      "total": 282
+    },
+    "existingAudioReusable": {
+      "registered": 435,
+      "registryMetadataPending": 0,
+      "registryMetadataImported": 7
+    },
+    "wordbankAssetTotal": 720,
+    "testDraftsImported": 4,
+    "testWordEntries": 163,
+    "testMediaFilesCopied": 728,
+    "testHttpCheckPath": "docs/scenarios/preparation/travel-scenarios-proposal/evidence/test-preview-http-check.json",
+    "formalMediaCopyPlan": "docs/scenarios/preparation/travel-scenarios-proposal/media-copy-plan.json",
+    "humanListeningCompleted": false,
+    "browserUICompleted": false
+  },
+  "production": {
+    "status": "published",
+    "revision": 1,
+    "publishedAt": "2026-11-12T00:44:27.063Z",
+    "review": "docs/scenarios/preparation/travel-scenarios-proposal/production-import-review.md",
+    "scope": "本輪四場正式匯入與發布；無部署或生成",
+    "qualityAcceptance": "完整人工聽審與實際UI仍未完成"
+  },
+  "prePublicationState": {
+    "asOf": "2026-11-12T02:19:49+08:00",
+    "status": "offline-preparation-complete-four-test-drafts-awaiting-user-review-no-production-import",
+    "productionWriteAuthorized": false,
+    "productionApplied": false,
+    "context": "發布前準備快照；已由本輪明確授權及production紀錄取代"
+  }
+}

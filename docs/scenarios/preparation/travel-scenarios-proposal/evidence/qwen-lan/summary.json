@@ -1,0 +1,89 @@
+{
+  "baseUrl": "http://192.168.1.124:8000",
+  "discoveryMethod": "GET only; no inference scheduled",
+  "gradioVersion": "6.17.3",
+  "checkpointAdvertisedByServer": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "modelTypeAdvertisedByServer": "custom_voice",
+  "apiName": "/run_instruct",
+  "inputOrder": [
+    "text",
+    "lang_disp",
+    "spk_disp",
+    "instruct"
+  ],
+  "recommendedInputs": {
+    "text": "<the requested lesson text>",
+    "lang_disp": "English",
+    "spk_disp": "Serena",
+    "instruct": "<the agreed English-teacher instruction>"
+  },
+  "postEndpointAdvertised": "/gradio_api/call/v2/run_instruct",
+  "postBodyFormat": "JSON object with named fields (server-generated bash example)",
+  "alternativePostEndpoint": "/gradio_api/call/run_instruct",
+  "alternativePostBody": {
+    "data": [
+      "<text>",
+      "English",
+      "Serena",
+      "<instruction>"
+    ]
+  },
+  "completionEndpointAdvertised": "/gradio_api/call/run_instruct/<event_id>",
+  "completionProtocol": "Gradio event stream; inference untested",
+  "outputs": [
+    {
+      "component": "Audio",
+      "pythonType": "filepath",
+      "jsonType": "gradio FileData",
+      "fields": [
+        "path",
+        "url",
+        "size",
+        "orig_name",
+        "mime_type",
+        "is_stream",
+        "meta"
+      ]
+    },
+    {
+      "component": "Textbox",
+      "type": "string",
+      "label": "Status"
+    }
+  ],
+  "downloadRoutesAdvertised": [
+    "/gradio_api/file=<path_or_url>",
+    "/gradio_api/file/<path>"
+  ],
+  "audioContainer": "not known before first generated file; Audio component format unset",
+  "sampleRate": "not advertised; must inspect the first actual file",
+  "authentication": {
+    "configReadable": true,
+    "apiInfoReadable": true,
+    "apiVisibility": "public",
+    "loginCheckHttpStatus": 200,
+    "loginCheckBody": "null",
+    "conclusion": "No login required for the observed read-only endpoints; inference authentication not tested"
+  },
+  "queueStatus": {
+    "httpStatus": 200,
+    "body": "{\"msg\":\"estimation\",\"event_id\":null,\"rank\":null,\"queue_size\":0,\"rank_eta\":null}"
+  },
+  "inferenceTested": false,
+  "sourceFiles": [
+    "config.json",
+    "info.json",
+    "openapi-relevant.json",
+    "readonly-health.json"
+  ],
+  "integration": {
+    "wordbank": "Existing generateBatch can reuse its manifest/validation/resume handling with an explicit Gradio fetchImpl adapter and actual LAN endpoint; raw endpoint is not OpenAI-compatible. Adapter must map fields, wait same event_id, download FileData URL, transcode/return actual MP3 bytes.",
+    "story": "Existing generateScenarioAudio explicitly permits only loopback hostnames; do not spoof localhost/proxy around that guard. An explicit user-authorized LAN Gradio path/allowlist adaptation is needed, or a clearly separate offline binding helper reusing planScenarioAudio+generateBatch.",
+    "profile": "Must use actual Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice model and Serena in a new profile/hash; do not label new audio as existing MLX 0.6B."
+  },
+  "risks": [
+    "Returned FileData URLs should be pinned to the authorized host; no arbitrary remote fetch.",
+    "A lost event stream must resume GET using the saved event_id, not blindly POST a duplicate generation.",
+    "Status text must be inspected for model/generation failure even when HTTP is 200."
+  ]
+}

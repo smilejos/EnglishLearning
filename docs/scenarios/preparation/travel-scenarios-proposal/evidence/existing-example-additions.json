@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "id": 100,
+      "guid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+      "word": "boat",
+      "examples": [
+        {
+          "guid": "249fa24a-15b1-5291-90d8-43a25779c743",
+          "en": "The boat is slow.",
+          "zh": "這艘小船很慢。"
+        }
+      ]
+    },
+    {
+      "id": 633,
+      "guid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+      "word": "pen",
+      "examples": [
+        {
+          "guid": "27c29950-96ce-5f17-a7e8-14f4734f14da",
+          "en": "Get a red pen.",
+          "zh": "拿一支紅筆。"
+        }
+      ]
+    },
+    {
+      "id": 784,
+      "guid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "word": "sit",
+      "examples": [
+        {
+          "guid": "8e80eb6c-e3ee-5db4-a9dc-cc95b2f3f676",
+          "en": "The pig can sit.",
+          "zh": "這隻豬會坐下。"
+        }
+      ]
+    },
+    {
+      "id": 1102,
+      "guid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "examples": [
+        {
+          "guid": "d1321a93-e6d5-5505-8818-a9be4c6e3b7f",
+          "en": "The board is in the store.",
+          "zh": "木板在商店裡。"
+        }
+      ]
+    }
+  ]
+}

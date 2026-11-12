@@ -1,0 +1,17 @@
+{
+  "scenarioKey": "travel-hotel-check-in",
+  "assetVersion": 1,
+  "tool": "built-in image_gen.imagegen",
+  "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-0a58ba3d-5767-486f-9a73-9eb38edd48da.png",
+  "repositoryPath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png",
+  "promptPath": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/prompt.txt",
+  "sha256": "0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af",
+  "bytes": 2403165,
+  "width": 1672,
+  "height": 941,
+  "transparentBackground": false,
+  "status": "generated-visually-inspected-awaiting-user-review",
+  "generatedOn": "2026-11-11",
+  "productionImported": false,
+  "published": false
+}

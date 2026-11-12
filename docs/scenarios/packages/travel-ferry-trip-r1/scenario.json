@@ -1,0 +1,951 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "travel-ferry-trip",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "搭乘渡輪",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "basic",
+      "advance"
+    ]
+  },
+  "targetCount": 19,
+  "targets": [
+    {
+      "word": "ship",
+      "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "輪船",
+      "interaction": {
+        "label": {
+          "x": 0.731,
+          "y": 0.7405
+        },
+        "object": {
+          "x": 0.731,
+          "y": 0.825
+        }
+      }
+    },
+    {
+      "word": "boat",
+      "entryGuid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "小船",
+      "interaction": {
+        "label": {
+          "x": 0.897,
+          "y": 0.2875
+        },
+        "object": {
+          "x": 0.897,
+          "y": 0.372
+        }
+      }
+    },
+    {
+      "word": "passenger",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "乘客",
+      "interaction": {
+        "label": {
+          "x": 0.5445,
+          "y": 0.5632
+        },
+        "object": {
+          "x": 0.577,
+          "y": 0.49
+        }
+      }
+    },
+    {
+      "word": "captain",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "船長",
+      "interaction": {
+        "label": {
+          "x": 0.13,
+          "y": 0.4345
+        },
+        "object": {
+          "x": 0.13,
+          "y": 0.35
+        }
+      }
+    },
+    {
+      "word": "sailor",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "船員",
+      "interaction": {
+        "label": {
+          "x": 0.318,
+          "y": 0.6585
+        },
+        "object": {
+          "x": 0.318,
+          "y": 0.574
+        }
+      }
+    },
+    {
+      "word": "sea",
+      "entryGuid": "8dc4dce9-961b-5e4d-a918-0697b883bb57",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "大海",
+      "interaction": {
+        "label": {
+          "x": 0.924,
+          "y": 0.6145
+        },
+        "object": {
+          "x": 0.924,
+          "y": 0.699
+        }
+      }
+    },
+    {
+      "word": "island",
+      "entryGuid": "2f1775be-7a7b-5b14-bd7f-ba4680753a57",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "島嶼",
+      "interaction": {
+        "label": {
+          "x": 0.821,
+          "y": 0.1625
+        },
+        "object": {
+          "x": 0.821,
+          "y": 0.247
+        }
+      }
+    },
+    {
+      "word": "wave",
+      "entryGuid": "b1140533-37c0-5cc3-9a64-63d17ad3b171",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "波浪",
+      "interaction": {
+        "label": {
+          "x": 0.85,
+          "y": 0.5025
+        },
+        "object": {
+          "x": 0.85,
+          "y": 0.587
+        }
+      }
+    },
+    {
+      "word": "rope",
+      "entryGuid": "cc4761b9-093c-5995-8370-13c594a385f4",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "繩索",
+      "interaction": {
+        "label": {
+          "x": 0.301,
+          "y": 0.8005
+        },
+        "object": {
+          "x": 0.301,
+          "y": 0.716
+        }
+      }
+    },
+    {
+      "word": "flag",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "旗幟",
+      "interaction": {
+        "label": {
+          "x": 0.359,
+          "y": 0.1825
+        },
+        "object": {
+          "x": 0.359,
+          "y": 0.098
+        }
+      }
+    },
+    {
+      "word": "bench",
+      "entryGuid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "長椅",
+      "interaction": {
+        "label": {
+          "x": 0.4855,
+          "y": 0.4448
+        },
+        "object": {
+          "x": 0.445,
+          "y": 0.46
+        }
+      }
+    },
+    {
+      "word": "bag",
+      "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "旅行袋",
+      "interaction": {
+        "label": {
+          "x": 0.49,
+          "y": 0.6205
+        },
+        "object": {
+          "x": 0.49,
+          "y": 0.536
+        }
+      }
+    },
+    {
+      "word": "sunny",
+      "entryGuid": "ac615d17-79b1-5d3b-a406-80e798f57c9f",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "晴朗的",
+      "interaction": {
+        "label": {
+          "x": 0.9649,
+          "y": 0.052
+        },
+        "object": {
+          "x": 0.921,
+          "y": 0.052
+        }
+      }
+    },
+    {
+      "word": "windy",
+      "entryGuid": "65fef98d-c94b-5d64-aebc-d886b2c9779c",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "風大的",
+      "interaction": {
+        "label": {
+          "x": 0.347,
+          "y": 0.0308
+        },
+        "object": {
+          "x": 0.347,
+          "y": 0.113
+        }
+      }
+    },
+    {
+      "word": "large",
+      "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "大型的",
+      "interaction": {
+        "label": {
+          "x": 0.7,
+          "y": 0.6755
+        },
+        "object": {
+          "x": 0.7,
+          "y": 0.76
+        }
+      }
+    },
+    {
+      "word": "sail",
+      "entryGuid": "e58393a2-bf7e-5095-9a69-271db58d9bae",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "航行",
+      "interaction": {
+        "label": {
+          "x": 0.853,
+          "y": 0.7435
+        },
+        "object": {
+          "x": 0.853,
+          "y": 0.828
+        }
+      }
+    },
+    {
+      "word": "sit",
+      "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "坐著",
+      "interaction": {
+        "label": {
+          "x": 0.606,
+          "y": 0.6785
+        },
+        "object": {
+          "x": 0.606,
+          "y": 0.594
+        }
+      }
+    },
+    {
+      "word": "hold",
+      "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "握住",
+      "interaction": {
+        "label": {
+          "x": 0.521,
+          "y": 0.2425
+        },
+        "object": {
+          "x": 0.521,
+          "y": 0.327
+        }
+      }
+    },
+    {
+      "word": "watch",
+      "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "觀看",
+      "interaction": {
+        "label": {
+          "x": 0.706,
+          "y": 0.5215
+        },
+        "object": {
+          "x": 0.706,
+          "y": 0.437
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "On a sunny day, a large ship sails across the sea toward an island. A small boat passes near the ship. The captain is at the front, and a sailor works with a rope below a flag. A passenger sits on a bench with a bag beside him. It is windy, so he holds his hat. A child watches a wave beside the ship.",
+    "textZh": "在晴朗的一天，一艘大船航行在海上，朝一座島嶼前進。一艘小船從大船附近經過。船長在船的前方，一位船員在旗幟下方整理繩索。一位乘客坐在長椅上，身旁放著旅行袋。風很大，所以他按住自己的帽子。一個孩子看著船邊的一道波浪。",
+    "sentences": [
+      {
+        "id": "s01",
+        "en": "On a sunny day, a large ship sails across the sea toward an island.",
+        "zh": "在晴朗的一天，一艘大船航行在海上，朝一座島嶼前進。",
+        "wordLinks": [
+          {
+            "surface": "On",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "surface": "sunny",
+            "word": "sunny",
+            "entryGuid": "ac615d17-79b1-5d3b-a406-80e798f57c9f",
+            "isTarget": true,
+            "start": 5,
+            "end": 10
+          },
+          {
+            "surface": "day",
+            "word": "day",
+            "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+            "isTarget": false,
+            "start": 11,
+            "end": 14
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 16,
+            "end": 17
+          },
+          {
+            "surface": "large",
+            "word": "large",
+            "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+            "isTarget": true,
+            "start": 18,
+            "end": 23
+          },
+          {
+            "surface": "ship",
+            "word": "ship",
+            "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+            "isTarget": true,
+            "start": 24,
+            "end": 28
+          },
+          {
+            "surface": "sails",
+            "word": "sail",
+            "entryGuid": "e58393a2-bf7e-5095-9a69-271db58d9bae",
+            "isTarget": true,
+            "start": 29,
+            "end": 34
+          },
+          {
+            "surface": "across",
+            "word": "across",
+            "entryGuid": "52643c85-42b5-512b-98a5-b6691a4c04d2",
+            "isTarget": false,
+            "start": 35,
+            "end": 41
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "sea",
+            "word": "sea",
+            "entryGuid": "8dc4dce9-961b-5e4d-a918-0697b883bb57",
+            "isTarget": true,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "toward",
+            "word": "toward",
+            "entryGuid": "03a9b04c-86d8-5b68-bb35-51cd5319ad77",
+            "isTarget": false,
+            "start": 50,
+            "end": 56
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 57,
+            "end": 59
+          },
+          {
+            "surface": "island",
+            "word": "island",
+            "entryGuid": "2f1775be-7a7b-5b14-bd7f-ba4680753a57",
+            "isTarget": true,
+            "start": 60,
+            "end": 66
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "en": "A small boat passes near the ship.",
+        "zh": "一艘小船從大船附近經過。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "small",
+            "word": "small",
+            "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "boat",
+            "word": "boat",
+            "entryGuid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+            "isTarget": true,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "passes",
+            "word": "pass",
+            "entryGuid": "9b5ac7b8-72b8-5a68-88dc-ef0e583c3624",
+            "isTarget": false,
+            "start": 13,
+            "end": 19
+          },
+          {
+            "surface": "near",
+            "word": "near",
+            "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+            "isTarget": false,
+            "start": 20,
+            "end": 24
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "ship",
+            "word": "ship",
+            "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+            "isTarget": true,
+            "start": 29,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "en": "The captain is at the front, and a sailor works with a rope below a flag.",
+        "zh": "船長在船的前方，一位船員在旗幟下方整理繩索。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "captain",
+            "word": "captain",
+            "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+            "isTarget": true,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "at",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 15,
+            "end": 17
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 18,
+            "end": 21
+          },
+          {
+            "surface": "front",
+            "word": "front",
+            "entryGuid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+            "isTarget": false,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 33,
+            "end": 34
+          },
+          {
+            "surface": "sailor",
+            "word": "sailor",
+            "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+            "isTarget": true,
+            "start": 35,
+            "end": 41
+          },
+          {
+            "surface": "works",
+            "word": "work",
+            "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+            "isTarget": false,
+            "start": 42,
+            "end": 47
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 48,
+            "end": 52
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 53,
+            "end": 54
+          },
+          {
+            "surface": "rope",
+            "word": "rope",
+            "entryGuid": "cc4761b9-093c-5995-8370-13c594a385f4",
+            "isTarget": true,
+            "start": 55,
+            "end": 59
+          },
+          {
+            "surface": "below",
+            "word": "below",
+            "entryGuid": "3faef205-d864-514c-b0b9-c0403cd14068",
+            "isTarget": false,
+            "start": 60,
+            "end": 65
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 66,
+            "end": 67
+          },
+          {
+            "surface": "flag",
+            "word": "flag",
+            "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+            "isTarget": true,
+            "start": 68,
+            "end": 72
+          }
+        ]
+      },
+      {
+        "id": "s04",
+        "en": "A passenger sits on a bench with a bag beside him.",
+        "zh": "一位乘客坐在長椅上，身旁放著旅行袋。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "passenger",
+            "word": "passenger",
+            "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+            "isTarget": true,
+            "start": 2,
+            "end": 11
+          },
+          {
+            "surface": "sits",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": true,
+            "start": 12,
+            "end": 16
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 17,
+            "end": 19
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 20,
+            "end": 21
+          },
+          {
+            "surface": "bench",
+            "word": "bench",
+            "entryGuid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+            "isTarget": true,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 33,
+            "end": 34
+          },
+          {
+            "surface": "bag",
+            "word": "bag",
+            "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+            "isTarget": true,
+            "start": 35,
+            "end": 38
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 39,
+            "end": 45
+          },
+          {
+            "surface": "him",
+            "word": "him",
+            "entryGuid": "b4937bc8-89ca-5c95-875a-b400fc44aaad",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          }
+        ]
+      },
+      {
+        "id": "s05",
+        "en": "It is windy, so he holds his hat.",
+        "zh": "風很大，所以他按住自己的帽子。",
+        "wordLinks": [
+          {
+            "surface": "It",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "is",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "surface": "windy",
+            "word": "windy",
+            "entryGuid": "65fef98d-c94b-5d64-aebc-d886b2c9779c",
+            "isTarget": true,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "surface": "so",
+            "word": "so",
+            "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+            "isTarget": false,
+            "start": 13,
+            "end": 15
+          },
+          {
+            "surface": "he",
+            "word": "he",
+            "entryGuid": "bf4cb952-a8cf-5a38-a45c-cf50ec7135aa",
+            "isTarget": false,
+            "start": 16,
+            "end": 18
+          },
+          {
+            "surface": "holds",
+            "word": "hold",
+            "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+            "isTarget": true,
+            "start": 19,
+            "end": 24
+          },
+          {
+            "surface": "his",
+            "word": "his",
+            "entryGuid": "368023a6-163e-50c0-ac53-3e23d791db26",
+            "isTarget": false,
+            "start": 25,
+            "end": 28
+          },
+          {
+            "surface": "hat",
+            "word": "hat",
+            "entryGuid": "f3e1ee3b-d7ae-5ca6-891f-a89e853281c0",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "id": "s06",
+        "en": "A child watches a wave beside the ship.",
+        "zh": "一個孩子看著船邊的一道波浪。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "child",
+            "word": "child",
+            "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+            "isTarget": false,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "watches",
+            "word": "watch",
+            "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+            "isTarget": true,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 16,
+            "end": 17
+          },
+          {
+            "surface": "wave",
+            "word": "wave",
+            "entryGuid": "b1140533-37c0-5cc3-9a64-63d17ad3b171",
+            "isTarget": true,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 23,
+            "end": 29
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 30,
+            "end": 33
+          },
+          {
+            "surface": "ship",
+            "word": "ship",
+            "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+            "isTarget": true,
+            "start": 34,
+            "end": 38
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png",
+      "sha256": "5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d"
+    },
+    "baseImage": {
+      "path": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png",
+      "sha256": "5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-ferry-trip/scenarios/travel-ferry-trip/r1/2706fd2bc0c87488/story-1e552088c27582ff.mp3",
+      "sha256": "80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e",
+      "language": "en",
+      "textSha256": "1e552088c27582ffe05502dd7452517545462f2f0bbe4b4d78b0a6466e64d748",
+      "durationSeconds": 24.864,
+      "bytes": 397868,
+      "profile": {
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "generated": true,
+      "endpoint": "http://192.168.1.124:8000",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    }
+  },
+  "contentReview": {
+    "status": "offline-materials-complete-awaiting-listening-and-browser-ui-review",
+    "sourceStatus": "canonical-prepared-production-wordbank-pending",
+    "plannedEntryGuids": [
+      "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "debdd36d-d229-531b-a5e5-efd7517fa4a9"
+    ],
+    "coordinateStatus": "103-points-statically-reviewed-3-corrections-applied-browser-ui-pending",
+    "audioStatus": "complete-decode-and-near-silence-screen-passed-listening-pending",
+    "productionImport": false,
+    "publish": false,
+    "testImportStatus": "draft-r1-in-protected-test-database"
+  }
+}

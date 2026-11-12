@@ -1,0 +1,17 @@
+{
+  "scenarioKey": "travel-ferry-trip",
+  "assetVersion": 1,
+  "tool": "built-in image_gen.imagegen",
+  "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-e6b3bac4-8000-40a5-a23e-cf902cf8e4b4.png",
+  "repositoryPath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png",
+  "promptPath": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/prompt.txt",
+  "sha256": "5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d",
+  "bytes": 2377470,
+  "width": 1672,
+  "height": 941,
+  "transparentBackground": false,
+  "status": "generated-visually-inspected-awaiting-user-review",
+  "generatedOn": "2026-11-11",
+  "productionImported": false,
+  "published": false
+}

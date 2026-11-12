@@ -80,6 +80,14 @@ SCENARIO_REAL_TTS=1 npm run scenario:audio:generate -- --package docs/scenarios/
 
 故事、單字與例句接入既有音源仲裁：開卡不自動播放；播放單字或例句時暫停故事並保留位置，使用者可自行繼續聽故事。
 
+## 使用者明示的 LAN Gradio 語音服務
+
+`generate-scenario-audio.mjs` 的 loopback 限制保持不變。使用者明確提供自有 LAN Qwen 服務時，可使用 `scripts/scenarios/qwen-gradio-client.mjs` 適配 Gradio `run_instruct`：v2 POST 參數、SSE 完成事件、同來源音檔下載，再以 ffmpeg 轉 MP3。它不啟動服務、不寫 DB／volume，也不執行匯入或發布；真實生成 opt-in 由呼叫端負責。
+
+必須記錄實際服務宣告的模型、聲線與指示，建立新的五欄 profile／hash，不得把 LAN 的 Qwen 1.7B 假記為既有 MLX 0.6B。只允許明示 private LAN IP／loopback origin；下載不得跨來源、重新導向或使用任意遠端檔案 URL。失敗時保存 eventId／FileData，可用 `downloadQwenGradioMp3` 純 GET 恢復下載，不因下載失敗立即重產。
+
+本次旅遊批次的備料與續接指令見[匯入準備總表](preparation/travel-scenarios-proposal/import-preparation-review.md)。其 `produce-audio.mjs` 僅處理本批缺音，預設 dry-run；真實生成須同時有 `TRAVEL_TTS_REAL=1` 與 `--generate`。它不取代正式匯入器或原有 volume／metadata 流程。完整解碼及近靜音檢查不代表人工聽審完成。
+
 ## 4. 執行離線預檢
 
 從專案根目錄執行：

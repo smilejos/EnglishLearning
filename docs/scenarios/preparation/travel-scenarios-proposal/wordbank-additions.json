@@ -1,0 +1,199 @@
+{
+  "entries": [
+    {
+      "id": 9254,
+      "guid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "行李運輸拖車；機場用來載運旅客行李的有輪拖車，通常由牽引車拖動。",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [
+        "Travel"
+      ],
+      "explains": [
+        {
+          "guid": "a8c7f770-d5ad-592f-ae8f-0dd30833b0f4",
+          "en": "This low wheeled trailer carries luggage around an airport."
+        },
+        {
+          "guid": "e4f15ee2-2740-53bf-9387-98e79a9cc545",
+          "en": "Airport workers load suitcases onto this cart and move them to or from an airplane."
+        },
+        {
+          "guid": "85c60357-aa5f-5ad5-a536-2dea455ce447",
+          "en": "A small powered vehicle can pull this luggage trailer across the airport apron."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "520a16c9-469b-5d98-ba05-9da9b763406c",
+          "en": "The worker puts two suitcases on the baggage cart.",
+          "zh": "工作人員把兩只行李箱放到行李拖車上。"
+        },
+        {
+          "guid": "647cf009-094c-5c4b-881d-0ee695214335",
+          "en": "A baggage cart waits beside the airplane.",
+          "zh": "一台行李拖車停在飛機旁。"
+        },
+        {
+          "guid": "ce0d20bf-ffd4-5d3b-ab6a-b7c95d9ff67c",
+          "en": "The tug pulls a baggage cart across the airport.",
+          "zh": "牽引車拖著一台行李拖車穿過機場。"
+        }
+      ]
+    },
+    {
+      "id": 9255,
+      "guid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "商務艙；航空客艙中的座位等級，通常提供比經濟艙更寬敞的座位及較多服務。",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [
+        "Travel"
+      ],
+      "explains": [
+        {
+          "guid": "8a792e4d-3517-5e26-8b92-fd28e2c8bcff",
+          "en": "This airline travel class usually offers more space and services than economy class."
+        },
+        {
+          "guid": "0747157d-d1af-5c28-acdb-9e425baf49cf",
+          "en": "Passengers in this cabin often have wider seats and more room for their legs."
+        },
+        {
+          "guid": "191afb31-006a-5b7e-aed2-0ccb1d6f7af5",
+          "en": "This is a premium seating class on an airplane, between economy class and first class when all three are offered."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "c9022df2-bc1e-5085-b257-8ca75568ae7c",
+          "en": "Our business class seats have wide armrests.",
+          "zh": "我們的商務艙座位有寬大的扶手。"
+        },
+        {
+          "guid": "3d32c5e6-55ee-51d1-8f3d-6d66bf49f0f4",
+          "en": "She chooses business class for the long flight.",
+          "zh": "她為這趟長途飛行選擇商務艙。"
+        },
+        {
+          "guid": "3555e56f-9059-5aab-a150-577ed6869e85",
+          "en": "The flight attendant serves a meal in business class.",
+          "zh": "空服員在商務艙供餐。"
+        }
+      ]
+    },
+    {
+      "id": 9256,
+      "guid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "parts_of_speech": [
+        "n"
+      ],
+      "definition": "經濟艙；航空客艙中的一般座位等級，通常座位排列較密集，票價比商務艙低。",
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "category": [],
+      "scenario": [
+        "Travel"
+      ],
+      "explains": [
+        {
+          "guid": "a84972a1-79e5-5d0c-86ab-648ad177fee3",
+          "en": "This is the standard seating class on a passenger airplane."
+        },
+        {
+          "guid": "05ce4f9a-08fb-5f35-a40f-dca9d63a4429",
+          "en": "Seats in this cabin are usually arranged in rows with less space than business class."
+        },
+        {
+          "guid": "51c8ea86-fb23-586f-a137-aef631b570a2",
+          "en": "This airline travel class usually costs less than business class."
+        }
+      ],
+      "examples": [
+        {
+          "guid": "9e9a1864-6412-56d9-aa16-25e07f3c5d5a",
+          "en": "Our family sits in economy class.",
+          "zh": "我們一家人坐在經濟艙。"
+        },
+        {
+          "guid": "caec31fb-7bb7-5a33-8156-8d0070b09732",
+          "en": "Economy class has rows of passenger seats.",
+          "zh": "經濟艙裡有一排排乘客座位。"
+        },
+        {
+          "guid": "ca390d19-1b99-5cdb-b7eb-46179a4507de",
+          "en": "He watches a film in economy class.",
+          "zh": "他在經濟艙看電影。"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "guid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+      "word": "boat",
+      "examples": [
+        {
+          "guid": "249fa24a-15b1-5291-90d8-43a25779c743",
+          "en": "The boat is slow.",
+          "zh": "這艘小船很慢。"
+        }
+      ]
+    },
+    {
+      "id": 633,
+      "guid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+      "word": "pen",
+      "examples": [
+        {
+          "guid": "27c29950-96ce-5f17-a7e8-14f4734f14da",
+          "en": "Get a red pen.",
+          "zh": "拿一支紅筆。"
+        }
+      ]
+    },
+    {
+      "id": 784,
+      "guid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "word": "sit",
+      "examples": [
+        {
+          "guid": "8e80eb6c-e3ee-5db4-a9dc-cc95b2f3f676",
+          "en": "The pig can sit.",
+          "zh": "這隻豬會坐下。"
+        }
+      ]
+    },
+    {
+      "id": 1102,
+      "guid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "examples": [
+        {
+          "guid": "d1321a93-e6d5-5505-8818-a9be4c6e3b7f",
+          "en": "The board is in the store.",
+          "zh": "木板在商店裡。"
+        }
+      ]
+    }
+  ]
+}

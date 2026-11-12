@@ -1,0 +1,46 @@
+{
+  "npmTest": {
+    "exitCode": 0,
+    "testsPassed": 933,
+    "log": "data/scenario-preparation/travel-scenarios/validation/npm-test.log"
+  },
+  "typecheck": {
+    "exitCode": 0,
+    "workspaces": [
+      "shared",
+      "api",
+      "worker",
+      "web-admin",
+      "web-learner"
+    ],
+    "log": "data/scenario-preparation/travel-scenarios/validation/typecheck.log"
+  },
+  "audioToolTests": {
+    "exitCode": 0,
+    "testsPassed": 34,
+    "log": "data/scenario-preparation/travel-scenarios/validation/audio-tools-test.log"
+  },
+  "testDatabaseCleanup": {
+    "completed": true,
+    "command": "npm run test:db:down",
+    "completedBeforePreview": true,
+    "previewNowRunning": true
+  },
+  "browserUI": {
+    "completed": false,
+    "reason": "CUA browser access host unavailable"
+  },
+  "productionWrites": false,
+  "testPreviewGuards": {
+    "testsPassed": 6,
+    "exitCode": 0,
+    "log": "data/scenario-preparation/travel-scenarios/validation/test-preview-api-test.log"
+  },
+  "testPreviewHttp": {
+    "uniqueCards": 92,
+    "wordbankClips": 720,
+    "mediaUrls": 728,
+    "rangeChecks": 12,
+    "readonlyPostBlocked": true
+  }
+}

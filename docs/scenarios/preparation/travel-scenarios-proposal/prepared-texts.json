@@ -1,0 +1,3945 @@
+{
+  "status": "offline-texts-mapped-planned-entries-not-imported",
+  "scenes": [
+    {
+      "scenarioKey": "travel-airport-gate",
+      "titleZh": "機場登機",
+      "vocabularyMode": "user-specified",
+      "vocabularyFilter": {
+        "system": "list",
+        "levels": [
+          "advance",
+          "basic",
+          "expert"
+        ]
+      },
+      "targetCount": 26,
+      "targets": [
+        {
+          "word": "airport",
+          "entryGuid": "6598df4f-74d0-5f12-8de7-6043b46336ca",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "機場",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "airplane",
+          "entryGuid": "55eefd94-534b-5a8b-97ed-6eef05dec561",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "飛機",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "gate",
+          "entryGuid": "89921bea-fb3a-5795-923d-7137dcac7c16",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "登機門",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "ticket",
+          "entryGuid": "1a126970-ab39-5697-bab2-7316a7819184",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "票券",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "passenger",
+          "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "乘客",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "bag",
+          "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "旅行袋",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "window",
+          "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "窗戶",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "seat",
+          "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "座位",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "line",
+          "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "隊伍",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "screen",
+          "entryGuid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "螢幕",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "clock",
+          "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "時鐘",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "uniform",
+          "entryGuid": "a9faa595-0c09-57f5-b092-c3d84f41a563",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "制服",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "busy",
+          "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "繁忙的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "heavy",
+          "entryGuid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "重的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "empty",
+          "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+          "list": "advance",
+          "teachingPos": "adj",
+          "senseZh": "空的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "ready",
+          "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "準備好的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "wait",
+          "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "等候",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "carry",
+          "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "提著；攜帶",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "check",
+          "entryGuid": "7242d255-af15-510d-8c98-44f37f9b9ee0",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "檢查；核對",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "show",
+          "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "出示",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "board",
+          "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+          "list": "advance",
+          "teachingPos": "v",
+          "senseZh": "登機",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "airbridge",
+          "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "空橋；登機空橋",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "baggage cart",
+          "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "行李運輸拖車",
+          "entryStatus": "planned-not-imported"
+        },
+        {
+          "word": "passage",
+          "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "通道",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "terminal",
+          "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "航廈",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "suitcase",
+          "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "行李箱",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s01",
+          "en": "At the busy airport terminal, an airplane waits outside the window.",
+          "zh": "在繁忙的機場航廈，一架飛機停在窗外等候。",
+          "wordLinks": [
+            {
+              "surface": "At",
+              "word": "at",
+              "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+              "isTarget": false,
+              "start": 0,
+              "end": 2
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 3,
+              "end": 6
+            },
+            {
+              "surface": "busy",
+              "word": "busy",
+              "entryGuid": "9d321e96-b853-5882-97ed-5043682012a3",
+              "isTarget": true,
+              "start": 7,
+              "end": 11
+            },
+            {
+              "surface": "airport",
+              "word": "airport",
+              "entryGuid": "6598df4f-74d0-5f12-8de7-6043b46336ca",
+              "isTarget": true,
+              "start": 12,
+              "end": 19
+            },
+            {
+              "surface": "terminal",
+              "word": "terminal",
+              "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+              "isTarget": true,
+              "start": 20,
+              "end": 28
+            },
+            {
+              "surface": "an",
+              "word": "an",
+              "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+              "isTarget": false,
+              "start": 30,
+              "end": 32
+            },
+            {
+              "surface": "airplane",
+              "word": "airplane",
+              "entryGuid": "55eefd94-534b-5a8b-97ed-6eef05dec561",
+              "isTarget": true,
+              "start": 33,
+              "end": 41
+            },
+            {
+              "surface": "waits",
+              "word": "wait",
+              "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+              "isTarget": true,
+              "start": 42,
+              "end": 47
+            },
+            {
+              "surface": "outside",
+              "word": "outside",
+              "entryGuid": "adbe8a2c-2383-5688-9c8a-7125e967551a",
+              "isTarget": false,
+              "start": 48,
+              "end": 55
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 56,
+              "end": 59
+            },
+            {
+              "surface": "window",
+              "word": "window",
+              "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+              "isTarget": true,
+              "start": 60,
+              "end": 66
+            }
+          ]
+        },
+        {
+          "id": "s02",
+          "en": "A baggage cart carries suitcases outside.",
+          "zh": "外面有一台行李拖車載運著行李箱。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "baggage cart",
+              "word": "baggage cart",
+              "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+              "isTarget": true,
+              "start": 2,
+              "end": 14
+            },
+            {
+              "surface": "carries",
+              "word": "carry",
+              "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+              "isTarget": true,
+              "start": 15,
+              "end": 22
+            },
+            {
+              "surface": "suitcases",
+              "word": "suitcase",
+              "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+              "isTarget": true,
+              "start": 23,
+              "end": 32
+            },
+            {
+              "surface": "outside",
+              "word": "outside",
+              "entryGuid": "adbe8a2c-2383-5688-9c8a-7125e967551a",
+              "isTarget": false,
+              "start": 33,
+              "end": 40
+            }
+          ]
+        },
+        {
+          "id": "s03",
+          "en": "A passenger carries a heavy bag and waits in line near the gate.",
+          "zh": "一位乘客提著沉重的旅行袋，在登機門附近排隊等候。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "passenger",
+              "word": "passenger",
+              "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+              "isTarget": true,
+              "start": 2,
+              "end": 11
+            },
+            {
+              "surface": "carries",
+              "word": "carry",
+              "entryGuid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+              "isTarget": true,
+              "start": 12,
+              "end": 19
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 20,
+              "end": 21
+            },
+            {
+              "surface": "heavy",
+              "word": "heavy",
+              "entryGuid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+              "isTarget": true,
+              "start": 22,
+              "end": 27
+            },
+            {
+              "surface": "bag",
+              "word": "bag",
+              "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+              "isTarget": true,
+              "start": 28,
+              "end": 31
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 32,
+              "end": 35
+            },
+            {
+              "surface": "waits",
+              "word": "wait",
+              "entryGuid": "dec06abd-726b-5825-93e6-8f495225bc26",
+              "isTarget": true,
+              "start": 36,
+              "end": 41
+            },
+            {
+              "surface": "in",
+              "word": "in",
+              "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+              "isTarget": false,
+              "start": 42,
+              "end": 44
+            },
+            {
+              "surface": "line",
+              "word": "line",
+              "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+              "isTarget": true,
+              "start": 45,
+              "end": 49
+            },
+            {
+              "surface": "near",
+              "word": "near",
+              "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+              "isTarget": false,
+              "start": 50,
+              "end": 54
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 55,
+              "end": 58
+            },
+            {
+              "surface": "gate",
+              "word": "gate",
+              "entryGuid": "89921bea-fb3a-5795-923d-7137dcac7c16",
+              "isTarget": true,
+              "start": 59,
+              "end": 63
+            }
+          ]
+        },
+        {
+          "id": "s04",
+          "en": "There is an empty seat beside the line.",
+          "zh": "隊伍旁邊有一個空座位。",
+          "wordLinks": [
+            {
+              "surface": "There",
+              "word": "there",
+              "entryGuid": "4c70d328-5120-529d-a883-30eb839e7b95",
+              "isTarget": false,
+              "start": 0,
+              "end": 5
+            },
+            {
+              "surface": "is",
+              "word": "be",
+              "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+              "isTarget": false,
+              "start": 6,
+              "end": 8
+            },
+            {
+              "surface": "an",
+              "word": "an",
+              "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+              "isTarget": false,
+              "start": 9,
+              "end": 11
+            },
+            {
+              "surface": "empty",
+              "word": "empty",
+              "entryGuid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+              "isTarget": true,
+              "start": 12,
+              "end": 17
+            },
+            {
+              "surface": "seat",
+              "word": "seat",
+              "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+              "isTarget": true,
+              "start": 18,
+              "end": 22
+            },
+            {
+              "surface": "beside",
+              "word": "beside",
+              "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+              "isTarget": false,
+              "start": 23,
+              "end": 29
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 30,
+              "end": 33
+            },
+            {
+              "surface": "line",
+              "word": "line",
+              "entryGuid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+              "isTarget": true,
+              "start": 34,
+              "end": 38
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "en": "A clock hangs above a screen.",
+          "zh": "螢幕上方掛著一個時鐘。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "clock",
+              "word": "clock",
+              "entryGuid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+              "isTarget": true,
+              "start": 2,
+              "end": 7
+            },
+            {
+              "surface": "hangs",
+              "word": "hang",
+              "entryGuid": "2d5ee780-ce6e-5afe-ad6c-3ece2de62d14",
+              "isTarget": false,
+              "start": 8,
+              "end": 13
+            },
+            {
+              "surface": "above",
+              "word": "above",
+              "entryGuid": "d8da53d0-5638-5f66-911b-704738d85988",
+              "isTarget": false,
+              "start": 14,
+              "end": 19
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 20,
+              "end": 21
+            },
+            {
+              "surface": "screen",
+              "word": "screen",
+              "entryGuid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+              "isTarget": true,
+              "start": 22,
+              "end": 28
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "en": "A woman in a uniform checks each ticket.",
+          "zh": "一位穿制服的女士核對每張票券。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "woman",
+              "word": "woman",
+              "entryGuid": "14939383-9986-5420-b4be-0d7ebcb34bd3",
+              "isTarget": false,
+              "start": 2,
+              "end": 7
+            },
+            {
+              "surface": "in",
+              "word": "in",
+              "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+              "isTarget": false,
+              "start": 8,
+              "end": 10
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 11,
+              "end": 12
+            },
+            {
+              "surface": "uniform",
+              "word": "uniform",
+              "entryGuid": "a9faa595-0c09-57f5-b092-c3d84f41a563",
+              "isTarget": true,
+              "start": 13,
+              "end": 20
+            },
+            {
+              "surface": "checks",
+              "word": "check",
+              "entryGuid": "7242d255-af15-510d-8c98-44f37f9b9ee0",
+              "isTarget": true,
+              "start": 21,
+              "end": 27
+            },
+            {
+              "surface": "each",
+              "word": "each",
+              "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+              "isTarget": false,
+              "start": 28,
+              "end": 32
+            },
+            {
+              "surface": "ticket",
+              "word": "ticket",
+              "entryGuid": "1a126970-ab39-5697-bab2-7316a7819184",
+              "isTarget": true,
+              "start": 33,
+              "end": 39
+            }
+          ]
+        },
+        {
+          "id": "s07",
+          "en": "A boy shows his ticket to her.",
+          "zh": "一個男孩向她出示票券。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "boy",
+              "word": "boy",
+              "entryGuid": "dc6bef72-2342-526f-a7cc-7536313bcfbd",
+              "isTarget": false,
+              "start": 2,
+              "end": 5
+            },
+            {
+              "surface": "shows",
+              "word": "show",
+              "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+              "isTarget": true,
+              "start": 6,
+              "end": 11
+            },
+            {
+              "surface": "his",
+              "word": "his",
+              "entryGuid": "368023a6-163e-50c0-ac53-3e23d791db26",
+              "isTarget": false,
+              "start": 12,
+              "end": 15
+            },
+            {
+              "surface": "ticket",
+              "word": "ticket",
+              "entryGuid": "1a126970-ab39-5697-bab2-7316a7819184",
+              "isTarget": true,
+              "start": 16,
+              "end": 22
+            },
+            {
+              "surface": "to",
+              "word": "to",
+              "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+              "isTarget": false,
+              "start": 23,
+              "end": 25
+            },
+            {
+              "surface": "her",
+              "word": "her",
+              "entryGuid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+              "isTarget": false,
+              "start": 26,
+              "end": 29
+            }
+          ]
+        },
+        {
+          "id": "s08",
+          "en": "His family is ready to board the airplane through the passage inside the airbridge.",
+          "zh": "他的家人已準備好經由空橋內的通道登機。",
+          "wordLinks": [
+            {
+              "surface": "His",
+              "word": "his",
+              "entryGuid": "368023a6-163e-50c0-ac53-3e23d791db26",
+              "isTarget": false,
+              "start": 0,
+              "end": 3
+            },
+            {
+              "surface": "family",
+              "word": "family",
+              "entryGuid": "3dce25c5-181c-5ff5-9910-b8f915ab05b3",
+              "isTarget": false,
+              "start": 4,
+              "end": 10
+            },
+            {
+              "surface": "is",
+              "word": "be",
+              "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+              "isTarget": false,
+              "start": 11,
+              "end": 13
+            },
+            {
+              "surface": "ready",
+              "word": "ready",
+              "entryGuid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+              "isTarget": true,
+              "start": 14,
+              "end": 19
+            },
+            {
+              "surface": "to",
+              "word": "to",
+              "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+              "isTarget": false,
+              "start": 20,
+              "end": 22
+            },
+            {
+              "surface": "board",
+              "word": "board",
+              "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+              "isTarget": true,
+              "start": 23,
+              "end": 28
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 29,
+              "end": 32
+            },
+            {
+              "surface": "airplane",
+              "word": "airplane",
+              "entryGuid": "55eefd94-534b-5a8b-97ed-6eef05dec561",
+              "isTarget": true,
+              "start": 33,
+              "end": 41
+            },
+            {
+              "surface": "through",
+              "word": "through",
+              "entryGuid": "9ae026b7-e7c9-517e-b739-bd61f536bafa",
+              "isTarget": false,
+              "start": 42,
+              "end": 49
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 50,
+              "end": 53
+            },
+            {
+              "surface": "passage",
+              "word": "passage",
+              "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+              "isTarget": true,
+              "start": 54,
+              "end": 61
+            },
+            {
+              "surface": "inside",
+              "word": "inside",
+              "entryGuid": "5f6834de-8d31-5b6f-a4bb-a994dd55231b",
+              "isTarget": false,
+              "start": 62,
+              "end": 68
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 69,
+              "end": 72
+            },
+            {
+              "surface": "airbridge",
+              "word": "airbridge",
+              "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+              "isTarget": true,
+              "start": 73,
+              "end": 82
+            }
+          ]
+        }
+      ],
+      "paragraphBreakAfterSentenceIds": [],
+      "imageSource": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png",
+      "unresolved": [],
+      "uncoveredTargets": [],
+      "textEn": "At the busy airport terminal, an airplane waits outside the window. A baggage cart carries suitcases outside. A passenger carries a heavy bag and waits in line near the gate. There is an empty seat beside the line. A clock hangs above a screen. A woman in a uniform checks each ticket. A boy shows his ticket to her. His family is ready to board the airplane through the passage inside the airbridge.",
+      "textZh": "在繁忙的機場航廈，一架飛機停在窗外等候。外面有一台行李拖車載運著行李箱。一位乘客提著沉重的旅行袋，在登機門附近排隊等候。隊伍旁邊有一個空座位。螢幕上方掛著一個時鐘。一位穿制服的女士核對每張票券。一個男孩向她出示票券。他的家人已準備好經由空橋內的通道登機。",
+      "mappingStatus": "offline-span-and-coverage-checked-production-unchecked"
+    },
+    {
+      "scenarioKey": "travel-hotel-check-in",
+      "titleZh": "飯店櫃檯入住與周邊服務",
+      "vocabularyMode": "user-specified",
+      "vocabularyFilter": {
+        "system": "list",
+        "levels": [
+          "advance",
+          "basic",
+          "expert"
+        ]
+      },
+      "targetCount": 29,
+      "targets": [
+        {
+          "word": "receptionist",
+          "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "櫃檯接待員",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "guest",
+          "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "住客",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "front desk",
+          "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "飯店櫃檯；接待處",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "passport",
+          "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "護照",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "key card",
+          "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "房卡",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "bell",
+          "entryGuid": "078d0d47-f1ea-5158-a992-e0cf22e830bd",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "服務鈴",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "form",
+          "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "表格",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "pen",
+          "entryGuid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "筆",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "reservation",
+          "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "訂房；預訂",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "luggage",
+          "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "行李（不可數）",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "suitcase",
+          "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "行李箱",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "cart",
+          "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "推車",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "tag",
+          "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "吊牌；標籤",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "water",
+          "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "水",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "tea",
+          "entryGuid": "0479b7b6-5c9e-52ad-a0ad-315383f1dae3",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "茶",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "coffee",
+          "entryGuid": "f2012afd-cdba-5945-9501-b702b7f77697",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "咖啡",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "cup",
+          "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "杯子",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "toothbrush",
+          "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "牙刷",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "toothpaste",
+          "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "牙膏",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "towel",
+          "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "毛巾",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "shampoo",
+          "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "洗髮精",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "soap",
+          "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "肥皂",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "friendly",
+          "entryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "友善的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "porter",
+          "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "行李員",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "check in",
+          "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+          "list": null,
+          "teachingPos": "v",
+          "senseZh": "辦理入住",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "leave",
+          "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "留下（在此以leave luggage表達寄放行李）",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "ask",
+          "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "詢問；索取",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "give",
+          "entryGuid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "給予；遞給",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "sign",
+          "entryGuid": "4109ddc1-c73c-5bc6-8fb8-74d95b3b107f",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "簽名",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s01",
+          "en": "At the hotel front desk, guests check in with a friendly receptionist.",
+          "zh": "在飯店櫃檯，住客向友善的接待員辦理入住。",
+          "wordLinks": [
+            {
+              "surface": "At",
+              "word": "at",
+              "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+              "isTarget": false,
+              "start": 0,
+              "end": 2
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 3,
+              "end": 6
+            },
+            {
+              "surface": "hotel",
+              "word": "hotel",
+              "entryGuid": "be58d6e2-0954-5554-aaff-53dce6b0b295",
+              "isTarget": false,
+              "start": 7,
+              "end": 12
+            },
+            {
+              "surface": "front desk",
+              "word": "front desk",
+              "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+              "isTarget": true,
+              "start": 13,
+              "end": 23
+            },
+            {
+              "surface": "guests",
+              "word": "guest",
+              "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+              "isTarget": true,
+              "start": 25,
+              "end": 31
+            },
+            {
+              "surface": "check in",
+              "word": "check in",
+              "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+              "isTarget": true,
+              "start": 32,
+              "end": 40
+            },
+            {
+              "surface": "with",
+              "word": "with",
+              "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+              "isTarget": false,
+              "start": 41,
+              "end": 45
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 46,
+              "end": 47
+            },
+            {
+              "surface": "friendly",
+              "word": "friendly",
+              "entryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+              "isTarget": true,
+              "start": 48,
+              "end": 56
+            },
+            {
+              "surface": "receptionist",
+              "word": "receptionist",
+              "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+              "isTarget": true,
+              "start": 57,
+              "end": 69
+            }
+          ]
+        },
+        {
+          "id": "s02",
+          "en": "One guest has a reservation and shows her passport.",
+          "zh": "其中一位住客有訂房，並出示她的護照。",
+          "wordLinks": [
+            {
+              "surface": "One",
+              "word": "one",
+              "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+              "isTarget": false,
+              "start": 0,
+              "end": 3
+            },
+            {
+              "surface": "guest",
+              "word": "guest",
+              "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+              "isTarget": true,
+              "start": 4,
+              "end": 9
+            },
+            {
+              "surface": "has",
+              "word": "have",
+              "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+              "isTarget": false,
+              "start": 10,
+              "end": 13
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 14,
+              "end": 15
+            },
+            {
+              "surface": "reservation",
+              "word": "reservation",
+              "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+              "isTarget": true,
+              "start": 16,
+              "end": 27
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 28,
+              "end": 31
+            },
+            {
+              "surface": "shows",
+              "word": "show",
+              "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+              "isTarget": false,
+              "start": 32,
+              "end": 37
+            },
+            {
+              "surface": "her",
+              "word": "her",
+              "entryGuid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+              "isTarget": false,
+              "start": 38,
+              "end": 41
+            },
+            {
+              "surface": "passport",
+              "word": "passport",
+              "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+              "isTarget": true,
+              "start": 42,
+              "end": 50
+            }
+          ]
+        },
+        {
+          "id": "s03",
+          "en": "Another guest uses a pen to sign a form while the receptionist gives the woman a key card.",
+          "zh": "另一位住客用筆在表格上簽名，同時接待員把房卡交給那位女士。",
+          "wordLinks": [
+            {
+              "surface": "Another",
+              "word": "another",
+              "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+              "isTarget": false,
+              "start": 0,
+              "end": 7
+            },
+            {
+              "surface": "guest",
+              "word": "guest",
+              "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+              "isTarget": true,
+              "start": 8,
+              "end": 13
+            },
+            {
+              "surface": "uses",
+              "word": "use",
+              "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+              "isTarget": false,
+              "start": 14,
+              "end": 18
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 19,
+              "end": 20
+            },
+            {
+              "surface": "pen",
+              "word": "pen",
+              "entryGuid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+              "isTarget": true,
+              "start": 21,
+              "end": 24
+            },
+            {
+              "surface": "to",
+              "word": "to",
+              "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+              "isTarget": false,
+              "start": 25,
+              "end": 27
+            },
+            {
+              "surface": "sign",
+              "word": "sign",
+              "entryGuid": "4109ddc1-c73c-5bc6-8fb8-74d95b3b107f",
+              "isTarget": true,
+              "start": 28,
+              "end": 32
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 33,
+              "end": 34
+            },
+            {
+              "surface": "form",
+              "word": "form",
+              "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+              "isTarget": true,
+              "start": 35,
+              "end": 39
+            },
+            {
+              "surface": "while",
+              "word": "while",
+              "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+              "isTarget": false,
+              "start": 40,
+              "end": 45
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 46,
+              "end": 49
+            },
+            {
+              "surface": "receptionist",
+              "word": "receptionist",
+              "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+              "isTarget": true,
+              "start": 50,
+              "end": 62
+            },
+            {
+              "surface": "gives",
+              "word": "give",
+              "entryGuid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+              "isTarget": true,
+              "start": 63,
+              "end": 68
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 69,
+              "end": 72
+            },
+            {
+              "surface": "woman",
+              "word": "woman",
+              "entryGuid": "14939383-9986-5420-b4be-0d7ebcb34bd3",
+              "isTarget": false,
+              "start": 73,
+              "end": 78
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 79,
+              "end": 80
+            },
+            {
+              "surface": "key card",
+              "word": "key card",
+              "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+              "isTarget": true,
+              "start": 81,
+              "end": 89
+            }
+          ]
+        },
+        {
+          "id": "s04",
+          "en": "A bell sits on the desk.",
+          "zh": "櫃檯上放著一個服務鈴。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "bell",
+              "word": "bell",
+              "entryGuid": "078d0d47-f1ea-5158-a992-e0cf22e830bd",
+              "isTarget": true,
+              "start": 2,
+              "end": 6
+            },
+            {
+              "surface": "sits",
+              "word": "sit",
+              "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+              "isTarget": false,
+              "start": 7,
+              "end": 11
+            },
+            {
+              "surface": "on",
+              "word": "on",
+              "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+              "isTarget": false,
+              "start": 12,
+              "end": 14
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 15,
+              "end": 18
+            },
+            {
+              "surface": "desk",
+              "word": "desk",
+              "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+              "isTarget": false,
+              "start": 19,
+              "end": 23
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "en": "Another guest asks, “Can I leave my luggage here?”",
+          "zh": "另一位住客問：「我可以把行李寄放在這裡嗎？」",
+          "wordLinks": [
+            {
+              "surface": "Another",
+              "word": "another",
+              "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+              "isTarget": false,
+              "start": 0,
+              "end": 7
+            },
+            {
+              "surface": "guest",
+              "word": "guest",
+              "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+              "isTarget": true,
+              "start": 8,
+              "end": 13
+            },
+            {
+              "surface": "asks",
+              "word": "ask",
+              "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+              "isTarget": true,
+              "start": 14,
+              "end": 18
+            },
+            {
+              "surface": "Can",
+              "word": "can",
+              "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+              "isTarget": false,
+              "start": 21,
+              "end": 24
+            },
+            {
+              "surface": "I",
+              "word": "I",
+              "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+              "isTarget": false,
+              "start": 25,
+              "end": 26
+            },
+            {
+              "surface": "leave",
+              "word": "leave",
+              "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+              "isTarget": true,
+              "start": 27,
+              "end": 32
+            },
+            {
+              "surface": "my",
+              "word": "my",
+              "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+              "isTarget": false,
+              "start": 33,
+              "end": 35
+            },
+            {
+              "surface": "luggage",
+              "word": "luggage",
+              "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+              "isTarget": true,
+              "start": 36,
+              "end": 43
+            },
+            {
+              "surface": "here",
+              "word": "here",
+              "entryGuid": "cc8ad8fc-76f2-52e9-b835-5ef466586a6c",
+              "isTarget": false,
+              "start": 44,
+              "end": 48
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "en": "A porter puts a tag on a suitcase and sets it on a cart.",
+          "zh": "一位行李員在行李箱上掛上吊牌，並把它放到推車上。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "porter",
+              "word": "porter",
+              "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+              "isTarget": true,
+              "start": 2,
+              "end": 8
+            },
+            {
+              "surface": "puts",
+              "word": "put",
+              "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+              "isTarget": false,
+              "start": 9,
+              "end": 13
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 14,
+              "end": 15
+            },
+            {
+              "surface": "tag",
+              "word": "tag",
+              "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+              "isTarget": true,
+              "start": 16,
+              "end": 19
+            },
+            {
+              "surface": "on",
+              "word": "on",
+              "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+              "isTarget": false,
+              "start": 20,
+              "end": 22
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 23,
+              "end": 24
+            },
+            {
+              "surface": "suitcase",
+              "word": "suitcase",
+              "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+              "isTarget": true,
+              "start": 25,
+              "end": 33
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 34,
+              "end": 37
+            },
+            {
+              "surface": "sets",
+              "word": "set",
+              "entryGuid": "c5104722-80c3-534b-8709-ba5b8e242d6a",
+              "isTarget": false,
+              "start": 38,
+              "end": 42
+            },
+            {
+              "surface": "it",
+              "word": "it",
+              "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+              "isTarget": false,
+              "start": 43,
+              "end": 45
+            },
+            {
+              "surface": "on",
+              "word": "on",
+              "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+              "isTarget": false,
+              "start": 46,
+              "end": 48
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 49,
+              "end": 50
+            },
+            {
+              "surface": "cart",
+              "word": "cart",
+              "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+              "isTarget": true,
+              "start": 51,
+              "end": 55
+            }
+          ]
+        },
+        {
+          "id": "s07",
+          "en": "Beside the desk, travelers can have water, hot tea, or coffee in a cup.",
+          "zh": "在櫃檯旁邊，旅客可以用杯子取用水、熱茶或咖啡。",
+          "wordLinks": [
+            {
+              "surface": "Beside",
+              "word": "beside",
+              "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+              "isTarget": false,
+              "start": 0,
+              "end": 6
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 7,
+              "end": 10
+            },
+            {
+              "surface": "desk",
+              "word": "desk",
+              "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+              "isTarget": false,
+              "start": 11,
+              "end": 15
+            },
+            {
+              "surface": "travelers",
+              "word": "traveler",
+              "entryGuid": "11d0cd6f-7773-583a-9202-77bd17c9a31b",
+              "isTarget": false,
+              "start": 17,
+              "end": 26
+            },
+            {
+              "surface": "can",
+              "word": "can",
+              "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+              "isTarget": false,
+              "start": 27,
+              "end": 30
+            },
+            {
+              "surface": "have",
+              "word": "have",
+              "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+              "isTarget": false,
+              "start": 31,
+              "end": 35
+            },
+            {
+              "surface": "water",
+              "word": "water",
+              "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+              "isTarget": true,
+              "start": 36,
+              "end": 41
+            },
+            {
+              "surface": "hot",
+              "word": "hot",
+              "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+              "isTarget": false,
+              "start": 43,
+              "end": 46
+            },
+            {
+              "surface": "tea",
+              "word": "tea",
+              "entryGuid": "0479b7b6-5c9e-52ad-a0ad-315383f1dae3",
+              "isTarget": true,
+              "start": 47,
+              "end": 50
+            },
+            {
+              "surface": "or",
+              "word": "or",
+              "entryGuid": "36fc537e-61ac-5cf7-97bc-ab53bb8712fa",
+              "isTarget": false,
+              "start": 52,
+              "end": 54
+            },
+            {
+              "surface": "coffee",
+              "word": "coffee",
+              "entryGuid": "f2012afd-cdba-5945-9501-b702b7f77697",
+              "isTarget": true,
+              "start": 55,
+              "end": 61
+            },
+            {
+              "surface": "in",
+              "word": "in",
+              "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+              "isTarget": false,
+              "start": 62,
+              "end": 64
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 65,
+              "end": 66
+            },
+            {
+              "surface": "cup",
+              "word": "cup",
+              "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+              "isTarget": true,
+              "start": 67,
+              "end": 70
+            }
+          ]
+        },
+        {
+          "id": "s08",
+          "en": "A nearby shelf holds a towel, soap, shampoo, a toothbrush, and toothpaste.",
+          "zh": "附近的架上放著毛巾、肥皂、洗髮精、牙刷與牙膏。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "nearby",
+              "word": "nearby",
+              "entryGuid": "1d83ac72-ccfd-5575-b47a-d3643c2d512a",
+              "isTarget": false,
+              "start": 2,
+              "end": 8
+            },
+            {
+              "surface": "shelf",
+              "word": "shelf",
+              "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+              "isTarget": false,
+              "start": 9,
+              "end": 14
+            },
+            {
+              "surface": "holds",
+              "word": "hold",
+              "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+              "isTarget": false,
+              "start": 15,
+              "end": 20
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 21,
+              "end": 22
+            },
+            {
+              "surface": "towel",
+              "word": "towel",
+              "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+              "isTarget": true,
+              "start": 23,
+              "end": 28
+            },
+            {
+              "surface": "soap",
+              "word": "soap",
+              "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+              "isTarget": true,
+              "start": 30,
+              "end": 34
+            },
+            {
+              "surface": "shampoo",
+              "word": "shampoo",
+              "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+              "isTarget": true,
+              "start": 36,
+              "end": 43
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 45,
+              "end": 46
+            },
+            {
+              "surface": "toothbrush",
+              "word": "toothbrush",
+              "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+              "isTarget": true,
+              "start": 47,
+              "end": 57
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 59,
+              "end": 62
+            },
+            {
+              "surface": "toothpaste",
+              "word": "toothpaste",
+              "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+              "isTarget": true,
+              "start": 63,
+              "end": 73
+            }
+          ]
+        },
+        {
+          "id": "s09",
+          "en": "A guest asks for a toothbrush, and another receptionist gives one to him.",
+          "zh": "一位住客索取牙刷，另一位接待員拿了一支給他。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "guest",
+              "word": "guest",
+              "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+              "isTarget": true,
+              "start": 2,
+              "end": 7
+            },
+            {
+              "surface": "asks",
+              "word": "ask",
+              "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+              "isTarget": true,
+              "start": 8,
+              "end": 12
+            },
+            {
+              "surface": "for",
+              "word": "for",
+              "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+              "isTarget": false,
+              "start": 13,
+              "end": 16
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 17,
+              "end": 18
+            },
+            {
+              "surface": "toothbrush",
+              "word": "toothbrush",
+              "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+              "isTarget": true,
+              "start": 19,
+              "end": 29
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 31,
+              "end": 34
+            },
+            {
+              "surface": "another",
+              "word": "another",
+              "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+              "isTarget": false,
+              "start": 35,
+              "end": 42
+            },
+            {
+              "surface": "receptionist",
+              "word": "receptionist",
+              "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+              "isTarget": true,
+              "start": 43,
+              "end": 55
+            },
+            {
+              "surface": "gives",
+              "word": "give",
+              "entryGuid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+              "isTarget": true,
+              "start": 56,
+              "end": 61
+            },
+            {
+              "surface": "one",
+              "word": "one",
+              "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+              "isTarget": false,
+              "start": 62,
+              "end": 65
+            },
+            {
+              "surface": "to",
+              "word": "to",
+              "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+              "isTarget": false,
+              "start": 66,
+              "end": 68
+            },
+            {
+              "surface": "him",
+              "word": "him",
+              "entryGuid": "b4937bc8-89ca-5c95-875a-b400fc44aaad",
+              "isTarget": false,
+              "start": 69,
+              "end": 72
+            }
+          ]
+        }
+      ],
+      "paragraphBreakAfterSentenceIds": [
+        "s04"
+      ],
+      "imageSource": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png",
+      "unresolved": [],
+      "uncoveredTargets": [],
+      "textEn": "At the hotel front desk, guests check in with a friendly receptionist. One guest has a reservation and shows her passport. Another guest uses a pen to sign a form while the receptionist gives the woman a key card. A bell sits on the desk. Another guest asks, “Can I leave my luggage here?” A porter puts a tag on a suitcase and sets it on a cart. Beside the desk, travelers can have water, hot tea, or coffee in a cup. A nearby shelf holds a towel, soap, shampoo, a toothbrush, and toothpaste. A guest asks for a toothbrush, and another receptionist gives one to him.",
+      "textZh": "在飯店櫃檯，住客向友善的接待員辦理入住。其中一位住客有訂房，並出示她的護照。另一位住客用筆在表格上簽名，同時接待員把房卡交給那位女士。櫃檯上放著一個服務鈴。另一位住客問：「我可以把行李寄放在這裡嗎？」一位行李員在行李箱上掛上吊牌，並把它放到推車上。在櫃檯旁邊，旅客可以用杯子取用水、熱茶或咖啡。附近的架上放著毛巾、肥皂、洗髮精、牙刷與牙膏。一位住客索取牙刷，另一位接待員拿了一支給他。",
+      "mappingStatus": "offline-span-and-coverage-checked-production-unchecked"
+    },
+    {
+      "scenarioKey": "travel-ferry-trip",
+      "titleZh": "搭乘渡輪",
+      "vocabularyMode": "default-graded",
+      "vocabularyFilter": {
+        "system": "list",
+        "levels": [
+          "basic",
+          "advance"
+        ]
+      },
+      "targetCount": 19,
+      "targets": [
+        {
+          "word": "ship",
+          "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "輪船",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "boat",
+          "entryGuid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "小船",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "passenger",
+          "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "乘客",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "captain",
+          "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "船長",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "sailor",
+          "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "船員",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "sea",
+          "entryGuid": "8dc4dce9-961b-5e4d-a918-0697b883bb57",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "大海",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "island",
+          "entryGuid": "2f1775be-7a7b-5b14-bd7f-ba4680753a57",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "島嶼",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "wave",
+          "entryGuid": "b1140533-37c0-5cc3-9a64-63d17ad3b171",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "波浪",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "rope",
+          "entryGuid": "cc4761b9-093c-5995-8370-13c594a385f4",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "繩索",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "flag",
+          "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "旗幟",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "bench",
+          "entryGuid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "長椅",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "bag",
+          "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "旅行袋",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "sunny",
+          "entryGuid": "ac615d17-79b1-5d3b-a406-80e798f57c9f",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "晴朗的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "windy",
+          "entryGuid": "65fef98d-c94b-5d64-aebc-d886b2c9779c",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "風大的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "large",
+          "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "大型的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "sail",
+          "entryGuid": "e58393a2-bf7e-5095-9a69-271db58d9bae",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "航行",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "sit",
+          "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "坐著",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "hold",
+          "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "握住",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "watch",
+          "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "觀看",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s01",
+          "en": "On a sunny day, a large ship sails across the sea toward an island.",
+          "zh": "在晴朗的一天，一艘大船航行在海上，朝一座島嶼前進。",
+          "wordLinks": [
+            {
+              "surface": "On",
+              "word": "on",
+              "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+              "isTarget": false,
+              "start": 0,
+              "end": 2
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 3,
+              "end": 4
+            },
+            {
+              "surface": "sunny",
+              "word": "sunny",
+              "entryGuid": "ac615d17-79b1-5d3b-a406-80e798f57c9f",
+              "isTarget": true,
+              "start": 5,
+              "end": 10
+            },
+            {
+              "surface": "day",
+              "word": "day",
+              "entryGuid": "56d5f915-c486-51b4-958c-fce7e6f1d5ae",
+              "isTarget": false,
+              "start": 11,
+              "end": 14
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 16,
+              "end": 17
+            },
+            {
+              "surface": "large",
+              "word": "large",
+              "entryGuid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+              "isTarget": true,
+              "start": 18,
+              "end": 23
+            },
+            {
+              "surface": "ship",
+              "word": "ship",
+              "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+              "isTarget": true,
+              "start": 24,
+              "end": 28
+            },
+            {
+              "surface": "sails",
+              "word": "sail",
+              "entryGuid": "e58393a2-bf7e-5095-9a69-271db58d9bae",
+              "isTarget": true,
+              "start": 29,
+              "end": 34
+            },
+            {
+              "surface": "across",
+              "word": "across",
+              "entryGuid": "52643c85-42b5-512b-98a5-b6691a4c04d2",
+              "isTarget": false,
+              "start": 35,
+              "end": 41
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 42,
+              "end": 45
+            },
+            {
+              "surface": "sea",
+              "word": "sea",
+              "entryGuid": "8dc4dce9-961b-5e4d-a918-0697b883bb57",
+              "isTarget": true,
+              "start": 46,
+              "end": 49
+            },
+            {
+              "surface": "toward",
+              "word": "toward",
+              "entryGuid": "03a9b04c-86d8-5b68-bb35-51cd5319ad77",
+              "isTarget": false,
+              "start": 50,
+              "end": 56
+            },
+            {
+              "surface": "an",
+              "word": "an",
+              "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+              "isTarget": false,
+              "start": 57,
+              "end": 59
+            },
+            {
+              "surface": "island",
+              "word": "island",
+              "entryGuid": "2f1775be-7a7b-5b14-bd7f-ba4680753a57",
+              "isTarget": true,
+              "start": 60,
+              "end": 66
+            }
+          ]
+        },
+        {
+          "id": "s02",
+          "en": "A small boat passes near the ship.",
+          "zh": "一艘小船從大船附近經過。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "small",
+              "word": "small",
+              "entryGuid": "e1d1e5f0-e0a6-505a-8e80-589514ddda82",
+              "isTarget": false,
+              "start": 2,
+              "end": 7
+            },
+            {
+              "surface": "boat",
+              "word": "boat",
+              "entryGuid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+              "isTarget": true,
+              "start": 8,
+              "end": 12
+            },
+            {
+              "surface": "passes",
+              "word": "pass",
+              "entryGuid": "9b5ac7b8-72b8-5a68-88dc-ef0e583c3624",
+              "isTarget": false,
+              "start": 13,
+              "end": 19
+            },
+            {
+              "surface": "near",
+              "word": "near",
+              "entryGuid": "7e04c65f-34df-5559-a05f-67b04e4d91d4",
+              "isTarget": false,
+              "start": 20,
+              "end": 24
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 25,
+              "end": 28
+            },
+            {
+              "surface": "ship",
+              "word": "ship",
+              "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+              "isTarget": true,
+              "start": 29,
+              "end": 33
+            }
+          ]
+        },
+        {
+          "id": "s03",
+          "en": "The captain is at the front, and a sailor works with a rope below a flag.",
+          "zh": "船長在船的前方，一位船員在旗幟下方整理繩索。",
+          "wordLinks": [
+            {
+              "surface": "The",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 0,
+              "end": 3
+            },
+            {
+              "surface": "captain",
+              "word": "captain",
+              "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+              "isTarget": true,
+              "start": 4,
+              "end": 11
+            },
+            {
+              "surface": "is",
+              "word": "be",
+              "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+              "isTarget": false,
+              "start": 12,
+              "end": 14
+            },
+            {
+              "surface": "at",
+              "word": "at",
+              "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+              "isTarget": false,
+              "start": 15,
+              "end": 17
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 18,
+              "end": 21
+            },
+            {
+              "surface": "front",
+              "word": "front",
+              "entryGuid": "aa2f4046-f9f9-56bd-aa1d-38acb8371d92",
+              "isTarget": false,
+              "start": 22,
+              "end": 27
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 29,
+              "end": 32
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 33,
+              "end": 34
+            },
+            {
+              "surface": "sailor",
+              "word": "sailor",
+              "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+              "isTarget": true,
+              "start": 35,
+              "end": 41
+            },
+            {
+              "surface": "works",
+              "word": "work",
+              "entryGuid": "d0181c98-8886-59d4-9b45-20921745ac69",
+              "isTarget": false,
+              "start": 42,
+              "end": 47
+            },
+            {
+              "surface": "with",
+              "word": "with",
+              "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+              "isTarget": false,
+              "start": 48,
+              "end": 52
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 53,
+              "end": 54
+            },
+            {
+              "surface": "rope",
+              "word": "rope",
+              "entryGuid": "cc4761b9-093c-5995-8370-13c594a385f4",
+              "isTarget": true,
+              "start": 55,
+              "end": 59
+            },
+            {
+              "surface": "below",
+              "word": "below",
+              "entryGuid": "3faef205-d864-514c-b0b9-c0403cd14068",
+              "isTarget": false,
+              "start": 60,
+              "end": 65
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 66,
+              "end": 67
+            },
+            {
+              "surface": "flag",
+              "word": "flag",
+              "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+              "isTarget": true,
+              "start": 68,
+              "end": 72
+            }
+          ]
+        },
+        {
+          "id": "s04",
+          "en": "A passenger sits on a bench with a bag beside him.",
+          "zh": "一位乘客坐在長椅上，身旁放著旅行袋。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "passenger",
+              "word": "passenger",
+              "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+              "isTarget": true,
+              "start": 2,
+              "end": 11
+            },
+            {
+              "surface": "sits",
+              "word": "sit",
+              "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+              "isTarget": true,
+              "start": 12,
+              "end": 16
+            },
+            {
+              "surface": "on",
+              "word": "on",
+              "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+              "isTarget": false,
+              "start": 17,
+              "end": 19
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 20,
+              "end": 21
+            },
+            {
+              "surface": "bench",
+              "word": "bench",
+              "entryGuid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+              "isTarget": true,
+              "start": 22,
+              "end": 27
+            },
+            {
+              "surface": "with",
+              "word": "with",
+              "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+              "isTarget": false,
+              "start": 28,
+              "end": 32
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 33,
+              "end": 34
+            },
+            {
+              "surface": "bag",
+              "word": "bag",
+              "entryGuid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+              "isTarget": true,
+              "start": 35,
+              "end": 38
+            },
+            {
+              "surface": "beside",
+              "word": "beside",
+              "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+              "isTarget": false,
+              "start": 39,
+              "end": 45
+            },
+            {
+              "surface": "him",
+              "word": "him",
+              "entryGuid": "b4937bc8-89ca-5c95-875a-b400fc44aaad",
+              "isTarget": false,
+              "start": 46,
+              "end": 49
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "en": "It is windy, so he holds his hat.",
+          "zh": "風很大，所以他按住自己的帽子。",
+          "wordLinks": [
+            {
+              "surface": "It",
+              "word": "it",
+              "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+              "isTarget": false,
+              "start": 0,
+              "end": 2
+            },
+            {
+              "surface": "is",
+              "word": "be",
+              "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+              "isTarget": false,
+              "start": 3,
+              "end": 5
+            },
+            {
+              "surface": "windy",
+              "word": "windy",
+              "entryGuid": "65fef98d-c94b-5d64-aebc-d886b2c9779c",
+              "isTarget": true,
+              "start": 6,
+              "end": 11
+            },
+            {
+              "surface": "so",
+              "word": "so",
+              "entryGuid": "1db6c08c-19ee-55ae-b861-e58d1e914906",
+              "isTarget": false,
+              "start": 13,
+              "end": 15
+            },
+            {
+              "surface": "he",
+              "word": "he",
+              "entryGuid": "bf4cb952-a8cf-5a38-a45c-cf50ec7135aa",
+              "isTarget": false,
+              "start": 16,
+              "end": 18
+            },
+            {
+              "surface": "holds",
+              "word": "hold",
+              "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+              "isTarget": true,
+              "start": 19,
+              "end": 24
+            },
+            {
+              "surface": "his",
+              "word": "his",
+              "entryGuid": "368023a6-163e-50c0-ac53-3e23d791db26",
+              "isTarget": false,
+              "start": 25,
+              "end": 28
+            },
+            {
+              "surface": "hat",
+              "word": "hat",
+              "entryGuid": "f3e1ee3b-d7ae-5ca6-891f-a89e853281c0",
+              "isTarget": false,
+              "start": 29,
+              "end": 32
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "en": "A child watches a wave beside the ship.",
+          "zh": "一個孩子看著船邊的一道波浪。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "child",
+              "word": "child",
+              "entryGuid": "263754b2-3e27-5e7d-9dfa-cbed6ee49408",
+              "isTarget": false,
+              "start": 2,
+              "end": 7
+            },
+            {
+              "surface": "watches",
+              "word": "watch",
+              "entryGuid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+              "isTarget": true,
+              "start": 8,
+              "end": 15
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 16,
+              "end": 17
+            },
+            {
+              "surface": "wave",
+              "word": "wave",
+              "entryGuid": "b1140533-37c0-5cc3-9a64-63d17ad3b171",
+              "isTarget": true,
+              "start": 18,
+              "end": 22
+            },
+            {
+              "surface": "beside",
+              "word": "beside",
+              "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+              "isTarget": false,
+              "start": 23,
+              "end": 29
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 30,
+              "end": 33
+            },
+            {
+              "surface": "ship",
+              "word": "ship",
+              "entryGuid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+              "isTarget": true,
+              "start": 34,
+              "end": 38
+            }
+          ]
+        }
+      ],
+      "paragraphBreakAfterSentenceIds": [],
+      "imageSource": "output/imagegen/travel-ferry-trip-base-2026-11-11-v1/base.png",
+      "unresolved": [],
+      "uncoveredTargets": [],
+      "textEn": "On a sunny day, a large ship sails across the sea toward an island. A small boat passes near the ship. The captain is at the front, and a sailor works with a rope below a flag. A passenger sits on a bench with a bag beside him. It is windy, so he holds his hat. A child watches a wave beside the ship.",
+      "textZh": "在晴朗的一天，一艘大船航行在海上，朝一座島嶼前進。一艘小船從大船附近經過。船長在船的前方，一位船員在旗幟下方整理繩索。一位乘客坐在長椅上，身旁放著旅行袋。風很大，所以他按住自己的帽子。一個孩子看著船邊的一道波浪。",
+      "mappingStatus": "offline-span-and-coverage-checked-production-unchecked"
+    },
+    {
+      "scenarioKey": "travel-airplane-cabin",
+      "titleZh": "飛機上的餐飲與艙等體驗",
+      "vocabularyMode": "user-specified",
+      "vocabularyFilter": {
+        "system": "list",
+        "levels": [
+          "advance",
+          "basic",
+          "expert"
+        ]
+      },
+      "targetCount": 29,
+      "targets": [
+        {
+          "word": "cabin",
+          "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "機艙",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "flight attendant",
+          "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "空服員",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "passenger",
+          "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "乘客",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "overhead bin",
+          "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "頭頂行李艙",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "luggage",
+          "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "行李（不可數）",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "cart",
+          "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "推車",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "meal",
+          "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "餐點",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "tray",
+          "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "托盤；餐盤",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "seat",
+          "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "座位",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "screen",
+          "entryGuid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "螢幕",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "headphones",
+          "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+          "list": "expert",
+          "teachingPos": "n",
+          "senseZh": "耳機",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "magazine",
+          "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "雜誌",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "window",
+          "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "窗戶",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "cloud",
+          "entryGuid": "70818df1-ee97-590f-8dbb-7da3592f99d1",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "雲",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "wing",
+          "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "機翼",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "engine",
+          "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+          "list": "advance",
+          "teachingPos": "n",
+          "senseZh": "引擎",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "business class",
+          "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "商務艙",
+          "entryStatus": "planned-not-imported"
+        },
+        {
+          "word": "economy class",
+          "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+          "list": null,
+          "teachingPos": "n",
+          "senseZh": "經濟艙",
+          "entryStatus": "planned-not-imported"
+        },
+        {
+          "word": "cup",
+          "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "杯子",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "water",
+          "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "水",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "juice",
+          "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "果汁",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "plate",
+          "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+          "list": "basic",
+          "teachingPos": "n",
+          "senseZh": "盤子",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "open",
+          "entryGuid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "打開",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "serve",
+          "entryGuid": "f7119668-da06-5011-bad5-08f375197a28",
+          "list": "advance",
+          "teachingPos": "v",
+          "senseZh": "供餐；遞送",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "eat",
+          "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "吃；用餐",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "drink",
+          "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+          "list": "basic",
+          "teachingPos": "v",
+          "senseZh": "喝",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "comfortable",
+          "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "舒適的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "wide",
+          "entryGuid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+          "list": "basic",
+          "teachingPos": "adj",
+          "senseZh": "寬的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        },
+        {
+          "word": "narrow",
+          "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+          "list": "advance",
+          "teachingPos": "adj",
+          "senseZh": "較窄的",
+          "entryStatus": "existing-in-canonical-production-unchecked"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s01",
+          "en": "Inside the cabin, a passenger opens an overhead bin with luggage inside.",
+          "zh": "在機艙內，一位乘客打開上方放著行李的行李艙。",
+          "wordLinks": [
+            {
+              "surface": "Inside",
+              "word": "inside",
+              "entryGuid": "5f6834de-8d31-5b6f-a4bb-a994dd55231b",
+              "isTarget": false,
+              "start": 0,
+              "end": 6
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 7,
+              "end": 10
+            },
+            {
+              "surface": "cabin",
+              "word": "cabin",
+              "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+              "isTarget": true,
+              "start": 11,
+              "end": 16
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 18,
+              "end": 19
+            },
+            {
+              "surface": "passenger",
+              "word": "passenger",
+              "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+              "isTarget": true,
+              "start": 20,
+              "end": 29
+            },
+            {
+              "surface": "opens",
+              "word": "open",
+              "entryGuid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+              "isTarget": true,
+              "start": 30,
+              "end": 35
+            },
+            {
+              "surface": "an",
+              "word": "an",
+              "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+              "isTarget": false,
+              "start": 36,
+              "end": 38
+            },
+            {
+              "surface": "overhead bin",
+              "word": "overhead bin",
+              "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+              "isTarget": true,
+              "start": 39,
+              "end": 51
+            },
+            {
+              "surface": "with",
+              "word": "with",
+              "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+              "isTarget": false,
+              "start": 52,
+              "end": 56
+            },
+            {
+              "surface": "luggage",
+              "word": "luggage",
+              "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+              "isTarget": true,
+              "start": 57,
+              "end": 64
+            },
+            {
+              "surface": "inside",
+              "word": "inside",
+              "entryGuid": "5f6834de-8d31-5b6f-a4bb-a994dd55231b",
+              "isTarget": false,
+              "start": 65,
+              "end": 71
+            }
+          ]
+        },
+        {
+          "id": "s02",
+          "en": "In business class, the seats are wide and comfortable.",
+          "zh": "商務艙的座位寬敞又舒適。",
+          "wordLinks": [
+            {
+              "surface": "In",
+              "word": "in",
+              "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+              "isTarget": false,
+              "start": 0,
+              "end": 2
+            },
+            {
+              "surface": "business class",
+              "word": "business class",
+              "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+              "isTarget": true,
+              "start": 3,
+              "end": 17
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 19,
+              "end": 22
+            },
+            {
+              "surface": "seats",
+              "word": "seat",
+              "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+              "isTarget": true,
+              "start": 23,
+              "end": 28
+            },
+            {
+              "surface": "are",
+              "word": "be",
+              "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+              "isTarget": false,
+              "start": 29,
+              "end": 32
+            },
+            {
+              "surface": "wide",
+              "word": "wide",
+              "entryGuid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+              "isTarget": true,
+              "start": 33,
+              "end": 37
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 38,
+              "end": 41
+            },
+            {
+              "surface": "comfortable",
+              "word": "comfortable",
+              "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+              "isTarget": true,
+              "start": 42,
+              "end": 53
+            }
+          ]
+        },
+        {
+          "id": "s03",
+          "en": "A traveler eats a meal from a plate, while another seat holds a pillow and a blanket.",
+          "zh": "一位旅客吃著盤中的餐點，另一張座位上放著枕頭與毯子。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "traveler",
+              "word": "traveler",
+              "entryGuid": "11d0cd6f-7773-583a-9202-77bd17c9a31b",
+              "isTarget": false,
+              "start": 2,
+              "end": 10
+            },
+            {
+              "surface": "eats",
+              "word": "eat",
+              "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+              "isTarget": true,
+              "start": 11,
+              "end": 15
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 16,
+              "end": 17
+            },
+            {
+              "surface": "meal",
+              "word": "meal",
+              "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+              "isTarget": true,
+              "start": 18,
+              "end": 22
+            },
+            {
+              "surface": "from",
+              "word": "from",
+              "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+              "isTarget": false,
+              "start": 23,
+              "end": 27
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 28,
+              "end": 29
+            },
+            {
+              "surface": "plate",
+              "word": "plate",
+              "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+              "isTarget": true,
+              "start": 30,
+              "end": 35
+            },
+            {
+              "surface": "while",
+              "word": "while",
+              "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+              "isTarget": false,
+              "start": 37,
+              "end": 42
+            },
+            {
+              "surface": "another",
+              "word": "another",
+              "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+              "isTarget": false,
+              "start": 43,
+              "end": 50
+            },
+            {
+              "surface": "seat",
+              "word": "seat",
+              "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+              "isTarget": true,
+              "start": 51,
+              "end": 55
+            },
+            {
+              "surface": "holds",
+              "word": "hold",
+              "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+              "isTarget": false,
+              "start": 56,
+              "end": 61
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 62,
+              "end": 63
+            },
+            {
+              "surface": "pillow",
+              "word": "pillow",
+              "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+              "isTarget": false,
+              "start": 64,
+              "end": 70
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 71,
+              "end": 74
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 75,
+              "end": 76
+            },
+            {
+              "surface": "blanket",
+              "word": "blanket",
+              "entryGuid": "2582b0ca-1f00-5d30-bb76-338e4bfb0ad6",
+              "isTarget": false,
+              "start": 77,
+              "end": 84
+            }
+          ]
+        },
+        {
+          "id": "s04",
+          "en": "Behind a curtain, economy class has narrow seats arranged in rows.",
+          "zh": "隔簾後方的經濟艙，較窄的座椅一排排排列。",
+          "wordLinks": [
+            {
+              "surface": "Behind",
+              "word": "behind",
+              "entryGuid": "983f7556-8d27-55bc-b9d8-2f0f22a2ed8f",
+              "isTarget": false,
+              "start": 0,
+              "end": 6
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 7,
+              "end": 8
+            },
+            {
+              "surface": "curtain",
+              "word": "curtain",
+              "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+              "isTarget": false,
+              "start": 9,
+              "end": 16
+            },
+            {
+              "surface": "economy class",
+              "word": "economy class",
+              "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+              "isTarget": true,
+              "start": 18,
+              "end": 31
+            },
+            {
+              "surface": "has",
+              "word": "have",
+              "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+              "isTarget": false,
+              "start": 32,
+              "end": 35
+            },
+            {
+              "surface": "narrow",
+              "word": "narrow",
+              "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+              "isTarget": true,
+              "start": 36,
+              "end": 42
+            },
+            {
+              "surface": "seats",
+              "word": "seat",
+              "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+              "isTarget": true,
+              "start": 43,
+              "end": 48
+            },
+            {
+              "surface": "arranged",
+              "word": "arrange",
+              "entryGuid": "e97e3fd3-9db6-53da-931b-47afa5c086a6",
+              "isTarget": false,
+              "start": 49,
+              "end": 57
+            },
+            {
+              "surface": "in",
+              "word": "in",
+              "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+              "isTarget": false,
+              "start": 58,
+              "end": 60
+            },
+            {
+              "surface": "rows",
+              "word": "row",
+              "entryGuid": "2c8b933b-70a6-57a8-8f0b-c32960475b7a",
+              "isTarget": false,
+              "start": 61,
+              "end": 65
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "en": "One flight attendant serves a tray to a passenger beside a cart.",
+          "zh": "一位空服員在餐車旁，將托盤遞給乘客。",
+          "wordLinks": [
+            {
+              "surface": "One",
+              "word": "one",
+              "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+              "isTarget": false,
+              "start": 0,
+              "end": 3
+            },
+            {
+              "surface": "flight attendant",
+              "word": "flight attendant",
+              "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+              "isTarget": true,
+              "start": 4,
+              "end": 20
+            },
+            {
+              "surface": "serves",
+              "word": "serve",
+              "entryGuid": "f7119668-da06-5011-bad5-08f375197a28",
+              "isTarget": true,
+              "start": 21,
+              "end": 27
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 28,
+              "end": 29
+            },
+            {
+              "surface": "tray",
+              "word": "tray",
+              "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+              "isTarget": true,
+              "start": 30,
+              "end": 34
+            },
+            {
+              "surface": "to",
+              "word": "to",
+              "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+              "isTarget": false,
+              "start": 35,
+              "end": 37
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 38,
+              "end": 39
+            },
+            {
+              "surface": "passenger",
+              "word": "passenger",
+              "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+              "isTarget": true,
+              "start": 40,
+              "end": 49
+            },
+            {
+              "surface": "beside",
+              "word": "beside",
+              "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+              "isTarget": false,
+              "start": 50,
+              "end": 56
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 57,
+              "end": 58
+            },
+            {
+              "surface": "cart",
+              "word": "cart",
+              "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+              "isTarget": true,
+              "start": 59,
+              "end": 63
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "en": "The cart holds water, juice, and more meals.",
+          "zh": "餐車上放著水、果汁與更多餐點。",
+          "wordLinks": [
+            {
+              "surface": "The",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 0,
+              "end": 3
+            },
+            {
+              "surface": "cart",
+              "word": "cart",
+              "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+              "isTarget": true,
+              "start": 4,
+              "end": 8
+            },
+            {
+              "surface": "holds",
+              "word": "hold",
+              "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+              "isTarget": false,
+              "start": 9,
+              "end": 14
+            },
+            {
+              "surface": "water",
+              "word": "water",
+              "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+              "isTarget": true,
+              "start": 15,
+              "end": 20
+            },
+            {
+              "surface": "juice",
+              "word": "juice",
+              "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+              "isTarget": true,
+              "start": 22,
+              "end": 27
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 29,
+              "end": 32
+            },
+            {
+              "surface": "more",
+              "word": "more",
+              "entryGuid": "66f118af-d262-5cc8-8a87-78bb5102ddca",
+              "isTarget": false,
+              "start": 33,
+              "end": 37
+            },
+            {
+              "surface": "meals",
+              "word": "meal",
+              "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+              "isTarget": true,
+              "start": 38,
+              "end": 43
+            }
+          ]
+        },
+        {
+          "id": "s07",
+          "en": "Another flight attendant pours juice into a cup.",
+          "zh": "另一位空服員把果汁倒進杯子。",
+          "wordLinks": [
+            {
+              "surface": "Another",
+              "word": "another",
+              "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+              "isTarget": false,
+              "start": 0,
+              "end": 7
+            },
+            {
+              "surface": "flight attendant",
+              "word": "flight attendant",
+              "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+              "isTarget": true,
+              "start": 8,
+              "end": 24
+            },
+            {
+              "surface": "pours",
+              "word": "pour",
+              "entryGuid": "772e1508-c6fc-50fa-b0f1-286dd266fa44",
+              "isTarget": false,
+              "start": 25,
+              "end": 30
+            },
+            {
+              "surface": "juice",
+              "word": "juice",
+              "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+              "isTarget": true,
+              "start": 31,
+              "end": 36
+            },
+            {
+              "surface": "into",
+              "word": "into",
+              "entryGuid": "ff2ff7fe-ca9b-5d6f-b685-f1fe96d9ed46",
+              "isTarget": false,
+              "start": 37,
+              "end": 41
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 42,
+              "end": 43
+            },
+            {
+              "surface": "cup",
+              "word": "cup",
+              "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+              "isTarget": true,
+              "start": 44,
+              "end": 47
+            }
+          ]
+        },
+        {
+          "id": "s08",
+          "en": "A passenger wears headphones and drinks from his cup.",
+          "zh": "一位乘客戴著耳機，用杯子喝飲料。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "passenger",
+              "word": "passenger",
+              "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+              "isTarget": true,
+              "start": 2,
+              "end": 11
+            },
+            {
+              "surface": "wears",
+              "word": "wear",
+              "entryGuid": "2207f719-6ad9-5c97-bc92-75ba8bef9ef7",
+              "isTarget": false,
+              "start": 12,
+              "end": 17
+            },
+            {
+              "surface": "headphones",
+              "word": "headphones",
+              "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+              "isTarget": true,
+              "start": 18,
+              "end": 28
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 29,
+              "end": 32
+            },
+            {
+              "surface": "drinks",
+              "word": "drink",
+              "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+              "isTarget": true,
+              "start": 33,
+              "end": 39
+            },
+            {
+              "surface": "from",
+              "word": "from",
+              "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+              "isTarget": false,
+              "start": 40,
+              "end": 44
+            },
+            {
+              "surface": "his",
+              "word": "his",
+              "entryGuid": "368023a6-163e-50c0-ac53-3e23d791db26",
+              "isTarget": false,
+              "start": 45,
+              "end": 48
+            },
+            {
+              "surface": "cup",
+              "word": "cup",
+              "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+              "isTarget": true,
+              "start": 49,
+              "end": 52
+            }
+          ]
+        },
+        {
+          "id": "s09",
+          "en": "A magazine sits in a pocket below a screen.",
+          "zh": "螢幕下方的口袋裡放著一本雜誌。",
+          "wordLinks": [
+            {
+              "surface": "A",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 0,
+              "end": 1
+            },
+            {
+              "surface": "magazine",
+              "word": "magazine",
+              "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+              "isTarget": true,
+              "start": 2,
+              "end": 10
+            },
+            {
+              "surface": "sits",
+              "word": "sit",
+              "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+              "isTarget": false,
+              "start": 11,
+              "end": 15
+            },
+            {
+              "surface": "in",
+              "word": "in",
+              "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+              "isTarget": false,
+              "start": 16,
+              "end": 18
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 19,
+              "end": 20
+            },
+            {
+              "surface": "pocket",
+              "word": "pocket",
+              "entryGuid": "ca3d6bac-637a-5873-b404-6081320f7076",
+              "isTarget": false,
+              "start": 21,
+              "end": 27
+            },
+            {
+              "surface": "below",
+              "word": "below",
+              "entryGuid": "3faef205-d864-514c-b0b9-c0403cd14068",
+              "isTarget": false,
+              "start": 28,
+              "end": 33
+            },
+            {
+              "surface": "a",
+              "word": "a",
+              "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+              "isTarget": false,
+              "start": 34,
+              "end": 35
+            },
+            {
+              "surface": "screen",
+              "word": "screen",
+              "entryGuid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+              "isTarget": true,
+              "start": 36,
+              "end": 42
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "en": "Clouds fill the view through each window, and the wing and engine are outside the cabin.",
+          "zh": "透過窗戶可以看見雲，機翼與引擎則位於機艙外。",
+          "wordLinks": [
+            {
+              "surface": "Clouds",
+              "word": "cloud",
+              "entryGuid": "70818df1-ee97-590f-8dbb-7da3592f99d1",
+              "isTarget": true,
+              "start": 0,
+              "end": 6
+            },
+            {
+              "surface": "fill",
+              "word": "fill",
+              "entryGuid": "200e5134-dbab-540c-a2a8-e009c2b1c5e7",
+              "isTarget": false,
+              "start": 7,
+              "end": 11
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 12,
+              "end": 15
+            },
+            {
+              "surface": "view",
+              "word": "view",
+              "entryGuid": "f90ff84b-1ed4-5a1d-8a0a-cad3b826488f",
+              "isTarget": false,
+              "start": 16,
+              "end": 20
+            },
+            {
+              "surface": "through",
+              "word": "through",
+              "entryGuid": "9ae026b7-e7c9-517e-b739-bd61f536bafa",
+              "isTarget": false,
+              "start": 21,
+              "end": 28
+            },
+            {
+              "surface": "each",
+              "word": "each",
+              "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+              "isTarget": false,
+              "start": 29,
+              "end": 33
+            },
+            {
+              "surface": "window",
+              "word": "window",
+              "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+              "isTarget": true,
+              "start": 34,
+              "end": 40
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 42,
+              "end": 45
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 46,
+              "end": 49
+            },
+            {
+              "surface": "wing",
+              "word": "wing",
+              "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+              "isTarget": true,
+              "start": 50,
+              "end": 54
+            },
+            {
+              "surface": "and",
+              "word": "and",
+              "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+              "isTarget": false,
+              "start": 55,
+              "end": 58
+            },
+            {
+              "surface": "engine",
+              "word": "engine",
+              "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+              "isTarget": true,
+              "start": 59,
+              "end": 65
+            },
+            {
+              "surface": "are",
+              "word": "be",
+              "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+              "isTarget": false,
+              "start": 66,
+              "end": 69
+            },
+            {
+              "surface": "outside",
+              "word": "outside",
+              "entryGuid": "adbe8a2c-2383-5688-9c8a-7125e967551a",
+              "isTarget": false,
+              "start": 70,
+              "end": 77
+            },
+            {
+              "surface": "the",
+              "word": "the",
+              "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+              "isTarget": false,
+              "start": 78,
+              "end": 81
+            },
+            {
+              "surface": "cabin",
+              "word": "cabin",
+              "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+              "isTarget": true,
+              "start": 82,
+              "end": 87
+            }
+          ]
+        }
+      ],
+      "paragraphBreakAfterSentenceIds": [
+        "s04"
+      ],
+      "imageSource": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png",
+      "unresolved": [],
+      "uncoveredTargets": [],
+      "textEn": "Inside the cabin, a passenger opens an overhead bin with luggage inside. In business class, the seats are wide and comfortable. A traveler eats a meal from a plate, while another seat holds a pillow and a blanket. Behind a curtain, economy class has narrow seats arranged in rows. One flight attendant serves a tray to a passenger beside a cart. The cart holds water, juice, and more meals. Another flight attendant pours juice into a cup. A passenger wears headphones and drinks from his cup. A magazine sits in a pocket below a screen. Clouds fill the view through each window, and the wing and engine are outside the cabin.",
+      "textZh": "在機艙內，一位乘客打開上方放著行李的行李艙。商務艙的座位寬敞又舒適。一位旅客吃著盤中的餐點，另一張座位上放著枕頭與毯子。隔簾後方的經濟艙，較窄的座椅一排排排列。一位空服員在餐車旁，將托盤遞給乘客。餐車上放著水、果汁與更多餐點。另一位空服員把果汁倒進杯子。一位乘客戴著耳機，用杯子喝飲料。螢幕下方的口袋裡放著一本雜誌。透過窗戶可以看見雲，機翼與引擎則位於機艙外。",
+      "mappingStatus": "offline-span-and-coverage-checked-production-unchecked"
+    }
+  ],
+  "canonicalSourceSha256": "158cc627f2a62a5fb0c81cd33f33c7d360665c0df4917c87d39b49bb82e2d6d6",
+  "plannedEntryGuids": [
+    "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+    "ab98d6ac-e941-5978-b758-cc69b760cf87",
+    "debdd36d-d229-531b-a5e5-efd7517fa4a9"
+  ],
+  "summary": {
+    "sceneCount": 4,
+    "totalSentences": 33,
+    "totalTokens": 355,
+    "totalLinks": 346,
+    "distinctUsedEntries": 163,
+    "issues": []
+  }
+}

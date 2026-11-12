@@ -1,0 +1,25 @@
+{
+  "status": "offline-materials-complete-not-production-applied",
+  "uniqueTargetWords": 92,
+  "targetWordOccurrences": 103,
+  "wordbankAssets": 720,
+  "existingRegisteredReuse": 435,
+  "registryMetadataReuse": 7,
+  "newWordbankGenerated": 278,
+  "newNarrationsGenerated": 4,
+  "newGenerationTotal": 282,
+  "newProfile": {
+    "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "voice": "Serena",
+    "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+    "lang_code": "English",
+    "response_format": "mp3"
+  },
+  "newProfileHash": "2706fd2bc0c87488",
+  "wordbankManifest": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/manifest.json",
+  "registryMetadataManifest": "docs/scenarios/preparation/travel-scenarios-proposal/evidence/registry-metadata-reuse-manifest.json",
+  "copyPlan": "docs/scenarios/preparation/travel-scenarios-proposal/media-copy-plan.json",
+  "initialPlanStatus": "0.6B default planning retained as historical evidence only; actual new recordings use1.7B",
+  "productionApplied": false,
+  "listeningReviewCompleted": false
+}

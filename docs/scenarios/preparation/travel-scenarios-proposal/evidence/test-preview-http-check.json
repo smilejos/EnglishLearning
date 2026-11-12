@@ -1,0 +1,4867 @@
+{
+  "checkedAt": "2026-11-11T18:06:35.139161+00:00",
+  "scope": "isolated-test-api-and-media-through-readonly-vite-proxy-not-browser-ui",
+  "origin": "http://127.0.0.1:5181",
+  "database": "english_learning_test",
+  "draftDetails": [
+    {
+      "key": "travel-airport-gate",
+      "targets": 26,
+      "status": "draft"
+    },
+    {
+      "key": "travel-hotel-check-in",
+      "targets": 29,
+      "status": "draft"
+    },
+    {
+      "key": "travel-ferry-trip",
+      "targets": 19,
+      "status": "draft"
+    },
+    {
+      "key": "travel-airplane-cabin",
+      "targets": 29,
+      "status": "draft"
+    }
+  ],
+  "uniqueWordCards": 92,
+  "wordbankAudioUrls": 720,
+  "mediaUrlsVerified": 728,
+  "rangeRequestsVerified": 12,
+  "readonlyPostBlocked": true,
+  "browserUICompleted": false,
+  "productionChanged": false,
+  "wordCards": [
+    {
+      "guid": "6598df4f-74d0-5f12-8de7-6043b46336ca",
+      "word": "airport",
+      "audioCount": 7
+    },
+    {
+      "guid": "55eefd94-534b-5a8b-97ed-6eef05dec561",
+      "word": "airplane",
+      "audioCount": 7
+    },
+    {
+      "guid": "89921bea-fb3a-5795-923d-7137dcac7c16",
+      "word": "gate",
+      "audioCount": 16
+    },
+    {
+      "guid": "1a126970-ab39-5697-bab2-7316a7819184",
+      "word": "ticket",
+      "audioCount": 7
+    },
+    {
+      "guid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "audioCount": 7
+    },
+    {
+      "guid": "be63fd22-30f2-55f4-88d1-5633149ddd18",
+      "word": "bag",
+      "audioCount": 7
+    },
+    {
+      "guid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "word": "window",
+      "audioCount": 10
+    },
+    {
+      "guid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+      "word": "seat",
+      "audioCount": 7
+    },
+    {
+      "guid": "2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2",
+      "word": "line",
+      "audioCount": 7
+    },
+    {
+      "guid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+      "word": "screen",
+      "audioCount": 7
+    },
+    {
+      "guid": "ca66ba9a-d268-5346-a6dc-4f413011557d",
+      "word": "clock",
+      "audioCount": 7
+    },
+    {
+      "guid": "a9faa595-0c09-57f5-b092-c3d84f41a563",
+      "word": "uniform",
+      "audioCount": 7
+    },
+    {
+      "guid": "9d321e96-b853-5882-97ed-5043682012a3",
+      "word": "busy",
+      "audioCount": 7
+    },
+    {
+      "guid": "6b8d21a1-e26b-56f1-9fd2-6713b1a97a13",
+      "word": "heavy",
+      "audioCount": 10
+    },
+    {
+      "guid": "4f4d22bb-206c-5956-92dc-bc173b400fe5",
+      "word": "empty",
+      "audioCount": 7
+    },
+    {
+      "guid": "942c6872-e7d6-5c79-9e8e-da4c736905b2",
+      "word": "ready",
+      "audioCount": 7
+    },
+    {
+      "guid": "dec06abd-726b-5825-93e6-8f495225bc26",
+      "word": "wait",
+      "audioCount": 7
+    },
+    {
+      "guid": "0f8320ac-886d-53fc-bfe0-82d2334def76",
+      "word": "carry",
+      "audioCount": 7
+    },
+    {
+      "guid": "7242d255-af15-510d-8c98-44f37f9b9ee0",
+      "word": "check",
+      "audioCount": 7
+    },
+    {
+      "guid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+      "word": "show",
+      "audioCount": 7
+    },
+    {
+      "guid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "audioCount": 8
+    },
+    {
+      "guid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "audioCount": 7
+    },
+    {
+      "guid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "audioCount": 7
+    },
+    {
+      "guid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "audioCount": 7
+    },
+    {
+      "guid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "audioCount": 16
+    },
+    {
+      "guid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "audioCount": 7
+    },
+    {
+      "guid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "audioCount": 7
+    },
+    {
+      "guid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "audioCount": 7
+    },
+    {
+      "guid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "audioCount": 7
+    },
+    {
+      "guid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "audioCount": 16
+    },
+    {
+      "guid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "audioCount": 7
+    },
+    {
+      "guid": "078d0d47-f1ea-5158-a992-e0cf22e830bd",
+      "word": "bell",
+      "audioCount": 7
+    },
+    {
+      "guid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "word": "form",
+      "audioCount": 7
+    },
+    {
+      "guid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+      "word": "pen",
+      "audioCount": 8
+    },
+    {
+      "guid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "audioCount": 10
+    },
+    {
+      "guid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "audioCount": 7
+    },
+    {
+      "guid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "audioCount": 7
+    },
+    {
+      "guid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "audioCount": 7
+    },
+    {
+      "guid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "word": "water",
+      "audioCount": 7
+    },
+    {
+      "guid": "0479b7b6-5c9e-52ad-a0ad-315383f1dae3",
+      "word": "tea",
+      "audioCount": 7
+    },
+    {
+      "guid": "f2012afd-cdba-5945-9501-b702b7f77697",
+      "word": "coffee",
+      "audioCount": 7
+    },
+    {
+      "guid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+      "word": "cup",
+      "audioCount": 7
+    },
+    {
+      "guid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "audioCount": 7
+    },
+    {
+      "guid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "audioCount": 7
+    },
+    {
+      "guid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+      "word": "towel",
+      "audioCount": 7
+    },
+    {
+      "guid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "audioCount": 7
+    },
+    {
+      "guid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+      "word": "soap",
+      "audioCount": 7
+    },
+    {
+      "guid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+      "word": "friendly",
+      "audioCount": 10
+    },
+    {
+      "guid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "audioCount": 7
+    },
+    {
+      "guid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "audioCount": 7
+    },
+    {
+      "guid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+      "word": "leave",
+      "audioCount": 10
+    },
+    {
+      "guid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+      "word": "ask",
+      "audioCount": 7
+    },
+    {
+      "guid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+      "word": "give",
+      "audioCount": 7
+    },
+    {
+      "guid": "4109ddc1-c73c-5bc6-8fb8-74d95b3b107f",
+      "word": "sign",
+      "audioCount": 7
+    },
+    {
+      "guid": "96cf64be-8c0c-5c98-be51-5c7390022225",
+      "word": "ship",
+      "audioCount": 7
+    },
+    {
+      "guid": "b3f83a04-74e9-5f11-bbc0-f0077de4503f",
+      "word": "boat",
+      "audioCount": 8
+    },
+    {
+      "guid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "audioCount": 7
+    },
+    {
+      "guid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "audioCount": 7
+    },
+    {
+      "guid": "8dc4dce9-961b-5e4d-a918-0697b883bb57",
+      "word": "sea",
+      "audioCount": 7
+    },
+    {
+      "guid": "2f1775be-7a7b-5b14-bd7f-ba4680753a57",
+      "word": "island",
+      "audioCount": 16
+    },
+    {
+      "guid": "b1140533-37c0-5cc3-9a64-63d17ad3b171",
+      "word": "wave",
+      "audioCount": 7
+    },
+    {
+      "guid": "cc4761b9-093c-5995-8370-13c594a385f4",
+      "word": "rope",
+      "audioCount": 7
+    },
+    {
+      "guid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "word": "flag",
+      "audioCount": 7
+    },
+    {
+      "guid": "d82e9391-94d2-5384-89e4-2b674f37e41a",
+      "word": "bench",
+      "audioCount": 7
+    },
+    {
+      "guid": "ac615d17-79b1-5d3b-a406-80e798f57c9f",
+      "word": "sunny",
+      "audioCount": 7
+    },
+    {
+      "guid": "65fef98d-c94b-5d64-aebc-d886b2c9779c",
+      "word": "windy",
+      "audioCount": 7
+    },
+    {
+      "guid": "8c673a17-80ef-5081-b2ac-c59e07b86e44",
+      "word": "large",
+      "audioCount": 7
+    },
+    {
+      "guid": "e58393a2-bf7e-5095-9a69-271db58d9bae",
+      "word": "sail",
+      "audioCount": 7
+    },
+    {
+      "guid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+      "word": "sit",
+      "audioCount": 8
+    },
+    {
+      "guid": "954342d3-d873-596f-9763-1385be49c458",
+      "word": "hold",
+      "audioCount": 7
+    },
+    {
+      "guid": "bfb9abd8-8bfe-54d6-a8cf-0912b81263db",
+      "word": "watch",
+      "audioCount": 7
+    },
+    {
+      "guid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "audioCount": 7
+    },
+    {
+      "guid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "audioCount": 10
+    },
+    {
+      "guid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "audioCount": 7
+    },
+    {
+      "guid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+      "word": "meal",
+      "audioCount": 7
+    },
+    {
+      "guid": "da59f650-66c8-5d96-a95d-81722978e727",
+      "word": "tray",
+      "audioCount": 7
+    },
+    {
+      "guid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "audioCount": 10
+    },
+    {
+      "guid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "audioCount": 10
+    },
+    {
+      "guid": "70818df1-ee97-590f-8dbb-7da3592f99d1",
+      "word": "cloud",
+      "audioCount": 7
+    },
+    {
+      "guid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "audioCount": 7
+    },
+    {
+      "guid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "audioCount": 13
+    },
+    {
+      "guid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "audioCount": 7
+    },
+    {
+      "guid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "audioCount": 7
+    },
+    {
+      "guid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+      "word": "juice",
+      "audioCount": 7
+    },
+    {
+      "guid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+      "word": "plate",
+      "audioCount": 13
+    },
+    {
+      "guid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+      "word": "open",
+      "audioCount": 7
+    },
+    {
+      "guid": "f7119668-da06-5011-bad5-08f375197a28",
+      "word": "serve",
+      "audioCount": 7
+    },
+    {
+      "guid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+      "word": "eat",
+      "audioCount": 7
+    },
+    {
+      "guid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+      "word": "drink",
+      "audioCount": 7
+    },
+    {
+      "guid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+      "word": "comfortable",
+      "audioCount": 7
+    },
+    {
+      "guid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+      "word": "wide",
+      "audioCount": 7
+    },
+    {
+      "guid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "audioCount": 7
+    }
+  ],
+  "media": [
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6598df4f-74d0-5f12-8de7-6043b46336ca.mp3",
+      "bytes": 21548,
+      "sha256": "9a26a66dd37249486b2ad5ce5022003833befa42592f9113a60f2ae82281e2df",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f058db1f-487c-5a5f-b867-8d04f785aa43.mp3",
+      "bytes": 146732,
+      "sha256": "cec10e7ddff27b003ed335787778be87c0de376cfe18b8fd02268958af1c538c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/99289dd5-e60b-5278-aa3a-65730e697d0b.mp3",
+      "bytes": 222380,
+      "sha256": "11be54bab3ad5cc8d4050f866dd07e4d7b244768a95d62bf71d6e2e3e47385c0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/54475e88-9a9c-523c-be1c-7c75f47e4aad.mp3",
+      "bytes": 210860,
+      "sha256": "ff9425a05c8b6710e1cea2984ae30dd11526cd52605c79d2a100adfe0a9ce96e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/76fcdec7-3880-51a0-91fe-b512d792ad4d.mp3",
+      "bytes": 69932,
+      "sha256": "cb93d0422490d96c4b2fba90719b0ac8c576e7e97399642514e93a3a09d882f5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a32d2ae4-459f-5a67-b38e-acebf2c40b03.mp3",
+      "bytes": 67628,
+      "sha256": "3a989b7a45413d18d14535b38b4863224bce5b925e7d6cf40b41cd5b94ac031a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0c90b1eb-c522-5b6f-8d60-a7f19c5429fa.mp3",
+      "bytes": 94508,
+      "sha256": "3da6ed81f220ca5c6c32a6e3ab26f013e0536213b556708900d0a21506529850",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/55eefd94-534b-5a8b-97ed-6eef05dec561.mp3",
+      "bytes": 35372,
+      "sha256": "815e5a00724c0e23a5bae9c4677a91fa7d7db5b2124af4d98fb91c2855830bbe",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/89bb0990-6a16-5bc2-b829-78eb9dea21b9.mp3",
+      "bytes": 157100,
+      "sha256": "d3acdc70703f795b0fab4869e3e58dc5d59616b02d4e894bf1f098d079c273c4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ed0a2020-8452-5a43-b7d7-d786213e344a.mp3",
+      "bytes": 164780,
+      "sha256": "f8b1dc6fdb738d07cb57846f31443abbd3be9a3653a05e47d25695afe3d0287b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/59a3c74f-fe5c-505a-8b86-cfd06d69da27.mp3",
+      "bytes": 200492,
+      "sha256": "2fe5cf0da13792e3bf7d8120735a9da055a1a4f4c2713406607efa91decf2f74",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/fedeaadd-7f20-5e7f-8185-ba2d34f41a71.mp3",
+      "bytes": 52268,
+      "sha256": "3e6a6a26c7239d140f97e40b4eda341e0d0da4129bc5df5247ebeced0c3c3fa2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b7ab1f72-5ac9-5b88-b8ce-758502cb7d5c.mp3",
+      "bytes": 75308,
+      "sha256": "8948c8e0e8d9cf09fce926e9c6b2ad6c0949a43a9a673e63bfe1edcd8caafeb8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/80629689-c123-5fd5-adb5-e382be52e682.mp3",
+      "bytes": 122540,
+      "sha256": "e2da9406a507abaf7b34d9068f2c8ba3575a7e1497982bc6155683cb98fa8f84",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/89921bea-fb3a-5795-923d-7137dcac7c16.mp3",
+      "bytes": 21548,
+      "sha256": "23fe75eba5148ef76f6410dfda145f03d8f829d779a4595592ac18faaeba6b35",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1b3aaec2-a9bb-5931-a62b-d484af61182f.mp3",
+      "bytes": 202028,
+      "sha256": "1edc410049b84df81de8fa49e0a54be7931ffb6d279a728c8bba399a8caf0e32",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/afdd5187-0f6f-54fa-a243-486a99a641ef.mp3",
+      "bytes": 176300,
+      "sha256": "ed2b2b8df1ddf63d73dac9fc808dd1b8ff2bd76e826f1640c1e21a76db27c3cd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d0402920-22c1-5d13-b5b8-5b1368b9ff20.mp3",
+      "bytes": 163628,
+      "sha256": "1d9cefba6133b804d402c3948dd73838e5f8497800afac9dd7b8d64bf8d221e6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/08a7eb2b-3503-5df9-82d3-9a1d633e5c9f.mp3",
+      "bytes": 56108,
+      "sha256": "7dd47c4580c0a7d214e47be29a0850f6a4dd94e2caf562262b5a21cc365317f0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/42e8e841-7516-5ac3-b1db-9b8c156b63f5.mp3",
+      "bytes": 118700,
+      "sha256": "82afade944a3a4ae20309fe061c7ab69ec0d3c196f8b56328bc58b0363c1b492",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d7cb086d-9309-5842-9db4-d9e490924839.mp3",
+      "bytes": 90668,
+      "sha256": "07702aab575f5436b6f8d9d835a70c6acd39f181b335198bc8cc32b4a0ace18f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/163d1bc8-b6cd-5307-ae8c-360675e2fd4e.mp3",
+      "bytes": 80300,
+      "sha256": "6ea1c89440b6615f9a8505ee91cdf459c9ad74a95c48b3a36af7c0eb7f2330dc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/62ba894f-3537-5221-a49f-0787aef8a4fa.mp3",
+      "bytes": 63788,
+      "sha256": "ce28ea881ead1ceceb0fe3f270eed33503468b5a65a7db675ec787db9b7ae1a0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9ba2f3dd-10ee-5502-9aff-e8c4ea9e887d.mp3",
+      "bytes": 87980,
+      "sha256": "3033ffd4a632ffb8e6e673549da223cd33c1b97c6f8a6b329dd046b9b39047a3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/05517fc6-95a1-5732-bcd9-9ee156cef7fe.mp3",
+      "bytes": 108332,
+      "sha256": "846b82c7d8f3e603205f6d8570d0ad7dfe4dbfb7c400ca81859c37f6ddac85e1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/7e777024-e5b3-5cd1-9355-8f3e97ef0503.mp3",
+      "bytes": 113708,
+      "sha256": "40d6f8ce78b76228deb0c4989513939d6b8e88ae8345fc49a05db5cb90dff816",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9934fba2-71d2-5c20-a6ff-52c4791f11c0.mp3",
+      "bytes": 121388,
+      "sha256": "8fbf2c0f239c944464c16e127d4b31f9d2556f36824904c9a1992d0e86aff966",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8fb9fcdc-e6ac-5f71-b7a6-d9beeb5bdea4.mp3",
+      "bytes": 142892,
+      "sha256": "b1fcdfbc079c10fc91882bd750f3f0e6884fb4c7c57ede4df37a0fbfa6e490d7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/316c0240-85e8-58e1-95af-f027867e39dc.mp3",
+      "bytes": 126380,
+      "sha256": "af00ec36046c6cf1ea7cf8d33886893de7fdc89c298b27ce6829432f3bfecffa",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/216e5e5d-4200-54c2-9a38-53f228259361.mp3",
+      "bytes": 152108,
+      "sha256": "b1199cb44f8c129660ce667d8fccd7982dde620f7d9fe142d029a573bfa07284",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1a126970-ab39-5697-bab2-7316a7819184.mp3",
+      "bytes": 22700,
+      "sha256": "828ad9e44c7a32ab6bdc885f400436a29e2eeb86cc975fcf7d66bcbf21c09799",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8996add9-5096-55bb-9c26-7c791bddfa7f.mp3",
+      "bytes": 183980,
+      "sha256": "4e0f5e2adb6d4a5eb41fcf793fc2ddb7ce3560c743574d97a6d6e821afbfa57c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/309c8dc6-b520-56ac-b1c5-5ab9a6bf4618.mp3",
+      "bytes": 142892,
+      "sha256": "0ecafd2f32122d04479affb38b6a386313132a4b44078f6907bbaf7aba6a641b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a63c389e-5d25-54b3-b1f3-41158fea7bf9.mp3",
+      "bytes": 114860,
+      "sha256": "2a4226784117110fad36e1b0103ecc7999757467c316675ce44e74e092b96b15",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/18b2356b-0a32-5604-a977-5e038d16f5cb.mp3",
+      "bytes": 43052,
+      "sha256": "ddc2a780c70c6ab9b4a854d806de23ade0995bd22b89d147f3b0d371b9914299",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f5fba4f2-aef0-5b98-89cb-7f13e0726b0f.mp3",
+      "bytes": 102188,
+      "sha256": "8de1efc71f993694662a3f18ff2ec94587ca9115bc919a91dac8622a315d53d1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/87e9a784-c1fe-59bb-af3e-566260f4e59b.mp3",
+      "bytes": 80300,
+      "sha256": "2be6c577905b9d2712c0e04f84c9276d4dad2af07cb9073acfab184792e44b20",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/be63fd22-30f2-55f4-88d1-5633149ddd18.mp3",
+      "bytes": 18860,
+      "sha256": "6d974ef55dde6dbe298d9af273802877af3d5b63652b5217d2d09b11e5784570",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a90628cc-49f2-5838-a127-172d3dc5a67c.mp3",
+      "bytes": 158252,
+      "sha256": "fe42e948955d2e9e687e106bd3bee45a181523205a3f04b1aa654d249eaf3e06",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5e60c3bc-486e-5ec2-baf7-09ad67bec296.mp3",
+      "bytes": 199340,
+      "sha256": "1b934a950bb2e1ea2f52ae597ac13207d4b8f0bb481cf8e5569e111f036c382a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3fda7791-e9b2-5a7c-91e3-bc84854fdfc3.mp3",
+      "bytes": 222380,
+      "sha256": "f46bd3460932fd70eede5737326607a9507b9ac46ee8bdca6d98b4d56604087e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/121a39b8-9f91-56fd-bbe6-8e9d74e9c61c.mp3",
+      "bytes": 40748,
+      "sha256": "2339a53d896f35e0c5391e514201cf0e81461a80aeb50187842c0766872df385",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/565177df-d29e-5dff-8ecb-096daa6fbce7.mp3",
+      "bytes": 53420,
+      "sha256": "f0852811fdd62d3f7a8533a023868c96bd2a6f34c2f38c8df9e3d059c8ba2998",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8a51b645-cfda-5194-ade8-46d6f8cb02c5.mp3",
+      "bytes": 59948,
+      "sha256": "84ca96314f7ee2f56cfe532c677d2e46da6962fcc03abb7e451fe9a2c6fe47a1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/895fce7b-e5c4-51d8-8fa6-f8caa1f97b38.mp3",
+      "bytes": 35372,
+      "sha256": "edae9bb0e7e5a075548b3087154ac28d0ae94a4892359f134f122f150f50b0ff",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6a5dd082-b3db-522a-8197-ed60eb5a7533.mp3",
+      "bytes": 137900,
+      "sha256": "039fe02755dca4bd675e0c6becfaab649d64d6289abc3680d91062a15ad7c8e6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6a80b676-b0a0-5668-8c78-74534b82a124.mp3",
+      "bytes": 172460,
+      "sha256": "061b7aa5c741b255ed843fc78d46df07dcdb1856f197f533fe67bdcb23a7114e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e69d96ec-71ae-5442-848c-0f832a77e594.mp3",
+      "bytes": 154412,
+      "sha256": "de94860f5e78060e751eedab258a67f4a5ab4852f781283846c3e1e501bd0897",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/fdc6042c-5825-57be-a2cf-1e84aeefaccb.mp3",
+      "bytes": 52268,
+      "sha256": "f2a1e4533e282ea8ef59503d9e3cc09b13f76af47a2fa0cd0e5e5ce0e00c23b0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4c475c42-6834-5d54-b50a-1695266778e4.mp3",
+      "bytes": 69932,
+      "sha256": "28111d68f3e49f7427f6fe6dc7587b7ba0a8d8dbae84eb27ab79e572c651692e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/09ca8ae2-f6fb-5e29-b94a-bf3a376cfe0a.mp3",
+      "bytes": 80300,
+      "sha256": "6f8f1f526338ad250b588bf3b13f117e257326083ffea6fe22c48d0c5a747ffc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ef8b60c8-6c72-5d22-91af-d1562453dcae.mp3",
+      "bytes": 121388,
+      "sha256": "6b561c1bff7562ffb8daab678f5bcd5dc08f59f2692bf8063b693169186042ee",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f392fe5a-27ea-5f69-875b-68892ba233cd.mp3",
+      "bytes": 134060,
+      "sha256": "9b60c9ce98eb08b611e4d8274458b9491bfa1f9adfb926e15e5b25dc691180bc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1fcbf4a4-1154-54c1-a30e-bd378ea47a8e.mp3",
+      "bytes": 145580,
+      "sha256": "692eb6ff89425c10316de78f56fea334402d9c4a6d2827f4deb8f3b04400d661",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/accb9ef6-d6e7-52b8-a363-0ab9db325e1a.mp3",
+      "bytes": 18860,
+      "sha256": "f2d6779a905c44484da96d651ef916d8559b0df3aaafd3010f85279f7be359f7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/fa3181f3-964a-569b-b00c-9bb447fa81eb.mp3",
+      "bytes": 171308,
+      "sha256": "8d609be2796f1826f4ade9cf475d55633898bb39693d62638006eb71df18a7c8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6e6532c7-7c79-5d04-8d47-558eebcf8b5b.mp3",
+      "bytes": 150572,
+      "sha256": "9dfb16f0977e5fc8fa8bd5b2eb7a11e66e1b33a23d5152f78c9736a6a30ea676",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/850d1fc2-e5f1-5c44-bd6e-49bb7d0f2771.mp3",
+      "bytes": 142892,
+      "sha256": "76fc4e6be86b6f3b763b03442c9cf2e4c5cde41cb3d8375e45895ce70066441b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/fcafc30d-4df5-51cf-b51e-a4cf9d38e967.mp3",
+      "bytes": 61100,
+      "sha256": "fa4396f20c14b463aad1abca8551e255f81ff84720003ddc17a266e329bd5f32",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/329953ae-ef28-5805-893b-a5b958a33cc2.mp3",
+      "bytes": 91820,
+      "sha256": "36a251fd2f3a516b8a6cfdb1a8b44529e88c93426a42cb85343cc1de33736ea8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/46200614-7464-509f-87c0-7c53273f2148.mp3",
+      "bytes": 90668,
+      "sha256": "bf80d6b34b12d9d580fae1113be5e316d2b5f1368d5cb026295f76708f57bb30",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2ef3ae04-1fc7-5dd1-9642-4eb7dc49c4a2.mp3",
+      "bytes": 26540,
+      "sha256": "d2c2b8e3cac81771e762d2290c424f0f201c4576db00b15a42a679e703715587",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c7dbdf0e-89e2-586a-8a56-6518093767ec.mp3",
+      "bytes": 146732,
+      "sha256": "006c5861ce306303162d10d783a2477c940e58a36b2746152c3591c17151b69d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3d225d95-b415-5fdd-a2e2-4f213cc6dfb0.mp3",
+      "bytes": 139052,
+      "sha256": "b2975e382220b6f56081be99fd3e72717cce6810dd59ce9273f197e18a0583ec",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/da673022-0257-5a46-b4b4-a77403da52ef.mp3",
+      "bytes": 146732,
+      "sha256": "c010c53f74d86dd0d1baaf7c2aa1c9d30863f9922645425738b252bb13c1258f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f74cf19b-6363-511e-978f-51a57ac61840.mp3",
+      "bytes": 56108,
+      "sha256": "fae503b0a61cdb0a3c493855546e1006d8558771cc0597b7cf93c6545ed2d56d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bba63d8f-885a-58bf-8636-22e862f2f738.mp3",
+      "bytes": 95660,
+      "sha256": "4ba2b3eef3017d390ecc8e1b4990f1d0cb5859648465c8ebe5ac657a0cf47ee4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0b2efe78-3b79-5d04-a0e5-39ca3b28f4a2.mp3",
+      "bytes": 89132,
+      "sha256": "3916eaa3945a00ee8fdb2d5914ff52f1a2cf712d77ab33fd92b59a1bf43c36e7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8ed10464-d75f-5b84-853d-c464b6d069c7.mp3",
+      "bytes": 30380,
+      "sha256": "5360ea1ec7ae3744f8d6ed63ee0482a54a020d3c8fa3dbc5b1c9710cc9bae1b5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/944d871e-7daf-5872-8a37-4ff689d35334.mp3",
+      "bytes": 246572,
+      "sha256": "bf9a785143663432c4fe3e8de5555b3a250990845f69789680a3cd5eb5bec051",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/00d7d8df-4398-5708-b5e3-d7e30e0da36e.mp3",
+      "bytes": 192812,
+      "sha256": "a1db41050f37a3368e70e3b1f1344f4610f2e74b3e564c102579d52934f70e8c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c0e02067-41a6-504f-978a-e3867f564ba8.mp3",
+      "bytes": 221228,
+      "sha256": "fe4566501c8be8ae1aa06f81b3ceb55b8c02a4b7d8f8d8d3a531ea2bea0c4045",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5d2af271-ec58-53de-84b3-39377266de16.mp3",
+      "bytes": 71468,
+      "sha256": "501e7cc4ca4083c8f68d8ad1ff57a713dc63acc17eca18179fcdafc04e3aa1e0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e140b1ce-0500-5acc-821d-dc6f4ea8f1bd.mp3",
+      "bytes": 103340,
+      "sha256": "ca0ee9db7a4f1618d6ba7b3e31dd290df131cb222eecabe6f559cfa19c71d9fb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/01017aa1-a822-5937-9611-cae257e828ec.mp3",
+      "bytes": 84140,
+      "sha256": "8b79468c6fe6b11f88e95de6a259c9f7111e0b2a8ec0a2b261a88d26a952276e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ca66ba9a-d268-5346-a6dc-4f413011557d.mp3",
+      "bytes": 39212,
+      "sha256": "35f56a5e34ec267297a17f85688e3dc195ca12096b3557143ed74a4185783b6b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ec5400f1-aecf-501c-937c-9ad6e3ffb078.mp3",
+      "bytes": 168620,
+      "sha256": "f3aa0f3cc8becb05565dc9881e58758b6a99a018bd31b747c5c1ac8163c09ceb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ab63dd7a-e988-5852-92e5-5e7aba66990d.mp3",
+      "bytes": 183980,
+      "sha256": "67195948b11105bc93e65dd6f2a4729db26657f038f05521cddfcb0e38dece50",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b2b98b8f-42f9-56f0-bea3-4913bc9bf0ee.mp3",
+      "bytes": 195500,
+      "sha256": "ad2d2391338d2286ab504ca077e2d4c4b9a16c2aa960b6d50de4fdde505728e7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5c8748e2-8bd9-5a07-a676-cf4af0ddb6d7.mp3",
+      "bytes": 80300,
+      "sha256": "defb571917cd92e3384f7e42b4e7d59ef9bca7d756437ef6f978cf7b76c60f68",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cfcf37c5-ebfd-59bc-a22f-959b37a3fb0c.mp3",
+      "bytes": 72620,
+      "sha256": "bfca7239b80fe1d5ae3029dee6755406b5d2b7515c98a39a300c3963dff1ae51",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9da05b17-2f45-5fbc-a3ab-d0f3dc879712.mp3",
+      "bytes": 58412,
+      "sha256": "f6d123ed6c735667924a277135761440f13de593239760c3c6b6b05d7d668be0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a9faa595-0c09-57f5-b092-c3d84f41a563.mp3",
+      "bytes": 25388,
+      "sha256": "80c0a1f579b7d3e3c8dddf3510925d8090dc68593c5501e1ab29ed8b4a53d78b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/eef30390-8054-5a3d-a3c7-c2dfa79d52cb.mp3",
+      "bytes": 171308,
+      "sha256": "d241526a00c5ac95ba9be62642c530a0576f5169abaf26d65353276bef5cc7a6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/52fec84f-59a7-5696-b17c-ad317ce0dd59.mp3",
+      "bytes": 148268,
+      "sha256": "9e5d83c77ca384fda0d43afe8fe777d125d0b248a1f9ca554d10b936cb19285a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cb2049c8-0da7-5446-a9b7-e31068420058.mp3",
+      "bytes": 163628,
+      "sha256": "bc89dcdb5db2fb662d3861b2c25a612dd7d3f101392ddf985beaa9a49ed020d5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/16baf4b3-85c6-5d4b-8395-59bf156faab7.mp3",
+      "bytes": 48428,
+      "sha256": "9a272ed92a39cd1a4e9975e2743777c3c464aed55eb7f2f3269498fcf2dfece4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/246846cf-fdd3-59c9-b828-31df248f45dd.mp3",
+      "bytes": 49580,
+      "sha256": "8587bfd89e614ca9147c8dbbce767d974a7f07d68bcfbd224b9543f80c46bd42",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c2c7ed36-01ad-5894-8507-eccbab1d9dc6.mp3",
+      "bytes": 52268,
+      "sha256": "f3e833c1c56f6ac25fdb5b91eea39f84aa9b5c744fe9621a07f75299d2daf70e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9d321e96-b853-5882-97ed-5043682012a3.mp3",
+      "bytes": 23852,
+      "sha256": "34d825f08086f4893dfd4bba0abce86964245dd6254a10b874ecf7f3dc441c1b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2dffab3c-a0bc-5adb-93d1-75880408b510.mp3",
+      "bytes": 168620,
+      "sha256": "769001840b7f47419d6daf79edb5a7752780b3d33fd892ac2f35cad67cb4f016",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/30c7de82-4218-5bcc-abe8-89c3c2712d3e.mp3",
+      "bytes": 198188,
+      "sha256": "dd9d477cce9ed012c9f4cf854fea633c00658cbdad8bad0937c71913e67a2c72",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ed3ebba6-e4cd-59b4-902d-c99ed7835092.mp3",
+      "bytes": 181292,
+      "sha256": "ea0134e49ac5f599d7fd1ec715cca31e267e55f46baf36f27efc4124aa978e5a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a7b9a599-9c84-5211-a171-4e45a30e8c39.mp3",
+      "bytes": 67628,
+      "sha256": "455ad660aa279e8b4d2fc8005d5469e8e44abf9297b13a57d741b2c89beebc2e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6666780c-25b1-57d4-bd18-ae3a0263a1fe.mp3",
+      "bytes": 80300,
+      "sha256": "ec03e3e5baad63332fec39724b91d1f0e2d97a30f11a65c7ec9f510b2ac63341",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6fdf7fa0-039f-5536-965b-ad137e538e87.mp3",
+      "bytes": 72620,
+      "sha256": "1b89e05fb39eec259c76c4b6b7ff86c8869525b0c3beb7ea0d7f09c120f26245",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6b8d21a1-e26b-56f1-9fd2-6713b1a97a13.mp3",
+      "bytes": 18860,
+      "sha256": "29090bd71ea3c38228c7be24b9e2de86445faf2e13b9ef6b5d3f0f1308a234ff",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/27e88e52-3909-5600-a354-8ae89f0b0057.mp3",
+      "bytes": 181292,
+      "sha256": "04111c0a7a97435cf11626c143ebfd426bf8bedd798432e0d18722cbeb0a867d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e8ed29a1-f21d-521d-99e1-36fe9fab89d7.mp3",
+      "bytes": 165932,
+      "sha256": "19377af17aae08c43f67d16c6dfb06fdcac684e37ada7f704f41445e9e465d2a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/54fa0565-6812-5e82-90f4-e41efba68ce2.mp3",
+      "bytes": 187820,
+      "sha256": "4466f657954c6b9a0a0e347fe74de20a14d500f6a2534c5d3aaa451016fffc03",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f087002b-29ae-5f25-8b4c-4abf31dfedc2.mp3",
+      "bytes": 52268,
+      "sha256": "81589f14fd3d773399c8d5d86d0a9371d2e9b1c612f437e7f94c620de06b4297",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4aae329e-72aa-526c-8f8b-22bb2a6a5baf.mp3",
+      "bytes": 80300,
+      "sha256": "a5eec0cc15cdb1a47a694a3a21504a6e091ba2d3c56ae97bb45eda7793355fab",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e54f0fcc-36b9-58f1-a78b-629691e48c6c.mp3",
+      "bytes": 79148,
+      "sha256": "d1c4800c1a0489db1339ec7c1bee9c0086b0290d743fde4643256be80e3d6bca",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/df98bae1-a9f0-502d-9a95-ee5503f0f343.mp3",
+      "bytes": 63788,
+      "sha256": "7b180e8e3c65017113e927d12afb8478588811ca6e604b62b1e89af070b9138c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/79ae623f-9073-501d-9f16-90fb63c797c0.mp3",
+      "bytes": 100652,
+      "sha256": "c875f0e4c34de682af86b7ad736b259dbfcf4286b62e929bb70ce305f9914fa8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/dabf14d0-b42f-5995-9fa1-a61ec46aa947.mp3",
+      "bytes": 118700,
+      "sha256": "40b28ccea6f636f70786d52d69819ad7d84cabc1f51cc68f4a4f4c73324d827e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4f4d22bb-206c-5956-92dc-bc173b400fe5.mp3",
+      "bytes": 123692,
+      "sha256": "e9890e3f295b58aa2bb387b1df873d97e438ea3927a43c8a546c3e9ba6785005",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/62ef4ed7-032a-504f-a296-2b04d2cd99e2.mp3",
+      "bytes": 136748,
+      "sha256": "c2c6d3f12b84f69ac5b6a7ecfc89ae4f90bb57fb49f7c09b2ea72f346142445c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2da67071-6a1a-54f7-bc1c-f66bc8ffe1ca.mp3",
+      "bytes": 132908,
+      "sha256": "99419cb7d3afbf63f80117d5028bcae2de61c3678cbddb4147f785f59587a689",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9167b85c-b9d3-5e08-b4d5-ae005776316f.mp3",
+      "bytes": 148268,
+      "sha256": "7e14a4e9b20f0d60cdd04d2d967e904276d9aa45da521ec507032933f4edefc9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8225e328-a13b-5ae5-a2e0-0baee15aa987.mp3",
+      "bytes": 68780,
+      "sha256": "481437215c614d5fe22010a13106aa92f418c9cb3d8853f677ebbdc888689148",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1dd86e51-27b7-5c16-b7db-31c9e349d125.mp3",
+      "bytes": 73772,
+      "sha256": "930a0513dcdef59a07045863a61f4971559a2add0cbe9b0db8950e07ae678159",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/530e70c7-0966-5eca-9d2f-350cf0b9343f.mp3",
+      "bytes": 98348,
+      "sha256": "ff71595d9b4cb9d35cdd99daeb173e59a4a1835479af822b62c6ec7debfcc8fe",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/942c6872-e7d6-5c79-9e8e-da4c736905b2.mp3",
+      "bytes": 17708,
+      "sha256": "7da79eabb6286b9bc50467bc36a900b61548d1d3fa6b356722fdf175b39b2686",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1dc83d42-502c-5b30-ba63-c8a7236f6f74.mp3",
+      "bytes": 167468,
+      "sha256": "1f7ed26ae82bf4129b96906e46a40d3e87d0e47521be44e73ea2294c7a495407",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e6245e4c-ce41-509d-bfa7-1eb39bdf04fb.mp3",
+      "bytes": 202028,
+      "sha256": "b77355594874f2cede937f0e7d4b9c2f7e0d961d7e6952a4658373a34d5b888a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2625c679-df6b-5f32-9d8a-21f2df2b90dd.mp3",
+      "bytes": 173612,
+      "sha256": "97489c2aec35fdc55177c3a103118eee6a6f002f00eb907dee0e1e659a2f035d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2009abc8-5567-5a8c-a0c0-b08950acb4fb.mp3",
+      "bytes": 52268,
+      "sha256": "21c4b425378b23745cacaa59a7f560c39111f316e24cbabea45850c512c968a5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/66924562-4de8-5295-966f-f8e6fdbbca22.mp3",
+      "bytes": 82988,
+      "sha256": "fb357cb1332eb7b662404e4fb7af300830f2e6c3bd040acfd8556b1ba0ee1327",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3d1a15a8-289e-5dde-9c8e-1a9e928f44ee.mp3",
+      "bytes": 86828,
+      "sha256": "e65c7f4bb4fca39594db20cba5813739e5bc6ad06abbe8b4181c686e263197d9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/dec06abd-726b-5825-93e6-8f495225bc26.mp3",
+      "bytes": 18860,
+      "sha256": "4f6c871b6e671a27bb92ae31ff864faddbb4415f188e444ecb1c8b4865610e49",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/853ece2d-a74d-5623-935b-c405383aca02.mp3",
+      "bytes": 196652,
+      "sha256": "2bf67b841f7fc58ef77562aaa4e5a5fcf87a5789081c6207c5c001ae5296bb36",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e4e54a16-8d20-5f7a-9ea1-403a085c6934.mp3",
+      "bytes": 137900,
+      "sha256": "a2fa52cc9d1d3dfd9ab45fd8a95bb299e1057a5f1b02443b33dea2dd63239196",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5e4d21d6-24a3-5a30-a651-b6aba925af9c.mp3",
+      "bytes": 144428,
+      "sha256": "9bebdbd101990e013331f37fd792360bb6a12ebbbf1d191660b54deb59aa33d2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1c43ac78-e752-5ee6-be7f-b5030c75a56d.mp3",
+      "bytes": 59948,
+      "sha256": "1541969e1afc602bc73eba9201b0a764ccebd78f172d47c1594f20cae342cee3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/dea29375-bcaf-5298-90fa-d7d34e7c2297.mp3",
+      "bytes": 72620,
+      "sha256": "eca385c1c914f290632eade7e275b418871202625f119492729df10f0a878ad6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/82609cb5-9128-5bf4-ae9e-42b90d075a34.mp3",
+      "bytes": 80300,
+      "sha256": "b73ee8b5c2d0292f08b898a8f65a8d48699085d2efc6f3ea4143143c05619169",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0f8320ac-886d-53fc-bfe0-82d2334def76.mp3",
+      "bytes": 26540,
+      "sha256": "de1ed4d6f568fc436a90fcb1f15a2906c6441c33ad4b2be861598d3ccf94112d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2cd8c2d7-2f0a-5337-ae23-4198aeaa8fdd.mp3",
+      "bytes": 185132,
+      "sha256": "262baf3cc9057f7176f26aa6b4e76078c6d23ff7aecbdb36878cd2fb176a7aff",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f788d67c-0e58-54cb-a5a0-75bb6984c1a8.mp3",
+      "bytes": 233900,
+      "sha256": "d34603f0366ef45cabea2f3297e46468a3d344c5bc7de43b647cf087f6b8cec5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9afd04b0-edd1-5f23-b2c7-4265f7742645.mp3",
+      "bytes": 204332,
+      "sha256": "6c943e437a1aa9c28627ddb8a319ea207b6c743dc664a85ac3be7a9b11cf7103",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d92565a6-10cd-5c66-8519-0698c2aa1ead.mp3",
+      "bytes": 54572,
+      "sha256": "7781ee743f1c83be4ff6b19634d217348e850e0a39f9c49c486b7d3ec64f5667",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/55c726ec-a6d5-50d6-9a29-02778723008e.mp3",
+      "bytes": 81452,
+      "sha256": "3a26ae9f3115a75efc3672d115c25c84a3d951a72b58cd5851c4d46b4d3b135f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/568757d6-ee21-584f-9bbf-5ddcf11a7842.mp3",
+      "bytes": 95660,
+      "sha256": "1bf895a7fd7c833a2463974dab1804a880234d8e37dafdf0f8d96f54005f50b9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/7242d255-af15-510d-8c98-44f37f9b9ee0.mp3",
+      "bytes": 18860,
+      "sha256": "a1dc52972623f4caa68c0051320707fd35175a9f5e3674f2d2ac742bb6a7339d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/88a640b4-830c-527c-8ee2-b8818afd6f34.mp3",
+      "bytes": 226220,
+      "sha256": "72903aa3b461bde876be3c4844a64580d4a48e05627b7a86dfe45b4d0cb2f1ed",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/398e32ce-ac2c-52d5-a56b-c27792f72c2c.mp3",
+      "bytes": 195500,
+      "sha256": "0080459a082372560d7b3df366fb8ce05d7ff0bb83a1f3671b605086cee22dc9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/83fc8769-a334-5aa5-b955-e327e7410e30.mp3",
+      "bytes": 182828,
+      "sha256": "4c0496c5bcc24c90172d5c9a5b47439f32a7ceccc4f140a14685ba268304272f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/06c50002-e863-51aa-97d9-8d8ac488e7ab.mp3",
+      "bytes": 58412,
+      "sha256": "b6fe7777d0c24b30666cd56b12663e1061e2a9d0aab02c8bd2134a6db8fbcb06",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d1df14bb-8f6c-5eb2-a367-6bcc629b3c50.mp3",
+      "bytes": 95660,
+      "sha256": "d5737dd37e25f4179f3b3892a124c7491b5ec605bb8c5284873cbfc7ecf1020a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e6b25aeb-00da-5908-a27f-a6c08575c54d.mp3",
+      "bytes": 84140,
+      "sha256": "55de280ad23a0fc614c6428dbbb5c2fde35746cc16e148c289859094c18ee808",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/667d6728-5915-53f4-a67c-5e01f1d9ff58.mp3",
+      "bytes": 22700,
+      "sha256": "243aa55a709a0fabd73893f7365633177e15074abaa840090054d207be2c2fd3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9ab0f669-a9de-5e24-864d-7a42c282a71b.mp3",
+      "bytes": 172460,
+      "sha256": "8b99f30dd16e86c5aae31b683c2cd02c08e16bd7d6d180dc30039cc697c3f9b2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1cccd358-3823-5b83-9471-22cfb5fad0e4.mp3",
+      "bytes": 192812,
+      "sha256": "1b29c8e80f378b43f7b70f897830d7f582154f871851ad8281330e27f406751a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/eb5bda0c-d9a7-550e-bf5b-956f540c9c57.mp3",
+      "bytes": 180140,
+      "sha256": "f6d2260f7ef8567c44d915bb60ce32acd46a66b40d362705ba319c40c3a3a7c0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/574d66e6-b14c-5394-b1b4-d48b05418c49.mp3",
+      "bytes": 40748,
+      "sha256": "4a2bd7eaa0e2f77afddd12a32b78d5b8059b7ccef7a6056c95c9d5bc1b10001f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/515c7824-7763-5e91-a2b8-b5ae20cee781.mp3",
+      "bytes": 41900,
+      "sha256": "14e545ea5e6f6b964e3be297fe10bdbafc7b3ebe12ed06b4d4dda586152d83a6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/fcb1c19f-48b8-5bbf-ba19-b60369814536.mp3",
+      "bytes": 52268,
+      "sha256": "d330d8bd5ca91c19facc9ebd27724c7be9cda79e87cb77ce5e0f1220e528d696",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f813645b-5fc5-5c97-b02a-684b14dd9f63.mp3",
+      "bytes": 46892,
+      "sha256": "17daf6be3da4cfe41c24eb7c8ced037bbbda1b945157945351f1cc57ae771c4b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d1321a93-e6d5-5505-8818-a9be4c6e3b7f.mp3",
+      "bytes": 40748,
+      "sha256": "23611b1d441a47a4e4d7367c0a4a77ab12fd6b57df6378524cca8f066e79bb03",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/078d0d47-f1ea-5158-a992-e0cf22e830bd.mp3",
+      "bytes": 18860,
+      "sha256": "98d3ded62176119ae4254005b8a4cbeabd8dc1a4bc9ee4b53606489661206eee",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e834c608-9ef6-5fc4-b250-9bd5d9daaeb1.mp3",
+      "bytes": 196652,
+      "sha256": "1b4296107781ffa920202704ef620481d44647af4b8e97252475f0c3fe2baf26",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5b9cae09-1f02-58b4-9fe3-07e3fe0cc831.mp3",
+      "bytes": 241580,
+      "sha256": "739dbc3aea0fef1c96efe18722748dd5e35796f9bc75b7712c24d93d7ab39a18",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2cbcf21f-51f2-5c7c-832d-b4db28bac03d.mp3",
+      "bytes": 171308,
+      "sha256": "def0db9828dc4a2ac6ab6db16044bead19ce88fc903f73eeb44cbe7cd523b28f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d871bf61-6ea8-5b51-88c7-b3a7d253dfb6.mp3",
+      "bytes": 62252,
+      "sha256": "d7eed98bfdfc3ed796c89872415a0f2ab9b3dd7649d9d945a75115929266a257",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/148df93b-d600-5f7f-ad41-1539a73609ca.mp3",
+      "bytes": 54572,
+      "sha256": "b65370b6925364a9956fa6293cb78570d195786748fa3057012c978f740b0ad9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4badf7dc-43a0-52fb-8915-1f8606bf0758.mp3",
+      "bytes": 45740,
+      "sha256": "e0dbcfcf98a62017fe2d1a91130102fd65a079fd8224516c6447650506eb6cd2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c632fa33-c99b-53e3-ad58-565f4f627aa4.mp3",
+      "bytes": 25388,
+      "sha256": "159f50349509e840a5888d1f859120f0078667fbcc00b8099006a6dc2b4cbfcf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/282b8be9-2b82-55c0-bbf7-937ac14a6ae7.mp3",
+      "bytes": 22700,
+      "sha256": "30a2968e6ac52ca6d01b9ad7848840f77c2029a008387702ed26fc61035ad464",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/63ae9381-c4fc-599e-992c-7aabb79622cc.mp3",
+      "bytes": 157100,
+      "sha256": "31f9e0bfd8eafe6015d6713eabdb2816b017bced1403698555bd3a314b27617d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b62aa2fb-53e2-58b7-b959-4a80746a7e88.mp3",
+      "bytes": 162092,
+      "sha256": "69b8310a0b97a1e7d6deb89d8d1c4733dfda2c4e8f42016024eda9f3b6536d53",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/54e1f471-5fe0-5306-97ec-d6cf54b958ee.mp3",
+      "bytes": 215852,
+      "sha256": "36eec2a435d71c91f252731570c816adfce8d80de98525f485cc31b9411a0b14",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4c6086b8-9c8c-53c4-bbb1-67cb6d7f8e94.mp3",
+      "bytes": 36908,
+      "sha256": "9ac19e91b0f9c1d94dd82dd12381fa6c2a451642603d4ac3331dccfb021733dc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bdd4969e-9493-5b85-a8ad-d0c6b477c39a.mp3",
+      "bytes": 40748,
+      "sha256": "53f8fe24f859b5a15adfbdd0742fdc04d18164ca9bdde757429cfe11ace4b2f6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/26a92bb8-2d73-5052-bb36-67fa644f476e.mp3",
+      "bytes": 62252,
+      "sha256": "79592f3e8a62bf3824b1e0088caa28dfc95a64dfea50535fb58177a5e6bc694a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/27c29950-96ce-5f17-a7e8-14f4734f14da.mp3",
+      "bytes": 33068,
+      "sha256": "93b09cb49adf06bb6131cdc17e62e195b50b28c169bfae31ec6c73cea69021a3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a77ddbc4-de0a-5abd-8ec5-e9463796a63f.mp3",
+      "bytes": 31532,
+      "sha256": "0bd619c1f76ffda032dc776bd507df27c9790d83a22652ad53e642051025b0f9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/026d7117-deb2-518b-8b8d-376f544ea036.mp3",
+      "bytes": 153260,
+      "sha256": "720b9bc926efbdd23c37b3b044570d719f174ce070d5067f5f9e822ac8481158",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6d1556c9-b510-575a-a5aa-8eb5cf763cc2.mp3",
+      "bytes": 114860,
+      "sha256": "4d7f34171a43d476035c16570a66b96657cd30a9ec36f184ac16c3f73cb71162",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2f9d3b96-4b00-5cb0-9c78-00248f273cb4.mp3",
+      "bytes": 149420,
+      "sha256": "079cd31372fd1174079d34578a8ca81e59a7e9d38e9f847688ff5a8432c35388",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a3c51504-e9df-5125-9146-956455c7e13c.mp3",
+      "bytes": 59948,
+      "sha256": "52ad72efaabd5cfe41a80163cb4ef1005356eebfe5e839863de8dbc5f2e674ec",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1cb206f1-4d2c-5d7b-8536-61bb4d78a441.mp3",
+      "bytes": 57260,
+      "sha256": "f7451b66e55592fae35e26b9fd494a6fdda9d2460996c2613846a54de06f682b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bc247f97-857d-5ea9-9839-228659d29829.mp3",
+      "bytes": 56108,
+      "sha256": "fa02a5d5a0d957fdfa9030be6de3224d4bec17e5ce20136ed3efb6461e9f2f49",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0479b7b6-5c9e-52ad-a0ad-315383f1dae3.mp3",
+      "bytes": 25388,
+      "sha256": "7aa85fed3490d353117ff478d7d398f1d311ab93ad76a50e3fad1699045e41ed",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a18b0183-0cfe-5199-bf3b-82e0a2c39e55.mp3",
+      "bytes": 164780,
+      "sha256": "b7bcf30a55e33455b1a3a99bed5e298dc13193ed846e7a83683b0b0929813c6c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/efa3c999-938f-5d39-97f3-69fb55b84383.mp3",
+      "bytes": 154412,
+      "sha256": "4940f781464259915803a1cec2fc978d354ab86999e990ccab70e9c956634847",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d1746ed4-ed39-57db-9ba7-3dc19d3693d3.mp3",
+      "bytes": 148268,
+      "sha256": "6d794ef64d25534504fe2ff3341f7ffd61e7080413cc08423a6d8bbe1db909c7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/13112307-21cd-5568-b3c3-4d0e26434659.mp3",
+      "bytes": 43052,
+      "sha256": "b8d2c2d89ae57478e0907c444f288efae716cfa26f8da4acd4a4d98e21a8ec9a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/08bed6ad-af36-520c-b549-2496a1948a0f.mp3",
+      "bytes": 61100,
+      "sha256": "892ce45adaff089ec6789c0dc266f19a81b1f25c41c91d36a310b6b6ae1a44fb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6fcb172a-a79d-57a0-8b73-bd713c389f41.mp3",
+      "bytes": 77612,
+      "sha256": "163ae882de3f0e42039bf777c26ca6fd34580d83e3033f4bd3f25937a7e4d3af",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f2012afd-cdba-5945-9501-b702b7f77697.mp3",
+      "bytes": 26540,
+      "sha256": "4262e9f522b9f132b93b037f42f22bdd1421e7585bbad99451916b65854d9dc5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3d8dbc43-8687-5877-bf5c-579857083c9b.mp3",
+      "bytes": 155948,
+      "sha256": "a8742d2ac76df37a1d1d4d854309349baed2efb3a18278dcded54369ce68bf3b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0064fe47-8fcf-5217-a9ef-31bca6b58806.mp3",
+      "bytes": 188972,
+      "sha256": "b8ffca2d033d54423c323775b303554bd38c8a7b6d23329bfb20cefe0adb87cb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/453b7b1f-21be-5a79-b34c-a1d65dd0cd83.mp3",
+      "bytes": 149420,
+      "sha256": "974a78e71de4f5e810630c07e02d7ab7c436a4c00da498608039a71809389884",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d03cd761-d92f-5bc4-997a-8ce4f5810fa8.mp3",
+      "bytes": 67628,
+      "sha256": "db30b02c0e0d5a5713af4c608d50d5ade1cc342e9df41ab5cb2867c4585ccced",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e9b7979e-2393-544e-a51d-16a3ad907e75.mp3",
+      "bytes": 67628,
+      "sha256": "8b01ce1bc4083af70ed1da8e2dace5503459ead86f98af76d9eca389107023bf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/23671f1e-2ccd-5533-b933-8eca94e3b3d6.mp3",
+      "bytes": 68780,
+      "sha256": "12cc26d7a26b7349f43afd7cafce2965cb9404c3db6a2d5a5b79575fb954cb8e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3f4ac044-15a8-5478-b999-f3cb7e8346cc.mp3",
+      "bytes": 29228,
+      "sha256": "ee18d378ab9b88490b1b6c88710d52e90d00515634561f34a8117f60a3fc3531",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3777a763-bcf9-50d9-8a9c-e89249b249ad.mp3",
+      "bytes": 177452,
+      "sha256": "078ee8d7d8efc17b3737c7a829cc6fd0a00754388cdc675d0e185ec4be20939a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b9ef9e4f-23d2-51cf-9a10-b746e823b9eb.mp3",
+      "bytes": 218540,
+      "sha256": "7becaf9529b9d38ff406ef65cd6d1d51da6afa16f385bd3a33a27846c027b905",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/711e3f49-bf86-509c-a6f1-713a9f480550.mp3",
+      "bytes": 191660,
+      "sha256": "aad1969fa2f07b96d96790c17cfd6fd1dc024348bc63e738fea94d648cd1e40e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6628bbd8-56ce-534b-a3d5-7d571892bbc9.mp3",
+      "bytes": 46892,
+      "sha256": "37bc20d2e038f9c16bfb6e223dcf7d72c58409d1aa551d222c7eaa19f24469ac",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1c170f7c-651c-5015-a946-65e9ca465562.mp3",
+      "bytes": 77612,
+      "sha256": "525845b095dc55694f280e12889c0bdac200357240eecabf79312567a1d0b2ff",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6fdd97c9-96f7-552d-9d4e-5b6fff77634f.mp3",
+      "bytes": 69932,
+      "sha256": "5861271bb9af7af13a68e72b8286a2990ad452fdcc9496868cb4a962a547b821",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6b4451ae-c5c2-5a93-bec3-f5bcf84454ba.mp3",
+      "bytes": 21548,
+      "sha256": "ab4ffa25eae64523cb8dc1d86febb9bd201b1c8af295e416f01942df86cdfcf5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/7e6ae739-9a2b-5234-9d81-a9afe1264ad9.mp3",
+      "bytes": 145580,
+      "sha256": "00e5ad7b2c367951716444225d0bd4e63e5dfe805c7eebf7a7d4c767099706d4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3f4cea7d-e559-5a8f-9422-35740e7b2ae0.mp3",
+      "bytes": 149420,
+      "sha256": "7feabb485654b26ef09692841cb8e5c4c1df452817da801794db230cf497a366",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f776a0fb-4008-56b8-af11-89596c7244e2.mp3",
+      "bytes": 140588,
+      "sha256": "a802fc90686f3f3f6778fa178794f2e999db2d7476ebdb61d998c02aaa4424cd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f57c6d5c-0ecf-594c-8a2f-e5bf5bca4258.mp3",
+      "bytes": 46892,
+      "sha256": "1140a27509237a86a35c7aee453e8b93d417b0659d80168ef44a04705468499e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2212bc75-e0f5-5548-8e42-35ba6a62bfc7.mp3",
+      "bytes": 72620,
+      "sha256": "37b774f9b2588b6a59aa8e246c1cfa64a728d739a2f57d9f1d1a3a82945c354a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e7453a6b-7cd4-55e5-902c-12954e80be56.mp3",
+      "bytes": 50732,
+      "sha256": "6d33ab7438c153fe1e434ffcfd03cee4d95144ef86eeb04be02c6a32750154f5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0927b804-fc43-5b49-96dc-fc5a9019db2c.mp3",
+      "bytes": 23852,
+      "sha256": "7f532d45a105c4b8424602ef7efd9e3f6a45189d94dffc4f3207159b4be7541c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2b5e151a-d359-59e9-a6ac-d443195b4c66.mp3",
+      "bytes": 230060,
+      "sha256": "d58c52d9858ddb643f5c706109f4ef61fe8b21e6dc8b2fe824109c81422a0e37",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2013b48a-1731-5c24-a72f-3e732c0136d0.mp3",
+      "bytes": 249260,
+      "sha256": "044c8dea7a73c818deced4556ace7196288c7082def1be2d3748f7c9adeeccca",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1d47438c-5858-5bdd-be88-8fcc902c3a1b.mp3",
+      "bytes": 277292,
+      "sha256": "1cdebd0da4957cf06e622664e84da965191fabc6324dda28471976687909683a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9edf1a95-d0ce-5345-9279-0b4c6030c3e3.mp3",
+      "bytes": 61100,
+      "sha256": "b5e59f4780e50e1e26c2dd94bcb821fbe4e610123751677400ab245ae3984b10",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d4cac1b5-22fc-55c1-b04a-288190fbfa81.mp3",
+      "bytes": 68780,
+      "sha256": "89caefacc27cd204312364d4c2f93a247fef764af22a016ff114413efb2987fe",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/07fe5b67-2216-5093-ae24-82037826b5f9.mp3",
+      "bytes": 63788,
+      "sha256": "080cf0f009d94750271353640ae6602313d6f9b936dc0dd50c5e47e181890d60",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5.mp3",
+      "bytes": 20012,
+      "sha256": "9ed2d66bb1b9252274fa44d6dffd1fd6a77a9c119d213979cb5fefeeffc09586",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0f4796ab-4d4f-5210-adb7-8f2092f879d8.mp3",
+      "bytes": 227372,
+      "sha256": "56a0392a3135f07cd1f62a740295cbcad4c181cd45071c94a47412783ff8046e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d7b34d4d-a8f8-531e-8f55-1415991b8444.mp3",
+      "bytes": 175148,
+      "sha256": "0cb65b6f00a2db63c680ba520263ad0eb120d10ec3658cdb17f75e498f3a920d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/332cde16-4b90-518d-840c-13ea1496139c.mp3",
+      "bytes": 181292,
+      "sha256": "dbc7f318367693b0ccc5f45a160770617558c4c99af1217c4696b8509007e81d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2a89158a-15a6-511c-9c84-983e4754d307.mp3",
+      "bytes": 66092,
+      "sha256": "89efdb36cc2c72eed2aedb52a3ec4ded15d4a57e883e646b496126232c66d1b5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e380a2cb-228b-5484-a551-8a5d6ba6b2c4.mp3",
+      "bytes": 102188,
+      "sha256": "4ec445967718d6db4917a973dd1f4872baeb546771505c97a133b16cffdf93e2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8a42b94a-9edd-5c33-9489-7dfcf743f1e5.mp3",
+      "bytes": 102188,
+      "sha256": "d03c2d1762f6189749c47f4f162a34c79ab811729d75319f6feebca800d08acd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a2b179ab-f1d0-5311-9e7c-cc0d0685474c.mp3",
+      "bytes": 144428,
+      "sha256": "4f3b97e47adfa4dc81db5415631977054d40b2e1fbae9addd690c331e5c5839e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5ea0ebff-56f1-5ec4-b0bf-5bae8e5f52ae.mp3",
+      "bytes": 125228,
+      "sha256": "d6835e5cdd3a671539c0de3469be0fafa181bfef2aafa0f3ab436bf86b8d854d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ce01508e-73ac-5190-a247-8ef0c76cd009.mp3",
+      "bytes": 160940,
+      "sha256": "2a932379681db0cb15e0861e6e504d34b993249ba0ab2dc0ee80f32fa455b983",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8a0343b8-ec63-5130-a620-bbe27c39d368.mp3",
+      "bytes": 35372,
+      "sha256": "8dd02f5c12e4b78b1ce337fd54f5991414e33e7988123e91a539ba07c7af7521",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/92fa674d-b7be-5105-9066-6502acfecd75.mp3",
+      "bytes": 164780,
+      "sha256": "f4b411f2c4208314acb4490cebe4f66a05c88519803a92bbd4a58d37b7a5a82b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/093a455a-1b2a-5566-b344-36602e47b204.mp3",
+      "bytes": 172460,
+      "sha256": "8b17a0f9e3cdc17d36b9a71a978ae4785de7a5024ed3e7c394084c51a9fae3f1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/895eb314-9263-58e5-8575-fd381d2b1b8e.mp3",
+      "bytes": 199340,
+      "sha256": "8f2f4992b9785bb16efa42ab8890e49c8ff991c3e40be5926c68b86c60d81f1f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/92ccc8aa-5b8d-54a4-b638-e0d50ca12e38.mp3",
+      "bytes": 68780,
+      "sha256": "7a300deca096834b8bd46ea85b5b00c848d0c48dbf985571eb4434579dc419c9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4bcb708b-14bf-5287-b654-d7d7582030dd.mp3",
+      "bytes": 73772,
+      "sha256": "9ce561de86635ed31fc9e0d26e08174dab7b8edb9437e6259f886b9ab34885fd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e6775c3d-9090-5161-8aa3-7f5742b16f0b.mp3",
+      "bytes": 90668,
+      "sha256": "42fa00eac89af102ba31e6cdfd9d51bd5f1a96afdfadce1b986ef59da787e3ed",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8def92f7-f8ac-5e89-bbe3-751232179394.mp3",
+      "bytes": 121388,
+      "sha256": "25691c54aaf357200dd91631f94030735318dc8dce7b54638ef6158c5906b201",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6ee78fd3-fe1e-59b3-b17f-589595cd8788.mp3",
+      "bytes": 139052,
+      "sha256": "ba28e3c14d8cc82b7161a8244f4d60a637c84b625655b11d6e5f74d8b07535d7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1a0beb7c-6f7e-5a51-931f-d91ccb8dd4cf.mp3",
+      "bytes": 142892,
+      "sha256": "7fb1c9b13a7712353b448ee32810723b9ff198482d625356cbdeb93bedb31cdf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/03abf7fa-221b-5664-9ec5-ae00066d6ae9.mp3",
+      "bytes": 20012,
+      "sha256": "fc791ecc88e7e31a7d81a2eb1ea981e9fd882b00e460dfafff3acc45b3a1a5ca",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ad8b6ed6-0c72-5f91-898e-968ae0b9bbfa.mp3",
+      "bytes": 202028,
+      "sha256": "9725d0e284c1ed06ab49156e04a4febf351cae408b286ef102c7faf59f7730ed",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0c5142a7-08ec-5024-9a3b-7d0da38782bd.mp3",
+      "bytes": 175148,
+      "sha256": "668578a53bb4b6803739a0a1b822d5ae41a935cb5893dcfaa4e2b6840bc4b29c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/242f4718-8df8-5e4c-b858-59f5b828953a.mp3",
+      "bytes": 219692,
+      "sha256": "a6f917db6d8f8ef8530fe1bc2e5bf3ff4ea95596345881727a83f1e99ab02f79",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/858c0c1c-962d-52d0-9256-d49d10f9be66.mp3",
+      "bytes": 86828,
+      "sha256": "3b96ab6a96ee01d84f6a114befdd363baad0bb3233195226132ed66e37214e7c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2252cf09-f653-5a2f-bffd-36224c9cf940.mp3",
+      "bytes": 87980,
+      "sha256": "e67c5bef0998bd16807fe3f4add200cd0fcb49607ad8958cda4402d99f819ce5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3db4b524-abf5-502a-884a-88f26535bc72.mp3",
+      "bytes": 53420,
+      "sha256": "d2da1475fad2c9150ca6e59965d795d961989d7d10010a0eb474d30e74adaba4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c152897e-e0f7-51d2-9eea-18f032cc8802.mp3",
+      "bytes": 23852,
+      "sha256": "fdb4fc1f501ecee3a9b750c27355c1e59c78dcafbea48bc9b9df0f04e8caf126",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e05cd8e8-0d78-5fee-9cd2-c16940397434.mp3",
+      "bytes": 218540,
+      "sha256": "af8bf53b0ba4d81d20c30a0b63281ee0bc4335b6e912eb42f5de5904dbfbd9f4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4edc1dfe-f64c-553a-841e-22a8689ec35b.mp3",
+      "bytes": 212012,
+      "sha256": "041fd2010f54546e0fa3ebb9a3d418adad177594ead856cc2039e5385b8be935",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1b67705a-df3b-56fd-b58d-a373eb7a4cb4.mp3",
+      "bytes": 185132,
+      "sha256": "3e5c6bef43bb95fbbdf9622e2cf795e764b207ab3841922ccfa6ad26ae6b95df",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/298acbe2-cbe3-5781-bb8d-bf706d694a32.mp3",
+      "bytes": 50732,
+      "sha256": "24d3e91765cfdb80b9667ec2012b6d888c8a11202944d6252ebcda96850affe2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8fe4b6cf-dea0-562b-b570-6b786bbb72bb.mp3",
+      "bytes": 85292,
+      "sha256": "8919b9bf2bd42af740f4582225f79fe8888a0788bd48e9130e166a45871c84ec",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/16c20999-ace5-5a08-877c-f79df74e668b.mp3",
+      "bytes": 81452,
+      "sha256": "d7e9ea78ff909c1e55bc9f8a3098585ca701d50cf2980b164aad75dd03f175f1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4109ddc1-c73c-5bc6-8fb8-74d95b3b107f.mp3",
+      "bytes": 26540,
+      "sha256": "787c25f65ecaa816b4cb830dec329444bcbd49ad2d2a3b72347f590df8d4765f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0929e35f-104b-584e-8705-334759486aa9.mp3",
+      "bytes": 208172,
+      "sha256": "8863e7cfaccb482a738ae0a444d981cb6e0e7f4fd4eade3b06f87f07cf2fc858",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3625d219-c02f-566b-8c2c-484d7b91a379.mp3",
+      "bytes": 219692,
+      "sha256": "36341a72ffa94b9e0bea23962a9defc33b530a8c85c9a976b2409832ce0b39dc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/913dde10-00ba-5810-8db5-351018234213.mp3",
+      "bytes": 160940,
+      "sha256": "5f847343c43a156926af40a6a8bc2f67868052f6cabdff089e87e8f2da3a0e37",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ac573d70-5a6e-5136-b98a-35dffd025dc1.mp3",
+      "bytes": 57260,
+      "sha256": "2e611f2336c5096fb73311edcc40a9eb585173368d32228a6ed6aa5152219135",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2443ff7e-3cdb-50e6-ad14-75d65500a992.mp3",
+      "bytes": 66092,
+      "sha256": "b737bf7542f0ffa4a5fa9f0fdf639749cbdb8bdfdc6bef23b06c269670a20167",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b6d3f4da-7591-55a2-9f18-0e35553fe046.mp3",
+      "bytes": 77612,
+      "sha256": "801162024fa1052b7c0b61ededcdbd64cbc69c1b3cd7c5c0be7344c68e466f1c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/96cf64be-8c0c-5c98-be51-5c7390022225.mp3",
+      "bytes": 34220,
+      "sha256": "a81544332070aee45fd60d8e50aac477cb70463d4980f9c6cef6a111d17f29b9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d6a7a253-8bb2-5a05-8152-250d6fcea3a4.mp3",
+      "bytes": 158252,
+      "sha256": "b42c33de5e97bf2ca55980250bb952d3a206b9b6dbbf8041f7eb6f8aad366646",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/490c1416-f5a6-5008-8495-a788adb9ac87.mp3",
+      "bytes": 141740,
+      "sha256": "3ac6e853a6426072aeec2eaa2f586e694e9e0df12e9d687c6173bc2b71076012",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/04d903f5-8eb6-587c-9bd3-d2ca79c48a2d.mp3",
+      "bytes": 155948,
+      "sha256": "21e5fb954c3f481769763321f9f82db1f1eb3e8e0dbc71f4a9869840b42dd817",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/04c8dea5-5858-56b6-ac83-f9f0194873ae.mp3",
+      "bytes": 54572,
+      "sha256": "2611752b88b24bc4b3687df2aedbe4e00478104efc3add89d8c9d1bc62bf9e43",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/7e147dc6-6f42-5bc4-a434-bc5a211166f9.mp3",
+      "bytes": 69932,
+      "sha256": "a507325c8fc201b1b3a0b316908836ad84186fa4e1220a4126cc18318c873756",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4c1d7a95-b446-5d74-b4ea-730ead575605.mp3",
+      "bytes": 81452,
+      "sha256": "e5cb22eb641ee9d4ad6a200a6fc1bac16f19ba2080046ea87a350009609c1fba",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b3f83a04-74e9-5f11-bbc0-f0077de4503f.mp3",
+      "bytes": 23852,
+      "sha256": "e07cc3ec5383eb4418900e7d27db00701ce2a82674769a8574d0b7617eea8ade",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/22f4f6b7-d2c4-5791-9d87-c01d6ac1c19e.mp3",
+      "bytes": 214700,
+      "sha256": "8bd242104fe44f1fe44d6dfa6c5565a0bb3f424c5ac087ae04822664df20fc65",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8dd19614-3676-5688-a0b5-65000aa41d09.mp3",
+      "bytes": 185132,
+      "sha256": "248ac360ce7d0d40583e318b6491056d1d529833be9eb87e886e2bbc1d63ec92",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/62630ad8-0af1-5274-9fb1-4edde43cfec0.mp3",
+      "bytes": 160940,
+      "sha256": "02576bc4066d268f5ff7313ca83403c85f835fe8eaf50d4f160a90c4efd528c0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/05e219d5-660f-564c-9db1-444bc4ea2546.mp3",
+      "bytes": 67628,
+      "sha256": "3fd65ff9b7b25b5785b6a0ac9a4a1f08f9c183248bce9c3f918f76f15d77797d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/455d333f-a6cd-579f-b6b6-98708b718b5d.mp3",
+      "bytes": 68780,
+      "sha256": "f115d9a4bc071d3f26aac08a987e0a9d39336603ca38e1b5d442a7551b68f7fd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/63af4d0f-1a2f-5aba-86d9-e648cc5ffc1e.mp3",
+      "bytes": 71468,
+      "sha256": "78c0b38ff1a220e1283e289149259c5b447bfd2ee3e6b62dea1437834abbf01e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/249fa24a-15b1-5291-90d8-43a25779c743.mp3",
+      "bytes": 31532,
+      "sha256": "b01acdf90c0e7aa720338106ab6e4ba099507bed2d625369ee731115482fd2c8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8dc4dce9-961b-5e4d-a918-0697b883bb57.mp3",
+      "bytes": 22700,
+      "sha256": "3166b249ef90cf46a747e8f283e40f09d1b7f0251692bf6bf975d2a2fb9cb118",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/27e263c9-e32b-5c7a-8fa0-c8ea5bb7507b.mp3",
+      "bytes": 144428,
+      "sha256": "cb32d7130e9b18b26aa4a896bf880ffce06ff735cf7175bf8b0704283a16cbeb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/7d463708-888b-527d-a372-aba960894ee7.mp3",
+      "bytes": 135212,
+      "sha256": "f9663debb79d05b6f710bd9669e1c1fd765e6c82b99aa196e70ccc3daa4c8274",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/aaf2b8a5-342c-5260-9742-0db24dc91597.mp3",
+      "bytes": 131372,
+      "sha256": "c8de816b74262dc5b65ed4ad3e96f23e96fc3175ab73ce17a5e646fed950e20b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2d3118c9-c88e-5555-81ff-fe2a58277f00.mp3",
+      "bytes": 59948,
+      "sha256": "a6a5583fa522ef32813cd4eca52f07d78db05390fd3bd7c04d5a8bafa0b9c905",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6791629e-3d6d-503d-8c7c-0c8f56a331e0.mp3",
+      "bytes": 71468,
+      "sha256": "e524b52ba2a84369d866168dcc93615bd734f7b6128365acb4bd06043c922f30",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/48a76d40-1378-5459-ba0f-e438248013e8.mp3",
+      "bytes": 69932,
+      "sha256": "486e4bf1df2e5f34aa919cb4cbe31d1eceb1861c1512169888168b3fb9d9eb45",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2f1775be-7a7b-5b14-bd7f-ba4680753a57.mp3",
+      "bytes": 25388,
+      "sha256": "0ceda491cb12eeac619ea7d7621d1d3738fc78119caf77a01eb4cb8785e7a9d6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6f12448f-08b3-5bef-b9fe-d6f34572ea99.mp3",
+      "bytes": 246572,
+      "sha256": "e31709c477fb94938d35df9874a374f3748a87119b0afcb78439d6103a19798f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f81f07af-f5f2-562b-996f-8a6c6eab6d32.mp3",
+      "bytes": 175148,
+      "sha256": "1b5025ac4120dda750dd8128e44f8f415c5891a800f1b2461ec226af42a25cfd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d67f90c8-750b-538a-9c05-d63f920d7d8c.mp3",
+      "bytes": 214700,
+      "sha256": "d043975c5f7558a86c8588b10df9df432f70be6d0d5c632e0ec010646c9646fa",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/12a254dd-e3f4-5521-93f0-149c5bec899c.mp3",
+      "bytes": 82988,
+      "sha256": "0d2f3f8e1b451f45c55710ee13065bd63fef02ff6ce54ac11f9f2abbdf146427",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cd56be18-04e4-5a9b-b892-274ba314b4fc.mp3",
+      "bytes": 117548,
+      "sha256": "4f991e5fb3bd21125583da6a4f9ab9cf1f01fe9f8d5f2d9dabec8b552e6ee06a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/774b0cd8-1f6e-57ee-bc10-379b59b81fda.mp3",
+      "bytes": 82988,
+      "sha256": "91085a78b41fb2d29373e7eda45424ae49b0a318776da9b3b5a230350a22f392",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1d9565ff-9bb9-5743-aed5-50b1adb6a29a.mp3",
+      "bytes": 106028,
+      "sha256": "72a11fb990fac600cae3f45f4f5b263c5c3a8cef56a7b640e9f5b3cb0df87615",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/34e212d3-73ec-5185-a054-0410ef30a56d.mp3",
+      "bytes": 135212,
+      "sha256": "0e8503064a27b1ec3ed154da24868566f1f941fff1b29fdc3b1d67340839ac09",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e02df071-5b9e-5af2-b7d7-22de7f733ec9.mp3",
+      "bytes": 152108,
+      "sha256": "0cbe6bfcb94f70187f3daff164a08e304724ca6a041825c35a6a996ed32a7755",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a6122976-53b1-5e76-9d0f-d1ecbd04a654.mp3",
+      "bytes": 150572,
+      "sha256": "e00416ec3046b70aa1e1afab1b8183091632725c94c72afc33cc53a4fda4599e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c04b60cc-5b65-593a-b59b-cbb5bde59f74.mp3",
+      "bytes": 154412,
+      "sha256": "ec6a33191029fa3df66b18702734266a762c62b1c353110b9b57794153a7fded",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9d43b224-0913-5c37-b21d-3e4bd78a890a.mp3",
+      "bytes": 123692,
+      "sha256": "fa2e9cfe924a79a1dc5eb1a3c7eea4fdac9e750b9ddec8d8c89764557b1ef933",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/62573459-ffe5-5a92-9cbd-df866fe04d3e.mp3",
+      "bytes": 163628,
+      "sha256": "8c858c48a14a17b0b421f71576b03dac7385fabf896c7cb36059ad2daa2be392",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bc96ad22-02cb-5cc6-988b-5db62928162a.mp3",
+      "bytes": 113708,
+      "sha256": "9e31ee42105eff142ea09c6ec99a508420cd1cce8e3445011be8641303c5fbf1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a1375ef6-0331-52a8-9494-680799dbf432.mp3",
+      "bytes": 114860,
+      "sha256": "da127642d5a6e03a131a379181ff3560d87f588c98a654d8fc8acc79a725f645",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b1140533-37c0-5cc3-9a64-63d17ad3b171.mp3",
+      "bytes": 22700,
+      "sha256": "ee4225edb7d6d9b280e8ed6cfc51d23c6d090ea60b191265514db39893c1369b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cee2f3aa-7f04-57a7-afd5-707507bfbc73.mp3",
+      "bytes": 159788,
+      "sha256": "8da5244146801e78ceed72e72bae66eedf216b0194b32df0c3909f8eb9a15e2c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/95891cce-d7cf-5b6f-ba78-5f6a86669944.mp3",
+      "bytes": 160940,
+      "sha256": "8ebddce851a639b028e5c7475aca7220360e906fd6c298972c07c43039b21141",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/06d98ab8-16eb-5734-b585-69570f404f56.mp3",
+      "bytes": 204332,
+      "sha256": "a1a968206b8ab6a3e781bf55ecd144fc8fe227fb56e6ce2508ce5ef0f3af61ce",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/963e5d4d-4a4d-5eb0-80ce-d4a324b8432c.mp3",
+      "bytes": 152108,
+      "sha256": "d875b9711afc51ad7f2b1bdd99673f7b774e3f9999dc85f9d8724a474887d278",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8336ba30-60b2-534e-adf3-e642a7081eb3.mp3",
+      "bytes": 137900,
+      "sha256": "9ae74d189058555db9fe7c4ea0f5c50d4abac9e83e03e1f1667d0611cb90f727",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cee193ed-d788-5d45-928e-fa52faace01f.mp3",
+      "bytes": 140588,
+      "sha256": "6df101ecd7541cfd1d50405e011998241336d9f8b46baf82351d980cdc79df78",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cc4761b9-093c-5995-8370-13c594a385f4.mp3",
+      "bytes": 16172,
+      "sha256": "2662ea67d921af6ddfc0bce2175156c861d95fb5040a3e160e38e2ec95f24454",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3632e444-4809-5209-b696-ad87e5ad0b1b.mp3",
+      "bytes": 144428,
+      "sha256": "d4c6cf85093ce1381eb43209fb909440a6268c1f47e579b4e245e8acb57a4c9c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/43efcafa-03db-55e9-a17d-2d8f98adab5d.mp3",
+      "bytes": 181292,
+      "sha256": "58a656dfe37440ee2a080a76982196ce1b6b74ce4c864dfe7259d893f91f1a60",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/64d3ade6-8f24-5367-abbd-c6631a524ba7.mp3",
+      "bytes": 172460,
+      "sha256": "6d40634c6501fc20ce8c3159f6125a49c2dd8507bf17e1652685dc2ffcfbd6dd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/377f2cff-ac9f-5110-9c64-767aea0d8aab.mp3",
+      "bytes": 43052,
+      "sha256": "e613adb3213f263fe203edb1f7455306b3223de056ee574f1cfca9f5d9e6dcb3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/988bda30-00a1-523a-8950-ea0f802630e9.mp3",
+      "bytes": 56108,
+      "sha256": "bb768657a2674c3e15fc0330d25db211d869d4aa3c227e23ccf54c4167ad2348",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e78968b0-e147-533a-8a3a-8e01156fd935.mp3",
+      "bytes": 46892,
+      "sha256": "ca3400ea1b90c0e50334b4a1d9f6cb6605563b407a6a74a36352bdb89eb78983",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8128f3ea-350f-5cff-9e35-71603d504df7.mp3",
+      "bytes": 21548,
+      "sha256": "5b858bc41afed5e7681e5ffafcf292654225ac8d93e1397040949280f379fa95",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d82e9391-94d2-5384-89e4-2b674f37e41a.mp3",
+      "bytes": 23852,
+      "sha256": "9657e17a83f18c09d3d34e623eafffa36ffda72ea7c011c241b8692bb83f4a64",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e1793439-f023-5a1e-aa20-e12e9eda1205.mp3",
+      "bytes": 190508,
+      "sha256": "20c1df35f555cc63112e34780c6cf9ee63a8e619ab319ce4910cf79e645df257",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f908032f-c5b3-5bb7-9aca-f6c8bc62c28d.mp3",
+      "bytes": 200492,
+      "sha256": "6b9d4b7b6d5108d87ea99771be08bde0361e3ce4f75c715e3921b6a812e36e58",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a1883251-54b4-5cc9-b910-b645219ce6f3.mp3",
+      "bytes": 192812,
+      "sha256": "29f40d9d52c664544555460e00213a7bec506c68c77a4bc46295462f519706ba",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/97b00db7-80c2-5c67-b23e-44599ac4b94e.mp3",
+      "bytes": 57260,
+      "sha256": "4ff4857cfdc4e32f86a2d84413d0df20ac541faa6d7f78c299e23e6fac2217ab",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d4a8a39d-8673-50c3-b47c-68c2f16ca4e1.mp3",
+      "bytes": 66092,
+      "sha256": "21e9d208329efb994e3c341278531ed1bfd5030746763733ea36ea854ca133df",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/aaa89c26-c4e3-58f1-bc11-c23659396f87.mp3",
+      "bytes": 66092,
+      "sha256": "754e94d76915bc0fff61d66036da01e7a7a5e808fb683d675b95d9daaf653933",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ac615d17-79b1-5d3b-a406-80e798f57c9f.mp3",
+      "bytes": 27692,
+      "sha256": "8c5f62828d4304f1111892886608e8b117c017abfae5876b31eaf85cd693e3b0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d5ca087a-270d-58c9-93d5-445c55c29231.mp3",
+      "bytes": 153260,
+      "sha256": "35ad45c4e74357b23d00e1cdffc9dcba9c1b5d515022a9961e53b61c3ea151e5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/43564ec0-664f-516b-af72-5f831843d1a6.mp3",
+      "bytes": 190508,
+      "sha256": "c67c9a1e41a4b37fda00fbc37717a13f1cefdee556a36a47ee06fdaa8eba9ef4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ef60e727-301d-5b18-8edc-91fdd0c52857.mp3",
+      "bytes": 158252,
+      "sha256": "b5b61b33d4c8ff73b63f2a9cd75ae4d5cb5409669f7820cca33d32daca816ff6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3aec6bc0-92df-5e60-bab0-a776503bbe91.mp3",
+      "bytes": 43052,
+      "sha256": "19974ae9ee661d52423e72f2c25f4dbcd4e9f35ee471fea7972bae5118380fe1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/367f2605-0dd7-5690-93b5-f747a9d24dc5.mp3",
+      "bytes": 76460,
+      "sha256": "8b341930ef678d5c78b198c8f27a9e5df3a1b149e87e9bd6be0830feccc5ab6b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0f109529-93f6-5129-8062-305ebeae09e1.mp3",
+      "bytes": 91820,
+      "sha256": "b264e199f37801d06956684e7d97eeba8b653e76a156e8dee231149dd40e804c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/65fef98d-c94b-5d64-aebc-d886b2c9779c.mp3",
+      "bytes": 23852,
+      "sha256": "af08a9197607378f3fed9e5eb9c903fd5ff77eb3c6ef2a9a5657b5fe9ae97882",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cd38a7e8-f6e0-5176-aadb-af32ecfd711c.mp3",
+      "bytes": 149420,
+      "sha256": "e2fac1c577593df2ad418a02315763c13679b54b2cdf8a48013257e83a7e73de",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/7490c0b4-12a6-555a-8156-10335a5e8a04.mp3",
+      "bytes": 185132,
+      "sha256": "50929d1c79a839aa356962c91ef57a68b49f378b04555d323a07de3a4dda851c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ade12f6d-7ade-5355-91ae-c4a6811fc2f7.mp3",
+      "bytes": 160940,
+      "sha256": "63ce77311ef03bc4ca1f6a5cb9c9d20e2a885251a1a51baad9d0a64715fd2de9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/03965441-a2e3-54fb-9b92-544f08103bbf.mp3",
+      "bytes": 59948,
+      "sha256": "b1a2650352136f3afad3e4a93d9f55dd4a587a83f93a5f08e3b720aa0954fda2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/33da9531-c7c9-591a-9f61-91e377baa4a5.mp3",
+      "bytes": 56108,
+      "sha256": "f18da05bf5c01607d87e10c82501b89a28a57cab8fe9757e639cc128813d1f04",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/19338662-7e31-5eb0-b55b-4f4230803c43.mp3",
+      "bytes": 69932,
+      "sha256": "01ed37ece070a4950c80f521bdbd5a266678ff93f1b72fbe54533782e1ff48d2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8c673a17-80ef-5081-b2ac-c59e07b86e44.mp3",
+      "bytes": 27692,
+      "sha256": "5b475a8043dabea625ec04bb5fbc013b39932bb210505a800ceed525f7db4100",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2af2d0fc-2aa6-5d36-a3d5-0600f0e8e2a8.mp3",
+      "bytes": 218540,
+      "sha256": "d165ad98e48d060d9ebc51fd9f30a670b9327b42a8876e52191897d44d5c08ba",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/711d9d10-9331-5c78-a4a7-bf07bd7542c7.mp3",
+      "bytes": 158252,
+      "sha256": "95cc3c2cabae03a14f9aad675baee495bfcd781c4da9566292bc02e1ab5ff1e8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/504d0b27-d3e3-5c0b-ab03-07564718c718.mp3",
+      "bytes": 136748,
+      "sha256": "afb258421bcf8eb70478fd2b823c1efe68f20794a47f98ab1b48b44b085fa739",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3fd74b28-9ae8-5748-94ad-7d365b9e0864.mp3",
+      "bytes": 58412,
+      "sha256": "3fc2de6391c33eec8aa92b35d32e28b5b2008ef5f1c584da553659f5a6525195",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/225ca110-0aee-5554-9eae-41adba4cd124.mp3",
+      "bytes": 54572,
+      "sha256": "15c666f2c94617b5506dc165f352d692e3e22279e8b499bed326e371cf62b930",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/67dc676e-11f0-5ab5-9d20-fcdeac865f52.mp3",
+      "bytes": 45740,
+      "sha256": "a83175e7ea5042989ae81686b378cdccc59fd8718470ba849dec32aa8e576255",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e58393a2-bf7e-5095-9a69-271db58d9bae.mp3",
+      "bytes": 31532,
+      "sha256": "3d5f7a6654af38c58c933e7f848f2a8580b5f48d9de8905a1d7b8ed7958ca42c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a7fc8840-866e-5751-9d1e-e6ddb76d7ed5.mp3",
+      "bytes": 259628,
+      "sha256": "870596f811f54c490b2219dd22328224895c6ca8e0005460a802075f82bed980",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/25e15c05-b2ce-54f9-953d-a7baee69868c.mp3",
+      "bytes": 190508,
+      "sha256": "503858055604d548f4ad4e3519428b6950d3a110c042bf261d5357b207adf05a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0d138e91-c75d-550c-be66-df6c8b55f5ce.mp3",
+      "bytes": 209708,
+      "sha256": "21497be92c6dc36dd650973600755fdfc16450bcbc2a64323ca0a0960a681a36",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c4489ebc-9c52-5180-8f80-8b97a7bfa52a.mp3",
+      "bytes": 57260,
+      "sha256": "3559e53ade4df7c63dd347c5dd9bc054eda438432ea62285faeea566d6a20d11",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0300e5f4-8260-5ed4-944e-05d1cd3f8477.mp3",
+      "bytes": 41900,
+      "sha256": "5ac79d2bc1c46359724c3292b34bf261d946f3c3b58859ee20726d945e0555be",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b3803741-6a40-5459-97e8-67ed5617e05c.mp3",
+      "bytes": 39212,
+      "sha256": "dbaff3af5348206899956ed5330f88bde525a74de988d720e5e2710bbe6fafb9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c7cebf58-68f7-5296-b1dd-d81806393e06.mp3",
+      "bytes": 17708,
+      "sha256": "3f00995238b88597597e6cf1b67c9391927f1f386f5f8150829982c072875102",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f8203902-4269-545c-95ab-e7fbb956e224.mp3",
+      "bytes": 144428,
+      "sha256": "d5e7bc0f08a4f760c6425b19141e3d45403472727c3c8dc700af730afb25e4b8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/31cb910e-259f-5547-8283-07fd657ed91c.mp3",
+      "bytes": 185132,
+      "sha256": "9c82131c27bcfb6880cb3dead442e95c19b53bc1e97dc1d77123603a6ad163ec",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c86d4ab2-b933-5d7a-99ff-fc1904891d04.mp3",
+      "bytes": 157100,
+      "sha256": "708e768c52c8a31944488bffa84454d0390961d3ac571bb26233fbd55a5becba",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bba9cafe-190f-57d8-afc2-e4dde4565e11.mp3",
+      "bytes": 61100,
+      "sha256": "5078f9b02b324ffc6fa6f8d9813899941441e404729e13c4e76a8f99c87a56ae",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/7ef20400-74e5-5097-93db-7fd53787f16e.mp3",
+      "bytes": 85292,
+      "sha256": "841aba9149e3e164989c8b97f2496929c46b0068f764b828390c47e3a5c8bf6b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0cf0280e-871a-5a37-a0ca-add39bd66f70.mp3",
+      "bytes": 76460,
+      "sha256": "054a6cfc115686ef416583f6a81a249d314c60adaaf8335502d6b4e0529f16a1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8e80eb6c-e3ee-5db4-a9dc-cc95b2f3f676.mp3",
+      "bytes": 34220,
+      "sha256": "60435424adbc6eae1f4489379e26eed1407ef56894f5761bde7da20dda46324f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/954342d3-d873-596f-9763-1385be49c458.mp3",
+      "bytes": 22700,
+      "sha256": "31724c93cfa25bc0cc5de609f90cfa0e7589cca803d890bbf131051abd60378a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b10a400e-82ff-5e47-bd68-3be2db2a845b.mp3",
+      "bytes": 178988,
+      "sha256": "319b906b70e7c78774df770504bc04faefa2bfdddd2bf15790937991dbb30e99",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/53f5e68f-19ae-5dc1-90c9-11930258c8c5.mp3",
+      "bytes": 175148,
+      "sha256": "396d604a3649d742d4704598405d0f7af96b88bd89b1120e127ef9849b75bb12",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/043a8862-89fb-584a-a23c-04abdcb1ef4f.mp3",
+      "bytes": 188972,
+      "sha256": "482ca20ab47fe163f3062d47ced56df706e88728983c22d80396ab655cdc6888",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d4224e64-2103-572f-9ab5-d5585c568121.mp3",
+      "bytes": 61100,
+      "sha256": "521b21d569a6bf88075b16457fde92d95da862fbcaf7600d8dc43844641cdd44",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3cd3df1d-0aae-533a-baf6-2b7a2ee6fc15.mp3",
+      "bytes": 67628,
+      "sha256": "4621ddda29c0c4d659c6c9f567285915a639704ccff7629edc079f6beab13158",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/a3708a25-c7fd-5817-b423-ee1c2cbcc794.mp3",
+      "bytes": 53420,
+      "sha256": "90a56d4b1eff5b7308dd81a021e1ea1064d9a50d054354d0e395d299d280831b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bfb9abd8-8bfe-54d6-a8cf-0912b81263db.mp3",
+      "bytes": 22700,
+      "sha256": "f7437aa4c907251fdf427b432f264bda508141a591e94f06c11659c6af99b40c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9d857a2f-b1eb-552d-8607-91d2c6bf24fa.mp3",
+      "bytes": 168620,
+      "sha256": "74de98fd3c48c36d28c2db1175b982fa5c1e40e91efb7b1c263e864848957820",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0ad51ebf-8248-5045-9ae0-c2ab00fdc7c6.mp3",
+      "bytes": 209708,
+      "sha256": "6da2937da7eba3bf10a65931dc6969a0bad1c3d00cfd66b1930b7b17557106f2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2b74152c-ff5e-511a-9b5c-204590943f8b.mp3",
+      "bytes": 134060,
+      "sha256": "aa8c1f50788fa564cfcd536786e3934d5f4e1000518712ad4c6d438f9ed173c3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9c0dc7f0-d0e7-58a1-b201-1f17506d0c51.mp3",
+      "bytes": 49580,
+      "sha256": "acf7bcb1da187413a56493d4a8e63ab19bff60a690aa4827358f44fbb4f73e05",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/90eecc63-f95e-5bc8-a12c-e322f87b94cb.mp3",
+      "bytes": 53420,
+      "sha256": "b4512d999094a9634399a77030ba7190d58ee39fc78825f76ccdfe5e100c5967",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bcaa2c93-cd70-5677-b308-6786e0aa650e.mp3",
+      "bytes": 56108,
+      "sha256": "22d005f914f18990428ea76d44bfeec47e8555bcf1fd3f53e7cd1f3a0c2822c2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/baa065dc-cba6-5f02-8cd1-12cee47382bd.mp3",
+      "bytes": 21548,
+      "sha256": "28fb8e5e088b959c53b3ff5bb53ea79fedfe2acd86df66b80a4697c821d0c442",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3a613ee4-19ad-5a6e-9d53-343737074e01.mp3",
+      "bytes": 162092,
+      "sha256": "c9ae4663b925407166101398f7d5ecd1cf5518d4fb0be39394b88ca81d7878f0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3e3dbe26-b321-599b-926b-dcf403905b96.mp3",
+      "bytes": 141740,
+      "sha256": "50af0d6d1f2b97c9d7c22da3ac66039b624b5031c7535be7acf29e25273cb5ad",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e347cbda-95a4-5cb5-8d33-b5a05c5c04c6.mp3",
+      "bytes": 137900,
+      "sha256": "568f14e53e509c1ee112e8071f55cc6ce0efb91c529afb4031ebe4a823befa5e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3df3370d-af30-5939-bb55-4827ccef6165.mp3",
+      "bytes": 41900,
+      "sha256": "b7c1066969e7623ba1cf33d2ede2ffcf6d3956fd066e2f15b9a5de55fe618664",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/81c3ebfa-537e-598a-95bf-485ea86dd728.mp3",
+      "bytes": 59948,
+      "sha256": "cb91845505b90ae05985f53e0de2c6046e2576ba6a0a2826ac81d37b3f59d905",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5c46d09c-62a7-58c8-b6df-334e6248c9bb.mp3",
+      "bytes": 46892,
+      "sha256": "e665ca622dd9ed6f100eede895d7ced7b75e38094ab83bcb17b9f176ada08a94",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/da59f650-66c8-5d96-a95d-81722978e727.mp3",
+      "bytes": 30380,
+      "sha256": "74abf143358b0af4974f657bb3b0078124a5acd24823bae9ce996ede80c85286",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6d6f1db6-3458-5fe3-820d-138e50da432c.mp3",
+      "bytes": 215852,
+      "sha256": "0c53de53341c77706e286027ec5b860a9c187ebfb827a927725a125f02555211",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/14d58c69-81f4-582d-a83e-bab3a0841695.mp3",
+      "bytes": 160940,
+      "sha256": "0213b1df67696b8479423e9d670d11843e63ea9acb3a539f0360882b181f95c0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/67b95f4b-3760-53ef-acc0-68f80e308e3d.mp3",
+      "bytes": 195500,
+      "sha256": "c93b52a43966cc0b64fdf30a29b34dc24e0f1988e0241f139a9c1fd0553e761a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2271b0e8-187a-56f8-9d54-01195130c1db.mp3",
+      "bytes": 125228,
+      "sha256": "63f073c75b1466fb8aef1d127a380fdc113dea6bbfd925836facaba9655fd332",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bd764446-bcd2-5178-8b84-03fef8876043.mp3",
+      "bytes": 131372,
+      "sha256": "0140d699118ecc450af011b512805a85323ca80d7a50b42eabd3184974c33157",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/dd0bbefa-44fd-53ae-8232-e2ca00d400e9.mp3",
+      "bytes": 107180,
+      "sha256": "c2f12213872be8cb19bd0fc1f5d26a5fa053fabe5c124e6b8856d56899ace1f6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/70818df1-ee97-590f-8dbb-7da3592f99d1.mp3",
+      "bytes": 25388,
+      "sha256": "76af02c1b55dec15d6b9d244ea94bb82209f74e3093fd36081a8a656ad3b0326",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b92c7f12-c535-5453-820e-3c82dfe33bb1.mp3",
+      "bytes": 167468,
+      "sha256": "e8e4dd4c1ce10528c11e62b058874387b420b068e26b655894a526315fc4ad7e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/98ae7552-05ff-53d9-84cc-411f6cda7644.mp3",
+      "bytes": 209708,
+      "sha256": "8c35623a57c6622d49b3d379a3b07692303fc58c4a68b2f5bf62a22bf7565736",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/61c2e3b8-6b35-56a4-88c5-f462c128896b.mp3",
+      "bytes": 162092,
+      "sha256": "f7f4e89e15fadbbb9a5874b5cf722ca11e8003a72d11c2e9bd3bac26356f2f42",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d3db005d-fe4a-5d52-8bb1-ec31d25b557e.mp3",
+      "bytes": 79148,
+      "sha256": "c4d207db54e449cef7f2584d250e9eddd3c2d3bb91bac38897132ddd54330cc3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3421b8ce-2628-53bd-99d8-32aaa76d61c8.mp3",
+      "bytes": 80300,
+      "sha256": "babde5517b86693e0367fe7ba10f9341c88b11ddb5b6f3e8584035a89a4a51b3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ccfe46b1-0091-5602-821d-7e9bd1c1ba31.mp3",
+      "bytes": 96812,
+      "sha256": "26215c1c1e5021128c2566916428a693c188104b8f2053bd9c24546af9add51b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5d8a4c5a-613d-5672-a950-9f50f2c79e1a.mp3",
+      "bytes": 27692,
+      "sha256": "591fd1efa2ff541d00e67bcddbfaed5ce090ff79b8214f8d28f849bbb0c8bbce",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d27b2e99-4b2a-5801-a06d-24139b7446ca.mp3",
+      "bytes": 139052,
+      "sha256": "310843e882c8d403d49d47f0072f01281abe586221c9c2776bb97c34d689c41b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3a497010-ff85-5285-bff6-beaa9263c559.mp3",
+      "bytes": 145580,
+      "sha256": "eb88b8dd3aef48941bbbc5841de121b632e53e1e92a8a09114254ef36f68aced",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/eb36caaf-00cc-5b4a-b74e-7242cae24ea2.mp3",
+      "bytes": 117548,
+      "sha256": "f0a9d46936a47db9968f3f51184c08735e23a88160beae285e9f4678469ffa9c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1e6f3f29-2b8e-5562-b5f7-232b46521352.mp3",
+      "bytes": 68780,
+      "sha256": "56ee0f13c6ea154af93ca2181f3630d3ef7245ffc760c9bc11be7e8029555f72",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c465e9f9-ea89-5ff0-bdfb-d27d3b9f71a8.mp3",
+      "bytes": 73772,
+      "sha256": "fbbf946d3613294560fb69c900ee68ddbbaa4f48e1b576873904d93790496f5f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ee424f46-0dd9-5073-aa48-b25068246624.mp3",
+      "bytes": 77612,
+      "sha256": "003b8e2c6e5f7725932d320a0060fa9560869e24d7881eebe86db861891518a2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1724da63-6c1a-5b15-bc9a-208b6fc0f7c8.mp3",
+      "bytes": 20012,
+      "sha256": "5e4d384786ffab79afe1ef91df23ef8d085f8287013f3e2cd18bc37ef84c1954",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1f77ea9e-3e22-5823-85da-9d3214f22820.mp3",
+      "bytes": 202028,
+      "sha256": "63ead02f930e3e474a9916df5e94ff302fd97bd9a68849ca90cb9e32f462cf44",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/85ec8c47-e36f-5c15-88f3-9145fb612d89.mp3",
+      "bytes": 207020,
+      "sha256": "a6597372a0c636e51f0d0e55090044f24de59424b95683992228607d624240cf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bc44fff1-f74c-5504-b680-956ac0d1c117.mp3",
+      "bytes": 185132,
+      "sha256": "d46167196b47e4eaf0a47eb2f17672f322765ad9b10bae5282be5e43f0a53ddd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3496c9d0-c8e5-5800-bf8a-bb8e6288bc58.mp3",
+      "bytes": 56108,
+      "sha256": "c3b57da16d022ad6ca3efdd23a88c99c98d53237ee894b91f6e34d3e89164193",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c95a56d5-134e-533a-baed-8c7da53d10eb.mp3",
+      "bytes": 82988,
+      "sha256": "c4f14298d6c2576940268db56e0cf03c4df398dcca00f25956a22989a5a66465",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/af5f6116-3c79-5d29-8ff6-ded3a9e4150b.mp3",
+      "bytes": 66092,
+      "sha256": "5143d4a9ba5f02015397fcf6aae8c93d3bf6a7b239e3924307627b56577f15fc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f2daa705-fde7-58d8-9f7c-27ae7b76294f.mp3",
+      "bytes": 135212,
+      "sha256": "3066036d3c2363284c2ba11be2c1a59e7dad006897dbc11a44fcb561726533ab",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/914e7ea8-2943-5c2a-990d-035781dd13f7.mp3",
+      "bytes": 130220,
+      "sha256": "5a8b673dea6e7f7a25222a31c857d0b894642c9e6d8de9bbc0cdb8e82a273d2f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bd8df8d0-e2e5-5817-8359-fd02ff3714d1.mp3",
+      "bytes": 142892,
+      "sha256": "668427f5ae6545de7fa1e8e7daffc5a52c234916242454474c53d4c71ec60138",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4654c565-5882-5003-ad99-4ead8a64d420.mp3",
+      "bytes": 118700,
+      "sha256": "1db474c57c6cc3f304c15f4ecc75c1117e044fe0de33b85343e2f7838e90047d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/9ea2cd43-776b-5df7-8d46-66478789aec5.mp3",
+      "bytes": 109868,
+      "sha256": "d63adc3da9014fd2876c015f1a43dfc292173f8516de8bc994c2a191da3731db",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/4e04d2bd-8430-5692-a59a-af27cc606955.mp3",
+      "bytes": 146732,
+      "sha256": "1eccc5ae57b028f3cd723785c23b1c3396652265fdecd261f418bf523fedad95",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cf98907f-2be1-5741-9d48-73d93e9585fe.mp3",
+      "bytes": 39212,
+      "sha256": "c243dba39f500d10d0048aec215036841ca7f6528bc58c5876085e16748b471f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f49b1d8c-b024-579e-98a3-60a1f4ee9b61.mp3",
+      "bytes": 244268,
+      "sha256": "70cff64f7c7f2b11235324a888887394283969c187a3543901ac14a2626d4696",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/aff3448a-2934-5ede-a2c6-61e388e9a841.mp3",
+      "bytes": 159788,
+      "sha256": "6b5202673b22ed3d5cca3df2e593fed406193e228f1d9c7388d5b13ae87af9d9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ec7357e8-b32f-5c9b-9389-b01997bea0c8.mp3",
+      "bytes": 188972,
+      "sha256": "fddd8ad7ea3cb8d945526ec7f5c6d5f6559f7eabb6a1791ac11f5ff8a2ab9cd8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/8237c52a-b8b0-5eb4-afa7-063f4990a730.mp3",
+      "bytes": 62252,
+      "sha256": "b63a39424f9ab569c2cadb68707d3e268fb0ee0b7181b0b0ef05ccf4dd529d5d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/362c89fb-2934-5a50-9c13-8d31c48a96a8.mp3",
+      "bytes": 72620,
+      "sha256": "314af02b744e78ffec90eb05946b9710624379de8a8e5f5c1971cba297380cd0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/46d573e6-722c-5762-8f8d-91c7e3931734.mp3",
+      "bytes": 76460,
+      "sha256": "1efe7c19eb4ff79bf422b77357c21e8599012b7fe97f8b67f05f687d64e4c8a3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/f7119668-da06-5011-bad5-08f375197a28.mp3",
+      "bytes": 18860,
+      "sha256": "d18c4cc2b62d2a61c07634a69026a4d22462a0e4320c71af8493a7d0d3db57ed",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6d4fa023-9d60-56fc-aec2-83db18d0516d.mp3",
+      "bytes": 209708,
+      "sha256": "563421f11bf8c9a11744e2cb91f25f1ee0ef9b177848eb60fe8391fefb87c58a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5c0bda05-1944-57ad-b27e-19a2232e0293.mp3",
+      "bytes": 186668,
+      "sha256": "e269b607d3e0f0b2bb34f44bf58f3ec581ecf47b23dbceb51e2908c28f13b947",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/01d17844-f8a8-52cd-a71d-0d8c4dd22ac6.mp3",
+      "bytes": 268460,
+      "sha256": "323a9e18731aeaf9c521ab881af3775f6a705ec07c86e063591ed496c5094017",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/1c78ebe8-5b13-5538-b83b-2e60cc7bab23.mp3",
+      "bytes": 43052,
+      "sha256": "962c412b6fbe4c4024cd75cfbd250b9df0cb1af8ac4e5319fdc9780d31a7706d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5ac17b0d-6be4-5d65-b768-2e969896d5f1.mp3",
+      "bytes": 53420,
+      "sha256": "32596049c0d79ef92c5c35b49c6a095cdc0ec19d9c2a3b05f6739453ecf13ea2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/dbd009e9-ba02-5777-890e-23161d118831.mp3",
+      "bytes": 50732,
+      "sha256": "4e5a536d8a0d7f053473e9d0d756be29582e182e4da80c06f55abad8d65c07b4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc.mp3",
+      "bytes": 21548,
+      "sha256": "2e87b4ae9231be136912a1870c2fcbb84d7bd162a8b06ef819e21d40cd3569eb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/2c87b5cf-97c4-58e5-ae03-9c7874dc4f8a.mp3",
+      "bytes": 181292,
+      "sha256": "a9cbe9d67bd4c232028d548c180ffa1cd0d8d40b50ca814cb8194b6087a4ec92",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/ccc76400-bbc2-595e-9cd7-313341ce4382.mp3",
+      "bytes": 152108,
+      "sha256": "012488787fabb989d36d072e359f0dc2bbefe2653effa0298c603b2f51d551bb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/535f7920-9031-5381-922b-7c1e0b2e3f4c.mp3",
+      "bytes": 159788,
+      "sha256": "063afd89924398d2308e5bd11d1427237588a3323c99e6d73682b00c410456be",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/fbbfb85f-4d68-5f00-9bb3-9143db262499.mp3",
+      "bytes": 52268,
+      "sha256": "99cadfa56e93d2ce1f318df7eb20ee423eed8e2bb14d78ca3c0340c82bbf4f7a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/76f38302-6fc0-593f-9bbe-bc042430bee0.mp3",
+      "bytes": 66092,
+      "sha256": "dd396bdde184a78abab5bc1ee9ad2ffd7cc5c999a4fd2031c8f4950741640d16",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/5e81d690-7aac-5487-90f6-5ac7d9453dbe.mp3",
+      "bytes": 72620,
+      "sha256": "5d6849fb9dfce7c5fb56e1580fb0b02afb0ded3acde2fd2cc277c4d278cbf225",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b22d9f98-ee18-517b-a63d-fa0da15edb66.mp3",
+      "bytes": 21548,
+      "sha256": "131aa1465819d4d7d5f81f6b7e754d6aad8c1f1b61cfae62c6c68a6395cbd193",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/88ca0bf4-9e26-5c56-9739-35eba80dfd12.mp3",
+      "bytes": 187820,
+      "sha256": "e1aca6b335dcf4a1ecc37bcbc9c155dbba22850352ef3068e811135f2c3d21d7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/deca893c-586e-5694-980a-b78be9167958.mp3",
+      "bytes": 140588,
+      "sha256": "782f8906c09681127f94607ecfe65e1e8dfc5d66ba6fc7883de3222c57aa5689",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/66f3e989-7d29-52d6-b66c-c50b5a067f2d.mp3",
+      "bytes": 152108,
+      "sha256": "440baf2095c65332797bebf731a9fdf7df12c1bfe72dc738746ff37f1c234ae6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/bc267e93-3fb3-5322-889c-3b9a865d5a19.mp3",
+      "bytes": 48428,
+      "sha256": "06d803a27528bd8426ba8e860b0390fe4f329457383fdb2fc6b9b705cf7fc0c3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/3de87753-d4b0-5b23-9c44-3c32a52075b5.mp3",
+      "bytes": 50732,
+      "sha256": "b525e9f90ccf71b13dc343d9e2e0330689cc31cc52b09f849de40586e8bc6220",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/e4063b43-d214-5e4f-b528-13dd952a5f88.mp3",
+      "bytes": 57260,
+      "sha256": "9d8d3167647b4084bbdfe643f88fd216b94eac41dc01f6e6f8cc2aa6b23e80d0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/c4621bd5-027d-5dce-92e1-3d5bca38f8ac.mp3",
+      "bytes": 43052,
+      "sha256": "87672a61914e0093fa5b5cc8d650d689d4642519fbaf09061e058ec300eae781",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/6c93e32a-1582-5e4f-8112-c19974246fa3.mp3",
+      "bytes": 218540,
+      "sha256": "718b8dd879064ae6494c3cbcc422f11da2d72b7c59b31d389b97956f9b55ad0e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d4dc7d28-ef33-569b-9f06-d65a190b4998.mp3",
+      "bytes": 233900,
+      "sha256": "a2a1ff704fba321b75c200987f96049fa6f82007a338e60a2369b92cee329672",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/75031016-1a3e-5720-b1e3-4940592ec9b4.mp3",
+      "bytes": 202028,
+      "sha256": "bc6136877fb45bf5bdb2f8b50cc61e68d3542dc4238b065fd7cf3d62bd2aa12e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d4236eba-78f1-530b-96c3-54a542fe803e.mp3",
+      "bytes": 68780,
+      "sha256": "e2b5a6f1b6515c64c674f726da59bb87b7be5ff446fc20bbcf8d2689278cf4dd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/15c7e2a2-d876-59ce-9aa3-669a649bf953.mp3",
+      "bytes": 111020,
+      "sha256": "227a5fed04bb88675fab1c221d047dbfc1bdb2c87210fbc9e736eb38d2469097",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/25dd9bc8-298a-56da-bccb-5478bfa6edf7.mp3",
+      "bytes": 68780,
+      "sha256": "bbd4eaa3badcffcc3b4c684e6711ea204099d8d03f459fd663bbcf31dce69b86",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d6a9a9a3-9543-5271-babd-8e6dfc745708.mp3",
+      "bytes": 21548,
+      "sha256": "2a1008834bea4b21cfd400847667a8d92723504f79db4a255e180f70057c58fb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d5b95d37-431f-5855-b8d6-ac3d12717a93.mp3",
+      "bytes": 158252,
+      "sha256": "db59e26332720d97d9556c2471352f7ed950e53e04ecea3c3ad3820566678c97",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b82b7a3b-28ef-5675-8cca-8ef8d1065375.mp3",
+      "bytes": 159788,
+      "sha256": "99a990b439b41ad693156f950f79f0fe47b9d2ac0ba1c8317e33effb1a2d9bf3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/b1e32f7b-d3b5-5f8b-8f38-6ff9d678614e.mp3",
+      "bytes": 181292,
+      "sha256": "9fa502bc421199f76d20a61e5244e437ff52ebc278880a0f345784f8bfe050c4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/d65ddd73-f77e-56cf-a0b6-6ca6527510b0.mp3",
+      "bytes": 44588,
+      "sha256": "4f4619d746b3455880aa0e5ff0043a38b15dac5af6a202996a3c4cb6abc01ce5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/0f37bfc8-f79a-5002-919b-e7212d753ba0.mp3",
+      "bytes": 36908,
+      "sha256": "4b6a397769f933287887cf7e7e6eecbb27db37d02c265380563796dde131c631",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/09eeb3d17582e855/cb9d1d90-2792-5fa7-a3f4-35af13459e22.mp3",
+      "bytes": 49580,
+      "sha256": "44de20984c773dc02a891e5ad37a749e4e6ac547be77f1b11060e7ed1aeb0532",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/4a00a796-e5c3-5dbc-a254-0cdd89f960a3.mp3",
+      "bytes": 29228,
+      "sha256": "375fddf53fcbbe06b4dd99053961044dce0d2586cdace7feaf21ecf6bbbdfc4e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/af04a7b3-4293-5a5c-8e8d-359cf9b26a2d.mp3",
+      "bytes": 54572,
+      "sha256": "ba370238c16a3ef18479ba4a1e42c9933c80d98220f2d39b6fa62a9967e1b4b3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/2c8753e4-acd3-5700-9073-4d509b798fe1.mp3",
+      "bytes": 35372,
+      "sha256": "27a3b220d4532c535a39009b501f174a0644d698ff0cad889545f8396da4e428",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7d85580b-d554-5771-b124-7382d006786a.mp3",
+      "bytes": 171308,
+      "sha256": "c029b6025754faf3747c8fe39b9bee2071414858dfe6854aec0e42597cede16d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/dd663410-8a9e-5a9b-93b6-872fa414f6db.mp3",
+      "bytes": 159788,
+      "sha256": "873b2d9939fc7f0b2906e8a8e302350afd6194c1267875d6fb18887651efc25e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/4fd4208a-4537-59cd-b7a0-d8fd33a91063.mp3",
+      "bytes": 122540,
+      "sha256": "92827311754c6bccf089af9919cb01dfe94cc2eaa7b92d6bfe9dc05a81ba52c5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d876dd09-9a4c-5c78-8e91-92d7b9e7931b.mp3",
+      "bytes": 12332,
+      "sha256": "c208e487f6276fd9f942e892bffc3b15deb075ffcd6b07eebe998c05c85db8b4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/261f046c-c525-51c4-b5d5-97ad8a16e9d3.mp3",
+      "bytes": 54572,
+      "sha256": "d6f7072e161296f6feb1f508bf6520923e82eea051b513462bec9b5059953fbe",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1bcb47d2-fba7-5025-a0a8-0cd97198b9fc.mp3",
+      "bytes": 44588,
+      "sha256": "39380240fbba801abba86200b311a65297491ad68821609f4da897b4bf626d28",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a1651ffe-5914-5ec2-8ff5-c6b798e5a968.mp3",
+      "bytes": 46892,
+      "sha256": "1488ce633a58b3596fd82d23c1e4efbe7d336b1f3c5c1bdb1814b6c85136d6ab",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/32796a2a-c801-570c-919d-96c134519a7f.mp3",
+      "bytes": 171308,
+      "sha256": "7618b3509c1aa6f8a9d6bc9e506ce1bff3ba431c9a6afb50e87e284060025775",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a80b5c88-9425-5f51-8c35-1e20579ec0ad.mp3",
+      "bytes": 176300,
+      "sha256": "609205e25a2023e6ebc21e3a9c07d3441875ca8b1f6aefd55075638127e5bf30",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/f3b21c6b-d7e5-59a2-976b-1c9816d19249.mp3",
+      "bytes": 185132,
+      "sha256": "be8467f19b7b5033cd28d013f633085f54e03a21a162079e00c5d92be75868ce",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/fed03f94-0206-56c3-8136-5cbb4dc374a4.mp3",
+      "bytes": 16172,
+      "sha256": "e891cf22e23ee25ae17969077ede8d70ffd9e35c9b4f06c623507a2d51aae053",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/23eb30db-50ca-5513-868b-5e3d6ba94ed4.mp3",
+      "bytes": 57260,
+      "sha256": "d3daadfe36e76196e83257381849970fe8d0b33a8bb8d9b7c84566e2974b6391",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/00476648-9a5e-5042-90da-3d7c72d71edd.mp3",
+      "bytes": 71468,
+      "sha256": "cf5e3717c85bd4b27ee03c3b2613042a08a59fb064d69bc21d34e7590adac216",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/4a5080aa-4a65-52ad-85be-3b04b07497ca.mp3",
+      "bytes": 82988,
+      "sha256": "77fa6f60c9072027aa1c99fb0c35e96ef8a515fe2ce6341b5e52c172bb8a85e3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/710387d1-076d-5191-9245-f65ef84c2270.mp3",
+      "bytes": 210860,
+      "sha256": "7b3a6759ed1c3123d753066f56c5632bbf6ff7e058a0082d68db95b4ed74026b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1ab134b2-ad21-5c18-aceb-ea114c8a4141.mp3",
+      "bytes": 142892,
+      "sha256": "5a5b1a291135cc14234715ada92697e475973553041bf0602cb5d6ec2c412ef3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/19590cba-4398-5cc7-9fad-e91ce83e3af0.mp3",
+      "bytes": 168620,
+      "sha256": "3b126760371c78e021fcbd48e70864d67b340f6ba6afa7685ce5c036b04b102b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5ab06837-66dd-5f0f-89fa-978a1b7cfbea.mp3",
+      "bytes": 90668,
+      "sha256": "1abb78e83605b8296e25b0d6f0907e861e8fc8932df91f393d857eb374188b4e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c3419689-8bf8-57c3-8e3d-d77056d20d15.mp3",
+      "bytes": 84140,
+      "sha256": "1688e3aaec89a4e1527fff26f0839d4fd762f04641aacac587bbe43f8e604b46",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/8bf7523d-8c77-5bcb-b066-c3a5e07355a1.mp3",
+      "bytes": 95660,
+      "sha256": "9ba54d7c262027acb9bdf708d53fcb69b7d6605e67b36f78029c73fc8e3397ea",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3166a2aa-f46a-54ea-a2ba-8127a3e87560.mp3",
+      "bytes": 89132,
+      "sha256": "38aff295f41055f5138e5af3b02aa79c89b62d1f3af661d948f3389c9672bfb6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0500b135-21e8-5a9c-a52a-a16e69981dc9.mp3",
+      "bytes": 84140,
+      "sha256": "c61225bf7a00f5084fa0a728d4d8729c788dc4707d54cd7af80bb6a3fabcc2bc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/83fbd495-a4f2-5b5a-a63a-ed938c54630d.mp3",
+      "bytes": 89132,
+      "sha256": "9c515e2a02fdd0ce0ad00ff5e09b03fbea97de202bed4120125a233ae98888ca",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0baf8ecb-33d7-5f70-b94d-665f63482b39.mp3",
+      "bytes": 100652,
+      "sha256": "cfdf1fcd0a2d5b938f8a9d52096502b852beed86cad77793675fcea805338dfa",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1ee3218d-b605-5594-b22c-442dfcbf4d1c.mp3",
+      "bytes": 117548,
+      "sha256": "4c27d359430aaf11ad9536541e476272a5b79de14cc8eec574cdced04e3019d3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/134508a5-54a5-5ce6-ab05-a172c980d262.mp3",
+      "bytes": 114860,
+      "sha256": "dc872c4ae504a2dda00ad7e203d08f755495c94f762f3f78edf8aef9d34c630e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/63b7be15-2978-5687-b5e9-3091c9e2ce48.mp3",
+      "bytes": 111020,
+      "sha256": "499e95117d9950047e1b6e8d431d9c570a3a356792068c8f8b0979b829a77185",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/aa52b3f8-9f12-56d4-a6c2-2c86cf987ca6.mp3",
+      "bytes": 148268,
+      "sha256": "f36abeef514e1d566884390fd6d5ec72ca425399f45d72c39230cde612ba7faf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/323e7267-b597-57b4-9ef3-081594488982.mp3",
+      "bytes": 103340,
+      "sha256": "a18081bd04ccd929c9c630bf4d04402bf7006d732bd943c8a4ba8e0cc3481c68",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3ff3a438-b1cb-57b4-bc6c-95a82c6da8b7.mp3",
+      "bytes": 135212,
+      "sha256": "d0a8f2f075b8bce5d901b785f889a6336f36c1c7c5cc4b8c87a3933a90e91a01",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/cfb0b30f-65bc-591d-ade4-bda7ff2f32f5.mp3",
+      "bytes": 295340,
+      "sha256": "5282b3525c84432f5023ffd9761fcd6320f5c2b45cf1456ad1a16a18257cb7b3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5fd8dbda-9dd2-5e0d-a0a2-67ddf7cd5403.mp3",
+      "bytes": 171308,
+      "sha256": "2c22d1ecb1f534ec3bfeac6310f09bb58da618ab20cc4d878a62e2f4f8f4c135",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c63433e3-9ce3-5f9a-9ba6-dd9f6cdcbf4e.mp3",
+      "bytes": 202028,
+      "sha256": "ab0a8537d5edb5c66db0ec126c632467d0e32e74c51d42b3cfa12e3073565ff5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/25804565-39d9-579e-a864-5fbf2c16ac0d.mp3",
+      "bytes": 17708,
+      "sha256": "04c4bdb08dd07b2059c126b9cad42c0151d5f7dc042f1b729aa9be54f83d8c68",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d2199857-784c-5fc1-876b-1e07df8052d8.mp3",
+      "bytes": 38060,
+      "sha256": "12ff49037dd689e6f0f59f391b6e26caa8d3fdc058e531066e64f95913f0d12b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1c78f4a6-9db0-5ca5-9d6c-88f201191968.mp3",
+      "bytes": 50732,
+      "sha256": "1bb384bf1a2432b5b8c6ebab818d06a05b89cc2ef369c98ffd13cea36dcb5530",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/70395cb1-1333-512c-b872-fdc2a26bcd8d.mp3",
+      "bytes": 63788,
+      "sha256": "f04ae50d7f152beb66c1692cc239ba9ed1223cf5d441d49180c792114efcb55b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d9af6901-dc24-54c5-bc7f-d7e97e8b53dc.mp3",
+      "bytes": 213548,
+      "sha256": "a76e362e18de87e18e04de90d9e98c8ca79f176c740f7419d9025d2e0ee7e7c7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a8016df3-3e8c-5888-9332-8ae5ddd295f1.mp3",
+      "bytes": 153260,
+      "sha256": "c6b7c9dd9cedf9852a3c0538dda54a3ecdb99391e4885f870dfcb10bf74e8896",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a29cde60-b7ae-5a67-a641-1922cdf5bbf9.mp3",
+      "bytes": 144428,
+      "sha256": "632edee2ecd2451afed75af8ce4600fac8cb68593d7a13ec8e3e6cd36f585614",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/6d18d5d4-5288-5c3e-8cf0-f854d81f146d.mp3",
+      "bytes": 17708,
+      "sha256": "cf1bbb2e7be7b0c214d1afbf2165fd4125615d7e25226e30d42439f783ccb125",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/17bc2031-7fbf-5f6d-8d52-7e0ec4a7618f.mp3",
+      "bytes": 95660,
+      "sha256": "d124a6416832486ee931b0e53cd27d83cfcaf87595d5e2fa45da7dec42e7b3bd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/85e01588-dd17-5c0b-a2bc-36dfa45428df.mp3",
+      "bytes": 92972,
+      "sha256": "4374c4de906378935bcd705942bd383b236cb799047727bd3c0ceefc32680262",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/bc6bfd7a-1b59-5754-a92d-53671ec9dfdd.mp3",
+      "bytes": 102188,
+      "sha256": "e9fb32a24a7fe2561b37b089d63af3516d65e7d46b6086bcb9f1ba456ef48be5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/6881753d-3a81-54c1-adf0-c74e7f793ff3.mp3",
+      "bytes": 230060,
+      "sha256": "decc186f854ae4c84826d4638b731e3839916a80d58321d0a4f0a9397ae5ef50",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/06f4059b-8621-592f-97dc-ea221d11701b.mp3",
+      "bytes": 192812,
+      "sha256": "1a71ae64bc934e77966e79ad802550ac2f1e3afa2b5e4cce44215ba28b34bc11",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/2657358b-d8ca-507d-95a9-8ed14b3f2154.mp3",
+      "bytes": 149420,
+      "sha256": "ae1887af4f76f0e193b058371c0410c8d9b7c231db45c87e999ad6d34a68be52",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3b5cef7a-9d6d-5a47-acd5-3fcd25a05283.mp3",
+      "bytes": 16172,
+      "sha256": "60fc6df8dc1a518aec6b2179bf2694097bb257fce0c7310f93faea20e6962076",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/520a16c9-469b-5d98-ba05-9da9b763406c.mp3",
+      "bytes": 62252,
+      "sha256": "11da28af2c3d40845d7ba558578ad6d5515f8788ad4efdca64606832d585a48b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/647cf009-094c-5c4b-881d-0ee695214335.mp3",
+      "bytes": 46892,
+      "sha256": "f3c306a17e0e0829ec4f17a5dbe2ffe5411b017a55067e68bdc7a5107d551793",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ce0d20bf-ffd4-5d3b-ab6a-b7c95d9ff67c.mp3",
+      "bytes": 50732,
+      "sha256": "3f8e3e426a002cdf3e5decdab84604c4ccf0d0362e3f331ee28715836d5486bd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a8c7f770-d5ad-592f-ae8f-0dd30833b0f4.mp3",
+      "bytes": 61100,
+      "sha256": "17696f7871e0e502479af29ef2541e612a49e5a91cd85294a7ea088d1142e598",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/e4f15ee2-2740-53bf-9387-98e79a9cc545.mp3",
+      "bytes": 103340,
+      "sha256": "ce0de504319a2bd8cea1c20b745f80db1c30fbadc274b8c7cc92fc4b815be343",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/85c60357-aa5f-5ad5-a536-2dea455ce447.mp3",
+      "bytes": 91820,
+      "sha256": "2754c5c6fac5e94907a193eeedbe33c406f909251e28b9e27a525ab119a2eaad",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/54b349c1-dfd6-5484-bde2-e7ebc7afd312.mp3",
+      "bytes": 27692,
+      "sha256": "ad18d9e0e3913855cf4e8e53bce996de354a9cfecd4ef5f03ba61ff5e80ee26a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/f8e0486f-f338-5ae6-a981-9cb35c19ea36.mp3",
+      "bytes": 36908,
+      "sha256": "527869a923b5e0550a499a2338c1f47c64e2757276b97237d24c5f3239324bfb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7992a75e-5625-5747-9817-9e9595893f8b.mp3",
+      "bytes": 38060,
+      "sha256": "b1a2ecb8202e72a476d9b1c41d035888edcdaccb97155db7f6c0e0eaa21e91f1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5f40bcfb-5e8b-5106-bfc6-49213fdc00a0.mp3",
+      "bytes": 149420,
+      "sha256": "f8a950c6411fe92e9643b2e9d269dd67310de9ef7fba14db58899131926276d3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9cf2d358-7370-5b01-aab5-581f9bea4111.mp3",
+      "bytes": 181292,
+      "sha256": "f6e7edb20d8f67a0a667edeb9d45852d6d18da25e04bd5c5811efe91eea655d3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5909a347-4b61-5400-8d67-fceff5bc8c60.mp3",
+      "bytes": 180140,
+      "sha256": "daf8b1c13391193103d5c02d4ab4a61c58ca467ef6b942ddd98208a9c71e96f1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ac639252-b530-5342-933b-75737f80bee2.mp3",
+      "bytes": 11180,
+      "sha256": "5ededef13020fcd3d43ac808dace276b88524cd649fdc10188f9563a6ecb3de6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/de11fa1e-0b61-58aa-a320-0a9ad187cd9f.mp3",
+      "bytes": 54572,
+      "sha256": "5926d7429e4ee0e45598ce8926d8022e18a8c7520eca86cbc1aa54543e423d17",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/89e58591-4f3d-5637-b67c-96d3b8070367.mp3",
+      "bytes": 95660,
+      "sha256": "645b1a3cb3a180b2e3e906264b2de9b5dede5977c3d4a6e089b0b19b4f929098",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/976a6b19-42c3-5516-abe2-76adfffa8a66.mp3",
+      "bytes": 104492,
+      "sha256": "25e0a0153b2a2a1add1e0616f10d8268df6c3285fa400a6938b533895ba81e09",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5b720948-0d27-54bc-b2c2-abf1a6d595fa.mp3",
+      "bytes": 127532,
+      "sha256": "4b42b04811d22aacba24b9d88e34ac3015bd20d08b5d30cb1e8fd494cec2a503",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/37b3dbaa-da65-598c-8ca8-62f70d23d210.mp3",
+      "bytes": 102188,
+      "sha256": "1819ec0800d0049f7341caa497cfaf540c66893c94908677c2cfec19bf172beb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d32f5507-3655-546e-bfc7-def8b854771f.mp3",
+      "bytes": 119852,
+      "sha256": "325f32c91e3e316de3d78b136990d4d7e9fb06745f26afd90e04d8c23f837622",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c9168ced-5598-59ec-97fb-ea0aebb3b5bc.mp3",
+      "bytes": 16172,
+      "sha256": "d50b701e31ff6d479e91e8f3c5112b8898d8d608e444d9653fcf00bbdc54a18b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/06f3c1cd-35fe-56b8-986b-4ac3b9d28123.mp3",
+      "bytes": 66092,
+      "sha256": "559777a6b779e866d90be03c0d3cb32f5fb04b4ac17b204ed5bbc5980b034c67",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/376ec646-e2ce-5637-ae8e-d67c84433730.mp3",
+      "bytes": 67628,
+      "sha256": "208cf54eaad3ef661b643fca32af885a0751893f79593e8c3720537151ce3bae",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/e5a21f4f-0aab-55af-83b6-404d61e23854.mp3",
+      "bytes": 72620,
+      "sha256": "bdad5ebdbcf8ad998b38a7ad9a2bc40c93db797c9be9960a08ae5f64d7e54cd6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c168ac64-dde4-529f-aefe-f5f88c5baad5.mp3",
+      "bytes": 144428,
+      "sha256": "979f53e61702f9f81b70450708ecbc249d4a7b46cb6bff00839486121fa24ea6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c688aff8-2a58-5672-9525-c216263b8a71.mp3",
+      "bytes": 167468,
+      "sha256": "023d2eff90a74059af97e0c8dfa2a114a09eeeac5c1c69b5fb1c8d0136b7b539",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1386143d-b65d-50f2-a9ce-dd9b7905bd66.mp3",
+      "bytes": 130220,
+      "sha256": "9b995ac9873102f5b6baedae1b83a3800bd11d70826fee0d489ac690a2d31b76",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0759e0ab-6df9-5d84-b87a-8723f0cbbec4.mp3",
+      "bytes": 12332,
+      "sha256": "b2520a58f642748470bdfe7621a0db719493d4bed6f59332b85ca814cd5ba8bf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a8a2c5cb-edd3-5942-8e72-d3f2fb05998b.mp3",
+      "bytes": 50732,
+      "sha256": "2cdced8bf38b0cb59b157c6fb2303b631a482e4369450ed57fd635e9b9445afa",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/116b4122-2b1d-566a-8d19-b945548f5784.mp3",
+      "bytes": 57260,
+      "sha256": "99e7565178cef69cd2dd9bb5b8dd90c1892ae662c7d45e51baae90fb1899a9f8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/aed880ab-8d51-52c0-beef-5db1143cfde3.mp3",
+      "bytes": 62252,
+      "sha256": "1c686d9d96de99674244dc4d2fd0c6b84da399d48e41594129d83809988b446d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5221e966-4355-57de-83f7-2b92cfae348e.mp3",
+      "bytes": 152108,
+      "sha256": "e1856045beec2a6208530d9467275269c44dd0028183091107b0040512d3ddbf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a163484f-791b-5661-bd18-39d5644fe9c4.mp3",
+      "bytes": 141740,
+      "sha256": "b6c29423052ba49a55543b89f265b66cc7dbea32df2c2498b2a2da09fd1db69e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/56184681-141a-5e99-a311-cc4442419c10.mp3",
+      "bytes": 169772,
+      "sha256": "ef76d3a1bcd4f07d462bcd8cb3a707d3f62bf4fe43e34a06fe7cb0ccc0d39975",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3.mp3",
+      "bytes": 39212,
+      "sha256": "bd61503757b1be70b44ecb1120583898e9c02c7261973ce26beb5c32e5421796",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/69080fa9-369a-5887-b02d-6538e5128341.mp3",
+      "bytes": 43052,
+      "sha256": "348d0548ceba22226e90221992e1445b61c706046716455b36da7679d7ba9cfd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/11358108-4dd6-5536-aab1-13fbc07e0108.mp3",
+      "bytes": 82988,
+      "sha256": "16a70336011e3968354fde903bacef902e0e683eb591cd759a4f14212e080269",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/e60203a7-ca02-53a2-a05e-82bc4905508a.mp3",
+      "bytes": 59948,
+      "sha256": "a6ea304f2a59db07c582e7b465247ed029fdd8b1ea2b2870deb360365896a034",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/4ea1d40c-1b82-5c1b-9b0c-2a68def61e99.mp3",
+      "bytes": 168620,
+      "sha256": "dccf0425c85e1e78f479bde550d7660136789a513ab67ebd85220a47567692c9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1097019a-f68f-54f2-b74b-d7b4b6fa2baa.mp3",
+      "bytes": 160940,
+      "sha256": "356f5ef18aac05efa34776ee6493f2b727b78990e3f833d12ef9fb1a429590f1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9309315e-a861-52a0-8db6-bc891564ff21.mp3",
+      "bytes": 165932,
+      "sha256": "f2352cd189b5658be59ddc85b0d564a159d0b3952766103e6f86d4084274ac96",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/8315fb35-d242-58af-8aaa-638a878ad478.mp3",
+      "bytes": 17708,
+      "sha256": "f8b800ad7ed7c113020902c16f29ea193bccacb4f949e0590c6b9d9f7b7211a9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/8e211aa8-f8a2-5162-b016-18e306ada64a.mp3",
+      "bytes": 64940,
+      "sha256": "25f95aab2d611f71099f18849da88bd911b3f8e632d8425562a2928bd4074601",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7a7788ac-7994-508c-92fb-2bd137a0d6ea.mp3",
+      "bytes": 89132,
+      "sha256": "da2fcb34121894507c0a8bc37b7be33a240a116fd6f1915bb201164b88243942",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c390266d-958c-59f9-aeb3-59611afdff71.mp3",
+      "bytes": 81452,
+      "sha256": "af0c0c148aca14c24ba65193595a5f2ebe9dfcef9634bcf0d4024c433ad9fef4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/216e60c4-d2b7-5988-b283-471644078b7d.mp3",
+      "bytes": 86828,
+      "sha256": "49b8d493014e713d1d17250419e4ea02c807f304e804bab39dd3fa3e04d4e98e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9eb745f7-39a6-53a8-9bd1-672951cbf47d.mp3",
+      "bytes": 92972,
+      "sha256": "0ce0bc857b4075283ee078ce4d4a34757672bada2ab6fd7391b8e86a6a079981",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/899c01ba-a175-50b4-9bb6-9ca1e000279c.mp3",
+      "bytes": 99500,
+      "sha256": "936334a55335436cf760fe91253417170977bd7fda49173c5970c52775383f18",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/35633ecf-c967-5b26-aa51-523165a4c981.mp3",
+      "bytes": 121388,
+      "sha256": "fee09eeb1e2eff7d2944d1970b69d95f7f7c6bd74dba4aa0ee4b7b57d9acadd8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9a84f56c-34ed-5e6c-958f-b4c0df71809d.mp3",
+      "bytes": 122540,
+      "sha256": "e072c1a8ed6ded9f680e157b5af08ded5fd5a24b9f3b28d905888dc033d6c645",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9c275919-233f-5694-8048-3fb1be34cc78.mp3",
+      "bytes": 134060,
+      "sha256": "7dd08deeb95718e64316a7c8708416c4adaef4d9448c66df6caf63314821093b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/e6c676fe-5ce7-5676-9f82-666b505f29ae.mp3",
+      "bytes": 119852,
+      "sha256": "de8b421dc655e3f627bd86f5a2aa2da99d1b7788782fe9c335d014e2036ee6a3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/521bea4b-a807-5eb4-a6f8-bc22a7ada672.mp3",
+      "bytes": 114860,
+      "sha256": "8a44846b50db05dd8cbcff029d602c3fb0a4e4c0438a5bd0fce9c3a7ab484154",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3ff326ac-1801-5401-ae5a-2b9802e938e9.mp3",
+      "bytes": 149420,
+      "sha256": "c3c5a1705455f8a7942c1884c043ab89bbb5a74b8e746bf4d7a889383300c3b5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5c277e2b-e0a3-5158-8b7d-dc029bb99e39.mp3",
+      "bytes": 199340,
+      "sha256": "59135619640cb2939d2614ba39f9b862988511c1c7e88b9f35baf92fb3625dc1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/e94b2ba2-d3ee-5626-9a9e-642a136d770c.mp3",
+      "bytes": 163628,
+      "sha256": "b65362c2010e6498efecadd01a31be3b520db4b96fcf0fa10472aca0ef8b29f3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/36ee3fd5-dcfc-5d8d-8004-33647bdd4496.mp3",
+      "bytes": 217388,
+      "sha256": "a068e2ff51346c51115ebb7d66376de3d16ae92fbf1ccdafda0629c5b7434d24",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5cfec1b4-ffd9-5eee-a091-03050d3a2921.mp3",
+      "bytes": 15020,
+      "sha256": "0cf307e508db184075cf47999993902f26af654b749416ed7a5d6a553a91be5a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ae399b79-e871-57f3-bf7c-c04c54dbf950.mp3",
+      "bytes": 59948,
+      "sha256": "8fe194aff5fed2eb1ecbc1c1c3090e04a4acf1bae85f2821d322609b73818924",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/762af583-556b-5111-9421-0c5387334f98.mp3",
+      "bytes": 58412,
+      "sha256": "bc345732db97e556c1742209f6bdbafcb7b41f3ca44ad326425ce995c721817e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/f017e92a-a6f6-59b3-b0a2-e054aaac2673.mp3",
+      "bytes": 69932,
+      "sha256": "bd040fcc3917c43f9a146fe7df23cd176c63d2d874aa5fcc7087d0da37283184",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/adce8e5e-1682-537f-ae3d-db1a20e2ed47.mp3",
+      "bytes": 172460,
+      "sha256": "780d78b678c09400cab9b5bc7246f38ee6405d57c03b96c78fadb55b32ece0d0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/46939086-919e-534d-8f3b-9b8cec6083d2.mp3",
+      "bytes": 140588,
+      "sha256": "a4f56b3ff6bf48e610a265a7cadc3c277b7af58a437bc2b7248b61ada1ba5ec6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ef3d4bec-a813-5a32-adfe-47a5de6b739e.mp3",
+      "bytes": 181292,
+      "sha256": "a22113411d16e7b9d59b7c9ecf123c0df6a8108eed1edb2cced656d6ac1334c7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3.mp3",
+      "bytes": 61100,
+      "sha256": "17b0c4b238315e47c585355ed5abc1d01b6896fc0775a4af78a5b6b6d1cde132",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/299a090a-6cd3-57b7-8e06-13be3e167bcf.mp3",
+      "bytes": 49580,
+      "sha256": "d303aa741f7a4793a919bb9eb8231342c5f6dde74fa36189d7ce30886d23de8b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/69eb37b1-e65f-5a80-a74f-6a0010245db0.mp3",
+      "bytes": 35372,
+      "sha256": "d5517f543823cabb049640789ba04e2c0af1c1d64c1b156723ee61c94451f2ae",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/069dd985-0294-545b-a7a1-5a5920ccc048.mp3",
+      "bytes": 40748,
+      "sha256": "a9e4db6bab78c32dd88a8b78b37e73764e5ca37e016ee5423d16d01b92e3052c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/077ad4ce-14a6-5f03-8d23-896b7b4ca174.mp3",
+      "bytes": 173612,
+      "sha256": "f54ea0e5eee4f29731c453944730f8af295e9f83d36f36fef88d84d9fbf239c6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c82bf4ed-fa7a-57ec-ad67-f4758ebe46b7.mp3",
+      "bytes": 172460,
+      "sha256": "477d6caae9164dfae3eee8bf6bcd2c5473c0dae645bafd31e4725f1c862862f6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/78ce0967-9c48-5901-8c21-41bf8cc13e14.mp3",
+      "bytes": 188972,
+      "sha256": "9b4b4810a23751e57867875488c7f77e83ab46f1becf4e6c94d60d2572a2d130",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/2ab3adfa-132e-53aa-8b51-8840f3b24192.mp3",
+      "bytes": 16172,
+      "sha256": "d4c90aa5ce7c1d103c232b44b66255f3fb74ef2d1df70fe26c3f6fc8bb547cbc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/70b9ec14-76c6-5a52-876b-7dbfaa179270.mp3",
+      "bytes": 75308,
+      "sha256": "da9e181c223fab15e1f9ef4f6eba968c51312655bdd21281925dfb34882ea713",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b3807847-8bbe-5ec8-88d0-b8656df91eb7.mp3",
+      "bytes": 69932,
+      "sha256": "8606624fea8e2395e20f7a6963e7e617fc7b83fdf00495c3885b44379e89ca5a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a5aea325-d4d7-5ab2-8f2c-171e8b0e5f49.mp3",
+      "bytes": 85292,
+      "sha256": "185bad591b91edb35d878927ebc0edea104bb1bbaa159cf7656fce0460777c40",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/fb94bb2e-806e-53cd-a0e6-ff9e94895cac.mp3",
+      "bytes": 69932,
+      "sha256": "18a30232be32ab473d34c9cef0f6641ea5482d2695cf52f912d1bcfd8172908f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/109ada82-9199-58f2-b372-aed930dcb91d.mp3",
+      "bytes": 103340,
+      "sha256": "d41109e8e450fd7a35a1b469903cb21f9df784657add4f39224c40264b94c14c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5a9f55b0-79f5-5f04-993d-bb144f158824.mp3",
+      "bytes": 116012,
+      "sha256": "c681c37d1af1553a517b1a153f2662ef7adf104b9c2254bc99620b679000ff4c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b818af8c-1823-582c-a7c2-3b1750d4281e.mp3",
+      "bytes": 196652,
+      "sha256": "6958d3de36ca08907b4d54b69b3ae3521667094173f4e5c31cc4c04411fa6d6c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d734b59a-5b6b-5329-8e6d-c057be1d2396.mp3",
+      "bytes": 157100,
+      "sha256": "4c5a3c0b908d393098a52ee11abe69e8a9278dc33cac1a19a474829772e901dc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ba426068-7889-5964-b07a-97f2e8ad4e80.mp3",
+      "bytes": 208172,
+      "sha256": "fdcd15b010b1a895a0809a3a3c0c09a7b3c8be27f0e671a3ee78766d53a2d7fc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/028397a3-6eb3-5491-8662-0b0908345941.mp3",
+      "bytes": 16172,
+      "sha256": "df8b2d9a0933c7e163190547833e80b081cb27c391534babf61153dc7c86bf9d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5ff20a69-ca44-5c91-910d-fb50bad6d0fe.mp3",
+      "bytes": 36908,
+      "sha256": "d490d01eb9017e8d8546f7f18e5c59f316591fd25da6fb92a9a599c2d76919cb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5e942f7e-cd3c-5baa-bfc3-b5a60fa6b08b.mp3",
+      "bytes": 46892,
+      "sha256": "94c053ed97895dd768946b65ddd7aeed615049cd313ca8991e255c322afce555",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/44c2b5ed-2573-5bbd-b5e4-c2dc4d1147e7.mp3",
+      "bytes": 45740,
+      "sha256": "b7c7dd38287064bd5e8aab5841275c463ccac7a75f1448dda4db5783d2defd77",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ff3cb642-dc67-5715-b434-df8eef001992.mp3",
+      "bytes": 190508,
+      "sha256": "738a6f6a3e9ddfd387112c78dd3af255408f6c600ac10a4cb9eafccd057fd279",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b043e1bc-8436-532a-899d-21729faa4d8e.mp3",
+      "bytes": 181292,
+      "sha256": "d5e1cc69340f981ddbfff290aa100b54cd63b98a90c337dc1d7aac2310985f1a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/2d452837-20c7-52d0-9f9f-a18d12e91f07.mp3",
+      "bytes": 222380,
+      "sha256": "4a66dd80816598f5bc1c93bc9f0b00d46e71e6bec42c7a1069beeda8d9b31249",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/22ed6dc4-fb2b-5f32-b2a4-dc246001483f.mp3",
+      "bytes": 18860,
+      "sha256": "0f82d46983dc840a48e9316f94e5207ccefe1f015c6e94a9f5be4ad1d47f6100",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/05108125-5ed5-5a5a-ae41-f0aa3be805d6.mp3",
+      "bytes": 58412,
+      "sha256": "8c576fa0e3fc44a311a25bd91d099fd462f73c3d0b90829cf6f855ef3785daf0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/be562ad9-adba-5cf3-8878-13feab5212fa.mp3",
+      "bytes": 56108,
+      "sha256": "3d1abe67c6f38d2248957340fa204e9cebc6f31e12ed5bcbf220c3a310084484",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0dd537b4-a042-5a3f-bbb3-d8cbfbc9259b.mp3",
+      "bytes": 59948,
+      "sha256": "430b8de71d1dfca89182831fdef244b30e6d2b48401cc4be3e7a056fd163e55e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/12e5d19a-d52e-5f27-b32e-4d1f9b57c2b7.mp3",
+      "bytes": 162092,
+      "sha256": "6dd047e20b2345dbc07d8e757472370b1b80c539d4b6ecb3414ab264e938b14a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0dfbc84d-900e-57c3-9942-cdc71b6b7523.mp3",
+      "bytes": 200492,
+      "sha256": "d6942876d78a4e9d143b093f8f1a7c151833b4b949c11e6f1611acb39710e2ae",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/118162fa-1ab6-5a1c-9bbe-31ef25e8fda1.mp3",
+      "bytes": 181292,
+      "sha256": "6a9d11841cea2bf90fbff4fad77f7f18d9091c0802744ac601a628d803d00c6e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/54daab02-3e05-5bc6-b34f-d92a5e82f47d.mp3",
+      "bytes": 17708,
+      "sha256": "690797b066ed50b0923121722244626bef066a24e9ea3920793716c674ab6a23",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/fbd8c619-a4dc-52a5-8a84-c7637a5e7893.mp3",
+      "bytes": 81452,
+      "sha256": "817b9e979baa02697a6b02dcd9e5325ac74d5c6da60de46cf7f6ce9a9b739ea3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/e6ccd8b5-b498-5386-af38-eb08d2028fbf.mp3",
+      "bytes": 76460,
+      "sha256": "1a0895232f95a18ecc08009fd5845cd69a8e1e9b69d2ae2c78e861bf5f410527",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/f75bafb5-eb43-5d67-8cd6-18ece7cc79b5.mp3",
+      "bytes": 75308,
+      "sha256": "cf7770efdef725aa13e36d2b913a22ad1dbc2da8ecc2ff23862680eadabba569",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5cb6c77f-81e1-5ac1-bd54-3201654ea7a2.mp3",
+      "bytes": 130220,
+      "sha256": "48e104b3de124ad9e33f7b7bf24ab99754979955fae08754bbba87c5ae54eefb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/69cabe93-e326-5a79-ae7f-37551842fcbf.mp3",
+      "bytes": 122540,
+      "sha256": "bbbd9243c947e2e1c376998725a25fe920ae2d9c04630a36b71303572398dd57",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/926dd79e-17f7-56e7-a7dd-b77a92182263.mp3",
+      "bytes": 154412,
+      "sha256": "335844df501aae11168acb43166f704e1abcb12aba56624ca26ee75a17a48f18",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d3df4812-78a5-59b2-ac81-adb2d6f8d5e6.mp3",
+      "bytes": 20012,
+      "sha256": "7d1e3ed11bb3fc16308acd8e254c59dcf16e91ad245e85f743bb6c42c83b771a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7f4737ae-445f-5443-b0ef-71e6a810ab80.mp3",
+      "bytes": 75308,
+      "sha256": "64f63bcbee1f1ea3ba911d7777f5044c982e18afeb2209ce293a3d3636a099ab",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/fda852b2-4523-5eb2-9aef-d58116efb996.mp3",
+      "bytes": 95660,
+      "sha256": "949dab30b7fe3a03eddf43c5672f06a4c644901ff0a0ad272c96362348455074",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9954a6d9-e66b-5c05-bdac-70bddb76e2cc.mp3",
+      "bytes": 67628,
+      "sha256": "28d0b520a0ede4416070581afcef8c3f15c7d832819187c46d737095e2c778c1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/036941fb-13f8-53b5-a608-62fbbc33fba7.mp3",
+      "bytes": 100652,
+      "sha256": "3f10a2c3ca35ab0ffd24ef5a49f12b3945fb04dd560e29950f0f28e4395587ae",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7cfa203e-0ef0-525e-a3c6-b01d08eaa6de.mp3",
+      "bytes": 100652,
+      "sha256": "c1bb15b670d29e2604c488568567b83485df07bd4edc486c7f6655976c0e3881",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/23d8ebf3-d5c4-553e-877f-6fdcfad4c034.mp3",
+      "bytes": 121388,
+      "sha256": "6999af1d26a5be891ce59d605b9f8c7af2fc4ac602c9fbdf80b020c219ef1a99",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7ed4358f-a905-5da4-b09e-9927b02a21b8.mp3",
+      "bytes": 18860,
+      "sha256": "32cef68b9f898e8ccd5845b7464f442fcdfa43b918e4b4f033e20a3e7f09d6e6",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b5fb5b57-d9f0-5066-921a-98ebde6aa5c7.mp3",
+      "bytes": 89132,
+      "sha256": "89469093f90b697e5c59d3a8730bc06f7f14806f88970a4d87a1a3c0b37f7733",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/500a0616-f60e-5a6e-9485-7d63a40beb16.mp3",
+      "bytes": 59948,
+      "sha256": "ee7a11dde6d065f85042ba588b1ad0f8c171919975bf67f7c9b4b8574886f1b1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/fd99f653-f632-5685-b0d3-1cfc409a4435.mp3",
+      "bytes": 85292,
+      "sha256": "294542523b72fb61fdac48ee99fcd86e025b3c6ecaa4b93f1d35984eb9a74e2b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1b98f27b-44f4-524a-a251-bd30d8dab533.mp3",
+      "bytes": 168620,
+      "sha256": "745220a20aa005d33ccec478b7a1cff03ad960d08fe42f23bbc313535974e559",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/246e4cff-1aa6-590d-b499-a5300b91493d.mp3",
+      "bytes": 173612,
+      "sha256": "70fadba29db7c752c341bc74a15f8bd0583d4f112dc551cca632f1707c76d469",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b931d816-e3c8-5e8e-a9ad-ccdf7d31fd33.mp3",
+      "bytes": 188972,
+      "sha256": "add5853f28f92b9d38f2c5c0ebf554d29d5b90be3b2a83e8692a24244a2463aa",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3fff15bc-769e-5cbb-a408-3b0f7b72046e.mp3",
+      "bytes": 17708,
+      "sha256": "9f1c40069d3593deaac0d970ce728c1e328467a05c21216921fbe4c25ded9496",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/21d0bac9-9917-560e-9165-b78cfec17a0b.mp3",
+      "bytes": 76460,
+      "sha256": "5bbcf0fc107d5be4b62fb518e0f18d592ad6489b8c4d6a32647cf2e61a87c567",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/299c109b-09a5-5e7e-8042-44f8fafb8a6b.mp3",
+      "bytes": 89132,
+      "sha256": "cf2aeba30ab596e9630302eeb2fadec6307cdcc44aa037da8d6206607c1fae55",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/79fc82a7-9830-5cfa-9ce3-7918f65a3c86.mp3",
+      "bytes": 82988,
+      "sha256": "baca6025bae9392e277c6453613a187752dc99268439ef42c8643778d669a0ec",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/bc8cf789-c30b-52a8-99ec-e660532999ff.mp3",
+      "bytes": 165932,
+      "sha256": "ef86f8523967991c36db8bda8de724ca68558770b0f53a73173eb892ebbb5e92",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/df8dd7b8-7fb0-55a1-8154-2854216ff815.mp3",
+      "bytes": 203180,
+      "sha256": "531d1c2935460a3556ae838dd2990fc08aa4bbb74b8a6fe50f087505e9f3772b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/697c76f0-4cfc-5834-a072-362409541e99.mp3",
+      "bytes": 183980,
+      "sha256": "5eb28c6626410d243cd6a575ee6f7a7a543b6ce75da7a5103cdd0acf17984906",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0c68403d-bee7-5d87-a95b-436d70bccca4.mp3",
+      "bytes": 33068,
+      "sha256": "30cff01fcfdf0736d54484491431a445d702e64c215ec8ccdaf7ef44f4ec7960",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9fd4dacd-c746-51ad-bb02-3d88f5b28859.mp3",
+      "bytes": 46892,
+      "sha256": "0f21a20aa49b4e1b58c55663657f70ced9357deb2c19797e2d325ace6c064357",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/bd7d04d1-8c0a-5190-b633-5cb3479c1ba5.mp3",
+      "bytes": 53420,
+      "sha256": "05dd456b4014329de409c1b899346dbdbbca4e0163ddf09ddd01ef4ae9cb2cd9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d69a0424-b0be-59ea-a935-a4fc2508eb2f.mp3",
+      "bytes": 176300,
+      "sha256": "100866997ae213b3d3b5011786a5b3cd394104c6edb53e9315e1fcf645ae3d95",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/152e9c5a-5d63-56ac-ad14-d4e79af4b2f3.mp3",
+      "bytes": 139052,
+      "sha256": "7eccaa7dc77105d2540389d310f9ab577bcd09e7ccab4583fb2aa1baf1f2344c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1b0e656c-b82c-5e75-ae14-7341b81dcccd.mp3",
+      "bytes": 135212,
+      "sha256": "7fdd501b827b66bd0ca0a3f281f0d020c757db1643ea9a7d04062f66e5a96630",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/6e192f4e-eef0-5cc6-9214-fc485bbcf615.mp3",
+      "bytes": 12332,
+      "sha256": "ee7defd5eb4a9578e5e7d1e401f598a2ede662174dfe973412ad9f11bc6718a2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/fe407e7c-31f5-567e-9f8c-ea19e0eb7e5c.mp3",
+      "bytes": 38060,
+      "sha256": "69aa5994ec7e2aceb4b68e6ccbbb1fcc71ba347f1c6d7eca679dabc1e2f604cb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/cdfa2e0a-3a2b-5e2b-942f-5f76a31f19cf.mp3",
+      "bytes": 33068,
+      "sha256": "8bb8558b1e5e614a95231ae018ac9885c73d0f647f8f5397334c53d093dfbe03",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/25496e6c-7ecb-5dfd-9179-9f83e8a016e4.mp3",
+      "bytes": 43052,
+      "sha256": "16f0160d61c57f9a5eee9c232032a58423ba0b3330c9d0d61288793e41ae7483",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/95219f2d-17fc-5e8d-ad57-338cf9b783e0.mp3",
+      "bytes": 203180,
+      "sha256": "58564b77b35235f388d969eef257c70e4bd1dae73191d9956bc573a9a7033b20",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3aa3ca8d-7a2b-5013-8f15-246930476990.mp3",
+      "bytes": 188972,
+      "sha256": "7eb18e2d120de7ba4050d381d1f1cbb618afa52e7bffdb30e76148ce2ae434ec",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/4e26d05e-e721-5244-bf51-9cbc9c6bcbaf.mp3",
+      "bytes": 155948,
+      "sha256": "7baff11720360be11f7538ae6238b90b012dbc3bdf889776d7b23428b962b642",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/497d172e-c9cc-5102-9c8d-11b3525b7f00.mp3",
+      "bytes": 12332,
+      "sha256": "647b4ff7f49fb9b436cdf16c7ea0f5118860cb3a0b306969717ef258f28c997f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ab264113-2fd1-58ee-90c5-708d3ad294b3.mp3",
+      "bytes": 45740,
+      "sha256": "55e3798ae5b739a0b8b116b0fefe0cb39950d5562c3561765b41bf63adc09310",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/71fa4609-b4f1-51fa-bdfe-0fb7d5f4cf1d.mp3",
+      "bytes": 67628,
+      "sha256": "16a648644cfe7159c2f60aa84ce4ab8b368d006377a5d9d6896ed09aa3682e95",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a794ff33-d02e-5609-9a8d-e928fa7d46a2.mp3",
+      "bytes": 62252,
+      "sha256": "6ca2da6f1450f9c2c54b88213ebfacb710ee73476439429d7ccdb6ac824bc926",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/285bf4ba-4183-5a5a-99fb-203c4e5732f0.mp3",
+      "bytes": 139052,
+      "sha256": "82148f107b4e97302f988798f633840408ea948f6025cf181c4760fd710babcb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ec58de0c-d397-5e23-b39d-6d5d0b65751b.mp3",
+      "bytes": 134060,
+      "sha256": "f67ebec6ea937098a2b0ed6f09440db74d42998e6013bdbf2804c6208941eaa1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/30a06834-6ed1-59e0-a653-1eb2e9bd04a0.mp3",
+      "bytes": 152108,
+      "sha256": "eede1eddaab2081a8c68fbc776298e2da9d1c8190e863105930211738be72d40",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/2b5a7b0d-2eb9-5a07-9cc9-7fb253196031.mp3",
+      "bytes": 15020,
+      "sha256": "94a4b7690958bdbb02713f554433a1bbd4bdf104ecc6cf8ee5782f5e080b31ae",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3b89cb24-042b-5731-a49f-a75e142723a9.mp3",
+      "bytes": 44588,
+      "sha256": "c99ff3890888443df30958f5b993c5348b0740d56b6bb621ff9da0e2b54b39d9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/27489355-daf8-58a5-8594-80e88f2872b7.mp3",
+      "bytes": 67628,
+      "sha256": "f56832e3a6fd31a3d459ad26b7848a50c3d9b2b52f2f4e693169be4396d7b55a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/66bfa0e2-09df-539e-8f2c-a4ad01144cbd.mp3",
+      "bytes": 59948,
+      "sha256": "3c1a9b0a74ea0d19b2fb445239fefd581e70c1eab8f5da2ded12fb9ec6cdd922",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/45ab3835-e07d-5f48-8fc5-e257ce2fd533.mp3",
+      "bytes": 126380,
+      "sha256": "04ab0eeb4807fd1889811df8fee9ae3053aafacfa326a3efe8b0d6d9a1557965",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9741b2d0-ced7-5a1b-84da-0c133dc13a52.mp3",
+      "bytes": 134060,
+      "sha256": "b0e6818e5576b3f8314342373fa8c9080771671a9fffcb0301fa9d15ee737bcb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b13ce667-fa9d-5774-9bed-06756d76f6fd.mp3",
+      "bytes": 118700,
+      "sha256": "055ed22ecc780826cd225a5ee8640373b4d480722fa7dc52d185088e9c4cbdee",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/281fc4d9-15af-5290-b078-b2837d20f5aa.mp3",
+      "bytes": 129068,
+      "sha256": "69d1c4910a60173d21d222b07f60cbb0ce9ed41f335a03113ae22b5dac579561",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/e857c34b-cd14-5f0d-a58b-d9d6526ddbc0.mp3",
+      "bytes": 123692,
+      "sha256": "a72b839649b73e9f68b2c508d0c57eae690b24194a6100877448c20e11765d59",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7e4d11c4-451e-55f4-8d3b-77bdc62fa956.mp3",
+      "bytes": 140588,
+      "sha256": "c1012a731116541468ed05428855c492283a334c4d338fa0331324aab5273602",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a2f9af30-83c8-56f9-89ad-0d589d8931ff.mp3",
+      "bytes": 125228,
+      "sha256": "8466ee19c9ef0a78c2e9e97b3449706d56087ff9a09e1c9a5087794381f4d709",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ad1623f8-b471-5918-a0e4-3f22befe7eda.mp3",
+      "bytes": 165932,
+      "sha256": "2d55145ec534b2f85e59a62bec26b2ef38f326878de6d37eb67a80a216b1d85d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b748f1cc-3ec2-5bb2-b46c-3ff5fc703857.mp3",
+      "bytes": 136748,
+      "sha256": "f3c4b361cf6cb823ab1e7cd7f80fb6124fbb1810f00fdf9dc735d0ff724bcbf7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/13434369-9007-5f2f-b817-ea2f4530beb7.mp3",
+      "bytes": 15020,
+      "sha256": "cf81b98136f5750f62f34c5dca1606c32ab8eb038466d9ad7d8dcb6db930d1ed",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/03948e05-82d9-53a3-9eef-250ceb096be8.mp3",
+      "bytes": 45740,
+      "sha256": "be44d52cee2e04856e39419f7049671d5f0730bdbeac295d2c6a3dc203f76ec9",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/97d8513a-8cf9-55b9-8194-4bc071e7339b.mp3",
+      "bytes": 63788,
+      "sha256": "c8c2cec2e1dbd5a3df9efcc0d966e2cf6f40c7d782b57ad84bdec2888cbd2bed",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b3d409b6-9cbf-5cfe-8342-d6de34455460.mp3",
+      "bytes": 54572,
+      "sha256": "ae4d8d4656fb6a560349b5efd59aeed64cb92350911707453d2ca922dcbae0ca",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3baceab6-69f7-59a7-9b9c-7e5385f490da.mp3",
+      "bytes": 76460,
+      "sha256": "a3cbeadbe503fc0160adb1bb8cdb29f995b53f30a9ded851032d417649504945",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/07230d84-5789-57b9-8c8c-c160e6625fa2.mp3",
+      "bytes": 106028,
+      "sha256": "a18bcfe2f97a8cf406ae2436f2fb59b0596e26ceb4b2cd733c1cbb57c0162170",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/34fb06b6-8b2f-55b1-8074-e99f7385efc0.mp3",
+      "bytes": 80300,
+      "sha256": "df14c9f29bf21511175731bd0bf4585beed5f32dc71d79ae283e4f31f6783a25",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3d782717-5951-5cb4-878b-6929a7d84e32.mp3",
+      "bytes": 148268,
+      "sha256": "0768b97ba15f481008b2c6b596fc4b487ecb0250c4e1ba196402e1bf1e1885ca",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/106fc33f-57fd-5c0d-901a-d8418835a558.mp3",
+      "bytes": 139052,
+      "sha256": "9d19e0903678de3ccf04e1bb000752aff45a76017022ef632cc832f8498ffa59",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7b5e5b7f-5995-5d6d-a55e-0ebea870a2fb.mp3",
+      "bytes": 130220,
+      "sha256": "02a3c5797cfdcf8511ad077612548d65ac9a5d38a1fffc61b1f888f39cdee52e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/dade0436-5fd9-5c66-a879-8df16a8d9e53.mp3",
+      "bytes": 12332,
+      "sha256": "bae142a5f072364b19ee92c8ca80639a7aeae6d43f4e21bc32333f5456247aa5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5cf9a06e-087a-5f20-80f5-a156fb4197b6.mp3",
+      "bytes": 64940,
+      "sha256": "28d01d0d1d0fe8ede1502b1959c44c71b76412caf027c801d22ae6ae947b7c09",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0cc1f5cb-6d8e-553b-aa94-cc4d0f086987.mp3",
+      "bytes": 52268,
+      "sha256": "e513eff544862a7ac76326514821cd3215a14fe3ced3065ec56b260297879f25",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/4ff95114-89cb-5663-9f34-79b3ecd78b6e.mp3",
+      "bytes": 46892,
+      "sha256": "395a0c59aca35222d901f578b05bfc1f61a1d9735eebfa10b647e83454cb369c",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7ec0a9e5-584c-58ce-91a4-069984176c18.mp3",
+      "bytes": 249260,
+      "sha256": "946ef476c9a7df90fa0f1b5ccf33963e9f52a85db6639c85a837a4e34bce72f1",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1906bcb4-4b1e-532f-8689-be1d411fcbee.mp3",
+      "bytes": 208172,
+      "sha256": "3383703680b67944fb9815d042bfe29fc444c106491a3b2e824bd09fe90cd682",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/834669ee-7b4b-5f94-9e60-c804fe60a36a.mp3",
+      "bytes": 195500,
+      "sha256": "36176aee9beb80fecd145ad8f90824552488ec6ddd67c9aad5c3b40e407f0e0a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/bdc4f531-cfef-530d-931a-55c56b14eaf8.mp3",
+      "bytes": 10028,
+      "sha256": "bba64ab30fff1250a4e60da5a93c48b84a9609fd6858a1db29fe99b7be8bd1c0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/660af7bb-530b-59de-b0a5-4fc908b3712f.mp3",
+      "bytes": 52268,
+      "sha256": "55c9d7189533c48ad8fa02a382045234aa8db72ad3e5e719f2668cae72cf0d08",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/367ed018-3a42-56ab-9c64-dd4ac302babd.mp3",
+      "bytes": 68780,
+      "sha256": "114286d92a81e8ed524f7bfb1042753911acd7d89d73503660c31df2b38d72c5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/b20e1963-91d4-5a3d-bb2b-922ff2ed5aa4.mp3",
+      "bytes": 63788,
+      "sha256": "1fc1e170d19919f6e71465327fab787ff563f367d2140cb203c8901f3312c71e",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0cd3b8fd-f4a7-5d7b-a032-bf2c6eb8880a.mp3",
+      "bytes": 153260,
+      "sha256": "bae5c4b5282091d5fa53966d986ac6e892604b1c873405f81e5ad097023d33db",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d153b626-aa40-584f-9fe2-a8517f1cc349.mp3",
+      "bytes": 164780,
+      "sha256": "907ae82b85c5e9b75536ca58a2a26dbe081e95bec57a37e597149e29174fb202",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/6baf03e4-d317-55ed-96d4-b573805fbdf7.mp3",
+      "bytes": 145580,
+      "sha256": "5ad73b060ba12dc5c883e19c69e5fd128b27fb27477c6953155101eb24ead15f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/82f9dfae-be12-5e40-9e28-64a596c44b1c.mp3",
+      "bytes": 13868,
+      "sha256": "56e5dd06b4199a4fb2a37e7c812f718992714893b4db6a8616e345cf3a8a6850",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7517e68b-4563-5931-8701-e6e60f7c15d4.mp3",
+      "bytes": 100652,
+      "sha256": "5a2bc936b6611ce1584502b5d59b398580a31f83187d27edbbd8969b7dd88ea7",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/163c18a4-555f-519d-a0a3-30db943a3608.mp3",
+      "bytes": 84140,
+      "sha256": "4e8d1d888b5ac67255927edbe01e4b59309f0c00a80dad5b69e59f6061cd5f13",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0131c172-5bd8-54fc-a59e-002449dd15a1.mp3",
+      "bytes": 121388,
+      "sha256": "650fe8e37b1916b0cbb17849d750fbcfaec2fe8853987694429dd8f947afeffd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/31a2fde2-355c-52e3-a333-d93270e4d133.mp3",
+      "bytes": 168620,
+      "sha256": "fe8097488ff9604dadf6ca4663e536ccec66ef56d0975f6329cf69d31e4e0b03",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/23c1c18b-a051-58a9-a898-d0ab60c5f6e4.mp3",
+      "bytes": 163628,
+      "sha256": "15eb2b17a9942a8966026b195a26594aa58957bf5c5e4fdf43ec57ea46bf82c0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/1c586a62-64be-59fa-b19f-102694bcf3cb.mp3",
+      "bytes": 122540,
+      "sha256": "0edfea569e5acb7ccd5e892f123c9c80463b5841acfbe4991c91ed61270c9e6a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4.mp3",
+      "bytes": 18860,
+      "sha256": "09f9b65e2c0eb44042e40b1c65edc27fd8b0d8f6062c9fa9beaeda29a9e385be",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c2af0319-c9e8-5dd4-b598-a726e3ade728.mp3",
+      "bytes": 148268,
+      "sha256": "6f6e297c78fd9b49e220f65db672a50e2e8d0e8dfd6ad349eac773532b161979",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7aa7f896-3eff-593d-99c4-07b065b2aee2.mp3",
+      "bytes": 131372,
+      "sha256": "7c39d7c6c8cbc6fd35cd1117ff6c34f0638a28110eaf2e56861a11e8587a548a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/57ffe60b-0935-5a46-b3a0-609921eb383e.mp3",
+      "bytes": 132908,
+      "sha256": "dcccf28fca43f7cf6bd1aabc1354fa30bf58ceb74d39d77d9ddf60c1043cd1a4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/733a324a-cdd0-58f8-ac34-d83de0ff5929.mp3",
+      "bytes": 80300,
+      "sha256": "72fb1ea04dbc92f39820b7d1d460d18aaaf4918113bb48564366fb887ea5e84d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/d7109dae-62b6-54cf-8bbf-d45e69cfad27.mp3",
+      "bytes": 81452,
+      "sha256": "c47ba7798cf5059ab78223351691310d4688e24f71f99a6488773258a59f20e4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/469e1975-a548-5547-890f-121036efe4a2.mp3",
+      "bytes": 79148,
+      "sha256": "fc570829ae2298afd0599277c2d7c0faf8be1b9f1dc9754f570d0f406935f04d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/bbb069db-475a-5385-806d-8ad5f8c81ede.mp3",
+      "bytes": 202028,
+      "sha256": "a421bc0eed6fe46d4d9c161bbed21629ff3dfde6822891102757a90f888f79e5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/be785c8a-f3ef-5944-8cfe-becb451edfd8.mp3",
+      "bytes": 159788,
+      "sha256": "710c61f558376d0cac3ad78de4b48896e30dcc080ae36da69386285b41f73184",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/655bf305-5cfa-5e8c-b936-aa1431511952.mp3",
+      "bytes": 186668,
+      "sha256": "d6f04d9476a65d62ef8542209b57f1cabfd8631b370bb8669290a104d23a70bd",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/487f57e3-2622-5a43-a4ac-b1942ba0c5bb.mp3",
+      "bytes": 26540,
+      "sha256": "3ffbd5e02c65c7119e61071203e79709efc22390776558ef75e37aa9bc7ce32a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3ae30381-b74a-5087-8ae4-c1e7ff162af8.mp3",
+      "bytes": 68780,
+      "sha256": "d7e9f266232acec08c9fe47f12a91f59ef8c718a031a7d7243ec607a6a30b03a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/7a2a0bb1-45bf-507e-a448-c22da7f2778f.mp3",
+      "bytes": 102188,
+      "sha256": "8d43787f01bf843ec95cf25f018d37409efde7584b8369bc436b9309b330b3ec",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/f2dc81ef-4f1a-5dc2-9974-e7552a6fbab9.mp3",
+      "bytes": 89132,
+      "sha256": "a820f4e085abb8469cf1f4916b9082f6334b36766a0e43ded17f2de30f48b354",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/8d98706f-34f4-5f39-8630-02db0cc6fcd3.mp3",
+      "bytes": 89132,
+      "sha256": "97368fbe91e895e39873960cbb892f8c39060f8621bf8d83487d73ad6e6eb6af",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/cc5924ae-8a2f-52bb-b7ca-04604bfe26c1.mp3",
+      "bytes": 123692,
+      "sha256": "a1b4f20beca4d46a5825276ba2be155a4c485cf220d4743bccf0de666ab71e24",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c01c9671-d128-5006-8457-f9d18d3c9929.mp3",
+      "bytes": 203180,
+      "sha256": "2ba161b6bec59aec9bbcdaa610d6214d840968c5c4b0f1fcfaf1426b751a7c12",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/427c9195-fc65-5a51-9730-96667013118c.mp3",
+      "bytes": 182828,
+      "sha256": "6995446f9609e1ba6099d606ec1573919557a69526e00a638a059bc91ffd614d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c6532c8e-9139-5d43-874f-2ee4bf68302f.mp3",
+      "bytes": 165932,
+      "sha256": "acbecbb2ee27fd1c828f7fc0af1bb909cbfca11154c05b39809df76a0b4d06d8",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/24c794c7-67c2-5fed-8a75-eea927931519.mp3",
+      "bytes": 173612,
+      "sha256": "4a0990604e583f4efb938666c599b9210ed687e4e807de408a859003e5cf80a2",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/187524fa-5545-564b-bcfe-99d01f5f3f27.mp3",
+      "bytes": 16172,
+      "sha256": "46815dca0ba1e2e443f9fc4ca26a8d14caeb9700af066f629e75251017b456b3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a7e4a7e1-0587-5c55-8a7b-e28ade7aead4.mp3",
+      "bytes": 82988,
+      "sha256": "072505f2469b0d75832fbc9045b63184cc91b5a99fa50132141cb82fa1bf9583",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/5065ee31-26bd-5759-8d55-75390f380bdc.mp3",
+      "bytes": 111020,
+      "sha256": "39e99441660a67d660999c9cf7281af57a5ad270f861c2eeb122359b7505062b",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/cdde8ef6-cd27-5e95-bc26-5f7a1a367a88.mp3",
+      "bytes": 112172,
+      "sha256": "9a5016b2de42a2c65550a731db48d9b7801987a46813b259fe02608bec271a8d",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/8c946cac-1636-5165-b77d-a8928662fef2.mp3",
+      "bytes": 195500,
+      "sha256": "b7355e81d91c1bea3658bf273d69b7cd7fd1f8d0196fa1c53c0db54ba5d7280a",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/87c25b4c-0191-5b9c-95f4-603fbeb4f140.mp3",
+      "bytes": 173612,
+      "sha256": "f9eaa404ef209323b97f6353b0ec6024bbf361b5db6e6ba29c3e9e1cc6427265",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/38b3ec38-8b6d-5a56-a031-e909cd4502c2.mp3",
+      "bytes": 153260,
+      "sha256": "58240b57493cdcd515619baea4070d2d5f341105327844936c5b16e5d6cfbdca",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ab98d6ac-e941-5978-b758-cc69b760cf87.mp3",
+      "bytes": 18860,
+      "sha256": "e5840d7ebac7c8e61d4f8b39caf468554277c96e66ae453cc5e51e33320263dc",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/c9022df2-bc1e-5085-b257-8ca75568ae7c.mp3",
+      "bytes": 53420,
+      "sha256": "ebc16402397c5d594fe387f5eb61f1798c8008f48fcaef60e84a07679f06ba46",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3d32c5e6-55ee-51d1-8f3d-6d66bf49f0f4.mp3",
+      "bytes": 46892,
+      "sha256": "28b771744040fe3509d2f412c8deed230e973ab1a84fe7dba0662010d6742964",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/3555e56f-9059-5aab-a150-577ed6869e85.mp3",
+      "bytes": 63788,
+      "sha256": "f768401bb582b0c5867e8dba440afef284f04d5ed7970382e2c213a1b999d000",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/8a792e4d-3517-5e26-8b92-fd28e2c8bcff.mp3",
+      "bytes": 111020,
+      "sha256": "295ad0cb41629c7603e008a5f0cfe5bbda459cda02c3f28bb422e321ffff10c3",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/0747157d-d1af-5c28-acdb-9e425baf49cf.mp3",
+      "bytes": 82988,
+      "sha256": "605869ee081fdb6a08a186079f0d779f8af45cf9b7d780f5e1cdec756a4af367",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/191afb31-006a-5b7e-aed2-0ccb1d6f7af5.mp3",
+      "bytes": 145580,
+      "sha256": "f1c95c13d5e3b1f07edf7884935b40d64b8bc111911035e2fe2f6c67b75d6a82",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/debdd36d-d229-531b-a5e5-efd7517fa4a9.mp3",
+      "bytes": 21548,
+      "sha256": "209e611e2d435bd702eb52d29b5778bbc78605f950b1e4c0c712d7e1ebc7bfd0",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/9e9a1864-6412-56d9-aa16-25e07f3c5d5a.mp3",
+      "bytes": 45740,
+      "sha256": "5e205ae121191cf81a77ada9b79ac26aaae5d7bdc2fdcc645d3f9877292aa6c4",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/caec31fb-7bb7-5a33-8156-8d0070b09732.mp3",
+      "bytes": 54572,
+      "sha256": "e5d981531d26e701e047b8c67913fd72ad36c3bc85e37623d2d75fcaef3ed7b5",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/ca390d19-1b99-5cdb-b7eb-46179a4507de.mp3",
+      "bytes": 46892,
+      "sha256": "84c4d120aabcdffdef296dd21582b9e1c5717333e9645ec7be4a076956ba4bcf",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/a84972a1-79e5-5d0c-86ab-648ad177fee3.mp3",
+      "bytes": 61100,
+      "sha256": "d95d14a0adaf4a178b4b52ff8c2aee85140058ce9449fde32320b5ef3531541f",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/05ce4f9a-08fb-5f35-a40f-dca9d63a4429.mp3",
+      "bytes": 98348,
+      "sha256": "6fd0c097f66ad4ba74809bfc254cae9717adf63d49931ab1031a679d9dbea0ab",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/audio/wordbank/2706fd2bc0c87488/51c8ea86-fb23-586f-a137-aef631b570a2.mp3",
+      "bytes": 72620,
+      "sha256": "1402b6890e069cc661c2e265d981aa1f209f338caffdcba0a704025843f566cb",
+      "kind": "wordbank"
+    },
+    {
+      "url": "/scenarios/travel-airport-gate/revisions/1/media/image",
+      "bytes": 2073698,
+      "sha256": "5f29fc06a1c411adfc45d81ea7ebedb299a596883c022e01ecea36457e931258",
+      "kind": "image"
+    },
+    {
+      "url": "/scenarios/travel-airport-gate/revisions/1/media/audio",
+      "bytes": 529580,
+      "sha256": "59203d214cf96b9b4c55be2464fac11536150b752937b8a6b0cbce5da916d929",
+      "kind": "story"
+    },
+    {
+      "url": "/scenarios/travel-hotel-check-in/revisions/1/media/image",
+      "bytes": 2403165,
+      "sha256": "0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af",
+      "kind": "image"
+    },
+    {
+      "url": "/scenarios/travel-hotel-check-in/revisions/1/media/audio",
+      "bytes": 713900,
+      "sha256": "ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161",
+      "kind": "story"
+    },
+    {
+      "url": "/scenarios/travel-ferry-trip/revisions/1/media/image",
+      "bytes": 2377470,
+      "sha256": "5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d",
+      "kind": "image"
+    },
+    {
+      "url": "/scenarios/travel-ferry-trip/revisions/1/media/audio",
+      "bytes": 397868,
+      "sha256": "80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e",
+      "kind": "story"
+    },
+    {
+      "url": "/scenarios/travel-airplane-cabin/revisions/1/media/image",
+      "bytes": 2534227,
+      "sha256": "723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0",
+      "kind": "image"
+    },
+    {
+      "url": "/scenarios/travel-airplane-cabin/revisions/1/media/audio",
+      "bytes": 780332,
+      "sha256": "5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba",
+      "kind": "story"
+    }
+  ]
+}

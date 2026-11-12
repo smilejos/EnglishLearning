@@ -1,0 +1,1490 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "travel-airplane-cabin",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "飛機上的餐飲與艙等體驗",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "advance",
+      "basic",
+      "expert"
+    ]
+  },
+  "targetCount": 29,
+  "targets": [
+    {
+      "word": "cabin",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "機艙",
+      "interaction": {
+        "label": {
+          "x": 0.525,
+          "y": 0.0308
+        },
+        "object": {
+          "x": 0.525,
+          "y": 0.067
+        }
+      }
+    },
+    {
+      "word": "flight attendant",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "空服員",
+      "interaction": {
+        "label": {
+          "x": 0.5587,
+          "y": 0.4343
+        },
+        "object": {
+          "x": 0.615,
+          "y": 0.392
+        }
+      }
+    },
+    {
+      "word": "passenger",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "乘客",
+      "interaction": {
+        "label": {
+          "x": 0.795,
+          "y": 0.5215
+        },
+        "object": {
+          "x": 0.795,
+          "y": 0.437
+        }
+      }
+    },
+    {
+      "word": "overhead bin",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "頭頂行李艙",
+      "interaction": {
+        "label": {
+          "x": 0.346,
+          "y": 0.0308
+        },
+        "object": {
+          "x": 0.175,
+          "y": 0.105
+        }
+      }
+    },
+    {
+      "word": "luggage",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "行李（不可數）",
+      "interaction": {
+        "label": {
+          "x": 0.333,
+          "y": 0.2035
+        },
+        "object": {
+          "x": 0.333,
+          "y": 0.119
+        }
+      }
+    },
+    {
+      "word": "cart",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "推車",
+      "interaction": {
+        "label": {
+          "x": 0.526,
+          "y": 0.6465
+        },
+        "object": {
+          "x": 0.526,
+          "y": 0.731
+        }
+      }
+    },
+    {
+      "word": "meal",
+      "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "餐點",
+      "interaction": {
+        "label": {
+          "x": 0.7205,
+          "y": 0.3598
+        },
+        "object": {
+          "x": 0.688,
+          "y": 0.433
+        }
+      }
+    },
+    {
+      "word": "tray",
+      "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "托盤；餐盤",
+      "interaction": {
+        "label": {
+          "x": 0.683,
+          "y": 0.649
+        },
+        "object": {
+          "x": 0.683,
+          "y": 0.454
+        }
+      }
+    },
+    {
+      "word": "seat",
+      "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "座位",
+      "interaction": {
+        "label": {
+          "x": 0.3565,
+          "y": 0.6002
+        },
+        "object": {
+          "x": 0.324,
+          "y": 0.527
+        }
+      }
+    },
+    {
+      "word": "screen",
+      "entryGuid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "螢幕",
+      "interaction": {
+        "label": {
+          "x": 0.8163,
+          "y": 0.5877
+        },
+        "object": {
+          "x": 0.76,
+          "y": 0.63
+        }
+      }
+    },
+    {
+      "word": "headphones",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "耳機",
+      "interaction": {
+        "label": {
+          "x": 0.9449,
+          "y": 0.3614
+        },
+        "object": {
+          "x": 0.971,
+          "y": 0.474
+        }
+      }
+    },
+    {
+      "word": "magazine",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "雜誌",
+      "interaction": {
+        "label": {
+          "x": 0.773,
+          "y": 0.6815
+        },
+        "object": {
+          "x": 0.773,
+          "y": 0.766
+        }
+      }
+    },
+    {
+      "word": "window",
+      "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "窗戶",
+      "interaction": {
+        "label": {
+          "x": 0.0391,
+          "y": 0.3237
+        },
+        "object": {
+          "x": 0.069,
+          "y": 0.366
+        }
+      }
+    },
+    {
+      "word": "cloud",
+      "entryGuid": "70818df1-ee97-590f-8dbb-7da3592f99d1",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "雲",
+      "interaction": {
+        "label": {
+          "x": 0.0351,
+          "y": 0.4363
+        },
+        "object": {
+          "x": 0.061,
+          "y": 0.394
+        }
+      }
+    },
+    {
+      "word": "wing",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "機翼",
+      "interaction": {
+        "label": {
+          "x": 0.082,
+          "y": 0.6945
+        },
+        "object": {
+          "x": 0.082,
+          "y": 0.779
+        }
+      }
+    },
+    {
+      "word": "engine",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "引擎",
+      "interaction": {
+        "label": {
+          "x": 0.172,
+          "y": 0.9692
+        },
+        "object": {
+          "x": 0.172,
+          "y": 0.91
+        }
+      }
+    },
+    {
+      "word": "business class",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "商務艙",
+      "interaction": {
+        "label": {
+          "x": 0.302,
+          "y": 0.4555
+        },
+        "object": {
+          "x": 0.302,
+          "y": 0.54
+        }
+      }
+    },
+    {
+      "word": "economy class",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "經濟艙",
+      "interaction": {
+        "label": {
+          "x": 0.781,
+          "y": 0.1765
+        },
+        "object": {
+          "x": 0.781,
+          "y": 0.261
+        }
+      }
+    },
+    {
+      "word": "cup",
+      "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "杯子",
+      "interaction": {
+        "label": {
+          "x": 0.89,
+          "y": 0.4865
+        },
+        "object": {
+          "x": 0.89,
+          "y": 0.571
+        }
+      }
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "interaction": {
+        "label": {
+          "x": 0.512,
+          "y": 0.5765
+        },
+        "object": {
+          "x": 0.512,
+          "y": 0.492
+        }
+      }
+    },
+    {
+      "word": "juice",
+      "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "果汁",
+      "interaction": {
+        "label": {
+          "x": 0.6015,
+          "y": 0.5782
+        },
+        "object": {
+          "x": 0.569,
+          "y": 0.505
+        }
+      }
+    },
+    {
+      "word": "plate",
+      "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "盤子",
+      "interaction": {
+        "label": {
+          "x": 0.154,
+          "y": 0.5695
+        },
+        "object": {
+          "x": 0.154,
+          "y": 0.485
+        }
+      }
+    },
+    {
+      "word": "open",
+      "entryGuid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "打開",
+      "interaction": {
+        "label": {
+          "x": 0.4445,
+          "y": 0.0308
+        },
+        "object": {
+          "x": 0.412,
+          "y": 0.082
+        }
+      }
+    },
+    {
+      "word": "serve",
+      "entryGuid": "f7119668-da06-5011-bad5-08f375197a28",
+      "list": "advance",
+      "teachingPos": "v",
+      "senseZh": "供餐；遞送",
+      "interaction": {
+        "label": {
+          "x": 0.6735,
+          "y": 0.5322
+        },
+        "object": {
+          "x": 0.641,
+          "y": 0.459
+        }
+      }
+    },
+    {
+      "word": "eat",
+      "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "吃；用餐",
+      "interaction": {
+        "label": {
+          "x": 0.1325,
+          "y": 0.4492
+        },
+        "object": {
+          "x": 0.165,
+          "y": 0.376
+        }
+      }
+    },
+    {
+      "word": "drink",
+      "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "喝",
+      "interaction": {
+        "label": {
+          "x": 0.893,
+          "y": 0.6325
+        },
+        "object": {
+          "x": 0.893,
+          "y": 0.548
+        }
+      }
+    },
+    {
+      "word": "comfortable",
+      "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "舒適的",
+      "interaction": {
+        "label": {
+          "x": 0.2477,
+          "y": 0.6162
+        },
+        "object": {
+          "x": 0.304,
+          "y": 0.574
+        }
+      }
+    },
+    {
+      "word": "wide",
+      "entryGuid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "寬的",
+      "interaction": {
+        "label": {
+          "x": 0.326,
+          "y": 0.7195
+        },
+        "object": {
+          "x": 0.326,
+          "y": 0.635
+        }
+      }
+    },
+    {
+      "word": "narrow",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "list": "advance",
+      "teachingPos": "adj",
+      "senseZh": "較窄的",
+      "interaction": {
+        "label": {
+          "x": 0.725,
+          "y": 0.5895
+        },
+        "object": {
+          "x": 0.725,
+          "y": 0.505
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "Inside the cabin, a passenger opens an overhead bin with luggage inside. In business class, the seats are wide and comfortable. A traveler eats a meal from a plate, while another seat holds a pillow and a blanket. Behind a curtain, economy class has narrow seats arranged in rows. One flight attendant serves a tray to a passenger beside a cart. The cart holds water, juice, and more meals. Another flight attendant pours juice into a cup. A passenger wears headphones and drinks from his cup. A magazine sits in a pocket below a screen. Clouds fill the view through each window, and the wing and engine are outside the cabin.",
+    "textZh": "在機艙內，一位乘客打開上方放著行李的行李艙。商務艙的座位寬敞又舒適。一位旅客吃著盤中的餐點，另一張座位上放著枕頭與毯子。隔簾後方的經濟艙，較窄的座椅一排排排列。一位空服員在餐車旁，將托盤遞給乘客。餐車上放著水、果汁與更多餐點。另一位空服員把果汁倒進杯子。一位乘客戴著耳機，用杯子喝飲料。螢幕下方的口袋裡放著一本雜誌。透過窗戶可以看見雲，機翼與引擎則位於機艙外。",
+    "sentences": [
+      {
+        "id": "s01",
+        "en": "Inside the cabin, a passenger opens an overhead bin with luggage inside.",
+        "zh": "在機艙內，一位乘客打開上方放著行李的行李艙。",
+        "wordLinks": [
+          {
+            "surface": "Inside",
+            "word": "inside",
+            "entryGuid": "5f6834de-8d31-5b6f-a4bb-a994dd55231b",
+            "isTarget": false,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 7,
+            "end": 10
+          },
+          {
+            "surface": "cabin",
+            "word": "cabin",
+            "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+            "isTarget": true,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 18,
+            "end": 19
+          },
+          {
+            "surface": "passenger",
+            "word": "passenger",
+            "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+            "isTarget": true,
+            "start": 20,
+            "end": 29
+          },
+          {
+            "surface": "opens",
+            "word": "open",
+            "entryGuid": "cf98907f-2be1-5741-9d48-73d93e9585fe",
+            "isTarget": true,
+            "start": 30,
+            "end": 35
+          },
+          {
+            "surface": "an",
+            "word": "an",
+            "entryGuid": "395316d1-1209-55d8-8409-0d7b8ae7708f",
+            "isTarget": false,
+            "start": 36,
+            "end": 38
+          },
+          {
+            "surface": "overhead bin",
+            "word": "overhead bin",
+            "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+            "isTarget": true,
+            "start": 39,
+            "end": 51
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 52,
+            "end": 56
+          },
+          {
+            "surface": "luggage",
+            "word": "luggage",
+            "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+            "isTarget": true,
+            "start": 57,
+            "end": 64
+          },
+          {
+            "surface": "inside",
+            "word": "inside",
+            "entryGuid": "5f6834de-8d31-5b6f-a4bb-a994dd55231b",
+            "isTarget": false,
+            "start": 65,
+            "end": 71
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "en": "In business class, the seats are wide and comfortable.",
+        "zh": "商務艙的座位寬敞又舒適。",
+        "wordLinks": [
+          {
+            "surface": "In",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "business class",
+            "word": "business class",
+            "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+            "isTarget": true,
+            "start": 3,
+            "end": 17
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 19,
+            "end": 22
+          },
+          {
+            "surface": "seats",
+            "word": "seat",
+            "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+            "isTarget": true,
+            "start": 23,
+            "end": 28
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "wide",
+            "word": "wide",
+            "entryGuid": "d6a9a9a3-9543-5271-babd-8e6dfc745708",
+            "isTarget": true,
+            "start": 33,
+            "end": 37
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "comfortable",
+            "word": "comfortable",
+            "entryGuid": "c4621bd5-027d-5dce-92e1-3d5bca38f8ac",
+            "isTarget": true,
+            "start": 42,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "en": "A traveler eats a meal from a plate, while another seat holds a pillow and a blanket.",
+        "zh": "一位旅客吃著盤中的餐點，另一張座位上放著枕頭與毯子。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "traveler",
+            "word": "traveler",
+            "entryGuid": "11d0cd6f-7773-583a-9202-77bd17c9a31b",
+            "isTarget": false,
+            "start": 2,
+            "end": 10
+          },
+          {
+            "surface": "eats",
+            "word": "eat",
+            "entryGuid": "994e2df3-f6a5-5db8-bcc1-ce8a22c6d1cc",
+            "isTarget": true,
+            "start": 11,
+            "end": 15
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 16,
+            "end": 17
+          },
+          {
+            "surface": "meal",
+            "word": "meal",
+            "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+            "isTarget": true,
+            "start": 18,
+            "end": 22
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 23,
+            "end": 27
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 28,
+            "end": 29
+          },
+          {
+            "surface": "plate",
+            "word": "plate",
+            "entryGuid": "1724da63-6c1a-5b15-bc9a-208b6fc0f7c8",
+            "isTarget": true,
+            "start": 30,
+            "end": 35
+          },
+          {
+            "surface": "while",
+            "word": "while",
+            "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+            "isTarget": false,
+            "start": 37,
+            "end": 42
+          },
+          {
+            "surface": "another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 43,
+            "end": 50
+          },
+          {
+            "surface": "seat",
+            "word": "seat",
+            "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+            "isTarget": true,
+            "start": 51,
+            "end": 55
+          },
+          {
+            "surface": "holds",
+            "word": "hold",
+            "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+            "isTarget": false,
+            "start": 56,
+            "end": 61
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 62,
+            "end": 63
+          },
+          {
+            "surface": "pillow",
+            "word": "pillow",
+            "entryGuid": "1e3eb8e0-9e7d-53c8-bff3-597a395ab36a",
+            "isTarget": false,
+            "start": 64,
+            "end": 70
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 71,
+            "end": 74
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 75,
+            "end": 76
+          },
+          {
+            "surface": "blanket",
+            "word": "blanket",
+            "entryGuid": "2582b0ca-1f00-5d30-bb76-338e4bfb0ad6",
+            "isTarget": false,
+            "start": 77,
+            "end": 84
+          }
+        ]
+      },
+      {
+        "id": "s04",
+        "en": "Behind a curtain, economy class has narrow seats arranged in rows.",
+        "zh": "隔簾後方的經濟艙，較窄的座椅一排排排列。",
+        "wordLinks": [
+          {
+            "surface": "Behind",
+            "word": "behind",
+            "entryGuid": "983f7556-8d27-55bc-b9d8-2f0f22a2ed8f",
+            "isTarget": false,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 7,
+            "end": 8
+          },
+          {
+            "surface": "curtain",
+            "word": "curtain",
+            "entryGuid": "b7cca6ba-1503-5765-983d-6b9087bacd87",
+            "isTarget": false,
+            "start": 9,
+            "end": 16
+          },
+          {
+            "surface": "economy class",
+            "word": "economy class",
+            "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+            "isTarget": true,
+            "start": 18,
+            "end": 31
+          },
+          {
+            "surface": "has",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 32,
+            "end": 35
+          },
+          {
+            "surface": "narrow",
+            "word": "narrow",
+            "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+            "isTarget": true,
+            "start": 36,
+            "end": 42
+          },
+          {
+            "surface": "seats",
+            "word": "seat",
+            "entryGuid": "accb9ef6-d6e7-52b8-a363-0ab9db325e1a",
+            "isTarget": true,
+            "start": 43,
+            "end": 48
+          },
+          {
+            "surface": "arranged",
+            "word": "arrange",
+            "entryGuid": "e97e3fd3-9db6-53da-931b-47afa5c086a6",
+            "isTarget": false,
+            "start": 49,
+            "end": 57
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 58,
+            "end": 60
+          },
+          {
+            "surface": "rows",
+            "word": "row",
+            "entryGuid": "2c8b933b-70a6-57a8-8f0b-c32960475b7a",
+            "isTarget": false,
+            "start": 61,
+            "end": 65
+          }
+        ]
+      },
+      {
+        "id": "s05",
+        "en": "One flight attendant serves a tray to a passenger beside a cart.",
+        "zh": "一位空服員在餐車旁，將托盤遞給乘客。",
+        "wordLinks": [
+          {
+            "surface": "One",
+            "word": "one",
+            "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "flight attendant",
+            "word": "flight attendant",
+            "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+            "isTarget": true,
+            "start": 4,
+            "end": 20
+          },
+          {
+            "surface": "serves",
+            "word": "serve",
+            "entryGuid": "f7119668-da06-5011-bad5-08f375197a28",
+            "isTarget": true,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 28,
+            "end": 29
+          },
+          {
+            "surface": "tray",
+            "word": "tray",
+            "entryGuid": "da59f650-66c8-5d96-a95d-81722978e727",
+            "isTarget": true,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 35,
+            "end": 37
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 38,
+            "end": 39
+          },
+          {
+            "surface": "passenger",
+            "word": "passenger",
+            "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+            "isTarget": true,
+            "start": 40,
+            "end": 49
+          },
+          {
+            "surface": "beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 50,
+            "end": 56
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 57,
+            "end": 58
+          },
+          {
+            "surface": "cart",
+            "word": "cart",
+            "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+            "isTarget": true,
+            "start": 59,
+            "end": 63
+          }
+        ]
+      },
+      {
+        "id": "s06",
+        "en": "The cart holds water, juice, and more meals.",
+        "zh": "餐車上放著水、果汁與更多餐點。",
+        "wordLinks": [
+          {
+            "surface": "The",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "cart",
+            "word": "cart",
+            "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+            "isTarget": true,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "surface": "holds",
+            "word": "hold",
+            "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+            "isTarget": false,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "juice",
+            "word": "juice",
+            "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+            "isTarget": true,
+            "start": 22,
+            "end": 27
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "more",
+            "word": "more",
+            "entryGuid": "66f118af-d262-5cc8-8a87-78bb5102ddca",
+            "isTarget": false,
+            "start": 33,
+            "end": 37
+          },
+          {
+            "surface": "meals",
+            "word": "meal",
+            "entryGuid": "baa065dc-cba6-5f02-8cd1-12cee47382bd",
+            "isTarget": true,
+            "start": 38,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "id": "s07",
+        "en": "Another flight attendant pours juice into a cup.",
+        "zh": "另一位空服員把果汁倒進杯子。",
+        "wordLinks": [
+          {
+            "surface": "Another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "flight attendant",
+            "word": "flight attendant",
+            "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+            "isTarget": true,
+            "start": 8,
+            "end": 24
+          },
+          {
+            "surface": "pours",
+            "word": "pour",
+            "entryGuid": "772e1508-c6fc-50fa-b0f1-286dd266fa44",
+            "isTarget": false,
+            "start": 25,
+            "end": 30
+          },
+          {
+            "surface": "juice",
+            "word": "juice",
+            "entryGuid": "5d8a4c5a-613d-5672-a950-9f50f2c79e1a",
+            "isTarget": true,
+            "start": 31,
+            "end": 36
+          },
+          {
+            "surface": "into",
+            "word": "into",
+            "entryGuid": "ff2ff7fe-ca9b-5d6f-b685-f1fe96d9ed46",
+            "isTarget": false,
+            "start": 37,
+            "end": 41
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 42,
+            "end": 43
+          },
+          {
+            "surface": "cup",
+            "word": "cup",
+            "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+            "isTarget": true,
+            "start": 44,
+            "end": 47
+          }
+        ]
+      },
+      {
+        "id": "s08",
+        "en": "A passenger wears headphones and drinks from his cup.",
+        "zh": "一位乘客戴著耳機，用杯子喝飲料。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "passenger",
+            "word": "passenger",
+            "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+            "isTarget": true,
+            "start": 2,
+            "end": 11
+          },
+          {
+            "surface": "wears",
+            "word": "wear",
+            "entryGuid": "2207f719-6ad9-5c97-bc92-75ba8bef9ef7",
+            "isTarget": false,
+            "start": 12,
+            "end": 17
+          },
+          {
+            "surface": "headphones",
+            "word": "headphones",
+            "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+            "isTarget": true,
+            "start": 18,
+            "end": 28
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 29,
+            "end": 32
+          },
+          {
+            "surface": "drinks",
+            "word": "drink",
+            "entryGuid": "b22d9f98-ee18-517b-a63d-fa0da15edb66",
+            "isTarget": true,
+            "start": 33,
+            "end": 39
+          },
+          {
+            "surface": "from",
+            "word": "from",
+            "entryGuid": "99443a6f-2a84-5ac6-8608-f0a634fbf6a9",
+            "isTarget": false,
+            "start": 40,
+            "end": 44
+          },
+          {
+            "surface": "his",
+            "word": "his",
+            "entryGuid": "368023a6-163e-50c0-ac53-3e23d791db26",
+            "isTarget": false,
+            "start": 45,
+            "end": 48
+          },
+          {
+            "surface": "cup",
+            "word": "cup",
+            "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+            "isTarget": true,
+            "start": 49,
+            "end": 52
+          }
+        ]
+      },
+      {
+        "id": "s09",
+        "en": "A magazine sits in a pocket below a screen.",
+        "zh": "螢幕下方的口袋裡放著一本雜誌。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "magazine",
+            "word": "magazine",
+            "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+            "isTarget": true,
+            "start": 2,
+            "end": 10
+          },
+          {
+            "surface": "sits",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 11,
+            "end": 15
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 16,
+            "end": 18
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 19,
+            "end": 20
+          },
+          {
+            "surface": "pocket",
+            "word": "pocket",
+            "entryGuid": "ca3d6bac-637a-5873-b404-6081320f7076",
+            "isTarget": false,
+            "start": 21,
+            "end": 27
+          },
+          {
+            "surface": "below",
+            "word": "below",
+            "entryGuid": "3faef205-d864-514c-b0b9-c0403cd14068",
+            "isTarget": false,
+            "start": 28,
+            "end": 33
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 34,
+            "end": 35
+          },
+          {
+            "surface": "screen",
+            "word": "screen",
+            "entryGuid": "8ed10464-d75f-5b84-853d-c464b6d069c7",
+            "isTarget": true,
+            "start": 36,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "id": "s10",
+        "en": "Clouds fill the view through each window, and the wing and engine are outside the cabin.",
+        "zh": "透過窗戶可以看見雲，機翼與引擎則位於機艙外。",
+        "wordLinks": [
+          {
+            "surface": "Clouds",
+            "word": "cloud",
+            "entryGuid": "70818df1-ee97-590f-8dbb-7da3592f99d1",
+            "isTarget": true,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "fill",
+            "word": "fill",
+            "entryGuid": "200e5134-dbab-540c-a2a8-e009c2b1c5e7",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 12,
+            "end": 15
+          },
+          {
+            "surface": "view",
+            "word": "view",
+            "entryGuid": "f90ff84b-1ed4-5a1d-8a0a-cad3b826488f",
+            "isTarget": false,
+            "start": 16,
+            "end": 20
+          },
+          {
+            "surface": "through",
+            "word": "through",
+            "entryGuid": "9ae026b7-e7c9-517e-b739-bd61f536bafa",
+            "isTarget": false,
+            "start": 21,
+            "end": 28
+          },
+          {
+            "surface": "each",
+            "word": "each",
+            "entryGuid": "b1d6eb83-9ec5-5cc5-88fc-d35863fa0445",
+            "isTarget": false,
+            "start": 29,
+            "end": 33
+          },
+          {
+            "surface": "window",
+            "word": "window",
+            "entryGuid": "895fce7b-e5c4-51d8-8fa6-f8caa1f97b38",
+            "isTarget": true,
+            "start": 34,
+            "end": 40
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 42,
+            "end": 45
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "wing",
+            "word": "wing",
+            "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+            "isTarget": true,
+            "start": 50,
+            "end": 54
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 55,
+            "end": 58
+          },
+          {
+            "surface": "engine",
+            "word": "engine",
+            "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+            "isTarget": true,
+            "start": 59,
+            "end": 65
+          },
+          {
+            "surface": "are",
+            "word": "be",
+            "entryGuid": "d226c564-d905-53b7-8609-d0dc7065a798",
+            "isTarget": false,
+            "start": 66,
+            "end": 69
+          },
+          {
+            "surface": "outside",
+            "word": "outside",
+            "entryGuid": "adbe8a2c-2383-5688-9c8a-7125e967551a",
+            "isTarget": false,
+            "start": 70,
+            "end": 77
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 78,
+            "end": 81
+          },
+          {
+            "surface": "cabin",
+            "word": "cabin",
+            "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+            "isTarget": true,
+            "start": 82,
+            "end": 87
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s04"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png",
+      "sha256": "723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0"
+    },
+    "baseImage": {
+      "path": "output/imagegen/travel-airplane-cabin-base-2026-11-11-v1/base.png",
+      "sha256": "723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-airplane-cabin/scenarios/travel-airplane-cabin/r1/2706fd2bc0c87488/story-01faf649050e17ae.mp3",
+      "sha256": "5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba",
+      "language": "en",
+      "textSha256": "01faf649050e17ae9b2e5d36f9d7e2a5691f34e6e98e924c3a2494cb9e6705e7",
+      "durationSeconds": 48.768,
+      "bytes": 780332,
+      "profile": {
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "generated": true,
+      "endpoint": "http://192.168.1.124:8000",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    }
+  },
+  "contentReview": {
+    "status": "offline-materials-complete-awaiting-listening-and-browser-ui-review",
+    "sourceStatus": "canonical-prepared-production-wordbank-pending",
+    "plannedEntryGuids": [
+      "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "debdd36d-d229-531b-a5e5-efd7517fa4a9"
+    ],
+    "coordinateStatus": "103-points-statically-reviewed-3-corrections-applied-browser-ui-pending",
+    "audioStatus": "complete-decode-and-near-silence-screen-passed-listening-pending",
+    "productionImport": false,
+    "publish": false,
+    "testImportStatus": "draft-r1-in-protected-test-database"
+  },
+  "vocabularyMode": "user-specified"
+}

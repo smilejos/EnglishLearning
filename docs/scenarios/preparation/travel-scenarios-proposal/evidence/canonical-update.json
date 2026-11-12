@@ -1,0 +1,138 @@
+{
+  "status": "offline-canonical-update-verified-not-production-imported",
+  "sourcePath": "source/vocabulary-database.json",
+  "backupPath": "data/scenario-preparation/travel-scenarios/vocabulary-database-before-travel-2026-11-12-158cc627.json",
+  "backupCreatedWithoutOverwrite": true,
+  "backupSha256": "158cc627f2a62a5fb0c81cd33f33c7d360665c0df4917c87d39b49bb82e2d6d6",
+  "updatedSourceSha256": "b34b5491e5aaec66a9968b633fb968a77ce61c448969a2a68474af4d41b57dc5",
+  "entriesBefore": 9244,
+  "entriesAfter": 9247,
+  "originalEntriesDeepEqual": true,
+  "originalEntriesChecked": 9244,
+  "originalEntryGuidsContentsAndLevelsUnchanged": true,
+  "metadataExistingKeysUnchanged": true,
+  "metadataAddedKey": "scenario_travel_supplement",
+  "statisticsDelta": [
+    {
+      "path": "statistics.total_entries",
+      "before": 9244,
+      "after": 9247,
+      "delta": 3
+    },
+    {
+      "path": "statistics.entries_by_list.null",
+      "before": 3052,
+      "after": 3055,
+      "delta": 3
+    },
+    {
+      "path": "statistics.entries_by_tw_7000.null",
+      "before": 3052,
+      "after": 3055,
+      "delta": 3
+    },
+    {
+      "path": "statistics.entries_by_cefr.null",
+      "before": 709,
+      "after": 712,
+      "delta": 3
+    },
+    {
+      "path": "statistics.total_examples",
+      "before": 33161,
+      "after": 33170,
+      "delta": 9
+    },
+    {
+      "path": "statistics.total_explains",
+      "before": 27784,
+      "after": 27793,
+      "delta": 9
+    }
+  ],
+  "statisticsOtherFieldsUnchanged": true,
+  "addedEntries": [
+    {
+      "id": 9254,
+      "guid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "explainCount": 3,
+      "exampleCount": 3
+    },
+    {
+      "id": 9255,
+      "guid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "explainCount": 3,
+      "exampleCount": 3
+    },
+    {
+      "id": 9256,
+      "guid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "partsOfSpeech": [
+        "n"
+      ],
+      "level": {
+        "cefr": null,
+        "tw_7000": null,
+        "list": null
+      },
+      "explainCount": 3,
+      "exampleCount": 3
+    }
+  ],
+  "addedExplanations": 9,
+  "addedExamples": 9,
+  "validation": {
+    "wordbankParser": "PASS via existing CLI",
+    "canonicalDryRun": {
+      "command": "npm run vocabulary:import -- source/vocabulary-database.json --dry-run",
+      "exitCode": 0,
+      "entries": 9247,
+      "basic": 1193,
+      "entriesWithoutDefinition": 0,
+      "entriesWithoutExplains": 0,
+      "observedOutput": "僅檢查檔案，未連線或寫入資料庫。"
+    },
+    "additionsDryRun": {
+      "command": "npm run vocabulary:import -- /tmp/travel-vocabulary-prep/wordbank-additions.json --dry-run",
+      "exitCode": 0,
+      "entries": 3,
+      "basic": 0,
+      "entriesWithoutDefinition": 0,
+      "entriesWithoutExplains": 0,
+      "observedOutput": "僅檢查檔案，未連線或寫入資料庫。"
+    },
+    "dryRunsRerunForThisEvidence": false
+  },
+  "formalDatabase": {
+    "connected": false,
+    "written": false,
+    "sourceIdAvailabilityChecked": false,
+    "note": "canonical已有不代表正式DB已有；source id9254–9256正式占用仍須另行查核。"
+  },
+  "otherActions": {
+    "generationPerformed": false,
+    "volumeWritten": false,
+    "deployed": false,
+    "published": false
+  },
+  "scope": "只修改source/vocabulary-database.json，另於指定data目錄保存可回復原檔；未改其他Repo檔。"
+}

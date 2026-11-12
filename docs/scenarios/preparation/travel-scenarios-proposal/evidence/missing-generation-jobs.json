@@ -1,0 +1,2536 @@
+{
+  "profile": {
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Serena",
+    "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+    "lang_code": "English",
+    "response_format": "mp3"
+  },
+  "jobs": [
+    {
+      "assetGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "kind": "word",
+      "text": "passenger",
+      "textHash": "bf816809a4d8aa98ed09fe848bc31b08313b0ea7e19792dcfbc96bc7c9d11c34",
+      "relativePath": "wordbank/09eeb3d17582e855/fed03f94-0206-56c3-8136-5cbb4dc374a4.mp3"
+    },
+    {
+      "assetGuid": "710387d1-076d-5191-9245-f65ef84c2270",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "kind": "explanation",
+      "text": "A person traveling in a car, bus, train, or plane without driving it is called this. They should wear a seat belt when required. The driver is responsible for the vehicle.",
+      "textHash": "d53d1c6293855f958971115b2f1a7535a92f4482db756ca4ef7915b4d94cc319",
+      "relativePath": "wordbank/09eeb3d17582e855/710387d1-076d-5191-9245-f65ef84c2270.mp3"
+    },
+    {
+      "assetGuid": "1ab134b2-ad21-5c18-aceb-ea114c8a4141",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "kind": "explanation",
+      "text": "Ships also carry people who are not part of the crew. They may travel to another island. The crew helps keep the trip safe.",
+      "textHash": "f518a9fb7ee9c3ca381d0601c85d9a2f787b9215aaebf9380dee337a32fd8889",
+      "relativePath": "wordbank/09eeb3d17582e855/1ab134b2-ad21-5c18-aceb-ea114c8a4141.mp3"
+    },
+    {
+      "assetGuid": "19590cba-4398-5cc7-9fad-e91ce83e3af0",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "kind": "explanation",
+      "text": "A driver controls a vehicle, while this traveler rides in it. On a bus, many people can travel together. Follow safety instructions during the trip.",
+      "textHash": "72f753d0318836f040845485527208bbe87738b97440e908b4580f4f08dacb06",
+      "relativePath": "wordbank/09eeb3d17582e855/19590cba-4398-5cc7-9fad-e91ce83e3af0.mp3"
+    },
+    {
+      "assetGuid": "23eb30db-50ca-5513-868b-5e3d6ba94ed4",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "kind": "example",
+      "text": "All passengers are required to wear seatbelts by law.",
+      "textHash": "dc6559b72dffbcac9c6b656bcdd1ffdf6a368b6ff4ddb17d6115a7407f88b3b4",
+      "relativePath": "wordbank/09eeb3d17582e855/23eb30db-50ca-5513-868b-5e3d6ba94ed4.mp3"
+    },
+    {
+      "assetGuid": "00476648-9a5e-5042-90da-3d7c72d71edd",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "kind": "example",
+      "text": "Flight attendants welcomed each passenger aboard the airplane.",
+      "textHash": "c9a021cae61beb7aef9af23fff695c7b7c6692ff457d8678cb54860fc87cac3d",
+      "relativePath": "wordbank/09eeb3d17582e855/00476648-9a5e-5042-90da-3d7c72d71edd.mp3"
+    },
+    {
+      "assetGuid": "4a5080aa-4a65-52ad-85be-3b04b07497ca",
+      "entryGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "word": "passenger",
+      "kind": "example",
+      "text": "Over a thousand passengers boarded the cruise ship for the Caribbean voyage.",
+      "textHash": "ba300cf0e741722174d75ae078d9f3d2ace5c8d41f7171a6f448e0f65a35e039",
+      "relativePath": "wordbank/09eeb3d17582e855/4a5080aa-4a65-52ad-85be-3b04b07497ca.mp3"
+    },
+    {
+      "assetGuid": "7d85580b-d554-5771-b124-7382d006786a",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "kind": "explanation",
+      "text": "Students write on a flat surface in a classroom. A person may also serve on a group that makes decisions. The word can mean a flat piece of wood.",
+      "textHash": "16c7f085329771e9b1243803115b7ce386f22204c3c23ca9238643604233405b",
+      "relativePath": "wordbank/09eeb3d17582e855/7d85580b-d554-5771-b124-7382d006786a.mp3"
+    },
+    {
+      "assetGuid": "dd663410-8a9e-5a9b-93b6-872fa414f6db",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "kind": "explanation",
+      "text": "A teacher may write with chalk on one. A group of leaders may meet as a committee. The word can also mean a piece of wood.",
+      "textHash": "5f32b48991dd9f43eb90ee85fa52c71a39b0fb201e37d252e63af7e68f0f2618",
+      "relativePath": "wordbank/09eeb3d17582e855/dd663410-8a9e-5a9b-93b6-872fa414f6db.mp3"
+    },
+    {
+      "assetGuid": "4fd4208a-4537-59cd-b7a0-d8fd33a91063",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "kind": "explanation",
+      "text": "This flat item can cover a wall. A class may use it for lessons. People may sit on a group of directors.",
+      "textHash": "50767ce3ae3e0da4fcfc6f30d5af660c41f4fcc092a3ea754ba962654ff6aa47",
+      "relativePath": "wordbank/09eeb3d17582e855/4fd4208a-4537-59cd-b7a0-d8fd33a91063.mp3"
+    },
+    {
+      "assetGuid": "4a00a796-e5c3-5dbc-a254-0cdd89f960a3",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "kind": "example",
+      "text": "The teacher wrote on the board.",
+      "textHash": "0d987801d37785189244595ecee8e50cd62ab937f92503bb2ba9de0a1fc6a50d",
+      "relativePath": "wordbank/09eeb3d17582e855/4a00a796-e5c3-5dbc-a254-0cdd89f960a3.mp3"
+    },
+    {
+      "assetGuid": "af04a7b3-4293-5a5c-8e8d-359cf9b26a2d",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "kind": "example",
+      "text": "She joined the school board last year.",
+      "textHash": "6a9812acf69f55041ab18b3f68a7f3557e3b7a0322a11b8039215c56b3c398ca",
+      "relativePath": "wordbank/09eeb3d17582e855/af04a7b3-4293-5a5c-8e8d-359cf9b26a2d.mp3"
+    },
+    {
+      "assetGuid": "2c8753e4-acd3-5700-9073-4d509b798fe1",
+      "entryGuid": "f813645b-5fc5-5c97-b02a-684b14dd9f63",
+      "word": "board",
+      "kind": "example",
+      "text": "A wooden board covered the hole.",
+      "textHash": "9dd4fbf8b2ad385593970e2650f4481e296fb708cc5e87a426e341c81e1a0323",
+      "relativePath": "wordbank/09eeb3d17582e855/2c8753e4-acd3-5700-9073-4d509b798fe1.mp3"
+    },
+    {
+      "assetGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "kind": "word",
+      "text": "airbridge",
+      "textHash": "db1386667799618d974aa48b62c8b1b1197bdcbcc97300236d594ad05519d72e",
+      "relativePath": "wordbank/09eeb3d17582e855/6d18d5d4-5288-5c3e-8cf0-f854d81f146d.mp3"
+    },
+    {
+      "assetGuid": "6881753d-3a81-54c1-adf0-c74e7f793ff3",
+      "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "kind": "explanation",
+      "text": "This is a covered walkway that connects an airport building directly to an airplane door. Passengers can board without walking outside. Ground workers move it into place.",
+      "textHash": "97b48665a81e3e27d5aa1a3e3ac3fc9e1937ddbe23b3b47b38b79a24d96b2caa",
+      "relativePath": "wordbank/09eeb3d17582e855/6881753d-3a81-54c1-adf0-c74e7f793ff3.mp3"
+    },
+    {
+      "assetGuid": "06f4059b-8621-592f-97dc-ea221d11701b",
+      "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "kind": "explanation",
+      "text": "Travelers use this enclosed path to enter a plane from the terminal. It protects them from rain and heat. Staff align it after the aircraft parks.",
+      "textHash": "6a4edc4522457a887829771826801f3b44b7a4a894e4dc0d7359420e1e1a0dc2",
+      "relativePath": "wordbank/09eeb3d17582e855/06f4059b-8621-592f-97dc-ea221d11701b.mp3"
+    },
+    {
+      "assetGuid": "2657358b-d8ca-507d-95a9-8ed14b3f2154",
+      "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "kind": "explanation",
+      "text": "Use this noun for the movable passage between a terminal and an aircraft. It is climate controlled. Passengers walk through it to board.",
+      "textHash": "0e063f716266d3165b3deb3c27c254ab3f48c55082052fbbd3b78e93f81878fc",
+      "relativePath": "wordbank/09eeb3d17582e855/2657358b-d8ca-507d-95a9-8ed14b3f2154.mp3"
+    },
+    {
+      "assetGuid": "17bc2031-7fbf-5f6d-8d52-7e0ec4a7618f",
+      "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "kind": "example",
+      "text": "Passengers walked through the airbridge and stepped directly into the Boeing 787.",
+      "textHash": "2ce0d216c801930eb2e12337f659e4e8789f2c451c4d7d89c4f23b78677b1e95",
+      "relativePath": "wordbank/09eeb3d17582e855/17bc2031-7fbf-5f6d-8d52-7e0ec4a7618f.mp3"
+    },
+    {
+      "assetGuid": "85e01588-dd17-5c0b-a2bc-36dfa45428df",
+      "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "kind": "example",
+      "text": "The climate-controlled airbridge shields travelers from torrential airport rainstorms.",
+      "textHash": "f0523638d215c63d22ac31aabaf219d7ecc628af04a9a4c0a0a3819d9118eed0",
+      "relativePath": "wordbank/09eeb3d17582e855/85e01588-dd17-5c0b-a2bc-36dfa45428df.mp3"
+    },
+    {
+      "assetGuid": "bc6bfd7a-1b59-5754-a92d-53671ec9dfdd",
+      "entryGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "word": "airbridge",
+      "kind": "example",
+      "text": "Ground staff aligned the motorized airbridge flush against the aircraft door after parking.",
+      "textHash": "9fe51cd92a74edfefc6936c0e471f6e60e33396f2df9440b996f0df2875a0bde",
+      "relativePath": "wordbank/09eeb3d17582e855/bc6bfd7a-1b59-5754-a92d-53671ec9dfdd.mp3"
+    },
+    {
+      "assetGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "kind": "word",
+      "text": "passage",
+      "textHash": "0886b051075687c18a9ae5075383feb8400fbe4328c6e4bd45b77b30f1e73b54",
+      "relativePath": "wordbank/09eeb3d17582e855/d876dd09-9a4c-5c78-8e91-92d7b9e7931b.mp3"
+    },
+    {
+      "assetGuid": "32796a2a-c801-570c-919d-96c134519a7f",
+      "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "kind": "explanation",
+      "text": "A narrow way through or between places is called this. A hallway connects rooms inside a building. A cave may have a dark path through it.",
+      "textHash": "4384913ec55d1f5356be4945f579e9ae088dc165fec8d6a95b13598a382573ad",
+      "relativePath": "wordbank/09eeb3d17582e855/32796a2a-c801-570c-919d-96c134519a7f.mp3"
+    },
+    {
+      "assetGuid": "a80b5c88-9425-5f51-8c35-1e20579ec0ad",
+      "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "kind": "explanation",
+      "text": "A section of writing from a book is also called this. A reader may study a short part closely. It can contain several sentences or paragraphs.",
+      "textHash": "c8beed1ea534b69fc9665ba5791dc478c604213552ba3bf47292a520eeba5925",
+      "relativePath": "wordbank/09eeb3d17582e855/a80b5c88-9425-5f51-8c35-1e20579ec0ad.mp3"
+    },
+    {
+      "assetGuid": "f3b21c6b-d7e5-59a2-976b-1c9816d19249",
+      "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "kind": "explanation",
+      "text": "A road is wide enough for vehicles, while a narrow path may be smaller. In a book, it means a selected piece of text. The context shows which sense applies.",
+      "textHash": "6ae233b10f7e310565442e86916cea778ba00f19d961c9bc563a8a507b64ee29",
+      "relativePath": "wordbank/09eeb3d17582e855/f3b21c6b-d7e5-59a2-976b-1c9816d19249.mp3"
+    },
+    {
+      "assetGuid": "261f046c-c525-51c4-b5d5-97ad8a16e9d3",
+      "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "kind": "example",
+      "text": "We walked through a narrow passage under the old bridge.",
+      "textHash": "5fea14bcfe8e2c72aaf64757cebe49b2c5586deac7db59502dcd25c289e459c9",
+      "relativePath": "wordbank/09eeb3d17582e855/261f046c-c525-51c4-b5d5-97ad8a16e9d3.mp3"
+    },
+    {
+      "assetGuid": "1bcb47d2-fba7-5025-a0a8-0cd97198b9fc",
+      "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "kind": "example",
+      "text": "Read the passage and answer the questions.",
+      "textHash": "bbe1f08aa75d36a92c078134f2f27ebb0da11d6903d6de68a0852dfec2409b0b",
+      "relativePath": "wordbank/09eeb3d17582e855/1bcb47d2-fba7-5025-a0a8-0cd97198b9fc.mp3"
+    },
+    {
+      "assetGuid": "a1651ffe-5914-5ec2-8ff5-c6b798e5a968",
+      "entryGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "word": "passage",
+      "kind": "example",
+      "text": "The passage between the buildings was dark.",
+      "textHash": "5f6f6edd564c7d6ca61bb4abd694a0930922c2098cf1f9285f9eb45fe9c726b0",
+      "relativePath": "wordbank/09eeb3d17582e855/a1651ffe-5914-5ec2-8ff5-c6b798e5a968.mp3"
+    },
+    {
+      "assetGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "word",
+      "text": "terminal",
+      "textHash": "4e686af7bdcc5ae005a247624fd8c7283257c2514f6b3ad2ff5d4cb6d95196e6",
+      "relativePath": "wordbank/09eeb3d17582e855/5ab06837-66dd-5f0f-89fa-978a1b7cfbea.mp3"
+    },
+    {
+      "assetGuid": "cfb0b30f-65bc-591d-ade4-bda7ff2f32f5",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "explanation",
+      "text": "This adjective can mean located at the end of something or relating to a final stage. As a noun, it can mean a station building, a computer screen for entering commands, or a connection point for wires. The word has several uses.",
+      "textHash": "770c7679702dcd5e4c5dec2f37bcd6d563a6462c23031561b9f9cee3a1833ffe",
+      "relativePath": "wordbank/09eeb3d17582e855/cfb0b30f-65bc-591d-ade4-bda7ff2f32f5.mp3"
+    },
+    {
+      "assetGuid": "5fd8dbda-9dd2-5e0d-a0a2-67ddf7cd5403",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "explanation",
+      "text": "A train line ends at its final station. That last stop is the final point of the route. The adjective describes its position at the end.",
+      "textHash": "2038a0609cf1637bd19659b4b470e533496891f761f5d2290b3249703a90b8eb",
+      "relativePath": "wordbank/09eeb3d17582e855/5fd8dbda-9dd2-5e0d-a0a2-67ddf7cd5403.mp3"
+    },
+    {
+      "assetGuid": "c63433e3-9ce3-5f9a-9ba6-dd9f6cdcbf4e",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "explanation",
+      "text": "An airport building handles arriving and departing passengers. A computer screen lets someone enter commands. The word has several noun meanings in travel and technology.",
+      "textHash": "be7ef4f5f19fb29565894bfaea59019b6de3112a722418810019afec9c4e2492",
+      "relativePath": "wordbank/09eeb3d17582e855/c63433e3-9ce3-5f9a-9ba6-dd9f6cdcbf4e.mp3"
+    },
+    {
+      "assetGuid": "c3419689-8bf8-57c3-8e3d-d77056d20d15",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "Taoyuan International Airport features Terminal 1 and Terminal 2.",
+      "textHash": "347b2c199dfd620caf67baf5fa33190dfb4e4c81937f0db73542fd034eecbf94",
+      "relativePath": "wordbank/09eeb3d17582e855/c3419689-8bf8-57c3-8e3d-d77056d20d15.mp3"
+    },
+    {
+      "assetGuid": "8bf7523d-8c77-5bcb-b066-c3a5e07355a1",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "The airport Skytrain carries passengers between terminals in just a few minutes.",
+      "textHash": "32b96955dc70bdcf18e3bcee54609a88231ef1aa452edb427f28737556923d61",
+      "relativePath": "wordbank/09eeb3d17582e855/8bf7523d-8c77-5bcb-b066-c3a5e07355a1.mp3"
+    },
+    {
+      "assetGuid": "3166a2aa-f46a-54ea-a2ba-8127a3e87560",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "The patient was diagnosed with terminal illness, but remained remarkably optimistic.",
+      "textHash": "ddcd17d364beded5a9d3ba51abbb695de4905080ff01cb9c7bed324780fd77d7",
+      "relativePath": "wordbank/09eeb3d17582e855/3166a2aa-f46a-54ea-a2ba-8127a3e87560.mp3"
+    },
+    {
+      "assetGuid": "0500b135-21e8-5a9c-a52a-a16e69981dc9",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "Taoyuan International Airport is constructing a state-of-the-art Terminal 3.",
+      "textHash": "8cafe1213973fa70e1fa0d9636c916dc837013f8d0d757918d39ac778079136b",
+      "relativePath": "wordbank/09eeb3d17582e855/0500b135-21e8-5a9c-a52a-a16e69981dc9.mp3"
+    },
+    {
+      "assetGuid": "83fbd495-a4f2-5b5a-a63a-ed938c54630d",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "Take the free airport skytrain to transfer between Terminal 1 and Terminal 2.",
+      "textHash": "c26ad5e1cdeb7350c6ee5cd9c8eff518d1094ca3229b9b34e89a02869bed5a95",
+      "relativePath": "wordbank/09eeb3d17582e855/83fbd495-a4f2-5b5a-a63a-ed938c54630d.mp3"
+    },
+    {
+      "assetGuid": "0baf8ecb-33d7-5f70-b94d-665f63482b39",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "The long-distance coach terminal is located directly next to the central railway station.",
+      "textHash": "0354e09c40a9051869e72fb3bdbe680f8aa54e28896d12f4532d22844750428c",
+      "relativePath": "wordbank/09eeb3d17582e855/0baf8ecb-33d7-5f70-b94d-665f63482b39.mp3"
+    },
+    {
+      "assetGuid": "1ee3218d-b605-5594-b22c-442dfcbf4d1c",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "Kaohsiung Port Terminal 7 operates Taiwan's first fully automated remote-controlled container yard.",
+      "textHash": "d6608563527fc751a10f25968902c2a50e33563398b74474479543e29fa17243",
+      "relativePath": "wordbank/09eeb3d17582e855/1ee3218d-b605-5594-b22c-442dfcbf4d1c.mp3"
+    },
+    {
+      "assetGuid": "134508a5-54a5-5ce6-ab05-a172c980d262",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "The modern cargo terminal processes import declarations around the clock to prevent tarmac congestion.",
+      "textHash": "bac155ebddeca3cb3d74ae974117f1ae3b1be78606022b5cd8973526db413f8b",
+      "relativePath": "wordbank/09eeb3d17582e855/134508a5-54a5-5ce6-ab05-a172c980d262.mp3"
+    },
+    {
+      "assetGuid": "63b7be15-2978-5687-b5e9-3091c9e2ce48",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "Thousands of trucks enter the port terminal gates every morning to drop off export containers.",
+      "textHash": "57fb681713ca5b58a2bacae7416b111cc7507b3224f6c8d669476f1f30351e44",
+      "relativePath": "wordbank/09eeb3d17582e855/63b7be15-2978-5687-b5e9-3091c9e2ce48.mp3"
+    },
+    {
+      "assetGuid": "aa52b3f8-9f12-56d4-a6c2-2c86cf987ca6",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "The modern all-in-one wireless POS terminal accepts chips, contactless Apple Pay, and barcode scans.",
+      "textHash": "ea82a27b12cc13d8be72d6d10424101d1414fd9bb95f4ab12846d2b0c324046a",
+      "relativePath": "wordbank/09eeb3d17582e855/aa52b3f8-9f12-56d4-a6c2-2c86cf987ca6.mp3"
+    },
+    {
+      "assetGuid": "323e7267-b597-57b4-9ef3-081594488982",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "Passengers queued at the newly inaugurated airport departure terminal to check in their luggage.",
+      "textHash": "24876523fc343f17e6a001fb3f24a7d3e103e8a54958bbec2d5b8e3295e4fa8e",
+      "relativePath": "wordbank/09eeb3d17582e855/323e7267-b597-57b4-9ef3-081594488982.mp3"
+    },
+    {
+      "assetGuid": "3ff3a438-b1cb-57b4-bc6c-95a82c6da8b7",
+      "entryGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "word": "terminal",
+      "kind": "example",
+      "text": "System administrators execute configuration bash commands using the encrypted Linux command terminal.",
+      "textHash": "41ff8897d471c8cb5479f20991ed0671e77f1ef702e981b8cb37a99d02cc4bdb",
+      "relativePath": "wordbank/09eeb3d17582e855/3ff3a438-b1cb-57b4-bc6c-95a82c6da8b7.mp3"
+    },
+    {
+      "assetGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "kind": "word",
+      "text": "suitcase",
+      "textHash": "9817a64167e5ea6c638fedbd97bd69a30e900b9e91d626c011995f9fb523ac92",
+      "relativePath": "wordbank/09eeb3d17582e855/25804565-39d9-579e-a864-5fbf2c16ac0d.mp3"
+    },
+    {
+      "assetGuid": "d9af6901-dc24-54c5-bc7f-d7e97e8b53dc",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "kind": "explanation",
+      "text": "This noun means a rectangular bag with a handle, used for carrying clothes when traveling. It usually opens with a zipper. A traveler can place it in a car or overhead bin.",
+      "textHash": "93ebcede8e85c58c5054e629b317f772117538f92a9bbd32c1dde4d262cadd72",
+      "relativePath": "wordbank/09eeb3d17582e855/d9af6901-dc24-54c5-bc7f-d7e97e8b53dc.mp3"
+    },
+    {
+      "assetGuid": "a8016df3-3e8c-5888-9332-8ae5ddd295f1",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "kind": "explanation",
+      "text": "The bag may have wheels or be carried by hand. It keeps clothing and personal items together. The word names a common travel bag.",
+      "textHash": "671274d71ef22a5b513a1c6e49d7e996ac2610a97d2abc5f8d78d5f0d477035f",
+      "relativePath": "wordbank/09eeb3d17582e855/a8016df3-3e8c-5888-9332-8ae5ddd295f1.mp3"
+    },
+    {
+      "assetGuid": "a29cde60-b7ae-5a67-a641-1922cdf5bbf9",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "kind": "explanation",
+      "text": "A person may pack one for a short trip. It is smaller than many large travel cases. The noun describes the bag itself.",
+      "textHash": "8e37a0d64d7e1e838b8a5e087a280ef257fb6df886edd708cb7c02c3d1763e8b",
+      "relativePath": "wordbank/09eeb3d17582e855/a29cde60-b7ae-5a67-a641-1922cdf5bbf9.mp3"
+    },
+    {
+      "assetGuid": "d2199857-784c-5fc1-876b-1e07df8052d8",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "kind": "example",
+      "text": "He packed his clothes in a suitcase.",
+      "textHash": "60165ade66ee75014b7f82ce6ff3aa1a3201d255abf4cacd1fd8039539c365aa",
+      "relativePath": "wordbank/09eeb3d17582e855/d2199857-784c-5fc1-876b-1e07df8052d8.mp3"
+    },
+    {
+      "assetGuid": "1c78f4a6-9db0-5ca5-9d6c-88f201191968",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "kind": "example",
+      "text": "The suitcase fit in the train's overhead rack.",
+      "textHash": "a607543b625a624e83398831cbfa0f52b90d8f75aab2c70a77988a85f1e2b477",
+      "relativePath": "wordbank/09eeb3d17582e855/1c78f4a6-9db0-5ca5-9d6c-88f201191968.mp3"
+    },
+    {
+      "assetGuid": "70395cb1-1333-512c-b872-fdc2a26bcd8d",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "word": "suitcase",
+      "kind": "example",
+      "text": "She pulled her suitcase through the station.",
+      "textHash": "ca39bdbbfc801fed8179408c755a79d8eea5a0f491aefe77761b93c88a86d44e",
+      "relativePath": "wordbank/09eeb3d17582e855/70395cb1-1333-512c-b872-fdc2a26bcd8d.mp3"
+    },
+    {
+      "assetGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "kind": "word",
+      "text": "receptionist",
+      "textHash": "c3bca14c650063bb88e5a82f757c11defaf4ea06c18368c9c9b70c5d77933dd3",
+      "relativePath": "wordbank/09eeb3d17582e855/54daab02-3e05-5bc6-b34f-d92a5e82f47d.mp3"
+    },
+    {
+      "assetGuid": "5cb6c77f-81e1-5ac1-bd54-3201654ea7a2",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "kind": "explanation",
+      "text": "This worker welcomes visitors at the front desk of a hotel or clinic. The person may answer calls and arrange appointments.",
+      "textHash": "eeb1c4517d49b6de87002ca7fda10b1fe852b5ac1f5dc920adae7dacf6c82b91",
+      "relativePath": "wordbank/09eeb3d17582e855/5cb6c77f-81e1-5ac1-bd54-3201654ea7a2.mp3"
+    },
+    {
+      "assetGuid": "69cabe93-e326-5a79-ae7f-37551842fcbf",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "kind": "explanation",
+      "text": "When you arrive at an office, this staff member can tell you where to go. A friendly greeting is part of the job.",
+      "textHash": "a65faaa2010887859c8aca6331b4efcfb32944b39d7cd0ddd4fa27bf79ed7b7d",
+      "relativePath": "wordbank/09eeb3d17582e855/69cabe93-e326-5a79-ae7f-37551842fcbf.mp3"
+    },
+    {
+      "assetGuid": "926dd79e-17f7-56e7-a7dd-b77a92182263",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "kind": "explanation",
+      "text": "A hotel guest may ask this employee for a room key or directions. The worker handles questions at the entrance desk.",
+      "textHash": "f5454cca77e113dbfc493388ab721a19b3607feffbe5b255b7a2edc7a11d7256",
+      "relativePath": "wordbank/09eeb3d17582e855/926dd79e-17f7-56e7-a7dd-b77a92182263.mp3"
+    },
+    {
+      "assetGuid": "fbd8c619-a4dc-52a5-8a84-c7637a5e7893",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "kind": "example",
+      "text": "The friendly hotel receptionist handed us the electronic room key cards.",
+      "textHash": "550399634389fd8cbae40676262a82e9722c0b98f4bfaa59b71270f6ac864a04",
+      "relativePath": "wordbank/09eeb3d17582e855/fbd8c619-a4dc-52a5-8a84-c7637a5e7893.mp3"
+    },
+    {
+      "assetGuid": "e6ccd8b5-b498-5386-af38-eb08d2028fbf",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "kind": "example",
+      "text": "The dental clinic receptionist scheduled my next cleaning appointment.",
+      "textHash": "082879cb7460c3ca29c1ad5a25495f1858a24d928452161ac6761123ce42d4b5",
+      "relativePath": "wordbank/09eeb3d17582e855/e6ccd8b5-b498-5386-af38-eb08d2028fbf.mp3"
+    },
+    {
+      "assetGuid": "f75bafb5-eb43-5d67-8cd6-18ece7cc79b5",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "word": "receptionist",
+      "kind": "example",
+      "text": "The corporate receptionist greeted visitors warmly in the main lobby.",
+      "textHash": "c6d43c51b7b4e8391d5bfda8c6a7f88a4acd11a8d561ed3db0f45469b4bf2c53",
+      "relativePath": "wordbank/09eeb3d17582e855/f75bafb5-eb43-5d67-8cd6-18ece7cc79b5.mp3"
+    },
+    {
+      "assetGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "kind": "word",
+      "text": "guest",
+      "textHash": "84983c60f7daadc1cb8698621f802c0d9f9a3c3c295c810748fb048115c186ec",
+      "relativePath": "wordbank/09eeb3d17582e855/ac639252-b530-5342-933b-75737f80bee2.mp3"
+    },
+    {
+      "assetGuid": "5b720948-0d27-54bc-b2c2-abf1a6d595fa",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "kind": "explanation",
+      "text": "A person invited to a home or event is this. The host may offer food. A hotel may have many.",
+      "textHash": "b6742875b07a4c985a66002f18c691bdb52d442585a7985e703f72696a1d8f95",
+      "relativePath": "wordbank/09eeb3d17582e855/5b720948-0d27-54bc-b2c2-abf1a6d595fa.mp3"
+    },
+    {
+      "assetGuid": "37b3dbaa-da65-598c-8ca8-62f70d23d210",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "kind": "explanation",
+      "text": "A friend may come to stay for a night. The person is invited. A party can have many of them.",
+      "textHash": "0002a8cbdc43fc7c4d3c6702a4f80692cb4a6b0635a33068f875aba8c925b927",
+      "relativePath": "wordbank/09eeb3d17582e855/37b3dbaa-da65-598c-8ca8-62f70d23d210.mp3"
+    },
+    {
+      "assetGuid": "d32f5507-3655-546e-bfc7-def8b854771f",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "kind": "explanation",
+      "text": "This word means a visitor who is invited. A host may greet the person. They may be given a seat and food.",
+      "textHash": "e8578af68461639b41f5dbecd27c6d06fc152a9dd4916d9afb2b1d3ff5541a45",
+      "relativePath": "wordbank/09eeb3d17582e855/d32f5507-3655-546e-bfc7-def8b854771f.mp3"
+    },
+    {
+      "assetGuid": "de11fa1e-0b61-58aa-a320-0a9ad187cd9f",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "kind": "example",
+      "text": "We prepared a warm welcome for our dinner guests.",
+      "textHash": "7858a4b7394d18042ab65f664c69df2cb2dddf3682c7669c05281b5e381acd5c",
+      "relativePath": "wordbank/09eeb3d17582e855/de11fa1e-0b61-58aa-a320-0a9ad187cd9f.mp3"
+    },
+    {
+      "assetGuid": "89e58591-4f3d-5637-b67c-96d3b8070367",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "kind": "example",
+      "text": "The luxury resort offers complimentary breakfast and fruit bowls to hotel guests.",
+      "textHash": "34aa405f4d2c9903e184eaa254dfaae11ffcfe273ffadb8ff4c868ca63f7d8b2",
+      "relativePath": "wordbank/09eeb3d17582e855/89e58591-4f3d-5637-b67c-96d3b8070367.mp3"
+    },
+    {
+      "assetGuid": "976a6b19-42c3-5516-abe2-76adfffa8a66",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "word": "guest",
+      "kind": "example",
+      "text": "A world-famous author appeared as the special guest speaker at the literary seminar.",
+      "textHash": "726ed2b463f7ded43473b75da8015a91258c5105751f4ef5653ba0cf5ed9e4ea",
+      "relativePath": "wordbank/09eeb3d17582e855/976a6b19-42c3-5516-abe2-76adfffa8a66.mp3"
+    },
+    {
+      "assetGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "kind": "word",
+      "text": "front desk",
+      "textHash": "e728902a5c153c587f9077ff595762d097446ab87be7f617c21d4e12056e898a",
+      "relativePath": "wordbank/09eeb3d17582e855/7ed4358f-a905-5da4-b09e-9927b02a21b8.mp3"
+    },
+    {
+      "assetGuid": "1b98f27b-44f4-524a-a251-bd30d8dab533",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "kind": "explanation",
+      "text": "This is the counter in a hotel where guests can ask for help or check in. Staff may provide pillows or maps. They are often available all day.",
+      "textHash": "331b3acdc7bd321f9fb2dc1311d81079a4f71713c544f7e353d99d7408e5b51b",
+      "relativePath": "wordbank/09eeb3d17582e855/1b98f27b-44f4-524a-a251-bd30d8dab533.mp3"
+    },
+    {
+      "assetGuid": "246e4cff-1aa6-590d-b499-a5300b91493d",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "kind": "explanation",
+      "text": "A visitor can leave luggage here before entering a room. Hotel workers answer questions at this counter. A room phone may connect directly to it.",
+      "textHash": "dcef3f7d458956ce56e9891880076724572cb3e6d783b973d5ab8fa981956444",
+      "relativePath": "wordbank/09eeb3d17582e855/246e4cff-1aa6-590d-b499-a5300b91493d.mp3"
+    },
+    {
+      "assetGuid": "b931d816-e3c8-5e8e-a9ad-ccdf7d31fd33",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "kind": "explanation",
+      "text": "This hotel area is usually near the entrance. Guests can get keys, ask for assistance, or call staff from there. It is an important place for service.",
+      "textHash": "6a0cadcbeb2bdcbbca04e57dd0545a7e2f384cf186e96adc881f46d9e0d282f4",
+      "relativePath": "wordbank/09eeb3d17582e855/b931d816-e3c8-5e8e-a9ad-ccdf7d31fd33.mp3"
+    },
+    {
+      "assetGuid": "b5fb5b57-d9f0-5066-921a-98ebde6aa5c7",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "kind": "example",
+      "text": "Ask the hotel front desk clerk for extra pillows and local sightseeing maps.",
+      "textHash": "2babdc67b0af584c7d4785d839e355af5e78bd6e194ccbba9777cf01d39d52f7",
+      "relativePath": "wordbank/09eeb3d17582e855/b5fb5b57-d9f0-5066-921a-98ebde6aa5c7.mp3"
+    },
+    {
+      "assetGuid": "500a0616-f60e-5a6e-9485-7d63a40beb16",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "kind": "example",
+      "text": "You can leave your luggage at the front desk before check-in time.",
+      "textHash": "cc937998076fb5cac718140ebd29d36d8875da28692d146e00ff22f02bdf4bf9",
+      "relativePath": "wordbank/09eeb3d17582e855/500a0616-f60e-5a6e-9485-7d63a40beb16.mp3"
+    },
+    {
+      "assetGuid": "fd99f653-f632-5685-b0d3-1cfc409a4435",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "word": "front desk",
+      "kind": "example",
+      "text": "Dial zero on the room telephone to contact the 24-hour front desk.",
+      "textHash": "87ae69ad271b6f50ae2a26676b6f705c2492e6c310d6b51be04df797a6adf45e",
+      "relativePath": "wordbank/09eeb3d17582e855/fd99f653-f632-5685-b0d3-1cfc409a4435.mp3"
+    },
+    {
+      "assetGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "word",
+      "text": "passport",
+      "textHash": "cbc471ca60092bbe6c631f02bc57399b2da3d1ae491a55a1aa960a4b2e0ac7e8",
+      "relativePath": "wordbank/09eeb3d17582e855/8315fb35-d242-58af-8aaa-638a878ad478.mp3"
+    },
+    {
+      "assetGuid": "5c277e2b-e0a3-5158-8b7d-dc029bb99e39",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "explanation",
+      "text": "An official document proves a person's identity and citizenship when traveling to another country. Officials may check it at a border. Keep it safe during a trip.",
+      "textHash": "4ff2655c3573091dcc0a142baf4c5a81e9f6b0ec9e9024bc7ebb2af6250cf921",
+      "relativePath": "wordbank/09eeb3d17582e855/5c277e2b-e0a3-5158-8b7d-dc029bb99e39.mp3"
+    },
+    {
+      "assetGuid": "e94b2ba2-d3ee-5626-9a9e-642a136d770c",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "explanation",
+      "text": "The small booklet contains a photo and personal details. It may need to be valid for a certain time before travel. Check requirements early.",
+      "textHash": "2e50cf5a3f1d3cf4ebf348cc13650be4954f20555da034138600f17933c1749b",
+      "relativePath": "wordbank/09eeb3d17582e855/e94b2ba2-d3ee-5626-9a9e-642a136d770c.mp3"
+    },
+    {
+      "assetGuid": "36ee3fd5-dcfc-5d8d-8004-33647bdd4496",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "explanation",
+      "text": "A ticket shows a journey was paid for, while this document helps a traveler cross borders. Different countries have their own rules. An adult can help prepare travel papers.",
+      "textHash": "7e7101ab9c863b1ad34b6e99f40d460e64184338fdc439c600f396979c4cc359",
+      "relativePath": "wordbank/09eeb3d17582e855/36ee3fd5-dcfc-5d8d-8004-33647bdd4496.mp3"
+    },
+    {
+      "assetGuid": "8e211aa8-f8a2-5162-b016-18e306ada64a",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Remember to bring your valid passport when traveling abroad.",
+      "textHash": "0e7409fcf0e98cadb8e0dafd2a51b492ff4fa5fb0fe5cf3942aa32d66760391b",
+      "relativePath": "wordbank/09eeb3d17582e855/8e211aa8-f8a2-5162-b016-18e306ada64a.mp3"
+    },
+    {
+      "assetGuid": "7a7788ac-7994-508c-92fb-2bd137a0d6ea",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "The immigration officer inspected her passport and stamped an entry visa.",
+      "textHash": "fecf90853628708e1d8935f802581decfcc14a8dd039d636877baaa18ea35321",
+      "relativePath": "wordbank/09eeb3d17582e855/7a7788ac-7994-508c-92fb-2bd137a0d6ea.mp3"
+    },
+    {
+      "assetGuid": "c390266d-958c-59f9-aeb3-59611afdff71",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Keep your passport in a secure zipper pouch to prevent accidental loss.",
+      "textHash": "2501df2807cd5527e1885a8f916a7157407f8e5b76fc8afa946c3d11b67ff0dc",
+      "relativePath": "wordbank/09eeb3d17582e855/c390266d-958c-59f9-aeb3-59611afdff71.mp3"
+    },
+    {
+      "assetGuid": "216e60c4-d2b7-5988-b283-471644078b7d",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Ensure your biometric passport has at least six months of remaining validity.",
+      "textHash": "309c0646952ecf6ee31c07bec3a3f5cc66aac3e0b092a2a3bb388b2decc94e5e",
+      "relativePath": "wordbank/09eeb3d17582e855/216e60c4-d2b7-5988-b283-471644078b7d.mp3"
+    },
+    {
+      "assetGuid": "9eb745f7-39a6-53a8-9bd1-672951cbf47d",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Keep your passport and cash securely stored inside a zippered neck pouch while traveling.",
+      "textHash": "c4bc2b5ff878834076696516997e2aed7f56593597a694abcb4e46059bbe9528",
+      "relativePath": "wordbank/09eeb3d17582e855/9eb745f7-39a6-53a8-9bd1-672951cbf47d.mp3"
+    },
+    {
+      "assetGuid": "899c01ba-a175-50b4-9bb6-9ca1e000279c",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "She proudly showed the colorful border stamps covering the pages of her travel passport.",
+      "textHash": "60f68758d0dc725e118ce76ff00c3edd9b43890ce8ee1958d961aa2651e13a5d",
+      "relativePath": "wordbank/09eeb3d17582e855/899c01ba-a175-50b4-9bb6-9ca1e000279c.mp3"
+    },
+    {
+      "assetGuid": "35633ecf-c967-5b26-aa51-523165a4c981",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Every beam and window is logged in a digital material passport to document chemical makeup and recycling value.",
+      "textHash": "c15e12fcaa9c1eb9bfd246410fb508eef240cbad46c259d225aa7449c1f87a18",
+      "relativePath": "wordbank/09eeb3d17582e855/35633ecf-c967-5b26-aa51-523165a4c981.mp3"
+    },
+    {
+      "assetGuid": "9a84f56c-34ed-5e6c-958f-b4c0df71809d",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Scanning a building component's QR code accesses its material passport detailing reuse instructions.",
+      "textHash": "1e1c7fda667f3522889702b81f0640436485a96e6c8ed8e0e8f36b5c289f3162",
+      "relativePath": "wordbank/09eeb3d17582e855/9a84f56c-34ed-5e6c-958f-b4c0df71809d.mp3"
+    },
+    {
+      "assetGuid": "9c275919-233f-5694-8048-3fb1be34cc78",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Digital material passports treat modern buildings as banks of valuable materials for future generations.",
+      "textHash": "bf63eae2f686fb25e952baee8179278b804a8043858d13e385e28cddfba292df",
+      "relativePath": "wordbank/09eeb3d17582e855/9c275919-233f-5694-8048-3fb1be34cc78.mp3"
+    },
+    {
+      "assetGuid": "e6c676fe-5ce7-5676-9f82-666b505f29ae",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "English is not just a school subject; it is your golden passport to the boundless global village.",
+      "textHash": "24bc1263957c205938ab0ab3866a812618419ed71998f9bcffbdd3689632e8cc",
+      "relativePath": "wordbank/09eeb3d17582e855/e6c676fe-5ce7-5676-9f82-666b505f29ae.mp3"
+    },
+    {
+      "assetGuid": "521bea4b-a807-5eb4-a6f8-bc22a7ada672",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "Please check that your biometric passport has at least six months of validity before booking flights.",
+      "textHash": "850ca2b78089b2dca36b0437d50cd9fb13317edfd77a551096a5543a60270da2",
+      "relativePath": "wordbank/09eeb3d17582e855/521bea4b-a807-5eb4-a6f8-bc22a7ada672.mp3"
+    },
+    {
+      "assetGuid": "3ff326ac-1801-5401-ae5a-2b9802e938e9",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "word": "passport",
+      "kind": "example",
+      "text": "High emotional intelligence and global cultural literacy serve as an invisible passport across international borders.",
+      "textHash": "1fadd47ea5d80a7625bc335af5fbd8a5b6c04dd81f33aefff40227d9f2b2c99d",
+      "relativePath": "wordbank/09eeb3d17582e855/3ff326ac-1801-5401-ae5a-2b9802e938e9.mp3"
+    },
+    {
+      "assetGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "kind": "word",
+      "text": "key card",
+      "textHash": "47edce64a7b2bdebf8de8cf4cf4d78f93af7d190afb693d21560b3221f8cf188",
+      "relativePath": "wordbank/09eeb3d17582e855/d3df4812-78a5-59b2-ac81-adb2d6f8d5e6.mp3"
+    },
+    {
+      "assetGuid": "036941fb-13f8-53b5-a608-62fbbc33fba7",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "kind": "explanation",
+      "text": "Hold this plastic card near a reader to unlock a hotel room. It can replace a metal key.",
+      "textHash": "2655fc7e5ad24bdf122141f86fc30086bac9295ab724a498d8c9b3226aa07dc7",
+      "relativePath": "wordbank/09eeb3d17582e855/036941fb-13f8-53b5-a608-62fbbc33fba7.mp3"
+    },
+    {
+      "assetGuid": "7cfa203e-0ef0-525e-a3c6-b01d08eaa6de",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "kind": "explanation",
+      "text": "A guest taps this card on a door sensor to enter. Keep it safe until checkout.",
+      "textHash": "276540645a9cc0b0c9acdd99c61b1d03c6cbf4c287d169f48f7f7bd207487032",
+      "relativePath": "wordbank/09eeb3d17582e855/7cfa203e-0ef0-525e-a3c6-b01d08eaa6de.mp3"
+    },
+    {
+      "assetGuid": "23d8ebf3-d5c4-553e-877f-6fdcfad4c034",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "kind": "explanation",
+      "text": "This access card may open a building or room with a quick tap. The front desk can give one to a visitor.",
+      "textHash": "99a5df9b29600f2623846a80a76481346011e6e1c68c661a46dea7bd3aef9a6d",
+      "relativePath": "wordbank/09eeb3d17582e855/23d8ebf3-d5c4-553e-877f-6fdcfad4c034.mp3"
+    },
+    {
+      "assetGuid": "7f4737ae-445f-5443-b0ef-71e6a810ab80",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "kind": "example",
+      "text": "Tap your electronic key card to open the hotel room door.",
+      "textHash": "e54d0468a2f4f35fc314645df895915ea44f6514319573bec8ee29883f1f4b25",
+      "relativePath": "wordbank/09eeb3d17582e855/7f4737ae-445f-5443-b0ef-71e6a810ab80.mp3"
+    },
+    {
+      "assetGuid": "fda852b2-4523-5eb2-9aef-d58116efb996",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "kind": "example",
+      "text": "I accidentally demagnetized my key card by placing it near my phone.",
+      "textHash": "53b77a54bc4a637b5adcfb82f41810a03b5528cfdcfe3eaa6d5e568de395396c",
+      "relativePath": "wordbank/09eeb3d17582e855/fda852b2-4523-5eb2-9aef-d58116efb996.mp3"
+    },
+    {
+      "assetGuid": "9954a6d9-e66b-5c05-bdac-70bddb76e2cc",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "word": "key card",
+      "kind": "example",
+      "text": "Please return both key cards to the front desk when checking out.",
+      "textHash": "06efa1d69b95593165a69a70fc3c3502493e72e657a8b717f54133edacfc3636",
+      "relativePath": "wordbank/09eeb3d17582e855/9954a6d9-e66b-5c05-bdac-70bddb76e2cc.mp3"
+    },
+    {
+      "assetGuid": "5f40bcfb-5e8b-5106-bfc6-49213fdc00a0",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "word": "form",
+      "kind": "explanation",
+      "text": "This can mean the shape of something. Clay can become a bowl or a cup. Each finished object has a different outline.",
+      "textHash": "0d654d29bd55616780f509ad6d2658d12864417c5653f4c7afb7b2f08257dc2f",
+      "relativePath": "wordbank/09eeb3d17582e855/5f40bcfb-5e8b-5106-bfc6-49213fdc00a0.mp3"
+    },
+    {
+      "assetGuid": "9cf2d358-7370-5b01-aab5-581f9bea4111",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "word": "form",
+      "kind": "explanation",
+      "text": "This can be a paper with spaces for information. A person writes a name and an address in those spaces. A school may ask a parent to fill it in.",
+      "textHash": "e2655066b111c2e1a6eb0bc2169e46225878ea6de1fc1b755a2f2e83101d6206",
+      "relativePath": "wordbank/09eeb3d17582e855/9cf2d358-7370-5b01-aab5-581f9bea4111.mp3"
+    },
+    {
+      "assetGuid": "5909a347-4b61-5400-8d67-fceff5bc8c60",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "word": "form",
+      "kind": "explanation",
+      "text": "The verb means making or developing something. Children can make a circle by standing together. Clouds can also develop in the sky.",
+      "textHash": "8818ab429023873cd7005aad8b2732a99628b769fe01bca32e425ad35c530dfc",
+      "relativePath": "wordbank/09eeb3d17582e855/5909a347-4b61-5400-8d67-fceff5bc8c60.mp3"
+    },
+    {
+      "assetGuid": "54b349c1-dfd6-5484-bde2-e7ebc7afd312",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "word": "form",
+      "kind": "example",
+      "text": "Please fill out this form.",
+      "textHash": "e67930d235f4b63a52e00e625ef54d4a7a40aaf7ec1b30f30f4694b8d35269c0",
+      "relativePath": "wordbank/09eeb3d17582e855/54b349c1-dfd6-5484-bde2-e7ebc7afd312.mp3"
+    },
+    {
+      "assetGuid": "f8e0486f-f338-5ae6-a981-9cb35c19ea36",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "word": "form",
+      "kind": "example",
+      "text": "Water can form ice in cold weather.",
+      "textHash": "05e216404c753f55aac73145e6005de743ffd1b5828ed6eeac086a65b5b17fda",
+      "relativePath": "wordbank/09eeb3d17582e855/f8e0486f-f338-5ae6-a981-9cb35c19ea36.mp3"
+    },
+    {
+      "assetGuid": "7992a75e-5625-5747-9817-9e9595893f8b",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "word": "form",
+      "kind": "example",
+      "text": "The clouds formed a long line.",
+      "textHash": "dd6c185afa3026f8766b24b304b4e42a7a2976ee1be4f28400f8b88013c4ba8d",
+      "relativePath": "wordbank/09eeb3d17582e855/7992a75e-5625-5747-9817-9e9595893f8b.mp3"
+    },
+    {
+      "assetGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "word",
+      "text": "reservation",
+      "textHash": "9efa077f044e7a779c655f8d8e8760cacd16ce2347b6aa10e45b18fb5325fdd6",
+      "relativePath": "wordbank/09eeb3d17582e855/2ab3adfa-132e-53aa-8b51-8840f3b24192.mp3"
+    },
+    {
+      "assetGuid": "b818af8c-1823-582c-a7c2-3b1750d4281e",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "explanation",
+      "text": "This can mean an arrangement to keep a place or service ready for someone. A family may book a hotel room before a trip. The hotel holds the room for their arrival.",
+      "textHash": "064a55db074285d4cdb17ab86725fdfcef45d36dc8b13e70d60860a49a8691f4",
+      "relativePath": "wordbank/09eeb3d17582e855/b818af8c-1823-582c-a7c2-3b1750d4281e.mp3"
+    },
+    {
+      "assetGuid": "d734b59a-5b6b-5329-8e6d-c057be1d2396",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "explanation",
+      "text": "A restaurant may save a table for guests at a chosen time. The guests give their name when they arrive. The arrangement helps them plan their evening.",
+      "textHash": "4dcbd0ff693d0c704c2501c9d395e7da055c93026d3454591d5977cb805366b3",
+      "relativePath": "wordbank/09eeb3d17582e855/d734b59a-5b6b-5329-8e6d-c057be1d2396.mp3"
+    },
+    {
+      "assetGuid": "ba426068-7889-5964-b07a-97f2e8ad4e80",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "explanation",
+      "text": "The noun can also mean a doubt or concern about a plan. Someone may like most of an idea but worry about its cost. That concern can make them hesitate.",
+      "textHash": "a39f0cd29df2afd4e38272b1dfe304e709ae934ede453e2335bdb2452bc26423",
+      "relativePath": "wordbank/09eeb3d17582e855/ba426068-7889-5964-b07a-97f2e8ad4e80.mp3"
+    },
+    {
+      "assetGuid": "70b9ec14-76c6-5a52-876b-7dbfaa179270",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "example",
+      "text": "I made a dinner reservation for four at the hot pot restaurant.",
+      "textHash": "15bec856ea899fc7e7daf7c3eb171fbe74bbd3995befaf31a6aa37adf068964c",
+      "relativePath": "wordbank/09eeb3d17582e855/70b9ec14-76c6-5a52-876b-7dbfaa179270.mp3"
+    },
+    {
+      "assetGuid": "b3807847-8bbe-5ec8-88d0-b8656df91eb7",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "example",
+      "text": "You must confirm your table reservation at least one day before dining.",
+      "textHash": "f7c213a1ed6b3e16852cebbf4143a087e0b8dff50ef08fa59dc2e9138a069a74",
+      "relativePath": "wordbank/09eeb3d17582e855/b3807847-8bbe-5ec8-88d0-b8656df91eb7.mp3"
+    },
+    {
+      "assetGuid": "a5aea325-d4d7-5ab2-8f2c-171e8b0e5f49",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "example",
+      "text": "The committee expressed strong reservations about the proposed budget cut.",
+      "textHash": "34246b1b99f33228df940c23b24bbe5a60727c1a9517e2358d28bdbae6dcfc0d",
+      "relativePath": "wordbank/09eeb3d17582e855/a5aea325-d4d7-5ab2-8f2c-171e8b0e5f49.mp3"
+    },
+    {
+      "assetGuid": "fb94bb2e-806e-53cd-a0e6-ff9e94895cac",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "example",
+      "text": "I made an online hotel reservation for two nights in Kenting.",
+      "textHash": "1c86e4c09c0a1b4fcad424d601348f4a9a058736ed0f7e41d6ea089486809a0d",
+      "relativePath": "wordbank/09eeb3d17582e855/fb94bb2e-806e-53cd-a0e6-ff9e94895cac.mp3"
+    },
+    {
+      "assetGuid": "109ada82-9199-58f2-b372-aed930dcb91d",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "example",
+      "text": "Because the seafood restaurant is very popular, making a table reservation is mandatory.",
+      "textHash": "da278ca57425e426907b890831d36e0947bd7e319c8bb04c7279820ac26e713c",
+      "relativePath": "wordbank/09eeb3d17582e855/109ada82-9199-58f2-b372-aed930dcb91d.mp3"
+    },
+    {
+      "assetGuid": "5a9f55b0-79f5-5f04-993d-bb144f158824",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "word": "reservation",
+      "kind": "example",
+      "text": "You can modify or cancel your booking reservation without penalty up to forty-eight hours in advance.",
+      "textHash": "3017946cc3814a4204e36464bbc796319237cfbf2a94a8ae011e0bafc2d0c027",
+      "relativePath": "wordbank/09eeb3d17582e855/5a9f55b0-79f5-5f04-993d-bb144f158824.mp3"
+    },
+    {
+      "assetGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "kind": "word",
+      "text": "luggage",
+      "textHash": "f59e7a4ed324acd6be7a63946a097473b2cc3112c78f986934688077de077fe5",
+      "relativePath": "wordbank/09eeb3d17582e855/2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3.mp3"
+    },
+    {
+      "assetGuid": "4ea1d40c-1b82-5c1b-9b0c-2a68def61e99",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "kind": "explanation",
+      "text": "The bags and cases people take on a trip are called this. They may hold clothes and personal items. Travelers should keep important things close.",
+      "textHash": "74a757f39b120b695ff82f90bda663f9db11d4bfead1ca90a5021236eeab7ef7",
+      "relativePath": "wordbank/09eeb3d17582e855/4ea1d40c-1b82-5c1b-9b0c-2a68def61e99.mp3"
+    },
+    {
+      "assetGuid": "1097019a-f68f-54f2-b74b-d7b4b6fa2baa",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "kind": "explanation",
+      "text": "Airlines have rules about how much a person can carry. Labels help bags get back to their owners. Check the rules before traveling.",
+      "textHash": "5ccb74b599ddd8484afbff846931d10fcb211776adffb76046305ca9c5625c0c",
+      "relativePath": "wordbank/09eeb3d17582e855/1097019a-f68f-54f2-b74b-d7b4b6fa2baa.mp3"
+    },
+    {
+      "assetGuid": "9309315e-a861-52a0-8db6-bc891564ff21",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "kind": "explanation",
+      "text": "A suitcase is one piece, while this word can refer to all the bags together. A backpack may be part of it too. Pack only what is needed.",
+      "textHash": "ce4aad3d8d0b5d759e618ba777fe3d1ca0609238cddd6be7292affd7a94f0c9c",
+      "relativePath": "wordbank/09eeb3d17582e855/9309315e-a861-52a0-8db6-bc891564ff21.mp3"
+    },
+    {
+      "assetGuid": "69080fa9-369a-5887-b02d-6538e5128341",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "kind": "example",
+      "text": "Weigh your luggage before heading to the airport.",
+      "textHash": "9bb2ee6c86cc9c71532d34b0390654f65d49b14dc39b9705d55cdd7e29037552",
+      "relativePath": "wordbank/09eeb3d17582e855/69080fa9-369a-5887-b02d-6538e5128341.mp3"
+    },
+    {
+      "assetGuid": "11358108-4dd6-5536-aab1-13fbc07e0108",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "kind": "example",
+      "text": "The airline allows two pieces of checked luggage per economy passenger.",
+      "textHash": "03be5e2042d04ee1139d83fa496c3cc0dae2dd0308be478a0a0b9f2cc155d4ae",
+      "relativePath": "wordbank/09eeb3d17582e855/11358108-4dd6-5536-aab1-13fbc07e0108.mp3"
+    },
+    {
+      "assetGuid": "e60203a7-ca02-53a2-a05e-82bc4905508a",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "word": "luggage",
+      "kind": "example",
+      "text": "Porters helped carry the heavy luggage up to our hotel room.",
+      "textHash": "aa0464ecdd472650a6652950af6e4d9fe8fb4f2b6f363e422478e979de41da41",
+      "relativePath": "wordbank/09eeb3d17582e855/e60203a7-ca02-53a2-a05e-82bc4905508a.mp3"
+    },
+    {
+      "assetGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "kind": "word",
+      "text": "cart",
+      "textHash": "1c42ddc0285b9c25135be3bf345e6a041271b784b22a6f6cab6588dab93c5980",
+      "relativePath": "wordbank/09eeb3d17582e855/0759e0ab-6df9-5d84-b87a-8723f0cbbec4.mp3"
+    },
+    {
+      "assetGuid": "5221e966-4355-57de-83f7-2b92cfae348e",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "kind": "explanation",
+      "text": "A small vehicle with wheels carries groceries or other items. Someone pushes it through a store. Keep it out of the way afterward.",
+      "textHash": "6fe19dc09b998d96ad40a5622f4634b3add877603bd2f0baa36992530979e085",
+      "relativePath": "wordbank/09eeb3d17582e855/5221e966-4355-57de-83f7-2b92cfae348e.mp3"
+    },
+    {
+      "assetGuid": "a163484f-791b-5661-bd18-39d5644fe9c4",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "kind": "explanation",
+      "text": "A horse or another animal may pull this vehicle. It can carry farm goods. Strong wheels make it easier to move.",
+      "textHash": "57978560116212c87df303e84e97ec8b633ee77f4abbbab00965c7a69a9b6fa7",
+      "relativePath": "wordbank/09eeb3d17582e855/a163484f-791b-5661-bd18-39d5644fe9c4.mp3"
+    },
+    {
+      "assetGuid": "56184681-141a-5e99-a311-cc4442419c10",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "kind": "explanation",
+      "text": "A computer shop may show a list of items someone plans to buy. The shopper checks the total before paying. A button removes items no longer needed.",
+      "textHash": "6e0bd9197e63b7d713ebb6921612daffd361c3f86415e632c996c9e9894bfb52",
+      "relativePath": "wordbank/09eeb3d17582e855/56184681-141a-5e99-a311-cc4442419c10.mp3"
+    },
+    {
+      "assetGuid": "a8a2c5cb-edd3-5942-8e72-d3f2fb05998b",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "kind": "example",
+      "text": "Dad pushed the cart through the grocery store.",
+      "textHash": "f9237cf0cc9ddac744ca8dda0b46c5905844ff82f4aab2a8acc7bd2dcdcacb26",
+      "relativePath": "wordbank/09eeb3d17582e855/a8a2c5cb-edd3-5942-8e72-d3f2fb05998b.mp3"
+    },
+    {
+      "assetGuid": "116b4122-2b1d-566a-8d19-b945548f5784",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "kind": "example",
+      "text": "The farmer loaded apples onto a wooden cart.",
+      "textHash": "a6621768df438c50c35f8943faa04e8c02feaba1381229d0720292944a05e441",
+      "relativePath": "wordbank/09eeb3d17582e855/116b4122-2b1d-566a-8d19-b945548f5784.mp3"
+    },
+    {
+      "assetGuid": "aed880ab-8d51-52c0-beef-5db1143cfde3",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "word": "cart",
+      "kind": "example",
+      "text": "I added a notebook to my online cart before checkout.",
+      "textHash": "3b0d20ce497557d918506f76672052cc023f612281151f3360f16a525b66975f",
+      "relativePath": "wordbank/09eeb3d17582e855/aed880ab-8d51-52c0-beef-5db1143cfde3.mp3"
+    },
+    {
+      "assetGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "kind": "word",
+      "text": "tag",
+      "textHash": "2a1073a6e67f0e5f09a5957c659503c690efe7272be8313df872556a9a684d8c",
+      "relativePath": "wordbank/09eeb3d17582e855/fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3.mp3"
+    },
+    {
+      "assetGuid": "077ad4ce-14a6-5f03-8d23-896b7b4ca174",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "kind": "explanation",
+      "text": "A small label attached to an item gives its name, price, or details. Clothes often have one inside. Read it before washing the garment.",
+      "textHash": "ebaf2340b7522b91cc0b630500d5ed16da28de986021490de2fe5c4205d07807",
+      "relativePath": "wordbank/09eeb3d17582e855/077ad4ce-14a6-5f03-8d23-896b7b4ca174.mp3"
+    },
+    {
+      "assetGuid": "c82bf4ed-fa7a-57ec-ad67-f4758ebe46b7",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "kind": "explanation",
+      "text": "As a verb, it can mean touching another player in a game. A child may touch another player during the chasing game. Agree on safe rules first.",
+      "textHash": "1ed7b70b88ad6a36f99019ec258afaad87a619fcee807fe4e4978dac3663ca9a",
+      "relativePath": "wordbank/09eeb3d17582e855/c82bf4ed-fa7a-57ec-ad67-f4758ebe46b7.mp3"
+    },
+    {
+      "assetGuid": "78ce0967-9c48-5901-8c21-41bf8cc13e14",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "kind": "explanation",
+      "text": "A sign may show information for a whole place, while this is often attached to one object. It can also refer to a chasing game. The sentence shows the use.",
+      "textHash": "7fefde83ce309b752e54b6540f8094a4608db2f5809d42c86b4795b254a3f5f5",
+      "relativePath": "wordbank/09eeb3d17582e855/78ce0967-9c48-5901-8c21-41bf8cc13e14.mp3"
+    },
+    {
+      "assetGuid": "299a090a-6cd3-57b7-8e06-13be3e167bcf",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "kind": "example",
+      "text": "The price tag was still attached to the shirt.",
+      "textHash": "79b28ec63950af15a3cb3192b138e76413f8ad4d3d631cfbcc78297e7d78398e",
+      "relativePath": "wordbank/09eeb3d17582e855/299a090a-6cd3-57b7-8e06-13be3e167bcf.mp3"
+    },
+    {
+      "assetGuid": "69eb37b1-e65f-5a80-a74f-6a0010245db0",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "kind": "example",
+      "text": "The children played tag in the yard.",
+      "textHash": "d33707ae4460207f1ee1fe2fe4850617341a4ef962bf8b2833fb4f6db9d549d5",
+      "relativePath": "wordbank/09eeb3d17582e855/69eb37b1-e65f-5a80-a74f-6a0010245db0.mp3"
+    },
+    {
+      "assetGuid": "069dd985-0294-545b-a7a1-5a5920ccc048",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "word": "tag",
+      "kind": "example",
+      "text": "She tagged the photo with the place name.",
+      "textHash": "caf34d13d5958b46589d6017e59d4bc5daa96e54d8810372a2c17750f07e8d88",
+      "relativePath": "wordbank/09eeb3d17582e855/069dd985-0294-545b-a7a1-5a5920ccc048.mp3"
+    },
+    {
+      "assetGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "kind": "word",
+      "text": "toothbrush",
+      "textHash": "8d8d7dbe6559acfc6bb4c0e3dcb953af700072dd7987863dc04a5a0bab1d3273",
+      "relativePath": "wordbank/09eeb3d17582e855/c9168ced-5598-59ec-97fb-ea0aebb3b5bc.mp3"
+    },
+    {
+      "assetGuid": "c168ac64-dde4-529f-aefe-f5f88c5baad5",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "kind": "explanation",
+      "text": "A small brush with a handle helps clean teeth. People move it gently over each tooth. They use it with toothpaste and water.",
+      "textHash": "eb05ee1dcb3ce5cbbc9d09b772ace904fc98ed90320e800aea6b1a79594b4222",
+      "relativePath": "wordbank/09eeb3d17582e855/c168ac64-dde4-529f-aefe-f5f88c5baad5.mp3"
+    },
+    {
+      "assetGuid": "c688aff8-2a58-5672-9525-c216263b8a71",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "kind": "explanation",
+      "text": "Brushes have soft or firm bristles. A clean one should be stored where it can dry. Each person should have their own.",
+      "textHash": "9b42b117d344e240bdee8c3dbb6f0a960c407abccb78b35c3149dec8394fe4a3",
+      "relativePath": "wordbank/09eeb3d17582e855/c688aff8-2a58-5672-9525-c216263b8a71.mp3"
+    },
+    {
+      "assetGuid": "1386143d-b65d-50f2-a9ce-dd9b7905bd66",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "kind": "explanation",
+      "text": "Cleaning teeth every day is part of good care. Replace worn bristles when needed. A clean brush works better.",
+      "textHash": "078be6b99a193c73d77003ead34e51684840628ec905f692817b9ef2008257a1",
+      "relativePath": "wordbank/09eeb3d17582e855/1386143d-b65d-50f2-a9ce-dd9b7905bd66.mp3"
+    },
+    {
+      "assetGuid": "06f3c1cd-35fe-56b8-986b-4ac3b9d28123",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "kind": "example",
+      "text": "Dentists recommend changing your toothbrush every three months.",
+      "textHash": "efae79ad88f2229cd7f58ec083fd3f3eca27f2065f583d9832679682649096f9",
+      "relativePath": "wordbank/09eeb3d17582e855/06f3c1cd-35fe-56b8-986b-4ac3b9d28123.mp3"
+    },
+    {
+      "assetGuid": "376ec646-e2ce-5637-ae8e-d67c84433730",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "kind": "example",
+      "text": "An electric toothbrush removes dental plaque more effectively.",
+      "textHash": "5cd008ba589542f0a8dd943945afc3147cf85dec5fb4c81363151f3e4cd608f2",
+      "relativePath": "wordbank/09eeb3d17582e855/376ec646-e2ce-5637-ae8e-d67c84433730.mp3"
+    },
+    {
+      "assetGuid": "e5a21f4f-0aab-55af-83b6-404d61e23854",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "word": "toothbrush",
+      "kind": "example",
+      "text": "Don't forget to pack your toothbrush before going on vacation.",
+      "textHash": "401c008fc98d3ea3516a7f13faae4b61a37b826c584f2aafacaf61643f53ebd5",
+      "relativePath": "wordbank/09eeb3d17582e855/e5a21f4f-0aab-55af-83b6-404d61e23854.mp3"
+    },
+    {
+      "assetGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "kind": "word",
+      "text": "toothpaste",
+      "textHash": "26e466582de83799f38b6b572a723bb65b80a7d37b6fda00a2fbb4c5430768ae",
+      "relativePath": "wordbank/09eeb3d17582e855/22ed6dc4-fb2b-5f32-b2a4-dc246001483f.mp3"
+    },
+    {
+      "assetGuid": "12e5d19a-d52e-5f27-b32e-4d1f9b57c2b7",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "kind": "explanation",
+      "text": "It is a soft cleaning product used on a toothbrush. People use it to clean their teeth and freshen their breath. It often comes in a tube.",
+      "textHash": "45aa4c2c40c955642e9889848c48e058cb64208569a12d42e5e6091b4e0bf94c",
+      "relativePath": "wordbank/09eeb3d17582e855/12e5d19a-d52e-5f27-b32e-4d1f9b57c2b7.mp3"
+    },
+    {
+      "assetGuid": "0dfbc84d-900e-57c3-9942-cdc71b6b7523",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "kind": "explanation",
+      "text": "Put a small amount of this minty paste on a brush before cleaning your teeth. Some kinds contain fluoride to help protect against cavities. Rinse your mouth afterward.",
+      "textHash": "7104f9226996d232daceeedb7b83517b0a7ff9a4e58fc2a32792f5c91f3bbf58",
+      "relativePath": "wordbank/09eeb3d17582e855/0dfbc84d-900e-57c3-9942-cdc71b6b7523.mp3"
+    },
+    {
+      "assetGuid": "118162fa-1ab6-5a1c-9bbe-31ef25e8fda1",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "kind": "explanation",
+      "text": "This product helps remove food and plaque from teeth. It may have a mint flavor and is squeezed from a tube. Use it with a toothbrush each day.",
+      "textHash": "d685696652d75b8231d881ee76d96897c00a75bfca364e4f982f5ab19cfe1c6e",
+      "relativePath": "wordbank/09eeb3d17582e855/118162fa-1ab6-5a1c-9bbe-31ef25e8fda1.mp3"
+    },
+    {
+      "assetGuid": "05108125-5ed5-5a5a-ae41-f0aa3be805d6",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "kind": "example",
+      "text": "Squeeze a pea-sized amount of toothpaste onto the brush.",
+      "textHash": "c467575e94be2f08011ad12380177c77fe164f9ff91ce3f133515d1dddafc45d",
+      "relativePath": "wordbank/09eeb3d17582e855/05108125-5ed5-5a5a-ae41-f0aa3be805d6.mp3"
+    },
+    {
+      "assetGuid": "be562ad9-adba-5cf3-8878-13feab5212fa",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "kind": "example",
+      "text": "This fluoride toothpaste helps prevent cavities.",
+      "textHash": "2b25502432d1f18b75d89b61f245af0abc43e4a2586be5a02b03bc822ca8d82e",
+      "relativePath": "wordbank/09eeb3d17582e855/be562ad9-adba-5cf3-8878-13feab5212fa.mp3"
+    },
+    {
+      "assetGuid": "0dd537b4-a042-5a3f-bbb3-d8cbfbc9259b",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "word": "toothpaste",
+      "kind": "example",
+      "text": "Buy a fresh tube of mint toothpaste from the supermarket.",
+      "textHash": "51bb2009ab8273f23bfb7aec9df007756aefee03731817ada321e216fe343379",
+      "relativePath": "wordbank/09eeb3d17582e855/0dd537b4-a042-5a3f-bbb3-d8cbfbc9259b.mp3"
+    },
+    {
+      "assetGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "kind": "word",
+      "text": "shampoo",
+      "textHash": "021624ecb7e008142371f6a5e8ba464675cef73e906528fd20314900f980bba7",
+      "relativePath": "wordbank/09eeb3d17582e855/5cfec1b4-ffd9-5eee-a091-03050d3a2921.mp3"
+    },
+    {
+      "assetGuid": "adce8e5e-1682-537f-ae3d-db1a20e2ed47",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "kind": "explanation",
+      "text": "A liquid or cream used to wash hair is called this. People massage it into wet hair and rinse it out. Keep it away from the eyes.",
+      "textHash": "f0f2b2607aa004d5c25e883bb22ab4b8d90a17d81e437d27418f769c4b7c53ed",
+      "relativePath": "wordbank/09eeb3d17582e855/adce8e5e-1682-537f-ae3d-db1a20e2ed47.mp3"
+    },
+    {
+      "assetGuid": "46939086-919e-534d-8f3b-9b8cec6083d2",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "kind": "explanation",
+      "text": "The verb means to wash hair with the product. Some kinds are made for dry or curly hair. Read the label before use.",
+      "textHash": "c4dec10d57e1a74231e1527df071f088514f2c1dc755cb5c0c8fef6539c601c7",
+      "relativePath": "wordbank/09eeb3d17582e855/46939086-919e-534d-8f3b-9b8cec6083d2.mp3"
+    },
+    {
+      "assetGuid": "ef3d4bec-a813-5a32-adfe-47a5de6b739e",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "kind": "explanation",
+      "text": "Soap can clean hands and body, while this product is made especially for hair. Conditioner is used afterward by some people. Rinse well.",
+      "textHash": "87d4ebb6f69dd2fc9b62c183a9ed71012e9bdbb0617536ee22a9034f49bebd04",
+      "relativePath": "wordbank/09eeb3d17582e855/ef3d4bec-a813-5a32-adfe-47a5de6b739e.mp3"
+    },
+    {
+      "assetGuid": "ae399b79-e871-57f3-bf7c-c04c54dbf950",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "kind": "example",
+      "text": "This botanical shampoo smells like mint.",
+      "textHash": "d2eb7942f5204b6796a18d3dcfe68c61488c97e1cd473a91ad032af657400976",
+      "relativePath": "wordbank/09eeb3d17582e855/ae399b79-e871-57f3-bf7c-c04c54dbf950.mp3"
+    },
+    {
+      "assetGuid": "762af583-556b-5111-9421-0c5387334f98",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "kind": "example",
+      "text": "Wash your hair with anti-dandruff shampoo twice a week.",
+      "textHash": "3fc1b6c52a7893d07fae9424052db41f6f1f60f54baf8f9c30e0b2af51bce287",
+      "relativePath": "wordbank/09eeb3d17582e855/762af583-556b-5111-9421-0c5387334f98.mp3"
+    },
+    {
+      "assetGuid": "f017e92a-a6f6-59b3-b0a2-e054aaac2673",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "word": "shampoo",
+      "kind": "example",
+      "text": "She prefers using silicone-free shampoo for healthier hair.",
+      "textHash": "03f8ca699a1f96297dd5812202e73ccc07024a1ff2a31ced335feb834a72438a",
+      "relativePath": "wordbank/09eeb3d17582e855/f017e92a-a6f6-59b3-b0a2-e054aaac2673.mp3"
+    },
+    {
+      "assetGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "kind": "word",
+      "text": "porter",
+      "textHash": "f78b1bbdaafa735f1912927e79c9e160bcf40c8a86c9c1507bb4427fdfd9f452",
+      "relativePath": "wordbank/09eeb3d17582e855/028397a3-6eb3-5491-8662-0b0908345941.mp3"
+    },
+    {
+      "assetGuid": "ff3cb642-dc67-5715-b434-df8eef001992",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "kind": "explanation",
+      "text": "This noun names a person who carries bags for travelers at a hotel or station. The worker may help guests reach their rooms. The job involves carrying items.",
+      "textHash": "bc6ed28030b14e395f193d26bcc601f1f837bdf8d0e265250406dcd03bb776b8",
+      "relativePath": "wordbank/09eeb3d17582e855/ff3cb642-dc67-5715-b434-df8eef001992.mp3"
+    },
+    {
+      "assetGuid": "b043e1bc-8436-532a-899d-21729faa4d8e",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "kind": "explanation",
+      "text": "It can also mean a person who carries goods or luggage as a job. A traveler may pay the worker for help. The term is common in older stories.",
+      "textHash": "f75e95b4ad3bfd6318bb19798eff3ed9596ac75e54cb265b5a40c29df724e47f",
+      "relativePath": "wordbank/09eeb3d17582e855/b043e1bc-8436-532a-899d-21729faa4d8e.mp3"
+    },
+    {
+      "assetGuid": "2d452837-20c7-52d0-9f9f-a18d12e91f07",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "kind": "explanation",
+      "text": "In sports, the word can name a player positioned near the goal. Context determines whether it means a worker who carries or a sports position. The role depends on the game.",
+      "textHash": "e6951e763680adf023bcf600851e91601e98d169ab9088fc53dab4c41f89a04f",
+      "relativePath": "wordbank/09eeb3d17582e855/2d452837-20c7-52d0-9f9f-a18d12e91f07.mp3"
+    },
+    {
+      "assetGuid": "5ff20a69-ca44-5c91-910d-fb50bad6d0fe",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "kind": "example",
+      "text": "The porter carried our bags to the room.",
+      "textHash": "93f82367cd353cdc16700be75cc780b31692dfc459647726ff067029959adbf5",
+      "relativePath": "wordbank/09eeb3d17582e855/5ff20a69-ca44-5c91-910d-fb50bad6d0fe.mp3"
+    },
+    {
+      "assetGuid": "5e942f7e-cd3c-5baa-bfc3-b5a60fa6b08b",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "kind": "example",
+      "text": "A porter helped the traveler at the station.",
+      "textHash": "525257059aa2e485609d907b084c0bac4c8d4ea84bcd83ad47297e15ce583e29",
+      "relativePath": "wordbank/09eeb3d17582e855/5e942f7e-cd3c-5baa-bfc3-b5a60fa6b08b.mp3"
+    },
+    {
+      "assetGuid": "44c2b5ed-2573-5bbd-b5e4-c2dc4d1147e7",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "word": "porter",
+      "kind": "example",
+      "text": "The porter waited beside the hotel entrance.",
+      "textHash": "2e9b013201e1e5667f274f52f643a84040d6a467c627be37ff66e0825a4b7452",
+      "relativePath": "wordbank/09eeb3d17582e855/44c2b5ed-2573-5bbd-b5e4-c2dc4d1147e7.mp3"
+    },
+    {
+      "assetGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "kind": "word",
+      "text": "check in",
+      "textHash": "086977782914881901306ce4ef0ef2fe536a3323c280aebbb3dc992a0d321b1e",
+      "relativePath": "wordbank/09eeb3d17582e855/3fff15bc-769e-5cbb-a408-3b0f7b72046e.mp3"
+    },
+    {
+      "assetGuid": "bc8cf789-c30b-52a8-99ec-e660532999ff",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "kind": "explanation",
+      "text": "Use this phrase when registering at a hotel or confirming you are taking a flight. A guest may do it at the front desk. Online options are common.",
+      "textHash": "0e7ea1bcb5d0f0f8b2a5712fe1adae6130b2e974b2bb9aeff5e94ae7b65a9535",
+      "relativePath": "wordbank/09eeb3d17582e855/bc8cf789-c30b-52a8-99ec-e660532999ff.mp3"
+    },
+    {
+      "assetGuid": "df8dd7b8-7fb0-55a1-8154-2854216ff815",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "kind": "explanation",
+      "text": "At an airport, travelers confirm their trip and receive a boarding pass. Hotel guests give their details when they arrive. This completes their arrival registration.",
+      "textHash": "f926c05baa76fb093db7c29c25fd8554372bf1ce6f6de7765484ecbfebbd97f5",
+      "relativePath": "wordbank/09eeb3d17582e855/df8dd7b8-7fb0-55a1-8154-2854216ff815.mp3"
+    },
+    {
+      "assetGuid": "697c76f0-4cfc-5834-a072-362409541e99",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "kind": "explanation",
+      "text": "A traveler may register at a hotel and receive a room key. Airline passengers can confirm their flight by phone. The phrase has both travel uses.",
+      "textHash": "3b377c2a5b846738517a9fb36a27a8c03ea95b9e0d5ef94ade50a29870a42e49",
+      "relativePath": "wordbank/09eeb3d17582e855/697c76f0-4cfc-5834-a072-362409541e99.mp3"
+    },
+    {
+      "assetGuid": "21d0bac9-9917-560e-9165-b78cfec17a0b",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "kind": "example",
+      "text": "Guests can check in to their hotel rooms starting from 3:00 PM.",
+      "textHash": "3ce4bd2932b19577cb05190c6129cb8fb78473f9f6d56d417c6eef4ffcf22c37",
+      "relativePath": "wordbank/09eeb3d17582e855/21d0bac9-9917-560e-9165-b78cfec17a0b.mp3"
+    },
+    {
+      "assetGuid": "299c109b-09a5-5e7e-8042-44f8fafb8a6b",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "kind": "example",
+      "text": "Arrive at the airport three hours early to check in for your international flight.",
+      "textHash": "e856a1f8f1a1fa60044d97c2cd43ce82ec3b5ec8079e0a16c828fc1ca9d8977a",
+      "relativePath": "wordbank/09eeb3d17582e855/299c109b-09a5-5e7e-8042-44f8fafb8a6b.mp3"
+    },
+    {
+      "assetGuid": "79fc82a7-9830-5cfa-9ce3-7918f65a3c86",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "word": "check in",
+      "kind": "example",
+      "text": "We used our mobile phones to check in online twenty-four hours before departure.",
+      "textHash": "47191eb19985f7269860814eb55defd54ec515d5ed2e9c61f7ca05233739b47f",
+      "relativePath": "wordbank/09eeb3d17582e855/79fc82a7-9830-5cfa-9ce3-7918f65a3c86.mp3"
+    },
+    {
+      "assetGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "kind": "word",
+      "text": "captain",
+      "textHash": "2780b8eef998d6eaca5dbfe00e4043e626c79bc214195e1848af17a85d51519c",
+      "relativePath": "wordbank/09eeb3d17582e855/497d172e-c9cc-5102-9c8d-11b3525b7f00.mp3"
+    },
+    {
+      "assetGuid": "285bf4ba-4183-5a5a-99fb-203c4e5732f0",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "kind": "explanation",
+      "text": "A leader is in charge of a ship or airplane. They guide the crew. They check that everyone follows safety rules.",
+      "textHash": "5e81b33e6d8f841ece0a6094efed36b576c80be3fce2f5af12ae5f0c9bafc3a9",
+      "relativePath": "wordbank/09eeb3d17582e855/285bf4ba-4183-5a5a-99fb-203c4e5732f0.mp3"
+    },
+    {
+      "assetGuid": "ec58de0c-d397-5e23-b39d-6d5d0b65751b",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "kind": "explanation",
+      "text": "A sports team may choose one player to lead. That person encourages teammates. They speak with the referee when needed.",
+      "textHash": "abc00353fbfb690f450e2e8d4715694c2769beadf4b5714a3898ccfcecf76dad",
+      "relativePath": "wordbank/09eeb3d17582e855/ec58de0c-d397-5e23-b39d-6d5d0b65751b.mp3"
+    },
+    {
+      "assetGuid": "30a06834-6ed1-59e0-a653-1eb2e9bd04a0",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "kind": "explanation",
+      "text": "The leader helps make decisions during a trip or game. Experience can be useful. Listening to others is important too.",
+      "textHash": "af95e44cf95bedaea241de2aece696957186db3e3bd7f0d5e3b2f4de67613030",
+      "relativePath": "wordbank/09eeb3d17582e855/30a06834-6ed1-59e0-a653-1eb2e9bd04a0.mp3"
+    },
+    {
+      "assetGuid": "ab264113-2fd1-58ee-90c5-708d3ad294b3",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "kind": "example",
+      "text": "The captain steered the boat into the quiet harbor.",
+      "textHash": "499166b6595e3fed8c1f88d73b8e13d8e0f3b5d74140d5d4e7b63a56e8caea42",
+      "relativePath": "wordbank/09eeb3d17582e855/ab264113-2fd1-58ee-90c5-708d3ad294b3.mp3"
+    },
+    {
+      "assetGuid": "71fa4609-b4f1-51fa-bdfe-0fb7d5f4cf1d",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "kind": "example",
+      "text": "Our team captain thanked everyone after the final game.",
+      "textHash": "fe774b09e27ac4175a3ae9dfa45d81350525cc9120f0b2bfefc55a9489c8596e",
+      "relativePath": "wordbank/09eeb3d17582e855/71fa4609-b4f1-51fa-bdfe-0fb7d5f4cf1d.mp3"
+    },
+    {
+      "assetGuid": "a794ff33-d02e-5609-9a8d-e928fa7d46a2",
+      "entryGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "word": "captain",
+      "kind": "example",
+      "text": "The airplane captain welcomed passengers before takeoff.",
+      "textHash": "839467afb5c7de0e94cfc7f14573ab882d8abdbbfbd00ca96d1b120dae9fcbba",
+      "relativePath": "wordbank/09eeb3d17582e855/a794ff33-d02e-5609-9a8d-e928fa7d46a2.mp3"
+    },
+    {
+      "assetGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "kind": "word",
+      "text": "sailor",
+      "textHash": "80974e50413f641d256a53afb12ab5790505723fd03d35e5202a34406f71efd4",
+      "relativePath": "wordbank/09eeb3d17582e855/6e192f4e-eef0-5cc6-9214-fc485bbcf615.mp3"
+    },
+    {
+      "assetGuid": "95219f2d-17fc-5e8d-ad57-338cf9b783e0",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "kind": "explanation",
+      "text": "This noun names a person who works or travels on a ship. Crew members help steer, care for equipment, or move cargo. Some serve in a navy.",
+      "textHash": "df55284317fdfa37089f1aac544a889860e18564eadab9c21c0288ec2fe0af43",
+      "relativePath": "wordbank/09eeb3d17582e855/95219f2d-17fc-5e8d-ad57-338cf9b783e0.mp3"
+    },
+    {
+      "assetGuid": "3aa3ca8d-7a2b-5013-8f15-246930476990",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "kind": "explanation",
+      "text": "A person on a ship may spend weeks at sea with a crew. Another might guide a small boat along the coast. The job requires learning how to stay safe on the water.",
+      "textHash": "4ba35e51a95b5053474c6819e2adafe6182461044ebe348eb0acf7ff3e4f1fc8",
+      "relativePath": "wordbank/09eeb3d17582e855/3aa3ca8d-7a2b-5013-8f15-246930476990.mp3"
+    },
+    {
+      "assetGuid": "4e26d05e-e721-5244-bf51-9cbc9c6bcbaf",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "kind": "explanation",
+      "text": "A passenger rides on a ship but does not work there. A captain leads the crew. The word can describe people on many kinds of ships.",
+      "textHash": "8069664f2769fcfa2f5c2423953e591024f6ec82e708f44b40ba2876ef5087e1",
+      "relativePath": "wordbank/09eeb3d17582e855/4e26d05e-e721-5244-bf51-9cbc9c6bcbaf.mp3"
+    },
+    {
+      "assetGuid": "fe407e7c-31f5-567e-9f8c-ea19e0eb7e5c",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "kind": "example",
+      "text": "The sailor tied the boat to the dock.",
+      "textHash": "26bad344c2a53a6b663f876315fe553102ac7366f8a46267d216860ccaf167d6",
+      "relativePath": "wordbank/09eeb3d17582e855/fe407e7c-31f5-567e-9f8c-ea19e0eb7e5c.mp3"
+    },
+    {
+      "assetGuid": "cdfa2e0a-3a2b-5e2b-942f-5f76a31f19cf",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "kind": "example",
+      "text": "A sailor waved from the deck.",
+      "textHash": "1fbd4225ee32d329e7fb0b509cfa006b5e1e978367a503efb1ca70f5fec06002",
+      "relativePath": "wordbank/09eeb3d17582e855/cdfa2e0a-3a2b-5e2b-942f-5f76a31f19cf.mp3"
+    },
+    {
+      "assetGuid": "25496e6c-7ecb-5dfd-9179-9f83e8a016e4",
+      "entryGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "word": "sailor",
+      "kind": "example",
+      "text": "The sailor checked the ropes before leaving.",
+      "textHash": "598c80281d8a304fbd1e9a96315ce68ac1bf4d03adaaf34943e68d9400ace965",
+      "relativePath": "wordbank/09eeb3d17582e855/25496e6c-7ecb-5dfd-9179-9f83e8a016e4.mp3"
+    },
+    {
+      "assetGuid": "d69a0424-b0be-59ea-a935-a4fc2508eb2f",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "word": "flag",
+      "kind": "explanation",
+      "text": "A piece of cloth shows a country’s colors. A school may raise one on a pole. A traffic signal can tell drivers what to do.",
+      "textHash": "8ed0c42c8ca9cfb132226c7b26b6df1f82b2c09d6482d236fa4cbcc1c4474575",
+      "relativePath": "wordbank/09eeb3d17582e855/d69a0424-b0be-59ea-a935-a4fc2508eb2f.mp3"
+    },
+    {
+      "assetGuid": "152e9c5a-5d63-56ac-ad14-d4e79af4b2f3",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "word": "flag",
+      "kind": "explanation",
+      "text": "A nation may have a symbol with colors and shapes. People can wave it at a game. It can also mean giving a warning.",
+      "textHash": "9e21a6231c5d9a46814279eb77237f11cd28fefbe41a60baf2956a746cbbd731",
+      "relativePath": "wordbank/09eeb3d17582e855/152e9c5a-5d63-56ac-ad14-d4e79af4b2f3.mp3"
+    },
+    {
+      "assetGuid": "1b0e656c-b82c-5e75-ae14-7341b81dcccd",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "word": "flag",
+      "kind": "explanation",
+      "text": "This cloth symbol may fly above a building. A person may hold one in a parade. It can stand for a country or group.",
+      "textHash": "d3114f1437fd07a001ac2ac497ac6cf8a5ce0ca4d9c72e7977f4264fb924886d",
+      "relativePath": "wordbank/09eeb3d17582e855/1b0e656c-b82c-5e75-ae14-7341b81dcccd.mp3"
+    },
+    {
+      "assetGuid": "0c68403d-bee7-5d87-a95b-436d70bccca4",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "word": "flag",
+      "kind": "example",
+      "text": "The flag waved in the wind.",
+      "textHash": "8ffbb122499d00f0f0decfe8ec7d02fc62e4fb56a28c394f87a67c7d478d1d03",
+      "relativePath": "wordbank/09eeb3d17582e855/0c68403d-bee7-5d87-a95b-436d70bccca4.mp3"
+    },
+    {
+      "assetGuid": "9fd4dacd-c746-51ad-bb02-3d88f5b28859",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "word": "flag",
+      "kind": "example",
+      "text": "Our school flag is blue and white.",
+      "textHash": "25f89578524f7822d8439bbeed5f3b28cf99f4dd078b95a583d06b8f3bab8e76",
+      "relativePath": "wordbank/09eeb3d17582e855/9fd4dacd-c746-51ad-bb02-3d88f5b28859.mp3"
+    },
+    {
+      "assetGuid": "bd7d04d1-8c0a-5190-b633-5cb3479c1ba5",
+      "entryGuid": "8128f3ea-350f-5cff-9e35-71603d504df7",
+      "word": "flag",
+      "kind": "example",
+      "text": "The driver was flagged down by a police officer.",
+      "textHash": "83ca08abbbfe70f36097c8e6be6b62482db6844c6c34f0194eb7ec9579295f7c",
+      "relativePath": "wordbank/09eeb3d17582e855/bd7d04d1-8c0a-5190-b633-5cb3479c1ba5.mp3"
+    },
+    {
+      "assetGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "kind": "word",
+      "text": "cabin",
+      "textHash": "2764182d02bee1c55fc0e2f5625a0fd6ace4657666920e3049ce31e6bbf7ff9b",
+      "relativePath": "wordbank/09eeb3d17582e855/82f9dfae-be12-5e40-9e28-64a596c44b1c.mp3"
+    },
+    {
+      "assetGuid": "31a2fde2-355c-52e3-a333-d93270e4d133",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "kind": "explanation",
+      "text": "A small simple house or room can stand in a forest or near a lake. Travelers may sleep there. It offers shelter from weather.",
+      "textHash": "f979b17fb548079d4236a396d55c79a657f7b02709e995d05caf55d926855d31",
+      "relativePath": "wordbank/09eeb3d17582e855/31a2fde2-355c-52e3-a333-d93270e4d133.mp3"
+    },
+    {
+      "assetGuid": "23c1c18b-a051-58a9-a898-d0ab60c5f6e4",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "kind": "explanation",
+      "text": "The front part of an airplane or ship holds the people who control it. They watch instruments. They follow safety steps.",
+      "textHash": "5de62432e67196b86bb58f2177e34795d127e024d525e4cab69f17b26c9cd67c",
+      "relativePath": "wordbank/09eeb3d17582e855/23c1c18b-a051-58a9-a898-d0ab60c5f6e4.mp3"
+    },
+    {
+      "assetGuid": "1c586a62-64be-59fa-b19f-102694bcf3cb",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "kind": "explanation",
+      "text": "A wooden shelter in the mountains may have beds and a stove. Visitors bring supplies. They leave the place clean.",
+      "textHash": "1683aa2b181b78e029cd2580ee154ccdccdccd2a34a5e546ca737fe8c37a39f1",
+      "relativePath": "wordbank/09eeb3d17582e855/1c586a62-64be-59fa-b19f-102694bcf3cb.mp3"
+    },
+    {
+      "assetGuid": "7517e68b-4563-5931-8701-e6e60f7c15d4",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "kind": "example",
+      "text": "The spacious wide-body aircraft cabin features dynamic circadian mood lighting.",
+      "textHash": "0a6992403b8ec814d59ac840f63a1d9b5c4a45807f6ffc6e919f6e048fd44a8c",
+      "relativePath": "wordbank/09eeb3d17582e855/7517e68b-4563-5931-8701-e6e60f7c15d4.mp3"
+    },
+    {
+      "assetGuid": "163c18a4-555f-519d-a0a3-30db943a3608",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "kind": "example",
+      "text": "We rented a rustic wooden cabin nestled among the tall pine trees in the mountains.",
+      "textHash": "b2f9d9b981dae0e425d4bb94010344bd3db1169f493d31ef10d1b484665535a3",
+      "relativePath": "wordbank/09eeb3d17582e855/163c18a4-555f-519d-a0a3-30db943a3608.mp3"
+    },
+    {
+      "assetGuid": "0131c172-5bd8-54fc-a59e-002449dd15a1",
+      "entryGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "word": "cabin",
+      "kind": "example",
+      "text": "The airplane cabin pressure is maintained comfortably at an equivalent altitude of 6,000 feet.",
+      "textHash": "efb89bbe8ea5724431e64e4f069e60f79f7e98fb623760b4c8509cf5d64785e6",
+      "relativePath": "wordbank/09eeb3d17582e855/0131c172-5bd8-54fc-a59e-002449dd15a1.mp3"
+    },
+    {
+      "assetGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "word",
+      "text": "flight attendant",
+      "textHash": "4f12240e64b07cf65f8a7c1460a67054aca31a3fa11d6fed96cbc1e6836d707d",
+      "relativePath": "wordbank/09eeb3d17582e855/487f57e3-2622-5a43-a4ac-b1942ba0c5bb.mp3"
+    },
+    {
+      "assetGuid": "427c9195-fc65-5a51-9730-96667013118c",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "explanation",
+      "text": "This airline worker helps passengers during a trip in the sky. They show people how to use safety equipment and may serve drinks. They work inside the plane.",
+      "textHash": "903d9383d552ffee94f5dc506ded1fe79882574aab2b1bd4d583fe3f133d48f8",
+      "relativePath": "wordbank/09eeb3d17582e855/427c9195-fc65-5a51-9730-96667013118c.mp3"
+    },
+    {
+      "assetGuid": "c6532c8e-9139-5d43-874f-2ee4bf68302f",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "explanation",
+      "text": "Before takeoff, this crew member explains important safety steps. During a journey, they help travelers find their seats. They may bring meals or tea.",
+      "textHash": "94bd610cf431be604b28c0918c8d541a4b4d22481807e91571cd77cf8db553c9",
+      "relativePath": "wordbank/09eeb3d17582e855/c6532c8e-9139-5d43-874f-2ee4bf68302f.mp3"
+    },
+    {
+      "assetGuid": "24c794c7-67c2-5fed-8a75-eea927931519",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "explanation",
+      "text": "A person with this job cares for passengers on an airplane. They answer questions and keep the cabin safe. The role includes serving food and drinks.",
+      "textHash": "f1e0b46d677ae1e0f87eef9a0b80f790e1656769b06f5d501b3bde6488a1dbf3",
+      "relativePath": "wordbank/09eeb3d17582e855/24c794c7-67c2-5fed-8a75-eea927931519.mp3"
+    },
+    {
+      "assetGuid": "3ae30381-b74a-5087-8ae4-c1e7ff162af8",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "example",
+      "text": "The flight attendant served hot tea and meal trays.",
+      "textHash": "13cbd1edd1a7e45e4f767c607b786f632ca06f983c0f5ea70c6e9eadc5ef1c16",
+      "relativePath": "wordbank/09eeb3d17582e855/3ae30381-b74a-5087-8ae4-c1e7ff162af8.mp3"
+    },
+    {
+      "assetGuid": "7a2a0bb1-45bf-507e-a448-c22da7f2778f",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "example",
+      "text": "Friendly flight attendants ensure passengers understand safety evacuation procedures clearly.",
+      "textHash": "e8733b5edf4e714e20bd764d3e19c4722deecd325d3d8b56d6d62d307a473ea2",
+      "relativePath": "wordbank/09eeb3d17582e855/7a2a0bb1-45bf-507e-a448-c22da7f2778f.mp3"
+    },
+    {
+      "assetGuid": "f2dc81ef-4f1a-5dc2-9974-e7552a6fbab9",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "example",
+      "text": "She dreamed of becoming an international flight attendant and traveling globally.",
+      "textHash": "2788493a064c787223e4420dacc15fbaa479a6f60e57f9dfbd4a1b151f92a9e1",
+      "relativePath": "wordbank/09eeb3d17582e855/f2dc81ef-4f1a-5dc2-9974-e7552a6fbab9.mp3"
+    },
+    {
+      "assetGuid": "8d98706f-34f4-5f39-8630-02db0cc6fcd3",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "example",
+      "text": "The attentive flight attendant assisted elderly passengers with overhead bags.",
+      "textHash": "bc2e571f95aaec3c2b30e3ba9035b495e877773f9297ac84105f82fdd1f40d2d",
+      "relativePath": "wordbank/09eeb3d17582e855/8d98706f-34f4-5f39-8630-02db0cc6fcd3.mp3"
+    },
+    {
+      "assetGuid": "cc5924ae-8a2f-52bb-b7ca-04604bfe26c1",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "example",
+      "text": "Flight attendants undergo rigorous emergency evacuation and first aid training before flying.",
+      "textHash": "ca8ecc12069852eed034b07267fca16272f7349839111daeb5de5b08c136175d",
+      "relativePath": "wordbank/09eeb3d17582e855/cc5924ae-8a2f-52bb-b7ca-04604bfe26c1.mp3"
+    },
+    {
+      "assetGuid": "c01c9671-d128-5006-8457-f9d18d3c9929",
+      "entryGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "word": "flight attendant",
+      "kind": "example",
+      "text": "The polite flight attendant brought a warm blanket and a glass of water to the shivering traveler.",
+      "textHash": "7d7a8a717739adece3aaa06c3c47de43ac9f7509c8834746deec88edda4232d0",
+      "relativePath": "wordbank/09eeb3d17582e855/c01c9671-d128-5006-8457-f9d18d3c9929.mp3"
+    },
+    {
+      "assetGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "kind": "word",
+      "text": "overhead bin",
+      "textHash": "78d2e59abc6d66c5fbda84191b9ac382190a41ebcb17f08b720f9935c1b9d953",
+      "relativePath": "wordbank/09eeb3d17582e855/187524fa-5545-564b-bcfe-99d01f5f3f27.mp3"
+    },
+    {
+      "assetGuid": "8c946cac-1636-5165-b77d-a8928662fef2",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "kind": "explanation",
+      "text": "It is a storage compartment above passenger seats on an airplane. Travelers place small bags inside. Open it carefully after landing because items may shift.",
+      "textHash": "af31ea3e033e2be440204365c22ce581dd20644721159b71bf09b28d9440a171",
+      "relativePath": "wordbank/09eeb3d17582e855/8c946cac-1636-5165-b77d-a8928662fef2.mp3"
+    },
+    {
+      "assetGuid": "87c25b4c-0191-5b9c-95f4-603fbeb4f140",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "kind": "explanation",
+      "text": "A cabin has these lockers over the rows of seats. A flight attendant may ask passengers to move bags if they are full. Keep heavy objects secure.",
+      "textHash": "c8060548bed5a029c83ed0722c1ab0e2fb893f95be3231a7cf58ca8b09b1ad5a",
+      "relativePath": "wordbank/09eeb3d17582e855/87c25b4c-0191-5b9c-95f4-603fbeb4f140.mp3"
+    },
+    {
+      "assetGuid": "38b3ec38-8b6d-5a56-a031-e909cd4502c2",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "kind": "explanation",
+      "text": "Passengers store carry-on luggage in this space above them. Put the suitcase in wheels first. Make sure it closes before takeoff.",
+      "textHash": "38a421217b22ee6ed08bb634f0133e8c0700850521b7fffead85d50989974348",
+      "relativePath": "wordbank/09eeb3d17582e855/38b3ec38-8b6d-5a56-a031-e909cd4502c2.mp3"
+    },
+    {
+      "assetGuid": "a7e4a7e1-0587-5c55-8a7b-e28ade7aead4",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "kind": "example",
+      "text": "Place your roller carry-on suitcase wheels-first into the overhead bin.",
+      "textHash": "6ecc799c6fc8e0587db95042cfa09e1c2faeabfd01d884f5b3b53482a3d69d26",
+      "relativePath": "wordbank/09eeb3d17582e855/a7e4a7e1-0587-5c55-8a7b-e28ade7aead4.mp3"
+    },
+    {
+      "assetGuid": "5065ee31-26bd-5759-8d55-75390f380bdc",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "kind": "example",
+      "text": "When the flight is completely full, flight attendants may ask you to check bags if overhead bins are packed.",
+      "textHash": "2162f21cba743f12a352371e2a5626fe90ed5e94398a81e6649c1b33240e78b0",
+      "relativePath": "wordbank/09eeb3d17582e855/5065ee31-26bd-5759-8d55-75390f380bdc.mp3"
+    },
+    {
+      "assetGuid": "cdde8ef6-cd27-5e95-bc26-5f7a1a367a88",
+      "entryGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "word": "overhead bin",
+      "kind": "example",
+      "text": "Be careful when opening the overhead bin after landing, as heavy items might have shifted during flight.",
+      "textHash": "d4e67685b09934a9e73c9274fd19e18863750bc30628639a040018d5bafb20e0",
+      "relativePath": "wordbank/09eeb3d17582e855/cdde8ef6-cd27-5e95-bc26-5f7a1a367a88.mp3"
+    },
+    {
+      "assetGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "word",
+      "text": "headphones",
+      "textHash": "86d6e84ef9a21b74c964a209d4ee7ace5e73d1723bb0f0b665c39b0b073fb04c",
+      "relativePath": "wordbank/09eeb3d17582e855/6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4.mp3"
+    },
+    {
+      "assetGuid": "bbb069db-475a-5385-806d-8ad5f8c81ede",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "explanation",
+      "text": "This noun names a pair of small speakers worn over or in the ears. They let one person listen without playing sound aloud. They connect to a phone or computer.",
+      "textHash": "83f51a8400c3344512baff53a3233d2f6f8d58e969d156d56322bacbd8c632d8",
+      "relativePath": "wordbank/09eeb3d17582e855/bbb069db-475a-5385-806d-8ad5f8c81ede.mp3"
+    },
+    {
+      "assetGuid": "be785c8a-f3ef-5944-8cfe-becb451edfd8",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "explanation",
+      "text": "A student may use them to hear a language lesson on a bus. Other passengers hear less noise. The device can be wired or wireless.",
+      "textHash": "9d753ad0372b56ae81adaf41802a0f5b36e85b5af9fab7412b12b13d0620e316",
+      "relativePath": "wordbank/09eeb3d17582e855/be785c8a-f3ef-5944-8cfe-becb451edfd8.mp3"
+    },
+    {
+      "assetGuid": "655bf305-5cfa-5e8c-b936-aa1431511952",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "explanation",
+      "text": "Different models cover the ears or fit inside them. They help people listen privately. The plural spelling is most common because the pair has two sides.",
+      "textHash": "273b1709ee9f5d9b5bc380267b05ec8bf1bda04d81af81da010944095765d5d8",
+      "relativePath": "wordbank/09eeb3d17582e855/655bf305-5cfa-5e8c-b936-aa1431511952.mp3"
+    },
+    {
+      "assetGuid": "c2af0319-c9e8-5dd4-b598-a726e3ade728",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "example",
+      "text": "Sound designers use open-back reference headphones to evaluate subtle stereo panning and spatial reverb tails.",
+      "textHash": "7ccbb48766d01091815523a313303e8cd6999750aa91ff692f8d3c0c391cbe85",
+      "relativePath": "wordbank/09eeb3d17582e855/c2af0319-c9e8-5dd4-b598-a726e3ade728.mp3"
+    },
+    {
+      "assetGuid": "7aa7f896-3eff-593d-99c4-07b065b2aee2",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "example",
+      "text": "Commuters put on noise-canceling headphones to enjoy podcasts in quiet serenity on the crowded metro.",
+      "textHash": "a36f87cfb7027911fdc8deb5274816f111278f1433a5a88710c038dd202e4418",
+      "relativePath": "wordbank/09eeb3d17582e855/7aa7f896-3eff-593d-99c4-07b065b2aee2.mp3"
+    },
+    {
+      "assetGuid": "57ffe60b-0935-5a46-b3a0-609921eb383e",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "example",
+      "text": "Studio tracking sessions require closed-back headphones to prevent headphone audio bleed into the open vocal mic.",
+      "textHash": "f739a49db469e7013554ae0abc59588060efb168abd1e85a644c339010f718c3",
+      "relativePath": "wordbank/09eeb3d17582e855/57ffe60b-0935-5a46-b3a0-609921eb383e.mp3"
+    },
+    {
+      "assetGuid": "733a324a-cdd0-58f8-ac34-d83de0ff5929",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "example",
+      "text": "Noise-canceling headphones help you concentrate in noisy cafes.",
+      "textHash": "7bddc8d54f4566f7917650243b61cfc67e4dc2afb5b291b6b92cc79f8a7beae5",
+      "relativePath": "wordbank/09eeb3d17582e855/733a324a-cdd0-58f8-ac34-d83de0ff5929.mp3"
+    },
+    {
+      "assetGuid": "d7109dae-62b6-54cf-8bbf-d45e69cfad27",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "example",
+      "text": "He placed his over-ear headphones on the desk after the podcast recording.",
+      "textHash": "979a9f44fe6045ee8de0a9fe8c00984cb32b2c76a25c3b9afcc43f953a60b4bd",
+      "relativePath": "wordbank/09eeb3d17582e855/d7109dae-62b6-54cf-8bbf-d45e69cfad27.mp3"
+    },
+    {
+      "assetGuid": "469e1975-a548-5547-890f-121036efe4a2",
+      "entryGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "word": "headphones",
+      "kind": "example",
+      "text": "Wear stereo headphones to appreciate the subtle details of classical music.",
+      "textHash": "4e2897619a62c6c51c10c61182271ec1bf07c5e02f973da9685fd0847db03e07",
+      "relativePath": "wordbank/09eeb3d17582e855/469e1975-a548-5547-890f-121036efe4a2.mp3"
+    },
+    {
+      "assetGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "word",
+      "text": "magazine",
+      "textHash": "208be34b55c3475df168f93331e3c32b718fab092c6dfa72d31464a710a6c8d9",
+      "relativePath": "wordbank/09eeb3d17582e855/13434369-9007-5f2f-b817-ea2f4530beb7.mp3"
+    },
+    {
+      "assetGuid": "3d782717-5951-5cb4-878b-6929a7d84e32",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "explanation",
+      "text": "A book comes out regularly with stories and pictures. A person may read one at a doctor’s office. It can have many pages.",
+      "textHash": "6aac8e5332add74a9443bfb131084f2fa89c6f937304e0a12cf325d6666a197a",
+      "relativePath": "wordbank/09eeb3d17582e855/3d782717-5951-5cb4-878b-6929a7d84e32.mp3"
+    },
+    {
+      "assetGuid": "106fc33f-57fd-5c0d-901a-d8418835a558",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "explanation",
+      "text": "A monthly publication may share news or fashion. A shop sells it. A reader may collect old issues.",
+      "textHash": "07c1aa5953ce06f8ed947f0468e3e968e034b903c4f285651b85f0d98b6ac3e3",
+      "relativePath": "wordbank/09eeb3d17582e855/106fc33f-57fd-5c0d-901a-d8418835a558.mp3"
+    },
+    {
+      "assetGuid": "7b5e5b7f-5995-5d6d-a55e-0ebea870a2fb",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "explanation",
+      "text": "This printed book has articles and photos. It can be published each week or month. People may read it for fun.",
+      "textHash": "a271276be6979e97282bfb935ec2f0250606064d651c6f513a450e9e2ace6f4a",
+      "relativePath": "wordbank/09eeb3d17582e855/7b5e5b7f-5995-5d6d-a55e-0ebea870a2fb.mp3"
+    },
+    {
+      "assetGuid": "03948e05-82d9-53a3-9eef-250ceb096be8",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "example",
+      "text": "English learning magazines are very helpful.",
+      "textHash": "b54b5cbcde99252686e9134e4c354cb09cfa9166dd141c48dde0193671748fa2",
+      "relativePath": "wordbank/09eeb3d17582e855/03948e05-82d9-53a3-9eef-250ceb096be8.mp3"
+    },
+    {
+      "assetGuid": "97d8513a-8cf9-55b9-8194-4bc071e7339b",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "example",
+      "text": "She subscribed to a monthly science magazine for young readers.",
+      "textHash": "62aaae974a1d483de00da3f5b0e1b2d938af140a69267d30678bfcd917676545",
+      "relativePath": "wordbank/09eeb3d17582e855/97d8513a-8cf9-55b9-8194-4bc071e7339b.mp3"
+    },
+    {
+      "assetGuid": "b3d409b6-9cbf-5cfe-8342-d6de34455460",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "example",
+      "text": "You can flip through magazines while waiting in the dental clinic.",
+      "textHash": "cdd88d7853bf4d824c488593e3cf15b5526c9a28780719ba78bbc771f080244a",
+      "relativePath": "wordbank/09eeb3d17582e855/b3d409b6-9cbf-5cfe-8342-d6de34455460.mp3"
+    },
+    {
+      "assetGuid": "3baceab6-69f7-59a7-9b9c-7e5385f490da",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "example",
+      "text": "This English learning magazine features interesting cultural stories.",
+      "textHash": "2a147f7ec74506bd7b7135972b2c6715e4ac2e4aaa74e1be5feab7e2ee4bae11",
+      "relativePath": "wordbank/09eeb3d17582e855/3baceab6-69f7-59a7-9b9c-7e5385f490da.mp3"
+    },
+    {
+      "assetGuid": "07230d84-5789-57b9-8c8c-c160e6625fa2",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "example",
+      "text": "She subscribed to an interior design magazine to gather home decorating ideas.",
+      "textHash": "cb90eb6074c8796630718de6bef920c095e8c777dadd4b3ed31300504deee114",
+      "relativePath": "wordbank/09eeb3d17582e855/07230d84-5789-57b9-8c8c-c160e6625fa2.mp3"
+    },
+    {
+      "assetGuid": "34fb06b6-8b2f-55b1-8074-e99f7385efc0",
+      "entryGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "word": "magazine",
+      "kind": "example",
+      "text": "The doctor's clinic waiting room provides current news and science magazines.",
+      "textHash": "1b77d6ec85c625a8b1383dde2a857a23d08d150d9fefa7c86f90a19396420c62",
+      "relativePath": "wordbank/09eeb3d17582e855/34fb06b6-8b2f-55b1-8074-e99f7385efc0.mp3"
+    },
+    {
+      "assetGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "kind": "word",
+      "text": "wing",
+      "textHash": "c047caef95b4d3e8d7f74cbe12793cc2a98d07369636a457f2313086e02f2753",
+      "relativePath": "wordbank/09eeb3d17582e855/bdc4f531-cfef-530d-931a-55c56b14eaf8.mp3"
+    },
+    {
+      "assetGuid": "0cd3b8fd-f4a7-5d7b-a032-bf2c6eb8880a",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "kind": "explanation",
+      "text": "A bird uses this body part to fly and keep balance. Feathers cover it. Moving it up and down pushes air.",
+      "textHash": "da92eb068ce51a631be8f9c76184645d724f19e6c6483953a363e3082eda5732",
+      "relativePath": "wordbank/09eeb3d17582e855/0cd3b8fd-f4a7-5d7b-a032-bf2c6eb8880a.mp3"
+    },
+    {
+      "assetGuid": "d153b626-aa40-584f-9fe2-a8517f1cc349",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "kind": "explanation",
+      "text": "An airplane has a part with the same name on each side. These parts help lift it into the sky. Pilots check them carefully.",
+      "textHash": "551d686783102c8b0eb7fc02897ae75a7d5e6a974b6174db1844fac01390384a",
+      "relativePath": "wordbank/09eeb3d17582e855/d153b626-aa40-584f-9fe2-a8517f1cc349.mp3"
+    },
+    {
+      "assetGuid": "6baf03e4-d317-55ed-96d4-b573805fbdf7",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "kind": "explanation",
+      "text": "A building may have a side section extending from the main part. A hospital can have one area for children. Signs guide visitors.",
+      "textHash": "6ecb07134405d7cbdf83f27c2fc498e594362b4f5df42fcae77a732c0a94c9a5",
+      "relativePath": "wordbank/09eeb3d17582e855/6baf03e4-d317-55ed-96d4-b573805fbdf7.mp3"
+    },
+    {
+      "assetGuid": "660af7bb-530b-59de-b0a5-4fc908b3712f",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "kind": "example",
+      "text": "The bird hurt its wing and could not fly far.",
+      "textHash": "15aa30b7870b1e99fd85dee1d42d27dc70e7331c0dcf0e485a1b4fef378b9825",
+      "relativePath": "wordbank/09eeb3d17582e855/660af7bb-530b-59de-b0a5-4fc908b3712f.mp3"
+    },
+    {
+      "assetGuid": "367ed018-3a42-56ab-9c64-dd4ac302babd",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "kind": "example",
+      "text": "A small plane lifted its left wing above the trees.",
+      "textHash": "b8dcf999ea546dd7cc92b193aee1644586f85e3a8712ef8ad6bb2ccd8cc1b109",
+      "relativePath": "wordbank/09eeb3d17582e855/367ed018-3a42-56ab-9c64-dd4ac302babd.mp3"
+    },
+    {
+      "assetGuid": "b20e1963-91d4-5a3d-bb2b-922ff2ed5aa4",
+      "entryGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "word": "wing",
+      "kind": "example",
+      "text": "The children's wing of the hospital has bright wall pictures.",
+      "textHash": "8130bf86271b884b4f2f8d122a984d55201ca5f7e0382323224e047c62965587",
+      "relativePath": "wordbank/09eeb3d17582e855/b20e1963-91d4-5a3d-bb2b-922ff2ed5aa4.mp3"
+    },
+    {
+      "assetGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "word",
+      "text": "engine",
+      "textHash": "ed9f6f25068608efd412958da4dfc19328ca3511251fa6d5f9c42baf230e32f8",
+      "relativePath": "wordbank/09eeb3d17582e855/2b5a7b0d-2eb9-5a07-9cc9-7fb253196031.mp3"
+    },
+    {
+      "assetGuid": "a2f9af30-83c8-56f9-89ad-0d589d8931ff",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "explanation",
+      "text": "A car has a machine that makes it move. It uses fuel or electricity. A mechanic may fix it.",
+      "textHash": "062c636ca85f4bb769cd0116c26b6c373a108569c4ebe4258c9ae7d572ac9d04",
+      "relativePath": "wordbank/09eeb3d17582e855/a2f9af30-83c8-56f9-89ad-0d589d8931ff.mp3"
+    },
+    {
+      "assetGuid": "ad1623f8-b471-5918-a0e4-3f22befe7eda",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "explanation",
+      "text": "A plane has a powerful part that moves it forward. A small machine can run a pump. The word means a machine that provides motion.",
+      "textHash": "1ebbdcfffe60168db37b23865312277c4d5a070ef0df5e13ab65efd2d9b584b6",
+      "relativePath": "wordbank/09eeb3d17582e855/ad1623f8-b471-5918-a0e4-3f22befe7eda.mp3"
+    },
+    {
+      "assetGuid": "b748f1cc-3ec2-5bb2-b46c-3ff5fc703857",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "explanation",
+      "text": "This machine turns fuel into movement. It can be found in a car or boat. A driver starts it with a key.",
+      "textHash": "844807454deea3bf6de1f44f3dcb85e4d23d9e37e77bd65b7a49cb4da74f213b",
+      "relativePath": "wordbank/09eeb3d17582e855/b748f1cc-3ec2-5bb2-b46c-3ff5fc703857.mp3"
+    },
+    {
+      "assetGuid": "3b89cb24-042b-5731-a49f-a75e142723a9",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "The mechanic checked the car engine thoroughly.",
+      "textHash": "92a3a9a2cbce10e8cca3aa86f0d2afa22fdbebff8d41ddf2738b59614588bbb8",
+      "relativePath": "wordbank/09eeb3d17582e855/3b89cb24-042b-5731-a49f-a75e142723a9.mp3"
+    },
+    {
+      "assetGuid": "27489355-daf8-58a5-8594-80e88f2872b7",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "Strange rattling noises came from the old aircraft engine.",
+      "textHash": "46e9f2f031be9418af2d2382aa18c3572b300fdec599736547aabce3379fc725",
+      "relativePath": "wordbank/09eeb3d17582e855/27489355-daf8-58a5-8594-80e88f2872b7.mp3"
+    },
+    {
+      "assetGuid": "66bfa0e2-09df-539e-8f2c-a4ad01144cbd",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "Turn off the engine while waiting at the railway crossing.",
+      "textHash": "86122158a2414100f618a48620a7fc9e962db0c20338cc6c060f955d2184e9dc",
+      "relativePath": "wordbank/09eeb3d17582e855/66bfa0e2-09df-539e-8f2c-a4ad01144cbd.mp3"
+    },
+    {
+      "assetGuid": "45ab3835-e07d-5f48-8fc5-e257ce2fd533",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "The blue-glowing xenon ion engine produces gentle, continuous thrust for years using solar electricity.",
+      "textHash": "28368b8789a772d6fdc8568734959b6828afbae458b3ee9e8224cdf8a0201ca4",
+      "relativePath": "wordbank/09eeb3d17582e855/45ab3835-e07d-5f48-8fc5-e257ce2fd533.mp3"
+    },
+    {
+      "assetGuid": "9741b2d0-ced7-5a1b-84da-0c133dc13a52",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "Multiple Hall-effect thruster engines fired in sequence to steer the robotic asteroid redirect spacecraft.",
+      "textHash": "5a0d189c7a72c2f0587b3fbb2853b763f3178350df865bc8ee904d732d5fd681",
+      "relativePath": "wordbank/09eeb3d17582e855/9741b2d0-ced7-5a1b-84da-0c133dc13a52.mp3"
+    },
+    {
+      "assetGuid": "b13ce667-fa9d-5774-9bed-06756d76f6fd",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "Operating the high-efficiency ion engine requires only a few grams of inert noble gas per day.",
+      "textHash": "ae60810e2e6c2fb01e370640d3c154d2198e1a0ddd2535c61a53fd22e224c61c",
+      "relativePath": "wordbank/09eeb3d17582e855/b13ce667-fa9d-5774-9bed-06756d76f6fd.mp3"
+    },
+    {
+      "assetGuid": "281fc4d9-15af-5290-b078-b2837d20f5aa",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "The 300kW fuel cell engine powers forty-ton semi-trucks easily up steep mountain highways.",
+      "textHash": "b2ca1d93adf6d640b33a0676f5947ec901efd62d6fb44dbe8e73f8db4c825814",
+      "relativePath": "wordbank/09eeb3d17582e855/281fc4d9-15af-5290-b078-b2837d20f5aa.mp3"
+    },
+    {
+      "assetGuid": "e857c34b-cd14-5f0d-a58b-d9d6526ddbc0",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "The certified mechanic repaired the automobile engine after diagnosing a cracked cylinder head gasket.",
+      "textHash": "20f8a1061114e7586cb1c4743e53e4007bd3670a823c8987bf2b4bf2079796d0",
+      "relativePath": "wordbank/09eeb3d17582e855/e857c34b-cd14-5f0d-a58b-d9d6526ddbc0.mp3"
+    },
+    {
+      "assetGuid": "7e4d11c4-451e-55f4-8d3b-77bdc62fa956",
+      "entryGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "word": "engine",
+      "kind": "example",
+      "text": "Technological innovation serves as the primary engine driving economic productivity and job growth nationwide.",
+      "textHash": "ac76b63d31d102f3126d4f6b3362e8483489e53084e97ad031c905c10ac1857b",
+      "relativePath": "wordbank/09eeb3d17582e855/7e4d11c4-451e-55f4-8d3b-77bdc62fa956.mp3"
+    },
+    {
+      "assetGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "kind": "word",
+      "text": "narrow",
+      "textHash": "5eda958e9ddee7721fb71e7a7618c64dbf20cc77b06ba4e4d2269d6c3e50655b",
+      "relativePath": "wordbank/09eeb3d17582e855/dade0436-5fd9-5c66-a879-8df16a8d9e53.mp3"
+    },
+    {
+      "assetGuid": "7ec0a9e5-584c-58ce-91a4-069984176c18",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "kind": "explanation",
+      "text": "This adjective describes something with little space from side to side. A road, hallway, or opening may be difficult to pass through when it has this shape. It can also describe a small difference or limited choice.",
+      "textHash": "b4bacddad9cca26725b387c3bc9baa9e678f6a5de314cfc081e030c503f6666f",
+      "relativePath": "wordbank/09eeb3d17582e855/7ec0a9e5-584c-58ce-91a4-069984176c18.mp3"
+    },
+    {
+      "assetGuid": "1906bcb4-4b1e-532f-8689-be1d411fcbee",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "kind": "explanation",
+      "text": "Two cars may need to slow down on a road between tall walls. A person carrying a wide box might have trouble getting through a small doorway. Careful steps help in a tight space.",
+      "textHash": "a0d163d5e3c17556a7fc30222a053893bdb9fc8dc95228f8be172fec3a99d8f4",
+      "relativePath": "wordbank/09eeb3d17582e855/1906bcb4-4b1e-532f-8689-be1d411fcbee.mp3"
+    },
+    {
+      "assetGuid": "834669ee-7b4b-5f94-9e60-c804fe60a36a",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "kind": "explanation",
+      "text": "A word meaning “wide” describes the opposite shape. A path can be long and still have little side-to-side space. It can also describe a close victory when the score difference is small.",
+      "textHash": "c4ba7a9942ea8347489b6fe94b5461754bdaa4504c8da5882db06eea3ccdf768",
+      "relativePath": "wordbank/09eeb3d17582e855/834669ee-7b4b-5f94-9e60-c804fe60a36a.mp3"
+    },
+    {
+      "assetGuid": "5cf9a06e-087a-5f20-80f5-a156fb4197b6",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "kind": "example",
+      "text": "The narrow bridge let only one person cross at a time.",
+      "textHash": "f51218e2e47f21b758ef39ae0ad665f2c87e572ab718aa0f07cabdcf60df55f5",
+      "relativePath": "wordbank/09eeb3d17582e855/5cf9a06e-087a-5f20-80f5-a156fb4197b6.mp3"
+    },
+    {
+      "assetGuid": "0cc1f5cb-6d8e-553b-aa94-cc4d0f086987",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "kind": "example",
+      "text": "We walked along a narrow path beside the garden.",
+      "textHash": "debb4dbba9f9fb7261b667c8c604f62a7feddd40fb9a3478b603ce81166b610c",
+      "relativePath": "wordbank/09eeb3d17582e855/0cc1f5cb-6d8e-553b-aa94-cc4d0f086987.mp3"
+    },
+    {
+      "assetGuid": "4ff95114-89cb-5663-9f34-79b3ecd78b6e",
+      "entryGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "word": "narrow",
+      "kind": "example",
+      "text": "Our team won by a narrow margin.",
+      "textHash": "67779e2fb2ea05500a3d2a426fdb0613de3cd7e9813507b13edbf9514db6b101",
+      "relativePath": "wordbank/09eeb3d17582e855/4ff95114-89cb-5663-9f34-79b3ecd78b6e.mp3"
+    }
+  ],
+  "newEntryJobs": [
+    {
+      "assetGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "kind": "word",
+      "text": "baggage cart",
+      "textHash": "1d5abd475d08948faf73c7d739c0da9b6a42751421e50264a0bd81269c55d30a",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/3b5cef7a-9d6d-5a47-acd5-3fcd25a05283.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "a8c7f770-d5ad-592f-ae8f-0dd30833b0f4",
+      "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "kind": "explanation",
+      "text": "This low wheeled trailer carries luggage around an airport.",
+      "textHash": "456fedf56e000fd0de165b31b0ea808740d3a1ae207ab0c4897cde7d44176a50",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/a8c7f770-d5ad-592f-ae8f-0dd30833b0f4.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "e4f15ee2-2740-53bf-9387-98e79a9cc545",
+      "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "kind": "explanation",
+      "text": "Airport workers load suitcases onto this cart and move them to or from an airplane.",
+      "textHash": "9fc4d5c7cc96863b89fff821748de4af592bf9a5e5c82831e8e634218559e0c5",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/e4f15ee2-2740-53bf-9387-98e79a9cc545.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "85c60357-aa5f-5ad5-a536-2dea455ce447",
+      "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "kind": "explanation",
+      "text": "A small powered vehicle can pull this luggage trailer across the airport apron.",
+      "textHash": "9ff019d73a94567a279acba6673a8ffbfd7af0120ec9a6da546f550aaafdd192",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/85c60357-aa5f-5ad5-a536-2dea455ce447.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "520a16c9-469b-5d98-ba05-9da9b763406c",
+      "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "kind": "example",
+      "text": "The worker puts two suitcases on the baggage cart.",
+      "textHash": "2da1412fcb96ef8219bd5ae896ebcc7f05c078d6f8ec345c70e853fc863fb021",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/520a16c9-469b-5d98-ba05-9da9b763406c.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "647cf009-094c-5c4b-881d-0ee695214335",
+      "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "kind": "example",
+      "text": "A baggage cart waits beside the airplane.",
+      "textHash": "28b956517858fa680b54c4c8e1ba18ee19961e0f965cf35a9bf324cd11b6b836",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/647cf009-094c-5c4b-881d-0ee695214335.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "ce0d20bf-ffd4-5d3b-ab6a-b7c95d9ff67c",
+      "entryGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "word": "baggage cart",
+      "kind": "example",
+      "text": "The tug pulls a baggage cart across the airport.",
+      "textHash": "4b59c195c2190320c3a72c35fff72377c40cb33e92e5d98a9b165e2dae41f2c3",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/ce0d20bf-ffd4-5d3b-ab6a-b7c95d9ff67c.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "kind": "word",
+      "text": "business class",
+      "textHash": "c4edfe61041061c9cb1598ea431f23f35f8082138abcdfbcab2c6b767e11ab27",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/ab98d6ac-e941-5978-b758-cc69b760cf87.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "8a792e4d-3517-5e26-8b92-fd28e2c8bcff",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "kind": "explanation",
+      "text": "This airline travel class usually offers more space and services than economy class.",
+      "textHash": "fa1dfe2afa6fccfcadd3c43265cf499578f6744f9e89a7e1273e524c1730e3e1",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/8a792e4d-3517-5e26-8b92-fd28e2c8bcff.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "0747157d-d1af-5c28-acdb-9e425baf49cf",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "kind": "explanation",
+      "text": "Passengers in this cabin often have wider seats and more room for their legs.",
+      "textHash": "7abd919ef192537c88e29953a90da4981ecb872da745b3260ea2c0cd5e0e0fac",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/0747157d-d1af-5c28-acdb-9e425baf49cf.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "191afb31-006a-5b7e-aed2-0ccb1d6f7af5",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "kind": "explanation",
+      "text": "This is a premium seating class on an airplane, between economy class and first class when all three are offered.",
+      "textHash": "8010cb024c6f3926767a198b13957c7ee6a40dbe9b8914bac04f54e7305e3f93",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/191afb31-006a-5b7e-aed2-0ccb1d6f7af5.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "c9022df2-bc1e-5085-b257-8ca75568ae7c",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "kind": "example",
+      "text": "Our business class seats have wide armrests.",
+      "textHash": "4f6815f3becd035dab2af51e983ed843a54f562dda3108e1bff820223d42aa0c",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/c9022df2-bc1e-5085-b257-8ca75568ae7c.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "3d32c5e6-55ee-51d1-8f3d-6d66bf49f0f4",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "kind": "example",
+      "text": "She chooses business class for the long flight.",
+      "textHash": "bc87834beda0d4ddb48f4e23e2df5ed919dcbe82d03eac0a3ba98c1b57847e89",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/3d32c5e6-55ee-51d1-8f3d-6d66bf49f0f4.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "3555e56f-9059-5aab-a150-577ed6869e85",
+      "entryGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "word": "business class",
+      "kind": "example",
+      "text": "The flight attendant serves a meal in business class.",
+      "textHash": "25e08a9ea52137e0e4500954697aece6cb113bf4e4bae0a42a8e53488d20ff45",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/3555e56f-9059-5aab-a150-577ed6869e85.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "kind": "word",
+      "text": "economy class",
+      "textHash": "e4ebe51cc383b709a87555bc38d97e2b07c21c0043890cde32f27fc89691e929",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/debdd36d-d229-531b-a5e5-efd7517fa4a9.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "a84972a1-79e5-5d0c-86ab-648ad177fee3",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "kind": "explanation",
+      "text": "This is the standard seating class on a passenger airplane.",
+      "textHash": "6086f70b1dc76d8d5e9d1446a50bf106bb3500e5793cd3b8dc7bbc584709050e",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/a84972a1-79e5-5d0c-86ab-648ad177fee3.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "05ce4f9a-08fb-5f35-a40f-dca9d63a4429",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "kind": "explanation",
+      "text": "Seats in this cabin are usually arranged in rows with less space than business class.",
+      "textHash": "59e7150539a67a6b4b5d5e786e0d628fe5be0af4209328478c0ac63dff8417c2",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/05ce4f9a-08fb-5f35-a40f-dca9d63a4429.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "51c8ea86-fb23-586f-a137-aef631b570a2",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "kind": "explanation",
+      "text": "This airline travel class usually costs less than business class.",
+      "textHash": "ee6cf192271237e78f0a7098479ca49fbac0fae717f956b4cd536e6311838f99",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/51c8ea86-fb23-586f-a137-aef631b570a2.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "9e9a1864-6412-56d9-aa16-25e07f3c5d5a",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "kind": "example",
+      "text": "Our family sits in economy class.",
+      "textHash": "a2bc659743328c6e8082ea2200015823bcf8cd502825e75cd31f5926c93034e7",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/9e9a1864-6412-56d9-aa16-25e07f3c5d5a.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "caec31fb-7bb7-5a33-8156-8d0070b09732",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "kind": "example",
+      "text": "Economy class has rows of passenger seats.",
+      "textHash": "7a520b2625726f4fb511e24b4398f71236e8d852d14ee8293112b38404b266f9",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/caec31fb-7bb7-5a33-8156-8d0070b09732.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    },
+    {
+      "assetGuid": "ca390d19-1b99-5cdb-b7eb-46179a4507de",
+      "entryGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "word": "economy class",
+      "kind": "example",
+      "text": "He watches a film in economy class.",
+      "textHash": "5aac4e6ee0bfeb8847e4ec5ce5115519b58d0381802c136b7da6e7e6040d42bc",
+      "plannedRelativePath": "wordbank/09eeb3d17582e855/ca390d19-1b99-5cdb-b7eb-46179a4507de.mp3",
+      "status": "planned-new-entry-not-production-imported"
+    }
+  ]
+}

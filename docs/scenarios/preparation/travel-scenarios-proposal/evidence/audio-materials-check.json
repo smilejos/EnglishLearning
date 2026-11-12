@@ -1,0 +1,4250 @@
+{
+  "newFilesVerified": 282,
+  "wordbank": 278,
+  "story": 4,
+  "scope": "complete-decode-and-near-silence-in-generation-plus-sha-bytes-text-bindings; not-human-listening",
+  "assets": [
+    {
+      "assetGuid": "4a00a796-e5c3-5dbc-a254-0cdd89f960a3",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/4a00a796-e5c3-5dbc-a254-0cdd89f960a3.mp3",
+      "sha256": "375fddf53fcbbe06b4dd99053961044dce0d2586cdace7feaf21ecf6bbbdfc4e",
+      "bytes": 29228,
+      "textHash": "0d987801d37785189244595ecee8e50cd62ab937f92503bb2ba9de0a1fc6a50d",
+      "durationSeconds": 1.824,
+      "acousticCheck": {
+        "peakDbfs": -0.516281908850346,
+        "rmsDbfs": -15.25639987037503,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "af04a7b3-4293-5a5c-8e8d-359cf9b26a2d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/af04a7b3-4293-5a5c-8e8d-359cf9b26a2d.mp3",
+      "sha256": "ba370238c16a3ef18479ba4a1e42c9933c80d98220f2d39b6fa62a9967e1b4b3",
+      "bytes": 54572,
+      "textHash": "6a9812acf69f55041ab18b3f68a7f3557e3b7a0322a11b8039215c56b3c398ca",
+      "durationSeconds": 3.408,
+      "acousticCheck": {
+        "peakDbfs": -0.5308676496501481,
+        "rmsDbfs": -13.914648209355143,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2c8753e4-acd3-5700-9073-4d509b798fe1",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/2c8753e4-acd3-5700-9073-4d509b798fe1.mp3",
+      "sha256": "27a3b220d4532c535a39009b501f174a0644d698ff0cad889545f8396da4e428",
+      "bytes": 35372,
+      "textHash": "9dd4fbf8b2ad385593970e2650f4481e296fb708cc5e87a426e341c81e1a0323",
+      "durationSeconds": 2.208,
+      "acousticCheck": {
+        "peakDbfs": -0.4725087108867488,
+        "rmsDbfs": -16.56150654541794,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7d85580b-d554-5771-b124-7382d006786a",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7d85580b-d554-5771-b124-7382d006786a.mp3",
+      "sha256": "c029b6025754faf3747c8fe39b9bee2071414858dfe6854aec0e42597cede16d",
+      "bytes": 171308,
+      "textHash": "16c7f085329771e9b1243803115b7ce386f22204c3c23ca9238643604233405b",
+      "durationSeconds": 10.704,
+      "acousticCheck": {
+        "peakDbfs": -0.5302925544982138,
+        "rmsDbfs": -19.50371853380286,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "dd663410-8a9e-5a9b-93b6-872fa414f6db",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/dd663410-8a9e-5a9b-93b6-872fa414f6db.mp3",
+      "sha256": "873b2d9939fc7f0b2906e8a8e302350afd6194c1267875d6fb18887651efc25e",
+      "bytes": 159788,
+      "textHash": "5f32b48991dd9f43eb90ee85fa52c71a39b0fb201e37d252e63af7e68f0f2618",
+      "durationSeconds": 9.984,
+      "acousticCheck": {
+        "peakDbfs": -0.5289955657867389,
+        "rmsDbfs": -19.121081081971624,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "4fd4208a-4537-59cd-b7a0-d8fd33a91063",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/4fd4208a-4537-59cd-b7a0-d8fd33a91063.mp3",
+      "sha256": "92827311754c6bccf089af9919cb01dfe94cc2eaa7b92d6bfe9dc05a81ba52c5",
+      "bytes": 122540,
+      "textHash": "50767ce3ae3e0da4fcfc6f30d5af660c41f4fcc092a3ea754ba962654ff6aa47",
+      "durationSeconds": 7.656,
+      "acousticCheck": {
+        "peakDbfs": -0.7647218302964448,
+        "rmsDbfs": -15.613286986627571,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d876dd09-9a4c-5c78-8e91-92d7b9e7931b.mp3",
+      "sha256": "c208e487f6276fd9f942e892bffc3b15deb075ffcd6b07eebe998c05c85db8b4",
+      "bytes": 12332,
+      "textHash": "0886b051075687c18a9ae5075383feb8400fbe4328c6e4bd45b77b30f1e73b54",
+      "durationSeconds": 0.768,
+      "acousticCheck": {
+        "peakDbfs": -0.8156998951654387,
+        "rmsDbfs": -18.382260504084773,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "261f046c-c525-51c4-b5d5-97ad8a16e9d3",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/261f046c-c525-51c4-b5d5-97ad8a16e9d3.mp3",
+      "sha256": "d6f7072e161296f6feb1f508bf6520923e82eea051b513462bec9b5059953fbe",
+      "bytes": 54572,
+      "textHash": "5fea14bcfe8e2c72aaf64757cebe49b2c5586deac7db59502dcd25c289e459c9",
+      "durationSeconds": 3.408,
+      "acousticCheck": {
+        "peakDbfs": -0.4459252938002023,
+        "rmsDbfs": -14.627318469732625,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1bcb47d2-fba7-5025-a0a8-0cd97198b9fc",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1bcb47d2-fba7-5025-a0a8-0cd97198b9fc.mp3",
+      "sha256": "39380240fbba801abba86200b311a65297491ad68821609f4da897b4bf626d28",
+      "bytes": 44588,
+      "textHash": "bbe1f08aa75d36a92c078134f2f27ebb0da11d6903d6de68a0852dfec2409b0b",
+      "durationSeconds": 2.784,
+      "acousticCheck": {
+        "peakDbfs": -0.6383297601251712,
+        "rmsDbfs": -17.902940958688344,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a1651ffe-5914-5ec2-8ff5-c6b798e5a968",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a1651ffe-5914-5ec2-8ff5-c6b798e5a968.mp3",
+      "sha256": "1488ce633a58b3596fd82d23c1e4efbe7d336b1f3c5c1bdb1814b6c85136d6ab",
+      "bytes": 46892,
+      "textHash": "5f6f6edd564c7d6ca61bb4abd694a0930922c2098cf1f9285f9eb45fe9c726b0",
+      "durationSeconds": 2.928,
+      "acousticCheck": {
+        "peakDbfs": -0.43509813510486167,
+        "rmsDbfs": -16.097091985886912,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "32796a2a-c801-570c-919d-96c134519a7f",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/32796a2a-c801-570c-919d-96c134519a7f.mp3",
+      "sha256": "7618b3509c1aa6f8a9d6bc9e506ce1bff3ba431c9a6afb50e87e284060025775",
+      "bytes": 171308,
+      "textHash": "4384913ec55d1f5356be4945f579e9ae088dc165fec8d6a95b13598a382573ad",
+      "durationSeconds": 10.704,
+      "acousticCheck": {
+        "peakDbfs": -0.45672995127737426,
+        "rmsDbfs": -18.050960576220813,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a80b5c88-9425-5f51-8c35-1e20579ec0ad",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a80b5c88-9425-5f51-8c35-1e20579ec0ad.mp3",
+      "sha256": "609205e25a2023e6ebc21e3a9c07d3441875ca8b1f6aefd55075638127e5bf30",
+      "bytes": 176300,
+      "textHash": "c8beed1ea534b69fc9665ba5791dc478c604213552ba3bf47292a520eeba5925",
+      "durationSeconds": 11.016,
+      "acousticCheck": {
+        "peakDbfs": -0.6702283258596267,
+        "rmsDbfs": -17.124512118779286,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f3b21c6b-d7e5-59a2-976b-1c9816d19249",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/f3b21c6b-d7e5-59a2-976b-1c9816d19249.mp3",
+      "sha256": "be8467f19b7b5033cd28d013f633085f54e03a21a162079e00c5d92be75868ce",
+      "bytes": 185132,
+      "textHash": "6ae233b10f7e310565442e86916cea778ba00f19d961c9bc563a8a507b64ee29",
+      "durationSeconds": 11.568,
+      "acousticCheck": {
+        "peakDbfs": -0.5819351718152037,
+        "rmsDbfs": -19.892447110069234,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fed03f94-0206-56c3-8136-5cbb4dc374a4",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/fed03f94-0206-56c3-8136-5cbb4dc374a4.mp3",
+      "sha256": "e891cf22e23ee25ae17969077ede8d70ffd9e35c9b4f06c623507a2d51aae053",
+      "bytes": 16172,
+      "textHash": "bf816809a4d8aa98ed09fe848bc31b08313b0ea7e19792dcfbc96bc7c9d11c34",
+      "durationSeconds": 1.008,
+      "acousticCheck": {
+        "peakDbfs": -0.5500298924711079,
+        "rmsDbfs": -18.255781650234763,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "23eb30db-50ca-5513-868b-5e3d6ba94ed4",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/23eb30db-50ca-5513-868b-5e3d6ba94ed4.mp3",
+      "sha256": "d3daadfe36e76196e83257381849970fe8d0b33a8bb8d9b7c84566e2974b6391",
+      "bytes": 57260,
+      "textHash": "dc6559b72dffbcac9c6b656bcdd1ffdf6a368b6ff4ddb17d6115a7407f88b3b4",
+      "durationSeconds": 3.576,
+      "acousticCheck": {
+        "peakDbfs": -0.5327049072667631,
+        "rmsDbfs": -15.600885233211212,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "00476648-9a5e-5042-90da-3d7c72d71edd",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/00476648-9a5e-5042-90da-3d7c72d71edd.mp3",
+      "sha256": "cf5e3717c85bd4b27ee03c3b2613042a08a59fb064d69bc21d34e7590adac216",
+      "bytes": 71468,
+      "textHash": "c9a021cae61beb7aef9af23fff695c7b7c6692ff457d8678cb54860fc87cac3d",
+      "durationSeconds": 4.464,
+      "acousticCheck": {
+        "peakDbfs": -0.5395620025536495,
+        "rmsDbfs": -16.44264662771038,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "4a5080aa-4a65-52ad-85be-3b04b07497ca",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/4a5080aa-4a65-52ad-85be-3b04b07497ca.mp3",
+      "sha256": "77fa6f60c9072027aa1c99fb0c35e96ef8a515fe2ce6341b5e52c172bb8a85e3",
+      "bytes": 82988,
+      "textHash": "ba300cf0e741722174d75ae078d9f3d2ace5c8d41f7171a6f448e0f65a35e039",
+      "durationSeconds": 5.184,
+      "acousticCheck": {
+        "peakDbfs": -0.616867889256676,
+        "rmsDbfs": -18.495058705876914,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "710387d1-076d-5191-9245-f65ef84c2270",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/710387d1-076d-5191-9245-f65ef84c2270.mp3",
+      "sha256": "7b3a6759ed1c3123d753066f56c5632bbf6ff7e058a0082d68db95b4ed74026b",
+      "bytes": 210860,
+      "textHash": "d53d1c6293855f958971115b2f1a7535a92f4482db756ca4ef7915b4d94cc319",
+      "durationSeconds": 13.176,
+      "acousticCheck": {
+        "peakDbfs": -0.3988805395472149,
+        "rmsDbfs": -18.55750573305701,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1ab134b2-ad21-5c18-aceb-ea114c8a4141",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1ab134b2-ad21-5c18-aceb-ea114c8a4141.mp3",
+      "sha256": "5a5b1a291135cc14234715ada92697e475973553041bf0602cb5d6ec2c412ef3",
+      "bytes": 142892,
+      "textHash": "f518a9fb7ee9c3ca381d0601c85d9a2f787b9215aaebf9380dee337a32fd8889",
+      "durationSeconds": 8.928,
+      "acousticCheck": {
+        "peakDbfs": -0.43578508624134066,
+        "rmsDbfs": -17.850398931018837,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "19590cba-4398-5cc7-9fad-e91ce83e3af0",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/19590cba-4398-5cc7-9fad-e91ce83e3af0.mp3",
+      "sha256": "3b126760371c78e021fcbd48e70864d67b340f6ba6afa7685ce5c036b04b102b",
+      "bytes": 168620,
+      "textHash": "72f753d0318836f040845485527208bbe87738b97440e908b4580f4f08dacb06",
+      "durationSeconds": 10.536,
+      "acousticCheck": {
+        "peakDbfs": -0.4548770500593199,
+        "rmsDbfs": -17.425125087943094,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5ab06837-66dd-5f0f-89fa-978a1b7cfbea.mp3",
+      "sha256": "1abb78e83605b8296e25b0d6f0907e861e8fc8932df91f393d857eb374188b4e",
+      "bytes": 90668,
+      "textHash": "4e686af7bdcc5ae005a247624fd8c7283257c2514f6b3ad2ff5d4cb6d95196e6",
+      "durationSeconds": 5.664,
+      "acousticCheck": {
+        "peakDbfs": -0.3984366128726957,
+        "rmsDbfs": -17.48658572689012,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c3419689-8bf8-57c3-8e3d-d77056d20d15",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c3419689-8bf8-57c3-8e3d-d77056d20d15.mp3",
+      "sha256": "1688e3aaec89a4e1527fff26f0839d4fd762f04641aacac587bbe43f8e604b46",
+      "bytes": 84140,
+      "textHash": "347b2c199dfd620caf67baf5fa33190dfb4e4c81937f0db73542fd034eecbf94",
+      "durationSeconds": 5.256,
+      "acousticCheck": {
+        "peakDbfs": -0.3639059632550855,
+        "rmsDbfs": -19.416646179597468,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8bf7523d-8c77-5bcb-b066-c3a5e07355a1",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/8bf7523d-8c77-5bcb-b066-c3a5e07355a1.mp3",
+      "sha256": "9ba54d7c262027acb9bdf708d53fcb69b7d6605e67b36f78029c73fc8e3397ea",
+      "bytes": 95660,
+      "textHash": "32b96955dc70bdcf18e3bcee54609a88231ef1aa452edb427f28737556923d61",
+      "durationSeconds": 5.976,
+      "acousticCheck": {
+        "peakDbfs": -0.3948946848291204,
+        "rmsDbfs": -17.2039869152906,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3166a2aa-f46a-54ea-a2ba-8127a3e87560",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3166a2aa-f46a-54ea-a2ba-8127a3e87560.mp3",
+      "sha256": "38aff295f41055f5138e5af3b02aa79c89b62d1f3af661d948f3389c9672bfb6",
+      "bytes": 89132,
+      "textHash": "ddcd17d364beded5a9d3ba51abbb695de4905080ff01cb9c7bed324780fd77d7",
+      "durationSeconds": 5.568,
+      "acousticCheck": {
+        "peakDbfs": -0.34483600717271,
+        "rmsDbfs": -16.002731288001492,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0500b135-21e8-5a9c-a52a-a16e69981dc9",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0500b135-21e8-5a9c-a52a-a16e69981dc9.mp3",
+      "sha256": "c61225bf7a00f5084fa0a728d4d8729c788dc4707d54cd7af80bb6a3fabcc2bc",
+      "bytes": 84140,
+      "textHash": "8cafe1213973fa70e1fa0d9636c916dc837013f8d0d757918d39ac778079136b",
+      "durationSeconds": 5.256,
+      "acousticCheck": {
+        "peakDbfs": -0.437196173723573,
+        "rmsDbfs": -15.425094292866564,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "83fbd495-a4f2-5b5a-a63a-ed938c54630d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/83fbd495-a4f2-5b5a-a63a-ed938c54630d.mp3",
+      "sha256": "9c515e2a02fdd0ce0ad00ff5e09b03fbea97de202bed4120125a233ae98888ca",
+      "bytes": 89132,
+      "textHash": "c26ad5e1cdeb7350c6ee5cd9c8eff518d1094ca3229b9b34e89a02869bed5a95",
+      "durationSeconds": 5.568,
+      "acousticCheck": {
+        "peakDbfs": -0.553930877322849,
+        "rmsDbfs": -16.673122682519562,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0baf8ecb-33d7-5f70-b94d-665f63482b39",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0baf8ecb-33d7-5f70-b94d-665f63482b39.mp3",
+      "sha256": "cfdf1fcd0a2d5b938f8a9d52096502b852beed86cad77793675fcea805338dfa",
+      "bytes": 100652,
+      "textHash": "0354e09c40a9051869e72fb3bdbe680f8aa54e28896d12f4532d22844750428c",
+      "durationSeconds": 6.288,
+      "acousticCheck": {
+        "peakDbfs": -0.5050243442277222,
+        "rmsDbfs": -20.93921314484369,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1ee3218d-b605-5594-b22c-442dfcbf4d1c",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1ee3218d-b605-5594-b22c-442dfcbf4d1c.mp3",
+      "sha256": "4c27d359430aaf11ad9536541e476272a5b79de14cc8eec574cdced04e3019d3",
+      "bytes": 117548,
+      "textHash": "d6608563527fc751a10f25968902c2a50e33563398b74474479543e29fa17243",
+      "durationSeconds": 7.344,
+      "acousticCheck": {
+        "peakDbfs": -0.5597191036718514,
+        "rmsDbfs": -15.69982306115772,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "134508a5-54a5-5ce6-ab05-a172c980d262",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/134508a5-54a5-5ce6-ab05-a172c980d262.mp3",
+      "sha256": "dc872c4ae504a2dda00ad7e203d08f755495c94f762f3f78edf8aef9d34c630e",
+      "bytes": 114860,
+      "textHash": "bac155ebddeca3cb3d74ae974117f1ae3b1be78606022b5cd8973526db413f8b",
+      "durationSeconds": 7.176,
+      "acousticCheck": {
+        "peakDbfs": -0.37824109398216116,
+        "rmsDbfs": -18.547799905220373,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "63b7be15-2978-5687-b5e9-3091c9e2ce48",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/63b7be15-2978-5687-b5e9-3091c9e2ce48.mp3",
+      "sha256": "499e95117d9950047e1b6e8d431d9c570a3a356792068c8f8b0979b829a77185",
+      "bytes": 111020,
+      "textHash": "57fb681713ca5b58a2bacae7416b111cc7507b3224f6c8d669476f1f30351e44",
+      "durationSeconds": 6.936,
+      "acousticCheck": {
+        "peakDbfs": -0.5313558224949543,
+        "rmsDbfs": -19.07900367332197,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "aa52b3f8-9f12-56d4-a6c2-2c86cf987ca6",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/aa52b3f8-9f12-56d4-a6c2-2c86cf987ca6.mp3",
+      "sha256": "f36abeef514e1d566884390fd6d5ec72ca425399f45d72c39230cde612ba7faf",
+      "bytes": 148268,
+      "textHash": "ea82a27b12cc13d8be72d6d10424101d1414fd9bb95f4ab12846d2b0c324046a",
+      "durationSeconds": 9.264,
+      "acousticCheck": {
+        "peakDbfs": -0.21170960692858032,
+        "rmsDbfs": -18.13797659832752,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "323e7267-b597-57b4-9ef3-081594488982",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/323e7267-b597-57b4-9ef3-081594488982.mp3",
+      "sha256": "a18081bd04ccd929c9c630bf4d04402bf7006d732bd943c8a4ba8e0cc3481c68",
+      "bytes": 103340,
+      "textHash": "24876523fc343f17e6a001fb3f24a7d3e103e8a54958bbec2d5b8e3295e4fa8e",
+      "durationSeconds": 6.456,
+      "acousticCheck": {
+        "peakDbfs": -0.646016945084882,
+        "rmsDbfs": -16.937435513862496,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3ff3a438-b1cb-57b4-bc6c-95a82c6da8b7",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3ff3a438-b1cb-57b4-bc6c-95a82c6da8b7.mp3",
+      "sha256": "d0a8f2f075b8bce5d901b785f889a6336f36c1c7c5cc4b8c87a3933a90e91a01",
+      "bytes": 135212,
+      "textHash": "41ff8897d471c8cb5479f20991ed0671e77f1ef702e981b8cb37a99d02cc4bdb",
+      "durationSeconds": 8.448,
+      "acousticCheck": {
+        "peakDbfs": -0.5965828733378179,
+        "rmsDbfs": -16.443615384246442,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "cfb0b30f-65bc-591d-ade4-bda7ff2f32f5",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/cfb0b30f-65bc-591d-ade4-bda7ff2f32f5.mp3",
+      "sha256": "5282b3525c84432f5023ffd9761fcd6320f5c2b45cf1456ad1a16a18257cb7b3",
+      "bytes": 295340,
+      "textHash": "770c7679702dcd5e4c5dec2f37bcd6d563a6462c23031561b9f9cee3a1833ffe",
+      "durationSeconds": 18.456,
+      "acousticCheck": {
+        "peakDbfs": -0.44839391645652515,
+        "rmsDbfs": -19.5129218041315,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5fd8dbda-9dd2-5e0d-a0a2-67ddf7cd5403",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5fd8dbda-9dd2-5e0d-a0a2-67ddf7cd5403.mp3",
+      "sha256": "2c22d1ecb1f534ec3bfeac6310f09bb58da618ab20cc4d878a62e2f4f8f4c135",
+      "bytes": 171308,
+      "textHash": "2038a0609cf1637bd19659b4b470e533496891f761f5d2290b3249703a90b8eb",
+      "durationSeconds": 10.704,
+      "acousticCheck": {
+        "peakDbfs": -0.4552491263012727,
+        "rmsDbfs": -19.86625647065012,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c63433e3-9ce3-5f9a-9ba6-dd9f6cdcbf4e",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c63433e3-9ce3-5f9a-9ba6-dd9f6cdcbf4e.mp3",
+      "sha256": "ab0a8537d5edb5c66db0ec126c632467d0e32e74c51d42b3cfa12e3073565ff5",
+      "bytes": 202028,
+      "textHash": "be7ef4f5f19fb29565894bfaea59019b6de3112a722418810019afec9c4e2492",
+      "durationSeconds": 12.624,
+      "acousticCheck": {
+        "peakDbfs": -0.4375277472144531,
+        "rmsDbfs": -19.327041605493662,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/25804565-39d9-579e-a864-5fbf2c16ac0d.mp3",
+      "sha256": "04c4bdb08dd07b2059c126b9cad42c0151d5f7dc042f1b729aa9be54f83d8c68",
+      "bytes": 17708,
+      "textHash": "9817a64167e5ea6c638fedbd97bd69a30e900b9e91d626c011995f9fb523ac92",
+      "durationSeconds": 1.104,
+      "acousticCheck": {
+        "peakDbfs": -0.7161548840615031,
+        "rmsDbfs": -15.78228205717256,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d2199857-784c-5fc1-876b-1e07df8052d8",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d2199857-784c-5fc1-876b-1e07df8052d8.mp3",
+      "sha256": "12ff49037dd689e6f0f59f391b6e26caa8d3fdc058e531066e64f95913f0d12b",
+      "bytes": 38060,
+      "textHash": "60165ade66ee75014b7f82ce6ff3aa1a3201d255abf4cacd1fd8039539c365aa",
+      "durationSeconds": 2.376,
+      "acousticCheck": {
+        "peakDbfs": -2.578896769968231,
+        "rmsDbfs": -18.337143798741568,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1c78f4a6-9db0-5ca5-9d6c-88f201191968",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1c78f4a6-9db0-5ca5-9d6c-88f201191968.mp3",
+      "sha256": "1bb384bf1a2432b5b8c6ebab818d06a05b89cc2ef369c98ffd13cea36dcb5530",
+      "bytes": 50732,
+      "textHash": "a607543b625a624e83398831cbfa0f52b90d8f75aab2c70a77988a85f1e2b477",
+      "durationSeconds": 3.168,
+      "acousticCheck": {
+        "peakDbfs": -0.7226176963215363,
+        "rmsDbfs": -17.632412839738357,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "70395cb1-1333-512c-b872-fdc2a26bcd8d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/70395cb1-1333-512c-b872-fdc2a26bcd8d.mp3",
+      "sha256": "f04ae50d7f152beb66c1692cc239ba9ed1223cf5d441d49180c792114efcb55b",
+      "bytes": 63788,
+      "textHash": "ca39bdbbfc801fed8179408c755a79d8eea5a0f491aefe77761b93c88a86d44e",
+      "durationSeconds": 3.984,
+      "acousticCheck": {
+        "peakDbfs": -0.5392287146485255,
+        "rmsDbfs": -15.577852344826628,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d9af6901-dc24-54c5-bc7f-d7e97e8b53dc",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d9af6901-dc24-54c5-bc7f-d7e97e8b53dc.mp3",
+      "sha256": "a76e362e18de87e18e04de90d9e98c8ca79f176c740f7419d9025d2e0ee7e7c7",
+      "bytes": 213548,
+      "textHash": "93ebcede8e85c58c5054e629b317f772117538f92a9bbd32c1dde4d262cadd72",
+      "durationSeconds": 13.344,
+      "acousticCheck": {
+        "peakDbfs": -0.3841714959531151,
+        "rmsDbfs": -17.559561905115363,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a8016df3-3e8c-5888-9332-8ae5ddd295f1",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a8016df3-3e8c-5888-9332-8ae5ddd295f1.mp3",
+      "sha256": "c6b7c9dd9cedf9852a3c0538dda54a3ecdb99391e4885f870dfcb10bf74e8896",
+      "bytes": 153260,
+      "textHash": "671274d71ef22a5b513a1c6e49d7e996ac2610a97d2abc5f8d78d5f0d477035f",
+      "durationSeconds": 9.576,
+      "acousticCheck": {
+        "peakDbfs": -0.5653310610702171,
+        "rmsDbfs": -18.953676933965667,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a29cde60-b7ae-5a67-a641-1922cdf5bbf9",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a29cde60-b7ae-5a67-a641-1922cdf5bbf9.mp3",
+      "sha256": "632edee2ecd2451afed75af8ce4600fac8cb68593d7a13ec8e3e6cd36f585614",
+      "bytes": 144428,
+      "textHash": "8e37a0d64d7e1e838b8a5e087a280ef257fb6df886edd708cb7c02c3d1763e8b",
+      "durationSeconds": 9.024,
+      "acousticCheck": {
+        "peakDbfs": -0.3877317899276832,
+        "rmsDbfs": -18.18681998237374,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/6d18d5d4-5288-5c3e-8cf0-f854d81f146d.mp3",
+      "sha256": "cf1bbb2e7be7b0c214d1afbf2165fd4125615d7e25226e30d42439f783ccb125",
+      "bytes": 17708,
+      "textHash": "db1386667799618d974aa48b62c8b1b1197bdcbcc97300236d594ad05519d72e",
+      "durationSeconds": 1.104,
+      "acousticCheck": {
+        "peakDbfs": -0.551923066392144,
+        "rmsDbfs": -13.873050700493842,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "17bc2031-7fbf-5f6d-8d52-7e0ec4a7618f",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/17bc2031-7fbf-5f6d-8d52-7e0ec4a7618f.mp3",
+      "sha256": "d124a6416832486ee931b0e53cd27d83cfcaf87595d5e2fa45da7dec42e7b3bd",
+      "bytes": 95660,
+      "textHash": "2ce0d216c801930eb2e12337f659e4e8789f2c451c4d7d89c4f23b78677b1e95",
+      "durationSeconds": 5.976,
+      "acousticCheck": {
+        "peakDbfs": -0.40191654371142393,
+        "rmsDbfs": -21.400903585801988,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "85e01588-dd17-5c0b-a2bc-36dfa45428df",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/85e01588-dd17-5c0b-a2bc-36dfa45428df.mp3",
+      "sha256": "4374c4de906378935bcd705942bd383b236cb799047727bd3c0ceefc32680262",
+      "bytes": 92972,
+      "textHash": "f0523638d215c63d22ac31aabaf219d7ecc628af04a9a4c0a0a3819d9118eed0",
+      "durationSeconds": 5.808,
+      "acousticCheck": {
+        "peakDbfs": -0.4148949498770959,
+        "rmsDbfs": -17.419222166122392,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bc6bfd7a-1b59-5754-a92d-53671ec9dfdd",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/bc6bfd7a-1b59-5754-a92d-53671ec9dfdd.mp3",
+      "sha256": "e9fb32a24a7fe2561b37b089d63af3516d65e7d46b6086bcb9f1ba456ef48be5",
+      "bytes": 102188,
+      "textHash": "9fe51cd92a74edfefc6936c0e471f6e60e33396f2df9440b996f0df2875a0bde",
+      "durationSeconds": 6.384,
+      "acousticCheck": {
+        "peakDbfs": -0.38576743998260077,
+        "rmsDbfs": -16.89935479834276,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6881753d-3a81-54c1-adf0-c74e7f793ff3",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/6881753d-3a81-54c1-adf0-c74e7f793ff3.mp3",
+      "sha256": "decc186f854ae4c84826d4638b731e3839916a80d58321d0a4f0a9397ae5ef50",
+      "bytes": 230060,
+      "textHash": "97b48665a81e3e27d5aa1a3e3ac3fc9e1937ddbe23b3b47b38b79a24d96b2caa",
+      "durationSeconds": 14.376,
+      "acousticCheck": {
+        "peakDbfs": -0.5371020330158258,
+        "rmsDbfs": -16.547687227371696,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "06f4059b-8621-592f-97dc-ea221d11701b",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/06f4059b-8621-592f-97dc-ea221d11701b.mp3",
+      "sha256": "1a71ae64bc934e77966e79ad802550ac2f1e3afa2b5e4cce44215ba28b34bc11",
+      "bytes": 192812,
+      "textHash": "6a4edc4522457a887829771826801f3b44b7a4a894e4dc0d7359420e1e1a0dc2",
+      "durationSeconds": 12.048,
+      "acousticCheck": {
+        "peakDbfs": -0.45035394321902167,
+        "rmsDbfs": -17.40238409575754,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2657358b-d8ca-507d-95a9-8ed14b3f2154",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/2657358b-d8ca-507d-95a9-8ed14b3f2154.mp3",
+      "sha256": "ae1887af4f76f0e193b058371c0410c8d9b7c231db45c87e999ad6d34a68be52",
+      "bytes": 149420,
+      "textHash": "0e063f716266d3165b3deb3c27c254ab3f48c55082052fbbd3b78e93f81878fc",
+      "durationSeconds": 9.336,
+      "acousticCheck": {
+        "peakDbfs": -0.5207163518648062,
+        "rmsDbfs": -16.766750267412114,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3b5cef7a-9d6d-5a47-acd5-3fcd25a05283.mp3",
+      "sha256": "60fc6df8dc1a518aec6b2179bf2694097bb257fce0c7310f93faea20e6962076",
+      "bytes": 16172,
+      "textHash": "1d5abd475d08948faf73c7d739c0da9b6a42751421e50264a0bd81269c55d30a",
+      "durationSeconds": 1.008,
+      "acousticCheck": {
+        "peakDbfs": -0.48256110204050745,
+        "rmsDbfs": -15.776143770140056,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "520a16c9-469b-5d98-ba05-9da9b763406c",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/520a16c9-469b-5d98-ba05-9da9b763406c.mp3",
+      "sha256": "11da28af2c3d40845d7ba558578ad6d5515f8788ad4efdca64606832d585a48b",
+      "bytes": 62252,
+      "textHash": "2da1412fcb96ef8219bd5ae896ebcc7f05c078d6f8ec345c70e853fc863fb021",
+      "durationSeconds": 3.888,
+      "acousticCheck": {
+        "peakDbfs": -0.3967987793525881,
+        "rmsDbfs": -17.856048972028482,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "647cf009-094c-5c4b-881d-0ee695214335",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/647cf009-094c-5c4b-881d-0ee695214335.mp3",
+      "sha256": "f3c306a17e0e0829ec4f17a5dbe2ffe5411b017a55067e68bdc7a5107d551793",
+      "bytes": 46892,
+      "textHash": "28b956517858fa680b54c4c8e1ba18ee19961e0f965cf35a9bf324cd11b6b836",
+      "durationSeconds": 2.928,
+      "acousticCheck": {
+        "peakDbfs": -0.4182201333304667,
+        "rmsDbfs": -16.630650207438865,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ce0d20bf-ffd4-5d3b-ab6a-b7c95d9ff67c",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ce0d20bf-ffd4-5d3b-ab6a-b7c95d9ff67c.mp3",
+      "sha256": "3f8e3e426a002cdf3e5decdab84604c4ccf0d0362e3f331ee28715836d5486bd",
+      "bytes": 50732,
+      "textHash": "4b59c195c2190320c3a72c35fff72377c40cb33e92e5d98a9b165e2dae41f2c3",
+      "durationSeconds": 3.168,
+      "acousticCheck": {
+        "peakDbfs": -0.6253400083061617,
+        "rmsDbfs": -17.88624873981076,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a8c7f770-d5ad-592f-ae8f-0dd30833b0f4",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a8c7f770-d5ad-592f-ae8f-0dd30833b0f4.mp3",
+      "sha256": "17696f7871e0e502479af29ef2541e612a49e5a91cd85294a7ea088d1142e598",
+      "bytes": 61100,
+      "textHash": "456fedf56e000fd0de165b31b0ea808740d3a1ae207ab0c4897cde7d44176a50",
+      "durationSeconds": 3.816,
+      "acousticCheck": {
+        "peakDbfs": -0.4526198382261416,
+        "rmsDbfs": -16.33008722692441,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e4f15ee2-2740-53bf-9387-98e79a9cc545",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/e4f15ee2-2740-53bf-9387-98e79a9cc545.mp3",
+      "sha256": "ce0de504319a2bd8cea1c20b745f80db1c30fbadc274b8c7cc92fc4b815be343",
+      "bytes": 103340,
+      "textHash": "9fc4d5c7cc96863b89fff821748de4af592bf9a5e5c82831e8e634218559e0c5",
+      "durationSeconds": 6.456,
+      "acousticCheck": {
+        "peakDbfs": -0.509255955762482,
+        "rmsDbfs": -19.477856117170596,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "85c60357-aa5f-5ad5-a536-2dea455ce447",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/85c60357-aa5f-5ad5-a536-2dea455ce447.mp3",
+      "sha256": "2754c5c6fac5e94907a193eeedbe33c406f909251e28b9e27a525ab119a2eaad",
+      "bytes": 91820,
+      "textHash": "9ff019d73a94567a279acba6673a8ffbfd7af0120ec9a6da546f550aaafdd192",
+      "durationSeconds": 5.736,
+      "acousticCheck": {
+        "peakDbfs": -0.47678631030881546,
+        "rmsDbfs": -16.186070730705108,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "54b349c1-dfd6-5484-bde2-e7ebc7afd312",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/54b349c1-dfd6-5484-bde2-e7ebc7afd312.mp3",
+      "sha256": "ad18d9e0e3913855cf4e8e53bce996de354a9cfecd4ef5f03ba61ff5e80ee26a",
+      "bytes": 27692,
+      "textHash": "e67930d235f4b63a52e00e625ef54d4a7a40aaf7ec1b30f30f4694b8d35269c0",
+      "durationSeconds": 1.728,
+      "acousticCheck": {
+        "peakDbfs": -0.44983976823115446,
+        "rmsDbfs": -14.745041763190015,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f8e0486f-f338-5ae6-a981-9cb35c19ea36",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/f8e0486f-f338-5ae6-a981-9cb35c19ea36.mp3",
+      "sha256": "527869a923b5e0550a499a2338c1f47c64e2757276b97237d24c5f3239324bfb",
+      "bytes": 36908,
+      "textHash": "05e216404c753f55aac73145e6005de743ffd1b5828ed6eeac086a65b5b17fda",
+      "durationSeconds": 2.304,
+      "acousticCheck": {
+        "peakDbfs": -0.4378958140573037,
+        "rmsDbfs": -17.316759816077457,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7992a75e-5625-5747-9817-9e9595893f8b",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7992a75e-5625-5747-9817-9e9595893f8b.mp3",
+      "sha256": "b1a2ecb8202e72a476d9b1c41d035888edcdaccb97155db7f6c0e0eaa21e91f1",
+      "bytes": 38060,
+      "textHash": "dd6c185afa3026f8766b24b304b4e42a7a2976ee1be4f28400f8b88013c4ba8d",
+      "durationSeconds": 2.376,
+      "acousticCheck": {
+        "peakDbfs": -0.6085900476625233,
+        "rmsDbfs": -14.489150623946452,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5f40bcfb-5e8b-5106-bfc6-49213fdc00a0",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5f40bcfb-5e8b-5106-bfc6-49213fdc00a0.mp3",
+      "sha256": "f8a950c6411fe92e9643b2e9d269dd67310de9ef7fba14db58899131926276d3",
+      "bytes": 149420,
+      "textHash": "0d654d29bd55616780f509ad6d2658d12864417c5653f4c7afb7b2f08257dc2f",
+      "durationSeconds": 9.336,
+      "acousticCheck": {
+        "peakDbfs": -0.5275480315360231,
+        "rmsDbfs": -18.664972315545278,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9cf2d358-7370-5b01-aab5-581f9bea4111",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9cf2d358-7370-5b01-aab5-581f9bea4111.mp3",
+      "sha256": "f6e7edb20d8f67a0a667edeb9d45852d6d18da25e04bd5c5811efe91eea655d3",
+      "bytes": 181292,
+      "textHash": "e2655066b111c2e1a6eb0bc2169e46225878ea6de1fc1b755a2f2e83101d6206",
+      "durationSeconds": 11.328,
+      "acousticCheck": {
+        "peakDbfs": -0.5533785313096409,
+        "rmsDbfs": -19.099756175784268,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5909a347-4b61-5400-8d67-fceff5bc8c60",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5909a347-4b61-5400-8d67-fceff5bc8c60.mp3",
+      "sha256": "daf8b1c13391193103d5c02d4ab4a61c58ca467ef6b942ddd98208a9c71e96f1",
+      "bytes": 180140,
+      "textHash": "8818ab429023873cd7005aad8b2732a99628b769fe01bca32e425ad35c530dfc",
+      "durationSeconds": 11.256,
+      "acousticCheck": {
+        "peakDbfs": -0.5682323621390085,
+        "rmsDbfs": -18.267848112519797,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ac639252-b530-5342-933b-75737f80bee2.mp3",
+      "sha256": "5ededef13020fcd3d43ac808dace276b88524cd649fdc10188f9563a6ecb3de6",
+      "bytes": 11180,
+      "textHash": "84983c60f7daadc1cb8698621f802c0d9f9a3c3c295c810748fb048115c186ec",
+      "durationSeconds": 0.696,
+      "acousticCheck": {
+        "peakDbfs": -0.620509859985842,
+        "rmsDbfs": -17.561994165495804,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "de11fa1e-0b61-58aa-a320-0a9ad187cd9f",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/de11fa1e-0b61-58aa-a320-0a9ad187cd9f.mp3",
+      "sha256": "5926d7429e4ee0e45598ce8926d8022e18a8c7520eca86cbc1aa54543e423d17",
+      "bytes": 54572,
+      "textHash": "7858a4b7394d18042ab65f664c69df2cb2dddf3682c7669c05281b5e381acd5c",
+      "durationSeconds": 3.408,
+      "acousticCheck": {
+        "peakDbfs": -0.4577122146952355,
+        "rmsDbfs": -14.611069388383067,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "89e58591-4f3d-5637-b67c-96d3b8070367",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/89e58591-4f3d-5637-b67c-96d3b8070367.mp3",
+      "sha256": "645b1a3cb3a180b2e3e906264b2de9b5dede5977c3d4a6e089b0b19b4f929098",
+      "bytes": 95660,
+      "textHash": "34aa405f4d2c9903e184eaa254dfaae11ffcfe273ffadb8ff4c868ca63f7d8b2",
+      "durationSeconds": 5.976,
+      "acousticCheck": {
+        "peakDbfs": -0.3887680024564917,
+        "rmsDbfs": -15.632998026764913,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "976a6b19-42c3-5516-abe2-76adfffa8a66",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/976a6b19-42c3-5516-abe2-76adfffa8a66.mp3",
+      "sha256": "25e0a0153b2a2a1add1e0616f10d8268df6c3285fa400a6938b533895ba81e09",
+      "bytes": 104492,
+      "textHash": "726ed2b463f7ded43473b75da8015a91258c5105751f4ef5653ba0cf5ed9e4ea",
+      "durationSeconds": 6.528,
+      "acousticCheck": {
+        "peakDbfs": -0.5100196217184859,
+        "rmsDbfs": -17.149788193464722,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5b720948-0d27-54bc-b2c2-abf1a6d595fa",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5b720948-0d27-54bc-b2c2-abf1a6d595fa.mp3",
+      "sha256": "4b42b04811d22aacba24b9d88e34ac3015bd20d08b5d30cb1e8fd494cec2a503",
+      "bytes": 127532,
+      "textHash": "b6742875b07a4c985a66002f18c691bdb52d442585a7985e703f72696a1d8f95",
+      "durationSeconds": 7.968,
+      "acousticCheck": {
+        "peakDbfs": -0.5315748762743391,
+        "rmsDbfs": -17.80330874505694,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "37b3dbaa-da65-598c-8ca8-62f70d23d210",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/37b3dbaa-da65-598c-8ca8-62f70d23d210.mp3",
+      "sha256": "1819ec0800d0049f7341caa497cfaf540c66893c94908677c2cfec19bf172beb",
+      "bytes": 102188,
+      "textHash": "0002a8cbdc43fc7c4d3c6702a4f80692cb4a6b0635a33068f875aba8c925b927",
+      "durationSeconds": 6.384,
+      "acousticCheck": {
+        "peakDbfs": -0.6582038344626878,
+        "rmsDbfs": -16.429530182069385,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d32f5507-3655-546e-bfc7-def8b854771f",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d32f5507-3655-546e-bfc7-def8b854771f.mp3",
+      "sha256": "325f32c91e3e316de3d78b136990d4d7e9fb06745f26afd90e04d8c23f837622",
+      "bytes": 119852,
+      "textHash": "e8578af68461639b41f5dbecd27c6d06fc152a9dd4916d9afb2b1d3ff5541a45",
+      "durationSeconds": 7.488,
+      "acousticCheck": {
+        "peakDbfs": -0.36823302431820026,
+        "rmsDbfs": -16.579355047223192,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c9168ced-5598-59ec-97fb-ea0aebb3b5bc.mp3",
+      "sha256": "d50b701e31ff6d479e91e8f3c5112b8898d8d608e444d9653fcf00bbdc54a18b",
+      "bytes": 16172,
+      "textHash": "8d8d7dbe6559acfc6bb4c0e3dcb953af700072dd7987863dc04a5a0bab1d3273",
+      "durationSeconds": 1.008,
+      "acousticCheck": {
+        "peakDbfs": -0.4519310090519326,
+        "rmsDbfs": -15.009098839221505,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "06f3c1cd-35fe-56b8-986b-4ac3b9d28123",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/06f3c1cd-35fe-56b8-986b-4ac3b9d28123.mp3",
+      "sha256": "559777a6b779e866d90be03c0d3cb32f5fb04b4ac17b204ed5bbc5980b034c67",
+      "bytes": 66092,
+      "textHash": "efae79ad88f2229cd7f58ec083fd3f3eca27f2065f583d9832679682649096f9",
+      "durationSeconds": 4.128,
+      "acousticCheck": {
+        "peakDbfs": -0.47026002954861973,
+        "rmsDbfs": -17.267065196773373,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "376ec646-e2ce-5637-ae8e-d67c84433730",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/376ec646-e2ce-5637-ae8e-d67c84433730.mp3",
+      "sha256": "208cf54eaad3ef661b643fca32af885a0751893f79593e8c3720537151ce3bae",
+      "bytes": 67628,
+      "textHash": "5cd008ba589542f0a8dd943945afc3147cf85dec5fb4c81363151f3e4cd608f2",
+      "durationSeconds": 4.224,
+      "acousticCheck": {
+        "peakDbfs": -0.3533897133524314,
+        "rmsDbfs": -16.318552060538924,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e5a21f4f-0aab-55af-83b6-404d61e23854",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/e5a21f4f-0aab-55af-83b6-404d61e23854.mp3",
+      "sha256": "bdad5ebdbcf8ad998b38a7ad9a2bc40c93db797c9be9960a08ae5f64d7e54cd6",
+      "bytes": 72620,
+      "textHash": "401c008fc98d3ea3516a7f13faae4b61a37b826c584f2aafacaf61643f53ebd5",
+      "durationSeconds": 4.536,
+      "acousticCheck": {
+        "peakDbfs": -0.4922969362378411,
+        "rmsDbfs": -18.806439580914457,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c168ac64-dde4-529f-aefe-f5f88c5baad5",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c168ac64-dde4-529f-aefe-f5f88c5baad5.mp3",
+      "sha256": "979f53e61702f9f81b70450708ecbc249d4a7b46cb6bff00839486121fa24ea6",
+      "bytes": 144428,
+      "textHash": "eb05ee1dcb3ce5cbbc9d09b772ace904fc98ed90320e800aea6b1a79594b4222",
+      "durationSeconds": 9.024,
+      "acousticCheck": {
+        "peakDbfs": -0.6202763188673213,
+        "rmsDbfs": -17.968266690601013,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c688aff8-2a58-5672-9525-c216263b8a71",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c688aff8-2a58-5672-9525-c216263b8a71.mp3",
+      "sha256": "023d2eff90a74059af97e0c8dfa2a114a09eeeac5c1c69b5fb1c8d0136b7b539",
+      "bytes": 167468,
+      "textHash": "9b42b117d344e240bdee8c3dbb6f0a960c407abccb78b35c3149dec8394fe4a3",
+      "durationSeconds": 10.464,
+      "acousticCheck": {
+        "peakDbfs": -0.47285803570182594,
+        "rmsDbfs": -18.93040537849879,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1386143d-b65d-50f2-a9ce-dd9b7905bd66",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1386143d-b65d-50f2-a9ce-dd9b7905bd66.mp3",
+      "sha256": "9b995ac9873102f5b6baedae1b83a3800bd11d70826fee0d489ac690a2d31b76",
+      "bytes": 130220,
+      "textHash": "078be6b99a193c73d77003ead34e51684840628ec905f692817b9ef2008257a1",
+      "durationSeconds": 8.136,
+      "acousticCheck": {
+        "peakDbfs": -0.40736395139407566,
+        "rmsDbfs": -18.49837466979469,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0759e0ab-6df9-5d84-b87a-8723f0cbbec4.mp3",
+      "sha256": "b2520a58f642748470bdfe7621a0db719493d4bed6f59332b85ca814cd5ba8bf",
+      "bytes": 12332,
+      "textHash": "1c42ddc0285b9c25135be3bf345e6a041271b784b22a6f6cab6588dab93c5980",
+      "durationSeconds": 0.768,
+      "acousticCheck": {
+        "peakDbfs": -0.578087993863386,
+        "rmsDbfs": -15.592062090285454,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a8a2c5cb-edd3-5942-8e72-d3f2fb05998b",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a8a2c5cb-edd3-5942-8e72-d3f2fb05998b.mp3",
+      "sha256": "2cdced8bf38b0cb59b157c6fb2303b631a482e4369450ed57fd635e9b9445afa",
+      "bytes": 50732,
+      "textHash": "f9237cf0cc9ddac744ca8dda0b46c5905844ff82f4aab2a8acc7bd2dcdcacb26",
+      "durationSeconds": 3.168,
+      "acousticCheck": {
+        "peakDbfs": -0.6518473518924626,
+        "rmsDbfs": -16.36662616155022,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "116b4122-2b1d-566a-8d19-b945548f5784",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/116b4122-2b1d-566a-8d19-b945548f5784.mp3",
+      "sha256": "99e7565178cef69cd2dd9bb5b8dd90c1892ae662c7d45e51baae90fb1899a9f8",
+      "bytes": 57260,
+      "textHash": "a6621768df438c50c35f8943faa04e8c02feaba1381229d0720292944a05e441",
+      "durationSeconds": 3.576,
+      "acousticCheck": {
+        "peakDbfs": -0.5646829599478295,
+        "rmsDbfs": -15.672376747751153,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "aed880ab-8d51-52c0-beef-5db1143cfde3",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/aed880ab-8d51-52c0-beef-5db1143cfde3.mp3",
+      "sha256": "1c686d9d96de99674244dc4d2fd0c6b84da399d48e41594129d83809988b446d",
+      "bytes": 62252,
+      "textHash": "3b0d20ce497557d918506f76672052cc023f612281151f3360f16a525b66975f",
+      "durationSeconds": 3.888,
+      "acousticCheck": {
+        "peakDbfs": -0.45417385857790216,
+        "rmsDbfs": -17.204739934846657,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5221e966-4355-57de-83f7-2b92cfae348e",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5221e966-4355-57de-83f7-2b92cfae348e.mp3",
+      "sha256": "e1856045beec2a6208530d9467275269c44dd0028183091107b0040512d3ddbf",
+      "bytes": 152108,
+      "textHash": "6fe19dc09b998d96ad40a5622f4634b3add877603bd2f0baa36992530979e085",
+      "durationSeconds": 9.504,
+      "acousticCheck": {
+        "peakDbfs": -0.3429825841747325,
+        "rmsDbfs": -17.575804701331535,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a163484f-791b-5661-bd18-39d5644fe9c4",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a163484f-791b-5661-bd18-39d5644fe9c4.mp3",
+      "sha256": "b6c29423052ba49a55543b89f265b66cc7dbea32df2c2498b2a2da09fd1db69e",
+      "bytes": 141740,
+      "textHash": "57978560116212c87df303e84e97ec8b633ee77f4abbbab00965c7a69a9b6fa7",
+      "durationSeconds": 8.856,
+      "acousticCheck": {
+        "peakDbfs": -0.4106949370665888,
+        "rmsDbfs": -20.22143154126095,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "56184681-141a-5e99-a311-cc4442419c10",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/56184681-141a-5e99-a311-cc4442419c10.mp3",
+      "sha256": "ef76d3a1bcd4f07d462bcd8cb3a707d3f62bf4fe43e34a06fe7cb0ccc0d39975",
+      "bytes": 169772,
+      "textHash": "6e0bd9197e63b7d713ebb6921612daffd361c3f86415e632c996c9e9894bfb52",
+      "durationSeconds": 10.608,
+      "acousticCheck": {
+        "peakDbfs": -0.5214095583950163,
+        "rmsDbfs": -17.215384496485186,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3.mp3",
+      "sha256": "bd61503757b1be70b44ecb1120583898e9c02c7261973ce26beb5c32e5421796",
+      "bytes": 39212,
+      "textHash": "f59e7a4ed324acd6be7a63946a097473b2cc3112c78f986934688077de077fe5",
+      "durationSeconds": 2.448,
+      "acousticCheck": {
+        "peakDbfs": -0.6139653021310137,
+        "rmsDbfs": -16.60826974589416,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "69080fa9-369a-5887-b02d-6538e5128341",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/69080fa9-369a-5887-b02d-6538e5128341.mp3",
+      "sha256": "348d0548ceba22226e90221992e1445b61c706046716455b36da7679d7ba9cfd",
+      "bytes": 43052,
+      "textHash": "9bb2ee6c86cc9c71532d34b0390654f65d49b14dc39b9705d55cdd7e29037552",
+      "durationSeconds": 2.688,
+      "acousticCheck": {
+        "peakDbfs": -0.6022192616822614,
+        "rmsDbfs": -16.648600310182818,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "11358108-4dd6-5536-aab1-13fbc07e0108",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/11358108-4dd6-5536-aab1-13fbc07e0108.mp3",
+      "sha256": "16a70336011e3968354fde903bacef902e0e683eb591cd759a4f14212e080269",
+      "bytes": 82988,
+      "textHash": "03be5e2042d04ee1139d83fa496c3cc0dae2dd0308be478a0a0b9f2cc155d4ae",
+      "durationSeconds": 5.184,
+      "acousticCheck": {
+        "peakDbfs": -0.524254428444805,
+        "rmsDbfs": -17.5046807840137,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e60203a7-ca02-53a2-a05e-82bc4905508a",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/e60203a7-ca02-53a2-a05e-82bc4905508a.mp3",
+      "sha256": "a6ea304f2a59db07c582e7b465247ed029fdd8b1ea2b2870deb360365896a034",
+      "bytes": 59948,
+      "textHash": "aa0464ecdd472650a6652950af6e4d9fe8fb4f2b6f363e422478e979de41da41",
+      "durationSeconds": 3.744,
+      "acousticCheck": {
+        "peakDbfs": -0.5650553497378921,
+        "rmsDbfs": -16.74286834107176,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "4ea1d40c-1b82-5c1b-9b0c-2a68def61e99",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/4ea1d40c-1b82-5c1b-9b0c-2a68def61e99.mp3",
+      "sha256": "dccf0425c85e1e78f479bde550d7660136789a513ab67ebd85220a47567692c9",
+      "bytes": 168620,
+      "textHash": "74a757f39b120b695ff82f90bda663f9db11d4bfead1ca90a5021236eeab7ef7",
+      "durationSeconds": 10.536,
+      "acousticCheck": {
+        "peakDbfs": -0.5426205850639974,
+        "rmsDbfs": -18.938161882041435,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1097019a-f68f-54f2-b74b-d7b4b6fa2baa",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1097019a-f68f-54f2-b74b-d7b4b6fa2baa.mp3",
+      "sha256": "356f5ef18aac05efa34776ee6493f2b727b78990e3f833d12ef9fb1a429590f1",
+      "bytes": 160940,
+      "textHash": "5ccb74b599ddd8484afbff846931d10fcb211776adffb76046305ca9c5625c0c",
+      "durationSeconds": 10.056,
+      "acousticCheck": {
+        "peakDbfs": -0.43456962251794395,
+        "rmsDbfs": -16.694756216416213,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9309315e-a861-52a0-8db6-bc891564ff21",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9309315e-a861-52a0-8db6-bc891564ff21.mp3",
+      "sha256": "f2352cd189b5658be59ddc85b0d564a159d0b3952766103e6f86d4084274ac96",
+      "bytes": 165932,
+      "textHash": "ce4aad3d8d0b5d759e618ba777fe3d1ca0609238cddd6be7292affd7a94f0c9c",
+      "durationSeconds": 10.368,
+      "acousticCheck": {
+        "peakDbfs": -0.5658604071568317,
+        "rmsDbfs": -17.964677362649443,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/8315fb35-d242-58af-8aaa-638a878ad478.mp3",
+      "sha256": "f8b800ad7ed7c113020902c16f29ea193bccacb4f949e0590c6b9d9f7b7211a9",
+      "bytes": 17708,
+      "textHash": "cbc471ca60092bbe6c631f02bc57399b2da3d1ae491a55a1aa960a4b2e0ac7e8",
+      "durationSeconds": 1.104,
+      "acousticCheck": {
+        "peakDbfs": -0.48070979616078374,
+        "rmsDbfs": -16.001877293255177,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8e211aa8-f8a2-5162-b016-18e306ada64a",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/8e211aa8-f8a2-5162-b016-18e306ada64a.mp3",
+      "sha256": "25f95aab2d611f71099f18849da88bd911b3f8e632d8425562a2928bd4074601",
+      "bytes": 64940,
+      "textHash": "0e7409fcf0e98cadb8e0dafd2a51b492ff4fa5fb0fe5cf3942aa32d66760391b",
+      "durationSeconds": 4.056,
+      "acousticCheck": {
+        "peakDbfs": -0.5119441820390995,
+        "rmsDbfs": -16.43481514947792,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7a7788ac-7994-508c-92fb-2bd137a0d6ea",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7a7788ac-7994-508c-92fb-2bd137a0d6ea.mp3",
+      "sha256": "da2fcb34121894507c0a8bc37b7be33a240a116fd6f1915bb201164b88243942",
+      "bytes": 89132,
+      "textHash": "fecf90853628708e1d8935f802581decfcc14a8dd039d636877baaa18ea35321",
+      "durationSeconds": 5.568,
+      "acousticCheck": {
+        "peakDbfs": -0.5455402189935842,
+        "rmsDbfs": -18.814982564490307,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c390266d-958c-59f9-aeb3-59611afdff71",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c390266d-958c-59f9-aeb3-59611afdff71.mp3",
+      "sha256": "af0c0c148aca14c24ba65193595a5f2ebe9dfcef9634bcf0d4024c433ad9fef4",
+      "bytes": 81452,
+      "textHash": "2501df2807cd5527e1885a8f916a7157407f8e5b76fc8afa946c3d11b67ff0dc",
+      "durationSeconds": 5.088,
+      "acousticCheck": {
+        "peakDbfs": -0.584984901466275,
+        "rmsDbfs": -16.986903201659935,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "216e60c4-d2b7-5988-b283-471644078b7d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/216e60c4-d2b7-5988-b283-471644078b7d.mp3",
+      "sha256": "49b8d493014e713d1d17250419e4ea02c807f304e804bab39dd3fa3e04d4e98e",
+      "bytes": 86828,
+      "textHash": "309c0646952ecf6ee31c07bec3a3f5cc66aac3e0b092a2a3bb388b2decc94e5e",
+      "durationSeconds": 5.424,
+      "acousticCheck": {
+        "peakDbfs": -0.513074957136988,
+        "rmsDbfs": -18.782055352436753,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9eb745f7-39a6-53a8-9bd1-672951cbf47d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9eb745f7-39a6-53a8-9bd1-672951cbf47d.mp3",
+      "sha256": "0ce0bc857b4075283ee078ce4d4a34757672bada2ab6fd7391b8e86a6a079981",
+      "bytes": 92972,
+      "textHash": "c4bc2b5ff878834076696516997e2aed7f56593597a694abcb4e46059bbe9528",
+      "durationSeconds": 5.808,
+      "acousticCheck": {
+        "peakDbfs": -0.6069815064425876,
+        "rmsDbfs": -17.030273516597102,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "899c01ba-a175-50b4-9bb6-9ca1e000279c",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/899c01ba-a175-50b4-9bb6-9ca1e000279c.mp3",
+      "sha256": "936334a55335436cf760fe91253417170977bd7fda49173c5970c52775383f18",
+      "bytes": 99500,
+      "textHash": "60f68758d0dc725e118ce76ff00c3edd9b43890ce8ee1958d961aa2651e13a5d",
+      "durationSeconds": 6.216,
+      "acousticCheck": {
+        "peakDbfs": -0.47949623657987905,
+        "rmsDbfs": -15.164050399537095,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "35633ecf-c967-5b26-aa51-523165a4c981",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/35633ecf-c967-5b26-aa51-523165a4c981.mp3",
+      "sha256": "fee09eeb1e2eff7d2944d1970b69d95f7f7c6bd74dba4aa0ee4b7b57d9acadd8",
+      "bytes": 121388,
+      "textHash": "c15e12fcaa9c1eb9bfd246410fb508eef240cbad46c259d225aa7449c1f87a18",
+      "durationSeconds": 7.584,
+      "acousticCheck": {
+        "peakDbfs": -0.340022559887495,
+        "rmsDbfs": -18.59791652064123,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9a84f56c-34ed-5e6c-958f-b4c0df71809d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9a84f56c-34ed-5e6c-958f-b4c0df71809d.mp3",
+      "sha256": "e072c1a8ed6ded9f680e157b5af08ded5fd5a24b9f3b28d905888dc033d6c645",
+      "bytes": 122540,
+      "textHash": "1e1c7fda667f3522889702b81f0640436485a96e6c8ed8e0e8f36b5c289f3162",
+      "durationSeconds": 7.656,
+      "acousticCheck": {
+        "peakDbfs": -1.6672282472558788,
+        "rmsDbfs": -18.68768404528889,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9c275919-233f-5694-8048-3fb1be34cc78",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9c275919-233f-5694-8048-3fb1be34cc78.mp3",
+      "sha256": "7dd08deeb95718e64316a7c8708416c4adaef4d9448c66df6caf63314821093b",
+      "bytes": 134060,
+      "textHash": "bf63eae2f686fb25e952baee8179278b804a8043858d13e385e28cddfba292df",
+      "durationSeconds": 8.376,
+      "acousticCheck": {
+        "peakDbfs": -0.42169713140286885,
+        "rmsDbfs": -17.01012732787605,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e6c676fe-5ce7-5676-9f82-666b505f29ae",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/e6c676fe-5ce7-5676-9f82-666b505f29ae.mp3",
+      "sha256": "de8b421dc655e3f627bd86f5a2aa2da99d1b7788782fe9c335d014e2036ee6a3",
+      "bytes": 119852,
+      "textHash": "24bc1263957c205938ab0ab3866a812618419ed71998f9bcffbdd3689632e8cc",
+      "durationSeconds": 7.488,
+      "acousticCheck": {
+        "peakDbfs": -0.45636872455764943,
+        "rmsDbfs": -16.467873026925936,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "521bea4b-a807-5eb4-a6f8-bc22a7ada672",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/521bea4b-a807-5eb4-a6f8-bc22a7ada672.mp3",
+      "sha256": "8a44846b50db05dd8cbcff029d602c3fb0a4e4c0438a5bd0fce9c3a7ab484154",
+      "bytes": 114860,
+      "textHash": "850ca2b78089b2dca36b0437d50cd9fb13317edfd77a551096a5543a60270da2",
+      "durationSeconds": 7.176,
+      "acousticCheck": {
+        "peakDbfs": -0.39835747814375994,
+        "rmsDbfs": -17.447296234064822,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3ff326ac-1801-5401-ae5a-2b9802e938e9",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3ff326ac-1801-5401-ae5a-2b9802e938e9.mp3",
+      "sha256": "c3c5a1705455f8a7942c1884c043ab89bbb5a74b8e746bf4d7a889383300c3b5",
+      "bytes": 149420,
+      "textHash": "1fadd47ea5d80a7625bc335af5fbd8a5b6c04dd81f33aefff40227d9f2b2c99d",
+      "durationSeconds": 9.336,
+      "acousticCheck": {
+        "peakDbfs": -0.5384106985515116,
+        "rmsDbfs": -16.6937465042303,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5c277e2b-e0a3-5158-8b7d-dc029bb99e39",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5c277e2b-e0a3-5158-8b7d-dc029bb99e39.mp3",
+      "sha256": "59135619640cb2939d2614ba39f9b862988511c1c7e88b9f35baf92fb3625dc1",
+      "bytes": 199340,
+      "textHash": "4ff2655c3573091dcc0a142baf4c5a81e9f6b0ec9e9024bc7ebb2af6250cf921",
+      "durationSeconds": 12.456,
+      "acousticCheck": {
+        "peakDbfs": -0.6315579662192367,
+        "rmsDbfs": -16.182682371233177,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e94b2ba2-d3ee-5626-9a9e-642a136d770c",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/e94b2ba2-d3ee-5626-9a9e-642a136d770c.mp3",
+      "sha256": "b65362c2010e6498efecadd01a31be3b520db4b96fcf0fa10472aca0ef8b29f3",
+      "bytes": 163628,
+      "textHash": "2e50cf5a3f1d3cf4ebf348cc13650be4954f20555da034138600f17933c1749b",
+      "durationSeconds": 10.224,
+      "acousticCheck": {
+        "peakDbfs": -0.47185437967220084,
+        "rmsDbfs": -18.70032949632423,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "36ee3fd5-dcfc-5d8d-8004-33647bdd4496",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/36ee3fd5-dcfc-5d8d-8004-33647bdd4496.mp3",
+      "sha256": "a068e2ff51346c51115ebb7d66376de3d16ae92fbf1ccdafda0629c5b7434d24",
+      "bytes": 217388,
+      "textHash": "7e7101ab9c863b1ad34b6e99f40d460e64184338fdc439c600f396979c4cc359",
+      "durationSeconds": 13.584,
+      "acousticCheck": {
+        "peakDbfs": -0.5925972854094046,
+        "rmsDbfs": -19.376156294969192,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5cfec1b4-ffd9-5eee-a091-03050d3a2921.mp3",
+      "sha256": "0cf307e508db184075cf47999993902f26af654b749416ed7a5d6a553a91be5a",
+      "bytes": 15020,
+      "textHash": "021624ecb7e008142371f6a5e8ba464675cef73e906528fd20314900f980bba7",
+      "durationSeconds": 0.936,
+      "acousticCheck": {
+        "peakDbfs": -0.9643279520174052,
+        "rmsDbfs": -14.794242541058985,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ae399b79-e871-57f3-bf7c-c04c54dbf950",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ae399b79-e871-57f3-bf7c-c04c54dbf950.mp3",
+      "sha256": "8fe194aff5fed2eb1ecbc1c1c3090e04a4acf1bae85f2821d322609b73818924",
+      "bytes": 59948,
+      "textHash": "d2eb7942f5204b6796a18d3dcfe68c61488c97e1cd473a91ad032af657400976",
+      "durationSeconds": 3.744,
+      "acousticCheck": {
+        "peakDbfs": -0.5002655586509094,
+        "rmsDbfs": -17.396003128225928,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "762af583-556b-5111-9421-0c5387334f98",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/762af583-556b-5111-9421-0c5387334f98.mp3",
+      "sha256": "bc345732db97e556c1742209f6bdbafcb7b41f3ca44ad326425ce995c721817e",
+      "bytes": 58412,
+      "textHash": "3fc1b6c52a7893d07fae9424052db41f6f1f60f54baf8f9c30e0b2af51bce287",
+      "durationSeconds": 3.648,
+      "acousticCheck": {
+        "peakDbfs": -0.46173246668323903,
+        "rmsDbfs": -15.140101800650282,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f017e92a-a6f6-59b3-b0a2-e054aaac2673",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/f017e92a-a6f6-59b3-b0a2-e054aaac2673.mp3",
+      "sha256": "bd040fcc3917c43f9a146fe7df23cd176c63d2d874aa5fcc7087d0da37283184",
+      "bytes": 69932,
+      "textHash": "03f8ca699a1f96297dd5812202e73ccc07024a1ff2a31ced335feb834a72438a",
+      "durationSeconds": 4.368,
+      "acousticCheck": {
+        "peakDbfs": -0.5368365786242477,
+        "rmsDbfs": -16.53135933660529,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "adce8e5e-1682-537f-ae3d-db1a20e2ed47",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/adce8e5e-1682-537f-ae3d-db1a20e2ed47.mp3",
+      "sha256": "780d78b678c09400cab9b5bc7246f38ee6405d57c03b96c78fadb55b32ece0d0",
+      "bytes": 172460,
+      "textHash": "f0f2b2607aa004d5c25e883bb22ab4b8d90a17d81e437d27418f769c4b7c53ed",
+      "durationSeconds": 10.776,
+      "acousticCheck": {
+        "peakDbfs": -0.5906431361669918,
+        "rmsDbfs": -18.194360727025533,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "46939086-919e-534d-8f3b-9b8cec6083d2",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/46939086-919e-534d-8f3b-9b8cec6083d2.mp3",
+      "sha256": "a4f56b3ff6bf48e610a265a7cadc3c277b7af58a437bc2b7248b61ada1ba5ec6",
+      "bytes": 140588,
+      "textHash": "c4dec10d57e1a74231e1527df071f088514f2c1dc755cb5c0c8fef6539c601c7",
+      "durationSeconds": 8.784,
+      "acousticCheck": {
+        "peakDbfs": -0.5033832972469309,
+        "rmsDbfs": -19.795351058471883,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ef3d4bec-a813-5a32-adfe-47a5de6b739e",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ef3d4bec-a813-5a32-adfe-47a5de6b739e.mp3",
+      "sha256": "a22113411d16e7b9d59b7c9ecf123c0df6a8108eed1edb2cced656d6ac1334c7",
+      "bytes": 181292,
+      "textHash": "87d4ebb6f69dd2fc9b62c183a9ed71012e9bdbb0617536ee22a9034f49bebd04",
+      "durationSeconds": 11.328,
+      "acousticCheck": {
+        "peakDbfs": -0.5267564187211736,
+        "rmsDbfs": -18.85430812501366,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3.mp3",
+      "sha256": "17b0c4b238315e47c585355ed5abc1d01b6896fc0775a4af78a5b6b6d1cde132",
+      "bytes": 61100,
+      "textHash": "2a1073a6e67f0e5f09a5957c659503c690efe7272be8313df872556a9a684d8c",
+      "durationSeconds": 3.816,
+      "acousticCheck": {
+        "peakDbfs": -0.632783493518168,
+        "rmsDbfs": -19.15351456465348,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "299a090a-6cd3-57b7-8e06-13be3e167bcf",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/299a090a-6cd3-57b7-8e06-13be3e167bcf.mp3",
+      "sha256": "d303aa741f7a4793a919bb9eb8231342c5f6dde74fa36189d7ce30886d23de8b",
+      "bytes": 49580,
+      "textHash": "79b28ec63950af15a3cb3192b138e76413f8ad4d3d631cfbcc78297e7d78398e",
+      "durationSeconds": 3.096,
+      "acousticCheck": {
+        "peakDbfs": -0.4519479155273741,
+        "rmsDbfs": -17.96240868140494,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "69eb37b1-e65f-5a80-a74f-6a0010245db0",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/69eb37b1-e65f-5a80-a74f-6a0010245db0.mp3",
+      "sha256": "d5517f543823cabb049640789ba04e2c0af1c1d64c1b156723ee61c94451f2ae",
+      "bytes": 35372,
+      "textHash": "d33707ae4460207f1ee1fe2fe4850617341a4ef962bf8b2833fb4f6db9d549d5",
+      "durationSeconds": 2.208,
+      "acousticCheck": {
+        "peakDbfs": -1.2696638056875358,
+        "rmsDbfs": -17.240868716263577,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "069dd985-0294-545b-a7a1-5a5920ccc048",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/069dd985-0294-545b-a7a1-5a5920ccc048.mp3",
+      "sha256": "a9e4db6bab78c32dd88a8b78b37e73764e5ca37e016ee5423d16d01b92e3052c",
+      "bytes": 40748,
+      "textHash": "caf34d13d5958b46589d6017e59d4bc5daa96e54d8810372a2c17750f07e8d88",
+      "durationSeconds": 2.544,
+      "acousticCheck": {
+        "peakDbfs": -0.5064341035529076,
+        "rmsDbfs": -14.80895046836389,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "077ad4ce-14a6-5f03-8d23-896b7b4ca174",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/077ad4ce-14a6-5f03-8d23-896b7b4ca174.mp3",
+      "sha256": "f54ea0e5eee4f29731c453944730f8af295e9f83d36f36fef88d84d9fbf239c6",
+      "bytes": 173612,
+      "textHash": "ebaf2340b7522b91cc0b630500d5ed16da28de986021490de2fe5c4205d07807",
+      "durationSeconds": 10.848,
+      "acousticCheck": {
+        "peakDbfs": -0.4732948481561383,
+        "rmsDbfs": -15.44906016021178,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c82bf4ed-fa7a-57ec-ad67-f4758ebe46b7",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c82bf4ed-fa7a-57ec-ad67-f4758ebe46b7.mp3",
+      "sha256": "477d6caae9164dfae3eee8bf6bcd2c5473c0dae645bafd31e4725f1c862862f6",
+      "bytes": 172460,
+      "textHash": "1ed7b70b88ad6a36f99019ec258afaad87a619fcee807fe4e4978dac3663ca9a",
+      "durationSeconds": 10.776,
+      "acousticCheck": {
+        "peakDbfs": -0.4915792037413447,
+        "rmsDbfs": -16.358264832821085,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "78ce0967-9c48-5901-8c21-41bf8cc13e14",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/78ce0967-9c48-5901-8c21-41bf8cc13e14.mp3",
+      "sha256": "9b4b4810a23751e57867875488c7f77e83ab46f1becf4e6c94d60d2572a2d130",
+      "bytes": 188972,
+      "textHash": "7fefde83ce309b752e54b6540f8094a4608db2f5809d42c86b4795b254a3f5f5",
+      "durationSeconds": 11.808,
+      "acousticCheck": {
+        "peakDbfs": -0.7589773394898354,
+        "rmsDbfs": -18.857534063678983,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/2ab3adfa-132e-53aa-8b51-8840f3b24192.mp3",
+      "sha256": "d4c90aa5ce7c1d103c232b44b66255f3fb74ef2d1df70fe26c3f6fc8bb547cbc",
+      "bytes": 16172,
+      "textHash": "9efa077f044e7a779c655f8d8e8760cacd16ce2347b6aa10e45b18fb5325fdd6",
+      "durationSeconds": 1.008,
+      "acousticCheck": {
+        "peakDbfs": -0.37342747987631897,
+        "rmsDbfs": -14.79082065187433,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "70b9ec14-76c6-5a52-876b-7dbfaa179270",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/70b9ec14-76c6-5a52-876b-7dbfaa179270.mp3",
+      "sha256": "da9e181c223fab15e1f9ef4f6eba968c51312655bdd21281925dfb34882ea713",
+      "bytes": 75308,
+      "textHash": "15bec856ea899fc7e7daf7c3eb171fbe74bbd3995befaf31a6aa37adf068964c",
+      "durationSeconds": 4.704,
+      "acousticCheck": {
+        "peakDbfs": -0.43983168857322774,
+        "rmsDbfs": -15.922483680862092,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b3807847-8bbe-5ec8-88d0-b8656df91eb7",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b3807847-8bbe-5ec8-88d0-b8656df91eb7.mp3",
+      "sha256": "8606624fea8e2395e20f7a6963e7e617fc7b83fdf00495c3885b44379e89ca5a",
+      "bytes": 69932,
+      "textHash": "f7c213a1ed6b3e16852cebbf4143a087e0b8dff50ef08fa59dc2e9138a069a74",
+      "durationSeconds": 4.368,
+      "acousticCheck": {
+        "peakDbfs": -0.5674856680546438,
+        "rmsDbfs": -16.829404752890554,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a5aea325-d4d7-5ab2-8f2c-171e8b0e5f49",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a5aea325-d4d7-5ab2-8f2c-171e8b0e5f49.mp3",
+      "sha256": "185bad591b91edb35d878927ebc0edea104bb1bbaa159cf7656fce0460777c40",
+      "bytes": 85292,
+      "textHash": "34246b1b99f33228df940c23b24bbe5a60727c1a9517e2358d28bdbae6dcfc0d",
+      "durationSeconds": 5.328,
+      "acousticCheck": {
+        "peakDbfs": -0.4535154523749294,
+        "rmsDbfs": -16.7360439101857,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fb94bb2e-806e-53cd-a0e6-ff9e94895cac",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/fb94bb2e-806e-53cd-a0e6-ff9e94895cac.mp3",
+      "sha256": "18a30232be32ab473d34c9cef0f6641ea5482d2695cf52f912d1bcfd8172908f",
+      "bytes": 69932,
+      "textHash": "1c86e4c09c0a1b4fcad424d601348f4a9a058736ed0f7e41d6ea089486809a0d",
+      "durationSeconds": 4.368,
+      "acousticCheck": {
+        "peakDbfs": -0.9617418192109413,
+        "rmsDbfs": -17.070787251667902,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "109ada82-9199-58f2-b372-aed930dcb91d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/109ada82-9199-58f2-b372-aed930dcb91d.mp3",
+      "sha256": "d41109e8e450fd7a35a1b469903cb21f9df784657add4f39224c40264b94c14c",
+      "bytes": 103340,
+      "textHash": "da278ca57425e426907b890831d36e0947bd7e319c8bb04c7279820ac26e713c",
+      "durationSeconds": 6.456,
+      "acousticCheck": {
+        "peakDbfs": -0.682692876367479,
+        "rmsDbfs": -16.949046835321354,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5a9f55b0-79f5-5f04-993d-bb144f158824",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5a9f55b0-79f5-5f04-993d-bb144f158824.mp3",
+      "sha256": "c681c37d1af1553a517b1a153f2662ef7adf104b9c2254bc99620b679000ff4c",
+      "bytes": 116012,
+      "textHash": "3017946cc3814a4204e36464bbc796319237cfbf2a94a8ae011e0bafc2d0c027",
+      "durationSeconds": 7.248,
+      "acousticCheck": {
+        "peakDbfs": -0.4415157874356366,
+        "rmsDbfs": -18.05520483598227,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b818af8c-1823-582c-a7c2-3b1750d4281e",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b818af8c-1823-582c-a7c2-3b1750d4281e.mp3",
+      "sha256": "6958d3de36ca08907b4d54b69b3ae3521667094173f4e5c31cc4c04411fa6d6c",
+      "bytes": 196652,
+      "textHash": "064a55db074285d4cdb17ab86725fdfcef45d36dc8b13e70d60860a49a8691f4",
+      "durationSeconds": 12.288,
+      "acousticCheck": {
+        "peakDbfs": -0.7888331171924162,
+        "rmsDbfs": -16.738585552843418,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d734b59a-5b6b-5329-8e6d-c057be1d2396",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d734b59a-5b6b-5329-8e6d-c057be1d2396.mp3",
+      "sha256": "4c5a3c0b908d393098a52ee11abe69e8a9278dc33cac1a19a474829772e901dc",
+      "bytes": 157100,
+      "textHash": "4dcbd0ff693d0c704c2501c9d395e7da055c93026d3454591d5977cb805366b3",
+      "durationSeconds": 9.816,
+      "acousticCheck": {
+        "peakDbfs": -0.6209196842213872,
+        "rmsDbfs": -16.633413977942904,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ba426068-7889-5964-b07a-97f2e8ad4e80",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ba426068-7889-5964-b07a-97f2e8ad4e80.mp3",
+      "sha256": "fdcd15b010b1a895a0809a3a3c0c09a7b3c8be27f0e671a3ee78766d53a2d7fc",
+      "bytes": 208172,
+      "textHash": "a39f0cd29df2afd4e38272b1dfe304e709ae934ede453e2335bdb2452bc26423",
+      "durationSeconds": 13.008,
+      "acousticCheck": {
+        "peakDbfs": -0.44550838439935736,
+        "rmsDbfs": -15.438834722088794,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/028397a3-6eb3-5491-8662-0b0908345941.mp3",
+      "sha256": "df8b2d9a0933c7e163190547833e80b081cb27c391534babf61153dc7c86bf9d",
+      "bytes": 16172,
+      "textHash": "f78b1bbdaafa735f1912927e79c9e160bcf40c8a86c9c1507bb4427fdfd9f452",
+      "durationSeconds": 1.008,
+      "acousticCheck": {
+        "peakDbfs": -0.5025697469873138,
+        "rmsDbfs": -14.050848294347615,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5ff20a69-ca44-5c91-910d-fb50bad6d0fe",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5ff20a69-ca44-5c91-910d-fb50bad6d0fe.mp3",
+      "sha256": "d490d01eb9017e8d8546f7f18e5c59f316591fd25da6fb92a9a599c2d76919cb",
+      "bytes": 36908,
+      "textHash": "93f82367cd353cdc16700be75cc780b31692dfc459647726ff067029959adbf5",
+      "durationSeconds": 2.304,
+      "acousticCheck": {
+        "peakDbfs": -0.5508754812283466,
+        "rmsDbfs": -17.88887459745609,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5e942f7e-cd3c-5baa-bfc3-b5a60fa6b08b",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5e942f7e-cd3c-5baa-bfc3-b5a60fa6b08b.mp3",
+      "sha256": "94c053ed97895dd768946b65ddd7aeed615049cd313ca8991e255c322afce555",
+      "bytes": 46892,
+      "textHash": "525257059aa2e485609d907b084c0bac4c8d4ea84bcd83ad47297e15ce583e29",
+      "durationSeconds": 2.928,
+      "acousticCheck": {
+        "peakDbfs": -0.4128592970784294,
+        "rmsDbfs": -17.59747867781482,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "44c2b5ed-2573-5bbd-b5e4-c2dc4d1147e7",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/44c2b5ed-2573-5bbd-b5e4-c2dc4d1147e7.mp3",
+      "sha256": "b7c7dd38287064bd5e8aab5841275c463ccac7a75f1448dda4db5783d2defd77",
+      "bytes": 45740,
+      "textHash": "2e9b013201e1e5667f274f52f643a84040d6a467c627be37ff66e0825a4b7452",
+      "durationSeconds": 2.856,
+      "acousticCheck": {
+        "peakDbfs": -0.5224750383860737,
+        "rmsDbfs": -15.255008096186497,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ff3cb642-dc67-5715-b434-df8eef001992",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ff3cb642-dc67-5715-b434-df8eef001992.mp3",
+      "sha256": "738a6f6a3e9ddfd387112c78dd3af255408f6c600ac10a4cb9eafccd057fd279",
+      "bytes": 190508,
+      "textHash": "bc6ed28030b14e395f193d26bcc601f1f837bdf8d0e265250406dcd03bb776b8",
+      "durationSeconds": 11.904,
+      "acousticCheck": {
+        "peakDbfs": -0.5740218336005689,
+        "rmsDbfs": -18.52484339215596,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b043e1bc-8436-532a-899d-21729faa4d8e",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b043e1bc-8436-532a-899d-21729faa4d8e.mp3",
+      "sha256": "d5e1cc69340f981ddbfff290aa100b54cd63b98a90c337dc1d7aac2310985f1a",
+      "bytes": 181292,
+      "textHash": "f75e95b4ad3bfd6318bb19798eff3ed9596ac75e54cb265b5a40c29df724e47f",
+      "durationSeconds": 11.328,
+      "acousticCheck": {
+        "peakDbfs": -0.5513736062853865,
+        "rmsDbfs": -19.08371392449834,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2d452837-20c7-52d0-9f9f-a18d12e91f07",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/2d452837-20c7-52d0-9f9f-a18d12e91f07.mp3",
+      "sha256": "4a66dd80816598f5bc1c93bc9f0b00d46e71e6bec42c7a1069beeda8d9b31249",
+      "bytes": 222380,
+      "textHash": "e6951e763680adf023bcf600851e91601e98d169ab9088fc53dab4c41f89a04f",
+      "durationSeconds": 13.896,
+      "acousticCheck": {
+        "peakDbfs": -0.38961373878084693,
+        "rmsDbfs": -19.875792533443796,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/22ed6dc4-fb2b-5f32-b2a4-dc246001483f.mp3",
+      "sha256": "0f82d46983dc840a48e9316f94e5207ccefe1f015c6e94a9f5be4ad1d47f6100",
+      "bytes": 18860,
+      "textHash": "26e466582de83799f38b6b572a723bb65b80a7d37b6fda00a2fbb4c5430768ae",
+      "durationSeconds": 1.176,
+      "acousticCheck": {
+        "peakDbfs": -1.448642653022628,
+        "rmsDbfs": -15.892797273631327,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "05108125-5ed5-5a5a-ae41-f0aa3be805d6",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/05108125-5ed5-5a5a-ae41-f0aa3be805d6.mp3",
+      "sha256": "8c576fa0e3fc44a311a25bd91d099fd462f73c3d0b90829cf6f855ef3785daf0",
+      "bytes": 58412,
+      "textHash": "c467575e94be2f08011ad12380177c77fe164f9ff91ce3f133515d1dddafc45d",
+      "durationSeconds": 3.648,
+      "acousticCheck": {
+        "peakDbfs": -0.43697839835037894,
+        "rmsDbfs": -18.87643949175892,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "be562ad9-adba-5cf3-8878-13feab5212fa",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/be562ad9-adba-5cf3-8878-13feab5212fa.mp3",
+      "sha256": "3d1abe67c6f38d2248957340fa204e9cebc6f31e12ed5bcbf220c3a310084484",
+      "bytes": 56108,
+      "textHash": "2b25502432d1f18b75d89b61f245af0abc43e4a2586be5a02b03bc822ca8d82e",
+      "durationSeconds": 3.504,
+      "acousticCheck": {
+        "peakDbfs": -0.5670043027158432,
+        "rmsDbfs": -19.306247583798772,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0dd537b4-a042-5a3f-bbb3-d8cbfbc9259b",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0dd537b4-a042-5a3f-bbb3-d8cbfbc9259b.mp3",
+      "sha256": "430b8de71d1dfca89182831fdef244b30e6d2b48401cc4be3e7a056fd163e55e",
+      "bytes": 59948,
+      "textHash": "51bb2009ab8273f23bfb7aec9df007756aefee03731817ada321e216fe343379",
+      "durationSeconds": 3.744,
+      "acousticCheck": {
+        "peakDbfs": -0.4319514829518353,
+        "rmsDbfs": -19.591821841151045,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "12e5d19a-d52e-5f27-b32e-4d1f9b57c2b7",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/12e5d19a-d52e-5f27-b32e-4d1f9b57c2b7.mp3",
+      "sha256": "6dd047e20b2345dbc07d8e757472370b1b80c539d4b6ecb3414ab264e938b14a",
+      "bytes": 162092,
+      "textHash": "45aa4c2c40c955642e9889848c48e058cb64208569a12d42e5e6091b4e0bf94c",
+      "durationSeconds": 10.128,
+      "acousticCheck": {
+        "peakDbfs": -0.5219400829201912,
+        "rmsDbfs": -18.165545117308245,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0dfbc84d-900e-57c3-9942-cdc71b6b7523",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0dfbc84d-900e-57c3-9942-cdc71b6b7523.mp3",
+      "sha256": "d6942876d78a4e9d143b093f8f1a7c151833b4b949c11e6f1611acb39710e2ae",
+      "bytes": 200492,
+      "textHash": "7104f9226996d232daceeedb7b83517b0a7ff9a4e58fc2a32792f5c91f3bbf58",
+      "durationSeconds": 12.528,
+      "acousticCheck": {
+        "peakDbfs": -0.43385609989787494,
+        "rmsDbfs": -20.21458862500471,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "118162fa-1ab6-5a1c-9bbe-31ef25e8fda1",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/118162fa-1ab6-5a1c-9bbe-31ef25e8fda1.mp3",
+      "sha256": "6a9d11841cea2bf90fbff4fad77f7f18d9091c0802744ac601a628d803d00c6e",
+      "bytes": 181292,
+      "textHash": "d685696652d75b8231d881ee76d96897c00a75bfca364e4f982f5ab19cfe1c6e",
+      "durationSeconds": 11.328,
+      "acousticCheck": {
+        "peakDbfs": -0.5360617405264099,
+        "rmsDbfs": -17.980037554534725,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/54daab02-3e05-5bc6-b34f-d92a5e82f47d.mp3",
+      "sha256": "690797b066ed50b0923121722244626bef066a24e9ea3920793716c674ab6a23",
+      "bytes": 17708,
+      "textHash": "c3bca14c650063bb88e5a82f757c11defaf4ea06c18368c9c9b70c5d77933dd3",
+      "durationSeconds": 1.104,
+      "acousticCheck": {
+        "peakDbfs": -0.4663658424557624,
+        "rmsDbfs": -14.599624621148106,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fbd8c619-a4dc-52a5-8a84-c7637a5e7893",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/fbd8c619-a4dc-52a5-8a84-c7637a5e7893.mp3",
+      "sha256": "817b9e979baa02697a6b02dcd9e5325ac74d5c6da60de46cf7f6ce9a9b739ea3",
+      "bytes": 81452,
+      "textHash": "550399634389fd8cbae40676262a82e9722c0b98f4bfaa59b71270f6ac864a04",
+      "durationSeconds": 5.088,
+      "acousticCheck": {
+        "peakDbfs": -0.5005715784589364,
+        "rmsDbfs": -15.85277476562432,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e6ccd8b5-b498-5386-af38-eb08d2028fbf",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/e6ccd8b5-b498-5386-af38-eb08d2028fbf.mp3",
+      "sha256": "1a0895232f95a18ecc08009fd5845cd69a8e1e9b69d2ae2c78e861bf5f410527",
+      "bytes": 76460,
+      "textHash": "082879cb7460c3ca29c1ad5a25495f1858a24d928452161ac6761123ce42d4b5",
+      "durationSeconds": 4.776,
+      "acousticCheck": {
+        "peakDbfs": -0.700425999499774,
+        "rmsDbfs": -16.17038075692218,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f75bafb5-eb43-5d67-8cd6-18ece7cc79b5",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/f75bafb5-eb43-5d67-8cd6-18ece7cc79b5.mp3",
+      "sha256": "cf7770efdef725aa13e36d2b913a22ad1dbc2da8ecc2ff23862680eadabba569",
+      "bytes": 75308,
+      "textHash": "c6d43c51b7b4e8391d5bfda8c6a7f88a4acd11a8d561ed3db0f45469b4bf2c53",
+      "durationSeconds": 4.704,
+      "acousticCheck": {
+        "peakDbfs": -0.4264744999349595,
+        "rmsDbfs": -19.596007540852845,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5cb6c77f-81e1-5ac1-bd54-3201654ea7a2",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5cb6c77f-81e1-5ac1-bd54-3201654ea7a2.mp3",
+      "sha256": "48e104b3de124ad9e33f7b7bf24ab99754979955fae08754bbba87c5ae54eefb",
+      "bytes": 130220,
+      "textHash": "eeb1c4517d49b6de87002ca7fda10b1fe852b5ac1f5dc920adae7dacf6c82b91",
+      "durationSeconds": 8.136,
+      "acousticCheck": {
+        "peakDbfs": -0.5180237611019936,
+        "rmsDbfs": -17.65591980549131,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "69cabe93-e326-5a79-ae7f-37551842fcbf",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/69cabe93-e326-5a79-ae7f-37551842fcbf.mp3",
+      "sha256": "bbbd9243c947e2e1c376998725a25fe920ae2d9c04630a36b71303572398dd57",
+      "bytes": 122540,
+      "textHash": "a65faaa2010887859c8aca6331b4efcfb32944b39d7cd0ddd4fa27bf79ed7b7d",
+      "durationSeconds": 7.656,
+      "acousticCheck": {
+        "peakDbfs": -0.9610351192939894,
+        "rmsDbfs": -16.99857293862077,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "926dd79e-17f7-56e7-a7dd-b77a92182263",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/926dd79e-17f7-56e7-a7dd-b77a92182263.mp3",
+      "sha256": "335844df501aae11168acb43166f704e1abcb12aba56624ca26ee75a17a48f18",
+      "bytes": 154412,
+      "textHash": "f5454cca77e113dbfc493388ab721a19b3607feffbe5b255b7a2edc7a11d7256",
+      "durationSeconds": 9.648,
+      "acousticCheck": {
+        "peakDbfs": -0.49472835335928456,
+        "rmsDbfs": -17.053421706817495,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d3df4812-78a5-59b2-ac81-adb2d6f8d5e6.mp3",
+      "sha256": "7d1e3ed11bb3fc16308acd8e254c59dcf16e91ad245e85f743bb6c42c83b771a",
+      "bytes": 20012,
+      "textHash": "47edce64a7b2bdebf8de8cf4cf4d78f93af7d190afb693d21560b3221f8cf188",
+      "durationSeconds": 1.248,
+      "acousticCheck": {
+        "peakDbfs": -0.5369527827640971,
+        "rmsDbfs": -17.194884577811255,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7f4737ae-445f-5443-b0ef-71e6a810ab80",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7f4737ae-445f-5443-b0ef-71e6a810ab80.mp3",
+      "sha256": "64f63bcbee1f1ea3ba911d7777f5044c982e18afeb2209ce293a3d3636a099ab",
+      "bytes": 75308,
+      "textHash": "e54d0468a2f4f35fc314645df895915ea44f6514319573bec8ee29883f1f4b25",
+      "durationSeconds": 4.704,
+      "acousticCheck": {
+        "peakDbfs": -0.567357448733308,
+        "rmsDbfs": -16.9712141290292,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fda852b2-4523-5eb2-9aef-d58116efb996",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/fda852b2-4523-5eb2-9aef-d58116efb996.mp3",
+      "sha256": "949dab30b7fe3a03eddf43c5672f06a4c644901ff0a0ad272c96362348455074",
+      "bytes": 95660,
+      "textHash": "53b77a54bc4a637b5adcfb82f41810a03b5528cfdcfe3eaa6d5e568de395396c",
+      "durationSeconds": 5.976,
+      "acousticCheck": {
+        "peakDbfs": -0.5162566353319001,
+        "rmsDbfs": -18.63653454549951,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9954a6d9-e66b-5c05-bdac-70bddb76e2cc",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9954a6d9-e66b-5c05-bdac-70bddb76e2cc.mp3",
+      "sha256": "28d0b520a0ede4416070581afcef8c3f15c7d832819187c46d737095e2c778c1",
+      "bytes": 67628,
+      "textHash": "06efa1d69b95593165a69a70fc3c3502493e72e657a8b717f54133edacfc3636",
+      "durationSeconds": 4.224,
+      "acousticCheck": {
+        "peakDbfs": -0.5459955873555462,
+        "rmsDbfs": -17.364818057135007,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "036941fb-13f8-53b5-a608-62fbbc33fba7",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/036941fb-13f8-53b5-a608-62fbbc33fba7.mp3",
+      "sha256": "3f10a2c3ca35ab0ffd24ef5a49f12b3945fb04dd560e29950f0f28e4395587ae",
+      "bytes": 100652,
+      "textHash": "2655fc7e5ad24bdf122141f86fc30086bac9295ab724a498d8c9b3226aa07dc7",
+      "durationSeconds": 6.288,
+      "acousticCheck": {
+        "peakDbfs": -0.5238194449869579,
+        "rmsDbfs": -18.385341244475836,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7cfa203e-0ef0-525e-a3c6-b01d08eaa6de",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7cfa203e-0ef0-525e-a3c6-b01d08eaa6de.mp3",
+      "sha256": "c1bb15b670d29e2604c488568567b83485df07bd4edc486c7f6655976c0e3881",
+      "bytes": 100652,
+      "textHash": "276540645a9cc0b0c9acdd99c61b1d03c6cbf4c287d169f48f7f7bd207487032",
+      "durationSeconds": 6.288,
+      "acousticCheck": {
+        "peakDbfs": -0.5762068123710027,
+        "rmsDbfs": -17.313247560018155,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "23d8ebf3-d5c4-553e-877f-6fdcfad4c034",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/23d8ebf3-d5c4-553e-877f-6fdcfad4c034.mp3",
+      "sha256": "6999af1d26a5be891ce59d605b9f8c7af2fc4ac602c9fbdf80b020c219ef1a99",
+      "bytes": 121388,
+      "textHash": "99a5df9b29600f2623846a80a76481346011e6e1c68c661a46dea7bd3aef9a6d",
+      "durationSeconds": 7.584,
+      "acousticCheck": {
+        "peakDbfs": -0.49662102259478236,
+        "rmsDbfs": -15.908813979850203,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7ed4358f-a905-5da4-b09e-9927b02a21b8.mp3",
+      "sha256": "32cef68b9f898e8ccd5845b7464f442fcdfa43b918e4b4f033e20a3e7f09d6e6",
+      "bytes": 18860,
+      "textHash": "e728902a5c153c587f9077ff595762d097446ab87be7f617c21d4e12056e898a",
+      "durationSeconds": 1.176,
+      "acousticCheck": {
+        "peakDbfs": -0.4562263115054768,
+        "rmsDbfs": -15.488081605647725,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b5fb5b57-d9f0-5066-921a-98ebde6aa5c7",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b5fb5b57-d9f0-5066-921a-98ebde6aa5c7.mp3",
+      "sha256": "89469093f90b697e5c59d3a8730bc06f7f14806f88970a4d87a1a3c0b37f7733",
+      "bytes": 89132,
+      "textHash": "2babdc67b0af584c7d4785d839e355af5e78bd6e194ccbba9777cf01d39d52f7",
+      "durationSeconds": 5.568,
+      "acousticCheck": {
+        "peakDbfs": -0.42576055451259304,
+        "rmsDbfs": -15.405452132187353,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "500a0616-f60e-5a6e-9485-7d63a40beb16",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/500a0616-f60e-5a6e-9485-7d63a40beb16.mp3",
+      "sha256": "ee7a11dde6d065f85042ba588b1ad0f8c171919975bf67f7c9b4b8574886f1b1",
+      "bytes": 59948,
+      "textHash": "cc937998076fb5cac718140ebd29d36d8875da28692d146e00ff22f02bdf4bf9",
+      "durationSeconds": 3.744,
+      "acousticCheck": {
+        "peakDbfs": -0.7733134383641793,
+        "rmsDbfs": -15.634831080516795,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fd99f653-f632-5685-b0d3-1cfc409a4435",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/fd99f653-f632-5685-b0d3-1cfc409a4435.mp3",
+      "sha256": "294542523b72fb61fdac48ee99fcd86e025b3c6ecaa4b93f1d35984eb9a74e2b",
+      "bytes": 85292,
+      "textHash": "87ae69ad271b6f50ae2a26676b6f705c2492e6c310d6b51be04df797a6adf45e",
+      "durationSeconds": 5.328,
+      "acousticCheck": {
+        "peakDbfs": -0.515428144185201,
+        "rmsDbfs": -18.26732985761209,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1b98f27b-44f4-524a-a251-bd30d8dab533",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1b98f27b-44f4-524a-a251-bd30d8dab533.mp3",
+      "sha256": "745220a20aa005d33ccec478b7a1cff03ad960d08fe42f23bbc313535974e559",
+      "bytes": 168620,
+      "textHash": "331b3acdc7bd321f9fb2dc1311d81079a4f71713c544f7e353d99d7408e5b51b",
+      "durationSeconds": 10.536,
+      "acousticCheck": {
+        "peakDbfs": -0.3165584816228749,
+        "rmsDbfs": -16.77219751350256,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "246e4cff-1aa6-590d-b499-a5300b91493d",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/246e4cff-1aa6-590d-b499-a5300b91493d.mp3",
+      "sha256": "70fadba29db7c752c341bc74a15f8bd0583d4f112dc551cca632f1707c76d469",
+      "bytes": 173612,
+      "textHash": "dcef3f7d458956ce56e9891880076724572cb3e6d783b973d5ab8fa981956444",
+      "durationSeconds": 10.848,
+      "acousticCheck": {
+        "peakDbfs": -0.8188163340525594,
+        "rmsDbfs": -19.251985410605922,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b931d816-e3c8-5e8e-a9ad-ccdf7d31fd33",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b931d816-e3c8-5e8e-a9ad-ccdf7d31fd33.mp3",
+      "sha256": "add5853f28f92b9d38f2c5c0ebf554d29d5b90be3b2a83e8692a24244a2463aa",
+      "bytes": 188972,
+      "textHash": "6a0cadcbeb2bdcbbca04e57dd0545a7e2f384cf186e96adc881f46d9e0d282f4",
+      "durationSeconds": 11.808,
+      "acousticCheck": {
+        "peakDbfs": -0.44808046224079157,
+        "rmsDbfs": -15.820926758874233,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3fff15bc-769e-5cbb-a408-3b0f7b72046e.mp3",
+      "sha256": "9f1c40069d3593deaac0d970ce728c1e328467a05c21216921fbe4c25ded9496",
+      "bytes": 17708,
+      "textHash": "086977782914881901306ce4ef0ef2fe536a3323c280aebbb3dc992a0d321b1e",
+      "durationSeconds": 1.104,
+      "acousticCheck": {
+        "peakDbfs": -0.412957566501754,
+        "rmsDbfs": -15.091721274396363,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "21d0bac9-9917-560e-9165-b78cfec17a0b",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/21d0bac9-9917-560e-9165-b78cfec17a0b.mp3",
+      "sha256": "5bbcf0fc107d5be4b62fb518e0f18d592ad6489b8c4d6a32647cf2e61a87c567",
+      "bytes": 76460,
+      "textHash": "3ce4bd2932b19577cb05190c6129cb8fb78473f9f6d56d417c6eef4ffcf22c37",
+      "durationSeconds": 4.776,
+      "acousticCheck": {
+        "peakDbfs": -0.4550898189796296,
+        "rmsDbfs": -16.342242297843462,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "299c109b-09a5-5e7e-8042-44f8fafb8a6b",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/299c109b-09a5-5e7e-8042-44f8fafb8a6b.mp3",
+      "sha256": "cf2aeba30ab596e9630302eeb2fadec6307cdcc44aa037da8d6206607c1fae55",
+      "bytes": 89132,
+      "textHash": "e856a1f8f1a1fa60044d97c2cd43ce82ec3b5ec8079e0a16c828fc1ca9d8977a",
+      "durationSeconds": 5.568,
+      "acousticCheck": {
+        "peakDbfs": -0.8649855124325899,
+        "rmsDbfs": -18.56998844490187,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "79fc82a7-9830-5cfa-9ce3-7918f65a3c86",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/79fc82a7-9830-5cfa-9ce3-7918f65a3c86.mp3",
+      "sha256": "baca6025bae9392e277c6453613a187752dc99268439ef42c8643778d669a0ec",
+      "bytes": 82988,
+      "textHash": "47191eb19985f7269860814eb55defd54ec515d5ed2e9c61f7ca05233739b47f",
+      "durationSeconds": 5.184,
+      "acousticCheck": {
+        "peakDbfs": -0.7741629356829243,
+        "rmsDbfs": -18.292223979603055,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bc8cf789-c30b-52a8-99ec-e660532999ff",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/bc8cf789-c30b-52a8-99ec-e660532999ff.mp3",
+      "sha256": "ef86f8523967991c36db8bda8de724ca68558770b0f53a73173eb892ebbb5e92",
+      "bytes": 165932,
+      "textHash": "0e7ea1bcb5d0f0f8b2a5712fe1adae6130b2e974b2bb9aeff5e94ae7b65a9535",
+      "durationSeconds": 10.368,
+      "acousticCheck": {
+        "peakDbfs": -0.45671958353372566,
+        "rmsDbfs": -19.569112128595712,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "df8dd7b8-7fb0-55a1-8154-2854216ff815",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/df8dd7b8-7fb0-55a1-8154-2854216ff815.mp3",
+      "sha256": "531d1c2935460a3556ae838dd2990fc08aa4bbb74b8a6fe50f087505e9f3772b",
+      "bytes": 203180,
+      "textHash": "f926c05baa76fb093db7c29c25fd8554372bf1ce6f6de7765484ecbfebbd97f5",
+      "durationSeconds": 12.696,
+      "acousticCheck": {
+        "peakDbfs": -0.5397289267572025,
+        "rmsDbfs": -17.327063858515707,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "697c76f0-4cfc-5834-a072-362409541e99",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/697c76f0-4cfc-5834-a072-362409541e99.mp3",
+      "sha256": "5eb28c6626410d243cd6a575ee6f7a7a543b6ce75da7a5103cdd0acf17984906",
+      "bytes": 183980,
+      "textHash": "3b377c2a5b846738517a9fb36a27a8c03ea95b9e0d5ef94ade50a29870a42e49",
+      "durationSeconds": 11.496,
+      "acousticCheck": {
+        "peakDbfs": -0.8418462899583677,
+        "rmsDbfs": -19.179881527934157,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0c68403d-bee7-5d87-a95b-436d70bccca4",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0c68403d-bee7-5d87-a95b-436d70bccca4.mp3",
+      "sha256": "30cff01fcfdf0736d54484491431a445d702e64c215ec8ccdaf7ef44f4ec7960",
+      "bytes": 33068,
+      "textHash": "8ffbb122499d00f0f0decfe8ec7d02fc62e4fb56a28c394f87a67c7d478d1d03",
+      "durationSeconds": 2.064,
+      "acousticCheck": {
+        "peakDbfs": -0.3013989873452945,
+        "rmsDbfs": -15.804884554516853,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9fd4dacd-c746-51ad-bb02-3d88f5b28859",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9fd4dacd-c746-51ad-bb02-3d88f5b28859.mp3",
+      "sha256": "0f21a20aa49b4e1b58c55663657f70ced9357deb2c19797e2d325ace6c064357",
+      "bytes": 46892,
+      "textHash": "25f89578524f7822d8439bbeed5f3b28cf99f4dd078b95a583d06b8f3bab8e76",
+      "durationSeconds": 2.928,
+      "acousticCheck": {
+        "peakDbfs": -0.6626219454989164,
+        "rmsDbfs": -20.52228178864042,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bd7d04d1-8c0a-5190-b633-5cb3479c1ba5",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/bd7d04d1-8c0a-5190-b633-5cb3479c1ba5.mp3",
+      "sha256": "05dd456b4014329de409c1b899346dbdbbca4e0163ddf09ddd01ef4ae9cb2cd9",
+      "bytes": 53420,
+      "textHash": "83ca08abbbfe70f36097c8e6be6b62482db6844c6c34f0194eb7ec9579295f7c",
+      "durationSeconds": 3.336,
+      "acousticCheck": {
+        "peakDbfs": -0.5391449815155085,
+        "rmsDbfs": -15.000961348361916,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d69a0424-b0be-59ea-a935-a4fc2508eb2f",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d69a0424-b0be-59ea-a935-a4fc2508eb2f.mp3",
+      "sha256": "100866997ae213b3d3b5011786a5b3cd394104c6edb53e9315e1fcf645ae3d95",
+      "bytes": 176300,
+      "textHash": "8ed0c42c8ca9cfb132226c7b26b6df1f82b2c09d6482d236fa4cbcc1c4474575",
+      "durationSeconds": 11.016,
+      "acousticCheck": {
+        "peakDbfs": -0.5594330793429241,
+        "rmsDbfs": -17.300031162066713,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "152e9c5a-5d63-56ac-ad14-d4e79af4b2f3",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/152e9c5a-5d63-56ac-ad14-d4e79af4b2f3.mp3",
+      "sha256": "7eccaa7dc77105d2540389d310f9ab577bcd09e7ccab4583fb2aa1baf1f2344c",
+      "bytes": 139052,
+      "textHash": "9e21a6231c5d9a46814279eb77237f11cd28fefbe41a60baf2956a746cbbd731",
+      "durationSeconds": 8.688,
+      "acousticCheck": {
+        "peakDbfs": -0.6611849329961283,
+        "rmsDbfs": -18.047883447764008,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1b0e656c-b82c-5e75-ae14-7341b81dcccd",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1b0e656c-b82c-5e75-ae14-7341b81dcccd.mp3",
+      "sha256": "7fdd501b827b66bd0ca0a3f281f0d020c757db1643ea9a7d04062f66e5a96630",
+      "bytes": 135212,
+      "textHash": "d3114f1437fd07a001ac2ac497ac6cf8a5ce0ca4d9c72e7977f4264fb924886d",
+      "durationSeconds": 8.448,
+      "acousticCheck": {
+        "peakDbfs": -0.34772115329305553,
+        "rmsDbfs": -16.0031317487528,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6e192f4e-eef0-5cc6-9214-fc485bbcf615",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/6e192f4e-eef0-5cc6-9214-fc485bbcf615.mp3",
+      "sha256": "ee7defd5eb4a9578e5e7d1e401f598a2ede662174dfe973412ad9f11bc6718a2",
+      "bytes": 12332,
+      "textHash": "80974e50413f641d256a53afb12ab5790505723fd03d35e5202a34406f71efd4",
+      "durationSeconds": 0.768,
+      "acousticCheck": {
+        "peakDbfs": -0.39916891432950125,
+        "rmsDbfs": -12.477354931022074,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "fe407e7c-31f5-567e-9f8c-ea19e0eb7e5c",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/fe407e7c-31f5-567e-9f8c-ea19e0eb7e5c.mp3",
+      "sha256": "69aa5994ec7e2aceb4b68e6ccbbb1fcc71ba347f1c6d7eca679dabc1e2f604cb",
+      "bytes": 38060,
+      "textHash": "26bad344c2a53a6b663f876315fe553102ac7366f8a46267d216860ccaf167d6",
+      "durationSeconds": 2.376,
+      "acousticCheck": {
+        "peakDbfs": -0.7711812887690616,
+        "rmsDbfs": -16.62406994885014,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "cdfa2e0a-3a2b-5e2b-942f-5f76a31f19cf",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/cdfa2e0a-3a2b-5e2b-942f-5f76a31f19cf.mp3",
+      "sha256": "8bb8558b1e5e614a95231ae018ac9885c73d0f647f8f5397334c53d093dfbe03",
+      "bytes": 33068,
+      "textHash": "1fbd4225ee32d329e7fb0b509cfa006b5e1e978367a503efb1ca70f5fec06002",
+      "durationSeconds": 2.064,
+      "acousticCheck": {
+        "peakDbfs": -0.693619097187954,
+        "rmsDbfs": -15.330417789826978,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "25496e6c-7ecb-5dfd-9179-9f83e8a016e4",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/25496e6c-7ecb-5dfd-9179-9f83e8a016e4.mp3",
+      "sha256": "16f0160d61c57f9a5eee9c232032a58423ba0b3330c9d0d61288793e41ae7483",
+      "bytes": 43052,
+      "textHash": "598c80281d8a304fbd1e9a96315ce68ac1bf4d03adaaf34943e68d9400ace965",
+      "durationSeconds": 2.688,
+      "acousticCheck": {
+        "peakDbfs": -0.5463655228125676,
+        "rmsDbfs": -16.88883478531873,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "95219f2d-17fc-5e8d-ad57-338cf9b783e0",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/95219f2d-17fc-5e8d-ad57-338cf9b783e0.mp3",
+      "sha256": "58564b77b35235f388d969eef257c70e4bd1dae73191d9956bc573a9a7033b20",
+      "bytes": 203180,
+      "textHash": "df55284317fdfa37089f1aac544a889860e18564eadab9c21c0288ec2fe0af43",
+      "durationSeconds": 12.696,
+      "acousticCheck": {
+        "peakDbfs": -0.41333436674959695,
+        "rmsDbfs": -17.29226555196464,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3aa3ca8d-7a2b-5013-8f15-246930476990",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3aa3ca8d-7a2b-5013-8f15-246930476990.mp3",
+      "sha256": "7eb18e2d120de7ba4050d381d1f1cbb618afa52e7bffdb30e76148ce2ae434ec",
+      "bytes": 188972,
+      "textHash": "4ba35e51a95b5053474c6819e2adafe6182461044ebe348eb0acf7ff3e4f1fc8",
+      "durationSeconds": 11.808,
+      "acousticCheck": {
+        "peakDbfs": -0.49091795613944844,
+        "rmsDbfs": -17.017929951028783,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "4e26d05e-e721-5244-bf51-9cbc9c6bcbaf",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/4e26d05e-e721-5244-bf51-9cbc9c6bcbaf.mp3",
+      "sha256": "7baff11720360be11f7538ae6238b90b012dbc3bdf889776d7b23428b962b642",
+      "bytes": 155948,
+      "textHash": "8069664f2769fcfa2f5c2423953e591024f6ec82e708f44b40ba2876ef5087e1",
+      "durationSeconds": 9.744,
+      "acousticCheck": {
+        "peakDbfs": -0.4631150117563387,
+        "rmsDbfs": -19.52741900442088,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "497d172e-c9cc-5102-9c8d-11b3525b7f00",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/497d172e-c9cc-5102-9c8d-11b3525b7f00.mp3",
+      "sha256": "647b4ff7f49fb9b436cdf16c7ea0f5118860cb3a0b306969717ef258f28c997f",
+      "bytes": 12332,
+      "textHash": "2780b8eef998d6eaca5dbfe00e4043e626c79bc214195e1848af17a85d51519c",
+      "durationSeconds": 0.768,
+      "acousticCheck": {
+        "peakDbfs": -0.6656347444948064,
+        "rmsDbfs": -18.824118241189556,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ab264113-2fd1-58ee-90c5-708d3ad294b3",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ab264113-2fd1-58ee-90c5-708d3ad294b3.mp3",
+      "sha256": "55e3798ae5b739a0b8b116b0fefe0cb39950d5562c3561765b41bf63adc09310",
+      "bytes": 45740,
+      "textHash": "499166b6595e3fed8c1f88d73b8e13d8e0f3b5d74140d5d4e7b63a56e8caea42",
+      "durationSeconds": 2.856,
+      "acousticCheck": {
+        "peakDbfs": -0.21579112008523607,
+        "rmsDbfs": -15.612854508818007,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "71fa4609-b4f1-51fa-bdfe-0fb7d5f4cf1d",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/71fa4609-b4f1-51fa-bdfe-0fb7d5f4cf1d.mp3",
+      "sha256": "16a648644cfe7159c2f60aa84ce4ab8b368d006377a5d9d6896ed09aa3682e95",
+      "bytes": 67628,
+      "textHash": "fe774b09e27ac4175a3ae9dfa45d81350525cc9120f0b2bfefc55a9489c8596e",
+      "durationSeconds": 4.224,
+      "acousticCheck": {
+        "peakDbfs": -0.4244171042348046,
+        "rmsDbfs": -16.356997969596218,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a794ff33-d02e-5609-9a8d-e928fa7d46a2",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a794ff33-d02e-5609-9a8d-e928fa7d46a2.mp3",
+      "sha256": "6ca2da6f1450f9c2c54b88213ebfacb710ee73476439429d7ccdb6ac824bc926",
+      "bytes": 62252,
+      "textHash": "839467afb5c7de0e94cfc7f14573ab882d8abdbbfbd00ca96d1b120dae9fcbba",
+      "durationSeconds": 3.888,
+      "acousticCheck": {
+        "peakDbfs": -0.4202929064994348,
+        "rmsDbfs": -16.842442468147528,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "285bf4ba-4183-5a5a-99fb-203c4e5732f0",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/285bf4ba-4183-5a5a-99fb-203c4e5732f0.mp3",
+      "sha256": "82148f107b4e97302f988798f633840408ea948f6025cf181c4760fd710babcb",
+      "bytes": 139052,
+      "textHash": "5e81b33e6d8f841ece0a6094efed36b576c80be3fce2f5af12ae5f0c9bafc3a9",
+      "durationSeconds": 8.688,
+      "acousticCheck": {
+        "peakDbfs": -0.5532163104821253,
+        "rmsDbfs": -17.169107511476994,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ec58de0c-d397-5e23-b39d-6d5d0b65751b",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ec58de0c-d397-5e23-b39d-6d5d0b65751b.mp3",
+      "sha256": "f67ebec6ea937098a2b0ed6f09440db74d42998e6013bdbf2804c6208941eaa1",
+      "bytes": 134060,
+      "textHash": "abc00353fbfb690f450e2e8d4715694c2769beadf4b5714a3898ccfcecf76dad",
+      "durationSeconds": 8.376,
+      "acousticCheck": {
+        "peakDbfs": -0.4076607469233904,
+        "rmsDbfs": -17.877099230873814,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "30a06834-6ed1-59e0-a653-1eb2e9bd04a0",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/30a06834-6ed1-59e0-a653-1eb2e9bd04a0.mp3",
+      "sha256": "eede1eddaab2081a8c68fbc776298e2da9d1c8190e863105930211738be72d40",
+      "bytes": 152108,
+      "textHash": "af95e44cf95bedaea241de2aece696957186db3e3bd7f0d5e3b2f4de67613030",
+      "durationSeconds": 9.504,
+      "acousticCheck": {
+        "peakDbfs": -0.6124546512200917,
+        "rmsDbfs": -17.993978080096426,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/2b5a7b0d-2eb9-5a07-9cc9-7fb253196031.mp3",
+      "sha256": "94a4b7690958bdbb02713f554433a1bbd4bdf104ecc6cf8ee5782f5e080b31ae",
+      "bytes": 15020,
+      "textHash": "ed9f6f25068608efd412958da4dfc19328ca3511251fa6d5f9c42baf230e32f8",
+      "durationSeconds": 0.936,
+      "acousticCheck": {
+        "peakDbfs": -0.6718827442795834,
+        "rmsDbfs": -13.163765269581775,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3b89cb24-042b-5731-a49f-a75e142723a9",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3b89cb24-042b-5731-a49f-a75e142723a9.mp3",
+      "sha256": "c99ff3890888443df30958f5b993c5348b0740d56b6bb621ff9da0e2b54b39d9",
+      "bytes": 44588,
+      "textHash": "92a3a9a2cbce10e8cca3aa86f0d2afa22fdbebff8d41ddf2738b59614588bbb8",
+      "durationSeconds": 2.784,
+      "acousticCheck": {
+        "peakDbfs": -0.5323179390401828,
+        "rmsDbfs": -14.143836079010093,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "27489355-daf8-58a5-8594-80e88f2872b7",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/27489355-daf8-58a5-8594-80e88f2872b7.mp3",
+      "sha256": "f56832e3a6fd31a3d459ad26b7848a50c3d9b2b52f2f4e693169be4396d7b55a",
+      "bytes": 67628,
+      "textHash": "46e9f2f031be9418af2d2382aa18c3572b300fdec599736547aabce3379fc725",
+      "durationSeconds": 4.224,
+      "acousticCheck": {
+        "peakDbfs": -0.4632777428315521,
+        "rmsDbfs": -17.109799320940212,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "66bfa0e2-09df-539e-8f2c-a4ad01144cbd",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/66bfa0e2-09df-539e-8f2c-a4ad01144cbd.mp3",
+      "sha256": "3c1a9b0a74ea0d19b2fb445239fefd581e70c1eab8f5da2ded12fb9ec6cdd922",
+      "bytes": 59948,
+      "textHash": "86122158a2414100f618a48620a7fc9e962db0c20338cc6c060f955d2184e9dc",
+      "durationSeconds": 3.744,
+      "acousticCheck": {
+        "peakDbfs": -0.8718096142387383,
+        "rmsDbfs": -20.030337499883082,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "45ab3835-e07d-5f48-8fc5-e257ce2fd533",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/45ab3835-e07d-5f48-8fc5-e257ce2fd533.mp3",
+      "sha256": "04ab0eeb4807fd1889811df8fee9ae3053aafacfa326a3efe8b0d6d9a1557965",
+      "bytes": 126380,
+      "textHash": "28368b8789a772d6fdc8568734959b6828afbae458b3ee9e8224cdf8a0201ca4",
+      "durationSeconds": 7.896,
+      "acousticCheck": {
+        "peakDbfs": -0.5002118143496328,
+        "rmsDbfs": -17.804829543307356,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9741b2d0-ced7-5a1b-84da-0c133dc13a52",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9741b2d0-ced7-5a1b-84da-0c133dc13a52.mp3",
+      "sha256": "b0e6818e5576b3f8314342373fa8c9080771671a9fffcb0301fa9d15ee737bcb",
+      "bytes": 134060,
+      "textHash": "5a0d189c7a72c2f0587b3fbb2853b763f3178350df865bc8ee904d732d5fd681",
+      "durationSeconds": 8.376,
+      "acousticCheck": {
+        "peakDbfs": -0.6841648201173324,
+        "rmsDbfs": -17.445035825766436,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b13ce667-fa9d-5774-9bed-06756d76f6fd",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b13ce667-fa9d-5774-9bed-06756d76f6fd.mp3",
+      "sha256": "055ed22ecc780826cd225a5ee8640373b4d480722fa7dc52d185088e9c4cbdee",
+      "bytes": 118700,
+      "textHash": "ae60810e2e6c2fb01e370640d3c154d2198e1a0ddd2535c61a53fd22e224c61c",
+      "durationSeconds": 7.416,
+      "acousticCheck": {
+        "peakDbfs": -0.30745682133767377,
+        "rmsDbfs": -18.351072982148324,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "281fc4d9-15af-5290-b078-b2837d20f5aa",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/281fc4d9-15af-5290-b078-b2837d20f5aa.mp3",
+      "sha256": "69d1c4910a60173d21d222b07f60cbb0ce9ed41f335a03113ae22b5dac579561",
+      "bytes": 129068,
+      "textHash": "b2ca1d93adf6d640b33a0676f5947ec901efd62d6fb44dbe8e73f8db4c825814",
+      "durationSeconds": 8.064,
+      "acousticCheck": {
+        "peakDbfs": -0.5061196453872563,
+        "rmsDbfs": -17.47059554592324,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "e857c34b-cd14-5f0d-a58b-d9d6526ddbc0",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/e857c34b-cd14-5f0d-a58b-d9d6526ddbc0.mp3",
+      "sha256": "a72b839649b73e9f68b2c508d0c57eae690b24194a6100877448c20e11765d59",
+      "bytes": 123692,
+      "textHash": "20f8a1061114e7586cb1c4743e53e4007bd3670a823c8987bf2b4bf2079796d0",
+      "durationSeconds": 7.728,
+      "acousticCheck": {
+        "peakDbfs": -1.0458587267061972,
+        "rmsDbfs": -18.96186805460281,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7e4d11c4-451e-55f4-8d3b-77bdc62fa956",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7e4d11c4-451e-55f4-8d3b-77bdc62fa956.mp3",
+      "sha256": "c1012a731116541468ed05428855c492283a334c4d338fa0331324aab5273602",
+      "bytes": 140588,
+      "textHash": "ac76b63d31d102f3126d4f6b3362e8483489e53084e97ad031c905c10ac1857b",
+      "durationSeconds": 8.784,
+      "acousticCheck": {
+        "peakDbfs": -0.3888611268776255,
+        "rmsDbfs": -18.53620523456602,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a2f9af30-83c8-56f9-89ad-0d589d8931ff",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a2f9af30-83c8-56f9-89ad-0d589d8931ff.mp3",
+      "sha256": "8466ee19c9ef0a78c2e9e97b3449706d56087ff9a09e1c9a5087794381f4d709",
+      "bytes": 125228,
+      "textHash": "062c636ca85f4bb769cd0116c26b6c373a108569c4ebe4258c9ae7d572ac9d04",
+      "durationSeconds": 7.824,
+      "acousticCheck": {
+        "peakDbfs": -0.5826155651682695,
+        "rmsDbfs": -18.43482236584348,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ad1623f8-b471-5918-a0e4-3f22befe7eda",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ad1623f8-b471-5918-a0e4-3f22befe7eda.mp3",
+      "sha256": "2d55145ec534b2f85e59a62bec26b2ef38f326878de6d37eb67a80a216b1d85d",
+      "bytes": 165932,
+      "textHash": "1ebbdcfffe60168db37b23865312277c4d5a070ef0df5e13ab65efd2d9b584b6",
+      "durationSeconds": 10.368,
+      "acousticCheck": {
+        "peakDbfs": -0.5489367614292111,
+        "rmsDbfs": -17.493148839076195,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b748f1cc-3ec2-5bb2-b46c-3ff5fc703857",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b748f1cc-3ec2-5bb2-b46c-3ff5fc703857.mp3",
+      "sha256": "f3c4b361cf6cb823ab1e7cd7f80fb6124fbb1810f00fdf9dc735d0ff724bcbf7",
+      "bytes": 136748,
+      "textHash": "844807454deea3bf6de1f44f3dcb85e4d23d9e37e77bd65b7a49cb4da74f213b",
+      "durationSeconds": 8.544,
+      "acousticCheck": {
+        "peakDbfs": -0.6246451336409005,
+        "rmsDbfs": -17.954502502159876,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "13434369-9007-5f2f-b817-ea2f4530beb7",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/13434369-9007-5f2f-b817-ea2f4530beb7.mp3",
+      "sha256": "cf81b98136f5750f62f34c5dca1606c32ab8eb038466d9ad7d8dcb6db930d1ed",
+      "bytes": 15020,
+      "textHash": "208be34b55c3475df168f93331e3c32b718fab092c6dfa72d31464a710a6c8d9",
+      "durationSeconds": 0.936,
+      "acousticCheck": {
+        "peakDbfs": -0.5175110597942013,
+        "rmsDbfs": -13.890010055657054,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "03948e05-82d9-53a3-9eef-250ceb096be8",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/03948e05-82d9-53a3-9eef-250ceb096be8.mp3",
+      "sha256": "be44d52cee2e04856e39419f7049671d5f0730bdbeac295d2c6a3dc203f76ec9",
+      "bytes": 45740,
+      "textHash": "b54b5cbcde99252686e9134e4c354cb09cfa9166dd141c48dde0193671748fa2",
+      "durationSeconds": 2.856,
+      "acousticCheck": {
+        "peakDbfs": -0.37721803182386704,
+        "rmsDbfs": -16.016395646154095,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "97d8513a-8cf9-55b9-8194-4bc071e7339b",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/97d8513a-8cf9-55b9-8194-4bc071e7339b.mp3",
+      "sha256": "c8c2cec2e1dbd5a3df9efcc0d966e2cf6f40c7d782b57ad84bdec2888cbd2bed",
+      "bytes": 63788,
+      "textHash": "62aaae974a1d483de00da3f5b0e1b2d938af140a69267d30678bfcd917676545",
+      "durationSeconds": 3.984,
+      "acousticCheck": {
+        "peakDbfs": -0.780090222341922,
+        "rmsDbfs": -16.81537241322783,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b3d409b6-9cbf-5cfe-8342-d6de34455460",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b3d409b6-9cbf-5cfe-8342-d6de34455460.mp3",
+      "sha256": "ae4d8d4656fb6a560349b5efd59aeed64cb92350911707453d2ca922dcbae0ca",
+      "bytes": 54572,
+      "textHash": "cdd88d7853bf4d824c488593e3cf15b5526c9a28780719ba78bbc771f080244a",
+      "durationSeconds": 3.408,
+      "acousticCheck": {
+        "peakDbfs": -0.6977859666167532,
+        "rmsDbfs": -16.928781448639697,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3baceab6-69f7-59a7-9b9c-7e5385f490da",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3baceab6-69f7-59a7-9b9c-7e5385f490da.mp3",
+      "sha256": "a3cbeadbe503fc0160adb1bb8cdb29f995b53f30a9ded851032d417649504945",
+      "bytes": 76460,
+      "textHash": "2a147f7ec74506bd7b7135972b2c6715e4ac2e4aaa74e1be5feab7e2ee4bae11",
+      "durationSeconds": 4.776,
+      "acousticCheck": {
+        "peakDbfs": -0.5640326973642658,
+        "rmsDbfs": -16.494826286560777,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "07230d84-5789-57b9-8c8c-c160e6625fa2",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/07230d84-5789-57b9-8c8c-c160e6625fa2.mp3",
+      "sha256": "a18bcfe2f97a8cf406ae2436f2fb59b0596e26ceb4b2cd733c1cbb57c0162170",
+      "bytes": 106028,
+      "textHash": "cb90eb6074c8796630718de6bef920c095e8c777dadd4b3ed31300504deee114",
+      "durationSeconds": 6.624,
+      "acousticCheck": {
+        "peakDbfs": -0.4564587570022127,
+        "rmsDbfs": -15.780363963792317,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "34fb06b6-8b2f-55b1-8074-e99f7385efc0",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/34fb06b6-8b2f-55b1-8074-e99f7385efc0.mp3",
+      "sha256": "df14c9f29bf21511175731bd0bf4585beed5f32dc71d79ae283e4f31f6783a25",
+      "bytes": 80300,
+      "textHash": "1b77d6ec85c625a8b1383dde2a857a23d08d150d9fefa7c86f90a19396420c62",
+      "durationSeconds": 5.016,
+      "acousticCheck": {
+        "peakDbfs": -0.4704338251887169,
+        "rmsDbfs": -19.610234266435246,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3d782717-5951-5cb4-878b-6929a7d84e32",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3d782717-5951-5cb4-878b-6929a7d84e32.mp3",
+      "sha256": "0768b97ba15f481008b2c6b596fc4b487ecb0250c4e1ba196402e1bf1e1885ca",
+      "bytes": 148268,
+      "textHash": "6aac8e5332add74a9443bfb131084f2fa89c6f937304e0a12cf325d6666a197a",
+      "durationSeconds": 9.264,
+      "acousticCheck": {
+        "peakDbfs": -0.724407616698469,
+        "rmsDbfs": -16.802925286501427,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "106fc33f-57fd-5c0d-901a-d8418835a558",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/106fc33f-57fd-5c0d-901a-d8418835a558.mp3",
+      "sha256": "9d19e0903678de3ccf04e1bb000752aff45a76017022ef632cc832f8498ffa59",
+      "bytes": 139052,
+      "textHash": "07c1aa5953ce06f8ed947f0468e3e968e034b903c4f285651b85f0d98b6ac3e3",
+      "durationSeconds": 8.688,
+      "acousticCheck": {
+        "peakDbfs": -0.35942565278166716,
+        "rmsDbfs": -18.85410408358075,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7b5e5b7f-5995-5d6d-a55e-0ebea870a2fb",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7b5e5b7f-5995-5d6d-a55e-0ebea870a2fb.mp3",
+      "sha256": "02a3c5797cfdcf8511ad077612548d65ac9a5d38a1fffc61b1f888f39cdee52e",
+      "bytes": 130220,
+      "textHash": "a271276be6979e97282bfb935ec2f0250606064d651c6f513a450e9e2ace6f4a",
+      "durationSeconds": 8.136,
+      "acousticCheck": {
+        "peakDbfs": -0.43964162159474784,
+        "rmsDbfs": -20.121774884001088,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "dade0436-5fd9-5c66-a879-8df16a8d9e53",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/dade0436-5fd9-5c66-a879-8df16a8d9e53.mp3",
+      "sha256": "bae142a5f072364b19ee92c8ca80639a7aeae6d43f4e21bc32333f5456247aa5",
+      "bytes": 12332,
+      "textHash": "5eda958e9ddee7721fb71e7a7618c64dbf20cc77b06ba4e4d2269d6c3e50655b",
+      "durationSeconds": 0.768,
+      "acousticCheck": {
+        "peakDbfs": -0.5131578900995144,
+        "rmsDbfs": -13.200801475139565,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5cf9a06e-087a-5f20-80f5-a156fb4197b6",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5cf9a06e-087a-5f20-80f5-a156fb4197b6.mp3",
+      "sha256": "28d01d0d1d0fe8ede1502b1959c44c71b76412caf027c801d22ae6ae947b7c09",
+      "bytes": 64940,
+      "textHash": "f51218e2e47f21b758ef39ae0ad665f2c87e572ab718aa0f07cabdcf60df55f5",
+      "durationSeconds": 4.056,
+      "acousticCheck": {
+        "peakDbfs": -0.6319070651974078,
+        "rmsDbfs": -16.326183835496835,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0cc1f5cb-6d8e-553b-aa94-cc4d0f086987",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0cc1f5cb-6d8e-553b-aa94-cc4d0f086987.mp3",
+      "sha256": "e513eff544862a7ac76326514821cd3215a14fe3ced3065ec56b260297879f25",
+      "bytes": 52268,
+      "textHash": "debb4dbba9f9fb7261b667c8c604f62a7feddd40fb9a3478b603ce81166b610c",
+      "durationSeconds": 3.264,
+      "acousticCheck": {
+        "peakDbfs": -0.34992647130973176,
+        "rmsDbfs": -15.026412946809831,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "4ff95114-89cb-5663-9f34-79b3ecd78b6e",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/4ff95114-89cb-5663-9f34-79b3ecd78b6e.mp3",
+      "sha256": "395a0c59aca35222d901f578b05bfc1f61a1d9735eebfa10b647e83454cb369c",
+      "bytes": 46892,
+      "textHash": "67779e2fb2ea05500a3d2a426fdb0613de3cd7e9813507b13edbf9514db6b101",
+      "durationSeconds": 2.928,
+      "acousticCheck": {
+        "peakDbfs": -0.4696255410267789,
+        "rmsDbfs": -13.230279161953547,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7ec0a9e5-584c-58ce-91a4-069984176c18",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7ec0a9e5-584c-58ce-91a4-069984176c18.mp3",
+      "sha256": "946ef476c9a7df90fa0f1b5ccf33963e9f52a85db6639c85a837a4e34bce72f1",
+      "bytes": 249260,
+      "textHash": "b4bacddad9cca26725b387c3bc9baa9e678f6a5de314cfc081e030c503f6666f",
+      "durationSeconds": 15.576,
+      "acousticCheck": {
+        "peakDbfs": -0.5146392830931321,
+        "rmsDbfs": -18.312063193664237,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1906bcb4-4b1e-532f-8689-be1d411fcbee",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1906bcb4-4b1e-532f-8689-be1d411fcbee.mp3",
+      "sha256": "3383703680b67944fb9815d042bfe29fc444c106491a3b2e824bd09fe90cd682",
+      "bytes": 208172,
+      "textHash": "a0d163d5e3c17556a7fc30222a053893bdb9fc8dc95228f8be172fec3a99d8f4",
+      "durationSeconds": 13.008,
+      "acousticCheck": {
+        "peakDbfs": -0.46461520196030326,
+        "rmsDbfs": -17.360542178429064,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "834669ee-7b4b-5f94-9e60-c804fe60a36a",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/834669ee-7b4b-5f94-9e60-c804fe60a36a.mp3",
+      "sha256": "36176aee9beb80fecd145ad8f90824552488ec6ddd67c9aad5c3b40e407f0e0a",
+      "bytes": 195500,
+      "textHash": "c4ba7a9942ea8347489b6fe94b5461754bdaa4504c8da5882db06eea3ccdf768",
+      "durationSeconds": 12.216,
+      "acousticCheck": {
+        "peakDbfs": -0.44976670659876583,
+        "rmsDbfs": -18.608566013240736,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bdc4f531-cfef-530d-931a-55c56b14eaf8",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/bdc4f531-cfef-530d-931a-55c56b14eaf8.mp3",
+      "sha256": "bba64ab30fff1250a4e60da5a93c48b84a9609fd6858a1db29fe99b7be8bd1c0",
+      "bytes": 10028,
+      "textHash": "c047caef95b4d3e8d7f74cbe12793cc2a98d07369636a457f2313086e02f2753",
+      "durationSeconds": 0.624,
+      "acousticCheck": {
+        "peakDbfs": -0.6045706406066532,
+        "rmsDbfs": -16.01980065185057,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "660af7bb-530b-59de-b0a5-4fc908b3712f",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/660af7bb-530b-59de-b0a5-4fc908b3712f.mp3",
+      "sha256": "55c9d7189533c48ad8fa02a382045234aa8db72ad3e5e719f2668cae72cf0d08",
+      "bytes": 52268,
+      "textHash": "15aa30b7870b1e99fd85dee1d42d27dc70e7331c0dcf0e485a1b4fef378b9825",
+      "durationSeconds": 3.264,
+      "acousticCheck": {
+        "peakDbfs": -0.580296135408067,
+        "rmsDbfs": -17.39268786885515,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "367ed018-3a42-56ab-9c64-dd4ac302babd",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/367ed018-3a42-56ab-9c64-dd4ac302babd.mp3",
+      "sha256": "114286d92a81e8ed524f7bfb1042753911acd7d89d73503660c31df2b38d72c5",
+      "bytes": 68780,
+      "textHash": "b8dcf999ea546dd7cc92b193aee1644586f85e3a8712ef8ad6bb2ccd8cc1b109",
+      "durationSeconds": 4.296,
+      "acousticCheck": {
+        "peakDbfs": -0.5143250770389873,
+        "rmsDbfs": -16.75056106407437,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "b20e1963-91d4-5a3d-bb2b-922ff2ed5aa4",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/b20e1963-91d4-5a3d-bb2b-922ff2ed5aa4.mp3",
+      "sha256": "1fc1e170d19919f6e71465327fab787ff563f367d2140cb203c8901f3312c71e",
+      "bytes": 63788,
+      "textHash": "8130bf86271b884b4f2f8d122a984d55201ca5f7e0382323224e047c62965587",
+      "durationSeconds": 3.984,
+      "acousticCheck": {
+        "peakDbfs": -0.9734211009144162,
+        "rmsDbfs": -15.957045320419079,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0cd3b8fd-f4a7-5d7b-a032-bf2c6eb8880a",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0cd3b8fd-f4a7-5d7b-a032-bf2c6eb8880a.mp3",
+      "sha256": "bae5c4b5282091d5fa53966d986ac6e892604b1c873405f81e5ad097023d33db",
+      "bytes": 153260,
+      "textHash": "da92eb068ce51a631be8f9c76184645d724f19e6c6483953a363e3082eda5732",
+      "durationSeconds": 9.576,
+      "acousticCheck": {
+        "peakDbfs": -0.6053460637067043,
+        "rmsDbfs": -18.819870551295036,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d153b626-aa40-584f-9fe2-a8517f1cc349",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d153b626-aa40-584f-9fe2-a8517f1cc349.mp3",
+      "sha256": "907ae82b85c5e9b75536ca58a2a26dbe081e95bec57a37e597149e29174fb202",
+      "bytes": 164780,
+      "textHash": "551d686783102c8b0eb7fc02897ae75a7d5e6a974b6174db1844fac01390384a",
+      "durationSeconds": 10.296,
+      "acousticCheck": {
+        "peakDbfs": -0.5248340736321555,
+        "rmsDbfs": -23.380800599811103,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6baf03e4-d317-55ed-96d4-b573805fbdf7",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/6baf03e4-d317-55ed-96d4-b573805fbdf7.mp3",
+      "sha256": "5ad73b060ba12dc5c883e19c69e5fd128b27fb27477c6953155101eb24ead15f",
+      "bytes": 145580,
+      "textHash": "6ecb07134405d7cbdf83f27c2fc498e594362b4f5df42fcae77a732c0a94c9a5",
+      "durationSeconds": 9.096,
+      "acousticCheck": {
+        "peakDbfs": -0.6392129666027118,
+        "rmsDbfs": -16.392982602564732,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "82f9dfae-be12-5e40-9e28-64a596c44b1c",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/82f9dfae-be12-5e40-9e28-64a596c44b1c.mp3",
+      "sha256": "56e5dd06b4199a4fb2a37e7c812f718992714893b4db6a8616e345cf3a8a6850",
+      "bytes": 13868,
+      "textHash": "2764182d02bee1c55fc0e2f5625a0fd6ace4657666920e3049ce31e6bbf7ff9b",
+      "durationSeconds": 0.864,
+      "acousticCheck": {
+        "peakDbfs": -0.5777305380271185,
+        "rmsDbfs": -16.597966753323664,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7517e68b-4563-5931-8701-e6e60f7c15d4",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7517e68b-4563-5931-8701-e6e60f7c15d4.mp3",
+      "sha256": "5a2bc936b6611ce1584502b5d59b398580a31f83187d27edbbd8969b7dd88ea7",
+      "bytes": 100652,
+      "textHash": "0a6992403b8ec814d59ac840f63a1d9b5c4a45807f6ffc6e919f6e048fd44a8c",
+      "durationSeconds": 6.288,
+      "acousticCheck": {
+        "peakDbfs": -0.4366223473765277,
+        "rmsDbfs": -15.623399409446739,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "163c18a4-555f-519d-a0a3-30db943a3608",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/163c18a4-555f-519d-a0a3-30db943a3608.mp3",
+      "sha256": "4e8d1d888b5ac67255927edbe01e4b59309f0c00a80dad5b69e59f6061cd5f13",
+      "bytes": 84140,
+      "textHash": "b2f9d9b981dae0e425d4bb94010344bd3db1169f493d31ef10d1b484665535a3",
+      "durationSeconds": 5.256,
+      "acousticCheck": {
+        "peakDbfs": -0.4843569666513263,
+        "rmsDbfs": -16.90557223091695,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0131c172-5bd8-54fc-a59e-002449dd15a1",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0131c172-5bd8-54fc-a59e-002449dd15a1.mp3",
+      "sha256": "650fe8e37b1916b0cbb17849d750fbcfaec2fe8853987694429dd8f947afeffd",
+      "bytes": 121388,
+      "textHash": "efb89bbe8ea5724431e64e4f069e60f79f7e98fb623760b4c8509cf5d64785e6",
+      "durationSeconds": 7.584,
+      "acousticCheck": {
+        "peakDbfs": -0.6355575766889482,
+        "rmsDbfs": -17.820170523994697,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "31a2fde2-355c-52e3-a333-d93270e4d133",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/31a2fde2-355c-52e3-a333-d93270e4d133.mp3",
+      "sha256": "fe8097488ff9604dadf6ca4663e536ccec66ef56d0975f6329cf69d31e4e0b03",
+      "bytes": 168620,
+      "textHash": "f979b17fb548079d4236a396d55c79a657f7b02709e995d05caf55d926855d31",
+      "durationSeconds": 10.536,
+      "acousticCheck": {
+        "peakDbfs": -0.367984563630816,
+        "rmsDbfs": -19.22676048026647,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "23c1c18b-a051-58a9-a898-d0ab60c5f6e4",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/23c1c18b-a051-58a9-a898-d0ab60c5f6e4.mp3",
+      "sha256": "15eb2b17a9942a8966026b195a26594aa58957bf5c5e4fdf43ec57ea46bf82c0",
+      "bytes": 163628,
+      "textHash": "5de62432e67196b86bb58f2177e34795d127e024d525e4cab69f17b26c9cd67c",
+      "durationSeconds": 10.224,
+      "acousticCheck": {
+        "peakDbfs": -0.42163463204642027,
+        "rmsDbfs": -18.699301515084635,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "1c586a62-64be-59fa-b19f-102694bcf3cb",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/1c586a62-64be-59fa-b19f-102694bcf3cb.mp3",
+      "sha256": "0edfea569e5acb7ccd5e892f123c9c80463b5841acfbe4991c91ed61270c9e6a",
+      "bytes": 122540,
+      "textHash": "1683aa2b181b78e029cd2580ee154ccdccdccd2a34a5e546ca737fe8c37a39f1",
+      "durationSeconds": 7.656,
+      "acousticCheck": {
+        "peakDbfs": -0.43964597838435493,
+        "rmsDbfs": -18.079199791740017,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/6cccc2aa-78ea-512a-848b-2c3b7c0b3fb4.mp3",
+      "sha256": "09f9b65e2c0eb44042e40b1c65edc27fd8b0d8f6062c9fa9beaeda29a9e385be",
+      "bytes": 18860,
+      "textHash": "86d6e84ef9a21b74c964a209d4ee7ace5e73d1723bb0f0b665c39b0b073fb04c",
+      "durationSeconds": 1.176,
+      "acousticCheck": {
+        "peakDbfs": -0.5086433147209954,
+        "rmsDbfs": -14.340872090652525,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c2af0319-c9e8-5dd4-b598-a726e3ade728",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c2af0319-c9e8-5dd4-b598-a726e3ade728.mp3",
+      "sha256": "6f6e297c78fd9b49e220f65db672a50e2e8d0e8dfd6ad349eac773532b161979",
+      "bytes": 148268,
+      "textHash": "7ccbb48766d01091815523a313303e8cd6999750aa91ff692f8d3c0c391cbe85",
+      "durationSeconds": 9.264,
+      "acousticCheck": {
+        "peakDbfs": -0.6123918751654427,
+        "rmsDbfs": -17.98506082951628,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7aa7f896-3eff-593d-99c4-07b065b2aee2",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7aa7f896-3eff-593d-99c4-07b065b2aee2.mp3",
+      "sha256": "7c39d7c6c8cbc6fd35cd1117ff6c34f0638a28110eaf2e56861a11e8587a548a",
+      "bytes": 131372,
+      "textHash": "a36f87cfb7027911fdc8deb5274816f111278f1433a5a88710c038dd202e4418",
+      "durationSeconds": 8.208,
+      "acousticCheck": {
+        "peakDbfs": -0.4680217650691037,
+        "rmsDbfs": -17.48274065094998,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "57ffe60b-0935-5a46-b3a0-609921eb383e",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/57ffe60b-0935-5a46-b3a0-609921eb383e.mp3",
+      "sha256": "dcccf28fca43f7cf6bd1aabc1354fa30bf58ceb74d39d77d9ddf60c1043cd1a4",
+      "bytes": 132908,
+      "textHash": "f739a49db469e7013554ae0abc59588060efb168abd1e85a644c339010f718c3",
+      "durationSeconds": 8.304,
+      "acousticCheck": {
+        "peakDbfs": -0.5442966226770641,
+        "rmsDbfs": -15.858731095570523,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "733a324a-cdd0-58f8-ac34-d83de0ff5929",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/733a324a-cdd0-58f8-ac34-d83de0ff5929.mp3",
+      "sha256": "72fb1ea04dbc92f39820b7d1d460d18aaaf4918113bb48564366fb887ea5e84d",
+      "bytes": 80300,
+      "textHash": "7bddc8d54f4566f7917650243b61cfc67e4dc2afb5b291b6b92cc79f8a7beae5",
+      "durationSeconds": 5.016,
+      "acousticCheck": {
+        "peakDbfs": -0.86472757535198,
+        "rmsDbfs": -18.133314230163904,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "d7109dae-62b6-54cf-8bbf-d45e69cfad27",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/d7109dae-62b6-54cf-8bbf-d45e69cfad27.mp3",
+      "sha256": "c47ba7798cf5059ab78223351691310d4688e24f71f99a6488773258a59f20e4",
+      "bytes": 81452,
+      "textHash": "979a9f44fe6045ee8de0a9fe8c00984cb32b2c76a25c3b9afcc43f953a60b4bd",
+      "durationSeconds": 5.088,
+      "acousticCheck": {
+        "peakDbfs": -0.7363641306775242,
+        "rmsDbfs": -16.6508040692761,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "469e1975-a548-5547-890f-121036efe4a2",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/469e1975-a548-5547-890f-121036efe4a2.mp3",
+      "sha256": "fc570829ae2298afd0599277c2d7c0faf8be1b9f1dc9754f570d0f406935f04d",
+      "bytes": 79148,
+      "textHash": "4e2897619a62c6c51c10c61182271ec1bf07c5e02f973da9685fd0847db03e07",
+      "durationSeconds": 4.944,
+      "acousticCheck": {
+        "peakDbfs": -0.5074137713401635,
+        "rmsDbfs": -16.058684730154773,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "bbb069db-475a-5385-806d-8ad5f8c81ede",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/bbb069db-475a-5385-806d-8ad5f8c81ede.mp3",
+      "sha256": "a421bc0eed6fe46d4d9c161bbed21629ff3dfde6822891102757a90f888f79e5",
+      "bytes": 202028,
+      "textHash": "83f51a8400c3344512baff53a3233d2f6f8d58e969d156d56322bacbd8c632d8",
+      "durationSeconds": 12.624,
+      "acousticCheck": {
+        "peakDbfs": -0.633466211157313,
+        "rmsDbfs": -17.460741104424436,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "be785c8a-f3ef-5944-8cfe-becb451edfd8",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/be785c8a-f3ef-5944-8cfe-becb451edfd8.mp3",
+      "sha256": "710c61f558376d0cac3ad78de4b48896e30dcc080ae36da69386285b41f73184",
+      "bytes": 159788,
+      "textHash": "9d753ad0372b56ae81adaf41802a0f5b36e85b5af9fab7412b12b13d0620e316",
+      "durationSeconds": 9.984,
+      "acousticCheck": {
+        "peakDbfs": -0.5283650252046559,
+        "rmsDbfs": -19.68999763921031,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "655bf305-5cfa-5e8c-b936-aa1431511952",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/655bf305-5cfa-5e8c-b936-aa1431511952.mp3",
+      "sha256": "d6f04d9476a65d62ef8542209b57f1cabfd8631b370bb8669290a104d23a70bd",
+      "bytes": 186668,
+      "textHash": "273b1709ee9f5d9b5bc380267b05ec8bf1bda04d81af81da010944095765d5d8",
+      "durationSeconds": 11.664,
+      "acousticCheck": {
+        "peakDbfs": -0.49040027877551573,
+        "rmsDbfs": -18.29086509623933,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "487f57e3-2622-5a43-a4ac-b1942ba0c5bb",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/487f57e3-2622-5a43-a4ac-b1942ba0c5bb.mp3",
+      "sha256": "3ffbd5e02c65c7119e61071203e79709efc22390776558ef75e37aa9bc7ce32a",
+      "bytes": 26540,
+      "textHash": "4f12240e64b07cf65f8a7c1460a67054aca31a3fa11d6fed96cbc1e6836d707d",
+      "durationSeconds": 1.656,
+      "acousticCheck": {
+        "peakDbfs": -0.5692953098151442,
+        "rmsDbfs": -17.218509120556778,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3ae30381-b74a-5087-8ae4-c1e7ff162af8",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3ae30381-b74a-5087-8ae4-c1e7ff162af8.mp3",
+      "sha256": "d7e9f266232acec08c9fe47f12a91f59ef8c718a031a7d7243ec607a6a30b03a",
+      "bytes": 68780,
+      "textHash": "13cbd1edd1a7e45e4f767c607b786f632ca06f983c0f5ea70c6e9eadc5ef1c16",
+      "durationSeconds": 4.296,
+      "acousticCheck": {
+        "peakDbfs": -0.47436701790889124,
+        "rmsDbfs": -17.241287236104252,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "7a2a0bb1-45bf-507e-a448-c22da7f2778f",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/7a2a0bb1-45bf-507e-a448-c22da7f2778f.mp3",
+      "sha256": "8d43787f01bf843ec95cf25f018d37409efde7584b8369bc436b9309b330b3ec",
+      "bytes": 102188,
+      "textHash": "e8733b5edf4e714e20bd764d3e19c4722deecd325d3d8b56d6d62d307a473ea2",
+      "durationSeconds": 6.384,
+      "acousticCheck": {
+        "peakDbfs": -0.41526586038317004,
+        "rmsDbfs": -19.41453954916717,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "f2dc81ef-4f1a-5dc2-9974-e7552a6fbab9",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/f2dc81ef-4f1a-5dc2-9974-e7552a6fbab9.mp3",
+      "sha256": "a820f4e085abb8469cf1f4916b9082f6334b36766a0e43ded17f2de30f48b354",
+      "bytes": 89132,
+      "textHash": "2788493a064c787223e4420dacc15fbaa479a6f60e57f9dfbd4a1b151f92a9e1",
+      "durationSeconds": 5.568,
+      "acousticCheck": {
+        "peakDbfs": -0.3055207290686201,
+        "rmsDbfs": -16.161257842801817,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8d98706f-34f4-5f39-8630-02db0cc6fcd3",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/8d98706f-34f4-5f39-8630-02db0cc6fcd3.mp3",
+      "sha256": "97368fbe91e895e39873960cbb892f8c39060f8621bf8d83487d73ad6e6eb6af",
+      "bytes": 89132,
+      "textHash": "bc2e571f95aaec3c2b30e3ba9035b495e877773f9297ac84105f82fdd1f40d2d",
+      "durationSeconds": 5.568,
+      "acousticCheck": {
+        "peakDbfs": -0.31363321127320176,
+        "rmsDbfs": -16.539174884669862,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "cc5924ae-8a2f-52bb-b7ca-04604bfe26c1",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/cc5924ae-8a2f-52bb-b7ca-04604bfe26c1.mp3",
+      "sha256": "a1b4f20beca4d46a5825276ba2be155a4c485cf220d4743bccf0de666ab71e24",
+      "bytes": 123692,
+      "textHash": "ca8ecc12069852eed034b07267fca16272f7349839111daeb5de5b08c136175d",
+      "durationSeconds": 7.728,
+      "acousticCheck": {
+        "peakDbfs": -0.5224277542528724,
+        "rmsDbfs": -17.130463656305672,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c01c9671-d128-5006-8457-f9d18d3c9929",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c01c9671-d128-5006-8457-f9d18d3c9929.mp3",
+      "sha256": "2ba161b6bec59aec9bbcdaa610d6214d840968c5c4b0f1fcfaf1426b751a7c12",
+      "bytes": 203180,
+      "textHash": "7d7a8a717739adece3aaa06c3c47de43ac9f7509c8834746deec88edda4232d0",
+      "durationSeconds": 12.696,
+      "acousticCheck": {
+        "peakDbfs": -0.47977690503532,
+        "rmsDbfs": -18.95305573175665,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "427c9195-fc65-5a51-9730-96667013118c",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/427c9195-fc65-5a51-9730-96667013118c.mp3",
+      "sha256": "6995446f9609e1ba6099d606ec1573919557a69526e00a638a059bc91ffd614d",
+      "bytes": 182828,
+      "textHash": "903d9383d552ffee94f5dc506ded1fe79882574aab2b1bd4d583fe3f133d48f8",
+      "durationSeconds": 11.424,
+      "acousticCheck": {
+        "peakDbfs": -0.5924310048897807,
+        "rmsDbfs": -18.356532059628798,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c6532c8e-9139-5d43-874f-2ee4bf68302f",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c6532c8e-9139-5d43-874f-2ee4bf68302f.mp3",
+      "sha256": "acbecbb2ee27fd1c828f7fc0af1bb909cbfca11154c05b39809df76a0b4d06d8",
+      "bytes": 165932,
+      "textHash": "94bd610cf431be604b28c0918c8d541a4b4d22481807e91571cd77cf8db553c9",
+      "durationSeconds": 10.368,
+      "acousticCheck": {
+        "peakDbfs": -0.49359996404372164,
+        "rmsDbfs": -18.900327680225217,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "24c794c7-67c2-5fed-8a75-eea927931519",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/24c794c7-67c2-5fed-8a75-eea927931519.mp3",
+      "sha256": "4a0990604e583f4efb938666c599b9210ed687e4e807de408a859003e5cf80a2",
+      "bytes": 173612,
+      "textHash": "f1e0b46d677ae1e0f87eef9a0b80f790e1656769b06f5d501b3bde6488a1dbf3",
+      "durationSeconds": 10.848,
+      "acousticCheck": {
+        "peakDbfs": -0.4447427401706324,
+        "rmsDbfs": -18.380197056623576,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "187524fa-5545-564b-bcfe-99d01f5f3f27",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/187524fa-5545-564b-bcfe-99d01f5f3f27.mp3",
+      "sha256": "46815dca0ba1e2e443f9fc4ca26a8d14caeb9700af066f629e75251017b456b3",
+      "bytes": 16172,
+      "textHash": "78d2e59abc6d66c5fbda84191b9ac382190a41ebcb17f08b720f9935c1b9d953",
+      "durationSeconds": 1.008,
+      "acousticCheck": {
+        "peakDbfs": -0.8090413235646812,
+        "rmsDbfs": -15.291127098348426,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a7e4a7e1-0587-5c55-8a7b-e28ade7aead4",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a7e4a7e1-0587-5c55-8a7b-e28ade7aead4.mp3",
+      "sha256": "072505f2469b0d75832fbc9045b63184cc91b5a99fa50132141cb82fa1bf9583",
+      "bytes": 82988,
+      "textHash": "6ecc799c6fc8e0587db95042cfa09e1c2faeabfd01d884f5b3b53482a3d69d26",
+      "durationSeconds": 5.184,
+      "acousticCheck": {
+        "peakDbfs": -0.5560854176448863,
+        "rmsDbfs": -16.50645712118175,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "5065ee31-26bd-5759-8d55-75390f380bdc",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/5065ee31-26bd-5759-8d55-75390f380bdc.mp3",
+      "sha256": "39e99441660a67d660999c9cf7281af57a5ad270f861c2eeb122359b7505062b",
+      "bytes": 111020,
+      "textHash": "2162f21cba743f12a352371e2a5626fe90ed5e94398a81e6649c1b33240e78b0",
+      "durationSeconds": 6.936,
+      "acousticCheck": {
+        "peakDbfs": -0.4028205020948211,
+        "rmsDbfs": -17.96605021051076,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "cdde8ef6-cd27-5e95-bc26-5f7a1a367a88",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/cdde8ef6-cd27-5e95-bc26-5f7a1a367a88.mp3",
+      "sha256": "9a5016b2de42a2c65550a731db48d9b7801987a46813b259fe02608bec271a8d",
+      "bytes": 112172,
+      "textHash": "d4e67685b09934a9e73c9274fd19e18863750bc30628639a040018d5bafb20e0",
+      "durationSeconds": 7.008,
+      "acousticCheck": {
+        "peakDbfs": -0.6406836907302251,
+        "rmsDbfs": -16.498854288683297,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8c946cac-1636-5165-b77d-a8928662fef2",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/8c946cac-1636-5165-b77d-a8928662fef2.mp3",
+      "sha256": "b7355e81d91c1bea3658bf273d69b7cd7fd1f8d0196fa1c53c0db54ba5d7280a",
+      "bytes": 195500,
+      "textHash": "af31ea3e033e2be440204365c22ce581dd20644721159b71bf09b28d9440a171",
+      "durationSeconds": 12.216,
+      "acousticCheck": {
+        "peakDbfs": -0.44262653455232887,
+        "rmsDbfs": -18.509938358571866,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "87c25b4c-0191-5b9c-95f4-603fbeb4f140",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/87c25b4c-0191-5b9c-95f4-603fbeb4f140.mp3",
+      "sha256": "f9eaa404ef209323b97f6353b0ec6024bbf361b5db6e6ba29c3e9e1cc6427265",
+      "bytes": 173612,
+      "textHash": "c8060548bed5a029c83ed0722c1ab0e2fb893f95be3231a7cf58ca8b09b1ad5a",
+      "durationSeconds": 10.848,
+      "acousticCheck": {
+        "peakDbfs": -0.4275855004937545,
+        "rmsDbfs": -17.091563711075864,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "38b3ec38-8b6d-5a56-a031-e909cd4502c2",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/38b3ec38-8b6d-5a56-a031-e909cd4502c2.mp3",
+      "sha256": "58240b57493cdcd515619baea4070d2d5f341105327844936c5b16e5d6cfbdca",
+      "bytes": 153260,
+      "textHash": "38a421217b22ee6ed08bb634f0133e8c0700850521b7fffead85d50989974348",
+      "durationSeconds": 9.576,
+      "acousticCheck": {
+        "peakDbfs": -0.4986369249331141,
+        "rmsDbfs": -15.954202368056817,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ab98d6ac-e941-5978-b758-cc69b760cf87.mp3",
+      "sha256": "e5840d7ebac7c8e61d4f8b39caf468554277c96e66ae453cc5e51e33320263dc",
+      "bytes": 18860,
+      "textHash": "c4edfe61041061c9cb1598ea431f23f35f8082138abcdfbcab2c6b767e11ab27",
+      "durationSeconds": 1.176,
+      "acousticCheck": {
+        "peakDbfs": -0.6425158958989574,
+        "rmsDbfs": -17.792862519381778,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "c9022df2-bc1e-5085-b257-8ca75568ae7c",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/c9022df2-bc1e-5085-b257-8ca75568ae7c.mp3",
+      "sha256": "ebc16402397c5d594fe387f5eb61f1798c8008f48fcaef60e84a07679f06ba46",
+      "bytes": 53420,
+      "textHash": "4f6815f3becd035dab2af51e983ed843a54f562dda3108e1bff820223d42aa0c",
+      "durationSeconds": 3.336,
+      "acousticCheck": {
+        "peakDbfs": -0.42087815376165816,
+        "rmsDbfs": -18.778639093907476,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3d32c5e6-55ee-51d1-8f3d-6d66bf49f0f4",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3d32c5e6-55ee-51d1-8f3d-6d66bf49f0f4.mp3",
+      "sha256": "28b771744040fe3509d2f412c8deed230e973ab1a84fe7dba0662010d6742964",
+      "bytes": 46892,
+      "textHash": "bc87834beda0d4ddb48f4e23e2df5ed919dcbe82d03eac0a3ba98c1b57847e89",
+      "durationSeconds": 2.928,
+      "acousticCheck": {
+        "peakDbfs": -0.5535893125568934,
+        "rmsDbfs": -16.259656348822233,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "3555e56f-9059-5aab-a150-577ed6869e85",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/3555e56f-9059-5aab-a150-577ed6869e85.mp3",
+      "sha256": "f768401bb582b0c5867e8dba440afef284f04d5ed7970382e2c213a1b999d000",
+      "bytes": 63788,
+      "textHash": "25e08a9ea52137e0e4500954697aece6cb113bf4e4bae0a42a8e53488d20ff45",
+      "durationSeconds": 3.984,
+      "acousticCheck": {
+        "peakDbfs": -0.45260511209041443,
+        "rmsDbfs": -15.768093500268456,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "8a792e4d-3517-5e26-8b92-fd28e2c8bcff",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/8a792e4d-3517-5e26-8b92-fd28e2c8bcff.mp3",
+      "sha256": "295ad0cb41629c7603e008a5f0cfe5bbda459cda02c3f28bb422e321ffff10c3",
+      "bytes": 111020,
+      "textHash": "fa1dfe2afa6fccfcadd3c43265cf499578f6744f9e89a7e1273e524c1730e3e1",
+      "durationSeconds": 6.936,
+      "acousticCheck": {
+        "peakDbfs": -0.3395568665720689,
+        "rmsDbfs": -16.63115885101214,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "0747157d-d1af-5c28-acdb-9e425baf49cf",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/0747157d-d1af-5c28-acdb-9e425baf49cf.mp3",
+      "sha256": "605869ee081fdb6a08a186079f0d779f8af45cf9b7d780f5e1cdec756a4af367",
+      "bytes": 82988,
+      "textHash": "7abd919ef192537c88e29953a90da4981ecb872da745b3260ea2c0cd5e0e0fac",
+      "durationSeconds": 5.184,
+      "acousticCheck": {
+        "peakDbfs": -0.5806348774557305,
+        "rmsDbfs": -16.077489772643755,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "191afb31-006a-5b7e-aed2-0ccb1d6f7af5",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/191afb31-006a-5b7e-aed2-0ccb1d6f7af5.mp3",
+      "sha256": "f1c95c13d5e3b1f07edf7884935b40d64b8bc111911035e2fe2f6c67b75d6a82",
+      "bytes": 145580,
+      "textHash": "8010cb024c6f3926767a198b13957c7ee6a40dbe9b8914bac04f54e7305e3f93",
+      "durationSeconds": 9.096,
+      "acousticCheck": {
+        "peakDbfs": -0.44593237870803903,
+        "rmsDbfs": -18.968429176351624,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "debdd36d-d229-531b-a5e5-efd7517fa4a9",
+      "kind": "word",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/debdd36d-d229-531b-a5e5-efd7517fa4a9.mp3",
+      "sha256": "209e611e2d435bd702eb52d29b5778bbc78605f950b1e4c0c712d7e1ebc7bfd0",
+      "bytes": 21548,
+      "textHash": "e4ebe51cc383b709a87555bc38d97e2b07c21c0043890cde32f27fc89691e929",
+      "durationSeconds": 1.344,
+      "acousticCheck": {
+        "peakDbfs": -0.8874542639449605,
+        "rmsDbfs": -17.071646769307343,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "9e9a1864-6412-56d9-aa16-25e07f3c5d5a",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/9e9a1864-6412-56d9-aa16-25e07f3c5d5a.mp3",
+      "sha256": "5e205ae121191cf81a77ada9b79ac26aaae5d7bdc2fdcc645d3f9877292aa6c4",
+      "bytes": 45740,
+      "textHash": "a2bc659743328c6e8082ea2200015823bcf8cd502825e75cd31f5926c93034e7",
+      "durationSeconds": 2.856,
+      "acousticCheck": {
+        "peakDbfs": -0.3882661223306308,
+        "rmsDbfs": -14.809560430700266,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "caec31fb-7bb7-5a33-8156-8d0070b09732",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/caec31fb-7bb7-5a33-8156-8d0070b09732.mp3",
+      "sha256": "e5d981531d26e701e047b8c67913fd72ad36c3bc85e37623d2d75fcaef3ed7b5",
+      "bytes": 54572,
+      "textHash": "7a520b2625726f4fb511e24b4398f71236e8d852d14ee8293112b38404b266f9",
+      "durationSeconds": 3.408,
+      "acousticCheck": {
+        "peakDbfs": -0.4027575961263825,
+        "rmsDbfs": -16.134871063378398,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "ca390d19-1b99-5cdb-b7eb-46179a4507de",
+      "kind": "example",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/ca390d19-1b99-5cdb-b7eb-46179a4507de.mp3",
+      "sha256": "84c4d120aabcdffdef296dd21582b9e1c5717333e9645ec7be4a076956ba4bcf",
+      "bytes": 46892,
+      "textHash": "5aac4e6ee0bfeb8847e4ec5ce5115519b58d0381802c136b7da6e7e6040d42bc",
+      "durationSeconds": 2.928,
+      "acousticCheck": {
+        "peakDbfs": -0.4329908078592798,
+        "rmsDbfs": -15.558199788602781,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "a84972a1-79e5-5d0c-86ab-648ad177fee3",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/a84972a1-79e5-5d0c-86ab-648ad177fee3.mp3",
+      "sha256": "d95d14a0adaf4a178b4b52ff8c2aee85140058ce9449fde32320b5ef3531541f",
+      "bytes": 61100,
+      "textHash": "6086f70b1dc76d8d5e9d1446a50bf106bb3500e5793cd3b8dc7bbc584709050e",
+      "durationSeconds": 3.816,
+      "acousticCheck": {
+        "peakDbfs": -0.7880966951024371,
+        "rmsDbfs": -15.54387710064258,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "05ce4f9a-08fb-5f35-a40f-dca9d63a4429",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/05ce4f9a-08fb-5f35-a40f-dca9d63a4429.mp3",
+      "sha256": "6fd0c097f66ad4ba74809bfc254cae9717adf63d49931ab1031a679d9dbea0ab",
+      "bytes": 98348,
+      "textHash": "59e7150539a67a6b4b5d5e786e0d628fe5be0af4209328478c0ac63dff8417c2",
+      "durationSeconds": 6.144,
+      "acousticCheck": {
+        "peakDbfs": -0.5150161256240637,
+        "rmsDbfs": -17.605876512266953,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "assetGuid": "51c8ea86-fb23-586f-a137-aef631b570a2",
+      "kind": "explanation",
+      "sourcePath": "data/scenario-audio/travel-scenarios-qwen17b/wordbank-assets/wordbank/2706fd2bc0c87488/51c8ea86-fb23-586f-a137-aef631b570a2.mp3",
+      "sha256": "1402b6890e069cc661c2e265d981aa1f209f338caffdcba0a704025843f566cb",
+      "bytes": 72620,
+      "textHash": "ee6cf192271237e78f0a7098479ca49fbac0fae717f956b4cd536e6311838f99",
+      "durationSeconds": 4.536,
+      "acousticCheck": {
+        "peakDbfs": -0.551993130571067,
+        "rmsDbfs": -15.63902821231828,
+        "minimumPeakDbfs": -60,
+        "scope": "近靜音初篩，未驗證讀音或人工聽審品質"
+      }
+    },
+    {
+      "scenarioKey": "travel-airport-gate",
+      "kind": "story",
+      "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-airport-gate/scenarios/travel-airport-gate/r1/2706fd2bc0c87488/story-99a9d6b90fa379fc.mp3",
+      "sha256": "59203d214cf96b9b4c55be2464fac11536150b752937b8a6b0cbce5da916d929",
+      "language": "en",
+      "textSha256": "99a9d6b90fa379fc15b8d294a50c95a410f8284e3f3854b77a5150d1a428aefc",
+      "durationSeconds": 33.096,
+      "bytes": 529580,
+      "profile": {
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "listeningReviewCompleted": false
+    },
+    {
+      "scenarioKey": "travel-hotel-check-in",
+      "kind": "story",
+      "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-hotel-check-in/scenarios/travel-hotel-check-in/r1/2706fd2bc0c87488/story-5be1bff70c686f54.mp3",
+      "sha256": "ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161",
+      "language": "en",
+      "textSha256": "5be1bff70c686f547abe59e766d60177253759d168fb195015490b846703b8eb",
+      "durationSeconds": 44.616,
+      "bytes": 713900,
+      "profile": {
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "listeningReviewCompleted": false
+    },
+    {
+      "scenarioKey": "travel-ferry-trip",
+      "kind": "story",
+      "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-ferry-trip/scenarios/travel-ferry-trip/r1/2706fd2bc0c87488/story-1e552088c27582ff.mp3",
+      "sha256": "80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e",
+      "language": "en",
+      "textSha256": "1e552088c27582ffe05502dd7452517545462f2f0bbe4b4d78b0a6466e64d748",
+      "durationSeconds": 24.864,
+      "bytes": 397868,
+      "profile": {
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "listeningReviewCompleted": false
+    },
+    {
+      "scenarioKey": "travel-airplane-cabin",
+      "kind": "story",
+      "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-airplane-cabin/scenarios/travel-airplane-cabin/r1/2706fd2bc0c87488/story-01faf649050e17ae.mp3",
+      "sha256": "5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba",
+      "language": "en",
+      "textSha256": "01faf649050e17ae9b2e5d36f9d7e2a5691f34e6e98e924c3a2494cb9e6705e7",
+      "durationSeconds": 48.768,
+      "bytes": 780332,
+      "profile": {
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      },
+      "listeningReviewCompleted": false
+    }
+  ]
+}

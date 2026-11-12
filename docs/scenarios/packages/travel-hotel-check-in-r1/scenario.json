@@ -1,0 +1,1467 @@
+{
+  "schemaVersion": 1,
+  "scenarioKey": "travel-hotel-check-in",
+  "revision": 1,
+  "status": "draft",
+  "titleZh": "飯店櫃檯入住與周邊服務",
+  "vocabularyFilter": {
+    "system": "list",
+    "levels": [
+      "advance",
+      "basic",
+      "expert"
+    ]
+  },
+  "targetCount": 29,
+  "targets": [
+    {
+      "word": "receptionist",
+      "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "櫃檯接待員",
+      "interaction": {
+        "label": {
+          "x": 0.363,
+          "y": 0.3145
+        },
+        "object": {
+          "x": 0.363,
+          "y": 0.23
+        }
+      }
+    },
+    {
+      "word": "guest",
+      "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "住客",
+      "interaction": {
+        "label": {
+          "x": 0.5775,
+          "y": 0.3332
+        },
+        "object": {
+          "x": 0.545,
+          "y": 0.26
+        }
+      }
+    },
+    {
+      "word": "front desk",
+      "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "飯店櫃檯；接待處",
+      "interaction": {
+        "label": {
+          "x": 0.5563,
+          "y": 0.5078
+        },
+        "object": {
+          "x": 0.5,
+          "y": 0.55
+        }
+      }
+    },
+    {
+      "word": "passport",
+      "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "護照",
+      "interaction": {
+        "label": {
+          "x": 0.3325,
+          "y": 0.4632
+        },
+        "object": {
+          "x": 0.365,
+          "y": 0.39
+        }
+      }
+    },
+    {
+      "word": "key card",
+      "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "房卡",
+      "interaction": {
+        "label": {
+          "x": 0.466,
+          "y": 0.1605
+        },
+        "object": {
+          "x": 0.466,
+          "y": 0.245
+        }
+      }
+    },
+    {
+      "word": "bell",
+      "entryGuid": "078d0d47-f1ea-5158-a992-e0cf22e830bd",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "服務鈴",
+      "interaction": {
+        "label": {
+          "x": 0.5683,
+          "y": 0.4393
+        },
+        "object": {
+          "x": 0.512,
+          "y": 0.397
+        }
+      }
+    },
+    {
+      "word": "form",
+      "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "表格",
+      "interaction": {
+        "label": {
+          "x": 0.6485,
+          "y": 0.4742
+        },
+        "object": {
+          "x": 0.616,
+          "y": 0.401
+        }
+      }
+    },
+    {
+      "word": "pen",
+      "entryGuid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "筆",
+      "interaction": {
+        "label": {
+          "x": 0.6803,
+          "y": 0.2937
+        },
+        "object": {
+          "x": 0.624,
+          "y": 0.336
+        }
+      }
+    },
+    {
+      "word": "reservation",
+      "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "訂房；預訂",
+      "interaction": {
+        "label": {
+          "x": 0.447,
+          "y": 0.4725
+        },
+        "object": {
+          "x": 0.447,
+          "y": 0.388
+        }
+      }
+    },
+    {
+      "word": "luggage",
+      "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "行李（不可數）",
+      "interaction": {
+        "label": {
+          "x": 0.148,
+          "y": 0.2005
+        },
+        "object": {
+          "x": 0.148,
+          "y": 0.285
+        }
+      }
+    },
+    {
+      "word": "suitcase",
+      "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "行李箱",
+      "interaction": {
+        "label": {
+          "x": 0.173,
+          "y": 0.8245
+        },
+        "object": {
+          "x": 0.173,
+          "y": 0.74
+        }
+      }
+    },
+    {
+      "word": "cart",
+      "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "推車",
+      "interaction": {
+        "label": {
+          "x": 0.1695,
+          "y": 0.3282
+        },
+        "object": {
+          "x": 0.204,
+          "y": 0.145
+        }
+      }
+    },
+    {
+      "word": "tag",
+      "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "吊牌；標籤",
+      "interaction": {
+        "label": {
+          "x": 0.1155,
+          "y": 0.7462
+        },
+        "object": {
+          "x": 0.148,
+          "y": 0.673
+        }
+      }
+    },
+    {
+      "word": "water",
+      "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "水",
+      "interaction": {
+        "label": {
+          "x": 0.834,
+          "y": 0.1355
+        },
+        "object": {
+          "x": 0.834,
+          "y": 0.22
+        }
+      }
+    },
+    {
+      "word": "tea",
+      "entryGuid": "0479b7b6-5c9e-52ad-a0ad-315383f1dae3",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "茶",
+      "interaction": {
+        "label": {
+          "x": 0.891,
+          "y": 0.1655
+        },
+        "object": {
+          "x": 0.891,
+          "y": 0.25
+        }
+      }
+    },
+    {
+      "word": "coffee",
+      "entryGuid": "f2012afd-cdba-5945-9501-b702b7f77697",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "咖啡",
+      "interaction": {
+        "label": {
+          "x": 0.9609,
+          "y": 0.2823
+        },
+        "object": {
+          "x": 0.963,
+          "y": 0.24
+        }
+      }
+    },
+    {
+      "word": "cup",
+      "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "杯子",
+      "interaction": {
+        "label": {
+          "x": 0.89,
+          "y": 0.4065
+        },
+        "object": {
+          "x": 0.89,
+          "y": 0.322
+        }
+      }
+    },
+    {
+      "word": "toothbrush",
+      "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "牙刷",
+      "interaction": {
+        "label": {
+          "x": 0.68,
+          "y": 0.7255
+        },
+        "object": {
+          "x": 0.68,
+          "y": 0.641
+        }
+      }
+    },
+    {
+      "word": "toothpaste",
+      "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+      "list": null,
+      "teachingPos": "n",
+      "senseZh": "牙膏",
+      "interaction": {
+        "label": {
+          "x": 0.69,
+          "y": 0.9405
+        },
+        "object": {
+          "x": 0.69,
+          "y": 0.856
+        }
+      }
+    },
+    {
+      "word": "towel",
+      "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+      "list": "basic",
+      "teachingPos": "n",
+      "senseZh": "毛巾",
+      "interaction": {
+        "label": {
+          "x": 0.784,
+          "y": 0.7355
+        },
+        "object": {
+          "x": 0.784,
+          "y": 0.82
+        }
+      }
+    },
+    {
+      "word": "shampoo",
+      "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "洗髮精",
+      "interaction": {
+        "label": {
+          "x": 0.87,
+          "y": 0.7355
+        },
+        "object": {
+          "x": 0.87,
+          "y": 0.82
+        }
+      }
+    },
+    {
+      "word": "soap",
+      "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+      "list": "advance",
+      "teachingPos": "n",
+      "senseZh": "肥皂",
+      "interaction": {
+        "label": {
+          "x": 0.9689,
+          "y": 0.864
+        },
+        "object": {
+          "x": 0.938,
+          "y": 0.864
+        }
+      }
+    },
+    {
+      "word": "friendly",
+      "entryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+      "list": "basic",
+      "teachingPos": "adj",
+      "senseZh": "友善的",
+      "interaction": {
+        "label": {
+          "x": 0.247,
+          "y": 0.164
+        },
+        "object": {
+          "x": 0.347,
+          "y": 0.164
+        }
+      }
+    },
+    {
+      "word": "porter",
+      "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+      "list": "expert",
+      "teachingPos": "n",
+      "senseZh": "行李員",
+      "interaction": {
+        "label": {
+          "x": 0.0391,
+          "y": 0.5883
+        },
+        "object": {
+          "x": 0.075,
+          "y": 0.546
+        }
+      }
+    },
+    {
+      "word": "check in",
+      "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+      "list": null,
+      "teachingPos": "v",
+      "senseZh": "辦理入住",
+      "interaction": {
+        "label": {
+          "x": 0.4963,
+          "y": 0.3322
+        },
+        "object": {
+          "x": 0.44,
+          "y": 0.29
+        }
+      }
+    },
+    {
+      "word": "leave",
+      "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "留下（在此以leave luggage表達寄放行李）",
+      "interaction": {
+        "label": {
+          "x": 0.115,
+          "y": 0.5435
+        },
+        "object": {
+          "x": 0.115,
+          "y": 0.628
+        }
+      }
+    },
+    {
+      "word": "ask",
+      "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "詢問；索取",
+      "interaction": {
+        "label": {
+          "x": 0.598,
+          "y": 0.8325
+        },
+        "object": {
+          "x": 0.598,
+          "y": 0.748
+        }
+      }
+    },
+    {
+      "word": "give",
+      "entryGuid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "給予；遞給",
+      "interaction": {
+        "label": {
+          "x": 0.469,
+          "y": 0.051
+        },
+        "object": {
+          "x": 0.469,
+          "y": 0.246
+        }
+      }
+    },
+    {
+      "word": "sign",
+      "entryGuid": "4109ddc1-c73c-5bc6-8fb8-74d95b3b107f",
+      "list": "basic",
+      "teachingPos": "v",
+      "senseZh": "簽名",
+      "interaction": {
+        "label": {
+          "x": 0.6625,
+          "y": 0.4172
+        },
+        "object": {
+          "x": 0.63,
+          "y": 0.344
+        }
+      }
+    }
+  ],
+  "story": {
+    "language": "en",
+    "translationLanguage": "zh-Hant",
+    "textEn": "At the hotel front desk, guests check in with a friendly receptionist. One guest has a reservation and shows her passport. Another guest uses a pen to sign a form while the receptionist gives the woman a key card. A bell sits on the desk. Another guest asks, “Can I leave my luggage here?” A porter puts a tag on a suitcase and sets it on a cart. Beside the desk, travelers can have water, hot tea, or coffee in a cup. A nearby shelf holds a towel, soap, shampoo, a toothbrush, and toothpaste. A guest asks for a toothbrush, and another receptionist gives one to him.",
+    "textZh": "在飯店櫃檯，住客向友善的接待員辦理入住。其中一位住客有訂房，並出示她的護照。另一位住客用筆在表格上簽名，同時接待員把房卡交給那位女士。櫃檯上放著一個服務鈴。另一位住客問：「我可以把行李寄放在這裡嗎？」一位行李員在行李箱上掛上吊牌，並把它放到推車上。在櫃檯旁邊，旅客可以用杯子取用水、熱茶或咖啡。附近的架上放著毛巾、肥皂、洗髮精、牙刷與牙膏。一位住客索取牙刷，另一位接待員拿了一支給他。",
+    "sentences": [
+      {
+        "id": "s01",
+        "en": "At the hotel front desk, guests check in with a friendly receptionist.",
+        "zh": "在飯店櫃檯，住客向友善的接待員辦理入住。",
+        "wordLinks": [
+          {
+            "surface": "At",
+            "word": "at",
+            "entryGuid": "2e2ac029-b469-53b8-a11b-2f1c63f3c295",
+            "isTarget": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 3,
+            "end": 6
+          },
+          {
+            "surface": "hotel",
+            "word": "hotel",
+            "entryGuid": "be58d6e2-0954-5554-aaff-53dce6b0b295",
+            "isTarget": false,
+            "start": 7,
+            "end": 12
+          },
+          {
+            "surface": "front desk",
+            "word": "front desk",
+            "entryGuid": "7ed4358f-a905-5da4-b09e-9927b02a21b8",
+            "isTarget": true,
+            "start": 13,
+            "end": 23
+          },
+          {
+            "surface": "guests",
+            "word": "guest",
+            "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+            "isTarget": true,
+            "start": 25,
+            "end": 31
+          },
+          {
+            "surface": "check in",
+            "word": "check in",
+            "entryGuid": "3fff15bc-769e-5cbb-a408-3b0f7b72046e",
+            "isTarget": true,
+            "start": 32,
+            "end": 40
+          },
+          {
+            "surface": "with",
+            "word": "with",
+            "entryGuid": "7b751619-7c9f-5174-a0b8-92c5a2563fca",
+            "isTarget": false,
+            "start": 41,
+            "end": 45
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 46,
+            "end": 47
+          },
+          {
+            "surface": "friendly",
+            "word": "friendly",
+            "entryGuid": "d4a52a3b-301c-5aaf-a4cb-9dce7fc771d5",
+            "isTarget": true,
+            "start": 48,
+            "end": 56
+          },
+          {
+            "surface": "receptionist",
+            "word": "receptionist",
+            "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+            "isTarget": true,
+            "start": 57,
+            "end": 69
+          }
+        ]
+      },
+      {
+        "id": "s02",
+        "en": "One guest has a reservation and shows her passport.",
+        "zh": "其中一位住客有訂房，並出示她的護照。",
+        "wordLinks": [
+          {
+            "surface": "One",
+            "word": "one",
+            "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+            "isTarget": false,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "surface": "guest",
+            "word": "guest",
+            "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+            "isTarget": true,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "surface": "has",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 10,
+            "end": 13
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 14,
+            "end": 15
+          },
+          {
+            "surface": "reservation",
+            "word": "reservation",
+            "entryGuid": "2ab3adfa-132e-53aa-8b51-8840f3b24192",
+            "isTarget": true,
+            "start": 16,
+            "end": 27
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 28,
+            "end": 31
+          },
+          {
+            "surface": "shows",
+            "word": "show",
+            "entryGuid": "667d6728-5915-53f4-a67c-5e01f1d9ff58",
+            "isTarget": false,
+            "start": 32,
+            "end": 37
+          },
+          {
+            "surface": "her",
+            "word": "her",
+            "entryGuid": "340e6974-23fc-5371-af8c-cfb45df7e165",
+            "isTarget": false,
+            "start": 38,
+            "end": 41
+          },
+          {
+            "surface": "passport",
+            "word": "passport",
+            "entryGuid": "8315fb35-d242-58af-8aaa-638a878ad478",
+            "isTarget": true,
+            "start": 42,
+            "end": 50
+          }
+        ]
+      },
+      {
+        "id": "s03",
+        "en": "Another guest uses a pen to sign a form while the receptionist gives the woman a key card.",
+        "zh": "另一位住客用筆在表格上簽名，同時接待員把房卡交給那位女士。",
+        "wordLinks": [
+          {
+            "surface": "Another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "guest",
+            "word": "guest",
+            "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+            "isTarget": true,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "uses",
+            "word": "use",
+            "entryGuid": "d8c65004-8c6e-57c1-9c4f-cceddd9254cd",
+            "isTarget": false,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 19,
+            "end": 20
+          },
+          {
+            "surface": "pen",
+            "word": "pen",
+            "entryGuid": "282b8be9-2b82-55c0-bbf7-937ac14a6ae7",
+            "isTarget": true,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 25,
+            "end": 27
+          },
+          {
+            "surface": "sign",
+            "word": "sign",
+            "entryGuid": "4109ddc1-c73c-5bc6-8fb8-74d95b3b107f",
+            "isTarget": true,
+            "start": 28,
+            "end": 32
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 33,
+            "end": 34
+          },
+          {
+            "surface": "form",
+            "word": "form",
+            "entryGuid": "c632fa33-c99b-53e3-ad58-565f4f627aa4",
+            "isTarget": true,
+            "start": 35,
+            "end": 39
+          },
+          {
+            "surface": "while",
+            "word": "while",
+            "entryGuid": "48301881-a188-56c4-9630-a3ec26ca5a32",
+            "isTarget": false,
+            "start": 40,
+            "end": 45
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "surface": "receptionist",
+            "word": "receptionist",
+            "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+            "isTarget": true,
+            "start": 50,
+            "end": 62
+          },
+          {
+            "surface": "gives",
+            "word": "give",
+            "entryGuid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+            "isTarget": true,
+            "start": 63,
+            "end": 68
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 69,
+            "end": 72
+          },
+          {
+            "surface": "woman",
+            "word": "woman",
+            "entryGuid": "14939383-9986-5420-b4be-0d7ebcb34bd3",
+            "isTarget": false,
+            "start": 73,
+            "end": 78
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 79,
+            "end": 80
+          },
+          {
+            "surface": "key card",
+            "word": "key card",
+            "entryGuid": "d3df4812-78a5-59b2-ac81-adb2d6f8d5e6",
+            "isTarget": true,
+            "start": 81,
+            "end": 89
+          }
+        ]
+      },
+      {
+        "id": "s04",
+        "en": "A bell sits on the desk.",
+        "zh": "櫃檯上放著一個服務鈴。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "bell",
+            "word": "bell",
+            "entryGuid": "078d0d47-f1ea-5158-a992-e0cf22e830bd",
+            "isTarget": true,
+            "start": 2,
+            "end": 6
+          },
+          {
+            "surface": "sits",
+            "word": "sit",
+            "entryGuid": "c7cebf58-68f7-5296-b1dd-d81806393e06",
+            "isTarget": false,
+            "start": 7,
+            "end": 11
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 12,
+            "end": 14
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 15,
+            "end": 18
+          },
+          {
+            "surface": "desk",
+            "word": "desk",
+            "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+            "isTarget": false,
+            "start": 19,
+            "end": 23
+          }
+        ]
+      },
+      {
+        "id": "s05",
+        "en": "Another guest asks, “Can I leave my luggage here?”",
+        "zh": "另一位住客問：「我可以把行李寄放在這裡嗎？」",
+        "wordLinks": [
+          {
+            "surface": "Another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "surface": "guest",
+            "word": "guest",
+            "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+            "isTarget": true,
+            "start": 8,
+            "end": 13
+          },
+          {
+            "surface": "asks",
+            "word": "ask",
+            "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+            "isTarget": true,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "surface": "Can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 21,
+            "end": 24
+          },
+          {
+            "surface": "I",
+            "word": "I",
+            "entryGuid": "c3c50d4f-3aaf-5c04-a6fd-3f72ecd4c04d",
+            "isTarget": false,
+            "start": 25,
+            "end": 26
+          },
+          {
+            "surface": "leave",
+            "word": "leave",
+            "entryGuid": "8a0343b8-ec63-5130-a620-bbe27c39d368",
+            "isTarget": true,
+            "start": 27,
+            "end": 32
+          },
+          {
+            "surface": "my",
+            "word": "my",
+            "entryGuid": "873e76e6-7f20-5f40-aadc-c2e4f0a8a1ec",
+            "isTarget": false,
+            "start": 33,
+            "end": 35
+          },
+          {
+            "surface": "luggage",
+            "word": "luggage",
+            "entryGuid": "2a7f13a2-6c4f-5bdd-88f9-594c360c7ce3",
+            "isTarget": true,
+            "start": 36,
+            "end": 43
+          },
+          {
+            "surface": "here",
+            "word": "here",
+            "entryGuid": "cc8ad8fc-76f2-52e9-b835-5ef466586a6c",
+            "isTarget": false,
+            "start": 44,
+            "end": 48
+          }
+        ]
+      },
+      {
+        "id": "s06",
+        "en": "A porter puts a tag on a suitcase and sets it on a cart.",
+        "zh": "一位行李員在行李箱上掛上吊牌，並把它放到推車上。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "porter",
+            "word": "porter",
+            "entryGuid": "028397a3-6eb3-5491-8662-0b0908345941",
+            "isTarget": true,
+            "start": 2,
+            "end": 8
+          },
+          {
+            "surface": "puts",
+            "word": "put",
+            "entryGuid": "a9abf03d-4139-5d4a-b22b-8b20981e2ae6",
+            "isTarget": false,
+            "start": 9,
+            "end": 13
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 14,
+            "end": 15
+          },
+          {
+            "surface": "tag",
+            "word": "tag",
+            "entryGuid": "fb971edd-d6c7-5aca-b3ea-a3ae8f061ce3",
+            "isTarget": true,
+            "start": 16,
+            "end": 19
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 20,
+            "end": 22
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 23,
+            "end": 24
+          },
+          {
+            "surface": "suitcase",
+            "word": "suitcase",
+            "entryGuid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+            "isTarget": true,
+            "start": 25,
+            "end": 33
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 34,
+            "end": 37
+          },
+          {
+            "surface": "sets",
+            "word": "set",
+            "entryGuid": "c5104722-80c3-534b-8709-ba5b8e242d6a",
+            "isTarget": false,
+            "start": 38,
+            "end": 42
+          },
+          {
+            "surface": "it",
+            "word": "it",
+            "entryGuid": "e013a140-86ec-5d79-984d-ff1215b342a2",
+            "isTarget": false,
+            "start": 43,
+            "end": 45
+          },
+          {
+            "surface": "on",
+            "word": "on",
+            "entryGuid": "ec204d26-d736-53ae-a83b-6efc605c6eaa",
+            "isTarget": false,
+            "start": 46,
+            "end": 48
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 49,
+            "end": 50
+          },
+          {
+            "surface": "cart",
+            "word": "cart",
+            "entryGuid": "0759e0ab-6df9-5d84-b87a-8723f0cbbec4",
+            "isTarget": true,
+            "start": 51,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "id": "s07",
+        "en": "Beside the desk, travelers can have water, hot tea, or coffee in a cup.",
+        "zh": "在櫃檯旁邊，旅客可以用杯子取用水、熱茶或咖啡。",
+        "wordLinks": [
+          {
+            "surface": "Beside",
+            "word": "beside",
+            "entryGuid": "c0cf2986-2f53-5cbf-a19e-56ebf567d3db",
+            "isTarget": false,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "surface": "the",
+            "word": "the",
+            "entryGuid": "f0de0ac7-58d3-5227-8bae-c777d72510ec",
+            "isTarget": false,
+            "start": 7,
+            "end": 10
+          },
+          {
+            "surface": "desk",
+            "word": "desk",
+            "entryGuid": "c9f25e5a-0391-57d7-9c3e-e570f52857e1",
+            "isTarget": false,
+            "start": 11,
+            "end": 15
+          },
+          {
+            "surface": "travelers",
+            "word": "traveler",
+            "entryGuid": "11d0cd6f-7773-583a-9202-77bd17c9a31b",
+            "isTarget": false,
+            "start": 17,
+            "end": 26
+          },
+          {
+            "surface": "can",
+            "word": "can",
+            "entryGuid": "0da06347-b050-56e2-98ce-25dd4a36a51b",
+            "isTarget": false,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "surface": "have",
+            "word": "have",
+            "entryGuid": "26c98a82-9963-559b-a59a-32ada2a63178",
+            "isTarget": false,
+            "start": 31,
+            "end": 35
+          },
+          {
+            "surface": "water",
+            "word": "water",
+            "entryGuid": "a77ddbc4-de0a-5abd-8ec5-e9463796a63f",
+            "isTarget": true,
+            "start": 36,
+            "end": 41
+          },
+          {
+            "surface": "hot",
+            "word": "hot",
+            "entryGuid": "ae090007-85fc-5755-bfb8-15ba9163a613",
+            "isTarget": false,
+            "start": 43,
+            "end": 46
+          },
+          {
+            "surface": "tea",
+            "word": "tea",
+            "entryGuid": "0479b7b6-5c9e-52ad-a0ad-315383f1dae3",
+            "isTarget": true,
+            "start": 47,
+            "end": 50
+          },
+          {
+            "surface": "or",
+            "word": "or",
+            "entryGuid": "36fc537e-61ac-5cf7-97bc-ab53bb8712fa",
+            "isTarget": false,
+            "start": 52,
+            "end": 54
+          },
+          {
+            "surface": "coffee",
+            "word": "coffee",
+            "entryGuid": "f2012afd-cdba-5945-9501-b702b7f77697",
+            "isTarget": true,
+            "start": 55,
+            "end": 61
+          },
+          {
+            "surface": "in",
+            "word": "in",
+            "entryGuid": "2b8b2b8a-9127-5565-a861-0d8c1023d61f",
+            "isTarget": false,
+            "start": 62,
+            "end": 64
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 65,
+            "end": 66
+          },
+          {
+            "surface": "cup",
+            "word": "cup",
+            "entryGuid": "3f4ac044-15a8-5478-b999-f3cb7e8346cc",
+            "isTarget": true,
+            "start": 67,
+            "end": 70
+          }
+        ]
+      },
+      {
+        "id": "s08",
+        "en": "A nearby shelf holds a towel, soap, shampoo, a toothbrush, and toothpaste.",
+        "zh": "附近的架上放著毛巾、肥皂、洗髮精、牙刷與牙膏。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "nearby",
+            "word": "nearby",
+            "entryGuid": "1d83ac72-ccfd-5575-b47a-d3643c2d512a",
+            "isTarget": false,
+            "start": 2,
+            "end": 8
+          },
+          {
+            "surface": "shelf",
+            "word": "shelf",
+            "entryGuid": "e3d6374d-d9eb-599a-afd7-93a930699782",
+            "isTarget": false,
+            "start": 9,
+            "end": 14
+          },
+          {
+            "surface": "holds",
+            "word": "hold",
+            "entryGuid": "954342d3-d873-596f-9763-1385be49c458",
+            "isTarget": false,
+            "start": 15,
+            "end": 20
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 21,
+            "end": 22
+          },
+          {
+            "surface": "towel",
+            "word": "towel",
+            "entryGuid": "6b4451ae-c5c2-5a93-bec3-f5bcf84454ba",
+            "isTarget": true,
+            "start": 23,
+            "end": 28
+          },
+          {
+            "surface": "soap",
+            "word": "soap",
+            "entryGuid": "0927b804-fc43-5b49-96dc-fc5a9019db2c",
+            "isTarget": true,
+            "start": 30,
+            "end": 34
+          },
+          {
+            "surface": "shampoo",
+            "word": "shampoo",
+            "entryGuid": "5cfec1b4-ffd9-5eee-a091-03050d3a2921",
+            "isTarget": true,
+            "start": 36,
+            "end": 43
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 45,
+            "end": 46
+          },
+          {
+            "surface": "toothbrush",
+            "word": "toothbrush",
+            "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+            "isTarget": true,
+            "start": 47,
+            "end": 57
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 59,
+            "end": 62
+          },
+          {
+            "surface": "toothpaste",
+            "word": "toothpaste",
+            "entryGuid": "22ed6dc4-fb2b-5f32-b2a4-dc246001483f",
+            "isTarget": true,
+            "start": 63,
+            "end": 73
+          }
+        ]
+      },
+      {
+        "id": "s09",
+        "en": "A guest asks for a toothbrush, and another receptionist gives one to him.",
+        "zh": "一位住客索取牙刷，另一位接待員拿了一支給他。",
+        "wordLinks": [
+          {
+            "surface": "A",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "surface": "guest",
+            "word": "guest",
+            "entryGuid": "ac639252-b530-5342-933b-75737f80bee2",
+            "isTarget": true,
+            "start": 2,
+            "end": 7
+          },
+          {
+            "surface": "asks",
+            "word": "ask",
+            "entryGuid": "03abf7fa-221b-5664-9ec5-ae00066d6ae9",
+            "isTarget": true,
+            "start": 8,
+            "end": 12
+          },
+          {
+            "surface": "for",
+            "word": "for",
+            "entryGuid": "3c1456ad-62b2-58a1-bbd2-a89b24e7e02f",
+            "isTarget": false,
+            "start": 13,
+            "end": 16
+          },
+          {
+            "surface": "a",
+            "word": "a",
+            "entryGuid": "5cf42a19-a752-5940-9e93-25b1e69e21bf",
+            "isTarget": false,
+            "start": 17,
+            "end": 18
+          },
+          {
+            "surface": "toothbrush",
+            "word": "toothbrush",
+            "entryGuid": "c9168ced-5598-59ec-97fb-ea0aebb3b5bc",
+            "isTarget": true,
+            "start": 19,
+            "end": 29
+          },
+          {
+            "surface": "and",
+            "word": "and",
+            "entryGuid": "8368b809-999f-54a8-9960-aea0226831fa",
+            "isTarget": false,
+            "start": 31,
+            "end": 34
+          },
+          {
+            "surface": "another",
+            "word": "another",
+            "entryGuid": "2127488c-c92c-575c-8331-16dc10313e68",
+            "isTarget": false,
+            "start": 35,
+            "end": 42
+          },
+          {
+            "surface": "receptionist",
+            "word": "receptionist",
+            "entryGuid": "54daab02-3e05-5bc6-b34f-d92a5e82f47d",
+            "isTarget": true,
+            "start": 43,
+            "end": 55
+          },
+          {
+            "surface": "gives",
+            "word": "give",
+            "entryGuid": "c152897e-e0f7-51d2-9eea-18f032cc8802",
+            "isTarget": true,
+            "start": 56,
+            "end": 61
+          },
+          {
+            "surface": "one",
+            "word": "one",
+            "entryGuid": "311a657e-453a-52e8-aa50-bb623e5047f6",
+            "isTarget": false,
+            "start": 62,
+            "end": 65
+          },
+          {
+            "surface": "to",
+            "word": "to",
+            "entryGuid": "8be6b5fd-78fa-58ca-bb30-784540380f41",
+            "isTarget": false,
+            "start": 66,
+            "end": 68
+          },
+          {
+            "surface": "him",
+            "word": "him",
+            "entryGuid": "b4937bc8-89ca-5c95-875a-b400fc44aaad",
+            "isTarget": false,
+            "start": 69,
+            "end": 72
+          }
+        ]
+      }
+    ],
+    "paragraphBreakAfterSentenceIds": [
+      "s04"
+    ]
+  },
+  "assets": {
+    "referenceImage": {
+      "path": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png",
+      "sha256": "0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af"
+    },
+    "baseImage": {
+      "path": "output/imagegen/travel-hotel-check-in-base-2026-11-11-v1/base.png",
+      "sha256": "0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af",
+      "reviewed": true,
+      "containsVocabularyText": false
+    },
+    "storyAudio": {
+      "path": "data/scenario-audio/travel-scenarios-qwen17b/stories/travel-hotel-check-in/scenarios/travel-hotel-check-in/r1/2706fd2bc0c87488/story-5be1bff70c686f54.mp3",
+      "sha256": "ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161",
+      "language": "en",
+      "textSha256": "5be1bff70c686f547abe59e766d60177253759d168fb195015490b846703b8eb",
+      "durationSeconds": 44.616,
+      "bytes": 713900,
+      "profile": {
+        "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "voice": "Serena",
+        "instruct": "Speak warmly and clearly, like a kindergarten English teacher. Use a gentle, encouraging tone and careful pronunciation.",
+        "lang_code": "English",
+        "response_format": "mp3"
+      }
+    }
+  },
+  "generationPlan": {
+    "storyAudio": {
+      "status": "generated-awaiting-listening-review",
+      "generated": true,
+      "endpoint": "http://192.168.1.124:8000",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    }
+  },
+  "contentReview": {
+    "status": "offline-materials-complete-awaiting-listening-and-browser-ui-review",
+    "sourceStatus": "canonical-prepared-production-wordbank-pending",
+    "plannedEntryGuids": [
+      "3b5cef7a-9d6d-5a47-acd5-3fcd25a05283",
+      "ab98d6ac-e941-5978-b758-cc69b760cf87",
+      "debdd36d-d229-531b-a5e5-efd7517fa4a9"
+    ],
+    "coordinateStatus": "103-points-statically-reviewed-3-corrections-applied-browser-ui-pending",
+    "audioStatus": "complete-decode-and-near-silence-screen-passed-listening-pending",
+    "productionImport": false,
+    "publish": false,
+    "testImportStatus": "draft-r1-in-protected-test-database"
+  },
+  "vocabularyMode": "user-specified"
+}

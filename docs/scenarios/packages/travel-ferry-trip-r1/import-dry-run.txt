@@ -1,0 +1,23 @@
+{
+  "scenarioKey": "travel-ferry-trip",
+  "revision": 1,
+  "targets": 19,
+  "image": {
+    "relativePath": "scenarios/travel-ferry-trip/1/5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d.png",
+    "sha256": "5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d",
+    "bytes": 2377470,
+    "contentType": "image/png",
+    "width": 1672,
+    "height": 941
+  },
+  "audio": {
+    "relativePath": "scenarios/travel-ferry-trip/1/80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e.mp3",
+    "sha256": "80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e",
+    "bytes": 397868,
+    "contentType": "audio/mpeg",
+    "textSha256": "1e552088c27582ffe05502dd7452517545462f2f0bbe4b4d78b0a6466e64d748"
+  },
+  "importStatus": "draft",
+  "mode": "dry-run"
+}
+離線檢查完成，未連線資料庫、複製媒體或發布。

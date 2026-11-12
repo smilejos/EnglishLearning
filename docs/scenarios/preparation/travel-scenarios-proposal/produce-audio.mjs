@@ -1,0 +1,54 @@
+// 僅本批離線產音：不寫DB/volume、不匯入/發布。預設dry-run，真實產音須雙opt-in。
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+const repo=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../../../..');
+const base=path.dirname(fileURLToPath(import.meta.url));
+const hash=x=>createHash('sha256').update(x).digest('hex');
+const {generateBatch,withBatchLock}=await import(pathToFileURL(path.join(repo,'scripts/generate-wordbank-audio.mjs')));
+const {validatePhonicsMp3}=await import(pathToFileURL(path.join(repo,'scripts/phonics-audio-quality.mjs')));
+const {planScenarioAudio}=await import(pathToFileURL(path.join(repo,'scripts/generate-scenario-audio.mjs')));
+const {validateScenarioPackage}=await import(pathToFileURL(path.join(repo,'scripts/check-scenario-package.mjs')));
+const {createQwenGradioFetch}=await import(pathToFileURL(path.join(repo,'scripts/scenarios/qwen-gradio-client.mjs')));
+const args=process.argv.slice(2);for(const a of args)if(!['--generate','--pilot'].includes(a))throw new Error('未知參數 '+a);
+const plan=JSON.parse(await fs.readFile(path.join(base,'lan-generation-plan.json'),'utf8'));
+const output=path.join(repo,'data/scenario-audio/travel-scenarios-qwen17b');
+console.log(JSON.stringify({dryRun:!args.includes('--generate'),origin:plan.origin,profile:plan.profile,profileHash:plan.profileHash,counts:plan.newGenerationCounts,groups:plan.groups.map(g=>({key:g.scenarioKey,wordJobs:g.jobs.length}))}));
+if(!args.includes('--generate'))process.exit(0);
+if(process.env.TRAVEL_TTS_REAL!=='1')throw new Error('真實產音須TRAVEL_TTS_REAL=1及--generate；缺少任一不得排程');
+if(hash(await fs.readFile(path.join(repo,'source/vocabulary-database.json')))!==plan.canonicalSha256)throw new Error('canonical來源已變，先重新審閱缺音計畫');
+for(const group of plan.groups){const pkg=JSON.parse(await fs.readFile(path.join(repo,group.packagePath),'utf8'));const check=await validateScenarioPackage(pkg,{repoRoot:repo});if(!check.valid)throw new Error(group.scenarioKey+':'+check.errors.join(';'));}
+const controller=new AbortController();process.on('SIGINT',()=>controller.abort());process.on('SIGTERM',()=>controller.abort());
+await fs.mkdir(output,{recursive:true});const eventsPath=path.join(output,'gradio-events.jsonl');
+const eventWrites=[];
+const fetchAdapter=createQwenGradioFetch({origin:plan.origin,profile:plan.profile,onEvent:event=>{eventWrites.push(fs.appendFile(eventsPath,JSON.stringify({...event,at:new Date().toISOString()})+'\n'));}});
+const wordDir=path.join(output,'wordbank-assets');await fs.mkdir(wordDir,{recursive:true});
+const reports=[];
+for(const group of plan.groups){
+ if(controller.signal.aborted)throw new Error('收到停止訊號；已完成素材保留');
+ let jobs=group.jobs;if(args.includes('--pilot'))jobs=jobs.slice(0,1);
+ const words=await withBatchLock(wordDir,()=>generateBatch({jobs,outputDir:wordDir,profile:plan.profile,endpoint:plan.origin,fetchImpl:fetchAdapter,validate:validatePhonicsMp3,retries:0,signal:controller.signal}));
+ await Promise.all(eventWrites);
+ if(words.failed.length||words.stoppedReason)throw new Error('本場字庫產音未完成：'+JSON.stringify(words));
+ reports.push({scenarioKey:group.scenarioKey,words});
+ if(args.includes('--pilot'))break;
+ const pkgPath=path.join(repo,group.packagePath);const pkg=JSON.parse(await fs.readFile(pkgPath,'utf8'));const textHash=hash(pkg.story.textEn);const storyJob=planScenarioAudio(pkg,plan.profile);
+ const storyDir=path.join(output,'stories',group.scenarioKey);await fs.mkdir(storyDir,{recursive:true});
+ const narration=await withBatchLock(storyDir,()=>generateBatch({jobs:[storyJob],outputDir:storyDir,profile:plan.profile,endpoint:plan.origin,fetchImpl:fetchAdapter,validate:validatePhonicsMp3,retries:0,signal:controller.signal}));
+ await Promise.all(eventWrites);
+ if(narration.failed.length||narration.stoppedReason)throw new Error('本場旁白產音未完成：'+JSON.stringify(narration));
+ const actualPkg=JSON.parse(await fs.readFile(pkgPath,'utf8'));if(hash(actualPkg.story.textEn)!==textHash)throw new Error('產音期間故事改變，保留檔案但不綁定');
+ if(hash(await fs.readFile(path.join(repo,'source/vocabulary-database.json')))!==plan.canonicalSha256)throw new Error('產音期間字庫改變，保留檔案但不繼續');
+ const manifest=JSON.parse(await fs.readFile(path.join(storyDir,'manifest.json'),'utf8'));const entry=manifest.entries.find(e=>e.assetGuid===storyJob.assetGuid&&e.textHash===storyJob.textHash);if(!entry)throw new Error('缺已生成旁白metadata');
+ const file=path.join(storyDir,entry.relativePath);const bytes=await fs.readFile(file);
+ actualPkg.assets.storyAudio={path:path.relative(repo,file).split(path.sep).join('/'),sha256:hash(bytes),language:'en',textSha256:textHash,durationSeconds:entry.durationSeconds,bytes:entry.bytes,profile:plan.profile};
+ actualPkg.generationPlan.storyAudio={status:'generated-awaiting-listening-review',generated:true,endpoint:plan.origin,model:plan.profile.model};
+ actualPkg.contentReview.audioStatus='complete-decode-and-near-silence-screen-passed-listening-pending';actualPkg.contentReview.sourceStatus='canonical-prepared-production-wordbank-pending';
+ const after=await validateScenarioPackage(actualPkg,{repoRoot:repo});if(!after.valid||!after.publishReady)throw new Error('本場生成後套件檢查失敗：'+JSON.stringify(after));
+ await fs.writeFile(pkgPath,JSON.stringify(actualPkg,null,2)+'\n');
+ reports.at(-1).narration=narration;reports.at(-1).packageCheck=after;
+ await fs.writeFile(path.join(output,'batch-progress.json'),JSON.stringify({status:'per-scene-production',reports},null,2)+'\n');
+ console.log(JSON.stringify({sceneComplete:group.scenarioKey,publishReady:after.publishReady,listeningReview:false,productionImported:false}));
+}
+await Promise.all(eventWrites);await fs.writeFile(path.join(output,args.includes('--pilot')?'pilot-report.json':'batch-report.json'),JSON.stringify({status:args.includes('--pilot')?'pilot-complete':'all-four-offline-audio-complete',profile:plan.profile,profileHash:plan.profileHash,reports,productionImported:false},null,2)+'\n');

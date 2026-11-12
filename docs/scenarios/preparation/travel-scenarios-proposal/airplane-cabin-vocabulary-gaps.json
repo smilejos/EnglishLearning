@@ -1,0 +1,66 @@
+{
+  "scenarioKey": "travel-airplane-cabin",
+  "status": "planning-only-not-importable",
+  "requiredEntries": [
+    {
+      "word": "business class",
+      "guid": null,
+      "required": true,
+      "status": "exact-entry-absent-in-canonical",
+      "decision": "使用者指定艙等不可假用business詞條；先依概念產圖，完整教材前需離線增量與授權正式補詞。"
+    },
+    {
+      "word": "economy class",
+      "guid": null,
+      "required": true,
+      "status": "exact-entry-absent-in-canonical",
+      "decision": "使用者指定艙等不可假用economy詞條；先依概念產圖，完整教材前需離線增量與授權正式補詞。"
+    }
+  ],
+  "optionalEntries": [
+    {
+      "word": "overhead compartment",
+      "guid": null,
+      "required": false,
+      "status": "exact-entry-absent-in-canonical",
+      "decision": "已有overhead bin完整詞條可表達同概念。"
+    },
+    {
+      "word": "meal cart",
+      "guid": null,
+      "required": false,
+      "status": "exact-entry-absent-in-canonical",
+      "decision": "本輪以cart詞條與餐車圖中語境表達，不需立即新增完整片語。"
+    },
+    {
+      "word": "trolley",
+      "guid": null,
+      "required": false,
+      "status": "exact-entry-absent-in-canonical",
+      "decision": "可沿用cart。"
+    },
+    {
+      "word": "seatback screen",
+      "guid": null,
+      "required": false,
+      "status": "exact-entry-absent-in-canonical",
+      "decision": "沿用screen並明確畫在椅背上。"
+    },
+    {
+      "word": "seat belt",
+      "guid": null,
+      "required": false,
+      "status": "exact-entry-absent-in-canonical",
+      "decision": "使用者未特別指定；可作支撐畫面，不列本輪主詞。"
+    }
+  ],
+  "guidPolicy": "缺詞GUID保留null，尚未配置正式id或子項GUID；不能直接當字庫匯入增量或情境套件。",
+  "productionWriteAuthorized": false,
+  "notes": [
+    "本輪可依指定概念生成圖片；正式詞卡與故事映射需先補必要詞條。",
+    "沒有將business/economy單詞冒充完整艙等詞條。"
+  ],
+  "currentPreparationStatus": "canonical-added-production-pending",
+  "currentPreparationReview": "import-preparation-review.md",
+  "historyScope": "原始圖片製作時的缺詞／補畫規劃保留作歷史；目前狀態以currentPreparationReview與batch.importPreparation為準。"
+}

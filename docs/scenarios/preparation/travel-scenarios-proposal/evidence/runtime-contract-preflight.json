@@ -1,0 +1,306 @@
+{
+  "checkedAt": "2026-11-11T17:02:12.899Z",
+  "processCwd": "/app/api",
+  "resolvedShared": "/app/shared/src/index.ts",
+  "resolvedSharedRealPath": "/app/shared/src/index.ts",
+  "maxTargets": 29,
+  "files": [
+    {
+      "relativePath": "shared/src/scenarios.ts",
+      "path": "/app/shared/src/scenarios.ts",
+      "sha256": "ecb18652d68abaa833ce1540589ca394ff2a16bed6e42f2dfb40fd3600f53fe9",
+      "bytes": 11783,
+      "keyLines": [
+        {
+          "line": 9,
+          "text": "export const SCENARIO_MAX_TARGETS = 29;"
+        },
+        {
+          "line": 13,
+          "text": "export function validateScenarioParagraphBreaks(story: { sentences: Array<{ id: string }>; paragraphBreakAfterSentenceIds?: string[] }, ctx: z.RefinementCtx): void {"
+        },
+        {
+          "line": 14,
+          "text": "  const breaks = story.paragraphBreakAfterSentenceIds;"
+        },
+        {
+          "line": 29,
+          "text": "export const ScenarioContentSchema = z.object({"
+        },
+        {
+          "line": 31,
+          "text": "  vocabularyMode: z.literal(\"user-specified\").optional(),"
+        },
+        {
+          "line": 34,
+          "text": "  targetCount: z.number().int().min(1).max(SCENARIO_MAX_TARGETS), targets: z.array(ScenarioTargetSchema).min(1).max(SCENARIO_MAX_TARGETS),"
+        },
+        {
+          "line": 37,
+          "text": "    paragraphBreakAfterSentenceIds: ScenarioParagraphBreakIdsSchema.optional(),"
+        },
+        {
+          "line": 45,
+          "text": "  const userSpecified = value.vocabularyMode === \"user-specified\";"
+        },
+        {
+          "line": 48,
+          "text": "  if (!userSpecified && (!levels.length || levels.some(level => level !== \"basic\" && level !== \"advance\") ||"
+        },
+        {
+          "line": 55,
+          "text": "    validateScenarioWordLinkSpans(sentence.en, sentence.wordLinks, userSpecified).forEach(fail);"
+        },
+        {
+          "line": 64,
+          "text": "export type ScenarioContent = z.infer<typeof ScenarioContentSchema>;"
+        }
+      ],
+      "repo": {
+        "sha256": "ecb18652d68abaa833ce1540589ca394ff2a16bed6e42f2dfb40fd3600f53fe9",
+        "bytes": 11783
+      },
+      "sameAsRepo": true
+    },
+    {
+      "relativePath": "shared/src/scenario-word-links.mjs",
+      "path": "/app/shared/src/scenario-word-links.mjs",
+      "sha256": "29bab34ded71fd4cb9b7e72995cf82dc5094ca6706468ed0b8a8c328becabb24",
+      "bytes": 2064,
+      "keyLines": [
+        {
+          "line": 9,
+          "text": "export function validateScenarioWordLinkSpans(text, links, userSpecified = false) {"
+        },
+        {
+          "line": 29,
+          "text": "        (fullPhrase && (!userSpecified || normalizedPhrase(link.surface) !== normalizedPhrase(link.word)))) {"
+        }
+      ],
+      "repo": {
+        "sha256": "29bab34ded71fd4cb9b7e72995cf82dc5094ca6706468ed0b8a8c328becabb24",
+        "bytes": 2064
+      },
+      "sameAsRepo": true
+    },
+    {
+      "relativePath": "shared/src/repo/scenarios.ts",
+      "path": "/app/shared/src/repo/scenarios.ts",
+      "sha256": "5784865593f6d59f0f6991ac5be4e1fed12645c1a48f996523d841761b619468",
+      "bytes": 11042,
+      "keyLines": [
+        {
+          "line": 2,
+          "text": "import { ScenarioContentSchema, scenarioImage, scenarioRevisionHash, validateScenarioMedia, verifyScenarioAssets,"
+        },
+        {
+          "line": 31,
+          "text": "  if (content.vocabularyMode !== \"user-specified\") {"
+        },
+        {
+          "line": 43,
+          "text": "  const content = ScenarioContentSchema.parse(input);"
+        },
+        {
+          "line": 103,
+          "text": "      titleZh: content.titleZh, ...(content.vocabularyMode ? { vocabularyMode: content.vocabularyMode } : {}), ...(content.learningMode ? { learningMode: content.learningMode } : {}), vocabularyFilter: content.vocabularyFilter, targetCount: content.targetCount,"
+        },
+        {
+          "line": 137,
+          "text": "    const content = ScenarioContentSchema.parse(record.content);"
+        }
+      ],
+      "repo": {
+        "sha256": "5784865593f6d59f0f6991ac5be4e1fed12645c1a48f996523d841761b619468",
+        "bytes": 11042
+      },
+      "sameAsRepo": true
+    },
+    {
+      "relativePath": "api/src/routes/scenarios.ts",
+      "path": "/app/api/src/routes/scenarios.ts",
+      "sha256": "3fa64e2a36314a6b0c463d25fdde9001d92a4bf732a4e0098f6165bf88688e6a",
+      "bytes": 6553,
+      "keyLines": [
+        {
+          "line": 4,
+          "text": "  ScenarioKeySchema, ScenarioContentSchema, ScenarioAssetSchema, ScenarioConflictError, ScenarioValidationError,"
+        },
+        {
+          "line": 13,
+          "text": "    const body = z.object({ content: ScenarioContentSchema, media: z.object({ image: ScenarioAssetSchema, audio: ScenarioAssetSchema }).strict() }).strict().safeParse(request.body);"
+        }
+      ],
+      "repo": {
+        "sha256": "3fa64e2a36314a6b0c463d25fdde9001d92a4bf732a4e0098f6165bf88688e6a",
+        "bytes": 6553
+      },
+      "sameAsRepo": true
+    }
+  ],
+  "contentChecks": [
+    {
+      "path": "docs/scenarios/packages/travel-airplane-cabin-r1/scenario.json",
+      "scenarioKey": "travel-airplane-cabin",
+      "targetCount": 29,
+      "vocabularyMode": "user-specified",
+      "paragraphBreaks": [
+        "s04"
+      ],
+      "valid": true,
+      "errors": [],
+      "storyAudioPresent": false
+    },
+    {
+      "path": "docs/scenarios/packages/travel-airport-gate-r1/scenario.json",
+      "scenarioKey": "travel-airport-gate",
+      "targetCount": 26,
+      "vocabularyMode": "user-specified",
+      "paragraphBreaks": [],
+      "valid": true,
+      "errors": [],
+      "storyAudioPresent": false
+    },
+    {
+      "path": "docs/scenarios/packages/travel-ferry-trip-r1/scenario.json",
+      "scenarioKey": "travel-ferry-trip",
+      "targetCount": 19,
+      "vocabularyMode": "default-graded",
+      "paragraphBreaks": [],
+      "valid": true,
+      "errors": [],
+      "storyAudioPresent": false
+    },
+    {
+      "path": "docs/scenarios/packages/travel-hotel-check-in-r1/scenario.json",
+      "scenarioKey": "travel-hotel-check-in",
+      "targetCount": 29,
+      "vocabularyMode": "user-specified",
+      "paragraphBreaks": [
+        "s04"
+      ],
+      "valid": true,
+      "errors": [],
+      "storyAudioPresent": false
+    }
+  ],
+  "container": {
+    "containerId": "10509f56c7ebe3e4e008d14e7f41531144bf3df7ce78beb6c6fdf22b3a0b6082",
+    "name": "/englishlearning-api-1",
+    "imageId": "sha256:72c1e6d03a0840a1b00f2172a9ae4add7562341fbc400b34e9391b7e7be66b6a",
+    "imageTag": "englishlearning-api",
+    "created": "2026-11-11T09:43:48.021063924Z",
+    "startedAt": "2026-11-11T09:43:49.793601883Z",
+    "workingDir": "/app/api",
+    "entrypoint": [
+      "docker-entrypoint.sh"
+    ],
+    "cmd": [
+      "npx",
+      "tsx",
+      "src/server.ts"
+    ]
+  },
+  "allFilesSameAsRepo": true,
+  "allFourContentSchemasAccepted": true,
+  "backupInventory": {
+    "root": "/Users/jos/EnglishLearningBackups",
+    "rootExists": true,
+    "latestEntries": [],
+    "verificationStatus": "file-metadata-only-not-revalidated",
+    "backupScriptExecuted": false,
+    "retentionOrDeletionPerformed": false,
+    "documentedCandidates": [
+      {
+        "directory": "/Users/jos/EnglishLearningBackups/audio-migration-20261110-CNcdeA",
+        "files": [
+          {
+            "name": "db.dump",
+            "path": "/Users/jos/EnglishLearningBackups/audio-migration-20261110-CNcdeA/db.dump",
+            "bytes": 7995098,
+            "modifiedAt": "2026-11-10T11:58:01.490282+00:00"
+          },
+          {
+            "name": "audio.tgz",
+            "path": "/Users/jos/EnglishLearningBackups/audio-migration-20261110-CNcdeA/audio.tgz",
+            "bytes": 1112076676,
+            "modifiedAt": "2026-11-10T11:58:55.116225+00:00"
+          },
+          {
+            "name": "images.tgz",
+            "path": "/Users/jos/EnglishLearningBackups/audio-migration-20261110-CNcdeA/images.tgz",
+            "exists": false
+          }
+        ],
+        "expectedFilesPresentByMetadataOnly": false,
+        "verifiedThisRun": false,
+        "restoredThisRun": false,
+        "source": "existing documented backup path; metadata only"
+      },
+      {
+        "directory": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-011011",
+        "files": [
+          {
+            "name": "db.dump",
+            "path": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-011011/db.dump",
+            "bytes": 7978628,
+            "modifiedAt": "2026-11-07T17:10:11.908814+00:00"
+          },
+          {
+            "name": "audio.tgz",
+            "path": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-011011/audio.tgz",
+            "bytes": 1106725711,
+            "modifiedAt": "2026-11-07T17:10:42.416544+00:00"
+          },
+          {
+            "name": "images.tgz",
+            "path": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-011011/images.tgz",
+            "bytes": 135513549,
+            "modifiedAt": "2026-11-07T17:10:46.185447+00:00"
+          }
+        ],
+        "expectedFilesPresentByMetadataOnly": true,
+        "verifiedThisRun": false,
+        "restoredThisRun": false,
+        "source": "existing documented backup path; metadata only"
+      },
+      {
+        "directory": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-000837",
+        "files": [
+          {
+            "name": "db.dump",
+            "path": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-000837/db.dump",
+            "bytes": 7978630,
+            "modifiedAt": "2026-11-07T16:08:37.835257+00:00"
+          },
+          {
+            "name": "audio.tgz",
+            "path": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-000837/audio.tgz",
+            "bytes": 1106725711,
+            "modifiedAt": "2026-11-07T16:09:11.729053+00:00"
+          },
+          {
+            "name": "images.tgz",
+            "path": "/Users/jos/Documents/program/Learning/EnglishLearning/data/backups/time-prepositions-production/20261108-000837/images.tgz",
+            "bytes": 135513549,
+            "modifiedAt": "2026-11-07T16:09:15.687818+00:00"
+          }
+        ],
+        "expectedFilesPresentByMetadataOnly": true,
+        "verifiedThisRun": false,
+        "restoredThisRun": false,
+        "source": "existing documented backup path; metadata only"
+      }
+    ],
+    "notes": [
+      "預設備份資料夾存在，但以數字開頭的時間戳目錄查無；後續依既有正式紀錄定位audio-migration-20261110-CNcdeA及Repo內time-prepositions備份。",
+      "最新已定位2026-11-10 DB+audio備份不含images.tgz；2026-11-08有三檔完整備份候選。這些都不是本批匯入前即時備份，未重新驗證。"
+    ]
+  },
+  "limitations": [
+    "只驗證容器實際source code及對四份目前套件抽出的content schema，沒有執行HTTP路由。",
+    "storyAudio目前四場皆缺，沒有宣稱正式media/音訊/資料庫前置條件完整。",
+    "沒有API route、DB/volume寫入、啟動服務、部署或migration。",
+    "備份只讀取既有檔案位置/大小/mtime，未重新驗證hash/完整解析/還原，不能當成即時pre-import備份gate通過。"
+  ]
+}

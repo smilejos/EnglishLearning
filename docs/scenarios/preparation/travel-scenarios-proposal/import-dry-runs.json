@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "reports": [
+    {
+      "key": "travel-airport-gate",
+      "exitCode": 0,
+      "passed": true,
+      "reason": "{\n  \"scenarioKey\": \"travel-airport-gate\",\n  \"revision\": 1,\n  \"targets\": 26,\n  \"image\": {\n    \"relativePath\": \"scenarios/travel-airport-gate/1/5f29fc06a1c411adfc45d81ea7ebedb299a596883c022e01ecea36457e931258.png\",\n    \"sha256\": \"5f29fc06a1c411adfc45d81ea7ebedb299a596883c022e01ecea36457e931258\",\n    \"bytes\": 2073698,\n    \"contentType\": \"image/png\",\n    \"width\": 1672,\n    \"height\": 941\n  },\n  \"audio\": {\n    \"relativePath\": \"scenarios/travel-airport-gate/1/59203d214cf96b9b4c55be2464fac11536150b752937b8a6b0cbce5da916d929.mp3\",\n    \"sha256\": \"59203d214cf96b9b4c55be2464fac11536150b752937b8a6b0cbce5da916d929\",\n    \"bytes\": 529580,\n    \"contentType\": \"audio/mpeg\",\n    \"textSha256\": \"99a9d6b90fa379fc15b8d294a50c95a410f8284e3f3854b77a5150d1a428aefc\"\n  },\n  \"importStatus\": \"draft\",\n  \"mode\": \"dry-run\"\n}\n離線檢查完成，未連線資料庫、複製媒體或發布。"
+    },
+    {
+      "key": "travel-hotel-check-in",
+      "exitCode": 0,
+      "passed": true,
+      "reason": "{\n  \"scenarioKey\": \"travel-hotel-check-in\",\n  \"revision\": 1,\n  \"targets\": 29,\n  \"image\": {\n    \"relativePath\": \"scenarios/travel-hotel-check-in/1/0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af.png\",\n    \"sha256\": \"0491d79e485596dd00bf803c87b3d0e858075021a6479e4f4e9a4adb57dd86af\",\n    \"bytes\": 2403165,\n    \"contentType\": \"image/png\",\n    \"width\": 1672,\n    \"height\": 941\n  },\n  \"audio\": {\n    \"relativePath\": \"scenarios/travel-hotel-check-in/1/ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161.mp3\",\n    \"sha256\": \"ed4a50f9ec0feaf2121dabe0cfe47db3715b6fe33296c5330980f24035e73161\",\n    \"bytes\": 713900,\n    \"contentType\": \"audio/mpeg\",\n    \"textSha256\": \"5be1bff70c686f547abe59e766d60177253759d168fb195015490b846703b8eb\"\n  },\n  \"importStatus\": \"draft\",\n  \"mode\": \"dry-run\"\n}\n離線檢查完成，未連線資料庫、複製媒體或發布。"
+    },
+    {
+      "key": "travel-ferry-trip",
+      "exitCode": 0,
+      "passed": true,
+      "reason": "{\n  \"scenarioKey\": \"travel-ferry-trip\",\n  \"revision\": 1,\n  \"targets\": 19,\n  \"image\": {\n    \"relativePath\": \"scenarios/travel-ferry-trip/1/5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d.png\",\n    \"sha256\": \"5a7a115aa21a44b5583821dcf215d213a180c63871e8524df3b389b69d51334d\",\n    \"bytes\": 2377470,\n    \"contentType\": \"image/png\",\n    \"width\": 1672,\n    \"height\": 941\n  },\n  \"audio\": {\n    \"relativePath\": \"scenarios/travel-ferry-trip/1/80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e.mp3\",\n    \"sha256\": \"80869bdbf467876d9bcae833f32b9d05f2f7136b70ddac5bc70b950e890a130e\",\n    \"bytes\": 397868,\n    \"contentType\": \"audio/mpeg\",\n    \"textSha256\": \"1e552088c27582ffe05502dd7452517545462f2f0bbe4b4d78b0a6466e64d748\"\n  },\n  \"importStatus\": \"draft\",\n  \"mode\": \"dry-run\"\n}\n離線檢查完成，未連線資料庫、複製媒體或發布。"
+    },
+    {
+      "key": "travel-airplane-cabin",
+      "exitCode": 0,
+      "passed": true,
+      "reason": "{\n  \"scenarioKey\": \"travel-airplane-cabin\",\n  \"revision\": 1,\n  \"targets\": 29,\n  \"image\": {\n    \"relativePath\": \"scenarios/travel-airplane-cabin/1/723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0.png\",\n    \"sha256\": \"723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0\",\n    \"bytes\": 2534227,\n    \"contentType\": \"image/png\",\n    \"width\": 1672,\n    \"height\": 941\n  },\n  \"audio\": {\n    \"relativePath\": \"scenarios/travel-airplane-cabin/1/5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba.mp3\",\n    \"sha256\": \"5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba\",\n    \"bytes\": 780332,\n    \"contentType\": \"audio/mpeg\",\n    \"textSha256\": \"01faf649050e17ae9b2e5d36f9d7e2a5691f34e6e98e924c3a2494cb9e6705e7\"\n  },\n  \"importStatus\": \"draft\",\n  \"mode\": \"dry-run\"\n}\n離線檢查完成，未連線資料庫、複製媒體或發布。"
+    }
+  ]
+}

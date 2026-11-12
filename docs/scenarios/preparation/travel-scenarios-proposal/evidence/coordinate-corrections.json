@@ -1,0 +1,41 @@
+[
+  {
+    "scenarioKey": "travel-hotel-check-in",
+    "word": "cart",
+    "oldObject": {
+      "x": 0.137,
+      "y": 0.255
+    },
+    "newObject": {
+      "x": 0.204,
+      "y": 0.145
+    },
+    "reason": "舊點落在推車中的藍色行李箱；改指推車右上金色拱架。"
+  },
+  {
+    "scenarioKey": "travel-ferry-trip",
+    "word": "bench",
+    "oldObject": {
+      "x": 0.518,
+      "y": 0.518
+    },
+    "newObject": {
+      "x": 0.445,
+      "y": 0.46
+    },
+    "reason": "舊點落在長椅上的旅行袋；改指旅行袋左上方未遮蔽的木製椅背。"
+  },
+  {
+    "scenarioKey": "travel-airplane-cabin",
+    "word": "overhead bin",
+    "oldObject": {
+      "x": 0.346,
+      "y": 0.087
+    },
+    "newObject": {
+      "x": 0.175,
+      "y": 0.105
+    },
+    "reason": "舊點落在開放行李艙內的藍色行李箱；改指左側清楚可見的頭頂行李艙白色艙門。"
+  }
+]

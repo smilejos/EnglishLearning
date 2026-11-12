@@ -1,0 +1,31 @@
+{
+  "status": "running-four-test-drafts-readonly-web",
+  "database": "english_learning_test",
+  "databaseResolver": "@el/shared/testing.resolveTestDatabaseUrl",
+  "testDatabaseService": "db-test:5432",
+  "hostTestDatabasePort": 5433,
+  "network": "englishlearning-test_default",
+  "apiImage": "sha256:72c1e6d03a0840a1b00f2172a9ae4add7562341fbc400b34e9391b7e7be66b6a",
+  "audioVolume": "englishlearning_travel_20261112_audio_test",
+  "imagesVolume": "englishlearning_travel_20261112_images_test",
+  "reuseSourceVolume": "englishlearning_audio",
+  "reuseSourceMountReadOnly": true,
+  "apiHostBinding": "127.0.0.1:5180",
+  "frontendHostBinding": "127.0.0.1:5181",
+  "productionChanged": false,
+  "apiContainer": "englishlearning-travel-preview-api-test",
+  "apiContainerId": "b911bc418e3fe3fd85deae3d490946d08ca544d05f563fbe83c992189e4950c9",
+  "selectedWordEntries": 163,
+  "wordbankAssets": 720,
+  "drafts": 4,
+  "testMediaFiles": 728,
+  "mediaHash": "0099bcd32be4437957cbd0aafb8f4f8f63c956822af3f3e74f1ed738da33aee3",
+  "httpVerified": true,
+  "browserUIVerified": false,
+  "urls": [
+    "http://127.0.0.1:5181/#/scenarios/travel-airport-gate/revisions/1",
+    "http://127.0.0.1:5181/#/scenarios/travel-hotel-check-in/revisions/1",
+    "http://127.0.0.1:5181/#/scenarios/travel-ferry-trip/revisions/1",
+    "http://127.0.0.1:5181/#/scenarios/travel-airplane-cabin/revisions/1"
+  ]
+}

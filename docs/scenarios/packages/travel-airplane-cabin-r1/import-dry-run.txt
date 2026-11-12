@@ -1,0 +1,23 @@
+{
+  "scenarioKey": "travel-airplane-cabin",
+  "revision": 1,
+  "targets": 29,
+  "image": {
+    "relativePath": "scenarios/travel-airplane-cabin/1/723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0.png",
+    "sha256": "723c6966c16a7017e4619bb5f9d7d603509135c52a85cc4d4ed950de48f21cc0",
+    "bytes": 2534227,
+    "contentType": "image/png",
+    "width": 1672,
+    "height": 941
+  },
+  "audio": {
+    "relativePath": "scenarios/travel-airplane-cabin/1/5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba.mp3",
+    "sha256": "5037a3dbb2f78f1288b7daa770ee888d81dc9e8d94bc4bc3f5f606f6f89f52ba",
+    "bytes": 780332,
+    "contentType": "audio/mpeg",
+    "textSha256": "01faf649050e17ae9b2e5d36f9d7e2a5691f34e6e98e924c3a2494cb9e6705e7"
+  },
+  "importStatus": "draft",
+  "mode": "dry-run"
+}
+離線檢查完成，未連線資料庫、複製媒體或發布。

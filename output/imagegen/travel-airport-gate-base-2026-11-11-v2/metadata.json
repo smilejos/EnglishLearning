@@ -1,0 +1,20 @@
+{
+  "scenarioKey": "travel-airport-gate",
+  "assetVersion": 2,
+  "tool": "built-in image_gen.imagegen",
+  "operation": "edit",
+  "sourcePath": "/Users/jos/.codex/generated_images/01a1cb0d-fbe0-7112-b741-d365eccd3e74/exec-32d7859f-81f1-4571-81a7-eb95224e7f7f.png",
+  "editTargetPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v1/base.png",
+  "editTargetSha256": "cfafa477593478c2199cc0616ea2a65b60ff0e2f3bfda33af1a9ae718178b3be",
+  "repositoryPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png",
+  "promptPath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/prompt.txt",
+  "sha256": "5f29fc06a1c411adfc45d81ea7ebedb299a596883c022e01ecea36457e931258",
+  "bytes": 2073698,
+  "width": 1672,
+  "height": 941,
+  "transparentBackground": false,
+  "status": "generated-visually-inspected-awaiting-user-review",
+  "generatedOn": "2026-11-11",
+  "productionImported": false,
+  "published": false
+}

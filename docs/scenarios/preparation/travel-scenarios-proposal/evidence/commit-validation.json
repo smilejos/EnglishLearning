@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-12T09:34:17.190345+00:00",
+  "npmTest": {
+    "passed": true,
+    "tests": 933,
+    "workspaces": 5
+  },
+  "typecheck": {
+    "passed": true,
+    "workspaces": 5
+  },
+  "travelToolsTest": {
+    "passed": true,
+    "tests": 23,
+    "command": "node --import tsx --test scripts/scenarios/qwen-gradio-client.test.mjs docs/scenarios/preparation/travel-scenarios-proposal/test-preview-api.test.mjs"
+  },
+  "paidGeneration": false,
+  "productionDatabaseWritten": false,
+  "note": "本紀錄為發布完成後的提交前驗證；先前production-publication-summary保留發布當輪快照，不回寫歷史檢查旗標。",
+  "testPreviewRestored": {
+    "drafts": 4,
+    "mediaReused": 728,
+    "newMediaFiles": 0,
+    "specifiedRevisionHttp200": 4
+  }
+}

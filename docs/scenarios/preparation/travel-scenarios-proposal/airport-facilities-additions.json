@@ -1,0 +1,246 @@
+{
+  "scenarioKey": "travel-airport-gate",
+  "modeRecommendation": "user-specified",
+  "originalTargetCount": 21,
+  "selectedAdditionCount": 5,
+  "proposedTargetCount": 26,
+  "proposedCounts": {
+    "n": 17,
+    "adj": 4,
+    "v": 5
+  },
+  "selectedAdditions": [
+    {
+      "word": "airbridge",
+      "guid": "6d18d5d4-5288-5c3e-8cf0-f854d81f146d",
+      "pos": "n",
+      "meaning": "空橋；登機空橋",
+      "level": null,
+      "visualCue": "右側旅客走入的封閉玻璃空橋，窗外也可看見連接客機的伸縮結構。",
+      "actualImageStatus": "visible",
+      "sourceDefinition": "登機空橋 (Jet Bridge)",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 401006,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "baggage cart",
+      "guid": null,
+      "pos": "n",
+      "meaning": "行李運輸拖車",
+      "level": null,
+      "visualCue": "中央窗外、客機引擎前下方可見低矮四輪載運拖車，上有紅／黃／紫三只行李箱，前方由白藍牽引車拖動；與右側空橋支撐底盤分開。",
+      "actualImageStatus": "visible-wordbank-entry-missing",
+      "sourceDefinition": null,
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": null,
+      "wordbankStatus": "missing-exact-canonical-entry",
+      "requiredForSelectedTargets": true
+    },
+    {
+      "word": "passage",
+      "guid": "d876dd09-9a4c-5c78-8e91-92d7b9e7931b",
+      "pos": "n",
+      "meaning": "通道",
+      "level": "expert",
+      "visualCue": "右側空橋內可行走的地板與兩側扶欄形成的通道；標籤指內部行走空間，與airbridge整體設施區分。",
+      "actualImageStatus": "visible",
+      "sourceDefinition": "通道；走廊；文章段落；通過；經過。",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 136066,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "terminal",
+      "guid": "5ab06837-66dd-5f0f-89fa-978a1b7cfbea",
+      "pos": "n",
+      "meaning": "航廈",
+      "level": "expert",
+      "visualCue": "整體候機區、大片窗戶與登機入口呈現航廈內部；精確場所名稱需故事語境。",
+      "actualImageStatus": "visible-needs-story-context",
+      "sourceDefinition": "機場航廈；客運總站；末期的；末端的；港口貨櫃碼頭；航廈；終端；智慧收銀刷卡機 (POS 機)；終端機",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 252587,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "suitcase",
+      "guid": "25804565-39d9-579e-a864-5fbf2c16ac0d",
+      "pos": "n",
+      "meaning": "行李箱",
+      "level": "expert",
+      "visualCue": "男孩身前的藍紫色拉桿行李箱，與男士提著的bag旅行袋分開指向。",
+      "actualImageStatus": "visible",
+      "sourceDefinition": "（名）手提箱、行李箱；旅行時裝衣物的箱包。",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 301992,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    }
+  ],
+  "existingTargetAdjustments": [
+    {
+      "word": "ticket",
+      "action": "keep",
+      "reason": "保留一般票證語意；boarding pass只留延伸，不在同一白紙上硬教兩個不同用途。"
+    },
+    {
+      "field": "vocabularyMode",
+      "action": "change-to-user-specified",
+      "reason": "使用者指定空橋／行李運輸車／通道，新增含expert與null，保留真實分級。"
+    }
+  ],
+  "options": [
+    {
+      "word": "baggage tractor",
+      "guid": null,
+      "pos": "n",
+      "meaning": "行李牽引車",
+      "level": null,
+      "visualCue": "v2窗外載行李拖車前方白藍牽引車，與拖車及空橋底盤分開；詞條仍缺，未列主目標。",
+      "actualImageStatus": "visible-wordbank-entry-missing",
+      "sourceDefinition": null,
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": null,
+      "wordbankStatus": "missing-exact-canonical-entry",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "queue barrier",
+      "guid": null,
+      "pos": "n",
+      "meaning": "排隊伸縮圍欄",
+      "level": null,
+      "visualCue": "畫面左至中央的銀色立柱與藍色伸縮欄帶；exact完整詞條尚缺，不用barrier的抽象義假冒完整片語GUID。",
+      "actualImageStatus": "visible-wordbank-entry-missing",
+      "sourceDefinition": null,
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": null,
+      "wordbankStatus": "missing-exact-canonical-entry",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "boarding pass",
+      "guid": "151fd2cc-f8a3-5693-84e3-b474dc12c9ea",
+      "pos": "n",
+      "meaning": "登機證",
+      "level": null,
+      "visualCue": "可作ticket的一般票證語意的延伸或日後替換；現白紙無文字，不能只靠外觀證明用途，不把兩詞混教為不同用途的兩張票。",
+      "actualImageStatus": "visible-needs-story-context",
+      "sourceDefinition": "登機證；機場登機證（紙本或電子）",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 323326,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "engine",
+      "guid": "2b5a7b0d-2eb9-5a07-9cc9-7fb253196031",
+      "pos": "n",
+      "meaning": "引擎",
+      "level": "advance",
+      "visualCue": "窗外客機左中位置清楚的引擎與風扇口；可作飛機結構延伸。",
+      "actualImageStatus": "visible",
+      "sourceDefinition": "引擎；發動機；氙氣離子霍爾推進超高比沖引擎；三百千瓦級重型商用卡車燃料電池引擎電堆",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 69812,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "ground staff",
+      "guid": null,
+      "pos": "n",
+      "meaning": "地勤人員",
+      "level": null,
+      "visualCue": "穿制服、在登機門核對票證的女士；exact完整詞條尚缺，可先保留概念。",
+      "actualImageStatus": "visible-wordbank-entry-missing",
+      "sourceDefinition": null,
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": null,
+      "wordbankStatus": "missing-exact-canonical-entry",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "backpack",
+      "guid": "2737a962-38b4-5658-968b-3aae2108f998",
+      "pos": "n",
+      "meaning": "背包",
+      "level": "advance",
+      "visualCue": "男孩、男士與走入空橋旅客背上的背包；已有GUID，但來源主定義偏50公升登山重裝背包，使用前需補足一般背包義/例句。",
+      "actualImageStatus": "visible-source-sense-review-needed",
+      "sourceDefinition": "輕量化 50 公升專業登山重裝大背包",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 56632,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    },
+    {
+      "word": "apron",
+      "guid": "f47e55a7-53b7-5df2-b936-81119042db1a",
+      "pos": "n",
+      "meaning": "停機坪",
+      "level": "expert",
+      "visualCue": "候機窗外停機坪可見，但現有apron詞條只有圍裙義，不能直接掛為停機坪詞義。",
+      "actualImageStatus": "visible-source-sense-missing",
+      "sourceDefinition": "圍裙",
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": 107244,
+      "wordbankStatus": "reuse-canonical-not-production-verified",
+      "requiredForSelectedTargets": false
+    }
+  ],
+  "missingRequiredEntries": [
+    {
+      "word": "baggage cart",
+      "guid": null,
+      "pos": "n",
+      "meaning": "行李運輸拖車",
+      "level": null,
+      "visualCue": "中央窗外、客機引擎前下方可見低矮四輪載運拖車，上有紅／黃／紫三只行李箱，前方由白藍牽引車拖動；與右側空橋支撐底盤分開。",
+      "actualImageStatus": "visible-wordbank-entry-missing",
+      "sourceDefinition": null,
+      "sourcePath": "source/vocabulary-database.json",
+      "sourceLine": null,
+      "wordbankStatus": "missing-exact-canonical-entry",
+      "requiredForSelectedTargets": true
+    }
+  ],
+  "notes": [
+    "機場v2已依使用者補圖要求生成，原v1的PNG與SHA保留不變。",
+    "空橋airbridge、通道passage、航廈terminal、行李箱suitcase及新增baggage cart現在均有圖中線索；baggage cart詞條仍缺，GUID維持null。",
+    "行李拖車、其前方有動力牽引車與空橋支撐底盤是三種物件，不混為同義詞。",
+    "本輪更新26詞故事草案，但未做完整token映射或產音。",
+    "此檔仍為製作計畫，不是scenario content或可匯入的字庫增量；未查正式DB、未補詞入庫或發布。"
+  ],
+  "status": "vocabulary-proposal-image-v2-completed-wordbank-gap",
+  "imageRevisionPlan": {
+    "status": "completed-awaiting-user-review",
+    "existingImagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v1/base.png",
+    "existingImageSha256": "cfafa477593478c2199cc0616ea2a65b60ff0e2f3bfda33af1a9ae718178b3be",
+    "retainExistingImage": true,
+    "alreadyVisible": [
+      "airbridge",
+      "passage",
+      "terminal",
+      "suitcase"
+    ],
+    "missingVisualTargets": [],
+    "plannedChange": "在窗外停機坪新增清楚可辨、裝有行李的低矮行李拖車，與空橋支撐底盤分開；保留排隊、查票、提袋、空座位、時鐘、螢幕與登機人物。",
+    "optionalVehicleNote": "若畫有動力車頭，可作baggage tractor支援物件，與載行李拖車分開，不擅自當同義詞。",
+    "generationPerformedThisTurn": true,
+    "resultImagePath": "output/imagegen/travel-airport-gate-base-2026-11-11-v2/base.png",
+    "resultImageSha256": "5f29fc06a1c411adfc45d81ea7ebedb299a596883c022e01ecea36457e931258",
+    "completedChanges": [
+      "baggage cart載行李拖車與三只行李箱已補入窗外停機坪",
+      "前方牽引車為支援物件，未擅自增加主目標詞",
+      "原五名主要人物、查票、排隊、提袋、空座位、時鐘、螢幕與空橋通道保留"
+    ]
+  },
+  "currentPreparationStatus": "canonical-added-production-pending",
+  "currentPreparationReview": "import-preparation-review.md",
+  "historyScope": "原始圖片製作時的缺詞／補畫規劃保留作歷史；目前狀態以currentPreparationReview與batch.importPreparation為準。"
+}
